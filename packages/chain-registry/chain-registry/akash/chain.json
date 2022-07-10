@@ -1,0 +1,149 @@
+{
+    "$schema": "../chain.schema.json",
+    "chain_name": "akash",
+    "status": "live",
+    "network_type": "mainnet",
+    "pretty_name": "Akash",
+    "chain_id": "akashnet-2",
+    "bech32_prefix": "akash",
+    "daemon_name": "akash",
+    "node_home": "$HOME/.akash",
+    "genesis": {
+        "genesis_url": "https://raw.githubusercontent.com/ovrclk/net/master/mainnet/genesis.json"
+    },
+    "slip44": 118,
+    "codebase": {
+        "git_repo": "https://github.com/ovrclk/akash/",
+        "recommended_version": "v0.14.1",
+        "compatible_versions": [
+            "v0.14.1"
+        ],
+        "binaries": {
+            "linux/amd64": "https://github.com/ovrclk/akash/releases/download/v0.14.1/akash_0.14.1_linux_amd64.zip"
+        }
+    },
+    "peers": {
+        "seeds": [
+            {
+                "id": "27eb432ccd5e895c5c659659120d68b393dd8c60",
+                "address": "35.247.65.183:26656"
+            },
+            {
+                "id": "8e2f56098f182ffe2f6fb09280bafe13c63eb42f",
+                "address": "46.101.176.149:26656"
+            },
+            {
+                "id": "fff99a2e8f3c9473e4e5ee9a99611a2e599529fd",
+                "address": "46.166.138.218:26656",
+                "provider": "simplyvc"
+            }
+        ],
+        "persistent_peers": [
+            {
+                "id": "27eb432ccd5e895c5c659659120d68b393dd8c60",
+                "address": "35.247.65.183:26656"
+            },
+            {
+                "id": "9180b99a5be3443677e0f57fc5f40e8f071bdcd8",
+                "address": "161.35.239.0:51656"
+            },
+            {
+                "id": "47c9acc0e7d9b244a6404458e76d50b6284bfbbb",
+                "address": "142.93.77.25:26656"
+            },
+            {
+                "id": "ab7b55588ea3f4f7a477e852aa262959e54117cd",
+                "address": "3.235.249.94:26656"
+            },
+            {
+                "id": "4acf579e2744268f834c713e894850995bbf0ffa",
+                "address": "50.18.31.225:26656"
+            },
+            {
+                "id": "3691ac1f56389ffec8579c13a6eb8eca41cf8ae3",
+                "address": "54.219.88.246:26656"
+            },
+            {
+                "id": "86afe23f116ba4754a19819a55d153008eb74b48",
+                "address": "15.164.87.75:26656"
+            },
+            {
+                "id": "6fbc3808f7d6c961e84944ae2d8c800a8bbffbb4",
+                "address": "138.201.159.100:26656"
+            },
+            {
+                "id": "a2a3ffe7ac122a218e1f59c32a670f04b8fd3033",
+                "address": "165.22.69.102:26656"
+            }
+        ]
+    },
+    "apis": {
+        "rpc": [
+            {
+                "address": "https://rpc.akash.forbole.com:443",
+                "provider": "forbole"
+            },
+            {
+                "address": "http://akash-sentry01.skynetvalidators.com:26657",
+                "provider": "skynet"
+            },
+            {
+                "address": "https://rpc.akash.smartnodes.one:443"
+            },
+            {
+                "address": "http://akash.c29r3.xyz:80/rpc"
+            },
+            {
+                "address": "https://rpc-akash.ecostake.com",
+                "provider": "ecostake"
+            },
+            {
+                "address": "https://akash-rpc.polkachu.com",
+                "provider": "Polkachu"
+            },
+            {
+                "address": "https://rpc-akash-ia.notional.ventures/",
+                "provider": "Notional"
+            }
+        ],
+        "rest": [
+            {
+                "address": "https://akash.c29r3.xyz:443/api"
+            },
+            {
+                "address": "https://api.akash.smartnodes.one"
+            },
+            {
+                "address": "https://rest-akash.ecostake.com",
+                "provider": "ecostake"
+            },
+            {
+                "address": "https://api-akash-ia.notional.ventures/",
+                "provider": "Notional"
+            }
+        ],
+        "grpc": [
+            {
+                "address": "grpc-akash-ia.notional.ventures:443",
+                "provider": "Notional"
+            }
+        ]
+    },
+    "explorers": [
+        {
+          "kind": "mintscan",
+          "url": "https://www.mintscan.io/akash",
+          "tx_page": "https://www.mintscan.io/akash/txs/${txHash}"
+        },
+        {
+          "kind": "ping.pub",
+          "url": "https://ping.pub/akash-network",
+          "tx_page": "https://ping.pub/akash-network/tx/${txHash}"
+        },
+        {
+          "kind": "bigdipper",
+          "url": "https://akash.bigdipper.live/",
+          "tx_page": "https://akash.bigdipper.live/transactions/${txHash}"
+        }
+      ]
+}

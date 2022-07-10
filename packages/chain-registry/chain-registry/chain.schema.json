@@ -1,0 +1,246 @@
+{
+    "$id": "https://sikka.tech/chain.schema.json",
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "title": "Cosmos Chain",
+    "updatelink": "string",
+    "description": "Cosmos Chain.json is a metadata file that contains information about a cosmos sdk based chain.",
+    "type": "object",
+    "required": [
+        "chain_name",
+        "chain_id",
+        "bech32_prefix"
+    ],
+    "properties": {
+        "chain_name": {
+            "type": "string"
+        },
+        "chain_id": {
+            "type": "string"
+        },
+        "pretty_name": {
+            "type": "string"
+        },
+        "status": {
+            "enum": [
+                "live",
+                "upcoming",
+                "killed"
+            ]
+        },
+        "network_type": {
+            "enum": [
+                "mainnet",
+                "testnet"
+            ]
+        },
+        "bech32_prefix": {
+            "type": "string"
+        },
+        "genesis": {
+            "type": "object",
+            "properties": {
+                "genesis_url": {
+                    "type": "string"
+                }
+            }
+        },
+        "daemon_name": {
+            "type": "string"
+        },
+        "node_home": {
+            "type": "string"
+        },
+        "key_algos": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "secp256k1",
+                    "ethsecp256k1",
+                    "ed25519",
+                    "sr25519"
+                ],
+                "uniqueItems": true
+            }
+        },
+        "slip44": {
+            "type": "number"
+        },
+        "fees": {
+            "type": "object",
+            "properties": {
+                "fee_tokens": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/fee_token"
+                    }
+                }
+            }
+        },
+        "codebase": {
+            "type": "object",
+            "required": [
+                "git_repo",
+                "recommended_version",
+                "compatible_versions"
+            ],
+            "properties": {
+                "git_repo": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "recommended_version": {
+                    "type": "string"
+                },
+                "compatible_versions": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "binaries": {
+                    "type": "object",
+                    "properties": {
+                        "linux/amd": {
+                            "type": "string",
+                            "format": "uri"
+                        }
+                    }
+                }
+            }
+        },
+        "peers": {
+            "type": "object",
+            "properties": {
+                "seeds": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/peer"
+                    }
+                },
+                "persistent_peers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/peer"
+                    }
+                }
+            }
+        },
+        "apis": {
+            "type": "object",
+            "properties": {
+                "rpc": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/endpoint"
+                    }
+                },
+                "rest": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/endpoint"
+                    }
+                },
+                "grpc": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/endpoint"
+                    }
+                }
+            }
+        },
+        "explorers": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/explorer"
+            }
+        }
+    },
+    "$defs": {
+        "peer": {
+            "type": "object",
+            "required": [
+                "id",
+                "address"
+            ],
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "address": {
+                    "type": "string"
+                },
+                "provider": {
+                    "type": "string"
+                }
+            }
+        },
+        "endpoint": {
+            "type": "object",
+            "required": [
+                "address"
+            ],
+            "properties": {
+                "address": {
+                    "type": "string"
+                },
+                "provider": {
+                    "type": "string"
+                }
+            }
+        },
+        "explorer": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "tx_page": {
+                    "type": "string"
+                },
+                "account_page": {
+                    "type": "string"
+                }
+            }
+        },
+        "fee_token": {
+            "type": "object",
+            "required": [
+                "denom"
+            ],
+            "properties": {
+                "denom": {
+                    "type": "string"
+                },
+                "fixed_min_gas_price": {
+                    "type": "number"
+                },
+                "low_gas_price": {
+                    "type": "number"
+                },
+                "average_gas_price": {
+                    "type": "number"
+                },
+                "high_gas_price": {
+                    "type": "number"
+                }
+            }
+        },
+         "logo_URIs": {
+            "type": "object",
+            "properties": {
+                "png": {
+                    "type": "string",
+                    "format": "uri-reference"
+                },
+                "svg": {
+                    "type": "string",
+                    "format": "uri-reference"
+                }
+            }
+        }
+    }
+}

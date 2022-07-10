@@ -1,0 +1,12 @@
+{
+    "$schema": "../chain.schema.json",
+    "chain_id": "osmosis-1",
+    "apis": {
+        "rest": [
+            {
+                "address": "https://osmosis.stakesystems.io/",
+                "provider": "stakesystems"
+            }
+        ]
+    }
+}
