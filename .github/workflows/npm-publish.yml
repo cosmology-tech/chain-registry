@@ -14,11 +14,16 @@ jobs:
           node-version: 16.14.0
           registry-url: https://registry.npmjs.org/
       - run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor}}@users.noreply.github.com"
+          git submodule update --init --recursive
           yarn
           yarn bootstrap
           yarn build
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor}}@users.noreply.github.com"
+          cd packages/chain-registry
+          node ./bin/build.js
+          cd ../../
+          git commit -am "build 🛠"
           lerna publish --no-verify-access --yes
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}

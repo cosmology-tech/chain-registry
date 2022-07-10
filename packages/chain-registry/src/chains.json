@@ -48,14 +48,27 @@
         {
           "address": "https://agoric-rpc.polkachu.com",
           "provider": "Polkachu"
+        },
+        {
+          "address": "https://rpc.agoric.nodestake.top",
+          "provider": "NodeStake"
         }
       ],
       "rest": [
         {
           "address": "https://main.api.agoric.net:443"
+        },
+        {
+          "address": "https://api.agoric.nodestake.top",
+          "provider": "NodeStake"
         }
       ],
-      "grpc": []
+      "grpc": [
+        {
+          "address": "https://grpc.agoric.nodestake.top",
+          "provider": "NodeStake"
+        }
+      ]
     }
   },
   {
@@ -608,6 +621,10 @@
         {
           "address": "https://rpc-assetmantle-ia.notional.ventures/",
           "provider": "Notional"
+        },
+        {
+          "address": "https://rpc.assetmantle.nodestake.top",
+          "provider": "NodeStake"
         }
       ],
       "rest": [
@@ -626,12 +643,20 @@
         {
           "address": "https://api-assetmantle-ia.notional.ventures/",
           "provider": "Notional"
+        },
+        {
+          "address": "https://api.assetmantle.nodestake.top",
+          "provider": "NodeStake"
         }
       ],
       "grpc": [
         {
           "address": "grpc-assetmantle-ia.notional.ventures:443",
           "provider": "Notional"
+        },
+        {
+          "address": "https://grpc.assetmantle.nodestake.top",
+          "provider": "NodeStake"
         }
       ]
     },
@@ -3265,6 +3290,10 @@
         {
           "address": "https://rpc-echelon.whispernode.com",
           "provider": " WhisperNode 🤐"
+        },
+        {
+          "address": "https://rpc.echelon.nodestake.top",
+          "provider": "NodeStake"
         }
       ],
       "rest": [
@@ -3275,18 +3304,30 @@
         {
           "address": "https://lcd-echelon.whispernode.com",
           "provider": " WhisperNode 🤐"
+        },
+        {
+          "address": "https://api.echelon.nodestake.top",
+          "provider": "NodeStake"
         }
       ],
       "grpc": [
         {
           "address": "https://grpc.ech.network",
           "provider": "ech.network"
+        },
+        {
+          "address": "https://grpc.echelon.nodestake.top",
+          "provider": "NodeStake"
         }
       ],
       "evm-http-jsonrpc": [
         {
           "address": "https://rpc.ech.network",
           "provider": "ech.network"
+        },
+        {
+          "address": "https://jsonrpc.echelon.nodestake.top",
+          "provider": "NodeStake"
         }
       ]
     },
@@ -3657,6 +3698,10 @@
         {
           "address": "https://rpc.evmos.testnet.run",
           "provider": "TestNetRun"
+        },
+        {
+          "address": "https://rpc.evmos.nodestake.top",
+          "provider": "NodeStake"
         }
       ],
       "rest": [
@@ -3705,6 +3750,10 @@
         {
           "address": "grpc.evmos.testnet.run:8091",
           "provider": "TestNetRun"
+        },
+        {
+          "address": "https://grpc.evmos.nodestake.top",
+          "provider": "NodeStake"
         }
       ],
       "evm-http-jsonrpc": [
@@ -3719,6 +3768,10 @@
         {
           "address": "https://evmos-json-rpc.stakely.io",
           "provider": "Stakely"
+        },
+        {
+          "address": "https://jsonrpc.evmos.nodestake.top",
+          "provider": "NodeStake"
         }
       ]
     },
@@ -4332,15 +4385,28 @@
         {
           "address": "https://rpc.idep.ezstaking.io",
           "provider": "EZStaking.io"
+        },
+        {
+          "address": "https://rpc.idep.nodestake.top",
+          "provider": "NodeStake"
         }
       ],
       "rest": [
         {
           "address": "https://lcd.idep.ezstaking.io",
           "provider": "EZStaking.io"
+        },
+        {
+          "address": "https://api.idep.nodestake.top",
+          "provider": "NodeStake"
         }
       ],
-      "grpc": []
+      "grpc": [
+        {
+          "address": "https://grpc.idep.nodestake.top",
+          "provider": "NodeStake"
+        }
+      ]
     },
     "explorers": [
       {
@@ -4900,6 +4966,7 @@
     "genesis": {
       "genesis_url": "https://kava-genesis-files.s3.us-east-1.amazonaws.com/kava_2222-10/genesis.json"
     },
+    "slip44": 459,
     "codebase": {
       "git_repo": "https://github.com/kava-Labs/kava/",
       "recommended_version": "v0.17.3",
@@ -5998,6 +6065,80 @@
   },
   {
     "$schema": "../chain.schema.json",
+    "chain_name": "omniflixhub",
+    "status": "live",
+    "network_type": "mainnet",
+    "pretty_name": "OmniFlix Hub",
+    "chain_id": "omniflixhub-1",
+    "daemon_name": "omniflixhubd",
+    "node_home": "$HOME/.omniflixhub",
+    "bech32_prefix": "omniflix",
+    "genesis": {
+      "genesis_url": "https://raw.githubusercontent.com/OmniFlix/mainnet/main/omniflixhub-1/genesis.json"
+    },
+    "slip44": 118,
+    "codebase": {
+      "git_repo": "https://github.com/OmniFlix/omniflixhub",
+      "recommended_version": "v0.4.1",
+      "compatible_versions": [
+        "v0.4.1"
+      ]
+    },
+    "peers": {
+      "seeds": [
+        {
+          "id": "9d75a06ebd3732a041df459849c21b87b2c55cde",
+          "address": "35.187.240.195:26656"
+        },
+        {
+          "id": "19feae28207474eb9f168fff9720fd4d418df1ed",
+          "address": "35.240.196.102:26656"
+        }
+      ],
+      "persistent_peers": [
+        {
+          "id": "2df1f357f08049ba0c0dddfffe805f0e135e54ec",
+          "address": "35.247.185.216:26656"
+        },
+        {
+          "id": "6198ac4bc907f6d1a78309ef58491370afc49799",
+          "address": "34.124.195.219:26656"
+        },
+        {
+          "id": "574b37cc6e80663e70673cbe848147c2643ca48e",
+          "address": "35.240.187.174:26656"
+        },
+        {
+          "id": "8313c9d55006da030588f61806b3e056a113e6e8",
+          "address": "34.87.18.204:26656"
+        }
+      ]
+    },
+    "apis": {
+      "rpc": [
+        {
+          "address": "https://omniflixhub-rpc.skynetvalidators.com",
+          "provider": "skynet-validators"
+        }
+      ],
+      "rest": [
+        {
+          "address": "https://omniflixhub-api.skynetvalidators.com",
+          "provider": "skynet-validators"
+        }
+      ]
+    },
+    "explorers": [
+      {
+        "kind": "mintscan",
+        "url": "https://www.mintscan.io/omniflix",
+        "tx_page": "https://www.mintscan.io/omniflix/txs/${txHash}",
+        "account_page": "https://www.mintscan.io/omniflix/account/${accountAddress}"
+      }
+    ]
+  },
+  {
+    "$schema": "../chain.schema.json",
     "chain_name": "oraichain",
     "status": "live",
     "network_type": "mainnet",
@@ -6218,6 +6359,11 @@
       ],
       "persistent_peers": [
         {
+          "id": "b63e1e588e8feb7e4a4adf0f2542d755e606d3f1",
+          "address": "5.9.105.113:26656",
+          "provider": "WhisperNode 🤐"
+        },
+        {
           "id": "8f67a2fcdd7ade970b1983bf1697111d35dfdd6f",
           "address": "52.79.199.137:26656",
           "provider": "cosmostation"
@@ -6347,6 +6493,10 @@
     "apis": {
       "rpc": [
         {
+          "address": "https://rpc-osmosis.whispernode.com",
+          "provider": "WhisperNode 🤐"
+        },
+        {
           "address": "https://osmosis.validator.network/",
           "provider": "validatornetwork"
         },
@@ -6376,6 +6526,10 @@
         }
       ],
       "rest": [
+        {
+          "address": "https://lcd-osmosis.whispernode.com",
+          "provider": "WhisperNode 🤐"
+        },
         {
           "address": "https://lcd-osmosis.blockapsis.com",
           "provider": "chainapsis"
