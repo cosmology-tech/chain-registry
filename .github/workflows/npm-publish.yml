@@ -13,9 +13,13 @@ jobs:
         with:
           node-version: 16.14.0
           registry-url: https://registry.npmjs.org/
-      - run: yarn
-      - run: yarn bootstrap
-      - run: yarn build
-      - run: lerna publish --yes      
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
+          GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
+      - run: | 
+        yarn
+        yarn bootstrap
+        yarn build
+        git config user.name "${{ github.actor }}"
+        git config user.email "${{ github.actor}}@users.noreply.github.com"
+        lerna publish from-git --no-verify-access --yes
