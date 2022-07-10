@@ -10,3 +10,42 @@ The npm package for the Official Cosmos [chain registry](https://github.com/cosm
 ```
 npm install chain-registry
 ```
+
+```js
+import { assets, chains, ibc } from 'chain-registry';
+
+const asset = assets.find(({chain_name})=>chain_name==='osmosis');
+
+console.log(asset);
+
+```
+will output:
+
+```
+> {
+  '$schema': '../assetlist.schema.json',
+  chain_name: 'osmosis',
+  assets: [
+    {
+      description: 'The native token of Osmosis',
+      denom_units: [Array],
+      base: 'uosmo',
+      name: 'Osmosis',
+      display: 'osmo',
+      symbol: 'OSMO',
+      logo_URIs: [Object],
+      coingecko_id: 'osmosis'
+    },
+    {
+      denom_units: [Array],
+      base: 'uion',
+      name: 'Ion',
+      display: 'ion',
+      symbol: 'ION',
+      logo_URIs: [Object],
+      coingecko_id: 'ion'
+    }
+  ]
+}
+```
+
