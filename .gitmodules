@@ -1,0 +1,3 @@
+[submodule "packages/chain-registry/chain-registry"]
+	path = packages/chain-registry/chain-registry
+	url = git@github.com:cosmos/chain-registry.git
