@@ -1,7 +1,7 @@
 {
   "name": "chain-registry",
   "version": "0.0.17",
-  "description": "cosmos chain registry",
+  "description": "Cosmos chain registry",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-finance/cosmology/tree/master/packages/cosmos-networks#readme",
   "license": "SEE LICENSE IN LICENSE",
