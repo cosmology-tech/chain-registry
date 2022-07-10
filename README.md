@@ -11,6 +11,8 @@ The npm package for the Official Cosmos [chain registry](https://github.com/cosm
 npm install chain-registry
 ```
 
+## example
+
 ```js
 import { assets, chains, ibc } from 'chain-registry';
 
