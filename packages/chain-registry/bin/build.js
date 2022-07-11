@@ -2,6 +2,7 @@ const fs = require('fs');
 const deepmerge = require('deepmerge');
 const { resolve, basename, extname } = require('path');
 const glob = require('glob').sync;
+const { getIbcAssets } = require('chain-registry-utils');
 
 const paths = glob(`${__dirname}/../chain-registry/**/*.json`);
 const assets = [];
@@ -44,9 +45,22 @@ addAssets.forEach((asset) => {
   }
 });
 
+const ibc_assets = assets.map(({chain_name})=>{
+  return getIbcAssets(
+    chain_name,
+    ibcs,
+    assets
+  );
+})
+
+
 fs.writeFileSync(
   `${__dirname}/../src/assets.json`,
   JSON.stringify(assets, null, 2)
+);
+fs.writeFileSync(
+  `${__dirname}/../src/ibc_assets.json`,
+  JSON.stringify(ibc_assets, null, 2)
 );
 fs.writeFileSync(
   `${__dirname}/../src/chains.json`,
