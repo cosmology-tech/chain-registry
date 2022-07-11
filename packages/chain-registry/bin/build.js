@@ -45,13 +45,13 @@ addAssets.forEach((asset) => {
   }
 });
 
-const ibc_assets = assets.map(({chain_name})=>{
-  return getIbcAssets(
+const ibc_assets = assets.reduce((m, {chain_name})=>{
+  return [...m, ...getIbcAssets(
     chain_name,
     ibcs,
     assets
-  );
-})
+  )];
+}, [])
 
 
 fs.writeFileSync(
