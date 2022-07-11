@@ -1,0 +1,3104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getIbcAssets 1`] = `
+Array [
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4",
+        "coingecko_id": "akash-network",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uakt",
+            ],
+            "denom": "ibc/1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "akt",
+            "exponent": 6,
+          },
+        ],
+        "description": "Akash Token (AKT) is the Akash Network's native utility token, used as the primary means to govern, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
+        "display": "akt",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg",
+        },
+        "name": "Akash Network",
+        "symbol": "AKT",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-1",
+      "client-id": "07-tendermint-0",
+      "connection-id": "connection-2",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "akash",
+      "channel-id": "channel-9",
+      "client-id": "07-tendermint-18",
+      "connection-id": "connection-11",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/CBA34207E969623D95D057D9B11B0C8B32B89A71F170577D982FDDE623813FFC",
+        "coingecko_id": "assetmantle",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "umntl",
+            ],
+            "denom": "ibc/CBA34207E969623D95D057D9B11B0C8B32B89A71F170577D982FDDE623813FFC",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "mntl",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Asset Mantle",
+        "display": "mntl",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png",
+        },
+        "name": "AssetMantle",
+        "symbol": "MNTL",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-232",
+      "client-id": "07-tendermint-1923",
+      "connection-id": "connection-1498",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "assetmantle",
+      "channel-id": "channel-0",
+      "client-id": "07-tendermint-0",
+      "connection-id": "connection-0",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/903A61A498756EA560B85A85132D3AEE21B5DEDD41213725D22ABF276EA6945E",
+        "coingecko_id": "axelar-network",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uaxl",
+            ],
+            "denom": "ibc/903A61A498756EA560B85A85132D3AEE21B5DEDD41213725D22ABF276EA6945E",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "axl",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Axelar",
+        "display": "axl",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg",
+        },
+        "name": "Axelar",
+        "symbol": "AXL",
+      },
+      Object {
+        "base": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+        "coingecko_id": "usd-coin",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uusdc",
+            ],
+            "denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "usdc",
+            "exponent": 6,
+          },
+        ],
+        "description": "Circle's stablecoin on Axelar",
+        "display": "usdc",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg",
+        },
+        "name": "USD Coin",
+        "symbol": "USDC",
+      },
+      Object {
+        "base": "ibc/0E43EDE2E2A3AFA36D0CD38BDDC0B49FECA64FA426A82E102F304E430ECF46EE",
+        "coingecko_id": "frax",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "frax-wei",
+            ],
+            "denom": "ibc/0E43EDE2E2A3AFA36D0CD38BDDC0B49FECA64FA426A82E102F304E430ECF46EE",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "frax",
+            "exponent": 18,
+          },
+        ],
+        "description": "Frax's fractional-algorithmic stablecoin on Axelar",
+        "display": "frax",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.svg",
+        },
+        "name": "Frax",
+        "symbol": "FRAX",
+      },
+      Object {
+        "base": "ibc/0CD3A0285E1341859B5E86B6AB7682F023D03E97607CCC1DC95706411D866DF7",
+        "coingecko_id": "dai",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "dai-wei",
+            ],
+            "denom": "ibc/0CD3A0285E1341859B5E86B6AB7682F023D03E97607CCC1DC95706411D866DF7",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "dai",
+            "exponent": 18,
+          },
+        ],
+        "description": "Dai stablecoin on Axelar",
+        "display": "dai",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.svg",
+        },
+        "name": "Dai Stablecoin",
+        "symbol": "DAI",
+      },
+      Object {
+        "base": "ibc/8242AD24008032E457D2E12D46588FD39FB54FB29680C6C7663D296B383C37C4",
+        "coingecko_id": "tether",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uusdt",
+            ],
+            "denom": "ibc/8242AD24008032E457D2E12D46588FD39FB54FB29680C6C7663D296B383C37C4",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "usdt",
+            "exponent": 6,
+          },
+        ],
+        "description": "Tether's USD stablecoin on Axelar",
+        "display": "usdt",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg",
+        },
+        "name": "Tether USD",
+        "symbol": "USDT",
+      },
+      Object {
+        "base": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+        "coingecko_id": "weth",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "weth-wei",
+            ],
+            "denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "weth",
+            "exponent": 18,
+          },
+        ],
+        "description": "Wrapped Ether on Axelar",
+        "display": "weth",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png",
+        },
+        "name": "Wrapped Ether",
+        "symbol": "WETH",
+      },
+      Object {
+        "base": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+        "coingecko_id": "wrapped-bitcoin",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "wbtc-satoshi",
+            ],
+            "denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "wbtc",
+            "exponent": 8,
+          },
+        ],
+        "description": "Wrapped Bitcoin on Axelar",
+        "display": "wbtc",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png",
+        },
+        "name": "Wrapped Bitcoin",
+        "symbol": "WBTC",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-208",
+      "client-id": "07-tendermint-1862",
+      "connection-id": "connection-1453",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "axelar",
+      "channel-id": "channel-3",
+      "client-id": "07-tendermint-23",
+      "connection-id": "connection-13",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/F867AE2112EFE646EC71A25CD2DFABB8927126AC1E19F1BBF0FF693A4ECA05DE",
+        "coingecko_id": "band-protocol",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uband",
+            ],
+            "denom": "ibc/F867AE2112EFE646EC71A25CD2DFABB8927126AC1E19F1BBF0FF693A4ECA05DE",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "band",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of BandChain",
+        "display": "band",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg",
+        },
+        "name": "Band Protocol",
+        "symbol": "BAND",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-148",
+      "client-id": "07-tendermint-1743",
+      "connection-id": "connection-1345",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "bandchain",
+      "channel-id": "channel-83",
+      "client-id": "07-tendermint-94",
+      "connection-id": "connection-91",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/D805F1DA50D31B96E4282C1D4181EDDFB1A44A598BFF5666F4B43E4B8BEA95A5",
+        "coingecko_id": "bitcanna",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "ubcna",
+            ],
+            "denom": "ibc/D805F1DA50D31B96E4282C1D4181EDDFB1A44A598BFF5666F4B43E4B8BEA95A5",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "bcna",
+            "exponent": 6,
+          },
+        ],
+        "description": "The BCNA coin is the transactional token within the BitCanna network, serving the legal cannabis industry through its payment network, supply chain and trust network.",
+        "display": "bcna",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg",
+        },
+        "name": "BitCanna",
+        "symbol": "BCNA",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-51",
+      "client-id": "07-tendermint-1499",
+      "connection-id": "connection-1167",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "bitcanna",
+      "channel-id": "channel-1",
+      "client-id": "07-tendermint-1",
+      "connection-id": "connection-1",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/4E5444C35610CC76FC94E7F7886B93121175C28262DDFDDE6F84E82BF2425452",
+        "coingecko_id": "bitsong",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "ubtsg",
+            ],
+            "denom": "ibc/4E5444C35610CC76FC94E7F7886B93121175C28262DDFDDE6F84E82BF2425452",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "btsg",
+            "exponent": 6,
+          },
+        ],
+        "description": "BitSong Native Token",
+        "display": "btsg",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg",
+        },
+        "name": "BitSong",
+        "symbol": "BTSG",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-73",
+      "client-id": "07-tendermint-1551",
+      "connection-id": "connection-1216",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "bitsong",
+      "channel-id": "channel-0",
+      "client-id": "07-tendermint-0",
+      "connection-id": "connection-0",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/FE2CD1E6828EC0FAB8AF39BAC45BC25B965BA67CCBC50C13A14BD610B0D1E2C4",
+        "coingecko_id": "bostrom",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "boot",
+            ],
+            "denom": "ibc/FE2CD1E6828EC0FAB8AF39BAC45BC25B965BA67CCBC50C13A14BD610B0D1E2C4",
+            "exponent": 0,
+          },
+        ],
+        "description": "The staking token of Bostrom",
+        "display": "boot",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png",
+        },
+        "name": "Bostrom",
+        "symbol": "BOOT",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-95",
+      "client-id": "07-tendermint-1597",
+      "connection-id": "connection-1255",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "bostrom",
+      "channel-id": "channel-2",
+      "client-id": "07-tendermint-5",
+      "connection-id": "connection-2",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/8FEFAE6AECF6E2A255585617F781F35A8D5709A545A804482A261C0C9548A9D3",
+        "coingecko_id": "switcheo",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "swth",
+            ],
+            "denom": "ibc/8FEFAE6AECF6E2A255585617F781F35A8D5709A545A804482A261C0C9548A9D3",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "SWTH",
+            ],
+            "denom": "dswth",
+            "exponent": 8,
+          },
+        ],
+        "description": "The native token of Carbon",
+        "display": "dswth",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/swth.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/swth.svg",
+        },
+        "name": "Carbon",
+        "symbol": "SWTH",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-188",
+      "client-id": "07-tendermint-1808",
+      "connection-id": "connection-1412",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "carbon",
+      "channel-id": "channel-0",
+      "client-id": "07-tendermint-3",
+      "connection-id": "connection-1",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/41999DF04D9441DAC0DF5D8291DF4333FBCBA810FFD63FDCE34FDF41EF37B6F7",
+        "coingecko_id": "cerberus-2",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "ucrbrus",
+            ],
+            "denom": "ibc/41999DF04D9441DAC0DF5D8291DF4333FBCBA810FFD63FDCE34FDF41EF37B6F7",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "crbrus",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Cerberus Chain",
+        "display": "crbrus",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png",
+        },
+        "name": "Cerberus",
+        "symbol": "CRBRUS",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-212",
+      "client-id": "07-tendermint-1875",
+      "connection-id": "connection-1460",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "cerberus",
+      "channel-id": "channel-1",
+      "client-id": "07-tendermint-1",
+      "connection-id": "connection-1",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/7A08C6F11EF0F59EB841B9F788A87EC9F2361C7D9703157EC13D940DC53031FA",
+        "coingecko_id": "cheqd-network",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "ncheq",
+            ],
+            "denom": "ibc/7A08C6F11EF0F59EB841B9F788A87EC9F2361C7D9703157EC13D940DC53031FA",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "cheq",
+            "exponent": 9,
+          },
+        ],
+        "description": "Native token for the cheqd network",
+        "display": "cheq",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.svg",
+        },
+        "name": "cheqd",
+        "symbol": "CHEQ",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-108",
+      "client-id": "07-tendermint-1615",
+      "connection-id": "connection-1268",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "cheqd",
+      "channel-id": "channel-0",
+      "client-id": "07-tendermint-0",
+      "connection-id": "connection-0",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/B9E0A1A524E98BB407D3CED8720EFEFD186002F90C1B1B7964811DD0CCC12228",
+        "coingecko_id": "chihuahua-token",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uhuahua",
+            ],
+            "denom": "ibc/B9E0A1A524E98BB407D3CED8720EFEFD186002F90C1B1B7964811DD0CCC12228",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "huahua",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Chihuahua Chain",
+        "display": "huahua",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png",
+        },
+        "name": "Chihuahua",
+        "symbol": "HUAHUA",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-113",
+      "client-id": "07-tendermint-1666",
+      "connection-id": "connection-1278",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "chihuahua",
+      "channel-id": "channel-7",
+      "client-id": "07-tendermint-45",
+      "connection-id": "connection-25",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/EA3E1640F9B1532AB129A571203A0B9F789A7F14BB66E350DCBFA18E1A1931F0",
+        "coingecko_id": "comdex",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "ucmdx",
+            ],
+            "denom": "ibc/EA3E1640F9B1532AB129A571203A0B9F789A7F14BB66E350DCBFA18E1A1931F0",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "cmdx",
+            "exponent": 6,
+          },
+        ],
+        "description": "Native Token of Comdex Protocol",
+        "display": "cmdx",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png",
+        },
+        "name": "Comdex",
+        "symbol": "CMDX",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-87",
+      "client-id": "07-tendermint-1587",
+      "connection-id": "connection-1243",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "comdex",
+      "channel-id": "channel-1",
+      "client-id": "07-tendermint-1",
+      "connection-id": "connection-1",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+        "coingecko_id": "cosmos",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uatom",
+            ],
+            "denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "atom",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native staking and governance token of the Cosmos Hub.",
+        "display": "atom",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg",
+        },
+        "name": "Cosmos",
+        "symbol": "ATOM",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-0",
+      "client-id": "07-tendermint-1",
+      "connection-id": "connection-1",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "cosmoshub",
+      "channel-id": "channel-141",
+      "client-id": "07-tendermint-259",
+      "connection-id": "connection-257",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/E6931F78057F7CC5DA0FD6CEF82FF39373A6E0452BF1FD76910B93292CF356C1",
+        "coingecko_id": "cronos",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "basecro",
+            ],
+            "denom": "ibc/E6931F78057F7CC5DA0FD6CEF82FF39373A6E0452BF1FD76910B93292CF356C1",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "cro",
+            "exponent": 8,
+          },
+        ],
+        "description": "CRO coin is the token for the Crypto.com platform.",
+        "display": "cro",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png",
+        },
+        "name": "Cronos",
+        "symbol": "CRO",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-5",
+      "client-id": "07-tendermint-4",
+      "connection-id": "connection-5",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "cryptoorgchain",
+      "channel-id": "channel-10",
+      "client-id": "07-tendermint-33",
+      "connection-id": "connection-12",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/9BCB27203424535B6230D594553F1659C77EC173E36D9CF4759E7186EE747E84",
+        "coingecko_id": "decentr",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "udec",
+            ],
+            "denom": "ibc/9BCB27203424535B6230D594553F1659C77EC173E36D9CF4759E7186EE747E84",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [],
+            "denom": "dec",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Decentr",
+        "display": "dec",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg",
+        },
+        "name": "Decentr",
+        "symbol": "DEC",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-181",
+      "client-id": "07-tendermint-1798",
+      "connection-id": "connection-1403",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "decentr",
+      "channel-id": "channel-1",
+      "client-id": "07-tendermint-6",
+      "connection-id": "connection-1",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/EA4C0A9F72E2CEDF10D0E7A9A6A22954DB3444910DB5BE980DF59B05A46DAD1C",
+        "coingecko_id": "desmos",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "udsm",
+            ],
+            "denom": "ibc/EA4C0A9F72E2CEDF10D0E7A9A6A22954DB3444910DB5BE980DF59B05A46DAD1C",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [],
+            "denom": "dsm",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Desmos",
+        "display": "dsm",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg",
+        },
+        "name": "Desmos",
+        "symbol": "DSM",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-135",
+      "client-id": "07-tendermint-1726",
+      "connection-id": "connection-1315",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "desmos",
+      "channel-id": "channel-2",
+      "client-id": "07-tendermint-6",
+      "connection-id": "connection-4",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/307E5C96C8F60D1CBEE269A9A86C0834E1DB06F2B3788AE4F716EDB97A48B97D",
+        "coingecko_id": "dig-chain",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "udig",
+            ],
+            "denom": "ibc/307E5C96C8F60D1CBEE269A9A86C0834E1DB06F2B3788AE4F716EDB97A48B97D",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "dig",
+            "exponent": 6,
+          },
+        ],
+        "description": "Native token of Dig Chain",
+        "display": "dig",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png",
+        },
+        "name": "Dig Chain",
+        "symbol": "DIG",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-128",
+      "client-id": "07-tendermint-1714",
+      "connection-id": "connection-1304",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "dig",
+      "channel-id": "channel-1",
+      "client-id": "07-tendermint-13",
+      "connection-id": "connection-8",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/1DC495FCEFDA068A3820F903EDBD78B942FBD204D7E93D3BA2B432E9669D1A59",
+        "coingecko_id": "e-money",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "ungm",
+            ],
+            "denom": "ibc/1DC495FCEFDA068A3820F903EDBD78B942FBD204D7E93D3BA2B432E9669D1A59",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "ngm",
+            "exponent": 6,
+          },
+        ],
+        "description": "e-Money NGM staking token. In addition to earning staking rewards the token is bought back and burned based on e-Money stablecoin inflation.",
+        "display": "ngm",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png",
+        },
+        "name": "e-Money",
+        "symbol": "NGM",
+      },
+      Object {
+        "base": "ibc/5973C068568365FFF40DEDCF1A1CB7582B6116B731CD31A12231AE25E20B871F",
+        "coingecko_id": "e-money-eur",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "eeur",
+            ],
+            "denom": "ibc/5973C068568365FFF40DEDCF1A1CB7582B6116B731CD31A12231AE25E20B871F",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "EUR",
+            "exponent": 6,
+          },
+        ],
+        "description": "e-Money EUR stablecoin. Audited and backed by fiat EUR deposits and government bonds.",
+        "display": "eur",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.png",
+        },
+        "name": "e-Money EUR",
+        "symbol": "EEUR",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-37",
+      "client-id": "07-tendermint-1447",
+      "connection-id": "connection-1132",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "emoney",
+      "channel-id": "channel-0",
+      "client-id": "07-tendermint-7",
+      "connection-id": "connection-2",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/6AE98883D4D5D5FF9E50D7130F1305DA2FFA0C652D1DD9C123657C6B4EB2DF8A",
+        "coingecko_id": "evmos",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "aevmos",
+            ],
+            "denom": "ibc/6AE98883D4D5D5FF9E50D7130F1305DA2FFA0C652D1DD9C123657C6B4EB2DF8A",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "evmos",
+            "exponent": 18,
+          },
+        ],
+        "description": "The native EVM, governance and staking token of the Evmos Hub",
+        "display": "evmos",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg",
+        },
+        "name": "Evmos",
+        "symbol": "EVMOS",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-204",
+      "client-id": "07-tendermint-1840",
+      "connection-id": "connection-1440",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "evmos",
+      "channel-id": "channel-0",
+      "client-id": "07-tendermint-0",
+      "connection-id": "connection-0",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/5D1F516200EE8C6B2354102143B78A2DEDA25EDE771AC0F8DC3C1837C8FD4447",
+        "coingecko_id": "fetch-ai",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "afet",
+            ],
+            "denom": "ibc/5D1F516200EE8C6B2354102143B78A2DEDA25EDE771AC0F8DC3C1837C8FD4447",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "fet",
+            "exponent": 18,
+          },
+        ],
+        "description": "The native staking and governance token of the Fetch Hub.",
+        "display": "fet",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.svg",
+        },
+        "name": "fetch-ai",
+        "symbol": "FET",
+      },
+      Object {
+        "base": "ibc/CD20AC50CE57F1CF2EA680D7D47733DA9213641D2D116C5806A880F508609A7A",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "nanomobx",
+            ],
+            "denom": "ibc/CD20AC50CE57F1CF2EA680D7D47733DA9213641D2D116C5806A880F508609A7A",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "mobx",
+            "exponent": 9,
+          },
+        ],
+        "description": "The MOBX coin rewards the use of eco-friendly micromobility transportation.",
+        "display": "mobx",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.svg",
+        },
+        "name": "MOBIX",
+        "symbol": "MOBX",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-229",
+      "client-id": "07-tendermint-1913",
+      "connection-id": "connection-1490",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "fetchhub",
+      "channel-id": "channel-10",
+      "client-id": "07-tendermint-10",
+      "connection-id": "connection-10",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/F49DE040EBA5AB2FAD5F660C2A1DDF98A68470FAE82229818BE775EBF3EE79F2",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uglx",
+            ],
+            "denom": "ibc/F49DE040EBA5AB2FAD5F660C2A1DDF98A68470FAE82229818BE775EBF3EE79F2",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "glx",
+            "exponent": 6,
+          },
+        ],
+        "description": "GLX is the staking token of the Galaxy Chain",
+        "display": "glx",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.svg",
+        },
+        "name": "Galaxy",
+        "symbol": "GLX",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-236",
+      "client-id": "07-tendermint-1928",
+      "connection-id": "connection-1500",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "galaxy",
+      "channel-id": "channel-0",
+      "client-id": "07-tendermint-0",
+      "connection-id": "connection-0",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/DABCB5B2232B630C196330AC2A8010C9DBDE8B783FDFF3FB105540939BE27775",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "el1",
+            ],
+            "denom": "ibc/DABCB5B2232B630C196330AC2A8010C9DBDE8B783FDFF3FB105540939BE27775",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "l1",
+            "exponent": 18,
+          },
+        ],
+        "description": "L1 coin is the GenesisL1 blockchain utility, governance and EVM token",
+        "display": "l1",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.svg",
+        },
+        "name": "GenesisL1",
+        "symbol": "L1",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-235",
+      "client-id": "07-tendermint-1983",
+      "connection-id": "connection-1539",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "genesisl1",
+      "channel-id": "channel-1",
+      "client-id": "07-tendermint-1",
+      "connection-id": "connection-1",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/E97634A40119F1898989C2A23224ED83FDD0A57EA46B3A094E287288D1672B44",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "ugraviton",
+            ],
+            "denom": "ibc/E97634A40119F1898989C2A23224ED83FDD0A57EA46B3A094E287288D1672B44",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [],
+            "denom": "graviton",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Gravity Bridge",
+        "display": "graviton",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
+        },
+        "name": "Graviton",
+        "symbol": "GRAV",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-144",
+      "client-id": "07-tendermint-1737",
+      "connection-id": "connection-1340",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "gravitybridge",
+      "channel-id": "channel-10",
+      "client-id": "07-tendermint-13",
+      "connection-id": "connection-13",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/F3FF7A84A73B62921538642F9797C423D2B4C4ACB3C7FCFFCE7F12AA69909C4B",
+        "coingecko_id": "ixo",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uixo",
+            ],
+            "denom": "ibc/F3FF7A84A73B62921538642F9797C423D2B4C4ACB3C7FCFFCE7F12AA69909C4B",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "ixo",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of IXO Chain",
+        "display": "ixo",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png",
+        },
+        "name": "IXO",
+        "symbol": "IXO",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-38",
+      "client-id": "07-tendermint-1451",
+      "connection-id": "connection-1137",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "impacthub",
+      "channel-id": "channel-4",
+      "client-id": "07-tendermint-12",
+      "connection-id": "connection-12",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/F2D281A7E86F6206C7DA560774B079EBEA17CFE292A1FCC1306E5DAABBB7D016",
+        "coingecko_id": "injective-protocol",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uinj",
+            ],
+            "denom": "ibc/F2D281A7E86F6206C7DA560774B079EBEA17CFE292A1FCC1306E5DAABBB7D016",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "inj",
+            "exponent": 6,
+          },
+        ],
+        "description": "The INJ token is the native governance token for the Injective chain.",
+        "display": "inj",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg",
+        },
+        "name": "Injective",
+        "symbol": "INJ",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-122",
+      "client-id": "07-tendermint-1703",
+      "connection-id": "connection-1298",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "injective",
+      "channel-id": "channel-8",
+      "client-id": "07-tendermint-19",
+      "connection-id": "connection-14",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/7C4D60AA95E5A7558B0A364860979CA34B7FF8AAF255B87AF9E879374470CEC0",
+        "coingecko_id": "iris-network",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uiris",
+            ],
+            "denom": "ibc/7C4D60AA95E5A7558B0A364860979CA34B7FF8AAF255B87AF9E879374470CEC0",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "iris",
+            "exponent": 6,
+          },
+        ],
+        "description": "The IRIS token is the native governance token for the IrisNet chain.",
+        "display": "iris",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg",
+        },
+        "name": "IRISnet",
+        "symbol": "IRIS",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-6",
+      "client-id": "07-tendermint-5",
+      "connection-id": "connection-6",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "irisnet",
+      "channel-id": "channel-3",
+      "client-id": "07-tendermint-5",
+      "connection-id": "connection-4",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED",
+        "coingecko_id": "juno-network",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "ujuno",
+            ],
+            "denom": "ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "juno",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of JUNO Chain",
+        "display": "juno",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg",
+        },
+        "name": "Juno",
+        "symbol": "JUNO",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-42",
+      "client-id": "07-tendermint-1457",
+      "connection-id": "connection-1142",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "juno",
+      "channel-id": "channel-0",
+      "client-id": "07-tendermint-0",
+      "connection-id": "connection-0",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/57AA1A70A4BC9769C525EBF6386F7A21536E04A79D62E1981EFCEF9428EBB205",
+        "coingecko_id": "kava",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "ukava",
+            ],
+            "denom": "ibc/57AA1A70A4BC9769C525EBF6386F7A21536E04A79D62E1981EFCEF9428EBB205",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "kava",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native staking and governance token of Kava",
+        "display": "kava",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png",
+        },
+        "name": "Kava",
+        "symbol": "KAVA",
+      },
+      Object {
+        "base": "ibc/D6C28E07F7343360AC41E15DDD44D79701DDCA2E0C2C41279739C8D4AE5264BC",
+        "coingecko_id": "hard-protocol",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "hard",
+            ],
+            "denom": "ibc/D6C28E07F7343360AC41E15DDD44D79701DDCA2E0C2C41279739C8D4AE5264BC",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "HARD",
+            "exponent": 6,
+          },
+        ],
+        "description": "Governance token of Kava Lend Protocol",
+        "display": "HARD",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.svg",
+        },
+        "name": "Hard",
+        "symbol": "HARD",
+      },
+      Object {
+        "base": "ibc/70CF1A54E23EA4E480DEDA9E12082D3FD5684C3483CBDCE190C5C807227688C5",
+        "coingecko_id": "kava-swap",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "swp",
+            ],
+            "denom": "ibc/70CF1A54E23EA4E480DEDA9E12082D3FD5684C3483CBDCE190C5C807227688C5",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "SWP",
+            "exponent": 6,
+          },
+        ],
+        "description": "Governance token of Kava Swap Protocol",
+        "display": "SWP",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.svg",
+        },
+        "name": "Swap",
+        "symbol": "SWP",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-143",
+      "client-id": "07-tendermint-1735",
+      "connection-id": "connection-1328",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "kava",
+      "channel-id": "channel-1",
+      "client-id": "07-tendermint-2",
+      "connection-id": "connection-1",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/B547DC9B897E7C3AA5B824696110B8E3D2C31E3ED3F02FF363DCBAD82457E07E",
+        "coingecko_id": "ki",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uxki",
+            ],
+            "denom": "ibc/B547DC9B897E7C3AA5B824696110B8E3D2C31E3ED3F02FF363DCBAD82457E07E",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "xki",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Ki Chain",
+        "display": "xki",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg",
+        },
+        "name": "Ki",
+        "symbol": "XKI",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-77",
+      "client-id": "07-tendermint-1564",
+      "connection-id": "connection-1225",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "kichain",
+      "channel-id": "channel-0",
+      "client-id": "07-tendermint-4",
+      "connection-id": "connection-0",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/346786EA82F41FE55FAD14BF69AD8BA9B36985406E43F3CB23E6C45A285A9593",
+        "coingecko_id": "darcmatter-coin",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "udarc",
+            ],
+            "denom": "ibc/346786EA82F41FE55FAD14BF69AD8BA9B36985406E43F3CB23E6C45A285A9593",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "darc",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Konstellation Network",
+        "display": "darc",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/darc.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/darc.svg",
+        },
+        "name": "DARC",
+        "symbol": "DARC",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-171",
+      "client-id": "07-tendermint-1778",
+      "connection-id": "connection-1384",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "konstellation",
+      "channel-id": "channel-0",
+      "client-id": "07-tendermint-1",
+      "connection-id": "connection-0",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/9989AD6CCA39D1131523DB0617B50F6442081162294B4795E26746292467B525",
+        "coingecko_id": "likecoin",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "nanolike",
+            ],
+            "denom": "ibc/9989AD6CCA39D1131523DB0617B50F6442081162294B4795E26746292467B525",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "like",
+            "exponent": 9,
+          },
+        ],
+        "description": "LIKE is the native staking and governance token of LikeCoin chain, a Decentralized Publishing Infrastructure to empower content ownership, authenticity, and provenance.",
+        "display": "like",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/like.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/like.svg",
+        },
+        "name": "LikeCoin",
+        "symbol": "LIKE",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-53",
+      "client-id": "07-tendermint-1507",
+      "connection-id": "connection-1173",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "likecoin",
+      "channel-id": "channel-3",
+      "client-id": "07-tendermint-16",
+      "connection-id": "connection-9",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/8A34AF0C1943FD0DFCDE9ADBF0B2C9959C45E87E6088EA2FC6ADACD59261B8A2",
+        "coingecko_id": "lum-network",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "ulum",
+            ],
+            "denom": "ibc/8A34AF0C1943FD0DFCDE9ADBF0B2C9959C45E87E6088EA2FC6ADACD59261B8A2",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "lum",
+            "exponent": 6,
+          },
+        ],
+        "description": "Native token of the Lum Network",
+        "display": "lum",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.svg",
+        },
+        "name": "Lum",
+        "symbol": "LUM",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-115",
+      "client-id": "07-tendermint-1668",
+      "connection-id": "connection-1280",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "lumnetwork",
+      "channel-id": "channel-3",
+      "client-id": "07-tendermint-7",
+      "connection-id": "connection-5",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/67C89B8B0A70C08F093C909A4DD996DD10E0494C87E28FD9A551697BF173D4CA",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "umeme",
+            ],
+            "denom": "ibc/67C89B8B0A70C08F093C909A4DD996DD10E0494C87E28FD9A551697BF173D4CA",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "meme",
+            "exponent": 6,
+          },
+        ],
+        "description": "MEME Token (MEME) is the native staking token of the MEME Chain",
+        "display": "meme",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg",
+        },
+        "name": "MEME",
+        "symbol": "MEME",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-238",
+      "client-id": "07-tendermint-1931",
+      "connection-id": "connection-1502",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "meme",
+      "channel-id": "channel-1",
+      "client-id": "07-tendermint-0",
+      "connection-id": "connection-1",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/655BCEF3CDEBE32863FF281DBBE3B06160339E9897DC9C9C9821932A5F8BA6F8",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "utick",
+            ],
+            "denom": "ibc/655BCEF3CDEBE32863FF281DBBE3B06160339E9897DC9C9C9821932A5F8BA6F8",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "tick",
+            "exponent": 6,
+          },
+        ],
+        "description": "TICK coin is the token for the Microtick Price Discovery & Oracle App",
+        "display": "tick",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg",
+        },
+        "name": "Microtick",
+        "symbol": "TICK",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-39",
+      "client-id": "07-tendermint-1453",
+      "connection-id": "connection-1139",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "microtick",
+      "channel-id": "channel-16",
+      "client-id": "07-tendermint-99",
+      "connection-id": "connection-92",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/3BCCC93AD5DF58D11A6F8A05FA8BC801CBA0BA61A981F57E91B8B598BF8061CB",
+        "coingecko_id": "medibloc",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "umed",
+            ],
+            "denom": "ibc/3BCCC93AD5DF58D11A6F8A05FA8BC801CBA0BA61A981F57E91B8B598BF8061CB",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "med",
+            "exponent": 6,
+          },
+        ],
+        "description": "Panacea is a public blockchain launched by MediBloc, which is the key infrastructure for reinventing the patient-centered healthcare data ecosystem",
+        "display": "med",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.png",
+        },
+        "name": "MediBloc",
+        "symbol": "MED",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-82",
+      "client-id": "07-tendermint-1576",
+      "connection-id": "connection-1231",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "panacea",
+      "channel-id": "channel-1",
+      "client-id": "07-tendermint-6",
+      "connection-id": "connection-1",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/A0CC0CF735BFB30E730C70019D4218A1244FF383503FF7579C9201AB93CA9293",
+        "coingecko_id": "persistence",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uxprt",
+            ],
+            "denom": "ibc/A0CC0CF735BFB30E730C70019D4218A1244FF383503FF7579C9201AB93CA9293",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "xprt",
+            "exponent": 6,
+          },
+        ],
+        "description": "The XPRT token is primarily a governance token for the Persistence chain.",
+        "display": "xprt",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg",
+        },
+        "name": "Persistence",
+        "symbol": "XPRT",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-4",
+      "client-id": "07-tendermint-3",
+      "connection-id": "connection-4",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "persistence",
+      "channel-id": "channel-6",
+      "client-id": "07-tendermint-6",
+      "connection-id": "connection-5",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/CE5BFF1D9BADA03BB5CCA5F56939392A761B53A10FBD03B37506669C3218D3B2",
+        "coingecko_id": "provenance-blockchain",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "nhash",
+            ],
+            "denom": "ibc/CE5BFF1D9BADA03BB5CCA5F56939392A761B53A10FBD03B37506669C3218D3B2",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [],
+            "denom": "hash",
+            "exponent": 9,
+          },
+        ],
+        "description": "Hash is the staking token of the Provenance Blockchain",
+        "display": "hash",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/hash.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/hash.svg",
+        },
+        "name": "Hash",
+        "symbol": "HASH",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-222",
+      "client-id": "07-tendermint-1899",
+      "connection-id": "connection-1472",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "provenance",
+      "channel-id": "channel-7",
+      "client-id": "07-tendermint-31",
+      "connection-id": "connection-9",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/1DCC8A6CB5689018431323953344A9F6CC4D0BFB261E88C9F7777372C10CD076",
+        "coingecko_id": "regen",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uregen",
+            ],
+            "denom": "ibc/1DCC8A6CB5689018431323953344A9F6CC4D0BFB261E88C9F7777372C10CD076",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "regen",
+            "exponent": 6,
+          },
+        ],
+        "description": "REGEN coin is the token for the Regen Network Platform",
+        "display": "regen",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png",
+        },
+        "name": "Regen Network",
+        "symbol": "REGEN",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-8",
+      "client-id": "07-tendermint-6",
+      "connection-id": "connection-7",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "regen",
+      "channel-id": "channel-1",
+      "client-id": "07-tendermint-1",
+      "connection-id": "connection-1",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/2716E3F2E146664BEFA9217F1A03BFCEDBCD5178B3C71CACB1A0D7584451D219",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uatolo",
+            ],
+            "denom": "ibc/2716E3F2E146664BEFA9217F1A03BFCEDBCD5178B3C71CACB1A0D7584451D219",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "atolo",
+            "exponent": 6,
+          },
+        ],
+        "description": "Native token of Rizon Chain",
+        "display": "atolo",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.svg",
+        },
+        "name": "Rizon Chain",
+        "symbol": "ATOLO",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-221",
+      "client-id": "07-tendermint-1898",
+      "connection-id": "connection-1471",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "rizon",
+      "channel-id": "channel-1",
+      "client-id": "07-tendermint-3",
+      "connection-id": "connection-1",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/0954E1C28EB7AF5B72D24F3BC2B47BBB2FDF91BDDFD57B74B99E133AED40972A",
+        "coingecko_id": "secret",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uscrt",
+            ],
+            "denom": "ibc/0954E1C28EB7AF5B72D24F3BC2B47BBB2FDF91BDDFD57B74B99E133AED40972A",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "scrt",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Secret Network",
+        "display": "scrt",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg",
+        },
+        "name": "Secret Network",
+        "symbol": "SCRT",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-88",
+      "client-id": "07-tendermint-1588",
+      "connection-id": "connection-1244",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "secretnetwork",
+      "channel-id": "channel-1",
+      "client-id": "07-tendermint-2",
+      "connection-id": "connection-1",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/9712DBB13B9631EDFA9BF61B55F1B2D290B2ADB67E3A4EB3A875F3B6081B3B84",
+        "coingecko_id": "sentinel",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "udvpn",
+            ],
+            "denom": "ibc/9712DBB13B9631EDFA9BF61B55F1B2D290B2ADB67E3A4EB3A875F3B6081B3B84",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "dvpn",
+            "exponent": 6,
+          },
+        ],
+        "description": "DVPN is the native token of the Sentinel Hub.",
+        "display": "dvpn",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png",
+        },
+        "name": "Sentinel",
+        "symbol": "DVPN",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-2",
+      "client-id": "07-tendermint-2",
+      "connection-id": "connection-3",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "sentinel",
+      "channel-id": "channel-0",
+      "client-id": "07-tendermint-0",
+      "connection-id": "connection-0",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/7ED954CFFFC06EE8419387F3FC688837FF64EF264DE14219935F724EEEDBF8D3",
+        "coingecko_id": "certik",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uctk",
+            ],
+            "denom": "ibc/7ED954CFFFC06EE8419387F3FC688837FF64EF264DE14219935F724EEEDBF8D3",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "ctk",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Shentu",
+        "display": "ctk",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png",
+        },
+        "name": "Shentu",
+        "symbol": "CTK",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-146",
+      "client-id": "07-tendermint-1741",
+      "connection-id": "connection-1342",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "shentu",
+      "channel-id": "channel-8",
+      "client-id": "07-tendermint-9",
+      "connection-id": "connection-8",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/8318FD63C42203D16DDCAF49FE10E8590669B3219A3E87676AC9DA50722687FB",
+        "coingecko_id": "sifchain",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "rowan",
+            ],
+            "denom": "ibc/8318FD63C42203D16DDCAF49FE10E8590669B3219A3E87676AC9DA50722687FB",
+            "exponent": 18,
+          },
+        ],
+        "description": "Rowan Token (ROWAN) is the Sifchain Network's native utility token, used as the primary means to govern, provide liquidity, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
+        "display": "rowan",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg",
+        },
+        "name": "Sifchain Rowan",
+        "symbol": "ROWAN",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-47",
+      "client-id": "07-tendermint-1484",
+      "connection-id": "connection-1159",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "sifchain",
+      "channel-id": "channel-17",
+      "client-id": "07-tendermint-41",
+      "connection-id": "connection-20",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/9BBA9A1C257E971E38C1422780CE6F0B0686F0A3085E2D61118D904BFE0F5F5E",
+        "coingecko_id": "sommelier",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "usomm",
+            ],
+            "denom": "ibc/9BBA9A1C257E971E38C1422780CE6F0B0686F0A3085E2D61118D904BFE0F5F5E",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "millisomm",
+            ],
+            "denom": "msomm",
+            "exponent": 3,
+          },
+          Object {
+            "denom": "somm",
+            "exponent": 6,
+          },
+        ],
+        "description": "Somm Token (SOMM) is the native staking token of the Sommelier Chain",
+        "display": "somm",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg",
+        },
+        "name": "Somm",
+        "symbol": "SOMM",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-165",
+      "client-id": "07-tendermint-1745",
+      "connection-id": "connection-1348",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "sommelier",
+      "channel-id": "channel-0",
+      "client-id": "07-tendermint-0",
+      "connection-id": "connection-0",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/987C17B11ABC2B20019178ACE62929FE9840202CE79498E29FE8E5CB02B7C0A4",
+        "coingecko_id": "stargaze",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "ustars",
+            ],
+            "denom": "ibc/987C17B11ABC2B20019178ACE62929FE9840202CE79498E29FE8E5CB02B7C0A4",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "stars",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Stargaze",
+        "display": "stars",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png",
+        },
+        "name": "Stargaze",
+        "symbol": "STARS",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-75",
+      "client-id": "07-tendermint-1562",
+      "connection-id": "connection-1223",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "stargaze",
+      "channel-id": "channel-0",
+      "client-id": "07-tendermint-0",
+      "connection-id": "connection-0",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/52B1AA623B34EB78FD767CEA69E8D7FA6C9CFE1FBF49C5406268FD325E2CC2AC",
+        "coingecko_id": "starname",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uiov",
+            ],
+            "denom": "ibc/52B1AA623B34EB78FD767CEA69E8D7FA6C9CFE1FBF49C5406268FD325E2CC2AC",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "iov",
+            "exponent": 6,
+          },
+        ],
+        "description": "IOV coin is the token for the Starname (IOV) Asset Name Service",
+        "display": "iov",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.svg",
+        },
+        "name": "Starname",
+        "symbol": "IOV",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-15",
+      "client-id": "07-tendermint-71",
+      "connection-id": "connection-42",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "starname",
+      "channel-id": "channel-2",
+      "client-id": "07-tendermint-9",
+      "connection-id": "connection-9",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/0EF15DF2F02480ADE0BB6E85D9EBB5DAEA2836D3860E9F97F9AADE4F57A31AA0",
+        "coingecko_id": "terra-luna",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uluna",
+            ],
+            "denom": "ibc/0EF15DF2F02480ADE0BB6E85D9EBB5DAEA2836D3860E9F97F9AADE4F57A31AA0",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "milliluna",
+            ],
+            "denom": "mluna",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "lunc",
+            ],
+            "denom": "luna",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native staking token of Terra Classic.",
+        "display": "luna",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.svg",
+        },
+        "name": "Luna Classic",
+        "symbol": "LUNC",
+      },
+      Object {
+        "base": "ibc/BE1BB42D4BE3C30D50B68D7C41DB4DFCE9678E8EF8C539F6E6A9345048894FCC",
+        "coingecko_id": "terrausd",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uusd",
+            ],
+            "denom": "ibc/BE1BB42D4BE3C30D50B68D7C41DB4DFCE9678E8EF8C539F6E6A9345048894FCC",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "milliusd",
+            ],
+            "denom": "musd",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "ustc",
+            ],
+            "denom": "ust",
+            "exponent": 6,
+          },
+        ],
+        "description": "The USD stablecoin of Terra Classic.",
+        "display": "ust",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ust.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ust.svg",
+        },
+        "name": "TerraClassicUSD",
+        "symbol": "USTC",
+      },
+      Object {
+        "base": "ibc/204A582244FC241613DBB50B04D1D454116C58C4AF7866C186AA0D6EEAD42780",
+        "coingecko_id": "terrakrw",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "ukrw",
+            ],
+            "denom": "ibc/204A582244FC241613DBB50B04D1D454116C58C4AF7866C186AA0D6EEAD42780",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "millikrw",
+            ],
+            "denom": "mkrw",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "krtc",
+            ],
+            "denom": "krt",
+            "exponent": 6,
+          },
+        ],
+        "description": "The KRW stablecoin of Terra Classic.",
+        "display": "krt",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.svg",
+        },
+        "name": "TerraClassicKRW",
+        "symbol": "KRTC",
+      },
+      Object {
+        "base": "ibc/AF5CF6B225B1C03E7F9C2A1AE80CB3BED4E2E7D7F79D5B85679EC2E6925C7289",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uaud",
+            ],
+            "denom": "ibc/AF5CF6B225B1C03E7F9C2A1AE80CB3BED4E2E7D7F79D5B85679EC2E6925C7289",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "milliaud",
+            ],
+            "denom": "maud",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "autc",
+            ],
+            "denom": "aut",
+            "exponent": 6,
+          },
+        ],
+        "description": "The AUD stablecoin of Terra Classic.",
+        "display": "aut",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aut.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aut.svg",
+        },
+        "name": "TerraClassicAUD",
+        "symbol": "AUTC",
+      },
+      Object {
+        "base": "ibc/4D4C6199EDADACC046B17FCC39C9060EBA1CDF71B4692BE309AE71BA992F792B",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "ucad",
+            ],
+            "denom": "ibc/4D4C6199EDADACC046B17FCC39C9060EBA1CDF71B4692BE309AE71BA992F792B",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "millicad",
+            ],
+            "denom": "mcad",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "catc",
+            ],
+            "denom": "cat",
+            "exponent": 6,
+          },
+        ],
+        "description": "The CAD stablecoin of Terra Classic.",
+        "display": "cat",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cat.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cat.svg",
+        },
+        "name": "TerraClassicCAD",
+        "symbol": "CATC",
+      },
+      Object {
+        "base": "ibc/0863B7BFD46942F07AA55B3C7138C50F26D9A8168A47767897B04DBF41B7DF37",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uchf",
+            ],
+            "denom": "ibc/0863B7BFD46942F07AA55B3C7138C50F26D9A8168A47767897B04DBF41B7DF37",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "millichf",
+            ],
+            "denom": "mchf",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "chtc",
+            ],
+            "denom": "cht",
+            "exponent": 6,
+          },
+        ],
+        "description": "The CHF stablecoin of Terra Classic.",
+        "display": "cht",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cht.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cht.svg",
+        },
+        "name": "TerraClassicCHF",
+        "symbol": "CHTC",
+      },
+      Object {
+        "base": "ibc/C4A85672EAF4C51D865A76483AB8CEFD7BC37C3B6F1A1610721D97A1734F382D",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "ucny",
+            ],
+            "denom": "ibc/C4A85672EAF4C51D865A76483AB8CEFD7BC37C3B6F1A1610721D97A1734F382D",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "millicny",
+            ],
+            "denom": "mcny",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "cntc",
+            ],
+            "denom": "cnt",
+            "exponent": 6,
+          },
+        ],
+        "description": "The CNY stablecoin of Terra Classic.",
+        "display": "cnt",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnt.svg",
+        },
+        "name": "TerraClassicCNY",
+        "symbol": "CNTC",
+      },
+      Object {
+        "base": "ibc/52013CBC332B65408E0E8D30AA364612FC56820315926B33E2295275BC12A9B7",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "udkk",
+            ],
+            "denom": "ibc/52013CBC332B65408E0E8D30AA364612FC56820315926B33E2295275BC12A9B7",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "millidkk",
+            ],
+            "denom": "mdkk",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "dktc",
+            ],
+            "denom": "dkt",
+            "exponent": 6,
+          },
+        ],
+        "description": "The DKK stablecoin of Terra Classic.",
+        "display": "dkt",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dkt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dkt.svg",
+        },
+        "name": "TerraClassicDKK",
+        "symbol": "DKTC",
+      },
+      Object {
+        "base": "ibc/5035A2B603841B19A40A060B9F6693F09C8F1E038C2A42589F781929A253148E",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "ueur",
+            ],
+            "denom": "ibc/5035A2B603841B19A40A060B9F6693F09C8F1E038C2A42589F781929A253148E",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "millieur",
+            ],
+            "denom": "meur",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "eutc",
+            ],
+            "denom": "eut",
+            "exponent": 6,
+          },
+        ],
+        "description": "The EUR stablecoin of Terra Classic.",
+        "display": "eut",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eut.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eut.svg",
+        },
+        "name": "TerraClassicEUR",
+        "symbol": "EUTC",
+      },
+      Object {
+        "base": "ibc/2A5C04E2BBB24046A98162896D6237CE56ACE8C3CD907F8070E8348A30A6376E",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "ugbp",
+            ],
+            "denom": "ibc/2A5C04E2BBB24046A98162896D6237CE56ACE8C3CD907F8070E8348A30A6376E",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "milligbp",
+            ],
+            "denom": "mgbp",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "gbtc",
+            ],
+            "denom": "gbt",
+            "exponent": 6,
+          },
+        ],
+        "description": "The GBP stablecoin of Terra Classic.",
+        "display": "gbt",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gbt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gbt.svg",
+        },
+        "name": "TerraClassicGBP",
+        "symbol": "GBTC",
+      },
+      Object {
+        "base": "ibc/95608E3B5D8E5C31EE272E09A04AB8E6638A858F564E5B8F5A5C05CEFC33B434",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uhkd",
+            ],
+            "denom": "ibc/95608E3B5D8E5C31EE272E09A04AB8E6638A858F564E5B8F5A5C05CEFC33B434",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "millihkd",
+            ],
+            "denom": "mhkd",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "hktc",
+            ],
+            "denom": "hkt",
+            "exponent": 6,
+          },
+        ],
+        "description": "The HKD stablecoin of Terra Classic.",
+        "display": "hkt",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/hkt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/hkt.svg",
+        },
+        "name": "TerraClassicHKD",
+        "symbol": "HKTC",
+      },
+      Object {
+        "base": "ibc/BF55329AEA7E79B0AAB320C41A76AC8B9E4E9E07EEED8643AB57440C0978F402",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uidr",
+            ],
+            "denom": "ibc/BF55329AEA7E79B0AAB320C41A76AC8B9E4E9E07EEED8643AB57440C0978F402",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "milliidr",
+            ],
+            "denom": "midr",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "idtc",
+            ],
+            "denom": "idt",
+            "exponent": 6,
+          },
+        ],
+        "description": "The IDR stablecoin of Terra Classic.",
+        "display": "idt",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/idt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/idt.svg",
+        },
+        "name": "TerraClassicIDR",
+        "symbol": "IDTC",
+      },
+      Object {
+        "base": "ibc/C9B27B2F497CD3A3C7EE07556FA40AE234EE346A1EC269E7DE59C9CB52A0A0A6",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uinr",
+            ],
+            "denom": "ibc/C9B27B2F497CD3A3C7EE07556FA40AE234EE346A1EC269E7DE59C9CB52A0A0A6",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "milliinr",
+            ],
+            "denom": "minr",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "intc",
+            ],
+            "denom": "int",
+            "exponent": 6,
+          },
+        ],
+        "description": "The INR stablecoin of Terra Classic.",
+        "display": "int",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/int.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/int.svg",
+        },
+        "name": "TerraClassicINR",
+        "symbol": "INTC",
+      },
+      Object {
+        "base": "ibc/E33EB14BFC9274B7A9C349BB519A78B33C782DA682708EC91A85359FFAA6357A",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "ujpy",
+            ],
+            "denom": "ibc/E33EB14BFC9274B7A9C349BB519A78B33C782DA682708EC91A85359FFAA6357A",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "millijpy",
+            ],
+            "denom": "mjpy",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "jptc",
+            ],
+            "denom": "jpt",
+            "exponent": 6,
+          },
+        ],
+        "description": "The JPY stablecoin of Terra Classic.",
+        "display": "jpt",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/jpt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/jpt.svg",
+        },
+        "name": "TerraClassicJPY",
+        "symbol": "JPTC",
+      },
+      Object {
+        "base": "ibc/0AA77B8ECAAD61A09437BA40B9EAEA3A80D9CF3EF1933309895BF3C2FC699DA6",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "umnt",
+            ],
+            "denom": "ibc/0AA77B8ECAAD61A09437BA40B9EAEA3A80D9CF3EF1933309895BF3C2FC699DA6",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "millimnt",
+            ],
+            "denom": "mmnt",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "mntc",
+            ],
+            "denom": "mnt",
+            "exponent": 6,
+          },
+        ],
+        "description": "The MNT stablecoin of Terra Classic.",
+        "display": "mnt",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnt.svg",
+        },
+        "name": "TerraClassicMNT",
+        "symbol": "MNTC",
+      },
+      Object {
+        "base": "ibc/12FEFB6E8AD852D23474DB1664D6F1B1C965506492B85E34F3496A9AF7B3F6C8",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "umyr",
+            ],
+            "denom": "ibc/12FEFB6E8AD852D23474DB1664D6F1B1C965506492B85E34F3496A9AF7B3F6C8",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "millimyr",
+            ],
+            "denom": "mmyr",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "mytc",
+            ],
+            "denom": "myt",
+            "exponent": 6,
+          },
+        ],
+        "description": "The MYR stablecoin of Terra Classic.",
+        "display": "myt",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/myt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/myt.svg",
+        },
+        "name": "TerraClassicMYR",
+        "symbol": "MYTC",
+      },
+      Object {
+        "base": "ibc/2E4ECFFBCDD77D42E6A1DD2D866C11FECCD4EB65B695253A610F2882B654731F",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "unok",
+            ],
+            "denom": "ibc/2E4ECFFBCDD77D42E6A1DD2D866C11FECCD4EB65B695253A610F2882B654731F",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "millinok",
+            ],
+            "denom": "mnok",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "notc",
+            ],
+            "denom": "not",
+            "exponent": 6,
+          },
+        ],
+        "description": "The NOK stablecoin of Terra Classic.",
+        "display": "not",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/not.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/not.svg",
+        },
+        "name": "TerraClassicNOK",
+        "symbol": "NOTC",
+      },
+      Object {
+        "base": "ibc/559B4D308D13DFD4CF535B417C97740E99516B6EF4E0C66AD54CCAD2F46C55E5",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uphp",
+            ],
+            "denom": "ibc/559B4D308D13DFD4CF535B417C97740E99516B6EF4E0C66AD54CCAD2F46C55E5",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "milliphp",
+            ],
+            "denom": "mphp",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "phtc",
+            ],
+            "denom": "pht",
+            "exponent": 6,
+          },
+        ],
+        "description": "The PHP stablecoin of Terra Classic.",
+        "display": "pht",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pht.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pht.svg",
+        },
+        "name": "TerraClassicPHP",
+        "symbol": "PHTC",
+      },
+      Object {
+        "base": "ibc/92BF104008D75F9E9A602F948C824E75271A62EAB940D381AF7B1A6D95BF6021",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "usdr",
+            ],
+            "denom": "ibc/92BF104008D75F9E9A602F948C824E75271A62EAB940D381AF7B1A6D95BF6021",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "millisdr",
+            ],
+            "denom": "msdr",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "sdtc",
+            ],
+            "denom": "sdt",
+            "exponent": 6,
+          },
+        ],
+        "description": "The SDR stablecoin of Terra Classic.",
+        "display": "sdt",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sdt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sdt.svg",
+        },
+        "name": "TerraClassicSDR",
+        "symbol": "SDTC",
+      },
+      Object {
+        "base": "ibc/227794C5A63E0A61F49839817288C6582E0BB3D9A082D261542F56684DC6F47D",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "usek",
+            ],
+            "denom": "ibc/227794C5A63E0A61F49839817288C6582E0BB3D9A082D261542F56684DC6F47D",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "millisek",
+            ],
+            "denom": "msek",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "setc",
+            ],
+            "denom": "set",
+            "exponent": 6,
+          },
+        ],
+        "description": "The SEK stablecoin of Terra Classic.",
+        "display": "set",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/set.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/set.svg",
+        },
+        "name": "TerraClassicSEK",
+        "symbol": "SETC",
+      },
+      Object {
+        "base": "ibc/2FB96E4667FBBE51C86E534017E6787F5B15377AF16815955DC97692CB237208",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "usgd",
+            ],
+            "denom": "ibc/2FB96E4667FBBE51C86E534017E6787F5B15377AF16815955DC97692CB237208",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "millisgd",
+            ],
+            "denom": "msgd",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "sgtc",
+            ],
+            "denom": "sgt",
+            "exponent": 6,
+          },
+        ],
+        "description": "The SGD stablecoin of Terra Classic.",
+        "display": "sgt",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sgt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sgt.svg",
+        },
+        "name": "TerraClassicSGD",
+        "symbol": "SGTC",
+      },
+      Object {
+        "base": "ibc/1370B7C0100924E0310D7A9F71701109F86CF2A7E13B86A1D3B425E618167DBF",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uthb",
+            ],
+            "denom": "ibc/1370B7C0100924E0310D7A9F71701109F86CF2A7E13B86A1D3B425E618167DBF",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "millithb",
+            ],
+            "denom": "mthb",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "thtc",
+            ],
+            "denom": "tht",
+            "exponent": 6,
+          },
+        ],
+        "description": "The THB stablecoin of Terra Classic.",
+        "display": "tht",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tht.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tht.svg",
+        },
+        "name": "TerraClassicTHB",
+        "symbol": "THTC",
+      },
+      Object {
+        "base": "ibc/93B9AA28AF48E1601399BA808B09A3EE59299B48D70A1E1BCD04D9DB84E246F3",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "utwd",
+            ],
+            "denom": "ibc/93B9AA28AF48E1601399BA808B09A3EE59299B48D70A1E1BCD04D9DB84E246F3",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [
+              "millitwd",
+            ],
+            "denom": "mtwd",
+            "exponent": 3,
+          },
+          Object {
+            "aliases": Array [
+              "twtc",
+            ],
+            "denom": "twt",
+            "exponent": 6,
+          },
+        ],
+        "description": "The TWD stablecoin of Terra Classic.",
+        "display": "twt",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twt.svg",
+        },
+        "name": "TerraClassicTWD",
+        "symbol": "TWTC",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-72",
+      "client-id": "07-tendermint-1215",
+      "connection-id": "connection-1549",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "terra",
+      "channel-id": "channel-1",
+      "client-id": "07-tendermint-12",
+      "connection-id": "connection-11",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/67795E528DF67C5606FC20F824EA39A6EF55BA133F4DC79C90A8C47A0901E17C",
+        "coingecko_id": "umee",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uumee",
+            ],
+            "denom": "ibc/67795E528DF67C5606FC20F824EA39A6EF55BA133F4DC79C90A8C47A0901E17C",
+            "exponent": 0,
+          },
+          Object {
+            "denom": "umee",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Umee",
+        "display": "umee",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png",
+        },
+        "name": "Umee",
+        "symbol": "UMEE",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-184",
+      "client-id": "07-tendermint-1805",
+      "connection-id": "connection-1410",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "umee",
+      "channel-id": "channel-0",
+      "client-id": "07-tendermint-6",
+      "connection-id": "connection-0",
+      "port-id": "transfer",
+    },
+  },
+  Object {
+    "assets": Array [
+      Object {
+        "base": "ibc/E7B35499CFBEB0FF5778127ABA4FB2C4B79A6B8D3D831D4379C4048C238796BD",
+        "coingecko_id": "vidulum",
+        "denom_units": Array [
+          Object {
+            "aliases": Array [
+              "uvdl",
+            ],
+            "denom": "ibc/E7B35499CFBEB0FF5778127ABA4FB2C4B79A6B8D3D831D4379C4048C238796BD",
+            "exponent": 0,
+          },
+          Object {
+            "aliases": Array [],
+            "denom": "vdl",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Vidulum",
+        "display": "vdl",
+        "logo_URIs": Object {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg",
+        },
+        "name": "Vidulum",
+        "symbol": "VDL",
+      },
+    ],
+    "chain": Object {
+      "chain-name": "osmosis",
+      "channel-id": "channel-124",
+      "client-id": "07-tendermint-1705",
+      "connection-id": "connection-1300",
+      "port-id": "transfer",
+    },
+    "counterparty": Object {
+      "chain-name": "vidulum",
+      "channel-id": "channel-0",
+      "client-id": "07-tendermint-0",
+      "connection-id": "connection-0",
+      "port-id": "transfer",
+    },
+  },
+]
+`;
