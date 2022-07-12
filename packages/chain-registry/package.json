@@ -7,6 +7,7 @@
   "license": "SEE LICENSE IN LICENSE",
   "main": "main/index.js",
   "module": "module/index.js",
+  "typings": "types/index.d.ts",
   "directories": {
     "lib": "src",
     "test": "__tests__"
@@ -23,9 +24,11 @@
     "url": "https://github.com/cosmology-finance/chain-registry"
   },
   "scripts": {
-    "build:main": "BABEL_ENV=production babel src --out-dir main --delete-dir-on-start",
-    "build:module": "MODULE=true babel src --out-dir module --delete-dir-on-start",
+    "build:main": "cross-env BABEL_ENV=production babel src --out-dir main --delete-dir-on-start --extensions \".tsx,.ts,.js\"",
+    "build:module": "cross-env MODULE=true babel src --out-dir module --delete-dir-on-start  --extensions \".tsx,.ts,.js\"",
     "build": "npm run build:module && npm run build:main",
+    "build:ts": "tsc --project ./tsconfig.json",
+    "buidl": "npm run build && npm run build:ts",
     "make": "node ./bin/build.js",
     "prepare": "npm run build",
     "lint": "eslint src --fix",
@@ -44,11 +47,12 @@
     "@babel/plugin-proposal-object-rest-spread": "7.18.0",
     "@babel/plugin-transform-runtime": "7.18.5",
     "@babel/preset-env": "7.18.2",
-    "@babel/preset-react": "7.17.12",
+    "@babel/preset-typescript": "^7.17.12",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.1.0",
     "babel-plugin-inline-json-import": "0.3.2",
     "babel-plugin-macros": "3.1.0",
+    "cross-env": "^7.0.2",
     "deepmerge": "^4.2.2",
     "chain-registry-utils": "0.0.1",
     "eslint": "^8.17.0",
@@ -60,7 +64,9 @@
     "glob": "8.0.3",
     "jest": "^28.1.1",
     "prettier": "^2.7.0",
-    "regenerator-runtime": "^0.13.2"
+    "regenerator-runtime": "^0.13.2",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.3"
   },
   "dependencies": {
     "@babel/runtime": "^7.18.3"

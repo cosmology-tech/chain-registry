@@ -11,6 +11,6 @@ module.exports = (api) => {
       ["inline-json-import", {}],
       'macros'
     ],
-    presets: useESModules ? ['@babel/react'] : ['@babel/env', '@babel/react']
+    presets: useESModules ? ['@babel/typescript'] : ['@babel/typescript', '@babel/env']
   };
 };
