@@ -1,7 +1,7 @@
 [
   {
     "$schema": "../assetlist.schema.json",
-    "chain_name": "ethereum",
+    "chain_name": "ethereum2",
     "assets": [
       {
         "description": "Ether is the native fee token of the Ethereum network.",
