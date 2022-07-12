@@ -619,10 +619,6 @@
           "provider": "EZStaking.io"
         },
         {
-          "address": "https://rpc-assetmantle-ia.notional.ventures/",
-          "provider": "Notional"
-        },
-        {
           "address": "https://rpc.assetmantle.nodestake.top",
           "provider": "NodeStake"
         }
@@ -641,19 +637,11 @@
           "provider": "EZStaking.io"
         },
         {
-          "address": "https://api-assetmantle-ia.notional.ventures/",
-          "provider": "Notional"
-        },
-        {
           "address": "https://api.assetmantle.nodestake.top",
           "provider": "NodeStake"
         }
       ],
       "grpc": [
-        {
-          "address": "grpc-assetmantle-ia.notional.ventures:443",
-          "provider": "Notional"
-        },
         {
           "address": "https://grpc.assetmantle.nodestake.top",
           "provider": "NodeStake"
@@ -761,6 +749,10 @@
         {
           "address": "https://rpc-1.axelar.nodes.guru:443",
           "provider": "nodes.guru"
+        },
+        {
+          "address": "https://rpc-axelar-ia.notional.ventures/",
+          "provider": "Notional"
         }
       ],
       "rest": [
@@ -771,9 +763,18 @@
         {
           "address": "https://api-1.axelar.nodes.guru:443",
           "provider": "nodes.guru"
+        },
+        {
+          "address": "https://api-axelar-ia.notional.ventures/",
+          "provider": "Notional"
         }
       ],
-      "grpc": []
+      "grpc": [
+        {
+          "address": "grpc-axelar-ia.notional.ventures:443",
+          "provider": "Notional"
+        }
+      ]
     },
     "explorers": [
       {
@@ -1008,6 +1009,10 @@
         {
           "address": "https://rpc-bitcanna-ia.notional.ventures/",
           "provider": "Notional"
+        },
+        {
+          "address": "https://bitcannarpc.panthea.eu",
+          "provider": "Panthea EU"
         }
       ],
       "grpc": [
@@ -1036,6 +1041,10 @@
         {
           "address": "https://api-bitcanna-ia.notional.ventures/",
           "provider": "Notional"
+        },
+        {
+          "address": "https://bitcannaapi.panthea.eu",
+          "provider": "Panthea EU"
         }
       ]
     },
@@ -1500,6 +1509,10 @@
         {
           "address": "https://rpc-cerberus-ia.notional.ventures/",
           "provider": "Notional"
+        },
+        {
+          "address": "https://cerberusrpc.panthea.eu",
+          "provider": "Panthea EU"
         }
       ],
       "rest": [
@@ -1514,6 +1527,10 @@
         {
           "address": "https://api-cerberus-ia.notional.ventures/",
           "provider": "Notional"
+        },
+        {
+          "address": "https://cerberusapi.panthea.eu",
+          "provider": "Panthea EU"
         }
       ],
       "grpc": [
@@ -3326,6 +3343,14 @@
           "provider": "ech.network"
         },
         {
+          "address": "https://evm.ech.network",
+          "provider": "ech.network"
+        },
+        {
+          "address": "https://draco.ech.network",
+          "provider": "ech.network"
+        },
+        {
           "address": "https://jsonrpc.echelon.nodestake.top",
           "provider": "NodeStake"
         }
@@ -3339,8 +3364,8 @@
       },
       {
         "kind": "ping-pub",
-        "url": "https://ping.ech.network/echelon",
-        "tx_page": "https://ping.ech.network/echelon/tx/${txHash}"
+        "url": "https://ping.pub/echelon",
+        "tx_page": "https://ping.pub/echelon/tx/${txHash}"
       }
     ]
   },
@@ -7459,6 +7484,11 @@
         "kind": "Shentu Explorer",
         "url": "https://explorer.shentu.technology/?net=shentu-2.2",
         "tx_page": "https://explorer.shentu.technology/transactions/${txHash}?net=shentu-2.2"
+      },
+      {
+        "kind": "ping-pub",
+        "url": "https://ping.pub/shentu",
+        "tx_page": "https://ping.pub/shentu/tx/${txHash}"
       }
     ]
   },
@@ -8884,6 +8914,10 @@
         {
           "address": "https://rpc.umee.testnet.run:443",
           "provider": "sourled"
+        },
+        {
+          "address": "https://rpc-umee-ia.notional.ventures/",
+          "provider": "Notional"
         }
       ],
       "rest": [
@@ -8910,6 +8944,10 @@
         {
           "address": "https://api.bottlenose.main.network.umee.cc",
           "provider": "umee Foundation"
+        },
+        {
+          "address": "https://api-umee-ia.notional.ventures/",
+          "provider": "Notional"
         }
       ],
       "grpc": [
@@ -8936,6 +8974,10 @@
         {
           "address": "https://grpc.bottlenose.main.network.umee.cc",
           "provider": "umee Foundation"
+        },
+        {
+          "address": "grpc-umee-ia.notional.ventures:443",
+          "provider": "Notional"
         }
       ]
     },
