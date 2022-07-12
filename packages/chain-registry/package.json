@@ -1,6 +1,6 @@
 {
   "name": "chain-registry",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "Cosmos chain registry ⚛️",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-finance/chain-registry/tree/master/packages/chain-registry#readme",
@@ -52,9 +52,9 @@
     "babel-eslint": "10.1.0",
     "babel-plugin-inline-json-import": "0.3.2",
     "babel-plugin-macros": "3.1.0",
+    "chain-registry-utils": "^0.0.2",
     "cross-env": "^7.0.2",
     "deepmerge": "^4.2.2",
-    "chain-registry-utils": "0.0.1",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-react-app": "7.0.1",
