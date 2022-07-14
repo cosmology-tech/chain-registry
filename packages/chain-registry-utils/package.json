@@ -3,7 +3,7 @@
   "version": "0.0.4",
   "description": "Chain Registry Utils",
   "author": "Dan Lynch <pyramation@gmail.com>",
-  "homepage": "https://github.com/cosmology-finance/chain-registry",
+  "homepage": "https://github.com/cosmology-tech/chain-registry",
   "license": "SEE LICENSE IN LICENSE",
   "main": "main/index.js",
   "module": "module/index.js",
@@ -37,11 +37,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmology-finance/chain-registry"
+    "url": "https://github.com/cosmology-tech/chain-registry"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/cosmology-finance/chain-registry/issues"
+    "url": "https://github.com/cosmology-tech/chain-registry/issues"
   },
   "devDependencies": {
     "@babel/cli": "7.17.10",
