@@ -130,6 +130,72 @@
   {
     "chain": {
       "chain-name": "akash",
+      "client-id": "07-tendermint-84",
+      "connection-id": "connection-58",
+      "channel-id": "channel-35",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-80",
+      "connection-id": "connection-47",
+      "channel-id": "channel-29",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of JUNO Chain",
+        "denom_units": [
+          {
+            "denom": "ibc/1849A429022CBAAB619074CA4412D0016F262218BE6DD828BA8A3DD97D6B52BB",
+            "exponent": 0,
+            "aliases": [
+              "ujuno"
+            ]
+          },
+          {
+            "denom": "juno",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/1849A429022CBAAB619074CA4412D0016F262218BE6DD828BA8A3DD97D6B52BB",
+        "name": "Juno",
+        "display": "juno",
+        "symbol": "JUNO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
+        },
+        "coingecko_id": "juno-network"
+      },
+      {
+        "description": "Governance Token for Digital Land Acquisition DAO",
+        "type_asset": "cw20",
+        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+            "exponent": 0
+          },
+          {
+            "denom": "dla",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/676D982218DFE6C3173E6F2E1EE5C83BAB3E99BD1827CEDAA27C6C3D6EC8CA59",
+        "name": "Digital Land Acquisition DAO",
+        "display": "dla",
+        "symbol": "DLA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
+        }
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "akash",
       "client-id": "07-tendermint-18",
       "connection-id": "connection-11",
       "channel-id": "channel-9",
@@ -450,6 +516,72 @@
   {
     "chain": {
       "chain-name": "assetmantle",
+      "client-id": "07-tendermint-22",
+      "connection-id": "connection-4",
+      "channel-id": "channel-2",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-167",
+      "connection-id": "connection-113",
+      "channel-id": "channel-83",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of JUNO Chain",
+        "denom_units": [
+          {
+            "denom": "ibc/4CD525F166D32B0132C095F353F4C6F033B0FF5C49141470D1EFDA1D63303D04",
+            "exponent": 0,
+            "aliases": [
+              "ujuno"
+            ]
+          },
+          {
+            "denom": "juno",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/4CD525F166D32B0132C095F353F4C6F033B0FF5C49141470D1EFDA1D63303D04",
+        "name": "Juno",
+        "display": "juno",
+        "symbol": "JUNO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
+        },
+        "coingecko_id": "juno-network"
+      },
+      {
+        "description": "Governance Token for Digital Land Acquisition DAO",
+        "type_asset": "cw20",
+        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+            "exponent": 0
+          },
+          {
+            "denom": "dla",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/E724F5E24B3184DB7C0E1820E606F5C1B936442BCE00A91C1B9F7BE517E5B585",
+        "name": "Digital Land Acquisition DAO",
+        "display": "dla",
+        "symbol": "DLA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
+        }
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "assetmantle",
       "client-id": "07-tendermint-0",
       "connection-id": "connection-0",
       "channel-id": "channel-0",
@@ -512,6 +644,72 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
         },
         "coingecko_id": "ion"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "axelar",
+      "client-id": "07-tendermint-25",
+      "connection-id": "connection-14",
+      "channel-id": "channel-4",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-150",
+      "connection-id": "connection-97",
+      "channel-id": "channel-71",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of JUNO Chain",
+        "denom_units": [
+          {
+            "denom": "ibc/9E3EB38E5E157AEBFF4A8EAC66E654BC8ECFCB1F758F4D1C0F2D65945E9E2935",
+            "exponent": 0,
+            "aliases": [
+              "ujuno"
+            ]
+          },
+          {
+            "denom": "juno",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/9E3EB38E5E157AEBFF4A8EAC66E654BC8ECFCB1F758F4D1C0F2D65945E9E2935",
+        "name": "Juno",
+        "display": "juno",
+        "symbol": "JUNO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
+        },
+        "coingecko_id": "juno-network"
+      },
+      {
+        "description": "Governance Token for Digital Land Acquisition DAO",
+        "type_asset": "cw20",
+        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+            "exponent": 0
+          },
+          {
+            "denom": "dla",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/AA53F59690FE900AF95D83AE998B85FE30E53872F3352266296C51874C99469C",
+        "name": "Digital Land Acquisition DAO",
+        "display": "dla",
+        "symbol": "DLA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
+        }
       }
     ]
   },
@@ -697,6 +895,72 @@
   {
     "chain": {
       "chain-name": "bitcanna",
+      "client-id": "07-tendermint-12",
+      "connection-id": "connection-11",
+      "channel-id": "channel-10",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-110",
+      "connection-id": "connection-70",
+      "channel-id": "channel-50",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of JUNO Chain",
+        "denom_units": [
+          {
+            "denom": "ibc/8D9262E35CAE362FA74AE05E430550757CF8D842EC1B241F645D3CB7179AFD10",
+            "exponent": 0,
+            "aliases": [
+              "ujuno"
+            ]
+          },
+          {
+            "denom": "juno",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/8D9262E35CAE362FA74AE05E430550757CF8D842EC1B241F645D3CB7179AFD10",
+        "name": "Juno",
+        "display": "juno",
+        "symbol": "JUNO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
+        },
+        "coingecko_id": "juno-network"
+      },
+      {
+        "description": "Governance Token for Digital Land Acquisition DAO",
+        "type_asset": "cw20",
+        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+            "exponent": 0
+          },
+          {
+            "denom": "dla",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/A67D3BD1A043C2554AFA8F86F9A7E68669E6020C9C2F527A68D3B438C30B5389",
+        "name": "Digital Land Acquisition DAO",
+        "display": "dla",
+        "symbol": "DLA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
+        }
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "bitcanna",
       "client-id": "07-tendermint-1",
       "connection-id": "connection-1",
       "channel-id": "channel-1",
@@ -759,6 +1023,72 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
         },
         "coingecko_id": "ion"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "bitsong",
+      "client-id": "07-tendermint-9",
+      "connection-id": "connection-9",
+      "channel-id": "channel-5",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-33",
+      "connection-id": "connection-26",
+      "channel-id": "channel-17",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of JUNO Chain",
+        "denom_units": [
+          {
+            "denom": "ibc/448C1061CE97D86CC5E86374CD914870FB8EBA16C58661B5F1D3F46729A2422D",
+            "exponent": 0,
+            "aliases": [
+              "ujuno"
+            ]
+          },
+          {
+            "denom": "juno",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/448C1061CE97D86CC5E86374CD914870FB8EBA16C58661B5F1D3F46729A2422D",
+        "name": "Juno",
+        "display": "juno",
+        "symbol": "JUNO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
+        },
+        "coingecko_id": "juno-network"
+      },
+      {
+        "description": "Governance Token for Digital Land Acquisition DAO",
+        "type_asset": "cw20",
+        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+            "exponent": 0
+          },
+          {
+            "denom": "dla",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/85583B2EEAD8B35082F9E7BE102E722021E86772D26E18A60E9C6E22744E9B12",
+        "name": "Digital Land Acquisition DAO",
+        "display": "dla",
+        "symbol": "DLA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
+        }
       }
     ]
   },
@@ -1105,6 +1435,72 @@
   {
     "chain": {
       "chain-name": "chihuahua",
+      "client-id": "07-tendermint-54",
+      "connection-id": "connection-30",
+      "channel-id": "channel-11",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-79",
+      "connection-id": "connection-46",
+      "channel-id": "channel-28",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of JUNO Chain",
+        "denom_units": [
+          {
+            "denom": "ibc/89C79BD28DCCF300B9EE87740B061011AD870EC480777FAB95D85B3ED36BC06C",
+            "exponent": 0,
+            "aliases": [
+              "ujuno"
+            ]
+          },
+          {
+            "denom": "juno",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/89C79BD28DCCF300B9EE87740B061011AD870EC480777FAB95D85B3ED36BC06C",
+        "name": "Juno",
+        "display": "juno",
+        "symbol": "JUNO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
+        },
+        "coingecko_id": "juno-network"
+      },
+      {
+        "description": "Governance Token for Digital Land Acquisition DAO",
+        "type_asset": "cw20",
+        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+            "exponent": 0
+          },
+          {
+            "denom": "dla",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/B5BB9BEB27379FE3055CBA9B3B8A3DBC0FB6F6FB0EAE0426E79452F98241D1F4",
+        "name": "Digital Land Acquisition DAO",
+        "display": "dla",
+        "symbol": "DLA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
+        }
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "chihuahua",
       "client-id": "07-tendermint-45",
       "connection-id": "connection-25",
       "channel-id": "channel-7",
@@ -1210,6 +1606,72 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg"
         },
         "coingecko_id": "secret"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "comdex",
+      "client-id": "07-tendermint-30",
+      "connection-id": "connection-19",
+      "channel-id": "channel-18",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-92",
+      "connection-id": "connection-55",
+      "channel-id": "channel-36",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of JUNO Chain",
+        "denom_units": [
+          {
+            "denom": "ibc/167E3D88D71B7D2F6308D3EF93FC3DD51932B2D9672D72B71418F61CBC5F5717",
+            "exponent": 0,
+            "aliases": [
+              "ujuno"
+            ]
+          },
+          {
+            "denom": "juno",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/167E3D88D71B7D2F6308D3EF93FC3DD51932B2D9672D72B71418F61CBC5F5717",
+        "name": "Juno",
+        "display": "juno",
+        "symbol": "JUNO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
+        },
+        "coingecko_id": "juno-network"
+      },
+      {
+        "description": "Governance Token for Digital Land Acquisition DAO",
+        "type_asset": "cw20",
+        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+            "exponent": 0
+          },
+          {
+            "denom": "dla",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/B315051A41D08A5C1AB257B88A82F2C07F8407945A6787F81B372AF018B73270",
+        "name": "Digital Land Acquisition DAO",
+        "display": "dla",
+        "symbol": "DLA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
+        }
       }
     ]
   },
@@ -1557,6 +2019,29 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
+      },
+      {
+        "description": "Governance Token for Digital Land Acquisition DAO",
+        "type_asset": "cw20",
+        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+            "exponent": 0
+          },
+          {
+            "denom": "dla",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/DC5B57C3D2D84F26A3C227FD6B30191156583901B066B06817DDA7F90E4558DA",
+        "name": "Digital Land Acquisition DAO",
+        "display": "dla",
+        "symbol": "DLA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
+        }
       }
     ]
   },
@@ -2510,6 +2995,72 @@
   {
     "chain": {
       "chain-name": "dig",
+      "client-id": "07-tendermint-17",
+      "connection-id": "connection-10",
+      "channel-id": "channel-2",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-100",
+      "connection-id": "connection-62",
+      "channel-id": "channel-37",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of JUNO Chain",
+        "denom_units": [
+          {
+            "denom": "ibc/4CD525F166D32B0132C095F353F4C6F033B0FF5C49141470D1EFDA1D63303D04",
+            "exponent": 0,
+            "aliases": [
+              "ujuno"
+            ]
+          },
+          {
+            "denom": "juno",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/4CD525F166D32B0132C095F353F4C6F033B0FF5C49141470D1EFDA1D63303D04",
+        "name": "Juno",
+        "display": "juno",
+        "symbol": "JUNO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
+        },
+        "coingecko_id": "juno-network"
+      },
+      {
+        "description": "Governance Token for Digital Land Acquisition DAO",
+        "type_asset": "cw20",
+        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+            "exponent": 0
+          },
+          {
+            "denom": "dla",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/E724F5E24B3184DB7C0E1820E606F5C1B936442BCE00A91C1B9F7BE517E5B585",
+        "name": "Digital Land Acquisition DAO",
+        "display": "dla",
+        "symbol": "DLA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
+        }
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "dig",
       "client-id": "07-tendermint-13",
       "connection-id": "connection-8",
       "channel-id": "channel-1",
@@ -2658,6 +3209,72 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg"
         },
         "coingecko_id": "iris-network"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "emoney",
+      "client-id": "07-tendermint-51",
+      "connection-id": "connection-20",
+      "channel-id": "channel-15",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-24",
+      "connection-id": "connection-16",
+      "channel-id": "channel-9",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of JUNO Chain",
+        "denom_units": [
+          {
+            "denom": "ibc/3BEA25F3A13A9C17476C821CCF8ECCC84351DDB7B1B06B98654C3B4427F785CC",
+            "exponent": 0,
+            "aliases": [
+              "ujuno"
+            ]
+          },
+          {
+            "denom": "juno",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/3BEA25F3A13A9C17476C821CCF8ECCC84351DDB7B1B06B98654C3B4427F785CC",
+        "name": "Juno",
+        "display": "juno",
+        "symbol": "JUNO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
+        },
+        "coingecko_id": "juno-network"
+      },
+      {
+        "description": "Governance Token for Digital Land Acquisition DAO",
+        "type_asset": "cw20",
+        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+            "exponent": 0
+          },
+          {
+            "denom": "dla",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/F3A12D7666BDBCE1479FEAA0367A775A03D46A8EF06F93BCB83D4BCA1800A447",
+        "name": "Digital Land Acquisition DAO",
+        "display": "dla",
+        "symbol": "DLA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
+        }
       }
     ]
   },
@@ -3890,6 +4507,452 @@
   {
     "chain": {
       "chain-name": "juno",
+      "client-id": "07-tendermint-80",
+      "connection-id": "connection-47",
+      "channel-id": "channel-29",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "akash",
+      "client-id": "07-tendermint-84",
+      "connection-id": "connection-58",
+      "channel-id": "channel-35",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "Akash Token (AKT) is the Akash Network's native utility token, used as the primary means to govern, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
+        "denom_units": [
+          {
+            "denom": "ibc/DFC6F33796D5D0075C5FB54A4D7B8E76915ACF434CB1EE2A1BA0BB8334E17C3A",
+            "exponent": 0,
+            "aliases": [
+              "uakt"
+            ]
+          },
+          {
+            "denom": "akt",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/DFC6F33796D5D0075C5FB54A4D7B8E76915ACF434CB1EE2A1BA0BB8334E17C3A",
+        "name": "Akash Network",
+        "display": "akt",
+        "symbol": "AKT",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg"
+        },
+        "coingecko_id": "akash-network"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-167",
+      "connection-id": "connection-113",
+      "channel-id": "channel-83",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "assetmantle",
+      "client-id": "07-tendermint-22",
+      "connection-id": "connection-4",
+      "channel-id": "channel-2",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of Asset Mantle",
+        "denom_units": [
+          {
+            "denom": "ibc/5CB906E82B7A88E62644AD811361F5858B74BA9EBD75C84B6D24B20C01A4819F",
+            "exponent": 0,
+            "aliases": [
+              "umntl"
+            ]
+          },
+          {
+            "denom": "mntl",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/5CB906E82B7A88E62644AD811361F5858B74BA9EBD75C84B6D24B20C01A4819F",
+        "name": "AssetMantle",
+        "display": "mntl",
+        "symbol": "MNTL",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png"
+        },
+        "coingecko_id": "assetmantle"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-150",
+      "connection-id": "connection-97",
+      "channel-id": "channel-71",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "axelar",
+      "client-id": "07-tendermint-25",
+      "connection-id": "connection-14",
+      "channel-id": "channel-4",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/EBE900AED8FF6BB2E186B17B066138F647CDD9647EF4FBE2DE6C8D4013A2C990",
+            "exponent": 0,
+            "aliases": [
+              "uaxl"
+            ]
+          },
+          {
+            "denom": "axl",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/EBE900AED8FF6BB2E186B17B066138F647CDD9647EF4FBE2DE6C8D4013A2C990",
+        "name": "Axelar",
+        "display": "axl",
+        "symbol": "AXL",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg"
+        },
+        "coingecko_id": "axelar-network"
+      },
+      {
+        "description": "Circle's stablecoin on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/EAC38D55372F38F1AFD68DF7FE9EF762DCF69F26520643CF3F9D292A738D8034",
+            "exponent": 0,
+            "aliases": [
+              "uusdc"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/EAC38D55372F38F1AFD68DF7FE9EF762DCF69F26520643CF3F9D292A738D8034",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png"
+        },
+        "coingecko_id": "usd-coin"
+      },
+      {
+        "description": "Frax's fractional-algorithmic stablecoin on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/1CE15165C83F70C7DB18B19C417321B02512A85BCB9FB8E553FC10070D122036",
+            "exponent": 0,
+            "aliases": [
+              "frax-wei"
+            ]
+          },
+          {
+            "denom": "frax",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/1CE15165C83F70C7DB18B19C417321B02512A85BCB9FB8E553FC10070D122036",
+        "name": "Frax",
+        "display": "frax",
+        "symbol": "FRAX",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.png"
+        },
+        "coingecko_id": "frax"
+      },
+      {
+        "description": "Dai stablecoin on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/171E8F6687D290D378678310F9F15D367DCD245BF06184532B703A92054A8A4F",
+            "exponent": 0,
+            "aliases": [
+              "dai-wei"
+            ]
+          },
+          {
+            "denom": "dai",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/171E8F6687D290D378678310F9F15D367DCD245BF06184532B703A92054A8A4F",
+        "name": "Dai Stablecoin",
+        "display": "dai",
+        "symbol": "DAI",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.png"
+        },
+        "coingecko_id": "dai"
+      },
+      {
+        "description": "Tether's USD stablecoin on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/B22D08F0E3D08968FB3CBEE2C1E993581A99AAAA60D0490C1AF7DCE567D5FDDA",
+            "exponent": 0,
+            "aliases": [
+              "uusdt"
+            ]
+          },
+          {
+            "denom": "usdt",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/B22D08F0E3D08968FB3CBEE2C1E993581A99AAAA60D0490C1AF7DCE567D5FDDA",
+        "name": "Tether USD",
+        "display": "usdt",
+        "symbol": "USDT",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png"
+        },
+        "coingecko_id": "tether"
+      },
+      {
+        "description": "Wrapped Ether on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/95A45A81521EAFDBEDAEEB6DA975C02E55B414C95AD3CE50709272366A90CA17",
+            "exponent": 0,
+            "aliases": [
+              "weth-wei"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/95A45A81521EAFDBEDAEEB6DA975C02E55B414C95AD3CE50709272366A90CA17",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "WETH",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png"
+        },
+        "coingecko_id": "weth"
+      },
+      {
+        "description": "Wrapped Bitcoin on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/5EF597EA4E863132BFD3E051AC6BAA0175F00913D3256A41F11DC425C39527D6",
+            "exponent": 0,
+            "aliases": [
+              "wbtc-satoshi"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "base": "ibc/5EF597EA4E863132BFD3E051AC6BAA0175F00913D3256A41F11DC425C39527D6",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png"
+        },
+        "coingecko_id": "wrapped-bitcoin"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-110",
+      "connection-id": "connection-70",
+      "channel-id": "channel-50",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "bitcanna",
+      "client-id": "07-tendermint-12",
+      "connection-id": "connection-11",
+      "channel-id": "channel-10",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The BCNA coin is the transactional token within the BitCanna network, serving the legal cannabis industry through its payment network, supply chain and trust network.",
+        "denom_units": [
+          {
+            "denom": "ibc/0CB5D60E57FD521FA39D11E3E410144389010AC5EF5F292BC9BDD832FA2FDBF9",
+            "exponent": 0,
+            "aliases": [
+              "ubcna"
+            ]
+          },
+          {
+            "denom": "bcna",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/0CB5D60E57FD521FA39D11E3E410144389010AC5EF5F292BC9BDD832FA2FDBF9",
+        "display": "bcna",
+        "name": "BitCanna",
+        "symbol": "BCNA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg"
+        },
+        "coingecko_id": "bitcanna"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-33",
+      "connection-id": "connection-26",
+      "channel-id": "channel-17",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "bitsong",
+      "client-id": "07-tendermint-9",
+      "connection-id": "connection-9",
+      "channel-id": "channel-5",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "BitSong Native Token",
+        "denom_units": [
+          {
+            "denom": "ibc/008BFD000A10BCE5F0D4DD819AE1C1EC2942396062DABDD6AE64A655ABC7085B",
+            "exponent": 0,
+            "aliases": [
+              "ubtsg"
+            ]
+          },
+          {
+            "denom": "btsg",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/008BFD000A10BCE5F0D4DD819AE1C1EC2942396062DABDD6AE64A655ABC7085B",
+        "name": "BitSong",
+        "display": "btsg",
+        "symbol": "BTSG",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg"
+        },
+        "coingecko_id": "bitsong"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-79",
+      "connection-id": "connection-46",
+      "channel-id": "channel-28",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "chihuahua",
+      "client-id": "07-tendermint-54",
+      "connection-id": "connection-30",
+      "channel-id": "channel-11",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of Chihuahua Chain",
+        "denom_units": [
+          {
+            "denom": "ibc/D836B191CDAE8EDACDEBE7B64B504C5E06CC17C6A072DAF278F9A96DF66F6241",
+            "exponent": 0,
+            "aliases": [
+              "uhuahua"
+            ]
+          },
+          {
+            "denom": "huahua",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/D836B191CDAE8EDACDEBE7B64B504C5E06CC17C6A072DAF278F9A96DF66F6241",
+        "name": "Chihuahua",
+        "display": "huahua",
+        "symbol": "HUAHUA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png"
+        },
+        "coingecko_id": "chihuahua-token"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-92",
+      "connection-id": "connection-55",
+      "channel-id": "channel-36",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "comdex",
+      "client-id": "07-tendermint-30",
+      "connection-id": "connection-19",
+      "channel-id": "channel-18",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "Native Token of Comdex Protocol",
+        "denom_units": [
+          {
+            "denom": "ibc/946AD96F278770521526D7283F58268DA2F6ACDDE40324A9D1C86811D78C86A0",
+            "exponent": 0,
+            "aliases": [
+              "ucmdx"
+            ]
+          },
+          {
+            "denom": "cmdx",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/946AD96F278770521526D7283F58268DA2F6ACDDE40324A9D1C86811D78C86A0",
+        "name": "Comdex",
+        "display": "cmdx",
+        "symbol": "CMDX",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png"
+        },
+        "coingecko_id": "comdex"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "juno",
       "client-id": "07-tendermint-3",
       "connection-id": "connection-2",
       "channel-id": "channel-1",
@@ -3927,6 +4990,114 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg"
         },
         "coingecko_id": "cosmos"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-100",
+      "connection-id": "connection-62",
+      "channel-id": "channel-37",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "dig",
+      "client-id": "07-tendermint-17",
+      "connection-id": "connection-10",
+      "channel-id": "channel-2",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "Native token of Dig Chain",
+        "denom_units": [
+          {
+            "denom": "ibc/6842C591DC4588411A565C9FF650FB15A17DFE3F0A43201E8141E4D14B8D171A",
+            "exponent": 0,
+            "aliases": [
+              "udig"
+            ]
+          },
+          {
+            "denom": "dig",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/6842C591DC4588411A565C9FF650FB15A17DFE3F0A43201E8141E4D14B8D171A",
+        "name": "Dig Chain",
+        "display": "dig",
+        "symbol": "DIG",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png"
+        },
+        "coingecko_id": "dig-chain"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-24",
+      "connection-id": "connection-16",
+      "channel-id": "channel-9",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "emoney",
+      "client-id": "07-tendermint-51",
+      "connection-id": "connection-20",
+      "channel-id": "channel-15",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "e-Money NGM staking token. In addition to earning staking rewards the token is bought back and burned based on e-Money stablecoin inflation.",
+        "denom_units": [
+          {
+            "denom": "ibc/52423136339C1CE8C91F6A586DFE41591BDDD4665AE526DFFA8421F9ACF95196",
+            "exponent": 0,
+            "aliases": [
+              "ungm"
+            ]
+          },
+          {
+            "denom": "ngm",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/52423136339C1CE8C91F6A586DFE41591BDDD4665AE526DFFA8421F9ACF95196",
+        "name": "e-Money",
+        "display": "ngm",
+        "symbol": "NGM",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png"
+        },
+        "coingecko_id": "e-money"
+      },
+      {
+        "description": "e-Money EUR stablecoin. Audited and backed by fiat EUR deposits and government bonds.",
+        "denom_units": [
+          {
+            "denom": "ibc/B9F7C1E4CE9219B5AF06C47B18661DBD49CCD7A6C18FF789E2FB62BB365CFF9C",
+            "exponent": 0,
+            "aliases": [
+              "eeur"
+            ]
+          },
+          {
+            "denom": "EUR",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/B9F7C1E4CE9219B5AF06C47B18661DBD49CCD7A6C18FF789E2FB62BB365CFF9C",
+        "name": "e-Money EUR",
+        "display": "eur",
+        "symbol": "EEUR",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.png"
+        },
+        "coingecko_id": "e-money-eur"
       }
     ]
   },
@@ -3995,6 +5166,49 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
         },
         "coingecko_id": "ion"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-89",
+      "connection-id": "connection-51",
+      "channel-id": "channel-33",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "persistence",
+      "client-id": "07-tendermint-49",
+      "connection-id": "connection-48",
+      "channel-id": "channel-37",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The XPRT token is primarily a governance token for the Persistence chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/7455B3F2F2737906BACF4AE980069A4CAB7C7F9FDAABAEFBA439DF037AEC5898",
+            "exponent": 0,
+            "aliases": [
+              "uxprt"
+            ]
+          },
+          {
+            "denom": "xprt",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/7455B3F2F2737906BACF4AE980069A4CAB7C7F9FDAABAEFBA439DF037AEC5898",
+        "name": "Persistence",
+        "display": "xprt",
+        "symbol": "XPRT",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg"
+        },
+        "coingecko_id": "persistence"
       }
     ]
   },
@@ -4077,6 +5291,851 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png"
         },
         "coingecko_id": "sifchain"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-44",
+      "connection-id": "connection-30",
+      "channel-id": "channel-20",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "stargaze",
+      "client-id": "07-tendermint-13",
+      "connection-id": "connection-11",
+      "channel-id": "channel-5",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of Stargaze",
+        "denom_units": [
+          {
+            "denom": "ibc/F6B367385300865F654E110976B838502504231705BAC0849B0651C226385885",
+            "exponent": 0,
+            "aliases": [
+              "ustars"
+            ]
+          },
+          {
+            "denom": "stars",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/F6B367385300865F654E110976B838502504231705BAC0849B0651C226385885",
+        "name": "Stargaze",
+        "display": "stars",
+        "symbol": "STARS",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png"
+        },
+        "coingecko_id": "stargaze"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-63",
+      "connection-id": "connection-43",
+      "channel-id": "channel-27",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "terra",
+      "client-id": "07-tendermint-32",
+      "connection-id": "connection-34",
+      "channel-id": "channel-20",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native staking token of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/8F865D9760B482FF6254EDFEC1FF2F1273B9AB6873A7DE484F89639795D73D75",
+            "exponent": 0,
+            "aliases": [
+              "uluna"
+            ]
+          },
+          {
+            "denom": "mluna",
+            "exponent": 3,
+            "aliases": [
+              "milliluna"
+            ]
+          },
+          {
+            "denom": "luna",
+            "exponent": 6,
+            "aliases": [
+              "lunc"
+            ]
+          }
+        ],
+        "base": "ibc/8F865D9760B482FF6254EDFEC1FF2F1273B9AB6873A7DE484F89639795D73D75",
+        "name": "Luna Classic",
+        "display": "luna",
+        "symbol": "LUNC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.png"
+        },
+        "coingecko_id": "terra-luna"
+      },
+      {
+        "description": "The USD stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/2DA4136457810BCB9DAAB620CA67BC342B17C3C70151CA70490A170DF7C9CB27",
+            "exponent": 0,
+            "aliases": [
+              "uusd"
+            ]
+          },
+          {
+            "denom": "musd",
+            "exponent": 3,
+            "aliases": [
+              "milliusd"
+            ]
+          },
+          {
+            "denom": "ust",
+            "exponent": 6,
+            "aliases": [
+              "ustc"
+            ]
+          }
+        ],
+        "base": "ibc/2DA4136457810BCB9DAAB620CA67BC342B17C3C70151CA70490A170DF7C9CB27",
+        "name": "TerraClassicUSD",
+        "display": "ust",
+        "symbol": "USTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ust.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ust.png"
+        },
+        "coingecko_id": "terrausd"
+      },
+      {
+        "description": "The KRW stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/A3261799F1B8B81FEBF1615EA5034DE825B5F9608F61A2D93A5DE41A38DE53AF",
+            "exponent": 0,
+            "aliases": [
+              "ukrw"
+            ]
+          },
+          {
+            "denom": "mkrw",
+            "exponent": 3,
+            "aliases": [
+              "millikrw"
+            ]
+          },
+          {
+            "denom": "krt",
+            "exponent": 6,
+            "aliases": [
+              "krtc"
+            ]
+          }
+        ],
+        "base": "ibc/A3261799F1B8B81FEBF1615EA5034DE825B5F9608F61A2D93A5DE41A38DE53AF",
+        "name": "TerraClassicKRW",
+        "display": "krt",
+        "symbol": "KRTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.png"
+        },
+        "coingecko_id": "terrakrw"
+      },
+      {
+        "description": "The AUD stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/62A380754699538433254576CC3FB71A435606F23BD38DCADA38D6472217BE66",
+            "exponent": 0,
+            "aliases": [
+              "uaud"
+            ]
+          },
+          {
+            "denom": "maud",
+            "exponent": 3,
+            "aliases": [
+              "milliaud"
+            ]
+          },
+          {
+            "denom": "aut",
+            "exponent": 6,
+            "aliases": [
+              "autc"
+            ]
+          }
+        ],
+        "base": "ibc/62A380754699538433254576CC3FB71A435606F23BD38DCADA38D6472217BE66",
+        "display": "aut",
+        "name": "TerraClassicAUD",
+        "symbol": "AUTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aut.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aut.png"
+        }
+      },
+      {
+        "description": "The CAD stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/0676F47C75829EF870526B0CD767F65EB3AE6D95768DAB43F472B4F526380375",
+            "exponent": 0,
+            "aliases": [
+              "ucad"
+            ]
+          },
+          {
+            "denom": "mcad",
+            "exponent": 3,
+            "aliases": [
+              "millicad"
+            ]
+          },
+          {
+            "denom": "cat",
+            "exponent": 6,
+            "aliases": [
+              "catc"
+            ]
+          }
+        ],
+        "base": "ibc/0676F47C75829EF870526B0CD767F65EB3AE6D95768DAB43F472B4F526380375",
+        "display": "cat",
+        "name": "TerraClassicCAD",
+        "symbol": "CATC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cat.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cat.png"
+        }
+      },
+      {
+        "description": "The CHF stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/16B0A06D4463D3F287873D63B89EEC1647B22D10CFD8DC906154C6E55FE7400F",
+            "exponent": 0,
+            "aliases": [
+              "uchf"
+            ]
+          },
+          {
+            "denom": "mchf",
+            "exponent": 3,
+            "aliases": [
+              "millichf"
+            ]
+          },
+          {
+            "denom": "cht",
+            "exponent": 6,
+            "aliases": [
+              "chtc"
+            ]
+          }
+        ],
+        "base": "ibc/16B0A06D4463D3F287873D63B89EEC1647B22D10CFD8DC906154C6E55FE7400F",
+        "display": "cht",
+        "name": "TerraClassicCHF",
+        "symbol": "CHTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cht.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cht.png"
+        }
+      },
+      {
+        "description": "The CNY stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/843ADFB199626AB0465F212029200EB12F8C7AF41487438D75150F275DEA5EB8",
+            "exponent": 0,
+            "aliases": [
+              "ucny"
+            ]
+          },
+          {
+            "denom": "mcny",
+            "exponent": 3,
+            "aliases": [
+              "millicny"
+            ]
+          },
+          {
+            "denom": "cnt",
+            "exponent": 6,
+            "aliases": [
+              "cntc"
+            ]
+          }
+        ],
+        "base": "ibc/843ADFB199626AB0465F212029200EB12F8C7AF41487438D75150F275DEA5EB8",
+        "display": "cnt",
+        "name": "TerraClassicCNY",
+        "symbol": "CNTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnt.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnt.png"
+        }
+      },
+      {
+        "description": "The DKK stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/C6B5D5AE64E3054916153CDF02467638BDEE5B55777180E7FB6365F50CA4477C",
+            "exponent": 0,
+            "aliases": [
+              "udkk"
+            ]
+          },
+          {
+            "denom": "mdkk",
+            "exponent": 3,
+            "aliases": [
+              "millidkk"
+            ]
+          },
+          {
+            "denom": "dkt",
+            "exponent": 6,
+            "aliases": [
+              "dktc"
+            ]
+          }
+        ],
+        "base": "ibc/C6B5D5AE64E3054916153CDF02467638BDEE5B55777180E7FB6365F50CA4477C",
+        "display": "dkt",
+        "name": "TerraClassicDKK",
+        "symbol": "DKTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dkt.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dkt.png"
+        }
+      },
+      {
+        "description": "The EUR stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/FC7C3449D9D3497373E63A57ABD417685C4E2D000D11A34EBF89F2F00780D6FE",
+            "exponent": 0,
+            "aliases": [
+              "ueur"
+            ]
+          },
+          {
+            "denom": "meur",
+            "exponent": 3,
+            "aliases": [
+              "millieur"
+            ]
+          },
+          {
+            "denom": "eut",
+            "exponent": 6,
+            "aliases": [
+              "eutc"
+            ]
+          }
+        ],
+        "base": "ibc/FC7C3449D9D3497373E63A57ABD417685C4E2D000D11A34EBF89F2F00780D6FE",
+        "display": "eut",
+        "name": "TerraClassicEUR",
+        "symbol": "EUTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eut.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eut.png"
+        }
+      },
+      {
+        "description": "The GBP stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/DD149BDA76BA04A2CB206F0BEF3B56EBE3B7DE6BB4CB833F47257D1497E7BC99",
+            "exponent": 0,
+            "aliases": [
+              "ugbp"
+            ]
+          },
+          {
+            "denom": "mgbp",
+            "exponent": 3,
+            "aliases": [
+              "milligbp"
+            ]
+          },
+          {
+            "denom": "gbt",
+            "exponent": 6,
+            "aliases": [
+              "gbtc"
+            ]
+          }
+        ],
+        "base": "ibc/DD149BDA76BA04A2CB206F0BEF3B56EBE3B7DE6BB4CB833F47257D1497E7BC99",
+        "display": "gbt",
+        "name": "TerraClassicGBP",
+        "symbol": "GBTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gbt.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gbt.png"
+        }
+      },
+      {
+        "description": "The HKD stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/ED8C2407BEA9646B6AB686E55BAE3C607EFA40154CED226418A331F80890F258",
+            "exponent": 0,
+            "aliases": [
+              "uhkd"
+            ]
+          },
+          {
+            "denom": "mhkd",
+            "exponent": 3,
+            "aliases": [
+              "millihkd"
+            ]
+          },
+          {
+            "denom": "hkt",
+            "exponent": 6,
+            "aliases": [
+              "hktc"
+            ]
+          }
+        ],
+        "base": "ibc/ED8C2407BEA9646B6AB686E55BAE3C607EFA40154CED226418A331F80890F258",
+        "display": "hkt",
+        "name": "TerraClassicHKD",
+        "symbol": "HKTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/hkt.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/hkt.png"
+        }
+      },
+      {
+        "description": "The IDR stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/C8648B16B2259BE3C6EB518333D9D223DD9B493ADB867D160F85725D2B0CA051",
+            "exponent": 0,
+            "aliases": [
+              "uidr"
+            ]
+          },
+          {
+            "denom": "midr",
+            "exponent": 3,
+            "aliases": [
+              "milliidr"
+            ]
+          },
+          {
+            "denom": "idt",
+            "exponent": 6,
+            "aliases": [
+              "idtc"
+            ]
+          }
+        ],
+        "base": "ibc/C8648B16B2259BE3C6EB518333D9D223DD9B493ADB867D160F85725D2B0CA051",
+        "display": "idt",
+        "name": "TerraClassicIDR",
+        "symbol": "IDTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/idt.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/idt.png"
+        }
+      },
+      {
+        "description": "The INR stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/09F936980055EE26F23EB052E4D64DE147A54D69153BFAA5E419ECC3A6A1677B",
+            "exponent": 0,
+            "aliases": [
+              "uinr"
+            ]
+          },
+          {
+            "denom": "minr",
+            "exponent": 3,
+            "aliases": [
+              "milliinr"
+            ]
+          },
+          {
+            "denom": "int",
+            "exponent": 6,
+            "aliases": [
+              "intc"
+            ]
+          }
+        ],
+        "base": "ibc/09F936980055EE26F23EB052E4D64DE147A54D69153BFAA5E419ECC3A6A1677B",
+        "display": "int",
+        "name": "TerraClassicINR",
+        "symbol": "INTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/int.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/int.png"
+        }
+      },
+      {
+        "description": "The JPY stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/AF32FDEE8F709F5E3182ADCD852ECFF463A6AE4E172F8E53E9F422548F3B999F",
+            "exponent": 0,
+            "aliases": [
+              "ujpy"
+            ]
+          },
+          {
+            "denom": "mjpy",
+            "exponent": 3,
+            "aliases": [
+              "millijpy"
+            ]
+          },
+          {
+            "denom": "jpt",
+            "exponent": 6,
+            "aliases": [
+              "jptc"
+            ]
+          }
+        ],
+        "base": "ibc/AF32FDEE8F709F5E3182ADCD852ECFF463A6AE4E172F8E53E9F422548F3B999F",
+        "display": "jpt",
+        "name": "TerraClassicJPY",
+        "symbol": "JPTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/jpt.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/jpt.png"
+        }
+      },
+      {
+        "description": "The MNT stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/47ACFDEB3CF7A49EF0738F52C2E0EB79AAF9AC3321CA2A7A2BD5F09AB7B33D93",
+            "exponent": 0,
+            "aliases": [
+              "umnt"
+            ]
+          },
+          {
+            "denom": "mmnt",
+            "exponent": 3,
+            "aliases": [
+              "millimnt"
+            ]
+          },
+          {
+            "denom": "mnt",
+            "exponent": 6,
+            "aliases": [
+              "mntc"
+            ]
+          }
+        ],
+        "base": "ibc/47ACFDEB3CF7A49EF0738F52C2E0EB79AAF9AC3321CA2A7A2BD5F09AB7B33D93",
+        "display": "mnt",
+        "name": "TerraClassicMNT",
+        "symbol": "MNTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnt.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnt.png"
+        }
+      },
+      {
+        "description": "The MYR stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/FDE195C15483F903D6F18F342AB5E7651E881626E2F252162F95E5ADE27059B2",
+            "exponent": 0,
+            "aliases": [
+              "umyr"
+            ]
+          },
+          {
+            "denom": "mmyr",
+            "exponent": 3,
+            "aliases": [
+              "millimyr"
+            ]
+          },
+          {
+            "denom": "myt",
+            "exponent": 6,
+            "aliases": [
+              "mytc"
+            ]
+          }
+        ],
+        "base": "ibc/FDE195C15483F903D6F18F342AB5E7651E881626E2F252162F95E5ADE27059B2",
+        "display": "myt",
+        "name": "TerraClassicMYR",
+        "symbol": "MYTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/myt.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/myt.png"
+        }
+      },
+      {
+        "description": "The NOK stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/4573409F701BCC5A0E81A97B35A51790397ACC8DDA538FDF0B296044C428C634",
+            "exponent": 0,
+            "aliases": [
+              "unok"
+            ]
+          },
+          {
+            "denom": "mnok",
+            "exponent": 3,
+            "aliases": [
+              "millinok"
+            ]
+          },
+          {
+            "denom": "not",
+            "exponent": 6,
+            "aliases": [
+              "notc"
+            ]
+          }
+        ],
+        "base": "ibc/4573409F701BCC5A0E81A97B35A51790397ACC8DDA538FDF0B296044C428C634",
+        "display": "not",
+        "name": "TerraClassicNOK",
+        "symbol": "NOTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/not.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/not.png"
+        }
+      },
+      {
+        "description": "The PHP stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/ED4DB32EC38308E0FDC5EC22732850781003B90D9269E83494962DA738308A3E",
+            "exponent": 0,
+            "aliases": [
+              "uphp"
+            ]
+          },
+          {
+            "denom": "mphp",
+            "exponent": 3,
+            "aliases": [
+              "milliphp"
+            ]
+          },
+          {
+            "denom": "pht",
+            "exponent": 6,
+            "aliases": [
+              "phtc"
+            ]
+          }
+        ],
+        "base": "ibc/ED4DB32EC38308E0FDC5EC22732850781003B90D9269E83494962DA738308A3E",
+        "display": "pht",
+        "name": "TerraClassicPHP",
+        "symbol": "PHTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pht.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pht.png"
+        }
+      },
+      {
+        "description": "The SDR stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/EEF9C5CF846A5CAD0D9A67310C1BC9EAFF865FD4BA34F826ECA504DDD5718F92",
+            "exponent": 0,
+            "aliases": [
+              "usdr"
+            ]
+          },
+          {
+            "denom": "msdr",
+            "exponent": 3,
+            "aliases": [
+              "millisdr"
+            ]
+          },
+          {
+            "denom": "sdt",
+            "exponent": 6,
+            "aliases": [
+              "sdtc"
+            ]
+          }
+        ],
+        "base": "ibc/EEF9C5CF846A5CAD0D9A67310C1BC9EAFF865FD4BA34F826ECA504DDD5718F92",
+        "display": "sdt",
+        "name": "TerraClassicSDR",
+        "symbol": "SDTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sdt.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sdt.png"
+        }
+      },
+      {
+        "description": "The SEK stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/3DB70616F2455B99EA94213515341F4F935CD3F008C88612163A1C50D6174804",
+            "exponent": 0,
+            "aliases": [
+              "usek"
+            ]
+          },
+          {
+            "denom": "msek",
+            "exponent": 3,
+            "aliases": [
+              "millisek"
+            ]
+          },
+          {
+            "denom": "set",
+            "exponent": 6,
+            "aliases": [
+              "setc"
+            ]
+          }
+        ],
+        "base": "ibc/3DB70616F2455B99EA94213515341F4F935CD3F008C88612163A1C50D6174804",
+        "display": "set",
+        "name": "TerraClassicSEK",
+        "symbol": "SETC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/set.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/set.png"
+        }
+      },
+      {
+        "description": "The SGD stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/68200BACFD8C9ACAB562DB9BFF6DC318ABC7E01756ED14D3EF020EA334175E16",
+            "exponent": 0,
+            "aliases": [
+              "usgd"
+            ]
+          },
+          {
+            "denom": "msgd",
+            "exponent": 3,
+            "aliases": [
+              "millisgd"
+            ]
+          },
+          {
+            "denom": "sgt",
+            "exponent": 6,
+            "aliases": [
+              "sgtc"
+            ]
+          }
+        ],
+        "base": "ibc/68200BACFD8C9ACAB562DB9BFF6DC318ABC7E01756ED14D3EF020EA334175E16",
+        "display": "sgt",
+        "name": "TerraClassicSGD",
+        "symbol": "SGTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sgt.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sgt.png"
+        }
+      },
+      {
+        "description": "The THB stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/FE345E6C7FC0E31DE5288F00D0F0CFE2991FA52B8312C7C4DE76A7593E327F36",
+            "exponent": 0,
+            "aliases": [
+              "uthb"
+            ]
+          },
+          {
+            "denom": "mthb",
+            "exponent": 3,
+            "aliases": [
+              "millithb"
+            ]
+          },
+          {
+            "denom": "tht",
+            "exponent": 6,
+            "aliases": [
+              "thtc"
+            ]
+          }
+        ],
+        "base": "ibc/FE345E6C7FC0E31DE5288F00D0F0CFE2991FA52B8312C7C4DE76A7593E327F36",
+        "display": "tht",
+        "name": "TerraClassicTHB",
+        "symbol": "THTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tht.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tht.png"
+        }
+      },
+      {
+        "description": "The TWD stablecoin of Terra Classic.",
+        "denom_units": [
+          {
+            "denom": "ibc/E18DAA8C9FBF6BD73E3E73C88C9740E4D576944D4081CF53224D01C316D149B7",
+            "exponent": 0,
+            "aliases": [
+              "utwd"
+            ]
+          },
+          {
+            "denom": "mtwd",
+            "exponent": 3,
+            "aliases": [
+              "millitwd"
+            ]
+          },
+          {
+            "denom": "twt",
+            "exponent": 6,
+            "aliases": [
+              "twtc"
+            ]
+          }
+        ],
+        "base": "ibc/E18DAA8C9FBF6BD73E3E73C88C9740E4D576944D4081CF53224D01C316D149B7",
+        "display": "twt",
+        "name": "TerraClassicTWD",
+        "symbol": "TWTC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twt.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twt.png"
+        }
       }
     ]
   },
@@ -5943,6 +8002,29 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
+      },
+      {
+        "description": "Governance Token for Digital Land Acquisition DAO",
+        "type_asset": "cw20",
+        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+            "exponent": 0
+          },
+          {
+            "denom": "dla",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/A2F0736C1C95BF59160A61015A003D320BEE62F261E65E42547806F0A2FB68C7",
+        "name": "Digital Land Acquisition DAO",
+        "display": "dla",
+        "symbol": "DLA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
+        }
       }
     ]
   },
@@ -7614,6 +9696,49 @@
   {
     "chain": {
       "chain-name": "osmosis",
+      "client-id": "07-tendermint-2025",
+      "connection-id": "connection-1565",
+      "channel-id": "channel-263",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "tgrade",
+      "client-id": "07-tendermint-0",
+      "connection-id": "connection-0",
+      "channel-id": "channel-0",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of Tgrade",
+        "denom_units": [
+          {
+            "denom": "ibc/1E09CB0F506ACF12FDE4683FB6B34DA62FB4BE122641E0D93AAF98A87675676C",
+            "exponent": 0,
+            "aliases": [
+              "utgd"
+            ]
+          },
+          {
+            "denom": "tgd",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/1E09CB0F506ACF12FDE4683FB6B34DA62FB4BE122641E0D93AAF98A87675676C",
+        "name": "Tgrade",
+        "display": "tgd",
+        "symbol": "TGD",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.svg"
+        }
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "osmosis",
       "client-id": "07-tendermint-1805",
       "connection-id": "connection-1410",
       "channel-id": "channel-184",
@@ -7933,6 +10058,72 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg"
         },
         "coingecko_id": "iris-network"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "persistence",
+      "client-id": "07-tendermint-49",
+      "connection-id": "connection-48",
+      "channel-id": "channel-37",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-89",
+      "connection-id": "connection-51",
+      "channel-id": "channel-33",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of JUNO Chain",
+        "denom_units": [
+          {
+            "denom": "ibc/CA687302422C075B26948BEC7143F6D47BACAB53421D57DF30741F91D4DFCA1F",
+            "exponent": 0,
+            "aliases": [
+              "ujuno"
+            ]
+          },
+          {
+            "denom": "juno",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/CA687302422C075B26948BEC7143F6D47BACAB53421D57DF30741F91D4DFCA1F",
+        "name": "Juno",
+        "display": "juno",
+        "symbol": "JUNO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
+        },
+        "coingecko_id": "juno-network"
+      },
+      {
+        "description": "Governance Token for Digital Land Acquisition DAO",
+        "type_asset": "cw20",
+        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+            "exponent": 0
+          },
+          {
+            "denom": "dla",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/7B1646D71C1FB0A0EBDC866AAF1C340534EC1E639E279C35EA6C6F8131418963",
+        "name": "Digital Land Acquisition DAO",
+        "display": "dla",
+        "symbol": "DLA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
+        }
       }
     ]
   },
@@ -9200,6 +11391,29 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
+      },
+      {
+        "description": "Governance Token for Digital Land Acquisition DAO",
+        "type_asset": "cw20",
+        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+            "exponent": 0
+          },
+          {
+            "denom": "dla",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/88D7600D098B78ACEB677A1D229E14DDE7F598EB8A9B5AB558C6C18F503A7B78",
+        "name": "Digital Land Acquisition DAO",
+        "display": "dla",
+        "symbol": "DLA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
+        }
       }
     ]
   },
@@ -11009,6 +13223,29 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
+      },
+      {
+        "description": "Governance Token for Digital Land Acquisition DAO",
+        "type_asset": "cw20",
+        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+            "exponent": 0
+          },
+          {
+            "denom": "dla",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/97B51B5C8789F62352017282A7912165370BE52FCA34C93E2E127F7BDC774DCD",
+        "name": "Digital Land Acquisition DAO",
+        "display": "dla",
+        "symbol": "DLA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
+        }
       }
     ]
   },
@@ -11315,6 +13552,72 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
         },
         "coingecko_id": "ion"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "stargaze",
+      "client-id": "07-tendermint-13",
+      "connection-id": "connection-11",
+      "channel-id": "channel-5",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-44",
+      "connection-id": "connection-30",
+      "channel-id": "channel-20",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of JUNO Chain",
+        "denom_units": [
+          {
+            "denom": "ibc/448C1061CE97D86CC5E86374CD914870FB8EBA16C58661B5F1D3F46729A2422D",
+            "exponent": 0,
+            "aliases": [
+              "ujuno"
+            ]
+          },
+          {
+            "denom": "juno",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/448C1061CE97D86CC5E86374CD914870FB8EBA16C58661B5F1D3F46729A2422D",
+        "name": "Juno",
+        "display": "juno",
+        "symbol": "JUNO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
+        },
+        "coingecko_id": "juno-network"
+      },
+      {
+        "description": "Governance Token for Digital Land Acquisition DAO",
+        "type_asset": "cw20",
+        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+            "exponent": 0
+          },
+          {
+            "denom": "dla",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/85583B2EEAD8B35082F9E7BE102E722021E86772D26E18A60E9C6E22744E9B12",
+        "name": "Digital Land Acquisition DAO",
+        "display": "dla",
+        "symbol": "DLA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
+        }
       }
     ]
   },
@@ -11798,6 +14101,72 @@
   {
     "chain": {
       "chain-name": "terra",
+      "client-id": "07-tendermint-32",
+      "connection-id": "connection-34",
+      "channel-id": "channel-20",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "juno",
+      "client-id": "07-tendermint-63",
+      "connection-id": "connection-43",
+      "channel-id": "channel-27",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of JUNO Chain",
+        "denom_units": [
+          {
+            "denom": "ibc/F951C98B3D08879376970DD39F74907896391810FD40AF9B2357A02E9E82BBA5",
+            "exponent": 0,
+            "aliases": [
+              "ujuno"
+            ]
+          },
+          {
+            "denom": "juno",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/F951C98B3D08879376970DD39F74907896391810FD40AF9B2357A02E9E82BBA5",
+        "name": "Juno",
+        "display": "juno",
+        "symbol": "JUNO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
+        },
+        "coingecko_id": "juno-network"
+      },
+      {
+        "description": "Governance Token for Digital Land Acquisition DAO",
+        "type_asset": "cw20",
+        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+            "exponent": 0
+          },
+          {
+            "denom": "dla",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/2484CA9E4217A961D3A4296E9C52BE95E93E1CC269454B865BDE850A62863BBB",
+        "name": "Digital Land Acquisition DAO",
+        "display": "dla",
+        "symbol": "DLA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
+        }
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "terra",
       "client-id": "07-tendermint-12",
       "connection-id": "connection-11",
       "channel-id": "channel-1",
@@ -11946,6 +14315,74 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg"
         },
         "coingecko_id": "secret"
+      }
+    ]
+  },
+  {
+    "chain": {
+      "chain-name": "tgrade",
+      "client-id": "07-tendermint-0",
+      "connection-id": "connection-0",
+      "channel-id": "channel-0",
+      "port-id": "transfer"
+    },
+    "counterparty": {
+      "chain-name": "osmosis",
+      "client-id": "07-tendermint-2025",
+      "connection-id": "connection-1565",
+      "channel-id": "channel-263",
+      "port-id": "transfer"
+    },
+    "assets": [
+      {
+        "description": "The native token of Osmosis",
+        "denom_units": [
+          {
+            "denom": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+            "exponent": 0,
+            "aliases": [
+              "uosmo"
+            ]
+          },
+          {
+            "denom": "osmo",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+        "name": "Osmosis",
+        "display": "osmo",
+        "symbol": "OSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
+        },
+        "coingecko_id": "osmosis"
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F7E92EE59B5428793F3EF5C1A4CB2494F61A9D0C9A69469D02390714A1372E16",
+            "exponent": 0,
+            "aliases": [
+              "uion"
+            ]
+          },
+          {
+            "denom": "ion",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/F7E92EE59B5428793F3EF5C1A4CB2494F61A9D0C9A69469D02390714A1372E16",
+        "name": "Ion",
+        "display": "ion",
+        "symbol": "ION",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
+        },
+        "coingecko_id": "ion"
       }
     ]
   },
