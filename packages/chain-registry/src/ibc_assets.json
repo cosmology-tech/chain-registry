@@ -80,7 +80,7 @@
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png"
         },
-        "coingecko_id": "cronos"
+        "coingecko_id": "crypto-com-chain"
       }
     ]
   },
@@ -167,29 +167,6 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
-      },
-      {
-        "description": "Governance Token for Digital Land Acquisition DAO",
-        "type_asset": "cw20",
-        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-        "denom_units": [
-          {
-            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-            "exponent": 0
-          },
-          {
-            "denom": "dla",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/676D982218DFE6C3173E6F2E1EE5C83BAB3E99BD1827CEDAA27C6C3D6EC8CA59",
-        "name": "Digital Land Acquisition DAO",
-        "display": "dla",
-        "symbol": "DLA",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
-        }
       }
     ]
   },
@@ -553,29 +530,6 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
-      },
-      {
-        "description": "Governance Token for Digital Land Acquisition DAO",
-        "type_asset": "cw20",
-        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-        "denom_units": [
-          {
-            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-            "exponent": 0
-          },
-          {
-            "denom": "dla",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/E724F5E24B3184DB7C0E1820E606F5C1B936442BCE00A91C1B9F7BE517E5B585",
-        "name": "Digital Land Acquisition DAO",
-        "display": "dla",
-        "symbol": "DLA",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
-        }
       }
     ]
   },
@@ -687,29 +641,6 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
-      },
-      {
-        "description": "Governance Token for Digital Land Acquisition DAO",
-        "type_asset": "cw20",
-        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-        "denom_units": [
-          {
-            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-            "exponent": 0
-          },
-          {
-            "denom": "dla",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/AA53F59690FE900AF95D83AE998B85FE30E53872F3352266296C51874C99469C",
-        "name": "Digital Land Acquisition DAO",
-        "display": "dla",
-        "symbol": "DLA",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
-        }
       }
     ]
   },
@@ -932,29 +863,6 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
-      },
-      {
-        "description": "Governance Token for Digital Land Acquisition DAO",
-        "type_asset": "cw20",
-        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-        "denom_units": [
-          {
-            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-            "exponent": 0
-          },
-          {
-            "denom": "dla",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/A67D3BD1A043C2554AFA8F86F9A7E68669E6020C9C2F527A68D3B438C30B5389",
-        "name": "Digital Land Acquisition DAO",
-        "display": "dla",
-        "symbol": "DLA",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
-        }
       }
     ]
   },
@@ -1066,29 +974,6 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
-      },
-      {
-        "description": "Governance Token for Digital Land Acquisition DAO",
-        "type_asset": "cw20",
-        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-        "denom_units": [
-          {
-            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-            "exponent": 0
-          },
-          {
-            "denom": "dla",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/85583B2EEAD8B35082F9E7BE102E722021E86772D26E18A60E9C6E22744E9B12",
-        "name": "Digital Land Acquisition DAO",
-        "display": "dla",
-        "symbol": "DLA",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
-        }
       }
     ]
   },
@@ -1472,29 +1357,6 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
-      },
-      {
-        "description": "Governance Token for Digital Land Acquisition DAO",
-        "type_asset": "cw20",
-        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-        "denom_units": [
-          {
-            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-            "exponent": 0
-          },
-          {
-            "denom": "dla",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/B5BB9BEB27379FE3055CBA9B3B8A3DBC0FB6F6FB0EAE0426E79452F98241D1F4",
-        "name": "Digital Land Acquisition DAO",
-        "display": "dla",
-        "symbol": "DLA",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
-        }
       }
     ]
   },
@@ -1649,29 +1511,6 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
-      },
-      {
-        "description": "Governance Token for Digital Land Acquisition DAO",
-        "type_asset": "cw20",
-        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-        "denom_units": [
-          {
-            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-            "exponent": 0
-          },
-          {
-            "denom": "dla",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/B315051A41D08A5C1AB257B88A82F2C07F8407945A6787F81B372AF018B73270",
-        "name": "Digital Land Acquisition DAO",
-        "display": "dla",
-        "symbol": "DLA",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
-        }
       }
     ]
   },
@@ -1824,7 +1663,7 @@
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png"
         },
-        "coingecko_id": "cronos"
+        "coingecko_id": "crypto-com-chain"
       }
     ]
   },
@@ -2019,29 +1858,6 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
-      },
-      {
-        "description": "Governance Token for Digital Land Acquisition DAO",
-        "type_asset": "cw20",
-        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-        "denom_units": [
-          {
-            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-            "exponent": 0
-          },
-          {
-            "denom": "dla",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/DC5B57C3D2D84F26A3C227FD6B30191156583901B066B06817DDA7F90E4558DA",
-        "name": "Digital Land Acquisition DAO",
-        "display": "dla",
-        "symbol": "DLA",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
-        }
       }
     ]
   },
@@ -3032,29 +2848,6 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
-      },
-      {
-        "description": "Governance Token for Digital Land Acquisition DAO",
-        "type_asset": "cw20",
-        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-        "denom_units": [
-          {
-            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-            "exponent": 0
-          },
-          {
-            "denom": "dla",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/E724F5E24B3184DB7C0E1820E606F5C1B936442BCE00A91C1B9F7BE517E5B585",
-        "name": "Digital Land Acquisition DAO",
-        "display": "dla",
-        "symbol": "DLA",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
-        }
       }
     ]
   },
@@ -3252,29 +3045,6 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
-      },
-      {
-        "description": "Governance Token for Digital Land Acquisition DAO",
-        "type_asset": "cw20",
-        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-        "denom_units": [
-          {
-            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-            "exponent": 0
-          },
-          {
-            "denom": "dla",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/F3A12D7666BDBCE1479FEAA0367A775A03D46A8EF06F93BCB83D4BCA1800A447",
-        "name": "Digital Land Acquisition DAO",
-        "display": "dla",
-        "symbol": "DLA",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
-        }
       }
     ]
   },
@@ -4157,7 +3927,7 @@
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png"
         },
-        "coingecko_id": "cronos"
+        "coingecko_id": "crypto-com-chain"
       }
     ]
   },
@@ -4777,6 +4547,297 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png"
         },
         "coingecko_id": "wrapped-bitcoin"
+      },
+      {
+        "description": "Aave on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/686AF664CCC44119B3DED5267CCA02CE6FA877A4C3EF71408FCA7B30EBD505C4",
+            "exponent": 0,
+            "aliases": [
+              "aave-wei"
+            ]
+          },
+          {
+            "denom": "aave",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/686AF664CCC44119B3DED5267CCA02CE6FA877A4C3EF71408FCA7B30EBD505C4",
+        "name": "Aave",
+        "display": "aave",
+        "symbol": "AAVE",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg"
+        },
+        "coingecko_id": "aave"
+      },
+      {
+        "description": "ApeCoin on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/9D4421F8337456349864798C4928500797AF09C002A288041F1748F7846EFA19",
+            "exponent": 0,
+            "aliases": [
+              "ape-wei"
+            ]
+          },
+          {
+            "denom": "ape",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/9D4421F8337456349864798C4928500797AF09C002A288041F1748F7846EFA19",
+        "name": "ApeCoin",
+        "display": "ape",
+        "symbol": "APE",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg"
+        },
+        "coingecko_id": "apecoin"
+      },
+      {
+        "description": "Axie Infinity Shard on Axelar",
+        "type_asset": "erc20",
+        "address": "0xbb0e17ef65f82ab018d8edd776e8dd940327b28b",
+        "denom_units": [
+          {
+            "denom": "ibc/424DD4BE67F6ADD52BA9A810B0B4157694A962B96BC676E4A22EB1E50679677F",
+            "exponent": 0,
+            "aliases": [
+              "axs-wei"
+            ]
+          },
+          {
+            "denom": "axs",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/424DD4BE67F6ADD52BA9A810B0B4157694A962B96BC676E4A22EB1E50679677F",
+        "name": "Axie Infinity Shard",
+        "display": "axs",
+        "symbol": "AXS",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg"
+        },
+        "coingecko_id": "axie-infinity"
+      },
+      {
+        "description": "Chainlink on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/0409596DFE559E1B05D821CA3A5F8E290A7C2C3408B4872595CA0E22F13A09FE",
+            "exponent": 0,
+            "aliases": [
+              "link-wei"
+            ]
+          },
+          {
+            "denom": "link",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/0409596DFE559E1B05D821CA3A5F8E290A7C2C3408B4872595CA0E22F13A09FE",
+        "name": "Chainlink",
+        "display": "link",
+        "symbol": "LINK",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg"
+        },
+        "coingecko_id": "chainlink"
+      },
+      {
+        "description": "Maker on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/4A59932EAD8A140F66554E8E2B5CB80DCA5314A75A889F0AA2E648D96B69847F",
+            "exponent": 0,
+            "aliases": [
+              "mkr-wei"
+            ]
+          },
+          {
+            "denom": "mkr",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/4A59932EAD8A140F66554E8E2B5CB80DCA5314A75A889F0AA2E648D96B69847F",
+        "name": "Maker",
+        "display": "mkr",
+        "symbol": "MKR",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg"
+        },
+        "coingecko_id": "maker"
+      },
+      {
+        "description": "Rai Reflex Index on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/4AA19294AE89888CE7DB64CA76781EE2FE9A0B703B8A5F156AD258428F7A77C4",
+            "exponent": 0,
+            "aliases": [
+              "rai-wei"
+            ]
+          },
+          {
+            "denom": "rai",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/4AA19294AE89888CE7DB64CA76781EE2FE9A0B703B8A5F156AD258428F7A77C4",
+        "name": "Rai Reflex Index",
+        "display": "rai",
+        "symbol": "RAI",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/rai.svg"
+        },
+        "coingecko_id": "rai"
+      },
+      {
+        "description": "Shiba Inu on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/D66D0A82177FF29CBB8A83705C26C28D45A14678579E350B10493D359ECFD851",
+            "exponent": 0,
+            "aliases": [
+              "shib-wei"
+            ]
+          },
+          {
+            "denom": "shib",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/D66D0A82177FF29CBB8A83705C26C28D45A14678579E350B10493D359ECFD851",
+        "name": "Shiba Inu",
+        "display": "shib",
+        "symbol": "SHIB",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg"
+        },
+        "coingecko_id": "shiba-inu"
+      },
+      {
+        "description": "Lido Staked Ether on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/C740EF04C154165820688D9438AD90EA1E6B59BFF3715197AA570E928A44A937",
+            "exponent": 0,
+            "aliases": [
+              "steth-wei"
+            ]
+          },
+          {
+            "denom": "steth",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/C740EF04C154165820688D9438AD90EA1E6B59BFF3715197AA570E928A44A937",
+        "name": "Lido Staked Ether",
+        "display": "steth",
+        "symbol": "stETH",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg"
+        },
+        "coingecko_id": "staked-ether"
+      },
+      {
+        "description": "Uniswap on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/0313AD311FA169EC5A130DB2EF0840CBA4B300ADB6B85A79FBA952FBD3E7B107",
+            "exponent": 0,
+            "aliases": [
+              "uni-wei"
+            ]
+          },
+          {
+            "denom": "uni",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/0313AD311FA169EC5A130DB2EF0840CBA4B300ADB6B85A79FBA952FBD3E7B107",
+        "name": "Uniswap",
+        "display": "uni",
+        "symbol": "UNI",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg"
+        },
+        "coingecko_id": "uniswap"
+      },
+      {
+        "description": "Chain on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/30B50C044D1074F0DC1916D9DA79B9F26434632609C3ED0158E22A5D40890D81",
+            "exponent": 0,
+            "aliases": [
+              "xcn-wei"
+            ]
+          },
+          {
+            "denom": "xcn",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/30B50C044D1074F0DC1916D9DA79B9F26434632609C3ED0158E22A5D40890D81",
+        "name": "Chain",
+        "display": "xcn",
+        "symbol": "XCN",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg"
+        },
+        "coingecko_id": "chain-2"
+      },
+      {
+        "description": "Wrapped Polkadot on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/5D681936B803C055E34687752EE1AA3117EACCA98260F98CC1706E040DCBAC4D",
+            "exponent": 0,
+            "aliases": [
+              "dot-planck"
+            ]
+          },
+          {
+            "denom": "dot",
+            "exponent": 10
+          }
+        ],
+        "base": "ibc/5D681936B803C055E34687752EE1AA3117EACCA98260F98CC1706E040DCBAC4D",
+        "name": "Wrapped Polkadot",
+        "display": "dot",
+        "symbol": "DOT",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg"
+        },
+        "coingecko_id": "polkadot"
+      },
+      {
+        "description": "Wrapped Moonbeam on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/5539E7CB6FF8FDA12AE6BF20E8862513D787BF1712296EB4AA06DD86920FFBC1",
+            "exponent": 0,
+            "aliases": [
+              "wglmr-wei"
+            ]
+          },
+          {
+            "denom": "wglmr",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/5539E7CB6FF8FDA12AE6BF20E8862513D787BF1712296EB4AA06DD86920FFBC1",
+        "name": "Wrapped Moonbeam",
+        "display": "wglmr",
+        "symbol": "WGLMR",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg"
+        },
+        "coingecko_id": "wrapped-moonbeam"
       }
     ]
   },
@@ -4862,7 +4923,330 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg"
         },
+        "type_asset": "sdk.coin",
         "coingecko_id": "bitsong"
+      },
+      {
+        "description": "Adam Clay a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/FA6CFD7006CF117B671ABAC04A793F76E414A26A5C04EA53AE09640C6E31A647",
+            "exponent": 0,
+            "aliases": [
+              "ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09"
+            ]
+          },
+          {
+            "denom": "clay",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/FA6CFD7006CF117B671ABAC04A793F76E414A26A5C04EA53AE09640C6E31A647",
+        "name": "Adam Clay FanToken",
+        "display": "clay",
+        "symbol": "CLAY",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png"
+        }
+      },
+      {
+        "description": "Nicola Fasano a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/E43D26D4E10EAC2EA3C84233CE745A7764E84C76D05BC5E2521E864374C72C05",
+            "exponent": 0,
+            "aliases": [
+              "ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7"
+            ]
+          },
+          {
+            "denom": "fasano",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/E43D26D4E10EAC2EA3C84233CE745A7764E84C76D05BC5E2521E864374C72C05",
+        "name": "Nicola Fasano Fantoken",
+        "display": "fasano",
+        "symbol": "FASANO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7.png"
+        }
+      },
+      {
+        "description": "Delta 9 a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/E21E8AC479AC7A7ED6075AC67F6BE30A80035476E63A4BE62811AC8F996D9A9C",
+            "exponent": 0,
+            "aliases": [
+              "ft575B10B0CEE2C164D9ED6A96313496F164A9607C"
+            ]
+          },
+          {
+            "denom": "d9x",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/E21E8AC479AC7A7ED6075AC67F6BE30A80035476E63A4BE62811AC8F996D9A9C",
+        "name": "Delta 9 Fantoken",
+        "display": "d9x",
+        "symbol": "D9X",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft575B10B0CEE2C164D9ED6A96313496F164A9607C.png"
+        }
+      },
+      {
+        "description": "FONTI a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/40F1DDC85C13E9B0ACE9142A369E13E205C82E3DB13B5926B6647BB3EA740AB8",
+            "exponent": 0,
+            "aliases": [
+              "ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305"
+            ]
+          },
+          {
+            "denom": "fonti",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/40F1DDC85C13E9B0ACE9142A369E13E205C82E3DB13B5926B6647BB3EA740AB8",
+        "name": "FONTI Fantoken",
+        "display": "fonti",
+        "symbol": "FONTI",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305.png"
+        }
+      },
+      {
+        "description": "BlackJack a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/7AA7E31096BE94321E240B1C107DBAB48BADBED2460F5BB0D49884F9881EEAFC",
+            "exponent": 0,
+            "aliases": [
+              "ft52EEB0EE509AC546ED92EAC8591F731F213DDD16"
+            ]
+          },
+          {
+            "denom": "bjks",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/7AA7E31096BE94321E240B1C107DBAB48BADBED2460F5BB0D49884F9881EEAFC",
+        "name": "BlackJack Fantoken",
+        "display": "bjks",
+        "symbol": "BJKS",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft52EEB0EE509AC546ED92EAC8591F731F213DDD16.png"
+        }
+      },
+      {
+        "description": "Rawanne a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/B7DF1BF0322E000392E8EE2EA4AA66E77D73A275C08370086F01D659AD9CC669",
+            "exponent": 0,
+            "aliases": [
+              "ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A"
+            ]
+          },
+          {
+            "denom": "rwne",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/B7DF1BF0322E000392E8EE2EA4AA66E77D73A275C08370086F01D659AD9CC669",
+        "name": "Rawanne Fantoken",
+        "display": "rwne",
+        "symbol": "RWNE",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A.png"
+        }
+      },
+      {
+        "description": "Enmoda a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/ECCD9807D20166417567FD0ABE9ADDB20BD55EA8C27A994DF343D437B430E8B0",
+            "exponent": 0,
+            "aliases": [
+              "ft85AE1716C5E39EA6D64BBD7898C3899A7B500626"
+            ]
+          },
+          {
+            "denom": "enmoda",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/ECCD9807D20166417567FD0ABE9ADDB20BD55EA8C27A994DF343D437B430E8B0",
+        "name": "Enmoda Fantoken",
+        "display": "enmoda",
+        "symbol": "ENMODA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft85AE1716C5E39EA6D64BBD7898C3899A7B500626.png"
+        }
+      },
+      {
+        "description": "404Deep Records a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/4E2AB358B9691EBBFEBFC8AA72A8DE55351A5695C579F18AB2438B2B99E4DFB1",
+            "exponent": 0,
+            "aliases": [
+              "ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A"
+            ]
+          },
+          {
+            "denom": "404dr",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/4E2AB358B9691EBBFEBFC8AA72A8DE55351A5695C579F18AB2438B2B99E4DFB1",
+        "name": "404Deep Records Fantoken",
+        "display": "404dr",
+        "symbol": "404DR",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png"
+        }
+      },
+      {
+        "description": "N43 a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/0678E1B0A5535B49F8DEDFE85E77C0FB733A04F81B53B580A176D57699889C0A",
+            "exponent": 0,
+            "aliases": [
+              "ft387C1C279D962ED80C09C1D592A92C4275FD7C5D"
+            ]
+          },
+          {
+            "denom": "n43",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/0678E1B0A5535B49F8DEDFE85E77C0FB733A04F81B53B580A176D57699889C0A",
+        "name": "N43 Fantoken",
+        "display": "n43",
+        "symbol": "N43",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png"
+        }
+      },
+      {
+        "description": "Puro Lobo a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/F413DA1C7902686B64FFB0094A6473FABDE421DC8A4B72082535599143E66AAE",
+            "exponent": 0,
+            "aliases": [
+              "ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB"
+            ]
+          },
+          {
+            "denom": "lobo",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/F413DA1C7902686B64FFB0094A6473FABDE421DC8A4B72082535599143E66AAE",
+        "name": "Puro Lobo Fantoken",
+        "display": "lobo",
+        "symbol": "LOBO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB.png"
+        }
+      },
+      {
+        "description": "Vibranium a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/1507C239F92834EEB80B8BD2508E98D5FA24F4272AD6A6E214255C7E445C1025",
+            "exponent": 0,
+            "aliases": [
+              "ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B"
+            ]
+          },
+          {
+            "denom": "vibra",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/1507C239F92834EEB80B8BD2508E98D5FA24F4272AD6A6E214255C7E445C1025",
+        "name": "Vibranium Fantoken",
+        "display": "vibra",
+        "symbol": "VIBRA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B.png"
+        }
+      },
+      {
+        "description": "Karina a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/5DE20120602E89CB89E4948521092DAB1D8B75E70DE77DEC35B3D527CAF445E6",
+            "exponent": 0,
+            "aliases": [
+              "ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE"
+            ]
+          },
+          {
+            "denom": "karina",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/5DE20120602E89CB89E4948521092DAB1D8B75E70DE77DEC35B3D527CAF445E6",
+        "name": "Karina Fantoken",
+        "display": "karina",
+        "symbol": "KARINA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE.png"
+        }
+      },
+      {
+        "description": "Luca Testa a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/915E8D0A4C82F7D910810C3956530FDA3BBB2161D406390146D0F357A3922B97",
+            "exponent": 0,
+            "aliases": [
+              "ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12"
+            ]
+          },
+          {
+            "denom": "testa",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/915E8D0A4C82F7D910810C3956530FDA3BBB2161D406390146D0F357A3922B97",
+        "name": "Luca Testa Fantoken",
+        "display": "testa",
+        "symbol": "TESTA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12.png"
+        }
+      },
+      {
+        "description": "Carolina Marquez a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/75A06513054A2C0CB4555918E789357BD36634FF6EE4678FD0B803557DBC666A",
+            "exponent": 0,
+            "aliases": [
+              "ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3"
+            ]
+          },
+          {
+            "denom": "cmqz",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/75A06513054A2C0CB4555918E789357BD36634FF6EE4678FD0B803557DBC666A",
+        "name": "Carolina Marquez Fantoken",
+        "display": "cmqz",
+        "symbol": "CMQZ",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3.png"
+        }
       }
     ]
   },
@@ -6931,6 +7315,297 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png"
         },
         "coingecko_id": "wrapped-bitcoin"
+      },
+      {
+        "description": "Aave on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/384E5DD50BDE042E1AAF51F312B55F08F95BC985C503880189258B4D9374CBBE",
+            "exponent": 0,
+            "aliases": [
+              "aave-wei"
+            ]
+          },
+          {
+            "denom": "aave",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/384E5DD50BDE042E1AAF51F312B55F08F95BC985C503880189258B4D9374CBBE",
+        "name": "Aave",
+        "display": "aave",
+        "symbol": "AAVE",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg"
+        },
+        "coingecko_id": "aave"
+      },
+      {
+        "description": "ApeCoin on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/F83CC6471DA4D4B508F437244F10B9E4C68975344E551A2DEB6B8617AB08F0D4",
+            "exponent": 0,
+            "aliases": [
+              "ape-wei"
+            ]
+          },
+          {
+            "denom": "ape",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/F83CC6471DA4D4B508F437244F10B9E4C68975344E551A2DEB6B8617AB08F0D4",
+        "name": "ApeCoin",
+        "display": "ape",
+        "symbol": "APE",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg"
+        },
+        "coingecko_id": "apecoin"
+      },
+      {
+        "description": "Axie Infinity Shard on Axelar",
+        "type_asset": "erc20",
+        "address": "0xbb0e17ef65f82ab018d8edd776e8dd940327b28b",
+        "denom_units": [
+          {
+            "denom": "ibc/6C0CB8653012DC2BC1820FD0B6B3AFF8A07D18630BDAEE066FEFB2D92F477C24",
+            "exponent": 0,
+            "aliases": [
+              "axs-wei"
+            ]
+          },
+          {
+            "denom": "axs",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/6C0CB8653012DC2BC1820FD0B6B3AFF8A07D18630BDAEE066FEFB2D92F477C24",
+        "name": "Axie Infinity Shard",
+        "display": "axs",
+        "symbol": "AXS",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg"
+        },
+        "coingecko_id": "axie-infinity"
+      },
+      {
+        "description": "Chainlink on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/D3327A763C23F01EC43D1F0DB3CEFEC390C362569B6FD191F40A5192F8960049",
+            "exponent": 0,
+            "aliases": [
+              "link-wei"
+            ]
+          },
+          {
+            "denom": "link",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/D3327A763C23F01EC43D1F0DB3CEFEC390C362569B6FD191F40A5192F8960049",
+        "name": "Chainlink",
+        "display": "link",
+        "symbol": "LINK",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg"
+        },
+        "coingecko_id": "chainlink"
+      },
+      {
+        "description": "Maker on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/D27DDDF34BB47E5D5A570742CC667DE53277867116CCCA341F27785E899A70F3",
+            "exponent": 0,
+            "aliases": [
+              "mkr-wei"
+            ]
+          },
+          {
+            "denom": "mkr",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/D27DDDF34BB47E5D5A570742CC667DE53277867116CCCA341F27785E899A70F3",
+        "name": "Maker",
+        "display": "mkr",
+        "symbol": "MKR",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg"
+        },
+        "coingecko_id": "maker"
+      },
+      {
+        "description": "Rai Reflex Index on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/BD796662F8825327D41C96355DF62045A5BA225BAE31C0A86289B9D88ED3F44E",
+            "exponent": 0,
+            "aliases": [
+              "rai-wei"
+            ]
+          },
+          {
+            "denom": "rai",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/BD796662F8825327D41C96355DF62045A5BA225BAE31C0A86289B9D88ED3F44E",
+        "name": "Rai Reflex Index",
+        "display": "rai",
+        "symbol": "RAI",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/rai.svg"
+        },
+        "coingecko_id": "rai"
+      },
+      {
+        "description": "Shiba Inu on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/19305E20681911F14D1FB275E538CDE524C3BF88CF9AE5D5F78F4D4DA05E85B2",
+            "exponent": 0,
+            "aliases": [
+              "shib-wei"
+            ]
+          },
+          {
+            "denom": "shib",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/19305E20681911F14D1FB275E538CDE524C3BF88CF9AE5D5F78F4D4DA05E85B2",
+        "name": "Shiba Inu",
+        "display": "shib",
+        "symbol": "SHIB",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg"
+        },
+        "coingecko_id": "shiba-inu"
+      },
+      {
+        "description": "Lido Staked Ether on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/129F401C84FCD5B0183472ED83745193B0B3A69855635A56B9056EEF8D3C241C",
+            "exponent": 0,
+            "aliases": [
+              "steth-wei"
+            ]
+          },
+          {
+            "denom": "steth",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/129F401C84FCD5B0183472ED83745193B0B3A69855635A56B9056EEF8D3C241C",
+        "name": "Lido Staked Ether",
+        "display": "steth",
+        "symbol": "stETH",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg"
+        },
+        "coingecko_id": "staked-ether"
+      },
+      {
+        "description": "Uniswap on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/AE2719773D6FCDD05AC17B1ED63F672F5F9D84144A61965F348C86C2A83AD161",
+            "exponent": 0,
+            "aliases": [
+              "uni-wei"
+            ]
+          },
+          {
+            "denom": "uni",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/AE2719773D6FCDD05AC17B1ED63F672F5F9D84144A61965F348C86C2A83AD161",
+        "name": "Uniswap",
+        "display": "uni",
+        "symbol": "UNI",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg"
+        },
+        "coingecko_id": "uniswap"
+      },
+      {
+        "description": "Chain on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/B901BEC1B71D0573E6EE874FEC39E2DF4C2BDB1DB74CB3DA0A9CACC4A435B0EC",
+            "exponent": 0,
+            "aliases": [
+              "xcn-wei"
+            ]
+          },
+          {
+            "denom": "xcn",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/B901BEC1B71D0573E6EE874FEC39E2DF4C2BDB1DB74CB3DA0A9CACC4A435B0EC",
+        "name": "Chain",
+        "display": "xcn",
+        "symbol": "XCN",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg"
+        },
+        "coingecko_id": "chain-2"
+      },
+      {
+        "description": "Wrapped Polkadot on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/3FF92D26B407FD61AE95D975712A7C319CDE28DE4D80BDC9978D935932B991D7",
+            "exponent": 0,
+            "aliases": [
+              "dot-planck"
+            ]
+          },
+          {
+            "denom": "dot",
+            "exponent": 10
+          }
+        ],
+        "base": "ibc/3FF92D26B407FD61AE95D975712A7C319CDE28DE4D80BDC9978D935932B991D7",
+        "name": "Wrapped Polkadot",
+        "display": "dot",
+        "symbol": "DOT",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg"
+        },
+        "coingecko_id": "polkadot"
+      },
+      {
+        "description": "Wrapped Moonbeam on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/1E26DB0E5122AED464D98462BD384FCCB595732A66B3970AE6CE0B58BAE0FC49",
+            "exponent": 0,
+            "aliases": [
+              "wglmr-wei"
+            ]
+          },
+          {
+            "denom": "wglmr",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/1E26DB0E5122AED464D98462BD384FCCB595732A66B3970AE6CE0B58BAE0FC49",
+        "name": "Wrapped Moonbeam",
+        "display": "wglmr",
+        "symbol": "WGLMR",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg"
+        },
+        "coingecko_id": "wrapped-moonbeam"
       }
     ]
   },
@@ -7059,7 +7734,330 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg"
         },
+        "type_asset": "sdk.coin",
         "coingecko_id": "bitsong"
+      },
+      {
+        "description": "Adam Clay a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/7ABF696369EFB3387DF22B6A24204459FE5EFD010220E8E5618DC49DB877047B",
+            "exponent": 0,
+            "aliases": [
+              "ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09"
+            ]
+          },
+          {
+            "denom": "clay",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/7ABF696369EFB3387DF22B6A24204459FE5EFD010220E8E5618DC49DB877047B",
+        "name": "Adam Clay FanToken",
+        "display": "clay",
+        "symbol": "CLAY",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png"
+        }
+      },
+      {
+        "description": "Nicola Fasano a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/423967B46B1A51D78619085105B04FCFA14F7CBC0BE7539A316B2DCDFC7D8C07",
+            "exponent": 0,
+            "aliases": [
+              "ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7"
+            ]
+          },
+          {
+            "denom": "fasano",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/423967B46B1A51D78619085105B04FCFA14F7CBC0BE7539A316B2DCDFC7D8C07",
+        "name": "Nicola Fasano Fantoken",
+        "display": "fasano",
+        "symbol": "FASANO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7.png"
+        }
+      },
+      {
+        "description": "Delta 9 a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/1DE9A32D603EE05E9B8619DF24D90FD518C932AE0B5B3209A986B7262DBADE2A",
+            "exponent": 0,
+            "aliases": [
+              "ft575B10B0CEE2C164D9ED6A96313496F164A9607C"
+            ]
+          },
+          {
+            "denom": "d9x",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/1DE9A32D603EE05E9B8619DF24D90FD518C932AE0B5B3209A986B7262DBADE2A",
+        "name": "Delta 9 Fantoken",
+        "display": "d9x",
+        "symbol": "D9X",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft575B10B0CEE2C164D9ED6A96313496F164A9607C.png"
+        }
+      },
+      {
+        "description": "FONTI a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/239A507997222805E441956EBE8087D7E2D05D6535C6D4C75EF8DCF83B3DE1A1",
+            "exponent": 0,
+            "aliases": [
+              "ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305"
+            ]
+          },
+          {
+            "denom": "fonti",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/239A507997222805E441956EBE8087D7E2D05D6535C6D4C75EF8DCF83B3DE1A1",
+        "name": "FONTI Fantoken",
+        "display": "fonti",
+        "symbol": "FONTI",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305.png"
+        }
+      },
+      {
+        "description": "BlackJack a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/B3FB7128CE957DE1ADB687A919AA0786C77C62FB1280C07CDD78AEA032D56853",
+            "exponent": 0,
+            "aliases": [
+              "ft52EEB0EE509AC546ED92EAC8591F731F213DDD16"
+            ]
+          },
+          {
+            "denom": "bjks",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/B3FB7128CE957DE1ADB687A919AA0786C77C62FB1280C07CDD78AEA032D56853",
+        "name": "BlackJack Fantoken",
+        "display": "bjks",
+        "symbol": "BJKS",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft52EEB0EE509AC546ED92EAC8591F731F213DDD16.png"
+        }
+      },
+      {
+        "description": "Rawanne a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/56C276FC136E239449DCE664292DBEEF5795C4EF4B5B35DB98BD1C0948274867",
+            "exponent": 0,
+            "aliases": [
+              "ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A"
+            ]
+          },
+          {
+            "denom": "rwne",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/56C276FC136E239449DCE664292DBEEF5795C4EF4B5B35DB98BD1C0948274867",
+        "name": "Rawanne Fantoken",
+        "display": "rwne",
+        "symbol": "RWNE",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A.png"
+        }
+      },
+      {
+        "description": "Enmoda a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/051A38BBEF92B9D8293AFBE1FA293E704359E9CB28297A0FD5DBA3E9CCEE9AB1",
+            "exponent": 0,
+            "aliases": [
+              "ft85AE1716C5E39EA6D64BBD7898C3899A7B500626"
+            ]
+          },
+          {
+            "denom": "enmoda",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/051A38BBEF92B9D8293AFBE1FA293E704359E9CB28297A0FD5DBA3E9CCEE9AB1",
+        "name": "Enmoda Fantoken",
+        "display": "enmoda",
+        "symbol": "ENMODA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft85AE1716C5E39EA6D64BBD7898C3899A7B500626.png"
+        }
+      },
+      {
+        "description": "404Deep Records a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/B797E4F42CD33C50511B341E50C5CC0E8EF0D93B1E1247ABAA071583B8619202",
+            "exponent": 0,
+            "aliases": [
+              "ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A"
+            ]
+          },
+          {
+            "denom": "404dr",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/B797E4F42CD33C50511B341E50C5CC0E8EF0D93B1E1247ABAA071583B8619202",
+        "name": "404Deep Records Fantoken",
+        "display": "404dr",
+        "symbol": "404DR",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png"
+        }
+      },
+      {
+        "description": "N43 a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/E4FFAACCDB7D55CE2D257DF637C00158CB841F11D0013B2D03E31FF7800A2C58",
+            "exponent": 0,
+            "aliases": [
+              "ft387C1C279D962ED80C09C1D592A92C4275FD7C5D"
+            ]
+          },
+          {
+            "denom": "n43",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/E4FFAACCDB7D55CE2D257DF637C00158CB841F11D0013B2D03E31FF7800A2C58",
+        "name": "N43 Fantoken",
+        "display": "n43",
+        "symbol": "N43",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png"
+        }
+      },
+      {
+        "description": "Puro Lobo a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/C9864D1B9623F703C75BBF72B7FF8A7317E1535C96538D21467A4311246DC3B5",
+            "exponent": 0,
+            "aliases": [
+              "ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB"
+            ]
+          },
+          {
+            "denom": "lobo",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/C9864D1B9623F703C75BBF72B7FF8A7317E1535C96538D21467A4311246DC3B5",
+        "name": "Puro Lobo Fantoken",
+        "display": "lobo",
+        "symbol": "LOBO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB.png"
+        }
+      },
+      {
+        "description": "Vibranium a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/8A07D4BD40E0F44ECFDF360F7EA7008B288926FB87C54489FE54DB81A5340E0C",
+            "exponent": 0,
+            "aliases": [
+              "ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B"
+            ]
+          },
+          {
+            "denom": "vibra",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/8A07D4BD40E0F44ECFDF360F7EA7008B288926FB87C54489FE54DB81A5340E0C",
+        "name": "Vibranium Fantoken",
+        "display": "vibra",
+        "symbol": "VIBRA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B.png"
+        }
+      },
+      {
+        "description": "Karina a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/6A6174468758D207DD2D880363BF699C6568A29E87651337AEDAFD9E69EA7E58",
+            "exponent": 0,
+            "aliases": [
+              "ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE"
+            ]
+          },
+          {
+            "denom": "karina",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/6A6174468758D207DD2D880363BF699C6568A29E87651337AEDAFD9E69EA7E58",
+        "name": "Karina Fantoken",
+        "display": "karina",
+        "symbol": "KARINA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE.png"
+        }
+      },
+      {
+        "description": "Luca Testa a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/022A879A5301CBCACF96216C967805F15C33C615B74DC7236027C1BA1BF664FF",
+            "exponent": 0,
+            "aliases": [
+              "ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12"
+            ]
+          },
+          {
+            "denom": "testa",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/022A879A5301CBCACF96216C967805F15C33C615B74DC7236027C1BA1BF664FF",
+        "name": "Luca Testa Fantoken",
+        "display": "testa",
+        "symbol": "TESTA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12.png"
+        }
+      },
+      {
+        "description": "Carolina Marquez a BitSong Music FanToken",
+        "denom_units": [
+          {
+            "denom": "ibc/C1CEF00F016FE89EA6E5B07DA895AACD91B0AAD69A991033D846B988AD4FB69D",
+            "exponent": 0,
+            "aliases": [
+              "ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3"
+            ]
+          },
+          {
+            "denom": "cmqz",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/C1CEF00F016FE89EA6E5B07DA895AACD91B0AAD69A991033D846B988AD4FB69D",
+        "name": "Carolina Marquez Fantoken",
+        "display": "cmqz",
+        "symbol": "CMQZ",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3.png"
+        }
       }
     ]
   },
@@ -7397,7 +8395,7 @@
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png"
         },
-        "coingecko_id": "cronos"
+        "coingecko_id": "crypto-com-chain"
       }
     ]
   },
@@ -7827,6 +8825,7 @@
         "name": "Graviton",
         "display": "graviton",
         "symbol": "GRAV",
+        "coingecko_id": "graviton",
         "logo_URIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png"
@@ -8002,29 +9001,6 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
-      },
-      {
-        "description": "Governance Token for Digital Land Acquisition DAO",
-        "type_asset": "cw20",
-        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-        "denom_units": [
-          {
-            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-            "exponent": 0
-          },
-          {
-            "denom": "dla",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/A2F0736C1C95BF59160A61015A003D320BEE62F261E65E42547806F0A2FB68C7",
-        "name": "Digital Land Acquisition DAO",
-        "display": "dla",
-        "symbol": "DLA",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
-        }
       }
     ]
   },
@@ -8582,6 +9558,7 @@
         "name": "Rizon Chain",
         "display": "atolo",
         "symbol": "ATOLO",
+        "coingecko_id": "rizon",
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.svg"
@@ -10014,7 +10991,7 @@
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png"
         },
-        "coingecko_id": "cronos"
+        "coingecko_id": "crypto-com-chain"
       }
     ]
   },
@@ -10101,29 +11078,6 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
-      },
-      {
-        "description": "Governance Token for Digital Land Acquisition DAO",
-        "type_asset": "cw20",
-        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-        "denom_units": [
-          {
-            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-            "exponent": 0
-          },
-          {
-            "denom": "dla",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/7B1646D71C1FB0A0EBDC866AAF1C340534EC1E639E279C35EA6C6F8131418963",
-        "name": "Digital Land Acquisition DAO",
-        "display": "dla",
-        "symbol": "DLA",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
-        }
       }
     ]
   },
@@ -10553,7 +11507,7 @@
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png"
         },
-        "coingecko_id": "cronos"
+        "coingecko_id": "crypto-com-chain"
       }
     ]
   },
@@ -11134,6 +12088,297 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png"
         },
         "coingecko_id": "wrapped-bitcoin"
+      },
+      {
+        "description": "Aave on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/C59C40DF5B210194B7E6E0652978967975374A0849DD30583006BDEFFB59312B",
+            "exponent": 0,
+            "aliases": [
+              "aave-wei"
+            ]
+          },
+          {
+            "denom": "aave",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/C59C40DF5B210194B7E6E0652978967975374A0849DD30583006BDEFFB59312B",
+        "name": "Aave",
+        "display": "aave",
+        "symbol": "AAVE",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg"
+        },
+        "coingecko_id": "aave"
+      },
+      {
+        "description": "ApeCoin on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/DFE7E0AE42D8D58D7D06D9D6538C66F4090B793CC3766B69A6A0F0DE25F00413",
+            "exponent": 0,
+            "aliases": [
+              "ape-wei"
+            ]
+          },
+          {
+            "denom": "ape",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/DFE7E0AE42D8D58D7D06D9D6538C66F4090B793CC3766B69A6A0F0DE25F00413",
+        "name": "ApeCoin",
+        "display": "ape",
+        "symbol": "APE",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg"
+        },
+        "coingecko_id": "apecoin"
+      },
+      {
+        "description": "Axie Infinity Shard on Axelar",
+        "type_asset": "erc20",
+        "address": "0xbb0e17ef65f82ab018d8edd776e8dd940327b28b",
+        "denom_units": [
+          {
+            "denom": "ibc/7A90E412F1C37262762E7BF61342FA206A1A6F7D226181CCD0507782C61C4A9A",
+            "exponent": 0,
+            "aliases": [
+              "axs-wei"
+            ]
+          },
+          {
+            "denom": "axs",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/7A90E412F1C37262762E7BF61342FA206A1A6F7D226181CCD0507782C61C4A9A",
+        "name": "Axie Infinity Shard",
+        "display": "axs",
+        "symbol": "AXS",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg"
+        },
+        "coingecko_id": "axie-infinity"
+      },
+      {
+        "description": "Chainlink on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/E7B98666AD9E785812DE11447FBA1FF2BDE74CDB49BBBB6D150A7DCD971A502E",
+            "exponent": 0,
+            "aliases": [
+              "link-wei"
+            ]
+          },
+          {
+            "denom": "link",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/E7B98666AD9E785812DE11447FBA1FF2BDE74CDB49BBBB6D150A7DCD971A502E",
+        "name": "Chainlink",
+        "display": "link",
+        "symbol": "LINK",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg"
+        },
+        "coingecko_id": "chainlink"
+      },
+      {
+        "description": "Maker on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/C37FA4F2EE90032E5648573E6C56511B1DBC9936BD9FA27DBD673E9E9D7728CF",
+            "exponent": 0,
+            "aliases": [
+              "mkr-wei"
+            ]
+          },
+          {
+            "denom": "mkr",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/C37FA4F2EE90032E5648573E6C56511B1DBC9936BD9FA27DBD673E9E9D7728CF",
+        "name": "Maker",
+        "display": "mkr",
+        "symbol": "MKR",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg"
+        },
+        "coingecko_id": "maker"
+      },
+      {
+        "description": "Rai Reflex Index on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/18EF59597C5230BFAE79EBEE4248556298A4FDB5B0DA8AAAD54C247B0011998B",
+            "exponent": 0,
+            "aliases": [
+              "rai-wei"
+            ]
+          },
+          {
+            "denom": "rai",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/18EF59597C5230BFAE79EBEE4248556298A4FDB5B0DA8AAAD54C247B0011998B",
+        "name": "Rai Reflex Index",
+        "display": "rai",
+        "symbol": "RAI",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/rai.svg"
+        },
+        "coingecko_id": "rai"
+      },
+      {
+        "description": "Shiba Inu on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/32D4AEE974D7B47A96BC539C796A38AA6CF65B3B2C36FDA621A326DC08E736D5",
+            "exponent": 0,
+            "aliases": [
+              "shib-wei"
+            ]
+          },
+          {
+            "denom": "shib",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/32D4AEE974D7B47A96BC539C796A38AA6CF65B3B2C36FDA621A326DC08E736D5",
+        "name": "Shiba Inu",
+        "display": "shib",
+        "symbol": "SHIB",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg"
+        },
+        "coingecko_id": "shiba-inu"
+      },
+      {
+        "description": "Lido Staked Ether on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/25FE726817716360DC551E7BB648D3BE44F4130C710C1BC68C4B777A9A3EEDD0",
+            "exponent": 0,
+            "aliases": [
+              "steth-wei"
+            ]
+          },
+          {
+            "denom": "steth",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/25FE726817716360DC551E7BB648D3BE44F4130C710C1BC68C4B777A9A3EEDD0",
+        "name": "Lido Staked Ether",
+        "display": "steth",
+        "symbol": "stETH",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg"
+        },
+        "coingecko_id": "staked-ether"
+      },
+      {
+        "description": "Uniswap on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/A68DABF68FD9B27FA921C984DFB9B646478C68C0A8DF6E19AA2C0DD3CF2469F8",
+            "exponent": 0,
+            "aliases": [
+              "uni-wei"
+            ]
+          },
+          {
+            "denom": "uni",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/A68DABF68FD9B27FA921C984DFB9B646478C68C0A8DF6E19AA2C0DD3CF2469F8",
+        "name": "Uniswap",
+        "display": "uni",
+        "symbol": "UNI",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg"
+        },
+        "coingecko_id": "uniswap"
+      },
+      {
+        "description": "Chain on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/8EEF67E351D187781488147142FE79C947E28715CB659038F4071F3D5D483354",
+            "exponent": 0,
+            "aliases": [
+              "xcn-wei"
+            ]
+          },
+          {
+            "denom": "xcn",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/8EEF67E351D187781488147142FE79C947E28715CB659038F4071F3D5D483354",
+        "name": "Chain",
+        "display": "xcn",
+        "symbol": "XCN",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg"
+        },
+        "coingecko_id": "chain-2"
+      },
+      {
+        "description": "Wrapped Polkadot on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/C1B6DD96E2344095412DE3CD11FF0DE78572C671AC7EBFEFC18D54EBF2D7DCA7",
+            "exponent": 0,
+            "aliases": [
+              "dot-planck"
+            ]
+          },
+          {
+            "denom": "dot",
+            "exponent": 10
+          }
+        ],
+        "base": "ibc/C1B6DD96E2344095412DE3CD11FF0DE78572C671AC7EBFEFC18D54EBF2D7DCA7",
+        "name": "Wrapped Polkadot",
+        "display": "dot",
+        "symbol": "DOT",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg"
+        },
+        "coingecko_id": "polkadot"
+      },
+      {
+        "description": "Wrapped Moonbeam on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/A79A703A34F0F6F3316FBF80D31F2D1070C0B61F0945DA91D89D0F0923243B60",
+            "exponent": 0,
+            "aliases": [
+              "wglmr-wei"
+            ]
+          },
+          {
+            "denom": "wglmr",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/A79A703A34F0F6F3316FBF80D31F2D1070C0B61F0945DA91D89D0F0923243B60",
+        "name": "Wrapped Moonbeam",
+        "display": "wglmr",
+        "symbol": "WGLMR",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg"
+        },
+        "coingecko_id": "wrapped-moonbeam"
       }
     ]
   },
@@ -11301,6 +12546,7 @@
         "name": "Graviton",
         "display": "graviton",
         "symbol": "GRAV",
+        "coingecko_id": "graviton",
         "logo_URIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png"
@@ -11391,29 +12637,6 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
-      },
-      {
-        "description": "Governance Token for Digital Land Acquisition DAO",
-        "type_asset": "cw20",
-        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-        "denom_units": [
-          {
-            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-            "exponent": 0
-          },
-          {
-            "denom": "dla",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/88D7600D098B78ACEB677A1D229E14DDE7F598EB8A9B5AB558C6C18F503A7B78",
-        "name": "Digital Land Acquisition DAO",
-        "display": "dla",
-        "symbol": "DLA",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
-        }
       }
     ]
   },
@@ -12577,7 +13800,7 @@
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png"
         },
-        "coingecko_id": "cronos"
+        "coingecko_id": "crypto-com-chain"
       }
     ]
   },
@@ -13094,7 +14317,7 @@
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png"
         },
-        "coingecko_id": "cronos"
+        "coingecko_id": "crypto-com-chain"
       }
     ]
   },
@@ -13223,29 +14446,6 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
-      },
-      {
-        "description": "Governance Token for Digital Land Acquisition DAO",
-        "type_asset": "cw20",
-        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-        "denom_units": [
-          {
-            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-            "exponent": 0
-          },
-          {
-            "denom": "dla",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/97B51B5C8789F62352017282A7912165370BE52FCA34C93E2E127F7BDC774DCD",
-        "name": "Digital Land Acquisition DAO",
-        "display": "dla",
-        "symbol": "DLA",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
-        }
       }
     ]
   },
@@ -13595,29 +14795,6 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
-      },
-      {
-        "description": "Governance Token for Digital Land Acquisition DAO",
-        "type_asset": "cw20",
-        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-        "denom_units": [
-          {
-            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-            "exponent": 0
-          },
-          {
-            "denom": "dla",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/85583B2EEAD8B35082F9E7BE102E722021E86772D26E18A60E9C6E22744E9B12",
-        "name": "Digital Land Acquisition DAO",
-        "display": "dla",
-        "symbol": "DLA",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
-        }
       }
     ]
   },
@@ -13856,7 +15033,7 @@
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png"
         },
-        "coingecko_id": "cronos"
+        "coingecko_id": "crypto-com-chain"
       }
     ]
   },
@@ -14138,29 +15315,6 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
         "coingecko_id": "juno-network"
-      },
-      {
-        "description": "Governance Token for Digital Land Acquisition DAO",
-        "type_asset": "cw20",
-        "address": "juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-        "denom_units": [
-          {
-            "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
-            "exponent": 0
-          },
-          {
-            "denom": "dla",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/2484CA9E4217A961D3A4296E9C52BE95E93E1CC269454B865BDE850A62863BBB",
-        "name": "Digital Land Acquisition DAO",
-        "display": "dla",
-        "symbol": "DLA",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
-        }
       }
     ]
   },

@@ -73,6 +73,115 @@
   },
   {
     "$schema": "../chain.schema.json",
+    "chain_name": "aioz",
+    "status": "live",
+    "network_type": "mainnet",
+    "pretty_name": "AIOZ Network",
+    "chain_id": "aioz_168-1",
+    "bech32_prefix": "aioz",
+    "daemon_name": "aiozd",
+    "node_home": "$HOME/.aioz",
+    "genesis": {
+      "genesis_url": "https://archive.aioz.network/aioz_168-1/genesis.json"
+    },
+    "key_algos": [
+      "ethsecp256k1"
+    ],
+    "slip44": 60,
+    "fees": {
+      "fee_tokens": [
+        {
+          "denom": "attoaioz",
+          "fixed_min_gas_price": 1000000000
+        }
+      ]
+    },
+    "codebase": {
+      "git_repo": "https://github.com/AIOZNetwork/go-aioz",
+      "recommended_version": "v1.2.0",
+      "compatible_versions": [
+        "v1.2.0"
+      ],
+      "binaries": {
+        "linux/amd64": "https://archive.aioz.network/aiozd-v1.2.0-linux-amd64.tar.gz",
+        "darwin/amd64": "https://archive.aioz.network/aiozd-v1.2.0-darwin-amd64.tar.gz",
+        "windows/amd64": "https://archive.aioz.network/aiozd-v1.2.0-windows-amd64.zip"
+      }
+    },
+    "peers": {
+      "seeds": [
+        {
+          "id": "aab202d5648772a8b5be3db575a8a7dd577db78f",
+          "address": "167.172.6.76:26656"
+        },
+        {
+          "id": "ef834ca8044d345db334fbf6a6bfe7230f429739",
+          "address": "35.236.45.174:26656"
+        },
+        {
+          "id": "b13a849f59ff3e0558d248c3e9eb9bf4a360bb77",
+          "address": "20.187.94.254:26656"
+        },
+        {
+          "id": "849e6023440355412bc9a9d5bc0731143e7d657a",
+          "address": "13.53.208.41:26656"
+        }
+      ],
+      "persistent_peers": [
+        {
+          "id": "aab202d5648772a8b5be3db575a8a7dd577db78f",
+          "address": "167.172.6.76:26656"
+        },
+        {
+          "id": "ef834ca8044d345db334fbf6a6bfe7230f429739",
+          "address": "35.236.45.174:26656"
+        },
+        {
+          "id": "b13a849f59ff3e0558d248c3e9eb9bf4a360bb77",
+          "address": "20.187.94.254:26656"
+        },
+        {
+          "id": "849e6023440355412bc9a9d5bc0731143e7d657a",
+          "address": "13.53.208.41:26656"
+        }
+      ]
+    },
+    "apis": {
+      "rpc": [
+        {
+          "address": "https://rpc-dataseed.aioz.network:443",
+          "provider": "AIOZ Network"
+        }
+      ],
+      "rest": [
+        {
+          "address": "https://lcd-dataseed.aioz.network",
+          "provider": "AIOZ Network"
+        }
+      ],
+      "grpc": [
+        {
+          "address": "https://grpc-dataseed.aioz.network:443",
+          "provider": "AIOZ Network"
+        }
+      ],
+      "evm-jsonrpc": [
+        {
+          "address": "https://eth-dataseed.aioz.network",
+          "provider": "AIOZ Network"
+        }
+      ]
+    },
+    "explorers": [
+      {
+        "kind": "aioz",
+        "url": "https://explorer.aioz.network",
+        "tx_page": "https://explorer.aioz.network/tx/${txHash}"
+      }
+    ]
+  },
+  {
+    "$schema": "../chain.schema.json",
     "chain_name": "akash",
     "status": "live",
     "network_type": "mainnet",
@@ -223,7 +332,7 @@
   {
     "$schema": "../chain.schema.json",
     "chain_name": "arkh",
-    "status": "killed",
+    "status": "live",
     "network_type": "mainnet",
     "pretty_name": "Arkhadian",
     "chain_id": "arkh",
@@ -291,7 +400,7 @@
     "chain_name": "assetmantle",
     "status": "live",
     "network_type": "mainnet",
-    "pretty_name": "Asset Mantle",
+    "pretty_name": "AssetMantle",
     "chain_id": "mantle-1",
     "bech32_prefix": "mantle",
     "daemon_name": "mantleNode",
@@ -1082,9 +1191,9 @@
     },
     "codebase": {
       "git_repo": "https://github.com/bitsongofficial/go-bitsong",
-      "recommended_version": "v0.10.0",
+      "recommended_version": "v0.11.0",
       "compatible_versions": [
-        "v0.10.0"
+        "v0.11.0"
       ]
     },
     "peers": {
@@ -1154,6 +1263,10 @@
         {
           "address": "https://rpc-bitsong-ia.notional.ventures/",
           "provider": "Notional"
+        },
+        {
+          "address": "https://rpc.explorebitsong.com",
+          "provider": "stake.systems"
         }
       ],
       "rest": [
@@ -1168,12 +1281,20 @@
         {
           "address": "https://api-bitsong-ia.notional.ventures/",
           "provider": "Notional"
+        },
+        {
+          "address": "https://lcd.explorebitsong.com/",
+          "provider": "stake.systems"
         }
       ],
       "grpc": [
         {
           "address": "grpc-bitsong-ia.notional.ventures:443",
           "provider": "Notional"
+        },
+        {
+          "address": "bitsong.stakesystems.io:2083",
+          "provider": "stake.systems"
         }
       ]
     },
@@ -1576,18 +1697,21 @@
       "fee_tokens": [
         {
           "denom": "ncheq",
-          "fixed_min_gas_price": 25
+          "fixed_min_gas_price": 25,
+          "low_gas_price": 25,
+          "average_gas_price": 50,
+          "high_gas_price": 100
         }
       ]
     },
     "codebase": {
       "git_repo": "https://github.com/cheqd/cheqd-node",
-      "recommended_version": "v0.5.0",
+      "recommended_version": "v0.6.0",
       "compatible_versions": [
-        "v0.5.0"
+        "v0.6.0"
       ],
       "binaries": {
-        "linux/amd64": "https://github.com/cheqd/cheqd-node/releases/download/v0.5.0/cheqd-node_0.5.0_amd64.deb"
+        "linux/amd64": "https://github.com/cheqd/cheqd-node/releases/download/v0.6.0/cheqd-noded"
       }
     },
     "peers": {
@@ -1611,11 +1735,6 @@
           "id": "9b30307a2a2819790d68c04bb62f5cf4028f447e",
           "address": "seed1.ap.cheqd.net:26656",
           "provider": "cheqd"
-        },
-        {
-          "id": "debcb3fa7d40e681d98bcc7d22278fd58a34b73a",
-          "address": "144.76.183.180:1234",
-          "provider": "notional"
         }
       ],
       "persistent_peers": [
@@ -1627,6 +1746,11 @@
         {
           "id": "513d334bb044296796939e57b522fef7fd4b9c6c",
           "address": "sentry2.eu.cheqd.net:26656",
+          "provider": "cheqd"
+        },
+        {
+          "id": "9201b408d24941fd342e739f0814aa3eb8ab7577",
+          "address": "sentry1.ap.cheqd.net:26656",
           "provider": "cheqd"
         }
       ]
@@ -1662,6 +1786,10 @@
       ],
       "grpc": [
         {
+          "address": "grpc.cheqd.net:443",
+          "provider": "cheqd"
+        },
+        {
           "address": "grpc-cheqd-ia.notional.ventures:443",
           "provider": "Notional"
         }
@@ -1679,9 +1807,10 @@
         "tx_page": "https://ping.pub/cheqd/tx/${txHash}"
       },
       {
-        "kind": "aneka",
-        "url": "https://cheqd.aneka.io/",
-        "tx_page": "https://cheqd.aneka.io/txs/${txHash}"
+        "kind": "atomscan.com",
+        "url": "https://atomscan.com/cheqd",
+        "tx_page": "https://atomscan.com/cheqd/transactions/${txHash}",
+        "account_page": "https://atomscan.com/cheqd/accounts/${accountAddress}"
       }
     ]
   },
@@ -1824,7 +1953,7 @@
     "daemon_name": "chtd",
     "node_home": "$HOME/.cht",
     "genesis": {
-      "genesis_url": "https://github.com/ChronicNetwork/net/blob/main/mainnet/v1.1/genesis.json"
+      "genesis_url": "https://raw.githubusercontent.com/ChronicNetwork/net/main/mainnet/v1.1/genesis.json"
     },
     "key_algos": [
       "secp256k1"
@@ -1849,15 +1978,81 @@
       }
     },
     "peers": {
-      "seeds": [],
-      "persistent_peers": []
+      "seeds": [
+        {
+          "id": "ba4c7434bdb00f49b26450242713d52e7c6c8f73",
+          "address": "147.182.180.205:26656",
+          "provider": "Third Party"
+        }
+      ],
+      "persistent_peers": [
+        {
+          "id": "9dd99f5aaebac6027e842a5678c2ad2663942506",
+          "address": "185.16.39.128:26456",
+          "provider": "StingRay"
+        },
+        {
+          "id": "694ddedde37bb211c827834e27e39d4c85f36f5f",
+          "address": "46.4.119.90:46656",
+          "provider": "Chill Validation"
+        },
+        {
+          "id": "31cc2cd1735ff7b51bb44dada4d984741208fc39",
+          "address": "65.21.88.252:29656",
+          "provider": "hdmiidmh"
+        },
+        {
+          "id": "998340bc75690a0479fa028f5bdf275b829b9f1a",
+          "address": "65.21.132.226:28656",
+          "provider": "Blockscope.net"
+        },
+        {
+          "id": "4e9a1be76e5f2bf6c34748b85aed0cedca892cc8",
+          "address": "143.244.182.230:26656",
+          "provider": "xiti"
+        }
+      ]
     },
     "apis": {
-      "rpc": [],
-      "grpc": [],
-      "rest": []
+      "rpc": [
+        {
+          "address": "https://rpc.chronic.nodestake.top/",
+          "provider": "NodeStake.top"
+        },
+        {
+          "address": "https://rpc-chronic.zenchainlabs.io/",
+          "provider": "ZenChainLabs"
+        }
+      ],
+      "grpc": [
+        {
+          "address": "https://grpc.chronic.nodestake.top/",
+          "provider": "NodeStake.top"
+        }
+      ],
+      "rest": [
+        {
+          "address": "https://api.chronic.nodestake.top/",
+          "provider": "NodeStake.top"
+        },
+        {
+          "address": "https://api-chronic.zenchainlabs.io/",
+          "provider": "ZenChainLabs"
+        }
+      ]
     },
-    "explorers": []
+    "explorers": [
+      {
+        "kind": "skynetexplorers",
+        "url": "https://www.skynetexplorers.com/chronic-token",
+        "tx_page": ""
+      },
+      {
+        "kind": "Zenscan.io",
+        "url": "https://www.chronic.zenscan.io",
+        "tx_page": ""
+      }
+    ]
   },
   {
     "$schema": "../chain.schema.json",
@@ -2318,13 +2513,13 @@
     },
     "codebase": {
       "git_repo": "https://github.com/crescent-network/crescent",
-      "recommended_version": "v1.1.0",
+      "recommended_version": "v2.1.0",
       "compatible_versions": [
-        "v1.1.0"
+        "v2.1.0"
       ],
       "binaries": {
-        "linux/amd64": "https://github.com/crescent-network/crescent/releases/download/v1.1.0/crescentd-v1.1.0-linux-amd64",
-        "darwin/amd64": "https://github.com/crescent-network/crescent/releases/download/v1.1.0/crescentd-v1.1.0-darwin-amd64"
+        "linux/amd64": "https://github.com/crescent-network/crescent/releases/download/v2.1.0/crescentd-v2.1.0-linux-amd64",
+        "darwin/amd64": "https://github.com/crescent-network/crescent/releases/download/v2.1.0/crescentd-v2.1.0-darwin-amd64"
       }
     },
     "peers": {
@@ -3727,6 +3922,10 @@
         {
           "address": "https://rpc.evmos.nodestake.top",
           "provider": "NodeStake"
+        },
+        {
+          "address": "https://rpc-evmos.ecostake.com",
+          "provider": "ecostake"
         }
       ],
       "rest": [
@@ -3757,6 +3956,10 @@
         {
           "address": "https://api.evmos.testnet.run",
           "provider": "TestNetRun"
+        },
+        {
+          "address": "https://rest-evmos.ecostake.com",
+          "provider": "ecostake"
         }
       ],
       "grpc": [
@@ -4182,6 +4385,22 @@
           "id": "36111b4156ace8f1cfa5584c3ccf479de4d94936",
           "address": "65.21.34.226:26656",
           "provider": "GenesisL1"
+        },
+        {
+          "id": "c23b3d58ccae0cf34fc12075c933659ff8cca200",
+          "address": "95.217.207.154:26656"
+        },
+        {
+          "id": "37d8aa8a31d66d663586ba7b803afd68c01126c4",
+          "address": "65.21.134.70:26656"
+        },
+        {
+          "id": "d7d4ea7a661c40305cab84ac227cdb3814df4e43",
+          "address": "139.162.195.228:26656"
+        },
+        {
+          "id": "be81a20b7134552e270774ec861c4998fabc2969",
+          "address": "genesisl1.3ventures.io:26656"
         }
       ]
     },
@@ -4204,6 +4423,11 @@
         "kind": "ping-pub",
         "url": "https://ping.pub/genesisL1",
         "tx_page": "https://ping.pub/genesisL1/tx/${txHash}"
+      },
+      {
+        "kind": "ATOMScan",
+        "url": "https://atomscan.com/genesisl1",
+        "tx_page": "https://atomscan.com/genesisl1/transactions/${txHash}"
       }
     ]
   },
@@ -4560,10 +4784,6 @@
         }
       ],
       "grpc": [
-        {
-          "address": "impacthub-grpc.ixo.earth:443",
-          "provider": "ixoworld"
-        },
         {
           "address": "grpc-ixo-ia.notional.ventures:443",
           "provider": "Notional"
@@ -5414,16 +5634,16 @@
     },
     "codebase": {
       "git_repo": "https://github.com/likecoin/likecoin-chain",
-      "recommended_version": "v2.0.2",
+      "recommended_version": "v3.0.0",
       "compatible_versions": [
-        "v2.0.2"
+        "v3.0.0"
       ],
       "binaries": {
-        "linux/amd64": "https://github.com/likecoin/likecoin-chain/releases/download/v2.0.2/likecoin-chain_2.0.2_Linux_x86_64.tar.gz",
-        "linux/arm64": "https://github.com/likecoin/likecoin-chain/releases/download/v2.0.2/likecoin-chain_2.0.2_Linux_arm64.tar.gz",
-        "darwin/amd64": "https://github.com/likecoin/likecoin-chain/releases/download/v2.0.2/likecoin-chain_2.0.2_Darwin_x86_64.tar.gz",
-        "darwin/arm64": "https://github.com/likecoin/likecoin-chain/releases/download/v2.0.2/likecoin-chain_2.0.2_Darwin_arm64.tar.gz",
-        "windows/amd64": "https://github.com/likecoin/likecoin-chain/releases/download/v2.0.2/likecoin-chain_2.0.2_Windows_x86_64.zip"
+        "linux/amd64": "https://github.com/likecoin/likecoin-chain/releases/download/v3.0.0/likecoin-chain_3.0.0_Linux_x86_64.tar.gz",
+        "linux/arm64": "https://github.com/likecoin/likecoin-chain/releases/download/v3.0.0/likecoin-chain_3.0.0_Linux_arm64.tar.gz",
+        "darwin/amd64": "https://github.com/likecoin/likecoin-chain/releases/download/v3.0.0/likecoin-chain_3.0.0_Darwin_x86_64.tar.gz",
+        "darwin/arm64": "https://github.com/likecoin/likecoin-chain/releases/download/v3.0.0/likecoin-chain_3.0.0_Darwin_arm64.tar.gz",
+        "windows/amd64": "https://github.com/likecoin/likecoin-chain/releases/download/v3.0.0/likecoin-chain_3.0.0_Windows_x86_64.zip"
       }
     },
     "peers": {
@@ -5717,6 +5937,13 @@
       ]
     },
     "peers": {
+      "seeds": [
+        {
+          "id": "dbe97ebeb4d07999a1fe2de2f92a56cc07385259",
+          "address": "seeds.pupmos.network:2005",
+          "provider": "PUPMØS"
+        }
+      ],
       "persistent_peers": [
         {
           "id": "a9959fef554ee407f23dffbcd4c0711e02a07d18",
@@ -5742,6 +5969,11 @@
           "id": "c1e05690adfbc970817e0debb5d7770ee9f2f3ac",
           "address": "65.108.131.174:47656",
           "provider": "Polkachu"
+        },
+        {
+          "id": "fc21b0c26b6840915f6fe2daf56565e1c30e0956",
+          "address": "162.55.245.104:26656",
+          "provider": "PUPMØS"
         }
       ]
     },
@@ -5758,6 +5990,10 @@
         {
           "address": "https://meme-rpc.polkachu.com/",
           "provider": "Polkachu"
+        },
+        {
+          "address": "https://rpc.meme.pupmos.network/",
+          "provider": "PUPMØS"
         }
       ],
       "rest": [
@@ -5772,6 +6008,10 @@
         {
           "address": "https://meme-api.polkachu.com/",
           "provider": "Polkachu"
+        },
+        {
+          "address": "https://api.meme.pupmos.network/",
+          "provider": "PUPMØS"
         }
       ]
     },
@@ -6347,7 +6587,11 @@
       "binaries": {
         "linux/amd64": "https://github.com/osmosis-labs/osmosis/releases/download/v10.0.0/osmosis-10.0.0-linux-amd64",
         "linux/arm64": "https://github.com/osmosis-labs/osmosis/releases/download/v10.0.0/osmosis-10.0.0-linux-arm64"
-      }
+      },
+      "cosmos_sdk_version": "0.45",
+      "tendermint_version": "0.34",
+      "cosmwasm_version": "0.24",
+      "cosmwasm_enabled": true
     },
     "peers": {
       "seeds": [
@@ -7197,10 +7441,6 @@
           "provider": "Trivium | Trivium.Network"
         },
         {
-          "address": "https://rpc.roninventures.io",
-          "provider": "Ronin Ventures"
-        },
-        {
           "address": "https://scrt-rpc.blockpane.com",
           "provider": "[ block pane ]"
         },
@@ -7211,16 +7451,20 @@
         {
           "address": "https://secret.rpc.consensus.one",
           "provider": "Consensus One"
+        },
+        {
+          "address": "https://rpc.secret.forbole.com/",
+          "provider": "Forbole"
+        },
+        {
+          "address": "https://secretnetwork-rpc.stakely.io",
+          "provider": "Stakely.io"
         }
       ],
       "rest": [
         {
           "address": "https://secret-4.api.trivium.network:1317",
           "provider": "Trivium | Trivium.Network"
-        },
-        {
-          "address": "https://api.roninventures.io",
-          "provider": "Ronin Ventures"
         },
         {
           "address": "https://scrt-lcd.blockpane.com",
@@ -7233,16 +7477,20 @@
         {
           "address": "https://secret.api.consensus.one",
           "provider": "Consensus One"
+        },
+        {
+          "address": "https://api.secret.forbole.com/",
+          "provider": "Forbole"
+        },
+        {
+          "address": "https://secretnetwork-lcd.stakely.io",
+          "provider": "Stakely.io"
         }
       ],
       "grpc-web": [
         {
           "address": "https://secret-4.api.trivium.network:9091",
           "provider": "Trivium | Trivium.Network"
-        },
-        {
-          "address": "https://web-rpc.roninventures.io",
-          "provider": "Ronin Ventures"
         },
         {
           "address": "http://scrt-rpc.blockpane.com:9091",
@@ -8499,6 +8747,54 @@
         "kind": "Big Dipper",
         "url": "https://explorer.theta-testnet.polypore.xyz/",
         "tx_page": "https://explorer.theta-testnet.polypore.xyz/transactions/${txHash}"
+      }
+    ]
+  },
+  {
+    "$schema": "../chain.schema.json",
+    "chain_name": "ULAS",
+    "status": "live",
+    "network_type": "testnet",
+    "pretty_name": "ULAS",
+    "chain_id": "ulas",
+    "bech32_prefix": "ulas",
+    "daemon_name": "ulasd",
+    "node_home": "$HOME/.ulas",
+    "genesis": {
+      "genesis_url": "https://raw.githubusercontent.com/ulasnetwork/chain-config/main/ulas/genesis.json"
+    },
+    "codebase": {
+      "git_repo": "https://github.com/ulasnetwork/ulas",
+      "recommended_version": "v0.0.1",
+      "compatible_versions": [
+        "v0.0.1"
+      ]
+    },
+    "apis": {
+      "rpc": [
+        {
+          "address": "http://65.49.204.199:26657",
+          "provider": "UlasNetwork"
+        }
+      ],
+      "rest": [
+        {
+          "address": "http://65.49.204.199:1317",
+          "provider": "UlasNetwork"
+        }
+      ],
+      "grpc": [
+        {
+          "address": "http://65.49.204.199:9090",
+          "provider": "UlasNetwork"
+        }
+      ]
+    },
+    "explorers": [
+      {
+        "kind": "ulas-scan",
+        "url": "https://testnet-explorer.ulas.network",
+        "tx_page": "https://testnet-explorer.ulas.network/ulas/tx/${txHash}"
       }
     ]
   },
