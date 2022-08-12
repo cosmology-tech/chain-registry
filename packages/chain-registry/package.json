@@ -1,6 +1,6 @@
 {
   "name": "chain-registry",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Cosmos chain registry ⚛️",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry/tree/master/packages/chain-registry#readme",
@@ -51,7 +51,7 @@
     "@babel/preset-typescript": "^7.17.12",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.1.0",
-    "chain-registry-utils": "^0.0.6",
+    "chain-registry-utils": "^0.1.0",
     "cross-env": "^7.0.2",
     "deepmerge": "^4.2.2",
     "eslint": "^8.17.0",
