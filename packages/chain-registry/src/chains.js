@@ -196,47 +196,30 @@ module.exports = [
     "slip44": 118,
     "codebase": {
       "git_repo": "https://github.com/ovrclk/akash/",
-      "recommended_version": "v0.14.1",
+      "recommended_version": "v0.16.3",
       "compatible_versions": [
-        "v0.14.1"
+        "v0.16.3"
       ],
       "binaries": {
-        "linux/amd64": "https://github.com/ovrclk/akash/releases/download/v0.14.1/akash_0.14.1_linux_amd64.zip"
+        "linux/amd64": "https://github.com/ovrclk/akash/releases/download/v0.16.3/akash_0.16.3_linux_amd64.zip"
       }
     },
     "peers": {
       "seeds": [
         {
-          "id": "27eb432ccd5e895c5c659659120d68b393dd8c60",
-          "address": "35.247.65.183:26656"
+          "id": "4acf579e2744268f834c713e894850995bbf0ffa",
+          "address": "50.18.31.225:26656"
         },
         {
-          "id": "8e2f56098f182ffe2f6fb09280bafe13c63eb42f",
-          "address": "46.101.176.149:26656"
+          "id": "3691ac1f56389ffec8579c13a6eb8eca41cf8ae3",
+          "address": "54.219.88.246:26656"
         },
         {
-          "id": "fff99a2e8f3c9473e4e5ee9a99611a2e599529fd",
-          "address": "46.166.138.218:26656",
-          "provider": "simplyvc"
+          "id": "86afe23f116ba4754a19819a55d153008eb74b48",
+          "address": "15.164.87.75:26656"
         }
       ],
       "persistent_peers": [
-        {
-          "id": "27eb432ccd5e895c5c659659120d68b393dd8c60",
-          "address": "35.247.65.183:26656"
-        },
-        {
-          "id": "9180b99a5be3443677e0f57fc5f40e8f071bdcd8",
-          "address": "161.35.239.0:51656"
-        },
-        {
-          "id": "47c9acc0e7d9b244a6404458e76d50b6284bfbbb",
-          "address": "142.93.77.25:26656"
-        },
-        {
-          "id": "ab7b55588ea3f4f7a477e852aa262959e54117cd",
-          "address": "3.235.249.94:26656"
-        },
         {
           "id": "4acf579e2744268f834c713e894850995bbf0ffa",
           "address": "50.18.31.225:26656"
@@ -250,12 +233,96 @@ module.exports = [
           "address": "15.164.87.75:26656"
         },
         {
-          "id": "6fbc3808f7d6c961e84944ae2d8c800a8bbffbb4",
-          "address": "138.201.159.100:26656"
+          "id": "43544bc781b88d6785420427926d86a5332940b3",
+          "address": "142.132.131.184:26656"
         },
         {
-          "id": "a2a3ffe7ac122a218e1f59c32a670f04b8fd3033",
-          "address": "165.22.69.102:26656"
+          "id": "30b8008d4ea5069a8724a0aa73833493efa88e67",
+          "address": "65.108.140.62:26656"
+        },
+        {
+          "id": "2b19780ea3de3553f03847a397ac2dfda1d2e89e",
+          "address": "65.108.6.185:26656"
+        },
+        {
+          "id": "be3a538cebb28e7224db10920bb7fe32456e1aad",
+          "address": "116.202.244.153:26656"
+        },
+        {
+          "id": "d2643edd1b3dce6615bc9925e20122c44d2ff763",
+          "address": "172.106.17.158:26656"
+        },
+        {
+          "id": "08fd59378ec5845a667f8608bd228f9251aec035",
+          "address": "3.64.67.110:27002"
+        },
+        {
+          "id": "6acf80cdbfba5ffbee23bd9e5b3ecac3234f3420",
+          "address": "147.75.32.107:26656"
+        },
+        {
+          "id": "20180c45451739668f6e272e007818139dba31e7",
+          "address": "88.198.62.198:2020"
+        },
+        {
+          "id": "89b5c363babe7c4983c3ef06c3c9ed1e39ec4246",
+          "address": "51.79.176.202:56656"
+        },
+        {
+          "id": "1c03b13f5f24f59ecc3cfe5d5fc36dabee3a5d78",
+          "address": "144.202.77.146:26656"
+        },
+        {
+          "id": "070b3c936e2995bc269a2981702b87de05411baa",
+          "address": "148.251.13.186:28656"
+        },
+        {
+          "id": "05c30fd95b888ca8df8171ce65a06f1de683d6e3",
+          "address": "84.252.129.17:26656"
+        },
+        {
+          "id": "b618556645ddac41dc871f7a0f6aa68feb0cc2a7",
+          "address": "38.75.137.161:26656"
+        },
+        {
+          "id": "97edd562862a905f087ccb02a39e6f660939e314",
+          "address": "216.202.234.76:26656"
+        },
+        {
+          "id": "06788f62811879e1d0774c4e9152543e17fe8576",
+          "address": "145.40.65.227:26656"
+        },
+        {
+          "id": "2ecb6e24df48ee037234222c67ef963daa58bcfc",
+          "address": "65.108.102.99:29656"
+        },
+        {
+          "id": "4e95c8f651de136b48c324ea9a687739a945f452",
+          "address": "185.107.95.88:26656"
+        },
+        {
+          "id": "1bfbbf77beeb2c1ace50443478035a255a7e510f",
+          "address": "136.24.44.100:26656"
+        },
+        {
+          "id": "ce137ea95720b2d4e196920d12170d1a6aebcf69",
+          "address": "35.215.43.253:26656"
+        },
+        {
+          "id": "fb42bcf141eecc7a8a66fcfbf7d2573b3b8d00e6",
+          "address": "75.119.133.59:26656"
+        },
+        {
+          "id": "c6e0e5460aefcf3c5d5d26dee1ef1e99e5ed90b8",
+          "address": "198.57.27.14:26656"
+        },
+        {
+          "id": "2640152c6359b03a3a4559b12110e96fcb95cd68",
+          "address": "74.91.27.138:26656"
+        },
+        {
+          "id": "aa01698ec0d8bb96398e89b57ecb08bcca50fa21",
+          "address": "65.21.199.148:26636"
         }
       ]
     },
@@ -266,42 +333,42 @@ module.exports = [
           "provider": "forbole"
         },
         {
-          "address": "http://akash-sentry01.skynetvalidators.com:26657",
-          "provider": "skynet"
-        },
-        {
-          "address": "https://rpc.akash.smartnodes.one:443"
-        },
-        {
-          "address": "http://akash.c29r3.xyz:80/rpc"
-        },
-        {
-          "address": "https://rpc-akash.ecostake.com",
+          "address": "https://rpc-akash.ecostake.com:443",
           "provider": "ecostake"
         },
         {
-          "address": "https://akash-rpc.polkachu.com",
+          "address": "https://akash-rpc.polkachu.com:443",
           "provider": "Polkachu"
         },
         {
-          "address": "https://rpc-akash-ia.notional.ventures/",
+          "address": "https://rpc-akash-ia.notional.ventures:443",
           "provider": "Notional"
+        },
+        {
+          "address": "http://akash.c29r3.xyz:80/rpc",
+          "provider": "c29r3"
         }
       ],
       "rest": [
         {
-          "address": "https://akash.c29r3.xyz:443/api"
-        },
-        {
-          "address": "https://api.akash.smartnodes.one"
+          "address": "https://api.akash.forbole.com:443",
+          "provider": "forbole"
         },
         {
           "address": "https://rest-akash.ecostake.com",
           "provider": "ecostake"
         },
         {
-          "address": "https://api-akash-ia.notional.ventures/",
+          "address": "https://akash-api.polkachu.com:443",
+          "provider": "Polkachu"
+        },
+        {
+          "address": "https://api-akash-ia.notional.ventures",
           "provider": "Notional"
+        },
+        {
+          "address": "https://akash.c29r3.xyz:443/api",
+          "provider": "c29r3"
         }
       ],
       "grpc": [
@@ -326,6 +393,11 @@ module.exports = [
         "kind": "bigdipper",
         "url": "https://akash.bigdipper.live/",
         "tx_page": "https://akash.bigdipper.live/transactions/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/akash",
+        "tx_page": "https://atomscan.com/akash/transactions/${txHash}"
       }
     ]
   },
@@ -777,6 +849,11 @@ module.exports = [
         "kind": "explorers.guru",
         "url": "https://assetmantle.explorers.guru",
         "tx_page": "https://assetmantle.explorers.guru/transaction/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/assetmantle",
+        "tx_page": "https://atomscan.com/assetmantle/transactions/${txHash}"
       }
     ]
   },
@@ -900,6 +977,11 @@ module.exports = [
         "kind": "explorers.guru",
         "url": "https://axelar.explorers.guru",
         "tx_page": "https://axelar.explorers.guru/transaction/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/axelar",
+        "tx_page": "https://atomscan.com/axelar/transactions/${txHash}"
       }
     ]
   },
@@ -989,6 +1071,11 @@ module.exports = [
         "kind": "ping.pub",
         "url": "https://ping.pub/band-protocol",
         "tx_page": "https://ping.pub/band-protocol/tx/{txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/band-protocol",
+        "tx_page": "https://atomscan.com/band-protocol/transactions/${txHash}"
       }
     ]
   },
@@ -1172,6 +1259,11 @@ module.exports = [
         "kind": "mintscan",
         "url": "https://www.mintscan.io/bitcanna/",
         "tx_page": "https://www.mintscan.io/bitcanna/txs/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/bitcanna",
+        "tx_page": "https://atomscan.com/bitcanna/transactions/${txHash}"
       }
     ]
   },
@@ -1313,6 +1405,11 @@ module.exports = [
         "kind": "big-dipper",
         "url": "https://explorebitsong.com",
         "tx_page": "https://explorebitsong.com/transactions/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/bitsong",
+        "tx_page": "https://atomscan.com/bitsong/transactions/${txHash}"
       }
     ]
   },
@@ -1434,6 +1531,11 @@ module.exports = [
         "kind": "ping-pub",
         "url": "https://ping.pub/bostrom",
         "tx_page": "https://ping.pub/bostrom/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/bostrom",
+        "tx_page": "https://atomscan.com/bostrom/transactions/${txHash}"
       }
     ]
   },
@@ -1544,9 +1646,9 @@ module.exports = [
     "peers": {
       "seeds": [
         {
-          "id": "4c3abff6e4a3e93b84babfc95df854861f83ac82",
-          "address": "cerberus-seed.blockpane.com:26656",
-          "provider": "blockpane"
+          "id": "ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0",
+          "address": "seeds.polkachu.com:38656",
+          "provider": "Polkachu"
         }
       ],
       "persistent_peers": [
@@ -1663,9 +1765,9 @@ module.exports = [
     },
     "explorers": [
       {
-        "kind": "ping.pub",
-        "url": "https://skynetexplorers.com/Cerberus",
-        "tx_page": "https://skynetexplorers.com/Cerberus/tx/${txHash}"
+        "kind": "SkyNet",
+        "url": "https://skynetexplorers.com/cerberus",
+        "tx_page": "https://skynetexplorers.com/cerberus/tx/${txHash}"
       },
       {
         "kind": "ping.pub",
@@ -1676,6 +1778,11 @@ module.exports = [
         "kind": "mintscan",
         "url": "https://www.mintscan.io/cerberus",
         "tx_page": "https://www.mintscan.io/cerberus/txs/{txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/cerberus",
+        "tx_page": "https://atomscan.com/cerberus/transactions/${txHash}"
       }
     ]
   },
@@ -1829,9 +1936,9 @@ module.exports = [
     },
     "codebase": {
       "git_repo": "https://github.com/ChihuahuaChain/chihuahua/",
-      "recommended_version": "v1.1.1",
+      "recommended_version": "v2.0.1",
       "compatible_versions": [
-        "v1.1.1"
+        "v2.0.1"
       ]
     },
     "peers": {
@@ -1939,6 +2046,11 @@ module.exports = [
         "kind": "mintscan",
         "url": "https://mintscan.io/chihuahua",
         "tx_page": "https://mintscan.io/chihuahua/txs/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/chihuahua",
+        "tx_page": "https://atomscan.com/chihuahua/transactions/${txHash}"
       }
     ]
   },
@@ -2207,6 +2319,11 @@ module.exports = [
         "kind": "ping-pub",
         "url": "https://ping.pub/comdex",
         "tx_page": "https://ping.pub/comdex/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/comdex",
+        "tx_page": "https://atomscan.com/comdex/transactions/${txHash}"
       }
     ]
   },
@@ -2387,6 +2504,10 @@ module.exports = [
     "apis": {
       "rpc": [
         {
+          "address": "https://cosmos-rpc.quickapi.com:443",
+          "provider": "Chainlayer"
+        },
+        {
           "address": "https://rpc-cosmoshub.whispernode.com",
           "provider": " WhisperNode🤐"
         },
@@ -2428,6 +2549,10 @@ module.exports = [
         }
       ],
       "rest": [
+        {
+          "address": "https://cosmos-lcd.quickapi.com:443",
+          "provider": "Chainlayer"
+        },
         {
           "address": "https://lcd-cosmoshub.whispernode.com",
           "provider": " WhisperNode🤐"
@@ -2483,6 +2608,11 @@ module.exports = [
         "kind": "bigdipper",
         "url": "https://cosmos.bigdipper.live/",
         "tx_page": "https://cosmos.bigdipper.live/transactions/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com",
+        "tx_page": "https://atomscan.com/transactions/${txHash}"
       }
     ]
   },
@@ -2513,9 +2643,10 @@ module.exports = [
     },
     "codebase": {
       "git_repo": "https://github.com/crescent-network/crescent",
-      "recommended_version": "v2.1.0",
+      "recommended_version": "v2.1.1",
       "compatible_versions": [
-        "v2.1.0"
+        "v2.1.0",
+        "v2.1.1"
       ],
       "binaries": {
         "linux/amd64": "https://github.com/crescent-network/crescent/releases/download/v2.1.0/crescentd-v2.1.0-linux-amd64",
@@ -2645,6 +2776,11 @@ module.exports = [
         "kind": "explorers.guru",
         "url": "https://crescent.explorers.guru",
         "tx_page": "https://crescent.explorers.guru/transaction/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/crescent",
+        "tx_page": "https://atomscan.com/crescent/transactions/${txHash}"
       }
     ]
   },
@@ -2698,6 +2834,11 @@ module.exports = [
           "id": "04f43116b4c6c70054d9c2b7485383df5b1ed1da",
           "address": "cronos-seed-2.crypto.org:26656",
           "provider": "crypto-org"
+        },
+        {
+          "id": "337377dcda43d79c537d2c4d93ad3b698ce9452e",
+          "address": "bd-cronos-mainnet-seed-node-01.bdnodes.net:26656",
+          "provider": "Blockdaemon.com"
         }
       ],
       "persistent_peers": [
@@ -2715,6 +2856,11 @@ module.exports = [
           "id": "04f43116b4c6c70054d9c2b7485383df5b1ed1da",
           "address": "cronos-seed-2.crypto.org:26656",
           "provider": "crypto-org"
+        },
+        {
+          "id": "337377dcda43d79c537d2c4d93ad3b698ce9452e",
+          "address": "bd-cronos-mainnet-seed-node-01.bdnodes.net:26656",
+          "provider": "Blockdaemon.com"
         }
       ]
     },
@@ -2752,8 +2898,8 @@ module.exports = [
       },
       {
         "kind": "crypto-org",
-        "url": "https://cronos.crypto.org/explorer",
-        "tx_page": "https://cronos.crypto.org/explorer/tx/${txHash}"
+        "url": "https://cronos.org/explorer",
+        "tx_page": "https://cronos.org/explorer/tx/${txHash}"
       }
     ]
   },
@@ -3040,6 +3186,11 @@ module.exports = [
         "url": "https://www.mintscan.io/cudos",
         "tx_page": "https://www.mintscan.io/cudos/txs/${txHash}",
         "account_page": "https://www.mintscan.io/cudos/account/${accountAddress}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/cudos",
+        "tx_page": "https://atomscan.com/cudos/transactions/${txHash}"
       }
     ]
   },
@@ -3179,6 +3330,11 @@ module.exports = [
         "kind": "ping.pub",
         "url": "https://ping.pub/decentr/",
         "tx_page": "https://ping.pub/decentr/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/decentr",
+        "tx_page": "https://atomscan.com/decentr/transactions/${txHash}"
       }
     ]
   },
@@ -3284,6 +3440,11 @@ module.exports = [
         "kind": "ping-pub",
         "url": "https://ping.pub/desmos",
         "tx_page": "https://ping.pub/desmos/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/desmos",
+        "tx_page": "https://atomscan.com/desmos/transactions/${txHash}"
       }
     ]
   },
@@ -3400,6 +3561,11 @@ module.exports = [
         "kind": "ping.pub",
         "url": "https://ping.pub/dig",
         "tx_page": "https://ping.pub/dig/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/dig",
+        "tx_page": "https://atomscan.com/dig/transactions/${txHash}"
       }
     ]
   },
@@ -3425,16 +3591,17 @@ module.exports = [
     },
     "codebase": {
       "git_repo": "https://github.com/echelonfoundation/echelon",
-      "recommended_version": "v1.0.3",
+      "recommended_version": "v1.1.4",
       "compatible_versions": [
+        "v1.1.4",
         "v1.0.3"
       ],
       "binaries": {
-        "linux/amd64": "https://github.com/echelonfoundation/echelon/releases/download/v1.0.3/echelon_1.0.3_Linux_x86_64.tar.gz",
-        "linux/arm64": "https://github.com/echelonfoundation/echelon/releases/download/v1.0.3/echelon_1.0.3_Linux_arm64.tar.gz",
-        "darwin/amd64": "",
-        "darwin/arm64": "",
-        "windows/amd64": "https://github.com/echelonfoundation/echelon/releases/download/v1.0.3/echelon_1.0.3_Windows_x86_64.zip"
+        "linux/amd64": "https://github.com/echelonfoundation/echelon/releases/download/v1.1.4/echelon_1.1.4_Linux_x86_64.tar.gz",
+        "linux/arm64": "https://github.com/echelonfoundation/echelon/releases/download/v1.1.4/echelon_1.1.4_Linux_arm64.tar.gz",
+        "darwin/amd64": "https://github.com/echelonfoundation/echelon/releases/download/v1.1.4/echelon_1.1.4_Darwin_x86_64.tar.gz",
+        "darwin/arm64": "https://github.com/echelonfoundation/echelon/releases/download/v1.1.4/echelon_1.1.4_Darwin_arm64.tar.gz",
+        "windows/amd64": "https://github.com/echelonfoundation/echelon/releases/download/v1.1.4/echelon_1.1.4_Windows_x86_64.zip"
       }
     },
     "peers": {
@@ -3504,6 +3671,10 @@ module.exports = [
           "provider": " WhisperNode 🤐"
         },
         {
+          "address": "https://echelon-rpc.polkachu.com",
+          "provider": "Polkachu"
+        },
+        {
           "address": "https://rpc.echelon.nodestake.top",
           "provider": "NodeStake"
         }
@@ -3516,6 +3687,10 @@ module.exports = [
         {
           "address": "https://lcd-echelon.whispernode.com",
           "provider": " WhisperNode 🤐"
+        },
+        {
+          "address": "https://echelon-api.polkachu.com",
+          "provider": "Polkachu"
         },
         {
           "address": "https://api.echelon.nodestake.top",
@@ -3553,6 +3728,11 @@ module.exports = [
     },
     "explorers": [
       {
+        "kind": "echelon",
+        "url": "https://app.ech.network/explorer",
+        "tx_page": "https://app.ech.network/explorer/tx/${txHash}"
+      },
+      {
         "kind": "blockscout",
         "url": "https://scout.ech.network",
         "tx_page": "https://scout.ech.network/tx/${txHash}"
@@ -3561,6 +3741,16 @@ module.exports = [
         "kind": "ping-pub",
         "url": "https://ping.pub/echelon",
         "tx_page": "https://ping.pub/echelon/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/echelon",
+        "tx_page": "https://atomscan.com/echelon/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/echelon",
+        "tx_page": "https://atomscan.com/echelon/transactions/${txHash}"
       }
     ]
   },
@@ -3738,6 +3928,11 @@ module.exports = [
         "kind": "ping-pub",
         "url": "https://ping.pub/e-money",
         "tx_page": "https://ping.pub/e-money/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/emoney",
+        "tx_page": "https://atomscan.com/emoney/transactions/${txHash}"
       }
     ]
   },
@@ -3810,6 +4005,7 @@ module.exports = [
     "genesis": {
       "genesis_url": "https://archive.evmos.org/mainnet/genesis.json"
     },
+    "daemon_name": "evmosd",
     "slip44": 60,
     "fees": {
       "fee_tokens": [
@@ -3820,17 +4016,16 @@ module.exports = [
     },
     "codebase": {
       "git_repo": "https://github.com/evmos/evmos",
-      "recommended_version": "v6.0.1",
+      "recommended_version": "v7.0.0",
       "compatible_versions": [
-        "v6.0.1",
-        "v6.0.0"
+        "v7.0.0"
       ],
       "binaries": {
-        "linux/amd64": "https://github.com/evmos/evmos/releases/download/v6.0.1/evmos_6.0.1_Linux_x86_64.tar.gz",
-        "linux/arm64": "https://github.com/evmos/evmos/releases/download/v6.0.1/evmos_6.0.1_Linux_arm64.tar.gz",
-        "darwin/amd64": "https://github.com/evmos/evmos/releases/download/v6.0.1/evmos_6.0.1_Darwin_x86_64.tar.gz",
-        "darwin/arm64": "https://github.com/evmos/evmos/releases/download/v6.0.1/evmos_6.0.1_Darwin_arm64.tar.gz",
-        "windows/amd64": "https://github.com/evmos/evmos/releases/download/v6.0.1/evmos_6.0.1_Windows_x86_64.zip"
+        "linux/amd64": "https://github.com/evmos/evmos/releases/download/v7.0.0/evmos_7.0.0_Linux_x86_64.tar.gz",
+        "linux/arm64": "https://github.com/evmos/evmos/releases/download/v7.0.0/evmos_7.0.0_Linux_arm64.tar.gz",
+        "darwin/amd64": "https://github.com/evmos/evmos/releases/download/v7.0.0/evmos_7.0.0_Darwin_x86_64.tar.gz",
+        "darwin/arm64": "https://github.com/evmos/evmos/releases/download/v7.0.0/evmos_7.0.0_Darwin_arm64.tar.gz",
+        "windows/amd64": "https://github.com/evmos/evmos/releases/download/v7.0.0/evmos_7.0.0_Windows_x86_64.zip"
       }
     },
     "peers": {
@@ -4028,6 +4223,11 @@ module.exports = [
         "kind": "explorers.guru",
         "url": "https://evmos.explorers.guru",
         "tx_page": "https://evmos.explorers.guru/transaction/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/evmos",
+        "tx_page": "https://atomscan.com/evmos/transactions/${txHash}"
       }
     ]
   },
@@ -4142,6 +4342,11 @@ module.exports = [
         "kind": "ping.pub",
         "url": "https://ping.pub/fetchhub",
         "tx_page": "https://ping.pub/fetchhub/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/fetchhub",
+        "tx_page": "https://atomscan.com/fetchhub/transactions/${txHash}"
       }
     ]
   },
@@ -4519,6 +4724,10 @@ module.exports = [
         {
           "address": "https://rpc-gravitybridge-ia.notional.ventures/",
           "provider": "Notional"
+        },
+        {
+          "address": "https://rpc.gravity-bridge.nodestake.top",
+          "provider": "NodeStake"
         }
       ],
       "rest": [
@@ -4533,6 +4742,10 @@ module.exports = [
         {
           "address": "https://api-gravitybridge-ia.notional.ventures/",
           "provider": "Notional"
+        },
+        {
+          "address": "https://api.gravity-bridge.nodestake.top",
+          "provider": "NodeStake"
         }
       ],
       "grpc": [
@@ -4547,6 +4760,10 @@ module.exports = [
         {
           "address": "grpc-gravitybridge-ia.notional.ventures:443",
           "provider": "Notional"
+        },
+        {
+          "address": "https://grpc.gravity-bridge.nodestake.top",
+          "provider": "NodeStake"
         }
       ]
     },
@@ -4565,6 +4782,11 @@ module.exports = [
         "kind": "explorers.guru",
         "url": "https://gravity.explorers.guru",
         "tx_page": "https://gravity.explorers.guru/transaction/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/gravity-bridge",
+        "tx_page": "https://atomscan.com/gravity-bridge/transactions/${txHash}"
       }
     ]
   },
@@ -4662,6 +4884,11 @@ module.exports = [
         "kind": "chadscan",
         "url": "https://chadscan.com",
         "tx_page": "https://chadscan.com/transactions/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/idep",
+        "tx_page": "https://atomscan.com/idep/transactions/${txHash}"
       }
     ]
   },
@@ -4800,6 +5027,11 @@ module.exports = [
         "kind": "ping.pub",
         "url": "https://ping.pub/ixo",
         "tx_page": "https://ping.pub/ixo/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/ixo",
+        "tx_page": "https://atomscan.com/ixo/transactions/${txHash}"
       }
     ]
   },
@@ -4867,8 +5099,8 @@ module.exports = [
     "apis": {
       "rpc": [
         {
-          "address": "https://injective-rpc.api.chainlayer.network/",
-          "provider": "chainlayer"
+          "address": "https://injective-rpc.quickapi.com:443",
+          "provider": "Chainlayer"
         },
         {
           "address": "https://injective-rpc.polkachu.com",
@@ -4881,8 +5113,8 @@ module.exports = [
           "provider": "injectiveprotocol"
         },
         {
-          "address": "https://injective-lcd.api.chainlayer.network/",
-          "provider": "chainlayer"
+          "address": "https://injective-lcd.quickapi.com:443",
+          "provider": "Chainlayer"
         }
       ],
       "grpc": []
@@ -4897,6 +5129,11 @@ module.exports = [
         "kind": "ping-pub",
         "url": "https://ping.pub/injective",
         "tx_page": "https://ping.pub/injective/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/injective",
+        "tx_page": "https://atomscan.com/injective/transactions/${txHash}"
       }
     ]
   },
@@ -5026,6 +5263,11 @@ module.exports = [
         "kind": "ping-pub",
         "url": "https://ping.pub/iris-network",
         "tx_page": "https://ping.pub/iris-network/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/iris-network",
+        "tx_page": "https://atomscan.com/iris-network/transactions/${txHash}"
       }
     ]
   },
@@ -5043,9 +5285,9 @@ module.exports = [
     },
     "codebase": {
       "git_repo": "https://github.com/CosmosContracts/juno",
-      "recommended_version": "v6.0.0",
+      "recommended_version": "v9.0.0",
       "compatible_versions": [
-        "v6.0.0"
+        "v9.0.0"
       ]
     },
     "daemon_name": "junod",
@@ -5064,7 +5306,7 @@ module.exports = [
           "address": "juno-seed.blockpane.com:26656"
         },
         {
-          "id": "eba3ab6430f24566bb721d6c81b5bc732a2a2462",
+          "id": "22ee6e65e5e79cd0b970dd11e52761de8d1d6dfd",
           "address": "seeds.pupmos.network:2001",
           "provider": "PUPMØS"
         }
@@ -5195,6 +5437,11 @@ module.exports = [
         "kind": "mintscan",
         "url": "https://www.mintscan.io/juno",
         "tx_page": "https://www.mintscan.io/juno/txs/{txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/juno",
+        "tx_page": "https://atomscan.com/juno/transactions/${txHash}"
       }
     ]
   },
@@ -5333,6 +5580,11 @@ module.exports = [
         "kind": "ping-pub",
         "url": "https://ping.pub/kava",
         "tx_page": "https://ping.pub/kava/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/kava",
+        "tx_page": "https://atomscan.com/kava/transactions/${txHash}"
       }
     ]
   },
@@ -5459,6 +5711,11 @@ module.exports = [
         "kind": "ping-pub",
         "url": "https://ping.pub/kichain",
         "tx_page": "https://ping.pub/kichain/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/ki-chain",
+        "tx_page": "https://atomscan.com/ki-chain/transactions/${txHash}"
       }
     ]
   },
@@ -5729,6 +5986,11 @@ module.exports = [
         "kind": "ping-pub",
         "url": "https://ping.pub/likecoin",
         "tx_page": "https://ping.pub/likecoin/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/likecoin",
+        "tx_page": "https://atomscan.com/likecoin/transactions/${txHash}"
       }
     ]
   },
@@ -5788,6 +6050,98 @@ module.exports = [
       "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.png",
       "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.svg"
     }
+  },
+  {
+    "$schema": "../chain.schema.json",
+    "chain_name": "lumenx",
+    "status": "live",
+    "network_type": "mainnet",
+    "pretty_name": "Lumen Network",
+    "chain_id": "LumenX",
+    "bech32_prefix": "lumen",
+    "daemon_name": "lumenxd",
+    "node_home": "$HOME/.lumenx",
+    "genesis": {
+      "genesis_url": "https://raw.githubusercontent.com/metaprotocol-ai/lumenx/master/config/genesis.json"
+    },
+    "key_algos": [
+      "secp256k1"
+    ],
+    "slip44": 118,
+    "fees": {
+      "fee_tokens": [
+        {
+          "denom": "ulumen",
+          "fixed_min_gas_price": 0.0025
+        }
+      ]
+    },
+    "codebase": {
+      "git_repo": "https://github.com/metaprotocol-ai/lumenx",
+      "recommended_version": "v0.1.0",
+      "compatible_versions": [
+        "v0.1.0"
+      ]
+    },
+    "peers": {
+      "seeds": [
+        {
+          "id": "bc22063df30a0644df742cdb2764b1004df6e3e3",
+          "address": "node1.lumenex.io:26656"
+        },
+        {
+          "id": "9cd5f77ac27254891f64801470b0c3432188c62c",
+          "address": "node2.lumenex.io:26656"
+        },
+        {
+          "id": "78669849476c8b728abe178475c6f016edf175cf",
+          "address": "node3.lumenex.io:26656"
+        },
+        {
+          "id": "48444a4bacc0cafa049d777152473769ab17c0c3",
+          "address": "node4.lumenex.io:26656"
+        }
+      ],
+      "persistent_peers": [
+        {
+          "id": "bc22063df30a0644df742cdb2764b1004df6e3e3",
+          "address": "node1.lumenex.io:26656"
+        },
+        {
+          "id": "9cd5f77ac27254891f64801470b0c3432188c62c",
+          "address": "node2.lumenex.io:26656"
+        },
+        {
+          "id": "78669849476c8b728abe178475c6f016edf175cf",
+          "address": "node3.lumenex.io:26656"
+        },
+        {
+          "id": "48444a4bacc0cafa049d777152473769ab17c0c3",
+          "address": "node4.lumenex.io:26656"
+        }
+      ]
+    },
+    "apis": {
+      "rpc": [
+        {
+          "address": "https://rpc.helios-1.lumenex.io",
+          "provider": "metaprotocol"
+        }
+      ],
+      "rest": [
+        {
+          "address": "https://api.helios-1.lumenex.io/",
+          "provider": "metaprotocol"
+        }
+      ]
+    },
+    "explorers": [
+      {
+        "kind": "ping-pub",
+        "url": "https://scope.helios-1.lumenex.io/lumenx",
+        "tx_page": "https://scope.helios-1.lumenex.io/lumenx/tx/${txHash}"
+      }
+    ]
   },
   {
     "$schema": "../chain.schema.json",
@@ -5901,6 +6255,11 @@ module.exports = [
         "kind": "ping-pub",
         "url": "https://ping.pub/lum-network",
         "tx_page": "https://ping.pub/lum-network/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/lum-network",
+        "tx_page": "https://atomscan.com/lum-network/transactions/${txHash}"
       }
     ]
   },
@@ -6031,13 +6390,18 @@ module.exports = [
         "kind": "MEME Explorer",
         "url": "https://explorer.meme.sx/meme",
         "tx_page": "https://explorer.meme.sx/meme/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/meme",
+        "tx_page": "https://atomscan.com/meme/transactions/${txHash}"
       }
     ]
   },
   {
     "$schema": "../chain.schema.json",
     "chain_name": "microtick",
-    "status": "live",
+    "status": "killed",
     "network_type": "mainnet",
     "pretty_name": "Microtick",
     "chain_id": "microtick-1",
@@ -6123,11 +6487,11 @@ module.exports = [
     "chain_name": "nomic",
     "status": "live",
     "network_type": "mainnet",
-    "pretty_name": "Nomic Stakenet 2",
-    "chain_id": "nomic-stakenet-2",
+    "pretty_name": "Nomic Stakenet 3",
+    "chain_id": "nomic-stakenet-3",
     "bech32_prefix": "nomic",
     "daemon_name": "nomic",
-    "node_home": "$HOME/.nomic-stakenet-2",
+    "node_home": "$HOME/.nomic-stakenet-3",
     "genesis": {
       "genesis_url": "https://raw.githubusercontent.com/nomic-io/nomic/develop/genesis.json"
     },
@@ -6258,7 +6622,7 @@ module.exports = [
     "daemon_name": "odind",
     "node_home": "$HOME/.odin",
     "genesis": {
-      "genesis_url": "https://github.com/ODIN-PROTOCOL/networks/blob/master/mainnets/odin-mainnet-freya/genesis.json"
+      "genesis_url": "https://raw.githubusercontent.com/ODIN-PROTOCOL/networks/master/mainnets/odin-mainnet-freya/genesis.json"
     },
     "key_algos": [
       "secp256k1"
@@ -6273,13 +6637,10 @@ module.exports = [
       ]
     },
     "codebase": {
-      "git_repo": "https://github.com/ODIN-PROTOCOL/networks/blob/master/mainnets/odin-mainnet-freya",
-      "recommended_version": "v0.3.0",
-      "binaries": {
-        "linux/amd64": "https://github.com/GeoDB-Limited/odin-core/releases/download/v0.3.0/odinprotocol_v0.3.0_amd64.deb"
-      },
+      "git_repo": "https://github.com/ODIN-PROTOCOL/odin-core",
+      "recommended_version": "v0.5.5",
       "compatible_versions": [
-        "v0.3.0"
+        "v0.5.5"
       ]
     },
     "peers": {
@@ -6325,6 +6686,11 @@ module.exports = [
         "kind": "odin web",
         "url": "https://mainnet.odinprotocol.io/",
         "tx_page": "https://mainnet.odinprotocol.io/transactions/${txHash}"
+      },
+      {
+        "kind": "ping.pub",
+        "url": "https://ping.pub/odin",
+        "tx_page": "https://ping.pub/odin/tx/${txHash}"
       }
     ]
   },
@@ -6384,12 +6750,26 @@ module.exports = [
         {
           "address": "https://omniflixhub-rpc.skynetvalidators.com",
           "provider": "skynet-validators"
+        },
+        {
+          "address": "https://rpc.omniflix.nodestake.top",
+          "provider": "NodeStake"
         }
       ],
       "rest": [
         {
           "address": "https://omniflixhub-api.skynetvalidators.com",
           "provider": "skynet-validators"
+        },
+        {
+          "address": "https://api.omniflix.nodestake.top",
+          "provider": "NodeStake"
+        }
+      ],
+      "grpc": [
+        {
+          "address": "https://grpc.omniflix.nodestake.top",
+          "provider": "NodeStake"
         }
       ]
     },
@@ -6399,6 +6779,11 @@ module.exports = [
         "url": "https://www.mintscan.io/omniflix",
         "tx_page": "https://www.mintscan.io/omniflix/txs/${txHash}",
         "account_page": "https://www.mintscan.io/omniflix/account/${accountAddress}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/omniflixhub",
+        "tx_page": "https://atomscan.com/omniflixhub/transactions/${txHash}"
       }
     ]
   },
@@ -6577,16 +6962,22 @@ module.exports = [
         }
       ]
     },
+    "staking": {
+      "staking_tokens": [
+        {
+          "denom": "uosmo"
+        }
+      ]
+    },
     "codebase": {
       "git_repo": "https://github.com/osmosis-labs/osmosis",
-      "recommended_version": "v10.0.1",
+      "recommended_version": "v11.0.0",
       "compatible_versions": [
-        "v10.0.0",
-        "v10.0.1"
+        "v11.0.0"
       ],
       "binaries": {
-        "linux/amd64": "https://github.com/osmosis-labs/osmosis/releases/download/v10.0.0/osmosis-10.0.0-linux-amd64",
-        "linux/arm64": "https://github.com/osmosis-labs/osmosis/releases/download/v10.0.0/osmosis-10.0.0-linux-arm64"
+        "linux/amd64": "https://github.com/osmosis-labs/osmosis/releases/download/v11.0.0/osmosisd-11.0.0-linux-amd64",
+        "linux/arm64": "https://github.com/osmosis-labs/osmosis/releases/download/v11.0.0/osmosisd-11.0.0-linux-arm64"
       },
       "cosmos_sdk_version": "0.45",
       "tendermint_version": "0.34",
@@ -6762,6 +7153,10 @@ module.exports = [
     "apis": {
       "rpc": [
         {
+          "address": "https://osmosis-rpc.quickapi.com:443",
+          "provider": "Chainlayer"
+        },
+        {
           "address": "https://rpc-osmosis.whispernode.com",
           "provider": "WhisperNode 🤐"
         },
@@ -6795,6 +7190,10 @@ module.exports = [
         }
       ],
       "rest": [
+        {
+          "address": "https://osmosis-lcd.quickapi.com:443",
+          "provider": "Chainlayer"
+        },
         {
           "address": "https://lcd-osmosis.whispernode.com",
           "provider": "WhisperNode 🤐"
@@ -6852,11 +7251,19 @@ module.exports = [
         "url": "https://osmosis.explorers.guru",
         "tx_page": "https://osmosis.explorers.guru/transaction/${txHash}",
         "account_page": "https://osmosis.explorers.guru/transaction/${accountAddress}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/osmosis",
+        "tx_page": "https://atomscan.com/osmosis/transactions/${txHash}"
       }
     ],
     "logo_URIs": {
       "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png"
-    }
+    },
+    "keywords": [
+      "dex"
+    ]
   },
   {
     "$schema": "../chain.schema.json",
@@ -7085,6 +7492,11 @@ module.exports = [
         "kind": "ping-pub",
         "url": "https://ping.pub/persistence",
         "tx_page": "https://ping.pub/persistence/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/persistence",
+        "tx_page": "https://atomscan.com/persistence/transactions/${txHash}"
       }
     ]
   },
@@ -7194,6 +7606,11 @@ module.exports = [
         "kind": "mintscan",
         "url": "https://www.mintscan.io/provenance",
         "tx_page": "https://www.mintscan.io/provenance/txs/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/provenance",
+        "tx_page": "https://atomscan.com/provenance/transactions/${txHash}"
       }
     ]
   },
@@ -7210,12 +7627,32 @@ module.exports = [
     "genesis": {
       "genesis_url": "https://raw.githubusercontent.com/regen-network/mainnet/main/regen-1/genesis.json"
     },
+    "key_algos": [
+      "secp256k1"
+    ],
+    "slip44": 118,
+    "staking": {
+      "staking_tokens": [
+        {
+          "denom": "uregen"
+        }
+      ]
+    },
     "codebase": {
       "git_repo": "https://github.com/regen-network/regen-ledger",
-      "recommended_version": "v3.0.0",
+      "recommended_version": "v4.0.0",
       "compatible_versions": [
-        "v3.0.0"
-      ]
+        "v4.0.0"
+      ],
+      "binaries": {
+        "linux/amd64": "https://github.com/regen-network/regen-ledger/releases/download/v4.0.0/regen-ledger_4.0.0_linux_amd64.zip",
+        "linux/arm64": "https://github.com/regen-network/regen-ledger/releases/download/v4.0.0/regen-ledger_4.0.0_linux_arm64.zip",
+        "darwin/amd64": "https://github.com/regen-network/regen-ledger/releases/download/v4.0.0/regen-ledger_4.0.0_darwin_amd64.zip",
+        "darwin/arm64": "https://github.com/regen-network/regen-ledger/releases/download/v4.0.0/regen-ledger_4.0.0_darwin_arm64.zip",
+        "windows/amd64": "https://github.com/regen-network/regen-ledger/releases/download/v4.0.0/regen-ledger_4.0.0_windows_amd64.zip"
+      },
+      "cosmos_sdk_version": "0.45",
+      "tendermint_version": "0.34"
     },
     "peers": {
       "seeds": [
@@ -7298,11 +7735,29 @@ module.exports = [
     },
     "explorers": [
       {
+        "kind": "mintscan",
+        "url": "https://www.mintscan.io/regen",
+        "tx_page": "https://www.mintscan.io/regen/txs/${txHash}"
+      },
+      {
         "kind": "ping-pub",
         "url": "https://ping.pub/regen",
         "tx_page": "https://ping.pub/regen/tx/${txHash}"
+      },
+      {
+        "kind": "bigdipper",
+        "url": "https://regen.bigdipper.live/",
+        "tx_page": "https://regen.bigdipper.live/transactions/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/regen-network",
+        "tx_page": "https://atomscan.com/regen-network/transactions/${txHash}"
       }
-    ]
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png"
+    }
   },
   {
     "$schema": "../chain.schema.json",
@@ -7376,6 +7831,11 @@ module.exports = [
         "kind": "ping-pub",
         "url": "https://ping.pub/rizon",
         "tx_page": "https://ping.pub/rizon/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/rizon",
+        "tx_page": "https://atomscan.com/rizon/transactions/${txHash}"
       }
     ]
   },
@@ -7513,6 +7973,11 @@ module.exports = [
         "kind": "mintscan",
         "url": "https://www.mintscan.io/secret",
         "tx_page": "https://www.mintscan.io/secret/txs/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/secret-network",
+        "tx_page": "https://atomscan.com/secret-network/transactions/${txHash}"
       }
     ]
   },
@@ -7615,6 +8080,10 @@ module.exports = [
         {
           "address": "https://rpc-sentinel-ia.notional.ventures/",
           "provider": "Notional"
+        },
+        {
+          "address": "https://rpc-sentinel.whispernode.com",
+          "provider": "WhisperNode🤐"
         }
       ],
       "rest": [
@@ -7625,6 +8094,10 @@ module.exports = [
         {
           "address": "https://api-sentinel-ia.notional.ventures/",
           "provider": "Notional"
+        },
+        {
+          "address": "https://lcd-sentinel.whispernode.com",
+          "provider": "WhisperNode🤐"
         }
       ],
       "grpc": [
@@ -7734,9 +8207,14 @@ module.exports = [
         "tx_page": "https://explorer.shentu.technology/transactions/${txHash}?net=shentu-2.2"
       },
       {
-        "kind": "ping-pub",
+        "kind": "ping.pub",
         "url": "https://ping.pub/shentu",
         "tx_page": "https://ping.pub/shentu/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/certik",
+        "tx_page": "https://atomscan.com/certik/transactions/${txHash}"
       }
     ]
   },
@@ -7814,6 +8292,10 @@ module.exports = [
         {
           "address": "https://rpc-sifchain-ia.notional.ventures/",
           "provider": "Notional"
+        },
+        {
+          "address": "https://rpc-sifchain.ecostake.com",
+          "provider": "ecostake"
         }
       ],
       "grpc": [
@@ -7832,6 +8314,10 @@ module.exports = [
         {
           "address": "https://api-sifchain-ia.notional.ventures/",
           "provider": "Notional"
+        },
+        {
+          "address": "https://rest-sifchain.ecostake.com",
+          "provider": "ecostake"
         }
       ]
     },
@@ -7850,6 +8336,11 @@ module.exports = [
         "kind": "mintscan",
         "url": "https://www.mintscan.io/sifchain",
         "tx_page": "https://www.mintscan.io/sifchain/txs/{txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/sifchain",
+        "tx_page": "https://atomscan.com/sifchain/transactions/${txHash}"
       }
     ]
   },
@@ -8004,9 +8495,9 @@ module.exports = [
     },
     "codebase": {
       "git_repo": "https://github.com/public-awesome/stargaze",
-      "recommended_version": "v2.0.1",
+      "recommended_version": "v6.0.1",
       "compatible_versions": [
-        "v2.0.1"
+        "v6.0.1"
       ]
     },
     "peers": {
@@ -8202,6 +8693,11 @@ module.exports = [
         "kind": "ping-pub",
         "url": "https://ping.pub/stargaze",
         "tx_page": "https://ping.pub/stargaze/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/stargaze",
+        "tx_page": "https://atomscan.com/stargaze/transactions/${txHash}"
       }
     ]
   },
@@ -8303,6 +8799,11 @@ module.exports = [
         "kind": "ping-pub",
         "url": "https://ping.pub/starname",
         "tx_page": "https://ping.pub/starname/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/starname",
+        "tx_page": "https://atomscan.com/starname/transactions/${txHash}"
       }
     ]
   },
@@ -8395,6 +8896,11 @@ module.exports = [
         "kind": "ping-pub",
         "url": "https://ping.pub/terra-luna",
         "tx_page": "https://ping.pub/terra-luna/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/terra",
+        "tx_page": "https://atomscan.com/terra/transactions/${txHash}"
       }
     ]
   },
@@ -8629,37 +9135,29 @@ module.exports = [
     },
     "codebase": {
       "git_repo": "https://github.com/cosmos/gaia",
-      "recommended_version": "v6.0.0",
+      "recommended_version": "v7.0.2",
       "compatible_versions": [
-        "v6.0.0"
+        "v7.0.0",
+        "v7.0.1",
+        "v7.0.2"
       ],
       "binaries": {
-        "linux/amd64": "https://github.com/cosmos/gaia/releases/download/v6.0.0/gaiad-v6.0.0-linux-amd64",
-        "linux/arm64": "https://github.com/cosmos/gaia/releases/download/v6.0.0/gaiad-v6.0.0-linux-arm64",
-        "darwin/amd64": "https://github.com/cosmos/gaia/releases/download/v6.0.0/gaiad-v6.0.0-darwin-amd64",
-        "windows/amd64": "https://github.com/cosmos/gaia/releases/download/v6.0.0/gaiad-v6.0.0-windows-amd64.exe"
+        "linux/amd64": "https://github.com/cosmos/gaia/releases/download/v7.0.2/gaiad-v7.0.2-linux-amd64",
+        "linux/arm64": "https://github.com/cosmos/gaia/releases/download/v7.0.2/gaiad-v7.0.2-linux-arm64",
+        "darwin/amd64": "https://github.com/cosmos/gaia/releases/download/v7.0.2/gaiad-v7.0.2-darwin-amd64",
+        "windows/amd64": "https://github.com/cosmos/gaia/releases/download/v7.0.2/gaiad-v7.0.2-windows-amd64.exe"
       }
     },
     "peers": {
       "seeds": [
         {
-          "id": "5c9850dc5ec603b0c97ffd8d67bde3221b877acf",
-          "address": "p2p.sentry-01.theta-testnet.polypore.xyz:26656",
+          "id": "639d50339d7045436c756a042906b9a69970913f",
+          "address": "seed-01.theta-testnet.polypore.xyz:26656",
           "provider": "Hypha"
         },
         {
-          "id": "5c9850dc5ec603b0c97ffd8d67bde3221b877acf",
-          "address": "p2p.sentry-02.theta-testnet.polypore.xyz:26656",
-          "provider": "Hypha"
-        },
-        {
-          "id": "5c9850dc5ec603b0c97ffd8d67bde3221b877acf",
-          "address": "p2p.state-sync-01.theta-testnet.polypore.xyz:26656",
-          "provider": "Hypha"
-        },
-        {
-          "id": "5c9850dc5ec603b0c97ffd8d67bde3221b877acf",
-          "address": "p2p.state-sync-02.theta-testnet.polypore.xyz:26656",
+          "id": "3e506472683ceb7ed75c1578d092c79785c27857",
+          "address": "seed-02.theta-testnet.polypore.xyz:26656",
           "provider": "Hypha"
         }
       ],
@@ -8670,17 +9168,17 @@ module.exports = [
           "provider": "Hypha"
         },
         {
-          "id": "5c9850dc5ec603b0c97ffd8d67bde3221b877acf",
+          "id": "208683ee734ba3cec1cfc0c8bcbc326969641952",
           "address": "p2p.sentry-02.theta-testnet.polypore.xyz:26656",
           "provider": "Hypha"
         },
         {
-          "id": "5c9850dc5ec603b0c97ffd8d67bde3221b877acf",
+          "id": "58e9d022962a3875fa22d7146949d0dc34e51ba6",
           "address": "p2p.state-sync-01.theta-testnet.polypore.xyz:26656",
           "provider": "Hypha"
         },
         {
-          "id": "5c9850dc5ec603b0c97ffd8d67bde3221b877acf",
+          "id": "6954e0479cd71fa01aeed15e1a3b87c06433d827",
           "address": "p2p.state-sync-02.theta-testnet.polypore.xyz:26656",
           "provider": "Hypha"
         }
@@ -8864,12 +9362,26 @@ module.exports = [
         {
           "address": "https://rpc.mainnet-1.tgrade.confio.run",
           "provider": "Confio"
+        },
+        {
+          "address": "https://rpc.tgrade.posthuman.digital",
+          "provider": "POSTHUMAN ꝏ DVS"
         }
       ],
       "rest": [
         {
           "address": "https://api.mainnet-1.tgrade.confio.run",
           "provider": "Confio"
+        },
+        {
+          "address": "https://lcd.tgrade.posthuman.digital",
+          "provider": "POSTHUMAN ꝏ DVS"
+        }
+      ],
+      "grpc": [
+        {
+          "address": "grpc.tgrade.posthuman.digital",
+          "provider": "POSTHUMAN ꝏ DVS"
         }
       ]
     },
@@ -9292,6 +9804,11 @@ module.exports = [
         "kind": "explorers.guru",
         "url": "https://umee.explorers.guru",
         "tx_page": "https://umee.explorers.guru/transaction/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/umee",
+        "tx_page": "https://atomscan.com/umee/transactions/${txHash}"
       }
     ]
   },
@@ -9407,6 +9924,11 @@ module.exports = [
         "kind": "Ping",
         "url": "https://ping.pub/vidulum",
         "tx_page": "https://ping.pub/vidulum/tx/${txHash}"
+      },
+      {
+        "kind": "atomscan",
+        "url": "https://atomscan.com/vidulum",
+        "tx_page": "https://atomscan.com/vidulum/transactions/${txHash}"
       }
     ]
   }

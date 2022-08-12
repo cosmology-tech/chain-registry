@@ -1,6 +1,160 @@
 module.exports = [
   {
     "$schema": "../assetlist.schema.json",
+    "chain_name": "avalanche",
+    "assets": [
+      {
+        "description": "AVAX is the native token of Avalanche. It is a hard-capped, scarce asset that is used to pay for fees, secure the platform through staking, and provide a basic unit of account between the multiple subnets created on Avalanche.",
+        "denom_units": [
+          {
+            "denom": "wei",
+            "exponent": 0
+          },
+          {
+            "denom": "avax",
+            "exponent": 18
+          }
+        ],
+        "base": "wei",
+        "name": "Avalanche",
+        "display": "avax",
+        "symbol": "AVAX",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.svg"
+        },
+        "coingecko_id": "avalanche-2"
+      },
+      {
+        "description": "The wrapped ERC-20 representation of AVAX, the native token of Avalanche.",
+        "type_asset": "erc20",
+        "address": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+        "denom_units": [
+          {
+            "denom": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+            "exponent": 0,
+            "aliases": [
+              "wavax-wei"
+            ]
+          },
+          {
+            "denom": "wavax",
+            "exponent": 18
+          }
+        ],
+        "base": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+        "name": "Wrapped AVAX",
+        "display": "wavax",
+        "symbol": "WAVAX",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/wavax.svg"
+        },
+        "coingecko_id": "wrapped-avax"
+      },
+      {
+        "description": "Multi-Collateral Dai, brings a lot of new and exciting features, such as support for new CDP collateral types and Dai Savings Rate.",
+        "type_asset": "erc20",
+        "address": "0xc5fa5669e326da8b2c35540257cd48811f40a36b",
+        "denom_units": [
+          {
+            "denom": "0xc5fa5669e326da8b2c35540257cd48811f40a36b",
+            "exponent": 0,
+            "aliases": [
+              "dai-wei"
+            ]
+          },
+          {
+            "denom": "axldai",
+            "exponent": 18
+          }
+        ],
+        "base": "0xc5fa5669e326da8b2c35540257cd48811f40a36b",
+        "name": "Axelar Wrapped DAI",
+        "display": "axldai",
+        "symbol": "axlDAI",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg"
+        }
+      },
+      {
+        "description": "Frax is a fractional-algorithmic stablecoin protocol. It aims to provide a highly scalable, decentralized, algorithmic money in place of fixed-supply assets like BTC. Additionally, FXS is the value accrual and governance token of the entire Frax ecosystem.",
+        "type_asset": "erc20",
+        "address": "0x4914886dbb8aad7a7456d471eaab10b06d42348d",
+        "denom_units": [
+          {
+            "denom": "0x4914886dbb8aad7a7456d471eaab10b06d42348d",
+            "exponent": 0,
+            "aliases": [
+              "frax-wei"
+            ]
+          },
+          {
+            "denom": "axlfrax",
+            "exponent": 18
+          }
+        ],
+        "base": "0x4914886dbb8aad7a7456d471eaab10b06d42348d",
+        "name": "Axelar Wrapped Frax",
+        "display": "axlfrax",
+        "symbol": "axlFRAX",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg"
+        }
+      },
+      {
+        "description": "USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.",
+        "type_asset": "erc20",
+        "address": "0xfab550568C688d5d8a52c7d794cb93edc26ec0ec",
+        "denom_units": [
+          {
+            "denom": "0xfab550568C688d5d8a52c7d794cb93edc26ec0ec",
+            "exponent": 0,
+            "aliases": [
+              "uusdc"
+            ]
+          },
+          {
+            "denom": "axlusdc",
+            "exponent": 6
+          }
+        ],
+        "base": "0xfab550568C688d5d8a52c7d794cb93edc26ec0ec",
+        "name": "Axelar Wrapped USDC",
+        "display": "axlusdc",
+        "symbol": "axlUSDC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg"
+        }
+      },
+      {
+        "description": "Tether gives you the joint benefits of open blockchain technology and traditional currency by converting your cash into a stable digital currency equivalent.",
+        "type_asset": "erc20",
+        "address": "0xf976ba91b6bb3468c91e4f02e68b37bc64a57e66",
+        "denom_units": [
+          {
+            "denom": "0xf976ba91b6bb3468c91e4f02e68b37bc64a57e66",
+            "exponent": 0,
+            "aliases": [
+              "uusdt"
+            ]
+          },
+          {
+            "denom": "axlusdt",
+            "exponent": 6
+          }
+        ],
+        "base": "0xf976ba91b6bb3468c91e4f02e68b37bc64a57e66",
+        "name": "Axelar Wrapped USDT",
+        "display": "axlusdt",
+        "symbol": "axlUSDT",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg"
+        }
+      }
+    ]
+  },
+  {
+    "$schema": "../assetlist.schema.json",
     "chain_name": "ethereum",
     "assets": [
       {
@@ -1404,7 +1558,8 @@ module.exports = [
         "display": "dot",
         "symbol": "DOT",
         "logo_URIs": {
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg"
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.png"
         },
         "coingecko_id": "polkadot"
       },
@@ -1425,7 +1580,8 @@ module.exports = [
         "display": "wglmr",
         "symbol": "WGLMR",
         "logo_URIs": {
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg"
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.png"
         },
         "coingecko_id": "wrapped-moonbeam"
       }
@@ -2059,8 +2215,8 @@ module.exports = [
         "display": "cre",
         "symbol": "CRE",
         "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/crescent-network/asset/main/images/coin/CRE.png",
-          "svg": "https://raw.githubusercontent.com/crescent-network/asset/main/images/coin/CRE.svg"
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg"
         },
         "coingecko_id": "crescent-network"
       },
@@ -2083,8 +2239,8 @@ module.exports = [
         "display": "bcre",
         "symbol": "bCRE",
         "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/crescent-network/asset/main/images/coin/bCRE.png",
-          "svg": "https://raw.githubusercontent.com/crescent-network/asset/main/images/coin/bCRE.svg"
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg"
         },
         "coingecko_id": "crescent-network"
       }
@@ -2946,6 +3102,75 @@ module.exports = [
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
         }
+      },
+      {
+        "description": "DeFi gaming platform built on Juno",
+        "type_asset": "cw20",
+        "address": "juno1j0a9ymgngasfn3l5me8qpd53l5zlm9wurfdk7r65s5mg6tkxal3qpgf5se",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1j0a9ymgngasfn3l5me8qpd53l5zlm9wurfdk7r65s5mg6tkxal3qpgf5se",
+            "exponent": 0
+          },
+          {
+            "denom": "glto",
+            "exponent": 6
+          }
+        ],
+        "base": "cw20:juno1j0a9ymgngasfn3l5me8qpd53l5zlm9wurfdk7r65s5mg6tkxal3qpgf5se",
+        "name": "Gelotto",
+        "display": "glto",
+        "symbol": "GLTO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg"
+        }
+      },
+      {
+        "description": "Gelotto Year 1 Grand Prize Token",
+        "type_asset": "cw20",
+        "address": "juno1gz8cf86zr4vw9cjcyyv432vgdaecvr9n254d3uwwkx9rermekddsxzageh",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1gz8cf86zr4vw9cjcyyv432vgdaecvr9n254d3uwwkx9rermekddsxzageh",
+            "exponent": 0
+          },
+          {
+            "denom": "gkey",
+            "exponent": 6
+          }
+        ],
+        "base": "cw20:juno1gz8cf86zr4vw9cjcyyv432vgdaecvr9n254d3uwwkx9rermekddsxzageh",
+        "name": "GKey",
+        "display": "gkey",
+        "symbol": "GKEY",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/gkey.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/gkey.svg"
+        }
+      },
+      {
+        "description": "The native token cw20 for BlackHole on Juno Chain",
+        "type_asset": "cw20",
+        "address": "juno1rdw3gumdz7zyjn2pev9ugxs765xlv6vtv6g3jt2lqw580zrchvjs66daca",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1rdw3gumdz7zyjn2pev9ugxs765xlv6vtv6g3jt2lqw580zrchvjs66daca",
+            "exponent": 0
+          },
+          {
+            "denom": "blkh",
+            "exponent": 4
+          }
+        ],
+        "base": "cw20:juno1rdw3gumdz7zyjn2pev9ugxs765xlv6vtv6g3jt2lqw580zrchvjs66daca",
+        "name": "Blackhole",
+        "display": "blkh",
+        "symbol": "BLKH",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/blkh.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/blkh.svg"
+        }
       }
     ]
   },
@@ -3156,6 +3381,32 @@ module.exports = [
   },
   {
     "$schema": "../assetlist.schema.json",
+    "chain_name": "lumenx",
+    "assets": [
+      {
+        "description": "The native token of Lumen Network",
+        "denom_units": [
+          {
+            "denom": "ulumen",
+            "exponent": 0
+          },
+          {
+            "denom": "lumen",
+            "exponent": 6
+          }
+        ],
+        "base": "ulumen",
+        "name": "LUMEN",
+        "display": "lumen",
+        "symbol": "LUMEN",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png"
+        }
+      }
+    ]
+  },
+  {
+    "$schema": "../assetlist.schema.json",
     "chain_name": "lumnetwork",
     "assets": [
       {
@@ -3316,6 +3567,27 @@ module.exports = [
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png"
         }
+      },
+      {
+        "description": "GEO token for ODIN Protocol",
+        "denom_units": [
+          {
+            "denom": "mGeo",
+            "exponent": 0
+          },
+          {
+            "denom": "geo",
+            "exponent": 6
+          }
+        ],
+        "base": "mGeo",
+        "name": "GEO",
+        "display": "geo",
+        "symbol": "GEO",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png"
+        }
       }
     ]
   },
@@ -3400,7 +3672,11 @@ module.exports = [
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
         },
-        "coingecko_id": "osmosis"
+        "coingecko_id": "osmosis",
+        "keywords": [
+          "dex",
+          "staking"
+        ]
       },
       {
         "denom_units": [
@@ -3421,7 +3697,10 @@ module.exports = [
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
         },
-        "coingecko_id": "ion"
+        "coingecko_id": "ion",
+        "keywords": [
+          "memecoin"
+        ]
       }
     ]
   },
@@ -3477,6 +3756,37 @@ module.exports = [
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg"
         },
         "coingecko_id": "persistence"
+      },
+      {
+        "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
+        "denom_units": [
+          {
+            "denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+            "exponent": 0,
+            "aliases": [
+              "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+              "0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
+            ]
+          },
+          {
+            "denom": "pstake",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+        "name": "pSTAKE Finance",
+        "display": "pstake",
+        "symbol": "PSTAKE",
+        "ibc": {
+          "source_channel": "channel-24",
+          "dst_channel": "channel-38",
+          "source_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
+        },
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
+        },
+        "coingecko_id": "pstake-finance"
       }
     ]
   },
@@ -8570,7 +8880,8 @@ module.exports = [
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.svg"
-        }
+        },
+        "coingecko_id": "tgrade"
       }
     ]
   },
