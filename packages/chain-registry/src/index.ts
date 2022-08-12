@@ -15,10 +15,4 @@ const chainRegistry: ChainRegistryModule = {
   ibc_assets
 }
 
-export default {
-  assets,
-  chains,
-  ibc,
-  ibc_assets
-};
-export { assets, chains, ibc, ibc_assets };
+export default chainRegistry;
