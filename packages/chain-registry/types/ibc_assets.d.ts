@@ -1,26 +1,16 @@
 declare const _exports: {
     [n: number]: {
-        chain: {
-            "chain-name": string;
-            "client-id": string;
-            "connection-id": string;
-            "channel-id": string;
-            "port-id": string;
-        };
-        counterparty: {
-            "chain-name": string;
-            "client-id": string;
-            "connection-id": string;
-            "channel-id": string;
-            "port-id": string;
-        };
-        assets: ({
+        chain_name: string;
+        assets: (({
             description: string;
-            denom_units: {
+            denom_units: ({
                 denom: string;
                 exponent: number;
                 aliases: string[];
-            }[];
+            } | {
+                denom: string;
+                exponent: number;
+            })[];
             base: string;
             name: string;
             display: string;
@@ -30,7 +20,18 @@ declare const _exports: {
                 svg: string;
             };
             coingecko_id: string;
-        })
+            ibc: {
+                counterparty: {
+                    channel: string;
+                    denom: string;
+                    chain_name: string;
+                };
+                chain: {
+                    channel: string;
+                    chain_name: string;
+                };
+            };
+        }))
     }
 };
 export = _exports;

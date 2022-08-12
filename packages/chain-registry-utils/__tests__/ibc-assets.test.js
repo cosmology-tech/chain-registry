@@ -13,5 +13,6 @@ it('getIbcAssets', () => {
         ibc,
         assets
     );
+
     expect(list).toMatchSnapshot();
 });
