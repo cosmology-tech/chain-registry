@@ -3,7 +3,6 @@
         "target": "esnext",
         "moduleResolution": "node",
         "allowJs": true,
-        "resolveJsonModule": true,
         "esModuleInterop": true,
         "declaration": true,
         "declarationDir": "./types",
