@@ -1,16 +1,13 @@
 declare const _exports: {
     [n: number]: {
         chain_name: string;
-        assets: (({
+        assets: {
             description: string;
-            denom_units: ({
+            denom_units: {
                 denom: string;
                 exponent: number;
-                aliases: string[];
-            } | {
-                denom: string;
-                exponent: number;
-            })[];
+                aliases?: string[];
+            }[];
             base: string;
             name: string;
             display: string;
@@ -28,10 +25,9 @@ declare const _exports: {
                 };
                 chain: {
                     channel: string;
-                    chain_name: string;
                 };
             };
-        }))
-    }
+        }[];
+    };
 };
 export = _exports;

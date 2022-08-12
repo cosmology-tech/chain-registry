@@ -232,7 +232,7 @@ export const getIbcAssets = (
           chain: {
             // dst_denom
             channel: v.chain['channel-id'],
-            chain_name: v.chain['chain-name'],
+            // chain_name: v.chain['chain-name'],
             // port: v.chain['port-id']
           }
         }
@@ -251,7 +251,7 @@ export const getIbcAssets = (
     return {
       chain_name: chain,
       assets: hash[chain].reduce((m, v) => {
-        return [...m, v.assets];
+        return [...m, ...v.assets];
       }, [])
     }
   })
