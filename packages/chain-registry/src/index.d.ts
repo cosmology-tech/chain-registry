@@ -1,3 +1,7 @@
+import assets from './assets.json';
+import chains from './chains.json';
+import ibc from './ibc.json';
+import ibc_assets from './ibc_assets.json';
 declare const _default: {
     assets: ({
         $schema: string;
@@ -5091,3 +5095,4 @@ declare const _default: {
     })[];
 };
 export default _default;
+export { assets, chains, ibc, ibc_assets };

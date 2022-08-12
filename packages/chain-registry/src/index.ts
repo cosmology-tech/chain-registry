@@ -9,3 +9,10 @@ export default {
   ibc,
   ibc_assets
 };
+
+export {
+  assets,
+  chains,
+  ibc,
+  ibc_assets
+};
