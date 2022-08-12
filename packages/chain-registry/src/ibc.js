@@ -1,4 +1,4 @@
-[
+module.exports = [
   {
     "$schema": "../ibc_data.schema.json",
     "chain-1": {
@@ -3660,4 +3660,4 @@
       }
     ]
   }
-]
+];

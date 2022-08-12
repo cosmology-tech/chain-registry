@@ -1,7 +1,7 @@
-import assets from './assets.json';
-import chains from './chains.json';
-import ibc from './ibc.json';
-import ibc_assets from './ibc_assets.json';
+import assets from './assets';
+import chains from './chains';
+import ibc from './ibc';
+import ibc_assets from './ibc_assets';
 
 export default {
   assets,

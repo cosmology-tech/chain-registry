@@ -1,4 +1,4 @@
-[
+module.exports = [
   {
     "$schema": "../chain.schema.json",
     "chain_name": "agoric",
@@ -9410,4 +9410,4 @@
       }
     ]
   }
-]
+];

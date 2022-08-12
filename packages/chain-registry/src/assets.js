@@ -1,4 +1,4 @@
-[
+module.exports = [
   {
     "$schema": "../assetlist.schema.json",
     "chain_name": "ethereum",
@@ -8663,4 +8663,4 @@
       }
     ]
   }
-]
+];

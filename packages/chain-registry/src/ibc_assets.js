@@ -1,4 +1,4 @@
-[
+module.exports = [
   {
     "chain": {
       "chain-name": "akash",
@@ -15719,4 +15719,4 @@
       }
     ]
   }
-]
+];

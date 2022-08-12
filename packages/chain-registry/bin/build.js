@@ -53,17 +53,15 @@ const ibc_assets = assets.reduce((m, {chain_name})=>{
   )];
 }, [])
 
+const write = (file, json) => {
+  fs.writeFileSync(
+    `${__dirname}/../src/${file}.js`,
+    `module.exports = ` + JSON.stringify(json, null, 2) + ';'
+  );
+};
 
-fs.writeFileSync(
-  `${__dirname}/../src/assets.json`,
-  JSON.stringify(assets, null, 2)
-);
-fs.writeFileSync(
-  `${__dirname}/../src/ibc_assets.json`,
-  JSON.stringify(ibc_assets, null, 2)
-);
-fs.writeFileSync(
-  `${__dirname}/../src/chains.json`,
-  JSON.stringify(chains, null, 2)
-);
-fs.writeFileSync(`${__dirname}/../src/ibc.json`, JSON.stringify(ibcs, null, 2));
+
+write(`assets`, assets);
+write(`ibc_assets`, ibc_assets);
+write(`chains`, chains);
+write(`ibc`, ibcs);
