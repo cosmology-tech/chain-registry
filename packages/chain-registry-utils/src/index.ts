@@ -152,7 +152,7 @@ export const getIbcAssets = (
       i['chain-2']['chain-name'] === chainName
   });
 
-  return chainIbcInfo.map(ibcInfo => {
+  const ibcAssetLists = chainIbcInfo.map(ibcInfo => {
 
     const counterpartyIs = ibcInfo['chain-1']['chain-name'] === chainName ? 'chain-2' : 'chain-1';
     const chainIs = ibcInfo['chain-1']['chain-name'] === chainName ? 'chain-1' : 'chain-2';
@@ -212,4 +212,49 @@ export const getIbcAssets = (
       assets: ibcAssets,
     };
   }).filter(Boolean);
+
+
+
+  const hash = ibcAssetLists.reduce((m, v) => {
+    m[v.chain['chain-name']] = m[v.chain['chain-name']] || []
+    const assets = v.assets.map(asset => {
+      return {
+        ...asset,
+        ibc: {
+          counterparty: {
+            // source_channel
+            channel: v.counterparty['channel-id'],
+            // source_denom
+            denom: asset.denom_units[0].aliases[0],
+            chain_name: v.counterparty['chain-name'],
+            // port: v.counterparty['port-id']
+          },
+          chain: {
+            // dst_denom
+            channel: v.chain['channel-id'],
+            chain_name: v.chain['chain-name'],
+            // port: v.chain['port-id']
+          }
+        }
+      }
+    });
+    const obj = {
+      ...v,
+      assets
+    }
+    m[v.chain['chain-name']].push(obj);
+
+    return m;
+  }, {});
+
+  return Object.keys(hash).map(chain => {
+    return {
+      chain_name: chain,
+      assets: hash[chain].reduce((m, v) => {
+        return [...m, v.assets];
+      }, [])
+    }
+  })
+
+
 };
