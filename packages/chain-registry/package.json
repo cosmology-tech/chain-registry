@@ -13,6 +13,7 @@
     "test": "__tests__"
   },
   "files": [
+    "src",
     "main",
     "module"
   ],
