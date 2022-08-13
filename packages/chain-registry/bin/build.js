@@ -2,7 +2,7 @@ const fs = require('fs');
 const deepmerge = require('deepmerge');
 const { resolve, basename, extname } = require('path');
 const glob = require('glob').sync;
-const { getIbcAssets } = require('chain-registry-utils');
+const { getIbcAssets } = require('@chain-registry/utils');
 
 const paths = glob(`${__dirname}/../chain-registry/**/*.json`);
 const assets = [];

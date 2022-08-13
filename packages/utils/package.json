@@ -1,5 +1,5 @@
 {
-  "name": "chain-registry-utils",
+  "name": "@chain-registry/utils",
   "version": "0.1.0",
   "description": "Chain Registry Utils",
   "author": "Dan Lynch <pyramation@gmail.com>",
