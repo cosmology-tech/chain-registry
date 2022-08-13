@@ -64,6 +64,10 @@ will output:
 
 Keplr integration for the chain-registry returning keplr's `ChainInfo` type from `@chain-registry/types` `Chain` type.
 
+#### [@chain-registry/assets](packages/assets/README.md)
+
+Asset lists for the Cosmos ⚛️
+
 #### [@chain-registry/utils](packages/utils/README.md)
 
 Utility functions for the chain-registry 
