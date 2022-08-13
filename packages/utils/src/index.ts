@@ -1,4 +1,4 @@
-const { Hash } = require('@keplr-wallet/crypto');
+import { Hash } from '@keplr-wallet/crypto';
 
 export const ibcDenom = (
   paths: {
@@ -12,60 +12,64 @@ export const ibcDenom = (
     prefixes.push(`${path.portId}/${path.channelId}`);
   }
 
-  const prefix = prefixes.join("/");
+  const prefix = prefixes.join('/');
   const denom = `${prefix}/${coinMinimalDenom}`;
 
   return (
-    "ibc/" +
+    'ibc/' +
     Buffer.from(Hash.sha256(Buffer.from(denom)))
-      .toString("hex")
+      .toString('hex')
       .toUpperCase()
   );
 };
 
 const findInfo = (ibc, to, from) =>
-  ibc.find(i =>
-    i['chain-1']['chain-name'] === from
-    &&
-    i['chain-2']['chain-name'] === to
+  ibc.find(
+    (i) =>
+      i['chain-1']['chain-name'] === from && i['chain-2']['chain-name'] === to
   );
 
 export interface IBCChainInfo {
-  "chain-name": string;
-  "client-id": string;
-  "connection-id": string;
-};
+  'chain-name': string;
+  'client-id': string;
+  'connection-id': string;
+}
 
 export interface IBCChannelPortAndChannel {
-  "channel-id": string;
-  "port-id": string;
+  'channel-id': string;
+  'port-id': string;
 }
 export interface IBCChannelInfo {
-  "chain-1": IBCChannelPortAndChannel;
-  "chain-2": IBCChannelPortAndChannel;
+  'chain-1': IBCChannelPortAndChannel;
+  'chain-2': IBCChannelPortAndChannel;
   ordering: string;
   version: string;
   tags?: {
     [key: string]: string;
-  }
-};
+  };
+}
 
 export interface IBCInfo {
   $schema: string;
-  "chain-1": IBCChainInfo;
-  "chain-2": IBCChainInfo;
+  'chain-1': IBCChainInfo;
+  'chain-2': IBCChainInfo;
   channels: IBCChannelInfo[];
 }
 
-export const getIbcInfo = (ibc: IBCInfo[], chain: string, counterparty: string): IBCInfo => {
-  return findInfo(ibc, chain, counterparty)
-    || findInfo(ibc, counterparty, chain);
+export const getIbcInfo = (
+  ibc: IBCInfo[],
+  chain: string,
+  counterparty: string
+): IBCInfo => {
+  return (
+    findInfo(ibc, chain, counterparty) || findInfo(ibc, counterparty, chain)
+  );
 };
 
 export const getTransferChannel = (info: IBCInfo) => {
   return info.channels.find(
-    channel => channel['chain-1']['port-id'] === 'transfer'
-      &&
+    (channel) =>
+      channel['chain-1']['port-id'] === 'transfer' &&
       channel['chain-2']['port-id'] === 'transfer'
   );
 };
@@ -90,20 +94,25 @@ export const getIbcDenom = (
       channelInfo = channel['chain-2'];
     }
 
-    const assetInfo = assets.find(({ chain_name }) => chain_name === counterparty);
+    const assetInfo = assets.find(
+      ({ chain_name }) => chain_name === counterparty
+    );
     if (!assetInfo) {
       return;
     }
-    const token = assetInfo.assets.find(a => a.symbol === symbol);
+    const token = assetInfo.assets.find((a) => a.symbol === symbol);
 
     if (!token) return;
 
-    return ibcDenom([
-      {
-        portId: channelInfo['port-id'],
-        channelId: channelInfo['channel-id']
-      }
-    ], token.base);
+    return ibcDenom(
+      [
+        {
+          portId: channelInfo['port-id'],
+          channelId: channelInfo['channel-id']
+        }
+      ],
+      token.base
+    );
   }
 };
 
@@ -127,17 +136,22 @@ export const getIbcDenomByBase = (
       channelInfo = channel['chain-2'];
     }
 
-    const assetInfo = assets.find(({ chain_name }) => chain_name === counterparty);
+    const assetInfo = assets.find(
+      ({ chain_name }) => chain_name === counterparty
+    );
     if (!assetInfo) {
       return;
     }
 
-    return ibcDenom([
-      {
-        portId: channelInfo['port-id'],
-        channelId: channelInfo['channel-id']
-      }
-    ], base);
+    return ibcDenom(
+      [
+        {
+          portId: channelInfo['port-id'],
+          channelId: channelInfo['channel-id']
+        }
+      ],
+      base
+    );
   }
 };
 
@@ -146,78 +160,80 @@ export const getIbcAssets = (
   ibc: IBCInfo[],
   assets: any[]
 ) => {
-
-  const chainIbcInfo = ibc.filter(i => {
-    return i['chain-1']['chain-name'] === chainName ||
+  const chainIbcInfo = ibc.filter((i) => {
+    return (
+      i['chain-1']['chain-name'] === chainName ||
       i['chain-2']['chain-name'] === chainName
+    );
   });
 
-  const ibcAssetLists = chainIbcInfo.map(ibcInfo => {
+  const ibcAssetLists = chainIbcInfo
+    .map((ibcInfo) => {
+      const counterpartyIs =
+        ibcInfo['chain-1']['chain-name'] === chainName ? 'chain-2' : 'chain-1';
+      const chainIs =
+        ibcInfo['chain-1']['chain-name'] === chainName ? 'chain-1' : 'chain-2';
 
-    const counterpartyIs = ibcInfo['chain-1']['chain-name'] === chainName ? 'chain-2' : 'chain-1';
-    const chainIs = ibcInfo['chain-1']['chain-name'] === chainName ? 'chain-1' : 'chain-2';
+      const counterparty = ibcInfo[counterpartyIs]['chain-name'];
+      const counterpartyIbc = ibcInfo[counterpartyIs];
+      const chainIbc = ibcInfo[chainIs];
 
-    const counterparty = ibcInfo[counterpartyIs]['chain-name'];
-    const counterpartyIbc = ibcInfo[counterpartyIs];
-    const chainIbc = ibcInfo[chainIs];
-
-    const counterpartyAssets = assets.find(a => {
-      return a.chain_name === counterparty
-    });
-
-    if (!counterpartyAssets) {
-      console.warn('asset not found: ' + counterparty);
-      return;
-    }
-
-    const ibcAssets = counterpartyAssets
-      .assets.filter(a => !a.base.startsWith('cw20:'))
-      .map(asset => {
-        const denom = getIbcDenomByBase(
-          ibc,
-          chainName,
-          counterparty,
-          //
-          assets,
-          asset.base
-        );
-
-        const newAsset = {
-          ...asset
-        };
-        newAsset.base = denom;
-        newAsset.denom_units = newAsset.denom_units.map(unit => {
-          if (unit.denom === asset.base) {
-            const newUnit = {
-              ...unit
-            };
-            newUnit.denom = denom;
-            newUnit.aliases = [unit.denom];
-            return newUnit;
-          }
-          return unit;
-        });
-        return newAsset;
+      const counterpartyAssets = assets.find((a) => {
+        return a.chain_name === counterparty;
       });
-    const channel = getTransferChannel(ibcInfo);
-    return {
-      chain: {
-        ...chainIbc,
-        ...channel[chainIs]
-      },
-      counterparty: {
-        ...counterpartyIbc,
-        ...channel[counterpartyIs]
-      },
-      assets: ibcAssets,
-    };
-  }).filter(Boolean);
 
+      if (!counterpartyAssets) {
+        console.warn('asset not found: ' + counterparty);
+        return;
+      }
 
+      const ibcAssets = counterpartyAssets.assets
+        .filter((a) => !a.base.startsWith('cw20:'))
+        .map((asset) => {
+          const denom = getIbcDenomByBase(
+            ibc,
+            chainName,
+            counterparty,
+            //
+            assets,
+            asset.base
+          );
+
+          const newAsset = {
+            ...asset
+          };
+          newAsset.base = denom;
+          newAsset.denom_units = newAsset.denom_units.map((unit) => {
+            if (unit.denom === asset.base) {
+              const newUnit = {
+                ...unit
+              };
+              newUnit.denom = denom;
+              newUnit.aliases = [unit.denom];
+              return newUnit;
+            }
+            return unit;
+          });
+          return newAsset;
+        });
+      const channel = getTransferChannel(ibcInfo);
+      return {
+        chain: {
+          ...chainIbc,
+          ...channel[chainIs]
+        },
+        counterparty: {
+          ...counterpartyIbc,
+          ...channel[counterpartyIs]
+        },
+        assets: ibcAssets
+      };
+    })
+    .filter(Boolean);
 
   const hash = ibcAssetLists.reduce((m, v) => {
-    m[v.chain['chain-name']] = m[v.chain['chain-name']] || []
-    const assets = v.assets.map(asset => {
+    m[v.chain['chain-name']] = m[v.chain['chain-name']] || [];
+    const assets = v.assets.map((asset) => {
       return {
         ...asset,
         ibc: {
@@ -226,35 +242,33 @@ export const getIbcAssets = (
             channel: v.counterparty['channel-id'],
             // source_denom
             denom: asset.denom_units[0].aliases[0],
-            chain_name: v.counterparty['chain-name'],
+            chain_name: v.counterparty['chain-name']
             // port: v.counterparty['port-id']
           },
           chain: {
             // dst_denom
-            channel: v.chain['channel-id'],
+            channel: v.chain['channel-id']
             // chain_name: v.chain['chain-name'],
             // port: v.chain['port-id']
           }
         }
-      }
+      };
     });
     const obj = {
       ...v,
       assets
-    }
+    };
     m[v.chain['chain-name']].push(obj);
 
     return m;
   }, {});
 
-  return Object.keys(hash).map(chain => {
+  return Object.keys(hash).map((chain) => {
     return {
       chain_name: chain,
       assets: hash[chain].reduce((m, v) => {
         return [...m, ...v.assets];
       }, [])
-    }
-  })
-
-
+    };
+  });
 };

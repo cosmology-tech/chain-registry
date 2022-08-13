@@ -1,3 +1,3 @@
-# chain-registry utils
+# @chain-registry/utils
 
 Utility functions for the chain-registry 

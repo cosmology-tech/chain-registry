@@ -1,18 +1,14 @@
-import ibc from '../__fixtures__/ibc.json';
 import assets from '../__fixtures__/assets.json';
-import { getIbcAssets, getIbcDenom, getIbcDenomByBase, getTransferChannel } from '../src';
+import ibc from '../__fixtures__/ibc.json';
+import { getIbcAssets } from '../src';
 
 // TODO
 // create ibc_assets object
 // superset of assets
 
 it('getIbcAssets', () => {
-    const chainName = 'osmosis';
-    const list = getIbcAssets(
-        chainName,
-        ibc,
-        assets
-    );
+  const chainName = 'osmosis';
+  const list = getIbcAssets(chainName, ibc, assets);
 
-    expect(list).toMatchSnapshot();
+  expect(list).toMatchSnapshot();
 });

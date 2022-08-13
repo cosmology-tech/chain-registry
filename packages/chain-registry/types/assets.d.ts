@@ -18,6 +18,7 @@ declare const _exports: {
             symbol: string;
             logo_URIs: {
                 svg: string;
+                png: string;
             };
             coingecko_id: string;
         })

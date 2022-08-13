@@ -24,7 +24,7 @@ declare const _exports: {
             compatible_versions: string[];
         };
         peers: {
-            seeds: undefined[];
+            seeds: any[];
             persistent_peers: {
                 id: string;
                 address: string;
