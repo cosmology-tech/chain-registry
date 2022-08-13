@@ -58,3 +58,29 @@ will output:
 }
 ```
 
+## packages
+
+#### [@chain-registry/keplr](packages/keplr/README.md)
+
+Keplr integration for the chain-registry returning keplr's `ChainInfo` type from `@chain-registry/types` `Chain` type.
+
+#### [@chain-registry/utils](packages/utils/README.md)
+
+Utility functions for the chain-registry 
+## Developing
+
+Checkout the repository and bootstrap the yarn workspace:
+
+```sh
+# Clone the repo.
+git clone https://github.com/cosmology-tech/chain-registry
+yarn
+yarn bootstrap
+```
+### Building
+
+```sh
+yarn build
+```
+
+
