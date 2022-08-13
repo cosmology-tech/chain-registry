@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getExplorer 1`] = `
+Object {
+  "bech32Config": Object {
+    "bech32PrefixAccAddr": "osmo",
+    "bech32PrefixAccPub": "osmopub",
+    "bech32PrefixConsAddr": "osmovalcons",
+    "bech32PrefixConsPub": "osmovalconspub",
+    "bech32PrefixValAddr": "osmovaloper",
+    "bech32PrefixValPub": "osmovaloperpub",
+  },
+  "bip44": Object {
+    "coinType": 118,
+  },
+  "chainId": "osmosis-1",
+  "chainName": "Osmosis",
+  "chainQueryName": "osmosis",
+  "coinType": 118,
+  "currencies": Array [
+    Object {
+      "coinDecimals": 6,
+      "coinDenom": "OSMO",
+      "coinGeckoId": "osmosis",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+      "coinMinimalDenom": "uosmo",
+    },
+    Object {
+      "coinDecimals": 6,
+      "coinDenom": "ION",
+      "coinGeckoId": "ion",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
+      "coinMinimalDenom": "uion",
+    },
+  ],
+  "explorerUrl": "https://myexplorer.com",
+  "feeCurrencies": Array [
+    Object {
+      "coinDecimals": 6,
+      "coinDenom": "OSMO",
+      "coinGeckoId": "osmosis",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+      "coinMinimalDenom": "uosmo",
+    },
+    Object {
+      "coinDecimals": 6,
+      "coinDenom": "ION",
+      "coinGeckoId": "ion",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
+      "coinMinimalDenom": "uion",
+    },
+  ],
+  "rest": "https://lcd-osmosis.whispernode.com",
+  "rpc": "https://osmosis-rpc.quickapi.com:443",
+  "stakeCurrency": Object {
+    "coinDecimals": 6,
+    "coinDenom": "OSMO",
+    "coinGeckoId": "osmosis",
+    "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+    "coinMinimalDenom": "uosmo",
+  },
+}
+`;
+
+exports[`keplr 1`] = `
+Object {
+  "bech32Config": Object {
+    "bech32PrefixAccAddr": "osmo",
+    "bech32PrefixAccPub": "osmopub",
+    "bech32PrefixConsAddr": "osmovalcons",
+    "bech32PrefixConsPub": "osmovalconspub",
+    "bech32PrefixValAddr": "osmovaloper",
+    "bech32PrefixValPub": "osmovaloperpub",
+  },
+  "bip44": Object {
+    "coinType": 118,
+  },
+  "chainId": "osmosis-1",
+  "chainName": "Osmosis",
+  "chainQueryName": "osmosis",
+  "coinType": 118,
+  "currencies": Array [
+    Object {
+      "coinDecimals": 6,
+      "coinDenom": "OSMO",
+      "coinGeckoId": "osmosis",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+      "coinMinimalDenom": "uosmo",
+    },
+    Object {
+      "coinDecimals": 6,
+      "coinDenom": "ION",
+      "coinGeckoId": "ion",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
+      "coinMinimalDenom": "uion",
+    },
+  ],
+  "explorerUrl": "https://www.mintscan.io/osmosis",
+  "feeCurrencies": Array [
+    Object {
+      "coinDecimals": 6,
+      "coinDenom": "OSMO",
+      "coinGeckoId": "osmosis",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+      "coinMinimalDenom": "uosmo",
+    },
+    Object {
+      "coinDecimals": 6,
+      "coinDenom": "ION",
+      "coinGeckoId": "ion",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
+      "coinMinimalDenom": "uion",
+    },
+  ],
+  "rest": "https://osmosis-lcd.quickapi.com:443",
+  "rpc": "https://osmosis-rpc.quickapi.com:443",
+  "stakeCurrency": Object {
+    "coinDecimals": 6,
+    "coinDenom": "OSMO",
+    "coinGeckoId": "osmosis",
+    "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+    "coinMinimalDenom": "uosmo",
+  },
+}
+`;

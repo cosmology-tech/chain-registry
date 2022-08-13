@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     "$schema": "../chain.schema.json",
     "chain_name": "agoric",

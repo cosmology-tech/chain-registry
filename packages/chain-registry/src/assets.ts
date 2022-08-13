@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     "$schema": "../assetlist.schema.json",
     "chain_name": "avalanche",

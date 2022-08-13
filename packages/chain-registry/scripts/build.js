@@ -45,23 +45,17 @@ addAssets.forEach((asset) => {
   }
 });
 
-const ibc_assets = assets.reduce((m, {chain_name})=>{
-  return [...m, ...getIbcAssets(
-    chain_name,
-    ibcs,
-    assets
-  )];
-}, [])
+// const ibc_assets = assets.reduce((m, { chain_name }) => {
+//   return [...m, ...getIbcAssets(chain_name, ibcs, assets)];
+// }, []);
 
 const write = (file, json) => {
   fs.writeFileSync(
-    `${__dirname}/../src/${file}.js`,
-    `module.exports = ` + JSON.stringify(json, null, 2) + ';'
+    `${__dirname}/../src/${file}.ts`,
+    `export default ` + JSON.stringify(json, null, 2) + ';'
   );
 };
 
-
 write(`assets`, assets);
-write(`ibc_assets`, ibc_assets);
 write(`chains`, chains);
 write(`ibc`, ibcs);

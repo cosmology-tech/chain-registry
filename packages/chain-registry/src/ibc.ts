@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     "$schema": "../ibc_data.schema.json",
     "chain-1": {
