@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     "chain_name": "akash",
     "assets": [
