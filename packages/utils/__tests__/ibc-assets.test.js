@@ -1,5 +1,5 @@
-import assets from '../__fixtures__/assets.json';
-import ibc from '../__fixtures__/ibc.json';
+import assets from '../../../__fixtures__/assets.json';
+import ibc from '../../../__fixtures__/ibc.json';
 import { getIbcAssets } from '../src';
 
 // TODO

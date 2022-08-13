@@ -23,8 +23,8 @@ console.log(asset);
 ```
 will output:
 
-```
-> {
+```js
+{
   '$schema': '../assetlist.schema.json',
   chain_name: 'osmosis',
   assets: [

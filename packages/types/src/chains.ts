@@ -12,6 +12,20 @@ export interface Chain {
     genesis_url: string;
   };
   slip44: number;
+  fees?: {
+    fee_tokens: {
+      denom: string;
+      fixed_min_gas_price?: number;
+      low_gas_price?: number;
+      average_gas_price?: number;
+      high_gas_price?: number;
+    }[];
+  };
+  staking?: {
+    staking_tokens: {
+      denom: string;
+    }[];
+  };
   explorers: {
     kind: string;
     url: string;
