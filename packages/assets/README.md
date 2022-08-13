@@ -20,4 +20,43 @@ npm install @chain-registry/assets
 
 ```js
 import { ibc_assets } from '@chain-registry/assets';
+const assetList = ibc_assets
+    .find(asset => asset.chain_name === 'osmosis');
+```
+
+Which gives you a list of assets for the `chain_name`:
+
+```js
+console.log(assetList.assets);
+
+[
+  {
+    description: "Akash Token (AKT) is the Akash Network's native utility token, used as the primary means to govern, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
+    denom_units: [ [Object], [Object] ],
+    base: 'ibc/1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4',
+    name: 'Akash Network',
+    display: 'akt',
+    symbol: 'AKT',
+    logo_URIs: {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
+    },
+    coingecko_id: 'akash-network',
+    ibc: { counterparty: [Object], chain: [Object] }
+  },
+  {
+    description: 'The native token of Axelar',
+    denom_units: [ [Object], [Object] ],
+    base: 'ibc/903A61A498756EA560B85A85132D3AEE21B5DEDD41213725D22ABF276EA6945E',
+    name: 'Axelar',
+    display: 'axl',
+    symbol: 'AXL',
+    logo_URIs: {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
+    },
+    coingecko_id: 'axelar-network',
+    ibc: { counterparty: [Object], chain: [Object] }
+  }
+]
 ```
