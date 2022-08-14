@@ -25,6 +25,12 @@ jobs:
           cd packages/assets
           node ./scripts/build.js
           cd ../../
+          cd packages/osmosis
+          node ./scripts/build.js
+          cd ../../
+          cd packages/juno
+          node ./scripts/build.js
+          cd ../../
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
           git commit -am "build 🛠"
