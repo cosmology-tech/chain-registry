@@ -21,3 +21,11 @@ npm install @chain-registry/juno
 ```js
 import { chain, assets, ibc_assets } from '@chain-registry/juno';
 ```
+
+## Credits
+
+Built by Cosmology — if you like our tools, please consider delegating to [our validator](https://www.mintscan.io/juno/validators/junovaloper1pr5qgj4jg47lvsnejtfvk78090shvuctgdwdm5)
+
+Code built with the help of these related projects:
+
+* [chain-registry](https://github.com/cosmology/chain-registry) an npm module for the official Cosmos chain-registry
