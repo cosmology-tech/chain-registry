@@ -7218,6 +7218,10 @@ const chains: Chain[] = [
         {
           "address": "https://api.osmosis.interbloc.org",
           "provider": "Interbloc"
+        },
+        {
+          "address": "https://osmosis.stakesystems.io/",
+          "provider": "stakesystems"
         }
       ],
       "grpc": [
@@ -9928,18 +9932,6 @@ const chains: Chain[] = [
         "tx_page": "https://atomscan.com/vidulum/transactions/${txHash}"
       }
     ]
-  },
-  {
-    "$schema": "../chain.schema.json",
-    "chain_name": "osmosis",
-    "apis": {
-      "rest": [
-        {
-          "address": "https://osmosis.stakesystems.io/",
-          "provider": "stakesystems"
-        }
-      ]
-    }
   }
 ];
 export default chains;

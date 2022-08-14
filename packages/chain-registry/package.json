@@ -31,8 +31,10 @@
     "build:ts": "tsc --project ./tsconfig.json",
     "buidl": "npm run build && npm run build:ts",
     "build:pkg": "babel-node ./scripts/build.js",
+    "codegen": "npm run build:pkg && npm run format",
     "prepare": "npm run build",
-    "lint": "eslint src --fix",
+    "lint": "eslint --ext .ts,.tsx,.js .",
+    "format": "eslint --fix . --ext .ts,.tsx,.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:debug": "node --inspect node_modules/.bin/jest --runInBand"

@@ -24,7 +24,7 @@ addPaths.forEach((file) => {
 
 addChains.forEach((chain) => {
   const existingChainIndex = chains.findIndex(
-    (c) => c.chain_id === chain.chain_id
+    (c) => c.chain_name === chain.chain_name
   );
   if (existingChainIndex > -1) {
     const existingChain = chains[existingChainIndex];
@@ -35,7 +35,9 @@ addChains.forEach((chain) => {
 });
 
 addAssets.forEach((asset) => {
-  const existingIndex = assets.findIndex((c) => c.chain_id === asset.chain_id);
+  const existingIndex = assets.findIndex(
+    (c) => c.chain_name === asset.chain_name
+  );
   if (existingIndex > -1) {
     assets[existingIndex] = deepmerge(assets[existingIndex], asset);
   } else {
