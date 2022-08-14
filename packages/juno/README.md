@@ -1,7 +1,7 @@
 # @chain-registry/juno
 
 <p align="center" width="100%">
-    <img height="90" src="https://user-images.githubusercontent.com/545047/184277736-69fef40f-1991-4c0e-b979-da125cf7fd8f.svg" />
+    <img height="90" src="https://user-images.githubusercontent.com/545047/184516834-4b8190b0-0721-4778-b4fb-fa19ed3f9279.svg" />
 </p>
 
 <p align="center" width="100%">

@@ -1,7 +1,7 @@
 # @chain-registry/osmosis
 
 <p align="center" width="100%">
-    <img height="90" src="https://user-images.githubusercontent.com/545047/184277736-69fef40f-1991-4c0e-b979-da125cf7fd8f.svg" />
+    <img height="90" src="https://user-images.githubusercontent.com/545047/184518988-10c0046e-8ded-4f40-9e4c-08280345a325.svg" />
 </p>
 
 <p align="center" width="100%">
