@@ -21,3 +21,43 @@ npm install @chain-registry/osmosis
 ```js
 import { chain, assets, ibc_assets } from '@chain-registry/osmosis';
 ```
+
+```js
+console.log(ibc_assets);
+{
+  chain_name: 'osmosis',
+  assets: [
+    {
+      description: 'Somm Token (SOMM) is the native staking token of the Sommelier Chain',
+      denom_units: [Array],
+      base: 'ibc/9BBA9A1C257E971E38C1422780CE6F0B0686F0A3085E2D61118D904BFE0F5F5E',
+      name: 'Somm',
+      display: 'somm',
+      symbol: 'SOMM',
+      logo_URIs: [Object],
+      coingecko_id: 'sommelier',
+      ibc: [Object]
+    },
+    {
+      description: 'The native token of Stargaze',
+      denom_units: [Array],
+      base: 'ibc/987C17B11ABC2B20019178ACE62929FE9840202CE79498E29FE8E5CB02B7C0A4',
+      name: 'Stargaze',
+      display: 'stars',
+      symbol: 'STARS',
+      logo_URIs: [Object],
+      coingecko_id: 'stargaze',
+      ibc: [Object]
+    },
+    // ... more assets
+  ]
+}
+```
+
+## Credits
+
+Built by Cosmology — if you like our tools, please consider delegating to [our validator](https://www.mintscan.io/juno/validators/junovaloper1pr5qgj4jg47lvsnejtfvk78090shvuctgdwdm5)
+
+Code built with the help of these related projects:
+
+* [chain-registry](https://github.com/cosmology/chain-registry) an npm module for the official Cosmos chain-registry

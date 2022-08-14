@@ -21,4 +21,4 @@ const write = (file, json) => {
 
 write(`chain`, chain);
 write(`assets`, assetList);
-write(`ibc_assets`, ibc_assets);
+write(`ibc_assets`, ibc_assets[0]);

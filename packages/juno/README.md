@@ -21,6 +21,37 @@ npm install @chain-registry/juno
 ```js
 import { chain, assets, ibc_assets } from '@chain-registry/juno';
 ```
+```js
+console.log(ibc_assets);
+{
+  chain_name: 'juno',
+  assets: [
+    {
+      description: "Akash Token (AKT) is the Akash Network's native utility token, used as the primary means to govern, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
+      denom_units: [Array],
+      base: 'ibc/DFC6F33796D5D0075C5FB54A4D7B8E76915ACF434CB1EE2A1BA0BB8334E17C3A',
+      name: 'Akash Network',
+      display: 'akt',
+      symbol: 'AKT',
+      logo_URIs: [Object],
+      coingecko_id: 'akash-network',
+      ibc: [Object]
+    },
+    {
+      description: 'The native token of Axelar',
+      denom_units: [Array],
+      base: 'ibc/EBE900AED8FF6BB2E186B17B066138F647CDD9647EF4FBE2DE6C8D4013A2C990',
+      name: 'Axelar',
+      display: 'axl',
+      symbol: 'AXL',
+      logo_URIs: [Object],
+      coingecko_id: 'axelar-network',
+      ibc: [Object]
+    },
+    // ... more assets
+  ]
+}
+```
 
 ## Credits
 
