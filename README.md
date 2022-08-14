@@ -60,17 +60,29 @@ will output:
 
 ## packages
 
-#### [@chain-registry/keplr](packages/keplr/README.md)
+#### [chain-registry](packages/chain-registry)
+
+An npm module for the Official chain-registry for the Cosmos ⚛️
+
+#### [@chain-registry/keplr](packages/keplr)
 
 Keplr integration for the chain-registry returning keplr's `ChainInfo` type from `@chain-registry/types` `Chain` type.
 
-#### [@chain-registry/assets](packages/assets/README.md)
+#### [@chain-registry/assets](packages/assets)
 
 Asset lists for the Cosmos ⚛️
 
-#### [@chain-registry/utils](packages/utils/README.md)
+#### [@chain-registry/utils](packages/utils)
 
 Utility functions for the chain-registry 
+
+#### [@chain-registry/osmosis](packages/osmosis)
+
+Chain Registry info for Osmosis, including asset lists.
+
+#### [@chain-registry/juno](packages/juno)
+
+Chain Registry info for Juno, including asset lists.
 ## Developing
 
 Checkout the repository and bootstrap the yarn workspace:
