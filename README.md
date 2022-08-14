@@ -23,11 +23,11 @@ npm install chain-registry
 ```js
 import { assets, chains, ibc } from 'chain-registry';
 
-const asset = assets.find(({chain_name})=>chain_name==='osmosis');
+const assetList = assets.find(({chain_name})=>chain_name==='osmosis');
 
-console.log(asset);
-
+console.log(assetList);
 ```
+
 will output:
 
 ```js
