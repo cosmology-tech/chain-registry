@@ -1,4 +1,5 @@
-export default [
+import { IBCInfo } from '@chain-registry/types';
+const ibc: IBCInfo[] = [
   {
     "$schema": "../ibc_data.schema.json",
     "chain-1": {
@@ -3886,3 +3887,5 @@ export default [
     ]
   }
 ];
+export default ibc;
+    

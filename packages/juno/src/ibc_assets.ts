@@ -1,4 +1,5 @@
-export default {
+import { IBCAsset } from '@chain-registry/types';
+const ibc_assets: IBCAsset = {
   "chain_name": "juno",
   "assets": [
     {
@@ -2728,3 +2729,5 @@ export default {
     }
   ]
 };
+export default ibc_assets;
+    

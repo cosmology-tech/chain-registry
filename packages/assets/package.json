@@ -23,7 +23,7 @@
     "build": "npm run build:module && npm run build:main",
     "build:ts": "tsc --project ./tsconfig.json",
     "buidl": "npm run build && npm run build:ts",
-    "make": "babel-node ./scripts/build.js",
+    "build:pkg": "babel-node ./scripts/build.js",
     "prepare": "npm run build",
     "lint": "eslint --ext .ts,.tsx,.js .",
     "format": "eslint --fix . --ext .ts,.tsx,.js",

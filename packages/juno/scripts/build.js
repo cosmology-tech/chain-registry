@@ -12,13 +12,18 @@ const ibc_assets = assets.reduce((m, { chain_name }) => {
 const assetList = assets.find((list) => list.chain_name === chainName);
 const chain = chains.find((chain) => chain.chain_name === chainName);
 
-const write = (file, json) => {
+const write = (file, json, TypeName, isArray = false) => {
+  const strfy = JSON.stringify(json, null, 2);
+  const exportType = isArray ? TypeName + '[]' : TypeName;
   writeFileSync(
     `${__dirname}/../src/${file}.ts`,
-    `export default ` + JSON.stringify(json, null, 2) + ';'
+    `import { ${TypeName} } from '@chain-registry/types';
+const ${file}: ${exportType} = ${strfy};
+export default ${file};
+    `
   );
 };
 
-write(`chain`, chain);
-write(`assets`, assetList);
-write(`ibc_assets`, ibc_assets[0]);
+write(`chain`, chain, 'Chain');
+write(`assets`, assetList, 'AssetList');
+write(`ibc_assets`, ibc_assets[0], 'IBCAsset');

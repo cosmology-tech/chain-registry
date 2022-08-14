@@ -1,4 +1,5 @@
-export default [
+import { Chain } from '@chain-registry/types';
+const chains: Chain[] = [
   {
     "$schema": "../chain.schema.json",
     "chain_name": "agoric",
@@ -7217,10 +7218,6 @@ export default [
         {
           "address": "https://api.osmosis.interbloc.org",
           "provider": "Interbloc"
-        },
-        {
-          "address": "https://osmosis.stakesystems.io/",
-          "provider": "stakesystems"
         }
       ],
       "grpc": [
@@ -9931,5 +9928,19 @@ export default [
         "tx_page": "https://atomscan.com/vidulum/transactions/${txHash}"
       }
     ]
+  },
+  {
+    "$schema": "../chain.schema.json",
+    "chain_name": "osmosis",
+    "apis": {
+      "rest": [
+        {
+          "address": "https://osmosis.stakesystems.io/",
+          "provider": "stakesystems"
+        }
+      ]
+    }
   }
 ];
+export default chains;
+    

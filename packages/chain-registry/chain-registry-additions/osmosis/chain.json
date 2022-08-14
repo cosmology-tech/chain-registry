@@ -1,6 +1,6 @@
 {
     "$schema": "../chain.schema.json",
-    "chain_id": "osmosis-1",
+    "chain_name": "osmosis",
     "apis": {
         "rest": [
             {

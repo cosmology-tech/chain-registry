@@ -1,7 +1,8 @@
-export default [
+import { AssetList } from '@chain-registry/types';
+const assets: AssetList[] = [
   {
     "$schema": "../assetlist.schema.json",
-    "chain_name": "avalanche",
+    "chain_name": "juno",
     "assets": [
       {
         "description": "AVAX is the native token of Avalanche. It is a hard-capped, scarce asset that is used to pay for fees, secure the platform through staking, and provide a basic unit of account between the multiple subnets created on Avalanche.",
@@ -150,6 +151,32 @@ export default [
         "logo_URIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg"
         }
+      },
+      {
+        "description": "The native token cw20 for Neta on Juno Chain",
+        "type_asset": "cw20",
+        "address": "juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr",
+        "denom_units": [
+          {
+            "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+            "exponent": 0,
+            "aliases": [
+              "uneta"
+            ]
+          },
+          {
+            "denom": "neta",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+        "name": "Neta",
+        "display": "neta",
+        "symbol": "NETA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/osmosis-labs/assetlists/main/images/neta.png"
+        },
+        "coingecko_id": "neta"
       }
     ]
   },
@@ -8941,37 +8968,7 @@ export default [
         "coingecko_id": "vidulum"
       }
     ]
-  },
-  {
-    "$schema": "../assetlist.schema.json",
-    "chain_id": "juno-1",
-    "assets": [
-      {
-        "description": "The native token cw20 for Neta on Juno Chain",
-        "type_asset": "cw20",
-        "address": "juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr",
-        "denom_units": [
-          {
-            "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
-            "exponent": 0,
-            "aliases": [
-              "uneta"
-            ]
-          },
-          {
-            "denom": "neta",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
-        "name": "Neta",
-        "display": "neta",
-        "symbol": "NETA",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/osmosis-labs/assetlists/main/images/neta.png"
-        },
-        "coingecko_id": "neta"
-      }
-    ]
   }
 ];
+export default assets;
+    

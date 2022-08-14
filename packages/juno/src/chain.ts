@@ -1,4 +1,5 @@
-export default {
+import { Chain } from '@chain-registry/types';
+const chain: Chain = {
   "$schema": "../chain.schema.json",
   "chain_name": "juno",
   "status": "live",
@@ -172,3 +173,5 @@ export default {
     }
   ]
 };
+export default chain;
+    

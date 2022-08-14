@@ -1,4 +1,5 @@
-export default {
+import { AssetList } from '@chain-registry/types';
+const assets: AssetList = {
   "$schema": "../assetlist.schema.json",
   "chain_name": "juno",
   "assets": [
@@ -348,3 +349,5 @@ export default {
     }
   ]
 };
+export default assets;
+    

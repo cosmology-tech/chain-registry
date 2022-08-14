@@ -1,8 +1,6 @@
 const fs = require('fs');
 const deepmerge = require('deepmerge');
-const { resolve, basename, extname } = require('path');
 const glob = require('glob').sync;
-const { getIbcAssets } = require('@chain-registry/utils');
 
 const paths = glob(`${__dirname}/../chain-registry/**/*.json`);
 const assets = [];
@@ -45,17 +43,18 @@ addAssets.forEach((asset) => {
   }
 });
 
-// const ibc_assets = assets.reduce((m, { chain_name }) => {
-//   return [...m, ...getIbcAssets(chain_name, ibcs, assets)];
-// }, []);
-
-const write = (file, json) => {
+const write = (file, json, TypeName, isArray = false) => {
+  const strfy = JSON.stringify(json, null, 2);
+  const exportType = isArray ? TypeName + '[]' : TypeName;
   fs.writeFileSync(
     `${__dirname}/../src/${file}.ts`,
-    `export default ` + JSON.stringify(json, null, 2) + ';'
+    `import { ${TypeName} } from '@chain-registry/types';
+const ${file}: ${exportType} = ${strfy};
+export default ${file};
+    `
   );
 };
 
-write(`assets`, assets);
-write(`chains`, chains);
-write(`ibc`, ibcs);
+write(`assets`, assets, 'AssetList', true);
+write(`chains`, chains, 'Chain', true);
+write(`ibc`, ibcs, 'IBCInfo', true);

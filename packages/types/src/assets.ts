@@ -5,17 +5,20 @@ export interface AssetDenomUnit {
 }
 
 export interface Asset {
-  description: string;
+  description?: string;
+  type_asset?: string;
+  address?: string;
   denom_units: AssetDenomUnit[];
   base: string;
   name: string;
   display: string;
   symbol: string;
-  logo_URIs: {
-    svg: string;
-    png: string;
+  logo_URIs?: {
+    svg?: string;
+    png?: string;
   };
-  coingecko_id: string;
+  coingecko_id?: string;
+  keywords?: string[];
 }
 
 export type AssetList = {
