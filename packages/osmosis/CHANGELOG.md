@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/osmosis@0.4.6...@chain-registry/osmosis@0.5.0) (2022-08-14)
+
+**Note:** Version bump only for package @chain-registry/osmosis
+
+
+
+
+
 ## [0.4.6](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/osmosis@0.4.5...@chain-registry/osmosis@0.4.6) (2022-08-14)
 
 **Note:** Version bump only for package @chain-registry/osmosis

@@ -1,6 +1,6 @@
 {
   "name": "chain-registry",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "Cosmos chain registry ⚛️",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry/tree/master/packages/chain-registry#readme",
@@ -70,6 +70,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.18.3",
-    "@chain-registry/types": "^0.3.1"
+    "@chain-registry/types": "^0.4.0"
   }
 }
