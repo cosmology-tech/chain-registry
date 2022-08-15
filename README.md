@@ -62,7 +62,11 @@ will output:
 
 #### [chain-registry](packages/chain-registry)
 
-An npm module for the Official chain-registry for the Cosmos ⚛️
+An npm module for the Official `chain-registry` for the Cosmos ⚛️
+
+#### [@chain-registry/types](packages/types)
+
+Types for `chain-registry`.
 
 #### [@chain-registry/keplr](packages/keplr)
 
@@ -72,10 +76,6 @@ Keplr integration for the chain-registry returning keplr's `ChainInfo` type from
 
 Asset lists for the Cosmos ⚛️
 
-#### [@chain-registry/utils](packages/utils)
-
-Utility functions for the chain-registry 
-
 #### [@chain-registry/osmosis](packages/osmosis)
 
 Chain Registry info for Osmosis, including asset lists.
@@ -83,6 +83,11 @@ Chain Registry info for Osmosis, including asset lists.
 #### [@chain-registry/juno](packages/juno)
 
 Chain Registry info for Juno, including asset lists.
+
+#### [@chain-registry/utils](packages/utils)
+
+Utility functions for `chain-registry`.
+
 ## Developing
 
 Checkout the repository and bootstrap the yarn workspace:
