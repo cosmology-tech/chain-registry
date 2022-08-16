@@ -18,7 +18,7 @@ const chains: Chain[] = [
       {
         kind: 'explorers.guru',
         url: 'https://agoric.explorers.guru/',
-        tx_page: 'https://agoric.explorers.guru/transaction/{txHash}'
+        tx_page: 'https://agoric.explorers.guru/transaction/${txHash}'
       }
     ],
     codebase: {
@@ -1055,17 +1055,17 @@ const chains: Chain[] = [
       {
         kind: 'cosmoscan',
         url: 'https://cosmoscan.io',
-        tx_page: 'https://cosmoscan.io/tx/{txHash}'
+        tx_page: 'https://cosmoscan.io/tx/${txHash}'
       },
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/band',
-        tx_page: 'https://www.mintscan.io/band/txs{txHash}'
+        tx_page: 'https://www.mintscan.io/band/txs${txHash}'
       },
       {
         kind: 'ping.pub',
         url: 'https://ping.pub/band-protocol',
-        tx_page: 'https://ping.pub/band-protocol/tx/{txHash}'
+        tx_page: 'https://ping.pub/band-protocol/tx/${txHash}'
       },
       {
         kind: 'atomscan',
@@ -1558,13 +1558,13 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/Switcheo/carbon-bootstrap',
-      recommended_version: 'v2.3.1',
-      compatible_versions: ['v2.3.0'],
+      recommended_version: 'v2.8.0',
+      compatible_versions: ['v2.8.0'],
       binaries: {
         'linux/amd64':
-          'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.3.1/carbond2.3.1-mainnet.linux-amd64.tar.gz',
+          'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.8.0/carbond2.8.0-mainnet.linux-amd64.tar.gz',
         'linux/arm64':
-          'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.3.1/carbond2.3.1-mainnet.linux-ard64.tar.gz'
+          'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.8.0/carbond2.8.0-mainnet.linux-ard64.tar.gz'
       }
     },
     peers: {
@@ -1590,6 +1590,11 @@ const chains: Chain[] = [
           id: 'b638cc8fc5b3d7867281081efce15e5a989339ac',
           address: '188.166.191.195:26656',
           provider: 'intsol'
+        },
+        {
+          id: 'aa238fc5a6b3f2a305a4ffb56a636ce14adce371',
+          address: 'alice.peers.carbon.bh.rocks:26656',
+          provider: 'BlockHunters'
         }
       ]
     },
@@ -1598,12 +1603,20 @@ const chains: Chain[] = [
         {
           address: 'https://tm-api.carbon.network',
           provider: 'switcheo-labs'
+        },
+        {
+          address: 'https://rpc.carbon.bh.rocks',
+          provider: 'BlockHunters'
         }
       ],
       rest: [
         {
           address: 'https://api.carbon.network',
           provider: 'switcheo-labs'
+        },
+        {
+          address: 'https://rest.carbon.bh.rocks',
+          provider: 'BlockHunters'
         }
       ]
     },
@@ -1768,7 +1781,7 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/cerberus',
-        tx_page: 'https://www.mintscan.io/cerberus/txs/{txHash}'
+        tx_page: 'https://www.mintscan.io/cerberus/txs/${txHash}'
       },
       {
         kind: 'atomscan',
@@ -2753,7 +2766,7 @@ const chains: Chain[] = [
       {
         kind: 'ping.pub',
         url: 'https://ping.pub/crescent',
-        tx_page: 'https://ping.pub/crescent/tx/{txHash}'
+        tx_page: 'https://ping.pub/crescent/tx/${txHash}'
       },
       {
         kind: 'explorers.guru',
@@ -3772,18 +3785,6 @@ const chains: Chain[] = [
         },
         {
           denom: 'eeur'
-        },
-        {
-          denom: 'echf'
-        },
-        {
-          denom: 'edkk'
-        },
-        {
-          denom: 'enok'
-        },
-        {
-          denom: 'esek'
         }
       ]
     },
@@ -4078,6 +4079,11 @@ const chains: Chain[] = [
           id: '588cedb70fa1d98c14a2f2c1456bfa41e1a156a8',
           address: 'evmos-sentry.mercury-nodes.net:29539',
           provider: 'Mercury'
+        },
+        {
+          id: 'a7779498a15dfd5adc678f0f6672935413413f42',
+          address: 'alice.peers.evmos.bh.rocks:26656',
+          provider: 'BlockHunters'
         }
       ]
     },
@@ -4118,6 +4124,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-evmos.ecostake.com',
           provider: 'ecostake'
+        },
+        {
+          address: 'https://rpc.evmos.bh.rocks',
+          provider: 'BlockHunters'
         }
       ],
       rest: [
@@ -4152,6 +4162,10 @@ const chains: Chain[] = [
         {
           address: 'https://rest-evmos.ecostake.com',
           provider: 'ecostake'
+        },
+        {
+          address: 'https://lcd.evmos.bh.rocks',
+          provider: 'BlockHunters'
         }
       ],
       grpc: [
@@ -4174,6 +4188,10 @@ const chains: Chain[] = [
         {
           address: 'https://grpc.evmos.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://grpc.evmos.bh.rocks',
+          provider: 'BlockHunters'
         }
       ],
       'evm-http-jsonrpc': [
@@ -4192,6 +4210,10 @@ const chains: Chain[] = [
         {
           address: 'https://jsonrpc.evmos.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://json-rpc.evmos.bh.rocks',
+          provider: 'BlockHunters'
         }
       ]
     },
@@ -5418,7 +5440,7 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/juno',
-        tx_page: 'https://www.mintscan.io/juno/txs/{txHash}'
+        tx_page: 'https://www.mintscan.io/juno/txs/${txHash}'
       },
       {
         kind: 'atomscan',
@@ -6895,7 +6917,7 @@ const chains: Chain[] = [
       {
         kind: 'oraiscan',
         url: 'https://scan.orai.io',
-        tx_page: 'https://scan.orai.io/txs/{txHash}'
+        tx_page: 'https://scan.orai.io/txs/${txHash}'
       }
     ]
   },
@@ -7443,7 +7465,7 @@ const chains: Chain[] = [
       {
         kind: 'proprietary',
         url: 'https://explorer.persistence.one',
-        tx_page: 'https://explorer.persistence.one/transactions/{txHash}'
+        tx_page: 'https://explorer.persistence.one/transactions/${txHash}'
       },
       {
         kind: 'mintscan',
@@ -8038,6 +8060,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-sentinel.whispernode.com',
           provider: 'WhisperNode🤐'
+        },
+        {
+          address: 'https://rpc.sentinel1.badgerbite.xyz',
+          provider: 'BadgerBite'
         }
       ],
       rest: [
@@ -8290,7 +8316,7 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/sifchain',
-        tx_page: 'https://www.mintscan.io/sifchain/txs/{txHash}'
+        tx_page: 'https://www.mintscan.io/sifchain/txs/${txHash}'
       },
       {
         kind: 'atomscan',
@@ -8608,6 +8634,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-stargaze-ia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://stargaze.c29r3.xyz:443/rpc/',
+          provider: 'c29r3'
         }
       ],
       rest: [
@@ -8630,6 +8660,10 @@ const chains: Chain[] = [
         {
           address: 'https://api-stargaze-ia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://stargaze.c29r3.xyz:443/api/',
+          provider: 'c29r3'
         }
       ],
       grpc: [
@@ -9114,28 +9148,7 @@ const chains: Chain[] = [
           provider: 'Hypha'
         }
       ],
-      persistent_peers: [
-        {
-          id: '5c9850dc5ec603b0c97ffd8d67bde3221b877acf',
-          address: 'p2p.sentry-01.theta-testnet.polypore.xyz:26656',
-          provider: 'Hypha'
-        },
-        {
-          id: '208683ee734ba3cec1cfc0c8bcbc326969641952',
-          address: 'p2p.sentry-02.theta-testnet.polypore.xyz:26656',
-          provider: 'Hypha'
-        },
-        {
-          id: '58e9d022962a3875fa22d7146949d0dc34e51ba6',
-          address: 'p2p.state-sync-01.theta-testnet.polypore.xyz:26656',
-          provider: 'Hypha'
-        },
-        {
-          id: '6954e0479cd71fa01aeed15e1a3b87c06433d827',
-          address: 'p2p.state-sync-02.theta-testnet.polypore.xyz:26656',
-          provider: 'Hypha'
-        }
-      ]
+      persistent_peers: []
     },
     apis: {
       rpc: [

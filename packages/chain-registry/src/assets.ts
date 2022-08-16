@@ -2559,7 +2559,7 @@ const assets: AssetList[] = [
             exponent: 0
           },
           {
-            denom: 'EUR',
+            denom: 'eur',
             exponent: 6
           }
         ],
@@ -3428,7 +3428,7 @@ const assets: AssetList[] = [
           svg:
             'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.svg'
         },
-        coingecko_id: 'hard-protocol'
+        coingecko_id: 'kava-lend'
       },
       {
         description: 'Governance token of Kava Swap Protocol',
@@ -3453,6 +3453,28 @@ const assets: AssetList[] = [
             'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.svg'
         },
         coingecko_id: 'kava-swap'
+      },
+      {
+        description: 'The native stablecoin of Kava',
+        denom_units: [
+          {
+            denom: 'usdx',
+            exponent: 0
+          },
+          {
+            denom: 'USDX',
+            exponent: 6
+          }
+        ],
+        base: 'usdx',
+        name: 'USDX',
+        display: 'USDX',
+        symbol: 'USDX',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.png'
+        },
+        coingecko_id: 'usdx'
       }
     ]
   },
@@ -3868,17 +3890,17 @@ const assets: AssetList[] = [
         description: 'The native token of Oraichain',
         denom_units: [
           {
-            denom: 'uorai',
+            denom: 'orai',
             exponent: 0
           },
           {
-            denom: 'orai',
+            denom: 'ORAI',
             exponent: 6
           }
         ],
-        base: 'uorai',
+        base: 'orai',
         name: 'Oraichain',
-        display: 'orai',
+        display: 'ORAI',
         symbol: 'ORAI',
         logo_URIs: {
           png:
