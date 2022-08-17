@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/keplr",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Chain Registry to Keplr",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
@@ -61,8 +61,8 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "28.1.1",
     "babel-watch": "^7.0.0",
-    "cross-env": "^7.0.2",
     "chain-registry": "^0.6.3",
+    "cross-env": "^7.0.2",
     "eslint": "8.20.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
