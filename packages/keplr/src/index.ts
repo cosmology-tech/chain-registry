@@ -40,7 +40,7 @@ export const chainRegistryChainToKeplr = (
         (denomUnit: { denom: string }) => denomUnit.denom === currency.display
       )[0]?.exponent,
       coinGeckoId: currency.coingecko_id,
-      coinImageUrl: currency.logo_URIs?.png ?? currency.logo_URIs?.svg
+      coinImageUrl: currency.logo_URIs?.svg ?? currency.logo_URIs?.png
     };
   });
 
@@ -57,7 +57,6 @@ export const chainRegistryChainToKeplr = (
     rest: options.getRestEndpoint(chain),
     chainId: chain.chain_id,
     chainName: chain.pretty_name,
-    chainQueryName: chain.chain_name,
     bip44: {
       coinType: chain.slip44
     },
@@ -65,7 +64,6 @@ export const chainRegistryChainToKeplr = (
     currencies: currencies,
     stakeCurrency: stakeCurrency || currencies[0],
     feeCurrencies: feeCurrencies.length !== 0 ? feeCurrencies : currencies,
-    coinType: chain.slip44,
     explorerUrl: options.getExplorer(chain)
   };
 
