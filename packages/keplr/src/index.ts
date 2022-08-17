@@ -29,10 +29,16 @@ export const chainRegistryChainToKeplr = (
   const feeDenoms =
     chain.fees?.fee_tokens.map<string>((feeToken) => feeToken.denom) || [];
 
+  /**
+   * FROM KEPLR chain-info.d.ts:
+   * This is used to set the fee of the transaction.
+   * If this field is empty, it just use the default gas price step (low: 0.01, average: 0.025, high: 0.04).
+   * And, set field's type as primitive number because it is hard to restore the prototype after deserialzing if field's type is `Dec`.
+   */
   const gasPriceStep: ChainInfo['gasPriceStep'] = {
-    average: chain.fees?.fee_tokens?.[0]?.average_gas_price,
-    high: chain.fees?.fee_tokens?.[0]?.high_gas_price,
-    low: chain.fees?.fee_tokens?.[0]?.low_gas_price
+    low: chain.fees?.fee_tokens?.[0]?.low_gas_price ?? 0.01,
+    average: chain.fees?.fee_tokens?.[0]?.average_gas_price ?? 0.025,
+    high: chain.fees?.fee_tokens?.[0]?.high_gas_price ?? 0.04
   };
 
   const stakingDenoms =
@@ -68,8 +74,7 @@ export const chainRegistryChainToKeplr = (
     bip44: {
       coinType: chain.slip44
     },
-    gasPriceStep:
-      Object.keys(gasPriceStep).length > 0 ? gasPriceStep : undefined,
+    gasPriceStep,
     bech32Config: Bech32Address.defaultBech32Config(chain.bech32_prefix),
     currencies: currencies,
     stakeCurrency: stakeCurrency || currencies[0],
