@@ -23,6 +23,23 @@ export const chainRegistryChainToKeplr = (
   if (!options.getRpcEndpoint) options.getRpcEndpoint = getRpc;
   if (!options.getExplorer) options.getExplorer = getExplr;
 
+  const features = [];
+  // if NOT specified, we assume stargate, sorry not sorry
+  const sdkVersion = Number(chain.codebase?.cosmos_sdk_version ?? 0.4);
+  if (sdkVersion >= 0.4) features.push('stargate');
+
+  // until further notice, assume 'ibc-transfer'
+  features.push('ibc-transfer');
+  // until further notice, assume 'no-legacy-stdTx'
+  features.push('no-legacy-stdTx');
+
+  if (chain.codebase?.cosmwasm_enabled) {
+    features.push('cosmwasm');
+    if (Number(chain.codebase.cosmwasm_version) >= 0.24) {
+      features.push('wasmd_0.24+');
+    }
+  }
+
   const chainAssets =
     assets.find((asset) => asset.chain_name === chain.chain_name)?.assets || [];
 
@@ -78,7 +95,8 @@ export const chainRegistryChainToKeplr = (
     bech32Config: Bech32Address.defaultBech32Config(chain.bech32_prefix),
     currencies: currencies,
     stakeCurrency: stakeCurrency || currencies[0],
-    feeCurrencies: feeCurrencies.length !== 0 ? feeCurrencies : currencies
+    feeCurrencies: feeCurrencies.length !== 0 ? feeCurrencies : currencies,
+    features
   };
 
   return chainInfo;
