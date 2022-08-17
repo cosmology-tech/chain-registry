@@ -25,8 +25,16 @@ export const chainRegistryChainToKeplr = (
 
   const chainAssets =
     assets.find((asset) => asset.chain_name === chain.chain_name)?.assets || [];
+
   const feeDenoms =
     chain.fees?.fee_tokens.map<string>((feeToken) => feeToken.denom) || [];
+
+  const gasPriceStep: ChainInfo['gasPriceStep'] = {
+    average: chain.fees?.fee_tokens?.[0]?.average_gas_price,
+    high: chain.fees?.fee_tokens?.[0]?.high_gas_price,
+    low: chain.fees?.fee_tokens?.[0]?.low_gas_price
+  };
+
   const stakingDenoms =
     chain.staking?.staking_tokens.map<string>(
       (stakingToken) => stakingToken.denom
@@ -52,7 +60,7 @@ export const chainRegistryChainToKeplr = (
     feeDenoms.includes(currency.coinDenom)
   );
 
-  const chainInfo = {
+  const chainInfo: ChainInfo = {
     rpc: options.getRpcEndpoint(chain),
     rest: options.getRestEndpoint(chain),
     chainId: chain.chain_id,
@@ -60,11 +68,12 @@ export const chainRegistryChainToKeplr = (
     bip44: {
       coinType: chain.slip44
     },
+    gasPriceStep:
+      Object.keys(gasPriceStep).length > 0 ? gasPriceStep : undefined,
     bech32Config: Bech32Address.defaultBech32Config(chain.bech32_prefix),
     currencies: currencies,
     stakeCurrency: stakeCurrency || currencies[0],
-    feeCurrencies: feeCurrencies.length !== 0 ? feeCurrencies : currencies,
-    explorerUrl: options.getExplorer(chain)
+    feeCurrencies: feeCurrencies.length !== 0 ? feeCurrencies : currencies
   };
 
   return chainInfo;

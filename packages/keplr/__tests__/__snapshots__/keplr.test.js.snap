@@ -31,7 +31,6 @@ Object {
       "coinMinimalDenom": "uion",
     },
   ],
-  "explorerUrl": "https://myexplorer.com",
   "feeCurrencies": Array [
     Object {
       "coinDecimals": 6,
@@ -48,6 +47,11 @@ Object {
       "coinMinimalDenom": "uion",
     },
   ],
+  "gasPriceStep": Object {
+    "average": 0.025,
+    "high": 0.04,
+    "low": 0,
+  },
   "rest": "https://lcd-osmosis.whispernode.com",
   "rpc": "https://osmosis-rpc.quickapi.com:443",
   "stakeCurrency": Object {
@@ -91,7 +95,6 @@ Object {
       "coinMinimalDenom": "uion",
     },
   ],
-  "explorerUrl": "https://www.mintscan.io/osmosis",
   "feeCurrencies": Array [
     Object {
       "coinDecimals": 6,
@@ -108,6 +111,11 @@ Object {
       "coinMinimalDenom": "uion",
     },
   ],
+  "gasPriceStep": Object {
+    "average": 0.025,
+    "high": 0.04,
+    "low": 0,
+  },
   "rest": "https://osmosis-lcd.quickapi.com:443",
   "rpc": "https://osmosis-rpc.quickapi.com:443",
   "stakeCurrency": Object {
