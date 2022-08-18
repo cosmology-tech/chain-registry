@@ -26,12 +26,15 @@ export const chainRegistryChainToKeplr = (
   const features = [];
   // if NOT specified, we assume stargate, sorry not sorry
   const sdkVersion = Number(chain.codebase?.cosmos_sdk_version ?? 0.4);
+  // stargate
   if (sdkVersion >= 0.4) features.push('stargate');
-
+  // no-legacy-stdTx
+  if (sdkVersion >= 0.43) features.push('no-legacy-stdTx');
   // until further notice, assume 'ibc-transfer'
   features.push('ibc-transfer');
-  // until further notice, assume 'no-legacy-stdTx'
-  features.push('no-legacy-stdTx');
+
+  // ibc-go
+  if (sdkVersion >= 0.43) features.push('ibc-go');
 
   if (chain.codebase?.cosmwasm_enabled) {
     features.push('cosmwasm');

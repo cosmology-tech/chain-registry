@@ -33,8 +33,9 @@ Object {
   ],
   "features": Array [
     "stargate",
-    "ibc-transfer",
     "no-legacy-stdTx",
+    "ibc-transfer",
+    "ibc-go",
     "cosmwasm",
     "wasmd_0.24+",
   ],
@@ -104,8 +105,9 @@ Object {
   ],
   "features": Array [
     "stargate",
-    "ibc-transfer",
     "no-legacy-stdTx",
+    "ibc-transfer",
+    "ibc-go",
     "cosmwasm",
     "wasmd_0.24+",
   ],
