@@ -1,10 +1,26 @@
 import { Asset, AssetList, Chain } from '@chain-registry/types';
 import { Bech32Address } from '@keplr-wallet/cosmos';
 import { ChainInfo, Currency } from '@keplr-wallet/types';
+import semver from 'semver';
 
 const getRpc = (chain: Chain): string => chain.apis?.rpc[0]?.address;
 const getRest = (chain: Chain): string => chain.apis?.rest[0]?.address;
 const getExplr = (chain: Chain): string => chain.explorers?.[0]?.url;
+
+const cleanVer = (ver: string) => {
+  if (!semver.valid(ver)) {
+    const spaces = ver.split('.').length;
+    switch (spaces) {
+      case 1:
+        return ver + '.0.0';
+      case 2:
+        return ver + '.0';
+      case 3:
+      default:
+        throw new Error('contact maintainers: bad version');
+    }
+  }
+};
 
 export const chainRegistryChainToKeplr = (
   chain: Chain,
@@ -25,22 +41,21 @@ export const chainRegistryChainToKeplr = (
 
   const features = [];
   // if NOT specified, we assume stargate, sorry not sorry
-  const sdkVersion = Number(chain.codebase?.cosmos_sdk_version ?? 0.4);
+  const sdkVer = cleanVer(chain.codebase?.cosmos_sdk_version ?? '0.4');
   // stargate
-  if (sdkVersion >= 0.4) features.push('stargate');
+  if (semver.satisfies(sdkVer, '>=0.4')) features.push('stargate');
   // no-legacy-stdTx
-  if (sdkVersion >= 0.43) features.push('no-legacy-stdTx');
+  if (semver.satisfies(sdkVer, '>=0.43')) features.push('no-legacy-stdTx');
   // until further notice, assume 'ibc-transfer'
   features.push('ibc-transfer');
 
   // ibc-go
-  if (sdkVersion >= 0.43) features.push('ibc-go');
+  if (semver.satisfies(sdkVer, '>=0.45')) features.push('ibc-go');
 
   if (chain.codebase?.cosmwasm_enabled) {
     features.push('cosmwasm');
-    if (Number(chain.codebase.cosmwasm_version) >= 0.24) {
-      features.push('wasmd_0.24+');
-    }
+    const wasmVer = cleanVer(chain.codebase.cosmwasm_version ?? '0.24');
+    if (semver.satisfies(wasmVer, '>=0.24')) features.push('wasmd_0.24+');
   }
 
   const chainAssets =
