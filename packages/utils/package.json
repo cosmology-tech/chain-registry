@@ -76,6 +76,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.18.3",
+    "@chain-registry/types": "^0.4.0",
     "@keplr-wallet/crypto": "^0.10.11"
   }
 }

@@ -1,3 +1,4 @@
+import { AssetList, IBCInfo } from '@chain-registry/types';
 import { Hash } from '@keplr-wallet/crypto';
 
 export const ibcDenom = (
@@ -28,33 +29,6 @@ const findInfo = (ibc, to, from) =>
     (i) =>
       i['chain-1']['chain-name'] === from && i['chain-2']['chain-name'] === to
   );
-
-export interface IBCChainInfo {
-  'chain-name': string;
-  'client-id': string;
-  'connection-id': string;
-}
-
-export interface IBCChannelPortAndChannel {
-  'channel-id': string;
-  'port-id': string;
-}
-export interface IBCChannelInfo {
-  'chain-1': IBCChannelPortAndChannel;
-  'chain-2': IBCChannelPortAndChannel;
-  ordering: string;
-  version: string;
-  tags?: {
-    [key: string]: string;
-  };
-}
-
-export interface IBCInfo {
-  $schema: string;
-  'chain-1': IBCChainInfo;
-  'chain-2': IBCChainInfo;
-  channels: IBCChannelInfo[];
-}
 
 export const getIbcInfo = (
   ibc: IBCInfo[],
@@ -94,53 +68,11 @@ export const getWasmChannel = (info: IBCInfo) => {
   );
 };
 
-export const getIbcDenom = (
-  ibc: IBCInfo[],
-  chain: string,
-  counterparty: string,
-  assets: any[],
-  symbol: string
-): string => {
-  const ibcInfo = getIbcInfo(ibc, chain, counterparty);
-  if (ibcInfo) {
-    const channel = getTransferChannel(ibcInfo);
-    if (!channel) {
-      return;
-    }
-    let channelInfo;
-    if (ibcInfo['chain-1']['chain-name'] === chain) {
-      channelInfo = channel['chain-1'];
-    } else {
-      channelInfo = channel['chain-2'];
-    }
-
-    const assetInfo = assets.find(
-      ({ chain_name }) => chain_name === counterparty
-    );
-    if (!assetInfo) {
-      return;
-    }
-    const token = assetInfo.assets.find((a) => a.symbol === symbol);
-
-    if (!token) return;
-
-    return ibcDenom(
-      [
-        {
-          portId: channelInfo['port-id'],
-          channelId: channelInfo['channel-id']
-        }
-      ],
-      token.base
-    );
-  }
-};
-
 export const getIbcDenomByBase = (
   ibc: IBCInfo[],
   chain: string,
   counterparty: string,
-  assets: any[],
+  assets: AssetList[],
   base: string
 ): string => {
   const ibcInfo = getIbcInfo(ibc, chain, counterparty);
@@ -156,12 +88,56 @@ export const getIbcDenomByBase = (
       channelInfo = channel['chain-2'];
     }
 
-    const assetInfo = assets.find(
+    const assetList = assets.find(
       ({ chain_name }) => chain_name === counterparty
     );
-    if (!assetInfo) {
+    if (!assetList) {
       return;
     }
+
+    const assetInfo = assetList.assets.find((asset) => {
+      return asset.base === base;
+    });
+
+    if (!assetInfo) {
+      console.warn('missing referrenced asset');
+    }
+
+    // TODO transition later!
+    const transition = [];
+    if (assetInfo.ibc) {
+      transition.push({
+        type: 'ibc',
+        counterparty: {
+          denom: assetInfo.ibc.source_denom,
+          channel: assetInfo.ibc.source_channel
+        },
+        chain: {
+          channel: assetInfo.ibc.dst_channel
+        }
+      });
+    }
+    if (assetInfo.transition && assetInfo.transition.length) {
+      [].push.apply(transition, assetInfo.transition);
+    }
+
+    // console.log(transition);
+
+    // if (transition.length) {
+    //   return ibcDenom(
+    //     [
+    //       {
+    //         portId: 'transfer',
+    //         channelId: assetInfo.ibc.source_channel
+    //       },
+    //       {
+    //         portId: channelInfo['port-id'],
+    //         channelId: channelInfo['channel-id']
+    //       }
+    //     ],
+    //     base
+    //   );
+    // }
 
     return ibcDenom(
       [
@@ -179,7 +155,7 @@ export const getIbcDenomByBaseForCw20 = (
   ibc: IBCInfo[],
   chain: string,
   counterparty: string,
-  assets: any[],
+  assets: AssetList[],
   base: string
 ): string => {
   const ibcInfo = getIbcInfo(ibc, chain, counterparty);
@@ -217,7 +193,7 @@ export const getIbcDenomByBaseForCw20 = (
 export const getIbcAssets = (
   chainName: string,
   ibc: IBCInfo[],
-  assets: any[]
+  assets: AssetList[]
 ) => {
   const chainIbcInfo = ibc.filter((i) => {
     return (
@@ -338,7 +314,7 @@ export const getIbcAssets = (
 export const getCw20Assets = (
   chainName: string,
   ibc: IBCInfo[],
-  assets: any[]
+  assets: AssetList[]
 ) => {
   const chainIbcInfo = ibc.filter((i) => {
     return (
@@ -471,7 +447,7 @@ export const getCw20Assets = (
 export const getAssetLists = (
   chainName: string,
   ibc: IBCInfo[],
-  assets: any[]
+  assets: AssetList[]
 ) => {
   const ibcAssetLists = getIbcAssets(chainName, ibc, assets);
   const cw20Assets = getCw20Assets(chainName, ibc, assets);

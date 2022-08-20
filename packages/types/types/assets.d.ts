@@ -3,6 +3,19 @@ export interface AssetDenomUnit {
     exponent: number;
     aliases?: string[];
 }
+export interface IBCTransition {
+    type: 'ibc';
+    counterparty: {
+        port?: string;
+        channel: string;
+        denom: string;
+        chain_name: string;
+    };
+    chain: {
+        port?: string;
+        channel: string;
+    };
+}
 export interface Asset {
     description?: string;
     type_asset?: string;
@@ -18,9 +31,15 @@ export interface Asset {
     };
     coingecko_id?: string;
     keywords?: string[];
+    transition?: IBCTransition[];
+    ibc?: {
+        source_channel?: string;
+        source_denom?: string;
+        dst_channel?: string;
+    };
 }
 export declare type AssetList = {
-    $schema: string;
+    $schema?: string;
     chain_name: string;
     assets: Asset[];
 };

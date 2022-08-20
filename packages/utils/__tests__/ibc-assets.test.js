@@ -5,6 +5,5 @@ import { getIbcAssets } from '../src';
 it('getIbcAssets', () => {
   const chainName = 'osmosis';
   const list = getIbcAssets(chainName, ibc, assets);
-
   expect(list).toMatchSnapshot();
 });

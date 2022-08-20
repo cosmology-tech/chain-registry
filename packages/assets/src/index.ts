@@ -1,7 +1,7 @@
-import ibc_assets from './ibc_assets';
+import asset_lists from './asset_lists';
 
 export default {
-  ibc_assets
+  asset_lists
 };
 
-export { ibc_assets };
+export { asset_lists };

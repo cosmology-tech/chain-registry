@@ -19,11 +19,11 @@ npm install @chain-registry/osmosis
 ```
 
 ```js
-import { chain, assets, ibc_assets } from '@chain-registry/osmosis';
+import { chain, assets, asset_list } from '@chain-registry/osmosis';
 ```
 
 ```js
-console.log(ibc_assets);
+console.log(asset_list);
 {
   chain_name: 'osmosis',
   assets: [

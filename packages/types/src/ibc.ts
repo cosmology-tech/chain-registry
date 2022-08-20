@@ -1,5 +1,5 @@
 export interface IBCInfo {
-  $schema: string;
+  $schema?: string;
   'chain-1': {
     'chain-name': string;
     'client-id': string;

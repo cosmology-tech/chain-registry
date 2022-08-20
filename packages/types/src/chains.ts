@@ -1,5 +1,5 @@
 export interface Chain {
-  $schema: string;
+  $schema?: string;
   chain_name: string;
   status: string;
   network_type: string;

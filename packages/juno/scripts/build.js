@@ -1,12 +1,12 @@
-import { getIbcAssets } from '@chain-registry/utils';
+import { getAssetLists } from '@chain-registry/utils';
 import { assets, chains, ibc } from 'chain-registry';
 import { writeFileSync } from 'fs';
 
 const chainName = 'juno';
 
-const ibc_assets = assets.reduce((m, { chain_name }) => {
+const asset_list = assets.reduce((m, { chain_name }) => {
   if (chain_name !== chainName) return m;
-  return [...m, ...getIbcAssets(chain_name, ibc, assets)];
+  return [...m, ...getAssetLists(chain_name, ibc, assets)];
 }, []);
 
 const assetList = assets.find((list) => list.chain_name === chainName);
@@ -26,4 +26,4 @@ export default ${file};
 
 write(`chain`, chain, 'Chain');
 write(`assets`, assetList, 'AssetList');
-write(`ibc_assets`, ibc_assets[0], 'IBCAsset');
+write(`asset_list`, asset_list[0], 'AssetList');
