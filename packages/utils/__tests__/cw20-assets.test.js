@@ -1,10 +1,10 @@
 import assets from '../../../__fixtures__/assets.json';
 import ibc from '../../../__fixtures__/ibc.json';
-import { getIbcAssets } from '../src';
+import { getCw20Assets } from '../src';
 
-it('getIbcAssets', () => {
+it('getCw20Assets', () => {
   const chainName = 'osmosis';
-  const list = getIbcAssets(chainName, ibc, assets);
+  const list = getCw20Assets(chainName, ibc, assets);
 
   expect(list).toMatchSnapshot();
 });
