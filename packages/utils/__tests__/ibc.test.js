@@ -30,7 +30,7 @@ it('JUNO on osmosis', () => {
   );
 });
 
-it.only('PSTAKE on osmosis', () => {
+xit('PSTAKE on osmosis', () => {
   const denom = getIbcDenomByBase(
     ibc,
     'osmosis',

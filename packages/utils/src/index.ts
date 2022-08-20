@@ -121,23 +121,23 @@ export const getIbcDenomByBase = (
       [].push.apply(transition, assetInfo.transition);
     }
 
-    console.log(transition);
+    // console.log(transition);
 
-    if (transition.length) {
-      return ibcDenom(
-        [
-          {
-            portId: 'transfer',
-            channelId: assetInfo.ibc.source_channel
-          },
-          {
-            portId: channelInfo['port-id'],
-            channelId: channelInfo['channel-id']
-          }
-        ],
-        base
-      );
-    }
+    // if (transition.length) {
+    //   return ibcDenom(
+    //     [
+    //       {
+    //         portId: 'transfer',
+    //         channelId: assetInfo.ibc.source_channel
+    //       },
+    //       {
+    //         portId: channelInfo['port-id'],
+    //         channelId: channelInfo['channel-id']
+    //       }
+    //     ],
+    //     base
+    //   );
+    // }
 
     return ibcDenom(
       [
