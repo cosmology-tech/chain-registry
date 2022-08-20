@@ -1,5 +1,5 @@
-import { IBCAsset } from '@chain-registry/types';
-const ibc_assets: IBCAsset = {
+import { AssetList } from '@chain-registry/types';
+const asset_list: AssetList = {
   chain_name: 'juno',
   assets: [
     {
@@ -29,16 +29,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
       },
       coingecko_id: 'akash-network',
-      ibc: {
-        counterparty: {
-          channel: 'channel-35',
-          denom: 'uakt',
-          chain_name: 'akash'
-        },
-        chain: {
-          channel: 'channel-29'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-35',
+            denom: 'uakt',
+            chain_name: 'akash'
+          },
+          chain: {
+            channel: 'channel-29'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The native token of Asset Mantle',
@@ -64,16 +67,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png'
       },
       coingecko_id: 'assetmantle',
-      ibc: {
-        counterparty: {
-          channel: 'channel-2',
-          denom: 'umntl',
-          chain_name: 'assetmantle'
-        },
-        chain: {
-          channel: 'channel-83'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-2',
+            denom: 'umntl',
+            chain_name: 'assetmantle'
+          },
+          chain: {
+            channel: 'channel-83'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The native token of Axelar',
@@ -101,16 +107,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
       },
       coingecko_id: 'axelar-network',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'uaxl',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'uaxl',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: "Circle's stablecoin on Axelar",
@@ -138,16 +147,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png'
       },
       coingecko_id: 'usd-coin',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'uusdc',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'uusdc',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: "Frax's fractional-algorithmic stablecoin on Axelar",
@@ -175,16 +187,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.png'
       },
       coingecko_id: 'frax',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'frax-wei',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'frax-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Dai stablecoin on Axelar',
@@ -212,16 +227,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.png'
       },
       coingecko_id: 'dai',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'dai-wei',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'dai-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: "Tether's USD stablecoin on Axelar",
@@ -249,16 +267,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png'
       },
       coingecko_id: 'tether',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'uusdt',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'uusdt',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Wrapped Ether on Axelar',
@@ -284,16 +305,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png'
       },
       coingecko_id: 'weth',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'weth-wei',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'weth-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Wrapped Bitcoin on Axelar',
@@ -319,16 +343,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png'
       },
       coingecko_id: 'wrapped-bitcoin',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'wbtc-satoshi',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'wbtc-satoshi',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Aave on Axelar',
@@ -354,16 +381,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg'
       },
       coingecko_id: 'aave',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'aave-wei',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'aave-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: 'ApeCoin on Axelar',
@@ -389,16 +419,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg'
       },
       coingecko_id: 'apecoin',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'ape-wei',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'ape-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Axie Infinity Shard on Axelar',
@@ -426,16 +459,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg'
       },
       coingecko_id: 'axie-infinity',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'axs-wei',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'axs-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Chainlink on Axelar',
@@ -463,16 +499,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
       },
       coingecko_id: 'chainlink',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'link-wei',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'link-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Maker on Axelar',
@@ -498,16 +537,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg'
       },
       coingecko_id: 'maker',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'mkr-wei',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'mkr-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Rai Reflex Index on Axelar',
@@ -533,16 +575,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/rai.svg'
       },
       coingecko_id: 'rai',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'rai-wei',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'rai-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Shiba Inu on Axelar',
@@ -568,16 +613,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg'
       },
       coingecko_id: 'shiba-inu',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'shib-wei',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'shib-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Lido Staked Ether on Axelar',
@@ -603,16 +651,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg'
       },
       coingecko_id: 'staked-ether',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'steth-wei',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'steth-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Uniswap on Axelar',
@@ -638,16 +689,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg'
       },
       coingecko_id: 'uniswap',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'uni-wei',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'uni-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Chain on Axelar',
@@ -673,16 +727,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg'
       },
       coingecko_id: 'chain-2',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'xcn-wei',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'xcn-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Wrapped Polkadot on Axelar',
@@ -710,16 +767,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.png'
       },
       coingecko_id: 'polkadot',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'dot-planck',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'dot-planck',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Wrapped Moonbeam on Axelar',
@@ -747,16 +807,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.png'
       },
       coingecko_id: 'wrapped-moonbeam',
-      ibc: {
-        counterparty: {
-          channel: 'channel-4',
-          denom: 'wglmr-wei',
-          chain_name: 'axelar'
-        },
-        chain: {
-          channel: 'channel-71'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-4',
+            denom: 'wglmr-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel: 'channel-71'
+          }
         }
-      }
+      ]
     },
     {
       description:
@@ -785,16 +848,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg'
       },
       coingecko_id: 'bitcanna',
-      ibc: {
-        counterparty: {
-          channel: 'channel-10',
-          denom: 'ubcna',
-          chain_name: 'bitcanna'
-        },
-        chain: {
-          channel: 'channel-50'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-10',
+            denom: 'ubcna',
+            chain_name: 'bitcanna'
+          },
+          chain: {
+            channel: 'channel-50'
+          }
         }
-      }
+      ]
     },
     {
       description: 'BitSong Native Token',
@@ -823,16 +889,19 @@ const ibc_assets: IBCAsset = {
       },
       type_asset: 'sdk.coin',
       coingecko_id: 'bitsong',
-      ibc: {
-        counterparty: {
-          channel: 'channel-5',
-          denom: 'ubtsg',
-          chain_name: 'bitsong'
-        },
-        chain: {
-          channel: 'channel-17'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-5',
+            denom: 'ubtsg',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel: 'channel-17'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Adam Clay a BitSong Music FanToken',
@@ -857,16 +926,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-5',
-          denom: 'ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09',
-          chain_name: 'bitsong'
-        },
-        chain: {
-          channel: 'channel-17'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-5',
+            denom: 'ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel: 'channel-17'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Nicola Fasano a BitSong Music FanToken',
@@ -891,16 +963,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-5',
-          denom: 'ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7',
-          chain_name: 'bitsong'
-        },
-        chain: {
-          channel: 'channel-17'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-5',
+            denom: 'ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel: 'channel-17'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Delta 9 a BitSong Music FanToken',
@@ -925,16 +1000,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft575B10B0CEE2C164D9ED6A96313496F164A9607C.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-5',
-          denom: 'ft575B10B0CEE2C164D9ED6A96313496F164A9607C',
-          chain_name: 'bitsong'
-        },
-        chain: {
-          channel: 'channel-17'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-5',
+            denom: 'ft575B10B0CEE2C164D9ED6A96313496F164A9607C',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel: 'channel-17'
+          }
         }
-      }
+      ]
     },
     {
       description: 'FONTI a BitSong Music FanToken',
@@ -959,16 +1037,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-5',
-          denom: 'ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305',
-          chain_name: 'bitsong'
-        },
-        chain: {
-          channel: 'channel-17'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-5',
+            denom: 'ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel: 'channel-17'
+          }
         }
-      }
+      ]
     },
     {
       description: 'BlackJack a BitSong Music FanToken',
@@ -993,16 +1074,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft52EEB0EE509AC546ED92EAC8591F731F213DDD16.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-5',
-          denom: 'ft52EEB0EE509AC546ED92EAC8591F731F213DDD16',
-          chain_name: 'bitsong'
-        },
-        chain: {
-          channel: 'channel-17'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-5',
+            denom: 'ft52EEB0EE509AC546ED92EAC8591F731F213DDD16',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel: 'channel-17'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Rawanne a BitSong Music FanToken',
@@ -1027,16 +1111,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-5',
-          denom: 'ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A',
-          chain_name: 'bitsong'
-        },
-        chain: {
-          channel: 'channel-17'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-5',
+            denom: 'ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel: 'channel-17'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Enmoda a BitSong Music FanToken',
@@ -1061,16 +1148,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft85AE1716C5E39EA6D64BBD7898C3899A7B500626.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-5',
-          denom: 'ft85AE1716C5E39EA6D64BBD7898C3899A7B500626',
-          chain_name: 'bitsong'
-        },
-        chain: {
-          channel: 'channel-17'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-5',
+            denom: 'ft85AE1716C5E39EA6D64BBD7898C3899A7B500626',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel: 'channel-17'
+          }
         }
-      }
+      ]
     },
     {
       description: '404Deep Records a BitSong Music FanToken',
@@ -1095,16 +1185,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-5',
-          denom: 'ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A',
-          chain_name: 'bitsong'
-        },
-        chain: {
-          channel: 'channel-17'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-5',
+            denom: 'ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel: 'channel-17'
+          }
         }
-      }
+      ]
     },
     {
       description: 'N43 a BitSong Music FanToken',
@@ -1129,16 +1222,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-5',
-          denom: 'ft387C1C279D962ED80C09C1D592A92C4275FD7C5D',
-          chain_name: 'bitsong'
-        },
-        chain: {
-          channel: 'channel-17'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-5',
+            denom: 'ft387C1C279D962ED80C09C1D592A92C4275FD7C5D',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel: 'channel-17'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Puro Lobo a BitSong Music FanToken',
@@ -1163,16 +1259,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-5',
-          denom: 'ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB',
-          chain_name: 'bitsong'
-        },
-        chain: {
-          channel: 'channel-17'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-5',
+            denom: 'ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel: 'channel-17'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Vibranium a BitSong Music FanToken',
@@ -1197,16 +1296,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-5',
-          denom: 'ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B',
-          chain_name: 'bitsong'
-        },
-        chain: {
-          channel: 'channel-17'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-5',
+            denom: 'ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel: 'channel-17'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Karina a BitSong Music FanToken',
@@ -1231,16 +1333,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-5',
-          denom: 'ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE',
-          chain_name: 'bitsong'
-        },
-        chain: {
-          channel: 'channel-17'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-5',
+            denom: 'ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel: 'channel-17'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Luca Testa a BitSong Music FanToken',
@@ -1265,16 +1370,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-5',
-          denom: 'ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12',
-          chain_name: 'bitsong'
-        },
-        chain: {
-          channel: 'channel-17'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-5',
+            denom: 'ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel: 'channel-17'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Carolina Marquez a BitSong Music FanToken',
@@ -1299,16 +1407,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-5',
-          denom: 'ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3',
-          chain_name: 'bitsong'
-        },
-        chain: {
-          channel: 'channel-17'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-5',
+            denom: 'ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel: 'channel-17'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The native token of Chihuahua Chain',
@@ -1334,16 +1445,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png'
       },
       coingecko_id: 'chihuahua-token',
-      ibc: {
-        counterparty: {
-          channel: 'channel-11',
-          denom: 'uhuahua',
-          chain_name: 'chihuahua'
-        },
-        chain: {
-          channel: 'channel-28'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-11',
+            denom: 'uhuahua',
+            chain_name: 'chihuahua'
+          },
+          chain: {
+            channel: 'channel-28'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Native Token of Comdex Protocol',
@@ -1369,16 +1483,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png'
       },
       coingecko_id: 'comdex',
-      ibc: {
-        counterparty: {
-          channel: 'channel-18',
-          denom: 'ucmdx',
-          chain_name: 'comdex'
-        },
-        chain: {
-          channel: 'channel-36'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-18',
+            denom: 'ucmdx',
+            chain_name: 'comdex'
+          },
+          chain: {
+            channel: 'channel-36'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The native staking and governance token of the Cosmos Hub.',
@@ -1406,16 +1523,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
       },
       coingecko_id: 'cosmos',
-      ibc: {
-        counterparty: {
-          channel: 'channel-207',
-          denom: 'uatom',
-          chain_name: 'cosmoshub'
-        },
-        chain: {
-          channel: 'channel-1'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-207',
+            denom: 'uatom',
+            chain_name: 'cosmoshub'
+          },
+          chain: {
+            channel: 'channel-1'
+          }
         }
-      }
+      ]
     },
     {
       description: 'Native token of Dig Chain',
@@ -1441,16 +1561,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png'
       },
       coingecko_id: 'dig-chain',
-      ibc: {
-        counterparty: {
-          channel: 'channel-2',
-          denom: 'udig',
-          chain_name: 'dig'
-        },
-        chain: {
-          channel: 'channel-37'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-2',
+            denom: 'udig',
+            chain_name: 'dig'
+          },
+          chain: {
+            channel: 'channel-37'
+          }
         }
-      }
+      ]
     },
     {
       description:
@@ -1477,16 +1600,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png'
       },
       coingecko_id: 'e-money',
-      ibc: {
-        counterparty: {
-          channel: 'channel-15',
-          denom: 'ungm',
-          chain_name: 'emoney'
-        },
-        chain: {
-          channel: 'channel-9'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-15',
+            denom: 'ungm',
+            chain_name: 'emoney'
+          },
+          chain: {
+            channel: 'channel-9'
+          }
         }
-      }
+      ]
     },
     {
       description:
@@ -1499,7 +1625,7 @@ const ibc_assets: IBCAsset = {
           aliases: ['eeur']
         },
         {
-          denom: 'EUR',
+          denom: 'eur',
           exponent: 6
         }
       ],
@@ -1513,16 +1639,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.png'
       },
       coingecko_id: 'e-money-eur',
-      ibc: {
-        counterparty: {
-          channel: 'channel-15',
-          denom: 'eeur',
-          chain_name: 'emoney'
-        },
-        chain: {
-          channel: 'channel-9'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-15',
+            denom: 'eeur',
+            chain_name: 'emoney'
+          },
+          chain: {
+            channel: 'channel-9'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The native token of Osmosis',
@@ -1552,16 +1681,19 @@ const ibc_assets: IBCAsset = {
       },
       coingecko_id: 'osmosis',
       keywords: ['dex', 'staking'],
-      ibc: {
-        counterparty: {
-          channel: 'channel-42',
-          denom: 'uosmo',
-          chain_name: 'osmosis'
-        },
-        chain: {
-          channel: 'channel-0'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-42',
+            denom: 'uosmo',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel: 'channel-0'
+          }
         }
-      }
+      ]
     },
     {
       denom_units: [
@@ -1589,16 +1721,19 @@ const ibc_assets: IBCAsset = {
       },
       coingecko_id: 'ion',
       keywords: ['memecoin'],
-      ibc: {
-        counterparty: {
-          channel: 'channel-42',
-          denom: 'uion',
-          chain_name: 'osmosis'
-        },
-        chain: {
-          channel: 'channel-0'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-42',
+            denom: 'uion',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel: 'channel-0'
+          }
         }
-      }
+      ]
     },
     {
       description:
@@ -1627,16 +1762,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
       },
       coingecko_id: 'persistence',
-      ibc: {
-        counterparty: {
-          channel: 'channel-37',
-          denom: 'uxprt',
-          chain_name: 'persistence'
-        },
-        chain: {
-          channel: 'channel-33'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-37',
+            denom: 'uxprt',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel: 'channel-33'
+          }
         }
-      }
+      ]
     },
     {
       description:
@@ -1661,15 +1799,9 @@ const ibc_assets: IBCAsset = {
       display: 'pstake',
       symbol: 'PSTAKE',
       ibc: {
-        counterparty: {
-          channel: 'channel-37',
-          denom:
-            'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444',
-          chain_name: 'persistence'
-        },
-        chain: {
-          channel: 'channel-33'
-        }
+        source_channel: 'channel-24',
+        dst_channel: 'channel-38',
+        source_denom: 'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
       },
       logo_URIs: {
         png:
@@ -1677,7 +1809,21 @@ const ibc_assets: IBCAsset = {
         svg:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg'
       },
-      coingecko_id: 'pstake-finance'
+      coingecko_id: 'pstake-finance',
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-37',
+            denom:
+              'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel: 'channel-33'
+          }
+        }
+      ]
     },
     {
       description: 'The native token of Secret Network',
@@ -1705,16 +1851,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
       },
       coingecko_id: 'secret',
-      ibc: {
-        counterparty: {
-          channel: 'channel-8',
-          denom: 'uscrt',
-          chain_name: 'secretnetwork'
-        },
-        chain: {
-          channel: 'channel-48'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-8',
+            denom: 'uscrt',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            channel: 'channel-48'
+          }
         }
-      }
+      ]
     },
     {
       description:
@@ -1739,16 +1888,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png'
       },
       coingecko_id: 'sifchain',
-      ibc: {
-        counterparty: {
-          channel: 'channel-14',
-          denom: 'rowan',
-          chain_name: 'sifchain'
-        },
-        chain: {
-          channel: 'channel-5'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-14',
+            denom: 'rowan',
+            chain_name: 'sifchain'
+          },
+          chain: {
+            channel: 'channel-5'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The native token of Stargaze',
@@ -1774,16 +1926,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png'
       },
       coingecko_id: 'stargaze',
-      ibc: {
-        counterparty: {
-          channel: 'channel-5',
-          denom: 'ustars',
-          chain_name: 'stargaze'
-        },
-        chain: {
-          channel: 'channel-20'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-5',
+            denom: 'ustars',
+            chain_name: 'stargaze'
+          },
+          chain: {
+            channel: 'channel-20'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The native staking token of Terra Classic.',
@@ -1817,16 +1972,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.png'
       },
       coingecko_id: 'terra-luna',
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'uluna',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'uluna',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The USD stablecoin of Terra Classic.',
@@ -1860,16 +2018,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ust.png'
       },
       coingecko_id: 'terrausd',
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'uusd',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'uusd',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The KRW stablecoin of Terra Classic.',
@@ -1903,16 +2064,19 @@ const ibc_assets: IBCAsset = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.png'
       },
       coingecko_id: 'terrakrw',
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'ukrw',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'ukrw',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The AUD stablecoin of Terra Classic.',
@@ -1945,16 +2109,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aut.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'uaud',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'uaud',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The CAD stablecoin of Terra Classic.',
@@ -1987,16 +2154,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cat.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'ucad',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'ucad',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The CHF stablecoin of Terra Classic.',
@@ -2029,16 +2199,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cht.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'uchf',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'uchf',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The CNY stablecoin of Terra Classic.',
@@ -2071,16 +2244,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnt.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'ucny',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'ucny',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The DKK stablecoin of Terra Classic.',
@@ -2113,16 +2289,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dkt.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'udkk',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'udkk',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The EUR stablecoin of Terra Classic.',
@@ -2155,16 +2334,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eut.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'ueur',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'ueur',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The GBP stablecoin of Terra Classic.',
@@ -2197,16 +2379,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gbt.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'ugbp',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'ugbp',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The HKD stablecoin of Terra Classic.',
@@ -2239,16 +2424,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/hkt.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'uhkd',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'uhkd',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The IDR stablecoin of Terra Classic.',
@@ -2281,16 +2469,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/idt.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'uidr',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'uidr',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The INR stablecoin of Terra Classic.',
@@ -2323,16 +2514,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/int.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'uinr',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'uinr',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The JPY stablecoin of Terra Classic.',
@@ -2365,16 +2559,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/jpt.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'ujpy',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'ujpy',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The MNT stablecoin of Terra Classic.',
@@ -2407,16 +2604,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnt.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'umnt',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'umnt',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The MYR stablecoin of Terra Classic.',
@@ -2449,16 +2649,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/myt.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'umyr',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'umyr',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The NOK stablecoin of Terra Classic.',
@@ -2491,16 +2694,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/not.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'unok',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'unok',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The PHP stablecoin of Terra Classic.',
@@ -2533,16 +2739,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pht.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'uphp',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'uphp',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The SDR stablecoin of Terra Classic.',
@@ -2575,16 +2784,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sdt.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'usdr',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'usdr',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The SEK stablecoin of Terra Classic.',
@@ -2617,16 +2829,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/set.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'usek',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'usek',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The SGD stablecoin of Terra Classic.',
@@ -2659,16 +2874,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sgt.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'usgd',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'usgd',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The THB stablecoin of Terra Classic.',
@@ -2701,16 +2919,19 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tht.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'uthb',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'uthb',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     },
     {
       description: 'The TWD stablecoin of Terra Classic.',
@@ -2743,17 +2964,20 @@ const ibc_assets: IBCAsset = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twt.png'
       },
-      ibc: {
-        counterparty: {
-          channel: 'channel-20',
-          denom: 'utwd',
-          chain_name: 'terra'
-        },
-        chain: {
-          channel: 'channel-27'
+      transition: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-20',
+            denom: 'utwd',
+            chain_name: 'terra'
+          },
+          chain: {
+            channel: 'channel-27'
+          }
         }
-      }
+      ]
     }
   ]
 };
-export default ibc_assets;
+export default asset_list;

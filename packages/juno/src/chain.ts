@@ -161,7 +161,7 @@ const chain: Chain = {
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/juno',
-      tx_page: 'https://www.mintscan.io/juno/txs/{txHash}'
+      tx_page: 'https://www.mintscan.io/juno/txs/${txHash}'
     },
     {
       kind: 'atomscan',
