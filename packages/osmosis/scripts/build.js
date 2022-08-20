@@ -4,7 +4,7 @@ import { writeFileSync } from 'fs';
 
 const chainName = 'osmosis';
 
-const ibc_assets = assets.reduce((m, { chain_name }) => {
+const asset_list = assets.reduce((m, { chain_name }) => {
   if (chain_name !== chainName) return m;
   return [...m, ...getAssetLists(chain_name, ibc, assets)];
 }, []);
@@ -26,4 +26,4 @@ export default ${file};
 
 write(`chain`, chain, 'Chain');
 write(`assets`, assetList, 'AssetList');
-write(`asset_list`, ibc_assets[0], 'AssetList');
+write(`asset_list`, asset_list[0], 'AssetList');

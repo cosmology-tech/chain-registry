@@ -19,8 +19,8 @@ npm install @chain-registry/assets
 ```
 
 ```js
-import { ibc_assets } from '@chain-registry/assets';
-const assetList = ibc_assets
+import { asset_lists } from '@chain-registry/assets';
+const assetList = asset_lists
     .find(asset => asset.chain_name === 'osmosis');
 ```
 
