@@ -23,7 +23,7 @@
     "build": "npm run build:module && npm run build:main",
     "build:ts": "tsc --project ./tsconfig.json",
     "buidl": "npm run build && npm run build:ts",
-    "build:pkg": "babel-node ./scripts/build.js",
+    "codegen": "babel-node ./scripts/build.js",
     "prepare": "npm run build",
     "lint": "eslint --ext .ts,.tsx,.js .",
     "format": "eslint --fix . --ext .ts,.tsx,.js",
@@ -75,6 +75,7 @@
     "typescript": "^4.7.3"
   },
   "dependencies": {
-    "@babel/runtime": "^7.18.3"
+    "@babel/runtime": "^7.18.3",
+    "@chain-registry/types": "^0.4.0"
   }
 }

@@ -32,9 +32,14 @@ export interface Asset {
     coingecko_id?: string;
     keywords?: string[];
     transition?: IBCTransition[];
+    ibc?: {
+        source_channel?: string;
+        source_denom?: string;
+        dst_channel?: string;
+    };
 }
 export declare type AssetList = {
-    $schema: string;
+    $schema?: string;
     chain_name: string;
     assets: Asset[];
 };

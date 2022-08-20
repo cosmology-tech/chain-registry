@@ -34,10 +34,17 @@ export interface Asset {
   coingecko_id?: string;
   keywords?: string[];
   transition?: IBCTransition[];
+
+  // @deprecated
+  ibc?: {
+    source_channel?: string;
+    source_denom?: string;
+    dst_channel?: string;
+  };
 }
 
 export type AssetList = {
-  $schema: string;
+  $schema?: string;
   chain_name: string;
   assets: Asset[];
 };

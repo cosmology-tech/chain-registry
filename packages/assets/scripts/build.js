@@ -1,16 +1,21 @@
-import { getIbcAssets } from '@chain-registry/utils';
+import { getAssetLists } from '@chain-registry/utils';
 import { assets, ibc } from 'chain-registry';
 import { writeFileSync } from 'fs';
 
-const ibc_assets = assets.reduce((m, { chain_name }) => {
-  return [...m, ...getIbcAssets(chain_name, ibc, assets)];
+const asset_lists = assets.reduce((m, { chain_name }) => {
+  return [...m, ...getAssetLists(chain_name, ibc, assets)];
 }, []);
 
-const write = (file, json) => {
+const write = (file, json, TypeName, isArray = false) => {
+  const strfy = JSON.stringify(json, null, 2);
+  const exportType = isArray ? TypeName + '[]' : TypeName;
   writeFileSync(
     `${__dirname}/../src/${file}.ts`,
-    `export default ` + JSON.stringify(json, null, 2) + ';'
+    `import { ${TypeName} } from '@chain-registry/types';
+const ${file}: ${exportType} = ${strfy};
+export default ${file};
+    `
   );
 };
 
-write(`ibc_assets`, ibc_assets);
+write(`asset_lists`, asset_lists, 'AssetList', true);

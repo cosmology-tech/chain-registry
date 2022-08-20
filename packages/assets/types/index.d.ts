@@ -1,7 +1,6 @@
-import ibc_assets from './ibc_assets';
-
-export default {
-  ibc_assets
+import asset_lists from './asset_lists';
+declare const _default: {
+    asset_lists: import("@chain-registry/types").AssetList[];
 };
-
-export { ibc_assets };
+export default _default;
+export { asset_lists };
