@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/utils",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Chain Registry Utils",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
@@ -76,7 +76,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.18.3",
-    "@chain-registry/types": "^0.4.0",
+    "@chain-registry/types": "^0.5.0",
     "@keplr-wallet/crypto": "^0.10.11"
   }
 }
