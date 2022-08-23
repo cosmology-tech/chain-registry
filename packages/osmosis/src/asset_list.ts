@@ -29,7 +29,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
       },
       coingecko_id: 'akash-network',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -67,7 +67,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png'
       },
       coingecko_id: 'assetmantle',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -107,7 +107,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
       },
       coingecko_id: 'axelar-network',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -147,7 +147,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png'
       },
       coingecko_id: 'usd-coin',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -187,7 +187,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.png'
       },
       coingecko_id: 'frax',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -227,7 +227,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.png'
       },
       coingecko_id: 'dai',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -267,7 +267,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png'
       },
       coingecko_id: 'tether',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -305,7 +305,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png'
       },
       coingecko_id: 'weth',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -343,7 +343,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png'
       },
       coingecko_id: 'wrapped-bitcoin',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -381,7 +381,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg'
       },
       coingecko_id: 'aave',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -419,7 +419,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg'
       },
       coingecko_id: 'apecoin',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -459,7 +459,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg'
       },
       coingecko_id: 'axie-infinity',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -499,7 +499,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
       },
       coingecko_id: 'chainlink',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -537,7 +537,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg'
       },
       coingecko_id: 'maker',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -575,7 +575,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/rai.svg'
       },
       coingecko_id: 'rai',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -613,7 +613,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg'
       },
       coingecko_id: 'shiba-inu',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -651,7 +651,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg'
       },
       coingecko_id: 'staked-ether',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -689,7 +689,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg'
       },
       coingecko_id: 'uniswap',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -727,7 +727,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg'
       },
       coingecko_id: 'chain-2',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -767,7 +767,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.png'
       },
       coingecko_id: 'polkadot',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -807,7 +807,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.png'
       },
       coingecko_id: 'wrapped-moonbeam',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -847,7 +847,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg'
       },
       coingecko_id: 'band-protocol',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -888,7 +888,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg'
       },
       coingecko_id: 'bitcanna',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -929,7 +929,7 @@ const asset_list: AssetList = {
       },
       type_asset: 'sdk.coin',
       coingecko_id: 'bitsong',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -966,7 +966,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1003,7 +1003,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1040,7 +1040,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft575B10B0CEE2C164D9ED6A96313496F164A9607C.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1077,7 +1077,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1114,7 +1114,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft52EEB0EE509AC546ED92EAC8591F731F213DDD16.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1151,7 +1151,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1188,7 +1188,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft85AE1716C5E39EA6D64BBD7898C3899A7B500626.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1225,7 +1225,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1262,7 +1262,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1299,7 +1299,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1336,7 +1336,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1373,7 +1373,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1410,7 +1410,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1447,7 +1447,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1481,7 +1481,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png'
       },
       coingecko_id: 'bostrom',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1522,7 +1522,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/swth.svg'
       },
       coingecko_id: 'switcheo',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1560,7 +1560,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png'
       },
       coingecko_id: 'cerberus-2',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1600,7 +1600,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.svg'
       },
       coingecko_id: 'cheqd-network',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1638,7 +1638,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png'
       },
       coingecko_id: 'chihuahua-token',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1676,7 +1676,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png'
       },
       coingecko_id: 'comdex',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1716,7 +1716,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
       },
       coingecko_id: 'cosmos',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1757,7 +1757,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg'
       },
       coingecko_id: 'crescent-network',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1798,7 +1798,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
       },
       coingecko_id: 'crescent-network',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1836,7 +1836,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png'
       },
       coingecko_id: 'crypto-com-chain',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1877,7 +1877,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg'
       },
       coingecko_id: 'decentr',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1918,7 +1918,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg'
       },
       coingecko_id: 'desmos',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1956,7 +1956,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png'
       },
       coingecko_id: 'dig-chain',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -1995,7 +1995,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png'
       },
       coingecko_id: 'e-money',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2034,7 +2034,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.png'
       },
       coingecko_id: 'e-money-eur',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2075,7 +2075,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png'
       },
       coingecko_id: 'evmos',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2115,7 +2115,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.svg'
       },
       coingecko_id: 'fetch-ai',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2155,7 +2155,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2194,7 +2194,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2234,7 +2234,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2275,7 +2275,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2313,7 +2313,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png'
       },
       coingecko_id: 'ixo',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2354,7 +2354,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
       },
       coingecko_id: 'injective-protocol',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2395,7 +2395,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg'
       },
       coingecko_id: 'iris-network',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2435,7 +2435,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
       },
       coingecko_id: 'juno-network',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2478,7 +2478,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/osmosis-labs/assetlists/main/images/neta.png'
       },
       coingecko_id: 'neta',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2517,7 +2517,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png'
       },
       coingecko_id: 'kava',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2557,7 +2557,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.svg'
       },
       coingecko_id: 'kava-lend',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2597,7 +2597,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.svg'
       },
       coingecko_id: 'kava-swap',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2635,7 +2635,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.png'
       },
       coingecko_id: 'usdx',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2675,7 +2675,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'
       },
       coingecko_id: 'ki',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2715,7 +2715,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/darc.svg'
       },
       coingecko_id: 'darcmatter-coin',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2725,6 +2725,45 @@ const asset_list: AssetList = {
           },
           chain: {
             channel: 'channel-171'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'The native staking and governance token of the Kujira chain.',
+      denom_units: [
+        {
+          denom:
+            'ibc/BB6BCDB515050BAE97516111873CCD7BCF1FD0CCB723CC12F3C4F704D6C646CE',
+          exponent: 0,
+          aliases: ['ukuji']
+        },
+        {
+          denom: 'kuji',
+          exponent: 6
+        }
+      ],
+      base:
+        'ibc/BB6BCDB515050BAE97516111873CCD7BCF1FD0CCB723CC12F3C4F704D6C646CE',
+      name: 'Kuji',
+      display: 'kuji',
+      symbol: 'KUJI',
+      coingecko_id: 'kujira',
+      logo_URIs: {
+        png:
+          'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel: 'channel-3',
+            denom: 'ukuji',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel: 'channel-259'
           }
         }
       ]
@@ -2756,7 +2795,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/like.svg'
       },
       coingecko_id: 'likecoin',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2793,7 +2832,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2833,7 +2872,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.svg'
       },
       coingecko_id: 'lum-network',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2873,7 +2912,7 @@ const asset_list: AssetList = {
         svg:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2913,7 +2952,7 @@ const asset_list: AssetList = {
         svg:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2948,12 +2987,12 @@ const asset_list: AssetList = {
       symbol: 'ORAI',
       logo_URIs: {
         png:
-          'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.png',
+          'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.png',
         svg:
-          'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.svg'
+          'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.svg'
       },
       coingecko_id: 'oraichain-token',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -2992,7 +3031,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.png'
       },
       coingecko_id: 'medibloc',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3033,7 +3072,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
       },
       coingecko_id: 'persistence',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3081,7 +3120,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg'
       },
       coingecko_id: 'pstake-finance',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3123,7 +3162,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/hash.svg'
       },
       coingecko_id: 'provenance-blockchain',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3161,7 +3200,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png'
       },
       coingecko_id: 'regen',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3201,7 +3240,7 @@ const asset_list: AssetList = {
         svg:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.svg'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3241,7 +3280,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
       },
       coingecko_id: 'secret',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3279,7 +3318,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png'
       },
       coingecko_id: 'sentinel',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3317,7 +3356,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png'
       },
       coingecko_id: 'certik',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3354,7 +3393,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png'
       },
       coingecko_id: 'sifchain',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3400,7 +3439,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg'
       },
       coingecko_id: 'sommelier',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3438,7 +3477,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png'
       },
       coingecko_id: 'stargaze',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3479,7 +3518,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.svg'
       },
       coingecko_id: 'starname',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3525,7 +3564,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.png'
       },
       coingecko_id: 'terra-luna',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3571,7 +3610,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ust.png'
       },
       coingecko_id: 'terrausd',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3617,7 +3656,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.png'
       },
       coingecko_id: 'terrakrw',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3662,7 +3701,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aut.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3707,7 +3746,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cat.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3752,7 +3791,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cht.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3797,7 +3836,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnt.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3842,7 +3881,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dkt.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3887,7 +3926,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eut.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3932,7 +3971,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gbt.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -3977,7 +4016,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/hkt.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4022,7 +4061,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/idt.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4067,7 +4106,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/int.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4112,7 +4151,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/jpt.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4157,7 +4196,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnt.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4202,7 +4241,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/myt.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4247,7 +4286,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/not.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4292,7 +4331,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pht.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4337,7 +4376,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sdt.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4382,7 +4421,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/set.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4427,7 +4466,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sgt.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4472,7 +4511,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tht.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4517,7 +4556,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twt.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4558,7 +4597,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.svg'
       },
       coingecko_id: 'tgrade',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4596,7 +4635,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png'
       },
       coingecko_id: 'umee',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4637,7 +4676,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png'
       },
       coingecko_id: 'vidulum',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4682,7 +4721,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/neta.svg'
       },
       coingecko_id: 'neta',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4731,7 +4770,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.svg'
       },
       coingecko_id: 'marble',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4781,7 +4820,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.svg'
       },
       coingecko_id: 'hope-galaxy',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4831,7 +4870,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.svg'
       },
       coingecko_id: 'racoon',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4879,7 +4918,7 @@ const asset_list: AssetList = {
         svg:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/block.svg'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4923,7 +4962,7 @@ const asset_list: AssetList = {
         svg:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dhk.svg'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -4970,7 +5009,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.png'
       },
       coingecko_id: 'junoswap-raw-dao',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -5017,7 +5056,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/asvt.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -5064,7 +5103,7 @@ const asset_list: AssetList = {
         svg:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hns.svg'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -5110,7 +5149,7 @@ const asset_list: AssetList = {
         png:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/joe.png'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -5158,7 +5197,7 @@ const asset_list: AssetList = {
         svg:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -5206,7 +5245,7 @@ const asset_list: AssetList = {
         svg:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -5254,7 +5293,7 @@ const asset_list: AssetList = {
         svg:
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/gkey.svg'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -5276,33 +5315,33 @@ const asset_list: AssetList = {
       description: 'The native token cw20 for BlackHole on Juno Chain',
       type_asset: 'cw20',
       address:
-        'juno1rdw3gumdz7zyjn2pev9ugxs765xlv6vtv6g3jt2lqw580zrchvjs66daca',
+        'juno1t46z6hg8vvsena7sue0vg6w85ljar3cundplkre9sz0skeqkap9sxyyy6m',
       denom_units: [
         {
           denom:
-            'ibc/36ABCB2BD7197D778A8EFD4F97E5721CA4CF87F7D39EDD76EC238F2219B7A508',
+            'ibc/A9A73A9FEAF97112CC70F5D5E96D598398F2D015D4BD7DFE8804CE7AE8794D9D',
           exponent: 0,
           aliases: [
-            'cw20:juno1rdw3gumdz7zyjn2pev9ugxs765xlv6vtv6g3jt2lqw580zrchvjs66daca'
+            'cw20:juno1t46z6hg8vvsena7sue0vg6w85ljar3cundplkre9sz0skeqkap9sxyyy6m'
           ]
         },
         {
-          denom: 'blkh',
-          exponent: 4
+          denom: 'hole',
+          exponent: 6
         }
       ],
       base:
-        'ibc/36ABCB2BD7197D778A8EFD4F97E5721CA4CF87F7D39EDD76EC238F2219B7A508',
-      name: 'Blackhole',
-      display: 'blkh',
-      symbol: 'BLKH',
+        'ibc/A9A73A9FEAF97112CC70F5D5E96D598398F2D015D4BD7DFE8804CE7AE8794D9D',
+      name: 'BlackHole',
+      display: 'hole',
+      symbol: 'HOLE',
       logo_URIs: {
         png:
-          'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/blkh.png',
+          'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hole.png',
         svg:
-          'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/blkh.svg'
+          'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hole.svg'
       },
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {
@@ -5310,7 +5349,7 @@ const asset_list: AssetList = {
               'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
             channel: 'channel-47',
             denom:
-              'cw20:juno1rdw3gumdz7zyjn2pev9ugxs765xlv6vtv6g3jt2lqw580zrchvjs66daca',
+              'cw20:juno1t46z6hg8vvsena7sue0vg6w85ljar3cundplkre9sz0skeqkap9sxyyy6m',
             chain_name: 'juno'
           },
           chain: {
@@ -5348,7 +5387,7 @@ const asset_list: AssetList = {
           'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/lvn.png'
       },
       coingecko_id: 'lvn',
-      transition: [
+      traces: [
         {
           type: 'ibc',
           counterparty: {

@@ -8,9 +8,9 @@ const chains = [];
 const ibcs = [];
 paths.forEach((file) => {
   const data = JSON.parse(fs.readFileSync(file, 'utf-8'));
-  if (data.$schema === '../assetlist.schema.json') assets.push(data);
-  if (data.$schema === '../chain.schema.json') chains.push(data);
-  if (data.$schema === '../ibc_data.schema.json') ibcs.push(data);
+  if (data.$schema.endsWith('assetlist.schema.json')) assets.push(data);
+  if (data.$schema.endsWith('chain.schema.json')) chains.push(data);
+  if (data.$schema.endsWith('ibc_data.schema.json')) ibcs.push(data);
 });
 
 const addPaths = glob(`${__dirname}/../chain-registry-additions/**/*.json`);

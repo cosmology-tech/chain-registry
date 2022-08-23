@@ -33,7 +33,7 @@ export interface Chain {
       denom: string;
     }[];
   };
-  explorers: {
+  explorers?: {
     kind: string;
     url: string;
     tx_page: string;

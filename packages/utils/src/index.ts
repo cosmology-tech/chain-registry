@@ -104,9 +104,9 @@ export const getIbcDenomByBase = (
     }
 
     // TODO transition later!
-    const transition = [];
+    const traces = [];
     if (assetInfo.ibc) {
-      transition.push({
+      traces.push({
         type: 'ibc',
         counterparty: {
           denom: assetInfo.ibc.source_denom,
@@ -117,8 +117,8 @@ export const getIbcDenomByBase = (
         }
       });
     }
-    if (assetInfo.transition && assetInfo.transition.length) {
-      [].push.apply(transition, assetInfo.transition);
+    if (assetInfo.traces && assetInfo.traces.length) {
+      [].push.apply(traces, assetInfo.traces);
     }
 
     // console.log(transition);
@@ -271,7 +271,7 @@ export const getIbcAssets = (
     const assets = v.assets.map((asset) => {
       return {
         ...asset,
-        transition: [
+        traces: [
           {
             type: 'ibc',
             counterparty: {
@@ -404,7 +404,7 @@ export const getCw20Assets = (
     const assets = v.assets.map((asset) => {
       return {
         ...asset,
-        transition: [
+        traces: [
           {
             type: 'ibc',
             counterparty: {

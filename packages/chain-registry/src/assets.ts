@@ -1006,7 +1006,7 @@ const assets: AssetList[] = [
     assets: [
       {
         description:
-          'BLD is the token used to secure the Agoric chain through staking and to backstop the RUN Protocol.',
+          'BLD is the token used to secure the Agoric chain through staking and to backstop Inter Protocol.',
         denom_units: [
           {
             denom: 'ubld',
@@ -1028,21 +1028,21 @@ const assets: AssetList[] = [
       },
       {
         description:
-          'RUN is the stable token used by the Agoric chain for execution fees and commerce.',
+          'IST is the stable token used by the Agoric chain for execution fees and commerce.',
         denom_units: [
           {
-            denom: 'urun',
+            denom: 'uist',
             exponent: 0
           },
           {
-            denom: 'run',
+            denom: 'ist',
             exponent: 6
           }
         ],
-        base: 'urun',
+        base: 'uist',
         name: 'Agoric Stable Token',
-        display: 'run',
-        symbol: 'RUN',
+        display: 'ist',
+        symbol: 'IST',
         logo_URIs: {
           png:
             'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/run.png'
@@ -1644,6 +1644,36 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../assetlist.schema.json',
+    chain_name: 'beezee',
+    assets: [
+      {
+        description: 'BeeZee native blockchain',
+        denom_units: [
+          {
+            denom: 'ubze',
+            exponent: 0,
+            aliases: []
+          },
+          {
+            denom: 'bze',
+            exponent: 6,
+            aliases: []
+          }
+        ],
+        base: 'ubze',
+        name: 'BeeZee',
+        display: 'bze',
+        symbol: 'BZE',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png'
+        },
+        coingecko_id: 'bzedge'
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
     chain_name: 'bitcanna',
     assets: [
       {
@@ -2019,6 +2049,35 @@ const assets: AssetList[] = [
             'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png'
         },
         coingecko_id: 'bostrom'
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'canto',
+    assets: [
+      {
+        description:
+          'Canto is a Layer-1 blockchain built to deliver on the promise of DeFi',
+        denom_units: [
+          {
+            denom: 'acanto',
+            exponent: 0
+          },
+          {
+            denom: 'canto',
+            exponent: 18
+          }
+        ],
+        base: 'acanto',
+        name: 'Canto',
+        display: 'canto',
+        symbol: 'CANTO',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png'
+        },
+        coingecko_id: 'canto'
       }
     ]
   },
@@ -3326,28 +3385,28 @@ const assets: AssetList[] = [
         description: 'The native token cw20 for BlackHole on Juno Chain',
         type_asset: 'cw20',
         address:
-          'juno1rdw3gumdz7zyjn2pev9ugxs765xlv6vtv6g3jt2lqw580zrchvjs66daca',
+          'juno1t46z6hg8vvsena7sue0vg6w85ljar3cundplkre9sz0skeqkap9sxyyy6m',
         denom_units: [
           {
             denom:
-              'cw20:juno1rdw3gumdz7zyjn2pev9ugxs765xlv6vtv6g3jt2lqw580zrchvjs66daca',
+              'cw20:juno1t46z6hg8vvsena7sue0vg6w85ljar3cundplkre9sz0skeqkap9sxyyy6m',
             exponent: 0
           },
           {
-            denom: 'blkh',
-            exponent: 4
+            denom: 'hole',
+            exponent: 6
           }
         ],
         base:
-          'cw20:juno1rdw3gumdz7zyjn2pev9ugxs765xlv6vtv6g3jt2lqw580zrchvjs66daca',
-        name: 'Blackhole',
-        display: 'blkh',
-        symbol: 'BLKH',
+          'cw20:juno1t46z6hg8vvsena7sue0vg6w85ljar3cundplkre9sz0skeqkap9sxyyy6m',
+        name: 'BlackHole',
+        display: 'hole',
+        symbol: 'HOLE',
         logo_URIs: {
           png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/blkh.png',
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hole.png',
           svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/blkh.svg'
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hole.svg'
         }
       },
       {
@@ -3562,6 +3621,35 @@ const assets: AssetList[] = [
             'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/darc.svg'
         },
         coingecko_id: 'darcmatter-coin'
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'kujira',
+    assets: [
+      {
+        description:
+          'The native staking and governance token of the Kujira chain.',
+        denom_units: [
+          {
+            denom: 'ukuji',
+            exponent: 0
+          },
+          {
+            denom: 'kuji',
+            exponent: 6
+          }
+        ],
+        base: 'ukuji',
+        name: 'Kuji',
+        display: 'kuji',
+        symbol: 'KUJI',
+        coingecko_id: 'kujira',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png'
+        }
       }
     ]
   },
@@ -3904,9 +3992,9 @@ const assets: AssetList[] = [
         symbol: 'ORAI',
         logo_URIs: {
           png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.png',
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.png',
           svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.svg'
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.svg'
         },
         coingecko_id: 'oraichain-token'
       }
@@ -3995,6 +4083,34 @@ const assets: AssetList[] = [
             'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.png'
         },
         coingecko_id: 'medibloc'
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'passage',
+    assets: [
+      {
+        description:
+          'The native staking and governance token of the Passage chain.',
+        denom_units: [
+          {
+            denom: 'upasg',
+            exponent: 0
+          },
+          {
+            denom: 'pasg',
+            exponent: 6
+          }
+        ],
+        base: 'upasg',
+        name: 'Passage',
+        display: 'pasg',
+        symbol: 'PASG',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png'
+        }
       }
     ]
   },
@@ -9147,6 +9263,418 @@ const assets: AssetList[] = [
             'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.png'
         },
         coingecko_id: 'terra-luna-2'
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_name: 'atlantic',
+    assets: [
+      {
+        description:
+          'The native staking and governance token of the Atlantic testnet version of Sei.',
+        denom_units: [
+          {
+            denom: 'usei',
+            exponent: 0
+          },
+          {
+            denom: 'sei',
+            exponent: 6
+          }
+        ],
+        base: 'usei',
+        name: 'Sei',
+        display: 'sei',
+        symbol: 'SEI',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/atlantic/images/sei.png'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_name: 'bitcannadev',
+    assets: [
+      {
+        description:
+          'The BCNA coin is the transactional token within the BitCanna network, serving the legal cannabis industry through its payment network, supply chain and trust network.',
+        denom_units: [
+          {
+            denom: 'ubcna',
+            exponent: 0
+          },
+          {
+            denom: 'bcna',
+            exponent: 6
+          }
+        ],
+        base: 'ubcna',
+        display: 'bcna',
+        name: 'BitCanna',
+        symbol: 'BCNA',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/bitcannadev/images/bcna.png',
+          svg:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/bitcannadev/images/bcna.svg'
+        },
+        coingecko_id: 'bitcanna'
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_name: 'cheqd',
+    assets: [
+      {
+        description: 'Native token for the cheqd network',
+        denom_units: [
+          {
+            denom: 'ncheq',
+            exponent: 0
+          },
+          {
+            denom: 'cheq',
+            exponent: 9
+          }
+        ],
+        base: 'ncheq',
+        display: 'cheq',
+        name: 'cheqd',
+        symbol: 'CHEQ',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.png',
+          svg:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.svg'
+        },
+        coingecko_id: 'cheqd-network'
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_name: 'harpoon',
+    assets: [
+      {
+        description:
+          'The native staking and governance token of the Harpoon testnet version of Kujira.',
+        denom_units: [
+          {
+            denom: 'ukuji',
+            exponent: 0
+          },
+          {
+            denom: 'kuji',
+            exponent: 6
+          }
+        ],
+        base: 'ukuji',
+        name: 'Kuji',
+        display: 'kuji',
+        symbol: 'KUJI',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/harpoon/images/kuji.png'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_id: 'imversed-test-1',
+    assets: [
+      {
+        description:
+          'The native staking and governance token of the Imversed testnet.',
+        denom_units: [
+          {
+            denom: 'nimv',
+            exponent: 0,
+            aliases: []
+          },
+          {
+            denom: 'imv',
+            exponent: 6,
+            aliases: []
+          }
+        ],
+        base: 'nimv',
+        name: 'Imv',
+        display: 'imv',
+        symbol: 'IMV',
+        logo_URIs: {
+          png: 'https://s.imversed.com/images/ic_imversed2.png',
+          svg: 'https://s.imversed.com/images/ic_imversed2.svg'
+        }
+      },
+      {
+        description:
+          'The native staking and governance token of the Imversed testnet.',
+        denom_units: [
+          {
+            denom:
+              'ibc/C6438A7D613196373D939891C99CA7EEF4F78F4A78DC8590E51E62F8ED16E72B',
+            exponent: 0,
+            aliases: ['usaage']
+          },
+          {
+            denom: 'imv',
+            exponent: 6
+          }
+        ],
+        base:
+          'ibc/C6438A7D613196373D939891C99CA7EEF4F78F4A78DC8590E51E62F8ED16E72B',
+        name: 'Imv',
+        display: 'imv',
+        symbol: 'IMV',
+        ibc: {
+          source_channel: 'channel-1',
+          dst_channel: 'channel-221',
+          source_denom: 'nimv'
+        },
+        logo_URIs: {
+          png: 'https://s.imversed.com/images/ic_imversed2.png',
+          svg: 'https://s.imversed.com/images/ic_imversed2.svg'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_name: 'junotestnet',
+    assets: [
+      {
+        description: 'The native token of JUNO Chain',
+        denom_units: [
+          {
+            denom: 'ujunox',
+            exponent: 0
+          },
+          {
+            denom: 'junox',
+            exponent: 6
+          }
+        ],
+        base: 'ujunox',
+        name: 'Juno Testnet',
+        display: 'junox',
+        symbol: 'JUNO',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.png',
+          svg:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
+        },
+        coingecko_id: 'juno-network'
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_name: 'kichaintestnet',
+    assets: [
+      {
+        description: 'The native token of Ki Chain',
+        denom_units: [
+          {
+            denom: 'utki',
+            exponent: 0
+          },
+          {
+            denom: 'tki',
+            exponent: 6
+          }
+        ],
+        base: 'utki',
+        name: 'Ki',
+        display: 'tki',
+        symbol: 'TKI',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',
+          svg:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'
+        },
+        coingecko_id: 'ki'
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_name: 'korellia',
+    assets: [
+      {
+        description:
+          'The native staking and governance token of the Korellia testnet version of KYVE.',
+        denom_units: [
+          {
+            denom: 'tkyve',
+            exponent: 0
+          },
+          {
+            denom: 'kyve',
+            exponent: 9
+          }
+        ],
+        base: 'tkyve',
+        name: 'KYVE',
+        display: 'kyve',
+        symbol: 'KYVE',
+        logo_URIs: {
+          svg:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/korellia/images/kyve.svg'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_name: 'osmosistestnet',
+    assets: [
+      {
+        description: 'The native token of Osmosis',
+        denom_units: [
+          {
+            denom: 'uosmo',
+            exponent: 0,
+            aliases: []
+          },
+          {
+            denom: 'osmo',
+            exponent: 6,
+            aliases: []
+          }
+        ],
+        base: 'uosmo',
+        name: 'Osmosis',
+        display: 'osmo',
+        symbol: 'OSMO',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+          svg:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+        },
+        coingecko_id: 'osmosis',
+        keywords: ['dex', 'staking']
+      },
+      {
+        denom_units: [
+          {
+            denom: 'uion',
+            exponent: 0
+          },
+          {
+            denom: 'ion',
+            exponent: 6
+          }
+        ],
+        base: 'uion',
+        name: 'Ion',
+        display: 'ion',
+        symbol: 'ION',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
+          svg:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
+        },
+        coingecko_id: 'ion',
+        keywords: ['memecoin']
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_name: 'pulsar',
+    assets: [
+      {
+        description: 'The native token of Secret Network',
+        denom_units: [
+          {
+            denom: 'uscrt',
+            exponent: 0
+          },
+          {
+            denom: 'scrt',
+            exponent: 6
+          }
+        ],
+        base: 'uscrt',
+        name: 'Secret Network',
+        display: 'scrt',
+        symbol: 'SCRT',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+          svg:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+        },
+        coingecko_id: 'secret'
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_id: 'saage-internal-testnet-1.3',
+    assets: [
+      {
+        description:
+          'The SGE token is primarily a governance token for the Saage chain.',
+        denom_units: [
+          {
+            denom: 'usaage',
+            exponent: 0,
+            aliases: []
+          },
+          {
+            denom: 'saage',
+            exponent: 6,
+            aliases: []
+          }
+        ],
+        base: 'usaage',
+        name: 'Saage',
+        display: 'saage',
+        symbol: 'SGE',
+        logo_URIs: {
+          png: 'https://defitech-logo.s3.amazonaws.com/Final+Logo+Saage.png',
+          svg: 'https://defitech-logo.s3.amazonaws.com/Logo+Effects+edited.svg'
+        }
+      },
+      {
+        description:
+          'The SGE token is primarily a governance token for the Saage chain.',
+        denom_units: [
+          {
+            denom:
+              'ibc/8B670F5ACD4887208C8FAD58396D39114A8F2C9B57E72EE02F51438069A72AEA',
+            exponent: 0,
+            aliases: ['usaage']
+          },
+          {
+            denom: 'saage',
+            exponent: 6
+          }
+        ],
+        base:
+          'ibc/8B670F5ACD4887208C8FAD58396D39114A8F2C9B57E72EE02F51438069A72AEA',
+        name: 'Saage',
+        display: 'saage',
+        symbol: 'SGE',
+        ibc: {
+          source_channel: 'channel-0',
+          dst_channel: 'channel-207',
+          source_denom: 'usaage'
+        },
+        logo_URIs: {
+          png: 'https://defitech-logo.s3.amazonaws.com/Final+Logo+Saage.png',
+          svg: 'https://defitech-logo.s3.amazonaws.com/Logo+Effects+edited.svg'
+        }
       }
     ]
   },

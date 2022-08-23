@@ -3,7 +3,7 @@ export interface AssetDenomUnit {
     exponent: number;
     aliases?: string[];
 }
-export interface IBCTransition {
+export interface IBCTrace {
     type: 'ibc';
     counterparty: {
         port?: string;
@@ -31,7 +31,7 @@ export interface Asset {
     };
     coingecko_id?: string;
     keywords?: string[];
-    transition?: IBCTransition[];
+    traces?: IBCTrace[];
     ibc?: {
         source_channel?: string;
         source_denom?: string;
