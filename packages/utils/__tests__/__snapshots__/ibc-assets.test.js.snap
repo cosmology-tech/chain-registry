@@ -28,7 +28,7 @@ Array [
         },
         "name": "Akash Network",
         "symbol": "AKT",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-1",
@@ -65,7 +65,7 @@ Array [
         },
         "name": "AssetMantle",
         "symbol": "MNTL",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-232",
@@ -103,7 +103,7 @@ Array [
         },
         "name": "Axelar",
         "symbol": "AXL",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -141,7 +141,7 @@ Array [
         },
         "name": "USD Coin",
         "symbol": "USDC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -179,7 +179,7 @@ Array [
         },
         "name": "Frax",
         "symbol": "FRAX",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -217,7 +217,7 @@ Array [
         },
         "name": "Dai Stablecoin",
         "symbol": "DAI",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -255,7 +255,7 @@ Array [
         },
         "name": "Tether USD",
         "symbol": "USDT",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -292,7 +292,7 @@ Array [
         },
         "name": "Wrapped Ether",
         "symbol": "WETH",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -329,7 +329,7 @@ Array [
         },
         "name": "Wrapped Bitcoin",
         "symbol": "WBTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -366,7 +366,7 @@ Array [
         },
         "name": "Aave",
         "symbol": "AAVE",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -403,7 +403,7 @@ Array [
         },
         "name": "ApeCoin",
         "symbol": "APE",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -441,7 +441,7 @@ Array [
         },
         "name": "Axie Infinity Shard",
         "symbol": "AXS",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -480,7 +480,7 @@ Array [
         },
         "name": "Chainlink",
         "symbol": "LINK",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -517,7 +517,7 @@ Array [
         },
         "name": "Maker",
         "symbol": "MKR",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -554,7 +554,7 @@ Array [
         },
         "name": "Rai Reflex Index",
         "symbol": "RAI",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -591,7 +591,7 @@ Array [
         },
         "name": "Shiba Inu",
         "symbol": "SHIB",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -628,7 +628,7 @@ Array [
         },
         "name": "Lido Staked Ether",
         "symbol": "stETH",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -665,7 +665,7 @@ Array [
         },
         "name": "Uniswap",
         "symbol": "UNI",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -702,7 +702,7 @@ Array [
         },
         "name": "Chain",
         "symbol": "XCN",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -740,7 +740,7 @@ Array [
         },
         "name": "Wrapped Polkadot",
         "symbol": "DOT",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -778,7 +778,7 @@ Array [
         },
         "name": "Wrapped Moonbeam",
         "symbol": "WGLMR",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-208",
@@ -816,7 +816,7 @@ Array [
         },
         "name": "Band Protocol",
         "symbol": "BAND",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-148",
@@ -854,7 +854,7 @@ Array [
         },
         "name": "BitCanna",
         "symbol": "BCNA",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-51",
@@ -892,7 +892,7 @@ Array [
         },
         "name": "BitSong",
         "symbol": "BTSG",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-73",
@@ -929,7 +929,7 @@ Array [
         },
         "name": "Adam Clay FanToken",
         "symbol": "CLAY",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-73",
@@ -965,7 +965,7 @@ Array [
         },
         "name": "Nicola Fasano Fantoken",
         "symbol": "FASANO",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-73",
@@ -1001,7 +1001,7 @@ Array [
         },
         "name": "Delta 9 Fantoken",
         "symbol": "D9X",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-73",
@@ -1037,7 +1037,7 @@ Array [
         },
         "name": "FONTI Fantoken",
         "symbol": "FONTI",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-73",
@@ -1073,7 +1073,7 @@ Array [
         },
         "name": "BlackJack Fantoken",
         "symbol": "BJKS",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-73",
@@ -1109,7 +1109,7 @@ Array [
         },
         "name": "Rawanne Fantoken",
         "symbol": "RWNE",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-73",
@@ -1145,7 +1145,7 @@ Array [
         },
         "name": "Enmoda Fantoken",
         "symbol": "ENMODA",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-73",
@@ -1181,7 +1181,7 @@ Array [
         },
         "name": "404Deep Records Fantoken",
         "symbol": "404DR",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-73",
@@ -1217,7 +1217,7 @@ Array [
         },
         "name": "N43 Fantoken",
         "symbol": "N43",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-73",
@@ -1253,7 +1253,7 @@ Array [
         },
         "name": "Puro Lobo Fantoken",
         "symbol": "LOBO",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-73",
@@ -1289,7 +1289,7 @@ Array [
         },
         "name": "Vibranium Fantoken",
         "symbol": "VIBRA",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-73",
@@ -1325,7 +1325,7 @@ Array [
         },
         "name": "Karina Fantoken",
         "symbol": "KARINA",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-73",
@@ -1361,7 +1361,7 @@ Array [
         },
         "name": "Luca Testa Fantoken",
         "symbol": "TESTA",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-73",
@@ -1397,7 +1397,7 @@ Array [
         },
         "name": "Carolina Marquez Fantoken",
         "symbol": "CMQZ",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-73",
@@ -1430,7 +1430,7 @@ Array [
         },
         "name": "Bostrom",
         "symbol": "BOOT",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-95",
@@ -1471,7 +1471,7 @@ Array [
         },
         "name": "Carbon",
         "symbol": "SWTH",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-188",
@@ -1508,7 +1508,7 @@ Array [
         },
         "name": "Cerberus",
         "symbol": "CRBRUS",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-212",
@@ -1546,7 +1546,7 @@ Array [
         },
         "name": "cheqd",
         "symbol": "CHEQ",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-108",
@@ -1583,7 +1583,7 @@ Array [
         },
         "name": "Chihuahua",
         "symbol": "HUAHUA",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-113",
@@ -1620,7 +1620,7 @@ Array [
         },
         "name": "Comdex",
         "symbol": "CMDX",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-87",
@@ -1658,7 +1658,7 @@ Array [
         },
         "name": "Cosmos",
         "symbol": "ATOM",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-0",
@@ -1697,7 +1697,7 @@ Array [
         },
         "name": "Crescent",
         "symbol": "CRE",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-297",
@@ -1736,7 +1736,7 @@ Array [
         },
         "name": "Bonded Crescent",
         "symbol": "bCRE",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-297",
@@ -1773,7 +1773,7 @@ Array [
         },
         "name": "Cronos",
         "symbol": "CRO",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-5",
@@ -1812,7 +1812,7 @@ Array [
         },
         "name": "Decentr",
         "symbol": "DEC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-181",
@@ -1851,7 +1851,7 @@ Array [
         },
         "name": "Desmos",
         "symbol": "DSM",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-135",
@@ -1888,7 +1888,7 @@ Array [
         },
         "name": "Dig Chain",
         "symbol": "DIG",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-128",
@@ -1925,7 +1925,7 @@ Array [
         },
         "name": "e-Money",
         "symbol": "NGM",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-37",
@@ -1962,7 +1962,7 @@ Array [
         },
         "name": "e-Money EUR",
         "symbol": "EEUR",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-37",
@@ -2000,7 +2000,7 @@ Array [
         },
         "name": "Evmos",
         "symbol": "EVMOS",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-204",
@@ -2038,7 +2038,7 @@ Array [
         },
         "name": "fetch-ai",
         "symbol": "FET",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-229",
@@ -2075,7 +2075,7 @@ Array [
         },
         "name": "MOBIX",
         "symbol": "MOBX",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-229",
@@ -2112,7 +2112,7 @@ Array [
         },
         "name": "Galaxy",
         "symbol": "GLX",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-236",
@@ -2149,7 +2149,7 @@ Array [
         },
         "name": "GenesisL1",
         "symbol": "L1",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-235",
@@ -2188,7 +2188,7 @@ Array [
         },
         "name": "Graviton",
         "symbol": "GRAV",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-144",
@@ -2225,7 +2225,7 @@ Array [
         },
         "name": "IXO",
         "symbol": "IXO",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-38",
@@ -2263,7 +2263,7 @@ Array [
         },
         "name": "Injective",
         "symbol": "INJ",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-122",
@@ -2301,7 +2301,7 @@ Array [
         },
         "name": "IRISnet",
         "symbol": "IRIS",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-6",
@@ -2339,7 +2339,7 @@ Array [
         },
         "name": "Juno",
         "symbol": "JUNO",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-42",
@@ -2376,7 +2376,7 @@ Array [
         },
         "name": "Kava",
         "symbol": "KAVA",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-143",
@@ -2414,7 +2414,7 @@ Array [
         },
         "name": "Hard",
         "symbol": "HARD",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-143",
@@ -2452,7 +2452,7 @@ Array [
         },
         "name": "Swap",
         "symbol": "SWP",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-143",
@@ -2490,7 +2490,7 @@ Array [
         },
         "name": "Ki",
         "symbol": "XKI",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-77",
@@ -2528,7 +2528,7 @@ Array [
         },
         "name": "DARC",
         "symbol": "DARC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-171",
@@ -2566,7 +2566,7 @@ Array [
         },
         "name": "LikeCoin",
         "symbol": "LIKE",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-53",
@@ -2602,7 +2602,7 @@ Array [
         },
         "name": "LUMEN",
         "symbol": "LUMEN",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-286",
@@ -2640,7 +2640,7 @@ Array [
         },
         "name": "Lum",
         "symbol": "LUM",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-115",
@@ -2677,7 +2677,7 @@ Array [
         },
         "name": "MEME",
         "symbol": "MEME",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-238",
@@ -2714,7 +2714,7 @@ Array [
         },
         "name": "Microtick",
         "symbol": "TICK",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-39",
@@ -2752,7 +2752,7 @@ Array [
         },
         "name": "Oraichain",
         "symbol": "ORAI",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-216",
@@ -2789,7 +2789,7 @@ Array [
         },
         "name": "MediBloc",
         "symbol": "MED",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-82",
@@ -2827,7 +2827,7 @@ Array [
         },
         "name": "Persistence",
         "symbol": "XPRT",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-4",
@@ -2870,7 +2870,7 @@ Array [
         },
         "name": "pSTAKE Finance",
         "symbol": "PSTAKE",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-4",
@@ -2909,7 +2909,7 @@ Array [
         },
         "name": "Hash",
         "symbol": "HASH",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-222",
@@ -2946,7 +2946,7 @@ Array [
         },
         "name": "Regen Network",
         "symbol": "REGEN",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-8",
@@ -2984,7 +2984,7 @@ Array [
         },
         "name": "Rizon Chain",
         "symbol": "ATOLO",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-221",
@@ -3022,7 +3022,7 @@ Array [
         },
         "name": "Secret Network",
         "symbol": "SCRT",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-88",
@@ -3059,7 +3059,7 @@ Array [
         },
         "name": "Sentinel",
         "symbol": "DVPN",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-2",
@@ -3096,7 +3096,7 @@ Array [
         },
         "name": "Shentu",
         "symbol": "CTK",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-146",
@@ -3130,7 +3130,7 @@ Array [
         },
         "name": "Sifchain Rowan",
         "symbol": "ROWAN",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-47",
@@ -3175,7 +3175,7 @@ Array [
         },
         "name": "Somm",
         "symbol": "SOMM",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-165",
@@ -3212,7 +3212,7 @@ Array [
         },
         "name": "Stargaze",
         "symbol": "STARS",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-75",
@@ -3250,7 +3250,7 @@ Array [
         },
         "name": "Starname",
         "symbol": "IOV",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-15",
@@ -3298,7 +3298,7 @@ Array [
         },
         "name": "Luna Classic",
         "symbol": "LUNC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -3346,7 +3346,7 @@ Array [
         },
         "name": "TerraClassicUSD",
         "symbol": "USTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -3394,7 +3394,7 @@ Array [
         },
         "name": "TerraClassicKRW",
         "symbol": "KRTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -3441,7 +3441,7 @@ Array [
         },
         "name": "TerraClassicAUD",
         "symbol": "AUTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -3488,7 +3488,7 @@ Array [
         },
         "name": "TerraClassicCAD",
         "symbol": "CATC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -3535,7 +3535,7 @@ Array [
         },
         "name": "TerraClassicCHF",
         "symbol": "CHTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -3582,7 +3582,7 @@ Array [
         },
         "name": "TerraClassicCNY",
         "symbol": "CNTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -3629,7 +3629,7 @@ Array [
         },
         "name": "TerraClassicDKK",
         "symbol": "DKTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -3676,7 +3676,7 @@ Array [
         },
         "name": "TerraClassicEUR",
         "symbol": "EUTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -3723,7 +3723,7 @@ Array [
         },
         "name": "TerraClassicGBP",
         "symbol": "GBTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -3770,7 +3770,7 @@ Array [
         },
         "name": "TerraClassicHKD",
         "symbol": "HKTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -3817,7 +3817,7 @@ Array [
         },
         "name": "TerraClassicIDR",
         "symbol": "IDTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -3864,7 +3864,7 @@ Array [
         },
         "name": "TerraClassicINR",
         "symbol": "INTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -3911,7 +3911,7 @@ Array [
         },
         "name": "TerraClassicJPY",
         "symbol": "JPTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -3958,7 +3958,7 @@ Array [
         },
         "name": "TerraClassicMNT",
         "symbol": "MNTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -4005,7 +4005,7 @@ Array [
         },
         "name": "TerraClassicMYR",
         "symbol": "MYTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -4052,7 +4052,7 @@ Array [
         },
         "name": "TerraClassicNOK",
         "symbol": "NOTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -4099,7 +4099,7 @@ Array [
         },
         "name": "TerraClassicPHP",
         "symbol": "PHTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -4146,7 +4146,7 @@ Array [
         },
         "name": "TerraClassicSDR",
         "symbol": "SDTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -4193,7 +4193,7 @@ Array [
         },
         "name": "TerraClassicSEK",
         "symbol": "SETC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -4240,7 +4240,7 @@ Array [
         },
         "name": "TerraClassicSGD",
         "symbol": "SGTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -4287,7 +4287,7 @@ Array [
         },
         "name": "TerraClassicTHB",
         "symbol": "THTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -4334,7 +4334,7 @@ Array [
         },
         "name": "TerraClassicTWD",
         "symbol": "TWTC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-72",
@@ -4373,7 +4373,7 @@ Array [
         },
         "name": "Tgrade",
         "symbol": "TGD",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-263",
@@ -4410,7 +4410,7 @@ Array [
         },
         "name": "Umee",
         "symbol": "UMEE",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-184",
@@ -4449,7 +4449,7 @@ Array [
         },
         "name": "Vidulum",
         "symbol": "VDL",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-124",

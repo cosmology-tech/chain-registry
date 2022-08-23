@@ -29,7 +29,7 @@ Array [
         },
         "name": "Neta",
         "symbol": "NETA",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-169",
@@ -71,7 +71,7 @@ Array [
         },
         "name": "Marble",
         "symbol": "MARBLE",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-169",
@@ -113,7 +113,7 @@ Array [
         },
         "name": "Hope Galaxy",
         "symbol": "HOPE",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-169",
@@ -155,7 +155,7 @@ Array [
         },
         "name": "Racoon",
         "symbol": "RAC",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-169",
@@ -196,7 +196,7 @@ Array [
         },
         "name": "Block",
         "symbol": "BLOCK",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-169",
@@ -233,7 +233,7 @@ Array [
         },
         "name": "DHK",
         "symbol": "DHK",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-169",
@@ -274,7 +274,7 @@ Array [
         },
         "name": "JunoSwap",
         "symbol": "RAW",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-169",
@@ -314,7 +314,7 @@ Array [
         },
         "name": "Another.Software Validator Token",
         "symbol": "ASVT",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-169",
@@ -354,7 +354,7 @@ Array [
         },
         "name": "IBC HNS (Handshake)",
         "symbol": "HNS",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-169",
@@ -394,7 +394,7 @@ Array [
         },
         "name": "JoeDAO",
         "symbol": "JOE",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-169",
@@ -435,7 +435,7 @@ Array [
         },
         "name": "Digital Land Acquisition DAO",
         "symbol": "DLA",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-169",
@@ -476,7 +476,7 @@ Array [
         },
         "name": "Gelotto",
         "symbol": "GLTO",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-169",
@@ -517,7 +517,7 @@ Array [
         },
         "name": "GKey",
         "symbol": "GKEY",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-169",
@@ -558,7 +558,7 @@ Array [
         },
         "name": "Blackhole",
         "symbol": "BLKH",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-169",
@@ -599,7 +599,7 @@ Array [
         },
         "name": "LVN",
         "symbol": "LVN",
-        "transition": Array [
+        "traces": Array [
           Object {
             "chain": Object {
               "channel": "channel-261",
