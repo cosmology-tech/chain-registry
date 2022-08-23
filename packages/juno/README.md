@@ -19,7 +19,7 @@ npm install @chain-registry/juno
 ```
 
 ```js
-import { chain, assets, asset_list } from '@chain-registry/juno';
+import { chain, assets, asset_list, testnet, testnet_assets } from '@chain-registry/juno';
 ```
 ```js
 console.log(asset_list);

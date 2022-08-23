@@ -19,7 +19,7 @@ npm install @chain-registry/osmosis
 ```
 
 ```js
-import { chain, assets, asset_list } from '@chain-registry/osmosis';
+import { chain, assets, asset_list, testnet, testnet_assets } from '@chain-registry/osmosis';
 ```
 
 ```js
