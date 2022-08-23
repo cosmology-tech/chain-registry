@@ -1,6 +1,6 @@
 import assets from '../../../__fixtures__/assets.json';
 import ibc from '../../../__fixtures__/ibc.json';
-import { getIbcDenomByBase } from '../src';
+import { getIbcDenomByBase, ibcDenom } from '../src';
 
 it('AKT on osmosis', () => {
   const denom = getIbcDenomByBase(
@@ -27,6 +27,31 @@ it('JUNO on osmosis', () => {
   );
   expect(denom).toEqual(
     'ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED'
+  );
+});
+
+// osmosisd q ibc-transfer denom-trace 8061A06D3BD4D52C4A28FFECF7150D370393AF0BA661C3776C54FF32836C3961
+
+// denom_trace:
+//   base_denom: gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006
+//   path: transfer/channel-4/transfer/channel-38
+
+it('PSTAKE on osmosis', () => {
+  const denom = ibcDenom(
+    [
+      {
+        channelId: 'channel-4',
+        portId: 'transfer'
+      },
+      {
+        channelId: 'channel-38',
+        portId: 'transfer'
+      }
+    ],
+    'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
+  );
+  expect(denom).toEqual(
+    'ibc/8061A06D3BD4D52C4A28FFECF7150D370393AF0BA661C3776C54FF32836C3961'
   );
 });
 
