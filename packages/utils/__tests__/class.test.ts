@@ -37,10 +37,11 @@ it('ChainInfo', async () => {
   const num = native.assets.length;
   expect(numGenerated > num).toBe(true);
 
+  const osmosis = registry.getChain('osmosis');
+  const osmosisAssets = registry.getChainAssetList('osmosis');
   //
 
-  chainInfo.assetLists();
-  chainInfo.chain();
-  chainInfo.nativeAssetLists();
+  expect(chainInfo.chain()).toEqual(osmosis);
+  expect(chainInfo.nativeAssetLists()).toEqual(osmosisAssets);
   // chainInfo.chain_name;
 });
