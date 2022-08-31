@@ -101,9 +101,9 @@ export const getIbcDenomByBase = (
       return asset.base === base;
     });
 
-    if (!assetInfo) {
-      console.warn('missing referrenced asset');
-    }
+    // if (!assetInfo) {
+    //   console.warn('missing referrenced asset');
+    // }
 
     // TODO transition later!
     const traces = [];
@@ -220,7 +220,7 @@ export const getIbcAssets = (
       });
 
       if (!counterpartyAssets) {
-        console.warn('asset not found: ' + counterparty);
+        // console.warn('asset not found: ' + counterparty);
         return;
       }
 
@@ -341,7 +341,7 @@ export const getCw20Assets = (
       });
 
       if (!counterpartyAssets) {
-        console.warn('asset not found: ' + counterparty);
+        // console.warn('asset not found: ' + counterparty);
         return;
       }
 
@@ -379,12 +379,12 @@ export const getCw20Assets = (
 
       const channel = getWasmChannel(ibcInfo);
       if (!channel) {
-        console.warn(
-          chainIbc['chain-name'],
-          '<>',
-          counterpartyIbc['chain-name'],
-          'MISSING cw20 IBC info'
-        );
+        // console.warn(
+        //   chainIbc['chain-name'],
+        //   '<>',
+        //   counterpartyIbc['chain-name'],
+        //   'MISSING cw20 IBC info'
+        // );
         return;
       }
       return {
