@@ -59,17 +59,23 @@ await registry.fetch('https://some-json-schema.com/some-schema.json');
 
 ## Asset lists
 
+You can get generated asset lists directly from the registry:
+
 ```js
 // generated asset lists
 const generated: AssetList[] = registry.getGeneratedAssetLists('osmosis');
+```
 
+You can get generated `AssetList[]` objects directly from the `ChainRegistry` via the `assetLists` method:
+
+```js
 // you can also get generated assets from ChainInfo object
 const chainInfo: Chain = registry.getChainInfo('osmosis');
 const generatedAssets: AssetList[] = chainInfo.assetLists();
 ```
 ## Chain info
 
-You can get `Chain` object directly from the regsitry via `getChain`
+You can get `Chain` object directly from the `ChainRegistry` via the `getChain` method:
 
 ```js
 // get Chain from registry
