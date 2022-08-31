@@ -61,24 +61,33 @@ await registry.fetch('https://some-json-schema.com/some-schema.json');
 
 ```js
 // generated asset lists
-const generated = registry.getGeneratedAssetLists('osmosis');
+const generated: AssetList[] = registry.getGeneratedAssetLists('osmosis');
 
 // you can also get generated assets from ChainInfo object
-const chainInfo = registry.getChainInfo('osmosis');
-const generatedAssets = chainInfo.assetLists();
+const chainInfo: Chain = registry.getChainInfo('osmosis');
+const generatedAssets: AssetList[] = chainInfo.assetLists();
 ```
 ## Chain info
 
+You can get `Chain` object directly from the regsitry via `getChain`
+
 ```js
-const chainInfo = registry.getChainInfo('osmosis');
+// get Chain from registry
+const chain: Chain = registry.getChain('osmosis');
+```
+
+or get the `ChainInfo` object:
+
+```js
+const chainInfo: ChainInfo = registry.getChainInfo('osmosis');
 
 // AssetList[] of the generated assets
-chainInfo.assetLists();
+const assetes: AssetList[] = chainInfo.assetLists();
 
 // Chain 
-chainInfo.chain();
+const chain: Chain = chainInfo.chain();
 
 // AssetList[] of the native assets
-chainInfo.nativeAssetLists();
+const assetes: AssetList[] = chainInfo.nativeAssetLists();
 ```
 
