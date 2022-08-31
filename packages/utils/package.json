@@ -56,17 +56,19 @@
     "@babel/preset-env": "7.18.2",
     "@babel/preset-typescript": "^7.17.12",
     "@types/jest": "^28.1.1",
+    "@types/sha.js": "^2.4.0",
     "@typescript-eslint/eslint-plugin": "5.31.0",
     "@typescript-eslint/parser": "5.31.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "28.1.1",
     "babel-watch": "^7.0.0",
     "cross-env": "^7.0.2",
-    "eslint": "8.20.0",
+    "cross-fetch": "^3.1.5",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-simple-import-sort": "7.0.0",
     "eslint-plugin-unused-imports": "2.0.0",
+    "eslint": "8.20.0",
     "jest": "^28.1.1",
     "long": "^5.2.0",
     "prettier": "^2.7.0",
@@ -77,6 +79,7 @@
   "dependencies": {
     "@babel/runtime": "^7.18.3",
     "@chain-registry/types": "^0.6.0",
-    "@keplr-wallet/crypto": "^0.10.11"
+    "bfs-path": "^1.0.2",
+    "sha.js": "^2.4.11"
   }
 }
