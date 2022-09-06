@@ -1,26 +1,26 @@
 export interface IBCInfo {
     $schema?: string;
-    'chain-1': {
-        'chain-name': string;
-        'client-id': string;
-        'connection-id': string;
+    chain_1: {
+        chain_name: string;
+        client_id: string;
+        connection_id: string;
     };
-    'chain-2': {
-        'chain-name': string;
-        'client-id': string;
-        'connection-id': string;
+    chain_2: {
+        chain_name: string;
+        client_id: string;
+        connection_id: string;
     };
     channels: {
-        'chain-1': {
-            'channel-id': string;
-            'port-id': string;
+        chain_1: {
+            channel_id: string;
+            port_id: string;
         };
-        'chain-2': {
-            'channel-id': string;
-            'port-id': string;
+        chain_2: {
+            channel_id: string;
+            port_id: string;
         };
         ordering: string;
         version: string;
-        tags: object;
+        tags?: object;
     }[];
 }
