@@ -1045,7 +1045,7 @@ const assets: AssetList[] = [
         symbol: 'IST',
         logo_URIs: {
           png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/run.png'
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/ist.png'
         }
       }
     ]
@@ -2938,17 +2938,17 @@ const assets: AssetList[] = [
           'The INJ token is the native governance token for the Injective chain.',
         denom_units: [
           {
-            denom: 'uinj',
+            denom: 'inj',
             exponent: 0
           },
           {
-            denom: 'inj',
-            exponent: 6
+            denom: 'INJ',
+            exponent: 18
           }
         ],
-        base: 'uinj',
+        base: 'inj',
         name: 'Injective',
-        display: 'inj',
+        display: 'INJ',
         symbol: 'INJ',
         logo_URIs: {
           png:
@@ -3410,6 +3410,62 @@ const assets: AssetList[] = [
         }
       },
       {
+        description: 'Staking derivative seJUNO for staked JUNO',
+        type_asset: 'cw20',
+        address:
+          'juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv',
+        denom_units: [
+          {
+            denom:
+              'cw20:juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv',
+            exponent: 0
+          },
+          {
+            denom: 'sejuno',
+            exponent: 6
+          }
+        ],
+        base:
+          'cw20:juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv',
+        name: 'StakeEasy seJUNO',
+        display: 'sejuno',
+        symbol: 'SEJUNO',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.png',
+          svg:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.svg'
+        }
+      },
+      {
+        description: 'Staking derivative bJUNO for staked JUNO',
+        type_asset: 'cw20',
+        address:
+          'juno1wwnhkagvcd3tjz6f8vsdsw5plqnw8qy2aj3rrhqr2axvktzv9q2qz8jxn3',
+        denom_units: [
+          {
+            denom:
+              'cw20:juno1wwnhkagvcd3tjz6f8vsdsw5plqnw8qy2aj3rrhqr2axvktzv9q2qz8jxn3',
+            exponent: 0
+          },
+          {
+            denom: 'bjuno',
+            exponent: 6
+          }
+        ],
+        base:
+          'cw20:juno1wwnhkagvcd3tjz6f8vsdsw5plqnw8qy2aj3rrhqr2axvktzv9q2qz8jxn3',
+        name: 'StakeEasy bJUNO',
+        display: 'bjuno',
+        symbol: 'BJUNO',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.png',
+          svg:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.svg'
+        }
+      },
+      {
         description: 'The native token cw20 for Neta on Juno Chain',
         type_asset: 'cw20',
         address:
@@ -3861,6 +3917,36 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../assetlist.schema.json',
+    chain_name: 'nomic',
+    assets: [
+      {
+        description:
+          "Nomic Token (NOM) is the Nomic's native utility token, used as the primary means to govern, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
+        denom_units: [
+          {
+            denom: 'unom',
+            exponent: 0
+          },
+          {
+            denom: 'nom',
+            exponent: 6
+          }
+        ],
+        base: 'unom',
+        name: 'Nomic',
+        display: 'nom',
+        symbol: 'NOM',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.png',
+          svg:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.svg'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
     chain_name: 'octa',
     assets: [
       {
@@ -3939,6 +4025,34 @@ const assets: AssetList[] = [
           png:
             'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png'
         }
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'okexchain',
+    assets: [
+      {
+        description: 'The native token of OKExChain',
+        denom_units: [
+          {
+            denom: 'wei',
+            exponent: 0
+          },
+          {
+            denom: 'okt',
+            exponent: 18
+          }
+        ],
+        base: 'wei',
+        name: 'OKExChain',
+        display: 'okt',
+        symbol: 'OKT',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/okexchain/images/okc.png'
+        },
+        coingecko_id: 'okc-token'
       }
     ]
   },
@@ -4477,6 +4591,107 @@ const assets: AssetList[] = [
             'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.svg'
         },
         coingecko_id: 'starname'
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'stride',
+    assets: [
+      {
+        description: 'The native token of Stride',
+        denom_units: [
+          {
+            denom: 'ustrd',
+            exponent: 0,
+            aliases: []
+          },
+          {
+            denom: 'strd',
+            exponent: 6,
+            aliases: []
+          }
+        ],
+        base: 'ustrd',
+        name: 'Stride',
+        display: 'strd',
+        symbol: 'STRD',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+          svg:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+        },
+        coingecko_id: ''
+      },
+      {
+        denom_units: [
+          {
+            denom: 'stuatom',
+            exponent: 0
+          },
+          {
+            denom: 'statom',
+            exponent: 6
+          }
+        ],
+        base: 'stuatom',
+        name: 'stATOM',
+        display: 'statom',
+        symbol: 'stATOM',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.png',
+          svg:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg'
+        },
+        coingecko_id: 'stride-staked-atom'
+      },
+      {
+        denom_units: [
+          {
+            denom: 'stuosmo',
+            exponent: 0
+          },
+          {
+            denom: 'stosmo',
+            exponent: 6
+          }
+        ],
+        base: 'stuosmo',
+        name: 'stOSMO',
+        display: 'stosmo',
+        symbol: 'stOSMO',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.png',
+          svg:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg'
+        },
+        coingecko_id: ''
+      },
+      {
+        denom_units: [
+          {
+            denom: 'stujuno',
+            exponent: 0
+          },
+          {
+            denom: 'stjuno',
+            exponent: 6
+          }
+        ],
+        base: 'stujuno',
+        name: 'stJUNO',
+        display: 'stjuno',
+        symbol: 'stJUNO',
+        logo_URIs: {
+          png:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.png',
+          svg:
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.svg'
+        },
+        coingecko_id: ''
       }
     ]
   },
@@ -9327,7 +9542,7 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../../assetlist.schema.json',
-    chain_name: 'cheqd',
+    chain_name: 'cheqdtestnet',
     assets: [
       {
         description: 'Native token for the cheqd network',
@@ -9347,9 +9562,9 @@ const assets: AssetList[] = [
         symbol: 'CHEQ',
         logo_URIs: {
           png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.png',
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cheqdtestnet/images/cheq.png',
           svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.svg'
+            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cheqdtestnet/images/cheq.svg'
         },
         coingecko_id: 'cheqd-network'
       }

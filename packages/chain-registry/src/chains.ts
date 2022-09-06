@@ -36,8 +36,8 @@ const chains: Chain[] = [
     ],
     codebase: {
       git_repo: 'https://github.com/Agoric/ag0/',
-      recommended_version: 'agoric-3.1',
-      compatible_versions: ['agoric-3.1']
+      recommended_version: 'agoric-upgrade-7',
+      compatible_versions: ['agoric-upgrade-7']
     },
     peers: {
       seeds: [],
@@ -79,6 +79,10 @@ const chains: Chain[] = [
         {
           address: 'https://grpc.agoric.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'agoric-grpc.polkachu.com:44090',
+          provider: 'Polkachu'
         }
       ]
     }
@@ -366,7 +370,7 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc-akash-ia.notional.ventures:443',
+          address: 'https://rpc-akash-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         },
         {
@@ -388,7 +392,7 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://api-akash-ia.notional.ventures',
+          address: 'https://api-akash-ia.cosmosia.notional.ventures',
           provider: 'Notional'
         },
         {
@@ -398,8 +402,12 @@ const chains: Chain[] = [
       ],
       grpc: [
         {
-          address: 'grpc-akash-ia.notional.ventures:443',
+          address: 'grpc-akash-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'akash-grpc.polkachu.com:28090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -830,6 +838,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.assetmantle.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://rpc-assetmantle-ia.cosmosia.notional.ventures/',
+          provider: 'Notional'
         }
       ],
       rest: [
@@ -848,12 +860,24 @@ const chains: Chain[] = [
         {
           address: 'https://api.assetmantle.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://api-assetmantle-ia.cosmosia.notional.ventures/',
+          provider: 'Notional'
         }
       ],
       grpc: [
         {
           address: 'https://grpc.assetmantle.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'grpc-assetmantle-ia.cosmosia.notional.ventures:443',
+          provider: 'Notional'
+        },
+        {
+          address: 'assetmantle-grpc.polkachu.com:46090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -965,7 +989,7 @@ const chains: Chain[] = [
           provider: 'nodes.guru'
         },
         {
-          address: 'https://rpc-axelar-ia.notional.ventures/',
+          address: 'https://rpc-axelar-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -979,14 +1003,18 @@ const chains: Chain[] = [
           provider: 'nodes.guru'
         },
         {
-          address: 'https://api-axelar-ia.notional.ventures/',
+          address: 'https://api-axelar-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
       grpc: [
         {
-          address: 'grpc-axelar-ia.notional.ventures:443',
+          address: 'grpc-axelar-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'axelar-grpc.polkachu.com:51090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -1062,7 +1090,7 @@ const chains: Chain[] = [
           provider: 'bandprotocol'
         },
         {
-          address: 'https://rpc-bandchain-ia.notional.ventures/',
+          address: 'https://rpc-bandchain-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -1072,13 +1100,13 @@ const chains: Chain[] = [
           provider: 'bandprotocol'
         },
         {
-          address: 'https://api-bandchain-ia.notional.ventures/',
+          address: 'https://api-bandchain-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
       grpc: [
         {
-          address: 'grpc-bandchain-ia.notional.ventures:443',
+          address: 'grpc-bandchain-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         }
       ]
@@ -1333,7 +1361,7 @@ const chains: Chain[] = [
           provider: 'bitcanna'
         },
         {
-          address: 'http://bcna.paranorm.pro:26657/',
+          address: 'http://bcna.paranorm.pro/',
           provider: 'ParanormalBrothers'
         },
         {
@@ -1349,11 +1377,11 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc-bitcanna-ia.notional.ventures/',
+          address: 'https://rpc-bitcanna-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
         {
-          address: 'https://bitcannarpc.panthea.eu',
+          address: 'https://bitcanna-rpc.panthea.eu',
           provider: 'Panthea EU'
         }
       ],
@@ -1363,8 +1391,12 @@ const chains: Chain[] = [
           provider: 'bitcanna'
         },
         {
-          address: 'grpc-bitcanna-ia.notional.ventures:443',
+          address: 'grpc-bitcanna-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'bitcanna-grpc.polkachu.com:30090',
+          provider: 'Polkachu'
         }
       ],
       rest: [
@@ -1381,11 +1413,11 @@ const chains: Chain[] = [
           provider: 'itastaker'
         },
         {
-          address: 'https://api-bitcanna-ia.notional.ventures/',
+          address: 'https://api-bitcanna-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
         {
-          address: 'https://bitcannaapi.panthea.eu',
+          address: 'https://bitcanna-api.panthea.eu',
           provider: 'Panthea EU'
         }
       ]
@@ -1500,7 +1532,7 @@ const chains: Chain[] = [
           provider: 'interbloc'
         },
         {
-          address: 'https://rpc-bitsong-ia.notional.ventures/',
+          address: 'https://rpc-bitsong-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
         {
@@ -1517,8 +1549,12 @@ const chains: Chain[] = [
           archive: true
         },
         {
-          address: 'https://bitsongrpc.panthea.eu',
+          address: 'https://bitsong-rpc.panthea.eu',
           provider: 'Panthea EU'
+        },
+        {
+          address: 'https://rpc.bitsong.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ],
       rest: [
@@ -1531,7 +1567,7 @@ const chains: Chain[] = [
           provider: 'interbloc'
         },
         {
-          address: 'https://api-bitsong-ia.notional.ventures/',
+          address: 'https://api-bitsong-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
         {
@@ -1543,13 +1579,17 @@ const chains: Chain[] = [
           provider: 'Validatrium'
         },
         {
-          address: 'https://bitsongapi.panthea.eu',
+          address: 'https://bitsong-api.panthea.eu',
           provider: 'Panthea EU'
+        },
+        {
+          address: 'https://api.bitsong.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ],
       grpc: [
         {
-          address: 'grpc-bitsong-ia.notional.ventures:443',
+          address: 'grpc-bitsong-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         },
         {
@@ -1665,7 +1705,7 @@ const chains: Chain[] = [
           provider: 'posthuman'
         },
         {
-          address: 'https://rpc-cyber-ia.notional.ventures/',
+          address: 'https://rpc-cyber-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -1679,13 +1719,13 @@ const chains: Chain[] = [
           provider: 'posthuman'
         },
         {
-          address: 'https://api-cyber-ia.notional.ventures/',
+          address: 'https://api-cyber-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
       grpc: [
         {
-          address: 'grpc-cyber-ia.notional.ventures:443',
+          address: 'grpc-cyber-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         }
       ]
@@ -1714,7 +1754,7 @@ const chains: Chain[] = [
     status: 'live',
     network_type: 'mainnet',
     pretty_name: 'Canto',
-    chain_id: 'canto_7700-2',
+    chain_id: 'canto_7700-1',
     bech32_prefix: 'canto',
     node_home: '$HOME/.cantod',
     genesis: {
@@ -1786,15 +1826,32 @@ const chains: Chain[] = [
         {
           address: 'http://164.90.154.41:26657',
           provider: 'Canto'
+        },
+        {
+          address: 'https://rpc.canto.nodestake.top',
+          provider: 'NodeStake'
         }
       ],
       rest: [
         {
           address: 'http://164.90.154.41:1317',
           provider: 'Canto'
+        },
+        {
+          address: 'https://api.canto.nodestake.top',
+          provider: 'NodeStake'
         }
       ],
-      grpc: [],
+      grpc: [
+        {
+          address: 'canto-grpc.polkachu.com:55090',
+          provider: 'Polkachu'
+        },
+        {
+          address: 'https://grpc.canto.nodestake.top',
+          provider: 'NodeStake'
+        }
+      ],
       'evm-http-jsonrpc': [
         {
           address: 'https://canto.evm.chandrastation.com',
@@ -1806,7 +1863,7 @@ const chains: Chain[] = [
         },
         {
           address: 'https://jsonrpc.canto.nodestake.top',
-          provider: 'Nodestake'
+          provider: 'NodeStake'
         }
       ]
     },
@@ -2035,11 +2092,11 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc-cerberus-ia.notional.ventures/',
+          address: 'https://rpc-cerberus-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
         {
-          address: 'https://cerberusrpc.panthea.eu',
+          address: 'https://cerberus-rpc.panthea.eu',
           provider: 'Panthea EU'
         }
       ],
@@ -2053,18 +2110,22 @@ const chains: Chain[] = [
           provider: 'ecostake'
         },
         {
-          address: 'https://api-cerberus-ia.notional.ventures/',
+          address: 'https://api-cerberus-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
         {
-          address: 'https://cerberusapi.panthea.eu',
+          address: 'https://cerberus-api.panthea.eu',
           provider: 'Panthea EU'
         }
       ],
       grpc: [
         {
-          address: 'grpc-cerberus-ia.notional.ventures:443',
+          address: 'grpc-cerberus-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'cerberus-grpc.polkachu.com:38090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -2187,7 +2248,7 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://rpc-cheqd-ia.notional.ventures/',
+          address: 'https://rpc-cheqd-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -2201,7 +2262,7 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://api-cheqd-ia.notional.ventures/',
+          address: 'https://api-cheqd-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -2211,7 +2272,7 @@ const chains: Chain[] = [
           provider: 'cheqd'
         },
         {
-          address: 'grpc-cheqd-ia.notional.ventures:443',
+          address: 'grpc-cheqd-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         }
       ]
@@ -2253,9 +2314,9 @@ const chains: Chain[] = [
       fee_tokens: [
         {
           denom: 'uhuahua',
-          low_gas_price: 0.025,
-          average_gas_price: 0.03,
-          high_gas_price: 0.035
+          low_gas_price: 1,
+          average_gas_price: 5,
+          high_gas_price: 10
         }
       ]
     },
@@ -2268,7 +2329,7 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/ChihuahuaChain/chihuahua/',
-      recommended_version: 'v2.0.1',
+      recommended_version: 'v2.0.2',
       compatible_versions: ['v2.0.1']
     },
     peers: {
@@ -2341,7 +2402,7 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc-chihuahua-ia.notional.ventures/',
+          address: 'https://rpc-chihuahua-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -2355,14 +2416,18 @@ const chains: Chain[] = [
           provider: 'ecostake'
         },
         {
-          address: 'https://api-chihuahua-ia.notional.ventures/',
+          address: 'https://api-chihuahua-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
       grpc: [
         {
-          address: 'grpc-chihuahua-ia.notional.ventures:443',
+          address: 'grpc-chihuahua-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'chihuahua-grpc.polkachu.com:29090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -2592,8 +2657,12 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://rpc-comdex-ia.notional.ventures/',
+          address: 'https://rpc-comdex-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://rpc.comdex.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ],
       rest: [
@@ -2618,14 +2687,26 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://api-comdex-ia.notional.ventures/',
+          address: 'https://api-comdex-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://api.comdex.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ],
       grpc: [
         {
-          address: 'grpc-comdex-ia.notional.ventures:443',
+          address: 'grpc-comdex-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'https://comdex.grpcui.chaintools.host/',
+          provider: 'ChainTools'
+        },
+        {
+          address: 'comdex-grpc.polkachu.com:31090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -2662,7 +2743,7 @@ const chains: Chain[] = [
     bech32_prefix: 'cosmos',
     genesis: {
       genesis_url:
-        'https://github.com/cosmos/mainnet/raw/master/genesis.cosmoshub-4.json.gz'
+        'https://github.com/cosmos/mainnet/raw/master/genesis/genesis.cosmoshub-4.json.gz'
     },
     daemon_name: 'gaiad',
     node_home: '$HOME/.gaia',
@@ -2678,17 +2759,17 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/cosmos/gaia',
-      recommended_version: 'v7.0.1',
-      compatible_versions: ['v7.0.0', 'v7.0.1'],
+      recommended_version: 'v7.0.3',
+      compatible_versions: ['v7.0.0', 'v7.0.1', 'v7.0.2', 'v7.0.3'],
       binaries: {
         'linux/amd64':
-          'https://github.com/cosmos/gaia/releases/download/v7.0.1/gaiad-v7.0.1-linux-amd64',
+          'https://github.com/cosmos/gaia/releases/download/v7.0.3/gaiad-v7.0.3-linux-amd64',
         'linux/arm64':
-          'https://github.com/cosmos/gaia/releases/download/v7.0.1/gaiad-v7.0.1-linux-arm64',
+          'https://github.com/cosmos/gaia/releases/download/v7.0.3/gaiad-v7.0.3-linux-arm64',
         'darwin/amd64':
-          'https://github.com/cosmos/gaia/releases/download/v7.0.1/gaiad-v7.0.1-darwin-amd64',
+          'https://github.com/cosmos/gaia/releases/download/v7.0.3/gaiad-v7.0.3-darwin-amd64',
         'windows/amd64':
-          'https://github.com/cosmos/gaia/releases/download/v7.0.1/gaiad-v7.0.1-windows-amd64.exe'
+          'https://github.com/cosmos/gaia/releases/download/v7.0.3/gaiad-v7.0.3-windows-amd64.exe'
       }
     },
     peers: {
@@ -2829,16 +2910,16 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
+          address: 'https://rpc-cosmoshub.blockapsis.com',
+          provider: 'chainapsis'
+        },
+        {
           address: 'https://cosmos-rpc.quickapi.com:443',
           provider: 'Chainlayer'
         },
         {
           address: 'https://rpc-cosmoshub.whispernode.com',
           provider: ' WhisperNode🤐'
-        },
-        {
-          address: 'https://rpc-cosmoshub.blockapsis.com',
-          provider: 'chainapsis'
         },
         {
           address: 'https://cosmoshub.validator.network/',
@@ -2869,11 +2950,15 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://rpc-cosmoshub-ia.notional.ventures/',
+          address: 'https://rpc-cosmoshub-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
       rest: [
+        {
+          address: 'https://lcd-cosmoshub.blockapsis.com',
+          provider: 'chainapsis'
+        },
         {
           address: 'https://cosmos-lcd.quickapi.com:443',
           provider: 'Chainlayer'
@@ -2881,10 +2966,6 @@ const chains: Chain[] = [
         {
           address: 'https://lcd-cosmoshub.whispernode.com',
           provider: ' WhisperNode🤐'
-        },
-        {
-          address: 'https://lcd-cosmoshub.blockapsis.com',
-          provider: 'chainapsis'
         },
         {
           address: 'https://rest-cosmoshub.ecostake.com',
@@ -2899,7 +2980,7 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://api-cosmoshub-ia.notional.ventures/',
+          address: 'https://api-cosmoshub-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -2913,8 +2994,12 @@ const chains: Chain[] = [
           provider: 'strangelove'
         },
         {
-          address: 'grpc-cosmoshub-ia.notional.ventures:443',
+          address: 'grpc-cosmoshub-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'cosmos-grpc.polkachu.com:49090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -3081,6 +3166,10 @@ const chains: Chain[] = [
         {
           address: 'mainnet.crescent.network:9090',
           provider: 'crescent'
+        },
+        {
+          address: 'crescent-grpc.polkachu.com:45090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -3369,7 +3458,7 @@ const chains: Chain[] = [
           provider: 'chainapsis'
         },
         {
-          address: 'https://rpc-cryptoorgchain-ia.notional.ventures/',
+          address: 'https://rpc-cryptoorgchain-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
         {
@@ -3387,7 +3476,7 @@ const chains: Chain[] = [
           provider: 'chainapsis'
         },
         {
-          address: 'https://api-cryptoorgchain-ia.notional.ventures/',
+          address: 'https://api-cryptoorgchain-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
         {
@@ -3397,7 +3486,7 @@ const chains: Chain[] = [
       ],
       grpc: [
         {
-          address: 'grpc-cryptoorgchain-ia.notional.ventures:443',
+          address: 'grpc-cryptoorgchain-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         }
       ]
@@ -3650,12 +3739,20 @@ const chains: Chain[] = [
         {
           address: 'https://ares.mainnet.decentr.xyz',
           provider: 'decentr'
+        },
+        {
+          address: 'https://rpc.decentr.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ],
       rest: [
         {
           address: 'https://rest.mainnet.decentr.xyz',
           provider: 'decentr'
+        },
+        {
+          address: 'https://api.decentr.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ]
     },
@@ -3747,7 +3844,7 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://desmosrpc.panthea.eu',
+          address: 'https://desmos-rpc.panthea.eu',
           provider: 'Panthea EU'
         }
       ],
@@ -3761,7 +3858,7 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://desmosapi.panthea.eu',
+          address: 'https://desmos-api.panthea.eu',
           provider: 'Panthea EU'
         }
       ]
@@ -3884,7 +3981,7 @@ const chains: Chain[] = [
           address: 'https://rpc-1-dig.notional.ventures'
         },
         {
-          address: 'https://rpc-dig-ia.notional.ventures/',
+          address: 'https://rpc-dig-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -3893,13 +3990,13 @@ const chains: Chain[] = [
           address: 'https://api-1-dig.notional.ventures'
         },
         {
-          address: 'https://api-dig-ia.notional.ventures/',
+          address: 'https://api-dig-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
       grpc: [
         {
-          address: 'grpc-dig-ia.notional.ventures:443',
+          address: 'grpc-dig-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         }
       ]
@@ -4026,8 +4123,12 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc.echelon.nodestake.top',
-          provider: 'NodeStake'
+          address: 'https://rpc.eu.ech.world',
+          provider: 'ech.world 🌍'
+        },
+        {
+          address: 'https://rpc.us.ech.world',
+          provider: 'ech.world 🌍'
         }
       ],
       rest: [
@@ -4044,8 +4145,12 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://api.echelon.nodestake.top',
-          provider: 'NodeStake'
+          address: 'https://api.eu.ech.world',
+          provider: 'ech.world 🌍'
+        },
+        {
+          address: 'https://api.us.ech.world',
+          provider: 'ech.world 🌍'
         }
       ],
       grpc: [
@@ -4054,8 +4159,12 @@ const chains: Chain[] = [
           provider: 'ech.network'
         },
         {
-          address: 'https://grpc.echelon.nodestake.top',
-          provider: 'NodeStake'
+          address: 'https://grpc.eu.ech.world',
+          provider: 'ech.world 🌍'
+        },
+        {
+          address: 'https://grpc.us.ech.world',
+          provider: 'ech.world 🌍'
         }
       ],
       'evm-http-jsonrpc': [
@@ -4074,6 +4183,14 @@ const chains: Chain[] = [
         {
           address: 'https://jsonrpc.echelon.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://jrpc.eu.ech.world',
+          provider: 'ech.world 🌍'
+        },
+        {
+          address: 'https://jrpc.us.ech.world',
+          provider: 'ech.world 🌍'
         }
       ]
     },
@@ -4220,7 +4337,7 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://rpc-emoney-ia.notional.ventures/',
+          address: 'https://rpc-emoney-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -4238,13 +4355,13 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://api-emoney-ia.notional.ventures/',
+          address: 'https://api-emoney-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
       grpc: [
         {
-          address: 'grpc-emoney-ia.notional.ventures:443',
+          address: 'grpc-emoney-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         }
       ]
@@ -4443,6 +4560,10 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
+          address: 'https://rpc-evmos.ecostake.com',
+          provider: 'ecostake'
+        },
+        {
           address: 'https://rpc-evmos.whispernode.com',
           provider: ' WhisperNode 🤐'
         },
@@ -4455,7 +4576,7 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://rpc-evmos-ia.notional.ventures:443',
+          address: 'https://rpc-evmos-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         },
         {
@@ -4475,15 +4596,19 @@ const chains: Chain[] = [
           provider: 'NodeStake'
         },
         {
-          address: 'https://rpc-evmos.ecostake.com',
-          provider: 'ecostake'
-        },
-        {
           address: 'https://rpc.evmos.bh.rocks',
           provider: 'BlockHunters'
+        },
+        {
+          address: 'https://rpc.evmos.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ],
       rest: [
+        {
+          address: 'https://rest-evmos.ecostake.com',
+          provider: 'ecostake'
+        },
         {
           address: 'https://lcd-evmos.whispernode.com',
           provider: ' WhisperNode 🤐'
@@ -4497,7 +4622,7 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://api-evmos-ia.notional.ventures/',
+          address: 'https://api-evmos-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
         {
@@ -4513,12 +4638,16 @@ const chains: Chain[] = [
           provider: 'TestNetRun'
         },
         {
-          address: 'https://rest-evmos.ecostake.com',
-          provider: 'ecostake'
-        },
-        {
           address: 'https://lcd.evmos.bh.rocks',
           provider: 'BlockHunters'
+        },
+        {
+          address: 'https://rpc.evmos.chaintools.tech/',
+          provider: 'ChainTools'
+        },
+        {
+          address: 'https://api.evmos.nodestake.top',
+          provider: 'NodeStake'
         }
       ],
       grpc: [
@@ -4527,7 +4656,7 @@ const chains: Chain[] = [
           provider: 'evmos.org'
         },
         {
-          address: 'grpc-evmos-ia.notional.ventures:443',
+          address: 'grpc-evmos-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         },
         {
@@ -4545,6 +4674,14 @@ const chains: Chain[] = [
         {
           address: 'https://grpc.evmos.bh.rocks',
           provider: 'BlockHunters'
+        },
+        {
+          address: 'https://evmos.grpcui.chaintools.host/',
+          provider: 'ChainTools'
+        },
+        {
+          address: 'evmos-grpc.polkachu.com:34090',
+          provider: 'Polkachu'
         }
       ],
       'evm-http-jsonrpc': [
@@ -4553,7 +4690,7 @@ const chains: Chain[] = [
           provider: 'Blockdaemon'
         },
         {
-          address: 'https://jsonrpc-evmos-ia.notional.ventures/',
+          address: 'https://jsonrpc-evmos-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
         {
@@ -4637,41 +4774,41 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/fetchai/fetchd',
-      recommended_version: 'v0.10.3',
-      compatible_versions: ['v0.10.3', 'v0.10.2', 'v0.10.1', 'v0.10.0']
+      recommended_version: 'v0.10.5',
+      compatible_versions: ['v0.10.5']
     },
     peers: {
       seeds: [
         {
-          id: '5f3fa6404a67b664be07d0e133a00c1600967396',
-          address: 'connect-fetchhub.fetch.ai:36756',
+          id: '17693da418c15c95d629994a320e2c4f51a8069b',
+          address: 'connect-fetchhub.fetch.ai:36456',
           provider: 'fetch.ai'
         },
         {
-          id: '8272b70e1986e2080ca328309a5aad3bb932fcab',
-          address: 'connect-fetchhub.fetch.ai:36757',
+          id: 'a575c681c2861fe945f77cb3aba0357da294f1f2',
+          address: 'connect-fetchhub.fetch.ai:36457',
           provider: 'fetch.ai'
         },
         {
-          id: '81f479ad9b4b1d25bceedb2a13139187792442bf',
-          address: 'connect-fetchhub.fetch.ai:36758',
+          id: 'd7cda986c9f59ab9e05058a803c3d0300d15d8da',
+          address: 'connect-fetchhub.fetch.ai:36458',
           provider: 'fetch.ai'
         }
       ],
       persistent_peers: [
         {
-          id: '714b84c1798759505a8095c1f96e920bd23ab09f',
-          address: 'sentries-fetchhub.fetch.ai:36700',
+          id: 'e3d21a822e3903a96c14bfd8f8e06132f198d7c4',
+          address: 'sentries-fetchhub.fetch.ai:36400',
           provider: 'fetch.ai'
         },
         {
-          id: '802224aa31eb34185b081b1fd791ab568055dc78',
-          address: 'sentries-fetchhub.fetch.ai:36701',
+          id: '4be243f5d22403f6069d2ed3c4a79161216f22a0',
+          address: 'sentries-fetchhub.fetch.ai:36401',
           provider: 'fetch.ai'
         },
         {
-          id: '65bab5f02a2ab3cb1e6db3b345654594e2390db9',
-          address: 'sentries-fetchhub.fetch.ai:36702',
+          id: 'd6faadb9e785642b355136ed278d5b5d6b2f87dd',
+          address: 'sentries-fetchhub.fetch.ai:36402',
           provider: 'fetch.ai'
         }
       ]
@@ -4687,7 +4824,7 @@ const chains: Chain[] = [
           provider: 'Terminet'
         },
         {
-          address: 'https://rpc-fetchhub-ia.notional.ventures/',
+          address: 'https://rpc-fetchhub-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -4697,7 +4834,7 @@ const chains: Chain[] = [
           provider: 'fetch.ai'
         },
         {
-          address: 'https://api-fetchhub-ia.notional.ventures/',
+          address: 'https://api-fetchhub-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -4707,8 +4844,12 @@ const chains: Chain[] = [
           provider: 'fetch.ai'
         },
         {
-          address: 'grpc-fetchhub-ia.notional.ventures:443',
+          address: 'grpc-fetchhub-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'fetch-grpc.polkachu.com:52090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -4730,8 +4871,8 @@ const chains: Chain[] = [
       },
       {
         kind: 'atomscan',
-        url: 'https://atomscan.com/fetchhub',
-        tx_page: 'https://atomscan.com/fetchhub/transactions/${txHash}'
+        url: 'https://atomscan.com/fetchai',
+        tx_page: 'https://atomscan.com/fetchai/transactions/${txHash}'
       }
     ]
   },
@@ -4788,12 +4929,20 @@ const chains: Chain[] = [
         {
           address: 'https://lcd-mainnet.firmachain.dev:26657',
           provider: 'FirmaChain'
+        },
+        {
+          address: 'https://rpc.firmachain.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ],
       rest: [
         {
           address: 'https://lcd-mainnet.firmachain.dev:1317',
           provider: 'FirmaChain'
+        },
+        {
+          address: 'https://api.firmachain.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ]
     },
@@ -4802,6 +4951,11 @@ const chains: Chain[] = [
         kind: 'big-dipper',
         url: 'https://explorer.firmachain.dev',
         tx_page: 'https://explorer.firmachain.dev/transactions/${txHash}'
+      },
+      {
+        kind: 'explorer.ChainTools',
+        url: 'https://explorer.chaintools.tech/firmachain',
+        tx_page: 'https://explorer.chaintools.tech/firmachain/tx/${txHash}'
       }
     ]
   },
@@ -5140,7 +5294,7 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://rpc-gravitybridge-ia.notional.ventures/',
+          address: 'https://rpc-gravitybridge-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
         {
@@ -5158,7 +5312,7 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://api-gravitybridge-ia.notional.ventures/',
+          address: 'https://api-gravitybridge-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
         {
@@ -5176,12 +5330,16 @@ const chains: Chain[] = [
           provider: 'amhost'
         },
         {
-          address: 'grpc-gravitybridge-ia.notional.ventures:443',
+          address: 'grpc-gravitybridge-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         },
         {
           address: 'https://grpc.gravity-bridge.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'gravity-grpc.polkachu.com:42090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -5333,18 +5491,8 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/ixofoundation/ixo-blockchain',
-      recommended_version: 'v1.6.0',
-      compatible_versions: ['v1.6.0'],
-      binaries: {
-        'linux/amd64':
-          'https://github.com/ixofoundation/ixo-blockchain/releases/download/v1.6.0/ixod-1.6.0-linux-amd64',
-        'linux/arm64':
-          'https://github.com/ixofoundation/ixo-blockchain/releases/download/v1.6.0/ixod-1.6.0-linux-arm64',
-        'darwin/amd64':
-          'https://github.com/ixofoundation/ixo-blockchain/releases/download/v1.6.0/ixod-1.6.0-darwin-amd64',
-        'windows/arm64':
-          'https://github.com/ixofoundation/ixo-blockchain/releases/download/v1.6.0/ixod-1.6.0-windows-amd64.exe'
-      }
+      recommended_version: 'v0.18.1',
+      compatible_versions: ['v0.18.1', 'v0.18.0']
     },
     peers: {
       seeds: [
@@ -5383,10 +5531,6 @@ const chains: Chain[] = [
           provider: 'sifchain'
         },
         {
-          address: 'http://18.220.101.192:26657/',
-          provider: 'regen'
-        },
-        {
           address: 'https://impacthub.ixo.world/rpc/',
           provider: 'ixoworld'
         },
@@ -5395,7 +5539,7 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://rpc-ixo-ia.notional.ventures/',
+          address: 'https://rpc-ixo-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -5421,13 +5565,13 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://api-ixo-ia.notional.ventures/',
+          address: 'https://api-ixo-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
       grpc: [
         {
-          address: 'grpc-ixo-ia.notional.ventures:443',
+          address: 'grpc-ixo-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         }
       ]
@@ -5468,7 +5612,7 @@ const chains: Chain[] = [
     fees: {
       fee_tokens: [
         {
-          denom: 'uinj',
+          denom: 'inj',
           low_gas_price: 0.0005,
           average_gas_price: 0.0007,
           high_gas_price: 0.0009
@@ -5478,7 +5622,7 @@ const chains: Chain[] = [
     staking: {
       staking_tokens: [
         {
-          denom: 'uinj'
+          denom: 'inj'
         }
       ]
     },
@@ -5540,6 +5684,10 @@ const chains: Chain[] = [
         {
           address: 'https://injective-rpc.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://rpc-injective-ia.cosmosia.notional.ventures/',
+          provider: 'Notional'
         }
       ],
       rest: [
@@ -5550,9 +5698,22 @@ const chains: Chain[] = [
         {
           address: 'https://injective-lcd.quickapi.com:443',
           provider: 'Chainlayer'
+        },
+        {
+          address: 'https://api-injective-ia.cosmosia.notional.ventures/',
+          provider: 'Notional'
         }
       ],
-      grpc: []
+      grpc: [
+        {
+          address: 'grpc-injective-ia.cosmosia.notional.ventures:443',
+          provider: 'Notional'
+        },
+        {
+          address: 'injective-grpc.polkachu.com:9900',
+          provider: 'Polkachu'
+        }
+      ]
     },
     explorers: [
       {
@@ -5678,7 +5839,7 @@ const chains: Chain[] = [
           provider: 'chainapsis'
         },
         {
-          address: 'https://rpc-irisnet-ia.notional.ventures/',
+          address: 'https://rpc-irisnet-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -5688,13 +5849,13 @@ const chains: Chain[] = [
           provider: 'chainapsis'
         },
         {
-          address: 'https://api-irisnet-ia.notional.ventures/',
+          address: 'https://api-irisnet-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
       grpc: [
         {
-          address: 'grpc-irisnet-ia.notional.ventures:443',
+          address: 'grpc-irisnet-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         }
       ]
@@ -5845,8 +6006,12 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://rpc-juno-ia.notional.ventures/',
+          address: 'https://rpc-juno-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://rpc.juno.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ],
       rest: [
@@ -5871,8 +6036,12 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://api-juno-ia.notional.ventures/',
+          address: 'https://api-juno-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://api.juno.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ],
       grpc: [
@@ -5881,8 +6050,16 @@ const chains: Chain[] = [
           provider: 'strangelove'
         },
         {
-          address: 'grpc-juno-ia.notional.ventures:443',
+          address: 'grpc-juno-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'https://juno.grpcui.chaintools.host/',
+          provider: 'ChainTools'
+        },
+        {
+          address: 'juno-grpc.polkachu.com:9090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -6002,7 +6179,7 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc-kava-ia.notional.ventures/',
+          address: 'https://rpc-kava-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -6012,7 +6189,7 @@ const chains: Chain[] = [
           provider: 'kava'
         },
         {
-          address: 'https://api-kava-ia.notional.ventures/',
+          address: 'https://api-kava-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -6022,8 +6199,12 @@ const chains: Chain[] = [
           provider: 'kava'
         },
         {
-          address: 'grpc-kava-ia.notional.ventures:443',
+          address: 'grpc-kava-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'kava-grpc.polkachu.com:39090',
+          provider: 'Polkachu'
         }
       ],
       'evm-http-jsonrpc': [
@@ -6136,8 +6317,12 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://rpc-kichain-ia.notional.ventures/',
+          address: 'https://rpc-kichain-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://rpc.kichain.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ],
       rest: [
@@ -6150,14 +6335,22 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
-          address: 'https://api-kichain-ia.notional.ventures/',
+          address: 'https://api-kichain-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://api.kichain.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ],
       grpc: [
         {
-          address: 'grpc-kichain-ia.notional.ventures:443',
+          address: 'grpc-kichain-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'kichain-grpc.polkachu.com:35090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -6295,7 +6488,7 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc-konstellation-ia.notional.ventures/',
+          address: 'https://rpc-konstellation-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -6305,14 +6498,18 @@ const chains: Chain[] = [
           provider: 'konstellation'
         },
         {
-          address: 'https://api-konstellation-ia.notional.ventures/',
+          address: 'https://api-konstellation-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
       grpc: [
         {
-          address: 'grpc-konstellation-ia.notional.ventures:443/',
+          address: 'grpc-konstellation-ia.cosmosia.notional.ventures:443/',
           provider: 'Notional'
+        },
+        {
+          address: 'konstellation-grpc.polkachu.com:33090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -6370,6 +6567,28 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-kujira.ecostake.com',
           provider: 'ecostake'
+        },
+        {
+          address: 'https://rpc.kujira.chaintools.tech/',
+          provider: 'ChainTools'
+        },
+        {
+          address: 'https://rpc-kujira-ia.cosmosia.notional.ventures/',
+          provider: 'Notional'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://kujira.grpcui.chaintools.host/',
+          provider: 'ChainTools'
+        },
+        {
+          address: 'https://grpc-kujira-ia.cosmosia.notional.ventures/',
+          provider: 'Notional'
+        },
+        {
+          address: 'kujira-grpc.polkachu.com:18090',
+          provider: 'Polkachu'
         }
       ],
       rest: [
@@ -6388,6 +6607,14 @@ const chains: Chain[] = [
         {
           address: 'https://rest-kujira.ecostake.com',
           provider: 'ecostake'
+        },
+        {
+          address: 'https://api.kujira.chaintools.tech/',
+          provider: 'ChainTools'
+        },
+        {
+          address: 'https://api-kujira-ia.cosmosia.notional.ventures/',
+          provider: 'Notional'
         }
       ]
     },
@@ -6501,7 +6728,7 @@ const chains: Chain[] = [
           provider: 'like.co'
         },
         {
-          address: 'https://rpc-likecoin-ia.notional.ventures/',
+          address: 'https://rpc-likecoin-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -6511,13 +6738,13 @@ const chains: Chain[] = [
           provider: 'like.co'
         },
         {
-          address: 'https://api-likecoin-ia.notional.ventures/',
+          address: 'https://api-likecoin-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
       grpc: [
         {
-          address: 'grpc-likecoin-ia.notional.ventures:443',
+          address: 'grpc-likecoin-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         }
       ]
@@ -7041,7 +7268,7 @@ const chains: Chain[] = [
     chain_name: 'nomic',
     status: 'live',
     network_type: 'mainnet',
-    pretty_name: 'Nomic Stakenet 3',
+    pretty_name: 'Nomic',
     chain_id: 'nomic-stakenet-3',
     bech32_prefix: 'nomic',
     daemon_name: 'nomic',
@@ -7052,12 +7279,8 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/nomic-io/nomic',
-      recommended_version: 'v0.5.0',
-      compatible_versions: ['v0.5.0'],
-      binaries: {
-        'linux/amd64':
-          'https://github.com/ovrclk/akash/releases/download/v0.12.1/akash_0.12.1_linux_amd64.zip'
-      }
+      recommended_version: 'develop',
+      compatible_versions: ['develop', 'v3']
     },
     peers: {
       seeds: [
@@ -7215,6 +7438,13 @@ const chains: Chain[] = [
           address: '34.79.179.216:26656',
           provider: 'Odin Protocol'
         }
+      ],
+      seeds: [
+        {
+          id: 'c8ee9f66163f0c1220c586eab1a2a57f6381357f',
+          address: 'odin.seed.rhinostake.com:16658',
+          provider: 'Rhino Stake'
+        }
       ]
     },
     apis: {
@@ -7241,6 +7471,110 @@ const chains: Chain[] = [
         kind: 'ping.pub',
         url: 'https://ping.pub/odin',
         tx_page: 'https://ping.pub/odin/tx/${txHash}'
+      }
+    ]
+  },
+  {
+    $schema: '../chain.schema.json',
+    chain_name: 'okexchain',
+    status: 'live',
+    network_type: 'mainnet',
+    pretty_name: 'OKExChain',
+    chain_id: 'exchain-66',
+    bech32_prefix: 'ex',
+    daemon_name: 'exchaind',
+    node_home: '$HOME/.exchaind',
+    genesis: {
+      genesis_url: 'https://github.com/okex/mainnet/blob/main/genesis.json'
+    },
+    slip44: 60,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'wei',
+          low_gas_price: 200000000,
+          average_gas_price: 250000000,
+          high_gas_price: 400000000
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/okex/exchain',
+      recommended_version: 'v1.6.1.1',
+      compatible_versions: ['v1.2.2', 'v1.6.1.1'],
+      binaries: {}
+    },
+    peers: {
+      seeds: [
+        {
+          id: 'e926c8154a2af4390de02303f0977802f15eafe2',
+          address: '3.16.103.80:26656',
+          provider: 'Chillcrypto'
+        },
+        {
+          id: '7fa5b1d1f1e48659fa750b6aec702418a0e75f13',
+          address: '175.41.191.69:26656',
+          provider: 'Unique farming'
+        },
+        {
+          id: 'c8f32b793871b56a11d94336d9ce6472f893524b',
+          address: '35.74.8.189:26656',
+          provider: 'DeLab'
+        }
+      ],
+      persistent_peers: [
+        {
+          id: 'bbd4aa19249ad42de4fe2ca99209894412fd4707',
+          address: '3.135.138.205:26656',
+          provider: 'ChainHub'
+        },
+        {
+          id: '0eb87d4eb92f8f04d9c2d444dd403671a634af56',
+          address: '13.125.38.24:26656',
+          provider: 'DeLab'
+        },
+        {
+          id: '3449bb4d2180dfaa9ddb13776177b0e67f95ebb4',
+          address: '54.255.93.228:26656',
+          provider: 'Chillcrypto'
+        },
+        {
+          id: 'b2a2f799a726b74f83f73b62e1bfef017575b21a',
+          address: '54.151.166.67:26656',
+          provider: 'Unique farming'
+        },
+        {
+          id: '01b21d39f250a3a5411113aae4a7032eaf9b344e',
+          address: '3.64.37.17:26656',
+          provider: 'Nodeplus'
+        },
+        {
+          id: '54c195e08ff53e9fd31973dd73d530dcd1506807',
+          address: '52.78.236.126:26656',
+          provider: 'Blockpro'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://exchaintmrpc.okex.org',
+          provider: 'okx chain'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://exchainrpc.okex.org/',
+          provider: 'okx chain'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'OKLink',
+        url: 'https://www.oklink.com/en/okc',
+        tx_page: 'https://www.oklink.com/en/okc/tx/${txHash}',
+        account_page: 'https://www.oklink.com/en/okc/address/${accountAddress}'
       }
     ]
   },
@@ -7303,6 +7637,14 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.omniflix.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://rpc.omniflix.chaintools.tech/',
+          provider: 'ChainTools'
+        },
+        {
+          address: 'https://rpc-omniflixhub-ia.cosmosia.notional.ventures/',
+          provider: 'Notional'
         }
       ],
       rest: [
@@ -7313,12 +7655,24 @@ const chains: Chain[] = [
         {
           address: 'https://api.omniflix.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://api.omniflix.chaintools.tech/',
+          provider: 'ChainTools'
+        },
+        {
+          address: 'https://api-omniflixhub-ia.cosmosia.notional.ventures/',
+          provider: 'Notional'
         }
       ],
       grpc: [
         {
           address: 'https://grpc.omniflix.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'grpc-omniflixhub-ia.cosmosia.notional.ventures:443',
+          provider: 'Notional'
         }
       ]
     },
@@ -7529,7 +7883,49 @@ const chains: Chain[] = [
       cosmos_sdk_version: '0.45',
       tendermint_version: '0.34',
       cosmwasm_version: '0.24',
-      cosmwasm_enabled: true
+      cosmwasm_enabled: true,
+      genesis: {
+        tag: 'v3.1.0',
+        genesis_url:
+          'https://github.com/osmosis-labs/networks/raw/main/osmosis-1/genesis.json'
+      },
+      versions: [
+        {
+          name: 'v3',
+          tag: 'v3.1.0',
+          height: 0,
+          next_version_name: 'v4'
+        },
+        {
+          name: 'v4',
+          tag: 'v4.2.0',
+          height: 1314500,
+          next_version_name: 'v5'
+        },
+        {
+          name: 'v5',
+          tag: 'v6.4.1',
+          height: 2383300,
+          next_version_name: 'v7'
+        },
+        {
+          name: 'v7',
+          tag: 'v8.0.0',
+          height: 3401000,
+          next_version_name: 'v9'
+        },
+        {
+          name: 'v9',
+          tag: 'v10.0.1',
+          height: 4707300,
+          next_version_name: 'v11'
+        },
+        {
+          name: 'v11',
+          tag: 'v11.0.0',
+          height: 5432450
+        }
+      ]
     },
     peers: {
       seeds: [
@@ -7700,6 +8096,14 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
+          address: 'https://rpc.osmosis.zone/',
+          provider: 'Osmosis Foundation'
+        },
+        {
+          address: 'https://rpc-osmosis.blockapsis.com',
+          provider: 'chainapsis'
+        },
+        {
           address: 'https://osmosis-rpc.quickapi.com:443',
           provider: 'Chainlayer'
         },
@@ -7712,10 +8116,6 @@ const chains: Chain[] = [
           provider: 'validatornetwork'
         },
         {
-          address: 'https://rpc-osmosis.blockapsis.com',
-          provider: 'chainapsis'
-        },
-        {
           address: 'https://rpc-osmosis.ecostake.com',
           provider: 'ecostake'
         },
@@ -7724,12 +8124,8 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc-osmosis-ia.notional.ventures/',
+          address: 'https://rpc-osmosis-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
-        },
-        {
-          address: 'https://rpc.osmosis.zone/',
-          provider: 'Osmosis Foundation'
         },
         {
           address: 'https://rpc.osmosis.interbloc.org',
@@ -7737,6 +8133,10 @@ const chains: Chain[] = [
         }
       ],
       rest: [
+        {
+          address: 'https://lcd.osmosis.zone/',
+          provider: 'Osmosis Foundation'
+        },
         {
           address: 'https://osmosis-lcd.quickapi.com:443',
           provider: 'Chainlayer'
@@ -7754,12 +8154,8 @@ const chains: Chain[] = [
           provider: 'ecostake'
         },
         {
-          address: 'https://api-osmosis-ia.notional.ventures/',
+          address: 'https://api-osmosis-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
-        },
-        {
-          address: 'https://lcd.osmosis.zone/',
-          provider: 'Osmosis Foundation'
         },
         {
           address: 'https://api.osmosis.interbloc.org',
@@ -7776,8 +8172,12 @@ const chains: Chain[] = [
           provider: 'strangelove'
         },
         {
-          address: 'grpc-osmosis-ia.notional.ventures:443',
+          address: 'grpc-osmosis-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'osmosis-grpc.polkachu.com:9090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -8009,8 +8409,16 @@ const chains: Chain[] = [
           provider: 'ecostake'
         },
         {
-          address: 'https://passagerpc.panthea.eu',
+          address: 'https://passage-rpc.panthea.eu',
           provider: 'Panthea EU'
+        },
+        {
+          address: 'https://rpc-passage-ia.cosmosia.notional.ventures/',
+          provider: 'Notional'
+        },
+        {
+          address: 'https://rpc.passage.nodestake.top',
+          provider: 'NodeStake'
         }
       ],
       rest: [
@@ -8027,8 +8435,30 @@ const chains: Chain[] = [
           provider: 'ecostake'
         },
         {
-          address: 'https://passageapi.panthea.eu',
+          address: 'https://passage-api.panthea.eu',
           provider: 'Panthea EU'
+        },
+        {
+          address: 'https://api-passage-ia.cosmosia.notional.ventures/',
+          provider: 'Notional'
+        },
+        {
+          address: 'https://api.passage.nodestake.top',
+          provider: 'NodeStake'
+        }
+      ],
+      grpc: [
+        {
+          address: 'grpc-passage-ia.cosmosia.notional.ventures:443',
+          provider: 'Notional'
+        },
+        {
+          address: 'passage-grpc.polkachu.com:56090',
+          provider: 'Polkachu'
+        },
+        {
+          address: 'https://grpc.passage.nodestake.top',
+          provider: 'NodeStake'
         }
       ]
     },
@@ -8165,7 +8595,7 @@ const chains: Chain[] = [
           provider: 'Persistence'
         },
         {
-          address: 'https://rpc-persistent-ia.notional.ventures/',
+          address: 'https://rpc-persistent-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -8175,7 +8605,7 @@ const chains: Chain[] = [
           provider: 'Persistence'
         },
         {
-          address: 'https://api-persistent-ia.notional.ventures/',
+          address: 'https://api-persistent-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -8185,7 +8615,7 @@ const chains: Chain[] = [
           provider: 'Persistence'
         },
         {
-          address: 'grpc-persistent-ia.notional.ventures:443',
+          address: 'grpc-persistent-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         }
       ]
@@ -8279,7 +8709,7 @@ const chains: Chain[] = [
           provider: 'figure'
         },
         {
-          address: 'https://api-provenance-ia.notional.ventures/',
+          address: 'https://rpc-provenance-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -8289,13 +8719,13 @@ const chains: Chain[] = [
           provider: 'figure'
         },
         {
-          address: 'https://api-provenance-ia.notional.ventures/',
+          address: 'https://api-provenance-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
       grpc: [
         {
-          address: 'grpc-provenance-ia.notional.ventures:443',
+          address: 'grpc-provenance-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         }
       ]
@@ -8413,6 +8843,10 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
+          address: 'https://rpc-regen.ecostake.com',
+          provider: 'ecostake'
+        },
+        {
           address: 'http://public-rpc.regen.vitwit.com:26657',
           provider: 'vitwit'
         },
@@ -8425,12 +8859,8 @@ const chains: Chain[] = [
           provider: 'forbole'
         },
         {
-          address: 'https://rpc-regen-ia.notional.ventures/',
+          address: 'https://rpc-regen-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
-        },
-        {
-          address: 'https://rpc-regen.ecostake.com',
-          provider: 'ecostake'
         }
       ],
       grpc: [
@@ -8439,11 +8869,15 @@ const chains: Chain[] = [
           provider: 'stakesystems'
         },
         {
-          address: 'grpc-regen-ia.notional.ventures:443',
+          address: 'grpc-regen-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         }
       ],
       rest: [
+        {
+          address: 'https://rest-regen.ecostake.com',
+          provider: 'ecostake'
+        },
         {
           address: 'http://public-rpc.regen.vitwit.com:1317',
           provider: 'vitwit'
@@ -8453,12 +8887,8 @@ const chains: Chain[] = [
           provider: 'stakesystems'
         },
         {
-          address: 'https://api-regen-ia.notional.ventures/',
+          address: 'https://api-regen-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
-        },
-        {
-          address: 'https://rest-regen.ecostake.com',
-          provider: 'ecostake'
         }
       ]
     },
@@ -8552,6 +8982,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpcapi.rizon.world/',
           provider: 'HDAC Technology AG'
+        },
+        {
+          address: 'https://rpc.rizon.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ],
       rest: [
@@ -8562,6 +8996,10 @@ const chains: Chain[] = [
         {
           address: 'https://restapi.rizon.world/',
           provider: 'HDAC Technology AG'
+        },
+        {
+          address: 'https://api.rizon.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ]
     },
@@ -8645,16 +9083,16 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
+          address: 'https://rpc.scrt.network',
+          provider: 'SCRT Network'
+        },
+        {
           address: 'https://secret-4.api.trivium.network:26657',
           provider: 'Trivium | Trivium.Network'
         },
         {
           address: 'https://scrt-rpc.blockpane.com',
           provider: '[ block pane ]'
-        },
-        {
-          address: 'https://rpc.scrt.network',
-          provider: 'SCRT Network'
         },
         {
           address: 'https://secret.rpc.consensus.one',
@@ -8671,16 +9109,16 @@ const chains: Chain[] = [
       ],
       rest: [
         {
+          address: 'https://api.scrt.network',
+          provider: 'SCRT Network'
+        },
+        {
           address: 'https://secret-4.api.trivium.network:1317',
           provider: 'Trivium | Trivium.Network'
         },
         {
           address: 'https://scrt-lcd.blockpane.com',
           provider: '[ block pane ]'
-        },
-        {
-          address: 'https://api.scrt.network',
-          provider: 'SCRT Network'
         },
         {
           address: 'https://secret.api.consensus.one',
@@ -8834,12 +9272,12 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
-          address: 'https://rpc-sentinel.keplr.app',
-          provider: 'chainapsis'
+          address: 'https://rpc-sentinel-ia.cosmosia.notional.ventures/',
+          provider: 'Notional'
         },
         {
-          address: 'https://rpc-sentinel-ia.notional.ventures/',
-          provider: 'Notional'
+          address: 'https://rpc-sentinel.keplr.app',
+          provider: 'chainapsis'
         },
         {
           address: 'https://rpc-sentinel.whispernode.com',
@@ -8848,26 +9286,38 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.sentinel1.badgerbite.xyz',
           provider: 'BadgerBite'
+        },
+        {
+          address: 'https://rpc.sentinel.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ],
       rest: [
+        {
+          address: 'https://api-sentinel-ia.cosmosia.notional.ventures/',
+          provider: 'Notional'
+        },
         {
           address: 'https://lcd-sentinel.keplr.app',
           provider: 'chainapsis'
         },
         {
-          address: 'https://api-sentinel-ia.notional.ventures/',
-          provider: 'Notional'
-        },
-        {
           address: 'https://lcd-sentinel.whispernode.com',
           provider: 'WhisperNode🤐'
+        },
+        {
+          address: 'https://api.sentinel.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ],
       grpc: [
         {
-          address: 'grpc-sentinel-ia.notional.ventures:443',
+          address: 'grpc-sentinel-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'https://sentinel.grpcui.chaintools.host/',
+          provider: 'ChainTools'
         }
       ]
     }
@@ -8944,7 +9394,7 @@ const chains: Chain[] = [
           provider: 'Shentu'
         },
         {
-          address: 'https://shenturpc.panthea.eu',
+          address: 'https://shentu-rpc.panthea.eu',
           provider: 'Panthea EU'
         }
       ],
@@ -8954,7 +9404,7 @@ const chains: Chain[] = [
           provider: 'Shentu'
         },
         {
-          address: 'https://shentuapi.panthea.eu',
+          address: 'https://shentu-api.panthea.eu',
           provider: 'Panthea EU'
         }
       ]
@@ -9052,16 +9502,24 @@ const chains: Chain[] = [
           address: 'https://rpc-archive.sifchain.finance:443'
         },
         {
+          address: 'https://sifchain.rpc.consensus.one:443',
+          provider: 'Consensus One'
+        },
+        {
           address: 'https://sifchain-rpc.polkachu.com',
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc-sifchain-ia.notional.ventures/',
+          address: 'https://rpc-sifchain-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
         {
           address: 'https://rpc-sifchain.ecostake.com',
           provider: 'ecostake'
+        },
+        {
+          address: 'https://rpc.sifchain.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ],
       grpc: [
@@ -9069,8 +9527,12 @@ const chains: Chain[] = [
           address: 'https://grpc.sifchain.finance:443'
         },
         {
-          address: 'grpc-sifchain-ia.notional.ventures:443',
+          address: 'grpc-sifchain-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'sifchain-grpc.polkachu.com:32090',
+          provider: 'Polkachu'
         }
       ],
       rest: [
@@ -9078,12 +9540,20 @@ const chains: Chain[] = [
           address: 'https://api.sifchain.finance:443'
         },
         {
-          address: 'https://api-sifchain-ia.notional.ventures/',
+          address: 'https://sifchain.api.consensus.one:443',
+          provider: 'Consensus One'
+        },
+        {
+          address: 'https://api-sifchain-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
         {
           address: 'https://rest-sifchain.ecostake.com',
           provider: 'ecostake'
+        },
+        {
+          address: 'https://api.sifchain.chaintools.tech/',
+          provider: 'ChainTools'
         }
       ]
     },
@@ -9236,6 +9706,10 @@ const chains: Chain[] = [
         {
           address: '35.230.37.28:9090',
           provider: 'strangelove'
+        },
+        {
+          address: 'sommelier-grpc.polkachu.com:41090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -9397,12 +9871,12 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
-          address: 'https://rpc.stargaze.pupmos.network/',
-          provider: 'PUPMØS'
-        },
-        {
           address: 'https://rpc.stargaze-apis.com/',
           provider: 'Stargaze Foundation'
+        },
+        {
+          address: 'https://rpc.stargaze.pupmos.network/',
+          provider: 'PUPMØS'
         },
         {
           address: 'https://rpc.stargaze.ezstaking.io/',
@@ -9417,7 +9891,7 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc-stargaze-ia.notional.ventures/',
+          address: 'https://rpc-stargaze-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
         {
@@ -9427,12 +9901,12 @@ const chains: Chain[] = [
       ],
       rest: [
         {
-          address: 'https://api.stargaze.pupmos.network/',
-          provider: 'PUPMØS'
-        },
-        {
           address: 'https://rest.stargaze-apis.com/',
           provider: 'Stargaze Foundation'
+        },
+        {
+          address: 'https://api.stargaze.pupmos.network/',
+          provider: 'PUPMØS'
         },
         {
           address: 'https://api.stargaze.ezstaking.io/',
@@ -9443,7 +9917,7 @@ const chains: Chain[] = [
           provider: 'kingnodes'
         },
         {
-          address: 'https://api-stargaze-ia.notional.ventures/',
+          address: 'https://api-stargaze-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
         {
@@ -9453,8 +9927,12 @@ const chains: Chain[] = [
       ],
       grpc: [
         {
-          address: 'grpc-stargaze-ia.notional.ventures:443',
+          address: 'grpc-stargaze-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'stargaze-grpc.polkachu.com:37090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -9541,7 +10019,7 @@ const chains: Chain[] = [
           provider: 'chainapsis'
         },
         {
-          address: 'https://rpc-starname-ia.notional.ventures/',
+          address: 'https://rpc-starname-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -9551,13 +10029,13 @@ const chains: Chain[] = [
           provider: 'chainapsis'
         },
         {
-          address: 'https://api-starname-ia.notional.ventures/',
+          address: 'https://api-starname-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
       grpc: [
         {
-          address: 'grpc-starname-ia.notional.ventures:443',
+          address: 'grpc-starname-ia.cosmosia.notional.ventures:443',
           provider: 'starname'
         }
       ]
@@ -9579,6 +10057,145 @@ const chains: Chain[] = [
         tx_page: 'https://atomscan.com/starname/transactions/${txHash}'
       }
     ]
+  },
+  {
+    $schema: '../chain.schema.json',
+    chain_name: 'stride',
+    status: 'live',
+    network_type: 'mainnet',
+    pretty_name: 'Stride',
+    chain_id: 'stride-1',
+    bech32_prefix: 'stride',
+    daemon_name: 'strided',
+    node_home: '$HOME/.strided',
+    genesis: {
+      genesis_url:
+        'https://raw.githubusercontent.com/Stride-Labs/testnet/infra-test/poolparty/infra/genesis.json'
+    },
+    key_algos: ['ed25519'],
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'ustrd',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0,
+          average_gas_price: 0,
+          high_gas_price: 0.04
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/Stride-Labs/stride',
+      recommended_version: 'v1.0.0',
+      binaries: {
+        'linux/amd64':
+          'https://github.com/Stride-Labs/stride/releases/download/v1.0.0/strided-1.0.0-amd64',
+        'linux/arm64':
+          'https://github.com/Stride-Labs/stride/releases/download/v1.0.0/strided-1.0.0-arm64'
+      },
+      cosmos_sdk_version: '0.45.4',
+      tendermint_version: '0.34.19'
+    },
+    peers: {
+      seeds: [
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:12256',
+          provider: 'Polkachu'
+        },
+        {
+          id: 'cb91a11588d66cfd9c01f99541df4978a08e0e39',
+          address: 'seedv1.main.stridenet.co:26656',
+          provider: 'Stride'
+        }
+      ],
+      persistent_peers: [
+        {
+          id: '1387946c04bceb472113f657f55f670f71709230',
+          address: '65.108.4.188:12256',
+          provider: 'Polkachu-1'
+        },
+        {
+          id: 'df3f533e6b9776c11f08da804edcb810cbdd2080',
+          address: '65.108.234.23:12256',
+          provider: 'Polkachu-2'
+        },
+        {
+          id: '1387946c04bceb472113f657f55f670f71709230',
+          address: '65.108.4.188:12256',
+          provider: 'Polkachu-3'
+        },
+        {
+          id: '076e97f47762a477f2ae3dd3e798a7970b6bb20d',
+          address: '52.52.110.228:26656',
+          provider: 'Cosmostation-1'
+        },
+        {
+          id: 'e821acdaf0c7a3c60ea3cd4eb4a98a62dad06f58',
+          address: '43.201.12.41:26656',
+          provider: 'Cosmostation-2'
+        },
+        {
+          id: 'b5f9fa874781f975687018ae559f0d952d3a2e24',
+          address: '52.52.208.179:26656',
+          provider: 'Cosmostation-3'
+        },
+        {
+          id: '04ea9eceee16db90872fee3fbef9ac50a87702c5',
+          address: '185.248.24.29:26656',
+          provider: 'Whi𝕊perNode'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://stride-rpc.polkachu.com/',
+          provider: 'Polkachu'
+        },
+        {
+          address: 'https://stride.rpc.chandrastation.com',
+          provider: 'Chandra Station'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://stride-api.polkachu.com/',
+          provider: 'Polkachu'
+        },
+        {
+          address: 'https://stride.api.chandrastation.com',
+          provider: 'Chandra Station'
+        }
+      ],
+      grpc: [
+        {
+          address: 'http://stride-grpc.polkachu.com:22090',
+          provider: 'Polkachu'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'Apollo',
+        url: 'https://apollo.chandrastation.com/stride',
+        tx_page: 'https://apollo.chandrastation.com/stride/tx/${txHash}',
+        account_page:
+          'https://apollo.chandrastation.com/stride/account/${accountAddress}'
+      },
+      {
+        kind: 'Stride Ping Pub',
+        url: 'https://explorer.stride.zone/stride',
+        tx_page: 'https://explorer.stride.zone/stride/tx/${txHash}',
+        account_page:
+          'https://explorer.stride.zone/stride/account/${accountAddress}'
+      }
+    ],
+    logo_URIs: {
+      png:
+        'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stride-chain-logo.png'
+    }
   },
   {
     $schema: '../chain.schema.json',
@@ -9656,7 +10273,7 @@ const chains: Chain[] = [
           provider: 'Terra'
         },
         {
-          address: 'https://rpc-terra-ia.notional.ventures/',
+          address: 'https://rpc-terra-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -9670,13 +10287,13 @@ const chains: Chain[] = [
           provider: 'BlockNgine Validators'
         },
         {
-          address: 'https://api-terra-ia.notional.ventures/',
+          address: 'https://api-terra-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
       grpc: [
         {
-          address: 'grpc-terra-ia.notional.ventures:443',
+          address: 'grpc-terra-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         }
       ]
@@ -9974,7 +10591,7 @@ const chains: Chain[] = [
   },
   {
     $schema: '../../chain.schema.json',
-    chain_name: 'cheqd',
+    chain_name: 'cheqdtestnet',
     status: 'live',
     network_type: 'testnet',
     pretty_name: 'cheqd',
@@ -11379,7 +11996,7 @@ const chains: Chain[] = [
           provider: 'sourled'
         },
         {
-          address: 'https://rpc-umee-ia.notional.ventures/',
+          address: 'https://rpc-umee-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -11409,7 +12026,7 @@ const chains: Chain[] = [
           provider: 'umee Foundation'
         },
         {
-          address: 'https://api-umee-ia.notional.ventures/',
+          address: 'https://api-umee-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -11439,8 +12056,12 @@ const chains: Chain[] = [
           provider: 'umee Foundation'
         },
         {
-          address: 'grpc-umee-ia.notional.ventures:443',
+          address: 'grpc-umee-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'umee-grpc.polkachu.com:36090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -11549,7 +12170,7 @@ const chains: Chain[] = [
           provider: 'vidulum'
         },
         {
-          address: 'https://rpc-vidulum-ia.notional.ventures/',
+          address: 'https://rpc-vidulum-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
@@ -11559,13 +12180,13 @@ const chains: Chain[] = [
           provider: 'vidulum'
         },
         {
-          address: 'https://api-vidulum-ia.notional.ventures/',
+          address: 'https://api-vidulum-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
       ],
       grpc: [
         {
-          address: 'grpc-vidulum-ia.notional.ventures:443',
+          address: 'grpc-vidulum-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         }
       ]
