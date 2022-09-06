@@ -45,10 +45,8 @@ export class ChainInfo {
     this._chain = this.registry.getChain(this.chain_name);
 
     const supportedChains = this._ibc_data.reduce((m, v) => {
-      if (!m.includes(v['chain-1']['chain-name']))
-        m.push(v['chain-1']['chain-name']);
-      if (!m.includes(v['chain-2']['chain-name']))
-        m.push(v['chain-2']['chain-name']);
+      if (!m.includes(v.chain_1.chain_name)) m.push(v.chain_1.chain_name);
+      if (!m.includes(v.chain_2.chain_name)) m.push(v.chain_2.chain_name);
       return m;
     }, []);
 
@@ -116,8 +114,8 @@ export class ChainRegistry {
   getChainIbcData(chainName: string) {
     return this._ibc_data.filter(
       (info) =>
-        info['chain-1']['chain-name'] === chainName ||
-        info['chain-2']['chain-name'] === chainName
+        info.chain_1.chain_name === chainName ||
+        info.chain_2.chain_name === chainName
     );
   }
 
@@ -175,8 +173,8 @@ export class ChainRegistry {
   upsertIbcData(data: IBCInfo) {
     const found = this._ibc_data.find((info) => {
       return (
-        info['chain-1']['chain-name'] === data['chain-1']['chain-name'] &&
-        info['chain-2']['chain-name'] === data['chain-2']['chain-name']
+        info.chain_1.chain_name === data.chain_1.chain_name &&
+        info.chain_2.chain_name === data.chain_2.chain_name
       );
     });
 
@@ -187,8 +185,8 @@ export class ChainRegistry {
 
     this._ibc_data = this._ibc_data.map((info) => {
       if (
-        info['chain-1']['chain-name'] === data['chain-1']['chain-name'] &&
-        info['chain-2']['chain-name'] === data['chain-2']['chain-name']
+        info.chain_1.chain_name === data.chain_1.chain_name &&
+        info.chain_2.chain_name === data.chain_2.chain_name
       ) {
         return data;
       } else {

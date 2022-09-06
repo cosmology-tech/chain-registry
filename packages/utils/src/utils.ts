@@ -27,10 +27,7 @@ export const ibcDenom = (
 };
 
 const findInfo = (ibc, to, from) =>
-  ibc.find(
-    (i) =>
-      i['chain-1']['chain-name'] === from && i['chain-2']['chain-name'] === to
-  );
+  ibc.find((i) => i.chain_1.chain_name === from && i.chain_2.chain_name === to);
 
 export const getIbcInfo = (
   ibc: IBCInfo[],
@@ -45,28 +42,28 @@ export const getIbcInfo = (
 export const getTransferChannel = (info: IBCInfo) => {
   return info.channels.find(
     (channel) =>
-      channel['chain-1']['port-id'] === 'transfer' &&
-      channel['chain-2']['port-id'] === 'transfer'
+      channel.chain_1.port_id === 'transfer' &&
+      channel.chain_2.port_id === 'transfer'
   );
 };
 
 export const getNonTransferChannel = (info: IBCInfo) => {
   return info.channels.find(
     (channel) =>
-      (channel['chain-1']['port-id'] !== 'transfer' &&
-        channel['chain-2']['port-id'] === 'transfer') ||
-      (channel['chain-1']['port-id'] === 'transfer' &&
-        channel['chain-2']['port-id'] !== 'transfer')
+      (channel.chain_1.port_id !== 'transfer' &&
+        channel.chain_2.port_id === 'transfer') ||
+      (channel.chain_1.port_id === 'transfer' &&
+        channel.chain_2.port_id !== 'transfer')
   );
 };
 
 export const getWasmChannel = (info: IBCInfo) => {
   return info.channels.find(
     (channel) =>
-      (channel['chain-1']['port-id'].startsWith('wasm.') &&
-        channel['chain-2']['port-id'] === 'transfer') ||
-      (channel['chain-1']['port-id'] === 'transfer' &&
-        channel['chain-2']['port-id'].startsWith('wasm'))
+      (channel.chain_1.port_id.startsWith('wasm.') &&
+        channel.chain_2.port_id === 'transfer') ||
+      (channel.chain_1.port_id === 'transfer' &&
+        channel.chain_2.port_id.startsWith('wasm'))
   );
 };
 
@@ -84,10 +81,10 @@ export const getIbcDenomByBase = (
       return;
     }
     let channelInfo;
-    if (ibcInfo['chain-1']['chain-name'] === chain) {
-      channelInfo = channel['chain-1'];
+    if (ibcInfo.chain_1.chain_name === chain) {
+      channelInfo = channel.chain_1;
     } else {
-      channelInfo = channel['chain-2'];
+      channelInfo = channel.chain_2;
     }
 
     const assetList = assets.find(
@@ -133,8 +130,8 @@ export const getIbcDenomByBase = (
     //         channelId: assetInfo.ibc.source_channel
     //       },
     //       {
-    //         portId: channelInfo['port-id'],
-    //         channelId: channelInfo['channel-id']
+    //         portId: channelInfo.port_id,
+    //         channelId: channelInfo.channel_id
     //       }
     //     ],
     //     base
@@ -144,8 +141,8 @@ export const getIbcDenomByBase = (
     return ibcDenom(
       [
         {
-          portId: channelInfo['port-id'],
-          channelId: channelInfo['channel-id']
+          portId: channelInfo.port_id,
+          channelId: channelInfo.channel_id
         }
       ],
       base
@@ -167,10 +164,10 @@ export const getIbcDenomByBaseForCw20 = (
       return;
     }
     let channelInfo;
-    if (ibcInfo['chain-1']['chain-name'] === chain) {
-      channelInfo = channel['chain-1'];
+    if (ibcInfo.chain_1.chain_name === chain) {
+      channelInfo = channel.chain_1;
     } else {
-      channelInfo = channel['chain-2'];
+      channelInfo = channel.chain_2;
     }
 
     const assetInfo = assets.find(
@@ -183,8 +180,8 @@ export const getIbcDenomByBaseForCw20 = (
     return ibcDenom(
       [
         {
-          portId: channelInfo['port-id'],
-          channelId: channelInfo['channel-id']
+          portId: channelInfo.port_id,
+          channelId: channelInfo.channel_id
         }
       ],
       base
@@ -199,19 +196,18 @@ export const getIbcAssets = (
 ) => {
   const chainIbcInfo = ibc.filter((i) => {
     return (
-      i['chain-1']['chain-name'] === chainName ||
-      i['chain-2']['chain-name'] === chainName
+      i.chain_1.chain_name === chainName || i.chain_2.chain_name === chainName
     );
   });
 
   const ibcAssetLists = chainIbcInfo
     .map((ibcInfo) => {
       const counterpartyIs =
-        ibcInfo['chain-1']['chain-name'] === chainName ? 'chain-2' : 'chain-1';
+        ibcInfo.chain_1.chain_name === chainName ? 'chain_2' : 'chain_1';
       const chainIs =
-        ibcInfo['chain-1']['chain-name'] === chainName ? 'chain-1' : 'chain-2';
+        ibcInfo.chain_1.chain_name === chainName ? 'chain_1' : 'chain_2';
 
-      const counterparty = ibcInfo[counterpartyIs]['chain-name'];
+      const counterparty = ibcInfo[counterpartyIs].chain_name;
       const counterpartyIbc = ibcInfo[counterpartyIs];
       const chainIbc = ibcInfo[chainIs];
 
@@ -269,7 +265,7 @@ export const getIbcAssets = (
     .filter(Boolean);
 
   const hash = ibcAssetLists.reduce((m, v) => {
-    m[v.chain['chain-name']] = m[v.chain['chain-name']] || [];
+    m[v.chain.chain_name] = m[v.chain.chain_name] || [];
     const assets = v.assets.map((asset) => {
       return {
         ...asset,
@@ -278,17 +274,17 @@ export const getIbcAssets = (
             type: 'ibc',
             counterparty: {
               // source_channel
-              channel: v.counterparty['channel-id'],
+              channel: v.counterparty.channel_id,
               // source_denom
               denom: asset.denom_units[0].aliases[0],
-              chain_name: v.counterparty['chain-name']
-              // port: v.counterparty['port-id']
+              chain_name: v.counterparty.chain_name
+              // port: v.counterparty.port_id
             },
             chain: {
               // dst_denom
-              channel: v.chain['channel-id']
-              // chain_name: v.chain['chain-name'],
-              // port: v.chain['port-id']
+              channel: v.chain.channel_id
+              // chain_name: v.chain.chain_name,
+              // port: v.chain.port_id
             }
           }
         ]
@@ -298,7 +294,7 @@ export const getIbcAssets = (
       ...v,
       assets
     };
-    m[v.chain['chain-name']].push(obj);
+    m[v.chain.chain_name].push(obj);
 
     return m;
   }, {});
@@ -320,19 +316,18 @@ export const getCw20Assets = (
 ) => {
   const chainIbcInfo = ibc.filter((i) => {
     return (
-      i['chain-1']['chain-name'] === chainName ||
-      i['chain-2']['chain-name'] === chainName
+      i.chain_1.chain_name === chainName || i.chain_2.chain_name === chainName
     );
   });
 
   const cw20AssetLists = chainIbcInfo
     .map((ibcInfo) => {
       const counterpartyIs =
-        ibcInfo['chain-1']['chain-name'] === chainName ? 'chain-2' : 'chain-1';
+        ibcInfo.chain_1.chain_name === chainName ? 'chain_2' : 'chain_1';
       const chainIs =
-        ibcInfo['chain-1']['chain-name'] === chainName ? 'chain-1' : 'chain-2';
+        ibcInfo.chain_1.chain_name === chainName ? 'chain_1' : 'chain_2';
 
-      const counterparty = ibcInfo[counterpartyIs]['chain-name'];
+      const counterparty = ibcInfo[counterpartyIs].chain_name;
       const counterpartyIbc = ibcInfo[counterpartyIs];
       const chainIbc = ibcInfo[chainIs];
 
@@ -380,9 +375,9 @@ export const getCw20Assets = (
       const channel = getWasmChannel(ibcInfo);
       if (!channel) {
         // console.warn(
-        //   chainIbc['chain-name'],
+        //   chainIbc.chain_name,
         //   '<>',
-        //   counterpartyIbc['chain-name'],
+        //   counterpartyIbc.chain_name,
         //   'MISSING cw20 IBC info'
         // );
         return;
@@ -402,7 +397,7 @@ export const getCw20Assets = (
     .filter(Boolean);
 
   const hash = cw20AssetLists.reduce((m, v) => {
-    m[v.chain['chain-name']] = m[v.chain['chain-name']] || [];
+    m[v.chain.chain_name] = m[v.chain.chain_name] || [];
     const assets = v.assets.map((asset) => {
       return {
         ...asset,
@@ -410,18 +405,18 @@ export const getCw20Assets = (
           {
             type: 'ibc',
             counterparty: {
-              port: v.counterparty['port-id'],
+              port: v.counterparty.port_id,
               // source_channel
-              channel: v.counterparty['channel-id'],
+              channel: v.counterparty.channel_id,
               // source_denom
               denom: asset.denom_units[0].aliases[0],
-              chain_name: v.counterparty['chain-name']
+              chain_name: v.counterparty.chain_name
             },
             chain: {
               // dst_denom
-              port: v.chain['port-id'],
-              channel: v.chain['channel-id']
-              // chain_name: v.chain['chain-name'],
+              port: v.chain.port_id,
+              channel: v.chain.channel_id
+              // chain_name: v.chain.chain_name,
             }
           }
         ]
@@ -431,7 +426,7 @@ export const getCw20Assets = (
       ...v,
       assets
     };
-    m[v.chain['chain-name']].push(obj);
+    m[v.chain.chain_name].push(obj);
 
     return m;
   }, {});
