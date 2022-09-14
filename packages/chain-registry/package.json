@@ -1,6 +1,6 @@
 {
   "name": "chain-registry",
-  "version": "0.10.3",
+  "version": "0.11.0",
   "description": "Cosmos chain registry ⚛️",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry/tree/master/packages/chain-registry#readme",
@@ -52,7 +52,7 @@
     "@babel/plugin-transform-runtime": "7.18.5",
     "@babel/preset-env": "7.18.2",
     "@babel/preset-typescript": "^7.17.12",
-    "@chain-registry/utils": "^0.7.3",
+    "@chain-registry/utils": "^0.8.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.1.0",
     "cross-env": "^7.0.2",
@@ -72,6 +72,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.18.3",
-    "@chain-registry/types": "^0.7.1"
+    "@chain-registry/types": "^0.8.0"
   }
 }
