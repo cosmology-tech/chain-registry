@@ -1,7 +1,7 @@
 # @chain-registry/keplr
 
 <p align="center" width="100%">
-    <img height="90" src="https://user-images.githubusercontent.com/545047/184277736-69fef40f-1991-4c0e-b979-da125cf7fd8f.svg" />
+    <img height="90" src="https://user-images.githubusercontent.com/545047/190171475-b416f99e-2831-4786-9ba3-a7ff4d95b0d3.svg" />
 </p>
 
 <p align="center" width="100%">
