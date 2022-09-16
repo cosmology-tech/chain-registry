@@ -4,6 +4,40 @@ export interface AssetDenomUnit {
   aliases?: string[];
 }
 
+export interface LiquidStakeTrace {
+  type: 'liquid-stake';
+  asset: {
+    platform?: string;
+    base_denom: string;
+  };
+  provider: string;
+}
+export interface SyntheicTrace {
+  type: 'synthetic';
+  asset: {
+    platform?: string;
+    base_denom: string;
+  };
+  provider: string;
+}
+
+export interface BridgeTrace {
+  type: 'bridge';
+  asset: {
+    platform?: string;
+    base_denom: string;
+  };
+  provider: string;
+}
+export interface WrapTrace {
+  type: 'wrapping';
+  asset: {
+    platform?: string;
+    base_denom: string;
+  };
+  provider: string;
+}
+
 export interface IBCTrace {
   type: 'ibc';
   counterparty: {
@@ -17,6 +51,26 @@ export interface IBCTrace {
     channel: string;
   };
 }
+export interface IBCCw20Trace {
+  type: 'ibc-cw20';
+  counterparty: {
+    port: string;
+    channel: string;
+    denom: string;
+    chain_name: string;
+  };
+  chain: {
+    port: string;
+    channel: string;
+  };
+}
+
+export type AssetTrace =
+  | IBCCw20Trace
+  | IBCTrace
+  | SyntheicTrace
+  | LiquidStakeTrace
+  | BridgeTrace;
 
 export interface Asset {
   description?: string;
@@ -33,7 +87,7 @@ export interface Asset {
   };
   coingecko_id?: string;
   keywords?: string[];
-  traces?: IBCTrace[]; // | BridgeTrace | OtherTrace
+  traces?: AssetTrace[];
 
   // @deprecated
   ibc?: {

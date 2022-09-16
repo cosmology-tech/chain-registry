@@ -22,10 +22,8 @@ const assets: AssetList = {
       display: 'osmo',
       symbol: 'OSMO',
       logo_URIs: {
-        png:
-          'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
-        svg:
-          'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
       },
       coingecko_id: 'osmosis',
       keywords: ['dex', 'staking']
@@ -46,10 +44,8 @@ const assets: AssetList = {
       display: 'ion',
       symbol: 'ION',
       logo_URIs: {
-        png:
-          'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
-        svg:
-          'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
       },
       coingecko_id: 'ion',
       keywords: ['memecoin']

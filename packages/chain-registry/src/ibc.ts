@@ -71,7 +71,7 @@ const ibc: IBCInfo[] = [
     },
     chain_2: {
       chain_name: 'osmosis',
-      client_id: '07-tendermint-2019',
+      client_id: '07-tendermint-2109',
       connection_id: 'connection-1649'
     },
     channels: [
@@ -431,6 +431,37 @@ const ibc: IBCInfo[] = [
         },
         chain_2: {
           channel_id: 'channel-83',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'assetmantle',
+      client_id: '07-tendermint-40',
+      connection_id: 'connection-20'
+    },
+    chain_2: {
+      chain_name: 'okexchain',
+      client_id: '07-tendermint-78',
+      connection_id: 'connection-28'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-13',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-23',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -1487,6 +1518,37 @@ const ibc: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'cosmoshub',
+      client_id: '07-tendermint-913',
+      connection_id: 'connection-635'
+    },
+    chain_2: {
+      chain_name: 'stride',
+      client_id: '07-tendermint-0',
+      connection_id: 'connection-0'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-391',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-0',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'cosmoshub',
       client_id: '07-tendermint-611',
       connection_id: 'connection-473'
     },
@@ -1604,6 +1666,38 @@ const ibc: IBCInfo[] = [
           preferred: true,
           dex: 'crescent',
           properties: 'privacy'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'crescent',
+      client_id: '07-tendermint-24',
+      connection_id: 'connection-27'
+    },
+    chain_2: {
+      chain_name: 'stargaze',
+      client_id: '07-tendermint-180',
+      connection_id: 'connection-114'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-21',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-51',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          dex: 'crescent'
         }
       }
     ]
@@ -3499,6 +3593,37 @@ const ibc: IBCInfo[] = [
           status: 'live',
           preferred: true,
           dex: 'osmosis'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'osmosis',
+      client_id: '07-tendermint-2119',
+      connection_id: 'connection-1657'
+    },
+    chain_2: {
+      chain_name: 'stride',
+      client_id: '07-tendermint-1',
+      connection_id: 'connection-2'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-326',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-5',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }
     ]

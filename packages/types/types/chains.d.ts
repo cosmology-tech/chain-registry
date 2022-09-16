@@ -3,7 +3,7 @@ export interface Chain {
     chain_name: string;
     status: string;
     network_type: string;
-    updatelink?: string;
+    update_link?: string;
     pretty_name: string;
     chain_id: string;
     bech32_prefix: string;
@@ -18,6 +18,7 @@ export interface Chain {
     logo_URIs?: {
         png?: string;
         svg?: string;
+        jpeg?: string;
     };
     fees?: {
         fee_tokens: {
@@ -34,39 +35,68 @@ export interface Chain {
         }[];
     };
     explorers?: {
-        kind: string;
-        url: string;
-        tx_page: string;
+        name?: string;
+        kind?: string;
+        url?: string;
+        tx_page?: string;
         account_page?: string;
     }[];
     codebase?: {
-        git_repo: string;
-        recommended_version: string;
-        compatible_versions: string[];
+        git_repo?: string;
+        recommended_version?: string;
+        compatible_versions?: string[];
         binaries?: Record<string, string>;
         cosmos_sdk_version?: string;
         tendermint_version?: string;
         cosmwasm_version?: string;
         cosmwasm_enabled?: boolean;
+        genesis?: {
+            tag?: string;
+            name?: string;
+            genesis_url?: string;
+        };
+        versions?: {
+            name?: string;
+            tag?: string;
+            height?: number;
+            next_version_name?: string;
+        }[];
     };
     peers?: {
-        seeds: any[];
-        persistent_peers: {
+        seeds?: any[];
+        persistent_peers?: {
             id: string;
             address: string;
             provider?: string;
         }[];
     };
     apis?: {
-        rpc: {
+        rpc?: {
+            address: string;
+            provider?: string;
+            archive?: boolean;
+        }[];
+        rest?: {
             address: string;
             provider?: string;
         }[];
-        rest: {
+        grpc?: {
             address: string;
             provider?: string;
         }[];
-        grpc: {
+        'evm-http-jsonrpc'?: {
+            address: string;
+            provider?: string;
+        }[];
+        'grpc-web'?: {
+            address: string;
+            provider?: string;
+        }[];
+        sidechains_rpc?: {
+            address: string;
+            provider?: string;
+        }[];
+        [key: string]: {
             address: string;
             provider?: string;
         }[];

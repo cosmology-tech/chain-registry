@@ -4,7 +4,7 @@ const chain: Chain = {
   chain_name: 'osmosis',
   status: 'live',
   network_type: 'mainnet',
-  updatelink:
+  update_link:
     'https://raw.githubusercontent.com/osmosis-labs/osmosis/main/chain.schema.json',
   pretty_name: 'Osmosis',
   chain_id: 'osmosis-1',
@@ -48,7 +48,49 @@ const chain: Chain = {
     cosmos_sdk_version: '0.45',
     tendermint_version: '0.34',
     cosmwasm_version: '0.24',
-    cosmwasm_enabled: true
+    cosmwasm_enabled: true,
+    genesis: {
+      name: 'v3.1.0',
+      genesis_url:
+        'https://github.com/osmosis-labs/networks/raw/main/osmosis-1/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v3',
+        tag: 'v3.1.0',
+        height: 0,
+        next_version_name: 'v4'
+      },
+      {
+        name: 'v4',
+        tag: 'v4.2.0',
+        height: 1314500,
+        next_version_name: 'v5'
+      },
+      {
+        name: 'v5',
+        tag: 'v6.4.1',
+        height: 2383300,
+        next_version_name: 'v7'
+      },
+      {
+        name: 'v7',
+        tag: 'v8.0.0',
+        height: 3401000,
+        next_version_name: 'v9'
+      },
+      {
+        name: 'v9',
+        tag: 'v10.0.1',
+        height: 4707300,
+        next_version_name: 'v11'
+      },
+      {
+        name: 'v11',
+        tag: 'v11.0.0',
+        height: 5432450
+      }
+    ]
   },
   peers: {
     seeds: [
@@ -219,6 +261,14 @@ const chain: Chain = {
   apis: {
     rpc: [
       {
+        address: 'https://rpc.osmosis.zone/',
+        provider: 'Osmosis Foundation'
+      },
+      {
+        address: 'https://rpc-osmosis.blockapsis.com',
+        provider: 'chainapsis'
+      },
+      {
         address: 'https://osmosis-rpc.quickapi.com:443',
         provider: 'Chainlayer'
       },
@@ -231,10 +281,6 @@ const chain: Chain = {
         provider: 'validatornetwork'
       },
       {
-        address: 'https://rpc-osmosis.blockapsis.com',
-        provider: 'chainapsis'
-      },
-      {
         address: 'https://rpc-osmosis.ecostake.com',
         provider: 'ecostake'
       },
@@ -243,12 +289,8 @@ const chain: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://rpc-osmosis-ia.notional.ventures/',
+        address: 'https://rpc-osmosis-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
-      },
-      {
-        address: 'https://rpc.osmosis.zone/',
-        provider: 'Osmosis Foundation'
       },
       {
         address: 'https://rpc.osmosis.interbloc.org',
@@ -256,6 +298,10 @@ const chain: Chain = {
       }
     ],
     rest: [
+      {
+        address: 'https://lcd.osmosis.zone/',
+        provider: 'Osmosis Foundation'
+      },
       {
         address: 'https://osmosis-lcd.quickapi.com:443',
         provider: 'Chainlayer'
@@ -273,16 +319,16 @@ const chain: Chain = {
         provider: 'ecostake'
       },
       {
-        address: 'https://api-osmosis-ia.notional.ventures/',
+        address: 'https://api-osmosis-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
-      },
-      {
-        address: 'https://lcd.osmosis.zone/',
-        provider: 'Osmosis Foundation'
       },
       {
         address: 'https://api.osmosis.interbloc.org',
         provider: 'Interbloc'
+      },
+      {
+        address: 'https://osmosis-api.polkachu.com',
+        provider: 'Polkachu'
       },
       {
         address: 'https://osmosis.stakesystems.io/',
@@ -295,8 +341,12 @@ const chain: Chain = {
         provider: 'strangelove'
       },
       {
-        address: 'grpc-osmosis-ia.notional.ventures:443',
+        address: 'grpc-osmosis-ia.cosmosia.notional.ventures:443',
         provider: 'Notional'
+      },
+      {
+        address: 'osmosis-grpc.polkachu.com:12590',
+        provider: 'Polkachu'
       }
     ]
   },
@@ -326,8 +376,7 @@ const chain: Chain = {
     }
   ],
   logo_URIs: {
-    png:
-      'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
   },
   keywords: ['dex']
 };

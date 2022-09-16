@@ -105,16 +105,16 @@ export const getIbcDenomByBase = (
     // TODO transition later!
     const traces = [];
     if (assetInfo.ibc) {
-      traces.push({
-        type: 'ibc',
-        counterparty: {
-          denom: assetInfo.ibc.source_denom,
-          channel: assetInfo.ibc.source_channel
-        },
-        chain: {
-          channel: assetInfo.ibc.dst_channel
-        }
-      });
+      // traces.push({
+      //   type: 'ibc',
+      //   counterparty: {
+      //     denom: assetInfo.ibc.source_denom,
+      //     channel: assetInfo.ibc.source_channel
+      //   },
+      //   chain: {
+      //     channel: assetInfo.ibc.dst_channel
+      //   }
+      // });
     }
     if (assetInfo.traces && assetInfo.traces.length) {
       [].push.apply(traces, assetInfo.traces);
@@ -403,7 +403,7 @@ export const getCw20Assets = (
         ...asset,
         traces: [
           {
-            type: 'ibc',
+            type: 'ibc-cw20',
             counterparty: {
               port: v.counterparty.port_id,
               // source_channel

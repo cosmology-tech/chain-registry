@@ -6,7 +6,6 @@
   "homepage": "https://github.com/cosmology-tech/chain-registry/tree/master/packages/chain-registry#readme",
   "license": "SEE LICENSE IN LICENSE",
   "main": "main/index.js",
-  "module": "module/index.js",
   "typings": "types/index.d.ts",
   "directories": {
     "lib": "src",
@@ -14,8 +13,7 @@
   },
   "files": [
     "types",
-    "main",
-    "module"
+    "main"
   ],
   "publishConfig": {
     "access": "public"
@@ -25,9 +23,7 @@
     "url": "https://github.com/cosmology-tech/chain-registry"
   },
   "scripts": {
-    "build:main": "cross-env BABEL_ENV=production babel src --out-dir main --delete-dir-on-start --extensions \".tsx,.ts,.js\"",
-    "build:module": "cross-env MODULE=true babel src --out-dir module --delete-dir-on-start  --extensions \".tsx,.ts,.js\"",
-    "build": "npm run build:module && npm run build:main",
+    "build": "cross-env BABEL_ENV=production babel src --out-dir main --delete-dir-on-start --extensions \".tsx,.ts,.js\"",
     "build:ts": "tsc --project ./tsconfig.json",
     "buidl": "npm run build && npm run build:ts",
     "build:pkg": "babel-node ./scripts/build.js",
@@ -43,35 +39,35 @@
     "url": "https://github.com/cosmology-tech/chain-registry/issues"
   },
   "devDependencies": {
-    "@babel/cli": "7.17.10",
-    "@babel/core": "7.18.5",
-    "@babel/eslint-parser": "^7.18.2",
-    "@babel/plugin-proposal-class-properties": "7.17.12",
-    "@babel/plugin-proposal-export-default-from": "7.17.12",
-    "@babel/plugin-proposal-object-rest-spread": "7.18.0",
-    "@babel/plugin-transform-runtime": "7.18.5",
-    "@babel/preset-env": "7.18.2",
+    "@babel/cli": "7.18.10",
+    "@babel/core": "7.19.1",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/plugin-proposal-class-properties": "7.18.6",
+    "@babel/plugin-proposal-export-default-from": "7.18.10",
+    "@babel/plugin-proposal-object-rest-spread": "7.18.9",
+    "@babel/plugin-transform-runtime": "7.19.1",
+    "@babel/preset-env": "7.19.1",
     "@babel/preset-typescript": "^7.17.12",
     "@chain-registry/utils": "^0.8.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.1.0",
     "cross-env": "^7.0.2",
     "deepmerge": "^4.2.2",
-    "eslint": "^8.17.0",
+    "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-react-app": "7.0.1",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "4.6.0",
     "glob": "8.0.3",
-    "jest": "^28.1.1",
+    "jest": "^29.0.3",
     "prettier": "^2.7.0",
     "regenerator-runtime": "^0.13.2",
-    "ts-jest": "^28.0.5",
-    "typescript": "^4.7.3"
+    "ts-jest": "^29.0.1",
+    "typescript": "^4.8.3"
   },
   "dependencies": {
-    "@babel/runtime": "^7.18.3",
+    "@babel/runtime": "^7.19.0",
     "@chain-registry/types": "^0.8.0"
   }
 }

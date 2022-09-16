@@ -22,10 +22,8 @@ const assets: AssetList[] = [
         display: 'avax',
         symbol: 'AVAX',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.svg'
         },
         coingecko_id: 'avalanche-2'
       },
@@ -50,8 +48,7 @@ const assets: AssetList[] = [
         display: 'wavax',
         symbol: 'WAVAX',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/wavax.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/wavax.svg'
         },
         coingecko_id: 'wrapped-avax'
       },
@@ -76,8 +73,7 @@ const assets: AssetList[] = [
         display: 'axldai',
         symbol: 'axlDAI',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
         }
       },
       {
@@ -101,8 +97,7 @@ const assets: AssetList[] = [
         display: 'axlfrax',
         symbol: 'axlFRAX',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
         }
       },
       {
@@ -126,8 +121,7 @@ const assets: AssetList[] = [
         display: 'axlusdc',
         symbol: 'axlUSDC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }
       },
       {
@@ -151,8 +145,7 @@ const assets: AssetList[] = [
         display: 'axlusdt',
         symbol: 'axlUSDT',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
         }
       }
     ]
@@ -183,8 +176,7 @@ const assets: AssetList[] = [
         display: 'eth',
         symbol: 'ETH',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg'
         },
         coingecko_id: 'ethereum'
       },
@@ -209,8 +201,7 @@ const assets: AssetList[] = [
         display: 'aave',
         symbol: 'AAVE',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg'
         },
         coingecko_id: 'aave'
       },
@@ -235,8 +226,7 @@ const assets: AssetList[] = [
         display: 'ape',
         symbol: 'APE',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg'
         },
         coingecko_id: 'apecoin'
       },
@@ -261,8 +251,7 @@ const assets: AssetList[] = [
         display: 'axs',
         symbol: 'AXS',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg'
         },
         coingecko_id: 'axie-infinity'
       },
@@ -286,9 +275,18 @@ const assets: AssetList[] = [
         name: 'Dai Stablecoin',
         display: 'dai',
         symbol: 'DAI',
+        traces: [
+          {
+            type: 'synthetic',
+            asset: {
+              platform: 'forex',
+              base_denom: 'USD'
+            },
+            provider: 'MakerDAO'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
         },
         coingecko_id: 'dai'
       },
@@ -312,9 +310,18 @@ const assets: AssetList[] = [
         name: 'Frax',
         display: 'frax',
         symbol: 'FRAX',
+        traces: [
+          {
+            type: 'synthetic',
+            asset: {
+              platform: 'forex',
+              base_denom: 'USD'
+            },
+            provider: 'Frax Protocol'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
         },
         coingecko_id: 'frax'
       },
@@ -339,10 +346,8 @@ const assets: AssetList[] = [
         display: 'link',
         symbol: 'LINK',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
         },
         coingecko_id: 'chainlink'
       },
@@ -367,8 +372,7 @@ const assets: AssetList[] = [
         display: 'mkr',
         symbol: 'MKR',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg'
         },
         coingecko_id: 'maker'
       },
@@ -392,9 +396,18 @@ const assets: AssetList[] = [
         name: 'Rai Reflex Index',
         display: 'rai',
         symbol: 'RAI',
+        traces: [
+          {
+            type: 'synthetic',
+            asset: {
+              platform: 'forex',
+              base_denom: 'USD'
+            },
+            provider: 'RAI Finance'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/rai.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/rai.svg'
         },
         coingecko_id: 'rai'
       },
@@ -419,8 +432,7 @@ const assets: AssetList[] = [
         display: 'shib',
         symbol: 'SHIB',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg'
         },
         coingecko_id: 'shiba-inu'
       },
@@ -444,9 +456,18 @@ const assets: AssetList[] = [
         name: 'Lido Staked Ether',
         display: 'steth',
         symbol: 'stETH',
+        traces: [
+          {
+            type: 'liquid-stake',
+            asset: {
+              platform: 'ethereum',
+              base_denom: 'wei'
+            },
+            provider: 'Lido'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg'
         },
         coingecko_id: 'staked-ether'
       },
@@ -471,8 +492,7 @@ const assets: AssetList[] = [
         display: 'uni',
         symbol: 'UNI',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg'
         },
         coingecko_id: 'uniswap'
       },
@@ -496,9 +516,18 @@ const assets: AssetList[] = [
         name: 'USD Coin',
         display: 'usdc',
         symbol: 'USDC',
+        traces: [
+          {
+            type: 'synthetic',
+            asset: {
+              platform: 'forex',
+              base_denom: 'USD'
+            },
+            provider: 'Circle'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         },
         coingecko_id: 'usd-coin'
       },
@@ -522,9 +551,18 @@ const assets: AssetList[] = [
         name: 'Tether USD',
         display: 'usdt',
         symbol: 'USDT',
+        traces: [
+          {
+            type: 'synthetic',
+            asset: {
+              platform: 'forex',
+              base_denom: 'USD'
+            },
+            provider: 'Tether'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
         },
         coingecko_id: 'tether'
       },
@@ -548,11 +586,19 @@ const assets: AssetList[] = [
         name: 'Wrapped Bitcoin',
         display: 'wbtc',
         symbol: 'WBTC',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'bitcoin',
+              base_denom: 'sat'
+            },
+            provider: 'BitGo, Kyber, and Ren'
+          }
+        ],
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg'
         },
         coingecko_id: 'wrapped-bitcoin'
       },
@@ -575,9 +621,17 @@ const assets: AssetList[] = [
         name: 'Wrapped Ether',
         display: 'weth',
         symbol: 'WETH',
+        traces: [
+          {
+            type: 'wrapping',
+            asset: {
+              platform: 'ethereum',
+              base_denom: 'wei'
+            }
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg'
         },
         coingecko_id: 'weth'
       },
@@ -602,8 +656,7 @@ const assets: AssetList[] = [
         display: 'xcn',
         symbol: 'XCN',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg'
         },
         coingecko_id: 'chain-2'
       }
@@ -633,8 +686,7 @@ const assets: AssetList[] = [
         display: 'GLMR',
         symbol: 'GLMR',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg'
         },
         coingecko_id: 'moonbeam'
       },
@@ -658,9 +710,17 @@ const assets: AssetList[] = [
         name: 'Wrapped Moonbeam',
         display: 'wglmr',
         symbol: 'WGLMR',
+        traces: [
+          {
+            type: 'wrapping',
+            asset: {
+              platform: 'moonbeam',
+              base_denom: 'Wei'
+            }
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg'
         },
         coingecko_id: 'wrapped-moonbeam'
       },
@@ -684,9 +744,18 @@ const assets: AssetList[] = [
         name: 'Wrapped Polkadot',
         display: 'xcdot',
         symbol: 'xcDOT',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'polkadot',
+              base_denom: 'Planck'
+            },
+            provider: 'Polkadot Parachain'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/dot.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/dot.svg'
         }
       },
       {
@@ -709,9 +778,18 @@ const assets: AssetList[] = [
         name: 'Axelar Wrapped Dai Stablecoin',
         display: 'axldai',
         symbol: 'axlDAI',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'axelar',
+              base_denom: 'dai-wei'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
         }
       },
       {
@@ -734,9 +812,18 @@ const assets: AssetList[] = [
         name: 'Axelar Wrapped Frax',
         display: 'axlfrax',
         symbol: 'axlFRAX',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'axelar',
+              base_denom: 'frax-wei'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
         }
       },
       {
@@ -759,9 +846,18 @@ const assets: AssetList[] = [
         name: 'Axelar Wrapped USD Coin',
         display: 'axlusdc',
         symbol: 'axlUSDC',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'axelar',
+              base_denom: 'uusdc'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }
       },
       {
@@ -784,9 +880,18 @@ const assets: AssetList[] = [
         name: 'Axelar Wrapped Tether USD',
         display: 'axlusdt',
         symbol: 'axlUSDT',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'axelar',
+              base_denom: 'uusdt'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
         }
       }
     ]
@@ -834,8 +939,7 @@ const assets: AssetList[] = [
         display: 'DOT',
         symbol: 'DOT',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg'
         },
         coingecko_id: 'polkadot'
       }
@@ -864,10 +968,8 @@ const assets: AssetList[] = [
         display: 'matic',
         symbol: 'MATIC',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic.svg'
         },
         coingecko_id: 'matic-network'
       },
@@ -893,8 +995,7 @@ const assets: AssetList[] = [
         display: 'wmatic',
         symbol: 'WMATIC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg'
         },
         coingecko_id: 'wmatic'
       },
@@ -919,8 +1020,7 @@ const assets: AssetList[] = [
         display: 'axldai',
         symbol: 'axlDAI',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
         }
       },
       {
@@ -944,8 +1044,7 @@ const assets: AssetList[] = [
         display: 'axlfrax',
         symbol: 'axlFRAX',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
         }
       },
       {
@@ -969,8 +1068,7 @@ const assets: AssetList[] = [
         display: 'axlusdc',
         symbol: 'axlUSDC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }
       },
       {
@@ -994,8 +1092,7 @@ const assets: AssetList[] = [
         display: 'axlusdt',
         symbol: 'axlUSDT',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
         }
       }
     ]
@@ -1018,13 +1115,13 @@ const assets: AssetList[] = [
           }
         ],
         base: 'ubld',
-        name: 'Agoric Staking Token',
+        name: 'Agoric',
         display: 'bld',
         symbol: 'BLD',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/bld.png'
-        }
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/bld.png'
+        },
+        coingecko_id: 'agoric'
       },
       {
         description:
@@ -1040,12 +1137,11 @@ const assets: AssetList[] = [
           }
         ],
         base: 'uist',
-        name: 'Agoric Stable Token',
+        name: 'Inter Stable Token',
         display: 'ist',
         symbol: 'IST',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/ist.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/ist.png'
         }
       }
     ]
@@ -1076,10 +1172,8 @@ const assets: AssetList[] = [
         display: 'aioz',
         symbol: 'AIOZ',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png'
         },
         coingecko_id: 'aioz-network'
       }
@@ -1107,10 +1201,8 @@ const assets: AssetList[] = [
         display: 'akt',
         symbol: 'AKT',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
         },
         coingecko_id: 'akash-network'
       }
@@ -1163,8 +1255,7 @@ const assets: AssetList[] = [
         display: 'mntl',
         symbol: 'MNTL',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png'
         },
         coingecko_id: 'assetmantle'
       }
@@ -1191,10 +1282,8 @@ const assets: AssetList[] = [
         display: 'axl',
         symbol: 'AXL',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
         },
         coingecko_id: 'axelar-network'
       },
@@ -1214,11 +1303,19 @@ const assets: AssetList[] = [
         name: 'USD Coin',
         display: 'usdc',
         symbol: 'USDC',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'ethereum',
+              base_denom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png'
         },
         coingecko_id: 'usd-coin'
       },
@@ -1238,11 +1335,19 @@ const assets: AssetList[] = [
         name: 'Frax',
         display: 'frax',
         symbol: 'FRAX',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'ethereum',
+              base_denom: '0x853d955acef822db058eb8505911ed77f175b99e'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.png'
         },
         coingecko_id: 'frax'
       },
@@ -1262,11 +1367,19 @@ const assets: AssetList[] = [
         name: 'Dai Stablecoin',
         display: 'dai',
         symbol: 'DAI',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'ethereum',
+              base_denom: '0x6b175474e89094c44da98b954eedeac495271d0f'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.png'
         },
         coingecko_id: 'dai'
       },
@@ -1286,11 +1399,19 @@ const assets: AssetList[] = [
         name: 'Tether USD',
         display: 'usdt',
         symbol: 'USDT',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'ethereum',
+              base_denom: '0xdac17f958d2ee523a2206206994597c13d831ec7'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png'
         },
         coingecko_id: 'tether'
       },
@@ -1310,9 +1431,18 @@ const assets: AssetList[] = [
         name: 'Wrapped Ether',
         display: 'weth',
         symbol: 'WETH',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'ethereum',
+              base_denom: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png'
         },
         coingecko_id: 'weth'
       },
@@ -1332,9 +1462,18 @@ const assets: AssetList[] = [
         name: 'Wrapped Bitcoin',
         display: 'wbtc',
         symbol: 'WBTC',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'ethereum',
+              base_denom: '0x2260fac5e5542a773aa44fbcfedf7c193bc2c599'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png'
         },
         coingecko_id: 'wrapped-bitcoin'
       },
@@ -1354,9 +1493,18 @@ const assets: AssetList[] = [
         name: 'Aave',
         display: 'aave',
         symbol: 'AAVE',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'ethereum',
+              base_denom: '0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg'
         },
         coingecko_id: 'aave'
       },
@@ -1376,16 +1524,23 @@ const assets: AssetList[] = [
         name: 'ApeCoin',
         display: 'ape',
         symbol: 'APE',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'ethereum',
+              base_denom: '0x4d224452801aced8b2f0aebe155379bb5d594381'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg'
         },
         coingecko_id: 'apecoin'
       },
       {
         description: 'Axie Infinity Shard on Axelar',
-        type_asset: 'erc20',
-        address: '0xbb0e17ef65f82ab018d8edd776e8dd940327b28b',
         denom_units: [
           {
             denom: 'axs-wei',
@@ -1400,9 +1555,18 @@ const assets: AssetList[] = [
         name: 'Axie Infinity Shard',
         display: 'axs',
         symbol: 'AXS',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'ethereum',
+              base_denom: '0xbb0e17ef65f82ab018d8edd776e8dd940327b28b'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg'
         },
         coingecko_id: 'axie-infinity'
       },
@@ -1422,11 +1586,19 @@ const assets: AssetList[] = [
         name: 'Chainlink',
         display: 'link',
         symbol: 'LINK',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'ethereum',
+              base_denom: '0x514910771af9ca656af840dff83e8264ecf986ca'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
         },
         coingecko_id: 'chainlink'
       },
@@ -1446,9 +1618,18 @@ const assets: AssetList[] = [
         name: 'Maker',
         display: 'mkr',
         symbol: 'MKR',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'ethereum',
+              base_denom: '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg'
         },
         coingecko_id: 'maker'
       },
@@ -1468,9 +1649,18 @@ const assets: AssetList[] = [
         name: 'Rai Reflex Index',
         display: 'rai',
         symbol: 'RAI',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'ethereum',
+              base_denom: '0x03ab458634910aad20ef5f1c8ee96f1d6ac54919'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/rai.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/rai.svg'
         },
         coingecko_id: 'rai'
       },
@@ -1490,9 +1680,18 @@ const assets: AssetList[] = [
         name: 'Shiba Inu',
         display: 'shib',
         symbol: 'SHIB',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'ethereum',
+              base_denom: '0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg'
         },
         coingecko_id: 'shiba-inu'
       },
@@ -1512,9 +1711,18 @@ const assets: AssetList[] = [
         name: 'Lido Staked Ether',
         display: 'steth',
         symbol: 'stETH',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'ethereum',
+              base_denom: '0xae7ab96520de3a18e5e111b5eaab095312d7fe84'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg'
         },
         coingecko_id: 'staked-ether'
       },
@@ -1534,9 +1742,18 @@ const assets: AssetList[] = [
         name: 'Uniswap',
         display: 'uni',
         symbol: 'UNI',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'ethereum',
+              base_denom: '0x1f9840a85d5af5bf1d1762f925bdaddc4201f984'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg'
         },
         coingecko_id: 'uniswap'
       },
@@ -1556,9 +1773,18 @@ const assets: AssetList[] = [
         name: 'Chain',
         display: 'xcn',
         symbol: 'XCN',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'ethereum',
+              base_denom: '0xa2cd3d43c775978a96bdbf12d733d5a1ed94fb18'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg'
         },
         coingecko_id: 'chain-2'
       },
@@ -1578,11 +1804,19 @@ const assets: AssetList[] = [
         name: 'Wrapped Polkadot',
         display: 'dot',
         symbol: 'DOT',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'moonbeam',
+              base_denom: '0xffffffff1fcacbd218edc0eba20fc2308c778080'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.png'
         },
         coingecko_id: 'polkadot'
       },
@@ -1602,13 +1836,53 @@ const assets: AssetList[] = [
         name: 'Wrapped Moonbeam',
         display: 'wglmr',
         symbol: 'WGLMR',
+        traces: [
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'moonbeam',
+              base_denom: '0xacc15dc74880c9944775448304b263d191c6077f'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.png'
         },
         coingecko_id: 'wrapped-moonbeam'
+      },
+      {
+        description: 'Wrapped Matic on Axelar',
+        denom_units: [
+          {
+            denom: 'wmatic-wei',
+            exponent: 0
+          },
+          {
+            denom: 'wmatic',
+            exponent: 18
+          }
+        ],
+        base: 'wmatic-wei',
+        name: 'Wrapped Matic',
+        display: 'wmatic',
+        symbol: 'WMATIC',
+        traces: [
+          {
+            type: 'bridge',
+            provider: 'Axelar',
+            asset: {
+              platform: 'polygon',
+              base_denom: '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270'
+            }
+          }
+        ],
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg'
+        },
+        coingecko_id: 'matic-network'
       }
     ]
   },
@@ -1633,10 +1907,8 @@ const assets: AssetList[] = [
         name: 'Band Protocol',
         symbol: 'BAND',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg'
         },
         coingecko_id: 'band-protocol'
       }
@@ -1665,8 +1937,7 @@ const assets: AssetList[] = [
         display: 'bze',
         symbol: 'BZE',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png'
         },
         coingecko_id: 'bzedge'
       }
@@ -1694,10 +1965,8 @@ const assets: AssetList[] = [
         name: 'BitCanna',
         symbol: 'BCNA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg'
         },
         coingecko_id: 'bitcanna'
       }
@@ -1724,10 +1993,8 @@ const assets: AssetList[] = [
         display: 'btsg',
         symbol: 'BTSG',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg'
         },
         type_asset: 'sdk.coin',
         coingecko_id: 'bitsong'
@@ -1749,8 +2016,7 @@ const assets: AssetList[] = [
         display: 'clay',
         symbol: 'CLAY',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png'
         }
       },
       {
@@ -1770,8 +2036,7 @@ const assets: AssetList[] = [
         display: 'fasano',
         symbol: 'FASANO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7.png'
         }
       },
       {
@@ -1791,8 +2056,7 @@ const assets: AssetList[] = [
         display: 'd9x',
         symbol: 'D9X',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft575B10B0CEE2C164D9ED6A96313496F164A9607C.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft575B10B0CEE2C164D9ED6A96313496F164A9607C.png'
         }
       },
       {
@@ -1812,8 +2076,7 @@ const assets: AssetList[] = [
         display: 'fonti',
         symbol: 'FONTI',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305.png'
         }
       },
       {
@@ -1833,8 +2096,7 @@ const assets: AssetList[] = [
         display: 'bjks',
         symbol: 'BJKS',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft52EEB0EE509AC546ED92EAC8591F731F213DDD16.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft52EEB0EE509AC546ED92EAC8591F731F213DDD16.png'
         }
       },
       {
@@ -1854,8 +2116,7 @@ const assets: AssetList[] = [
         display: 'rwne',
         symbol: 'RWNE',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A.png'
         }
       },
       {
@@ -1875,8 +2136,7 @@ const assets: AssetList[] = [
         display: 'enmoda',
         symbol: 'ENMODA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft85AE1716C5E39EA6D64BBD7898C3899A7B500626.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft85AE1716C5E39EA6D64BBD7898C3899A7B500626.png'
         }
       },
       {
@@ -1896,8 +2156,7 @@ const assets: AssetList[] = [
         display: '404dr',
         symbol: '404DR',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png'
         }
       },
       {
@@ -1917,8 +2176,7 @@ const assets: AssetList[] = [
         display: 'n43',
         symbol: 'N43',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png'
         }
       },
       {
@@ -1938,8 +2196,7 @@ const assets: AssetList[] = [
         display: 'lobo',
         symbol: 'LOBO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB.png'
         }
       },
       {
@@ -1959,8 +2216,7 @@ const assets: AssetList[] = [
         display: 'vibra',
         symbol: 'VIBRA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B.png'
         }
       },
       {
@@ -1980,8 +2236,7 @@ const assets: AssetList[] = [
         display: 'karina',
         symbol: 'KARINA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE.png'
         }
       },
       {
@@ -2001,8 +2256,7 @@ const assets: AssetList[] = [
         display: 'testa',
         symbol: 'TESTA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12.png'
         }
       },
       {
@@ -2022,8 +2276,7 @@ const assets: AssetList[] = [
         display: 'cmqz',
         symbol: 'CMQZ',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3.png'
         }
       }
     ]
@@ -2045,8 +2298,7 @@ const assets: AssetList[] = [
         display: 'boot',
         symbol: 'BOOT',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png'
         },
         coingecko_id: 'bostrom'
       }
@@ -2074,8 +2326,7 @@ const assets: AssetList[] = [
         display: 'canto',
         symbol: 'CANTO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png'
         },
         coingecko_id: 'canto'
       }
@@ -2104,10 +2355,8 @@ const assets: AssetList[] = [
         display: 'dswth',
         symbol: 'SWTH',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/swth.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/swth.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/swth.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/swth.svg'
         },
         coingecko_id: 'switcheo'
       }
@@ -2134,8 +2383,7 @@ const assets: AssetList[] = [
         display: 'crbrus',
         symbol: 'CRBRUS',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png'
         },
         coingecko_id: 'cerberus-2'
       }
@@ -2162,10 +2410,8 @@ const assets: AssetList[] = [
         name: 'cheqd',
         symbol: 'CHEQ',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.svg'
         },
         coingecko_id: 'cheqd-network'
       }
@@ -2192,8 +2438,7 @@ const assets: AssetList[] = [
         display: 'huahua',
         symbol: 'HUAHUA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png'
         },
         coingecko_id: 'chihuahua-token'
       }
@@ -2221,8 +2466,7 @@ const assets: AssetList[] = [
         name: 'Chronic Token',
         symbol: 'CHT',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/chronicnetwork/images/cht.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chronicnetwork/images/cht.png'
         },
         coingecko_id: 'cht'
       },
@@ -2244,8 +2488,7 @@ const assets: AssetList[] = [
         name: 'Chronic Gas',
         symbol: 'CGAS',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/chronicnetwork/images/cgas.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chronicnetwork/images/cgas.png'
         },
         coingecko_id: 'cgas'
       }
@@ -2272,10 +2515,61 @@ const assets: AssetList[] = [
         display: 'cmdx',
         symbol: 'CMDX',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png'
         },
         coingecko_id: 'comdex'
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'commercionetwork',
+    assets: [
+      {
+        description: 'The native token of Commercio.network',
+        denom_units: [
+          {
+            denom: 'ucommercio',
+            exponent: 0,
+            aliases: []
+          },
+          {
+            denom: 'commercio',
+            exponent: 6,
+            aliases: []
+          }
+        ],
+        base: 'ucommercio',
+        display: 'commercio',
+        name: 'Commercio',
+        symbol: 'COM',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.svg'
+        }
+      },
+      {
+        description: 'The cash credit token of Commercio.network',
+        denom_units: [
+          {
+            denom: 'uccc',
+            exponent: 0,
+            aliases: []
+          },
+          {
+            denom: 'ccc',
+            exponent: 6,
+            aliases: []
+          }
+        ],
+        base: 'uccc',
+        display: 'ccc',
+        name: 'Commercio Cash Credit',
+        symbol: 'CCC',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/ccc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/ccc.svg'
+        }
       }
     ]
   },
@@ -2301,10 +2595,8 @@ const assets: AssetList[] = [
         display: 'atom',
         symbol: 'ATOM',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
         },
         coingecko_id: 'cosmos'
       }
@@ -2333,10 +2625,8 @@ const assets: AssetList[] = [
         display: 'cre',
         symbol: 'CRE',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg'
         },
         coingecko_id: 'crescent-network'
       },
@@ -2359,10 +2649,8 @@ const assets: AssetList[] = [
         display: 'bcre',
         symbol: 'bCRE',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
         },
         coingecko_id: 'crescent-network'
       }
@@ -2390,10 +2678,8 @@ const assets: AssetList[] = [
         display: 'cro',
         symbol: 'CRO',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/docs/.vuepress/public/cronos.svg',
-          png:
-            'https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/docs/.vuepress/public/CRO_icon.png'
+          svg: 'https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/docs/.vuepress/public/cronos.svg',
+          png: 'https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/docs/.vuepress/public/CRO_icon.png'
         },
         coingecko_id: 'cronos'
       }
@@ -2420,8 +2706,7 @@ const assets: AssetList[] = [
         display: 'cro',
         symbol: 'CRO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png'
         },
         coingecko_id: 'crypto-com-chain'
       }
@@ -2450,10 +2735,8 @@ const assets: AssetList[] = [
         display: 'cudos',
         symbol: 'CUDOS',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg'
         },
         coingecko_id: 'cudos'
       }
@@ -2482,10 +2765,8 @@ const assets: AssetList[] = [
         display: 'dec',
         symbol: 'DEC',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg'
         },
         coingecko_id: 'decentr'
       }
@@ -2514,10 +2795,8 @@ const assets: AssetList[] = [
         display: 'dsm',
         symbol: 'DSM',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg'
         },
         coingecko_id: 'desmos'
       }
@@ -2544,8 +2823,7 @@ const assets: AssetList[] = [
         display: 'dig',
         symbol: 'DIG',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png'
         },
         coingecko_id: 'dig-chain'
       }
@@ -2573,10 +2851,8 @@ const assets: AssetList[] = [
         display: 'echelon',
         symbol: 'ECH',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/echelon.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/logo.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/echelon.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/logo.png'
         },
         coingecko_id: 'echelon'
       }
@@ -2604,8 +2880,7 @@ const assets: AssetList[] = [
         display: 'ngm',
         symbol: 'NGM',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png'
         },
         coingecko_id: 'e-money'
       },
@@ -2627,8 +2902,7 @@ const assets: AssetList[] = [
         display: 'eur',
         symbol: 'EEUR',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.png'
         },
         coingecko_id: 'e-money-eur'
       }
@@ -2655,10 +2929,8 @@ const assets: AssetList[] = [
         display: 'RYT',
         symbol: 'RYT',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.png'
         }
       }
     ]
@@ -2685,10 +2957,8 @@ const assets: AssetList[] = [
         display: 'evmos',
         symbol: 'EVMOS',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png'
         },
         coingecko_id: 'evmos'
       }
@@ -2716,10 +2986,8 @@ const assets: AssetList[] = [
         display: 'fet',
         symbol: 'FET',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.svg'
         },
         coingecko_id: 'fetch-ai'
       },
@@ -2741,10 +3009,8 @@ const assets: AssetList[] = [
         display: 'mobx',
         symbol: 'MOBX',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.png'
         }
       }
     ]
@@ -2770,10 +3036,8 @@ const assets: AssetList[] = [
         display: 'fct',
         symbol: 'FCT',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.svg'
         },
         coingecko_id: 'firmachain'
       }
@@ -2800,10 +3064,8 @@ const assets: AssetList[] = [
         display: 'glx',
         symbol: 'GLX',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.png'
         }
       }
     ]
@@ -2830,10 +3092,8 @@ const assets: AssetList[] = [
         display: 'l1',
         symbol: 'L1',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.png'
         }
       }
     ]
@@ -2862,10 +3122,8 @@ const assets: AssetList[] = [
         symbol: 'GRAV',
         coingecko_id: 'graviton',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png'
         }
       }
     ]
@@ -2893,10 +3151,8 @@ const assets: AssetList[] = [
         display: 'IDEP',
         symbol: 'IDEP',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.png'
         }
       }
     ]
@@ -2922,8 +3178,7 @@ const assets: AssetList[] = [
         display: 'ixo',
         symbol: 'IXO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png'
         },
         coingecko_id: 'ixo'
       }
@@ -2951,10 +3206,8 @@ const assets: AssetList[] = [
         display: 'INJ',
         symbol: 'INJ',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
         },
         coingecko_id: 'injective-protocol'
       }
@@ -2982,10 +3235,8 @@ const assets: AssetList[] = [
         display: 'iris',
         symbol: 'IRIS',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg'
         },
         coingecko_id: 'iris-network'
       }
@@ -3012,10 +3263,8 @@ const assets: AssetList[] = [
         display: 'juno',
         symbol: 'JUNO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
         },
         coingecko_id: 'juno-network'
       },
@@ -3035,16 +3284,13 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'cw20:juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr',
+        base: 'cw20:juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr',
         name: 'Neta',
         display: 'neta',
         symbol: 'NETA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/neta.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/neta.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/neta.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/neta.svg'
         },
         coingecko_id: 'neta'
       },
@@ -3064,16 +3310,13 @@ const assets: AssetList[] = [
             exponent: 3
           }
         ],
-        base:
-          'cw20:juno1g2g7ucurum66d42g8k5twk34yegdq8c82858gz0tq2fc75zy7khssgnhjl',
+        base: 'cw20:juno1g2g7ucurum66d42g8k5twk34yegdq8c82858gz0tq2fc75zy7khssgnhjl',
         name: 'Marble',
         display: 'marble',
         symbol: 'MARBLE',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.svg'
         },
         coingecko_id: 'marble'
       },
@@ -3094,16 +3337,13 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'cw20:juno1re3x67ppxap48ygndmrc7har2cnc7tcxtm9nplcas4v0gc3wnmvs3s807z',
+        base: 'cw20:juno1re3x67ppxap48ygndmrc7har2cnc7tcxtm9nplcas4v0gc3wnmvs3s807z',
         name: 'Hope Galaxy',
         display: 'hope',
         symbol: 'HOPE',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.svg'
         },
         coingecko_id: 'hope-galaxy'
       },
@@ -3124,16 +3364,13 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'cw20:juno1r4pzw8f9z0sypct5l9j906d47z998ulwvhvqe5xdwgy8wf84583sxwh0pa',
+        base: 'cw20:juno1r4pzw8f9z0sypct5l9j906d47z998ulwvhvqe5xdwgy8wf84583sxwh0pa',
         name: 'Racoon',
         display: 'rac',
         symbol: 'RAC',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.svg'
         },
         coingecko_id: 'racoon'
       },
@@ -3153,16 +3390,13 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'cw20:juno1y9rf7ql6ffwkv02hsgd4yruz23pn4w97p75e2slsnkm0mnamhzysvqnxaq',
+        base: 'cw20:juno1y9rf7ql6ffwkv02hsgd4yruz23pn4w97p75e2slsnkm0mnamhzysvqnxaq',
         name: 'Block',
         display: 'block',
         symbol: 'BLOCK',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/block.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/block.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/block.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/block.svg'
         }
       },
       {
@@ -3178,16 +3412,13 @@ const assets: AssetList[] = [
             aliases: ['dhk']
           }
         ],
-        base:
-          'cw20:juno1tdjwrqmnztn2j3sj2ln9xnyps5hs48q3ddwjrz7jpv6mskappjys5czd49',
+        base: 'cw20:juno1tdjwrqmnztn2j3sj2ln9xnyps5hs48q3ddwjrz7jpv6mskappjys5czd49',
         name: 'DHK',
         display: 'dhk',
         symbol: 'DHK',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dhk.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dhk.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dhk.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dhk.svg'
         }
       },
       {
@@ -3206,14 +3437,12 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'cw20:juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g',
+        base: 'cw20:juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g',
         name: 'JunoSwap',
         display: 'raw',
         symbol: 'RAW',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.png'
         },
         coingecko_id: 'junoswap-raw-dao'
       },
@@ -3234,14 +3463,12 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'cw20:juno17wzaxtfdw5em7lc94yed4ylgjme63eh73lm3lutp2rhcxttyvpwsypjm4w',
+        base: 'cw20:juno17wzaxtfdw5em7lc94yed4ylgjme63eh73lm3lutp2rhcxttyvpwsypjm4w',
         name: 'Another.Software Validator Token',
         display: 'asvt',
         symbol: 'ASVT',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/asvt.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/asvt.png'
         }
       },
       {
@@ -3261,14 +3488,12 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'cw20:juno1ur4jx0sxchdevahep7fwq28yk4tqsrhshdtylz46yka3uf6kky5qllqp4k',
+        base: 'cw20:juno1ur4jx0sxchdevahep7fwq28yk4tqsrhshdtylz46yka3uf6kky5qllqp4k',
         name: 'IBC HNS (Handshake)',
         display: 'hns',
         symbol: 'HNS',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hns.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hns.svg'
         }
       },
       {
@@ -3287,14 +3512,12 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'cw20:juno1n7n7d5088qlzlj37e9mgmkhx6dfgtvt02hqxq66lcap4dxnzdhwqfmgng3',
+        base: 'cw20:juno1n7n7d5088qlzlj37e9mgmkhx6dfgtvt02hqxq66lcap4dxnzdhwqfmgng3',
         name: 'JoeDAO',
         display: 'joe',
         symbol: 'JOE',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/joe.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/joe.png'
         }
       },
       {
@@ -3313,16 +3536,13 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr',
+        base: 'cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr',
         name: 'Digital Land Acquisition DAO',
         display: 'dla',
         symbol: 'DLA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg'
         }
       },
       {
@@ -3341,16 +3561,13 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'cw20:juno1j0a9ymgngasfn3l5me8qpd53l5zlm9wurfdk7r65s5mg6tkxal3qpgf5se',
+        base: 'cw20:juno1j0a9ymgngasfn3l5me8qpd53l5zlm9wurfdk7r65s5mg6tkxal3qpgf5se',
         name: 'Gelotto',
         display: 'glto',
         symbol: 'GLTO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
         }
       },
       {
@@ -3369,16 +3586,13 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'cw20:juno1gz8cf86zr4vw9cjcyyv432vgdaecvr9n254d3uwwkx9rermekddsxzageh',
+        base: 'cw20:juno1gz8cf86zr4vw9cjcyyv432vgdaecvr9n254d3uwwkx9rermekddsxzageh',
         name: 'GKey',
         display: 'gkey',
         symbol: 'GKEY',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/gkey.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/gkey.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/gkey.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/gkey.svg'
         }
       },
       {
@@ -3397,16 +3611,13 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'cw20:juno1t46z6hg8vvsena7sue0vg6w85ljar3cundplkre9sz0skeqkap9sxyyy6m',
+        base: 'cw20:juno1t46z6hg8vvsena7sue0vg6w85ljar3cundplkre9sz0skeqkap9sxyyy6m',
         name: 'BlackHole',
         display: 'hole',
         symbol: 'HOLE',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hole.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hole.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hole.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hole.svg'
         }
       },
       {
@@ -3425,16 +3636,13 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'cw20:juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv',
+        base: 'cw20:juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv',
         name: 'StakeEasy seJUNO',
         display: 'sejuno',
         symbol: 'SEJUNO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.svg'
         }
       },
       {
@@ -3453,16 +3661,64 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'cw20:juno1wwnhkagvcd3tjz6f8vsdsw5plqnw8qy2aj3rrhqr2axvktzv9q2qz8jxn3',
+        base: 'cw20:juno1wwnhkagvcd3tjz6f8vsdsw5plqnw8qy2aj3rrhqr2axvktzv9q2qz8jxn3',
         name: 'StakeEasy bJUNO',
         display: 'bjuno',
         symbol: 'BJUNO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.svg'
+        }
+      },
+      {
+        description:
+          'Solarbank DAO Governance Token for speeding up the shift to renewable and green energy',
+        type_asset: 'cw20',
+        address:
+          'juno159q8t5g02744lxq8lfmcn6f78qqulq9wn3y9w7lxjgkz4e0a6kvsfvapse',
+        denom_units: [
+          {
+            denom:
+              'cw20:juno159q8t5g02744lxq8lfmcn6f78qqulq9wn3y9w7lxjgkz4e0a6kvsfvapse',
+            exponent: 0
+          },
+          {
+            denom: 'solar',
+            exponent: 6
+          }
+        ],
+        base: 'cw20:juno159q8t5g02744lxq8lfmcn6f78qqulq9wn3y9w7lxjgkz4e0a6kvsfvapse',
+        name: 'Solarbank DAO',
+        display: 'solar',
+        symbol: 'SOLAR',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/solar.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/solar.svg'
+        }
+      },
+      {
+        description: 'StakeEasy governance token',
+        type_asset: 'cw20',
+        address:
+          'juno19rqljkh95gh40s7qdx40ksx3zq5tm4qsmsrdz9smw668x9zdr3lqtg33mf',
+        denom_units: [
+          {
+            denom:
+              'cw20:juno19rqljkh95gh40s7qdx40ksx3zq5tm4qsmsrdz9smw668x9zdr3lqtg33mf',
+            exponent: 0
+          },
+          {
+            denom: 'seasy',
+            exponent: 6
+          }
+        ],
+        base: 'cw20:juno19rqljkh95gh40s7qdx40ksx3zq5tm4qsmsrdz9smw668x9zdr3lqtg33mf',
+        name: 'StakeEasy SEASY',
+        display: 'seasy',
+        symbol: 'SEASY',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/seasy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/seasy.svg'
         }
       },
       {
@@ -3482,14 +3738,12 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A',
+        base: 'ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A',
         name: 'Neta',
         display: 'neta',
         symbol: 'NETA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/osmosis-labs/assetlists/main/images/neta.png'
+          png: 'https://raw.githubusercontent.com/osmosis-labs/assetlists/main/images/neta.png'
         },
         coingecko_id: 'neta'
       }
@@ -3516,8 +3770,7 @@ const assets: AssetList[] = [
         display: 'kava',
         symbol: 'KAVA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png'
         },
         coingecko_id: 'kava'
       },
@@ -3538,10 +3791,8 @@ const assets: AssetList[] = [
         display: 'HARD',
         symbol: 'HARD',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.svg'
         },
         coingecko_id: 'kava-lend'
       },
@@ -3562,10 +3813,8 @@ const assets: AssetList[] = [
         display: 'SWP',
         symbol: 'SWP',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.svg'
         },
         coingecko_id: 'kava-swap'
       },
@@ -3586,8 +3835,7 @@ const assets: AssetList[] = [
         display: 'USDX',
         symbol: 'USDX',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.png'
         },
         coingecko_id: 'usdx'
       }
@@ -3614,10 +3862,8 @@ const assets: AssetList[] = [
         display: 'xki',
         symbol: 'XKI',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'
         },
         coingecko_id: 'ki'
       },
@@ -3637,14 +3883,12 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'cw20:ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy',
+        base: 'cw20:ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy',
         name: 'LVN',
         display: 'lvn',
         symbol: 'LVN',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/lvn.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/lvn.png'
         },
         coingecko_id: 'lvn'
       }
@@ -3671,10 +3915,8 @@ const assets: AssetList[] = [
         display: 'darc',
         symbol: 'DARC',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/darc.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/darc.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/darc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/darc.svg'
         },
         coingecko_id: 'darcmatter-coin'
       }
@@ -3703,8 +3945,7 @@ const assets: AssetList[] = [
         symbol: 'KUJI',
         coingecko_id: 'kujira',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png'
         }
       }
     ]
@@ -3731,10 +3972,8 @@ const assets: AssetList[] = [
         display: 'like',
         symbol: 'LIKE',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/like.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/like.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/like.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/like.svg'
         },
         coingecko_id: 'likecoin'
       }
@@ -3761,10 +4000,8 @@ const assets: AssetList[] = [
         display: 'LYT',
         symbol: 'LYT',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.png'
         }
       }
     ]
@@ -3790,8 +4027,7 @@ const assets: AssetList[] = [
         display: 'lumen',
         symbol: 'LUMEN',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png'
         }
       }
     ]
@@ -3817,10 +4053,8 @@ const assets: AssetList[] = [
         display: 'lum',
         symbol: 'LUM',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.svg'
         },
         coingecko_id: 'lum-network'
       }
@@ -3848,10 +4082,8 @@ const assets: AssetList[] = [
         display: 'meme',
         symbol: 'MEME',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg'
         }
       }
     ]
@@ -3878,10 +4110,8 @@ const assets: AssetList[] = [
         name: 'Microtick',
         symbol: 'TICK',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg'
         }
       }
     ]
@@ -3907,10 +4137,8 @@ const assets: AssetList[] = [
         display: 'MYT',
         symbol: 'MYT',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/mythos/images/mythos.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/mythos/images/mythos.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mythos/images/mythos.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mythos/images/mythos.png'
         }
       }
     ]
@@ -3937,10 +4165,8 @@ const assets: AssetList[] = [
         display: 'nom',
         symbol: 'NOM',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.svg'
         }
       }
     ]
@@ -3968,10 +4194,8 @@ const assets: AssetList[] = [
         name: 'Octa',
         symbol: 'OCTA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.svg'
         }
       }
     ]
@@ -3997,11 +4221,10 @@ const assets: AssetList[] = [
         display: 'odin',
         symbol: 'ODIN',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png'
-        }
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png'
+        },
+        coingecko_id: 'odin-protocol'
       },
       {
         description: 'GEO token for ODIN Protocol',
@@ -4020,10 +4243,29 @@ const assets: AssetList[] = [
         display: 'geo',
         symbol: 'GEO',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png'
+        }
+      },
+      {
+        description: 'O9W token for ODIN Protocol',
+        denom_units: [
+          {
+            denom: 'mO9W',
+            exponent: 0
+          },
+          {
+            denom: 'O9W',
+            exponent: 6
+          }
+        ],
+        base: 'mO9W',
+        name: 'O9W',
+        display: 'O9W',
+        symbol: 'O9W',
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png'
         }
       }
     ]
@@ -4049,8 +4291,7 @@ const assets: AssetList[] = [
         display: 'okt',
         symbol: 'OKT',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/okexchain/images/okc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/okexchain/images/okc.png'
         },
         coingecko_id: 'okc-token'
       }
@@ -4077,8 +4318,7 @@ const assets: AssetList[] = [
         display: 'flix',
         symbol: 'FLIX',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png'
         },
         coingecko_id: 'omniflix-network'
       }
@@ -4105,10 +4345,8 @@ const assets: AssetList[] = [
         display: 'ORAI',
         symbol: 'ORAI',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.svg'
         },
         coingecko_id: 'oraichain-token'
       }
@@ -4137,10 +4375,8 @@ const assets: AssetList[] = [
         display: 'osmo',
         symbol: 'OSMO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
         },
         coingecko_id: 'osmosis',
         keywords: ['dex', 'staking']
@@ -4161,10 +4397,8 @@ const assets: AssetList[] = [
         display: 'ion',
         symbol: 'ION',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
         },
         coingecko_id: 'ion',
         keywords: ['memecoin']
@@ -4193,8 +4427,7 @@ const assets: AssetList[] = [
         display: 'med',
         symbol: 'MED',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.png'
         },
         coingecko_id: 'medibloc'
       }
@@ -4222,8 +4455,7 @@ const assets: AssetList[] = [
         display: 'pasg',
         symbol: 'PASG',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png'
         }
       }
     ]
@@ -4250,10 +4482,8 @@ const assets: AssetList[] = [
         display: 'xprt',
         symbol: 'XPRT',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
         },
         coingecko_id: 'persistence'
       },
@@ -4275,21 +4505,44 @@ const assets: AssetList[] = [
             exponent: 18
           }
         ],
-        base:
-          'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444',
+        base: 'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444',
         name: 'pSTAKE Finance',
         display: 'pstake',
         symbol: 'PSTAKE',
+        traces: [
+          {
+            type: 'liquid-stake',
+            asset: {
+              platform: 'persistence',
+              base_denom: 'XPRT'
+            },
+            provider: 'Persistence'
+          },
+          {
+            type: 'bridge',
+            asset: {
+              platform: 'ethereum',
+              base_denom: '0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
+            },
+            provider: 'Gravity Bridge'
+          },
+          {
+            type: 'ibc',
+            asset: {
+              platform: 'gravitybridge',
+              base_denom: 'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
+            },
+            path: 'transfer/channel-38/gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
+          }
+        ],
         ibc: {
           source_channel: 'channel-24',
           dst_channel: 'channel-38',
           source_denom: 'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
         },
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg'
         },
         coingecko_id: 'pstake-finance'
       }
@@ -4318,10 +4571,8 @@ const assets: AssetList[] = [
         display: 'hash',
         symbol: 'HASH',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/hash.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/hash.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/hash.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/hash.svg'
         },
         coingecko_id: 'provenance-blockchain'
       }
@@ -4348,8 +4599,7 @@ const assets: AssetList[] = [
         display: 'regen',
         symbol: 'REGEN',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png'
         },
         coingecko_id: 'regen'
       }
@@ -4377,10 +4627,8 @@ const assets: AssetList[] = [
         symbol: 'ATOLO',
         coingecko_id: 'rizon',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.svg'
         }
       }
     ]
@@ -4406,10 +4654,8 @@ const assets: AssetList[] = [
         display: 'scrt',
         symbol: 'SCRT',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
         },
         coingecko_id: 'secret'
       }
@@ -4436,8 +4682,7 @@ const assets: AssetList[] = [
         display: 'dvpn',
         symbol: 'DVPN',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png'
         },
         coingecko_id: 'sentinel'
       }
@@ -4464,8 +4709,7 @@ const assets: AssetList[] = [
         display: 'ctk',
         symbol: 'CTK',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png'
         },
         coingecko_id: 'certik'
       }
@@ -4489,10 +4733,8 @@ const assets: AssetList[] = [
         display: 'rowan',
         symbol: 'ROWAN',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png'
         },
         coingecko_id: 'sifchain'
       }
@@ -4526,10 +4768,8 @@ const assets: AssetList[] = [
         display: 'somm',
         symbol: 'SOMM',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg'
         },
         coingecko_id: 'sommelier'
       }
@@ -4556,8 +4796,7 @@ const assets: AssetList[] = [
         display: 'stars',
         symbol: 'STARS',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png'
         },
         coingecko_id: 'stargaze'
       }
@@ -4585,10 +4824,8 @@ const assets: AssetList[] = [
         display: 'iov',
         symbol: 'IOV',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.svg'
         },
         coingecko_id: 'starname'
       }
@@ -4617,12 +4854,10 @@ const assets: AssetList[] = [
         display: 'strd',
         symbol: 'STRD',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
         },
-        coingecko_id: ''
+        coingecko_id: 'stride'
       },
       {
         denom_units: [
@@ -4640,10 +4875,8 @@ const assets: AssetList[] = [
         display: 'statom',
         symbol: 'stATOM',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg'
         },
         coingecko_id: 'stride-staked-atom'
       },
@@ -4663,10 +4896,8 @@ const assets: AssetList[] = [
         display: 'stosmo',
         symbol: 'stOSMO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg'
         },
         coingecko_id: ''
       },
@@ -4686,10 +4917,8 @@ const assets: AssetList[] = [
         display: 'stjuno',
         symbol: 'stJUNO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.svg'
         },
         coingecko_id: ''
       }
@@ -4723,10 +4952,8 @@ const assets: AssetList[] = [
         display: 'luna',
         symbol: 'LUNC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.png'
         },
         coingecko_id: 'terra-luna'
       },
@@ -4754,10 +4981,8 @@ const assets: AssetList[] = [
         display: 'ust',
         symbol: 'USTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ust.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ust.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ust.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ust.png'
         },
         coingecko_id: 'terrausd'
       },
@@ -4785,10 +5010,8 @@ const assets: AssetList[] = [
         display: 'krt',
         symbol: 'KRTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.png'
         },
         coingecko_id: 'terrakrw'
       },
@@ -4812,8 +5035,7 @@ const assets: AssetList[] = [
         display: 'whale',
         symbol: 'WHALE',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whale.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whale.png'
         },
         coingecko_id: 'white-whale'
       },
@@ -4835,8 +5057,7 @@ const assets: AssetList[] = [
         display: 'bluna',
         symbol: 'bLuna',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bluna.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bluna.png'
         }
       },
       {
@@ -4857,8 +5078,7 @@ const assets: AssetList[] = [
         display: 'beth',
         symbol: 'bETH',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/beth.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/beth.png'
         }
       },
       {
@@ -4879,8 +5099,7 @@ const assets: AssetList[] = [
         display: 'aust',
         symbol: 'aUST',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aust.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aust.png'
         }
       },
       {
@@ -4901,8 +5120,7 @@ const assets: AssetList[] = [
         display: 'anc',
         symbol: 'ANC',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/anc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/anc.png'
         }
       },
       {
@@ -4923,8 +5141,7 @@ const assets: AssetList[] = [
         display: 'mir',
         symbol: 'MIR',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mir.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mir.png'
         }
       },
       {
@@ -4945,8 +5162,7 @@ const assets: AssetList[] = [
         display: 'maapl',
         symbol: 'mAAPL',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maapl.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maapl.png'
         }
       },
       {
@@ -4967,8 +5183,7 @@ const assets: AssetList[] = [
         display: 'mabnb',
         symbol: 'mABNB',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mabnb.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mabnb.png'
         }
       },
       {
@@ -4989,8 +5204,7 @@ const assets: AssetList[] = [
         display: 'mamc',
         symbol: 'mAMC',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamc.png'
         }
       },
       {
@@ -5011,8 +5225,7 @@ const assets: AssetList[] = [
         display: 'mamd',
         symbol: 'mAMD',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamd.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamd.png'
         }
       },
       {
@@ -5033,8 +5246,7 @@ const assets: AssetList[] = [
         display: 'mamzn',
         symbol: 'mAMZN',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamzn.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamzn.png'
         }
       },
       {
@@ -5055,8 +5267,7 @@ const assets: AssetList[] = [
         display: 'markk',
         symbol: 'mARKK',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/markk.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/markk.png'
         }
       },
       {
@@ -5077,8 +5288,7 @@ const assets: AssetList[] = [
         display: 'mbaba',
         symbol: 'mBABA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbaba.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbaba.png'
         }
       },
       {
@@ -5099,8 +5309,7 @@ const assets: AssetList[] = [
         display: 'mbtc',
         symbol: 'mBTC',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbtc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbtc.png'
         }
       },
       {
@@ -5121,8 +5330,7 @@ const assets: AssetList[] = [
         display: 'mcoin',
         symbol: 'mCOIN',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mcoin.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mcoin.png'
         }
       },
       {
@@ -5143,8 +5351,7 @@ const assets: AssetList[] = [
         display: 'mdis',
         symbol: 'mDIS',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdis.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdis.png'
         }
       },
       {
@@ -5165,8 +5372,7 @@ const assets: AssetList[] = [
         display: 'mdot',
         symbol: 'mDOT',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdot.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdot.png'
         }
       },
       {
@@ -5187,8 +5393,7 @@ const assets: AssetList[] = [
         display: 'meth',
         symbol: 'mETH',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/meth.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/meth.png'
         }
       },
       {
@@ -5209,8 +5414,7 @@ const assets: AssetList[] = [
         display: 'mfb',
         symbol: 'mFB',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mfb.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mfb.png'
         }
       },
       {
@@ -5231,8 +5435,7 @@ const assets: AssetList[] = [
         display: 'mglxy',
         symbol: 'mGLXY',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mglxy.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mglxy.png'
         }
       },
       {
@@ -5253,8 +5456,7 @@ const assets: AssetList[] = [
         display: 'mgme',
         symbol: 'mGME',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgme.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgme.png'
         }
       },
       {
@@ -5275,8 +5477,7 @@ const assets: AssetList[] = [
         display: 'mgoogl',
         symbol: 'mGOOGL',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgoogl.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgoogl.png'
         }
       },
       {
@@ -5297,8 +5498,7 @@ const assets: AssetList[] = [
         display: 'mgs',
         symbol: 'mGS',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgs.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgs.png'
         }
       },
       {
@@ -5319,8 +5519,7 @@ const assets: AssetList[] = [
         display: 'mhood',
         symbol: 'mHOOD',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mhood.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mhood.png'
         }
       },
       {
@@ -5341,8 +5540,7 @@ const assets: AssetList[] = [
         display: 'miau',
         symbol: 'mIAU',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png'
         }
       },
       {
@@ -5363,8 +5561,7 @@ const assets: AssetList[] = [
         display: 'miau',
         symbol: 'mIAU',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png'
         }
       },
       {
@@ -5385,8 +5582,7 @@ const assets: AssetList[] = [
         display: 'mjnj',
         symbol: 'mJNJ',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mjnj.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mjnj.png'
         }
       },
       {
@@ -5407,8 +5603,7 @@ const assets: AssetList[] = [
         display: 'mko',
         symbol: 'mKO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mko.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mko.png'
         }
       },
       {
@@ -5429,8 +5624,7 @@ const assets: AssetList[] = [
         display: 'mmsft',
         symbol: 'mMSFT',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mmsft.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mmsft.png'
         }
       },
       {
@@ -5451,8 +5645,7 @@ const assets: AssetList[] = [
         display: 'mnflx',
         symbol: 'mNFLX',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnflx.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnflx.png'
         }
       },
       {
@@ -5473,8 +5666,7 @@ const assets: AssetList[] = [
         display: 'mnio',
         symbol: 'mNIO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnio.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnio.png'
         }
       },
       {
@@ -5495,8 +5687,7 @@ const assets: AssetList[] = [
         display: 'mnke',
         symbol: 'mNKE',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnke.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnke.png'
         }
       },
       {
@@ -5517,8 +5708,7 @@ const assets: AssetList[] = [
         display: 'mnvda',
         symbol: 'mNVDA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnvda.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnvda.png'
         }
       },
       {
@@ -5539,8 +5729,7 @@ const assets: AssetList[] = [
         display: 'mpypl',
         symbol: 'mPYPL',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mpypl.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mpypl.png'
         }
       },
       {
@@ -5561,8 +5750,7 @@ const assets: AssetList[] = [
         display: 'mqqq',
         symbol: 'mQQQ',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mqqq.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mqqq.png'
         }
       },
       {
@@ -5583,8 +5771,7 @@ const assets: AssetList[] = [
         display: 'msbux',
         symbol: 'mSBUX',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msbux.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msbux.png'
         }
       },
       {
@@ -5605,8 +5792,7 @@ const assets: AssetList[] = [
         display: 'mslv',
         symbol: 'mSLV',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mslv.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mslv.png'
         }
       },
       {
@@ -5627,8 +5813,7 @@ const assets: AssetList[] = [
         display: 'mspy',
         symbol: 'mSPY',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mspy.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mspy.png'
         }
       },
       {
@@ -5649,8 +5834,7 @@ const assets: AssetList[] = [
         display: 'msq',
         symbol: 'mSQ',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msq.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msq.png'
         }
       },
       {
@@ -5671,8 +5855,7 @@ const assets: AssetList[] = [
         display: 'mtsla',
         symbol: 'mTSLA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtsla.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtsla.png'
         }
       },
       {
@@ -5693,8 +5876,7 @@ const assets: AssetList[] = [
         display: 'mtwtr',
         symbol: 'mTWTR',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtwtr.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtwtr.png'
         }
       },
       {
@@ -5715,8 +5897,7 @@ const assets: AssetList[] = [
         display: 'muso',
         symbol: 'mUSO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/muso.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/muso.png'
         }
       },
       {
@@ -5737,8 +5918,7 @@ const assets: AssetList[] = [
         display: 'mvixy',
         symbol: 'mVIXY',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png'
         }
       },
       {
@@ -5759,8 +5939,7 @@ const assets: AssetList[] = [
         display: 'mvixy',
         symbol: 'mVIXY',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png'
         }
       },
       {
@@ -5781,8 +5960,7 @@ const assets: AssetList[] = [
         display: 'lota',
         symbol: 'LOTA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lota.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lota.png'
         }
       },
       {
@@ -5803,8 +5981,7 @@ const assets: AssetList[] = [
         display: 'dph',
         symbol: 'DPH',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dph.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dph.png'
         }
       },
       {
@@ -5825,8 +6002,7 @@ const assets: AssetList[] = [
         display: 'mine',
         symbol: 'MINE',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mine.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mine.png'
         }
       },
       {
@@ -5847,8 +6023,7 @@ const assets: AssetList[] = [
         display: 'bpsidp-24m',
         symbol: 'bPsiDP-24m',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bpsidp-24m.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bpsidp-24m.png'
         }
       },
       {
@@ -5869,8 +6044,7 @@ const assets: AssetList[] = [
         display: 'spec',
         symbol: 'SPEC',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/spec.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/spec.png'
         }
       },
       {
@@ -5891,8 +6065,7 @@ const assets: AssetList[] = [
         display: 'loop',
         symbol: 'LOOP',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loop.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loop.png'
         }
       },
       {
@@ -5913,8 +6086,7 @@ const assets: AssetList[] = [
         display: 'loopr',
         symbol: 'LOOPR',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loopr.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loopr.png'
         }
       },
       {
@@ -5935,8 +6107,7 @@ const assets: AssetList[] = [
         display: 'stt',
         symbol: 'STT',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stt.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stt.png'
         }
       },
       {
@@ -5957,8 +6128,7 @@ const assets: AssetList[] = [
         display: 'twd',
         symbol: 'TWD',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twd.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twd.png'
         }
       },
       {
@@ -5979,8 +6149,7 @@ const assets: AssetList[] = [
         display: 'xtra',
         symbol: 'XTRA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xtra.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xtra.png'
         }
       },
       {
@@ -6001,8 +6170,7 @@ const assets: AssetList[] = [
         display: 'miaw',
         symbol: 'MIAW',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miaw.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miaw.png'
         }
       },
       {
@@ -6023,8 +6191,7 @@ const assets: AssetList[] = [
         display: 'psi',
         symbol: 'Psi',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/psi.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/psi.png'
         }
       },
       {
@@ -6045,8 +6212,7 @@ const assets: AssetList[] = [
         display: 'nluna',
         symbol: 'nLuna',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nluna.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nluna.svg'
         }
       },
       {
@@ -6067,8 +6233,7 @@ const assets: AssetList[] = [
         display: 'neth',
         symbol: 'nETH',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/neth.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/neth.svg'
         }
       },
       {
@@ -6089,8 +6254,7 @@ const assets: AssetList[] = [
         display: 'cnluna',
         symbol: 'cnLuna',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnluna.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnluna.svg'
         }
       },
       {
@@ -6111,8 +6275,7 @@ const assets: AssetList[] = [
         display: 'cneth',
         symbol: 'cnETH',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cneth.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cneth.svg'
         }
       },
       {
@@ -6133,8 +6296,7 @@ const assets: AssetList[] = [
         display: 'navax',
         symbol: 'nAVAX',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/navax.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/navax.svg'
         }
       },
       {
@@ -6155,8 +6317,7 @@ const assets: AssetList[] = [
         display: 'natom',
         symbol: 'nATOM',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/natom.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/natom.svg'
         }
       },
       {
@@ -6177,8 +6338,7 @@ const assets: AssetList[] = [
         display: 'vkr',
         symbol: 'VKR',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vkr.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vkr.png'
         }
       },
       {
@@ -6199,8 +6359,7 @@ const assets: AssetList[] = [
         display: 'orion',
         symbol: 'ORION',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orion.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orion.png'
         }
       },
       {
@@ -6221,8 +6380,7 @@ const assets: AssetList[] = [
         display: 'tland',
         symbol: 'TLAND',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tland.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tland.png'
         }
       },
       {
@@ -6243,8 +6401,7 @@ const assets: AssetList[] = [
         display: 'vust',
         symbol: 'vUST',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vust.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vust.png'
         }
       },
       {
@@ -6265,8 +6422,7 @@ const assets: AssetList[] = [
         display: 'eth',
         symbol: 'ETH',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eth.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eth.png'
         }
       },
       {
@@ -6287,8 +6443,7 @@ const assets: AssetList[] = [
         display: 'wbtc',
         symbol: 'WBTC',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wbtc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wbtc.png'
         }
       },
       {
@@ -6309,8 +6464,7 @@ const assets: AssetList[] = [
         display: 'sol',
         symbol: 'SOL',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sol.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sol.png'
         }
       },
       {
@@ -6331,8 +6485,7 @@ const assets: AssetList[] = [
         display: 'maticet',
         symbol: 'MATICet',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticet.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticet.png'
         }
       },
       {
@@ -6353,8 +6506,7 @@ const assets: AssetList[] = [
         display: 'bnb',
         symbol: 'BNB',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bnb.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bnb.png'
         }
       },
       {
@@ -6375,8 +6527,7 @@ const assets: AssetList[] = [
         display: 'cake',
         symbol: 'CAKE',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cake.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cake.png'
         }
       },
       {
@@ -6397,8 +6548,7 @@ const assets: AssetList[] = [
         display: 'link',
         symbol: 'LINK',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/link.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/link.png'
         }
       },
       {
@@ -6419,8 +6569,7 @@ const assets: AssetList[] = [
         display: 'sushi',
         symbol: 'SUSHI',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sushi.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sushi.png'
         }
       },
       {
@@ -6441,8 +6590,7 @@ const assets: AssetList[] = [
         display: 'uni',
         symbol: 'UNI',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/uni.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/uni.png'
         }
       },
       {
@@ -6463,8 +6611,7 @@ const assets: AssetList[] = [
         display: 'usdtet',
         symbol: 'USDTet',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtet.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtet.png'
         }
       },
       {
@@ -6485,8 +6632,7 @@ const assets: AssetList[] = [
         display: 'usdcet',
         symbol: 'USDCet',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcet.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcet.png'
         }
       },
       {
@@ -6507,8 +6653,7 @@ const assets: AssetList[] = [
         display: 'kuji',
         symbol: 'KUJI',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kuji.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kuji.png'
         }
       },
       {
@@ -6529,8 +6674,7 @@ const assets: AssetList[] = [
         display: 'skuji',
         symbol: 'sKUJI',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/skuji.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/skuji.png'
         }
       },
       {
@@ -6551,8 +6695,7 @@ const assets: AssetList[] = [
         display: 'wsteth',
         symbol: 'wstETH',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wsteth.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wsteth.png'
         }
       },
       {
@@ -6573,8 +6716,7 @@ const assets: AssetList[] = [
         display: 'wstsol',
         symbol: 'wstSOL',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wstsol.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wstsol.png'
         }
       },
       {
@@ -6595,8 +6737,7 @@ const assets: AssetList[] = [
         display: 'wsbsol',
         symbol: 'wsbSOL',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wsbsol.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wsbsol.svg'
         }
       },
       {
@@ -6617,8 +6758,7 @@ const assets: AssetList[] = [
         display: 'ldo',
         symbol: 'LDO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ldo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ldo.png'
         }
       },
       {
@@ -6639,8 +6779,7 @@ const assets: AssetList[] = [
         display: 'webeth',
         symbol: 'webETH',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/webeth.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/webeth.svg'
         }
       },
       {
@@ -6661,8 +6800,7 @@ const assets: AssetList[] = [
         display: 'stluna',
         symbol: 'stLuna',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stluna.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stluna.png'
         }
       },
       {
@@ -6701,8 +6839,7 @@ const assets: AssetList[] = [
         display: 'btl',
         symbol: 'BTL',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/btl.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/btl.png'
         }
       },
       {
@@ -6723,8 +6860,7 @@ const assets: AssetList[] = [
         display: 'lunax',
         symbol: 'LunaX',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lunax.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lunax.png'
         }
       },
       {
@@ -6745,8 +6881,7 @@ const assets: AssetList[] = [
         display: 'luni',
         symbol: 'LUNI',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luni.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luni.png'
         }
       },
       {
@@ -6767,8 +6902,7 @@ const assets: AssetList[] = [
         display: 'ply',
         symbol: 'PLY',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ply.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ply.png'
         }
       },
       {
@@ -6789,8 +6923,7 @@ const assets: AssetList[] = [
         display: 'tfloki',
         symbol: 'TFLOKI',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfloki.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfloki.png'
         }
       },
       {
@@ -6811,8 +6944,7 @@ const assets: AssetList[] = [
         display: 'tftic',
         symbol: 'TFTIC',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tftic.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tftic.png'
         }
       },
       {
@@ -6833,8 +6965,7 @@ const assets: AssetList[] = [
         display: 'tfticii',
         symbol: 'TFTICII',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticii.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticii.png'
         }
       },
       {
@@ -6855,8 +6986,7 @@ const assets: AssetList[] = [
         display: 'tfticiii',
         symbol: 'TFTICIII',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticiii.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticiii.png'
         }
       },
       {
@@ -6877,8 +7007,7 @@ const assets: AssetList[] = [
         display: 'moon',
         symbol: 'MOON',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/moon.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/moon.png'
         }
       },
       {
@@ -6899,8 +7028,7 @@ const assets: AssetList[] = [
         display: 'astro',
         symbol: 'ASTRO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/astro.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/astro.png'
         }
       },
       {
@@ -6921,8 +7049,7 @@ const assets: AssetList[] = [
         display: 'xastro',
         symbol: 'xASTRO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xastro.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xastro.png'
         }
       },
       {
@@ -6943,8 +7070,7 @@ const assets: AssetList[] = [
         display: 'halo',
         symbol: 'HALO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/halo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/halo.png'
         }
       },
       {
@@ -6965,8 +7091,7 @@ const assets: AssetList[] = [
         display: 'pug',
         symbol: 'PUG',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pug.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pug.png'
         }
       },
       {
@@ -6987,8 +7112,7 @@ const assets: AssetList[] = [
         display: 'orne',
         symbol: 'ORNE',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orne.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orne.png'
         }
       },
       {
@@ -7009,8 +7133,7 @@ const assets: AssetList[] = [
         display: 'tns',
         symbol: 'TNS',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tns.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tns.png'
         }
       },
       {
@@ -7031,8 +7154,7 @@ const assets: AssetList[] = [
         display: 'xrune',
         symbol: 'XRUNE',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xrune.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xrune.png'
         }
       },
       {
@@ -7053,8 +7175,7 @@ const assets: AssetList[] = [
         display: 'alot',
         symbol: 'aLOT',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/alot.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/alot.png'
         }
       },
       {
@@ -7075,8 +7196,7 @@ const assets: AssetList[] = [
         display: 'sity',
         symbol: 'SITY',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sity.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sity.svg'
         }
       },
       {
@@ -7097,8 +7217,7 @@ const assets: AssetList[] = [
         display: 'glow',
         symbol: 'GLOW',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/glow.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/glow.png'
         }
       },
       {
@@ -7119,8 +7238,7 @@ const assets: AssetList[] = [
         display: 'apollo',
         symbol: 'APOLLO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/apollo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/apollo.png'
         }
       },
       {
@@ -7141,8 +7259,7 @@ const assets: AssetList[] = [
         display: 'abr',
         symbol: 'ABR',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/abr.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/abr.svg'
         }
       },
       {
@@ -7181,8 +7298,7 @@ const assets: AssetList[] = [
         display: 'prism',
         symbol: 'PRISM',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/prism.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/prism.png'
         }
       },
       {
@@ -7221,8 +7337,7 @@ const assets: AssetList[] = [
         display: 'whsail',
         symbol: 'whSAIL',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whsail.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whsail.png'
         }
       },
       {
@@ -7243,8 +7358,7 @@ const assets: AssetList[] = [
         display: 'whgsail',
         symbol: 'whgSAIL',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whgsail.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whgsail.png'
         }
       },
       {
@@ -7265,8 +7379,7 @@ const assets: AssetList[] = [
         display: 'xprism',
         symbol: 'xPRISM',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xprism.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xprism.png'
         }
       },
       {
@@ -7305,8 +7418,7 @@ const assets: AssetList[] = [
         display: 'ctx',
         symbol: 'CTX',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ctx.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ctx.png'
         }
       },
       {
@@ -7327,8 +7439,7 @@ const assets: AssetList[] = [
         display: 'cluna',
         symbol: 'cLuna',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cluna.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cluna.png'
         }
       },
       {
@@ -7349,8 +7460,7 @@ const assets: AssetList[] = [
         display: 'pluna',
         symbol: 'pLuna',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pluna.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pluna.png'
         }
       },
       {
@@ -7371,8 +7481,7 @@ const assets: AssetList[] = [
         display: 'yluna',
         symbol: 'yLuna',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/yluna.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/yluna.png'
         }
       },
       {
@@ -7393,8 +7502,7 @@ const assets: AssetList[] = [
         display: 'atlo',
         symbol: 'ATLO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlo.png'
         }
       },
       {
@@ -7415,8 +7523,7 @@ const assets: AssetList[] = [
         display: 'local',
         symbol: 'LOCAL',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/local.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/local.png'
         }
       },
       {
@@ -7437,8 +7544,7 @@ const assets: AssetList[] = [
         display: 'luv',
         symbol: 'LUV',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luv.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luv.png'
         }
       },
       {
@@ -7459,8 +7565,7 @@ const assets: AssetList[] = [
         display: 'robo',
         symbol: 'ROBO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/robo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/robo.png'
         }
       },
       {
@@ -7481,8 +7586,7 @@ const assets: AssetList[] = [
         display: 'luart',
         symbol: 'LUART',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luart.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luart.png'
         }
       },
       {
@@ -7503,8 +7607,7 @@ const assets: AssetList[] = [
         display: 'mars',
         symbol: 'MARS',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mars.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mars.svg'
         }
       },
       {
@@ -7525,8 +7628,7 @@ const assets: AssetList[] = [
         display: 'xmars',
         symbol: 'XMARS',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xmars.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xmars.svg'
         }
       },
       {
@@ -7565,8 +7667,7 @@ const assets: AssetList[] = [
         display: 'ceres',
         symbol: 'CERES',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ceres.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ceres.svg'
         }
       },
       {
@@ -7587,8 +7688,7 @@ const assets: AssetList[] = [
         display: 'wasavax',
         symbol: 'wasAVAX',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wasavax.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wasavax.svg'
         }
       },
       {
@@ -7609,8 +7709,7 @@ const assets: AssetList[] = [
         display: 'mint',
         symbol: 'MINT',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mint.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mint.svg'
         }
       },
       {
@@ -7631,8 +7730,7 @@ const assets: AssetList[] = [
         display: 'sd',
         symbol: 'SD',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sd.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sd.png'
         }
       },
       {
@@ -7653,8 +7751,7 @@ const assets: AssetList[] = [
         display: 'xsd',
         symbol: 'xSD',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xsd.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xsd.png'
         }
       },
       {
@@ -7675,8 +7772,7 @@ const assets: AssetList[] = [
         display: 'paxg',
         symbol: 'PAXG',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/paxg.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/paxg.png'
         }
       },
       {
@@ -7697,8 +7793,7 @@ const assets: AssetList[] = [
         display: 'whdao',
         symbol: 'whDAO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whdao.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whdao.png'
         }
       },
       {
@@ -7719,8 +7814,7 @@ const assets: AssetList[] = [
         display: 'link',
         symbol: 'LINK',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/link.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/link.png'
         }
       },
       {
@@ -7741,8 +7835,7 @@ const assets: AssetList[] = [
         display: 'sayve',
         symbol: 'SAYVE',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sayve.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sayve.png'
         }
       },
       {
@@ -7781,8 +7874,7 @@ const assets: AssetList[] = [
         display: 'bro',
         symbol: 'BRO',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bro.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bro.svg'
         }
       },
       {
@@ -7803,8 +7895,7 @@ const assets: AssetList[] = [
         display: 'bbro',
         symbol: 'bBRO',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bbro.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bbro.svg'
         }
       },
       {
@@ -7879,8 +7970,7 @@ const assets: AssetList[] = [
         display: 'sst',
         symbol: 'SST',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sst.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sst.png'
         }
       },
       {
@@ -7901,8 +7991,7 @@ const assets: AssetList[] = [
         display: 'atlas',
         symbol: 'ATLAS',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlas.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlas.png'
         }
       },
       {
@@ -7923,8 +8012,7 @@ const assets: AssetList[] = [
         display: 'audio',
         symbol: 'AUDIO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/audio.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/audio.png'
         }
       },
       {
@@ -7945,8 +8033,7 @@ const assets: AssetList[] = [
         display: 'avax',
         symbol: 'AVAX',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/avax.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/avax.png'
         }
       },
       {
@@ -7967,8 +8054,7 @@ const assets: AssetList[] = [
         display: 'bat',
         symbol: 'BAT',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bat.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bat.png'
         }
       },
       {
@@ -7989,8 +8075,7 @@ const assets: AssetList[] = [
         display: 'busdbs',
         symbol: 'BUSDbs',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/busdbs.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/busdbs.png'
         }
       },
       {
@@ -8011,8 +8096,7 @@ const assets: AssetList[] = [
         display: 'dai',
         symbol: 'DAI',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dai.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dai.png'
         }
       },
       {
@@ -8033,8 +8117,7 @@ const assets: AssetList[] = [
         display: 'maticpo',
         symbol: 'MATICpo',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticpo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticpo.png'
         }
       },
       {
@@ -8055,8 +8138,7 @@ const assets: AssetList[] = [
         display: 'mimet',
         symbol: 'MIMet',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mimet.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mimet.png'
         }
       },
       {
@@ -8077,8 +8159,7 @@ const assets: AssetList[] = [
         display: 'ray',
         symbol: 'RAY',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ray.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ray.png'
         }
       },
       {
@@ -8099,8 +8180,7 @@ const assets: AssetList[] = [
         display: 'sbr',
         symbol: 'SBR',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sbr.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sbr.png'
         }
       },
       {
@@ -8121,8 +8201,7 @@ const assets: AssetList[] = [
         display: 'shib',
         symbol: 'SHIB',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/shib.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/shib.png'
         }
       },
       {
@@ -8143,8 +8222,7 @@ const assets: AssetList[] = [
         display: 'srmso',
         symbol: 'SRMso',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/srmso.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/srmso.png'
         }
       },
       {
@@ -8165,8 +8243,7 @@ const assets: AssetList[] = [
         display: 'usdcav',
         symbol: 'USDCav',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcav.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcav.png'
         }
       },
       {
@@ -8187,8 +8264,7 @@ const assets: AssetList[] = [
         display: 'usdcbs',
         symbol: 'USDCbs',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcbs.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcbs.png'
         }
       },
       {
@@ -8209,8 +8285,7 @@ const assets: AssetList[] = [
         display: 'usdcpo',
         symbol: 'USDCpo',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcpo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcpo.png'
         }
       },
       {
@@ -8231,8 +8306,7 @@ const assets: AssetList[] = [
         display: 'usdcso',
         symbol: 'USDCso',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcso.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcso.png'
         }
       },
       {
@@ -8253,8 +8327,7 @@ const assets: AssetList[] = [
         display: 'usdtav',
         symbol: 'USDTav',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtav.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtav.png'
         }
       },
       {
@@ -8275,8 +8348,7 @@ const assets: AssetList[] = [
         display: 'usdtbs',
         symbol: 'USDTbs',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtbs.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtbs.png'
         }
       },
       {
@@ -8297,8 +8369,7 @@ const assets: AssetList[] = [
         display: 'usdtso',
         symbol: 'USDTso',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtso.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtso.png'
         }
       },
       {
@@ -8319,8 +8390,7 @@ const assets: AssetList[] = [
         display: 'gohm',
         symbol: 'gOHM',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gohm.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gohm.png'
         }
       },
       {
@@ -8341,8 +8411,7 @@ const assets: AssetList[] = [
         display: 'msol',
         symbol: 'mSOL',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msol.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msol.png'
         }
       },
       {
@@ -8363,8 +8432,7 @@ const assets: AssetList[] = [
         display: 'steth',
         symbol: 'stETH',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/steth.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/steth.png'
         }
       },
       {
@@ -8385,8 +8453,7 @@ const assets: AssetList[] = [
         display: 'lct',
         symbol: 'LCT',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lct.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lct.png'
         }
       },
       {
@@ -8407,8 +8474,7 @@ const assets: AssetList[] = [
         display: 'batom',
         symbol: 'bATOM',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/batom.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/batom.svg'
         }
       },
       {
@@ -8429,8 +8495,7 @@ const assets: AssetList[] = [
         display: 'webatom',
         symbol: 'webATOM',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/webatom.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/webatom.svg'
         }
       },
       {
@@ -8451,8 +8516,7 @@ const assets: AssetList[] = [
         display: 'wcoin',
         symbol: 'WCOIN',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wcoin.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wcoin.svg'
         }
       },
       {
@@ -8473,8 +8537,7 @@ const assets: AssetList[] = [
         display: 'lctfancard',
         symbol: 'LCTfancard',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lctfancard.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lctfancard.png'
         }
       },
       {
@@ -8495,8 +8558,7 @@ const assets: AssetList[] = [
         display: 'kntc',
         symbol: 'KNTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kntc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kntc.svg'
         }
       },
       {
@@ -8517,8 +8579,7 @@ const assets: AssetList[] = [
         display: 'kust',
         symbol: 'kUST',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kust.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kust.svg'
         }
       },
       {
@@ -8539,8 +8600,7 @@ const assets: AssetList[] = [
         display: 'steak',
         symbol: 'STEAK',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/steak.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/steak.svg'
         }
       },
       {
@@ -8561,8 +8621,7 @@ const assets: AssetList[] = [
         display: 'cst',
         symbol: 'CST',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cst.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cst.png'
         }
       },
       {
@@ -8583,8 +8642,7 @@ const assets: AssetList[] = [
         display: 'cstfancard',
         symbol: 'CSTfancard',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cstfancard.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cstfancard.png'
         }
       },
       {
@@ -8605,8 +8663,7 @@ const assets: AssetList[] = [
         display: 'nwld',
         symbol: 'NWLD',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwld.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwld.png'
         }
       },
       {
@@ -8627,8 +8684,7 @@ const assets: AssetList[] = [
         display: 'fury',
         symbol: 'FURY',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/fury.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/fury.png'
         }
       },
       {
@@ -8649,8 +8705,7 @@ const assets: AssetList[] = [
         display: 'rct',
         symbol: 'RCT',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rct.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rct.svg'
         }
       },
       {
@@ -8671,8 +8726,7 @@ const assets: AssetList[] = [
         display: 'vitc',
         symbol: 'VITC',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vitc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vitc.png'
         }
       },
       {
@@ -8693,8 +8747,7 @@ const assets: AssetList[] = [
         display: 'sb',
         symbol: 'SB',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sb.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sb.png'
         }
       },
       {
@@ -8715,8 +8768,7 @@ const assets: AssetList[] = [
         display: 'toad',
         symbol: 'TOAD',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/toad.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/toad.svg'
         }
       },
       {
@@ -8737,8 +8789,7 @@ const assets: AssetList[] = [
         display: 'orionastro',
         symbol: 'orionASTRO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orionastro.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orionastro.png'
         }
       },
       {
@@ -8759,8 +8810,7 @@ const assets: AssetList[] = [
         display: 'retro',
         symbol: 'RETRO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/retro.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/retro.png'
         }
       },
       {
@@ -8781,8 +8831,7 @@ const assets: AssetList[] = [
         display: 'tnd',
         symbol: 'TND',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tnd.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tnd.png'
         }
       },
       {
@@ -8803,8 +8852,7 @@ const assets: AssetList[] = [
         display: 'stnd',
         symbol: 'sTND',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stnd.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stnd.svg'
         }
       },
       {
@@ -8825,8 +8873,7 @@ const assets: AssetList[] = [
         display: 'nwt',
         symbol: 'NWT',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwt.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwt.png'
         }
       },
       {
@@ -8853,10 +8900,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicAUD',
         symbol: 'AUTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aut.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aut.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aut.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aut.png'
         }
       },
       {
@@ -8883,10 +8928,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicCAD',
         symbol: 'CATC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cat.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cat.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cat.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cat.png'
         }
       },
       {
@@ -8913,10 +8956,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicCHF',
         symbol: 'CHTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cht.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cht.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cht.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cht.png'
         }
       },
       {
@@ -8943,10 +8984,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicCNY',
         symbol: 'CNTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnt.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnt.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnt.png'
         }
       },
       {
@@ -8973,10 +9012,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicDKK',
         symbol: 'DKTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dkt.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dkt.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dkt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dkt.png'
         }
       },
       {
@@ -9003,10 +9040,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicEUR',
         symbol: 'EUTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eut.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eut.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eut.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eut.png'
         }
       },
       {
@@ -9033,10 +9068,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicGBP',
         symbol: 'GBTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gbt.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gbt.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gbt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gbt.png'
         }
       },
       {
@@ -9063,10 +9096,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicHKD',
         symbol: 'HKTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/hkt.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/hkt.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/hkt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/hkt.png'
         }
       },
       {
@@ -9093,10 +9124,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicIDR',
         symbol: 'IDTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/idt.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/idt.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/idt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/idt.png'
         }
       },
       {
@@ -9123,10 +9152,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicINR',
         symbol: 'INTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/int.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/int.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/int.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/int.png'
         }
       },
       {
@@ -9153,10 +9180,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicJPY',
         symbol: 'JPTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/jpt.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/jpt.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/jpt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/jpt.png'
         }
       },
       {
@@ -9183,10 +9208,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicMNT',
         symbol: 'MNTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnt.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnt.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnt.png'
         }
       },
       {
@@ -9213,10 +9236,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicMYR',
         symbol: 'MYTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/myt.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/myt.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/myt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/myt.png'
         }
       },
       {
@@ -9243,10 +9264,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicNOK',
         symbol: 'NOTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/not.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/not.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/not.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/not.png'
         }
       },
       {
@@ -9273,10 +9292,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicPHP',
         symbol: 'PHTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pht.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pht.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pht.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pht.png'
         }
       },
       {
@@ -9303,10 +9320,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicSDR',
         symbol: 'SDTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sdt.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sdt.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sdt.png'
         }
       },
       {
@@ -9333,10 +9348,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicSEK',
         symbol: 'SETC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/set.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/set.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/set.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/set.png'
         }
       },
       {
@@ -9363,10 +9376,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicSGD',
         symbol: 'SGTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sgt.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sgt.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sgt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sgt.png'
         }
       },
       {
@@ -9393,10 +9404,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicTHB',
         symbol: 'THTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tht.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tht.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tht.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tht.png'
         }
       },
       {
@@ -9423,10 +9432,8 @@ const assets: AssetList[] = [
         name: 'TerraClassicTWD',
         symbol: 'TWTC',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twt.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twt.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twt.png'
         }
       },
       {
@@ -9447,8 +9454,7 @@ const assets: AssetList[] = [
         display: 'neb',
         symbol: 'NEB',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/neb.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/neb.png'
         }
       }
     ]
@@ -9474,8 +9480,7 @@ const assets: AssetList[] = [
         display: 'luna',
         symbol: 'LUNA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.png'
         },
         coingecko_id: 'terra-luna-2'
       }
@@ -9503,8 +9508,7 @@ const assets: AssetList[] = [
         display: 'sei',
         symbol: 'SEI',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/atlantic/images/sei.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/atlantic/images/sei.png'
         }
       }
     ]
@@ -9531,10 +9535,8 @@ const assets: AssetList[] = [
         name: 'BitCanna',
         symbol: 'BCNA',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/bitcannadev/images/bcna.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/bitcannadev/images/bcna.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/bitcannadev/images/bcna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/bitcannadev/images/bcna.svg'
         },
         coingecko_id: 'bitcanna'
       }
@@ -9561,10 +9563,8 @@ const assets: AssetList[] = [
         name: 'cheqd',
         symbol: 'CHEQ',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cheqdtestnet/images/cheq.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cheqdtestnet/images/cheq.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cheqdtestnet/images/cheq.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cheqdtestnet/images/cheq.svg'
         },
         coingecko_id: 'cheqd-network'
       }
@@ -9592,8 +9592,7 @@ const assets: AssetList[] = [
         display: 'kuji',
         symbol: 'KUJI',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/harpoon/images/kuji.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/harpoon/images/kuji.png'
         }
       }
     ]
@@ -9641,8 +9640,7 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'ibc/C6438A7D613196373D939891C99CA7EEF4F78F4A78DC8590E51E62F8ED16E72B',
+        base: 'ibc/C6438A7D613196373D939891C99CA7EEF4F78F4A78DC8590E51E62F8ED16E72B',
         name: 'Imv',
         display: 'imv',
         symbol: 'IMV',
@@ -9679,10 +9677,8 @@ const assets: AssetList[] = [
         display: 'junox',
         symbol: 'JUNO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
         },
         coingecko_id: 'juno-network'
       }
@@ -9709,10 +9705,8 @@ const assets: AssetList[] = [
         display: 'tki',
         symbol: 'TKI',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'
         },
         coingecko_id: 'ki'
       }
@@ -9740,8 +9734,7 @@ const assets: AssetList[] = [
         display: 'kyve',
         symbol: 'KYVE',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/korellia/images/kyve.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/korellia/images/kyve.svg'
         }
       }
     ]
@@ -9769,10 +9762,8 @@ const assets: AssetList[] = [
         display: 'osmo',
         symbol: 'OSMO',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
         },
         coingecko_id: 'osmosis',
         keywords: ['dex', 'staking']
@@ -9793,10 +9784,8 @@ const assets: AssetList[] = [
         display: 'ion',
         symbol: 'ION',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
         },
         coingecko_id: 'ion',
         keywords: ['memecoin']
@@ -9824,10 +9813,8 @@ const assets: AssetList[] = [
         display: 'scrt',
         symbol: 'SCRT',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
         },
         coingecko_id: 'secret'
       }
@@ -9876,8 +9863,7 @@ const assets: AssetList[] = [
             exponent: 6
           }
         ],
-        base:
-          'ibc/8B670F5ACD4887208C8FAD58396D39114A8F2C9B57E72EE02F51438069A72AEA',
+        base: 'ibc/8B670F5ACD4887208C8FAD58396D39114A8F2C9B57E72EE02F51438069A72AEA',
         name: 'Saage',
         display: 'saage',
         symbol: 'SGE',
@@ -9943,10 +9929,8 @@ const assets: AssetList[] = [
         display: 'atom',
         symbol: 'ATOM',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/osmosis-labs/assetlists/main/images/atom.png',
-          svg:
-            'https://raw.githubusercontent.com/osmosis-labs/assetlists/main/images/atom.svg'
+          png: 'https://raw.githubusercontent.com/osmosis-labs/assetlists/main/images/atom.png',
+          svg: 'https://raw.githubusercontent.com/osmosis-labs/assetlists/main/images/atom.svg'
         }
       }
     ]
@@ -9972,8 +9956,7 @@ const assets: AssetList[] = [
         display: 'ULAS',
         symbol: 'ULAS',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/ulas/images/logo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/ulas/images/logo.png'
         },
         coingecko_id: 'ulas'
       }
@@ -10002,10 +9985,8 @@ const assets: AssetList[] = [
         display: 'tgd',
         symbol: 'TGD',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.png',
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.svg'
         },
         coingecko_id: 'tgrade'
       }
@@ -10032,8 +10013,7 @@ const assets: AssetList[] = [
         display: 'umee',
         symbol: 'UMEE',
         logo_URIs: {
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png'
         },
         coingecko_id: 'umee'
       }
@@ -10062,10 +10042,8 @@ const assets: AssetList[] = [
         display: 'vdl',
         symbol: 'VDL',
         logo_URIs: {
-          svg:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg',
-          png:
-            'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png'
         },
         coingecko_id: 'vidulum'
       }

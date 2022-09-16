@@ -73,6 +73,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.agoric.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://agoric-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -81,7 +85,7 @@ const chains: Chain[] = [
           provider: 'NodeStake'
         },
         {
-          address: 'agoric-grpc.polkachu.com:44090',
+          address: 'agoric-grpc.polkachu.com:14490',
           provider: 'Polkachu'
         }
       ]
@@ -366,7 +370,7 @@ const chains: Chain[] = [
           provider: 'ecostake'
         },
         {
-          address: 'https://akash-rpc.polkachu.com:443',
+          address: 'https://akash-rpc.polkachu.com',
           provider: 'Polkachu'
         },
         {
@@ -388,7 +392,7 @@ const chains: Chain[] = [
           provider: 'ecostake'
         },
         {
-          address: 'https://akash-api.polkachu.com:443',
+          address: 'https://akash-api.polkachu.com',
           provider: 'Polkachu'
         },
         {
@@ -406,7 +410,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'akash-grpc.polkachu.com:28090',
+          address: 'akash-grpc.polkachu.com:12890',
           provider: 'Polkachu'
         }
       ]
@@ -864,6 +868,10 @@ const chains: Chain[] = [
         {
           address: 'https://api-assetmantle-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://assetmantle-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -876,7 +884,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'assetmantle-grpc.polkachu.com:46090',
+          address: 'assetmantle-grpc.polkachu.com:14690',
           provider: 'Polkachu'
         }
       ]
@@ -991,6 +999,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-axelar-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://axelar-rpc.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       rest: [
@@ -1005,6 +1017,10 @@ const chains: Chain[] = [
         {
           address: 'https://api-axelar-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://axelar-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -1013,7 +1029,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'axelar-grpc.polkachu.com:51090',
+          address: 'axelar-grpc.polkachu.com:15190',
           provider: 'Polkachu'
         }
       ]
@@ -1395,7 +1411,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'bitcanna-grpc.polkachu.com:30090',
+          address: 'bitcanna-grpc.polkachu.com:13090',
           provider: 'Polkachu'
         }
       ],
@@ -1419,6 +1435,10 @@ const chains: Chain[] = [
         {
           address: 'https://bitcanna-api.panthea.eu',
           provider: 'Panthea EU'
+        },
+        {
+          address: 'https://bitcanna-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -1555,6 +1575,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.bitsong.chaintools.tech/',
           provider: 'ChainTools'
+        },
+        {
+          address: 'https://rpc.bitsong.freak12techno.io/',
+          provider: 'freak12techno'
         }
       ],
       rest: [
@@ -1585,6 +1609,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.bitsong.chaintools.tech/',
           provider: 'ChainTools'
+        },
+        {
+          address: 'https://api.bitsong.freak12techno.io/',
+          provider: 'freak12techno'
         }
       ],
       grpc: [
@@ -1830,6 +1858,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.canto.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://canto-rpc.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       rest: [
@@ -1840,11 +1872,15 @@ const chains: Chain[] = [
         {
           address: 'https://api.canto.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://canto-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
         {
-          address: 'canto-grpc.polkachu.com:55090',
+          address: 'canto-grpc.polkachu.com:15590',
           provider: 'Polkachu'
         },
         {
@@ -2009,7 +2045,7 @@ const chains: Chain[] = [
       seeds: [
         {
           id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
-          address: 'seeds.polkachu.com:38656',
+          address: 'seeds.polkachu.com:13856',
           provider: 'Polkachu'
         }
       ],
@@ -2116,6 +2152,10 @@ const chains: Chain[] = [
         {
           address: 'https://cerberus-api.panthea.eu',
           provider: 'Panthea EU'
+        },
+        {
+          address: 'https://cerberus-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -2124,7 +2164,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'cerberus-grpc.polkachu.com:38090',
+          address: 'cerberus-grpc.polkachu.com:13890',
           provider: 'Polkachu'
         }
       ]
@@ -2418,6 +2458,10 @@ const chains: Chain[] = [
         {
           address: 'https://api-chihuahua-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://chihuahua-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -2426,7 +2470,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'chihuahua-grpc.polkachu.com:29090',
+          address: 'chihuahua-grpc.polkachu.com:12990',
           provider: 'Polkachu'
         }
       ]
@@ -2693,6 +2737,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.comdex.chaintools.tech/',
           provider: 'ChainTools'
+        },
+        {
+          address: 'https://comdex-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -2705,7 +2753,7 @@ const chains: Chain[] = [
           provider: 'ChainTools'
         },
         {
-          address: 'comdex-grpc.polkachu.com:31090',
+          address: 'comdex-grpc.polkachu.com:13190',
           provider: 'Polkachu'
         }
       ]
@@ -2730,6 +2778,97 @@ const chains: Chain[] = [
         kind: 'atomscan',
         url: 'https://atomscan.com/comdex',
         tx_page: 'https://atomscan.com/comdex/transactions/${txHash}'
+      }
+    ]
+  },
+  {
+    $schema: '../chain.schema.json',
+    chain_name: 'commercionetwork',
+    chain_id: 'commercio-3',
+    pretty_name: 'Commercio.network',
+    status: 'live',
+    network_type: 'mainnet',
+    bech32_prefix: 'did:com:',
+    genesis: {
+      genesis_url:
+        'https://raw.githubusercontent.com/commercionetwork/chains/master/commercio-3/genesis.json'
+    },
+    daemon_name: 'commercionetworkd',
+    node_home: '$HOME/.commercionetworkd',
+    key_algos: ['secp256k1'],
+    slip44: 701,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'ucommercio'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/commercionetwork/commercionetwork',
+      recommended_version: 'v4.0.0',
+      compatible_versions: ['v4.0.0']
+    },
+    peers: {
+      seeds: [
+        {
+          id: '8d3ac30a774245019f7b94d7a0713fd8caccaa03',
+          address: 'seed-01.commercio.network:26656'
+        },
+        {
+          id: '68ccfc9a1574923e344993d49253d8169f592f9e',
+          address: 'seed-02.commercio.network:26656'
+        }
+      ],
+      persistent_peers: [
+        {
+          id: '3f26a7d3269e352574e760d4b08d045aa40ebbf2',
+          address: 'persistent-01.commercio.network:26656'
+        },
+        {
+          id: '15767f4961b501eb67e740aa60c1608bf65679f3',
+          address: 'persistent-02.commercio.network:26656'
+        },
+        {
+          id: '01f615a56a7ba14d39e4eaf2bfd00a885cc4e629',
+          address: 'persistent-03.commercio.network:26656'
+        },
+        {
+          id: 'd6e07b5f0a69bd4d6f4e6e931f00fbcb992a8654',
+          address: 'persistent-04.commercio.network:26656'
+        },
+        {
+          id: '542a55fff599ea07e2b4841febff4a78cf8db2aa',
+          address: 'persistent-05.commercio.network:26656'
+        },
+        {
+          id: 'e2bd5ac83f0d2fde72571568b9a4203f7e76067d',
+          address: '64.225.95.231:26656'
+        },
+        {
+          id: 'e84b1b8cdb6563170466912f082829c2e4d28ab1',
+          address: '209.250.247.45:26656'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc-mainnet.commercio.network'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://lcd-mainnet.commercio.network'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'almerico',
+        url: 'https://mainnet.commercio.network',
+        tx_page:
+          'https://mainnet.commercio.network/transactions/detail/${txHash}'
       }
     ]
   },
@@ -2946,6 +3085,10 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
+          address: 'https://rpc-cosmoshub.goldenratiostaking.net',
+          provider: 'Golden Ratio Staking'
+        },
+        {
           address: 'https://rpc.cosmos.ezstaking.io',
           provider: 'EZStaking.io'
         },
@@ -2982,6 +3125,10 @@ const chains: Chain[] = [
         {
           address: 'https://api-cosmoshub-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://cosmos-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -2998,7 +3145,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'cosmos-grpc.polkachu.com:49090',
+          address: 'cosmos-grpc.polkachu.com:14990',
           provider: 'Polkachu'
         }
       ]
@@ -3160,6 +3307,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.crescent.pupmos.network',
           provider: 'PUPMØS'
+        },
+        {
+          address: 'https://crescent-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -3168,7 +3319,7 @@ const chains: Chain[] = [
           provider: 'crescent'
         },
         {
-          address: 'crescent-grpc.polkachu.com:45090',
+          address: 'crescent-grpc.polkachu.com:14590',
           provider: 'Polkachu'
         }
       ]
@@ -3735,6 +3886,10 @@ const chains: Chain[] = [
         {
           address: 'https://poseidon.mainnet.decentr.xyz',
           provider: 'decentr'
+        },
+        {
+          address: 'https://rpc.decentr.badgerbite.xyz:443',
+          provider: 'BadgerBite'
         },
         {
           address: 'https://ares.mainnet.decentr.xyz',
@@ -4333,12 +4488,20 @@ const chains: Chain[] = [
           provider: 'e-Money'
         },
         {
+          address: 'https://rpc.emoney.badgerbite.xyz:443',
+          provider: 'BadgerBite'
+        },
+        {
           address: 'https://rpc.emoney.ezstaking.io',
           provider: 'EZStaking.io'
         },
         {
           address: 'https://rpc-emoney-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://rpc.emoney.freak12techno.io/',
+          provider: 'freak12techno'
         }
       ],
       rest: [
@@ -4357,6 +4520,10 @@ const chains: Chain[] = [
         {
           address: 'https://api-emoney-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://api.emoney.freak12techno.io/',
+          provider: 'freak12techno'
         }
       ],
       grpc: [
@@ -4442,10 +4609,8 @@ const chains: Chain[] = [
     },
     explorers: [],
     logo_URIs: {
-      png:
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.png',
-      svg:
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.svg'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.svg'
     }
   },
   {
@@ -4600,8 +4765,16 @@ const chains: Chain[] = [
           provider: 'BlockHunters'
         },
         {
+          address: 'https://rpc-evmos.goldenratiostaking.net',
+          provider: 'Golden Ratio Staking'
+        },
+        {
           address: 'https://rpc.evmos.chaintools.tech/',
           provider: 'ChainTools'
+        },
+        {
+          address: 'https://evmos-rpc.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       rest: [
@@ -4648,6 +4821,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.evmos.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://evmos-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -4680,7 +4857,7 @@ const chains: Chain[] = [
           provider: 'ChainTools'
         },
         {
-          address: 'evmos-grpc.polkachu.com:34090',
+          address: 'evmos-grpc.polkachu.com:13490',
           provider: 'Polkachu'
         }
       ],
@@ -4826,6 +5003,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-fetchhub-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://fetch-rpc.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       rest: [
@@ -4836,6 +5017,10 @@ const chains: Chain[] = [
         {
           address: 'https://api-fetchhub-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://fetch-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -4848,7 +5033,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'fetch-grpc.polkachu.com:52090',
+          address: 'fetch-grpc.polkachu.com:15290',
           provider: 'Polkachu'
         }
       ]
@@ -5101,6 +5286,12 @@ const chains: Chain[] = [
           address: 'https://galaxy-api.polkachu.com',
           provider: 'Polkachu'
         }
+      ],
+      grpc: [
+        {
+          address: 'galaxy-grpc.polkachu.com:14890',
+          provider: 'Polkachu'
+        }
       ]
     },
     explorers: [
@@ -5318,6 +5509,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.gravity-bridge.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://gravity-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -5338,7 +5533,7 @@ const chains: Chain[] = [
           provider: 'NodeStake'
         },
         {
-          address: 'gravity-grpc.polkachu.com:42090',
+          address: 'gravity-grpc.polkachu.com:14290',
           provider: 'Polkachu'
         }
       ]
@@ -5702,6 +5897,10 @@ const chains: Chain[] = [
         {
           address: 'https://api-injective-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://injective-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -5710,7 +5909,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'injective-grpc.polkachu.com:9900',
+          address: 'injective-grpc.polkachu.com:14390',
           provider: 'Polkachu'
         }
       ]
@@ -6042,6 +6241,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.juno.chaintools.tech/',
           provider: 'ChainTools'
+        },
+        {
+          address: 'https://juno-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -6058,7 +6261,7 @@ const chains: Chain[] = [
           provider: 'ChainTools'
         },
         {
-          address: 'juno-grpc.polkachu.com:9090',
+          address: 'juno-grpc.polkachu.com:12690',
           provider: 'Polkachu'
         }
       ]
@@ -6191,6 +6394,10 @@ const chains: Chain[] = [
         {
           address: 'https://api-kava-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://kava-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -6203,7 +6410,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'kava-grpc.polkachu.com:39090',
+          address: 'kava-grpc.polkachu.com:13990',
           provider: 'Polkachu'
         }
       ],
@@ -6341,6 +6548,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.kichain.chaintools.tech/',
           provider: 'ChainTools'
+        },
+        {
+          address: 'https://kichain-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -6349,7 +6560,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'kichain-grpc.polkachu.com:35090',
+          address: 'kichain-grpc.polkachu.com:13590',
           provider: 'Polkachu'
         }
       ]
@@ -6488,6 +6699,10 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
+          address: 'https://rpc.konstellation.badgerbite.xyz:443',
+          provider: 'BadgerBite'
+        },
+        {
           address: 'https://rpc-konstellation-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         }
@@ -6500,6 +6715,10 @@ const chains: Chain[] = [
         {
           address: 'https://api-konstellation-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://konstellation-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -6508,7 +6727,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'konstellation-grpc.polkachu.com:33090',
+          address: 'konstellation-grpc.polkachu.com:13390',
           provider: 'Polkachu'
         }
       ]
@@ -6575,6 +6794,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-kujira-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://kujira-rpc.wildsage.io',
+          provider: 'WildSage Labs'
         }
       ],
       grpc: [
@@ -6587,7 +6810,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'kujira-grpc.polkachu.com:18090',
+          address: 'kujira-grpc.polkachu.com:11890',
           provider: 'Polkachu'
         }
       ],
@@ -6615,6 +6838,10 @@ const chains: Chain[] = [
         {
           address: 'https://api-kujira-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://kujira-lcd.wildsage.io/',
+          provider: 'WildSage Labs'
         }
       ]
     },
@@ -6633,17 +6860,22 @@ const chains: Chain[] = [
         kind: 'atomscan',
         url: 'https://atomscan.com/kujira',
         tx_page: 'https://atomscan.com/kujira/transactions/${txHash}'
+      },
+      {
+        kind: 'Nodeist Explorer',
+        url: 'https://exp.nodeist.net/Kujira',
+        tx_page: 'https://exp.nodeist.net/Kujira/transactions/${txHash}'
       }
     ],
     logo_URIs: {
-      png:
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kujira-chain-logo.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kujira-chain-logo.png'
     }
   },
   {
     $schema: '../chain.schema.json',
     chain_name: 'likecoin',
     status: 'live',
+    website: 'https://like.co/',
     network_type: 'mainnet',
     pretty_name: 'LikeCoin',
     chain_id: 'likecoin-mainnet-2',
@@ -6658,6 +6890,16 @@ const chains: Chain[] = [
     slip44: 118,
     fees: {
       fee_tokens: [
+        {
+          denom: 'nanolike',
+          low_gas_price: 1,
+          average_gas_price: 10,
+          high_gas_price: 1000
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
         {
           denom: 'nanolike'
         }
@@ -6678,7 +6920,9 @@ const chains: Chain[] = [
           'https://github.com/likecoin/likecoin-chain/releases/download/v3.0.0/likecoin-chain_3.0.0_Darwin_arm64.tar.gz',
         'windows/amd64':
           'https://github.com/likecoin/likecoin-chain/releases/download/v3.0.0/likecoin-chain_3.0.0_Windows_x86_64.zip'
-      }
+      },
+      cosmos_sdk_version: '0.45',
+      tendermint_version: '0.34'
     },
     peers: {
       seeds: [
@@ -6751,6 +6995,13 @@ const chains: Chain[] = [
     },
     explorers: [
       {
+        kind: 'mintscan',
+        url: 'https://www.mintscan.io/likecoin',
+        tx_page: 'https://www.mintscan.io/likecoin/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/likecoin/account/${accountAddress}'
+      },
+      {
         kind: 'bigdipper',
         url: 'https://likecoin.bigdipper.live/',
         tx_page: 'https://likecoin.bigdipper.live/transactions/${txHash}'
@@ -6769,7 +7020,12 @@ const chains: Chain[] = [
         url: 'https://atomscan.com/likecoin',
         tx_page: 'https://atomscan.com/likecoin/transactions/${txHash}'
       }
-    ]
+    ],
+    logo_URIs: {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.svg'
+    },
+    keywords: ['depub', 'like']
   },
   {
     $schema: '../chain.schema.json',
@@ -6824,10 +7080,8 @@ const chains: Chain[] = [
     },
     explorers: [],
     logo_URIs: {
-      png:
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.png',
-      svg:
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.svg'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.svg'
     }
   },
   {
@@ -7152,6 +7406,12 @@ const chains: Chain[] = [
           address: 'https://api.meme.pupmos.network/',
           provider: 'PUPMØS'
         }
+      ],
+      grpc: [
+        {
+          address: 'meme-grpc.polkachu.com:14790',
+          provider: 'Polkachu'
+        }
       ]
     },
     explorers: [
@@ -7257,10 +7517,8 @@ const chains: Chain[] = [
     },
     explorers: [],
     logo_URIs: {
-      png:
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/mythos/images/mythos.png',
-      svg:
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/mythos/images/mythos.svg'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mythos/images/mythos.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mythos/images/mythos.svg'
     }
   },
   {
@@ -7300,6 +7558,10 @@ const chains: Chain[] = [
         {
           address: 'http://138.197.71.46:26657',
           provider: 'nomic-io'
+        },
+        {
+          address: 'https://nomic-rpc.polkachu.com/',
+          provider: 'Polkachu'
         }
       ],
       rest: [
@@ -7839,7 +8101,7 @@ const chains: Chain[] = [
     chain_name: 'osmosis',
     status: 'live',
     network_type: 'mainnet',
-    updatelink:
+    update_link:
       'https://raw.githubusercontent.com/osmosis-labs/osmosis/main/chain.schema.json',
     pretty_name: 'Osmosis',
     chain_id: 'osmosis-1',
@@ -7885,7 +8147,7 @@ const chains: Chain[] = [
       cosmwasm_version: '0.24',
       cosmwasm_enabled: true,
       genesis: {
-        tag: 'v3.1.0',
+        name: 'v3.1.0',
         genesis_url:
           'https://github.com/osmosis-labs/networks/raw/main/osmosis-1/genesis.json'
       },
@@ -8162,6 +8424,10 @@ const chains: Chain[] = [
           provider: 'Interbloc'
         },
         {
+          address: 'https://osmosis-api.polkachu.com',
+          provider: 'Polkachu'
+        },
+        {
           address: 'https://osmosis.stakesystems.io/',
           provider: 'stakesystems'
         }
@@ -8176,7 +8442,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'osmosis-grpc.polkachu.com:9090',
+          address: 'osmosis-grpc.polkachu.com:12590',
           provider: 'Polkachu'
         }
       ]
@@ -8208,8 +8474,7 @@ const chains: Chain[] = [
       }
     ],
     logo_URIs: {
-      png:
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
     },
     keywords: ['dex']
   },
@@ -8419,6 +8684,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.passage.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://passage-rpc.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       rest: [
@@ -8445,6 +8714,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.passage.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://passage-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -8453,7 +8726,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'passage-grpc.polkachu.com:56090',
+          address: 'passage-grpc.polkachu.com:15690',
           provider: 'Polkachu'
         },
         {
@@ -8478,8 +8751,7 @@ const chains: Chain[] = [
       }
     ],
     logo_URIs: {
-      png:
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png'
     }
   },
   {
@@ -8915,8 +9187,7 @@ const chains: Chain[] = [
       }
     ],
     logo_URIs: {
-      png:
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png'
     }
   },
   {
@@ -9290,6 +9561,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.sentinel.chaintools.tech/',
           provider: 'ChainTools'
+        },
+        {
+          address: 'https://rpc.sentinel.freak12techno.io/',
+          provider: 'freak12techno'
         }
       ],
       rest: [
@@ -9308,6 +9583,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.sentinel.chaintools.tech/',
           provider: 'ChainTools'
+        },
+        {
+          address: 'https://api.sentinel.freak12techno.io/',
+          provider: 'freak12techno'
         }
       ],
       grpc: [
@@ -9396,6 +9675,10 @@ const chains: Chain[] = [
         {
           address: 'https://shentu-rpc.panthea.eu',
           provider: 'Panthea EU'
+        },
+        {
+          address: 'https://certik-rpc.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       rest: [
@@ -9406,6 +9689,16 @@ const chains: Chain[] = [
         {
           address: 'https://shentu-api.panthea.eu',
           provider: 'Panthea EU'
+        },
+        {
+          address: 'https://certik-api.polkachu.com',
+          provider: 'Polkachu'
+        }
+      ],
+      grpc: [
+        {
+          address: 'certik-grpc.polkachu.com:14090',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -9531,7 +9824,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'sifchain-grpc.polkachu.com:32090',
+          address: 'sifchain-grpc.polkachu.com:13290',
           provider: 'Polkachu'
         }
       ],
@@ -9554,6 +9847,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.sifchain.chaintools.tech/',
           provider: 'ChainTools'
+        },
+        {
+          address: 'https://sifchain-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -9700,6 +9997,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.sommelier.pupmos.network',
           provider: 'PUPMØS'
+        },
+        {
+          address: 'https://sommelier-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -9708,7 +10009,7 @@ const chains: Chain[] = [
           provider: 'strangelove'
         },
         {
-          address: 'sommelier-grpc.polkachu.com:41090',
+          address: 'sommelier-grpc.polkachu.com:14190',
           provider: 'Polkachu'
         }
       ]
@@ -9923,6 +10224,10 @@ const chains: Chain[] = [
         {
           address: 'https://stargaze.c29r3.xyz:443/api/',
           provider: 'c29r3'
+        },
+        {
+          address: 'https://stargaze-rapipc.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -9931,7 +10236,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'stargaze-grpc.polkachu.com:37090',
+          address: 'stargaze-grpc.polkachu.com:13790',
           provider: 'Polkachu'
         }
       ]
@@ -10070,7 +10375,7 @@ const chains: Chain[] = [
     node_home: '$HOME/.strided',
     genesis: {
       genesis_url:
-        'https://raw.githubusercontent.com/Stride-Labs/testnet/infra-test/poolparty/infra/genesis.json'
+        'https://raw.githubusercontent.com/Stride-Labs/testnet/main/mainnet/genesis.json'
     },
     key_algos: ['ed25519'],
     slip44: 118,
@@ -10145,6 +10450,11 @@ const chains: Chain[] = [
           id: '04ea9eceee16db90872fee3fbef9ac50a87702c5',
           address: '185.248.24.29:26656',
           provider: 'Whi𝕊perNode'
+        },
+        {
+          id: '9a65aeddaebe1d391058eae5b82e34907547ded1',
+          address: 'alice.peers.stride.bh.rocks:46656',
+          provider: 'BlockHunters'
         }
       ]
     },
@@ -10157,6 +10467,14 @@ const chains: Chain[] = [
         {
           address: 'https://stride.rpc.chandrastation.com',
           provider: 'Chandra Station'
+        },
+        {
+          address: 'https://rpc.stride.bh.rocks',
+          provider: 'BlockHunters'
+        },
+        {
+          address: 'http://rpc-stride.nodeist.net',
+          provider: 'Nodeist'
         }
       ],
       rest: [
@@ -10167,12 +10485,24 @@ const chains: Chain[] = [
         {
           address: 'https://stride.api.chandrastation.com',
           provider: 'Chandra Station'
+        },
+        {
+          address: 'https://api.stride.bh.rocks',
+          provider: 'BlockHunters'
+        },
+        {
+          address: 'http://api-stride.nodeist.net',
+          provider: 'Nodeist'
         }
       ],
       grpc: [
         {
-          address: 'http://stride-grpc.polkachu.com:22090',
+          address: 'stride-grpc.polkachu.com:12290',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://grpc.stride.bh.rocks',
+          provider: 'BlockHunters'
         }
       ]
     },
@@ -10190,11 +10520,16 @@ const chains: Chain[] = [
         tx_page: 'https://explorer.stride.zone/stride/tx/${txHash}',
         account_page:
           'https://explorer.stride.zone/stride/account/${accountAddress}'
+      },
+      {
+        kind: 'Nodeist Explorer',
+        url: 'https://exp.nodeist.net/Stride',
+        tx_page: 'https://exp.nodeist.net/Stride/tx/${txHash}',
+        account_page: 'https://exp.nodeist.net/Stride/account/${accountAddress}'
       }
     ],
     logo_URIs: {
-      png:
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stride-chain-logo.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stride-chain-logo.png'
     }
   },
   {
@@ -10435,22 +10770,36 @@ const chains: Chain[] = [
           provider: 'CryptoCrew'
         },
         {
-          address: 'https://terra-rpc.polkachu.com:443/',
+          address: 'https://terra-rpc.polkachu.com',
           provider: 'polkachu'
         },
         {
           address: 'https://terra-rpc.stakely.io:443/',
           provider: 'stakely'
+        },
+        {
+          address: 'https://rpc-terra.wildsage.io:443/',
+          provider: 'WildSage Labs'
         }
       ],
       rest: [
         {
-          address: 'https://terra-api.polkachu.com:443/',
+          address: 'https://terra-api.polkachu.com',
           provider: 'polkachu'
         },
         {
           address: 'https://fcd.terrav2.ccvalidators.com:443/',
           provider: 'CryptoCrew'
+        },
+        {
+          address: 'https://lcd-terra.wildsage.io:443/',
+          provider: 'WildSage Labs'
+        }
+      ],
+      grpc: [
+        {
+          address: 'terra-grpc.polkachu.com:11790',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -11143,8 +11492,7 @@ const chains: Chain[] = [
       grpc: []
     },
     logo_URIs: {
-      png:
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
     },
     keywords: ['dex', 'testnet']
   },
@@ -11473,6 +11821,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.state-sync-02.theta-testnet.polypore.xyz',
           provider: 'Hypha'
+        },
+        {
+          address: 'https://public-cosmos-theta.w3node.com',
+          provider: 'Interchain.FM'
         }
       ],
       rest: [
@@ -11491,6 +11843,10 @@ const chains: Chain[] = [
         {
           address: 'https://rest.state-sync-02.theta-testnet.polypore.xyz',
           provider: 'Hypha'
+        },
+        {
+          address: 'https://public-cosmos-theta.w3node.com/rest/',
+          provider: 'Interchain.FM'
         }
       ],
       grpc: [
@@ -11663,8 +12019,7 @@ const chains: Chain[] = [
       }
     ],
     logo_URIs: {
-      png:
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-logo-gradient_h.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-logo-gradient_h.png'
     }
   },
   {
@@ -12028,6 +12383,10 @@ const chains: Chain[] = [
         {
           address: 'https://api-umee-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://umee-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -12060,7 +12419,7 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
-          address: 'umee-grpc.polkachu.com:36090',
+          address: 'umee-grpc.polkachu.com:13690',
           provider: 'Polkachu'
         }
       ]

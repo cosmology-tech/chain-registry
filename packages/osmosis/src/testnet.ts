@@ -95,8 +95,7 @@ const testnet: Chain = {
     grpc: []
   },
   logo_URIs: {
-    png:
-      'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
   },
   keywords: ['dex', 'testnet']
 };

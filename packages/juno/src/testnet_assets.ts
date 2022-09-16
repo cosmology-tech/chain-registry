@@ -20,10 +20,8 @@ const testnet_assets: AssetList = {
       display: 'junox',
       symbol: 'JUNO',
       logo_URIs: {
-        png:
-          'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.png',
-        svg:
-          'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
       },
       coingecko_id: 'juno-network'
     }
