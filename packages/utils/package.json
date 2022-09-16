@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/utils",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Chain Registry Utils",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
@@ -73,7 +73,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.19.0",
-    "@chain-registry/types": "^0.8.0",
+    "@chain-registry/types": "^0.9.0",
     "bfs-path": "^1.0.2",
     "cross-fetch": "^3.1.5",
     "sha.js": "^2.4.11"
