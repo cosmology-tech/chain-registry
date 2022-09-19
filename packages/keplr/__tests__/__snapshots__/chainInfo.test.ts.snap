@@ -288,8 +288,8 @@ Object {
 `;
 
 exports[`works 1`] = `
-Object {
-  "bech32Config": Object {
+{
+  "bech32Config": {
     "bech32PrefixAccAddr": "osmo",
     "bech32PrefixAccPub": "osmopub",
     "bech32PrefixConsAddr": "osmovalcons",
@@ -297,20 +297,20 @@ Object {
     "bech32PrefixValAddr": "osmovaloper",
     "bech32PrefixValPub": "osmovaloperpub",
   },
-  "bip44": Object {
+  "bip44": {
     "coinType": 118,
   },
   "chainId": "osmosis-1",
   "chainName": "Osmosis",
-  "currencies": Array [
-    Object {
+  "currencies": [
+    {
       "coinDecimals": 6,
       "coinDenom": "OSMO",
       "coinGeckoId": "osmosis",
       "coinImageUrl": "https://app.osmosis.zone/tokens/osmo.svg",
       "coinMinimalDenom": "uosmo",
     },
-    Object {
+    {
       "coinDecimals": 6,
       "coinDenom": "ION",
       "coinGeckoId": "ion",
@@ -318,14 +318,14 @@ Object {
       "coinMinimalDenom": "uion",
     },
   ],
-  "features": Array [
+  "features": [
     "stargate",
     "ibc-transfer",
     "no-legacy-stdTx",
     "ibc-go",
   ],
-  "feeCurrencies": Array [
-    Object {
+  "feeCurrencies": [
+    {
       "coinDecimals": 6,
       "coinDenom": "OSMO",
       "coinGeckoId": "osmosis",
@@ -333,14 +333,14 @@ Object {
       "coinMinimalDenom": "uosmo",
     },
   ],
-  "gasPriceStep": Object {
+  "gasPriceStep": {
     "average": 0,
     "high": 0.025,
     "low": 0,
   },
   "rest": "https://lcd-osmosis.keplr.app/",
   "rpc": "https://rpc-osmosis.keplr.app/",
-  "stakeCurrency": Object {
+  "stakeCurrency": {
     "coinDecimals": 6,
     "coinDenom": "OSMO",
     "coinGeckoId": "osmosis",
