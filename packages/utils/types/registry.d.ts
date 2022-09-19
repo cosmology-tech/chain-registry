@@ -1,4 +1,4 @@
-import { AssetList, Chain, IBCInfo } from '@chain-registry/types';
+import { AssetList, Chain, ChainRegistry, IBCInfo } from '@chain-registry/types';
 export interface ChainRegistryOptions {
     assetLists?: AssetList[];
     chains?: Chain[];
@@ -18,22 +18,22 @@ export declare class ChainInfo {
     protected _ibc_data: IBCInfo[];
     constructor(options: ChainInfoOptions);
     refresh(): void;
-    nativeAssetLists(): AssetList;
-    chain(): Chain;
-    assetLists(): any[];
+    get nativeAssetLists(): AssetList;
+    get chain(): Chain;
+    get assetLists(): any[];
 }
-export declare class ChainRegistry {
+export declare class ChainRegistryFetcher implements ChainRegistry {
     protected _asset_lists: AssetList[];
     protected _chains: Chain[];
     protected _ibc_data: IBCInfo[];
     urls: string[];
     constructor(options?: ChainRegistryOptions);
-    assetLists(): AssetList[];
+    get assetLists(): AssetList[];
     getChainAssetList(chainName: string): AssetList;
     getGeneratedAssetLists(chainName: string): AssetList[];
-    chains(): Chain[];
+    get chains(): Chain[];
     getChain(chainName: string): Chain;
-    ibcData(): IBCInfo[];
+    get ibcData(): IBCInfo[];
     getChainIbcData(chainName: string): IBCInfo[];
     getChainInfo(chainName: string): ChainInfo;
     upsertChain(data: Chain): void;

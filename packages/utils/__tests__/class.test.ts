@@ -1,20 +1,23 @@
-import { ChainRegistry, ChainRegistryOptions } from '../src/registry';
+import {
+  ChainRegistryFetcher,
+  ChainRegistryFetcherOptions
+} from '../src/registry';
 
 it('ChainRegistry', async () => {
-  const options: ChainRegistryOptions = {
+  const options: ChainRegistryFetcherOptions = {
     urls: [
       'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/chain.json',
       'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/assetlist.json'
     ]
   };
-  const registry = new ChainRegistry(options);
+  const registry = new ChainRegistryFetcher(options);
   await registry.fetchUrls();
-  expect(registry.chains().length).toBe(1);
-  expect(registry.assetLists().length).toBe(1);
+  expect(registry.chains.length).toBe(1);
+  expect(registry.assetLists.length).toBe(1);
 });
 
 it('ChainInfo', async () => {
-  const options: ChainRegistryOptions = {
+  const options: ChainRegistryFetcherOptions = {
     urls: [
       'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/chain.json',
       'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/assetlist.json',
@@ -24,13 +27,13 @@ it('ChainInfo', async () => {
       'https://raw.githubusercontent.com/cosmos/chain-registry/master/_IBC/osmosis-secretnetwork.json'
     ]
   };
-  const registry = new ChainRegistry(options);
+  const registry = new ChainRegistryFetcher(options);
   await registry.fetchUrls();
 
   // get ChainInfo object
   const chainInfo = registry.getChainInfo('osmosis');
   const generated = registry.getGeneratedAssetLists('osmosis');
-  const gen2 = chainInfo.assetLists();
+  const gen2 = chainInfo.assetLists;
   expect(gen2).toEqual(generated);
   const native = registry.getChainAssetList('osmosis');
   const numGenerated = generated[0].assets.length;
@@ -41,7 +44,7 @@ it('ChainInfo', async () => {
   const osmosisAssets = registry.getChainAssetList('osmosis');
   //
 
-  expect(chainInfo.chain()).toEqual(osmosis);
-  expect(chainInfo.nativeAssetLists()).toEqual(osmosisAssets);
+  expect(chainInfo.chain).toEqual(osmosis);
+  expect(chainInfo.nativeAssetLists).toEqual(osmosisAssets);
   // chainInfo.chain_name;
 });

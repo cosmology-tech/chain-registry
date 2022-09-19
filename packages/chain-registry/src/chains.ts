@@ -5,6 +5,7 @@ const chains: Chain[] = [
     chain_name: 'agoric',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://agoric.com/',
     pretty_name: 'Agoric',
     chain_id: 'agoric-3',
     bech32_prefix: 'agoric',
@@ -96,6 +97,7 @@ const chains: Chain[] = [
     chain_name: 'aioz',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://aioz.network/',
     pretty_name: 'AIOZ Network',
     chain_id: 'aioz_168-1',
     bech32_prefix: 'aioz',
@@ -204,6 +206,7 @@ const chains: Chain[] = [
     chain_name: 'akash',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://akash.network/',
     pretty_name: 'Akash',
     chain_id: 'akashnet-2',
     bech32_prefix: 'akash',
@@ -448,6 +451,7 @@ const chains: Chain[] = [
     chain_name: 'arkh',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://arkh.com/',
     pretty_name: 'Arkhadian',
     chain_id: 'arkh',
     bech32_prefix: 'arkh',
@@ -513,6 +517,7 @@ const chains: Chain[] = [
     chain_name: 'assetmantle',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://assetmantle.one/',
     pretty_name: 'AssetMantle',
     chain_id: 'mantle-1',
     bech32_prefix: 'mantle',
@@ -924,6 +929,7 @@ const chains: Chain[] = [
     pretty_name: 'Axelar',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://axelar.network/',
     bech32_prefix: 'axelar',
     genesis: {
       genesis_url:
@@ -1062,6 +1068,7 @@ const chains: Chain[] = [
     chain_name: 'bandchain',
     status: 'live',
     network_type: 'mainnet',
+    website: 'hhttps://bandprotocol.com/',
     pretty_name: 'Band Protocol',
     chain_id: 'laozi-mainnet',
     daemon_name: 'bandd',
@@ -1276,6 +1283,7 @@ const chains: Chain[] = [
     chain_name: 'bitcanna',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://www.bitcanna.io/',
     pretty_name: 'BitCanna',
     chain_id: 'bitcanna-1',
     bech32_prefix: 'bcna',
@@ -1297,11 +1305,11 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/BitCannaGlobal/bcna',
-      recommended_version: 'v1.3.1',
-      compatible_versions: ['v1.3.1'],
+      recommended_version: 'v1.4.2',
+      compatible_versions: ['v1.4.0', 'v1.4.1', 'v1.4.2'],
       binaries: {
         'linux/amd64':
-          'https://github.com/BitCannaGlobal/bcna/releases/download/v.1.3.1/bcnad'
+          'https://github.com/BitCannaGlobal/bcna/releases/download/v1.4.2/bcnad'
       }
     },
     peers: {
@@ -1472,6 +1480,7 @@ const chains: Chain[] = [
     chain_name: 'bitsong',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://bitsong.io/',
     pretty_name: 'BitSong',
     chain_id: 'bitsong-2b',
     bech32_prefix: 'bitsong',
@@ -2027,6 +2036,7 @@ const chains: Chain[] = [
     chain_name: 'cerberus',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://cerberus.zone/',
     pretty_name: 'Cerberus',
     chain_id: 'cerberus-chain-1',
     bech32_prefix: 'cerberus',
@@ -2199,6 +2209,7 @@ const chains: Chain[] = [
     chain_name: 'cheqd',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://www.cheqd.io/',
     pretty_name: 'cheqd',
     chain_id: 'cheqd-mainnet-1',
     bech32_prefix: 'cheqd',
@@ -2341,6 +2352,7 @@ const chains: Chain[] = [
     chain_name: 'chihuahua',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://chihuahua.wtf/',
     pretty_name: 'Chihuahua',
     chain_id: 'chihuahua-1',
     bech32_prefix: 'chihuahua',
@@ -2608,6 +2620,7 @@ const chains: Chain[] = [
     chain_name: 'comdex',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://comdex.one/',
     pretty_name: 'Comdex',
     chain_id: 'comdex-1',
     bech32_prefix: 'comdex',
@@ -2876,6 +2889,7 @@ const chains: Chain[] = [
     $schema: '../chain.schema.json',
     chain_name: 'cosmoshub',
     chain_id: 'cosmoshub-4',
+    website: 'https://cosmos.network/',
     pretty_name: 'Cosmos Hub',
     status: 'live',
     network_type: 'mainnet',
@@ -3935,6 +3949,7 @@ const chains: Chain[] = [
     chain_name: 'desmos',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://desmos.network/',
     pretty_name: 'Desmos',
     chain_id: 'desmos-mainnet',
     bech32_prefix: 'desmos',
@@ -4047,6 +4062,7 @@ const chains: Chain[] = [
     chain_name: 'dig',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://digchain.org/',
     pretty_name: 'Dig Chain',
     chain_id: 'dig-1',
     bech32_prefix: 'dig',
@@ -4618,6 +4634,7 @@ const chains: Chain[] = [
     chain_name: 'evmos',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://evmos.org/',
     pretty_name: 'Evmos',
     chain_id: 'evmos_9001-2',
     bech32_prefix: 'evmos',
@@ -4719,6 +4736,11 @@ const chains: Chain[] = [
           id: 'a7779498a15dfd5adc678f0f6672935413413f42',
           address: 'alice.peers.evmos.bh.rocks:26656',
           provider: 'BlockHunters'
+        },
+        {
+          id: 'd4a5fcc56f369665c232788c22844dc3a018fe08',
+          address: 'peer.evmos.silknodes.io:26602',
+          provider: 'Silk Nodes'
         }
       ]
     },
@@ -4775,6 +4797,10 @@ const chains: Chain[] = [
         {
           address: 'https://evmos-rpc.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://rpc.evmos.silknodes.io/',
+          provider: 'Silk Nodes'
         }
       ],
       rest: [
@@ -4825,6 +4851,10 @@ const chains: Chain[] = [
         {
           address: 'https://evmos-api.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://api.evmos.silknodes.io/',
+          provider: 'Silk Nodes'
         }
       ],
       grpc: [
@@ -4859,6 +4889,10 @@ const chains: Chain[] = [
         {
           address: 'evmos-grpc.polkachu.com:13490',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://grpc.evmos.silknodes.io/',
+          provider: 'Silk Nodes'
         }
       ],
       'evm-http-jsonrpc': [
@@ -5066,6 +5100,7 @@ const chains: Chain[] = [
     chain_name: 'firmachain',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://firmachain.org/',
     pretty_name: 'FirmaChain',
     chain_id: 'colosseum-1',
     bech32_prefix: 'firma',
@@ -5149,6 +5184,7 @@ const chains: Chain[] = [
     chain_name: 'galaxy',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://galaxychain.zone/',
     pretty_name: 'Galaxy',
     chain_id: 'galaxy-1',
     bech32_prefix: 'galaxy',
@@ -5396,6 +5432,7 @@ const chains: Chain[] = [
     chain_name: 'gravitybridge',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://www.gravitybridge.net/',
     pretty_name: 'Gravity Bridge',
     chain_id: 'gravity-bridge-3',
     bech32_prefix: 'gravity',
@@ -5566,6 +5603,7 @@ const chains: Chain[] = [
     chain_name: 'idep',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://www.idep.network/',
     pretty_name: 'IDEP',
     chain_id: 'Antora',
     bech32_prefix: 'idep',
@@ -5665,6 +5703,7 @@ const chains: Chain[] = [
     chain_name: 'impacthub',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://www.ixo.world/',
     pretty_name: 'Impact Hub',
     chain_id: 'impacthub-3',
     bech32_prefix: 'ixo',
@@ -5794,6 +5833,7 @@ const chains: Chain[] = [
     chain_name: 'injective',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://injectiveprotocol.com/',
     pretty_name: 'Injective',
     chain_id: 'injective-1',
     bech32_prefix: 'inj',
@@ -6082,6 +6122,7 @@ const chains: Chain[] = [
     chain_name: 'juno',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://junochain.com/',
     pretty_name: 'Juno',
     chain_id: 'juno-1',
     bech32_prefix: 'juno',
@@ -6294,6 +6335,7 @@ const chains: Chain[] = [
     chain_name: 'kava',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://www.kava.io/',
     pretty_name: 'Kava',
     chain_id: 'kava_2222-10',
     bech32_prefix: 'kava',
@@ -6444,6 +6486,7 @@ const chains: Chain[] = [
     chain_name: 'kichain',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://foundation.ki/',
     pretty_name: 'Ki',
     chain_id: 'kichain-2',
     bech32_prefix: 'ki',
@@ -6588,6 +6631,7 @@ const chains: Chain[] = [
     chain_name: 'konstellation',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://konstellation.tech/',
     pretty_name: 'Konstellation',
     chain_id: 'darchub',
     bech32_prefix: 'darc',
@@ -6747,6 +6791,7 @@ const chains: Chain[] = [
     pretty_name: 'Kujira',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://kujira.app/',
     bech32_prefix: 'kujira',
     genesis: {
       genesis_url:
@@ -6798,6 +6843,10 @@ const chains: Chain[] = [
         {
           address: 'https://kujira-rpc.wildsage.io',
           provider: 'WildSage Labs'
+        },
+        {
+          address: 'https://rpc-kujira.nodeist.net',
+          provider: 'Nodeist'
         }
       ],
       grpc: [
@@ -6812,6 +6861,10 @@ const chains: Chain[] = [
         {
           address: 'kujira-grpc.polkachu.com:11890',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://grpc-kujira.nodeist.net',
+          provider: 'Nodeist'
         }
       ],
       rest: [
@@ -6842,6 +6895,10 @@ const chains: Chain[] = [
         {
           address: 'https://kujira-lcd.wildsage.io/',
           provider: 'WildSage Labs'
+        },
+        {
+          address: 'https://api-kujira.nodeist.net',
+          provider: 'Nodeist'
         }
       ]
     },
@@ -7178,6 +7235,7 @@ const chains: Chain[] = [
     chain_name: 'lumnetwork',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://lum.network/',
     pretty_name: 'Lum Network',
     chain_id: 'lum-network-1',
     bech32_prefix: 'lum',
@@ -7527,6 +7585,7 @@ const chains: Chain[] = [
     status: 'live',
     network_type: 'mainnet',
     pretty_name: 'Nomic',
+    website: 'https://nomic.io/',
     chain_id: 'nomic-stakenet-3',
     bech32_prefix: 'nomic',
     daemon_name: 'nomic',
@@ -7654,6 +7713,7 @@ const chains: Chain[] = [
     chain_name: 'odin',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://odinprotocol.io/',
     pretty_name: 'Odin Protocol',
     chain_id: 'odin-mainnet-freya',
     bech32_prefix: 'odin',
@@ -7845,6 +7905,7 @@ const chains: Chain[] = [
     chain_name: 'omniflixhub',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://omniflix.co/home',
     pretty_name: 'OmniFlix',
     chain_id: 'omniflixhub-1',
     daemon_name: 'omniflixhubd',
@@ -7958,6 +8019,7 @@ const chains: Chain[] = [
     chain_name: 'oraichain',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://orai.io/',
     pretty_name: 'Oraichain',
     chain_id: 'Oraichain',
     bech32_prefix: 'orai',
@@ -8101,6 +8163,7 @@ const chains: Chain[] = [
     chain_name: 'osmosis',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://osmosis.zone/',
     update_link:
       'https://raw.githubusercontent.com/osmosis-labs/osmosis/main/chain.schema.json',
     pretty_name: 'Osmosis',
@@ -8134,17 +8197,17 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/osmosis-labs/osmosis',
-      recommended_version: 'v11.0.0',
-      compatible_versions: ['v11.0.0'],
+      recommended_version: '11.0.0',
+      compatible_versions: ['11.0.0'],
       binaries: {
         'linux/amd64':
-          'https://github.com/osmosis-labs/osmosis/releases/download/v11.0.0/osmosisd-11.0.0-linux-amd64',
+          'https://github.com/osmosis-labs/osmosis/releases/download/v11.0.0/osmosisd-11.0.0-linux-amd64?checksum=sha256:d01423cf847b7f95a94ade8811bbf6dd9ec5938d46af0a14bc62caaaa7b7143e',
         'linux/arm64':
-          'https://github.com/osmosis-labs/osmosis/releases/download/v11.0.0/osmosisd-11.0.0-linux-arm64'
+          'https://github.com/osmosis-labs/osmosis/releases/download/v11.0.0/osmosisd-11.0.0-linux-arm64?checksum=sha256:375699e90e5b76fd3d7e7a9ab631b40badd97140136f361e6b3f06be3fbd863d'
       },
       cosmos_sdk_version: '0.45',
       tendermint_version: '0.34',
-      cosmwasm_version: '0.24',
+      cosmwasm_version: '0.27',
       cosmwasm_enabled: true,
       genesis: {
         name: 'v3.1.0',
@@ -8483,6 +8546,7 @@ const chains: Chain[] = [
     chain_name: 'panacea',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://medibloc.com/en/',
     pretty_name: 'Medibloc',
     chain_id: 'panacea-3',
     bech32_prefix: 'panacea',
@@ -8571,6 +8635,7 @@ const chains: Chain[] = [
     pretty_name: 'Passage',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://passage3d.com/',
     bech32_prefix: 'pasg',
     genesis: {
       genesis_url:
@@ -8761,6 +8826,7 @@ const chains: Chain[] = [
     pretty_name: 'Persistence',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://persistence.one/',
     bech32_prefix: 'persistence',
     genesis: {
       genesis_url:
@@ -8920,6 +8986,7 @@ const chains: Chain[] = [
     chain_name: 'provenance',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://provenance.io/',
     pretty_name: 'Provenance',
     chain_id: 'pio-mainnet-1',
     bech32_prefix: 'pb',
@@ -9041,6 +9108,7 @@ const chains: Chain[] = [
     chain_name: 'regen',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://www.regen.network/',
     pretty_name: 'Regen',
     chain_id: 'regen-1',
     bech32_prefix: 'regen',
@@ -9195,6 +9263,7 @@ const chains: Chain[] = [
     chain_name: 'rizon',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://rizon.world/',
     pretty_name: 'Rizon',
     chain_id: 'titan-1',
     bech32_prefix: 'rizon',
@@ -9297,6 +9366,7 @@ const chains: Chain[] = [
     chain_name: 'secretnetwork',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://scrt.network/',
     pretty_name: 'Secret Network',
     chain_id: 'secret-4',
     bech32_prefix: 'secret',
@@ -9444,6 +9514,7 @@ const chains: Chain[] = [
     chain_name: 'sentinel',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://sentinel.co/',
     pretty_name: 'Sentinel',
     chain_id: 'sentinelhub-2',
     bech32_prefix: 'sent',
@@ -9606,6 +9677,7 @@ const chains: Chain[] = [
     chain_name: 'shentu',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://www.shentu.technology/',
     pretty_name: 'Shentu',
     chain_id: 'shentu-2.2',
     bech32_prefix: 'certik',
@@ -9732,6 +9804,7 @@ const chains: Chain[] = [
     chain_name: 'sifchain',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://sifchain.finance/',
     pretty_name: 'Sifchain',
     chain_id: 'sifchain-1',
     bech32_prefix: 'sif',
@@ -9882,6 +9955,7 @@ const chains: Chain[] = [
     chain_name: 'sommelier',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://sommelier.finance/',
     pretty_name: 'Sommelier',
     chain_id: 'sommelier-3',
     bech32_prefix: 'somm',
@@ -10027,6 +10101,7 @@ const chains: Chain[] = [
     chain_name: 'stargaze',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://stargaze.zone/',
     pretty_name: 'Stargaze',
     chain_id: 'stargaze-1',
     bech32_prefix: 'stars',
@@ -10264,6 +10339,7 @@ const chains: Chain[] = [
     chain_name: 'starname',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://www.starname.me/',
     pretty_name: 'Starname',
     chain_id: 'iov-mainnet-ibc',
     bech32_prefix: 'star',
@@ -10368,6 +10444,7 @@ const chains: Chain[] = [
     chain_name: 'stride',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://stride.zone/',
     pretty_name: 'Stride',
     chain_id: 'stride-1',
     bech32_prefix: 'stride',
@@ -10651,6 +10728,7 @@ const chains: Chain[] = [
     chain_name: 'terra2',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://www.terra.money/',
     pretty_name: 'Terra 2.0',
     chain_id: 'phoenix-1',
     daemon_name: 'terrad',
@@ -11929,6 +12007,7 @@ const chains: Chain[] = [
     chain_name: 'tgrade',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://tgrade.finance/',
     pretty_name: 'Tgrade',
     chain_id: 'tgrade-mainnet-1',
     bech32_prefix: 'tgrade',
@@ -12027,6 +12106,7 @@ const chains: Chain[] = [
     chain_name: 'thorchain',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://thorchain.org/',
     pretty_name: 'THORChain',
     chain_id: 'thorchain-mainnet-v1',
     bech32_prefix: 'thor',
@@ -12259,6 +12339,7 @@ const chains: Chain[] = [
     chain_name: 'umee',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://www.umee.cc/',
     pretty_name: 'Umee',
     chain_id: 'umee-1',
     bech32_prefix: 'umee',
@@ -12452,6 +12533,7 @@ const chains: Chain[] = [
     chain_name: 'vidulum',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://vidulum.app/',
     pretty_name: 'Vidulum',
     chain_id: 'vidulum-1',
     bech32_prefix: 'vdl',

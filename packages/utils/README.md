@@ -18,9 +18,9 @@ Utility functions for the chain-registry
 ## Usage
 
 ```js
-import { ChainRegistry, ChainRegistryOptions } from '@chain-registry/utils';
+import { ChainRegistryFetcher, ChainRegistryFetcherOptions } from '@chain-registry/utils';
 
-const options: ChainRegistryOptions = {
+const options: ChainRegistryFetcherOptions = {
   urls: [
     'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/chain.json',
     'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/assetlist.json',
@@ -71,7 +71,7 @@ You can get generated `AssetList[]` objects directly from the `ChainRegistry` vi
 ```js
 // you can also get generated assets from ChainInfo object
 const chainInfo: Chain = registry.getChainInfo('osmosis');
-const generatedAssets: AssetList[] = chainInfo.assetLists();
+const generatedAssets: AssetList[] = chainInfo.assetLists;
 ```
 ## Chain info
 
@@ -88,13 +88,13 @@ or get the `ChainInfo` object:
 const chainInfo: ChainInfo = registry.getChainInfo('osmosis');
 
 // AssetList[] of the generated assets
-const assetes: AssetList[] = chainInfo.assetLists();
+const assetes: AssetList[] = chainInfo.assetLists;
 
 // Chain 
-const chain: Chain = chainInfo.chain();
+const chain: Chain = chainInfo.chain;
 
 // AssetList[] of the native assets
-const assetes: AssetList[] = chainInfo.nativeAssetLists();
+const assetes: AssetList[] = chainInfo.nativeAssetLists;
 ```
 
 ## Credits

@@ -1,39 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getAssetLists 1`] = `
-Array [
-  Object {
-    "assets": Array [
-      Object {
+[
+  {
+    "assets": [
+      {
         "base": "ibc/799FDD409719A1122586A629AE8FCA17380351A51C1F47A80A1B8E7F2A491098",
         "coingecko_id": "akash-network",
-        "denom_units": Array [
-          Object {
-            "aliases": Array [
+        "denom_units": [
+          {
+            "aliases": [
               "uakt",
             ],
             "denom": "ibc/799FDD409719A1122586A629AE8FCA17380351A51C1F47A80A1B8E7F2A491098",
             "exponent": 0,
           },
-          Object {
+          {
             "denom": "akt",
             "exponent": 6,
           },
         ],
         "description": "Akash Token (AKT) is the Akash Network's native utility token, used as the primary means to govern, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
         "display": "akt",
-        "logo_URIs": Object {
+        "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg",
         },
         "name": "Akash Network",
         "symbol": "AKT",
-        "traces": Array [
-          Object {
-            "chain": Object {
+        "traces": [
+          {
+            "chain": {
               "channel": "channel-5",
             },
-            "counterparty": Object {
+            "counterparty": {
               "chain_name": "akash",
               "channel": "channel-6",
               "denom": "uakt",
@@ -42,36 +42,36 @@ Array [
           },
         ],
       },
-      Object {
+      {
         "base": "ibc/C8A74ABBE2AF892E15680D916A7C22130585CE5704F9B17A10F184A90D53BECA",
         "coingecko_id": "cosmos",
-        "denom_units": Array [
-          Object {
-            "aliases": Array [
+        "denom_units": [
+          {
+            "aliases": [
               "uatom",
             ],
             "denom": "ibc/C8A74ABBE2AF892E15680D916A7C22130585CE5704F9B17A10F184A90D53BECA",
             "exponent": 0,
           },
-          Object {
+          {
             "denom": "atom",
             "exponent": 6,
           },
         ],
         "description": "The native staking and governance token of the Cosmos Hub.",
         "display": "atom",
-        "logo_URIs": Object {
+        "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg",
         },
         "name": "Cosmos",
         "symbol": "ATOM",
-        "traces": Array [
-          Object {
-            "chain": Object {
+        "traces": [
+          {
+            "chain": {
               "channel": "channel-24",
             },
-            "counterparty": Object {
+            "counterparty": {
               "chain_name": "cosmoshub",
               "channel": "channel-190",
               "denom": "uatom",
@@ -80,35 +80,35 @@ Array [
           },
         ],
       },
-      Object {
+      {
         "base": "ibc/F53B622B0117ECCD0908C1F33ED71B846D9B0C888BE8A16C58098C0AB9497B0A",
         "coingecko_id": "crypto-com-chain",
-        "denom_units": Array [
-          Object {
-            "aliases": Array [
+        "denom_units": [
+          {
+            "aliases": [
               "basecro",
             ],
             "denom": "ibc/F53B622B0117ECCD0908C1F33ED71B846D9B0C888BE8A16C58098C0AB9497B0A",
             "exponent": 0,
           },
-          Object {
+          {
             "denom": "cro",
             "exponent": 8,
           },
         ],
         "description": "CRO coin is the token for the Crypto.com platform.",
         "display": "cro",
-        "logo_URIs": Object {
+        "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png",
         },
         "name": "Cronos",
         "symbol": "CRO",
-        "traces": Array [
-          Object {
-            "chain": Object {
+        "traces": [
+          {
+            "chain": {
               "channel": "channel-11",
             },
-            "counterparty": Object {
+            "counterparty": {
               "chain_name": "cryptoorgchain",
               "channel": "channel-17",
               "denom": "basecro",
@@ -117,36 +117,36 @@ Array [
           },
         ],
       },
-      Object {
+      {
         "base": "ibc/5709B8339F05C7E37D27FCFEC18CEDBB0747309144C8B3C4A49C122F0F30B96B",
         "coingecko_id": "iris-network",
-        "denom_units": Array [
-          Object {
-            "aliases": Array [
+        "denom_units": [
+          {
+            "aliases": [
               "uiris",
             ],
             "denom": "ibc/5709B8339F05C7E37D27FCFEC18CEDBB0747309144C8B3C4A49C122F0F30B96B",
             "exponent": 0,
           },
-          Object {
+          {
             "denom": "iris",
             "exponent": 6,
           },
         ],
         "description": "The IRIS token is the native governance token for the IrisNet chain.",
         "display": "iris",
-        "logo_URIs": Object {
+        "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg",
         },
         "name": "IRISnet",
         "symbol": "IRIS",
-        "traces": Array [
-          Object {
-            "chain": Object {
+        "traces": [
+          {
+            "chain": {
               "channel": "channel-19",
             },
-            "counterparty": Object {
+            "counterparty": {
               "chain_name": "irisnet",
               "channel": "channel-15",
               "denom": "uiris",
@@ -155,36 +155,36 @@ Array [
           },
         ],
       },
-      Object {
+      {
         "base": "ibc/CA687302422C075B26948BEC7143F6D47BACAB53421D57DF30741F91D4DFCA1F",
         "coingecko_id": "juno-network",
-        "denom_units": Array [
-          Object {
-            "aliases": Array [
+        "denom_units": [
+          {
+            "aliases": [
               "ujuno",
             ],
             "denom": "ibc/CA687302422C075B26948BEC7143F6D47BACAB53421D57DF30741F91D4DFCA1F",
             "exponent": 0,
           },
-          Object {
+          {
             "denom": "juno",
             "exponent": 6,
           },
         ],
         "description": "The native token of JUNO Chain",
         "display": "juno",
-        "logo_URIs": Object {
+        "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg",
         },
         "name": "Juno",
         "symbol": "JUNO",
-        "traces": Array [
-          Object {
-            "chain": Object {
+        "traces": [
+          {
+            "chain": {
               "channel": "channel-37",
             },
-            "counterparty": Object {
+            "counterparty": {
               "chain_name": "juno",
               "channel": "channel-33",
               "denom": "ujuno",
@@ -193,41 +193,41 @@ Array [
           },
         ],
       },
-      Object {
+      {
         "base": "ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85",
         "coingecko_id": "osmosis",
-        "denom_units": Array [
-          Object {
-            "aliases": Array [
+        "denom_units": [
+          {
+            "aliases": [
               "uosmo",
             ],
             "denom": "ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85",
             "exponent": 0,
           },
-          Object {
-            "aliases": Array [],
+          {
+            "aliases": [],
             "denom": "osmo",
             "exponent": 6,
           },
         ],
         "description": "The native token of Osmosis",
         "display": "osmo",
-        "keywords": Array [
+        "keywords": [
           "dex",
           "staking",
         ],
-        "logo_URIs": Object {
+        "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg",
         },
         "name": "Osmosis",
         "symbol": "OSMO",
-        "traces": Array [
-          Object {
-            "chain": Object {
+        "traces": [
+          {
+            "chain": {
               "channel": "channel-6",
             },
-            "counterparty": Object {
+            "counterparty": {
               "chain_name": "osmosis",
               "channel": "channel-4",
               "denom": "uosmo",
@@ -236,38 +236,38 @@ Array [
           },
         ],
       },
-      Object {
+      {
         "base": "ibc/69B4810E989B56FC6CA41F395228236FA7E7F59B9A3B7AF3FB0A344361C38389",
         "coingecko_id": "ion",
-        "denom_units": Array [
-          Object {
-            "aliases": Array [
+        "denom_units": [
+          {
+            "aliases": [
               "uion",
             ],
             "denom": "ibc/69B4810E989B56FC6CA41F395228236FA7E7F59B9A3B7AF3FB0A344361C38389",
             "exponent": 0,
           },
-          Object {
+          {
             "denom": "ion",
             "exponent": 6,
           },
         ],
         "display": "ion",
-        "keywords": Array [
+        "keywords": [
           "memecoin",
         ],
-        "logo_URIs": Object {
+        "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg",
         },
         "name": "Ion",
         "symbol": "ION",
-        "traces": Array [
-          Object {
-            "chain": Object {
+        "traces": [
+          {
+            "chain": {
               "channel": "channel-6",
             },
-            "counterparty": Object {
+            "counterparty": {
               "chain_name": "osmosis",
               "channel": "channel-4",
               "denom": "uion",
@@ -276,35 +276,35 @@ Array [
           },
         ],
       },
-      Object {
+      {
         "base": "ibc/7D053E5CF515235C2C8A923840D6D5352F19B08722B774355AC97C596C729D5C",
         "coingecko_id": "regen",
-        "denom_units": Array [
-          Object {
-            "aliases": Array [
+        "denom_units": [
+          {
+            "aliases": [
               "uregen",
             ],
             "denom": "ibc/7D053E5CF515235C2C8A923840D6D5352F19B08722B774355AC97C596C729D5C",
             "exponent": 0,
           },
-          Object {
+          {
             "denom": "regen",
             "exponent": 6,
           },
         ],
         "description": "REGEN coin is the token for the Regen Network Platform",
         "display": "regen",
-        "logo_URIs": Object {
+        "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png",
         },
         "name": "Regen Network",
         "symbol": "REGEN",
-        "traces": Array [
-          Object {
-            "chain": Object {
+        "traces": [
+          {
+            "chain": {
               "channel": "channel-21",
             },
-            "counterparty": Object {
+            "counterparty": {
               "chain_name": "regen",
               "channel": "channel-14",
               "denom": "uregen",
@@ -313,35 +313,35 @@ Array [
           },
         ],
       },
-      Object {
+      {
         "base": "ibc/4F03563F9E504B0C147FD395DBCF0A41A45E9A1134DFEC83A94B5E11D43EAA04",
         "coingecko_id": "sentinel",
-        "denom_units": Array [
-          Object {
-            "aliases": Array [
+        "denom_units": [
+          {
+            "aliases": [
               "udvpn",
             ],
             "denom": "ibc/4F03563F9E504B0C147FD395DBCF0A41A45E9A1134DFEC83A94B5E11D43EAA04",
             "exponent": 0,
           },
-          Object {
+          {
             "denom": "dvpn",
             "exponent": 6,
           },
         ],
         "description": "DVPN is the native token of the Sentinel Hub.",
         "display": "dvpn",
-        "logo_URIs": Object {
+        "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png",
         },
         "name": "Sentinel",
         "symbol": "DVPN",
-        "traces": Array [
-          Object {
-            "chain": Object {
+        "traces": [
+          {
+            "chain": {
               "channel": "channel-22",
             },
-            "counterparty": Object {
+            "counterparty": {
               "chain_name": "sentinel",
               "channel": "channel-15",
               "denom": "udvpn",
@@ -350,12 +350,12 @@ Array [
           },
         ],
       },
-      Object {
+      {
         "base": "ibc/BA51309DEEE69EF9159FADDCD9F566C372157A1F4E559076D201B255C27F484A",
         "coingecko_id": "sifchain",
-        "denom_units": Array [
-          Object {
-            "aliases": Array [
+        "denom_units": [
+          {
+            "aliases": [
               "rowan",
             ],
             "denom": "ibc/BA51309DEEE69EF9159FADDCD9F566C372157A1F4E559076D201B255C27F484A",
@@ -364,18 +364,18 @@ Array [
         ],
         "description": "Rowan Token (ROWAN) is the Sifchain Network's native utility token, used as the primary means to govern, provide liquidity, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
         "display": "rowan",
-        "logo_URIs": Object {
+        "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg",
         },
         "name": "Sifchain Rowan",
         "symbol": "ROWAN",
-        "traces": Array [
-          Object {
-            "chain": Object {
+        "traces": [
+          {
+            "chain": {
               "channel": "channel-26",
             },
-            "counterparty": Object {
+            "counterparty": {
               "chain_name": "sifchain",
               "channel": "channel-7",
               "denom": "rowan",
@@ -384,36 +384,36 @@ Array [
           },
         ],
       },
-      Object {
+      {
         "base": "ibc/43F1FDAC4E552DD8194B3FFD35EE16957BC39AFF5CA57545DB71161FA66E7DC0",
         "coingecko_id": "starname",
-        "denom_units": Array [
-          Object {
-            "aliases": Array [
+        "denom_units": [
+          {
+            "aliases": [
               "uiov",
             ],
             "denom": "ibc/43F1FDAC4E552DD8194B3FFD35EE16957BC39AFF5CA57545DB71161FA66E7DC0",
             "exponent": 0,
           },
-          Object {
+          {
             "denom": "iov",
             "exponent": 6,
           },
         ],
         "description": "IOV coin is the token for the Starname (IOV) Asset Name Service",
         "display": "iov",
-        "logo_URIs": Object {
+        "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.svg",
         },
         "name": "Starname",
         "symbol": "IOV",
-        "traces": Array [
-          Object {
-            "chain": Object {
+        "traces": [
+          {
+            "chain": {
               "channel": "channel-27",
             },
-            "counterparty": Object {
+            "counterparty": {
               "chain_name": "starname",
               "channel": "channel-13",
               "denom": "uiov",
