@@ -1,5 +1,5 @@
 import { AssetList, Chain, ChainRegistry, IBCInfo } from '@chain-registry/types';
-export interface ChainRegistryOptions {
+export interface ChainRegistryFetcherOptions {
     assetLists?: AssetList[];
     chains?: Chain[];
     ibcData?: IBCInfo[];
@@ -7,11 +7,11 @@ export interface ChainRegistryOptions {
 }
 export interface ChainInfoOptions {
     chain_name: string;
-    registry: ChainRegistry;
+    fetcher: ChainRegistryFetcher;
 }
 export declare class ChainInfo {
     chain_name: string;
-    registry: ChainRegistry;
+    fetcher: ChainRegistryFetcher;
     protected _asset_list: AssetList;
     protected _asset_lists: AssetList[];
     protected _chain: Chain;
@@ -27,7 +27,7 @@ export declare class ChainRegistryFetcher implements ChainRegistry {
     protected _chains: Chain[];
     protected _ibc_data: IBCInfo[];
     urls: string[];
-    constructor(options?: ChainRegistryOptions);
+    constructor(options?: ChainRegistryFetcherOptions);
     get assetLists(): AssetList[];
     getChainAssetList(chainName: string): AssetList;
     getGeneratedAssetLists(chainName: string): AssetList[];
