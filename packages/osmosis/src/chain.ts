@@ -4,6 +4,7 @@ const chain: Chain = {
   chain_name: 'osmosis',
   status: 'live',
   network_type: 'mainnet',
+  website: 'https://osmosis.zone/',
   update_link:
     'https://raw.githubusercontent.com/osmosis-labs/osmosis/main/chain.schema.json',
   pretty_name: 'Osmosis',
@@ -37,17 +38,17 @@ const chain: Chain = {
   },
   codebase: {
     git_repo: 'https://github.com/osmosis-labs/osmosis',
-    recommended_version: 'v11.0.0',
-    compatible_versions: ['v11.0.0'],
+    recommended_version: '11.0.0',
+    compatible_versions: ['11.0.0'],
     binaries: {
       'linux/amd64':
-        'https://github.com/osmosis-labs/osmosis/releases/download/v11.0.0/osmosisd-11.0.0-linux-amd64',
+        'https://github.com/osmosis-labs/osmosis/releases/download/v11.0.0/osmosisd-11.0.0-linux-amd64?checksum=sha256:d01423cf847b7f95a94ade8811bbf6dd9ec5938d46af0a14bc62caaaa7b7143e',
       'linux/arm64':
-        'https://github.com/osmosis-labs/osmosis/releases/download/v11.0.0/osmosisd-11.0.0-linux-arm64'
+        'https://github.com/osmosis-labs/osmosis/releases/download/v11.0.0/osmosisd-11.0.0-linux-arm64?checksum=sha256:375699e90e5b76fd3d7e7a9ab631b40badd97140136f361e6b3f06be3fbd863d'
     },
     cosmos_sdk_version: '0.45',
     tendermint_version: '0.34',
-    cosmwasm_version: '0.24',
+    cosmwasm_version: '0.27',
     cosmwasm_enabled: true,
     genesis: {
       name: 'v3.1.0',

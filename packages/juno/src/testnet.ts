@@ -72,7 +72,12 @@ const testnet: Chain = {
         provider: 'Juno'
       }
     ],
-    grpc: []
+    grpc: [
+      {
+        address: 'juno-testnet-grpc.polkachu.com:12690',
+        provider: 'Polkachu'
+      }
+    ]
   },
   explorers: [
     {

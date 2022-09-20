@@ -278,8 +278,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'synthetic',
-            asset: {
-              platform: 'forex',
+            counterparty: {
+              chain_name: 'forex',
               base_denom: 'USD'
             },
             provider: 'MakerDAO'
@@ -313,8 +313,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'synthetic',
-            asset: {
-              platform: 'forex',
+            counterparty: {
+              chain_name: 'forex',
               base_denom: 'USD'
             },
             provider: 'Frax Protocol'
@@ -399,8 +399,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'synthetic',
-            asset: {
-              platform: 'forex',
+            counterparty: {
+              chain_name: 'forex',
               base_denom: 'USD'
             },
             provider: 'RAI Finance'
@@ -459,8 +459,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'liquid-stake',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: 'wei'
             },
             provider: 'Lido'
@@ -519,8 +519,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'synthetic',
-            asset: {
-              platform: 'forex',
+            counterparty: {
+              chain_name: 'forex',
               base_denom: 'USD'
             },
             provider: 'Circle'
@@ -554,8 +554,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'synthetic',
-            asset: {
-              platform: 'forex',
+            counterparty: {
+              chain_name: 'forex',
               base_denom: 'USD'
             },
             provider: 'Tether'
@@ -589,8 +589,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'bitcoin',
+            counterparty: {
+              chain_name: 'bitcoin',
               base_denom: 'sat'
             },
             provider: 'BitGo, Kyber, and Ren'
@@ -623,11 +623,12 @@ const assets: AssetList[] = [
         symbol: 'WETH',
         traces: [
           {
-            type: 'wrapping',
-            asset: {
-              platform: 'ethereum',
+            type: 'wrapped',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: 'wei'
-            }
+            },
+            provider: 'Ethereum'
           }
         ],
         logo_URIs: {
@@ -712,11 +713,12 @@ const assets: AssetList[] = [
         symbol: 'WGLMR',
         traces: [
           {
-            type: 'wrapping',
-            asset: {
-              platform: 'moonbeam',
+            type: 'wrapped',
+            counterparty: {
+              chain_name: 'moonbeam',
               base_denom: 'Wei'
-            }
+            },
+            provider: 'Moonbeam'
           }
         ],
         logo_URIs: {
@@ -747,8 +749,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'polkadot',
+            counterparty: {
+              chain_name: 'polkadot',
               base_denom: 'Planck'
             },
             provider: 'Polkadot Parachain'
@@ -781,8 +783,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'axelar',
+            counterparty: {
+              chain_name: 'axelar',
               base_denom: 'dai-wei'
             },
             provider: 'Axelar'
@@ -815,8 +817,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'axelar',
+            counterparty: {
+              chain_name: 'axelar',
               base_denom: 'frax-wei'
             },
             provider: 'Axelar'
@@ -849,8 +851,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'axelar',
+            counterparty: {
+              chain_name: 'axelar',
               base_denom: 'uusdc'
             },
             provider: 'Axelar'
@@ -883,8 +885,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'axelar',
+            counterparty: {
+              chain_name: 'axelar',
               base_denom: 'uusdt'
             },
             provider: 'Axelar'
@@ -1306,8 +1308,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
             },
             provider: 'Axelar'
@@ -1338,8 +1340,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: '0x853d955acef822db058eb8505911ed77f175b99e'
             },
             provider: 'Axelar'
@@ -1370,8 +1372,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: '0x6b175474e89094c44da98b954eedeac495271d0f'
             },
             provider: 'Axelar'
@@ -1402,8 +1404,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: '0xdac17f958d2ee523a2206206994597c13d831ec7'
             },
             provider: 'Axelar'
@@ -1434,8 +1436,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
             },
             provider: 'Axelar'
@@ -1465,8 +1467,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: '0x2260fac5e5542a773aa44fbcfedf7c193bc2c599'
             },
             provider: 'Axelar'
@@ -1496,8 +1498,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: '0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9'
             },
             provider: 'Axelar'
@@ -1527,8 +1529,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: '0x4d224452801aced8b2f0aebe155379bb5d594381'
             },
             provider: 'Axelar'
@@ -1558,8 +1560,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: '0xbb0e17ef65f82ab018d8edd776e8dd940327b28b'
             },
             provider: 'Axelar'
@@ -1589,8 +1591,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: '0x514910771af9ca656af840dff83e8264ecf986ca'
             },
             provider: 'Axelar'
@@ -1621,8 +1623,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2'
             },
             provider: 'Axelar'
@@ -1652,8 +1654,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: '0x03ab458634910aad20ef5f1c8ee96f1d6ac54919'
             },
             provider: 'Axelar'
@@ -1683,8 +1685,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: '0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce'
             },
             provider: 'Axelar'
@@ -1714,8 +1716,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: '0xae7ab96520de3a18e5e111b5eaab095312d7fe84'
             },
             provider: 'Axelar'
@@ -1745,8 +1747,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: '0x1f9840a85d5af5bf1d1762f925bdaddc4201f984'
             },
             provider: 'Axelar'
@@ -1776,8 +1778,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: '0xa2cd3d43c775978a96bdbf12d733d5a1ed94fb18'
             },
             provider: 'Axelar'
@@ -1807,8 +1809,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'moonbeam',
+            counterparty: {
+              chain_name: 'moonbeam',
               base_denom: '0xffffffff1fcacbd218edc0eba20fc2308c778080'
             },
             provider: 'Axelar'
@@ -1839,8 +1841,8 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            asset: {
-              platform: 'moonbeam',
+            counterparty: {
+              chain_name: 'moonbeam',
               base_denom: '0xacc15dc74880c9944775448304b263d191c6077f'
             },
             provider: 'Axelar'
@@ -1871,11 +1873,11 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'bridge',
-            provider: 'Axelar',
-            asset: {
-              platform: 'polygon',
+            counterparty: {
+              chain_name: 'polygon',
               base_denom: '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270'
-            }
+            },
+            provider: 'Axelar'
           }
         ],
         logo_URIs: {
@@ -4512,34 +4514,33 @@ const assets: AssetList[] = [
         traces: [
           {
             type: 'liquid-stake',
-            asset: {
-              platform: 'persistence',
+            counterparty: {
+              chain_name: 'persistence',
               base_denom: 'XPRT'
             },
             provider: 'Persistence'
           },
           {
             type: 'bridge',
-            asset: {
-              platform: 'ethereum',
+            counterparty: {
+              chain_name: 'ethereum',
               base_denom: '0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
             },
             provider: 'Gravity Bridge'
           },
           {
             type: 'ibc',
-            asset: {
-              platform: 'gravitybridge',
-              base_denom: 'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
+            counterparty: {
+              chain_name: 'gravitybridge',
+              base_denom: 'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006',
+              channel_id: 'channel-24'
             },
-            path: 'transfer/channel-38/gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
+            chain: {
+              channel_id: 'channel-38',
+              path: 'transfer/channel-38/gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
+            }
           }
         ],
-        ibc: {
-          source_channel: 'channel-24',
-          dst_channel: 'channel-38',
-          source_denom: 'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
-        },
         logo_URIs: {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg'

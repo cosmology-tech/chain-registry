@@ -102,20 +102,7 @@ export const getIbcDenomByBase = (
     //   console.warn('missing referrenced asset');
     // }
 
-    // TODO transition later!
     const traces = [];
-    if (assetInfo.ibc) {
-      // traces.push({
-      //   type: 'ibc',
-      //   counterparty: {
-      //     denom: assetInfo.ibc.source_denom,
-      //     channel: assetInfo.ibc.source_channel
-      //   },
-      //   chain: {
-      //     channel: assetInfo.ibc.dst_channel
-      //   }
-      // });
-    }
     if (assetInfo.traces && assetInfo.traces.length) {
       [].push.apply(traces, assetInfo.traces);
     }
@@ -274,15 +261,15 @@ export const getIbcAssets = (
             type: 'ibc',
             counterparty: {
               // source_channel
-              channel: v.counterparty.channel_id,
+              channel_id: v.counterparty.channel_id,
               // source_denom
-              denom: asset.denom_units[0].aliases[0],
+              base_denom: asset.denom_units[0].aliases[0],
               chain_name: v.counterparty.chain_name
               // port: v.counterparty.port_id
             },
             chain: {
               // dst_denom
-              channel: v.chain.channel_id
+              channel_id: v.chain.channel_id
               // chain_name: v.chain.chain_name,
               // port: v.chain.port_id
             }
@@ -407,15 +394,15 @@ export const getCw20Assets = (
             counterparty: {
               port: v.counterparty.port_id,
               // source_channel
-              channel: v.counterparty.channel_id,
+              channel_id: v.counterparty.channel_id,
               // source_denom
-              denom: asset.denom_units[0].aliases[0],
+              base_denom: asset.denom_units[0].aliases[0],
               chain_name: v.counterparty.chain_name
             },
             chain: {
               // dst_denom
               port: v.chain.port_id,
-              channel: v.chain.channel_id
+              channel_id: v.chain.channel_id
               // chain_name: v.chain.chain_name,
             }
           }

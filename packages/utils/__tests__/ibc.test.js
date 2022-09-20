@@ -40,10 +40,14 @@ it('PSTAKE on osmosis', () => {
   const denom = ibcDenom(
     [
       {
+        // THIS IS THE CHANNEL TO PERSISTENCE
+        // ON OSMOSIS
         channelId: 'channel-4',
         portId: 'transfer'
       },
       {
+        // THIS IS THE CHANNEL TO GRAVITYBRIDGE
+        // ON PERSISTENCE
         channelId: 'channel-38',
         portId: 'transfer'
       }

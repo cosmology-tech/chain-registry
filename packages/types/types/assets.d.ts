@@ -5,32 +5,32 @@ export interface AssetDenomUnit {
 }
 export interface LiquidStakeTrace {
     type: 'liquid-stake';
-    asset: {
-        platform?: string;
+    counterparty: {
+        chain_name: string;
         base_denom: string;
     };
     provider: string;
 }
 export interface SyntheicTrace {
     type: 'synthetic';
-    asset: {
-        platform?: string;
+    counterparty: {
+        chain_name: string;
         base_denom: string;
     };
     provider: string;
 }
 export interface BridgeTrace {
     type: 'bridge';
-    asset: {
-        platform?: string;
+    counterparty: {
+        chain_name: string;
         base_denom: string;
     };
     provider: string;
 }
 export interface WrapTrace {
-    type: 'wrapping';
-    asset: {
-        platform?: string;
+    type: 'wrapped';
+    counterparty: {
+        chain_name: string;
         base_denom: string;
     };
     provider: string;
@@ -39,29 +39,30 @@ export interface IBCTrace {
     type: 'ibc';
     counterparty: {
         port?: string;
-        channel: string;
-        denom: string;
+        channel_id: string;
+        base_denom: string;
         chain_name: string;
     };
     chain: {
         port?: string;
-        channel: string;
+        channel_id: string;
+        path?: string;
     };
 }
 export interface IBCCw20Trace {
     type: 'ibc-cw20';
     counterparty: {
         port: string;
-        channel: string;
-        denom: string;
+        channel_id: string;
+        base_denom: string;
         chain_name: string;
     };
     chain: {
         port: string;
-        channel: string;
+        channel_id: string;
     };
 }
-export declare type AssetTrace = IBCCw20Trace | IBCTrace | SyntheicTrace | LiquidStakeTrace | BridgeTrace;
+export declare type AssetTrace = IBCCw20Trace | IBCTrace | SyntheicTrace | LiquidStakeTrace | WrapTrace | BridgeTrace;
 export interface Asset {
     description?: string;
     type_asset?: string;

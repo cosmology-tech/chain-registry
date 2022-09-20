@@ -31,12 +31,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-1",
+              "channel_id": "channel-1",
             },
             "counterparty": {
+              "base_denom": "uakt",
               "chain_name": "akash",
-              "channel": "channel-9",
-              "denom": "uakt",
+              "channel_id": "channel-9",
             },
             "type": "ibc",
           },
@@ -68,12 +68,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-232",
+              "channel_id": "channel-232",
             },
             "counterparty": {
+              "base_denom": "umntl",
               "chain_name": "assetmantle",
-              "channel": "channel-0",
-              "denom": "umntl",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -106,12 +106,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "uaxl",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "uaxl",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -144,12 +144,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "uusdc",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "uusdc",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -182,12 +182,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "frax-wei",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "frax-wei",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -220,12 +220,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "dai-wei",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "dai-wei",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -258,12 +258,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "uusdt",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "uusdt",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -295,12 +295,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "weth-wei",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "weth-wei",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -332,12 +332,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "wbtc-satoshi",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "wbtc-satoshi",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -369,12 +369,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "aave-wei",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "aave-wei",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -406,12 +406,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "ape-wei",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "ape-wei",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -444,12 +444,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "axs-wei",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "axs-wei",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -483,12 +483,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "link-wei",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "link-wei",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -520,12 +520,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "mkr-wei",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "mkr-wei",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -557,12 +557,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "rai-wei",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "rai-wei",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -594,12 +594,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "shib-wei",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "shib-wei",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -631,12 +631,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "steth-wei",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "steth-wei",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -668,12 +668,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "uni-wei",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "uni-wei",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -705,12 +705,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "xcn-wei",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "xcn-wei",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -743,12 +743,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "dot-planck",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "dot-planck",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -781,12 +781,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-208",
+              "channel_id": "channel-208",
             },
             "counterparty": {
+              "base_denom": "wglmr-wei",
               "chain_name": "axelar",
-              "channel": "channel-3",
-              "denom": "wglmr-wei",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -819,12 +819,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-148",
+              "channel_id": "channel-148",
             },
             "counterparty": {
+              "base_denom": "uband",
               "chain_name": "bandchain",
-              "channel": "channel-83",
-              "denom": "uband",
+              "channel_id": "channel-83",
             },
             "type": "ibc",
           },
@@ -857,12 +857,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-51",
+              "channel_id": "channel-51",
             },
             "counterparty": {
+              "base_denom": "ubcna",
               "chain_name": "bitcanna",
-              "channel": "channel-1",
-              "denom": "ubcna",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -895,12 +895,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-73",
+              "channel_id": "channel-73",
             },
             "counterparty": {
+              "base_denom": "ubtsg",
               "chain_name": "bitsong",
-              "channel": "channel-0",
-              "denom": "ubtsg",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -932,12 +932,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-73",
+              "channel_id": "channel-73",
             },
             "counterparty": {
+              "base_denom": "ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09",
               "chain_name": "bitsong",
-              "channel": "channel-0",
-              "denom": "ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -968,12 +968,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-73",
+              "channel_id": "channel-73",
             },
             "counterparty": {
+              "base_denom": "ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7",
               "chain_name": "bitsong",
-              "channel": "channel-0",
-              "denom": "ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -1004,12 +1004,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-73",
+              "channel_id": "channel-73",
             },
             "counterparty": {
+              "base_denom": "ft575B10B0CEE2C164D9ED6A96313496F164A9607C",
               "chain_name": "bitsong",
-              "channel": "channel-0",
-              "denom": "ft575B10B0CEE2C164D9ED6A96313496F164A9607C",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -1040,12 +1040,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-73",
+              "channel_id": "channel-73",
             },
             "counterparty": {
+              "base_denom": "ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305",
               "chain_name": "bitsong",
-              "channel": "channel-0",
-              "denom": "ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -1076,12 +1076,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-73",
+              "channel_id": "channel-73",
             },
             "counterparty": {
+              "base_denom": "ft52EEB0EE509AC546ED92EAC8591F731F213DDD16",
               "chain_name": "bitsong",
-              "channel": "channel-0",
-              "denom": "ft52EEB0EE509AC546ED92EAC8591F731F213DDD16",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -1112,12 +1112,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-73",
+              "channel_id": "channel-73",
             },
             "counterparty": {
+              "base_denom": "ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A",
               "chain_name": "bitsong",
-              "channel": "channel-0",
-              "denom": "ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -1148,12 +1148,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-73",
+              "channel_id": "channel-73",
             },
             "counterparty": {
+              "base_denom": "ft85AE1716C5E39EA6D64BBD7898C3899A7B500626",
               "chain_name": "bitsong",
-              "channel": "channel-0",
-              "denom": "ft85AE1716C5E39EA6D64BBD7898C3899A7B500626",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -1184,12 +1184,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-73",
+              "channel_id": "channel-73",
             },
             "counterparty": {
+              "base_denom": "ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A",
               "chain_name": "bitsong",
-              "channel": "channel-0",
-              "denom": "ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -1220,12 +1220,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-73",
+              "channel_id": "channel-73",
             },
             "counterparty": {
+              "base_denom": "ft387C1C279D962ED80C09C1D592A92C4275FD7C5D",
               "chain_name": "bitsong",
-              "channel": "channel-0",
-              "denom": "ft387C1C279D962ED80C09C1D592A92C4275FD7C5D",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -1256,12 +1256,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-73",
+              "channel_id": "channel-73",
             },
             "counterparty": {
+              "base_denom": "ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB",
               "chain_name": "bitsong",
-              "channel": "channel-0",
-              "denom": "ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -1292,12 +1292,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-73",
+              "channel_id": "channel-73",
             },
             "counterparty": {
+              "base_denom": "ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B",
               "chain_name": "bitsong",
-              "channel": "channel-0",
-              "denom": "ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -1328,12 +1328,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-73",
+              "channel_id": "channel-73",
             },
             "counterparty": {
+              "base_denom": "ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE",
               "chain_name": "bitsong",
-              "channel": "channel-0",
-              "denom": "ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -1364,12 +1364,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-73",
+              "channel_id": "channel-73",
             },
             "counterparty": {
+              "base_denom": "ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12",
               "chain_name": "bitsong",
-              "channel": "channel-0",
-              "denom": "ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -1400,12 +1400,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-73",
+              "channel_id": "channel-73",
             },
             "counterparty": {
+              "base_denom": "ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3",
               "chain_name": "bitsong",
-              "channel": "channel-0",
-              "denom": "ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -1433,12 +1433,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-95",
+              "channel_id": "channel-95",
             },
             "counterparty": {
+              "base_denom": "boot",
               "chain_name": "bostrom",
-              "channel": "channel-2",
-              "denom": "boot",
+              "channel_id": "channel-2",
             },
             "type": "ibc",
           },
@@ -1474,12 +1474,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-188",
+              "channel_id": "channel-188",
             },
             "counterparty": {
+              "base_denom": "swth",
               "chain_name": "carbon",
-              "channel": "channel-0",
-              "denom": "swth",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -1511,12 +1511,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-212",
+              "channel_id": "channel-212",
             },
             "counterparty": {
+              "base_denom": "ucrbrus",
               "chain_name": "cerberus",
-              "channel": "channel-1",
-              "denom": "ucrbrus",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -1549,12 +1549,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-108",
+              "channel_id": "channel-108",
             },
             "counterparty": {
+              "base_denom": "ncheq",
               "chain_name": "cheqd",
-              "channel": "channel-0",
-              "denom": "ncheq",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -1586,12 +1586,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-113",
+              "channel_id": "channel-113",
             },
             "counterparty": {
+              "base_denom": "uhuahua",
               "chain_name": "chihuahua",
-              "channel": "channel-7",
-              "denom": "uhuahua",
+              "channel_id": "channel-7",
             },
             "type": "ibc",
           },
@@ -1623,12 +1623,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-87",
+              "channel_id": "channel-87",
             },
             "counterparty": {
+              "base_denom": "ucmdx",
               "chain_name": "comdex",
-              "channel": "channel-1",
-              "denom": "ucmdx",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -1661,12 +1661,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-0",
+              "channel_id": "channel-0",
             },
             "counterparty": {
+              "base_denom": "uatom",
               "chain_name": "cosmoshub",
-              "channel": "channel-141",
-              "denom": "uatom",
+              "channel_id": "channel-141",
             },
             "type": "ibc",
           },
@@ -1700,12 +1700,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-297",
+              "channel_id": "channel-297",
             },
             "counterparty": {
+              "base_denom": "ucre",
               "chain_name": "crescent",
-              "channel": "channel-9",
-              "denom": "ucre",
+              "channel_id": "channel-9",
             },
             "type": "ibc",
           },
@@ -1739,12 +1739,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-297",
+              "channel_id": "channel-297",
             },
             "counterparty": {
+              "base_denom": "ubcre",
               "chain_name": "crescent",
-              "channel": "channel-9",
-              "denom": "ubcre",
+              "channel_id": "channel-9",
             },
             "type": "ibc",
           },
@@ -1776,12 +1776,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-5",
+              "channel_id": "channel-5",
             },
             "counterparty": {
+              "base_denom": "basecro",
               "chain_name": "cryptoorgchain",
-              "channel": "channel-10",
-              "denom": "basecro",
+              "channel_id": "channel-10",
             },
             "type": "ibc",
           },
@@ -1815,12 +1815,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-181",
+              "channel_id": "channel-181",
             },
             "counterparty": {
+              "base_denom": "udec",
               "chain_name": "decentr",
-              "channel": "channel-1",
-              "denom": "udec",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -1854,12 +1854,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-135",
+              "channel_id": "channel-135",
             },
             "counterparty": {
+              "base_denom": "udsm",
               "chain_name": "desmos",
-              "channel": "channel-2",
-              "denom": "udsm",
+              "channel_id": "channel-2",
             },
             "type": "ibc",
           },
@@ -1891,12 +1891,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-128",
+              "channel_id": "channel-128",
             },
             "counterparty": {
+              "base_denom": "udig",
               "chain_name": "dig",
-              "channel": "channel-1",
-              "denom": "udig",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -1928,12 +1928,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-37",
+              "channel_id": "channel-37",
             },
             "counterparty": {
+              "base_denom": "ungm",
               "chain_name": "emoney",
-              "channel": "channel-0",
-              "denom": "ungm",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -1965,12 +1965,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-37",
+              "channel_id": "channel-37",
             },
             "counterparty": {
+              "base_denom": "eeur",
               "chain_name": "emoney",
-              "channel": "channel-0",
-              "denom": "eeur",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -2003,12 +2003,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-204",
+              "channel_id": "channel-204",
             },
             "counterparty": {
+              "base_denom": "aevmos",
               "chain_name": "evmos",
-              "channel": "channel-0",
-              "denom": "aevmos",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -2041,12 +2041,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-229",
+              "channel_id": "channel-229",
             },
             "counterparty": {
+              "base_denom": "afet",
               "chain_name": "fetchhub",
-              "channel": "channel-10",
-              "denom": "afet",
+              "channel_id": "channel-10",
             },
             "type": "ibc",
           },
@@ -2078,12 +2078,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-229",
+              "channel_id": "channel-229",
             },
             "counterparty": {
+              "base_denom": "nanomobx",
               "chain_name": "fetchhub",
-              "channel": "channel-10",
-              "denom": "nanomobx",
+              "channel_id": "channel-10",
             },
             "type": "ibc",
           },
@@ -2115,12 +2115,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-236",
+              "channel_id": "channel-236",
             },
             "counterparty": {
+              "base_denom": "uglx",
               "chain_name": "galaxy",
-              "channel": "channel-0",
-              "denom": "uglx",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -2152,12 +2152,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-235",
+              "channel_id": "channel-235",
             },
             "counterparty": {
+              "base_denom": "el1",
               "chain_name": "genesisl1",
-              "channel": "channel-1",
-              "denom": "el1",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -2191,12 +2191,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-144",
+              "channel_id": "channel-144",
             },
             "counterparty": {
+              "base_denom": "ugraviton",
               "chain_name": "gravitybridge",
-              "channel": "channel-10",
-              "denom": "ugraviton",
+              "channel_id": "channel-10",
             },
             "type": "ibc",
           },
@@ -2228,12 +2228,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-38",
+              "channel_id": "channel-38",
             },
             "counterparty": {
+              "base_denom": "uixo",
               "chain_name": "impacthub",
-              "channel": "channel-4",
-              "denom": "uixo",
+              "channel_id": "channel-4",
             },
             "type": "ibc",
           },
@@ -2266,12 +2266,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-122",
+              "channel_id": "channel-122",
             },
             "counterparty": {
+              "base_denom": "uinj",
               "chain_name": "injective",
-              "channel": "channel-8",
-              "denom": "uinj",
+              "channel_id": "channel-8",
             },
             "type": "ibc",
           },
@@ -2304,12 +2304,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-6",
+              "channel_id": "channel-6",
             },
             "counterparty": {
+              "base_denom": "uiris",
               "chain_name": "irisnet",
-              "channel": "channel-3",
-              "denom": "uiris",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -2342,12 +2342,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-42",
+              "channel_id": "channel-42",
             },
             "counterparty": {
+              "base_denom": "ujuno",
               "chain_name": "juno",
-              "channel": "channel-0",
-              "denom": "ujuno",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -2379,12 +2379,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-143",
+              "channel_id": "channel-143",
             },
             "counterparty": {
+              "base_denom": "ukava",
               "chain_name": "kava",
-              "channel": "channel-1",
-              "denom": "ukava",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -2417,12 +2417,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-143",
+              "channel_id": "channel-143",
             },
             "counterparty": {
+              "base_denom": "hard",
               "chain_name": "kava",
-              "channel": "channel-1",
-              "denom": "hard",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -2455,12 +2455,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-143",
+              "channel_id": "channel-143",
             },
             "counterparty": {
+              "base_denom": "swp",
               "chain_name": "kava",
-              "channel": "channel-1",
-              "denom": "swp",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -2493,12 +2493,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-77",
+              "channel_id": "channel-77",
             },
             "counterparty": {
+              "base_denom": "uxki",
               "chain_name": "kichain",
-              "channel": "channel-0",
-              "denom": "uxki",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -2531,12 +2531,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-171",
+              "channel_id": "channel-171",
             },
             "counterparty": {
+              "base_denom": "udarc",
               "chain_name": "konstellation",
-              "channel": "channel-0",
-              "denom": "udarc",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -2569,12 +2569,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-53",
+              "channel_id": "channel-53",
             },
             "counterparty": {
+              "base_denom": "nanolike",
               "chain_name": "likecoin",
-              "channel": "channel-3",
-              "denom": "nanolike",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -2605,12 +2605,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-286",
+              "channel_id": "channel-286",
             },
             "counterparty": {
+              "base_denom": "ulumen",
               "chain_name": "lumenx",
-              "channel": "channel-3",
-              "denom": "ulumen",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -2643,12 +2643,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-115",
+              "channel_id": "channel-115",
             },
             "counterparty": {
+              "base_denom": "ulum",
               "chain_name": "lumnetwork",
-              "channel": "channel-3",
-              "denom": "ulum",
+              "channel_id": "channel-3",
             },
             "type": "ibc",
           },
@@ -2680,12 +2680,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-238",
+              "channel_id": "channel-238",
             },
             "counterparty": {
+              "base_denom": "umeme",
               "chain_name": "meme",
-              "channel": "channel-1",
-              "denom": "umeme",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -2717,12 +2717,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-39",
+              "channel_id": "channel-39",
             },
             "counterparty": {
+              "base_denom": "utick",
               "chain_name": "microtick",
-              "channel": "channel-16",
-              "denom": "utick",
+              "channel_id": "channel-16",
             },
             "type": "ibc",
           },
@@ -2755,12 +2755,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-216",
+              "channel_id": "channel-216",
             },
             "counterparty": {
+              "base_denom": "uorai",
               "chain_name": "oraichain",
-              "channel": "channel-13",
-              "denom": "uorai",
+              "channel_id": "channel-13",
             },
             "type": "ibc",
           },
@@ -2792,12 +2792,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-82",
+              "channel_id": "channel-82",
             },
             "counterparty": {
+              "base_denom": "umed",
               "chain_name": "panacea",
-              "channel": "channel-1",
-              "denom": "umed",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -2830,12 +2830,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-4",
+              "channel_id": "channel-4",
             },
             "counterparty": {
+              "base_denom": "uxprt",
               "chain_name": "persistence",
-              "channel": "channel-6",
-              "denom": "uxprt",
+              "channel_id": "channel-6",
             },
             "type": "ibc",
           },
@@ -2873,12 +2873,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-4",
+              "channel_id": "channel-4",
             },
             "counterparty": {
+              "base_denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
               "chain_name": "persistence",
-              "channel": "channel-6",
-              "denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+              "channel_id": "channel-6",
             },
             "type": "ibc",
           },
@@ -2912,12 +2912,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-222",
+              "channel_id": "channel-222",
             },
             "counterparty": {
+              "base_denom": "nhash",
               "chain_name": "provenance",
-              "channel": "channel-7",
-              "denom": "nhash",
+              "channel_id": "channel-7",
             },
             "type": "ibc",
           },
@@ -2949,12 +2949,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-8",
+              "channel_id": "channel-8",
             },
             "counterparty": {
+              "base_denom": "uregen",
               "chain_name": "regen",
-              "channel": "channel-1",
-              "denom": "uregen",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -2987,12 +2987,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-221",
+              "channel_id": "channel-221",
             },
             "counterparty": {
+              "base_denom": "uatolo",
               "chain_name": "rizon",
-              "channel": "channel-1",
-              "denom": "uatolo",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -3025,12 +3025,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-88",
+              "channel_id": "channel-88",
             },
             "counterparty": {
+              "base_denom": "uscrt",
               "chain_name": "secretnetwork",
-              "channel": "channel-1",
-              "denom": "uscrt",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -3062,12 +3062,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-2",
+              "channel_id": "channel-2",
             },
             "counterparty": {
+              "base_denom": "udvpn",
               "chain_name": "sentinel",
-              "channel": "channel-0",
-              "denom": "udvpn",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -3099,12 +3099,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-146",
+              "channel_id": "channel-146",
             },
             "counterparty": {
+              "base_denom": "uctk",
               "chain_name": "shentu",
-              "channel": "channel-8",
-              "denom": "uctk",
+              "channel_id": "channel-8",
             },
             "type": "ibc",
           },
@@ -3133,12 +3133,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-47",
+              "channel_id": "channel-47",
             },
             "counterparty": {
+              "base_denom": "rowan",
               "chain_name": "sifchain",
-              "channel": "channel-17",
-              "denom": "rowan",
+              "channel_id": "channel-17",
             },
             "type": "ibc",
           },
@@ -3178,12 +3178,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-165",
+              "channel_id": "channel-165",
             },
             "counterparty": {
+              "base_denom": "usomm",
               "chain_name": "sommelier",
-              "channel": "channel-0",
-              "denom": "usomm",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -3215,12 +3215,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-75",
+              "channel_id": "channel-75",
             },
             "counterparty": {
+              "base_denom": "ustars",
               "chain_name": "stargaze",
-              "channel": "channel-0",
-              "denom": "ustars",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -3253,12 +3253,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-15",
+              "channel_id": "channel-15",
             },
             "counterparty": {
+              "base_denom": "uiov",
               "chain_name": "starname",
-              "channel": "channel-2",
-              "denom": "uiov",
+              "channel_id": "channel-2",
             },
             "type": "ibc",
           },
@@ -3301,12 +3301,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "uluna",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "uluna",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -3349,12 +3349,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "uusd",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "uusd",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -3397,12 +3397,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "ukrw",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "ukrw",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -3444,12 +3444,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "uaud",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "uaud",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -3491,12 +3491,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "ucad",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "ucad",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -3538,12 +3538,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "uchf",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "uchf",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -3585,12 +3585,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "ucny",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "ucny",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -3632,12 +3632,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "udkk",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "udkk",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -3679,12 +3679,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "ueur",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "ueur",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -3726,12 +3726,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "ugbp",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "ugbp",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -3773,12 +3773,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "uhkd",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "uhkd",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -3820,12 +3820,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "uidr",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "uidr",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -3867,12 +3867,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "uinr",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "uinr",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -3914,12 +3914,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "ujpy",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "ujpy",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -3961,12 +3961,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "umnt",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "umnt",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -4008,12 +4008,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "umyr",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "umyr",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -4055,12 +4055,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "unok",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "unok",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -4102,12 +4102,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "uphp",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "uphp",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -4149,12 +4149,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "usdr",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "usdr",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -4196,12 +4196,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "usek",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "usek",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -4243,12 +4243,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "usgd",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "usgd",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -4290,12 +4290,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "uthb",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "uthb",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -4337,12 +4337,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-72",
+              "channel_id": "channel-72",
             },
             "counterparty": {
+              "base_denom": "utwd",
               "chain_name": "terra",
-              "channel": "channel-1",
-              "denom": "utwd",
+              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -4376,12 +4376,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-263",
+              "channel_id": "channel-263",
             },
             "counterparty": {
+              "base_denom": "utgd",
               "chain_name": "tgrade",
-              "channel": "channel-0",
-              "denom": "utgd",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -4413,12 +4413,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-184",
+              "channel_id": "channel-184",
             },
             "counterparty": {
+              "base_denom": "uumee",
               "chain_name": "umee",
-              "channel": "channel-0",
-              "denom": "uumee",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },
@@ -4452,12 +4452,12 @@ exports[`getIbcAssets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-124",
+              "channel_id": "channel-124",
             },
             "counterparty": {
+              "base_denom": "uvdl",
               "chain_name": "vidulum",
-              "channel": "channel-0",
-              "denom": "uvdl",
+              "channel_id": "channel-0",
             },
             "type": "ibc",
           },

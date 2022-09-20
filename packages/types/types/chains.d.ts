@@ -6,6 +6,7 @@ export interface Chain {
     update_link?: string;
     pretty_name: string;
     chain_id: string;
+    website?: string;
     bech32_prefix: string;
     daemon_name?: string;
     key_algos?: string[];
@@ -79,26 +80,32 @@ export interface Chain {
         rest?: {
             address: string;
             provider?: string;
+            archive?: boolean;
         }[];
         grpc?: {
             address: string;
             provider?: string;
+            archive?: boolean;
         }[];
         'evm-http-jsonrpc'?: {
             address: string;
             provider?: string;
+            archive?: boolean;
         }[];
         'grpc-web'?: {
             address: string;
             provider?: string;
+            archive?: boolean;
         }[];
         sidechains_rpc?: {
             address: string;
             provider?: string;
+            archive?: boolean;
         }[];
         [key: string]: {
             address: string;
             provider?: string;
+            archive?: boolean;
         }[];
     };
 }

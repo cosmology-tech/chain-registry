@@ -29,12 +29,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'ubld',
+            channel_id: 'channel-1',
+            base_denom: 'ubld',
             chain_name: 'agoric'
           },
           chain: {
-            channel: 'channel-320'
+            channel_id: 'channel-320'
           }
         }
       ]
@@ -65,12 +65,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'uist',
+            channel_id: 'channel-1',
+            base_denom: 'uist',
             chain_name: 'agoric'
           },
           chain: {
-            channel: 'channel-320'
+            channel_id: 'channel-320'
           }
         }
       ]
@@ -103,12 +103,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-9',
-            denom: 'uakt',
+            channel_id: 'channel-9',
+            base_denom: 'uakt',
             chain_name: 'akash'
           },
           chain: {
-            channel: 'channel-1'
+            channel_id: 'channel-1'
           }
         }
       ]
@@ -139,12 +139,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'umntl',
+            channel_id: 'channel-0',
+            base_denom: 'umntl',
             chain_name: 'assetmantle'
           },
           chain: {
-            channel: 'channel-232'
+            channel_id: 'channel-232'
           }
         }
       ]
@@ -176,12 +176,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'uaxl',
+            channel_id: 'channel-3',
+            base_denom: 'uaxl',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ]
@@ -208,12 +208,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'uusdc',
+            channel_id: 'channel-3',
+            base_denom: 'uusdc',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -245,12 +245,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'frax-wei',
+            channel_id: 'channel-3',
+            base_denom: 'frax-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -282,12 +282,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'dai-wei',
+            channel_id: 'channel-3',
+            base_denom: 'dai-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -319,12 +319,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'uusdt',
+            channel_id: 'channel-3',
+            base_denom: 'uusdt',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -356,12 +356,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'weth-wei',
+            channel_id: 'channel-3',
+            base_denom: 'weth-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -392,12 +392,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'wbtc-satoshi',
+            channel_id: 'channel-3',
+            base_denom: 'wbtc-satoshi',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -428,12 +428,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'aave-wei',
+            channel_id: 'channel-3',
+            base_denom: 'aave-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -464,12 +464,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'ape-wei',
+            channel_id: 'channel-3',
+            base_denom: 'ape-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -500,12 +500,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'axs-wei',
+            channel_id: 'channel-3',
+            base_denom: 'axs-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -536,12 +536,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'link-wei',
+            channel_id: 'channel-3',
+            base_denom: 'link-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -573,12 +573,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'mkr-wei',
+            channel_id: 'channel-3',
+            base_denom: 'mkr-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -609,12 +609,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'rai-wei',
+            channel_id: 'channel-3',
+            base_denom: 'rai-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -645,12 +645,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'shib-wei',
+            channel_id: 'channel-3',
+            base_denom: 'shib-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -681,12 +681,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'steth-wei',
+            channel_id: 'channel-3',
+            base_denom: 'steth-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -717,12 +717,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'uni-wei',
+            channel_id: 'channel-3',
+            base_denom: 'uni-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -753,12 +753,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'xcn-wei',
+            channel_id: 'channel-3',
+            base_denom: 'xcn-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -789,12 +789,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'dot-planck',
+            channel_id: 'channel-3',
+            base_denom: 'dot-planck',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -826,12 +826,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'wglmr-wei',
+            channel_id: 'channel-3',
+            base_denom: 'wglmr-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -863,12 +863,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'wmatic-wei',
+            channel_id: 'channel-3',
+            base_denom: 'wmatic-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel: 'channel-208'
+            channel_id: 'channel-208'
           }
         }
       ],
@@ -905,12 +905,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-83',
-            denom: 'uband',
+            channel_id: 'channel-83',
+            base_denom: 'uband',
             chain_name: 'bandchain'
           },
           chain: {
-            channel: 'channel-148'
+            channel_id: 'channel-148'
           }
         }
       ]
@@ -943,12 +943,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'ubcna',
+            channel_id: 'channel-1',
+            base_denom: 'ubcna',
             chain_name: 'bitcanna'
           },
           chain: {
-            channel: 'channel-51'
+            channel_id: 'channel-51'
           }
         }
       ]
@@ -981,12 +981,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ubtsg',
+            channel_id: 'channel-0',
+            base_denom: 'ubtsg',
             chain_name: 'bitsong'
           },
           chain: {
-            channel: 'channel-73'
+            channel_id: 'channel-73'
           }
         }
       ]
@@ -1016,12 +1016,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09',
+            channel_id: 'channel-0',
+            base_denom: 'ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09',
             chain_name: 'bitsong'
           },
           chain: {
-            channel: 'channel-73'
+            channel_id: 'channel-73'
           }
         }
       ]
@@ -1051,12 +1051,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7',
+            channel_id: 'channel-0',
+            base_denom: 'ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7',
             chain_name: 'bitsong'
           },
           chain: {
-            channel: 'channel-73'
+            channel_id: 'channel-73'
           }
         }
       ]
@@ -1086,12 +1086,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ft575B10B0CEE2C164D9ED6A96313496F164A9607C',
+            channel_id: 'channel-0',
+            base_denom: 'ft575B10B0CEE2C164D9ED6A96313496F164A9607C',
             chain_name: 'bitsong'
           },
           chain: {
-            channel: 'channel-73'
+            channel_id: 'channel-73'
           }
         }
       ]
@@ -1121,12 +1121,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305',
+            channel_id: 'channel-0',
+            base_denom: 'ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305',
             chain_name: 'bitsong'
           },
           chain: {
-            channel: 'channel-73'
+            channel_id: 'channel-73'
           }
         }
       ]
@@ -1156,12 +1156,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ft52EEB0EE509AC546ED92EAC8591F731F213DDD16',
+            channel_id: 'channel-0',
+            base_denom: 'ft52EEB0EE509AC546ED92EAC8591F731F213DDD16',
             chain_name: 'bitsong'
           },
           chain: {
-            channel: 'channel-73'
+            channel_id: 'channel-73'
           }
         }
       ]
@@ -1191,12 +1191,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A',
+            channel_id: 'channel-0',
+            base_denom: 'ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A',
             chain_name: 'bitsong'
           },
           chain: {
-            channel: 'channel-73'
+            channel_id: 'channel-73'
           }
         }
       ]
@@ -1226,12 +1226,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ft85AE1716C5E39EA6D64BBD7898C3899A7B500626',
+            channel_id: 'channel-0',
+            base_denom: 'ft85AE1716C5E39EA6D64BBD7898C3899A7B500626',
             chain_name: 'bitsong'
           },
           chain: {
-            channel: 'channel-73'
+            channel_id: 'channel-73'
           }
         }
       ]
@@ -1261,12 +1261,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A',
+            channel_id: 'channel-0',
+            base_denom: 'ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A',
             chain_name: 'bitsong'
           },
           chain: {
-            channel: 'channel-73'
+            channel_id: 'channel-73'
           }
         }
       ]
@@ -1296,12 +1296,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ft387C1C279D962ED80C09C1D592A92C4275FD7C5D',
+            channel_id: 'channel-0',
+            base_denom: 'ft387C1C279D962ED80C09C1D592A92C4275FD7C5D',
             chain_name: 'bitsong'
           },
           chain: {
-            channel: 'channel-73'
+            channel_id: 'channel-73'
           }
         }
       ]
@@ -1331,12 +1331,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB',
+            channel_id: 'channel-0',
+            base_denom: 'ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB',
             chain_name: 'bitsong'
           },
           chain: {
-            channel: 'channel-73'
+            channel_id: 'channel-73'
           }
         }
       ]
@@ -1366,12 +1366,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B',
+            channel_id: 'channel-0',
+            base_denom: 'ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B',
             chain_name: 'bitsong'
           },
           chain: {
-            channel: 'channel-73'
+            channel_id: 'channel-73'
           }
         }
       ]
@@ -1401,12 +1401,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE',
+            channel_id: 'channel-0',
+            base_denom: 'ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE',
             chain_name: 'bitsong'
           },
           chain: {
-            channel: 'channel-73'
+            channel_id: 'channel-73'
           }
         }
       ]
@@ -1436,12 +1436,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12',
+            channel_id: 'channel-0',
+            base_denom: 'ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12',
             chain_name: 'bitsong'
           },
           chain: {
-            channel: 'channel-73'
+            channel_id: 'channel-73'
           }
         }
       ]
@@ -1471,12 +1471,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3',
+            channel_id: 'channel-0',
+            base_denom: 'ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3',
             chain_name: 'bitsong'
           },
           chain: {
-            channel: 'channel-73'
+            channel_id: 'channel-73'
           }
         }
       ]
@@ -1503,12 +1503,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-2',
-            denom: 'boot',
+            channel_id: 'channel-2',
+            base_denom: 'boot',
             chain_name: 'bostrom'
           },
           chain: {
-            channel: 'channel-95'
+            channel_id: 'channel-95'
           }
         }
       ]
@@ -1541,12 +1541,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'swth',
+            channel_id: 'channel-0',
+            base_denom: 'swth',
             chain_name: 'carbon'
           },
           chain: {
-            channel: 'channel-188'
+            channel_id: 'channel-188'
           }
         }
       ]
@@ -1577,12 +1577,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'ucrbrus',
+            channel_id: 'channel-1',
+            base_denom: 'ucrbrus',
             chain_name: 'cerberus'
           },
           chain: {
-            channel: 'channel-212'
+            channel_id: 'channel-212'
           }
         }
       ]
@@ -1614,12 +1614,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ncheq',
+            channel_id: 'channel-0',
+            base_denom: 'ncheq',
             chain_name: 'cheqd'
           },
           chain: {
-            channel: 'channel-108'
+            channel_id: 'channel-108'
           }
         }
       ]
@@ -1650,12 +1650,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-7',
-            denom: 'uhuahua',
+            channel_id: 'channel-7',
+            base_denom: 'uhuahua',
             chain_name: 'chihuahua'
           },
           chain: {
-            channel: 'channel-113'
+            channel_id: 'channel-113'
           }
         }
       ]
@@ -1686,12 +1686,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'ucmdx',
+            channel_id: 'channel-1',
+            base_denom: 'ucmdx',
             chain_name: 'comdex'
           },
           chain: {
-            channel: 'channel-87'
+            channel_id: 'channel-87'
           }
         }
       ]
@@ -1723,12 +1723,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-141',
-            denom: 'uatom',
+            channel_id: 'channel-141',
+            base_denom: 'uatom',
             chain_name: 'cosmoshub'
           },
           chain: {
-            channel: 'channel-0'
+            channel_id: 'channel-0'
           }
         }
       ]
@@ -1761,12 +1761,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-9',
-            denom: 'ucre',
+            channel_id: 'channel-9',
+            base_denom: 'ucre',
             chain_name: 'crescent'
           },
           chain: {
-            channel: 'channel-297'
+            channel_id: 'channel-297'
           }
         }
       ]
@@ -1799,12 +1799,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-9',
-            denom: 'ubcre',
+            channel_id: 'channel-9',
+            base_denom: 'ubcre',
             chain_name: 'crescent'
           },
           chain: {
-            channel: 'channel-297'
+            channel_id: 'channel-297'
           }
         }
       ]
@@ -1835,12 +1835,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-10',
-            denom: 'basecro',
+            channel_id: 'channel-10',
+            base_denom: 'basecro',
             chain_name: 'cryptoorgchain'
           },
           chain: {
-            channel: 'channel-5'
+            channel_id: 'channel-5'
           }
         }
       ]
@@ -1873,12 +1873,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'udec',
+            channel_id: 'channel-1',
+            base_denom: 'udec',
             chain_name: 'decentr'
           },
           chain: {
-            channel: 'channel-181'
+            channel_id: 'channel-181'
           }
         }
       ]
@@ -1911,12 +1911,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-2',
-            denom: 'udsm',
+            channel_id: 'channel-2',
+            base_denom: 'udsm',
             chain_name: 'desmos'
           },
           chain: {
-            channel: 'channel-135'
+            channel_id: 'channel-135'
           }
         }
       ]
@@ -1947,12 +1947,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'udig',
+            channel_id: 'channel-1',
+            base_denom: 'udig',
             chain_name: 'dig'
           },
           chain: {
-            channel: 'channel-128'
+            channel_id: 'channel-128'
           }
         }
       ]
@@ -1984,12 +1984,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ungm',
+            channel_id: 'channel-0',
+            base_denom: 'ungm',
             chain_name: 'emoney'
           },
           chain: {
-            channel: 'channel-37'
+            channel_id: 'channel-37'
           }
         }
       ]
@@ -2021,12 +2021,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'eeur',
+            channel_id: 'channel-0',
+            base_denom: 'eeur',
             chain_name: 'emoney'
           },
           chain: {
-            channel: 'channel-37'
+            channel_id: 'channel-37'
           }
         }
       ]
@@ -2059,12 +2059,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'aevmos',
+            channel_id: 'channel-0',
+            base_denom: 'aevmos',
             chain_name: 'evmos'
           },
           chain: {
-            channel: 'channel-204'
+            channel_id: 'channel-204'
           }
         }
       ]
@@ -2096,12 +2096,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-10',
-            denom: 'afet',
+            channel_id: 'channel-10',
+            base_denom: 'afet',
             chain_name: 'fetchhub'
           },
           chain: {
-            channel: 'channel-229'
+            channel_id: 'channel-229'
           }
         }
       ]
@@ -2133,12 +2133,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-10',
-            denom: 'nanomobx',
+            channel_id: 'channel-10',
+            base_denom: 'nanomobx',
             chain_name: 'fetchhub'
           },
           chain: {
-            channel: 'channel-229'
+            channel_id: 'channel-229'
           }
         }
       ]
@@ -2169,12 +2169,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'uglx',
+            channel_id: 'channel-0',
+            base_denom: 'uglx',
             chain_name: 'galaxy'
           },
           chain: {
-            channel: 'channel-236'
+            channel_id: 'channel-236'
           }
         }
       ]
@@ -2206,12 +2206,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'el1',
+            channel_id: 'channel-1',
+            base_denom: 'el1',
             chain_name: 'genesisl1'
           },
           chain: {
-            channel: 'channel-235'
+            channel_id: 'channel-235'
           }
         }
       ]
@@ -2244,12 +2244,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-10',
-            denom: 'ugraviton',
+            channel_id: 'channel-10',
+            base_denom: 'ugraviton',
             chain_name: 'gravitybridge'
           },
           chain: {
-            channel: 'channel-144'
+            channel_id: 'channel-144'
           }
         }
       ]
@@ -2280,12 +2280,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-4',
-            denom: 'uixo',
+            channel_id: 'channel-4',
+            base_denom: 'uixo',
             chain_name: 'impacthub'
           },
           chain: {
-            channel: 'channel-38'
+            channel_id: 'channel-38'
           }
         }
       ]
@@ -2318,12 +2318,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-8',
-            denom: 'inj',
+            channel_id: 'channel-8',
+            base_denom: 'inj',
             chain_name: 'injective'
           },
           chain: {
-            channel: 'channel-122'
+            channel_id: 'channel-122'
           }
         }
       ]
@@ -2356,12 +2356,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'uiris',
+            channel_id: 'channel-3',
+            base_denom: 'uiris',
             chain_name: 'irisnet'
           },
           chain: {
-            channel: 'channel-6'
+            channel_id: 'channel-6'
           }
         }
       ]
@@ -2393,12 +2393,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ujuno',
+            channel_id: 'channel-0',
+            base_denom: 'ujuno',
             chain_name: 'juno'
           },
           chain: {
-            channel: 'channel-42'
+            channel_id: 'channel-42'
           }
         }
       ]
@@ -2434,13 +2434,13 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom:
+            channel_id: 'channel-0',
+            base_denom:
               'ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A',
             chain_name: 'juno'
           },
           chain: {
-            channel: 'channel-42'
+            channel_id: 'channel-42'
           }
         }
       ]
@@ -2471,12 +2471,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'ukava',
+            channel_id: 'channel-1',
+            base_denom: 'ukava',
             chain_name: 'kava'
           },
           chain: {
-            channel: 'channel-143'
+            channel_id: 'channel-143'
           }
         }
       ]
@@ -2508,12 +2508,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'hard',
+            channel_id: 'channel-1',
+            base_denom: 'hard',
             chain_name: 'kava'
           },
           chain: {
-            channel: 'channel-143'
+            channel_id: 'channel-143'
           }
         }
       ]
@@ -2545,12 +2545,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'swp',
+            channel_id: 'channel-1',
+            base_denom: 'swp',
             chain_name: 'kava'
           },
           chain: {
-            channel: 'channel-143'
+            channel_id: 'channel-143'
           }
         }
       ]
@@ -2581,12 +2581,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'usdx',
+            channel_id: 'channel-1',
+            base_denom: 'usdx',
             chain_name: 'kava'
           },
           chain: {
-            channel: 'channel-143'
+            channel_id: 'channel-143'
           }
         }
       ]
@@ -2618,12 +2618,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'uxki',
+            channel_id: 'channel-0',
+            base_denom: 'uxki',
             chain_name: 'kichain'
           },
           chain: {
-            channel: 'channel-77'
+            channel_id: 'channel-77'
           }
         }
       ]
@@ -2655,12 +2655,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'udarc',
+            channel_id: 'channel-0',
+            base_denom: 'udarc',
             chain_name: 'konstellation'
           },
           chain: {
-            channel: 'channel-171'
+            channel_id: 'channel-171'
           }
         }
       ]
@@ -2692,12 +2692,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'ukuji',
+            channel_id: 'channel-3',
+            base_denom: 'ukuji',
             chain_name: 'kujira'
           },
           chain: {
-            channel: 'channel-259'
+            channel_id: 'channel-259'
           }
         }
       ]
@@ -2730,12 +2730,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'nanolike',
+            channel_id: 'channel-3',
+            base_denom: 'nanolike',
             chain_name: 'likecoin'
           },
           chain: {
-            channel: 'channel-53'
+            channel_id: 'channel-53'
           }
         }
       ]
@@ -2765,12 +2765,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'ulumen',
+            channel_id: 'channel-3',
+            base_denom: 'ulumen',
             chain_name: 'lumenx'
           },
           chain: {
-            channel: 'channel-286'
+            channel_id: 'channel-286'
           }
         }
       ]
@@ -2802,12 +2802,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-3',
-            denom: 'ulum',
+            channel_id: 'channel-3',
+            base_denom: 'ulum',
             chain_name: 'lumnetwork'
           },
           chain: {
-            channel: 'channel-115'
+            channel_id: 'channel-115'
           }
         }
       ]
@@ -2839,12 +2839,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'umeme',
+            channel_id: 'channel-1',
+            base_denom: 'umeme',
             chain_name: 'meme'
           },
           chain: {
-            channel: 'channel-238'
+            channel_id: 'channel-238'
           }
         }
       ]
@@ -2876,12 +2876,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-16',
-            denom: 'utick',
+            channel_id: 'channel-16',
+            base_denom: 'utick',
             chain_name: 'microtick'
           },
           chain: {
-            channel: 'channel-39'
+            channel_id: 'channel-39'
           }
         }
       ]
@@ -2913,12 +2913,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-13',
-            denom: 'orai',
+            channel_id: 'channel-13',
+            base_denom: 'orai',
             chain_name: 'oraichain'
           },
           chain: {
-            channel: 'channel-216'
+            channel_id: 'channel-216'
           }
         }
       ]
@@ -2950,12 +2950,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'umed',
+            channel_id: 'channel-1',
+            base_denom: 'umed',
             chain_name: 'panacea'
           },
           chain: {
-            channel: 'channel-82'
+            channel_id: 'channel-82'
           }
         }
       ]
@@ -2988,12 +2988,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-6',
-            denom: 'uxprt',
+            channel_id: 'channel-6',
+            base_denom: 'uxprt',
             chain_name: 'persistence'
           },
           chain: {
-            channel: 'channel-4'
+            channel_id: 'channel-4'
           }
         }
       ]
@@ -3023,21 +3023,16 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-6',
-            denom:
+            channel_id: 'channel-6',
+            base_denom:
               'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444',
             chain_name: 'persistence'
           },
           chain: {
-            channel: 'channel-4'
+            channel_id: 'channel-4'
           }
         }
       ],
-      ibc: {
-        source_channel: 'channel-24',
-        dst_channel: 'channel-38',
-        source_denom: 'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
-      },
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg'
@@ -3072,12 +3067,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-7',
-            denom: 'nhash',
+            channel_id: 'channel-7',
+            base_denom: 'nhash',
             chain_name: 'provenance'
           },
           chain: {
-            channel: 'channel-222'
+            channel_id: 'channel-222'
           }
         }
       ]
@@ -3108,12 +3103,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'uregen',
+            channel_id: 'channel-1',
+            base_denom: 'uregen',
             chain_name: 'regen'
           },
           chain: {
-            channel: 'channel-8'
+            channel_id: 'channel-8'
           }
         }
       ]
@@ -3145,12 +3140,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'uatolo',
+            channel_id: 'channel-1',
+            base_denom: 'uatolo',
             chain_name: 'rizon'
           },
           chain: {
-            channel: 'channel-221'
+            channel_id: 'channel-221'
           }
         }
       ]
@@ -3182,12 +3177,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'uscrt',
+            channel_id: 'channel-1',
+            base_denom: 'uscrt',
             chain_name: 'secretnetwork'
           },
           chain: {
-            channel: 'channel-88'
+            channel_id: 'channel-88'
           }
         }
       ]
@@ -3218,12 +3213,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'udvpn',
+            channel_id: 'channel-0',
+            base_denom: 'udvpn',
             chain_name: 'sentinel'
           },
           chain: {
-            channel: 'channel-2'
+            channel_id: 'channel-2'
           }
         }
       ]
@@ -3254,12 +3249,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-8',
-            denom: 'uctk',
+            channel_id: 'channel-8',
+            base_denom: 'uctk',
             chain_name: 'shentu'
           },
           chain: {
-            channel: 'channel-146'
+            channel_id: 'channel-146'
           }
         }
       ]
@@ -3288,12 +3283,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-17',
-            denom: 'rowan',
+            channel_id: 'channel-17',
+            base_denom: 'rowan',
             chain_name: 'sifchain'
           },
           chain: {
-            channel: 'channel-47'
+            channel_id: 'channel-47'
           }
         }
       ]
@@ -3331,12 +3326,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'usomm',
+            channel_id: 'channel-0',
+            base_denom: 'usomm',
             chain_name: 'sommelier'
           },
           chain: {
-            channel: 'channel-165'
+            channel_id: 'channel-165'
           }
         }
       ]
@@ -3367,12 +3362,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'ustars',
+            channel_id: 'channel-0',
+            base_denom: 'ustars',
             chain_name: 'stargaze'
           },
           chain: {
-            channel: 'channel-75'
+            channel_id: 'channel-75'
           }
         }
       ]
@@ -3405,12 +3400,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-2',
-            denom: 'uiov',
+            channel_id: 'channel-2',
+            base_denom: 'uiov',
             chain_name: 'starname'
           },
           chain: {
-            channel: 'channel-15'
+            channel_id: 'channel-15'
           }
         }
       ]
@@ -3443,12 +3438,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-5',
-            denom: 'ustrd',
+            channel_id: 'channel-5',
+            base_denom: 'ustrd',
             chain_name: 'stride'
           },
           chain: {
-            channel: 'channel-326'
+            channel_id: 'channel-326'
           }
         }
       ]
@@ -3479,12 +3474,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-5',
-            denom: 'stuatom',
+            channel_id: 'channel-5',
+            base_denom: 'stuatom',
             chain_name: 'stride'
           },
           chain: {
-            channel: 'channel-326'
+            channel_id: 'channel-326'
           }
         }
       ]
@@ -3515,12 +3510,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-5',
-            denom: 'stuosmo',
+            channel_id: 'channel-5',
+            base_denom: 'stuosmo',
             chain_name: 'stride'
           },
           chain: {
-            channel: 'channel-326'
+            channel_id: 'channel-326'
           }
         }
       ]
@@ -3551,12 +3546,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-5',
-            denom: 'stujuno',
+            channel_id: 'channel-5',
+            base_denom: 'stujuno',
             chain_name: 'stride'
           },
           chain: {
-            channel: 'channel-326'
+            channel_id: 'channel-326'
           }
         }
       ]
@@ -3594,12 +3589,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'uluna',
+            channel_id: 'channel-1',
+            base_denom: 'uluna',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -3637,12 +3632,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'uusd',
+            channel_id: 'channel-1',
+            base_denom: 'uusd',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -3680,12 +3675,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'ukrw',
+            channel_id: 'channel-1',
+            base_denom: 'ukrw',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -3722,12 +3717,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'uaud',
+            channel_id: 'channel-1',
+            base_denom: 'uaud',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -3764,12 +3759,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'ucad',
+            channel_id: 'channel-1',
+            base_denom: 'ucad',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -3806,12 +3801,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'uchf',
+            channel_id: 'channel-1',
+            base_denom: 'uchf',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -3848,12 +3843,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'ucny',
+            channel_id: 'channel-1',
+            base_denom: 'ucny',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -3890,12 +3885,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'udkk',
+            channel_id: 'channel-1',
+            base_denom: 'udkk',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -3932,12 +3927,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'ueur',
+            channel_id: 'channel-1',
+            base_denom: 'ueur',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -3974,12 +3969,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'ugbp',
+            channel_id: 'channel-1',
+            base_denom: 'ugbp',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -4016,12 +4011,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'uhkd',
+            channel_id: 'channel-1',
+            base_denom: 'uhkd',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -4058,12 +4053,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'uidr',
+            channel_id: 'channel-1',
+            base_denom: 'uidr',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -4100,12 +4095,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'uinr',
+            channel_id: 'channel-1',
+            base_denom: 'uinr',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -4142,12 +4137,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'ujpy',
+            channel_id: 'channel-1',
+            base_denom: 'ujpy',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -4184,12 +4179,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'umnt',
+            channel_id: 'channel-1',
+            base_denom: 'umnt',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -4226,12 +4221,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'umyr',
+            channel_id: 'channel-1',
+            base_denom: 'umyr',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -4268,12 +4263,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'unok',
+            channel_id: 'channel-1',
+            base_denom: 'unok',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -4310,12 +4305,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'uphp',
+            channel_id: 'channel-1',
+            base_denom: 'uphp',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -4352,12 +4347,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'usdr',
+            channel_id: 'channel-1',
+            base_denom: 'usdr',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -4394,12 +4389,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'usek',
+            channel_id: 'channel-1',
+            base_denom: 'usek',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -4436,12 +4431,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'usgd',
+            channel_id: 'channel-1',
+            base_denom: 'usgd',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -4478,12 +4473,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'uthb',
+            channel_id: 'channel-1',
+            base_denom: 'uthb',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -4520,12 +4515,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-1',
-            denom: 'utwd',
+            channel_id: 'channel-1',
+            base_denom: 'utwd',
             chain_name: 'terra'
           },
           chain: {
-            channel: 'channel-72'
+            channel_id: 'channel-72'
           }
         }
       ]
@@ -4558,12 +4553,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'utgd',
+            channel_id: 'channel-0',
+            base_denom: 'utgd',
             chain_name: 'tgrade'
           },
           chain: {
-            channel: 'channel-263'
+            channel_id: 'channel-263'
           }
         }
       ]
@@ -4594,12 +4589,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'uumee',
+            channel_id: 'channel-0',
+            base_denom: 'uumee',
             chain_name: 'umee'
           },
           chain: {
-            channel: 'channel-184'
+            channel_id: 'channel-184'
           }
         }
       ]
@@ -4632,12 +4627,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel: 'channel-0',
-            denom: 'uvdl',
+            channel_id: 'channel-0',
+            base_denom: 'uvdl',
             chain_name: 'vidulum'
           },
           chain: {
-            channel: 'channel-124'
+            channel_id: 'channel-124'
           }
         }
       ]
@@ -4675,14 +4670,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -4720,14 +4715,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno1g2g7ucurum66d42g8k5twk34yegdq8c82858gz0tq2fc75zy7khssgnhjl',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -4766,14 +4761,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno1re3x67ppxap48ygndmrc7har2cnc7tcxtm9nplcas4v0gc3wnmvs3s807z',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -4812,14 +4807,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno1r4pzw8f9z0sypct5l9j906d47z998ulwvhvqe5xdwgy8wf84583sxwh0pa',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -4856,14 +4851,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno1y9rf7ql6ffwkv02hsgd4yruz23pn4w97p75e2slsnkm0mnamhzysvqnxaq',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -4896,14 +4891,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno1tdjwrqmnztn2j3sj2ln9xnyps5hs48q3ddwjrz7jpv6mskappjys5czd49',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -4940,14 +4935,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -4984,14 +4979,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno17wzaxtfdw5em7lc94yed4ylgjme63eh73lm3lutp2rhcxttyvpwsypjm4w',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -5028,14 +5023,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno1ur4jx0sxchdevahep7fwq28yk4tqsrhshdtylz46yka3uf6kky5qllqp4k',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -5071,14 +5066,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno1n7n7d5088qlzlj37e9mgmkhx6dfgtvt02hqxq66lcap4dxnzdhwqfmgng3',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -5115,14 +5110,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -5159,14 +5154,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno1j0a9ymgngasfn3l5me8qpd53l5zlm9wurfdk7r65s5mg6tkxal3qpgf5se',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -5203,14 +5198,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno1gz8cf86zr4vw9cjcyyv432vgdaecvr9n254d3uwwkx9rermekddsxzageh',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -5247,14 +5242,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno1t46z6hg8vvsena7sue0vg6w85ljar3cundplkre9sz0skeqkap9sxyyy6m',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -5291,14 +5286,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -5335,14 +5330,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno1wwnhkagvcd3tjz6f8vsdsw5plqnw8qy2aj3rrhqr2axvktzv9q2qz8jxn3',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -5380,14 +5375,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno159q8t5g02744lxq8lfmcn6f78qqulq9wn3y9w7lxjgkz4e0a6kvsfvapse',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -5424,14 +5419,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
-            channel: 'channel-47',
-            denom:
+            channel_id: 'channel-47',
+            base_denom:
               'cw20:juno19rqljkh95gh40s7qdx40ksx3zq5tm4qsmsrdz9smw668x9zdr3lqtg33mf',
             chain_name: 'juno'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-169'
+            channel_id: 'channel-169'
           }
         }
       ]
@@ -5467,14 +5462,14 @@ const asset_list: AssetList = {
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.ki1hzz0s0ucrhdp6tue2lxk3c03nj6f60qy463we7lgx0wudd72ctmsd9kgha',
-            channel: 'channel-18',
-            denom:
+            channel_id: 'channel-18',
+            base_denom:
               'cw20:ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy',
             chain_name: 'kichain'
           },
           chain: {
             port: 'transfer',
-            channel: 'channel-261'
+            channel_id: 'channel-261'
           }
         }
       ]

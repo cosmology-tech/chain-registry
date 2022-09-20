@@ -920,7 +920,8 @@ const chains: Chain[] = [
         url: 'https://atomscan.com/assetmantle',
         tx_page: 'https://atomscan.com/assetmantle/transactions/${txHash}'
       }
-    ]
+    ],
+    slip44: 118
   },
   {
     $schema: '../chain.schema.json',
@@ -2202,7 +2203,8 @@ const chains: Chain[] = [
         url: 'https://atomscan.com/cerberus',
         tx_page: 'https://atomscan.com/cerberus/transactions/${txHash}'
       }
-    ]
+    ],
+    slip44: 118
   },
   {
     $schema: '../chain.schema.json',
@@ -2503,7 +2505,8 @@ const chains: Chain[] = [
         url: 'https://atomscan.com/chihuahua',
         tx_page: 'https://atomscan.com/chihuahua/transactions/${txHash}'
       }
-    ]
+    ],
+    slip44: 118
   },
   {
     $schema: '../chain.schema.json',
@@ -6782,7 +6785,8 @@ const chains: Chain[] = [
         url: 'https://explorer.konstellation.tech/',
         tx_page: 'https://explorer.konstellation.tech/tx/${txHash}'
       }
-    ]
+    ],
+    slip44: 118
   },
   {
     $schema: '../chain.schema.json',
@@ -7520,7 +7524,8 @@ const chains: Chain[] = [
         url: 'https://ping.pub/microtick',
         tx_page: 'https://ping.pub/microtick/tx/${txHash}'
       }
-    ]
+    ],
+    slip44: 118
   },
   {
     $schema: '../chain.schema.json',
@@ -7629,7 +7634,8 @@ const chains: Chain[] = [
           provider: 'nomic-io'
         }
       ]
-    }
+    },
+    slip44: 118
   },
   {
     $schema: '../chain.schema.json',
@@ -9948,7 +9954,8 @@ const chains: Chain[] = [
         url: 'https://atomscan.com/sifchain',
         tx_page: 'https://atomscan.com/sifchain/transactions/${txHash}'
       }
-    ]
+    ],
+    slip44: 118
   },
   {
     $schema: '../chain.schema.json',
@@ -11300,7 +11307,12 @@ const chains: Chain[] = [
           provider: 'Juno'
         }
       ],
-      grpc: []
+      grpc: [
+        {
+          address: 'juno-testnet-grpc.polkachu.com:12690',
+          provider: 'Polkachu'
+        }
+      ]
     },
     explorers: [
       {
@@ -12000,7 +12012,8 @@ const chains: Chain[] = [
         url: 'https://testnet-explorer.ulas.network',
         tx_page: 'https://testnet-explorer.ulas.network/ulas/tx/${txHash}'
       }
-    ]
+    ],
+    slip44: 118
   },
   {
     $schema: '../chain.schema.json',

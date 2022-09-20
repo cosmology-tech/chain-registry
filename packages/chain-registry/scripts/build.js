@@ -34,6 +34,10 @@ addChains.forEach((chain) => {
   }
 });
 
+chains.forEach((chain) => {
+  if (!chain.slip44) chain.slip44 = 118;
+});
+
 addAssets.forEach((asset) => {
   const existingIndex = assets.findIndex(
     (c) => c.chain_name === asset.chain_name
@@ -56,6 +60,38 @@ export default ${file};
     `
   );
 };
+
+ibcs.push({
+  $schema: '../ibc_data.schema.json',
+  chain_1: {
+    chain_name: 'persistence',
+    client_id: '07-tendermint-unknown',
+    connection_id: 'connection-unknown'
+  },
+  chain_2: {
+    chain_name: 'gravitybridge',
+    client_id: '07-tendermint-unknown',
+    connection_id: 'connection-unknown'
+  },
+  channels: [
+    {
+      chain_1: {
+        channel_id: 'channel-38',
+        port_id: 'transfer'
+      },
+      chain_2: {
+        channel_id: 'channel-unknown',
+        port_id: 'transfer'
+      },
+      ordering: 'unordered',
+      version: 'ics20-1',
+      tags: {
+        status: 'live',
+        preferred: true
+      }
+    }
+  ]
+});
 
 write(`assets`, assets, 'AssetList', true);
 write(`chains`, chains, 'Chain', true);

@@ -32,13 +32,13 @@ exports[`getCw20Assets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-169",
+              "channel_id": "channel-169",
               "port": "transfer",
             },
             "counterparty": {
+              "base_denom": "cw20:juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr",
               "chain_name": "juno",
-              "channel": "channel-47",
-              "denom": "cw20:juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr",
+              "channel_id": "channel-47",
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
             },
             "type": "ibc-cw20",
@@ -74,13 +74,13 @@ exports[`getCw20Assets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-169",
+              "channel_id": "channel-169",
               "port": "transfer",
             },
             "counterparty": {
+              "base_denom": "cw20:juno1g2g7ucurum66d42g8k5twk34yegdq8c82858gz0tq2fc75zy7khssgnhjl",
               "chain_name": "juno",
-              "channel": "channel-47",
-              "denom": "cw20:juno1g2g7ucurum66d42g8k5twk34yegdq8c82858gz0tq2fc75zy7khssgnhjl",
+              "channel_id": "channel-47",
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
             },
             "type": "ibc-cw20",
@@ -116,13 +116,13 @@ exports[`getCw20Assets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-169",
+              "channel_id": "channel-169",
               "port": "transfer",
             },
             "counterparty": {
+              "base_denom": "cw20:juno1re3x67ppxap48ygndmrc7har2cnc7tcxtm9nplcas4v0gc3wnmvs3s807z",
               "chain_name": "juno",
-              "channel": "channel-47",
-              "denom": "cw20:juno1re3x67ppxap48ygndmrc7har2cnc7tcxtm9nplcas4v0gc3wnmvs3s807z",
+              "channel_id": "channel-47",
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
             },
             "type": "ibc-cw20",
@@ -158,13 +158,13 @@ exports[`getCw20Assets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-169",
+              "channel_id": "channel-169",
               "port": "transfer",
             },
             "counterparty": {
+              "base_denom": "cw20:juno1r4pzw8f9z0sypct5l9j906d47z998ulwvhvqe5xdwgy8wf84583sxwh0pa",
               "chain_name": "juno",
-              "channel": "channel-47",
-              "denom": "cw20:juno1r4pzw8f9z0sypct5l9j906d47z998ulwvhvqe5xdwgy8wf84583sxwh0pa",
+              "channel_id": "channel-47",
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
             },
             "type": "ibc-cw20",
@@ -199,13 +199,13 @@ exports[`getCw20Assets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-169",
+              "channel_id": "channel-169",
               "port": "transfer",
             },
             "counterparty": {
+              "base_denom": "cw20:juno1y9rf7ql6ffwkv02hsgd4yruz23pn4w97p75e2slsnkm0mnamhzysvqnxaq",
               "chain_name": "juno",
-              "channel": "channel-47",
-              "denom": "cw20:juno1y9rf7ql6ffwkv02hsgd4yruz23pn4w97p75e2slsnkm0mnamhzysvqnxaq",
+              "channel_id": "channel-47",
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
             },
             "type": "ibc-cw20",
@@ -236,13 +236,13 @@ exports[`getCw20Assets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-169",
+              "channel_id": "channel-169",
               "port": "transfer",
             },
             "counterparty": {
+              "base_denom": "cw20:juno1tdjwrqmnztn2j3sj2ln9xnyps5hs48q3ddwjrz7jpv6mskappjys5czd49",
               "chain_name": "juno",
-              "channel": "channel-47",
-              "denom": "cw20:juno1tdjwrqmnztn2j3sj2ln9xnyps5hs48q3ddwjrz7jpv6mskappjys5czd49",
+              "channel_id": "channel-47",
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
             },
             "type": "ibc-cw20",
@@ -277,13 +277,13 @@ exports[`getCw20Assets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-169",
+              "channel_id": "channel-169",
               "port": "transfer",
             },
             "counterparty": {
+              "base_denom": "cw20:juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g",
               "chain_name": "juno",
-              "channel": "channel-47",
-              "denom": "cw20:juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g",
+              "channel_id": "channel-47",
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
             },
             "type": "ibc-cw20",
@@ -317,13 +317,13 @@ exports[`getCw20Assets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-169",
+              "channel_id": "channel-169",
               "port": "transfer",
             },
             "counterparty": {
+              "base_denom": "cw20:juno17wzaxtfdw5em7lc94yed4ylgjme63eh73lm3lutp2rhcxttyvpwsypjm4w",
               "chain_name": "juno",
-              "channel": "channel-47",
-              "denom": "cw20:juno17wzaxtfdw5em7lc94yed4ylgjme63eh73lm3lutp2rhcxttyvpwsypjm4w",
+              "channel_id": "channel-47",
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
             },
             "type": "ibc-cw20",
@@ -357,13 +357,13 @@ exports[`getCw20Assets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-169",
+              "channel_id": "channel-169",
               "port": "transfer",
             },
             "counterparty": {
+              "base_denom": "cw20:juno1ur4jx0sxchdevahep7fwq28yk4tqsrhshdtylz46yka3uf6kky5qllqp4k",
               "chain_name": "juno",
-              "channel": "channel-47",
-              "denom": "cw20:juno1ur4jx0sxchdevahep7fwq28yk4tqsrhshdtylz46yka3uf6kky5qllqp4k",
+              "channel_id": "channel-47",
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
             },
             "type": "ibc-cw20",
@@ -397,13 +397,13 @@ exports[`getCw20Assets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-169",
+              "channel_id": "channel-169",
               "port": "transfer",
             },
             "counterparty": {
+              "base_denom": "cw20:juno1n7n7d5088qlzlj37e9mgmkhx6dfgtvt02hqxq66lcap4dxnzdhwqfmgng3",
               "chain_name": "juno",
-              "channel": "channel-47",
-              "denom": "cw20:juno1n7n7d5088qlzlj37e9mgmkhx6dfgtvt02hqxq66lcap4dxnzdhwqfmgng3",
+              "channel_id": "channel-47",
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
             },
             "type": "ibc-cw20",
@@ -438,13 +438,13 @@ exports[`getCw20Assets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-169",
+              "channel_id": "channel-169",
               "port": "transfer",
             },
             "counterparty": {
+              "base_denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
               "chain_name": "juno",
-              "channel": "channel-47",
-              "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+              "channel_id": "channel-47",
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
             },
             "type": "ibc-cw20",
@@ -479,13 +479,13 @@ exports[`getCw20Assets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-169",
+              "channel_id": "channel-169",
               "port": "transfer",
             },
             "counterparty": {
+              "base_denom": "cw20:juno1j0a9ymgngasfn3l5me8qpd53l5zlm9wurfdk7r65s5mg6tkxal3qpgf5se",
               "chain_name": "juno",
-              "channel": "channel-47",
-              "denom": "cw20:juno1j0a9ymgngasfn3l5me8qpd53l5zlm9wurfdk7r65s5mg6tkxal3qpgf5se",
+              "channel_id": "channel-47",
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
             },
             "type": "ibc-cw20",
@@ -520,13 +520,13 @@ exports[`getCw20Assets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-169",
+              "channel_id": "channel-169",
               "port": "transfer",
             },
             "counterparty": {
+              "base_denom": "cw20:juno1gz8cf86zr4vw9cjcyyv432vgdaecvr9n254d3uwwkx9rermekddsxzageh",
               "chain_name": "juno",
-              "channel": "channel-47",
-              "denom": "cw20:juno1gz8cf86zr4vw9cjcyyv432vgdaecvr9n254d3uwwkx9rermekddsxzageh",
+              "channel_id": "channel-47",
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
             },
             "type": "ibc-cw20",
@@ -561,13 +561,13 @@ exports[`getCw20Assets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-169",
+              "channel_id": "channel-169",
               "port": "transfer",
             },
             "counterparty": {
+              "base_denom": "cw20:juno1rdw3gumdz7zyjn2pev9ugxs765xlv6vtv6g3jt2lqw580zrchvjs66daca",
               "chain_name": "juno",
-              "channel": "channel-47",
-              "denom": "cw20:juno1rdw3gumdz7zyjn2pev9ugxs765xlv6vtv6g3jt2lqw580zrchvjs66daca",
+              "channel_id": "channel-47",
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
             },
             "type": "ibc-cw20",
@@ -602,13 +602,13 @@ exports[`getCw20Assets 1`] = `
         "traces": [
           {
             "chain": {
-              "channel": "channel-261",
+              "channel_id": "channel-261",
               "port": "transfer",
             },
             "counterparty": {
+              "base_denom": "cw20:ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy",
               "chain_name": "kichain",
-              "channel": "channel-18",
-              "denom": "cw20:ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy",
+              "channel_id": "channel-18",
               "port": "wasm.ki1hzz0s0ucrhdp6tue2lxk3c03nj6f60qy463we7lgx0wudd72ctmsd9kgha",
             },
             "type": "ibc-cw20",

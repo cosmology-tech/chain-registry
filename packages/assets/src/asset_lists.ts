@@ -31,12 +31,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-374",
-              "denom": "uatom",
+              "channel_id": "channel-374",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -70,12 +70,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-11",
-              "denom": "ucre",
+              "channel_id": "channel-11",
+              "base_denom": "ucre",
               "chain_name": "crescent"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -109,12 +109,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-11",
-              "denom": "ubcre",
+              "channel_id": "channel-11",
+              "base_denom": "ubcre",
               "chain_name": "crescent"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -152,12 +152,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-320",
-              "denom": "uosmo",
+              "channel_id": "channel-320",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -192,12 +192,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-320",
-              "denom": "uion",
+              "channel_id": "channel-320",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -235,12 +235,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-184",
-              "denom": "uatom",
+              "channel_id": "channel-184",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -272,12 +272,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-21",
-              "denom": "basecro",
+              "channel_id": "channel-21",
+              "base_denom": "basecro",
               "chain_name": "cryptoorgchain"
             },
             "chain": {
-              "channel": "channel-14"
+              "channel_id": "channel-14"
             }
           }
         ]
@@ -310,12 +310,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-9",
-              "denom": "uiris",
+              "channel_id": "channel-9",
+              "base_denom": "uiris",
               "chain_name": "irisnet"
             },
             "chain": {
-              "channel": "channel-11"
+              "channel_id": "channel-11"
             }
           }
         ]
@@ -348,12 +348,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-29",
-              "denom": "ujuno",
+              "channel_id": "channel-29",
+              "base_denom": "ujuno",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-35"
+              "channel_id": "channel-35"
             }
           }
         ]
@@ -387,12 +387,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-29",
-              "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+              "channel_id": "channel-29",
+              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-35"
+              "channel_id": "channel-35"
             }
           }
         ]
@@ -430,12 +430,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "uosmo",
+              "channel_id": "channel-1",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-9"
+              "channel_id": "channel-9"
             }
           }
         ]
@@ -470,12 +470,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "uion",
+              "channel_id": "channel-1",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-9"
+              "channel_id": "channel-9"
             }
           }
         ]
@@ -508,12 +508,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "uxprt",
+              "channel_id": "channel-5",
+              "base_denom": "uxprt",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-6"
+              "channel_id": "channel-6"
             }
           }
         ]
@@ -541,20 +541,15 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+              "channel_id": "channel-5",
+              "base_denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-6"
+              "channel_id": "channel-6"
             }
           }
         ],
-        "ibc": {
-          "source_channel": "channel-24",
-          "dst_channel": "channel-38",
-          "source_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
-        },
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
@@ -588,12 +583,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "uregen",
+              "channel_id": "channel-7",
+              "base_denom": "uregen",
               "chain_name": "regen"
             },
             "chain": {
-              "channel": "channel-13"
+              "channel_id": "channel-13"
             }
           }
         ]
@@ -626,12 +621,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-21",
-              "denom": "uscrt",
+              "channel_id": "channel-21",
+              "base_denom": "uscrt",
               "chain_name": "secretnetwork"
             },
             "chain": {
-              "channel": "channel-43"
+              "channel_id": "channel-43"
             }
           }
         ]
@@ -663,12 +658,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-6",
-              "denom": "udvpn",
+              "channel_id": "channel-6",
+              "base_denom": "udvpn",
               "chain_name": "sentinel"
             },
             "chain": {
-              "channel": "channel-12"
+              "channel_id": "channel-12"
             }
           }
         ]
@@ -697,12 +692,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-2",
-              "denom": "rowan",
+              "channel_id": "channel-2",
+              "base_denom": "rowan",
               "chain_name": "sifchain"
             },
             "chain": {
-              "channel": "channel-24"
+              "channel_id": "channel-24"
             }
           }
         ]
@@ -735,12 +730,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-6",
-              "denom": "uiov",
+              "channel_id": "channel-6",
+              "base_denom": "uiov",
               "chain_name": "starname"
             },
             "chain": {
-              "channel": "channel-23"
+              "channel_id": "channel-23"
             }
           }
         ]
@@ -778,12 +773,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-83",
-              "denom": "ujuno",
+              "channel_id": "channel-83",
+              "base_denom": "ujuno",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -817,12 +812,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-83",
-              "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+              "channel_id": "channel-83",
+              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -854,12 +849,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-23",
-              "denom": "wei",
+              "channel_id": "channel-23",
+              "base_denom": "wei",
               "chain_name": "okexchain"
             },
             "chain": {
-              "channel": "channel-13"
+              "channel_id": "channel-13"
             }
           }
         ]
@@ -897,12 +892,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-232",
-              "denom": "uosmo",
+              "channel_id": "channel-232",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -937,12 +932,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-232",
-              "denom": "uion",
+              "channel_id": "channel-232",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -981,12 +976,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "ucre",
+              "channel_id": "channel-4",
+              "base_denom": "ucre",
               "chain_name": "crescent"
             },
             "chain": {
-              "channel": "channel-7"
+              "channel_id": "channel-7"
             }
           }
         ]
@@ -1020,12 +1015,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "ubcre",
+              "channel_id": "channel-4",
+              "base_denom": "ubcre",
               "chain_name": "crescent"
             },
             "chain": {
-              "channel": "channel-7"
+              "channel_id": "channel-7"
             }
           }
         ]
@@ -1058,12 +1053,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-71",
-              "denom": "ujuno",
+              "channel_id": "channel-71",
+              "base_denom": "ujuno",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ]
@@ -1097,12 +1092,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-71",
-              "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+              "channel_id": "channel-71",
+              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ]
@@ -1140,12 +1135,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-208",
-              "denom": "uosmo",
+              "channel_id": "channel-208",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-3"
+              "channel_id": "channel-3"
             }
           }
         ]
@@ -1180,12 +1175,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-208",
-              "denom": "uion",
+              "channel_id": "channel-208",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-3"
+              "channel_id": "channel-3"
             }
           }
         ]
@@ -1218,12 +1213,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "uscrt",
+              "channel_id": "channel-20",
+              "base_denom": "uscrt",
               "chain_name": "secretnetwork"
             },
             "chain": {
-              "channel": "channel-12"
+              "channel_id": "channel-12"
             }
           }
         ]
@@ -1266,12 +1261,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-148",
-              "denom": "uosmo",
+              "channel_id": "channel-148",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-83"
+              "channel_id": "channel-83"
             }
           }
         ]
@@ -1306,12 +1301,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-148",
-              "denom": "uion",
+              "channel_id": "channel-148",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-83"
+              "channel_id": "channel-83"
             }
           }
         ]
@@ -1349,12 +1344,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-50",
-              "denom": "ujuno",
+              "channel_id": "channel-50",
+              "base_denom": "ujuno",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-10"
+              "channel_id": "channel-10"
             }
           }
         ]
@@ -1388,12 +1383,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-50",
-              "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+              "channel_id": "channel-50",
+              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-10"
+              "channel_id": "channel-10"
             }
           }
         ]
@@ -1431,12 +1426,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-51",
-              "denom": "uosmo",
+              "channel_id": "channel-51",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -1471,12 +1466,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-51",
-              "denom": "uion",
+              "channel_id": "channel-51",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -1514,12 +1509,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-17",
-              "denom": "ujuno",
+              "channel_id": "channel-17",
+              "base_denom": "ujuno",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-5"
+              "channel_id": "channel-5"
             }
           }
         ]
@@ -1553,12 +1548,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-17",
-              "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+              "channel_id": "channel-17",
+              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-5"
+              "channel_id": "channel-5"
             }
           }
         ]
@@ -1596,12 +1591,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-73",
-              "denom": "uosmo",
+              "channel_id": "channel-73",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -1636,12 +1631,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-73",
-              "denom": "uion",
+              "channel_id": "channel-73",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -1684,12 +1679,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-95",
-              "denom": "uosmo",
+              "channel_id": "channel-95",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -1724,12 +1719,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-95",
-              "denom": "uion",
+              "channel_id": "channel-95",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -1772,12 +1767,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-188",
-              "denom": "uosmo",
+              "channel_id": "channel-188",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -1812,12 +1807,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-188",
-              "denom": "uion",
+              "channel_id": "channel-188",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -1860,12 +1855,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-212",
-              "denom": "uosmo",
+              "channel_id": "channel-212",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -1900,12 +1895,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-212",
-              "denom": "uion",
+              "channel_id": "channel-212",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -1948,12 +1943,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-108",
-              "denom": "uosmo",
+              "channel_id": "channel-108",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -1988,12 +1983,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-108",
-              "denom": "uion",
+              "channel_id": "channel-108",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -2031,12 +2026,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-28",
-              "denom": "ujuno",
+              "channel_id": "channel-28",
+              "base_denom": "ujuno",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-11"
+              "channel_id": "channel-11"
             }
           }
         ]
@@ -2070,12 +2065,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-28",
-              "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+              "channel_id": "channel-28",
+              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-11"
+              "channel_id": "channel-11"
             }
           }
         ]
@@ -2107,12 +2102,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "wei",
+              "channel_id": "channel-5",
+              "base_denom": "wei",
               "chain_name": "okexchain"
             },
             "chain": {
-              "channel": "channel-24"
+              "channel_id": "channel-24"
             }
           }
         ]
@@ -2150,12 +2145,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-113",
-              "denom": "uosmo",
+              "channel_id": "channel-113",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-7"
+              "channel_id": "channel-7"
             }
           }
         ]
@@ -2190,12 +2185,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-113",
-              "denom": "uion",
+              "channel_id": "channel-113",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-7"
+              "channel_id": "channel-7"
             }
           }
         ]
@@ -2228,12 +2223,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-11",
-              "denom": "uscrt",
+              "channel_id": "channel-11",
+              "base_denom": "uscrt",
               "chain_name": "secretnetwork"
             },
             "chain": {
-              "channel": "channel-16"
+              "channel_id": "channel-16"
             }
           }
         ]
@@ -2271,12 +2266,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-36",
-              "denom": "ujuno",
+              "channel_id": "channel-36",
+              "base_denom": "ujuno",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-18"
+              "channel_id": "channel-18"
             }
           }
         ]
@@ -2310,12 +2305,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-36",
-              "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+              "channel_id": "channel-36",
+              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-18"
+              "channel_id": "channel-18"
             }
           }
         ]
@@ -2353,12 +2348,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-87",
-              "denom": "uosmo",
+              "channel_id": "channel-87",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -2393,12 +2388,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-87",
-              "denom": "uion",
+              "channel_id": "channel-87",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -2435,12 +2430,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ubld",
+              "channel_id": "channel-0",
+              "base_denom": "ubld",
               "chain_name": "agoric"
             },
             "chain": {
-              "channel": "channel-374"
+              "channel_id": "channel-374"
             }
           }
         ]
@@ -2471,12 +2466,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "uist",
+              "channel_id": "channel-0",
+              "base_denom": "uist",
               "chain_name": "agoric"
             },
             "chain": {
-              "channel": "channel-374"
+              "channel_id": "channel-374"
             }
           }
         ]
@@ -2509,12 +2504,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-17",
-              "denom": "uakt",
+              "channel_id": "channel-17",
+              "base_denom": "uakt",
               "chain_name": "akash"
             },
             "chain": {
-              "channel": "channel-184"
+              "channel_id": "channel-184"
             }
           }
         ]
@@ -2548,12 +2543,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "ucre",
+              "channel_id": "channel-1",
+              "base_denom": "ucre",
               "chain_name": "crescent"
             },
             "chain": {
-              "channel": "channel-326"
+              "channel_id": "channel-326"
             }
           }
         ]
@@ -2587,12 +2582,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "ubcre",
+              "channel_id": "channel-1",
+              "base_denom": "ubcre",
               "chain_name": "crescent"
             },
             "chain": {
-              "channel": "channel-326"
+              "channel_id": "channel-326"
             }
           }
         ]
@@ -2624,12 +2619,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-27",
-              "denom": "basecro",
+              "channel_id": "channel-27",
+              "base_denom": "basecro",
               "chain_name": "cryptoorgchain"
             },
             "chain": {
-              "channel": "channel-187"
+              "channel_id": "channel-187"
             }
           }
         ]
@@ -2661,12 +2656,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "ungm",
+              "channel_id": "channel-1",
+              "base_denom": "ungm",
               "chain_name": "emoney"
             },
             "chain": {
-              "channel": "channel-202"
+              "channel_id": "channel-202"
             }
           }
         ]
@@ -2698,12 +2693,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "eeur",
+              "channel_id": "channel-1",
+              "base_denom": "eeur",
               "chain_name": "emoney"
             },
             "chain": {
-              "channel": "channel-202"
+              "channel_id": "channel-202"
             }
           }
         ]
@@ -2735,12 +2730,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "uixo",
+              "channel_id": "channel-1",
+              "base_denom": "uixo",
               "chain_name": "impacthub"
             },
             "chain": {
-              "channel": "channel-204"
+              "channel_id": "channel-204"
             }
           }
         ]
@@ -2773,12 +2768,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "uiris",
+              "channel_id": "channel-12",
+              "base_denom": "uiris",
               "chain_name": "irisnet"
             },
             "chain": {
-              "channel": "channel-182"
+              "channel_id": "channel-182"
             }
           }
         ]
@@ -2811,12 +2806,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "ujuno",
+              "channel_id": "channel-1",
+              "base_denom": "ujuno",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-207"
+              "channel_id": "channel-207"
             }
           }
         ]
@@ -2850,12 +2845,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+              "channel_id": "channel-1",
+              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-207"
+              "channel_id": "channel-207"
             }
           }
         ]
@@ -2888,12 +2883,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "nanolike",
+              "channel_id": "channel-5",
+              "base_denom": "nanolike",
               "chain_name": "likecoin"
             },
             "chain": {
-              "channel": "channel-217"
+              "channel_id": "channel-217"
             }
           }
         ]
@@ -2931,12 +2926,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "uosmo",
+              "channel_id": "channel-0",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-141"
+              "channel_id": "channel-141"
             }
           }
         ]
@@ -2971,12 +2966,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "uion",
+              "channel_id": "channel-0",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-141"
+              "channel_id": "channel-141"
             }
           }
         ]
@@ -3009,12 +3004,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-24",
-              "denom": "uxprt",
+              "channel_id": "channel-24",
+              "base_denom": "uxprt",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-190"
+              "channel_id": "channel-190"
             }
           }
         ]
@@ -3042,20 +3037,15 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-24",
-              "denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+              "channel_id": "channel-24",
+              "base_denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-190"
+              "channel_id": "channel-190"
             }
           }
         ],
-        "ibc": {
-          "source_channel": "channel-24",
-          "dst_channel": "channel-38",
-          "source_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
-        },
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
@@ -3089,12 +3079,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-11",
-              "denom": "uregen",
+              "channel_id": "channel-11",
+              "base_denom": "uregen",
               "chain_name": "regen"
             },
             "chain": {
-              "channel": "channel-185"
+              "channel_id": "channel-185"
             }
           }
         ]
@@ -3127,12 +3117,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "uscrt",
+              "channel_id": "channel-0",
+              "base_denom": "uscrt",
               "chain_name": "secretnetwork"
             },
             "chain": {
-              "channel": "channel-235"
+              "channel_id": "channel-235"
             }
           }
         ]
@@ -3164,12 +3154,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "udvpn",
+              "channel_id": "channel-12",
+              "base_denom": "udvpn",
               "chain_name": "sentinel"
             },
             "chain": {
-              "channel": "channel-186"
+              "channel_id": "channel-186"
             }
           }
         ]
@@ -3198,12 +3188,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "rowan",
+              "channel_id": "channel-0",
+              "base_denom": "rowan",
               "chain_name": "sifchain"
             },
             "chain": {
-              "channel": "channel-192"
+              "channel_id": "channel-192"
             }
           }
         ]
@@ -3236,12 +3226,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "uiov",
+              "channel_id": "channel-0",
+              "base_denom": "uiov",
               "chain_name": "starname"
             },
             "chain": {
-              "channel": "channel-158"
+              "channel_id": "channel-158"
             }
           }
         ]
@@ -3275,12 +3265,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ustrd",
+              "channel_id": "channel-0",
+              "base_denom": "ustrd",
               "chain_name": "stride"
             },
             "chain": {
-              "channel": "channel-391"
+              "channel_id": "channel-391"
             }
           }
         ]
@@ -3312,12 +3302,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "stuatom",
+              "channel_id": "channel-0",
+              "base_denom": "stuatom",
               "chain_name": "stride"
             },
             "chain": {
-              "channel": "channel-391"
+              "channel_id": "channel-391"
             }
           }
         ]
@@ -3349,12 +3339,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "stuosmo",
+              "channel_id": "channel-0",
+              "base_denom": "stuosmo",
               "chain_name": "stride"
             },
             "chain": {
-              "channel": "channel-391"
+              "channel_id": "channel-391"
             }
           }
         ]
@@ -3386,12 +3376,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "stujuno",
+              "channel_id": "channel-0",
+              "base_denom": "stujuno",
               "chain_name": "stride"
             },
             "chain": {
-              "channel": "channel-391"
+              "channel_id": "channel-391"
             }
           }
         ]
@@ -3423,12 +3413,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "uumee",
+              "channel_id": "channel-1",
+              "base_denom": "uumee",
               "chain_name": "umee"
             },
             "chain": {
-              "channel": "channel-288"
+              "channel_id": "channel-288"
             }
           }
         ]
@@ -3465,12 +3455,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-2",
-              "denom": "ubld",
+              "channel_id": "channel-2",
+              "base_denom": "ubld",
               "chain_name": "agoric"
             },
             "chain": {
-              "channel": "channel-11"
+              "channel_id": "channel-11"
             }
           }
         ]
@@ -3501,12 +3491,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-2",
-              "denom": "uist",
+              "channel_id": "channel-2",
+              "base_denom": "uist",
               "chain_name": "agoric"
             },
             "chain": {
-              "channel": "channel-11"
+              "channel_id": "channel-11"
             }
           }
         ]
@@ -3539,12 +3529,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "uaxl",
+              "channel_id": "channel-7",
+              "base_denom": "uaxl",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ]
@@ -3572,12 +3562,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "uusdc",
+              "channel_id": "channel-7",
+              "base_denom": "uusdc",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -3610,12 +3600,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "frax-wei",
+              "channel_id": "channel-7",
+              "base_denom": "frax-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -3648,12 +3638,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "dai-wei",
+              "channel_id": "channel-7",
+              "base_denom": "dai-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -3686,12 +3676,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "uusdt",
+              "channel_id": "channel-7",
+              "base_denom": "uusdt",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -3724,12 +3714,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "weth-wei",
+              "channel_id": "channel-7",
+              "base_denom": "weth-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -3761,12 +3751,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "wbtc-satoshi",
+              "channel_id": "channel-7",
+              "base_denom": "wbtc-satoshi",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -3798,12 +3788,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "aave-wei",
+              "channel_id": "channel-7",
+              "base_denom": "aave-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -3835,12 +3825,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "ape-wei",
+              "channel_id": "channel-7",
+              "base_denom": "ape-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -3872,12 +3862,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "axs-wei",
+              "channel_id": "channel-7",
+              "base_denom": "axs-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -3909,12 +3899,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "link-wei",
+              "channel_id": "channel-7",
+              "base_denom": "link-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -3947,12 +3937,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "mkr-wei",
+              "channel_id": "channel-7",
+              "base_denom": "mkr-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -3984,12 +3974,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "rai-wei",
+              "channel_id": "channel-7",
+              "base_denom": "rai-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -4021,12 +4011,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "shib-wei",
+              "channel_id": "channel-7",
+              "base_denom": "shib-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -4058,12 +4048,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "steth-wei",
+              "channel_id": "channel-7",
+              "base_denom": "steth-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -4095,12 +4085,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "uni-wei",
+              "channel_id": "channel-7",
+              "base_denom": "uni-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -4132,12 +4122,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "xcn-wei",
+              "channel_id": "channel-7",
+              "base_denom": "xcn-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -4169,12 +4159,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "dot-planck",
+              "channel_id": "channel-7",
+              "base_denom": "dot-planck",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -4207,12 +4197,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "wglmr-wei",
+              "channel_id": "channel-7",
+              "base_denom": "wglmr-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -4245,12 +4235,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "wmatic-wei",
+              "channel_id": "channel-7",
+              "base_denom": "wmatic-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
@@ -4288,12 +4278,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-326",
-              "denom": "uatom",
+              "channel_id": "channel-326",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -4327,12 +4317,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-62",
-              "denom": "ugraviton",
+              "channel_id": "channel-62",
+              "base_denom": "ugraviton",
               "chain_name": "gravitybridge"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -4370,12 +4360,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-297",
-              "denom": "uosmo",
+              "channel_id": "channel-297",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-9"
+              "channel_id": "channel-9"
             }
           }
         ]
@@ -4410,12 +4400,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-297",
-              "denom": "uion",
+              "channel_id": "channel-297",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-9"
+              "channel_id": "channel-9"
             }
           }
         ]
@@ -4448,12 +4438,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-24",
-              "denom": "uscrt",
+              "channel_id": "channel-24",
+              "base_denom": "uscrt",
               "chain_name": "secretnetwork"
             },
             "chain": {
-              "channel": "channel-10"
+              "channel_id": "channel-10"
             }
           }
         ]
@@ -4485,12 +4475,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-51",
-              "denom": "ustars",
+              "channel_id": "channel-51",
+              "base_denom": "ustars",
               "chain_name": "stargaze"
             },
             "chain": {
-              "channel": "channel-21"
+              "channel_id": "channel-21"
             }
           }
         ]
@@ -4528,12 +4518,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-14",
-              "denom": "uakt",
+              "channel_id": "channel-14",
+              "base_denom": "uakt",
               "chain_name": "akash"
             },
             "chain": {
-              "channel": "channel-21"
+              "channel_id": "channel-21"
             }
           }
         ]
@@ -4566,12 +4556,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-187",
-              "denom": "uatom",
+              "channel_id": "channel-187",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -4604,12 +4594,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-13",
-              "denom": "uiris",
+              "channel_id": "channel-13",
+              "base_denom": "uiris",
               "chain_name": "irisnet"
             },
             "chain": {
-              "channel": "channel-23"
+              "channel_id": "channel-23"
             }
           }
         ]
@@ -4647,12 +4637,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "uosmo",
+              "channel_id": "channel-5",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-10"
+              "channel_id": "channel-10"
             }
           }
         ]
@@ -4687,12 +4677,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "uion",
+              "channel_id": "channel-5",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-10"
+              "channel_id": "channel-10"
             }
           }
         ]
@@ -4725,12 +4715,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-11",
-              "denom": "uxprt",
+              "channel_id": "channel-11",
+              "base_denom": "uxprt",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -4758,20 +4748,15 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-11",
-              "denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+              "channel_id": "channel-11",
+              "base_denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ],
-        "ibc": {
-          "source_channel": "channel-24",
-          "dst_channel": "channel-38",
-          "source_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
-        },
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
@@ -4805,12 +4790,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "uregen",
+              "channel_id": "channel-12",
+              "base_denom": "uregen",
               "chain_name": "regen"
             },
             "chain": {
-              "channel": "channel-25"
+              "channel_id": "channel-25"
             }
           }
         ]
@@ -4842,12 +4827,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "udvpn",
+              "channel_id": "channel-7",
+              "base_denom": "udvpn",
               "chain_name": "sentinel"
             },
             "chain": {
-              "channel": "channel-19"
+              "channel_id": "channel-19"
             }
           }
         ]
@@ -4876,12 +4861,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-9",
-              "denom": "rowan",
+              "channel_id": "channel-9",
+              "base_denom": "rowan",
               "chain_name": "sifchain"
             },
             "chain": {
-              "channel": "channel-33"
+              "channel_id": "channel-33"
             }
           }
         ]
@@ -4914,12 +4899,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "uiov",
+              "channel_id": "channel-3",
+              "base_denom": "uiov",
               "chain_name": "starname"
             },
             "chain": {
-              "channel": "channel-22"
+              "channel_id": "channel-22"
             }
           }
         ]
@@ -4962,12 +4947,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-181",
-              "denom": "uosmo",
+              "channel_id": "channel-181",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -5002,12 +4987,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-181",
-              "denom": "uion",
+              "channel_id": "channel-181",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -5050,12 +5035,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-135",
-              "denom": "uosmo",
+              "channel_id": "channel-135",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -5090,12 +5075,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-135",
-              "denom": "uion",
+              "channel_id": "channel-135",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -5133,12 +5118,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-37",
-              "denom": "ujuno",
+              "channel_id": "channel-37",
+              "base_denom": "ujuno",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -5172,12 +5157,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-37",
-              "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+              "channel_id": "channel-37",
+              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -5215,12 +5200,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-128",
-              "denom": "uosmo",
+              "channel_id": "channel-128",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -5255,12 +5240,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-128",
-              "denom": "uion",
+              "channel_id": "channel-128",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -5298,12 +5283,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-202",
-              "denom": "uatom",
+              "channel_id": "channel-202",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -5336,12 +5321,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-23",
-              "denom": "uiris",
+              "channel_id": "channel-23",
+              "base_denom": "uiris",
               "chain_name": "irisnet"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -5374,12 +5359,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-9",
-              "denom": "ujuno",
+              "channel_id": "channel-9",
+              "base_denom": "ujuno",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-15"
+              "channel_id": "channel-15"
             }
           }
         ]
@@ -5413,12 +5398,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-9",
-              "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+              "channel_id": "channel-9",
+              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-15"
+              "channel_id": "channel-15"
             }
           }
         ]
@@ -5456,12 +5441,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-37",
-              "denom": "uosmo",
+              "channel_id": "channel-37",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -5496,12 +5481,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-37",
-              "denom": "uion",
+              "channel_id": "channel-37",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -5544,12 +5529,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-204",
-              "denom": "uosmo",
+              "channel_id": "channel-204",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -5584,12 +5569,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-204",
-              "denom": "uion",
+              "channel_id": "channel-204",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -5622,12 +5607,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-18",
-              "denom": "uscrt",
+              "channel_id": "channel-18",
+              "base_denom": "uscrt",
               "chain_name": "secretnetwork"
             },
             "chain": {
-              "channel": "channel-15"
+              "channel_id": "channel-15"
             }
           }
         ]
@@ -5670,12 +5655,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-229",
-              "denom": "uosmo",
+              "channel_id": "channel-229",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-10"
+              "channel_id": "channel-10"
             }
           }
         ]
@@ -5710,12 +5695,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-229",
-              "denom": "uion",
+              "channel_id": "channel-229",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-10"
+              "channel_id": "channel-10"
             }
           }
         ]
@@ -5758,12 +5743,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-236",
-              "denom": "uosmo",
+              "channel_id": "channel-236",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -5798,12 +5783,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-236",
-              "denom": "uion",
+              "channel_id": "channel-236",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -5846,12 +5831,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-235",
-              "denom": "uosmo",
+              "channel_id": "channel-235",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -5886,12 +5871,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-235",
-              "denom": "uion",
+              "channel_id": "channel-235",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -5930,12 +5915,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-2",
-              "denom": "ucre",
+              "channel_id": "channel-2",
+              "base_denom": "ucre",
               "chain_name": "crescent"
             },
             "chain": {
-              "channel": "channel-62"
+              "channel_id": "channel-62"
             }
           }
         ]
@@ -5969,12 +5954,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-2",
-              "denom": "ubcre",
+              "channel_id": "channel-2",
+              "base_denom": "ubcre",
               "chain_name": "crescent"
             },
             "chain": {
-              "channel": "channel-62"
+              "channel_id": "channel-62"
             }
           }
         ]
@@ -6012,12 +5997,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-144",
-              "denom": "uosmo",
+              "channel_id": "channel-144",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-10"
+              "channel_id": "channel-10"
             }
           }
         ]
@@ -6052,12 +6037,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-144",
-              "denom": "uion",
+              "channel_id": "channel-144",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-10"
+              "channel_id": "channel-10"
             }
           }
         ]
@@ -6090,12 +6075,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-17",
-              "denom": "uscrt",
+              "channel_id": "channel-17",
+              "base_denom": "uscrt",
               "chain_name": "secretnetwork"
             },
             "chain": {
-              "channel": "channel-79"
+              "channel_id": "channel-79"
             }
           }
         ]
@@ -6133,12 +6118,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-204",
-              "denom": "uatom",
+              "channel_id": "channel-204",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -6176,12 +6161,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-38",
-              "denom": "uosmo",
+              "channel_id": "channel-38",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ]
@@ -6216,12 +6201,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-38",
-              "denom": "uion",
+              "channel_id": "channel-38",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ]
@@ -6250,12 +6235,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-15",
-              "denom": "rowan",
+              "channel_id": "channel-15",
+              "base_denom": "rowan",
               "chain_name": "sifchain"
             },
             "chain": {
-              "channel": "channel-11"
+              "channel_id": "channel-11"
             }
           }
         ]
@@ -6298,12 +6283,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-122",
-              "denom": "uosmo",
+              "channel_id": "channel-122",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-8"
+              "channel_id": "channel-8"
             }
           }
         ]
@@ -6338,12 +6323,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-122",
-              "denom": "uion",
+              "channel_id": "channel-122",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-8"
+              "channel_id": "channel-8"
             }
           }
         ]
@@ -6376,12 +6361,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "uscrt",
+              "channel_id": "channel-7",
+              "base_denom": "uscrt",
               "chain_name": "secretnetwork"
             },
             "chain": {
-              "channel": "channel-74"
+              "channel_id": "channel-74"
             }
           }
         ]
@@ -6419,12 +6404,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-11",
-              "denom": "uakt",
+              "channel_id": "channel-11",
+              "base_denom": "uakt",
               "chain_name": "akash"
             },
             "chain": {
-              "channel": "channel-9"
+              "channel_id": "channel-9"
             }
           }
         ]
@@ -6457,12 +6442,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-182",
-              "denom": "uatom",
+              "channel_id": "channel-182",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-12"
+              "channel_id": "channel-12"
             }
           }
         ]
@@ -6494,12 +6479,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-23",
-              "denom": "basecro",
+              "channel_id": "channel-23",
+              "base_denom": "basecro",
               "chain_name": "cryptoorgchain"
             },
             "chain": {
-              "channel": "channel-13"
+              "channel_id": "channel-13"
             }
           }
         ]
@@ -6531,12 +6516,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-2",
-              "denom": "ungm",
+              "channel_id": "channel-2",
+              "base_denom": "ungm",
               "chain_name": "emoney"
             },
             "chain": {
-              "channel": "channel-23"
+              "channel_id": "channel-23"
             }
           }
         ]
@@ -6568,12 +6553,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-2",
-              "denom": "eeur",
+              "channel_id": "channel-2",
+              "base_denom": "eeur",
               "chain_name": "emoney"
             },
             "chain": {
-              "channel": "channel-23"
+              "channel_id": "channel-23"
             }
           }
         ]
@@ -6611,12 +6596,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-6",
-              "denom": "uosmo",
+              "channel_id": "channel-6",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-3"
+              "channel_id": "channel-3"
             }
           }
         ]
@@ -6651,12 +6636,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-6",
-              "denom": "uion",
+              "channel_id": "channel-6",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-3"
+              "channel_id": "channel-3"
             }
           }
         ]
@@ -6689,12 +6674,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-19",
-              "denom": "uxprt",
+              "channel_id": "channel-19",
+              "base_denom": "uxprt",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-15"
+              "channel_id": "channel-15"
             }
           }
         ]
@@ -6722,20 +6707,15 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-19",
-              "denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+              "channel_id": "channel-19",
+              "base_denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-15"
+              "channel_id": "channel-15"
             }
           }
         ],
-        "ibc": {
-          "source_channel": "channel-24",
-          "dst_channel": "channel-38",
-          "source_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
-        },
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
@@ -6769,12 +6749,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-9",
-              "denom": "uregen",
+              "channel_id": "channel-9",
+              "base_denom": "uregen",
               "chain_name": "regen"
             },
             "chain": {
-              "channel": "channel-16"
+              "channel_id": "channel-16"
             }
           }
         ]
@@ -6806,12 +6786,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-9",
-              "denom": "udvpn",
+              "channel_id": "channel-9",
+              "base_denom": "udvpn",
               "chain_name": "sentinel"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -6840,12 +6820,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-8",
-              "denom": "rowan",
+              "channel_id": "channel-8",
+              "base_denom": "rowan",
               "chain_name": "sifchain"
             },
             "chain": {
-              "channel": "channel-19"
+              "channel_id": "channel-19"
             }
           }
         ]
@@ -6878,12 +6858,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-11",
-              "denom": "uiov",
+              "channel_id": "channel-11",
+              "base_denom": "uiov",
               "chain_name": "starname"
             },
             "chain": {
-              "channel": "channel-21"
+              "channel_id": "channel-21"
             }
           }
         ]
@@ -6921,12 +6901,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-35",
-              "denom": "uakt",
+              "channel_id": "channel-35",
+              "base_denom": "uakt",
               "chain_name": "akash"
             },
             "chain": {
-              "channel": "channel-29"
+              "channel_id": "channel-29"
             }
           }
         ]
@@ -6958,12 +6938,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-2",
-              "denom": "umntl",
+              "channel_id": "channel-2",
+              "base_denom": "umntl",
               "chain_name": "assetmantle"
             },
             "chain": {
-              "channel": "channel-83"
+              "channel_id": "channel-83"
             }
           }
         ]
@@ -6996,12 +6976,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "uaxl",
+              "channel_id": "channel-4",
+              "base_denom": "uaxl",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ]
@@ -7029,12 +7009,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "uusdc",
+              "channel_id": "channel-4",
+              "base_denom": "uusdc",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7067,12 +7047,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "frax-wei",
+              "channel_id": "channel-4",
+              "base_denom": "frax-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7105,12 +7085,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "dai-wei",
+              "channel_id": "channel-4",
+              "base_denom": "dai-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7143,12 +7123,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "uusdt",
+              "channel_id": "channel-4",
+              "base_denom": "uusdt",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7181,12 +7161,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "weth-wei",
+              "channel_id": "channel-4",
+              "base_denom": "weth-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7218,12 +7198,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "wbtc-satoshi",
+              "channel_id": "channel-4",
+              "base_denom": "wbtc-satoshi",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7255,12 +7235,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "aave-wei",
+              "channel_id": "channel-4",
+              "base_denom": "aave-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7292,12 +7272,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "ape-wei",
+              "channel_id": "channel-4",
+              "base_denom": "ape-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7329,12 +7309,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "axs-wei",
+              "channel_id": "channel-4",
+              "base_denom": "axs-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7366,12 +7346,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "link-wei",
+              "channel_id": "channel-4",
+              "base_denom": "link-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7404,12 +7384,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "mkr-wei",
+              "channel_id": "channel-4",
+              "base_denom": "mkr-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7441,12 +7421,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "rai-wei",
+              "channel_id": "channel-4",
+              "base_denom": "rai-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7478,12 +7458,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "shib-wei",
+              "channel_id": "channel-4",
+              "base_denom": "shib-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7515,12 +7495,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "steth-wei",
+              "channel_id": "channel-4",
+              "base_denom": "steth-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7552,12 +7532,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "uni-wei",
+              "channel_id": "channel-4",
+              "base_denom": "uni-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7589,12 +7569,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "xcn-wei",
+              "channel_id": "channel-4",
+              "base_denom": "xcn-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7626,12 +7606,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "dot-planck",
+              "channel_id": "channel-4",
+              "base_denom": "dot-planck",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7664,12 +7644,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "wglmr-wei",
+              "channel_id": "channel-4",
+              "base_denom": "wglmr-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7702,12 +7682,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "wmatic-wei",
+              "channel_id": "channel-4",
+              "base_denom": "wmatic-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-71"
+              "channel_id": "channel-71"
             }
           }
         ],
@@ -7745,12 +7725,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-10",
-              "denom": "ubcna",
+              "channel_id": "channel-10",
+              "base_denom": "ubcna",
               "chain_name": "bitcanna"
             },
             "chain": {
-              "channel": "channel-50"
+              "channel_id": "channel-50"
             }
           }
         ]
@@ -7784,12 +7764,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ubtsg",
+              "channel_id": "channel-5",
+              "base_denom": "ubtsg",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -7820,12 +7800,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09",
+              "channel_id": "channel-5",
+              "base_denom": "ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -7856,12 +7836,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7",
+              "channel_id": "channel-5",
+              "base_denom": "ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -7892,12 +7872,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ft575B10B0CEE2C164D9ED6A96313496F164A9607C",
+              "channel_id": "channel-5",
+              "base_denom": "ft575B10B0CEE2C164D9ED6A96313496F164A9607C",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -7928,12 +7908,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305",
+              "channel_id": "channel-5",
+              "base_denom": "ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -7964,12 +7944,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ft52EEB0EE509AC546ED92EAC8591F731F213DDD16",
+              "channel_id": "channel-5",
+              "base_denom": "ft52EEB0EE509AC546ED92EAC8591F731F213DDD16",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -8000,12 +7980,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A",
+              "channel_id": "channel-5",
+              "base_denom": "ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -8036,12 +8016,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ft85AE1716C5E39EA6D64BBD7898C3899A7B500626",
+              "channel_id": "channel-5",
+              "base_denom": "ft85AE1716C5E39EA6D64BBD7898C3899A7B500626",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -8072,12 +8052,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A",
+              "channel_id": "channel-5",
+              "base_denom": "ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -8108,12 +8088,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ft387C1C279D962ED80C09C1D592A92C4275FD7C5D",
+              "channel_id": "channel-5",
+              "base_denom": "ft387C1C279D962ED80C09C1D592A92C4275FD7C5D",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -8144,12 +8124,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB",
+              "channel_id": "channel-5",
+              "base_denom": "ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -8180,12 +8160,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B",
+              "channel_id": "channel-5",
+              "base_denom": "ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -8216,12 +8196,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE",
+              "channel_id": "channel-5",
+              "base_denom": "ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -8252,12 +8232,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12",
+              "channel_id": "channel-5",
+              "base_denom": "ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -8288,12 +8268,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3",
+              "channel_id": "channel-5",
+              "base_denom": "ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -8325,12 +8305,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-11",
-              "denom": "uhuahua",
+              "channel_id": "channel-11",
+              "base_denom": "uhuahua",
               "chain_name": "chihuahua"
             },
             "chain": {
-              "channel": "channel-28"
+              "channel_id": "channel-28"
             }
           }
         ]
@@ -8362,12 +8342,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-18",
-              "denom": "ucmdx",
+              "channel_id": "channel-18",
+              "base_denom": "ucmdx",
               "chain_name": "comdex"
             },
             "chain": {
-              "channel": "channel-36"
+              "channel_id": "channel-36"
             }
           }
         ]
@@ -8400,12 +8380,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-207",
-              "denom": "uatom",
+              "channel_id": "channel-207",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -8437,12 +8417,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-2",
-              "denom": "udig",
+              "channel_id": "channel-2",
+              "base_denom": "udig",
               "chain_name": "dig"
             },
             "chain": {
-              "channel": "channel-37"
+              "channel_id": "channel-37"
             }
           }
         ]
@@ -8474,12 +8454,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-15",
-              "denom": "ungm",
+              "channel_id": "channel-15",
+              "base_denom": "ungm",
               "chain_name": "emoney"
             },
             "chain": {
-              "channel": "channel-9"
+              "channel_id": "channel-9"
             }
           }
         ]
@@ -8511,12 +8491,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-15",
-              "denom": "eeur",
+              "channel_id": "channel-15",
+              "base_denom": "eeur",
               "chain_name": "emoney"
             },
             "chain": {
-              "channel": "channel-9"
+              "channel_id": "channel-9"
             }
           }
         ]
@@ -8554,12 +8534,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-42",
-              "denom": "uosmo",
+              "channel_id": "channel-42",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -8594,12 +8574,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-42",
-              "denom": "uion",
+              "channel_id": "channel-42",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -8632,12 +8612,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-37",
-              "denom": "uxprt",
+              "channel_id": "channel-37",
+              "base_denom": "uxprt",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-33"
+              "channel_id": "channel-33"
             }
           }
         ]
@@ -8665,20 +8645,15 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-37",
-              "denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+              "channel_id": "channel-37",
+              "base_denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-33"
+              "channel_id": "channel-33"
             }
           }
         ],
-        "ibc": {
-          "source_channel": "channel-24",
-          "dst_channel": "channel-38",
-          "source_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
-        },
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
@@ -8713,12 +8688,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-8",
-              "denom": "uscrt",
+              "channel_id": "channel-8",
+              "base_denom": "uscrt",
               "chain_name": "secretnetwork"
             },
             "chain": {
-              "channel": "channel-48"
+              "channel_id": "channel-48"
             }
           }
         ]
@@ -8747,12 +8722,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-14",
-              "denom": "rowan",
+              "channel_id": "channel-14",
+              "base_denom": "rowan",
               "chain_name": "sifchain"
             },
             "chain": {
-              "channel": "channel-5"
+              "channel_id": "channel-5"
             }
           }
         ]
@@ -8784,12 +8759,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ustars",
+              "channel_id": "channel-5",
+              "base_denom": "ustars",
               "chain_name": "stargaze"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ]
@@ -8832,12 +8807,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "uluna",
+              "channel_id": "channel-20",
+              "base_denom": "uluna",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -8880,12 +8855,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "uusd",
+              "channel_id": "channel-20",
+              "base_denom": "uusd",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -8928,12 +8903,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "ukrw",
+              "channel_id": "channel-20",
+              "base_denom": "ukrw",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -8975,12 +8950,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "uaud",
+              "channel_id": "channel-20",
+              "base_denom": "uaud",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9022,12 +8997,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "ucad",
+              "channel_id": "channel-20",
+              "base_denom": "ucad",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9069,12 +9044,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "uchf",
+              "channel_id": "channel-20",
+              "base_denom": "uchf",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9116,12 +9091,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "ucny",
+              "channel_id": "channel-20",
+              "base_denom": "ucny",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9163,12 +9138,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "udkk",
+              "channel_id": "channel-20",
+              "base_denom": "udkk",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9210,12 +9185,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "ueur",
+              "channel_id": "channel-20",
+              "base_denom": "ueur",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9257,12 +9232,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "ugbp",
+              "channel_id": "channel-20",
+              "base_denom": "ugbp",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9304,12 +9279,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "uhkd",
+              "channel_id": "channel-20",
+              "base_denom": "uhkd",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9351,12 +9326,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "uidr",
+              "channel_id": "channel-20",
+              "base_denom": "uidr",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9398,12 +9373,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "uinr",
+              "channel_id": "channel-20",
+              "base_denom": "uinr",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9445,12 +9420,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "ujpy",
+              "channel_id": "channel-20",
+              "base_denom": "ujpy",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9492,12 +9467,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "umnt",
+              "channel_id": "channel-20",
+              "base_denom": "umnt",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9539,12 +9514,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "umyr",
+              "channel_id": "channel-20",
+              "base_denom": "umyr",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9586,12 +9561,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "unok",
+              "channel_id": "channel-20",
+              "base_denom": "unok",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9633,12 +9608,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "uphp",
+              "channel_id": "channel-20",
+              "base_denom": "uphp",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9680,12 +9655,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "usdr",
+              "channel_id": "channel-20",
+              "base_denom": "usdr",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9727,12 +9702,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "usek",
+              "channel_id": "channel-20",
+              "base_denom": "usek",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9774,12 +9749,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "usgd",
+              "channel_id": "channel-20",
+              "base_denom": "usgd",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9821,12 +9796,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "uthb",
+              "channel_id": "channel-20",
+              "base_denom": "uthb",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9868,12 +9843,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "utwd",
+              "channel_id": "channel-20",
+              "base_denom": "utwd",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -9916,12 +9891,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-143",
-              "denom": "uosmo",
+              "channel_id": "channel-143",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -9956,12 +9931,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-143",
-              "denom": "uion",
+              "channel_id": "channel-143",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -10004,12 +9979,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-77",
-              "denom": "uosmo",
+              "channel_id": "channel-77",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -10044,12 +10019,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-77",
-              "denom": "uion",
+              "channel_id": "channel-77",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -10092,12 +10067,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-171",
-              "denom": "uosmo",
+              "channel_id": "channel-171",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -10132,12 +10107,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-171",
-              "denom": "uion",
+              "channel_id": "channel-171",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -10180,12 +10155,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-259",
-              "denom": "uosmo",
+              "channel_id": "channel-259",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-3"
+              "channel_id": "channel-3"
             }
           }
         ]
@@ -10220,12 +10195,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-259",
-              "denom": "uion",
+              "channel_id": "channel-259",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-3"
+              "channel_id": "channel-3"
             }
           }
         ]
@@ -10263,12 +10238,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-217",
-              "denom": "uatom",
+              "channel_id": "channel-217",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-5"
+              "channel_id": "channel-5"
             }
           }
         ]
@@ -10306,12 +10281,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-53",
-              "denom": "uosmo",
+              "channel_id": "channel-53",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-3"
+              "channel_id": "channel-3"
             }
           }
         ]
@@ -10346,12 +10321,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-53",
-              "denom": "uion",
+              "channel_id": "channel-53",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-3"
+              "channel_id": "channel-3"
             }
           }
         ]
@@ -10394,12 +10369,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-286",
-              "denom": "uosmo",
+              "channel_id": "channel-286",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-3"
+              "channel_id": "channel-3"
             }
           }
         ]
@@ -10434,12 +10409,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-286",
-              "denom": "uion",
+              "channel_id": "channel-286",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-3"
+              "channel_id": "channel-3"
             }
           }
         ]
@@ -10482,12 +10457,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-115",
-              "denom": "uosmo",
+              "channel_id": "channel-115",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-3"
+              "channel_id": "channel-3"
             }
           }
         ]
@@ -10522,12 +10497,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-115",
-              "denom": "uion",
+              "channel_id": "channel-115",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-3"
+              "channel_id": "channel-3"
             }
           }
         ]
@@ -10570,12 +10545,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-238",
-              "denom": "uosmo",
+              "channel_id": "channel-238",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -10610,12 +10585,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-238",
-              "denom": "uion",
+              "channel_id": "channel-238",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -10658,12 +10633,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-39",
-              "denom": "uosmo",
+              "channel_id": "channel-39",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-16"
+              "channel_id": "channel-16"
             }
           }
         ]
@@ -10698,12 +10673,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-39",
-              "denom": "uion",
+              "channel_id": "channel-39",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-16"
+              "channel_id": "channel-16"
             }
           }
         ]
@@ -10740,12 +10715,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-13",
-              "denom": "umntl",
+              "channel_id": "channel-13",
+              "base_denom": "umntl",
               "chain_name": "assetmantle"
             },
             "chain": {
-              "channel": "channel-23"
+              "channel_id": "channel-23"
             }
           }
         ]
@@ -10777,12 +10752,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-24",
-              "denom": "uhuahua",
+              "channel_id": "channel-24",
+              "base_denom": "uhuahua",
               "chain_name": "chihuahua"
             },
             "chain": {
-              "channel": "channel-5"
+              "channel_id": "channel-5"
             }
           }
         ]
@@ -10816,12 +10791,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-2",
-              "denom": "uvdl",
+              "channel_id": "channel-2",
+              "base_denom": "uvdl",
               "chain_name": "vidulum"
             },
             "chain": {
-              "channel": "channel-14"
+              "channel_id": "channel-14"
             }
           }
         ]
@@ -10864,12 +10839,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-216",
-              "denom": "uosmo",
+              "channel_id": "channel-216",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-13"
+              "channel_id": "channel-13"
             }
           }
         ]
@@ -10904,12 +10879,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-216",
-              "denom": "uion",
+              "channel_id": "channel-216",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-13"
+              "channel_id": "channel-13"
             }
           }
         ]
@@ -10946,12 +10921,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "ubld",
+              "channel_id": "channel-1",
+              "base_denom": "ubld",
               "chain_name": "agoric"
             },
             "chain": {
-              "channel": "channel-320"
+              "channel_id": "channel-320"
             }
           }
         ]
@@ -10982,12 +10957,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "uist",
+              "channel_id": "channel-1",
+              "base_denom": "uist",
               "chain_name": "agoric"
             },
             "chain": {
-              "channel": "channel-320"
+              "channel_id": "channel-320"
             }
           }
         ]
@@ -11020,12 +10995,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-9",
-              "denom": "uakt",
+              "channel_id": "channel-9",
+              "base_denom": "uakt",
               "chain_name": "akash"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -11057,12 +11032,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "umntl",
+              "channel_id": "channel-0",
+              "base_denom": "umntl",
               "chain_name": "assetmantle"
             },
             "chain": {
-              "channel": "channel-232"
+              "channel_id": "channel-232"
             }
           }
         ]
@@ -11095,12 +11070,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "uaxl",
+              "channel_id": "channel-3",
+              "base_denom": "uaxl",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ]
@@ -11128,12 +11103,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "uusdc",
+              "channel_id": "channel-3",
+              "base_denom": "uusdc",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11166,12 +11141,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "frax-wei",
+              "channel_id": "channel-3",
+              "base_denom": "frax-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11204,12 +11179,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "dai-wei",
+              "channel_id": "channel-3",
+              "base_denom": "dai-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11242,12 +11217,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "uusdt",
+              "channel_id": "channel-3",
+              "base_denom": "uusdt",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11280,12 +11255,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "weth-wei",
+              "channel_id": "channel-3",
+              "base_denom": "weth-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11317,12 +11292,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "wbtc-satoshi",
+              "channel_id": "channel-3",
+              "base_denom": "wbtc-satoshi",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11354,12 +11329,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "aave-wei",
+              "channel_id": "channel-3",
+              "base_denom": "aave-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11391,12 +11366,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "ape-wei",
+              "channel_id": "channel-3",
+              "base_denom": "ape-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11428,12 +11403,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "axs-wei",
+              "channel_id": "channel-3",
+              "base_denom": "axs-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11465,12 +11440,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "link-wei",
+              "channel_id": "channel-3",
+              "base_denom": "link-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11503,12 +11478,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "mkr-wei",
+              "channel_id": "channel-3",
+              "base_denom": "mkr-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11540,12 +11515,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "rai-wei",
+              "channel_id": "channel-3",
+              "base_denom": "rai-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11577,12 +11552,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "shib-wei",
+              "channel_id": "channel-3",
+              "base_denom": "shib-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11614,12 +11589,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "steth-wei",
+              "channel_id": "channel-3",
+              "base_denom": "steth-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11651,12 +11626,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "uni-wei",
+              "channel_id": "channel-3",
+              "base_denom": "uni-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11688,12 +11663,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "xcn-wei",
+              "channel_id": "channel-3",
+              "base_denom": "xcn-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11725,12 +11700,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "dot-planck",
+              "channel_id": "channel-3",
+              "base_denom": "dot-planck",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11763,12 +11738,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "wglmr-wei",
+              "channel_id": "channel-3",
+              "base_denom": "wglmr-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11801,12 +11776,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "wmatic-wei",
+              "channel_id": "channel-3",
+              "base_denom": "wmatic-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-208"
+              "channel_id": "channel-208"
             }
           }
         ],
@@ -11844,12 +11819,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-83",
-              "denom": "uband",
+              "channel_id": "channel-83",
+              "base_denom": "uband",
               "chain_name": "bandchain"
             },
             "chain": {
-              "channel": "channel-148"
+              "channel_id": "channel-148"
             }
           }
         ]
@@ -11882,12 +11857,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "ubcna",
+              "channel_id": "channel-1",
+              "base_denom": "ubcna",
               "chain_name": "bitcanna"
             },
             "chain": {
-              "channel": "channel-51"
+              "channel_id": "channel-51"
             }
           }
         ]
@@ -11921,12 +11896,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ubtsg",
+              "channel_id": "channel-0",
+              "base_denom": "ubtsg",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-73"
+              "channel_id": "channel-73"
             }
           }
         ]
@@ -11957,12 +11932,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09",
+              "channel_id": "channel-0",
+              "base_denom": "ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-73"
+              "channel_id": "channel-73"
             }
           }
         ]
@@ -11993,12 +11968,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7",
+              "channel_id": "channel-0",
+              "base_denom": "ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-73"
+              "channel_id": "channel-73"
             }
           }
         ]
@@ -12029,12 +12004,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ft575B10B0CEE2C164D9ED6A96313496F164A9607C",
+              "channel_id": "channel-0",
+              "base_denom": "ft575B10B0CEE2C164D9ED6A96313496F164A9607C",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-73"
+              "channel_id": "channel-73"
             }
           }
         ]
@@ -12065,12 +12040,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305",
+              "channel_id": "channel-0",
+              "base_denom": "ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-73"
+              "channel_id": "channel-73"
             }
           }
         ]
@@ -12101,12 +12076,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ft52EEB0EE509AC546ED92EAC8591F731F213DDD16",
+              "channel_id": "channel-0",
+              "base_denom": "ft52EEB0EE509AC546ED92EAC8591F731F213DDD16",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-73"
+              "channel_id": "channel-73"
             }
           }
         ]
@@ -12137,12 +12112,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A",
+              "channel_id": "channel-0",
+              "base_denom": "ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-73"
+              "channel_id": "channel-73"
             }
           }
         ]
@@ -12173,12 +12148,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ft85AE1716C5E39EA6D64BBD7898C3899A7B500626",
+              "channel_id": "channel-0",
+              "base_denom": "ft85AE1716C5E39EA6D64BBD7898C3899A7B500626",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-73"
+              "channel_id": "channel-73"
             }
           }
         ]
@@ -12209,12 +12184,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A",
+              "channel_id": "channel-0",
+              "base_denom": "ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-73"
+              "channel_id": "channel-73"
             }
           }
         ]
@@ -12245,12 +12220,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ft387C1C279D962ED80C09C1D592A92C4275FD7C5D",
+              "channel_id": "channel-0",
+              "base_denom": "ft387C1C279D962ED80C09C1D592A92C4275FD7C5D",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-73"
+              "channel_id": "channel-73"
             }
           }
         ]
@@ -12281,12 +12256,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB",
+              "channel_id": "channel-0",
+              "base_denom": "ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-73"
+              "channel_id": "channel-73"
             }
           }
         ]
@@ -12317,12 +12292,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B",
+              "channel_id": "channel-0",
+              "base_denom": "ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-73"
+              "channel_id": "channel-73"
             }
           }
         ]
@@ -12353,12 +12328,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE",
+              "channel_id": "channel-0",
+              "base_denom": "ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-73"
+              "channel_id": "channel-73"
             }
           }
         ]
@@ -12389,12 +12364,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12",
+              "channel_id": "channel-0",
+              "base_denom": "ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-73"
+              "channel_id": "channel-73"
             }
           }
         ]
@@ -12425,12 +12400,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3",
+              "channel_id": "channel-0",
+              "base_denom": "ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3",
               "chain_name": "bitsong"
             },
             "chain": {
-              "channel": "channel-73"
+              "channel_id": "channel-73"
             }
           }
         ]
@@ -12458,12 +12433,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-2",
-              "denom": "boot",
+              "channel_id": "channel-2",
+              "base_denom": "boot",
               "chain_name": "bostrom"
             },
             "chain": {
-              "channel": "channel-95"
+              "channel_id": "channel-95"
             }
           }
         ]
@@ -12499,12 +12474,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "swth",
+              "channel_id": "channel-0",
+              "base_denom": "swth",
               "chain_name": "carbon"
             },
             "chain": {
-              "channel": "channel-188"
+              "channel_id": "channel-188"
             }
           }
         ]
@@ -12536,12 +12511,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "ucrbrus",
+              "channel_id": "channel-1",
+              "base_denom": "ucrbrus",
               "chain_name": "cerberus"
             },
             "chain": {
-              "channel": "channel-212"
+              "channel_id": "channel-212"
             }
           }
         ]
@@ -12574,12 +12549,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ncheq",
+              "channel_id": "channel-0",
+              "base_denom": "ncheq",
               "chain_name": "cheqd"
             },
             "chain": {
-              "channel": "channel-108"
+              "channel_id": "channel-108"
             }
           }
         ]
@@ -12611,12 +12586,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "uhuahua",
+              "channel_id": "channel-7",
+              "base_denom": "uhuahua",
               "chain_name": "chihuahua"
             },
             "chain": {
-              "channel": "channel-113"
+              "channel_id": "channel-113"
             }
           }
         ]
@@ -12648,12 +12623,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "ucmdx",
+              "channel_id": "channel-1",
+              "base_denom": "ucmdx",
               "chain_name": "comdex"
             },
             "chain": {
-              "channel": "channel-87"
+              "channel_id": "channel-87"
             }
           }
         ]
@@ -12686,12 +12661,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-141",
-              "denom": "uatom",
+              "channel_id": "channel-141",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -12725,12 +12700,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-9",
-              "denom": "ucre",
+              "channel_id": "channel-9",
+              "base_denom": "ucre",
               "chain_name": "crescent"
             },
             "chain": {
-              "channel": "channel-297"
+              "channel_id": "channel-297"
             }
           }
         ]
@@ -12764,12 +12739,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-9",
-              "denom": "ubcre",
+              "channel_id": "channel-9",
+              "base_denom": "ubcre",
               "chain_name": "crescent"
             },
             "chain": {
-              "channel": "channel-297"
+              "channel_id": "channel-297"
             }
           }
         ]
@@ -12801,12 +12776,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-10",
-              "denom": "basecro",
+              "channel_id": "channel-10",
+              "base_denom": "basecro",
               "chain_name": "cryptoorgchain"
             },
             "chain": {
-              "channel": "channel-5"
+              "channel_id": "channel-5"
             }
           }
         ]
@@ -12840,12 +12815,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "udec",
+              "channel_id": "channel-1",
+              "base_denom": "udec",
               "chain_name": "decentr"
             },
             "chain": {
-              "channel": "channel-181"
+              "channel_id": "channel-181"
             }
           }
         ]
@@ -12879,12 +12854,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-2",
-              "denom": "udsm",
+              "channel_id": "channel-2",
+              "base_denom": "udsm",
               "chain_name": "desmos"
             },
             "chain": {
-              "channel": "channel-135"
+              "channel_id": "channel-135"
             }
           }
         ]
@@ -12916,12 +12891,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "udig",
+              "channel_id": "channel-1",
+              "base_denom": "udig",
               "chain_name": "dig"
             },
             "chain": {
-              "channel": "channel-128"
+              "channel_id": "channel-128"
             }
           }
         ]
@@ -12953,12 +12928,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ungm",
+              "channel_id": "channel-0",
+              "base_denom": "ungm",
               "chain_name": "emoney"
             },
             "chain": {
-              "channel": "channel-37"
+              "channel_id": "channel-37"
             }
           }
         ]
@@ -12990,12 +12965,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "eeur",
+              "channel_id": "channel-0",
+              "base_denom": "eeur",
               "chain_name": "emoney"
             },
             "chain": {
-              "channel": "channel-37"
+              "channel_id": "channel-37"
             }
           }
         ]
@@ -13028,12 +13003,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "aevmos",
+              "channel_id": "channel-0",
+              "base_denom": "aevmos",
               "chain_name": "evmos"
             },
             "chain": {
-              "channel": "channel-204"
+              "channel_id": "channel-204"
             }
           }
         ]
@@ -13066,12 +13041,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-10",
-              "denom": "afet",
+              "channel_id": "channel-10",
+              "base_denom": "afet",
               "chain_name": "fetchhub"
             },
             "chain": {
-              "channel": "channel-229"
+              "channel_id": "channel-229"
             }
           }
         ]
@@ -13103,12 +13078,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-10",
-              "denom": "nanomobx",
+              "channel_id": "channel-10",
+              "base_denom": "nanomobx",
               "chain_name": "fetchhub"
             },
             "chain": {
-              "channel": "channel-229"
+              "channel_id": "channel-229"
             }
           }
         ]
@@ -13140,12 +13115,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "uglx",
+              "channel_id": "channel-0",
+              "base_denom": "uglx",
               "chain_name": "galaxy"
             },
             "chain": {
-              "channel": "channel-236"
+              "channel_id": "channel-236"
             }
           }
         ]
@@ -13177,12 +13152,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "el1",
+              "channel_id": "channel-1",
+              "base_denom": "el1",
               "chain_name": "genesisl1"
             },
             "chain": {
-              "channel": "channel-235"
+              "channel_id": "channel-235"
             }
           }
         ]
@@ -13216,12 +13191,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-10",
-              "denom": "ugraviton",
+              "channel_id": "channel-10",
+              "base_denom": "ugraviton",
               "chain_name": "gravitybridge"
             },
             "chain": {
-              "channel": "channel-144"
+              "channel_id": "channel-144"
             }
           }
         ]
@@ -13253,12 +13228,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "uixo",
+              "channel_id": "channel-4",
+              "base_denom": "uixo",
               "chain_name": "impacthub"
             },
             "chain": {
-              "channel": "channel-38"
+              "channel_id": "channel-38"
             }
           }
         ]
@@ -13291,12 +13266,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-8",
-              "denom": "inj",
+              "channel_id": "channel-8",
+              "base_denom": "inj",
               "chain_name": "injective"
             },
             "chain": {
-              "channel": "channel-122"
+              "channel_id": "channel-122"
             }
           }
         ]
@@ -13329,12 +13304,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "uiris",
+              "channel_id": "channel-3",
+              "base_denom": "uiris",
               "chain_name": "irisnet"
             },
             "chain": {
-              "channel": "channel-6"
+              "channel_id": "channel-6"
             }
           }
         ]
@@ -13367,12 +13342,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ujuno",
+              "channel_id": "channel-0",
+              "base_denom": "ujuno",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-42"
+              "channel_id": "channel-42"
             }
           }
         ]
@@ -13406,12 +13381,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+              "channel_id": "channel-0",
+              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-42"
+              "channel_id": "channel-42"
             }
           }
         ]
@@ -13443,12 +13418,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "ukava",
+              "channel_id": "channel-1",
+              "base_denom": "ukava",
               "chain_name": "kava"
             },
             "chain": {
-              "channel": "channel-143"
+              "channel_id": "channel-143"
             }
           }
         ]
@@ -13481,12 +13456,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "hard",
+              "channel_id": "channel-1",
+              "base_denom": "hard",
               "chain_name": "kava"
             },
             "chain": {
-              "channel": "channel-143"
+              "channel_id": "channel-143"
             }
           }
         ]
@@ -13519,12 +13494,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "swp",
+              "channel_id": "channel-1",
+              "base_denom": "swp",
               "chain_name": "kava"
             },
             "chain": {
-              "channel": "channel-143"
+              "channel_id": "channel-143"
             }
           }
         ]
@@ -13556,12 +13531,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "usdx",
+              "channel_id": "channel-1",
+              "base_denom": "usdx",
               "chain_name": "kava"
             },
             "chain": {
-              "channel": "channel-143"
+              "channel_id": "channel-143"
             }
           }
         ]
@@ -13594,12 +13569,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "uxki",
+              "channel_id": "channel-0",
+              "base_denom": "uxki",
               "chain_name": "kichain"
             },
             "chain": {
-              "channel": "channel-77"
+              "channel_id": "channel-77"
             }
           }
         ]
@@ -13632,12 +13607,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "udarc",
+              "channel_id": "channel-0",
+              "base_denom": "udarc",
               "chain_name": "konstellation"
             },
             "chain": {
-              "channel": "channel-171"
+              "channel_id": "channel-171"
             }
           }
         ]
@@ -13669,12 +13644,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "ukuji",
+              "channel_id": "channel-3",
+              "base_denom": "ukuji",
               "chain_name": "kujira"
             },
             "chain": {
-              "channel": "channel-259"
+              "channel_id": "channel-259"
             }
           }
         ]
@@ -13707,12 +13682,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "nanolike",
+              "channel_id": "channel-3",
+              "base_denom": "nanolike",
               "chain_name": "likecoin"
             },
             "chain": {
-              "channel": "channel-53"
+              "channel_id": "channel-53"
             }
           }
         ]
@@ -13743,12 +13718,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "ulumen",
+              "channel_id": "channel-3",
+              "base_denom": "ulumen",
               "chain_name": "lumenx"
             },
             "chain": {
-              "channel": "channel-286"
+              "channel_id": "channel-286"
             }
           }
         ]
@@ -13781,12 +13756,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "ulum",
+              "channel_id": "channel-3",
+              "base_denom": "ulum",
               "chain_name": "lumnetwork"
             },
             "chain": {
-              "channel": "channel-115"
+              "channel_id": "channel-115"
             }
           }
         ]
@@ -13818,12 +13793,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "umeme",
+              "channel_id": "channel-1",
+              "base_denom": "umeme",
               "chain_name": "meme"
             },
             "chain": {
-              "channel": "channel-238"
+              "channel_id": "channel-238"
             }
           }
         ]
@@ -13855,12 +13830,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "utick",
+              "channel_id": "channel-16",
+              "base_denom": "utick",
               "chain_name": "microtick"
             },
             "chain": {
-              "channel": "channel-39"
+              "channel_id": "channel-39"
             }
           }
         ]
@@ -13893,12 +13868,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-13",
-              "denom": "orai",
+              "channel_id": "channel-13",
+              "base_denom": "orai",
               "chain_name": "oraichain"
             },
             "chain": {
-              "channel": "channel-216"
+              "channel_id": "channel-216"
             }
           }
         ]
@@ -13930,12 +13905,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "umed",
+              "channel_id": "channel-1",
+              "base_denom": "umed",
               "chain_name": "panacea"
             },
             "chain": {
-              "channel": "channel-82"
+              "channel_id": "channel-82"
             }
           }
         ]
@@ -13968,12 +13943,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-6",
-              "denom": "uxprt",
+              "channel_id": "channel-6",
+              "base_denom": "uxprt",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ]
@@ -14001,20 +13976,15 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-6",
-              "denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+              "channel_id": "channel-6",
+              "base_denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-4"
+              "channel_id": "channel-4"
             }
           }
         ],
-        "ibc": {
-          "source_channel": "channel-24",
-          "dst_channel": "channel-38",
-          "source_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
-        },
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
@@ -14050,12 +14020,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "nhash",
+              "channel_id": "channel-7",
+              "base_denom": "nhash",
               "chain_name": "provenance"
             },
             "chain": {
-              "channel": "channel-222"
+              "channel_id": "channel-222"
             }
           }
         ]
@@ -14087,12 +14057,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "uregen",
+              "channel_id": "channel-1",
+              "base_denom": "uregen",
               "chain_name": "regen"
             },
             "chain": {
-              "channel": "channel-8"
+              "channel_id": "channel-8"
             }
           }
         ]
@@ -14125,12 +14095,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "uatolo",
+              "channel_id": "channel-1",
+              "base_denom": "uatolo",
               "chain_name": "rizon"
             },
             "chain": {
-              "channel": "channel-221"
+              "channel_id": "channel-221"
             }
           }
         ]
@@ -14163,12 +14133,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "uscrt",
+              "channel_id": "channel-1",
+              "base_denom": "uscrt",
               "chain_name": "secretnetwork"
             },
             "chain": {
-              "channel": "channel-88"
+              "channel_id": "channel-88"
             }
           }
         ]
@@ -14200,12 +14170,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "udvpn",
+              "channel_id": "channel-0",
+              "base_denom": "udvpn",
               "chain_name": "sentinel"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -14237,12 +14207,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-8",
-              "denom": "uctk",
+              "channel_id": "channel-8",
+              "base_denom": "uctk",
               "chain_name": "shentu"
             },
             "chain": {
-              "channel": "channel-146"
+              "channel_id": "channel-146"
             }
           }
         ]
@@ -14271,12 +14241,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-17",
-              "denom": "rowan",
+              "channel_id": "channel-17",
+              "base_denom": "rowan",
               "chain_name": "sifchain"
             },
             "chain": {
-              "channel": "channel-47"
+              "channel_id": "channel-47"
             }
           }
         ]
@@ -14316,12 +14286,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "usomm",
+              "channel_id": "channel-0",
+              "base_denom": "usomm",
               "chain_name": "sommelier"
             },
             "chain": {
-              "channel": "channel-165"
+              "channel_id": "channel-165"
             }
           }
         ]
@@ -14353,12 +14323,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "ustars",
+              "channel_id": "channel-0",
+              "base_denom": "ustars",
               "chain_name": "stargaze"
             },
             "chain": {
-              "channel": "channel-75"
+              "channel_id": "channel-75"
             }
           }
         ]
@@ -14391,12 +14361,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-2",
-              "denom": "uiov",
+              "channel_id": "channel-2",
+              "base_denom": "uiov",
               "chain_name": "starname"
             },
             "chain": {
-              "channel": "channel-15"
+              "channel_id": "channel-15"
             }
           }
         ]
@@ -14430,12 +14400,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ustrd",
+              "channel_id": "channel-5",
+              "base_denom": "ustrd",
               "chain_name": "stride"
             },
             "chain": {
-              "channel": "channel-326"
+              "channel_id": "channel-326"
             }
           }
         ]
@@ -14467,12 +14437,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "stuatom",
+              "channel_id": "channel-5",
+              "base_denom": "stuatom",
               "chain_name": "stride"
             },
             "chain": {
-              "channel": "channel-326"
+              "channel_id": "channel-326"
             }
           }
         ]
@@ -14504,12 +14474,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "stuosmo",
+              "channel_id": "channel-5",
+              "base_denom": "stuosmo",
               "chain_name": "stride"
             },
             "chain": {
-              "channel": "channel-326"
+              "channel_id": "channel-326"
             }
           }
         ]
@@ -14541,12 +14511,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "stujuno",
+              "channel_id": "channel-5",
+              "base_denom": "stujuno",
               "chain_name": "stride"
             },
             "chain": {
-              "channel": "channel-326"
+              "channel_id": "channel-326"
             }
           }
         ]
@@ -14589,12 +14559,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "uluna",
+              "channel_id": "channel-1",
+              "base_denom": "uluna",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -14637,12 +14607,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "uusd",
+              "channel_id": "channel-1",
+              "base_denom": "uusd",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -14685,12 +14655,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "ukrw",
+              "channel_id": "channel-1",
+              "base_denom": "ukrw",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -14732,12 +14702,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "uaud",
+              "channel_id": "channel-1",
+              "base_denom": "uaud",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -14779,12 +14749,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "ucad",
+              "channel_id": "channel-1",
+              "base_denom": "ucad",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -14826,12 +14796,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "uchf",
+              "channel_id": "channel-1",
+              "base_denom": "uchf",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -14873,12 +14843,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "ucny",
+              "channel_id": "channel-1",
+              "base_denom": "ucny",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -14920,12 +14890,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "udkk",
+              "channel_id": "channel-1",
+              "base_denom": "udkk",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -14967,12 +14937,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "ueur",
+              "channel_id": "channel-1",
+              "base_denom": "ueur",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -15014,12 +14984,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "ugbp",
+              "channel_id": "channel-1",
+              "base_denom": "ugbp",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -15061,12 +15031,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "uhkd",
+              "channel_id": "channel-1",
+              "base_denom": "uhkd",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -15108,12 +15078,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "uidr",
+              "channel_id": "channel-1",
+              "base_denom": "uidr",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -15155,12 +15125,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "uinr",
+              "channel_id": "channel-1",
+              "base_denom": "uinr",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -15202,12 +15172,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "ujpy",
+              "channel_id": "channel-1",
+              "base_denom": "ujpy",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -15249,12 +15219,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "umnt",
+              "channel_id": "channel-1",
+              "base_denom": "umnt",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -15296,12 +15266,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "umyr",
+              "channel_id": "channel-1",
+              "base_denom": "umyr",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -15343,12 +15313,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "unok",
+              "channel_id": "channel-1",
+              "base_denom": "unok",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -15390,12 +15360,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "uphp",
+              "channel_id": "channel-1",
+              "base_denom": "uphp",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -15437,12 +15407,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "usdr",
+              "channel_id": "channel-1",
+              "base_denom": "usdr",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -15484,12 +15454,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "usek",
+              "channel_id": "channel-1",
+              "base_denom": "usek",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -15531,12 +15501,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "usgd",
+              "channel_id": "channel-1",
+              "base_denom": "usgd",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -15578,12 +15548,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "uthb",
+              "channel_id": "channel-1",
+              "base_denom": "uthb",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -15625,12 +15595,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "utwd",
+              "channel_id": "channel-1",
+              "base_denom": "utwd",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-72"
+              "channel_id": "channel-72"
             }
           }
         ]
@@ -15664,12 +15634,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "utgd",
+              "channel_id": "channel-0",
+              "base_denom": "utgd",
               "chain_name": "tgrade"
             },
             "chain": {
-              "channel": "channel-263"
+              "channel_id": "channel-263"
             }
           }
         ]
@@ -15701,12 +15671,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "uumee",
+              "channel_id": "channel-0",
+              "base_denom": "uumee",
               "chain_name": "umee"
             },
             "chain": {
-              "channel": "channel-184"
+              "channel_id": "channel-184"
             }
           }
         ]
@@ -15740,12 +15710,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-0",
-              "denom": "uvdl",
+              "channel_id": "channel-0",
+              "base_denom": "uvdl",
               "chain_name": "vidulum"
             },
             "chain": {
-              "channel": "channel-124"
+              "channel_id": "channel-124"
             }
           }
         ]
@@ -15781,13 +15751,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -15823,13 +15793,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno1g2g7ucurum66d42g8k5twk34yegdq8c82858gz0tq2fc75zy7khssgnhjl",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno1g2g7ucurum66d42g8k5twk34yegdq8c82858gz0tq2fc75zy7khssgnhjl",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -15865,13 +15835,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno1re3x67ppxap48ygndmrc7har2cnc7tcxtm9nplcas4v0gc3wnmvs3s807z",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno1re3x67ppxap48ygndmrc7har2cnc7tcxtm9nplcas4v0gc3wnmvs3s807z",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -15907,13 +15877,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno1r4pzw8f9z0sypct5l9j906d47z998ulwvhvqe5xdwgy8wf84583sxwh0pa",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno1r4pzw8f9z0sypct5l9j906d47z998ulwvhvqe5xdwgy8wf84583sxwh0pa",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -15948,13 +15918,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno1y9rf7ql6ffwkv02hsgd4yruz23pn4w97p75e2slsnkm0mnamhzysvqnxaq",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno1y9rf7ql6ffwkv02hsgd4yruz23pn4w97p75e2slsnkm0mnamhzysvqnxaq",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -15985,13 +15955,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno1tdjwrqmnztn2j3sj2ln9xnyps5hs48q3ddwjrz7jpv6mskappjys5czd49",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno1tdjwrqmnztn2j3sj2ln9xnyps5hs48q3ddwjrz7jpv6mskappjys5czd49",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -16026,13 +15996,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -16066,13 +16036,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno17wzaxtfdw5em7lc94yed4ylgjme63eh73lm3lutp2rhcxttyvpwsypjm4w",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno17wzaxtfdw5em7lc94yed4ylgjme63eh73lm3lutp2rhcxttyvpwsypjm4w",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -16106,13 +16076,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno1ur4jx0sxchdevahep7fwq28yk4tqsrhshdtylz46yka3uf6kky5qllqp4k",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno1ur4jx0sxchdevahep7fwq28yk4tqsrhshdtylz46yka3uf6kky5qllqp4k",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -16146,13 +16116,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno1n7n7d5088qlzlj37e9mgmkhx6dfgtvt02hqxq66lcap4dxnzdhwqfmgng3",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno1n7n7d5088qlzlj37e9mgmkhx6dfgtvt02hqxq66lcap4dxnzdhwqfmgng3",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -16187,13 +16157,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno1sfwye65qxcfsc837gu5qcprcz7w49gkv3wnat04764ld76hy3arqs779tr",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -16228,13 +16198,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno1j0a9ymgngasfn3l5me8qpd53l5zlm9wurfdk7r65s5mg6tkxal3qpgf5se",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno1j0a9ymgngasfn3l5me8qpd53l5zlm9wurfdk7r65s5mg6tkxal3qpgf5se",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -16269,13 +16239,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno1gz8cf86zr4vw9cjcyyv432vgdaecvr9n254d3uwwkx9rermekddsxzageh",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno1gz8cf86zr4vw9cjcyyv432vgdaecvr9n254d3uwwkx9rermekddsxzageh",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -16310,13 +16280,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno1t46z6hg8vvsena7sue0vg6w85ljar3cundplkre9sz0skeqkap9sxyyy6m",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno1t46z6hg8vvsena7sue0vg6w85ljar3cundplkre9sz0skeqkap9sxyyy6m",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -16351,13 +16321,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -16392,13 +16362,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno1wwnhkagvcd3tjz6f8vsdsw5plqnw8qy2aj3rrhqr2axvktzv9q2qz8jxn3",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno1wwnhkagvcd3tjz6f8vsdsw5plqnw8qy2aj3rrhqr2axvktzv9q2qz8jxn3",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -16433,13 +16403,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno159q8t5g02744lxq8lfmcn6f78qqulq9wn3y9w7lxjgkz4e0a6kvsfvapse",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno159q8t5g02744lxq8lfmcn6f78qqulq9wn3y9w7lxjgkz4e0a6kvsfvapse",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -16474,13 +16444,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
-              "channel": "channel-47",
-              "denom": "cw20:juno19rqljkh95gh40s7qdx40ksx3zq5tm4qsmsrdz9smw668x9zdr3lqtg33mf",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno19rqljkh95gh40s7qdx40ksx3zq5tm4qsmsrdz9smw668x9zdr3lqtg33mf",
               "chain_name": "juno"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-169"
+              "channel_id": "channel-169"
             }
           }
         ]
@@ -16515,13 +16485,13 @@ const asset_lists: AssetList[] = [
             "type": "ibc-cw20",
             "counterparty": {
               "port": "wasm.ki1hzz0s0ucrhdp6tue2lxk3c03nj6f60qy463we7lgx0wudd72ctmsd9kgha",
-              "channel": "channel-18",
-              "denom": "cw20:ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy",
+              "channel_id": "channel-18",
+              "base_denom": "cw20:ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy",
               "chain_name": "kichain"
             },
             "chain": {
               "port": "transfer",
-              "channel": "channel-261"
+              "channel_id": "channel-261"
             }
           }
         ]
@@ -16564,12 +16534,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-82",
-              "denom": "uosmo",
+              "channel_id": "channel-82",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -16604,12 +16574,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-82",
-              "denom": "uion",
+              "channel_id": "channel-82",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -16647,12 +16617,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-6",
-              "denom": "uakt",
+              "channel_id": "channel-6",
+              "base_denom": "uakt",
               "chain_name": "akash"
             },
             "chain": {
-              "channel": "channel-5"
+              "channel_id": "channel-5"
             }
           }
         ]
@@ -16685,12 +16655,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-190",
-              "denom": "uatom",
+              "channel_id": "channel-190",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-24"
+              "channel_id": "channel-24"
             }
           }
         ]
@@ -16722,12 +16692,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-17",
-              "denom": "basecro",
+              "channel_id": "channel-17",
+              "base_denom": "basecro",
               "chain_name": "cryptoorgchain"
             },
             "chain": {
-              "channel": "channel-11"
+              "channel_id": "channel-11"
             }
           }
         ]
@@ -16760,12 +16730,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-15",
-              "denom": "uiris",
+              "channel_id": "channel-15",
+              "base_denom": "uiris",
               "chain_name": "irisnet"
             },
             "chain": {
-              "channel": "channel-19"
+              "channel_id": "channel-19"
             }
           }
         ]
@@ -16798,12 +16768,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-33",
-              "denom": "ujuno",
+              "channel_id": "channel-33",
+              "base_denom": "ujuno",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-37"
+              "channel_id": "channel-37"
             }
           }
         ]
@@ -16837,12 +16807,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-33",
-              "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+              "channel_id": "channel-33",
+              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-37"
+              "channel_id": "channel-37"
             }
           }
         ]
@@ -16880,12 +16850,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "uosmo",
+              "channel_id": "channel-4",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-6"
+              "channel_id": "channel-6"
             }
           }
         ]
@@ -16920,12 +16890,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-4",
-              "denom": "uion",
+              "channel_id": "channel-4",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-6"
+              "channel_id": "channel-6"
             }
           }
         ]
@@ -16957,12 +16927,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-14",
-              "denom": "uregen",
+              "channel_id": "channel-14",
+              "base_denom": "uregen",
               "chain_name": "regen"
             },
             "chain": {
-              "channel": "channel-21"
+              "channel_id": "channel-21"
             }
           }
         ]
@@ -16994,12 +16964,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-15",
-              "denom": "udvpn",
+              "channel_id": "channel-15",
+              "base_denom": "udvpn",
               "chain_name": "sentinel"
             },
             "chain": {
-              "channel": "channel-22"
+              "channel_id": "channel-22"
             }
           }
         ]
@@ -17028,12 +16998,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-7",
-              "denom": "rowan",
+              "channel_id": "channel-7",
+              "base_denom": "rowan",
               "chain_name": "sifchain"
             },
             "chain": {
-              "channel": "channel-26"
+              "channel_id": "channel-26"
             }
           }
         ]
@@ -17066,12 +17036,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-13",
-              "denom": "uiov",
+              "channel_id": "channel-13",
+              "base_denom": "uiov",
               "chain_name": "starname"
             },
             "chain": {
-              "channel": "channel-27"
+              "channel_id": "channel-27"
             }
           }
         ]
@@ -17114,12 +17084,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-222",
-              "denom": "uosmo",
+              "channel_id": "channel-222",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-7"
+              "channel_id": "channel-7"
             }
           }
         ]
@@ -17154,12 +17124,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-222",
-              "denom": "uion",
+              "channel_id": "channel-222",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-7"
+              "channel_id": "channel-7"
             }
           }
         ]
@@ -17197,12 +17167,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-13",
-              "denom": "uakt",
+              "channel_id": "channel-13",
+              "base_denom": "uakt",
               "chain_name": "akash"
             },
             "chain": {
-              "channel": "channel-7"
+              "channel_id": "channel-7"
             }
           }
         ]
@@ -17235,12 +17205,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-185",
-              "denom": "uatom",
+              "channel_id": "channel-185",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-11"
+              "channel_id": "channel-11"
             }
           }
         ]
@@ -17272,12 +17242,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-25",
-              "denom": "basecro",
+              "channel_id": "channel-25",
+              "base_denom": "basecro",
               "chain_name": "cryptoorgchain"
             },
             "chain": {
-              "channel": "channel-12"
+              "channel_id": "channel-12"
             }
           }
         ]
@@ -17310,12 +17280,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "uiris",
+              "channel_id": "channel-16",
+              "base_denom": "uiris",
               "chain_name": "irisnet"
             },
             "chain": {
-              "channel": "channel-9"
+              "channel_id": "channel-9"
             }
           }
         ]
@@ -17353,12 +17323,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-8",
-              "denom": "uosmo",
+              "channel_id": "channel-8",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -17393,12 +17363,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-8",
-              "denom": "uion",
+              "channel_id": "channel-8",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -17431,12 +17401,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-21",
-              "denom": "uxprt",
+              "channel_id": "channel-21",
+              "base_denom": "uxprt",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-14"
+              "channel_id": "channel-14"
             }
           }
         ]
@@ -17464,20 +17434,15 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-21",
-              "denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+              "channel_id": "channel-21",
+              "base_denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-14"
+              "channel_id": "channel-14"
             }
           }
         ],
-        "ibc": {
-          "source_channel": "channel-24",
-          "dst_channel": "channel-38",
-          "source_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
-        },
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
@@ -17511,12 +17476,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-11",
-              "denom": "udvpn",
+              "channel_id": "channel-11",
+              "base_denom": "udvpn",
               "chain_name": "sentinel"
             },
             "chain": {
-              "channel": "channel-15"
+              "channel_id": "channel-15"
             }
           }
         ]
@@ -17545,12 +17510,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-10",
-              "denom": "rowan",
+              "channel_id": "channel-10",
+              "base_denom": "rowan",
               "chain_name": "sifchain"
             },
             "chain": {
-              "channel": "channel-28"
+              "channel_id": "channel-28"
             }
           }
         ]
@@ -17583,12 +17548,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-14",
-              "denom": "uiov",
+              "channel_id": "channel-14",
+              "base_denom": "uiov",
               "chain_name": "starname"
             },
             "chain": {
-              "channel": "channel-29"
+              "channel_id": "channel-29"
             }
           }
         ]
@@ -17631,12 +17596,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-221",
-              "denom": "uosmo",
+              "channel_id": "channel-221",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -17671,12 +17636,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-221",
-              "denom": "uion",
+              "channel_id": "channel-221",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -17714,12 +17679,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-43",
-              "denom": "uakt",
+              "channel_id": "channel-43",
+              "base_denom": "uakt",
               "chain_name": "akash"
             },
             "chain": {
-              "channel": "channel-21"
+              "channel_id": "channel-21"
             }
           }
         ]
@@ -17752,12 +17717,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "uaxl",
+              "channel_id": "channel-12",
+              "base_denom": "uaxl",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ]
@@ -17785,12 +17750,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "uusdc",
+              "channel_id": "channel-12",
+              "base_denom": "uusdc",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -17823,12 +17788,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "frax-wei",
+              "channel_id": "channel-12",
+              "base_denom": "frax-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -17861,12 +17826,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "dai-wei",
+              "channel_id": "channel-12",
+              "base_denom": "dai-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -17899,12 +17864,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "uusdt",
+              "channel_id": "channel-12",
+              "base_denom": "uusdt",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -17937,12 +17902,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "weth-wei",
+              "channel_id": "channel-12",
+              "base_denom": "weth-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -17974,12 +17939,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "wbtc-satoshi",
+              "channel_id": "channel-12",
+              "base_denom": "wbtc-satoshi",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -18011,12 +17976,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "aave-wei",
+              "channel_id": "channel-12",
+              "base_denom": "aave-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -18048,12 +18013,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "ape-wei",
+              "channel_id": "channel-12",
+              "base_denom": "ape-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -18085,12 +18050,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "axs-wei",
+              "channel_id": "channel-12",
+              "base_denom": "axs-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -18122,12 +18087,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "link-wei",
+              "channel_id": "channel-12",
+              "base_denom": "link-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -18160,12 +18125,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "mkr-wei",
+              "channel_id": "channel-12",
+              "base_denom": "mkr-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -18197,12 +18162,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "rai-wei",
+              "channel_id": "channel-12",
+              "base_denom": "rai-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -18234,12 +18199,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "shib-wei",
+              "channel_id": "channel-12",
+              "base_denom": "shib-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -18271,12 +18236,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "steth-wei",
+              "channel_id": "channel-12",
+              "base_denom": "steth-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -18308,12 +18273,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "uni-wei",
+              "channel_id": "channel-12",
+              "base_denom": "uni-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -18345,12 +18310,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "xcn-wei",
+              "channel_id": "channel-12",
+              "base_denom": "xcn-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -18382,12 +18347,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "dot-planck",
+              "channel_id": "channel-12",
+              "base_denom": "dot-planck",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -18420,12 +18385,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "wglmr-wei",
+              "channel_id": "channel-12",
+              "base_denom": "wglmr-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -18458,12 +18423,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "wmatic-wei",
+              "channel_id": "channel-12",
+              "base_denom": "wmatic-wei",
               "chain_name": "axelar"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ],
@@ -18500,12 +18465,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "uhuahua",
+              "channel_id": "channel-16",
+              "base_denom": "uhuahua",
               "chain_name": "chihuahua"
             },
             "chain": {
-              "channel": "channel-11"
+              "channel_id": "channel-11"
             }
           }
         ]
@@ -18538,12 +18503,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-235",
-              "denom": "uatom",
+              "channel_id": "channel-235",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -18577,12 +18542,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-10",
-              "denom": "ucre",
+              "channel_id": "channel-10",
+              "base_denom": "ucre",
               "chain_name": "crescent"
             },
             "chain": {
-              "channel": "channel-24"
+              "channel_id": "channel-24"
             }
           }
         ]
@@ -18616,12 +18581,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-10",
-              "denom": "ubcre",
+              "channel_id": "channel-10",
+              "base_denom": "ubcre",
               "chain_name": "crescent"
             },
             "chain": {
-              "channel": "channel-24"
+              "channel_id": "channel-24"
             }
           }
         ]
@@ -18654,12 +18619,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-15",
-              "denom": "aevmos",
+              "channel_id": "channel-15",
+              "base_denom": "aevmos",
               "chain_name": "evmos"
             },
             "chain": {
-              "channel": "channel-18"
+              "channel_id": "channel-18"
             }
           }
         ]
@@ -18693,12 +18658,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-79",
-              "denom": "ugraviton",
+              "channel_id": "channel-79",
+              "base_denom": "ugraviton",
               "chain_name": "gravitybridge"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -18731,12 +18696,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-74",
-              "denom": "inj",
+              "channel_id": "channel-74",
+              "base_denom": "inj",
               "chain_name": "injective"
             },
             "chain": {
-              "channel": "channel-7"
+              "channel_id": "channel-7"
             }
           }
         ]
@@ -18769,12 +18734,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-48",
-              "denom": "ujuno",
+              "channel_id": "channel-48",
+              "base_denom": "ujuno",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-8"
+              "channel_id": "channel-8"
             }
           }
         ]
@@ -18808,12 +18773,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-48",
-              "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+              "channel_id": "channel-48",
+              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-8"
+              "channel_id": "channel-8"
             }
           }
         ]
@@ -18851,12 +18816,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-88",
-              "denom": "uosmo",
+              "channel_id": "channel-88",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -18891,12 +18856,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-88",
-              "denom": "uion",
+              "channel_id": "channel-88",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -18928,12 +18893,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-50",
-              "denom": "udvpn",
+              "channel_id": "channel-50",
+              "base_denom": "udvpn",
               "chain_name": "sentinel"
             },
             "chain": {
-              "channel": "channel-3"
+              "channel_id": "channel-3"
             }
           }
         ]
@@ -18962,12 +18927,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-65",
-              "denom": "rowan",
+              "channel_id": "channel-65",
+              "base_denom": "rowan",
               "chain_name": "sifchain"
             },
             "chain": {
-              "channel": "channel-15"
+              "channel_id": "channel-15"
             }
           }
         ]
@@ -18999,12 +18964,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-48",
-              "denom": "ustars",
+              "channel_id": "channel-48",
+              "base_denom": "ustars",
               "chain_name": "stargaze"
             },
             "chain": {
-              "channel": "channel-19"
+              "channel_id": "channel-19"
             }
           }
         ]
@@ -19047,12 +19012,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "uluna",
+              "channel_id": "channel-16",
+              "base_denom": "uluna",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19095,12 +19060,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "uusd",
+              "channel_id": "channel-16",
+              "base_denom": "uusd",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19143,12 +19108,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "ukrw",
+              "channel_id": "channel-16",
+              "base_denom": "ukrw",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19190,12 +19155,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "uaud",
+              "channel_id": "channel-16",
+              "base_denom": "uaud",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19237,12 +19202,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "ucad",
+              "channel_id": "channel-16",
+              "base_denom": "ucad",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19284,12 +19249,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "uchf",
+              "channel_id": "channel-16",
+              "base_denom": "uchf",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19331,12 +19296,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "ucny",
+              "channel_id": "channel-16",
+              "base_denom": "ucny",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19378,12 +19343,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "udkk",
+              "channel_id": "channel-16",
+              "base_denom": "udkk",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19425,12 +19390,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "ueur",
+              "channel_id": "channel-16",
+              "base_denom": "ueur",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19472,12 +19437,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "ugbp",
+              "channel_id": "channel-16",
+              "base_denom": "ugbp",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19519,12 +19484,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "uhkd",
+              "channel_id": "channel-16",
+              "base_denom": "uhkd",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19566,12 +19531,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "uidr",
+              "channel_id": "channel-16",
+              "base_denom": "uidr",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19613,12 +19578,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "uinr",
+              "channel_id": "channel-16",
+              "base_denom": "uinr",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19660,12 +19625,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "ujpy",
+              "channel_id": "channel-16",
+              "base_denom": "ujpy",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19707,12 +19672,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "umnt",
+              "channel_id": "channel-16",
+              "base_denom": "umnt",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19754,12 +19719,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "umyr",
+              "channel_id": "channel-16",
+              "base_denom": "umyr",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19801,12 +19766,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "unok",
+              "channel_id": "channel-16",
+              "base_denom": "unok",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19848,12 +19813,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "uphp",
+              "channel_id": "channel-16",
+              "base_denom": "uphp",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19895,12 +19860,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "usdr",
+              "channel_id": "channel-16",
+              "base_denom": "usdr",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19942,12 +19907,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "usek",
+              "channel_id": "channel-16",
+              "base_denom": "usek",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -19989,12 +19954,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "usgd",
+              "channel_id": "channel-16",
+              "base_denom": "usgd",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -20036,12 +20001,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "uthb",
+              "channel_id": "channel-16",
+              "base_denom": "uthb",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -20083,12 +20048,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "utwd",
+              "channel_id": "channel-16",
+              "base_denom": "utwd",
               "chain_name": "terra"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -20120,12 +20085,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "uluna",
+              "channel_id": "channel-3",
+              "base_denom": "uluna",
               "chain_name": "terra2"
             },
             "chain": {
-              "channel": "channel-16"
+              "channel_id": "channel-16"
             }
           }
         ]
@@ -20163,12 +20128,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-12",
-              "denom": "uakt",
+              "channel_id": "channel-12",
+              "base_denom": "uakt",
               "chain_name": "akash"
             },
             "chain": {
-              "channel": "channel-6"
+              "channel_id": "channel-6"
             }
           }
         ]
@@ -20201,12 +20166,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-186",
-              "denom": "uatom",
+              "channel_id": "channel-186",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-12"
+              "channel_id": "channel-12"
             }
           }
         ]
@@ -20238,12 +20203,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-19",
-              "denom": "basecro",
+              "channel_id": "channel-19",
+              "base_denom": "basecro",
               "chain_name": "cryptoorgchain"
             },
             "chain": {
-              "channel": "channel-7"
+              "channel_id": "channel-7"
             }
           }
         ]
@@ -20276,12 +20241,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-17",
-              "denom": "uiris",
+              "channel_id": "channel-17",
+              "base_denom": "uiris",
               "chain_name": "irisnet"
             },
             "chain": {
-              "channel": "channel-9"
+              "channel_id": "channel-9"
             }
           }
         ]
@@ -20319,12 +20284,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-2",
-              "denom": "uosmo",
+              "channel_id": "channel-2",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -20359,12 +20324,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-2",
-              "denom": "uion",
+              "channel_id": "channel-2",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -20397,12 +20362,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-22",
-              "denom": "uxprt",
+              "channel_id": "channel-22",
+              "base_denom": "uxprt",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-15"
+              "channel_id": "channel-15"
             }
           }
         ]
@@ -20430,20 +20395,15 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-22",
-              "denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+              "channel_id": "channel-22",
+              "base_denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-15"
+              "channel_id": "channel-15"
             }
           }
         ],
-        "ibc": {
-          "source_channel": "channel-24",
-          "dst_channel": "channel-38",
-          "source_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
-        },
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
@@ -20477,12 +20437,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-15",
-              "denom": "uregen",
+              "channel_id": "channel-15",
+              "base_denom": "uregen",
               "chain_name": "regen"
             },
             "chain": {
-              "channel": "channel-11"
+              "channel_id": "channel-11"
             }
           }
         ]
@@ -20515,12 +20475,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-3",
-              "denom": "uscrt",
+              "channel_id": "channel-3",
+              "base_denom": "uscrt",
               "chain_name": "secretnetwork"
             },
             "chain": {
-              "channel": "channel-50"
+              "channel_id": "channel-50"
             }
           }
         ]
@@ -20549,12 +20509,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-1",
-              "denom": "rowan",
+              "channel_id": "channel-1",
+              "base_denom": "rowan",
               "chain_name": "sifchain"
             },
             "chain": {
-              "channel": "channel-36"
+              "channel_id": "channel-36"
             }
           }
         ]
@@ -20587,12 +20547,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-15",
-              "denom": "uiov",
+              "channel_id": "channel-15",
+              "base_denom": "uiov",
               "chain_name": "starname"
             },
             "chain": {
-              "channel": "channel-40"
+              "channel_id": "channel-40"
             }
           }
         ]
@@ -20635,12 +20595,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-146",
-              "denom": "uosmo",
+              "channel_id": "channel-146",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-8"
+              "channel_id": "channel-8"
             }
           }
         ]
@@ -20675,12 +20635,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-146",
-              "denom": "uion",
+              "channel_id": "channel-146",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-8"
+              "channel_id": "channel-8"
             }
           }
         ]
@@ -20718,12 +20678,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-24",
-              "denom": "uakt",
+              "channel_id": "channel-24",
+              "base_denom": "uakt",
               "chain_name": "akash"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -20756,12 +20716,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-192",
-              "denom": "uatom",
+              "channel_id": "channel-192",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -20793,12 +20753,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-33",
-              "denom": "basecro",
+              "channel_id": "channel-33",
+              "base_denom": "basecro",
               "chain_name": "cryptoorgchain"
             },
             "chain": {
-              "channel": "channel-9"
+              "channel_id": "channel-9"
             }
           }
         ]
@@ -20830,12 +20790,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-11",
-              "denom": "uixo",
+              "channel_id": "channel-11",
+              "base_denom": "uixo",
               "chain_name": "impacthub"
             },
             "chain": {
-              "channel": "channel-15"
+              "channel_id": "channel-15"
             }
           }
         ]
@@ -20868,12 +20828,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-19",
-              "denom": "uiris",
+              "channel_id": "channel-19",
+              "base_denom": "uiris",
               "chain_name": "irisnet"
             },
             "chain": {
-              "channel": "channel-8"
+              "channel_id": "channel-8"
             }
           }
         ]
@@ -20906,12 +20866,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ujuno",
+              "channel_id": "channel-5",
+              "base_denom": "ujuno",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-14"
+              "channel_id": "channel-14"
             }
           }
         ]
@@ -20945,12 +20905,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-5",
-              "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+              "channel_id": "channel-5",
+              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-14"
+              "channel_id": "channel-14"
             }
           }
         ]
@@ -20988,12 +20948,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-47",
-              "denom": "uosmo",
+              "channel_id": "channel-47",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -21028,12 +20988,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-47",
-              "denom": "uion",
+              "channel_id": "channel-47",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-17"
+              "channel_id": "channel-17"
             }
           }
         ]
@@ -21066,12 +21026,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-26",
-              "denom": "uxprt",
+              "channel_id": "channel-26",
+              "base_denom": "uxprt",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-7"
+              "channel_id": "channel-7"
             }
           }
         ]
@@ -21099,20 +21059,15 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-26",
-              "denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+              "channel_id": "channel-26",
+              "base_denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-7"
+              "channel_id": "channel-7"
             }
           }
         ],
-        "ibc": {
-          "source_channel": "channel-24",
-          "dst_channel": "channel-38",
-          "source_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
-        },
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
@@ -21146,12 +21101,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-28",
-              "denom": "uregen",
+              "channel_id": "channel-28",
+              "base_denom": "uregen",
               "chain_name": "regen"
             },
             "chain": {
-              "channel": "channel-10"
+              "channel_id": "channel-10"
             }
           }
         ]
@@ -21184,12 +21139,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-15",
-              "denom": "uscrt",
+              "channel_id": "channel-15",
+              "base_denom": "uscrt",
               "chain_name": "secretnetwork"
             },
             "chain": {
-              "channel": "channel-65"
+              "channel_id": "channel-65"
             }
           }
         ]
@@ -21221,12 +21176,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-36",
-              "denom": "udvpn",
+              "channel_id": "channel-36",
+              "base_denom": "udvpn",
               "chain_name": "sentinel"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -21269,12 +21224,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-165",
-              "denom": "uosmo",
+              "channel_id": "channel-165",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -21309,12 +21264,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-165",
-              "denom": "uion",
+              "channel_id": "channel-165",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -21353,12 +21308,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-21",
-              "denom": "ucre",
+              "channel_id": "channel-21",
+              "base_denom": "ucre",
               "chain_name": "crescent"
             },
             "chain": {
-              "channel": "channel-51"
+              "channel_id": "channel-51"
             }
           }
         ]
@@ -21392,12 +21347,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-21",
-              "denom": "ubcre",
+              "channel_id": "channel-21",
+              "base_denom": "ubcre",
               "chain_name": "crescent"
             },
             "chain": {
-              "channel": "channel-51"
+              "channel_id": "channel-51"
             }
           }
         ]
@@ -21430,12 +21385,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "ujuno",
+              "channel_id": "channel-20",
+              "base_denom": "ujuno",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-5"
+              "channel_id": "channel-5"
             }
           }
         ]
@@ -21469,12 +21424,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-20",
-              "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+              "channel_id": "channel-20",
+              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-5"
+              "channel_id": "channel-5"
             }
           }
         ]
@@ -21512,12 +21467,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-75",
-              "denom": "uosmo",
+              "channel_id": "channel-75",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -21552,12 +21507,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-75",
-              "denom": "uion",
+              "channel_id": "channel-75",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -21590,12 +21545,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-19",
-              "denom": "uscrt",
+              "channel_id": "channel-19",
+              "base_denom": "uscrt",
               "chain_name": "secretnetwork"
             },
             "chain": {
-              "channel": "channel-48"
+              "channel_id": "channel-48"
             }
           }
         ]
@@ -21633,12 +21588,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-23",
-              "denom": "uakt",
+              "channel_id": "channel-23",
+              "base_denom": "uakt",
               "chain_name": "akash"
             },
             "chain": {
-              "channel": "channel-6"
+              "channel_id": "channel-6"
             }
           }
         ]
@@ -21671,12 +21626,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-158",
-              "denom": "uatom",
+              "channel_id": "channel-158",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -21708,12 +21663,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-22",
-              "denom": "basecro",
+              "channel_id": "channel-22",
+              "base_denom": "basecro",
               "chain_name": "cryptoorgchain"
             },
             "chain": {
-              "channel": "channel-3"
+              "channel_id": "channel-3"
             }
           }
         ]
@@ -21746,12 +21701,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-21",
-              "denom": "uiris",
+              "channel_id": "channel-21",
+              "base_denom": "uiris",
               "chain_name": "irisnet"
             },
             "chain": {
-              "channel": "channel-11"
+              "channel_id": "channel-11"
             }
           }
         ]
@@ -21789,12 +21744,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-15",
-              "denom": "uosmo",
+              "channel_id": "channel-15",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -21829,12 +21784,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-15",
-              "denom": "uion",
+              "channel_id": "channel-15",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -21867,12 +21822,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-27",
-              "denom": "uxprt",
+              "channel_id": "channel-27",
+              "base_denom": "uxprt",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-13"
+              "channel_id": "channel-13"
             }
           }
         ]
@@ -21900,20 +21855,15 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-27",
-              "denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+              "channel_id": "channel-27",
+              "base_denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
               "chain_name": "persistence"
             },
             "chain": {
-              "channel": "channel-13"
+              "channel_id": "channel-13"
             }
           }
         ],
-        "ibc": {
-          "source_channel": "channel-24",
-          "dst_channel": "channel-38",
-          "source_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
-        },
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
@@ -21947,12 +21897,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-29",
-              "denom": "uregen",
+              "channel_id": "channel-29",
+              "base_denom": "uregen",
               "chain_name": "regen"
             },
             "chain": {
-              "channel": "channel-14"
+              "channel_id": "channel-14"
             }
           }
         ]
@@ -21984,12 +21934,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-40",
-              "denom": "udvpn",
+              "channel_id": "channel-40",
+              "base_denom": "udvpn",
               "chain_name": "sentinel"
             },
             "chain": {
-              "channel": "channel-15"
+              "channel_id": "channel-15"
             }
           }
         ]
@@ -22027,12 +21977,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-391",
-              "denom": "uatom",
+              "channel_id": "channel-391",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -22070,12 +22020,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-326",
-              "denom": "uosmo",
+              "channel_id": "channel-326",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-5"
+              "channel_id": "channel-5"
             }
           }
         ]
@@ -22110,12 +22060,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-326",
-              "denom": "uion",
+              "channel_id": "channel-326",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-5"
+              "channel_id": "channel-5"
             }
           }
         ]
@@ -22153,12 +22103,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-27",
-              "denom": "ujuno",
+              "channel_id": "channel-27",
+              "base_denom": "ujuno",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ]
@@ -22192,12 +22142,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-27",
-              "denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+              "channel_id": "channel-27",
+              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
               "chain_name": "juno"
             },
             "chain": {
-              "channel": "channel-20"
+              "channel_id": "channel-20"
             }
           }
         ]
@@ -22235,12 +22185,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-72",
-              "denom": "uosmo",
+              "channel_id": "channel-72",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -22275,12 +22225,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-72",
-              "denom": "uion",
+              "channel_id": "channel-72",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -22313,12 +22263,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-2",
-              "denom": "uscrt",
+              "channel_id": "channel-2",
+              "base_denom": "uscrt",
               "chain_name": "secretnetwork"
             },
             "chain": {
-              "channel": "channel-16"
+              "channel_id": "channel-16"
             }
           }
         ]
@@ -22356,12 +22306,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-16",
-              "denom": "uscrt",
+              "channel_id": "channel-16",
+              "base_denom": "uscrt",
               "chain_name": "secretnetwork"
             },
             "chain": {
-              "channel": "channel-3"
+              "channel_id": "channel-3"
             }
           }
         ]
@@ -22404,12 +22354,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-263",
-              "denom": "uosmo",
+              "channel_id": "channel-263",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -22444,12 +22394,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-263",
-              "denom": "uion",
+              "channel_id": "channel-263",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -22487,12 +22437,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-288",
-              "denom": "uatom",
+              "channel_id": "channel-288",
+              "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel": "channel-1"
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -22530,12 +22480,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-184",
-              "denom": "uosmo",
+              "channel_id": "channel-184",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -22570,12 +22520,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-184",
-              "denom": "uion",
+              "channel_id": "channel-184",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -22612,12 +22562,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-14",
-              "denom": "wei",
+              "channel_id": "channel-14",
+              "base_denom": "wei",
               "chain_name": "okexchain"
             },
             "chain": {
-              "channel": "channel-2"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -22655,12 +22605,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-124",
-              "denom": "uosmo",
+              "channel_id": "channel-124",
+              "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -22695,12 +22645,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel": "channel-124",
-              "denom": "uion",
+              "channel_id": "channel-124",
+              "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel": "channel-0"
+              "channel_id": "channel-0"
             }
           }
         ]
