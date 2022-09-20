@@ -1,6 +1,6 @@
 import assets from '../../../__fixtures__/assets.json';
 import ibc from '../../../__fixtures__/ibc.json';
-import { getIbcDenomByBase, ibcDenom } from '../src';
+import { getIbcAssetPath, getIbcDenomByBase, ibcDenom } from '../src';
 
 it('AKT on osmosis', () => {
   const denom = getIbcDenomByBase(
@@ -57,6 +57,153 @@ it('PSTAKE on osmosis', () => {
   expect(denom).toEqual(
     'ibc/8061A06D3BD4D52C4A28FFECF7150D370393AF0BA661C3776C54FF32836C3961'
   );
+});
+
+/*
+******
+******
+******
+fetch first IBCINFO FROM OSMOSIS<>PERSISTENCE
+******
+******
+******
+
+
+{
+    "$schema": "../ibc_data.schema.json",
+    "chain_1": {
+      "chain_name": "osmosis",
+      "client_id": "07-tendermint-3",
+      "connection_id": "connection-4"
+    },
+    "chain_2": {
+      "chain_name": "persistence",
+      "client_id": "07-tendermint-6",
+      "connection_id": "connection-5"
+    },
+    "channels": [
+      {
+        "chain_1": {
+          "channel_id": "channel-4",
+          "port_id": "transfer"
+        },
+        "chain_2": {
+          "channel_id": "channel-6",
+          "port_id": "transfer"
+        },
+        "ordering": "unordered",
+        "version": "ics20-1",
+        "tags": {
+          "status": "live",
+          "preferred": true,
+          "dex": "osmosis"
+        }
+      }
+    ]
+  }  
+
+******
+******
+******
+next, get asset/trace for SAME asset ON persitence because "chain_name": "persistence"
+******
+******
+******
+
+NATIVE ASSET
+
+LEADS US TO A TRACE ON pSTAKE asset:
+
+         {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "gravitybridge",
+              "base_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+              "channel_id": "channel-24"
+            },
+            "chain": {
+              "channel_id": "channel-38",
+              "path": "transfer/channel-38/gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
+            }
+          }
+
+******
+******
+******
+NOW GET THE persistence-gravity BRIDGE IBCINFO
+******
+******
+******
+
+
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'persistence',
+      client_id: '07-tendermint-unknown',
+      connection_id: 'connection-unknown'
+    },
+    chain_2: {
+      chain_name: 'gravitybridge',
+      client_id: '07-tendermint-unknown',
+      connection_id: 'connection-unknown'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-38',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-unknown',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
+  }
+
+******
+******
+******
+now check GRAVITYBRIDGE for pStake ASSET
+******
+******
+******
+
+(NOT FOUND, so you're done)
+
+*/
+
+it.only('PSTAKE path on osmosis', () => {
+  const path = getIbcAssetPath(
+    ibc,
+    'osmosis',
+    'persistence',
+    //
+    assets,
+    'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444'
+  );
+  console.log(path);
+  // expect(path).toEqual([
+  //   {
+  //     // THIS IS THE CHANNEL TO PERSISTENCE
+  //     // ON OSMOSIS
+  //     channelId: 'channel-4',
+  //     portId: 'transfer'
+  //   },
+  //   {
+  //     // THIS IS THE CHANNEL TO GRAVITYBRIDGE
+  //     // ON PERSISTENCE
+  //     channelId: 'channel-38',
+  //     portId: 'transfer'
+  //   }
+  // ]);
 });
 
 xit('PSTAKE on osmosis', () => {

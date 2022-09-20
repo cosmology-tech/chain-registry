@@ -67,6 +67,50 @@ export const getWasmChannel = (info: IBCInfo) => {
   );
 };
 
+export const getIbcAssetPath = (
+  ibc: IBCInfo[],
+  chain: string,
+  counterparty: string,
+  assets: AssetList[],
+  base: string
+) => {
+  const ibcInfo = getIbcInfo(ibc, chain, counterparty);
+  if (!ibcInfo) return [];
+
+  const channel = getTransferChannel(ibcInfo);
+  if (!channel) {
+    return [];
+  }
+  let channelInfo;
+  if (ibcInfo.chain_1.chain_name === chain) {
+    channelInfo = channel.chain_1;
+  } else {
+    channelInfo = channel.chain_2;
+  }
+
+  const memo = [channelInfo];
+
+  const assetList = assets.find(
+    ({ chain_name }) => chain_name === counterparty
+  );
+  if (!assetList) {
+    return memo;
+  }
+  const asset = assetList.assets.find((asset) => asset.base === base);
+  if (!asset) {
+    return memo;
+  }
+
+  const traces =
+    asset.traces?.filter?.((trace) => {
+      return trace.type === 'ibc' || trace.type === 'ibc-cw20';
+    }) ?? [];
+
+  console.log(traces);
+
+  return memo;
+};
+
 export const getIbcDenomByBase = (
   ibc: IBCInfo[],
   chain: string,
