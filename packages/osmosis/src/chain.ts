@@ -124,6 +124,16 @@ const chain: Chain = {
         id: '7c66126b64cd66bafd9ccfc721f068df451d31a3',
         address: 'osmosis-seed.sunshinevalidation.io:9393',
         provider: 'sunshine-validation'
+      },
+      {
+        id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+        address: 'seeds.polkachu.com:12556',
+        provider: 'Polkachu'
+      },
+      {
+        id: '20e1000e88125698264454a884812746c2eb4807',
+        address: 'seeds.lavenderfive.com:12556',
+        provider: 'Lavender.Five Nodes 🐝'
       }
     ],
     persistent_peers: [
@@ -278,6 +288,10 @@ const chain: Chain = {
         provider: 'WhisperNode 🤐'
       },
       {
+        address: 'https://osmosis-rpc.lavenderfive.com:443',
+        provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
         address: 'https://osmosis.validator.network/',
         provider: 'validatornetwork'
       },
@@ -316,6 +330,10 @@ const chain: Chain = {
         provider: 'chainapsis'
       },
       {
+        address: 'https://osmosis-api.lavenderfive.com:443',
+        provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
         address: 'https://rest-osmosis.ecostake.com',
         provider: 'ecostake'
       },
@@ -340,6 +358,10 @@ const chain: Chain = {
       {
         address: 'osmosis.strange.love:9090',
         provider: 'strangelove'
+      },
+      {
+        address: 'https://osmosis-grpc.lavenderfive.com:443',
+        provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'grpc-osmosis-ia.cosmosia.notional.ventures:443',

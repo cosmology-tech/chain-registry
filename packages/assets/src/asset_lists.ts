@@ -120,6 +120,45 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "The native token of Gravity Bridge",
+        "denom_units": [
+          {
+            "denom": "ibc/64B3EFE08A6A3EF5D2A7F1D3AF033DDC951DA51F92E06CC31D3F9AF8E8368860",
+            "exponent": 0,
+            "aliases": [
+              "ugraviton"
+            ]
+          },
+          {
+            "denom": "graviton",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/64B3EFE08A6A3EF5D2A7F1D3AF033DDC951DA51F92E06CC31D3F9AF8E8368860",
+        "name": "Graviton",
+        "display": "graviton",
+        "symbol": "GRAV",
+        "coingecko_id": "graviton",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-91",
+              "base_denom": "ugraviton",
+              "chain_name": "gravitybridge"
+            },
+            "chain": {
+              "channel_id": "channel-4"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Osmosis",
         "denom_units": [
           {
@@ -522,7 +561,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/92D74732306E1B02E8CC32005E0323578C2A8BD0CB685E8E2051C5AD7D565D15",
+            "denom": "ibc/9D5801F72FC66719540AAAE48D112E70AEE0099FED5968AC0742D600957D613B",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -533,7 +572,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/92D74732306E1B02E8CC32005E0323578C2A8BD0CB685E8E2051C5AD7D565D15",
+        "base": "ibc/9D5801F72FC66719540AAAE48D112E70AEE0099FED5968AC0742D600957D613B",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -3018,7 +3057,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/CB4276798D6C2716EF5284546435248D4E397DA169B207F8A107D8A1D4F34A81",
+            "denom": "ibc/A32C6D078969FD38EC9D257380F7A118ED4EFA914C10366773CC1D6206E67324",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -3029,7 +3068,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/CB4276798D6C2716EF5284546435248D4E397DA169B207F8A107D8A1D4F34A81",
+        "base": "ibc/A32C6D078969FD38EC9D257380F7A118ED4EFA914C10366773CC1D6206E67324",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -3051,6 +3090,44 @@ const asset_lists: AssetList[] = [
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
         },
         "coingecko_id": "pstake-finance"
+      },
+      {
+        "description": "The native governance and staking token of the Point network",
+        "denom_units": [
+          {
+            "denom": "ibc/72132A48050500C99EDE86468719A5CE729A295F5F785E8E40049ACE6DA4F8B9",
+            "exponent": 0,
+            "aliases": [
+              "apoint"
+            ]
+          },
+          {
+            "denom": "point",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/72132A48050500C99EDE86468719A5CE729A295F5F785E8E40049ACE6DA4F8B9",
+        "name": "Point",
+        "display": "point",
+        "symbol": "POINT",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.png"
+        },
+        "coingecko_id": "point-network",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "apoint",
+              "chain_name": "point"
+            },
+            "chain": {
+              "channel_id": "channel-404"
+            }
+          }
+        ]
       },
       {
         "description": "REGEN coin is the token for the Regen Network Platform",
@@ -3304,6 +3381,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-0",
               "base_denom": "stuatom",
+              "chain_name": "stride"
+            },
+            "chain": {
+              "channel_id": "channel-391"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/715BD634CF4D914C3EE93B0F8A9D2514B743F6FE36BC80263D1BC5EE4B3C5D40",
+            "exponent": 0,
+            "aliases": [
+              "stustars"
+            ]
+          },
+          {
+            "denom": "ststars",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/715BD634CF4D914C3EE93B0F8A9D2514B743F6FE36BC80263D1BC5EE4B3C5D40",
+        "name": "stSTARS",
+        "display": "ststars",
+        "symbol": "stSTARS",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.svg"
+        },
+        "coingecko_id": "",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "stustars",
               "chain_name": "stride"
             },
             "chain": {
@@ -4567,6 +4681,44 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "The native EVM, governance and staking token of the Evmos Hub",
+        "denom_units": [
+          {
+            "denom": "ibc/80D5E86278CE910A7A9653CCA7DEB62C817E07AF9C0C657B43191C43DE60B107",
+            "exponent": 0,
+            "aliases": [
+              "aevmos"
+            ]
+          },
+          {
+            "denom": "evmos",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/80D5E86278CE910A7A9653CCA7DEB62C817E07AF9C0C657B43191C43DE60B107",
+        "name": "Evmos",
+        "display": "evmos",
+        "symbol": "EVMOS",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png"
+        },
+        "coingecko_id": "evmos",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-31",
+              "base_denom": "aevmos",
+              "chain_name": "evmos"
+            },
+            "chain": {
+              "channel_id": "channel-57"
+            }
+          }
+        ]
+      },
+      {
         "description": "The IRIS token is the native governance token for the IrisNet chain.",
         "denom_units": [
           {
@@ -4729,7 +4881,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/9AAAB2E3E42072C4191BC60517804F3ACB831769E8D30D5D375CC5217D1A5977",
+            "denom": "ibc/3187DCFD83CF0D9411F38734FBF3C3AFAE06BF857915DDDCB2E6219F5C69A27E",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -4740,7 +4892,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/9AAAB2E3E42072C4191BC60517804F3ACB831769E8D30D5D375CC5217D1A5977",
+        "base": "ibc/3187DCFD83CF0D9411F38734FBF3C3AFAE06BF857915DDDCB2E6219F5C69A27E",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -5497,6 +5649,43 @@ const asset_lists: AssetList[] = [
     "chain_name": "evmos",
     "assets": [
       {
+        "description": "CRO coin is the token for the Crypto.com platform.",
+        "denom_units": [
+          {
+            "denom": "ibc/1FA2E811AA853A2AE028D82D490B1E967312DB871C9A40B19684FACB1DDD7881",
+            "exponent": 0,
+            "aliases": [
+              "basecro"
+            ]
+          },
+          {
+            "denom": "cro",
+            "exponent": 8
+          }
+        ],
+        "base": "ibc/1FA2E811AA853A2AE028D82D490B1E967312DB871C9A40B19684FACB1DDD7881",
+        "name": "Cronos",
+        "display": "cro",
+        "symbol": "CRO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png"
+        },
+        "coingecko_id": "crypto-com-chain",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-57",
+              "base_denom": "basecro",
+              "chain_name": "cryptoorgchain"
+            },
+            "chain": {
+              "channel_id": "channel-31"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Osmosis",
         "denom_units": [
           {
@@ -5887,6 +6076,79 @@ const asset_lists: AssetList[] = [
     "chain_name": "gravitybridge",
     "assets": [
       {
+        "description": "BLD is the token used to secure the Agoric chain through staking and to backstop Inter Protocol.",
+        "denom_units": [
+          {
+            "denom": "ibc/25DC7FDF5A05ED9F66FB17FCD9F659D97EC609B8C15A184E6258EE8E91322E50",
+            "exponent": 0,
+            "aliases": [
+              "ubld"
+            ]
+          },
+          {
+            "denom": "bld",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/25DC7FDF5A05ED9F66FB17FCD9F659D97EC609B8C15A184E6258EE8E91322E50",
+        "name": "Agoric",
+        "display": "bld",
+        "symbol": "BLD",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/bld.png"
+        },
+        "coingecko_id": "agoric",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-4",
+              "base_denom": "ubld",
+              "chain_name": "agoric"
+            },
+            "chain": {
+              "channel_id": "channel-91"
+            }
+          }
+        ]
+      },
+      {
+        "description": "IST is the stable token used by the Agoric chain for execution fees and commerce.",
+        "denom_units": [
+          {
+            "denom": "ibc/AC68952014518ECAAB8672B5393A008276E9C0295C513725BF9E492A54F525F3",
+            "exponent": 0,
+            "aliases": [
+              "uist"
+            ]
+          },
+          {
+            "denom": "ist",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/AC68952014518ECAAB8672B5393A008276E9C0295C513725BF9E492A54F525F3",
+        "name": "Inter Stable Token",
+        "display": "ist",
+        "symbol": "IST",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/ist.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-4",
+              "base_denom": "uist",
+              "chain_name": "agoric"
+            },
+            "chain": {
+              "channel_id": "channel-91"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Crescent",
         "denom_units": [
           {
@@ -6084,6 +6346,82 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "The XPRT token is primarily a governance token for the Persistence chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/74A48437840E981DD7789856D97EE5E3751DF474D22EDCD66DB046AF0B725A64",
+            "exponent": 0,
+            "aliases": [
+              "uxprt"
+            ]
+          },
+          {
+            "denom": "xprt",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/74A48437840E981DD7789856D97EE5E3751DF474D22EDCD66DB046AF0B725A64",
+        "name": "Persistence",
+        "display": "xprt",
+        "symbol": "XPRT",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg"
+        },
+        "coingecko_id": "persistence",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-38",
+              "base_denom": "uxprt",
+              "chain_name": "persistence"
+            },
+            "chain": {
+              "channel_id": "channel-24"
+            }
+          }
+        ]
+      },
+      {
+        "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
+        "denom_units": [
+          {
+            "denom": "ibc/9EE4928412A95D88882EABF8DF40E8CB535A5C6EF49A0A11D9353ACD8869E76E",
+            "exponent": 0,
+            "aliases": [
+              "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
+            ]
+          },
+          {
+            "denom": "pstake",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/9EE4928412A95D88882EABF8DF40E8CB535A5C6EF49A0A11D9353ACD8869E76E",
+        "name": "pSTAKE Finance",
+        "display": "pstake",
+        "symbol": "PSTAKE",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-38",
+              "base_denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+              "chain_name": "persistence"
+            },
+            "chain": {
+              "channel_id": "channel-24"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
+        },
+        "coingecko_id": "pstake-finance"
       }
     ]
   },
@@ -6688,7 +7026,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/D3C54D3697D95F2FB266B65261C2B0D0B9DA61669CE5D868348CE271292CA592",
+            "denom": "ibc/7A8E8192EE16147AE3855A2C3E56C2E51BCC71D05FF6A1B771E409B0E31C6647",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -6699,7 +7037,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/D3C54D3697D95F2FB266B65261C2B0D0B9DA61669CE5D868348CE271292CA592",
+        "base": "ibc/7A8E8192EE16147AE3855A2C3E56C2E51BCC71D05FF6A1B771E409B0E31C6647",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -8626,7 +8964,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/0E13238C0508440A981BD9E876E89E0C0CCA70E2FE21930B0D4F2633673561AC",
+            "denom": "ibc/28B776A9436721479E618C222D2916D9155184FAA6CFFD72870DEC75F02A09B3",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -8637,7 +8975,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/0E13238C0508440A981BD9E876E89E0C0CCA70E2FE21930B0D4F2633673561AC",
+        "base": "ibc/28B776A9436721479E618C222D2916D9155184FAA6CFFD72870DEC75F02A09B3",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -10201,6 +10539,94 @@ const asset_lists: AssetList[] = [
             },
             "chain": {
               "channel_id": "channel-3"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chain_name": "lambda",
+    "assets": [
+      {
+        "description": "The native token of Osmosis",
+        "denom_units": [
+          {
+            "denom": "ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B",
+            "exponent": 0,
+            "aliases": [
+              "uosmo"
+            ]
+          },
+          {
+            "denom": "osmo",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B",
+        "name": "Osmosis",
+        "display": "osmo",
+        "symbol": "OSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
+        },
+        "coingecko_id": "osmosis",
+        "keywords": [
+          "dex",
+          "staking"
+        ],
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-350",
+              "base_denom": "uosmo",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D",
+            "exponent": 0,
+            "aliases": [
+              "uion"
+            ]
+          },
+          {
+            "denom": "ion",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D",
+        "name": "Ion",
+        "display": "ion",
+        "symbol": "ION",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
+        },
+        "coingecko_id": "ion",
+        "keywords": [
+          "memecoin"
+        ],
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-350",
+              "base_denom": "uion",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -13655,6 +14081,43 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "The native token of Lambda",
+        "denom_units": [
+          {
+            "denom": "ibc/0EA19B60FF5346E5A5C6830893DE11489308876444FC3352328F49CC03908274",
+            "exponent": 0,
+            "aliases": [
+              "ulamb"
+            ]
+          },
+          {
+            "denom": "lamb",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/0EA19B60FF5346E5A5C6830893DE11489308876444FC3352328F49CC03908274",
+        "name": "Lambda",
+        "display": "lamb",
+        "symbol": "LAMB",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.png"
+        },
+        "coingecko_id": "lambda",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1",
+              "base_denom": "ulamb",
+              "chain_name": "lambda"
+            },
+            "chain": {
+              "channel_id": "channel-350"
+            }
+          }
+        ]
+      },
+      {
         "description": "LIKE is the native staking and governance token of LikeCoin chain, a Decentralized Publishing Infrastructure to empower content ownership, authenticity, and provenance.",
         "denom_units": [
           {
@@ -13957,7 +14420,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/CF780ADED86E541AD7A8D5B7D33D2E3D9C61D8ECD228B8ED951986D782CB630A",
+            "denom": "ibc/4126486B50373C2F5264F31C9D3C9FF5E41F30AD0C91D6CDE3D20EA5518B71C4",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -13968,7 +14431,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/CF780ADED86E541AD7A8D5B7D33D2E3D9C61D8ECD228B8ED951986D782CB630A",
+        "base": "ibc/4126486B50373C2F5264F31C9D3C9FF5E41F30AD0C91D6CDE3D20EA5518B71C4",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -14026,6 +14489,43 @@ const asset_lists: AssetList[] = [
             },
             "chain": {
               "channel_id": "channel-222"
+            }
+          }
+        ]
+      },
+      {
+        "description": "REBUS, the native coin of the Rebus chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/A1AC7F9EE2F643A68E3A35BCEB22040120BEA4059773BB56985C76BDFEBC71D9",
+            "exponent": 0,
+            "aliases": [
+              "arebus"
+            ]
+          },
+          {
+            "denom": "rebus",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/A1AC7F9EE2F643A68E3A35BCEB22040120BEA4059773BB56985C76BDFEBC71D9",
+        "name": "Rebus",
+        "display": "rebus",
+        "symbol": "REBUS",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "arebus",
+              "chain_name": "rebus"
+            },
+            "chain": {
+              "channel_id": "channel-355"
             }
           }
         ]
@@ -14439,6 +14939,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-5",
               "base_denom": "stuatom",
+              "chain_name": "stride"
+            },
+            "chain": {
+              "channel_id": "channel-326"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/5DD1F95ED336014D00CE2520977EC71566D282F9749170ADC83A392E0EA7426A",
+            "exponent": 0,
+            "aliases": [
+              "stustars"
+            ]
+          },
+          {
+            "denom": "ststars",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/5DD1F95ED336014D00CE2520977EC71566D282F9749170ADC83A392E0EA7426A",
+        "name": "stSTARS",
+        "display": "ststars",
+        "symbol": "stSTARS",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.svg"
+        },
+        "coingecko_id": "",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-5",
+              "base_denom": "stustars",
               "chain_name": "stride"
             },
             "chain": {
@@ -17045,6 +17582,88 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "The native token of Gravity Bridge",
+        "denom_units": [
+          {
+            "denom": "ibc/31D711D31CD5D83D98E76B1486EEDA1A38CD1F7D6FCBD03521FE51323115AECA",
+            "exponent": 0,
+            "aliases": [
+              "ugraviton"
+            ]
+          },
+          {
+            "denom": "graviton",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/31D711D31CD5D83D98E76B1486EEDA1A38CD1F7D6FCBD03521FE51323115AECA",
+        "name": "Graviton",
+        "display": "graviton",
+        "symbol": "GRAV",
+        "coingecko_id": "graviton",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-24",
+              "base_denom": "ugraviton",
+              "chain_name": "gravitybridge"
+            },
+            "chain": {
+              "channel_id": "channel-38"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chain_name": "point",
+    "assets": [
+      {
+        "description": "The native staking and governance token of the Cosmos Hub.",
+        "denom_units": [
+          {
+            "denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+            "exponent": 0,
+            "aliases": [
+              "uatom"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+        "name": "Cosmos",
+        "display": "atom",
+        "symbol": "ATOM",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg"
+        },
+        "coingecko_id": "cosmos",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-404",
+              "base_denom": "uatom",
+              "chain_name": "cosmoshub"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -17130,6 +17749,94 @@ const asset_lists: AssetList[] = [
             },
             "chain": {
               "channel_id": "channel-7"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chain_name": "rebus",
+    "assets": [
+      {
+        "description": "The native token of Osmosis",
+        "denom_units": [
+          {
+            "denom": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+            "exponent": 0,
+            "aliases": [
+              "uosmo"
+            ]
+          },
+          {
+            "denom": "osmo",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+        "name": "Osmosis",
+        "display": "osmo",
+        "symbol": "OSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
+        },
+        "coingecko_id": "osmosis",
+        "keywords": [
+          "dex",
+          "staking"
+        ],
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-355",
+              "base_denom": "uosmo",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F7E92EE59B5428793F3EF5C1A4CB2494F61A9D0C9A69469D02390714A1372E16",
+            "exponent": 0,
+            "aliases": [
+              "uion"
+            ]
+          },
+          {
+            "denom": "ion",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/F7E92EE59B5428793F3EF5C1A4CB2494F61A9D0C9A69469D02390714A1372E16",
+        "name": "Ion",
+        "display": "ion",
+        "symbol": "ION",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
+        },
+        "coingecko_id": "ion",
+        "keywords": [
+          "memecoin"
+        ],
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-355",
+              "base_denom": "uion",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -17415,7 +18122,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/21138CC0DC8EB34D44268D9E9E76CC9B3C8FCEF2CE72B3ACF92AFBD54E7076D8",
+            "denom": "ibc/D9E873B17F94864673D9ADD1716F9897201984859C597973B575ECE2679C8CFA",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -17426,7 +18133,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/21138CC0DC8EB34D44268D9E9E76CC9B3C8FCEF2CE72B3ACF92AFBD54E7076D8",
+        "base": "ibc/D9E873B17F94864673D9ADD1716F9897201984859C597973B575ECE2679C8CFA",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -20376,7 +21083,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/D3C54D3697D95F2FB266B65261C2B0D0B9DA61669CE5D868348CE271292CA592",
+            "denom": "ibc/7A8E8192EE16147AE3855A2C3E56C2E51BCC71D05FF6A1B771E409B0E31C6647",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -20387,7 +21094,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/D3C54D3697D95F2FB266B65261C2B0D0B9DA61669CE5D868348CE271292CA592",
+        "base": "ibc/7A8E8192EE16147AE3855A2C3E56C2E51BCC71D05FF6A1B771E409B0E31C6647",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -21040,7 +21747,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/692EBA9E1157841AD2B4A8D5EE8C194AD445497DFC73376546E57733A0AA7621",
+            "denom": "ibc/8B8D2245B7DC32EDAAA847D5CF81361AD3B47D2AE312671F33981A4DCD3ADDB7",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -21051,7 +21758,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/692EBA9E1157841AD2B4A8D5EE8C194AD445497DFC73376546E57733A0AA7621",
+        "base": "ibc/8B8D2245B7DC32EDAAA847D5CF81361AD3B47D2AE312671F33981A4DCD3ADDB7",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -21554,6 +22261,193 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "The native token of Stride",
+        "denom_units": [
+          {
+            "denom": "ibc/55967CD055E19BF374A2556456C5760DAFDCF1D86DD85FAD08DBA806964DB2C4",
+            "exponent": 0,
+            "aliases": [
+              "ustrd"
+            ]
+          },
+          {
+            "denom": "strd",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/55967CD055E19BF374A2556456C5760DAFDCF1D86DD85FAD08DBA806964DB2C4",
+        "name": "Stride",
+        "display": "strd",
+        "symbol": "STRD",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg"
+        },
+        "coingecko_id": "stride",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-19",
+              "base_denom": "ustrd",
+              "chain_name": "stride"
+            },
+            "chain": {
+              "channel_id": "channel-106"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FED316EA6AA1F52581F61D5D4B38F2A09042D5EA1DABA07B8A23C1EE3C0C4651",
+            "exponent": 0,
+            "aliases": [
+              "stuatom"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/FED316EA6AA1F52581F61D5D4B38F2A09042D5EA1DABA07B8A23C1EE3C0C4651",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg"
+        },
+        "coingecko_id": "stride-staked-atom",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-19",
+              "base_denom": "stuatom",
+              "chain_name": "stride"
+            },
+            "chain": {
+              "channel_id": "channel-106"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7A58490427EF0092E2BFFB4BEEBA38E29B09E9B98557DFC78335B43F15CF2676",
+            "exponent": 0,
+            "aliases": [
+              "stustars"
+            ]
+          },
+          {
+            "denom": "ststars",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/7A58490427EF0092E2BFFB4BEEBA38E29B09E9B98557DFC78335B43F15CF2676",
+        "name": "stSTARS",
+        "display": "ststars",
+        "symbol": "stSTARS",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.svg"
+        },
+        "coingecko_id": "",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-19",
+              "base_denom": "stustars",
+              "chain_name": "stride"
+            },
+            "chain": {
+              "channel_id": "channel-106"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/0AA9207D732AC65D17EF3081AE8EB96CABE26D9E8FBE27EC96BC4E3FEBD255C1",
+            "exponent": 0,
+            "aliases": [
+              "stuosmo"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/0AA9207D732AC65D17EF3081AE8EB96CABE26D9E8FBE27EC96BC4E3FEBD255C1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg"
+        },
+        "coingecko_id": "",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-19",
+              "base_denom": "stuosmo",
+              "chain_name": "stride"
+            },
+            "chain": {
+              "channel_id": "channel-106"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/2D4AEA83CAECDA73C09D0FA6A5A76CAE68873C36A744212687E5A495B36BD8C6",
+            "exponent": 0,
+            "aliases": [
+              "stujuno"
+            ]
+          },
+          {
+            "denom": "stjuno",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/2D4AEA83CAECDA73C09D0FA6A5A76CAE68873C36A744212687E5A495B36BD8C6",
+        "name": "stJUNO",
+        "display": "stjuno",
+        "symbol": "stJUNO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.svg"
+        },
+        "coingecko_id": "",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-19",
+              "base_denom": "stujuno",
+              "chain_name": "stride"
+            },
+            "chain": {
+              "channel_id": "channel-106"
+            }
+          }
+        ]
       }
     ]
   },
@@ -21836,7 +22730,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/A65D9F60F8EA535D5D2EB0BA4DA9233A7E1691B02DA844A3B89CD54EA293AB9C",
+            "denom": "ibc/565F8228F66402B5D7815FF0885A5AE9CF27417A710364FEB3BEA181E747D63E",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -21847,7 +22741,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/A65D9F60F8EA535D5D2EB0BA4DA9233A7E1691B02DA844A3B89CD54EA293AB9C",
+        "base": "ibc/565F8228F66402B5D7815FF0885A5AE9CF27417A710364FEB3BEA181E747D63E",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -22066,6 +22960,43 @@ const asset_lists: AssetList[] = [
             },
             "chain": {
               "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native token of Stargaze",
+        "denom_units": [
+          {
+            "denom": "ibc/7EAE5BEF3A26B64AFBD89828AFDDB1DC7024A0276D22745201632C40E6E634D0",
+            "exponent": 0,
+            "aliases": [
+              "ustars"
+            ]
+          },
+          {
+            "denom": "stars",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/7EAE5BEF3A26B64AFBD89828AFDDB1DC7024A0276D22745201632C40E6E634D0",
+        "name": "Stargaze",
+        "display": "stars",
+        "symbol": "STARS",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png"
+        },
+        "coingecko_id": "stargaze",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-106",
+              "base_denom": "ustars",
+              "chain_name": "stargaze"
+            },
+            "chain": {
+              "channel_id": "channel-19"
             }
           }
         ]

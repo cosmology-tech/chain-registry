@@ -2703,6 +2703,42 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'The native token of Lambda',
+      denom_units: [
+        {
+          denom:
+            'ibc/0EA19B60FF5346E5A5C6830893DE11489308876444FC3352328F49CC03908274',
+          exponent: 0,
+          aliases: ['ulamb']
+        },
+        {
+          denom: 'lamb',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/0EA19B60FF5346E5A5C6830893DE11489308876444FC3352328F49CC03908274',
+      name: 'Lambda',
+      display: 'lamb',
+      symbol: 'LAMB',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.png'
+      },
+      coingecko_id: 'lambda',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'ulamb',
+            chain_name: 'lambda'
+          },
+          chain: {
+            channel_id: 'channel-350'
+          }
+        }
+      ]
+    },
+    {
       description:
         'LIKE is the native staking and governance token of LikeCoin chain, a Decentralized Publishing Infrastructure to empower content ownership, authenticity, and provenance.',
       denom_units: [
@@ -3004,7 +3040,7 @@ const asset_list: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/CF780ADED86E541AD7A8D5B7D33D2E3D9C61D8ECD228B8ED951986D782CB630A',
+            'ibc/4126486B50373C2F5264F31C9D3C9FF5E41F30AD0C91D6CDE3D20EA5518B71C4',
           exponent: 0,
           aliases: [
             'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444'
@@ -3015,7 +3051,7 @@ const asset_list: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/CF780ADED86E541AD7A8D5B7D33D2E3D9C61D8ECD228B8ED951986D782CB630A',
+      base: 'ibc/4126486B50373C2F5264F31C9D3C9FF5E41F30AD0C91D6CDE3D20EA5518B71C4',
       name: 'pSTAKE Finance',
       display: 'pstake',
       symbol: 'PSTAKE',
@@ -3073,6 +3109,42 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-222'
+          }
+        }
+      ]
+    },
+    {
+      description: 'REBUS, the native coin of the Rebus chain.',
+      denom_units: [
+        {
+          denom:
+            'ibc/A1AC7F9EE2F643A68E3A35BCEB22040120BEA4059773BB56985C76BDFEBC71D9',
+          exponent: 0,
+          aliases: ['arebus']
+        },
+        {
+          denom: 'rebus',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/A1AC7F9EE2F643A68E3A35BCEB22040120BEA4059773BB56985C76BDFEBC71D9',
+      name: 'Rebus',
+      display: 'rebus',
+      symbol: 'REBUS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'arebus',
+            chain_name: 'rebus'
+          },
+          chain: {
+            channel_id: 'channel-355'
           }
         }
       ]
@@ -3476,6 +3548,42 @@ const asset_list: AssetList = {
           counterparty: {
             channel_id: 'channel-5',
             base_denom: 'stuatom',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-326'
+          }
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/5DD1F95ED336014D00CE2520977EC71566D282F9749170ADC83A392E0EA7426A',
+          exponent: 0,
+          aliases: ['stustars']
+        },
+        {
+          denom: 'ststars',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/5DD1F95ED336014D00CE2520977EC71566D282F9749170ADC83A392E0EA7426A',
+      name: 'stSTARS',
+      display: 'ststars',
+      symbol: 'stSTARS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.svg'
+      },
+      coingecko_id: '',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'stustars',
             chain_name: 'stride'
           },
           chain: {
