@@ -253,6 +253,16 @@ const chains: Chain[] = [
         {
           id: '86afe23f116ba4754a19819a55d153008eb74b48',
           address: '15.164.87.75:26656'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:12856',
+          provider: 'Polkachu'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:12856',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -373,6 +383,10 @@ const chains: Chain[] = [
           provider: 'ecostake'
         },
         {
+          address: 'https://akash-rpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes'
+        },
+        {
           address: 'https://akash-rpc.polkachu.com',
           provider: 'Polkachu'
         },
@@ -395,6 +409,10 @@ const chains: Chain[] = [
           provider: 'ecostake'
         },
         {
+          address: 'https://akash-api.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes'
+        },
+        {
           address: 'https://akash-api.polkachu.com',
           provider: 'Polkachu'
         },
@@ -411,6 +429,10 @@ const chains: Chain[] = [
         {
           address: 'grpc-akash-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'https://akash-grpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
         },
         {
           address: 'akash-grpc.polkachu.com:12890',
@@ -525,7 +547,7 @@ const chains: Chain[] = [
     node_home: '$HOME/.mantleNode',
     genesis: {
       genesis_url:
-        'https://github.com/AssetMantle/genesisTransactions/blob/main/mantle-1/final_genesis.json?raw=true'
+        'https://raw.githubusercontent.com/AssetMantle/genesisTransactions/main/mantle-1/final_genesis.json'
     },
     codebase: {
       git_repo: 'https://github.com/AssetMantle/node.git',
@@ -944,19 +966,19 @@ const chains: Chain[] = [
       fee_tokens: [
         {
           denom: 'uaxl',
-          fixed_min_gas_price: 0.00005
+          fixed_min_gas_price: 0.007
         }
       ]
     },
     codebase: {
       git_repo: 'https://github.com/axelarnetwork/axelar-core',
-      recommended_version: 'v0.17.3',
-      compatible_versions: ['v0.17.3'],
+      recommended_version: 'v0.26.0',
+      compatible_versions: ['v0.26.0'],
       binaries: {
         'linux/amd64':
-          'https://github.com/axelarnetwork/axelar-core/releases/download/v0.17.3/axelard-linux-amd64-v0.17.3',
+          'https://github.com/axelarnetwork/axelar-core/releases/download/v0.26.0/axelard-linux-amd64-v0.26.0',
         'darwin/amd64':
-          'https://github.com/axelarnetwork/axelar-core/releases/download/v0.17.3/axelard-darwin-amd64-v0.17.3'
+          'https://github.com/axelarnetwork/axelar-core/releases/download/v0.26.0/axelard-darwin-amd64-v0.26.0'
       }
     },
     peers: {
@@ -988,16 +1010,24 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
+          address: 'https://rpc-axelar.imperator.co:443',
+          provider: 'Imperator.co'
+        },
+        {
           address: 'https://axelar-rpc.quickapi.com:443',
           provider: 'chainlayer'
         },
         {
           address: 'https://axelar-rpc.chainode.tech:443',
-          provider: 'chainode'
+          provider: 'Chainode'
         },
         {
           address: 'https://axelar-rpc.pops.one:443',
           provider: 'p-ops'
+        },
+        {
+          address: 'https://axelar-rpc.qubelabs.io:443',
+          provider: 'Qubelabs'
         },
         {
           address: 'https://rpc-1.axelar.nodes.guru:443',
@@ -1014,8 +1044,20 @@ const chains: Chain[] = [
       ],
       rest: [
         {
+          address: 'https://lcd-axelar.imperator.co:443',
+          provider: 'Imperator.co'
+        },
+        {
           address: 'https://axelar-lcd.quickapi.com:443',
           provider: 'chainlayer'
+        },
+        {
+          address: 'https://axelar-rest.chainode.tech:443',
+          provider: 'Chainode'
+        },
+        {
+          address: 'https://axelar-lcd.qubelabs.io:443',
+          provider: 'Qubelabs'
         },
         {
           address: 'https://api-1.axelar.nodes.guru:443',
@@ -1032,12 +1074,38 @@ const chains: Chain[] = [
       ],
       grpc: [
         {
+          address: 'axelar-grpc.chainode.tech',
+          provider: 'Chainode'
+        },
+        {
+          address: 'axelar-grpc.qubelabs.io:9092',
+          provider: 'Qubelabs'
+        },
+        {
+          address: 'axelar-grpc.quantnode.tech:9090',
+          provider: 'Quantnode'
+        },
+        {
+          address: 'services.staketab.com:9080',
+          provider: 'Staketab'
+        },
+        {
           address: 'grpc-axelar-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         },
         {
           address: 'axelar-grpc.polkachu.com:15190',
           provider: 'Polkachu'
+        }
+      ],
+      'grpc-web': [
+        {
+          address: 'axelar-grpcweb.chainode.tech',
+          provider: 'Chainode'
+        },
+        {
+          address: 'axelar-grpcweb.quantnode.tech:9091',
+          provider: 'Quantnode'
         }
       ]
     },
@@ -1324,6 +1392,16 @@ const chains: Chain[] = [
           id: '23671067d0fd40aec523290585c7d8e91034a771',
           address: 'seed2.bitcanna.io:26656',
           provider: 'bitcanna'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:13056',
+          provider: 'Polkachu'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:13056',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -1408,6 +1486,10 @@ const chains: Chain[] = [
         {
           address: 'https://bitcanna-rpc.panthea.eu',
           provider: 'Panthea EU'
+        },
+        {
+          address: 'https://bitcanna-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       grpc: [
@@ -1422,6 +1504,10 @@ const chains: Chain[] = [
         {
           address: 'bitcanna-grpc.polkachu.com:13090',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://bitcanna-grpc.lavenderfive.com:443/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
@@ -1448,6 +1534,10 @@ const chains: Chain[] = [
         {
           address: 'https://bitcanna-api.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://bitcanna-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -1548,6 +1638,11 @@ const chains: Chain[] = [
         {
           id: 'efd52c1e56b460b1f37d73c8d2bd5f860b41d2ba',
           address: '65.21.62.83:26656'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:16056',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -1589,6 +1684,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.bitsong.freak12techno.io/',
           provider: 'freak12techno'
+        },
+        {
+          address: 'https://bitsong-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
@@ -1623,6 +1722,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.bitsong.freak12techno.io/',
           provider: 'freak12techno'
+        },
+        {
+          address: 'https://bitsong-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       grpc: [
@@ -1633,6 +1736,10 @@ const chains: Chain[] = [
         {
           address: 'bitsong.stakesystems.io:2083',
           provider: 'stake.systems'
+        },
+        {
+          address: 'https://bitsong-grpc.lavenderfive.com:443/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -1846,9 +1953,19 @@ const chains: Chain[] = [
           provider: 'Unknown'
         },
         {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:15556',
+          provider: 'Polkachu'
+        },
+        {
           id: '706e81c8c99e5d0cf37432df5f972818339f19b5',
           address: '34.122.124.28:26656',
           provider: 'Unknown'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:15556',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -1872,6 +1989,10 @@ const chains: Chain[] = [
         {
           address: 'https://canto-rpc.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://canto-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
@@ -1886,6 +2007,10 @@ const chains: Chain[] = [
         {
           address: 'https://canto-api.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://canto-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       grpc: [
@@ -1896,6 +2021,10 @@ const chains: Chain[] = [
         {
           address: 'https://grpc.canto.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://canto-grpc.lavenderfive.com:443/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       'evm-http-jsonrpc': [
@@ -2049,8 +2178,8 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/cerberus-zone/cerberus',
-      recommended_version: 'v1.0.1',
-      compatible_versions: ['v1.0.1']
+      recommended_version: 'v2.0.0',
+      compatible_versions: ['v2.0.0']
     },
     peers: {
       seeds: [
@@ -2058,6 +2187,11 @@ const chains: Chain[] = [
           id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
           address: 'seeds.polkachu.com:13856',
           provider: 'Polkachu'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:13856',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -2145,6 +2279,14 @@ const chains: Chain[] = [
         {
           address: 'https://cerberus-rpc.panthea.eu',
           provider: 'Panthea EU'
+        },
+        {
+          address: 'https://cerberus-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          address: 'https://cerberus-rpc.kleomed.es',
+          provider: 'Kleomedes'
         }
       ],
       rest: [
@@ -2167,6 +2309,14 @@ const chains: Chain[] = [
         {
           address: 'https://cerberus-api.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://cerberus-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          address: 'https://cerberus-api.kleomed.es',
+          provider: 'Kleomedes'
         }
       ],
       grpc: [
@@ -2177,6 +2327,10 @@ const chains: Chain[] = [
         {
           address: 'cerberus-grpc.polkachu.com:13890',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://cerberus-grpc.lavenderfive.com:443/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -2270,6 +2424,11 @@ const chains: Chain[] = [
           id: '9b30307a2a2819790d68c04bb62f5cf4028f447e',
           address: 'seed1.ap.cheqd.net:26656',
           provider: 'cheqd'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:16156',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -2301,8 +2460,16 @@ const chains: Chain[] = [
           provider: 'EZStaking.io'
         },
         {
+          address: 'https://cheqd-rpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes'
+        },
+        {
           address: 'https://rpc-cheqd-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://rpc.cheqd.nodestake.top',
+          provider: 'NodeStake'
         }
       ],
       rest: [
@@ -2311,12 +2478,20 @@ const chains: Chain[] = [
           provider: 'cheqd'
         },
         {
+          address: 'https://cheqd-api.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes'
+        },
+        {
           address: 'https://lcd.cheqd.ezstaking.io',
           provider: 'EZStaking.io'
         },
         {
           address: 'https://api-cheqd-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://api.cheqd.nodestake.top',
+          provider: 'NodeStake'
         }
       ],
       grpc: [
@@ -2325,8 +2500,16 @@ const chains: Chain[] = [
           provider: 'cheqd'
         },
         {
+          address: 'https://cheqd-grpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
           address: 'grpc-cheqd-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'https://grpc.cheqd.nodestake.top',
+          provider: 'NodeStake'
         }
       ]
     },
@@ -2362,7 +2545,7 @@ const chains: Chain[] = [
     node_home: '$HOME/.chihuahua',
     genesis: {
       genesis_url:
-        'https://raw.githubusercontent.com/ChihuahuaChain/mainnet/main/genesis.json'
+        'https://raw.githubusercontent.com/ChihuahuaChain/chihuahua/main/mainnet/genesis.json'
     },
     fees: {
       fee_tokens: [
@@ -2391,6 +2574,16 @@ const chains: Chain[] = [
         {
           id: '4936e377b4d4f17048f8961838a5035a4d21240c',
           address: 'chihuahua-seed-01.mercury-nodes.net:29540'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:12956',
+          provider: 'Polkachu'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:12956',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -2433,11 +2626,6 @@ const chains: Chain[] = [
           id: 'a9640eb569620d1f7be018a9e1919b0357a18b8c',
           address: '38.146.3.160:26656',
           provider: 'RHINO'
-        },
-        {
-          id: '7e2239a0d4a0176fe4daf7a3fecd15ac663a8eb6',
-          address: '144.91.126.23:26656',
-          provider: 'LavenderFive'
         }
       ]
     },
@@ -2458,6 +2646,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-chihuahua-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://chihuahua-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
@@ -2476,6 +2668,10 @@ const chains: Chain[] = [
         {
           address: 'https://chihuahua-api.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://chihuahua-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       grpc: [
@@ -2486,6 +2682,10 @@ const chains: Chain[] = [
         {
           address: 'chihuahua-grpc.polkachu.com:12990',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://chihuahua-grpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -2634,8 +2834,8 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/comdex-official/comdex',
-      recommended_version: 'v0.0.4',
-      compatible_versions: ['v0.0.4']
+      recommended_version: 'v0.1.1',
+      compatible_versions: ['v0.1.1']
     },
     daemon_name: 'comdex',
     node_home: '$HOME/.comdex',
@@ -2649,6 +2849,16 @@ const chains: Chain[] = [
         {
           id: '7ca14a1d156299999eba9c394ca060368022d52f',
           address: '54.194.178.110:26656'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:13156',
+          provider: 'Polkachu'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:13156',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -2723,6 +2933,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.comdex.chaintools.tech/',
           provider: 'ChainTools'
+        },
+        {
+          address: 'https://comdex-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
@@ -2757,6 +2971,10 @@ const chains: Chain[] = [
         {
           address: 'https://comdex-api.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://comdex-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       grpc: [
@@ -2771,6 +2989,10 @@ const chains: Chain[] = [
         {
           address: 'comdex-grpc.polkachu.com:13190',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://comdex-grpc.lavenderfive.com:443/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -2965,6 +3187,16 @@ const chains: Chain[] = [
           id: '3b67739570f921cc5e0db4b3efe488ce184155a9',
           address: 'seeds.pupmos.network:2000',
           provider: 'PUPMØS'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:14956',
+          provider: 'Polkachu'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:14956',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -3082,6 +3314,10 @@ const chains: Chain[] = [
           provider: 'validatornetwork'
         },
         {
+          address: 'https://cosmos-rpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
           address: 'https://rpc.cosmoshub.strange.love',
           provider: 'strangelove-ventures'
         },
@@ -3112,6 +3348,14 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-cosmoshub-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://rpc.cosmos.interbloc.org',
+          provider: 'Interbloc'
+        },
+        {
+          address: 'https://atom-rpc.kleomed.es',
+          provider: 'Kleomedes'
         }
       ],
       rest: [
@@ -3126,6 +3370,10 @@ const chains: Chain[] = [
         {
           address: 'https://lcd-cosmoshub.whispernode.com',
           provider: ' WhisperNode🤐'
+        },
+        {
+          address: 'https://cosmos-api.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
         },
         {
           address: 'https://rest-cosmoshub.ecostake.com',
@@ -3146,6 +3394,18 @@ const chains: Chain[] = [
         {
           address: 'https://cosmos-api.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://cosmos-api.cyphercore.io',
+          provider: 'Cypher Core'
+        },
+        {
+          address: 'https://api.cosmos.interbloc.org',
+          provider: 'Interbloc'
+        },
+        {
+          address: 'https://atom-api.kleomed.es',
+          provider: 'Kleomedes'
         }
       ],
       grpc: [
@@ -3158,12 +3418,20 @@ const chains: Chain[] = [
           provider: 'strangelove'
         },
         {
+          address: 'https://cosmos-grpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
           address: 'grpc-cosmoshub-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         },
         {
           address: 'cosmos-grpc.polkachu.com:14990',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://grpc.cosmos.interbloc.org',
+          provider: 'Interbloc'
         }
       ]
     },
@@ -3915,6 +4183,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.decentr.chaintools.tech/',
           provider: 'ChainTools'
+        },
+        {
+          address: 'https://rpc.decentr.nodestake.top',
+          provider: 'NodeStake'
         }
       ],
       rest: [
@@ -3925,6 +4197,16 @@ const chains: Chain[] = [
         {
           address: 'https://api.decentr.chaintools.tech/',
           provider: 'ChainTools'
+        },
+        {
+          address: 'https://api.decentr.nodestake.top',
+          provider: 'NodeStake'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://grpc.decentr.nodestake.top',
+          provider: 'NodeStake'
         }
       ]
     },
@@ -4003,6 +4285,11 @@ const chains: Chain[] = [
           id: '45105c7241068904bdf5a32c86ee45979794637f',
           address: 'seed-3.mainnet.desmos.network:26656',
           provider: 'desmos'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:16256',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -4019,6 +4306,10 @@ const chains: Chain[] = [
         {
           address: 'https://desmos-rpc.panthea.eu',
           provider: 'Panthea EU'
+        },
+        {
+          address: 'https://desmos-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
@@ -4033,6 +4324,16 @@ const chains: Chain[] = [
         {
           address: 'https://desmos-api.panthea.eu',
           provider: 'Panthea EU'
+        },
+        {
+          address: 'https://desmos-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://desmos-grpc.lavenderfive.com:443/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -4108,6 +4409,11 @@ const chains: Chain[] = [
         {
           id: 'e2c96b96d4c3a461fb246edac3b3cdbf47768838',
           address: '65.21.202.37:6969'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:16356',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -4157,6 +4463,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-dig-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://dig-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
@@ -4166,12 +4476,20 @@ const chains: Chain[] = [
         {
           address: 'https://api-dig-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://dig-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       grpc: [
         {
           address: 'grpc-dig-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'https://dig-grpc.lavenderfive.com:443/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -4521,6 +4839,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.emoney.freak12techno.io/',
           provider: 'freak12techno'
+        },
+        {
+          address: 'https://e-money-rpc.ibs.team',
+          provider: 'Inter Blockchain Services'
         }
       ],
       rest: [
@@ -4543,6 +4865,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.emoney.freak12techno.io/',
           provider: 'freak12techno'
+        },
+        {
+          address: 'https://e-money-api.ibs.team',
+          provider: 'Inter Blockchain Services'
         }
       ],
       grpc: [
@@ -4588,6 +4914,7 @@ const chains: Chain[] = [
     genesis: {
       genesis_url: ''
     },
+    key_algos: ['ethsecp256k1'],
     slip44: 60,
     fees: {
       fee_tokens: [
@@ -4646,12 +4973,13 @@ const chains: Chain[] = [
       genesis_url: 'https://archive.evmos.org/mainnet/genesis.json'
     },
     daemon_name: 'evmosd',
+    key_algos: ['ethsecp256k1'],
     slip44: 60,
     fees: {
       fee_tokens: [
         {
           denom: 'aevmos',
-          low_gas_price: 10000000000,
+          low_gas_price: 20000000000,
           average_gas_price: 25000000000,
           high_gas_price: 40000000000
         }
@@ -4666,19 +4994,19 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/evmos/evmos',
-      recommended_version: 'v7.0.0',
-      compatible_versions: ['v7.0.0'],
+      recommended_version: 'v8.2.0',
+      compatible_versions: ['v8.2.0'],
       binaries: {
         'linux/amd64':
-          'https://github.com/evmos/evmos/releases/download/v7.0.0/evmos_7.0.0_Linux_x86_64.tar.gz',
+          'https://github.com/evmos/evmos/releases/download/v8.1.0/evmos_8.1.0_Linux_x86_64.tar.gz',
         'linux/arm64':
-          'https://github.com/evmos/evmos/releases/download/v7.0.0/evmos_7.0.0_Linux_arm64.tar.gz',
+          'https://github.com/evmos/evmos/releases/download/v8.1.0/evmos_8.1.0_Linux_arm64.tar.gz',
         'darwin/amd64':
-          'https://github.com/evmos/evmos/releases/download/v7.0.0/evmos_7.0.0_Darwin_x86_64.tar.gz',
+          'https://github.com/evmos/evmos/releases/download/v8.1.0/evmos_8.1.0_Darwin_x86_64.tar.gz',
         'darwin/arm64':
-          'https://github.com/evmos/evmos/releases/download/v7.0.0/evmos_7.0.0_Darwin_arm64.tar.gz',
+          'https://github.com/evmos/evmos/releases/download/v8.1.0/evmos_8.1.0_Darwin_arm64.tar.gz',
         'windows/amd64':
-          'https://github.com/evmos/evmos/releases/download/v7.0.0/evmos_7.0.0_Windows_x86_64.zip'
+          'https://github.com/evmos/evmos/releases/download/v8.1.0/evmos_8.1.0_Windows_x86_64.zip'
       }
     },
     peers: {
@@ -4707,6 +5035,16 @@ const chains: Chain[] = [
           id: '588cedb70fa1d98c14a2f2c1456bfa41e1a156a8',
           address: 'evmos-sentry.mercury-nodes.net:29539',
           provider: 'Mercury'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:13456',
+          provider: 'Polkachu'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:13456',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -4744,6 +5082,11 @@ const chains: Chain[] = [
           id: 'd4a5fcc56f369665c232788c22844dc3a018fe08',
           address: 'peer.evmos.silknodes.io:26602',
           provider: 'Silk Nodes'
+        },
+        {
+          id: '2d588e1bc71431f6c677a9ed7f5ff8f7caa82573',
+          address: 'evmos-rpc.agoranodes.com:26656',
+          provider: 'AgoraNodes'
         }
       ]
     },
@@ -4756,6 +5099,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-evmos.whispernode.com',
           provider: ' WhisperNode 🤐'
+        },
+        {
+          address: 'https://evmos-rpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
         },
         {
           address: 'https://tendermint.bd.evmos.org:26657',
@@ -4804,6 +5151,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.evmos.silknodes.io/',
           provider: 'Silk Nodes'
+        },
+        {
+          address: 'https://evmos-rpc.agoranodes.com/',
+          provider: 'AgoraNodes'
         }
       ],
       rest: [
@@ -4822,6 +5173,10 @@ const chains: Chain[] = [
         {
           address: 'https://lcd.evmos.ezstaking.io',
           provider: 'EZStaking.io'
+        },
+        {
+          address: 'https://evmos-api.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
         },
         {
           address: 'https://api-evmos-ia.cosmosia.notional.ventures/',
@@ -4858,6 +5213,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.evmos.silknodes.io/',
           provider: 'Silk Nodes'
+        },
+        {
+          address: 'https://evmos-rest.agoranodes.com',
+          provider: 'AgoraNodes'
         }
       ],
       grpc: [
@@ -4872,6 +5231,10 @@ const chains: Chain[] = [
         {
           address: 'grpc.evmos.posthuman.digital:443',
           provider: 'POSTHUMAN ꝏ DVS'
+        },
+        {
+          address: 'https://evmos-grpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
         },
         {
           address: 'grpc.evmos.testnet.run:8091',
@@ -4896,6 +5259,10 @@ const chains: Chain[] = [
         {
           address: 'https://grpc.evmos.silknodes.io/',
           provider: 'Silk Nodes'
+        },
+        {
+          address: 'https://evmos-grpc.agoranodes.com',
+          provider: 'AgoraNodes'
         }
       ],
       'evm-http-jsonrpc': [
@@ -4918,6 +5285,10 @@ const chains: Chain[] = [
         {
           address: 'https://json-rpc.evmos.bh.rocks',
           provider: 'BlockHunters'
+        },
+        {
+          address: 'https://evmos-json-rpc.agoranodes.com',
+          provider: 'AgoraNodes'
         }
       ]
     },
@@ -5007,6 +5378,11 @@ const chains: Chain[] = [
           id: 'd7cda986c9f59ab9e05058a803c3d0300d15d8da',
           address: 'connect-fetchhub.fetch.ai:36458',
           provider: 'fetch.ai'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:15256',
+          provider: 'Polkachu'
         }
       ],
       persistent_peers: [
@@ -5110,7 +5486,7 @@ const chains: Chain[] = [
     slip44: 7777777,
     genesis: {
       genesis_url:
-        'https://raw.githubusercontent.com/firmachain/mainnet/main/genesis.json'
+        'https://raw.githubusercontent.com/FirmaChain/mainnet/main/colosseum-1/genesis.json'
     },
     fees: {
       fee_tokens: [
@@ -5144,6 +5520,11 @@ const chains: Chain[] = [
           id: '940977bdc070422b3a62e4985f2fe79b7ee737f7',
           address: 'mainnet-seed3.firmachain.dev:26656',
           provider: 'FirmaChain'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:16456',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -5156,6 +5537,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.firmachain.chaintools.tech/',
           provider: 'ChainTools'
+        },
+        {
+          address: 'https://firmachain-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
@@ -5166,6 +5551,16 @@ const chains: Chain[] = [
         {
           address: 'https://api.firmachain.chaintools.tech/',
           provider: 'ChainTools'
+        },
+        {
+          address: 'https://firmachain-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://firmachain-grpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -5195,7 +5590,7 @@ const chains: Chain[] = [
     node_home: '$HOME/.galaxy',
     genesis: {
       genesis_url:
-        'https://media.githubusercontent.com/media/galaxies-labs/networks/main/galaxy-1/genesis.json'
+        'https://github.com/OrbisWorlds/networks/raw/main/galaxy-1/genesis.json'
     },
     slip44: 118,
     fees: {
@@ -5232,6 +5627,16 @@ const chains: Chain[] = [
           id: '574e8402e255f895680db2904168724258fd6ff8',
           address: '13.125.60.249:26656',
           provider: 'Galaxies Labs'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:14856',
+          provider: 'Polkachu'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:14856',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -5315,6 +5720,10 @@ const chains: Chain[] = [
         {
           address: 'https://galaxy-rpc.polkachu.com/',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://galaxy-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
@@ -5324,12 +5733,20 @@ const chains: Chain[] = [
         {
           address: 'https://galaxy-api.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://galaxy-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       grpc: [
         {
           address: 'galaxy-grpc.polkachu.com:14890',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://galaxy-grpc.lavenderfive.com:443/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -5467,17 +5884,17 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/Gravity-Bridge/Gravity-Bridge',
-      recommended_version: 'v1.3.3',
-      compatible_versions: ['v1.3.0', 'v1.3.1', 'v1.3.2', 'v1.3.3'],
+      recommended_version: 'v1.7.1',
+      compatible_versions: ['v1.7.0', 'v1.7.1'],
       binaries: {
         'linux/amd64':
-          'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.3.3/gravity-linux-amd64',
+          'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.7.1/gravity-linux-amd64',
         'linux/arm64':
-          'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.3.3/gravity-linux-arm64',
+          'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.7.1/gravity-linux-arm64',
         'darwin/amd64':
-          'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.3.3/gravity-darwin-amd64',
+          'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.7.1/gravity-darwin-amd64',
         'windows/amd64':
-          'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.3.3/gravity-windows-amd64.exe'
+          'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.7.1/gravity-windows-amd64.exe'
       }
     },
     peers: {
@@ -5491,6 +5908,16 @@ const chains: Chain[] = [
           id: '63e662f5e048d4902c7c7126291cf1fc17687e3c',
           address: '95.211.103.175:26656',
           provider: 'amhost'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:14256',
+          provider: 'Polkachu'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:14256',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -5640,6 +6067,11 @@ const chains: Chain[] = [
           id: '6e52997400aaa1b3d2155e45cf2559bf7a4c5e76',
           address: '164.92.161.91:26656',
           provider: 'IDEP'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:16556',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -5669,6 +6101,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.idep.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://idep-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
@@ -5679,12 +6115,20 @@ const chains: Chain[] = [
         {
           address: 'https://api.idep.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://idep-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       grpc: [
         {
           address: 'https://grpc.idep.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'https://idep-grpc.lavenderfive.com:443/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -5714,7 +6158,7 @@ const chains: Chain[] = [
     node_home: '$HOME/.ixod',
     genesis: {
       genesis_url:
-        'https://github.com/ixofoundation/genesis/raw/master/impacthub-3/genesis.json'
+        'https://raw.githubusercontent.com/ixofoundation/genesis/main/impacthub-3/genesis.json'
     },
     key_algos: ['secp256k1', 'ed25519'],
     slip44: 118,
@@ -5737,6 +6181,11 @@ const chains: Chain[] = [
           id: '36e4738c7efcf353d3048e5e6073406d045bae9d',
           address: '80.64.208.43:26656',
           provider: 'simplyvc'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:16656',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -5778,6 +6227,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-ixo-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://impacthub-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
@@ -5804,12 +6257,20 @@ const chains: Chain[] = [
         {
           address: 'https://api-ixo-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://impacthub-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       grpc: [
         {
           address: 'grpc-ixo-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'https://impacthub-grpc.lavenderfive.com:443/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -5896,6 +6357,11 @@ const chains: Chain[] = [
           id: '1a2ccd9c436eae54d6c767ad566c58dce78f8be2',
           address: '145.40.68.125:26656',
           provider: 'injectiveprotocol'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:14356',
+          provider: 'Polkachu'
         }
       ],
       persistent_peers: [
@@ -6125,15 +6591,14 @@ const chains: Chain[] = [
     chain_name: 'juno',
     status: 'live',
     network_type: 'mainnet',
-    website: 'https://junochain.com/',
+    website: 'https://www.junonetwork.io/',
     pretty_name: 'Juno',
     chain_id: 'juno-1',
     bech32_prefix: 'juno',
     daemon_name: 'junod',
     node_home: '$HOME/.juno',
     genesis: {
-      genesis_url:
-        'https://raw.githubusercontent.com/CosmosContracts/mainnet/main/juno-1/genesis.json'
+      genesis_url: 'https://download.dimi.sh/juno-phoenix2-genesis.tar.gz'
     },
     key_algos: ['secp256k1'],
     slip44: 118,
@@ -6177,6 +6642,16 @@ const chains: Chain[] = [
           id: '22ee6e65e5e79cd0b970dd11e52761de8d1d6dfd',
           address: 'seeds.pupmos.network:2001',
           provider: 'PUPMØS'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:12656',
+          provider: 'Polkachu'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:12656',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -6241,6 +6716,10 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
+          address: 'https://juno-rpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
           address: 'https://rpc.juno.pupmos.network',
           provider: 'PUPMØS'
         },
@@ -6255,6 +6734,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.juno.chaintools.tech/',
           provider: 'ChainTools'
+        },
+        {
+          address: 'https://juno-rpc.kleomed.es',
+          provider: 'Kleomedes'
         }
       ],
       rest: [
@@ -6269,6 +6752,10 @@ const chains: Chain[] = [
         {
           address: 'https://rest-juno.ecostake.com',
           provider: 'ecostake'
+        },
+        {
+          address: 'https://juno-api.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
         },
         {
           address: 'https://api.juno.pupmos.network',
@@ -6289,6 +6776,10 @@ const chains: Chain[] = [
         {
           address: 'https://juno-api.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://juno-api.kleomed.es',
+          provider: 'Kleomedes'
         }
       ],
       grpc: [
@@ -6299,6 +6790,10 @@ const chains: Chain[] = [
         {
           address: 'grpc-juno-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'https://juno-grpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
         },
         {
           address: 'https://juno.grpcui.chaintools.host/',
@@ -6351,14 +6846,19 @@ const chains: Chain[] = [
     slip44: 459,
     codebase: {
       git_repo: 'https://github.com/kava-Labs/kava/',
-      recommended_version: 'v0.17.3',
-      compatible_versions: ['v0.17.3']
+      recommended_version: 'v0.18.0',
+      compatible_versions: ['v0.18.0']
     },
     peers: {
       seeds: [
         {
           id: '5c56fc779cd75c0c4d8225b8afe5259a076608dd',
           address: '18.206.28.123:26656'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:13956',
+          provider: 'Polkachu'
         }
       ],
       persistent_peers: [
@@ -6511,8 +7011,8 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/KiFoundation/ki-tools',
-      recommended_version: '2.0.1',
-      compatible_versions: ['2.0.1']
+      recommended_version: '3.0.0',
+      compatible_versions: ['3.0.0']
     },
     peers: {
       seeds: [
@@ -6520,6 +7020,16 @@ const chains: Chain[] = [
           id: '24cbccfa8813accd0ebdb09e7cdb54cff2e8fcd9',
           address: '51.89.166.197:26656',
           provider: 'kifoundation'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:13556',
+          provider: 'Polkachu'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:13556',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -6576,6 +7086,14 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.kichain.chaintools.tech/',
           provider: 'ChainTools'
+        },
+        {
+          address: 'https://kichain-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          address: 'https://rpc.ki.nodestake.top',
+          provider: 'NodeStake'
         }
       ],
       rest: [
@@ -6598,6 +7116,14 @@ const chains: Chain[] = [
         {
           address: 'https://kichain-api.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://kichain-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          address: 'https://api.ki.nodestake.top',
+          provider: 'NodeStake'
         }
       ],
       grpc: [
@@ -6608,6 +7134,14 @@ const chains: Chain[] = [
         {
           address: 'kichain-grpc.polkachu.com:13590',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://kichain-grpc.lavenderfive.com:443/',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          address: 'https://grpc.ki.nodestake.top',
+          provider: 'NodeStake'
         }
       ]
     },
@@ -6690,6 +7224,16 @@ const chains: Chain[] = [
         {
           id: '00f7f4506d84f9d1458201946e1194564b444ce0',
           address: 'node14.konstellation.tech:26656'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:13356',
+          provider: 'Polkachu'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:13356',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -6752,6 +7296,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-konstellation-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://konstellation-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
@@ -6766,6 +7314,10 @@ const chains: Chain[] = [
         {
           address: 'https://konstellation-api.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://konstellation-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       grpc: [
@@ -6776,6 +7328,10 @@ const chains: Chain[] = [
         {
           address: 'konstellation-grpc.polkachu.com:13390',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://konstellation-grpc.lavenderfive.com:443/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -6815,8 +7371,22 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/Team-Kujira/core',
-      recommended_version: 'v0.4.0',
-      compatible_versions: ['v0.4.0']
+      recommended_version: 'v0.5.0',
+      compatible_versions: ['v0.5.0']
+    },
+    peers: {
+      seeds: [
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:11856',
+          provider: 'Polkachu'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:11856',
+          provider: 'Lavender.Five Nodes 🐝'
+        }
+      ]
     },
     apis: {
       rpc: [
@@ -6835,6 +7405,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-kujira.ecostake.com',
           provider: 'ecostake'
+        },
+        {
+          address: 'https://kujira-rpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
         },
         {
           address: 'https://rpc.kujira.chaintools.tech/',
@@ -6863,6 +7437,10 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
+          address: 'https://kujira-grpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
           address: 'kujira-grpc.polkachu.com:11890',
           provider: 'Polkachu'
         },
@@ -6879,6 +7457,10 @@ const chains: Chain[] = [
         {
           address: 'https://lcd.kaiyo.kujira.setten.io',
           provider: 'setten.io'
+        },
+        {
+          address: 'https://kujira-api.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
         },
         {
           address: 'https://kujira-api.polkachu.com/',
@@ -6931,6 +7513,93 @@ const chains: Chain[] = [
     logo_URIs: {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kujira-chain-logo.png'
     }
+  },
+  {
+    $schema: '../chain.schema.json',
+    chain_name: 'lambda',
+    status: 'live',
+    network_type: 'mainnet',
+    pretty_name: 'Lambda',
+    chain_id: 'lambda_92000-1',
+    bech32_prefix: 'lamb',
+    node_home: '$HOME/.lambdavm',
+    genesis: {
+      genesis_url:
+        'https://raw.githubusercontent.com/LambdaIM/mainnet/main/lambda_92000-1/genesis.json'
+    },
+    daemon_name: 'lambdavm',
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'ulamb',
+          low_gas_price: 10000000000,
+          average_gas_price: 25000000000,
+          high_gas_price: 40000000000
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'ulamb'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/LambdaIM/lambdavm',
+      recommended_version: 'v1.0.0',
+      compatible_versions: ['v1.0.0']
+    },
+    peers: {
+      seeds: [
+        {
+          id: '2c4f8e193fd10ab3a2bc919b484fd1c78eceffb3',
+          address: '13.213.214.88:26656',
+          provider: 'Lambda'
+        }
+      ],
+      persistent_peers: [
+        {
+          id: '2c4f8e193fd10ab3a2bc919b484fd1c78eceffb3',
+          address: '13.213.214.88:26656',
+          provider: 'Lambda'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc.lambda.im',
+          provider: 'Lambda'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://rest.lambda.im',
+          provider: 'Lambda'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://grpc.lambda.im',
+          provider: 'Lambda'
+        }
+      ],
+      'evm-http-jsonrpc': [
+        {
+          address: 'https://eth.lambda.im',
+          provider: 'Lambda'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'blockscout',
+        url: 'https://explorer.lambda.im/',
+        tx_page: 'https://explorer.lambda.im/tx/${txHash}'
+      }
+    ]
   },
   {
     $schema: '../chain.schema.json',
@@ -7101,6 +7770,7 @@ const chains: Chain[] = [
     genesis: {
       genesis_url: ''
     },
+    key_algos: ['ethsecp256k1'],
     slip44: 60,
     fees: {
       fee_tokens: [
@@ -7261,8 +7931,8 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/lum-network/chain',
-      recommended_version: 'v1.0.5',
-      compatible_versions: ['v1.0.5']
+      recommended_version: 'v1.2.1',
+      compatible_versions: ['v1.2.1']
     },
     peers: {
       seeds: [
@@ -7270,6 +7940,11 @@ const chains: Chain[] = [
           id: '19ad16527c98b782ee35df56b65a3a251bd99971',
           address: 'peer-1.mainnet.lum.network:26656',
           provider: 'lum foundation'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:16756',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -7320,12 +7995,26 @@ const chains: Chain[] = [
         {
           address: 'https://node0.mainnet.lum.network/rpc',
           provider: 'Lum Foundation'
+        },
+        {
+          address: 'https://lum-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
         {
           address: 'https://node0.mainnet.lum.network/rest',
           provider: 'Lum Foundation'
+        },
+        {
+          address: 'https://lum-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://lum-grpc.lavenderfive.com:443/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -7397,6 +8086,11 @@ const chains: Chain[] = [
           id: 'dbe97ebeb4d07999a1fe2de2f92a56cc07385259',
           address: 'seeds.pupmos.network:2005',
           provider: 'PUPMØS'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:14756',
+          provider: 'Polkachu'
         }
       ],
       persistent_peers: [
@@ -7449,6 +8143,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.meme.pupmos.network/',
           provider: 'PUPMØS'
+        },
+        {
+          address: 'https://meme-rpc.kleomed.es',
+          provider: 'Kleomedes'
         }
       ],
       rest: [
@@ -7467,6 +8165,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.meme.pupmos.network/',
           provider: 'PUPMØS'
+        },
+        {
+          address: 'https://meme-api.kleomed.es',
+          provider: 'Kleomedes'
         }
       ],
       grpc: [
@@ -7540,6 +8242,7 @@ const chains: Chain[] = [
     genesis: {
       genesis_url: ''
     },
+    key_algos: ['ethsecp256k1'],
     slip44: 60,
     fees: {
       fee_tokens: [
@@ -7772,6 +8475,11 @@ const chains: Chain[] = [
           id: 'c8ee9f66163f0c1220c586eab1a2a57f6381357f',
           address: 'odin.seed.rhinostake.com:16658',
           provider: 'Rhino Stake'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:16856',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -7780,12 +8488,26 @@ const chains: Chain[] = [
         {
           address: 'http://34.79.179.216:26657',
           provider: 'Odin Protocol'
+        },
+        {
+          address: 'https://odin-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
         {
           address: 'http://34.79.179.216:1317/',
           provider: 'Odin Protocol'
+        },
+        {
+          address: 'https://odin-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://odin-grpc.lavenderfive.com:443/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -7936,6 +8658,11 @@ const chains: Chain[] = [
         {
           id: '19feae28207474eb9f168fff9720fd4d418df1ed',
           address: '35.240.196.102:26656'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:16956',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -7974,6 +8701,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-omniflixhub-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://omniflix-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
@@ -7992,6 +8723,10 @@ const chains: Chain[] = [
         {
           address: 'https://api-omniflixhub-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://omniflix-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       grpc: [
@@ -8002,6 +8737,10 @@ const chains: Chain[] = [
         {
           address: 'grpc-omniflixhub-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'https://omniflix-grpc.lavenderfive.com:443/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -8289,6 +9028,16 @@ const chains: Chain[] = [
           id: '7c66126b64cd66bafd9ccfc721f068df451d31a3',
           address: 'osmosis-seed.sunshinevalidation.io:9393',
           provider: 'sunshine-validation'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:12556',
+          provider: 'Polkachu'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:12556',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -8443,6 +9192,10 @@ const chains: Chain[] = [
           provider: 'WhisperNode 🤐'
         },
         {
+          address: 'https://osmosis-rpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
           address: 'https://osmosis.validator.network/',
           provider: 'validatornetwork'
         },
@@ -8481,6 +9234,10 @@ const chains: Chain[] = [
           provider: 'chainapsis'
         },
         {
+          address: 'https://osmosis-api.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
           address: 'https://rest-osmosis.ecostake.com',
           provider: 'ecostake'
         },
@@ -8505,6 +9262,10 @@ const chains: Chain[] = [
         {
           address: 'osmosis.strange.love:9090',
           provider: 'strangelove'
+        },
+        {
+          address: 'https://osmosis-grpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
         },
         {
           address: 'grpc-osmosis-ia.cosmosia.notional.ventures:443',
@@ -8677,6 +9438,16 @@ const chains: Chain[] = [
         {
           id: '7a9a36630523f54c1a0d56fc01e0e153fd11a53d',
           address: '167.235.24.145:26656'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:15656',
+          provider: 'Polkachu'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:15656',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -8745,6 +9516,10 @@ const chains: Chain[] = [
           provider: 'ecostake'
         },
         {
+          address: 'https://passage-rpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
           address: 'https://passage-rpc.panthea.eu',
           provider: 'Panthea EU'
         },
@@ -8775,6 +9550,10 @@ const chains: Chain[] = [
           provider: 'ecostake'
         },
         {
+          address: 'https://passage-api.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
           address: 'https://passage-api.panthea.eu',
           provider: 'Panthea EU'
         },
@@ -8795,6 +9574,10 @@ const chains: Chain[] = [
         {
           address: 'grpc-passage-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'https://passage-grpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
         },
         {
           address: 'passage-grpc.polkachu.com:15690',
@@ -8989,6 +9772,121 @@ const chains: Chain[] = [
   },
   {
     $schema: '../chain.schema.json',
+    chain_name: 'point',
+    status: 'live',
+    network_type: 'mainnet',
+    pretty_name: 'Point Network',
+    chain_id: 'point_10687-1',
+    bech32_prefix: 'point',
+    node_home: '$HOME/.pointd',
+    genesis: {
+      genesis_url:
+        'https://raw.githubusercontent.com/pointnetwork/point-chain-config/main/mainnet-1/genesis.json'
+    },
+    daemon_name: 'pointd',
+    slip44: 60,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'apoint',
+          low_gas_price: 5000000000,
+          average_gas_price: 25000000000,
+          high_gas_price: 40000000000
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'apoint'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/pointnetwork/point-chain',
+      recommended_version: 'v8.0.0',
+      compatible_versions: ['v8.0.0'],
+      binaries: {
+        'linux/amd64': '',
+        'linux/arm64': '',
+        'darwin/amd64': '',
+        'darwin/arm64': '',
+        'windows/amd64': ''
+      }
+    },
+    peers: {
+      seeds: [
+        {
+          id: '8673c1f04c29c464189e8bf29e51fb0b38da2f19',
+          address: 'rpc-mainnet-1.point.space:26656',
+          provider: 'Point Network'
+        }
+      ],
+      persistent_peers: [
+        {
+          id: '8673c1f04c29c464189e8bf29e51fb0b38da2f19',
+          address: 'rpc-mainnet-1.point.space:26656',
+          provider: 'Point Network'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc-mainnet-1.point.space:26657',
+          provider: 'Point Network'
+        },
+        {
+          address: 'https://rpc.point.nodestake.top',
+          provider: 'NodeStake'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://rpc-mainnet-1.point.space:1317',
+          provider: 'Point Network'
+        },
+        {
+          address: 'https://api.point.nodestake.top',
+          provider: 'NodeStake'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://rpc-mainnet-1.point.space:9090',
+          provider: 'Point Network'
+        },
+        {
+          address: 'https://grpc.point.nodestake.top',
+          provider: 'NodeStake'
+        }
+      ],
+      'evm-http-jsonrpc': [
+        {
+          address: 'https://rpc-mainnet-1.point.space',
+          provider: 'Point Network'
+        },
+        {
+          address: 'https://jsonrpc.point.nodestake.top',
+          provider: 'NodeStake'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'blockscout',
+        url: 'https://explorer.pointnetwork.io/',
+        tx_page: 'https://explorer.pointnetwork.io/tx/${txHash}'
+      },
+      {
+        kind: 'ping-pub',
+        url: 'https://cosmos.pointnetwork.io/',
+        tx_page: 'https://cosmos.pointnetwork.io/point/tx/${txHash}'
+      }
+    ]
+  },
+  {
+    $schema: '../chain.schema.json',
     chain_name: 'provenance',
     status: 'live',
     network_type: 'mainnet',
@@ -9106,6 +10004,146 @@ const chains: Chain[] = [
         kind: 'atomscan',
         url: 'https://atomscan.com/provenance',
         tx_page: 'https://atomscan.com/provenance/transactions/${txHash}'
+      }
+    ]
+  },
+  {
+    $schema: '../chain.schema.json',
+    chain_name: 'rebus',
+    website: 'https://www.rebuschain.com/',
+    status: 'live',
+    network_type: 'mainnet',
+    pretty_name: 'Rebus',
+    chain_id: 'reb_1111-1',
+    bech32_prefix: 'rebus',
+    daemon_name: 'rebusd',
+    node_home: '$HOME/.rebusd',
+    key_algos: ['secp256k1'],
+    genesis: {
+      genesis_url:
+        'https://github.com/rebuschain/rebus.mainnet/raw/master/reb_1111-1/genesis.zip'
+    },
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'arebus'
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'arebus'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/rebuschain/rebus.core',
+      recommended_version: 'v0.2.0',
+      compatible_versions: ['v0.2.0'],
+      versions: [
+        {
+          name: 'v0.1.2',
+          tag: 'v0.1.2',
+          height: 0,
+          next_version_name: 'v0.2.0'
+        },
+        {
+          name: 'v0.2.0',
+          tag: 'v0.2.0',
+          height: 473400
+        }
+      ]
+    },
+    peers: {
+      seeds: [
+        {
+          id: 'f339d2999792b360797d4e22dfd40c0ea4b7402e',
+          address: '51.68.173.153:26656'
+        },
+        {
+          id: '718706d1a1e93c2fe9a3059588236cf96c457ff4',
+          address: 'seed.rebus.cros-nest.com:26656'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:17256',
+          provider: 'Lavender.Five Nodes 🐝'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://api.rebuschain.com:26657/',
+          provider: 'Rebuschain'
+        },
+        {
+          address: 'https://rebus.rpc.manticore.team:443/',
+          provider: 'MantiCore'
+        },
+        {
+          address: 'https://rpc.rebus.nodestake.top/',
+          provider: 'NodeStake'
+        },
+        {
+          address: 'https://rpc-1.rebus.nodes.guru',
+          provider: 'Nodes.Guru'
+        },
+        {
+          address: 'https://api.mainnet.rebus.money:26657',
+          provider: 'Rebuschain'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://api.rebuschain.com:1317/',
+          provider: 'Rebuschain'
+        },
+        {
+          address: 'https://rebus.api.manticore.team:443/',
+          provider: 'MantiCore'
+        },
+        {
+          address: 'https://api.rebus.nodestake.top/',
+          provider: 'NodeStake'
+        },
+        {
+          address: 'https://api-1.rebus.nodes.guru',
+          provider: 'Nodes.Guru'
+        },
+        {
+          address: 'https://api.mainnet.rebus.money:1317',
+          provider: 'Rebuschain'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://rebus.grpc.manticore.team:443/',
+          provider: 'MantiCore'
+        },
+        {
+          address: 'https://grpc.rebus.nodestake.top/',
+          provider: 'NodeStake'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'explorers.guru',
+        url: 'https://rebus.explorers.guru',
+        tx_page: 'https://rebus.explorers.guru/transaction/${txHash}'
+      },
+      {
+        kind: 'nodestake',
+        url: 'https://explorer.nodestake.top/rebus',
+        tx_page: 'https://explorer.nodestake.top/rebus/txs/${txHash}'
+      },
+      {
+        kind: 'Nodeist Explorer',
+        url: 'https://exp.nodeist.net/M-Rebus',
+        tx_page: 'https://exp.nodeist.net/M-Rebus/txs/${txHash}'
       }
     ]
   },
@@ -9401,12 +10439,12 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/scrtlabs/SecretNetwork',
-      recommended_version: 'v1.3.1',
+      recommended_version: 'v1.4.0',
       binaries: {
         'linux/amd64':
-          'https://github.com/scrtlabs/SecretNetwork/releases/download/v1.3.1/secretnetwork_1.3.1_mainnet_goleveldb_amd64.deb'
+          'https://github.com/scrtlabs/SecretNetwork/releases/download/v1.4.0/secretnetwork_1.4.0_mainnet_goleveldb_amd64.deb'
       },
-      compatible_versions: ['v1.3.0', 'v1.3.1']
+      compatible_versions: ['v1.4.0']
     },
     peers: {
       seeds: [
@@ -9424,6 +10462,11 @@ const chains: Chain[] = [
           id: '9cdaa5856e0245ecd73bd464308fb990fbc53b57',
           address: 'scrt-seed-03.scrtlabs.com:26656',
           provider: 'SCRT Labs'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:17156',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -9440,6 +10483,10 @@ const chains: Chain[] = [
         {
           address: 'https://scrt-rpc.blockpane.com',
           provider: '[ block pane ]'
+        },
+        {
+          address: 'https://secret-rpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
         },
         {
           address: 'https://secret.rpc.consensus.one',
@@ -9462,6 +10509,10 @@ const chains: Chain[] = [
         {
           address: 'https://secret-4.api.trivium.network:1317',
           provider: 'Trivium | Trivium.Network'
+        },
+        {
+          address: 'https://secret-api.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
         },
         {
           address: 'https://scrt-lcd.blockpane.com',
@@ -9488,6 +10539,12 @@ const chains: Chain[] = [
         {
           address: 'http://scrt-rpc.blockpane.com:9091',
           provider: '[ block pane ]'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://secret-grpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -9822,11 +10879,11 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/Sifchain/sifnode.git',
-      recommended_version: 'betanet-0.9.12',
-      compatible_versions: ['betanet-0.9.12'],
+      recommended_version: 'v0.16.0',
+      compatible_versions: ['v0.16.0'],
       binaries: {
         'linux/amd64':
-          'https://github.com/Sifchain/sifnode/releases/download/betanet-0.9.12/sifnoded-betanet-0.9.12-linux-amd64.zip'
+          'https://github.com/Sifchain/sifnode/releases/download/v0.16.0/sifnoded-v0.16.0-linux-amd64.zip'
       }
     },
     peers: {
@@ -9892,6 +10949,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.sifchain.chaintools.tech/',
           provider: 'ChainTools'
+        },
+        {
+          address: 'https://sif-rpc.kleomed.es',
+          provider: 'Kleomedes'
         }
       ],
       grpc: [
@@ -9930,6 +10991,10 @@ const chains: Chain[] = [
         {
           address: 'https://sifchain-api.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://sif-api.kleomed.es',
+          provider: 'Kleomedes'
         }
       ]
     },
@@ -9983,19 +11048,19 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/PeggyJV/sommelier',
-      recommended_version: 'v3.1.0',
-      compatible_versions: ['v3.1.0'],
+      recommended_version: 'v4.0.1',
+      compatible_versions: ['v4.0.1'],
       binaries: {
         'linux/amd64':
-          'https://github.com/PeggyJV/sommelier/releases/download/v3.1.0/sommelier_3.1.0_linux_amd64.tar.gz',
+          'https://github.com/PeggyJV/sommelier/releases/download/v4.0.1/sommelier_4.0.1_linux_amd64.tar.gz',
         'linux/arm64':
-          'https://github.com/PeggyJV/sommelier/releases/download/v3.1.0/sommelier_3.1.0_linux_arm64.tar.gz',
+          'https://github.com/PeggyJV/sommelier/releases/download/v4.0.1/sommelier_4.0.1_linux_arm64.tar.gz',
         'darwin/amd64':
-          'https://github.com/PeggyJV/sommelier/releases/download/v3.1.0/sommelier_3.1.0_darwin_amd64.tar.gz',
+          'https://github.com/PeggyJV/sommelier/releases/download/v4.0.1/sommelier_4.0.1_darwin_amd64.tar.gz',
         'darwin/arm64':
-          'https://github.com/PeggyJV/sommelier/releases/download/v3.1.0/sommelier_3.1.0_darwin_arm64.tar.gz',
+          'https://github.com/PeggyJV/sommelier/releases/download/v4.0.1/sommelier_4.0.1_darwin_arm64.tar.gz',
         'windows/amd64':
-          'https://github.com/PeggyJV/sommelier/releases/download/v3.1.0/sommelier_3.1.0_windows_amd64.tar.gz'
+          'https://github.com/PeggyJV/sommelier/releases/download/v4.0.1/sommelier_4.0.1_windows_amd64.tar.gz'
       }
     },
     peers: {
@@ -10040,6 +11105,16 @@ const chains: Chain[] = [
           id: '194f89dd1d08a82e99bf76aee535e6d4b3c79354',
           address: 'seeds.pupmos.network:2002',
           provider: 'PUPMØS'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:14156',
+          provider: 'Polkachu'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:14156',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -10121,8 +11196,8 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/public-awesome/stargaze',
-      recommended_version: 'v6.0.1',
-      compatible_versions: ['v6.0.1']
+      recommended_version: 'v7.0.0',
+      compatible_versions: ['v7.0.0']
     },
     peers: {
       seeds: [
@@ -10148,6 +11223,11 @@ const chains: Chain[] = [
           id: '2f7b2d38b1a4f76b20e917e01fb9f4a200bbf80c',
           address: 'seeds.pupmos.network:2004',
           provider: 'PUPMØS'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:13756',
+          provider: 'Polkachu'
         }
       ],
       persistent_peers: [
@@ -10280,6 +11360,10 @@ const chains: Chain[] = [
         {
           address: 'https://stargaze.c29r3.xyz:443/rpc/',
           provider: 'c29r3'
+        },
+        {
+          address: 'https://rpc.stargaze.nodestake.top',
+          provider: 'NodeStake'
         }
       ],
       rest: [
@@ -10310,6 +11394,10 @@ const chains: Chain[] = [
         {
           address: 'https://stargaze-rapipc.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://api.stargaze.nodestake.top',
+          provider: 'NodeStake'
         }
       ],
       grpc: [
@@ -10320,6 +11408,10 @@ const chains: Chain[] = [
         {
           address: 'stargaze-grpc.polkachu.com:13790',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://grpc.stargaze.nodestake.top',
+          provider: 'NodeStake'
         }
       ]
     },
@@ -10497,6 +11589,11 @@ const chains: Chain[] = [
           id: 'cb91a11588d66cfd9c01f99541df4978a08e0e39',
           address: 'seedv1.main.stridenet.co:26656',
           provider: 'Stride'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:12256',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -10559,6 +11656,14 @@ const chains: Chain[] = [
         {
           address: 'http://rpc-stride.nodeist.net',
           provider: 'Nodeist'
+        },
+        {
+          address: 'https://stride-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          address: 'https://rpc.stride.nodestake.top',
+          provider: 'NodeStake'
         }
       ],
       rest: [
@@ -10577,6 +11682,14 @@ const chains: Chain[] = [
         {
           address: 'http://api-stride.nodeist.net',
           provider: 'Nodeist'
+        },
+        {
+          address: 'https://stride-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          address: 'https://api.stride.nodestake.top',
+          provider: 'NodeStake'
         }
       ],
       grpc: [
@@ -10587,6 +11700,14 @@ const chains: Chain[] = [
         {
           address: 'https://grpc.stride.bh.rocks',
           provider: 'BlockHunters'
+        },
+        {
+          address: 'https://stride-grpc.lavenderfive.com:443/',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          address: 'https://grpc.stride.nodestake.top',
+          provider: 'NodeStake'
         }
       ]
     },
@@ -10765,13 +11886,13 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/terra-money/core/',
-      recommended_version: 'v2.0.1',
-      compatible_versions: ['v2.0.1', 'v2.0.0'],
+      recommended_version: 'v2.1.1',
+      compatible_versions: ['v2.1.1'],
       binaries: {
         'linux/amd64':
-          'https://github.com/terra-money/core/releases/download/v2.0.1/terra_2.0.1_Linux_x86_64.tar.gz',
+          'https://github.com/terra-money/core/releases/download/v2.1.1/terra_2.1.1_Linux_x86_64.tar.gz',
         'darwin/amd64':
-          'https://github.com/terra-money/core/releases/download/v2.0.1/terra_2.0.1_Darwin_x86_64.tar.gz'
+          'https://github.com/terra-money/core/releases/download/v2.1.1/terra_2.1.1_Darwin_x86_64.tar.gz'
       }
     },
     peers: {
@@ -10795,6 +11916,16 @@ const chains: Chain[] = [
         {
           id: '810d1628db9f1db56fa87a93fb6ef809c32d6325',
           address: 'phoenix.seed.terra.btcsecure.io:26656'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:11756',
+          provider: 'Polkachu'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:11756',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -10855,6 +11986,10 @@ const chains: Chain[] = [
           provider: 'CryptoCrew'
         },
         {
+          address: 'https://terra-rpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
           address: 'https://terra-rpc.polkachu.com',
           provider: 'polkachu'
         },
@@ -10873,6 +12008,10 @@ const chains: Chain[] = [
           provider: 'polkachu'
         },
         {
+          address: 'https://terra-api.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
           address: 'https://fcd.terrav2.ccvalidators.com:443/',
           provider: 'CryptoCrew'
         },
@@ -10882,6 +12021,10 @@ const chains: Chain[] = [
         }
       ],
       grpc: [
+        {
+          address: 'https://terra-grpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
         {
           address: 'terra-grpc.polkachu.com:11790',
           provider: 'Polkachu'
@@ -11114,6 +12257,102 @@ const chains: Chain[] = [
   },
   {
     $schema: '../../chain.schema.json',
+    chain_name: 'evmostestnet',
+    status: 'live',
+    network_type: 'testnet',
+    pretty_name: 'Evmos Testnet',
+    chain_id: 'evmos_9000-4',
+    bech32_prefix: 'evmos',
+    daemon_name: 'evmosd',
+    node_home: '$HOME/.evmosd',
+    genesis: {
+      genesis_url:
+        'https://github.com/evmos/testnets/raw/main/evmos_9000-4/genesis.zip'
+    },
+    key_algos: ['ethsecp256k1'],
+    slip44: 60,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'atevmos',
+          low_gas_price: 20000000000,
+          average_gas_price: 25000000000,
+          high_gas_price: 40000000000
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'atevmos'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/evmos/evmos',
+      recommended_version: 'v8.1.0',
+      compatible_versions: ['v8.1.0'],
+      cosmos_sdk_version: '0.45',
+      tendermint_version: '0.34'
+    },
+    peers: {
+      seeds: [],
+      persistent_peers: [
+        {
+          id: 'b7635a113a52d0d25c82267de0648e71e46dc584',
+          address: '167.99.182.201:46656',
+          provider: 'coldy'
+        },
+        {
+          id: '005efaae1ae29f95edea5f3729ce7e75511e5d3d',
+          address: '65.108.225.158:13456',
+          provider: 'Polkachu'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://evmos.test.rpc.coldyvalidator.net',
+          provider: 'coldy'
+        },
+        {
+          address: 'https://evmos-testnet-rpc.polkachu.com',
+          provider: 'Polkachu'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://evmos.test.api.coldyvalidator.net',
+          provider: 'coldy'
+        },
+        {
+          address: 'https://evmos-testnet-api.polkachu.com',
+          provider: 'Polkachu'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://evmos.test.grpc.coldyvalidator.net',
+          provider: 'coldy'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'Mintscan',
+        url: 'https://testnet.mintscan.io/evmos-testnet',
+        tx_page: 'https://testnet.mintscan.io/evmos-testnet/txs/${txHash}'
+      },
+      {
+        kind: 'NodesGuru',
+        url: 'https://testnet.evmos.explorers.guru/',
+        tx_page: 'https://testnet.evmos.explorers.guru/transaction/${txHash}'
+      }
+    ]
+  },
+  {
+    $schema: '../../chain.schema.json',
     chain_name: 'harpoon',
     chain_id: 'harpoon-4',
     pretty_name: 'Kujira Harpoon',
@@ -11240,13 +12479,13 @@ const chains: Chain[] = [
     status: 'live',
     network_type: 'testnet',
     pretty_name: 'Juno Testnet',
-    chain_id: 'uni-3',
+    chain_id: 'uni-5',
     bech32_prefix: 'juno',
     daemon_name: 'junod',
     node_home: '$HOME/.juno',
     genesis: {
       genesis_url:
-        'https://raw.githubusercontent.com/CosmosContracts/testnets/main/uni-3/genesis.json'
+        'https://raw.githubusercontent.com/CosmosContracts/testnets/main/uni-5/genesis.json'
     },
     key_algos: ['secp256k1'],
     slip44: 118,
@@ -11269,8 +12508,8 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/CosmosContracts/juno',
-      recommended_version: 'v7.0.0-beta.2',
-      compatible_versions: ['v7.0.0-beta.2'],
+      recommended_version: 'v9.0.0',
+      compatible_versions: ['v9.0.0'],
       cosmos_sdk_version: '0.45',
       tendermint_version: '0.34',
       cosmwasm_version: '0.27',
@@ -11295,6 +12534,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.uni.junonetwork.io',
           provider: 'Juno'
+        },
+        {
+          address: 'https://juno-testnet-rpc.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       rest: [
@@ -11305,6 +12548,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.uni.junonetwork.io',
           provider: 'Juno'
+        },
+        {
+          address: 'https://juno-testnet-api.polkachu.com',
+          provider: 'Polkachu'
         }
       ],
       grpc: [
@@ -11319,6 +12566,11 @@ const chains: Chain[] = [
         kind: 'Mintscan',
         url: 'https://testnet.mintscan.io/juno-testnet',
         tx_page: 'https://testnet.mintscan.io/juno-testnet/txs/${txHash}'
+      },
+      {
+        kind: 'NodesGuru',
+        url: 'https://testnet.juno.explorers.guru/',
+        tx_page: 'https://testnet.juno.explorers.guru/transaction/${txHash}'
       }
     ]
   },
@@ -12407,6 +13659,11 @@ const chains: Chain[] = [
           id: 'b3f810438aa53685bba63705f3c29ec122e1e40c',
           address: '34.127.76.180:26656',
           provider: 'umee foundation'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'seeds.polkachu.com:13656',
+          provider: 'Polkachu'
         }
       ]
     },
@@ -12587,6 +13844,11 @@ const chains: Chain[] = [
           id: '883ec7d5af7222c206674c20c997ccc5c242b38b',
           address: 'ec2-3-82-120-39.compute-1.amazonaws.com:26656',
           provider: 'notional'
+        },
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:17056',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -12626,6 +13888,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-vidulum-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://vidulum-rpc.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
@@ -12636,12 +13902,20 @@ const chains: Chain[] = [
         {
           address: 'https://api-vidulum-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
+        },
+        {
+          address: 'https://vidulum-api.lavenderfive.com/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       grpc: [
         {
           address: 'grpc-vidulum-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
+        },
+        {
+          address: 'https://vidulum-grpc.lavenderfive.com:443/',
+          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },

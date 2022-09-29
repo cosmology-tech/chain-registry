@@ -4,15 +4,14 @@ const chain: Chain = {
   chain_name: 'juno',
   status: 'live',
   network_type: 'mainnet',
-  website: 'https://junochain.com/',
+  website: 'https://www.junonetwork.io/',
   pretty_name: 'Juno',
   chain_id: 'juno-1',
   bech32_prefix: 'juno',
   daemon_name: 'junod',
   node_home: '$HOME/.juno',
   genesis: {
-    genesis_url:
-      'https://raw.githubusercontent.com/CosmosContracts/mainnet/main/juno-1/genesis.json'
+    genesis_url: 'https://download.dimi.sh/juno-phoenix2-genesis.tar.gz'
   },
   key_algos: ['secp256k1'],
   slip44: 118,
@@ -56,6 +55,16 @@ const chain: Chain = {
         id: '22ee6e65e5e79cd0b970dd11e52761de8d1d6dfd',
         address: 'seeds.pupmos.network:2001',
         provider: 'PUPMØS'
+      },
+      {
+        id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+        address: 'seeds.polkachu.com:12656',
+        provider: 'Polkachu'
+      },
+      {
+        id: '20e1000e88125698264454a884812746c2eb4807',
+        address: 'seeds.lavenderfive.com:12656',
+        provider: 'Lavender.Five Nodes 🐝'
       }
     ],
     persistent_peers: [
@@ -120,6 +129,10 @@ const chain: Chain = {
         provider: 'Polkachu'
       },
       {
+        address: 'https://juno-rpc.lavenderfive.com:443',
+        provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
         address: 'https://rpc.juno.pupmos.network',
         provider: 'PUPMØS'
       },
@@ -134,6 +147,10 @@ const chain: Chain = {
       {
         address: 'https://rpc.juno.chaintools.tech/',
         provider: 'ChainTools'
+      },
+      {
+        address: 'https://juno-rpc.kleomed.es',
+        provider: 'Kleomedes'
       }
     ],
     rest: [
@@ -148,6 +165,10 @@ const chain: Chain = {
       {
         address: 'https://rest-juno.ecostake.com',
         provider: 'ecostake'
+      },
+      {
+        address: 'https://juno-api.lavenderfive.com:443',
+        provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'https://api.juno.pupmos.network',
@@ -168,6 +189,10 @@ const chain: Chain = {
       {
         address: 'https://juno-api.polkachu.com',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://juno-api.kleomed.es',
+        provider: 'Kleomedes'
       }
     ],
     grpc: [
@@ -178,6 +203,10 @@ const chain: Chain = {
       {
         address: 'grpc-juno-ia.cosmosia.notional.ventures:443',
         provider: 'Notional'
+      },
+      {
+        address: 'https://juno-grpc.lavenderfive.com:443',
+        provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'https://juno.grpcui.chaintools.host/',

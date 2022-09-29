@@ -66,6 +66,37 @@ const ibc: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'agoric',
+      client_id: '07-tendermint-4',
+      connection_id: 'connection-7'
+    },
+    chain_2: {
+      chain_name: 'gravitybridge',
+      client_id: '07-tendermint-173',
+      connection_id: 'connection-154'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-4',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-91',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'agoric',
       client_id: '07-tendermint-1',
       connection_id: 'connection-1'
     },
@@ -1374,6 +1405,37 @@ const ibc: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'cosmoshub',
+      client_id: '07-tendermint-926',
+      connection_id: 'connection-648'
+    },
+    chain_2: {
+      chain_name: 'point',
+      client_id: '07-tendermint-1',
+      connection_id: 'connection-0'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-404',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-0',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'cosmoshub',
       client_id: '07-tendermint-386',
       connection_id: 'connection-340'
     },
@@ -1699,6 +1761,34 @@ const ibc: IBCInfo[] = [
           preferred: true,
           dex: 'crescent'
         }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'cryptoorgchain',
+      client_id: '07-tendermint-1136',
+      connection_id: 'connection-260'
+    },
+    chain_2: {
+      chain_name: 'evmos',
+      client_id: '07-tendermint-85',
+      connection_id: 'connection-43'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-57',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-31',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {}
       }
     ]
   },
@@ -2992,6 +3082,37 @@ const ibc: IBCInfo[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain_1: {
+      chain_name: 'lambda',
+      client_id: '07-tendermint-0',
+      connection_id: 'connection-1'
+    },
+    chain_2: {
+      chain_name: 'osmosis',
+      client_id: '07-tendermint-2171',
+      connection_id: 'connection-1690'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-1',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-350',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
       chain_name: 'likecoin',
       client_id: '07-tendermint-16',
       connection_id: 'connection-9'
@@ -3296,6 +3417,38 @@ const ibc: IBCInfo[] = [
         },
         chain_2: {
           channel_id: 'channel-7',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          dex: 'osmosis'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'osmosis',
+      client_id: '07-tendermint-2173',
+      connection_id: 'connection-1692'
+    },
+    chain_2: {
+      chain_name: 'rebus',
+      client_id: '07-tendermint-0',
+      connection_id: 'connection-0'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-355',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-0',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -4171,23 +4324,23 @@ const ibc: IBCInfo[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain_1: {
-      chain_name: 'persistence',
-      client_id: '07-tendermint-unknown',
-      connection_id: 'connection-unknown'
+      chain_name: 'stargaze',
+      client_id: '07-tendermint-195',
+      connection_id: 'connection-128'
     },
     chain_2: {
-      chain_name: 'gravitybridge',
-      client_id: '07-tendermint-unknown',
-      connection_id: 'connection-unknown'
+      chain_name: 'stride',
+      client_id: '07-tendermint-30',
+      connection_id: 'connection-18'
     },
     channels: [
       {
         chain_1: {
-          channel_id: 'channel-38',
+          channel_id: 'channel-106',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-unknown',
+          channel_id: 'channel-19',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -4196,6 +4349,34 @@ const ibc: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'gravitybridge',
+      client_id: '07-tendermint-39',
+      connection_id: 'connection-50'
+    },
+    chain_2: {
+      chain_name: 'persistence',
+      client_id: '07-tendermint-51',
+      connection_id: 'connection-49'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-24',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-38',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {}
       }
     ]
   }

@@ -5,13 +5,13 @@ const testnet: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Juno Testnet',
-  chain_id: 'uni-3',
+  chain_id: 'uni-5',
   bech32_prefix: 'juno',
   daemon_name: 'junod',
   node_home: '$HOME/.juno',
   genesis: {
     genesis_url:
-      'https://raw.githubusercontent.com/CosmosContracts/testnets/main/uni-3/genesis.json'
+      'https://raw.githubusercontent.com/CosmosContracts/testnets/main/uni-5/genesis.json'
   },
   key_algos: ['secp256k1'],
   slip44: 118,
@@ -34,8 +34,8 @@ const testnet: Chain = {
   },
   codebase: {
     git_repo: 'https://github.com/CosmosContracts/juno',
-    recommended_version: 'v7.0.0-beta.2',
-    compatible_versions: ['v7.0.0-beta.2'],
+    recommended_version: 'v9.0.0',
+    compatible_versions: ['v9.0.0'],
     cosmos_sdk_version: '0.45',
     tendermint_version: '0.34',
     cosmwasm_version: '0.27',
@@ -60,6 +60,10 @@ const testnet: Chain = {
       {
         address: 'https://rpc.uni.junonetwork.io',
         provider: 'Juno'
+      },
+      {
+        address: 'https://juno-testnet-rpc.polkachu.com',
+        provider: 'Polkachu'
       }
     ],
     rest: [
@@ -70,6 +74,10 @@ const testnet: Chain = {
       {
         address: 'https://api.uni.junonetwork.io',
         provider: 'Juno'
+      },
+      {
+        address: 'https://juno-testnet-api.polkachu.com',
+        provider: 'Polkachu'
       }
     ],
     grpc: [
@@ -84,6 +92,11 @@ const testnet: Chain = {
       kind: 'Mintscan',
       url: 'https://testnet.mintscan.io/juno-testnet',
       tx_page: 'https://testnet.mintscan.io/juno-testnet/txs/${txHash}'
+    },
+    {
+      kind: 'NodesGuru',
+      url: 'https://testnet.juno.explorers.guru/',
+      tx_page: 'https://testnet.juno.explorers.guru/transaction/${txHash}'
     }
   ]
 };
