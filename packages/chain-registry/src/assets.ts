@@ -3127,6 +3127,43 @@ const assets: AssetList[] = [
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg',
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png'
         }
+      },
+      {
+        description:
+          'pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.',
+        denom_units: [
+          {
+            denom: 'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006',
+            exponent: 0
+          }
+        ],
+        base: 'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006',
+        name: 'pSTAKE Finance',
+        display: 'pstake',
+        symbol: 'PSTAKE',
+        traces: [
+          {
+            type: 'liquid-stake',
+            counterparty: {
+              chain_name: 'persistence',
+              base_denom: 'XPRT'
+            },
+            provider: 'Persistence'
+          },
+          {
+            type: 'bridge',
+            counterparty: {
+              chain_name: 'ethereum',
+              base_denom: '0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
+            },
+            provider: 'Gravity Bridge'
+          }
+        ],
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg'
+        },
+        coingecko_id: 'pstake-finance'
       }
     ]
   },
@@ -3954,6 +3991,33 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../assetlist.schema.json',
+    chain_name: 'lambda',
+    assets: [
+      {
+        description: 'The native token of Lambda',
+        denom_units: [
+          {
+            denom: 'ulamb',
+            exponent: 0
+          },
+          {
+            denom: 'lamb',
+            exponent: 18
+          }
+        ],
+        base: 'ulamb',
+        name: 'Lambda',
+        display: 'lamb',
+        symbol: 'LAMB',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.png'
+        },
+        coingecko_id: 'lambda'
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
     chain_name: 'likecoin',
     assets: [
       {
@@ -4551,6 +4615,35 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../assetlist.schema.json',
+    chain_name: 'point',
+    assets: [
+      {
+        description:
+          'The native governance and staking token of the Point network',
+        denom_units: [
+          {
+            denom: 'apoint',
+            exponent: 0
+          },
+          {
+            denom: 'point',
+            exponent: 18
+          }
+        ],
+        base: 'apoint',
+        name: 'Point',
+        display: 'point',
+        symbol: 'POINT',
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.png'
+        },
+        coingecko_id: 'point-network'
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
     chain_name: 'provenance',
     assets: [
       {
@@ -4576,6 +4669,33 @@ const assets: AssetList[] = [
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/hash.svg'
         },
         coingecko_id: 'provenance-blockchain'
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'rebus',
+    assets: [
+      {
+        description: 'REBUS, the native coin of the Rebus chain.',
+        denom_units: [
+          {
+            denom: 'arebus',
+            exponent: 0
+          },
+          {
+            denom: 'rebus',
+            exponent: 18
+          }
+        ],
+        base: 'arebus',
+        name: 'Rebus',
+        display: 'rebus',
+        symbol: 'REBUS',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.svg'
+        }
       }
     ]
   },
@@ -4880,6 +5000,27 @@ const assets: AssetList[] = [
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg'
         },
         coingecko_id: 'stride-staked-atom'
+      },
+      {
+        denom_units: [
+          {
+            denom: 'stustars',
+            exponent: 0
+          },
+          {
+            denom: 'ststars',
+            exponent: 6
+          }
+        ],
+        base: 'stustars',
+        name: 'stSTARS',
+        display: 'ststars',
+        symbol: 'stSTARS',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.svg'
+        },
+        coingecko_id: ''
       },
       {
         denom_units: [
@@ -9573,6 +9714,34 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../../assetlist.schema.json',
+    chain_name: 'evmostestnet',
+    assets: [
+      {
+        description:
+          'The native EVM, governance and staking token of the Evmos Hub',
+        denom_units: [
+          {
+            denom: 'atevmos',
+            exponent: 0
+          },
+          {
+            denom: 'tevmos',
+            exponent: 18
+          }
+        ],
+        base: 'atevmos',
+        name: 'Evnos Testnet',
+        display: 'tevmos',
+        symbol: 'TEVMOS',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/evmostestnet/images/evmos.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/evmostestnet/images/evmos.svg'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
     chain_name: 'harpoon',
     assets: [
       {
@@ -9882,7 +10051,7 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../assetlist.schema.json',
-    chain_id: 'stateset-1-testnet',
+    chain_name: 'stateset-1-testnet',
     assets: [
       {
         description: 'The native token of the Stateset Network',
@@ -9910,7 +10079,7 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../assetlist.schema.json',
-    chain_id: 'theta-testnet-001',
+    chain_name: 'theta-testnet-001',
     assets: [
       {
         description:
