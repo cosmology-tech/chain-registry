@@ -1,5 +1,5 @@
-import assets from '../../../__fixtures__/assets.json';
-import ibc from '../../../__fixtures__/ibc.json';
+import { assets, ibc } from 'chain-registry';
+
 import { getIbcAssetPath, getIbcDenomByBase, ibcDenom } from '../src';
 
 it('AKT on osmosis', () => {
@@ -27,35 +27,6 @@ it('JUNO on osmosis', () => {
   );
   expect(denom).toEqual(
     'ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED'
-  );
-});
-
-// osmosisd q ibc-transfer denom-trace 8061A06D3BD4D52C4A28FFECF7150D370393AF0BA661C3776C54FF32836C3961
-
-// denom_trace:
-//   base_denom: gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006
-//   path: transfer/channel-4/transfer/channel-38
-
-it('PSTAKE on osmosis', () => {
-  const denom = ibcDenom(
-    [
-      {
-        // THIS IS THE CHANNEL TO PERSISTENCE
-        // ON OSMOSIS
-        channelId: 'channel-4',
-        portId: 'transfer'
-      },
-      {
-        // THIS IS THE CHANNEL TO GRAVITYBRIDGE
-        // ON PERSISTENCE
-        channelId: 'channel-38',
-        portId: 'transfer'
-      }
-    ],
-    'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
-  );
-  expect(denom).toEqual(
-    'ibc/8061A06D3BD4D52C4A28FFECF7150D370393AF0BA661C3776C54FF32836C3961'
   );
 });
 
@@ -180,7 +151,52 @@ now check GRAVITYBRIDGE for pStake ASSET
 
 */
 
-it.only('PSTAKE path on osmosis', () => {
+// osmosisd q ibc-transfer denom-trace 8061A06D3BD4D52C4A28FFECF7150D370393AF0BA661C3776C54FF32836C3961
+
+// denom_trace:
+//   base_denom: gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006
+//   path: transfer/channel-4/transfer/channel-38
+
+it('PSTAKE ibcDenom on osmosis', () => {
+  const denom = ibcDenom(
+    [
+      {
+        // THIS IS THE CHANNEL TO PERSISTENCE
+        // ON OSMOSIS
+        channel_id: 'channel-4',
+        port_id: 'transfer'
+      },
+      {
+        // THIS IS THE CHANNEL TO GRAVITYBRIDGE
+        // ON PERSISTENCE
+        channel_id: 'channel-38',
+        port_id: 'transfer'
+      }
+    ],
+    // why is this gravity?
+    'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
+  );
+  expect(denom).toEqual(
+    'ibc/8061A06D3BD4D52C4A28FFECF7150D370393AF0BA661C3776C54FF32836C3961'
+  );
+});
+
+it('PSTAKE on osmosis', () => {
+  const denom = getIbcDenomByBase(
+    ibc,
+    'osmosis',
+    'persistence',
+    //
+    assets,
+    'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444'
+    // 'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
+  );
+  expect(denom).toEqual(
+    'ibc/8061A06D3BD4D52C4A28FFECF7150D370393AF0BA661C3776C54FF32836C3961'
+  );
+});
+
+it('PSTAKE path on osmosis', () => {
   const path = getIbcAssetPath(
     ibc,
     'osmosis',
@@ -189,35 +205,39 @@ it.only('PSTAKE path on osmosis', () => {
     assets,
     'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444'
   );
-  console.log(path);
-  // expect(path).toEqual([
-  //   {
-  //     // THIS IS THE CHANNEL TO PERSISTENCE
-  //     // ON OSMOSIS
-  //     channelId: 'channel-4',
-  //     portId: 'transfer'
-  //   },
-  //   {
-  //     // THIS IS THE CHANNEL TO GRAVITYBRIDGE
-  //     // ON PERSISTENCE
-  //     channelId: 'channel-38',
-  //     portId: 'transfer'
-  //   }
-  // ]);
+  expect(path).toEqual([
+    {
+      // THIS IS THE CHANNEL TO PERSISTENCE
+      // ON OSMOSIS
+      channel_id: 'channel-4',
+      port_id: 'transfer'
+    },
+    {
+      // THIS IS THE CHANNEL TO GRAVITYBRIDGE
+      // ON PERSISTENCE
+      channel_id: 'channel-38',
+      port_id: 'transfer'
+    }
+  ]);
 });
 
-xit('PSTAKE on osmosis', () => {
-  const denom = getIbcDenomByBase(
+it('AKASH path on osmosis', () => {
+  const path = getIbcAssetPath(
     ibc,
     'osmosis',
-    'persistence',
+    'akash',
     //
     assets,
-    'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444'
+    'uakt'
   );
-  expect(denom).toEqual(
-    'ibc/8061A06D3BD4D52C4A28FFECF7150D370393AF0BA661C3776C54FF32836C3961'
-  );
+  expect(path).toEqual([
+    {
+      // THIS IS THE CHANNEL TO AAKSH
+      // ON OSMOSIS
+      channel_id: 'channel-1',
+      port_id: 'transfer'
+    }
+  ]);
 });
 
 it('OSMO on juno', () => {
