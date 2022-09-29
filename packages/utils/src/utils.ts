@@ -3,14 +3,14 @@ import { sha256 } from 'sha.js';
 
 export const ibcDenom = (
   paths: {
-    portId: string;
-    channelId: string;
+    port_id: string;
+    channel_id: string;
   }[],
   coinMinimalDenom: string
 ): string => {
   const prefixes = [];
   for (const path of paths) {
-    prefixes.push(`${path.portId}/${path.channelId}`);
+    prefixes.push(`${path.port_id}/${path.channel_id}`);
   }
 
   const prefix = prefixes.join('/');
@@ -75,9 +75,14 @@ export const getIbcAssetPath = (
   base: string
 ) => {
   const ibcInfo = getIbcInfo(ibc, chain, counterparty);
-  if (!ibcInfo) return [];
+  if (!ibcInfo) {
+    return [];
+  }
 
-  const channel = getTransferChannel(ibcInfo);
+  const channel = base.startsWith('cw20:')
+    ? getWasmChannel(ibcInfo)
+    : getTransferChannel(ibcInfo);
+
   if (!channel) {
     return [];
   }
@@ -98,6 +103,7 @@ export const getIbcAssetPath = (
   }
   const asset = assetList.assets.find((asset) => asset.base === base);
   if (!asset) {
+    console.log(`no ${base} found in ${counterparty}`);
     return memo;
   }
 
@@ -106,9 +112,26 @@ export const getIbcAssetPath = (
       return trace.type === 'ibc' || trace.type === 'ibc-cw20';
     }) ?? [];
 
-  console.log(traces);
+  if (!traces.length) {
+    return memo;
+  }
 
-  return memo;
+  if (traces.length > 1) {
+    throw new Error('contact maintainers: multi-hop not yet supported');
+  }
+
+  const [trace] = traces;
+  return [
+    ...memo,
+    ...getIbcAssetPath(
+      ibc,
+      counterparty,
+      trace.counterparty.chain_name,
+      assets,
+      trace.counterparty.base_denom
+      // base
+    )
+  ];
 };
 
 export const getIbcDenomByBase = (
@@ -120,103 +143,32 @@ export const getIbcDenomByBase = (
 ): string => {
   const ibcInfo = getIbcInfo(ibc, chain, counterparty);
   if (ibcInfo) {
-    const channel = getTransferChannel(ibcInfo);
+    const channel = base.startsWith('cw20:')
+      ? getWasmChannel(ibcInfo)
+      : getTransferChannel(ibcInfo);
     if (!channel) {
       return;
     }
-    let channelInfo;
-    if (ibcInfo.chain_1.chain_name === chain) {
-      channelInfo = channel.chain_1;
-    } else {
-      channelInfo = channel.chain_2;
-    }
+    const ibcPath = getIbcAssetPath(ibc, chain, counterparty, assets, base);
 
     const assetList = assets.find(
       ({ chain_name }) => chain_name === counterparty
     );
     if (!assetList) {
-      return;
+      console.warn(`missing asset list for ${counterparty}`);
+      // could be incorrect...
+      return ibcDenom(ibcPath, base);
+    }
+    const asset = assetList.assets.find((asset) => asset.base === base);
+    if (!asset) {
+      console.warn(`no ${base} found in ${counterparty}`);
+      return ibcDenom(ibcPath, base);
     }
 
-    const assetInfo = assetList.assets.find((asset) => {
-      return asset.base === base;
-    });
+    const ibcTrace = asset.traces?.find?.((trace) => trace.type === 'ibc');
 
-    // if (!assetInfo) {
-    //   console.warn('missing referrenced asset');
-    // }
-
-    const traces = [];
-    if (assetInfo.traces && assetInfo.traces.length) {
-      [].push.apply(traces, assetInfo.traces);
-    }
-
-    // console.log(transition);
-
-    // if (transition.length) {
-    //   return ibcDenom(
-    //     [
-    //       {
-    //         portId: 'transfer',
-    //         channelId: assetInfo.ibc.source_channel
-    //       },
-    //       {
-    //         portId: channelInfo.port_id,
-    //         channelId: channelInfo.channel_id
-    //       }
-    //     ],
-    //     base
-    //   );
-    // }
-
-    return ibcDenom(
-      [
-        {
-          portId: channelInfo.port_id,
-          channelId: channelInfo.channel_id
-        }
-      ],
-      base
-    );
-  }
-};
-
-export const getIbcDenomByBaseForCw20 = (
-  ibc: IBCInfo[],
-  chain: string,
-  counterparty: string,
-  assets: AssetList[],
-  base: string
-): string => {
-  const ibcInfo = getIbcInfo(ibc, chain, counterparty);
-  if (ibcInfo) {
-    const channel = getWasmChannel(ibcInfo);
-    if (!channel) {
-      return;
-    }
-    let channelInfo;
-    if (ibcInfo.chain_1.chain_name === chain) {
-      channelInfo = channel.chain_1;
-    } else {
-      channelInfo = channel.chain_2;
-    }
-
-    const assetInfo = assets.find(
-      ({ chain_name }) => chain_name === counterparty
-    );
-    if (!assetInfo) {
-      return;
-    }
-
-    return ibcDenom(
-      [
-        {
-          portId: channelInfo.port_id,
-          channelId: channelInfo.channel_id
-        }
-      ],
-      base
-    );
+    const baseDenom = ibcTrace?.counterparty?.base_denom ?? asset.base;
+    return ibcDenom(ibcPath, baseDenom);
   }
 };
 
@@ -374,7 +326,7 @@ export const getCw20Assets = (
       const cw20Assets = counterpartyAssets.assets
         .filter((a) => a.base.startsWith('cw20:'))
         .map((asset) => {
-          const denom = getIbcDenomByBaseForCw20(
+          const denom = getIbcDenomByBase(
             ibc,
             chainName,
             counterparty,
