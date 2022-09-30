@@ -2255,6 +2255,44 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description:
+        'pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.',
+      denom_units: [
+        {
+          denom:
+            'ibc/CBC60FC96BD21708D3B60B2E4AD949E0DA07C67EFE6A8D463298806CD507A9CF',
+          exponent: 0,
+          aliases: ['gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006']
+        },
+        {
+          denom: 'pstake',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/CBC60FC96BD21708D3B60B2E4AD949E0DA07C67EFE6A8D463298806CD507A9CF',
+      name: 'pSTAKE Finance',
+      display: 'pstake',
+      symbol: 'PSTAKE',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom: 'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006',
+            chain_name: 'gravitybridge'
+          },
+          chain: {
+            channel_id: 'channel-144'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg'
+      },
+      coingecko_id: 'pstake-finance'
+    },
+    {
       description: 'The native token of IXO Chain',
       denom_units: [
         {
@@ -3040,7 +3078,7 @@ const asset_list: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/4126486B50373C2F5264F31C9D3C9FF5E41F30AD0C91D6CDE3D20EA5518B71C4',
+            'ibc/8061A06D3BD4D52C4A28FFECF7150D370393AF0BA661C3776C54FF32836C3961',
           exponent: 0,
           aliases: [
             'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444'
@@ -3051,7 +3089,7 @@ const asset_list: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/4126486B50373C2F5264F31C9D3C9FF5E41F30AD0C91D6CDE3D20EA5518B71C4',
+      base: 'ibc/8061A06D3BD4D52C4A28FFECF7150D370393AF0BA661C3776C54FF32836C3961',
       name: 'pSTAKE Finance',
       display: 'pstake',
       symbol: 'PSTAKE',

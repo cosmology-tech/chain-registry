@@ -159,6 +159,44 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
+        "denom_units": [
+          {
+            "denom": "ibc/E96596EC750E62E4FFEF17600260AD95EE5F073FB5CA103FC35F3816EED2F8DA",
+            "exponent": 0,
+            "aliases": [
+              "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
+            ]
+          },
+          {
+            "denom": "pstake",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/E96596EC750E62E4FFEF17600260AD95EE5F073FB5CA103FC35F3816EED2F8DA",
+        "name": "pSTAKE Finance",
+        "display": "pstake",
+        "symbol": "PSTAKE",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-91",
+              "base_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+              "chain_name": "gravitybridge"
+            },
+            "chain": {
+              "channel_id": "channel-4"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
+        },
+        "coingecko_id": "pstake-finance"
+      },
+      {
         "description": "The native token of Osmosis",
         "denom_units": [
           {
@@ -561,7 +599,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/9D5801F72FC66719540AAAE48D112E70AEE0099FED5968AC0742D600957D613B",
+            "denom": "ibc/3B3D6D224E3B1BD8BEE2B2763966F4E8784EFD871C7F26CA3305D6B2C4E3BC7E",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -572,7 +610,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/9D5801F72FC66719540AAAE48D112E70AEE0099FED5968AC0742D600957D613B",
+        "base": "ibc/3B3D6D224E3B1BD8BEE2B2763966F4E8784EFD871C7F26CA3305D6B2C4E3BC7E",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -3057,7 +3095,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/A32C6D078969FD38EC9D257380F7A118ED4EFA914C10366773CC1D6206E67324",
+            "denom": "ibc/560D0E725FEDF81B11B89FCA67CB18460AFB9D355B136CF9880259ADD0B3341A",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -3068,7 +3106,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/A32C6D078969FD38EC9D257380F7A118ED4EFA914C10366773CC1D6206E67324",
+        "base": "ibc/560D0E725FEDF81B11B89FCA67CB18460AFB9D355B136CF9880259ADD0B3341A",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -4442,6 +4480,44 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
+        "denom_units": [
+          {
+            "denom": "ibc/5F999C145B3800DC8215811064A8E209829F0DEF6B82E1BFBEE39A03C2DD09AB",
+            "exponent": 0,
+            "aliases": [
+              "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
+            ]
+          },
+          {
+            "denom": "pstake",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/5F999C145B3800DC8215811064A8E209829F0DEF6B82E1BFBEE39A03C2DD09AB",
+        "name": "pSTAKE Finance",
+        "display": "pstake",
+        "symbol": "PSTAKE",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-62",
+              "base_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+              "chain_name": "gravitybridge"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
+        },
+        "coingecko_id": "pstake-finance"
+      },
+      {
         "description": "The native token of Osmosis",
         "denom_units": [
           {
@@ -4881,7 +4957,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/3187DCFD83CF0D9411F38734FBF3C3AFAE06BF857915DDDCB2E6219F5C69A27E",
+            "denom": "ibc/008701C2C16FAC15372A91612C5D4F032E22C48455978BC6A51B8C8267E67A8C",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -4892,7 +4968,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/3187DCFD83CF0D9411F38734FBF3C3AFAE06BF857915DDDCB2E6219F5C69A27E",
+        "base": "ibc/008701C2C16FAC15372A91612C5D4F032E22C48455978BC6A51B8C8267E67A8C",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -6310,44 +6386,6 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
-        "description": "The native token of Secret Network",
-        "denom_units": [
-          {
-            "denom": "ibc/7907EA1A11FD4FC2A815FCAA54948C42F08E3F3C874EE48861386286FEB80160",
-            "exponent": 0,
-            "aliases": [
-              "uscrt"
-            ]
-          },
-          {
-            "denom": "scrt",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/7907EA1A11FD4FC2A815FCAA54948C42F08E3F3C874EE48861386286FEB80160",
-        "name": "Secret Network",
-        "display": "scrt",
-        "symbol": "SCRT",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg"
-        },
-        "coingecko_id": "secret",
-        "traces": [
-          {
-            "type": "ibc",
-            "counterparty": {
-              "channel_id": "channel-17",
-              "base_denom": "uscrt",
-              "chain_name": "secretnetwork"
-            },
-            "chain": {
-              "channel_id": "channel-79"
-            }
-          }
-        ]
-      },
-      {
         "description": "The XPRT token is primarily a governance token for the Persistence chain.",
         "denom_units": [
           {
@@ -6389,7 +6427,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/9EE4928412A95D88882EABF8DF40E8CB535A5C6EF49A0A11D9353ACD8869E76E",
+            "denom": "ibc/924514243A6167C144A0CA38E38F0BA269292961780265D5D4089D39144FFD49",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -6400,7 +6438,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/9EE4928412A95D88882EABF8DF40E8CB535A5C6EF49A0A11D9353ACD8869E76E",
+        "base": "ibc/924514243A6167C144A0CA38E38F0BA269292961780265D5D4089D39144FFD49",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -6422,6 +6460,44 @@ const asset_lists: AssetList[] = [
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
         },
         "coingecko_id": "pstake-finance"
+      },
+      {
+        "description": "The native token of Secret Network",
+        "denom_units": [
+          {
+            "denom": "ibc/7907EA1A11FD4FC2A815FCAA54948C42F08E3F3C874EE48861386286FEB80160",
+            "exponent": 0,
+            "aliases": [
+              "uscrt"
+            ]
+          },
+          {
+            "denom": "scrt",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/7907EA1A11FD4FC2A815FCAA54948C42F08E3F3C874EE48861386286FEB80160",
+        "name": "Secret Network",
+        "display": "scrt",
+        "symbol": "SCRT",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg"
+        },
+        "coingecko_id": "secret",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-17",
+              "base_denom": "uscrt",
+              "chain_name": "secretnetwork"
+            },
+            "chain": {
+              "channel_id": "channel-79"
+            }
+          }
+        ]
       }
     ]
   },
@@ -7026,7 +7102,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/7A8E8192EE16147AE3855A2C3E56C2E51BCC71D05FF6A1B771E409B0E31C6647",
+            "denom": "ibc/28FD914945B402E6471DD4E31DD8EDFB42B3810DA367967F4E941E85D0AD53DE",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -7037,7 +7113,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/7A8E8192EE16147AE3855A2C3E56C2E51BCC71D05FF6A1B771E409B0E31C6647",
+        "base": "ibc/28FD914945B402E6471DD4E31DD8EDFB42B3810DA367967F4E941E85D0AD53DE",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -8964,7 +9040,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/28B776A9436721479E618C222D2916D9155184FAA6CFFD72870DEC75F02A09B3",
+            "denom": "ibc/BA3EB643F46DD1CB95246A5419CCB3A4BA9BB1A85C589C49F27B4A6BB11AACD1",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -8975,7 +9051,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/28B776A9436721479E618C222D2916D9155184FAA6CFFD72870DEC75F02A09B3",
+        "base": "ibc/BA3EB643F46DD1CB95246A5419CCB3A4BA9BB1A85C589C49F27B4A6BB11AACD1",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -13628,6 +13704,44 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
+        "denom_units": [
+          {
+            "denom": "ibc/CBC60FC96BD21708D3B60B2E4AD949E0DA07C67EFE6A8D463298806CD507A9CF",
+            "exponent": 0,
+            "aliases": [
+              "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
+            ]
+          },
+          {
+            "denom": "pstake",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/CBC60FC96BD21708D3B60B2E4AD949E0DA07C67EFE6A8D463298806CD507A9CF",
+        "name": "pSTAKE Finance",
+        "display": "pstake",
+        "symbol": "PSTAKE",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-10",
+              "base_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+              "chain_name": "gravitybridge"
+            },
+            "chain": {
+              "channel_id": "channel-144"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
+        },
+        "coingecko_id": "pstake-finance"
+      },
+      {
         "description": "The native token of IXO Chain",
         "denom_units": [
           {
@@ -14420,7 +14534,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/4126486B50373C2F5264F31C9D3C9FF5E41F30AD0C91D6CDE3D20EA5518B71C4",
+            "denom": "ibc/8061A06D3BD4D52C4A28FFECF7150D370393AF0BA661C3776C54FF32836C3961",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -14431,7 +14545,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/4126486B50373C2F5264F31C9D3C9FF5E41F30AD0C91D6CDE3D20EA5518B71C4",
+        "base": "ibc/8061A06D3BD4D52C4A28FFECF7150D370393AF0BA661C3776C54FF32836C3961",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -17240,6 +17354,83 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "The native token of Gravity Bridge",
+        "denom_units": [
+          {
+            "denom": "ibc/31D711D31CD5D83D98E76B1486EEDA1A38CD1F7D6FCBD03521FE51323115AECA",
+            "exponent": 0,
+            "aliases": [
+              "ugraviton"
+            ]
+          },
+          {
+            "denom": "graviton",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/31D711D31CD5D83D98E76B1486EEDA1A38CD1F7D6FCBD03521FE51323115AECA",
+        "name": "Graviton",
+        "display": "graviton",
+        "symbol": "GRAV",
+        "coingecko_id": "graviton",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-24",
+              "base_denom": "ugraviton",
+              "chain_name": "gravitybridge"
+            },
+            "chain": {
+              "channel_id": "channel-38"
+            }
+          }
+        ]
+      },
+      {
+        "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
+        "denom_units": [
+          {
+            "denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+            "exponent": 0,
+            "aliases": [
+              "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
+            ]
+          },
+          {
+            "denom": "pstake",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+        "name": "pSTAKE Finance",
+        "display": "pstake",
+        "symbol": "PSTAKE",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-24",
+              "base_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+              "chain_name": "gravitybridge"
+            },
+            "chain": {
+              "channel_id": "channel-38"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
+        },
+        "coingecko_id": "pstake-finance"
+      },
+      {
         "description": "The IRIS token is the native governance token for the IrisNet chain.",
         "denom_units": [
           {
@@ -17579,45 +17770,6 @@ const asset_lists: AssetList[] = [
             },
             "chain": {
               "channel_id": "channel-27"
-            }
-          }
-        ]
-      },
-      {
-        "description": "The native token of Gravity Bridge",
-        "denom_units": [
-          {
-            "denom": "ibc/31D711D31CD5D83D98E76B1486EEDA1A38CD1F7D6FCBD03521FE51323115AECA",
-            "exponent": 0,
-            "aliases": [
-              "ugraviton"
-            ]
-          },
-          {
-            "denom": "graviton",
-            "exponent": 6,
-            "aliases": []
-          }
-        ],
-        "base": "ibc/31D711D31CD5D83D98E76B1486EEDA1A38CD1F7D6FCBD03521FE51323115AECA",
-        "name": "Graviton",
-        "display": "graviton",
-        "symbol": "GRAV",
-        "coingecko_id": "graviton",
-        "logo_URIs": {
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png"
-        },
-        "traces": [
-          {
-            "type": "ibc",
-            "counterparty": {
-              "channel_id": "channel-24",
-              "base_denom": "ugraviton",
-              "chain_name": "gravitybridge"
-            },
-            "chain": {
-              "channel_id": "channel-38"
             }
           }
         ]
@@ -18122,7 +18274,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/D9E873B17F94864673D9ADD1716F9897201984859C597973B575ECE2679C8CFA",
+            "denom": "ibc/225BA4054768997F835DC4F32F3C82C4930D8884A02FDB67D43D9EB32A057BC3",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -18133,7 +18285,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/D9E873B17F94864673D9ADD1716F9897201984859C597973B575ECE2679C8CFA",
+        "base": "ibc/225BA4054768997F835DC4F32F3C82C4930D8884A02FDB67D43D9EB32A057BC3",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -19374,6 +19526,44 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
+        "denom_units": [
+          {
+            "denom": "ibc/48B753EAF5C3CB2D780EB596DB4391DBB0CD8E15B99E8846A9A9D75F140B8043",
+            "exponent": 0,
+            "aliases": [
+              "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
+            ]
+          },
+          {
+            "denom": "pstake",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/48B753EAF5C3CB2D780EB596DB4391DBB0CD8E15B99E8846A9A9D75F140B8043",
+        "name": "pSTAKE Finance",
+        "display": "pstake",
+        "symbol": "PSTAKE",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-79",
+              "base_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+              "chain_name": "gravitybridge"
+            },
+            "chain": {
+              "channel_id": "channel-17"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
+        },
+        "coingecko_id": "pstake-finance"
       },
       {
         "description": "The INJ token is the native governance token for the Injective chain.",
@@ -21083,7 +21273,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/7A8E8192EE16147AE3855A2C3E56C2E51BCC71D05FF6A1B771E409B0E31C6647",
+            "denom": "ibc/28FD914945B402E6471DD4E31DD8EDFB42B3810DA367967F4E941E85D0AD53DE",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -21094,7 +21284,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/7A8E8192EE16147AE3855A2C3E56C2E51BCC71D05FF6A1B771E409B0E31C6647",
+        "base": "ibc/28FD914945B402E6471DD4E31DD8EDFB42B3810DA367967F4E941E85D0AD53DE",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -21747,7 +21937,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/8B8D2245B7DC32EDAAA847D5CF81361AD3B47D2AE312671F33981A4DCD3ADDB7",
+            "denom": "ibc/6A77936D4B8F4AB96038F17C528C60BB55C19E3458DE1F10A1BC2F6C15A7729D",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -21758,7 +21948,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/8B8D2245B7DC32EDAAA847D5CF81361AD3B47D2AE312671F33981A4DCD3ADDB7",
+        "base": "ibc/6A77936D4B8F4AB96038F17C528C60BB55C19E3458DE1F10A1BC2F6C15A7729D",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
@@ -22730,7 +22920,7 @@ const asset_lists: AssetList[] = [
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
-            "denom": "ibc/565F8228F66402B5D7815FF0885A5AE9CF27417A710364FEB3BEA181E747D63E",
+            "denom": "ibc/BCAA9BB335AEC5008235213759DFA2ABDF2DA96F0A6E5C1079F21D0826B831B6",
             "exponent": 0,
             "aliases": [
               "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444"
@@ -22741,7 +22931,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/565F8228F66402B5D7815FF0885A5AE9CF27417A710364FEB3BEA181E747D63E",
+        "base": "ibc/BCAA9BB335AEC5008235213759DFA2ABDF2DA96F0A6E5C1079F21D0826B831B6",
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",

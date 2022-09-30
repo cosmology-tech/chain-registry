@@ -3135,6 +3135,10 @@ const assets: AssetList[] = [
           {
             denom: 'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006',
             exponent: 0
+          },
+          {
+            denom: 'pstake',
+            exponent: 6
           }
         ],
         base: 'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006',
@@ -3146,7 +3150,7 @@ const assets: AssetList[] = [
             type: 'liquid-stake',
             counterparty: {
               chain_name: 'persistence',
-              base_denom: 'XPRT'
+              base_denom: 'uxprt'
             },
             provider: 'Persistence'
           },
