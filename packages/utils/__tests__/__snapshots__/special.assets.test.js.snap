@@ -118,6 +118,83 @@ exports[`getAssetLists 1`] = `
         ],
       },
       {
+        "base": "ibc/31D711D31CD5D83D98E76B1486EEDA1A38CD1F7D6FCBD03521FE51323115AECA",
+        "coingecko_id": "graviton",
+        "denom_units": [
+          {
+            "aliases": [
+              "ugraviton",
+            ],
+            "denom": "ibc/31D711D31CD5D83D98E76B1486EEDA1A38CD1F7D6FCBD03521FE51323115AECA",
+            "exponent": 0,
+          },
+          {
+            "aliases": [],
+            "denom": "graviton",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Gravity Bridge",
+        "display": "graviton",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
+        },
+        "name": "Graviton",
+        "symbol": "GRAV",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "ugraviton",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+        "coingecko_id": "pstake-finance",
+        "denom_units": [
+          {
+            "aliases": [
+              "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+            ],
+            "denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+            "exponent": 0,
+          },
+          {
+            "denom": "pstake",
+            "exponent": 6,
+          },
+        ],
+        "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
+        "display": "pstake",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg",
+        },
+        "name": "pSTAKE Finance",
+        "symbol": "PSTAKE",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
         "base": "ibc/5709B8339F05C7E37D27FCFEC18CEDBB0747309144C8B3C4A49C122F0F30B96B",
         "coingecko_id": "iris-network",
         "denom_units": [
@@ -456,79 +533,6 @@ exports[`getAssetLists 1`] = `
               "base_denom": "uiov",
               "chain_name": "starname",
               "channel_id": "channel-13",
-            },
-            "type": "ibc",
-          },
-        ],
-      },
-      {
-        "base": "ibc/31D711D31CD5D83D98E76B1486EEDA1A38CD1F7D6FCBD03521FE51323115AECA",
-        "coingecko_id": "graviton",
-        "denom_units": [
-          {
-            "aliases": [
-              "ugraviton",
-            ],
-            "denom": "ibc/31D711D31CD5D83D98E76B1486EEDA1A38CD1F7D6FCBD03521FE51323115AECA",
-            "exponent": 0,
-          },
-          {
-            "aliases": [],
-            "denom": "graviton",
-            "exponent": 6,
-          },
-        ],
-        "description": "The native token of Gravity Bridge",
-        "display": "graviton",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
-        },
-        "name": "Graviton",
-        "symbol": "GRAV",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-38",
-            },
-            "counterparty": {
-              "base_denom": "ugraviton",
-              "chain_name": "gravitybridge",
-              "channel_id": "channel-24",
-            },
-            "type": "ibc",
-          },
-        ],
-      },
-      {
-        "base": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
-        "coingecko_id": "pstake-finance",
-        "denom_units": [
-          {
-            "aliases": [
-              "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
-            ],
-            "denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
-            "exponent": 0,
-          },
-        ],
-        "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
-        "display": "pstake",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg",
-        },
-        "name": "pSTAKE Finance",
-        "symbol": "PSTAKE",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-38",
-            },
-            "counterparty": {
-              "base_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
-              "chain_name": "gravitybridge",
-              "channel_id": "channel-24",
             },
             "type": "ibc",
           },
