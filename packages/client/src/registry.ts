@@ -4,10 +4,9 @@ import {
   ChainRegistry,
   IBCInfo
 } from '@chain-registry/types';
+import { getAssetLists } from '@chain-registry/utils';
 import { basename } from 'bfs-path';
 import fetch from 'cross-fetch';
-
-import { getAssetLists } from './utils';
 
 export interface ChainRegistryFetcherOptions {
   assetLists?: AssetList[];
