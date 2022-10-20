@@ -64,7 +64,7 @@ exports[`getAssetLists 1`] = `
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg",
         },
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "symbol": "ATOM",
         "traces": [
           {
@@ -169,7 +169,7 @@ exports[`getAssetLists 1`] = `
           },
           {
             "denom": "pstake",
-            "exponent": 6,
+            "exponent": 18,
           },
         ],
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
