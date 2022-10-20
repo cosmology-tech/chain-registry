@@ -9,10 +9,6 @@ const testnet: Chain = {
   bech32_prefix: 'juno',
   daemon_name: 'junod',
   node_home: '$HOME/.juno',
-  genesis: {
-    genesis_url:
-      'https://raw.githubusercontent.com/CosmosContracts/testnets/main/uni-5/genesis.json'
-  },
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
@@ -39,7 +35,11 @@ const testnet: Chain = {
     cosmos_sdk_version: '0.45',
     tendermint_version: '0.34',
     cosmwasm_version: '0.27',
-    cosmwasm_enabled: true
+    cosmwasm_enabled: true,
+    genesis: {
+      genesis_url:
+        'https://raw.githubusercontent.com/CosmosContracts/testnets/main/uni-5/genesis.json'
+    }
   },
   peers: {
     seeds: [],

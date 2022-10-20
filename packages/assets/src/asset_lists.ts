@@ -4,10 +4,759 @@ const asset_lists: AssetList[] = [
     "chain_name": "agoric",
     "assets": [
       {
+        "description": "The native token of Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/C01154C2547F4CB10A985EA78E7CD4BA891C1504360703A37E1D7043F06B5E1F",
+            "exponent": 0,
+            "aliases": [
+              "uaxl"
+            ]
+          },
+          {
+            "denom": "axl",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/C01154C2547F4CB10A985EA78E7CD4BA891C1504360703A37E1D7043F06B5E1F",
+        "name": "Axelar",
+        "display": "axl",
+        "symbol": "AXL",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg"
+        },
+        "coingecko_id": "axelar",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "uaxl",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ]
+      },
+      {
+        "description": "Circle's stablecoin on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/295548A78785A1007F232DE286149A6FF512F180AF5657780FC89C009E2C348F",
+            "exponent": 0,
+            "aliases": [
+              "uusdc"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/295548A78785A1007F232DE286149A6FF512F180AF5657780FC89C009E2C348F",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "uusdc",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png"
+        },
+        "coingecko_id": "usd-coin"
+      },
+      {
+        "description": "Frax's fractional-algorithmic stablecoin on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/7B11FE7D6385B46B9F3598B298B81A773CB20A8BA12001D87A78580314218364",
+            "exponent": 0,
+            "aliases": [
+              "frax-wei"
+            ]
+          },
+          {
+            "denom": "frax",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/7B11FE7D6385B46B9F3598B298B81A773CB20A8BA12001D87A78580314218364",
+        "name": "Frax",
+        "display": "frax",
+        "symbol": "FRAX",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "frax-wei",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.png"
+        },
+        "coingecko_id": "frax"
+      },
+      {
+        "description": "Dai stablecoin on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/3914BDEF46F429A26917E4D8D434620EC4817DC6B6E68FB327E190902F1E9242",
+            "exponent": 0,
+            "aliases": [
+              "dai-wei"
+            ]
+          },
+          {
+            "denom": "dai",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/3914BDEF46F429A26917E4D8D434620EC4817DC6B6E68FB327E190902F1E9242",
+        "name": "Dai Stablecoin",
+        "display": "dai",
+        "symbol": "DAI",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "dai-wei",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.png"
+        },
+        "coingecko_id": "dai"
+      },
+      {
+        "description": "Tether's USD stablecoin on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/F2331645B9683116188EF36FC04A809C28BD36B54555E8705A37146D0182F045",
+            "exponent": 0,
+            "aliases": [
+              "uusdt"
+            ]
+          },
+          {
+            "denom": "usdt",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/F2331645B9683116188EF36FC04A809C28BD36B54555E8705A37146D0182F045",
+        "name": "Tether USD",
+        "display": "usdt",
+        "symbol": "USDT",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "uusdt",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png"
+        },
+        "coingecko_id": "tether"
+      },
+      {
+        "description": "Wrapped Ether on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/1B38805B1C75352B28169284F96DF56BDEBD9E8FAC005BDCC8CF0378C82AA8E7",
+            "exponent": 0,
+            "aliases": [
+              "weth-wei"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/1B38805B1C75352B28169284F96DF56BDEBD9E8FAC005BDCC8CF0378C82AA8E7",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "WETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "weth-wei",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png"
+        },
+        "coingecko_id": "weth"
+      },
+      {
+        "description": "Wrapped Bitcoin on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/301DAF9CB0A9E247CD478533EF0E21F48FF8118C4A51F77C8BC3EB70E5566DBC",
+            "exponent": 0,
+            "aliases": [
+              "wbtc-satoshi"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "base": "ibc/301DAF9CB0A9E247CD478533EF0E21F48FF8118C4A51F77C8BC3EB70E5566DBC",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "wbtc-satoshi",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png"
+        },
+        "coingecko_id": "wrapped-bitcoin"
+      },
+      {
+        "description": "Aave on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/5E6061C9FE6FC8E5E4E0B7A9313561D28BA6D2A246877DF0FB6636EEEA055131",
+            "exponent": 0,
+            "aliases": [
+              "aave-wei"
+            ]
+          },
+          {
+            "denom": "aave",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/5E6061C9FE6FC8E5E4E0B7A9313561D28BA6D2A246877DF0FB6636EEEA055131",
+        "name": "Aave",
+        "display": "aave",
+        "symbol": "AAVE",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "aave-wei",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg"
+        },
+        "coingecko_id": "aave"
+      },
+      {
+        "description": "ApeCoin on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/1C9CC36F8E961719EAF52D4A2ECAB84538D0425C63CAC77D516BF07FFAF931D5",
+            "exponent": 0,
+            "aliases": [
+              "ape-wei"
+            ]
+          },
+          {
+            "denom": "ape",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/1C9CC36F8E961719EAF52D4A2ECAB84538D0425C63CAC77D516BF07FFAF931D5",
+        "name": "ApeCoin",
+        "display": "ape",
+        "symbol": "APE",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "ape-wei",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg"
+        },
+        "coingecko_id": "apecoin"
+      },
+      {
+        "description": "Axie Infinity Shard on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/5181AFC5D9858E80212EE5C9F35D52DAE4E26AD5F55B19DD633206C51DECB6AF",
+            "exponent": 0,
+            "aliases": [
+              "axs-wei"
+            ]
+          },
+          {
+            "denom": "axs",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/5181AFC5D9858E80212EE5C9F35D52DAE4E26AD5F55B19DD633206C51DECB6AF",
+        "name": "Axie Infinity Shard",
+        "display": "axs",
+        "symbol": "AXS",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "axs-wei",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg"
+        },
+        "coingecko_id": "axie-infinity"
+      },
+      {
+        "description": "Chainlink on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/FC59D6840A41252352263CEA2B832BB86D68D03CBA194263CB9F3C15946796FB",
+            "exponent": 0,
+            "aliases": [
+              "link-wei"
+            ]
+          },
+          {
+            "denom": "link",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/FC59D6840A41252352263CEA2B832BB86D68D03CBA194263CB9F3C15946796FB",
+        "name": "Chainlink",
+        "display": "link",
+        "symbol": "LINK",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "link-wei",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg"
+        },
+        "coingecko_id": "chainlink"
+      },
+      {
+        "description": "Maker on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/31A4E6623063E702FB9CF2E7B616DFCCDE319CA2FC4775CDFF26F29F628E7ACF",
+            "exponent": 0,
+            "aliases": [
+              "mkr-wei"
+            ]
+          },
+          {
+            "denom": "mkr",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/31A4E6623063E702FB9CF2E7B616DFCCDE319CA2FC4775CDFF26F29F628E7ACF",
+        "name": "Maker",
+        "display": "mkr",
+        "symbol": "MKR",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "mkr-wei",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg"
+        },
+        "coingecko_id": "maker"
+      },
+      {
+        "description": "Rai Reflex Index on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/4CA23432A78B272A9EB7010CB72A15A199066D239F1B13BB583F3945EB8A315C",
+            "exponent": 0,
+            "aliases": [
+              "rai-wei"
+            ]
+          },
+          {
+            "denom": "rai",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/4CA23432A78B272A9EB7010CB72A15A199066D239F1B13BB583F3945EB8A315C",
+        "name": "Rai Reflex Index",
+        "display": "rai",
+        "symbol": "RAI",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "rai-wei",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/rai.svg"
+        },
+        "coingecko_id": "rai"
+      },
+      {
+        "description": "Shiba Inu on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/43BF3152103ED706E207005E7C433AB3440572C1D444FFE49321A0EF6A8EFC82",
+            "exponent": 0,
+            "aliases": [
+              "shib-wei"
+            ]
+          },
+          {
+            "denom": "shib",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/43BF3152103ED706E207005E7C433AB3440572C1D444FFE49321A0EF6A8EFC82",
+        "name": "Shiba Inu",
+        "display": "shib",
+        "symbol": "SHIB",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "shib-wei",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg"
+        },
+        "coingecko_id": "shiba-inu"
+      },
+      {
+        "description": "Lido Staked Ether on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/CA856BEC686F1F2DCFA410D282B1325D98B8AB81436A626F4214B7BF441AAA98",
+            "exponent": 0,
+            "aliases": [
+              "steth-wei"
+            ]
+          },
+          {
+            "denom": "steth",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/CA856BEC686F1F2DCFA410D282B1325D98B8AB81436A626F4214B7BF441AAA98",
+        "name": "Lido Staked Ether",
+        "display": "steth",
+        "symbol": "stETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "steth-wei",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg"
+        },
+        "coingecko_id": "staked-ether"
+      },
+      {
+        "description": "Uniswap on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/0A88A08F3E9573DB9D8CB74AA3746F6D23C41C3EE7B6CC5AA4695A1DD74FF86B",
+            "exponent": 0,
+            "aliases": [
+              "uni-wei"
+            ]
+          },
+          {
+            "denom": "uni",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/0A88A08F3E9573DB9D8CB74AA3746F6D23C41C3EE7B6CC5AA4695A1DD74FF86B",
+        "name": "Uniswap",
+        "display": "uni",
+        "symbol": "UNI",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "uni-wei",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg"
+        },
+        "coingecko_id": "uniswap"
+      },
+      {
+        "description": "Chain on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/7558FFC9B72318EC0510FC99970F079AA28CE1D96B3C34A775A0CCDBE5A2D500",
+            "exponent": 0,
+            "aliases": [
+              "xcn-wei"
+            ]
+          },
+          {
+            "denom": "xcn",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/7558FFC9B72318EC0510FC99970F079AA28CE1D96B3C34A775A0CCDBE5A2D500",
+        "name": "Chain",
+        "display": "xcn",
+        "symbol": "XCN",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "xcn-wei",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg"
+        },
+        "coingecko_id": "chain-2"
+      },
+      {
+        "description": "Wrapped Polkadot on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/B37E4D9FB5B30F3E1E20A4B2DE2A005E584C5C822C44527546556AE2470B4539",
+            "exponent": 0,
+            "aliases": [
+              "dot-planck"
+            ]
+          },
+          {
+            "denom": "dot",
+            "exponent": 10
+          }
+        ],
+        "base": "ibc/B37E4D9FB5B30F3E1E20A4B2DE2A005E584C5C822C44527546556AE2470B4539",
+        "name": "Wrapped Polkadot",
+        "display": "dot",
+        "symbol": "DOT",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "dot-planck",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.png"
+        },
+        "coingecko_id": "polkadot"
+      },
+      {
+        "description": "Wrapped Moonbeam on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/C8D63703F5805CE6A2B20555139CF6ED9CDFA870389648EB08D688B94B0AE2C1",
+            "exponent": 0,
+            "aliases": [
+              "wglmr-wei"
+            ]
+          },
+          {
+            "denom": "wglmr",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/C8D63703F5805CE6A2B20555139CF6ED9CDFA870389648EB08D688B94B0AE2C1",
+        "name": "Wrapped Moonbeam",
+        "display": "wglmr",
+        "symbol": "WGLMR",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "wglmr-wei",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.png"
+        },
+        "coingecko_id": "wrapped-moonbeam"
+      },
+      {
+        "description": "Wrapped Matic on Axelar",
+        "denom_units": [
+          {
+            "denom": "ibc/A64467480BBE4CCFC3CF7E25AD1446AA9BDBD4F5BCB9EF6038B83D6964C784E6",
+            "exponent": 0,
+            "aliases": [
+              "wmatic-wei"
+            ]
+          },
+          {
+            "denom": "wmatic",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/A64467480BBE4CCFC3CF7E25AD1446AA9BDBD4F5BCB9EF6038B83D6964C784E6",
+        "name": "Wrapped Matic",
+        "display": "wmatic",
+        "symbol": "WMATIC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-41",
+              "base_denom": "wmatic-wei",
+              "chain_name": "axelar"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg"
+        },
+        "coingecko_id": "matic-network"
+      },
+      {
         "description": "The native staking and governance token of the Cosmos Hub.",
         "denom_units": [
           {
-            "denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+            "denom": "ibc/BA313C4A19DFBF943586C0387E6B11286F9E416B4DD27574E6909CABE0E342FA",
             "exponent": 0,
             "aliases": [
               "uatom"
@@ -18,8 +767,8 @@ const asset_lists: AssetList[] = [
             "exponent": 6
           }
         ],
-        "base": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
-        "name": "Cosmos",
+        "base": "ibc/BA313C4A19DFBF943586C0387E6B11286F9E416B4DD27574E6909CABE0E342FA",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -31,12 +780,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel_id": "channel-374",
+              "channel_id": "channel-405",
               "base_denom": "uatom",
               "chain_name": "cosmoshub"
             },
             "chain": {
-              "channel_id": "channel-0"
+              "channel_id": "channel-5"
             }
           }
         ]
@@ -170,7 +919,7 @@ const asset_lists: AssetList[] = [
           },
           {
             "denom": "pstake",
-            "exponent": 6
+            "exponent": 18
           }
         ],
         "base": "ibc/E96596EC750E62E4FFEF17600260AD95EE5F073FB5CA103FC35F3816EED2F8DA",
@@ -300,7 +1049,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/2E5D0AC026AC1AFA65A23023BA4F24BB8DDF94F118EDC0BAD6F625BFC557CDED",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -1024,6 +1773,79 @@ const asset_lists: AssetList[] = [
   {
     "chain_name": "axelar",
     "assets": [
+      {
+        "description": "BLD is the token used to secure the Agoric chain through staking and to backstop Inter Protocol.",
+        "denom_units": [
+          {
+            "denom": "ibc/AD211FEDD6DF0EDA18873D4E2A49972759BD761D96C3BBD9D6731FDC3F948F93",
+            "exponent": 0,
+            "aliases": [
+              "ubld"
+            ]
+          },
+          {
+            "denom": "bld",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/AD211FEDD6DF0EDA18873D4E2A49972759BD761D96C3BBD9D6731FDC3F948F93",
+        "name": "Agoric",
+        "display": "bld",
+        "symbol": "BLD",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/bld.png"
+        },
+        "coingecko_id": "agoric",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-9",
+              "base_denom": "ubld",
+              "chain_name": "agoric"
+            },
+            "chain": {
+              "channel_id": "channel-41"
+            }
+          }
+        ]
+      },
+      {
+        "description": "IST is the stable token used by the Agoric chain for execution fees and commerce.",
+        "denom_units": [
+          {
+            "denom": "ibc/17F12F5F038242355C41E838BCC72781276D68302DF7DD09DAB8E6C2832D8F38",
+            "exponent": 0,
+            "aliases": [
+              "uist"
+            ]
+          },
+          {
+            "denom": "ist",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/17F12F5F038242355C41E838BCC72781276D68302DF7DD09DAB8E6C2832D8F38",
+        "name": "Inter Stable Token",
+        "display": "ist",
+        "symbol": "IST",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/ist.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-9",
+              "base_denom": "uist",
+              "chain_name": "agoric"
+            },
+            "chain": {
+              "channel_id": "channel-41"
+            }
+          }
+        ]
+      },
       {
         "description": "The native token of Crescent",
         "denom_units": [
@@ -2484,7 +3306,7 @@ const asset_lists: AssetList[] = [
         "description": "BLD is the token used to secure the Agoric chain through staking and to backstop Inter Protocol.",
         "denom_units": [
           {
-            "denom": "ibc/0A327721C1317DD492ABC7A8B5DE70A3131CECD111881EA740A1E72BE20EA41A",
+            "denom": "ibc/26D5710650B26F38CD59EDDC2E85830BC47BD727F23747EB41F350263F08DCF7",
             "exponent": 0,
             "aliases": [
               "ubld"
@@ -2495,7 +3317,7 @@ const asset_lists: AssetList[] = [
             "exponent": 6
           }
         ],
-        "base": "ibc/0A327721C1317DD492ABC7A8B5DE70A3131CECD111881EA740A1E72BE20EA41A",
+        "base": "ibc/26D5710650B26F38CD59EDDC2E85830BC47BD727F23747EB41F350263F08DCF7",
         "name": "Agoric",
         "display": "bld",
         "symbol": "BLD",
@@ -2507,12 +3329,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel_id": "channel-0",
+              "channel_id": "channel-5",
               "base_denom": "ubld",
               "chain_name": "agoric"
             },
             "chain": {
-              "channel_id": "channel-374"
+              "channel_id": "channel-405"
             }
           }
         ]
@@ -2521,7 +3343,7 @@ const asset_lists: AssetList[] = [
         "description": "IST is the stable token used by the Agoric chain for execution fees and commerce.",
         "denom_units": [
           {
-            "denom": "ibc/BEE2FF76D2175AC7B4C77356769634E8F1D888DD4C85FEBCAEE5059C868990C5",
+            "denom": "ibc/9EA9BCC30570DC3198317BB6B5561AB41DDC17AFC342087022C128C57EFE19BA",
             "exponent": 0,
             "aliases": [
               "uist"
@@ -2532,7 +3354,7 @@ const asset_lists: AssetList[] = [
             "exponent": 6
           }
         ],
-        "base": "ibc/BEE2FF76D2175AC7B4C77356769634E8F1D888DD4C85FEBCAEE5059C868990C5",
+        "base": "ibc/9EA9BCC30570DC3198317BB6B5561AB41DDC17AFC342087022C128C57EFE19BA",
         "name": "Inter Stable Token",
         "display": "ist",
         "symbol": "IST",
@@ -2543,12 +3365,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel_id": "channel-0",
+              "channel_id": "channel-5",
               "base_denom": "uist",
               "chain_name": "agoric"
             },
             "chain": {
-              "channel_id": "channel-374"
+              "channel_id": "channel-405"
             }
           }
         ]
@@ -3676,7 +4498,7 @@ const asset_lists: AssetList[] = [
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg"
         },
-        "coingecko_id": "axelar-network",
+        "coingecko_id": "axelar",
         "traces": [
           {
             "type": "ibc",
@@ -4418,7 +5240,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -4491,7 +5313,7 @@ const asset_lists: AssetList[] = [
           },
           {
             "denom": "pstake",
-            "exponent": 6
+            "exponent": 18
           }
         ],
         "base": "ibc/5F999C145B3800DC8215811064A8E209829F0DEF6B82E1BFBEE39A03C2DD09AB",
@@ -4734,7 +5556,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/B5919B1B65A79F595F71D2E8306FD1FB70B969A268230E745A6DBE86F1060D58",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -5140,6 +5962,94 @@ const asset_lists: AssetList[] = [
     ]
   },
   {
+    "chain_name": "cudos",
+    "assets": [
+      {
+        "description": "The native token of Osmosis",
+        "denom_units": [
+          {
+            "denom": "ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B",
+            "exponent": 0,
+            "aliases": [
+              "uosmo"
+            ]
+          },
+          {
+            "denom": "osmo",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B",
+        "name": "Osmosis",
+        "display": "osmo",
+        "symbol": "OSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
+        },
+        "coingecko_id": "osmosis",
+        "keywords": [
+          "dex",
+          "staking"
+        ],
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-298",
+              "base_denom": "uosmo",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D",
+            "exponent": 0,
+            "aliases": [
+              "uion"
+            ]
+          },
+          {
+            "denom": "ion",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D",
+        "name": "Ion",
+        "display": "ion",
+        "symbol": "ION",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
+        },
+        "coingecko_id": "ion",
+        "keywords": [
+          "memecoin"
+        ],
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-298",
+              "base_denom": "uion",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
     "chain_name": "decentr",
     "assets": [
       {
@@ -5499,7 +6409,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -5878,6 +6788,45 @@ const asset_lists: AssetList[] = [
             },
             "chain": {
               "channel_id": "channel-15"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native token of Tgrade",
+        "denom_units": [
+          {
+            "denom": "ibc/46AB1362B4446BCE0FD7D2F247FFCA8CC39BC6CA7AEAD03C77CABBD1CB41E5C9",
+            "exponent": 0,
+            "aliases": [
+              "utgd"
+            ]
+          },
+          {
+            "denom": "tgd",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/46AB1362B4446BCE0FD7D2F247FFCA8CC39BC6CA7AEAD03C77CABBD1CB41E5C9",
+        "name": "Tgrade",
+        "display": "tgd",
+        "symbol": "TGD",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.svg"
+        },
+        "coingecko_id": "tgrade",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-9",
+              "base_denom": "utgd",
+              "chain_name": "tgrade"
+            },
+            "chain": {
+              "channel_id": "channel-34"
             }
           }
         ]
@@ -6520,7 +7469,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -6844,7 +7793,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -7385,7 +8334,7 @@ const asset_lists: AssetList[] = [
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg"
         },
-        "coingecko_id": "axelar-network",
+        "coingecko_id": "axelar",
         "traces": [
           {
             "type": "ibc",
@@ -8782,7 +9731,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -10628,7 +11577,7 @@ const asset_lists: AssetList[] = [
         "description": "The native token of Osmosis",
         "denom_units": [
           {
-            "denom": "ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B",
+            "denom": "ibc/13B2C536BB057AC79D5616B8EA1B9540EC1F2170718CAFF6F0083C966FFFED0B",
             "exponent": 0,
             "aliases": [
               "uosmo"
@@ -10640,7 +11589,7 @@ const asset_lists: AssetList[] = [
             "aliases": []
           }
         ],
-        "base": "ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B",
+        "base": "ibc/13B2C536BB057AC79D5616B8EA1B9540EC1F2170718CAFF6F0083C966FFFED0B",
         "name": "Osmosis",
         "display": "osmo",
         "symbol": "OSMO",
@@ -10657,12 +11606,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel_id": "channel-350",
+              "channel_id": "channel-378",
               "base_denom": "uosmo",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel_id": "channel-1"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -10670,7 +11619,7 @@ const asset_lists: AssetList[] = [
       {
         "denom_units": [
           {
-            "denom": "ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D",
+            "denom": "ibc/6FA7B62692FBCA2E51F567947035DE3C5D7333D49D13B85A25F358E80DF4E991",
             "exponent": 0,
             "aliases": [
               "uion"
@@ -10681,7 +11630,7 @@ const asset_lists: AssetList[] = [
             "exponent": 6
           }
         ],
-        "base": "ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D",
+        "base": "ibc/6FA7B62692FBCA2E51F567947035DE3C5D7333D49D13B85A25F358E80DF4E991",
         "name": "Ion",
         "display": "ion",
         "symbol": "ION",
@@ -10697,12 +11646,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel_id": "channel-350",
+              "channel_id": "channel-378",
               "base_denom": "uion",
               "chain_name": "osmosis"
             },
             "chain": {
-              "channel_id": "channel-1"
+              "channel_id": "channel-2"
             }
           }
         ]
@@ -10728,7 +11677,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/BA313C4A19DFBF943586C0387E6B11286F9E416B4DD27574E6909CABE0E342FA",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -11567,7 +12516,7 @@ const asset_lists: AssetList[] = [
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg"
         },
-        "coingecko_id": "axelar-network",
+        "coingecko_id": "axelar",
         "traces": [
           {
             "type": "ibc",
@@ -13151,7 +14100,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -13284,6 +14233,45 @@ const asset_lists: AssetList[] = [
             },
             "chain": {
               "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native token of the Cudos blockchain",
+        "denom_units": [
+          {
+            "denom": "ibc/E09ED39F390EC51FA9F3F69BEA08B5BBE6A48B3057B2B1C3467FAAE9E58B021B",
+            "exponent": 0,
+            "aliases": [
+              "acudos"
+            ]
+          },
+          {
+            "denom": "cudos",
+            "exponent": 18,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/E09ED39F390EC51FA9F3F69BEA08B5BBE6A48B3057B2B1C3467FAAE9E58B021B",
+        "name": "Cudos",
+        "display": "cudos",
+        "symbol": "CUDOS",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg"
+        },
+        "coingecko_id": "cudos",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1",
+              "base_denom": "acudos",
+              "chain_name": "cudos"
+            },
+            "chain": {
+              "channel_id": "channel-298"
             }
           }
         ]
@@ -13715,7 +14703,7 @@ const asset_lists: AssetList[] = [
           },
           {
             "denom": "pstake",
-            "exponent": 6
+            "exponent": 18
           }
         ],
         "base": "ibc/CBC60FC96BD21708D3B60B2E4AD949E0DA07C67EFE6A8D463298806CD507A9CF",
@@ -14195,10 +15183,47 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "The native over-collateralized stablecoin from the Kujira chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/AADDBDAF45AA220B627662682B48E14F1F830BD46D5A4C4FFEFCCEB9D6050854",
+            "exponent": 0,
+            "aliases": [
+              "factory/kujira1qk00h5atutpsv900x202pxx42npjr9thg58dnqpa72f2p7m2luase444a7/uusk"
+            ]
+          },
+          {
+            "denom": "usk",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/AADDBDAF45AA220B627662682B48E14F1F830BD46D5A4C4FFEFCCEB9D6050854",
+        "name": "USK",
+        "display": "USK",
+        "symbol": "USK",
+        "coingecko_id": "usk",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-3",
+              "base_denom": "factory/kujira1qk00h5atutpsv900x202pxx42npjr9thg58dnqpa72f2p7m2luase444a7/uusk",
+              "chain_name": "kujira"
+            },
+            "chain": {
+              "channel_id": "channel-259"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Lambda",
         "denom_units": [
           {
-            "denom": "ibc/0EA19B60FF5346E5A5C6830893DE11489308876444FC3352328F49CC03908274",
+            "denom": "ibc/80825E8F04B12D914ABEADB1F4D39C04755B12C8402F6876EE3168450C0A90BB",
             "exponent": 0,
             "aliases": [
               "ulamb"
@@ -14209,7 +15234,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/0EA19B60FF5346E5A5C6830893DE11489308876444FC3352328F49CC03908274",
+        "base": "ibc/80825E8F04B12D914ABEADB1F4D39C04755B12C8402F6876EE3168450C0A90BB",
         "name": "Lambda",
         "display": "lamb",
         "symbol": "LAMB",
@@ -14221,12 +15246,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel_id": "channel-1",
+              "channel_id": "channel-2",
               "base_denom": "ulamb",
               "chain_name": "lambda"
             },
             "chain": {
-              "channel_id": "channel-350"
+              "channel_id": "channel-378"
             }
           }
         ]
@@ -17107,6 +18132,87 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "The native token cw20 for MuseDAO on Juno Chain",
+        "type_asset": "cw20",
+        "address": "juno1p8x807f6h222ur0vssqy3qk6mcpa40gw2pchquz5atl935t7kvyq894ne3",
+        "denom_units": [
+          {
+            "denom": "ibc/6B982170CE024689E8DD0E7555B129B488005130D4EDA426733D552D10B36D8F",
+            "exponent": 0,
+            "aliases": [
+              "cw20:juno1p8x807f6h222ur0vssqy3qk6mcpa40gw2pchquz5atl935t7kvyq894ne3"
+            ]
+          },
+          {
+            "denom": "muse",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/6B982170CE024689E8DD0E7555B129B488005130D4EDA426733D552D10B36D8F",
+        "name": "MuseDAO",
+        "display": "muse",
+        "symbol": "MUSE",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/muse.png"
+        },
+        "traces": [
+          {
+            "type": "ibc-cw20",
+            "counterparty": {
+              "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno1p8x807f6h222ur0vssqy3qk6mcpa40gw2pchquz5atl935t7kvyq894ne3",
+              "chain_name": "juno"
+            },
+            "chain": {
+              "port": "transfer",
+              "channel_id": "channel-169"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native token cw20 for Loop Finance on Juno Chain",
+        "type_asset": "cw20",
+        "address": "juno1qsrercqegvs4ye0yqg93knv73ye5dc3prqwd6jcdcuj8ggp6w0us66deup",
+        "denom_units": [
+          {
+            "denom": "ibc/8D8F96DFFD16F5D079EED73C5110E937B37FBDA817F3E5680DB69E51FFBB4B7D",
+            "exponent": 0,
+            "aliases": [
+              "cw20:juno1qsrercqegvs4ye0yqg93knv73ye5dc3prqwd6jcdcuj8ggp6w0us66deup"
+            ]
+          },
+          {
+            "denom": "loop",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/8D8F96DFFD16F5D079EED73C5110E937B37FBDA817F3E5680DB69E51FFBB4B7D",
+        "name": "Loop Finance",
+        "display": "loop",
+        "symbol": "LOOP",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/loop.png"
+        },
+        "coingecko_id": "loop",
+        "traces": [
+          {
+            "type": "ibc-cw20",
+            "counterparty": {
+              "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno1qsrercqegvs4ye0yqg93knv73ye5dc3prqwd6jcdcuj8ggp6w0us66deup",
+              "chain_name": "juno"
+            },
+            "chain": {
+              "port": "transfer",
+              "channel_id": "channel-169"
+            }
+          }
+        ]
+      },
+      {
         "description": "ELEVENPARIS loyalty token on KiChain",
         "type_asset": "cw20",
         "address": "ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy",
@@ -17294,7 +18400,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/C8A74ABBE2AF892E15680D916A7C22130585CE5704F9B17A10F184A90D53BECA",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -17404,7 +18510,7 @@ const asset_lists: AssetList[] = [
           },
           {
             "denom": "pstake",
-            "exponent": 6
+            "exponent": 18
           }
         ],
         "base": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
@@ -17795,7 +18901,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -18052,7 +19158,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/5FEB332D2B121921C792F1A0DBF7C3163FF205337B4AFE6E14F69E8E49545F49",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -18571,7 +19677,7 @@ const asset_lists: AssetList[] = [
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg"
         },
-        "coingecko_id": "axelar-network",
+        "coingecko_id": "axelar",
         "traces": [
           {
             "type": "ibc",
@@ -19350,7 +20456,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -19539,7 +20645,7 @@ const asset_lists: AssetList[] = [
           },
           {
             "denom": "pstake",
-            "exponent": 6
+            "exponent": 18
           }
         ],
         "base": "ibc/48B753EAF5C3CB2D780EB596DB4391DBB0CD8E15B99E8846A9A9D75F140B8043",
@@ -21051,7 +22157,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -21601,7 +22707,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -22698,7 +23804,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -23049,7 +24155,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {
@@ -23443,6 +24549,44 @@ const asset_lists: AssetList[] = [
     "chain_name": "tgrade",
     "assets": [
       {
+        "description": "The native EVM, governance and staking token of the Evmos Hub",
+        "denom_units": [
+          {
+            "denom": "ibc/4B322204B4F59D770680FE4D7A565DDC3F37BFF035474B717476C66A4F83DD72",
+            "exponent": 0,
+            "aliases": [
+              "aevmos"
+            ]
+          },
+          {
+            "denom": "evmos",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/4B322204B4F59D770680FE4D7A565DDC3F37BFF035474B717476C66A4F83DD72",
+        "name": "Evmos",
+        "display": "evmos",
+        "symbol": "EVMOS",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png"
+        },
+        "coingecko_id": "evmos",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-34",
+              "base_denom": "aevmos",
+              "chain_name": "evmos"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Osmosis",
         "denom_units": [
           {
@@ -23546,7 +24690,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "base": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
-        "name": "Cosmos",
+        "name": "Cosmos Hub Atom",
         "display": "atom",
         "symbol": "ATOM",
         "logo_URIs": {

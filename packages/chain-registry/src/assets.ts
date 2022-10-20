@@ -1287,7 +1287,7 @@ const assets: AssetList[] = [
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
         },
-        coingecko_id: 'axelar-network'
+        coingecko_id: 'axelar'
       },
       {
         description: "Circle's stablecoin on Axelar",
@@ -2593,7 +2593,7 @@ const assets: AssetList[] = [
           }
         ],
         base: 'uatom',
-        name: 'Cosmos',
+        name: 'Cosmos Hub Atom',
         display: 'atom',
         symbol: 'ATOM',
         logo_URIs: {
@@ -3138,7 +3138,7 @@ const assets: AssetList[] = [
           },
           {
             denom: 'pstake',
-            exponent: 6
+            exponent: 18
           }
         ],
         base: 'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006',
@@ -3765,6 +3765,55 @@ const assets: AssetList[] = [
         }
       },
       {
+        description: 'The native token cw20 for MuseDAO on Juno Chain',
+        type_asset: 'cw20',
+        address:
+          'juno1p8x807f6h222ur0vssqy3qk6mcpa40gw2pchquz5atl935t7kvyq894ne3',
+        denom_units: [
+          {
+            denom:
+              'cw20:juno1p8x807f6h222ur0vssqy3qk6mcpa40gw2pchquz5atl935t7kvyq894ne3',
+            exponent: 0
+          },
+          {
+            denom: 'muse',
+            exponent: 6
+          }
+        ],
+        base: 'cw20:juno1p8x807f6h222ur0vssqy3qk6mcpa40gw2pchquz5atl935t7kvyq894ne3',
+        name: 'MuseDAO',
+        display: 'muse',
+        symbol: 'MUSE',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/muse.png'
+        }
+      },
+      {
+        description: 'The native token cw20 for Loop Finance on Juno Chain',
+        type_asset: 'cw20',
+        address:
+          'juno1qsrercqegvs4ye0yqg93knv73ye5dc3prqwd6jcdcuj8ggp6w0us66deup',
+        denom_units: [
+          {
+            denom:
+              'cw20:juno1qsrercqegvs4ye0yqg93knv73ye5dc3prqwd6jcdcuj8ggp6w0us66deup',
+            exponent: 0
+          },
+          {
+            denom: 'loop',
+            exponent: 6
+          }
+        ],
+        base: 'cw20:juno1qsrercqegvs4ye0yqg93knv73ye5dc3prqwd6jcdcuj8ggp6w0us66deup',
+        name: 'Loop Finance',
+        display: 'loop',
+        symbol: 'LOOP',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/loop.png'
+        },
+        coingecko_id: 'loop'
+      },
+      {
         description: 'The native token cw20 for Neta on Juno Chain',
         type_asset: 'cw20',
         address:
@@ -3989,6 +4038,29 @@ const assets: AssetList[] = [
         coingecko_id: 'kujira',
         logo_URIs: {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png'
+        }
+      },
+      {
+        description:
+          'The native over-collateralized stablecoin from the Kujira chain.',
+        denom_units: [
+          {
+            denom:
+              'factory/kujira1qk00h5atutpsv900x202pxx42npjr9thg58dnqpa72f2p7m2luase444a7/uusk',
+            exponent: 0
+          },
+          {
+            denom: 'usk',
+            exponent: 6
+          }
+        ],
+        base: 'factory/kujira1qk00h5atutpsv900x202pxx42npjr9thg58dnqpa72f2p7m2luase444a7/uusk',
+        name: 'USK',
+        display: 'USK',
+        symbol: 'USK',
+        coingecko_id: 'usk',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.png'
         }
       }
     ]
@@ -5065,6 +5137,36 @@ const assets: AssetList[] = [
         logo_URIs: {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.svg'
+        },
+        coingecko_id: ''
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'teritori',
+    assets: [
+      {
+        description:
+          'Tori token (TORI) is the Teritoti Network’s native utility token, used as the primary means to govern, secure the blockchain, incentivize ecosystem contributors and use the various Teritori dApp features.',
+        denom_units: [
+          {
+            denom: 'utori',
+            exponent: 0,
+            aliases: []
+          },
+          {
+            denom: 'tori',
+            exponent: 6,
+            aliases: []
+          }
+        ],
+        base: 'utori',
+        name: 'Teritori',
+        display: 'tori',
+        symbol: 'TORI',
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/tori.svg'
         },
         coingecko_id: ''
       }
@@ -10050,6 +10152,33 @@ const assets: AssetList[] = [
           png: 'https://defitech-logo.s3.amazonaws.com/Final+Logo+Saage.png',
           svg: 'https://defitech-logo.s3.amazonaws.com/Logo+Effects+edited.svg'
         }
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_name: 'stargazetestnet',
+    assets: [
+      {
+        description: 'The native token of Stargaze',
+        denom_units: [
+          {
+            denom: 'ustars',
+            exponent: 0
+          },
+          {
+            denom: 'stars',
+            exponent: 6
+          }
+        ],
+        base: 'ustars',
+        name: 'Stargaze',
+        display: 'stars',
+        symbol: 'STARS',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png'
+        },
+        coingecko_id: 'stargaze'
       }
     ]
   },

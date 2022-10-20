@@ -98,7 +98,7 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
       },
-      coingecko_id: 'axelar-network',
+      coingecko_id: 'axelar',
       traces: [
         {
           type: 'ibc',
@@ -1458,7 +1458,7 @@ const asset_list: AssetList = {
         }
       ],
       base: 'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9',
-      name: 'Cosmos',
+      name: 'Cosmos Hub Atom',
       display: 'atom',
       symbol: 'ATOM',
       logo_URIs: {

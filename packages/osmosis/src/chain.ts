@@ -12,10 +12,6 @@ const chain: Chain = {
   bech32_prefix: 'osmo',
   daemon_name: 'osmosisd',
   node_home: '$HOME/.osmosisd',
-  genesis: {
-    genesis_url:
-      'https://github.com/osmosis-labs/networks/raw/main/osmosis-1/genesis.json'
-  },
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
@@ -38,18 +34,20 @@ const chain: Chain = {
   },
   codebase: {
     git_repo: 'https://github.com/osmosis-labs/osmosis',
-    recommended_version: '11.0.0',
-    compatible_versions: ['11.0.0'],
+    recommended_version: 'v12.2.0',
+    compatible_versions: ['v12.2.0'],
     binaries: {
       'linux/amd64':
-        'https://github.com/osmosis-labs/osmosis/releases/download/v11.0.0/osmosisd-11.0.0-linux-amd64?checksum=sha256:d01423cf847b7f95a94ade8811bbf6dd9ec5938d46af0a14bc62caaaa7b7143e',
+        'https://github.com/osmosis-labs/osmosis/releases/download/v12.2.0/osmosisd-12.2.0-linux-amd64?checksum=sha256:44433f93946338b8cb167d9030ebbcfe924294d95d745026ada5dbe8f50d5010',
       'linux/arm64':
-        'https://github.com/osmosis-labs/osmosis/releases/download/v11.0.0/osmosisd-11.0.0-linux-arm64?checksum=sha256:375699e90e5b76fd3d7e7a9ab631b40badd97140136f361e6b3f06be3fbd863d'
+        'https://github.com/osmosis-labs/osmosis/releases/download/v12.2.0/osmosisd-12.2.0-linux-arm64?checksum=sha256:ef2c3d60156be5481534ecb33f9d94d73afa38a1b016e7e1c6d3fe10e3e69b3a'
     },
-    cosmos_sdk_version: '0.45',
+    cosmos_sdk_version: '0.46',
     tendermint_version: '0.34',
-    cosmwasm_version: '0.27',
+    cosmwasm_version: '0.28',
     cosmwasm_enabled: true,
+    ibc_go_version: '3.0.0',
+    ics_enabled: ['ics20-1'],
     genesis: {
       name: 'v3.1.0',
       genesis_url:
@@ -89,7 +87,13 @@ const chain: Chain = {
       {
         name: 'v11',
         tag: 'v11.0.0',
-        height: 5432450
+        height: 5432450,
+        next_version_name: 'v12'
+      },
+      {
+        name: 'v12',
+        tag: 'v12.1.0',
+        height: 6246000
       }
     ]
   },
@@ -134,6 +138,11 @@ const chain: Chain = {
         id: '20e1000e88125698264454a884812746c2eb4807',
         address: 'seeds.lavenderfive.com:12556',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        id: 'ebc272824924ea1a27ea3183dd0b9ba713494f83',
+        address: 'osmosis.mainnet.seed.autostake.net:26716',
+        provider: 'AutoStake.net'
       }
     ],
     persistent_peers: [
@@ -266,6 +275,11 @@ const chain: Chain = {
         id: '44a760a66071dae257c5c044be604219bfc3510c',
         address: '49.12.35.177:36656',
         provider: 'in3s.com'
+      },
+      {
+        id: 'ebc272824924ea1a27ea3183dd0b9ba713494f83',
+        address: 'osmosis.mainnet.peer.autostake.net:26716',
+        provider: 'AutoStake.net'
       }
     ]
   },
@@ -310,6 +324,14 @@ const chain: Chain = {
       {
         address: 'https://rpc.osmosis.interbloc.org',
         provider: 'Interbloc'
+      },
+      {
+        address: 'https://rpc.osmosis.silknodes.io',
+        provider: 'Silk Nodes'
+      },
+      {
+        address: 'https://osmosis.nodejumper.io',
+        provider: 'Nodejumper 🚀'
       }
     ],
     rest: [
@@ -350,6 +372,14 @@ const chain: Chain = {
         provider: 'Polkachu'
       },
       {
+        address: 'https://api.osmosis.silknodes.io',
+        provider: 'Silk Nodes'
+      },
+      {
+        address: 'https://osmosis.nodejumper.io:1317',
+        provider: 'Nodejumper 🚀'
+      },
+      {
         address: 'https://osmosis.stakesystems.io/',
         provider: 'stakesystems'
       }
@@ -370,6 +400,14 @@ const chain: Chain = {
       {
         address: 'osmosis-grpc.polkachu.com:12590',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://grpc.osmosis.silknodes.io',
+        provider: 'Silk Nodes'
+      },
+      {
+        address: 'https://osmosis.nodejumper.io:9090',
+        provider: 'Nodejumper 🚀'
       }
     ]
   },

@@ -4,22 +4,53 @@ const ibc: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'agoric',
-      client_id: '07-tendermint-0',
-      connection_id: 'connection-0'
+      client_id: '07-tendermint-11',
+      connection_id: 'connection-14'
     },
     chain_2: {
-      chain_name: 'cosmoshub',
-      client_id: '07-tendermint-898',
-      connection_id: 'connection-622'
+      chain_name: 'axelar',
+      client_id: '07-tendermint-69',
+      connection_id: 'connection-51'
     },
     channels: [
       {
         chain_1: {
-          channel_id: 'channel-0',
+          channel_id: 'channel-9',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-374',
+          channel_id: 'channel-41',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'agoric',
+      client_id: '07-tendermint-6',
+      connection_id: 'connection-8'
+    },
+    chain_2: {
+      chain_name: 'cosmoshub',
+      client_id: '07-tendermint-927',
+      connection_id: 'connection-649'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-5',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-405',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -1995,6 +2026,38 @@ const ibc: IBCInfo[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain_1: {
+      chain_name: 'cudos',
+      client_id: '07-tendermint-2084',
+      connection_id: 'connection-1626'
+    },
+    chain_2: {
+      chain_name: 'osmosis',
+      client_id: '07-tendermint-1',
+      connection_id: 'connection-1'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-1',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-298',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          dex: 'osmosis'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
       chain_name: 'decentr',
       client_id: '07-tendermint-6',
       connection_id: 'connection-1'
@@ -2270,6 +2333,37 @@ const ibc: IBCInfo[] = [
           status: 'live',
           preferred: true,
           properties: 'privacy'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'evmos',
+      client_id: '07-tendermint-88',
+      connection_id: 'connection-46'
+    },
+    chain_2: {
+      chain_name: 'tgrade',
+      client_id: '07-tendermint-8',
+      connection_id: 'connection-11'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-34',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-9',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }
     ]
@@ -3111,22 +3205,22 @@ const ibc: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'lambda',
-      client_id: '07-tendermint-0',
-      connection_id: 'connection-1'
+      client_id: '07-tendermint-6',
+      connection_id: 'connection-5'
     },
     chain_2: {
       chain_name: 'osmosis',
-      client_id: '07-tendermint-2171',
-      connection_id: 'connection-1690'
+      client_id: '07-tendermint-2217',
+      connection_id: 'connection-1733'
     },
     channels: [
       {
         chain_1: {
-          channel_id: 'channel-1',
+          channel_id: 'channel-2',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-350',
+          channel_id: 'channel-378',
           port_id: 'transfer'
         },
         ordering: 'unordered',

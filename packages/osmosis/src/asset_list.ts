@@ -171,7 +171,7 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
       },
-      coingecko_id: 'axelar-network',
+      coingecko_id: 'axelar',
       traces: [
         {
           type: 'ibc',
@@ -1711,7 +1711,7 @@ const asset_list: AssetList = {
         }
       ],
       base: 'ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2',
-      name: 'Cosmos',
+      name: 'Cosmos Hub Atom',
       display: 'atom',
       symbol: 'ATOM',
       logo_URIs: {
@@ -1841,6 +1841,44 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-5'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native token of the Cudos blockchain',
+      denom_units: [
+        {
+          denom:
+            'ibc/E09ED39F390EC51FA9F3F69BEA08B5BBE6A48B3057B2B1C3467FAAE9E58B021B',
+          exponent: 0,
+          aliases: ['acudos']
+        },
+        {
+          denom: 'cudos',
+          exponent: 18,
+          aliases: []
+        }
+      ],
+      base: 'ibc/E09ED39F390EC51FA9F3F69BEA08B5BBE6A48B3057B2B1C3467FAAE9E58B021B',
+      name: 'Cudos',
+      display: 'cudos',
+      symbol: 'CUDOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg'
+      },
+      coingecko_id: 'cudos',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'acudos',
+            chain_name: 'cudos'
+          },
+          chain: {
+            channel_id: 'channel-298'
           }
         }
       ]
@@ -2266,7 +2304,7 @@ const asset_list: AssetList = {
         },
         {
           denom: 'pstake',
-          exponent: 6
+          exponent: 18
         }
       ],
       base: 'ibc/CBC60FC96BD21708D3B60B2E4AD949E0DA07C67EFE6A8D463298806CD507A9CF',
@@ -2741,11 +2779,51 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description:
+        'The native over-collateralized stablecoin from the Kujira chain.',
+      denom_units: [
+        {
+          denom:
+            'ibc/AADDBDAF45AA220B627662682B48E14F1F830BD46D5A4C4FFEFCCEB9D6050854',
+          exponent: 0,
+          aliases: [
+            'factory/kujira1qk00h5atutpsv900x202pxx42npjr9thg58dnqpa72f2p7m2luase444a7/uusk'
+          ]
+        },
+        {
+          denom: 'usk',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/AADDBDAF45AA220B627662682B48E14F1F830BD46D5A4C4FFEFCCEB9D6050854',
+      name: 'USK',
+      display: 'USK',
+      symbol: 'USK',
+      coingecko_id: 'usk',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'factory/kujira1qk00h5atutpsv900x202pxx42npjr9thg58dnqpa72f2p7m2luase444a7/uusk',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-259'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Lambda',
       denom_units: [
         {
           denom:
-            'ibc/0EA19B60FF5346E5A5C6830893DE11489308876444FC3352328F49CC03908274',
+            'ibc/80825E8F04B12D914ABEADB1F4D39C04755B12C8402F6876EE3168450C0A90BB',
           exponent: 0,
           aliases: ['ulamb']
         },
@@ -2754,7 +2832,7 @@ const asset_list: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/0EA19B60FF5346E5A5C6830893DE11489308876444FC3352328F49CC03908274',
+      base: 'ibc/80825E8F04B12D914ABEADB1F4D39C04755B12C8402F6876EE3168450C0A90BB',
       name: 'Lambda',
       display: 'lamb',
       symbol: 'LAMB',
@@ -2766,12 +2844,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-1',
+            channel_id: 'channel-2',
             base_denom: 'ulamb',
             chain_name: 'lambda'
           },
           chain: {
-            channel_id: 'channel-350'
+            channel_id: 'channel-378'
           }
         }
       ]
@@ -5568,6 +5646,93 @@ const asset_list: AssetList = {
             channel_id: 'channel-47',
             base_denom:
               'cw20:juno19rqljkh95gh40s7qdx40ksx3zq5tm4qsmsrdz9smw668x9zdr3lqtg33mf',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native token cw20 for MuseDAO on Juno Chain',
+      type_asset: 'cw20',
+      address:
+        'juno1p8x807f6h222ur0vssqy3qk6mcpa40gw2pchquz5atl935t7kvyq894ne3',
+      denom_units: [
+        {
+          denom:
+            'ibc/6B982170CE024689E8DD0E7555B129B488005130D4EDA426733D552D10B36D8F',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1p8x807f6h222ur0vssqy3qk6mcpa40gw2pchquz5atl935t7kvyq894ne3'
+          ]
+        },
+        {
+          denom: 'muse',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/6B982170CE024689E8DD0E7555B129B488005130D4EDA426733D552D10B36D8F',
+      name: 'MuseDAO',
+      display: 'muse',
+      symbol: 'MUSE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/muse.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1p8x807f6h222ur0vssqy3qk6mcpa40gw2pchquz5atl935t7kvyq894ne3',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native token cw20 for Loop Finance on Juno Chain',
+      type_asset: 'cw20',
+      address:
+        'juno1qsrercqegvs4ye0yqg93knv73ye5dc3prqwd6jcdcuj8ggp6w0us66deup',
+      denom_units: [
+        {
+          denom:
+            'ibc/8D8F96DFFD16F5D079EED73C5110E937B37FBDA817F3E5680DB69E51FFBB4B7D',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1qsrercqegvs4ye0yqg93knv73ye5dc3prqwd6jcdcuj8ggp6w0us66deup'
+          ]
+        },
+        {
+          denom: 'loop',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/8D8F96DFFD16F5D079EED73C5110E937B37FBDA817F3E5680DB69E51FFBB4B7D',
+      name: 'Loop Finance',
+      display: 'loop',
+      symbol: 'LOOP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/loop.png'
+      },
+      coingecko_id: 'loop',
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1qsrercqegvs4ye0yqg93knv73ye5dc3prqwd6jcdcuj8ggp6w0us66deup',
             chain_name: 'juno'
           },
           chain: {
