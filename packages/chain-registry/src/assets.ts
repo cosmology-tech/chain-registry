@@ -9820,6 +9820,46 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../../assetlist.schema.json',
+    chain_name: 'cosmwasmtestnet',
+    assets: [
+      {
+        description: 'Fee Token',
+        denom_units: [
+          {
+            denom: 'umlg',
+            exponent: 0
+          },
+          {
+            denom: 'MLG',
+            exponent: 6
+          }
+        ],
+        base: 'umlg',
+        name: 'Malaga',
+        display: 'umlg',
+        symbol: 'MLG'
+      },
+      {
+        description: 'Staking Token',
+        denom_units: [
+          {
+            denom: 'uand',
+            exponent: 0
+          },
+          {
+            denom: 'AND',
+            exponent: 6
+          }
+        ],
+        base: 'uand',
+        name: 'Malaga Stake',
+        display: 'uand',
+        symbol: 'AND'
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
     chain_name: 'evmostestnet',
     assets: [
       {
@@ -9875,7 +9915,7 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../../assetlist.schema.json',
-    chain_id: 'imversed-test-1',
+    chain_name: 'imversedtestnet',
     assets: [
       {
         description:
@@ -9897,8 +9937,7 @@ const assets: AssetList[] = [
         display: 'imv',
         symbol: 'IMV',
         logo_URIs: {
-          png: 'https://s.imversed.com/images/ic_imversed2.png',
-          svg: 'https://s.imversed.com/images/ic_imversed2.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/imversedtestnet/images/imversed.svg'
         }
       },
       {
@@ -9926,8 +9965,7 @@ const assets: AssetList[] = [
           source_denom: 'nimv'
         },
         logo_URIs: {
-          png: 'https://s.imversed.com/images/ic_imversed2.png',
-          svg: 'https://s.imversed.com/images/ic_imversed2.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/imversedtestnet/images/imversed.svg'
         }
       }
     ]
@@ -10098,7 +10136,7 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../../assetlist.schema.json',
-    chain_id: 'saage-internal-testnet-1.3',
+    chain_name: 'saagetestnet',
     assets: [
       {
         description:
@@ -10120,8 +10158,8 @@ const assets: AssetList[] = [
         display: 'saage',
         symbol: 'SGE',
         logo_URIs: {
-          png: 'https://defitech-logo.s3.amazonaws.com/Final+Logo+Saage.png',
-          svg: 'https://defitech-logo.s3.amazonaws.com/Logo+Effects+edited.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/saagetestnet/images/saage.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/saagetestnet/images/saage.svg'
         }
       },
       {
@@ -10149,8 +10187,8 @@ const assets: AssetList[] = [
           source_denom: 'usaage'
         },
         logo_URIs: {
-          png: 'https://defitech-logo.s3.amazonaws.com/Final+Logo+Saage.png',
-          svg: 'https://defitech-logo.s3.amazonaws.com/Logo+Effects+edited.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/saagetestnet/images/saage.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/saagetestnet/images/saage.svg'
         }
       }
     ]

@@ -73,8 +73,9 @@ export interface Asset {
     display: string;
     symbol: string;
     logo_URIs?: {
-        svg?: string;
         png?: string;
+        svg?: string;
+        jpeg?: string;
     };
     coingecko_id?: string;
     keywords?: string[];

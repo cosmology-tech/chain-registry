@@ -12,9 +12,6 @@ export interface Chain {
     key_algos?: string[];
     keywords?: string[];
     node_home?: string;
-    genesis?: {
-        genesis_url: string;
-    };
     slip44: number;
     logo_URIs?: {
         png?: string;
@@ -51,6 +48,8 @@ export interface Chain {
         tendermint_version?: string;
         cosmwasm_version?: string;
         cosmwasm_enabled?: boolean;
+        ibc_go_version?: string;
+        ics_enabled?: string[];
         genesis?: {
             tag?: string;
             name?: string;
