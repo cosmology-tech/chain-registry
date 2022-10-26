@@ -459,6 +459,11 @@ const chains: Chain[] = [
     },
     explorers: [
       {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/akash',
+        tx_page: 'https://ezstaking.tools/akash/txs/${txHash}'
+      },
+      {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/akash',
         tx_page: 'https://www.mintscan.io/akash/txs/${txHash}'
@@ -670,12 +675,12 @@ const chains: Chain[] = [
         },
         {
           id: 'f073d57107004268a7c0f1e24433401f892eff94',
-          address: 'sentry-1.asset-mantle.ezstaking.io:26229',
+          address: 'sentry-1.asset-mantle.ezstaking.xyz:26229',
           provider: 'EZStaking.io'
         },
         {
           id: '68692140af51d0c41163340f6f1222eec914c18f',
-          address: 'sentry-2.asset-mantle.ezstaking.io:26746',
+          address: 'sentry-2.asset-mantle.ezstaking.xyz:26746',
           provider: 'EZStaking.io'
         },
         {
@@ -887,10 +892,6 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc.asset-mantle.ezstaking.io',
-          provider: 'EZStaking.io'
-        },
-        {
           address: 'https://rpc.assetmantle.nodestake.top',
           provider: 'NodeStake'
         },
@@ -911,10 +912,6 @@ const chains: Chain[] = [
         {
           address: 'https://rest-assetmantle.ecostake.com',
           provider: 'ecostake'
-        },
-        {
-          address: 'https://lcd.asset-mantle.ezstaking.io',
-          provider: 'EZStaking.io'
         },
         {
           address: 'https://api.assetmantle.nodestake.top',
@@ -953,6 +950,11 @@ const chains: Chain[] = [
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/assetmantle',
+        tx_page: 'https://ezstaking.tools/assetmantle/txs/${txHash}'
+      },
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/asset-mantle',
@@ -1081,6 +1083,10 @@ const chains: Chain[] = [
         {
           address: 'https://axelar-rpc.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://axelar.rpc.stakin.com',
+          provider: 'Stakin'
         }
       ],
       rest: [
@@ -1111,6 +1117,10 @@ const chains: Chain[] = [
         {
           address: 'https://axelar-api.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://axelar.rest.stakin.com',
+          provider: 'Stakin'
         }
       ],
       grpc: [
@@ -1137,6 +1147,10 @@ const chains: Chain[] = [
         {
           address: 'axelar-grpc.polkachu.com:15190',
           provider: 'Polkachu'
+        },
+        {
+          address: 'axelar.grpc.stakin.com:443',
+          provider: 'Stakin'
         }
       ],
       'grpc-web': [
@@ -1591,6 +1605,11 @@ const chains: Chain[] = [
     },
     explorers: [
       {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/bitcanna',
+        tx_page: 'https://ezstaking.tools/bitcanna/txs/${txHash}'
+      },
+      {
         kind: 'forbole',
         url: 'https://cosmos-explorer.bitcanna.io',
         tx_page: 'https://cosmos-explorer.bitcanna.io/transactions/${txHash}'
@@ -1763,6 +1782,10 @@ const chains: Chain[] = [
         {
           address: 'https://bitsong-rpc.panthea.eu',
           provider: 'Panthea EU'
+        },
+        {
+          address: 'https://rpc-bitsong.architectnodes.com',
+          provider: 'Architect Nodes'
         }
       ],
       rest: [
@@ -1805,6 +1828,10 @@ const chains: Chain[] = [
         {
           address: 'https://bitsong-api.panthea.eu',
           provider: 'Panthea EU'
+        },
+        {
+          address: 'https://rest-bitsong.architectnodes.com',
+          provider: 'Architect Nodes'
         }
       ],
       grpc: [
@@ -1823,6 +1850,11 @@ const chains: Chain[] = [
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/bitsong',
+        tx_page: 'https://ezstaking.tools/bitsong/txs/${txHash}'
+      },
       {
         kind: 'ping-pub',
         url: 'https://ping.pub/bitsong',
@@ -2574,10 +2606,6 @@ const chains: Chain[] = [
           provider: 'cheqd'
         },
         {
-          address: 'https://rpc.cheqd.ezstaking.io',
-          provider: 'EZStaking.io'
-        },
-        {
           address: 'https://cheqd-rpc.lavenderfive.com:443',
           provider: 'Lavender.Five Nodes'
         },
@@ -2598,10 +2626,6 @@ const chains: Chain[] = [
         {
           address: 'https://cheqd-api.lavenderfive.com:443',
           provider: 'Lavender.Five Nodes'
-        },
-        {
-          address: 'https://lcd.cheqd.ezstaking.io',
-          provider: 'EZStaking.io'
         },
         {
           address: 'https://api-cheqd-ia.cosmosia.notional.ventures/',
@@ -2632,6 +2656,11 @@ const chains: Chain[] = [
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/cheqd',
+        tx_page: 'https://ezstaking.tools/cheqd/txs/${txHash}'
+      },
       {
         kind: 'bigdipper',
         url: 'https://explorer.cheqd.io/',
@@ -2664,7 +2693,7 @@ const chains: Chain[] = [
     chain_id: 'chihuahua-1',
     bech32_prefix: 'chihuahua',
     daemon_name: 'chihuahuad',
-    node_home: '$HOME/.chihuahua',
+    node_home: '$HOME/.chihuahuad',
     fees: {
       fee_tokens: [
         {
@@ -2685,8 +2714,8 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/ChihuahuaChain/chihuahua/',
-      recommended_version: 'v2.2.2',
-      compatible_versions: ['v2.2.2'],
+      recommended_version: 'v3.0.0',
+      compatible_versions: ['v3.0.0'],
       genesis: {
         genesis_url:
           'https://raw.githubusercontent.com/ChihuahuaChain/chihuahua/main/mainnet/genesis.json'
@@ -2707,6 +2736,11 @@ const chains: Chain[] = [
           id: '20e1000e88125698264454a884812746c2eb4807',
           address: 'seeds.lavenderfive.com:12956',
           provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          id: '77cbb35d1df17f48a42e9f157f12f55b691e9f5e',
+          address: 'seeds.goldenratiostaking.net:1620',
+          provider: 'Golden Ratio Staking'
         }
       ],
       persistent_peers: [
@@ -2773,6 +2807,10 @@ const chains: Chain[] = [
         {
           address: 'https://chihuahua-rpc.lavenderfive.com/',
           provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          address: 'https://rpc-chihuahua.goldenratiostaking.net',
+          provider: 'Golden Ratio Staking'
         }
       ],
       rest: [
@@ -3064,10 +3102,6 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc.comdex.ezstaking.io',
-          provider: 'EZStaking.io'
-        },
-        {
           address: 'https://rpc-comdex-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
@@ -3096,10 +3130,6 @@ const chains: Chain[] = [
         {
           address: 'https://api-comdex.zenchainlabs.io/',
           provider: 'zenchainlabs'
-        },
-        {
-          address: 'https://lcd.comdex.ezstaking.io',
-          provider: 'EZStaking.io'
         },
         {
           address: 'https://api-comdex-ia.cosmosia.notional.ventures/',
@@ -3138,6 +3168,11 @@ const chains: Chain[] = [
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/comdex',
+        tx_page: 'https://ezstaking.tools/comdex/txs/${txHash}'
+      },
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/comdex',
@@ -3438,6 +3473,11 @@ const chains: Chain[] = [
           id: '64bd8eaf08b05f17ccd88425f80b59ab48934004',
           address: '157.90.18.35:26656',
           provider: 'in3s.com'
+        },
+        {
+          id: '1da54d20c7339713f1d6d28dd2117087dd33d0ca',
+          address: 'cosmos-seed.icycro.org:26656',
+          provider: 'IcyCRO 🧊'
         }
       ]
     },
@@ -3488,10 +3528,6 @@ const chains: Chain[] = [
           provider: 'Golden Ratio Staking'
         },
         {
-          address: 'https://rpc.cosmos.ezstaking.io',
-          provider: 'EZStaking.io'
-        },
-        {
           address: 'https://rpc-cosmoshub-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
@@ -3514,6 +3550,14 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.cosmos.dragonstake.io',
           provider: 'DragonStake'
+        },
+        {
+          address: 'https://cosmoshub.rpc.stakin.com',
+          provider: 'Stakin'
+        },
+        {
+          address: 'https://cosmos-rpc.icycro.org',
+          provider: 'IcyCRO 🧊'
         }
       ],
       rest: [
@@ -3540,10 +3584,6 @@ const chains: Chain[] = [
         {
           address: 'https://api.cosmoshub.pupmos.network',
           provider: 'PUPMØS'
-        },
-        {
-          address: 'https://lcd.cosmos.ezstaking.io',
-          provider: 'EZStaking.io'
         },
         {
           address: 'https://api-cosmoshub-ia.cosmosia.notional.ventures/',
@@ -3574,12 +3614,16 @@ const chains: Chain[] = [
           provider: 'DragonStake'
         },
         {
-          address: 'https://rest-cosmoshub.goldenratiostaking.net:1317',
+          address: 'https://rest-cosmoshub.goldenratiostaking.net',
           provider: 'Golden Ratio Staking'
         },
         {
           address: 'https://rest-cosmoshub.architectnodes.com',
           provider: 'Architect Nodes'
+        },
+        {
+          address: 'https://cosmoshub.rest.stakin.com',
+          provider: 'Stakin'
         }
       ],
       grpc: [
@@ -3614,10 +3658,19 @@ const chains: Chain[] = [
         {
           address: 'https://grpc.cosmos.dragonstake.io',
           provider: 'DragonStake'
+        },
+        {
+          address: 'cosmoshub.grpc.stakin.com:443',
+          provider: 'Stakin'
         }
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/cosmoshub',
+        tx_page: 'https://ezstaking.tools/cosmoshub/txs/${txHash}'
+      },
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/cosmos',
@@ -3893,6 +3946,11 @@ const chains: Chain[] = [
           id: '337377dcda43d79c537d2c4d93ad3b698ce9452e',
           address: 'bd-cronos-mainnet-seed-node-01.bdnodes.net:26656',
           provider: 'Blockdaemon.com'
+        },
+        {
+          id: 'abedfe94dd5731e9750e045ca8d8e40aa6d3c60b',
+          address: 'seed.cronos.jerrychong.com:26656',
+          provider: "Jerry's Pool"
         }
       ],
       persistent_peers: [
@@ -4539,10 +4597,6 @@ const chains: Chain[] = [
           provider: 'desmos'
         },
         {
-          address: 'https://rpc.desmos.ezstaking.io',
-          provider: 'EZStaking.io'
-        },
-        {
           address: 'https://desmos-rpc.lavenderfive.com/',
           provider: 'Lavender.Five Nodes 🐝'
         },
@@ -4567,10 +4621,6 @@ const chains: Chain[] = [
         {
           address: 'https://api.mainnet.desmos.network',
           provider: 'desmos'
-        },
-        {
-          address: 'https://lcd.desmos.ezstaking.io',
-          provider: 'EZStaking.io'
         },
         {
           address: 'https://desmos-api.lavenderfive.com/',
@@ -4605,6 +4655,11 @@ const chains: Chain[] = [
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/desmos',
+        tx_page: 'https://ezstaking.tools/desmos/txs/${txHash}'
+      },
       {
         kind: 'big-dipper',
         url: 'https://explorer.desmos.network',
@@ -5124,10 +5179,6 @@ const chains: Chain[] = [
           provider: 'BadgerBite'
         },
         {
-          address: 'https://rpc.emoney.ezstaking.io',
-          provider: 'EZStaking.io'
-        },
-        {
           address: 'https://rpc-emoney-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
@@ -5150,10 +5201,6 @@ const chains: Chain[] = [
           provider: 'e-Money'
         },
         {
-          address: 'https://lcd.emoney.ezstaking.io',
-          provider: 'EZStaking.io'
-        },
-        {
           address: 'https://api-emoney-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
@@ -5174,6 +5221,11 @@ const chains: Chain[] = [
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/emoney',
+        tx_page: 'https://ezstaking.tools/emoney/txs/${txHash}'
+      },
       {
         kind: 'bigdipper',
         url: 'https://emoney.bigdipper.live/',
@@ -5348,6 +5400,11 @@ const chains: Chain[] = [
           id: 'ebc272824924ea1a27ea3183dd0b9ba713494f83',
           address: 'evmos.mainnet.seed.autostake.net:26736',
           provider: 'AutoStake.net'
+        },
+        {
+          id: '40f4fac63da8b1ce8f850b0fa0f79b2699d2ce72',
+          address: 'seed.evmos.jerrychong.com:26656',
+          provider: "Jerry's Pool"
         }
       ],
       persistent_peers: [
@@ -5417,10 +5474,6 @@ const chains: Chain[] = [
           provider: 'Blockdaemon'
         },
         {
-          address: 'https://rpc.evmos.ezstaking.io',
-          provider: 'EZStaking.io'
-        },
-        {
           address: 'https://rpc-evmos-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
         },
@@ -5473,8 +5526,12 @@ const chains: Chain[] = [
           provider: 'TC Network'
         },
         {
-          address: 'https://rpc-evmos.goldenratiostaking.net',
-          provider: 'Golden Ratio Staking'
+          address: 'https://evmos.rpc.stakin.com',
+          provider: 'Stakin'
+        },
+        {
+          address: 'https://rpc-evmos.architectnodes.com',
+          provider: 'Architect Nodes'
         }
       ],
       rest: [
@@ -5489,10 +5546,6 @@ const chains: Chain[] = [
         {
           address: 'https://rest.bd.evmos.org:1317',
           provider: 'Blockdaemon'
-        },
-        {
-          address: 'https://lcd.evmos.ezstaking.io',
-          provider: 'EZStaking.io'
         },
         {
           address: 'https://evmos-api.lavenderfive.com:443',
@@ -5545,6 +5598,14 @@ const chains: Chain[] = [
         {
           address: 'https://rest.evmos.tcnetwork.io',
           provider: 'TC Network'
+        },
+        {
+          address: 'https://evmos.rest.stakin.com',
+          provider: 'Stakin'
+        },
+        {
+          address: 'https://rest-evmos.architectnodes.com',
+          provider: 'Architect Nodes'
         }
       ],
       grpc: [
@@ -5595,6 +5656,10 @@ const chains: Chain[] = [
         {
           address: 'https://grpc.evmos.silentvalidator.com/',
           provider: 'silent'
+        },
+        {
+          address: 'evmos.grpc.stakin.com:443',
+          provider: 'Stakin'
         }
       ],
       'evm-http-jsonrpc': [
@@ -5633,10 +5698,19 @@ const chains: Chain[] = [
         {
           address: 'https://jsonrpc-evmos.goldenratiostaking.net',
           provider: 'Golden Ratio Staking'
+        },
+        {
+          address: 'https://evmosevm.rpc.stakin.com',
+          provider: 'Stakin'
         }
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/evmos',
+        tx_page: 'https://ezstaking.tools/evmos/txs/${txHash}'
+      },
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/evmos',
@@ -5914,6 +5988,11 @@ const chains: Chain[] = [
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/firmachain',
+        tx_page: 'https://ezstaking.tools/firmachain/txs/${txHash}'
+      },
       {
         kind: 'big-dipper',
         url: 'https://explorer.firmachain.dev',
@@ -6309,10 +6388,6 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc.gravity-bridge.ezstaking.io',
-          provider: 'EZStaking.io'
-        },
-        {
           address: 'https://rpc-gravitybridge-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
@@ -6329,10 +6404,6 @@ const chains: Chain[] = [
         {
           address: 'https://gravitychain.io:1317',
           provider: 'althea'
-        },
-        {
-          address: 'https://lcd.gravity-bridge.ezstaking.io',
-          provider: 'EZStaking.io'
         },
         {
           address: 'https://api-gravitybridge-ia.cosmosia.notional.ventures/',
@@ -6379,6 +6450,11 @@ const chains: Chain[] = [
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/gravitybridge',
+        tx_page: 'https://ezstaking.tools/gravitybridge/txs/${txHash}'
+      },
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/gravity-bridge',
@@ -6455,22 +6531,18 @@ const chains: Chain[] = [
         },
         {
           id: '3a8cfcbaac7d102e9cfad31f856e1852be2125f3',
-          address: 'sentry-1.idep.ezstaking.io:26756',
+          address: 'sentry-1.idep.ezstaking.xyz:26756',
           provider: 'EZStaking.io'
         },
         {
           id: '32a1a93033968e391266484cd4896dfc9b326e4c',
-          address: 'sentry-2.idep.ezstaking.io:26789',
+          address: 'sentry-2.idep.ezstaking.xyz:26789',
           provider: 'EZStaking.io'
         }
       ]
     },
     apis: {
       rpc: [
-        {
-          address: 'https://rpc.idep.ezstaking.io',
-          provider: 'EZStaking.io'
-        },
         {
           address: 'https://rpc.idep.nodestake.top',
           provider: 'NodeStake'
@@ -6481,10 +6553,6 @@ const chains: Chain[] = [
         }
       ],
       rest: [
-        {
-          address: 'https://lcd.idep.ezstaking.io',
-          provider: 'EZStaking.io'
-        },
         {
           address: 'https://api.idep.nodestake.top',
           provider: 'NodeStake'
@@ -6506,6 +6574,11 @@ const chains: Chain[] = [
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/idep',
+        tx_page: 'https://ezstaking.tools/idep/txs/${txHash}'
+      },
       {
         kind: 'chadscan',
         url: 'https://chadscan.com',
@@ -6594,10 +6667,6 @@ const chains: Chain[] = [
           provider: 'ixoworld'
         },
         {
-          address: 'https://rpc.ixo.ezstaking.io',
-          provider: 'EZStaking.io'
-        },
-        {
           address: 'https://rpc-ixo-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
@@ -6624,10 +6693,6 @@ const chains: Chain[] = [
           provider: 'ixoworld'
         },
         {
-          address: 'https://lcd.ixo.ezstaking.io',
-          provider: 'EZStaking.io'
-        },
-        {
           address: 'https://api-ixo-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
@@ -6648,6 +6713,11 @@ const chains: Chain[] = [
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/impacthub',
+        tx_page: 'https://ezstaking.tools/impacthub/txs/${txHash}'
+      },
       {
         kind: 'bigdipper',
         url: 'https://blockscan.ixo.world',
@@ -6953,6 +7023,11 @@ const chains: Chain[] = [
     },
     explorers: [
       {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/irisnet',
+        tx_page: 'https://ezstaking.tools/irisnet/txs/${txHash}'
+      },
+      {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/iris',
         tx_page: 'https://www.mintscan.io/iris/txs/${txHash}'
@@ -7036,6 +7111,11 @@ const chains: Chain[] = [
           id: '20e1000e88125698264454a884812746c2eb4807',
           address: 'seeds.lavenderfive.com:12656',
           provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          id: 'ea67180befe4d9ca71142d21ada8ff58cc08f71c',
+          address: 'seeds.goldenratiostaking.net:1627',
+          provider: 'Golden Ratio Staking'
         }
       ],
       persistent_peers: [
@@ -7108,10 +7188,6 @@ const chains: Chain[] = [
           provider: 'PUPMØS'
         },
         {
-          address: 'https://rpc.junomint.com',
-          provider: 'EZStaking.io'
-        },
-        {
           address: 'https://rpc-juno-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
@@ -7134,6 +7210,18 @@ const chains: Chain[] = [
         {
           address: 'https://juno.nodejumper.io',
           provider: 'Nodejumper 🚀'
+        },
+        {
+          address: 'https://juno.rpc.stakin.com',
+          provider: 'Stakin'
+        },
+        {
+          address: 'https://juno-rpc.icycro.org',
+          provider: 'IcyCRO 🧊'
+        },
+        {
+          address: 'https://rpc-juno.goldenratiostaking.net',
+          provider: 'Golden Ratio Staking'
         }
       ],
       rest: [
@@ -7156,10 +7244,6 @@ const chains: Chain[] = [
         {
           address: 'https://api.juno.pupmos.network',
           provider: 'PUPMØS'
-        },
-        {
-          address: 'https://lcd.junomint.com',
-          provider: 'EZStaking.io'
         },
         {
           address: 'https://api-juno-ia.cosmosia.notional.ventures/',
@@ -7188,6 +7272,10 @@ const chains: Chain[] = [
         {
           address: 'https://juno.nodejumper.io:1317',
           provider: 'Nodejumper 🚀'
+        },
+        {
+          address: 'https://juno.rest.stakin.com',
+          provider: 'Stakin'
         }
       ],
       grpc: [
@@ -7218,10 +7306,19 @@ const chains: Chain[] = [
         {
           address: 'https://juno.nodejumper.io:9090',
           provider: 'Nodejumper 🚀'
+        },
+        {
+          address: 'juno.grpc.stakin.com:443',
+          provider: 'Stakin'
         }
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/juno',
+        tx_page: 'https://ezstaking.tools/juno/txs/${txHash}'
+      },
       {
         kind: 'ping.pub',
         url: 'https://ping.pub/juno',
@@ -7502,10 +7599,6 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc.kichain.ezstaking.io',
-          provider: 'EZStaking.io'
-        },
-        {
           address: 'https://rpc-kichain-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
         },
@@ -7534,10 +7627,6 @@ const chains: Chain[] = [
         {
           address: 'https://api-mainnet.blockchain.ki',
           provider: 'kifoundation'
-        },
-        {
-          address: 'https://lcd.kichain.ezstaking.io',
-          provider: 'EZStaking.io'
         },
         {
           address: 'https://api-kichain-ia.cosmosia.notional.ventures/',
@@ -7592,6 +7681,11 @@ const chains: Chain[] = [
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/kichain',
+        tx_page: 'https://ezstaking.tools/kichain/txs/${txHash}'
+      },
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/ki-chain',
@@ -8602,6 +8696,11 @@ const chains: Chain[] = [
     },
     explorers: [
       {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/lumnetwork',
+        tx_page: 'https://ezstaking.tools/lumnetwork/txs/${txHash}'
+      },
+      {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/lum',
         tx_page: 'https://www.mintscan.io/lum/txs/${txHash}'
@@ -8905,6 +9004,11 @@ const chains: Chain[] = [
         {
           id: 'a67d7a4d90f84d5c67bfc196aac68441ba9484a6',
           address: '167.99.119.196:26659'
+        },
+        {
+          id: '34544f82960d2ff2b1defb7b04f097557f4183be',
+          address: 'seeds.goldenratiostaking.net:26656',
+          provider: 'Golden Ratio Staking'
         }
       ],
       persistent_peers: []
@@ -9389,6 +9493,11 @@ const chains: Chain[] = [
     },
     explorers: [
       {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/omniflixhub',
+        tx_page: 'https://ezstaking.tools/omniflixhub/txs/${txHash}'
+      },
+      {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/omniflix',
         tx_page: 'https://www.mintscan.io/omniflix/txs/${txHash}',
@@ -9581,22 +9690,22 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/osmosis-labs/osmosis',
-      recommended_version: 'v12.2.0',
-      compatible_versions: ['v12.2.0'],
+      recommended_version: '12.2.0',
+      compatible_versions: ['12.2.0'],
       binaries: {
         'linux/amd64':
-          'https://github.com/osmosis-labs/osmosis/releases/download/v12.2.0/osmosisd-12.2.0-linux-amd64?checksum=sha256:44433f93946338b8cb167d9030ebbcfe924294d95d745026ada5dbe8f50d5010',
+          'https://github.com/osmosis-labs/osmosis/releases/download/v12.1.0/osmosisd-12.1.0-linux-amd64?checksum=sha256:44433f93946338b8cb167d9030ebbcfe924294d95d745026ada5dbe8f50d5010',
         'linux/arm64':
-          'https://github.com/osmosis-labs/osmosis/releases/download/v12.2.0/osmosisd-12.2.0-linux-arm64?checksum=sha256:ef2c3d60156be5481534ecb33f9d94d73afa38a1b016e7e1c6d3fe10e3e69b3a'
+          'https://github.com/osmosis-labs/osmosis/releases/download/v12.1.0/osmosisd-12.1.0-linux-arm64?checksum=sha256:ef2c3d60156be5481534ecb33f9d94d73afa38a1b016e7e1c6d3fe10e3e69b3a'
       },
-      cosmos_sdk_version: '0.46',
+      cosmos_sdk_version: '0.45',
       tendermint_version: '0.34',
       cosmwasm_version: '0.28',
       cosmwasm_enabled: true,
-      ibc_go_version: '3.0.0',
+      ibc_go_version: '3.3.0',
       ics_enabled: ['ics20-1'],
       genesis: {
-        name: 'v3.1.0',
+        name: 'v3',
         genesis_url:
           'https://github.com/osmosis-labs/networks/raw/main/osmosis-1/genesis.json'
       },
@@ -9690,6 +9799,11 @@ const chains: Chain[] = [
           id: 'ebc272824924ea1a27ea3183dd0b9ba713494f83',
           address: 'osmosis.mainnet.seed.autostake.net:26716',
           provider: 'AutoStake.net'
+        },
+        {
+          id: '3cc024d1c760c9cd96e6413abaf3b36a8bdca58e',
+          address: 'seeds.goldenratiostaking.net:1630',
+          provider: 'Golden Ratio Staking'
         }
       ],
       persistent_peers: [
@@ -9879,6 +9993,18 @@ const chains: Chain[] = [
         {
           address: 'https://osmosis.nodejumper.io',
           provider: 'Nodejumper 🚀'
+        },
+        {
+          address: 'https://osmosis.rpc.stakin.com',
+          provider: 'Stakin'
+        },
+        {
+          address: 'https://rpc-osmosis.goldenratiostaking.net',
+          provider: 'Golden Ratio Staking'
+        },
+        {
+          address: 'https://osmosis-rpc.ibs.team',
+          provider: 'Inter Blockchain Services'
         }
       ],
       rest: [
@@ -9927,6 +10053,14 @@ const chains: Chain[] = [
           provider: 'Nodejumper 🚀'
         },
         {
+          address: 'https://osmosis.rest.stakin.com',
+          provider: 'Stakin'
+        },
+        {
+          address: 'https://osmosis-api.ibs.team',
+          provider: 'Inter Blockchain Services'
+        },
+        {
           address: 'https://osmosis.stakesystems.io/',
           provider: 'stakesystems'
         }
@@ -9955,10 +10089,19 @@ const chains: Chain[] = [
         {
           address: 'https://osmosis.nodejumper.io:9090',
           provider: 'Nodejumper 🚀'
+        },
+        {
+          address: 'osmosis.grpc.stakin.com:443',
+          provider: 'Stakin'
         }
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/osmosis',
+        tx_page: 'https://ezstaking.tools/osmosis/txs/${txHash}'
+      },
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/osmosis',
@@ -10022,8 +10165,8 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/medibloc/panacea-core',
-      recommended_version: 'v2.0.4',
-      compatible_versions: ['v2.0.3'],
+      recommended_version: 'v2.0.5',
+      compatible_versions: ['v2.0.5'],
       binaries: {},
       genesis: {
         genesis_url:
@@ -10781,18 +10924,18 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/rebuschain/rebus.core',
-      recommended_version: 'v0.2.0',
+      recommended_version: 'v0.2.3',
       compatible_versions: ['v0.2.0'],
       versions: [
         {
           name: 'v0.1.2',
           tag: 'v0.1.2',
           height: 0,
-          next_version_name: 'v0.2.0'
+          next_version_name: 'v0.2.3'
         },
         {
-          name: 'v0.2.0',
-          tag: 'v0.2.0',
+          name: 'v0.2.3',
+          tag: 'v0.2.3',
           height: 473400
         }
       ],
@@ -10955,6 +11098,11 @@ const chains: Chain[] = [
         kind: 'Brochain Explorer',
         url: 'https://explorer.brocha.in/rebus',
         tx_page: 'https://explorer.brocha.in/rebus/tx/${txHash}'
+      },
+      {
+        kind: 'tcnetwork',
+        url: 'https://rebus.tcnetwork.io',
+        tx_page: 'https://rebus.tcnetwork.io/transaction/${txHash}'
       }
     ]
   },
@@ -11222,6 +11370,11 @@ const chains: Chain[] = [
     },
     explorers: [
       {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/rizon',
+        tx_page: 'https://ezstaking.tools/rizon/txs/${txHash}'
+      },
+      {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/rizon',
         tx_page: 'https://www.mintscan.io/rizon/txs/${txHash}'
@@ -11387,6 +11540,11 @@ const chains: Chain[] = [
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/secretnetwork',
+        tx_page: 'https://ezstaking.tools/secretnetwork/txs/${txHash}'
+      },
       {
         kind: 'secret nodes',
         url: 'https://secretnodes.com/secret/chains/secret-4',
@@ -11715,6 +11873,11 @@ const chains: Chain[] = [
     },
     explorers: [
       {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/shentu',
+        tx_page: 'https://ezstaking.tools/shentu/txs/${txHash}'
+      },
+      {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/certik',
         tx_page: 'https://www.mintscan.io/certik/txs/${txHash}',
@@ -11924,6 +12087,11 @@ const chains: Chain[] = [
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/sifchain',
+        tx_page: 'https://ezstaking.tools/sifchain/txs/${txHash}'
+      },
       {
         kind: 'ping-pub',
         url: 'https://ping.pub/sifchain',
@@ -12279,7 +12447,7 @@ const chains: Chain[] = [
           provider: 'PUPMØS'
         },
         {
-          address: 'https://rpc.stargaze.ezstaking.io/',
+          address: 'https://rpc-stargaze.ezstaking.dev',
           provider: 'EZStaking.io'
         },
         {
@@ -12325,7 +12493,7 @@ const chains: Chain[] = [
           provider: 'PUPMØS'
         },
         {
-          address: 'https://api.stargaze.ezstaking.io/',
+          address: 'https://api-stargaze.ezstaking.dev',
           provider: 'EZStaking.io'
         },
         {
@@ -12385,6 +12553,11 @@ const chains: Chain[] = [
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/stargaze',
+        tx_page: 'https://ezstaking.tools/stargaze/txs/${txHash}'
+      },
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/stargaze/',
@@ -12848,6 +13021,10 @@ const chains: Chain[] = [
         {
           address: 'https://teritori.nodejumper.io',
           provider: 'Nodejumper 🚀'
+        },
+        {
+          address: 'https://teritori-rpc.ibs.team',
+          provider: 'Inter Blockchain Services'
         }
       ],
       rest: [
@@ -12878,6 +13055,10 @@ const chains: Chain[] = [
         {
           address: 'https://teritori.nodejumper.io:1317',
           provider: 'Nodejumper 🚀'
+        },
+        {
+          address: 'https://teritori-api.ibs.team',
+          provider: 'Inter Blockchain Services'
         }
       ],
       grpc: [
@@ -12904,6 +13085,11 @@ const chains: Chain[] = [
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://ezstaking.tools/teritori',
+        tx_page: 'https://ezstaking.tools/teritori/txs/${txHash}'
+      },
       {
         kind: 'ping.pub',
         url: 'https://explorer.teritori.com/teritori',
@@ -13374,6 +13560,78 @@ const chains: Chain[] = [
   },
   {
     $schema: '../../chain.schema.json',
+    chain_name: 'bitcannadev2',
+    status: 'live',
+    network_type: 'devnet',
+    pretty_name: 'BitCanna Devnet-6 SDK v0.46.x',
+    chain_id: 'bitcanna-dev-6',
+    bech32_prefix: 'bcna',
+    daemon_name: 'bcnad',
+    node_home: '$HOME/.bcna',
+    key_algos: ['secp256k1'],
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'ubcna',
+          fixed_min_gas_price: 0.001
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/BitCannaGlobal/bcna',
+      recommended_version: 'v2.0.0-beta',
+      compatible_versions: ['v2.0.0-beta'],
+      binaries: {
+        'linux/amd64':
+          'https://github.com/BitCannaGlobal/bcna/releases/download/v2.0.0-beta/bcna_linux_amd64.tar.gz'
+      },
+      genesis: {
+        genesis_url:
+          'https://raw.githubusercontent.com/BitCannaGlobal/testnet-bcna-cosmos/main/instructions/bitcanna-dev-6/genesis.json'
+      }
+    },
+    peers: {
+      persistent_peers: [
+        {
+          id: '85be53f499c803a10e73734018334049a7c4686d',
+          address: '212.227.151.105:26656'
+        },
+        {
+          id: 'fb88f165477b7c7a4fbb47bb6b01448c732a0e88',
+          address: '164.68.119.233:26656'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc-devnet-6.bitcanna.io/',
+          provider: 'bitcanna'
+        }
+      ],
+      grpc: [
+        {
+          address: 'http://devnet-6.bitcanna.io:9090',
+          provider: 'bitcanna'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://lcd-devnet-6.bitcanna.io/',
+          provider: 'bitcanna'
+        }
+      ]
+    },
+    explorers: [
+      {
+        url: 'https://explorer-devnet-6.bitcanna.io',
+        tx_page: 'https://explorer-devnet-6.bitcanna.io/tx/${txHash}'
+      }
+    ]
+  },
+  {
+    $schema: '../../chain.schema.json',
     chain_name: 'cheqdtestnet',
     status: 'live',
     network_type: 'testnet',
@@ -13693,6 +13951,82 @@ const chains: Chain[] = [
   },
   {
     $schema: '../../chain.schema.json',
+    chain_name: 'hypersigntestnet',
+    status: 'live',
+    network_type: 'testnet',
+    pretty_name: 'hypersign',
+    chain_id: 'jagrat',
+    bech32_prefix: 'hid',
+    daemon_name: 'hid-noded',
+    node_home: '$HOME/.hid-node',
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'uhid',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0,
+          average_gas_price: 0.02,
+          high_gas_price: 0.05
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/hypersign-protocol/hid-node',
+      recommended_version: 'v0.1.2',
+      compatible_versions: ['v0.1.2'],
+      binaries: {
+        'linux/amd64':
+          'https://github.com/hypersign-protocol/hid-node/releases/download/v0.1.2/hid-noded-0.1.2-linux-amd64.tar.gz',
+        'linux/arm64':
+          'https://github.com/hypersign-protocol/hid-node/releases/download/v0.1.2/hid-noded-0.1.2-linux-arm64.tar.gz',
+        'darwin/arm64':
+          'https://github.com/hypersign-protocol/hid-node/releases/download/v0.1.2/hid-noded-0.1.2-darwin-arm64.tar.gz'
+      },
+      genesis: {
+        genesis_url:
+          'https://raw.githubusercontent.com/hypersign-protocol/networks/master/testnet/jagrat/final_genesis.json'
+      }
+    },
+    peers: {
+      seeds: [],
+      persistent_peers: [
+        {
+          id: '7991e99ee8c05906a2161d8b47d826240da5c5d2',
+          address: 'network.jagart.hypersign.id:26656',
+          provider: 'hypersign'
+        },
+        {
+          id: '4625d4f9aa5034579134bdd551b6b54ee2b48c6a',
+          address: 'network.jagart.hypersign.id:26656',
+          provider: 'hypersign'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://jagrat.hypersign.id/rpc',
+          provider: 'hypersign'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://jagrat.hypersign.id/rest',
+          provider: 'hypersign'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'Ping Pub',
+        url: 'https://explorer.hypersign.id/hypersign-testnet',
+        tx_page: 'https://explorer.hypersign.id/hypersign-testnet/tx/${txHash}'
+      }
+    ]
+  },
+  {
+    $schema: '../../chain.schema.json',
     chain_name: 'imversedtestnet',
     status: 'live',
     network_type: 'testnet',
@@ -13764,6 +14098,164 @@ const chains: Chain[] = [
   },
   {
     $schema: '../../chain.schema.json',
+    chain_name: 'jackaltestnet',
+    chain_id: 'canine-1',
+    website: 'https://jackalprotocol.com',
+    pretty_name: 'Jackal',
+    status: 'live',
+    network_type: 'testnet',
+    bech32_prefix: 'jkl',
+    daemon_name: 'canined',
+    node_home: '$HOME/.canine',
+    key_algos: ['secp256k1'],
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'ujkl',
+          fixed_min_gas_price: 0
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/JackalLabs/canine-chain',
+      recommended_version: 'v0.0.0-alpha.2',
+      compatible_versions: ['v0.0.0-alpha.2'],
+      genesis: {
+        genesis_url:
+          'https://raw.githubusercontent.com/JackalLabs/woof/master/genesis/woof-final.json'
+      },
+      binaries: {
+        'linux/amd64':
+          'https://github.com/JackalLabs/canine-chain/releases/download/v0.0.0-alpha.2/canined-Linux',
+        'darwin/amd64':
+          'https://github.com/JackalLabs/canine-chain/releases/download/v0.0.0-alpha.2/canined-macOS'
+      }
+    },
+    peers: {
+      seeds: [
+        {
+          id: '052c498dd1cc603b4d32f772035b6a8ca902def3',
+          address: '23.88.73.211:26656'
+        },
+        {
+          id: '0bdeaaa237b41e3b964a027a110c6ab5bf561177',
+          address: '209.34.206.38:26656'
+        },
+        {
+          id: 'bf7ee27a24e7d5f45653206fbbda8c4b716b74b1',
+          address: '89.58.38.59:26656'
+        },
+        {
+          id: '9eecc498dd2542c862f5bfb84ed7d2e1e3d922ab',
+          address: '34.201.48.14:26656'
+        },
+        {
+          id: 'bf62b185eef3c185f8ebf81d5cf54bdc064b21d8',
+          address: '85.10.216.157:26656'
+        },
+        {
+          id: '43e800018a5b52ba119a5410ff45cbeb63182cc8',
+          address: '207.244.127.5:26656'
+        },
+        {
+          id: '942087a9665e8235f8037d0b9d2a3f8a8c3d562b',
+          address: '104.207.138.181:26656'
+        },
+        {
+          id: '9d0094606fe8748f1c06b494f7c0cbbd44808ec6',
+          address: '131.153.59.6:26656'
+        },
+        {
+          id: '6071fe2fc7e4f49caa4b1fd1cfe19007152312e0',
+          address: '34.76.87.33:26656'
+        },
+        {
+          id: '3f58d7c35ad55ef6cea94f7aa2ffe79df1c01768',
+          address: '78.107.253.133:26656'
+        },
+        {
+          id: '46cb18ca32ad7329cb82a10316087794ef12150f',
+          address: '185.107.57.74:26656'
+        }
+      ],
+      persistent_peers: [
+        {
+          id: '052c498dd1cc603b4d32f772035b6a8ca902def3',
+          address: '23.88.73.211:26656'
+        },
+        {
+          id: '0bdeaaa237b41e3b964a027a110c6ab5bf561177',
+          address: '209.34.206.38:26656'
+        },
+        {
+          id: 'bf7ee27a24e7d5f45653206fbbda8c4b716b74b1',
+          address: '89.58.38.59:26656'
+        },
+        {
+          id: '9eecc498dd2542c862f5bfb84ed7d2e1e3d922ab',
+          address: '34.201.48.14:26656'
+        },
+        {
+          id: 'bf62b185eef3c185f8ebf81d5cf54bdc064b21d8',
+          address: '85.10.216.157:26656'
+        },
+        {
+          id: '43e800018a5b52ba119a5410ff45cbeb63182cc8',
+          address: '207.244.127.5:26656'
+        },
+        {
+          id: '942087a9665e8235f8037d0b9d2a3f8a8c3d562b',
+          address: '104.207.138.181:26656'
+        },
+        {
+          id: '9d0094606fe8748f1c06b494f7c0cbbd44808ec6',
+          address: '131.153.59.6:26656'
+        },
+        {
+          id: '6071fe2fc7e4f49caa4b1fd1cfe19007152312e0',
+          address: '34.76.87.33:26656'
+        },
+        {
+          id: '3f58d7c35ad55ef6cea94f7aa2ffe79df1c01768',
+          address: '78.107.253.133:26656'
+        },
+        {
+          id: '46cb18ca32ad7329cb82a10316087794ef12150f',
+          address: '185.107.57.74:26656'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc.jackalprotocol.com',
+          provider: 'Jackal Labs'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://api.jackalprotocol.com',
+          provider: 'Jackal Labs'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://grpc.jackalprotocol.com',
+          provider: 'Jackal Labs'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'ping-pub',
+        url: 'https://ping.pub/jackal',
+        tx_page: 'https://ping.pub/jackal/tx/${txHash}'
+      }
+    ]
+  },
+  {
+    $schema: '../../chain.schema.json',
     chain_name: 'junotestnet',
     status: 'live',
     network_type: 'testnet',
@@ -13817,10 +14309,6 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
-          address: 'https://rpc.uni.junomint.com',
-          provider: 'EZStaking.io'
-        },
-        {
           address: 'https://rpc.uni.junonetwork.io',
           provider: 'Juno'
         },
@@ -13830,10 +14318,6 @@ const chains: Chain[] = [
         }
       ],
       rest: [
-        {
-          address: 'https://lcd.uni.junomint.com',
-          provider: 'EZStaking.io'
-        },
         {
           address: 'https://api.uni.junonetwork.io',
           provider: 'Juno'
@@ -13851,6 +14335,11 @@ const chains: Chain[] = [
       ]
     },
     explorers: [
+      {
+        kind: 'EZStaking Tools',
+        url: 'https://testnet.ezstaking.tools/juno-testnet',
+        tx_page: 'https://testnet.ezstaking.tools/juno-testnet/txs/${txHash}'
+      },
       {
         kind: 'Mintscan',
         url: 'https://testnet.mintscan.io/juno-testnet',
@@ -15089,6 +15578,80 @@ const chains: Chain[] = [
         kind: 'atomscan',
         url: 'https://atomscan.com/umee',
         tx_page: 'https://atomscan.com/umee/transactions/${txHash}'
+      }
+    ]
+  },
+  {
+    $schema: '../chain.schema.json',
+    chain_name: 'unification',
+    status: 'live',
+    network_type: 'mainnet',
+    website: 'https://unification.com/',
+    pretty_name: 'Unification',
+    chain_id: 'FUND-MainNet-2',
+    bech32_prefix: 'und',
+    daemon_name: 'und',
+    node_home: '$HOME/.und_mainchain',
+    slip44: 5555,
+    codebase: {
+      git_repo: 'https://github.com/unification-com/mainchain',
+      recommended_version: 'v1.6.3',
+      compatible_versions: ['v1.6.3'],
+      binaries: {
+        'linux/amd64':
+          'https://github.com/unification-com/mainchain/releases/download/v1.6.3/und_v1.6.3_linux_x86_64.tar.gz'
+      },
+      genesis: {
+        genesis_url:
+          'https://raw.githubusercontent.com/unification-com/mainnet/master/latest/genesis.json > $HOME/.und_mainchain/config/genesis.json'
+      }
+    },
+    peers: {
+      seeds: [
+        {
+          id: '0c2b65bc604a18a490f5f55bb7b4140cfb512ced',
+          address: 'seed1.unification.io:26656'
+        },
+        {
+          id: 'e66e0f89af19da09f676c85b262d591b8c2bb9d8',
+          address: 'seed2.unification.io:26656'
+        }
+      ],
+      persistent_peers: []
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc1.unification.io:443',
+          provider: 'Unification'
+        },
+        {
+          address: 'https://rpc.unification.chainmasters.ninja/',
+          provider: 'Chainmasters'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://rest.unification.io',
+          provider: 'Unification'
+        },
+        {
+          address: 'https://rest.unification.chainmasters.ninja/',
+          provider: 'Chainmasters'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'bigdipper',
+        url: 'https://explorer.unification.io/',
+        tx_page: 'https://explorer.unification.io/transactions/${txHash}'
+      },
+      {
+        kind: 'ping.pub',
+        url: 'https://explorer.unification.chainmasters.ninja/unification',
+        tx_page:
+          'https://explorer.unification.chainmasters.ninja/unification/tx/${txHash}'
       }
     ]
   },

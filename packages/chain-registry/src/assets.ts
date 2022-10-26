@@ -2907,6 +2907,94 @@ const assets: AssetList[] = [
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.png'
         },
         coingecko_id: 'e-money-eur'
+      },
+      {
+        description:
+          'e-Money CHF stablecoin. Audited and backed by fiat CHF deposits and government bonds.',
+        denom_units: [
+          {
+            denom: 'echf',
+            exponent: 0
+          },
+          {
+            denom: 'echf',
+            exponent: 6
+          }
+        ],
+        base: 'echf',
+        name: 'e-Money CHF',
+        display: 'chf',
+        symbol: 'ECHF',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.png'
+        },
+        coingecko_id: ''
+      },
+      {
+        description:
+          'e-Money NOK stablecoin. Audited and backed by fiat NOK deposits and government bonds.',
+        denom_units: [
+          {
+            denom: 'enok',
+            exponent: 0
+          },
+          {
+            denom: 'enok',
+            exponent: 6
+          }
+        ],
+        base: 'enok',
+        name: 'e-Money NOK',
+        display: 'nok',
+        symbol: 'ENOK',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.png'
+        },
+        coingecko_id: ''
+      },
+      {
+        description:
+          'e-Money DKK stablecoin. Audited and backed by fiat DKK deposits and government bonds.',
+        denom_units: [
+          {
+            denom: 'edkk',
+            exponent: 0
+          },
+          {
+            denom: 'edkk',
+            exponent: 6
+          }
+        ],
+        base: 'edkk',
+        name: 'e-Money DKK',
+        display: 'dkk',
+        symbol: 'EDKK',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.png'
+        },
+        coingecko_id: ''
+      },
+      {
+        description:
+          'e-Money SEK stablecoin. Audited and backed by fiat SEK deposits and government bonds.',
+        denom_units: [
+          {
+            denom: 'esek',
+            exponent: 0
+          },
+          {
+            denom: 'esek',
+            exponent: 6
+          }
+        ],
+        base: 'esek',
+        name: 'e-Money SEK',
+        display: 'sek',
+        symbol: 'ESEK',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.png'
+        },
+        coingecko_id: ''
       }
     ]
   },
@@ -5166,9 +5254,10 @@ const assets: AssetList[] = [
         display: 'tori',
         symbol: 'TORI',
         logo_URIs: {
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/tori.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/utori.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/utori.svg'
         },
-        coingecko_id: ''
+        coingecko_id: 'teritori'
       }
     ]
   },
@@ -9792,6 +9881,35 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../../assetlist.schema.json',
+    chain_name: 'bitcannadev2',
+    assets: [
+      {
+        description:
+          'The BCNA coin is the transactional token within the BitCanna network, serving the legal cannabis industry through its payment network, supply chain and trust network.',
+        denom_units: [
+          {
+            denom: 'ubcna',
+            exponent: 0
+          },
+          {
+            denom: 'bcna',
+            exponent: 6
+          }
+        ],
+        base: 'ubcna',
+        display: 'bcna',
+        name: 'BitCanna',
+        symbol: 'BCNA',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/bitcanna2/images/bcna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/bitcanna2/images/bcna.svg'
+        },
+        coingecko_id: 'bitcanna'
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
     chain_name: 'cheqdtestnet',
     assets: [
       {
@@ -9837,7 +9955,10 @@ const assets: AssetList[] = [
         base: 'umlg',
         name: 'Malaga',
         display: 'umlg',
-        symbol: 'MLG'
+        symbol: 'MLG',
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cosmwasmtestnet/images/cosmwasm.svg'
+        }
       },
       {
         description: 'Staking Token',
@@ -9854,7 +9975,10 @@ const assets: AssetList[] = [
         base: 'uand',
         name: 'Malaga Stake',
         display: 'uand',
-        symbol: 'AND'
+        symbol: 'AND',
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cosmwasmtestnet/images/cosmwasm.svg'
+        }
       }
     ]
   },
@@ -9915,6 +10039,33 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../../assetlist.schema.json',
+    chain_name: 'hypersigntestnet',
+    assets: [
+      {
+        description: 'Native token for Hypersign Identity Network',
+        denom_units: [
+          {
+            denom: 'uhid',
+            exponent: 0
+          },
+          {
+            denom: 'hid',
+            exponent: 6
+          }
+        ],
+        base: 'uhid',
+        display: 'hid',
+        name: 'Hypersign',
+        symbol: 'HID',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/hypersigntestnet/images/hypersign.png'
+        },
+        coingecko_id: 'hypersign-identity-token'
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
     chain_name: 'imversedtestnet',
     assets: [
       {
@@ -9967,6 +10118,34 @@ const assets: AssetList[] = [
         logo_URIs: {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/imversedtestnet/images/imversed.svg'
         }
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_name: 'jackaltestnet',
+    assets: [
+      {
+        description: 'The native staking and governance token of Jackal.',
+        denom_units: [
+          {
+            denom: 'ujkl',
+            exponent: 0
+          },
+          {
+            denom: 'jkl',
+            exponent: 6
+          }
+        ],
+        base: 'ujkl',
+        name: 'Jackal',
+        display: 'jkl',
+        symbol: 'JKL',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/jackaltestnet/images/jkl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/jackaltestnet/images/jkl.svg'
+        },
+        coingecko_id: 'jackal'
       }
     ]
   },
@@ -10357,6 +10536,34 @@ const assets: AssetList[] = [
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png'
         },
         coingecko_id: 'umee'
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'unification',
+    assets: [
+      {
+        description:
+          'Staking and governance coin for the Unification Blockchain',
+        denom_units: [
+          {
+            denom: 'nund',
+            exponent: 0
+          },
+          {
+            denom: 'FUND',
+            exponent: 9
+          }
+        ],
+        base: 'nund',
+        name: 'Unification Network',
+        display: 'FUND',
+        symbol: 'FUND',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png'
+        },
+        coingecko_id: 'unification'
       }
     ]
   },
