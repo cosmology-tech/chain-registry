@@ -71,8 +71,6 @@
     "typescript": "^4.8.4"
   },
   "dependencies": {
-    "@babel/runtime": "^7.19.4",
-    "@keplr-wallet/cosmos": "^0.11.12",
-    "@keplr-wallet/crypto": "^0.11.12"
+    "@babel/runtime": "^7.19.4"
   }
 }
