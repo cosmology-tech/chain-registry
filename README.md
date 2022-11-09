@@ -69,6 +69,10 @@ will output:
 
 An npm module for the Official `chain-registry` for the Cosmos ⚛️
 
+#### [@chain-registry/client](packages/client)
+
+A Client for `chain-registry` that allows you to dynamically fetch data.
+
 #### [@chain-registry/types](packages/types)
 
 Types for `chain-registry`.

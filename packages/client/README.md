@@ -12,8 +12,7 @@
    <a href="https://www.npmjs.com/package/@chain-registry/client"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=packages%2Fclient%2Fpackage.json"></a>
 </p>
 
-Client for the chain-registry 
-
+A Client for `chain-registry` that allows you to dynamically fetch data.
 
 ## Usage
 
