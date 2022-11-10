@@ -2,7 +2,6 @@ import { Asset, AssetList, Chain } from '@chain-registry/types';
 import { getGasPriceStep } from '@chain-registry/utils';
 import { AddChainParams } from '@cosmostation/extension-client/types/message';
 
-const getRpc = (chain: Chain): string => chain.apis?.rpc[0]?.address;
 const getRest = (chain: Chain): string => chain.apis?.rest[0]?.address;
 
 // chainId: string;
