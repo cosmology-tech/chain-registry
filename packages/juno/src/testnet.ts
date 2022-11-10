@@ -54,10 +54,6 @@ const testnet: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc.uni.junomint.com',
-        provider: 'EZStaking.io'
-      },
-      {
         address: 'https://rpc.uni.junonetwork.io',
         provider: 'Juno'
       },
@@ -67,10 +63,6 @@ const testnet: Chain = {
       }
     ],
     rest: [
-      {
-        address: 'https://lcd.uni.junomint.com',
-        provider: 'EZStaking.io'
-      },
       {
         address: 'https://api.uni.junonetwork.io',
         provider: 'Juno'
@@ -88,6 +80,11 @@ const testnet: Chain = {
     ]
   },
   explorers: [
+    {
+      kind: 'EZStaking Tools',
+      url: 'https://testnet.ezstaking.tools/juno-testnet',
+      tx_page: 'https://testnet.ezstaking.tools/juno-testnet/txs/${txHash}'
+    },
     {
       kind: 'Mintscan',
       url: 'https://testnet.mintscan.io/juno-testnet',

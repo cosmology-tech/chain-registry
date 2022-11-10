@@ -2393,6 +2393,33 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../assetlist.schema.json',
+    chain_name: 'chain4energy',
+    assets: [
+      {
+        description: 'The native token of Chain4Energy',
+        denom_units: [
+          {
+            denom: 'uc4e',
+            exponent: 0
+          },
+          {
+            denom: 'c4e',
+            exponent: 6
+          }
+        ],
+        base: 'uc4e',
+        name: 'Chain4Energy',
+        display: 'c4e',
+        symbol: 'C4E',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chain4energy/images/c4e.png'
+        },
+        coingecko_id: ''
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
     chain_name: 'cheqd',
     assets: [
       {
@@ -2680,10 +2707,9 @@ const assets: AssetList[] = [
         display: 'cro',
         symbol: 'CRO',
         logo_URIs: {
-          svg: 'https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/docs/.vuepress/public/cronos.svg',
-          png: 'https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/docs/.vuepress/public/CRO_icon.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png'
         },
-        coingecko_id: 'cronos'
+        coingecko_id: 'crypto-com-chain'
       }
     ]
   },
@@ -3370,6 +3396,34 @@ const assets: AssetList[] = [
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg'
         },
         coingecko_id: 'iris-network'
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'jackal',
+    assets: [
+      {
+        description: 'The native staking and governance token of Jackal.',
+        denom_units: [
+          {
+            denom: 'ujkl',
+            exponent: 0
+          },
+          {
+            denom: 'jkl',
+            exponent: 6
+          }
+        ],
+        base: 'ujkl',
+        name: 'Jackal',
+        display: 'jkl',
+        symbol: 'JKL',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg'
+        },
+        coingecko_id: 'jackal-protocol'
       }
     ]
   },
@@ -4523,7 +4577,7 @@ const assets: AssetList[] = [
         logo_URIs: {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/okexchain/images/okc.png'
         },
-        coingecko_id: 'okc-token'
+        coingecko_id: 'oec-token'
       }
     ]
   },
@@ -4716,6 +4770,29 @@ const assets: AssetList[] = [
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
         },
         coingecko_id: 'persistence'
+      },
+      {
+        description: 'PSTAKE Liquid-Staked ATOM',
+        denom_units: [
+          {
+            denom: 'stk/uatom',
+            exponent: 0,
+            aliases: []
+          },
+          {
+            denom: 'stkatom',
+            exponent: 6,
+            aliases: ['stk/atom']
+          }
+        ],
+        base: 'stk/uatom',
+        name: 'PSTAKE staked ATOM',
+        display: 'stkatom',
+        symbol: 'stkATOM',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
+        }
       },
       {
         description:
@@ -4943,6 +5020,117 @@ const assets: AssetList[] = [
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
         },
         coingecko_id: 'secret'
+      },
+      {
+        description: 'The native token cw20 for SIENNA on Secret Network',
+        denom_units: [
+          {
+            denom: 'cw20:secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4',
+            exponent: 0
+          },
+          {
+            denom: 'sienna',
+            exponent: 18
+          }
+        ],
+        base: 'cw20:secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4',
+        name: 'SIENNA',
+        display: 'sienna',
+        symbol: 'SIENNA',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.svg'
+        },
+        coingecko_id: 'sienna'
+      },
+      {
+        description: 'The native token cw20 for Shade on Secret Network',
+        denom_units: [
+          {
+            denom: 'cw20:secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d',
+            exponent: 0
+          },
+          {
+            denom: 'shd',
+            exponent: 8
+          }
+        ],
+        base: 'cw20:secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d',
+        name: 'Shade',
+        display: 'shd',
+        symbol: 'SHD',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.svg'
+        },
+        coingecko_id: 'shade-protocol'
+      },
+      {
+        description:
+          'The native token cw20 for SCRT Staking Derivatives on Secret Network',
+        denom_units: [
+          {
+            denom: 'cw20:secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4',
+            exponent: 0
+          },
+          {
+            denom: 'stkd-scrt',
+            exponent: 6
+          }
+        ],
+        base: 'cw20:secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4',
+        name: 'SCRT Staking Derivatives',
+        display: 'stkd-scrt',
+        symbol: 'stkd-SCRT',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.svg'
+        },
+        coingecko_id: 'stkd-scrt'
+      },
+      {
+        description: 'The native token cw20 for Button on Secret Network',
+        denom_units: [
+          {
+            denom: 'cw20:secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt',
+            exponent: 0
+          },
+          {
+            denom: 'butt',
+            exponent: 6
+          }
+        ],
+        base: 'cw20:secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt',
+        name: 'Button',
+        display: 'butt',
+        symbol: 'BUTT',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'
+        },
+        coingecko_id: 'buttcoin-2'
+      },
+      {
+        description: 'The native token cw20 for Alter on Secret Network',
+        denom_units: [
+          {
+            denom: 'cw20:secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
+            exponent: 0
+          },
+          {
+            denom: 'alter',
+            exponent: 6
+          }
+        ],
+        base: 'cw20:secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
+        name: 'Alter',
+        display: 'alter',
+        symbol: 'ALTER',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg'
+        },
+        coingecko_id: 'alter'
       }
     ]
   },
@@ -9978,6 +10166,62 @@ const assets: AssetList[] = [
         symbol: 'AND',
         logo_URIs: {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cosmwasmtestnet/images/cosmwasm.svg'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_name: 'cudostestnet',
+    assets: [
+      {
+        description: 'The native token of the Cudos blockchain',
+        denom_units: [
+          {
+            denom: 'acudos',
+            exponent: 0,
+            aliases: ['attocudos']
+          },
+          {
+            denom: 'cudos',
+            exponent: 18,
+            aliases: []
+          }
+        ],
+        base: 'acudos',
+        name: 'Cudos',
+        display: 'cudos',
+        symbol: 'CUDOS',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cudostestnet/images/cudos.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cudostestnet/images/cudos.svg'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_name: 'empowertestnet',
+    assets: [
+      {
+        description:
+          'The native staking and governance token of the testnet version of Empower.',
+        denom_units: [
+          {
+            denom: 'umpwr',
+            exponent: 0
+          },
+          {
+            denom: 'mpwr',
+            exponent: 6
+          }
+        ],
+        base: 'umpwr',
+        name: 'MPWR',
+        display: 'mpwr',
+        symbol: 'MPWR',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/empowertestnet/images/mpwr.png'
         }
       }
     ]

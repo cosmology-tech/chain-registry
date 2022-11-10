@@ -2071,6 +2071,162 @@ const asset_list: AssetList = {
     },
     {
       description:
+        'e-Money CHF stablecoin. Audited and backed by fiat CHF deposits and government bonds.',
+      denom_units: [
+        {
+          denom:
+            'ibc/9BC783D73D46226BC948F34BC9136C081B89144E646DB5E4C1E8A6A4E777DC1B',
+          exponent: 0,
+          aliases: ['echf']
+        },
+        {
+          denom:
+            'ibc/9BC783D73D46226BC948F34BC9136C081B89144E646DB5E4C1E8A6A4E777DC1B',
+          exponent: 6,
+          aliases: ['echf']
+        }
+      ],
+      base: 'ibc/9BC783D73D46226BC948F34BC9136C081B89144E646DB5E4C1E8A6A4E777DC1B',
+      name: 'e-Money CHF',
+      display: 'chf',
+      symbol: 'ECHF',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.png'
+      },
+      coingecko_id: '',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'echf',
+            chain_name: 'emoney'
+          },
+          chain: {
+            channel_id: 'channel-37'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'e-Money NOK stablecoin. Audited and backed by fiat NOK deposits and government bonds.',
+      denom_units: [
+        {
+          denom:
+            'ibc/1733402CBEA1D9D9D13DEA1EF1A76A116B51F5FF252A4DBBE6240DBFF8758EFC',
+          exponent: 0,
+          aliases: ['enok']
+        },
+        {
+          denom:
+            'ibc/1733402CBEA1D9D9D13DEA1EF1A76A116B51F5FF252A4DBBE6240DBFF8758EFC',
+          exponent: 6,
+          aliases: ['enok']
+        }
+      ],
+      base: 'ibc/1733402CBEA1D9D9D13DEA1EF1A76A116B51F5FF252A4DBBE6240DBFF8758EFC',
+      name: 'e-Money NOK',
+      display: 'nok',
+      symbol: 'ENOK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.png'
+      },
+      coingecko_id: '',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'enok',
+            chain_name: 'emoney'
+          },
+          chain: {
+            channel_id: 'channel-37'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'e-Money DKK stablecoin. Audited and backed by fiat DKK deposits and government bonds.',
+      denom_units: [
+        {
+          denom:
+            'ibc/737BA149DE0967CA64C7A6FFCF5026EC7C6210F4BA1A3B1429E4FEBDEB4940F2',
+          exponent: 0,
+          aliases: ['edkk']
+        },
+        {
+          denom:
+            'ibc/737BA149DE0967CA64C7A6FFCF5026EC7C6210F4BA1A3B1429E4FEBDEB4940F2',
+          exponent: 6,
+          aliases: ['edkk']
+        }
+      ],
+      base: 'ibc/737BA149DE0967CA64C7A6FFCF5026EC7C6210F4BA1A3B1429E4FEBDEB4940F2',
+      name: 'e-Money DKK',
+      display: 'dkk',
+      symbol: 'EDKK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.png'
+      },
+      coingecko_id: '',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'edkk',
+            chain_name: 'emoney'
+          },
+          chain: {
+            channel_id: 'channel-37'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'e-Money SEK stablecoin. Audited and backed by fiat SEK deposits and government bonds.',
+      denom_units: [
+        {
+          denom:
+            'ibc/686B4FE801A81ED9B46CC2E24FF3A7EA2E6A1E1A2A4D73BD7F2BC2866007AB0A',
+          exponent: 0,
+          aliases: ['esek']
+        },
+        {
+          denom:
+            'ibc/686B4FE801A81ED9B46CC2E24FF3A7EA2E6A1E1A2A4D73BD7F2BC2866007AB0A',
+          exponent: 6,
+          aliases: ['esek']
+        }
+      ],
+      base: 'ibc/686B4FE801A81ED9B46CC2E24FF3A7EA2E6A1E1A2A4D73BD7F2BC2866007AB0A',
+      name: 'e-Money SEK',
+      display: 'sek',
+      symbol: 'ESEK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.png'
+      },
+      coingecko_id: '',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'esek',
+            chain_name: 'emoney'
+          },
+          chain: {
+            channel_id: 'channel-37'
+          }
+        }
+      ]
+    },
+    {
+      description:
         'The native EVM, governance and staking token of the Evmos Hub',
       denom_units: [
         {
@@ -4819,6 +4975,42 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-184'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Staking and governance coin for the Unification Blockchain',
+      denom_units: [
+        {
+          denom:
+            'ibc/608EF5C0CE64FEA097500DB39657BDD36CA708CC5DCC2E250A024B6981DD36BC',
+          exponent: 0,
+          aliases: ['nund']
+        },
+        {
+          denom: 'FUND',
+          exponent: 9
+        }
+      ],
+      base: 'ibc/608EF5C0CE64FEA097500DB39657BDD36CA708CC5DCC2E250A024B6981DD36BC',
+      name: 'Unification Network',
+      display: 'FUND',
+      symbol: 'FUND',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png'
+      },
+      coingecko_id: 'unification',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'nund',
+            chain_name: 'unification'
+          },
+          chain: {
+            channel_id: 'channel-382'
           }
         }
       ]
