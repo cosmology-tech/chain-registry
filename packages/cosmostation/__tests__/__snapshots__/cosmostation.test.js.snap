@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getExplorer 1`] = `
+{
+  "addressPrefix": "osmo",
+  "baseDenom": "uosmo",
+  "chainId": "osmosis-1",
+  "chainName": "Osmosis",
+  "coinGeckoId": "osmosis",
+  "coinType": "118",
+  "displayDenom": "OSMO",
+  "gasRate": {
+    "average": "0.025",
+    "low": "0",
+    "tiny": "0.00025",
+  },
+  "imageURL": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg",
+  "restURL": "https://lcd-osmosis.whispernode.com",
+}
+`;
+
+exports[`keplr 1`] = `
+{
+  "addressPrefix": "osmo",
+  "baseDenom": "uosmo",
+  "chainId": "osmosis-1",
+  "chainName": "Osmosis",
+  "coinGeckoId": "osmosis",
+  "coinType": "118",
+  "displayDenom": "OSMO",
+  "gasRate": {
+    "average": "0.025",
+    "low": "0",
+    "tiny": "0.00025",
+  },
+  "imageURL": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg",
+  "restURL": "https://osmosis-lcd.quickapi.com:443",
+}
+`;
