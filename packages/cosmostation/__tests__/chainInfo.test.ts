@@ -12,7 +12,6 @@ const testChainData = async (chainName, chainId) => {
     assets
     // {
     //     getRestEndpoint: (chain) => preferredChainInfo[chain.chain_name].rest,
-    //     getRpcEndpoint: (chain) => preferredChainInfo[chain.chain_name].rpc
     // }
   );
   expect(cosmostationData).toMatchSnapshot();

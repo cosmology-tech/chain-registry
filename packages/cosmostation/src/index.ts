@@ -23,15 +23,12 @@ export const chainRegistryChainToCosmostation = (
   chain: Chain,
   assets: AssetList[],
   options: {
-    getRpcEndpoint: (chain: Chain) => string;
     getRestEndpoint: (chain: Chain) => string;
   } = {
-    getRpcEndpoint: getRpc,
     getRestEndpoint: getRest
   }
 ): AddChainParams => {
   if (!options.getRestEndpoint) options.getRestEndpoint = getRest;
-  if (!options.getRpcEndpoint) options.getRpcEndpoint = getRpc;
 
   const chainAssets =
     assets.find((asset) => asset.chain_name === chain.chain_name)?.assets || [];
