@@ -74,6 +74,7 @@
   "dependencies": {
     "@babel/runtime": "^7.19.4",
     "@chain-registry/types": "^0.13.1",
+    "@chain-registry/utils": "^1.3.0",
     "@cosmostation/extension-client": "0.1.11"
   }
 }
