@@ -29,7 +29,7 @@ const options: ChainRegistryFetcherOptions = {
     'https://raw.githubusercontent.com/cosmos/chain-registry/master/_IBC/osmosis-secretnetwork.json'
   ]
 };
-const registry = new ChainRegistry(options);
+const registry = new ChainRegistryFetcher(options);
 await registry.fetchUrls();
 ```
 
