@@ -46,20 +46,13 @@ exports[`getExplorer 1`] = `
       "coinGeckoId": "osmosis",
       "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg",
       "coinMinimalDenom": "uosmo",
-    },
-    {
-      "coinDecimals": 6,
-      "coinDenom": "ION",
-      "coinGeckoId": "ion",
-      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg",
-      "coinMinimalDenom": "uion",
+      "gasPriceStep": {
+        "average": 0.025,
+        "high": 0.04,
+        "low": 0,
+      },
     },
   ],
-  "gasPriceStep": {
-    "average": 0.025,
-    "high": 0.04,
-    "low": 0,
-  },
   "rest": "https://lcd-osmosis.whispernode.com",
   "rpc": "https://osmosis-rpc.quickapi.com:443",
   "stakeCurrency": {
@@ -118,20 +111,13 @@ exports[`keplr 1`] = `
       "coinGeckoId": "osmosis",
       "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg",
       "coinMinimalDenom": "uosmo",
-    },
-    {
-      "coinDecimals": 6,
-      "coinDenom": "ION",
-      "coinGeckoId": "ion",
-      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg",
-      "coinMinimalDenom": "uion",
+      "gasPriceStep": {
+        "average": 0.025,
+        "high": 0.04,
+        "low": 0,
+      },
     },
   ],
-  "gasPriceStep": {
-    "average": 0.025,
-    "high": 0.04,
-    "low": 0,
-  },
   "rest": "https://osmosis-lcd.quickapi.com:443",
   "rpc": "https://osmosis-rpc.quickapi.com:443",
   "stakeCurrency": {

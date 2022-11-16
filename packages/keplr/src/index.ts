@@ -1,6 +1,6 @@
 import { Asset, AssetList, Chain } from '@chain-registry/types';
 import { Bech32Address } from '@keplr-wallet/cosmos';
-import { ChainInfo, Currency } from '@keplr-wallet/types';
+import { ChainInfo, Currency, FeeCurrency } from '@keplr-wallet/types';
 import semver from 'semver';
 
 const getRpc = (chain: Chain): string => chain.apis?.rpc[0]?.address;
@@ -70,11 +70,14 @@ export const chainRegistryChainToKeplr = (
    * If this field is empty, it just use the default gas price step (low: 0.01, average: 0.025, high: 0.04).
    * And, set field's type as primitive number because it is hard to restore the prototype after deserialzing if field's type is `Dec`.
    */
-  const gasPriceStep: ChainInfo['gasPriceStep'] = {
-    low: chain.fees?.fee_tokens?.[0]?.low_gas_price ?? 0.01,
-    average: chain.fees?.fee_tokens?.[0]?.average_gas_price ?? 0.025,
-    high: chain.fees?.fee_tokens?.[0]?.high_gas_price ?? 0.04
-  };
+  const gasPriceSteps = chain.fees?.fee_tokens?.reduce((m, feeToken) => {
+    m[feeToken.denom] = {
+      low: feeToken.low_gas_price ?? 0.01,
+      average: feeToken.average_gas_price ?? 0.025,
+      high: feeToken.high_gas_price ?? 0.04
+    };
+    return m;
+  }, {});
 
   const stakingDenoms =
     chain.staking?.staking_tokens.map<string>(
@@ -97,9 +100,35 @@ export const chainRegistryChainToKeplr = (
     currencies.find((currency) => stakingDenoms.includes(currency.coinDenom)) ??
     currencies[0];
 
-  const feeCurrencies: Currency[] = currencies.filter((currency) =>
-    feeDenoms.includes(currency.coinDenom)
-  );
+  const feeCurrencies: FeeCurrency[] = currencies
+    // USE THE FEE DENOMS
+    .filter((currency) => feeDenoms.includes(currency.coinMinimalDenom))
+    .map((feeCurrency) => {
+      if (!gasPriceSteps.hasOwnProperty(feeCurrency.coinMinimalDenom))
+        return feeCurrency;
+
+      // has gas
+      const gasPriceStep = gasPriceSteps[feeCurrency.coinMinimalDenom];
+      return {
+        ...feeCurrency,
+        gasPriceStep
+      };
+    });
+
+  const feeCurrenciesDefault: FeeCurrency[] = currencies
+    // USE THE STAKE CURRENCY
+    .filter((currency) => stakeCurrency.coinDenom === currency.coinDenom)
+    .map((feeCurrency) => {
+      if (!gasPriceSteps.hasOwnProperty(feeCurrency.coinMinimalDenom))
+        return feeCurrency;
+
+      // has gas
+      const gasPriceStep = gasPriceSteps[feeCurrency.coinMinimalDenom];
+      return {
+        ...feeCurrency,
+        gasPriceStep
+      };
+    });
 
   const chainInfo: ChainInfo = {
     rpc: options.getRpcEndpoint(chain),
@@ -109,11 +138,11 @@ export const chainRegistryChainToKeplr = (
     bip44: {
       coinType: chain.slip44
     },
-    gasPriceStep,
     bech32Config: Bech32Address.defaultBech32Config(chain.bech32_prefix),
     currencies: currencies,
     stakeCurrency: stakeCurrency || currencies[0],
-    feeCurrencies: feeCurrencies.length !== 0 ? feeCurrencies : currencies,
+    feeCurrencies:
+      feeCurrencies.length !== 0 ? feeCurrencies : feeCurrenciesDefault,
     features
   };
 
