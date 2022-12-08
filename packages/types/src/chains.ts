@@ -10,6 +10,7 @@ export interface Chain {
   bech32_prefix: string;
   daemon_name?: string;
   key_algos?: string[];
+  extra_codecs?: string[];
   keywords?: string[];
   node_home?: string;
   slip44: number;

@@ -1345,6 +1345,46 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "PSTAKE Liquid-Staked ATOM",
+        "denom_units": [
+          {
+            "denom": "ibc/714D59172A15972F9D0E1085E8519CE9BA7BFA6D12874492D9E035F23B2D681B",
+            "exponent": 0,
+            "aliases": [
+              "stk/uatom"
+            ]
+          },
+          {
+            "denom": "stkatom",
+            "exponent": 6,
+            "aliases": [
+              "stk/atom"
+            ]
+          }
+        ],
+        "base": "ibc/714D59172A15972F9D0E1085E8519CE9BA7BFA6D12874492D9E035F23B2D681B",
+        "name": "PSTAKE staked ATOM",
+        "display": "stkatom",
+        "symbol": "stkATOM",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-5",
+              "base_denom": "stk/uatom",
+              "chain_name": "persistence"
+            },
+            "chain": {
+              "channel_id": "channel-6"
+            }
+          }
+        ]
+      },
+      {
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
@@ -1652,7 +1692,7 @@ const asset_lists: AssetList[] = [
         "description": "The native token of OKExChain",
         "denom_units": [
           {
-            "denom": "ibc/45FFEE350E790699F48BB53C35CBB71722246D54D5B08731A736B0C4376E5FF7",
+            "denom": "ibc/33E3481B6DE69CBABF20B3130A10F7CDF0B0ED5F0EB9F9980AD92A1B3C0DDB5D",
             "exponent": 0,
             "aliases": [
               "wei"
@@ -1663,24 +1703,24 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/45FFEE350E790699F48BB53C35CBB71722246D54D5B08731A736B0C4376E5FF7",
+        "base": "ibc/33E3481B6DE69CBABF20B3130A10F7CDF0B0ED5F0EB9F9980AD92A1B3C0DDB5D",
         "name": "OKExChain",
         "display": "okt",
         "symbol": "OKT",
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/okexchain/images/okc.png"
         },
-        "coingecko_id": "okc-token",
+        "coingecko_id": "oec-token",
         "traces": [
           {
             "type": "ibc",
             "counterparty": {
-              "channel_id": "channel-23",
+              "channel_id": "channel-30",
               "base_denom": "wei",
               "chain_name": "okexchain"
             },
             "chain": {
-              "channel_id": "channel-13"
+              "channel_id": "channel-14"
             }
           }
         ]
@@ -2996,7 +3036,7 @@ const asset_lists: AssetList[] = [
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/okexchain/images/okc.png"
         },
-        "coingecko_id": "okc-token",
+        "coingecko_id": "oec-token",
         "traces": [
           {
             "type": "ibc",
@@ -4065,6 +4105,46 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-24",
               "base_denom": "uxprt",
+              "chain_name": "persistence"
+            },
+            "chain": {
+              "channel_id": "channel-190"
+            }
+          }
+        ]
+      },
+      {
+        "description": "PSTAKE Liquid-Staked ATOM",
+        "denom_units": [
+          {
+            "denom": "ibc/D4AB918D77C7972BD788F8637895A8DE40534CB9E9C0D704471DE0083B322FF0",
+            "exponent": 0,
+            "aliases": [
+              "stk/uatom"
+            ]
+          },
+          {
+            "denom": "stkatom",
+            "exponent": 6,
+            "aliases": [
+              "stk/atom"
+            ]
+          }
+        ],
+        "base": "ibc/D4AB918D77C7972BD788F8637895A8DE40534CB9E9C0D704471DE0083B322FF0",
+        "name": "PSTAKE staked ATOM",
+        "display": "stkatom",
+        "symbol": "stkATOM",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-24",
+              "base_denom": "stk/uatom",
               "chain_name": "persistence"
             },
             "chain": {
@@ -5936,6 +6016,46 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "PSTAKE Liquid-Staked ATOM",
+        "denom_units": [
+          {
+            "denom": "ibc/F596D425ED062FF586E9F74EA67E663BEB602EAD18F3388FB6DF57E127552BFD",
+            "exponent": 0,
+            "aliases": [
+              "stk/uatom"
+            ]
+          },
+          {
+            "denom": "stkatom",
+            "exponent": 6,
+            "aliases": [
+              "stk/atom"
+            ]
+          }
+        ],
+        "base": "ibc/F596D425ED062FF586E9F74EA67E663BEB602EAD18F3388FB6DF57E127552BFD",
+        "name": "PSTAKE staked ATOM",
+        "display": "stkatom",
+        "symbol": "stkATOM",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-11",
+              "base_denom": "stk/uatom",
+              "chain_name": "persistence"
+            },
+            "chain": {
+              "channel_id": "channel-17"
+            }
+          }
+        ]
+      },
+      {
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
@@ -7533,6 +7653,46 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "PSTAKE Liquid-Staked ATOM",
+        "denom_units": [
+          {
+            "denom": "ibc/3057B265ED4FA22EB274071BB43B6143DB4D5B128BE1A5AC067E662EAFC37873",
+            "exponent": 0,
+            "aliases": [
+              "stk/uatom"
+            ]
+          },
+          {
+            "denom": "stkatom",
+            "exponent": 6,
+            "aliases": [
+              "stk/atom"
+            ]
+          }
+        ],
+        "base": "ibc/3057B265ED4FA22EB274071BB43B6143DB4D5B128BE1A5AC067E662EAFC37873",
+        "name": "PSTAKE staked ATOM",
+        "display": "stkatom",
+        "symbol": "stkATOM",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-38",
+              "base_denom": "stk/uatom",
+              "chain_name": "persistence"
+            },
+            "chain": {
+              "channel_id": "channel-24"
+            }
+          }
+        ]
+      },
+      {
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
@@ -7604,6 +7764,43 @@ const asset_lists: AssetList[] = [
             },
             "chain": {
               "channel_id": "channel-79"
+            }
+          }
+        ]
+      },
+      {
+        "description": "Staking and governance coin for the Unification Blockchain",
+        "denom_units": [
+          {
+            "denom": "ibc/D157AD8A50DAB0FC4EB95BBE1D9407A590FA2CDEE04C90A76C005089BF76E519",
+            "exponent": 0,
+            "aliases": [
+              "nund"
+            ]
+          },
+          {
+            "denom": "FUND",
+            "exponent": 9
+          }
+        ],
+        "base": "ibc/D157AD8A50DAB0FC4EB95BBE1D9407A590FA2CDEE04C90A76C005089BF76E519",
+        "name": "Unification Network",
+        "display": "FUND",
+        "symbol": "FUND",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png"
+        },
+        "coingecko_id": "unification",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-2",
+              "base_denom": "nund",
+              "chain_name": "unification"
+            },
+            "chain": {
+              "channel_id": "channel-98"
             }
           }
         ]
@@ -8368,6 +8565,46 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "PSTAKE Liquid-Staked ATOM",
+        "denom_units": [
+          {
+            "denom": "ibc/BF3890F46503C1DCAF549855CDA5D185B095BFB6ABBCE4FB079F1FD0C7FA30F1",
+            "exponent": 0,
+            "aliases": [
+              "stk/uatom"
+            ]
+          },
+          {
+            "denom": "stkatom",
+            "exponent": 6,
+            "aliases": [
+              "stk/atom"
+            ]
+          }
+        ],
+        "base": "ibc/BF3890F46503C1DCAF549855CDA5D185B095BFB6ABBCE4FB079F1FD0C7FA30F1",
+        "name": "PSTAKE staked ATOM",
+        "display": "stkatom",
+        "symbol": "stkATOM",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-19",
+              "base_denom": "stk/uatom",
+              "chain_name": "persistence"
+            },
+            "chain": {
+              "channel_id": "channel-15"
+            }
+          }
+        ]
+      },
+      {
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
@@ -8547,6 +8784,94 @@ const asset_lists: AssetList[] = [
             },
             "chain": {
               "channel_id": "channel-21"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chain_name": "jackal",
+    "assets": [
+      {
+        "description": "The native token of Osmosis",
+        "denom_units": [
+          {
+            "denom": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+            "exponent": 0,
+            "aliases": [
+              "uosmo"
+            ]
+          },
+          {
+            "denom": "osmo",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+        "name": "Osmosis",
+        "display": "osmo",
+        "symbol": "OSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
+        },
+        "coingecko_id": "osmosis",
+        "keywords": [
+          "dex",
+          "staking"
+        ],
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-412",
+              "base_denom": "uosmo",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F7E92EE59B5428793F3EF5C1A4CB2494F61A9D0C9A69469D02390714A1372E16",
+            "exponent": 0,
+            "aliases": [
+              "uion"
+            ]
+          },
+          {
+            "denom": "ion",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/F7E92EE59B5428793F3EF5C1A4CB2494F61A9D0C9A69469D02390714A1372E16",
+        "name": "Ion",
+        "display": "ion",
+        "symbol": "ION",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
+        },
+        "coingecko_id": "ion",
+        "keywords": [
+          "memecoin"
+        ],
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-412",
+              "base_denom": "uion",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -10457,6 +10782,46 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-37",
               "base_denom": "uxprt",
+              "chain_name": "persistence"
+            },
+            "chain": {
+              "channel_id": "channel-33"
+            }
+          }
+        ]
+      },
+      {
+        "description": "PSTAKE Liquid-Staked ATOM",
+        "denom_units": [
+          {
+            "denom": "ibc/436673B3C7C0923C904EEA4AC97AB0DD7DC5627751AE7E2F8CFF489A3D43D805",
+            "exponent": 0,
+            "aliases": [
+              "stk/uatom"
+            ]
+          },
+          {
+            "denom": "stkatom",
+            "exponent": 6,
+            "aliases": [
+              "stk/atom"
+            ]
+          }
+        ],
+        "base": "ibc/436673B3C7C0923C904EEA4AC97AB0DD7DC5627751AE7E2F8CFF489A3D43D805",
+        "name": "PSTAKE staked ATOM",
+        "display": "stkatom",
+        "symbol": "stkATOM",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-37",
+              "base_denom": "stk/uatom",
               "chain_name": "persistence"
             },
             "chain": {
@@ -12623,7 +12988,7 @@ const asset_lists: AssetList[] = [
         "description": "The native token of Asset Mantle",
         "denom_units": [
           {
-            "denom": "ibc/7E3492CD5C2BC8F4C1E936E8AFB8BDD1B45526F8D716BB00B3A4465089E616F5",
+            "denom": "ibc/046F0F324A413BCE45651A98FBD82400B03F332F9ABCDC4755228573C86E24A4",
             "exponent": 0,
             "aliases": [
               "umntl"
@@ -12634,7 +12999,7 @@ const asset_lists: AssetList[] = [
             "exponent": 6
           }
         ],
-        "base": "ibc/7E3492CD5C2BC8F4C1E936E8AFB8BDD1B45526F8D716BB00B3A4465089E616F5",
+        "base": "ibc/046F0F324A413BCE45651A98FBD82400B03F332F9ABCDC4755228573C86E24A4",
         "name": "AssetMantle",
         "display": "mntl",
         "symbol": "MNTL",
@@ -12646,12 +13011,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel_id": "channel-13",
+              "channel_id": "channel-14",
               "base_denom": "umntl",
               "chain_name": "assetmantle"
             },
             "chain": {
-              "channel_id": "channel-23"
+              "channel_id": "channel-30"
             }
           }
         ]
@@ -15483,6 +15848,44 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "The native staking and governance token of Jackal.",
+        "denom_units": [
+          {
+            "denom": "ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA",
+            "exponent": 0,
+            "aliases": [
+              "ujkl"
+            ]
+          },
+          {
+            "denom": "jkl",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA",
+        "name": "Jackal",
+        "display": "jkl",
+        "symbol": "JKL",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg"
+        },
+        "coingecko_id": "jackal-protocol",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "ujkl",
+              "chain_name": "jackal"
+            },
+            "chain": {
+              "channel_id": "channel-412"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of JUNO Chain",
         "denom_units": [
           {
@@ -16196,6 +16599,46 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "PSTAKE Liquid-Staked ATOM",
+        "denom_units": [
+          {
+            "denom": "ibc/CAA179E40F0266B0B29FB5EAA288FB9212E628822265D4141EBD1C47C3CBFCBC",
+            "exponent": 0,
+            "aliases": [
+              "stk/uatom"
+            ]
+          },
+          {
+            "denom": "stkatom",
+            "exponent": 6,
+            "aliases": [
+              "stk/atom"
+            ]
+          }
+        ],
+        "base": "ibc/CAA179E40F0266B0B29FB5EAA288FB9212E628822265D4141EBD1C47C3CBFCBC",
+        "name": "PSTAKE staked ATOM",
+        "display": "stkatom",
+        "symbol": "stkATOM",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-6",
+              "base_denom": "stk/uatom",
+              "chain_name": "persistence"
+            },
+            "chain": {
+              "channel_id": "channel-4"
+            }
+          }
+        ]
+      },
+      {
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
@@ -16833,6 +17276,45 @@ const asset_lists: AssetList[] = [
             },
             "chain": {
               "channel_id": "channel-326"
+            }
+          }
+        ]
+      },
+      {
+        "description": "Tori token (TORI) is the Teritoti Network’s native utility token, used as the primary means to govern, secure the blockchain, incentivize ecosystem contributors and use the various Teritori dApp features.",
+        "denom_units": [
+          {
+            "denom": "ibc/EB7FB9C8B425F289B63703413327C2051030E848CE4EAAEA2E51199D6D39D3EC",
+            "exponent": 0,
+            "aliases": [
+              "utori"
+            ]
+          },
+          {
+            "denom": "tori",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/EB7FB9C8B425F289B63703413327C2051030E848CE4EAAEA2E51199D6D39D3EC",
+        "name": "Teritori",
+        "display": "tori",
+        "symbol": "TORI",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/utori.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/utori.svg"
+        },
+        "coingecko_id": "teritori",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "utori",
+              "chain_name": "teritori"
+            },
+            "chain": {
+              "channel_id": "channel-362"
             }
           }
         ]
@@ -20054,6 +20536,46 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "PSTAKE Liquid-Staked ATOM",
+        "denom_units": [
+          {
+            "denom": "ibc/1C26DF406AB5AF699F1BAB9DDB6859F7C1736863437DA64A6FA8D998D0DD1DE3",
+            "exponent": 0,
+            "aliases": [
+              "stk/uatom"
+            ]
+          },
+          {
+            "denom": "stkatom",
+            "exponent": 6,
+            "aliases": [
+              "stk/atom"
+            ]
+          }
+        ],
+        "base": "ibc/1C26DF406AB5AF699F1BAB9DDB6859F7C1736863437DA64A6FA8D998D0DD1DE3",
+        "name": "PSTAKE staked ATOM",
+        "display": "stkatom",
+        "symbol": "stkATOM",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-21",
+              "base_denom": "stk/uatom",
+              "chain_name": "persistence"
+            },
+            "chain": {
+              "channel_id": "channel-14"
+            }
+          }
+        ]
+      },
+      {
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
@@ -23053,6 +23575,46 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "PSTAKE Liquid-Staked ATOM",
+        "denom_units": [
+          {
+            "denom": "ibc/BF3890F46503C1DCAF549855CDA5D185B095BFB6ABBCE4FB079F1FD0C7FA30F1",
+            "exponent": 0,
+            "aliases": [
+              "stk/uatom"
+            ]
+          },
+          {
+            "denom": "stkatom",
+            "exponent": 6,
+            "aliases": [
+              "stk/atom"
+            ]
+          }
+        ],
+        "base": "ibc/BF3890F46503C1DCAF549855CDA5D185B095BFB6ABBCE4FB079F1FD0C7FA30F1",
+        "name": "PSTAKE staked ATOM",
+        "display": "stkatom",
+        "symbol": "stkATOM",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-22",
+              "base_denom": "stk/uatom",
+              "chain_name": "persistence"
+            },
+            "chain": {
+              "channel_id": "channel-15"
+            }
+          }
+        ]
+      },
+      {
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
@@ -23708,6 +24270,46 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-26",
               "base_denom": "uxprt",
+              "chain_name": "persistence"
+            },
+            "chain": {
+              "channel_id": "channel-7"
+            }
+          }
+        ]
+      },
+      {
+        "description": "PSTAKE Liquid-Staked ATOM",
+        "denom_units": [
+          {
+            "denom": "ibc/459B86A9627815005650C0B94D9E5EAD20BB386CEAE92C71CC73CAD40958DCD6",
+            "exponent": 0,
+            "aliases": [
+              "stk/uatom"
+            ]
+          },
+          {
+            "denom": "stkatom",
+            "exponent": 6,
+            "aliases": [
+              "stk/atom"
+            ]
+          }
+        ],
+        "base": "ibc/459B86A9627815005650C0B94D9E5EAD20BB386CEAE92C71CC73CAD40958DCD6",
+        "name": "PSTAKE staked ATOM",
+        "display": "stkatom",
+        "symbol": "stkATOM",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-26",
+              "base_denom": "stk/uatom",
               "chain_name": "persistence"
             },
             "chain": {
@@ -24700,6 +25302,46 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "PSTAKE Liquid-Staked ATOM",
+        "denom_units": [
+          {
+            "denom": "ibc/EA2B1630E20E3730F1BC908622F724417B9AED8982AC11BE6A2F59D6151F2BF2",
+            "exponent": 0,
+            "aliases": [
+              "stk/uatom"
+            ]
+          },
+          {
+            "denom": "stkatom",
+            "exponent": 6,
+            "aliases": [
+              "stk/atom"
+            ]
+          }
+        ],
+        "base": "ibc/EA2B1630E20E3730F1BC908622F724417B9AED8982AC11BE6A2F59D6151F2BF2",
+        "name": "PSTAKE staked ATOM",
+        "display": "stkatom",
+        "symbol": "stkATOM",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-27",
+              "base_denom": "stk/uatom",
+              "chain_name": "persistence"
+            },
+            "chain": {
+              "channel_id": "channel-13"
+            }
+          }
+        ]
+      },
+      {
         "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
         "denom_units": [
           {
@@ -24970,6 +25612,94 @@ const asset_lists: AssetList[] = [
             },
             "chain": {
               "channel_id": "channel-19"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chain_name": "teritori",
+    "assets": [
+      {
+        "description": "The native token of Osmosis",
+        "denom_units": [
+          {
+            "denom": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+            "exponent": 0,
+            "aliases": [
+              "uosmo"
+            ]
+          },
+          {
+            "denom": "osmo",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+        "name": "Osmosis",
+        "display": "osmo",
+        "symbol": "OSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
+        },
+        "coingecko_id": "osmosis",
+        "keywords": [
+          "dex",
+          "staking"
+        ],
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-362",
+              "base_denom": "uosmo",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F7E92EE59B5428793F3EF5C1A4CB2494F61A9D0C9A69469D02390714A1372E16",
+            "exponent": 0,
+            "aliases": [
+              "uion"
+            ]
+          },
+          {
+            "denom": "ion",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/F7E92EE59B5428793F3EF5C1A4CB2494F61A9D0C9A69469D02390714A1372E16",
+        "name": "Ion",
+        "display": "ion",
+        "symbol": "ION",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
+        },
+        "coingecko_id": "ion",
+        "keywords": [
+          "memecoin"
+        ],
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-362",
+              "base_denom": "uion",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
             }
           }
         ]
@@ -25478,6 +26208,83 @@ const asset_lists: AssetList[] = [
     "chain_name": "unification",
     "assets": [
       {
+        "description": "The native token of Gravity Bridge",
+        "denom_units": [
+          {
+            "denom": "ibc/C950356239AD2A205DE09FDF066B1F9FF19A7CA7145EA48A5B19B76EE47E52F7",
+            "exponent": 0,
+            "aliases": [
+              "ugraviton"
+            ]
+          },
+          {
+            "denom": "graviton",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/C950356239AD2A205DE09FDF066B1F9FF19A7CA7145EA48A5B19B76EE47E52F7",
+        "name": "Graviton",
+        "display": "graviton",
+        "symbol": "GRAV",
+        "coingecko_id": "graviton",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-98",
+              "base_denom": "ugraviton",
+              "chain_name": "gravitybridge"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
+        "denom_units": [
+          {
+            "denom": "ibc/5F999C145B3800DC8215811064A8E209829F0DEF6B82E1BFBEE39A03C2DD09AB",
+            "exponent": 0,
+            "aliases": [
+              "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
+            ]
+          },
+          {
+            "denom": "pstake",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/5F999C145B3800DC8215811064A8E209829F0DEF6B82E1BFBEE39A03C2DD09AB",
+        "name": "pSTAKE Finance",
+        "display": "pstake",
+        "symbol": "PSTAKE",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-98",
+              "base_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+              "chain_name": "gravitybridge"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
+        },
+        "coingecko_id": "pstake-finance"
+      },
+      {
         "description": "The native token of Osmosis",
         "denom_units": [
           {
@@ -25587,7 +26394,7 @@ const asset_lists: AssetList[] = [
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/okexchain/images/okc.png"
         },
-        "coingecko_id": "okc-token",
+        "coingecko_id": "oec-token",
         "traces": [
           {
             "type": "ibc",

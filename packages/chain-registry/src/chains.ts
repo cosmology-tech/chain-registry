@@ -2,6 +2,210 @@ import { Chain } from '@chain-registry/types';
 const chains: Chain[] = [
   {
     $schema: '../chain.schema.json',
+    chain_name: 'acrechain',
+    status: 'live',
+    network_type: 'mainnet',
+    website: 'https://arable.finance/',
+    pretty_name: 'Acrechain',
+    chain_id: 'acre_9052-1',
+    bech32_prefix: 'acre',
+    node_home: '$HOME/.acred',
+    daemon_name: 'acred',
+    key_algos: ['ethsecp256k1'],
+    slip44: 60,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'aacre',
+          fixed_min_gas_price: 250000000,
+          low_gas_price: 20000000000,
+          average_gas_price: 25000000000,
+          high_gas_price: 40000000000
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'aacre'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/ArableProtocol/acrechain',
+      recommended_version: 'v1.1.1',
+      compatible_versions: ['v1.1.1'],
+      binaries: {},
+      genesis: {
+        genesis_url:
+          'https://raw.githubusercontent.com/ArableProtocol/acrechain/main/networks/mainnet/acre_9052-1/genesis.json'
+      }
+    },
+    peers: {
+      seeds: [
+        {
+          id: 'ef28f065e24d60df275b06ae9f7fed8ba0823448',
+          address: '46.4.81.204:34656',
+          provider: 'Kalia Network'
+        },
+        {
+          id: 'e29de0ba5c6eb3cc813211887af4e92a71c54204',
+          address: '65.108.1.225:46656',
+          provider: 'Ramuchi.tech'
+        },
+        {
+          id: '276be584b4a8a3fd9c3ee1e09b7a447a60b201a4',
+          address: '116.203.29.162:26656',
+          provider: 'High Stakes'
+        },
+        {
+          id: 'e2d029c95a3476a23bad36f98b316b6d04b26001',
+          address: '49.12.33.189:36656',
+          provider: 'Stake-Take'
+        },
+        {
+          id: '1264ee73a2f40a16c2cbd80c1a824aad7cb082e4',
+          address: '149.102.146.252:26656',
+          provider: 'D-Stake'
+        },
+        {
+          id: 'bac90a590452337700e0033315e96430d19a3ffa',
+          address: '23.106.238.167:26656',
+          provider: 'Synergy Nodes'
+        },
+        {
+          id: 'd86d7a9d8059ae726f3322ff1eb9e2797fe62a72',
+          address: '65.108.233.44:26616',
+          provider: 'StakeTab'
+        }
+      ],
+      persistent_peers: [
+        {
+          id: 'ef28f065e24d60df275b06ae9f7fed8ba0823448',
+          address: '46.4.81.204:34656',
+          provider: 'Kalia Network'
+        },
+        {
+          id: 'e29de0ba5c6eb3cc813211887af4e92a71c54204',
+          address: '65.108.1.225:46656',
+          provider: 'Ramuchi.tech'
+        },
+        {
+          id: '276be584b4a8a3fd9c3ee1e09b7a447a60b201a4',
+          address: '116.203.29.162:26656',
+          provider: 'High Stakes'
+        },
+        {
+          id: 'e2d029c95a3476a23bad36f98b316b6d04b26001',
+          address: '49.12.33.189:36656',
+          provider: 'Stake-Take'
+        },
+        {
+          id: '1264ee73a2f40a16c2cbd80c1a824aad7cb082e4',
+          address: '149.102.146.252:26656',
+          provider: 'D-Stake'
+        },
+        {
+          id: 'bac90a590452337700e0033315e96430d19a3ffa',
+          address: '23.106.238.167:26656',
+          provider: 'Synergy Nodes'
+        },
+        {
+          id: 'd86d7a9d8059ae726f3322ff1eb9e2797fe62a72',
+          address: '65.108.233.44:26616',
+          provider: 'StakeTab'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc.acre.nodestake.top',
+          provider: 'nodestake'
+        },
+        {
+          address: 'https://rpc.acrescan.com',
+          provider: 'Anonstake'
+        },
+        {
+          address: 'https://rpc-acre.synergynodes.com',
+          provider: 'Synergy Nodes'
+        },
+        {
+          address: 'https://rpc-acrechain.nodeist.net',
+          provider: 'Nodeist'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://rest.acrescan.com',
+          provider: 'Anonstake'
+        },
+        {
+          address: 'https://lcd-acre.synergynodes.com',
+          provider: 'Synergy Nodes'
+        },
+        {
+          address: 'https://api-acrechain.nodeist.net',
+          provider: 'Nodeist'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://grpc.acre.nodestake.top',
+          provider: 'Nodestake'
+        }
+      ],
+      'evm-http-jsonrpc': [
+        {
+          address: 'https://evm.acrescan.com',
+          provider: 'Anonstake'
+        },
+        {
+          address: 'https://rpc2-acre.synergynodes.com',
+          provider: 'Synergy Nodes'
+        },
+        {
+          address: 'https://jsonrpc.acre.nodestake.top',
+          provider: 'Nodestake'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'blockscout',
+        url: 'https://acrescout.mindheartsoul.org',
+        tx_page: 'https://acrescout.mindheartsoul.org/tx/${txHash}'
+      },
+      {
+        kind: 'blockscout',
+        url: 'https://acrescan.com',
+        tx_page: 'https://acrescan.com/tx/${txHash}'
+      },
+      {
+        kind: 'blockscout',
+        url: 'https://acreblockexplorer.jet-node.com',
+        tx_page: 'https://acreblockexplorer.jet-node.com/tx/${txHash}'
+      },
+      {
+        kind: 'ping.pub',
+        url: 'https://explorer.nodestake.top/acre',
+        tx_page: 'https://explorer.nodestake.top/acre/tx/${txHash}'
+      },
+      {
+        kind: 'ping.pub',
+        url: 'https://cosmosrun.info/acre-mainnet',
+        tx_page: 'https://cosmosrun.info/acre-mainnet/tx/${txHash}'
+      },
+      {
+        kind: 'ping.pub',
+        url: 'https://exp.nodeist.net/m-acrechain/',
+        tx_page: 'https://exp.nodeist.net/m-acrechain/tx/${txHash}'
+      }
+    ]
+  },
+  {
+    $schema: '../chain.schema.json',
     chain_name: 'agoric',
     status: 'live',
     network_type: 'mainnet',
@@ -9,7 +213,7 @@ const chains: Chain[] = [
     pretty_name: 'Agoric',
     chain_id: 'agoric-3',
     bech32_prefix: 'agoric',
-    daemon_name: 'ag0',
+    daemon_name: 'agd',
     node_home: '$HOME/.agoric',
     slip44: 564,
     explorers: [
@@ -33,9 +237,9 @@ const chains: Chain[] = [
       }
     ],
     codebase: {
-      git_repo: 'https://github.com/Agoric/ag0/',
-      recommended_version: 'agoric-upgrade-7',
-      compatible_versions: ['agoric-upgrade-7'],
+      git_repo: 'https://github.com/Agoric/agoric-sdk/',
+      recommended_version: 'agoric-upgrade-8',
+      compatible_versions: ['agoric-upgrade-8'],
       genesis: {
         genesis_url: 'https://main.agoric.net/genesis.json'
       }
@@ -123,6 +327,7 @@ const chains: Chain[] = [
     daemon_name: 'aiozd',
     node_home: '$HOME/.aioz',
     key_algos: ['ethsecp256k1'],
+    extra_codecs: ['ethermint'],
     slip44: 60,
     fees: {
       fee_tokens: [
@@ -249,11 +454,11 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/ovrclk/akash/',
-      recommended_version: 'v0.16.8',
-      compatible_versions: ['v0.16.8'],
+      recommended_version: 'v0.18.1',
+      compatible_versions: ['v0.18.0', 'v0.18.1'],
       binaries: {
         'linux/amd64':
-          'https://github.com/ovrclk/akash/releases/download/v0.16.8/akash_0.16.8_linux_amd64.zip'
+          'https://github.com/ovrclk/akash/releases/download/v0.18.1/akash_0.18.1_linux_amd64.zip'
       },
       genesis: {
         genesis_url:
@@ -491,7 +696,8 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/akash',
-        tx_page: 'https://www.mintscan.io/akash/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/akash/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/akash/account/${accountAddress}'
       },
       {
         kind: 'ping.pub',
@@ -575,7 +781,7 @@ const chains: Chain[] = [
     },
     explorers: [
       {
-        kind: 'Ping',
+        kind: 'ping.pub',
         url: 'https://testnet.ping.pub/arkh',
         tx_page: 'https://testnet.ping.pub/arkh/tx/${txHash}'
       }
@@ -983,7 +1189,9 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/asset-mantle',
-        tx_page: 'https://www.mintscan.io/asset-mantle/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/asset-mantle/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/asset-mantle/account/${accountAddress}'
       },
       {
         kind: 'ping.pub',
@@ -1114,7 +1322,7 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://axelar.rpc.stakin.com',
+          address: 'https://axelar.rpc.stakin-nodes.com',
           provider: 'Stakin'
         },
         {
@@ -1160,7 +1368,7 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://axelar.rest.stakin.com',
+          address: 'https://axelar.rest.stakin-nodes.com',
           provider: 'Stakin'
         },
         {
@@ -1202,7 +1410,7 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'axelar.grpc.stakin.com:443',
+          address: 'axelar.grpc.stakin-nodes.com:443',
           provider: 'Stakin'
         },
         {
@@ -1230,7 +1438,8 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/axelar',
-        tx_page: 'https://www.mintscan.io/axelar/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/axelar/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/axelar/account/${accountAddress}'
       },
       {
         kind: 'explorers.guru',
@@ -1342,7 +1551,8 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/band',
-        tx_page: 'https://www.mintscan.io/band/txs${txHash}'
+        tx_page: 'https://www.mintscan.io/band/txs${txHash}',
+        account_page: 'https://www.mintscan.io/band/account/${accountAddress}'
       },
       {
         kind: 'ping.pub',
@@ -1378,19 +1588,19 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/bze-alphateam/bze',
-      recommended_version: 'v5.0.1',
-      compatible_versions: ['v5.0.1'],
+      recommended_version: 'v5.1.2',
+      compatible_versions: ['v5.1.2'],
       binaries: {
-        'linux/amd64':
-          'https://github.com/bze-alphateam/bze/releases/download/v5.0.1/bze-5.0.1-linux-amd64.tar.gz',
-        'linux/arm64':
-          'https://github.com/bze-alphateam/bze/releases/download/v5.0.1/bze-5.0.1-linux-arm64.tar.gz',
         'darwin/amd64':
-          'https://github.com/bze-alphateam/bze/releases/download/v5.0.1/bze-5.0.1-darwin-amd64.tar.gz',
+          'https://github.com/bze-alphateam/bze/releases/download/v5.1.2/bze-5.1.2-darwin-amd64.tar.gz',
         'darwin/arm64':
-          'https://github.com/bze-alphateam/bze/releases/download/v5.0.1/bze-5.0.1-darwin-arm64.tar.gz',
+          'https://github.com/bze-alphateam/bze/releases/download/v5.1.2/bze-5.1.2-darwin-arm64.tar.gz',
+        'linux/amd64':
+          'https://github.com/bze-alphateam/bze/releases/download/v5.1.2/bze-5.1.2-linux-amd64.tar.gz',
+        'linux/arm64':
+          'https://github.com/bze-alphateam/bze/releases/download/v5.1.2/bze-5.1.2-linux-arm64.tar.gz',
         'windows/amd64':
-          'https://github.com/bze-alphateam/bze/releases/download/v5.0.1/bze-5.0.1-win64.zip'
+          'https://github.com/bze-alphateam/bze/releases/download/v5.1.2/bze-5.1.2-win64.zip'
       },
       genesis: {
         genesis_url:
@@ -1466,12 +1676,12 @@ const chains: Chain[] = [
     },
     explorers: [
       {
-        kind: 'Ping',
+        kind: 'ping.pub',
         url: 'https://explorers.vidulum.app/beezee',
         tx_page: 'https://explorers.vidulum.app/beezee/tx/${txHash}'
       },
       {
-        kind: 'Ping',
+        kind: 'ping.pub',
         url: 'https://explorer.erialos.me/beezee',
         tx_page: 'https://explorer.erialos.me/beezee/tx/${txHash}'
       }
@@ -1605,6 +1815,10 @@ const chains: Chain[] = [
         {
           address: 'https://bitcanna.nodejumper.io',
           provider: 'Nodejumper 🚀'
+        },
+        {
+          address: 'https://rpc-bcna.kjinc.io/',
+          provider: 'KJINC.io'
         }
       ],
       grpc: [
@@ -1657,6 +1871,10 @@ const chains: Chain[] = [
         {
           address: 'https://bitcanna.nodejumper.io:1317',
           provider: 'Nodejumper 🚀'
+        },
+        {
+          address: 'https://api-bcna.kjinc.io/',
+          provider: 'KJINC.io'
         }
       ]
     },
@@ -1672,7 +1890,7 @@ const chains: Chain[] = [
         tx_page: 'https://cosmos-explorer.bitcanna.io/transactions/${txHash}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/bitcanna',
         tx_page: 'https://ping.pub/bitcanna/tx/${txHash}'
       },
@@ -1913,17 +2131,19 @@ const chains: Chain[] = [
         tx_page: 'https://ezstaking.tools/bitsong/txs/${txHash}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/bitsong',
         tx_page: 'https://ping.pub/bitsong/tx/${txHash}'
       },
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/bitsong',
-        tx_page: 'https://www.mintscan.io/bitsong/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/bitsong/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/bitsong/account/${accountAddress}'
       },
       {
-        kind: 'big-dipper',
+        kind: 'bigdipper',
         url: 'https://explorebitsong.com',
         tx_page: 'https://explorebitsong.com/transactions/${txHash}'
       },
@@ -2050,7 +2270,7 @@ const chains: Chain[] = [
         tx_page: 'https://cyb.ai/network/bostrom/tx/${txHash}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/bostrom',
         tx_page: 'https://ping.pub/bostrom/tx/${txHash}'
       },
@@ -2130,11 +2350,6 @@ const chains: Chain[] = [
           id: '706e81c8c99e5d0cf37432df5f972818339f19b5',
           address: '34.122.124.28:26656',
           provider: 'Unknown'
-        },
-        {
-          id: '20e1000e88125698264454a884812746c2eb4807',
-          address: 'seeds.lavenderfive.com:15556',
-          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -2160,10 +2375,6 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://canto-rpc.lavenderfive.com/',
-          provider: 'Lavender.Five Nodes 🐝'
-        },
-        {
           address: 'https://rpc.canto.silentvalidator.com/',
           provider: 'silent'
         }
@@ -2182,10 +2393,6 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://canto-api.lavenderfive.com/',
-          provider: 'Lavender.Five Nodes 🐝'
-        },
-        {
           address: 'https://api.canto.silentvalidator.com/',
           provider: 'silent'
         }
@@ -2198,10 +2405,6 @@ const chains: Chain[] = [
         {
           address: 'https://grpc.canto.nodestake.top',
           provider: 'NodeStake'
-        },
-        {
-          address: 'https://canto-grpc.lavenderfive.com:443/',
-          provider: 'Lavender.Five Nodes 🐝'
         },
         {
           address: 'https://grpc.canto.silentvalidator.com/',
@@ -2539,7 +2742,7 @@ const chains: Chain[] = [
     },
     explorers: [
       {
-        kind: 'SkyNet',
+        kind: 'skynetexplorers',
         url: 'https://skynetexplorers.com/cerberus',
         tx_page: 'https://skynetexplorers.com/cerberus/tx/${txHash}'
       },
@@ -2596,6 +2799,11 @@ const chains: Chain[] = [
     peers: {
       persistent_peers: [
         {
+          id: '5b62ff6035d9c8143c0ebf4fe05fa0b22d96bb05',
+          address: 'rpc.c4e.ppnv.space:13656',
+          provider: 'PPNV Service'
+        },
+        {
           id: '084a5c788c9c61541152192d7dfe055c153af642',
           address: 'node1.c4e.io:26656',
           provider: 'C4E'
@@ -2627,28 +2835,80 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
+          address: 'http://rpc.c4e.ppnv.space:13657',
+          provider: 'PPNV Service'
+        },
+        {
           address: 'https://rpc.c4e.io/',
           provider: 'C4E'
+        },
+        {
+          address: 'https://rpc.c4e.nodestake.top',
+          provider: 'NodeStake'
+        },
+        {
+          address: 'https://rpc-c4e.nodeist.net',
+          provider: 'Nodeist'
         }
       ],
       rest: [
         {
+          address: 'https://api.c4e.ppnv.space',
+          provider: 'PPNV Service'
+        },
+        {
           address: 'https://lcd.c4e.io/',
           provider: 'C4E'
+        },
+        {
+          address: 'https://api.c4e.nodestake.top',
+          provider: 'NodeStake'
+        },
+        {
+          address: 'https://api-c4e.nodeist.net',
+          provider: 'Nodeist'
         }
       ],
       grpc: [
         {
+          address: 'http://grpc.c4e.ppnv.space:13090',
+          provider: 'PPNV Service'
+        },
+        {
           address: 'https://grpc.c4e.io/',
           provider: 'C4E'
+        },
+        {
+          address: 'https://grpc.c4e.nodestake.top',
+          provider: 'NodeStake'
+        },
+        {
+          address: 'https://grpc-c4e.nodeist.net',
+          provider: 'Nodeist'
         }
       ]
     },
     explorers: [
       {
         kind: 'explorer',
+        url: 'https://explorer.ppnv.space/c4e',
+        tx_page: 'https://explorer.ppnv.space/c4e/transactions/${txHash}'
+      },
+      {
+        kind: 'explorer',
         url: 'https://explorer.c4e.io/',
         tx_page: 'https://explorer.c4e.io/transactions/${txHash}'
+      },
+      {
+        kind: 'NodeStake Explorer',
+        url: 'https://explorer.nodestake.top/chain4energy',
+        tx_page:
+          'https://explorer.nodestake.top/chain4energy/transactions/${txHash}'
+      },
+      {
+        kind: 'Nodeist Explorer',
+        url: 'https://exp.nodeist.net/m-c4e',
+        tx_page: 'https://exp.nodeist.net/m-c4e/transactions/${txHash}'
       }
     ]
   },
@@ -2684,8 +2944,8 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/cheqd/cheqd-node',
-      recommended_version: '0.6.9',
-      compatible_versions: ['0.6.9', '0.6.8', '0.6.7', '0.6.1', 'v0.6.0'],
+      recommended_version: 'v0.6.9',
+      compatible_versions: ['v0.6.9', 'v0.6.8', 'v0.6.7', 'v0.6.1', 'v0.6.0'],
       binaries: {
         'linux/amd64':
           'https://github.com/cheqd/cheqd-node/releases/download/0.6.9/cheqd-noded-0.6.9-Linux-arm64.tar.gz',
@@ -2803,25 +3063,35 @@ const chains: Chain[] = [
     },
     explorers: [
       {
-        kind: 'EZStaking Tools',
-        url: 'https://ezstaking.tools/cheqd',
-        tx_page: 'https://ezstaking.tools/cheqd/txs/${txHash}'
-      },
-      {
         kind: 'bigdipper',
         url: 'https://explorer.cheqd.io/',
         tx_page: 'https://explorer.cheqd.io/transactions/${txHash}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/cheqd',
         tx_page: 'https://ping.pub/cheqd/tx/${txHash}'
       },
       {
-        kind: 'atomscan.com',
+        kind: 'atomscan',
         url: 'https://atomscan.com/cheqd',
         tx_page: 'https://atomscan.com/cheqd/transactions/${txHash}',
         account_page: 'https://atomscan.com/cheqd/accounts/${accountAddress}'
+      },
+      {
+        kind: 'ezstaking',
+        url: 'https://ezstaking.tools/cheqd',
+        tx_page: 'https://ezstaking.tools/cheqd/txs/${txHash}'
+      },
+      {
+        kind: 'ping.pub',
+        url: 'https://look.chillvalidation.com/cheqd',
+        tx_page: 'https://look.chillvalidation.com/cheqd/tx/${txHash}'
+      },
+      {
+        kind: 'ping.pub',
+        url: 'https://ping.wildsage.io/cheqd',
+        tx_page: 'https://ping.wildsage.io/cheqd/tx/${txHash}'
       }
     ],
     logo_URIs: {
@@ -2860,8 +3130,8 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/ChihuahuaChain/chihuahua/',
-      recommended_version: 'v3.1.0',
-      compatible_versions: ['v3.1.0'],
+      recommended_version: 'v4.1.0',
+      compatible_versions: ['v4.1.0'],
       genesis: {
         genesis_url:
           'https://raw.githubusercontent.com/ChihuahuaChain/chihuahua/main/mainnet/genesis.json'
@@ -2869,6 +3139,11 @@ const chains: Chain[] = [
     },
     peers: {
       seeds: [
+        {
+          id: 'babc3f3f7804933265ec9c40ad94f4da8e9e0017',
+          address: 'seed.rhinostake.com:12956',
+          provider: 'RHINO'
+        },
         {
           id: '4936e377b4d4f17048f8961838a5035a4d21240c',
           address: 'chihuahua-seed-01.mercury-nodes.net:29540'
@@ -2924,11 +3199,6 @@ const chains: Chain[] = [
           id: '38547b7b6868f93af1664d9ab0e718949b8853ec',
           address: '54.184.20.240:30758',
           provider: '0base.vc'
-        },
-        {
-          id: 'a9640eb569620d1f7be018a9e1919b0357a18b8c',
-          address: '38.146.3.160:26656',
-          provider: 'RHINO'
         }
       ]
     },
@@ -2965,6 +3235,10 @@ const chains: Chain[] = [
         {
           address: 'https://chihuahua-rpc.kleomedes.network',
           provider: 'Kleomedes'
+        },
+        {
+          address: 'https://rpc-chihuahua.pupmos.network/',
+          provider: 'PUPMØS'
         }
       ],
       rest: [
@@ -2995,6 +3269,10 @@ const chains: Chain[] = [
         {
           address: 'https://chihuahua-api.kleomedes.network',
           provider: 'Kleomedes'
+        },
+        {
+          address: 'https://api-chihuahua.pupmos.network/',
+          provider: 'PUPMØS'
         }
       ],
       grpc: [
@@ -3025,7 +3303,9 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://mintscan.io/chihuahua',
-        tx_page: 'https://mintscan.io/chihuahua/txs/${txHash}'
+        tx_page: 'https://mintscan.io/chihuahua/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/chihuahua/account/${accountAddress}'
       },
       {
         kind: 'atomscan',
@@ -3165,8 +3445,8 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/comdex-official/comdex',
-      recommended_version: 'v0.1.3',
-      compatible_versions: ['v0.1.3'],
+      recommended_version: 'v5.0.0',
+      compatible_versions: ['v5.0.0'],
       genesis: {
         genesis_url:
           'https://comdex-mainnet-genesis.s3.ap-southeast-1.amazonaws.com/genesis.json'
@@ -3351,7 +3631,8 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/comdex',
-        tx_page: 'https://www.mintscan.io/comdex/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/comdex/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/comdex/account/${accountAddress}'
       },
       {
         kind: 'aneka',
@@ -3359,7 +3640,7 @@ const chains: Chain[] = [
         tx_page: 'https://comdex.aneka.io/txs/${txHash}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/comdex',
         tx_page: 'https://ping.pub/comdex/tx/${txHash}'
       },
@@ -3691,7 +3972,7 @@ const chains: Chain[] = [
           provider: 'ecostake'
         },
         {
-          address: 'https://rpc.cosmoshub.pupmos.network',
+          address: 'https://rpc-cosmoshub.pupmos.network',
           provider: 'PUPMØS'
         },
         {
@@ -3731,7 +4012,7 @@ const chains: Chain[] = [
           provider: 'DragonStake'
         },
         {
-          address: 'https://cosmoshub.rpc.stakin.com',
+          address: 'https://cosmoshub.rpc.stakin-nodes.com',
           provider: 'Stakin'
         },
         {
@@ -3765,7 +4046,7 @@ const chains: Chain[] = [
           provider: 'ecostake'
         },
         {
-          address: 'https://api.cosmoshub.pupmos.network',
+          address: 'https://api-cosmoshub.pupmos.network',
           provider: 'PUPMØS'
         },
         {
@@ -3809,7 +4090,7 @@ const chains: Chain[] = [
           provider: 'Architect Nodes'
         },
         {
-          address: 'https://cosmoshub.rest.stakin.com',
+          address: 'https://cosmoshub.rest.stakin-nodes.com',
           provider: 'Stakin'
         },
         {
@@ -3855,7 +4136,7 @@ const chains: Chain[] = [
           provider: 'DragonStake'
         },
         {
-          address: 'cosmoshub.grpc.stakin.com:443',
+          address: 'cosmoshub.grpc.stakin-nodes.com:443',
           provider: 'Stakin'
         },
         {
@@ -3873,10 +4154,11 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/cosmos',
-        tx_page: 'https://www.mintscan.io/cosmos/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/cosmos/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/cosmos/account/${accountAddress}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/cosmos',
         tx_page: 'https://ping.pub/cosmos/tx/${txHash}'
       },
@@ -4034,11 +4316,11 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc.crescent.pupmos.network',
+          address: 'https://rpc-crescent.pupmos.network',
           provider: 'PUPMØS'
         },
         {
-          address: 'https://crescent.rpc.stakin.com',
+          address: 'https://crescent.rpc.stakin-nodes.com',
           provider: 'Stakin'
         }
       ],
@@ -4048,7 +4330,7 @@ const chains: Chain[] = [
           provider: 'crescent'
         },
         {
-          address: 'https://api.crescent.pupmos.network',
+          address: 'https://api-crescent.pupmos.network',
           provider: 'PUPMØS'
         },
         {
@@ -4056,7 +4338,7 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://crescent.rest.stakin.com',
+          address: 'https://crescent.rest.stakin-nodes.com',
           provider: 'Stakin'
         }
       ],
@@ -4070,7 +4352,7 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'crescent.grpc.stakin.com:443',
+          address: 'crescent.grpc.stakin-nodes.com:443',
           provider: 'Stakin'
         }
       ]
@@ -4079,7 +4361,9 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/crescent',
-        tx_page: 'https://www.mintscan.io/crescent/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/crescent/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/crescent/account/${accountAddress}'
       },
       {
         kind: 'ping.pub',
@@ -4103,10 +4387,13 @@ const chains: Chain[] = [
     chain_name: 'cronos',
     status: 'live',
     network_type: 'mainnet',
+    website: 'https://cronos.org',
     pretty_name: 'Cronos',
     chain_id: 'cronosmainnet_25-1',
     bech32_prefix: 'crc',
+    daemon_name: 'cronosd',
     node_home: '$HOME/.cronos',
+    key_algos: ['ethsecp256k1'],
     slip44: 60,
     fees: {
       fee_tokens: [
@@ -4117,19 +4404,19 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/crypto-org-chain/cronos',
-      recommended_version: 'v0.7.0',
-      compatible_versions: ['v0.7.0'],
+      recommended_version: 'v0.8.3',
+      compatible_versions: ['v0.7.0', 'v0.7.1', 'v0.8.0', 'v0.8.1', 'v0.8.2'],
       binaries: {
         'linux/amd64':
-          'https://github.com/crypto-org-chain/cronos/releases/download/v0.7.0/cronos_0.7.0_Linux_x86_64.tar.gz',
+          'https://github.com/crypto-org-chain/cronos/releases/download/v0.8.3/cronos_0.8.3_Linux_x86_64.tar.gz',
         'linux/arm64':
-          'https://github.com/crypto-org-chain/cronos/releases/download/v0.7.0/cronos_0.7.0_Linux_arm64.tar.gz',
+          'https://github.com/crypto-org-chain/cronos/releases/download/v0.8.3/cronos_0.8.3_Linux_arm64.tar.gz',
         'darwin/amd64':
-          'https://github.com/crypto-org-chain/cronos/releases/download/v0.7.0/cronos_0.7.0_Darwin_x86_64.tar.gz',
+          'https://github.com/crypto-org-chain/cronos/releases/download/v0.8.3/cronos_0.8.3_Darwin_x86_64.tar.gz',
         'darwin/arm64':
-          'https://github.com/crypto-org-chain/cronos/releases/download/v0.7.0/cronos_0.7.0_Darwin_arm64.tar.gz',
+          'https://github.com/crypto-org-chain/cronos/releases/download/v0.8.3/cronos_0.8.3_Darwin_arm64.tar.gz',
         'windows/amd64':
-          'https://github.com/crypto-org-chain/cronos/releases/download/v0.7.0/cronos_0.7.0_Windows_x86_64.zip'
+          'https://github.com/crypto-org-chain/cronos/releases/download/v0.8.3/cronos_0.8.3_Windows_x86_64.zip'
       },
       genesis: {
         genesis_url:
@@ -4220,7 +4507,7 @@ const chains: Chain[] = [
         tx_page: 'https://cronoscan.com/tx/${txHash}'
       },
       {
-        kind: 'crypto-org',
+        kind: 'crypto.org',
         url: 'https://cronos.org/explorer',
         tx_page: 'https://cronos.org/explorer/tx/${txHash}'
       }
@@ -4234,6 +4521,7 @@ const chains: Chain[] = [
     pretty_name: 'Crypto.org Chain',
     chain_id: 'crypto-org-chain-mainnet-1',
     bech32_prefix: 'cro',
+    daemon_name: 'chain-maind',
     node_home: '$HOME/.chain-maind',
     slip44: 394,
     fees: {
@@ -4402,7 +4690,9 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/crypto-org',
-        tx_page: 'https://www.mintscan.io/crypto-org/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/crypto-org/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/crypto-org/account/${accountAddress}'
       },
       {
         kind: 'crypto.org',
@@ -4410,7 +4700,7 @@ const chains: Chain[] = [
         tx_page: 'https://crypto.org/explorer/tx/${txHash}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/crypto-com-chain',
         tx_page: 'https://ping.pub/crypto-com-chain/tx/${txHash}'
       },
@@ -4429,12 +4719,13 @@ const chains: Chain[] = [
     pretty_name: 'Cudos',
     chain_id: 'cudos-1',
     bech32_prefix: 'cudos',
+    daemon_name: 'cudos-noded',
     key_algos: ['secp256k1'],
     slip44: 118,
     codebase: {
       git_repo: 'https://github.com/CudoVentures/cudos-node',
-      recommended_version: 'v1.0.0',
-      compatible_versions: ['v1.0.0'],
+      recommended_version: 'v1.0.1',
+      compatible_versions: ['v1.0.1'],
       genesis: {
         genesis_url:
           'https://github.com/CudoVentures/cudos-builders/blob/v1.0.0/docker/config/genesis.mainnet.json'
@@ -4520,7 +4811,7 @@ const chains: Chain[] = [
     },
     explorers: [
       {
-        kind: 'big-dipper-v2',
+        kind: 'bigdipper',
         url: 'https://explorer.cudos.org/',
         tx_page: 'https://explorer.cudos.org/transactions/${txHash}',
         account_page: 'https://explorer.cudos.org/accounts/${accountAddress}'
@@ -4868,7 +5159,7 @@ const chains: Chain[] = [
         tx_page: 'https://ezstaking.tools/desmos/txs/${txHash}'
       },
       {
-        kind: 'big-dipper',
+        kind: 'bigdipper',
         url: 'https://explorer.desmos.network',
         tx_page: 'https://explorer.desmos.network/transactions/${txHash}'
       },
@@ -4879,7 +5170,7 @@ const chains: Chain[] = [
         account_page: 'https://www.mintscan.io/desmos/account/${accountAddress}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/desmos',
         tx_page: 'https://ping.pub/desmos/tx/${txHash}'
       },
@@ -4902,6 +5193,7 @@ const chains: Chain[] = [
     daemon_name: 'digd',
     node_home: '$HOME/.dig',
     key_algos: ['secp256k1', 'ethsecp256k1'],
+    extra_codecs: ['ethermint'],
     slip44: 118,
     fees: {
       fee_tokens: [
@@ -4938,11 +5230,6 @@ const chains: Chain[] = [
         {
           id: 'e2c96b96d4c3a461fb246edac3b3cdbf47768838',
           address: '65.21.202.37:6969'
-        },
-        {
-          id: '20e1000e88125698264454a884812746c2eb4807',
-          address: 'seeds.lavenderfive.com:16356',
-          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -4992,10 +5279,6 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-dig-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
-        },
-        {
-          address: 'https://dig-rpc.lavenderfive.com/',
-          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
@@ -5005,20 +5288,12 @@ const chains: Chain[] = [
         {
           address: 'https://api-dig-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
-        },
-        {
-          address: 'https://dig-api.lavenderfive.com/',
-          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       grpc: [
         {
           address: 'grpc-dig-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
-        },
-        {
-          address: 'https://dig-grpc.lavenderfive.com:443/',
-          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
@@ -5032,6 +5307,111 @@ const chains: Chain[] = [
         kind: 'atomscan',
         url: 'https://atomscan.com/dig',
         tx_page: 'https://atomscan.com/dig/transactions/${txHash}'
+      }
+    ]
+  },
+  {
+    $schema: '../chain.schema.json',
+    chain_name: 'dyson',
+    website: 'https://dysonprotocol.com/',
+    status: 'live',
+    network_type: 'mainnet',
+    pretty_name: 'Dyson Protocol',
+    chain_id: 'dyson-mainnet-01',
+    bech32_prefix: 'dys',
+    node_home: '$HOME/.dyson',
+    daemon_name: 'dysond',
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'dys',
+          low_gas_price: 0.001,
+          average_gas_price: 0.002,
+          high_gas_price: 0.01
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'dys'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://gitlab.com/dysonproject/dyson',
+      recommended_version: 'v0.0.0-rc1',
+      compatible_versions: ['v0.0.0-rc1'],
+      genesis: {
+        genesis_url:
+          'https://gitlab.com/dysonproject/dyson-deploy/-/raw/develop/genesis.json'
+      }
+    },
+    peers: {
+      seeds: [
+        {
+          id: '2c4f8e193fd10ab3a2bc919b484fd1c78eceffb3',
+          address: '85.159.211.61:26656',
+          provider: ''
+        },
+        {
+          id: '1f3bd1f48c7c277e7be83895cdbb46f8333adb61',
+          address: '178.79.183.171:26656',
+          provider: ''
+        }
+      ],
+      persistent_peers: [
+        {
+          id: '2c4f8e193fd10ab3a2bc919b484fd1c78eceffb3',
+          address: '85.159.211.61:26656',
+          provider: ''
+        },
+        {
+          id: '2c4f8e193fd10ab3a2bc919b484fd1c78eceffb3',
+          address: '85.159.211.61:26656',
+          provider: ''
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://dys-tm.dyson.lol:443',
+          provider: 'lol'
+        },
+        {
+          address: 'https://dys-tm.dysonprotocol.com:443',
+          provider: 'dysonprotocol'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://dys-api.dyson.lol:443',
+          provider: 'lol'
+        },
+        {
+          address: 'https://dys-api.dysonprotocol.com:443',
+          provider: 'dysonprotocol'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://dys-grpc.dyson.lol:443',
+          provider: 'lol'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'dysonprotocol',
+        url: 'https://explorer.dys.dysonprotocol.com/dyson/',
+        tx_page: 'https://explorer.dys.dysonprotocol.com/dyson/tx/${txHash}'
+      },
+      {
+        kind: 'lol',
+        url: 'https://explorer.dys.dyson.lol',
+        tx_page: 'https://explorer.dys.dyson.lol/dyson/tx/${txHash}'
       }
     ]
   },
@@ -5243,7 +5623,7 @@ const chains: Chain[] = [
         tx_page: 'https://scout.ech.network/tx/${txHash}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/echelon',
         tx_page: 'https://ping.pub/echelon/tx/${txHash}'
       },
@@ -5462,10 +5842,11 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/emoney',
-        tx_page: 'https://www.mintscan.io/emoney/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/emoney/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/emoney/account/${accountAddress}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/e-money',
         tx_page: 'https://ping.pub/e-money/tx/${txHash}'
       },
@@ -5487,6 +5868,7 @@ const chains: Chain[] = [
     daemon_name: 'ethosd',
     node_home: '$HOME/.ethos',
     key_algos: ['ethsecp256k1'],
+    extra_codecs: ['ethermint'],
     slip44: 60,
     fees: {
       fee_tokens: [
@@ -5548,6 +5930,7 @@ const chains: Chain[] = [
     node_home: '$HOME/.evmosd',
     daemon_name: 'evmosd',
     key_algos: ['ethsecp256k1'],
+    extra_codecs: ['ethermint'],
     slip44: 60,
     fees: {
       fee_tokens: [
@@ -5589,6 +5972,11 @@ const chains: Chain[] = [
     },
     peers: {
       seeds: [
+        {
+          id: 'babc3f3f7804933265ec9c40ad94f4da8e9e0017',
+          address: 'seed.rhinostake.com:13456',
+          provider: 'RHINO'
+        },
         {
           id: '906840c2f447915f3d0e37bc68221f5494f541db',
           address: '3.39.58.32:26656',
@@ -5758,7 +6146,7 @@ const chains: Chain[] = [
           provider: 'TC Network'
         },
         {
-          address: 'https://evmos.rpc.stakin.com',
+          address: 'https://evmos.rpc.stakin-nodes.com',
           provider: 'Stakin'
         },
         {
@@ -5840,7 +6228,7 @@ const chains: Chain[] = [
           provider: 'TC Network'
         },
         {
-          address: 'https://evmos.rest.stakin.com',
+          address: 'https://evmos.rest.stakin-nodes.com',
           provider: 'Stakin'
         },
         {
@@ -5906,7 +6294,7 @@ const chains: Chain[] = [
           provider: 'silent'
         },
         {
-          address: 'evmos.grpc.stakin.com:443',
+          address: 'evmos.grpc.stakin-nodes.com:443',
           provider: 'Stakin'
         }
       ],
@@ -5948,7 +6336,7 @@ const chains: Chain[] = [
           provider: 'Golden Ratio Staking'
         },
         {
-          address: 'https://evmosevm.rpc.stakin.com',
+          address: 'https://evmosevm.rpc.stakin-nodes.com',
           provider: 'Stakin'
         }
       ]
@@ -5962,7 +6350,8 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/evmos',
-        tx_page: 'https://www.mintscan.io/evmos/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/evmos/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/evmos/account/${accountAddress}'
       },
       {
         kind: 'bigdipper',
@@ -5975,7 +6364,7 @@ const chains: Chain[] = [
         tx_page: 'https://evm.evmos.org/tx/${txHash}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/evmos',
         tx_page: 'https://ping.pub/evmos/tx/${txHash}'
       },
@@ -6095,6 +6484,14 @@ const chains: Chain[] = [
         {
           address: 'https://fetchai-rpc.kleomedes.network',
           provider: 'Kleomedes'
+        },
+        {
+          address: 'https://fetch-rpc.teasel.org',
+          provider: '𝗧𝗲𝗮𝘀𝗲𝗹'
+        },
+        {
+          address: 'https://fetch-rpc.antrixy.org',
+          provider: 'Antrix'
         }
       ],
       rest: [
@@ -6113,6 +6510,14 @@ const chains: Chain[] = [
         {
           address: 'https://fetchai-api.kleomedes.network',
           provider: 'Kleomedes'
+        },
+        {
+          address: 'https://fetch-rest.teasel.org',
+          provider: '𝗧𝗲𝗮𝘀𝗲𝗹'
+        },
+        {
+          address: 'https://fetch-rest.antrixy.org',
+          provider: 'Antrix'
         }
       ],
       grpc: [
@@ -6127,6 +6532,14 @@ const chains: Chain[] = [
         {
           address: 'fetch-grpc.polkachu.com:15290',
           provider: 'Polkachu'
+        },
+        {
+          address: 'fetch-grpc.teasel.org:443',
+          provider: '𝗧𝗲𝗮𝘀𝗲𝗹'
+        },
+        {
+          address: 'fetch-grpc.antrixy.org:443',
+          provider: 'Antrix'
         }
       ]
     },
@@ -6134,7 +6547,9 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/fetchai',
-        tx_page: 'https://www.mintscan.io/fetchai/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/fetchai/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/fetchai/account/${accountAddress}'
       },
       {
         kind: 'bigdipper',
@@ -6150,6 +6565,11 @@ const chains: Chain[] = [
         kind: 'atomscan',
         url: 'https://atomscan.com/fetchai',
         tx_page: 'https://atomscan.com/fetchai/transactions/${txHash}'
+      },
+      {
+        kind: 'bigdipper',
+        url: 'https://fetch-explorer.teasel.org',
+        tx_page: 'https://fetch-explorer.teasel.org/transactions/${txHash}'
       }
     ]
   },
@@ -6250,7 +6670,7 @@ const chains: Chain[] = [
         tx_page: 'https://ezstaking.tools/firmachain/txs/${txHash}'
       },
       {
-        kind: 'big-dipper',
+        kind: 'bigdipper',
         url: 'https://explorer.firmachain.dev',
         tx_page: 'https://explorer.firmachain.dev/transactions/${txHash}'
       },
@@ -6316,11 +6736,6 @@ const chains: Chain[] = [
           id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
           address: 'seeds.polkachu.com:14856',
           provider: 'Polkachu'
-        },
-        {
-          id: '20e1000e88125698264454a884812746c2eb4807',
-          address: 'seeds.lavenderfive.com:14856',
-          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -6406,10 +6821,6 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://galaxy-rpc.lavenderfive.com/',
-          provider: 'Lavender.Five Nodes 🐝'
-        },
-        {
           address: 'https://galaxy.nodejumper.io',
           provider: 'Nodejumper 🚀'
         },
@@ -6427,10 +6838,6 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://galaxy-api.lavenderfive.com/',
-          provider: 'Lavender.Five Nodes 🐝'
-        },
-        {
           address: 'https://galaxy.nodejumper.io:1317',
           provider: 'Nodejumper 🚀'
         },
@@ -6445,10 +6852,6 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://galaxy-grpc.lavenderfive.com:443/',
-          provider: 'Lavender.Five Nodes 🐝'
-        },
-        {
           address: 'https://galaxy.nodejumper.io:9090',
           provider: 'Nodejumper 🚀'
         },
@@ -6460,7 +6863,7 @@ const chains: Chain[] = [
     },
     explorers: [
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://explorer.postcapitalist.io/Galaxy',
         tx_page: 'https://explorer.postcapitalist.io/Galaxy/tx/${txHash}'
       }
@@ -6544,7 +6947,7 @@ const chains: Chain[] = [
     },
     explorers: [
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/genesisL1',
         tx_page: 'https://ping.pub/genesisL1/tx/${txHash}'
       },
@@ -6738,7 +7141,9 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/gravity-bridge',
-        tx_page: 'https://www.mintscan.io/gravity-bridge/${txHash}'
+        tx_page: 'https://www.mintscan.io/gravity-bridge/${txHash}',
+        account_page:
+          'https://www.mintscan.io/gravity-bridge/account/${accountAddress}'
       },
       {
         kind: 'ping.pub',
@@ -6894,8 +7299,8 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/ixofoundation/ixo-blockchain',
-      recommended_version: 'v0.18.1',
-      compatible_versions: ['v0.18.1', 'v0.18.0'],
+      recommended_version: 'v0.19.0',
+      compatible_versions: ['v0.19.0'],
       genesis: {
         genesis_url:
           'https://raw.githubusercontent.com/ixofoundation/genesis/main/impacthub-3/genesis.json'
@@ -7017,6 +7422,91 @@ const chains: Chain[] = [
   },
   {
     $schema: '../chain.schema.json',
+    chain_name: 'imversed',
+    status: 'live',
+    network_type: 'mainnet',
+    website: 'https://imversed.network/',
+    pretty_name: 'Imversed',
+    chain_id: 'imversed_5555555-1',
+    bech32_prefix: 'imv',
+    daemon_name: 'imversed',
+    node_home: '$HOME/.imversed',
+    key_algos: ['ethsecp256k1'],
+    extra_codecs: ['ethermint'],
+    slip44: 60,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'aimv',
+          fixed_min_gas_price: 250000000,
+          low_gas_price: 20000000000,
+          average_gas_price: 25000000000,
+          high_gas_price: 40000000000
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/imversed/imversed',
+      recommended_version: 'v3.11',
+      compatible_versions: ['v3.11'],
+      binaries: {
+        'linux/amd64':
+          'https://github.com/imversed/imversed/releases/download/v3.11/imversed_3.11_Linux_amd64.tar.gz'
+      },
+      genesis: {
+        genesis_url: 'https://static.imversed.com/mainnet/genesis.json'
+      }
+    },
+    peers: {
+      seeds: [
+        {
+          id: '6413d43ff0dce9400515f24e8e93a0cf28f0efff',
+          address: '35.209.184.54:26656'
+        }
+      ],
+      persistent_peers: [
+        {
+          id: '0968486e82c910b1d7adaacb43bf7e633b19665a',
+          address: '35.209.184.219:26656'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc.imversed.network:443',
+          provider: 'imversed'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://grpc.imversed.network:443',
+          provider: 'imversed'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://rest.imversed.network:443',
+          provider: 'imversed'
+        }
+      ],
+      'evm-http-jsonrpc': [
+        {
+          address: 'https://jsonrpc.imversed.network:443',
+          provider: 'imversed'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'blockscout',
+        url: 'https://txe.imversed.network/',
+        tx_page: 'https://txe.imversed.network/tx/${txHash}'
+      }
+    ]
+  },
+  {
+    $schema: '../chain.schema.json',
     chain_name: 'injective',
     status: 'live',
     network_type: 'mainnet',
@@ -7024,6 +7514,7 @@ const chains: Chain[] = [
     pretty_name: 'Injective',
     chain_id: 'injective-1',
     bech32_prefix: 'inj',
+    extra_codecs: ['injective'],
     slip44: 60,
     daemon_name: 'injectived',
     node_home: '$HOME/.injectived',
@@ -7163,7 +7654,7 @@ const chains: Chain[] = [
         tx_page: 'https://explorer.injective.network/transaction/${txHash}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/injective',
         tx_page: 'https://ping.pub/injective/tx/${txHash}'
       },
@@ -7171,6 +7662,13 @@ const chains: Chain[] = [
         kind: 'atomscan',
         url: 'https://atomscan.com/injective',
         tx_page: 'https://atomscan.com/injective/transactions/${txHash}'
+      },
+      {
+        kind: 'mintscan',
+        url: 'https://www.mintscan.io/injective',
+        tx_page: 'https://www.mintscan.io/injective/${txHash}',
+        account_page:
+          'https://www.mintscan.io/injective/account/${accountAddress}'
       }
     ]
   },
@@ -7310,10 +7808,11 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/iris',
-        tx_page: 'https://www.mintscan.io/iris/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/iris/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/iris/account/${accountAddress}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/iris-network',
         tx_page: 'https://ping.pub/iris-network/tx/${txHash}'
       },
@@ -7347,17 +7846,17 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/JackalLabs/canine-chain',
-      recommended_version: 'v1.1.0',
-      compatible_versions: ['v1.1.0'],
+      recommended_version: 'v1.1.2-hotfix',
+      compatible_versions: ['v1.1.2-hotfix'],
       binaries: {
         'linux/amd64':
-          'https://github.com/JackalLabs/canine-chain/releases/download/v1.1.0/canined-Linux',
+          'https://github.com/JackalLabs/canine-chain/releases/download/v1.1.2/canined-Linux',
         'darwin/amd64':
-          'https://github.com/JackalLabs/canine-chain/releases/download/v1.1.0/canined-macOS'
+          'https://github.com/JackalLabs/canine-chain/releases/download/v1.1.2/canined-macOS'
       },
       genesis: {
         genesis_url:
-          'https://jackaldao.com/wp-content/uploads/2022/10/genesis-final.txt'
+          'https://cdn.discordapp.com/attachments/1002389406650466405/1034968352591986859/updated_genesis2.json'
       }
     },
     peers: {
@@ -7435,8 +7934,20 @@ const chains: Chain[] = [
           provider: 'AgoraNodes'
         },
         {
+          address: 'https://m-jackal.rpc.utsa.tech',
+          provider: 'lesnik | UTSA'
+        },
+        {
           address: 'https://jackal-rpc.kleomedes.network',
           provider: 'Kleomedes'
+        },
+        {
+          address: 'https://rpc-jackal.huginn.tech',
+          provider: 'Huginn'
+        },
+        {
+          address: 'https://jackal.nodejumper.io:443',
+          provider: 'Nodejumper 🚀'
         }
       ],
       rest: [
@@ -7469,8 +7980,20 @@ const chains: Chain[] = [
           provider: 'AgoraNodes'
         },
         {
+          address: 'https://m-jackal.api.utsa.tech',
+          provider: 'lesnik | UTSA'
+        },
+        {
           address: 'https://jackal-api.kleomedes.network',
           provider: 'Kleomedes'
+        },
+        {
+          address: 'https://api.jackal.huginn.tech',
+          provider: 'Huginn'
+        },
+        {
+          address: 'https://jackal.nodejumper.io:1317',
+          provider: 'Nodejumper 🚀'
         }
       ],
       grpc: [
@@ -7501,12 +8024,16 @@ const chains: Chain[] = [
         {
           address: 'https://jackal-grpc.agoranodes.com',
           provider: 'AgoraNodes'
+        },
+        {
+          address: 'https://jackal.nodejumper.io:9090',
+          provider: 'Nodejumper 🚀'
         }
       ]
     },
     explorers: [
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/jackal',
         tx_page: 'https://ping.pub/jackal/tx/${txHash}'
       },
@@ -7514,6 +8041,11 @@ const chains: Chain[] = [
         kind: 'NodeStake',
         url: 'https://explorer.nodestake.top/jackal',
         tx_page: 'https://explorer.nodestake.top/jackal/tx/${txHash}'
+      },
+      {
+        kind: 'lesnik | UTSA',
+        url: 'https://exp.utsa.tech/jackal',
+        tx_page: 'https://exp.utsa.tech/jackal/tx/${txHash}'
       },
       {
         kind: 'Nodeist Explorer',
@@ -7567,6 +8099,11 @@ const chains: Chain[] = [
     },
     peers: {
       seeds: [
+        {
+          id: 'babc3f3f7804933265ec9c40ad94f4da8e9e0017',
+          address: 'seed.rhinostake.com:12656',
+          provider: 'RHINO'
+        },
         {
           id: '2484353dab0b2c1275765b8ffa2c50b3b36158ca',
           address: 'seed-node.junochain.com:26656'
@@ -7666,7 +8203,7 @@ const chains: Chain[] = [
           provider: 'Lavender.Five Nodes 🐝'
         },
         {
-          address: 'https://rpc.juno.pupmos.network',
+          address: 'https://rpc-juno.pupmos.network',
           provider: 'PUPMØS'
         },
         {
@@ -7694,7 +8231,7 @@ const chains: Chain[] = [
           provider: 'Nodejumper 🚀'
         },
         {
-          address: 'https://juno.rpc.stakin.com',
+          address: 'https://juno.rpc.stakin-nodes.com',
           provider: 'Stakin'
         },
         {
@@ -7708,6 +8245,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.juno.bh.rocks',
           provider: 'BlockHunters 🎯'
+        },
+        {
+          address: 'https://rpc.juno.kingnodes.com',
+          provider: 'kingnodes 👑'
         }
       ],
       rest: [
@@ -7732,7 +8273,7 @@ const chains: Chain[] = [
           provider: 'Lavender.Five Nodes 🐝'
         },
         {
-          address: 'https://api.juno.pupmos.network',
+          address: 'https://api-juno.pupmos.network',
           provider: 'PUPMØS'
         },
         {
@@ -7764,12 +8305,16 @@ const chains: Chain[] = [
           provider: 'Nodejumper 🚀'
         },
         {
-          address: 'https://juno.rest.stakin.com',
+          address: 'https://juno.rest.stakin-nodes.com',
           provider: 'Stakin'
         },
         {
           address: 'https://api.juno.bh.rocks',
           provider: 'BlockHunters 🎯'
+        },
+        {
+          address: 'https://api.juno.kingnodes.com',
+          provider: 'kingnodes 👑'
         }
       ],
       grpc: [
@@ -7806,12 +8351,16 @@ const chains: Chain[] = [
           provider: 'Nodejumper 🚀'
         },
         {
-          address: 'juno.grpc.stakin.com:443',
+          address: 'juno.grpc.stakin-nodes.com:443',
           provider: 'Stakin'
         },
         {
           address: 'https://grpc.juno.bh.rocks:443',
           provider: 'BlockHunters 🎯'
+        },
+        {
+          address: 'https://grpc.juno.kingnodes.com',
+          provider: 'kingnodes 👑'
         }
       ]
     },
@@ -7834,7 +8383,8 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/juno',
-        tx_page: 'https://www.mintscan.io/juno/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/juno/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/juno/account/${accountAddress}'
       },
       {
         kind: 'atomscan',
@@ -7995,10 +8545,11 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/kava',
-        tx_page: 'https://www.mintscan.io/kava/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/kava/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/kava/account/${accountAddress}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/kava',
         tx_page: 'https://ping.pub/kava/tx/${txHash}'
       },
@@ -8191,10 +8742,12 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/ki-chain',
-        tx_page: 'https://www.mintscan.io/ki-chain/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/ki-chain/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/ki-chain/account/${accountAddress}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/kichain',
         tx_page: 'https://ping.pub/kichain/tx/${txHash}'
       },
@@ -8217,9 +8770,9 @@ const chains: Chain[] = [
     daemon_name: 'knstld',
     node_home: '$HOME/.knstld',
     codebase: {
-      git_repo: 'https://github.com/konstellation/konstellation',
-      recommended_version: 'v0.6.0',
-      compatible_versions: ['v0.6.0'],
+      git_repo: 'https://github.com/knstl/konstellation',
+      recommended_version: 'v0.6.1',
+      compatible_versions: ['v0.6.1'],
       genesis: {
         genesis_url:
           'https://raw.githubusercontent.com/Konstellation/konstellation/master/config/genesis.json'
@@ -8413,6 +8966,13 @@ const chains: Chain[] = [
         kind: 'konstellation',
         url: 'https://explorer.konstellation.tech/',
         tx_page: 'https://explorer.konstellation.tech/tx/${txHash}'
+      },
+      {
+        kind: 'mintscan',
+        url: 'https://www.mintscan.io/konstellation',
+        tx_page: 'https://www.mintscan.io/konstellation/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/konstellation/account/${accountAddress}'
       }
     ],
     slip44: 118
@@ -8536,6 +9096,10 @@ const chains: Chain[] = [
         {
           address: 'https://kuji-rpc.kleomedes.network',
           provider: 'Kleomedes'
+        },
+        {
+          address: 'https://rpc-kujira.huginn.tech',
+          provider: 'Huginn'
         }
       ],
       grpc: [
@@ -8612,6 +9176,10 @@ const chains: Chain[] = [
         {
           address: 'https://kuji-api.kleomedes.network',
           provider: 'Kleomedes'
+        },
+        {
+          address: 'https://api.kujira.huginn.tech',
+          provider: 'Huginn'
         }
       ]
     },
@@ -8635,6 +9203,12 @@ const chains: Chain[] = [
         kind: 'Nodeist Explorer',
         url: 'https://exp.nodeist.net/M-Kujira',
         tx_page: 'https://exp.nodeist.net/M-Kujira/transactions/${txHash}'
+      },
+      {
+        kind: 'mintscan',
+        url: 'https://www.mintscan.io/kujira',
+        tx_page: 'https://www.mintscan.io/kujira/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/kujira/account/${accountAddress}'
       }
     ],
     logo_URIs: {
@@ -8925,7 +9499,7 @@ const chains: Chain[] = [
         url: 'https://stake.like.co/'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/likecoin',
         tx_page: 'https://ping.pub/likecoin/tx/${txHash}'
       },
@@ -8952,6 +9526,7 @@ const chains: Chain[] = [
     daemon_name: 'logosd',
     node_home: '$HOME/.logos',
     key_algos: ['ethsecp256k1'],
+    extra_codecs: ['ethermint'],
     slip44: 60,
     fees: {
       fee_tokens: [
@@ -9000,6 +9575,97 @@ const chains: Chain[] = [
         genesis_url: ''
       }
     }
+  },
+  {
+    $schema: '../chain.schema.json',
+    chain_name: 'loyal',
+    status: 'live',
+    network_type: 'mainnet',
+    website: 'https://www.joinloyal.com/',
+    pretty_name: 'Loyal',
+    chain_id: 'loyal-1',
+    bech32_prefix: 'loyal',
+    daemon_name: 'loyald',
+    node_home: '$HOME/.loyal',
+    key_algos: ['secp256k1'],
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'ulyl',
+          fixed_min_gas_price: 0
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'ulyl'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/LoyalLabs/loyal',
+      recommended_version: 'v0.25.1',
+      compatible_versions: ['v0.25.1'],
+      genesis: {
+        genesis_url:
+          'https://raw.githubusercontent.com/LoyalLabs/net/main/mainnet/genesis.json'
+      }
+    },
+    peers: {
+      seeds: [
+        {
+          id: '7490c272d1c9db40b7b9b61b0df3bb4365cb63a6',
+          address: 'loyal-seed.netdots.net:26656'
+        },
+        {
+          id: 'f8f5d04e17c998478c29ba6ab74b2e995a2b6dcd',
+          address: 'tenderseed.ccvalidators.com:29002'
+        }
+      ],
+      persistent_peers: [
+        {
+          id: 'b66ecdf36bb19a9af0460b3ae0901aece93ae006',
+          address: 'pubnode1.joinloyal.io:26656'
+        },
+        {
+          id: '9f779b69d2ba3548de5427432571e8f88f72a59a',
+          address: '149.102.153.60:2566'
+        },
+        {
+          id: '7490c272d1c9db40b7b9b61b0df3bb4365cb63a6',
+          address: '54.80.32.192:26656'
+        },
+        {
+          id: 'a19b19f09084e9f1579243a5613efde8ae5aa946',
+          address: '65.21.199.148:26624'
+        },
+        {
+          id: '607dbee191f06d9479d7ae8f9fc5de75ca840d6f',
+          address: '185.215.167.227:31656'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://main-rpc.joinloyal.io/'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://main-lcd.joinloyal.io/'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'Loyal explorer',
+        url: 'https://ping-pub.joinloyal.io/loyal',
+        tx_page: 'https://ping-pub.joinloyal.io/loyal/tx/${txHash}'
+      }
+    ]
   },
   {
     $schema: '../chain.schema.json',
@@ -9084,7 +9750,7 @@ const chains: Chain[] = [
     },
     explorers: [
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://scope.helios-1.lumenex.io/lumenx',
         tx_page: 'https://scope.helios-1.lumenex.io/lumenx/tx/${txHash}'
       }
@@ -9256,7 +9922,8 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/lum',
-        tx_page: 'https://www.mintscan.io/lum/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/lum/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/lum/account/${accountAddress}'
       },
       {
         kind: 'lum-network',
@@ -9264,7 +9931,7 @@ const chains: Chain[] = [
         tx_page: 'https://explorer.lum.network/txs/${txHash}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/lum-network',
         tx_page: 'https://ping.pub/lum-network/tx/${txHash}'
       },
@@ -9274,6 +9941,103 @@ const chains: Chain[] = [
         tx_page: 'https://atomscan.com/lum-network/transactions/${txHash}'
       }
     ]
+  },
+  {
+    $schema: '../../chain.schema.json',
+    chain_name: 'medasdigital-1',
+    status: 'live',
+    network_type: 'mainnet',
+    website: 'https://medas-digital.io/',
+    pretty_name: 'Medas Digital Network',
+    chain_id: 'medasdigital-1',
+    bech32_prefix: 'medas',
+    daemon_name: 'medasdigitald',
+    node_home: '$HOME/.medasdigital',
+    key_algos: ['secp256k1'],
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'umedas',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0,
+          average_gas_price: 0.1,
+          high_gas_price: 1
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'umedas'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/oxygene76/medasdigital/',
+      recommended_version: 'v0.94',
+      compatible_versions: ['v0.94'],
+      genesis: {
+        genesis_url:
+          'https://github.com/oxygene76/medasdigital/tree/main/networks/mainnet/genesis.json'
+      }
+    },
+    peers: {
+      persistent_peers: [
+        {
+          id: 'afa88136727d46b4c15fe6e041f53fdb25cc37c0',
+          address: '212.6.177.10:26656',
+          provider: 'Neptun Validator'
+        },
+        {
+          id: 'a50887a49a5c908631a036013d38cc825b10f8fe',
+          address: '212.6.177.11:26656',
+          provider: 'Uranus Validator'
+        },
+        {
+          id: 'e89a2ed10488de6d8134ff67101aa1a883a0c6bd',
+          address: '212.6.177.12:26656',
+          provider: 'Saturn Validator'
+        },
+        {
+          id: '95d55f5d4a61d18508441f3357fadf221abe43ca',
+          address: '64.251.18.192:26656',
+          provider: 'Mars Validator'
+        },
+        {
+          id: '15376dbf45a1cf907958e2a684c436a62cc0825d',
+          address: '67.207.180.166:26656',
+          provider: 'Jupiter Validator'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc.medas-digital.io:26657/',
+          provider: 'Neptun Validator'
+        }
+      ],
+      grpc: [
+        {
+          address: 'grpc.medas-digital.io:9090',
+          provider: 'Neptun Validator'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://rest.medas-digital.io:1317/',
+          provider: 'Neptun Validator'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'Mintscan',
+        url: 'https://www.mintscan.io/medasdigital',
+        tx_page: 'https://www.mintscan.io/medasdigital/txs/${txHash}'
+      }
+    ],
+    slip44: 118
   },
   {
     $schema: '../chain.schema.json',
@@ -9293,8 +10057,8 @@ const chains: Chain[] = [
           denom: 'umeme',
           fixed_min_gas_price: 0.025,
           low_gas_price: 0.025,
-          average_gas_price: 0.025,
-          high_gas_price: 0.035
+          average_gas_price: 0.035,
+          high_gas_price: 0.045
         }
       ]
     },
@@ -9371,7 +10135,7 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc.meme.pupmos.network/',
+          address: 'https://rpc-meme.pupmos.network/',
           provider: 'PUPMØS'
         },
         {
@@ -9401,7 +10165,7 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://api.meme.pupmos.network/',
+          address: 'https://api-meme.pupmos.network/',
           provider: 'PUPMØS'
         },
         {
@@ -9423,7 +10187,7 @@ const chains: Chain[] = [
         tx_page: 'https://ping.pub/meme/tx/${txHash}'
       },
       {
-        kind: 'atomscan.com',
+        kind: 'atomscan',
         url: 'https://atomscan.com/meme',
         tx_page: 'https://atomscan.com/meme/transactions/${txHash}',
         account_page: 'https://atomscan.com/meme/accounts/${accountAddress}'
@@ -9439,7 +10203,7 @@ const chains: Chain[] = [
         tx_page: 'https://atomscan.com/meme/transactions/${txHash}'
       },
       {
-        kind: 'Brochain Explorer',
+        kind: 'Brochain',
         url: 'https://explorer.brocha.in/meme',
         tx_page: 'https://explorer.brocha.in/meme/tx/${txHash}'
       }
@@ -9465,7 +10229,7 @@ const chains: Chain[] = [
     },
     explorers: [
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/microtick',
         tx_page: 'https://ping.pub/microtick/tx/${txHash}'
       }
@@ -9483,6 +10247,7 @@ const chains: Chain[] = [
     daemon_name: 'mythosd',
     node_home: '$HOME/.mythosd',
     key_algos: ['ethsecp256k1'],
+    extra_codecs: ['ethermint'],
     slip44: 60,
     fees: {
       fee_tokens: [
@@ -9910,8 +10675,8 @@ const chains: Chain[] = [
     slip44: 118,
     codebase: {
       git_repo: 'https://github.com/OmniFlix/omniflixhub',
-      recommended_version: 'v0.4.2',
-      compatible_versions: ['v0.4.2'],
+      recommended_version: 'v0.8.0',
+      compatible_versions: ['v0.8.0'],
       genesis: {
         genesis_url:
           'https://raw.githubusercontent.com/OmniFlix/mainnet/main/omniflixhub-1/genesis.json'
@@ -9927,6 +10692,11 @@ const chains: Chain[] = [
     },
     peers: {
       seeds: [
+        {
+          id: 'babc3f3f7804933265ec9c40ad94f4da8e9e0017',
+          address: 'seed.rhinostake.com:16956',
+          provider: 'RHINO'
+        },
         {
           id: '20e1000e88125698264454a884812746c2eb4807',
           address: 'seeds.lavenderfive.com:16956',
@@ -10243,13 +11013,13 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/osmosis-labs/osmosis',
-      recommended_version: '12.2.0',
-      compatible_versions: ['12.2.0'],
+      recommended_version: 'v12.3.0',
+      compatible_versions: ['v12.3.0', 'v12.2.0', 'v12.2.1'],
       binaries: {
         'linux/amd64':
-          'https://github.com/osmosis-labs/osmosis/releases/download/v12.1.0/osmosisd-12.1.0-linux-amd64?checksum=sha256:44433f93946338b8cb167d9030ebbcfe924294d95d745026ada5dbe8f50d5010',
+          'https://github.com/osmosis-labs/osmosis/releases/download/v12.3.0/osmosisd-12.3.0-linux-amd64?checksum=sha256:958210c919d13c281896fa9773c323c5534f0fa46d74807154f737609a00db70',
         'linux/arm64':
-          'https://github.com/osmosis-labs/osmosis/releases/download/v12.1.0/osmosisd-12.1.0-linux-arm64?checksum=sha256:ef2c3d60156be5481534ecb33f9d94d73afa38a1b016e7e1c6d3fe10e3e69b3a'
+          'https://github.com/osmosis-labs/osmosis/releases/download/v12.3.0/osmosisd-12.3.0-linux-arm64?checksum=sha256:a931618c8a839c30e5cecfd2a88055cda1d68cc68557fe3303fe14e2de3bef8f'
       },
       cosmos_sdk_version: '0.45',
       tendermint_version: '0.34',
@@ -10301,7 +11071,7 @@ const chains: Chain[] = [
         },
         {
           name: 'v12',
-          tag: 'v12.1.0',
+          tag: 'v12.3.0',
           height: 6246000
         }
       ]
@@ -10548,7 +11318,7 @@ const chains: Chain[] = [
           provider: 'Nodejumper 🚀'
         },
         {
-          address: 'https://osmosis.rpc.stakin.com',
+          address: 'https://osmosis.rpc.stakin-nodes.com',
           provider: 'Stakin'
         },
         {
@@ -10610,7 +11380,7 @@ const chains: Chain[] = [
           provider: 'Nodejumper 🚀'
         },
         {
-          address: 'https://osmosis.rest.stakin.com',
+          address: 'https://osmosis.rest.stakin-nodes.com',
           provider: 'Stakin'
         },
         {
@@ -10652,7 +11422,7 @@ const chains: Chain[] = [
           provider: 'Nodejumper 🚀'
         },
         {
-          address: 'osmosis.grpc.stakin.com:443',
+          address: 'osmosis.grpc.stakin-nodes.com:443',
           provider: 'Stakin'
         },
         {
@@ -11049,7 +11819,7 @@ const chains: Chain[] = [
     daemon_name: 'persistenceCore',
     node_home: '$HOME/.persistenceCore',
     key_algos: ['secp256k1'],
-    slip44: 750,
+    slip44: 118,
     fees: {
       fee_tokens: [
         {
@@ -11067,11 +11837,11 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/persistenceOne/persistenceCore',
-      recommended_version: 'v0.2.3',
-      compatible_versions: ['v0.2.3'],
+      recommended_version: 'v5.0.0',
+      compatible_versions: ['v5.0.0'],
       binaries: {
         'linux/amd64':
-          'https://github.com/persistenceOne/persistenceCore/releases/download/v0.2.3/persistenceCore-linux-amd64.tar.gz'
+          'https://github.com/persistenceOne/persistenceCore/releases/download/v5.0.0/persistenceCore-linux-amd64.tar.gz'
       },
       genesis: {
         genesis_url:
@@ -11185,6 +11955,10 @@ const chains: Chain[] = [
         {
           address: 'https://persistence-rpc.kleomedes.network',
           provider: 'Kleomedes'
+        },
+        {
+          address: 'https://rpc-persistence.architectnodes.com',
+          provider: 'Architect Nodes'
         }
       ],
       rest: [
@@ -11207,6 +11981,10 @@ const chains: Chain[] = [
         {
           address: 'https://persistence-api.kleomedes.network',
           provider: 'Kleomedes'
+        },
+        {
+          address: 'https://rest-persistence.architectnodes.com',
+          provider: 'Architect Nodes'
         }
       ],
       grpc: [
@@ -11226,17 +12004,14 @@ const chains: Chain[] = [
     },
     explorers: [
       {
-        kind: 'proprietary',
-        url: 'https://explorer.persistence.one',
-        tx_page: 'https://explorer.persistence.one/transactions/${txHash}'
-      },
-      {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/persistence',
-        tx_page: 'https://www.mintscan.io/persistence/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/persistence/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/persistence/account/${accountAddress}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/persistence',
         tx_page: 'https://ping.pub/persistence/tx/${txHash}'
       },
@@ -11244,6 +12019,123 @@ const chains: Chain[] = [
         kind: 'atomscan',
         url: 'https://atomscan.com/persistence',
         tx_page: 'https://atomscan.com/persistence/transactions/${txHash}'
+      }
+    ]
+  },
+  {
+    $schema: '../chain.schema.json',
+    chain_name: 'planq',
+    status: 'live',
+    network_type: 'mainnet',
+    website: 'https://planq.network/',
+    pretty_name: 'Planq',
+    chain_id: 'planq_7070-2',
+    bech32_prefix: 'plq',
+    node_home: '$HOME/.planqd',
+    daemon_name: 'planqd',
+    key_algos: ['ethsecp256k1'],
+    slip44: 60,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'aplanq',
+          fixed_min_gas_price: 20000000000,
+          low_gas_price: 20000000000,
+          average_gas_price: 25000000000,
+          high_gas_price: 40000000000
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'aplanq'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/planq-network/planq',
+      recommended_version: 'v1.0.0',
+      compatible_versions: ['v1.0.0'],
+      binaries: {
+        'linux/amd64':
+          'https://github.com/planq-network/planq/releases/download/v1.0.0/planq_v1.0.0-next_Linux_x86_64.tar.gz',
+        'linux/arm64':
+          'https://github.com/planq-network/planq/releases/download/v1.0.0/planq_v1.0.0-next_Linux_arm64.tar.gz',
+        'darwin/amd64':
+          'https://github.com/planq-network/planq/releases/download/v1.0.0/planq_v1.0.0-next_Darwin_x86_64.tar.gz',
+        'darwin/arm64':
+          'https://github.com/planq-network/planq/releases/download/v1.0.0/planq_v1.0.0-next_Darwin_arm64.tar.gz',
+        'windows/amd64':
+          'https://github.com/planq-network/planq/releases/download/v1.0.0/planq_v1.0.0-next_Windows_x86_64.zip'
+      },
+      genesis: {
+        genesis_url:
+          'https://raw.githubusercontent.com/planq-network/networks/main/mainnet/genesis.json'
+      }
+    },
+    peers: {
+      seeds: [
+        {
+          id: 'dd2f0ceaa0b21491ecae17413b242d69916550ae',
+          address: '135.125.247.70:26656',
+          provider: 'Planq Foundation EU'
+        },
+        {
+          id: '0525de7e7640008d2a2e01d1a7f6456f28f3324c',
+          address: '51.79.142.6:26656',
+          provider: 'Planq Foundation SG'
+        },
+        {
+          id: '21432722b67540f6b366806dff295849738d7865',
+          address: '139.99.223.241:26656',
+          provider: 'Planq Foundation AU'
+        }
+      ],
+      persistent_peers: [
+        {
+          id: 'dd2f0ceaa0b21491ecae17413b242d69916550ae',
+          address: '135.125.247.70:26656',
+          provider: 'Planq Foundation EU'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc.planq.network',
+          provider: 'planq.network'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://rest.planq.network',
+          provider: 'planq.network'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://grpc.planq.network',
+          provider: 'planq.network'
+        }
+      ],
+      'evm-http-jsonrpc': [
+        {
+          address: 'https://evm-rpc.planq.network',
+          provider: 'planq.network'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'bigdipper',
+        url: 'https://explorer.planq.network',
+        tx_page: 'https://explorer.planq.network/transactions/${txHash}'
+      },
+      {
+        kind: 'blockscout',
+        url: 'https://evm.planq.network',
+        tx_page: 'https://evm.planq.network/tx/${txHash}'
       }
     ]
   },
@@ -11356,7 +12248,7 @@ const chains: Chain[] = [
         tx_page: 'https://explorer.pointnetwork.io/tx/${txHash}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://cosmos.pointnetwork.io/',
         tx_page: 'https://cosmos.pointnetwork.io/point/tx/${txHash}'
       }
@@ -11468,14 +12360,16 @@ const chains: Chain[] = [
           'https://hubble.figment.io/provenance/chains/pio-mainnet-1/${block}/transactions/${txHash}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/provenance',
         tx_page: 'https://ping.pub/provenance/tx/${txHash}'
       },
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/provenance',
-        tx_page: 'https://www.mintscan.io/provenance/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/provenance/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/provenance/account/${accountAddress}'
       },
       {
         kind: 'atomscan',
@@ -11622,6 +12516,10 @@ const chains: Chain[] = [
         {
           address: 'https://rebus-rpc.kleomedes.network',
           provider: 'Kleomedes'
+        },
+        {
+          address: 'https://rpc-rebus.huginn.tech',
+          provider: 'Huginn'
         }
       ],
       rest: [
@@ -11672,6 +12570,10 @@ const chains: Chain[] = [
         {
           address: 'https://rebus-api.kleomedes.network',
           provider: 'Kleomedes'
+        },
+        {
+          address: 'https://api.rebus.huginn.tech',
+          provider: 'Huginn'
         }
       ],
       grpc: [
@@ -11712,7 +12614,7 @@ const chains: Chain[] = [
         tx_page: 'https://rebus.explorers.guru/transaction/${txHash}'
       },
       {
-        kind: 'nodestake',
+        kind: 'NodeStake',
         url: 'https://explorer.nodestake.top/rebus',
         tx_page: 'https://explorer.nodestake.top/rebus/tx/${txHash}'
       },
@@ -11722,7 +12624,7 @@ const chains: Chain[] = [
         tx_page: 'https://exp.nodeist.net/M-Rebus/tx/${txHash}'
       },
       {
-        kind: 'Brochain Explorer',
+        kind: 'Brochain',
         url: 'https://explorer.brocha.in/rebus',
         tx_page: 'https://explorer.brocha.in/rebus/tx/${txHash}'
       },
@@ -11866,10 +12768,11 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/regen',
-        tx_page: 'https://www.mintscan.io/regen/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/regen/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/regen/account/${accountAddress}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/regen',
         tx_page: 'https://ping.pub/regen/tx/${txHash}'
       },
@@ -12004,10 +12907,11 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/rizon',
-        tx_page: 'https://www.mintscan.io/rizon/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/rizon/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/rizon/account/${accountAddress}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/rizon',
         tx_page: 'https://ping.pub/rizon/tx/${txHash}'
       },
@@ -12057,7 +12961,33 @@ const chains: Chain[] = [
       genesis: {
         genesis_url:
           'https://github.com/scrtlabs/SecretNetwork/releases/download/v1.2.0/genesis.json'
-      }
+      },
+      versions: [
+        {
+          name: 'v1.2',
+          tag: 'v1.2',
+          height: 0,
+          next_version_name: 'v1.3'
+        },
+        {
+          name: 'v1.3',
+          tag: 'v1.3',
+          height: 3343000,
+          next_version_name: 'v1.4'
+        },
+        {
+          name: 'v1.4',
+          tag: 'v1.4',
+          height: 5309200,
+          next_version_name: 'v1.5'
+        },
+        {
+          name: 'v1.5',
+          tag: 'v1.5',
+          height: 5941700,
+          next_version_name: 'v1.6'
+        }
+      ]
     },
     peers: {
       seeds: [
@@ -12179,14 +13109,15 @@ const chains: Chain[] = [
           'https://secretnodes.com/secret/chains/secret-4/transactions/${txHash}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/secret',
         tx_page: 'https://ping.pub/secret/tx/${txHash}'
       },
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/secret',
-        tx_page: 'https://www.mintscan.io/secret/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/secret/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/secret/account/${accountAddress}'
       },
       {
         kind: 'atomscan',
@@ -12366,7 +13297,16 @@ const chains: Chain[] = [
           provider: 'ChainTools'
         }
       ]
-    }
+    },
+    explorers: [
+      {
+        kind: 'mintscan',
+        url: 'https://www.mintscan.io/sentinel',
+        tx_page: 'https://www.mintscan.io/sentinel/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/sentinel/account/${accountAddress}'
+      }
+    ]
   },
   {
     $schema: '../chain.schema.json',
@@ -12506,9 +13446,9 @@ const chains: Chain[] = [
       },
       {
         kind: 'mintscan',
-        url: 'https://www.mintscan.io/certik',
-        tx_page: 'https://www.mintscan.io/certik/txs/${txHash}',
-        account_page: 'https://www.mintscan.io/certik/account/${accountAddress}'
+        url: 'https://www.mintscan.io/shentu',
+        tx_page: 'https://www.mintscan.io/shentu/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/shentu/account/${accountAddress}'
       },
       {
         kind: 'Shentu Explorer',
@@ -12720,7 +13660,7 @@ const chains: Chain[] = [
         tx_page: 'https://ezstaking.tools/sifchain/txs/${txHash}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/sifchain',
         tx_page: 'https://ping.pub/sifchain/tx/${txHash}'
       },
@@ -12732,7 +13672,9 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/sifchain',
-        tx_page: 'https://www.mintscan.io/sifchain/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/sifchain/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/sifchain/account/${accountAddress}'
       },
       {
         kind: 'atomscan',
@@ -12861,7 +13803,7 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc.sommelier.pupmos.network',
+          address: 'https://rpc-sommelier.pupmos.network',
           provider: 'PUPMØS'
         },
         {
@@ -12879,7 +13821,7 @@ const chains: Chain[] = [
           provider: 'chainapsis'
         },
         {
-          address: 'https://api.sommelier.pupmos.network',
+          address: 'https://api-sommelier.pupmos.network',
           provider: 'PUPMØS'
         },
         {
@@ -12919,8 +13861,165 @@ const chains: Chain[] = [
         kind: 'sommscan',
         url: 'https://sommscan.io',
         tx_page: 'https://sommscan.io'
+      },
+      {
+        kind: 'mintscan',
+        url: 'https://www.mintscan.io/sommelier',
+        tx_page: 'https://www.mintscan.io/sommelier/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/sommelier/account/${accountAddress}'
       }
     ]
+  },
+  {
+    $schema: '../chain.schema.json',
+    chain_name: 'stafihub',
+    chain_id: 'stafihub-1',
+    website: 'https://stafihub.io/',
+    pretty_name: 'StaFi Hub',
+    status: 'live',
+    network_type: 'mainnet',
+    bech32_prefix: 'stafi',
+    daemon_name: 'stafihubd',
+    node_home: '$HOME/.stafihub',
+    key_algos: ['secp256k1'],
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'ufis',
+          fixed_min_gas_price: 0
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'ufis'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/stafihub/stafihub',
+      recommended_version: 'v0.2.3',
+      compatible_versions: ['v0.2.3'],
+      genesis: {
+        genesis_url:
+          'https://raw.githubusercontent.com/stafihub/network/main/mainnets/stafihub-1(dragonberry)/genesis.json'
+      }
+    },
+    peers: {
+      persistent_peers: [
+        {
+          id: 'bed296dfadd972ed07cab82c87a0ee5c182dea43',
+          address: '18.136.189.120:26656'
+        },
+        {
+          id: '045fe6e054a5abe35f5433bd333f0a1b18aa28cf',
+          address: '45.136.28.11:26656'
+        },
+        {
+          id: 'd35d55635093fddb6de22295c8fe31de98efe6ef',
+          address: '5.161.120.176:26656'
+        },
+        {
+          id: '20c0b45c47426c51b3187aa5dca82d9900c2fb36',
+          address: '5.161.88.157:26656'
+        },
+        {
+          id: '70230067eb1e668d2566329e727c72c930e54de3',
+          address: '116.202.30.7:26656'
+        },
+        {
+          id: '03f3cb61c7c472044c37aeededde2ffe8884fa02',
+          address: '159.69.108.86:26656'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://public-rpc1.stafihub.io:443',
+          provider: 'StaFiHub'
+        },
+        {
+          address: 'https://public-rpc2.stafihub.io:443',
+          provider: 'StaFiHub'
+        },
+        {
+          address: 'https://rpc.stafihub.nodestake.top:443',
+          provider: 'NodeStake'
+        },
+        {
+          address: 'https://rpc.stafihub.mcbnode.online:443',
+          provider: 'MCBNode'
+        },
+        {
+          address: 'https://stafihub.nodejumper.io:443',
+          provider: 'Nodejumper 🚀'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://public-rest-rpc1.stafihub.io',
+          provider: 'StaFiHub'
+        },
+        {
+          address: 'https://public-rest-rpc2.stafihub.io',
+          provider: 'StaFiHub'
+        },
+        {
+          address: 'https://api.stafihub.nodestake.top',
+          provider: 'NodeStake'
+        },
+        {
+          address: 'https://api.stafihub.mcbnode.online',
+          provider: 'MCBNode'
+        },
+        {
+          address: 'https://stafihub.nodejumper.io:1317',
+          provider: 'Nodejumper 🚀'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://public-grpc-rpc1.stafihub.io',
+          provider: 'StaFiHub'
+        },
+        {
+          address: 'https://public-grpc-rpc2.stafihub.io',
+          provider: 'StaFiHub'
+        },
+        {
+          address: 'https://grpc.stafihub.nodestake.top',
+          provider: 'NodeStake'
+        },
+        {
+          address: 'https://grpc.stafihub.mcbnode.online',
+          provider: 'MCBNode'
+        },
+        {
+          address: 'https://stafihub.nodejumper.io:9090',
+          provider: 'Nodejumper 🚀'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'mintscan',
+        url: 'https://www.mintscan.io/stafi',
+        tx_page: 'https://www.mintscan.io/stafi/txs/${txHash}'
+      },
+      {
+        kind: 'ping-pub',
+        url: 'https://ping.pub/stafihub',
+        tx_page: 'https://ping.pub/stafihub/tx/${txHash}'
+      }
+    ],
+    logo_URIs: {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/stafihub-chain-logo.png'
+    },
+    keywords: ['liquid staking']
   },
   {
     $schema: '../chain.schema.json',
@@ -12960,7 +14059,7 @@ const chains: Chain[] = [
         },
         {
           id: 'babc3f3f7804933265ec9c40ad94f4da8e9e0017',
-          address: 'stargaze.seed.rhinostake.com:16656',
+          address: 'seed.rhinostake.com:13756',
           provider: 'RHINO'
         },
         {
@@ -12972,11 +14071,6 @@ const chains: Chain[] = [
           id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
           address: 'seeds.polkachu.com:13756',
           provider: 'Polkachu'
-        },
-        {
-          id: '01f3e27f915811797cf0e29d593925f59328d1c7',
-          address: 'stargaze-seed.panthea.eu:42656',
-          provider: 'Panthea EU'
         }
       ],
       persistent_peers: [
@@ -13077,11 +14171,6 @@ const chains: Chain[] = [
           id: 'c636bf9ad65959b738c15eb5458a89a88cba32a4',
           address: '135.181.102.205:26656',
           provider: 'tsundokum'
-        },
-        {
-          id: '350dfe5fa979d4b1ee07cab2a22b130a4238105f',
-          address: 'stargaze-peer.panthea.eu:32656',
-          provider: 'Panthea EU'
         }
       ]
     },
@@ -13092,7 +14181,7 @@ const chains: Chain[] = [
           provider: 'Stargaze Foundation'
         },
         {
-          address: 'https://rpc.stargaze.pupmos.network/',
+          address: 'https://rpc-stargaze.pupmos.network',
           provider: 'PUPMØS'
         },
         {
@@ -13130,10 +14219,6 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.stargaze.silentvalidator.com/',
           provider: 'silent'
-        },
-        {
-          address: 'https://stargaze-rpc.panthea.eu',
-          provider: 'Panthea EU'
         }
       ],
       rest: [
@@ -13142,7 +14227,7 @@ const chains: Chain[] = [
           provider: 'Stargaze Foundation'
         },
         {
-          address: 'https://api.stargaze.pupmos.network/',
+          address: 'https://api-stargaze.pupmos.network',
           provider: 'PUPMØS'
         },
         {
@@ -13180,10 +14265,6 @@ const chains: Chain[] = [
         {
           address: 'https://api.stargaze.silentvalidator.com/',
           provider: 'silent'
-        },
-        {
-          address: 'https://stargaze-api.panthea.eu',
-          provider: 'Panthea EU'
         }
       ],
       grpc: [
@@ -13218,10 +14299,12 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/stargaze/',
-        tx_page: 'https://www.mintscan.io/stargaze/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/stargaze/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/stargaze/account/${accountAddress}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/stargaze',
         tx_page: 'https://ping.pub/stargaze/tx/${txHash}'
       },
@@ -13335,10 +14418,12 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/starname',
-        tx_page: 'https://www.mintscan.io/starname/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/starname/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/starname/account/${accountAddress}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/starname',
         tx_page: 'https://ping.pub/starname/tx/${txHash}'
       },
@@ -13375,7 +14460,7 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/Stride-Labs/stride',
-      recommended_version: 'v2.0.3',
+      recommended_version: 'v4.0.0',
       cosmos_sdk_version: '0.45.49',
       tendermint_version: '0.34.21',
       genesis: {
@@ -13385,6 +14470,11 @@ const chains: Chain[] = [
     },
     peers: {
       seeds: [
+        {
+          id: 'babc3f3f7804933265ec9c40ad94f4da8e9e0017',
+          address: 'seed.rhinostake.com:12256',
+          provider: 'RHINO'
+        },
         {
           id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
           address: 'seeds.polkachu.com:12256',
@@ -13500,6 +14590,10 @@ const chains: Chain[] = [
         {
           address: 'https://stride.rpc.kjnodes.com',
           provider: 'kjnodes'
+        },
+        {
+          address: 'https://rpc-stride.pupmos.network',
+          provider: 'PUPMØS'
         }
       ],
       rest: [
@@ -13542,6 +14636,10 @@ const chains: Chain[] = [
         {
           address: 'https://stride.api.kjnodes.com',
           provider: 'kjnodes'
+        },
+        {
+          address: 'https://api-stride.pupmos.network',
+          provider: 'PUPMØS'
         }
       ],
       grpc: [
@@ -13599,6 +14697,12 @@ const chains: Chain[] = [
         url: 'https://exp.nodeist.net/Stride',
         tx_page: 'https://exp.nodeist.net/Stride/tx/${txHash}',
         account_page: 'https://exp.nodeist.net/Stride/account/${accountAddress}'
+      },
+      {
+        kind: 'mintscan',
+        url: 'https://www.mintscan.io/stride',
+        tx_page: 'https://www.mintscan.io/stride/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/stride/account/${accountAddress}'
       }
     ],
     logo_URIs: {
@@ -13645,6 +14749,11 @@ const chains: Chain[] = [
     peers: {
       seeds: [
         {
+          id: 'babc3f3f7804933265ec9c40ad94f4da8e9e0017',
+          address: 'seed.rhinostake.com:15956',
+          provider: 'RHINO'
+        },
+        {
           id: '20e1000e88125698264454a884812746c2eb4807',
           address: 'seeds.lavenderfive.com:15956',
           provider: 'Lavender.Five Nodes 🐝'
@@ -13661,7 +14770,7 @@ const chains: Chain[] = [
         },
         {
           id: '400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc',
-          address: 'teritori.rpc.kjnodes.com',
+          address: 'teritori.rpc.kjnodes.com:19659',
           provider: 'kjnodes'
         }
       ],
@@ -13733,8 +14842,16 @@ const chains: Chain[] = [
           provider: 'Kleomedes'
         },
         {
+          address: 'https://m-teritori.rpc.utsa.tech',
+          provider: 'lesnik | UTSA'
+        },
+        {
           address: 'https://rpc.teritori.silknodes.io',
           provider: 'Silk Nodes'
+        },
+        {
+          address: 'https://rpc-teritori.pupmos.network',
+          provider: 'PUPMØS'
         }
       ],
       rest: [
@@ -13791,8 +14908,16 @@ const chains: Chain[] = [
           provider: 'Kleomedes'
         },
         {
+          address: 'https://m-teritori.api.utsa.tech',
+          provider: 'lesnik | UTSA'
+        },
+        {
           address: 'https://api.teritori.silknodes.io',
           provider: 'Silk Nodes'
+        },
+        {
+          address: 'https://api-teritori.pupmos.network',
+          provider: 'PUPMØS'
         }
       ],
       grpc: [
@@ -13865,9 +14990,16 @@ const chains: Chain[] = [
         tx_page: 'https://explorer.brocha.in/teritori/tx/${txHash}'
       },
       {
+        kind: 'lesnik | UTSA',
+        url: 'https://exp.utsa.tech/teritori',
+        tx_page: 'https://exp.utsa.tech/teritori/tx/${txHash}'
+      },
+      {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/teritori',
-        tx_page: 'https://www.mintscan.io/teritori/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/teritori/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/teritori/account/${accountAddress}'
       }
     ]
   },
@@ -13980,7 +15112,7 @@ const chains: Chain[] = [
     },
     explorers: [
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/terra-luna',
         tx_page: 'https://ping.pub/terra-luna/tx/${txHash}'
       },
@@ -14435,8 +15567,8 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/cheqd/cheqd-node',
-      recommended_version: '0.6.9',
-      compatible_versions: ['0.6.9', '0.6.8', '0.6.7', '0.6.1', 'v0.6.0'],
+      recommended_version: 'v0.6.9',
+      compatible_versions: ['v0.6.9', 'v0.6.8', 'v0.6.7', 'v0.6.1', 'v0.6.0'],
       binaries: {
         'linux/amd64':
           'https://github.com/cheqd/cheqd-node/releases/download/0.6.9/cheqd-noded-0.6.9-Linux-arm64.tar.gz',
@@ -14507,6 +15639,67 @@ const chains: Chain[] = [
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.svg'
     }
+  },
+  {
+    $schema: '../../chain.schema.json',
+    chain_name: 'coolcattestnet',
+    status: 'live',
+    network_type: 'testnet',
+    website: 'https://app.coolcat.space/',
+    pretty_name: 'CoolCat',
+    chain_id: 'kitten-04',
+    bech32_prefix: 'ccat',
+    key_algos: ['secp256k1'],
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'uccat',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0,
+          average_gas_price: 1,
+          high_gas_price: 2
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'uccat'
+        }
+      ]
+    },
+    daemon_name: 'coolcat',
+    node_home: '$HOME/.coolcat',
+    slip44: 118,
+    codebase: {
+      git_repo: 'https://github.com/DigitalKitchenLabs/coolcat',
+      recommended_version: 'v2.0.0',
+      compatible_versions: ['v2.0.0'],
+      genesis: {
+        genesis_url:
+          'https://raw.githubusercontent.com/DigitalKitchenLabs/testnets/main/kitten-04/genesis.json'
+      }
+    },
+    peers: {
+      seeds: [],
+      persistent_peers: []
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc.coolcat.space',
+          provider: 'Digital Kitchen'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://lcd.coolcat.space',
+          provider: 'Digital Kitchen'
+        }
+      ],
+      grpc: []
+    },
+    explorers: []
   },
   {
     $schema: '../../chain.schema.json',
@@ -14710,7 +15903,7 @@ const chains: Chain[] = [
     },
     explorers: [
       {
-        kind: 'big-dipper-testnet',
+        kind: 'bigdipper-testnet',
         url: 'https://explorer.testnet.cudos.org/',
         tx_page: 'https://explorer.testnet.cudos.org/transactions/${txHash}',
         account_page:
@@ -14868,6 +16061,7 @@ const chains: Chain[] = [
     daemon_name: 'evmosd',
     node_home: '$HOME/.evmosd',
     key_algos: ['ethsecp256k1'],
+    extra_codecs: ['ethermint'],
     slip44: 60,
     fees: {
       fee_tokens: [
@@ -14888,9 +16082,9 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/evmos/evmos',
-      recommended_version: 'v8.1.0',
-      compatible_versions: ['v8.1.0'],
-      cosmos_sdk_version: '0.45',
+      recommended_version: 'v10.0.0-rc1',
+      compatible_versions: ['v10.0.0-rc1'],
+      cosmos_sdk_version: '0.46',
       tendermint_version: '0.34',
       genesis: {
         genesis_url:
@@ -15303,7 +16497,7 @@ const chains: Chain[] = [
     },
     explorers: [
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/jackal',
         tx_page: 'https://ping.pub/jackal/tx/${txHash}'
       }
@@ -15340,11 +16534,11 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/CosmosContracts/juno',
-      recommended_version: 'v9.0.0',
-      compatible_versions: ['v9.0.0'],
+      recommended_version: 'v11.0.0-alpha',
+      compatible_versions: ['v11.0.0-alpha'],
       cosmos_sdk_version: '0.45',
       tendermint_version: '0.34',
-      cosmwasm_version: '0.27',
+      cosmwasm_version: '0.29',
       cosmwasm_enabled: true,
       genesis: {
         genesis_url:
@@ -15352,7 +16546,13 @@ const chains: Chain[] = [
       }
     },
     peers: {
-      seeds: [],
+      seeds: [
+        {
+          id: '08bde9dda7cc7898b7426387281cdd492f4488af',
+          address: 'tenderseed.ccvalidators.com:29003',
+          provider: 'CryptoCrew'
+        }
+      ],
       persistent_peers: [
         {
           id: 'ed90921d43ede634043d152d7a87e8881fb85e90',
@@ -15767,7 +16967,7 @@ const chains: Chain[] = [
           'https://secretnodes.com/secret/chains/pulsar-2/transactions/${txHash}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://testnet.ping.pub/secret',
         tx_page: 'https://testnet.ping.pub/secret/tx/${txHash}'
       }
@@ -15862,7 +17062,7 @@ const chains: Chain[] = [
     network_type: 'testnet',
     website: 'https://stargaze.zone/',
     pretty_name: 'Stargaze',
-    chain_id: 'elfagar-1',
+    chain_id: 'elgafar-1',
     bech32_prefix: 'stars',
     daemon_name: 'starsd',
     node_home: '$HOME/.starsd',
@@ -15922,7 +17122,7 @@ const chains: Chain[] = [
     },
     explorers: [
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://testnet-explorer.publicawesome.dev/stargaze',
         tx_page:
           'https://testnet-explorer.publicawesome.dev/stargaze/tx/${txHash}'
@@ -15993,11 +17193,91 @@ const chains: Chain[] = [
     },
     explorers: [
       {
-        kind: 'bigdipper2.0',
+        kind: 'bigdipper',
         url: 'https://explore.stateset.zone',
         tx_page: 'https://explore.stateset.zone/transactions/${txHash}'
       }
     ]
+  },
+  {
+    $schema: '../chain.schema.json',
+    chain_name: 'terpnettestnet',
+    status: 'live',
+    network_type: 'testnet',
+    pretty_name: 'Terp-Net',
+    chain_id: 'athena-1',
+    bech32_prefix: 'terp',
+    daemon_name: 'terp',
+    node_home: '$HOME/.terp',
+    codebase: {
+      git_repo: 'github.com/terpnetwork/terp-core.git',
+      recommended_version: 'v0.1.2',
+      tendermint_version: '0.34.22',
+      compatible_versions: ['v0.1.2'],
+      genesis: {
+        genesis_url:
+          'https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-2/genesis.json'
+      },
+      binaries: {
+        'linux/amd64':
+          'https://github.com/terpnetwork/terp-core/archive/refs/tags/v0.1.2.tar.gz'
+      }
+    },
+    peers: {
+      seeds: [
+        {
+          id: '9b9ff10893b11aa5588170b289222d4bb6785d97',
+          address: '23.81.114.228:26656'
+        }
+      ],
+      persistent_peers: [
+        {
+          id: '65f819851e9eb2484818cb7d12f4edd759a1223a',
+          address: '65.21.143.79:25856'
+        },
+        {
+          id: '15f5bc75be9746fd1f712ca046502cae8a0f6ce7',
+          address: 'terp-testnet.nodejumper.io:30656'
+        },
+        {
+          id: 'c583c0a09ba50fb2eef6cb665dbdea1e5b790ffd',
+          address: '161.97.167.120:20656'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'http://23.88.53.28:36657'
+        },
+        {
+          address: 'https://rpc-terp.zenchainlabs.io/'
+        },
+        {
+          address: 'https://terp-rpc.skynetvalidators.com/'
+        },
+        {
+          address: 'https://terp-rpc.skynetvalidators.com/'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://api-terp.zenchainlabs.io/',
+          provider: 'Zenchain Labs'
+        },
+        {
+          address: 'https://terp-api.skynetvalidators.com',
+          provider: 'skynet validators'
+        }
+      ],
+      grpc: [
+        {
+          address: '23.88.53.28:36090',
+          provider: 'HighStakes'
+        }
+      ]
+    },
+    slip44: 118
   },
   {
     $schema: '../chain.schema.json',
@@ -16267,6 +17547,12 @@ const chains: Chain[] = [
         url: 'https://tgrade.aneka.io',
         tx_page: 'https://tgrade.aneka.io/txs/${txHash}',
         account_page: 'https://tgrade.aneka.io/accounts/${accountAddress}'
+      },
+      {
+        kind: 'mintscan',
+        url: 'https://www.mintscan.io/tgrade',
+        tx_page: 'https://www.mintscan.io/tgrade/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/tgrade/account/${accountAddress}'
       }
     ],
     logo_URIs: {
@@ -16528,17 +17814,11 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/umee-network/umee',
-      recommended_version: 'v3.1.0',
-      compatible_versions: ['v3.1.0'],
+      recommended_version: 'v3.2.0',
+      compatible_versions: ['v3.2.0'],
       binaries: {
-        'darwin/amd64':
-          'https://github.com/umee-network/umee/releases/download/v3.1.0/umeed-v3.1.0-darwin-amd64.tar.gz',
-        'darwin/arm64':
-          'https://github.com/umee-network/umee/releases/download/v3.1.0/umeed-v3.1.0-darwin-arm64.tar.gz',
         'linux/amd64':
-          'https://github.com/umee-network/umee/releases/download/v3.1.0/umeed-v3.1.0-linux-amd64.tar.gz',
-        'linux/arm64':
-          'https://github.com/umee-network/umee/releases/download/v3.1.0/umeed-v3.1.0-linux-arm64.tar.gz'
+          'https://github.com/umee-network/umee/releases/download/v3.2.0/umeed-v3.2.0-linux-amd64'
       },
       genesis: {
         genesis_url:
@@ -16615,10 +17895,11 @@ const chains: Chain[] = [
       {
         kind: 'mintscan',
         url: 'https://www.mintscan.io/umee/',
-        tx_page: 'https://www.mintscan.io/umee/txs/${txHash}'
+        tx_page: 'https://www.mintscan.io/umee/txs/${txHash}',
+        account_page: 'https://www.mintscan.io/umee/account/${accountAddress}'
       },
       {
-        kind: 'ping-pub',
+        kind: 'ping.pub',
         url: 'https://ping.pub/umee',
         tx_page: 'https://ping.pub/umee/tx/${txHash}'
       },
@@ -16760,11 +18041,6 @@ const chains: Chain[] = [
           id: '883ec7d5af7222c206674c20c997ccc5c242b38b',
           address: 'ec2-3-82-120-39.compute-1.amazonaws.com:26656',
           provider: 'notional'
-        },
-        {
-          id: '20e1000e88125698264454a884812746c2eb4807',
-          address: 'seeds.lavenderfive.com:17056',
-          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       persistent_peers: [
@@ -16804,10 +18080,6 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-vidulum-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
-        },
-        {
-          address: 'https://vidulum-rpc.lavenderfive.com/',
-          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       rest: [
@@ -16818,31 +18090,23 @@ const chains: Chain[] = [
         {
           address: 'https://api-vidulum-ia.cosmosia.notional.ventures/',
           provider: 'Notional'
-        },
-        {
-          address: 'https://vidulum-api.lavenderfive.com/',
-          provider: 'Lavender.Five Nodes 🐝'
         }
       ],
       grpc: [
         {
           address: 'grpc-vidulum-ia.cosmosia.notional.ventures:443',
           provider: 'Notional'
-        },
-        {
-          address: 'https://vidulum-grpc.lavenderfive.com:443/',
-          provider: 'Lavender.Five Nodes 🐝'
         }
       ]
     },
     explorers: [
       {
-        kind: 'Ping',
+        kind: 'ping.pub',
         url: 'https://explorers.vidulum.app/vidulum',
         tx_page: 'https://explorers.vidulum.app/vidulum/tx/${txHash}'
       },
       {
-        kind: 'Ping',
+        kind: 'ping.pub',
         url: 'https://ping.pub/vidulum',
         tx_page: 'https://ping.pub/vidulum/tx/${txHash}'
       },

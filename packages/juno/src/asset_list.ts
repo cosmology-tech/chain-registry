@@ -1861,6 +1861,43 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'PSTAKE Liquid-Staked ATOM',
+      denom_units: [
+        {
+          denom:
+            'ibc/436673B3C7C0923C904EEA4AC97AB0DD7DC5627751AE7E2F8CFF489A3D43D805',
+          exponent: 0,
+          aliases: ['stk/uatom']
+        },
+        {
+          denom: 'stkatom',
+          exponent: 6,
+          aliases: ['stk/atom']
+        }
+      ],
+      base: 'ibc/436673B3C7C0923C904EEA4AC97AB0DD7DC5627751AE7E2F8CFF489A3D43D805',
+      name: 'PSTAKE staked ATOM',
+      display: 'stkatom',
+      symbol: 'stkATOM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-37',
+            base_denom: 'stk/uatom',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-33'
+          }
+        }
+      ]
+    },
+    {
       description:
         'pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.',
       denom_units: [

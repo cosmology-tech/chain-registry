@@ -343,12 +343,16 @@ const chain: Chain = {
         provider: 'Stakin'
       },
       {
-        address: 'https://rpc-osmosis.goldenratiostaking.net',
+        address: 'https://rpc.osmosis.goldenratiostaking.net',
         provider: 'Golden Ratio Staking'
       },
       {
         address: 'https://osmosis-rpc.ibs.team',
         provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://osmosis.rpc.interchain.ivaldilabs.xyz',
+        provider: 'Ivaldi Labs'
       }
     ],
     rest: [
@@ -405,6 +409,10 @@ const chain: Chain = {
         provider: 'Inter Blockchain Services'
       },
       {
+        address: 'https://osmosis.rest.interchain.ivaldilabs.xyz',
+        provider: 'Ivaldi Labs'
+      },
+      {
         address: 'https://osmosis.stakesystems.io/',
         provider: 'stakesystems'
       }
@@ -437,6 +445,10 @@ const chain: Chain = {
       {
         address: 'osmosis.grpc.stakin.com:443',
         provider: 'Stakin'
+      },
+      {
+        address: 'osmosis.grpc.interchain.ivaldilabs.xyz:433',
+        provider: 'Ivaldi Labs'
       }
     ]
   },

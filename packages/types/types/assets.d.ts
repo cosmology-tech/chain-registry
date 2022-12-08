@@ -33,6 +33,9 @@ export interface WrapTrace {
         chain_name: string;
         base_denom: string;
     };
+    chain?: {
+        contract: string;
+    };
     provider: string;
 }
 export interface IBCTrace {

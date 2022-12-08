@@ -32,8 +32,8 @@ const chain: Chain = {
   },
   codebase: {
     git_repo: 'https://github.com/CosmosContracts/juno',
-    recommended_version: 'v10.1.0',
-    compatible_versions: ['v10.1.0'],
+    recommended_version: 'v11.0.0',
+    compatible_versions: ['v11.0.0'],
     cosmos_sdk_version: '0.45',
     tendermint_version: '0.34',
     cosmwasm_version: '0.28',
@@ -135,6 +135,10 @@ const chain: Chain = {
         provider: 'Polkachu'
       },
       {
+        address: 'https://juno.rpc.interchain.ivaldilabs.xyz',
+        provider: 'Ivaldi Labs'
+      },
+      {
         address: 'https://juno-rpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
@@ -155,7 +159,7 @@ const chain: Chain = {
         provider: 'Silk Nodes'
       },
       {
-        address: 'https://juno-rpc.kleomed.es',
+        address: 'https://juno-rpc.kleomedes.network',
         provider: 'Kleomedes'
       },
       {
@@ -177,6 +181,10 @@ const chain: Chain = {
       {
         address: 'https://rpc-juno.goldenratiostaking.net',
         provider: 'Golden Ratio Staking'
+      },
+      {
+        address: 'https://rpc.juno.bh.rocks',
+        provider: 'BlockHunters 🎯'
       }
     ],
     rest: [
@@ -187,6 +195,10 @@ const chain: Chain = {
       {
         address: 'https://lcd-juno.itastakers.com',
         provider: 'itastakers'
+      },
+      {
+        address: 'https://juno.rest.interchain.ivaldilabs.xyz',
+        provider: 'Ivaldi Labs'
       },
       {
         address: 'https://rest-juno.ecostake.com',
@@ -217,7 +229,7 @@ const chain: Chain = {
         provider: 'Silk Nodes'
       },
       {
-        address: 'https://juno-api.kleomed.es',
+        address: 'https://juno-api.kleomedes.network',
         provider: 'Kleomedes'
       },
       {
@@ -231,6 +243,10 @@ const chain: Chain = {
       {
         address: 'https://juno.rest.stakin.com',
         provider: 'Stakin'
+      },
+      {
+        address: 'https://api.juno.bh.rocks',
+        provider: 'BlockHunters 🎯'
       }
     ],
     grpc: [
@@ -259,12 +275,20 @@ const chain: Chain = {
         provider: 'Silk Nodes'
       },
       {
+        address: 'juno.grpc.interchain.ivaldilabs.xyz:443',
+        provider: 'Ivaldi Labs'
+      },
+      {
         address: 'https://juno.nodejumper.io:9090',
         provider: 'Nodejumper 🚀'
       },
       {
         address: 'juno.grpc.stakin.com:443',
         provider: 'Stakin'
+      },
+      {
+        address: 'https://grpc.juno.bh.rocks:443',
+        provider: 'BlockHunters 🎯'
       }
     ]
   },

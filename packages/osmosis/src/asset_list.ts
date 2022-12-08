@@ -2599,6 +2599,43 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'The native staking and governance token of Jackal.',
+      denom_units: [
+        {
+          denom:
+            'ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA',
+          exponent: 0,
+          aliases: ['ujkl']
+        },
+        {
+          denom: 'jkl',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA',
+      name: 'Jackal',
+      display: 'jkl',
+      symbol: 'JKL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg'
+      },
+      coingecko_id: 'jackal-protocol',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'ujkl',
+            chain_name: 'jackal'
+          },
+          chain: {
+            channel_id: 'channel-412'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of JUNO Chain',
       denom_units: [
         {
@@ -3307,6 +3344,43 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'PSTAKE Liquid-Staked ATOM',
+      denom_units: [
+        {
+          denom:
+            'ibc/CAA179E40F0266B0B29FB5EAA288FB9212E628822265D4141EBD1C47C3CBFCBC',
+          exponent: 0,
+          aliases: ['stk/uatom']
+        },
+        {
+          denom: 'stkatom',
+          exponent: 6,
+          aliases: ['stk/atom']
+        }
+      ],
+      base: 'ibc/CAA179E40F0266B0B29FB5EAA288FB9212E628822265D4141EBD1C47C3CBFCBC',
+      name: 'PSTAKE staked ATOM',
+      display: 'stkatom',
+      symbol: 'stkATOM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'stk/uatom',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-4'
+          }
+        }
+      ]
+    },
+    {
       description:
         'pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.',
       denom_units: [
@@ -3932,6 +4006,45 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-326'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Tori token (TORI) is the Teritoti Network’s native utility token, used as the primary means to govern, secure the blockchain, incentivize ecosystem contributors and use the various Teritori dApp features.',
+      denom_units: [
+        {
+          denom:
+            'ibc/EB7FB9C8B425F289B63703413327C2051030E848CE4EAAEA2E51199D6D39D3EC',
+          exponent: 0,
+          aliases: ['utori']
+        },
+        {
+          denom: 'tori',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/EB7FB9C8B425F289B63703413327C2051030E848CE4EAAEA2E51199D6D39D3EC',
+      name: 'Teritori',
+      display: 'tori',
+      symbol: 'TORI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/utori.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/utori.svg'
+      },
+      coingecko_id: 'teritori',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'utori',
+            chain_name: 'teritori'
+          },
+          chain: {
+            channel_id: 'channel-362'
           }
         }
       ]
