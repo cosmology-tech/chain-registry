@@ -3,9 +3,9 @@ import { Bech32Address } from '@keplr-wallet/cosmos';
 import { ChainInfo, Currency, FeeCurrency } from '@keplr-wallet/types';
 import semver from 'semver';
 
-const getRpc = (chain: Chain): string => chain.apis?.rpc[0]?.address;
-const getRest = (chain: Chain): string => chain.apis?.rest[0]?.address;
-const getExplr = (chain: Chain): string => chain.explorers?.[0]?.url;
+const getRpc = (chain: Chain): string => chain.apis?.rpc?.[0]?.address ?? '';
+const getRest = (chain: Chain): string => chain.apis?.rest?.[0]?.address ?? '';
+const getExplr = (chain: Chain): string => chain.explorers?.[0]?.url ?? '';
 
 const cleanVer = (ver: string) => {
   if (!semver.valid(ver)) {
@@ -104,7 +104,7 @@ export const chainRegistryChainToKeplr = (
     // USE THE FEE DENOMS
     .filter((currency) => feeDenoms.includes(currency.coinMinimalDenom))
     .map((feeCurrency) => {
-      if (!gasPriceSteps.hasOwnProperty(feeCurrency.coinMinimalDenom))
+      if (!gasPriceSteps?.hasOwnProperty(feeCurrency.coinMinimalDenom))
         return feeCurrency;
 
       // has gas
@@ -119,7 +119,7 @@ export const chainRegistryChainToKeplr = (
     // USE THE STAKE CURRENCY
     .filter((currency) => stakeCurrency.coinDenom === currency.coinDenom)
     .map((feeCurrency) => {
-      if (!gasPriceSteps.hasOwnProperty(feeCurrency.coinMinimalDenom))
+      if (!gasPriceSteps?.hasOwnProperty(feeCurrency.coinMinimalDenom))
         return feeCurrency;
 
       // has gas
