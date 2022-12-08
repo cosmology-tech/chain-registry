@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/juno",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Chain Registry info for Juno",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
@@ -50,14 +50,14 @@
     "@babel/plugin-transform-runtime": "7.19.6",
     "@babel/preset-env": "7.19.4",
     "@babel/preset-typescript": "^7.17.12",
-    "@chain-registry/utils": "^1.3.0",
+    "@chain-registry/utils": "^1.4.0",
     "@types/jest": "^29.2.0",
     "@typescript-eslint/eslint-plugin": "5.40.1",
     "@typescript-eslint/parser": "5.40.1",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "29.2.1",
     "babel-watch": "^7.0.0",
-    "chain-registry": "^1.5.0",
+    "chain-registry": "^1.6.0",
     "cross-env": "^7.0.2",
     "eslint": "8.25.0",
     "eslint-config-prettier": "^8.5.0",
@@ -73,6 +73,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.19.4",
-    "@chain-registry/types": "^0.13.1"
+    "@chain-registry/types": "^0.14.0"
   }
 }
