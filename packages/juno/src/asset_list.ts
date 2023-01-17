@@ -806,6 +806,43 @@ const asset_list: AssetList = {
       coingecko_id: 'matic-network'
     },
     {
+      description: 'Wrapped BNB on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/735AFF12D7AF5EEC8F4339448BBF001547AEA05CCA6F1CAA60C139AE87828EB1',
+          exponent: 0,
+          aliases: ['wbnb-wei']
+        },
+        {
+          denom: 'wbnb',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/735AFF12D7AF5EEC8F4339448BBF001547AEA05CCA6F1CAA60C139AE87828EB1',
+      name: 'Wrapped BNB',
+      display: 'wbnb',
+      symbol: 'WBNB',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'wbnb-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.png'
+      },
+      coingecko_id: 'wbnb'
+    },
+    {
       description:
         'The BCNA coin is the transactional token within the BitCanna network, serving the legal cannabis industry through its payment network, supply chain and trust network.',
       denom_units: [
@@ -1390,7 +1427,8 @@ const asset_list: AssetList = {
       display: 'huahua',
       symbol: 'HUAHUA',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
       },
       coingecko_id: 'chihuahua-token',
       traces: [
@@ -1435,6 +1473,78 @@ const asset_list: AssetList = {
           counterparty: {
             channel_id: 'channel-18',
             base_denom: 'ucmdx',
+            chain_name: 'comdex'
+          },
+          chain: {
+            channel_id: 'channel-36'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Governance Token of Harbor protocol on Comdex network',
+      denom_units: [
+        {
+          denom:
+            'ibc/2D8FA8721F44AE790D2A4D07775C16DD275B6FD83DA6FF29E76FED5BB6A92764',
+          exponent: 0,
+          aliases: ['uharbor']
+        },
+        {
+          denom: 'harbor',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/2D8FA8721F44AE790D2A4D07775C16DD275B6FD83DA6FF29E76FED5BB6A92764',
+      name: 'Harbor',
+      display: 'harbor',
+      symbol: 'HARBOR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png'
+      },
+      coingecko_id: '',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-18',
+            base_denom: 'uharbor',
+            chain_name: 'comdex'
+          },
+          chain: {
+            channel_id: 'channel-36'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Stable Token of Harbor protocol on Comdex network',
+      denom_units: [
+        {
+          denom:
+            'ibc/DD057BB58DCBEE8F7C0CDF0B9AE4A2656B00E3C9745341180400B60833EEC9FD',
+          exponent: 0,
+          aliases: ['ucmst']
+        },
+        {
+          denom: 'cmst',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/DD057BB58DCBEE8F7C0CDF0B9AE4A2656B00E3C9745341180400B60833EEC9FD',
+      name: 'CMST',
+      display: 'cmst',
+      symbol: 'CMST',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png'
+      },
+      coingecko_id: '',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-18',
+            base_denom: 'ucmst',
             chain_name: 'comdex'
           },
           chain: {

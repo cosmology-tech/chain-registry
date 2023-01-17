@@ -45,6 +45,11 @@ const chain: Chain = {
   peers: {
     seeds: [
       {
+        id: 'babc3f3f7804933265ec9c40ad94f4da8e9e0017',
+        address: 'seed.rhinostake.com:12656',
+        provider: 'RHINO'
+      },
+      {
         id: '2484353dab0b2c1275765b8ffa2c50b3b36158ca',
         address: 'seed-node.junochain.com:26656'
       },
@@ -143,7 +148,7 @@ const chain: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'https://rpc.juno.pupmos.network',
+        address: 'https://rpc-juno.pupmos.network',
         provider: 'PUPMØS'
       },
       {
@@ -171,7 +176,7 @@ const chain: Chain = {
         provider: 'Nodejumper 🚀'
       },
       {
-        address: 'https://juno.rpc.stakin.com',
+        address: 'https://juno.rpc.stakin-nodes.com',
         provider: 'Stakin'
       },
       {
@@ -185,6 +190,10 @@ const chain: Chain = {
       {
         address: 'https://rpc.juno.bh.rocks',
         provider: 'BlockHunters 🎯'
+      },
+      {
+        address: 'https://rpc.juno.kingnodes.com',
+        provider: 'kingnodes 👑'
       }
     ],
     rest: [
@@ -209,7 +218,7 @@ const chain: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'https://api.juno.pupmos.network',
+        address: 'https://api-juno.pupmos.network',
         provider: 'PUPMØS'
       },
       {
@@ -241,12 +250,16 @@ const chain: Chain = {
         provider: 'Nodejumper 🚀'
       },
       {
-        address: 'https://juno.rest.stakin.com',
+        address: 'https://juno.rest.stakin-nodes.com',
         provider: 'Stakin'
       },
       {
         address: 'https://api.juno.bh.rocks',
         provider: 'BlockHunters 🎯'
+      },
+      {
+        address: 'https://api.juno.kingnodes.com',
+        provider: 'kingnodes 👑'
       }
     ],
     grpc: [
@@ -283,12 +296,16 @@ const chain: Chain = {
         provider: 'Nodejumper 🚀'
       },
       {
-        address: 'juno.grpc.stakin.com:443',
+        address: 'juno.grpc.stakin-nodes.com:443',
         provider: 'Stakin'
       },
       {
         address: 'https://grpc.juno.bh.rocks:443',
         provider: 'BlockHunters 🎯'
+      },
+      {
+        address: 'https://grpc.juno.kingnodes.com',
+        provider: 'kingnodes 👑'
       }
     ]
   },
@@ -311,7 +328,8 @@ const chain: Chain = {
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/juno',
-      tx_page: 'https://www.mintscan.io/juno/txs/${txHash}'
+      tx_page: 'https://www.mintscan.io/juno/txs/${txHash}',
+      account_page: 'https://www.mintscan.io/juno/account/${accountAddress}'
     },
     {
       kind: 'atomscan',

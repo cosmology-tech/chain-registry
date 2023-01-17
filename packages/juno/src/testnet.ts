@@ -30,11 +30,11 @@ const testnet: Chain = {
   },
   codebase: {
     git_repo: 'https://github.com/CosmosContracts/juno',
-    recommended_version: 'v9.0.0',
-    compatible_versions: ['v9.0.0'],
+    recommended_version: 'v11.0.0-alpha',
+    compatible_versions: ['v11.0.0-alpha'],
     cosmos_sdk_version: '0.45',
     tendermint_version: '0.34',
-    cosmwasm_version: '0.27',
+    cosmwasm_version: '0.29',
     cosmwasm_enabled: true,
     genesis: {
       genesis_url:
@@ -42,7 +42,13 @@ const testnet: Chain = {
     }
   },
   peers: {
-    seeds: [],
+    seeds: [
+      {
+        id: '08bde9dda7cc7898b7426387281cdd492f4488af',
+        address: 'tenderseed.ccvalidators.com:29003',
+        provider: 'CryptoCrew'
+      }
+    ],
     persistent_peers: [
       {
         id: 'ed90921d43ede634043d152d7a87e8881fb85e90',

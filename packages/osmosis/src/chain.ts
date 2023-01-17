@@ -34,13 +34,13 @@ const chain: Chain = {
   },
   codebase: {
     git_repo: 'https://github.com/osmosis-labs/osmosis',
-    recommended_version: '12.2.0',
-    compatible_versions: ['12.2.0'],
+    recommended_version: 'v12.3.0',
+    compatible_versions: ['v12.3.0', 'v12.2.0', 'v12.2.1'],
     binaries: {
       'linux/amd64':
-        'https://github.com/osmosis-labs/osmosis/releases/download/v12.1.0/osmosisd-12.1.0-linux-amd64?checksum=sha256:44433f93946338b8cb167d9030ebbcfe924294d95d745026ada5dbe8f50d5010',
+        'https://github.com/osmosis-labs/osmosis/releases/download/v12.3.0/osmosisd-12.3.0-linux-amd64?checksum=sha256:958210c919d13c281896fa9773c323c5534f0fa46d74807154f737609a00db70',
       'linux/arm64':
-        'https://github.com/osmosis-labs/osmosis/releases/download/v12.1.0/osmosisd-12.1.0-linux-arm64?checksum=sha256:ef2c3d60156be5481534ecb33f9d94d73afa38a1b016e7e1c6d3fe10e3e69b3a'
+        'https://github.com/osmosis-labs/osmosis/releases/download/v12.3.0/osmosisd-12.3.0-linux-arm64?checksum=sha256:a931618c8a839c30e5cecfd2a88055cda1d68cc68557fe3303fe14e2de3bef8f'
     },
     cosmos_sdk_version: '0.45',
     tendermint_version: '0.34',
@@ -92,7 +92,7 @@ const chain: Chain = {
       },
       {
         name: 'v12',
-        tag: 'v12.1.0',
+        tag: 'v12.3.0',
         height: 6246000
       }
     ]
@@ -339,7 +339,7 @@ const chain: Chain = {
         provider: 'Nodejumper 🚀'
       },
       {
-        address: 'https://osmosis.rpc.stakin.com',
+        address: 'https://osmosis.rpc.stakin-nodes.com',
         provider: 'Stakin'
       },
       {
@@ -401,7 +401,7 @@ const chain: Chain = {
         provider: 'Nodejumper 🚀'
       },
       {
-        address: 'https://osmosis.rest.stakin.com',
+        address: 'https://osmosis.rest.stakin-nodes.com',
         provider: 'Stakin'
       },
       {
@@ -443,7 +443,7 @@ const chain: Chain = {
         provider: 'Nodejumper 🚀'
       },
       {
-        address: 'osmosis.grpc.stakin.com:443',
+        address: 'osmosis.grpc.stakin-nodes.com:443',
         provider: 'Stakin'
       },
       {

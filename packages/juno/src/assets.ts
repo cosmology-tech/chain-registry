@@ -400,7 +400,8 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.svg'
-      }
+      },
+      coingecko_id: 'stakeeasy-juno-derivative'
     },
     {
       description: 'Staking derivative bJUNO for staked JUNO',
@@ -425,7 +426,8 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.svg'
-      }
+      },
+      coingecko_id: 'stakeeasy-bjuno'
     },
     {
       description:
@@ -476,7 +478,8 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/seasy.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/seasy.svg'
-      }
+      },
+      coingecko_id: 'seasy'
     },
     {
       description: 'The native token cw20 for MuseDAO on Juno Chain',
@@ -526,6 +529,31 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/loop.png'
       },
       coingecko_id: 'loop'
+    },
+    {
+      description: 'The native token cw20 for Fanfury on Juno Chain',
+      type_asset: 'cw20',
+      address:
+        'juno1cltgm8v842gu54srmejewghnd6uqa26lzkpa635wzra9m9xuudkqa2gtcz',
+      denom_units: [
+        {
+          denom:
+            'cw20:juno1cltgm8v842gu54srmejewghnd6uqa26lzkpa635wzra9m9xuudkqa2gtcz',
+          exponent: 0
+        },
+        {
+          denom: 'fury',
+          exponent: 6
+        }
+      ],
+      base: 'cw20:juno1cltgm8v842gu54srmejewghnd6uqa26lzkpa635wzra9m9xuudkqa2gtcz',
+      name: 'Fanfury',
+      display: 'fury',
+      symbol: 'FURY',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/fanfury.png'
+      },
+      coingecko_id: 'fanfury'
     },
     {
       description: 'The native token cw20 for Neta on Juno Chain',
