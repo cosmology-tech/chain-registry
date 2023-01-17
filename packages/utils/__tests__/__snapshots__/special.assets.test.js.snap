@@ -129,7 +129,6 @@ exports[`getAssetLists 1`] = `
             "exponent": 0,
           },
           {
-            "aliases": [],
             "denom": "graviton",
             "exponent": 6,
           },
@@ -187,6 +186,187 @@ exports[`getAssetLists 1`] = `
             },
             "counterparty": {
               "base_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/ACFDD4DA449EF4925B5D90F19198E96966B6D425D550D7B5676164F303C5BDA7",
+        "denom_units": [
+          {
+            "aliases": [
+              "gravity0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+            ],
+            "denom": "ibc/ACFDD4DA449EF4925B5D90F19198E96966B6D425D550D7B5676164F303C5BDA7",
+            "exponent": 0,
+          },
+          {
+            "denom": "gweth",
+            "exponent": 18,
+          },
+        ],
+        "description": "Gravity Bridge WETH",
+        "display": "gweth",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg",
+        },
+        "name": "Wrapped Ethereum",
+        "symbol": "WETH",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "gravity0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/6F681B32B47E765AE278844A8A97C8B7AD5A3FB591E37CFDFA0E208EFEBEF97D",
+        "denom_units": [
+          {
+            "aliases": [
+              "gravity0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+            ],
+            "denom": "ibc/6F681B32B47E765AE278844A8A97C8B7AD5A3FB591E37CFDFA0E208EFEBEF97D",
+            "exponent": 0,
+          },
+          {
+            "denom": "gusdc",
+            "exponent": 6,
+          },
+        ],
+        "description": "Gravity Bridge USDC",
+        "display": "gusdc",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg",
+        },
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "gravity0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/7F6928F9DB35D5A420330B9470EA4419B5F305EEB668D3274FC1ACDAC325ED17",
+        "denom_units": [
+          {
+            "aliases": [
+              "gravity0xdAC17F958D2ee523a2206206994597C13D831ec7",
+            ],
+            "denom": "ibc/7F6928F9DB35D5A420330B9470EA4419B5F305EEB668D3274FC1ACDAC325ED17",
+            "exponent": 0,
+          },
+          {
+            "denom": "gusdt",
+            "exponent": 6,
+          },
+        ],
+        "description": "Gravity Bridge USDT",
+        "display": "gusdt",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg",
+        },
+        "name": "Tether USD",
+        "symbol": "USDT",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "gravity0xdAC17F958D2ee523a2206206994597C13D831ec7",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/16254B8D442184E723683C38F09E7945AF5849E0F5FB9C1890494EF2AC65532A",
+        "denom_units": [
+          {
+            "aliases": [
+              "gravity0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+            ],
+            "denom": "ibc/16254B8D442184E723683C38F09E7945AF5849E0F5FB9C1890494EF2AC65532A",
+            "exponent": 0,
+          },
+          {
+            "denom": "gwbtc",
+            "exponent": 8,
+          },
+        ],
+        "description": "Gravity Bridge WBTC",
+        "display": "gwbtc",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg",
+        },
+        "name": "Wrapped Bitcoin",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "gravity0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/40E10C9B078055FFC5D25166268107A81BBCAE78C62F17A07969F05B7E31F55C",
+        "denom_units": [
+          {
+            "aliases": [
+              "gravity0x6B175474E89094C44Da98b954EedeAC495271d0F",
+            ],
+            "denom": "ibc/40E10C9B078055FFC5D25166268107A81BBCAE78C62F17A07969F05B7E31F55C",
+            "exponent": 0,
+          },
+          {
+            "denom": "gdai",
+            "exponent": 18,
+          },
+        ],
+        "description": "Gravity Bridge DAI",
+        "display": "gdai",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg",
+        },
+        "name": "Dai Stablecoin",
+        "symbol": "DAI",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "gravity0x6B175474E89094C44Da98b954EedeAC495271d0F",
               "chain_name": "gravitybridge",
               "channel_id": "channel-24",
             },
@@ -321,7 +501,6 @@ exports[`getAssetLists 1`] = `
             "exponent": 0,
           },
           {
-            "aliases": [],
             "denom": "osmo",
             "exponent": 6,
           },
@@ -475,11 +654,15 @@ exports[`getAssetLists 1`] = `
               "rowan",
             ],
             "denom": "ibc/BA51309DEEE69EF9159FADDCD9F566C372157A1F4E559076D201B255C27F484A",
+            "exponent": 0,
+          },
+          {
+            "denom": "ROWAN",
             "exponent": 18,
           },
         ],
         "description": "Rowan Token (ROWAN) is the Sifchain Network's native utility token, used as the primary means to govern, provide liquidity, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
-        "display": "rowan",
+        "display": "ROWAN",
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg",
