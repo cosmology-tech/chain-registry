@@ -16,6 +16,20 @@ it('AKT on osmosis', () => {
   );
 });
 
+it('STARS on osmosis', () => {
+  const denom = getIbcDenomByBase(
+    ibc,
+    'osmosis',
+    'stargaze',
+    //
+    assets,
+    'ustars'
+  );
+  expect(denom).toEqual(
+    'ibc/987C17B11ABC2B20019178ACE62929FE9840202CE79498E29FE8E5CB02B7C0A4'
+  );
+});
+
 it('JUNO on osmosis', () => {
   const denom = getIbcDenomByBase(
     ibc,
