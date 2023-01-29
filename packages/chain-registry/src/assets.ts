@@ -11088,6 +11088,33 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../assetlist.schema.json',
+    chain_name: 'terra2testnet',
+    assets: [
+      {
+        description: 'The native staking token of Terra.',
+        denom_units: [
+          {
+            denom: 'uluna',
+            exponent: 0
+          },
+          {
+            denom: 'luna',
+            exponent: 6
+          }
+        ],
+        base: 'uluna',
+        name: 'Luna',
+        display: 'luna',
+        symbol: 'LUNA',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png'
+        },
+        coingecko_id: 'terra-luna-2'
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
     chain_name: 'avalanchetestnet',
     assets: [
       {

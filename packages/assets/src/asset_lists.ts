@@ -27429,6 +27429,10 @@ const asset_lists: AssetList[] = [
     ]
   },
   {
+    "chain_name": "terra2testnet",
+    "assets": []
+  },
+  {
     "chain_name": "tgrade",
     "assets": [
       {
@@ -27972,4 +27976,3 @@ const asset_lists: AssetList[] = [
   }
 ];
 export default asset_lists;
-    
