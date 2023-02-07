@@ -19949,6 +19949,64 @@ const chains: Chain[] = [
         tx_page: 'https://atomscan.com/vidulum/transactions/${txHash}'
       }
     ]
+  },
+  {
+    $schema: '../../chain.schema.json',
+    chain_name: 'neutrontestnet',
+    chain_id: 'baryon-1',
+    pretty_name: 'Neutron Testnet',
+    status: 'live',
+    network_type: 'testnet',
+    bech32_prefix: 'neutron',
+    daemon_name: 'neutrond',
+    node_home: '$HOME/.neutron',
+    key_algos: ['secp256k1'],
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'untrn',
+          fixed_min_gas_price: 0
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'untrn'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/neutron-org/neutron-sdk',
+      recommended_version: 'v0.2.0',
+      compatible_versions: ['v0.2.0'],
+      genesis: {
+        genesis_url:
+          'https://github.com/neutron-org/cosmos-testnets/blob/master/replicated-security/baryon-1/baryon-1-genesis.json'
+      }
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc.baryon.ntrn.info',
+          provider: 'Neutron'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://rest.baryon.ntrn.info',
+          provider: 'Neutron'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'explorers.guru',
+        url: 'https://explorer.rs-testnet.polypore.xyz/baryon-1',
+        tx_page: 'https://explorer.rs-testnet.polypore.xyz/baryon-1/tx/${txHash}'
+      }
+    ]
   }
 ];
 export default chains;

@@ -12830,6 +12830,34 @@ const assets: AssetList[] = [
         coingecko_id: 'vidulum'
       }
     ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'neutrontestnet',
+    assets: [
+      {
+        description: 'The native token of Neutron.',
+        denom_units: [
+          {
+            denom: 'untrn',
+            exponent: 0
+          },
+          {
+            denom: 'ntrn',
+            exponent: 6
+          }
+        ],
+        base: 'untrn',
+        name: 'Neutron',
+        display: 'NTRN',
+        symbol: 'NTRN',
+        logo_URIs: {
+          png: 'https://github.com/neutron-org/brandbook/blob/main/Logo/Icon/PNG/icon-black.png',
+          svg: 'https://github.com/neutron-org/brandbook/blob/main/Logo/Icon/SVG/icon-black.svg'
+        },
+        coingecko_id: 'neutron-protocol'
+      }
+    ]
   }
 ];
 export default assets;
