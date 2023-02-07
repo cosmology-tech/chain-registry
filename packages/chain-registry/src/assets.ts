@@ -12852,8 +12852,8 @@ const assets: AssetList[] = [
         display: 'NTRN',
         symbol: 'NTRN',
         logo_URIs: {
-          png: 'https://github.com/neutron-org/brandbook/blob/main/Logo/Icon/PNG/icon-black.png',
-          svg: 'https://github.com/neutron-org/brandbook/blob/main/Logo/Icon/SVG/icon-black.svg'
+          png: 'https://github.com/neutron-org/brandbook/blob/main/Logo/Icon/PNG/icon-black.png?raw=true',
+          svg: 'https://raw.githubusercontent.com/neutron-org/brandbook/main/Logo/Icon/SVG/icon-black.svg'
         },
         coingecko_id: 'neutron-protocol'
       }
