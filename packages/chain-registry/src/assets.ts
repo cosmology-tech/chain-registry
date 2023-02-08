@@ -64,6 +64,41 @@ const assets: AssetList[] = [
       },
       {
         description:
+          'USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.',
+        type_asset: 'erc20',
+        address: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
+        denom_units: [
+          {
+            denom: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
+            exponent: 0,
+            aliases: ['uusdc']
+          },
+          {
+            denom: 'usdc',
+            exponent: 6
+          }
+        ],
+        base: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
+        name: 'USD Coin',
+        display: 'usdc',
+        symbol: 'USDC',
+        traces: [
+          {
+            type: 'synthetic',
+            counterparty: {
+              chain_name: 'forex',
+              base_denom: 'USD'
+            },
+            provider: 'Circle'
+          }
+        ],
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        },
+        coingecko_id: 'usd-coin'
+      },
+      {
+        description:
           'Multi-Collateral Dai, brings a lot of new and exciting features, such as support for new CDP collateral types and Dai Savings Rate.',
         type_asset: 'erc20',
         address: '0xc5fa5669e326da8b2c35540257cd48811f40a36b',
@@ -82,6 +117,16 @@ const assets: AssetList[] = [
         name: 'Axelar Wrapped DAI',
         display: 'axldai',
         symbol: 'axlDAI',
+        traces: [
+          {
+            type: 'bridge',
+            counterparty: {
+              chain_name: 'axelar',
+              base_denom: 'dai-wei'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
         }
@@ -106,6 +151,16 @@ const assets: AssetList[] = [
         name: 'Axelar Wrapped Frax',
         display: 'axlfrax',
         symbol: 'axlFRAX',
+        traces: [
+          {
+            type: 'bridge',
+            counterparty: {
+              chain_name: 'axelar',
+              base_denom: 'frax-wei'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
         }
@@ -130,6 +185,16 @@ const assets: AssetList[] = [
         name: 'Axelar Wrapped USDC',
         display: 'axlusdc',
         symbol: 'axlUSDC',
+        traces: [
+          {
+            type: 'bridge',
+            counterparty: {
+              chain_name: 'axelar',
+              base_denom: 'uusdc'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }
@@ -154,6 +219,16 @@ const assets: AssetList[] = [
         name: 'Axelar Wrapped USDT',
         display: 'axlusdt',
         symbol: 'axlUSDT',
+        traces: [
+          {
+            type: 'bridge',
+            counterparty: {
+              chain_name: 'axelar',
+              base_denom: 'uusdt'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
         }
@@ -833,6 +908,66 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../assetlist.schema.json',
+    chain_name: 'fantom',
+    assets: [
+      {
+        description:
+          "Fantom's native utility token — FTM — powers the entire Fantom blockchain ecosystem. FTM tokens are used for staking, governance, payments, and fees on the network.",
+        denom_units: [
+          {
+            denom: 'wei',
+            exponent: 0
+          },
+          {
+            denom: 'ftm',
+            exponent: 18
+          }
+        ],
+        base: 'wei',
+        name: 'Fantom',
+        display: 'ftm',
+        symbol: 'FTM',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.png'
+        },
+        coingecko_id: 'fantom'
+      },
+      {
+        description: 'ERC20 wrapped version of FTM',
+        type_asset: 'erc20',
+        address: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+        denom_units: [
+          {
+            denom: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+            exponent: 0
+          },
+          {
+            denom: 'wftm',
+            exponent: 18
+          }
+        ],
+        base: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+        name: 'Wrapped Fantom',
+        display: 'wftm',
+        symbol: 'WFTM',
+        traces: [
+          {
+            type: 'wrapped',
+            counterparty: {
+              chain_name: 'fantom',
+              base_denom: 'wei'
+            },
+            chain: {
+              contract: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83'
+            },
+            provider: 'Fantom'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
     chain_name: 'moonbeam',
     assets: [
       {
@@ -1164,10 +1299,55 @@ const assets: AssetList[] = [
         name: 'Wrapped Matic',
         display: 'wmatic',
         symbol: 'WMATIC',
+        traces: [
+          {
+            type: 'wrapped',
+            counterparty: {
+              chain_name: 'polygon',
+              base_denom: 'wei'
+            },
+            provider: 'Polygon'
+          }
+        ],
         logo_URIs: {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg'
         },
         coingecko_id: 'wmatic'
+      },
+      {
+        description:
+          'USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.',
+        type_asset: 'erc20',
+        address: '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174',
+        denom_units: [
+          {
+            denom: '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174',
+            exponent: 0,
+            aliases: ['uusdc']
+          },
+          {
+            denom: 'usdc',
+            exponent: 6
+          }
+        ],
+        base: '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174',
+        name: 'USD Coin',
+        display: 'usdc',
+        symbol: 'USDC',
+        traces: [
+          {
+            type: 'synthetic',
+            counterparty: {
+              chain_name: 'forex',
+              base_denom: 'USD'
+            },
+            provider: 'Circle'
+          }
+        ],
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        },
+        coingecko_id: 'usd-coin'
       },
       {
         description:
@@ -1189,6 +1369,16 @@ const assets: AssetList[] = [
         name: 'Axelar Wrapped Dai Stablecoin',
         display: 'axldai',
         symbol: 'axlDAI',
+        traces: [
+          {
+            type: 'bridge',
+            counterparty: {
+              chain_name: 'axelar',
+              base_denom: 'dai-wei'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
         }
@@ -1213,6 +1403,16 @@ const assets: AssetList[] = [
         name: 'Axelar Wrapped Frax',
         display: 'axlfrax',
         symbol: 'axlFRAX',
+        traces: [
+          {
+            type: 'bridge',
+            counterparty: {
+              chain_name: 'axelar',
+              base_denom: 'frax-wei'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
         }
@@ -1237,6 +1437,16 @@ const assets: AssetList[] = [
         name: 'Axelar Wrapped USD Coin',
         display: 'axlusdc',
         symbol: 'axlUSDC',
+        traces: [
+          {
+            type: 'bridge',
+            counterparty: {
+              chain_name: 'axelar',
+              base_denom: 'uusdc'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }
@@ -1261,6 +1471,16 @@ const assets: AssetList[] = [
         name: 'Axelar Wrapped Tether USD',
         display: 'axlusdt',
         symbol: 'axlUSDT',
+        traces: [
+          {
+            type: 'bridge',
+            counterparty: {
+              chain_name: 'axelar',
+              base_denom: 'uusdt'
+            },
+            provider: 'Axelar'
+          }
+        ],
         logo_URIs: {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
         }
@@ -1293,6 +1513,27 @@ const assets: AssetList[] = [
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png'
         },
         coingecko_id: 'arable-protocol'
+      },
+      {
+        description: 'Overcollateralized stable coin for Arable derivatives v1',
+        denom_units: [
+          {
+            denom: 'erc20/0x2Cbea61fdfDFA520Ee99700F104D5b75ADf50B0c',
+            exponent: 0
+          },
+          {
+            denom: 'arusd',
+            exponent: 18
+          }
+        ],
+        base: 'erc20/0x2Cbea61fdfDFA520Ee99700F104D5b75ADf50B0c',
+        name: 'Arable USD',
+        display: 'arusd',
+        symbol: 'arUSD',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png'
+        },
+        coingecko_id: 'arable-usd'
       }
     ]
   },
@@ -2175,6 +2416,98 @@ const assets: AssetList[] = [
         logo_URIs: {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/wavax.svg'
         }
+      },
+      {
+        description: 'Wrapped FTM on Axelar.',
+        denom_units: [
+          {
+            denom: 'wftm-wei',
+            exponent: 0
+          },
+          {
+            denom: 'ftm',
+            exponent: 18
+          }
+        ],
+        base: 'wftm-wei',
+        name: 'Wrapped FTM',
+        display: 'ftm',
+        symbol: 'WFTM',
+        traces: [
+          {
+            type: 'bridge',
+            counterparty: {
+              chain_name: 'fantom',
+              base_denom: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83'
+            },
+            provider: 'Axelar'
+          }
+        ],
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.png'
+        }
+      },
+      {
+        description: "Circle's stablecoin from Polygon on Axelar",
+        denom_units: [
+          {
+            denom: 'polygon-uusdc',
+            exponent: 0
+          },
+          {
+            denom: 'polygon-usdc',
+            exponent: 6
+          }
+        ],
+        base: 'polygon-uusdc',
+        name: 'USD Coin from Polygon',
+        display: 'polygon-usdc',
+        symbol: 'USDC',
+        traces: [
+          {
+            type: 'bridge',
+            counterparty: {
+              chain_name: 'polygon',
+              base_denom: '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174'
+            },
+            provider: 'Axelar'
+          }
+        ],
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png'
+        }
+      },
+      {
+        description: "Circle's stablecoin from Avalanche on Axelar",
+        denom_units: [
+          {
+            denom: 'avalanche-uusdc',
+            exponent: 0
+          },
+          {
+            denom: 'avalanche-usdc',
+            exponent: 6
+          }
+        ],
+        base: 'avalanche-uusdc',
+        name: 'USD Coin from Avalanche',
+        display: 'avalanche-usdc',
+        symbol: 'USDC',
+        traces: [
+          {
+            type: 'bridge',
+            counterparty: {
+              chain_name: 'avalanche',
+              base_denom: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E'
+            },
+            provider: 'Axelar'
+          }
+        ],
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png'
+        }
       }
     ]
   },
@@ -2574,6 +2907,80 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../assetlist.schema.json',
+    chain_name: 'bluzelle',
+    assets: [
+      {
+        description: 'The native token of Bluzelle',
+        denom_units: [
+          {
+            denom: 'ubnt',
+            exponent: 0
+          },
+          {
+            denom: 'bnt',
+            exponent: 6,
+            aliases: ['blz']
+          }
+        ],
+        base: 'ubnt',
+        name: 'Bluzelle',
+        display: 'bnt',
+        symbol: 'BLZ',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/bluzelle.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/bluzelle.svg'
+        },
+        coingecko_id: 'bluzelle',
+        keywords: ['bluzelle', 'game']
+      },
+      {
+        description: "The ELT token of Bluzelle's Gamma 4 Gaming Ecosystem",
+        denom_units: [
+          {
+            denom: 'uelt',
+            exponent: 0
+          },
+          {
+            denom: 'elt',
+            exponent: 6
+          }
+        ],
+        base: 'uelt',
+        name: 'ELT',
+        display: 'elt',
+        symbol: 'ELT',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/elt.png'
+        },
+        coingecko_id: '',
+        keywords: ['elt']
+      },
+      {
+        description: "The game token of Bluzelle's Gamma 4 Gaming Ecosystem",
+        denom_units: [
+          {
+            denom: 'ug4',
+            exponent: 0
+          },
+          {
+            denom: 'g4',
+            exponent: 6
+          }
+        ],
+        base: 'ug4',
+        name: 'G4',
+        display: 'g4',
+        symbol: 'G4',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/g4.png'
+        },
+        coingecko_id: '',
+        keywords: ['g4']
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
     chain_name: 'bostrom',
     assets: [
       {
@@ -2760,6 +3167,34 @@ const assets: AssetList[] = [
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
         },
         coingecko_id: 'chihuahua-token'
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'chimba',
+    assets: [
+      {
+        description: 'The first blokchain in colombia',
+        denom_units: [
+          {
+            denom: 'ucmba',
+            exponent: 0
+          },
+          {
+            denom: 'cmba',
+            exponent: 6
+          }
+        ],
+        base: 'ucmba',
+        name: 'Chimba',
+        display: 'cmba',
+        symbol: 'CMBA',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.svg'
+        },
+        coingecko_id: 'chimba-token'
       }
     ]
   },
@@ -4593,12 +5028,13 @@ const assets: AssetList[] = [
           }
         ],
         base: 'cw20:juno1u45shlp0q4gcckvsj06ss4xuvsu0z24a0d0vr9ce6r24pht4e5xq7q995n',
-        name: 'HOPERS',
-        display: 'HOPERS',
-        symbol: 'hopers',
+        name: 'Hopers',
+        display: 'hopers',
+        symbol: 'HOPERS',
         logo_URIs: {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.png'
-        }
+        },
+        coingecko_id: 'hopers-io '
       },
       {
         description: 'RED',
@@ -4646,6 +5082,80 @@ const assets: AssetList[] = [
         symbol: 'BLUE',
         logo_URIs: {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/blue.png'
+        }
+      },
+      {
+        description: 'WYND DAO Governance Token',
+        type_asset: 'cw20',
+        address:
+          'juno1mkw83sv6c7sjdvsaplrzc8yaes9l42p4mhy0ssuxjnyzl87c9eps7ce3m9',
+        denom_units: [
+          {
+            denom:
+              'cw20:juno1mkw83sv6c7sjdvsaplrzc8yaes9l42p4mhy0ssuxjnyzl87c9eps7ce3m9',
+            exponent: 0
+          },
+          {
+            denom: 'wynd',
+            exponent: 6
+          }
+        ],
+        base: 'cw20:juno1mkw83sv6c7sjdvsaplrzc8yaes9l42p4mhy0ssuxjnyzl87c9eps7ce3m9',
+        name: 'Wynd DAO Governance Token',
+        display: 'wynd',
+        symbol: 'WYND',
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wynd.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wynd.png'
+        }
+      },
+      {
+        description: 'Bored APE IBC club token',
+        type_asset: 'cw20',
+        address:
+          'juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj',
+        denom_units: [
+          {
+            denom:
+              'cw20:juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj',
+            exponent: 0
+          },
+          {
+            denom: 'BANANA',
+            exponent: 6
+          }
+        ],
+        base: 'juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj',
+        name: 'Banana Token',
+        display: 'Banana Token',
+        symbol: 'BANANA',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/banana.png'
+        }
+      },
+      {
+        description: 'nRide Token',
+        type_asset: 'cw20',
+        address:
+          'juno1qmlchtmjpvu0cr7u0tad2pq8838h6farrrjzp39eqa9xswg7teussrswlq',
+        denom_units: [
+          {
+            denom:
+              'cw20:juno1qmlchtmjpvu0cr7u0tad2pq8838h6farrrjzp39eqa9xswg7teussrswlq',
+            exponent: 0
+          },
+          {
+            denom: 'nride',
+            exponent: 6
+          }
+        ],
+        base: 'cw20:juno1qmlchtmjpvu0cr7u0tad2pq8838h6farrrjzp39eqa9xswg7teussrswlq',
+        name: 'nRide Token',
+        display: 'nride',
+        symbol: 'NRIDE',
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/nride.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/nride.png'
         }
       },
       {
@@ -4988,7 +5498,7 @@ const assets: AssetList[] = [
     chain_name: 'loyal',
     assets: [
       {
-        description: 'Native token of Loyal',
+        description: 'The native token of Loyal',
         denom_units: [
           {
             denom: 'ulyl',
@@ -5002,7 +5512,11 @@ const assets: AssetList[] = [
         base: 'ulyl',
         name: 'Loyal',
         display: 'lyl',
-        symbol: 'LYL'
+        symbol: 'LYL',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loyal/images/lyl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loyal/images/lyl.svg'
+        }
       }
     ]
   },
@@ -5057,6 +5571,33 @@ const assets: AssetList[] = [
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.svg'
         },
         coingecko_id: 'lum-network'
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'mars',
+    assets: [
+      {
+        description: 'Mars protocol token',
+        denom_units: [
+          {
+            denom: 'umars',
+            exponent: 0
+          },
+          {
+            denom: 'mars',
+            exponent: 6
+          }
+        ],
+        base: 'umars',
+        name: 'Mars',
+        display: 'mars',
+        symbol: 'MARS',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
+        }
       }
     ]
   },
@@ -5797,6 +6338,39 @@ const assets: AssetList[] = [
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
         },
         coingecko_id: 'quicksilver'
+      },
+      {
+        description: 'Quicksilver Liquid Staked STARS',
+        denom_units: [
+          {
+            denom: 'uqstars',
+            exponent: 0,
+            aliases: []
+          },
+          {
+            denom: 'qstars',
+            exponent: 6,
+            aliases: []
+          }
+        ],
+        base: 'uqstars',
+        name: 'Quicksilver Liquid Staked STARS',
+        display: 'qstars',
+        symbol: 'qSTARS',
+        traces: [
+          {
+            type: 'liquid-stake',
+            counterparty: {
+              chain_name: 'stargaze',
+              base_denom: 'ustars'
+            },
+            provider: 'Quicksilver'
+          }
+        ],
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qstars.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qstars.svg'
+        }
       }
     ]
   },
@@ -6491,6 +7065,36 @@ const assets: AssetList[] = [
         logo_URIs: {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.svg'
+        }
+      },
+      {
+        denom_units: [
+          {
+            denom: 'stuluna',
+            exponent: 0
+          },
+          {
+            denom: 'stluna',
+            exponent: 6
+          }
+        ],
+        base: 'stuluna',
+        name: 'stLUNA',
+        display: 'stluna',
+        symbol: 'stLUNA',
+        traces: [
+          {
+            type: 'liquid-stake',
+            counterparty: {
+              chain_name: 'terra2',
+              base_denom: 'uluna'
+            },
+            provider: 'Stride'
+          }
+        ],
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stluna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stluna.svg'
         }
       }
     ]
@@ -11388,6 +11992,65 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../assetlist.schema.json',
+    chain_name: 'fantomtestnet',
+    assets: [
+      {
+        description:
+          "Fantom's native utility token — FTM — powers the entire Fantom blockchain ecosystem. FTM tokens are used for staking, governance, payments, and fees on the network.",
+        denom_units: [
+          {
+            denom: 'wei',
+            exponent: 0
+          },
+          {
+            denom: 'ftm',
+            exponent: 18
+          }
+        ],
+        base: 'wei',
+        name: 'Fantom',
+        display: 'ftm',
+        symbol: 'FTM',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.png'
+        }
+      },
+      {
+        description: 'ERC20 wrapped version of FTM',
+        type_asset: 'erc20',
+        address: '0x812666209b90344Ec8e528375298ab9045c2Bd08',
+        denom_units: [
+          {
+            denom: '0x812666209b90344Ec8e528375298ab9045c2Bd08',
+            exponent: 0
+          },
+          {
+            denom: 'wftm',
+            exponent: 18
+          }
+        ],
+        base: '0x812666209b90344Ec8e528375298ab9045c2Bd08',
+        name: 'Wrapped Fantom',
+        display: 'wftm',
+        symbol: 'WFTM',
+        traces: [
+          {
+            type: 'wrapped',
+            counterparty: {
+              chain_name: 'fantomtestnet',
+              base_denom: 'wei'
+            },
+            chain: {
+              contract: '0x812666209b90344Ec8e528375298ab9045c2Bd08'
+            },
+            provider: 'Fantom'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
     chain_name: 'moonbeamtestnet',
     assets: [
       {
@@ -11848,6 +12511,36 @@ const assets: AssetList[] = [
         logo_URIs: {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/wavax.svg'
         }
+      },
+      {
+        description: 'Wrapped FTM on Axelar.',
+        denom_units: [
+          {
+            denom: 'wftm-wei',
+            exponent: 0
+          },
+          {
+            denom: 'ftm',
+            exponent: 18
+          }
+        ],
+        base: 'wftm-wei',
+        name: 'Wrapped FTM',
+        display: 'ftm',
+        symbol: 'WFTM',
+        traces: [
+          {
+            type: 'bridge',
+            counterparty: {
+              chain_name: 'fantomtestnet',
+              base_denom: '0x812666209b90344Ec8e528375298ab9045c2Bd08'
+            },
+            provider: 'Axelar'
+          }
+        ],
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.png'
+        }
       }
     ]
   },
@@ -12114,7 +12807,7 @@ const assets: AssetList[] = [
           }
         ],
         base: 'atevmos',
-        name: 'Evnos Testnet',
+        name: 'Evmos Testnet',
         display: 'tevmos',
         symbol: 'TEVMOS',
         logo_URIs: {
@@ -12402,6 +13095,32 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../../assetlist.schema.json',
+    chain_name: 'marstestnet',
+    assets: [
+      {
+        description: 'The native token of Mars Protocol',
+        denom_units: [
+          {
+            denom: 'umars',
+            exponent: 0
+          },
+          {
+            denom: 'mars',
+            exponent: 6
+          }
+        ],
+        base: 'umars',
+        name: 'Mars',
+        display: 'mars',
+        symbol: 'MARS',
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/marstestnet/images/mars.svg'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
     chain_name: 'osmosistestnet',
     assets: [
       {
@@ -12475,6 +13194,35 @@ const assets: AssetList[] = [
         name: 'Quasar',
         display: 'qsr',
         symbol: 'QSR'
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'quicksilvertestnet',
+    assets: [
+      {
+        description: 'QCK - native token of Quicksilver',
+        denom_units: [
+          {
+            denom: 'uqck',
+            exponent: 0,
+            aliases: []
+          },
+          {
+            denom: 'qck',
+            exponent: 6,
+            aliases: []
+          }
+        ],
+        base: 'uqck',
+        name: 'Quicksilver',
+        display: 'qck',
+        symbol: 'QCK',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
+        },
+        coingecko_id: 'quicksilver'
       }
     ]
   },

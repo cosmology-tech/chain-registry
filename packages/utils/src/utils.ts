@@ -233,6 +233,9 @@ export const getIbcAssets = (
           return newAsset;
         });
       const channel = getTransferChannel(ibcInfo);
+      if (!channel || channel[chainIs] || channel[counterpartyIs]) {
+        return;
+      }
       return {
         chain: {
           ...chainIbc,
@@ -356,7 +359,7 @@ export const getCw20Assets = (
       if (!cw20Assets.length) return;
 
       const channel = getWasmChannel(ibcInfo);
-      if (!channel) {
+      if (!channel || channel[chainIs] || channel[counterpartyIs]) {
         // console.warn(
         //   chainIbc.chain_name,
         //   '<>',

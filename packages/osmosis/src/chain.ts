@@ -30,23 +30,26 @@ const chain: Chain = {
       {
         denom: 'uosmo'
       }
-    ]
+    ],
+    lock_duration: {
+      time: '1209600s'
+    }
   },
   codebase: {
     git_repo: 'https://github.com/osmosis-labs/osmosis',
-    recommended_version: 'v12.3.0',
-    compatible_versions: ['v12.3.0', 'v12.2.0', 'v12.2.1'],
+    recommended_version: 'v14.0.0',
+    compatible_versions: ['v14.0.0'],
     binaries: {
       'linux/amd64':
-        'https://github.com/osmosis-labs/osmosis/releases/download/v12.3.0/osmosisd-12.3.0-linux-amd64?checksum=sha256:958210c919d13c281896fa9773c323c5534f0fa46d74807154f737609a00db70',
+        'https://github.com/osmosis-labs/osmosis/releases/download/v14.0.0/osmosisd-14.0.0-linux-amd64?checksum=sha256:441cac2f9094b63ec7a363f4d5442f16c28f65390cf286a589be62ee1ba66cc1',
       'linux/arm64':
-        'https://github.com/osmosis-labs/osmosis/releases/download/v12.3.0/osmosisd-12.3.0-linux-arm64?checksum=sha256:a931618c8a839c30e5cecfd2a88055cda1d68cc68557fe3303fe14e2de3bef8f'
+        'https://github.com/osmosis-labs/osmosis/releases/download/v14.0.0/osmosisd-14.0.0-linux-arm64?checksum=sha256:5c8bed57f2d58bb3d3834beb9ef38aedc9329c8bf3e95da28aa7b00b2174bfc1'
     },
     cosmos_sdk_version: '0.45',
     tendermint_version: '0.34',
-    cosmwasm_version: '0.28',
+    cosmwasm_version: '0.30',
     cosmwasm_enabled: true,
-    ibc_go_version: '3.3.0',
+    ibc_go_version: '4.2.0',
     ics_enabled: ['ics20-1'],
     genesis: {
       name: 'v3',
@@ -93,9 +96,24 @@ const chain: Chain = {
       {
         name: 'v12',
         tag: 'v12.3.0',
-        height: 6246000
+        height: 6246000,
+        next_version_name: 'v13'
+      },
+      {
+        name: 'v13',
+        tag: 'v13.1.0',
+        height: 7241500,
+        next_version_name: 'v14'
+      },
+      {
+        name: 'v14',
+        tag: 'v14.0.0',
+        height: 7937500
       }
     ]
+  },
+  logo_URIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
   },
   peers: {
     seeds: [
@@ -141,13 +159,28 @@ const chain: Chain = {
       },
       {
         id: 'ebc272824924ea1a27ea3183dd0b9ba713494f83',
-        address: 'osmosis.mainnet.seed.autostake.net:26716',
-        provider: 'AutoStake.net'
+        address: 'osmosis-mainnet-seed-autostake.net:26716',
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         id: '3cc024d1c760c9cd96e6413abaf3b36a8bdca58e',
         address: 'seeds.goldenratiostaking.net:1630',
         provider: 'Golden Ratio Staking'
+      },
+      {
+        id: 'bd7064a50f5843e2c84c71c4dc18ac07424bdcc1',
+        address: 'seeds.whispernode.com:12556',
+        provider: 'WhisperNode🤐'
+      },
+      {
+        id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
+        address: 'osmosis-seed-1.allnodes.me:26656',
+        provider: 'Allnodes.com ⚡️ Nodes & Staking'
+      },
+      {
+        id: 'e726816f42831689eab9378d5d577f1d06d25716',
+        address: 'osmosis-seed-2.allnodes.me:26656',
+        provider: 'Allnodes.com ⚡️ Nodes & Staking'
       }
     ],
     persistent_peers: [
@@ -283,8 +316,8 @@ const chain: Chain = {
       },
       {
         id: 'ebc272824924ea1a27ea3183dd0b9ba713494f83',
-        address: 'osmosis.mainnet.peer.autostake.net:26716',
-        provider: 'AutoStake.net'
+        address: 'osmosis-mainnet-peer-autostake.net:26716',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ]
   },
@@ -353,6 +386,10 @@ const chain: Chain = {
       {
         address: 'https://osmosis.rpc.interchain.ivaldilabs.xyz',
         provider: 'Ivaldi Labs'
+      },
+      {
+        address: 'https://rpc.osl.zone',
+        provider: 'Osmosis Support Lab'
       }
     ],
     rest: [
@@ -413,6 +450,14 @@ const chain: Chain = {
         provider: 'Ivaldi Labs'
       },
       {
+        address: 'https://api.osl.zone',
+        provider: 'Osmosis Support Lab'
+      },
+      {
+        address: 'https://osmosis-mainnet-lcd-autostake.net:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
         address: 'https://osmosis.stakesystems.io/',
         provider: 'stakesystems'
       }
@@ -456,7 +501,8 @@ const chain: Chain = {
     {
       kind: 'EZStaking Tools',
       url: 'https://ezstaking.tools/osmosis',
-      tx_page: 'https://ezstaking.tools/osmosis/txs/${txHash}'
+      tx_page: 'https://ezstaking.tools/osmosis/txs/${txHash}',
+      account_page: 'https://ezstaking.tools/osmosis/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
@@ -473,8 +519,7 @@ const chain: Chain = {
       kind: 'explorers.guru',
       url: 'https://osmosis.explorers.guru',
       tx_page: 'https://osmosis.explorers.guru/transaction/${txHash}',
-      account_page:
-        'https://osmosis.explorers.guru/transaction/${accountAddress}'
+      account_page: 'https://osmosis.explorers.guru/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
@@ -482,9 +527,6 @@ const chain: Chain = {
       tx_page: 'https://atomscan.com/osmosis/transactions/${txHash}'
     }
   ],
-  logo_URIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
-  },
   keywords: ['dex']
 };
 export default chain;

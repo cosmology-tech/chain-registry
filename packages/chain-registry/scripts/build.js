@@ -8,6 +8,11 @@ const chains = [];
 const ibcs = [];
 paths.forEach((file) => {
   const data = JSON.parse(fs.readFileSync(file, 'utf-8'));
+  if (!data.$schema) {
+    console.warn('problematic data:');
+    console.log(data);
+    return;
+  }
   if (data.$schema.endsWith('assetlist.schema.json')) assets.push(data);
   if (data.$schema.endsWith('chain.schema.json')) chains.push(data);
   if (data.$schema.endsWith('ibc_data.schema.json')) ibcs.push(data);
