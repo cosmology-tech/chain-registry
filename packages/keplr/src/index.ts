@@ -107,7 +107,6 @@ export const chainRegistryChainToKeplr = (
       if (!gasPriceSteps?.hasOwnProperty(feeCurrency.coinMinimalDenom))
         return feeCurrency;
 
-
       // has gas
       const gasPriceStep = gasPriceSteps[feeCurrency.coinMinimalDenom];
       return {
