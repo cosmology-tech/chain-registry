@@ -182,7 +182,6 @@ export const getIbcAssets = (
       i.chain_1.chain_name === chainName || i.chain_2.chain_name === chainName
     );
   });
-
   const ibcAssetLists = chainIbcInfo
     .map((ibcInfo) => {
       const counterpartyIs =
@@ -232,8 +231,9 @@ export const getIbcAssets = (
           });
           return newAsset;
         });
+
       const channel = getTransferChannel(ibcInfo);
-      if (!channel || channel[chainIs] || channel[counterpartyIs]) {
+      if (!channel) {
         return;
       }
       return {
@@ -252,30 +252,39 @@ export const getIbcAssets = (
 
   const hash = ibcAssetLists.reduce((m, v) => {
     m[v.chain.chain_name] = m[v.chain.chain_name] || [];
-    const assets = v.assets.map((asset) => {
-      return {
-        ...asset,
-        traces: [
-          {
-            type: 'ibc',
-            counterparty: {
-              // source_channel
-              channel_id: v.counterparty.channel_id,
-              // source_denom
-              base_denom: asset.denom_units[0].aliases[0],
-              chain_name: v.counterparty.chain_name
-              // port: v.counterparty.port_id
-            },
-            chain: {
-              // dst_denom
-              channel_id: v.chain.channel_id
-              // chain_name: v.chain.chain_name,
-              // port: v.chain.port_id
-            }
-          }
-        ]
-      };
-    });
+    const assets = v.assets
+      .map((asset) => {
+        try {
+          return {
+            ...asset,
+            traces: [
+              {
+                type: 'ibc',
+                counterparty: {
+                  // source_channel
+                  channel_id: v.counterparty.channel_id,
+                  // source_denom
+                  base_denom:
+                    asset.denom_units[0]?.aliases?.[0] ??
+                    asset.denom_units[0].denom,
+                  chain_name: v.counterparty.chain_name
+                  // port: v.counterparty.port_id
+                },
+                chain: {
+                  // dst_denom
+                  channel_id: v.chain.channel_id
+                  // chain_name: v.chain.chain_name,
+                  // port: v.chain.port_id
+                }
+              }
+            ]
+          };
+        } catch (e) {
+          console.log('problem creating assets:');
+          console.log(asset);
+        }
+      })
+      .filter(Boolean);
     const obj = {
       ...v,
       assets
@@ -359,7 +368,7 @@ export const getCw20Assets = (
       if (!cw20Assets.length) return;
 
       const channel = getWasmChannel(ibcInfo);
-      if (!channel || channel[chainIs] || channel[counterpartyIs]) {
+      if (!channel) {
         // console.warn(
         //   chainIbc.chain_name,
         //   '<>',
@@ -384,30 +393,39 @@ export const getCw20Assets = (
 
   const hash = cw20AssetLists.reduce((m, v) => {
     m[v.chain.chain_name] = m[v.chain.chain_name] || [];
-    const assets = v.assets.map((asset) => {
-      return {
-        ...asset,
-        traces: [
-          {
-            type: 'ibc-cw20',
-            counterparty: {
-              port: v.counterparty.port_id,
-              // source_channel
-              channel_id: v.counterparty.channel_id,
-              // source_denom
-              base_denom: asset.denom_units[0].aliases[0],
-              chain_name: v.counterparty.chain_name
-            },
-            chain: {
-              // dst_denom
-              port: v.chain.port_id,
-              channel_id: v.chain.channel_id
-              // chain_name: v.chain.chain_name,
-            }
-          }
-        ]
-      };
-    });
+    const assets = v.assets
+      .map((asset) => {
+        try {
+          return {
+            ...asset,
+            traces: [
+              {
+                type: 'ibc-cw20',
+                counterparty: {
+                  port: v.counterparty.port_id,
+                  // source_channel
+                  channel_id: v.counterparty.channel_id,
+                  // source_denom
+                  base_denom:
+                    asset.denom_units[0]?.aliases?.[0] ??
+                    asset.denom_units[0].denom,
+                  chain_name: v.counterparty.chain_name
+                },
+                chain: {
+                  // dst_denom
+                  port: v.chain.port_id,
+                  channel_id: v.chain.channel_id
+                  // chain_name: v.chain.chain_name,
+                }
+              }
+            ]
+          };
+        } catch (e) {
+          consnole.log('problem creating cw20 assets');
+          console.log(asset);
+        }
+      })
+      .filter(Boolean);
     const obj = {
       ...v,
       assets

@@ -8,13 +8,11 @@ const assets: AssetList = {
       denom_units: [
         {
           denom: 'uosmo',
-          exponent: 0,
-          aliases: []
+          exponent: 0
         },
         {
           denom: 'osmo',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }
       ],
       base: 'uosmo',

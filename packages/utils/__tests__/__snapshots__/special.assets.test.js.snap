@@ -375,6 +375,44 @@ exports[`getAssetLists 1`] = `
         ],
       },
       {
+        "base": "ibc/D64E84758BCA42602C27E9ED2DB8F4EFDAE6A1E311CF404B516D45FEDF319D73",
+        "coingecko_id": "injective-protocol",
+        "denom_units": [
+          {
+            "aliases": [
+              "inj",
+            ],
+            "denom": "ibc/D64E84758BCA42602C27E9ED2DB8F4EFDAE6A1E311CF404B516D45FEDF319D73",
+            "exponent": 0,
+          },
+          {
+            "denom": "INJ",
+            "exponent": 18,
+          },
+        ],
+        "description": "The INJ token is the native governance token for the Injective chain.",
+        "display": "INJ",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg",
+        },
+        "name": "Injective",
+        "symbol": "INJ",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-41",
+            },
+            "counterparty": {
+              "base_denom": "inj",
+              "chain_name": "injective",
+              "channel_id": "channel-82",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
         "base": "ibc/5709B8339F05C7E37D27FCFEC18CEDBB0747309144C8B3C4A49C122F0F30B96B",
         "coingecko_id": "iris-network",
         "denom_units": [
@@ -449,6 +487,41 @@ exports[`getAssetLists 1`] = `
             "type": "ibc",
           },
         ],
+      },
+      {
+        "address": "juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj",
+        "base": "ibc/239CF26B6804489BBFDE89257D4520FCDCFC3B66AE28EE838AA60D9BFC52315D",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj",
+            "exponent": 0,
+          },
+          {
+            "denom": "BANANA",
+            "exponent": 6,
+          },
+        ],
+        "description": "Bored APE IBC club token",
+        "display": "Banana Token",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/banana.png",
+        },
+        "name": "Banana Token",
+        "symbol": "BANANA",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-37",
+            },
+            "counterparty": {
+              "base_denom": "cw20:juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj",
+              "chain_name": "juno",
+              "channel_id": "channel-33",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "cw20",
       },
       {
         "address": "juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr",
@@ -566,6 +639,82 @@ exports[`getAssetLists 1`] = `
               "base_denom": "uion",
               "chain_name": "osmosis",
               "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/C44D056A8118A174AC223B381BFAA893A306568E4C6F7D2BFCD1F70707F2B937",
+        "coingecko_id": "quicksilver",
+        "denom_units": [
+          {
+            "aliases": [
+              "uqck",
+            ],
+            "denom": "ibc/C44D056A8118A174AC223B381BFAA893A306568E4C6F7D2BFCD1F70707F2B937",
+            "exponent": 0,
+          },
+          {
+            "aliases": [],
+            "denom": "qck",
+            "exponent": 6,
+          },
+        ],
+        "description": "QCK - native token of Quicksilver",
+        "display": "qck",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png",
+        },
+        "name": "Quicksilver",
+        "symbol": "QCK",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-69",
+            },
+            "counterparty": {
+              "base_denom": "uqck",
+              "chain_name": "quicksilver",
+              "channel_id": "channel-8",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/F221881E92E0B3E56CC91AC9CC49555E1BF45569CFA5362C38A8F2F287CB3791",
+        "denom_units": [
+          {
+            "aliases": [
+              "uqstars",
+            ],
+            "denom": "ibc/F221881E92E0B3E56CC91AC9CC49555E1BF45569CFA5362C38A8F2F287CB3791",
+            "exponent": 0,
+          },
+          {
+            "aliases": [],
+            "denom": "qstars",
+            "exponent": 6,
+          },
+        ],
+        "description": "Quicksilver Liquid Staked STARS",
+        "display": "qstars",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qstars.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qstars.svg",
+        },
+        "name": "Quicksilver Liquid Staked STARS",
+        "symbol": "qSTARS",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-69",
+            },
+            "counterparty": {
+              "base_denom": "uqstars",
+              "chain_name": "quicksilver",
+              "channel_id": "channel-8",
             },
             "type": "ibc",
           },
@@ -716,6 +865,225 @@ exports[`getAssetLists 1`] = `
               "base_denom": "uiov",
               "chain_name": "starname",
               "channel_id": "channel-13",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/C98348DF19AA429B2202B408DD87332BA3A9533CC626E507F5A16082F26FCF16",
+        "coingecko_id": "stride",
+        "denom_units": [
+          {
+            "aliases": [
+              "ustrd",
+            ],
+            "denom": "ibc/C98348DF19AA429B2202B408DD87332BA3A9533CC626E507F5A16082F26FCF16",
+            "exponent": 0,
+          },
+          {
+            "denom": "strd",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Stride",
+        "display": "strd",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg",
+        },
+        "name": "Stride",
+        "symbol": "STRD",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-67",
+            },
+            "counterparty": {
+              "base_denom": "ustrd",
+              "chain_name": "stride",
+              "channel_id": "channel-53",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/3718F4B083ACB5BDCC1312B96AEE4E968278B4FC8EA67C3E6DDF133D4EE60B88",
+        "coingecko_id": "stride-staked-atom",
+        "denom_units": [
+          {
+            "aliases": [
+              "stuatom",
+            ],
+            "denom": "ibc/3718F4B083ACB5BDCC1312B96AEE4E968278B4FC8EA67C3E6DDF133D4EE60B88",
+            "exponent": 0,
+          },
+          {
+            "denom": "statom",
+            "exponent": 6,
+          },
+        ],
+        "display": "statom",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg",
+        },
+        "name": "stATOM",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-67",
+            },
+            "counterparty": {
+              "base_denom": "stuatom",
+              "chain_name": "stride",
+              "channel_id": "channel-53",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/86187E4D8FE633056F317903FFA19C492B5068157375F72B1FF6EE7E325F5745",
+        "denom_units": [
+          {
+            "aliases": [
+              "stustars",
+            ],
+            "denom": "ibc/86187E4D8FE633056F317903FFA19C492B5068157375F72B1FF6EE7E325F5745",
+            "exponent": 0,
+          },
+          {
+            "denom": "ststars",
+            "exponent": 6,
+          },
+        ],
+        "display": "ststars",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.svg",
+        },
+        "name": "stSTARS",
+        "symbol": "stSTARS",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-67",
+            },
+            "counterparty": {
+              "base_denom": "stustars",
+              "chain_name": "stride",
+              "channel_id": "channel-53",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/26D6E1FF4D65B4A13B9B2D8A3C87BA94B0BF866F4C73F37E8FA77FCB39C37F91",
+        "denom_units": [
+          {
+            "aliases": [
+              "stuosmo",
+            ],
+            "denom": "ibc/26D6E1FF4D65B4A13B9B2D8A3C87BA94B0BF866F4C73F37E8FA77FCB39C37F91",
+            "exponent": 0,
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6,
+          },
+        ],
+        "display": "stosmo",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg",
+        },
+        "name": "stOSMO",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-67",
+            },
+            "counterparty": {
+              "base_denom": "stuosmo",
+              "chain_name": "stride",
+              "channel_id": "channel-53",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/038A211E7F3FE7B1D7C7AA87DB440B79161975C3772129B5280AB5B690E5E748",
+        "denom_units": [
+          {
+            "aliases": [
+              "stujuno",
+            ],
+            "denom": "ibc/038A211E7F3FE7B1D7C7AA87DB440B79161975C3772129B5280AB5B690E5E748",
+            "exponent": 0,
+          },
+          {
+            "denom": "stjuno",
+            "exponent": 6,
+          },
+        ],
+        "display": "stjuno",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.svg",
+        },
+        "name": "stJUNO",
+        "symbol": "stJUNO",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-67",
+            },
+            "counterparty": {
+              "base_denom": "stujuno",
+              "chain_name": "stride",
+              "channel_id": "channel-53",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/127F2F22E18B843030CF6003D3AB025DC40A53F7507F078BB6A4FA7C86E50189",
+        "denom_units": [
+          {
+            "aliases": [
+              "stuluna",
+            ],
+            "denom": "ibc/127F2F22E18B843030CF6003D3AB025DC40A53F7507F078BB6A4FA7C86E50189",
+            "exponent": 0,
+          },
+          {
+            "denom": "stluna",
+            "exponent": 6,
+          },
+        ],
+        "display": "stluna",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stluna.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stluna.svg",
+        },
+        "name": "stLUNA",
+        "symbol": "stLUNA",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-67",
+            },
+            "counterparty": {
+              "base_denom": "stuluna",
+              "chain_name": "stride",
+              "channel_id": "channel-53",
             },
             "type": "ibc",
           },

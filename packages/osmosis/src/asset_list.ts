@@ -4,6 +4,80 @@ const asset_list: AssetList = {
   assets: [
     {
       description:
+        'The native EVM, governance and staking token of the Acrechain',
+      denom_units: [
+        {
+          denom:
+            'ibc/BB936517F7E5D77A63E0ADB05217A6608B0C4CF8FBA7EA2F4BAE4107A7238F06',
+          exponent: 0,
+          aliases: ['aacre']
+        },
+        {
+          denom: 'acre',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/BB936517F7E5D77A63E0ADB05217A6608B0C4CF8FBA7EA2F4BAE4107A7238F06',
+      name: 'Acre',
+      display: 'acre',
+      symbol: 'ACRE',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png'
+      },
+      coingecko_id: 'arable-protocol',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'aacre',
+            chain_name: 'acrechain'
+          },
+          chain: {
+            channel_id: 'channel-490'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Overcollateralized stable coin for Arable derivatives v1',
+      denom_units: [
+        {
+          denom:
+            'ibc/5D270A584B1078FBE07D14570ED5E88EC1FEDA8518B76C322606291E6FD8286F',
+          exponent: 0,
+          aliases: ['erc20/0x2Cbea61fdfDFA520Ee99700F104D5b75ADf50B0c']
+        },
+        {
+          denom: 'arusd',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/5D270A584B1078FBE07D14570ED5E88EC1FEDA8518B76C322606291E6FD8286F',
+      name: 'Arable USD',
+      display: 'arusd',
+      symbol: 'arUSD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png'
+      },
+      coingecko_id: 'arable-usd',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'erc20/0x2Cbea61fdfDFA520Ee99700F104D5b75ADf50B0c',
+            chain_name: 'acrechain'
+          },
+          chain: {
+            channel_id: 'channel-490'
+          }
+        }
+      ]
+    },
+    {
+      description:
         'BLD is the token used to secure the Agoric chain through staking and to backstop Inter Protocol.',
       denom_units: [
         {
@@ -916,6 +990,184 @@ const asset_list: AssetList = {
       coingecko_id: 'wbnb'
     },
     {
+      description: 'Binance USD on Axelar.',
+      denom_units: [
+        {
+          denom:
+            'ibc/6329DD8CF31A334DD5BE3F68C846C9FE313281362B37686A62343BAC1EB1546D',
+          exponent: 0,
+          aliases: ['busd-wei']
+        },
+        {
+          denom: 'busd',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/6329DD8CF31A334DD5BE3F68C846C9FE313281362B37686A62343BAC1EB1546D',
+      name: 'Binance USD',
+      display: 'busd',
+      symbol: 'BUSD',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'busd-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-208'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/busd.png'
+      },
+      coingecko_id: 'binance-usd'
+    },
+    {
+      description: 'Wrapped AVAX on Axelar.',
+      denom_units: [
+        {
+          denom:
+            'ibc/6F62F01D913E3FFE472A38C78235B8F021B511BC6596ADFF02615C8F83D3B373',
+          exponent: 0,
+          aliases: ['wavax-wei']
+        },
+        {
+          denom: 'avax',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/6F62F01D913E3FFE472A38C78235B8F021B511BC6596ADFF02615C8F83D3B373',
+      name: 'Wrapped AVAX',
+      display: 'avax',
+      symbol: 'WAVAX',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'wavax-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-208'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/wavax.svg'
+      }
+    },
+    {
+      description: 'Wrapped FTM on Axelar.',
+      denom_units: [
+        {
+          denom:
+            'ibc/5E2DFDF1734137302129EA1C1BA21A580F96F778D4F021815EA4F6DB378DA1A4',
+          exponent: 0,
+          aliases: ['wftm-wei']
+        },
+        {
+          denom: 'ftm',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/5E2DFDF1734137302129EA1C1BA21A580F96F778D4F021815EA4F6DB378DA1A4',
+      name: 'Wrapped FTM',
+      display: 'ftm',
+      symbol: 'WFTM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'wftm-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-208'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.png'
+      }
+    },
+    {
+      description: "Circle's stablecoin from Polygon on Axelar",
+      denom_units: [
+        {
+          denom:
+            'ibc/231FD77ECCB2DB916D314019DA30FE013202833386B1908A191D16989AD80B5A',
+          exponent: 0,
+          aliases: ['polygon-uusdc']
+        },
+        {
+          denom: 'polygon-usdc',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/231FD77ECCB2DB916D314019DA30FE013202833386B1908A191D16989AD80B5A',
+      name: 'USD Coin from Polygon',
+      display: 'polygon-usdc',
+      symbol: 'USDC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'polygon-uusdc',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-208'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png'
+      }
+    },
+    {
+      description: "Circle's stablecoin from Avalanche on Axelar",
+      denom_units: [
+        {
+          denom:
+            'ibc/F17C9CA112815613C5B6771047A093054F837C3020CBA59DFFD9D780A8B2984C',
+          exponent: 0,
+          aliases: ['avalanche-uusdc']
+        },
+        {
+          denom: 'avalanche-usdc',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/F17C9CA112815613C5B6771047A093054F837C3020CBA59DFFD9D780A8B2984C',
+      name: 'USD Coin from Avalanche',
+      display: 'avalanche-usdc',
+      symbol: 'USDC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'avalanche-uusdc',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-208'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png'
+      }
+    },
+    {
       description: 'The native token of BandChain',
       denom_units: [
         {
@@ -963,8 +1215,7 @@ const asset_list: AssetList = {
         },
         {
           denom: 'bze',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }
       ],
       base: 'ibc/C822645522FC3EECF817609AA38C24B64D04F5C267A23BCCF8F2E3BC5755FA88',
@@ -1589,6 +1840,43 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description:
+        'Canto is a Layer-1 blockchain built to deliver on the promise of DeFi',
+      denom_units: [
+        {
+          denom:
+            'ibc/47CAF2DB8C016FAC960F33BC492FD8E454593B65CC59D70FA9D9F30424F9C32F',
+          exponent: 0,
+          aliases: ['acanto']
+        },
+        {
+          denom: 'canto',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/47CAF2DB8C016FAC960F33BC492FD8E454593B65CC59D70FA9D9F30424F9C32F',
+      name: 'Canto',
+      display: 'canto',
+      symbol: 'CANTO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png'
+      },
+      coingecko_id: 'canto',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'acanto',
+            chain_name: 'canto'
+          },
+          chain: {
+            channel_id: 'channel-550'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Carbon',
       denom_units: [
         {
@@ -1755,7 +2043,8 @@ const asset_list: AssetList = {
       display: 'cmdx',
       symbol: 'CMDX',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
       },
       coingecko_id: 'comdex',
       traces: [
@@ -1829,7 +2118,7 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png'
       },
-      coingecko_id: '',
+      coingecko_id: 'composite',
       traces: [
         {
           type: 'ibc',
@@ -1892,8 +2181,7 @@ const asset_list: AssetList = {
         },
         {
           denom: 'cre',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }
       ],
       base: 'ibc/5A7C219BA5F7582B99629BA3B2A01A61BFDA0F6FD1FE95B5366F7334C4BC0580',
@@ -1930,8 +2218,7 @@ const asset_list: AssetList = {
         },
         {
           denom: 'bcre',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }
       ],
       base: 'ibc/61365041DAC5A57B92D60A3EBEB5143E209F86CECDBDD7326A6E7F8351352119',
@@ -1942,7 +2229,7 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
       },
-      coingecko_id: 'crescent-network',
+      coingecko_id: 'liquid-staking-crescent',
       traces: [
         {
           type: 'ibc',
@@ -2004,8 +2291,7 @@ const asset_list: AssetList = {
         },
         {
           denom: 'cudos',
-          exponent: 18,
-          aliases: []
+          exponent: 18
         }
       ],
       base: 'ibc/E09ED39F390EC51FA9F3F69BEA08B5BBE6A48B3057B2B1C3467FAAE9E58B021B',
@@ -2042,8 +2328,7 @@ const asset_list: AssetList = {
         },
         {
           denom: 'dec',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }
       ],
       base: 'ibc/9BCB27203424535B6230D594553F1659C77EC173E36D9CF4759E7186EE747E84',
@@ -2080,8 +2365,7 @@ const asset_list: AssetList = {
         },
         {
           denom: 'dsm',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }
       ],
       base: 'ibc/EA4C0A9F72E2CEDF10D0E7A9A6A22954DB3444910DB5BE980DF59B05A46DAD1C',
@@ -2149,29 +2433,68 @@ const asset_list: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/63EEB1FD386714F91A092746F5FADE6A9E52F6F3DC1D06B27FE2346527507404',
+            'ibc/E27CD305D33F150369AB526AEB6646A76EC3FFB1A6CA58A663B5DE657A89D55D',
           exponent: 0,
           aliases: ['dys']
         }
       ],
-      base: 'ibc/63EEB1FD386714F91A092746F5FADE6A9E52F6F3DC1D06B27FE2346527507404',
+      base: 'ibc/E27CD305D33F150369AB526AEB6646A76EC3FFB1A6CA58A663B5DE657A89D55D',
       name: 'Dys',
       display: 'dys',
       symbol: 'DYS',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.svg'
       },
       coingecko_id: '',
       traces: [
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-0',
+            channel_id: 'channel-2',
             base_denom: 'dys',
             chain_name: 'dyson'
           },
           chain: {
-            channel_id: 'channel-466'
+            channel_id: 'channel-526'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Echelon - a scalable EVM on Cosmos, built on Proof-of-Stake with fast-finality that prioritizes interoperability and novel economics',
+      denom_units: [
+        {
+          denom:
+            'ibc/47EE224A9B33CF0ABEAC82106E52F0F6E8D8CEC5BA80B9D9A6F55172CBB0177D',
+          exponent: 0,
+          aliases: ['aechelon']
+        },
+        {
+          denom: 'echelon',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/47EE224A9B33CF0ABEAC82106E52F0F6E8D8CEC5BA80B9D9A6F55172CBB0177D',
+      name: 'Echelon',
+      display: 'echelon',
+      symbol: 'ECH',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/echelon.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/logo.png'
+      },
+      coingecko_id: 'echelon',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-11',
+            base_denom: 'aechelon',
+            chain_name: 'echelon'
+          },
+          chain: {
+            channel_id: 'channel-403'
           }
         }
       ]
@@ -2560,7 +2883,7 @@ const asset_list: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/DABCB5B2232B630C196330AC2A8010C9DBDE8B783FDFF3FB105540939BE27775',
+            'ibc/F16FDC11A7662B86BC0B9CE61871CBACF7C20606F95E86260FD38915184B75B4',
           exponent: 0,
           aliases: ['el1']
         },
@@ -2569,7 +2892,7 @@ const asset_list: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/DABCB5B2232B630C196330AC2A8010C9DBDE8B783FDFF3FB105540939BE27775',
+      base: 'ibc/F16FDC11A7662B86BC0B9CE61871CBACF7C20606F95E86260FD38915184B75B4',
       name: 'GenesisL1',
       display: 'l1',
       symbol: 'L1',
@@ -2586,7 +2909,7 @@ const asset_list: AssetList = {
             chain_name: 'genesisl1'
           },
           chain: {
-            channel_id: 'channel-235'
+            channel_id: 'channel-253'
           }
         }
       ]
@@ -2602,8 +2925,7 @@ const asset_list: AssetList = {
         },
         {
           denom: 'graviton',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }
       ],
       base: 'ibc/E97634A40119F1898989C2A23224ED83FDD0A57EA46B3A094E287288D1672B44',
@@ -2666,6 +2988,182 @@ const asset_list: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg'
       },
       coingecko_id: 'pstake-finance'
+    },
+    {
+      description: 'Gravity Bridge WETH',
+      denom_units: [
+        {
+          denom:
+            'ibc/65381C5F3FD21442283D56925E62EA524DED8B6927F0FF94E21E0020954C40B5',
+          exponent: 0,
+          aliases: ['gravity0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2']
+        },
+        {
+          denom: 'gweth',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/65381C5F3FD21442283D56925E62EA524DED8B6927F0FF94E21E0020954C40B5',
+      name: 'Wrapped Ethereum',
+      display: 'gweth',
+      symbol: 'WETH',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom: 'gravity0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+            chain_name: 'gravitybridge'
+          },
+          chain: {
+            channel_id: 'channel-144'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Gravity Bridge USDC',
+      denom_units: [
+        {
+          denom:
+            'ibc/9F9B07EF9AD291167CF5700628145DE1DEB777C2CFC7907553B24446515F6D0E',
+          exponent: 0,
+          aliases: ['gravity0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48']
+        },
+        {
+          denom: 'gusdc',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/9F9B07EF9AD291167CF5700628145DE1DEB777C2CFC7907553B24446515F6D0E',
+      name: 'USD Coin',
+      display: 'gusdc',
+      symbol: 'USDC',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom: 'gravity0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+            chain_name: 'gravitybridge'
+          },
+          chain: {
+            channel_id: 'channel-144'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Gravity Bridge USDT',
+      denom_units: [
+        {
+          denom:
+            'ibc/71B441E27F1BBB44DD0891BCD370C2794D404D60A4FFE5AECCD9B1E28BC89805',
+          exponent: 0,
+          aliases: ['gravity0xdAC17F958D2ee523a2206206994597C13D831ec7']
+        },
+        {
+          denom: 'gusdt',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/71B441E27F1BBB44DD0891BCD370C2794D404D60A4FFE5AECCD9B1E28BC89805',
+      name: 'Tether USD',
+      display: 'gusdt',
+      symbol: 'USDT',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom: 'gravity0xdAC17F958D2ee523a2206206994597C13D831ec7',
+            chain_name: 'gravitybridge'
+          },
+          chain: {
+            channel_id: 'channel-144'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Gravity Bridge WBTC',
+      denom_units: [
+        {
+          denom:
+            'ibc/C9B0D48FD2C5B91135F118FF2484551888966590D7BDC20F6A87308DBA670796',
+          exponent: 0,
+          aliases: ['gravity0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599']
+        },
+        {
+          denom: 'gwbtc',
+          exponent: 8
+        }
+      ],
+      base: 'ibc/C9B0D48FD2C5B91135F118FF2484551888966590D7BDC20F6A87308DBA670796',
+      name: 'Wrapped Bitcoin',
+      display: 'gwbtc',
+      symbol: 'WBTC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom: 'gravity0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599',
+            chain_name: 'gravitybridge'
+          },
+          chain: {
+            channel_id: 'channel-144'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Gravity Bridge DAI',
+      denom_units: [
+        {
+          denom:
+            'ibc/F292A17CF920E3462C816CBE6B042E779F676CAB59096904C4C1C966413E3DF5',
+          exponent: 0,
+          aliases: ['gravity0x6B175474E89094C44Da98b954EedeAC495271d0F']
+        },
+        {
+          denom: 'gdai',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/F292A17CF920E3462C816CBE6B042E779F676CAB59096904C4C1C966413E3DF5',
+      name: 'Dai Stablecoin',
+      display: 'gdai',
+      symbol: 'DAI',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom: 'gravity0x6B175474E89094C44Da98b954EedeAC495271d0F',
+            chain_name: 'gravitybridge'
+          },
+          chain: {
+            channel_id: 'channel-144'
+          }
+        }
+      ]
     },
     {
       description: 'The native token of IXO Chain',
@@ -2883,6 +3381,44 @@ const asset_list: AssetList = {
           counterparty: {
             channel_id: 'channel-0',
             base_denom: 'ujuno',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-42'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Bored APE IBC club token',
+      type_asset: 'cw20',
+      address:
+        'juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj',
+      denom_units: [
+        {
+          denom:
+            'cw20:juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj',
+          exponent: 0
+        },
+        {
+          denom: 'BANANA',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/DA9C0CDF1EF84D668BF7131DBB2D287C54D14B467A1BE74FA824E0366C60B63C',
+      name: 'Banana Token',
+      display: 'Banana Token',
+      symbol: 'BANANA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/banana.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'cw20:juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj',
             chain_name: 'juno'
           },
           chain: {
@@ -3377,6 +3913,42 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'Mars protocol token',
+      denom_units: [
+        {
+          denom:
+            'ibc/573FCD90FACEE750F55A8864EF7D38265F07E5A9273FA0E8DAFD39951332B580',
+          exponent: 0,
+          aliases: ['umars']
+        },
+        {
+          denom: 'mars',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/573FCD90FACEE750F55A8864EF7D38265F07E5A9273FA0E8DAFD39951332B580',
+      name: 'Mars',
+      display: 'mars',
+      symbol: 'MARS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'umars',
+            chain_name: 'mars'
+          },
+          chain: {
+            channel_id: 'channel-557'
+          }
+        }
+      ]
+    },
+    {
       description:
         'MEME Token (MEME) is the native staking token of the MEME Chain',
       denom_units: [
@@ -3446,6 +4018,151 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-39'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Staking and goverance token for ODIN Protocol',
+      denom_units: [
+        {
+          denom:
+            'ibc/C360EF34A86D334F625E4CBB7DA3223AEA97174B61F35BB3758081A8160F7D9B',
+          exponent: 0,
+          aliases: ['loki']
+        },
+        {
+          denom: 'odin',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/C360EF34A86D334F625E4CBB7DA3223AEA97174B61F35BB3758081A8160F7D9B',
+      name: 'ODIN',
+      display: 'odin',
+      symbol: 'ODIN',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png'
+      },
+      coingecko_id: 'odin-protocol',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'loki',
+            chain_name: 'odin'
+          },
+          chain: {
+            channel_id: 'channel-258'
+          }
+        }
+      ]
+    },
+    {
+      description: 'GEO token for ODIN Protocol',
+      denom_units: [
+        {
+          denom:
+            'ibc/9B6FBABA36BB4A3BF127AE5E96B572A5197FD9F3111D895D8919B07BC290764A',
+          exponent: 0,
+          aliases: ['mGeo']
+        },
+        {
+          denom: 'geo',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/9B6FBABA36BB4A3BF127AE5E96B572A5197FD9F3111D895D8919B07BC290764A',
+      name: 'GEO',
+      display: 'geo',
+      symbol: 'GEO',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'mGeo',
+            chain_name: 'odin'
+          },
+          chain: {
+            channel_id: 'channel-258'
+          }
+        }
+      ]
+    },
+    {
+      description: 'O9W token for ODIN Protocol',
+      denom_units: [
+        {
+          denom:
+            'ibc/0CD46223FEABD2AEAAAF1F057D01E63BCA79B7D4BD6B68F1EB973A987344695D',
+          exponent: 0,
+          aliases: ['mO9W']
+        },
+        {
+          denom: 'O9W',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/0CD46223FEABD2AEAAAF1F057D01E63BCA79B7D4BD6B68F1EB973A987344695D',
+      name: 'O9W',
+      display: 'O9W',
+      symbol: 'O9W',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'mO9W',
+            chain_name: 'odin'
+          },
+          chain: {
+            channel_id: 'channel-258'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native token of Onomy Protocol',
+      denom_units: [
+        {
+          denom:
+            'ibc/B9606D347599F0F2FDF82BA3EE339000673B7D274EA50F59494DC51EFCD42163',
+          exponent: 0,
+          aliases: ['anom']
+        },
+        {
+          denom: 'nom',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/B9606D347599F0F2FDF82BA3EE339000673B7D274EA50F59494DC51EFCD42163',
+      name: 'Nom',
+      display: 'nom',
+      symbol: 'NOM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png'
+      },
+      keywords: ['dex', 'stablecoin', 'bridge', 'staking'],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'anom',
+            chain_name: 'onomy'
+          },
+          chain: {
+            channel_id: 'channel-525'
           }
         }
       ]
@@ -3689,8 +4406,7 @@ const asset_list: AssetList = {
         },
         {
           denom: 'hash',
-          exponent: 9,
-          aliases: []
+          exponent: 9
         }
       ],
       base: 'ibc/CE5BFF1D9BADA03BB5CCA5F56939392A761B53A10FBD03B37506669C3218D3B2',
@@ -3715,6 +4431,80 @@ const asset_list: AssetList = {
           }
         }
       ]
+    },
+    {
+      description: 'QCK - native token of Quicksilver',
+      denom_units: [
+        {
+          denom:
+            'ibc/635CB83EF1DFE598B10A3E90485306FD0D47D34217A4BE5FD9977FA010A5367D',
+          exponent: 0,
+          aliases: ['uqck']
+        },
+        {
+          denom: 'qck',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/635CB83EF1DFE598B10A3E90485306FD0D47D34217A4BE5FD9977FA010A5367D',
+      name: 'Quicksilver',
+      display: 'qck',
+      symbol: 'QCK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
+      },
+      coingecko_id: 'quicksilver',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'uqck',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-522'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Quicksilver Liquid Staked STARS',
+      denom_units: [
+        {
+          denom:
+            'ibc/46C83BB054E12E189882B5284542DB605D94C99827E367C9192CF0579CD5BC83',
+          exponent: 0,
+          aliases: ['uqstars']
+        },
+        {
+          denom: 'qstars',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/46C83BB054E12E189882B5284542DB605D94C99827E367C9192CF0579CD5BC83',
+      name: 'Quicksilver Liquid Staked STARS',
+      display: 'qstars',
+      symbol: 'qSTARS',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'uqstars',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-522'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qstars.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qstars.svg'
+      }
     },
     {
       description: 'REBUS, the native coin of the Rebus chain.',
@@ -3941,13 +4731,17 @@ const asset_list: AssetList = {
         {
           denom:
             'ibc/8318FD63C42203D16DDCAF49FE10E8590669B3219A3E87676AC9DA50722687FB',
-          exponent: 18,
+          exponent: 0,
           aliases: ['rowan']
+        },
+        {
+          denom: 'ROWAN',
+          exponent: 18
         }
       ],
       base: 'ibc/8318FD63C42203D16DDCAF49FE10E8590669B3219A3E87676AC9DA50722687FB',
       name: 'Sifchain Rowan',
-      display: 'rowan',
+      display: 'ROWAN',
       symbol: 'ROWAN',
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg',
@@ -4096,8 +4890,7 @@ const asset_list: AssetList = {
         },
         {
           denom: 'strd',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }
       ],
       base: 'ibc/A8CA5EE328FA10C9519DF6057DA1F69682D28F7D0F5CCC7ECB72E3DCA2D157A4',
@@ -4140,11 +4933,6 @@ const asset_list: AssetList = {
       name: 'stATOM',
       display: 'statom',
       symbol: 'stATOM',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg'
-      },
-      coingecko_id: 'stride-staked-atom',
       traces: [
         {
           type: 'ibc',
@@ -4157,7 +4945,12 @@ const asset_list: AssetList = {
             channel_id: 'channel-326'
           }
         }
-      ]
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg'
+      },
+      coingecko_id: 'stride-staked-atom'
     },
     {
       denom_units: [
@@ -4176,11 +4969,6 @@ const asset_list: AssetList = {
       name: 'stSTARS',
       display: 'ststars',
       symbol: 'stSTARS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.svg'
-      },
-      coingecko_id: '',
       traces: [
         {
           type: 'ibc',
@@ -4193,7 +4981,11 @@ const asset_list: AssetList = {
             channel_id: 'channel-326'
           }
         }
-      ]
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.svg'
+      }
     },
     {
       denom_units: [
@@ -4212,11 +5004,6 @@ const asset_list: AssetList = {
       name: 'stOSMO',
       display: 'stosmo',
       symbol: 'stOSMO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg'
-      },
-      coingecko_id: '',
       traces: [
         {
           type: 'ibc',
@@ -4229,7 +5016,11 @@ const asset_list: AssetList = {
             channel_id: 'channel-326'
           }
         }
-      ]
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg'
+      }
     },
     {
       denom_units: [
@@ -4248,11 +5039,6 @@ const asset_list: AssetList = {
       name: 'stJUNO',
       display: 'stjuno',
       symbol: 'stJUNO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.svg'
-      },
-      coingecko_id: '',
       traces: [
         {
           type: 'ibc',
@@ -4265,7 +5051,46 @@ const asset_list: AssetList = {
             channel_id: 'channel-326'
           }
         }
-      ]
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/C491E7582E94AE921F6A029790083CDE1106C28F3F6C4AD7F1340544C13EC372',
+          exponent: 0,
+          aliases: ['stuluna']
+        },
+        {
+          denom: 'stluna',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/C491E7582E94AE921F6A029790083CDE1106C28F3F6C4AD7F1340544C13EC372',
+      name: 'stLUNA',
+      display: 'stluna',
+      symbol: 'stLUNA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'stuluna',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-326'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stluna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stluna.svg'
+      }
     },
     {
       description:
@@ -4279,8 +5104,7 @@ const asset_list: AssetList = {
         },
         {
           denom: 'tori',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }
       ],
       base: 'ibc/EB7FB9C8B425F289B63703413327C2051030E848CE4EAAEA2E51199D6D39D3EC',
@@ -5276,6 +6100,42 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'The native staking token of Terra.',
+      denom_units: [
+        {
+          denom:
+            'ibc/785AFEC6B3741100D15E7AF01374E3C4C36F24888E96479B1C33F5C71F364EF9',
+          exponent: 0,
+          aliases: ['uluna']
+        },
+        {
+          denom: 'luna',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/785AFEC6B3741100D15E7AF01374E3C4C36F24888E96479B1C33F5C71F364EF9',
+      name: 'Luna',
+      display: 'luna',
+      symbol: 'LUNA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png'
+      },
+      coingecko_id: 'terra-luna-2',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'uluna',
+            chain_name: 'terra2'
+          },
+          chain: {
+            channel_id: 'channel-251'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Tgrade',
       denom_units: [
         {
@@ -5286,8 +6146,7 @@ const asset_list: AssetList = {
         },
         {
           denom: 'tgd',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }
       ],
       base: 'ibc/1E09CB0F506ACF12FDE4683FB6B34DA62FB4BE122641E0D93AAF98A87675676C',
@@ -5396,8 +6255,7 @@ const asset_list: AssetList = {
         },
         {
           denom: 'vdl',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }
       ],
       base: 'ibc/E7B35499CFBEB0FF5778127ABA4FB2C4B79A6B8D3D831D4379C4048C238796BD',
@@ -6352,6 +7210,269 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'The native token cw20 for PHMN on Juno Chain',
+      type_asset: 'cw20',
+      address:
+        'juno1rws84uz7969aaa7pej303udhlkt3j9ca0l3egpcae98jwak9quzq8szn2l',
+      denom_units: [
+        {
+          denom:
+            'ibc/D3B574938631B0A1BA704879020C696E514CFADAA7643CDE4BD5EB010BDE327B',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1rws84uz7969aaa7pej303udhlkt3j9ca0l3egpcae98jwak9quzq8szn2l'
+          ]
+        },
+        {
+          denom: 'phmn',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/D3B574938631B0A1BA704879020C696E514CFADAA7643CDE4BD5EB010BDE327B',
+      name: 'POSTHUMAN',
+      display: 'phmn',
+      symbol: 'PHMN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/phmn.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/phmn.svg'
+      },
+      coingecko_id: 'posthuman',
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1rws84uz7969aaa7pej303udhlkt3j9ca0l3egpcae98jwak9quzq8szn2l',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native token cw20 for Hopers on Juno Chain',
+      type_asset: 'cw20',
+      address:
+        'juno1u45shlp0q4gcckvsj06ss4xuvsu0z24a0d0vr9ce6r24pht4e5xq7q995n',
+      denom_units: [
+        {
+          denom:
+            'ibc/D3ADAF73F84CDF205BCB72C142FDAEEA2C612AB853CEE6D6C06F184FA38B1099',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1u45shlp0q4gcckvsj06ss4xuvsu0z24a0d0vr9ce6r24pht4e5xq7q995n'
+          ]
+        },
+        {
+          denom: 'hopers',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/D3ADAF73F84CDF205BCB72C142FDAEEA2C612AB853CEE6D6C06F184FA38B1099',
+      name: 'Hopers',
+      display: 'hopers',
+      symbol: 'HOPERS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.png'
+      },
+      coingecko_id: 'hopers-io ',
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1u45shlp0q4gcckvsj06ss4xuvsu0z24a0d0vr9ce6r24pht4e5xq7q995n',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'RED',
+      type_asset: 'cw20',
+      address:
+        'juno1g647t78y2ulqlm3lss8rs3d0spzd0teuwhdvnqn92tr79yltk9dq2h24za',
+      denom_units: [
+        {
+          denom:
+            'ibc/05458E0F3E1A0C8E34B9F5A291B4D306B230F4BA0EF32B86411F95081A0B5DA0',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1g647t78y2ulqlm3lss8rs3d0spzd0teuwhdvnqn92tr79yltk9dq2h24za'
+          ]
+        },
+        {
+          denom: 'red',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/05458E0F3E1A0C8E34B9F5A291B4D306B230F4BA0EF32B86411F95081A0B5DA0',
+      name: 'Red',
+      display: 'red',
+      symbol: 'RED',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/red.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1g647t78y2ulqlm3lss8rs3d0spzd0teuwhdvnqn92tr79yltk9dq2h24za',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'BLUE',
+      type_asset: 'cw20',
+      address:
+        'juno14q8kk464fafql2fwmlsgvgcdl6h2csqpzv4hr025fmcvgjahpess32k0j7',
+      denom_units: [
+        {
+          denom:
+            'ibc/1F0CFBE9934E06C089589EE9AE81C841BD5B1ED802E70914F1A9A13F309878A5',
+          exponent: 0,
+          aliases: [
+            'cw20:juno14q8kk464fafql2fwmlsgvgcdl6h2csqpzv4hr025fmcvgjahpess32k0j7'
+          ]
+        },
+        {
+          denom: 'blue',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/1F0CFBE9934E06C089589EE9AE81C841BD5B1ED802E70914F1A9A13F309878A5',
+      name: 'Blue',
+      display: 'blue',
+      symbol: 'BLUE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/blue.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno14q8kk464fafql2fwmlsgvgcdl6h2csqpzv4hr025fmcvgjahpess32k0j7',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'WYND DAO Governance Token',
+      type_asset: 'cw20',
+      address:
+        'juno1mkw83sv6c7sjdvsaplrzc8yaes9l42p4mhy0ssuxjnyzl87c9eps7ce3m9',
+      denom_units: [
+        {
+          denom:
+            'ibc/2FBAC4BF296D7844796844B35978E5899984BA5A6314B2DD8F83C215550010B3',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1mkw83sv6c7sjdvsaplrzc8yaes9l42p4mhy0ssuxjnyzl87c9eps7ce3m9'
+          ]
+        },
+        {
+          denom: 'wynd',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/2FBAC4BF296D7844796844B35978E5899984BA5A6314B2DD8F83C215550010B3',
+      name: 'Wynd DAO Governance Token',
+      display: 'wynd',
+      symbol: 'WYND',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wynd.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wynd.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1mkw83sv6c7sjdvsaplrzc8yaes9l42p4mhy0ssuxjnyzl87c9eps7ce3m9',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'nRide Token',
+      type_asset: 'cw20',
+      address:
+        'juno1qmlchtmjpvu0cr7u0tad2pq8838h6farrrjzp39eqa9xswg7teussrswlq',
+      denom_units: [
+        {
+          denom:
+            'ibc/E750D31033DC1CF4A044C3AA0A8117401316DC918FBEBC4E3D34F91B09D5F54C',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1qmlchtmjpvu0cr7u0tad2pq8838h6farrrjzp39eqa9xswg7teussrswlq'
+          ]
+        },
+        {
+          denom: 'nride',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/E750D31033DC1CF4A044C3AA0A8117401316DC918FBEBC4E3D34F91B09D5F54C',
+      name: 'nRide Token',
+      display: 'nride',
+      symbol: 'NRIDE',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/nride.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/nride.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1qmlchtmjpvu0cr7u0tad2pq8838h6farrrjzp39eqa9xswg7teussrswlq',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
       description: 'ELEVENPARIS loyalty token on KiChain',
       type_asset: 'cw20',
       address: 'ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy',
@@ -6408,6 +7529,8 @@ const asset_list: AssetList = {
           exponent: 18
         }
       ],
+      type_asset: 'snip20',
+      address: 'secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4',
       base: 'ibc/9A8A93D04917A149C8AC7C16D3DA8F470D59E8D867499C4DA97450E1D7363213',
       name: 'SIENNA',
       display: 'sienna',
@@ -6447,6 +7570,8 @@ const asset_list: AssetList = {
           exponent: 8
         }
       ],
+      type_asset: 'snip20',
+      address: 'secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d',
       base: 'ibc/71055835C7639739EAE03AACD1324FE162DBA41D09F197CB72D966D014225B1C',
       name: 'Shade',
       display: 'shd',
@@ -6487,6 +7612,8 @@ const asset_list: AssetList = {
           exponent: 6
         }
       ],
+      type_asset: 'snip20',
+      address: 'secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4',
       base: 'ibc/D0E5BF2940FB58D9B283A339032DE88111407AAD7D94A7F1F3EB78874F8616D4',
       name: 'SCRT Staking Derivatives',
       display: 'stkd-scrt',
@@ -6526,6 +7653,8 @@ const asset_list: AssetList = {
           exponent: 6
         }
       ],
+      type_asset: 'snip20',
+      address: 'secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt',
       base: 'ibc/1FBA9E763B8679BEF7BAAAF2D16BCA78C3B297D226C3F31312C769D7B8F992D8',
       name: 'Button',
       display: 'butt',
@@ -6581,6 +7710,46 @@ const asset_list: AssetList = {
             port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
             channel_id: 'channel-44',
             base_denom: 'cw20:secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-476'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native token cw20 for Amber on Secret Network',
+      denom_units: [
+        {
+          denom:
+            'ibc/18A1B70E3205A48DE8590C0D11030E7146CDBF1048789261D53FFFD7527F8B55',
+          exponent: 0,
+          aliases: ['cw20:secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852']
+        },
+        {
+          denom: 'amber',
+          exponent: 6
+        }
+      ],
+      type_asset: 'snip20',
+      address: 'secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852',
+      base: 'ibc/18A1B70E3205A48DE8590C0D11030E7146CDBF1048789261D53FFFD7527F8B55',
+      name: 'Amber',
+      display: 'amber',
+      symbol: 'AMBER',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.svg'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-44',
+            base_denom: 'cw20:secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852',
             chain_name: 'secretnetwork'
           },
           chain: {
