@@ -260,13 +260,13 @@ const chains: Chain[] = [
     slip44: 564,
     explorers: [
       {
-        name: 'bigdipper',
+        kind: 'bigdipper',
         url: 'https://agoric.bigdipper.live/',
         tx_page: 'https://agoric.bigdipper.live/transactions/${txHash}',
         account_page: 'https://agoric.bigdipper.live/accounts/${accountAddress}'
       },
       {
-        name: 'explorers.guru',
+        kind: 'explorers.guru',
         url: 'https://agoric.explorers.guru',
         tx_page: 'https://agoric.explorers.guru/transaction/${txHash}',
         account_page: 'https://agoric.explorers.guru/account/${accountAddress}'
@@ -297,6 +297,11 @@ const chains: Chain[] = [
           id: '400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc',
           address: 'agoric.rpc.kjnodes.com:27659',
           provider: 'kjnodes'
+        },
+        {
+          id: 'ebc272824924ea1a27ea3183dd0b9ba713494f83',
+          address: 'agoric-mainnet-seed.autostake.net:27106',
+          provider: 'AutoStake 🛡️ Slash Protected'
         }
       ],
       persistent_peers: [
@@ -307,6 +312,11 @@ const chains: Chain[] = [
         {
           id: '6e26a1b4afa6889f841d7957e8c2b5d50d32d485',
           address: '95.216.53.26:26656'
+        },
+        {
+          id: 'ebc272824924ea1a27ea3183dd0b9ba713494f83',
+          address: 'agoric-mainnet-peer.autostake.net:27106',
+          provider: 'AutoStake 🛡️ Slash Protected'
         }
       ]
     },
@@ -326,6 +336,10 @@ const chains: Chain[] = [
         {
           address: 'https://agoric.rpc.kjnodes.com',
           provider: 'kjnodes'
+        },
+        {
+          address: 'https://agoric-mainnet-rpc.autostake.net:443',
+          provider: 'AutoStake 🛡️ Slash Protected'
         }
       ],
       rest: [
@@ -343,6 +357,10 @@ const chains: Chain[] = [
         {
           address: 'https://agoric.api.kjnodes.com',
           provider: 'kjnodes'
+        },
+        {
+          address: 'https://agoric-mainnet-lcd.autostake.net:443',
+          provider: 'AutoStake 🛡️ Slash Protected'
         }
       ],
       grpc: [
@@ -353,6 +371,10 @@ const chains: Chain[] = [
         {
           address: 'agoric-grpc.polkachu.com:14490',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://agoric-mainnet-grpc.autostake.net:443',
+          provider: 'AutoStake 🛡️ Slash Protected'
         }
       ]
     }
@@ -1225,8 +1247,12 @@ const chains: Chain[] = [
           provider: 'D-stake'
         },
         {
-          address: 'https://rpc-assetmantle.whispernode.com',
+          address: 'https://rpc-assetmantle.whispernode.com:443',
           provider: 'WhisperNode🤐'
+        },
+        {
+          address: 'https://rpc-assetmantle.carbonZERO.zone:443',
+          provider: 'carbonZERO🌲'
         }
       ],
       rest: [
@@ -1255,8 +1281,12 @@ const chains: Chain[] = [
           provider: 'D-stake'
         },
         {
-          address: 'https://lcd-assetmantle.whispernode.com',
+          address: 'https://lcd-assetmantle.whispernode.com:443',
           provider: 'WhisperNode🤐'
+        },
+        {
+          address: 'https://rest-assetmantle.carbonZERO.zone:443',
+          provider: 'carbonZERO🌲'
         }
       ],
       grpc: [
@@ -1449,7 +1479,7 @@ const chains: Chain[] = [
           provider: 'Validatrium'
         },
         {
-          address: 'https://rpc-axelar.whispernode.com',
+          address: 'https://rpc-axelar.whispernode.com:443',
           provider: 'WhisperNode🤐'
         },
         {
@@ -1503,7 +1533,7 @@ const chains: Chain[] = [
           provider: 'Validatrium'
         },
         {
-          address: 'https://lcd-axelar.whispernode.com',
+          address: 'https://lcd-axelar.whispernode.com:443',
           provider: 'WhisperNode🤐'
         },
         {
@@ -2778,9 +2808,209 @@ const chains: Chain[] = [
         {
           denom: 'swth',
           fixed_min_gas_price: 0,
-          low_gas_price: 769.23077,
-          average_gas_price: 769.23077,
-          high_gas_price: 769.230774
+          low_gas_price: 1,
+          average_gas_price: 1,
+          high_gas_price: 1,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
+        },
+        {
+          denom: 'usc',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0.0001,
+          average_gas_price: 0.0001,
+          high_gas_price: 0.0001,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
+        },
+        {
+          denom: 'bnb.1.6.773edb',
+          fixed_min_gas_price: 0,
+          low_gas_price: 1000000,
+          average_gas_price: 1000000,
+          high_gas_price: 1000000,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
+        },
+        {
+          denom: 'bneo.1.14.e2e5f6',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0.0015,
+          average_gas_price: 0.0015,
+          high_gas_price: 0.0015,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
+        },
+        {
+          denom: 'busd.1.6.754a80',
+          fixed_min_gas_price: 0,
+          low_gas_price: 100000000,
+          average_gas_price: 100000000,
+          high_gas_price: 100000000,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
+        },
+        {
+          denom: 'eth.1.19.c3b805',
+          fixed_min_gas_price: 0,
+          low_gas_price: 100000,
+          average_gas_price: 100000,
+          high_gas_price: 100000,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
+        },
+        {
+          denom: 'eth.1.2.942d87',
+          fixed_min_gas_price: 0,
+          low_gas_price: 100000,
+          average_gas_price: 100000,
+          high_gas_price: 100000,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
+        },
+        {
+          denom:
+            'ibc/07FA7831E1920D0C87C9388F86B0108677F6ED0C9DE7E4063F05ED675192405C',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0.0035,
+          average_gas_price: 0.0035,
+          high_gas_price: 0.0035,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
+        },
+        {
+          denom:
+            'ibc/2B58B8C147E8718EECCB3713271DF46DEE8A3A00A27242628604E31C2F370EF5',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0.00005,
+          average_gas_price: 0.00005,
+          high_gas_price: 0.00005,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
+        },
+        {
+          denom:
+            'ibc/3552CECB7BCE1891DB6070D37EC6E954C972B1400141308FCD85FD148BD06DE5',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0.00032,
+          average_gas_price: 0.00032,
+          high_gas_price: 0.00032,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
+        },
+        {
+          denom:
+            'ibc/662914D0C1CEBCB070C68F061D035E8B10A07C79AB286E7342C85F3BE74612C5',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0.00015,
+          average_gas_price: 0.00015,
+          high_gas_price: 0.00015,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
+        },
+        {
+          denom:
+            'ibc/75249A18DEFBEFE55F83B1C70CAD234DF164F174C6BC51682EE92C2C81C18C93',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0.00015,
+          average_gas_price: 0.00015,
+          high_gas_price: 0.00015,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
+        },
+        {
+          denom:
+            'ibc/92E974290AF9E2BC3AEEEC35305C8FD76AC5A22A74CF8D91270FDF5A1C41E861',
+          fixed_min_gas_price: 0,
+          low_gas_price: 200000000,
+          average_gas_price: 200000000,
+          high_gas_price: 200000000,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
+        },
+        {
+          denom:
+            'ibc/A4DB47A9D3CF9A068D454513891B526702455D3EF08FB9EB558C561F9DC2B701',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0.00001,
+          average_gas_price: 0.00001,
+          high_gas_price: 0.00001,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
+        },
+        {
+          denom:
+            'ibc/B7864B03E1B9FD4F049243E92ABD691586F682137037A9F3FCA5222815620B3C',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0.00001,
+          average_gas_price: 0.00001,
+          high_gas_price: 0.00001,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
+        },
+        {
+          denom:
+            'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0.00015,
+          average_gas_price: 0.00015,
+          high_gas_price: 0.00015,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
+        },
+        {
+          denom: 'usdc.1.2.343151',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0.0001,
+          average_gas_price: 0.0001,
+          high_gas_price: 0.0001,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
+        },
+        {
+          denom: 'usdc.1.6.53ff75',
+          fixed_min_gas_price: 0,
+          low_gas_price: 100000000,
+          average_gas_price: 100000000,
+          high_gas_price: 100000000,
+          gas_costs: {
+            cosmos_send: 100000000,
+            ibc_transfer: 100000000
+          }
         }
       ]
     },
@@ -2901,11 +3131,6 @@ const chains: Chain[] = [
           id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
           address: 'seeds.polkachu.com:13856',
           provider: 'Polkachu'
-        },
-        {
-          id: 'd94df4d4a17fa10834bb97853d91b501aa4abc4b',
-          address: 'cerberus-seed.panthea.eu:38656',
-          provider: 'Panthea EU'
         }
       ],
       persistent_peers: [
@@ -2969,11 +3194,6 @@ const chains: Chain[] = [
         {
           id: 'f03e64d46713068da60b096d528053a57e0e5fec',
           address: '157.90.36.33:29563'
-        },
-        {
-          id: 'ab4fe77e992354fb1c384e4eadbc05427446ada7',
-          address: 'cerberus-peer.panthea.eu:28656',
-          provider: 'Panthea EU'
         }
       ]
     },
@@ -2998,10 +3218,6 @@ const chains: Chain[] = [
         {
           address: 'https://cerberus-rpc.kleomedes.network',
           provider: 'Kleomedes'
-        },
-        {
-          address: 'https://cerberus-rpc.panthea.eu',
-          provider: 'Panthea EU'
         }
       ],
       rest: [
@@ -3024,10 +3240,6 @@ const chains: Chain[] = [
         {
           address: 'https://cerberus-api.kleomedes.network',
           provider: 'Kleomedes'
-        },
-        {
-          address: 'https://cerberus-api.panthea.eu',
-          provider: 'Panthea EU'
         }
       ],
       grpc: [
@@ -3135,6 +3347,11 @@ const chains: Chain[] = [
           id: '30e98bbcf5bb29ed4e4ff685fa8fa84fa0ddff51',
           address: 'tenderseed.ccvalidators.com:26008',
           provider: 'CryptoCrew'
+        },
+        {
+          id: '86bd5cb6e762f673f1706e5889e039d5406b4b90',
+          address: 'c4e.seed.node75.org:10156',
+          provider: 'Pro-nodes75'
         }
       ]
     },
@@ -3378,7 +3595,7 @@ const chains: Chain[] = [
           provider: 'NodeStake'
         },
         {
-          address: 'https://rpc-cheqd.whispernode.com',
+          address: 'https://rpc-cheqd.whispernode.com:443',
           provider: 'WhisperNode🤐'
         }
       ],
@@ -3400,7 +3617,7 @@ const chains: Chain[] = [
           provider: 'NodeStake'
         },
         {
-          address: 'https://lcd-cheqd.whispernode.com',
+          address: 'https://lcd-cheqd.whispernode.com:443',
           provider: 'WhisperNode🤐'
         }
       ],
@@ -3493,8 +3710,8 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/ChihuahuaChain/chihuahua/',
-      recommended_version: 'v4.1.0',
-      compatible_versions: ['v4.1.0'],
+      recommended_version: 'v4.2.0',
+      compatible_versions: ['v4.2.0'],
       genesis: {
         genesis_url:
           'https://raw.githubusercontent.com/ChihuahuaChain/chihuahua/main/mainnet/genesis.json'
@@ -3609,7 +3826,7 @@ const chains: Chain[] = [
           provider: 'PUPMØS'
         },
         {
-          address: 'https://rpc-chihuahua.whispernode.com',
+          address: 'https://rpc-chihuahua.whispernode.com:443',
           provider: 'WhisperNode🤐'
         }
       ],
@@ -3647,7 +3864,7 @@ const chains: Chain[] = [
           provider: 'PUPMØS'
         },
         {
-          address: 'https://lcd-chihuahua.whispernode.com',
+          address: 'https://lcd-chihuahua.whispernode.com:443',
           provider: 'WhisperNode🤐'
         }
       ],
@@ -4013,8 +4230,12 @@ const chains: Chain[] = [
           provider: 'Golden Ratio Staking'
         },
         {
-          address: 'https://rpc-comdex.whispernode.com',
+          address: 'https://rpc-comdex.whispernode.com:443',
           provider: 'WhisperNode🤐'
+        },
+        {
+          address: 'https://rpc-comdex.carbonZERO.zone:443',
+          provider: 'carbonZERO🌲'
         }
       ],
       rest: [
@@ -4055,8 +4276,12 @@ const chains: Chain[] = [
           provider: 'AutoStake 🛡️ Slash Protected'
         },
         {
-          address: 'https://lcd-comdex.whispernode.com',
+          address: 'https://lcd-comdex.whispernode.com:443',
           provider: 'WhisperNode🤐'
+        },
+        {
+          address: 'https://rest-comdex.carbonZERO.zone:443',
+          provider: 'carbonZERO🌲'
         }
       ],
       grpc: [
@@ -4410,8 +4635,8 @@ const chains: Chain[] = [
           provider: 'Chainlayer'
         },
         {
-          address: 'https://rpc-cosmoshub.whispernode.com',
-          provider: ' WhisperNode🤐'
+          address: 'https://rpc-cosmoshub.whispernode.com:443',
+          provider: 'WhisperNode🤐'
         },
         {
           address: 'https://cosmoshub.validator.network/',
@@ -4496,8 +4721,8 @@ const chains: Chain[] = [
           provider: 'Chainlayer'
         },
         {
-          address: 'https://lcd-cosmoshub.whispernode.com',
-          provider: ' WhisperNode🤐'
+          address: 'https://lcd-cosmoshub.whispernode.com:443',
+          provider: 'WhisperNode🤐'
         },
         {
           address: 'https://cosmoshub-api.lavenderfive.com:443',
@@ -5540,6 +5765,13 @@ const chains: Chain[] = [
       }
     },
     peers: {
+      persistent_peers: [
+        {
+          id: '7c506d9e32cfc486ea714ee0c0307022398b8c20',
+          address: 'desmos-peer.panthea.eu:29656',
+          provider: 'Panthea EU'
+        }
+      ],
       seeds: [
         {
           id: '9bde6ab4e0e00f721cc3f5b4b35f3a0e8979fab5',
@@ -5567,20 +5799,13 @@ const chains: Chain[] = [
           provider: 'Starsquid'
         },
         {
-          id: '4914d4b60123a625d41da7cad9950a4a12ce61ca',
-          address: 'desmos-seed.panthea.eu:39656',
-          provider: 'Panthea EU'
-        },
-        {
           id: '6580d5123923ec1426c67658d2ae1e68cfd6a62f',
           address: 'seeds.whispernode.com:16256',
           provider: 'WhisperNode🤐'
-        }
-      ],
-      persistent_peers: [
+        },
         {
-          id: '7c506d9e32cfc486ea714ee0c0307022398b8c20',
-          address: 'desmos-peer.panthea.eu:29656',
+          id: '73fc6b8b41aada42306b2f149619cc0ff935a868',
+          address: 'desmos-seed.panthea.eu:39656',
           provider: 'Panthea EU'
         }
       ]
@@ -5608,12 +5833,12 @@ const chains: Chain[] = [
           provider: 'Nodejumper 🚀'
         },
         {
-          address: 'https://desmos-rpc.panthea.eu',
-          provider: 'Panthea EU'
+          address: 'https://rpc-desmos.whispernode.com:443',
+          provider: 'WhisperNode🤐'
         },
         {
-          address: 'https://rpc-desmos.whispernode.com',
-          provider: 'WhisperNode🤐'
+          address: 'https://desmos-rpc.panthea.eu',
+          provider: 'Panthea EU'
         }
       ],
       rest: [
@@ -5634,12 +5859,12 @@ const chains: Chain[] = [
           provider: 'Nodejumper 🚀'
         },
         {
-          address: 'https://desmos-api.panthea.eu',
-          provider: 'Panthea EU'
+          address: 'https://lcd-desmos.whispernode.com:443',
+          provider: 'WhisperNode🤐'
         },
         {
-          address: 'https://lcd-desmos.whispernode.com',
-          provider: 'WhisperNode🤐'
+          address: 'https://desmos-api.panthea.eu',
+          provider: 'Panthea EU'
         }
       ],
       grpc: [
@@ -6474,19 +6699,19 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/evmos/evmos',
-      recommended_version: 'v11.0.1',
-      compatible_versions: ['v11.0.0', 'v11.0.1'],
+      recommended_version: 'v11.0.2',
+      compatible_versions: ['v11.0.0', 'v11.0.1', 'v11.0.2'],
       binaries: {
         'linux/amd64':
-          'https://github.com/evmos/evmos/releases/download/v11.0.1/evmos_11.0.1_Linux_amd64.tar.gz',
+          'https://github.com/evmos/evmos/releases/download/v11.0.2/evmos_11.0.2_Linux_amd64.tar.gz',
         'linux/arm64':
-          'https://github.com/evmos/evmos/releases/download/v11.0.1/evmos_11.0.1_Linux_arm64.tar.gz',
+          'https://github.com/evmos/evmos/releases/download/v11.0.2/evmos_11.0.2_Linux_arm64.tar.gz',
         'darwin/amd64':
-          'https://github.com/evmos/evmos/releases/download/v11.0.1/evmos_11.0.1_Darwin_amd64.tar.gz',
+          'https://github.com/evmos/evmos/releases/download/v11.0.2/evmos_11.0.2_Darwin_amd64.tar.gz',
         'darwin/arm64':
-          'https://github.com/evmos/evmos/releases/download/v11.0.1/evmos_11.0.1_Darwin_arm64.tar.gz',
+          'https://github.com/evmos/evmos/releases/download/v11.0.2/evmos_11.0.2_Darwin_arm64.tar.gz',
         'windows/amd64':
-          'https://github.com/evmos/evmos/releases/download/v11.0.1/evmos_11.0.1_Windows_amd64.zip'
+          'https://github.com/evmos/evmos/releases/download/v11.0.2/evmos_11.0.2_Windows_amd64.zip'
       },
       cosmos_sdk_version: '0.46',
       tendermint_version: '0.34',
@@ -6627,8 +6852,8 @@ const chains: Chain[] = [
           provider: 'ecostake'
         },
         {
-          address: 'https://rpc-evmos.whispernode.com',
-          provider: ' WhisperNode 🤐'
+          address: 'https://rpc-evmos.whispernode.com:443',
+          provider: 'WhisperNode🤐'
         },
         {
           address: 'https://evmos.rpc.interchain.ivaldilabs.xyz',
@@ -6717,8 +6942,8 @@ const chains: Chain[] = [
           provider: 'ecostake'
         },
         {
-          address: 'https://lcd-evmos.whispernode.com',
-          provider: ' WhisperNode 🤐'
+          address: 'https://lcd-evmos.whispernode.com:443',
+          provider: 'WhisperNode🤐'
         },
         {
           address: 'https://evmos.rest.interchain.ivaldilabs.xyz',
@@ -8678,6 +8903,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-jkl.kjinc.io',
           provider: 'KJINC.io'
+        },
+        {
+          address: 'https://rpc-jackal.whispernode.com:443',
+          provider: 'WhisperNode🤐'
         }
       ],
       rest: [
@@ -8732,6 +8961,10 @@ const chains: Chain[] = [
         {
           address: 'https://jackal-mainnet-lcd-autostake.net:443',
           provider: 'AutoStake 🛡️ Slash Protected'
+        },
+        {
+          address: 'https://lcd-jackal.whispernode.com:443',
+          provider: 'WhisperNode🤐'
         }
       ],
       grpc: [
@@ -8938,8 +9171,8 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
-          address: 'https://rpc-juno.whispernode.com',
-          provider: ' WhisperNode 🤐'
+          address: 'https://rpc-juno.whispernode.com:443',
+          provider: 'WhisperNode🤐'
         },
         {
           address: 'https://rpc-juno.itastakers.com',
@@ -9020,8 +9253,8 @@ const chains: Chain[] = [
       ],
       rest: [
         {
-          address: 'https://lcd-juno.whispernode.com',
-          provider: ' WhisperNode 🤐'
+          address: 'https://lcd-juno.whispernode.com:443',
+          provider: 'WhisperNode🤐'
         },
         {
           address: 'https://lcd-juno.itastakers.com',
@@ -9840,8 +10073,8 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
-          address: 'https://rpc-kujira.whispernode.com',
-          provider: 'WhisperNode 🤐'
+          address: 'https://rpc-kujira.whispernode.com:443',
+          provider: 'WhisperNode🤐'
         },
         {
           address: 'https://rpc.kaiyo.kujira.setten.io',
@@ -9920,8 +10153,8 @@ const chains: Chain[] = [
       ],
       rest: [
         {
-          address: 'https://lcd-kujira.whispernode.com',
-          provider: 'WhisperNode 🤐'
+          address: 'https://lcd-kujira.whispernode.com:443',
+          provider: 'WhisperNode🤐'
         },
         {
           address: 'https://lcd.kaiyo.kujira.setten.io',
@@ -10915,7 +11148,7 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://rpc-mars.whispernode.com',
+          address: 'https://rpc-mars.whispernode.com:443',
           provider: 'WhisperNode🤐'
         },
         {
@@ -10983,7 +11216,7 @@ const chains: Chain[] = [
           provider: 'Polkachu'
         },
         {
-          address: 'https://lcd-mars.whispernode.com',
+          address: 'https://lcd-mars.whispernode.com:443',
           provider: 'WhisperNode🤐'
         },
         {
@@ -11000,22 +11233,41 @@ const chains: Chain[] = [
       {
         kind: 'BigDipper',
         url: 'https://explorer.marsprotocol.io',
-        tx_page: 'https://explorer.marsprotocol.io/transactions/${txHash}'
+        tx_page: 'https://explorer.marsprotocol.io/transactions/${txHash}',
+        account_page:
+          'https://explorer.marsprotocol.io/accounts/${accountAddress}'
       },
       {
         kind: 'NodeStake Explorer',
         url: 'https://explorer.nodestake.top/mars',
-        tx_page: 'https://explorer.nodestake.top/mars/transactions/${txHash}'
+        tx_page: 'https://explorer.nodestake.top/mars/transactions/${txHash}',
+        account_page:
+          'https://explorer.nodestake.top/mars/account/${accountAddress}'
       },
       {
         kind: 'Nodeist Explorer',
         url: 'https://exp.nodeist.net/m-mars',
-        tx_page: 'https://exp.nodeist.net/m-mars/tx/${txHash}'
+        tx_page: 'https://exp.nodeist.net/m-mars/tx/${txHash}',
+        account_page: 'https://exp.nodeist.net/m-mars/account/${accountAddress}'
       },
       {
         kind: 'Nodes.Guru',
         url: 'https://mars.explorers.guru/',
-        tx_page: 'https://mars.explorers.guru/transaction/${txHash}'
+        tx_page: 'https://mars.explorers.guru/transaction/${txHash}',
+        account_page: 'https://mars.explorers.guru/account/${accountAddress}'
+      },
+      {
+        kind: 'MintScan',
+        url: 'https://www.mintscan.io/mars-protocol',
+        tx_page: 'https://www.mintscan.io/mars-protocol/txs/${txHash}',
+        account_page:
+          'https://www.mintscan.io/mars-protocol/account/${accountAddress}'
+      },
+      {
+        kind: 'ping.pub',
+        url: 'https://ping.pub/mars',
+        tx_page: 'https://ping.pub/mars/tx/${txHash}',
+        account_page: 'https://ping.pub/mars/account/${accountAddress}'
       }
     ],
     logo_URIs: {
@@ -11301,6 +11553,108 @@ const chains: Chain[] = [
   },
   {
     $schema: '../chain.schema.json',
+    chain_name: 'migaloo',
+    status: 'live',
+    network_type: 'mainnet',
+    website: 'https://www.whitewhale.money/',
+    pretty_name: 'Migaloo',
+    chain_id: 'migaloo-1',
+    bech32_prefix: 'migaloo',
+    daemon_name: 'migalood',
+    node_home: '$HOME/.migalood',
+    key_algos: ['secp256k1'],
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'uwhale',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0,
+          average_gas_price: 0,
+          high_gas_price: 0
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'uwhale'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/White-Whale-Defi-Platform/migaloo-chain',
+      recommended_version: 'v1.0.0',
+      compatible_versions: ['v1.0.0'],
+      cosmos_sdk_version: '0.45',
+      tendermint_version: '0.34',
+      cosmwasm_version: '0.28',
+      cosmwasm_enabled: true,
+      genesis: {
+        genesis_url:
+          'https://raw.githubusercontent.com/White-Whale-Defi-Platform/migaloo-chain/main/networks/mainnet/genesis.json'
+      }
+    },
+    peers: {
+      seeds: [
+        {
+          id: '20e1000e88125698264454a884812746c2eb4807',
+          address: 'seeds.lavenderfive.com:12856',
+          provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          id: 'c936ae78abca1169362e068e3e94c87a0ace96c7',
+          address: 'seeds.cros-nest.com:27656',
+          provider: 'Cros-Nest'
+        }
+      ],
+      persistent_peers: []
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://whitewhale-rpc.polkachu.com',
+          provider: 'PolkaChu'
+        },
+        {
+          address: 'https://whitewhale-rpc.lavenderfive.com',
+          provider: 'Lavender.Five Nodes 🐝'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://whitewhale-api.polkachu.com',
+          provider: 'PolkaChu'
+        },
+        {
+          address: 'https://whitewhale-api.lavenderfive.com',
+          provider: 'Lavender.Five Nodes 🐝'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://whitewhale-grpc.lavenderfive.com:443',
+          provider: 'Lavender.Five Nodes 🐝'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'Silk Nodes',
+        url: 'https://explorer.silknodes.io/whitewhale',
+        tx_page: 'https://explorer.silknodes.io/whitewhale/tx/${txhash}',
+        account_page:
+          'https://explorer.silknodes.io/whitewhale/account/${accountAddress}'
+      },
+      {
+        kind: 'ping.pub',
+        url: 'https://ping.pub/migaloo',
+        tx_page: 'https://ping.pub/migaloo/tx/${txHash}'
+      }
+    ]
+  },
+  {
+    $schema: '../chain.schema.json',
     chain_name: 'mises',
     status: 'live',
     network_type: 'mainnet',
@@ -11546,6 +11900,14 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.nomic.bh.rocks',
           provider: 'BlockHunters 🎯'
+        },
+        {
+          address: 'https://rpc-nomic.whispernode.com:443',
+          provider: 'WhisperNode🤐'
+        },
+        {
+          address: 'https://rpc-nomic.carbonZERO.zone:443',
+          provider: 'carbonZERO🌲'
         }
       ],
       rest: [
@@ -12833,7 +13195,7 @@ const chains: Chain[] = [
           provider: 'Chainlayer'
         },
         {
-          address: 'https://rpc-osmosis.whispernode.com',
+          address: 'https://rpc-osmosis.whispernode.com:443',
           provider: 'WhisperNode 🤐'
         },
         {
@@ -12899,7 +13261,7 @@ const chains: Chain[] = [
           provider: 'Chainlayer'
         },
         {
-          address: 'https://lcd-osmosis.whispernode.com',
+          address: 'https://lcd-osmosis.whispernode.com:443',
           provider: 'WhisperNode 🤐'
         },
         {
@@ -13283,6 +13645,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-passage.d-stake.xyz',
           provider: 'D-stake'
+        },
+        {
+          address: 'https://rpc-passage.whispernode.com:443',
+          provider: 'WhisperNode🤐'
         }
       ],
       rest: [
@@ -13325,6 +13691,10 @@ const chains: Chain[] = [
         {
           address: 'https://passage-mainnet-lcd-autostake.net:443',
           provider: 'AutoStake 🛡️ Slash Protected'
+        },
+        {
+          address: 'https://lcd-passage.whispernode.com:443',
+          provider: 'WhisperNode🤐'
         }
       ],
       grpc: [
@@ -13979,11 +14349,6 @@ const chains: Chain[] = [
           id: '048b991204d7aac7209229cbe457f622eed96e5d',
           address: 'seed-1.provenance.io:26656',
           provider: 'figure'
-        },
-        {
-          id: 'efcefb4b79b99d90fb12d1f81421bccdd21b2821',
-          address: 'provenance-seed.panthea.eu:42656',
-          provider: 'Panthea EU'
         }
       ]
     },
@@ -14179,6 +14544,10 @@ const chains: Chain[] = [
         {
           address: 'https://quicksilver-rpc.ibs.team',
           provider: 'Inter Blockchain Services'
+        },
+        {
+          address: 'wss://gql-testnet.quicksilver.forbole.com/websocket',
+          provider: 'Forbole'
         }
       ],
       rest: [
@@ -14259,6 +14628,13 @@ const chains: Chain[] = [
         kind: 'Nodeist Explorer',
         url: 'https://exp.nodeist.net/M-Quicksilver',
         tx_page: 'https://exp.nodeist.net/M-Quicksilver/transactions/${txHash}'
+      },
+      {
+        kind: 'bigdipper',
+        url: 'https://bigdipper.live/quicksilver',
+        tx_page: 'https://bigdipper.live/quicksilvertransactions/${txHash}',
+        account_page:
+          'https://bigdipper.live/quicksilveraccounts/${accountAddress}'
       }
     ]
   },
@@ -14994,7 +15370,7 @@ const chains: Chain[] = [
           provider: 'Stakely.io'
         },
         {
-          address: 'https://rpc-secret.whispernode.com',
+          address: 'https://rpc-secret.whispernode.com:443',
           provider: 'WhisperNode🤐'
         },
         {
@@ -15036,7 +15412,7 @@ const chains: Chain[] = [
           provider: 'AutoStake 🛡️ Slash Protected'
         },
         {
-          address: 'https://lcd-secret.whispernode.com',
+          address: 'https://lcd-secret.whispernode.com:443',
           provider: 'WhisperNode🤐'
         },
         {
@@ -15246,7 +15622,7 @@ const chains: Chain[] = [
           provider: 'chainapsis'
         },
         {
-          address: 'https://rpc-sentinel.whispernode.com',
+          address: 'https://rpc-sentinel.whispernode.com:443',
           provider: 'WhisperNode🤐'
         },
         {
@@ -15254,8 +15630,8 @@ const chains: Chain[] = [
           provider: 'ChainTools'
         },
         {
-          address: 'https://rpc.sentinel.freak12techno.io/',
-          provider: 'freak12techno'
+          address: 'https://rpc.sentinel.quokkastake.io/',
+          provider: 'Quokka Stake'
         },
         {
           address: 'https://sentinel-rpc.badgerbite.io/',
@@ -15276,7 +15652,7 @@ const chains: Chain[] = [
           provider: 'chainapsis'
         },
         {
-          address: 'https://lcd-sentinel.whispernode.com',
+          address: 'https://lcd-sentinel.whispernode.com:443',
           provider: 'WhisperNode🤐'
         },
         {
@@ -15284,8 +15660,8 @@ const chains: Chain[] = [
           provider: 'ChainTools'
         },
         {
-          address: 'https://api.sentinel.freak12techno.io/',
-          provider: 'freak12techno'
+          address: 'https://api.sentinel.quokkastake.io/',
+          provider: 'Quokka Stake'
         },
         {
           address: 'https://sentinel-mainnet-lcd-autostake.net:443',
@@ -16424,7 +16800,7 @@ const chains: Chain[] = [
           provider: 'silent'
         },
         {
-          address: 'https://rpc-stargaze.whispernode.com',
+          address: 'https://rpc-stargaze.whispernode.com:443',
           provider: 'WhisperNode🤐'
         }
       ],
@@ -16478,7 +16854,7 @@ const chains: Chain[] = [
           provider: 'AutoStake 🛡️ Slash Protected'
         },
         {
-          address: 'https://lcd-stargaze.whispernode.com',
+          address: 'https://lcd-stargaze.whispernode.com:443',
           provider: 'WhisperNode🤐'
         }
       ],
@@ -16843,6 +17219,14 @@ const chains: Chain[] = [
         {
           address: 'https://stride.nodejumper.io:443',
           provider: 'Nodejumper 🚀'
+        },
+        {
+          address: 'https://rpc-stride.whispernode.com:443',
+          provider: 'WhisperNode🤐'
+        },
+        {
+          address: 'https://rpc-stride.carbonZERO.zone:443',
+          provider: 'carbonZERO🌲'
         }
       ],
       rest: [
@@ -16901,6 +17285,14 @@ const chains: Chain[] = [
         {
           address: 'https://rest-stride.architectnodes.com',
           provider: 'Architect Nodes'
+        },
+        {
+          address: 'https://lcd-stride.whispernode.com:443',
+          provider: 'WhisperNode🤐'
+        },
+        {
+          address: 'https://rest-stride.carbonZERO.zone:443',
+          provider: 'carbonZERO🌲'
         }
       ],
       grpc: [
@@ -17133,6 +17525,14 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-teritori.pupmos.network',
           provider: 'PUPMØS'
+        },
+        {
+          address: 'https://rpc-teritori.whispernode.com:443',
+          provider: 'WhisperNode🤐'
+        },
+        {
+          address: 'https://rpc-teritori.carbonZERO.zone:443',
+          provider: 'carbonZERO🌲'
         }
       ],
       rest: [
@@ -17199,6 +17599,14 @@ const chains: Chain[] = [
         {
           address: 'https://api-teritori.pupmos.network',
           provider: 'PUPMØS'
+        },
+        {
+          address: 'https://lcd-teritori.whispernode.com:443',
+          provider: 'WhisperNode🤐'
+        },
+        {
+          address: 'https://rest-teritori.carbonZERO.zone:443',
+          provider: 'carbonZERO🌲'
         }
       ],
       grpc: [
@@ -17617,6 +18025,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-terra.wildsage.io:443/',
           provider: 'WildSage Labs'
+        },
+        {
+          address: 'https://rpc-terra2.whispernode.com:443',
+          provider: 'WhisperNode🤐'
         }
       ],
       rest: [
@@ -17639,6 +18051,10 @@ const chains: Chain[] = [
         {
           address: 'https://terra-mainnet-lcd-autostake.net:443',
           provider: 'AutoStake 🛡️ Slash Protected'
+        },
+        {
+          address: 'https://lcd-terra2.whispernode.com:443',
+          provider: 'WhisperNode🤐'
         }
       ],
       grpc: [
@@ -18047,19 +18463,19 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/cosmos/gaia',
-      recommended_version: 'v8.0.0-rc5',
-      compatible_versions: ['v8.0.0-rc3', 'v8.0.0-rc5'],
+      recommended_version: 'v9.0.0-rc3',
+      compatible_versions: ['v9.0.0-rc3'],
       binaries: {
         'linux/amd64':
-          'https://github.com/cosmos/gaia/releases/download/v8.0.0-rc5/gaiad-v8.0.0-rc5-linux-amd64',
+          'https://github.com/cosmos/gaia/releases/download/v9.0.0-rc3/gaiad-v9.0.0-rc3-linux-amd64',
         'linux/arm64':
-          'https://github.com/cosmos/gaia/releases/download/v8.0.0-rc5/gaiad-v8.0.0-rc5-linux-arm64',
+          'https://github.com/cosmos/gaia/releases/download/v9.0.0-rc3/gaiad-v9.0.0-rc3-linux-arm64',
         'darwin/amd64':
-          'https://github.com/cosmos/gaia/releases/download/v8.0.0-rc5/gaiad-v8.0.0-rc5-darwin-amd64',
+          'https://github.com/cosmos/gaia/releases/download/v9.0.0-rc3/gaiad-v9.0.0-rc3-darwin-amd64',
         'darwin/arm64':
-          'https://github.com/cosmos/gaia/releases/download/v8.0.0-rc5/gaiad-v8.0.0-rc5-darwin-arm64',
+          'https://github.com/cosmos/gaia/releases/download/v9.0.0-rc3/gaiad-v9.0.0-rc3-darwin-arm64',
         'windows/amd64':
-          'https://github.com/cosmos/gaia/releases/download/v8.0.0-rc5/gaiad-v8.0.0-rc5-windows-amd64.exe'
+          'https://github.com/cosmos/gaia/releases/download/v9.0.0-rc3/gaiad-v9.0.0-rc3-windows-amd64.exe'
       },
       genesis: {
         genesis_url:
@@ -19429,6 +19845,145 @@ const chains: Chain[] = [
   },
   {
     $schema: '../../chain.schema.json',
+    chain_name: 'neutrontestnet',
+    status: 'live',
+    network_type: 'testnet',
+    pretty_name: 'Neutron Testnet',
+    chain_id: 'baryon-1',
+    bech32_prefix: 'neutron',
+    daemon_name: 'neutrond',
+    node_home: '$HOME/.neutrond',
+    key_algos: ['secp256k1'],
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'untrn',
+          low_gas_price: 0,
+          average_gas_price: 0.025,
+          high_gas_price: 0.05
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/neutron-org/neutron',
+      recommended_version: 'v0.2.0',
+      compatible_versions: [],
+      cosmos_sdk_version: '0.45',
+      tendermint_version: '0.34',
+      cosmwasm_version: '0.30',
+      cosmwasm_enabled: true,
+      ibc_go_version: '4.2.0',
+      genesis: {
+        genesis_url:
+          'https://raw.githubusercontent.com/cosmos/testnets/master/replicated-security/baryon-1/baryon-1-genesis.json'
+      }
+    },
+    logo_URIs: {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron-black-logo.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron-black-logo.svg'
+    },
+    peers: {
+      seeds: [
+        {
+          id: 'e2c07e8e6e808fb36cca0fc580e31216772841df',
+          address: 'p2p.baryon.ntrn.info:26656',
+          provider: 'P2P.ORG'
+        }
+      ],
+      persistent_peers: [
+        {
+          id: '233598946a15427b9541376e7cfc30dab07c4327',
+          address: '35.199.190.244:26656',
+          provider: 'Strangelove'
+        },
+        {
+          id: '359d63178736911e3e4c716f2491cafaa687351a',
+          address: '34.168.248.184:26656',
+          provider: 'Strangelove'
+        },
+        {
+          id: '3d2516052fd8b134428971d1218a149bba6e44be',
+          address: '34.105.100.18:26656',
+          provider: 'Strangelove'
+        },
+        {
+          id: 'b7d0bd260fca7a5a19c7631b15f6068891faa60e',
+          address: 'baryon-apple.rs-testnet.polypore.xyz:26656',
+          provider: 'Hypha'
+        },
+        {
+          id: '49d75c6094c006b6f2758e45457c1f3d6002ce7a',
+          address: 'baryon-banana.rs-testnet.polypore.xyz:26656',
+          provider: 'Hypha'
+        },
+        {
+          id: 'f2520026fb9086f1b2f09e132d209cbe88064ec1',
+          address: 'baryon-cherry.rs-testnet.polypore.xyz:26656',
+          provider: 'Hypha'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc.baryon.ntrn.info',
+          provider: 'P2P.ORG'
+        },
+        {
+          address: 'https://rpc.baryon.remedy.tm.p2p.org',
+          provider: 'P2P.ORG'
+        },
+        {
+          address: 'https://rpc.baryon-sentry-01.rs-testnet.polypore.xyz',
+          provider: 'Hypha'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://rest.baryon.ntrn.info',
+          provider: 'P2P.ORG'
+        },
+        {
+          address: 'https://api.baryon.remedy.tm.p2p.org',
+          provider: 'P2P.ORG'
+        },
+        {
+          address: 'https://rest.baryon-sentry-01.rs-testnet.polypore.xyz',
+          provider: 'Hypha'
+        }
+      ],
+      grpc: [
+        {
+          address: 'grpc.baryon.ntrn.info:80',
+          provider: 'P2P.ORG'
+        },
+        {
+          address: 'grpc.baryon.remedy.tm.p2p.org:443',
+          provider: 'P2P.ORG'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'Ping.pub Explorer from Hypha',
+        url: 'https://explorer.rs-testnet.polypore.xyz/baryon-1',
+        tx_page:
+          'https://explorer.rs-testnet.polypore.xyz/baryon-1/tx/${txHash}',
+        account_page:
+          'https://explorer.rs-testnet.polypore.xyz/baryon-1/account/${accountAddress}'
+      },
+      {
+        kind: 'Mintscan',
+        url: 'https://testnet.mintscan.io/neutron-testnet',
+        tx_page: 'https://testnet.mintscan.io/neutron-testnet/txs/${txHash}',
+        account_page:
+          'https://testnet.mintscan.io/neutron-testnet/account/${accountAddress}'
+      }
+    ]
+  },
+  {
+    $schema: '../../chain.schema.json',
     chain_name: 'osmosistestnet',
     status: 'live',
     network_type: 'testnet',
@@ -19531,6 +20086,146 @@ const chains: Chain[] = [
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
     },
     keywords: ['dex', 'testnet']
+  },
+  {
+    $schema: '../chain.schema.json',
+    chain_name: 'persistencetestnet',
+    chain_id: 'test-core-1',
+    pretty_name: 'Persistence Testnet',
+    status: 'live',
+    network_type: 'testnet',
+    website: 'https://persistence.one/',
+    bech32_prefix: 'persistence',
+    daemon_name: 'persistenceCore',
+    node_home: '$HOME/.persistenceCore',
+    key_algos: ['secp256k1'],
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'uxprt',
+          fixed_min_gas_price: 0
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'uxprt'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/persistenceOne/persistenceCore',
+      recommended_version: 'v6.0.0-rc5',
+      compatible_versions: ['v6.0.0-rc5'],
+      binaries: {
+        'linux/amd64':
+          'https://github.com/persistenceOne/persistenceCore/archive/refs/tags/v6.0.0-rc5.tar.gz'
+      },
+      genesis: {
+        genesis_url:
+          'https://raw.githubusercontent.com/persistenceOne/genesisTransactions/master/test-core-1/final_genesis.json'
+      }
+    },
+    peers: {
+      seeds: [
+        {
+          id: '5c2a752c9b1952dbed075c56c600c3a79b58c395',
+          address: 'persistence.testnet.seed.autostake.net:26896',
+          provider: 'Auto Stake'
+        },
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'testnet-seeds.polkachu.com:15456',
+          provider: 'AutoStake'
+        }
+      ],
+      persistent_peers: [
+        {
+          id: '5c2a752c9b1952dbed075c56c600c3a79b58c395',
+          address: 'persistence.testnet.peer.autostake.net:26896',
+          provider: 'AutoStake'
+        },
+        {
+          id: '14ecdc5126ea8d93c7d3a863d9d38e380e46fc06',
+          address: '185.225.233.30:26656',
+          provider: 'Cosmonaut Stakes'
+        },
+        {
+          id: '987c7cd05003194334f55ed5cbcc0fe8cd9df021',
+          address: '65.108.233.109:15456',
+          provider: 'Polkachu'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc-testnet-persistence.architectnodes.com/',
+          provider: 'Architect Nodes'
+        },
+        {
+          address: 'https://persistence-testnet-rpc.baryon.dev/',
+          provider: 'Baryon'
+        },
+        {
+          address: 'https://persistence-testnet-rpc.cosmonautstakes.com/',
+          provider: 'Cosmonaut Stakes'
+        },
+        {
+          address: 'https://rpc.testnet.persistence.one/',
+          provider: 'Persistence'
+        },
+        {
+          address: 'https://persistence-testnet-rpc.polkachu.com/',
+          provider: 'Polkachu'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://rest-testnet-persistence.architectnodes.com/',
+          provider: 'Architect Nodes'
+        },
+        {
+          address: 'https://persistence-testnet-api.baryon.dev/',
+          provider: 'Baryon'
+        },
+        {
+          address: 'https://persistence-testnet-rest.cosmonautstakes.com/',
+          provider: 'Cosmonaut Stakes'
+        },
+        {
+          address: 'https://rest.testnet.persistence.one/',
+          provider: 'Persistence'
+        },
+        {
+          address: 'https://persistence-testnet-api.polkachu.com/',
+          provider: 'Polkachu'
+        }
+      ],
+      grpc: [
+        {
+          address: 'persistence-testnet-grpc.polkachu.com:15490',
+          provider: 'Polkachu'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'ping.pub',
+        url: 'https://testnet.ping.pub/test-core-1/',
+        tx_page: 'https://testnet.ping.pub/test-core-1/tx/${txHash}'
+      },
+      {
+        kind: 'mintscan',
+        url: 'https://testnet.mintscan.io/persistence-testnet',
+        tx_page:
+          'https://testnet.mintscan.io/persistence-testnet/txs/${txHash}',
+        account_page:
+          'https://testnet.mintscan.io/persistence-testnet/account/${accountAddress}'
+      }
+    ]
   },
   {
     $schema: '../../chain.schema.json',
@@ -19790,6 +20485,92 @@ const chains: Chain[] = [
           'https://testnet.quicksilver.explorers.guru/account/${accountAddress}'
       }
     ]
+  },
+  {
+    $schema: '../chain.schema.json',
+    chain_name: 'qwoyntestnet',
+    status: 'live',
+    network_type: 'testnet',
+    website: 'https://qwoyn.studio/',
+    pretty_name: 'Qwoyn',
+    chain_id: 'higgs-boson-1',
+    bech32_prefix: 'qwoyn',
+    daemon_name: 'qwoynd',
+    node_home: '$HOME/.qwoynd',
+    key_algos: ['secp256k1'],
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'uqwoyn'
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'uqwoyn'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/cosmic-horizon/QWOYN',
+      recommended_version: 'v1.0.0',
+      compatible_versions: ['v1.0.0'],
+      binaries: {
+        'linux/amd64':
+          'https://github.com/cosmic-horizon/QWOYN/releases/download/v1.0.0/qwoynd_1.0.0_linux_amd64.zip'
+      },
+      cosmos_sdk_version: '0.42.10',
+      tendermint_version: '0.34',
+      ibc_go_version: '3.0.0',
+      ics_enabled: ['ics20-1', 'ics27-1'],
+      genesis: {
+        genesis_url:
+          'https://github.com/cosmic-horizon/testnets/blob/main/higgs-boson-1/genesis.json'
+      }
+    },
+    peers: {
+      seeds: [],
+      persistent_peers: [
+        {
+          id: '520d904daa98ff2fe88baee1c3701a30beb0208b',
+          address: '137.220.37.9:26656'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'http://137.220.37.9:26657',
+          provider: 'Qwoyn Studios'
+        }
+      ],
+      grpc: [
+        {
+          address: 'http://137.220.37.9:9090',
+          provider: 'Qwoyn Studios'
+        }
+      ],
+      rest: [
+        {
+          address: 'http://137.220.37.9:1317',
+          provider: 'Qwoyn Studios'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'skynetexplorers',
+        url: 'https://www.skynetexplorers.com/qwoyn-studios',
+        tx_page: 'https://www.skynetexplorers.com/qwoyn-studios/txs/${txHash}',
+        account_page:
+          'https://www.skynetexplorers.com/qwoyn-studios/account/${accountAddress}'
+      }
+    ],
+    logo_URIs: {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/qwoyntestnet/images/qwoyn.png'
+    }
   },
   {
     $schema: '../../chain.schema.json',
@@ -20769,10 +21550,6 @@ const chains: Chain[] = [
     },
     apis: {
       rpc: [
-        {
-          address: 'https://rpc.mainnet.network.umee.cc',
-          provider: 'umee Foundation'
-        },
         {
           address: 'https://umee-rpc.polkachu.com',
           provider: 'Polkachu'
