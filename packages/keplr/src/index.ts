@@ -105,18 +105,14 @@ export const chainRegistryChainToKeplr = (
     .filter((currency) => feeDenoms.includes(currency.coinMinimalDenom))
     .map((feeCurrency) => {
       if (!gasPriceSteps?.hasOwnProperty(feeCurrency.coinMinimalDenom))
-        return {
-          ...feeCurrency,
-          coinGeckoId: feeCurrency.coinGeckoId || undefined
-        }
+        return feeCurrency
 
 
       // has gas
       const gasPriceStep = gasPriceSteps[feeCurrency.coinMinimalDenom];
       return {
         ...feeCurrency,
-        gasPriceStep,
-        coinGeckoId: feeCurrency.coinGeckoId || undefined
+        gasPriceStep
       };
     });
 
@@ -125,17 +121,13 @@ export const chainRegistryChainToKeplr = (
     .filter((currency) => stakeCurrency.coinDenom === currency.coinDenom)
     .map((feeCurrency) => {
       if (!gasPriceSteps?.hasOwnProperty(feeCurrency.coinMinimalDenom))
-        return {
-          ...feeCurrency,
-          coinGeckoId: feeCurrency.coinGeckoId || undefined
-        };
+        return feeCurrency
 
       // has gas
       const gasPriceStep = gasPriceSteps[feeCurrency.coinMinimalDenom];
       return {
         ...feeCurrency,
-        gasPriceStep,
-        coinGeckoId: feeCurrency.coinGeckoId || undefined
+        gasPriceStep
       };
     });
 
