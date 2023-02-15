@@ -105,7 +105,7 @@ export const chainRegistryChainToKeplr = (
     .filter((currency) => feeDenoms.includes(currency.coinMinimalDenom))
     .map((feeCurrency) => {
       if (!gasPriceSteps?.hasOwnProperty(feeCurrency.coinMinimalDenom))
-        return feeCurrency
+        return feeCurrency;
 
 
       // has gas
@@ -121,7 +121,7 @@ export const chainRegistryChainToKeplr = (
     .filter((currency) => stakeCurrency.coinDenom === currency.coinDenom)
     .map((feeCurrency) => {
       if (!gasPriceSteps?.hasOwnProperty(feeCurrency.coinMinimalDenom))
-        return feeCurrency
+        return feeCurrency;
 
       // has gas
       const gasPriceStep = gasPriceSteps[feeCurrency.coinMinimalDenom];
