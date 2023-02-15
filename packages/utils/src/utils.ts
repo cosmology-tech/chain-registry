@@ -421,7 +421,7 @@ export const getCw20Assets = (
             ]
           };
         } catch (e) {
-          consnole.log('problem creating cw20 assets');
+          console.log('problem creating cw20 assets');
           console.log(asset);
         }
       })
