@@ -91,7 +91,7 @@ export const chainRegistryChainToKeplr = (
       coinDecimals: currency.denom_units.filter(
         (denomUnit: { denom: string }) => denomUnit.denom === currency.display
       )[0]?.exponent,
-      coinGeckoId: currency.coingecko_id,
+      coinGeckoId: currency.coingecko_id || undefined,
       coinImageUrl: currency.logo_URIs?.svg ?? currency.logo_URIs?.png
     };
   });
