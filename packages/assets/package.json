@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/assets",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "description": "Chain Registry Asset Lists",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",

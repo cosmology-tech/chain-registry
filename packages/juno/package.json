@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/juno",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "description": "Chain Registry info for Juno",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
