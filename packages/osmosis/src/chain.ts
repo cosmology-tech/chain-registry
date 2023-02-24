@@ -336,7 +336,7 @@ const chain: Chain = {
         provider: 'Chainlayer'
       },
       {
-        address: 'https://rpc-osmosis.whispernode.com',
+        address: 'https://rpc-osmosis.whispernode.com:443',
         provider: 'WhisperNode 🤐'
       },
       {
@@ -402,7 +402,7 @@ const chain: Chain = {
         provider: 'Chainlayer'
       },
       {
-        address: 'https://lcd-osmosis.whispernode.com',
+        address: 'https://lcd-osmosis.whispernode.com:443',
         provider: 'WhisperNode 🤐'
       },
       {

@@ -1679,7 +1679,8 @@ const asset_list: AssetList = {
       display: 'harbor',
       symbol: 'HARBOR',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg'
       },
       coingecko_id: '',
       traces: [
@@ -1715,7 +1716,8 @@ const asset_list: AssetList = {
       display: 'cmst',
       symbol: 'CMST',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg'
       },
       coingecko_id: 'composite',
       traces: [
@@ -2131,6 +2133,7 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
       },
+      coingecko_id: 'mars-protocol',
       traces: [
         {
           type: 'ibc',
@@ -2658,6 +2661,39 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stluna.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stluna.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom: 'staevmos',
+          exponent: 0
+        },
+        {
+          denom: 'stevmos',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/2193FFF54DCB24C93F92C846689FA73974C064741C36015EEA2FFBBC1817CB92',
+      name: 'stEVMOS',
+      display: 'stevmos',
+      symbol: 'stEVMOS',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-24',
+            base_denom: 'staevmos',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-139'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stevmos.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stevmos.svg'
       }
     },
     {

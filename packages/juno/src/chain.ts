@@ -139,8 +139,8 @@ const chain: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc-juno.whispernode.com',
-        provider: ' WhisperNode 🤐'
+        address: 'https://rpc-juno.whispernode.com:443',
+        provider: 'WhisperNode🤐'
       },
       {
         address: 'https://rpc-juno.itastakers.com',
@@ -221,8 +221,8 @@ const chain: Chain = {
     ],
     rest: [
       {
-        address: 'https://lcd-juno.whispernode.com',
-        provider: ' WhisperNode 🤐'
+        address: 'https://lcd-juno.whispernode.com:443',
+        provider: 'WhisperNode🤐'
       },
       {
         address: 'https://lcd-juno.itastakers.com',
