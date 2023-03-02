@@ -193,14 +193,30 @@ export const getIbcAssets = (
       const counterpartyIbc = ibcInfo[counterpartyIs];
       const chainIbc = ibcInfo[chainIs];
 
-      const counterpartyAssets = assets.find((a) => {
+      const baseCounterpartyAssets = assets.find((a) => {
         return a.chain_name === counterparty;
       });
 
-      if (!counterpartyAssets) {
+      if (!baseCounterpartyAssets) {
         // console.warn('asset not found: ' + counterparty);
         return;
       }
+
+      // const counterpartyAssets = baseCounterpartyAssets;
+      const counterpartyAssets = {
+        ...baseCounterpartyAssets,
+        assets: baseCounterpartyAssets.assets.filter((a) => {
+          if (
+            // https://github.com/cosmos/chain-registry/issues/1535
+            baseCounterpartyAssets.chain_name === 'carbon' &&
+            a.base.startsWith('ibc/')
+          ) {
+            return false;
+          } else {
+            return true;
+          }
+        })
+      };
 
       const ibcAssets = counterpartyAssets.assets
         .filter((a) => !a.base.startsWith('cw20:'))
