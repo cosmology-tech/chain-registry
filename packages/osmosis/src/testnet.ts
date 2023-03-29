@@ -74,8 +74,8 @@ const testnet: Chain = {
         provider: 'ChainLayer'
       },
       {
-        address: 'https://testnet-rpc.osmosis.zone/',
-        provider: ''
+        address: 'https://rpc.testnet.osmosis.zone/',
+        provider: 'Osmosis'
       }
     ],
     rest: [

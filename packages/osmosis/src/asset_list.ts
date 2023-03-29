@@ -3,6 +3,43 @@ const asset_list: AssetList = {
   chain_name: 'osmosis',
   assets: [
     {
+      description: 'The native staking token of 8ball.',
+      denom_units: [
+        {
+          denom:
+            'ibc/8BE73A810E22F80E5E850531A688600D63AE7392E7C2770AE758CAA4FD921B7F',
+          exponent: 0,
+          aliases: ['uebl']
+        },
+        {
+          denom: 'ebl',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/8BE73A810E22F80E5E850531A688600D63AE7392E7C2770AE758CAA4FD921B7F',
+      name: '8ball',
+      display: 'ebl',
+      symbol: 'EBL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg'
+      },
+      coingecko_id: '',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-16',
+            base_denom: 'uebl',
+            chain_name: '8ball'
+          },
+          chain: {
+            channel_id: 'channel-641'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The native EVM, governance and staking token of the Acrechain',
       denom_units: [
@@ -59,7 +96,8 @@ const asset_list: AssetList = {
       display: 'arusd',
       symbol: 'arUSD',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
       },
       coingecko_id: 'arable-usd',
       traces: [
@@ -95,7 +133,8 @@ const asset_list: AssetList = {
       display: 'cnto',
       symbol: 'CNTO',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.svg'
       },
       traces: [
         {
@@ -131,6 +170,7 @@ const asset_list: AssetList = {
       display: 'bld',
       symbol: 'BLD',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/bld.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/bld.png'
       },
       coingecko_id: 'agoric',
@@ -168,6 +208,7 @@ const asset_list: AssetList = {
       display: 'ist',
       symbol: 'IST',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/ist.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/ist.png'
       },
       traces: [
@@ -223,6 +264,42 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'The native token of Arkhadian',
+      denom_units: [
+        {
+          denom:
+            'ibc/0F91EE8B98AAE3CF393D94CD7F89A10F8D7758C5EC707E721899DFE65C164C28',
+          exponent: 0,
+          aliases: ['arkh']
+        },
+        {
+          denom: 'ARKH',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/0F91EE8B98AAE3CF393D94CD7F89A10F8D7758C5EC707E721899DFE65C164C28',
+      name: 'Arkh',
+      display: 'ARKH',
+      symbol: 'ARKH',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-12',
+            base_denom: 'arkh',
+            chain_name: 'arkh'
+          },
+          chain: {
+            channel_id: 'channel-648'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Asset Mantle',
       denom_units: [
         {
@@ -241,7 +318,8 @@ const asset_list: AssetList = {
       display: 'mntl',
       symbol: 'MNTL',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.svg'
       },
       coingecko_id: 'assetmantle',
       traces: [
@@ -329,8 +407,7 @@ const asset_list: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png'
-      },
-      coingecko_id: 'usd-coin'
+      }
     },
     {
       description: "Frax's fractional-algorithmic stablecoin on Axelar",
@@ -366,8 +443,7 @@ const asset_list: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.png'
-      },
-      coingecko_id: 'frax'
+      }
     },
     {
       description: 'Dai stablecoin on Axelar',
@@ -403,8 +479,7 @@ const asset_list: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.png'
-      },
-      coingecko_id: 'dai'
+      }
     },
     {
       description: "Tether's USD stablecoin on Axelar",
@@ -440,8 +515,7 @@ const asset_list: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png'
-      },
-      coingecko_id: 'tether'
+      }
     },
     {
       description: 'Wrapped Ether on Axelar',
@@ -476,8 +550,7 @@ const asset_list: AssetList = {
       ],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png'
-      },
-      coingecko_id: 'weth'
+      }
     },
     {
       description: 'Wrapped Bitcoin on Axelar',
@@ -512,8 +585,7 @@ const asset_list: AssetList = {
       ],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png'
-      },
-      coingecko_id: 'wrapped-bitcoin'
+      }
     },
     {
       description: 'Aave on Axelar',
@@ -548,8 +620,7 @@ const asset_list: AssetList = {
       ],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg'
-      },
-      coingecko_id: 'aave'
+      }
     },
     {
       description: 'ApeCoin on Axelar',
@@ -584,8 +655,7 @@ const asset_list: AssetList = {
       ],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg'
-      },
-      coingecko_id: 'apecoin'
+      }
     },
     {
       description: 'Axie Infinity Shard on Axelar',
@@ -620,8 +690,7 @@ const asset_list: AssetList = {
       ],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg'
-      },
-      coingecko_id: 'axie-infinity'
+      }
     },
     {
       description: 'Chainlink on Axelar',
@@ -657,8 +726,7 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
-      },
-      coingecko_id: 'chainlink'
+      }
     },
     {
       description: 'Maker on Axelar',
@@ -693,8 +761,7 @@ const asset_list: AssetList = {
       ],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg'
-      },
-      coingecko_id: 'maker'
+      }
     },
     {
       description: 'Rai Reflex Index on Axelar',
@@ -729,8 +796,7 @@ const asset_list: AssetList = {
       ],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/rai.svg'
-      },
-      coingecko_id: 'rai'
+      }
     },
     {
       description: 'Shiba Inu on Axelar',
@@ -765,8 +831,7 @@ const asset_list: AssetList = {
       ],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg'
-      },
-      coingecko_id: 'shiba-inu'
+      }
     },
     {
       description: 'Lido Staked Ether on Axelar',
@@ -801,8 +866,7 @@ const asset_list: AssetList = {
       ],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg'
-      },
-      coingecko_id: 'staked-ether'
+      }
     },
     {
       description: 'Uniswap on Axelar',
@@ -837,8 +901,7 @@ const asset_list: AssetList = {
       ],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg'
-      },
-      coingecko_id: 'uniswap'
+      }
     },
     {
       description: 'Chain on Axelar',
@@ -873,8 +936,7 @@ const asset_list: AssetList = {
       ],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg'
-      },
-      coingecko_id: 'chain-2'
+      }
     },
     {
       description: 'Wrapped Polkadot on Axelar',
@@ -910,8 +972,7 @@ const asset_list: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.png'
-      },
-      coingecko_id: 'polkadot'
+      }
     },
     {
       description: 'Wrapped Moonbeam on Axelar',
@@ -947,8 +1008,7 @@ const asset_list: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.png'
-      },
-      coingecko_id: 'wrapped-moonbeam'
+      }
     },
     {
       description: 'Wrapped Matic on Axelar',
@@ -984,8 +1044,7 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg'
-      },
-      coingecko_id: 'matic-network'
+      }
     },
     {
       description: 'Wrapped BNB on Axelar',
@@ -1021,8 +1080,7 @@ const asset_list: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.png'
-      },
-      coingecko_id: 'wbnb'
+      }
     },
     {
       description: 'Binance USD on Axelar.',
@@ -1057,8 +1115,7 @@ const asset_list: AssetList = {
       ],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/busd.png'
-      },
-      coingecko_id: 'binance-usd'
+      }
     },
     {
       description: 'Wrapped AVAX on Axelar.',
@@ -1843,6 +1900,41 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'L DON a BitSong Music FanToken',
+      denom_units: [
+        {
+          denom:
+            'ibc/BE95D1E09F5A44FC5409F4E0F52750DF2A868D865BC91F3C3EE3C83235789D18',
+          exponent: 0,
+          aliases: ['ft347B1612A2B7659913679CF6CD45B8B130C50A00']
+        },
+        {
+          denom: 'ldon',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/BE95D1E09F5A44FC5409F4E0F52750DF2A868D865BC91F3C3EE3C83235789D18',
+      name: 'L DON Fantoken',
+      display: 'ldon',
+      symbol: 'LDON',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft347B1612A2B7659913679CF6CD45B8B130C50A00.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel_id: 'channel-73'
+          }
+        }
+      ]
+    },
+    {
       description: 'The staking token of Bostrom',
       denom_units: [
         {
@@ -1857,6 +1949,7 @@ const asset_list: AssetList = {
       display: 'boot',
       symbol: 'BOOT',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png'
       },
       coingecko_id: 'bostrom',
@@ -1894,6 +1987,7 @@ const asset_list: AssetList = {
       display: 'canto',
       symbol: 'CANTO',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png'
       },
       coingecko_id: 'canto',
@@ -1926,6 +2020,7 @@ const asset_list: AssetList = {
           aliases: ['SWTH']
         }
       ],
+      type_asset: 'sdk.coin',
       base: 'ibc/8FEFAE6AECF6E2A255585617F781F35A8D5709A545A804482A261C0C9548A9D3',
       name: 'Carbon',
       display: 'dswth',
@@ -1964,6 +2059,7 @@ const asset_list: AssetList = {
           aliases: ['USC']
         }
       ],
+      type_asset: 'sdk.coin',
       base: 'ibc/F64D67581D50AE3F641A344F31FE7CF9DC5A2C8C8C455A6967E36DEA09D563E6',
       name: 'Carbon USD Coin',
       display: 'dusc',
@@ -2022,8 +2118,7 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/bnb.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/bnb.svg'
-      },
-      coingecko_id: 'binancecoin'
+      }
     },
     {
       description: 'bNEO token on Carbon',
@@ -2060,8 +2155,7 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/bneo.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/bneo.svg'
-      },
-      coingecko_id: 'neo'
+      }
     },
     {
       description: 'BUSD (BEP-20) token on Carbon',
@@ -2097,8 +2191,81 @@ const asset_list: AssetList = {
       ],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/busd.png'
+      }
+    },
+    {
+      description: 'Carbon Wrapped GLP on Carbon',
+      denom_units: [
+        {
+          denom:
+            'ibc/FF1EB215DC22B8D383105710E17DAF0584FEB7C15DDA2FADC7D44F5B77DFFBF4',
+          exponent: 0,
+          aliases: ['cglp.1.19.1698d3']
+        },
+        {
+          denom: 'cglp',
+          exponent: 18,
+          aliases: ['CGLP']
+        }
+      ],
+      base: 'ibc/FF1EB215DC22B8D383105710E17DAF0584FEB7C15DDA2FADC7D44F5B77DFFBF4',
+      name: 'Carbon Wrapped GLP',
+      display: 'cglp',
+      symbol: 'CGLP',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'cglp.1.19.1698d3',
+            chain_name: 'carbon'
+          },
+          chain: {
+            channel_id: 'channel-188'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/cglp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/cglp.svg'
+      }
+    },
+    {
+      description: 'Grouped USD on Carbon',
+      denom_units: [
+        {
+          denom:
+            'ibc/73C2C269DCA7914B90E227D315C339836FDC6F2D570E5C5438D6C288472A665B',
+          exponent: 0,
+          aliases: ['cgt/1']
+        },
+        {
+          denom: 'usd',
+          exponent: 18,
+          aliases: ['USD']
+        }
+      ],
+      base: 'ibc/73C2C269DCA7914B90E227D315C339836FDC6F2D570E5C5438D6C288472A665B',
+      name: 'Carbon Grouped USD',
+      display: 'usd',
+      symbol: 'USD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/carbon-grouped-usd.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/carbon-grouped-usd.svg'
       },
-      coingecko_id: 'binance-usd'
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'cgt/1',
+            chain_name: 'carbon'
+          },
+          chain: {
+            channel_id: 'channel-188'
+          }
+        }
+      ]
     },
     {
       description: 'ETH (Arbitrum) token on Carbon',
@@ -2134,8 +2301,7 @@ const asset_list: AssetList = {
       ],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg'
-      },
-      coingecko_id: 'ethereum'
+      }
     },
     {
       description: 'ETH (ERC20) token on Carbon',
@@ -2171,8 +2337,7 @@ const asset_list: AssetList = {
       ],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg'
-      },
-      coingecko_id: 'ethereum'
+      }
     },
     {
       description: 'USDC (ERC20) token on Carbon',
@@ -2208,8 +2373,7 @@ const asset_list: AssetList = {
       ],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
-      },
-      coingecko_id: 'usd-coin'
+      }
     },
     {
       description: 'USD Coin (BEP-20) token on Carbon',
@@ -2245,8 +2409,7 @@ const asset_list: AssetList = {
       ],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
-      },
-      coingecko_id: 'usd-coin'
+      }
     },
     {
       description: 'The native token of Cerberus Chain',
@@ -2267,6 +2430,7 @@ const asset_list: AssetList = {
       display: 'crbrus',
       symbol: 'CRBRUS',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png'
       },
       coingecko_id: 'cerberus-2',
@@ -2599,6 +2763,7 @@ const asset_list: AssetList = {
       display: 'cro',
       symbol: 'CRO',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png'
       },
       coingecko_id: 'crypto-com-chain',
@@ -2817,8 +2982,7 @@ const asset_list: AssetList = {
       display: 'echelon',
       symbol: 'ECH',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/echelon.svg',
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/logo.png'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/ech.svg'
       },
       coingecko_id: 'echelon',
       traces: [
@@ -2855,6 +3019,7 @@ const asset_list: AssetList = {
       display: 'ngm',
       symbol: 'NGM',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png'
       },
       coingecko_id: 'e-money',
@@ -2892,6 +3057,7 @@ const asset_list: AssetList = {
       display: 'eur',
       symbol: 'EEUR',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.png'
       },
       coingecko_id: 'e-money-eur',
@@ -2931,6 +3097,7 @@ const asset_list: AssetList = {
       display: 'chf',
       symbol: 'ECHF',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.png'
       },
       coingecko_id: '',
@@ -2970,6 +3137,7 @@ const asset_list: AssetList = {
       display: 'nok',
       symbol: 'ENOK',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.png'
       },
       coingecko_id: '',
@@ -3009,6 +3177,7 @@ const asset_list: AssetList = {
       display: 'dkk',
       symbol: 'EDKK',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.png'
       },
       coingecko_id: '',
@@ -3048,6 +3217,7 @@ const asset_list: AssetList = {
       display: 'sek',
       symbol: 'ESEK',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.png'
       },
       coingecko_id: '',
@@ -3322,8 +3492,7 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg'
-      },
-      coingecko_id: 'pstake-finance'
+      }
     },
     {
       description: 'Gravity Bridge WETH',
@@ -3520,6 +3689,7 @@ const asset_list: AssetList = {
       display: 'ixo',
       symbol: 'IXO',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png'
       },
       coingecko_id: 'ixo',
@@ -3824,6 +3994,7 @@ const asset_list: AssetList = {
       display: 'kava',
       symbol: 'KAVA',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png'
       },
       coingecko_id: 'kava',
@@ -3934,6 +4105,7 @@ const asset_list: AssetList = {
       display: 'USDX',
       symbol: 'USDX',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.png'
       },
       coingecko_id: 'usdx',
@@ -4046,7 +4218,8 @@ const asset_list: AssetList = {
       symbol: 'KUJI',
       coingecko_id: 'kujira',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg'
       },
       traces: [
         {
@@ -4085,7 +4258,8 @@ const asset_list: AssetList = {
       symbol: 'USK',
       coingecko_id: 'usk',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.svg'
       },
       traces: [
         {
@@ -4121,6 +4295,7 @@ const asset_list: AssetList = {
       display: 'lamb',
       symbol: 'LAMB',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.png'
       },
       coingecko_id: 'lambda',
@@ -4270,7 +4445,7 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
       },
-      coingecko_id: 'mars-protocol',
+      coingecko_id: 'mars-protocol-a7fcbcfb-fd61-4017-92f0-7ee9f9cc6da3',
       traces: [
         {
           type: 'ibc',
@@ -4281,6 +4456,43 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-557'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native token of Medas Digital Network',
+      denom_units: [
+        {
+          denom:
+            'ibc/01E94A5FF29B8DDEFC86F412CC3927F7330E9B523CC63A6194B1108F5276025C',
+          exponent: 0,
+          aliases: ['umedas']
+        },
+        {
+          denom: 'medas',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/01E94A5FF29B8DDEFC86F412CC3927F7330E9B523CC63A6194B1108F5276025C',
+      name: 'Medas Digital',
+      display: 'medas',
+      symbol: 'MEDAS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.svg'
+      },
+      keywords: ['medas'],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'umedas',
+            chain_name: 'medasdigital'
+          },
+          chain: {
+            channel_id: 'channel-519'
           }
         }
       ]
@@ -4305,8 +4517,7 @@ const asset_list: AssetList = {
       display: 'meme',
       symbol: 'MEME',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.png'
       },
       coingecko_id: 'meme-network',
       traces: [
@@ -4356,6 +4567,42 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-39'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native token of Migaloo Chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/EDD6F0D66BCD49C1084FB2C35353B4ACD7B9191117CE63671B61320548F7C89D',
+          exponent: 0,
+          aliases: ['uwhale']
+        },
+        {
+          denom: 'whale',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/EDD6F0D66BCD49C1084FB2C35353B4ACD7B9191117CE63671B61320548F7C89D',
+      name: 'Whale',
+      display: 'Whale',
+      symbol: 'WHALE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/whitewhale.png'
+      },
+      coingecko_id: '',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'uwhale',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-642'
           }
         }
       ]
@@ -4488,6 +4735,7 @@ const asset_list: AssetList = {
       display: 'nom',
       symbol: 'NOM',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png'
       },
       keywords: ['dex', 'stablecoin', 'bridge', 'staking'],
@@ -4562,7 +4810,8 @@ const asset_list: AssetList = {
       display: 'med',
       symbol: 'MED',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.svg'
       },
       coingecko_id: 'medibloc',
       traces: [
@@ -4640,6 +4889,7 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
       },
+      coingecko_id: 'stkatom',
       traces: [
         {
           type: 'ibc',
@@ -4671,6 +4921,7 @@ const asset_list: AssetList = {
           exponent: 18
         }
       ],
+      type_asset: 'ics20',
       base: 'ibc/8061A06D3BD4D52C4A28FFECF7150D370393AF0BA661C3776C54FF32836C3961',
       name: 'pSTAKE Finance',
       display: 'pstake',
@@ -4693,7 +4944,7 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg'
       },
-      coingecko_id: 'pstake-finance'
+      keywords: ['canon']
     },
     {
       description:
@@ -4718,7 +4969,7 @@ const asset_list: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png'
       },
-      coingecko_id: '',
+      coingecko_id: 'planq',
       traces: [
         {
           type: 'ibc',
@@ -4752,8 +5003,8 @@ const asset_list: AssetList = {
       display: 'hash',
       symbol: 'HASH',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/hash.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/hash.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.svg'
       },
       coingecko_id: 'provenance-blockchain',
       traces: [
@@ -4766,6 +5017,151 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-222'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native token of Quasar',
+      denom_units: [
+        {
+          denom:
+            'ibc/1B708808D372E959CD4839C594960309283424C775F4A038AAEBE7F83A988477',
+          exponent: 0,
+          aliases: ['uqsr']
+        },
+        {
+          denom: 'qsr',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'sdk.coin',
+      base: 'ibc/1B708808D372E959CD4839C594960309283424C775F4A038AAEBE7F83A988477',
+      name: 'Quasar',
+      display: 'qsr',
+      symbol: 'QSR',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'uqsr',
+            chain_name: 'quasar'
+          },
+          chain: {
+            channel_id: 'channel-688'
+          }
+        }
+      ]
+    },
+    {
+      description: 'OSMO from Osmosis',
+      denom_units: [
+        {
+          denom:
+            'ibc/FE67E80A933248CAE4B088D8918BE20D7F23BE4AF8054E0353DB89E7EEBE2A1B',
+          exponent: 0,
+          aliases: [
+            'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B'
+          ]
+        },
+        {
+          denom: 'osmo',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/FE67E80A933248CAE4B088D8918BE20D7F23BE4AF8054E0353DB89E7EEBE2A1B',
+      name: 'Osmosis',
+      display: 'osmo',
+      symbol: 'OSMO',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
+            chain_name: 'quasar'
+          },
+          chain: {
+            channel_id: 'channel-688'
+          }
+        }
+      ]
+    },
+    {
+      description: 'ATOM from Osmosis',
+      denom_units: [
+        {
+          denom:
+            'ibc/EDEFB96A2A1AEA32DFED16E5A7C3E146A244A372A74CCDD73FDA3AA365E33E59',
+          exponent: 0,
+          aliases: [
+            'ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5'
+          ]
+        },
+        {
+          denom: 'atom',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/EDEFB96A2A1AEA32DFED16E5A7C3E146A244A372A74CCDD73FDA3AA365E33E59',
+      name: 'Atom',
+      display: 'atom',
+      symbol: 'ATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5',
+            chain_name: 'quasar'
+          },
+          chain: {
+            channel_id: 'channel-688'
+          }
+        }
+      ]
+    },
+    {
+      description: 'USDC.axl from Osmosis',
+      denom_units: [
+        {
+          denom:
+            'ibc/9B6E2D87FB3CDA88CD2387A7F1A354469B4DB302851ED0216FB77E4A1B952000',
+          exponent: 0,
+          aliases: [
+            'ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A'
+          ]
+        },
+        {
+          denom: 'usdc',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/9B6E2D87FB3CDA88CD2387A7F1A354469B4DB302851ED0216FB77E4A1B952000',
+      name: 'USD Coin',
+      display: 'usdc',
+      symbol: 'USDC.axl',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A',
+            chain_name: 'quasar'
+          },
+          chain: {
+            channel_id: 'channel-688'
           }
         }
       ]
@@ -4845,6 +5241,117 @@ const asset_list: AssetList = {
       }
     },
     {
+      description: 'Quicksilver Liquid Staked ATOM',
+      denom_units: [
+        {
+          denom:
+            'ibc/FA602364BEC305A696CBDF987058E99D8B479F0318E47314C49173E8838C5BAC',
+          exponent: 0,
+          aliases: ['uqatom']
+        },
+        {
+          denom: 'qatom',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/FA602364BEC305A696CBDF987058E99D8B479F0318E47314C49173E8838C5BAC',
+      name: 'Quicksilver Liquid Staked ATOM',
+      display: 'qatom',
+      symbol: 'qATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'uqatom',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-522'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qatom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qatom.svg'
+      }
+    },
+    {
+      description: 'Quicksilver Liquid Staked REGEN',
+      denom_units: [
+        {
+          denom:
+            'ibc/79A676508A2ECA1021EDDC7BB9CF70CEEC9514C478DA526A5A8B3E78506C2206',
+          exponent: 0,
+          aliases: ['uqregen']
+        },
+        {
+          denom: 'qregen',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/79A676508A2ECA1021EDDC7BB9CF70CEEC9514C478DA526A5A8B3E78506C2206',
+      name: 'Quicksilver Liquid Staked Regen',
+      display: 'qregen',
+      symbol: 'qREGEN',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'uqregen',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-522'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qregen.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qregen.svg'
+      }
+    },
+    {
+      description: 'Quicksilver Liquid Staked OSMO',
+      denom_units: [
+        {
+          denom:
+            'ibc/42D24879D4569CE6477B7E88206ADBFE47C222C6CAD51A54083E4A72594269FC',
+          exponent: 0,
+          aliases: ['uqosmo']
+        },
+        {
+          denom: 'qosmo',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/42D24879D4569CE6477B7E88206ADBFE47C222C6CAD51A54083E4A72594269FC',
+      name: 'Quicksilver Liquid Staked OSMO',
+      display: 'qosmo',
+      symbol: 'qOSMO',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'uqosmo',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-522'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qosmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qosmo.svg'
+      }
+    },
+    {
       description: 'REBUS, the native coin of the Rebus chain.',
       denom_units: [
         {
@@ -4900,6 +5407,7 @@ const asset_list: AssetList = {
       display: 'regen',
       symbol: 'REGEN',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png'
       },
       coingecko_id: 'regen',
@@ -4909,6 +5417,39 @@ const asset_list: AssetList = {
           counterparty: {
             channel_id: 'channel-1',
             base_denom: 'uregen',
+            chain_name: 'regen'
+          },
+          chain: {
+            channel_id: 'channel-8'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Nature Carbon Ton (NCT) is a carbon token standard backed 1:1 by carbon credits issued by Verra, a global leader in the voluntary carbon market. NCT credits on Regen Network have been tokenized by Toucan.earth.',
+      denom_units: [
+        {
+          denom:
+            'ibc/A76EB6ECF4E3E2D4A23C526FD1B48FDD42F171B206C9D2758EF778A7826ADD68',
+          exponent: 6,
+          aliases: ['eco.uC.NCT']
+        }
+      ],
+      base: 'ibc/A76EB6ECF4E3E2D4A23C526FD1B48FDD42F171B206C9D2758EF778A7826ADD68',
+      name: 'Nature Carbon Ton',
+      display: 'NCT',
+      symbol: 'NCT',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'eco.uC.NCT',
             chain_name: 'regen'
           },
           chain: {
@@ -5010,6 +5551,7 @@ const asset_list: AssetList = {
       display: 'dvpn',
       symbol: 'DVPN',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png'
       },
       coingecko_id: 'sentinel',
@@ -5023,6 +5565,44 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-2'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native token of Shareledger',
+      denom_units: [
+        {
+          denom:
+            'ibc/1F3AB31A66CC0FBE149859D55D0D2D7167B851A113786438EA6E201033600C8E',
+          exponent: 0,
+          aliases: ['nshr']
+        },
+        {
+          denom: 'shr',
+          exponent: 9
+        }
+      ],
+      base: 'ibc/1F3AB31A66CC0FBE149859D55D0D2D7167B851A113786438EA6E201033600C8E',
+      name: 'Shareledger',
+      display: 'shr',
+      symbol: 'SHR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/token.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/token.svg'
+      },
+      coingecko_id: 'shareledger',
+      keywords: ['id'],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'nshr',
+            chain_name: 'shareledger'
+          },
+          chain: {
+            channel_id: 'channel-647'
           }
         }
       ]
@@ -5046,6 +5626,7 @@ const asset_list: AssetList = {
       display: 'ctk',
       symbol: 'CTK',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png'
       },
       coingecko_id: 'certik',
@@ -5163,6 +5744,7 @@ const asset_list: AssetList = {
       display: 'stars',
       symbol: 'STARS',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png'
       },
       coingecko_id: 'stargaze',
@@ -5434,15 +6016,17 @@ const asset_list: AssetList = {
     {
       denom_units: [
         {
-          denom: 'staevmos',
-          exponent: 0
+          denom:
+            'ibc/C5579A9595790017C600DD726276D978B9BF314CF82406CE342720A9C7911A01',
+          exponent: 0,
+          aliases: ['staevmos']
         },
         {
           denom: 'stevmos',
           exponent: 18
         }
       ],
-      base: 'ibc/DCD3224DF1FAC41A2EE9E7B629EE30C772CD29BF13613EB51350E6AD166B6BDC',
+      base: 'ibc/C5579A9595790017C600DD726276D978B9BF314CF82406CE342720A9C7911A01',
       name: 'stEVMOS',
       display: 'stevmos',
       symbol: 'stEVMOS',
@@ -6490,6 +7074,7 @@ const asset_list: AssetList = {
       display: 'luna',
       symbol: 'LUNA',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png'
       },
       coingecko_id: 'terra-luna-2',
@@ -6563,6 +7148,7 @@ const asset_list: AssetList = {
       display: 'umee',
       symbol: 'UMEE',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png'
       },
       coingecko_id: 'umee',
@@ -6599,6 +7185,7 @@ const asset_list: AssetList = {
       display: 'FUND',
       symbol: 'FUND',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png'
       },
       coingecko_id: 'unification',
@@ -6943,6 +7530,7 @@ const asset_list: AssetList = {
       display: 'raw',
       symbol: 'RAW',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.png'
       },
       coingecko_id: 'junoswap-raw-dao',
@@ -7650,6 +8238,7 @@ const asset_list: AssetList = {
       display: 'hopers',
       symbol: 'HOPERS',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.png'
       },
       coingecko_id: 'hopers-io ',
@@ -7835,6 +8424,225 @@ const asset_list: AssetList = {
             channel_id: 'channel-47',
             base_denom:
               'cw20:juno1qmlchtmjpvu0cr7u0tad2pq8838h6farrrjzp39eqa9xswg7teussrswlq',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Signal Art and Gaming on Juno',
+      type_asset: 'cw20',
+      address:
+        'juno14lycavan8gvpjn97aapzvwmsj8kyrvf644p05r0hu79namyj3ens87650k',
+      denom_units: [
+        {
+          denom:
+            'ibc/4BDADBEDA31899036AB286E9901116496A9D85FB87B35A408C9D67C0DCAC660A',
+          exponent: 0,
+          aliases: [
+            'cw20:juno14lycavan8gvpjn97aapzvwmsj8kyrvf644p05r0hu79namyj3ens87650k'
+          ]
+        },
+        {
+          denom: 'sgnl',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/4BDADBEDA31899036AB286E9901116496A9D85FB87B35A408C9D67C0DCAC660A',
+      name: 'Signal',
+      display: 'sgnl',
+      symbol: 'SGNL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sgnl.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno14lycavan8gvpjn97aapzvwmsj8kyrvf644p05r0hu79namyj3ens87650k',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Governance and utility token for the Junø Apes NFT platform on Juno',
+      type_asset: 'cw20',
+      address:
+        'juno1zkwveux7y6fmsr88atf3cyffx96p0c96qr8tgcsj7vfnhx7sal3s3zu3ps',
+      denom_units: [
+        {
+          denom:
+            'ibc/176DD560277BB0BD676260BE02EBAB697725CA85144D8A2BF286C6B5323DB5FE',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1zkwveux7y6fmsr88atf3cyffx96p0c96qr8tgcsj7vfnhx7sal3s3zu3ps'
+          ]
+        },
+        {
+          denom: 'jape',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/176DD560277BB0BD676260BE02EBAB697725CA85144D8A2BF286C6B5323DB5FE',
+      name: 'Junø Apes',
+      display: 'jape',
+      symbol: 'JAPE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/jape.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1zkwveux7y6fmsr88atf3cyffx96p0c96qr8tgcsj7vfnhx7sal3s3zu3ps',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'A community meme token with a fantasy fiction storyline and comic based NFTs on Juno',
+      type_asset: 'cw20',
+      address:
+        'juno12wxyvtqe76x2a5jj6ckp2hfq8v32m6rvyyxwwufl2tksqvkt7whqczv6pa',
+      denom_units: [
+        {
+          denom:
+            'ibc/758A759BD24DD768B66FE3C8087AEF21B337B45FB7B359D2E9624B21507C1B82',
+          exponent: 0,
+          aliases: [
+            'cw20:juno12wxyvtqe76x2a5jj6ckp2hfq8v32m6rvyyxwwufl2tksqvkt7whqczv6pa'
+          ]
+        },
+        {
+          denom: 'catom',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/758A759BD24DD768B66FE3C8087AEF21B337B45FB7B359D2E9624B21507C1B82',
+      name: 'Catom',
+      display: 'catom',
+      symbol: 'CATOM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/catom.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno12wxyvtqe76x2a5jj6ckp2hfq8v32m6rvyyxwwufl2tksqvkt7whqczv6pa',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Utility token of Howl.social, an on chain micro-blogging platform on Juno',
+      type_asset: 'cw20',
+      address:
+        'juno1g0wuyu2f49ncf94r65278puxzclf5arse9f3kvffxyv4se4vgdmsk4dvqz',
+      denom_units: [
+        {
+          denom:
+            'ibc/36FBE58A4C388A53F3A19CA0AD8A7955C2AFC19C14E56767732ADE5CFA75BEC7',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1g0wuyu2f49ncf94r65278puxzclf5arse9f3kvffxyv4se4vgdmsk4dvqz'
+          ]
+        },
+        {
+          denom: 'howl',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/36FBE58A4C388A53F3A19CA0AD8A7955C2AFC19C14E56767732ADE5CFA75BEC7',
+      name: 'Howl',
+      display: 'howl',
+      symbol: 'HOWL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/howl.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1g0wuyu2f49ncf94r65278puxzclf5arse9f3kvffxyv4se4vgdmsk4dvqz',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Inspired by Bonk. A community project to celebrate the settlers of JunoNetwork.',
+      type_asset: 'cw20',
+      address:
+        'juno1u8cr3hcjvfkzxcaacv9q75uw9hwjmn8pucc93pmy6yvkzz79kh3qncca8x',
+      denom_units: [
+        {
+          denom:
+            'ibc/4F24D904BAB5FFBD3524F2DE3EC3C7A9E687A2408D9A985E57B356D9FA9201C6',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1u8cr3hcjvfkzxcaacv9q75uw9hwjmn8pucc93pmy6yvkzz79kh3qncca8x'
+          ]
+        },
+        {
+          denom: 'fox',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/4F24D904BAB5FFBD3524F2DE3EC3C7A9E687A2408D9A985E57B356D9FA9201C6',
+      name: 'Juno Fox',
+      display: 'fox',
+      symbol: 'FOX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/fox.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1u8cr3hcjvfkzxcaacv9q75uw9hwjmn8pucc93pmy6yvkzz79kh3qncca8x',
             chain_name: 'juno'
           },
           chain: {

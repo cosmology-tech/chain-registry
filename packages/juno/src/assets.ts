@@ -199,6 +199,7 @@ const assets: AssetList = {
       display: 'raw',
       symbol: 'RAW',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.png'
       },
       coingecko_id: 'junoswap-raw-dao'
@@ -602,6 +603,7 @@ const assets: AssetList = {
       display: 'hopers',
       symbol: 'HOPERS',
       logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.png'
       },
       coingecko_id: 'hopers-io '
@@ -726,6 +728,130 @@ const assets: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/nride.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/nride.png'
+      }
+    },
+    {
+      description: 'Signal Art and Gaming on Juno',
+      type_asset: 'cw20',
+      address:
+        'juno14lycavan8gvpjn97aapzvwmsj8kyrvf644p05r0hu79namyj3ens87650k',
+      denom_units: [
+        {
+          denom:
+            'cw20:juno14lycavan8gvpjn97aapzvwmsj8kyrvf644p05r0hu79namyj3ens87650k',
+          exponent: 0
+        },
+        {
+          denom: 'sgnl',
+          exponent: 6
+        }
+      ],
+      base: 'cw20:juno14lycavan8gvpjn97aapzvwmsj8kyrvf644p05r0hu79namyj3ens87650k',
+      name: 'Signal',
+      display: 'sgnl',
+      symbol: 'SGNL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sgnl.png'
+      }
+    },
+    {
+      description:
+        'Governance and utility token for the Junø Apes NFT platform on Juno',
+      type_asset: 'cw20',
+      address:
+        'juno1zkwveux7y6fmsr88atf3cyffx96p0c96qr8tgcsj7vfnhx7sal3s3zu3ps',
+      denom_units: [
+        {
+          denom:
+            'cw20:juno1zkwveux7y6fmsr88atf3cyffx96p0c96qr8tgcsj7vfnhx7sal3s3zu3ps',
+          exponent: 0
+        },
+        {
+          denom: 'jape',
+          exponent: 6
+        }
+      ],
+      base: 'cw20:juno1zkwveux7y6fmsr88atf3cyffx96p0c96qr8tgcsj7vfnhx7sal3s3zu3ps',
+      name: 'Junø Apes',
+      display: 'jape',
+      symbol: 'JAPE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/jape.png'
+      }
+    },
+    {
+      description:
+        'A community meme token with a fantasy fiction storyline and comic based NFTs on Juno',
+      type_asset: 'cw20',
+      address:
+        'juno12wxyvtqe76x2a5jj6ckp2hfq8v32m6rvyyxwwufl2tksqvkt7whqczv6pa',
+      denom_units: [
+        {
+          denom:
+            'cw20:juno12wxyvtqe76x2a5jj6ckp2hfq8v32m6rvyyxwwufl2tksqvkt7whqczv6pa',
+          exponent: 0
+        },
+        {
+          denom: 'catom',
+          exponent: 6
+        }
+      ],
+      base: 'cw20:juno12wxyvtqe76x2a5jj6ckp2hfq8v32m6rvyyxwwufl2tksqvkt7whqczv6pa',
+      name: 'Catom',
+      display: 'catom',
+      symbol: 'CATOM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/catom.png'
+      }
+    },
+    {
+      description:
+        'Utility token of Howl.social, an on chain micro-blogging platform on Juno',
+      type_asset: 'cw20',
+      address:
+        'juno1g0wuyu2f49ncf94r65278puxzclf5arse9f3kvffxyv4se4vgdmsk4dvqz',
+      denom_units: [
+        {
+          denom:
+            'cw20:juno1g0wuyu2f49ncf94r65278puxzclf5arse9f3kvffxyv4se4vgdmsk4dvqz',
+          exponent: 0
+        },
+        {
+          denom: 'howl',
+          exponent: 6
+        }
+      ],
+      base: 'cw20:juno1g0wuyu2f49ncf94r65278puxzclf5arse9f3kvffxyv4se4vgdmsk4dvqz',
+      name: 'Howl',
+      display: 'howl',
+      symbol: 'HOWL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/howl.png'
+      }
+    },
+    {
+      description:
+        'Inspired by Bonk. A community project to celebrate the settlers of JunoNetwork.',
+      type_asset: 'cw20',
+      address:
+        'juno1u8cr3hcjvfkzxcaacv9q75uw9hwjmn8pucc93pmy6yvkzz79kh3qncca8x',
+      denom_units: [
+        {
+          denom:
+            'cw20:juno1u8cr3hcjvfkzxcaacv9q75uw9hwjmn8pucc93pmy6yvkzz79kh3qncca8x',
+          exponent: 0
+        },
+        {
+          denom: 'fox',
+          exponent: 6
+        }
+      ],
+      base: 'cw20:juno1u8cr3hcjvfkzxcaacv9q75uw9hwjmn8pucc93pmy6yvkzz79kh3qncca8x',
+      name: 'Juno Fox',
+      display: 'fox',
+      symbol: 'FOX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/fox.png'
       }
     },
     {

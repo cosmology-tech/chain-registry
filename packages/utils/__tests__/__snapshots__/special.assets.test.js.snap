@@ -100,6 +100,7 @@ exports[`getAssetLists 1`] = `
         "display": "cro",
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg",
         },
         "name": "Cronos",
         "symbol": "CRO",
@@ -157,7 +158,6 @@ exports[`getAssetLists 1`] = `
       },
       {
         "base": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
-        "coingecko_id": "pstake-finance",
         "denom_units": [
           {
             "aliases": [
@@ -721,6 +721,120 @@ exports[`getAssetLists 1`] = `
         ],
       },
       {
+        "base": "ibc/011CB9FC5DF2FEFDD1750593B998E84B6F8863505CBC64ADDA87A132644E49DD",
+        "denom_units": [
+          {
+            "aliases": [
+              "uqatom",
+            ],
+            "denom": "ibc/011CB9FC5DF2FEFDD1750593B998E84B6F8863505CBC64ADDA87A132644E49DD",
+            "exponent": 0,
+          },
+          {
+            "aliases": [],
+            "denom": "qatom",
+            "exponent": 6,
+          },
+        ],
+        "description": "Quicksilver Liquid Staked ATOM",
+        "display": "qatom",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qatom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qatom.svg",
+        },
+        "name": "Quicksilver Liquid Staked ATOM",
+        "symbol": "qATOM",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-69",
+            },
+            "counterparty": {
+              "base_denom": "uqatom",
+              "chain_name": "quicksilver",
+              "channel_id": "channel-8",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/62A1ADECD4E38EFCA83AD5AF1F1938C9FD9FF125C29C73E27DF4AB84C4FA15C1",
+        "denom_units": [
+          {
+            "aliases": [
+              "uqregen",
+            ],
+            "denom": "ibc/62A1ADECD4E38EFCA83AD5AF1F1938C9FD9FF125C29C73E27DF4AB84C4FA15C1",
+            "exponent": 0,
+          },
+          {
+            "aliases": [],
+            "denom": "qregen",
+            "exponent": 6,
+          },
+        ],
+        "description": "Quicksilver Liquid Staked REGEN",
+        "display": "qregen",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qregen.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qregen.svg",
+        },
+        "name": "Quicksilver Liquid Staked Regen",
+        "symbol": "qREGEN",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-69",
+            },
+            "counterparty": {
+              "base_denom": "uqregen",
+              "chain_name": "quicksilver",
+              "channel_id": "channel-8",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/7194EE871B193666BFE00665172B496651EDE29B252AD53817F348186F52B2A8",
+        "denom_units": [
+          {
+            "aliases": [
+              "uqosmo",
+            ],
+            "denom": "ibc/7194EE871B193666BFE00665172B496651EDE29B252AD53817F348186F52B2A8",
+            "exponent": 0,
+          },
+          {
+            "aliases": [],
+            "denom": "qosmo",
+            "exponent": 6,
+          },
+        ],
+        "description": "Quicksilver Liquid Staked OSMO",
+        "display": "qosmo",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qosmo.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qosmo.svg",
+        },
+        "name": "Quicksilver Liquid Staked OSMO",
+        "symbol": "qOSMO",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-69",
+            },
+            "counterparty": {
+              "base_denom": "uqosmo",
+              "chain_name": "quicksilver",
+              "channel_id": "channel-8",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
         "base": "ibc/7D053E5CF515235C2C8A923840D6D5352F19B08722B774355AC97C596C729D5C",
         "coingecko_id": "regen",
         "denom_units": [
@@ -740,6 +854,7 @@ exports[`getAssetLists 1`] = `
         "display": "regen",
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg",
         },
         "name": "Regen Network",
         "symbol": "REGEN",
@@ -750,6 +865,39 @@ exports[`getAssetLists 1`] = `
             },
             "counterparty": {
               "base_denom": "uregen",
+              "chain_name": "regen",
+              "channel_id": "channel-14",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/7175DE4BF0BA4019D7187298E60CCB37A84006AEA8194D0471B2870813969D1F",
+        "denom_units": [
+          {
+            "aliases": [
+              "eco.uC.NCT",
+            ],
+            "denom": "ibc/7175DE4BF0BA4019D7187298E60CCB37A84006AEA8194D0471B2870813969D1F",
+            "exponent": 6,
+          },
+        ],
+        "description": "Nature Carbon Ton (NCT) is a carbon token standard backed 1:1 by carbon credits issued by Verra, a global leader in the voluntary carbon market. NCT credits on Regen Network have been tokenized by Toucan.earth.",
+        "display": "NCT",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.svg",
+        },
+        "name": "Nature Carbon Ton",
+        "symbol": "NCT",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-21",
+            },
+            "counterparty": {
+              "base_denom": "eco.uC.NCT",
               "chain_name": "regen",
               "channel_id": "channel-14",
             },
@@ -777,6 +925,7 @@ exports[`getAssetLists 1`] = `
         "display": "dvpn",
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg",
         },
         "name": "Sentinel",
         "symbol": "DVPN",
@@ -1090,10 +1239,13 @@ exports[`getAssetLists 1`] = `
         ],
       },
       {
-        "base": "ibc/3B2F3DB04187EEAC84A308D96B6C45929CA99638DF17A066E8E66F732713BBB7",
+        "base": "ibc/844664855C3703A00253D80466629C68AE2AAE799B2CC6515A0874219F24DC3F",
         "denom_units": [
           {
-            "denom": "staevmos",
+            "aliases": [
+              "staevmos",
+            ],
+            "denom": "ibc/844664855C3703A00253D80466629C68AE2AAE799B2CC6515A0874219F24DC3F",
             "exponent": 0,
           },
           {
