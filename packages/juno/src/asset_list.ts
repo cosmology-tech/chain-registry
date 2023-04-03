@@ -2188,7 +2188,8 @@ const asset_list: AssetList = {
       display: 'Whale',
       symbol: 'WHALE',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/whitewhale.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.png',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.svg'
       },
       coingecko_id: '',
       traces: [
