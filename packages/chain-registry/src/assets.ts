@@ -3954,19 +3954,19 @@ const assets: AssetList[] = [
             exponent: 0
           },
           {
-            denom: 'cmba',
+            denom: 'chimba',
             exponent: 6
           }
         ],
         base: 'ucmba',
         name: 'Chimba',
-        display: 'cmba',
+        display: 'chimba',
         symbol: 'CMBA',
         logo_URIs: {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.svg'
         },
-        coingecko_id: 'chimba-token'
+        coingecko_id: ''
       }
     ]
   },
@@ -6535,6 +6535,54 @@ const assets: AssetList[] = [
         }
       },
       {
+        description: 'Osmo Pepe',
+        type_asset: 'cw20',
+        address:
+          'juno1zqrj3ta4u7ylv0wqzd8t8q3jrr9rdmn43zuzp9zemeunecnhy8fss778g7',
+        denom_units: [
+          {
+            denom:
+              'cw20:juno1zqrj3ta4u7ylv0wqzd8t8q3jrr9rdmn43zuzp9zemeunecnhy8fss778g7',
+            exponent: 0
+          },
+          {
+            denom: 'pepe',
+            exponent: 6
+          }
+        ],
+        base: 'cw20:juno1zqrj3ta4u7ylv0wqzd8t8q3jrr9rdmn43zuzp9zemeunecnhy8fss778g7',
+        name: 'Osmo Pepe',
+        display: 'pepe',
+        symbol: 'PEPE',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/pepe.png'
+        }
+      },
+      {
+        description: 'Catmos',
+        type_asset: 'cw20',
+        address:
+          'juno1f5datjdse3mdgrapwuzs3prl7pvxxht48ns6calnn0t77v2s9l8s0qu488',
+        denom_units: [
+          {
+            denom:
+              'cw20:juno1f5datjdse3mdgrapwuzs3prl7pvxxht48ns6calnn0t77v2s9l8s0qu488',
+            exponent: 0
+          },
+          {
+            denom: 'catmos',
+            exponent: 6
+          }
+        ],
+        base: 'cw20:juno1f5datjdse3mdgrapwuzs3prl7pvxxht48ns6calnn0t77v2s9l8s0qu488',
+        name: 'Catmos',
+        display: 'catmos',
+        symbol: 'CATMOS',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/catmos.png'
+        }
+      },
+      {
         description: 'The native token cw20 for Neta on Juno Chain',
         type_asset: 'cw20',
         address:
@@ -7356,6 +7404,43 @@ const assets: AssetList[] = [
         }
       },
       {
+        description: 'ATOM token on Noble',
+        denom_units: [
+          {
+            denom:
+              'ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0',
+            exponent: 0
+          },
+          {
+            denom: 'atom',
+            exponent: 6,
+            aliases: ['ATOM']
+          }
+        ],
+        type_asset: 'ics20',
+        base: 'ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0',
+        name: 'Atom Staking Coin',
+        display: 'atom',
+        symbol: 'ATOM',
+        traces: [
+          {
+            type: 'ibc',
+            counterparty: {
+              chain_name: 'cosmoshub',
+              base_denom: 'uatom',
+              channel_id: 'channel-536'
+            },
+            chain: {
+              channel_id: 'channel-4',
+              path: 'transfer/channel-4/uatom'
+            }
+          }
+        ],
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png'
+        }
+      },
+      {
         description: 'USD Coin',
         denom_units: [
           {
@@ -7627,7 +7712,8 @@ const assets: AssetList[] = [
         display: 'flix',
         symbol: 'FLIX',
         logo_URIs: {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg'
         },
         coingecko_id: 'omniflix-network'
       }
@@ -14911,6 +14997,34 @@ const assets: AssetList[] = [
     ]
   },
   {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'chimba',
+    assets: [
+      {
+        description: 'The first blokchain in colombia',
+        denom_units: [
+          {
+            denom: 'ucmba',
+            exponent: 0
+          },
+          {
+            denom: 'chimba',
+            exponent: 6
+          }
+        ],
+        base: 'ucmba',
+        name: 'Chimba',
+        display: 'chimba',
+        symbol: 'CMBA',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.svg'
+        },
+        coingecko_id: ''
+      }
+    ]
+  },
+  {
     $schema: '../../assetlist.schema.json',
     chain_name: 'coolcattestnet',
     assets: [
@@ -15123,6 +15237,35 @@ const assets: AssetList[] = [
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/evmostestnet/images/evmos.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/evmostestnet/images/evmos.svg'
         }
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_name: 'fetchhubtestnet',
+    assets: [
+      {
+        description:
+          'The native staking and governance token of the Fetch Hub.',
+        denom_units: [
+          {
+            denom: 'atestfet',
+            exponent: 0
+          },
+          {
+            denom: 'testfet',
+            exponent: 18
+          }
+        ],
+        base: 'atestfet',
+        name: 'fetch-ai',
+        display: 'fet',
+        symbol: 'FET',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.svg'
+        },
+        coingecko_id: 'fetch-ai'
       }
     ]
   },
@@ -15512,6 +15655,33 @@ const assets: AssetList[] = [
     ]
   },
   {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'migalootestnet',
+    assets: [
+      {
+        description: 'The native token of Migaloo Chain',
+        denom_units: [
+          {
+            denom: 'uwhale',
+            exponent: 0
+          },
+          {
+            denom: 'whale',
+            exponent: 6
+          }
+        ],
+        base: 'uwhale',
+        name: 'Whale',
+        display: 'whale',
+        symbol: 'WHALE',
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.png'
+        }
+      }
+    ]
+  },
+  {
     $schema: '../../assetlist.schema.json',
     chain_name: 'neutrontestnet',
     assets: [
@@ -15582,6 +15752,34 @@ const assets: AssetList[] = [
     ]
   },
   {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'noistestnet',
+    assets: [
+      {
+        description: 'The native token of Nois',
+        denom_units: [
+          {
+            denom: 'unois',
+            exponent: 0
+          },
+          {
+            denom: 'nois',
+            exponent: 6
+          }
+        ],
+        base: 'unois',
+        name: 'Nois',
+        display: 'nois',
+        symbol: 'NOIS',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.svg'
+        },
+        keywords: ['nois', 'randomness', 'drand', 'wasm']
+      }
+    ]
+  },
+  {
     $schema: '../../assetlist.schema.json',
     chain_name: 'nolustestnet',
     assets: [
@@ -15611,6 +15809,59 @@ const assets: AssetList[] = [
   {
     $schema: '../../assetlist.schema.json',
     chain_name: 'osmosistestnet',
+    assets: [
+      {
+        description: 'The native token of Osmosis',
+        denom_units: [
+          {
+            denom: 'uosmo',
+            exponent: 0,
+            aliases: []
+          },
+          {
+            denom: 'osmo',
+            exponent: 6,
+            aliases: []
+          }
+        ],
+        base: 'uosmo',
+        name: 'Osmosis',
+        display: 'osmo',
+        symbol: 'OSMO',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+        },
+        coingecko_id: 'osmosis',
+        keywords: ['dex', 'staking']
+      },
+      {
+        denom_units: [
+          {
+            denom: 'uion',
+            exponent: 0
+          },
+          {
+            denom: 'ion',
+            exponent: 6
+          }
+        ],
+        base: 'uion',
+        name: 'Ion',
+        display: 'ion',
+        symbol: 'ION',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
+        },
+        coingecko_id: 'ion',
+        keywords: ['memecoin']
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_name: 'osmosistestnet5',
     assets: [
       {
         description: 'The native token of Osmosis',

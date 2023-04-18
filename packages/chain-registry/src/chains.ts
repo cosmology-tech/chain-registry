@@ -1654,13 +1654,13 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/axelarnetwork/axelar-core',
-      recommended_version: 'v0.29.0',
-      compatible_versions: ['v0.29.0'],
+      recommended_version: 'v0.33.0',
+      compatible_versions: ['v0.33.0'],
       binaries: {
         'linux/amd64':
-          'https://github.com/axelarnetwork/axelar-core/releases/download/v0.29.0/axelard-linux-amd64-v0.29.0',
+          'https://github.com/axelarnetwork/axelar-core/releases/download/v0.33.0/axelard-linux-amd64-v0.33.0',
         'darwin/amd64':
-          'https://github.com/axelarnetwork/axelar-core/releases/download/v0.29.0/axelard-darwin-amd64-v0.29.0'
+          'https://github.com/axelarnetwork/axelar-core/releases/download/v0.33.0/axelard-darwin-amd64-v0.33.0'
       },
       genesis: {
         genesis_url:
@@ -1668,14 +1668,14 @@ const chains: Chain[] = [
       },
       versions: [
         {
-          name: 'v0.29.0',
-          recommended_version: 'v0.29.0',
-          compatible_versions: ['v0.29.0'],
+          name: 'v0.33.0',
+          recommended_version: 'v0.33.0',
+          compatible_versions: ['v0.33.0'],
           binaries: {
             'linux/amd64':
-              'https://github.com/axelarnetwork/axelar-core/releases/download/v0.29.0/axelard-linux-amd64-v0.29.0',
+              'https://github.com/axelarnetwork/axelar-core/releases/download/v0.33.0/axelard-linux-amd64-v0.33.0',
             'darwin/amd64':
-              'https://github.com/axelarnetwork/axelar-core/releases/download/v0.29.0/axelard-darwin-amd64-v0.29.0'
+              'https://github.com/axelarnetwork/axelar-core/releases/download/v0.33.0/axelard-darwin-amd64-v0.33.0'
           }
         }
       ]
@@ -1789,10 +1789,6 @@ const chains: Chain[] = [
           provider: 'RockawayX Infra'
         },
         {
-          address: 'https://axelar.rpc.interchain.ivaldilabs.xyz',
-          provider: 'ivaldilabs'
-        },
-        {
           address: 'https://axelar-rpc.ibs.team',
           provider: 'Inter Blockchain Services'
         }
@@ -1851,10 +1847,6 @@ const chains: Chain[] = [
           provider: 'QuantNode'
         },
         {
-          address: 'https://axelar.rest.interchain.ivaldilabs.xyz',
-          provider: 'ivaldilabs'
-        },
-        {
           address: 'https://axelar-api.ibs.team',
           provider: 'Inter Blockchain Services'
         }
@@ -1887,10 +1879,6 @@ const chains: Chain[] = [
         {
           address: 'axelar-mainnet-grpc.autostake.com:443',
           provider: 'AutoStake 🛡️ Slash Protected'
-        },
-        {
-          address: 'axelar.grpc.interchain.ivaldilabs.xyz:443',
-          provider: 'ivaldilabs'
         }
       ]
     },
@@ -12717,6 +12705,14 @@ const chains: Chain[] = [
           low_gas_price: 0.01,
           average_gas_price: 0.025,
           high_gas_price: 0.03
+        },
+        {
+          denom:
+            'ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0,
+          average_gas_price: 0.002,
+          high_gas_price: 0.003
         }
       ]
     },
@@ -13698,7 +13694,10 @@ const chains: Chain[] = [
       fee_tokens: [
         {
           denom: 'uflix',
-          fixed_min_gas_price: 0
+          fixed_min_gas_price: 0,
+          low_gas_price: 0.001,
+          average_gas_price: 0.0025,
+          high_gas_price: 0.025
         }
       ]
     },
@@ -13781,6 +13780,10 @@ const chains: Chain[] = [
         {
           address: 'https://omniflix.kingnodes.com',
           provider: 'kingnodes'
+        },
+        {
+          address: 'http://omniflix.api.staking-explorer.com',
+          provider: 'omniflix.staking-explorer.com'
         }
       ],
       grpc: [
@@ -14134,8 +14137,8 @@ const chains: Chain[] = [
       fee_tokens: [
         {
           denom: 'uosmo',
-          fixed_min_gas_price: 0,
-          low_gas_price: 0,
+          fixed_min_gas_price: 0.0025,
+          low_gas_price: 0.0025,
           average_gas_price: 0.025,
           high_gas_price: 0.04
         }
@@ -15687,6 +15690,10 @@ const chains: Chain[] = [
         }
       ]
     },
+    logo_URIs: {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.svg'
+    },
     peers: {
       seeds: [
         {
@@ -15940,6 +15947,14 @@ const chains: Chain[] = [
         {
           address: 'https://quicksilver.rpc.kjnodes.com',
           provider: 'kjnodes'
+        },
+        {
+          address: 'https://rpc-quicksilver.architectnodes.com',
+          provider: 'Architect Nodes'
+        },
+        {
+          address: 'https://quicksilver-rpc.punq.info',
+          provider: 'punq'
         }
       ],
       rest: [
@@ -15962,6 +15977,14 @@ const chains: Chain[] = [
         {
           address: 'https://quicksilver.api.kjnodes.com',
           provider: 'kjnodes'
+        },
+        {
+          address: 'https://rest-quicksilver.architectnodes.com',
+          provider: 'Architect Nodes'
+        },
+        {
+          address: 'https://quicksilver-api.punq.info',
+          provider: 'punq'
         }
       ],
       grpc: [
@@ -15980,6 +16003,10 @@ const chains: Chain[] = [
         {
           address: 'quicksilver.grpc.kjnodes.com:11090',
           provider: 'kjnodes'
+        },
+        {
+          address: 'grpc-quicksilver.architectnodes.com:1443',
+          provider: 'Architect Nodes'
         }
       ]
     },
@@ -19469,12 +19496,19 @@ const chains: Chain[] = [
     fees: {
       fee_tokens: [
         {
-          denom: 'uconst'
+          denom: 'uconst',
+          low_gas_price: 0,
+          average_gas_price: 0.025,
+          high_gas_price: 0.05
         }
       ]
     },
     codebase: {
       git_repo: 'https://github.com/archway-network/archway'
+    },
+    logo_URIs: {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/archwaytestnet/images/ArchwayBrandmark.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/archwaytestnet/images/ArchwayBrandmark.svg'
     },
     apis: {
       rpc: [
@@ -19532,11 +19566,19 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
+          address: 'https://rpc-axelar-testnet.imperator.co:443',
+          provider: 'Imperator.co'
+        },
+        {
           address: 'https://axelartest-rpc.quickapi.com/',
           provider: 'Quickapi'
         }
       ],
       rest: [
+        {
+          address: 'https://lcd-axelar-testnet.imperator.co:443',
+          provider: 'Imperator.co'
+        },
         {
           address: 'https://axelartest-lcd.quickapi.com/',
           provider: 'Quickapi'
@@ -20055,6 +20097,76 @@ const chains: Chain[] = [
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.svg'
     }
+  },
+  {
+    $schema: '../chain.schema.json',
+    chain_name: 'chimba-testnet',
+    status: 'live',
+    network_type: 'testnet',
+    website: 'https://chimba.ooo/',
+    pretty_name: 'Chimba',
+    chain_id: 'chimba-testnet',
+    bech32_prefix: 'chimba',
+    daemon_name: 'chimbad',
+    node_home: '$HOME/.chimbad',
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'ucmba',
+          fixed_min_gas_price: 0.25,
+          low_gas_price: 1,
+          average_gas_price: 5,
+          high_gas_price: 10
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'chimba'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/ChimbaBlockchain/chimba',
+      recommended_version: 'v1.0.0',
+      compatible_versions: ['v1.0.0'],
+      genesis: {
+        genesis_url: 'https://rpc.testnet.chimbablockchain.io/genesis'
+      },
+      versions: [
+        {
+          name: 'v1.0.0',
+          recommended_version: 'v1.0.0',
+          compatible_versions: ['v1.0.0']
+        }
+      ]
+    },
+    peers: {
+      persistent_peers: []
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc.testnet.chimbablockchain.io',
+          provider: 'chimba'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://testnet.chimbablockchain.io',
+          provider: 'chimba'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'bigdipper',
+        url: 'https://explorer.testnet.chimba.ooo/',
+        tx_page: 'https://explorer.testnet.chimba.ooo/transactions/${txHash}'
+      }
+    ],
+    slip44: 118
   },
   {
     $schema: '../../chain.schema.json',
@@ -20898,6 +21010,106 @@ const chains: Chain[] = [
         kind: 'NodesGuru',
         url: 'https://testnet.evmos.explorers.guru/',
         tx_page: 'https://testnet.evmos.explorers.guru/transaction/${txHash}'
+      }
+    ]
+  },
+  {
+    $schema: '../../chain.schema.json',
+    chain_name: 'fetchhubtestnet',
+    status: 'live',
+    network_type: 'testnet',
+    pretty_name: 'Fetch.ai Testnet',
+    chain_id: 'dorado-1',
+    bech32_prefix: 'fetch',
+    daemon_name: 'fetchd',
+    node_home: '$HOME/.fetchd',
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'atestfet',
+          low_gas_price: 0.025,
+          average_gas_price: 0.025,
+          high_gas_price: 0.035
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'atestfet'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/fetchai/fetchd',
+      recommended_version: 'v0.10.5',
+      compatible_versions: ['v0.10.5'],
+      genesis: {
+        genesis_url:
+          'https://storage.googleapis.com/fetch-ai-testnet-genesis/genesis-dorado-827201.json'
+      },
+      versions: [
+        {
+          name: 'v0.10.5',
+          recommended_version: 'v0.10.5',
+          compatible_versions: ['v0.10.5']
+        }
+      ]
+    },
+    peers: {
+      seeds: [
+        {
+          id: 'eb9b9717975b49a57e62ea93aa4480e091ae0660',
+          address: 'connect-dorado.fetch.ai:36556',
+          provider: 'fetch.ai'
+        },
+        {
+          id: '46d2f86a255ece3daf244e2ca11d5be0f16cb633',
+          address: 'connect-dorado.fetch.ai:36557',
+          provider: 'fetch.ai'
+        },
+        {
+          id: '066fc564979b1f3173615f101b62448ac7e00eb1',
+          address: 'connect-dorado.fetch.ai:36558',
+          provider: 'fetch.ai'
+        }
+      ],
+      persistent_peers: []
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc-dorado.fetch.ai:443',
+          provider: 'fetch.ai'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://rest-dorado.fetch.ai',
+          provider: 'fetch.ai'
+        }
+      ],
+      grpc: [
+        {
+          address: 'grpc-dorado.fetch.ai:443',
+          provider: 'fetch.ai'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'bigdipper',
+        url: 'https://explore-dorado.fetch.ai',
+        tx_page: 'https://explore-dorado.fetch.ai/transactions/${txHash}'
+      },
+      {
+        kind: 'azoyalabs',
+        url: 'https://fetchstation.azoyalabs.com/testnet',
+        tx_page:
+          'https://fetchstation.azoyalabs.com/testnet/explorer/transactions/${txHash}',
+        account_page:
+          'https://fetchstation.azoyalabs.com/testnet/explorer/address/${accountAddress}'
       }
     ]
   },
@@ -22162,6 +22374,98 @@ const chains: Chain[] = [
     }
   },
   {
+    $schema: '../chain.schema.json',
+    chain_name: 'migalootestnet',
+    status: 'live',
+    network_type: 'testnet',
+    website: 'https://www.whitewhale.money/',
+    pretty_name: 'Migaloo Testnet',
+    chain_id: 'narwhal-1',
+    bech32_prefix: 'migaloo',
+    daemon_name: 'migalood',
+    node_home: '$HOME/.migalood',
+    key_algos: ['secp256k1'],
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'uwhale',
+          fixed_min_gas_price: 0.25,
+          low_gas_price: 0.25,
+          average_gas_price: 0.5,
+          high_gas_price: 0.75
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'uwhale'
+        }
+      ]
+    },
+    logo_URIs: {
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.svg',
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.png'
+    },
+    codebase: {
+      git_repo: 'https://github.com/White-Whale-Defi-Platform/migaloo-chain',
+      recommended_version: 'v2.0.0',
+      compatible_versions: ['v2.0.0'],
+      cosmos_sdk_version: '0.45',
+      consensus: {
+        type: 'tendermint',
+        version: '0.34'
+      },
+      cosmwasm_version: '0.28',
+      cosmwasm_enabled: true,
+      genesis: {
+        genesis_url:
+          'https://raw.githubusercontent.com/White-Whale-Defi-Platform/migaloo-chain/main/networks/mainnet/genesis.json'
+      },
+      versions: [
+        {
+          name: 'v2.0.0',
+          recommended_version: 'v2.0.0',
+          compatible_versions: ['v2.0.0'],
+          cosmos_sdk_version: '0.45',
+          consensus: {
+            type: 'tendermint',
+            version: '0.34'
+          },
+          cosmwasm_version: '0.28',
+          cosmwasm_enabled: true
+        }
+      ]
+    },
+    peers: {
+      seeds: [],
+      persistent_peers: []
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://migaloo-testnet-rpc.polkachu.com',
+          provider: 'Polkachu'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://migaloo-testnet-api.polkachu.com',
+          provider: 'Polkachu'
+        }
+      ],
+      grpc: []
+    },
+    explorers: [
+      {
+        kind: 'ping.pub',
+        url: 'https://testnet.ping.pub/narwhal',
+        tx_page: 'https://testnet.ping.pub/narwhal/tx/${txHash}'
+      }
+    ]
+  },
+  {
     $schema: '../../chain.schema.json',
     chain_name: 'neutrontestnet',
     status: 'live',
@@ -22420,6 +22724,136 @@ const chains: Chain[] = [
     ]
   },
   {
+    $schema: '../chain.schema.json',
+    chain_name: 'noistestnet',
+    status: 'live',
+    network_type: 'testnet',
+    website: 'https://nois.network',
+    pretty_name: 'Nois',
+    chain_id: 'nois-testnet-005',
+    bech32_prefix: 'nois',
+    daemon_name: 'noisd',
+    node_home: '$HOME/.noisd',
+    key_algos: ['secp256k1'],
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'unois',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0.05,
+          average_gas_price: 0.05,
+          high_gas_price: 0.1
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'unois'
+        }
+      ],
+      lock_duration: {
+        time: '1814400s'
+      }
+    },
+    codebase: {
+      git_repo: 'https://github.com/noislabs/noisd',
+      recommended_version: 'v1.0.1',
+      compatible_versions: ['v1.0.1'],
+      cosmos_sdk_version: '0.45',
+      consensus: {
+        type: 'tendermint',
+        version: '0.34'
+      },
+      cosmwasm_version: '0.30',
+      cosmwasm_enabled: true,
+      genesis: {
+        name: 'v1',
+        genesis_url:
+          'https://raw.githubusercontent.com/noislabs/networks/nois-testnet-005/nois-testnet-005/genesis.json'
+      },
+      versions: [
+        {
+          name: 'v1',
+          tag: 'v1.0.1',
+          height: 0,
+          recommended_version: 'v1.0.1',
+          compatible_versions: ['v1.0.1'],
+          cosmos_sdk_version: '0.45',
+          consensus: {
+            type: 'tendermint',
+            version: '0.34'
+          },
+          cosmwasm_version: '0.30',
+          cosmwasm_enabled: true
+        }
+      ]
+    },
+    images: [
+      {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
+        theme: {
+          primary_color_hex: '#0C0914'
+        }
+      }
+    ],
+    logo_URIs: {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png'
+    },
+    peers: {
+      seeds: [
+        {
+          id: 'da81dd66bca4bba509163dbd06b4a6b2e05c2e12',
+          address: 'nois-testnet-seed.itrocket.net:21656',
+          provider: 'itrocket'
+        },
+        {
+          id: 'bf07906c7cf0f23606c83be15624be2c67b3929c',
+          address: '139.59.154.47:17356',
+          provider: ''
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://nois-testnet-rpc.polkachu.com',
+          provider: 'Polkachu'
+        },
+        {
+          address: 'https://nois-testnet-rpc.itrocket.net:443',
+          provider: 'itrocket'
+        },
+        {
+          address: 'https://rpc.nois.mcbnode.online:443',
+          provider: 'mcbnode'
+        },
+        {
+          address: 'https://nois-testnet.rpc.kjnodes.com:443',
+          provider: 'kjnodes'
+        }
+      ],
+      grpc: [],
+      rest: [
+        {
+          address: 'https://api.nois.mcbnode.online',
+          provider: 'mcbnode'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'explorers.guru',
+        url: 'https://testnet.nois.explorers.guru',
+        tx_page: 'https://testnet.nois.explorers.guru/transaction/${txHash}',
+        account_page:
+          'https://testnet.nois.explorers.guru/account/${accountAddress}'
+      }
+    ],
+    keywords: ['nois', 'randomness', 'drand', 'wasm']
+  },
+  {
     $schema: '../../chain.schema.json',
     chain_name: 'nolustestnet',
     status: 'live',
@@ -22652,6 +23086,150 @@ const chains: Chain[] = [
     keywords: ['dex', 'testnet']
   },
   {
+    $schema: '../../chain.schema.json',
+    chain_name: 'osmosistestnet5',
+    status: 'live',
+    network_type: 'testnet',
+    pretty_name: 'Osmosis Testnet',
+    chain_id: 'osmo-test-5',
+    bech32_prefix: 'osmo',
+    daemon_name: 'osmosisd',
+    node_home: '$HOME/.osmosisd',
+    key_algos: ['secp256k1'],
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'uosmo',
+          fixed_min_gas_price: 0,
+          low_gas_price: 0,
+          average_gas_price: 0.025,
+          high_gas_price: 0.04
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'uosmo'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/osmosis-labs/osmosis',
+      recommended_version: 'v15.0.0',
+      compatible_versions: ['v15.0.0'],
+      cosmos_sdk_version: '0.45',
+      consensus: {
+        type: 'tendermint',
+        version: '0.34'
+      },
+      cosmwasm_version: '0.30',
+      cosmwasm_enabled: true,
+      genesis: {
+        genesis_url: 'https://genesis.osmotest5.osmosis.zone/genesis.json'
+      },
+      versions: [
+        {
+          name: 'v14.0.0-rc1',
+          recommended_version: 'v14.0.0-rc1',
+          compatible_versions: ['v14.0.0-rc1'],
+          cosmos_sdk_version: '0.45',
+          consensus: {
+            type: 'tendermint',
+            version: '0.34'
+          },
+          cosmwasm_version: '0.29',
+          cosmwasm_enabled: true
+        },
+        {
+          name: 'v15.0.0-rc3',
+          recommended_version: 'v15.0.0-rc3',
+          compatible_versions: ['v15.0.0-rc3'],
+          cosmos_sdk_version: '0.45',
+          consensus: {
+            type: 'tendermint',
+            version: '0.34'
+          },
+          cosmwasm_version: '0.29',
+          cosmwasm_enabled: true
+        },
+        {
+          name: 'v15.0.0',
+          recommended_version: 'v15.0.0',
+          compatible_versions: ['v15.0.0-rc3'],
+          cosmos_sdk_version: '0.45',
+          consensus: {
+            type: 'tendermint',
+            version: '0.34'
+          },
+          cosmwasm_version: '0.30',
+          cosmwasm_enabled: true
+        }
+      ]
+    },
+    peers: {
+      seeds: [
+        {
+          id: 'bb197876fd952d245ef6377e3651c157e3d7ed81',
+          address: '157.245.26.231:26656',
+          provider: ''
+        },
+        {
+          id: '7c2b9e76be5c2142c76b429d9c29e902599ceb44',
+          address: '157.245.21.183:26656',
+          provider: ''
+        }
+      ],
+      persistent_peers: [
+        {
+          id: '51084fccec1c309a415e89d39e6f0881c49493ed',
+          address: '95.217.144.107:12556',
+          provider: ''
+        },
+        {
+          id: 'a5c34bdd777dd418ff7152a8646fd2f31f53f8a5',
+          address: '46.232.248.117:2000',
+          provider: ''
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc.osmotest5.osmosis.zone/',
+          provider: 'Osmosis'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://lcd.osmotest5.osmosis.zone/',
+          provider: 'Osmosis'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://grpc.osmotest5.osmosis.zone/',
+          provider: 'Osmosis'
+        }
+      ]
+    },
+    logo_URIs: {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
+    },
+    explorers: [
+      {
+        kind: 'ping.pub',
+        url: 'https://explorer.osmotest5.osmosis.zone',
+        tx_page:
+          'https://explorer.osmotest5.osmosis.zone/osmo-test-5/tx/${txHash}',
+        account_page:
+          'https://explorer.osmotest5.osmosis.zone/osmo-test-5/account/${accountAddress}'
+      }
+    ],
+    keywords: ['dex', 'testnet']
+  },
+  {
     $schema: '../chain.schema.json',
     chain_name: 'persistencetestnet',
     chain_id: 'test-core-1',
@@ -22849,6 +23427,10 @@ const chains: Chain[] = [
           cosmwasm_enabled: true
         }
       ]
+    },
+    logo_URIs: {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.svg'
     },
     peers: {
       seeds: [
@@ -23793,7 +24375,7 @@ const chains: Chain[] = [
     status: 'live',
     network_type: 'testnet',
     website: 'https://stargaze.zone/',
-    pretty_name: 'Stargaze',
+    pretty_name: 'Stargaze Testnet',
     chain_id: 'elgafar-1',
     bech32_prefix: 'stars',
     daemon_name: 'starsd',

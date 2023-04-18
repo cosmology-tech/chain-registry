@@ -2185,12 +2185,12 @@ const asset_list: AssetList = {
       ],
       base: 'ibc/3A6ADE78FB8169C034C29C4F2E1A61CE596EC8235366F22381D981A98F1F5A5C',
       name: 'Whale',
-      display: 'Whale',
+      display: 'whale',
       symbol: 'WHALE',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/whitewhale.png'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.png'
       },
-      coingecko_id: '',
       traces: [
         {
           type: 'ibc',
@@ -2201,6 +2201,302 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-210'
+          }
+        }
+      ]
+    },
+    {
+      description: 'ampWHALE',
+      denom_units: [
+        {
+          denom:
+            'ibc/2F7C2A3D5D42553ED46F57D8B0DE3733B1B5FF571E2C6A051D34525904B4C0AF',
+          exponent: 0,
+          aliases: [
+            'factory/migaloo1436kxs0w2es6xlqpp9rd35e3d0cjnw4sv8j3a7483sgks29jqwgshqdky4/ampWHALE'
+          ]
+        },
+        {
+          denom: 'ampWHALE',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/2F7C2A3D5D42553ED46F57D8B0DE3733B1B5FF571E2C6A051D34525904B4C0AF',
+      name: 'ampWHALE',
+      display: 'ampWHALE',
+      symbol: 'ampWHALE',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ampWhale.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'factory/migaloo1436kxs0w2es6xlqpp9rd35e3d0cjnw4sv8j3a7483sgks29jqwgshqdky4/ampWHALE',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-210'
+          }
+        }
+      ]
+    },
+    {
+      description: 'boneWHALE',
+      denom_units: [
+        {
+          denom:
+            'ibc/01BAE2E69D02670B22758FBA74E4114B6E88FC1878936C919DA345E6C6C92ABF',
+          exponent: 0,
+          aliases: [
+            'factory/migaloo1mf6ptkssddfmxvhdx0ech0k03ktp6kf9yk59renau2gvht3nq2gqdhts4u/boneWhale'
+          ]
+        },
+        {
+          denom: 'boneWHALE',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/01BAE2E69D02670B22758FBA74E4114B6E88FC1878936C919DA345E6C6C92ABF',
+      name: 'boneWHALE',
+      display: 'boneWHALE',
+      symbol: 'bWHALE',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'factory/migaloo1mf6ptkssddfmxvhdx0ech0k03ktp6kf9yk59renau2gvht3nq2gqdhts4u/boneWhale',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-210'
+          }
+        }
+      ]
+    },
+    {
+      description: 'FABLE',
+      denom_units: [
+        {
+          denom:
+            'ibc/935315FB6394554CEB9AA671A4E79C49DC8C6207C3AEE283C9241A2C89CF9853',
+          exponent: 0,
+          aliases: [
+            'factory/migaloo18a9m9stu3dyvewwcq9qmp85euxqcvln5mefync/fable'
+          ]
+        },
+        {
+          denom: 'fable',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/935315FB6394554CEB9AA671A4E79C49DC8C6207C3AEE283C9241A2C89CF9853',
+      name: 'FABLE',
+      display: 'fable',
+      symbol: 'FABLE',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/fable.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'factory/migaloo18a9m9stu3dyvewwcq9qmp85euxqcvln5mefync/fable',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-210'
+          }
+        }
+      ]
+    },
+    {
+      description: 'boneLUNA are autocompounding LUNA tokens',
+      denom_units: [
+        {
+          denom:
+            'ibc/1475E38A6C1F650746B735885F8DD75A69F1CD1439334E3237543C19B75B0A4E',
+          exponent: 0,
+          aliases: [
+            'ibc/40C29143BF4153B365089E40E437B7AA819672646C45BB0A5F1E10915A0B6708'
+          ]
+        },
+        {
+          denom: 'bluna',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/1475E38A6C1F650746B735885F8DD75A69F1CD1439334E3237543C19B75B0A4E',
+      address:
+        'cw20:terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml',
+      type_asset: 'ics20',
+      name: 'boneLuna',
+      display: 'bluna',
+      symbol: 'bLUNA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'ibc/40C29143BF4153B365089E40E437B7AA819672646C45BB0A5F1E10915A0B6708',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-210'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/boneluna.png'
+      }
+    },
+    {
+      description: 'The permissioned staking asset for Noble Chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/C3EF76D8F7E3217A058F9A6308DF5B99A8A425FB85983D91FFE910C5FA94B1A1',
+          exponent: 0,
+          aliases: ['ustake']
+        },
+        {
+          denom: 'stake',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/C3EF76D8F7E3217A058F9A6308DF5B99A8A425FB85983D91FFE910C5FA94B1A1',
+      name: 'Stake',
+      display: 'stake',
+      symbol: 'STAKE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'ustake',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-224'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Frienzies are an IBC token redeemable exclusively for a physical asset issued by the Noble entity.',
+      denom_units: [
+        {
+          denom:
+            'ibc/C09F4DA2D82F7710AAE230CEFAA2AA3CA8E246AE3D9A00A3969F3D6CEB6C952B',
+          exponent: 0,
+          aliases: ['ufrienzies']
+        },
+        {
+          denom: 'frienzies',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/C09F4DA2D82F7710AAE230CEFAA2AA3CA8E246AE3D9A00A3969F3D6CEB6C952B',
+      display: 'frienzies',
+      name: 'Frienzies',
+      symbol: 'FRNZ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'ufrienzies',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-224'
+          }
+        }
+      ]
+    },
+    {
+      description: 'USD Coin',
+      denom_units: [
+        {
+          denom:
+            'ibc/4A482FA914A4B9B05801ED81C33713899F322B24F76A06F4B8FE872485EA22FF',
+          exponent: 0,
+          aliases: ['uusdc']
+        },
+        {
+          denom: 'usdc',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/4A482FA914A4B9B05801ED81C33713899F322B24F76A06F4B8FE872485EA22FF',
+      display: 'usdc',
+      name: 'USD Coin',
+      symbol: 'USDC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'uusdc',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-224'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native token of Nois',
+      denom_units: [
+        {
+          denom:
+            'ibc/1D9E14A1F00613ED39E4B8A8763A20C9BE5B5EA0198F2FE47EAE43CD91A0137B',
+          exponent: 0,
+          aliases: ['unois']
+        },
+        {
+          denom: 'nois',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/1D9E14A1F00613ED39E4B8A8763A20C9BE5B5EA0198F2FE47EAE43CD91A0137B',
+      name: 'Nois',
+      display: 'nois',
+      symbol: 'NOIS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.svg'
+      },
+      keywords: ['nois', 'randomness', 'drand', 'wasm'],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'unois',
+            chain_name: 'nois'
+          },
+          chain: {
+            channel_id: 'channel-225'
           }
         }
       ]
@@ -2757,6 +3053,41 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stluna.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stluna.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/7E4A6EEFA0425CF99DE169A586D9BADF39C40153194CD6784BF8C9F6123BF5D0',
+          exponent: 0,
+          aliases: ['stinj']
+        },
+        {
+          denom: 'stINJ',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/7E4A6EEFA0425CF99DE169A586D9BADF39C40153194CD6784BF8C9F6123BF5D0',
+      name: 'stINJ',
+      display: 'stINJ',
+      symbol: 'stINJ',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-24',
+            base_denom: 'stinj',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-139'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stinj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stinj.svg'
       }
     },
     {

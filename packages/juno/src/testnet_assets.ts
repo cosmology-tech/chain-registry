@@ -18,7 +18,7 @@ const testnet_assets: AssetList = {
       base: 'ujunox',
       name: 'Juno Testnet',
       display: 'junox',
-      symbol: 'JUNO',
+      symbol: 'JUNOX',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'

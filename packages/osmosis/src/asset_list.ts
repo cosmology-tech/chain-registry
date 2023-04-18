@@ -1968,6 +1968,38 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'The liquid staking token of Bostrom',
+      denom_units: [
+        {
+          denom:
+            'ibc/4F3B0EC2FE2D370D10C3671A1B7B06D2A964C721470C305CBB846ED60E6CAA20',
+          exponent: 0,
+          aliases: ['hydrogen']
+        }
+      ],
+      base: 'ibc/4F3B0EC2FE2D370D10C3671A1B7B06D2A964C721470C305CBB846ED60E6CAA20',
+      name: 'Bostrom Hydrogen',
+      display: 'hydrogen',
+      symbol: 'HYDROGEN',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'hydrogen',
+            chain_name: 'bostrom'
+          },
+          chain: {
+            channel_id: 'channel-95'
+          }
+        }
+      ]
+    },
+    {
       description:
         'Canto is a Layer-1 blockchain built to deliver on the promise of DeFi',
       denom_units: [
@@ -4277,6 +4309,44 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'ampKUJI',
+      denom_units: [
+        {
+          denom:
+            'ibc/E7F2113AFAE9EFA752E5587BA3B29384D47F154DEA1EF9573B3D4D533D74E688',
+          exponent: 0,
+          aliases: [
+            'factory/kujira1n3fr5f56r2ce0s37wdvwrk98yhhq3unnxgcqus8nzsfxvllk0yxquurqty/ampKUJI'
+          ]
+        },
+        {
+          denom: 'ampKUJI',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/E7F2113AFAE9EFA752E5587BA3B29384D47F154DEA1EF9573B3D4D533D74E688',
+      name: 'ampKUJI',
+      display: 'ampKUJI',
+      symbol: 'ampKUJI',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/ampKUJI.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'factory/kujira1n3fr5f56r2ce0s37wdvwrk98yhhq3unnxgcqus8nzsfxvllk0yxquurqty/ampKUJI',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-259'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Lambda',
       denom_units: [
         {
@@ -4370,7 +4440,8 @@ const asset_list: AssetList = {
       display: 'lumen',
       symbol: 'LUMEN',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.svg'
       },
       traces: [
         {
@@ -4587,12 +4658,12 @@ const asset_list: AssetList = {
       ],
       base: 'ibc/EDD6F0D66BCD49C1084FB2C35353B4ACD7B9191117CE63671B61320548F7C89D',
       name: 'Whale',
-      display: 'Whale',
+      display: 'whale',
       symbol: 'WHALE',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/whitewhale.png'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.png'
       },
-      coingecko_id: '',
       traces: [
         {
           type: 'ibc',
@@ -4603,6 +4674,265 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-642'
+          }
+        }
+      ]
+    },
+    {
+      description: 'ampWHALE',
+      denom_units: [
+        {
+          denom:
+            'ibc/834D0AEF380E2A490E4209DFF2785B8DBB7703118C144AC373699525C65B4223',
+          exponent: 0,
+          aliases: [
+            'factory/migaloo1436kxs0w2es6xlqpp9rd35e3d0cjnw4sv8j3a7483sgks29jqwgshqdky4/ampWHALE'
+          ]
+        },
+        {
+          denom: 'ampWHALE',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/834D0AEF380E2A490E4209DFF2785B8DBB7703118C144AC373699525C65B4223',
+      name: 'ampWHALE',
+      display: 'ampWHALE',
+      symbol: 'ampWHALE',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ampWhale.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom:
+              'factory/migaloo1436kxs0w2es6xlqpp9rd35e3d0cjnw4sv8j3a7483sgks29jqwgshqdky4/ampWHALE',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-642'
+          }
+        }
+      ]
+    },
+    {
+      description: 'boneWHALE',
+      denom_units: [
+        {
+          denom:
+            'ibc/917C4B1E92EE2F959FC11ECFC435C4048F97E8B00F9444592706F4604F24BF25',
+          exponent: 0,
+          aliases: [
+            'factory/migaloo1mf6ptkssddfmxvhdx0ech0k03ktp6kf9yk59renau2gvht3nq2gqdhts4u/boneWhale'
+          ]
+        },
+        {
+          denom: 'boneWHALE',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/917C4B1E92EE2F959FC11ECFC435C4048F97E8B00F9444592706F4604F24BF25',
+      name: 'boneWHALE',
+      display: 'boneWHALE',
+      symbol: 'bWHALE',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom:
+              'factory/migaloo1mf6ptkssddfmxvhdx0ech0k03ktp6kf9yk59renau2gvht3nq2gqdhts4u/boneWhale',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-642'
+          }
+        }
+      ]
+    },
+    {
+      description: 'FABLE',
+      denom_units: [
+        {
+          denom:
+            'ibc/A37859A04007157B7FE3DC60BA32B7AC9CE7921988D32C087A52DFC98DF74C21',
+          exponent: 0,
+          aliases: [
+            'factory/migaloo18a9m9stu3dyvewwcq9qmp85euxqcvln5mefync/fable'
+          ]
+        },
+        {
+          denom: 'fable',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/A37859A04007157B7FE3DC60BA32B7AC9CE7921988D32C087A52DFC98DF74C21',
+      name: 'FABLE',
+      display: 'fable',
+      symbol: 'FABLE',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/fable.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom:
+              'factory/migaloo18a9m9stu3dyvewwcq9qmp85euxqcvln5mefync/fable',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-642'
+          }
+        }
+      ]
+    },
+    {
+      description: 'boneLUNA are autocompounding LUNA tokens',
+      denom_units: [
+        {
+          denom:
+            'ibc/97403599362E2D52C2DC980E90F886930299A66199BAAAA62C585CBCE1CEA90D',
+          exponent: 0,
+          aliases: [
+            'ibc/40C29143BF4153B365089E40E437B7AA819672646C45BB0A5F1E10915A0B6708'
+          ]
+        },
+        {
+          denom: 'bluna',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/97403599362E2D52C2DC980E90F886930299A66199BAAAA62C585CBCE1CEA90D',
+      address:
+        'cw20:terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml',
+      type_asset: 'ics20',
+      name: 'boneLuna',
+      display: 'bluna',
+      symbol: 'bLUNA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom:
+              'ibc/40C29143BF4153B365089E40E437B7AA819672646C45BB0A5F1E10915A0B6708',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-642'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/boneluna.png'
+      }
+    },
+    {
+      description: 'The permissioned staking asset for Noble Chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/B36FA1449007D770F373A0806EC5A907CC2D7DC11AE73FA8AFF76C5903A4F9B0',
+          exponent: 0,
+          aliases: ['ustake']
+        },
+        {
+          denom: 'stake',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/B36FA1449007D770F373A0806EC5A907CC2D7DC11AE73FA8AFF76C5903A4F9B0',
+      name: 'Stake',
+      display: 'stake',
+      symbol: 'STAKE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'ustake',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-750'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Frienzies are an IBC token redeemable exclusively for a physical asset issued by the Noble entity.',
+      denom_units: [
+        {
+          denom:
+            'ibc/7FA7EC64490E3BDE5A1A28CBE73CC0AD22522794957BC891C46321E3A6074DB9',
+          exponent: 0,
+          aliases: ['ufrienzies']
+        },
+        {
+          denom: 'frienzies',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/7FA7EC64490E3BDE5A1A28CBE73CC0AD22522794957BC891C46321E3A6074DB9',
+      display: 'frienzies',
+      name: 'Frienzies',
+      symbol: 'FRNZ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'ufrienzies',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-750'
+          }
+        }
+      ]
+    },
+    {
+      description: 'USD Coin',
+      denom_units: [
+        {
+          denom:
+            'ibc/498A0751C798A0D9A389AA3691123DADA57DAA4FE165D5C75894505B876BA6E4',
+          exponent: 0,
+          aliases: ['uusdc']
+        },
+        {
+          denom: 'usdc',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/498A0751C798A0D9A389AA3691123DADA57DAA4FE165D5C75894505B876BA6E4',
+      display: 'usdc',
+      name: 'USD Coin',
+      symbol: 'USDC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'uusdc',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-750'
           }
         }
       ]
@@ -4739,6 +5069,7 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png'
       },
       keywords: ['dex', 'stablecoin', 'bridge', 'staking'],
+      coingecko_id: 'onomy-protocol',
       traces: [
         {
           type: 'ibc',
@@ -5041,6 +5372,10 @@ const asset_list: AssetList = {
       name: 'Quasar',
       display: 'qsr',
       symbol: 'QSR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.svg'
+      },
       traces: [
         {
           type: 'ibc',
@@ -5432,18 +5767,23 @@ const asset_list: AssetList = {
         {
           denom:
             'ibc/A76EB6ECF4E3E2D4A23C526FD1B48FDD42F171B206C9D2758EF778A7826ADD68',
-          exponent: 6,
+          exponent: 0,
           aliases: ['eco.uC.NCT']
+        },
+        {
+          denom: 'nct',
+          exponent: 6
         }
       ],
       base: 'ibc/A76EB6ECF4E3E2D4A23C526FD1B48FDD42F171B206C9D2758EF778A7826ADD68',
       name: 'Nature Carbon Ton',
-      display: 'NCT',
+      display: 'nct',
       symbol: 'NCT',
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.png'
       },
+      coingecko_id: 'toucan-protocol-nature-carbon-tonne',
       traces: [
         {
           type: 'ibc',
@@ -6011,6 +6351,41 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stluna.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stluna.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/C04DFC9BCD893E57F2BEFE40F63EFD18D2768514DBD5F63ABD2FF7F48FC01D36',
+          exponent: 0,
+          aliases: ['stinj']
+        },
+        {
+          denom: 'stINJ',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/C04DFC9BCD893E57F2BEFE40F63EFD18D2768514DBD5F63ABD2FF7F48FC01D36',
+      name: 'stINJ',
+      display: 'stINJ',
+      symbol: 'stINJ',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'stinj',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-326'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stinj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stinj.svg'
       }
     },
     {
@@ -8653,6 +9028,787 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'Evmos Guardians governance token.',
+      type_asset: 'cw20',
+      address:
+        'juno1xekkh27punj0uxruv3gvuydyt856fax0nu750xns99t2qcxp7xmsqwhfma',
+      denom_units: [
+        {
+          denom:
+            'ibc/BAC9C6998F1F5C316D3353622EAEDAF8BD00FAABEB374FECDF8C9BC475172CFA',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1xekkh27punj0uxruv3gvuydyt856fax0nu750xns99t2qcxp7xmsqwhfma'
+          ]
+        },
+        {
+          denom: 'grdn',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/BAC9C6998F1F5C316D3353622EAEDAF8BD00FAABEB374FECDF8C9BC475172CFA',
+      name: 'Guardian',
+      display: 'grdn',
+      symbol: 'GRDN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/guardian.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1xekkh27punj0uxruv3gvuydyt856fax0nu750xns99t2qcxp7xmsqwhfma',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Mini Punks Token',
+      type_asset: 'cw20',
+      address:
+        'juno166heaxlyntd33a5euh4rrz26svhean4klzw594esmd02l4atan6sazy2my',
+      denom_units: [
+        {
+          denom:
+            'ibc/DC0D3303BBE739E073224D0314385B88B247F56D71D726A91414CCA244FFFE7E',
+          exponent: 0,
+          aliases: [
+            'cw20:juno166heaxlyntd33a5euh4rrz26svhean4klzw594esmd02l4atan6sazy2my'
+          ]
+        },
+        {
+          denom: 'mnpu',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/DC0D3303BBE739E073224D0314385B88B247F56D71D726A91414CCA244FFFE7E',
+      name: 'Mini Punks',
+      display: 'mnpu',
+      symbol: 'MNPU',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/mnpu.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/mnpu.svg'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno166heaxlyntd33a5euh4rrz26svhean4klzw594esmd02l4atan6sazy2my',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Kleomedes Token',
+      type_asset: 'cw20',
+      address:
+        'juno10gthz5ufgrpuk5cscve2f0hjp56wgp90psqxcrqlg4m9mcu9dh8q4864xy',
+      denom_units: [
+        {
+          denom:
+            'ibc/5F5B7DA5ECC80F6C7A8702D525BB0B74279B1F7B8EFAE36E423D68788F7F39FF',
+          exponent: 0,
+          aliases: [
+            'cw20:juno10gthz5ufgrpuk5cscve2f0hjp56wgp90psqxcrqlg4m9mcu9dh8q4864xy'
+          ]
+        },
+        {
+          denom: 'kleo',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/5F5B7DA5ECC80F6C7A8702D525BB0B74279B1F7B8EFAE36E423D68788F7F39FF',
+      name: 'Kleomedes',
+      display: 'kleo',
+      symbol: 'KLEO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/kleomedes.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno10gthz5ufgrpuk5cscve2f0hjp56wgp90psqxcrqlg4m9mcu9dh8q4864xy',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Sikoba Governance Token',
+      type_asset: 'cw20',
+      address:
+        'juno1qqwf3lkfjhp77yja7gmg3y95pda0e5xctqrdhf3wvwdd79flagvqfgrgxp',
+      denom_units: [
+        {
+          denom:
+            'ibc/71066B030D8FC6479E638580E1BA9C44925E8C1F6E45036669D22017CFDC8C5E',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1qqwf3lkfjhp77yja7gmg3y95pda0e5xctqrdhf3wvwdd79flagvqfgrgxp'
+          ]
+        },
+        {
+          denom: 'sikoba',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/71066B030D8FC6479E638580E1BA9C44925E8C1F6E45036669D22017CFDC8C5E',
+      name: 'Sikoba Token',
+      display: 'sikoba',
+      symbol: 'SKOJ',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sikoba.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sikoba.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1qqwf3lkfjhp77yja7gmg3y95pda0e5xctqrdhf3wvwdd79flagvqfgrgxp',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Shiba Cosmos',
+      type_asset: 'cw20',
+      address:
+        'juno1x5qt47rw84c4k6xvvywtrd40p8gxjt8wnmlahlqg07qevah3f8lqwxfs7z',
+      denom_units: [
+        {
+          denom:
+            'ibc/447A0DCE83691056289503DDAB8EB08E52E167A73629F2ACC59F056B92F51CE8',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1x5qt47rw84c4k6xvvywtrd40p8gxjt8wnmlahlqg07qevah3f8lqwxfs7z'
+          ]
+        },
+        {
+          denom: 'shibac',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/447A0DCE83691056289503DDAB8EB08E52E167A73629F2ACC59F056B92F51CE8',
+      name: 'ShibaCosmos',
+      display: 'shibac',
+      symbol: 'SHIBAC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/shibacosmos.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1x5qt47rw84c4k6xvvywtrd40p8gxjt8wnmlahlqg07qevah3f8lqwxfs7z',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Celestims',
+      type_asset: 'cw20',
+      address:
+        'juno1ngww7zxak55fql42wmyqrr4rhzpne24hhs4p3w4cwhcdgqgr3hxsmzl9zg',
+      denom_units: [
+        {
+          denom:
+            'ibc/0E4FA664327BD40B32803EE84A77F145834C0281B7F82B65521333B3669FA0BA',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1ngww7zxak55fql42wmyqrr4rhzpne24hhs4p3w4cwhcdgqgr3hxsmzl9zg'
+          ]
+        },
+        {
+          denom: 'clst',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/0E4FA664327BD40B32803EE84A77F145834C0281B7F82B65521333B3669FA0BA',
+      name: 'Celestims',
+      display: 'clst',
+      symbol: 'CLST',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/celestims.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1ngww7zxak55fql42wmyqrr4rhzpne24hhs4p3w4cwhcdgqgr3hxsmzl9zg',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'A revolutionary DAO created to bring clean drinking water to men, women, and children worldwide. We hope you join us on our journey!',
+      type_asset: 'cw20',
+      address:
+        'juno1m4h8q4p305wgy7vkux0w6e5ylhqll3s6pmadhxkhqtuwd5wlxhxs8xklsw',
+      denom_units: [
+        {
+          denom:
+            'ibc/AABCB14ACAFD53A5C455BAC01EA0CA5AE18714895846681A52BFF1E3B960B44E',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1m4h8q4p305wgy7vkux0w6e5ylhqll3s6pmadhxkhqtuwd5wlxhxs8xklsw'
+          ]
+        },
+        {
+          denom: 'watr',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/AABCB14ACAFD53A5C455BAC01EA0CA5AE18714895846681A52BFF1E3B960B44E',
+      name: 'WATR',
+      display: 'watr',
+      symbol: 'WATR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/watr.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1m4h8q4p305wgy7vkux0w6e5ylhqll3s6pmadhxkhqtuwd5wlxhxs8xklsw',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'An innovative DAO dedicated to housing the most vulnerable',
+      type_asset: 'cw20',
+      address:
+        'juno1ju8k8sqwsqu5k6umrypmtyqu2wqcpnrkf4w4mntvl0javt4nma7s8lzgss',
+      denom_units: [
+        {
+          denom:
+            'ibc/2F5C084037D951B24D100F15CC013A131DF786DCE1B1DBDC48F018A9B9A138DE',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1ju8k8sqwsqu5k6umrypmtyqu2wqcpnrkf4w4mntvl0javt4nma7s8lzgss'
+          ]
+        },
+        {
+          denom: 'casa',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/2F5C084037D951B24D100F15CC013A131DF786DCE1B1DBDC48F018A9B9A138DE',
+      name: 'Casa',
+      display: 'casa',
+      symbol: 'CASA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/casa.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1ju8k8sqwsqu5k6umrypmtyqu2wqcpnrkf4w4mntvl0javt4nma7s8lzgss',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Social Impact DAO providing showers, meals, and vehicles to the homeless',
+      type_asset: 'cw20',
+      address:
+        'juno1j4ux0f6gt7e82z7jdpm25v4g2gts880ap64rdwa49989wzhd0dfqed6vqm',
+      denom_units: [
+        {
+          denom:
+            'ibc/56B988C4D934FB7503F5EA9B440C75D489C8AD5D193715B477BEC4F84B8BBA2A',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1j4ux0f6gt7e82z7jdpm25v4g2gts880ap64rdwa49989wzhd0dfqed6vqm'
+          ]
+        },
+        {
+          denom: 'summit',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/56B988C4D934FB7503F5EA9B440C75D489C8AD5D193715B477BEC4F84B8BBA2A',
+      name: 'Summit',
+      display: 'summit',
+      symbol: 'SUMMIT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/summit.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1j4ux0f6gt7e82z7jdpm25v4g2gts880ap64rdwa49989wzhd0dfqed6vqm',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Social Impact DAO dedicated to combatting food insecurity and malnutrition',
+      type_asset: 'cw20',
+      address:
+        'juno13ca2g36ng6etcfhr9qxx352uw2n5e92np54thfkm3w3nzlhsgvwsjaqlyq',
+      denom_units: [
+        {
+          denom:
+            'ibc/980A2748F37C938AD129B92A51E2ABA8CFFC6862ADD61EC1B291125535DBE30B',
+          exponent: 0,
+          aliases: [
+            'cw20:juno13ca2g36ng6etcfhr9qxx352uw2n5e92np54thfkm3w3nzlhsgvwsjaqlyq'
+          ]
+        },
+        {
+          denom: 'manna',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/980A2748F37C938AD129B92A51E2ABA8CFFC6862ADD61EC1B291125535DBE30B',
+      name: 'Manna',
+      display: 'manna',
+      symbol: 'MANNA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/manna.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno13ca2g36ng6etcfhr9qxx352uw2n5e92np54thfkm3w3nzlhsgvwsjaqlyq',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Social Impact DAO focused on youth empowerment',
+      type_asset: 'cw20',
+      address:
+        'juno12etxwkxvms0uy9ak8g3pyq6a53myukufdnx82pakzmjmpm77a0ksr9gs5v',
+      denom_units: [
+        {
+          denom:
+            'ibc/06E7F44709AA82545D317E925310969F74A0923719CDBB32EFF6A47F4C0FD9AF',
+          exponent: 0,
+          aliases: [
+            'cw20:juno12etxwkxvms0uy9ak8g3pyq6a53myukufdnx82pakzmjmpm77a0ksr9gs5v'
+          ]
+        },
+        {
+          denom: 'empwr',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/06E7F44709AA82545D317E925310969F74A0923719CDBB32EFF6A47F4C0FD9AF',
+      name: 'EMPWR',
+      display: 'empwr',
+      symbol: 'EMPWR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/empwr.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno12etxwkxvms0uy9ak8g3pyq6a53myukufdnx82pakzmjmpm77a0ksr9gs5v',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Join us in fighting against world hunger',
+      type_asset: 'cw20',
+      address:
+        'juno1525fuspletvzykpgr2atxpymu9le4mghd7qq4a4u23uwqzc2f3fq7fmafd',
+      denom_units: [
+        {
+          denom:
+            'ibc/EBFD05900EF1A7EE934D4A8E754E49EF7B4EA339287FD671B0737CB059771087',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1525fuspletvzykpgr2atxpymu9le4mghd7qq4a4u23uwqzc2f3fq7fmafd'
+          ]
+        },
+        {
+          denom: 'middle',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/EBFD05900EF1A7EE934D4A8E754E49EF7B4EA339287FD671B0737CB059771087',
+      name: 'Middle',
+      display: 'middle',
+      symbol: 'MIDDLE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/middle.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1525fuspletvzykpgr2atxpymu9le4mghd7qq4a4u23uwqzc2f3fq7fmafd',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Social Impact DAO taking a wholistic approach to helping abused and mentally ill women and children',
+      type_asset: 'cw20',
+      address:
+        'juno17703kcxtsg37hryxnestejyyycuv5yyvnghp2e7w0kqvafnnyetsgzq62w',
+      denom_units: [
+        {
+          denom:
+            'ibc/D547E4A49B10339061E0BB6B35A939C5C6609595B520447FA0CAA6FBD63CEDC2',
+          exponent: 0,
+          aliases: [
+            'cw20:juno17703kcxtsg37hryxnestejyyycuv5yyvnghp2e7w0kqvafnnyetsgzq62w'
+          ]
+        },
+        {
+          denom: 'sunset',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/D547E4A49B10339061E0BB6B35A939C5C6609595B520447FA0CAA6FBD63CEDC2',
+      name: 'Sunset',
+      display: 'sunset',
+      symbol: 'SUNSET',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sunset.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno17703kcxtsg37hryxnestejyyycuv5yyvnghp2e7w0kqvafnnyetsgzq62w',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Social Impact DAO dedicated to helping restore and protect our environment',
+      type_asset: 'cw20',
+      address:
+        'juno1uu3rxu7w7fpfj4sl4xpxppgymk57mzdzn6kg7492jdxh5dwk7d2qq9429e',
+      denom_units: [
+        {
+          denom:
+            'ibc/1430C4E214AEDDF2DDA6A41E4FA33A51A60E1E0012293F0DCB1E2B66935E5994',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1uu3rxu7w7fpfj4sl4xpxppgymk57mzdzn6kg7492jdxh5dwk7d2qq9429e'
+          ]
+        },
+        {
+          denom: 'tree',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/1430C4E214AEDDF2DDA6A41E4FA33A51A60E1E0012293F0DCB1E2B66935E5994',
+      name: 'Living Tree',
+      display: 'tree',
+      symbol: 'TREE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/livingtree.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1uu3rxu7w7fpfj4sl4xpxppgymk57mzdzn6kg7492jdxh5dwk7d2qq9429e',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: "Evmos Guardians' Invaders DAO token.",
+      type_asset: 'cw20',
+      address:
+        'juno1jwdy7v4egw36pd84aeks3ww6n8k7zhsumd4ac8q5lts83ppxueus4626e8',
+      denom_units: [
+        {
+          denom:
+            'ibc/3DB1721541C94AD19D7735FECED74C227E13F925BDB814392980B40A19C1ED54',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1jwdy7v4egw36pd84aeks3ww6n8k7zhsumd4ac8q5lts83ppxueus4626e8'
+          ]
+        },
+        {
+          denom: 'invdrs',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/3DB1721541C94AD19D7735FECED74C227E13F925BDB814392980B40A19C1ED54',
+      name: 'Invaders',
+      display: 'invdrs',
+      symbol: 'INVDRS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/invdrs.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1jwdy7v4egw36pd84aeks3ww6n8k7zhsumd4ac8q5lts83ppxueus4626e8',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Apemos',
+      type_asset: 'cw20',
+      address:
+        'juno1jrr0tuuzxrrwcg6hgeqhw5wqpck2y55734e7zcrp745aardlp0qqg8jz06',
+      denom_units: [
+        {
+          denom:
+            'ibc/1EB03F13F29FEA73444586FC4E88A8C14ACE9291501E9658E3BEF951EA4AC85D',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1jrr0tuuzxrrwcg6hgeqhw5wqpck2y55734e7zcrp745aardlp0qqg8jz06'
+          ]
+        },
+        {
+          denom: 'apemos',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/1EB03F13F29FEA73444586FC4E88A8C14ACE9291501E9658E3BEF951EA4AC85D',
+      name: 'Apemos',
+      display: 'apemos',
+      symbol: 'APEMOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/apemos.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1jrr0tuuzxrrwcg6hgeqhw5wqpck2y55734e7zcrp745aardlp0qqg8jz06',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The First Doge on Osmosis',
+      type_asset: 'cw20',
+      address:
+        'juno1ytymtllllsp3hfmndvcp802p2xmy5s8m59ufel8xv9ahyxyfs4hs4kd4je',
+      denom_units: [
+        {
+          denom:
+            'ibc/8AEEA9B9304392070F72611076C0E328CE3F2DECA1E18557E36F9DB4F09C0156',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1ytymtllllsp3hfmndvcp802p2xmy5s8m59ufel8xv9ahyxyfs4hs4kd4je'
+          ]
+        },
+        {
+          denom: 'osdoge',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/8AEEA9B9304392070F72611076C0E328CE3F2DECA1E18557E36F9DB4F09C0156',
+      name: 'Osmosis Doge',
+      display: 'osdoge',
+      symbol: 'OSDOGE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/osdoge.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1ytymtllllsp3hfmndvcp802p2xmy5s8m59ufel8xv9ahyxyfs4hs4kd4je',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Doge Apr',
+      type_asset: 'cw20',
+      address:
+        'juno1k2ruzzvvwwtwny6gq6kcwyfhkzahaunp685wmz4hafplduekj98q9hgs6d',
+      denom_units: [
+        {
+          denom:
+            'ibc/04BE4E9C825ED781F9684A1226114BB49607500CAD855F1E3FEEC18532297250',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1k2ruzzvvwwtwny6gq6kcwyfhkzahaunp685wmz4hafplduekj98q9hgs6d'
+          ]
+        },
+        {
+          denom: 'doga',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/04BE4E9C825ED781F9684A1226114BB49607500CAD855F1E3FEEC18532297250',
+      name: 'Doge Apr',
+      display: 'doga',
+      symbol: 'DOGA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/doga.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1k2ruzzvvwwtwny6gq6kcwyfhkzahaunp685wmz4hafplduekj98q9hgs6d',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
       description: 'ELEVENPARIS loyalty token on KiChain',
       type_asset: 'cw20',
       address: 'ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy',
@@ -8753,6 +9909,45 @@ const asset_list: AssetList = {
       type_asset: 'snip20',
       address: 'secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d',
       base: 'ibc/71055835C7639739EAE03AACD1324FE162DBA41D09F197CB72D966D014225B1C',
+      name: 'Shade (old)',
+      display: 'shd',
+      symbol: 'SHD(old)',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shdold.svg'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-44',
+            base_denom: 'cw20:secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-476'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native token cw20 for Shade on Secret Network',
+      denom_units: [
+        {
+          denom:
+            'ibc/0B3D528E74E3DEAADF8A68F393887AC7E06028904D02173561B0D27F6E751D0A',
+          exponent: 0,
+          aliases: ['cw20:secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm']
+        },
+        {
+          denom: 'shd',
+          exponent: 8
+        }
+      ],
+      type_asset: 'snip25',
+      address: 'secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm',
+      base: 'ibc/0B3D528E74E3DEAADF8A68F393887AC7E06028904D02173561B0D27F6E751D0A',
       name: 'Shade',
       display: 'shd',
       symbol: 'SHD',
@@ -8767,7 +9962,7 @@ const asset_list: AssetList = {
           counterparty: {
             port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
             channel_id: 'channel-44',
-            base_denom: 'cw20:secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d',
+            base_denom: 'cw20:secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm',
             chain_name: 'secretnetwork'
           },
           chain: {
@@ -8975,6 +10170,138 @@ const asset_list: AssetList = {
             channel_id: 'channel-85',
             base_denom:
               'cw20:terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }
+      ]
+    },
+    {
+      description: 'ERIS liquid staked LUNA.',
+      type_asset: 'cw20',
+      address:
+        'terra1ecgazyd0waaj3g7l9cmy5gulhxkps2gmxu9ghducvuypjq68mq2s5lvsct',
+      denom_units: [
+        {
+          denom:
+            'ibc/0A37D33F8899D8A0AACC15AFF08172D9C0F7293DBCC059FF1CF914167BA31AB1',
+          exponent: 0,
+          aliases: [
+            'cw20:terra1ecgazyd0waaj3g7l9cmy5gulhxkps2gmxu9ghducvuypjq68mq2s5lvsct'
+          ]
+        },
+        {
+          denom: 'ampluna',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/0A37D33F8899D8A0AACC15AFF08172D9C0F7293DBCC059FF1CF914167BA31AB1',
+      name: 'ERIS Amplified LUNA',
+      display: 'ampluna',
+      symbol: 'ampLUNA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
+      },
+      coingecko_id: 'eris-amplified-luna',
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom:
+              'cw20:terra1ecgazyd0waaj3g7l9cmy5gulhxkps2gmxu9ghducvuypjq68mq2s5lvsct',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Lion DAO is a community DAO that lives on the Terra blockchain with the mission to reactivate the LUNAtic community and showcase Terra protocols & tooling',
+      type_asset: 'cw20',
+      address:
+        'terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv',
+      denom_units: [
+        {
+          denom:
+            'ibc/A5E2D0103694807198DEABB950B5C35862B2C37D2878B010023048472C6E1B3E',
+          exponent: 0,
+          aliases: [
+            'cw20:terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv'
+          ]
+        },
+        {
+          denom: 'roar',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/A5E2D0103694807198DEABB950B5C35862B2C37D2878B010023048472C6E1B3E',
+      name: 'Lion DAO',
+      display: 'roar',
+      symbol: 'ROAR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/roar.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom:
+              'cw20:terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'The GraveDigger is the Liquid Staking Product of BackBone Labs. It will have its own platform. Its liquid staking derivative (LSD) is boneLUNA.',
+      type_asset: 'cw20',
+      address:
+        'terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml',
+      denom_units: [
+        {
+          denom:
+            'ibc/14B25BDFFBE4A0584A82BF439C9FB93DE74054F931E162264B530EB994B590EF',
+          exponent: 0,
+          aliases: [
+            'cw20:terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml'
+          ]
+        },
+        {
+          denom: 'bluna',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/14B25BDFFBE4A0584A82BF439C9FB93DE74054F931E162264B530EB994B590EF',
+      name: 'boneLuna',
+      display: 'bluna',
+      symbol: 'bLUNA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/boneluna.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom:
+              'cw20:terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml',
             chain_name: 'terra2'
           },
           chain: {

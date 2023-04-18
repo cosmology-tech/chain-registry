@@ -32,15 +32,39 @@ const chain: Chain = {
   },
   codebase: {
     git_repo: 'https://github.com/CosmosContracts/juno',
-    recommended_version: 'v13.0.0',
-    compatible_versions: ['v13.0.0'],
+    recommended_version: 'v14.0.0',
+    compatible_versions: ['v14.0.0'],
     cosmos_sdk_version: '0.45',
-    tendermint_version: '0.34',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
     cosmwasm_version: '0.30',
     cosmwasm_enabled: true,
     genesis: {
       genesis_url: 'https://download.dimi.sh/juno-phoenix2-genesis.tar.gz'
-    }
+    },
+    versions: [
+      {
+        name: 'v13',
+        recommended_version: 'v13.0.0',
+        compatible_versions: ['v13.0.0'],
+        cosmos_sdk_version: '0.45',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        cosmwasm_version: '0.30',
+        cosmwasm_enabled: true,
+        next_version_name: 'v14'
+      },
+      {
+        name: 'v14',
+        height: 7875721,
+        recommended_version: 'v14.0.0',
+        compatible_versions: ['v14.0.0']
+      }
+    ]
   },
   peers: {
     seeds: [
@@ -165,7 +189,7 @@ const chain: Chain = {
         provider: 'BlockHunters 🎯'
       },
       {
-        address: 'https://rpc.juno.kingnodes.com',
+        address: 'https://juno.kingnodes.com',
         provider: 'kingnodes 👑'
       },
       {
@@ -195,6 +219,10 @@ const chain: Chain = {
       {
         address: 'https://juno-rpc.cosmosrescue.com',
         provider: 'cosmosrescue'
+      },
+      {
+        address: 'http://167.235.211.168:26657',
+        provider: 'CommunityStaking'
       }
     ],
     rest: [
@@ -243,7 +271,7 @@ const chain: Chain = {
         provider: 'BlockHunters 🎯'
       },
       {
-        address: 'https://api.juno.kingnodes.com',
+        address: 'https://juno.kingnodes.com',
         provider: 'kingnodes 👑'
       },
       {
@@ -269,6 +297,10 @@ const chain: Chain = {
       {
         address: 'https://juno-api.cosmosrescue.com',
         provider: 'cosmosrescue'
+      },
+      {
+        address: 'http://167.235.211.168:1317',
+        provider: 'CommunityStaking'
       }
     ],
     grpc: [
@@ -289,7 +321,7 @@ const chain: Chain = {
         provider: 'Stakin'
       },
       {
-        address: 'grpc.juno.kingnodes.com:443',
+        address: 'grpc-juno.kingnodes.com:443',
         provider: 'kingnodes 👑'
       },
       {
@@ -311,12 +343,16 @@ const chain: Chain = {
       {
         address: 'juno-grpc.cosmosrescue.com:9090',
         provider: 'cosmosrescue'
+      },
+      {
+        address: 'http://167.235.211.168:9091',
+        provider: 'CommunityStaking'
       }
     ]
   },
   explorers: [
     {
-      kind: 'EZStaking Tools',
+      kind: 'EZ Staking Tools',
       url: 'https://ezstaking.tools/juno',
       tx_page: 'https://ezstaking.tools/juno/txs/${txHash}',
       account_page: 'https://ezstaking.tools/juno/account/${accountAddress}'
