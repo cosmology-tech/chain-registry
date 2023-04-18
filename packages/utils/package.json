@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/utils",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "description": "Chain Registry Utils",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
