@@ -24,6 +24,10 @@ export interface BridgeTrace {
     counterparty: {
         chain_name: string;
         base_denom: string;
+        contract?: string;
+    };
+    chain?: {
+        contract: string;
     };
     provider: string;
 }
@@ -32,6 +36,7 @@ export interface WrapTrace {
     counterparty: {
         chain_name: string;
         base_denom: string;
+        contract?: string;
     };
     chain?: {
         contract: string;
