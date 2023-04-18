@@ -874,17 +874,22 @@ exports[`getAssetLists 1`] = `
       },
       {
         "base": "ibc/7175DE4BF0BA4019D7187298E60CCB37A84006AEA8194D0471B2870813969D1F",
+        "coingecko_id": "toucan-protocol-nature-carbon-tonne",
         "denom_units": [
           {
             "aliases": [
               "eco.uC.NCT",
             ],
             "denom": "ibc/7175DE4BF0BA4019D7187298E60CCB37A84006AEA8194D0471B2870813969D1F",
+            "exponent": 0,
+          },
+          {
+            "denom": "nct",
             "exponent": 6,
           },
         ],
         "description": "Nature Carbon Ton (NCT) is a carbon token standard backed 1:1 by carbon credits issued by Verra, a global leader in the voluntary carbon market. NCT credits on Regen Network have been tokenized by Toucan.earth.",
-        "display": "NCT",
+        "display": "nct",
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.svg",
@@ -900,6 +905,44 @@ exports[`getAssetLists 1`] = `
               "base_denom": "eco.uC.NCT",
               "chain_name": "regen",
               "channel_id": "channel-14",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/8AD0356E16A8EC966F71C62016EECF54239762CC276BA1BAB4F954423951CF5C",
+        "coingecko_id": "secret",
+        "denom_units": [
+          {
+            "aliases": [
+              "uscrt",
+            ],
+            "denom": "ibc/8AD0356E16A8EC966F71C62016EECF54239762CC276BA1BAB4F954423951CF5C",
+            "exponent": 0,
+          },
+          {
+            "denom": "scrt",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Secret Network",
+        "display": "scrt",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg",
+        },
+        "name": "Secret Network",
+        "symbol": "SCRT",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-82",
+            },
+            "counterparty": {
+              "base_denom": "uscrt",
+              "chain_name": "secretnetwork",
+              "channel_id": "channel-64",
             },
             "type": "ibc",
           },
@@ -1231,6 +1274,42 @@ exports[`getAssetLists 1`] = `
             },
             "counterparty": {
               "base_denom": "stuluna",
+              "chain_name": "stride",
+              "channel_id": "channel-53",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/5D026DBEC2EFED9669092E20A5BF9A58C04E4F78D488BCFC18F014183630ED27",
+        "denom_units": [
+          {
+            "aliases": [
+              "stinj",
+            ],
+            "denom": "ibc/5D026DBEC2EFED9669092E20A5BF9A58C04E4F78D488BCFC18F014183630ED27",
+            "exponent": 0,
+          },
+          {
+            "denom": "stINJ",
+            "exponent": 18,
+          },
+        ],
+        "display": "stINJ",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stinj.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stinj.svg",
+        },
+        "name": "stINJ",
+        "symbol": "stINJ",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-67",
+            },
+            "counterparty": {
+              "base_denom": "stinj",
               "chain_name": "stride",
               "channel_id": "channel-53",
             },
