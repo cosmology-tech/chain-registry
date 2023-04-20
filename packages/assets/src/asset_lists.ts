@@ -4842,6 +4842,118 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "The native staking and governance token of the Kujira chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/C4BE30A03C8FA2274C3C80C751F0517B538BB419546370C6DB19D32417CA3E3D",
+            "exponent": 0,
+            "aliases": [
+              "ukuji"
+            ]
+          },
+          {
+            "denom": "kuji",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/C4BE30A03C8FA2274C3C80C751F0517B538BB419546370C6DB19D32417CA3E3D",
+        "name": "Kuji",
+        "display": "kuji",
+        "symbol": "KUJI",
+        "coingecko_id": "kujira",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-64",
+              "base_denom": "ukuji",
+              "chain_name": "kujira"
+            },
+            "chain": {
+              "channel_id": "channel-63"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native over-collateralized stablecoin from the Kujira chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/BBFB784FB35367285E862E74078C213B40FD1862F7582BD94502013CA65BBD4F",
+            "exponent": 0,
+            "aliases": [
+              "factory/kujira1qk00h5atutpsv900x202pxx42npjr9thg58dnqpa72f2p7m2luase444a7/uusk"
+            ]
+          },
+          {
+            "denom": "usk",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/BBFB784FB35367285E862E74078C213B40FD1862F7582BD94502013CA65BBD4F",
+        "name": "USK",
+        "display": "USK",
+        "symbol": "USK",
+        "coingecko_id": "usk",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-64",
+              "base_denom": "factory/kujira1qk00h5atutpsv900x202pxx42npjr9thg58dnqpa72f2p7m2luase444a7/uusk",
+              "chain_name": "kujira"
+            },
+            "chain": {
+              "channel_id": "channel-63"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ampKUJI",
+        "denom_units": [
+          {
+            "denom": "ibc/2461A28741D66BD718D8AF2AAA6A7D287AB224614266FAEFE7D3DBAFC9EF3E25",
+            "exponent": 0,
+            "aliases": [
+              "factory/kujira1n3fr5f56r2ce0s37wdvwrk98yhhq3unnxgcqus8nzsfxvllk0yxquurqty/ampKUJI"
+            ]
+          },
+          {
+            "denom": "ampKUJI",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/2461A28741D66BD718D8AF2AAA6A7D287AB224614266FAEFE7D3DBAFC9EF3E25",
+        "name": "ampKUJI",
+        "display": "ampKUJI",
+        "symbol": "ampKUJI",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/ampKUJI.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-64",
+              "base_denom": "factory/kujira1n3fr5f56r2ce0s37wdvwrk98yhhq3unnxgcqus8nzsfxvllk0yxquurqty/ampKUJI",
+              "chain_name": "kujira"
+            },
+            "chain": {
+              "channel_id": "channel-63"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Osmosis",
         "denom_units": [
           {
@@ -27905,6 +28017,44 @@ const asset_lists: AssetList[] = [
             },
             "chain": {
               "channel_id": "channel-61"
+            }
+          }
+        ]
+      },
+      {
+        "description": "Akash Token (AKT) is the Akash Network's native utility token, used as the primary means to govern, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
+        "denom_units": [
+          {
+            "denom": "ibc/7023F9629A70F8112764D959D04F52EA3115A0AED3CEE59694799FD8C91A97FA",
+            "exponent": 0,
+            "aliases": [
+              "uakt"
+            ]
+          },
+          {
+            "denom": "akt",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/7023F9629A70F8112764D959D04F52EA3115A0AED3CEE59694799FD8C91A97FA",
+        "name": "Akash Network",
+        "display": "akt",
+        "symbol": "AKT",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg"
+        },
+        "coingecko_id": "akash-network",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-63",
+              "base_denom": "uakt",
+              "chain_name": "akash"
+            },
+            "chain": {
+              "channel_id": "channel-64"
             }
           }
         ]

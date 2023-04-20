@@ -180,6 +180,11 @@ const chain: Chain = {
         id: '3e874613919a6f8b3fc26071fef563c88f031b3c',
         address: 'seed-osmosis.freshstaking.com:31656',
         provider: 'FreshSTAKING'
+      },
+      {
+        id: '4dac1272a42e6b9e3ae3766304e12f1cb09ecbf0',
+        address: 'osmosis-seed.panthea.eu:40656',
+        provider: 'Panthea EU'
       }
     ],
     persistent_peers: [
