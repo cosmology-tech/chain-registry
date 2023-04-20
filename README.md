@@ -113,6 +113,33 @@ yarn bootstrap
 yarn build
 ```
 
+### Publishing
+
+First, `cd` into the root folder of the project:
+
+```sh
+cd /your/path/to/chain-registry
+```
+
+Second, update the git submodules:
+
+```sh
+git submodule update --remote
+```
+
+Third, generate the code (this takes a bit since it does some linting):
+
+```sh
+yarn codegen
+```
+
+Finally, commit and publish the code!
+
+```sh
+git commit -am "new registry updates"
+lerna publish
+```
+
 ## Credits
 
 🛠 Built by Cosmology — if you like our tools, please consider delegating to [our validator ⚛️](https://cosmology.tech/validator)
