@@ -1294,6 +1294,54 @@ const assets: AssetList = {
       }
     },
     {
+      description: 'Osmo Pepe',
+      type_asset: 'cw20',
+      address:
+        'juno1zqrj3ta4u7ylv0wqzd8t8q3jrr9rdmn43zuzp9zemeunecnhy8fss778g7',
+      denom_units: [
+        {
+          denom:
+            'cw20:juno1zqrj3ta4u7ylv0wqzd8t8q3jrr9rdmn43zuzp9zemeunecnhy8fss778g7',
+          exponent: 0
+        },
+        {
+          denom: 'pepe',
+          exponent: 6
+        }
+      ],
+      base: 'cw20:juno1zqrj3ta4u7ylv0wqzd8t8q3jrr9rdmn43zuzp9zemeunecnhy8fss778g7',
+      name: 'Osmo Pepe',
+      display: 'pepe',
+      symbol: 'PEPE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/pepe.png'
+      }
+    },
+    {
+      description: 'Catmos',
+      type_asset: 'cw20',
+      address:
+        'juno1f5datjdse3mdgrapwuzs3prl7pvxxht48ns6calnn0t77v2s9l8s0qu488',
+      denom_units: [
+        {
+          denom:
+            'cw20:juno1f5datjdse3mdgrapwuzs3prl7pvxxht48ns6calnn0t77v2s9l8s0qu488',
+          exponent: 0
+        },
+        {
+          denom: 'catmos',
+          exponent: 6
+        }
+      ],
+      base: 'cw20:juno1f5datjdse3mdgrapwuzs3prl7pvxxht48ns6calnn0t77v2s9l8s0qu488',
+      name: 'Catmos',
+      display: 'catmos',
+      symbol: 'CATMOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/catmos.png'
+      }
+    },
+    {
       description: 'The native token cw20 for Neta on Juno Chain',
       type_asset: 'cw20',
       address:

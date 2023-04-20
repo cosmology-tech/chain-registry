@@ -4906,6 +4906,46 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'ATOM token on Noble',
+      denom_units: [
+        {
+          denom:
+            'ibc/B003847F854F1FCFBF4CDF3A532DB7DAD0E1A7625B8426C0F81EEBA0AEF5F42D',
+          exponent: 0,
+          aliases: [
+            'ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0'
+          ]
+        },
+        {
+          denom: 'atom',
+          exponent: 6,
+          aliases: ['ATOM']
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/B003847F854F1FCFBF4CDF3A532DB7DAD0E1A7625B8426C0F81EEBA0AEF5F42D',
+      name: 'Atom Staking Coin',
+      display: 'atom',
+      symbol: 'ATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-750'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png'
+      }
+    },
+    {
       description: 'USD Coin',
       denom_units: [
         {
@@ -5042,6 +5082,43 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-258'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native staking token of OmniFlix Hub.',
+      denom_units: [
+        {
+          denom:
+            'ibc/CEE970BB3D26F4B907097B6B660489F13F3B0DA765B83CC7D9A0BC0CE220FA6F',
+          exponent: 0,
+          aliases: ['uflix']
+        },
+        {
+          denom: 'flix',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/CEE970BB3D26F4B907097B6B660489F13F3B0DA765B83CC7D9A0BC0CE220FA6F',
+      name: 'Flix',
+      display: 'flix',
+      symbol: 'FLIX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg'
+      },
+      coingecko_id: 'omniflix-network',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'uflix',
+            chain_name: 'omniflixhub'
+          },
+          chain: {
+            channel_id: 'channel-199'
           }
         }
       ]
@@ -9799,6 +9876,92 @@ const asset_list: AssetList = {
             channel_id: 'channel-47',
             base_denom:
               'cw20:juno1k2ruzzvvwwtwny6gq6kcwyfhkzahaunp685wmz4hafplduekj98q9hgs6d',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Osmo Pepe',
+      type_asset: 'cw20',
+      address:
+        'juno1zqrj3ta4u7ylv0wqzd8t8q3jrr9rdmn43zuzp9zemeunecnhy8fss778g7',
+      denom_units: [
+        {
+          denom:
+            'ibc/00BC6883C29D45EAA021A55CFDD5884CA8EFF9D39F698A9FEF79E13819FF94F8',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1zqrj3ta4u7ylv0wqzd8t8q3jrr9rdmn43zuzp9zemeunecnhy8fss778g7'
+          ]
+        },
+        {
+          denom: 'pepe',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/00BC6883C29D45EAA021A55CFDD5884CA8EFF9D39F698A9FEF79E13819FF94F8',
+      name: 'Osmo Pepe',
+      display: 'pepe',
+      symbol: 'PEPE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/pepe.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1zqrj3ta4u7ylv0wqzd8t8q3jrr9rdmn43zuzp9zemeunecnhy8fss778g7',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Catmos',
+      type_asset: 'cw20',
+      address:
+        'juno1f5datjdse3mdgrapwuzs3prl7pvxxht48ns6calnn0t77v2s9l8s0qu488',
+      denom_units: [
+        {
+          denom:
+            'ibc/F4A07138CAEF0BFB4889E03C44C57956A48631061F1C8AB80421C1F229C1B835',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1f5datjdse3mdgrapwuzs3prl7pvxxht48ns6calnn0t77v2s9l8s0qu488'
+          ]
+        },
+        {
+          denom: 'catmos',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/F4A07138CAEF0BFB4889E03C44C57956A48631061F1C8AB80421C1F229C1B835',
+      name: 'Catmos',
+      display: 'catmos',
+      symbol: 'CATMOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/catmos.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1f5datjdse3mdgrapwuzs3prl7pvxxht48ns6calnn0t77v2s9l8s0qu488',
             chain_name: 'juno'
           },
           chain: {

@@ -12336,6 +12336,46 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ATOM token on Noble",
+        "denom_units": [
+          {
+            "denom": "ibc/4BE8E6FDB955D8DE17DA7D8E5BB1F13F4E0565FC96F8B7CA0AEE07087FA1F2E2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6,
+            "aliases": [
+              "ATOM"
+            ]
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/4BE8E6FDB955D8DE17DA7D8E5BB1F13F4E0565FC96F8B7CA0AEE07087FA1F2E2",
+        "name": "Atom Staking Coin",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-4",
+              "base_denom": "ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0",
+              "chain_name": "noble"
+            },
+            "chain": {
+              "channel_id": "channel-536"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png"
+        }
+      },
+      {
         "description": "USD Coin",
         "denom_units": [
           {
@@ -12364,6 +12404,44 @@ const asset_lists: AssetList[] = [
             },
             "chain": {
               "channel_id": "channel-536"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native staking token of OmniFlix Hub.",
+        "denom_units": [
+          {
+            "denom": "ibc/15B4D31D457B80DD46CA46F6B89FD6BB15CB92FE7BBF8763947417537C3A4C2E",
+            "exponent": 0,
+            "aliases": [
+              "uflix"
+            ]
+          },
+          {
+            "denom": "flix",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/15B4D31D457B80DD46CA46F6B89FD6BB15CB92FE7BBF8763947417537C3A4C2E",
+        "name": "Flix",
+        "display": "flix",
+        "symbol": "FLIX",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg"
+        },
+        "coingecko_id": "omniflix-network",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-12",
+              "base_denom": "uflix",
+              "chain_name": "omniflixhub"
+            },
+            "chain": {
+              "channel_id": "channel-306"
             }
           }
         ]
@@ -15012,6 +15090,46 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ATOM token on Noble",
+        "denom_units": [
+          {
+            "denom": "ibc/43472CC5DA44B2B7401A878513AB8D44B84F67ED9EECEF2AF922FC7A08B687FA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6,
+            "aliases": [
+              "ATOM"
+            ]
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/43472CC5DA44B2B7401A878513AB8D44B84F67ED9EECEF2AF922FC7A08B687FA",
+        "name": "Atom Staking Coin",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0",
+              "chain_name": "noble"
+            },
+            "chain": {
+              "channel_id": "channel-38"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png"
+        }
       },
       {
         "description": "USD Coin",
@@ -25418,6 +25536,46 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ATOM token on Noble",
+        "denom_units": [
+          {
+            "denom": "ibc/D8A84E5EB5A99A90F1439141AD6DADA335CC886534B2845BE9251738ACCFBFB1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6,
+            "aliases": [
+              "ATOM"
+            ]
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/D8A84E5EB5A99A90F1439141AD6DADA335CC886534B2845BE9251738ACCFBFB1",
+        "name": "Atom Staking Coin",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-3",
+              "base_denom": "ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0",
+              "chain_name": "noble"
+            },
+            "chain": {
+              "channel_id": "channel-224"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png"
+        }
+      },
+      {
         "description": "USD Coin",
         "denom_units": [
           {
@@ -29728,6 +29886,46 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ATOM token on Noble",
+        "denom_units": [
+          {
+            "denom": "ibc/1E833054498176E86012B5398929481A6AF750ABEDC97D447F15B04256780D31",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6,
+            "aliases": [
+              "ATOM"
+            ]
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/1E833054498176E86012B5398929481A6AF750ABEDC97D447F15B04256780D31",
+        "name": "Atom Staking Coin",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-2",
+              "base_denom": "ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0",
+              "chain_name": "noble"
+            },
+            "chain": {
+              "channel_id": "channel-62"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png"
+        }
+      },
+      {
         "description": "USD Coin",
         "denom_units": [
           {
@@ -32509,6 +32707,131 @@ const asset_lists: AssetList[] = [
             },
             "chain": {
               "channel_id": "channel-37"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chain_name": "omniflixhub",
+    "assets": [
+      {
+        "description": "The native staking and governance token of the Cosmos Hub.",
+        "denom_units": [
+          {
+            "denom": "ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477",
+            "exponent": 0,
+            "aliases": [
+              "uatom"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg"
+        },
+        "coingecko_id": "cosmos",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-306",
+              "base_denom": "uatom",
+              "chain_name": "cosmoshub"
+            },
+            "chain": {
+              "channel_id": "channel-12"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native token of Osmosis",
+        "denom_units": [
+          {
+            "denom": "ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B",
+            "exponent": 0,
+            "aliases": [
+              "uosmo"
+            ]
+          },
+          {
+            "denom": "osmo",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B",
+        "name": "Osmosis",
+        "display": "osmo",
+        "symbol": "OSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
+        },
+        "coingecko_id": "osmosis",
+        "keywords": [
+          "dex",
+          "staking"
+        ],
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-199",
+              "base_denom": "uosmo",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D",
+            "exponent": 0,
+            "aliases": [
+              "uion"
+            ]
+          },
+          {
+            "denom": "ion",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D",
+        "name": "Ion",
+        "display": "ion",
+        "symbol": "ION",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
+        },
+        "coingecko_id": "ion",
+        "keywords": [
+          "memecoin"
+        ],
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-199",
+              "base_denom": "uion",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
             }
           }
         ]
@@ -37817,6 +38140,46 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ATOM token on Noble",
+        "denom_units": [
+          {
+            "denom": "ibc/B003847F854F1FCFBF4CDF3A532DB7DAD0E1A7625B8426C0F81EEBA0AEF5F42D",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6,
+            "aliases": [
+              "ATOM"
+            ]
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/B003847F854F1FCFBF4CDF3A532DB7DAD0E1A7625B8426C0F81EEBA0AEF5F42D",
+        "name": "Atom Staking Coin",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1",
+              "base_denom": "ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0",
+              "chain_name": "noble"
+            },
+            "chain": {
+              "channel_id": "channel-750"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png"
+        }
+      },
+      {
         "description": "USD Coin",
         "denom_units": [
           {
@@ -37957,6 +38320,44 @@ const asset_lists: AssetList[] = [
             },
             "chain": {
               "channel_id": "channel-258"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native staking token of OmniFlix Hub.",
+        "denom_units": [
+          {
+            "denom": "ibc/CEE970BB3D26F4B907097B6B660489F13F3B0DA765B83CC7D9A0BC0CE220FA6F",
+            "exponent": 0,
+            "aliases": [
+              "uflix"
+            ]
+          },
+          {
+            "denom": "flix",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/CEE970BB3D26F4B907097B6B660489F13F3B0DA765B83CC7D9A0BC0CE220FA6F",
+        "name": "Flix",
+        "display": "flix",
+        "symbol": "FLIX",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg"
+        },
+        "coingecko_id": "omniflix-network",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1",
+              "base_denom": "uflix",
+              "chain_name": "omniflixhub"
+            },
+            "chain": {
+              "channel_id": "channel-199"
             }
           }
         ]
@@ -42700,6 +43101,86 @@ const asset_lists: AssetList[] = [
               "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
               "channel_id": "channel-47",
               "base_denom": "cw20:juno1k2ruzzvvwwtwny6gq6kcwyfhkzahaunp685wmz4hafplduekj98q9hgs6d",
+              "chain_name": "juno"
+            },
+            "chain": {
+              "port": "transfer",
+              "channel_id": "channel-169"
+            }
+          }
+        ]
+      },
+      {
+        "description": "Osmo Pepe",
+        "type_asset": "cw20",
+        "address": "juno1zqrj3ta4u7ylv0wqzd8t8q3jrr9rdmn43zuzp9zemeunecnhy8fss778g7",
+        "denom_units": [
+          {
+            "denom": "ibc/00BC6883C29D45EAA021A55CFDD5884CA8EFF9D39F698A9FEF79E13819FF94F8",
+            "exponent": 0,
+            "aliases": [
+              "cw20:juno1zqrj3ta4u7ylv0wqzd8t8q3jrr9rdmn43zuzp9zemeunecnhy8fss778g7"
+            ]
+          },
+          {
+            "denom": "pepe",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/00BC6883C29D45EAA021A55CFDD5884CA8EFF9D39F698A9FEF79E13819FF94F8",
+        "name": "Osmo Pepe",
+        "display": "pepe",
+        "symbol": "PEPE",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/pepe.png"
+        },
+        "traces": [
+          {
+            "type": "ibc-cw20",
+            "counterparty": {
+              "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno1zqrj3ta4u7ylv0wqzd8t8q3jrr9rdmn43zuzp9zemeunecnhy8fss778g7",
+              "chain_name": "juno"
+            },
+            "chain": {
+              "port": "transfer",
+              "channel_id": "channel-169"
+            }
+          }
+        ]
+      },
+      {
+        "description": "Catmos",
+        "type_asset": "cw20",
+        "address": "juno1f5datjdse3mdgrapwuzs3prl7pvxxht48ns6calnn0t77v2s9l8s0qu488",
+        "denom_units": [
+          {
+            "denom": "ibc/F4A07138CAEF0BFB4889E03C44C57956A48631061F1C8AB80421C1F229C1B835",
+            "exponent": 0,
+            "aliases": [
+              "cw20:juno1f5datjdse3mdgrapwuzs3prl7pvxxht48ns6calnn0t77v2s9l8s0qu488"
+            ]
+          },
+          {
+            "denom": "catmos",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/F4A07138CAEF0BFB4889E03C44C57956A48631061F1C8AB80421C1F229C1B835",
+        "name": "Catmos",
+        "display": "catmos",
+        "symbol": "CATMOS",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/catmos.png"
+        },
+        "traces": [
+          {
+            "type": "ibc-cw20",
+            "counterparty": {
+              "port": "wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn",
+              "channel_id": "channel-47",
+              "base_denom": "cw20:juno1f5datjdse3mdgrapwuzs3prl7pvxxht48ns6calnn0t77v2s9l8s0qu488",
               "chain_name": "juno"
             },
             "chain": {
@@ -56228,6 +56709,89 @@ const asset_lists: AssetList[] = [
         "description": "The native token of Osmosis",
         "denom_units": [
           {
+            "denom": "ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85",
+            "exponent": 0,
+            "aliases": [
+              "uosmo"
+            ]
+          },
+          {
+            "denom": "osmo",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85",
+        "name": "Osmosis",
+        "display": "osmo",
+        "symbol": "OSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
+        },
+        "coingecko_id": "osmosis",
+        "keywords": [
+          "dex",
+          "staking"
+        ],
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-6",
+              "base_denom": "uosmo",
+              "chain_name": "osmosistestnet5"
+            },
+            "chain": {
+              "channel_id": "channel-6"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/69B4810E989B56FC6CA41F395228236FA7E7F59B9A3B7AF3FB0A344361C38389",
+            "exponent": 0,
+            "aliases": [
+              "uion"
+            ]
+          },
+          {
+            "denom": "ion",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/69B4810E989B56FC6CA41F395228236FA7E7F59B9A3B7AF3FB0A344361C38389",
+        "name": "Ion",
+        "display": "ion",
+        "symbol": "ION",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
+        },
+        "coingecko_id": "ion",
+        "keywords": [
+          "memecoin"
+        ],
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-6",
+              "base_denom": "uion",
+              "chain_name": "osmosistestnet5"
+            },
+            "chain": {
+              "channel_id": "channel-6"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native token of Osmosis",
+        "denom_units": [
+          {
             "denom": "ibc/05AC4BBA78C5951339A47DD1BC1E7FC922A9311DF81C85745B1C162F516FF2F1",
             "exponent": 0,
             "aliases": [
@@ -56872,6 +57436,77 @@ const asset_lists: AssetList[] = [
             },
             "chain": {
               "channel_id": "channel-1837"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chain_name": "osmosistestnet5",
+    "assets": [
+      {
+        "description": "The controlled staking asset for Noble Chain",
+        "denom_units": [
+          {
+            "denom": "ibc/B73E9196C59EB34F42BECE5EA20511B33A0B1286B23210FDEEAA1AE876C037C7",
+            "exponent": 0,
+            "aliases": [
+              "ustake"
+            ]
+          },
+          {
+            "denom": "stake",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/B73E9196C59EB34F42BECE5EA20511B33A0B1286B23210FDEEAA1AE876C037C7",
+        "name": "Stake",
+        "display": "stake",
+        "symbol": "STAKE",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-6",
+              "base_denom": "ustake",
+              "chain_name": "nobletestnet"
+            },
+            "chain": {
+              "channel_id": "channel-6"
+            }
+          }
+        ]
+      },
+      {
+        "description": "Love is a test tokenfactory asset controlled by the Strangelove Team",
+        "denom_units": [
+          {
+            "denom": "ibc/F4F6A43C577D89E0378157FA0C6DBF205356CBDDBC08656C858318B9B0A8D711",
+            "exponent": 0,
+            "aliases": [
+              "ulove"
+            ]
+          },
+          {
+            "denom": "love",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/F4F6A43C577D89E0378157FA0C6DBF205356CBDDBC08656C858318B9B0A8D711",
+        "display": "love",
+        "name": "Love",
+        "symbol": "LOVE",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-6",
+              "base_denom": "ulove",
+              "chain_name": "nobletestnet"
+            },
+            "chain": {
+              "channel_id": "channel-6"
             }
           }
         ]

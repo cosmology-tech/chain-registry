@@ -2433,6 +2433,46 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'ATOM token on Noble',
+      denom_units: [
+        {
+          denom:
+            'ibc/D8A84E5EB5A99A90F1439141AD6DADA335CC886534B2845BE9251738ACCFBFB1',
+          exponent: 0,
+          aliases: [
+            'ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0'
+          ]
+        },
+        {
+          denom: 'atom',
+          exponent: 6,
+          aliases: ['ATOM']
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/D8A84E5EB5A99A90F1439141AD6DADA335CC886534B2845BE9251738ACCFBFB1',
+      name: 'Atom Staking Coin',
+      display: 'atom',
+      symbol: 'ATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-224'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png'
+      }
+    },
+    {
       description: 'USD Coin',
       denom_units: [
         {
