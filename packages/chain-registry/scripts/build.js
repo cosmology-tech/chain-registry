@@ -2,7 +2,9 @@ const fs = require('fs');
 const deepmerge = require('deepmerge');
 const glob = require('glob').sync;
 
-const paths = glob(`${__dirname}/../chain-registry/**/*.json`);
+const testnetPaths = glob(`${__dirname}/../chain-registry/testnets/**/*.json`);
+const mainnetPaths = glob(`${__dirname}/../chain-registry/**/*.json`);
+const paths = [...mainnetPaths, ...testnetPaths];
 const assets = [];
 const chains = [];
 const ibcs = [];
