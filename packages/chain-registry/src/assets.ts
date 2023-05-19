@@ -16645,6 +16645,33 @@ const assets: AssetList[] = [
         coingecko_id: 'xpla'
       }
     ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'neutron',
+    assets: [
+      {
+        description: 'The native token of Neutron chain.',
+        denom_units: [
+          {
+            denom: 'untrn',
+            exponent: 0
+          },
+          {
+            denom: 'ntrn',
+            exponent: 6
+          }
+        ],
+        base: 'untrn',
+        name: 'Neutron',
+        display: 'ntrn',
+        symbol: 'NTRN',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron.svg'
+        }
+      }
+    ]
   }
 ];
 export default assets;
