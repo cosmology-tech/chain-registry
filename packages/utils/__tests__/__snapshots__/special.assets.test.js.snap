@@ -645,6 +645,41 @@ exports[`getAssetLists 1`] = `
         ],
       },
       {
+        "base": "ibc/984EF329DD592E9253CCB1E65571C80F8689165B88A54974471136B57A80D74E",
+        "denom_units": [
+          {
+            "aliases": [
+              "factory/osmo14klwqgkmackvx2tqa0trtg69dmy0nrg4ntq4gjgw2za4734r5seqjqm4gm/uibcx",
+            ],
+            "denom": "ibc/984EF329DD592E9253CCB1E65571C80F8689165B88A54974471136B57A80D74E",
+            "exponent": 0,
+          },
+          {
+            "denom": "ibcx",
+            "exponent": 6,
+          },
+        ],
+        "display": "ibcx",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ibcx.svg",
+        },
+        "name": "IBCX",
+        "symbol": "IBCX",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "factory/osmo14klwqgkmackvx2tqa0trtg69dmy0nrg4ntq4gjgw2za4734r5seqjqm4gm/uibcx",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
         "base": "ibc/C44D056A8118A174AC223B381BFAA893A306568E4C6F7D2BFCD1F70707F2B937",
         "coingecko_id": "quicksilver",
         "denom_units": [
@@ -1346,6 +1381,42 @@ exports[`getAssetLists 1`] = `
             },
             "counterparty": {
               "base_denom": "staevmos",
+              "chain_name": "stride",
+              "channel_id": "channel-53",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/0BBFD7B5982349B7A11A9EC3C1A596D81D37413C923C166C65649CECEBBBF06D",
+        "denom_units": [
+          {
+            "aliases": [
+              "stuumee",
+            ],
+            "denom": "ibc/0BBFD7B5982349B7A11A9EC3C1A596D81D37413C923C166C65649CECEBBBF06D",
+            "exponent": 0,
+          },
+          {
+            "denom": "stumee",
+            "exponent": 6,
+          },
+        ],
+        "display": "stumee",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stumee.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stumee.svg",
+        },
+        "name": "stUMEE",
+        "symbol": "stUMEE",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-67",
+            },
+            "counterparty": {
+              "base_denom": "stuumee",
               "chain_name": "stride",
               "channel_id": "channel-53",
             },
