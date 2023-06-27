@@ -15,9 +15,9 @@ const testnet: Chain = {
     fee_tokens: [
       {
         denom: 'ujunox',
-        low_gas_price: 0.03,
-        average_gas_price: 0.04,
-        high_gas_price: 0.05
+        low_gas_price: 0.0025,
+        average_gas_price: 0.0025,
+        high_gas_price: 0.0024
       }
     ]
   },

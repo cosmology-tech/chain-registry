@@ -182,8 +182,7 @@ const asset_list: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.svg',
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.png'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
       }
     },
     {
@@ -999,6 +998,233 @@ const asset_list: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png'
       }
+    },
+    {
+      description: 'Wrapped FIL on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/9DC98F4F0ED2816422497CA3D1BE02E38D0656F031173654903ADD248A1C3720',
+          exponent: 0,
+          aliases: ['wfil-wei']
+        },
+        {
+          denom: 'fil',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/9DC98F4F0ED2816422497CA3D1BE02E38D0656F031173654903ADD248A1C3720',
+      name: 'Wrapped FIL from Filecoin',
+      display: 'fil',
+      symbol: 'axlFIL',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'wfil-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/filecoin/images/wfil.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/filecoin/images/wfil.png'
+      }
+    },
+    {
+      description: 'Arbitrum on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/CFBDAF961EC673ADC67091377E56D338E390B8A0953F5FED80387B765E8DCD53',
+          exponent: 0,
+          aliases: ['arb-wei']
+        },
+        {
+          denom: 'arb',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/CFBDAF961EC673ADC67091377E56D338E390B8A0953F5FED80387B765E8DCD53',
+      name: 'Arbitrum',
+      display: 'arb',
+      symbol: 'ARB',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'arb-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/arbitrum/images/arb.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/arbitrum/images/arb.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/3406FBBAEB20E62FF238FF6FD061BCF21F515E1546D3E9FF8571B12BDA29DDBB',
+          exponent: 0,
+          aliases: ['pepe-wei']
+        },
+        {
+          denom: 'pepe',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/3406FBBAEB20E62FF238FF6FD061BCF21F515E1546D3E9FF8571B12BDA29DDBB',
+      name: 'Pepe',
+      display: 'pepe',
+      symbol: 'PEPE',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'pepe-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/847E4A6698D469C9328F1BE68759C78C82891F90B42B7B13BC86462B7F2BE12B',
+          exponent: 0,
+          aliases: ['cbeth-wei']
+        },
+        {
+          denom: 'cbeth',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/847E4A6698D469C9328F1BE68759C78C82891F90B42B7B13BC86462B7F2BE12B',
+      name: 'Coinbase Wrapped Staked ETH',
+      display: 'cbeth',
+      symbol: 'cbETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'cbeth-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/10B9D995E2011BA306A3FFDBCD2B6A091002EF225DE02ACED49694B42940DD1F',
+          exponent: 0,
+          aliases: ['reth-wei']
+        },
+        {
+          denom: 'reth',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/10B9D995E2011BA306A3FFDBCD2B6A091002EF225DE02ACED49694B42940DD1F',
+      name: 'Rocket Pool Ether',
+      display: 'reth',
+      symbol: 'rETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'reth-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/39A90E0FA128DAE477510F0B9BE848B0D3C6D3BE2A464667B79EAD9BB847CC47',
+          exponent: 0,
+          aliases: ['sfrxeth-wei']
+        },
+        {
+          denom: 'sfrxeth',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/39A90E0FA128DAE477510F0B9BE848B0D3C6D3BE2A464667B79EAD9BB847CC47',
+      name: 'Staked Frax Ether',
+      display: 'sfrxeth',
+      symbol: 'sfrxETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'sfrxeth-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/D5D1F7B6004D1918CE125862C942F3289DE06E271661C2DD32E3F71479BAF751',
+          exponent: 0,
+          aliases: ['wsteth-wei']
+        },
+        {
+          denom: 'wsteth',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/D5D1F7B6004D1918CE125862C942F3289DE06E271661C2DD32E3F71479BAF751',
+      name: 'Wrapped Lido Staked Ether',
+      display: 'wsteth',
+      symbol: 'wstETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'wsteth-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }
+      ]
     },
     {
       description:
@@ -2191,6 +2417,7 @@ const asset_list: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.png'
       },
+      coingecko_id: 'white-whale',
       traces: [
         {
           type: 'ibc',
@@ -2380,7 +2607,8 @@ const asset_list: AssetList = {
       display: 'stake',
       symbol: 'STAKE',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg'
       },
       traces: [
         {
@@ -2416,7 +2644,8 @@ const asset_list: AssetList = {
       name: 'Frienzies',
       symbol: 'FRNZ',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.svg'
       },
       traces: [
         {
@@ -2469,7 +2698,8 @@ const asset_list: AssetList = {
         }
       ],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
       }
     },
     {
@@ -2490,6 +2720,10 @@ const asset_list: AssetList = {
       display: 'usdc',
       name: 'USD Coin',
       symbol: 'USDC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+      },
       traces: [
         {
           type: 'ibc',
@@ -2644,6 +2878,43 @@ const asset_list: AssetList = {
           counterparty: {
             channel_id: 'channel-42',
             base_denom: 'uion',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-0'
+          }
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/3616134E71F4F7C0AFD22C439567E8C514BE88955903834F4580D9E3E4E3470F',
+          exponent: 0,
+          aliases: [
+            'factory/osmo14klwqgkmackvx2tqa0trtg69dmy0nrg4ntq4gjgw2za4734r5seqjqm4gm/uibcx'
+          ]
+        },
+        {
+          denom: 'ibcx',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/3616134E71F4F7C0AFD22C439567E8C514BE88955903834F4580D9E3E4E3470F',
+      name: 'IBCX',
+      display: 'ibcx',
+      symbol: 'IBCX',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ibcx.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-42',
+            base_denom:
+              'factory/osmo14klwqgkmackvx2tqa0trtg69dmy0nrg4ntq4gjgw2za4734r5seqjqm4gm/uibcx',
             chain_name: 'osmosis'
           },
           chain: {
@@ -3163,6 +3434,41 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stevmos.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stevmos.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/94C84307CAA7E1D83FF0E4FECB83926B1992AD5956278FB319501AFA6D61F8AE',
+          exponent: 0,
+          aliases: ['stuumee']
+        },
+        {
+          denom: 'stumee',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/94C84307CAA7E1D83FF0E4FECB83926B1992AD5956278FB319501AFA6D61F8AE',
+      name: 'stUMEE',
+      display: 'stumee',
+      symbol: 'stUMEE',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-24',
+            base_denom: 'stuumee',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-139'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stumee.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stumee.svg'
       }
     },
     {
