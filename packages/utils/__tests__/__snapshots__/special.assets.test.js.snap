@@ -489,6 +489,39 @@ exports[`getAssetLists 1`] = `
         ],
       },
       {
+        "base": "ibc/8E6F67AF9FFFF4D3304EC0C27774A90A1A85D5CFA23AB9E2ECDEF6C056E7C24B",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+            ],
+            "denom": "ibc/8E6F67AF9FFFF4D3304EC0C27774A90A1A85D5CFA23AB9E2ECDEF6C056E7C24B",
+            "exponent": 0,
+          },
+          {
+            "denom": "atom",
+            "exponent": 6,
+          },
+        ],
+        "display": "atom",
+        "name": "ATOM on Juno",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-37",
+            },
+            "counterparty": {
+              "base_denom": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+              "chain_name": "juno",
+              "channel_id": "channel-33",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
+      },
+      {
         "address": "juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj",
         "base": "ibc/239CF26B6804489BBFDE89257D4520FCDCFC3B66AE28EE838AA60D9BFC52315D",
         "denom_units": [
@@ -645,6 +678,7 @@ exports[`getAssetLists 1`] = `
         ],
       },
       {
+        "address": "osmo14klwqgkmackvx2tqa0trtg69dmy0nrg4ntq4gjgw2za4734r5seqjqm4gm",
         "base": "ibc/984EF329DD592E9253CCB1E65571C80F8689165B88A54974471136B57A80D74E",
         "denom_units": [
           {
@@ -663,7 +697,7 @@ exports[`getAssetLists 1`] = `
         "logo_URIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ibcx.svg",
         },
-        "name": "IBCX",
+        "name": "IBCX Core <Product of ION DAO>",
         "symbol": "IBCX",
         "traces": [
           {
@@ -680,14 +714,51 @@ exports[`getAssetLists 1`] = `
         ],
       },
       {
-        "base": "ibc/C44D056A8118A174AC223B381BFAA893A306568E4C6F7D2BFCD1F70707F2B937",
+        "address": "osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k",
+        "base": "ibc/F7AA2E59C609EBF307BF86217C1B73565EAD74B528AA0DA28FBA26F7FFB858E5",
+        "denom_units": [
+          {
+            "aliases": [
+              "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+            ],
+            "denom": "ibc/F7AA2E59C609EBF307BF86217C1B73565EAD74B528AA0DA28FBA26F7FFB858E5",
+            "exponent": 0,
+          },
+          {
+            "denom": "stibcx",
+            "exponent": 6,
+          },
+        ],
+        "display": "stibcx",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/stibcx.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/stibcx.svg",
+        },
+        "name": "stIBCX Core <Product of ION DAO>",
+        "symbol": "stIBCX",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/E40F6BAB4FFBDB908F63366155A793AB6B42EEB4FCD856C1DF7C91BE7F252D61",
         "coingecko_id": "quicksilver",
         "denom_units": [
           {
             "aliases": [
               "uqck",
             ],
-            "denom": "ibc/C44D056A8118A174AC223B381BFAA893A306568E4C6F7D2BFCD1F70707F2B937",
+            "denom": "ibc/E40F6BAB4FFBDB908F63366155A793AB6B42EEB4FCD856C1DF7C91BE7F252D61",
             "exponent": 0,
           },
           {
@@ -706,25 +777,25 @@ exports[`getAssetLists 1`] = `
         "traces": [
           {
             "chain": {
-              "channel_id": "channel-69",
+              "channel_id": "channel-73",
             },
             "counterparty": {
               "base_denom": "uqck",
               "chain_name": "quicksilver",
-              "channel_id": "channel-8",
+              "channel_id": "channel-16",
             },
             "type": "ibc",
           },
         ],
       },
       {
-        "base": "ibc/F221881E92E0B3E56CC91AC9CC49555E1BF45569CFA5362C38A8F2F287CB3791",
+        "base": "ibc/1DF0487AD7C5A0E1BD7C4F77448E99912122C76B8F38E05C857BFDBE015FC9F6",
         "denom_units": [
           {
             "aliases": [
               "uqstars",
             ],
-            "denom": "ibc/F221881E92E0B3E56CC91AC9CC49555E1BF45569CFA5362C38A8F2F287CB3791",
+            "denom": "ibc/1DF0487AD7C5A0E1BD7C4F77448E99912122C76B8F38E05C857BFDBE015FC9F6",
             "exponent": 0,
           },
           {
@@ -744,25 +815,25 @@ exports[`getAssetLists 1`] = `
         "traces": [
           {
             "chain": {
-              "channel_id": "channel-69",
+              "channel_id": "channel-73",
             },
             "counterparty": {
               "base_denom": "uqstars",
               "chain_name": "quicksilver",
-              "channel_id": "channel-8",
+              "channel_id": "channel-16",
             },
             "type": "ibc",
           },
         ],
       },
       {
-        "base": "ibc/011CB9FC5DF2FEFDD1750593B998E84B6F8863505CBC64ADDA87A132644E49DD",
+        "base": "ibc/6712C719554E42DAA3CC07F0ED987BE3249F0E022B6E29DA2162FC68B172A5FD",
         "denom_units": [
           {
             "aliases": [
               "uqatom",
             ],
-            "denom": "ibc/011CB9FC5DF2FEFDD1750593B998E84B6F8863505CBC64ADDA87A132644E49DD",
+            "denom": "ibc/6712C719554E42DAA3CC07F0ED987BE3249F0E022B6E29DA2162FC68B172A5FD",
             "exponent": 0,
           },
           {
@@ -782,25 +853,25 @@ exports[`getAssetLists 1`] = `
         "traces": [
           {
             "chain": {
-              "channel_id": "channel-69",
+              "channel_id": "channel-73",
             },
             "counterparty": {
               "base_denom": "uqatom",
               "chain_name": "quicksilver",
-              "channel_id": "channel-8",
+              "channel_id": "channel-16",
             },
             "type": "ibc",
           },
         ],
       },
       {
-        "base": "ibc/62A1ADECD4E38EFCA83AD5AF1F1938C9FD9FF125C29C73E27DF4AB84C4FA15C1",
+        "base": "ibc/E0EF7AF6F2392C902F3432ECE22F9661ECC2F4B4A0B9316AF93092AB800F1674",
         "denom_units": [
           {
             "aliases": [
               "uqregen",
             ],
-            "denom": "ibc/62A1ADECD4E38EFCA83AD5AF1F1938C9FD9FF125C29C73E27DF4AB84C4FA15C1",
+            "denom": "ibc/E0EF7AF6F2392C902F3432ECE22F9661ECC2F4B4A0B9316AF93092AB800F1674",
             "exponent": 0,
           },
           {
@@ -820,25 +891,25 @@ exports[`getAssetLists 1`] = `
         "traces": [
           {
             "chain": {
-              "channel_id": "channel-69",
+              "channel_id": "channel-73",
             },
             "counterparty": {
               "base_denom": "uqregen",
               "chain_name": "quicksilver",
-              "channel_id": "channel-8",
+              "channel_id": "channel-16",
             },
             "type": "ibc",
           },
         ],
       },
       {
-        "base": "ibc/7194EE871B193666BFE00665172B496651EDE29B252AD53817F348186F52B2A8",
+        "base": "ibc/BB14D2F40E206287AB6B9A0E0EB09488F15CF9EC662B0BE053005D208B063BC9",
         "denom_units": [
           {
             "aliases": [
               "uqosmo",
             ],
-            "denom": "ibc/7194EE871B193666BFE00665172B496651EDE29B252AD53817F348186F52B2A8",
+            "denom": "ibc/BB14D2F40E206287AB6B9A0E0EB09488F15CF9EC662B0BE053005D208B063BC9",
             "exponent": 0,
           },
           {
@@ -858,12 +929,12 @@ exports[`getAssetLists 1`] = `
         "traces": [
           {
             "chain": {
-              "channel_id": "channel-69",
+              "channel_id": "channel-73",
             },
             "counterparty": {
               "base_denom": "uqosmo",
               "chain_name": "quicksilver",
-              "channel_id": "channel-8",
+              "channel_id": "channel-16",
             },
             "type": "ibc",
           },
@@ -1417,6 +1488,42 @@ exports[`getAssetLists 1`] = `
             },
             "counterparty": {
               "base_denom": "stuumee",
+              "chain_name": "stride",
+              "channel_id": "channel-53",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/A0C4D6604F8AE13137CE28EED2C3F893880B832FE317EC9D817AEAD3F1A0F7EA",
+        "denom_units": [
+          {
+            "aliases": [
+              "stucmdx",
+            ],
+            "denom": "ibc/A0C4D6604F8AE13137CE28EED2C3F893880B832FE317EC9D817AEAD3F1A0F7EA",
+            "exponent": 0,
+          },
+          {
+            "denom": "stcmdx",
+            "exponent": 6,
+          },
+        ],
+        "display": "stcmdx",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stcmdx.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stcmdx.svg",
+        },
+        "name": "stCMDX",
+        "symbol": "stCMDX",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-67",
+            },
+            "counterparty": {
+              "base_denom": "stucmdx",
               "chain_name": "stride",
               "channel_id": "channel-53",
             },
