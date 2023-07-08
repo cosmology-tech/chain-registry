@@ -16,9 +16,17 @@ const chain: Chain = {
     fee_tokens: [
       {
         denom: 'ujuno',
-        fixed_min_gas_price: 0.001,
-        low_gas_price: 0.001,
-        average_gas_price: 0.0025,
+        fixed_min_gas_price: 0.075,
+        low_gas_price: 0.075,
+        average_gas_price: 0.1,
+        high_gas_price: 0.125
+      },
+      {
+        denom:
+          'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9',
+        fixed_min_gas_price: 0.003,
+        low_gas_price: 0.003,
+        average_gas_price: 0.0035,
         high_gas_price: 0.004
       }
     ]
@@ -32,8 +40,8 @@ const chain: Chain = {
   },
   codebase: {
     git_repo: 'https://github.com/CosmosContracts/juno',
-    recommended_version: 'v14.1.0',
-    compatible_versions: ['v14.0.0', 'v14.1.0'],
+    recommended_version: 'v15.0.0',
+    compatible_versions: ['v15.0.0'],
     cosmos_sdk_version: '0.45',
     consensus: {
       type: 'tendermint',
@@ -62,7 +70,16 @@ const chain: Chain = {
         name: 'v14',
         height: 7875721,
         recommended_version: 'v14.1.0',
-        compatible_versions: ['v14.0.0', 'v14.1.0']
+        compatible_versions: ['v14.0.0', 'v14.1.0'],
+        next_version_name: 'v15'
+      },
+      {
+        name: 'v15',
+        height: 8577241,
+        recommended_version: 'v15.0.0',
+        proposal: 295,
+        compatible_versions: ['v15.0.0'],
+        next_version_name: ''
       }
     ]
   },
@@ -122,14 +139,9 @@ const chain: Chain = {
         provider: 'WhisperNode🤐'
       },
       {
-        id: '400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc',
-        address: 'juno.rpc.kjnodes.com:15759',
-        provider: 'kjnodes'
-      },
-      {
         id: '509f6dbae3133a9df177edea051b31e1210b117e',
         address: 'seed-juno-01.stakeflow.io:2307',
-        provider: 'Genesis Lab'
+        provider: 'Stakeflow'
       }
     ],
     persistent_peers: [
@@ -148,9 +160,14 @@ const chain: Chain = {
         provider: 'FreshSTAKING'
       },
       {
+        id: '3ee2034cf0180e4d50f7b3ed952472add3316faf',
+        address: 'juno.peer.stavr.tech:1066',
+        provider: '🔥STAVR🔥'
+      },
+      {
         id: '509f6dbae3133a9df177edea051b31e1210b117e',
         address: 'peer-juno-01.stakeflow.io:2307',
-        provider: 'Genesis Lab'
+        provider: 'Stakeflow'
       }
     ]
   },
@@ -167,6 +184,10 @@ const chain: Chain = {
       {
         address: 'https://rpc-juno.itastakers.com',
         provider: 'itastakers'
+      },
+      {
+        address: 'http://juno.rpc.m.stavr.tech:1067',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'https://rpc-juno.ecostake.com',
@@ -241,10 +262,6 @@ const chain: Chain = {
         provider: 'ivaldilabs'
       },
       {
-        address: 'https://juno-rpc.cosmosrescue.com',
-        provider: 'cosmosrescue'
-      },
-      {
         address: 'http://167.235.211.168:26657',
         provider: 'CommunityStaking'
       },
@@ -253,12 +270,12 @@ const chain: Chain = {
         provider: 'Silk Nodes'
       },
       {
-        address: 'https://juno.rpc.kjnodes.com',
-        provider: 'kjnodes'
+        address: 'https://rpc-juno-01.stakeflow.io',
+        provider: 'Stakeflow'
       },
       {
-        address: 'https://rpc-juno-01.stakeflow.io',
-        provider: 'Genesis Lab'
+        address: 'https://rpc-juno.validavia.me',
+        provider: 'Validavia'
       }
     ],
     rest: [
@@ -273,6 +290,10 @@ const chain: Chain = {
       {
         address: 'https://juno-api.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'https://juno.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'https://api-juno.pupmos.network',
@@ -331,10 +352,6 @@ const chain: Chain = {
         provider: 'ivaldilabs'
       },
       {
-        address: 'https://juno-api.cosmosrescue.com',
-        provider: 'cosmosrescue'
-      },
-      {
         address: 'http://167.235.211.168:1317',
         provider: 'CommunityStaking'
       },
@@ -343,12 +360,16 @@ const chain: Chain = {
         provider: 'Silk Nodes'
       },
       {
-        address: 'https://juno.api.kjnodes.com',
-        provider: 'kjnodes'
+        address: 'https://rest-juno.goldenratiostaking.net',
+        provider: 'Golden Ratio Staking'
       },
       {
         address: 'https://api-juno-01.stakeflow.io',
-        provider: 'Genesis Lab'
+        provider: 'Stakeflow'
+      },
+      {
+        address: 'https://lcd-juno.validavia.me',
+        provider: 'Validavia'
       }
     ],
     grpc: [
@@ -363,6 +384,10 @@ const chain: Chain = {
       {
         address: 'juno-grpc.polkachu.com:12690',
         provider: 'Polkachu'
+      },
+      {
+        address: 'http://juno.grpc.m.stavr.tech:504',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'juno.grpc.stakin-nodes.com:443',
@@ -389,20 +414,12 @@ const chain: Chain = {
         provider: 'ivaldilabs'
       },
       {
-        address: 'juno-grpc.cosmosrescue.com:9090',
-        provider: 'cosmosrescue'
-      },
-      {
         address: 'http://167.235.211.168:9091',
         provider: 'CommunityStaking'
       },
       {
-        address: 'juno.grpc.kjnodes.com:15790',
-        provider: 'kjnodes'
-      },
-      {
         address: 'grpc-juno-01.stakeflow.io:2302',
-        provider: 'Genesis Lab'
+        provider: 'Stakeflow'
       }
     ]
   },
@@ -434,6 +451,13 @@ const chain: Chain = {
       url: 'https://atomscan.com/juno',
       tx_page: 'https://atomscan.com/juno/transactions/${txHash}',
       account_page: 'https://atomscan.com/juno/accounts/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/juno',
+      tx_page: 'https://explorer.stavr.tech/juno/transactions/${txHash}',
+      account_page:
+        'https://explorer.stavr.tech/juno/accounts/${accountAddress}'
     },
     {
       kind: 'TC Network',

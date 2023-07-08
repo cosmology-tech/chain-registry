@@ -1261,6 +1261,48 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../assetlist.schema.json',
+    chain_name: 'kusama',
+    assets: [
+      {
+        description:
+          'The native fee, governance, staking, and bonding token of the Polkadot platform.',
+        denom_units: [
+          {
+            denom: 'Planck',
+            exponent: 0
+          },
+          {
+            denom: 'Point',
+            exponent: 3
+          },
+          {
+            denom: 'uKSM',
+            exponent: 3,
+            aliases: ['MicroKSM']
+          },
+          {
+            denom: 'uKSM',
+            exponent: 3,
+            aliases: ['MilliKSM']
+          },
+          {
+            denom: 'KSM',
+            exponent: 12
+          }
+        ],
+        base: 'Planck',
+        name: 'Kusama',
+        display: 'KSM',
+        symbol: 'KSM',
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/kusama/images/ksm.svg'
+        },
+        coingecko_id: 'kusama'
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
     chain_name: 'moonbeam',
     assets: [
       {
@@ -1492,6 +1534,58 @@ const assets: AssetList[] = [
         logo_URIs: {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
         }
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'picasso',
+    assets: [
+      {
+        description: 'The native staking and governance token of Picasso.',
+        denom_units: [
+          {
+            denom: 'ppica',
+            exponent: 0
+          },
+          {
+            denom: 'pica',
+            exponent: 12
+          }
+        ],
+        base: 'ppica',
+        name: 'Pica',
+        display: 'pica',
+        symbol: 'PICA',
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
+        }
+      },
+      {
+        denom_units: [
+          {
+            denom: '4',
+            exponent: 0
+          },
+          {
+            denom: 'ksm',
+            exponent: 12
+          }
+        ],
+        base: '4',
+        name: 'Kusama',
+        display: 'ksm',
+        symbol: 'KSM',
+        traces: [
+          {
+            type: 'bridge',
+            counterparty: {
+              chain_name: 'kusama',
+              base_denom: 'Planck'
+            },
+            provider: 'Kusama Parachain'
+          }
+        ]
       }
     ]
   },
@@ -2019,6 +2113,38 @@ const assets: AssetList[] = [
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
         },
         coingecko_id: 'akash-network'
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'archway',
+    assets: [
+      {
+        description: 'The native token of Archway network',
+        denom_units: [
+          {
+            denom: 'aarch',
+            exponent: 0
+          },
+          {
+            denom: 'uarch',
+            exponent: 12
+          },
+          {
+            denom: 'arch',
+            exponent: 18
+          }
+        ],
+        base: 'aarch',
+        name: 'Archway',
+        display: 'arch',
+        symbol: 'ARCH',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+        },
+        coingecko_id: 'archway'
       }
     ]
   },
@@ -4681,9 +4807,43 @@ const assets: AssetList[] = [
         display: 'pica',
         symbol: 'PICA',
         logo_URIs: {
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/composable.svg'
-        },
-        coingecko_id: 'composable-finance-layr'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
+        }
+      },
+      {
+        description:
+          'The native staking and governance token of Kusama Relay Chain.',
+        denom_units: [
+          {
+            denom:
+              'ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9',
+            exponent: 0,
+            aliases: ['4']
+          },
+          {
+            denom: 'ksm',
+            exponent: 12
+          }
+        ],
+        type_asset: 'ics20',
+        base: 'ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9',
+        name: 'KSM',
+        display: 'ksm',
+        symbol: 'KSM',
+        traces: [
+          {
+            type: 'ibc',
+            counterparty: {
+              chain_name: 'picasso',
+              base_denom: '4',
+              channel_id: 'channel-17'
+            },
+            chain: {
+              channel_id: 'channel-2',
+              path: 'transfer/channel-2/4'
+            }
+          }
+        ]
       }
     ]
   },
@@ -5158,6 +5318,32 @@ const assets: AssetList[] = [
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.png'
         },
         coingecko_id: ''
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
+    chain_name: 'empowerchain',
+    assets: [
+      {
+        description: 'The native staking and governance token of Empower.',
+        denom_units: [
+          {
+            denom: 'umpwr',
+            exponent: 0
+          },
+          {
+            denom: 'mpwr',
+            exponent: 6
+          }
+        ],
+        base: 'umpwr',
+        name: 'MPWR',
+        display: 'mpwr',
+        symbol: 'MPWR',
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.svg'
+        }
       }
     ]
   },
@@ -8222,6 +8408,28 @@ const assets: AssetList[] = [
         logo_URIs: {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/boneluna.png'
         }
+      },
+      {
+        description: 'RAC',
+        denom_units: [
+          {
+            denom:
+              'factory/migaloo1eqntnl6tzcj9h86psg4y4h6hh05g2h9nj8e09l/urac',
+            exponent: 0
+          },
+          {
+            denom: 'RAC',
+            exponent: 6
+          }
+        ],
+        base: 'factory/migaloo1eqntnl6tzcj9h86psg4y4h6hh05g2h9nj8e09l/urac',
+        name: 'RAC',
+        display: 'RAC',
+        symbol: 'RAC',
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rac.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rac.png'
+        }
       }
     ]
   },
@@ -8476,7 +8684,8 @@ const assets: AssetList[] = [
         logo_URIs: {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg',
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png'
-        }
+        },
+        coingecko_id: 'nolus'
       }
     ]
   },
@@ -15917,15 +16126,19 @@ const assets: AssetList[] = [
         description: 'The native token of Archway testnetwork',
         denom_units: [
           {
-            denom: 'uconst',
+            denom: 'aconst',
             exponent: 0
           },
           {
+            denom: 'uconst',
+            exponent: 12
+          },
+          {
             denom: 'const',
-            exponent: 6
+            exponent: 18
           }
         ],
-        base: 'uconst',
+        base: 'aconst',
         name: 'Archway',
         display: 'const',
         symbol: 'CONST'
@@ -16471,7 +16684,11 @@ const assets: AssetList[] = [
         base: 'ppica',
         name: 'Pica',
         display: 'pica',
-        symbol: 'PICA'
+        symbol: 'PICA',
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/composable.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/composable.png'
+        }
       }
     ]
   },
@@ -18263,6 +18480,61 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../assetlist.schema.json',
+    chain_name: 'vincechaintestnet',
+    assets: [
+      {
+        description:
+          'Vince Chain is an Industry-Grade Blockchain For DeFi, Remote work, Gaming, Web3 and will power the new internet.',
+        denom_units: [
+          {
+            denom: 'avce',
+            exponent: 0
+          },
+          {
+            denom: 'vce',
+            exponent: 18
+          }
+        ],
+        base: 'avce',
+        name: 'VinceChain',
+        display: 'vce',
+        symbol: 'VCE',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vincechain/images/vince.png'
+        },
+        coingecko_id: ''
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_name: 'wavehashtestnet',
+    assets: [
+      {
+        description: 'WaveHash A Permissioned Blockchain',
+        denom_units: [
+          {
+            denom: 'uwahax',
+            exponent: 0
+          },
+          {
+            denom: 'wahax',
+            exponent: 6
+          }
+        ],
+        base: 'uwahax',
+        name: 'WaveHash',
+        display: 'wahax',
+        symbol: 'WAHAX',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/wavehashtestnet/images/WaveHash.png'
+        },
+        coingecko_id: ''
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
     chain_name: 'tgrade',
     assets: [
       {
@@ -18426,34 +18698,6 @@ const assets: AssetList[] = [
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png'
         },
         coingecko_id: 'vidulum'
-      }
-    ]
-  },
-  {
-    $schema: '../assetlist.schema.json',
-    chain_name: 'vincechain',
-    assets: [
-      {
-        description:
-          'Vince Chain is an Industry-Grade Blockchain For DeFi, Remote work, Gaming, Web3 and will power the new internet.',
-        denom_units: [
-          {
-            denom: 'avce',
-            exponent: 0
-          },
-          {
-            denom: 'vce',
-            exponent: 18
-          }
-        ],
-        base: 'avce',
-        name: 'VinceChain',
-        display: 'vce',
-        symbol: 'VCE',
-        logo_URIs: {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vincechain/images/vince.png'
-        },
-        coingecko_id: ''
       }
     ]
   },

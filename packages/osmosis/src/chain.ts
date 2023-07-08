@@ -195,7 +195,7 @@ const chain: Chain = {
       {
         id: '38ab18cb2ea1dfeb6232b429e1508f56b6ae5031',
         address: 'seed-osmosis-01.stakeflow.io:65535',
-        provider: 'Genesis Lab'
+        provider: 'Stakeflow'
       }
     ],
     persistent_peers: [
@@ -222,7 +222,12 @@ const chain: Chain = {
       {
         id: '38ab18cb2ea1dfeb6232b429e1508f56b6ae5031',
         address: 'peer-osmosis-01.stakeflow.io:65535',
-        provider: 'Genesis Lab'
+        provider: 'Stakeflow'
+      },
+      {
+        id: '6f1d92857e39a6f26a3a914f807064824c255939',
+        address: '65.21.91.99:16956',
+        provider: 'Staketab'
       }
     ]
   },
@@ -269,10 +274,6 @@ const chain: Chain = {
         provider: 'Stakin'
       },
       {
-        address: 'https://rpc-osmosis.goldenratiostaking.net',
-        provider: 'Golden Ratio Staking'
-      },
-      {
         address: 'https://rpc.osl.zone',
         provider: 'Osmosis Support Lab'
       },
@@ -289,16 +290,16 @@ const chain: Chain = {
         provider: 'OnFinality'
       },
       {
-        address: 'https://osmosis.rpc.silknodes.io',
-        provider: 'Silk Nodes'
-      },
-      {
         address: 'https://osmosis.rpc.kjnodes.com',
         provider: 'kjnodes'
       },
       {
         address: 'https://rpc-osmosis-01.stakeflow.io',
-        provider: 'Genesis Lab'
+        provider: 'Stakeflow'
+      },
+      {
+        address: 'https://osmosis-rpc.staketab.org:443',
+        provider: 'Staketab'
       }
     ],
     rest: [
@@ -321,10 +322,6 @@ const chain: Chain = {
       {
         address: 'https://rest-osmosis.ecostake.com',
         provider: 'ecostake'
-      },
-      {
-        address: 'https://rest-osmosis.goldenratiostaking.net',
-        provider: 'Golden Ratio Staking'
       },
       {
         address: 'https://api-osmosis-ia.cosmosia.notional.ventures',
@@ -355,16 +352,16 @@ const chain: Chain = {
         provider: 'ivaldilabs'
       },
       {
-        address: 'https://osmosis.api.silknodes.io',
-        provider: 'Silk Nodes'
-      },
-      {
         address: 'https://osmosis.api.kjnodes.com',
         provider: 'kjnodes'
       },
       {
         address: 'https://api-osmosis-01.stakeflow.io',
-        provider: 'Genesis Lab'
+        provider: 'Stakeflow'
+      },
+      {
+        address: 'https://osmosis-rest.staketab.org',
+        provider: 'Staketab'
       },
       {
         address: 'https://osmosis.stakesystems.io/',
@@ -398,7 +395,11 @@ const chain: Chain = {
       },
       {
         address: 'grpc-osmosis-01.stakeflow.io:6754',
-        provider: 'Genesis Lab'
+        provider: 'Stakeflow'
+      },
+      {
+        address: 'services.staketab.com:9010',
+        provider: 'Staketab'
       }
     ]
   },

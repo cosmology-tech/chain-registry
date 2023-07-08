@@ -148,7 +148,8 @@ const asset_list: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png'
-      }
+      },
+      coingecko_id: 'axlusdc'
     },
     {
       description: "Frax's fractional-algorithmic stablecoin on Axelar",
@@ -2901,8 +2902,10 @@ const asset_list: AssetList = {
           exponent: 6
         }
       ],
+      address:
+        'osmo14klwqgkmackvx2tqa0trtg69dmy0nrg4ntq4gjgw2za4734r5seqjqm4gm',
       base: 'ibc/3616134E71F4F7C0AFD22C439567E8C514BE88955903834F4580D9E3E4E3470F',
-      name: 'IBCX',
+      name: 'IBCX Core <Product of ION DAO>',
       display: 'ibcx',
       symbol: 'IBCX',
       logo_URIs: {
@@ -2915,6 +2918,46 @@ const asset_list: AssetList = {
             channel_id: 'channel-42',
             base_denom:
               'factory/osmo14klwqgkmackvx2tqa0trtg69dmy0nrg4ntq4gjgw2za4734r5seqjqm4gm/uibcx',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-0'
+          }
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/D4A5AE8E8DD0D49F559F9D85EDF17643E3444BD424FFE7158A8187A5BAFDD463',
+          exponent: 0,
+          aliases: [
+            'factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx'
+          ]
+        },
+        {
+          denom: 'stibcx',
+          exponent: 6
+        }
+      ],
+      address:
+        'osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k',
+      base: 'ibc/D4A5AE8E8DD0D49F559F9D85EDF17643E3444BD424FFE7158A8187A5BAFDD463',
+      name: 'stIBCX Core <Product of ION DAO>',
+      display: 'stibcx',
+      symbol: 'stIBCX',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/stibcx.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/stibcx.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-42',
+            base_denom:
+              'factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx',
             chain_name: 'osmosis'
           },
           chain: {
@@ -3040,6 +3083,191 @@ const asset_list: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg'
       },
       keywords: ['canon']
+    },
+    {
+      description: 'QCK - native token of Quicksilver',
+      denom_units: [
+        {
+          denom:
+            'ibc/27718E6B6B94C2BCF9A1ABB85CBE8AC95130B07817D21D7BC2D293F9295395D9',
+          exponent: 0,
+          aliases: ['uqck']
+        },
+        {
+          denom: 'qck',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/27718E6B6B94C2BCF9A1ABB85CBE8AC95130B07817D21D7BC2D293F9295395D9',
+      name: 'Quicksilver',
+      display: 'qck',
+      symbol: 'QCK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
+      },
+      coingecko_id: 'quicksilver',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-22',
+            base_denom: 'uqck',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-215'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Quicksilver Liquid Staked STARS',
+      denom_units: [
+        {
+          denom:
+            'ibc/A8329EF9938F24002D235DAD9DFF5FD7A7175E7691C74FB5D4C080DE76D15D4A',
+          exponent: 0,
+          aliases: ['uqstars']
+        },
+        {
+          denom: 'qstars',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/A8329EF9938F24002D235DAD9DFF5FD7A7175E7691C74FB5D4C080DE76D15D4A',
+      name: 'Quicksilver Liquid Staked STARS',
+      display: 'qstars',
+      symbol: 'qSTARS',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-22',
+            base_denom: 'uqstars',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-215'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qstars.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qstars.svg'
+      }
+    },
+    {
+      description: 'Quicksilver Liquid Staked ATOM',
+      denom_units: [
+        {
+          denom:
+            'ibc/15002134A042F4E60A1BB7AF5C71B6621D362485A6FE7CBBE9CD22B4497515D4',
+          exponent: 0,
+          aliases: ['uqatom']
+        },
+        {
+          denom: 'qatom',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/15002134A042F4E60A1BB7AF5C71B6621D362485A6FE7CBBE9CD22B4497515D4',
+      name: 'Quicksilver Liquid Staked ATOM',
+      display: 'qatom',
+      symbol: 'qATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-22',
+            base_denom: 'uqatom',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-215'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qatom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qatom.svg'
+      }
+    },
+    {
+      description: 'Quicksilver Liquid Staked REGEN',
+      denom_units: [
+        {
+          denom:
+            'ibc/E5E2DC973727C8DEB8A3D0E076D148A92667709C95411BE1C08A1C3D716A6F70',
+          exponent: 0,
+          aliases: ['uqregen']
+        },
+        {
+          denom: 'qregen',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/E5E2DC973727C8DEB8A3D0E076D148A92667709C95411BE1C08A1C3D716A6F70',
+      name: 'Quicksilver Liquid Staked Regen',
+      display: 'qregen',
+      symbol: 'qREGEN',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-22',
+            base_denom: 'uqregen',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-215'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qregen.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qregen.svg'
+      }
+    },
+    {
+      description: 'Quicksilver Liquid Staked OSMO',
+      denom_units: [
+        {
+          denom:
+            'ibc/0979EC8BBF3B0EDF0D684754CB193F98B5CA5FD66F64B88BB9440BC1A30236B7',
+          exponent: 0,
+          aliases: ['uqosmo']
+        },
+        {
+          denom: 'qosmo',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/0979EC8BBF3B0EDF0D684754CB193F98B5CA5FD66F64B88BB9440BC1A30236B7',
+      name: 'Quicksilver Liquid Staked OSMO',
+      display: 'qosmo',
+      symbol: 'qOSMO',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-22',
+            base_denom: 'uqosmo',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-215'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qosmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qosmo.svg'
+      }
     },
     {
       description: 'The native token of Secret Network',
@@ -3469,6 +3697,41 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stumee.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stumee.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/F2FED6CFFF814D916DB3788406455D3E0927C367BACA1EAC523C9E63BDC15593',
+          exponent: 0,
+          aliases: ['stucmdx']
+        },
+        {
+          denom: 'stcmdx',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/F2FED6CFFF814D916DB3788406455D3E0927C367BACA1EAC523C9E63BDC15593',
+      name: 'stCMDX',
+      display: 'stcmdx',
+      symbol: 'stCMDX',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-24',
+            base_denom: 'stucmdx',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-139'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stcmdx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stcmdx.svg'
       }
     },
     {
