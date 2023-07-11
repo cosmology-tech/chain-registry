@@ -751,6 +751,204 @@ exports[`getAssetLists 1`] = `
         ],
       },
       {
+        "base": "ibc/D652CF3DD8442315EEC2F45DFB643B9C3F73BC0E2A563EB33E9AD4F3A077BCE1",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+            ],
+            "denom": "ibc/D652CF3DD8442315EEC2F45DFB643B9C3F73BC0E2A563EB33E9AD4F3A077BCE1",
+            "exponent": 0,
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6,
+          },
+        ],
+        "display": "usdc",
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
+      },
+      {
+        "base": "ibc/994045F6FA3BDBEADB44673B363CC1962870C73274DF7BFDA3D67C1A31B92357",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+            ],
+            "denom": "ibc/994045F6FA3BDBEADB44673B363CC1962870C73274DF7BFDA3D67C1A31B92357",
+            "exponent": 0,
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6,
+          },
+        ],
+        "display": "stosmo",
+        "name": "stOSMO",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
+      },
+      {
+        "base": "ibc/81844CA896A4C233B331A468123AF2AACDC580DE294C5528A6E3F661A136795C",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+            ],
+            "denom": "ibc/81844CA896A4C233B331A468123AF2AACDC580DE294C5528A6E3F661A136795C",
+            "exponent": 0,
+          },
+          {
+            "denom": "atom",
+            "exponent": 6,
+          },
+        ],
+        "display": "atom",
+        "name": "Cosmos Hub Atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
+      },
+      {
+        "base": "ibc/832211C8B733177241E36AD688CCBF38C9254598120B7FB54736B76DFEF91FEE",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+            ],
+            "denom": "ibc/832211C8B733177241E36AD688CCBF38C9254598120B7FB54736B76DFEF91FEE",
+            "exponent": 0,
+          },
+          {
+            "denom": "statom",
+            "exponent": 6,
+          },
+        ],
+        "display": "statom",
+        "name": "stATOM",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
+      },
+      {
+        "base": "ibc/24AB598706D1A5039B026EFDCDEA9BE72651513C1BF67878EB044DDBE061C543",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+            ],
+            "denom": "ibc/24AB598706D1A5039B026EFDCDEA9BE72651513C1BF67878EB044DDBE061C543",
+            "exponent": 0,
+          },
+          {
+            "denom": "weth",
+            "exponent": 18,
+          },
+        ],
+        "display": "weth",
+        "name": "Wrapped Ether",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
+      },
+      {
+        "base": "ibc/90917DBA892E9DAB893589DDE17D2F407DC93C57245099290BD66E48621D6F6A",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+            ],
+            "denom": "ibc/90917DBA892E9DAB893589DDE17D2F407DC93C57245099290BD66E48621D6F6A",
+            "exponent": 0,
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8,
+          },
+        ],
+        "display": "wbtc",
+        "name": "Wrapped Bitcoin",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
+      },
+      {
         "base": "ibc/E40F6BAB4FFBDB908F63366155A793AB6B42EEB4FCD856C1DF7C91BE7F252D61",
         "coingecko_id": "quicksilver",
         "denom_units": [
