@@ -276,6 +276,10 @@ const chain: Chain = {
       {
         address: 'https://rpc-juno.validavia.me',
         provider: 'Validavia'
+      },
+      {
+        address: 'https://juno-rpc.w3coins.io',
+        provider: 'w3coins'
       }
     ],
     rest: [
@@ -370,6 +374,10 @@ const chain: Chain = {
       {
         address: 'https://lcd-juno.validavia.me',
         provider: 'Validavia'
+      },
+      {
+        address: 'https://juno-api.w3coins.io',
+        provider: 'w3coins'
       }
     ],
     grpc: [
@@ -420,6 +428,10 @@ const chain: Chain = {
       {
         address: 'grpc-juno-01.stakeflow.io:2302',
         provider: 'Stakeflow'
+      },
+      {
+        address: 'juno-grpc.w3coins.io:12690',
+        provider: 'w3coins'
       }
     ]
   },

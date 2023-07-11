@@ -1430,6 +1430,10 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
+          address: 'https://rpc-archway.cosmos-spaces.cloud',
+          provider: 'Cosmos Spaces'
+        },
+        {
           address: 'https://rpc.mainnet.archway.io',
           provider: 'Archway Foundation'
         },
@@ -1504,6 +1508,10 @@ const chains: Chain[] = [
           provider: 'kjnodes'
         },
         {
+          address: 'https://api-archway.cosmos-spaces.cloud',
+          provider: 'Cosmos Spaces'
+        },
+        {
           address: 'https://api-archway.cryptech.com.ua',
           provider: 'cryptech'
         },
@@ -1537,6 +1545,10 @@ const chains: Chain[] = [
         }
       ],
       grpc: [
+        {
+          address: 'grpc-archway.cosmos-spaces.cloud:2490',
+          provider: 'Cosmos Spaces'
+        },
         {
           address: 'grpc.mainnet.archway.io:443',
           provider: 'Archway Foundation'
@@ -5144,6 +5156,10 @@ const chains: Chain[] = [
           provider: 'NodeStake'
         },
         {
+          address: 'c4e.grpc.bccnodes.com:443',
+          provider: 'BccNodes'
+        },
+        {
           address: 'grpc-c4e.takeshi.team:443',
           provider: 'TAKESHI'
         },
@@ -5707,10 +5723,6 @@ const chains: Chain[] = [
         {
           address: 'https://chihuahua-mainnet-lcd.autostake.com:443',
           provider: 'AutoStake 🛡️ Slash Protected'
-        },
-        {
-          address: 'http://chihuahua.api.staking-explorer.com',
-          provider: 'chihuahua.staking-explorer.com'
         }
       ],
       grpc: [
@@ -9290,6 +9302,11 @@ const chains: Chain[] = [
           id: 'ebc272824924ea1a27ea3183dd0b9ba713494f83',
           address: 'empowerchain-mainnet-peer.autostake.com:27326',
           provider: 'AutoStake 🛡️ Slash Protected'
+        },
+        {
+          id: '178718a993161cc20f9d0de2bbef9a3aec5c1d3d',
+          address: 'rpc.empower.indonode.net:52656',
+          provider: 'Indonode'
         }
       ]
     },
@@ -9314,6 +9331,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-empowerchain.mzonder.com:443',
           provider: 'MZONDER'
+        },
+        {
+          address: 'https://rpc.empower.indonode.net:443',
+          provider: 'Indonode'
         }
       ],
       rest: [
@@ -9336,6 +9357,10 @@ const chains: Chain[] = [
         {
           address: 'https://api-empowerchain.mzonder.com:443',
           provider: 'MZONDER'
+        },
+        {
+          address: 'https://api.empower.indonode.net:443',
+          provider: 'Indonode'
         }
       ],
       grpc: [
@@ -12235,6 +12260,10 @@ const chains: Chain[] = [
           provider: 'Notional'
         },
         {
+          address: 'https://rpc-cached-injective.cosmos-spaces.cloud',
+          provider: 'Cosmos Spaces'
+        },
+        {
           address: 'https://injective-mainnet-rpc.autostake.com:443',
           provider: 'AutoStake.com'
         },
@@ -12285,6 +12314,10 @@ const chains: Chain[] = [
           provider: 'POSTHUMAN ꝏ DVS'
         },
         {
+          address: 'https://api-injective.cosmos-spaces.cloud',
+          provider: 'Cosmos Spaces'
+        },
+        {
           address: 'https://injective-mainnet-lcd.autostake.com:443',
           provider: 'AutoStake.com'
         },
@@ -12329,6 +12362,10 @@ const chains: Chain[] = [
         {
           address: 'injective-mainnet-grpc.autostake.com:443',
           provider: 'AutoStake.com'
+        },
+        {
+          address: 'grpc-injective.cosmos-spaces.cloud:9900',
+          provider: 'Cosmos Spaces'
         },
         {
           address: 'grpc.injective.posthuman.digital:80',
@@ -20523,8 +20560,7 @@ const chains: Chain[] = [
       ]
     },
     logo_URIs: {
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.svg'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png'
     },
     peers: {
       seeds: [
@@ -21594,6 +21630,10 @@ const chains: Chain[] = [
           provider: 'Rebuschain'
         },
         {
+          address: 'https://rebus.rpc.bccnodes.com:443',
+          provider: 'BccNodes'
+        },
+        {
           address: 'https://rebus.rpc.manticore.team:443/',
           provider: 'MantiCore'
         },
@@ -21656,6 +21696,10 @@ const chains: Chain[] = [
           provider: 'Rebuschain'
         },
         {
+          address: 'https://rebus.api.bccnodes.com:443',
+          provider: 'BccNodes'
+        },
+        {
           address: 'https://rebus.api.manticore.team:443/',
           provider: 'MantiCore'
         },
@@ -21710,6 +21754,10 @@ const chains: Chain[] = [
           provider: 'MantiCore'
         },
         {
+          address: 'rebus.grpc.bccnodes.com:14090',
+          provider: 'BccNodes'
+        },
+        {
           address: 'grpc.rebus.nodestake.top:443',
           provider: 'NodeStake'
         },
@@ -21745,6 +21793,11 @@ const chains: Chain[] = [
         kind: 'NodeStake',
         url: 'https://explorer.nodestake.top/rebus',
         tx_page: 'https://explorer.nodestake.top/rebus/tx/${txHash}'
+      },
+      {
+        kind: 'BccNodes',
+        url: 'https://explorer.bccnodes.com/rebus-M',
+        tx_page: 'https://explorer.bccnodes.com/rebus-M/tx/${txHash}'
       },
       {
         kind: 'Brochain',
@@ -24159,6 +24212,10 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
+          address: 'https://stride.rpc.bccnodes.com:443',
+          provider: 'BccNodes'
+        },
+        {
           address: 'https://stride-rpc.polkachu.com/',
           provider: 'Polkachu'
         },
@@ -24236,6 +24293,10 @@ const chains: Chain[] = [
         }
       ],
       rest: [
+        {
+          address: 'https://stride.api.bccnodes.com:443',
+          provider: 'BccNodes'
+        },
         {
           address: 'https://stride-api.polkachu.com/',
           provider: 'Polkachu'
@@ -24315,6 +24376,10 @@ const chains: Chain[] = [
       ],
       grpc: [
         {
+          address: 'stride.grpc.bccnodes.com:443',
+          provider: 'BccNodes'
+        },
+        {
           address: 'stride-grpc.polkachu.com:12290',
           provider: 'Polkachu'
         },
@@ -24357,6 +24422,13 @@ const chains: Chain[] = [
       ]
     },
     explorers: [
+      {
+        kind: 'BccNodes',
+        url: 'https://explorer.bccnodes.com/stride-M',
+        tx_page: 'https://explorer.bccnodes.com/stride-M/tx/${txHash}',
+        account_page:
+          'https://explorer.bccnodes.com/stride-M/account/${accountAddress}'
+      },
       {
         kind: 'EZ Staking Tools',
         url: 'https://ezstaking.tools/stride',
@@ -25504,8 +25576,14 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/terra-money/core/',
-      recommended_version: 'v2.3.5',
-      compatible_versions: ['v2.3.0', 'v2.3.1', 'v2.3.2', 'v2.3.4', 'v2.3.5'],
+      recommended_version: 'v2.4.1',
+      compatible_versions: ['v2.4.1'],
+      binaries: {
+        'linux/amd64':
+          'https://github.com/terra-money/core/releases/download/v2.1.4/terra_2.1.4_Linux_x86_64.tar.gz?checksum=sha256:e05b85ae2eac5df886f4f9d0ecf719b82ebe4da4fc59cae93a34af7c3e89ddfb',
+        'darwin/amd64':
+          'https://github.com/terra-money/core/releases/download/v2.1.4/terra_2.1.4_Darwin_x86_64.tar.gz?checksum=sha256:4b66ebf800cb903f7b6c07686636eff43e686f5956c9fadc307f077afd7f23bb'
+      },
       genesis: {
         name: 'v2.0',
         genesis_url: 'https://tfl-phoenix-1.s3.amazonaws.com/genesis.json'
@@ -25590,7 +25668,7 @@ const chains: Chain[] = [
           cosmwasm_version: 'v0.30.0',
           ibc_go_version: 'v6.1.1',
           consensus: {
-            type: 'cometbft',
+            type: 'tendermint',
             version: 'v0.34.27'
           },
           binaries: {
@@ -25598,19 +25676,29 @@ const chains: Chain[] = [
               'https://github.com/terra-money/core/releases/download/v2.3.5/terra_2.3.5_Linux_arm64.tar.gz?checksum=sha256:93b0c508e16f779b93f0e76629ab247ddaf5fa0db96573405b3b2b11e3eb6859',
             'linux/amd64':
               'https://github.com/terra-money/core/releases/download/v2.3.5/terra_2.3.5_Linux_x86_64.tar.gz?checksum=sha256:8c3ac7392436b102dcdd63fd275fa73b1e0201e65e420af71954782cee682ac6'
-          }
+          },
+          next_version_name: 'v2.4'
         },
         {
           name: 'v2.4',
-          tag: 'v2.4.0',
+          tag: 'v2.4.1',
+          proposal: 4737,
+          height: 5994365,
           cosmos_sdk_version: 'v0.46.11',
           cosmwasm_enabled: true,
           cosmwasm_version: 'v0.30.0',
           ibc_go_version: 'v6.1.1',
           consensus: {
-            type: 'cometbft',
+            type: 'tendermint',
             version: 'v0.34.27'
-          }
+          },
+          binaries: {
+            'linux/arm64':
+              'https://github.com/terra-money/core/releases/download/v2.4.1/terra_2.4.1_Linux_arm64.tar.gz',
+            'linux/amd64':
+              'https://github.com/terra-money/core/releases/download/v2.4.1/terra_2.4.1_Linux_x86_64.tar.gz'
+          },
+          next_version_name: ''
         }
       ]
     },
@@ -27777,8 +27865,8 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/elys-network/elys',
-      recommended_version: 'v0.4.0',
-      compatible_versions: ['v0.4.0'],
+      recommended_version: 'v0.8.0',
+      compatible_versions: ['v0.8.0'],
       cosmos_sdk_version: 'v0.46',
       consensus: {
         type: 'tendermint',
@@ -27823,6 +27911,78 @@ const chains: Chain[] = [
           binaries: {
             'linux/amd64':
               'https://github.com/elys-network/elys/releases/download/v0.4.0/elys._v0.4.0_linux_amd64.tar.gz'
+          }
+        },
+        {
+          name: 'v0.5.0',
+          recommended_version: 'v0.5.0',
+          compatible_versions: ['v0.5.0'],
+          binaries: {
+            'linux/amd64':
+              'https://github.com/elys-network/elys/releases/download/v0.5.0/elys._v0.5.0_linux_amd64.tar.gz'
+          }
+        },
+        {
+          name: 'v0.5.1',
+          recommended_version: 'v0.5.1',
+          compatible_versions: ['v0.5.1'],
+          binaries: {
+            'linux/amd64':
+              'https://github.com/elys-network/elys/releases/download/v0.5.1/elys._v0.5.1_linux_amd64.tar.gz'
+          }
+        },
+        {
+          name: 'v0.5.2',
+          recommended_version: 'v0.5.2',
+          compatible_versions: ['v0.5.2'],
+          binaries: {
+            'linux/amd64':
+              'https://github.com/elys-network/elys/releases/download/v0.5.0/elys._v0.5.2_linux_amd64.tar.gz'
+          }
+        },
+        {
+          name: 'v0.5.3',
+          recommended_version: 'v0.5.3',
+          compatible_versions: ['v0.5.3'],
+          binaries: {
+            'linux/amd64':
+              'https://github.com/elys-network/elys/releases/download/v0.5.3/elys._v0.5.3_linux_amd64.tar.gz'
+          }
+        },
+        {
+          name: 'v0.5.4',
+          recommended_version: 'v0.5.4',
+          compatible_versions: ['v0.5.4'],
+          binaries: {
+            'linux/amd64':
+              'https://github.com/elys-network/elys/releases/download/v0.5.4/elys._v0.5.4_linux_amd64.tar.gz'
+          }
+        },
+        {
+          name: 'v0.6.0',
+          recommended_version: 'v0.6.0',
+          compatible_versions: ['v0.6.0'],
+          binaries: {
+            'linux/amd64':
+              'https://github.com/elys-network/elys/releases/download/v0.6.0/elys._v0.6.0_linux_amd64.tar.gz'
+          }
+        },
+        {
+          name: 'v0.7.0',
+          recommended_version: 'v0.7.0',
+          compatible_versions: ['v0.7.0'],
+          binaries: {
+            'linux/amd64':
+              'https://github.com/elys-network/elys/releases/download/v0.7.0/elys._v0.7.0_linux_amd64.tar.gz'
+          }
+        },
+        {
+          name: 'v0.8.0',
+          recommended_version: 'v0.8.0',
+          compatible_versions: ['v0.8.0'],
+          binaries: {
+            'linux/amd64':
+              'https://github.com/elys-network/elys/releases/download/v0.8.0/elys._v0.8.0_linux_amd64.tar.gz'
           }
         }
       ]
@@ -34662,6 +34822,10 @@ const chains: Chain[] = [
           provider: 'Brochain'
         },
         {
+          address: 'https://uptick.rpc.bccnodes.com:443',
+          provider: 'BccNodes'
+        },
+        {
           address: 'https://rpc.uptick.nodestake.top',
           provider: 'NodeStake'
         },
@@ -34700,6 +34864,10 @@ const chains: Chain[] = [
           provider: 'Brochain'
         },
         {
+          address: 'https://uptick.api.bccnodes.com:443',
+          provider: 'BccNodes'
+        },
+        {
           address: 'https://api.uptick.nodestake.top',
           provider: 'NodeStake'
         },
@@ -34736,6 +34904,10 @@ const chains: Chain[] = [
         {
           address: 'https://grpc.uptick.nodestake.top',
           provider: 'NodeStake'
+        },
+        {
+          address: 'uptick.rpc.bccnodes.com:9690',
+          provider: 'BccNodes'
         },
         {
           address: 'uptick.grpc.kjnodes.com:11590',
@@ -34783,6 +34955,11 @@ const chains: Chain[] = [
         kind: 'NodeStake Explorer',
         url: 'https://explorer.nodestake.top/uptick',
         tx_page: 'https://explorer.nodestake.top/uptick/tx/${txHash}'
+      },
+      {
+        kind: 'BccNodes Explorer',
+        url: 'https://explorer.bccnodes.com/uptick-M',
+        tx_page: 'https://explorer.bccnodes.com/uptick-M/tx/${txHash}'
       },
       {
         kind: '🔥STAVR🔥 Explorer',

@@ -306,6 +306,47 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'The native token of Archway network',
+      denom_units: [
+        {
+          denom:
+            'ibc/23AB778D694C1ECFC59B91D8C399C115CC53B0BD1C61020D8E19519F002BDD85',
+          exponent: 0,
+          aliases: ['aarch']
+        },
+        {
+          denom: 'uarch',
+          exponent: 12
+        },
+        {
+          denom: 'arch',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/23AB778D694C1ECFC59B91D8C399C115CC53B0BD1C61020D8E19519F002BDD85',
+      name: 'Archway',
+      display: 'arch',
+      symbol: 'ARCH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+      },
+      coingecko_id: 'archway',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'aarch',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-1429'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Arkhadian',
       denom_units: [
         {
@@ -3048,6 +3089,78 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'The native staking and governance token of Centauri.',
+      denom_units: [
+        {
+          denom:
+            'ibc/56D7C03B8F6A07AD322EEE1BEF3AE996E09D1C1E34C27CF37E0D4A0AC5972516',
+          exponent: 0,
+          aliases: ['ppica']
+        },
+        {
+          denom: 'pica',
+          exponent: 12
+        }
+      ],
+      base: 'ibc/56D7C03B8F6A07AD322EEE1BEF3AE996E09D1C1E34C27CF37E0D4A0AC5972516',
+      name: 'Pica',
+      display: 'pica',
+      symbol: 'PICA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'ppica',
+            chain_name: 'composable'
+          },
+          chain: {
+            channel_id: 'channel-1279'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'The native staking and governance token of Kusama Relay Chain.',
+      denom_units: [
+        {
+          denom:
+            'ibc/6727B2F071643B3841BD535ECDD4ED9CAE52ABDD0DCD07C3630811A7A37B215C',
+          exponent: 0,
+          aliases: [
+            'ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9'
+          ]
+        },
+        {
+          denom: 'ksm',
+          exponent: 12
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/6727B2F071643B3841BD535ECDD4ED9CAE52ABDD0DCD07C3630811A7A37B215C',
+      name: 'KSM',
+      display: 'ksm',
+      symbol: 'KSM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9',
+            chain_name: 'composable'
+          },
+          chain: {
+            channel_id: 'channel-1279'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native staking and governance token of the Cosmos Hub.',
       denom_units: [
         {
@@ -3645,6 +3758,41 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-37'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native staking and governance token of Empower.',
+      denom_units: [
+        {
+          denom:
+            'ibc/DD3938D8131F41994C1F01F4EB5233DEE9A0A5B787545B9A07A321925655BF38',
+          exponent: 0,
+          aliases: ['umpwr']
+        },
+        {
+          denom: 'mpwr',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/DD3938D8131F41994C1F01F4EB5233DEE9A0A5B787545B9A07A321925655BF38',
+      name: 'MPWR',
+      display: 'mpwr',
+      symbol: 'MPWR',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'umpwr',
+            chain_name: 'empowerchain'
+          },
+          chain: {
+            channel_id: 'channel-1411'
           }
         }
       ]
@@ -5415,6 +5563,45 @@ const asset_list: AssetList = {
       }
     },
     {
+      description: 'RAC',
+      denom_units: [
+        {
+          denom:
+            'ibc/DDF1CD4CDC14AE2D6A3060193624605FF12DEE71CF1F8C19EEF35E9447653493',
+          exponent: 0,
+          aliases: [
+            'factory/migaloo1eqntnl6tzcj9h86psg4y4h6hh05g2h9nj8e09l/urac'
+          ]
+        },
+        {
+          denom: 'RAC',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/DDF1CD4CDC14AE2D6A3060193624605FF12DEE71CF1F8C19EEF35E9447653493',
+      name: 'RAC',
+      display: 'RAC',
+      symbol: 'RAC',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rac.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rac.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom:
+              'factory/migaloo1eqntnl6tzcj9h86psg4y4h6hh05g2h9nj8e09l/urac',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-642'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Neutron chain.',
       denom_units: [
         {
@@ -5623,6 +5810,7 @@ const asset_list: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png'
       },
+      coingecko_id: 'nolus',
       traces: [
         {
           type: 'ibc',
@@ -6422,6 +6610,79 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qosmo.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qosmo.svg'
       }
+    },
+    {
+      description: 'The native currency of the Realio Network.',
+      denom_units: [
+        {
+          denom:
+            'ibc/1CDF9C7D073DD59ED06F15DB08CC0901F2A24759BE70463570E8896F9A444ADF',
+          exponent: 0,
+          aliases: ['ario']
+        },
+        {
+          denom: 'rio',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/1CDF9C7D073DD59ED06F15DB08CC0901F2A24759BE70463570E8896F9A444ADF',
+      name: 'Realio Network',
+      display: 'rio',
+      symbol: 'RIO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rio.png'
+      },
+      coingecko_id: 'realio-network',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'ario',
+            chain_name: 'realio'
+          },
+          chain: {
+            channel_id: 'channel-1424'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'A hybrid equity token that represent ownership of the Realio Ecosystem and provides utility functions on the Network.',
+      denom_units: [
+        {
+          denom:
+            'ibc/F82E97B58F45D32AE2199AE8AD9979FFD35CDC823BB3EB34C36349E374A8EFE3',
+          exponent: 0,
+          aliases: ['arst']
+        },
+        {
+          denom: 'rst',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/F82E97B58F45D32AE2199AE8AD9979FFD35CDC823BB3EB34C36349E374A8EFE3',
+      name: 'Realio Security Token',
+      display: 'rst',
+      symbol: 'RST',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rst.png'
+      },
+      coingecko_id: '',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'arst',
+            chain_name: 'realio'
+          },
+          chain: {
+            channel_id: 'channel-1424'
+          }
+        }
+      ]
     },
     {
       description: 'REBUS, the native coin of the Rebus chain.',

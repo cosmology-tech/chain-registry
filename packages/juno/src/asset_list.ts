@@ -2590,6 +2590,45 @@ const asset_list: AssetList = {
       }
     },
     {
+      description: 'RAC',
+      denom_units: [
+        {
+          denom:
+            'ibc/D8D6271EC54E3A96C6B9FB6C2BA9E99692B07CEB42754638029657072EA48337',
+          exponent: 0,
+          aliases: [
+            'factory/migaloo1eqntnl6tzcj9h86psg4y4h6hh05g2h9nj8e09l/urac'
+          ]
+        },
+        {
+          denom: 'RAC',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/D8D6271EC54E3A96C6B9FB6C2BA9E99692B07CEB42754638029657072EA48337',
+      name: 'RAC',
+      display: 'RAC',
+      symbol: 'RAC',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rac.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rac.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'factory/migaloo1eqntnl6tzcj9h86psg4y4h6hh05g2h9nj8e09l/urac',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-210'
+          }
+        }
+      ]
+    },
+    {
       description: 'The permissioned staking asset for Noble Chain',
       denom_units: [
         {
