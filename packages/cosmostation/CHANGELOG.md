@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.20.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/cosmostation@1.20.0...@chain-registry/cosmostation@1.20.1) (2023-07-12)
+
+**Note:** Version bump only for package @chain-registry/cosmostation
+
+
+
+
+
 # [1.20.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/cosmostation@1.19.0...@chain-registry/cosmostation@1.20.0) (2023-07-11)
 
 **Note:** Version bump only for package @chain-registry/cosmostation
