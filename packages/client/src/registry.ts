@@ -64,14 +64,21 @@ export class ChainRegistryClient extends ChainRegistryFetcher {
       return `${baseUrl}/_IBC/${fileName}`;
     });
 
-    this.urls = [...chainUrls, ...assetlistUrls, ...ibcUrls];
+    this.urls = [
+      ...new Set([
+        ...chainUrls,
+        ...assetlistUrls,
+        ...ibcUrls,
+        ...(this.urls || [])
+      ])
+    ];
   }
 
   getChainUtil(chainName: string) {
     const chainInfo = this.getChainInfo(chainName);
     return new ChainRegistryChainUtil({
-      chain_name: chainName,
-      chain_info: chainInfo
+      chainName: chainName,
+      chainInfo: chainInfo
     });
   }
 }
