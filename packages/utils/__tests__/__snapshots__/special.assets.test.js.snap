@@ -949,6 +949,43 @@ exports[`getAssetLists 1`] = `
         "type_asset": "ics20",
       },
       {
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/7D3D4489F954CC8939EE3A293DF2BFA65B9D9C62A5EA735BA21F99A4138BA4FE",
+        "denom_units": [
+          {
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+            ],
+            "denom": "ibc/7D3D4489F954CC8939EE3A293DF2BFA65B9D9C62A5EA735BA21F99A4138BA4FE",
+            "exponent": 0,
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6,
+          },
+        ],
+        "description": "ERIS liquid staked OSMO",
+        "display": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png",
+        },
+        "name": "ERIS Amplified OSMO",
+        "symbol": "ampOSMO",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
         "base": "ibc/E40F6BAB4FFBDB908F63366155A793AB6B42EEB4FCD856C1DF7C91BE7F252D61",
         "coingecko_id": "quicksilver",
         "denom_units": [
