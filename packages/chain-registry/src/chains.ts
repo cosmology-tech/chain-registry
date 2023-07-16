@@ -1095,7 +1095,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'akash-seed-1.allnodes.me:26656',
+          address: 'akash-seed-de.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
+        },
+        {
+          id: 'e726816f42831689eab9378d5d577f1d06d25716',
+          address: 'akash-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -1417,6 +1422,16 @@ const chains: Chain[] = [
           id: '20e1000e88125698264454a884812746c2eb4807',
           address: 'seeds.lavenderfive.com:11556',
           provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          id: 'b6c1198fa025ce24d26d90527c5d2b71f9399756',
+          address: 'seed-node.mms.team:34656',
+          provider: 'MMS'
+        },
+        {
+          id: '6471ac9ff8474373e8055d45b6246fd8c5204890',
+          address: 'archway.seed.mzonder.com:10756',
+          provider: 'MZONDER'
         }
       ],
       persistent_peers: [
@@ -1424,6 +1439,11 @@ const chains: Chain[] = [
           id: 'ebc272824924ea1a27ea3183dd0b9ba713494f83',
           address: 'archway-mainnet-peer.autostake.com:26946',
           provider: 'AutoStake 🛡️ Slash Protected'
+        },
+        {
+          id: 'a477bfcef79f283d82e531ec1a6717677c8caf59',
+          address: 'peer-archway.mms.team:56108',
+          provider: 'MMS'
         }
       ]
     },
@@ -1484,6 +1504,14 @@ const chains: Chain[] = [
         {
           address: 'https://archway-rpc.lavenderfive.com:443',
           provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          address: 'https://rpc-archway.mms.team',
+          provider: 'MMS'
+        },
+        {
+          address: 'https://rpc-archway.mzonder.com',
+          provider: 'MZONDER'
         }
       ],
       rest: [
@@ -1542,6 +1570,14 @@ const chains: Chain[] = [
         {
           address: 'https://archway-api.lavenderfive.com:443',
           provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          address: 'https://api-archway.mms.team',
+          provider: 'MMS'
+        },
+        {
+          address: 'https://api-archway.mzonder.com',
+          provider: 'MZONDER'
         }
       ],
       grpc: [
@@ -1580,6 +1616,14 @@ const chains: Chain[] = [
         {
           address: 'https://archway-grpc.lavenderfive.com:443',
           provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          address: 'grpc-archway.mms.team:443',
+          provider: 'MMS'
+        },
+        {
+          address: 'grpc-archway.mzonder.com:443',
+          provider: 'MZONDER'
         }
       ]
     },
@@ -1826,7 +1870,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'assetmantle-seed-1.allnodes.me:26656',
+          address: 'assetmantle-seed-de.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
+        },
+        {
+          id: 'e726816f42831689eab9378d5d577f1d06d25716',
+          address: 'assetmantle-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -2142,6 +2191,11 @@ const chains: Chain[] = [
           id: '20e1000e88125698264454a884812746c2eb4807',
           address: 'seeds.lavenderfive.com:21756',
           provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          id: 'd05e3f406ed2275ec86957c5983a27768350ac47',
+          address: 'seed-node.mms.team:26656',
+          provider: 'MMS'
         }
       ],
       persistent_peers: [
@@ -2179,6 +2233,11 @@ const chains: Chain[] = [
           id: 'da9f07269cac08619190dbce8b0978556315b359',
           address: 'p2p.aura.safeblock.space:26656',
           provider: 'Safe Block'
+        },
+        {
+          id: 'bdd32536c902de9b240a36f0b23641233a080351',
+          address: 'peer-aura.mms.team:27656',
+          provider: 'MMS'
         }
       ]
     },
@@ -2247,6 +2306,10 @@ const chains: Chain[] = [
         {
           address: 'https://aura-rpc.sergo.dev',
           provider: 'SerGo'
+        },
+        {
+          address: 'https://rpc-aura.mms.team',
+          provider: 'MMS'
         }
       ],
       rest: [
@@ -2313,6 +2376,10 @@ const chains: Chain[] = [
         {
           address: 'https://aura-api.sergo.dev',
           provider: 'SerGo'
+        },
+        {
+          address: 'https://api-aura.mms.team',
+          provider: 'MMS'
         }
       ],
       grpc: [
@@ -2355,6 +2422,10 @@ const chains: Chain[] = [
         {
           address: 'grpc.aura.silentvalidator.com:443',
           provider: 'silent'
+        },
+        {
+          address: 'grpc-aura.mms.team:443',
+          provider: 'MMS'
         }
       ]
     },
@@ -2550,6 +2621,10 @@ const chains: Chain[] = [
           provider: 'Chainode'
         },
         {
+          address: 'https://rpc-cached-axelar.cosmos-spaces.cloud',
+          provider: 'Cosmos Spaces'
+        },
+        {
           address: 'https://axelar-rpc.pops.one:443',
           provider: 'p-ops'
         },
@@ -2632,6 +2707,10 @@ const chains: Chain[] = [
           provider: 'Chainode'
         },
         {
+          address: 'https://api-axelar.cosmos-spaces.cloud',
+          provider: 'Cosmos Spaces'
+        },
+        {
           address: 'https://axelar-lcd.qubelabs.io:443',
           provider: 'Qubelabs'
         },
@@ -2704,6 +2783,10 @@ const chains: Chain[] = [
         {
           address: 'services.staketab.com:9080',
           provider: 'Staketab'
+        },
+        {
+          address: 'grpc-axelar.cosmos-spaces.cloud:1590',
+          provider: 'Cosmos Spaces'
         },
         {
           address: 'grpc-axelar-ia.cosmosia.notional.ventures:443',
@@ -3253,6 +3336,21 @@ const chains: Chain[] = [
           id: '10ed1e176d874c8bb3c7c065685d2da6a4b86475',
           address: 'seed-bcna.ibs.team:16656',
           provider: 'Inter Blockchain Services'
+        },
+        {
+          id: 'd37062587a2aba2a5256b7363f722f4acb4b8e2f',
+          address: 'seed-node.mms.team:30656',
+          provider: 'MMS'
+        },
+        {
+          id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
+          address: 'bitcanna-seed-de.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
+        },
+        {
+          id: 'e726816f42831689eab9378d5d577f1d06d25716',
+          address: 'bitcanna-seed-us.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
         }
       ],
       persistent_peers: [
@@ -3325,6 +3423,11 @@ const chains: Chain[] = [
           id: 'e5c8260f76b9d614ab20559ee8b8918d4cb75e84',
           address: 'rpc.bitcanna.hexnodes.co:21656',
           provider: 'Hexnodes'
+        },
+        {
+          id: 'd2cb1f04b351e82dada97794d32a468dd71d6a84',
+          address: 'peer-bitcanna.mms.team:56104',
+          provider: 'MMS'
         }
       ]
     },
@@ -3401,6 +3504,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.bitcanna.hexnodes.co',
           provider: 'Hexnodes'
+        },
+        {
+          address: 'https://rpc-bitcanna.mms.team',
+          provider: 'MMS'
         }
       ],
       grpc: [
@@ -3423,6 +3530,10 @@ const chains: Chain[] = [
         {
           address: 'grpc.bitcanna.hexnodes.co:21090',
           provider: 'Hexnodes'
+        },
+        {
+          address: 'grpc-bitcanna.mms.team:443',
+          provider: 'MMS'
         }
       ],
       rest: [
@@ -3485,6 +3596,10 @@ const chains: Chain[] = [
         {
           address: 'https://lcd.bitcanna.hexnods.co',
           provider: 'Hexnodes'
+        },
+        {
+          address: 'https://api-bitcanna.mms.team',
+          provider: 'MMS'
         }
       ]
     },
@@ -5289,8 +5404,8 @@ const chains: Chain[] = [
         {
           denom: 'ncheq',
           fixed_min_gas_price: 25,
-          low_gas_price: 25,
-          average_gas_price: 50,
+          low_gas_price: 50,
+          average_gas_price: 75,
           high_gas_price: 100
         }
       ]
@@ -5600,12 +5715,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'chihuahua-1.allnodes.me:26656',
+          address: 'chihuahua-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'chihuahua-2.allnodes.me:26656',
+          address: 'chihuahua-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -6021,12 +6136,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'comdex-seed-1.allnodes.me:26656',
+          address: 'comdex-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'comdex-seed-2.allnodes.me:26656',
+          address: 'comdex-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -6421,6 +6536,11 @@ const chains: Chain[] = [
           id: 'cd44c8cae65a4c74281f05dd8aae5780cceae710',
           address: '95.216.42.88:37656',
           provider: 'StakeTown'
+        },
+        {
+          id: '715af1847e1c785510d4cb94ac29f2bd7d0ddf91',
+          address: '65.108.206.74:36656',
+          provider: 'vinjan'
         }
       ]
     },
@@ -6457,6 +6577,10 @@ const chains: Chain[] = [
         {
           address: 'https://composable-rpc.stake-town.com',
           provider: 'StakeTown'
+        },
+        {
+          address: 'https://rpc-composable.vinjan.xyz:443',
+          provider: 'vinjan'
         }
       ],
       rest: [
@@ -6491,6 +6615,10 @@ const chains: Chain[] = [
         {
           address: 'https://composable-api.stake-town.com',
           provider: 'StakeTown'
+        },
+        {
+          address: 'https://api-composable.vinjan.xyz:443',
+          provider: 'vinjan'
         }
       ],
       grpc: [
@@ -6521,6 +6649,10 @@ const chains: Chain[] = [
         {
           address: 'composable-grpc.stake-town.com:10190',
           provider: 'StakeTown'
+        },
+        {
+          address: 'grpc-composable.vinjan.xyz:36090',
+          provider: 'vinjan'
         }
       ]
     },
@@ -6644,6 +6776,16 @@ const chains: Chain[] = [
           id: '67ecf3e890b2f77b13fc872c8f11f868c283be6e',
           address: 'rpc.coreum.nodexcapital.com:14156',
           provider: 'NodeX Validator'
+        },
+        {
+          id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
+          address: 'coreum-seed-de.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
+        },
+        {
+          id: 'e726816f42831689eab9378d5d577f1d06d25716',
+          address: 'coreum-seed-us.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
         }
       ]
     },
@@ -6890,12 +7032,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'cosmos-seed-1.allnodes.me:26656',
+          address: 'cosmoshub-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'cosmos-seed-2.allnodes.me:26656',
+          address: 'cosmoshub-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -6912,6 +7054,11 @@ const chains: Chain[] = [
           id: '8fdb467a66ac802a9f2d5f7a1ca484d8209ea755',
           address: 'cosmos-seed.panthea.eu:40656',
           provider: 'Panthea EU'
+        },
+        {
+          id: '11c6114a18f7b380e536b0bd17c031f4746e4ded',
+          address: 'seed-node.mms.team:43656',
+          provider: 'MMS'
         }
       ],
       persistent_peers: [
@@ -6937,6 +7084,11 @@ const chains: Chain[] = [
           id: '01c0d24922dcdf6f8816ec814a5c3436c5d5fbc5',
           address: '65.108.195.29:36656',
           provider: 'Staketab'
+        },
+        {
+          id: '28d36c3d45f0208528de3c38f2934ae241bd23e7',
+          address: 'peer-cosmoshub.mms.team:26656',
+          provider: 'MMS'
         }
       ]
     },
@@ -6969,6 +7121,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-cosmoshub.pupmos.network',
           provider: 'PUPMØS'
+        },
+        {
+          address: 'https://rpc-cached-cosmoshub.cosmos-spaces.cloud',
+          provider: 'Cosmos Spaces'
         },
         {
           address: 'https://cosmos-rpc.polkachu.com',
@@ -7049,6 +7205,10 @@ const chains: Chain[] = [
         {
           address: 'https://cosmos-rpc.w3coins.io',
           provider: 'w3coins'
+        },
+        {
+          address: 'https://rpc-cosmoshub.mms.team',
+          provider: 'MMS'
         }
       ],
       rest: [
@@ -7071,6 +7231,10 @@ const chains: Chain[] = [
         {
           address: 'https://api-cosmoshub.pupmos.network',
           provider: 'PUPMØS'
+        },
+        {
+          address: 'https://api-cosmoshub.cosmos-spaces.cloud',
+          provider: 'Cosmos Spaces'
         },
         {
           address: 'https://api-cosmoshub-ia.cosmosia.notional.ventures/',
@@ -7135,6 +7299,10 @@ const chains: Chain[] = [
         {
           address: 'https://cosmos-api.w3coins.io',
           provider: 'w3coins'
+        },
+        {
+          address: 'https://api-cosmoshub.mms.team',
+          provider: 'MMS'
         }
       ],
       grpc: [
@@ -7179,6 +7347,10 @@ const chains: Chain[] = [
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
+          address: 'grpc-cosmoshub.cosmos-spaces.cloud:1290',
+          provider: 'Cosmos Spaces'
+        },
+        {
           address: 'cosmoshub.grpc.kjnodes.com:11390',
           provider: 'kjnodes'
         },
@@ -7193,6 +7365,10 @@ const chains: Chain[] = [
         {
           address: 'cosmos-grpc.w3coins.io:14990',
           provider: 'w3coins'
+        },
+        {
+          address: 'grpc-cosmoshub.mms.team:443',
+          provider: 'MMS'
         }
       ]
     },
@@ -7612,12 +7788,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'cronos-seed-1.allnodes.me:26656',
+          address: 'cronos-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'cronos-seed-2.allnodes.me:26656',
+          address: 'cronos-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         }
       ],
@@ -7787,12 +7963,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'crypto-org-seed-1.allnodes.me:26656',
+          address: 'cryptoorgchain-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'crypto-org-seed-2.allnodes.me:26656',
+          address: 'cryptoorgchain-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -8214,6 +8390,11 @@ const chains: Chain[] = [
           id: '89f32d5e096eadddb1b3e6e839963503ef4d2d70',
           address: 'rpc.decentr.nodexcapital.com:10856',
           provider: 'NodeX Validator'
+        },
+        {
+          id: '49963582499c44dc8e119b4112e2f7b227003333',
+          address: 'seed-node.mms.team:39656',
+          provider: 'MMS'
         }
       ],
       persistent_peers: [
@@ -8236,6 +8417,11 @@ const chains: Chain[] = [
           id: '7678919ce37d6a8dc24a81c20ca8856147455670',
           address: 'rpc.decentr.indonode.net:20656',
           provider: 'Indonode'
+        },
+        {
+          id: '153656b1037e183368bbf9d03a6b97b1a3a9c976',
+          address: 'peer-decentr.mms.team:26656',
+          provider: 'MMS'
         }
       ]
     },
@@ -8280,6 +8466,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.decentr.indonode.net',
           provider: 'Indonode'
+        },
+        {
+          address: 'https://rpc-decentr.mms.team/',
+          provider: 'MMS'
         }
       ],
       rest: [
@@ -8318,6 +8508,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.decentr.indonode.net',
           provider: 'Indonode'
+        },
+        {
+          address: 'https://api-decentr.mms.team',
+          provider: 'MMS'
         }
       ],
       grpc: [
@@ -8332,6 +8526,10 @@ const chains: Chain[] = [
         {
           address: 'https://grpc.decentr.nodexcapital.com:443',
           provider: 'NodeX Validator'
+        },
+        {
+          address: 'grpc-decentr.mms.team:443',
+          provider: 'MMS'
         }
       ]
     },
@@ -9307,6 +9505,16 @@ const chains: Chain[] = [
           id: '178718a993161cc20f9d0de2bbef9a3aec5c1d3d',
           address: 'rpc.empower.indonode.net:52656',
           provider: 'Indonode'
+        },
+        {
+          id: 'a5ce71892959a23ed941cb0167f28959b6694ea3',
+          address: 'rpc-empower.vinjan.xyz:24656',
+          provider: 'vinjan'
+        },
+        {
+          id: '60b046f36fe485fb40cb8ece99e14244141de3cc',
+          address: 'mainnet-empower.konsortech.xyz:27656',
+          provider: 'KonsorTech'
         }
       ]
     },
@@ -9335,6 +9543,18 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.empower.indonode.net:443',
           provider: 'Indonode'
+        },
+        {
+          address: 'https://rpc-empower.vinjan.xyz:443',
+          provider: 'vinjan'
+        },
+        {
+          address: 'https://rpc.empower.nodestake.top',
+          provider: 'NodeStake'
+        },
+        {
+          address: 'https://mainnet-empower-rpc.konsortech.xyz',
+          provider: 'KonsorTech'
         }
       ],
       rest: [
@@ -9361,6 +9581,18 @@ const chains: Chain[] = [
         {
           address: 'https://api.empower.indonode.net:443',
           provider: 'Indonode'
+        },
+        {
+          address: 'https://api-empower.vinjan.xyz:443',
+          provider: 'vinjan'
+        },
+        {
+          address: 'https://api.empower.nodestake.top',
+          provider: 'NodeStake'
+        },
+        {
+          address: 'https://mainnet-empower-api.konsortech.xyz',
+          provider: 'KonsorTech'
         }
       ],
       grpc: [
@@ -9375,9 +9607,26 @@ const chains: Chain[] = [
         {
           address: 'grpc-empowerchain.mzonder.com:443',
           provider: 'MZONDER'
+        },
+        {
+          address: 'grpc-empower.vinjan.xyz',
+          provider: 'vinjan'
+        },
+        {
+          address: 'https://grpc.empower.nodestake.top:443',
+          provider: 'NodeStake'
         }
       ]
-    }
+    },
+    explorers: [
+      {
+        kind: 'NodeStake Explorer',
+        url: 'https://explorer.nodestake.top/empower',
+        tx_page: 'https://explorer.nodestake.top/empower/tx/${txHash}',
+        account_page:
+          'https://explorer.nodestake.top/empower/account/{$accountAddress}'
+      }
+    ]
   },
   {
     $schema: '../chain.schema.json',
@@ -9474,25 +9723,19 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/evmos/evmos',
-      recommended_version: 'v12.1.5',
-      compatible_versions: [
-        'v12.1.5',
-        'v12.1.3',
-        'v12.1.2',
-        'v12.1.1',
-        'v12.1.0'
-      ],
+      recommended_version: 'v13.0.2',
+      compatible_versions: ['v13.0.2'],
       binaries: {
         'linux/amd64':
-          'https://github.com/evmos/evmos/releases/download/v12.1.5/evmos_12.1.5_Linux_amd64.tar.gz',
+          'https://github.com/evmos/evmos/releases/download/v13.0.2/evmos_13.0.2_Linux_amd64.tar.gz',
         'linux/arm64':
-          'https://github.com/evmos/evmos/releases/download/v12.1.5/evmos_12.1.5_Linux_arm64.tar.gz',
+          'https://github.com/evmos/evmos/releases/download/v13.0.2/evmos_13.0.2_Linux_arm64.tar.gz',
         'darwin/amd64':
-          'https://github.com/evmos/evmos/releases/download/v12.1.5/evmos_12.1.5_Darwin_amd64.tar.gz',
+          'https://github.com/evmos/evmos/releases/download/v13.0.2/evmos_13.0.2_Darwin_amd64.tar.gz',
         'darwin/arm64':
-          'https://github.com/evmos/evmos/releases/download/v12.1.5/evmos_12.1.5_Darwin_arm64.tar.gz',
+          'https://github.com/evmos/evmos/releases/download/v13.0.2/evmos_13.0.2_Darwin_arm64.tar.gz',
         'windows/amd64':
-          'https://github.com/evmos/evmos/releases/download/v12.1.5/evmos_12.1.5_Windows_amd64.zip'
+          'https://github.com/evmos/evmos/releases/download/v13.0.2/evmos_13.0.2_Windows_amd64.zip'
       },
       cosmos_sdk_version: '0.46',
       consensus: {
@@ -9506,6 +9749,9 @@ const chains: Chain[] = [
       versions: [
         {
           name: 'v12',
+          tag: 'v12.1.5',
+          proposal: 137,
+          height: 12303000,
           recommended_version: 'v12.1.5',
           compatible_versions: [
             'v12.1.5',
@@ -9531,7 +9777,35 @@ const chains: Chain[] = [
               'https://github.com/evmos/evmos/releases/download/v12.1.5/evmos_12.1.5_Darwin_arm64.tar.gz',
             'windows/amd64':
               'https://github.com/evmos/evmos/releases/download/v12.1.5/evmos_12.1.5_Windows_amd64.zip'
-          }
+          },
+          next_version_name: 'v13.0.2'
+        },
+        {
+          name: 'v13.0.2',
+          tag: 'v13.0.2',
+          proposal: 149,
+          height: 14538200,
+          recommended_version: 'v13.0.2',
+          compatible_versions: ['v13.0.2'],
+          cosmos_sdk_version: '0.46',
+          consensus: {
+            type: 'cometbft',
+            version: 'v0.34.29'
+          },
+          ibc_go_version: 'v6.2.0',
+          binaries: {
+            'linux/amd64':
+              'https://github.com/evmos/evmos/releases/download/v13.0.2/evmos_13.0.2_Linux_amd64.tar.gz',
+            'linux/arm64':
+              'https://github.com/evmos/evmos/releases/download/v13.0.2/evmos_13.0.2_Linux_arm64.tar.gz',
+            'darwin/amd64':
+              'https://github.com/evmos/evmos/releases/download/v13.0.2/evmos_13.0.2_Darwin_amd64.tar.gz',
+            'darwin/arm64':
+              'https://github.com/evmos/evmos/releases/download/v13.0.2/evmos_13.0.2_Darwin_arm64.tar.gz',
+            'windows/amd64':
+              'https://github.com/evmos/evmos/releases/download/v13.0.2/evmos_13.0.2_Windows_amd64.zip'
+          },
+          next_version_name: ''
         }
       ]
     },
@@ -9588,12 +9862,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'evmos-seed-1.allnodes.me:26656',
+          address: 'evmos-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'evmos-seed-2.allnodes.me:26656',
+          address: 'evmos-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -9610,6 +9884,11 @@ const chains: Chain[] = [
           id: 'ac009a9564d3471852795b5d703095a1d4b6a3e1',
           address: 'seed-evmos-01.stakeflow.io:1707',
           provider: 'Stakeflow'
+        },
+        {
+          id: '008175475229d09bcbbbe713c4e50faa85719c9e',
+          address: 'seed-node.mms.team:37656',
+          provider: 'MMS'
         }
       ],
       persistent_peers: [
@@ -9637,6 +9916,11 @@ const chains: Chain[] = [
           id: 'ac009a9564d3471852795b5d703095a1d4b6a3e1',
           address: 'peer-evmos-01.stakeflow.io:1707',
           provider: 'Stakeflow'
+        },
+        {
+          id: 'd3c8c2ecd3cf0d05cc49ff12b81c52b3ec9675a5',
+          address: 'peer-evmos.mms.team:26656',
+          provider: 'MMS'
         }
       ]
     },
@@ -9749,6 +10033,10 @@ const chains: Chain[] = [
         {
           address: 'https://evmos-rpc.w3coins.io',
           provider: 'w3coins'
+        },
+        {
+          address: 'https://rpc-evmos.mms.team',
+          provider: 'MMS'
         }
       ],
       rest: [
@@ -9843,6 +10131,10 @@ const chains: Chain[] = [
         {
           address: 'https://evmos-api.w3coins.io',
           provider: 'w3coins'
+        },
+        {
+          address: 'https://api-evmos.mms.team',
+          provider: 'MMS'
         }
       ],
       grpc: [
@@ -9901,6 +10193,10 @@ const chains: Chain[] = [
         {
           address: 'evmos-grpc.w3coins.io:13490',
           provider: 'w3coins'
+        },
+        {
+          address: 'grpc-evmos.mms.team:443',
+          provider: 'MMS'
         }
       ],
       'evm-http-jsonrpc': [
@@ -9951,6 +10247,10 @@ const chains: Chain[] = [
         {
           address: 'https://evmos-jsonrpc.theamsolutions.info',
           provider: 'AM Solutions'
+        },
+        {
+          address: 'https://jsonrpc-evmos.mms.team',
+          provider: 'MMS'
         }
       ]
     },
@@ -10083,12 +10383,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'fetch-seed-1.allnodes.me:26656',
+          address: 'fetchhub-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'fetch-seed-2.allnodes.me:26656',
+          address: 'fetchhub-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -10975,6 +11275,11 @@ const chains: Chain[] = [
           id: '400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc',
           address: 'gitopia.rpc.kjnodes.com:14159',
           provider: 'kjnodes'
+        },
+        {
+          id: 'f280239045928af4e1b289d9df4059b7f941777b',
+          address: 'seed-node.mms.team:35656',
+          provider: 'MMS'
         }
       ],
       persistent_peers: [
@@ -11027,6 +11332,16 @@ const chains: Chain[] = [
           id: 'cc7d9f8d2fa2225063d8d5ac3fe70cbb64d7a0f7',
           address: 'gitopia.ramuchi.tech:20000',
           provider: 'ramuchi.tech'
+        },
+        {
+          id: '4112e75275da1fef14904036a76354a13d40dc8f',
+          address: 'peer-gitopia.mms.team:31656',
+          provider: 'MMS'
+        },
+        {
+          id: '31ef9b9bceeea15fcafe4a3be0a81c8c04071bc7',
+          address: 'mainnet-gitopia.konsortech.xyz:38656',
+          provider: 'KonsorTech'
         }
       ]
     },
@@ -11119,6 +11434,14 @@ const chains: Chain[] = [
         {
           address: 'https://gitopia.rpc.kjnodes.com',
           provider: 'kjnodes'
+        },
+        {
+          address: 'https://rpc-gitopia.mms.team',
+          provider: 'MMS'
+        },
+        {
+          address: 'https://mainnet-gitopia-rpc.konsortech.xyz',
+          provider: 'KonsorTech'
         }
       ],
       rest: [
@@ -11209,6 +11532,14 @@ const chains: Chain[] = [
         {
           address: 'https://gitopia.api.kjnodes.com',
           provider: 'kjnodes'
+        },
+        {
+          address: 'https://api-gitopia.mms.team',
+          provider: 'MMS'
+        },
+        {
+          address: 'https://mainnet-gitopia-api.konsortech.xyz',
+          provider: 'KonsorTech'
         }
       ],
       grpc: [
@@ -11279,6 +11610,10 @@ const chains: Chain[] = [
         {
           address: 'gitopia.grpc.kjnodes.com:14190',
           provider: 'kjnodes'
+        },
+        {
+          address: 'grpc-gitopia.mms.team:443',
+          provider: 'MMS'
         }
       ]
     },
@@ -11656,6 +11991,196 @@ const chains: Chain[] = [
         url: 'https://stakeflow.io/gravity-bridge',
         account_page:
           'https://stakeflow.io/gravity-bridge/accounts/${accountAddress}'
+      }
+    ]
+  },
+  {
+    $schema: '../chain.schema.json',
+    chain_name: 'haqq',
+    status: 'live',
+    network_type: 'mainnet',
+    website: 'https://haqq.network/',
+    pretty_name: 'Haqq Network',
+    chain_id: 'haqq_11235-1',
+    bech32_prefix: 'haqq',
+    node_home: '$HOME/.haqqd',
+    daemon_name: 'haqqd',
+    key_algos: ['ethsecp256k1'],
+    extra_codecs: ['ethermint'],
+    slip44: 60,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'aISLM',
+          fixed_min_gas_price: 250000000,
+          low_gas_price: 20000000000,
+          average_gas_price: 25000000000,
+          high_gas_price: 40000000000
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'aISLM'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/haqq-network/haqq',
+      recommended_version: 'v1.4.0',
+      compatible_versions: ['v1.4.0'],
+      binaries: {
+        'linux/amd64':
+          'https://github.com/haqq-network/haqq/releases/download/v1.4.0/haqq_1.4.0_Linux_x86_64.tar.gz',
+        'linux/arm64':
+          'https://github.com/haqq-network/haqq/releases/download/v1.4.0/haqq_1.4.0_Linux_arm64.tar.gz',
+        'darwin/amd64':
+          'https://github.com/haqq-network/haqq/releases/download/v1.4.0/haqq_1.4.0_Darwin_x86_64.tar.gz',
+        'darwin/arm64':
+          'https://github.com/haqq-network/haqq/releases/download/v1.4.0/haqq_1.4.0_Darwin_arm64.tar.gz',
+        'windows/amd64':
+          'https://github.com/haqq-network/haqq/releases/download/v1.4.0/haqq_1.4.0_Windows_x86_64.zip'
+      },
+      cosmos_sdk_version: '0.46',
+      consensus: {
+        type: 'tendermint',
+        version: '0.34'
+      },
+      ibc_go_version: '5.2.1',
+      genesis: {
+        genesis_url:
+          'https://raw.githubusercontent.com/haqq-network/mainnet/master/genesis.json'
+      },
+      versions: [
+        {
+          name: 'v1.4.0',
+          tag: 'v1.4.0',
+          recommended_version: 'v1.4.0',
+          compatible_versions: ['v1.4.0'],
+          cosmos_sdk_version: '0.46',
+          consensus: {
+            type: 'tendermint',
+            version: '0.34'
+          },
+          ibc_go_version: '5.2.1',
+          binaries: {
+            'linux/amd64':
+              'https://github.com/haqq-network/haqq/releases/download/v1.4.0/haqq_1.4.0_Linux_x86_64.tar.gz',
+            'linux/arm64':
+              'https://github.com/haqq-network/haqq/releases/download/v1.4.0/haqq_1.4.0_Linux_arm64.tar.gz',
+            'darwin/amd64':
+              'https://github.com/haqq-network/haqq/releases/download/v1.4.0/haqq_1.4.0_Darwin_x86_64.tar.gz',
+            'darwin/arm64':
+              'https://github.com/haqq-network/haqq/releases/download/v1.4.0/haqq_1.4.0_Darwin_arm64.tar.gz',
+            'windows/amd64':
+              'https://github.com/haqq-network/haqq/releases/download/v1.4.0/haqq_1.4.0_Windows_x86_64.zip'
+          }
+        }
+      ]
+    },
+    logo_URIs: {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/haqq.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/haqq.svg'
+    },
+    peers: {
+      seeds: [
+        {
+          id: '0533e20e65912f72f2ad88a4c91eefbc634212d7',
+          address: 'haqq-sync.rpc.p2p.world:26656',
+          provider: 'P2P.org'
+        },
+        {
+          id: '977ee99c89207677f116801a595c97979a0c0cd1',
+          address: '80.240.20.106:26656',
+          provider: 'kioqq'
+        },
+        {
+          id: '731f27fe9cd05257fcfc68b96147aec79035f920',
+          address: 'seed1.haqq.network:26656',
+          provider: 'Haqq'
+        },
+        {
+          id: '681da1f78742b2a0f8e0e7dac6e6f72166d82a8c',
+          address: 'seed2.haqq.network:26656',
+          provider: 'Haqq'
+        },
+        {
+          id: 'd8e2d0095763ed3c6f38814e7752eccc3c547913',
+          address: '167.235.192.194:26656',
+          provider: 'kioqq'
+        }
+      ],
+      persistent_peers: [
+        {
+          id: '0533e20e65912f72f2ad88a4c91eefbc634212d7',
+          address: 'haqq-sync.rpc.p2p.world:26656',
+          provider: 'P2P.org'
+        },
+        {
+          id: '977ee99c89207677f116801a595c97979a0c0cd1',
+          address: '80.240.20.106:26656',
+          provider: 'kioqq'
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          address: 'https://rpc.tm.haqq.network',
+          provider: 'Haqq'
+        },
+        {
+          address: 'https://m-s1-tm.haqq.sh',
+          provider: 'kioqq'
+        }
+      ],
+      rest: [
+        {
+          address: 'https://rest.cosmos.haqq.network',
+          provider: 'Haqq'
+        },
+        {
+          address: 'https://m-s1-sdk.haqq.sh',
+          provider: 'kioqq'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://grpc.cosmos.haqq.network',
+          provider: 'Haqq'
+        },
+        {
+          address: 'grpc://m-s1-grpc.haqq.sh:1337',
+          provider: 'kioqq'
+        }
+      ],
+      'evm-http-jsonrpc': [
+        {
+          address: 'https://rpc.eth.haqq.network',
+          provider: 'Haqq'
+        },
+        {
+          address: 'https://m-s1-evm-rpc.haqq.sh',
+          provider: 'kioqq'
+        }
+      ]
+    },
+    explorers: [
+      {
+        kind: 'blockscout',
+        url: 'https://explorer.haqq.network',
+        tx_page: 'https://explorer.haqq.network/tx/${txHash}'
+      },
+      {
+        kind: 'ping.pub',
+        url: 'https://ping.pub/haqq',
+        tx_page: 'https://ping.pub/haqq/tx/${txHash}'
+      },
+      {
+        kind: 'explorers.guru',
+        url: 'https://haqq.explorers.guru',
+        tx_page: 'https://haqq.explorers.guru/transaction/${txHash}'
       }
     ]
   },
@@ -12075,7 +12600,9 @@ const chains: Chain[] = [
       ],
       binaries: {
         'linux/amd64':
-          'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.11.5-1687535916/linux-amd64.zip'
+          'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.11.5-1687535916/linux-amd64.zip',
+        'darwin/amd64':
+          'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.11.5-1687535916/darwin-amd64.zip'
       },
       genesis: {
         genesis_url:
@@ -12107,7 +12634,9 @@ const chains: Chain[] = [
           ],
           binaries: {
             'linux/amd64':
-              'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.11.5-1687535916/linux-amd64.zip'
+              'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.11.5-1687535916/linux-amd64.zip',
+            'darwin/amd64':
+              'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.11.5-1687535916/darwin-amd64.zip'
           }
         }
       ]
@@ -12175,12 +12704,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'injective-seed-1.allnodes.me:26656',
+          address: 'injective-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'injective-seed-2.allnodes.me:26656',
+          address: 'injective-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -12490,7 +13019,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'iris-seed-1.allnodes.me:26656',
+          address: 'irisnet-seed-de.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
+        },
+        {
+          id: 'e726816f42831689eab9378d5d577f1d06d25716',
+          address: 'irisnet-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -12630,13 +13164,13 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/JackalLabs/canine-chain',
-      recommended_version: 'v2.0.2',
-      compatible_versions: ['v2.0.2'],
+      recommended_version: 'v2.1.0',
+      compatible_versions: ['v2.1.0'],
       binaries: {
         'linux/amd64':
-          'https://github.com/JackalLabs/canine-chain/releases/download/v2.0.2/canined-Linux',
+          'https://github.com/JackalLabs/canine-chain/releases/download/v2.1.0/canined-Linux',
         'darwin/amd64':
-          'https://github.com/JackalLabs/canine-chain/releases/download/v2.0.2/canined-macOS'
+          'https://github.com/JackalLabs/canine-chain/releases/download/v2.1.0/canined-macOS'
       },
       genesis: {
         genesis_url:
@@ -12645,7 +13179,7 @@ const chains: Chain[] = [
       cosmwasm_enabled: true,
       versions: [
         {
-          name: 'v1.2.1',
+          name: 'bouncybulldog',
           recommended_version: 'v1.2.1',
           compatible_versions: ['v1.2.1'],
           cosmwasm_enabled: true,
@@ -12654,33 +13188,40 @@ const chains: Chain[] = [
               'https://github.com/JackalLabs/canine-chain/releases/download/v1.2.1/canined-Linux',
             'darwin/amd64':
               'https://github.com/JackalLabs/canine-chain/releases/download/v1.2.1/canined-macOS'
-          }
+          },
+          next_version_name: 'recovery'
         },
         {
-          name: 'v2.0.0',
-          height: 2631260,
+          name: 'recovery',
+          tag: 'V2.0.1',
           proposal: 4,
-          recommended_version: 'v2.0.0',
-          compatible_versions: ['v2.0.0'],
-          cosmwasm_enabled: true,
-          binaries: {
-            'linux/amd64':
-              'https://github.com/JackalLabs/canine-chain/releases/download/v2.0.0/canined-Linux',
-            'darwin/amd64':
-              'https://github.com/JackalLabs/canine-chain/releases/download/v2.0.0/canined-macOS'
-          }
-        },
-        {
-          name: 'v2.0.2',
-          recommended_version: 'v2.0.2',
-          compatible_versions: ['v2.0.2'],
+          height: 2631260,
+          recommended_version: 'v2.0.1',
+          compatible_versions: ['v2.0.0', 'v2.0.1'],
           cosmwasm_enabled: true,
           binaries: {
             'linux/amd64':
               'https://github.com/JackalLabs/canine-chain/releases/download/v2.0.2/canined-Linux',
             'darwin/amd64':
               'https://github.com/JackalLabs/canine-chain/releases/download/v2.0.2/canined-macOS'
-          }
+          },
+          next_version_name: 'v210'
+        },
+        {
+          name: 'v210',
+          tag: 'V2.1.0',
+          proposal: 8,
+          height: 3503000,
+          recommended_version: 'v2.1.0',
+          compatible_versions: ['v2.1.0'],
+          cosmwasm_enabled: true,
+          binaries: {
+            'linux/amd64':
+              'https://github.com/JackalLabs/canine-chain/releases/download/v2.1.0/canined-Linux',
+            'darwin/amd64':
+              'https://github.com/JackalLabs/canine-chain/releases/download/v2.1.0/canined-macOS'
+          },
+          next_version_name: ''
         }
       ]
     },
@@ -13089,12 +13630,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'juno-seed-1.allnodes.me:26656',
+          address: 'juno-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'juno-seed-2.allnodes.me:26656',
+          address: 'juno-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -13523,6 +14064,16 @@ const chains: Chain[] = [
           id: '7ab4b78fbe5ee9e3777b21464a3162bd4cc17f57',
           address: 'seed-kava-01.stakeflow.io:1206',
           provider: 'Stakeflow'
+        },
+        {
+          id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
+          address: 'kava-seed-de.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
+        },
+        {
+          id: 'e726816f42831689eab9378d5d577f1d06d25716',
+          address: 'kava-seed-us.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
         }
       ],
       persistent_peers: [
@@ -14103,13 +14654,23 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'kujira-seed-1.allnodes.me:26656',
+          address: 'kujira-seed-de.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
+        },
+        {
+          id: 'e726816f42831689eab9378d5d577f1d06d25716',
+          address: 'kujira-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'c28827cb96c14c905b127b92065a3fb4cd77d7f6',
           address: 'seeds.whispernode.com:11856',
           provider: 'WhisperNode🤐'
+        },
+        {
+          id: '654ba97f74254965a80c0fac0f277f6f6e5506b6',
+          address: 'seed-node.mms.team:29656',
+          provider: 'MMS'
         }
       ],
       persistent_peers: [
@@ -14117,6 +14678,11 @@ const chains: Chain[] = [
           id: 'ebc272824924ea1a27ea3183dd0b9ba713494f83',
           address: 'kujira-mainnet-peer.autostake.com:26796',
           provider: 'AutoStake 🛡️ Slash Protected'
+        },
+        {
+          id: 'c1a740841a6dc0b56730e975b1a4aa2d8c73b204',
+          address: 'peer-kujira.mms.team:29656',
+          provider: 'MMS'
         }
       ]
     },
@@ -14193,6 +14759,10 @@ const chains: Chain[] = [
         {
           address: 'https://kujira-rpc.w3coins.io',
           provider: 'w3coins'
+        },
+        {
+          address: 'https://rpc-kujira.mms.team',
+          provider: 'MMS'
         }
       ],
       rest: [
@@ -14259,6 +14829,10 @@ const chains: Chain[] = [
         {
           address: 'https://kujira-api.w3coins.io',
           provider: 'w3coins'
+        },
+        {
+          address: 'https://api-kujira.mms.team',
+          provider: 'MMS'
         }
       ],
       grpc: [
@@ -14289,6 +14863,10 @@ const chains: Chain[] = [
         {
           address: 'kujira-grpc.w3coins.io:11890',
           provider: 'w3coins'
+        },
+        {
+          address: 'grpc-kujira.mms.team:443',
+          provider: 'MMS'
         }
       ]
     },
@@ -14396,6 +14974,11 @@ const chains: Chain[] = [
           id: 'cec848e7d4c5a7ae305b27cda133d213435c110f',
           address: 'seed-kyve.ibs.team:16664',
           provider: 'Inter Blockchain Services'
+        },
+        {
+          id: '63aef665906f1ac532f6266bb2067510ca35a9a2',
+          address: 'seed-node.mms.team:41656',
+          provider: 'MMS'
         }
       ],
       persistent_peers: [
@@ -14423,6 +15006,11 @@ const chains: Chain[] = [
           id: 'ae3f75549c0fe53bae94909fb7477eb308dfe989',
           address: '88.99.104.180:46656',
           provider: 'Stake-Take'
+        },
+        {
+          id: '00917221debc335189292cce406cd20a8a44e603',
+          address: 'peer-kyve.mms.team:27656',
+          provider: 'MMS'
         }
       ]
     },
@@ -14463,6 +15051,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.kyve.stake-take.com',
           provider: 'Stake-Take'
+        },
+        {
+          address: 'https://rpc-kyve.mms.team',
+          provider: 'MMS'
         }
       ],
       rest: [
@@ -14501,6 +15093,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.kyve.stake-take.com',
           provider: 'Stake-Take'
+        },
+        {
+          address: 'https://api-kyve.mms.team',
+          provider: 'MMS'
         }
       ],
       grpc: [
@@ -14519,6 +15115,10 @@ const chains: Chain[] = [
         {
           address: 'https://kyve.grpc.liveraven.net',
           provider: 'LiveRaveN'
+        },
+        {
+          address: 'grpc-kyve.mms.team:443',
+          provider: 'MMS'
         }
       ]
     },
@@ -15096,6 +15696,10 @@ const chains: Chain[] = [
         {
           address: 'https://loyal-rpc.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://rpc.loyal.nodestake.top',
+          provider: 'NodeStake'
         }
       ],
       rest: [
@@ -15105,6 +15709,16 @@ const chains: Chain[] = [
         {
           address: 'https://loyal-api.polkachu.com',
           provider: 'Polkachu'
+        },
+        {
+          address: 'https://api.loyal.nodestake.top',
+          provider: 'NodeStake'
+        }
+      ],
+      grpc: [
+        {
+          address: 'https://grpc.loyal.nodestake.top',
+          provider: 'NodeStake'
         }
       ]
     },
@@ -15118,6 +15732,11 @@ const chains: Chain[] = [
         kind: 'TC Network',
         url: 'https://explorer.tcnetwork.io/loyal',
         tx_page: 'https://explorer.tcnetwork.io/loyal/transaction/${txHash}'
+      },
+      {
+        kind: 'NodeStake Explorer',
+        url: 'https://explorer.nodestake.top/loyal',
+        tx_page: 'https://explorer.nodestake.top/loyal/tx/${txHash}'
       }
     ]
   },
@@ -15591,12 +16210,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'mars-seed-1.allnodes.me:26656',
+          address: 'mars-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'mars-seed-2.allnodes.me:26656',
+          address: 'mars-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -16718,12 +17337,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'neutron-seed-1.allnodes.me:26656',
+          address: 'neutron-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'neutron-seed-2.allnodes.me:26656',
+          address: 'neutron-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         }
       ],
@@ -16754,6 +17373,10 @@ const chains: Chain[] = [
           provider: 'WhisperNode🤐'
         },
         {
+          address: 'https://rpc-cached-neutron.cosmos-spaces.cloud',
+          provider: 'Cosmos Spaces'
+        },
+        {
           address: 'http://posthuman-neutron-rpc.ingress.europlots.com',
           provider: 'POSTHUMAN ꝏ DVS'
         },
@@ -16780,6 +17403,10 @@ const chains: Chain[] = [
           provider: 'WhisperNode🤐'
         },
         {
+          address: 'https://api-neutron.cosmos-spaces.cloud',
+          provider: 'Cosmos Spaces'
+        },
+        {
           address: 'http://api.neutron.nodestake.top',
           provider: 'NodeStake'
         }
@@ -16804,6 +17431,10 @@ const chains: Chain[] = [
         {
           address: 'grpc-neutron.whispernode.com:443',
           provider: 'WhisperNode🤐'
+        },
+        {
+          address: 'grpc-neutron.cosmos-spaces.cloud:3090',
+          provider: 'Cosmos Spaces'
         },
         {
           address: 'grpc.neutron.nodestake.top:9090',
@@ -17390,12 +18021,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'nolus-seed-1.allnodes.me:26656',
+          address: 'nolus-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'nolus-seed-2.allnodes.me:26656',
+          address: 'nolus-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -17425,6 +18056,10 @@ const chains: Chain[] = [
         {
           address: 'https://nolus-rpc.lavenderfive.com:443',
           provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          address: 'https://nolus-rpc.sphincs.plus',
+          provider: 'Sphincs.plus 🔅'
         },
         {
           address: 'https://nolus.rpc.liveraven.net',
@@ -17459,6 +18094,10 @@ const chains: Chain[] = [
         {
           address: 'https://nolus-api.lavenderfive.com:443',
           provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          address: 'https://nolus-lcd.sphincs.plus',
+          provider: 'Sphincs.plus 🔅'
         },
         {
           address: 'https://nolus.api.liveraven.net',
@@ -18607,6 +19246,11 @@ const chains: Chain[] = [
           id: 'd091cabe3584cb32043cc0c9199b0c7a5b68ddcb',
           address: 'seed.orai.synergynodes.com:26656',
           provider: 'synergynodes'
+        },
+        {
+          id: 'f223f1be06ef35a6dfe54995f05daeb1897d94d7',
+          address: 'seed-node.mms.team:42656',
+          provider: 'MMS'
         }
       ],
       persistent_peers: [
@@ -18630,6 +19274,11 @@ const chains: Chain[] = [
           id: 'd091cabe3584cb32043cc0c9199b0c7a5b68ddcb',
           address: 'seed.orai.synergynodes.com:26656',
           provider: 'synergynodes'
+        },
+        {
+          id: 'c14df7b2e097d743aa7574c7cf65397a06ea3833',
+          address: 'peer-oraichain.mms.team:56103',
+          provider: 'MMS'
         }
       ]
     },
@@ -18650,6 +19299,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc-orai.nodine.id/',
           provider: 'Nodine.ID'
+        },
+        {
+          address: 'https://rpc-oraichain.mms.team',
+          provider: 'MMS'
         }
       ],
       rest: [
@@ -18668,6 +19321,16 @@ const chains: Chain[] = [
         {
           address: 'https://api-orai.nodine.id',
           provider: 'Noidne.ID'
+        },
+        {
+          address: 'https://api-oraichain.mms.team',
+          provider: 'MMS'
+        }
+      ],
+      grpc: [
+        {
+          address: 'grpc-oraichain.mms.team:443',
+          provider: 'MMS'
         }
       ]
     },
@@ -18887,6 +19550,21 @@ const chains: Chain[] = [
           id: '38ab18cb2ea1dfeb6232b429e1508f56b6ae5031',
           address: 'seed-osmosis-01.stakeflow.io:65535',
           provider: 'Stakeflow'
+        },
+        {
+          id: '954ab3a0551b592b654b1554af8fc8746ed7b362',
+          address: 'seed-node.mms.team:31656',
+          provider: 'MMS'
+        },
+        {
+          id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
+          address: 'osmosis-seed-de.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
+        },
+        {
+          id: 'e726816f42831689eab9378d5d577f1d06d25716',
+          address: 'osmosis-seed-us.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
         }
       ],
       persistent_peers: [
@@ -18919,6 +19597,11 @@ const chains: Chain[] = [
           id: '6f1d92857e39a6f26a3a914f807064824c255939',
           address: '65.21.91.99:16956',
           provider: 'Staketab'
+        },
+        {
+          id: '50d0865decf5657eaf8e50e51bd9d8ce5f927f6c',
+          address: 'peer-osmosis.mms.team:56102',
+          provider: 'MMS'
         }
       ]
     },
@@ -18995,6 +19678,10 @@ const chains: Chain[] = [
         {
           address: 'https://osmosis-rpc.w3coins.io',
           provider: 'w3coins'
+        },
+        {
+          address: 'https://rpc-osmosis.mms.team',
+          provider: 'MMS'
         }
       ],
       rest: [
@@ -19067,6 +19754,10 @@ const chains: Chain[] = [
           provider: 'WhisperNode🤐'
         },
         {
+          address: 'https://api-osmosis.mms.team',
+          provider: 'MMS'
+        },
+        {
           address: 'https://osmosis.stakesystems.io/',
           provider: 'stakesystems'
         }
@@ -19107,6 +19798,10 @@ const chains: Chain[] = [
         {
           address: 'osmosis-grpc.w3coins.io:12590',
           provider: 'w3coins'
+        },
+        {
+          address: 'grpc-osmosis.mms.team:443',
+          provider: 'MMS'
         }
       ]
     },
@@ -19357,7 +20052,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'passage-seed-1.allnodes.me:26656',
+          address: 'passage-seed-de.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
+        },
+        {
+          id: 'e726816f42831689eab9378d5d577f1d06d25716',
+          address: 'passage-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -19610,12 +20310,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'persistence-seed-1.allnodes.me:26656',
+          address: 'persistence-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'persistence-seed-2.allnodes.me:26656',
+          address: 'persistence-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -20576,12 +21276,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'quasar-seed-1.allnodes.me:26656',
+          address: 'quasar-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'quasar-seed-2.allnodes.me:26656',
+          address: 'quasar-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -20837,12 +21537,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'quicksilver-seed-1.allnodes.me:26656',
+          address: 'quicksilver-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'quicksilver-seed-2.allnodes.me:26656',
+          address: 'quicksilver-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -20859,6 +21559,11 @@ const chains: Chain[] = [
           id: '559e316b30830ddd5e93617592ef70330ecce86d',
           address: 'seed-quicksilver.ibs.team:16656',
           provider: 'Inter Blockchain Services'
+        },
+        {
+          id: '95fe6a416dff4150e0394f8b429743db60ea1327',
+          address: 'seed-node.mms.team:27656',
+          provider: 'MMS'
         }
       ],
       persistent_peers: [
@@ -20891,6 +21596,11 @@ const chains: Chain[] = [
           id: '8200b77d075f2634e6f9dab11fd56726a2e6d75b',
           address: 'quicksilver-seed.theamsolutions.info:31656',
           provider: 'AM Solutions'
+        },
+        {
+          id: '82b49e6cc0826642e745b7a7a621aecbf8083af7',
+          address: 'peer-quicksilver.mms.team:56103',
+          provider: 'MMS'
         }
       ]
     },
@@ -20967,6 +21677,10 @@ const chains: Chain[] = [
         {
           address: 'https://quicksilver-rpc.w3coins.io',
           provider: 'w3coins'
+        },
+        {
+          address: 'https://rpc-quicksilver.mms.team/',
+          provider: 'MMS'
         }
       ],
       rest: [
@@ -21033,6 +21747,10 @@ const chains: Chain[] = [
         {
           address: 'https://quicksilver-api.w3coins.io',
           provider: 'w3coins'
+        },
+        {
+          address: 'https://api-quicksilver.mms.team',
+          provider: 'MMS'
         }
       ],
       grpc: [
@@ -21083,6 +21801,10 @@ const chains: Chain[] = [
         {
           address: 'quicksilver-grpc.w3coins.io:11190',
           provider: 'w3coins'
+        },
+        {
+          address: 'grpc-quicksilver.mms.team:443',
+          provider: 'MMS'
         }
       ]
     },
@@ -21206,6 +21928,11 @@ const chains: Chain[] = [
         {
           id: '2a22c052e6ffe875bf38d1c25ad7e04daa638967',
           address: 'seed-qwoyn.theamsolutions.info:22256'
+        },
+        {
+          id: '9aa8a73ea9364aa3cf7806d4dd25b6aed88d8152',
+          address: 'qwoyn.seed.mzonder.com:11656',
+          provider: 'MZONDER'
         }
       ],
       persistent_peers: [
@@ -21248,6 +21975,10 @@ const chains: Chain[] = [
         {
           address: 'https://qwoyn-rpc.lavenderfive.com:443',
           provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          address: 'https://rpc-qwoyn.mzonder.com:443',
+          provider: 'MZONDER'
         }
       ],
       grpc: [
@@ -21266,6 +21997,10 @@ const chains: Chain[] = [
         {
           address: 'https://qwoyn-grpc.lavenderfive.com:443',
           provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          address: 'grpc-qwoyn.mzonder.com:443',
+          provider: 'MZONDER'
         }
       ],
       rest: [
@@ -21284,6 +22019,10 @@ const chains: Chain[] = [
         {
           address: 'https://qwoyn-api.lavenderfive.com',
           provider: 'Lavender.Five Nodes 🐝'
+        },
+        {
+          address: 'https://api-qwoyn.mzonder.com',
+          provider: 'MZONDER'
         }
       ]
     },
@@ -21463,6 +22202,10 @@ const chains: Chain[] = [
         {
           address: 'https://rpc.realio.indonode.net',
           provider: 'Indonode'
+        },
+        {
+          address: 'https://rpc.realio.nodestake.top',
+          provider: 'NodeStake'
         }
       ],
       rest: [
@@ -21481,6 +22224,10 @@ const chains: Chain[] = [
         {
           address: 'https://api.realio.indonode.net',
           provider: 'Indonode'
+        },
+        {
+          address: 'https://api.realio.nodestake.top',
+          provider: 'NodeStake'
         }
       ],
       grpc: [
@@ -21495,12 +22242,20 @@ const chains: Chain[] = [
         {
           address: 'https://grpc-realio.nodeist.net',
           provider: 'Nodeist'
+        },
+        {
+          address: 'https://grpc.realio.nodestake.top:443',
+          provider: 'NodeStake'
         }
       ],
       'evm-http-jsonrpc': [
         {
           address: 'https://realio-rpc-evm.genznodes.dev',
           provider: 'genznodes'
+        },
+        {
+          address: 'https://jsonrpc.realio.nodestake.top',
+          provider: 'NodeStake'
         }
       ]
     },
@@ -21524,6 +22279,13 @@ const chains: Chain[] = [
         url: 'https://exp.nodeist.net/realio',
         tx_page: 'https://exp.nodeist.net/realio/tx/${txHash}',
         account_page: 'https://exp.nodeist.net/realio/account/{$accountAddress}'
+      },
+      {
+        kind: 'NodeStake Explorer',
+        url: 'https://explorer.nodestake.top/realio',
+        tx_page: 'https://explorer.nodestake.top/realio/tx/${txHash}',
+        account_page:
+          'https://explorer.nodestake.top/realio/account/{$accountAddress}'
       }
     ]
   },
@@ -21601,12 +22363,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'rebus-seed-1.allnodes.me:26656',
+          address: 'rebus-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'rebus-seed-2.allnodes.me:26656',
+          address: 'rebus-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         }
       ],
@@ -21910,7 +22672,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'regen-seed-1.allnodes.me:26656',
+          address: 'regen-seed-de.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
+        },
+        {
+          id: 'e726816f42831689eab9378d5d577f1d06d25716',
+          address: 'regen-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -22116,18 +22883,30 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'rizon-seed-1.allnodes.me:26656',
+          address: 'rizon-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'rizon-seed-2.allnodes.me:26656',
+          address: 'rizon-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'f9b189e17add85a42a36d05fc57ed83c957e011e',
           address: 'seed-rizon.ibs.team:16657',
           provider: 'Inter Blockchain Services'
+        },
+        {
+          id: 'f1dc52dd12a4e96d3ef2aa3ff1e6f648b4d232da',
+          address: 'seed-node.mms.team:38656',
+          provider: 'MMS'
+        }
+      ],
+      persistent_peers: [
+        {
+          id: '71622e78b1840a1ca7c864a0b617dd4342a6c693',
+          address: 'peer-rizon.mms.team:26656',
+          provider: 'MMS'
         }
       ]
     },
@@ -22152,6 +22931,10 @@ const chains: Chain[] = [
         {
           address: 'https://rizon.nodejumper.io',
           provider: 'NODEJUMPER'
+        },
+        {
+          address: 'https://rpc-rizon.mms.team',
+          provider: 'MMS'
         }
       ],
       rest: [
@@ -22174,12 +22957,20 @@ const chains: Chain[] = [
         {
           address: 'https://rizon.nodejumper.io:1317',
           provider: 'NODEJUMPER'
+        },
+        {
+          address: 'https://api-rizon.mms.team',
+          provider: 'MMS'
         }
       ],
       grpc: [
         {
           address: 'rizon.nodejumper.io:9090',
           provider: 'NODEJUMPER'
+        },
+        {
+          address: 'grpc-rizon.mms.team:443',
+          provider: 'MMS'
         }
       ]
     },
@@ -22545,12 +23336,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'sentinel-seed-1.allnodes.me:26656',
+          address: 'sentinel-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'sentinel-seed-2.allnodes.me:26656',
+          address: 'sentinel-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -22869,12 +23660,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'shentu-seed-1.allnodes.me:26656',
+          address: 'shentu-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'shentu-seed-2.allnodes.me:26656',
+          address: 'shentu-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -23078,7 +23869,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'sifchain-seed-1.allnodes.me:26656',
+          address: 'sifchain-seed-de.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
+        },
+        {
+          id: 'e726816f42831689eab9378d5d577f1d06d25716',
+          address: 'sifchain-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         }
       ],
@@ -23681,7 +24477,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'stargaze-seed-1.allnodes.me:26656',
+          address: 'stargaze-seed-de.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
+        },
+        {
+          id: 'e726816f42831689eab9378d5d577f1d06d25716',
+          address: 'stargaze-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -24147,12 +24948,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'stride-seed-1.allnodes.me:26656',
+          address: 'stride-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'stride-seed-2.allnodes.me:26656',
+          address: 'stride-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -24587,6 +25388,16 @@ const chains: Chain[] = [
           id: 'f8432cc5094870c96f34a0ebb36ffb0d38a53ad4',
           address: '164.92.209.223:26656',
           provider: 'tenet'
+        },
+        {
+          id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
+          address: 'tenet-seed-de.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
+        },
+        {
+          id: 'e726816f42831689eab9378d5d577f1d06d25716',
+          address: 'tenet-seed-us.allnodes.me:26656',
+          provider: 'Allnodes.com ⚡️ Nodes & Staking'
         }
       ]
     },
@@ -24713,12 +25524,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'teritori-seed-1.allnodes.me:26656',
+          address: 'teritori-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'teritori-seed-2.allnodes.me:26656',
+          address: 'teritori-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -24740,6 +25551,11 @@ const chains: Chain[] = [
           id: '1ef268d56b79edbd0c32815f4bf9c362a0617ed4',
           address: 'seed-teritori.ibs.team:16659',
           provider: 'Inter Blockchain Services'
+        },
+        {
+          id: '38d107de6a22ca6e1a6bafd2041e38f5d50a6945',
+          address: 'seed-node.mms.team:40656',
+          provider: 'MMS'
         }
       ],
       persistent_peers: [
@@ -24762,6 +25578,11 @@ const chains: Chain[] = [
           id: 'ebc272824924ea1a27ea3183dd0b9ba713494f83',
           address: 'teritori-mainnet-peer.autostake.com:27166',
           provider: 'AutoStake 🛡️ Slash Protected'
+        },
+        {
+          id: '669470aba9778ccccd07127115dcdc30e141d7ae',
+          address: 'peer-teritori.mms.team:33656',
+          provider: 'MMS'
         }
       ]
     },
@@ -25425,12 +26246,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'terra-classic-seed-1.allnodes.me:26656',
+          address: 'terra-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'terra-classic-seed-2.allnodes.me:26656',
+          address: 'terra-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         }
       ],
@@ -25729,12 +26550,12 @@ const chains: Chain[] = [
         },
         {
           id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-          address: 'terra-seed-1.allnodes.me:26656',
+          address: 'terra2-seed-de.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
           id: 'e726816f42831689eab9378d5d577f1d06d25716',
-          address: 'terra-seed-2.allnodes.me:26656',
+          address: 'terra2-seed-us.allnodes.me:26656',
           provider: 'Allnodes.com ⚡️ Nodes & Staking'
         },
         {
@@ -26694,7 +27515,7 @@ const chains: Chain[] = [
   {
     $schema: '../../chain.schema.json',
     chain_name: 'celestiatestnet2',
-    chain_id: 'arabica-8',
+    chain_id: 'arabica-9',
     pretty_name: 'Arabica Testnet',
     status: 'live',
     network_type: 'testnet',
@@ -26713,25 +27534,25 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/celestiaorg/celestia-app',
-      recommended_version: 'v1.0.0-rc1',
-      compatible_versions: ['v1.0.0-rc1'],
+      recommended_version: 'v1.0.0-rc7',
+      compatible_versions: ['v1.0.0-rc7'],
       genesis: {
         genesis_url:
-          'https://raw.githubusercontent.com/celestiaorg/networks/master/arabica-5/genesis.json'
+          'https://raw.githubusercontent.com/celestiaorg/networks/master/arabica-9/genesis.json'
       },
       versions: [
         {
-          name: 'v1.0.0-rc1',
-          recommended_version: 'v1.0.0-rc1',
-          compatible_versions: ['v1.0.0-rc1']
+          name: 'v1.0.0-rc7',
+          recommended_version: 'v1.0.0-rc7',
+          compatible_versions: ['v1.0.0-rc7']
         }
       ]
     },
     peers: {
       seeds: [
         {
-          id: '12D3KooWDXkXARv79Dtn5xrGBgJePtCzCsEwWR7eGWnx9ZCyUyD6',
-          address: 'celestia-arabica.com',
+          id: '5a7a963c342ee2b8960e6cb9b7451e5743133781',
+          address: 'consensus-full-arabica-9.celestia-arabica.com',
           provider: 'Celestia'
         }
       ]
@@ -26739,13 +27560,13 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
-          address: 'https://consensus-full-arabica-8.celestia-arabica.com/',
+          address: 'https://consensus-full-arabica-9.celestia-arabica.com/',
           provider: 'Celestia'
         }
       ],
       rest: [
         {
-          address: 'https://api-arabica-8.consensus.celestia-arabica.com/',
+          address: 'https://api-arabica-9.consensus.celestia-arabica.com/',
           provider: 'Celestia'
         }
       ]
@@ -26753,16 +27574,16 @@ const chains: Chain[] = [
     explorers: [
       {
         kind: 'Ping.Pub',
-        url: 'https://explorer-arabica-8.celestia-arabica.com/arabica-8',
+        url: 'https://explorer-arabica-9.celestia-arabica.com/arabica-9',
         tx_page:
-          'https://explorer-arabica-8.celestia-arabica.com/arabica-8/tx/${txHash}'
+          'https://explorer-arabica-9.celestia-arabica.com/arabica-9/tx/${txHash}'
       }
     ]
   },
   {
     $schema: '../../chain.schema.json',
     chain_name: 'celestiatestnet3',
-    chain_id: 'mocha',
+    chain_id: 'mocha-3',
     pretty_name: 'Mocha Testnet',
     status: 'live',
     network_type: 'testnet',
@@ -26781,26 +27602,26 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/celestiaorg/celestia-app',
-      recommended_version: 'v0.11.1',
-      compatible_versions: ['v0.12.0'],
+      recommended_version: 'v1.0.0-rc9',
+      compatible_versions: ['v1.0.0-rc9'],
       genesis: {
         genesis_url:
-          'https://raw.githubusercontent.com/celestiaorg/networks/master/mocha/genesis.json'
+          'https://raw.githubusercontent.com/celestiaorg/networks/master/mocha-3/genesis.json'
       },
       versions: [
         {
-          name: 'v0.11.1',
-          recommended_version: 'v0.11.1',
-          compatible_versions: ['v0.12.0']
+          name: 'v1.0.0-rc9',
+          recommended_version: 'v1.0.0-rc9',
+          compatible_versions: ['v1.0.0-rc9']
         }
       ]
     },
     peers: {
       seeds: [
         {
-          id: '9aa8a73ea9364aa3cf7806d4dd25b6aed88d8152',
-          address: 'celestia.seed.mzonder.com',
-          provider: 'Mzonder'
+          id: '3314051954fc072a0678ec0cbac690ad8676ab98',
+          address: '65.108.66.220:26656',
+          provider: 'P-OPS'
         }
       ]
     },
@@ -26935,8 +27756,8 @@ const chains: Chain[] = [
         {
           denom: 'ncheq',
           fixed_min_gas_price: 25,
-          low_gas_price: 25,
-          average_gas_price: 50,
+          low_gas_price: 50,
+          average_gas_price: 75,
           high_gas_price: 100
         }
       ]
@@ -28970,13 +29791,13 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/InjectiveLabs/testnet',
-      recommended_version: 'v1.10.2',
-      compatible_versions: ['v1.10.2'],
+      recommended_version: 'v1.11.1',
+      compatible_versions: ['v1.11.1'],
       binaries: {
         'linux/amd64':
-          'https://github.com/InjectiveLabs/testnet/releases/download/v1.10.2-1678712142/linux-amd64.zip',
+          'https://github.com/InjectiveLabs/testnet/releases/download/v1.11.1-1685205489/linux-amd64.zip',
         'darwin/amd64':
-          'https://github.com/InjectiveLabs/testnet/releases/download/v1.10.2-1678712142/darwin-amd64.zip'
+          'https://github.com/InjectiveLabs/testnet/releases/download/v1.11.1-1685205489/darwin-amd64.zip'
       },
       genesis: {
         genesis_url:
@@ -28992,12 +29813,30 @@ const chains: Chain[] = [
               'https://github.com/InjectiveLabs/testnet/releases/download/v1.10.2-1678712142/linux-amd64.zip',
             'darwin/amd64':
               'https://github.com/InjectiveLabs/testnet/releases/download/v1.10.2-1678712142/darwin-amd64.zip'
+          },
+          next_version_name: 'v1.11.1'
+        },
+        {
+          name: 'v1.11.1',
+          recommended_version: 'v1.11.1',
+          compatible_versions: ['v1.11.1'],
+          binaries: {
+            'linux/amd64':
+              'https://github.com/InjectiveLabs/testnet/releases/download/v1.11.1-1685205489/linux-amd64.zip',
+            'darwin/amd64':
+              'https://github.com/InjectiveLabs/testnet/releases/download/v1.11.1-1685205489/darwin-amd64.zip'
           }
         }
       ]
     },
     peers: {
-      seeds: [],
+      seeds: [
+        {
+          id: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0',
+          address: 'testnet-seeds.polkachu.com:14356',
+          provider: 'polkachu'
+        }
+      ],
       persistent_peers: [
         {
           id: 'e5cc63a9117e6f372169f15774ea4f7c5177da25',
@@ -29034,6 +29873,10 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
+          address: 'https://injective-testnet-rpc.polkachu.com',
+          provider: 'Polkachu'
+        },
+        {
           address: 'https://k8s.testnet.tm.injective.network:443',
           provider: 'injectiveLabs'
         },
@@ -29044,6 +29887,10 @@ const chains: Chain[] = [
       ],
       rest: [
         {
+          address: 'https://injective-testnet-api.polkachu.com',
+          provider: 'Polkachu'
+        },
+        {
           address: 'https://k8s.testnet.lcd.injective.network',
           provider: 'injectiveLabs'
         },
@@ -29053,6 +29900,10 @@ const chains: Chain[] = [
         }
       ],
       grpc: [
+        {
+          address: 'injective-testnet-grpc.polkachu.com:14390',
+          provider: 'Polkachu'
+        },
         {
           address: 'k8s.testnet.chain.grpc.injective.network:443',
           provider: 'injectiveLabs'
@@ -34120,6 +34971,11 @@ const chains: Chain[] = [
           id: '400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc',
           address: 'umee.rpc.kjnodes.com:16259',
           provider: 'kjnodes'
+        },
+        {
+          id: '64cdbb45575825f764af7ff9d6c71471bc131f87',
+          address: 'seed-node.mms.team:32656',
+          provider: 'MMS'
         }
       ],
       persistent_peers: [
@@ -34152,6 +35008,11 @@ const chains: Chain[] = [
           id: '532ffd92d571900b56fd3ad97dad186f7601c2ca',
           address: '159.69.110.238:46656',
           provider: 'Stake-Take'
+        },
+        {
+          id: '618b74f829cc2dc7eeccf647b3a25168289f30c3',
+          address: 'peer-umee.mms.team:56102',
+          provider: 'MMS'
         }
       ]
     },
@@ -34208,6 +35069,10 @@ const chains: Chain[] = [
         {
           address: 'https://umee-rpc.w3coins.io',
           provider: 'w3coins'
+        },
+        {
+          address: 'https://rpc-umee.mms.team',
+          provider: 'MMS'
         }
       ],
       rest: [
@@ -34262,6 +35127,10 @@ const chains: Chain[] = [
         {
           address: 'https://umee-api.w3coins.io',
           provider: 'w3coins'
+        },
+        {
+          address: 'https://api-umee.mms.team',
+          provider: 'MMS'
         }
       ],
       grpc: [
@@ -34308,6 +35177,10 @@ const chains: Chain[] = [
         {
           address: 'umee-grpc.w3coins.io:13690',
           provider: 'w3coins'
+        },
+        {
+          address: 'grpc-umee.mms.team:443',
+          provider: 'MMS'
         }
       ]
     },
@@ -34790,6 +35663,11 @@ const chains: Chain[] = [
           id: 'e71bae28852a0b603f7360ec17fe91e7f065f324',
           address: 'uptick-mainnet-seed.itrocket.net:35656',
           provider: 'itrocket'
+        },
+        {
+          id: 'bfc5a787583ee52e9e5f2e160e6b32a9cfe213fd',
+          address: 'seed-node.mms.team:36656',
+          provider: 'MMS'
         }
       ],
       persistent_peers: [
@@ -34812,6 +35690,11 @@ const chains: Chain[] = [
           id: '038aca614e49ec4e5e3a06c875976a94c478cb09',
           address: '65.108.195.29:21656',
           provider: 'Staketab'
+        },
+        {
+          id: '3ffde1aaf638c681fb4bd3fa24f0786f68a16611',
+          address: 'peer-uptick.mms.team:56105',
+          provider: 'MMS'
         }
       ]
     },
@@ -34856,6 +35739,10 @@ const chains: Chain[] = [
         {
           address: 'https://uptick-rpc.stakerhouse.com',
           provider: 'StakerHouse'
+        },
+        {
+          address: 'https://rpc-uptick.mms.team',
+          provider: 'MMS'
         }
       ],
       rest: [
@@ -34898,6 +35785,10 @@ const chains: Chain[] = [
         {
           address: 'https://uptick-api.stakerhouse.com',
           provider: 'StakerHouse'
+        },
+        {
+          address: 'https://api-uptick.mms.team',
+          provider: 'MMS'
         }
       ],
       grpc: [
@@ -34932,6 +35823,10 @@ const chains: Chain[] = [
         {
           address: 'uptick-grpc.stakerhouse.com:443',
           provider: 'StakerHouse'
+        },
+        {
+          address: 'grpc-uptick.mms.team:443',
+          provider: 'MMS'
         }
       ],
       'evm-http-jsonrpc': [

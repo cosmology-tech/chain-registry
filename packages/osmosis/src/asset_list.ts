@@ -5826,6 +5826,272 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description:
+        'axlUSDC transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/0C07D5498CB667C3706C1DAB479C6FF68E9DE76A83DB9B107707BE1799C1E940',
+          exponent: 0,
+          aliases: [
+            'ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911'
+          ]
+        },
+        {
+          denom: 'usdc',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/0C07D5498CB667C3706C1DAB479C6FF68E9DE76A83DB9B107707BE1799C1E940',
+      name: 'axlUSDC',
+      display: 'usdc',
+      symbol: 'axlUSDC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-783'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'OSMO transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/A1F4BFABB8624B56B1A521DDD4703411DDBDB1F3F6F79B95654920838DCE121E',
+          exponent: 0,
+          aliases: [
+            'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518'
+          ]
+        },
+        {
+          denom: 'osmo',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/A1F4BFABB8624B56B1A521DDD4703411DDBDB1F3F6F79B95654920838DCE121E',
+      name: 'Osmosis',
+      display: 'osmo',
+      symbol: 'OSMO',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-783'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'stOSMO transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/0C98CFFC5DD368EC23920691C0C873FF5563412C941DFB3F1286BD2543A04AC8',
+          exponent: 0,
+          aliases: [
+            'ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1'
+          ]
+        },
+        {
+          denom: 'stosmo',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/0C98CFFC5DD368EC23920691C0C873FF5563412C941DFB3F1286BD2543A04AC8',
+      name: 'Osmosis',
+      display: 'stosmo',
+      symbol: 'stOSMO',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-783'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'ATOM transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/0FBCE1D5A4900E81D536BC82AB2FD835372C9130096A7CFE04FA367C84ECB3CE',
+          exponent: 0,
+          aliases: [
+            'ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388'
+          ]
+        },
+        {
+          denom: 'atom',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/0FBCE1D5A4900E81D536BC82AB2FD835372C9130096A7CFE04FA367C84ECB3CE',
+      name: 'Atom',
+      display: 'atom',
+      symbol: 'ATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-783'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'stATOM transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/677E68D40422380F21694BDC6138A8930B72ADA8DD99C71BBC7554AD47AD75A0',
+          exponent: 0,
+          aliases: [
+            'ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8'
+          ]
+        },
+        {
+          denom: 'statom',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/677E68D40422380F21694BDC6138A8930B72ADA8DD99C71BBC7554AD47AD75A0',
+      name: 'stATOM',
+      display: 'statom',
+      symbol: 'stATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-783'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'WETH transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/7B5854A140A3604207939DF071ECB7B3039229701720400F9654133934611D1C',
+          exponent: 0,
+          aliases: [
+            'ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C'
+          ]
+        },
+        {
+          denom: 'weth',
+          exponent: 18,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/7B5854A140A3604207939DF071ECB7B3039229701720400F9654133934611D1C',
+      name: 'WETH',
+      display: 'weth',
+      symbol: 'WETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-783'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'WBTC transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/EE9BEB35593E4765ED3EEA003E5571F2114E19DAA4E7052534A015D33FCFA48D',
+          exponent: 0,
+          aliases: [
+            'ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221'
+          ]
+        },
+        {
+          denom: 'wbtc',
+          exponent: 8,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/EE9BEB35593E4765ED3EEA003E5571F2114E19DAA4E7052534A015D33FCFA48D',
+      name: 'WBTC',
+      display: 'wbtc',
+      symbol: 'WBTC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-783'
+          }
+        }
+      ]
+    },
+    {
       description: 'Staking and goverance token for ODIN Protocol',
       denom_units: [
         {
@@ -6298,8 +6564,7 @@ const asset_list: AssetList = {
       display: 'qsr',
       symbol: 'QSR',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png'
       },
       traces: [
         {
@@ -6357,7 +6622,7 @@ const asset_list: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/EDEFB96A2A1AEA32DFED16E5A7C3E146A244A372A74CCDD73FDA3AA365E33E59',
+            'ibc/9D7FEC90340264762F3F9D0E2B3EFFAFB2D7656887CDF1D339FB8F7410A4C878',
           exponent: 0,
           aliases: [
             'ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5'
@@ -6370,7 +6635,7 @@ const asset_list: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/EDEFB96A2A1AEA32DFED16E5A7C3E146A244A372A74CCDD73FDA3AA365E33E59',
+      base: 'ibc/9D7FEC90340264762F3F9D0E2B3EFFAFB2D7656887CDF1D339FB8F7410A4C878',
       name: 'Atom',
       display: 'atom',
       symbol: 'ATOM',
@@ -6394,7 +6659,7 @@ const asset_list: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/9B6E2D87FB3CDA88CD2387A7F1A354469B4DB302851ED0216FB77E4A1B952000',
+            'ibc/69C2545CBA13844E6E0D102B67D4371CBEC3839589CD81C01A77B784A0681309',
           exponent: 0,
           aliases: [
             'ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A'
@@ -6407,7 +6672,7 @@ const asset_list: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/9B6E2D87FB3CDA88CD2387A7F1A354469B4DB302851ED0216FB77E4A1B952000',
+      base: 'ibc/69C2545CBA13844E6E0D102B67D4371CBEC3839589CD81C01A77B784A0681309',
       name: 'USD Coin',
       display: 'usdc',
       symbol: 'USDC.axl',

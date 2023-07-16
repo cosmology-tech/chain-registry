@@ -232,6 +232,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/BF9D23E0455824BE1C3334360230681EED17CB3C4D7219F71ED13AE51079EBE8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/BF9D23E0455824BE1C3334360230681EED17CB3C4D7219F71ED13AE51079EBE8",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-641",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-16"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/95EAE825798489ABACD7E6BDDAA504A5E3575F707ADB3B75ABD8D771AE254D65",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/95EAE825798489ABACD7E6BDDAA504A5E3575F707ADB3B75ABD8D771AE254D65",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-641",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-16"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/CE5A2A20007B6FD312388A1118A0FAEEE6B49DFE71B083B501CD9E171BBC23A3",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/CE5A2A20007B6FD312388A1118A0FAEEE6B49DFE71B083B501CD9E171BBC23A3",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-641",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-16"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/639BBB3CEC0692575537C5534800E189A5FB3AF9F052D0B34682D6A5C9D805AC",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/639BBB3CEC0692575537C5534800E189A5FB3AF9F052D0B34682D6A5C9D805AC",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-641",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-16"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/0807948EC189E63D495805214E776A6BB4B2678F700D89C321E36FDAC0632485",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/0807948EC189E63D495805214E776A6BB4B2678F700D89C321E36FDAC0632485",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-641",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-16"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCE6F6B5116C2DC07F2326691C8CA2AD63D38089B6C7DF6954708986FE70A85C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCE6F6B5116C2DC07F2326691C8CA2AD63D38089B6C7DF6954708986FE70A85C",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-641",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-16"
+            }
+          }
+        ]
       }
     ]
   },
@@ -2126,6 +2324,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-490",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-490",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-490",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-490",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-490",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-490",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-490",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -5597,6 +5993,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-320",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-320",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-320",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-320",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-320",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-320",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Secret Network",
         "denom_units": [
           {
@@ -5824,6 +6418,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-779",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-779",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-779",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-779",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-779",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-779",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-779",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -6507,6 +7299,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-1",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/170C677610AC31DF0904FFE09CD3B5C657492170E7E52372E48756B71E56F2F1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/170C677610AC31DF0904FFE09CD3B5C657492170E7E52372E48756B71E56F2F1",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/987DFB6F0A1D4DB60EFE80A0045E679473B2385B06F3F4AF5908A3EBCE0B4055",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/987DFB6F0A1D4DB60EFE80A0045E679473B2385B06F3F4AF5908A3EBCE0B4055",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/E86611817EAF331173D204962298A16C236E918F7C7E985497A63232B926F162",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/E86611817EAF331173D204962298A16C236E918F7C7E985497A63232B926F162",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/BBED6D24661AF2AB7E1AFCC93E7C639CE4B20292C762AEEF5C786B6262B1197A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/BBED6D24661AF2AB7E1AFCC93E7C639CE4B20292C762AEEF5C786B6262B1197A",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/32736F19957D44B3E2221531E9AD0E7EAF7AB13C796560A9AE110520A51CD327",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/32736F19957D44B3E2221531E9AD0E7EAF7AB13C796560A9AE110520A51CD327",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/498BBAA4FD1D7643103A84FE3C91920ED7E421E9BB32EBFD5C7525DE052BC564",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/498BBAA4FD1D7643103A84FE3C91920ED7E421E9BB32EBFD5C7525DE052BC564",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -8431,6 +9421,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1429",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1429",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1429",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1429",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1429",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1429",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -8584,6 +9772,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-648",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-12"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6F73FCFF907B0ECC6433FAFB0C8C737ECCAC5316B3F9D00D72F3C72E48616F02",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6F73FCFF907B0ECC6433FAFB0C8C737ECCAC5316B3F9D00D72F3C72E48616F02",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-648",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-12"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/BD0D862FD355FA27BAA6048F650901949BA456A8BC85158EBCCBD95D7B2C2C71",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/BD0D862FD355FA27BAA6048F650901949BA456A8BC85158EBCCBD95D7B2C2C71",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-648",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-12"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/C76F5D1B53B931E72503A6ADF230BF00858A8ED9CD0309F9CD874CC994BF2FA3",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/C76F5D1B53B931E72503A6ADF230BF00858A8ED9CD0309F9CD874CC994BF2FA3",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-648",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-12"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F50F39482F0E1BED97A4D97D402A2162034624DD6726755AD0152E07E01A9751",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F50F39482F0E1BED97A4D97D402A2162034624DD6726755AD0152E07E01A9751",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-648",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-12"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FB76F534D5617D4CD5A746831C10AAC4A879FEDB64DEB49B16E56B3A16513EB4",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FB76F534D5617D4CD5A746831C10AAC4A879FEDB64DEB49B16E56B3A16513EB4",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-648",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-12"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/BB1EC032FCC64441C9AF35B71A4D83DC021B89ED8E27EF12394070E4BC6E5610",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/BB1EC032FCC64441C9AF35B71A4D83DC021B89ED8E27EF12394070E4BC6E5610",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-648",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -9114,6 +10500,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-232",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-232",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-232",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-232",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-232",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-232",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-232",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -11451,6 +13035,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/05554A9BFDD28894D7F18F4C707AA0930D778751A437A9FE1F4684A3E1199728",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/05554A9BFDD28894D7F18F4C707AA0930D778751A437A9FE1F4684A3E1199728",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-208",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/712DD317E8DE4DDC5CBF8481BBE0DB1D48A16C8C28057D502A38F3671295C0AB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/712DD317E8DE4DDC5CBF8481BBE0DB1D48A16C8C28057D502A38F3671295C0AB",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-208",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F34DC2408B2EB193D2A82388AC5F9AC86282B14BBF623A8581BBE075654547CD",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F34DC2408B2EB193D2A82388AC5F9AC86282B14BBF623A8581BBE075654547CD",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-208",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F535FE1A4EB96E3A6B45153B1187AC9B8BBEB2D230AEFBD196862BF421B92BAF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F535FE1A4EB96E3A6B45153B1187AC9B8BBEB2D230AEFBD196862BF421B92BAF",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-208",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F472078E60F4AA887DA65A6009E501882594AAA5721C3C13F54724E6B29F1718",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F472078E60F4AA887DA65A6009E501882594AAA5721C3C13F54724E6B29F1718",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-208",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/C975A2A3ED94B56B93336A188D953C2C8895931BD96BE0DA4DB82F9B560B0EDF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/C975A2A3ED94B56B93336A188D953C2C8895931BD96BE0DA4DB82F9B560B0EDF",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-208",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Secret Network",
         "denom_units": [
           {
@@ -11692,6 +13474,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/19AB326FD34DA84A279EADF91977955CF12BE777DCC60945461FACBB84E5D2AC",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/19AB326FD34DA84A279EADF91977955CF12BE777DCC60945461FACBB84E5D2AC",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-148",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-83"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7ABDEDA6745F7438410348C0D43EAF8C203C390951D2970A2D49F938266BDDEF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7ABDEDA6745F7438410348C0D43EAF8C203C390951D2970A2D49F938266BDDEF",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-148",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-83"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6BFAF9CA209F639EAF47C78F332C14D04706BDA0988133731E0D7C301D9FD794",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6BFAF9CA209F639EAF47C78F332C14D04706BDA0988133731E0D7C301D9FD794",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-148",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-83"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/81C7E1C39B40CE7C37FDE847CC1A3F0F366F93B83B57CAECDF009ACEBBCEDB34",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/81C7E1C39B40CE7C37FDE847CC1A3F0F366F93B83B57CAECDF009ACEBBCEDB34",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-148",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-83"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/C64EB2CD1BDFA3BB2B15139FDECD2F7A5CDF7B90BE15C81ACAE58931FB61A966",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/C64EB2CD1BDFA3BB2B15139FDECD2F7A5CDF7B90BE15C81ACAE58931FB61A966",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-148",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-83"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9B1661AFC614486D2B3B3330A4523A6E9BAEF57510013BFEFD1C18EB389C73FF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9B1661AFC614486D2B3B3330A4523A6E9BAEF57510013BFEFD1C18EB389C73FF",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-148",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-83"
+            }
+          }
+        ]
       }
     ]
   },
@@ -11845,6 +13825,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-340",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-340",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-340",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-340",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-340",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-340",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-340",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -12774,6 +14952,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-51",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-51",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-51",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-51",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-51",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-51",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -13155,6 +15531,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-73",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-73",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-73",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-73",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-73",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-73",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -13315,6 +15889,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-763",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-763",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-763",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-763",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-763",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-763",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -13468,6 +16240,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-95",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/13DF61376C08483555C6D4C9203612086A1B23218EB5EBDBE609EEC7EFF2D82D",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/13DF61376C08483555C6D4C9203612086A1B23218EB5EBDBE609EEC7EFF2D82D",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-95",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/B76B340588564A49387A7B22A24CFFE3F873B61B461AD95A242E1D76138B6BBD",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/B76B340588564A49387A7B22A24CFFE3F873B61B461AD95A242E1D76138B6BBD",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-95",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/5F78C42BCC76287AE6B3185C6C1455DFFF8D805B1847F94B9B625384B93885C7",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/5F78C42BCC76287AE6B3185C6C1455DFFF8D805B1847F94B9B625384B93885C7",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-95",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/0F7930B63244CA4BCC01C08F85697131884A24CD87A8DD970DE968E4477035F8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/0F7930B63244CA4BCC01C08F85697131884A24CD87A8DD970DE968E4477035F8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-95",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/EAFC16C9228D3D8423D93CB2259B7AE7F504B8454060A3E43E5A5D5E595C4854",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/EAFC16C9228D3D8423D93CB2259B7AE7F504B8454060A3E43E5A5D5E595C4854",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-95",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9BF31153F7E37F687C75A2F310E7A4DB6E0512B065F709B5EB69FE828133AFAC",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9BF31153F7E37F687C75A2F310E7A4DB6E0512B065F709B5EB69FE828133AFAC",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-95",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -14074,6 +17044,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/2D3458A504ADA3971E5697998AAC8507E7BFB10583CC7E249C8EBC317DDF92EF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/2D3458A504ADA3971E5697998AAC8507E7BFB10583CC7E249C8EBC317DDF92EF",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-550",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/B43799D7D32AC0BA802DDD09824F8802B1AB0C58F20165CB6F1C4035845DDEDA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/B43799D7D32AC0BA802DDD09824F8802B1AB0C58F20165CB6F1C4035845DDEDA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-550",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/070039AB58034252D2E86210276E05FE25B2FB41D15603185FD57960AFBAEDB6",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/070039AB58034252D2E86210276E05FE25B2FB41D15603185FD57960AFBAEDB6",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-550",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/D6B46DADF427957EC1E29A569F88FD228C751BA3142A47C81D2AA58BDD386272",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/D6B46DADF427957EC1E29A569F88FD228C751BA3142A47C81D2AA58BDD386272",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-550",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/38C1064F147A125ACBFB6791C5FE3AD7371154E5AE64471CBBBDA187D489805B",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/38C1064F147A125ACBFB6791C5FE3AD7371154E5AE64471CBBBDA187D489805B",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-550",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/69FA880032B055A05B87F2F62D6FFFFDC516FA9D7A7B0CA8880145A7130528CE",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/69FA880032B055A05B87F2F62D6FFFFDC516FA9D7A7B0CA8880145A7130528CE",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-550",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
       }
     ]
   },
@@ -14491,6 +17659,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-188",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-188",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-188",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-188",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-188",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-188",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-188",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -15380,6 +18746,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-212",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-212",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-212",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-212",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-212",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-212",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -15533,6 +19097,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-108",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-108",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-108",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-108",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-108",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-108",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-108",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -16097,6 +19859,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-113",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-7"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/398B3A1DE10411F2BC51FE25AC367CF501385016C1B030C57E624EC46E158F15",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/398B3A1DE10411F2BC51FE25AC367CF501385016C1B030C57E624EC46E158F15",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-113",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-7"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/170BDAA3B47FC6E9F26BFB6A1EB6D711F633EF2BB6D2D105068232D69BD65127",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/170BDAA3B47FC6E9F26BFB6A1EB6D711F633EF2BB6D2D105068232D69BD65127",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-113",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-7"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/B1C671DAA104B8D93C7E4F2C9E0BAD4FEEB7AD0FF39F0DE91B471CD92DB077B5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/B1C671DAA104B8D93C7E4F2C9E0BAD4FEEB7AD0FF39F0DE91B471CD92DB077B5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-113",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-7"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/929E3C5EF7C53840FFB944301B5A244A7DDBEEB5C1B554FEAEDCE08B13D721B1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/929E3C5EF7C53840FFB944301B5A244A7DDBEEB5C1B554FEAEDCE08B13D721B1",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-113",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-7"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6E707CB124A5F034FA2DE65C604110A9EAF4E34001EA2E8A91C15F999CA5AE30",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6E707CB124A5F034FA2DE65C604110A9EAF4E34001EA2E8A91C15F999CA5AE30",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-113",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-7"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/721326EBB2F1EC08854A3698CB1189CE1F240FF316DA339908ED8531F2FAD136",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/721326EBB2F1EC08854A3698CB1189CE1F240FF316DA339908ED8531F2FAD136",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-113",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -16747,6 +20707,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-87",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-87",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-87",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-87",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-87",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-87",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Secret Network",
         "denom_units": [
           {
@@ -17299,6 +21457,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-1279",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/05554A9BFDD28894D7F18F4C707AA0930D778751A437A9FE1F4684A3E1199728",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/05554A9BFDD28894D7F18F4C707AA0930D778751A437A9FE1F4684A3E1199728",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1279",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/712DD317E8DE4DDC5CBF8481BBE0DB1D48A16C8C28057D502A38F3671295C0AB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/712DD317E8DE4DDC5CBF8481BBE0DB1D48A16C8C28057D502A38F3671295C0AB",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1279",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F34DC2408B2EB193D2A82388AC5F9AC86282B14BBF623A8581BBE075654547CD",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F34DC2408B2EB193D2A82388AC5F9AC86282B14BBF623A8581BBE075654547CD",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1279",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F535FE1A4EB96E3A6B45153B1187AC9B8BBEB2D230AEFBD196862BF421B92BAF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F535FE1A4EB96E3A6B45153B1187AC9B8BBEB2D230AEFBD196862BF421B92BAF",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1279",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F472078E60F4AA887DA65A6009E501882594AAA5721C3C13F54724E6B29F1718",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F472078E60F4AA887DA65A6009E501882594AAA5721C3C13F54724E6B29F1718",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1279",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/C975A2A3ED94B56B93336A188D953C2C8895931BD96BE0DA4DB82F9B560B0EDF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/C975A2A3ED94B56B93336A188D953C2C8895931BD96BE0DA4DB82F9B560B0EDF",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1279",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -20262,6 +24618,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-0",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-141"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/57F14B6B1D8590647CCA908E9190DFAC99282C841AFD11FAA2E4CFBB19E6AB30",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/57F14B6B1D8590647CCA908E9190DFAC99282C841AFD11FAA2E4CFBB19E6AB30",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-141"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DB05FAA28AFE2EF698C584AB816C5EC1BE08FD4F97C03A67219B15F6990BD56D",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DB05FAA28AFE2EF698C584AB816C5EC1BE08FD4F97C03A67219B15F6990BD56D",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-141"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DC3546F9ADCB15B45CA5787D9755FC1BDD768173E55025420A217B90F6F6F625",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DC3546F9ADCB15B45CA5787D9755FC1BDD768173E55025420A217B90F6F6F625",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-141"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/3E550E416D841B0251B674E13550CA5ED1EEED90CA1158AF3F5FB037172609C4",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/3E550E416D841B0251B674E13550CA5ED1EEED90CA1158AF3F5FB037172609C4",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-141"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/56FF313CB5E8D118ECE0EC69D3CF4BCBF393B285726D34D43B6F89A984DFAB7A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/56FF313CB5E8D118ECE0EC69D3CF4BCBF393B285726D34D43B6F89A984DFAB7A",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-141"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AE344F1ED5AA06278A5EA4500FB259C83A77FE2BF786E7D4DCED6117795F8881",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AE344F1ED5AA06278A5EA4500FB259C83A77FE2BF786E7D4DCED6117795F8881",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -23862,6 +28416,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/170C677610AC31DF0904FFE09CD3B5C657492170E7E52372E48756B71E56F2F1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/170C677610AC31DF0904FFE09CD3B5C657492170E7E52372E48756B71E56F2F1",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-297",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/987DFB6F0A1D4DB60EFE80A0045E679473B2385B06F3F4AF5908A3EBCE0B4055",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/987DFB6F0A1D4DB60EFE80A0045E679473B2385B06F3F4AF5908A3EBCE0B4055",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-297",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/E86611817EAF331173D204962298A16C236E918F7C7E985497A63232B926F162",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/E86611817EAF331173D204962298A16C236E918F7C7E985497A63232B926F162",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-297",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/BBED6D24661AF2AB7E1AFCC93E7C639CE4B20292C762AEEF5C786B6262B1197A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/BBED6D24661AF2AB7E1AFCC93E7C639CE4B20292C762AEEF5C786B6262B1197A",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-297",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/32736F19957D44B3E2221531E9AD0E7EAF7AB13C796560A9AE110520A51CD327",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/32736F19957D44B3E2221531E9AD0E7EAF7AB13C796560A9AE110520A51CD327",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-297",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/498BBAA4FD1D7643103A84FE3C91920ED7E421E9BB32EBFD5C7525DE052BC564",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/498BBAA4FD1D7643103A84FE3C91920ED7E421E9BB32EBFD5C7525DE052BC564",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-297",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Secret Network",
         "denom_units": [
           {
@@ -25849,6 +30601,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/7E955DE4F6A23E90222993E5CDBD46B9EEC53C15F6C43F886231F6CA7AA17BF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7E955DE4F6A23E90222993E5CDBD46B9EEC53C15F6C43F886231F6CA7AA17BF8",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-5",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FC8B99134BC71B7D9D68BC67A7F300984CB3905FA6D699FB55CC58D0DCDED996",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FC8B99134BC71B7D9D68BC67A7F300984CB3905FA6D699FB55CC58D0DCDED996",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-5",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/2CA7FA605E0E3AF2E30FF14B7AC2474F2A8533835A16041A044277AED0A8E614",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/2CA7FA605E0E3AF2E30FF14B7AC2474F2A8533835A16041A044277AED0A8E614",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-5",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/8FC0CC1E03A465FB168B8E9A8D753A8CF7052B66481968EA8EAF67491304EFC4",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/8FC0CC1E03A465FB168B8E9A8D753A8CF7052B66481968EA8EAF67491304EFC4",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-5",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/BFFE5A22450AB53580906F6023F88E308873A1B8D9FE058929063C20C928D1A8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/BFFE5A22450AB53580906F6023F88E308873A1B8D9FE058929063C20C928D1A8",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-5",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/8F991F0845319611CEE1B7570A0A1EE75D8909A9664AE614BCCFF25E1D244BE9",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/8F991F0845319611CEE1B7570A0A1EE75D8909A9664AE614BCCFF25E1D244BE9",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-5",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
         "description": "The XPRT token is primarily a governance token for the Persistence chain.",
         "denom_units": [
           {
@@ -26317,6 +31267,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-298",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-298",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-298",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-298",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-298",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-298",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -26477,6 +31625,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-181",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-181",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-181",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-181",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-181",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-181",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -26630,6 +31976,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-135",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/13DF61376C08483555C6D4C9203612086A1B23218EB5EBDBE609EEC7EFF2D82D",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/13DF61376C08483555C6D4C9203612086A1B23218EB5EBDBE609EEC7EFF2D82D",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-135",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/B76B340588564A49387A7B22A24CFFE3F873B61B461AD95A242E1D76138B6BBD",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/B76B340588564A49387A7B22A24CFFE3F873B61B461AD95A242E1D76138B6BBD",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-135",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/5F78C42BCC76287AE6B3185C6C1455DFFF8D805B1847F94B9B625384B93885C7",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/5F78C42BCC76287AE6B3185C6C1455DFFF8D805B1847F94B9B625384B93885C7",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-135",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/0F7930B63244CA4BCC01C08F85697131884A24CD87A8DD970DE968E4477035F8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/0F7930B63244CA4BCC01C08F85697131884A24CD87A8DD970DE968E4477035F8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-135",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/EAFC16C9228D3D8423D93CB2259B7AE7F504B8454060A3E43E5A5D5E595C4854",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/EAFC16C9228D3D8423D93CB2259B7AE7F504B8454060A3E43E5A5D5E595C4854",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-135",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9BF31153F7E37F687C75A2F310E7A4DB6E0512B065F709B5EB69FE828133AFAC",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9BF31153F7E37F687C75A2F310E7A4DB6E0512B065F709B5EB69FE828133AFAC",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-135",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -26942,6 +32486,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-128",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-128",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-128",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-128",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-128",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-128",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -27102,6 +32844,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/13DF61376C08483555C6D4C9203612086A1B23218EB5EBDBE609EEC7EFF2D82D",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/13DF61376C08483555C6D4C9203612086A1B23218EB5EBDBE609EEC7EFF2D82D",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-526",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/B76B340588564A49387A7B22A24CFFE3F873B61B461AD95A242E1D76138B6BBD",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/B76B340588564A49387A7B22A24CFFE3F873B61B461AD95A242E1D76138B6BBD",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-526",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/5F78C42BCC76287AE6B3185C6C1455DFFF8D805B1847F94B9B625384B93885C7",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/5F78C42BCC76287AE6B3185C6C1455DFFF8D805B1847F94B9B625384B93885C7",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-526",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/0F7930B63244CA4BCC01C08F85697131884A24CD87A8DD970DE968E4477035F8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/0F7930B63244CA4BCC01C08F85697131884A24CD87A8DD970DE968E4477035F8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-526",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/EAFC16C9228D3D8423D93CB2259B7AE7F504B8454060A3E43E5A5D5E595C4854",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/EAFC16C9228D3D8423D93CB2259B7AE7F504B8454060A3E43E5A5D5E595C4854",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-526",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9BF31153F7E37F687C75A2F310E7A4DB6E0512B065F709B5EB69FE828133AFAC",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9BF31153F7E37F687C75A2F310E7A4DB6E0512B065F709B5EB69FE828133AFAC",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-526",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
       }
     ]
   },
@@ -27255,6 +33195,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-403",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-11"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/98F44FD3FAF9225FD56CE5BB05095F5A5F6378295CA67599B62D237746693F1F",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/98F44FD3FAF9225FD56CE5BB05095F5A5F6378295CA67599B62D237746693F1F",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-403",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-11"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/281455BF1163C4FA35D1BB90FD7D6CB82D037F978B1C6BB344A1724AF292F5BE",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/281455BF1163C4FA35D1BB90FD7D6CB82D037F978B1C6BB344A1724AF292F5BE",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-403",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-11"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/8856C0DEC552C800245E07130DD2433BBDFF87C68A85867F47A708E8492CE540",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/8856C0DEC552C800245E07130DD2433BBDFF87C68A85867F47A708E8492CE540",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-403",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-11"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/910C379C665B280BC3745C47BBCEBE173DAC0D8FF86946B04E2FFCEEAC65BD32",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/910C379C665B280BC3745C47BBCEBE173DAC0D8FF86946B04E2FFCEEAC65BD32",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-403",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-11"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6017F48BDC38D2E59665AD6BE140C2D1593C9628470922E80C4DDF5DF2203CE6",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6017F48BDC38D2E59665AD6BE140C2D1593C9628470922E80C4DDF5DF2203CE6",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-403",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-11"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/4D0DF76D91215671B66E3F0E1482CC16D891E464526232ECF37D0BB9167C9F0B",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/4D0DF76D91215671B66E3F0E1482CC16D891E464526232ECF37D0BB9167C9F0B",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-403",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -27636,6 +33774,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-37",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-37",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-37",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-37",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-37",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-37",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-37",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -29024,6 +35360,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1411",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1411",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1411",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1411",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1411",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1411",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -29678,6 +36212,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-204",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-204",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-204",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-204",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-204",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-204",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Secret Network",
         "denom_units": [
           {
@@ -30275,6 +37007,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7E955DE4F6A23E90222993E5CDBD46B9EEC53C15F6C43F886231F6CA7AA17BF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7E955DE4F6A23E90222993E5CDBD46B9EEC53C15F6C43F886231F6CA7AA17BF8",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-229",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FC8B99134BC71B7D9D68BC67A7F300984CB3905FA6D699FB55CC58D0DCDED996",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FC8B99134BC71B7D9D68BC67A7F300984CB3905FA6D699FB55CC58D0DCDED996",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-229",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/2CA7FA605E0E3AF2E30FF14B7AC2474F2A8533835A16041A044277AED0A8E614",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/2CA7FA605E0E3AF2E30FF14B7AC2474F2A8533835A16041A044277AED0A8E614",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-229",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/8FC0CC1E03A465FB168B8E9A8D753A8CF7052B66481968EA8EAF67491304EFC4",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/8FC0CC1E03A465FB168B8E9A8D753A8CF7052B66481968EA8EAF67491304EFC4",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-229",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/BFFE5A22450AB53580906F6023F88E308873A1B8D9FE058929063C20C928D1A8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/BFFE5A22450AB53580906F6023F88E308873A1B8D9FE058929063C20C928D1A8",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-229",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/8F991F0845319611CEE1B7570A0A1EE75D8909A9664AE614BCCFF25E1D244BE9",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/8F991F0845319611CEE1B7570A0A1EE75D8909A9664AE614BCCFF25E1D244BE9",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-229",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
       }
     ]
   },
@@ -30428,6 +37358,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-236",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-236",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-236",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-236",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-236",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-236",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-236",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -30595,6 +37723,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-253",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-253",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-253",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-253",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-253",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-253",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -30748,6 +38074,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-781",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-781",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-781",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-781",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-781",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-781",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-781",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -31369,6 +38893,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/7E955DE4F6A23E90222993E5CDBD46B9EEC53C15F6C43F886231F6CA7AA17BF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7E955DE4F6A23E90222993E5CDBD46B9EEC53C15F6C43F886231F6CA7AA17BF8",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-144",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FC8B99134BC71B7D9D68BC67A7F300984CB3905FA6D699FB55CC58D0DCDED996",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FC8B99134BC71B7D9D68BC67A7F300984CB3905FA6D699FB55CC58D0DCDED996",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-144",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/2CA7FA605E0E3AF2E30FF14B7AC2474F2A8533835A16041A044277AED0A8E614",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/2CA7FA605E0E3AF2E30FF14B7AC2474F2A8533835A16041A044277AED0A8E614",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-144",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/8FC0CC1E03A465FB168B8E9A8D753A8CF7052B66481968EA8EAF67491304EFC4",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/8FC0CC1E03A465FB168B8E9A8D753A8CF7052B66481968EA8EAF67491304EFC4",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-144",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/BFFE5A22450AB53580906F6023F88E308873A1B8D9FE058929063C20C928D1A8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/BFFE5A22450AB53580906F6023F88E308873A1B8D9FE058929063C20C928D1A8",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-144",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/8F991F0845319611CEE1B7570A0A1EE75D8909A9664AE614BCCFF25E1D244BE9",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/8F991F0845319611CEE1B7570A0A1EE75D8909A9664AE614BCCFF25E1D244BE9",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-144",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
         "description": "The XPRT token is primarily a governance token for the Persistence chain.",
         "denom_units": [
           {
@@ -31801,6 +39523,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/A01367FF44D9DE359A984FC14EC5227AA96ED08B8B4B31B539BB63B9B9305F80",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A01367FF44D9DE359A984FC14EC5227AA96ED08B8B4B31B539BB63B9B9305F80",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-38",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-4"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/661462D67925D710D139AC0980BA92B072288BE3B24C7F2415CCB97E0B447FAE",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/661462D67925D710D139AC0980BA92B072288BE3B24C7F2415CCB97E0B447FAE",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-38",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-4"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/20D06D04E1BC1FAC482FECC06C2E2879A596904D64D8BA3285B4A3789DEAF910",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/20D06D04E1BC1FAC482FECC06C2E2879A596904D64D8BA3285B4A3789DEAF910",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-38",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-4"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/D93596D0A06982E28574E1D9D07165003B1FB5C35E21D3C0F6A9EC4722C9E685",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/D93596D0A06982E28574E1D9D07165003B1FB5C35E21D3C0F6A9EC4722C9E685",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-38",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-4"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/D14BB8072492C2CEB48469F2BBE1EBC5FEE176C0EB92A139570581A1C6B8BF33",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/D14BB8072492C2CEB48469F2BBE1EBC5FEE176C0EB92A139570581A1C6B8BF33",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-38",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-4"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A1DDBB67F675F9495404AF1C94FC07CB37B6679349705E84931235960D679213",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A1DDBB67F675F9495404AF1C94FC07CB37B6679349705E84931235960D679213",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-38",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-4"
+            }
+          }
+        ]
+      },
+      {
         "description": "Rowan Token (ROWAN) is the Sifchain Network's native utility token, used as the primary means to govern, provide liquidity, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
         "denom_units": [
           {
@@ -31990,6 +39910,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-517",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-517",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-517",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-517",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-517",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-517",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-517",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -33721,6 +41839,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/BE8166C09385A65A64366092FA14CEAD171EBB8E2464400196A1B19B4DC3AD50",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/BE8166C09385A65A64366092FA14CEAD171EBB8E2464400196A1B19B4DC3AD50",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-122",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/4FE7634C9CF87665EED080806D0BCCA346A8B13311E0B443CD28FFAC2C7570B9",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/4FE7634C9CF87665EED080806D0BCCA346A8B13311E0B443CD28FFAC2C7570B9",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-122",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6E2FE0B25FE6DE428D16B25D42832D13B8A6DF65B40844EA4AB49C94896BB932",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6E2FE0B25FE6DE428D16B25D42832D13B8A6DF65B40844EA4AB49C94896BB932",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-122",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/3E0F82B85BA979AC50C0A509C5ACF5BB0DF071F977BAAD68DB0B2A2B3994C5EA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/3E0F82B85BA979AC50C0A509C5ACF5BB0DF071F977BAAD68DB0B2A2B3994C5EA",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-122",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/8E29C07E81FDE94D898868F9EF92EE805B6D5902B75F2F90C9DE48E5BE6A2AFA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/8E29C07E81FDE94D898868F9EF92EE805B6D5902B75F2F90C9DE48E5BE6A2AFA",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-122",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A4D4E73A15DD9C815C039C0648111FDC83C3B63089E358565EA0AFB78C024E57",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A4D4E73A15DD9C815C039C0648111FDC83C3B63089E358565EA0AFB78C024E57",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-122",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
         "description": "The XPRT token is primarily a governance token for the Persistence chain.",
         "denom_units": [
           {
@@ -34915,6 +43231,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/05554A9BFDD28894D7F18F4C707AA0930D778751A437A9FE1F4684A3E1199728",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/05554A9BFDD28894D7F18F4C707AA0930D778751A437A9FE1F4684A3E1199728",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-6",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/712DD317E8DE4DDC5CBF8481BBE0DB1D48A16C8C28057D502A38F3671295C0AB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/712DD317E8DE4DDC5CBF8481BBE0DB1D48A16C8C28057D502A38F3671295C0AB",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-6",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F34DC2408B2EB193D2A82388AC5F9AC86282B14BBF623A8581BBE075654547CD",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F34DC2408B2EB193D2A82388AC5F9AC86282B14BBF623A8581BBE075654547CD",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-6",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F535FE1A4EB96E3A6B45153B1187AC9B8BBEB2D230AEFBD196862BF421B92BAF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F535FE1A4EB96E3A6B45153B1187AC9B8BBEB2D230AEFBD196862BF421B92BAF",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-6",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F472078E60F4AA887DA65A6009E501882594AAA5721C3C13F54724E6B29F1718",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F472078E60F4AA887DA65A6009E501882594AAA5721C3C13F54724E6B29F1718",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-6",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/C975A2A3ED94B56B93336A188D953C2C8895931BD96BE0DA4DB82F9B560B0EDF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/C975A2A3ED94B56B93336A188D953C2C8895931BD96BE0DA4DB82F9B560B0EDF",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-6",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
         "description": "The XPRT token is primarily a governance token for the Persistence chain.",
         "denom_units": [
           {
@@ -35677,6 +44191,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-412",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-412",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-412",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-412",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-412",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-412",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-412",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -38795,6 +47507,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-42",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-42",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-42",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-42",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-42",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-42",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
         "description": "The XPRT token is primarily a governance token for the Persistence chain.",
         "denom_units": [
           {
@@ -41088,6 +49998,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-143",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-143",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-143",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-143",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-143",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-143",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -41286,6 +50394,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-77",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-77",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-77",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-77",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-77",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-77",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -41439,6 +50745,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-171",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-171",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-171",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-171",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-171",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-171",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-171",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -44584,6 +54088,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/05554A9BFDD28894D7F18F4C707AA0930D778751A437A9FE1F4684A3E1199728",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/05554A9BFDD28894D7F18F4C707AA0930D778751A437A9FE1F4684A3E1199728",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-259",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/712DD317E8DE4DDC5CBF8481BBE0DB1D48A16C8C28057D502A38F3671295C0AB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/712DD317E8DE4DDC5CBF8481BBE0DB1D48A16C8C28057D502A38F3671295C0AB",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-259",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F34DC2408B2EB193D2A82388AC5F9AC86282B14BBF623A8581BBE075654547CD",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F34DC2408B2EB193D2A82388AC5F9AC86282B14BBF623A8581BBE075654547CD",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-259",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F535FE1A4EB96E3A6B45153B1187AC9B8BBEB2D230AEFBD196862BF421B92BAF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F535FE1A4EB96E3A6B45153B1187AC9B8BBEB2D230AEFBD196862BF421B92BAF",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-259",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F472078E60F4AA887DA65A6009E501882594AAA5721C3C13F54724E6B29F1718",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F472078E60F4AA887DA65A6009E501882594AAA5721C3C13F54724E6B29F1718",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-259",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/C975A2A3ED94B56B93336A188D953C2C8895931BD96BE0DA4DB82F9B560B0EDF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/C975A2A3ED94B56B93336A188D953C2C8895931BD96BE0DA4DB82F9B560B0EDF",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-259",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
         "description": "REGEN coin is the token for the Regen Network Platform",
         "denom_units": [
           {
@@ -46447,6 +56149,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-767",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-767",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-767",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-767",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-767",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-767",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -46600,6 +56500,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-378",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/13DF61376C08483555C6D4C9203612086A1B23218EB5EBDBE609EEC7EFF2D82D",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/13DF61376C08483555C6D4C9203612086A1B23218EB5EBDBE609EEC7EFF2D82D",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-378",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/B76B340588564A49387A7B22A24CFFE3F873B61B461AD95A242E1D76138B6BBD",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/B76B340588564A49387A7B22A24CFFE3F873B61B461AD95A242E1D76138B6BBD",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-378",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/5F78C42BCC76287AE6B3185C6C1455DFFF8D805B1847F94B9B625384B93885C7",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/5F78C42BCC76287AE6B3185C6C1455DFFF8D805B1847F94B9B625384B93885C7",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-378",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/0F7930B63244CA4BCC01C08F85697131884A24CD87A8DD970DE968E4477035F8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/0F7930B63244CA4BCC01C08F85697131884A24CD87A8DD970DE968E4477035F8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-378",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/EAFC16C9228D3D8423D93CB2259B7AE7F504B8454060A3E43E5A5D5E595C4854",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/EAFC16C9228D3D8423D93CB2259B7AE7F504B8454060A3E43E5A5D5E595C4854",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-378",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9BF31153F7E37F687C75A2F310E7A4DB6E0512B065F709B5EB69FE828133AFAC",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9BF31153F7E37F687C75A2F310E7A4DB6E0512B065F709B5EB69FE828133AFAC",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-378",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -46805,6 +56903,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/05554A9BFDD28894D7F18F4C707AA0930D778751A437A9FE1F4684A3E1199728",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/05554A9BFDD28894D7F18F4C707AA0930D778751A437A9FE1F4684A3E1199728",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-53",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/712DD317E8DE4DDC5CBF8481BBE0DB1D48A16C8C28057D502A38F3671295C0AB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/712DD317E8DE4DDC5CBF8481BBE0DB1D48A16C8C28057D502A38F3671295C0AB",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-53",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F34DC2408B2EB193D2A82388AC5F9AC86282B14BBF623A8581BBE075654547CD",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F34DC2408B2EB193D2A82388AC5F9AC86282B14BBF623A8581BBE075654547CD",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-53",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F535FE1A4EB96E3A6B45153B1187AC9B8BBEB2D230AEFBD196862BF421B92BAF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F535FE1A4EB96E3A6B45153B1187AC9B8BBEB2D230AEFBD196862BF421B92BAF",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-53",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F472078E60F4AA887DA65A6009E501882594AAA5721C3C13F54724E6B29F1718",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F472078E60F4AA887DA65A6009E501882594AAA5721C3C13F54724E6B29F1718",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-53",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/C975A2A3ED94B56B93336A188D953C2C8895931BD96BE0DA4DB82F9B560B0EDF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/C975A2A3ED94B56B93336A188D953C2C8895931BD96BE0DA4DB82F9B560B0EDF",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-53",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
       }
     ]
   },
@@ -46958,6 +57254,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-286",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/05554A9BFDD28894D7F18F4C707AA0930D778751A437A9FE1F4684A3E1199728",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/05554A9BFDD28894D7F18F4C707AA0930D778751A437A9FE1F4684A3E1199728",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-286",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/712DD317E8DE4DDC5CBF8481BBE0DB1D48A16C8C28057D502A38F3671295C0AB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/712DD317E8DE4DDC5CBF8481BBE0DB1D48A16C8C28057D502A38F3671295C0AB",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-286",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F34DC2408B2EB193D2A82388AC5F9AC86282B14BBF623A8581BBE075654547CD",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F34DC2408B2EB193D2A82388AC5F9AC86282B14BBF623A8581BBE075654547CD",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-286",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F535FE1A4EB96E3A6B45153B1187AC9B8BBEB2D230AEFBD196862BF421B92BAF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F535FE1A4EB96E3A6B45153B1187AC9B8BBEB2D230AEFBD196862BF421B92BAF",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-286",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F472078E60F4AA887DA65A6009E501882594AAA5721C3C13F54724E6B29F1718",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F472078E60F4AA887DA65A6009E501882594AAA5721C3C13F54724E6B29F1718",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-286",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/C975A2A3ED94B56B93336A188D953C2C8895931BD96BE0DA4DB82F9B560B0EDF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/C975A2A3ED94B56B93336A188D953C2C8895931BD96BE0DA4DB82F9B560B0EDF",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-286",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -47156,6 +57650,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-115",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/05554A9BFDD28894D7F18F4C707AA0930D778751A437A9FE1F4684A3E1199728",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/05554A9BFDD28894D7F18F4C707AA0930D778751A437A9FE1F4684A3E1199728",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-115",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/712DD317E8DE4DDC5CBF8481BBE0DB1D48A16C8C28057D502A38F3671295C0AB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/712DD317E8DE4DDC5CBF8481BBE0DB1D48A16C8C28057D502A38F3671295C0AB",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-115",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F34DC2408B2EB193D2A82388AC5F9AC86282B14BBF623A8581BBE075654547CD",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F34DC2408B2EB193D2A82388AC5F9AC86282B14BBF623A8581BBE075654547CD",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-115",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F535FE1A4EB96E3A6B45153B1187AC9B8BBEB2D230AEFBD196862BF421B92BAF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F535FE1A4EB96E3A6B45153B1187AC9B8BBEB2D230AEFBD196862BF421B92BAF",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-115",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F472078E60F4AA887DA65A6009E501882594AAA5721C3C13F54724E6B29F1718",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F472078E60F4AA887DA65A6009E501882594AAA5721C3C13F54724E6B29F1718",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-115",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/C975A2A3ED94B56B93336A188D953C2C8895931BD96BE0DA4DB82F9B560B0EDF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/C975A2A3ED94B56B93336A188D953C2C8895931BD96BE0DA4DB82F9B560B0EDF",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-115",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -47658,6 +58350,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-557",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-557",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-557",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-557",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-557",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-557",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native staking token of Terra.",
         "denom_units": [
           {
@@ -47854,6 +58744,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-519",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-519",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-519",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-519",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-519",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-519",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -48014,6 +59102,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-238",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-238",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-238",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-238",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-238",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-238",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -48167,6 +59453,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-39",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-16"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/BF9D23E0455824BE1C3334360230681EED17CB3C4D7219F71ED13AE51079EBE8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/BF9D23E0455824BE1C3334360230681EED17CB3C4D7219F71ED13AE51079EBE8",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-39",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-16"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/95EAE825798489ABACD7E6BDDAA504A5E3575F707ADB3B75ABD8D771AE254D65",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/95EAE825798489ABACD7E6BDDAA504A5E3575F707ADB3B75ABD8D771AE254D65",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-39",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-16"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/CE5A2A20007B6FD312388A1118A0FAEEE6B49DFE71B083B501CD9E171BBC23A3",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/CE5A2A20007B6FD312388A1118A0FAEEE6B49DFE71B083B501CD9E171BBC23A3",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-39",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-16"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/639BBB3CEC0692575537C5534800E189A5FB3AF9F052D0B34682D6A5C9D805AC",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/639BBB3CEC0692575537C5534800E189A5FB3AF9F052D0B34682D6A5C9D805AC",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-39",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-16"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/0807948EC189E63D495805214E776A6BB4B2678F700D89C321E36FDAC0632485",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/0807948EC189E63D495805214E776A6BB4B2678F700D89C321E36FDAC0632485",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-39",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-16"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCE6F6B5116C2DC07F2326691C8CA2AD63D38089B6C7DF6954708986FE70A85C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCE6F6B5116C2DC07F2326691C8CA2AD63D38089B6C7DF6954708986FE70A85C",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-39",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -48850,6 +60334,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-642",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/2D3458A504ADA3971E5697998AAC8507E7BFB10583CC7E249C8EBC317DDF92EF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/2D3458A504ADA3971E5697998AAC8507E7BFB10583CC7E249C8EBC317DDF92EF",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-642",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/B43799D7D32AC0BA802DDD09824F8802B1AB0C58F20165CB6F1C4035845DDEDA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/B43799D7D32AC0BA802DDD09824F8802B1AB0C58F20165CB6F1C4035845DDEDA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-642",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/070039AB58034252D2E86210276E05FE25B2FB41D15603185FD57960AFBAEDB6",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/070039AB58034252D2E86210276E05FE25B2FB41D15603185FD57960AFBAEDB6",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-642",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/D6B46DADF427957EC1E29A569F88FD228C751BA3142A47C81D2AA58BDD386272",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/D6B46DADF427957EC1E29A569F88FD228C751BA3142A47C81D2AA58BDD386272",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-642",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/38C1064F147A125ACBFB6791C5FE3AD7371154E5AE64471CBBBDA187D489805B",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/38C1064F147A125ACBFB6791C5FE3AD7371154E5AE64471CBBBDA187D489805B",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-642",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/69FA880032B055A05B87F2F62D6FFFFDC516FA9D7A7B0CA8880145A7130528CE",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/69FA880032B055A05B87F2F62D6FFFFDC516FA9D7A7B0CA8880145A7130528CE",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-642",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -50787,6 +62469,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/7E955DE4F6A23E90222993E5CDBD46B9EEC53C15F6C43F886231F6CA7AA17BF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7E955DE4F6A23E90222993E5CDBD46B9EEC53C15F6C43F886231F6CA7AA17BF8",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-874",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FC8B99134BC71B7D9D68BC67A7F300984CB3905FA6D699FB55CC58D0DCDED996",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FC8B99134BC71B7D9D68BC67A7F300984CB3905FA6D699FB55CC58D0DCDED996",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-874",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/2CA7FA605E0E3AF2E30FF14B7AC2474F2A8533835A16041A044277AED0A8E614",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/2CA7FA605E0E3AF2E30FF14B7AC2474F2A8533835A16041A044277AED0A8E614",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-874",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/8FC0CC1E03A465FB168B8E9A8D753A8CF7052B66481968EA8EAF67491304EFC4",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/8FC0CC1E03A465FB168B8E9A8D753A8CF7052B66481968EA8EAF67491304EFC4",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-874",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/BFFE5A22450AB53580906F6023F88E308873A1B8D9FE058929063C20C928D1A8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/BFFE5A22450AB53580906F6023F88E308873A1B8D9FE058929063C20C928D1A8",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-874",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/8F991F0845319611CEE1B7570A0A1EE75D8909A9664AE614BCCFF25E1D244BE9",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/8F991F0845319611CEE1B7570A0A1EE75D8909A9664AE614BCCFF25E1D244BE9",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-874",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Stride",
         "denom_units": [
           {
@@ -52040,6 +63920,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-750",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-750",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-750",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-750",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-750",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-750",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native staking token of Terra.",
         "denom_units": [
           {
@@ -52493,6 +64571,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-783",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-783",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-783",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-783",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-783",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-783",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-783",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -53843,6 +66119,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/05554A9BFDD28894D7F18F4C707AA0930D778751A437A9FE1F4684A3E1199728",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/05554A9BFDD28894D7F18F4C707AA0930D778751A437A9FE1F4684A3E1199728",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-258",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/712DD317E8DE4DDC5CBF8481BBE0DB1D48A16C8C28057D502A38F3671295C0AB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/712DD317E8DE4DDC5CBF8481BBE0DB1D48A16C8C28057D502A38F3671295C0AB",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-258",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F34DC2408B2EB193D2A82388AC5F9AC86282B14BBF623A8581BBE075654547CD",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F34DC2408B2EB193D2A82388AC5F9AC86282B14BBF623A8581BBE075654547CD",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-258",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F535FE1A4EB96E3A6B45153B1187AC9B8BBEB2D230AEFBD196862BF421B92BAF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F535FE1A4EB96E3A6B45153B1187AC9B8BBEB2D230AEFBD196862BF421B92BAF",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-258",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F472078E60F4AA887DA65A6009E501882594AAA5721C3C13F54724E6B29F1718",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F472078E60F4AA887DA65A6009E501882594AAA5721C3C13F54724E6B29F1718",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-258",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/C975A2A3ED94B56B93336A188D953C2C8895931BD96BE0DA4DB82F9B560B0EDF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/C975A2A3ED94B56B93336A188D953C2C8895931BD96BE0DA4DB82F9B560B0EDF",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-258",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
       }
     ]
   },
@@ -54493,6 +66967,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-199",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-199",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-199",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-199",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-199",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-199",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -54646,6 +67318,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-525",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-525",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-525",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-525",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-525",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-525",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-525",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -54919,6 +67789,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-216",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-13"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/403FD98876670A3E80C5C87978EE07A8D2943B7D3F2D7EC5E0CA8FA5192572D3",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/403FD98876670A3E80C5C87978EE07A8D2943B7D3F2D7EC5E0CA8FA5192572D3",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-216",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-13"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/5EC56A8C94D8CA5BDC4B003A2EED010E1500481EED24C67C37E4B415B474555F",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/5EC56A8C94D8CA5BDC4B003A2EED010E1500481EED24C67C37E4B415B474555F",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-216",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-13"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F4B5D2A2BAF14EB3B9CD672981EC60A20075179D416227E5C9BEEA6CEB6C86B6",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F4B5D2A2BAF14EB3B9CD672981EC60A20075179D416227E5C9BEEA6CEB6C86B6",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-216",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-13"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/ADDAB18225E6B7BE37130BA645FC76370126D9076408E6C5B245B26EC5C56A22",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/ADDAB18225E6B7BE37130BA645FC76370126D9076408E6C5B245B26EC5C56A22",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-216",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-13"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/8512BD3A3B18114BBFA28F5292A453467775C4E5D55D7BB81EC6B2B90957652F",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/8512BD3A3B18114BBFA28F5292A453467775C4E5D55D7BB81EC6B2B90957652F",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-216",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-13"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/231148670B9350D94BFF05406488606C8BD18239E2157C15372A7EBCC7C490FD",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/231148670B9350D94BFF05406488606C8BD18239E2157C15372A7EBCC7C490FD",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-216",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -60880,6 +73948,251 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "axlUSDC transferred from the Osmosis mainnet that is supported on the Nolus chain",
+        "denom_units": [
+          {
+            "denom": "ibc/0C07D5498CB667C3706C1DAB479C6FF68E9DE76A83DB9B107707BE1799C1E940",
+            "exponent": 0,
+            "aliases": [
+              "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/0C07D5498CB667C3706C1DAB479C6FF68E9DE76A83DB9B107707BE1799C1E940",
+        "name": "axlUSDC",
+        "display": "usdc",
+        "symbol": "axlUSDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+              "chain_name": "nolus"
+            },
+            "chain": {
+              "channel_id": "channel-783"
+            }
+          }
+        ]
+      },
+      {
+        "description": "OSMO transferred from the Osmosis mainnet that is supported on the Nolus chain",
+        "denom_units": [
+          {
+            "denom": "ibc/A1F4BFABB8624B56B1A521DDD4703411DDBDB1F3F6F79B95654920838DCE121E",
+            "exponent": 0,
+            "aliases": [
+              "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518"
+            ]
+          },
+          {
+            "denom": "osmo",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A1F4BFABB8624B56B1A521DDD4703411DDBDB1F3F6F79B95654920838DCE121E",
+        "name": "Osmosis",
+        "display": "osmo",
+        "symbol": "OSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+              "chain_name": "nolus"
+            },
+            "chain": {
+              "channel_id": "channel-783"
+            }
+          }
+        ]
+      },
+      {
+        "description": "stOSMO transferred from the Osmosis mainnet that is supported on the Nolus chain",
+        "denom_units": [
+          {
+            "denom": "ibc/0C98CFFC5DD368EC23920691C0C873FF5563412C941DFB3F1286BD2543A04AC8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/0C98CFFC5DD368EC23920691C0C873FF5563412C941DFB3F1286BD2543A04AC8",
+        "name": "Osmosis",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+              "chain_name": "nolus"
+            },
+            "chain": {
+              "channel_id": "channel-783"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ATOM transferred from the Osmosis mainnet that is supported on the Nolus chain",
+        "denom_units": [
+          {
+            "denom": "ibc/0FBCE1D5A4900E81D536BC82AB2FD835372C9130096A7CFE04FA367C84ECB3CE",
+            "exponent": 0,
+            "aliases": [
+              "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/0FBCE1D5A4900E81D536BC82AB2FD835372C9130096A7CFE04FA367C84ECB3CE",
+        "name": "Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+              "chain_name": "nolus"
+            },
+            "chain": {
+              "channel_id": "channel-783"
+            }
+          }
+        ]
+      },
+      {
+        "description": "stATOM transferred from the Osmosis mainnet that is supported on the Nolus chain",
+        "denom_units": [
+          {
+            "denom": "ibc/677E68D40422380F21694BDC6138A8930B72ADA8DD99C71BBC7554AD47AD75A0",
+            "exponent": 0,
+            "aliases": [
+              "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/677E68D40422380F21694BDC6138A8930B72ADA8DD99C71BBC7554AD47AD75A0",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+              "chain_name": "nolus"
+            },
+            "chain": {
+              "channel_id": "channel-783"
+            }
+          }
+        ]
+      },
+      {
+        "description": "WETH transferred from the Osmosis mainnet that is supported on the Nolus chain",
+        "denom_units": [
+          {
+            "denom": "ibc/7B5854A140A3604207939DF071ECB7B3039229701720400F9654133934611D1C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18,
+            "aliases": []
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7B5854A140A3604207939DF071ECB7B3039229701720400F9654133934611D1C",
+        "name": "WETH",
+        "display": "weth",
+        "symbol": "WETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+              "chain_name": "nolus"
+            },
+            "chain": {
+              "channel_id": "channel-783"
+            }
+          }
+        ]
+      },
+      {
+        "description": "WBTC transferred from the Osmosis mainnet that is supported on the Nolus chain",
+        "denom_units": [
+          {
+            "denom": "ibc/EE9BEB35593E4765ED3EEA003E5571F2114E19DAA4E7052534A015D33FCFA48D",
+            "exponent": 0,
+            "aliases": [
+              "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8,
+            "aliases": []
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/EE9BEB35593E4765ED3EEA003E5571F2114E19DAA4E7052534A015D33FCFA48D",
+        "name": "WBTC",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+              "chain_name": "nolus"
+            },
+            "chain": {
+              "channel_id": "channel-783"
+            }
+          }
+        ]
+      },
+      {
         "description": "Staking and goverance token for ODIN Protocol",
         "denom_units": [
           {
@@ -61367,8 +74680,7 @@ const asset_lists: AssetList[] = [
         "display": "qsr",
         "symbol": "QSR",
         "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.svg"
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png"
         },
         "traces": [
           {
@@ -61423,7 +74735,7 @@ const asset_lists: AssetList[] = [
         "description": "ATOM from Osmosis",
         "denom_units": [
           {
-            "denom": "ibc/EDEFB96A2A1AEA32DFED16E5A7C3E146A244A372A74CCDD73FDA3AA365E33E59",
+            "denom": "ibc/9D7FEC90340264762F3F9D0E2B3EFFAFB2D7656887CDF1D339FB8F7410A4C878",
             "exponent": 0,
             "aliases": [
               "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5"
@@ -61436,7 +74748,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "type_asset": "ics20",
-        "base": "ibc/EDEFB96A2A1AEA32DFED16E5A7C3E146A244A372A74CCDD73FDA3AA365E33E59",
+        "base": "ibc/9D7FEC90340264762F3F9D0E2B3EFFAFB2D7656887CDF1D339FB8F7410A4C878",
         "name": "Atom",
         "display": "atom",
         "symbol": "ATOM",
@@ -61458,7 +74770,7 @@ const asset_lists: AssetList[] = [
         "description": "USDC.axl from Osmosis",
         "denom_units": [
           {
-            "denom": "ibc/9B6E2D87FB3CDA88CD2387A7F1A354469B4DB302851ED0216FB77E4A1B952000",
+            "denom": "ibc/69C2545CBA13844E6E0D102B67D4371CBEC3839589CD81C01A77B784A0681309",
             "exponent": 0,
             "aliases": [
               "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A"
@@ -61471,7 +74783,7 @@ const asset_lists: AssetList[] = [
           }
         ],
         "type_asset": "ics20",
-        "base": "ibc/9B6E2D87FB3CDA88CD2387A7F1A354469B4DB302851ED0216FB77E4A1B952000",
+        "base": "ibc/69C2545CBA13844E6E0D102B67D4371CBEC3839589CD81C01A77B784A0681309",
         "name": "USD Coin",
         "display": "usdc",
         "symbol": "USDC.axl",
@@ -67137,6 +80449,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-82",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-82",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-82",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-82",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-82",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-82",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -67881,6 +81391,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-4",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-6"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/D652CF3DD8442315EEC2F45DFB643B9C3F73BC0E2A563EB33E9AD4F3A077BCE1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/D652CF3DD8442315EEC2F45DFB643B9C3F73BC0E2A563EB33E9AD4F3A077BCE1",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-4",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-6"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/994045F6FA3BDBEADB44673B363CC1962870C73274DF7BFDA3D67C1A31B92357",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/994045F6FA3BDBEADB44673B363CC1962870C73274DF7BFDA3D67C1A31B92357",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-4",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-6"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/81844CA896A4C233B331A468123AF2AACDC580DE294C5528A6E3F661A136795C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/81844CA896A4C233B331A468123AF2AACDC580DE294C5528A6E3F661A136795C",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-4",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-6"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/832211C8B733177241E36AD688CCBF38C9254598120B7FB54736B76DFEF91FEE",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/832211C8B733177241E36AD688CCBF38C9254598120B7FB54736B76DFEF91FEE",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-4",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-6"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/24AB598706D1A5039B026EFDCDEA9BE72651513C1BF67878EB044DDBE061C543",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/24AB598706D1A5039B026EFDCDEA9BE72651513C1BF67878EB044DDBE061C543",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-4",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-6"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/90917DBA892E9DAB893589DDE17D2F407DC93C57245099290BD66E48621D6F6A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/90917DBA892E9DAB893589DDE17D2F407DC93C57245099290BD66E48621D6F6A",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-4",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -69123,6 +82831,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-492",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-492",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-492",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-492",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-492",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-492",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -69326,6 +83232,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/398B3A1DE10411F2BC51FE25AC367CF501385016C1B030C57E624EC46E158F15",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/398B3A1DE10411F2BC51FE25AC367CF501385016C1B030C57E624EC46E158F15",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-222",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-7"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/170BDAA3B47FC6E9F26BFB6A1EB6D711F633EF2BB6D2D105068232D69BD65127",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/170BDAA3B47FC6E9F26BFB6A1EB6D711F633EF2BB6D2D105068232D69BD65127",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-222",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-7"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/B1C671DAA104B8D93C7E4F2C9E0BAD4FEEB7AD0FF39F0DE91B471CD92DB077B5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/B1C671DAA104B8D93C7E4F2C9E0BAD4FEEB7AD0FF39F0DE91B471CD92DB077B5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-222",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-7"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/929E3C5EF7C53840FFB944301B5A244A7DDBEEB5C1B554FEAEDCE08B13D721B1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/929E3C5EF7C53840FFB944301B5A244A7DDBEEB5C1B554FEAEDCE08B13D721B1",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-222",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-7"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6E707CB124A5F034FA2DE65C604110A9EAF4E34001EA2E8A91C15F999CA5AE30",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6E707CB124A5F034FA2DE65C604110A9EAF4E34001EA2E8A91C15F999CA5AE30",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-222",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-7"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/721326EBB2F1EC08854A3698CB1189CE1F240FF316DA339908ED8531F2FAD136",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/721326EBB2F1EC08854A3698CB1189CE1F240FF316DA339908ED8531F2FAD136",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-222",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-7"
+            }
+          }
+        ]
       }
     ]
   },
@@ -69479,6 +83583,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-688",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-688",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-688",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-688",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-688",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-688",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-688",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -69822,6 +84124,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-522",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/13DF61376C08483555C6D4C9203612086A1B23218EB5EBDBE609EEC7EFF2D82D",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/13DF61376C08483555C6D4C9203612086A1B23218EB5EBDBE609EEC7EFF2D82D",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-522",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/B76B340588564A49387A7B22A24CFFE3F873B61B461AD95A242E1D76138B6BBD",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/B76B340588564A49387A7B22A24CFFE3F873B61B461AD95A242E1D76138B6BBD",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-522",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/5F78C42BCC76287AE6B3185C6C1455DFFF8D805B1847F94B9B625384B93885C7",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/5F78C42BCC76287AE6B3185C6C1455DFFF8D805B1847F94B9B625384B93885C7",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-522",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/0F7930B63244CA4BCC01C08F85697131884A24CD87A8DD970DE968E4477035F8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/0F7930B63244CA4BCC01C08F85697131884A24CD87A8DD970DE968E4477035F8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-522",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/EAFC16C9228D3D8423D93CB2259B7AE7F504B8454060A3E43E5A5D5E595C4854",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/EAFC16C9228D3D8423D93CB2259B7AE7F504B8454060A3E43E5A5D5E595C4854",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-522",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9BF31153F7E37F687C75A2F310E7A4DB6E0512B065F709B5EB69FE828133AFAC",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9BF31153F7E37F687C75A2F310E7A4DB6E0512B065F709B5EB69FE828133AFAC",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-522",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -70299,6 +84799,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1424",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1424",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1424",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1424",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1424",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1424",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -70452,6 +85150,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-355",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-355",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-355",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-355",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-355",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-355",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-355",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -70952,6 +85848,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-8",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-8",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-8",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-8",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-8",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-8",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-8",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -71536,6 +86630,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-221",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-221",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-221",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-221",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-221",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-221",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-221",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -74192,6 +89484,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-88",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-88",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-88",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-88",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-88",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-88",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
         "description": "The XPRT token is primarily a governance token for the Persistence chain.",
         "denom_units": [
           {
@@ -76413,6 +91903,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-2",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-2",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-2",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-2",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-2",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-2",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
         "description": "The XPRT token is primarily a governance token for the Persistence chain.",
         "denom_units": [
           {
@@ -76881,6 +92569,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-647",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-647",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-647",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-647",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-647",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-647",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -77034,6 +92920,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-146",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/BE8166C09385A65A64366092FA14CEAD171EBB8E2464400196A1B19B4DC3AD50",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/BE8166C09385A65A64366092FA14CEAD171EBB8E2464400196A1B19B4DC3AD50",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-146",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/4FE7634C9CF87665EED080806D0BCCA346A8B13311E0B443CD28FFAC2C7570B9",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/4FE7634C9CF87665EED080806D0BCCA346A8B13311E0B443CD28FFAC2C7570B9",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-146",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6E2FE0B25FE6DE428D16B25D42832D13B8A6DF65B40844EA4AB49C94896BB932",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6E2FE0B25FE6DE428D16B25D42832D13B8A6DF65B40844EA4AB49C94896BB932",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-146",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/3E0F82B85BA979AC50C0A509C5ACF5BB0DF071F977BAAD68DB0B2A2B3994C5EA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/3E0F82B85BA979AC50C0A509C5ACF5BB0DF071F977BAAD68DB0B2A2B3994C5EA",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-146",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/8E29C07E81FDE94D898868F9EF92EE805B6D5902B75F2F90C9DE48E5BE6A2AFA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/8E29C07E81FDE94D898868F9EF92EE805B6D5902B75F2F90C9DE48E5BE6A2AFA",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-146",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A4D4E73A15DD9C815C039C0648111FDC83C3B63089E358565EA0AFB78C024E57",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A4D4E73A15DD9C815C039C0648111FDC83C3B63089E358565EA0AFB78C024E57",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-146",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -77529,6 +93613,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-47",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-17"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/83FED51248F2E9E33AB07CBA103AAD1876779C7651EF0F485AF1C694CC80AA39",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/83FED51248F2E9E33AB07CBA103AAD1876779C7651EF0F485AF1C694CC80AA39",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-47",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-17"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7B763FDCCE6AD02D7F8A84C20E3D4E27AB928CCCC5135478A3224DC3234AEF0F",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7B763FDCCE6AD02D7F8A84C20E3D4E27AB928CCCC5135478A3224DC3234AEF0F",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-47",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-17"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/BD8AD1255792CF5E057B295EBF516282C70B76F9AD8D0C7A1A6B2CD19A0369B5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/BD8AD1255792CF5E057B295EBF516282C70B76F9AD8D0C7A1A6B2CD19A0369B5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-47",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-17"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A25F7D7CE5914486F9A0E4F71C0BD018763C8B02373C82E0F2649FA8853F8DC7",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A25F7D7CE5914486F9A0E4F71C0BD018763C8B02373C82E0F2649FA8853F8DC7",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-47",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-17"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/CA47E6EAC4D625FC23743D3E5D1A2E6DBCE18D3777DB98896F101703423CAA5B",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/CA47E6EAC4D625FC23743D3E5D1A2E6DBCE18D3777DB98896F101703423CAA5B",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-47",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-17"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/0BA97C50E8DFE7855BC404D96A9F26F5E714F9495C3A3BA517C81F794B094E71",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/0BA97C50E8DFE7855BC404D96A9F26F5E714F9495C3A3BA517C81F794B094E71",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-47",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -79377,6 +95659,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-165",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-165",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-165",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-165",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-165",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-165",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -80355,6 +96835,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-75",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-75",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-75",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-75",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-75",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-75",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
         "description": "QCK - native token of Quicksilver",
         "denom_units": [
           {
@@ -81249,6 +97927,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-15",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/13DF61376C08483555C6D4C9203612086A1B23218EB5EBDBE609EEC7EFF2D82D",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/13DF61376C08483555C6D4C9203612086A1B23218EB5EBDBE609EEC7EFF2D82D",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-15",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/B76B340588564A49387A7B22A24CFFE3F873B61B461AD95A242E1D76138B6BBD",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/B76B340588564A49387A7B22A24CFFE3F873B61B461AD95A242E1D76138B6BBD",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-15",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/5F78C42BCC76287AE6B3185C6C1455DFFF8D805B1847F94B9B625384B93885C7",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/5F78C42BCC76287AE6B3185C6C1455DFFF8D805B1847F94B9B625384B93885C7",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-15",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/0F7930B63244CA4BCC01C08F85697131884A24CD87A8DD970DE968E4477035F8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/0F7930B63244CA4BCC01C08F85697131884A24CD87A8DD970DE968E4477035F8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-15",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/EAFC16C9228D3D8423D93CB2259B7AE7F504B8454060A3E43E5A5D5E595C4854",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/EAFC16C9228D3D8423D93CB2259B7AE7F504B8454060A3E43E5A5D5E595C4854",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-15",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9BF31153F7E37F687C75A2F310E7A4DB6E0512B065F709B5EB69FE828133AFAC",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9BF31153F7E37F687C75A2F310E7A4DB6E0512B065F709B5EB69FE828133AFAC",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-15",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -82879,6 +99755,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/2D3458A504ADA3971E5697998AAC8507E7BFB10583CC7E249C8EBC317DDF92EF",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/2D3458A504ADA3971E5697998AAC8507E7BFB10583CC7E249C8EBC317DDF92EF",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-326",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/B43799D7D32AC0BA802DDD09824F8802B1AB0C58F20165CB6F1C4035845DDEDA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/B43799D7D32AC0BA802DDD09824F8802B1AB0C58F20165CB6F1C4035845DDEDA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-326",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/070039AB58034252D2E86210276E05FE25B2FB41D15603185FD57960AFBAEDB6",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/070039AB58034252D2E86210276E05FE25B2FB41D15603185FD57960AFBAEDB6",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-326",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/D6B46DADF427957EC1E29A569F88FD228C751BA3142A47C81D2AA58BDD386272",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/D6B46DADF427957EC1E29A569F88FD228C751BA3142A47C81D2AA58BDD386272",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-326",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/38C1064F147A125ACBFB6791C5FE3AD7371154E5AE64471CBBBDA187D489805B",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/38C1064F147A125ACBFB6791C5FE3AD7371154E5AE64471CBBBDA187D489805B",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-326",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/69FA880032B055A05B87F2F62D6FFFFDC516FA9D7A7B0CA8880145A7130528CE",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/69FA880032B055A05B87F2F62D6FFFFDC516FA9D7A7B0CA8880145A7130528CE",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-326",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
         "description": "The XPRT token is primarily a governance token for the Persistence chain.",
         "denom_units": [
           {
@@ -83302,6 +100376,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-362",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-362",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-362",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-362",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-362",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-362",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-362",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -83796,6 +101068,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-72",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-72",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-72",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-72",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-72",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-72",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-72",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -85034,6 +102504,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-251",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-251",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-251",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-251",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-251",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-251",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-251",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -89440,6 +107108,204 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "denom_units": [
+          {
+            "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-251",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/9E58E47857A51FFB728EDB7DD54CDFC2AB5E8FF358B9B010BF0A92AB18930BEA",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-251",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-251",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/74B0BDD3C0941166F5E96BFBC847219BBE609535F3A0D941C22342A60BD43A08",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-251",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/37B7C1AABC243067278C28C77973A28D7844EF5465ACD0EBE6E506BE4C6816C2",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-251",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/DA1BE182A23423A7031255C608B68D1E54AD30087AEB7F25B48D2CF8A5FE1DDB",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-251",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Secret Network",
         "denom_units": [
           {
@@ -90037,6 +107903,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-263",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-263",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-263",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-263",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-263",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-263",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -90304,6 +108368,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-184",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-184",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-184",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-184",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-184",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-184",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-184",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -91280,6 +109542,204 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-382",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-382",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-382",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-382",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-382",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-382",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -91551,6 +110011,204 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-124",
               "base_denom": "factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+            ]
+          },
+          {
+            "denom": "usdc",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911",
+        "name": "USD Coin",
+        "display": "usdc",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-124",
+              "base_denom": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-124",
+              "base_denom": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+            "exponent": 0,
+            "aliases": [
+              "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388",
+        "name": "Cosmos Hub Atom",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-124",
+              "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-124",
+              "base_denom": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
+            ]
+          },
+          {
+            "denom": "weth",
+            "exponent": 18
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C",
+        "name": "Wrapped Ether",
+        "display": "weth",
+        "symbol": "ETH",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-124",
+              "base_denom": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+            "exponent": 0,
+            "aliases": [
+              "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
+            ]
+          },
+          {
+            "denom": "wbtc",
+            "exponent": 8
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221",
+        "name": "Wrapped Bitcoin",
+        "display": "wbtc",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-124",
+              "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
               "chain_name": "osmosis"
             },
             "chain": {

@@ -3006,6 +3006,216 @@ const asset_list: AssetList = {
       ]
     },
     {
+      denom_units: [
+        {
+          denom:
+            'ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911',
+          exponent: 0,
+          aliases: [
+            'ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858'
+          ]
+        },
+        {
+          denom: 'usdc',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911',
+      name: 'USD Coin',
+      display: 'usdc',
+      symbol: 'USDC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-42',
+            base_denom:
+              'ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-0'
+          }
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1',
+          exponent: 0,
+          aliases: [
+            'ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC'
+          ]
+        },
+        {
+          denom: 'stosmo',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1',
+      name: 'stOSMO',
+      display: 'stosmo',
+      symbol: 'stOSMO',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-42',
+            base_denom:
+              'ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-0'
+          }
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388',
+          exponent: 0,
+          aliases: [
+            'ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2'
+          ]
+        },
+        {
+          denom: 'atom',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388',
+      name: 'Cosmos Hub Atom',
+      display: 'atom',
+      symbol: 'ATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-42',
+            base_denom:
+              'ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-0'
+          }
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8',
+          exponent: 0,
+          aliases: [
+            'ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901'
+          ]
+        },
+        {
+          denom: 'statom',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8',
+      name: 'stATOM',
+      display: 'statom',
+      symbol: 'stATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-42',
+            base_denom:
+              'ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-0'
+          }
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C',
+          exponent: 0,
+          aliases: [
+            'ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5'
+          ]
+        },
+        {
+          denom: 'weth',
+          exponent: 18
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C',
+      name: 'Wrapped Ether',
+      display: 'weth',
+      symbol: 'ETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-42',
+            base_denom:
+              'ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-0'
+          }
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221',
+          exponent: 0,
+          aliases: [
+            'ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F'
+          ]
+        },
+        {
+          denom: 'wbtc',
+          exponent: 8
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221',
+      name: 'Wrapped Bitcoin',
+      display: 'wbtc',
+      symbol: 'WBTC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-42',
+            base_denom:
+              'ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-0'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The XPRT token is primarily a governance token for the Persistence chain.',
       denom_units: [

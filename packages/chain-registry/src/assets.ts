@@ -2145,6 +2145,30 @@ const assets: AssetList[] = [
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
         },
         coingecko_id: 'archway'
+      },
+      {
+        description: 'ERIS liquid staked ARCH',
+        type_asset: 'cw20',
+        address:
+          'archway1fwurjg7ah4v7hhs6xsc3wutqpvmahrfhns285s0lt34tgfdhplxq6m8xg5',
+        denom_units: [
+          {
+            denom:
+              'cw20:archway1fwurjg7ah4v7hhs6xsc3wutqpvmahrfhns285s0lt34tgfdhplxq6m8xg5',
+            exponent: 0
+          },
+          {
+            denom: 'ampARCH',
+            exponent: 6
+          }
+        ],
+        base: 'cw20:archway1fwurjg7ah4v7hhs6xsc3wutqpvmahrfhns285s0lt34tgfdhplxq6m8xg5',
+        name: 'ERIS Amplified ARCH',
+        display: 'ampARCH',
+        symbol: 'ampARCH',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/amp.arch.png'
+        }
       }
     ]
   },
@@ -5859,6 +5883,35 @@ const assets: AssetList[] = [
   },
   {
     $schema: '../assetlist.schema.json',
+    chain_name: 'haqq',
+    assets: [
+      {
+        description:
+          'The native EVM, governance and staking token of the Haqq Network',
+        denom_units: [
+          {
+            denom: 'aISLM',
+            exponent: 0
+          },
+          {
+            denom: 'ISLM',
+            exponent: 18
+          }
+        ],
+        base: 'aISLM',
+        name: 'Islamic Coin',
+        display: 'ISLM',
+        symbol: 'ISLM',
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.png'
+        },
+        coingecko_id: ''
+      }
+    ]
+  },
+  {
+    $schema: '../assetlist.schema.json',
     chain_name: 'idep',
     assets: [
       {
@@ -8430,6 +8483,27 @@ const assets: AssetList[] = [
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rac.svg',
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rac.png'
         }
+      },
+      {
+        description: 'ASH',
+        denom_units: [
+          {
+            denom:
+              'factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash',
+            exponent: 0
+          },
+          {
+            denom: 'ASH',
+            exponent: 6
+          }
+        ],
+        base: 'factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash',
+        name: 'ASH',
+        display: 'ASH',
+        symbol: 'ASH',
+        logo_URIs: {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ash.svg'
+        }
       }
     ]
   },
@@ -9526,6 +9600,29 @@ const assets: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        description: 'ERIS liquid staked OSMO',
+        denom_units: [
+          {
+            denom:
+              'factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO',
+            exponent: 0
+          },
+          {
+            denom: 'ampOSMO',
+            exponent: 6
+          }
+        ],
+        address:
+          'osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9',
+        base: 'factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO',
+        name: 'ERIS Amplified OSMO',
+        display: 'ampOSMO',
+        symbol: 'ampOSMO',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png'
+        }
       }
     ]
   },
