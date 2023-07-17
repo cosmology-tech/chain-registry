@@ -9,7 +9,7 @@ describe('Test client', () => {
   let client;
   beforeAll((done) => {
     const options: ChainRegistryClientOptions = {
-      chainNames: ['osmosis', 'juno']
+      chainNames: ['osmosis']
     };
 
     client = new ChainRegistryClient(options);
