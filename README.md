@@ -25,6 +25,8 @@ A unified store of chains info, assets, asset lists, and IBC channels for the Co
 
 ## example
 
+Fetch data from chain-registry:
+
 ```js
 import { assets, chains, ibc } from 'chain-registry';
 
@@ -62,6 +64,34 @@ will output:
   ]
 }
 ```
+
+Dynamically fetch data:
+
+```js
+import { ChainRegistryClient } from '@chain-registry/client';
+
+// create an instance of ChainRegistryClient by passing in the chain names
+const client = new ChainRegistryClient({
+  chainNames: [
+    'osmosis',
+    'juno',
+    'stargaze'
+  ]
+});
+
+// chain info, assets and ibc data will be downloaded dynamically by invoking fetchUrls method
+await client.fetchUrls();
+// get chain data
+const chain = client.getChain('osmosis');
+// get asset list
+const assetList = client.getChainAssetList('osmosis');
+// get ibc data
+const ibcData = client.getChainIbcData('osmosis);
+// get asset list (including ibc assets)
+const generatedAssetList = client.getGeneratedAssetLists('osmosis);
+
+```
+
 
 ## packages
 

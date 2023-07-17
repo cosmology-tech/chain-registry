@@ -30,9 +30,9 @@ export interface ChainRegistryFetcherOptions {
 export class ChainRegistryFetcher implements ChainRegistry {
   urls: string[] = [];
 
-  protected _asset_lists: AssetList[] = [];
+  protected _assetLists: AssetList[] = [];
   protected _chains: Chain[] = [];
-  protected _ibc_data: IBCInfo[] = [];
+  protected _ibcData: IBCInfo[] = [];
 
   private chainInfoList: ChainInfo[] = [];
 
@@ -42,10 +42,10 @@ export class ChainRegistryFetcher implements ChainRegistry {
       this._chains = options.chains;
     }
     if (options.assetLists) {
-      this._asset_lists = options.assetLists;
+      this._assetLists = options.assetLists;
     }
     if (options.ibcData) {
-      this._ibc_data = options.ibcData;
+      this._ibcData = options.ibcData;
     }
     if (options.urls) {
       this.urls = options.urls;
@@ -56,10 +56,10 @@ export class ChainRegistryFetcher implements ChainRegistry {
     return this._chains;
   }
   get assetLists(): AssetList[] {
-    return this._asset_lists;
+    return this._assetLists;
   }
   get ibcData(): IBCInfo[] {
-    return this._ibc_data;
+    return this._ibcData;
   }
 
   getChain(chainName: string) {
@@ -67,15 +67,15 @@ export class ChainRegistryFetcher implements ChainRegistry {
   }
 
   getChainAssetList(chainName: string): AssetList {
-    return this._asset_lists.find((list) => list.chain_name === chainName);
+    return this._assetLists.find((list) => list.chain_name === chainName);
   }
 
   getGeneratedAssetLists(chainName: string): AssetList[] {
-    return getAssetLists(chainName, this._ibc_data, this._asset_lists);
+    return getAssetLists(chainName, this._ibcData, this._assetLists);
   }
 
   getChainIbcData(chainName: string) {
-    return this._ibc_data.filter(
+    return this._ibcData.filter(
       (info) =>
         info.chain_1.chain_name === chainName ||
         info.chain_2.chain_name === chainName
@@ -83,12 +83,10 @@ export class ChainRegistryFetcher implements ChainRegistry {
   }
 
   getChainInfo(chainName: string) {
-    let chainInfo = this.chainInfoList.find(
-      (it) => it.chain_name === chainName
-    );
+    let chainInfo = this.chainInfoList.find((it) => it.chainName === chainName);
     if (!chainInfo) {
       chainInfo = new ChainInfo({
-        chain_name: chainName,
+        chainName: chainName,
         fetcher: this
       });
       this.chainInfoList.push(chainInfo);
@@ -122,16 +120,16 @@ export class ChainRegistryFetcher implements ChainRegistry {
   }
 
   updateAssetList(data: AssetList) {
-    const found = this._asset_lists.find((list) => {
+    const found = this._assetLists.find((list) => {
       return list.chain_name === data.chain_name;
     });
 
     if (!found) {
-      this._asset_lists.push(data);
+      this._assetLists.push(data);
       return;
     }
 
-    this._asset_lists = this._asset_lists.map((list) => {
+    this._assetLists = this._assetLists.map((list) => {
       if (list.chain_name === data.chain_name) {
         return data;
       } else {
@@ -141,7 +139,7 @@ export class ChainRegistryFetcher implements ChainRegistry {
   }
 
   upsertIbcData(data: IBCInfo) {
-    const found = this._ibc_data.find((info) => {
+    const found = this._ibcData.find((info) => {
       return (
         info.chain_1.chain_name === data.chain_1.chain_name &&
         info.chain_2.chain_name === data.chain_2.chain_name
@@ -149,11 +147,11 @@ export class ChainRegistryFetcher implements ChainRegistry {
     });
 
     if (!found) {
-      this._ibc_data.push(data);
+      this._ibcData.push(data);
       return;
     }
 
-    this._ibc_data = this._ibc_data.map((info) => {
+    this._ibcData = this._ibcData.map((info) => {
       if (
         info.chain_1.chain_name === data.chain_1.chain_name &&
         info.chain_2.chain_name === data.chain_2.chain_name
