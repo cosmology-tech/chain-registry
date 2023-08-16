@@ -196,6 +196,21 @@ const chain: Chain = {
         id: '38ab18cb2ea1dfeb6232b429e1508f56b6ae5031',
         address: 'seed-osmosis-01.stakeflow.io:65535',
         provider: 'Stakeflow'
+      },
+      {
+        id: '954ab3a0551b592b654b1554af8fc8746ed7b362',
+        address: 'seed-node.mms.team:31656',
+        provider: 'MMS'
+      },
+      {
+        id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
+        address: 'osmosis-seed-de.allnodes.me:26656',
+        provider: 'Allnodes.com ⚡️ Nodes & Staking'
+      },
+      {
+        id: 'e726816f42831689eab9378d5d577f1d06d25716',
+        address: 'osmosis-seed-us.allnodes.me:26656',
+        provider: 'Allnodes.com ⚡️ Nodes & Staking'
       }
     ],
     persistent_peers: [
@@ -228,6 +243,11 @@ const chain: Chain = {
         id: '6f1d92857e39a6f26a3a914f807064824c255939',
         address: '65.21.91.99:16956',
         provider: 'Staketab'
+      },
+      {
+        id: '50d0865decf5657eaf8e50e51bd9d8ce5f927f6c',
+        address: 'peer-osmosis.mms.team:56102',
+        provider: 'MMS'
       }
     ]
   },
@@ -304,6 +324,10 @@ const chain: Chain = {
       {
         address: 'https://osmosis-rpc.w3coins.io',
         provider: 'w3coins'
+      },
+      {
+        address: 'https://rpc-osmosis.mms.team',
+        provider: 'MMS'
       }
     ],
     rest: [
@@ -376,6 +400,10 @@ const chain: Chain = {
         provider: 'WhisperNode🤐'
       },
       {
+        address: 'https://api-osmosis.mms.team',
+        provider: 'MMS'
+      },
+      {
         address: 'https://osmosis.stakesystems.io/',
         provider: 'stakesystems'
       }
@@ -416,6 +444,10 @@ const chain: Chain = {
       {
         address: 'osmosis-grpc.w3coins.io:12590',
         provider: 'w3coins'
+      },
+      {
+        address: 'grpc-osmosis.mms.team:443',
+        provider: 'MMS'
       }
     ]
   },

@@ -5602,6 +5602,44 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'ASH',
+      denom_units: [
+        {
+          denom:
+            'ibc/4976049456D261659D0EC499CC9C2391D3C7D1128A0B9FB0BBF2842D1B2BC7BC',
+          exponent: 0,
+          aliases: [
+            'factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash'
+          ]
+        },
+        {
+          denom: 'ASH',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/4976049456D261659D0EC499CC9C2391D3C7D1128A0B9FB0BBF2842D1B2BC7BC',
+      name: 'ASH',
+      display: 'ASH',
+      symbol: 'ASH',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ash.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom:
+              'factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-642'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Neutron chain.',
       denom_units: [
         {

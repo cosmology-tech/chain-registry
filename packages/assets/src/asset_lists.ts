@@ -430,6 +430,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/C42AE4E32F8A98AC46599CC6216EA5112DC416B0156F2CBBC4BDF48F6903A1BB",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/C42AE4E32F8A98AC46599CC6216EA5112DC416B0156F2CBBC4BDF48F6903A1BB",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-641",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-16"
+            }
+          }
+        ]
       }
     ]
   },
@@ -2522,6 +2559,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-490",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-490",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -5242,6 +5316,76 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "The native staking and governance token of Centauri.",
+        "denom_units": [
+          {
+            "denom": "ibc/2FAD8D00A958B0A5509A4ECF9E719B65EE268DAFB38FED98FF9B90B720F04C28",
+            "exponent": 0,
+            "aliases": [
+              "ppica"
+            ]
+          },
+          {
+            "denom": "pica",
+            "exponent": 12
+          }
+        ],
+        "base": "ibc/2FAD8D00A958B0A5509A4ECF9E719B65EE268DAFB38FED98FF9B90B720F04C28",
+        "name": "Pica",
+        "display": "pica",
+        "symbol": "PICA",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-13",
+              "base_denom": "ppica",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-55"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native staking and governance token of Kusama Relay Chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/2CCA9A71745C388DE0A9B6F7AA3F28EF3C756509E9D753E36CBBB9D063A35AF7",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9"
+            ]
+          },
+          {
+            "denom": "ksm",
+            "exponent": 12
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/2CCA9A71745C388DE0A9B6F7AA3F28EF3C756509E9D753E36CBBB9D063A35AF7",
+        "name": "KSM",
+        "display": "ksm",
+        "symbol": "KSM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-13",
+              "base_denom": "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-55"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native staking and governance token of the Cosmos Hub.",
         "denom_units": [
           {
@@ -5359,7 +5503,7 @@ const asset_lists: AssetList[] = [
         "description": "The native EVM, governance and staking token of the Evmos Hub",
         "denom_units": [
           {
-            "denom": "ibc/FA903A861D5A8CD81BB8F0325F2AF782655770AC10E80D8FAF51647B2B61C95E",
+            "denom": "ibc/80D5E86278CE910A7A9653CCA7DEB62C817E07AF9C0C657B43191C43DE60B107",
             "exponent": 0,
             "aliases": [
               "aevmos"
@@ -5370,7 +5514,7 @@ const asset_lists: AssetList[] = [
             "exponent": 18
           }
         ],
-        "base": "ibc/FA903A861D5A8CD81BB8F0325F2AF782655770AC10E80D8FAF51647B2B61C95E",
+        "base": "ibc/80D5E86278CE910A7A9653CCA7DEB62C817E07AF9C0C657B43191C43DE60B107",
         "name": "Evmos",
         "display": "evmos",
         "symbol": "EVMOS",
@@ -5383,12 +5527,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel_id": "channel-81",
+              "channel_id": "channel-85",
               "base_denom": "aevmos",
               "chain_name": "evmos"
             },
             "chain": {
-              "channel_id": "channel-51"
+              "channel_id": "channel-57"
             }
           }
         ]
@@ -6191,6 +6335,43 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-320",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Secret Network",
         "denom_units": [
           {
@@ -6616,6 +6797,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-779",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-779",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -7497,6 +7715,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-1",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/F26937DFFA2301819B1ABCF08C7F32460243941D6995E53EE206B3B2CE4B10CB",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/F26937DFFA2301819B1ABCF08C7F32460243941D6995E53EE206B3B2CE4B10CB",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -9619,6 +9874,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1429",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -9970,6 +10262,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-648",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-12"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/A59EA89D8D9098698794E6511AD8B278C12A4ED87D1A617A435212CA17A8BA7E",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/A59EA89D8D9098698794E6511AD8B278C12A4ED87D1A617A435212CA17A8BA7E",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-648",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -10698,6 +11027,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-232",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-232",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -13233,6 +13599,43 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/126F26B7B86115B6FC29F96E35FDFCD7606C9DC459909B69F8E5AA4D07E4C18C",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/126F26B7B86115B6FC29F96E35FDFCD7606C9DC459909B69F8E5AA4D07E4C18C",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-208",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Secret Network",
         "denom_units": [
           {
@@ -13672,6 +14075,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/9DC1A94011DD675C98681D144F344E3EAC9EB0D1C50FFD7408E7FC4EDF3A437A",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/9DC1A94011DD675C98681D144F344E3EAC9EB0D1C50FFD7408E7FC4EDF3A437A",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-148",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-83"
+            }
+          }
+        ]
       }
     ]
   },
@@ -14023,6 +14463,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-340",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-340",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -15150,6 +15627,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-51",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -15729,6 +16243,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-73",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -16087,6 +16638,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-763",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -16438,6 +17026,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-95",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/591EFBCEDAE6CE54652FD099434D57E054CF0302697DB44C75271E197B3DDCCB",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/591EFBCEDAE6CE54652FD099434D57E054CF0302697DB44C75271E197B3DDCCB",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-95",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -16891,6 +17516,76 @@ const asset_lists: AssetList[] = [
         }
       },
       {
+        "description": "The native staking and governance token of Centauri.",
+        "denom_units": [
+          {
+            "denom": "ibc/67EA418E1C4F31BC3443A1C7068567CFA1CE9C31253787B233D693FB68797255",
+            "exponent": 0,
+            "aliases": [
+              "ppica"
+            ]
+          },
+          {
+            "denom": "pica",
+            "exponent": 12
+          }
+        ],
+        "base": "ibc/67EA418E1C4F31BC3443A1C7068567CFA1CE9C31253787B233D693FB68797255",
+        "name": "Pica",
+        "display": "pica",
+        "symbol": "PICA",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-12",
+              "base_denom": "ppica",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-23"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native staking and governance token of Kusama Relay Chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/F5BF63933AA9FB1D9648B09733CF0736B1409A1E9B14F95889282AC3C21D7E22",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9"
+            ]
+          },
+          {
+            "denom": "ksm",
+            "exponent": 12
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/F5BF63933AA9FB1D9648B09733CF0736B1409A1E9B14F95889282AC3C21D7E22",
+        "name": "KSM",
+        "display": "ksm",
+        "symbol": "KSM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-12",
+              "base_denom": "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-23"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Osmosis",
         "denom_units": [
           {
@@ -17235,6 +17930,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-550",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/BEFB9AB13AB43157A0AF6214AD4B1F565AC0CA0C1760B8337BE7B9E2996F7752",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/BEFB9AB13AB43157A0AF6214AD4B1F565AC0CA0C1760B8337BE7B9E2996F7752",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-550",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -17857,6 +18589,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-188",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-188",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -18944,6 +19713,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-212",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -19295,6 +20101,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-108",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-108",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -19667,6 +20510,42 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-10",
               "base_denom": "factory/migaloo1eqntnl6tzcj9h86psg4y4h6hh05g2h9nj8e09l/urac",
+              "chain_name": "migaloo"
+            },
+            "chain": {
+              "channel_id": "channel-39"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ASH",
+        "denom_units": [
+          {
+            "denom": "ibc/837882633E2C2B29B53C691E7F0D0E53FCD51D2EB5F3B9FE3664A2B1EE80E9DC",
+            "exponent": 0,
+            "aliases": [
+              "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash"
+            ]
+          },
+          {
+            "denom": "ASH",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/837882633E2C2B29B53C691E7F0D0E53FCD51D2EB5F3B9FE3664A2B1EE80E9DC",
+        "name": "ASH",
+        "display": "ASH",
+        "symbol": "ASH",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ash.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-10",
+              "base_denom": "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash",
               "chain_name": "migaloo"
             },
             "chain": {
@@ -20057,6 +20936,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-113",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-7"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/CFA0B52A43F319784F77D3A6E5E0909C7F1289A2F114B9BC147BF5BBF2CFA7DA",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/CFA0B52A43F319784F77D3A6E5E0909C7F1289A2F114B9BC147BF5BBF2CFA7DA",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-113",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -20552,6 +21468,42 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ASH",
+        "denom_units": [
+          {
+            "denom": "ibc/660837D59789D2D6D573807129C2B2626DFECABB6E1BF9B5D704C37F32992632",
+            "exponent": 0,
+            "aliases": [
+              "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash"
+            ]
+          },
+          {
+            "denom": "ASH",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/660837D59789D2D6D573807129C2B2626DFECABB6E1BF9B5D704C37F32992632",
+        "name": "ASH",
+        "display": "ASH",
+        "symbol": "ASH",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ash.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-12",
+              "base_denom": "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash",
+              "chain_name": "migaloo"
+            },
+            "chain": {
+              "channel_id": "channel-63"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Osmosis",
         "denom_units": [
           {
@@ -20896,6 +21848,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-87",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-87",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -21311,6 +22300,454 @@ const asset_lists: AssetList[] = [
     "chain_name": "composable",
     "assets": [
       {
+        "description": "BLD is the token used to secure the Agoric chain through staking and to backstop Inter Protocol.",
+        "denom_units": [
+          {
+            "denom": "ibc/6C42AE3786DF3E1C8520107A7328D268D19AD631A922FB06F7B99005304AB26D",
+            "exponent": 0,
+            "aliases": [
+              "ubld"
+            ]
+          },
+          {
+            "denom": "bld",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/6C42AE3786DF3E1C8520107A7328D268D19AD631A922FB06F7B99005304AB26D",
+        "name": "Agoric",
+        "display": "bld",
+        "symbol": "BLD",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/bld.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/bld.png"
+        },
+        "coingecko_id": "agoric",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-55",
+              "base_denom": "ubld",
+              "chain_name": "agoric"
+            },
+            "chain": {
+              "channel_id": "channel-13"
+            }
+          }
+        ]
+      },
+      {
+        "description": "IST is the stable token used by the Agoric chain for execution fees and commerce.",
+        "denom_units": [
+          {
+            "denom": "ibc/164E955DF8598E8589024E5A4A84AA9759D19B2695AC77B626BABD867511DEC4",
+            "exponent": 0,
+            "aliases": [
+              "uist"
+            ]
+          },
+          {
+            "denom": "ist",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/164E955DF8598E8589024E5A4A84AA9759D19B2695AC77B626BABD867511DEC4",
+        "name": "Inter Stable Token",
+        "display": "ist",
+        "symbol": "IST",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/ist.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/ist.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-55",
+              "base_denom": "uist",
+              "chain_name": "agoric"
+            },
+            "chain": {
+              "channel_id": "channel-13"
+            }
+          }
+        ]
+      },
+      {
+        "description": "Canto is a Layer-1 blockchain built to deliver on the promise of DeFi",
+        "denom_units": [
+          {
+            "denom": "ibc/F07909AA80B8A21CE9E19922CE95BF175DB76C614DBCBF01C8CB1EB56E25E42C",
+            "exponent": 0,
+            "aliases": [
+              "acanto"
+            ]
+          },
+          {
+            "denom": "canto",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/F07909AA80B8A21CE9E19922CE95BF175DB76C614DBCBF01C8CB1EB56E25E42C",
+        "name": "Canto",
+        "display": "canto",
+        "symbol": "CANTO",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png"
+        },
+        "coingecko_id": "canto",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-23",
+              "base_denom": "acanto",
+              "chain_name": "canto"
+            },
+            "chain": {
+              "channel_id": "channel-12"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native token of Crescent",
+        "denom_units": [
+          {
+            "denom": "ibc/B5AB26FB63C08E1C14B91B4DDC15CA4FE59737052B4432D8A3B328B66F6FE7A1",
+            "exponent": 0,
+            "aliases": [
+              "ucre"
+            ]
+          },
+          {
+            "denom": "cre",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/B5AB26FB63C08E1C14B91B4DDC15CA4FE59737052B4432D8A3B328B66F6FE7A1",
+        "name": "Crescent",
+        "display": "cre",
+        "symbol": "CRE",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg"
+        },
+        "coingecko_id": "crescent-network",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-64",
+              "base_denom": "ucre",
+              "chain_name": "crescent"
+            },
+            "chain": {
+              "channel_id": "channel-11"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The bonded token of Crescent",
+        "denom_units": [
+          {
+            "denom": "ibc/E5569AE44BD9E30C9F89FD9D22C9CCF904D0F08AD1A1CB500C0A3048331A5047",
+            "exponent": 0,
+            "aliases": [
+              "ubcre"
+            ]
+          },
+          {
+            "denom": "bcre",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/E5569AE44BD9E30C9F89FD9D22C9CCF904D0F08AD1A1CB500C0A3048331A5047",
+        "name": "Bonded Crescent",
+        "display": "bcre",
+        "symbol": "bCRE",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg"
+        },
+        "coingecko_id": "liquid-staking-crescent",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-64",
+              "base_denom": "ubcre",
+              "chain_name": "crescent"
+            },
+            "chain": {
+              "channel_id": "channel-11"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native EVM, governance and staking token of the Evmos Hub",
+        "denom_units": [
+          {
+            "denom": "ibc/73E97EB411B29C6F989C35D277D1A7FC65083572F102AC6BD101884EE9FB2C9F",
+            "exponent": 0,
+            "aliases": [
+              "aevmos"
+            ]
+          },
+          {
+            "denom": "evmos",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/73E97EB411B29C6F989C35D277D1A7FC65083572F102AC6BD101884EE9FB2C9F",
+        "name": "Evmos",
+        "display": "evmos",
+        "symbol": "EVMOS",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png"
+        },
+        "coingecko_id": "evmos",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-82",
+              "base_denom": "aevmos",
+              "chain_name": "evmos"
+            },
+            "chain": {
+              "channel_id": "channel-7"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The INJ token is the native governance token for the Injective chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/ADF401C952ADD9EE232D52C8303B8BE17FE7953C8D420F20769AF77240BD0C58",
+            "exponent": 0,
+            "aliases": [
+              "inj"
+            ]
+          },
+          {
+            "denom": "INJ",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/ADF401C952ADD9EE232D52C8303B8BE17FE7953C8D420F20769AF77240BD0C58",
+        "name": "Injective",
+        "display": "INJ",
+        "symbol": "INJ",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg"
+        },
+        "coingecko_id": "injective-protocol",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-141",
+              "base_denom": "inj",
+              "chain_name": "injective"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native token of JUNO Chain",
+        "denom_units": [
+          {
+            "denom": "ibc/DF8D00B4B31B55AFCA9BAF192BC36C67AA06D9987DCB96490661BCAB63C27006",
+            "exponent": 0,
+            "aliases": [
+              "ujuno"
+            ]
+          },
+          {
+            "denom": "juno",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/DF8D00B4B31B55AFCA9BAF192BC36C67AA06D9987DCB96490661BCAB63C27006",
+        "name": "Juno",
+        "display": "juno",
+        "symbol": "JUNO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
+        },
+        "coingecko_id": "juno-network",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-280",
+              "base_denom": "ujuno",
+              "chain_name": "juno"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/B77705179C4A73A08114A4CAAF2AD159DCA8D678D34553F236840939E30F3850",
+            "exponent": 0,
+            "aliases": [
+              "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9"
+            ]
+          },
+          {
+            "denom": "atom",
+            "exponent": 6
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/B77705179C4A73A08114A4CAAF2AD159DCA8D678D34553F236840939E30F3850",
+        "name": "ATOM on Juno",
+        "display": "atom",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-280",
+              "base_denom": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+              "chain_name": "juno"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
+        "description": "Bored APE IBC club token",
+        "type_asset": "cw20",
+        "address": "juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj",
+        "denom_units": [
+          {
+            "denom": "cw20:juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj",
+            "exponent": 0
+          },
+          {
+            "denom": "banana",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/10EEC77B3C96B6C38D730726E86B374C02F1C0B1BB75CB0D99133F47B2BEE781",
+        "name": "Banana Token",
+        "display": "banana",
+        "symbol": "BANANA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/banana.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-280",
+              "base_denom": "cw20:juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj",
+              "chain_name": "juno"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native token cw20 for Neta on Juno Chain",
+        "type_asset": "cw20",
+        "address": "juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr",
+        "denom_units": [
+          {
+            "denom": "ibc/231A031117EA5C6479DAF84D87A8454729991E5FDF4D25EDEB441DCB3B0C1059",
+            "exponent": 0,
+            "aliases": [
+              "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A"
+            ]
+          },
+          {
+            "denom": "neta",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/231A031117EA5C6479DAF84D87A8454729991E5FDF4D25EDEB441DCB3B0C1059",
+        "name": "Neta",
+        "display": "neta",
+        "symbol": "NETA",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/osmosis-labs/assetlists/main/images/neta.png"
+        },
+        "coingecko_id": "neta",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-280",
+              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
+              "chain_name": "juno"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native token of Neutron chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/43C92566AEA8C100CF924DB324BD8F699B6374CA5B93BF6BCFEC4777B62D50D1",
+            "exponent": 0,
+            "aliases": [
+              "untrn"
+            ]
+          },
+          {
+            "denom": "ntrn",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/43C92566AEA8C100CF924DB324BD8F699B6374CA5B93BF6BCFEC4777B62D50D1",
+        "name": "Neutron",
+        "display": "ntrn",
+        "symbol": "NTRN",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg"
+        },
+        "coingecko_id": "neutron",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-17",
+              "base_denom": "untrn",
+              "chain_name": "neutron"
+            },
+            "chain": {
+              "channel_id": "channel-18"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Osmosis",
         "denom_units": [
           {
@@ -21664,6 +23101,43 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/126F26B7B86115B6FC29F96E35FDFCD7606C9DC459909B69F8E5AA4D07E4C18C",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/126F26B7B86115B6FC29F96E35FDFCD7606C9DC459909B69F8E5AA4D07E4C18C",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1279",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native staking and governance token of Picasso.",
         "denom_units": [
           {
@@ -21730,6 +23204,635 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "QCK - native token of Quicksilver",
+        "denom_units": [
+          {
+            "denom": "ibc/E8C4BDE0CDFFA83759AD3324EEE5A1B1E39FCA6BA0791AAE67F4CCF829DB8F1F",
+            "exponent": 0,
+            "aliases": [
+              "uqck"
+            ]
+          },
+          {
+            "denom": "qck",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/E8C4BDE0CDFFA83759AD3324EEE5A1B1E39FCA6BA0791AAE67F4CCF829DB8F1F",
+        "name": "Quicksilver",
+        "display": "qck",
+        "symbol": "QCK",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png"
+        },
+        "coingecko_id": "quicksilver",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-94",
+              "base_denom": "uqck",
+              "chain_name": "quicksilver"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ]
+      },
+      {
+        "description": "Quicksilver Liquid Staked STARS",
+        "denom_units": [
+          {
+            "denom": "ibc/0F55960E7D070B51E5203BBF7923F60CE6AB74005EAB3515C91025F3D45CEC8D",
+            "exponent": 0,
+            "aliases": [
+              "uqstars"
+            ]
+          },
+          {
+            "denom": "qstars",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/0F55960E7D070B51E5203BBF7923F60CE6AB74005EAB3515C91025F3D45CEC8D",
+        "name": "Quicksilver Liquid Staked STARS",
+        "display": "qstars",
+        "symbol": "qSTARS",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-94",
+              "base_denom": "uqstars",
+              "chain_name": "quicksilver"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qstars.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qstars.svg"
+        }
+      },
+      {
+        "description": "Quicksilver Liquid Staked ATOM",
+        "denom_units": [
+          {
+            "denom": "ibc/5A1F6EED2ACB76E88C20CC48889D6144FFBBC5417F190CB86E5BE4BCCAECFABD",
+            "exponent": 0,
+            "aliases": [
+              "uqatom"
+            ]
+          },
+          {
+            "denom": "qatom",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/5A1F6EED2ACB76E88C20CC48889D6144FFBBC5417F190CB86E5BE4BCCAECFABD",
+        "name": "Quicksilver Liquid Staked ATOM",
+        "display": "qatom",
+        "symbol": "qATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-94",
+              "base_denom": "uqatom",
+              "chain_name": "quicksilver"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qatom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qatom.svg"
+        }
+      },
+      {
+        "description": "Quicksilver Liquid Staked REGEN",
+        "denom_units": [
+          {
+            "denom": "ibc/9C7A4526E96CE34FD029D795903723AA06910225B0292D3BB8EF3525A095018C",
+            "exponent": 0,
+            "aliases": [
+              "uqregen"
+            ]
+          },
+          {
+            "denom": "qregen",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/9C7A4526E96CE34FD029D795903723AA06910225B0292D3BB8EF3525A095018C",
+        "name": "Quicksilver Liquid Staked Regen",
+        "display": "qregen",
+        "symbol": "qREGEN",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-94",
+              "base_denom": "uqregen",
+              "chain_name": "quicksilver"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qregen.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qregen.svg"
+        }
+      },
+      {
+        "description": "Quicksilver Liquid Staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/CAF3557FD6F4A1ECA36FB964B2216FBB076AC50600A4005F4E7A82A21E1AF79D",
+            "exponent": 0,
+            "aliases": [
+              "uqosmo"
+            ]
+          },
+          {
+            "denom": "qosmo",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ibc/CAF3557FD6F4A1ECA36FB964B2216FBB076AC50600A4005F4E7A82A21E1AF79D",
+        "name": "Quicksilver Liquid Staked OSMO",
+        "display": "qosmo",
+        "symbol": "qOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-94",
+              "base_denom": "uqosmo",
+              "chain_name": "quicksilver"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qosmo.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qosmo.svg"
+        }
+      },
+      {
+        "description": "The native token of Secret Network",
+        "denom_units": [
+          {
+            "denom": "ibc/E3459360643C2555C57C7DAB0567FA762B42D5D6D45A76615EA7D99D933AEC04",
+            "exponent": 0,
+            "aliases": [
+              "uscrt"
+            ]
+          },
+          {
+            "denom": "scrt",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/E3459360643C2555C57C7DAB0567FA762B42D5D6D45A76615EA7D99D933AEC04",
+        "name": "Secret Network",
+        "display": "scrt",
+        "symbol": "SCRT",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg"
+        },
+        "coingecko_id": "secret",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-80",
+              "base_denom": "uscrt",
+              "chain_name": "secretnetwork"
+            },
+            "chain": {
+              "channel_id": "channel-14"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native token of Stargaze",
+        "denom_units": [
+          {
+            "denom": "ibc/7078D8FA8BCB50A1E7855458F1E9898A3FDA0093B703DA3B3108DD35ED99E048",
+            "exponent": 0,
+            "aliases": [
+              "ustars"
+            ]
+          },
+          {
+            "denom": "stars",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/7078D8FA8BCB50A1E7855458F1E9898A3FDA0093B703DA3B3108DD35ED99E048",
+        "name": "Stargaze",
+        "display": "stars",
+        "symbol": "STARS",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg",
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png"
+        },
+        "coingecko_id": "stargaze",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-184",
+              "base_denom": "ustars",
+              "chain_name": "stargaze"
+            },
+            "chain": {
+              "channel_id": "channel-6"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native token of Stride",
+        "denom_units": [
+          {
+            "denom": "ibc/F4EF72139CDCF526FFD520402C53FFB7A927B528BDF0C5FF60A4D8B4780D2C6B",
+            "exponent": 0,
+            "aliases": [
+              "ustrd"
+            ]
+          },
+          {
+            "denom": "strd",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/F4EF72139CDCF526FFD520402C53FFB7A927B528BDF0C5FF60A4D8B4780D2C6B",
+        "name": "Stride",
+        "display": "strd",
+        "symbol": "STRD",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg"
+        },
+        "coingecko_id": "stride",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-134",
+              "base_denom": "ustrd",
+              "chain_name": "stride"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/6E92C832F3380E7C50D8EFFCCBAD267FA74B212ACB9DEFAF33C0CD58462335DC",
+            "exponent": 0,
+            "aliases": [
+              "stuatom"
+            ]
+          },
+          {
+            "denom": "statom",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/6E92C832F3380E7C50D8EFFCCBAD267FA74B212ACB9DEFAF33C0CD58462335DC",
+        "name": "stATOM",
+        "display": "statom",
+        "symbol": "stATOM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-134",
+              "base_denom": "stuatom",
+              "chain_name": "stride"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg"
+        },
+        "coingecko_id": "stride-staked-atom"
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/F91C946781D76B6EECED1F95F77C0B5A26AC8201F250A2BBADFC7A5FA5CE49E2",
+            "exponent": 0,
+            "aliases": [
+              "stustars"
+            ]
+          },
+          {
+            "denom": "ststars",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/F91C946781D76B6EECED1F95F77C0B5A26AC8201F250A2BBADFC7A5FA5CE49E2",
+        "name": "stSTARS",
+        "display": "ststars",
+        "symbol": "stSTARS",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-134",
+              "base_denom": "stustars",
+              "chain_name": "stride"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.svg"
+        }
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/13C021DFC1E673C94F03BAEBEC3F15D1F0F7D0A8FA0C2B6D871FE7657CC6102A",
+            "exponent": 0,
+            "aliases": [
+              "stuosmo"
+            ]
+          },
+          {
+            "denom": "stosmo",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/13C021DFC1E673C94F03BAEBEC3F15D1F0F7D0A8FA0C2B6D871FE7657CC6102A",
+        "name": "stOSMO",
+        "display": "stosmo",
+        "symbol": "stOSMO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-134",
+              "base_denom": "stuosmo",
+              "chain_name": "stride"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg"
+        }
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/E0A99187B3E9B502AA0E931006785C7381C254BAE9FAE9D1227C2B87734DE1BA",
+            "exponent": 0,
+            "aliases": [
+              "stujuno"
+            ]
+          },
+          {
+            "denom": "stjuno",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/E0A99187B3E9B502AA0E931006785C7381C254BAE9FAE9D1227C2B87734DE1BA",
+        "name": "stJUNO",
+        "display": "stjuno",
+        "symbol": "stJUNO",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-134",
+              "base_denom": "stujuno",
+              "chain_name": "stride"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.svg"
+        }
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/E5FC9A1C4C90C2FD2EF3102047532DCC76901745D116547FF8E540AE8DA2EF84",
+            "exponent": 0,
+            "aliases": [
+              "stuluna"
+            ]
+          },
+          {
+            "denom": "stluna",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/E5FC9A1C4C90C2FD2EF3102047532DCC76901745D116547FF8E540AE8DA2EF84",
+        "name": "stLUNA",
+        "display": "stluna",
+        "symbol": "stLUNA",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-134",
+              "base_denom": "stuluna",
+              "chain_name": "stride"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stluna.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stluna.svg"
+        }
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/5BC4BA1B2EEDA4AE015B31D070048BCD0D179B6BFDB6FDB7F80902090C240FA7",
+            "exponent": 0,
+            "aliases": [
+              "stinj"
+            ]
+          },
+          {
+            "denom": "stINJ",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/5BC4BA1B2EEDA4AE015B31D070048BCD0D179B6BFDB6FDB7F80902090C240FA7",
+        "name": "stINJ",
+        "display": "stINJ",
+        "symbol": "stINJ",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-134",
+              "base_denom": "stinj",
+              "chain_name": "stride"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stinj.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stinj.svg"
+        }
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/E027B27ED8BF4926EA6D15B21C9537B74772B9E8F870979DEB389091D9D106FB",
+            "exponent": 0,
+            "aliases": [
+              "staevmos"
+            ]
+          },
+          {
+            "denom": "stevmos",
+            "exponent": 18
+          }
+        ],
+        "base": "ibc/E027B27ED8BF4926EA6D15B21C9537B74772B9E8F870979DEB389091D9D106FB",
+        "name": "stEVMOS",
+        "display": "stevmos",
+        "symbol": "stEVMOS",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-134",
+              "base_denom": "staevmos",
+              "chain_name": "stride"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stevmos.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stevmos.svg"
+        }
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/42C8DB4A0872274ECDBDEAFDD7A4C586761EB2ACB159E1243A84BDF86D9BF272",
+            "exponent": 0,
+            "aliases": [
+              "stuumee"
+            ]
+          },
+          {
+            "denom": "stumee",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/42C8DB4A0872274ECDBDEAFDD7A4C586761EB2ACB159E1243A84BDF86D9BF272",
+        "name": "stUMEE",
+        "display": "stumee",
+        "symbol": "stUMEE",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-134",
+              "base_denom": "stuumee",
+              "chain_name": "stride"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stumee.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stumee.svg"
+        }
+      },
+      {
+        "denom_units": [
+          {
+            "denom": "ibc/040A39861D8BDAA1482BEAF01E593E06A477402F43B5F303B821820A6E0F2E4F",
+            "exponent": 0,
+            "aliases": [
+              "stucmdx"
+            ]
+          },
+          {
+            "denom": "stcmdx",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/040A39861D8BDAA1482BEAF01E593E06A477402F43B5F303B821820A6E0F2E4F",
+        "name": "stCMDX",
+        "display": "stcmdx",
+        "symbol": "stCMDX",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-134",
+              "base_denom": "stucmdx",
+              "chain_name": "stride"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stcmdx.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stcmdx.svg"
+        }
       }
     ]
   },
@@ -24825,6 +26928,43 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/C1686A81EE8AB575464544FC113037CB1A17911F097A38B597FDACE4CD28F108",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/C1686A81EE8AB575464544FC113037CB1A17911F097A38B597FDACE4CD28F108",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-141"
+            }
+          }
+        ]
+      },
+      {
         "description": "The XPRT token is primarily a governance token for the Persistence chain.",
         "denom_units": [
           {
@@ -27292,6 +29432,76 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "The native staking and governance token of Centauri.",
+        "denom_units": [
+          {
+            "denom": "ibc/AB9FF5725CC5333B7873425E45B8EABE8757B310B2712B630D032BCB3B4B65DB",
+            "exponent": 0,
+            "aliases": [
+              "ppica"
+            ]
+          },
+          {
+            "denom": "pica",
+            "exponent": 12
+          }
+        ],
+        "base": "ibc/AB9FF5725CC5333B7873425E45B8EABE8757B310B2712B630D032BCB3B4B65DB",
+        "name": "Pica",
+        "display": "pica",
+        "symbol": "PICA",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-11",
+              "base_denom": "ppica",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-64"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native staking and governance token of Kusama Relay Chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/80AB8C81EFA2570529F84E62566659E37E4E195EA6BACA67813578DD56BAF641",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9"
+            ]
+          },
+          {
+            "denom": "ksm",
+            "exponent": 12
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/80AB8C81EFA2570529F84E62566659E37E4E195EA6BACA67813578DD56BAF641",
+        "name": "KSM",
+        "display": "ksm",
+        "symbol": "KSM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-11",
+              "base_denom": "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-64"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native staking and governance token of the Cosmos Hub.",
         "denom_units": [
           {
@@ -28605,6 +30815,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-297",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-9"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/F26937DFFA2301819B1ABCF08C7F32460243941D6995E53EE206B3B2CE4B10CB",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/F26937DFFA2301819B1ABCF08C7F32460243941D6995E53EE206B3B2CE4B10CB",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-297",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -30799,6 +33046,43 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/FD842803B4D8DCB2229828F0D034803C5BA852BAF3469D0E3D1175CD646E700A",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/FD842803B4D8DCB2229828F0D034803C5BA852BAF3469D0E3D1175CD646E700A",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-5",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
         "description": "The XPRT token is primarily a governance token for the Persistence chain.",
         "denom_units": [
           {
@@ -31465,6 +33749,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-298",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -31823,6 +34144,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-181",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -32174,6 +34532,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-135",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/591EFBCEDAE6CE54652FD099434D57E054CF0302697DB44C75271E197B3DDCCB",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/591EFBCEDAE6CE54652FD099434D57E054CF0302697DB44C75271E197B3DDCCB",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-135",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -32684,6 +35079,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-128",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -33042,6 +35474,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/591EFBCEDAE6CE54652FD099434D57E054CF0302697DB44C75271E197B3DDCCB",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/591EFBCEDAE6CE54652FD099434D57E054CF0302697DB44C75271E197B3DDCCB",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-526",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
       }
     ]
   },
@@ -33393,6 +35862,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-403",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-11"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/80C85C3FE3472E445B2C0239C2CB9C94834493118DA593B9280F5882C25ABE55",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/80C85C3FE3472E445B2C0239C2CB9C94834493118DA593B9280F5882C25ABE55",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-403",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -33972,6 +36478,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-37",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-37",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -35558,6 +38101,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1411",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -35681,7 +38261,7 @@ const asset_lists: AssetList[] = [
         "description": "BLD is the token used to secure the Agoric chain through staking and to backstop Inter Protocol.",
         "denom_units": [
           {
-            "denom": "ibc/8441A8CC19E3C3B5AF15ABA3C6B7B1F54FA90ADD7AA2B519246E5666024AF086",
+            "denom": "ibc/9628FDBB922ECDBAFBE316667E21D6A5D2EFB9412A8F39666A8127708DCCA8FC",
             "exponent": 0,
             "aliases": [
               "ubld"
@@ -35692,7 +38272,7 @@ const asset_lists: AssetList[] = [
             "exponent": 6
           }
         ],
-        "base": "ibc/8441A8CC19E3C3B5AF15ABA3C6B7B1F54FA90ADD7AA2B519246E5666024AF086",
+        "base": "ibc/9628FDBB922ECDBAFBE316667E21D6A5D2EFB9412A8F39666A8127708DCCA8FC",
         "name": "Agoric",
         "display": "bld",
         "symbol": "BLD",
@@ -35705,12 +38285,12 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel_id": "channel-51",
+              "channel_id": "channel-57",
               "base_denom": "ubld",
               "chain_name": "agoric"
             },
             "chain": {
-              "channel_id": "channel-81"
+              "channel_id": "channel-85"
             }
           }
         ]
@@ -35719,7 +38299,7 @@ const asset_lists: AssetList[] = [
         "description": "IST is the stable token used by the Agoric chain for execution fees and commerce.",
         "denom_units": [
           {
-            "denom": "ibc/4E676DD4B46FAF79851CCD4F2970377E7FD1A9E8C1E419403173152ACCCD0C64",
+            "denom": "ibc/8F2438D04845BBC7081127D45F527EA624E635018D8740874724CC5AC1A0B8E4",
             "exponent": 0,
             "aliases": [
               "uist"
@@ -35730,7 +38310,7 @@ const asset_lists: AssetList[] = [
             "exponent": 6
           }
         ],
-        "base": "ibc/4E676DD4B46FAF79851CCD4F2970377E7FD1A9E8C1E419403173152ACCCD0C64",
+        "base": "ibc/8F2438D04845BBC7081127D45F527EA624E635018D8740874724CC5AC1A0B8E4",
         "name": "Inter Stable Token",
         "display": "ist",
         "symbol": "IST",
@@ -35742,12 +38322,82 @@ const asset_lists: AssetList[] = [
           {
             "type": "ibc",
             "counterparty": {
-              "channel_id": "channel-51",
+              "channel_id": "channel-57",
               "base_denom": "uist",
               "chain_name": "agoric"
             },
             "chain": {
-              "channel_id": "channel-81"
+              "channel_id": "channel-85"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native staking and governance token of Centauri.",
+        "denom_units": [
+          {
+            "denom": "ibc/A7F9A6DC7C7889BF083D778AF579757FC9F4E35911D8A6E8AF3E81A38C819D6D",
+            "exponent": 0,
+            "aliases": [
+              "ppica"
+            ]
+          },
+          {
+            "denom": "pica",
+            "exponent": 12
+          }
+        ],
+        "base": "ibc/A7F9A6DC7C7889BF083D778AF579757FC9F4E35911D8A6E8AF3E81A38C819D6D",
+        "name": "Pica",
+        "display": "pica",
+        "symbol": "PICA",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-7",
+              "base_denom": "ppica",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-82"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native staking and governance token of Kusama Relay Chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/3B655E784B495DDD6CEC005DCF3A28A107759B7D1EB2EFD57E95F41A1F429FBB",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9"
+            ]
+          },
+          {
+            "denom": "ksm",
+            "exponent": 12
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/3B655E784B495DDD6CEC005DCF3A28A107759B7D1EB2EFD57E95F41A1F429FBB",
+        "name": "KSM",
+        "display": "ksm",
+        "symbol": "KSM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-7",
+              "base_denom": "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-82"
             }
           }
         ]
@@ -36401,6 +39051,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-204",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-204",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -37205,6 +39892,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/FD842803B4D8DCB2229828F0D034803C5BA852BAF3469D0E3D1175CD646E700A",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/FD842803B4D8DCB2229828F0D034803C5BA852BAF3469D0E3D1175CD646E700A",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-229",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
       }
     ]
   },
@@ -37556,6 +40280,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-236",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-236",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -37921,6 +40682,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-253",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -38272,6 +41070,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-781",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-781",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -39091,6 +41926,43 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/FD842803B4D8DCB2229828F0D034803C5BA852BAF3469D0E3D1175CD646E700A",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/FD842803B4D8DCB2229828F0D034803C5BA852BAF3469D0E3D1175CD646E700A",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-144",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
         "description": "The XPRT token is primarily a governance token for the Persistence chain.",
         "denom_units": [
           {
@@ -39721,6 +42593,43 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/7E7AB7FBB9E4EAE87FC3CAE47DE0A28B532444806D30694350E5BF55DAEF802D",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/7E7AB7FBB9E4EAE87FC3CAE47DE0A28B532444806D30694350E5BF55DAEF802D",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-38",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-4"
+            }
+          }
+        ]
+      },
+      {
         "description": "Rowan Token (ROWAN) is the Sifchain Network's native utility token, used as the primary means to govern, provide liquidity, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
         "denom_units": [
           {
@@ -40108,6 +43017,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-517",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-517",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -41305,6 +44251,76 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "The native staking and governance token of Centauri.",
+        "denom_units": [
+          {
+            "denom": "ibc/455C0229DFEB1ADCA527BAE29F4F5B30EE50F282DBEB7124D2836D2DD31514C8",
+            "exponent": 0,
+            "aliases": [
+              "ppica"
+            ]
+          },
+          {
+            "denom": "pica",
+            "exponent": 12
+          }
+        ],
+        "base": "ibc/455C0229DFEB1ADCA527BAE29F4F5B30EE50F282DBEB7124D2836D2DD31514C8",
+        "name": "Pica",
+        "display": "pica",
+        "symbol": "PICA",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-10",
+              "base_denom": "ppica",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-141"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native staking and governance token of Kusama Relay Chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/3DA118C57C67B904E553CFBB0595EC8859B96FDAD21C4FE55D8BE7065336CF77",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9"
+            ]
+          },
+          {
+            "denom": "ksm",
+            "exponent": 12
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/3DA118C57C67B904E553CFBB0595EC8859B96FDAD21C4FE55D8BE7065336CF77",
+        "name": "KSM",
+        "display": "ksm",
+        "symbol": "KSM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-10",
+              "base_denom": "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-141"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native staking and governance token of the Cosmos Hub.",
         "denom_units": [
           {
@@ -41632,6 +44648,42 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-3",
               "base_denom": "factory/migaloo1eqntnl6tzcj9h86psg4y4h6hh05g2h9nj8e09l/urac",
+              "chain_name": "migaloo"
+            },
+            "chain": {
+              "channel_id": "channel-102"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ASH",
+        "denom_units": [
+          {
+            "denom": "ibc/EED40547772504DF629EFEC08892E689CD14498B1C0AD766CD5075BBBEE3D808",
+            "exponent": 0,
+            "aliases": [
+              "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash"
+            ]
+          },
+          {
+            "denom": "ASH",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/EED40547772504DF629EFEC08892E689CD14498B1C0AD766CD5075BBBEE3D808",
+        "name": "ASH",
+        "display": "ASH",
+        "symbol": "ASH",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ash.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-3",
+              "base_denom": "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash",
               "chain_name": "migaloo"
             },
             "chain": {
@@ -42028,6 +45080,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-122",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/012D069D557C4DD59A670AA17E809CB7A790D778E364D0BC0A3248105DA6432D",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/012D069D557C4DD59A670AA17E809CB7A790D778E364D0BC0A3248105DA6432D",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-122",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -43429,6 +46518,43 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/126F26B7B86115B6FC29F96E35FDFCD7606C9DC459909B69F8E5AA4D07E4C18C",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/126F26B7B86115B6FC29F96E35FDFCD7606C9DC459909B69F8E5AA4D07E4C18C",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-6",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
         "description": "The XPRT token is primarily a governance token for the Persistence chain.",
         "denom_units": [
           {
@@ -44389,6 +47515,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-412",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-412",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -46469,6 +49632,76 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "The native staking and governance token of Centauri.",
+        "denom_units": [
+          {
+            "denom": "ibc/ED5C62BE7D20C4B53779300805744223DDBFFF538C2A60B106AF95D7BE1AEE1F",
+            "exponent": 0,
+            "aliases": [
+              "ppica"
+            ]
+          },
+          {
+            "denom": "pica",
+            "exponent": 12
+          }
+        ],
+        "base": "ibc/ED5C62BE7D20C4B53779300805744223DDBFFF538C2A60B106AF95D7BE1AEE1F",
+        "name": "Pica",
+        "display": "pica",
+        "symbol": "PICA",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-8",
+              "base_denom": "ppica",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-280"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native staking and governance token of Kusama Relay Chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/47A81B7CC895D1A767CFCEE688E9E313B718BEE6E21F36B85FB754C093464937",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9"
+            ]
+          },
+          {
+            "denom": "ksm",
+            "exponent": 12
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/47A81B7CC895D1A767CFCEE688E9E313B718BEE6E21F36B85FB754C093464937",
+        "name": "KSM",
+        "display": "ksm",
+        "symbol": "KSM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-8",
+              "base_denom": "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-280"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native staking and governance token of the Cosmos Hub.",
         "denom_units": [
           {
@@ -47120,6 +50353,42 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ASH",
+        "denom_units": [
+          {
+            "denom": "ibc/9B36B61BBB374C8DBE98FFB6958732B81BC2A2CB9CE55832E4026C4BAD35002F",
+            "exponent": 0,
+            "aliases": [
+              "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash"
+            ]
+          },
+          {
+            "denom": "ASH",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/9B36B61BBB374C8DBE98FFB6958732B81BC2A2CB9CE55832E4026C4BAD35002F",
+        "name": "ASH",
+        "display": "ASH",
+        "symbol": "ASH",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ash.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1",
+              "base_denom": "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash",
+              "chain_name": "migaloo"
+            },
+            "chain": {
+              "channel_id": "channel-210"
+            }
+          }
+        ]
+      },
+      {
         "description": "The permissioned staking asset for Noble Chain",
         "denom_units": [
           {
@@ -47696,6 +50965,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-42",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-42",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -50196,6 +53502,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-143",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -50592,6 +53935,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-77",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -50943,6 +54323,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-171",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-171",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -53705,6 +57122,42 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ASH",
+        "denom_units": [
+          {
+            "denom": "ibc/BA7E3453C2855BF2EC7EB368C3A5F498C4194677EE789780D7F1F534686D1D6D",
+            "exponent": 0,
+            "aliases": [
+              "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash"
+            ]
+          },
+          {
+            "denom": "ASH",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/BA7E3453C2855BF2EC7EB368C3A5F498C4194677EE789780D7F1F534686D1D6D",
+        "name": "ASH",
+        "display": "ASH",
+        "symbol": "ASH",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ash.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-8",
+              "base_denom": "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash",
+              "chain_name": "migaloo"
+            },
+            "chain": {
+              "channel_id": "channel-58"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Neutron chain.",
         "denom_units": [
           {
@@ -54277,6 +57730,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-259",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/126F26B7B86115B6FC29F96E35FDFCD7606C9DC459909B69F8E5AA4D07E4C18C",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/126F26B7B86115B6FC29F96E35FDFCD7606C9DC459909B69F8E5AA4D07E4C18C",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-259",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -56347,6 +59837,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-767",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -56698,6 +60225,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-378",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/591EFBCEDAE6CE54652FD099434D57E054CF0302697DB44C75271E197B3DDCCB",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/591EFBCEDAE6CE54652FD099434D57E054CF0302697DB44C75271E197B3DDCCB",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-378",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -57101,6 +60665,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/126F26B7B86115B6FC29F96E35FDFCD7606C9DC459909B69F8E5AA4D07E4C18C",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/126F26B7B86115B6FC29F96E35FDFCD7606C9DC459909B69F8E5AA4D07E4C18C",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-53",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
       }
     ]
   },
@@ -57452,6 +61053,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-286",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/126F26B7B86115B6FC29F96E35FDFCD7606C9DC459909B69F8E5AA4D07E4C18C",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/126F26B7B86115B6FC29F96E35FDFCD7606C9DC459909B69F8E5AA4D07E4C18C",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-286",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -57848,6 +61486,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-115",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/126F26B7B86115B6FC29F96E35FDFCD7606C9DC459909B69F8E5AA4D07E4C18C",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/126F26B7B86115B6FC29F96E35FDFCD7606C9DC459909B69F8E5AA4D07E4C18C",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-115",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -58548,6 +62223,43 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-557",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native staking token of Terra.",
         "denom_units": [
           {
@@ -58942,6 +62654,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-519",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -59300,6 +63049,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-238",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -59651,6 +63437,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-39",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-16"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/C42AE4E32F8A98AC46599CC6216EA5112DC416B0156F2CBBC4BDF48F6903A1BB",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/C42AE4E32F8A98AC46599CC6216EA5112DC416B0156F2CBBC4BDF48F6903A1BB",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-39",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -60532,6 +64355,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-642",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/BEFB9AB13AB43157A0AF6214AD4B1F565AC0CA0C1760B8337BE7B9E2996F7752",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/BEFB9AB13AB43157A0AF6214AD4B1F565AC0CA0C1760B8337BE7B9E2996F7752",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-642",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -62088,6 +65948,76 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "The native staking and governance token of Centauri.",
+        "denom_units": [
+          {
+            "denom": "ibc/1CF1239A3068964DAF55F7300D7BE016E4E184F58EEB59096B138F6D72628BAA",
+            "exponent": 0,
+            "aliases": [
+              "ppica"
+            ]
+          },
+          {
+            "denom": "pica",
+            "exponent": 12
+          }
+        ],
+        "base": "ibc/1CF1239A3068964DAF55F7300D7BE016E4E184F58EEB59096B138F6D72628BAA",
+        "name": "Pica",
+        "display": "pica",
+        "symbol": "PICA",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-18",
+              "base_denom": "ppica",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-17"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native staking and governance token of Kusama Relay Chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/5A027DC380009335DC96374937E7AA5D7D45FA710E9A0AE76854541441026E11",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9"
+            ]
+          },
+          {
+            "denom": "ksm",
+            "exponent": 12
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/5A027DC380009335DC96374937E7AA5D7D45FA710E9A0AE76854541441026E11",
+        "name": "KSM",
+        "display": "ksm",
+        "symbol": "KSM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-18",
+              "base_denom": "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-17"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native staking and governance token of the Cosmos Hub.",
         "denom_units": [
           {
@@ -62658,6 +66588,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-874",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-10"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/FD842803B4D8DCB2229828F0D034803C5BA852BAF3469D0E3D1175CD646E700A",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/FD842803B4D8DCB2229828F0D034803C5BA852BAF3469D0E3D1175CD646E700A",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-874",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -64118,6 +68085,43 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-750",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native staking token of Terra.",
         "denom_units": [
           {
@@ -64769,6 +68773,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-783",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-783",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -66317,6 +70358,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/126F26B7B86115B6FC29F96E35FDFCD7606C9DC459909B69F8E5AA4D07E4C18C",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/126F26B7B86115B6FC29F96E35FDFCD7606C9DC459909B69F8E5AA4D07E4C18C",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-258",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-3"
+            }
+          }
+        ]
       }
     ]
   },
@@ -67165,6 +71243,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-199",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -67516,6 +71631,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-525",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-525",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -67987,6 +72139,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-216",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-13"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/649271E2DF18F36760F03B27EF717DC7093963A5090514092EF4E3E6954BACF1",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/649271E2DF18F36760F03B27EF717DC7093963A5090514092EF4E3E6954BACF1",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-216",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -73711,6 +77900,42 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-5",
               "base_denom": "factory/migaloo1eqntnl6tzcj9h86psg4y4h6hh05g2h9nj8e09l/urac",
+              "chain_name": "migaloo"
+            },
+            "chain": {
+              "channel_id": "channel-642"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ASH",
+        "denom_units": [
+          {
+            "denom": "ibc/4976049456D261659D0EC499CC9C2391D3C7D1128A0B9FB0BBF2842D1B2BC7BC",
+            "exponent": 0,
+            "aliases": [
+              "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash"
+            ]
+          },
+          {
+            "denom": "ASH",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/4976049456D261659D0EC499CC9C2391D3C7D1128A0B9FB0BBF2842D1B2BC7BC",
+        "name": "ASH",
+        "display": "ASH",
+        "symbol": "ASH",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ash.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-5",
+              "base_denom": "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash",
               "chain_name": "migaloo"
             },
             "chain": {
@@ -80647,6 +84872,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-82",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -81589,6 +85851,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-4",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-6"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/7D3D4489F954CC8939EE3A293DF2BFA65B9D9C62A5EA735BA21F99A4138BA4FE",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/7D3D4489F954CC8939EE3A293DF2BFA65B9D9C62A5EA735BA21F99A4138BA4FE",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-4",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -83029,6 +87328,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-492",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -83430,6 +87766,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/CFA0B52A43F319784F77D3A6E5E0909C7F1289A2F114B9BC147BF5BBF2CFA7DA",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/CFA0B52A43F319784F77D3A6E5E0909C7F1289A2F114B9BC147BF5BBF2CFA7DA",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-222",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-7"
+            }
+          }
+        ]
       }
     ]
   },
@@ -83788,12 +88161,119 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-688",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
   {
     "chain_name": "quicksilver",
     "assets": [
+      {
+        "description": "The native staking and governance token of Centauri.",
+        "denom_units": [
+          {
+            "denom": "ibc/25A01BCED23530945E74C17A63C29DAD5970F7405B398681D015738B51A0B64C",
+            "exponent": 0,
+            "aliases": [
+              "ppica"
+            ]
+          },
+          {
+            "denom": "pica",
+            "exponent": 12
+          }
+        ],
+        "base": "ibc/25A01BCED23530945E74C17A63C29DAD5970F7405B398681D015738B51A0B64C",
+        "name": "Pica",
+        "display": "pica",
+        "symbol": "PICA",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-9",
+              "base_denom": "ppica",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-94"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native staking and governance token of Kusama Relay Chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/EF7930D92E35A5A7A36E881E9C4F2711C8C49CBAD71CA4D04783DA4CFFCE249A",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9"
+            ]
+          },
+          {
+            "denom": "ksm",
+            "exponent": 12
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/EF7930D92E35A5A7A36E881E9C4F2711C8C49CBAD71CA4D04783DA4CFFCE249A",
+        "name": "KSM",
+        "display": "ksm",
+        "symbol": "KSM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-9",
+              "base_denom": "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-94"
+            }
+          }
+        ]
+      },
       {
         "description": "The native staking and governance token of the Cosmos Hub.",
         "denom_units": [
@@ -84322,6 +88802,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-522",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/591EFBCEDAE6CE54652FD099434D57E054CF0302697DB44C75271E197B3DDCCB",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/591EFBCEDAE6CE54652FD099434D57E054CF0302697DB44C75271E197B3DDCCB",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-522",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -84997,6 +89514,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-1424",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
       }
     ]
   },
@@ -85348,6 +89902,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-355",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-355",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -86046,6 +90637,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-8",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-8",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -86828,6 +91456,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-221",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-221",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -88290,6 +92955,76 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "The native staking and governance token of Centauri.",
+        "denom_units": [
+          {
+            "denom": "ibc/7E8714E75B6A303CB074576F08D6FB3FB064C7E936F59AFE273CBB05DECE7151",
+            "exponent": 0,
+            "aliases": [
+              "ppica"
+            ]
+          },
+          {
+            "denom": "pica",
+            "exponent": 12
+          }
+        ],
+        "base": "ibc/7E8714E75B6A303CB074576F08D6FB3FB064C7E936F59AFE273CBB05DECE7151",
+        "name": "Pica",
+        "display": "pica",
+        "symbol": "PICA",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-14",
+              "base_denom": "ppica",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-80"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native staking and governance token of Kusama Relay Chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/B776D45AA5F28ACD82F3E03D258B8386DA7D0622120991110849A6C40FEB911E",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9"
+            ]
+          },
+          {
+            "denom": "ksm",
+            "exponent": 12
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/B776D45AA5F28ACD82F3E03D258B8386DA7D0622120991110849A6C40FEB911E",
+        "name": "KSM",
+        "display": "ksm",
+        "symbol": "KSM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-14",
+              "base_denom": "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-80"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native staking and governance token of the Cosmos Hub.",
         "denom_units": [
           {
@@ -89329,6 +94064,42 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ASH",
+        "denom_units": [
+          {
+            "denom": "ibc/07D49BFFE3E9C4017DA6BD604B728EE024F4BF954AC6D36ECCF73FABF33BFE80",
+            "exponent": 0,
+            "aliases": [
+              "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash"
+            ]
+          },
+          {
+            "denom": "ASH",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/07D49BFFE3E9C4017DA6BD604B728EE024F4BF954AC6D36ECCF73FABF33BFE80",
+        "name": "ASH",
+        "display": "ASH",
+        "symbol": "ASH",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ash.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-4",
+              "base_denom": "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash",
+              "chain_name": "migaloo"
+            },
+            "chain": {
+              "channel_id": "channel-57"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Osmosis",
         "denom_units": [
           {
@@ -89673,6 +94444,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-88",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-88",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -92101,6 +96909,43 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-2",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
         "description": "The XPRT token is primarily a governance token for the Persistence chain.",
         "denom_units": [
           {
@@ -92767,6 +97612,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-647",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -93118,6 +98000,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-146",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-8"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/012D069D557C4DD59A670AA17E809CB7A790D778E364D0BC0A3248105DA6432D",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/012D069D557C4DD59A670AA17E809CB7A790D778E364D0BC0A3248105DA6432D",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-146",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -93811,6 +98730,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-47",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-17"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/FE2F82764F0A1E77EE7627CBB0A6C149176A1549BEB3442A920EA39995D5CEF5",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/FE2F82764F0A1E77EE7627CBB0A6C149176A1549BEB3442A920EA39995D5CEF5",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-47",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -95857,6 +100813,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-165",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -96414,6 +101407,76 @@ const asset_lists: AssetList[] = [
         "logo_URIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg"
         }
+      },
+      {
+        "description": "The native staking and governance token of Centauri.",
+        "denom_units": [
+          {
+            "denom": "ibc/775B130CF8ED9C5FC9C5A14480AA479E091661D72F367AA64D1F5B442FCC52FE",
+            "exponent": 0,
+            "aliases": [
+              "ppica"
+            ]
+          },
+          {
+            "denom": "pica",
+            "exponent": 12
+          }
+        ],
+        "base": "ibc/775B130CF8ED9C5FC9C5A14480AA479E091661D72F367AA64D1F5B442FCC52FE",
+        "name": "Pica",
+        "display": "pica",
+        "symbol": "PICA",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-6",
+              "base_denom": "ppica",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-184"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native staking and governance token of Kusama Relay Chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/6F4D3965E55D84A53F5BABC960162B2D9B5A5D494246F67140027AA0EE596FFD",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9"
+            ]
+          },
+          {
+            "denom": "ksm",
+            "exponent": 12
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/6F4D3965E55D84A53F5BABC960162B2D9B5A5D494246F67140027AA0EE596FFD",
+        "name": "KSM",
+        "display": "ksm",
+        "symbol": "KSM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-6",
+              "base_denom": "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-184"
+            }
+          }
+        ]
       },
       {
         "description": "The native token of Crescent",
@@ -97024,6 +102087,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-75",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-75",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -98134,6 +103234,43 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/591EFBCEDAE6CE54652FD099434D57E054CF0302697DB44C75271E197B3DDCCB",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/591EFBCEDAE6CE54652FD099434D57E054CF0302697DB44C75271E197B3DDCCB",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-15",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-2"
+            }
+          }
+        ]
+      },
+      {
         "description": "The XPRT token is primarily a governance token for the Persistence chain.",
         "denom_units": [
           {
@@ -99034,6 +104171,76 @@ const asset_lists: AssetList[] = [
             },
             "chain": {
               "channel_id": "channel-49"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native staking and governance token of Centauri.",
+        "denom_units": [
+          {
+            "denom": "ibc/C2D05DEC08BA1A9153C34ABED5F99818A935E1A2A9E86473301000511C0A75C9",
+            "exponent": 0,
+            "aliases": [
+              "ppica"
+            ]
+          },
+          {
+            "denom": "pica",
+            "exponent": 12
+          }
+        ],
+        "base": "ibc/C2D05DEC08BA1A9153C34ABED5F99818A935E1A2A9E86473301000511C0A75C9",
+        "name": "Pica",
+        "display": "pica",
+        "symbol": "PICA",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-5",
+              "base_denom": "ppica",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-134"
+            }
+          }
+        ]
+      },
+      {
+        "description": "The native staking and governance token of Kusama Relay Chain.",
+        "denom_units": [
+          {
+            "denom": "ibc/065DE8EC5E26C3798B1292446DBB5DAB9A490EEC9986ED9955328C380C99FD90",
+            "exponent": 0,
+            "aliases": [
+              "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9"
+            ]
+          },
+          {
+            "denom": "ksm",
+            "exponent": 12
+          }
+        ],
+        "type_asset": "ics20",
+        "base": "ibc/065DE8EC5E26C3798B1292446DBB5DAB9A490EEC9986ED9955328C380C99FD90",
+        "name": "KSM",
+        "display": "ksm",
+        "symbol": "KSM",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-5",
+              "base_denom": "ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9",
+              "chain_name": "composable"
+            },
+            "chain": {
+              "channel_id": "channel-134"
             }
           }
         ]
@@ -99953,6 +105160,43 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/BEFB9AB13AB43157A0AF6214AD4B1F565AC0CA0C1760B8337BE7B9E2996F7752",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/BEFB9AB13AB43157A0AF6214AD4B1F565AC0CA0C1760B8337BE7B9E2996F7752",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-326",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-5"
+            }
+          }
+        ]
+      },
+      {
         "description": "The XPRT token is primarily a governance token for the Persistence chain.",
         "denom_units": [
           {
@@ -100574,6 +105818,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-362",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-362",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -101266,6 +106547,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-72",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-72",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -102206,6 +107524,42 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ASH",
+        "denom_units": [
+          {
+            "denom": "ibc/390B25B1BA21312C031FC6273F2E421DDE62466D858EEE88B7FC48E13B1D47B5",
+            "exponent": 0,
+            "aliases": [
+              "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash"
+            ]
+          },
+          {
+            "denom": "ASH",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/390B25B1BA21312C031FC6273F2E421DDE62466D858EEE88B7FC48E13B1D47B5",
+        "name": "ASH",
+        "display": "ASH",
+        "symbol": "ASH",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ash.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash",
+              "chain_name": "migaloo"
+            },
+            "chain": {
+              "channel_id": "channel-86"
+            }
+          }
+        ]
+      },
+      {
         "description": "The permissioned staking asset for Noble Chain",
         "denom_units": [
           {
@@ -102702,6 +108056,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-251",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-251",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -106801,6 +112192,42 @@ const asset_lists: AssetList[] = [
         ]
       },
       {
+        "description": "ASH",
+        "denom_units": [
+          {
+            "denom": "ibc/390B25B1BA21312C031FC6273F2E421DDE62466D858EEE88B7FC48E13B1D47B5",
+            "exponent": 0,
+            "aliases": [
+              "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash"
+            ]
+          },
+          {
+            "denom": "ASH",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/390B25B1BA21312C031FC6273F2E421DDE62466D858EEE88B7FC48E13B1D47B5",
+        "name": "ASH",
+        "display": "ASH",
+        "symbol": "ASH",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ash.svg"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash",
+              "chain_name": "migaloo"
+            },
+            "chain": {
+              "channel_id": "channel-86"
+            }
+          }
+        ]
+      },
+      {
         "description": "The permissioned staking asset for Noble Chain",
         "denom_units": [
           {
@@ -107297,6 +112724,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-251",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-1"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/E0687047EA2BDEFC10A211E27502C2A78441684F624B41FD2FCFDEFDFB5AA569",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-251",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -108101,6 +113565,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-263",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -108566,6 +114067,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-184",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-184",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
@@ -109740,6 +115278,43 @@ const asset_lists: AssetList[] = [
             }
           }
         ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-382",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
       }
     ]
   },
@@ -110209,6 +115784,43 @@ const asset_lists: AssetList[] = [
             "counterparty": {
               "channel_id": "channel-124",
               "base_denom": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+              "chain_name": "osmosis"
+            },
+            "chain": {
+              "channel_id": "channel-0"
+            }
+          }
+        ]
+      },
+      {
+        "description": "ERIS liquid staked OSMO",
+        "denom_units": [
+          {
+            "denom": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+            "exponent": 0,
+            "aliases": [
+              "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO"
+            ]
+          },
+          {
+            "denom": "ampOSMO",
+            "exponent": 6
+          }
+        ],
+        "address": "osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9",
+        "base": "ibc/AA054FD00F476B91C63F27F591B410CCC8F9DB1FC829B51353C51458E2817434",
+        "name": "ERIS Amplified OSMO",
+        "display": "ampOSMO",
+        "symbol": "ampOSMO",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amp.osmo.png"
+        },
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-124",
+              "base_denom": "factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO",
               "chain_name": "osmosis"
             },
             "chain": {
