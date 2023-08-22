@@ -557,6 +557,78 @@ exports[`getAssetLists 1`] = `
         "type_asset": "cw20",
       },
       {
+        "address": "juno1qly4zcmzr2gyxtze5yt9chv2srczwwunppxjfh",
+        "base": "ibc/AFAD662DEA3F4785C22C7B24098E371624AF5D651DF24488FF705F67BF2DAD80",
+        "denom_units": [
+          {
+            "aliases": [
+              "factory/juno1qly4zcmzr2gyxtze5yt9chv2srczwwunppxjfh/NEXX",
+            ],
+            "denom": "ibc/AFAD662DEA3F4785C22C7B24098E371624AF5D651DF24488FF705F67BF2DAD80",
+            "exponent": 0,
+          },
+          {
+            "denom": "nexx",
+            "exponent": 6,
+          },
+        ],
+        "display": "nexx",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/nexx.png",
+        },
+        "name": "NEXX GEN AI",
+        "symbol": "NEXX",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-37",
+            },
+            "counterparty": {
+              "base_denom": "factory/juno1qly4zcmzr2gyxtze5yt9chv2srczwwunppxjfh/NEXX",
+              "chain_name": "juno",
+              "channel_id": "channel-33",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "address": "juno1u805lv20qc6jy7c3ttre7nct6uyl20pfky5r7e",
+        "base": "ibc/9A7D7CCB2CC02750C70FF1A3B716486048F232029C6AAD4A500FAA58E212E5D6",
+        "denom_units": [
+          {
+            "aliases": [
+              "factory/juno1u805lv20qc6jy7c3ttre7nct6uyl20pfky5r7e/DGL",
+            ],
+            "denom": "ibc/9A7D7CCB2CC02750C70FF1A3B716486048F232029C6AAD4A500FAA58E212E5D6",
+            "exponent": 0,
+          },
+          {
+            "denom": "dgl",
+            "exponent": 6,
+          },
+        ],
+        "display": "dgl",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dgl.png",
+        },
+        "name": "Licorice",
+        "symbol": "DGL",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-37",
+            },
+            "counterparty": {
+              "base_denom": "factory/juno1u805lv20qc6jy7c3ttre7nct6uyl20pfky5r7e/DGL",
+              "chain_name": "juno",
+              "channel_id": "channel-33",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
         "address": "juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr",
         "base": "ibc/F41168F3687219CC7D83965B601BAAB30E61A6B4E268A5DE0C88522C700E6EB3",
         "coingecko_id": "neta",
