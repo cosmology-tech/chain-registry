@@ -40,14 +40,14 @@ const chain: Chain = {
   },
   codebase: {
     git_repo: 'https://github.com/CosmosContracts/juno',
-    recommended_version: 'v15.0.0',
-    compatible_versions: ['v15.0.0'],
-    cosmos_sdk_version: '0.45',
+    recommended_version: 'v16.0.0',
+    compatible_versions: ['v16.0.0'],
+    cosmos_sdk_version: '0.47.3',
     consensus: {
-      type: 'tendermint',
-      version: '0.34'
+      type: 'cometbft',
+      version: '0.34.2'
     },
-    cosmwasm_version: '0.30',
+    cosmwasm_version: '0.40.2',
     cosmwasm_enabled: true,
     genesis: {
       genesis_url: 'https://download.dimi.sh/juno-phoenix2-genesis.tar.gz'
@@ -79,6 +79,14 @@ const chain: Chain = {
         recommended_version: 'v15.0.0',
         proposal: 295,
         compatible_versions: ['v15.0.0'],
+        next_version_name: 'v16'
+      },
+      {
+        name: 'v16',
+        proposal: 311,
+        height: 9481382,
+        recommended_version: 'v16.0.0',
+        compatible_versions: ['v16.0.0'],
         next_version_name: ''
       }
     ]
@@ -206,6 +214,10 @@ const chain: Chain = {
         provider: 'PUPMØS'
       },
       {
+        address: 'https://rpc-juno.cosmos-spaces.cloud',
+        provider: 'Cosmos Spaces'
+      },
+      {
         address: 'https://rpc-juno-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
       },
@@ -280,6 +292,10 @@ const chain: Chain = {
       {
         address: 'https://juno-rpc.w3coins.io',
         provider: 'w3coins'
+      },
+      {
+        address: 'https://juno-rpc.publicnode.com',
+        provider: 'Allnodes.com ⚡️ Nodes & Staking'
       }
     ],
     rest: [
@@ -314,6 +330,10 @@ const chain: Chain = {
       {
         address: 'https://juno-api.polkachu.com',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://api-juno.cosmos-spaces.cloud',
+        provider: 'Cosmos Spaces'
       },
       {
         address: 'https://juno-api.kleomedes.network',
@@ -378,6 +398,10 @@ const chain: Chain = {
       {
         address: 'https://juno-api.w3coins.io',
         provider: 'w3coins'
+      },
+      {
+        address: 'https://juno-rest.publicnode.com',
+        provider: 'Allnodes.com ⚡️ Nodes & Staking'
       }
     ],
     grpc: [
@@ -406,6 +430,10 @@ const chain: Chain = {
         provider: 'kingnodes 👑'
       },
       {
+        address: 'grpc-juno.cosmos-spaces.cloud:1490',
+        provider: 'Cosmos Spaces'
+      },
+      {
         address: 'http://juno-grpc.stakeandrelax.net:12690',
         provider: 'Stake&Relax Validator 🦥'
       },
@@ -432,6 +460,10 @@ const chain: Chain = {
       {
         address: 'juno-grpc.w3coins.io:12690',
         provider: 'w3coins'
+      },
+      {
+        address: 'juno-grpc.publicnode.com:443',
+        provider: 'Allnodes.com ⚡️ Nodes & Staking'
       }
     ]
   },

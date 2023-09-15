@@ -8,9 +8,9 @@ export interface ChainRegistryFetcherOptions {
 }
 export declare class ChainRegistryFetcher implements ChainRegistry {
     urls: string[];
-    protected _asset_lists: AssetList[];
+    protected _assetLists: AssetList[];
     protected _chains: Chain[];
-    protected _ibc_data: IBCInfo[];
+    protected _ibcData: IBCInfo[];
     private chainInfoList;
     constructor(options?: ChainRegistryFetcherOptions);
     get chains(): Chain[];

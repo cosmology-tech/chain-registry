@@ -11,6 +11,14 @@ export interface LiquidStakeTrace {
     };
     provider: string;
 }
+export interface AdditionalMintageTrace {
+    type: 'additional-mintage';
+    counterparty: {
+        chain_name: string;
+        base_denom: string;
+    };
+    provider: string;
+}
 export interface SyntheicTrace {
     type: 'synthetic';
     counterparty: {
@@ -68,9 +76,16 @@ export interface IBCCw20Trace {
     chain: {
         port: string;
         channel_id: string;
+        path?: string;
     };
 }
-export declare type AssetTrace = IBCCw20Trace | IBCTrace | SyntheicTrace | LiquidStakeTrace | WrapTrace | BridgeTrace;
+export type AssetTrace = IBCCw20Trace | IBCTrace | SyntheicTrace | LiquidStakeTrace | WrapTrace | BridgeTrace | AdditionalMintageTrace;
+export interface LogoImage {
+    png?: string;
+    svg?: string;
+    jpeg?: string;
+    theme?: any;
+}
 export interface Asset {
     description?: string;
     type_asset?: string;
@@ -80,11 +95,8 @@ export interface Asset {
     name: string;
     display: string;
     symbol: string;
-    logo_URIs?: {
-        png?: string;
-        svg?: string;
-        jpeg?: string;
-    };
+    logo_URIs?: LogoImage;
+    images?: LogoImage[];
     coingecko_id?: string;
     keywords?: string[];
     traces?: AssetTrace[];
@@ -94,7 +106,7 @@ export interface Asset {
         dst_channel?: string;
     };
 }
-export declare type AssetList = {
+export type AssetList = {
     $schema?: string;
     chain_name: string;
     assets: Asset[];

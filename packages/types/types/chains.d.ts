@@ -1,6 +1,7 @@
 export interface Chain {
     $schema?: string;
     chain_name: string;
+    pre_fork_chain_name?: string;
     status: string;
     network_type: string;
     update_link?: string;
@@ -101,6 +102,7 @@ export interface Chain {
             'darwin/amd64'?: string;
             'darwin/arm64'?: string;
             'windows/amd64'?: string;
+            'windows/arm64'?: string;
         };
         cosmos_sdk_version?: string;
         consensus?: {
@@ -109,6 +111,7 @@ export interface Chain {
         };
         cosmwasm_version?: string;
         cosmwasm_enabled?: boolean;
+        cosmwasm_path?: string;
         ibc_go_version?: string;
         /**
          * List of IBC apps (usually corresponding to a ICS standard) which have been enabled on the network.
@@ -116,7 +119,8 @@ export interface Chain {
         ics_enabled?: ('ics20-1' | 'ics27-1' | 'mauth' | string)[];
         genesis?: {
             name?: string;
-            genesis_url: string;
+            genesis_url?: string;
+            ics_ccv_url?: string;
         };
         versions?: {
             /**
@@ -131,11 +135,13 @@ export interface Chain {
              * Block Height
              */
             height?: number;
+            proposal?: number;
             /**
              * [Optional] Name of the following version
              */
             next_version_name?: string;
             recommended_version?: string;
+            cosmwasm_path?: string;
             compatible_versions?: string[];
             cosmos_sdk_version?: string;
             consensus?: {
@@ -155,6 +161,7 @@ export interface Chain {
                 'darwin/amd64'?: string;
                 'darwin/arm64'?: string;
                 'windows/amd64'?: string;
+                'windows/arm64'?: string;
             };
         }[];
     };
@@ -209,4 +216,4 @@ export interface Chain {
         }[];
     };
 }
-export declare type Chains = Chain[];
+export type Chains = Chain[];

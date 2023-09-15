@@ -43,6 +43,154 @@ exports[`getAssetLists 1`] = `
         ],
       },
       {
+        "base": "ibc/115F68FBA220A028C6F6ED08EA0C1A9C8C52798B14FB66E6C89D5D8C06A524D4",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/05DB6975261B805B6F6A157A4386C627F8A70BF8118D411655EFEDCA82BFABA5",
+            ],
+            "denom": "ibc/115F68FBA220A028C6F6ED08EA0C1A9C8C52798B14FB66E6C89D5D8C06A524D4",
+            "exponent": 0,
+          },
+          {
+            "denom": "usdt",
+            "exponent": 6,
+          },
+        ],
+        "description": "Tether USDt on Akash",
+        "display": "usdt",
+        "name": "Tether USDt",
+        "symbol": "USDt",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-5",
+            },
+            "counterparty": {
+              "base_denom": "ibc/05DB6975261B805B6F6A157A4386C627F8A70BF8118D411655EFEDCA82BFABA5",
+              "chain_name": "akash",
+              "channel_id": "channel-6",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
+      },
+      {
+        "base": "ibc/4E7257D6B8EBFB10B5FF9092D992D9A11D001C8BB7D877134CE657647FF6AFAE",
+        "coingecko_id": "comdex",
+        "denom_units": [
+          {
+            "aliases": [
+              "ucmdx",
+            ],
+            "denom": "ibc/4E7257D6B8EBFB10B5FF9092D992D9A11D001C8BB7D877134CE657647FF6AFAE",
+            "exponent": 0,
+          },
+          {
+            "denom": "cmdx",
+            "exponent": 6,
+          },
+        ],
+        "description": "Native Token of Comdex Protocol",
+        "display": "cmdx",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg",
+        },
+        "name": "Comdex",
+        "symbol": "CMDX",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-71",
+            },
+            "counterparty": {
+              "base_denom": "ucmdx",
+              "chain_name": "comdex",
+              "channel_id": "channel-57",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/4F69220C2F5F70BA0B0B66B4534F7916C529EB8350BF5EDF2B8D56682D8F2C9C",
+        "coingecko_id": "",
+        "denom_units": [
+          {
+            "aliases": [
+              "uharbor",
+            ],
+            "denom": "ibc/4F69220C2F5F70BA0B0B66B4534F7916C529EB8350BF5EDF2B8D56682D8F2C9C",
+            "exponent": 0,
+          },
+          {
+            "denom": "harbor",
+            "exponent": 6,
+          },
+        ],
+        "description": "Governance Token of Harbor protocol on Comdex network",
+        "display": "harbor",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg",
+        },
+        "name": "Harbor",
+        "symbol": "HARBOR",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-71",
+            },
+            "counterparty": {
+              "base_denom": "uharbor",
+              "chain_name": "comdex",
+              "channel_id": "channel-57",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/F190D85E03B064A5BB7743B77394857D602BAAA1A4E8A2E8AFC227F4D3E9BECB",
+        "coingecko_id": "composite",
+        "denom_units": [
+          {
+            "aliases": [
+              "ucmst",
+            ],
+            "denom": "ibc/F190D85E03B064A5BB7743B77394857D602BAAA1A4E8A2E8AFC227F4D3E9BECB",
+            "exponent": 0,
+          },
+          {
+            "denom": "cmst",
+            "exponent": 6,
+          },
+        ],
+        "description": "Stable Token of Harbor protocol on Comdex network",
+        "display": "cmst",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg",
+        },
+        "name": "CMST",
+        "symbol": "CMST",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-71",
+            },
+            "counterparty": {
+              "base_denom": "ucmst",
+              "chain_name": "comdex",
+              "channel_id": "channel-57",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
         "base": "ibc/C8A74ABBE2AF892E15680D916A7C22130585CE5704F9B17A10F184A90D53BECA",
         "coingecko_id": "cosmos",
         "denom_units": [
@@ -81,6 +229,146 @@ exports[`getAssetLists 1`] = `
         ],
       },
       {
+        "base": "ibc/F0FD51B14D12832A869AE7DF39BCD0B2B32A11C579F123F770EEA6269DA6C67C",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/F04D72CF9B5D9C849BB278B691CDFA2241813327430EC9CDC83F8F4CA4CDC2B0",
+            ],
+            "denom": "ibc/F0FD51B14D12832A869AE7DF39BCD0B2B32A11C579F123F770EEA6269DA6C67C",
+            "exponent": 0,
+          },
+          {
+            "denom": "usdt",
+            "exponent": 6,
+          },
+        ],
+        "description": "Tether USDt on the Cosmos Hub",
+        "display": "usdt",
+        "name": "Tether USDt",
+        "symbol": "USDt",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-24",
+            },
+            "counterparty": {
+              "base_denom": "ibc/F04D72CF9B5D9C849BB278B691CDFA2241813327430EC9CDC83F8F4CA4CDC2B0",
+              "chain_name": "cosmoshub",
+              "channel_id": "channel-190",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
+      },
+      {
+        "base": "ibc/C0A9D2CA46B33B210EB01E3675ACF6976DD0253F8E7DFBA80AF8398F6FA1F0F1",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/4925E6ABA571A44D2BE0286D2D29AF42A294D0FF2BB16490149A1B26EAD33729",
+            ],
+            "denom": "ibc/C0A9D2CA46B33B210EB01E3675ACF6976DD0253F8E7DFBA80AF8398F6FA1F0F1",
+            "exponent": 0,
+          },
+        ],
+        "description": "FX on Cosmos Hub",
+        "display": "FX",
+        "name": "Function X",
+        "symbol": "FX",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-24",
+            },
+            "counterparty": {
+              "base_denom": "ibc/4925E6ABA571A44D2BE0286D2D29AF42A294D0FF2BB16490149A1B26EAD33729",
+              "chain_name": "cosmoshub",
+              "channel_id": "channel-190",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
+      },
+      {
+        "base": "ibc/25877BD1436C689E501A281CE82647CC9649EBFE0D38CB2AB0B8C17ACB9BD921",
+        "coingecko_id": "crescent-network",
+        "denom_units": [
+          {
+            "aliases": [
+              "ucre",
+            ],
+            "denom": "ibc/25877BD1436C689E501A281CE82647CC9649EBFE0D38CB2AB0B8C17ACB9BD921",
+            "exponent": 0,
+          },
+          {
+            "denom": "cre",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Crescent",
+        "display": "cre",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg",
+        },
+        "name": "Crescent",
+        "symbol": "CRE",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-68",
+            },
+            "counterparty": {
+              "base_denom": "ucre",
+              "chain_name": "crescent",
+              "channel_id": "channel-30",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/92818A7F38A90C0D2CFBA5409417F0A2AC1E4B46B2D4E4869DD96081EC39A874",
+        "coingecko_id": "liquid-staking-crescent",
+        "denom_units": [
+          {
+            "aliases": [
+              "ubcre",
+            ],
+            "denom": "ibc/92818A7F38A90C0D2CFBA5409417F0A2AC1E4B46B2D4E4869DD96081EC39A874",
+            "exponent": 0,
+          },
+          {
+            "denom": "bcre",
+            "exponent": 6,
+          },
+        ],
+        "description": "The bonded token of Crescent",
+        "display": "bcre",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg",
+        },
+        "name": "Bonded Crescent",
+        "symbol": "bCRE",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-68",
+            },
+            "counterparty": {
+              "base_denom": "ubcre",
+              "chain_name": "crescent",
+              "channel_id": "channel-30",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
         "base": "ibc/F53B622B0117ECCD0908C1F33ED71B846D9B0C888BE8A16C58098C0AB9497B0A",
         "coingecko_id": "crypto-com-chain",
         "denom_units": [
@@ -96,7 +384,7 @@ exports[`getAssetLists 1`] = `
             "exponent": 8,
           },
         ],
-        "description": "CRO coin is the token for the Crypto.com platform.",
+        "description": "CRO is the native token of the Crypto.org Chain, referred to as Native CRO.",
         "display": "cro",
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png",
@@ -411,6 +699,40 @@ exports[`getAssetLists 1`] = `
             "type": "ibc",
           },
         ],
+      },
+      {
+        "base": "ibc/DF1678DE660C411E6EE3779FBCA350E8561A009F50CC25D33D6FC93E2C388B17",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB",
+            ],
+            "denom": "ibc/DF1678DE660C411E6EE3779FBCA350E8561A009F50CC25D33D6FC93E2C388B17",
+            "exponent": 0,
+          },
+          {
+            "denom": "usdt",
+            "exponent": 6,
+          },
+        ],
+        "description": "Tether USDt on Injective",
+        "display": "usdt",
+        "name": "Tether USDt",
+        "symbol": "USDt",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-41",
+            },
+            "counterparty": {
+              "base_denom": "ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB",
+              "chain_name": "injective",
+              "channel_id": "channel-82",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
       },
       {
         "base": "ibc/5709B8339F05C7E37D27FCFEC18CEDBB0747309144C8B3C4A49C122F0F30B96B",
@@ -1058,6 +1380,40 @@ exports[`getAssetLists 1`] = `
         ],
       },
       {
+        "base": "ibc/FF37ECEEC52777A6E77B23642BEE542B5E7363696812BCE76E2A6891D63324C7",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB",
+            ],
+            "denom": "ibc/FF37ECEEC52777A6E77B23642BEE542B5E7363696812BCE76E2A6891D63324C7",
+            "exponent": 0,
+          },
+          {
+            "denom": "usdt",
+            "exponent": 6,
+          },
+        ],
+        "description": "Tether USDt on Osmosis",
+        "display": "usdt",
+        "name": "Tether USDt",
+        "symbol": "USDt",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
+      },
+      {
         "base": "ibc/E40F6BAB4FFBDB908F63366155A793AB6B42EEB4FCD856C1DF7C91BE7F252D61",
         "coingecko_id": "quicksilver",
         "denom_units": [
@@ -1240,6 +1596,44 @@ exports[`getAssetLists 1`] = `
             },
             "counterparty": {
               "base_denom": "uqosmo",
+              "chain_name": "quicksilver",
+              "channel_id": "channel-16",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/C3D3E318794D05796828C8C5AF7398BBDB042FF8E8589FAE83293744E77BAB56",
+        "denom_units": [
+          {
+            "aliases": [
+              "uqsomm",
+            ],
+            "denom": "ibc/C3D3E318794D05796828C8C5AF7398BBDB042FF8E8589FAE83293744E77BAB56",
+            "exponent": 0,
+          },
+          {
+            "aliases": [],
+            "denom": "qsomm",
+            "exponent": 6,
+          },
+        ],
+        "description": "Quicksilver Liquid Staked SOMM",
+        "display": "qsomm",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qsomm.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qsomm.svg",
+        },
+        "name": "Quicksilver Liquid Staked SOMM",
+        "symbol": "qSOMM",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-73",
+            },
+            "counterparty": {
+              "base_denom": "uqsomm",
               "chain_name": "quicksilver",
               "channel_id": "channel-16",
             },
@@ -1833,6 +2227,80 @@ exports[`getAssetLists 1`] = `
               "base_denom": "stucmdx",
               "chain_name": "stride",
               "channel_id": "channel-53",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/4D3EA0C8F70A255E6E84D4E60D39844A07899AFF32327E6D8B1DC277D6764B09",
+        "denom_units": [
+          {
+            "aliases": [
+              "stusomm",
+            ],
+            "denom": "ibc/4D3EA0C8F70A255E6E84D4E60D39844A07899AFF32327E6D8B1DC277D6764B09",
+            "exponent": 0,
+          },
+          {
+            "denom": "stsomm",
+            "exponent": 6,
+          },
+        ],
+        "display": "stsomm",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsomm.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsomm.svg",
+        },
+        "name": "stSOMM",
+        "symbol": "stSOMM",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-67",
+            },
+            "counterparty": {
+              "base_denom": "stusomm",
+              "chain_name": "stride",
+              "channel_id": "channel-53",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/16CB664A4DFCCC37C0EF0A0591AD0EF3BB93A0809A5B6BBC86F8F1533D5E4F58",
+        "coingecko_id": "umee",
+        "denom_units": [
+          {
+            "aliases": [
+              "uumee",
+            ],
+            "denom": "ibc/16CB664A4DFCCC37C0EF0A0591AD0EF3BB93A0809A5B6BBC86F8F1533D5E4F58",
+            "exponent": 0,
+          },
+          {
+            "denom": "umee",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Umee",
+        "display": "umee",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.svg",
+        },
+        "name": "Umee",
+        "symbol": "UMEE",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-81",
+            },
+            "counterparty": {
+              "base_denom": "uumee",
+              "chain_name": "umee",
+              "channel_id": "channel-51",
             },
             "type": "ibc",
           },
