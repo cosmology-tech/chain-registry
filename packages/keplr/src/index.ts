@@ -9,6 +9,10 @@ const getExplr = (chain: Chain): string => chain.explorers?.[0]?.url ?? '';
 
 const cleanVer = (ver: string) => {
   if (!semver.valid(ver)) {
+    // try to split by @ for repo@version
+    ver = ver.split("@").pop()
+    if (semver.valid(ver)) return ver
+    
     const spaces = ver.split('.').length;
     switch (spaces) {
       case 1:
