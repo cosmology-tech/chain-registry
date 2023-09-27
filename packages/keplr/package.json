@@ -74,8 +74,8 @@
   "dependencies": {
     "@babel/runtime": "^7.21.0",
     "@chain-registry/types": "^0.17.0",
-    "@keplr-wallet/cosmos": "0.11.57",
-    "@keplr-wallet/crypto": "0.11.57",
+    "@keplr-wallet/cosmos": "0.12.28",
+    "@keplr-wallet/crypto": "0.12.28",
     "semver": "^7.5.0"
   }
 }
