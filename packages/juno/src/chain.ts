@@ -512,6 +512,10 @@ const chain: Chain = {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/juno',
       account_page: 'https://stakeflow.io/juno/accounts/${accountAddress}'
+    },
+    {
+      kind: 'observatory',
+      url: 'https://observatory.zone/juno-network'
     }
   ]
 };

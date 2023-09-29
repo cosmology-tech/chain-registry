@@ -625,6 +625,10 @@ const chain: Chain = {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/osmosis',
       account_page: 'https://stakeflow.io/osmosis/accounts/${accountAddress}'
+    },
+    {
+      kind: 'observatory',
+      url: 'https://observatory.zone/osmosis'
     }
   ],
   keywords: ['dex']

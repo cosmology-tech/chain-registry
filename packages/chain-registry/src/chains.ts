@@ -111,6 +111,10 @@ const chains: Chain[] = [
         kind: 'ping.pub',
         url: 'https://ping.pub/EXAMPLE',
         tx_page: 'https://ping.pub/EXAMPLE/tx/${txHash}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/EXAMPLE'
       }
     ]
   },
@@ -826,6 +830,10 @@ const chains: Chain[] = [
         kind: 'Stakeflow',
         url: 'https://stakeflow.io/agoric',
         account_page: 'https://stakeflow.io/agoric/accounts/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/agoric'
       }
     ]
   },
@@ -1370,6 +1378,10 @@ const chains: Chain[] = [
         kind: 'ValidatorNode',
         url: 'https://explorer.validatornode.com/akash-network',
         tx_page: 'https://explorer.validatornode.com/akash-network/tx/${txHash}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/akash-network'
       }
     ]
   },
@@ -3003,6 +3015,10 @@ const chains: Chain[] = [
         kind: 'Stakeflow',
         url: 'https://stakeflow.io/axelar',
         account_page: 'https://stakeflow.io/axelar/accounts/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/axelar'
       }
     ]
   },
@@ -5861,6 +5877,10 @@ const chains: Chain[] = [
         kind: 'ScanRun',
         url: 'https://scanrun.io/c4e',
         tx_page: 'https://scanrun.io/c4e/transactions/${txHash}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/chain4energy'
       }
     ]
   },
@@ -6127,6 +6147,10 @@ const chains: Chain[] = [
         kind: 'ping.pub',
         url: 'https://ping.wildsage.io/cheqd',
         tx_page: 'https://ping.wildsage.io/cheqd/tx/${txHash}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/cheqd'
       }
     ],
     logo_URIs: {
@@ -8248,6 +8272,10 @@ const chains: Chain[] = [
         kind: 'Stakeflow',
         url: 'https://stakeflow.io/cosmos',
         account_page: 'https://stakeflow.io/cosmos/accounts/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/cosmos-hub'
       }
     ]
   },
@@ -8534,6 +8562,10 @@ const chains: Chain[] = [
         kind: 'Stakeflow',
         url: 'https://stakeflow.io/crescent',
         account_page: 'https://stakeflow.io/crescent/accounts/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/crescent'
       }
     ]
   },
@@ -11288,6 +11320,10 @@ const chains: Chain[] = [
         kind: 'Stakeflow',
         url: 'https://stakeflow.io/evmos',
         account_page: 'https://stakeflow.io/evmos/accounts/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/evmos'
       }
     ]
   },
@@ -13153,6 +13189,10 @@ const chains: Chain[] = [
         url: 'https://stakeflow.io/gravity-bridge',
         account_page:
           'https://stakeflow.io/gravity-bridge/accounts/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/gravity-bridge'
       }
     ]
   },
@@ -14545,6 +14585,10 @@ const chains: Chain[] = [
         url: 'https://stakeflow.io/injective',
         account_page:
           'https://stakeflow.io/injective/accounts/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/injective'
       }
     ]
   },
@@ -15669,6 +15713,10 @@ const chains: Chain[] = [
         kind: 'Stakeflow',
         url: 'https://stakeflow.io/juno',
         account_page: 'https://stakeflow.io/juno/accounts/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/juno-network'
       }
     ]
   },
@@ -16598,6 +16646,10 @@ const chains: Chain[] = [
         url: 'https://atomscan.com/kujira',
         tx_page: 'https://atomscan.com/kujira/transactions/${txHash}',
         account_page: 'https://atomscan.com/kujira/accounts/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/kujira'
       }
     ],
     logo_URIs: {
@@ -18191,6 +18243,10 @@ const chains: Chain[] = [
         url: 'https://ping.pub/mars',
         tx_page: 'https://ping.pub/mars/tx/${txHash}',
         account_page: 'https://ping.pub/mars/account/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/mars-hub'
       }
     ],
     logo_URIs: {
@@ -18884,6 +18940,10 @@ const chains: Chain[] = [
         url: 'https://atomscan.com/migaloo',
         tx_page: 'https://atomscan.com/migaloo/transactions/${txHash}',
         account_page: 'https://atomscan.com/migaloo/accounts/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/migaloo'
       }
     ]
   },
@@ -22087,6 +22147,10 @@ const chains: Chain[] = [
         kind: 'Stakeflow',
         url: 'https://stakeflow.io/osmosis',
         account_page: 'https://stakeflow.io/osmosis/accounts/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/osmosis'
       }
     ],
     keywords: ['dex']
@@ -22965,6 +23029,10 @@ const chains: Chain[] = [
         url: 'https://stakeflow.io/persistence',
         account_page:
           'https://stakeflow.io/persistence/accounts/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/persistence'
       }
     ]
   },
@@ -24572,6 +24640,10 @@ const chains: Chain[] = [
         url: 'https://explorer.theamsolutions.info/quicksilver-main/staking',
         tx_page:
           'https://explorer.theamsolutions.info/quicksilver-main/tx/${txHash}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/quicksilver'
       }
     ]
   },
@@ -25591,6 +25663,10 @@ const chains: Chain[] = [
         tx_page: 'https://atomscan.com/regen-network/transactions/${txHash}',
         account_page:
           'https://atomscan.com/regen-network/accounts/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/regen'
       }
     ],
     logo_URIs: {
@@ -26083,6 +26159,10 @@ const chains: Chain[] = [
         tx_page: 'https://atomscan.com/secret-network/transactions/${txHash}',
         account_page:
           'https://atomscan.com/secret-network/accounts/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/secret-network'
       }
     ]
   },
@@ -27668,6 +27748,10 @@ const chains: Chain[] = [
         tx_page: 'https://atomscan.com/sommelier/transactions/${txHash}',
         account_page:
           'https://atomscan.com/sommelier/accounts/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/sommelier'
       }
     ]
   },
@@ -28187,6 +28271,10 @@ const chains: Chain[] = [
         tx_page: 'https://starscan.net/stargaze-1/tx/${txHash}',
         account_page:
           'https://starscan.net/stargaze-1/address/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/stargaze'
       }
     ]
   },
@@ -28981,6 +29069,10 @@ const chains: Chain[] = [
         tx_page: 'https://explorer.stake-take.com/stride/tx/${txHash}',
         account_page:
           'https://explorer.stake-take.com/stride/account/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/stride'
       }
     ],
     logo_URIs: {
@@ -40281,6 +40373,10 @@ const chains: Chain[] = [
         tx_page: 'https://explorer.stake-take.com/umee/transactions/${txHash}',
         account_page:
           'https://explorer.stake-take.com/umee/account/${accountAddress}'
+      },
+      {
+        kind: 'observatory',
+        url: 'https://observatory.zone/umee'
       }
     ]
   },
