@@ -26958,7 +26958,7 @@ const chains: Chain[] = [
     website: 'https://www.shentu.technology/',
     pretty_name: 'Shentu',
     chain_id: 'shentu-2.2',
-    bech32_prefix: 'certik',
+    bech32_prefix: 'shentu',
     daemon_name: 'shentud',
     node_home: '$HOME/.shentud',
     key_algos: ['secp256k1'],
