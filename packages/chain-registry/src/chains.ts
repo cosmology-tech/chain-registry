@@ -38065,7 +38065,7 @@ const chains: Chain[] = [
     status: 'live',
     network_type: 'testnet',
     pretty_name: 'Source Testnet',
-    chain_id: 'source-testnet',
+    chain_id: 'sourcetest-1',
     bech32_prefix: 'source',
     daemon_name: 'sourced',
     node_home: '$HOME/.source',
@@ -38075,9 +38075,9 @@ const chains: Chain[] = [
       fee_tokens: [
         {
           denom: 'usource',
-          low_gas_price: 0.03,
-          average_gas_price: 0.04,
-          high_gas_price: 0.05
+          low_gas_price: 0.05,
+          average_gas_price: 0.075,
+          high_gas_price: 0.1
         }
       ]
     },
@@ -38090,108 +38090,371 @@ const chains: Chain[] = [
     },
     codebase: {
       git_repo: 'https://github.com/Source-Protocol-Cosmos/source',
-      recommended_version: 'v1.0.0',
-      compatible_versions: ['v1.0.0'],
-      cosmos_sdk_version: '0.45',
+      recommended_version: 'v3.0.0',
+      compatible_versions: ['v3.0.0'],
+      cosmos_sdk_version: '0.45.15',
       consensus: {
         type: 'tendermint',
         version: '0.34'
       },
-      cosmwasm_version: '0.25',
+      cosmwasm_version: '0.30',
       cosmwasm_enabled: true,
-      ibc_go_version: '2.2.0',
+      ibc_go_version: '4.3.0',
       genesis: {
         genesis_url:
-          'https://raw.githubusercontent.com/Source-Protocol-Cosmos/testnets/master/sourcechain-testnet/genesis.json'
+          'https://raw.githubusercontent.com/Source-Protocol-Cosmos/testnets/master/sourcetest-1/genesis.json'
       },
       versions: [
         {
-          name: 'v1.0.0',
-          recommended_version: 'v1.0.0',
-          compatible_versions: ['v1.0.0'],
-          cosmos_sdk_version: '0.45',
+          name: 'v3.0.0',
+          recommended_version: 'v3.0.0',
+          compatible_versions: ['v3.0.0'],
+          cosmos_sdk_version: '0.45.15',
           consensus: {
             type: 'tendermint',
             version: '0.34'
           },
-          cosmwasm_version: '0.25',
+          cosmwasm_version: '0.30',
           cosmwasm_enabled: true,
-          ibc_go_version: '2.2.0'
+          ibc_go_version: '4.3.0'
         }
       ]
     },
     peers: {
       seeds: [
         {
-          id: 'ebc272824924ea1a27ea3183dd0b9ba713494f83',
-          address: 'sourcechain-mainnet-seed.autostake.net:26976',
-          provider: 'autostake'
+          id: 'eca738b67fd23381f9a72717bea757c1d291ed2b',
+          address: 'source-testnet-seed.itrocket.net:24656',
+          provider: 'ITRocket'
         }
       ],
       persistent_peers: [
         {
-          id: '6ca675f9d949d5c9afc8849adf7b39bc7fccf74f',
-          address: '164.92.98.17:26656',
+          id: 'ace839c852739d1ea6e3675d30380fe085c1c23a',
+          address: '52.26.226.21:26656',
           provider: 'Source'
         },
         {
-          id: 'b02e2bd359623aeee2d4fad94d37af8b064508f6',
-          address: '167.235.224.141:26656',
-          provider: ''
+          id: 'a47f3b354e75478c0dfe22ad2b937ad07c9bcf3c',
+          address: 'source-testnet-peer.itrocket.net:24656',
+          provider: 'ITRocket'
         },
         {
-          id: 'bdf9b6ad38b803358e7fd99f35b14795ebcd8144',
-          address: '190.2.155.67:29656',
-          provider: ''
+          id: '8145d4d13511e7f89dbd257f51ed5d076941f12f',
+          address: '164.92.98.12:26656',
+          provider: 'Source'
         }
       ]
     },
     apis: {
       rpc: [
         {
-          address: 'https://rpc-t.source.nodestake.top',
-          provider: 'Nodestake'
+          address: 'https://source-testnet-rpc.itrocket.net:443',
+          provider: 'ITRocket'
         },
         {
-          address: 'https://rpc-source.nodeist.net',
-          provider: 'Nodeist'
-        },
-        {
-          address: 'https://source-testnet.rpc.kjnodes.com',
-          provider: 'kjnodes'
+          address: 'https://rpc-testnet-source.sr20de.xyz/',
+          provider: 'sr20de'
         }
       ],
       rest: [
         {
-          address: 'https://api-t.source.nodestake.top',
-          provider: 'Nodestake'
+          address: 'https://source-testnet-api.itrocket.net:443',
+          provider: 'ITRocket'
         },
         {
-          address: 'https://api-source.nodeist.net',
-          provider: 'Nodeist'
-        },
-        {
-          address: 'https://source-testnet.api.kjnodes.com',
-          provider: 'kjnodes'
+          address: 'https://api-testnet-source.sr20de.xyz/',
+          provider: 'sr20de'
         }
       ],
       grpc: [
         {
-          address: 'https://grpc-t.source.nodestake.top',
-          provider: 'nodestake'
+          address: 'source-testnet-grpc.itrocket.net:24090',
+          provider: 'ITRocket'
         }
       ]
     },
     explorers: [
       {
-        kind: 'Nodestake',
-        url: 'https://explorer.nodestake.top/source-testnet',
-        tx_page: 'https://explorer.nodestake.top/source-testnet/tx/${txHash}'
+        kind: 'ITRocket',
+        url: 'https://testnet.itrocket.net/source',
+        tx_page: 'https://testnet.itrocket.net/source/tx/${txHash}'
       },
       {
-        kind: 'kjnodes',
-        url: 'https://explorer.kjnodes.com/source-testnet',
-        tx_page: 'https://explorer.kjnodes.com/source-testnet/txs/${txHash}'
+        kind: 'Moonbridge',
+        url: 'https://explorer.moonbridge.team/source-test',
+        tx_page: 'https://explorer.moonbridge.team/source-test/txs/${txHash}'
+      }
+    ]
+  },
+  {
+    $schema: '../../chain.schema.json',
+    chain_name: 'source',
+    status: 'live',
+    network_type: 'mainnet',
+    pretty_name: 'Source',
+    chain_id: 'source-1',
+    bech32_prefix: 'source',
+    daemon_name: 'sourced',
+    node_home: '$HOME/.source',
+    key_algos: ['secp256k1'],
+    slip44: 118,
+    fees: {
+      fee_tokens: [
+        {
+          denom: 'usource',
+          low_gas_price: 0.05,
+          average_gas_price: 0.075,
+          high_gas_price: 0.1
+        }
+      ]
+    },
+    staking: {
+      staking_tokens: [
+        {
+          denom: 'usource'
+        }
+      ]
+    },
+    codebase: {
+      git_repo: 'https://github.com/Source-Protocol-Cosmos/source',
+      recommended_version: 'v3.0.0',
+      compatible_versions: ['v3.0.0'],
+      cosmos_sdk_version: '0.45.15',
+      consensus: {
+        type: 'tendermint',
+        version: '0.34'
+      },
+      cosmwasm_version: '0.30',
+      cosmwasm_enabled: true,
+      ibc_go_version: '4.3.0',
+      genesis: {
+        genesis_url:
+          'https://raw.githubusercontent.com/Source-Protocol-Cosmos/mainnet/master/source-1/genesis.json'
+      },
+      versions: [
+        {
+          name: 'v3.0.0',
+          recommended_version: 'v3.0.0',
+          compatible_versions: ['v3.0.0'],
+          cosmos_sdk_version: '0.45.15',
+          consensus: {
+            type: 'tendermint',
+            version: '0.34'
+          },
+          cosmwasm_version: '0.30',
+          cosmwasm_enabled: true,
+          ibc_go_version: '4.3.0'
+        }
+      ]
+    },
+    peers: {
+      seeds: [
+        {
+          "id": "7347b05f140e4ed5d3da7b26c754a486dc1d2ecd",
+          "address": "source-mainnet-seed.itrocket.net:32656",
+          "provider": "ITRocket"
+        },
+        {
+          "id": "ebc272824924ea1a27ea3183dd0b9ba713494f83",
+          "address": "source-mainnet-seed.autostake.com:27446",
+          "provider": "AutoStake 🛡️ Slash Protected"
+        },
+        {
+          "id": "738be29546d9504b3845d781b9dc35bc6f996c5f",
+          "address": "rpc.source.nodestake.top:666",
+          "provider": "NodeStake"
+        }
+      ],
+      persistent_peers: [
+        {
+          "id": "96d63849a529a15f037a28c276ea6e3ac2449695",
+          "address": "34.222.1.252:26656"
+        },
+        {
+          "id": "8a812024b8a5b4539878b03ac2f822655831ca5f",
+          "address": "source-mainnet-peer.itrocket.net:32656",
+          "provider": "ITRocket"
+        },
+        {
+          "id": "ebc272824924ea1a27ea3183dd0b9ba713494f83",
+          "address": "source-mainnet-peer.autostake.com:27446",
+          "provider": "AutoStake 🛡️ Slash Protected"
+        },
+        {
+          "id": " 3c729ffe80393abd430a7c723fab2e8aa60ffa46",
+          "address": "source.peers.stavr.tech:20056",
+          "provider": "🔥STAVR🔥"
+        },
+        {
+          "id": "bf1a4f212727debe13519362322d06d03a5d395b",
+          "address": "95.217.160.123:26656",
+          "provider": "NodeStake"
+        },
+        {
+          "id": "afc8fa287e2b6b46bbeba57dfcb4bd6dcab6b6a3",
+          "address": "88.99.208.54:28656",
+          "provider": "StakeTown"
+        },
+        {
+          "id": "7e153e83fbe2f5618fffbdfd803f70ee78ad797d",
+          "address": "rpc.source.indonode.net:12656",
+          "provider": "Indonode"
+        }
+      ]
+    },
+    apis: {
+      rpc: [
+        {
+          "address": "https://rpc.source.nodestake.top",
+          "provider": "NodeStake"
+        },
+        {
+          "address": "https://source.rpc.moonbridge.team/",
+          "provider": "MoonBridge"
+        },
+        {
+          "address": "https://carbon-mainnet-rpc.autostake.com:443",
+          "provider": "AutoStake 🛡️ Slash Protected"
+        },
+        {
+          "address": "https://source.rpc.m.stavr.tech",
+          "provider": "🔥STAVR🔥"
+        },
+        {
+          "address": "https://rpc-source.nodeist.net",
+          "provider": "Nodeist"
+        },
+        {
+          "address": "https://source-mainnet-rpc.itrocket.net:443",
+          "provider": "ITRocket"
+        },
+        {
+          "address": "https://rpc-source.sr20de.xyz:443",
+          "provider": "Sr20de"
+        },
+        {
+          "address": "https://source-rpc.stake-town.com",
+          "provider": "StakeTown"
+        },
+        {
+          "address": "https://rpc.source.tcnetwork.io",
+          "provider": "TC Network"
+        },
+        {
+          "address": "https://rpc.source.indonode.net",
+          "provider": "Indonode"
+        }
+      ],
+      rest: [
+        {
+          "address": "https://api.source.nodestake.top",
+          "provider": "NodeStake"
+        },
+        {
+          "address": "https://api-source.nodeist.net",
+          "provider": "Nodeist"
+        },
+        {
+          "address": "https://carbon-mainnet-lcd.autostake.com:443",
+          "provider": "AutoStake 🛡️ Slash Protected"
+        },
+        {
+          "address": "https://source.api.m.stavr.tech",
+          "provider": "🔥STAVR🔥"
+        },
+        {
+          "address": "https://source-mainnet-api.itrocket.net:443",
+          "provider": "ITRocket"
+        },
+        {
+          "address": "https://source.api.moonbridge.team/",
+          "provider": "MoonBridge"
+        },
+        {
+          "address": "https://api-source.sr20de.xyz",
+          "provider": "Sr20de"
+        },
+        {
+          "address": "https://source-api.stake-town.com",
+          "provider": "StakeTown"
+        },
+        {
+          "address": "https://rest.source.tcnetwork.io",
+          "provider": "TC Network"
+        },
+        {
+          "address": "https://api.source.indonode.net",
+          "provider": "Indonode"
+        }
+      ],
+      grpc: [
+        {
+          "address": "source-mainnet-grpc.itrocket.net:32090",
+          "provider": "ITRocket"
+        },
+        {
+          "address": "carbon-mainnet-grpc.autostake.com:443",
+          "provider": "AutoStake 🛡️ Slash Protected"
+        },
+        {
+          "address": "http://source.grpc.m.stavr.tech:9590",
+          "provider": "🔥STAVR🔥"
+        },
+        {
+          "address": "https://grpc-source.nodeist.net:443",
+          "provider": "Nodeist"
+        },
+        {
+          "address": "https://grpc.source.nodestake.top:443",
+          "provider": "NodeStake"
+        },
+        {
+          "address": "https://grpc-source.sr20de.xyz:443",
+          "provider": "Sr20de"
+        },
+        {
+          "address": "source-grpc.stake-town.com:443",
+          "provider": "StakeTown"
+        }
+      ]
+    },
+    explorers: [
+      {
+        "kind": "🔥STAVR🔥",
+        "url": "https://explorer.stavr.tech/Source-Mainnet/",
+        "tx_page": "https://explorer.stavr.tech/Source-Mainnet/tx/${txHash}"
+      },
+      {
+        "kind": "Nodeist",
+        "url": "https://exp.nodeist.net/source/",
+        "tx_page": "https://exp.nodeist.net/source/tx/${txHash}"
+      },
+      {
+        "kind": "MoonBridge",
+        "url": "https://explorer.moonbridge.team/source",
+        "tx_page": "https://explorer.moonbridge.team/source/tx/${txHash}",
+        "account_page": "https://explorer.moonbridge.team/source/accounts/${accountAddress}"
+      },
+      {
+        "kind": "NodeStake",
+        "url": "https://explorer.nodestake.top/source",
+        "tx_page": "https://explorer.nodestake.top/source/tx/${txHash}"
+      },
+      {
+        "kind": "Sr20de",
+        "url": "https://explorer.sr20de.xyz/Source-mainnet",
+        "tx_page": "https://explorer.sr20de.xyz/Source-mainnet/tx/${txHash}"
+      },
+      {
+        "kind": "TC Network",
+        "url": "https://explorer.tcnetwork.io/source",
+        "tx_page": "https://explorer.tcnetwork.io/source/transaction/${txHash}"
+      },
+      {
+        "kind": "Indonode",
+        "url": "https://explorer.indonode.net/source",
+        "tx_page": "https://explorer.indonode.net/source/tx/${txHash}"
       }
     ]
   },

@@ -20854,7 +20854,7 @@ const assets: AssetList[] = [
     chain_name: 'sourcetestnet',
     assets: [
       {
-        description: 'The native token of SOURCE Chain',
+        description: 'The native token of SOURCE Testnet',
         denom_units: [
           {
             denom: 'usource',
@@ -20874,6 +20874,34 @@ const assets: AssetList[] = [
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/sourcetestnet/images/source.svg'
         },
         coingecko_id: 'source-protocol'
+      }
+    ]
+  },
+  {
+    $schema: '../../assetlist.schema.json',
+    chain_name: 'source',
+    assets: [
+      {
+        description: 'The native token of SOURCE Network',
+        denom_units: [
+          {
+            denom: 'usource',
+            exponent: 0
+          },
+          {
+            denom: 'source',
+            exponent: 6
+          }
+        ],
+        base: 'usource',
+        name: 'Source',
+        display: 'source',
+        symbol: 'SOURCE',
+        logo_URIs: {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/sourcetestnet/images/source.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/sourcetestnet/images/source.svg'
+        },
+        coingecko_id: 'source'
       }
     ]
   },
