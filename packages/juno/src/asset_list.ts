@@ -41,6 +41,42 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'Tether USDt on Akash',
+      denom_units: [
+        {
+          denom:
+            'ibc/B2733C3AD2087E4D962571C24815FD9151B99A7AFFE61BFF93CFB9BC9EAD843D',
+          exponent: 0,
+          aliases: [
+            'ibc/05DB6975261B805B6F6A157A4386C627F8A70BF8118D411655EFEDCA82BFABA5'
+          ]
+        },
+        {
+          denom: 'usdt',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/B2733C3AD2087E4D962571C24815FD9151B99A7AFFE61BFF93CFB9BC9EAD843D',
+      name: 'Tether USDt',
+      display: 'usdt',
+      symbol: 'USDt',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-35',
+            base_denom:
+              'ibc/05DB6975261B805B6F6A157A4386C627F8A70BF8118D411655EFEDCA82BFABA5',
+            chain_name: 'akash'
+          },
+          chain: {
+            channel_id: 'channel-29'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Asset Mantle',
       denom_units: [
         {
@@ -1228,6 +1264,37 @@ const asset_list: AssetList = {
       ]
     },
     {
+      denom_units: [
+        {
+          denom:
+            'ibc/7585FBE66BF01F0341AD73A142B5815BA7CA47B96472DE90B8BCFD9C2E788BEF',
+          exponent: 0,
+          aliases: ['yieldeth-wei']
+        },
+        {
+          denom: 'YieldETH',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/7585FBE66BF01F0341AD73A142B5815BA7CA47B96472DE90B8BCFD9C2E788BEF',
+      name: 'Real Yield Eth',
+      display: 'YieldETH',
+      symbol: 'YieldETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'yieldeth-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The BCNA coin is the transactional token within the BitCanna network, serving the legal cannabis industry through its payment network, supply chain and trust network.',
       denom_units: [
@@ -2157,6 +2224,74 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'Tether USDt on the Cosmos Hub',
+      denom_units: [
+        {
+          denom:
+            'ibc/A377C4989C1735CDFBEEBF723D005E51AC893FF2B147BB18377C44234233D622',
+          exponent: 0,
+          aliases: [
+            'ibc/F04D72CF9B5D9C849BB278B691CDFA2241813327430EC9CDC83F8F4CA4CDC2B0'
+          ]
+        },
+        {
+          denom: 'usdt',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/A377C4989C1735CDFBEEBF723D005E51AC893FF2B147BB18377C44234233D622',
+      name: 'Tether USDt',
+      display: 'usdt',
+      symbol: 'USDt',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-207',
+            base_denom:
+              'ibc/F04D72CF9B5D9C849BB278B691CDFA2241813327430EC9CDC83F8F4CA4CDC2B0',
+            chain_name: 'cosmoshub'
+          },
+          chain: {
+            channel_id: 'channel-1'
+          }
+        }
+      ]
+    },
+    {
+      description: 'FX on Cosmos Hub',
+      denom_units: [
+        {
+          denom:
+            'ibc/E9C8AB9A4970104FB2DF8C897ECF5B3BC0915654EA3F3A5868AF726845395814',
+          exponent: 0,
+          aliases: [
+            'ibc/4925E6ABA571A44D2BE0286D2D29AF42A294D0FF2BB16490149A1B26EAD33729'
+          ]
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/E9C8AB9A4970104FB2DF8C897ECF5B3BC0915654EA3F3A5868AF726845395814',
+      name: 'Function X',
+      display: 'FX',
+      symbol: 'FX',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-207',
+            base_denom:
+              'ibc/4925E6ABA571A44D2BE0286D2D29AF42A294D0FF2BB16490149A1B26EAD33729',
+            chain_name: 'cosmoshub'
+          },
+          chain: {
+            channel_id: 'channel-1'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Crescent',
       denom_units: [
         {
@@ -2810,6 +2945,42 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'Tether USDt on Migaloo',
+      denom_units: [
+        {
+          denom:
+            'ibc/798996A01E9D8AD2C746845938E4F51DCB32235EF6C887A5C551F7210B2848DB',
+          exponent: 0,
+          aliases: [
+            'ibc/86A25A8A327164AE7C68A29B6ED745C7EEDC36E260A6666F33A6407BECEC4737'
+          ]
+        },
+        {
+          denom: 'usdt',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/798996A01E9D8AD2C746845938E4F51DCB32235EF6C887A5C551F7210B2848DB',
+      name: 'Tether USDt',
+      display: 'usdt',
+      symbol: 'USDt',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'ibc/86A25A8A327164AE7C68A29B6ED745C7EEDC36E260A6666F33A6407BECEC4737',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-210'
+          }
+        }
+      ]
+    },
+    {
       description: 'The permissioned staking asset for Noble Chain',
       denom_units: [
         {
@@ -3437,6 +3608,42 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'Tether USDt on Osmosis',
+      denom_units: [
+        {
+          denom:
+            'ibc/A291356F2AE84BEB344DEA335F837AAFBA43C873009D0AC9333E6E3B04AB1AA9',
+          exponent: 0,
+          aliases: [
+            'ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB'
+          ]
+        },
+        {
+          denom: 'usdt',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/A291356F2AE84BEB344DEA335F837AAFBA43C873009D0AC9333E6E3B04AB1AA9',
+      name: 'Tether USDt',
+      display: 'usdt',
+      symbol: 'USDt',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-42',
+            base_denom:
+              'ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-0'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The XPRT token is primarily a governance token for the Persistence chain.',
       denom_units: [
@@ -3737,6 +3944,43 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qosmo.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qosmo.svg'
+      }
+    },
+    {
+      description: 'Quicksilver Liquid Staked SOMM',
+      denom_units: [
+        {
+          denom:
+            'ibc/460C933DFA2166B36E8AE30C5DE719786C97764E65101BB8F3B2F88134090E2A',
+          exponent: 0,
+          aliases: ['uqsomm']
+        },
+        {
+          denom: 'qsomm',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/460C933DFA2166B36E8AE30C5DE719786C97764E65101BB8F3B2F88134090E2A',
+      name: 'Quicksilver Liquid Staked SOMM',
+      display: 'qsomm',
+      symbol: 'qSOMM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-22',
+            base_denom: 'uqsomm',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-215'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qsomm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qsomm.svg'
       }
     },
     {
@@ -4358,6 +4602,41 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stcmdx.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stcmdx.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/FC6613095B5F06948792FB5EA7F140A28FCC78C3714A37817D9B7D4C5AD8FF77',
+          exponent: 0,
+          aliases: ['stusomm']
+        },
+        {
+          denom: 'stsomm',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/FC6613095B5F06948792FB5EA7F140A28FCC78C3714A37817D9B7D4C5AD8FF77',
+      name: 'stSOMM',
+      display: 'stsomm',
+      symbol: 'stSOMM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-24',
+            base_denom: 'stusomm',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-139'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsomm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsomm.svg'
       }
     },
     {

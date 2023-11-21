@@ -306,6 +306,42 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'Tether USDt on Akash',
+      denom_units: [
+        {
+          denom:
+            'ibc/52AD86137A5B2DA0476CC925A2B1802ADDF4E51D517355AAA288F35CB1F29FDE',
+          exponent: 0,
+          aliases: [
+            'ibc/05DB6975261B805B6F6A157A4386C627F8A70BF8118D411655EFEDCA82BFABA5'
+          ]
+        },
+        {
+          denom: 'usdt',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/52AD86137A5B2DA0476CC925A2B1802ADDF4E51D517355AAA288F35CB1F29FDE',
+      name: 'Tether USDt',
+      display: 'usdt',
+      symbol: 'USDt',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-9',
+            base_denom:
+              'ibc/05DB6975261B805B6F6A157A4386C627F8A70BF8118D411655EFEDCA82BFABA5',
+            chain_name: 'akash'
+          },
+          chain: {
+            channel_id: 'channel-1'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Archway network',
       denom_units: [
         {
@@ -1570,6 +1606,37 @@ const asset_list: AssetList = {
       ]
     },
     {
+      denom_units: [
+        {
+          denom:
+            'ibc/FBB3FEF80ED2344D821D4F95C31DBFD33E4E31D5324CAD94EF756E67B749F668',
+          exponent: 0,
+          aliases: ['yieldeth-wei']
+        },
+        {
+          denom: 'YieldETH',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/FBB3FEF80ED2344D821D4F95C31DBFD33E4E31D5324CAD94EF756E67B749F668',
+      name: 'Real Yield Eth',
+      display: 'YieldETH',
+      symbol: 'YieldETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'yieldeth-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-208'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of BandChain',
       denom_units: [
         {
@@ -2461,6 +2528,42 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'Tether USDt on Canto',
+      denom_units: [
+        {
+          denom:
+            'ibc/9C79F4091CB315A4034AAB03DE2FBA2847367BC35746FC564768CBB221ECBEC3',
+          exponent: 0,
+          aliases: [
+            'ibc/FAFF3F7B2FE30447544A27910DF77069763CF25472BFCF63A9E7C81F0AD545AC'
+          ]
+        },
+        {
+          denom: 'usdt',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/9C79F4091CB315A4034AAB03DE2FBA2847367BC35746FC564768CBB221ECBEC3',
+      name: 'Tether USDt',
+      display: 'usdt',
+      symbol: 'USDt',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom:
+              'ibc/FAFF3F7B2FE30447544A27910DF77069763CF25472BFCF63A9E7C81F0AD545AC',
+            chain_name: 'canto'
+          },
+          chain: {
+            channel_id: 'channel-550'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native governance token of Carbon',
       denom_units: [
         {
@@ -3307,6 +3410,74 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'Tether USDt on the Cosmos Hub',
+      denom_units: [
+        {
+          denom:
+            'ibc/BB816E4CD95F1E1A446D7282C9F3D05F99D2E6B5EBA12E3AF6A8F8281DB84AEB',
+          exponent: 0,
+          aliases: [
+            'ibc/F04D72CF9B5D9C849BB278B691CDFA2241813327430EC9CDC83F8F4CA4CDC2B0'
+          ]
+        },
+        {
+          denom: 'usdt',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/BB816E4CD95F1E1A446D7282C9F3D05F99D2E6B5EBA12E3AF6A8F8281DB84AEB',
+      name: 'Tether USDt',
+      display: 'usdt',
+      symbol: 'USDt',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-141',
+            base_denom:
+              'ibc/F04D72CF9B5D9C849BB278B691CDFA2241813327430EC9CDC83F8F4CA4CDC2B0',
+            chain_name: 'cosmoshub'
+          },
+          chain: {
+            channel_id: 'channel-0'
+          }
+        }
+      ]
+    },
+    {
+      description: 'FX on Cosmos Hub',
+      denom_units: [
+        {
+          denom:
+            'ibc/EBBE6553941A1F0111A9163F885F7665417467FB630D68F5D4F15425C1E64FDE',
+          exponent: 0,
+          aliases: [
+            'ibc/4925E6ABA571A44D2BE0286D2D29AF42A294D0FF2BB16490149A1B26EAD33729'
+          ]
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/EBBE6553941A1F0111A9163F885F7665417467FB630D68F5D4F15425C1E64FDE',
+      name: 'Function X',
+      display: 'FX',
+      symbol: 'FX',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-141',
+            base_denom:
+              'ibc/4925E6ABA571A44D2BE0286D2D29AF42A294D0FF2BB16490149A1B26EAD33729',
+            chain_name: 'cosmoshub'
+          },
+          chain: {
+            channel_id: 'channel-0'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Crescent',
       denom_units: [
         {
@@ -3381,7 +3552,8 @@ const asset_list: AssetList = {
       ]
     },
     {
-      description: 'CRO coin is the token for the Crypto.com platform.',
+      description:
+        'CRO is the native token of the Crypto.org Chain, referred to as Native CRO.',
       denom_units: [
         {
           denom:
@@ -3560,6 +3732,42 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-128'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'The native staking and governance token of the Theta testnet version of the Dora Vota.',
+      denom_units: [
+        {
+          denom:
+            'ibc/672406ADE4EDFD8C5EA7A0D0DD0C37E431DA7BD8393A15CD2CFDE3364917EB2A',
+          exponent: 0,
+          aliases: ['peaka']
+        },
+        {
+          denom: 'DORA',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/672406ADE4EDFD8C5EA7A0D0DD0C37E431DA7BD8393A15CD2CFDE3364917EB2A',
+      name: 'Dora Vota',
+      display: 'DORA',
+      symbol: 'DORA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/doravota/images/doravota.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'peaka',
+            chain_name: 'doravota'
+          },
+          chain: {
+            channel_id: 'channel-2694'
           }
         }
       ]
@@ -4053,6 +4261,78 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'Tether USDt on Evmos',
+      denom_units: [
+        {
+          denom:
+            'ibc/85989009AC6C8F0F91E368FCBA640A5198AC5A93803561C0A9C39BB7CA55101A',
+          exponent: 0,
+          aliases: [
+            'ibc/95F4898F70B1E3765715808C57E955034419200A7BB6DDECBEAA5FD3AA3DF7D5'
+          ]
+        },
+        {
+          denom: 'usdt',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/85989009AC6C8F0F91E368FCBA640A5198AC5A93803561C0A9C39BB7CA55101A',
+      name: 'Tether USDt',
+      display: 'usdt',
+      symbol: 'USDt',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'ibc/95F4898F70B1E3765715808C57E955034419200A7BB6DDECBEAA5FD3AA3DF7D5',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-204'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The token of Neokingdom DAO.',
+      denom_units: [
+        {
+          denom:
+            'ibc/DEE262653B9DE39BCEF0493D47E0DFC4FE62F7F046CF38B9FDEFEBE98D149A71',
+          exponent: 0,
+          aliases: ['erc20/0x655ecB57432CC1370f65e5dc2309588b71b473A9']
+        },
+        {
+          denom: 'neok',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/DEE262653B9DE39BCEF0493D47E0DFC4FE62F7F046CF38B9FDEFEBE98D149A71',
+      name: 'Neokingdom DAO',
+      display: 'neok',
+      symbol: 'NEOK',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'erc20/0x655ecB57432CC1370f65e5dc2309588b71b473A9',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-204'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native staking and governance token of the Fetch Hub.',
       denom_units: [
         {
@@ -4127,6 +4407,39 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'The native staking token of the Function X',
+      denom_units: [
+        {
+          denom:
+            'ibc/2B30802A0B03F91E4E16D6175C9B70F2911377C1CAE9E50FF011C821465463F9',
+          exponent: 0,
+          aliases: ['FX']
+        }
+      ],
+      base: 'ibc/2B30802A0B03F91E4E16D6175C9B70F2911377C1CAE9E50FF011C821465463F9',
+      name: 'Function X',
+      display: 'FX',
+      symbol: 'FX',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.png'
+      },
+      coingecko_id: 'fx-coin',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-19',
+            base_denom: 'FX',
+            chain_name: 'fxcore'
+          },
+          chain: {
+            channel_id: 'channel-2716'
+          }
+        }
+      ]
+    },
+    {
       description: 'GLX is the staking token of the Galaxy Chain',
       denom_units: [
         {
@@ -4161,6 +4474,538 @@ const asset_list: AssetList = {
           }
         }
       ]
+    },
+    {
+      description: 'The native fee token of Gateway.',
+      denom_units: [
+        {
+          denom:
+            'ibc/2FE9F7929F8F170BE4BAAB9575913EF5727559C47FFDF925CAE171312A175EF5',
+          exponent: 0,
+          aliases: ['utest']
+        },
+        {
+          denom: 'test',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'sdk.coin',
+      base: 'ibc/2FE9F7929F8F170BE4BAAB9575913EF5727559C47FFDF925CAE171312A175EF5',
+      name: 'Test',
+      display: 'test',
+      symbol: 'TEST',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'utest',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-2186'
+          }
+        }
+      ]
+    },
+    {
+      description: 'the native staking token of Gateway.',
+      denom_units: [
+        {
+          denom:
+            'ibc/48BC9DB84957B3190E6D2172B83E54DA1E16F3276E3BA01E42BFD788889324DC',
+          exponent: 0,
+          aliases: ['uworm']
+        },
+        {
+          denom: 'worm',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'sdk.coin',
+      base: 'ibc/48BC9DB84957B3190E6D2172B83E54DA1E16F3276E3BA01E42BFD788889324DC',
+      name: 'Worm',
+      display: 'worm',
+      symbol: 'WORM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'uworm',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-2186'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Sui (Wormhole), SUI, factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/46YEtoSN1AcwgGSRoWruoS6bnVh8XpMp5aQTpKohCJYh',
+      denom_units: [
+        {
+          denom:
+            'ibc/B1C287C2701774522570010EEBCD864BCB7AB714711B3AA218699FDD75E832F5',
+          exponent: 0,
+          aliases: [
+            'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/46YEtoSN1AcwgGSRoWruoS6bnVh8XpMp5aQTpKohCJYh'
+          ]
+        },
+        {
+          denom: 'wormhole/46YEtoSN1AcwgGSRoWruoS6bnVh8XpMp5aQTpKohCJYh/8',
+          exponent: 8,
+          aliases: []
+        }
+      ],
+      address:
+        'wormhole19hlynxzedrlqv99v6qscww7d3crhl86qtd0vprpltg5g9xx6jk9q6ya33y',
+      base: 'ibc/B1C287C2701774522570010EEBCD864BCB7AB714711B3AA218699FDD75E832F5',
+      display: 'wormhole/46YEtoSN1AcwgGSRoWruoS6bnVh8XpMp5aQTpKohCJYh/8',
+      name: 'Sui (Wormhole)',
+      symbol: 'SUI',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/46YEtoSN1AcwgGSRoWruoS6bnVh8XpMp5aQTpKohCJYh',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-2186'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/sui/images/sui.svg'
+      }
+    },
+    {
+      description:
+        'Wrapped Ether (Wormhole), WETH, factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5BWqpR48Lubd55szM5i62zK7TFkddckhbT48yy6mNbDp',
+      denom_units: [
+        {
+          denom:
+            'ibc/62F82550D0B96522361C89B0DA1119DE262FBDFB25E5502BC5101B5C0D0DBAAC',
+          exponent: 0,
+          aliases: [
+            'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5BWqpR48Lubd55szM5i62zK7TFkddckhbT48yy6mNbDp'
+          ]
+        },
+        {
+          denom: 'wormhole/5BWqpR48Lubd55szM5i62zK7TFkddckhbT48yy6mNbDp/8',
+          exponent: 8,
+          aliases: []
+        }
+      ],
+      address:
+        'wormhole18csycs4vm6varkp00apuqlsm7v4twg8jsljk8wfdd7cghr7g4rtslwqndm',
+      base: 'ibc/62F82550D0B96522361C89B0DA1119DE262FBDFB25E5502BC5101B5C0D0DBAAC',
+      display: 'wormhole/5BWqpR48Lubd55szM5i62zK7TFkddckhbT48yy6mNbDp/8',
+      name: 'Wrapped Ether (Wormhole)',
+      symbol: 'WETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5BWqpR48Lubd55szM5i62zK7TFkddckhbT48yy6mNbDp',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-2186'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png'
+      }
+    },
+    {
+      description:
+        'Wrapped liquid staked Ether 2.0 (Wormhole), wstETH, factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5TSQTEhJ5Q6r1YqCmCxTRSPiV2pGx5rZUQf6g2XH4e1b',
+      denom_units: [
+        {
+          denom:
+            'ibc/BF75AE1500CB7EC458E91A11731F1B6AC1F1FE1FA937A88564955ED6A83CA2FB',
+          exponent: 0,
+          aliases: [
+            'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5TSQTEhJ5Q6r1YqCmCxTRSPiV2pGx5rZUQf6g2XH4e1b'
+          ]
+        },
+        {
+          denom: 'wormhole/5TSQTEhJ5Q6r1YqCmCxTRSPiV2pGx5rZUQf6g2XH4e1b/8',
+          exponent: 8,
+          aliases: []
+        }
+      ],
+      address:
+        'wormhole1gg6f95cymcfrfzhpek7cf5wl53t5kng52cd2m0krgdlu8k58vd8qezy8pt',
+      base: 'ibc/BF75AE1500CB7EC458E91A11731F1B6AC1F1FE1FA937A88564955ED6A83CA2FB',
+      display: 'wormhole/5TSQTEhJ5Q6r1YqCmCxTRSPiV2pGx5rZUQf6g2XH4e1b/8',
+      name: 'Wrapped liquid staked Ether 2.0 (Wormhole)',
+      symbol: 'wstETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5TSQTEhJ5Q6r1YqCmCxTRSPiV2pGx5rZUQf6g2XH4e1b',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-2186'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wsteth.svg'
+      }
+    },
+    {
+      description:
+        'Aptos Coin (Wormhole), APT, factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5wS2fGojbL9RhGEAeQBdkHPUAciYDxjDTMYvdf9aDn2r',
+      denom_units: [
+        {
+          denom:
+            'ibc/A4D176906C1646949574B48C1928D475F2DF56DE0AC04E1C99B08F90BC21ABDE',
+          exponent: 0,
+          aliases: [
+            'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5wS2fGojbL9RhGEAeQBdkHPUAciYDxjDTMYvdf9aDn2r'
+          ]
+        },
+        {
+          denom: 'wormhole/5wS2fGojbL9RhGEAeQBdkHPUAciYDxjDTMYvdf9aDn2r/8',
+          exponent: 8,
+          aliases: []
+        }
+      ],
+      address:
+        'wormhole1f9sxjn0qu8xylcpzlvnhrefnatndqxnrajfrnr5h97hegnmsdqhsh6juc0',
+      base: 'ibc/A4D176906C1646949574B48C1928D475F2DF56DE0AC04E1C99B08F90BC21ABDE',
+      display: 'wormhole/5wS2fGojbL9RhGEAeQBdkHPUAciYDxjDTMYvdf9aDn2r/8',
+      name: 'Aptos Coin (Wormhole)',
+      symbol: 'APT',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5wS2fGojbL9RhGEAeQBdkHPUAciYDxjDTMYvdf9aDn2r',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-2186'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/aptos/images/aptos.svg'
+      }
+    },
+    {
+      description:
+        'Tether USD (Wormhole), USDT, factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/8iuAc6DSeLvi2JDUtwJxLytsZT8R19itXebZsNReLLNi',
+      denom_units: [
+        {
+          denom:
+            'ibc/2108F2D81CBE328F371AD0CEF56691B18A86E08C3651504E42487D9EE92DDE9C',
+          exponent: 0,
+          aliases: [
+            'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/8iuAc6DSeLvi2JDUtwJxLytsZT8R19itXebZsNReLLNi'
+          ]
+        },
+        {
+          denom: 'wormhole/8iuAc6DSeLvi2JDUtwJxLytsZT8R19itXebZsNReLLNi/6',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      address:
+        'wormhole1w27ekqvvtzfanfxnkw4jx2f8gdfeqwd3drkee3e64xat6phwjg0savgmhw',
+      base: 'ibc/2108F2D81CBE328F371AD0CEF56691B18A86E08C3651504E42487D9EE92DDE9C',
+      display: 'wormhole/8iuAc6DSeLvi2JDUtwJxLytsZT8R19itXebZsNReLLNi/6',
+      name: 'Tether USD (Wormhole)',
+      symbol: 'USDT',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/8iuAc6DSeLvi2JDUtwJxLytsZT8R19itXebZsNReLLNi',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-2186'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+      }
+    },
+    {
+      description:
+        'Wrapped SOL (Wormhole), SOL, factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/8sYgCzLRJC3J7qPn2bNbx6PiGcarhyx8rBhVaNnfvHCA',
+      denom_units: [
+        {
+          denom:
+            'ibc/1E43D59E565D41FB4E54CA639B838FFD5BCFC20003D330A56CB1396231AA1CBA',
+          exponent: 0,
+          aliases: [
+            'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/8sYgCzLRJC3J7qPn2bNbx6PiGcarhyx8rBhVaNnfvHCA'
+          ]
+        },
+        {
+          denom: 'wormhole/8sYgCzLRJC3J7qPn2bNbx6PiGcarhyx8rBhVaNnfvHCA/8',
+          exponent: 8,
+          aliases: []
+        }
+      ],
+      address:
+        'wormhole1wn625s4jcmvk0szpl85rj5azkfc6suyvf75q6vrddscjdphtve8sca0pvl',
+      base: 'ibc/1E43D59E565D41FB4E54CA639B838FFD5BCFC20003D330A56CB1396231AA1CBA',
+      display: 'wormhole/8sYgCzLRJC3J7qPn2bNbx6PiGcarhyx8rBhVaNnfvHCA/8',
+      name: 'Wrapped SOL (Wormhole)',
+      symbol: 'SOL',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/8sYgCzLRJC3J7qPn2bNbx6PiGcarhyx8rBhVaNnfvHCA',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-2186'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol.svg'
+      }
+    },
+    {
+      description:
+        'Bonk (Wormhole), Bonk, factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/95mnwzvJZJ3fKz77xfGN2nR5to9pZmH8YNvaxgLgw5AR',
+      denom_units: [
+        {
+          denom:
+            'ibc/CA3733CB0071F480FAE8EF0D9C3D47A49C6589144620A642BBE0D59A293D110E',
+          exponent: 0,
+          aliases: [
+            'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/95mnwzvJZJ3fKz77xfGN2nR5to9pZmH8YNvaxgLgw5AR'
+          ]
+        },
+        {
+          denom: 'wormhole/95mnwzvJZJ3fKz77xfGN2nR5to9pZmH8YNvaxgLgw5AR/5',
+          exponent: 5,
+          aliases: []
+        }
+      ],
+      address:
+        'wormhole10qt8wg0n7z740ssvf3urmvgtjhxpyp74hxqvqt7z226gykuus7eq9mpu8u',
+      base: 'ibc/CA3733CB0071F480FAE8EF0D9C3D47A49C6589144620A642BBE0D59A293D110E',
+      display: 'wormhole/95mnwzvJZJ3fKz77xfGN2nR5to9pZmH8YNvaxgLgw5AR/5',
+      name: 'Bonk (Wormhole)',
+      symbol: 'Bonk',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/95mnwzvJZJ3fKz77xfGN2nR5to9pZmH8YNvaxgLgw5AR',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-2186'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/bonk.png'
+      }
+    },
+    {
+      description:
+        'Wrapped BTC (Wormhole), WBTC, factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/BGkuAcga2WArUghF8L6kt6uCAhAzrxmn1QcbQqi5r5bd',
+      denom_units: [
+        {
+          denom:
+            'ibc/E4CD61E1FA3EB04EF1BF924D676AB9FD55E84A0DCF4E78C11CCA0E14E5B42672',
+          exponent: 0,
+          aliases: [
+            'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/BGkuAcga2WArUghF8L6kt6uCAhAzrxmn1QcbQqi5r5bd'
+          ]
+        },
+        {
+          denom: 'wormhole/BGkuAcga2WArUghF8L6kt6uCAhAzrxmn1QcbQqi5r5bd/8',
+          exponent: 8,
+          aliases: []
+        }
+      ],
+      address:
+        'wormhole1nz0r0au8aj6dc00wmm3ufy4g4k86rjzlr8wkf92cktdlps5lgfcqxnx9yk',
+      base: 'ibc/E4CD61E1FA3EB04EF1BF924D676AB9FD55E84A0DCF4E78C11CCA0E14E5B42672',
+      display: 'wormhole/BGkuAcga2WArUghF8L6kt6uCAhAzrxmn1QcbQqi5r5bd/8',
+      name: 'Wrapped BTC (Wormhole)',
+      symbol: 'WBTC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/BGkuAcga2WArUghF8L6kt6uCAhAzrxmn1QcbQqi5r5bd',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-2186'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg'
+      }
+    },
+    {
+      description:
+        'tBTC v2 (Wormhole), tBTC, factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/BhqTYfQogyt7jX7cx7x8uHEQP1x9fdtdBZtK4Swghgpw',
+      denom_units: [
+        {
+          denom:
+            'ibc/6207D35D2C08F2162575C3C4BFD524226E50639121A273045F1B393AF67DCEB3',
+          exponent: 0,
+          aliases: [
+            'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/BhqTYfQogyt7jX7cx7x8uHEQP1x9fdtdBZtK4Swghgpw'
+          ]
+        },
+        {
+          denom: 'wormhole/BhqTYfQogyt7jX7cx7x8uHEQP1x9fdtdBZtK4Swghgpw/8',
+          exponent: 8,
+          aliases: []
+        }
+      ],
+      address:
+        'wormhole1nu9wf9dw384attnpu0pwfet5fajn05w2ex4r07mghvk3xcwrt2yq5uutp5',
+      base: 'ibc/6207D35D2C08F2162575C3C4BFD524226E50639121A273045F1B393AF67DCEB3',
+      display: 'wormhole/BhqTYfQogyt7jX7cx7x8uHEQP1x9fdtdBZtK4Swghgpw/8',
+      name: 'tBTC v2 (Wormhole)',
+      symbol: 'tBTC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/BhqTYfQogyt7jX7cx7x8uHEQP1x9fdtdBZtK4Swghgpw',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-2186'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/tbtc.svg'
+      }
+    },
+    {
+      description:
+        'Dai Stablecoin (Wormhole), DAI, factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/EKiMEqDnPKokFGcSXDvGMk6Gt1BJ6BC7BDZzTmEpWLH1',
+      denom_units: [
+        {
+          denom:
+            'ibc/898ACF6F5DEBF535103BBD52E3E5B70A311AD097B198A152483F69290B4210C0',
+          exponent: 0,
+          aliases: [
+            'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/EKiMEqDnPKokFGcSXDvGMk6Gt1BJ6BC7BDZzTmEpWLH1'
+          ]
+        },
+        {
+          denom: 'wormhole/EKiMEqDnPKokFGcSXDvGMk6Gt1BJ6BC7BDZzTmEpWLH1/8',
+          exponent: 8,
+          aliases: []
+        }
+      ],
+      address:
+        'wormhole1chejx4qqtvwxy6684yrsmf6pylancxqhk3vsmtleg5ta3zrffljqfscg87',
+      base: 'ibc/898ACF6F5DEBF535103BBD52E3E5B70A311AD097B198A152483F69290B4210C0',
+      display: 'wormhole/EKiMEqDnPKokFGcSXDvGMk6Gt1BJ6BC7BDZzTmEpWLH1/8',
+      name: 'Dai Stablecoin (Wormhole)',
+      symbol: 'DAI',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/EKiMEqDnPKokFGcSXDvGMk6Gt1BJ6BC7BDZzTmEpWLH1',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-2186'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
+      }
+    },
+    {
+      description:
+        'USD Coin (Wormhole), USDC, factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/GGh9Ufn1SeDGrhzEkMyRKt5568VbbxZK2yvWNsd6PbXt',
+      denom_units: [
+        {
+          denom:
+            'ibc/6B99DB46AA9FF47162148C1726866919E44A6A5E0274B90912FD17E19A337695',
+          exponent: 0,
+          aliases: [
+            'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/GGh9Ufn1SeDGrhzEkMyRKt5568VbbxZK2yvWNsd6PbXt'
+          ]
+        },
+        {
+          denom: 'wormhole/GGh9Ufn1SeDGrhzEkMyRKt5568VbbxZK2yvWNsd6PbXt/6',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      address:
+        'wormhole1utjx3594tlvfw4375esgu72wa4sdgf0q7x4ye27husf5kvuzp5rsr72gdq',
+      base: 'ibc/6B99DB46AA9FF47162148C1726866919E44A6A5E0274B90912FD17E19A337695',
+      display: 'wormhole/GGh9Ufn1SeDGrhzEkMyRKt5568VbbxZK2yvWNsd6PbXt/6',
+      name: 'USD Coin (Wormhole)',
+      symbol: 'USDC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/GGh9Ufn1SeDGrhzEkMyRKt5568VbbxZK2yvWNsd6PbXt',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-2186'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+      }
     },
     {
       description:
@@ -4600,6 +5445,42 @@ const asset_list: AssetList = {
           counterparty: {
             channel_id: 'channel-8',
             base_denom: 'inj',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-122'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Tether USDt on Injective',
+      denom_units: [
+        {
+          denom:
+            'ibc/11C458479F66BF6422B845ACC06F8E797D6395E0628BAFBF19075A7222D3C078',
+          exponent: 0,
+          aliases: [
+            'ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB'
+          ]
+        },
+        {
+          denom: 'usdt',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/11C458479F66BF6422B845ACC06F8E797D6395E0628BAFBF19075A7222D3C078',
+      name: 'Tether USDt',
+      display: 'usdt',
+      symbol: 'USDt',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom:
+              'ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB',
             chain_name: 'injective'
           },
           chain: {
@@ -5358,6 +6239,80 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'Blend Token',
+      denom_units: [
+        {
+          denom:
+            'ibc/F04A87E82B85B396E433A6C1FCB115230DD5D33F6BEFFBC702E37280BA6B1B1E',
+          exponent: 0,
+          aliases: [
+            'factory/kujira1slueerjz7mx9jp45u3y0rjwtvhcf8a68wf2mjt/ublend'
+          ]
+        },
+        {
+          denom: 'blend',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/F04A87E82B85B396E433A6C1FCB115230DD5D33F6BEFFBC702E37280BA6B1B1E',
+      name: 'BLEND',
+      display: 'blend',
+      symbol: 'BLEND',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/blend.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'factory/kujira1slueerjz7mx9jp45u3y0rjwtvhcf8a68wf2mjt/ublend',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-259'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Tether USDt on Kujira',
+      denom_units: [
+        {
+          denom:
+            'ibc/BBF2032AC75DB827DE022DC15BBAF36FEA514759BB0D67CFB394DC761E525BF4',
+          exponent: 0,
+          aliases: [
+            'ibc/20014F963CC9E6488B299622F87B60C6DE71632864859EC08B4753478DAB2BB8'
+          ]
+        },
+        {
+          denom: 'usdt',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/BBF2032AC75DB827DE022DC15BBAF36FEA514759BB0D67CFB394DC761E525BF4',
+      name: 'Tether USDt',
+      display: 'usdt',
+      symbol: 'USDt',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'ibc/20014F963CC9E6488B299622F87B60C6DE71632864859EC08B4753478DAB2BB8',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-259'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native utility token of the KYVE network.',
       denom_units: [
         {
@@ -5952,6 +6907,42 @@ const asset_list: AssetList = {
             channel_id: 'channel-5',
             base_denom:
               'factory/migaloo1erul6xyq0gk6ws98ncj7lnq9l4jn4gnnu9we73gdz78yyl2lr7qqrvcgup/ash',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-642'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Tether USDt on Migaloo',
+      denom_units: [
+        {
+          denom:
+            'ibc/826E9CA855EE3DA8AEC5F807DAFA82BBD7A0975CF7ADA5FA50D58AC0F4F3A61D',
+          exponent: 0,
+          aliases: [
+            'ibc/86A25A8A327164AE7C68A29B6ED745C7EEDC36E260A6666F33A6407BECEC4737'
+          ]
+        },
+        {
+          denom: 'usdt',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/826E9CA855EE3DA8AEC5F807DAFA82BBD7A0975CF7ADA5FA50D58AC0F4F3A61D',
+      name: 'Tether USDt',
+      display: 'usdt',
+      symbol: 'USDt',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom:
+              'ibc/86A25A8A327164AE7C68A29B6ED745C7EEDC36E260A6666F33A6407BECEC4737',
             chain_name: 'migaloo'
           },
           chain: {
@@ -6711,6 +7702,42 @@ const asset_list: AssetList = {
     },
     {
       description:
+        'The native staking and governance token of the Passage chain.',
+      denom_units: [
+        {
+          denom:
+            'ibc/208B2F137CDE510B44C41947C045CFDC27F996A9D990EA64460BDD5B3DBEB2ED',
+          exponent: 0,
+          aliases: ['upasg']
+        },
+        {
+          denom: 'pasg',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/208B2F137CDE510B44C41947C045CFDC27F996A9D990EA64460BDD5B3DBEB2ED',
+      name: 'Passage',
+      display: 'pasg',
+      symbol: 'PASG',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'upasg',
+            chain_name: 'passage'
+          },
+          chain: {
+            channel_id: 'channel-2494'
+          }
+        }
+      ]
+    },
+    {
+      description:
         'The XPRT token is primarily a governance token for the Persistence chain.',
       denom_units: [
         {
@@ -7236,6 +8263,43 @@ const asset_list: AssetList = {
       }
     },
     {
+      description: 'Quicksilver Liquid Staked SOMM',
+      denom_units: [
+        {
+          denom:
+            'ibc/EAF76AD1EEF7B16D167D87711FB26ABE881AC7D9F7E6D0CF313D5FA530417208',
+          exponent: 0,
+          aliases: ['uqsomm']
+        },
+        {
+          denom: 'qsomm',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/EAF76AD1EEF7B16D167D87711FB26ABE881AC7D9F7E6D0CF313D5FA530417208',
+      name: 'Quicksilver Liquid Staked SOMM',
+      display: 'qsomm',
+      symbol: 'qSOMM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'uqsomm',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-522'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qsomm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qsomm.svg'
+      }
+    },
+    {
       description: 'The native currency of the Realio Network.',
       denom_units: [
         {
@@ -7516,13 +8580,50 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.svg'
       },
-      coingecko_id: 'sei',
+      coingecko_id: 'sei-network',
       traces: [
         {
           type: 'ibc',
           counterparty: {
             channel_id: 'channel-0',
             base_denom: 'usei',
+            chain_name: 'sei'
+          },
+          chain: {
+            channel_id: 'channel-782'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'OIN Token ($OIN) is a groundbreaking digital asset developed on the $SEI Blockchain. It transcends being merely a cryptocurrency; $OIN stands as a robust store of value, symbolizing the future of decentralized finance and its potential to reshape the crypto landscape.',
+      denom_units: [
+        {
+          denom: 'factory/sei12q0zv3c4cd9jkupn0krazdycc5ftw9wzt9vmhu/OIN',
+          exponent: 0
+        },
+        {
+          denom: 'oin',
+          exponent: 6
+        }
+      ],
+      address: 'sei1thgp6wamxwqt7rthfkeehktmq0ujh5kspluw6w',
+      base: 'ibc/98B3DBF1FA79C4C14CC5F08F62ACD5498560FCB515F677526FD200D54EA048B6',
+      name: 'OIN STORE OF VALUE',
+      display: 'oin',
+      symbol: 'OIN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oin.png'
+      },
+      coingecko_id: '',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'factory/sei12q0zv3c4cd9jkupn0krazdycc5ftw9wzt9vmhu/OIN',
             chain_name: 'sei'
           },
           chain: {
@@ -8309,8 +9410,42 @@ const asset_list: AssetList = {
       }
     },
     {
-      description:
-        'Tori token (TORI) is the Teritoti Network’s native utility token, used as the primary means to govern, secure the blockchain, incentivize ecosystem contributors and use the various Teritori dApp features.',
+      denom_units: [
+        {
+          denom:
+            'ibc/5A0060579D24FBE5268BEA74C3281E7FE533D361C41A99307B4998FEC611E46B',
+          exponent: 0,
+          aliases: ['stusomm']
+        },
+        {
+          denom: 'stsomm',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/5A0060579D24FBE5268BEA74C3281E7FE533D361C41A99307B4998FEC611E46B',
+      name: 'stSOMM',
+      display: 'stsomm',
+      symbol: 'stSOMM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'stusomm',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-326'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsomm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsomm.svg'
+      }
+    },
+    {
+      description: 'The native token of Teritori',
       denom_units: [
         {
           denom:
