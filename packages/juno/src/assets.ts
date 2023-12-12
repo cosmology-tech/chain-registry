@@ -23,7 +23,13 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
       },
-      coingecko_id: 'juno-network'
+      coingecko_id: 'juno-network',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
+        }
+      ]
     },
     {
       denom_units: [
@@ -55,7 +61,21 @@ const assets: AssetList = {
             path: 'transfer/channel-1/uatom'
           }
         }
-      ]
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'cosmoshub',
+            base_denom: 'uatom'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+      }
     },
     {
       description: 'The native token cw20 for Neta on Juno Chain',
@@ -81,7 +101,13 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/neta.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/neta.svg'
       },
-      coingecko_id: 'neta'
+      coingecko_id: 'neta',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/neta.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/neta.svg'
+        }
+      ]
     },
     {
       description: 'The native token cw20 for Marble DAO on Juno Chain',
@@ -107,7 +133,13 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.svg'
       },
-      coingecko_id: 'marble'
+      coingecko_id: 'marble',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.svg'
+        }
+      ]
     },
     {
       description:
@@ -134,7 +166,13 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.svg'
       },
-      coingecko_id: 'hope-galaxy'
+      coingecko_id: 'hope-galaxy',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.svg'
+        }
+      ]
     },
     {
       description:
@@ -161,7 +199,13 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.svg'
       },
-      coingecko_id: 'racoon'
+      coingecko_id: 'racoon',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.svg'
+        }
+      ]
     },
     {
       description: 'The native token of Marble DEX on Juno Chain',
@@ -186,7 +230,13 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/block.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/block.svg'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/block.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/block.svg'
+        }
+      ]
     },
     {
       description: 'The DAO token to build consensus among Hong Kong People',
@@ -208,7 +258,13 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dhk.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dhk.svg'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dhk.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dhk.svg'
+        }
+      ]
     },
     {
       description: 'Token governance for Junoswap',
@@ -231,10 +287,16 @@ const assets: AssetList = {
       display: 'raw',
       symbol: 'RAW',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.svg',
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.svg'
       },
-      coingecko_id: 'junoswap-raw-dao'
+      coingecko_id: 'junoswap-raw-dao',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.svg'
+        }
+      ]
     },
     {
       description:
@@ -259,11 +321,16 @@ const assets: AssetList = {
       symbol: 'ASVT',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/asvt.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/asvt.png'
+        }
+      ]
     },
     {
       description:
-        'IBC HNS is HNS, coin of Handshake, decentralized root namesystem, but wrapped to cosmos for IBC support by Another.Software through Juno netowrk.',
+        'IBC HNS is HNS, coin of Handshake, decentralized root namesystem, but wrapped to cosmos for IBC support by Another.Software through Juno network.',
       type_asset: 'cw20',
       address:
         'juno1ur4jx0sxchdevahep7fwq28yk4tqsrhshdtylz46yka3uf6kky5qllqp4k',
@@ -284,7 +351,12 @@ const assets: AssetList = {
       symbol: 'HNS',
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hns.svg'
-      }
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hns.svg'
+        }
+      ]
     },
     {
       description: 'DAO dedicated to building tools on the Juno Network',
@@ -308,7 +380,12 @@ const assets: AssetList = {
       symbol: 'JOE',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/joe.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/joe.png'
+        }
+      ]
     },
     {
       description: 'Governance Token for Digital Land Acquisition DAO',
@@ -333,7 +410,13 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg'
+        }
+      ]
     },
     {
       description: 'DeFi gaming platform built on Juno',
@@ -358,7 +441,13 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
+        }
+      ]
     },
     {
       description: 'Gelotto Year 1 Grand Prize Token',
@@ -383,7 +472,13 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/gkey.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/gkey.svg'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/gkey.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/gkey.svg'
+        }
+      ]
     },
     {
       description: 'The native token cw20 for BlackHole on Juno Chain',
@@ -408,7 +503,13 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hole.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hole.svg'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hole.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hole.svg'
+        }
+      ]
     },
     {
       description: 'Staking derivative seJUNO for staked JUNO',
@@ -434,7 +535,13 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.svg'
       },
-      coingecko_id: 'stakeeasy-juno-derivative'
+      coingecko_id: 'stakeeasy-juno-derivative',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.svg'
+        }
+      ]
     },
     {
       description: 'Staking derivative bJUNO for staked JUNO',
@@ -460,7 +567,13 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.svg'
       },
-      coingecko_id: 'stakeeasy-bjuno'
+      coingecko_id: 'stakeeasy-bjuno',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.svg'
+        }
+      ]
     },
     {
       description:
@@ -486,7 +599,13 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/solar.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/solar.svg'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/solar.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/solar.svg'
+        }
+      ]
     },
     {
       description: 'StakeEasy governance token',
@@ -512,7 +631,12 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/seasy.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/seasy.svg'
       },
-      coingecko_id: 'seasy'
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/seasy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/seasy.svg'
+        }
+      ]
     },
     {
       description: 'The native token cw20 for MuseDAO on Juno Chain',
@@ -536,7 +660,12 @@ const assets: AssetList = {
       symbol: 'MUSE',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/muse.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/muse.png'
+        }
+      ]
     },
     {
       description: 'The native token cw20 for Loop Finance on Juno Chain',
@@ -561,7 +690,12 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/loop.png'
       },
-      coingecko_id: 'loop'
+      coingecko_id: 'loop',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/loop.png'
+        }
+      ]
     },
     {
       description: 'The native token cw20 for Fanfury on Juno Chain',
@@ -586,7 +720,12 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/fanfury.png'
       },
-      coingecko_id: 'fanfury'
+      coingecko_id: 'fanfury',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/fanfury.png'
+        }
+      ]
     },
     {
       description: 'The native token cw20 for PHMN on Juno Chain',
@@ -612,7 +751,13 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/phmn.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/phmn.svg'
       },
-      coingecko_id: 'posthuman'
+      coingecko_id: 'posthuman',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/phmn.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/phmn.svg'
+        }
+      ]
     },
     {
       description: 'The native token cw20 for Hopers on Juno Chain',
@@ -635,10 +780,16 @@ const assets: AssetList = {
       display: 'hopers',
       symbol: 'HOPERS',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.svg',
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.svg'
       },
-      coingecko_id: 'hopers-io '
+      coingecko_id: 'hopers-io ',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.svg'
+        }
+      ]
     },
     {
       description: 'RED',
@@ -662,7 +813,12 @@ const assets: AssetList = {
       symbol: 'RED',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/red.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/red.png'
+        }
+      ]
     },
     {
       description: 'BLUE',
@@ -686,7 +842,12 @@ const assets: AssetList = {
       symbol: 'BLUE',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/blue.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/blue.png'
+        }
+      ]
     },
     {
       description: 'WYND DAO Governance Token',
@@ -709,9 +870,15 @@ const assets: AssetList = {
       display: 'wynd',
       symbol: 'WYND',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wynd.svg',
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wynd.png'
-      }
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wynd.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wynd.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wynd.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wynd.svg'
+        }
+      ]
     },
     {
       description: 'Bored APE IBC club token',
@@ -735,7 +902,12 @@ const assets: AssetList = {
       symbol: 'BANANA',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/banana.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/banana.png'
+        }
+      ]
     },
     {
       description: 'nRide Token',
@@ -758,9 +930,15 @@ const assets: AssetList = {
       display: 'nride',
       symbol: 'NRIDE',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/nride.svg',
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/nride.png'
-      }
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/nride.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/nride.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/nride.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/nride.svg'
+        }
+      ]
     },
     {
       description: 'Signal Art and Gaming on Juno',
@@ -784,7 +962,12 @@ const assets: AssetList = {
       symbol: 'SGNL',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sgnl.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sgnl.png'
+        }
+      ]
     },
     {
       description:
@@ -809,7 +992,12 @@ const assets: AssetList = {
       symbol: 'JAPE',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/jape.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/jape.png'
+        }
+      ]
     },
     {
       description:
@@ -834,7 +1022,12 @@ const assets: AssetList = {
       symbol: 'CATOM',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/catom.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/catom.png'
+        }
+      ]
     },
     {
       description:
@@ -859,7 +1052,12 @@ const assets: AssetList = {
       symbol: 'HOWL',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/howl.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/howl.png'
+        }
+      ]
     },
     {
       description:
@@ -884,7 +1082,12 @@ const assets: AssetList = {
       symbol: 'FOX',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/fox.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/fox.png'
+        }
+      ]
     },
     {
       description: 'Evmos Guardians governance token.',
@@ -908,7 +1111,12 @@ const assets: AssetList = {
       symbol: 'GRDN',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/guardian.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/guardian.png'
+        }
+      ]
     },
     {
       description: 'Mini Punks Token',
@@ -933,7 +1141,13 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/mnpu.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/mnpu.svg'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/mnpu.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/mnpu.svg'
+        }
+      ]
     },
     {
       description: 'Kleomedes Token',
@@ -957,7 +1171,12 @@ const assets: AssetList = {
       symbol: 'KLEO',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/kleomedes.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/kleomedes.png'
+        }
+      ]
     },
     {
       description: 'Sikoba Governance Token',
@@ -980,9 +1199,15 @@ const assets: AssetList = {
       display: 'sikoba',
       symbol: 'SKOJ',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sikoba.svg',
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sikoba.png'
-      }
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sikoba.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sikoba.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sikoba.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sikoba.svg'
+        }
+      ]
     },
     {
       description: 'Shiba Cosmos',
@@ -1006,7 +1231,12 @@ const assets: AssetList = {
       symbol: 'SHIBAC',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/shibacosmos.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/shibacosmos.png'
+        }
+      ]
     },
     {
       description: 'Celestims',
@@ -1030,7 +1260,12 @@ const assets: AssetList = {
       symbol: 'CLST',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/celestims.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/celestims.png'
+        }
+      ]
     },
     {
       description:
@@ -1055,7 +1290,12 @@ const assets: AssetList = {
       symbol: 'WATR',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/watr.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/watr.png'
+        }
+      ]
     },
     {
       description: 'An innovative DAO dedicated to housing the most vulnerable',
@@ -1079,7 +1319,12 @@ const assets: AssetList = {
       symbol: 'CASA',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/casa.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/casa.png'
+        }
+      ]
     },
     {
       description:
@@ -1104,7 +1349,12 @@ const assets: AssetList = {
       symbol: 'SUMMIT',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/summit.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/summit.png'
+        }
+      ]
     },
     {
       description:
@@ -1129,7 +1379,12 @@ const assets: AssetList = {
       symbol: 'MANNA',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/manna.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/manna.png'
+        }
+      ]
     },
     {
       description: 'Social Impact DAO focused on youth empowerment',
@@ -1153,7 +1408,12 @@ const assets: AssetList = {
       symbol: 'EMPWR',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/empwr.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/empwr.png'
+        }
+      ]
     },
     {
       description: 'Join us in fighting against world hunger',
@@ -1177,7 +1437,12 @@ const assets: AssetList = {
       symbol: 'MIDDLE',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/middle.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/middle.png'
+        }
+      ]
     },
     {
       description:
@@ -1202,7 +1467,12 @@ const assets: AssetList = {
       symbol: 'SUNSET',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sunset.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sunset.png'
+        }
+      ]
     },
     {
       description:
@@ -1227,7 +1497,12 @@ const assets: AssetList = {
       symbol: 'TREE',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/livingtree.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/livingtree.png'
+        }
+      ]
     },
     {
       description: "Evmos Guardians' Invaders DAO token.",
@@ -1251,7 +1526,12 @@ const assets: AssetList = {
       symbol: 'INVDRS',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/invdrs.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/invdrs.png'
+        }
+      ]
     },
     {
       description: 'Apemos',
@@ -1275,7 +1555,12 @@ const assets: AssetList = {
       symbol: 'APEMOS',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/apemos.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/apemos.png'
+        }
+      ]
     },
     {
       description: 'The First Doge on Osmosis',
@@ -1299,7 +1584,12 @@ const assets: AssetList = {
       symbol: 'OSDOGE',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/osdoge.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/osdoge.png'
+        }
+      ]
     },
     {
       description: 'Doge Apr',
@@ -1323,7 +1613,12 @@ const assets: AssetList = {
       symbol: 'DOGA',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/doga.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/doga.png'
+        }
+      ]
     },
     {
       description: 'Osmo Pepe',
@@ -1347,7 +1642,12 @@ const assets: AssetList = {
       symbol: 'PEPE',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/pepe.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/pepe.png'
+        }
+      ]
     },
     {
       description: 'Catmos',
@@ -1371,7 +1671,12 @@ const assets: AssetList = {
       symbol: 'CATMOS',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/catmos.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/catmos.png'
+        }
+      ]
     },
     {
       description: 'Spacer',
@@ -1395,7 +1700,12 @@ const assets: AssetList = {
       symbol: 'SPACER',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/spacer.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/spacer.png'
+        }
+      ]
     },
     {
       description: 'Light: LumenX community DAO treasury token',
@@ -1419,7 +1729,12 @@ const assets: AssetList = {
       symbol: 'LIGHT',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/light.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/light.png'
+        }
+      ]
     },
     {
       description: 'Mille: the 1000th token on osmosis',
@@ -1443,7 +1758,12 @@ const assets: AssetList = {
       symbol: 'MILE',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/mille.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/mille.png'
+        }
+      ]
     },
     {
       description: 'Void',
@@ -1467,7 +1787,12 @@ const assets: AssetList = {
       symbol: 'VOID',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/void.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/void.png'
+        }
+      ]
     },
     {
       description: 'Silica',
@@ -1491,7 +1816,12 @@ const assets: AssetList = {
       symbol: 'SLCA',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/silica.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/silica.png'
+        }
+      ]
     },
     {
       description: 'Pepec',
@@ -1515,7 +1845,12 @@ const assets: AssetList = {
       symbol: 'PEPEC',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/pepec.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/pepec.png'
+        }
+      ]
     },
     {
       description: 'Palantin',
@@ -1539,7 +1874,12 @@ const assets: AssetList = {
       symbol: 'PLTN',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/pltn.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/pltn.png'
+        }
+      ]
     },
     {
       description: 'Propose. Vote. Build.',
@@ -1564,7 +1904,13 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/yfd.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/yfd.svg'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/yfd.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/yfd.svg'
+        }
+      ]
     },
     {
       denom_units: [
@@ -1584,7 +1930,12 @@ const assets: AssetList = {
       symbol: 'NEXX',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/nexx.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/nexx.png'
+        }
+      ]
     },
     {
       denom_units: [
@@ -1604,7 +1955,70 @@ const assets: AssetList = {
       symbol: 'DGL',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dgl.png'
-      }
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dgl.png'
+        }
+      ]
+    },
+    {
+      description: 'ERIS liquid staked JUNO',
+      type_asset: 'cw20',
+      address:
+        'juno1a0khag6cfzu5lrwazmyndjgvlsuk7g4vn9jd8ceym8f4jf6v2l9q6d348a',
+      denom_units: [
+        {
+          denom:
+            'cw20:juno1a0khag6cfzu5lrwazmyndjgvlsuk7g4vn9jd8ceym8f4jf6v2l9q6d348a',
+          exponent: 0
+        },
+        {
+          denom: 'ampJUNO',
+          exponent: 6
+        }
+      ],
+      base: 'cw20:juno1a0khag6cfzu5lrwazmyndjgvlsuk7g4vn9jd8ceym8f4jf6v2l9q6d348a',
+      name: 'ERIS Amplified JUNO',
+      display: 'ampJUNO',
+      symbol: 'ampJUNO',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/ampjuno.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/ampjuno.svg'
+        }
+      ]
+    },
+    {
+      description: 'BITS - Native token of Bitswift Cash',
+      type_asset: 'cw20',
+      address:
+        'juno14fz92ehqt37e096xr95kmy8nc0kz803uezxtg4fwx7agjjma86sqm8mg3h',
+      denom_units: [
+        {
+          denom:
+            'cw20:juno14fz92ehqt37e096xr95kmy8nc0kz803uezxtg4fwx7agjjma86sqm8mg3h',
+          exponent: 0
+        },
+        {
+          denom: 'bits',
+          exponent: 8
+        }
+      ],
+      base: 'cw20:juno14fz92ehqt37e096xr95kmy8nc0kz803uezxtg4fwx7agjjma86sqm8mg3h',
+      name: 'BITS',
+      display: 'bits',
+      symbol: 'BITS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bits.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bits.png'
+        }
+      ]
     },
     {
       description: 'The native token cw20 for Neta on Juno Chain',

@@ -40,8 +40,8 @@ const chain: Chain = {
   },
   codebase: {
     git_repo: 'https://github.com/CosmosContracts/juno',
-    recommended_version: 'v16.0.0',
-    compatible_versions: ['v16.0.0'],
+    recommended_version: 'v17.1.1',
+    compatible_versions: ['v17.0.0', 'v17.1.1'],
     cosmos_sdk_version: '0.47.3',
     consensus: {
       type: 'cometbft',
@@ -85,8 +85,16 @@ const chain: Chain = {
         name: 'v16',
         proposal: 311,
         height: 9481382,
-        recommended_version: 'v16.0.0',
-        compatible_versions: ['v16.0.0'],
+        recommended_version: 'v16.0.2',
+        compatible_versions: ['v16.0.0', 'v16.0.2'],
+        next_version_name: 'v17'
+      },
+      {
+        name: 'v17',
+        proposal: 317,
+        height: 10078449,
+        recommended_version: 'v17.1.1',
+        compatible_versions: ['v17.0.0', 'v17.1.1'],
         next_version_name: ''
       }
     ]
@@ -95,6 +103,8 @@ const chain: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
   },
+  description:
+    'Juno is a completely community owned and operated smart contract platform.',
   peers: {
     seeds: [
       {
@@ -122,24 +132,14 @@ const chain: Chain = {
         provider: 'Golden Ratio Staking'
       },
       {
-        id: 'e1b058e5cfa2b836ddaa496b10911da62dcf182e',
-        address: 'juno-seed-de.allnodes.me:26656',
-        provider: 'Allnodes.com ⚡️ Nodes & Staking'
-      },
-      {
-        id: 'e726816f42831689eab9378d5d577f1d06d25716',
-        address: 'juno-seed-us.allnodes.me:26656',
-        provider: 'Allnodes.com ⚡️ Nodes & Staking'
+        id: '8542cd7e6bf9d260fef543bc49e59be5a3fa9074',
+        address: 'seed.publicnode.com:26656',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
         id: 'ebc272824924ea1a27ea3183dd0b9ba713494f83',
         address: 'juno-mainnet-seed.autostake.com:27136',
         provider: 'AutoStake 🛡️ Slash Protected'
-      },
-      {
-        id: '70fcee92283edc02340289b2a74e4ab1a0203848',
-        address: 'seed-juno.freshstaking.com:39656',
-        provider: 'FreshSTAKING'
       },
       {
         id: '47d942718533d36823e16b9502c035ca9f318ef4',
@@ -150,6 +150,11 @@ const chain: Chain = {
         id: '509f6dbae3133a9df177edea051b31e1210b117e',
         address: 'seed-juno-01.stakeflow.io:2307',
         provider: 'Stakeflow'
+      },
+      {
+        id: '77c33f62d34c20a0e795240f4548ab741ea558d9',
+        address: '138.201.21.121:24956',
+        provider: 'Validatrium'
       }
     ],
     persistent_peers: [
@@ -163,11 +168,6 @@ const chain: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        id: '70fcee92283edc02340289b2a74e4ab1a0203848',
-        address: 'seed-juno.freshstaking.com:39656',
-        provider: 'FreshSTAKING'
-      },
-      {
         id: '3ee2034cf0180e4d50f7b3ed952472add3316faf',
         address: 'juno.peer.stavr.tech:1066',
         provider: '🔥STAVR🔥'
@@ -176,6 +176,16 @@ const chain: Chain = {
         id: '509f6dbae3133a9df177edea051b31e1210b117e',
         address: 'peer-juno-01.stakeflow.io:2307',
         provider: 'Stakeflow'
+      },
+      {
+        id: '2d447001642d1a455f7539eaf55c0bcbba0e567c',
+        address: '88.99.208.54:33656',
+        provider: 'StakeTown'
+      },
+      {
+        id: '77c33f62d34c20a0e795240f4548ab741ea558d9',
+        address: '138.201.21.121:24956',
+        provider: 'Validatrium'
       }
     ]
   },
@@ -230,14 +240,6 @@ const chain: Chain = {
         provider: 'Kleomedes'
       },
       {
-        address: 'https://rpc.juno.interbloc.org',
-        provider: 'Interbloc'
-      },
-      {
-        address: 'https://juno.rpc.stakin-nodes.com',
-        provider: 'Stakin'
-      },
-      {
         address: 'https://juno-rpc.icycro.org',
         provider: 'IcyCRO 🧊'
       },
@@ -258,28 +260,8 @@ const chain: Chain = {
         provider: 'Stake&Relax Validator 🦥'
       },
       {
-        address: 'https://juno-mainnet-rpc.autostake.com:443',
-        provider: 'AutoStake 🛡️ Slash Protected'
-      },
-      {
-        address: 'http://rpc-juno.freshstaking.com:39657',
-        provider: 'FreshSTAKING'
-      },
-      {
         address: 'https://rpc-juno.architectnodes.com',
         provider: 'Architect Nodes'
-      },
-      {
-        address: 'https://juno.rpc.interchain.ivaldilabs.xyz',
-        provider: 'ivaldilabs'
-      },
-      {
-        address: 'http://167.235.211.168:26657',
-        provider: 'CommunityStaking'
-      },
-      {
-        address: 'https://juno.rpc.silknodes.io',
-        provider: 'Silk Nodes'
       },
       {
         address: 'https://rpc-juno-01.stakeflow.io',
@@ -294,8 +276,16 @@ const chain: Chain = {
         provider: 'w3coins'
       },
       {
-        address: 'https://juno-rpc.publicnode.com',
-        provider: 'Allnodes.com ⚡️ Nodes & Staking'
+        address: 'https://juno-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://juno-rpc.stake-town.com',
+        provider: 'StakeTown'
+      },
+      {
+        address: 'https://rpc-juno.mainnet.validatrium.club:443',
+        provider: 'Validatrium'
       }
     ],
     rest: [
@@ -340,14 +330,6 @@ const chain: Chain = {
         provider: 'Kleomedes'
       },
       {
-        address: 'https://api.juno.interbloc.org',
-        provider: 'Interbloc'
-      },
-      {
-        address: 'https://juno.rest.stakin-nodes.com',
-        provider: 'Stakin'
-      },
-      {
         address: 'https://api.juno.bh.rocks',
         provider: 'BlockHunters 🎯'
       },
@@ -368,22 +350,6 @@ const chain: Chain = {
         provider: 'Architect Nodes'
       },
       {
-        address: 'https://juno-mainnet-lcd.autostake.com:443',
-        provider: 'AutoStake 🛡️ Slash Protected'
-      },
-      {
-        address: 'https://juno.rest.interchain.ivaldilabs.xyz',
-        provider: 'ivaldilabs'
-      },
-      {
-        address: 'http://167.235.211.168:1317',
-        provider: 'CommunityStaking'
-      },
-      {
-        address: 'https://juno.api.silknodes.io',
-        provider: 'Silk Nodes'
-      },
-      {
         address: 'https://rest-juno.goldenratiostaking.net',
         provider: 'Golden Ratio Staking'
       },
@@ -401,7 +367,11 @@ const chain: Chain = {
       },
       {
         address: 'https://juno-rest.publicnode.com',
-        provider: 'Allnodes.com ⚡️ Nodes & Staking'
+        provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://juno-api.stake-town.com',
+        provider: 'StakeTown'
       }
     ],
     grpc: [
@@ -422,15 +392,11 @@ const chain: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'juno.grpc.stakin-nodes.com:443',
-        provider: 'Stakin'
-      },
-      {
         address: 'grpc-juno.kingnodes.com:443',
         provider: 'kingnodes 👑'
       },
       {
-        address: 'grpc-juno.cosmos-spaces.cloud:1490',
+        address: 'grpc-juno.cosmos-spaces.cloud:4830',
         provider: 'Cosmos Spaces'
       },
       {
@@ -446,10 +412,6 @@ const chain: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'juno.grpc.interchain.ivaldilabs.xyz:443',
-        provider: 'ivaldilabs'
-      },
-      {
         address: 'http://167.235.211.168:9091',
         provider: 'CommunityStaking'
       },
@@ -463,16 +425,24 @@ const chain: Chain = {
       },
       {
         address: 'juno-grpc.publicnode.com:443',
-        provider: 'Allnodes.com ⚡️ Nodes & Staking'
+        provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'juno-grpc.stake-town.com:443',
+        provider: 'StakeTown'
+      },
+      {
+        address: '138.201.21.121:24990',
+        provider: 'Validatrium'
       }
     ]
   },
   explorers: [
     {
-      kind: 'EZ Staking Tools',
-      url: 'https://ezstaking.tools/juno',
-      tx_page: 'https://ezstaking.tools/juno/txs/${txHash}',
-      account_page: 'https://ezstaking.tools/juno/account/${accountAddress}'
+      kind: 'EZ Staking',
+      url: 'https://app.ezstaking.io/juno',
+      tx_page: 'https://app.ezstaking.io/juno/txs/${txHash}',
+      account_page: 'https://app.ezstaking.io/juno/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
@@ -487,8 +457,8 @@ const chain: Chain = {
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/juno',
-      tx_page: 'https://www.mintscan.io/juno/txs/${txHash}',
-      account_page: 'https://www.mintscan.io/juno/account/${accountAddress}'
+      tx_page: 'https://www.mintscan.io/juno/transactions/${txHash}',
+      account_page: 'https://www.mintscan.io/juno/accounts/${accountAddress}'
     },
     {
       kind: 'atomscan',
@@ -512,6 +482,12 @@ const chain: Chain = {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/juno',
       account_page: 'https://stakeflow.io/juno/accounts/${accountAddress}'
+    }
+  ],
+  images: [
+    {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
     }
   ]
 };

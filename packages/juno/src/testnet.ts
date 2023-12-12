@@ -114,6 +114,10 @@ const testnet: Chain = {
         provider: 'Polkachu'
       },
       {
+        address: 'https://juno.api.t.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://uni-api.reece.sh',
         provider: 'Reecepbcups'
       }
@@ -127,11 +131,18 @@ const testnet: Chain = {
   },
   explorers: [
     {
-      kind: 'EZ Staking Tools',
-      url: 'https://testnet.ezstaking.tools/juno-testnet',
-      tx_page: 'https://testnet.ezstaking.tools/juno-testnet/txs/${txHash}',
+      kind: 'EZ Staking',
+      url: 'https://testnet.app.ezstaking.io/juno-testnet',
+      tx_page: 'https://testnet.app.ezstaking.io/juno-testnet/txs/${txHash}',
       account_page:
-        'https://testnet.ezstaking.tools/juno-testnet/account/${accountAddress}'
+        'https://testnet.app.ezstaking.io/juno-testnet/account/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Juno-Testnet',
+      tx_page: 'https://explorer.stavr.tech/Juno-Testnet/txs/${txHash}',
+      account_page:
+        'https://explorer.stavr.tech/Juno-Testnet/account/${accountAddress}'
     },
     {
       kind: 'Mintscan',

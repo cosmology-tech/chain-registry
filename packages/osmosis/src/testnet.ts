@@ -152,6 +152,11 @@ const testnet: Chain = {
         'https://explorer.osmotest5.osmosis.zone/osmo-test-5/account/${accountAddress}'
     }
   ],
-  keywords: ['dex', 'testnet']
+  keywords: ['dex', 'testnet'],
+  images: [
+    {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
+    }
+  ]
 };
 export default testnet;

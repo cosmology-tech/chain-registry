@@ -26,7 +26,13 @@ const testnet_assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
       },
       coingecko_id: 'osmosis',
-      keywords: ['dex', 'staking']
+      keywords: ['dex', 'staking'],
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+        }
+      ]
     },
     {
       denom_units: [
@@ -48,7 +54,13 @@ const testnet_assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
       },
       coingecko_id: 'ion',
-      keywords: ['memecoin']
+      keywords: ['memecoin'],
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
+        }
+      ]
     }
   ]
 };
