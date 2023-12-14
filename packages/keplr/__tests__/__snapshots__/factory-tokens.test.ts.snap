@@ -23,6 +23,13 @@ exports[`config 1`] = `
       "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/prism/images/prism-token.svg",
       "coinMinimalDenom": "upryzm",
     },
+    {
+      "coinDecimals": undefined,
+      "coinDenom": "PRYZM2",
+      "coinGeckoId": "pryzm2",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/prism/images/prism-token.svg",
+      "coinMinimalDenom": "factory/pryzm15k9s9p0ar0cx27nayrgk6vmhyec3lj7vkry7rx/uusdsim",
+    },
   ],
   "features": [
     "stargate",
@@ -35,6 +42,18 @@ exports[`config 1`] = `
       "coinGeckoId": "pryzm",
       "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/prism/images/prism-token.svg",
       "coinMinimalDenom": "upryzm",
+      "gasPriceStep": {
+        "average": 0,
+        "high": 0.01,
+        "low": 0,
+      },
+    },
+    {
+      "coinDecimals": undefined,
+      "coinDenom": "PRYZM2",
+      "coinGeckoId": "pryzm2",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/prism/images/prism-token.svg",
+      "coinMinimalDenom": "factory/pryzm15k9s9p0ar0cx27nayrgk6vmhyec3lj7vkry7rx/uusdsim",
       "gasPriceStep": {
         "average": 0,
         "high": 0.01,

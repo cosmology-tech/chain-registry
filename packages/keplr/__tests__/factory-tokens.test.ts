@@ -61,6 +61,24 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/prism/images/prism-token.svg'
       },
       coingecko_id: 'pryzm'
+    },
+    {
+      description: 'Another Pryzm token',
+      denom_units: [
+        {
+          denom: 'factory/pryzm15k9s9p0ar0cx27nayrgk6vmhyec3lj7vkry7rx/uusdsim',
+          exponent: 0
+        }
+      ],
+      base: 'factory/pryzm15k9s9p0ar0cx27nayrgk6vmhyec3lj7vkry7rx/uusdsim',
+      name: 'Pryzm2',
+      display: 'pryzm2',
+      symbol: 'PRYZM2',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/prism/images/prism-token.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/prism/images/prism-token.svg'
+      },
+      coingecko_id: 'pryzm2'
     }
   ]
 };
