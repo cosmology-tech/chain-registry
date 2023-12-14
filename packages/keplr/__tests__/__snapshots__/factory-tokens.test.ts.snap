@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`config 1`] = `
+{
+  "bech32Config": {
+    "bech32PrefixAccAddr": "pryzm",
+    "bech32PrefixAccPub": "pryzmpub",
+    "bech32PrefixConsAddr": "pryzmvalcons",
+    "bech32PrefixConsPub": "pryzmvalconspub",
+    "bech32PrefixValAddr": "pryzmvaloper",
+    "bech32PrefixValPub": "pryzmvaloperpub",
+  },
+  "bip44": {
+    "coinType": 118,
+  },
+  "chainId": "PRYZM_CHAIN_ID",
+  "chainName": "Pryzm Testnet",
+  "currencies": [
+    {
+      "coinDecimals": 6,
+      "coinDenom": "PRYZM",
+      "coinGeckoId": "pryzm",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/prism/images/prism-token.svg",
+      "coinMinimalDenom": "upryzm",
+    },
+  ],
+  "features": [
+    "stargate",
+    "ibc-transfer",
+  ],
+  "feeCurrencies": [
+    {
+      "coinDecimals": 6,
+      "coinDenom": "PRYZM",
+      "coinGeckoId": "pryzm",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/prism/images/prism-token.svg",
+      "coinMinimalDenom": "upryzm",
+      "gasPriceStep": {
+        "average": 0,
+        "high": 0.01,
+        "low": 0,
+      },
+    },
+  ],
+  "rest": "",
+  "rpc": "",
+  "stakeCurrency": {
+    "coinDecimals": 6,
+    "coinDenom": "PRYZM",
+    "coinGeckoId": "pryzm",
+    "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/prism/images/prism-token.svg",
+    "coinMinimalDenom": "upryzm",
+  },
+}
+`;
