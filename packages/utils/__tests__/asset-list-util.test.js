@@ -8,6 +8,7 @@ import {
   getAssetByDenom,
   getChainDenomBySymbol,
   getDenomByCoinGeckoId,
+  getCoinGeckoIdByDenom,
   getExponentByDenom,
   getSymbolByChainDenom,
   noDecimals
@@ -84,5 +85,36 @@ describe('tests for asset-list-util', () => {
   it('convert osmosis base units to display units', () => {
     const re = convertBaseUnitsToDisplayUnits(testAssets, 'OSMO', 99);
     expect(re).toEqual('0.000099');
+  });
+});
+
+describe('getCoinGeckoIdByDenom', () => {
+  it('uosmo coingecko id', () => {
+    const id = getCoinGeckoIdByDenom(assets, 'uosmo');
+    expect(id).toEqual('osmosis');
+  });
+
+  it('ujkl coingecko id on testnet', () => {
+    const id = getCoinGeckoIdByDenom(assets, 'ujkl', {
+      allowTestnet: true,
+      excludedChainNames: ['jackal']
+    });
+    expect(id).toEqual('jackal');
+  });
+
+  it('uluna coingecko id on terra2', () => {
+    const id = getCoinGeckoIdByDenom(assets, 'uluna', {
+      excludedChainNames: ['terra']
+    });
+    expect(id).toEqual('terra-luna-2');
+  });
+
+  it('uusdc coingecko id without traces', () => {
+    const id = getCoinGeckoIdByDenom(assets, 'uusdc', {
+      customAssetFilter(asset) {
+        return !asset.traces;
+      }
+    });
+    expect(id).toBeNull();
   });
 });

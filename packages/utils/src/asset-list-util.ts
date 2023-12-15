@@ -1,4 +1,4 @@
-import { Asset, AssetDenomUnit } from '@chain-registry/types';
+import { Asset, AssetList, AssetDenomUnit } from '@chain-registry/types';
 import BigNumber from 'bignumber.js';
 
 export type CoinDenom = AssetDenomUnit['denom'];
@@ -26,6 +26,38 @@ export function getDenomByCoinGeckoId(
   coinGeckoId: string
 ): CoinDenom {
   return assets.find((asset) => asset.coingecko_id === coinGeckoId).base;
+}
+
+type GetCoinGeckoIdByDenomOptions = {
+  allowTestnet?: boolean;
+  customAssetFilter?: (asset: Asset) => boolean;
+  excludedChainNames?: string[];
+};
+
+export function getCoinGeckoIdByDenom(
+  assets: AssetList[],
+  denom: CoinDenom,
+  {
+    allowTestnet = false,
+    customAssetFilter = () => true,
+    excludedChainNames = []
+  }: GetCoinGeckoIdByDenomOptions = {}
+): string | null {
+  const filteredAssetLists = assets.filter(({ chain_name }) => {
+    return (
+      (allowTestnet || !chain_name.includes('testnet')) &&
+      !excludedChainNames.includes(chain_name)
+    );
+  });
+
+  const filteredAssets = filteredAssetLists
+    .flatMap(({ assets }) => assets)
+    .filter(({ coingecko_id }) => coingecko_id)
+    .filter(customAssetFilter);
+
+  const asset = filteredAssets.find(({ base }) => base === denom);
+
+  return asset?.coingecko_id ?? null;
 }
 
 export function getSymbolByChainDenom(
