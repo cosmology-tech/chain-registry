@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.16.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/utils@1.15.0...@chain-registry/utils@1.16.0) (2023-12-15)
+
+
+### Features
+
+* add getCoinGeckoIdByDenom method ([b05e67b](https://github.com/cosmology-tech/chain-registry/commit/b05e67b4b54258412d359745b1cd095987c67eb6))
+
+
+
+
+
 # [1.15.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/utils@1.14.0...@chain-registry/utils@1.15.0) (2023-12-15)
 
 **Note:** Version bump only for package @chain-registry/utils
