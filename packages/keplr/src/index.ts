@@ -10,18 +10,21 @@ const getExplr = (chain: Chain): string => chain.explorers?.[0]?.url ?? '';
 const cleanVer = (ver: string) => {
   if (!semver.valid(ver)) {
     // try to split by @ for repo@version
-    ver = ver.split("@").pop()
-    if (semver.valid(ver)) return ver
-    
+    ver = ver.split('@').pop();
+    if (semver.valid(ver)) return ver;
+
     const spaces = ver.split('.').length;
     switch (spaces) {
+      case 0:
       case 1:
         return ver + '.0.0';
       case 2:
         return ver + '.0';
       case 3:
       default:
-        throw new Error('contact maintainers: bad version');
+        throw new Error(
+          'contact @chain-registry/keplr maintainers: bad version'
+        );
     }
   }
 };
