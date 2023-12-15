@@ -15,7 +15,6 @@ const cleanVer = (ver: string) => {
 
     const spaces = ver.split('.').length;
     switch (spaces) {
-      case 0:
       case 1:
         return ver + '.0.0';
       case 2:
@@ -48,9 +47,12 @@ export const chainRegistryChainToKeplr = (
 
   const features = [];
   // if NOT specified, we assume stargate, sorry not sorry
-  const sdkVer = cleanVer(chain.codebase?.cosmos_sdk_version ?? '0.4');
+  const sdkVer = chain.codebase?.cosmos_sdk_version
+    ? cleanVer(chain.codebase?.cosmos_sdk_version)
+    : '0.40';
+
   // stargate
-  if (semver.satisfies(sdkVer, '>=0.4')) features.push('stargate');
+  if (semver.satisfies(sdkVer, '>=0.40')) features.push('stargate');
   // no-legacy-stdTx
   if (semver.satisfies(sdkVer, '>=0.43')) features.push('no-legacy-stdTx');
   // until further notice, assume 'ibc-transfer'

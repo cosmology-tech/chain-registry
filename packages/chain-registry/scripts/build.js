@@ -1,8 +1,16 @@
 const fs = require('fs');
 const deepmerge = require('deepmerge');
 const glob = require('glob').sync;
+const path = require('path');
 
-const paths = glob(`${__dirname}/../chain-registry/**/*.json`);
+const NON_INFO_DIRS = ['_memo_keys', '_scripts', '_template', '.github'];
+
+const paths = glob(`${__dirname}/../chain-registry/**/*.json`).filter((a) => {
+  let dir = a.split('chain-registry/chain-registry')[1];
+  dir = path.basename(path.dirname(dir));
+  return !NON_INFO_DIRS.includes(dir);
+});
+
 const assets = [];
 const chains = [];
 const ibcs = [];
