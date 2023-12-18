@@ -13,19 +13,46 @@ export interface PriceHash {
   [key: CoinDenom]: number;
 }
 
-export function getAssetByDenom(assets: Asset[], denom: CoinDenom): Asset {
-  const asset = assets.find((asset) => asset.base === denom);
-  if (!asset) {
-    throw new Error(`Asset not found: ${denom}`);
+function getAssetByKeyValue(
+  assets: AssetList[],
+  key: keyof Asset,
+  value: string,
+  chainName?: string
+): Asset {
+  const filteredAssets = assets
+    .filter(({ chain_name }) => !chainName || chain_name === chainName)
+    .flatMap(({ assets }) => assets);
+
+  const matchingAssets = filteredAssets.filter((asset) => asset[key] === value);
+
+  if (matchingAssets.length === 0) {
+    throw new Error(`No asset found for ${key} '${value}'`);
   }
-  return asset;
+
+  if (matchingAssets.length > 1) {
+    throw new Error(
+      `Ambiguity: ${matchingAssets.length} assets found for ${key} '${value}'`
+    );
+  }
+
+  return matchingAssets[0];
+}
+
+export function getAssetByDenom(
+  assets: AssetList[],
+  denom: CoinDenom,
+  chainName?: string
+): Asset {
+  return getAssetByKeyValue(assets, 'base', denom, chainName);
 }
 
 export function getDenomByCoinGeckoId(
-  assets: Asset[],
-  coinGeckoId: string
+  assets: AssetList[],
+  coinGeckoId: string,
+  chainName?: string
 ): CoinDenom {
-  return assets.find((asset) => asset.coingecko_id === coinGeckoId).base;
+  return getAssetByKeyValue(assets, 'coingecko_id', coinGeckoId, chainName)
+    .base;
 }
 
 type GetCoinGeckoIdByDenomOptions = {
@@ -61,44 +88,36 @@ export function getCoinGeckoIdByDenom(
 }
 
 export function getSymbolByChainDenom(
-  assets: Asset[],
-  denom: CoinDenom
+  assets: AssetList[],
+  denom: CoinDenom,
+  chainName?: string
 ): string {
-  const asset = getAssetByDenom(assets, denom);
-  const symbol = asset.symbol;
-  if (!symbol) {
-    return denom;
-  }
-  return symbol;
+  return getAssetByDenom(assets, denom, chainName).symbol;
 }
 
 export function getChainDenomBySymbol(
-  assets: Asset[],
-  token: string
+  assets: AssetList[],
+  symbol: string,
+  chainName?: string
 ): CoinDenom {
-  const asset = assets.find(({ symbol }) => symbol === token);
-  const base = asset?.base;
-  if (!base) {
-    console.log(`cannot find base for token ${token}`);
-    return null;
-  }
-  return base;
+  return getAssetByKeyValue(assets, 'symbol', symbol, chainName).base;
 }
 
 export function getExponentByDenom(
-  assets: Asset[],
-  denom: CoinDenom
+  assets: AssetList[],
+  denom: CoinDenom,
+  chainName?: string
 ): Exponent {
-  const asset = getAssetByDenom(assets, denom);
+  const asset = getAssetByDenom(assets, denom, chainName);
   const unit = asset.denom_units.find(({ denom }) => denom === asset.display);
-  return unit?.exponent || 0;
+  return unit?.exponent ?? 0;
 }
 
 export function convertCoinGeckoPricesToDenomPriceMap(
-  assets: Asset[],
+  assets: AssetList[],
   prices: Record<string, CoinGeckoUSD>
 ): PriceHash {
-  return Object.keys(prices).reduce((res, geckoId) => {
+  return Object.keys(prices).reduce((res: PriceHash, geckoId) => {
     const denom = getDenomByCoinGeckoId(assets, geckoId);
     res[denom] = prices[geckoId].usd;
     return res;
@@ -110,7 +129,7 @@ export function noDecimals(num: number | string): string {
 }
 
 export function convertBaseUnitsToDollarValue(
-  assets: Asset[],
+  assets: AssetList[],
   prices: PriceHash,
   symbol: string,
   amount: string | number
@@ -123,7 +142,7 @@ export function convertBaseUnitsToDollarValue(
 }
 
 export function convertDollarValueToDenomUnits(
-  assets: Asset[],
+  assets: AssetList[],
   prices: PriceHash,
   symbol: string,
   value: string | number
@@ -136,7 +155,7 @@ export function convertDollarValueToDenomUnits(
 }
 
 export function convertBaseUnitsToDisplayUnits(
-  assets: Asset[],
+  assets: AssetList[],
   symbol: string,
   amount: string | number
 ): string {

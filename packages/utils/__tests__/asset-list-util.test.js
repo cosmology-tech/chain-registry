@@ -15,39 +15,44 @@ import {
 } from '../src';
 
 describe('tests for asset-list-util', () => {
-  let testAssets = [];
+  const osmosisAssetList = assets.filter(
+    ({ chain_name }) => chain_name === 'osmosis'
+  );
 
-  beforeAll(() => {
-    testAssets = assets.find((it) => it.chain_name === 'osmosis')?.assets || [];
+  it('getAssetByDenom', () => {
+    expect(() => getAssetByDenom(assets, 'uosmo')).toThrowError();
+    const asset = getAssetByDenom(assets, 'uosmo', 'osmosis');
+    expect(asset.base).toEqual('uosmo');
   });
 
-  it('get osmosis asset by denom', () => {
-    const asset = getAssetByDenom(testAssets, 'uosmo');
-    expect(asset.name).toEqual('Osmosis');
+  it('getDenomByCoinGeckoId', () => {
+    const denom1 = getDenomByCoinGeckoId(assets, 'jackal');
+    expect(denom1).toEqual('ujkl');
+    const denom2 = getDenomByCoinGeckoId(assets, 'stargaze', 'stargaze');
+    expect(denom2).toEqual('ustars');
   });
 
-  it('get osmosis denom by geckoId', () => {
-    const denom = getDenomByCoinGeckoId(testAssets, 'osmosis');
-    expect(denom).toEqual('uosmo');
+  it('getSymbolByChainDenom', () => {
+    const denom1 = getSymbolByChainDenom(assets, 'swth');
+    expect(denom1).toEqual('SWTH');
+    const denom2 = getSymbolByChainDenom(assets, 'uusdc', 'axelar');
+    expect(denom2).toEqual('USDC');
   });
 
-  it('get osmosis symbol by denom', () => {
-    const token = getSymbolByChainDenom(testAssets, 'uosmo');
-    expect(token).toEqual('OSMO');
+  it('getChainDenomBySymbol', () => {
+    const denom1 = getChainDenomBySymbol(assets, 'OCTA');
+    expect(denom1).toEqual('uocta');
+    const denom2 = getChainDenomBySymbol(assets, 'NOM', 'nomic');
+    expect(denom2).toEqual('unom');
   });
 
-  it('get osmosis denom by symbol', () => {
-    const denom = getChainDenomBySymbol(testAssets, 'OSMO');
-    expect(denom).toEqual('uosmo');
-  });
-
-  it('get osmosis exponent by denom', () => {
-    const exponent = getExponentByDenom(testAssets, 'uosmo');
+  it('getExponentByDenom', () => {
+    const exponent = getExponentByDenom(assets, 'uosmo', 'osmosis');
     expect(exponent).toEqual(6);
   });
 
-  it('convert osmosis gecko price to denom price map', () => {
-    const priceMap = convertCoinGeckoPricesToDenomPriceMap(testAssets, {
+  it('convertCoinGeckoPricesToDenomPriceMap', () => {
+    const priceMap = convertCoinGeckoPricesToDenomPriceMap(osmosisAssetList, {
       osmosis: {
         usd: 0.498124
       }
@@ -55,36 +60,36 @@ describe('tests for asset-list-util', () => {
     expect(priceMap.uosmo).toEqual(0.498124);
   });
 
-  it('convert number no decimals', () => {
+  it('noDecimals', () => {
     const re1 = noDecimals(1.12);
     expect(re1).toEqual('1');
     const re2 = noDecimals(1.67);
     expect(re2).toEqual('1');
   });
 
-  it('convert osmosis base units to dollar value', () => {
-    const re = convertBaseUnitsToDollarValue(
-      testAssets,
+  it('convertBaseUnitsToDollarValue', () => {
+    const value = convertBaseUnitsToDollarValue(
+      osmosisAssetList,
       { uosmo: 1 },
       'OSMO',
       5
     );
-    expect(re).toEqual('0.000005');
+    expect(value).toEqual('0.000005');
   });
 
-  it('convert doller value to osmosis denom units', () => {
-    const re = convertDollarValueToDenomUnits(
-      testAssets,
+  it('convertDollarValueToDenomUnits', () => {
+    const value = convertDollarValueToDenomUnits(
+      osmosisAssetList,
       { uosmo: 1 },
       'OSMO',
       0.00001
     );
-    expect(re).toEqual('10');
+    expect(value).toEqual('10');
   });
 
-  it('convert osmosis base units to display units', () => {
-    const re = convertBaseUnitsToDisplayUnits(testAssets, 'OSMO', 99);
-    expect(re).toEqual('0.000099');
+  it('convertBaseUnitsToDisplayUnits', () => {
+    const value = convertBaseUnitsToDisplayUnits(osmosisAssetList, 'OSMO', 99);
+    expect(value).toEqual('0.000099');
   });
 });
 
