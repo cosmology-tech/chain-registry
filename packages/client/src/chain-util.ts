@@ -34,13 +34,15 @@ export class ChainRegistryChainUtil {
   constructor(options: ChainRegistryChainUtilOptions) {
     this.chainName = options.chainName;
     this.chainInfo = options.chainInfo;
-    this.allAsset = this.chainInfo.assetLists.reduce(
-      (m, it) => {
-        [].push.apply(m, it.assets);
-        return m;
-      },
-      [...this.chainInfo.nativeAssetLists.assets]
-    );
+    this.allAsset = [
+      {
+        assets: [
+          ...this.chainInfo.nativeAssetLists.assets,
+          ...this.chainInfo.assetLists.flatMap(({ assets }) => assets)
+        ],
+        chain_name: this.chainName
+      }
+    ];
   }
 
   getAssetByDenom(denom: CoinDenom): Asset {

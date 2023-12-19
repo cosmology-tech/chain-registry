@@ -30,30 +30,29 @@ describe('tests for asset-list-util', () => {
   const client = new ChainRegistryChainUtil(options);
 
   it('getAssetByDenom', () => {
-    expect(() => client.getAssetByDenom('uosmo')).toThrowError();
     const asset = client.getAssetByDenom('uosmo');
     expect(asset.base).toEqual('uosmo');
   });
 
   it('getDenomByCoinGeckoId', () => {
-    const denom1 = client.getDenomByCoinGeckoId('jackal');
-    expect(denom1).toEqual('ujkl');
-    const denom2 = client.getDenomByCoinGeckoId('stargaze');
-    expect(denom2).toEqual('ustars');
+    const denom1 = client.getDenomByCoinGeckoId('osmosis');
+    expect(denom1).toEqual('uosmo');
+    const denom2 = client.getDenomByCoinGeckoId('ion');
+    expect(denom2).toEqual('uion');
   });
 
   it('getSymbolByChainDenom', () => {
-    const denom1 = client.getSymbolByChainDenom('swth');
-    expect(denom1).toEqual('SWTH');
-    const denom2 = client.getSymbolByChainDenom('uusdc');
-    expect(denom2).toEqual('USDC');
+    const denom1 = client.getSymbolByChainDenom('uosmo');
+    expect(denom1).toEqual('OSMO');
+    const denom2 = client.getSymbolByChainDenom('uion');
+    expect(denom2).toEqual('ION');
   });
 
   it('getChainDenomBySymbol', () => {
-    const denom1 = client.getChainDenomBySymbol('OCTA');
-    expect(denom1).toEqual('uocta');
-    const denom2 = client.getChainDenomBySymbol('NOM');
-    expect(denom2).toEqual('unom');
+    const denom1 = client.getChainDenomBySymbol('OSMO');
+    expect(denom1).toEqual('uosmo');
+    const denom2 = client.getChainDenomBySymbol('ION');
+    expect(denom2).toEqual('uion');
   });
 
   it('getExponentByDenom', () => {

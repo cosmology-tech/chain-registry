@@ -74,7 +74,7 @@ export function getCoinGeckoIdByDenom(
 ): string | null {
   const filteredAssetLists = assets.filter(({ chain_name }) => {
     return (
-      (!chainName || chainName == chainName) &&
+      (!chainName || chain_name === chainName) &&
       (allowTestnet || !chain_name.includes('testnet')) &&
       !excludedChainNames.includes(chain_name)
     );
@@ -140,7 +140,7 @@ export function convertBaseUnitsToDollarValue(
 ): string {
   const denom = getChainDenomBySymbol(assets, symbol, chainName);
   return new BigNumber(amount)
-    .shiftedBy(-getExponentByDenom(assets, denom))
+    .shiftedBy(-getExponentByDenom(assets, denom, chainName))
     .multipliedBy(prices[denom])
     .toString();
 }
@@ -155,7 +155,7 @@ export function convertDollarValueToDenomUnits(
   const denom = getChainDenomBySymbol(assets, symbol, chainName);
   return new BigNumber(value)
     .dividedBy(prices[denom])
-    .shiftedBy(getExponentByDenom(assets, denom))
+    .shiftedBy(getExponentByDenom(assets, denom, chainName))
     .toString();
 }
 
