@@ -1,4 +1,4 @@
-import { Asset } from '@chain-registry/types';
+import { Asset, AssetList } from '@chain-registry/types';
 import type {
   CoinDenom,
   CoinGeckoUSD,
@@ -12,6 +12,7 @@ import {
   convertDollarValueToDenomUnits,
   getAssetByDenom,
   getChainDenomBySymbol,
+  getCoinGeckoIdByDenom,
   getDenomByCoinGeckoId,
   getExponentByDenom,
   getSymbolByChainDenom,
@@ -28,7 +29,7 @@ export interface ChainRegistryChainUtilOptions {
 export class ChainRegistryChainUtil {
   chainName: string;
   chainInfo: ChainInfo;
-  allAsset: Asset[];
+  allAsset: AssetList[];
 
   constructor(options: ChainRegistryChainUtilOptions) {
     this.chainName = options.chainName;
@@ -43,23 +44,29 @@ export class ChainRegistryChainUtil {
   }
 
   getAssetByDenom(denom: CoinDenom): Asset {
-    return getAssetByDenom(this.allAsset, denom);
+    return getAssetByDenom(this.allAsset, denom, this.chainName);
   }
 
   getDenomByCoinGeckoId(coinGeckoId: string): CoinDenom {
-    return getDenomByCoinGeckoId(this.allAsset, coinGeckoId);
+    return getDenomByCoinGeckoId(this.allAsset, coinGeckoId, this.chainName);
+  }
+
+  getCoinGeckoIdByDenom(coinGeckoId: string): CoinDenom {
+    return getCoinGeckoIdByDenom(this.allAsset, coinGeckoId, {
+      chainName: this.chainName
+    });
   }
 
   getSymbolByChainDenom(denom: CoinDenom): string {
-    return getSymbolByChainDenom(this.allAsset, denom);
+    return getSymbolByChainDenom(this.allAsset, denom, this.chainName);
   }
 
   getChainDenomBySymbol(token: string): CoinDenom {
-    return getChainDenomBySymbol(this.allAsset, token);
+    return getChainDenomBySymbol(this.allAsset, token, this.chainName);
   }
 
   getExponentByDenom(denom: CoinDenom): Exponent {
-    return getExponentByDenom(this.allAsset, denom);
+    return getExponentByDenom(this.allAsset, denom, this.chainName);
   }
 
   convertCoinGeckoPricesToDenomPriceMap(
@@ -77,7 +84,13 @@ export class ChainRegistryChainUtil {
     symbol: string,
     amount: string | number
   ): string {
-    return convertBaseUnitsToDollarValue(this.allAsset, prices, symbol, amount);
+    return convertBaseUnitsToDollarValue(
+      this.allAsset,
+      prices,
+      symbol,
+      amount,
+      this.chainName
+    );
   }
 
   convertDollarValueToDenomUnits(
@@ -85,13 +98,24 @@ export class ChainRegistryChainUtil {
     symbol: string,
     value: string | number
   ): string {
-    return convertDollarValueToDenomUnits(this.allAsset, prices, symbol, value);
+    return convertDollarValueToDenomUnits(
+      this.allAsset,
+      prices,
+      symbol,
+      value,
+      this.chainName
+    );
   }
 
   convertBaseUnitsToDisplayUnits(
     symbol: string,
     amount: string | number
   ): string {
-    return convertBaseUnitsToDisplayUnits(this.allAsset, symbol, amount);
+    return convertBaseUnitsToDisplayUnits(
+      this.allAsset,
+      symbol,
+      amount,
+      this.chainName
+    );
   }
 }

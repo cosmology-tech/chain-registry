@@ -56,6 +56,7 @@ export function getDenomByCoinGeckoId(
 }
 
 type GetCoinGeckoIdByDenomOptions = {
+  chainName?: string;
   allowTestnet?: boolean;
   customAssetFilter?: (asset: Asset) => boolean;
   excludedChainNames?: string[];
@@ -65,6 +66,7 @@ export function getCoinGeckoIdByDenom(
   assets: AssetList[],
   denom: CoinDenom,
   {
+    chainName,
     allowTestnet = false,
     customAssetFilter = () => true,
     excludedChainNames = []
@@ -72,6 +74,7 @@ export function getCoinGeckoIdByDenom(
 ): string | null {
   const filteredAssetLists = assets.filter(({ chain_name }) => {
     return (
+      (!chainName || chainName == chainName) &&
       (allowTestnet || !chain_name.includes('testnet')) &&
       !excludedChainNames.includes(chain_name)
     );
@@ -132,9 +135,10 @@ export function convertBaseUnitsToDollarValue(
   assets: AssetList[],
   prices: PriceHash,
   symbol: string,
-  amount: string | number
+  amount: string | number,
+  chainName?: string
 ): string {
-  const denom = getChainDenomBySymbol(assets, symbol);
+  const denom = getChainDenomBySymbol(assets, symbol, chainName);
   return new BigNumber(amount)
     .shiftedBy(-getExponentByDenom(assets, denom))
     .multipliedBy(prices[denom])
@@ -145,9 +149,10 @@ export function convertDollarValueToDenomUnits(
   assets: AssetList[],
   prices: PriceHash,
   symbol: string,
-  value: string | number
+  value: string | number,
+  chainName?: string
 ): string {
-  const denom = getChainDenomBySymbol(assets, symbol);
+  const denom = getChainDenomBySymbol(assets, symbol, chainName);
   return new BigNumber(value)
     .dividedBy(prices[denom])
     .shiftedBy(getExponentByDenom(assets, denom))
@@ -157,10 +162,11 @@ export function convertDollarValueToDenomUnits(
 export function convertBaseUnitsToDisplayUnits(
   assets: AssetList[],
   symbol: string,
-  amount: string | number
+  amount: string | number,
+  chainName?: string
 ): string {
-  const denom = getChainDenomBySymbol(assets, symbol);
+  const denom = getChainDenomBySymbol(assets, symbol, chainName);
   return new BigNumber(amount)
-    .shiftedBy(-getExponentByDenom(assets, denom))
+    .shiftedBy(-getExponentByDenom(assets, denom, chainName))
     .toString();
 }
