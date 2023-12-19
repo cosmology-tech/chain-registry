@@ -7,8 +7,8 @@ import {
   convertDollarValueToDenomUnits,
   getAssetByDenom,
   getChainDenomBySymbol,
-  getDenomByCoinGeckoId,
   getCoinGeckoIdByDenom,
+  getDenomByCoinGeckoId,
   getExponentByDenom,
   getSymbolByChainDenom,
   noDecimals
