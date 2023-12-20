@@ -87,13 +87,13 @@ or get the `ChainInfo` object:
 const chainInfo: ChainInfo = registry.getChainInfo('osmosis');
 
 // AssetList[] of the generated assets
-const assetes: AssetList[] = chainInfo.assetLists;
+const assets: AssetList[] = chainInfo.assetLists;
 
 // Chain 
 const chain: Chain = chainInfo.chain;
 
-// AssetList[] of the native assets
-const assetes: AssetList[] = chainInfo.nativeAssetLists;
+// Native asset list
+const nativeAssetList: AssetList = chainInfo.nativeAssetList;
 ```
 
 ## Related
