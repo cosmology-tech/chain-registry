@@ -29,15 +29,16 @@ export interface ChainRegistryChainUtilOptions {
 export class ChainRegistryChainUtil {
   chainName: string;
   chainInfo: ChainInfo;
-  allAsset: AssetList[];
+  
+  private _assets: AssetList[] = [];
 
   constructor(options: ChainRegistryChainUtilOptions) {
     this.chainName = options.chainName;
     this.chainInfo = options.chainInfo;
-    this.allAsset = [
+    this._assets = [
       {
         assets: [
-          ...this.chainInfo.nativeAssetLists.assets,
+          ...this.chainInfo.nativeAssetList.assets,
           ...this.chainInfo.assetLists.flatMap(({ assets }) => assets)
         ],
         chain_name: this.chainName
@@ -46,35 +47,35 @@ export class ChainRegistryChainUtil {
   }
 
   getAssetByDenom(denom: CoinDenom): Asset {
-    return getAssetByDenom(this.allAsset, denom, this.chainName);
+    return getAssetByDenom(this._assets, denom, this.chainName);
   }
 
   getDenomByCoinGeckoId(coinGeckoId: string): CoinDenom {
-    return getDenomByCoinGeckoId(this.allAsset, coinGeckoId, this.chainName);
+    return getDenomByCoinGeckoId(this._assets, coinGeckoId, this.chainName);
   }
 
   getCoinGeckoIdByDenom(coinGeckoId: string): CoinDenom {
-    return getCoinGeckoIdByDenom(this.allAsset, coinGeckoId, {
+    return getCoinGeckoIdByDenom(this._assets, coinGeckoId, {
       chainName: this.chainName
     });
   }
 
   getSymbolByChainDenom(denom: CoinDenom): string {
-    return getSymbolByChainDenom(this.allAsset, denom, this.chainName);
+    return getSymbolByChainDenom(this._assets, denom, this.chainName);
   }
 
   getChainDenomBySymbol(token: string): CoinDenom {
-    return getChainDenomBySymbol(this.allAsset, token, this.chainName);
+    return getChainDenomBySymbol(this._assets, token, this.chainName);
   }
 
   getExponentByDenom(denom: CoinDenom): Exponent {
-    return getExponentByDenom(this.allAsset, denom, this.chainName);
+    return getExponentByDenom(this._assets, denom, this.chainName);
   }
 
   convertCoinGeckoPricesToDenomPriceMap(
     prices: Record<string, CoinGeckoUSD>
   ): PriceHash {
-    return convertCoinGeckoPricesToDenomPriceMap(this.allAsset, prices);
+    return convertCoinGeckoPricesToDenomPriceMap(this._assets, prices);
   }
 
   noDecimals(num: number | string): string {
@@ -87,7 +88,7 @@ export class ChainRegistryChainUtil {
     amount: string | number
   ): string {
     return convertBaseUnitsToDollarValue(
-      this.allAsset,
+      this._assets,
       prices,
       symbol,
       amount,
@@ -101,7 +102,7 @@ export class ChainRegistryChainUtil {
     value: string | number
   ): string {
     return convertDollarValueToDenomUnits(
-      this.allAsset,
+      this._assets,
       prices,
       symbol,
       value,
@@ -114,7 +115,7 @@ export class ChainRegistryChainUtil {
     amount: string | number
   ): string {
     return convertBaseUnitsToDisplayUnits(
-      this.allAsset,
+      this._assets,
       symbol,
       amount,
       this.chainName

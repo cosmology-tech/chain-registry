@@ -75,6 +75,6 @@ describe('Test client', () => {
 
   it('Test mock fetching asset list', () => {
     const chainInfo = client.getChainInfo('osmosis');
-    expect(chainInfo.nativeAssetLists.assets.length).toEqual(1);
+    expect(chainInfo.nativeAssetList.assets.length).toEqual(1);
   });
 });

@@ -43,7 +43,7 @@ export class ChainInfo {
   get chain() {
     return this._chain;
   }
-  get nativeAssetLists() {
+  get nativeAssetList() {
     return this._assetList;
   }
   get assetLists() {
