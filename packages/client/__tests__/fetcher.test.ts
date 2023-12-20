@@ -44,7 +44,7 @@ describe('Test fetcher', () => {
       expect(chainInfo.chain).toEqual(osmosis);
 
       const osmosisAssets = fetcher.getChainAssetList('osmosis');
-      expect(chainInfo.nativeAssetLists).toEqual(osmosisAssets);
+      expect(chainInfo.nativeAssetList).toEqual(osmosisAssets);
 
       const num = osmosisAssets.assets.length;
       const numGenerated = generated[0].assets.length;
