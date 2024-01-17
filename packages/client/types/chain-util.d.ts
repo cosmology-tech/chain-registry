@@ -8,10 +8,11 @@ export interface ChainRegistryChainUtilOptions {
 export declare class ChainRegistryChainUtil {
     chainName: string;
     chainInfo: ChainInfo;
-    allAsset: Asset[];
+    private _assets;
     constructor(options: ChainRegistryChainUtilOptions);
     getAssetByDenom(denom: CoinDenom): Asset;
     getDenomByCoinGeckoId(coinGeckoId: string): CoinDenom;
+    getCoinGeckoIdByDenom(coinGeckoId: string): CoinDenom;
     getSymbolByChainDenom(denom: CoinDenom): string;
     getChainDenomBySymbol(token: string): CoinDenom;
     getExponentByDenom(denom: CoinDenom): Exponent;

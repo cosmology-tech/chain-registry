@@ -14,6 +14,6 @@ export declare class ChainInfo {
     constructor(options: ChainInfoOptions);
     refresh(): void;
     get chain(): Chain;
-    get nativeAssetLists(): AssetList;
+    get nativeAssetList(): AssetList;
     get assetLists(): any[];
 }
