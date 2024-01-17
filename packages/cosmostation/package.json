@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/cosmostation",
-  "version": "1.28.0",
+  "version": "1.28.1",
   "description": "Chain Registry to Cosmostation",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
@@ -57,7 +57,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "29.5.0",
     "babel-watch": "^7.7.2",
-    "chain-registry": "^1.25.0",
+    "chain-registry": "^1.25.1",
     "cross-env": "^7.0.2",
     "eslint": "8.38.0",
     "eslint-config-prettier": "^8.8.0",

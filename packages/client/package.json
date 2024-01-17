@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/client",
-  "version": "1.18.0",
+  "version": "1.18.1",
   "description": "Chain Registry Client",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
