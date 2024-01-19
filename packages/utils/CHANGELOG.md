@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.17.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/utils@1.17.0...@chain-registry/utils@1.17.1) (2024-01-19)
+
+**Note:** Version bump only for package @chain-registry/utils
+
+
+
+
+
 # [1.17.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/utils@1.16.1...@chain-registry/utils@1.17.0) (2023-12-20)
 
 
