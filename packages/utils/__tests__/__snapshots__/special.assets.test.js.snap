@@ -140,7 +140,7 @@ exports[`getAssetLists 1`] = `
       },
       {
         "base": "ibc/4F69220C2F5F70BA0B0B66B4534F7916C529EB8350BF5EDF2B8D56682D8F2C9C",
-        "coingecko_id": "",
+        "coingecko_id": "harbor-2",
         "denom_units": [
           {
             "aliases": [
@@ -890,6 +890,53 @@ exports[`getAssetLists 1`] = `
         ],
       },
       {
+        "base": "ibc/76464BD93F13DED4381980282741D7A1C14DC9ECD3F13778FEF474423DD2D544",
+        "denom_units": [
+          {
+            "aliases": [
+              "gravity0x83F20F44975D03b1b09e64809B757c47f942BEeA",
+            ],
+            "denom": "ibc/76464BD93F13DED4381980282741D7A1C14DC9ECD3F13778FEF474423DD2D544",
+            "exponent": 0,
+          },
+          {
+            "denom": "gsdai",
+            "exponent": 18,
+          },
+        ],
+        "description": "Gravity Bridge sDAI",
+        "display": "gsdai",
+        "images": [
+          {
+            "image_sync": {
+              "base_denom": "ethereum",
+              "chain_name": "0x83F20F44975D03b1b09e64809B757c47f942BEeA",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.svg",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.svg",
+        },
+        "name": "Savings Dai",
+        "symbol": "sDAI",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "gravity0x83F20F44975D03b1b09e64809B757c47f942BEeA",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
         "base": "ibc/14EA52FE50F7B63F377798E22751D1773B3016B07884904C0430818C48F54823",
         "denom_units": [
           {
@@ -927,6 +974,53 @@ exports[`getAssetLists 1`] = `
             },
             "counterparty": {
               "base_denom": "gravity0x2F109021aFe75B949429fe30523Ee7C0D5B27207",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/E4E6AD88A4C3754ADABE5CEFCD92C00EF7C1CA9A760BAA654D0A923D7B0347D3",
+        "denom_units": [
+          {
+            "aliases": [
+              "gravity0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e",
+            ],
+            "denom": "ibc/E4E6AD88A4C3754ADABE5CEFCD92C00EF7C1CA9A760BAA654D0A923D7B0347D3",
+            "exponent": 0,
+          },
+          {
+            "denom": "page",
+            "exponent": 8,
+          },
+        ],
+        "description": "The PAGE token is used for actions in the PageDAO NFT literary ecosystem and for DAO governance.",
+        "display": "page",
+        "images": [
+          {
+            "image_sync": {
+              "base_denom": "0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e",
+              "chain_name": "ethereum",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg",
+        },
+        "name": "Page",
+        "symbol": "PAGE",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "gravity0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e",
               "chain_name": "gravitybridge",
               "channel_id": "channel-24",
             },
@@ -1058,6 +1152,131 @@ exports[`getAssetLists 1`] = `
             },
             "counterparty": {
               "base_denom": "factory/inj1cdwt8g7nxgtg2k4fn8sj363mh9ahkw2qt0vrnc/ampINJ",
+              "chain_name": "injective",
+              "channel_id": "channel-82",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/A2CAE89DBF96B49C72595D21E80DA4CEADCC706F85B259DFEE1FB70E8D62C01C",
+        "coingecko_id": "autism",
+        "denom_units": [
+          {
+            "aliases": [
+              "factory/inj14lf8xm6fcvlggpa7guxzjqwjmtr24gnvf56hvz/autism",
+            ],
+            "denom": "ibc/A2CAE89DBF96B49C72595D21E80DA4CEADCC706F85B259DFEE1FB70E8D62C01C",
+            "exponent": 0,
+          },
+          {
+            "denom": "autism",
+            "exponent": 6,
+          },
+        ],
+        "description": "$AUTISM exists to celebrate autism as a superior biological tech stack for a changing world",
+        "display": "autism",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/autism.png",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/autism.png",
+        },
+        "name": "Autism",
+        "symbol": "AUTISM",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-41",
+            },
+            "counterparty": {
+              "base_denom": "factory/inj14lf8xm6fcvlggpa7guxzjqwjmtr24gnvf56hvz/autism",
+              "chain_name": "injective",
+              "channel_id": "channel-82",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/2C593A9B8482C8CD2D942346DB49238B586343E4AC69C06F4760E9BE4169AC1C",
+        "coingecko_id": "dog-wif-nuchucks",
+        "denom_units": [
+          {
+            "aliases": [
+              "factory/inj1xtel2knkt8hmc9dnzpjz6kdmacgcfmlv5f308w/ninja",
+            ],
+            "denom": "ibc/2C593A9B8482C8CD2D942346DB49238B586343E4AC69C06F4760E9BE4169AC1C",
+            "exponent": 0,
+          },
+          {
+            "denom": "NINJA",
+            "exponent": 6,
+          },
+        ],
+        "description": "The first meme coin on Injective. It’s a dog, but he has nunchucks",
+        "display": "NINJA",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninja.png",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninja.png",
+        },
+        "name": "Dog wif nunchucks",
+        "symbol": "NINJA",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-41",
+            },
+            "counterparty": {
+              "base_denom": "factory/inj1xtel2knkt8hmc9dnzpjz6kdmacgcfmlv5f308w/ninja",
+              "chain_name": "injective",
+              "channel_id": "channel-82",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/A8E9E51C5C0ABDFF317EAFF94024545ED5483E07531A9DF6A3F2BC56BABBA1A5",
+        "denom_units": [
+          {
+            "aliases": [
+              "factory/inj1rmjzj9fn47kdmfk4f3z39qr6czexxe0yjyc546/WGMI",
+            ],
+            "denom": "ibc/A8E9E51C5C0ABDFF317EAFF94024545ED5483E07531A9DF6A3F2BC56BABBA1A5",
+            "exponent": 0,
+          },
+          {
+            "denom": "WGMI",
+            "exponent": 6,
+          },
+        ],
+        "description": "The $WGMI Token - We Gonna Make It. Are you ready?",
+        "display": "WGMI",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/wgmi.png",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/wgmi.png",
+        },
+        "name": "WGMI",
+        "symbol": "WGMI",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-41",
+            },
+            "counterparty": {
+              "base_denom": "factory/inj1rmjzj9fn47kdmfk4f3z39qr6czexxe0yjyc546/WGMI",
               "chain_name": "injective",
               "channel_id": "channel-82",
             },
@@ -1771,6 +1990,47 @@ exports[`getAssetLists 1`] = `
         "type_asset": "ics20",
       },
       {
+        "base": "ibc/C04F984183075A59DE75013363D68B64641ADE5FBA6BFE6F591403F8A93F3A0D",
+        "denom_units": [
+          {
+            "aliases": [
+              "factory/neutron14henrqx9y328fjrdvz6l6d92r0t7g5hk86q5nd/uastropepe",
+            ],
+            "denom": "ibc/C04F984183075A59DE75013363D68B64641ADE5FBA6BFE6F591403F8A93F3A0D",
+            "exponent": 0,
+          },
+          {
+            "denom": "ASTROPEPE",
+            "exponent": 6,
+          },
+        ],
+        "description": "Astropepe meme coin",
+        "display": "ASTROPEPE",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astropepe.png",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astropepe.png",
+        },
+        "name": "AstroPepe",
+        "symbol": "ASTROPEPE",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-136",
+            },
+            "counterparty": {
+              "base_denom": "factory/neutron14henrqx9y328fjrdvz6l6d92r0t7g5hk86q5nd/uastropepe",
+              "chain_name": "neutron",
+              "channel_id": "channel-49",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
         "base": "ibc/F32C0B1FE24F67A0C14CBC1EB19EE95F56AF461641A5954DC1D6CB399126670D",
         "denom_units": [
           {
@@ -1910,6 +2170,219 @@ exports[`getAssetLists 1`] = `
           },
         ],
         "type_asset": "ics20",
+      },
+      {
+        "base": "ibc/10960B263E6942247150AE0B741AF86D3DD09F23FB305154B121B664B61F723E",
+        "coingecko_id": "newt",
+        "denom_units": [
+          {
+            "aliases": [
+              "factory/neutron1p8d89wvxyjcnawmgw72klknr3lg9gwwl6ypxda/newt",
+            ],
+            "denom": "ibc/10960B263E6942247150AE0B741AF86D3DD09F23FB305154B121B664B61F723E",
+            "exponent": 0,
+          },
+          {
+            "denom": "newt",
+            "exponent": 6,
+          },
+        ],
+        "description": "The cutest NEWT token on Neutron chain.",
+        "display": "newt",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/newt.png",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/newt.png",
+        },
+        "name": "Newt",
+        "symbol": "NEWT",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-136",
+            },
+            "counterparty": {
+              "base_denom": "factory/neutron1p8d89wvxyjcnawmgw72klknr3lg9gwwl6ypxda/newt",
+              "chain_name": "neutron",
+              "channel_id": "channel-49",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/E6BF3BB3FC131D2ADC098D2922CFCA23F7CA653DB173DCCC51A1496164E15CD0",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/5751B8BCDA688FD0A8EC0B292EEF1CDEAB4B766B63EC632778B196D317C40C3A",
+            ],
+            "denom": "ibc/E6BF3BB3FC131D2ADC098D2922CFCA23F7CA653DB173DCCC51A1496164E15CD0",
+            "exponent": 0,
+          },
+          {
+            "denom": "astro",
+            "exponent": 6,
+          },
+        ],
+        "description": "ASTRO on Neutron",
+        "display": "astro",
+        "images": [
+          {
+            "image_sync": {
+              "base_denom": "cw20:terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26",
+              "chain_name": "terra2",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro.svg",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro.svg",
+        },
+        "name": "Astroport token",
+        "symbol": "ASTRO",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-136",
+            },
+            "counterparty": {
+              "base_denom": "ibc/5751B8BCDA688FD0A8EC0B292EEF1CDEAB4B766B63EC632778B196D317C40C3A",
+              "chain_name": "neutron",
+              "channel_id": "channel-49",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
+      },
+      {
+        "base": "ibc/F6411E5108BA49F31AAD977CB6232910B366FD37980B6E8717FBD99175F9E2C0",
+        "denom_units": [
+          {
+            "aliases": [
+              "factory/neutron1tklm6cvr2wxg8k65t8gh5ewslnzdfd5fsk0w3f/corgi",
+            ],
+            "denom": "ibc/F6411E5108BA49F31AAD977CB6232910B366FD37980B6E8717FBD99175F9E2C0",
+            "exponent": 0,
+          },
+          {
+            "denom": "corgi",
+            "exponent": 6,
+          },
+        ],
+        "description": "Baby Corgi is the real doggo of Neutron!",
+        "display": "corgi",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/babycorgi.png",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/babycorgi.png",
+        },
+        "name": "Baby Corgi",
+        "symbol": "CORGI",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-136",
+            },
+            "counterparty": {
+              "base_denom": "factory/neutron1tklm6cvr2wxg8k65t8gh5ewslnzdfd5fsk0w3f/corgi",
+              "chain_name": "neutron",
+              "channel_id": "channel-49",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/1C3305DA2EAB9A354DE252F74932777A425E5DAC25BA838E83C690F14C70F236",
+        "denom_units": [
+          {
+            "aliases": [
+              "factory/neutron170v88vrtnedesyfytuku257cggxc79rd7lwt7q/ucircus",
+            ],
+            "denom": "ibc/1C3305DA2EAB9A354DE252F74932777A425E5DAC25BA838E83C690F14C70F236",
+            "exponent": 0,
+          },
+          {
+            "denom": "circus",
+            "exponent": 6,
+          },
+        ],
+        "description": "clownmaxxed store of value",
+        "display": "circus",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/circus.png",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/circus.png",
+        },
+        "name": "AtomEconomicZone69JaeKwonInu",
+        "symbol": "CIRCUS",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-136",
+            },
+            "counterparty": {
+              "base_denom": "factory/neutron170v88vrtnedesyfytuku257cggxc79rd7lwt7q/ucircus",
+              "chain_name": "neutron",
+              "channel_id": "channel-49",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/35C9CC97C082FBA77D4F5F3708C95B9CC9AE0A1BAABBCE629C0C3707BAE864CE",
+        "denom_units": [
+          {
+            "aliases": [
+              "factory/neutron108x7vp9zv22d6wxrs9as8dshd3pd5vsga463yd/JIMMY",
+            ],
+            "denom": "ibc/35C9CC97C082FBA77D4F5F3708C95B9CC9AE0A1BAABBCE629C0C3707BAE864CE",
+            "exponent": 0,
+          },
+          {
+            "denom": "jimmy",
+            "exponent": 6,
+          },
+        ],
+        "description": "Jimmy Neutron Finance",
+        "display": "jimmy",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/jimmy.png",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/jimmy.png",
+        },
+        "name": "jimmy",
+        "symbol": "JIMMY",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-136",
+            },
+            "counterparty": {
+              "base_denom": "factory/neutron108x7vp9zv22d6wxrs9as8dshd3pd5vsga463yd/JIMMY",
+              "chain_name": "neutron",
+              "channel_id": "channel-49",
+            },
+            "type": "ibc",
+          },
+        ],
       },
       {
         "base": "ibc/81D03D8FCD6171B36317A487BF846D75D1178F252D204C01A0986AB371971FC1",
@@ -2185,6 +2658,7 @@ exports[`getAssetLists 1`] = `
       {
         "address": "osmo14klwqgkmackvx2tqa0trtg69dmy0nrg4ntq4gjgw2za4734r5seqjqm4gm",
         "base": "ibc/984EF329DD592E9253CCB1E65571C80F8689165B88A54974471136B57A80D74E",
+        "coingecko_id": "ibc-index",
         "denom_units": [
           {
             "aliases": [
@@ -2681,6 +3155,7 @@ exports[`getAssetLists 1`] = `
       },
       {
         "base": "ibc/29E4B969D10073DE451D80BDD915397FD68783FE95401378C7E3DCFC0BE01AF7",
+        "coingecko_id": "collateralized-debt-token",
         "denom_units": [
           {
             "aliases": [
@@ -2722,6 +3197,7 @@ exports[`getAssetLists 1`] = `
       },
       {
         "base": "ibc/6D26CDC660738D15E7199F8DB80E11D2CCDB96177B01C7356953371418EB8776",
+        "coingecko_id": "membrane",
         "denom_units": [
           {
             "aliases": [
@@ -3218,6 +3694,7 @@ exports[`getAssetLists 1`] = `
       },
       {
         "base": "ibc/46589871DE00760A7FF7CDD13B770D8ED75D6349D29CFDE1FAB92C5E56259368",
+        "coingecko_id": "levana-protocol",
         "denom_units": [
           {
             "aliases": [
@@ -3264,6 +3741,7 @@ exports[`getAssetLists 1`] = `
       },
       {
         "base": "ibc/AFFED3EB2292EAE7D7B9FD6226241EEC70D4FA62675E14E025EB2FBDC150A244",
+        "coingecko_id": "milkyway-staked-tia",
         "denom_units": [
           {
             "aliases": [
@@ -3282,10 +3760,12 @@ exports[`getAssetLists 1`] = `
         "images": [
           {
             "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/milktia.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/milktia.svg",
           },
         ],
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/milktia.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/milktia.svg",
         },
         "name": "milkTIA",
         "symbol": "milkTIA",
@@ -3345,6 +3825,238 @@ exports[`getAssetLists 1`] = `
             },
             "counterparty": {
               "base_denom": "ibc/ECBE78BF7677320A93E7BA1761D144BCBF0CBC247C290C049655E106FE5DC68E",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
+      },
+      {
+        "base": "ibc/12F659774A2765A8B9B249698A152C47D24F1CC0992B8609E78CB286CAF98C38",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/23A62409E4AD8133116C249B1FA38EED30E500A115D7B153109462CD82C1CD99",
+            ],
+            "denom": "ibc/12F659774A2765A8B9B249698A152C47D24F1CC0992B8609E78CB286CAF98C38",
+            "exponent": 0,
+          },
+          {
+            "denom": "page",
+            "exponent": 8,
+          },
+        ],
+        "description": "The PAGE token is used for actions in the PageDAO NFT literary ecosystem and for DAO governance.",
+        "display": "page",
+        "images": [
+          {
+            "image_sync": {
+              "base_denom": "gravity0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e",
+              "chain_name": "gravitybridge",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg",
+        },
+        "name": "PageDAO",
+        "symbol": "PAGE.grv",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "ibc/23A62409E4AD8133116C249B1FA38EED30E500A115D7B153109462CD82C1CD99",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
+      },
+      {
+        "base": "ibc/3C82DFEED96509056AF414E36FA2EE151778B07D1DBBE4C851887FF5705C3CB6",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/F49DFB3BC8105C57EE7F17EC2402438825B31212CFDD81681EB87911E934F32C",
+            ],
+            "denom": "ibc/3C82DFEED96509056AF414E36FA2EE151778B07D1DBBE4C851887FF5705C3CB6",
+            "exponent": 0,
+          },
+          {
+            "denom": "nom",
+            "exponent": 6,
+          },
+        ],
+        "description": "Nomic's native token.",
+        "display": "nomic",
+        "images": [
+          {
+            "image_sync": {
+              "base_denom": "unom",
+              "chain_name": "nomic",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg",
+        },
+        "name": "Nomic",
+        "symbol": "NOM",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "ibc/F49DFB3BC8105C57EE7F17EC2402438825B31212CFDD81681EB87911E934F32C",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
+      },
+      {
+        "base": "ibc/A9DE67210128FA89CCCDED0700AA26766C420D674799FD3945D107CA99546437",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/75345531D87BD90BF108BE7240BD721CB2CB0A1F16D4EBA71B09EC3C43E15C8F",
+            ],
+            "denom": "ibc/A9DE67210128FA89CCCDED0700AA26766C420D674799FD3945D107CA99546437",
+            "exponent": 0,
+          },
+          {
+            "denom": "nbtc",
+            "exponent": 14,
+          },
+        ],
+        "description": "Bitcoin. On Cosmos.",
+        "display": "nbtc",
+        "images": [
+          {
+            "image_sync": {
+              "base_denom": "usat",
+              "chain_name": "nomic",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg",
+        },
+        "name": "Nomic Bitcoin",
+        "symbol": "nBTC",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "ibc/75345531D87BD90BF108BE7240BD721CB2CB0A1F16D4EBA71B09EC3C43E15C8F",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
+      },
+      {
+        "base": "ibc/97C44C935A592FFC9FB600FDEB4E6D29EBEEDFCD417B87C83A8BAB2C6C4535AF",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/9DDF52A334F92BC57A9E0D59DFF9984EAC61D2A14E5162605DF601AA58FDFC6D",
+            ],
+            "denom": "ibc/97C44C935A592FFC9FB600FDEB4E6D29EBEEDFCD417B87C83A8BAB2C6C4535AF",
+            "exponent": 0,
+          },
+          {
+            "denom": "autism",
+            "exponent": 6,
+          },
+        ],
+        "description": "AUTISM on Osmosis",
+        "display": "autism",
+        "images": [
+          {
+            "image_sync": {
+              "base_denom": "factory/inj14lf8xm6fcvlggpa7guxzjqwjmtr24gnvf56hvz/autism",
+              "chain_name": "injective",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/autism.png",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/autism.png",
+        },
+        "name": "Injective AUTISM",
+        "symbol": "AUTISM",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "ibc/9DDF52A334F92BC57A9E0D59DFF9984EAC61D2A14E5162605DF601AA58FDFC6D",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+        "type_asset": "ics20",
+      },
+      {
+        "base": "ibc/D890928B0B869501D98E0A91B5AB9812A7185F950C85D0F12A5236005E15A7DF",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/9B8EC667B6DF55387DC0F3ACC4F187DA6921B0806ED35DE6B04DE96F5AB81F53",
+            ],
+            "denom": "ibc/D890928B0B869501D98E0A91B5AB9812A7185F950C85D0F12A5236005E15A7DF",
+            "exponent": 0,
+          },
+          {
+            "denom": "WOOF",
+            "exponent": 6,
+          },
+        ],
+        "description": "Woof on Osmosis",
+        "display": "WOOF",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/woof.png",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/woof.png",
+        },
+        "name": "WOOF chihuahua",
+        "symbol": "WOOF",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "ibc/9B8EC667B6DF55387DC0F3ACC4F187DA6921B0806ED35DE6B04DE96F5AB81F53",
               "chain_name": "osmosis",
               "channel_id": "channel-4",
             },
@@ -3969,6 +4681,7 @@ exports[`getAssetLists 1`] = `
       },
       {
         "base": "ibc/86187E4D8FE633056F317903FFA19C492B5068157375F72B1FF6EE7E325F5745",
+        "coingecko_id": "stride-staked-stars",
         "denom_units": [
           {
             "aliases": [
@@ -4011,6 +4724,7 @@ exports[`getAssetLists 1`] = `
       },
       {
         "base": "ibc/26D6E1FF4D65B4A13B9B2D8A3C87BA94B0BF866F4C73F37E8FA77FCB39C37F91",
+        "coingecko_id": "stride-staked-osmo",
         "denom_units": [
           {
             "aliases": [
@@ -4053,6 +4767,7 @@ exports[`getAssetLists 1`] = `
       },
       {
         "base": "ibc/038A211E7F3FE7B1D7C7AA87DB440B79161975C3772129B5280AB5B690E5E748",
+        "coingecko_id": "stride-staked-juno",
         "denom_units": [
           {
             "aliases": [
@@ -4095,6 +4810,7 @@ exports[`getAssetLists 1`] = `
       },
       {
         "base": "ibc/127F2F22E18B843030CF6003D3AB025DC40A53F7507F078BB6A4FA7C86E50189",
+        "coingecko_id": "stride-staked-luna",
         "denom_units": [
           {
             "aliases": [
@@ -4179,6 +4895,7 @@ exports[`getAssetLists 1`] = `
       },
       {
         "base": "ibc/844664855C3703A00253D80466629C68AE2AAE799B2CC6515A0874219F24DC3F",
+        "coingecko_id": "stride-staked-evmos",
         "denom_units": [
           {
             "aliases": [
@@ -4221,6 +4938,7 @@ exports[`getAssetLists 1`] = `
       },
       {
         "base": "ibc/0BBFD7B5982349B7A11A9EC3C1A596D81D37413C923C166C65649CECEBBBF06D",
+        "coingecko_id": "stride-staked-umee",
         "denom_units": [
           {
             "aliases": [
@@ -4305,6 +5023,7 @@ exports[`getAssetLists 1`] = `
       },
       {
         "base": "ibc/4D3EA0C8F70A255E6E84D4E60D39844A07899AFF32327E6D8B1DC277D6764B09",
+        "coingecko_id": "stride-staked-sommelier",
         "denom_units": [
           {
             "aliases": [
