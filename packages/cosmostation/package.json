@@ -75,5 +75,6 @@
     "@chain-registry/types": "^0.17.1",
     "@chain-registry/utils": "^1.17.2",
     "@cosmostation/extension-client": "0.1.15"
-  }
+  },
+  "gitHead": "6ccbde77598b9c69ca443853bd995c2422dba9b7"
 }

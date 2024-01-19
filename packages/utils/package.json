@@ -75,5 +75,6 @@
     "@chain-registry/types": "^0.17.1",
     "bignumber.js": "9.1.1",
     "sha.js": "^2.4.11"
-  }
+  },
+  "gitHead": "6ccbde77598b9c69ca443853bd995c2422dba9b7"
 }

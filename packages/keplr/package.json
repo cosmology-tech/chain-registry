@@ -76,5 +76,6 @@
     "@keplr-wallet/cosmos": "0.12.28",
     "@keplr-wallet/crypto": "0.12.28",
     "semver": "^7.5.0"
-  }
+  },
+  "gitHead": "6ccbde77598b9c69ca443853bd995c2422dba9b7"
 }

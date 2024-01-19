@@ -79,5 +79,6 @@
     "@chain-registry/utils": "^1.17.2",
     "bfs-path": "^1.0.2",
     "cross-fetch": "^3.1.5"
-  }
+  },
+  "gitHead": "6ccbde77598b9c69ca443853bd995c2422dba9b7"
 }
