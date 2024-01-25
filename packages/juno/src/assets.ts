@@ -873,6 +873,7 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wynd.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wynd.svg'
       },
+      coingecko_id: 'wynd',
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wynd.png',
@@ -2017,6 +2018,36 @@ const assets: AssetList = {
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bits.png'
+        }
+      ]
+    },
+    {
+      description:
+        "The least memeable memecoin in existence. The cats have had their day, it's time for $POIL coin to take reign.",
+      type_asset: 'cw20',
+      address:
+        'juno13epyeat7ef0k7q6kllmyvc8zpfd9xm7cqjrgtk0qkgrk7n5mjfmq8979jw',
+      denom_units: [
+        {
+          denom:
+            'cw20:juno13epyeat7ef0k7q6kllmyvc8zpfd9xm7cqjrgtk0qkgrk7n5mjfmq8979jw',
+          exponent: 0
+        },
+        {
+          denom: 'poil',
+          exponent: 6
+        }
+      ],
+      base: 'cw20:juno13epyeat7ef0k7q6kllmyvc8zpfd9xm7cqjrgtk0qkgrk7n5mjfmq8979jw',
+      name: 'POIL',
+      display: 'poil',
+      symbol: 'POIL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/poil.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/poil.png'
         }
       ]
     },

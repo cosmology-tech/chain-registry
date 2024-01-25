@@ -40,45 +40,82 @@ const chain: Chain = {
   },
   codebase: {
     git_repo: 'https://github.com/CosmosContracts/juno',
-    recommended_version: 'v17.1.1',
-    compatible_versions: ['v17.0.0', 'v17.1.1'],
-    cosmos_sdk_version: '0.47.3',
+    recommended_version: 'v18.1.0',
+    compatible_versions: ['v18.1.0'],
+    binaries: {
+      'linux/amd64':
+        'https://github.com/CosmosContracts/juno/releases/download/v18.1.0/junod'
+    },
+    cosmos_sdk_version: '0.47.5',
     consensus: {
       type: 'cometbft',
-      version: '0.34.2'
+      version: '0.37.2'
     },
-    cosmwasm_version: '0.40.2',
+    cosmwasm_version: '0.45.0',
     cosmwasm_enabled: true,
+    ibc_go_version: 'v7.3.1',
     genesis: {
       genesis_url: 'https://download.dimi.sh/juno-phoenix2-genesis.tar.gz'
     },
     versions: [
       {
         name: 'v13',
+        proposal: 271,
+        height: 7374801,
         recommended_version: 'v13.0.0',
         compatible_versions: ['v13.0.0'],
-        cosmos_sdk_version: '0.45',
+        binaries: {
+          'linux/amd64':
+            'https://github.com/CosmosContracts/juno/releases/download/v13.0.0/junod'
+        },
+        cosmos_sdk_version: '0.45.14',
         consensus: {
           type: 'tendermint',
-          version: '0.34'
+          version: 'informalsystems/tendermint v0.34.26'
         },
-        cosmwasm_version: '0.30',
+        cosmwasm_version: '0.30.0',
         cosmwasm_enabled: true,
+        ibc_go_version: 'v4.3.0',
         next_version_name: 'v14'
       },
       {
         name: 'v14',
+        proposal: 282,
         height: 7875721,
         recommended_version: 'v14.1.0',
         compatible_versions: ['v14.0.0', 'v14.1.0'],
+        binaries: {
+          'linux/amd64':
+            'https://github.com/CosmosContracts/juno/releases/download/v14.1.0/junod'
+        },
+        cosmos_sdk_version: '0.45.15',
+        consensus: {
+          type: 'cometbft',
+          version: 'mev-cometbft v0.34.27-mev.18'
+        },
+        cosmwasm_version: '0.31.0',
+        cosmwasm_enabled: true,
+        ibc_go_version: 'v4.3.0',
         next_version_name: 'v15'
       },
       {
         name: 'v15',
+        proposal: 295,
         height: 8577241,
         recommended_version: 'v15.0.0',
-        proposal: 295,
         compatible_versions: ['v15.0.0'],
+        binaries: {
+          'linux/amd64':
+            'https://github.com/CosmosContracts/juno/releases/download/v15.0.0/junod'
+        },
+        cosmos_sdk_version: '0.45.16',
+        consensus: {
+          type: 'cometbft',
+          version: 'mev-cometbft v0.34.27-mev.18'
+        },
+        cosmwasm_version: '0.31.0',
+        cosmwasm_enabled: true,
+        ibc_go_version: 'v4.3.1',
         next_version_name: 'v16'
       },
       {
@@ -87,6 +124,18 @@ const chain: Chain = {
         height: 9481382,
         recommended_version: 'v16.0.2',
         compatible_versions: ['v16.0.0', 'v16.0.2'],
+        binaries: {
+          'linux/amd64':
+            'https://github.com/CosmosContracts/juno/releases/download/v16.0.2/junod'
+        },
+        cosmos_sdk_version: '0.47.3',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        },
+        cosmwasm_version: '0.40.2',
+        cosmwasm_enabled: true,
+        ibc_go_version: 'v7.2.0',
         next_version_name: 'v17'
       },
       {
@@ -95,6 +144,38 @@ const chain: Chain = {
         height: 10078449,
         recommended_version: 'v17.1.1',
         compatible_versions: ['v17.0.0', 'v17.1.1'],
+        binaries: {
+          'linux/amd64':
+            'https://github.com/CosmosContracts/juno/releases/download/v17.1.1/junod'
+        },
+        cosmos_sdk_version: '0.47.5',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        },
+        cosmwasm_version: '0.41.0',
+        cosmwasm_enabled: true,
+        ibc_go_version: 'v7.3.0',
+        next_version_name: 'v18'
+      },
+      {
+        name: 'v18',
+        proposal: 325,
+        height: 12265007,
+        recommended_version: 'v18.1.0',
+        compatible_versions: ['v18.1.0'],
+        binaries: {
+          'linux/amd64':
+            'https://github.com/CosmosContracts/juno/releases/download/v18.1.0/junod'
+        },
+        cosmos_sdk_version: '0.47.5',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        },
+        cosmwasm_version: '0.45.0',
+        cosmwasm_enabled: true,
+        ibc_go_version: 'v7.3.1',
         next_version_name: ''
       }
     ]
@@ -142,9 +223,9 @@ const chain: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        id: '47d942718533d36823e16b9502c035ca9f318ef4',
+        id: 'c28827cb96c14c905b127b92065a3fb4cd77d7f6',
         address: 'seeds.whispernode.com:12656',
-        provider: 'WhisperNode🤐'
+        provider: 'WhisperNode 🤐'
       },
       {
         id: '509f6dbae3133a9df177edea051b31e1210b117e',
@@ -178,8 +259,8 @@ const chain: Chain = {
         provider: 'Stakeflow'
       },
       {
-        id: '2d447001642d1a455f7539eaf55c0bcbba0e567c',
-        address: '88.99.208.54:33656',
+        id: '397281b9fa745482127093f08ac05724c2b8d6f8',
+        address: '65.108.195.213:33656',
         provider: 'StakeTown'
       },
       {
@@ -193,7 +274,7 @@ const chain: Chain = {
     rpc: [
       {
         address: 'https://rpc-juno.whispernode.com:443',
-        provider: 'WhisperNode🤐'
+        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://rpc-juno.goldenratiostaking.net',
@@ -286,6 +367,10 @@ const chain: Chain = {
       {
         address: 'https://rpc-juno.mainnet.validatrium.club:443',
         provider: 'Validatrium'
+      },
+      {
+        address: 'https://juno-rpc.stakeandrelax.net',
+        provider: 'Stake&Relax 🦥'
       }
     ],
     rest: [
@@ -372,6 +457,14 @@ const chain: Chain = {
       {
         address: 'https://juno-api.stake-town.com',
         provider: 'StakeTown'
+      },
+      {
+        address: 'https://lcd-juno.whispernode.com:443',
+        provider: 'WhisperNode 🤐'
+      },
+      {
+        address: 'https://juno-api.stakeandrelax.net',
+        provider: 'Stake&Relax 🦥'
       }
     ],
     grpc: [
@@ -434,6 +527,10 @@ const chain: Chain = {
       {
         address: '138.201.21.121:24990',
         provider: 'Validatrium'
+      },
+      {
+        address: 'juno-grpc.stakeandrelax.net:12690',
+        provider: 'Stake&Relax 🦥'
       }
     ]
   },

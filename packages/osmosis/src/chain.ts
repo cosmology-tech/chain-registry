@@ -37,19 +37,13 @@ const chain: Chain = {
   },
   codebase: {
     git_repo: 'https://github.com/osmosis-labs/osmosis',
-    recommended_version: 'v20.2.1',
-    compatible_versions: [
-      'v20.2.1',
-      'v20.2.0',
-      'v20.1.2',
-      'v20.1.1',
-      'v20.1.0'
-    ],
+    recommended_version: 'v20.5.0',
+    compatible_versions: ['v20.5.0'],
     binaries: {
       'linux/amd64':
-        'https://github.com/osmosis-labs/osmosis/releases/download/v20.2.1/osmosisd-20.2.1-linux-amd64?checksum=sha256:4e60a870861ca17819fbcb49fff981b5731ec1121d7cbab43987c5f04ff099fa',
+        'https://github.com/osmosis-labs/osmosis/releases/download/v20.5.0/osmosisd-20.5.0-linux-amd64',
       'linux/arm64':
-        'https://github.com/osmosis-labs/osmosis/releases/download/v20.2.1/osmosisd-20.2.1-linux-arm64?checksum=sha256:4e7fe2cc369a9eef28a8083414c2d7e0a8cb5eb5b75e913ded06ee457dff62bb'
+        'https://github.com/osmosis-labs/osmosis/releases/download/v20.5.0/osmosisd-20.5.0-linux-arm64'
     },
     cosmos_sdk_version:
       'osmosis-labs/cosmos-sdk@0.45.0-rc1.0.20230922030206-734f99fba785',
@@ -308,16 +302,10 @@ const chain: Chain = {
       },
       {
         name: 'v20',
-        tag: 'v20.2.1',
+        tag: 'v20.5.0',
         height: 12028900,
-        recommended_version: 'v20.2.1',
-        compatible_versions: [
-          'v20.2.1',
-          'v20.2.0',
-          'v20.1.2',
-          'v20.1.1',
-          'v20.1.0'
-        ],
+        recommended_version: 'v20.5.0',
+        compatible_versions: ['v20.5.0'],
         cosmos_sdk_version:
           'osmosis-labs/cosmos-sdk@0.45.0-rc1.0.20230922030206-734f99fba785',
         consensus: {
@@ -330,9 +318,9 @@ const chain: Chain = {
         ics_enabled: ['ics20-1'],
         binaries: {
           'linux/amd64':
-            'https://github.com/osmosis-labs/osmosis/releases/download/v20.2.1/osmosisd-20.2.1-linux-amd64?checksum=sha256:4e60a870861ca17819fbcb49fff981b5731ec1121d7cbab43987c5f04ff099fa',
+            'https://github.com/osmosis-labs/osmosis/releases/download/v20.5.0/osmosisd-20.5.0-linux-amd64?checksum=sha256:f9ff6176e32499f22b20288c71dbc802556eb5399baef23de164fe6158a55a69',
           'linux/arm64':
-            'https://github.com/osmosis-labs/osmosis/releases/download/v20.2.1/osmosisd-20.2.1-linux-arm64?checksum=sha256:4e7fe2cc369a9eef28a8083414c2d7e0a8cb5eb5b75e913ded06ee457dff62bb'
+            'https://github.com/osmosis-labs/osmosis/releases/download/v20.5.0/osmosisd-20.5.0-linux-arm64?checksum=sha256:99359257ff81d21b55b685924a74473d532cbc5af196a672a784bf13dad06d26'
         }
       }
     ]
@@ -342,10 +330,13 @@ const chain: Chain = {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png',
       theme: {
         primary_color_hex: '#231D4B'
-      }
+      },
+      layout: 'logo',
+      text_position: 'right'
     },
     {
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
+      layout: 'logomark'
     }
   ],
   logo_URIs: {
@@ -386,9 +377,9 @@ const chain: Chain = {
         provider: 'FreshSTAKING'
       },
       {
-        id: 'bd7064a50f5843e2c84c71c4dc18ac07424bdcc1',
+        id: 'c28827cb96c14c905b127b92065a3fb4cd77d7f6',
         address: 'seeds.whispernode.com:12556',
-        provider: 'WhisperNode🤐'
+        provider: 'WhisperNode 🤐'
       },
       {
         id: '38ab18cb2ea1dfeb6232b429e1508f56b6ae5031',
@@ -404,6 +395,11 @@ const chain: Chain = {
         id: '8542cd7e6bf9d260fef543bc49e59be5a3fa9074',
         address: 'seed.publicnode.com:26656',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        id: '2cb8dd6195c65458e3c18505bb70ce2ff624f85c',
+        address: 'seed.osmosis.validatus.com:2000',
+        provider: 'Validatus'
       }
     ],
     persistent_peers: [
@@ -543,6 +539,10 @@ const chain: Chain = {
       {
         address: 'https://osmosis-rpc.reece.sh',
         provider: 'Reecepbcups'
+      },
+      {
+        address: 'https://rpc.osmosis.validatus.com',
+        provider: 'Validatus'
       }
     ],
     rest: [
@@ -596,7 +596,7 @@ const chain: Chain = {
       },
       {
         address: 'https://lcd-osmosis.whispernode.com:443',
-        provider: 'WhisperNode🤐'
+        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://api-osmosis.mms.team',
@@ -621,6 +621,10 @@ const chain: Chain = {
       {
         address: 'https://osmosis-api.reece.sh',
         provider: 'Reecepbcups'
+      },
+      {
+        address: 'https://api.osmosis.validatus.com:443',
+        provider: 'Validatus'
       },
       {
         address: 'https://osmosis.stakesystems.io/',
@@ -679,6 +683,14 @@ const chain: Chain = {
       {
         address: 'osmosis-mainnet.grpc.l0vd.com:80',
         provider: 'L0vd.com ❤️'
+      },
+      {
+        address: 'grpc-osmosis.whispernode.com:443',
+        provider: 'WhisperNode 🤐'
+      },
+      {
+        address: 'grpc.osmosis.validatus.com:443',
+        provider: 'Validatus'
       }
     ]
   },
