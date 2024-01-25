@@ -3952,6 +3952,178 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'Tacos',
+      denom_units: [
+        {
+          denom:
+            'ibc/7A70A4681F85E891C9482E33DAA996489E278BB978054DC37245951BA69E5C4D',
+          exponent: 0,
+          aliases: [
+            'factory/chihuahua13jawsn574rf3f0u5rhu7e8n6sayx5gkw3eddhp/utacos'
+          ]
+        },
+        {
+          denom: 'TACOS',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/7A70A4681F85E891C9482E33DAA996489E278BB978054DC37245951BA69E5C4D',
+      name: 'TACOS',
+      display: 'TACOS',
+      symbol: 'TACOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/tacos.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/tacos.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-7',
+            base_denom:
+              'factory/chihuahua13jawsn574rf3f0u5rhu7e8n6sayx5gkw3eddhp/utacos',
+            chain_name: 'chihuahua'
+          },
+          chain: {
+            channel_id: 'channel-113'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Weed',
+      denom_units: [
+        {
+          denom:
+            'ibc/3A0557388E2F2DB666E5D0C093E0376E154CF08BCB33C8DC5F01D1F9F928FA1B',
+          exponent: 0,
+          aliases: [
+            'factory/chihuahua13jawsn574rf3f0u5rhu7e8n6sayx5gkw3eddhp/uweed'
+          ]
+        },
+        {
+          denom: 'WEED',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/3A0557388E2F2DB666E5D0C093E0376E154CF08BCB33C8DC5F01D1F9F928FA1B',
+      name: 'WEED',
+      display: 'WEED',
+      symbol: 'WEED',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/weed.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/weed.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-7',
+            base_denom:
+              'factory/chihuahua13jawsn574rf3f0u5rhu7e8n6sayx5gkw3eddhp/uweed',
+            chain_name: 'chihuahua'
+          },
+          chain: {
+            channel_id: 'channel-113'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Bulldog',
+      denom_units: [
+        {
+          denom:
+            'ibc/C14D27EC66201E77505B4B29D0AB50B534BD96AAF82F563B57FE5AE15371257E',
+          exponent: 0,
+          aliases: [
+            'factory/chihuahua13jawsn574rf3f0u5rhu7e8n6sayx5gkw3eddhp/ubdog'
+          ]
+        },
+        {
+          denom: 'BDOG',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/C14D27EC66201E77505B4B29D0AB50B534BD96AAF82F563B57FE5AE15371257E',
+      name: 'BDOG',
+      display: 'BDOG',
+      symbol: 'BDOG',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bdog.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bdog.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-7',
+            base_denom:
+              'factory/chihuahua13jawsn574rf3f0u5rhu7e8n6sayx5gkw3eddhp/ubdog',
+            chain_name: 'chihuahua'
+          },
+          chain: {
+            channel_id: 'channel-113'
+          }
+        }
+      ]
+    },
+    {
+      description: 'CaneCorso',
+      denom_units: [
+        {
+          denom:
+            'ibc/4E24E7E9294AA42CC37555F5582A7511774BB525DB504E8C5F50B84B0D5F1E04',
+          exponent: 0,
+          aliases: [
+            'factory/chihuahua13jawsn574rf3f0u5rhu7e8n6sayx5gkw3eddhp/ucorso'
+          ]
+        },
+        {
+          denom: 'CORSO',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/4E24E7E9294AA42CC37555F5582A7511774BB525DB504E8C5F50B84B0D5F1E04',
+      name: 'CORSO',
+      display: 'CORSO',
+      symbol: 'CORSO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/corso.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/corso.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-7',
+            base_denom:
+              'factory/chihuahua13jawsn574rf3f0u5rhu7e8n6sayx5gkw3eddhp/ucorso',
+            chain_name: 'chihuahua'
+          },
+          chain: {
+            channel_id: 'channel-113'
+          }
+        }
+      ]
+    },
+    {
       description: 'Native Token of Comdex Protocol',
       denom_units: [
         {
@@ -5224,10 +5396,8 @@ const asset_list: AssetList = {
           aliases: ['echf']
         },
         {
-          denom:
-            'ibc/9BC783D73D46226BC948F34BC9136C081B89144E646DB5E4C1E8A6A4E777DC1B',
-          exponent: 6,
-          aliases: ['echf']
+          denom: 'chf',
+          exponent: 6
         }
       ],
       base: 'ibc/9BC783D73D46226BC948F34BC9136C081B89144E646DB5E4C1E8A6A4E777DC1B',
@@ -5270,10 +5440,8 @@ const asset_list: AssetList = {
           aliases: ['enok']
         },
         {
-          denom:
-            'ibc/1733402CBEA1D9D9D13DEA1EF1A76A116B51F5FF252A4DBBE6240DBFF8758EFC',
-          exponent: 6,
-          aliases: ['enok']
+          denom: 'nok',
+          exponent: 6
         }
       ],
       base: 'ibc/1733402CBEA1D9D9D13DEA1EF1A76A116B51F5FF252A4DBBE6240DBFF8758EFC',
@@ -5316,10 +5484,8 @@ const asset_list: AssetList = {
           aliases: ['edkk']
         },
         {
-          denom:
-            'ibc/737BA149DE0967CA64C7A6FFCF5026EC7C6210F4BA1A3B1429E4FEBDEB4940F2',
-          exponent: 6,
-          aliases: ['edkk']
+          denom: 'dkk',
+          exponent: 6
         }
       ],
       base: 'ibc/737BA149DE0967CA64C7A6FFCF5026EC7C6210F4BA1A3B1429E4FEBDEB4940F2',
@@ -5362,10 +5528,8 @@ const asset_list: AssetList = {
           aliases: ['esek']
         },
         {
-          denom:
-            'ibc/686B4FE801A81ED9B46CC2E24FF3A7EA2E6A1E1A2A4D73BD7F2BC2866007AB0A',
-          exponent: 6,
-          aliases: ['esek']
+          denom: 'sek',
+          exponent: 6
         }
       ],
       base: 'ibc/686B4FE801A81ED9B46CC2E24FF3A7EA2E6A1E1A2A4D73BD7F2BC2866007AB0A',
@@ -6449,6 +6613,57 @@ const asset_list: AssetList = {
           image_sync: {
             chain_name: 'ethereum',
             base_denom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+      }
+    },
+    {
+      description:
+        'Avalanche USD Coin (Wormhole), Avalanche USDC, factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5ZLmAZpcbaP4EGyihSmpfwryzDr84h51tboV392BCjW4',
+      denom_units: [
+        {
+          denom:
+            'ibc/0B3C3D06228578334B66B57FBFBA4033216CEB8119B27ACDEE18D92DA5B28D43',
+          exponent: 0,
+          aliases: [
+            'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5ZLmAZpcbaP4EGyihSmpfwryzDr84h51tboV392BCjW4'
+          ]
+        },
+        {
+          denom: 'wormhole/5ZLmAZpcbaP4EGyihSmpfwryzDr84h51tboV392BCjW4/6',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      address:
+        'wormhole1utjx3594tlvfw4375esgu72wa4sdgf0q7x4ye27husf5kvuzp5rsr72gdq',
+      base: 'ibc/0B3C3D06228578334B66B57FBFBA4033216CEB8119B27ACDEE18D92DA5B28D43',
+      display: 'wormhole/5ZLmAZpcbaP4EGyihSmpfwryzDr84h51tboV392BCjW4/6',
+      name: 'Avalanche USD Coin (Wormhole)',
+      symbol: 'avalanche.USDC.wh',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5ZLmAZpcbaP4EGyihSmpfwryzDr84h51tboV392BCjW4',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-2186'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'avalanche',
+            base_denom: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }
@@ -7713,6 +7928,48 @@ const asset_list: AssetList = {
             channel_id: 'channel-0',
             base_denom:
               'factory/juno1u805lv20qc6jy7c3ttre7nct6uyl20pfky5r7e/DGL',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-42'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Hava Coin is the lifeblood of the Cosmos & Juno networks, rewarding builders and welcoming supporters. https://havacoin.xyz/',
+      denom_units: [
+        {
+          denom:
+            'ibc/BB23594A71B0A7AFF92599C1706CC10592D8AC01C88091346018C4570751E55B',
+          exponent: 0,
+          aliases: ['factory/juno195asgku87kxgu48s447z0ryhsyn5rl3yzvfw0d/uhava']
+        },
+        {
+          denom: 'hava',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/BB23594A71B0A7AFF92599C1706CC10592D8AC01C88091346018C4570751E55B',
+      name: 'Hava Coin',
+      display: 'hava',
+      symbol: 'HAVA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hava.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hava.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'factory/juno195asgku87kxgu48s447z0ryhsyn5rl3yzvfw0d/uhava',
             chain_name: 'juno'
           },
           chain: {
@@ -10137,7 +10394,7 @@ const asset_list: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/826E9CA855EE3DA8AEC5F807DAFA82BBD7A0975CF7ADA5FA50D58AC0F4F3A61D',
+            'ibc/530C2CB76D0F35CB7D81DF2BB9C14106678BC75E35719A02C4D49FC0B755D59D',
           exponent: 0,
           aliases: [
             'ibc/86A25A8A327164AE7C68A29B6ED745C7EEDC36E260A6666F33A6407BECEC4737'
@@ -10149,7 +10406,7 @@ const asset_list: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/826E9CA855EE3DA8AEC5F807DAFA82BBD7A0975CF7ADA5FA50D58AC0F4F3A61D',
+      base: 'ibc/530C2CB76D0F35CB7D81DF2BB9C14106678BC75E35719A02C4D49FC0B755D59D',
       name: 'Tether USDt',
       display: 'usdt',
       symbol: 'USDt',
@@ -10865,6 +11122,357 @@ const asset_list: AssetList = {
             channel_id: 'channel-10',
             base_denom:
               'factory/neutron108x7vp9zv22d6wxrs9as8dshd3pd5vsga463yd/JIMMY',
+            chain_name: 'neutron'
+          },
+          chain: {
+            channel_id: 'channel-874'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Baddest coin on Cosmos',
+      denom_units: [
+        {
+          denom:
+            'ibc/442A08C33AE9875DF90792FFA73B5728E1CAECE87AB4F26AE9B422F1E682ED23',
+          exponent: 0,
+          aliases: [
+            'factory/neutron143wp6g8paqasnuuey6zyapucknwy9rhnld8hkr/bad'
+          ]
+        },
+        {
+          denom: 'bad',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/442A08C33AE9875DF90792FFA73B5728E1CAECE87AB4F26AE9B422F1E682ED23',
+      name: 'Badcoin',
+      display: 'bad',
+      symbol: 'BAD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/bad.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/bad.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom:
+              'factory/neutron143wp6g8paqasnuuey6zyapucknwy9rhnld8hkr/bad',
+            chain_name: 'neutron'
+          },
+          chain: {
+            channel_id: 'channel-874'
+          }
+        }
+      ]
+    },
+    {
+      description: 'BITCOSMOS',
+      denom_units: [
+        {
+          denom:
+            'ibc/637E59EBF7B5DA40A727E59411B6A0698752241E5CBB1621328FF8F892266757',
+          exponent: 0,
+          aliases: [
+            'neutron1fjzg7fmv770hsvahqm0nwnu6grs3rjnd2wa6fvm9unv6vedkzekqpw44qj'
+          ]
+        },
+        {
+          denom: 'bitcosmos',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/637E59EBF7B5DA40A727E59411B6A0698752241E5CBB1621328FF8F892266757',
+      name: 'Bitcosmos',
+      display: 'bitcosmos',
+      symbol: 'BTC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/bitcosmos.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/bitcosmos.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom:
+              'neutron1fjzg7fmv770hsvahqm0nwnu6grs3rjnd2wa6fvm9unv6vedkzekqpw44qj',
+            chain_name: 'neutron'
+          },
+          chain: {
+            channel_id: 'channel-874'
+          }
+        }
+      ]
+    },
+    {
+      description: 'What the Fuck',
+      denom_units: [
+        {
+          denom:
+            'ibc/16F22B50357BBB091932B5B9FB2BF1C87192A725D4DCD5BC1B10241771E36C3C',
+          exponent: 0,
+          aliases: [
+            'neutron12h09p8hq5y4xpsmcuxxzsn9juef4f6jvekp8yefc6xnlwm6uumnsdk29wf'
+          ]
+        },
+        {
+          denom: 'wtf',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/16F22B50357BBB091932B5B9FB2BF1C87192A725D4DCD5BC1B10241771E36C3C',
+      name: 'wtf',
+      display: 'wtf',
+      symbol: 'WTF',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/WTF.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/WTF.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom:
+              'neutron12h09p8hq5y4xpsmcuxxzsn9juef4f6jvekp8yefc6xnlwm6uumnsdk29wf',
+            chain_name: 'neutron'
+          },
+          chain: {
+            channel_id: 'channel-874'
+          }
+        }
+      ]
+    },
+    {
+      description: 'NLS on Neutron',
+      denom_units: [
+        {
+          denom:
+            'ibc/D34911DAAC94F2270CDF93317FD16537B02F5CA26C20AB1AA5285AD3C0B97D6C',
+          exponent: 0,
+          aliases: [
+            'ibc/6C9E6701AC217C0FC7D74B0F7A6265B9B4E3C3CDA6E80AADE5F950A8F52F9972'
+          ]
+        },
+        {
+          denom: 'nls',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/D34911DAAC94F2270CDF93317FD16537B02F5CA26C20AB1AA5285AD3C0B97D6C',
+      name: 'Nolus NLS',
+      display: 'nls',
+      symbol: 'NLS',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom:
+              'ibc/6C9E6701AC217C0FC7D74B0F7A6265B9B4E3C3CDA6E80AADE5F950A8F52F9972',
+            chain_name: 'neutron'
+          },
+          chain: {
+            channel_id: 'channel-874'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'nolus',
+            base_denom: 'unls'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg'
+      }
+    },
+    {
+      description: 'A Mechanical Canine',
+      denom_units: [
+        {
+          denom:
+            'ibc/4CAD11BA3FC5ABFD94B84FAEA13B61EC0DBAA8C9A7722D40F264B64D206786DA',
+          exponent: 0,
+          aliases: [
+            'factory/neutron1t5qrjtyryh8gzt800qr5vylhh2f8cmx4wmz9mc/ugoddard'
+          ]
+        },
+        {
+          denom: 'goddard',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/4CAD11BA3FC5ABFD94B84FAEA13B61EC0DBAA8C9A7722D40F264B64D206786DA',
+      name: 'Goddard',
+      display: 'goddard',
+      symbol: 'GODRD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/goddardntrn.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/goddardntrn.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom:
+              'factory/neutron1t5qrjtyryh8gzt800qr5vylhh2f8cmx4wmz9mc/ugoddard',
+            chain_name: 'neutron'
+          },
+          chain: {
+            channel_id: 'channel-874'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The deflationary utility token of the Apollo DAO project',
+      denom_units: [
+        {
+          denom:
+            'ibc/73BB20AF857D1FE6E061D01CA13870872AD0C979497CAF71BEA25B1CBF6879F1',
+          exponent: 0,
+          aliases: [
+            'factory/neutron154gg0wtm2v4h9ur8xg32ep64e8ef0g5twlsgvfeajqwghdryvyqsqhgk8e/APOLLO'
+          ]
+        },
+        {
+          denom: 'apollo',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/73BB20AF857D1FE6E061D01CA13870872AD0C979497CAF71BEA25B1CBF6879F1',
+      name: 'Apollo DAO',
+      display: 'apollo',
+      symbol: 'APOLLO',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/apollo.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/apollo.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom:
+              'factory/neutron154gg0wtm2v4h9ur8xg32ep64e8ef0g5twlsgvfeajqwghdryvyqsqhgk8e/APOLLO',
+            chain_name: 'neutron'
+          },
+          chain: {
+            channel_id: 'channel-874'
+          }
+        }
+      ]
+    },
+    {
+      description: 'NEWTROLL',
+      denom_units: [
+        {
+          denom:
+            'ibc/9DF7390F2A2115F7FFF8D8EB5C18A95644FD030DB57EBA9177B3FA86A7BCBC69',
+          exponent: 0,
+          aliases: [
+            'factory/neutron1ume2n42r5j0660gegrr28fzdze7aqf7r5cd9y6/newtroll'
+          ]
+        },
+        {
+          denom: 'newtroll',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/9DF7390F2A2115F7FFF8D8EB5C18A95644FD030DB57EBA9177B3FA86A7BCBC69',
+      name: 'Newtroll',
+      display: 'newtroll',
+      symbol: 'NTRL',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/newtroll.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/newtroll.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom:
+              'factory/neutron1ume2n42r5j0660gegrr28fzdze7aqf7r5cd9y6/newtroll',
+            chain_name: 'neutron'
+          },
+          chain: {
+            channel_id: 'channel-874'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Retro Game',
+      denom_units: [
+        {
+          denom:
+            'ibc/CACB03CF37B27F6C0ED81DC3762A33B6939EB137CBD12C70ACD6B721F2BF1FA4',
+          exponent: 0,
+          aliases: [
+            'factory/neutron1t24nc7whl77relnu3taxyg3p66pjyuk82png2y/uretro'
+          ]
+        },
+        {
+          denom: 'retro',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/CACB03CF37B27F6C0ED81DC3762A33B6939EB137CBD12C70ACD6B721F2BF1FA4',
+      name: 'Retro',
+      display: 'retro',
+      symbol: 'RETRO',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/retro.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/retro.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom:
+              'factory/neutron1t24nc7whl77relnu3taxyg3p66pjyuk82png2y/uretro',
             chain_name: 'neutron'
           },
           chain: {
@@ -11940,6 +12548,164 @@ const asset_list: AssetList = {
       }
     },
     {
+      description:
+        'STRD transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/B899EACD7F514A95A4D724FD571948FD312D8FE184635551B97FB4704613C76D',
+          exponent: 0,
+          aliases: [
+            'ibc/04CA9067228BB51F1C39A506DA00DF07E1496D8308DD21E8EF66AD6169FA722B'
+          ]
+        },
+        {
+          denom: 'strd',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/B899EACD7F514A95A4D724FD571948FD312D8FE184635551B97FB4704613C76D',
+      name: 'STRD',
+      display: 'strd',
+      symbol: 'STRD',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'ibc/04CA9067228BB51F1C39A506DA00DF07E1496D8308DD21E8EF66AD6169FA722B',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-783'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'ibc/A8CA5EE328FA10C9519DF6057DA1F69682D28F7D0F5CCC7ECB72E3DCA2D157A4'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+      }
+    },
+    {
+      description:
+        'NTRN transferred from the Neutron mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/5542CD6473DF773D60629A95F89BA9DC5DFDB1B01369D8020434270D263A3396',
+          exponent: 0,
+          aliases: [
+            'ibc/3D6BC6E049CAEB905AC97031A42800588C58FB471EBDC7A3530FFCD0C3DC9E09'
+          ]
+        },
+        {
+          denom: 'ntrn',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/5542CD6473DF773D60629A95F89BA9DC5DFDB1B01369D8020434270D263A3396',
+      name: 'NTRN',
+      display: 'ntrn',
+      symbol: 'NTRN',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'ibc/3D6BC6E049CAEB905AC97031A42800588C58FB471EBDC7A3530FFCD0C3DC9E09',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-783'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'neutron',
+            base_denom: 'untrn'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron.svg'
+      }
+    },
+    {
+      description:
+        'DYDX transferred from the Neutron mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/F4EE80BAD0B54C6F3523B3D34F6C7A30BBA8690469722B81ACE59EC6CBB43D71',
+          exponent: 0,
+          aliases: [
+            'ibc/6DF8CF5C976851D152E2C7270B0AB25C4F9D64C0A46513A68D6CBB2662A98DF4'
+          ]
+        },
+        {
+          denom: 'dydx',
+          exponent: 18,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/F4EE80BAD0B54C6F3523B3D34F6C7A30BBA8690469722B81ACE59EC6CBB43D71',
+      name: 'DYDX',
+      display: 'dydx',
+      symbol: 'DYDX',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'ibc/6DF8CF5C976851D152E2C7270B0AB25C4F9D64C0A46513A68D6CBB2662A98DF4',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-783'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'neutron',
+            base_denom:
+              'ibc/2CB87BCE0937B1D1DFCEE79BE4501AAF3C265E923509AEAC410AD85D27F35130'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
+      }
+    },
+    {
       description: "Nomic's native token.",
       denom_units: [
         {
@@ -12924,7 +13690,7 @@ const asset_list: AssetList = {
             'ibc/2EB516F83C9FF44AB6826F269CA98A5622608C6C955E12112E58F23A324FEE07',
           exponent: 0,
           aliases: [
-            'ibc/55367b7b6572631b78a93c66ef9fdfce87cde372cc4ed7848da78c1eb1dcdd78'
+            'ibc/55367B7B6572631B78A93C66EF9FDFCE87CDE372CC4ED7848DA78C1EB1DCDD78'
           ]
         },
         {
@@ -12946,7 +13712,7 @@ const asset_list: AssetList = {
           counterparty: {
             channel_id: 'channel-1',
             base_denom:
-              'ibc/55367b7b6572631b78a93c66ef9fdfce87cde372cc4ed7848da78c1eb1dcdd78',
+              'ibc/55367B7B6572631B78A93C66EF9FDFCE87CDE372CC4ED7848DA78C1EB1DCDD78',
             chain_name: 'pundix'
           },
           chain: {
@@ -19964,7 +20730,7 @@ const asset_list: AssetList = {
       ],
       base: 'ibc/0E30775281643124D79B8670ACD3F478AC5FAB2B1CA1E32903D0775D8A8BB064',
       name: 'Palantin',
-      display: 'palantin',
+      display: 'pltn',
       symbol: 'PLTN',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/pltn.png'
@@ -21660,6 +22426,49 @@ const asset_list: AssetList = {
             channel_id: 'channel-85',
             base_denom:
               'cw20:terra1cl273523kmr2uwjhhznq54je69mted2u3ljffm8kp2ap4z3drdksftwqun',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }
+      ]
+    },
+    {
+      description: 'ado the flower of night',
+      type_asset: 'cw20',
+      address:
+        'terra1w8xk6rtu40st6lvl3yv7ynw5urm2n686u9cchvrzltmnktzwdesqcwy0nu',
+      denom_units: [
+        {
+          denom:
+            'ibc/DF5B633763109623079D70726116A7EEBDE02C40AB3616A23666DA02F7A5744A',
+          exponent: 0,
+          aliases: [
+            'cw20:terra1w8xk6rtu40st6lvl3yv7ynw5urm2n686u9cchvrzltmnktzwdesqcwy0nu'
+          ]
+        },
+        {
+          denom: 'ADO',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/DF5B633763109623079D70726116A7EEBDE02C40AB3616A23666DA02F7A5744A',
+      name: 'ADO',
+      display: 'ADO',
+      symbol: 'ADO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ADO.png'
+      },
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom:
+              'cw20:terra1w8xk6rtu40st6lvl3yv7ynw5urm2n686u9cchvrzltmnktzwdesqcwy0nu',
             chain_name: 'terra2'
           },
           chain: {

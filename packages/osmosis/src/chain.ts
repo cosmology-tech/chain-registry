@@ -543,6 +543,10 @@ const chain: Chain = {
       {
         address: 'https://rpc.osmosis.validatus.com',
         provider: 'Validatus'
+      },
+      {
+        address: 'https://rpc.osmosis.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ],
     rest: [
@@ -627,6 +631,10 @@ const chain: Chain = {
         provider: 'Validatus'
       },
       {
+        address: 'https://lcd.osmosis.bronbro.io:443',
+        provider: 'Bro_n_Bro'
+      },
+      {
         address: 'https://osmosis.stakesystems.io/',
         provider: 'stakesystems'
       }
@@ -691,6 +699,10 @@ const chain: Chain = {
       {
         address: 'grpc.osmosis.validatus.com:443',
         provider: 'Validatus'
+      },
+      {
+        address: 'https://grpc.osmosis.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ]
   },
@@ -751,6 +763,11 @@ const chain: Chain = {
       kind: 'L0vd.com ❤️',
       url: 'https://explorers.l0vd.com/osmosis-mainnet',
       tx_page: 'https://explorers.l0vd.com/osmosis-mainnet/tx/${txHash}'
+    },
+    {
+      kind: 'Chainscope',
+      url: 'https://chainsco.pe/osmosis',
+      tx_page: 'https://chainsco.pe/osmosis/tx/${txHash}'
     }
   ],
   keywords: ['dex']

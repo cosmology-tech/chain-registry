@@ -371,6 +371,10 @@ const chain: Chain = {
       {
         address: 'https://juno-rpc.stakeandrelax.net',
         provider: 'Stake&Relax 🦥'
+      },
+      {
+        address: 'https://rpc.juno.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ],
     rest: [
@@ -465,6 +469,10 @@ const chain: Chain = {
       {
         address: 'https://juno-api.stakeandrelax.net',
         provider: 'Stake&Relax 🦥'
+      },
+      {
+        address: 'https://lcd.juno.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ],
     grpc: [
@@ -531,6 +539,10 @@ const chain: Chain = {
       {
         address: 'juno-grpc.stakeandrelax.net:12690',
         provider: 'Stake&Relax 🦥'
+      },
+      {
+        address: 'https://grpc.juno.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ]
   },
