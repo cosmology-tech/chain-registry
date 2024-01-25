@@ -94,6 +94,10 @@ export type AssetTrace =
   | AdditionalMintageTrace;
 
 export interface LogoImage {
+  image_sync?: {
+    chain_name: string;
+    base_denom: string;
+  };
   png?: string;
   svg?: string;
   jpeg?: string;

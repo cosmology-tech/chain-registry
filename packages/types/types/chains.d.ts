@@ -3,6 +3,7 @@ export interface Chain {
     chain_name: string;
     pre_fork_chain_name?: string;
     status: string;
+    description?: string;
     network_type: string;
     update_link?: string;
     pretty_name: string;

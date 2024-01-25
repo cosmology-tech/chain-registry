@@ -81,6 +81,10 @@ export interface IBCCw20Trace {
 }
 export type AssetTrace = IBCCw20Trace | IBCTrace | SyntheicTrace | LiquidStakeTrace | WrapTrace | BridgeTrace | AdditionalMintageTrace;
 export interface LogoImage {
+    image_sync?: {
+        chain_name: string;
+        base_denom: string;
+    };
     png?: string;
     svg?: string;
     jpeg?: string;
