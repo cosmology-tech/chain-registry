@@ -1583,45 +1583,6 @@ exports[`getAssetLists 1`] = `
         ],
       },
       {
-        "address": "juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr",
-        "base": "ibc/F41168F3687219CC7D83965B601BAAB30E61A6B4E268A5DE0C88522C700E6EB3",
-        "coingecko_id": "neta",
-        "denom_units": [
-          {
-            "aliases": [
-              "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
-            ],
-            "denom": "ibc/F41168F3687219CC7D83965B601BAAB30E61A6B4E268A5DE0C88522C700E6EB3",
-            "exponent": 0,
-          },
-          {
-            "denom": "neta",
-            "exponent": 6,
-          },
-        ],
-        "description": "The native token cw20 for Neta on Juno Chain",
-        "display": "neta",
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/osmosis-labs/assetlists/main/images/neta.png",
-        },
-        "name": "Neta",
-        "symbol": "NETA",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-37",
-            },
-            "counterparty": {
-              "base_denom": "ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A",
-              "chain_name": "juno",
-              "channel_id": "channel-33",
-            },
-            "type": "ibc",
-          },
-        ],
-        "type_asset": "cw20",
-      },
-      {
         "base": "ibc/1D1218E270EC508BAF00AEA3EB24E6FA50C19D93AFABD406886633098D0B76B0",
         "coingecko_id": "kava",
         "denom_units": [
