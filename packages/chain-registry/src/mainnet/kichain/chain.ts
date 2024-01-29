@@ -1,163 +1,161 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
-  "$schema": "../chain.schema.json",
-  "chain_name": "kichain",
-  "status": "live",
-  "network_type": "mainnet",
-  "website": "https://foundation.ki/",
-  "pretty_name": "Ki",
-  "chain_id": "kichain-2",
-  "bech32_prefix": "ki",
-  "daemon_name": "kid",
-  "node_home": "$HOME/.kid",
-  "key_algos": [
-    "secp256k1"
-  ],
-  "slip44": 118,
-  "fees": {
-    "fee_tokens": [
+  $schema: '../chain.schema.json',
+  chain_name: 'kichain',
+  status: 'live',
+  network_type: 'mainnet',
+  website: 'https://foundation.ki/',
+  pretty_name: 'Ki',
+  chain_id: 'kichain-2',
+  bech32_prefix: 'ki',
+  daemon_name: 'kid',
+  node_home: '$HOME/.kid',
+  key_algos: ['secp256k1'],
+  slip44: 118,
+  fees: {
+    fee_tokens: [
       {
-        "denom": "uxki",
-        "fixed_min_gas_price": 0.025,
-        "low_gas_price": 0.025,
-        "average_gas_price": 0.03,
-        "high_gas_price": 0.05
+        denom: 'uxki',
+        fixed_min_gas_price: 0.025,
+        low_gas_price: 0.025,
+        average_gas_price: 0.03,
+        high_gas_price: 0.05
       }
     ]
   },
-  "staking": {
-    "staking_tokens": [
+  staking: {
+    staking_tokens: [
       {
-        "denom": "uxki"
+        denom: 'uxki'
       }
     ]
   },
-  "codebase": {},
-  "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png",
-    "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg"
+  codebase: {},
+  logo_URIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'
   },
-  "apis": {
-    "rpc": [
+  apis: {
+    rpc: [
       {
-        "address": "https://rpc-mainnet.blockchain.ki",
-        "provider": "kifoundation"
+        address: 'https://rpc-mainnet.blockchain.ki',
+        provider: 'kifoundation'
       },
       {
-        "address": "https://kichain-rpc.polkachu.com",
-        "provider": "Polkachu"
+        address: 'https://kichain-rpc.polkachu.com',
+        provider: 'Polkachu'
       },
       {
-        "address": "https://rpc-kichain-ia.cosmosia.notional.ventures/",
-        "provider": "Notional"
+        address: 'https://rpc-kichain-ia.cosmosia.notional.ventures/',
+        provider: 'Notional'
       },
       {
-        "address": "https://kichain-mainnet-rpc.autostake.com:443",
-        "provider": "AutoStake 🛡️ Slash Protected"
+        address: 'https://kichain-mainnet-rpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        "address": "https://rpc.kichain.chaintools.tech/",
-        "provider": "ChainTools"
+        address: 'https://rpc.kichain.chaintools.tech/',
+        provider: 'ChainTools'
       },
       {
-        "address": "https://kichain-rpc.lavenderfive.com/",
-        "provider": "Lavender.Five Nodes 🐝"
+        address: 'https://kichain-rpc.lavenderfive.com/',
+        provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        "address": "http://ki-chain.statesync.nodersteam.com:14657",
-        "provider": "[NODERS]TEAM"
+        address: 'http://ki-chain.statesync.nodersteam.com:14657',
+        provider: '[NODERS]TEAM'
       },
       {
-        "address": "https://ki-rpc.ibs.team/",
-        "provider": "Inter Blockchain Services"
+        address: 'https://ki-rpc.ibs.team/',
+        provider: 'Inter Blockchain Services'
       }
     ],
-    "rest": [
+    rest: [
       {
-        "address": "https://api-mainnet.blockchain.ki",
-        "provider": "kifoundation"
+        address: 'https://api-mainnet.blockchain.ki',
+        provider: 'kifoundation'
       },
       {
-        "address": "https://api-kichain-ia.cosmosia.notional.ventures/",
-        "provider": "Notional"
+        address: 'https://api-kichain-ia.cosmosia.notional.ventures/',
+        provider: 'Notional'
       },
       {
-        "address": "https://api.kichain.chaintools.tech/",
-        "provider": "ChainTools"
+        address: 'https://api.kichain.chaintools.tech/',
+        provider: 'ChainTools'
       },
       {
-        "address": "https://kichain-mainnet-lcd.autostake.com:443",
-        "provider": "AutoStake 🛡️ Slash Protected"
+        address: 'https://kichain-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        "address": "http://ki-chain.api.nodersteam.com:14017",
-        "provider": "[NODERS]TEAM"
+        address: 'http://ki-chain.api.nodersteam.com:14017',
+        provider: '[NODERS]TEAM'
       },
       {
-        "address": "https://kichain-api.polkachu.com",
-        "provider": "Polkachu"
+        address: 'https://kichain-api.polkachu.com',
+        provider: 'Polkachu'
       },
       {
-        "address": "https://kichain-api.lavenderfive.com/",
-        "provider": "Lavender.Five Nodes 🐝"
+        address: 'https://kichain-api.lavenderfive.com/',
+        provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        "address": "https://ki-api.ibs.team/",
-        "provider": "Inter Blockchain Services"
+        address: 'https://ki-api.ibs.team/',
+        provider: 'Inter Blockchain Services'
       }
     ],
-    "grpc": [
+    grpc: [
       {
-        "address": "grpc-kichain-ia.cosmosia.notional.ventures:443",
-        "provider": "Notional"
+        address: 'grpc-kichain-ia.cosmosia.notional.ventures:443',
+        provider: 'Notional'
       },
       {
-        "address": "kichain-mainnet-grpc.autostake.com:443",
-        "provider": "AutoStake 🛡️ Slash Protected"
+        address: 'kichain-mainnet-grpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        "address": "ki-chain.grpc.nodersteam.com:9410",
-        "provider": "[NODERS]TEAM"
+        address: 'ki-chain.grpc.nodersteam.com:9410',
+        provider: '[NODERS]TEAM'
       },
       {
-        "address": "kichain-grpc.polkachu.com:13590",
-        "provider": "Polkachu"
+        address: 'kichain-grpc.polkachu.com:13590',
+        provider: 'Polkachu'
       },
       {
-        "address": "kichain-grpc.lavenderfive.com:443",
-        "provider": "Lavender.Five Nodes 🐝"
+        address: 'kichain-grpc.lavenderfive.com:443',
+        provider: 'Lavender.Five Nodes 🐝'
       }
     ]
   },
-  "explorers": [
+  explorers: [
     {
-      "kind": "EZ Staking",
-      "url": "https://app.ezstaking.io/kichain",
-      "tx_page": "https://app.ezstaking.io/kichain/txs/${txHash}",
-      "account_page": "https://app.ezstaking.io/kichain/account/${accountAddress}"
+      kind: 'EZ Staking',
+      url: 'https://app.ezstaking.io/kichain',
+      tx_page: 'https://app.ezstaking.io/kichain/txs/${txHash}',
+      account_page: 'https://app.ezstaking.io/kichain/account/${accountAddress}'
     },
     {
-      "kind": "mintscan",
-      "url": "https://www.mintscan.io/ki-chain",
-      "tx_page": "https://www.mintscan.io/ki-chain/txs/${txHash}",
-      "account_page": "https://www.mintscan.io/ki-chain/account/${accountAddress}"
+      kind: 'mintscan',
+      url: 'https://www.mintscan.io/ki-chain',
+      tx_page: 'https://www.mintscan.io/ki-chain/txs/${txHash}',
+      account_page: 'https://www.mintscan.io/ki-chain/account/${accountAddress}'
     },
     {
-      "kind": "ping.pub",
-      "url": "https://ping.pub/kichain",
-      "tx_page": "https://ping.pub/kichain/tx/${txHash}"
+      kind: 'ping.pub',
+      url: 'https://ping.pub/kichain',
+      tx_page: 'https://ping.pub/kichain/tx/${txHash}'
     },
     {
-      "kind": "atomscan",
-      "url": "https://atomscan.com/ki-chain",
-      "tx_page": "https://atomscan.com/ki-chain/transactions/${txHash}",
-      "account_page": "https://atomscan.com/ki-chain/accounts/${accountAddress}"
+      kind: 'atomscan',
+      url: 'https://atomscan.com/ki-chain',
+      tx_page: 'https://atomscan.com/ki-chain/transactions/${txHash}',
+      account_page: 'https://atomscan.com/ki-chain/accounts/${accountAddress}'
     }
   ],
-  "images": [
+  images: [
     {
-      "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png",
-      "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg"
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'
     }
   ]
 };

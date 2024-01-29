@@ -1,32 +1,32 @@
 import { IBCInfo } from '@chain-registry/types';
 const info: IBCInfo[] = [
   {
-    "$schema": "../ibc_data.schema.json",
-    "chain_1": {
-      "chain_name": "composablepolkadot",
-      "client_id": "10-grandpa-28",
-      "connection_id": "connection-23"
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'composablepolkadot',
+      client_id: '10-grandpa-28',
+      connection_id: 'connection-23'
     },
-    "chain_2": {
-      "chain_name": "picasso",
-      "client_id": "10-grandpa-28",
-      "connection_id": "connection-23"
+    chain_2: {
+      chain_name: 'picasso',
+      client_id: '10-grandpa-28',
+      connection_id: 'connection-23'
     },
-    "channels": [
+    channels: [
       {
-        "chain_1": {
-          "channel_id": "channel-15",
-          "port_id": "transfer"
+        chain_1: {
+          channel_id: 'channel-15',
+          port_id: 'transfer'
         },
-        "chain_2": {
-          "channel_id": "channel-15",
-          "port_id": "transfer"
+        chain_2: {
+          channel_id: 'channel-15',
+          port_id: 'transfer'
         },
-        "ordering": "unordered",
-        "version": "ics20-1",
-        "tags": {
-          "status": "live",
-          "preferred": true
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }
     ]

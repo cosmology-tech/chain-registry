@@ -1,37 +1,38 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../assetlist.schema.json",
-  "chain_name": "stratos",
-  "assets": [
+  $schema: '../assetlist.schema.json',
+  chain_name: 'stratos',
+  assets: [
     {
-      "description": "STOS coin is the token for the Stratos (STOS) cosmos based blockchain",
-      "denom_units": [
+      description:
+        'STOS coin is the token for the Stratos (STOS) cosmos based blockchain',
+      denom_units: [
         {
-          "denom": "wei",
-          "exponent": 0
+          denom: 'wei',
+          exponent: 0
         },
         {
-          "denom": "gwei",
-          "exponent": 9
+          denom: 'gwei',
+          exponent: 9
         },
         {
-          "denom": "stos",
-          "exponent": 18
+          denom: 'stos',
+          exponent: 18
         }
       ],
-      "base": "wei",
-      "name": "Stratos",
-      "display": "stos",
-      "symbol": "STOS",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.svg"
+      base: 'wei',
+      name: 'Stratos',
+      display: 'stos',
+      symbol: 'STOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.svg'
       },
-      "coingecko_id": "stratos",
-      "images": [
+      coingecko_id: 'stratos',
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.svg'
         }
       ]
     }

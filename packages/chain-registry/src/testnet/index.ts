@@ -82,4 +82,4 @@ export * as upticktestnet from './upticktestnet';
 export * as vincechaintestnet from './vincechaintestnet';
 export * as wavehashtestnet from './wavehashtestnet';
 export * as xiontestnet from './xiontestnet';
-export * as zetachaintestnet from './zetachaintestnet'
+export * as zetachaintestnet from './zetachaintestnet';

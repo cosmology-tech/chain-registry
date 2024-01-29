@@ -1,89 +1,87 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
-  "$schema": "../../chain.schema.json",
-  "chain_name": "arkeonetworktestnet",
-  "status": "live",
-  "network_type": "testnet",
-  "pretty_name": "Arkeo Network",
-  "chain_id": "arkeo",
-  "bech32_prefix": "tarkeo",
-  "daemon_name": "arkeod",
-  "node_home": "$HOME/.arkeo",
-  "key_algos": [
-    "secp256k1"
-  ],
-  "slip44": 118,
-  "fees": {
-    "fee_tokens": [
+  $schema: '../../chain.schema.json',
+  chain_name: 'arkeonetworktestnet',
+  status: 'live',
+  network_type: 'testnet',
+  pretty_name: 'Arkeo Network',
+  chain_id: 'arkeo',
+  bech32_prefix: 'tarkeo',
+  daemon_name: 'arkeod',
+  node_home: '$HOME/.arkeo',
+  key_algos: ['secp256k1'],
+  slip44: 118,
+  fees: {
+    fee_tokens: [
       {
-        "denom": "uarkeo"
+        denom: 'uarkeo'
       }
     ]
   },
-  "staking": {
-    "staking_tokens": [
+  staking: {
+    staking_tokens: [
       {
-        "denom": "uarkeo"
+        denom: 'uarkeo'
       }
     ]
   },
-  "codebase": {},
-  "apis": {
-    "rpc": [
+  codebase: {},
+  apis: {
+    rpc: [
       {
-        "address": "https://arkeonetwork-testnet.nodejumper.io:26657",
-        "provider": "NODEJUMPER"
+        address: 'https://arkeonetwork-testnet.nodejumper.io:26657',
+        provider: 'NODEJUMPER'
       },
       {
-        "address": "https://test-arkeo-rpc.kynraze.com",
-        "provider": "kynraze"
+        address: 'https://test-arkeo-rpc.kynraze.com',
+        provider: 'kynraze'
       },
       {
-        "address": "https://testnet-arkeo-rpc.lavenderfive.com",
-        "provider": "lavenderfive"
+        address: 'https://testnet-arkeo-rpc.lavenderfive.com',
+        provider: 'lavenderfive'
       },
       {
-        "address": "https://arkeo-rpc.siriusnodes.uk",
-        "provider": "siriusnodes"
+        address: 'https://arkeo-rpc.siriusnodes.uk',
+        provider: 'siriusnodes'
       },
       {
-        "address": "http://seed.arkeo.network:26657",
-        "provider": "arkeo"
+        address: 'http://seed.arkeo.network:26657',
+        provider: 'arkeo'
       }
     ],
-    "rest": [
+    rest: [
       {
-        "address": "https://arkeonetwork-testnet.nodejumper.io:1317",
-        "provider": "NODEJUMPER"
+        address: 'https://arkeonetwork-testnet.nodejumper.io:1317',
+        provider: 'NODEJUMPER'
       },
       {
-        "address": "https://test-arkeo-api.kynraze.com",
-        "provider": "kynraze"
+        address: 'https://test-arkeo-api.kynraze.com',
+        provider: 'kynraze'
       },
       {
-        "address": "https://testnet-arkeo-api.lavenderfive.com",
-        "provider": "lavenderfive"
+        address: 'https://testnet-arkeo-api.lavenderfive.com',
+        provider: 'lavenderfive'
       },
       {
-        "address": "https://arkeo-api.siriusnodes.uk",
-        "provider": "siriusnodes"
+        address: 'https://arkeo-api.siriusnodes.uk',
+        provider: 'siriusnodes'
       },
       {
-        "address": "http://seed.arkeo.network:1317",
-        "provider": "arkeo"
+        address: 'http://seed.arkeo.network:1317',
+        provider: 'arkeo'
       }
     ],
-    "grpc": [
+    grpc: [
       {
-        "address": "https://arkeonetwork-testnet.nodejumper.io:9090/",
-        "provider": "NODEJUMPER"
+        address: 'https://arkeonetwork-testnet.nodejumper.io:9090/',
+        provider: 'NODEJUMPER'
       }
     ]
   },
-  "explorers": [
+  explorers: [
     {
-      "url": "https://explorer.nodexcapital.com/arkeo",
-      "tx_page": "https://explorer.nodexcapital.com/arkeo/tx/${txHash}"
+      url: 'https://explorer.nodexcapital.com/arkeo',
+      tx_page: 'https://explorer.nodexcapital.com/arkeo/tx/${txHash}'
     }
   ]
 };

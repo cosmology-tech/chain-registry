@@ -1,65 +1,64 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
-  "$schema": "../../chain.schema.json",
-  "chain_name": "wavehashtestnet",
-  "status": "live",
-  "network_type": "testnet",
-  "pretty_name": "wavehash Testnet",
-  "chain_id": "testnet-1",
-  "bech32_prefix": "wavehash",
-  "daemon_name": "wavehashd",
-  "node_home": "$HOME/.wavehash",
-  "key_algos": [
-    "secp256k1"
-  ],
-  "slip44": 118,
-  "fees": {
-    "fee_tokens": [
+  $schema: '../../chain.schema.json',
+  chain_name: 'wavehashtestnet',
+  status: 'live',
+  network_type: 'testnet',
+  pretty_name: 'wavehash Testnet',
+  chain_id: 'testnet-1',
+  bech32_prefix: 'wavehash',
+  daemon_name: 'wavehashd',
+  node_home: '$HOME/.wavehash',
+  key_algos: ['secp256k1'],
+  slip44: 118,
+  fees: {
+    fee_tokens: [
       {
-        "denom": "uwahax",
-        "low_gas_price": 0.0025,
-        "average_gas_price": 0.0025,
-        "high_gas_price": 0.0024
+        denom: 'uwahax',
+        low_gas_price: 0.0025,
+        average_gas_price: 0.0025,
+        high_gas_price: 0.0024
       }
     ]
   },
-  "staking": {
-    "staking_tokens": [
+  staking: {
+    staking_tokens: [
       {
-        "denom": "uwahax"
+        denom: 'uwahax'
       }
     ]
   },
-  "codebase": {
-    "cosmos_sdk_version": "0.45",
-    "cosmwasm_enabled": true,
-    "cosmwasm_version": "0.30"
+  codebase: {
+    cosmos_sdk_version: '0.45',
+    cosmwasm_enabled: true,
+    cosmwasm_version: '0.30'
   },
-  "apis": {
-    "rpc": [
+  apis: {
+    rpc: [
       {
-        "address": "https://rpc.wavehash.online/",
-        "provider": "WaveHash Network"
+        address: 'https://rpc.wavehash.online/',
+        provider: 'WaveHash Network'
       }
     ],
-    "rest": [
+    rest: [
       {
-        "address": "https://lcd.wavehash.online/",
-        "provider": "WaveHash Network"
+        address: 'https://lcd.wavehash.online/',
+        provider: 'WaveHash Network'
       }
     ],
-    "grpc": [
+    grpc: [
       {
-        "address": "https://grpc.wavehash.online/",
-        "provider": "WaveHash Network"
+        address: 'https://grpc.wavehash.online/',
+        provider: 'WaveHash Network'
       }
     ]
   },
-  "explorers": [
+  explorers: [
     {
-      "kind": "atomscan",
-      "url": "https://atomscan.com/directory/testnet/wavehashtestnet",
-      "tx_page": "https://atomscan.com/directory/testnet/wavehashtestnet/transactions/${txHash}"
+      kind: 'atomscan',
+      url: 'https://atomscan.com/directory/testnet/wavehashtestnet',
+      tx_page:
+        'https://atomscan.com/directory/testnet/wavehashtestnet/transactions/${txHash}'
     }
   ]
 };

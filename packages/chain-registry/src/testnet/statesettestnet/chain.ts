@@ -1,46 +1,44 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
-  "$schema": "../chain.schema.json",
-  "chain_name": "statesettestnet",
-  "status": "live",
-  "network_type": "testnet",
-  "pretty_name": "Stateset Testnet",
-  "chain_id": "stateset-1-testnet",
-  "bech32_prefix": "stateset",
-  "daemon_name": "statesetd",
-  "node_home": "$HOME/.statesetd",
-  "key_algos": [
-    "secp256k1"
-  ],
-  "slip44": 118,
-  "fees": {
-    "fee_tokens": [
+  $schema: '../chain.schema.json',
+  chain_name: 'statesettestnet',
+  status: 'live',
+  network_type: 'testnet',
+  pretty_name: 'Stateset Testnet',
+  chain_id: 'stateset-1-testnet',
+  bech32_prefix: 'stateset',
+  daemon_name: 'statesetd',
+  node_home: '$HOME/.statesetd',
+  key_algos: ['secp256k1'],
+  slip44: 118,
+  fees: {
+    fee_tokens: [
       {
-        "denom": "ustate",
-        "fixed_min_gas_price": 0
+        denom: 'ustate',
+        fixed_min_gas_price: 0
       }
     ]
   },
-  "codebase": {},
-  "apis": {
-    "rpc": [
+  codebase: {},
+  apis: {
+    rpc: [
       {
-        "address": "https://rpc.stateset.zone/",
-        "provider": "stateset"
+        address: 'https://rpc.stateset.zone/',
+        provider: 'stateset'
       }
     ],
-    "rest": [
+    rest: [
       {
-        "address": "https://rest-api.stateset.zone",
-        "provider": "stateset"
+        address: 'https://rest-api.stateset.zone',
+        provider: 'stateset'
       }
     ]
   },
-  "explorers": [
+  explorers: [
     {
-      "kind": "bigdipper",
-      "url": "https://explore.stateset.zone",
-      "tx_page": "https://explore.stateset.zone/transactions/${txHash}"
+      kind: 'bigdipper',
+      url: 'https://explore.stateset.zone',
+      tx_page: 'https://explore.stateset.zone/transactions/${txHash}'
     }
   ]
 };

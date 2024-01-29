@@ -1,79 +1,77 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
-  "$schema": "../chain.schema.json",
-  "chain_name": "tgrade",
-  "status": "live",
-  "network_type": "mainnet",
-  "website": "https://tgrade.finance/",
-  "pretty_name": "Tgrade",
-  "chain_id": "tgrade-mainnet-1",
-  "bech32_prefix": "tgrade",
-  "daemon_name": "tgrade",
-  "node_home": "$HOME/.tgrade",
-  "key_algos": [
-    "secp256k1"
-  ],
-  "slip44": 118,
-  "fees": {
-    "fee_tokens": [
+  $schema: '../chain.schema.json',
+  chain_name: 'tgrade',
+  status: 'live',
+  network_type: 'mainnet',
+  website: 'https://tgrade.finance/',
+  pretty_name: 'Tgrade',
+  chain_id: 'tgrade-mainnet-1',
+  bech32_prefix: 'tgrade',
+  daemon_name: 'tgrade',
+  node_home: '$HOME/.tgrade',
+  key_algos: ['secp256k1'],
+  slip44: 118,
+  fees: {
+    fee_tokens: [
       {
-        "denom": "utgd",
-        "fixed_min_gas_price": 0.05,
-        "low_gas_price": 0.05,
-        "average_gas_price": 0.075,
-        "high_gas_price": 0.1
+        denom: 'utgd',
+        fixed_min_gas_price: 0.05,
+        low_gas_price: 0.05,
+        average_gas_price: 0.075,
+        high_gas_price: 0.1
       }
     ]
   },
-  "staking": {
-    "staking_tokens": [
+  staking: {
+    staking_tokens: [
       {
-        "denom": "utgd"
+        denom: 'utgd'
       }
     ]
   },
-  "codebase": {
-    "cosmwasm_enabled": true
+  codebase: {
+    cosmwasm_enabled: true
   },
-  "apis": {
-    "rpc": [
+  apis: {
+    rpc: [
       {
-        "address": "https://rpc.mainnet-1.tgrade.confio.run",
-        "provider": "Confio"
+        address: 'https://rpc.mainnet-1.tgrade.confio.run',
+        provider: 'Confio'
       },
       {
-        "address": "https://rpc.tgrade.posthuman.digital",
-        "provider": "POSTHUMAN ꝏ DVS"
+        address: 'https://rpc.tgrade.posthuman.digital',
+        provider: 'POSTHUMAN ꝏ DVS'
       }
     ],
-    "rest": [
+    rest: [
       {
-        "address": "https://api.mainnet-1.tgrade.confio.run",
-        "provider": "Confio"
+        address: 'https://api.mainnet-1.tgrade.confio.run',
+        provider: 'Confio'
       },
       {
-        "address": "https://lcd.tgrade.posthuman.digital",
-        "provider": "POSTHUMAN ꝏ DVS"
+        address: 'https://lcd.tgrade.posthuman.digital',
+        provider: 'POSTHUMAN ꝏ DVS'
       }
     ],
-    "grpc": []
+    grpc: []
   },
-  "explorers": [
+  explorers: [
     {
-      "kind": "aneka",
-      "url": "https://tgrade.aneka.io",
-      "tx_page": "https://tgrade.aneka.io/txs/${txHash}",
-      "account_page": "https://tgrade.aneka.io/accounts/${accountAddress}"
+      kind: 'aneka',
+      url: 'https://tgrade.aneka.io',
+      tx_page: 'https://tgrade.aneka.io/txs/${txHash}',
+      account_page: 'https://tgrade.aneka.io/accounts/${accountAddress}'
     }
   ],
-  "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-logo-gradient_h.png",
-    "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.svg"
+  logo_URIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-logo-gradient_h.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.svg'
   },
-  "images": [
+  images: [
     {
-      "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-logo-gradient_h.png",
-      "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.svg"
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-logo-gradient_h.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.svg'
     }
   ]
 };

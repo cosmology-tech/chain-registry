@@ -1,123 +1,117 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../../assetlist.schema.json",
-  "chain_name": "nobletestnet",
-  "assets": [
+  $schema: '../../assetlist.schema.json',
+  chain_name: 'nobletestnet',
+  assets: [
     {
-      "description": "The controlled staking asset for Noble Chain",
-      "denom_units": [
+      description: 'The controlled staking asset for Noble Chain',
+      denom_units: [
         {
-          "denom": "ustake",
-          "exponent": 0,
-          "aliases": [
-            "microstake"
-          ]
+          denom: 'ustake',
+          exponent: 0,
+          aliases: ['microstake']
         },
         {
-          "denom": "stake",
-          "exponent": 6
+          denom: 'stake',
+          exponent: 6
         }
       ],
-      "base": "ustake",
-      "name": "Stake",
-      "display": "stake",
-      "symbol": "STAKE"
+      base: 'ustake',
+      name: 'Stake',
+      display: 'stake',
+      symbol: 'STAKE'
     },
     {
-      "description": "Love is a test tokenfactory asset controlled by the Strangelove Team",
-      "denom_units": [
+      description:
+        'Love is a test tokenfactory asset controlled by the Strangelove Team',
+      denom_units: [
         {
-          "denom": "ulove",
-          "exponent": 0,
-          "aliases": [
-            "microlove"
-          ]
+          denom: 'ulove',
+          exponent: 0,
+          aliases: ['microlove']
         },
         {
-          "denom": "love",
-          "exponent": 6
+          denom: 'love',
+          exponent: 6
         }
       ],
-      "base": "ulove",
-      "display": "love",
-      "name": "Love",
-      "symbol": "LOVE"
+      base: 'ulove',
+      display: 'love',
+      name: 'Love',
+      symbol: 'LOVE'
     },
     {
-      "description": "USD Coin",
-      "denom_units": [
+      description: 'USD Coin',
+      denom_units: [
         {
-          "denom": "uusdc",
-          "exponent": 0,
-          "aliases": [
-            "microusdc"
-          ]
+          denom: 'uusdc',
+          exponent: 0,
+          aliases: ['microusdc']
         },
         {
-          "denom": "usdc",
-          "exponent": 6
+          denom: 'usdc',
+          exponent: 6
         }
       ],
-      "base": "uusdc",
-      "display": "usdc",
-      "name": "USD Coin",
-      "symbol": "USDC",
-      "traces": [
+      base: 'uusdc',
+      display: 'usdc',
+      name: 'USD Coin',
+      symbol: 'USDC',
+      traces: [
         {
-          "type": "test-mintage",
-          "counterparty": {
-            "chain_name": "noble",
-            "base_denom": "uusdc"
+          type: 'test-mintage',
+          counterparty: {
+            chain_name: 'noble',
+            base_denom: 'uusdc'
           },
-          "provider": "Circle"
+          provider: 'Circle'
         }
       ],
-      "logo_URIs": {
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg"
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
-      "images": [
+      images: [
         {
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg"
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }
       ]
     },
     {
-      "description": "USDLR is a fiat-backed stablecoin issued by Stable. Stable pays DeFi protocols who distribute USDLR.",
-      "denom_units": [
+      description:
+        'USDLR is a fiat-backed stablecoin issued by Stable. Stable pays DeFi protocols who distribute USDLR.',
+      denom_units: [
         {
-          "denom": "uusdlr",
-          "exponent": 0,
-          "aliases": [
-            "microusdlr"
-          ]
+          denom: 'uusdlr',
+          exponent: 0,
+          aliases: ['microusdlr']
         },
         {
-          "denom": "usdlr",
-          "exponent": 6
+          denom: 'usdlr',
+          exponent: 6
         }
       ],
-      "base": "uusdlr",
-      "display": "usdlr",
-      "name": "USDLR by Stable",
-      "symbol": "USDLR",
-      "traces": [
+      base: 'uusdlr',
+      display: 'usdlr',
+      name: 'USDLR by Stable',
+      symbol: 'USDLR',
+      traces: [
         {
-          "type": "test-mintage",
-          "counterparty": {
-            "chain_name": "noble",
-            "base_denom": "uusdlr"
+          type: 'test-mintage',
+          counterparty: {
+            chain_name: 'noble',
+            base_denom: 'uusdlr'
           },
-          "provider": "Stable"
+          provider: 'Stable'
         }
       ],
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg"
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
       },
-      "images": [
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
         }
       ]
     }

@@ -22,4 +22,4 @@ export * as fantomtestnet from './fantomtestnet';
 export * as moonbeamtestnet from './moonbeamtestnet';
 export * as polkadottestnet from './polkadottestnet';
 export * as polygontestnet from './polygontestnet';
-export * as ojotestnet from './ojotestnet'
+export * as ojotestnet from './ojotestnet';

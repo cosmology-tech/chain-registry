@@ -1,59 +1,57 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
-  "$schema": "../../chain.schema.json",
-  "chain_name": "deardogetestnet",
-  "chain_id": "deardoge-testnet",
-  "pretty_name": "Dear Doge Testnet",
-  "status": "live",
-  "network_type": "testnet",
-  "bech32_prefix": "deardoge",
-  "daemon_name": "dogd",
-  "node_home": "$HOME/.deardoge",
-  "key_algos": [
-    "secp256k1"
-  ],
-  "slip44": 118,
-  "fees": {
-    "fee_tokens": [
+  $schema: '../../chain.schema.json',
+  chain_name: 'deardogetestnet',
+  chain_id: 'deardoge-testnet',
+  pretty_name: 'Dear Doge Testnet',
+  status: 'live',
+  network_type: 'testnet',
+  bech32_prefix: 'deardoge',
+  daemon_name: 'dogd',
+  node_home: '$HOME/.deardoge',
+  key_algos: ['secp256k1'],
+  slip44: 118,
+  fees: {
+    fee_tokens: [
       {
-        "denom": "udear",
-        "fixed_min_gas_price": 0.25
+        denom: 'udear',
+        fixed_min_gas_price: 0.25
       }
     ]
   },
-  "staking": {
-    "staking_tokens": [
+  staking: {
+    staking_tokens: [
       {
-        "denom": "udear"
+        denom: 'udear'
       }
     ]
   },
-  "codebase": {},
-  "apis": {
-    "rpc": [
+  codebase: {},
+  apis: {
+    rpc: [
       {
-        "address": "https://testnet-rpc.deardoge.org",
-        "provider": "dorafactory"
+        address: 'https://testnet-rpc.deardoge.org',
+        provider: 'dorafactory'
       }
     ],
-    "rest": [
+    rest: [
       {
-        "address": "https://testnet-rest.deardoge.org",
-        "provider": "dorafactory"
+        address: 'https://testnet-rest.deardoge.org',
+        provider: 'dorafactory'
       }
     ],
-    "grpc": [
+    grpc: [
       {
-        "address": "testnet-grpc.deardoge.org:443",
-        "provider": "dorafactory"
+        address: 'testnet-grpc.deardoge.org:443',
+        provider: 'dorafactory'
       }
     ]
   },
-  "explorers": [
+  explorers: [
     {
-      "kind": "Dear Doge Ping Pub",
-      "url": "https://testnet-explorer.deardoge.org/deardoge",
-      "tx_page": "https://testnet-explorer.deardoge.org/deardoge/tx/${txHash}"
+      kind: 'Dear Doge Ping Pub',
+      url: 'https://testnet-explorer.deardoge.org/deardoge',
+      tx_page: 'https://testnet-explorer.deardoge.org/deardoge/tx/${txHash}'
     }
   ]
 };

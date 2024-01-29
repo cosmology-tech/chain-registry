@@ -1,186 +1,177 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../../assetlist.schema.json",
-  "chain_name": "xiontestnet",
-  "assets": [
+  $schema: '../../assetlist.schema.json',
+  chain_name: 'xiontestnet',
+  assets: [
     {
-      "description": "The native staking token of the Xion network.",
-      "denom_units": [
+      description: 'The native staking token of the Xion network.',
+      denom_units: [
         {
-          "denom": "uxion",
-          "exponent": 0,
-          "aliases": [
-            "microxion"
-          ]
+          denom: 'uxion',
+          exponent: 0,
+          aliases: ['microxion']
         },
         {
-          "denom": "mxion",
-          "exponent": 3,
-          "aliases": [
-            "millixion"
-          ]
+          denom: 'mxion',
+          exponent: 3,
+          aliases: ['millixion']
         },
         {
-          "denom": "XION",
-          "exponent": 6,
-          "aliases": [
-            "xion"
-          ]
+          denom: 'XION',
+          exponent: 6,
+          aliases: ['xion']
         }
       ],
-      "base": "uxion",
-      "display": "XION",
-      "name": "xion",
-      "symbol": "XION",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png"
+      base: 'uxion',
+      display: 'XION',
+      name: 'xion',
+      symbol: 'XION',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
       },
-      "images": [
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
         }
       ]
     },
     {
-      "denom_units": [
+      denom_units: [
         {
-          "denom": "ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2",
-          "exponent": 0,
-          "aliases": [
-            "uaxl"
-          ]
+          denom:
+            'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
+          exponent: 0,
+          aliases: ['uaxl']
         },
         {
-          "denom": "axl",
-          "exponent": 6
+          denom: 'axl',
+          exponent: 6
         }
       ],
-      "type_asset": "ics20",
-      "base": "ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2",
-      "name": "Axelar AXL Token",
-      "display": "axl",
-      "symbol": "AXL",
-      "traces": [
+      type_asset: 'ics20',
+      base: 'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
+      name: 'Axelar AXL Token',
+      display: 'axl',
+      symbol: 'AXL',
+      traces: [
         {
-          "type": "ibc",
-          "counterparty": {
-            "chain_name": "axelartestnet",
-            "base_denom": "uaxl",
-            "channel_id": "channel-283"
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'axelartestnet',
+            base_denom: 'uaxl',
+            channel_id: 'channel-283'
           },
-          "chain": {
-            "channel_id": "channel-5",
-            "path": "transfer/channel-5/uaxl"
+          chain: {
+            channel_id: 'channel-5',
+            path: 'transfer/channel-5/uaxl'
           }
         }
       ],
-      "images": [
+      images: [
         {
-          "image_sync": {
-            "chain_name": "axelartestnet",
-            "base_denom": "uaxl"
+          image_sync: {
+            chain_name: 'axelartestnet',
+            base_denom: 'uaxl'
           },
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
         }
       ],
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg"
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
       }
     },
     {
-      "denom_units": [
+      denom_units: [
         {
-          "denom": "ibc/92E0120F15D037353CFB73C14651FC8930ADC05B93100FD7754D3A689E53B333",
-          "exponent": 0,
-          "aliases": [
-            "uosmo"
-          ]
+          denom:
+            'ibc/92E0120F15D037353CFB73C14651FC8930ADC05B93100FD7754D3A689E53B333',
+          exponent: 0,
+          aliases: ['uosmo']
         },
         {
-          "denom": "osmo",
-          "exponent": 6
+          denom: 'osmo',
+          exponent: 6
         }
       ],
-      "type_asset": "ics20",
-      "base": "ibc/6AE2756AA7EAA8FA06E11472EA05CA681BD8D3FBC1AAA9F06C79D1EC1C90DC9B",
-      "name": "Osmosis OSMO Token",
-      "display": "osmo",
-      "symbol": "OSMO",
-      "traces": [
+      type_asset: 'ics20',
+      base: 'ibc/6AE2756AA7EAA8FA06E11472EA05CA681BD8D3FBC1AAA9F06C79D1EC1C90DC9B',
+      name: 'Osmosis OSMO Token',
+      display: 'osmo',
+      symbol: 'OSMO',
+      traces: [
         {
-          "type": "ibc",
-          "counterparty": {
-            "chain_name": "osmosistestnet",
-            "base_denom": "uosmo",
-            "channel_id": "channel-1299"
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'osmosistestnet',
+            base_denom: 'uosmo',
+            channel_id: 'channel-1299'
           },
-          "chain": {
-            "channel_id": "channel-8",
-            "path": "transfer/channel-8/uosmo"
+          chain: {
+            channel_id: 'channel-8',
+            path: 'transfer/channel-8/uosmo'
           }
         }
       ],
-      "images": [
+      images: [
         {
-          "image_sync": {
-            "chain_name": "osmosistestnet",
-            "base_denom": "uosmo"
+          image_sync: {
+            chain_name: 'osmosistestnet',
+            base_denom: 'uosmo'
           },
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
         }
       ],
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
       }
     },
     {
-      "denom_units": [
+      denom_units: [
         {
-          "denom": "ibc/295548A78785A1007F232DE286149A6FF512F180AF5657780FC89C009E2C348F",
-          "exponent": 0,
-          "aliases": [
-            "uusdc"
-          ]
+          denom:
+            'ibc/295548A78785A1007F232DE286149A6FF512F180AF5657780FC89C009E2C348F',
+          exponent: 0,
+          aliases: ['uusdc']
         },
         {
-          "denom": "usdc",
-          "exponent": 6
+          denom: 'usdc',
+          exponent: 6
         }
       ],
-      "type_asset": "ics20",
-      "base": "ibc/295548A78785A1007F232DE286149A6FF512F180AF5657780FC89C009E2C348F",
-      "name": "Noble USDC Token",
-      "display": "usdc",
-      "symbol": "USDC",
-      "traces": [
+      type_asset: 'ics20',
+      base: 'ibc/295548A78785A1007F232DE286149A6FF512F180AF5657780FC89C009E2C348F',
+      name: 'Noble USDC Token',
+      display: 'usdc',
+      symbol: 'USDC',
+      traces: [
         {
-          "type": "ibc",
-          "counterparty": {
-            "chain_name": "nobletestnet",
-            "base_denom": "uusdc",
-            "channel_id": "channel-17"
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'nobletestnet',
+            base_denom: 'uusdc',
+            channel_id: 'channel-17'
           },
-          "chain": {
-            "channel_id": "channel-9",
-            "path": "transfer/channel-9/uusdc"
+          chain: {
+            channel_id: 'channel-9',
+            path: 'transfer/channel-9/uusdc'
           }
         }
       ],
-      "images": [
+      images: [
         {
-          "image_sync": {
-            "chain_name": "nobletestnet",
-            "base_denom": "uusdc"
+          image_sync: {
+            chain_name: 'nobletestnet',
+            base_denom: 'uusdc'
           },
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg"
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }
       ],
-      "logo_URIs": {
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg"
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       }
     }
   ]

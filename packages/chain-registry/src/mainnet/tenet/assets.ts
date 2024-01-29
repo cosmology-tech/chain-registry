@@ -1,33 +1,33 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../assetlist.schema.json",
-  "chain_name": "tenet",
-  "assets": [
+  $schema: '../assetlist.schema.json',
+  chain_name: 'tenet',
+  assets: [
     {
-      "description": "The native EVM, governance and staking token of the Tenet",
-      "denom_units": [
+      description: 'The native EVM, governance and staking token of the Tenet',
+      denom_units: [
         {
-          "denom": "atenet",
-          "exponent": 0
+          denom: 'atenet',
+          exponent: 0
         },
         {
-          "denom": "tenet",
-          "exponent": 18
+          denom: 'tenet',
+          exponent: 18
         }
       ],
-      "base": "atenet",
-      "name": "Tenet",
-      "display": "tenet",
-      "symbol": "TENET",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.svg"
+      base: 'atenet',
+      name: 'Tenet',
+      display: 'tenet',
+      symbol: 'TENET',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.svg'
       },
-      "coingecko_id": "tenet-1b000f7b-59cb-4e06-89ce-d62b32d362b9",
-      "images": [
+      coingecko_id: 'tenet-1b000f7b-59cb-4e06-89ce-d62b32d362b9',
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.svg'
         }
       ]
     }

@@ -1,52 +1,50 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
-  "$schema": "../../chain.schema.json",
-  "chain_name": "humanstestnet",
-  "chain_id": "testnet-1",
-  "pretty_name": "Humans AI Testnet",
-  "status": "live",
-  "network_type": "testnet",
-  "bech32_prefix": "humans",
-  "daemon_name": "humansd",
-  "node_home": "$HOME/.humans",
-  "key_algos": [
-    "secp256k1"
-  ],
-  "slip44": 118,
-  "fees": {
-    "fee_tokens": [
+  $schema: '../../chain.schema.json',
+  chain_name: 'humanstestnet',
+  chain_id: 'testnet-1',
+  pretty_name: 'Humans AI Testnet',
+  status: 'live',
+  network_type: 'testnet',
+  bech32_prefix: 'humans',
+  daemon_name: 'humansd',
+  node_home: '$HOME/.humans',
+  key_algos: ['secp256k1'],
+  slip44: 118,
+  fees: {
+    fee_tokens: [
       {
-        "denom": "uheart",
-        "fixed_min_gas_price": 0
+        denom: 'uheart',
+        fixed_min_gas_price: 0
       }
     ]
   },
-  "codebase": {},
-  "apis": {
-    "rpc": [
+  codebase: {},
+  apis: {
+    rpc: [
       {
-        "address": "https://humans-testnet.nodejumper.io",
-        "provider": "NODEJUMPER"
+        address: 'https://humans-testnet.nodejumper.io',
+        provider: 'NODEJUMPER'
       }
     ],
-    "rest": [
+    rest: [
       {
-        "address": "https://humans-testnet.nodejumper.io:1317",
-        "provider": "NODEJUMPER"
+        address: 'https://humans-testnet.nodejumper.io:1317',
+        provider: 'NODEJUMPER'
       }
     ],
-    "grpc": [
+    grpc: [
       {
-        "address": "https://humans-testnet.nodejumper.io:9090",
-        "provider": "NODEJUMPER"
+        address: 'https://humans-testnet.nodejumper.io:9090',
+        provider: 'NODEJUMPER'
       }
     ]
   },
-  "explorers": [
+  explorers: [
     {
-      "kind": "explorer.humans.zone",
-      "url": "https://explorer.humans.zone/",
-      "tx_page": "https://explorer.humans.zone/humans-testnet/tx/${txHash}"
+      kind: 'explorer.humans.zone',
+      url: 'https://explorer.humans.zone/',
+      tx_page: 'https://explorer.humans.zone/humans-testnet/tx/${txHash}'
     }
   ]
 };

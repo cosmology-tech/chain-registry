@@ -1,39 +1,34 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../assetlist.schema.json",
-  "chain_name": "onomy",
-  "assets": [
+  $schema: '../assetlist.schema.json',
+  chain_name: 'onomy',
+  assets: [
     {
-      "description": "The native token of Onomy Protocol",
-      "denom_units": [
+      description: 'The native token of Onomy Protocol',
+      denom_units: [
         {
-          "denom": "anom",
-          "exponent": 0
+          denom: 'anom',
+          exponent: 0
         },
         {
-          "denom": "nom",
-          "exponent": 18
+          denom: 'nom',
+          exponent: 18
         }
       ],
-      "base": "anom",
-      "name": "Nom",
-      "display": "nom",
-      "symbol": "NOM",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.svg"
+      base: 'anom',
+      name: 'Nom',
+      display: 'nom',
+      symbol: 'NOM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.svg'
       },
-      "keywords": [
-        "dex",
-        "stablecoin",
-        "bridge",
-        "staking"
-      ],
-      "coingecko_id": "onomy-protocol",
-      "images": [
+      keywords: ['dex', 'stablecoin', 'bridge', 'staking'],
+      coingecko_id: 'onomy-protocol',
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.svg'
         }
       ]
     }

@@ -1,37 +1,38 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../assetlist.schema.json",
-  "chain_name": "aioz",
-  "assets": [
+  $schema: '../assetlist.schema.json',
+  chain_name: 'aioz',
+  assets: [
     {
-      "description": "The native staking and governance token of the AIOZ Network.",
-      "denom_units": [
+      description:
+        'The native staking and governance token of the AIOZ Network.',
+      denom_units: [
         {
-          "denom": "attoaioz",
-          "exponent": 0
+          denom: 'attoaioz',
+          exponent: 0
         },
         {
-          "denom": "nanoaioz",
-          "exponent": 9
+          denom: 'nanoaioz',
+          exponent: 9
         },
         {
-          "denom": "aioz",
-          "exponent": 18
+          denom: 'aioz',
+          exponent: 18
         }
       ],
-      "base": "attoaioz",
-      "name": "AIOZ",
-      "display": "aioz",
-      "symbol": "AIOZ",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.svg"
+      base: 'attoaioz',
+      name: 'AIOZ',
+      display: 'aioz',
+      symbol: 'AIOZ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.svg'
       },
-      "coingecko_id": "aioz-network",
-      "images": [
+      coingecko_id: 'aioz-network',
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.svg'
         }
       ]
     }

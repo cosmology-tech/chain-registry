@@ -141,4 +141,4 @@ export * as unification from './unification';
 export * as ununifi from './ununifi';
 export * as uptick from './uptick';
 export * as vidulum from './vidulum';
-export * as xpla from './xpla'
+export * as xpla from './xpla';

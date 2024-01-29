@@ -3,6 +3,7 @@ import ibc from './ibc';
 
 export default {
   assets,
+
   ibc
 };
 

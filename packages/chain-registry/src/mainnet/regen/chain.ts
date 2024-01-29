@@ -1,173 +1,173 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
-  "$schema": "../chain.schema.json",
-  "chain_name": "regen",
-  "status": "live",
-  "network_type": "mainnet",
-  "website": "https://www.regen.network/",
-  "pretty_name": "Regen",
-  "chain_id": "regen-1",
-  "bech32_prefix": "regen",
-  "daemon_name": "regen",
-  "node_home": "$HOME/.regen",
-  "key_algos": [
-    "secp256k1"
-  ],
-  "slip44": 118,
-  "fees": {
-    "fee_tokens": [
+  $schema: '../chain.schema.json',
+  chain_name: 'regen',
+  status: 'live',
+  network_type: 'mainnet',
+  website: 'https://www.regen.network/',
+  pretty_name: 'Regen',
+  chain_id: 'regen-1',
+  bech32_prefix: 'regen',
+  daemon_name: 'regen',
+  node_home: '$HOME/.regen',
+  key_algos: ['secp256k1'],
+  slip44: 118,
+  fees: {
+    fee_tokens: [
       {
-        "denom": "uregen",
-        "low_gas_price": 0.015,
-        "average_gas_price": 0.025,
-        "high_gas_price": 0.04
+        denom: 'uregen',
+        low_gas_price: 0.015,
+        average_gas_price: 0.025,
+        high_gas_price: 0.04
       }
     ]
   },
-  "staking": {
-    "staking_tokens": [
+  staking: {
+    staking_tokens: [
       {
-        "denom": "uregen"
+        denom: 'uregen'
       }
     ]
   },
-  "codebase": {
-    "cosmos_sdk_version": "0.46"
+  codebase: {
+    cosmos_sdk_version: '0.46'
   },
-  "description": "Regen Network, a platform to originate and invest in high-integrity carbon and biodiversity credits from ecological regeneration projects.",
-  "apis": {
-    "rpc": [
+  description:
+    'Regen Network, a platform to originate and invest in high-integrity carbon and biodiversity credits from ecological regeneration projects.',
+  apis: {
+    rpc: [
       {
-        "address": "https://rpc-regen.ecostake.com",
-        "provider": "ecostake"
+        address: 'https://rpc-regen.ecostake.com',
+        provider: 'ecostake'
       },
       {
-        "address": "http://public-rpc.regen.vitwit.com:26657",
-        "provider": "vitwit"
+        address: 'http://public-rpc.regen.vitwit.com:26657',
+        provider: 'vitwit'
       },
       {
-        "address": "https://regen.stakesystems.io:2053",
-        "provider": "stakesystems"
+        address: 'https://regen.stakesystems.io:2053',
+        provider: 'stakesystems'
       },
       {
-        "address": "http://rpc.regen.forbole.com:80",
-        "provider": "forbole"
+        address: 'http://rpc.regen.forbole.com:80',
+        provider: 'forbole'
       },
       {
-        "address": "https://rpc-regen-ia.cosmosia.notional.ventures/",
-        "provider": "Notional"
+        address: 'https://rpc-regen-ia.cosmosia.notional.ventures/',
+        provider: 'Notional'
       },
       {
-        "address": "https://regen-mainnet-rpc.autostake.com:443",
-        "provider": "AutoStake 🛡️ Slash Protected"
+        address: 'https://regen-mainnet-rpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        "address": "https://regen-rpc.easy2stake.com",
-        "provider": "Easy 2 Stake"
+        address: 'https://regen-rpc.easy2stake.com',
+        provider: 'Easy 2 Stake'
       },
       {
-        "address": "https://regen-rpc.theamsolutions.info",
-        "provider": "AM Solutions"
+        address: 'https://regen-rpc.theamsolutions.info',
+        provider: 'AM Solutions'
       },
       {
-        "address": "https://regen-rpc.w3coins.io",
-        "provider": "w3coins"
+        address: 'https://regen-rpc.w3coins.io',
+        provider: 'w3coins'
       },
       {
-        "address": "https://regen-rpc.publicnode.com:443",
-        "provider": "Allnodes ⚡️ Nodes & Staking"
+        address: 'https://regen-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
-    "rest": [
+    rest: [
       {
-        "address": "http://public-rpc.regen.vitwit.com:1317",
-        "provider": "vitwit"
+        address: 'http://public-rpc.regen.vitwit.com:1317',
+        provider: 'vitwit'
       },
       {
-        "address": "https://regen.stakesystems.io",
-        "provider": "stakesystems"
+        address: 'https://regen.stakesystems.io',
+        provider: 'stakesystems'
       },
       {
-        "address": "https://api-regen-ia.cosmosia.notional.ventures/",
-        "provider": "Notional"
+        address: 'https://api-regen-ia.cosmosia.notional.ventures/',
+        provider: 'Notional'
       },
       {
-        "address": "https://regen-mainnet-lcd.autostake.com:443",
-        "provider": "AutoStake 🛡️ Slash Protected"
+        address: 'https://regen-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        "address": "https://rest-regen.ecostake.com",
-        "provider": "ecostake"
+        address: 'https://rest-regen.ecostake.com',
+        provider: 'ecostake'
       },
       {
-        "address": "https://regen-lcd.easy2stake.com",
-        "provider": "Easy 2 Stake"
+        address: 'https://regen-lcd.easy2stake.com',
+        provider: 'Easy 2 Stake'
       },
       {
-        "address": "https://regen-api.theamsolutions.info",
-        "provider": "AM Solutions"
+        address: 'https://regen-api.theamsolutions.info',
+        provider: 'AM Solutions'
       },
       {
-        "address": "https://regen-api.w3coins.io",
-        "provider": "w3coins"
+        address: 'https://regen-api.w3coins.io',
+        provider: 'w3coins'
       },
       {
-        "address": "https://regen-rest.publicnode.com",
-        "provider": "Allnodes ⚡️ Nodes & Staking"
+        address: 'https://regen-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
-    "grpc": [
+    grpc: [
       {
-        "address": "grpc-regen-ia.cosmosia.notional.ventures:443",
-        "provider": "Notional"
+        address: 'grpc-regen-ia.cosmosia.notional.ventures:443',
+        provider: 'Notional'
       },
       {
-        "address": "regen-mainnet-grpc.autostake.com:443",
-        "provider": "AutoStake 🛡️ Slash Protected"
+        address: 'regen-mainnet-grpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        "address": "regen-grpc.w3coins.io:22790",
-        "provider": "w3coins"
+        address: 'regen-grpc.w3coins.io:22790',
+        provider: 'w3coins'
       },
       {
-        "address": "regen-grpc.publicnode.com:443",
-        "provider": "Allnodes ⚡️ Nodes & Staking"
+        address: 'regen-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ]
   },
-  "explorers": [
+  explorers: [
     {
-      "kind": "mintscan",
-      "url": "https://www.mintscan.io/regen",
-      "tx_page": "https://www.mintscan.io/regen/transactions/${txHash}",
-      "account_page": "https://www.mintscan.io/regen/accounts/${accountAddress}"
+      kind: 'mintscan',
+      url: 'https://www.mintscan.io/regen',
+      tx_page: 'https://www.mintscan.io/regen/transactions/${txHash}',
+      account_page: 'https://www.mintscan.io/regen/accounts/${accountAddress}'
     },
     {
-      "kind": "ping.pub",
-      "url": "https://ping.pub/regen",
-      "tx_page": "https://ping.pub/regen/tx/${txHash}"
+      kind: 'ping.pub',
+      url: 'https://ping.pub/regen',
+      tx_page: 'https://ping.pub/regen/tx/${txHash}'
     },
     {
-      "kind": "bigdipper",
-      "url": "https://bigdipper.live/regen",
-      "tx_page": "https://bigdipper.live/regen/transactions/${txHash}",
-      "account_page": "https://bigdipper.live/regen/accounts/${accountAddress}"
+      kind: 'bigdipper',
+      url: 'https://bigdipper.live/regen',
+      tx_page: 'https://bigdipper.live/regen/transactions/${txHash}',
+      account_page: 'https://bigdipper.live/regen/accounts/${accountAddress}'
     },
     {
-      "kind": "atomscan",
-      "url": "https://atomscan.com/regen-network",
-      "tx_page": "https://atomscan.com/regen-network/transactions/${txHash}",
-      "account_page": "https://atomscan.com/regen-network/accounts/${accountAddress}"
+      kind: 'atomscan',
+      url: 'https://atomscan.com/regen-network',
+      tx_page: 'https://atomscan.com/regen-network/transactions/${txHash}',
+      account_page:
+        'https://atomscan.com/regen-network/accounts/${accountAddress}'
     }
   ],
-  "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png",
-    "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg"
+  logo_URIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg'
   },
-  "images": [
+  images: [
     {
-      "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png",
-      "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg"
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg'
     }
   ]
 };

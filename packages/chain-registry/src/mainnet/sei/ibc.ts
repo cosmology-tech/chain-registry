@@ -1,361 +1,363 @@
 import { IBCInfo } from '@chain-registry/types';
 const info: IBCInfo[] = [
   {
-    "$schema": "../ibc_data.schema.json",
-    "chain_1": {
-      "chain_name": "axelar",
-      "client_id": "07-tendermint-151",
-      "connection_id": "connection-136"
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'axelar',
+      client_id: '07-tendermint-151',
+      connection_id: 'connection-136'
     },
-    "chain_2": {
-      "chain_name": "sei",
-      "client_id": "07-tendermint-8",
-      "connection_id": "connection-2"
+    chain_2: {
+      chain_name: 'sei',
+      client_id: '07-tendermint-8',
+      connection_id: 'connection-2'
     },
-    "channels": [
+    channels: [
       {
-        "chain_1": {
-          "channel_id": "channel-103",
-          "port_id": "transfer"
+        chain_1: {
+          channel_id: 'channel-103',
+          port_id: 'transfer'
         },
-        "chain_2": {
-          "channel_id": "channel-2",
-          "port_id": "transfer"
+        chain_2: {
+          channel_id: 'channel-2',
+          port_id: 'transfer'
         },
-        "ordering": "unordered",
-        "version": "ics20-1",
-        "tags": {
-          "status": "live",
-          "preferred": true
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }
     ]
   },
   {
-    "$schema": "../ibc_data.schema.json",
-    "chain_1": {
-      "chain_name": "coreum",
-      "client_id": "07-tendermint-41",
-      "connection_id": "connection-28"
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'coreum',
+      client_id: '07-tendermint-41',
+      connection_id: 'connection-28'
     },
-    "chain_2": {
-      "chain_name": "sei",
-      "client_id": "07-tendermint-47",
-      "connection_id": "connection-79"
+    chain_2: {
+      chain_name: 'sei',
+      client_id: '07-tendermint-47',
+      connection_id: 'connection-79'
     },
-    "channels": [
+    channels: [
       {
-        "chain_1": {
-          "channel_id": "channel-26",
-          "port_id": "transfer"
+        chain_1: {
+          channel_id: 'channel-26',
+          port_id: 'transfer'
         },
-        "chain_2": {
-          "channel_id": "channel-47",
-          "port_id": "transfer"
+        chain_2: {
+          channel_id: 'channel-47',
+          port_id: 'transfer'
         },
-        "ordering": "unordered",
-        "version": "ics20-1",
-        "tags": {
-          "status": "live",
-          "preferred": true
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }
     ]
   },
   {
-    "$schema": "../ibc_data.schema.json",
-    "chain_1": {
-      "chain_name": "cosmoshub",
-      "client_id": "07-tendermint-1140",
-      "connection_id": "connection-827"
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'cosmoshub',
+      client_id: '07-tendermint-1140',
+      connection_id: 'connection-827'
     },
-    "chain_2": {
-      "chain_name": "sei",
-      "client_id": "07-tendermint-3",
-      "connection_id": "connection-1"
+    chain_2: {
+      chain_name: 'sei',
+      client_id: '07-tendermint-3',
+      connection_id: 'connection-1'
     },
-    "channels": [
+    channels: [
       {
-        "chain_1": {
-          "channel_id": "channel-584",
-          "port_id": "transfer"
+        chain_1: {
+          channel_id: 'channel-584',
+          port_id: 'transfer'
         },
-        "chain_2": {
-          "channel_id": "channel-1",
-          "port_id": "transfer"
+        chain_2: {
+          channel_id: 'channel-1',
+          port_id: 'transfer'
         },
-        "ordering": "unordered",
-        "version": "ics20-1",
-        "tags": {
-          "status": "live",
-          "preferred": true,
-          "properties": "privacy"
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          properties: 'privacy'
         }
       }
     ]
   },
   {
-    "$schema": "../ibc_data.schema.json",
-    "chain_1": {
-      "chain_name": "kava",
-      "client_id": "07-tendermint-146",
-      "connection_id": "connection-181"
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'kava',
+      client_id: '07-tendermint-146',
+      connection_id: 'connection-181'
     },
-    "chain_2": {
-      "chain_name": "sei",
-      "client_id": "07-tendermint-38",
-      "connection_id": "connection-33"
+    chain_2: {
+      chain_name: 'sei',
+      client_id: '07-tendermint-38',
+      connection_id: 'connection-33'
     },
-    "channels": [
+    channels: [
       {
-        "chain_1": {
-          "channel_id": "channel-132",
-          "port_id": "transfer"
+        chain_1: {
+          channel_id: 'channel-132',
+          port_id: 'transfer'
         },
-        "chain_2": {
-          "channel_id": "channel-18",
-          "port_id": "transfer"
+        chain_2: {
+          channel_id: 'channel-18',
+          port_id: 'transfer'
         },
-        "ordering": "unordered",
-        "version": "ics20-1",
-        "tags": {
-          "status": "live",
-          "preferred": true
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }
     ]
   },
   {
-    "$schema": "../ibc_data.schema.json",
-    "chain_1": {
-      "chain_name": "migaloo",
-      "client_id": "07-tendermint-108",
-      "connection_id": "connection-84"
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'migaloo',
+      client_id: '07-tendermint-108',
+      connection_id: 'connection-84'
     },
-    "chain_2": {
-      "chain_name": "sei",
-      "client_id": "07-tendermint-22",
-      "connection_id": "connection-13"
+    chain_2: {
+      chain_name: 'sei',
+      client_id: '07-tendermint-22',
+      connection_id: 'connection-13'
     },
-    "channels": [
+    channels: [
       {
-        "chain_1": {
-          "channel_id": "channel-57",
-          "port_id": "transfer"
+        chain_1: {
+          channel_id: 'channel-57',
+          port_id: 'transfer'
         },
-        "chain_2": {
-          "channel_id": "channel-14",
-          "port_id": "transfer"
+        chain_2: {
+          channel_id: 'channel-14',
+          port_id: 'transfer'
         },
-        "ordering": "unordered",
-        "version": "ics20-1",
-        "tags": {
-          "status": "live",
-          "preferred": true
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }
     ]
   },
   {
-    "$schema": "../ibc_data.schema.json",
-    "chain_1": {
-      "chain_name": "neutron",
-      "client_id": "07-tendermint-37",
-      "connection_id": "connection-28"
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'neutron',
+      client_id: '07-tendermint-37',
+      connection_id: 'connection-28'
     },
-    "chain_2": {
-      "chain_name": "sei",
-      "client_id": "07-tendermint-27",
-      "connection_id": "connection-16"
+    chain_2: {
+      chain_name: 'sei',
+      client_id: '07-tendermint-27',
+      connection_id: 'connection-16'
     },
-    "channels": [
+    channels: [
       {
-        "chain_1": {
-          "channel_id": "channel-19",
-          "port_id": "transfer"
+        chain_1: {
+          channel_id: 'channel-19',
+          port_id: 'transfer'
         },
-        "chain_2": {
-          "channel_id": "channel-15",
-          "port_id": "transfer"
+        chain_2: {
+          channel_id: 'channel-15',
+          port_id: 'transfer'
         },
-        "ordering": "unordered",
-        "version": "ics20-1",
-        "tags": {
-          "status": "live",
-          "preferred": true
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }
     ]
   },
   {
-    "$schema": "../ibc_data.schema.json",
-    "chain_1": {
-      "chain_name": "noble",
-      "client_id": "07-tendermint-45",
-      "connection_id": "connection-61"
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'noble',
+      client_id: '07-tendermint-45',
+      connection_id: 'connection-61'
     },
-    "chain_2": {
-      "chain_name": "sei",
-      "client_id": "07-tendermint-45",
-      "connection_id": "connection-77"
+    chain_2: {
+      chain_name: 'sei',
+      client_id: '07-tendermint-45',
+      connection_id: 'connection-77'
     },
-    "channels": [
+    channels: [
       {
-        "chain_1": {
-          "channel_id": "channel-39",
-          "port_id": "transfer"
+        chain_1: {
+          channel_id: 'channel-39',
+          port_id: 'transfer'
         },
-        "chain_2": {
-          "channel_id": "channel-45",
-          "port_id": "transfer"
+        chain_2: {
+          channel_id: 'channel-45',
+          port_id: 'transfer'
         },
-        "ordering": "unordered",
-        "version": "ics20-1",
-        "tags": {
-          "status": "live",
-          "preferred": true,
-          "dex": "osmosis"
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          dex: 'osmosis'
         }
       }
     ]
   },
   {
-    "$schema": "../ibc_data.schema.json",
-    "chain_1": {
-      "chain_name": "nois",
-      "client_id": "07-tendermint-19",
-      "connection_id": "connection-11"
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'nois',
+      client_id: '07-tendermint-19',
+      connection_id: 'connection-11'
     },
-    "chain_2": {
-      "chain_name": "sei",
-      "client_id": "07-tendermint-106",
-      "connection_id": "connection-144"
+    chain_2: {
+      chain_name: 'sei',
+      client_id: '07-tendermint-106',
+      connection_id: 'connection-144'
     },
-    "channels": [
+    channels: [
       {
-        "chain_1": {
-          "channel_id": "channel-43",
-          "port_id": "transfer"
+        chain_1: {
+          channel_id: 'channel-43',
+          port_id: 'transfer'
         },
-        "chain_2": {
-          "channel_id": "channel-58",
-          "port_id": "transfer"
+        chain_2: {
+          channel_id: 'channel-58',
+          port_id: 'transfer'
         },
-        "ordering": "unordered",
-        "version": "ics20-1",
-        "tags": {
-          "status": "live",
-          "preferred": true
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       },
       {
-        "chain_1": {
-          "channel_id": "channel-44",
-          "port_id": "wasm.nois1acyc05v6fgcdgj88nmz2t40aex9nlnptqpwp5hf8hwg7rhce9uuqgqz5wp"
+        chain_1: {
+          channel_id: 'channel-44',
+          port_id:
+            'wasm.nois1acyc05v6fgcdgj88nmz2t40aex9nlnptqpwp5hf8hwg7rhce9uuqgqz5wp'
         },
-        "chain_2": {
-          "channel_id": "channel-59",
-          "port_id": "wasm.sei1vxlzhn6qvf95syha2tgr0ct23sk5359s2vqzylgthuyy7kd7ql5qcxa4r0"
+        chain_2: {
+          channel_id: 'channel-59',
+          port_id:
+            'wasm.sei1vxlzhn6qvf95syha2tgr0ct23sk5359s2vqzylgthuyy7kd7ql5qcxa4r0'
         },
-        "ordering": "unordered",
-        "version": "nois-v7",
-        "tags": {
-          "status": "live",
-          "preferred": true
+        ordering: 'unordered',
+        version: 'nois-v7',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }
     ]
   },
   {
-    "$schema": "../ibc_data.schema.json",
-    "chain_1": {
-      "chain_name": "osmosis",
-      "client_id": "07-tendermint-2790",
-      "connection_id": "connection-2288"
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'osmosis',
+      client_id: '07-tendermint-2790',
+      connection_id: 'connection-2288'
     },
-    "chain_2": {
-      "chain_name": "sei",
-      "client_id": "07-tendermint-2",
-      "connection_id": "connection-0"
+    chain_2: {
+      chain_name: 'sei',
+      client_id: '07-tendermint-2',
+      connection_id: 'connection-0'
     },
-    "channels": [
+    channels: [
       {
-        "chain_1": {
-          "channel_id": "channel-782",
-          "port_id": "transfer"
+        chain_1: {
+          channel_id: 'channel-782',
+          port_id: 'transfer'
         },
-        "chain_2": {
-          "channel_id": "channel-0",
-          "port_id": "transfer"
+        chain_2: {
+          channel_id: 'channel-0',
+          port_id: 'transfer'
         },
-        "ordering": "unordered",
-        "version": "ics20-1",
-        "tags": {
-          "status": "live",
-          "preferred": true,
-          "dex": "osmosis"
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          dex: 'osmosis'
         }
       }
     ]
   },
   {
-    "$schema": "../ibc_data.schema.json",
-    "chain_1": {
-      "chain_name": "planq",
-      "client_id": "07-tendermint-545",
-      "connection_id": "connection-477"
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'planq',
+      client_id: '07-tendermint-545',
+      connection_id: 'connection-477'
     },
-    "chain_2": {
-      "chain_name": "sei",
-      "client_id": "07-tendermint-21",
-      "connection_id": "connection-12"
+    chain_2: {
+      chain_name: 'sei',
+      client_id: '07-tendermint-21',
+      connection_id: 'connection-12'
     },
-    "channels": [
+    channels: [
       {
-        "chain_1": {
-          "channel_id": "channel-59",
-          "port_id": "transfer"
+        chain_1: {
+          channel_id: 'channel-59',
+          port_id: 'transfer'
         },
-        "chain_2": {
-          "channel_id": "channel-13",
-          "port_id": "transfer"
+        chain_2: {
+          channel_id: 'channel-13',
+          port_id: 'transfer'
         },
-        "ordering": "unordered",
-        "version": "ics20-1",
-        "tags": {
-          "status": "live",
-          "preferred": true
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }
     ]
   },
   {
-    "$schema": "../ibc_data.schema.json",
-    "chain_1": {
-      "chain_name": "sei",
-      "client_id": "07-tendermint-18",
-      "connection_id": "connection-11"
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'sei',
+      client_id: '07-tendermint-18',
+      connection_id: 'connection-11'
     },
-    "chain_2": {
-      "chain_name": "stride",
-      "client_id": "07-tendermint-130",
-      "connection_id": "connection-119"
+    chain_2: {
+      chain_name: 'stride',
+      client_id: '07-tendermint-130',
+      connection_id: 'connection-119'
     },
-    "channels": [
+    channels: [
       {
-        "chain_1": {
-          "channel_id": "channel-11",
-          "port_id": "transfer"
+        chain_1: {
+          channel_id: 'channel-11',
+          port_id: 'transfer'
         },
-        "chain_2": {
-          "channel_id": "channel-149",
-          "port_id": "transfer"
+        chain_2: {
+          channel_id: 'channel-149',
+          port_id: 'transfer'
         },
-        "ordering": "unordered",
-        "version": "ics20-1",
-        "tags": {
-          "status": "live",
-          "preferred": true
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }
     ]

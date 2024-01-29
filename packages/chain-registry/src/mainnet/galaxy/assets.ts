@@ -1,32 +1,32 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../assetlist.schema.json",
-  "chain_name": "galaxy",
-  "assets": [
+  $schema: '../assetlist.schema.json',
+  chain_name: 'galaxy',
+  assets: [
     {
-      "description": "GLX is the staking token of the Galaxy Chain",
-      "denom_units": [
+      description: 'GLX is the staking token of the Galaxy Chain',
+      denom_units: [
         {
-          "denom": "uglx",
-          "exponent": 0
+          denom: 'uglx',
+          exponent: 0
         },
         {
-          "denom": "glx",
-          "exponent": 6
+          denom: 'glx',
+          exponent: 6
         }
       ],
-      "base": "uglx",
-      "name": "Galaxy",
-      "display": "glx",
-      "symbol": "GLX",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.svg"
+      base: 'uglx',
+      name: 'Galaxy',
+      display: 'glx',
+      symbol: 'GLX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.svg'
       },
-      "images": [
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.svg'
         }
       ]
     }

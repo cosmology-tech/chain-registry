@@ -24,8 +24,34 @@ import * as _fantomtestnet from './fantomtestnet';
 import * as _moonbeamtestnet from './moonbeamtestnet';
 import * as _polkadottestnet from './polkadottestnet';
 import * as _polygontestnet from './polygontestnet';
-import * as _ojotestnet from './ojotestnet'
+import * as _ojotestnet from './ojotestnet';
 
-const assets: AssetList[] = [_picasso.assets,_composablepolkadot.assets,_aptos.assets,_arbitrum.assets,_avalanche.assets,_binancesmartchain.assets,_bitcoin.assets,_ethereum.assets,_fantom.assets,_filecoin.assets,_kusama.assets,_moonbeam.assets,_polkadot.assets,_polygon.assets,_solana.assets,_statemine.assets,_sui.assets,_avalanchetestnet.assets,_binancesmartchaintestnet.assets,_ethereumtestnet.assets,_fantomtestnet.assets,_moonbeamtestnet.assets,_polkadottestnet.assets,_polygontestnet.assets,_ojotestnet.assets];
+const assets: AssetList[] = [
+  _picasso.assets,
+  _composablepolkadot.assets,
+  _aptos.assets,
+  _arbitrum.assets,
+  _avalanche.assets,
+  _binancesmartchain.assets,
+  _bitcoin.assets,
+  _ethereum.assets,
+  _fantom.assets,
+  _filecoin.assets,
+  _kusama.assets,
+  _moonbeam.assets,
+  _polkadot.assets,
+  _polygon.assets,
+  _solana.assets,
+  _statemine.assets,
+  _sui.assets,
+  _avalanchetestnet.assets,
+  _binancesmartchaintestnet.assets,
+  _ethereumtestnet.assets,
+  _fantomtestnet.assets,
+  _moonbeamtestnet.assets,
+  _polkadottestnet.assets,
+  _polygontestnet.assets,
+  _ojotestnet.assets
+];
 
 export default assets;

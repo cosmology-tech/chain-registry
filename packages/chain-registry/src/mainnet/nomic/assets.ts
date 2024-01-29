@@ -1,69 +1,69 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../assetlist.schema.json",
-  "chain_name": "nomic",
-  "assets": [
+  $schema: '../assetlist.schema.json',
+  chain_name: 'nomic',
+  assets: [
     {
-      "description": "Nomic's native token.",
-      "denom_units": [
+      description: "Nomic's native token.",
+      denom_units: [
         {
-          "denom": "unom",
-          "exponent": 0
+          denom: 'unom',
+          exponent: 0
         },
         {
-          "denom": "nom",
-          "exponent": 6
+          denom: 'nom',
+          exponent: 6
         }
       ],
-      "base": "unom",
-      "name": "Nomic",
-      "display": "nom",
-      "symbol": "NOM",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg"
+      base: 'unom',
+      name: 'Nomic',
+      display: 'nom',
+      symbol: 'NOM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg'
       },
-      "images": [
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg'
         }
       ]
     },
     {
-      "description": "Bitcoin. On Cosmos.",
-      "denom_units": [
+      description: 'Bitcoin. On Cosmos.',
+      denom_units: [
         {
-          "denom": "usat",
-          "exponent": 0
+          denom: 'usat',
+          exponent: 0
         },
         {
-          "denom": "nbtc",
-          "exponent": 14
+          denom: 'nbtc',
+          exponent: 14
         }
       ],
-      "base": "usat",
-      "name": "Nomic Bitcoin",
-      "display": "nbtc",
-      "symbol": "nBTC",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg"
+      base: 'usat',
+      name: 'Nomic Bitcoin',
+      display: 'nbtc',
+      symbol: 'nBTC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg'
       },
-      "traces": [
+      traces: [
         {
-          "type": "bridge",
-          "counterparty": {
-            "chain_name": "bitcoin",
-            "base_denom": "sat"
+          type: 'bridge',
+          counterparty: {
+            chain_name: 'bitcoin',
+            base_denom: 'sat'
           },
-          "provider": "Nomic"
+          provider: 'Nomic'
         }
       ],
-      "images": [
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg'
         }
       ]
     }

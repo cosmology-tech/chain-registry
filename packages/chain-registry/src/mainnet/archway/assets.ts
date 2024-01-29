@@ -1,64 +1,66 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../assetlist.schema.json",
-  "chain_name": "archway",
-  "assets": [
+  $schema: '../assetlist.schema.json',
+  chain_name: 'archway',
+  assets: [
     {
-      "description": "The native token of Archway network",
-      "denom_units": [
+      description: 'The native token of Archway network',
+      denom_units: [
         {
-          "denom": "aarch",
-          "exponent": 0
+          denom: 'aarch',
+          exponent: 0
         },
         {
-          "denom": "uarch",
-          "exponent": 12
+          denom: 'uarch',
+          exponent: 12
         },
         {
-          "denom": "arch",
-          "exponent": 18
+          denom: 'arch',
+          exponent: 18
         }
       ],
-      "base": "aarch",
-      "name": "Archway",
-      "display": "arch",
-      "symbol": "ARCH",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg"
+      base: 'aarch',
+      name: 'Archway',
+      display: 'arch',
+      symbol: 'ARCH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
       },
-      "coingecko_id": "archway",
-      "images": [
+      coingecko_id: 'archway',
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
         }
       ]
     },
     {
-      "description": "ERIS liquid staked ARCH",
-      "type_asset": "cw20",
-      "address": "archway1fwurjg7ah4v7hhs6xsc3wutqpvmahrfhns285s0lt34tgfdhplxq6m8xg5",
-      "denom_units": [
+      description: 'ERIS liquid staked ARCH',
+      type_asset: 'cw20',
+      address:
+        'archway1fwurjg7ah4v7hhs6xsc3wutqpvmahrfhns285s0lt34tgfdhplxq6m8xg5',
+      denom_units: [
         {
-          "denom": "cw20:archway1fwurjg7ah4v7hhs6xsc3wutqpvmahrfhns285s0lt34tgfdhplxq6m8xg5",
-          "exponent": 0
+          denom:
+            'cw20:archway1fwurjg7ah4v7hhs6xsc3wutqpvmahrfhns285s0lt34tgfdhplxq6m8xg5',
+          exponent: 0
         },
         {
-          "denom": "ampARCH",
-          "exponent": 6
+          denom: 'ampARCH',
+          exponent: 6
         }
       ],
-      "base": "cw20:archway1fwurjg7ah4v7hhs6xsc3wutqpvmahrfhns285s0lt34tgfdhplxq6m8xg5",
-      "name": "ERIS Amplified ARCH",
-      "display": "ampARCH",
-      "symbol": "ampARCH",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/amparch.png"
+      base: 'cw20:archway1fwurjg7ah4v7hhs6xsc3wutqpvmahrfhns285s0lt34tgfdhplxq6m8xg5',
+      name: 'ERIS Amplified ARCH',
+      display: 'ampARCH',
+      symbol: 'ampARCH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/amparch.png'
       },
-      "images": [
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/amparch.png"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/amparch.png'
         }
       ]
     }

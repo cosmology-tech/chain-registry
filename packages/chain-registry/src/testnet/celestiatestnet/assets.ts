@@ -1,30 +1,30 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../../assetlist.schema.json",
-  "chain_name": "celestiatestnet",
-  "assets": [
+  $schema: '../../assetlist.schema.json',
+  chain_name: 'celestiatestnet',
+  assets: [
     {
-      "description": "",
-      "denom_units": [
+      description: '',
+      denom_units: [
         {
-          "denom": "utia",
-          "exponent": 0
+          denom: 'utia',
+          exponent: 0
         },
         {
-          "denom": "tia",
-          "exponent": 6
+          denom: 'tia',
+          exponent: 6
         }
       ],
-      "base": "utia",
-      "name": "Celestia",
-      "display": "tia",
-      "symbol": "TIA",
-      "logo_URIs": {
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/celestiatestnet/images/celestia.svg"
+      base: 'utia',
+      name: 'Celestia',
+      display: 'tia',
+      symbol: 'TIA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/celestiatestnet/images/celestia.svg'
       },
-      "images": [
+      images: [
         {
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/celestiatestnet/images/celestia.svg"
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/celestiatestnet/images/celestia.svg'
         }
       ]
     }

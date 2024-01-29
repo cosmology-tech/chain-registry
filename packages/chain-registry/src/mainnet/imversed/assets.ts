@@ -1,33 +1,34 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../assetlist.schema.json",
-  "chain_name": "imversed",
-  "assets": [
+  $schema: '../assetlist.schema.json',
+  chain_name: 'imversed',
+  assets: [
     {
-      "description": "The native EVM, governance and staking token of the Imversed",
-      "denom_units": [
+      description:
+        'The native EVM, governance and staking token of the Imversed',
+      denom_units: [
         {
-          "denom": "aimv",
-          "exponent": 0
+          denom: 'aimv',
+          exponent: 0
         },
         {
-          "denom": "imv",
-          "exponent": 18
+          denom: 'imv',
+          exponent: 18
         }
       ],
-      "base": "aimv",
-      "name": "IMV",
-      "display": "imv",
-      "symbol": "IMV",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.svg"
+      base: 'aimv',
+      name: 'IMV',
+      display: 'imv',
+      symbol: 'IMV',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.svg'
       },
-      "coingecko_id": "imv",
-      "images": [
+      coingecko_id: 'imv',
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.svg'
         }
       ]
     }

@@ -1,119 +1,116 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
-  "$schema": "../chain.schema.json",
-  "chain_name": "tenet",
-  "status": "live",
-  "network_type": "mainnet",
-  "website": "https://tenet.org/",
-  "pretty_name": "Tenet",
-  "chain_id": "tenet_1559-1",
-  "bech32_prefix": "tenet",
-  "node_home": "$HOME/.tenetd",
-  "daemon_name": "tenetd",
-  "key_algos": [
-    "ethsecp256k1"
-  ],
-  "extra_codecs": [
-    "ethermint"
-  ],
-  "slip44": 60,
-  "fees": {
-    "fee_tokens": [
+  $schema: '../chain.schema.json',
+  chain_name: 'tenet',
+  status: 'live',
+  network_type: 'mainnet',
+  website: 'https://tenet.org/',
+  pretty_name: 'Tenet',
+  chain_id: 'tenet_1559-1',
+  bech32_prefix: 'tenet',
+  node_home: '$HOME/.tenetd',
+  daemon_name: 'tenetd',
+  key_algos: ['ethsecp256k1'],
+  extra_codecs: ['ethermint'],
+  slip44: 60,
+  fees: {
+    fee_tokens: [
       {
-        "denom": "atenet",
-        "fixed_min_gas_price": 250000000,
-        "low_gas_price": 20000000000,
-        "average_gas_price": 25000000000,
-        "high_gas_price": 40000000000
+        denom: 'atenet',
+        fixed_min_gas_price: 250000000,
+        low_gas_price: 20000000000,
+        average_gas_price: 25000000000,
+        high_gas_price: 40000000000
       }
     ]
   },
-  "staking": {
-    "staking_tokens": [
+  staking: {
+    staking_tokens: [
       {
-        "denom": "atenet"
+        denom: 'atenet'
       }
     ]
   },
-  "codebase": {
-    "cosmos_sdk_version": "0.46"
+  codebase: {
+    cosmos_sdk_version: '0.46'
   },
-  "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.png",
-    "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.svg"
+  logo_URIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.svg'
   },
-  "apis": {
-    "rpc": [
+  apis: {
+    rpc: [
       {
-        "address": "https://tendermint-1.rpc.tenet.org",
-        "provider": "tenet"
+        address: 'https://tendermint-1.rpc.tenet.org',
+        provider: 'tenet'
       },
       {
-        "address": "https://tenet-mainnet-rpc.autostake.com:443",
-        "provider": "AutoStake 🛡️ Slash Protected"
+        address: 'https://tenet-mainnet-rpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        "address": "https://tenet-rpc.publicnode.com:443",
-        "provider": "Allnodes ⚡️ Nodes & Staking"
+        address: 'https://tenet-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
-    "rest": [
+    rest: [
       {
-        "address": "https://app.rpc.tenet.org",
-        "provider": "tenet"
+        address: 'https://app.rpc.tenet.org',
+        provider: 'tenet'
       },
       {
-        "address": "https://tenet-mainnet-lcd.autostake.com:443",
-        "provider": "AutoStake 🛡️ Slash Protected"
+        address: 'https://tenet-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        "address": "https://tenet-rest.publicnode.com",
-        "provider": "Allnodes ⚡️ Nodes & Staking"
+        address: 'https://tenet-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
-    "grpc": [
+    grpc: [
       {
-        "address": "tenet-grpc.publicnode.com:443",
-        "provider": "Allnodes ⚡️ Nodes & Staking"
+        address: 'tenet-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
-        "address": "kichain-mainnet-grpc.autostake.com:443",
-        "provider": "AutoStake 🛡️ Slash Protected"
+        address: 'kichain-mainnet-grpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
-    "evm-http-jsonrpc": [
+    'evm-http-jsonrpc': [
       {
-        "address": "https://rpc.tenet.org",
-        "provider": "tenet"
+        address: 'https://rpc.tenet.org',
+        provider: 'tenet'
       },
       {
-        "address": "https://tenet-evm.publicnode.com",
-        "provider": "Allnodes ⚡️ Nodes & Staking"
+        address: 'https://tenet-evm.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ]
   },
-  "explorers": [
+  explorers: [
     {
-      "kind": "ping.pub",
-      "url": "https://ping.pub/tenet",
-      "tx_page": "https://ping.pub/tenet/tx/${txHash}"
+      kind: 'ping.pub',
+      url: 'https://ping.pub/tenet',
+      tx_page: 'https://ping.pub/tenet/tx/${txHash}'
     },
     {
-      "kind": "Nodeist Explorer",
-      "url": "https://exp.nodeist.net/Tenet",
-      "tx_page": "https://exp.nodeist.net/Tenet/tx/${txHash}"
+      kind: 'Nodeist Explorer',
+      url: 'https://exp.nodeist.net/Tenet',
+      tx_page: 'https://exp.nodeist.net/Tenet/tx/${txHash}'
     },
     {
-      "kind": "TC Network",
-      "url": "https://explorer.tcnetwork.io/tenet",
-      "tx_page": "https://explorer.tcnetwork.io/tenet/transaction/${txHash}",
-      "account_page": "https://explorer.tcnetwork.io/tenet/account/${accountAddress}"
+      kind: 'TC Network',
+      url: 'https://explorer.tcnetwork.io/tenet',
+      tx_page: 'https://explorer.tcnetwork.io/tenet/transaction/${txHash}',
+      account_page:
+        'https://explorer.tcnetwork.io/tenet/account/${accountAddress}'
     }
   ],
-  "images": [
+  images: [
     {
-      "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.png",
-      "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.svg"
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.svg'
     }
   ]
 };

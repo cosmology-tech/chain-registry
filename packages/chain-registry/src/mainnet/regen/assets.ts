@@ -1,61 +1,62 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../assetlist.schema.json",
-  "chain_name": "regen",
-  "assets": [
+  $schema: '../assetlist.schema.json',
+  chain_name: 'regen',
+  assets: [
     {
-      "description": "REGEN coin is the token for the Regen Network Platform",
-      "denom_units": [
+      description: 'REGEN coin is the token for the Regen Network Platform',
+      denom_units: [
         {
-          "denom": "uregen",
-          "exponent": 0
+          denom: 'uregen',
+          exponent: 0
         },
         {
-          "denom": "regen",
-          "exponent": 6
+          denom: 'regen',
+          exponent: 6
         }
       ],
-      "base": "uregen",
-      "name": "Regen Network",
-      "display": "regen",
-      "symbol": "REGEN",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg"
+      base: 'uregen',
+      name: 'Regen Network',
+      display: 'regen',
+      symbol: 'REGEN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg'
       },
-      "coingecko_id": "regen",
-      "images": [
+      coingecko_id: 'regen',
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg'
         }
       ]
     },
     {
-      "description": "Nature Carbon Ton (NCT) is a carbon token standard backed 1:1 by carbon credits issued by Verra, a global leader in the voluntary carbon market. NCT credits on Regen Network have been tokenized by Toucan.earth.",
-      "denom_units": [
+      description:
+        'Nature Carbon Ton (NCT) is a carbon token standard backed 1:1 by carbon credits issued by Verra, a global leader in the voluntary carbon market. NCT credits on Regen Network have been tokenized by Toucan.earth.',
+      denom_units: [
         {
-          "denom": "eco.uC.NCT",
-          "exponent": 0
+          denom: 'eco.uC.NCT',
+          exponent: 0
         },
         {
-          "denom": "nct",
-          "exponent": 6
+          denom: 'nct',
+          exponent: 6
         }
       ],
-      "base": "eco.uC.NCT",
-      "name": "Nature Carbon Ton",
-      "display": "nct",
-      "symbol": "NCT",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.svg"
+      base: 'eco.uC.NCT',
+      name: 'Nature Carbon Ton',
+      display: 'nct',
+      symbol: 'NCT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.svg'
       },
-      "coingecko_id": "toucan-protocol-nature-carbon-tonne",
-      "images": [
+      coingecko_id: 'toucan-protocol-nature-carbon-tonne',
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.svg'
         }
       ]
     }

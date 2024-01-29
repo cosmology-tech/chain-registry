@@ -1,24 +1,24 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../assetlist.schema.json",
-  "chain_name": "statemine",
-  "assets": [
+  $schema: '../assetlist.schema.json',
+  chain_name: 'statemine',
+  assets: [
     {
-      "denom_units": [
+      denom_units: [
         {
-          "denom": "130",
-          "exponent": 0
+          denom: '130',
+          exponent: 0
         },
         {
-          "denom": "usdt",
-          "exponent": 6
+          denom: 'usdt',
+          exponent: 6
         }
       ],
-      "base": "130",
-      "name": "Statemine",
-      "display": "usdt",
-      "symbol": "USDT",
-      "coingecko_id": "tether"
+      base: '130',
+      name: 'Statemine',
+      display: 'usdt',
+      symbol: 'USDT',
+      coingecko_id: 'tether'
     }
   ]
 };

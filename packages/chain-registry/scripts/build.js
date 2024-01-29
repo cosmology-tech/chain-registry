@@ -234,6 +234,148 @@ const writeNetworkAll = (filePath, isAssets, isChains, isIbc) => {
   );
 };
 
+const writeRootAssets = (filePath, obj) => {
+  const validNetwork = [];
+  const importStat = Object.keys(obj)
+    .map((network_type) => {
+      if (!obj[network_type].all_files.isAssets) {
+        return null;
+      }
+
+      validNetwork.push(network_type);
+      return `import * as _${network_type} from './${network_type}/all'`;
+    })
+    .filter(Boolean)
+    .join(';\n');
+
+  if (!validNetwork.length) {
+    return false;
+  }
+
+  fs.writeFileSync(
+    filePath,
+    `import { AssetList } from '@chain-registry/types';
+
+${importStat}
+
+const assets: AssetList[] = [${validNetwork
+      .map((network_type) => {
+        return `..._${network_type}.assets`;
+      })
+      .join(',')}];
+
+export default assets;
+`
+  );
+
+  return true;
+};
+
+const writeRootChains = (filePath, obj) => {
+  const validNetwork = [];
+
+  const importStat = Object.keys(obj)
+    .map((network_type) => {
+      if (!obj[network_type].all_files.isChains) {
+        return null;
+      }
+
+      validNetwork.push(network_type);
+      return `import * as _${network_type} from './${network_type}/all'`;
+    })
+    .filter(Boolean)
+    .join(';\n');
+
+  if (!validNetwork.length) {
+    return false;
+  }
+
+  fs.writeFileSync(
+    filePath,
+    `import { Chain } from '@chain-registry/types';
+
+${importStat}
+
+const chains: Chain[] = [${validNetwork
+      .map((network_type) => {
+        return `..._${network_type}.chains`;
+      })
+      .join(',')}];
+
+export default chains;
+`
+  );
+
+  return true;
+};
+
+const writeRootIbc = (filePath, obj) => {
+  const validNetwork = [];
+
+  const importStat = Object.keys(obj)
+    .map((network_type) => {
+      if (!obj[network_type].all_files.isIbc) {
+        return null;
+      }
+
+      validNetwork.push(network_type);
+      return `import * as _${network_type} from './${network_type}/all'`;
+    })
+    .filter(Boolean)
+    .join(';\n');
+
+  if (!validNetwork.length) {
+    return false;
+  }
+
+  fs.writeFileSync(
+    filePath,
+    `import { IBCInfo } from '@chain-registry/types';
+
+${importStat}
+
+const ibc: IBCInfo[] = [${validNetwork
+      .map((network_type) => {
+        return `..._${network_type}.ibc`;
+      })
+      .join(',')}];
+
+export default ibc;
+`
+  );
+
+  return true;
+};
+
+const writeRootAll = (filePath) => {
+  fs.writeFileSync(
+    filePath,
+    `import assets from './assets';
+import chains from './chains';
+import ibc from './ibc';
+
+export default {
+  assets,
+  chains,
+  ibc
+};
+
+export { assets, chains, ibc };`
+  );
+};
+
+const writeRootIndex = (filePath, obj) => {
+  fs.writeFileSync(
+    filePath,
+    `${Object.keys(obj)
+      .map((network_type) => {
+        return `export * from './${network_type}'`;
+      })
+      .filter(Boolean)
+      .join(';\n')}`
+  );
+};
+
 const initChainBlock = (obj, network_type, chain_name) => {
   if (!obj[network_type]) {
     obj[network_type] = {};
@@ -412,5 +554,25 @@ Object.keys(result).forEach((network_type) => {
   writeNetworkIndex(indexFilePath, result[network_type]);
 
   const allFilePath = path.join(networkFolder, 'all.ts');
+  result[network_type]['all_files'] = {
+    isAssets,
+    isChains,
+    isIbc
+  };
   writeNetworkAll(allFilePath, isAssets, isChains, isIbc);
 });
+
+const assetsRootFilePath = path.join(SRC_ROOT, 'assets.ts');
+writeRootAssets(assetsRootFilePath, result);
+
+const chainsRootFilePath = path.join(SRC_ROOT, 'chains.ts');
+writeRootChains(chainsRootFilePath, result);
+
+const ibcRootFilePath = path.join(SRC_ROOT, 'ibc.ts');
+writeRootIbc(ibcRootFilePath, result);
+
+const allRootFilePath = path.join(SRC_ROOT, 'all.ts');
+writeRootAll(allRootFilePath);
+
+const indexRootFilePath = path.join(SRC_ROOT, 'index.ts');
+writeRootIndex(indexRootFilePath, result);

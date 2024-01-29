@@ -1,26 +1,26 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../../assetlist.schema.json",
-  "chain_name": "arkeonetworktestnet",
-  "assets": [
+  $schema: '../../assetlist.schema.json',
+  chain_name: 'arkeonetworktestnet',
+  assets: [
     {
-      "description": "",
-      "denom_units": [
+      description: '',
+      denom_units: [
         {
-          "denom": "uarkeo",
-          "exponent": 6
+          denom: 'uarkeo',
+          exponent: 6
         }
       ],
-      "base": "uarkeo",
-      "display": "arkeo",
-      "name": "Arkeo",
-      "symbol": "ARKEO",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/arkeonetworktestnet/images/arkeo.png"
+      base: 'uarkeo',
+      display: 'arkeo',
+      name: 'Arkeo',
+      symbol: 'ARKEO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/arkeonetworktestnet/images/arkeo.png'
       },
-      "images": [
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/arkeonetworktestnet/images/arkeo.png"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/arkeonetworktestnet/images/arkeo.png'
         }
       ]
     }

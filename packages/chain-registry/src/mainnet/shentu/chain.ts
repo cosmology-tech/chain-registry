@@ -1,170 +1,169 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
-  "$schema": "../chain.schema.json",
-  "chain_name": "shentu",
-  "status": "live",
-  "network_type": "mainnet",
-  "website": "https://www.shentu.technology/",
-  "pretty_name": "Shentu",
-  "chain_id": "shentu-2.2",
-  "bech32_prefix": "shentu",
-  "daemon_name": "shentud",
-  "node_home": "$HOME/.shentud",
-  "key_algos": [
-    "secp256k1"
-  ],
-  "slip44": 118,
-  "fees": {
-    "fee_tokens": [
+  $schema: '../chain.schema.json',
+  chain_name: 'shentu',
+  status: 'live',
+  network_type: 'mainnet',
+  website: 'https://www.shentu.technology/',
+  pretty_name: 'Shentu',
+  chain_id: 'shentu-2.2',
+  bech32_prefix: 'shentu',
+  daemon_name: 'shentud',
+  node_home: '$HOME/.shentud',
+  key_algos: ['secp256k1'],
+  slip44: 118,
+  fees: {
+    fee_tokens: [
       {
-        "denom": "uctk",
-        "low_gas_price": 0.01,
-        "average_gas_price": 0.025,
-        "high_gas_price": 0.04
+        denom: 'uctk',
+        low_gas_price: 0.01,
+        average_gas_price: 0.025,
+        high_gas_price: 0.04
       }
     ]
   },
-  "staking": {
-    "staking_tokens": [
+  staking: {
+    staking_tokens: [
       {
-        "denom": "uctk"
+        denom: 'uctk'
       }
     ]
   },
-  "codebase": {},
-  "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png",
-    "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.svg"
+  codebase: {},
+  logo_URIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.svg'
   },
-  "apis": {
-    "rpc": [
+  apis: {
+    rpc: [
       {
-        "address": "https://shenturpc.noopsbycertik.com/",
-        "provider": "Shentu"
+        address: 'https://shenturpc.noopsbycertik.com/',
+        provider: 'Shentu'
       },
       {
-        "address": "https://shentu-rpc.polkachu.com",
-        "provider": "Polkachu"
+        address: 'https://shentu-rpc.polkachu.com',
+        provider: 'Polkachu'
       },
       {
-        "address": "https://shentu-rpc.ramuchi.tech",
-        "provider": "ramuchi.tech"
+        address: 'https://shentu-rpc.ramuchi.tech',
+        provider: 'ramuchi.tech'
       },
       {
-        "address": "https://rpc-shentu-01.stakeflow.io",
-        "provider": "Stakeflow"
+        address: 'https://rpc-shentu-01.stakeflow.io',
+        provider: 'Stakeflow'
       },
       {
-        "address": "https://shentu-rpc.tienthuattoan.ventures",
-        "provider": "TienThuatToan"
+        address: 'https://shentu-rpc.tienthuattoan.ventures',
+        provider: 'TienThuatToan'
       },
       {
-        "address": "https://shentu-rpc.publicnode.com:443",
-        "provider": "Allnodes ⚡️ Nodes & Staking"
+        address: 'https://shentu-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
-        "address": "https://shentu-rpc.highstakes.ch:26657/",
-        "provider": "High Stakes 🇨🇭"
+        address: 'https://shentu-rpc.highstakes.ch:26657/',
+        provider: 'High Stakes 🇨🇭'
       }
     ],
-    "rest": [
+    rest: [
       {
-        "address": "https://rest.noopsbycertik.com/",
-        "provider": "Shentu"
+        address: 'https://rest.noopsbycertik.com/',
+        provider: 'Shentu'
       },
       {
-        "address": "https://shentu-api.polkachu.com",
-        "provider": "Polkachu"
+        address: 'https://shentu-api.polkachu.com',
+        provider: 'Polkachu'
       },
       {
-        "address": "https://shentu-api.ramuchi.tech",
-        "provider": "ramuchi.tech"
+        address: 'https://shentu-api.ramuchi.tech',
+        provider: 'ramuchi.tech'
       },
       {
-        "address": "https://api-shentu-01.stakeflow.io",
-        "provider": "Stakeflow"
+        address: 'https://api-shentu-01.stakeflow.io',
+        provider: 'Stakeflow'
       },
       {
-        "address": "https://shentu-api.tienthuattoan.ventures",
-        "provider": "TienThuatToan"
+        address: 'https://shentu-api.tienthuattoan.ventures',
+        provider: 'TienThuatToan'
       },
       {
-        "address": "https://shentu-rest.publicnode.com",
-        "provider": "Allnodes ⚡️ Nodes & Staking"
+        address: 'https://shentu-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
-        "address": "https://shentu-api.highstakes.ch:1317/",
-        "provider": "High Stakes 🇨🇭"
+        address: 'https://shentu-api.highstakes.ch:1317/',
+        provider: 'High Stakes 🇨🇭'
       }
     ],
-    "grpc": [
+    grpc: [
       {
-        "address": "shentu-grpc.polkachu.com:14090",
-        "provider": "Polkachu"
+        address: 'shentu-grpc.polkachu.com:14090',
+        provider: 'Polkachu'
       },
       {
-        "address": "https://shentu-grpc.ramuchi.tech:12090",
-        "provider": "ramuchi.tech"
+        address: 'https://shentu-grpc.ramuchi.tech:12090',
+        provider: 'ramuchi.tech'
       },
       {
-        "address": "grpc-shentu-01.stakeflow.io:2402",
-        "provider": "Stakeflow"
+        address: 'grpc-shentu-01.stakeflow.io:2402',
+        provider: 'Stakeflow'
       },
       {
-        "address": "shentu-grpc.tienthuattoan.ventures:9490",
-        "provider": "TienThuatToan"
+        address: 'shentu-grpc.tienthuattoan.ventures:9490',
+        provider: 'TienThuatToan'
       },
       {
-        "address": "shentu-grpc.publicnode.com:443",
-        "provider": "Allnodes ⚡️ Nodes & Staking"
+        address: 'shentu-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ]
   },
-  "explorers": [
+  explorers: [
     {
-      "kind": "EZ Staking",
-      "url": "https://app.ezstaking.io/shentu",
-      "tx_page": "https://app.ezstaking.io/shentu/txs/${txHash}",
-      "account_page": "https://app.ezstaking.io/shentu/account/${accountAddress}"
+      kind: 'EZ Staking',
+      url: 'https://app.ezstaking.io/shentu',
+      tx_page: 'https://app.ezstaking.io/shentu/txs/${txHash}',
+      account_page: 'https://app.ezstaking.io/shentu/account/${accountAddress}'
     },
     {
-      "kind": "mintscan",
-      "url": "https://www.mintscan.io/shentu",
-      "tx_page": "https://www.mintscan.io/shentu/transactions/${txHash}",
-      "account_page": "https://www.mintscan.io/shentu/accounts/${accountAddress}"
+      kind: 'mintscan',
+      url: 'https://www.mintscan.io/shentu',
+      tx_page: 'https://www.mintscan.io/shentu/transactions/${txHash}',
+      account_page: 'https://www.mintscan.io/shentu/accounts/${accountAddress}'
     },
     {
-      "kind": "Shentu Explorer",
-      "url": "https://explorer.shentu.technology/?net=shentu-2.2",
-      "tx_page": "https://explorer.shentu.technology/transactions/${txHash}?net=shentu-2.2"
+      kind: 'Shentu Explorer',
+      url: 'https://explorer.shentu.technology/?net=shentu-2.2',
+      tx_page:
+        'https://explorer.shentu.technology/transactions/${txHash}?net=shentu-2.2'
     },
     {
-      "kind": "ping.pub",
-      "url": "https://ping.pub/shentu",
-      "tx_page": "https://ping.pub/shentu/tx/${txHash}"
+      kind: 'ping.pub',
+      url: 'https://ping.pub/shentu',
+      tx_page: 'https://ping.pub/shentu/tx/${txHash}'
     },
     {
-      "kind": "atomscan",
-      "url": "https://atomscan.com/shentu",
-      "tx_page": "https://atomscan.com/shentu/transactions/${txHash}",
-      "account_page": "https://atomscan.com/shentu/accounts/${accountAddress}"
+      kind: 'atomscan',
+      url: 'https://atomscan.com/shentu',
+      tx_page: 'https://atomscan.com/shentu/transactions/${txHash}',
+      account_page: 'https://atomscan.com/shentu/accounts/${accountAddress}'
     },
     {
-      "kind": "bigdipper",
-      "url": "https://bigdipper.live/shentu",
-      "tx_page": "https://bigdipper.live/shentu/transactions/${txHash}",
-      "account_page": "https://bigdipper.live/shentu/accounts/${accountAddress}"
+      kind: 'bigdipper',
+      url: 'https://bigdipper.live/shentu',
+      tx_page: 'https://bigdipper.live/shentu/transactions/${txHash}',
+      account_page: 'https://bigdipper.live/shentu/accounts/${accountAddress}'
     },
     {
-      "kind": "Stakeflow",
-      "url": "https://stakeflow.io/shentu",
-      "account_page": "https://stakeflow.io/shentu/accounts/${accountAddress}"
+      kind: 'Stakeflow',
+      url: 'https://stakeflow.io/shentu',
+      account_page: 'https://stakeflow.io/shentu/accounts/${accountAddress}'
     }
   ],
-  "images": [
+  images: [
     {
-      "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png",
-      "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.svg"
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.svg'
     }
   ]
 };

@@ -1,145 +1,143 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
-  "$schema": "../chain.schema.json",
-  "chain_name": "emoney",
-  "status": "live",
-  "network_type": "mainnet",
-  "pretty_name": "e-Money",
-  "chain_id": "emoney-3",
-  "bech32_prefix": "emoney",
-  "daemon_name": "emd",
-  "node_home": "$HOME/.emd",
-  "key_algos": [
-    "secp256k1"
-  ],
-  "slip44": 118,
-  "fees": {
-    "fee_tokens": [
+  $schema: '../chain.schema.json',
+  chain_name: 'emoney',
+  status: 'live',
+  network_type: 'mainnet',
+  pretty_name: 'e-Money',
+  chain_id: 'emoney-3',
+  bech32_prefix: 'emoney',
+  daemon_name: 'emd',
+  node_home: '$HOME/.emd',
+  key_algos: ['secp256k1'],
+  slip44: 118,
+  fees: {
+    fee_tokens: [
       {
-        "denom": "ungm",
-        "low_gas_price": 1,
-        "average_gas_price": 1,
-        "high_gas_price": 1
+        denom: 'ungm',
+        low_gas_price: 1,
+        average_gas_price: 1,
+        high_gas_price: 1
       },
       {
-        "denom": "eeur",
-        "low_gas_price": 1,
-        "average_gas_price": 1,
-        "high_gas_price": 1
+        denom: 'eeur',
+        low_gas_price: 1,
+        average_gas_price: 1,
+        high_gas_price: 1
       },
       {
-        "denom": "echf",
-        "low_gas_price": 1,
-        "average_gas_price": 1,
-        "high_gas_price": 1
+        denom: 'echf',
+        low_gas_price: 1,
+        average_gas_price: 1,
+        high_gas_price: 1
       },
       {
-        "denom": "enok",
-        "low_gas_price": 1,
-        "average_gas_price": 1,
-        "high_gas_price": 1
+        denom: 'enok',
+        low_gas_price: 1,
+        average_gas_price: 1,
+        high_gas_price: 1
       },
       {
-        "denom": "esek",
-        "low_gas_price": 1,
-        "average_gas_price": 1,
-        "high_gas_price": 1
+        denom: 'esek',
+        low_gas_price: 1,
+        average_gas_price: 1,
+        high_gas_price: 1
       },
       {
-        "denom": "edkk",
-        "low_gas_price": 1,
-        "average_gas_price": 1,
-        "high_gas_price": 1
+        denom: 'edkk',
+        low_gas_price: 1,
+        average_gas_price: 1,
+        high_gas_price: 1
       }
     ]
   },
-  "staking": {
-    "staking_tokens": [
+  staking: {
+    staking_tokens: [
       {
-        "denom": "ungm"
+        denom: 'ungm'
       }
     ]
   },
-  "codebase": {},
-  "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png",
-    "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.svg"
+  codebase: {},
+  logo_URIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.svg'
   },
-  "apis": {
-    "rpc": [
+  apis: {
+    rpc: [
       {
-        "address": "https://emoney.validator.network",
-        "provider": "e-Money"
+        address: 'https://emoney.validator.network',
+        provider: 'e-Money'
       },
       {
-        "address": "https://rpc-emoney-ia.cosmosia.notional.ventures/",
-        "provider": "Notional"
+        address: 'https://rpc-emoney-ia.cosmosia.notional.ventures/',
+        provider: 'Notional'
       },
       {
-        "address": "https://rpc.emoney.bh.rocks",
-        "provider": "BlockHunters 🎯"
+        address: 'https://rpc.emoney.bh.rocks',
+        provider: 'BlockHunters 🎯'
       }
     ],
-    "rest": [
+    rest: [
       {
-        "address": "https://emoney.validator.network/api/",
-        "provider": "e-Money"
+        address: 'https://emoney.validator.network/api/',
+        provider: 'e-Money'
       },
       {
-        "address": "https://api-emoney-ia.cosmosia.notional.ventures/",
-        "provider": "Notional"
+        address: 'https://api-emoney-ia.cosmosia.notional.ventures/',
+        provider: 'Notional'
       },
       {
-        "address": "https://api.emoney.bh.rocks",
-        "provider": "BlockHunters 🎯"
+        address: 'https://api.emoney.bh.rocks',
+        provider: 'BlockHunters 🎯'
       }
     ],
-    "grpc": [
+    grpc: [
       {
-        "address": "grpc-emoney-ia.cosmosia.notional.ventures:443",
-        "provider": "Notional"
+        address: 'grpc-emoney-ia.cosmosia.notional.ventures:443',
+        provider: 'Notional'
       },
       {
-        "address": "emoney-mainnet-grpc.autostake.com:443",
-        "provider": "AutoStake 🛡️ Slash Protected"
+        address: 'emoney-mainnet-grpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ]
   },
-  "explorers": [
+  explorers: [
     {
-      "kind": "EZ Staking",
-      "url": "https://app.ezstaking.io/emoney",
-      "tx_page": "https://app.ezstaking.io/emoney/txs/${txHash}",
-      "account_page": "https://app.ezstaking.io/emoney/account/${accountAddress}"
+      kind: 'EZ Staking',
+      url: 'https://app.ezstaking.io/emoney',
+      tx_page: 'https://app.ezstaking.io/emoney/txs/${txHash}',
+      account_page: 'https://app.ezstaking.io/emoney/account/${accountAddress}'
     },
     {
-      "kind": "bigdipper",
-      "url": "https://bigdipper.live/emoney",
-      "tx_page": "https://bigdipper.live/emoney/transactions/${txHash}",
-      "account_page": "https://bigdipper.live/emoney/accounts/${accountAddress}"
+      kind: 'bigdipper',
+      url: 'https://bigdipper.live/emoney',
+      tx_page: 'https://bigdipper.live/emoney/transactions/${txHash}',
+      account_page: 'https://bigdipper.live/emoney/accounts/${accountAddress}'
     },
     {
-      "kind": "mintscan",
-      "url": "https://www.mintscan.io/emoney",
-      "tx_page": "https://www.mintscan.io/emoney/transactions/${txHash}",
-      "account_page": "https://www.mintscan.io/emoney/accounts/${accountAddress}"
+      kind: 'mintscan',
+      url: 'https://www.mintscan.io/emoney',
+      tx_page: 'https://www.mintscan.io/emoney/transactions/${txHash}',
+      account_page: 'https://www.mintscan.io/emoney/accounts/${accountAddress}'
     },
     {
-      "kind": "ping.pub",
-      "url": "https://ping.pub/e-money",
-      "tx_page": "https://ping.pub/e-money/tx/${txHash}"
+      kind: 'ping.pub',
+      url: 'https://ping.pub/e-money',
+      tx_page: 'https://ping.pub/e-money/tx/${txHash}'
     },
     {
-      "kind": "atomscan",
-      "url": "https://atomscan.com/emoney",
-      "tx_page": "https://atomscan.com/emoney/transactions/${txHash}",
-      "account_page": "https://atomscan.com/emoney/accounts/${accountAddress}"
+      kind: 'atomscan',
+      url: 'https://atomscan.com/emoney',
+      tx_page: 'https://atomscan.com/emoney/transactions/${txHash}',
+      account_page: 'https://atomscan.com/emoney/accounts/${accountAddress}'
     }
   ],
-  "images": [
+  images: [
     {
-      "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png",
-      "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.svg"
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.svg'
     }
   ]
 };

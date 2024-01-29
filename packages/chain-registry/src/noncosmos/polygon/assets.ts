@@ -1,325 +1,317 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../assetlist.schema.json",
-  "chain_name": "polygon",
-  "assets": [
+  $schema: '../assetlist.schema.json',
+  chain_name: 'polygon',
+  assets: [
     {
-      "description": "Polygon (formerly Matic) Network brings massive scale to Ethereum using an adapted version of Plasma with PoS based side chains. Polygon is a well-structured, easy-to-use platform for Ethereum scaling and infrastructure development.",
-      "denom_units": [
+      description:
+        'Polygon (formerly Matic) Network brings massive scale to Ethereum using an adapted version of Plasma with PoS based side chains. Polygon is a well-structured, easy-to-use platform for Ethereum scaling and infrastructure development.',
+      denom_units: [
         {
-          "denom": "wei",
-          "exponent": 0
+          denom: 'wei',
+          exponent: 0
         },
         {
-          "denom": "matic",
-          "exponent": 18,
-          "aliases": [
-            "polygon"
-          ]
+          denom: 'matic',
+          exponent: 18,
+          aliases: ['polygon']
         }
       ],
-      "base": "wei",
-      "name": "Matic",
-      "display": "matic",
-      "symbol": "MATIC",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.svg"
+      base: 'wei',
+      name: 'Matic',
+      display: 'matic',
+      symbol: 'MATIC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.svg'
       },
-      "coingecko_id": "matic-network",
-      "images": [
+      coingecko_id: 'matic-network',
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.svg'
         }
       ]
     },
     {
-      "description": "Polygon combines the best of Ethereum and sovereign blockchains into a full-fledged multi-chain system.",
-      "type_asset": "erc20",
-      "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-      "denom_units": [
+      description:
+        'Polygon combines the best of Ethereum and sovereign blockchains into a full-fledged multi-chain system.',
+      type_asset: 'erc20',
+      address: '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270',
+      denom_units: [
         {
-          "denom": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "exponent": 0,
-          "aliases": [
-            "wmatic-wei"
-          ]
+          denom: '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270',
+          exponent: 0,
+          aliases: ['wmatic-wei']
         },
         {
-          "denom": "wmatic",
-          "exponent": 18,
-          "aliases": [
-            "polygon"
-          ]
+          denom: 'wmatic',
+          exponent: 18,
+          aliases: ['polygon']
         }
       ],
-      "base": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-      "name": "Wrapped Matic",
-      "display": "wmatic",
-      "symbol": "WMATIC",
-      "traces": [
+      base: '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270',
+      name: 'Wrapped Matic',
+      display: 'wmatic',
+      symbol: 'WMATIC',
+      traces: [
         {
-          "type": "wrapped",
-          "counterparty": {
-            "chain_name": "polygon",
-            "base_denom": "wei"
+          type: 'wrapped',
+          counterparty: {
+            chain_name: 'polygon',
+            base_denom: 'wei'
           },
-          "provider": "Polygon"
+          provider: 'Polygon'
         }
       ],
-      "logo_URIs": {
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg"
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg'
       },
-      "coingecko_id": "wmatic",
-      "images": [
+      coingecko_id: 'wmatic',
+      images: [
         {
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg"
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg'
         }
       ]
     },
     {
-      "description": "USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.",
-      "type_asset": "erc20",
-      "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
-      "denom_units": [
+      description:
+        'USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.',
+      type_asset: 'erc20',
+      address: '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174',
+      denom_units: [
         {
-          "denom": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
-          "exponent": 0,
-          "aliases": [
-            "uusdc"
-          ]
+          denom: '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174',
+          exponent: 0,
+          aliases: ['uusdc']
         },
         {
-          "denom": "usdc",
-          "exponent": 6
+          denom: 'usdc',
+          exponent: 6
         }
       ],
-      "base": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
-      "name": "USD Coin",
-      "display": "usdc",
-      "symbol": "USDC",
-      "traces": [
+      base: '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174',
+      name: 'USD Coin',
+      display: 'usdc',
+      symbol: 'USDC',
+      traces: [
         {
-          "type": "additional-mintage",
-          "counterparty": {
-            "chain_name": "ethereum",
-            "base_denom": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+          type: 'additional-mintage',
+          counterparty: {
+            chain_name: 'ethereum',
+            base_denom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
           },
-          "provider": "Circle"
+          provider: 'Circle'
         }
       ],
-      "logo_URIs": {
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg"
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
-      "coingecko_id": "usd-coin",
-      "images": [
+      coingecko_id: 'usd-coin',
+      images: [
         {
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg"
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }
       ]
     },
     {
-      "description": "Multi-Collateral Dai, brings a lot of new and exciting features, such as support for new CDP collateral types and Dai Savings Rate.",
-      "type_asset": "erc20",
-      "address": "0xddc9e2891fa11a4cc5c223145e8d14b44f3077c9",
-      "denom_units": [
+      description:
+        'Multi-Collateral Dai, brings a lot of new and exciting features, such as support for new CDP collateral types and Dai Savings Rate.',
+      type_asset: 'erc20',
+      address: '0xddc9e2891fa11a4cc5c223145e8d14b44f3077c9',
+      denom_units: [
         {
-          "denom": "0xddc9e2891fa11a4cc5c223145e8d14b44f3077c9",
-          "exponent": 0,
-          "aliases": [
-            "dai-wei"
-          ]
+          denom: '0xddc9e2891fa11a4cc5c223145e8d14b44f3077c9',
+          exponent: 0,
+          aliases: ['dai-wei']
         },
         {
-          "denom": "axldai",
-          "exponent": 18
+          denom: 'axldai',
+          exponent: 18
         }
       ],
-      "base": "0xddc9e2891fa11a4cc5c223145e8d14b44f3077c9",
-      "name": "Axelar Wrapped Dai Stablecoin",
-      "display": "axldai",
-      "symbol": "axlDAI",
-      "traces": [
+      base: '0xddc9e2891fa11a4cc5c223145e8d14b44f3077c9',
+      name: 'Axelar Wrapped Dai Stablecoin',
+      display: 'axldai',
+      symbol: 'axlDAI',
+      traces: [
         {
-          "type": "bridge",
-          "counterparty": {
-            "chain_name": "axelar",
-            "base_denom": "dai-wei"
+          type: 'bridge',
+          counterparty: {
+            chain_name: 'axelar',
+            base_denom: 'dai-wei'
           },
-          "provider": "Axelar"
+          provider: 'Axelar'
         }
       ],
-      "logo_URIs": {
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg"
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
       },
-      "images": [
+      images: [
         {
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg"
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
         }
       ]
     },
     {
-      "description": "Frax is a fractional-algorithmic stablecoin protocol. It aims to provide a highly scalable, decentralized, algorithmic money in place of fixed-supply assets like BTC. Additionally, FXS is the value accrual and governance token of the entire Frax ecosystem.",
-      "type_asset": "erc20",
-      "address": "0x53adc464b488be8c5d7269b9abbce8ba74195c3a",
-      "denom_units": [
+      description:
+        'Frax is a fractional-algorithmic stablecoin protocol. It aims to provide a highly scalable, decentralized, algorithmic money in place of fixed-supply assets like BTC. Additionally, FXS is the value accrual and governance token of the entire Frax ecosystem.',
+      type_asset: 'erc20',
+      address: '0x53adc464b488be8c5d7269b9abbce8ba74195c3a',
+      denom_units: [
         {
-          "denom": "0x53adc464b488be8c5d7269b9abbce8ba74195c3a",
-          "exponent": 0,
-          "aliases": [
-            "frax-wei"
-          ]
+          denom: '0x53adc464b488be8c5d7269b9abbce8ba74195c3a',
+          exponent: 0,
+          aliases: ['frax-wei']
         },
         {
-          "denom": "axlfrax",
-          "exponent": 18
+          denom: 'axlfrax',
+          exponent: 18
         }
       ],
-      "base": "0x53adc464b488be8c5d7269b9abbce8ba74195c3a",
-      "name": "Axelar Wrapped Frax",
-      "display": "axlfrax",
-      "symbol": "axlFRAX",
-      "traces": [
+      base: '0x53adc464b488be8c5d7269b9abbce8ba74195c3a',
+      name: 'Axelar Wrapped Frax',
+      display: 'axlfrax',
+      symbol: 'axlFRAX',
+      traces: [
         {
-          "type": "bridge",
-          "counterparty": {
-            "chain_name": "axelar",
-            "base_denom": "frax-wei"
+          type: 'bridge',
+          counterparty: {
+            chain_name: 'axelar',
+            base_denom: 'frax-wei'
           },
-          "provider": "Axelar"
+          provider: 'Axelar'
         }
       ],
-      "logo_URIs": {
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg"
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
       },
-      "images": [
+      images: [
         {
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg"
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
         }
       ]
     },
     {
-      "description": "USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.",
-      "type_asset": "erc20",
-      "address": "0x750e4c4984a9e0f12978ea6742bc1c5d248f40ed",
-      "denom_units": [
+      description:
+        'USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.',
+      type_asset: 'erc20',
+      address: '0x750e4c4984a9e0f12978ea6742bc1c5d248f40ed',
+      denom_units: [
         {
-          "denom": "0x750e4c4984a9e0f12978ea6742bc1c5d248f40ed",
-          "exponent": 0,
-          "aliases": [
-            "uusdc"
-          ]
+          denom: '0x750e4c4984a9e0f12978ea6742bc1c5d248f40ed',
+          exponent: 0,
+          aliases: ['uusdc']
         },
         {
-          "denom": "axlusdc",
-          "exponent": 6
+          denom: 'axlusdc',
+          exponent: 6
         }
       ],
-      "base": "0x750e4c4984a9e0f12978ea6742bc1c5d248f40ed",
-      "name": "Axelar Wrapped USD Coin",
-      "display": "axlusdc",
-      "symbol": "axlUSDC",
-      "traces": [
+      base: '0x750e4c4984a9e0f12978ea6742bc1c5d248f40ed',
+      name: 'Axelar Wrapped USD Coin',
+      display: 'axlusdc',
+      symbol: 'axlUSDC',
+      traces: [
         {
-          "type": "bridge",
-          "counterparty": {
-            "chain_name": "axelar",
-            "base_denom": "uusdc"
+          type: 'bridge',
+          counterparty: {
+            chain_name: 'axelar',
+            base_denom: 'uusdc'
           },
-          "provider": "Axelar"
+          provider: 'Axelar'
         }
       ],
-      "logo_URIs": {
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg"
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
-      "images": [
+      images: [
         {
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg"
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }
       ]
     },
     {
-      "description": "Tether gives you the joint benefits of open blockchain technology and traditional currency by converting your cash into a stable digital currency equivalent.",
-      "type_asset": "erc20",
-      "address": "0xceed2671d8634e3ee65000edbbee66139b132fbf",
-      "denom_units": [
+      description:
+        'Tether gives you the joint benefits of open blockchain technology and traditional currency by converting your cash into a stable digital currency equivalent.',
+      type_asset: 'erc20',
+      address: '0xceed2671d8634e3ee65000edbbee66139b132fbf',
+      denom_units: [
         {
-          "denom": "0xceed2671d8634e3ee65000edbbee66139b132fbf",
-          "exponent": 0,
-          "aliases": [
-            "uusdt"
-          ]
+          denom: '0xceed2671d8634e3ee65000edbbee66139b132fbf',
+          exponent: 0,
+          aliases: ['uusdt']
         },
         {
-          "denom": "axlusdt",
-          "exponent": 6
+          denom: 'axlusdt',
+          exponent: 6
         }
       ],
-      "base": "0xceed2671d8634e3ee65000edbbee66139b132fbf",
-      "name": "Axelar Wrapped Tether USD",
-      "display": "axlusdt",
-      "symbol": "axlUSDT",
-      "traces": [
+      base: '0xceed2671d8634e3ee65000edbbee66139b132fbf',
+      name: 'Axelar Wrapped Tether USD',
+      display: 'axlusdt',
+      symbol: 'axlUSDT',
+      traces: [
         {
-          "type": "bridge",
-          "counterparty": {
-            "chain_name": "axelar",
-            "base_denom": "uusdt"
+          type: 'bridge',
+          counterparty: {
+            chain_name: 'axelar',
+            base_denom: 'uusdt'
           },
-          "provider": "Axelar"
+          provider: 'Axelar'
         }
       ],
-      "logo_URIs": {
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg"
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
       },
-      "images": [
+      images: [
         {
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg"
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
         }
       ]
     },
     {
-      "description": "The PAGE token is used for actions in the PageDAO NFT literary ecosystem and for DAO governance.",
-      "type_asset": "erc20",
-      "address": "0x9ceE70895726B0ea14E6019C961dAf32222a7C2f",
-      "denom_units": [
+      description:
+        'The PAGE token is used for actions in the PageDAO NFT literary ecosystem and for DAO governance.',
+      type_asset: 'erc20',
+      address: '0x9ceE70895726B0ea14E6019C961dAf32222a7C2f',
+      denom_units: [
         {
-          "denom": "0x9ceE70895726B0ea14E6019C961dAf32222a7C2f",
-          "exponent": 0,
-          "aliases": []
+          denom: '0x9ceE70895726B0ea14E6019C961dAf32222a7C2f',
+          exponent: 0,
+          aliases: []
         },
         {
-          "denom": "page",
-          "exponent": 8
+          denom: 'page',
+          exponent: 8
         }
       ],
-      "base": "0x9ceE70895726B0ea14E6019C961dAf32222a7C2f",
-      "name": "Page",
-      "display": "page",
-      "symbol": "PAGE",
-      "traces": [
+      base: '0x9ceE70895726B0ea14E6019C961dAf32222a7C2f',
+      name: 'Page',
+      display: 'page',
+      symbol: 'PAGE',
+      traces: [
         {
-          "type": "additional-mintage",
-          "counterparty": {
-            "chain_name": "ethereum",
-            "base_denom": "0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e"
+          type: 'additional-mintage',
+          counterparty: {
+            chain_name: 'ethereum',
+            base_denom: '0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e'
           },
-          "provider": "PageDAO"
+          provider: 'PageDAO'
         }
       ],
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg"
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg'
       },
-      "images": [
+      images: [
         {
-          "image_sync": {
-            "chain_name": "ethereum",
-            "base_denom": "0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e"
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e'
           },
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg'
         }
       ]
     }

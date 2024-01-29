@@ -1,32 +1,32 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../assetlist.schema.json",
-  "chain_name": "uptick",
-  "assets": [
+  $schema: '../assetlist.schema.json',
+  chain_name: 'uptick',
+  assets: [
     {
-      "description": "The native token of Uptick",
-      "denom_units": [
+      description: 'The native token of Uptick',
+      denom_units: [
         {
-          "denom": "auptick",
-          "exponent": 0
+          denom: 'auptick',
+          exponent: 0
         },
         {
-          "denom": "uptick",
-          "exponent": 18
+          denom: 'uptick',
+          exponent: 18
         }
       ],
-      "base": "auptick",
-      "name": "Uptick",
-      "display": "uptick",
-      "symbol": "UPTICK",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.svg"
+      base: 'auptick',
+      name: 'Uptick',
+      display: 'uptick',
+      symbol: 'UPTICK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.svg'
       },
-      "images": [
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.svg'
         }
       ]
     }

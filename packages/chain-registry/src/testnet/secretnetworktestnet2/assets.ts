@@ -1,32 +1,32 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../../assetlist.schema.json",
-  "chain_name": "secretnetworktestnet2",
-  "assets": [
+  $schema: '../../assetlist.schema.json',
+  chain_name: 'secretnetworktestnet2',
+  assets: [
     {
-      "description": "The native token of Secret Network",
-      "denom_units": [
+      description: 'The native token of Secret Network',
+      denom_units: [
         {
-          "denom": "uscrt",
-          "exponent": 0
+          denom: 'uscrt',
+          exponent: 0
         },
         {
-          "denom": "scrt",
-          "exponent": 6
+          denom: 'scrt',
+          exponent: 6
         }
       ],
-      "base": "uscrt",
-      "name": "Secret Network",
-      "display": "scrt",
-      "symbol": "SCRT",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg"
+      base: 'uscrt',
+      name: 'Secret Network',
+      display: 'scrt',
+      symbol: 'SCRT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
       },
-      "images": [
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
         }
       ]
     }

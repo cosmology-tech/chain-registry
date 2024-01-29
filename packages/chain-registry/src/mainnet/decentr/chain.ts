@@ -1,144 +1,143 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
-  "$schema": "../chain.schema.json",
-  "chain_name": "decentr",
-  "status": "live",
-  "network_type": "mainnet",
-  "pretty_name": "Decentr",
-  "chain_id": "mainnet-3",
-  "bech32_prefix": "decentr",
-  "daemon_name": "decentrd",
-  "node_home": "$HOME/.decentr",
-  "key_algos": [
-    "secp256k1"
-  ],
-  "slip44": 118,
-  "fees": {
-    "fee_tokens": [
+  $schema: '../chain.schema.json',
+  chain_name: 'decentr',
+  status: 'live',
+  network_type: 'mainnet',
+  pretty_name: 'Decentr',
+  chain_id: 'mainnet-3',
+  bech32_prefix: 'decentr',
+  daemon_name: 'decentrd',
+  node_home: '$HOME/.decentr',
+  key_algos: ['secp256k1'],
+  slip44: 118,
+  fees: {
+    fee_tokens: [
       {
-        "denom": "udec",
-        "fixed_min_gas_price": 0.025,
-        "low_gas_price": 0.025,
-        "average_gas_price": 0.025,
-        "high_gas_price": 0.025
+        denom: 'udec',
+        fixed_min_gas_price: 0.025,
+        low_gas_price: 0.025,
+        average_gas_price: 0.025,
+        high_gas_price: 0.025
       }
     ]
   },
-  "staking": {
-    "staking_tokens": [
+  staking: {
+    staking_tokens: [
       {
-        "denom": "udec"
+        denom: 'udec'
       }
     ]
   },
-  "codebase": {},
-  "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png",
-    "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg"
+  codebase: {},
+  logo_URIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg'
   },
-  "apis": {
-    "rpc": [
+  apis: {
+    rpc: [
       {
-        "address": "https://poseidon.mainnet.decentr.xyz",
-        "provider": "decentr"
+        address: 'https://poseidon.mainnet.decentr.xyz',
+        provider: 'decentr'
       },
       {
-        "address": "https://rpc.decentr.chaintools.tech/",
-        "provider": "ChainTools"
+        address: 'https://rpc.decentr.chaintools.tech/',
+        provider: 'ChainTools'
       },
       {
-        "address": "https://decentr-rpc.ibs.team/",
-        "provider": "Inter Blockchain Services"
+        address: 'https://decentr-rpc.ibs.team/',
+        provider: 'Inter Blockchain Services'
       },
       {
-        "address": "https://rpc-dcntr.nodine.id/",
-        "provider": "Nodine.ID"
+        address: 'https://rpc-dcntr.nodine.id/',
+        provider: 'Nodine.ID'
       },
       {
-        "address": "https://rpc-decentr.mms.team/",
-        "provider": "MMS"
+        address: 'https://rpc-decentr.mms.team/',
+        provider: 'MMS'
       }
     ],
-    "rest": [
+    rest: [
       {
-        "address": "https://rest.mainnet.decentr.xyz",
-        "provider": "decentr"
+        address: 'https://rest.mainnet.decentr.xyz',
+        provider: 'decentr'
       },
       {
-        "address": "https://api.decentr.chaintools.tech/",
-        "provider": "ChainTools"
+        address: 'https://api.decentr.chaintools.tech/',
+        provider: 'ChainTools'
       },
       {
-        "address": "https://decentr-api.ibs.team/",
-        "provider": "Inter Blockchain Services"
+        address: 'https://decentr-api.ibs.team/',
+        provider: 'Inter Blockchain Services'
       }
     ],
-    "grpc": [
+    grpc: [
       {
-        "address": "https://grpc-decentr.sxlzptprjkt.xyz:443",
-        "provider": "sxlzptprjkt | VALIDATOR"
+        address: 'https://grpc-decentr.sxlzptprjkt.xyz:443',
+        provider: 'sxlzptprjkt | VALIDATOR'
       },
       {
-        "address": "https://grpc.decentr.hexnodes.co",
-        "provider": "Hexnodes"
+        address: 'https://grpc.decentr.hexnodes.co',
+        provider: 'Hexnodes'
       },
       {
-        "address": "https://grpc.decentr.nodexcapital.com:443",
-        "provider": "NodeX Validator"
+        address: 'https://grpc.decentr.nodexcapital.com:443',
+        provider: 'NodeX Validator'
       },
       {
-        "address": "grpc-decentr.mms.team:443",
-        "provider": "MMS"
+        address: 'grpc-decentr.mms.team:443',
+        provider: 'MMS'
       }
     ]
   },
-  "explorers": [
+  explorers: [
     {
-      "kind": "decentr.net",
-      "url": "https://explorer.decentr.net",
-      "tx_page": "https://explorer.decentr.net/transactions/${txHash}?networkId=mainnet"
+      kind: 'decentr.net',
+      url: 'https://explorer.decentr.net',
+      tx_page:
+        'https://explorer.decentr.net/transactions/${txHash}?networkId=mainnet'
     },
     {
-      "kind": "ping.pub",
-      "url": "https://ping.pub/decentr/",
-      "tx_page": "https://ping.pub/decentr/tx/${txHash}"
+      kind: 'ping.pub',
+      url: 'https://ping.pub/decentr/',
+      tx_page: 'https://ping.pub/decentr/tx/${txHash}'
     },
     {
-      "kind": "atomscan",
-      "url": "https://atomscan.com/decentr",
-      "tx_page": "https://atomscan.com/decentr/transactions/${txHash}",
-      "account_page": "https://atomscan.com/decentr/accounts/${accountAddress}"
+      kind: 'atomscan',
+      url: 'https://atomscan.com/decentr',
+      tx_page: 'https://atomscan.com/decentr/transactions/${txHash}',
+      account_page: 'https://atomscan.com/decentr/accounts/${accountAddress}'
     },
     {
-      "kind": "Nodine.ID",
-      "url": "https://explorer.co.id/decentr",
-      "tx_page": "https://explorer.co.id/decentr/tx/${txHash}"
+      kind: 'Nodine.ID',
+      url: 'https://explorer.co.id/decentr',
+      tx_page: 'https://explorer.co.id/decentr/tx/${txHash}'
     },
     {
-      "kind": "THE EXPLORER",
-      "url": "https://explorer.sxlzptprjkt.xyz/decentr",
-      "tx_page": "https://explorer.sxlzptprjkt.xyz/decentr/tx/${txHash}"
+      kind: 'THE EXPLORER',
+      url: 'https://explorer.sxlzptprjkt.xyz/decentr',
+      tx_page: 'https://explorer.sxlzptprjkt.xyz/decentr/tx/${txHash}'
     },
     {
-      "kind": "hexskrt EXPLORER",
-      "url": "https://explorer.hexskrt.net/decentr",
-      "tx_page": "https://explorer.hexskrt.net/decentr/tx/${txHash}"
+      kind: 'hexskrt EXPLORER',
+      url: 'https://explorer.hexskrt.net/decentr',
+      tx_page: 'https://explorer.hexskrt.net/decentr/tx/${txHash}'
     },
     {
-      "kind": "NODEXPLORER",
-      "url": "https://explorer.nodexcapital.com/decentr",
-      "tx_page": "https://explorer.nodexcapital.com/decentr/tx/${txHash}"
+      kind: 'NODEXPLORER',
+      url: 'https://explorer.nodexcapital.com/decentr',
+      tx_page: 'https://explorer.nodexcapital.com/decentr/tx/${txHash}'
     },
     {
-      "kind": "Explorer ComunityNode",
-      "url": "https://explorer.comunitynode.my.id/decentr",
-      "tx_page": "https://explorer.comunitynode.my.id/decentr/tx/${txHash}"
+      kind: 'Explorer ComunityNode',
+      url: 'https://explorer.comunitynode.my.id/decentr',
+      tx_page: 'https://explorer.comunitynode.my.id/decentr/tx/${txHash}'
     }
   ],
-  "images": [
+  images: [
     {
-      "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png",
-      "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg"
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg'
     }
   ]
 };

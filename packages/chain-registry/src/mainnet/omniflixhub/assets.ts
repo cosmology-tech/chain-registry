@@ -1,33 +1,33 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../assetlist.schema.json",
-  "chain_name": "omniflixhub",
-  "assets": [
+  $schema: '../assetlist.schema.json',
+  chain_name: 'omniflixhub',
+  assets: [
     {
-      "description": "The native staking token of OmniFlix Hub.",
-      "denom_units": [
+      description: 'The native staking token of OmniFlix Hub.',
+      denom_units: [
         {
-          "denom": "uflix",
-          "exponent": 0
+          denom: 'uflix',
+          exponent: 0
         },
         {
-          "denom": "flix",
-          "exponent": 6
+          denom: 'flix',
+          exponent: 6
         }
       ],
-      "base": "uflix",
-      "name": "Flix",
-      "display": "flix",
-      "symbol": "FLIX",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg"
+      base: 'uflix',
+      name: 'Flix',
+      display: 'flix',
+      symbol: 'FLIX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg'
       },
-      "coingecko_id": "omniflix-network",
-      "images": [
+      coingecko_id: 'omniflix-network',
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg'
         }
       ]
     }

@@ -1,31 +1,31 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../../assetlist.schema.json",
-  "chain_name": "wavehashtestnet",
-  "assets": [
+  $schema: '../../assetlist.schema.json',
+  chain_name: 'wavehashtestnet',
+  assets: [
     {
-      "description": "WaveHash A Permissioned Blockchain",
-      "denom_units": [
+      description: 'WaveHash A Permissioned Blockchain',
+      denom_units: [
         {
-          "denom": "uwahax",
-          "exponent": 0
+          denom: 'uwahax',
+          exponent: 0
         },
         {
-          "denom": "wahax",
-          "exponent": 6
+          denom: 'wahax',
+          exponent: 6
         }
       ],
-      "base": "uwahax",
-      "name": "WaveHash",
-      "display": "wahax",
-      "symbol": "WAHAX",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/wavehashtestnet/images/WaveHash.png"
+      base: 'uwahax',
+      name: 'WaveHash',
+      display: 'wahax',
+      symbol: 'WAHAX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/wavehashtestnet/images/WaveHash.png'
       },
-      "coingecko_id": "",
-      "images": [
+      coingecko_id: '',
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/wavehashtestnet/images/WaveHash.png"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/wavehashtestnet/images/WaveHash.png'
         }
       ]
     }

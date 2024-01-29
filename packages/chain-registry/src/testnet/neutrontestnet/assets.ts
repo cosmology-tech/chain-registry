@@ -1,32 +1,32 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  "$schema": "../../assetlist.schema.json",
-  "chain_name": "neutrontestnet",
-  "assets": [
+  $schema: '../../assetlist.schema.json',
+  chain_name: 'neutrontestnet',
+  assets: [
     {
-      "description": "The native token of Neutron chain",
-      "denom_units": [
+      description: 'The native token of Neutron chain',
+      denom_units: [
         {
-          "denom": "untrn",
-          "exponent": 0
+          denom: 'untrn',
+          exponent: 0
         },
         {
-          "denom": "ntrn",
-          "exponent": 6
+          denom: 'ntrn',
+          exponent: 6
         }
       ],
-      "base": "untrn",
-      "name": "Neutron Testnet",
-      "display": "ntrn",
-      "symbol": "NTRN",
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron.png",
-        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron.svg"
+      base: 'untrn',
+      name: 'Neutron Testnet',
+      display: 'ntrn',
+      symbol: 'NTRN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron.svg'
       },
-      "images": [
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron.svg"
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron.svg'
         }
       ]
     }

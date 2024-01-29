@@ -1,59 +1,57 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
-  "$schema": "../../chain.schema.json",
-  "chain_name": "doravotatestnet",
-  "chain_id": "vota-testnet",
-  "pretty_name": "Dora Vota Testnet",
-  "status": "live",
-  "network_type": "testnet",
-  "bech32_prefix": "dora",
-  "daemon_name": "dorad",
-  "node_home": "$HOME/.dora",
-  "key_algos": [
-    "secp256k1"
-  ],
-  "slip44": 118,
-  "fees": {
-    "fee_tokens": [
+  $schema: '../../chain.schema.json',
+  chain_name: 'doravotatestnet',
+  chain_id: 'vota-testnet',
+  pretty_name: 'Dora Vota Testnet',
+  status: 'live',
+  network_type: 'testnet',
+  bech32_prefix: 'dora',
+  daemon_name: 'dorad',
+  node_home: '$HOME/.dora',
+  key_algos: ['secp256k1'],
+  slip44: 118,
+  fees: {
+    fee_tokens: [
       {
-        "denom": "peaka",
-        "fixed_min_gas_price": 100000000000
+        denom: 'peaka',
+        fixed_min_gas_price: 100000000000
       }
     ]
   },
-  "staking": {
-    "staking_tokens": [
+  staking: {
+    staking_tokens: [
       {
-        "denom": "peaka"
+        denom: 'peaka'
       }
     ]
   },
-  "codebase": {},
-  "apis": {
-    "rpc": [
+  codebase: {},
+  apis: {
+    rpc: [
       {
-        "address": "https://vota-testnet-rpc.dorafactory.org/",
-        "provider": "dorafactory"
+        address: 'https://vota-testnet-rpc.dorafactory.org/',
+        provider: 'dorafactory'
       }
     ],
-    "rest": [
+    rest: [
       {
-        "address": "https://vota-testnet-rest.dorafactory.org",
-        "provider": "dorafactory"
+        address: 'https://vota-testnet-rest.dorafactory.org',
+        provider: 'dorafactory'
       }
     ],
-    "grpc": [
+    grpc: [
       {
-        "address": "vota-testnet-grpc.dorafactory.org:443",
-        "provider": "dorafactory"
+        address: 'vota-testnet-grpc.dorafactory.org:443',
+        provider: 'dorafactory'
       }
     ]
   },
-  "explorers": [
+  explorers: [
     {
-      "kind": "Dora Vota Ping Pub",
-      "url": "https://maci-explorer-test.dorafactory.org",
-      "tx_page": "https://maci-explorer-test.dorafactory.org/dora/tx/${txHash}"
+      kind: 'Dora Vota Ping Pub',
+      url: 'https://maci-explorer-test.dorafactory.org',
+      tx_page: 'https://maci-explorer-test.dorafactory.org/dora/tx/${txHash}'
     }
   ]
 };
