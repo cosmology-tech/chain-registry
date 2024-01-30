@@ -1,11 +1,5 @@
-import assets from './assets';
-import chains from './chains';
-import ibc from './ibc';
-
-export default {
-  assets,
-  chains,
-  ibc
-};
-
-export { assets, chains, ibc };
+export * from './mainnet';
+export * from './testnet';
+export * from './devnet';
+export * from './noncosmos';
+export * from './all';
