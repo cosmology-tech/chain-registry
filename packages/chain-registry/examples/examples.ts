@@ -1,5 +1,5 @@
 // import single chain from folder, good for tree shaking
-import { chain as chain_akash } from './mainnet/akash';
+import { chain as chain_akash } from '../src/mainnet/akash';
 
 console.log(chain_akash.apis);
 
