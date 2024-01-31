@@ -9,7 +9,12 @@ import { akash, akashtestnet } from '../src';
 console.log(akash.chain.apis, akashtestnet.chain.apis);
 
 // backward compatibility using "all.ts": get all chains at once:
-import { chains } from '../src/all';
+import { chains as all_chains } from '../src/all';
+
+console.log(all_chains.find((chain) => chain.chain_name === 'akash'));
+
+// backward compatibility by default: get all chains at once:
+import { chains } from '../src';
 
 console.log(chains.find((chain) => chain.chain_name === 'akash'));
 

@@ -107,13 +107,13 @@ const writeRootAssets = (filePath, obj) => {
 
 ${importStat}
 
-const assets: AssetList[] = [${validNetwork
+const asset_lists: AssetList[] = [${validNetwork
       .map((network_type) => {
         return `..._${network_type}`;
       })
       .join(',')}];
 
-export default assets;
+export default asset_lists;
 `
   );
 
@@ -128,7 +128,14 @@ const writeRootIndex = (filePath, obj) => {
     .filter(Boolean)
     .join(';\n');
 
-  imports = `${imports}; export * from './asset_lists';`;
+  imports = `${imports}; import asset_lists from './asset_lists';
+
+  export default {
+    asset_lists
+  };
+
+  export { asset_lists };
+`;
 
   writeFileSync(filePath, `${imports}`);
 };

@@ -372,7 +372,14 @@ const writeRootIndex = (filePath, obj) => {
     .filter(Boolean)
     .join(';\n');
 
-  imports = `${imports}; export * from './all';`;
+  imports = `${imports}; import all from './all';
+
+  export default all;
+
+  const { assets, chains, ibc }= all;
+
+  export { assets, chains, ibc };
+  `;
 
   fs.writeFileSync(filePath, `${imports}`);
 };
