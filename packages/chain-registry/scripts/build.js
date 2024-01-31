@@ -365,15 +365,16 @@ export { assets, chains, ibc };`
 };
 
 const writeRootIndex = (filePath, obj) => {
-  fs.writeFileSync(
-    filePath,
-    `${Object.keys(obj)
-      .map((network_type) => {
-        return `export * from './${network_type}'`;
-      })
-      .filter(Boolean)
-      .join(';\n')}`
-  );
+  let imports = Object.keys(obj)
+    .map((network_type) => {
+      return `export * from './${network_type}'`;
+    })
+    .filter(Boolean)
+    .join(';\n');
+
+  imports = `${imports}; export * from './all';`;
+
+  fs.writeFileSync(filePath, `${imports}`);
 };
 
 const initChainBlock = (obj, network_type, chain_name) => {
@@ -412,17 +413,6 @@ const paths = glob(`${__dirname}/../chain-registry/**/*.json`).filter((a) => {
 
 const chainNetworkMap = {};
 
-// const result = {
-//   mainnet: {
-//     akash: {
-//       assets: {},
-//       chain: {},
-//       ibc_chain1: [],
-//       ibc: []
-//     }
-//   },
-//   testnet: {}
-// };
 const result = {};
 
 chainPaths.forEach((file) => {
