@@ -2,4 +2,10 @@ export * from './mainnet';
 export * from './testnet';
 export * from './devnet';
 export * from './noncosmos';
-export * from './all';
+import all from './all';
+
+export default all;
+
+const { assets, chains, ibc } = all;
+
+export { assets, chains, ibc };
