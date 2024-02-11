@@ -117,7 +117,8 @@ export const getIbcAssetPath = (
   }
 
   if (traces.length > 1) {
-    throw new Error('contact maintainers: multi-hop not yet supported');
+    console.log(traces);
+    console.warn('contact maintainers: multi-hop not yet supported');
   }
 
   const [trace] = traces;

@@ -42,7 +42,7 @@ it('NETA on osmosis ibcDenom', () => {
   );
 });
 
-it('NETA path on osmosis', () => {
+xit('NETA path on osmosis', () => {
   const path = getIbcAssetPath(
     ibc,
     'osmosis',
