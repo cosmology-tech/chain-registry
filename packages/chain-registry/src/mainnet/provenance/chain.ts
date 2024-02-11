@@ -68,6 +68,10 @@ const info: Chain = {
       {
         address: 'https://rpc.provenance.blockval.io/',
         provider: 'Blockval'
+      },
+      {
+        address: 'https://provenance-rpc.panthea.eu',
+        provider: 'Panthea EU'
       }
     ],
     rest: [
@@ -98,6 +102,10 @@ const info: Chain = {
       {
         address: 'https://api.provenance.blockval.io',
         provider: 'Blockval'
+      },
+      {
+        address: 'https://provenance-api.panthea.eu',
+        provider: 'Panthea EU'
       }
     ],
     grpc: [
@@ -116,6 +124,10 @@ const info: Chain = {
       {
         address: 'grpc.provenance.blockval.io:9290',
         provider: 'Blockval'
+      },
+      {
+        address: 'provenance-grpc.panthea.eu:16780',
+        provider: 'Panthea EU'
       }
     ]
   },

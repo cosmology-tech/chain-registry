@@ -40,10 +40,6 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://injective-rpc.quickapi.com:443',
-        provider: 'Chainlayer'
-      },
-      {
         address: 'https://rpc-injective.goldenratiostaking.net',
         provider: 'Golden Ratio Staking'
       },
@@ -64,10 +60,6 @@ const info: Chain = {
         provider: 'AutoStake.com'
       },
       {
-        address: 'https://rpc.injective.posthuman.digital:443',
-        provider: 'POSTHUMAN ꝏ DVS'
-      },
-      {
         address: 'https://rpc-injective.whispernode.com:443',
         provider: 'WhisperNode 🤐'
       },
@@ -80,19 +72,11 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
-        address: 'https://injective-rpc.w3coins.io',
-        provider: 'w3coins'
-      },
-      {
         address: 'https://injective-rpc.highstakes.ch:26657/',
         provider: 'High Stakes 🇨🇭'
       }
     ],
     rest: [
-      {
-        address: 'https://injective-lcd.quickapi.com:443',
-        provider: 'Chainlayer'
-      },
       {
         address: 'https://api-injective-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
@@ -104,10 +88,6 @@ const info: Chain = {
       {
         address: 'https://injective-api.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
-        address: 'https://rest.injective.posthuman.digital:443',
-        provider: 'POSTHUMAN ꝏ DVS'
       },
       {
         address: 'https://lcd-injective.whispernode.com:443',
@@ -124,10 +104,6 @@ const info: Chain = {
       {
         address: 'https://injective-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      },
-      {
-        address: 'https://injective-api.w3coins.io',
-        provider: 'w3coins'
       },
       {
         address: 'https://injective-api.highstakes.ch:1317/',

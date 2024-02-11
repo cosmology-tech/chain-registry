@@ -80,6 +80,14 @@ const info: Chain = {
       {
         address: 'https://chihuahua-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://rpc.chihuahua.validatus.com',
+        provider: 'Validatus'
+      },
+      {
+        address: 'https://chihuahua-rpc.ibs.team',
+        provider: 'Inter Blockchain Services'
       }
     ],
     rest: [
@@ -118,6 +126,14 @@ const info: Chain = {
       {
         address: 'https://chihuahua-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://api.chihuahua.validatus.com',
+        provider: 'Validatus'
+      },
+      {
+        address: 'https://chihuahua-api.ibs.team',
+        provider: 'Inter Blockchain Services'
       }
     ],
     grpc: [
@@ -144,6 +160,10 @@ const info: Chain = {
       {
         address: 'chihuahua-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'grpc.chihuahua.validatus.com:443',
+        provider: 'Validatus'
       }
     ]
   },

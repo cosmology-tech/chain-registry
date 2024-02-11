@@ -5,7 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'union Testnet',
-  chain_id: 'union-testnet-4',
+  chain_id: 'union-testnet-6',
   bech32_prefix: 'union',
   daemon_name: 'uniond',
   node_home: '$HOME/.uniond',
@@ -42,6 +42,10 @@ const info: Chain = {
       {
         address: 'https://rpc-testnet-union.nodeist.net',
         provider: 'Nodeist'
+      },
+      {
+        address: 'https://rpc.testnet.bonlulu.uno',
+        provider: 'bonlulu'
       }
     ],
     rest: [
@@ -56,6 +60,10 @@ const info: Chain = {
       {
         address: 'https://api-testnet-union.nodeist.net',
         provider: 'Nodeist'
+      },
+      {
+        address: 'https://api.testnet.bonlulu.uno',
+        provider: 'bonlulu'
       }
     ],
     grpc: [
@@ -70,6 +78,10 @@ const info: Chain = {
       {
         address: 'https://grpc-testnet-union.nodeist.net',
         provider: 'Nodeist'
+      },
+      {
+        address: 'https://grpc.testnet.bonlulu.uno',
+        provider: 'bonlulu'
       }
     ]
   },

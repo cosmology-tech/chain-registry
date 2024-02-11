@@ -22,11 +22,25 @@ const info: Chain = {
         high_gas_price: 0.002
       },
       {
+        denom: 'uatom',
+        fixed_min_gas_price: 0.0001,
+        low_gas_price: 0.0001,
+        average_gas_price: 0.0002,
+        high_gas_price: 0.0005
+      },
+      {
         denom: 'stuatom',
         fixed_min_gas_price: 0.0001,
         low_gas_price: 0.0001,
         average_gas_price: 0.0002,
         high_gas_price: 0.0005
+      },
+      {
+        denom: 'uosmo',
+        fixed_min_gas_price: 0.001,
+        low_gas_price: 0.001,
+        average_gas_price: 0.002,
+        high_gas_price: 0.004
       },
       {
         denom: 'stuosmo',
@@ -36,11 +50,25 @@ const info: Chain = {
         high_gas_price: 0.004
       },
       {
+        denom: 'ustars',
+        fixed_min_gas_price: 1,
+        low_gas_price: 1,
+        average_gas_price: 1.1,
+        high_gas_price: 1.2
+      },
+      {
         denom: 'stustars',
         fixed_min_gas_price: 1,
         low_gas_price: 1,
         average_gas_price: 1.1,
         high_gas_price: 1.2
+      },
+      {
+        denom: 'ujuno',
+        fixed_min_gas_price: 0.075,
+        low_gas_price: 0.075,
+        average_gas_price: 0.1,
+        high_gas_price: 0.125
       },
       {
         denom: 'stujuno',
@@ -50,11 +78,25 @@ const info: Chain = {
         high_gas_price: 0.125
       },
       {
+        denom: 'uluna',
+        fixed_min_gas_price: 0.0125,
+        low_gas_price: 0.0125,
+        average_gas_price: 0.015,
+        high_gas_price: 0.04
+      },
+      {
         denom: 'stuluna',
         fixed_min_gas_price: 0.0125,
         low_gas_price: 0.0125,
         average_gas_price: 0.015,
         high_gas_price: 0.04
+      },
+      {
+        denom: 'aevmos',
+        fixed_min_gas_price: 250000000,
+        low_gas_price: 20000000000,
+        average_gas_price: 25000000000,
+        high_gas_price: 40000000000
       },
       {
         denom: 'staevmos',
@@ -64,11 +106,25 @@ const info: Chain = {
         high_gas_price: 40000000000
       },
       {
+        denom: 'inj',
+        fixed_min_gas_price: 500000000,
+        low_gas_price: 500000000,
+        average_gas_price: 700000000,
+        high_gas_price: 900000000
+      },
+      {
         denom: 'stinj',
         fixed_min_gas_price: 500000000,
         low_gas_price: 500000000,
         average_gas_price: 700000000,
         high_gas_price: 900000000
+      },
+      {
+        denom: 'ucmdx',
+        fixed_min_gas_price: 0.02,
+        low_gas_price: 0.02,
+        average_gas_price: 0.025,
+        high_gas_price: 0.04
       },
       {
         denom: 'stucmdx',
@@ -78,11 +134,46 @@ const info: Chain = {
         high_gas_price: 0.04
       },
       {
+        denom: 'uumee',
+        fixed_min_gas_price: 0.1,
+        low_gas_price: 0.1,
+        average_gas_price: 0.12,
+        high_gas_price: 0.2
+      },
+      {
         denom: 'stuumee',
         fixed_min_gas_price: 0.1,
         low_gas_price: 0.1,
         average_gas_price: 0.12,
         high_gas_price: 0.2
+      },
+      {
+        denom: 'utia',
+        fixed_min_gas_price: 0.002,
+        low_gas_price: 0.01,
+        average_gas_price: 0.02,
+        high_gas_price: 0.1
+      },
+      {
+        denom: 'stutia',
+        fixed_min_gas_price: 0.002,
+        low_gas_price: 0.01,
+        average_gas_price: 0.02,
+        high_gas_price: 0.1
+      },
+      {
+        denom: 'adydx',
+        fixed_min_gas_price: 12500000000,
+        low_gas_price: 12500000000,
+        average_gas_price: 12500000000,
+        high_gas_price: 20000000000
+      },
+      {
+        denom: 'stadydx',
+        fixed_min_gas_price: 12500000000,
+        low_gas_price: 12500000000,
+        average_gas_price: 12500000000,
+        high_gas_price: 20000000000
       }
     ]
   },
@@ -94,7 +185,8 @@ const info: Chain = {
     ]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.5-stride-distribution-fix-0'
+    cosmos_sdk_version:
+      'Stride-Labs/cosmos-sdk v0.47.5-stride-distribution-fix-0'
   },
   description:
     'Stride is a blockchain that provides liquidity for staked tokens. Using Stride, you can earn both taking and DeFi yields across the Cosmos IBC ecosystem.',
@@ -173,10 +265,6 @@ const info: Chain = {
       {
         address: 'https://api-stride.cosmos-spaces.cloud',
         provider: 'Cosmos Spaces'
-      },
-      {
-        address: 'https://stride.api.m.stavr.tech',
-        provider: '🔥STAVR🔥'
       },
       {
         address: 'https://stride-api.lavenderfive.com/',

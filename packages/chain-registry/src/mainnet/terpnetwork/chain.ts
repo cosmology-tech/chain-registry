@@ -35,10 +35,6 @@ const info: Chain = {
         provider: 'ZenChainLabs'
       },
       {
-        address: 'https://rpc.terp.nodestake.top:443',
-        provider: 'NodeStake'
-      },
-      {
         address: 'https://terp-mainnet-rpc.itrocket.net:443',
         provider: 'itrocket.net'
       },
@@ -51,10 +47,6 @@ const info: Chain = {
       {
         address: 'https://api-terp.zenchainlabs.io:443',
         provider: 'ZenChainLabs'
-      },
-      {
-        address: 'https://rpc.terp.nodestake.top:443',
-        provider: 'NodeStake'
       },
       {
         address: 'https://terp-mainnet-api.itrocket.net:443',

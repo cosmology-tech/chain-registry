@@ -51,10 +51,6 @@ const info: Chain = {
         provider: 'stakely'
       },
       {
-        address: 'https://terra-mainnet-rpc.autostake.com:443',
-        provider: 'AutoStake 🛡️ Slash Protected'
-      },
-      {
         address: 'https://phoenix-rpc.terra.dev:443',
         provider: 'Terraform Labs'
       },
@@ -95,10 +91,6 @@ const info: Chain = {
       {
         address: 'https://lcd-terra.wildsage.io',
         provider: '🧙 WildSage Labs'
-      },
-      {
-        address: 'https://terra-mainnet-lcd.autostake.com:443',
-        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'https://phoenix-lcd.terra.dev:443',

@@ -7979,48 +7979,6 @@ const asset_list: AssetList = {
       ]
     },
     {
-      description: 'The native token cw20 for Neta on Juno Chain',
-      type_asset: 'cw20',
-      address:
-        'juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr',
-      denom_units: [
-        {
-          denom:
-            'ibc/9743372F617A980BCAAA791C386221AFAA42CD4C5E69A29BD47DF0743078909D',
-          exponent: 0,
-          aliases: [
-            'ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A'
-          ]
-        },
-        {
-          denom: 'neta',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/9743372F617A980BCAAA791C386221AFAA42CD4C5E69A29BD47DF0743078909D',
-      name: 'Neta',
-      display: 'neta',
-      symbol: 'NETA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/osmosis-labs/assetlists/main/images/neta.png'
-      },
-      coingecko_id: 'neta',
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom:
-              'ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A',
-            chain_name: 'juno'
-          },
-          chain: {
-            channel_id: 'channel-42'
-          }
-        }
-      ]
-    },
-    {
       description: 'The native staking and governance token of Kava',
       denom_units: [
         {

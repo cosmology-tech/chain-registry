@@ -32,6 +32,7 @@ import * as _entrypointtestnet from './entrypointtestnet';
 import * as _evmostestnet from './evmostestnet';
 import * as _fetchhubtestnet from './fetchhubtestnet';
 import * as _gitopiatestnet from './gitopiatestnet';
+import * as _hedgetestnet from './hedgetestnet';
 import * as _humanstestnet from './humanstestnet';
 import * as _hypersigntestnet from './hypersigntestnet';
 import * as _impacthubtestnet from './impacthubtestnet';
@@ -119,6 +120,7 @@ const assets: AssetList[] = [
   _evmostestnet.assets,
   _fetchhubtestnet.assets,
   _gitopiatestnet.assets,
+  _hedgetestnet.assets,
   _humanstestnet.assets,
   _hypersigntestnet.assets,
   _impacthubtestnet.assets,

@@ -15,7 +15,7 @@ const info: Chain = {
   fees: {
     fee_tokens: [
       {
-        denom: 'adydx',
+        denom: 'adv4tnt',
         fixed_min_gas_price: 12500000000,
         low_gas_price: 12500000000,
         average_gas_price: 12500000000,
@@ -26,7 +26,7 @@ const info: Chain = {
   staking: {
     staking_tokens: [
       {
-        denom: 'adydx'
+        denom: 'adv4tnt'
       }
     ]
   },

@@ -423,6 +423,37 @@ const info: IBCInfo[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain_1: {
+      chain_name: 'dymension',
+      client_id: '07-tendermint-29',
+      connection_id: 'connection-20'
+    },
+    chain_2: {
+      chain_name: 'secretnetwork',
+      client_id: '07-tendermint-194',
+      connection_id: 'connection-189'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-35',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-130',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
       chain_name: 'evmos',
       client_id: '07-tendermint-50',
       connection_id: 'connection-19'
@@ -680,6 +711,23 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live',
           preferred: true
+        }
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-103',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-129',
+          port_id: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          properties: 'privacy'
         }
       }
     ]
@@ -1065,6 +1113,24 @@ const info: IBCInfo[] = [
         chain_2: {
           channel_id: 'channel-3',
           port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          properties: 'privacy'
+        }
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-127',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-382',
+          port_id:
+            'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au'
         },
         ordering: 'unordered',
         version: 'ics20-1',

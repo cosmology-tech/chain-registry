@@ -86,10 +86,6 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'http://jackal.rpc.nodersteam.com:31657',
-        provider: '[NODERS]TEAM'
-      },
-      {
         address: 'https://jackal.rpc.kjnodes.com',
         provider: 'kjnodes'
       },
@@ -118,10 +114,6 @@ const info: Chain = {
       {
         address: 'https://api.jackal.nodestake.top',
         provider: 'NodeStake'
-      },
-      {
-        address: 'http://jackal.api.nodersteam.com:2917',
-        provider: '[NODERS]TEAM'
       },
       {
         address: 'https://api-jackal.nodeist.net',

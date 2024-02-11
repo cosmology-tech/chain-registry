@@ -49,14 +49,6 @@ const info: Chain = {
         provider: 'kjnodes'
       },
       {
-        address: 'http://humans.rpc.nodersteam.com:22657',
-        provider: '[NODERS]TEAM'
-      },
-      {
-        address: 'https://rpc-humans.nodeist.net',
-        provider: 'Nodeist'
-      },
-      {
         address: 'https://humans-mainnet-rpc.itrocket.net',
         provider: 'itrocket'
       },
@@ -73,16 +65,16 @@ const info: Chain = {
         provider: 'StakeAngle'
       },
       {
-        address: 'https://rpc.humans.stakepool.dev.br',
-        provider: 'StakePool'
-      },
-      {
         address: 'https://humans-rpc.anyvalid.com:26627',
         provider: 'AnyValid'
       },
       {
         address: 'https://mainnet-humans-rpc.konsortech.xyz',
         provider: 'KonsorTech'
+      },
+      {
+        address: 'http://46.4.14.172:16657',
+        provider: 'PPNV Service'
       },
       {
         address: 'https://rpc.humans-mainnet.stake-take.com/',
@@ -97,14 +89,6 @@ const info: Chain = {
       {
         address: 'https://humans.api.kjnodes.com',
         provider: 'kjnodes'
-      },
-      {
-        address: 'http://humans.api.nodersteam.com:22017',
-        provider: '[NODERS]TEAM'
-      },
-      {
-        address: 'https://api-humans.nodeist.net',
-        provider: 'Nodeist'
       },
       {
         address: 'https://humans-mainnet-api.itrocket.net',
@@ -123,12 +107,12 @@ const info: Chain = {
         provider: 'StakeAngle'
       },
       {
-        address: 'https://rest.humans.stakepool.dev.br',
-        provider: 'StakePool'
-      },
-      {
         address: 'https://mainnet-humans-api.konsortech.xyz',
         provider: 'KonsorTech'
+      },
+      {
+        address: 'http://46.4.14.172:16317',
+        provider: 'PPNV Service'
       },
       {
         address: 'https://api.humans-mainnet.stake-take.com/',
@@ -159,6 +143,10 @@ const info: Chain = {
       {
         address: 'humans.grpc.nodersteam.com:9221',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: '46.4.14.172:16090',
+        provider: 'PPNV Service'
       },
       {
         address: 'https://grpc-humans.cosmos-spaces.cloud:1190',

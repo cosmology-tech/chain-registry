@@ -1,8 +1,8 @@
 import { AssetList } from '@chain-registry/types';
 
-import _picasso from './picasso';
 import _composablepolkadot from './composablepolkadot';
+import _picasso from './picasso';
 
-const assets: AssetList[] = [_picasso, _composablepolkadot];
+const assets: AssetList[] = [_composablepolkadot, _picasso];
 
 export default assets;

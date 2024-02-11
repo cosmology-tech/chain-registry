@@ -46,10 +46,6 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'http://gitopia.rpc.nodersteam.com:20657',
-        provider: '[NODERS]TEAM'
-      },
-      {
         address: 'https://gitopia-rpc.polkachu.com:443',
         provider: 'polkachu'
       },
@@ -76,10 +72,6 @@ const info: Chain = {
       {
         address: 'http://gitopia.rpc.m.stavr.tech:51057',
         provider: '🔥STAVR🔥'
-      },
-      {
-        address: 'https://rpc-gitopia.nodeist.net',
-        provider: 'Nodeist'
       },
       {
         address: 'https://gitopia-rpc.genznodes.dev',
@@ -126,10 +118,6 @@ const info: Chain = {
         provider: '🐹 Quokka Stake'
       },
       {
-        address: 'http://gitopia.rpc.tarabukin.work:60557',
-        provider: 'tarabukinivan'
-      },
-      {
         address: 'https://rpc.gitopia.roomit.xyz',
         provider: 'RoomIT'
       },
@@ -144,10 +132,6 @@ const info: Chain = {
       {
         address: 'https://gitopia.rpc.m.anode.team',
         provider: 'AlxVoy ⚡ ANODE.TEAM'
-      },
-      {
-        address: 'https://rpc.gitopia.sbgid.com',
-        provider: 'kokos'
       },
       {
         address: 'https://gitopia.rpc.stakevillage.net',
@@ -172,13 +156,13 @@ const info: Chain = {
       {
         address: 'https://gitopia-mainnet.rpc.l0vd.com:443',
         provider: 'L0vd.com ❤️'
+      },
+      {
+        address: 'https://gitopia-rpc.tothemars.network:443',
+        provider: 'ToTheMars'
       }
     ],
     rest: [
-      {
-        address: 'http://gitopia.api.nodersteam.com:20017',
-        provider: '[NODERS]TEAM'
-      },
       {
         address: 'https://gitopia-api.polkachu.com:443',
         provider: 'polkachu'
@@ -210,10 +194,6 @@ const info: Chain = {
       {
         address: 'https://gitopia.api.m.stavr.tech',
         provider: '🔥STAVR🔥'
-      },
-      {
-        address: 'https://api-gitopia.nodeist.net',
-        provider: 'Nodeist'
       },
       {
         address: 'https://gitopia-api.genznodes.dev',
@@ -276,10 +256,6 @@ const info: Chain = {
         provider: 'AlxVoy ⚡ ANODE.TEAM'
       },
       {
-        address: 'https://api.gitopia.sbgid.com',
-        provider: 'kokos'
-      },
-      {
         address: 'https://gitopia.api.stakevillage.net',
         provider: 'Stake Village'
       },
@@ -302,6 +278,10 @@ const info: Chain = {
       {
         address: 'https://gitopia-mainnet.api.l0vd.com:443',
         provider: 'L0vd.com ❤️'
+      },
+      {
+        address: 'https://gitopia-api.tothemars.network:443',
+        provider: 'ToTheMars'
       }
     ],
     grpc: [
@@ -412,6 +392,10 @@ const info: Chain = {
       {
         address: 'gitopia-mainnet.grpc.l0vd.com:80',
         provider: 'L0vd.com ❤️'
+      },
+      {
+        address: 'gitopia-grpc.tothemars.network:21190',
+        provider: 'ToTheMars'
       }
     ]
   },
@@ -510,6 +494,13 @@ const info: Chain = {
       tx_page: 'https://chain-services.l0vd.com/mainnets/gitopia/tx/${txHash}',
       account_page:
         'https://chain-services.l0vd.com/mainnets/gitopia/account/${accountAddress}'
+    },
+    {
+      kind: 'ToTheMars',
+      url: 'https://explorer.tothemars.network/gitopia',
+      tx_page: 'https://explorer.tothemars.network/gitopia/tx/${txHash}',
+      account_page:
+        'https://explorer.tothemars.network/gitopia/account/${accountAddress}'
     }
   ],
   logo_URIs: {

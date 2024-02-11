@@ -60,6 +60,10 @@ const info: Chain = {
       {
         address: 'https://rpc.desmos.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://desmos-rpc.panthea.eu',
+        provider: 'Panthea EU'
       }
     ],
     rest: [
@@ -86,6 +90,10 @@ const info: Chain = {
       {
         address: 'https://lcd.desmos.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://desmos-api.panthea.eu',
+        provider: 'Panthea EU'
       }
     ],
     grpc: [
@@ -112,6 +120,10 @@ const info: Chain = {
       {
         address: 'https://grpc.desmos.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'desmos-grpc.panthea.eu:16730',
+        provider: 'Panthea EU'
       }
     ]
   },

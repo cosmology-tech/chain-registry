@@ -40,10 +40,6 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc-cosmoshub.blockapsis.com',
-        provider: 'chainapsis'
-      },
-      {
         address: 'https://cosmos-rpc.quickapi.com:443',
         provider: 'Chainlayer'
       },
@@ -100,10 +96,6 @@ const info: Chain = {
         provider: 'Stakin'
       },
       {
-        address: 'https://cosmos-rpc.icycro.org',
-        provider: 'IcyCRO 🧊'
-      },
-      {
         address: 'https://rpc.cosmos.bh.rocks',
         provider: 'BlockHunters 🎯'
       },
@@ -148,10 +140,6 @@ const info: Chain = {
         provider: 'w3coins'
       },
       {
-        address: 'https://cosmos-rpc.enigma-validator.com',
-        provider: 'Enigma'
-      },
-      {
         address: 'https://rpc-cosmoshub.mms.team',
         provider: 'MMS'
       },
@@ -172,15 +160,11 @@ const info: Chain = {
         provider: 'cosmosrescue'
       },
       {
-        address: 'https://cosmos-rpc.stakeandrelax.net',
-        provider: 'Stake&Relax 🦥'
+        address: 'https://cosmos.interstellar-lounge.org',
+        provider: 'Interstellar Lounge 🍸'
       }
     ],
     rest: [
-      {
-        address: 'https://lcd-cosmoshub.blockapsis.com',
-        provider: 'chainapsis'
-      },
       {
         address: 'https://cosmos-lcd.quickapi.com:443',
         provider: 'Chainlayer'
@@ -274,20 +258,12 @@ const info: Chain = {
         provider: 'High Stakes 🇨🇭'
       },
       {
-        address: 'https://cosmoshub-mainnet.api.l0vd.com',
-        provider: 'L0vd.com ❤️'
-      },
-      {
-        address: 'https://cosmos-lcd.enigma-validator.com',
-        provider: 'Enigma'
-      },
-      {
         address: 'https://cosmoshub-api.cosmosrescue.dev',
         provider: 'cosmosrescue'
       },
       {
-        address: 'https://cosmos-api.stakeandrelax.net',
-        provider: 'Stake&Relax 🦥'
+        address: 'https://cosmos-rest.interstellar-lounge.org',
+        provider: 'Interstellar Lounge 🍸'
       }
     ],
     grpc: [

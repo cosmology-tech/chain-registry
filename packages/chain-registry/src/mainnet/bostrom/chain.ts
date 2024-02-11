@@ -41,10 +41,6 @@ const info: Chain = {
         provider: 'cybercongress'
       },
       {
-        address: 'https://rpc.cyber.posthuman.digital',
-        provider: 'posthuman'
-      },
-      {
         address: 'https://rpc-cyber-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
       },
@@ -57,10 +53,6 @@ const info: Chain = {
       {
         address: 'https://lcd.bostrom.cybernode.ai',
         provider: 'cybercongress'
-      },
-      {
-        address: 'https://lcd.cyber.posthuman.digital',
-        provider: 'posthuman'
       },
       {
         address: 'https://api-cyber-ia.cosmosia.notional.ventures/',

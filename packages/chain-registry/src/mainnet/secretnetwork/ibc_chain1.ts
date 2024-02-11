@@ -221,6 +221,24 @@ const info: IBCInfo[] = [
           preferred: true,
           properties: 'privacy'
         }
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-127',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-382',
+          port_id:
+            'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          properties: 'privacy'
+        }
       }
     ]
   }

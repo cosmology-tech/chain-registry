@@ -30,83 +30,9 @@ const testnet: Chain = {
     ]
   },
   codebase: {
-    git_repo: 'https://github.com/osmosis-labs/osmosis',
-    recommended_version: 'v15.0.0',
-    compatible_versions: ['v15.0.0'],
     cosmos_sdk_version: '0.45',
-    consensus: {
-      type: 'tendermint',
-      version: '0.34'
-    },
-    cosmwasm_version: '0.30',
     cosmwasm_enabled: true,
-    genesis: {
-      genesis_url: 'https://genesis.osmotest5.osmosis.zone/genesis.json'
-    },
-    versions: [
-      {
-        name: 'v14.0.0-rc1',
-        recommended_version: 'v14.0.0-rc1',
-        compatible_versions: ['v14.0.0-rc1'],
-        cosmos_sdk_version: '0.45',
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        cosmwasm_version: '0.29',
-        cosmwasm_enabled: true
-      },
-      {
-        name: 'v15.0.0-rc3',
-        recommended_version: 'v15.0.0-rc3',
-        compatible_versions: ['v15.0.0-rc3'],
-        cosmos_sdk_version: '0.45',
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        cosmwasm_version: '0.29',
-        cosmwasm_enabled: true
-      },
-      {
-        name: 'v15.0.0',
-        recommended_version: 'v15.0.0',
-        compatible_versions: ['v15.0.0-rc3'],
-        cosmos_sdk_version: '0.45',
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        cosmwasm_version: '0.30',
-        cosmwasm_enabled: true
-      }
-    ]
-  },
-  peers: {
-    seeds: [
-      {
-        id: 'bb197876fd952d245ef6377e3651c157e3d7ed81',
-        address: '157.245.26.231:26656',
-        provider: ''
-      },
-      {
-        id: '7c2b9e76be5c2142c76b429d9c29e902599ceb44',
-        address: '157.245.21.183:26656',
-        provider: ''
-      }
-    ],
-    persistent_peers: [
-      {
-        id: '51084fccec1c309a415e89d39e6f0881c49493ed',
-        address: '95.217.144.107:12556',
-        provider: ''
-      },
-      {
-        id: 'a5c34bdd777dd418ff7152a8646fd2f31f53f8a5',
-        address: '46.232.248.117:2000',
-        provider: ''
-      }
-    ]
+    cosmwasm_version: '0.30'
   },
   apis: {
     rpc: [

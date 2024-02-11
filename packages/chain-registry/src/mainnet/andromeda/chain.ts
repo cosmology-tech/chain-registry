@@ -36,10 +36,6 @@ const info: Chain = {
         provider: 'AVIAONE'
       },
       {
-        address: 'https://rpc-andromeda.nodeist.net',
-        provider: 'nodeist'
-      },
-      {
         address: 'https://andromeda.rpc.kjnodes.com',
         provider: 'kjnodes'
       },
@@ -56,6 +52,10 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
+        address: 'https://andromeda-mainnet-rpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
         address: 'https://andromeda-rpc.stake-town.com:443',
         provider: 'StakeTown'
       },
@@ -70,16 +70,16 @@ const info: Chain = {
       {
         address: 'https://andromeda-rpc.genznodes.dev',
         provider: 'genznodes'
+      },
+      {
+        address: 'https://nibiru.rpc.kjnodes.comv',
+        provider: 'kjnodes.com 🦄'
       }
     ],
     rest: [
       {
         address: 'https://api.andromeda-1.andromeda.aviaone.com/',
         provider: 'AVIAONE'
-      },
-      {
-        address: 'https://api-andromeda.nodeist.net',
-        provider: 'nodeist'
       },
       {
         address: 'https://andromeda.api.kjnodes.com',
@@ -98,6 +98,10 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
+        address: 'https://andromeda-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
         address: 'https://andromeda-api.stake-town.com:443',
         provider: 'StakeTown'
       },
@@ -112,6 +116,10 @@ const info: Chain = {
       {
         address: 'https://andromeda-api.genznodes.dev',
         provider: 'genznodes'
+      },
+      {
+        address: 'https://nibiru.api.kjnodes.com',
+        provider: 'kjnodes.com 🦄'
       }
     ],
     grpc: [
@@ -124,12 +132,12 @@ const info: Chain = {
         provider: 'AVIAONE'
       },
       {
-        address: 'https://grpc-andromeda.nodeist.net:443',
-        provider: 'nodeist'
-      },
-      {
         address: 'andromeda.grpc.kjnodes.com:443',
         provider: 'kjnodes'
+      },
+      {
+        address: 'andromeda-mainnet-grpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'https://andromeda.grpc.nodex.one:443',
@@ -150,6 +158,10 @@ const info: Chain = {
       {
         address: 'andromeda-grpc.genznodes.dev:27090',
         provider: 'genznodes'
+      },
+      {
+        address: 'nibiru.grpc.kjnodes.com:443',
+        provider: 'kjnodes.com 🦄'
       }
     ]
   },

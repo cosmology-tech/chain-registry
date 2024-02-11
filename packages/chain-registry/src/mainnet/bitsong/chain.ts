@@ -81,6 +81,10 @@ const info: Chain = {
       {
         address: 'https://bitsong.tdrsys.com:2053',
         provider: 'TdrSys'
+      },
+      {
+        address: 'https://bitsong-rpc.panthea.eu',
+        provider: 'Panthea EU'
       }
     ],
     rest: [
@@ -123,6 +127,10 @@ const info: Chain = {
       {
         address: 'https://bitsong.tdrsys.com',
         provider: 'TdrSys'
+      },
+      {
+        address: 'https://bitsong-api.panthea.eu',
+        provider: 'Panthea EU'
       }
     ],
     grpc: [
@@ -141,6 +149,10 @@ const info: Chain = {
       {
         address: 'grpc.bitsong.safeblock.space:9090',
         provider: 'Safe Block'
+      },
+      {
+        address: 'bitsong-grpc.panthea.eu:16750',
+        provider: 'Panthea EU'
       }
     ]
   },

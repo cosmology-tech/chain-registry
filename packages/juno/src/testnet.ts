@@ -29,65 +29,9 @@ const testnet: Chain = {
     ]
   },
   codebase: {
-    git_repo: 'https://github.com/CosmosContracts/juno',
-    recommended_version: 'v15.0.0-alpha.2',
-    compatible_versions: ['v15.0.0', 'v15.0.0-alpha.2'],
     cosmos_sdk_version: '0.45',
-    consensus: {
-      type: 'tendermint',
-      version: '0.34'
-    },
-    cosmwasm_version: '0.31',
     cosmwasm_enabled: true,
-    ibc_go_version: '4.3.1',
-    genesis: {
-      genesis_url:
-        'https://raw.githubusercontent.com/CosmosContracts/testnets/main/uni-6/genesis.json'
-    },
-    versions: [
-      {
-        name: 'v13.0.0-beta.1',
-        recommended_version: 'v13.0.0-beta.1',
-        compatible_versions: ['v13.0.0-beta.1'],
-        cosmos_sdk_version: '0.45',
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        cosmwasm_version: '0.30',
-        cosmwasm_enabled: true,
-        ibc_go_version: '4.3.0'
-      },
-      {
-        name: 'v14.0.0-alpha.1',
-        recommended_version: 'v14.0.0-alpha.1',
-        compatible_versions: ['v14.0.0-alpha.1'],
-        cosmos_sdk_version: '0.45',
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        cosmwasm_version: '0.30',
-        cosmwasm_enabled: true,
-        ibc_go_version: '4.3.0'
-      }
-    ]
-  },
-  peers: {
-    seeds: [
-      {
-        id: 'babc3f3f7804933265ec9c40ad94f4da8e9e0017',
-        address: 'testnet-seed.rhinostake.com:12656',
-        provider: 'RHINO'
-      }
-    ],
-    persistent_peers: [
-      {
-        id: 'c54bf418fb542634495f57a1e36c9bd057d55e1b',
-        address: '5.161.80.115:26656',
-        provider: 'Reecepbcups'
-      }
-    ]
+    cosmwasm_version: '0.31'
   },
   apis: {
     rpc: [

@@ -29,7 +29,9 @@ const info: Chain = {
       }
     ]
   },
-  codebase: {},
+  codebase: {
+    cosmos_sdk_version: 'v0.46.14'
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg'
@@ -91,10 +93,6 @@ const info: Chain = {
       {
         address: 'https://somm-api.kleomedes.network',
         provider: 'Kleomedes'
-      },
-      {
-        address: 'https://sommelier-api.w3coins.io',
-        provider: 'w3coins'
       }
     ],
     grpc: [
@@ -121,6 +119,10 @@ const info: Chain = {
       {
         address: 'sommelier-grpc.w3coins.io:14190',
         provider: 'w3coins'
+      },
+      {
+        address: 'grpc.sommelier.validatus.com',
+        provider: 'Validatus'
       }
     ]
   },

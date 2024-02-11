@@ -12,4 +12,3 @@ console.log(main_asset_lists);
 import assets from '../src/mainnet/akash';
 
 console.log(assets);
-

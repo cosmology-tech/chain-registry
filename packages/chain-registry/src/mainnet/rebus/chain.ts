@@ -50,10 +50,6 @@ const info: Chain = {
         provider: 'MantiCore'
       },
       {
-        address: 'http://rebus.statesync.nodersteam.com:18657',
-        provider: '[NODERS]TEAM'
-      },
-      {
         address: 'https://rpc.rebus.nodestake.top/',
         provider: 'NodeStake'
       },
@@ -74,10 +70,6 @@ const info: Chain = {
         provider: 'Brochain'
       },
       {
-        address: 'https://rebus-rpc.kleomedes.network',
-        provider: 'Kleomedes'
-      },
-      {
         address: 'https://rebus-mainnet-rpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
       },
@@ -94,10 +86,6 @@ const info: Chain = {
       {
         address: 'https://api.rebuschain.com:1317/',
         provider: 'Rebuschain'
-      },
-      {
-        address: 'http://rebus.api.nodersteam.com:18017',
-        provider: '[NODERS]TEAM'
       },
       {
         address: 'https://rebus.api.manticore.team:443/',
@@ -122,10 +110,6 @@ const info: Chain = {
       {
         address: 'https://rebus-rest.brocha.in',
         provider: 'Brochain'
-      },
-      {
-        address: 'https://rebus-api.kleomedes.network',
-        provider: 'Kleomedes'
       },
       {
         address: 'https://rebus-mainnet-lcd.autostake.com:443',

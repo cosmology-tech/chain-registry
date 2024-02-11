@@ -26,6 +26,7 @@ import * as _cheqd from './cheqd';
 import * as _chihuahua from './chihuahua';
 import * as _chimba from './chimba';
 import * as _chronicnetwork from './chronicnetwork';
+import * as _cifer from './cifer';
 import * as _comdex from './comdex';
 import * as _commercionetwork from './commercionetwork';
 import * as _composable from './composable';
@@ -42,6 +43,7 @@ import * as _desmos from './desmos';
 import * as _dig from './dig';
 import * as _doravota from './doravota';
 import * as _dydx from './dydx';
+import * as _dymension from './dymension';
 import * as _dyson from './dyson';
 import * as _echelon from './echelon';
 import * as _emoney from './emoney';
@@ -109,6 +111,7 @@ import * as _planq from './planq';
 import * as _point from './point';
 import * as _provenance from './provenance';
 import * as _pundix from './pundix';
+import * as _pylons from './pylons';
 import * as _quasar from './quasar';
 import * as _quicksilver from './quicksilver';
 import * as _qwoyn from './qwoyn';
@@ -116,6 +119,7 @@ import * as _realio from './realio';
 import * as _rebus from './rebus';
 import * as _regen from './regen';
 import * as _rizon from './rizon';
+import * as _scorum from './scorum';
 import * as _secretnetwork from './secretnetwork';
 import * as _sei from './sei';
 import * as _sentinel from './sentinel';
@@ -171,6 +175,7 @@ const assets: AssetList[] = [
   _chihuahua.assets,
   _chimba.assets,
   _chronicnetwork.assets,
+  _cifer.assets,
   _comdex.assets,
   _commercionetwork.assets,
   _composable.assets,
@@ -187,6 +192,7 @@ const assets: AssetList[] = [
   _dig.assets,
   _doravota.assets,
   _dydx.assets,
+  _dymension.assets,
   _dyson.assets,
   _echelon.assets,
   _emoney.assets,
@@ -254,6 +260,7 @@ const assets: AssetList[] = [
   _point.assets,
   _provenance.assets,
   _pundix.assets,
+  _pylons.assets,
   _quasar.assets,
   _quicksilver.assets,
   _qwoyn.assets,
@@ -261,6 +268,7 @@ const assets: AssetList[] = [
   _rebus.assets,
   _regen.assets,
   _rizon.assets,
+  _scorum.assets,
   _secretnetwork.assets,
   _sei.assets,
   _sentinel.assets,

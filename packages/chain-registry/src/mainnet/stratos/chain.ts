@@ -32,10 +32,6 @@ const info: Chain = {
         provider: 'thestratos.org'
       },
       {
-        address: 'https://rpc.stratos.nodestake.top',
-        provider: 'NodeStake'
-      },
-      {
         address: 'http://stratos.rpc.nodersteam.com:26657/',
         provider: '[NODERS]TEAM'
       },
@@ -48,10 +44,6 @@ const info: Chain = {
       {
         address: 'https://rest.thestratos.org',
         provider: 'thestratos.org'
-      },
-      {
-        address: 'https://api.stratos.nodestake.top',
-        provider: 'NodeStake'
       },
       {
         address: 'https://lcd-stratos.whispernode.com:443',

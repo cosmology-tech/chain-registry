@@ -36,6 +36,7 @@ import * as _desmos from './desmos';
 import * as _dig from './dig';
 import * as _doravota from './doravota';
 import * as _dydx from './dydx';
+import * as _dymension from './dymension';
 import * as _dyson from './dyson';
 import * as _echelon from './echelon';
 import * as _emoney from './emoney';
@@ -50,6 +51,7 @@ import * as _genesisl1 from './genesisl1';
 import * as _gitopia from './gitopia';
 import * as _gravitybridge from './gravitybridge';
 import * as _haqq from './haqq';
+import * as _humans from './humans';
 import * as _impacthub from './impacthub';
 import * as _imversed from './imversed';
 import * as _injective from './injective';
@@ -132,6 +134,7 @@ const ibc: IBCInfo[] = [
   ..._dig.ibc_chain1,
   ..._doravota.ibc_chain1,
   ..._dydx.ibc_chain1,
+  ..._dymension.ibc_chain1,
   ..._dyson.ibc_chain1,
   ..._echelon.ibc_chain1,
   ..._emoney.ibc_chain1,
@@ -146,6 +149,7 @@ const ibc: IBCInfo[] = [
   ..._gitopia.ibc_chain1,
   ..._gravitybridge.ibc_chain1,
   ..._haqq.ibc_chain1,
+  ..._humans.ibc_chain1,
   ..._impacthub.ibc_chain1,
   ..._imversed.ibc_chain1,
   ..._injective.ibc_chain1,

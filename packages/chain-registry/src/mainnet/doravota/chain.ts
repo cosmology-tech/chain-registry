@@ -35,12 +35,20 @@ const info: Chain = {
       {
         address: 'https://vota-rpc.dorafactory.org/',
         provider: 'dorafactory'
+      },
+      {
+        address: 'https://m-dora.rpc.utsa.tech',
+        provider: 'lesnik | UTSA'
       }
     ],
     rest: [
       {
         address: 'https://vota-rest.dorafactory.org',
         provider: 'dorafactory'
+      },
+      {
+        address: 'https://m-dora.api.utsa.tech',
+        provider: 'lesnik | UTSA'
       }
     ],
     grpc: [
@@ -55,6 +63,11 @@ const info: Chain = {
       kind: 'Dora Vota Ping Pub',
       url: 'https://vota-explorer.dorafactory.org',
       tx_page: 'https://vota-explorer.dorafactory.org/doravota/tx/${txHash}'
+    },
+    {
+      kind: 'lesnik | UTSA Ping Pub',
+      url: 'https://exp.utsa.tech/dora/staking',
+      tx_page: 'https://exp.utsa.tech/dora/tx/${txHash}'
     }
   ]
 };

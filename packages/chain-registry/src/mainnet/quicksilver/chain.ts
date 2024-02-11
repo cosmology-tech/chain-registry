@@ -52,10 +52,6 @@ const info: Chain = {
         provider: 'Quicksilver'
       },
       {
-        address: 'http://quicksilver.statesync.nodersteam.com:16657',
-        provider: '[NODERS]TEAM'
-      },
-      {
         address: 'https://rpc-quicksilver-ia.cosmosia.notional.ventures:443',
         provider: 'Notional'
       },
@@ -126,6 +122,10 @@ const info: Chain = {
       {
         address: 'https://quicksilver.tdrsys.com:2053',
         provider: 'TdrSys'
+      },
+      {
+        address: 'https://rpc.quicksilver.validatus.com',
+        provider: 'Validatus'
       }
     ],
     rest: [
@@ -136,10 +136,6 @@ const info: Chain = {
       {
         address: 'https://api-quicksilver-ia.cosmosia.notional.ventures:443',
         provider: 'Notional'
-      },
-      {
-        address: 'http://quicksilver.api.nodersteam.com:16017',
-        provider: '[NODERS]TEAM'
       },
       {
         address: 'https://quicksilver-api.lavenderfive.com:443',
@@ -204,6 +200,10 @@ const info: Chain = {
       {
         address: 'https://quicksilver.tdrsys.com',
         provider: 'TdrSys'
+      },
+      {
+        address: 'https://api.quicksilver.validatus.com',
+        provider: 'Validatus'
       }
     ],
     grpc: [
@@ -282,6 +282,10 @@ const info: Chain = {
       {
         address: 'https://quicksilver.tdrsys.com:2083',
         provider: 'TdrSys'
+      },
+      {
+        address: 'grpc.quicksilver.validatus.com',
+        provider: 'Validatus'
       }
     ]
   },

@@ -54,6 +54,10 @@ const info: Chain = {
       {
         address: 'https://lum-rpc.stakerhouse.com',
         provider: 'StakerHouse'
+      },
+      {
+        address: 'https://lum-rpc.panthea.eu',
+        provider: 'Panthea EU'
       }
     ],
     rest: [
@@ -72,6 +76,10 @@ const info: Chain = {
       {
         address: 'https://lum-rest.stakerhouse.com',
         provider: 'StakerHouse'
+      },
+      {
+        address: 'https://lum-api.panthea.eu',
+        provider: 'Panthea EU'
       }
     ],
     grpc: [
@@ -86,6 +94,10 @@ const info: Chain = {
       {
         address: 'lum-grpc.stakerhouse.com:443',
         provider: 'StakerHouse'
+      },
+      {
+        address: 'lum-grpc.panthea.eu:16770',
+        provider: 'Panthea EU'
       }
     ]
   },

@@ -21,8 +21,8 @@ const info: Chain = {
         average_gas_price: 1,
         high_gas_price: 1,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -32,8 +32,8 @@ const info: Chain = {
         average_gas_price: 0.0001,
         high_gas_price: 0.0001,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -43,8 +43,8 @@ const info: Chain = {
         average_gas_price: 1000000,
         high_gas_price: 1000000,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -54,8 +54,8 @@ const info: Chain = {
         average_gas_price: 0.0015,
         high_gas_price: 0.0015,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -65,8 +65,8 @@ const info: Chain = {
         average_gas_price: 100000000,
         high_gas_price: 100000000,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -76,8 +76,8 @@ const info: Chain = {
         average_gas_price: 100000000,
         high_gas_price: 100000000,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -87,8 +87,8 @@ const info: Chain = {
         average_gas_price: 100000000,
         high_gas_price: 100000000,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -98,8 +98,8 @@ const info: Chain = {
         average_gas_price: 100000,
         high_gas_price: 100000,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -109,8 +109,8 @@ const info: Chain = {
         average_gas_price: 100000,
         high_gas_price: 100000,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -121,8 +121,20 @@ const info: Chain = {
         average_gas_price: 0.0035,
         high_gas_price: 0.0035,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
+        }
+      },
+      {
+        denom:
+          'ibc/16065EE5282C5217685C8F084FC44864C25C706AC37356B0D62811D50B96920F',
+        fixed_min_gas_price: 0,
+        low_gas_price: 0.0000075,
+        average_gas_price: 0.0000075,
+        high_gas_price: 0.0000075,
+        gas_costs: {
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -133,8 +145,8 @@ const info: Chain = {
         average_gas_price: 0.00005,
         high_gas_price: 0.00005,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -145,8 +157,8 @@ const info: Chain = {
         average_gas_price: 0.00032,
         high_gas_price: 0.00032,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -157,8 +169,8 @@ const info: Chain = {
         average_gas_price: 300000000,
         high_gas_price: 300000000,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -169,8 +181,8 @@ const info: Chain = {
         average_gas_price: 0.0006,
         high_gas_price: 0.0006,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -181,8 +193,20 @@ const info: Chain = {
         average_gas_price: 0.00015,
         high_gas_price: 0.00015,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
+        }
+      },
+      {
+        denom:
+          'ibc/6C349F0EB135C5FA99301758F35B87DB88403D690E5E314AB080401FEE4066E5',
+        fixed_min_gas_price: 0,
+        low_gas_price: 0.0000075,
+        average_gas_price: 0.0000075,
+        high_gas_price: 0.0000075,
+        gas_costs: {
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -193,8 +217,8 @@ const info: Chain = {
         average_gas_price: 0.00015,
         high_gas_price: 0.00015,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -205,8 +229,8 @@ const info: Chain = {
         average_gas_price: 200000000,
         high_gas_price: 200000000,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -217,8 +241,8 @@ const info: Chain = {
         average_gas_price: 0.00001,
         high_gas_price: 0.00001,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -229,8 +253,8 @@ const info: Chain = {
         average_gas_price: 0.00001,
         high_gas_price: 0.00001,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -241,8 +265,8 @@ const info: Chain = {
         average_gas_price: 0.00015,
         high_gas_price: 0.00015,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -252,8 +276,8 @@ const info: Chain = {
         average_gas_price: 0.0001,
         high_gas_price: 0.0001,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -263,8 +287,8 @@ const info: Chain = {
         average_gas_price: 100000000,
         high_gas_price: 100000000,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       },
       {
@@ -274,8 +298,8 @@ const info: Chain = {
         average_gas_price: 6000,
         high_gas_price: 6000,
         gas_costs: {
-          cosmos_send: 100000000,
-          ibc_transfer: 100000000
+          cosmos_send: 10000000,
+          ibc_transfer: 10000000
         }
       }
     ]

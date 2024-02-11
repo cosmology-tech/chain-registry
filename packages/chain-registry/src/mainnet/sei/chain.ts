@@ -31,7 +31,7 @@ const info: Chain = {
     ]
   },
   codebase: {
-    cosmos_sdk_version: 'sei-cosmos v0.2.63',
+    cosmos_sdk_version: 'sei-cosmos v0.2.72',
     cosmwasm_enabled: true,
     cosmwasm_version: 'sei-wasmd v0.0.4'
   },
@@ -66,6 +66,10 @@ const info: Chain = {
       {
         address: 'https://sei.rpc.kjnodes.com',
         provider: 'kjnodes'
+      },
+      {
+        address: 'https://sei-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     rest: [
@@ -92,6 +96,10 @@ const info: Chain = {
       {
         address: 'https://sei.api.kjnodes.com',
         provider: 'kjnodes'
+      },
+      {
+        address: 'https://sei-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     grpc: [
@@ -114,6 +122,10 @@ const info: Chain = {
       {
         address: 'sei.grpc.kjnodes.com:443',
         provider: 'kjnodes'
+      },
+      {
+        address: 'sei-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ]
   },

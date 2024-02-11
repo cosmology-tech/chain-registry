@@ -131,6 +131,10 @@ const info: Chain = {
         provider: 'Stake Village'
       },
       {
+        address: 'https://rpc.evmos.validatus.com',
+        provider: 'Validatus'
+      },
+      {
         address: 'https://rpc.evmos.bronbro.io:443',
         provider: 'Bro_n_Bro'
       }
@@ -217,6 +221,10 @@ const info: Chain = {
         provider: 'Stake Village'
       },
       {
+        address: 'https://api.evmos.validatus.com',
+        provider: 'Validatus'
+      },
+      {
         address: 'https://lcd.evmos.bronbro.io:443',
         provider: 'Bro_n_Bro'
       }
@@ -295,6 +303,10 @@ const info: Chain = {
         provider: 'Stake Village'
       },
       {
+        address: 'grpc.evmos.validatus.com:443',
+        provider: 'Validatus'
+      },
+      {
         address: 'https://grpc.evmos.bronbro.io:443',
         provider: 'Bro_n_Bro'
       }
@@ -363,6 +375,10 @@ const info: Chain = {
       {
         address: 'https://evmos-mainnet.jsonrpc.stakevillage.net',
         provider: 'Stake Village'
+      },
+      {
+        address: 'https://json-rpc.evmos.validatus.com',
+        provider: 'Validatus'
       }
     ]
   },

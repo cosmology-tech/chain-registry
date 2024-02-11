@@ -28,7 +28,11 @@ const info: Chain = {
       }
     ]
   },
-  codebase: {},
+  codebase: {
+    cosmos_sdk_version: 'v0.47.6',
+    cosmwasm_enabled: true,
+    cosmwasm_version: 'v0.41.0'
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/chain.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/chain.svg'
@@ -42,10 +46,6 @@ const info: Chain = {
       {
         address: 'https://teritori-rpc.polkachu.com',
         provider: 'Polkachu'
-      },
-      {
-        address: 'https://rpc.teritori.nodestake.top',
-        provider: 'NodeStake'
       },
       {
         address: 'https://teritori.rpc.m.stavr.tech',
@@ -80,10 +80,6 @@ const info: Chain = {
         provider: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀'
       },
       {
-        address: 'https://teritori.rpc.silknodes.io',
-        provider: 'Silk Nodes'
-      },
-      {
         address: 'https://rpc-teritori.pupmos.network',
         provider: 'PUPMØS'
       },
@@ -108,10 +104,6 @@ const info: Chain = {
       {
         address: 'https://teritori-api.polkachu.com',
         provider: 'Polkachu'
-      },
-      {
-        address: 'https://api.teritori.nodestake.top',
-        provider: 'NodeStake'
       },
       {
         address: 'https://teritori.api.m.stavr.tech',
@@ -140,10 +132,6 @@ const info: Chain = {
       {
         address: 'https://m-teritori.api.utsa.tech',
         provider: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀'
-      },
-      {
-        address: 'https://teritori.api.silknodes.io',
-        provider: 'Silk Nodes'
       },
       {
         address: 'https://api-teritori.pupmos.network',

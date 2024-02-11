@@ -167,10 +167,6 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc.terrarebels.net',
-        provider: 'Terra Rebels'
-      },
-      {
         address: 'https://terra-classic-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
@@ -188,10 +184,6 @@ const info: Chain = {
       }
     ],
     rest: [
-      {
-        address: 'https://lcd.terrarebels.net',
-        provider: 'Terra Rebels'
-      },
       {
         address: 'https://terra-classic-lcd.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'

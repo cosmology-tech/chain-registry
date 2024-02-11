@@ -98,6 +98,18 @@ const info: Chain = {
       {
         address: 'https://rpc-celestia.theamsolutions.info',
         provider: 'AM Solutions'
+      },
+      {
+        address: 'https://rpc.celestia.validatus.com',
+        provider: 'Validatus'
+      },
+      {
+        address: 'https://celestia-rpc.sr20de.xyz',
+        provider: 'Sr20de'
+      },
+      {
+        address: 'https://rpc-celestia-full.avril14th.org',
+        provider: 'Avril 14th'
       }
     ],
     rest: [
@@ -156,6 +168,18 @@ const info: Chain = {
       {
         address: 'https://rest-celestia.theamsolutions.info',
         provider: 'AM Solutions'
+      },
+      {
+        address: 'https://api.celestia.validatus.com',
+        provider: 'Validatus'
+      },
+      {
+        address: 'https://celestia-api.sr20de.xyz',
+        provider: 'Sr20de'
+      },
+      {
+        address: 'https://api-celestia-full.avril14th.org',
+        provider: 'Avril 14th'
       }
     ],
     grpc: [
@@ -202,6 +226,18 @@ const info: Chain = {
       {
         address: 'grpc-celestia.theamsolutions.info:443',
         provider: 'AM Solutions'
+      },
+      {
+        address: 'grpc.celestia.validatus.com',
+        provider: 'Validatus'
+      },
+      {
+        address: 'celestia-grpc.sr20de.xyz',
+        provider: 'Sr20de'
+      },
+      {
+        address: 'grpc-celestia-full.avril14th.org',
+        provider: 'Avril 14th'
       }
     ]
   },

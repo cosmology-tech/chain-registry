@@ -36,10 +36,6 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://konstellation-rpc.polkachu.com',
-        provider: 'Polkachu'
-      },
-      {
         address: 'https://rpc-konstellation-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
       },
@@ -52,10 +48,6 @@ const info: Chain = {
       {
         address: 'https://api-konstellation-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
-      },
-      {
-        address: 'https://konstellation-api.polkachu.com',
-        provider: 'Polkachu'
       },
       {
         address: 'https://konstellation-rest.stakerhouse.com',

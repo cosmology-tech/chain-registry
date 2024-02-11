@@ -32,6 +32,7 @@ import * as _entrypointtestnet from './entrypointtestnet';
 import * as _evmostestnet from './evmostestnet';
 import * as _fetchhubtestnet from './fetchhubtestnet';
 import * as _gitopiatestnet from './gitopiatestnet';
+import * as _hedgetestnet from './hedgetestnet';
 import * as _humanstestnet from './humanstestnet';
 import * as _hypersigntestnet from './hypersigntestnet';
 import * as _impacthubtestnet from './impacthubtestnet';
@@ -119,6 +120,7 @@ const chains: Chain[] = [
   _evmostestnet.chain,
   _fetchhubtestnet.chain,
   _gitopiatestnet.chain,
+  _hedgetestnet.chain,
   _humanstestnet.chain,
   _hypersigntestnet.chain,
   _impacthubtestnet.chain,

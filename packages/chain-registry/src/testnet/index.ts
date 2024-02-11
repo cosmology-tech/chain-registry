@@ -30,6 +30,7 @@ export * as entrypointtestnet from './entrypointtestnet';
 export * as evmostestnet from './evmostestnet';
 export * as fetchhubtestnet from './fetchhubtestnet';
 export * as gitopiatestnet from './gitopiatestnet';
+export * as hedgetestnet from './hedgetestnet';
 export * as humanstestnet from './humanstestnet';
 export * as hypersigntestnet from './hypersigntestnet';
 export * as impacthubtestnet from './impacthubtestnet';

@@ -383,22 +383,22 @@ const info: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'junotestnet',
-      client_id: '07-tendermint-682',
-      connection_id: 'connection-774'
+      client_id: '07-tendermint-743',
+      connection_id: 'connection-827'
     },
     chain_2: {
       chain_name: 'osmosistestnet',
-      client_id: '07-tendermint-1268',
-      connection_id: 'connection-1166'
+      client_id: '07-tendermint-1932',
+      connection_id: 'connection-1889'
     },
     channels: [
       {
         chain_1: {
-          channel_id: 'channel-811',
+          channel_id: 'channel-889',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-4167',
+          channel_id: 'channel-5498',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -431,6 +431,38 @@ const info: IBCInfo[] = [
         },
         chain_2: {
           channel_id: 'channel-10',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          dex: 'osmosis'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'lavatestnet2',
+      client_id: '07-tendermint-2',
+      connection_id: 'connection-3'
+    },
+    chain_2: {
+      chain_name: 'osmosistestnet',
+      client_id: '07-tendermint-1890',
+      connection_id: 'connection-1852'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-0',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-5286',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -479,22 +511,22 @@ const info: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'marstestnet',
-      client_id: '07-tendermint-31',
-      connection_id: 'connection-29'
+      client_id: '07-tendermint-33',
+      connection_id: 'connection-30'
     },
     chain_2: {
       chain_name: 'osmosistestnet',
-      client_id: '07-tendermint-1269',
-      connection_id: 'connection-1167'
+      client_id: '07-tendermint-1933',
+      connection_id: 'connection-1890'
     },
     channels: [
       {
         chain_1: {
-          channel_id: 'channel-27',
+          channel_id: 'channel-28',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-4168',
+          channel_id: 'channel-5499',
           port_id: 'transfer'
         },
         ordering: 'unordered',

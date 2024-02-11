@@ -49,10 +49,6 @@ const info: Chain = {
         provider: 'kioqq'
       },
       {
-        address: 'http://haqq.rpc.nodersteam.com:19657',
-        provider: '[NODERS]TEAM'
-      },
-      {
         address: 'https://rpc.haqq.nodestake.top',
         provider: 'NodeStake'
       },
@@ -67,6 +63,10 @@ const info: Chain = {
       {
         address: 'https://rpc-haqq.sr20de.xyz:443',
         provider: 'Sr20de'
+      },
+      {
+        address: 'https://haqq-rpc.palamar.io',
+        provider: 'Palamar'
       }
     ],
     rest: [
@@ -77,10 +77,6 @@ const info: Chain = {
       {
         address: 'https://m-s1-sdk.haqq.sh',
         provider: 'kioqq'
-      },
-      {
-        address: 'http://haqq.api.nodersteam.com:19017',
-        provider: '[NODERS]TEAM'
       },
       {
         address: 'https://api.haqq.nodestake.top',
@@ -101,6 +97,10 @@ const info: Chain = {
       {
         address: 'https://api-haqq.sr20de.xyz',
         provider: 'Sr20de'
+      },
+      {
+        address: 'https://haqq-api.palamar.io',
+        provider: 'Palamar'
       }
     ],
     grpc: [
@@ -135,6 +135,10 @@ const info: Chain = {
       {
         address: 'https://grpc-haqq.sr20de.xyz',
         provider: 'Sr20de'
+      },
+      {
+        address: 'haqq-grpc.palamar.io:443',
+        provider: 'Palamar'
       }
     ],
     'evm-http-jsonrpc': [
@@ -193,6 +197,11 @@ const info: Chain = {
       kind: 'KonsorTech Explorer',
       url: 'https://explorer.konsortech.xyz/haqq',
       tx_page: 'https://explorer.konsortech.xyz/haqq/tx/${txHash}'
+    },
+    {
+      kind: 'Palamar Explorer',
+      url: 'https://explorer.palamar.io/haqq',
+      tx_page: 'https://explorer.palamar.io/haqq/tx/${txHash}'
     }
   ],
   images: [

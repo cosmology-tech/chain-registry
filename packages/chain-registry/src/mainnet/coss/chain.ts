@@ -27,6 +27,13 @@ const info: Chain = {
         low_gas_price: 0.025,
         average_gas_price: 0.03,
         high_gas_price: 0.04
+      },
+      {
+        denom: 'ucias',
+        fixed_min_gas_price: 0.025,
+        low_gas_price: 0.025,
+        average_gas_price: 0.03,
+        high_gas_price: 0.04
       }
     ]
   },

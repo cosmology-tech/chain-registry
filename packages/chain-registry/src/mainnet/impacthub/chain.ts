@@ -5,7 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   website: 'https://www.ixo.world/',
-  pretty_name: 'ixo',
+  pretty_name: 'Impacts Hub',
   chain_id: 'ixo-5',
   bech32_prefix: 'ixo',
   daemon_name: 'ixod',

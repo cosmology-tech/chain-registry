@@ -35,9 +35,9 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.3-lsm5',
+    cosmos_sdk_version: 'persistenceOne/cosmos-sdk v0.47.3-lsm5',
     cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.40.2-lsm3'
+    cosmwasm_version: 'persistenceOne/wasmd v0.40.2-lsm3'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
@@ -110,6 +110,10 @@ const info: Chain = {
       {
         address: 'https://persistence-rpc.stakeandrelax.net',
         provider: 'Stake&Relax 🦥'
+      },
+      {
+        address: 'https://rpc.persistence.validatus.com',
+        provider: 'Validatus'
       }
     ],
     rest: [
@@ -176,6 +180,10 @@ const info: Chain = {
       {
         address: 'https://persistence-api.stakeandrelax.net',
         provider: 'Stake&Relax 🦥'
+      },
+      {
+        address: 'https://api.persistence.validatus.com',
+        provider: 'Validatus'
       }
     ],
     grpc: [
@@ -222,6 +230,10 @@ const info: Chain = {
       {
         address: 'persistence-grpc.stakeandrelax.net:15490',
         provider: 'Stake&Relax 🦥'
+      },
+      {
+        address: 'grpc.persistence.validatus.com',
+        provider: 'Validatus'
       }
     ]
   },

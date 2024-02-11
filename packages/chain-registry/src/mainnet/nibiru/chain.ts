@@ -48,18 +48,30 @@ const info: Chain = {
       {
         address: 'https://rpc.nibiru.fi',
         provider: 'Nibiru Foundation'
+      },
+      {
+        address: 'https://nibiru.rpc.kjnodes.com',
+        provider: 'kjnodes.com 🦄'
       }
     ],
     rest: [
       {
         address: 'https://lcd.nibiru.fi',
         provider: 'Nibiru Foundation'
+      },
+      {
+        address: 'https://nibiru.api.kjnodes.com',
+        provider: 'kjnodes.com 🦄'
       }
     ],
     grpc: [
       {
         address: 'grpc.nibiru.fi:443',
         provider: 'Nibiru Foundation'
+      },
+      {
+        address: 'nibiru.grpc.kjnodes.com:443',
+        provider: 'kjnodes.com 🦄'
       }
     ]
   },

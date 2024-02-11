@@ -53,10 +53,6 @@ const info: Chain = {
         provider: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀'
       },
       {
-        address: 'https://rpc.aura.nodestake.top',
-        provider: 'NodeStake'
-      },
-      {
         address: 'http://aura.rpc.m.stavr.tech:11047',
         provider: '🔥STAVR🔥'
       },
@@ -93,16 +89,16 @@ const info: Chain = {
         provider: 'silent'
       },
       {
-        address: 'https://aura-rpc.sergo.dev',
-        provider: 'SerGo'
-      },
-      {
         address: 'https://rpc-aura.mms.team',
         provider: 'MMS'
       },
       {
         address: 'https://aura-rpc.stake-town.com',
         provider: 'StakeTown'
+      },
+      {
+        address: 'https://aura-rpc.palamar.io',
+        provider: 'Palamar'
       }
     ],
     rest: [
@@ -117,10 +113,6 @@ const info: Chain = {
       {
         address: 'https://aura.api.m.stavr.tech',
         provider: '🔥STAVR🔥'
-      },
-      {
-        address: 'https://api.aura.nodestake.top',
-        provider: 'NodeStake'
       },
       {
         address: 'https://aura-api.ramuchi.tech',
@@ -155,16 +147,16 @@ const info: Chain = {
         provider: 'silent'
       },
       {
-        address: 'https://aura-api.sergo.dev',
-        provider: 'SerGo'
-      },
-      {
         address: 'https://api-aura.mms.team',
         provider: 'MMS'
       },
       {
         address: 'https://aura-api.stake-town.com',
         provider: 'StakeTown'
+      },
+      {
+        address: 'https://aura-api.palamar.io',
+        provider: 'Palamar'
       }
     ],
     grpc: [
@@ -223,6 +215,10 @@ const info: Chain = {
       {
         address: 'grpc.aura.safeblock.space:9090',
         provider: 'Safe Block'
+      },
+      {
+        address: 'aura-grpc.palamar.io:443',
+        provider: 'Palamar'
       }
     ]
   },

@@ -88,10 +88,6 @@ const info: Chain = {
         provider: 'itrocket'
       },
       {
-        address: 'https://rpc.nois.nodestake.top',
-        provider: 'NodeStake'
-      },
-      {
         address: 'https://rpc-nois.d-stake.xyz',
         provider: 'D-Stake'
       },
@@ -218,10 +214,6 @@ const info: Chain = {
       {
         address: 'https://nois-mainnet-api.itrocket.net',
         provider: 'itrocket'
-      },
-      {
-        address: 'https://api.nois.nodestake.top',
-        provider: 'NodeStake'
       },
       {
         address: 'https://api-nois.d-stake.xyz',

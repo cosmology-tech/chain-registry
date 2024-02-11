@@ -84,12 +84,16 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
-        address: 'https://rpc.mainnet.solonation.cf',
+        address: 'https://rpc.m.core.solonation.io',
         provider: '#SoloNation'
       },
       {
         address: 'https://coreum-rpc.genznodes.dev',
         provider: 'genznodes'
+      },
+      {
+        address: 'https://coreum-rpc.ibs.team',
+        provider: 'Inter Blockchain Services'
       }
     ],
     grpc: [
@@ -140,12 +144,16 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
-        address: 'https://api.mainnet.solonation.cf',
+        address: 'https://api.m.core.solonation.io',
         provider: '#SoloNation'
       },
       {
         address: 'https://coreum-api.genznodes.dev',
         provider: 'genznodes'
+      },
+      {
+        address: 'https://coreum-api.ibs.team',
+        provider: 'Inter Blockchain Services'
       }
     ]
   },
@@ -179,10 +187,10 @@ const info: Chain = {
     },
     {
       kind: '#SoloNation',
-      url: 'https://explorer.solonation.cf/core-main',
-      tx_page: 'https://explorer.solonation.cf/core-main/tx/${txHash}',
+      url: 'https://explorer.solonation.io/core-main',
+      tx_page: 'https://explorer.solonation.io/core-main/tx/${txHash}',
       account_page:
-        'https://explorer.solonation.cf/core-main/account/${accountAddress}'
+        'https://explorer.solonation.io/core-main/account/${accountAddress}'
     },
     {
       kind: 'TC Network',

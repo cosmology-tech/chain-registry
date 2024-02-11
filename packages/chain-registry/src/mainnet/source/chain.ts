@@ -76,6 +76,10 @@ const info: Chain = {
       {
         address: 'https://source.rpc.skynodejs.net/',
         provider: 'skynodejs'
+      },
+      {
+        address: 'https://source.rpc.nodeshub.online/',
+        provider: 'Nodes Hub'
       }
     ],
     rest: [
@@ -114,6 +118,14 @@ const info: Chain = {
       {
         address: 'https://api.source.indonode.net',
         provider: 'Indonode'
+      },
+      {
+        address: 'https://source.api.nodeshub.online/',
+        provider: 'Nodes Hub'
+      },
+      {
+        address: 'https://api.source.validatus.com',
+        provider: 'Validatus'
       }
     ],
     grpc: [
@@ -144,6 +156,14 @@ const info: Chain = {
       {
         address: 'https://source.grpc.skynodejs.net',
         provider: 'skynodejs'
+      },
+      {
+        address: 'https://source.grpc.nodeshub.online',
+        provider: 'Nodes Hub'
+      },
+      {
+        address: 'https://grpc.source.validatus.com',
+        provider: 'Validatus'
       }
     ]
   },

@@ -63,6 +63,10 @@ const info: Chain = {
       {
         address: 'https://shentu-rpc.highstakes.ch:26657/',
         provider: 'High Stakes 🇨🇭'
+      },
+      {
+        address: 'https://shentu-rpc.panthea.eu',
+        provider: 'Panthea EU'
       }
     ],
     rest: [
@@ -93,6 +97,10 @@ const info: Chain = {
       {
         address: 'https://shentu-api.highstakes.ch:1317/',
         provider: 'High Stakes 🇨🇭'
+      },
+      {
+        address: 'https://shentu-api.panthea.eu',
+        provider: 'Panthea EU'
       }
     ],
     grpc: [
@@ -115,6 +123,10 @@ const info: Chain = {
       {
         address: 'shentu-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'shentu-grpc.panthea.eu:16700',
+        provider: 'Panthea EU'
       }
     ]
   },
