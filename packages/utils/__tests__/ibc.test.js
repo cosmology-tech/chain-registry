@@ -1,5 +1,5 @@
-import { assets, ibc } from 'chain-registry';
-
+import assets from '../../../__fixtures__/assets.json';
+import ibc from '../../../__fixtures__/chains.json';
 import { getIbcAssetPath, getIbcDenomByBase, ibcDenom } from '../src';
 
 it('AKT on osmosis', () => {
@@ -85,7 +85,7 @@ fetch first IBCINFO FROM OSMOSIS<>PERSISTENCE
         }
       }
     ]
-  }  
+  }
 
 ******
 ******

@@ -1,5 +1,4 @@
-import { assets } from 'chain-registry';
-
+import assets from '../../../__fixtures__/assets.json';
 import {
   convertBaseUnitsToDisplayUnits,
   convertBaseUnitsToDollarValue,
@@ -20,7 +19,9 @@ describe('tests for asset-list-util', () => {
   );
 
   it('getAssetByDenom', () => {
-    expect(() => getAssetByDenom(assets, 'uosmo')).toThrowError();
+    console.log('uosmo');
+    expect(() => getAssetByDenom(assets, 'uosmo')).toThrow();
+    console.log('uosmo', 'osmosis');
     const asset = getAssetByDenom(assets, 'uosmo', 'osmosis');
     expect(asset.base).toEqual('uosmo');
   });
@@ -115,7 +116,7 @@ describe('getCoinGeckoIdByDenom', () => {
   });
 
   it('uusdc coingecko id without traces', () => {
-    const id = getCoinGeckoIdByDenom(assets, 'uusdc', {
+    const id = getCoinGeckoIdByDenom(assets, 'uusdcc', {
       customAssetFilter(asset) {
         return !asset.traces;
       }

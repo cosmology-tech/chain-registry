@@ -3651,6 +3651,49 @@
     "chain_name": "osmosis",
     "assets": [
       {
+        "description": "The native staking and governance token of Jackal.",
+        "denom_units": [
+          {
+            "denom":
+              "ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA",
+            "exponent": 0,
+            "aliases": ["ujkl"]
+          },
+          {
+            "denom": "jkl",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA",
+        "name": "Jackal",
+        "display": "jkl",
+        "symbol": "JKL",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg"
+        },
+        "coingecko_id": "jackal-protocol",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg"
+          }
+        ],
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "ujkl",
+              "chain_name": "jackal"
+            },
+            "chain": {
+              "channel_id": "channel-412"
+            }
+          }
+        ]
+      },
+      {
         "description": "The native token of Osmosis",
         "denom_units": [
           {
@@ -8776,6 +8819,7 @@
   {
     "$schema": "../assetlist.schema.json",
     "chain_id": "stateset-1-testnet",
+    "chain_name": "statesettestnet",
     "assets": [
       {
         "description": "The native token of the Stateset Network",
@@ -8804,6 +8848,7 @@
   {
     "$schema": "../assetlist.schema.json",
     "chain_id": "theta-testnet-001",
+    "chain_name": "thetatestnet",
     "assets": [
       {
         "description": "The native staking and governance token of the Theta testnet version of the Cosmos Hub.",
@@ -8945,6 +8990,7 @@
   {
     "$schema": "../assetlist.schema.json",
     "chain_id": "juno-1",
+    "chain_name": "juno",
     "assets": [
       {
         "description": "The native token cw20 for Neta on Juno Chain",
@@ -8973,5 +9019,178 @@
         "coingecko_id": "neta"
       }
     ]
-  }
+  },
+  {
+    "$schema": "../../assetlist.schema.json",
+    "chain_name": "jackaltestnet",
+    "assets": [
+      {
+        "description": "The native staking and governance token of Jackal.",
+        "denom_units": [
+          {
+            "denom": "ujkl",
+            "exponent": 0
+          },
+          {
+            "denom": "jkl",
+            "exponent": 6
+          }
+        ],
+        "base": "ujkl",
+        "name": "Jackal",
+        "display": "jkl",
+        "symbol": "JKL",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/jackaltestnet/images/jkl.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/jackaltestnet/images/jkl.svg"
+        },
+        "coingecko_id": "jackal",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/jackaltestnet/images/jkl.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/jackaltestnet/images/jkl.svg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+  "$schema": "../assetlist.schema.json",
+  "chain_name": "nomic",
+  "assets": [
+    {
+      "description": "Nomic's native token.",
+      "denom_units": [
+        {
+          "denom": "unom",
+          "exponent": 0
+        },
+        {
+          "denom": "nom",
+          "exponent": 6
+        }
+      ],
+      "base": "unom",
+      "name": "Nomic",
+      "display": "nom",
+      "symbol": "NOM",
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png",
+        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg"
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg"
+        }
+      ]
+    },
+    {
+      "description": "Bitcoin. On Cosmos.",
+      "denom_units": [
+        {
+          "denom": "usat",
+          "exponent": 0
+        },
+        {
+          "denom": "nbtc",
+          "exponent": 14
+        }
+      ],
+      "base": "usat",
+      "name": "Nomic Bitcoin",
+      "display": "nbtc",
+      "symbol": "nBTC",
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png",
+        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg"
+      },
+      "traces": [
+        {
+          "type": "bridge",
+          "counterparty": {
+            "chain_name": "bitcoin",
+            "base_denom": "sat"
+          },
+          "provider": "Nomic"
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg"
+        }
+      ]
+    }
+  ]
+}, {
+      "$schema": "../../assetlist.schema.json",
+      "chain_name": "osmosistestnet",
+      "assets": [
+        {
+          "description": "The native token of Osmosis",
+          "denom_units": [
+            {
+              "denom": "uosmo",
+              "exponent": 0,
+              "aliases": []
+            },
+            {
+              "denom": "osmo",
+              "exponent": 6,
+              "aliases": []
+            }
+          ],
+          "base": "uosmo",
+          "name": "Osmosis",
+          "display": "osmo",
+          "symbol": "OSMO",
+          "logo_URIs": {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
+          },
+          "coingecko_id": "osmosis",
+          "keywords": [
+            "dex",
+            "staking"
+          ],
+          "images": [
+            {
+              "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+              "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
+            }
+          ]
+        },
+        {
+          "denom_units": [
+            {
+              "denom": "uion",
+              "exponent": 0
+            },
+            {
+              "denom": "ion",
+              "exponent": 6
+            }
+          ],
+          "base": "uion",
+          "name": "Ion",
+          "display": "ion",
+          "symbol": "ION",
+          "logo_URIs": {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
+          },
+          "coingecko_id": "ion",
+          "keywords": [
+            "memecoin"
+          ],
+          "images": [
+            {
+              "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
+              "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
+            }
+          ]
+        }
+      ]
+    }
 ]
