@@ -194,50 +194,6 @@ exports[`getAssetLists 1`] = `
         ],
       },
       {
-        "base": "ibc/78EFDD10E0EEFA96FF7C9A57EA6496C7C13620A4B66E04667480428B948ECC6A",
-        "coingecko_id": "jackal-protocol",
-        "denom_units": [
-          {
-            "aliases": [
-              "ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA",
-            ],
-            "denom": "ibc/78EFDD10E0EEFA96FF7C9A57EA6496C7C13620A4B66E04667480428B948ECC6A",
-            "exponent": 0,
-          },
-          {
-            "denom": "jkl",
-            "exponent": 6,
-          },
-        ],
-        "description": "The native staking and governance token of Jackal.",
-        "display": "jkl",
-        "images": [
-          {
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg",
-          },
-        ],
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg",
-        },
-        "name": "Jackal",
-        "symbol": "JKL",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-6",
-            },
-            "counterparty": {
-              "base_denom": "ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA",
-              "chain_name": "osmosis",
-              "channel_id": "channel-4",
-            },
-            "type": "ibc",
-          },
-        ],
-      },
-      {
         "base": "ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85",
         "coingecko_id": "osmosis",
         "denom_units": [
@@ -313,6 +269,50 @@ exports[`getAssetLists 1`] = `
             },
             "counterparty": {
               "base_denom": "uion",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/78EFDD10E0EEFA96FF7C9A57EA6496C7C13620A4B66E04667480428B948ECC6A",
+        "coingecko_id": "jackal-protocol",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA",
+            ],
+            "denom": "ibc/78EFDD10E0EEFA96FF7C9A57EA6496C7C13620A4B66E04667480428B948ECC6A",
+            "exponent": 0,
+          },
+          {
+            "denom": "jkl",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native staking and governance token of Jackal.",
+        "display": "jkl",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg",
+        },
+        "name": "Jackal",
+        "symbol": "JKL",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA",
               "chain_name": "osmosis",
               "channel_id": "channel-4",
             },
