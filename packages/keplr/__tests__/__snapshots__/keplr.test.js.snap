@@ -30,6 +30,13 @@ exports[`getExplorer 1`] = `
       "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg",
       "coinMinimalDenom": "uion",
     },
+    {
+      "coinDecimals": 6,
+      "coinDenom": "JKL",
+      "coinGeckoId": "jackal-protocol",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg",
+      "coinMinimalDenom": "ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA",
+    },
   ],
   "features": [
     "stargate",
@@ -94,6 +101,13 @@ exports[`keplr 1`] = `
       "coinGeckoId": "ion",
       "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg",
       "coinMinimalDenom": "uion",
+    },
+    {
+      "coinDecimals": 6,
+      "coinDenom": "JKL",
+      "coinGeckoId": "jackal-protocol",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg",
+      "coinMinimalDenom": "ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA",
     },
   ],
   "features": [

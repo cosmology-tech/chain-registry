@@ -19,9 +19,7 @@ describe('tests for asset-list-util', () => {
   );
 
   it('getAssetByDenom', () => {
-    console.log('uosmo');
     expect(() => getAssetByDenom(assets, 'uosmo')).toThrow();
-    console.log('uosmo', 'osmosis');
     const asset = getAssetByDenom(assets, 'uosmo', 'osmosis');
     expect(asset.base).toEqual('uosmo');
   });
