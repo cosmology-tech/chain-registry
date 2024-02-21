@@ -3,10 +3,10 @@ const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'nibiru',
   status: 'live',
-  network_type: 'mainnet',
+  network_type: 'testnet',
   website: 'https://nibiru.fi/',
   pretty_name: 'Nibiru',
-  chain_id: 'cataclysm-1',
+  chain_id: 'nibiru-testnet-1',
   bech32_prefix: 'nibi',
   daemon_name: 'nibid',
   node_home: '$HOME/.nibid',
@@ -56,7 +56,7 @@ const info: Chain = {
     cosmwasm_enabled: true,
     ibc_go_version: 'v7.3.1',
     genesis: {
-      genesis_url: 'https://networks.nibiru.fi/cataclysm-1/genesis'
+      genesis_url: 'https://networks.testnet.nibiru.fi/testnet-1/genesis'
     },
     versions: [
       {
@@ -117,98 +117,36 @@ const info: Chain = {
   },
   description: 'A Web3 hub ushering in the next era of money',
   peers: {
-    seeds: [
-      {
-        id: 'b7262df35a7e1d1fb4027464efe9d9d6218ca4c7',
-        address: '35.233.111.89:26656',
-        provider: 'Nibiru Foundation'
-      },
-      {
-        id: 'ebf72163ad536ca73a037fa5d564d511be59c2f4',
-        address: '34.34.137.54:26656',
-        provider: 'Nibiru Foundation'
-      },
-      {
-        id: '8542cd7e6bf9d260fef543bc49e59be5a3fa9074',
-        address: 'seed.publicnode.com:26656',
-        provider: 'Allnodes ⚡️ Nodes & Staking'
-      },
-      {
-        id: '400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc',
-        address: 'nibiru.rpc.kjnodes.com:13959',
-        provider: 'kjnodes.com 🦄'
-      }
-    ],
-    persistent_peers: [
-      {
-        id: '05106550b6e738d8ce50cb857520124bbcce318f',
-        address: '35.189.236.126:26656',
-        provider: 'Nibiru Foundation'
-      },
-      {
-        id: 'e7af24b15365bff9537e2776c2a5fdf01b933dc5',
-        address: '34.76.178.49:26656',
-        provider: 'Nibiru Foundation'
-      }
-    ]
+    seeds: [],
+    persistent_peers: []
   },
   apis: {
     rpc: [
       {
-        address: 'https://rpc.nibiru.fi',
+        address: 'https://rpc.testnet-1.nibiru.fi',
         provider: 'Nibiru Foundation'
-      },
-      {
-        address: 'https://nibiru.rpc.kjnodes.com',
-        provider: 'kjnodes.com 🦄'
-      },
-      {
-        address: 'https://rpc.nibiru.nodestake.org',
-        provider: 'NodeStake'
       }
     ],
     rest: [
       {
-        address: 'https://lcd.nibiru.fi',
+        address: 'https://lcd.testnet-1.nibiru.fi',
         provider: 'Nibiru Foundation'
-      },
-      {
-        address: 'https://nibiru.api.kjnodes.com',
-        provider: 'kjnodes.com 🦄'
-      },
-      {
-        address: 'https://api.nibiru.nodestake.org',
-        provider: 'NodeStake'
       }
     ],
     grpc: [
       {
-        address: 'grpc.nibiru.fi:443',
+        address: 'grpc.testnet-1.nibiru.fi:443',
         provider: 'Nibiru Foundation'
-      },
-      {
-        address: 'nibiru.grpc.kjnodes.com:443',
-        provider: 'kjnodes.com 🦄'
-      },
-      {
-        address: 'grpc.nibiru.nodestake.org:443',
-        provider: 'NodeStake'
       }
     ]
   },
   explorers: [
     {
-      kind: 'Nodes Guru',
-      url: 'https://nibiru.explorers.guru/',
-      tx_page: 'https://nibiru.explorers.guru/transaction/${txHash}',
-      account_page: 'https://nibiru.explorers.guru/account/${accountAddress}'
-    },
-    {
-      kind: 'NodeStake',
-      url: 'https://explorer.nodestake.org/nibiru',
-      tx_page: 'https://explorer.nodestake.org/nibiru/tx/${txHash}',
+      kind: 'Nibiru Foundation',
+      url: 'https://explorer.nibiru.fi/nibiru-testnet-1',
+      tx_page: 'https://explorer.nibiru.fi/nibiru-testnet-1/tx/${txHash}',
       account_page:
-        'https://explorer.nodestake.org/nibiru/account/${accountAddress}'
+        'https://explorer.nibiru.fi/nibiru-testnet-1/account/${accountAddress}'
     }
   ],
   images: [

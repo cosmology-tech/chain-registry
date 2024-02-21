@@ -4,7 +4,7 @@ const info: AssetList = {
   chain_name: 'nibiru',
   assets: [
     {
-      description: 'The native token of the Nibiru network',
+      description: 'The native token of the Nibiru Ecosystem',
       denom_units: [
         {
           denom: 'unibi',

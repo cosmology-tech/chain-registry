@@ -1,10 +1,10 @@
 import { AssetList } from '@chain-registry/types';
-const info: AssetList = {
+const assets: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'nibiru',
   assets: [
     {
-      description: 'The native token of the Nibiru network',
+      description: 'The native token of the Nibiru Ecosystem',
       denom_units: [
         {
           denom: 'unibi',
@@ -34,4 +34,4 @@ const info: AssetList = {
     }
   ]
 };
-export default info;
+export default assets;
