@@ -56,7 +56,8 @@ const info: Chain = {
     cosmwasm_enabled: true,
     ibc_go_version: 'v7.3.1',
     genesis: {
-      genesis_url: 'https://networks.nibiru.fi/cataclysm-1/genesis'
+      genesis_url:
+        'https://github.com/NibiruChain/Networks/blob/main/Mainnet/cataclysm-1/genesis.json'
     },
     versions: [
       {

@@ -56,7 +56,8 @@ const info: Chain = {
     cosmwasm_enabled: true,
     ibc_go_version: 'v7.3.1',
     genesis: {
-      genesis_url: 'https://networks.testnet.nibiru.fi/testnet-2/genesis'
+      genesis_url:
+        'https://github.com/NibiruChain/Networks/blob/main/Testnet/nibiru-testnet-2/genesis.json'
     },
     versions: [
       {
