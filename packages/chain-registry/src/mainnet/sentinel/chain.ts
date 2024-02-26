@@ -39,6 +39,10 @@ const info: Chain = {
   apis: {
     rpc: [
       {
+        address: 'https://rpc-sentinel.busurnode.com',
+        provider: 'Busurnode'
+      },
+      {
         address: 'https://rpc-sentinel-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
       },
@@ -77,9 +81,17 @@ const info: Chain = {
       {
         address: 'https://rpc.sentinelgrowthdao.com',
         provider: 'Sentinel Growth DAO'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/sentinel/rpc',
+        provider: 'Stakewolle'
       }
     ],
     rest: [
+      {
+        address: 'https://api-sentinel.busurnode.com',
+        provider: 'Busurnode'
+      },
       {
         address: 'https://api-sentinel-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
@@ -111,6 +123,10 @@ const info: Chain = {
       {
         address: 'https://api.sentinelgrowthdao.com',
         provider: 'Sentinel Growth DAO'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/sentinel/rest',
+        provider: 'Stakewolle'
       }
     ],
     grpc: [

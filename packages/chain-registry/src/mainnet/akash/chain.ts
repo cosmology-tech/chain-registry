@@ -97,6 +97,10 @@ const info: Chain = {
       {
         address: 'https://rpc-akash.whispernode.com:443',
         provider: 'WhisperNode 🤐'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/akash/rpc',
+        provider: 'Stakewolle'
       }
     ],
     rest: [
@@ -159,6 +163,10 @@ const info: Chain = {
       {
         address: 'https://lcd-akash.whispernode.com:443',
         provider: 'WhisperNode 🤐'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/akash/rest',
+        provider: 'Stakewolle'
       }
     ],
     grpc: [

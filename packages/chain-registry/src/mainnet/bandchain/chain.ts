@@ -76,6 +76,10 @@ const info: Chain = {
       {
         address: 'https://band-rpc.stake-town.com',
         provider: 'StakeTown'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/bandchain/rpc',
+        provider: 'Stakewolle'
       }
     ],
     rest: [
@@ -118,6 +122,10 @@ const info: Chain = {
       {
         address: 'https://band-api.stake-town.com',
         provider: 'StakeTown'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/bandchain/rest',
+        provider: 'Stakewolle'
       }
     ],
     grpc: [

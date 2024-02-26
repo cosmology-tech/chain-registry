@@ -123,10 +123,6 @@ const chain: Chain = {
         provider: 'w3coins'
       },
       {
-        address: 'https://rpc-osmosis.mms.team',
-        provider: 'MMS'
-      },
-      {
         address: 'https://osmosis-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
@@ -157,6 +153,14 @@ const chain: Chain = {
       {
         address: 'https://rpc.osmosis.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://osmosis.interstellar-lounge.org',
+        provider: 'Interstellar Lounge 🍸'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/osmosis/rpc',
+        provider: 'Stakewolle'
       }
     ],
     rest: [
@@ -213,10 +217,6 @@ const chain: Chain = {
         provider: 'WhisperNode 🤐'
       },
       {
-        address: 'https://api-osmosis.mms.team',
-        provider: 'MMS'
-      },
-      {
         address: 'https://osmosis-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
@@ -229,10 +229,6 @@ const chain: Chain = {
         provider: 'StakeTown'
       },
       {
-        address: 'https://osmosis-mainnet.api.l0vd.com:443',
-        provider: 'L0vd.com ❤️'
-      },
-      {
         address: 'https://osmosis-api.reece.sh',
         provider: 'Reecepbcups'
       },
@@ -243,6 +239,14 @@ const chain: Chain = {
       {
         address: 'https://lcd.osmosis.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://osmosis-rest.interstellar-lounge.org',
+        provider: 'Interstellar Lounge 🍸'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/osmosis/rest',
+        provider: 'Stakewolle'
       }
     ],
     grpc: [

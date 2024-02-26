@@ -27,7 +27,17 @@ const info: AssetList = {
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/humans/images/humans_small_light.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/humans/images/humans_small_light.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/humans/images/humans_small_light.svg',
+          theme: {
+            dark_mode: false
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/humans/images/heart-dark-mode.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/humans/images/heart-dark-mode.svg',
+          theme: {
+            dark_mode: true
+          }
         }
       ]
     }

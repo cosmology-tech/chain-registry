@@ -161,6 +161,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/osmosis/rpc',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://rpc.cros-nest.com/osmosis',
+        provider: 'Crosnest'
       }
     ],
     rest: [
@@ -247,6 +251,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/osmosis/rest',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://rest.cros-nest.com/osmosis',
+        provider: 'Crosnest'
       }
     ],
     grpc: [

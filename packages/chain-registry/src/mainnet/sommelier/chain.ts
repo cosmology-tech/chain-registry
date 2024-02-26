@@ -49,6 +49,10 @@ const info: Chain = {
         provider: 'PUPMØS'
       },
       {
+        address: 'https://somm.rpc.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://sommelier-rpc.lavenderfive.com/',
         provider: 'Lavender.Five Nodes 🐝'
       },
@@ -79,6 +83,10 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
+        address: 'https://som.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://sommelier-api.lavenderfive.com/',
         provider: 'Lavender.Five Nodes 🐝'
       },
@@ -99,6 +107,10 @@ const info: Chain = {
       {
         address: 'sommelier-grpc.polkachu.com:14190',
         provider: 'Polkachu'
+      },
+      {
+        address: 'somm.grpc.m.stavr.tech:114',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'sommelier-grpc.lavenderfive.com:443',
@@ -138,6 +150,13 @@ const info: Chain = {
       tx_page: 'https://www.mintscan.io/sommelier/transactions/${txHash}',
       account_page:
         'https://www.mintscan.io/sommelier/accounts/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Sommelier-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Sommelier-Mainnet/tx/${txHash}',
+      account_page:
+        'https://explorer.stavr.tech/Sommelier-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'NODEXPLORER',

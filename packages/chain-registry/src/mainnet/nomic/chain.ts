@@ -32,9 +32,7 @@ const info: Chain = {
       time: '1209600s'
     }
   },
-  codebase: {
-    cosmos_sdk_version: 'cosmos-sdk-proto 0.19.0'
-  },
+  codebase: {},
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.svg'

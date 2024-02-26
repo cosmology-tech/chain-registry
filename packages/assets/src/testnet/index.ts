@@ -13,6 +13,7 @@ export * as impacthubtestnet from './impacthubtestnet';
 export * as injectivetestnet from './injectivetestnet';
 export * as junotestnet from './junotestnet';
 export * as kyvetestnet from './kyvetestnet';
+export * as lavatestnet2 from './lavatestnet2';
 export * as likecointestnet from './likecointestnet';
 export * as marstestnet from './marstestnet';
 export * as neutrontestnet from './neutrontestnet';

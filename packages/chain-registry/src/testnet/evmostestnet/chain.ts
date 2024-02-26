@@ -41,6 +41,10 @@ const info: Chain = {
       {
         address: 'https://evmos-testnet-rpc.polkachu.com',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://evmos-testnet-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     rest: [
@@ -51,12 +55,20 @@ const info: Chain = {
       {
         address: 'https://evmos-testnet-api.polkachu.com',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://evmos-testnet-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     grpc: [
       {
         address: 'https://evmos.test.grpc.coldyvalidator.net',
         provider: 'coldy'
+      },
+      {
+        address: 'evmos-testnet-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ]
   },

@@ -7,7 +7,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/F59384411DBBF71A29AE65510E5012E6448919F840CC90B497DE50FF799777F6',
+            'ibc/88EBE03CB0568DD56FF98A358943787B5E93F8D98F0D0F4A5081E89D7F1C79EA',
           exponent: 0,
           aliases: ['uosmo']
         },
@@ -17,7 +17,7 @@ const assets: AssetList = {
           aliases: []
         }
       ],
-      base: 'ibc/F59384411DBBF71A29AE65510E5012E6448919F840CC90B497DE50FF799777F6',
+      base: 'ibc/88EBE03CB0568DD56FF98A358943787B5E93F8D98F0D0F4A5081E89D7F1C79EA',
       name: 'Osmosis',
       display: 'osmo',
       symbol: 'OSMO',
@@ -37,12 +37,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4168',
+            channel_id: 'channel-5499',
             base_denom: 'uosmo',
             chain_name: 'osmosistestnet'
           },
           chain: {
-            channel_id: 'channel-27'
+            channel_id: 'channel-28'
           }
         }
       ]
@@ -51,7 +51,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/6DF390EDB359AA8DCA8CAF092370AEF497F532F48E405F76A45407CDCF47673F',
+            'ibc/EF8B1E0B76F5D60B0DAAA5D44E7DF9F3A1141841BF7990A3B367565FAF6D3722',
           exponent: 0,
           aliases: ['uion']
         },
@@ -60,7 +60,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/6DF390EDB359AA8DCA8CAF092370AEF497F532F48E405F76A45407CDCF47673F',
+      base: 'ibc/EF8B1E0B76F5D60B0DAAA5D44E7DF9F3A1141841BF7990A3B367565FAF6D3722',
       name: 'Ion',
       display: 'ion',
       symbol: 'ION',
@@ -80,12 +80,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4168',
+            channel_id: 'channel-5499',
             base_denom: 'uion',
             chain_name: 'osmosistestnet'
           },
           chain: {
-            channel_id: 'channel-27'
+            channel_id: 'channel-28'
           }
         }
       ]

@@ -16,10 +16,10 @@ const info: Chain = {
     fee_tokens: [
       {
         denom: 'usei',
-        fixed_min_gas_price: 0.1,
-        low_gas_price: 0.1,
-        average_gas_price: 0.1,
-        high_gas_price: 0.25
+        fixed_min_gas_price: 0.02,
+        low_gas_price: 0.02,
+        average_gas_price: 0.02,
+        high_gas_price: 0.04
       }
     ]
   },

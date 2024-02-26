@@ -79,7 +79,7 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/cias.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/cias.svg'
       },
-      coingecko_id: '',
+      coingecko_id: 'cias',
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/cias.png',

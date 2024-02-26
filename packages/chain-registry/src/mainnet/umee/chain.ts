@@ -4,8 +4,8 @@ const info: Chain = {
   chain_name: 'umee',
   status: 'live',
   network_type: 'mainnet',
-  website: 'https://www.umee.cc/',
-  pretty_name: 'Umee',
+  website: 'https://www.ux.xyz',
+  pretty_name: 'UX Chain',
   chain_id: 'umee-1',
   bech32_prefix: 'umee',
   daemon_name: 'umeed',
@@ -30,9 +30,9 @@ const info: Chain = {
     ]
   },
   codebase: {
-    cosmos_sdk_version: '0.46',
+    cosmos_sdk_version: '0.47',
     cosmwasm_enabled: true,
-    cosmwasm_version: '0.31'
+    cosmwasm_version: '0.43'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png',

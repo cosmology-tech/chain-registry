@@ -50,7 +50,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/D6EB334638D9288EEBC8EAFB0EB804E450C9EC5EA02A6EF6734E0F88FC6B473F',
+            'ibc/74F6D894F138C7FEC1BD6AB01342B741F74032C89CB1CA265ED5186F8F9380E3',
           exponent: 0,
           aliases: ['uosmo']
         },
@@ -60,7 +60,7 @@ const assets: AssetList = {
           aliases: []
         }
       ],
-      base: 'ibc/D6EB334638D9288EEBC8EAFB0EB804E450C9EC5EA02A6EF6734E0F88FC6B473F',
+      base: 'ibc/74F6D894F138C7FEC1BD6AB01342B741F74032C89CB1CA265ED5186F8F9380E3',
       name: 'Osmosis',
       display: 'osmo',
       symbol: 'OSMO',
@@ -80,12 +80,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4167',
+            channel_id: 'channel-5498',
             base_denom: 'uosmo',
             chain_name: 'osmosistestnet'
           },
           chain: {
-            channel_id: 'channel-811'
+            channel_id: 'channel-889'
           }
         }
       ]
@@ -94,7 +94,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/89D049E576B71ADEFA069AD6BA824C86DD6B5739FC22CDA505368BF0427B77D1',
+            'ibc/4579B1AC9FC88C4D466C2AAE027E6CECFD1B8F1523EAE424801A58B2CCE16CB4',
           exponent: 0,
           aliases: ['uion']
         },
@@ -103,7 +103,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/89D049E576B71ADEFA069AD6BA824C86DD6B5739FC22CDA505368BF0427B77D1',
+      base: 'ibc/4579B1AC9FC88C4D466C2AAE027E6CECFD1B8F1523EAE424801A58B2CCE16CB4',
       name: 'Ion',
       display: 'ion',
       symbol: 'ION',
@@ -123,12 +123,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4167',
+            channel_id: 'channel-5498',
             base_denom: 'uion',
             chain_name: 'osmosistestnet'
           },
           chain: {
-            channel_id: 'channel-811'
+            channel_id: 'channel-889'
           }
         }
       ]

@@ -47,6 +47,7 @@ import * as _lavatestnet from './lavatestnet';
 import * as _lavatestnet2 from './lavatestnet2';
 import * as _likecointestnet from './likecointestnet';
 import * as _lumenxtestnet from './lumenxtestnet';
+import * as _mantrachaintestnet from './mantrachaintestnet';
 import * as _marstestnet from './marstestnet';
 import * as _migalootestnet from './migalootestnet';
 import * as _neutrontestnet from './neutrontestnet';
@@ -76,9 +77,11 @@ import * as _sourcetestnet from './sourcetestnet';
 import * as _stargazetestnet from './stargazetestnet';
 import * as _statesettestnet from './statesettestnet';
 import * as _stridetestnet from './stridetestnet';
+import * as _swisstroniktestnet from './swisstroniktestnet';
 import * as _temporaltestnet from './temporaltestnet';
 import * as _terpnettestnet from './terpnettestnet';
 import * as _terra2testnet from './terra2testnet';
+import * as _titantestnet from './titantestnet';
 import * as _ulastestnet from './ulastestnet';
 import * as _uniontestnet from './uniontestnet';
 import * as _upticktestnet from './upticktestnet';
@@ -135,6 +138,7 @@ const assets: AssetList[] = [
   _lavatestnet2.assets,
   _likecointestnet.assets,
   _lumenxtestnet.assets,
+  _mantrachaintestnet.assets,
   _marstestnet.assets,
   _migalootestnet.assets,
   _neutrontestnet.assets,
@@ -164,9 +168,11 @@ const assets: AssetList[] = [
   _stargazetestnet.assets,
   _statesettestnet.assets,
   _stridetestnet.assets,
+  _swisstroniktestnet.assets,
   _temporaltestnet.assets,
   _terpnettestnet.assets,
   _terra2testnet.assets,
+  _titantestnet.assets,
   _ulastestnet.assets,
   _uniontestnet.assets,
   _upticktestnet.assets,

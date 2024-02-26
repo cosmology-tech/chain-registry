@@ -44,6 +44,10 @@ const info: Chain = {
       {
         address: 'https://testnet.tm.injective.network',
         provider: 'injectiveLabs'
+      },
+      {
+        address: 'https://injective-testnet-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     rest: [
@@ -58,6 +62,10 @@ const info: Chain = {
       {
         address: 'https://testnet.grpc.injective.network',
         provider: 'injectiveLabs'
+      },
+      {
+        address: 'https://injective-testnet-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     grpc: [
@@ -72,6 +80,10 @@ const info: Chain = {
       {
         address: 'https://testnet.grpc.injective.network',
         provider: 'injectiveLabs'
+      },
+      {
+        address: 'injective-testnet-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ]
   },

@@ -4,6 +4,37 @@ const info: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'axelar',
+      client_id: '07-tendermint-201',
+      connection_id: 'connection-182'
+    },
+    chain_2: {
+      chain_name: 'bitsong',
+      client_id: '07-tendermint-79',
+      connection_id: 'connection-54'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-140',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-28',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'axelar',
       client_id: '07-tendermint-185',
       connection_id: 'connection-163'
     },
@@ -549,6 +580,37 @@ const info: IBCInfo[] = [
         },
         chain_2: {
           channel_id: 'channel-37',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'axelar',
+      client_id: '07-tendermint-122',
+      connection_id: 'connection-109'
+    },
+    chain_2: {
+      chain_name: 'omniflixhub',
+      client_id: '07-tendermint-44',
+      connection_id: 'connection-37'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-77',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-27',
           port_id: 'transfer'
         },
         ordering: 'unordered',

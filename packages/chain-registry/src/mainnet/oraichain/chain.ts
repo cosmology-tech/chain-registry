@@ -56,6 +56,10 @@ const info: Chain = {
       {
         address: 'https://rpc-orai.blockval.io/',
         provider: 'Blockval'
+      },
+      {
+        address: 'https://mainnet-orai-rpc.konsortech.xyz',
+        provider: 'KonsorTech'
       }
     ],
     rest: [
@@ -74,6 +78,10 @@ const info: Chain = {
       {
         address: 'https://api-orai.blockval.io',
         provider: 'Blockval'
+      },
+      {
+        address: 'https://mainnet-orai-api.konsortech.xyz',
+        provider: 'KonsorTech'
       }
     ],
     grpc: [
@@ -88,6 +96,10 @@ const info: Chain = {
       {
         address: 'grpc-orai.blockval.io:9390',
         provider: 'Blockval'
+      },
+      {
+        address: 'mainnet-orai.konsortech.xyz:33090',
+        provider: 'KonsorTech'
       }
     ]
   },
@@ -112,6 +124,14 @@ const info: Chain = {
       url: 'https://atomscan.com/orai',
       tx_page: 'https://atomscan.com/orai/transactions/${txHash}',
       account_page: 'https://atomscan.com/orai/accounts/${accountAddress}'
+    },
+    {
+      kind: 'KonsorTech Explorer',
+      url: 'https://explorer.konsortech.xyz/oraichain',
+      tx_page:
+        'https://explorer.konsortech.xyz/oraichain/transactions/${txHash}',
+      account_page:
+        'https://explorer.konsortech.xyz/oraichain/accounts/${accountAddress}'
     }
   ],
   images: [

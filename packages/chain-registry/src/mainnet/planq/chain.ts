@@ -74,6 +74,10 @@ const info: Chain = {
       {
         address: 'https://planq.rpc.skynodejs.net',
         provider: 'skynodejs'
+      },
+      {
+        address: 'https://planq-rpc.stake-town.com',
+        provider: 'StakeTown'
       }
     ],
     rest: [
@@ -108,6 +112,10 @@ const info: Chain = {
       {
         address: 'https://planq.api.skynodejs.net',
         provider: 'skynodejs'
+      },
+      {
+        address: 'https://planq-api.stake-town.com',
+        provider: 'StakeTown'
       }
     ],
     grpc: [
@@ -154,6 +162,10 @@ const info: Chain = {
       {
         address: 'https://planq.grpc.skynodejs.net',
         provider: 'skynodejs'
+      },
+      {
+        address: 'planq-grpc.stake-town.com:443',
+        provider: 'StakeTown'
       }
     ],
     'evm-http-jsonrpc': [
@@ -180,6 +192,10 @@ const info: Chain = {
       {
         address: 'https://evm.planq.safeblock.space',
         provider: 'Safe Block'
+      },
+      {
+        address: 'https://planq-jsonrpc.stake-town.com',
+        provider: 'StakeTown'
       }
     ]
   },

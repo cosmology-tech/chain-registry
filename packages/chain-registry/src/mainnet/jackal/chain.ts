@@ -96,6 +96,18 @@ const info: Chain = {
       {
         address: 'https://jackal.rpc.skynodejs.net',
         provider: 'skynodejs'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/jackal/rpc',
+        provider: 'Stakewolle'
+      },
+      {
+        address: 'https://rpc.jackal.silentvalidator.com',
+        provider: 'silent'
+      },
+      {
+        address: 'https://rpc.jackal.mathnodes.com',
+        provider: 'MathNodes'
       }
     ],
     rest: [
@@ -146,6 +158,18 @@ const info: Chain = {
       {
         address: 'https://jackal.api.skynodejs.net',
         provider: 'skynodejs'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/jackal/rest',
+        provider: 'Stakewolle'
+      },
+      {
+        address: 'https://api.jackal.silentvalidator.com',
+        provider: 'silent'
+      },
+      {
+        address: 'https://api.jackal.mathnodes.com',
+        provider: 'MathNodes'
       }
     ],
     grpc: [
@@ -188,6 +212,10 @@ const info: Chain = {
       {
         address: 'https://jackal.grpc.skynodejs.net',
         provider: 'skynodejs'
+      },
+      {
+        address: 'grpc.jackal.silentvalidator.com:443',
+        provider: 'silent'
       }
     ]
   },

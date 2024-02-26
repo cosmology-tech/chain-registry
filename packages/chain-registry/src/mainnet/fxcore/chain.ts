@@ -76,6 +76,11 @@ const info: Chain = {
       url: 'https://explorer.tcnetwork.io/fx',
       tx_page: 'https://explorer.tcnetwork.io/fx/transaction/${txHash}',
       account_page: 'https://explorer.tcnetwork.io/fx/account/${accountAddress}'
+    },
+    {
+      kind: 'ping.pub',
+      url: 'https://ping.pub/fxcore',
+      tx_page: 'https://ping.pub/fxcore/tx/${txHash}'
     }
   ]
 };

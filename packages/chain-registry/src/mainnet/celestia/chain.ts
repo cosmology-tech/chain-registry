@@ -72,6 +72,10 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       },
       {
+        address: 'https://celestia.rpc.interchain.validao.xyz',
+        provider: 'ValiDAO'
+      },
+      {
         address: 'https://celestia-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
@@ -100,6 +104,10 @@ const info: Chain = {
         provider: 'AM Solutions'
       },
       {
+        address: 'https://celestia-mainnet-rpc.autostake.com:443',
+        provider: 'AutoStake | Delegate for StakeDrops'
+      },
+      {
         address: 'https://rpc.celestia.validatus.com',
         provider: 'Validatus'
       },
@@ -110,6 +118,18 @@ const info: Chain = {
       {
         address: 'https://rpc-celestia-full.avril14th.org',
         provider: 'Avril 14th'
+      },
+      {
+        address: 'https://rpc.freshstaking.com/celestia',
+        provider: 'FreshSTAKING'
+      },
+      {
+        address: 'https://celestia.cumulo.org.es/',
+        provider: 'Cumulo'
+      },
+      {
+        address: 'https://celestia-rpc.stake-town.com',
+        provider: 'StakeTown'
       }
     ],
     rest: [
@@ -146,6 +166,10 @@ const info: Chain = {
         provider: 'Cosmos Spaces'
       },
       {
+        address: 'https://celestia.rest.interchain.validao.xyz',
+        provider: 'ValiDAO'
+      },
+      {
         address: 'https://celestia-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
@@ -178,8 +202,20 @@ const info: Chain = {
         provider: 'Sr20de'
       },
       {
+        address: 'https://celestia-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStake | Delegate for StakeDrops'
+      },
+      {
         address: 'https://api-celestia-full.avril14th.org',
         provider: 'Avril 14th'
+      },
+      {
+        address: 'https://celestia.api.cumulo.org.es',
+        provider: 'Cumulo'
+      },
+      {
+        address: 'https://celestia-api.stake-town.com',
+        provider: 'StakeTown'
       }
     ],
     grpc: [
@@ -189,7 +225,7 @@ const info: Chain = {
       },
       {
         address: 'celestia-mainnet-grpc.autostake.com:443',
-        provider: 'AutoStake 🛡️ Slash Protected'
+        provider: 'AutoStake | Delegate for StakeDrops'
       },
       {
         address: 'https://celestia-grpc.lavenderfive.com:443',
@@ -206,6 +242,10 @@ const info: Chain = {
       {
         address: 'grpc-celestia.cosmos-spaces.cloud:5190',
         provider: 'Cosmos Spaces'
+      },
+      {
+        address: 'celestia.grpc.interchain.validao.xyz:443',
+        provider: 'ValiDAO'
       },
       {
         address: 'celestia-grpc.publicnode.com:443',
@@ -238,6 +278,14 @@ const info: Chain = {
       {
         address: 'grpc-celestia-full.avril14th.org',
         provider: 'Avril 14th'
+      },
+      {
+        address: 'celestia.grpc.cumulo.org.es',
+        provider: 'Cumulo'
+      },
+      {
+        address: 'https://celestia-grpc.stake-town.com',
+        provider: 'StakeTown'
       }
     ]
   },

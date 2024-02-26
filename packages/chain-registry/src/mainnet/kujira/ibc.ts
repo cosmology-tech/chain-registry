@@ -512,11 +512,11 @@ const info: IBCInfo[] = [
     channels: [
       {
         chain_1: {
-          channel_id: 'channel-113',
+          channel_id: 'channel-9',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-9',
+          channel_id: 'channel-113',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -918,6 +918,37 @@ const info: IBCInfo[] = [
         },
         chain_2: {
           channel_id: 'channel-152',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'kujira',
+      client_id: '07-tendermint-70',
+      connection_id: 'connection-46'
+    },
+    chain_2: {
+      chain_name: 'planq',
+      client_id: '07-tendermint-144',
+      connection_id: 'connection-151'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-51',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-23',
           port_id: 'transfer'
         },
         ordering: 'unordered',

@@ -57,7 +57,7 @@ const info: Chain = {
       },
       {
         address: 'https://injective-mainnet-rpc.autostake.com:443',
-        provider: 'AutoStake.com'
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'https://rpc-injective.whispernode.com:443',
@@ -74,6 +74,10 @@ const info: Chain = {
       {
         address: 'https://injective-rpc.highstakes.ch:26657/',
         provider: 'High Stakes 🇨🇭'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/injective/rpc',
+        provider: 'Stakewolle'
       }
     ],
     rest: [
@@ -106,8 +110,16 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
+        address: 'injective-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
         address: 'https://injective-api.highstakes.ch:1317/',
         provider: 'High Stakes 🇨🇭'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/injective/rest',
+        provider: 'Stakewolle'
       }
     ],
     grpc: [
@@ -125,7 +137,7 @@ const info: Chain = {
       },
       {
         address: 'injective-mainnet-grpc.autostake.com:443',
-        provider: 'AutoStake.com'
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'grpc-injective.cosmos-spaces.cloud:9900',

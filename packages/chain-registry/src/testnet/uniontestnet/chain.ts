@@ -9,7 +9,7 @@ const info: Chain = {
   bech32_prefix: 'union',
   daemon_name: 'uniond',
   node_home: '$HOME/.uniond',
-  key_algos: ['bn254'],
+  key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
     fee_tokens: [

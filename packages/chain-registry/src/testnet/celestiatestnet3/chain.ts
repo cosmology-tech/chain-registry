@@ -28,12 +28,38 @@ const info: Chain = {
       {
         address: 'https://rpc-mocha.pops.one',
         provider: 'P-OPs'
+      },
+      {
+        address: 'https://celestia-testnet-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://rpc-mocha-full.avril14th.org',
+        provider: 'Avril 14th'
       }
     ],
     rest: [
       {
         address: 'https://api-mocha.pops.one',
         provider: 'P-OPs'
+      },
+      {
+        address: 'https://celestia-testnet-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://api-mocha-full.avril14th.org',
+        provider: 'Avril 14th'
+      }
+    ],
+    grpc: [
+      {
+        address: 'celestia-testnet-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'grpc-mocha-full.avril14th.org',
+        provider: 'Avril 14th'
       }
     ]
   },

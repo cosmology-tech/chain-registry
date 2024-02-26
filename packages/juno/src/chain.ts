@@ -39,9 +39,9 @@ const chain: Chain = {
     ]
   },
   codebase: {
-    cosmos_sdk_version: '0.47.5',
+    cosmos_sdk_version: 'v0.47.6',
     cosmwasm_enabled: true,
-    cosmwasm_version: '0.45.0'
+    cosmwasm_version: 'v0.45.0'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
@@ -54,10 +54,6 @@ const chain: Chain = {
       {
         address: 'https://rpc-juno.whispernode.com:443',
         provider: 'WhisperNode 🤐'
-      },
-      {
-        address: 'https://rpc-juno.goldenratiostaking.net',
-        provider: 'Golden Ratio Staking'
       },
       {
         address: 'https://rpc-juno.itastakers.com',
@@ -152,6 +148,10 @@ const chain: Chain = {
         provider: 'Stake&Relax 🦥'
       },
       {
+        address: 'https://rpc.juno.validatus.com',
+        provider: 'Validatus'
+      },
+      {
         address: 'https://rpc.juno.bronbro.io:443',
         provider: 'Bro_n_Bro'
       }
@@ -206,20 +206,12 @@ const chain: Chain = {
         provider: 'kingnodes 👑'
       },
       {
-        address: 'https://juno-api.reece.sh',
-        provider: 'Reecepbcups'
-      },
-      {
         address: 'https://juno-api.stakeandrelax.net',
         provider: 'Stake&Relax Validator 🦥'
       },
       {
         address: 'https://rest-juno.architectnodes.com',
         provider: 'Architect Nodes'
-      },
-      {
-        address: 'https://rest-juno.goldenratiostaking.net',
-        provider: 'Golden Ratio Staking'
       },
       {
         address: 'https://api-juno-01.stakeflow.io',
@@ -248,6 +240,10 @@ const chain: Chain = {
       {
         address: 'https://juno-api.stakeandrelax.net',
         provider: 'Stake&Relax 🦥'
+      },
+      {
+        address: 'https://api.juno.validatus.com',
+        provider: 'Validatus'
       },
       {
         address: 'https://lcd.juno.bronbro.io:443',
@@ -318,6 +314,10 @@ const chain: Chain = {
       {
         address: 'juno-grpc.stakeandrelax.net:12690',
         provider: 'Stake&Relax 🦥'
+      },
+      {
+        address: 'grpc.juno.validatus.com',
+        provider: 'Validatus'
       },
       {
         address: 'https://grpc.juno.bronbro.io:443',

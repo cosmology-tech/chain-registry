@@ -2,7 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chain_name: 'celestiatestnet2',
-  chain_id: 'arabica-10',
+  chain_id: 'arabica-11',
   pretty_name: 'Arabica Testnet',
   status: 'live',
   network_type: 'devnet',
@@ -26,13 +26,13 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://consensus-full.celestia-arabica-10.com/',
+        address: 'https://validator-1.celestia-arabica-11.com/',
         provider: 'Celestia Labs'
       }
     ],
     rest: [
       {
-        address: 'https://api.consensus.celestia-arabica-10.com/',
+        address: 'https://api.celestia-arabica-11.com/',
         provider: 'Celestia Labs'
       }
     ]
@@ -40,9 +40,9 @@ const info: Chain = {
   explorers: [
     {
       kind: 'Ping.Pub',
-      url: 'https://explorer.celestia-arabica-10.com/arabica-10',
+      url: 'https://explorer.celestia-arabica-11.com/arabica-11',
       tx_page:
-        'https://explorer.celestia-arabica-10.com/arabica-10/tx/${txHash}'
+        'https://explorer.celestia-arabica-11.com/arabica-11/tx/${txHash}'
     }
   ]
 };

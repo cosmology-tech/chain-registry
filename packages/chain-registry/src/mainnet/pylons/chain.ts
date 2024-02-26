@@ -16,7 +16,10 @@ const info: Chain = {
     fee_tokens: [
       {
         denom: 'ubedrock',
-        fixed_min_gas_price: 0
+        fixed_min_gas_price: 0,
+        low_gas_price: 0,
+        average_gas_price: 0.5,
+        high_gas_price: 1
       }
     ]
   },

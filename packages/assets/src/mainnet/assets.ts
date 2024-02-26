@@ -36,6 +36,7 @@ import _desmos from './desmos';
 import _dig from './dig';
 import _doravota from './doravota';
 import _dydx from './dydx';
+import _dymension from './dymension';
 import _dyson from './dyson';
 import _echelon from './echelon';
 import _emoney from './emoney';
@@ -50,6 +51,7 @@ import _genesisl1 from './genesisl1';
 import _gitopia from './gitopia';
 import _gravitybridge from './gravitybridge';
 import _haqq from './haqq';
+import _humans from './humans';
 import _impacthub from './impacthub';
 import _imversed from './imversed';
 import _injective from './injective';
@@ -156,6 +158,7 @@ const assets: AssetList[] = [
   _dig,
   _doravota,
   _dydx,
+  _dymension,
   _dyson,
   _echelon,
   _emoney,
@@ -170,6 +173,7 @@ const assets: AssetList[] = [
   _gitopia,
   _gravitybridge,
   _haqq,
+  _humans,
   _impacthub,
   _imversed,
   _injective,

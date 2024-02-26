@@ -79,6 +79,10 @@ const info: Chain = {
       {
         address: 'https://rpc.humans-mainnet.stake-take.com/',
         provider: 'Stake-Take'
+      },
+      {
+        address: 'https://rpc.humans.posthuman.digital',
+        provider: 'posthuman'
       }
     ],
     rest: [
@@ -117,6 +121,10 @@ const info: Chain = {
       {
         address: 'https://api.humans-mainnet.stake-take.com/',
         provider: 'Stake-Take'
+      },
+      {
+        address: 'https://rest.humans.posthuman.digital',
+        provider: 'posthuman'
       }
     ],
     grpc: [
@@ -173,6 +181,10 @@ const info: Chain = {
       {
         address: 'https://mainnet-humans-evm.konsortech.xyz',
         provider: 'KonsorTech'
+      },
+      {
+        address: 'https://evm.humans.posthuman.digital',
+        provider: 'posthuman'
       }
     ]
   },
@@ -209,6 +221,13 @@ const info: Chain = {
       tx_page: 'https://mainnet.itrocket.net/humans/tx/${txHash}',
       account_page:
         'https://mainnet.itrocket.net/humans/account/${accountAddress}'
+    },
+    {
+      kind: 'posthuman',
+      url: 'https://explorer.posthuman.digital/humans',
+      tx_page: 'https://explorer.posthuman.digital/humans/tx/${txHash}',
+      account_page:
+        'https://explorer.posthuman.digital/humans/account/${accountAddress}'
     }
   ],
   images: [

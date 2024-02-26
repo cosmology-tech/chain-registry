@@ -783,7 +783,7 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.svg'
       },
-      coingecko_id: 'hopers-io ',
+      coingecko_id: 'hopers-io',
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.png',

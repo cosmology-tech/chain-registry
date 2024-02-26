@@ -31,7 +31,10 @@ const info: Chain = {
       }
     ]
   },
-  codebase: {},
+  codebase: {
+    cosmos_sdk_version: 'v0.45.16',
+    cosmwasm_version: 'v0.31.0'
+  },
   apis: {
     rpc: [
       {
@@ -97,6 +100,10 @@ const info: Chain = {
       {
         address: 'https://rpc-passage.mainnet.validatrium.club',
         provider: 'Validatrium'
+      },
+      {
+        address: 'https://rpc.passage.silentvalidator.com',
+        provider: 'silent'
       }
     ],
     rest: [
@@ -163,6 +170,10 @@ const info: Chain = {
       {
         address: 'https://api-passage.mainnet.validatrium.club',
         provider: 'Validatrium'
+      },
+      {
+        address: 'https://api.passage.silentvalidator.com',
+        provider: 'silent'
       }
     ],
     grpc: [
@@ -209,6 +220,10 @@ const info: Chain = {
       {
         address: 'grpc-passage.mainnet.validatrium.club:20590',
         provider: 'Validatrium'
+      },
+      {
+        address: 'grpc.passage.silentvalidator.com:443',
+        provider: 'silent'
       }
     ]
   },

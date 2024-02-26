@@ -1,3 +1,4 @@
+export * as _ from './';
 export * as _8ball from './8ball';
 export * as acrechain from './acrechain';
 export * as agoric from './agoric';
@@ -146,3 +147,4 @@ export * as ununifi from './ununifi';
 export * as uptick from './uptick';
 export * as vidulum from './vidulum';
 export * as xpla from './xpla';
+export * as zetachain from './zetachain';

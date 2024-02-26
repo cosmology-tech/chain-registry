@@ -31,7 +31,7 @@ const info: Chain = {
     ]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.7'
+    cosmos_sdk_version: 'v0.47.9'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png',

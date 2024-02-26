@@ -61,6 +61,10 @@ const info: Chain = {
       {
         address: 'https://rpc-cheqd.blockval.io',
         provider: 'Blockval'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/cheqd/rpc',
+        provider: 'Stakewolle'
       }
     ],
     rest: [
@@ -91,6 +95,10 @@ const info: Chain = {
       {
         address: 'https://api-cheqd.blockval.io',
         provider: 'Blockval'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/cheqd/rest',
+        provider: 'Stakewolle'
       }
     ],
     grpc: [

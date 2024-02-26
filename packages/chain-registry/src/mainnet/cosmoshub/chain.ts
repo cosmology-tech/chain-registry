@@ -162,6 +162,10 @@ const info: Chain = {
       {
         address: 'https://cosmos.interstellar-lounge.org',
         provider: 'Interstellar Lounge 🍸'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/cosmoshub/rpc',
+        provider: 'Stakewolle'
       }
     ],
     rest: [
@@ -264,6 +268,10 @@ const info: Chain = {
       {
         address: 'https://cosmos-rest.interstellar-lounge.org',
         provider: 'Interstellar Lounge 🍸'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/cosmoshub/rest',
+        provider: 'Stakewolle'
       }
     ],
     grpc: [

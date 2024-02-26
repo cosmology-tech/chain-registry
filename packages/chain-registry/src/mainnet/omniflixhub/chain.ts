@@ -12,7 +12,8 @@ const info: Chain = {
   bech32_prefix: 'omniflix',
   slip44: 118,
   codebase: {
-    cosmos_sdk_version: 'v0.47.5'
+    cosmos_sdk_version: 'v0.47.9',
+    cosmwasm_version: 'v0.45.0'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
@@ -95,6 +96,10 @@ const info: Chain = {
       {
         address: 'https://rpc.omniflix.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://omniflix-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     rest: [
@@ -149,6 +154,10 @@ const info: Chain = {
       {
         address: 'https://lcd.omniflix.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://omniflix-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     grpc: [
@@ -195,6 +204,10 @@ const info: Chain = {
       {
         address: 'https://grpc.omniflix.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'omniflix-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ]
   },

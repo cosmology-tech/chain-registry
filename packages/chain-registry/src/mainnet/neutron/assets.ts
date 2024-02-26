@@ -783,11 +783,11 @@ const info: AssetList = {
             chain_name: 'osmosis',
             base_denom:
               'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO',
-            channel_id: 'channel-10'
+            channel_id: 'channel-874'
           },
           chain: {
-            channel_id: 'channel-874',
-            path: 'transfer/channel-874/factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
+            channel_id: 'channel-10',
+            path: 'transfer/channel-10/factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
           }
         }
       ],
@@ -798,11 +798,11 @@ const info: AssetList = {
             base_denom:
               'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
         }
       ],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
       }
     },
     {
@@ -829,6 +829,81 @@ const info: AssetList = {
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/boy.png'
+        }
+      ]
+    },
+    {
+      description:
+        "A clan of 11y bad kids crafting chaos on the Cosmos eco. One bad memecoin to rule them all  $BADKID. Airdropped to Badkids NFT holders and $STARS stakers. It's so bad, your wallet's throwing a tantrum for it.",
+      denom_units: [
+        {
+          denom:
+            'ibc/9F8417FBA11E5E01F7F85DDD48C400EB746E95084C11706041663845B4A700A8',
+          exponent: 0
+        },
+        {
+          denom: 'BADKID',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/9F8417FBA11E5E01F7F85DDD48C400EB746E95084C11706041663845B4A700A8',
+      name: 'Badkid',
+      display: 'BADKID',
+      symbol: 'BADKID',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'osmosis',
+            base_denom:
+              'factory/osmo10n8rv8npx870l69248hnp6djy6pll2yuzzn9x8/BADKID',
+            channel_id: 'channel-874'
+          },
+          chain: {
+            channel_id: 'channel-10',
+            path: 'transfer/channel-10/factory/osmo10n8rv8npx870l69248hnp6djy6pll2yuzzn9x8/BADKID'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'factory/osmo10n8rv8npx870l69248hnp6djy6pll2yuzzn9x8/BADKID'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png'
+      }
+    },
+    {
+      description: 'Reflections of cartel activity on Cosmos.',
+      denom_units: [
+        {
+          denom:
+            'factory/neutron1w0pz4mjw7n96kkragj8etgfgakg5vw9lzg77wq/cartel',
+          exponent: 0,
+          aliases: ['ucartel']
+        },
+        {
+          denom: 'cartel',
+          exponent: 6
+        }
+      ],
+      base: 'factory/neutron1w0pz4mjw7n96kkragj8etgfgakg5vw9lzg77wq/cartel',
+      name: 'cartel',
+      display: 'cartel',
+      symbol: 'CARTEL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/cartel.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/cartel.png'
         }
       ]
     }

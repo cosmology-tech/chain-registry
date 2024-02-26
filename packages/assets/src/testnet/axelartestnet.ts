@@ -43,26 +43,25 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/1ED04241CEB0D41A90C7DC7E0CF1483C540C83FA94189E01815682118B4EB68A',
+            'ibc/FBB62A4C5150CD33B56DECC3260EFC107DEE8669D9C182AE33C7514156AB5B1B',
           exponent: 0,
-          aliases: ['adydx']
+          aliases: ['adv4tnt']
         },
         {
-          denom: 'dydx',
+          denom: 'dv4tnt',
           exponent: 18
         }
       ],
-      base: 'ibc/1ED04241CEB0D41A90C7DC7E0CF1483C540C83FA94189E01815682118B4EB68A',
+      base: 'ibc/FBB62A4C5150CD33B56DECC3260EFC107DEE8669D9C182AE33C7514156AB5B1B',
       name: 'dYdX',
-      display: 'dydx',
-      symbol: 'DYDX',
-      coingecko_id: 'dydx',
+      display: 'dv4tnt',
+      symbol: 'DV4TNT',
       traces: [
         {
           type: 'ibc',
           counterparty: {
             channel_id: 'channel-4',
-            base_denom: 'adydx',
+            base_denom: 'adv4tnt',
             chain_name: 'dydxtestnet'
           },
           chain: {
@@ -86,6 +85,47 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
       }
+    },
+    {
+      description: 'The native token of Lava',
+      denom_units: [
+        {
+          denom:
+            'ibc/D0760CFDA2FE5D16DA23234E87519AB9A6601DCC242B6D18A55A092ED945B5BB',
+          exponent: 0,
+          aliases: ['ulava']
+        },
+        {
+          denom: 'lava',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/D0760CFDA2FE5D16DA23234E87519AB9A6601DCC242B6D18A55A092ED945B5BB',
+      name: 'LAVA',
+      display: 'lava',
+      symbol: 'LAVA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lavatestnet/images/lava-icon.svg'
+      },
+      keywords: ['rpc', 'api'],
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lavatestnet/images/lava-icon.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'ulava',
+            chain_name: 'lavatestnet2'
+          },
+          chain: {
+            channel_id: 'channel-418'
+          }
+        }
+      ]
     },
     {
       description: 'The native token of Osmosis',

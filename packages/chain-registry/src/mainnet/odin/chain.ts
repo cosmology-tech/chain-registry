@@ -38,6 +38,10 @@ const info: Chain = {
   apis: {
     rpc: [
       {
+        address: 'https://rpc.odinprotocol.io',
+        provider: 'Heimdall Gateway'
+      },
+      {
         address: 'https://odin-rpc.lavenderfive.com/',
         provider: 'Lavender.Five Nodes 🐝'
       },
@@ -48,8 +52,8 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'http://34.79.179.216:1317/',
-        provider: 'Odin Protocol'
+        address: 'https://api.odinprotocol.io',
+        provider: 'Heimdall Gateway'
       },
       {
         address: 'https://odin-api.lavenderfive.com/',

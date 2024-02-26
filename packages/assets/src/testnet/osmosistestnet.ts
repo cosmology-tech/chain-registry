@@ -867,7 +867,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/315940955C3051051C55B195EE30F7265D5BE3D3A7CC48D74E5D9871DCED8B26',
+            'ibc/31D220286E6C224C0F72D890D0EB75A228D388089EF5C4D77212344F9EAF0183',
           exponent: 0,
           aliases: ['ujunox']
         },
@@ -876,7 +876,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/315940955C3051051C55B195EE30F7265D5BE3D3A7CC48D74E5D9871DCED8B26',
+      base: 'ibc/31D220286E6C224C0F72D890D0EB75A228D388089EF5C4D77212344F9EAF0183',
       name: 'Juno Testnet',
       display: 'junox',
       symbol: 'JUNOX',
@@ -895,12 +895,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-811',
+            channel_id: 'channel-889',
             base_denom: 'ujunox',
             chain_name: 'junotestnet'
           },
           chain: {
-            channel_id: 'channel-4167'
+            channel_id: 'channel-5498'
           }
         }
       ]
@@ -910,7 +910,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/15A8CB7202CD4F54DB3F66A09A75C67167A23EE6C90D40BD766AF425AC96CD10',
+            'ibc/7AA5DD4B6FDD05E141A7ECC2D795D0011F8E4FB70C7A537ECF1A67FE76D2D58D',
           exponent: 0,
           aliases: ['factory/juno12klaltyqvg2j6v034jwdxrk5n4242ttse4sdpt/NEXX']
         },
@@ -919,7 +919,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/15A8CB7202CD4F54DB3F66A09A75C67167A23EE6C90D40BD766AF425AC96CD10',
+      base: 'ibc/7AA5DD4B6FDD05E141A7ECC2D795D0011F8E4FB70C7A537ECF1A67FE76D2D58D',
       name: 'NEXX GEN AI',
       display: 'nexx',
       symbol: 'NEXX',
@@ -935,13 +935,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-811',
+            channel_id: 'channel-889',
             base_denom:
               'factory/juno12klaltyqvg2j6v034jwdxrk5n4242ttse4sdpt/NEXX',
             chain_name: 'junotestnet'
           },
           chain: {
-            channel_id: 'channel-4167'
+            channel_id: 'channel-5498'
           }
         }
       ]
@@ -965,14 +965,6 @@ const assets: AssetList = {
       name: 'KYVE',
       display: 'kyve',
       symbol: 'KYVE',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/kyvetestnet/images/kyve.svg'
-      },
-      images: [
-        {
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/kyvetestnet/images/kyve.svg'
-        }
-      ],
       traces: [
         {
           type: 'ibc',
@@ -983,6 +975,61 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-10'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.svg',
+          image_sync: {
+            chain_name: 'kyve',
+            base_denom: 'ukyve'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native token of Lava',
+      denom_units: [
+        {
+          denom:
+            'ibc/D547C68046B6AAF0172FB2851A3A7A23EC47269E8CC44189BDF0139D88C3B5DF',
+          exponent: 0,
+          aliases: ['ulava']
+        },
+        {
+          denom: 'lava',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/D547C68046B6AAF0172FB2851A3A7A23EC47269E8CC44189BDF0139D88C3B5DF',
+      name: 'LAVA',
+      display: 'lava',
+      symbol: 'LAVA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lavatestnet/images/lava-icon.svg'
+      },
+      keywords: ['rpc', 'api'],
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lavatestnet/images/lava-icon.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'ulava',
+            chain_name: 'lavatestnet2'
+          },
+          chain: {
+            channel_id: 'channel-5286'
           }
         }
       ]
@@ -1034,7 +1081,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/18401C07347459EE2413C0AFDE3ACDB66AC9FD363B3E56A6FC1DFF1B69341FC3',
+            'ibc/66A7ADA623D33D0B66C6890FE3E1AF3D638D56CE2B56F8BDA210B2AA62016216',
           exponent: 0,
           aliases: ['umars']
         },
@@ -1043,7 +1090,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/18401C07347459EE2413C0AFDE3ACDB66AC9FD363B3E56A6FC1DFF1B69341FC3',
+      base: 'ibc/66A7ADA623D33D0B66C6890FE3E1AF3D638D56CE2B56F8BDA210B2AA62016216',
       name: 'Mars',
       display: 'mars',
       symbol: 'MARS',
@@ -1061,12 +1108,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-27',
+            channel_id: 'channel-28',
             base_denom: 'umars',
             chain_name: 'marstestnet'
           },
           chain: {
-            channel_id: 'channel-4168'
+            channel_id: 'channel-5499'
           }
         }
       ]
@@ -1090,13 +1137,13 @@ const assets: AssetList = {
       display: 'ntrn',
       symbol: 'NTRN',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.svg'
       },
       images: [
         {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.svg'
         }
       ],
       traces: [

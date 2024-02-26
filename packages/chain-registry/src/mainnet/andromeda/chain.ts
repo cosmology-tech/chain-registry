@@ -185,6 +185,11 @@ const info: Chain = {
       tx_page: 'https://cosmotracker.com/andromeda/tx/${txHash}',
       account_page:
         'https://cosmotracker.com/andromeda/account/${accountAddress}'
+    },
+    {
+      kind: 'ping.pub',
+      url: 'https://ping.pub/andromeda',
+      tx_page: 'https://ping.pub/andromeda/tx/${txHash}'
     }
   ],
   logo_URIs: {

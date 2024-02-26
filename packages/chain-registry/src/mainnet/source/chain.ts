@@ -54,6 +54,10 @@ const info: Chain = {
         provider: 'Nodeist'
       },
       {
+        address: 'https://source-mainnet-rpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
         address: 'https://source-mainnet-rpc.itrocket.net:443',
         provider: 'ITRocket'
       },
@@ -80,6 +84,14 @@ const info: Chain = {
       {
         address: 'https://source.rpc.nodeshub.online/',
         provider: 'Nodes Hub'
+      },
+      {
+        address: 'https://rpc.source.roomit.xyz/',
+        provider: 'RoomIT'
+      },
+      {
+        address: 'https://rpc.source.posthuman.digital',
+        provider: 'posthuman'
       }
     ],
     rest: [
@@ -98,6 +110,10 @@ const info: Chain = {
       {
         address: 'https://source-mainnet-api.itrocket.net:443',
         provider: 'ITRocket'
+      },
+      {
+        address: 'https://source-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'https://source.api.moonbridge.team/',
@@ -126,6 +142,14 @@ const info: Chain = {
       {
         address: 'https://api.source.validatus.com',
         provider: 'Validatus'
+      },
+      {
+        address: 'https://api.source.roomit.xyz',
+        provider: 'RoomIT'
+      },
+      {
+        address: 'https://rest.source.posthuman.digital',
+        provider: 'posthuman'
       }
     ],
     grpc: [
@@ -150,6 +174,10 @@ const info: Chain = {
         provider: 'Sr20de'
       },
       {
+        address: 'source-mainnet-grpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
         address: 'source-grpc.stake-town.com:443',
         provider: 'StakeTown'
       },
@@ -164,6 +192,10 @@ const info: Chain = {
       {
         address: 'https://grpc.source.validatus.com',
         provider: 'Validatus'
+      },
+      {
+        address: 'grpc.source.roomit.xyz:8443',
+        provider: 'RoomIT'
       }
     ]
   },
@@ -211,6 +243,19 @@ const info: Chain = {
       kind: 'Indonode',
       url: 'https://explorer.indonode.net/source',
       tx_page: 'https://explorer.indonode.net/source/tx/${txHash}'
+    },
+    {
+      kind: 'RoomIT',
+      url: 'https://explorer.tendermint.roomit.xyz/source-mainnet/',
+      tx_page:
+        'https://explorer.tendermint.roomit.xyz/source-mainnet/tx/${txHash}'
+    },
+    {
+      kind: 'posthuman',
+      url: 'https://explorer.posthuman.digital/source',
+      tx_page: 'https://explorer.posthuman.digital/source/tx/${txHash}',
+      account_page:
+        'https://explorer.posthuman.digital/source/account/${accountAddress}'
     }
   ],
   images: [

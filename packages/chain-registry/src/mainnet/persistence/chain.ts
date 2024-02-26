@@ -114,6 +114,10 @@ const info: Chain = {
       {
         address: 'https://rpc.persistence.validatus.com',
         provider: 'Validatus'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/persistence/rpc',
+        provider: 'Stakewolle'
       }
     ],
     rest: [
@@ -184,6 +188,10 @@ const info: Chain = {
       {
         address: 'https://api.persistence.validatus.com',
         provider: 'Validatus'
+      },
+      {
+        address: 'https://public.stakewolle.com/cosmos/persistence/rest',
+        provider: 'Stakewolle'
       }
     ],
     grpc: [

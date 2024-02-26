@@ -34,6 +34,10 @@ const info: Chain = {
       {
         address: 'https://elys-testnet-rpc.staketab.org:443',
         provider: 'Staketab'
+      },
+      {
+        address: 'https://elys-testnet-rpc.itrocket.net:443',
+        provider: 'itrocket'
       }
     ],
     rest: [
@@ -48,12 +52,20 @@ const info: Chain = {
       {
         address: 'https://elys-testnet-rest.staketab.org',
         provider: 'Staketab'
+      },
+      {
+        address: 'https://elys-testnet-api.itrocket.net',
+        provider: 'itrocket'
       }
     ],
     grpc: [
       {
         address: 'services.staketab.com:9390',
         provider: 'Staketab'
+      },
+      {
+        address: 'elys-testnet-grpc.itrocket.net:38090',
+        provider: 'itrocket'
       }
     ]
   },
@@ -69,6 +81,13 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://testnet.elys.network/elys',
       tx_page: 'https://testnet.elys.network/elys/tx/${txHash}'
+    },
+    {
+      kind: 'itrocket',
+      url: 'https://testnet.itrocket.net/elys',
+      tx_page: 'https://testnet.itrocket.net/elys/staking/tx/${txHash}',
+      account_page:
+        'https://testnet.itrocket.net/elys/account/${accountAddress}'
     }
   ]
 };

@@ -47,10 +47,6 @@ const info: Chain = {
       {
         address: 'https://rpc.8ball.nodestake.top',
         provider: 'NodeStake'
-      },
-      {
-        address: 'https://8ball-rpc.genznodes.dev/',
-        provider: 'genznodes'
       }
     ],
     rest: [
@@ -63,10 +59,6 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://8ball-api.genznodes.dev/',
-        provider: 'genznodes'
-      },
-      {
         address: 'https://api-8ball.nodine.id/',
         provider: 'Nodine.ID'
       }
@@ -75,10 +67,6 @@ const info: Chain = {
       {
         address: 'grpc.8ball.nodestake.top:443',
         provider: 'NodeStake'
-      },
-      {
-        address: '8ball-grpc.genznodes.dev:31090',
-        provider: 'genznodes'
       },
       {
         address: 'https://grpc.8ball.nodexcapital.com:443',

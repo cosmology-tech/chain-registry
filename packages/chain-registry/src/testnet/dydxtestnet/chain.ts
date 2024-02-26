@@ -53,6 +53,10 @@ const info: Chain = {
       {
         address: 'https://dydx-testnet-rpc.polkachu.com',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://dydx-testnet-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     rest: [
@@ -67,6 +71,10 @@ const info: Chain = {
       {
         address: 'https://dydx-testnet-api.polkachu.com',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://dydx-testnet-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     grpc: [
@@ -77,6 +85,10 @@ const info: Chain = {
       {
         address: 'https://dydx-testnet-api.polkachu.com',
         provider: 'Polkachu'
+      },
+      {
+        address: 'dydx-testnet-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ]
   },
