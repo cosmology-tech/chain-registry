@@ -4,13 +4,12 @@ on:
   workflow_dispatch:
 
 jobs:
-
   publish-npm:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
-          submodules: 'true'
+          submodules: "true"
       - uses: actions/setup-node@v3
         with:
           node-version: 16.14.0
@@ -20,21 +19,20 @@ jobs:
           yarn bootstrap
           yarn build
           cd packages/chain-registry
-          node ./scripts/build.js
+          yarn codegen
           cd ../../
           cd packages/assets
-          node ./scripts/build.js
+          yarn codegen
           cd ../../
           cd packages/osmosis
-          node ./scripts/build.js
+          yarn codegen
           cd ../../
           cd packages/juno
-          node ./scripts/build.js
+          yarn codegen
           cd ../../
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
           git commit -am "build 🛠"
-          lerna publish --no-verify-access --yes
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
           GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
