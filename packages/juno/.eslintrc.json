@@ -25,6 +25,7 @@
     "jest": true
   },
   "rules": {
+    "@typescript-eslint/no-var-requires": 0,
     // "react-hooks/rules-of-hooks": 2,
     // "react-hooks/exhaustive-deps": 1,
     "simple-import-sort/imports": 2,

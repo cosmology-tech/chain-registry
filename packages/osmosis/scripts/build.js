@@ -1,6 +1,6 @@
-import { getAssetLists } from '@chain-registry/utils';
-import { assets, chains, ibc } from 'chain-registry';
-import { writeFileSync } from 'fs';
+const { getAssetLists } = require('@chain-registry/utils');
+const { assets, chains, ibc } = require('chain-registry');
+const { writeFileSync } = require('fs');
 
 const chainName = 'osmosis';
 
