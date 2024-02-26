@@ -1,8 +1,8 @@
-import { getAssetLists } from '@chain-registry/utils';
-import { assets, chains, ibc } from 'chain-registry';
-import { rmSync, writeFileSync } from 'fs';
-import { mkdirpSync } from 'mkdirp';
-import path from 'path';
+const { getAssetLists } = require('@chain-registry/utils');
+const { assets, chains, ibc } = require('chain-registry');
+const { rmSync, writeFileSync } = require('fs');
+const { mkdirpSync } = require('mkdirp');
+const path = require('path');
 
 const NON_COSMOS_NETWORK_TYPE = 'noncosmos';
 
