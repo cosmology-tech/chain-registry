@@ -19,7 +19,7 @@ jobs:
         id: submodule_check
         run: |
           # Navigate to the submodule directory
-          cd path/to/submodule
+          cd packages/chain-registry/chain-registry
           # Check if there are any differences between the submodule's HEAD and the commit recorded in the superproject
           if git diff --exit-code HEAD..origin/main; then
             echo "Submodule has not changed"
