@@ -2691,13 +2691,11 @@
         "denom_units": [
           {
             "denom": "ugraviton",
-            "exponent": 0,
-            "aliases": []
+            "exponent": 0
           },
           {
             "denom": "graviton",
-            "exponent": 6,
-            "aliases": []
+            "exponent": 6
           }
         ],
         "base": "ugraviton",
@@ -2706,9 +2704,403 @@
         "symbol": "GRAV",
         "coingecko_id": "graviton",
         "logo_URIs": {
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png"
-        }
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg"
+        },
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg"
+          }
+        ]
+      },
+      {
+        "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
+        "denom_units": [
+          {
+            "denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+            "exponent": 0
+          },
+          {
+            "denom": "pstake",
+            "exponent": 18
+          }
+        ],
+        "base": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+        "name": "pSTAKE Finance",
+        "display": "pstake",
+        "symbol": "PSTAKE",
+        "traces": [
+          {
+            "type": "liquid-stake",
+            "counterparty": {
+              "chain_name": "persistence",
+              "base_denom": "uxprt"
+            },
+            "provider": "Persistence"
+          },
+          {
+            "type": "bridge",
+            "counterparty": {
+              "chain_name": "ethereum",
+              "base_denom": "0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
+            },
+            "provider": "Gravity Bridge"
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
+        },
+        "images": [
+          {
+            "image_sync": {
+              "chain_name": "ethereum",
+              "base_denom": "0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
+          }
+        ]
+      },
+      {
+        "description": "Gravity Bridge WETH",
+        "denom_units": [
+          {
+            "denom": "gravity0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+            "exponent": 0
+          },
+          {
+            "denom": "gweth",
+            "exponent": 18
+          }
+        ],
+        "base": "gravity0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "name": "Wrapped Ethereum",
+        "display": "gweth",
+        "symbol": "WETH",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg"
+        },
+        "traces": [
+          {
+            "type": "wrapped",
+            "counterparty": {
+              "chain_name": "ethereum",
+              "base_denom": "wei"
+            },
+            "provider": "Ethereum"
+          },
+          {
+            "type": "bridge",
+            "counterparty": {
+              "chain_name": "ethereum",
+              "base_denom": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+            },
+            "provider": "Gravity Bridge"
+          }
+        ],
+        "images": [
+          {
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg"
+          }
+        ]
+      },
+      {
+        "description": "Gravity Bridge USDC",
+        "denom_units": [
+          {
+            "denom": "gravity0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+            "exponent": 0
+          },
+          {
+            "denom": "gusdc",
+            "exponent": 6
+          }
+        ],
+        "base": "gravity0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "name": "USD Coin",
+        "display": "gusdc",
+        "symbol": "USDC",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg"
+        },
+        "traces": [
+          {
+            "type": "synthetic",
+            "counterparty": {
+              "chain_name": "forex",
+              "base_denom": "USD"
+            },
+            "provider": "Circle"
+          },
+          {
+            "type": "bridge",
+            "counterparty": {
+              "chain_name": "ethereum",
+              "base_denom": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+            },
+            "provider": "Gravity Bridge"
+          }
+        ],
+        "images": [
+          {
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg"
+          }
+        ]
+      },
+      {
+        "description": "Gravity Bridge USDT",
+        "denom_units": [
+          {
+            "denom": "gravity0xdAC17F958D2ee523a2206206994597C13D831ec7",
+            "exponent": 0
+          },
+          {
+            "denom": "gusdt",
+            "exponent": 6
+          }
+        ],
+        "base": "gravity0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "name": "Tether USD",
+        "display": "gusdt",
+        "symbol": "USDT",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg"
+        },
+        "traces": [
+          {
+            "type": "synthetic",
+            "counterparty": {
+              "chain_name": "forex",
+              "base_denom": "USD"
+            },
+            "provider": "Tether"
+          },
+          {
+            "type": "bridge",
+            "counterparty": {
+              "chain_name": "ethereum",
+              "base_denom": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+            },
+            "provider": "Gravity Bridge"
+          }
+        ],
+        "images": [
+          {
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg"
+          }
+        ]
+      },
+      {
+        "description": "Gravity Bridge WBTC",
+        "denom_units": [
+          {
+            "denom": "gravity0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+            "exponent": 0
+          },
+          {
+            "denom": "gwbtc",
+            "exponent": 8
+          }
+        ],
+        "base": "gravity0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+        "name": "Wrapped Bitcoin",
+        "display": "gwbtc",
+        "symbol": "WBTC",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg"
+        },
+        "traces": [
+          {
+            "type": "bridge",
+            "counterparty": {
+              "chain_name": "bitcoin",
+              "base_denom": "sat"
+            },
+            "provider": "BitGo, Kyber, and Ren"
+          },
+          {
+            "type": "bridge",
+            "counterparty": {
+              "chain_name": "ethereum",
+              "base_denom": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+            },
+            "provider": "Gravity Bridge"
+          }
+        ],
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg"
+          }
+        ]
+      },
+      {
+        "description": "Gravity Bridge DAI",
+        "denom_units": [
+          {
+            "denom": "gravity0x6B175474E89094C44Da98b954EedeAC495271d0F",
+            "exponent": 0
+          },
+          {
+            "denom": "gdai",
+            "exponent": 18
+          }
+        ],
+        "base": "gravity0x6B175474E89094C44Da98b954EedeAC495271d0F",
+        "name": "Dai Stablecoin",
+        "display": "gdai",
+        "symbol": "DAI",
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg"
+        },
+        "traces": [
+          {
+            "type": "synthetic",
+            "counterparty": {
+              "chain_name": "forex",
+              "base_denom": "USD"
+            },
+            "provider": "MakerDAO"
+          },
+          {
+            "type": "bridge",
+            "counterparty": {
+              "chain_name": "ethereum",
+              "base_denom": "0x6b175474e89094c44da98b954eedeac495271d0f"
+            },
+            "provider": "Gravity Bridge"
+          }
+        ],
+        "images": [
+          {
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg"
+          }
+        ]
+      },
+      {
+        "description": "Gravity Bridge sDAI",
+        "denom_units": [
+          {
+            "denom": "gravity0x83F20F44975D03b1b09e64809B757c47f942BEeA",
+            "exponent": 0
+          },
+          {
+            "denom": "gsdai",
+            "exponent": 18
+          }
+        ],
+        "base": "gravity0x83F20F44975D03b1b09e64809B757c47f942BEeA",
+        "name": "Savings Dai",
+        "display": "gsdai",
+        "symbol": "sDAI",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.svg"
+        },
+        "traces": [
+          {
+            "type": "bridge",
+            "counterparty": {
+              "chain_name": "ethereum",
+              "base_denom": "0x83F20F44975D03b1b09e64809B757c47f942BEeA"
+            },
+            "provider": "Gravity Bridge"
+          }
+        ],
+        "images": [
+          {
+            "image_sync": {
+              "base_denom": "ethereum",
+              "chain_name": "0x83F20F44975D03b1b09e64809B757c47f942BEeA"
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.svg"
+          }
+        ]
+      },
+      {
+        "description": "Gravity Bridge OCC",
+        "denom_units": [
+          {
+            "denom": "gravity0x2F109021aFe75B949429fe30523Ee7C0D5B27207",
+            "exponent": 0
+          },
+          {
+            "denom": "gocc",
+            "exponent": 18
+          }
+        ],
+        "base": "gravity0x2F109021aFe75B949429fe30523Ee7C0D5B27207",
+        "name": "OccamFi",
+        "display": "gocc",
+        "symbol": "OCC",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/occamfi.png"
+        },
+        "traces": [
+          {
+            "type": "bridge",
+            "counterparty": {
+              "chain_name": "ethereum",
+              "base_denom": "0x2F109021aFe75B949429fe30523Ee7C0D5B27207"
+            },
+            "provider": "Gravity Bridge"
+          }
+        ],
+        "images": [
+          {
+            "image_sync": {
+              "chain_name": "ethereum",
+              "base_denom": "0x2F109021aFe75B949429fe30523Ee7C0D5B27207"
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/occamfi.png"
+          }
+        ]
+      },
+      {
+        "description": "The PAGE token is used for actions in the PageDAO NFT literary ecosystem and for DAO governance.",
+        "denom_units": [
+          {
+            "denom": "gravity0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e",
+            "exponent": 0
+          },
+          {
+            "denom": "page",
+            "exponent": 8
+          }
+        ],
+        "base": "gravity0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e",
+        "name": "Page",
+        "display": "page",
+        "symbol": "PAGE",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg"
+
+        },
+        "traces": [
+          {
+            "type": "bridge",
+            "counterparty": {
+              "chain_name": "ethereum",
+              "base_denom": "0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e"
+            },
+            "provider": "Gravity Bridge"
+          }
+        ],
+        "images": [
+          {
+            "image_sync": {
+              "chain_name": "ethereum",
+              "base_denom": "0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e"
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg"
+          }
+        ]
       }
     ]
   },
@@ -3701,6 +4093,49 @@
         "keywords": [
           "memecoin"
         ]
+      },
+      {
+        "description": "The native staking and governance token of Jackal.",
+        "denom_units": [
+          {
+            "denom":
+              "ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA",
+            "exponent": 0,
+            "aliases": ["ujkl"]
+          },
+          {
+            "denom": "jkl",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA",
+        "name": "Jackal",
+        "display": "jkl",
+        "symbol": "JKL",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg"
+        },
+        "coingecko_id": "jackal-protocol",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg"
+          }
+        ],
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "channel_id": "channel-0",
+              "base_denom": "ujkl",
+              "chain_name": "jackal"
+            },
+            "chain": {
+              "channel_id": "channel-412"
+            }
+          }
+        ]
       }
     ]
   },
@@ -3777,6 +4212,36 @@
         "name": "pSTAKE Finance",
         "display": "pstake",
         "symbol": "PSTAKE",
+        "traces": [
+          {
+            "type": "liquid-stake",
+            "counterparty": {
+              "chain_name": "persistence",
+              "base_denom": "uxprt"
+            },
+            "provider": "Persistence"
+          },
+          {
+            "type": "bridge",
+            "counterparty": {
+              "chain_name": "ethereum",
+              "base_denom": "0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
+            },
+            "provider": "Gravity Bridge"
+          },
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "gravitybridge",
+              "base_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+              "channel_id": "channel-24"
+            },
+            "chain": {
+              "channel_id": "channel-38",
+              "path": "transfer/channel-38/gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
+            }
+          }
+        ],
         "ibc": {
           "source_channel": "channel-24",
           "dst_channel": "channel-38",
@@ -8776,6 +9241,7 @@
   {
     "$schema": "../assetlist.schema.json",
     "chain_id": "stateset-1-testnet",
+    "chain_name": "statesettestnet",
     "assets": [
       {
         "description": "The native token of the Stateset Network",
@@ -8804,6 +9270,7 @@
   {
     "$schema": "../assetlist.schema.json",
     "chain_id": "theta-testnet-001",
+    "chain_name": "thetatestnet",
     "assets": [
       {
         "description": "The native staking and governance token of the Theta testnet version of the Cosmos Hub.",
@@ -8945,6 +9412,7 @@
   {
     "$schema": "../assetlist.schema.json",
     "chain_id": "juno-1",
+    "chain_name": "juno",
     "assets": [
       {
         "description": "The native token cw20 for Neta on Juno Chain",
@@ -8973,5 +9441,178 @@
         "coingecko_id": "neta"
       }
     ]
-  }
+  },
+  {
+    "$schema": "../../assetlist.schema.json",
+    "chain_name": "jackaltestnet",
+    "assets": [
+      {
+        "description": "The native staking and governance token of Jackal.",
+        "denom_units": [
+          {
+            "denom": "ujkl",
+            "exponent": 0
+          },
+          {
+            "denom": "jkl",
+            "exponent": 6
+          }
+        ],
+        "base": "ujkl",
+        "name": "Jackal",
+        "display": "jkl",
+        "symbol": "JKL",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/jackaltestnet/images/jkl.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/jackaltestnet/images/jkl.svg"
+        },
+        "coingecko_id": "jackal",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/jackaltestnet/images/jkl.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/jackaltestnet/images/jkl.svg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+  "$schema": "../assetlist.schema.json",
+  "chain_name": "nomic",
+  "assets": [
+    {
+      "description": "Nomic's native token.",
+      "denom_units": [
+        {
+          "denom": "unom",
+          "exponent": 0
+        },
+        {
+          "denom": "nom",
+          "exponent": 6
+        }
+      ],
+      "base": "unom",
+      "name": "Nomic",
+      "display": "nom",
+      "symbol": "NOM",
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png",
+        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg"
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg"
+        }
+      ]
+    },
+    {
+      "description": "Bitcoin. On Cosmos.",
+      "denom_units": [
+        {
+          "denom": "usat",
+          "exponent": 0
+        },
+        {
+          "denom": "nbtc",
+          "exponent": 14
+        }
+      ],
+      "base": "usat",
+      "name": "Nomic Bitcoin",
+      "display": "nbtc",
+      "symbol": "nBTC",
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png",
+        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg"
+      },
+      "traces": [
+        {
+          "type": "bridge",
+          "counterparty": {
+            "chain_name": "bitcoin",
+            "base_denom": "sat"
+          },
+          "provider": "Nomic"
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg"
+        }
+      ]
+    }
+  ]
+}, {
+      "$schema": "../../assetlist.schema.json",
+      "chain_name": "osmosistestnet",
+      "assets": [
+        {
+          "description": "The native token of Osmosis",
+          "denom_units": [
+            {
+              "denom": "uosmo",
+              "exponent": 0,
+              "aliases": []
+            },
+            {
+              "denom": "osmo",
+              "exponent": 6,
+              "aliases": []
+            }
+          ],
+          "base": "uosmo",
+          "name": "Osmosis",
+          "display": "osmo",
+          "symbol": "OSMO",
+          "logo_URIs": {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
+          },
+          "coingecko_id": "osmosis",
+          "keywords": [
+            "dex",
+            "staking"
+          ],
+          "images": [
+            {
+              "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+              "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
+            }
+          ]
+        },
+        {
+          "denom_units": [
+            {
+              "denom": "uion",
+              "exponent": 0
+            },
+            {
+              "denom": "ion",
+              "exponent": 6
+            }
+          ],
+          "base": "uion",
+          "name": "Ion",
+          "display": "ion",
+          "symbol": "ION",
+          "logo_URIs": {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
+          },
+          "coingecko_id": "ion",
+          "keywords": [
+            "memecoin"
+          ],
+          "images": [
+            {
+              "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
+              "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
+            }
+          ]
+        }
+      ]
+    }
 ]

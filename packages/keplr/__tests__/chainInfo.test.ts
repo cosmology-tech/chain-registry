@@ -1,22 +1,24 @@
 import { Chain } from '@chain-registry/types';
-import { assets, chains } from 'chain-registry';
 
+import assets from '../../../__fixtures__/assets.json';
+import chains from '../../../__fixtures__/chains.json';
 import { chainRegistryChainToKeplr } from '../src/';
 
-
 const testChainData = async (chainName, chainId) => {
-    const chain = await getChainInfo(chainId);
-    expect(chain).toMatchSnapshot();
-    const chainRegChain: Chain = chains.find(({chain_name})=>chain_name===chainName);
-    const chainReg = chainRegistryChainToKeplr(
-        chainRegChain,
-        assets
-        // {
-        //     getRestEndpoint: (chain) => preferredChainInfo[chain.chain_name].rest,
-        //     getRpcEndpoint: (chain) => preferredChainInfo[chain.chain_name].rpc
-        // }
-    );
-    expect(chainReg).toEqual(chain)
+  const chain = await getChainInfo(chainId);
+  expect(chain).toMatchSnapshot();
+  const chainRegChain: Chain = chains.find(
+    ({ chain_name }) => chain_name === chainName
+  );
+  const chainReg = chainRegistryChainToKeplr(
+    chainRegChain,
+    assets
+    // {
+    //     getRestEndpoint: (chain) => preferredChainInfo[chain.chain_name].rest,
+    //     getRpcEndpoint: (chain) => preferredChainInfo[chain.chain_name].rpc
+    // }
+  );
+  expect(chainReg).toEqual(chain);
 };
 
 it('works', async () => {
@@ -24,30 +26,29 @@ it('works', async () => {
   expect(chain).toMatchSnapshot();
 });
 
-
 xit('osmosis', async () => {
   const chainName = 'osmosis';
   const chainId = 'osmosis-1';
   await testChainData(chainName, chainId);
-})
+});
 
 xit('gravity', async () => {
   const chainName = 'gravitybridge';
   const chainId = 'gravity-bridge-3';
   await testChainData(chainName, chainId);
-})
+});
 
 xit('persistence', async () => {
   const chainName = 'persistence';
   const chainId = 'core-1';
   await testChainData(chainName, chainId);
-})
+});
 
 xit('kava', async () => {
   const chainName = 'kava';
   const chainId = 'kava_2222-10';
   await testChainData(chainName, chainId);
-})
+});
 
 /*
  * Data taken from @osmosis-labs/osmosis-frontend with minor alterations.
@@ -56,65 +57,64 @@ xit('kava', async () => {
 
 export type ChainInfoOverrides =
   | ChainInfo[]
-  | (() => undefined | ChainInfo[] | Promise<undefined | ChainInfo[]>)
+  | (() => undefined | ChainInfo[] | Promise<undefined | ChainInfo[]>);
 
 export enum ChainInfoID {
-    Osmosis1 = 'osmosis-1',
-    Cosmoshub4 = 'cosmoshub-4',
-    Columbus5 = 'columbus-5',
-    Secret4 = 'secret-4',
-    Akashnet2 = 'akashnet-2',
-    Regen1 = 'regen-1',
-    Sentinelhub2 = 'sentinelhub-2',
-    Core1 = 'core-1',
-    Irishub1 = 'irishub-1',
-    CryptoOrgChainMainnet1 = 'crypto-org-chain-mainnet-1',
-    IovMainnetIbc = 'iov-mainnet-ibc',
-    Emoney3 = 'emoney-3',
-    Juno1 = 'juno-1',
-    Uni3 = 'uni-3',
-    Microtick1 = 'microtick-1',
-    LikecoinMainnet2 = 'likecoin-mainnet-2',
-    Impacthub3 = 'impacthub-3',
-    Bitcanna1 = 'bitcanna-1',
-    Bitsong2b = 'bitsong-2b',
-    Kichain2 = 'kichain-2',
-    Panacea3 = 'panacea-3',
-    Bostrom = 'bostrom',
-    Comdex1 = 'comdex-1',
-    CheqdMainnet1 = 'cheqd-mainnet-1',
-    Stargaze1 = 'stargaze-1',
-    Chihuahua1 = 'chihuahua-1',
-    LumNetwork1 = 'lum-network-1',
-    Vidulum1 = 'vidulum-1',
-    DesmosMainnet = 'desmos-mainnet',
-    Dig1 = 'dig-1',
-    Sommelier3 = 'sommelier-3',
-    Sifchain1 = 'sifchain-1',
-    LaoziMainnet = 'laozi-mainnet',
-    Darchub = 'darchub',
-    Umee1 = 'umee-1',
-    GravityBridge3 = 'gravity-bridge-3',
-    Mainnet3 = 'mainnet-3',
-    Shentu22 = 'shentu-2.2',
-    Carbon1 = 'carbon-1',
-    Injective1 = 'injective-1',
-    CerberusChain1 = 'cerberus-chain-1',
-    Fetchhub4 = 'fetchhub-4',
-    Mantle1 = 'mantle-1',
-    PioMainnet1 = 'pio-mainnet-1',
-    Galaxy1 = 'galaxy-1',
-    Meme1 = 'meme-1',
-    Evmos_9001_2 = 'evmos_9001-2',
-    Phoenix1 = 'phoenix-1',
-    Titan1 = 'titan-1',
-    Kava_2222_10 = 'kava_2222-10',
-    Genesis_29_2 = 'genesis_29-2',
-  }
-  
+  Osmosis1 = 'osmosis-1',
+  Cosmoshub4 = 'cosmoshub-4',
+  Columbus5 = 'columbus-5',
+  Secret4 = 'secret-4',
+  Akashnet2 = 'akashnet-2',
+  Regen1 = 'regen-1',
+  Sentinelhub2 = 'sentinelhub-2',
+  Core1 = 'core-1',
+  Irishub1 = 'irishub-1',
+  CryptoOrgChainMainnet1 = 'crypto-org-chain-mainnet-1',
+  IovMainnetIbc = 'iov-mainnet-ibc',
+  Emoney3 = 'emoney-3',
+  Juno1 = 'juno-1',
+  Uni3 = 'uni-3',
+  Microtick1 = 'microtick-1',
+  LikecoinMainnet2 = 'likecoin-mainnet-2',
+  Impacthub3 = 'impacthub-3',
+  Bitcanna1 = 'bitcanna-1',
+  Bitsong2b = 'bitsong-2b',
+  Kichain2 = 'kichain-2',
+  Panacea3 = 'panacea-3',
+  Bostrom = 'bostrom',
+  Comdex1 = 'comdex-1',
+  CheqdMainnet1 = 'cheqd-mainnet-1',
+  Stargaze1 = 'stargaze-1',
+  Chihuahua1 = 'chihuahua-1',
+  LumNetwork1 = 'lum-network-1',
+  Vidulum1 = 'vidulum-1',
+  DesmosMainnet = 'desmos-mainnet',
+  Dig1 = 'dig-1',
+  Sommelier3 = 'sommelier-3',
+  Sifchain1 = 'sifchain-1',
+  LaoziMainnet = 'laozi-mainnet',
+  Darchub = 'darchub',
+  Umee1 = 'umee-1',
+  GravityBridge3 = 'gravity-bridge-3',
+  Mainnet3 = 'mainnet-3',
+  Shentu22 = 'shentu-2.2',
+  Carbon1 = 'carbon-1',
+  Injective1 = 'injective-1',
+  CerberusChain1 = 'cerberus-chain-1',
+  Fetchhub4 = 'fetchhub-4',
+  Mantle1 = 'mantle-1',
+  PioMainnet1 = 'pio-mainnet-1',
+  Galaxy1 = 'galaxy-1',
+  Meme1 = 'meme-1',
+  Evmos_9001_2 = 'evmos_9001-2',
+  Phoenix1 = 'phoenix-1',
+  Titan1 = 'titan-1',
+  Kava_2222_10 = 'kava_2222-10',
+  Genesis_29_2 = 'genesis_29-2'
+}
 
-import { Bech32Address } from '@keplr-wallet/cosmos'
-import { AppCurrency, ChainInfo } from '@keplr-wallet/types'
+import { Bech32Address } from '@keplr-wallet/cosmos';
+import { AppCurrency, ChainInfo } from '@keplr-wallet/types';
 
 /** All currency attributes (stake and fee) are defined once in the `currencies` list.
  *  Maintains the option to skip this conversion and keep the verbose `ChainInfo` type.
@@ -125,67 +125,67 @@ export type SimplifiedChainInfo = Omit<
 > & {
   currencies: Array<
     AppCurrency & {
-      isStakeCurrency?: boolean
-      isFeeCurrency?: boolean
+      isStakeCurrency?: boolean;
+      isFeeCurrency?: boolean;
     }
-  >
-}
+  >;
+};
 
 /** Convert a less redundant chain info schema into one that is accepted by Keplr's suggestChain: `ChainInfo`. */
 export function createKeplrChainInfo({
   currencies: _currencies,
   ...chainInfo
 }: SimplifiedChainInfo): ChainInfo {
-  const currencies: AppCurrency[] = []
-  const feeCurrencies: AppCurrency[] = []
-  let stakeCurrency: AppCurrency | undefined
+  const currencies: AppCurrency[] = [];
+  const feeCurrencies: AppCurrency[] = [];
+  let stakeCurrency: AppCurrency | undefined;
 
   for (const _currency of _currencies) {
     const currency = {
       ..._currency,
       // Convert into valid URI.
       ...(_currency.coinImageUrl && {
-        coinImageUrl: 'https://app.osmosis.zone' + _currency.coinImageUrl,
-      }),
-    }
+        coinImageUrl: 'https://app.osmosis.zone' + _currency.coinImageUrl
+      })
+    };
 
-    currencies.push(currency)
+    currencies.push(currency);
 
     if (currency.isFeeCurrency) {
-      feeCurrencies.push(currency)
+      feeCurrencies.push(currency);
     }
 
     if (currency.isStakeCurrency && stakeCurrency === undefined) {
-      stakeCurrency = currency
+      stakeCurrency = currency;
     } else if (currency.isStakeCurrency) {
       throw new Error(
         `There cannot be more than one stake currency for ${chainInfo.chainName}`
-      )
+      );
     }
 
     // Keplr does type-checking, so remove excess properties.
-    delete currency.isFeeCurrency
-    delete currency.isStakeCurrency
+    delete currency.isFeeCurrency;
+    delete currency.isStakeCurrency;
   }
 
   if (stakeCurrency === undefined) {
     throw new Error(
       `Did not specify a stake currency for ${chainInfo.chainName}`
-    )
+    );
   }
 
   if (feeCurrencies.length === 0) {
     throw new Error(
       `Did not specify any fee currencies for ${chainInfo.chainName}`
-    )
+    );
   }
 
   return {
     ...chainInfo,
     currencies,
     stakeCurrency,
-    feeCurrencies,
-  }
+    feeCurrencies
+  };
 }
 
 const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
@@ -195,7 +195,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Osmosis1, // test: "osmo-test-4"
     chainName: 'Osmosis',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('osmo'),
     currencies: [
@@ -206,22 +206,22 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'osmosis',
         coinImageUrl: '/tokens/osmo.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
+        isFeeCurrency: true
       },
       {
         coinDenom: 'ION',
         coinMinimalDenom: 'uion',
         coinDecimals: 6,
         coinGeckoId: 'ion',
-        coinImageUrl: '/tokens/ion.png',
-      },
+        coinImageUrl: '/tokens/ion.png'
+      }
     ],
     gasPriceStep: {
       low: 0,
       average: 0,
-      high: 0.025,
+      high: 0.025
     },
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Cosmoshub4]: {
     rpc: 'https://rpc-cosmoshub.keplr.app',
@@ -229,7 +229,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Cosmoshub4,
     chainName: 'Cosmos Hub',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('cosmos'),
     currencies: [
@@ -240,10 +240,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'cosmos',
         coinImageUrl: '/tokens/atom.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Columbus5]: {
     rpc: 'https://rpc-columbus.keplr.app',
@@ -251,7 +251,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Columbus5,
     chainName: 'Terra Classic',
     bip44: {
-      coinType: 330,
+      coinType: 330
     },
     bech32Config: Bech32Address.defaultBech32Config('terra'),
     currencies: [
@@ -262,7 +262,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'terra-luna',
         coinImageUrl: '/tokens/lunc.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
+        isFeeCurrency: true
       },
       {
         coinDenom: 'USTC',
@@ -271,7 +271,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'terrausd',
         coinImageUrl: '/tokens/ustc.png',
         isFeeCurrency: true,
-        pegMechanism: 'algorithmic',
+        pegMechanism: 'algorithmic'
       },
       {
         coinDenom: 'KRTC',
@@ -279,15 +279,15 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinDecimals: 6,
         coinGeckoId: 'terra-krw',
         coinImageUrl: '/tokens/krtc.png',
-        pegMechanism: 'algorithmic',
-      },
+        pegMechanism: 'algorithmic'
+      }
     ],
     gasPriceStep: {
       low: 5.665,
       average: 5.665,
-      high: 10,
+      high: 10
     },
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx']
   },
   [ChainInfoID.Secret4]: {
     rpc: 'https://rpc-secret.keplr.app',
@@ -295,7 +295,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Secret4,
     chainName: 'Secret Network',
     bip44: {
-      coinType: 529,
+      coinType: 529
     },
     bech32Config: Bech32Address.defaultBech32Config('secret'),
     currencies: [
@@ -306,10 +306,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'secret',
         coinImageUrl: '/tokens/scrt.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx']
   },
   [ChainInfoID.Akashnet2]: {
     rpc: 'https://rpc-akash.keplr.app',
@@ -317,7 +317,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Akashnet2,
     chainName: 'Akash',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('akash'),
     currencies: [
@@ -328,10 +328,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'akash-network',
         coinImageUrl: '/tokens/akt.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'ibc-go', 'no-legacy-stdTx'],
+    features: ['stargate', 'ibc-transfer', 'ibc-go', 'no-legacy-stdTx']
   },
   [ChainInfoID.Regen1]: {
     rpc: 'https://rpc-regen.keplr.app',
@@ -348,10 +348,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinImageUrl: '/tokens/regen.png',
         coinGeckoId: 'regen',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx']
   },
   [ChainInfoID.Sentinelhub2]: {
     rpc: 'https://rpc-sentinel.keplr.app',
@@ -368,10 +368,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'sentinel',
         coinImageUrl: '/tokens/dvpn.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Core1]: {
     rpc: 'https://rpc-persistence.keplr.app',
@@ -379,7 +379,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Core1,
     chainName: 'Persistence',
     bip44: {
-      coinType: 750,
+      coinType: 750
     },
     bech32Config: Bech32Address.defaultBech32Config('persistence'),
     currencies: [
@@ -390,7 +390,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'persistence',
         coinImageUrl: '/tokens/xprt.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
+        isFeeCurrency: true
       },
       {
         coinDenom: 'PSTAKE',
@@ -398,10 +398,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
           'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444',
         coinDecimals: 18,
         coinGeckoId: 'pstake-finance',
-        coinImageUrl: '/tokens/pstake.png',
-      },
+        coinImageUrl: '/tokens/pstake.png'
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Irishub1]: {
     rpc: 'https://rpc-iris.keplr.app',
@@ -409,7 +409,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Irishub1,
     chainName: 'IRISnet',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('iaa'),
     currencies: [
@@ -420,10 +420,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'iris-network',
         coinImageUrl: '/tokens/iris.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx']
   },
   [ChainInfoID.CryptoOrgChainMainnet1]: {
     rpc: 'https://rpc-crypto-org.keplr.app/',
@@ -431,7 +431,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.CryptoOrgChainMainnet1,
     chainName: 'Crypto.org',
     bip44: {
-      coinType: 394,
+      coinType: 394
     },
     bech32Config: Bech32Address.defaultBech32Config('cro'),
     currencies: [
@@ -442,10 +442,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'crypto-com-chain',
         coinImageUrl: '/tokens/cro.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx']
   },
   [ChainInfoID.IovMainnetIbc]: {
     rpc: 'https://rpc-iov.keplr.app',
@@ -453,7 +453,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.IovMainnetIbc,
     chainName: 'Starname',
     bip44: {
-      coinType: 234,
+      coinType: 234
     },
     bech32Config: Bech32Address.defaultBech32Config('star'),
     currencies: [
@@ -464,10 +464,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'starname',
         coinImageUrl: '/tokens/iov.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer'],
+    features: ['stargate', 'ibc-transfer']
   },
   [ChainInfoID.Emoney3]: {
     rpc: 'https://rpc-emoney.keplr.app',
@@ -475,7 +475,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Emoney3,
     chainName: 'e-Money',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('emoney'),
     currencies: [
@@ -486,22 +486,22 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'e-money',
         coinImageUrl: '/tokens/ngm.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
+        isFeeCurrency: true
       },
       {
         coinDenom: 'EEUR',
         coinMinimalDenom: 'eeur',
         coinDecimals: 6,
         coinGeckoId: 'e-money-eur',
-        coinImageUrl: '/tokens/eeur.png',
-      },
+        coinImageUrl: '/tokens/eeur.png'
+      }
     ],
     gasPriceStep: {
       low: 1,
       average: 1,
-      high: 1,
+      high: 1
     },
-    features: ['stargate', 'ibc-transfer'],
+    features: ['stargate', 'ibc-transfer']
   },
   [ChainInfoID.Juno1]: {
     rpc: 'https://rpc-juno.itastakers.com',
@@ -509,7 +509,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Juno1,
     chainName: 'Juno',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('juno'),
     currencies: [
@@ -520,13 +520,13 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'juno-network',
         coinImageUrl: '/tokens/juno.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
     gasPriceStep: {
       low: 0.03,
       average: 0.04,
-      high: 0.05,
+      high: 0.05
     },
     features: [
       'stargate',
@@ -534,8 +534,8 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
       'ibc-go',
       'no-legacy-stdTx',
       'wasmd_0.24+',
-      'cosmwasm',
-    ],
+      'cosmwasm'
+    ]
   },
   [ChainInfoID.Uni3]: {
     rpc: 'https://rpc.uni.juno.deuslabs.fi',
@@ -543,7 +543,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Uni3,
     chainName: 'Juno Testnet',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('juno'),
     currencies: [
@@ -553,15 +553,15 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinDecimals: 6,
         coinImageUrl: '/tokens/juno.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
     gasPriceStep: {
       low: 0.03,
       average: 0.04,
-      high: 0.05,
+      high: 0.05
     },
-    features: ['ibc-transfer', 'ibc-go'],
+    features: ['ibc-transfer', 'ibc-go']
   },
   [ChainInfoID.Microtick1]: {
     rpc: 'https://rpc-microtick.keplr.app',
@@ -569,7 +569,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Microtick1,
     chainName: 'Microtick',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('micro'),
     currencies: [
@@ -580,10 +580,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'pool:utick',
         coinImageUrl: '/tokens/tick.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer'],
+    features: ['stargate', 'ibc-transfer']
   },
   [ChainInfoID.LikecoinMainnet2]: {
     rpc: 'https://mainnet-node.like.co/rpc',
@@ -591,7 +591,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.LikecoinMainnet2,
     chainName: 'LikeCoin',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('like'),
     currencies: [
@@ -602,10 +602,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'likecoin',
         coinImageUrl: '/tokens/like.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Impacthub3]: {
     rpc: 'https://rpc-impacthub.keplr.app',
@@ -613,7 +613,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Impacthub3,
     chainName: 'IXO',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('ixo'),
     currencies: [
@@ -624,10 +624,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'pool:uixo',
         coinImageUrl: '/tokens/ixo.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer'],
+    features: ['stargate', 'ibc-transfer']
   },
   [ChainInfoID.Bitcanna1]: {
     rpc: 'https://rpc.bitcanna.io',
@@ -635,7 +635,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Bitcanna1,
     chainName: 'BitCanna',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('bcna'),
     currencies: [
@@ -646,10 +646,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'bitcanna',
         coinImageUrl: '/tokens/bcna.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx']
   },
   [ChainInfoID.Bitsong2b]: {
     rpc: 'https://rpc.explorebitsong.com',
@@ -657,7 +657,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Bitsong2b,
     chainName: 'BitSong',
     bip44: {
-      coinType: 639,
+      coinType: 639
     },
     bech32Config: Bech32Address.defaultBech32Config('bitsong'),
     currencies: [
@@ -668,10 +668,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'pool:ubtsg',
         coinImageUrl: '/tokens/btsg.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Kichain2]: {
     rpc: 'https://rpc-mainnet.blockchain.ki',
@@ -679,7 +679,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Kichain2,
     chainName: 'Ki',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('ki'),
     currencies: [
@@ -690,10 +690,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'pool:uxki',
         coinImageUrl: '/tokens/xki.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer'],
+    features: ['stargate', 'ibc-transfer']
   },
   [ChainInfoID.Panacea3]: {
     rpc: 'https://rpc.gopanacea.org',
@@ -701,7 +701,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Panacea3,
     chainName: 'MediBloc',
     bip44: {
-      coinType: 371,
+      coinType: 371
     },
     bech32Config: Bech32Address.defaultBech32Config('panacea'),
     currencies: [
@@ -712,15 +712,15 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'medibloc',
         coinImageUrl: '/tokens/med.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
     gasPriceStep: {
       low: 5,
       average: 7,
-      high: 9,
+      high: 9
     },
-    features: ['stargate', 'ibc-transfer'],
+    features: ['stargate', 'ibc-transfer']
   },
   [ChainInfoID.Bostrom]: {
     rpc: 'https://rpc.bostrom.cybernode.ai',
@@ -728,7 +728,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Bostrom,
     chainName: 'Bostrom',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('bostrom'),
     currencies: [
@@ -739,10 +739,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'bostrom',
         coinImageUrl: '/tokens/boot.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx']
   },
   [ChainInfoID.Comdex1]: {
     rpc: 'https://rpc.comdex.one',
@@ -750,7 +750,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Comdex1,
     chainName: 'Comdex',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('comdex'),
     currencies: [
@@ -761,10 +761,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'comdex',
         coinImageUrl: '/tokens/cmdx.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx']
   },
   [ChainInfoID.CheqdMainnet1]: {
     rpc: 'https://rpc.cheqd.net',
@@ -772,7 +772,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.CheqdMainnet1,
     chainName: 'cheqd',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('cheqd'),
     currencies: [
@@ -783,15 +783,15 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'cheqd-network',
         coinImageUrl: '/tokens/cheq.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
     gasPriceStep: {
       low: 25,
       average: 50,
-      high: 100,
+      high: 100
     },
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx']
   },
   [ChainInfoID.Stargaze1]: {
     rpc: 'https://rpc.stargaze-apis.com',
@@ -799,7 +799,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Stargaze1,
     chainName: 'Stargaze',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('stars'),
     currencies: [
@@ -810,10 +810,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'pool:ustars',
         coinImageUrl: '/tokens/stars.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx']
   },
   [ChainInfoID.Chihuahua1]: {
     rpc: 'https://rpc.chihuahua.wtf',
@@ -821,7 +821,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Chihuahua1,
     chainName: 'Chihuahua',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('chihuahua'),
     currencies: [
@@ -832,15 +832,15 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'pool:uhuahua',
         coinImageUrl: '/tokens/huahua.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
     gasPriceStep: {
       low: 0.025,
       average: 0.03,
-      high: 0.035,
+      high: 0.035
     },
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx']
   },
   [ChainInfoID.LumNetwork1]: {
     rpc: 'https://node0.mainnet.lum.network/rpc',
@@ -848,7 +848,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.LumNetwork1,
     chainName: 'Lum Network',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('lum'),
     currencies: [
@@ -859,10 +859,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'pool:ulum',
         coinImageUrl: '/tokens/lum.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Vidulum1]: {
     rpc: 'https://mainnet-rpc.vidulum.app',
@@ -870,7 +870,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Vidulum1,
     chainName: 'Vidulum',
     bip44: {
-      coinType: 370,
+      coinType: 370
     },
     bech32Config: Bech32Address.defaultBech32Config('vdl'),
     currencies: [
@@ -881,10 +881,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'vidulum',
         coinImageUrl: '/tokens/vdl.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.DesmosMainnet]: {
     rpc: 'https://rpc.mainnet.desmos.network',
@@ -892,7 +892,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.DesmosMainnet,
     chainName: 'Desmos',
     bip44: {
-      coinType: 852,
+      coinType: 852
     },
     bech32Config: Bech32Address.defaultBech32Config('desmos'),
     currencies: [
@@ -903,10 +903,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'pool:udsm',
         coinImageUrl: '/tokens/dsm.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Dig1]: {
     rpc: 'https://rpc-1-dig.notional.ventures',
@@ -914,7 +914,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Dig1,
     chainName: 'Dig',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('dig'),
     currencies: [
@@ -925,15 +925,15 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'pool:udig',
         coinImageUrl: '/tokens/dig.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
     gasPriceStep: {
       low: 0.025,
       average: 0.03,
-      high: 0.035,
+      high: 0.035
     },
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Sommelier3]: {
     rpc: 'https://rpc-sommelier.keplr.app',
@@ -941,7 +941,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Sommelier3,
     chainName: 'Sommelier',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('somm'),
     currencies: [
@@ -952,10 +952,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'pool:usomm',
         coinImageUrl: '/tokens/somm.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Sifchain1]: {
     rpc: 'https://rpc.sifchain.finance',
@@ -963,7 +963,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Sifchain1,
     chainName: 'Sifchain',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('sif'),
     currencies: [
@@ -974,10 +974,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'sifchain',
         coinImageUrl: '/tokens/rowan.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer'],
+    features: ['stargate', 'ibc-transfer']
   },
   [ChainInfoID.LaoziMainnet]: {
     rpc: 'https://rpc.laozi3.bandchain.org',
@@ -985,7 +985,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.LaoziMainnet,
     chainName: 'BandChain',
     bip44: {
-      coinType: 494,
+      coinType: 494
     },
     bech32Config: Bech32Address.defaultBech32Config('band'),
     currencies: [
@@ -996,10 +996,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'band-protocol',
         coinImageUrl: '/tokens/band.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx']
   },
   [ChainInfoID.Darchub]: {
     rpc: 'https://node1.konstellation.tech:26657',
@@ -1007,7 +1007,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Darchub,
     chainName: 'Konstellation',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('darc'),
     currencies: [
@@ -1018,10 +1018,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'pool:udarc',
         coinImageUrl: '/tokens/darc.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx']
   },
   [ChainInfoID.Umee1]: {
     rpc: 'https://rpc.aphrodite.main.network.umee.cc',
@@ -1029,7 +1029,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Umee1,
     chainName: 'Umee',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('umee'),
     currencies: [
@@ -1040,10 +1040,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'pool:uumee',
         coinImageUrl: '/tokens/umee.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx']
   },
   [ChainInfoID.GravityBridge3]: {
     rpc: 'https://gravitychain.io:26657',
@@ -1051,7 +1051,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.GravityBridge3,
     chainName: 'Gravity Bridge',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('gravity'),
     currencies: [
@@ -1062,28 +1062,28 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'pool:ugraviton',
         coinImageUrl: '/tokens/grav.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
+        isFeeCurrency: true
       },
       {
         coinDenom: 'PSTAKE',
         coinMinimalDenom: 'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006',
         coinDecimals: 18,
         coinGeckoId: 'pstake-finance',
-        coinImageUrl: '/tokens/pstake.png',
+        coinImageUrl: '/tokens/pstake.png'
       },
       {
         coinDenom: 'WBTC.grv',
         coinMinimalDenom: 'gravity0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599',
         coinDecimals: 8,
         coinGeckoId: 'wrapped-bitcoin',
-        coinImageUrl: '/tokens/gwbtc.png',
+        coinImageUrl: '/tokens/gwbtc.png'
       },
       {
         coinDenom: 'WETH.grv',
         coinMinimalDenom: 'gravity0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
         coinDecimals: 18,
         coinGeckoId: 'ethereum',
-        coinImageUrl: '/tokens/gweth.png',
+        coinImageUrl: '/tokens/gweth.png'
       },
       {
         coinDenom: 'USDC.grv',
@@ -1091,7 +1091,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinDecimals: 6,
         coinGeckoId: 'usd-coin',
         coinImageUrl: '/tokens/gusdc.png',
-        pegMechanism: 'collateralized',
+        pegMechanism: 'collateralized'
       },
       {
         coinDenom: 'DAI.grv',
@@ -1099,7 +1099,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinDecimals: 18,
         coinGeckoId: 'dai',
         coinImageUrl: '/tokens/gdai.png',
-        pegMechanism: 'collateralized',
+        pegMechanism: 'collateralized'
       },
       {
         coinDenom: 'USDT.grv',
@@ -1107,15 +1107,15 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinDecimals: 6,
         coinGeckoId: 'tether',
         coinImageUrl: '/tokens/gusdt.png',
-        pegMechanism: 'collateralized',
-      },
+        pegMechanism: 'collateralized'
+      }
     ],
     gasPriceStep: {
       low: 0,
       average: 0,
-      high: 0.035,
+      high: 0.035
     },
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Mainnet3]: {
     rpc: 'https://poseidon.mainnet.decentr.xyz',
@@ -1123,7 +1123,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Mainnet3,
     chainName: 'Decentr',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('decentr'),
     currencies: [
@@ -1134,10 +1134,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'decentr',
         coinImageUrl: '/tokens/dec.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx']
   },
   [ChainInfoID.Shentu22]: {
     rpc: 'https://shenturpc.certikpowered.info',
@@ -1145,7 +1145,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Shentu22,
     chainName: 'Certik',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('certik'),
     currencies: [
@@ -1156,10 +1156,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'certik',
         coinImageUrl: '/tokens/ctk.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Carbon1]: {
     rpc: 'https://tm-api.carbon.network',
@@ -1167,7 +1167,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Carbon1,
     chainName: 'Carbon',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('swth'),
     currencies: [
@@ -1178,15 +1178,15 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'switcheo',
         coinImageUrl: '/tokens/swth.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
     gasPriceStep: {
       low: 769.23077,
       average: 769.23077,
-      high: 769.23077,
+      high: 769.23077
     },
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Injective1]: {
     rpc: 'https://public.api.injective.network',
@@ -1194,7 +1194,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Injective1,
     chainName: 'Injective',
     bip44: {
-      coinType: 60,
+      coinType: 60
     },
     bech32Config: Bech32Address.defaultBech32Config('inj'),
     currencies: [
@@ -1205,15 +1205,15 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'injective-protocol',
         coinImageUrl: '/tokens/inj.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
     gasPriceStep: {
       low: 0.0005,
       average: 0.0007,
-      high: 0.0009,
+      high: 0.0009
     },
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.CerberusChain1]: {
     rpc: 'https://rpc.cerberus.zone:26657',
@@ -1221,7 +1221,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.CerberusChain1,
     chainName: 'Cerberus',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('cerberus'),
     currencies: [
@@ -1232,10 +1232,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'cerberus-2',
         coinImageUrl: '/tokens/crbrus.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Fetchhub4]: {
     rpc: 'https://rpc-fetchhub.fetch.ai:443',
@@ -1243,7 +1243,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Fetchhub4,
     chainName: 'Fetch.ai',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('fetch'),
     currencies: [
@@ -1254,15 +1254,15 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'fetch-ai',
         coinImageUrl: '/tokens/fet.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
     gasPriceStep: {
       low: 0.025,
       average: 0.025,
-      high: 0.035,
+      high: 0.035
     },
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Mantle1]: {
     rpc: 'https://rpc.assetmantle.one/',
@@ -1270,7 +1270,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Mantle1,
     chainName: 'AssetMantle',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('mantle'),
     currencies: [
@@ -1281,10 +1281,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'pool:umntl',
         coinImageUrl: '/tokens/mntl.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.PioMainnet1]: {
     rpc: 'https://rpc.provenance.io/',
@@ -1292,7 +1292,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.PioMainnet1,
     chainName: 'Provenance',
     bip44: {
-      coinType: 505,
+      coinType: 505
     },
     bech32Config: Bech32Address.defaultBech32Config('pb'),
     currencies: [
@@ -1303,15 +1303,15 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinDecimals: 9,
         coinImageUrl: '/tokens/hash.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
     gasPriceStep: {
       low: 1905,
       average: 2100,
-      high: 2500,
+      high: 2500
     },
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Galaxy1]: {
     rpc: 'https://rpc.galaxychain.zone',
@@ -1319,7 +1319,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Galaxy1,
     chainName: 'Galaxy',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('galaxy'),
     currencies: [
@@ -1330,15 +1330,15 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'pool:uglx',
         coinImageUrl: '/tokens/glx.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
     gasPriceStep: {
       low: 0.025,
       average: 0.025,
-      high: 0.035,
+      high: 0.035
     },
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Meme1]: {
     rpc: 'https://rpc-meme-1.meme.sx:443',
@@ -1346,7 +1346,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Meme1,
     chainName: 'Meme',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('meme'),
     currencies: [
@@ -1357,15 +1357,15 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'pool:umeme',
         coinImageUrl: '/tokens/meme.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
     gasPriceStep: {
       low: 0.025,
       average: 0.025,
-      high: 0.035,
+      high: 0.035
     },
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Evmos_9001_2]: {
     rpc: 'https://rpc-evmos.keplr.app/',
@@ -1373,7 +1373,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Evmos_9001_2,
     chainName: 'Evmos',
     bip44: {
-      coinType: 60,
+      coinType: 60
     },
     bech32Config: Bech32Address.defaultBech32Config('evmos'),
     currencies: [
@@ -1384,15 +1384,15 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'evmos',
         coinImageUrl: '/tokens/evmos.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
     gasPriceStep: {
       low: 10000000000,
       average: 25000000000,
-      high: 40000000000,
+      high: 40000000000
     },
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Phoenix1]: {
     rpc: 'https://rpc.terrav2.ccvalidators.com/',
@@ -1400,7 +1400,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Phoenix1,
     chainName: 'Terra 2.0',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('terra'),
     currencies: [
@@ -1411,15 +1411,15 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'terra-luna-2',
         coinImageUrl: '/tokens/luna.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
     gasPriceStep: {
       low: 0.15,
       average: 0.2,
-      high: 0.25,
+      high: 0.25
     },
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx']
   },
   [ChainInfoID.Titan1]: {
     rpc: 'https://rpcapi.rizon.world/',
@@ -1427,7 +1427,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Titan1,
     chainName: 'Rizon',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('rizon'),
     currencies: [
@@ -1438,15 +1438,15 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'rizon',
         coinImageUrl: '/tokens/atolo.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
     gasPriceStep: {
       low: 0.025,
       average: 0.025,
-      high: 0.035,
+      high: 0.035
     },
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Kava_2222_10]: {
     rpc: 'https://rpc-kava.keplr.app',
@@ -1454,7 +1454,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Kava_2222_10,
     chainName: 'Kava',
     bip44: {
-      coinType: 459,
+      coinType: 459
     },
     bech32Config: Bech32Address.defaultBech32Config('kava'),
     currencies: [
@@ -1465,24 +1465,24 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinGeckoId: 'kava',
         coinImageUrl: '/tokens/kava.png',
         isStakeCurrency: true,
-        isFeeCurrency: true,
+        isFeeCurrency: true
       },
       {
         coinDenom: 'HARD',
         coinMinimalDenom: 'hard',
         coinDecimals: 6,
         coinGeckoId: 'kava-lend',
-        coinImageUrl: '/tokens/hard.svg',
+        coinImageUrl: '/tokens/hard.svg'
       },
       {
         coinDenom: 'SWP',
         coinMinimalDenom: 'swp',
         coinDecimals: 6,
         coinGeckoId: 'kava-swap',
-        coinImageUrl: '/tokens/swp.svg',
-      },
+        coinImageUrl: '/tokens/swp.svg'
+      }
     ],
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
   },
   [ChainInfoID.Genesis_29_2]: {
     rpc: 'https://26657.genesisl1.org',
@@ -1490,7 +1490,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     chainId: ChainInfoID.Genesis_29_2,
     chainName: 'GenesisL1',
     bip44: {
-      coinType: 118,
+      coinType: 118
     },
     bech32Config: Bech32Address.defaultBech32Config('genesis'),
     currencies: [
@@ -1501,24 +1501,24 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         //coinGeckoId: "pool:el1",
         coinImageUrl: '/tokens/l1.svg',
         isStakeCurrency: true,
-        isFeeCurrency: true,
-      },
+        isFeeCurrency: true
+      }
     ],
     gasPriceStep: {
       low: 999999999,
       average: 1000000000,
-      high: 1000000001,
+      high: 1000000001
     },
-    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go'],
-  },
-}
+    features: ['stargate', 'ibc-transfer', 'no-legacy-stdTx', 'ibc-go']
+  }
+};
 export const ChainInfoMap = Object.entries(SimpleChainInfoList).reduce(
   (curr, [id, simplifiedChainInfo]) => ({
     ...curr,
-    [id]: createKeplrChainInfo(simplifiedChainInfo),
+    [id]: createKeplrChainInfo(simplifiedChainInfo)
   }),
   {} as Record<`${ChainInfoID}`, ChainInfo>
-)
+);
 
 export const getChainInfo = async (
   chainId: ChainInfo['chainId'],
@@ -1527,13 +1527,13 @@ export const getChainInfo = async (
   const overrides =
     typeof chainInfoOverrides === 'function'
       ? await chainInfoOverrides()
-      : chainInfoOverrides
+      : chainInfoOverrides;
 
   const chainInfo: ChainInfo | undefined =
     // Check overrides for chain info.
     overrides?.find((info) => info.chainId === chainId) ||
     // Use embedded map as fallback.
-    ChainInfoMap[chainId]
+    ChainInfoMap[chainId];
 
   if (!chainInfo) {
     const availableChainIds = [
@@ -1541,14 +1541,14 @@ export const getChainInfo = async (
       ...Object.keys(ChainInfoMap).filter(
         // Don't list ID in overrides to prevent duplicates.
         (key) => !overrides?.some((info) => info.chainId === key)
-      ),
-    ]
+      )
+    ];
     throw new Error(
       `Chain ID "${chainId}" does not exist among provided ChainInfo objects. Available Chain IDs: ${availableChainIds.join(
         ','
       )}`
-    )
+    );
   }
 
-  return chainInfo
-}
+  return chainInfo;
+};

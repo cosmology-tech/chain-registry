@@ -1,5 +1,5 @@
-import { assets, ibc } from 'chain-registry';
-
+import assets from '../../../__fixtures__/assets.json';
+import ibc from '../../../__fixtures__/ibc.json';
 import { getIbcDenomByBase } from '../src';
 
 it('ATOM on stargaze', () => {
