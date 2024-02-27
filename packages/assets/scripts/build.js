@@ -9,6 +9,8 @@ const NON_COSMOS_NETWORK_TYPE = 'noncosmos';
 const chainNetworkMap = {};
 const networkChainMap = {};
 
+console.log(chains.filter(Boolean));
+
 chains.filter(Boolean).forEach((chain) => {
   if (!chain) {
     console.log('problematic data');
