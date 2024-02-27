@@ -442,7 +442,7 @@ chainPaths.forEach((file) => {
     delete data.peers;
 
     if (!data.chain_name) {
-      console.log(file);
+      console.log(`problematic file: ${file}`);
       return;
     }
 

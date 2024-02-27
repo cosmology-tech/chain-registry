@@ -9,18 +9,11 @@ const NON_COSMOS_NETWORK_TYPE = 'noncosmos';
 const chainNetworkMap = {};
 const networkChainMap = {};
 
-console.log(chains);
-
-chains.filter(Boolean).forEach((chain) => {
-  if (!chain) {
-    console.log('problematic data');
-    return;
-  }
-
+chains.forEach((chain) => {
   chainNetworkMap[chain.chain_name] = chain.network_type;
 });
 
-const asset_lists = assets.filter(Boolean).reduce((m, { chain_name }) => {
+const asset_lists = assets.reduce((m, { chain_name }) => {
   return [...m, ...getAssetLists(chain_name, ibc, assets)];
 }, []);
 
