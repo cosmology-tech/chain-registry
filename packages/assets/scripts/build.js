@@ -10,6 +10,11 @@ const chainNetworkMap = {};
 const networkChainMap = {};
 
 chains.forEach((chain) => {
+  if (!chain) {
+    console.log('problemat data');
+    return;
+  }
+
   chainNetworkMap[chain.chain_name] = chain.network_type;
 });
 
