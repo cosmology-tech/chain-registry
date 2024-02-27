@@ -404,14 +404,16 @@ const NON_INFO_DIRS = ['_memo_keys', '_scripts', '_template', '.github'];
 
 const chainPaths = glob(`${__dirname}/../chain-registry/**/chain.json`).filter(
   (a) => {
-    let dir = a.split('chain-registry/chain-registry')[1];
+    const splitedDirs = a.split('chain-registry/chain-registry');
+    let dir = splitedDirs.pop();
     dir = path.basename(path.dirname(dir));
     return !NON_INFO_DIRS.includes(dir);
   }
 );
 
 const paths = glob(`${__dirname}/../chain-registry/**/*.json`).filter((a) => {
-  const filePath = a.split('chain-registry/chain-registry')[1];
+  const splitedDirs = a.split('chain-registry/chain-registry');
+  const filePath = splitedDirs.pop();
   const dir = path.basename(path.dirname(filePath));
   return (
     !NON_INFO_DIRS.includes(dir) && path.basename(filePath) !== 'chain.json'
