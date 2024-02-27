@@ -441,6 +441,11 @@ chainPaths.forEach((file) => {
     }
     delete data.peers;
 
+    if (!data.chain_name) {
+      console.log(file);
+      return;
+    }
+
     initChainBlock(result, data.network_type, data.chain_name);
 
     result[data.network_type][data.chain_name].chain = data;
