@@ -17,13 +17,12 @@ jobs:
       - run: |
           yarn
           yarn bootstrap
-          yarn build
           cd packages/chain-registry
-          yarn codegen
+          yarn build:pkg
           yarn build
           cd ../../
           cd packages/assets
-          yarn codegen
+          yarn build:pkg
           cd ../../
           cd packages/osmosis
           yarn codegen
