@@ -23,7 +23,7 @@ jobs:
           yarn build
           cd ../../
           cd packages/assets
-          yarn build:pkg
+          yarn codegen
           cd ../../
           cd packages/osmosis
           yarn codegen
