@@ -44,6 +44,10 @@ const info: Chain = {
         provider: 'Lum Foundation'
       },
       {
+        address: 'https://lum.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://lumnetwork-rpc.lavenderfive.com/',
         provider: 'Lavender.Five Nodes 🐝'
       },
@@ -70,6 +74,10 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
+        address: 'https://lum.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://lum-api.ibs.team',
         provider: 'Inter Blockchain Services'
       },
@@ -86,6 +94,10 @@ const info: Chain = {
       {
         address: 'lumnetwork-grpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'lum.grpc.m.stavr.tech:2277',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'lum-mainnet-grpc.autostake.com:443',
@@ -114,6 +126,11 @@ const info: Chain = {
       url: 'https://www.mintscan.io/lum',
       tx_page: 'https://www.mintscan.io/lum/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/lum/accounts/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/LumNetwork-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/LumNetwork-Mainnet/tx/${txHash}'
     },
     {
       kind: 'lum-network',

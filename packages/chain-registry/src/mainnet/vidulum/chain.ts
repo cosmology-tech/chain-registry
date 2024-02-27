@@ -42,6 +42,10 @@ const info: Chain = {
         provider: 'vidulum'
       },
       {
+        address: 'https://vidulum.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://rpc-vidulum-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
       }
@@ -56,6 +60,10 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
+        address: 'https://vidulum.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://api-vdl.nodine.id/',
         provider: 'Nodine.ID'
       }
@@ -64,6 +72,10 @@ const info: Chain = {
       {
         address: 'grpc-vidulum-ia.cosmosia.notional.ventures:443',
         provider: 'Notional'
+      },
+      {
+        address: 'vidulum.grpc.m.stavr.tech:2040',
+        provider: '🔥STAVR🔥'
       }
     ]
   },
@@ -77,6 +89,11 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.pub/vidulum',
       tx_page: 'https://ping.pub/vidulum/tx/${txHash}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Vidulum-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Vidulum-Mainnet/tx/${txHash}'
     },
     {
       kind: 'atomscan',

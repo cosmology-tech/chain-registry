@@ -2829,7 +2829,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/91AC85360AFA500007DC254541FCB63E1D9BF0B7371EB7AA1F1EACDE8C817E75',
+            'ibc/5708C11E2FC997BCBB804E31660C09C8936603CB6A2DFB642A84DE6E5E2D462B',
           exponent: 0,
           aliases: ['utest']
         },
@@ -2840,7 +2840,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'sdk.coin',
-      base: 'ibc/91AC85360AFA500007DC254541FCB63E1D9BF0B7371EB7AA1F1EACDE8C817E75',
+      base: 'ibc/5708C11E2FC997BCBB804E31660C09C8936603CB6A2DFB642A84DE6E5E2D462B',
       name: 'Test',
       display: 'test',
       symbol: 'TEST',
@@ -2848,12 +2848,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-94',
+            channel_id: 'channel-5',
             base_denom: 'utest',
             chain_name: 'gateway'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-94'
           }
         }
       ]
@@ -2863,7 +2863,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/52C4711AB2A13D317A90E6C431F07D16AC8B54CAC007268E3B598F7115FE9DD4',
+            'ibc/BD64D15645957E0B455AC138E47558081847160A98FC908BFB61EC3C1DFF02DD',
           exponent: 0,
           aliases: ['uworm']
         },
@@ -2874,7 +2874,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'sdk.coin',
-      base: 'ibc/52C4711AB2A13D317A90E6C431F07D16AC8B54CAC007268E3B598F7115FE9DD4',
+      base: 'ibc/BD64D15645957E0B455AC138E47558081847160A98FC908BFB61EC3C1DFF02DD',
       name: 'Worm',
       display: 'worm',
       symbol: 'WORM',
@@ -2882,12 +2882,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-94',
+            channel_id: 'channel-5',
             base_denom: 'uworm',
             chain_name: 'gateway'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-94'
           }
         }
       ]
@@ -2898,7 +2898,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/1164422FD7F9E2ABF4212ED7E39CFA52A2C270ED44A71FFB2DFD238B553A07CD',
+            'ibc/46B84AA4117FD41E8AF1171BD4D49981F45E0407DC5D38A1A9FE07607A98801F',
           exponent: 0,
           aliases: [
             'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/46YEtoSN1AcwgGSRoWruoS6bnVh8XpMp5aQTpKohCJYh'
@@ -2912,7 +2912,7 @@ const assets: AssetList = {
       ],
       address:
         'wormhole19hlynxzedrlqv99v6qscww7d3crhl86qtd0vprpltg5g9xx6jk9q6ya33y',
-      base: 'ibc/1164422FD7F9E2ABF4212ED7E39CFA52A2C270ED44A71FFB2DFD238B553A07CD',
+      base: 'ibc/46B84AA4117FD41E8AF1171BD4D49981F45E0407DC5D38A1A9FE07607A98801F',
       display: 'wormhole/46YEtoSN1AcwgGSRoWruoS6bnVh8XpMp5aQTpKohCJYh/8',
       name: 'Sui (Wormhole)',
       symbol: 'SUI',
@@ -2920,13 +2920,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-94',
+            channel_id: 'channel-5',
             base_denom:
               'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/46YEtoSN1AcwgGSRoWruoS6bnVh8XpMp5aQTpKohCJYh',
             chain_name: 'gateway'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-94'
           }
         }
       ],
@@ -2949,7 +2949,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/318297D349E589C3BEE55A61B6BA9667EEA953A4239E6212F0B1CA02DEAC8565',
+            'ibc/4442A8E0D487A49E76EA6606F5DADCF8D0DBDD8499112340C964970DB745EDA2',
           exponent: 0,
           aliases: [
             'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5BWqpR48Lubd55szM5i62zK7TFkddckhbT48yy6mNbDp'
@@ -2963,7 +2963,7 @@ const assets: AssetList = {
       ],
       address:
         'wormhole18csycs4vm6varkp00apuqlsm7v4twg8jsljk8wfdd7cghr7g4rtslwqndm',
-      base: 'ibc/318297D349E589C3BEE55A61B6BA9667EEA953A4239E6212F0B1CA02DEAC8565',
+      base: 'ibc/4442A8E0D487A49E76EA6606F5DADCF8D0DBDD8499112340C964970DB745EDA2',
       display: 'wormhole/5BWqpR48Lubd55szM5i62zK7TFkddckhbT48yy6mNbDp/8',
       name: 'Wrapped Ether (Wormhole)',
       symbol: 'WETH',
@@ -2971,13 +2971,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-94',
+            channel_id: 'channel-5',
             base_denom:
               'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5BWqpR48Lubd55szM5i62zK7TFkddckhbT48yy6mNbDp',
             chain_name: 'gateway'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-94'
           }
         }
       ],
@@ -2998,7 +2998,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/628CE641378B0A05466ADB54879524707D61EA02BE33EEFF0934EB4D10A4E900',
+            'ibc/0D65FA125D4F4318E67F15019F0B791D568D28DF39D22545AC95F557EC9B1BE0',
           exponent: 0,
           aliases: [
             'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5TSQTEhJ5Q6r1YqCmCxTRSPiV2pGx5rZUQf6g2XH4e1b'
@@ -3012,7 +3012,7 @@ const assets: AssetList = {
       ],
       address:
         'wormhole1gg6f95cymcfrfzhpek7cf5wl53t5kng52cd2m0krgdlu8k58vd8qezy8pt',
-      base: 'ibc/628CE641378B0A05466ADB54879524707D61EA02BE33EEFF0934EB4D10A4E900',
+      base: 'ibc/0D65FA125D4F4318E67F15019F0B791D568D28DF39D22545AC95F557EC9B1BE0',
       display: 'wormhole/5TSQTEhJ5Q6r1YqCmCxTRSPiV2pGx5rZUQf6g2XH4e1b/8',
       name: 'Wrapped liquid staked Ether 2.0 (Wormhole)',
       symbol: 'wstETH',
@@ -3020,13 +3020,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-94',
+            channel_id: 'channel-5',
             base_denom:
               'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5TSQTEhJ5Q6r1YqCmCxTRSPiV2pGx5rZUQf6g2XH4e1b',
             chain_name: 'gateway'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-94'
           }
         }
       ],
@@ -3049,7 +3049,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/DAA5576C3FFB36ED7040C3CEACF13B04F9488D31F5A5FF0C9835EFF9F99F8334',
+            'ibc/64A2ACA8FA70CA31C679AFE096AA34614B2D38144FFADC2DC8CF5FCB29438A02',
           exponent: 0,
           aliases: [
             'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5wS2fGojbL9RhGEAeQBdkHPUAciYDxjDTMYvdf9aDn2r'
@@ -3063,7 +3063,7 @@ const assets: AssetList = {
       ],
       address:
         'wormhole1f9sxjn0qu8xylcpzlvnhrefnatndqxnrajfrnr5h97hegnmsdqhsh6juc0',
-      base: 'ibc/DAA5576C3FFB36ED7040C3CEACF13B04F9488D31F5A5FF0C9835EFF9F99F8334',
+      base: 'ibc/64A2ACA8FA70CA31C679AFE096AA34614B2D38144FFADC2DC8CF5FCB29438A02',
       display: 'wormhole/5wS2fGojbL9RhGEAeQBdkHPUAciYDxjDTMYvdf9aDn2r/8',
       name: 'Aptos Coin (Wormhole)',
       symbol: 'APT',
@@ -3071,13 +3071,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-94',
+            channel_id: 'channel-5',
             base_denom:
               'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5wS2fGojbL9RhGEAeQBdkHPUAciYDxjDTMYvdf9aDn2r',
             chain_name: 'gateway'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-94'
           }
         }
       ],
@@ -3100,7 +3100,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/8D447039256D78F8032E4CC1254B3A6CD186B04CE121CE1D74CB5389890E908E',
+            'ibc/C9072A294F5649D64E87A6998DD750576881E454CACCDAF7376EFC0FA243808D',
           exponent: 0,
           aliases: [
             'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/8iuAc6DSeLvi2JDUtwJxLytsZT8R19itXebZsNReLLNi'
@@ -3114,7 +3114,7 @@ const assets: AssetList = {
       ],
       address:
         'wormhole1w27ekqvvtzfanfxnkw4jx2f8gdfeqwd3drkee3e64xat6phwjg0savgmhw',
-      base: 'ibc/8D447039256D78F8032E4CC1254B3A6CD186B04CE121CE1D74CB5389890E908E',
+      base: 'ibc/C9072A294F5649D64E87A6998DD750576881E454CACCDAF7376EFC0FA243808D',
       display: 'wormhole/8iuAc6DSeLvi2JDUtwJxLytsZT8R19itXebZsNReLLNi/6',
       name: 'Tether USD (Wormhole)',
       symbol: 'USDT',
@@ -3122,13 +3122,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-94',
+            channel_id: 'channel-5',
             base_denom:
               'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/8iuAc6DSeLvi2JDUtwJxLytsZT8R19itXebZsNReLLNi',
             chain_name: 'gateway'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-94'
           }
         }
       ],
@@ -3151,7 +3151,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/55EB94ABCC1D6155544E91E54F96EAB1DD2C9B25E27D081F853ECF0C1C5F3CB1',
+            'ibc/4443218F584A7AB2DFBCF93872D6E5B6967A11C53515DDF45A2CF387C54BD73A',
           exponent: 0,
           aliases: [
             'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/8sYgCzLRJC3J7qPn2bNbx6PiGcarhyx8rBhVaNnfvHCA'
@@ -3165,7 +3165,7 @@ const assets: AssetList = {
       ],
       address:
         'wormhole1wn625s4jcmvk0szpl85rj5azkfc6suyvf75q6vrddscjdphtve8sca0pvl',
-      base: 'ibc/55EB94ABCC1D6155544E91E54F96EAB1DD2C9B25E27D081F853ECF0C1C5F3CB1',
+      base: 'ibc/4443218F584A7AB2DFBCF93872D6E5B6967A11C53515DDF45A2CF387C54BD73A',
       display: 'wormhole/8sYgCzLRJC3J7qPn2bNbx6PiGcarhyx8rBhVaNnfvHCA/8',
       name: 'Wrapped SOL (Wormhole)',
       symbol: 'SOL',
@@ -3173,13 +3173,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-94',
+            channel_id: 'channel-5',
             base_denom:
               'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/8sYgCzLRJC3J7qPn2bNbx6PiGcarhyx8rBhVaNnfvHCA',
             chain_name: 'gateway'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-94'
           }
         }
       ],
@@ -3202,7 +3202,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/37A76BE19C7E0E928AA564CCF00D1498A326A10841DA6DCA7F4935A3D1CC17C3',
+            'ibc/04FFDEB203D15080B4703F36166CBA1C83471E73D43DD85B979236DCC6C5AF3D',
           exponent: 0,
           aliases: [
             'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/95mnwzvJZJ3fKz77xfGN2nR5to9pZmH8YNvaxgLgw5AR'
@@ -3216,7 +3216,7 @@ const assets: AssetList = {
       ],
       address:
         'wormhole10qt8wg0n7z740ssvf3urmvgtjhxpyp74hxqvqt7z226gykuus7eq9mpu8u',
-      base: 'ibc/37A76BE19C7E0E928AA564CCF00D1498A326A10841DA6DCA7F4935A3D1CC17C3',
+      base: 'ibc/04FFDEB203D15080B4703F36166CBA1C83471E73D43DD85B979236DCC6C5AF3D',
       display: 'wormhole/95mnwzvJZJ3fKz77xfGN2nR5to9pZmH8YNvaxgLgw5AR/5',
       name: 'Bonk (Wormhole)',
       symbol: 'Bonk',
@@ -3224,13 +3224,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-94',
+            channel_id: 'channel-5',
             base_denom:
               'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/95mnwzvJZJ3fKz77xfGN2nR5to9pZmH8YNvaxgLgw5AR',
             chain_name: 'gateway'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-94'
           }
         }
       ],
@@ -3253,7 +3253,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/445E5B1423AE2A9BDAA52C2B1BFB10AFDE8E14E0C4F51B33B847E9002CE76AB6',
+            'ibc/46C5DA1CB61C5BAA8730ABA467ADD58DE0333B075CACE28BC87E64AE8C9CA051',
           exponent: 0,
           aliases: [
             'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/BGkuAcga2WArUghF8L6kt6uCAhAzrxmn1QcbQqi5r5bd'
@@ -3267,7 +3267,7 @@ const assets: AssetList = {
       ],
       address:
         'wormhole1nz0r0au8aj6dc00wmm3ufy4g4k86rjzlr8wkf92cktdlps5lgfcqxnx9yk',
-      base: 'ibc/445E5B1423AE2A9BDAA52C2B1BFB10AFDE8E14E0C4F51B33B847E9002CE76AB6',
+      base: 'ibc/46C5DA1CB61C5BAA8730ABA467ADD58DE0333B075CACE28BC87E64AE8C9CA051',
       display: 'wormhole/BGkuAcga2WArUghF8L6kt6uCAhAzrxmn1QcbQqi5r5bd/8',
       name: 'Wrapped BTC (Wormhole)',
       symbol: 'WBTC',
@@ -3275,13 +3275,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-94',
+            channel_id: 'channel-5',
             base_denom:
               'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/BGkuAcga2WArUghF8L6kt6uCAhAzrxmn1QcbQqi5r5bd',
             chain_name: 'gateway'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-94'
           }
         }
       ],
@@ -3306,7 +3306,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/C15A4477380A06FA1A89BA3541B51F274A1151656F4D20E152BF8312F5071C66',
+            'ibc/5EFE20DD152EB85A1EDF2A5D8CFD75B6698495A1ED9284C54373D25E9DFA6C58',
           exponent: 0,
           aliases: [
             'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/BhqTYfQogyt7jX7cx7x8uHEQP1x9fdtdBZtK4Swghgpw'
@@ -3320,7 +3320,7 @@ const assets: AssetList = {
       ],
       address:
         'wormhole1nu9wf9dw384attnpu0pwfet5fajn05w2ex4r07mghvk3xcwrt2yq5uutp5',
-      base: 'ibc/C15A4477380A06FA1A89BA3541B51F274A1151656F4D20E152BF8312F5071C66',
+      base: 'ibc/5EFE20DD152EB85A1EDF2A5D8CFD75B6698495A1ED9284C54373D25E9DFA6C58',
       display: 'wormhole/BhqTYfQogyt7jX7cx7x8uHEQP1x9fdtdBZtK4Swghgpw/8',
       name: 'tBTC v2 (Wormhole)',
       symbol: 'tBTC',
@@ -3328,13 +3328,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-94',
+            channel_id: 'channel-5',
             base_denom:
               'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/BhqTYfQogyt7jX7cx7x8uHEQP1x9fdtdBZtK4Swghgpw',
             chain_name: 'gateway'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-94'
           }
         }
       ],
@@ -3357,7 +3357,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/69050DA8E3C2B19EC124DF6DF207301AA106DBA0D62BA7157339AD02DB6A98B2',
+            'ibc/63D794036C8752D569A25A05CD2319F3C9103ED9FC936E93AFE50C832E358CA3',
           exponent: 0,
           aliases: [
             'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/EKiMEqDnPKokFGcSXDvGMk6Gt1BJ6BC7BDZzTmEpWLH1'
@@ -3371,7 +3371,7 @@ const assets: AssetList = {
       ],
       address:
         'wormhole1chejx4qqtvwxy6684yrsmf6pylancxqhk3vsmtleg5ta3zrffljqfscg87',
-      base: 'ibc/69050DA8E3C2B19EC124DF6DF207301AA106DBA0D62BA7157339AD02DB6A98B2',
+      base: 'ibc/63D794036C8752D569A25A05CD2319F3C9103ED9FC936E93AFE50C832E358CA3',
       display: 'wormhole/EKiMEqDnPKokFGcSXDvGMk6Gt1BJ6BC7BDZzTmEpWLH1/8',
       name: 'Dai Stablecoin (Wormhole)',
       symbol: 'DAI',
@@ -3379,13 +3379,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-94',
+            channel_id: 'channel-5',
             base_denom:
               'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/EKiMEqDnPKokFGcSXDvGMk6Gt1BJ6BC7BDZzTmEpWLH1',
             chain_name: 'gateway'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-94'
           }
         }
       ],
@@ -3408,7 +3408,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/90B61B4B086002E454125248B23885BEB2B4D594C2BBD27480F2FE93CEC81D99',
+            'ibc/0C19171CDC59451F91D2749CDEA63355532DCD5D8904CCBAC4953290E16AB8FD',
           exponent: 0,
           aliases: [
             'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/GGh9Ufn1SeDGrhzEkMyRKt5568VbbxZK2yvWNsd6PbXt'
@@ -3422,7 +3422,7 @@ const assets: AssetList = {
       ],
       address:
         'wormhole1utjx3594tlvfw4375esgu72wa4sdgf0q7x4ye27husf5kvuzp5rsr72gdq',
-      base: 'ibc/90B61B4B086002E454125248B23885BEB2B4D594C2BBD27480F2FE93CEC81D99',
+      base: 'ibc/0C19171CDC59451F91D2749CDEA63355532DCD5D8904CCBAC4953290E16AB8FD',
       display: 'wormhole/GGh9Ufn1SeDGrhzEkMyRKt5568VbbxZK2yvWNsd6PbXt/6',
       name: 'USD Coin (Wormhole)',
       symbol: 'USDC',
@@ -3430,13 +3430,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-94',
+            channel_id: 'channel-5',
             base_denom:
               'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/GGh9Ufn1SeDGrhzEkMyRKt5568VbbxZK2yvWNsd6PbXt',
             chain_name: 'gateway'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-94'
           }
         }
       ],
@@ -3459,7 +3459,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/DDD9E1CA566CC4C3566D38000558680AE4373FF3D7174E48656853CC52E966D7',
+            'ibc/39913E647C3549D663B1ED7F0745E1779515170C5215B98B2C8410B4C073AD30',
           exponent: 0,
           aliases: [
             'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5ZLmAZpcbaP4EGyihSmpfwryzDr84h51tboV392BCjW4'
@@ -3473,7 +3473,7 @@ const assets: AssetList = {
       ],
       address:
         'wormhole1utjx3594tlvfw4375esgu72wa4sdgf0q7x4ye27husf5kvuzp5rsr72gdq',
-      base: 'ibc/DDD9E1CA566CC4C3566D38000558680AE4373FF3D7174E48656853CC52E966D7',
+      base: 'ibc/39913E647C3549D663B1ED7F0745E1779515170C5215B98B2C8410B4C073AD30',
       display: 'wormhole/5ZLmAZpcbaP4EGyihSmpfwryzDr84h51tboV392BCjW4/6',
       name: 'Avalanche USD Coin (Wormhole)',
       symbol: 'avalanche.USDC.wh',
@@ -3481,13 +3481,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-94',
+            channel_id: 'channel-5',
             base_denom:
               'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5ZLmAZpcbaP4EGyihSmpfwryzDr84h51tboV392BCjW4',
             chain_name: 'gateway'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-94'
           }
         }
       ],
@@ -3510,7 +3510,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/F9108436D0D6E48E41AE8704AA117AE6F858B266C0F20D1297E0041189717C03',
+            'ibc/E7A722DF0BC6EDE626E1C7DC852564BA7058828764B71D76F3BA5E4AC45A09E9',
           exponent: 0,
           aliases: [
             'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/B8ohBnfisop27exk2gtNABJyYjLwQA7ogrp5uNzvZCoy'
@@ -3524,7 +3524,7 @@ const assets: AssetList = {
       ],
       address:
         'wormhole1utjx3594tlvfw4375esgu72wa4sdgf0q7x4ye27husf5kvuzp5rsr72gdq',
-      base: 'ibc/F9108436D0D6E48E41AE8704AA117AE6F858B266C0F20D1297E0041189717C03',
+      base: 'ibc/E7A722DF0BC6EDE626E1C7DC852564BA7058828764B71D76F3BA5E4AC45A09E9',
       display: 'wormhole/B8ohBnfisop27exk2gtNABJyYjLwQA7ogrp5uNzvZCoy/6',
       name: 'Pyth Network',
       symbol: 'PYTH',
@@ -3532,13 +3532,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-94',
+            channel_id: 'channel-5',
             base_denom:
               'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/B8ohBnfisop27exk2gtNABJyYjLwQA7ogrp5uNzvZCoy',
             chain_name: 'gateway'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-94'
           }
         }
       ],
@@ -3553,6 +3553,55 @@ const assets: AssetList = {
       ],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/pyth.svg'
+      }
+    },
+    {
+      description:
+        'Solana USD Coin (Wormhole), Solana USDC, factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/HJk1XMDRNUbRrpKkNZYui7SwWDMjXZAsySzqgyNcQoU3',
+      denom_units: [
+        {
+          denom:
+            'ibc/177AE036468AC52F6CFA06D4B36BF0743D906836CD983EC6CA77A0DBC3A7D03E',
+          exponent: 0,
+          aliases: [
+            'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/HJk1XMDRNUbRrpKkNZYui7SwWDMjXZAsySzqgyNcQoU3'
+          ]
+        },
+        {
+          denom: 'wormhole/HJk1XMDRNUbRrpKkNZYui7SwWDMjXZAsySzqgyNcQoU3/6',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/177AE036468AC52F6CFA06D4B36BF0743D906836CD983EC6CA77A0DBC3A7D03E',
+      display: 'wormhole/HJk1XMDRNUbRrpKkNZYui7SwWDMjXZAsySzqgyNcQoU3/6',
+      name: 'Solana USD Coin (Wormhole)',
+      symbol: 'solana.USDC.wh',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom:
+              'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/HJk1XMDRNUbRrpKkNZYui7SwWDMjXZAsySzqgyNcQoU3',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-94'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'solana',
+            base_denom: 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       }
     },
     {
@@ -4286,11 +4335,11 @@ const assets: AssetList = {
             base_denom:
               'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
         }
       ],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
       }
     },
     {
@@ -4338,6 +4387,178 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
       }
+    },
+    {
+      description:
+        'Hava Coin is the lifeblood of the Cosmos & Injective networks, rewarding builders and welcoming supporters. https://havacoin.xyz/',
+      denom_units: [
+        {
+          denom:
+            'ibc/53BD4AD380F9EB09D9E53C94195449F0AAC7D66E0EE0DDC04659C44F732E008B',
+          exponent: 0,
+          aliases: ['factory/inj1h0ypsdtjfcjynqu3m75z2zwwz5mmrj8rtk2g52/uhava']
+        },
+        {
+          denom: 'hava',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/53BD4AD380F9EB09D9E53C94195449F0AAC7D66E0EE0DDC04659C44F732E008B',
+      name: 'Hava Coin',
+      display: 'hava',
+      symbol: 'HAVA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/hava.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/hava.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-83',
+            base_denom:
+              'factory/inj1h0ypsdtjfcjynqu3m75z2zwwz5mmrj8rtk2g52/uhava',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        "A clan of 11y bad kids crafting chaos on the Cosmos eco. One bad memecoin to rule them all  $BADKID. Airdropped to Badkids NFT holders and $STARS stakers. It's so bad, your wallet's throwing a tantrum for it.",
+      denom_units: [
+        {
+          denom:
+            'ibc/C8BA7E2559E085783E0E44EC3F36F66B2A50061ECDB640D940E2BC1915F70D69',
+          exponent: 0,
+          aliases: [
+            'ibc/A0C5AD197FECAF6636F589071338DC7ECD6B0809CD3A5AB131EAAA5395E7E5E8'
+          ]
+        },
+        {
+          denom: 'BADKID',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/C8BA7E2559E085783E0E44EC3F36F66B2A50061ECDB640D940E2BC1915F70D69',
+      name: 'Badkid',
+      display: 'BADKID',
+      symbol: 'BADKID',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-83',
+            base_denom:
+              'ibc/A0C5AD197FECAF6636F589071338DC7ECD6B0809CD3A5AB131EAAA5395E7E5E8',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'factory/osmo10n8rv8npx870l69248hnp6djy6pll2yuzzn9x8/BADKID'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png'
+      }
+    },
+    {
+      description: 'The second meme coin on Injective.',
+      denom_units: [
+        {
+          denom:
+            'ibc/8D065F116ED0F967E6A73C8EE96E11C1DABB1C0B1F531BDA01D79FAC439F434E',
+          exponent: 0,
+          aliases: ['inj1sudjgsyhufqu95yp7rqad3g78ws8g6htf32h88']
+        },
+        {
+          denom: 'NINPO',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/8D065F116ED0F967E6A73C8EE96E11C1DABB1C0B1F531BDA01D79FAC439F434E',
+      name: 'Ninpo',
+      display: 'NINPO',
+      symbol: 'NINPO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninpo.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninpo.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-83',
+            base_denom: 'inj1sudjgsyhufqu95yp7rqad3g78ws8g6htf32h88',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description: 'JUDO is a very futuristic meme token.',
+      denom_units: [
+        {
+          denom:
+            'ibc/A958074A992C4CA9B836F4989F2B68A3F3FEDFEE75C3A1B0AE9744A0C79A1FE9',
+          exponent: 0,
+          aliases: ['inj16ukv8g2jcmml7gykxn5ws8ykhxjkugl4zhft5h']
+        },
+        {
+          denom: 'JUDO',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/A958074A992C4CA9B836F4989F2B68A3F3FEDFEE75C3A1B0AE9744A0C79A1FE9',
+      name: 'Judo',
+      display: 'JUDO',
+      symbol: 'JUDO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/judo.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/judo.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-83',
+            base_denom: 'inj16ukv8g2jcmml7gykxn5ws8ykhxjkugl4zhft5h',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
     },
     {
       description: 'The native staking and governance token of Kava',
@@ -5310,7 +5531,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/A2AFFB89B554C6F44A098A7F379828C5CC44934CCB904B98C1336C1AFE335036',
+            'ibc/20276B148BE4A4A7D68536EDEE3E2E4A9FCEE0DAAEA809B67FD673D9C17856E1',
           exponent: 0,
           aliases: [
             'ibc/E5CA126979E2FFB4C70C072F8094D07ECF27773B37623AD2BF7582AD0726F0F3'
@@ -5321,7 +5542,7 @@ const assets: AssetList = {
           exponent: 8
         }
       ],
-      base: 'ibc/A2AFFB89B554C6F44A098A7F379828C5CC44934CCB904B98C1336C1AFE335036',
+      base: 'ibc/20276B148BE4A4A7D68536EDEE3E2E4A9FCEE0DAAEA809B67FD673D9C17856E1',
       name: 'Wormhole Solana',
       display: 'sol',
       symbol: 'whSOL',

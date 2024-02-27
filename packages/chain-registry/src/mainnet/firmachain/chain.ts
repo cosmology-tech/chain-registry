@@ -39,6 +39,10 @@ const info: Chain = {
         provider: 'FirmaChain'
       },
       {
+        address: 'https://firma.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://rpc.firmachain.chaintools.tech/',
         provider: 'ChainTools'
       },
@@ -55,6 +59,10 @@ const info: Chain = {
       {
         address: 'https://lcd-mainnet.firmachain.dev:1317',
         provider: 'FirmaChain'
+      },
+      {
+        address: 'https://firma.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'https://api.firmachain.chaintools.tech/',
@@ -75,6 +83,10 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
+        address: 'firma.grpc.m.stavr.tech:2030',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://firmachain-grpc.ramuchi.tech:1390',
         provider: 'ramuchi.tech'
       }
@@ -87,6 +99,13 @@ const info: Chain = {
       tx_page: 'https://app.ezstaking.io/firmachain/txs/${txHash}',
       account_page:
         'https://app.ezstaking.io/firmachain/account/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Firmachain-M',
+      tx_page: 'https://explorer.stavr.tech/Firmachain-M/txs/${txHash}',
+      account_page:
+        'https://explorer.stavr.tech/Firmachain-M/account/${accountAddress}'
     },
     {
       kind: 'bigdipper',

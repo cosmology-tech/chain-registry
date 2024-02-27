@@ -89,6 +89,51 @@ const assets: AssetList = {
           }
         }
       ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/5849025C1D4D7404EE4AD4DF05041202803EA210C5D8B819B6353F5A5BAFBC5A',
+          exponent: 0,
+          aliases: [
+            'factory/osmo1zlkzu72774ynac53necz46u4ycqtp36wedrar0/willyz'
+          ]
+        },
+        {
+          denom: 'willyz',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/5849025C1D4D7404EE4AD4DF05041202803EA210C5D8B819B6353F5A5BAFBC5A',
+      name: 'Willyz',
+      display: 'willyz',
+      symbol: 'WILLYZ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/osmosistestnet/images/willyz.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/osmosistestnet/images/willyz.svg'
+      },
+      keywords: ['memecoin'],
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/osmosistestnet/images/willyz.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/osmosistestnet/images/willyz.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1637',
+            base_denom:
+              'factory/osmo1zlkzu72774ynac53necz46u4ycqtp36wedrar0/willyz',
+            chain_name: 'osmosistestnet'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
     }
   ]
 };

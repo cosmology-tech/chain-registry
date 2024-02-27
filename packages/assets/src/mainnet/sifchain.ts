@@ -581,48 +581,6 @@ const assets: AssetList = {
       ]
     },
     {
-      description:
-        'Hava Coin is the lifeblood of the Cosmos & Juno networks, rewarding builders and welcoming supporters. https://havacoin.xyz/',
-      denom_units: [
-        {
-          denom:
-            'ibc/849E319EC094018FD7BCDBDA6AF31F34741C44C42A191F82F15518C6BF8A3251',
-          exponent: 0,
-          aliases: ['factory/juno195asgku87kxgu48s447z0ryhsyn5rl3yzvfw0d/uhava']
-        },
-        {
-          denom: 'hava',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/849E319EC094018FD7BCDBDA6AF31F34741C44C42A191F82F15518C6BF8A3251',
-      name: 'Hava Coin',
-      display: 'hava',
-      symbol: 'HAVA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hava.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hava.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-5',
-            base_denom:
-              'factory/juno195asgku87kxgu48s447z0ryhsyn5rl3yzvfw0d/uhava',
-            chain_name: 'juno'
-          },
-          chain: {
-            channel_id: 'channel-14'
-          }
-        }
-      ]
-    },
-    {
       description: 'The native token of Osmosis',
       denom_units: [
         {

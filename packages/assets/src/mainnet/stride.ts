@@ -2999,6 +2999,50 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'The token of Teledisko DAO.',
+      denom_units: [
+        {
+          denom:
+            'ibc/A4EC4992CC6942ED4E799E40679FF436FDB20A3C89946A1948A29D51F233488E',
+          exponent: 0,
+          aliases: ['erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280']
+        },
+        {
+          denom: 'berlin',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/A4EC4992CC6942ED4E799E40679FF436FDB20A3C89946A1948A29D51F233488E',
+      name: 'Teledisko DAO',
+      display: 'berlin',
+      symbol: 'BERLIN',
+      type_asset: 'erc20',
+      address: '0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-25',
+            base_denom: 'erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-9'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The INJ token is the native governance token for the Injective chain.',
       denom_units: [
@@ -3300,11 +3344,11 @@ const assets: AssetList = {
             base_denom:
               'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
         }
       ],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
       }
     },
     {
@@ -3352,6 +3396,178 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
       }
+    },
+    {
+      description:
+        'Hava Coin is the lifeblood of the Cosmos & Injective networks, rewarding builders and welcoming supporters. https://havacoin.xyz/',
+      denom_units: [
+        {
+          denom:
+            'ibc/9F72672153D88B1A9C63B10B03BBA3E19510D5C3451C060EFAE902087FAD64B9',
+          exponent: 0,
+          aliases: ['factory/inj1h0ypsdtjfcjynqu3m75z2zwwz5mmrj8rtk2g52/uhava']
+        },
+        {
+          denom: 'hava',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/9F72672153D88B1A9C63B10B03BBA3E19510D5C3451C060EFAE902087FAD64B9',
+      name: 'Hava Coin',
+      display: 'hava',
+      symbol: 'HAVA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/hava.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/hava.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-89',
+            base_denom:
+              'factory/inj1h0ypsdtjfcjynqu3m75z2zwwz5mmrj8rtk2g52/uhava',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-6'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        "A clan of 11y bad kids crafting chaos on the Cosmos eco. One bad memecoin to rule them all  $BADKID. Airdropped to Badkids NFT holders and $STARS stakers. It's so bad, your wallet's throwing a tantrum for it.",
+      denom_units: [
+        {
+          denom:
+            'ibc/7056FC7D4B7DEFCF40D3DA2E51F80A1A780F981FAF1569C5C9FBBE0B6C383C3E',
+          exponent: 0,
+          aliases: [
+            'ibc/A0C5AD197FECAF6636F589071338DC7ECD6B0809CD3A5AB131EAAA5395E7E5E8'
+          ]
+        },
+        {
+          denom: 'BADKID',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/7056FC7D4B7DEFCF40D3DA2E51F80A1A780F981FAF1569C5C9FBBE0B6C383C3E',
+      name: 'Badkid',
+      display: 'BADKID',
+      symbol: 'BADKID',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-89',
+            base_denom:
+              'ibc/A0C5AD197FECAF6636F589071338DC7ECD6B0809CD3A5AB131EAAA5395E7E5E8',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-6'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'factory/osmo10n8rv8npx870l69248hnp6djy6pll2yuzzn9x8/BADKID'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png'
+      }
+    },
+    {
+      description: 'The second meme coin on Injective.',
+      denom_units: [
+        {
+          denom:
+            'ibc/6CAD45BB3451E22333CB4F007039453CECFD20E029D7D04E36A8B5DA8D774D6F',
+          exponent: 0,
+          aliases: ['inj1sudjgsyhufqu95yp7rqad3g78ws8g6htf32h88']
+        },
+        {
+          denom: 'NINPO',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/6CAD45BB3451E22333CB4F007039453CECFD20E029D7D04E36A8B5DA8D774D6F',
+      name: 'Ninpo',
+      display: 'NINPO',
+      symbol: 'NINPO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninpo.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninpo.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-89',
+            base_denom: 'inj1sudjgsyhufqu95yp7rqad3g78ws8g6htf32h88',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-6'
+          }
+        }
+      ]
+    },
+    {
+      description: 'JUDO is a very futuristic meme token.',
+      denom_units: [
+        {
+          denom:
+            'ibc/23B904F99D373071AAFD204D0C6637FE19591CF7296835FE604D389A6B2B3599',
+          exponent: 0,
+          aliases: ['inj16ukv8g2jcmml7gykxn5ws8ykhxjkugl4zhft5h']
+        },
+        {
+          denom: 'JUDO',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/23B904F99D373071AAFD204D0C6637FE19591CF7296835FE604D389A6B2B3599',
+      name: 'Judo',
+      display: 'JUDO',
+      symbol: 'JUDO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/judo.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/judo.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-89',
+            base_denom: 'inj16ukv8g2jcmml7gykxn5ws8ykhxjkugl4zhft5h',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-6'
+          }
+        }
+      ]
     },
     {
       description: 'The native token of JUNO Chain',
@@ -3562,48 +3778,6 @@ const assets: AssetList = {
             channel_id: 'channel-139',
             base_denom:
               'factory/juno1u805lv20qc6jy7c3ttre7nct6uyl20pfky5r7e/DGL',
-            chain_name: 'juno'
-          },
-          chain: {
-            channel_id: 'channel-24'
-          }
-        }
-      ]
-    },
-    {
-      description:
-        'Hava Coin is the lifeblood of the Cosmos & Juno networks, rewarding builders and welcoming supporters. https://havacoin.xyz/',
-      denom_units: [
-        {
-          denom:
-            'ibc/7A02454860C24C2387504AC5A370220AE3321679C3B45C4CBC886D94737BDCAC',
-          exponent: 0,
-          aliases: ['factory/juno195asgku87kxgu48s447z0ryhsyn5rl3yzvfw0d/uhava']
-        },
-        {
-          denom: 'hava',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/7A02454860C24C2387504AC5A370220AE3321679C3B45C4CBC886D94737BDCAC',
-      name: 'Hava Coin',
-      display: 'hava',
-      symbol: 'HAVA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hava.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hava.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-139',
-            base_denom:
-              'factory/juno195asgku87kxgu48s447z0ryhsyn5rl3yzvfw0d/uhava',
             chain_name: 'juno'
           },
           chain: {
@@ -4367,7 +4541,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/9E7C7FA87A38B37A37A768E8E63843EC23B52B261D3756F62216D1EFB9ED6130',
+            'ibc/28541931079504D55F9BB083BCDA058C828A106DC473917FB2481B42A3134A59',
           exponent: 0,
           aliases: [
             'ibc/E5CA126979E2FFB4C70C072F8094D07ECF27773B37623AD2BF7582AD0726F0F3'
@@ -4378,7 +4552,7 @@ const assets: AssetList = {
           exponent: 8
         }
       ],
-      base: 'ibc/9E7C7FA87A38B37A37A768E8E63843EC23B52B261D3756F62216D1EFB9ED6130',
+      base: 'ibc/28541931079504D55F9BB083BCDA058C828A106DC473917FB2481B42A3134A59',
       name: 'Wormhole Solana',
       display: 'sol',
       symbol: 'whSOL',
@@ -6075,11 +6249,11 @@ const assets: AssetList = {
             base_denom:
               'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
         }
       ],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
       }
     },
     {
@@ -6117,6 +6291,99 @@ const assets: AssetList = {
             channel_id: 'channel-8',
             base_denom:
               'neutron1uqvse8fdrd9tam47f2jhy9m6al6xxtqpc83f9pdnz5gdle4swc0spfnctv',
+            chain_name: 'neutron'
+          },
+          chain: {
+            channel_id: 'channel-123'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        "A clan of 11y bad kids crafting chaos on the Cosmos eco. One bad memecoin to rule them all  $BADKID. Airdropped to Badkids NFT holders and $STARS stakers. It's so bad, your wallet's throwing a tantrum for it.",
+      denom_units: [
+        {
+          denom:
+            'ibc/26AE5C8B936BD78A51585FCE353AEF0B3AD2D645246BD18151B9EC3377C432E8',
+          exponent: 0,
+          aliases: [
+            'ibc/9F8417FBA11E5E01F7F85DDD48C400EB746E95084C11706041663845B4A700A8'
+          ]
+        },
+        {
+          denom: 'BADKID',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/26AE5C8B936BD78A51585FCE353AEF0B3AD2D645246BD18151B9EC3377C432E8',
+      name: 'Badkid',
+      display: 'BADKID',
+      symbol: 'BADKID',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom:
+              'ibc/9F8417FBA11E5E01F7F85DDD48C400EB746E95084C11706041663845B4A700A8',
+            chain_name: 'neutron'
+          },
+          chain: {
+            channel_id: 'channel-123'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'factory/osmo10n8rv8npx870l69248hnp6djy6pll2yuzzn9x8/BADKID'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png'
+      }
+    },
+    {
+      description: 'Reflections of cartel activity on Cosmos.',
+      denom_units: [
+        {
+          denom:
+            'ibc/85D49BEADC01BA5D678280881130D5C271375044784C256391063FD50BF87C8E',
+          exponent: 0,
+          aliases: [
+            'factory/neutron1w0pz4mjw7n96kkragj8etgfgakg5vw9lzg77wq/cartel'
+          ]
+        },
+        {
+          denom: 'cartel',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/85D49BEADC01BA5D678280881130D5C271375044784C256391063FD50BF87C8E',
+      name: 'cartel',
+      display: 'cartel',
+      symbol: 'CARTEL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/cartel.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/cartel.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom:
+              'factory/neutron1w0pz4mjw7n96kkragj8etgfgakg5vw9lzg77wq/cartel',
             chain_name: 'neutron'
           },
           chain: {

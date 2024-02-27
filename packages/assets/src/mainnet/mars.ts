@@ -307,48 +307,6 @@ const assets: AssetList = {
     },
     {
       description:
-        'Hava Coin is the lifeblood of the Cosmos & Juno networks, rewarding builders and welcoming supporters. https://havacoin.xyz/',
-      denom_units: [
-        {
-          denom:
-            'ibc/07C0E3418BBD0B2B8F4792D1A54893E62938AFFB819065B2F1E4522F91E71F70',
-          exponent: 0,
-          aliases: ['factory/juno195asgku87kxgu48s447z0ryhsyn5rl3yzvfw0d/uhava']
-        },
-        {
-          denom: 'hava',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/07C0E3418BBD0B2B8F4792D1A54893E62938AFFB819065B2F1E4522F91E71F70',
-      name: 'Hava Coin',
-      display: 'hava',
-      symbol: 'HAVA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hava.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hava.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-209',
-            base_denom:
-              'factory/juno195asgku87kxgu48s447z0ryhsyn5rl3yzvfw0d/uhava',
-            chain_name: 'juno'
-          },
-          chain: {
-            channel_id: 'channel-3'
-          }
-        }
-      ]
-    },
-    {
-      description:
         'The native staking and governance token of the Kujira chain.',
       denom_units: [
         {
@@ -1102,7 +1060,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/9CA8C1939B06892266BF0E88974E09C76DE2511B692204AFD87E3843ABF2779D',
+            'ibc/FF35E6A1F2E310DE2C9B02042E09872526F7BA42258C01765AD0BEA6B9489CE2',
           exponent: 0,
           aliases: [
             'ibc/E5CA126979E2FFB4C70C072F8094D07ECF27773B37623AD2BF7582AD0726F0F3'
@@ -1113,7 +1071,7 @@ const assets: AssetList = {
           exponent: 8
         }
       ],
-      base: 'ibc/9CA8C1939B06892266BF0E88974E09C76DE2511B692204AFD87E3843ABF2779D',
+      base: 'ibc/FF35E6A1F2E310DE2C9B02042E09872526F7BA42258C01765AD0BEA6B9489CE2',
       name: 'Wormhole Solana',
       display: 'sol',
       symbol: 'whSOL',
@@ -2810,11 +2768,11 @@ const assets: AssetList = {
             base_denom:
               'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
         }
       ],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
       }
     },
     {
@@ -2852,6 +2810,99 @@ const assets: AssetList = {
             channel_id: 'channel-16',
             base_denom:
               'neutron1uqvse8fdrd9tam47f2jhy9m6al6xxtqpc83f9pdnz5gdle4swc0spfnctv',
+            chain_name: 'neutron'
+          },
+          chain: {
+            channel_id: 'channel-37'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        "A clan of 11y bad kids crafting chaos on the Cosmos eco. One bad memecoin to rule them all  $BADKID. Airdropped to Badkids NFT holders and $STARS stakers. It's so bad, your wallet's throwing a tantrum for it.",
+      denom_units: [
+        {
+          denom:
+            'ibc/2E86A94FBCE0E7CA97F18BBCDFDB475980163DE9A7C4BB9E44180204BAED688D',
+          exponent: 0,
+          aliases: [
+            'ibc/9F8417FBA11E5E01F7F85DDD48C400EB746E95084C11706041663845B4A700A8'
+          ]
+        },
+        {
+          denom: 'BADKID',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/2E86A94FBCE0E7CA97F18BBCDFDB475980163DE9A7C4BB9E44180204BAED688D',
+      name: 'Badkid',
+      display: 'BADKID',
+      symbol: 'BADKID',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-16',
+            base_denom:
+              'ibc/9F8417FBA11E5E01F7F85DDD48C400EB746E95084C11706041663845B4A700A8',
+            chain_name: 'neutron'
+          },
+          chain: {
+            channel_id: 'channel-37'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'factory/osmo10n8rv8npx870l69248hnp6djy6pll2yuzzn9x8/BADKID'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png'
+      }
+    },
+    {
+      description: 'Reflections of cartel activity on Cosmos.',
+      denom_units: [
+        {
+          denom:
+            'ibc/1EAEB9AC47111B76A513371B54457FAC82A319CE8B67EF1D7150B11E4AC09AC1',
+          exponent: 0,
+          aliases: [
+            'factory/neutron1w0pz4mjw7n96kkragj8etgfgakg5vw9lzg77wq/cartel'
+          ]
+        },
+        {
+          denom: 'cartel',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/1EAEB9AC47111B76A513371B54457FAC82A319CE8B67EF1D7150B11E4AC09AC1',
+      name: 'cartel',
+      display: 'cartel',
+      symbol: 'CARTEL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/cartel.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/cartel.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-16',
+            base_denom:
+              'factory/neutron1w0pz4mjw7n96kkragj8etgfgakg5vw9lzg77wq/cartel',
             chain_name: 'neutron'
           },
           chain: {

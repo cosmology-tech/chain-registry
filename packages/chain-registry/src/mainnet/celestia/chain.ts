@@ -130,6 +130,10 @@ const info: Chain = {
       {
         address: 'https://celestia-rpc.stake-town.com',
         provider: 'StakeTown'
+      },
+      {
+        address: 'https://rpc.celestia-app.bronbro.io',
+        provider: 'Bro_n_Bro'
       }
     ],
     rest: [
@@ -216,6 +220,10 @@ const info: Chain = {
       {
         address: 'https://celestia-api.stake-town.com',
         provider: 'StakeTown'
+      },
+      {
+        address: 'https://lcd.celestia-app.bronbro.io',
+        provider: 'Bro_n_Bro'
       }
     ],
     grpc: [
@@ -240,7 +248,7 @@ const info: Chain = {
         provider: 'Stakeflow'
       },
       {
-        address: 'grpc-celestia.cosmos-spaces.cloud:5190',
+        address: 'grpc-celestia.cosmos-spaces.cloud:443',
         provider: 'Cosmos Spaces'
       },
       {
@@ -286,6 +294,10 @@ const info: Chain = {
       {
         address: 'https://celestia-grpc.stake-town.com',
         provider: 'StakeTown'
+      },
+      {
+        address: 'grpc.celestia-app.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ]
   },

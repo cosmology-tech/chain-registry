@@ -46,6 +46,10 @@ const info: Chain = {
         provider: 'ixoworld'
       },
       {
+        address: 'https://ixo.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://rpc-ixo-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
       },
@@ -68,6 +72,10 @@ const info: Chain = {
         provider: 'ixoworld'
       },
       {
+        address: 'https://ixo.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://api-ixo-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
       },
@@ -86,6 +94,10 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
+        address: 'ixo.grpc.m.stavr.tech:2010',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'impacthub-grpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       }
@@ -97,6 +109,13 @@ const info: Chain = {
       url: 'https://app.ezstaking.io/ixo',
       tx_page: 'https://app.ezstaking.io/ixo/txs/${txHash}',
       account_page: 'https://app.ezstaking.io/ixo/account/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/IXO-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/IXO-Mainnet/txs/${txHash}',
+      account_page:
+        'https://explorer.stavr.tech/IXO-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'bigdipper',

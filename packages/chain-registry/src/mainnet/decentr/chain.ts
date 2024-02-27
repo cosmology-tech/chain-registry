@@ -45,6 +45,10 @@ const info: Chain = {
         provider: 'ChainTools'
       },
       {
+        address: 'https://decentr.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://decentr-rpc.ibs.team/',
         provider: 'Inter Blockchain Services'
       },
@@ -63,6 +67,10 @@ const info: Chain = {
         provider: 'decentr'
       },
       {
+        address: 'https://decentr.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://api.decentr.chaintools.tech/',
         provider: 'ChainTools'
       },
@@ -75,6 +83,10 @@ const info: Chain = {
       {
         address: 'https://grpc-decentr.sxlzptprjkt.xyz:443',
         provider: 'sxlzptprjkt | VALIDATOR'
+      },
+      {
+        address: 'decentr.grpc.m.stavr.tech:2060',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'https://grpc.decentr.hexnodes.co',
@@ -101,6 +113,11 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.pub/decentr/',
       tx_page: 'https://ping.pub/decentr/tx/${txHash}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Decentr-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Decentr-Mainnet/tx/${txHash}'
     },
     {
       kind: 'atomscan',

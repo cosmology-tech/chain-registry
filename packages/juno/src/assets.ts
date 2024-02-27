@@ -2053,27 +2053,31 @@ const assets: AssetList = {
     },
     {
       description:
-        'Hava Coin is the lifeblood of the Cosmos & Juno networks, rewarding builders and welcoming supporters. https://havacoin.xyz/',
+        'Minerva was one of the main goddesses worshiped by the Roman Pagans and is a goddess from Roman Mythology.',
+      type_asset: 'cw20',
+      address:
+        'juno1lsfym25w35ylhuq4m48fmycwe6nhntzh2ag2pttqtfe8cew9s25s2ym9t8',
       denom_units: [
         {
-          denom: 'factory/juno195asgku87kxgu48s447z0ryhsyn5rl3yzvfw0d/uhava',
+          denom:
+            'cw20:juno1lsfym25w35ylhuq4m48fmycwe6nhntzh2ag2pttqtfe8cew9s25s2ym9t8',
           exponent: 0
         },
         {
-          denom: 'hava',
+          denom: 'minerva',
           exponent: 6
         }
       ],
-      base: 'factory/juno195asgku87kxgu48s447z0ryhsyn5rl3yzvfw0d/uhava',
-      name: 'Hava Coin',
-      display: 'hava',
-      symbol: 'HAVA',
+      base: 'cw20:juno1lsfym25w35ylhuq4m48fmycwe6nhntzh2ag2pttqtfe8cew9s25s2ym9t8',
+      name: 'MINERVA',
+      display: 'minerva',
+      symbol: 'MRVA',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hava.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/minerva.png'
       },
       images: [
         {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hava.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/minerva.png'
         }
       ]
     }

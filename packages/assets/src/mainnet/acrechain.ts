@@ -1727,6 +1727,50 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'The token of Teledisko DAO.',
+      denom_units: [
+        {
+          denom:
+            'ibc/3D477A624F9AFBBDE800A2B302A4923980B95859BDEA8462E09C1D283E933456',
+          exponent: 0,
+          aliases: ['erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280']
+        },
+        {
+          denom: 'berlin',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/3D477A624F9AFBBDE800A2B302A4923980B95859BDEA8462E09C1D283E933456',
+      name: 'Teledisko DAO',
+      display: 'berlin',
+      symbol: 'BERLIN',
+      type_asset: 'erc20',
+      address: '0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-40',
+            base_denom: 'erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-14'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Gravity Bridge',
       denom_units: [
         {
@@ -2910,7 +2954,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/23760D1E2CDF8FF9283765C97B0893D0A90AFA7488E9A3AB2DA18C2C24FE4F4C',
+            'ibc/08133C797E6B0D3BD3ABE41405C9BE6FAA1ADE83BD0F5AE4EE8D782F36D9B803',
           exponent: 0,
           aliases: [
             'ibc/E5CA126979E2FFB4C70C072F8094D07ECF27773B37623AD2BF7582AD0726F0F3'
@@ -2921,7 +2965,7 @@ const assets: AssetList = {
           exponent: 8
         }
       ],
-      base: 'ibc/23760D1E2CDF8FF9283765C97B0893D0A90AFA7488E9A3AB2DA18C2C24FE4F4C',
+      base: 'ibc/08133C797E6B0D3BD3ABE41405C9BE6FAA1ADE83BD0F5AE4EE8D782F36D9B803',
       name: 'Wormhole Solana',
       display: 'sol',
       symbol: 'whSOL',

@@ -61,10 +61,6 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://rpc-sommelier.cosmos-spaces.cloud',
-        provider: 'Cosmos Spaces'
-      },
-      {
         address: 'https://somm-rpc.kleomedes.network',
         provider: 'Kleomedes'
       },
@@ -91,10 +87,6 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'https://api-sommelier.cosmos-spaces.cloud',
-        provider: 'Cosmos Spaces'
-      },
-      {
         address: 'https://sommelier-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
       },
@@ -119,10 +111,6 @@ const info: Chain = {
       {
         address: 'sommelier-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
-      },
-      {
-        address: 'grpc-sommelier.cosmos-spaces.cloud:2310',
-        provider: 'Cosmos Spaces'
       },
       {
         address: 'https://grpc.sommelier.nodexcapital.com',

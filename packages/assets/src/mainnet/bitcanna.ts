@@ -753,7 +753,8 @@ const assets: AssetList = {
       ]
     },
     {
-      description: 'L DON a BitSong Music FanToken',
+      deprecated: true,
+      description: '[Redacted] a BitSong Music FanToken',
       denom_units: [
         {
           denom:
@@ -762,22 +763,14 @@ const assets: AssetList = {
           aliases: ['ft347B1612A2B7659913679CF6CD45B8B130C50A00']
         },
         {
-          denom: 'ldon',
+          denom: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00/6',
           exponent: 6
         }
       ],
       base: 'ibc/F769149610F8663C7619DA9647FD26C881C5AAFAAACA24C7621A9FFE86F161DD',
-      name: 'L DON Fantoken',
-      display: 'ldon',
+      name: '[Redacted] Fantoken (ft3...A00)',
+      display: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00/6',
       symbol: 'LDON',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft347B1612A2B7659913679CF6CD45B8B130C50A00.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft347B1612A2B7659913679CF6CD45B8B130C50A00.png'
-        }
-      ],
       traces: [
         {
           type: 'ibc',
@@ -1138,48 +1131,6 @@ const assets: AssetList = {
             channel_id: 'channel-50',
             base_denom:
               'factory/juno1u805lv20qc6jy7c3ttre7nct6uyl20pfky5r7e/DGL',
-            chain_name: 'juno'
-          },
-          chain: {
-            channel_id: 'channel-10'
-          }
-        }
-      ]
-    },
-    {
-      description:
-        'Hava Coin is the lifeblood of the Cosmos & Juno networks, rewarding builders and welcoming supporters. https://havacoin.xyz/',
-      denom_units: [
-        {
-          denom:
-            'ibc/D86875F549E43979B2F6E6599832090EB6D4B416C2C954399821E3FC69BB1B68',
-          exponent: 0,
-          aliases: ['factory/juno195asgku87kxgu48s447z0ryhsyn5rl3yzvfw0d/uhava']
-        },
-        {
-          denom: 'hava',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/D86875F549E43979B2F6E6599832090EB6D4B416C2C954399821E3FC69BB1B68',
-      name: 'Hava Coin',
-      display: 'hava',
-      symbol: 'HAVA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hava.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hava.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-50',
-            base_denom:
-              'factory/juno195asgku87kxgu48s447z0ryhsyn5rl3yzvfw0d/uhava',
             chain_name: 'juno'
           },
           chain: {

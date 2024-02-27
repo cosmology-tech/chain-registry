@@ -43,6 +43,10 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
+        address: 'https://point.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://rpc.point.indonode.net',
         provider: 'Indonode'
       }
@@ -51,6 +55,10 @@ const info: Chain = {
       {
         address: 'https://rpc-mainnet-1.point.space:1317',
         provider: 'Point Network'
+      },
+      {
+        address: 'https://point.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'https://api.point.nodestake.top',
@@ -65,6 +73,10 @@ const info: Chain = {
       {
         address: 'grpc.point.nodestake.top:443',
         provider: 'NodeStake'
+      },
+      {
+        address: 'point.grpc.m.stavr.tech:2050',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'https://grpc.point.nodexcapital.com',
@@ -91,6 +103,11 @@ const info: Chain = {
       kind: 'blockscout',
       url: 'https://explorer.pointnetwork.io/',
       tx_page: 'https://explorer.pointnetwork.io/tx/${txHash}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Point-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Point-Mainnet/tx/${txHash}'
     },
     {
       kind: 'ping.pub',

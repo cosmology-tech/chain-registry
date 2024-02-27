@@ -5,7 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Source Testnet',
-  chain_id: 'source-testnet',
+  chain_id: 'sourcetest-1',
   bech32_prefix: 'source',
   daemon_name: 'sourced',
   node_home: '$HOME/.source',
@@ -15,9 +15,10 @@ const info: Chain = {
     fee_tokens: [
       {
         denom: 'usource',
-        low_gas_price: 0.03,
-        average_gas_price: 0.04,
-        high_gas_price: 0.05
+        fixed_min_gas_price: 0.05,
+        low_gas_price: 0.05,
+        average_gas_price: 0.075,
+        high_gas_price: 0.1
       }
     ]
   },
@@ -31,17 +32,17 @@ const info: Chain = {
   codebase: {
     cosmos_sdk_version: '0.45',
     cosmwasm_enabled: true,
-    cosmwasm_version: '0.25'
+    cosmwasm_version: '0.30'
   },
   apis: {
     rpc: [
       {
-        address: 'https://rpc-t.source.nodestake.top',
-        provider: 'Nodestake'
+        address: 'https://source-testnet-rpc.stake-town.com:443',
+        provider: 'StakeTown'
       },
       {
-        address: 'https://rpc-source.nodeist.net',
-        provider: 'Nodeist'
+        address: 'https://rpc-testnet-source.sr20de.xyz',
+        provider: 'SR20DE'
       },
       {
         address: 'https://source-testnet.rpc.kjnodes.com',
@@ -50,26 +51,26 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://api-t.source.nodestake.top',
-        provider: 'Nodestake'
+        address: 'https://source-testnet-api.stake-town.com:443',
+        provider: 'StakeTown'
       },
       {
-        address: 'https://api-source.nodeist.net',
-        provider: 'Nodeist'
+        address: 'https://api-testnet-source.sr20de.xyz',
+        provider: 'SR20DE'
       },
       {
         address: 'https://source.api.t.stavr.tech',
         provider: '🔥STAVR🔥'
-      },
-      {
-        address: 'https://source-testnet.api.kjnodes.com',
-        provider: 'kjnodes'
       }
     ],
     grpc: [
       {
-        address: 'https://grpc-t.source.nodestake.top',
-        provider: 'nodestake'
+        address: 'source-testnet-grpc.stake-town.com:443',
+        provider: 'StakeTown'
+      },
+      {
+        address: 'grpc-testnet-source.sr20de.xyz/',
+        provider: 'SR20DE'
       }
     ]
   },
@@ -85,9 +86,9 @@ const info: Chain = {
       tx_page: 'https://explorer.stavr.tech/Source/tx/${txHash}'
     },
     {
-      kind: 'kjnodes',
-      url: 'https://explorer.kjnodes.com/source-testnet',
-      tx_page: 'https://explorer.kjnodes.com/source-testnet/txs/${txHash}'
+      kind: 'SR20DE',
+      url: 'https://explorer.sr20de.xyz/Source-testnet',
+      tx_page: 'https://explorer.sr20de.xyz/Source-testnet/txs/${txHash}'
     }
   ]
 };

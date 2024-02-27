@@ -43,6 +43,10 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes'
       },
       {
+        address: 'https://cheqd.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://rpc-cheqd-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
       },
@@ -77,6 +81,10 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes'
       },
       {
+        address: 'https://cheqd.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://api-cheqd-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
       },
@@ -105,6 +113,10 @@ const info: Chain = {
       {
         address: 'grpc.cheqd.net:443',
         provider: 'cheqd'
+      },
+      {
+        address: 'cheqd.grpc.m.stavr.tech:9337',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'cheqd-grpc.lavenderfive.com:443',
@@ -139,6 +151,11 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.pub/cheqd',
       tx_page: 'https://ping.pub/cheqd/tx/${txHash}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Cheqd-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Cheqd-Mainnet/tx/${txHash}'
     },
     {
       kind: 'atomscan',

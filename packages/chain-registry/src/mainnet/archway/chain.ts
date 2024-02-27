@@ -16,10 +16,10 @@ const info: Chain = {
     fee_tokens: [
       {
         denom: 'aarch',
-        fixed_min_gas_price: 900000000000,
-        low_gas_price: 1000000000000,
-        average_gas_price: 1500000000000,
-        high_gas_price: 2000000000000
+        fixed_min_gas_price: 140000000000,
+        low_gas_price: 196000000000,
+        average_gas_price: 225400000000,
+        high_gas_price: 254800000000
       }
     ]
   },

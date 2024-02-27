@@ -673,6 +673,50 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'The token of Teledisko DAO.',
+      denom_units: [
+        {
+          denom:
+            'ibc/F8097E48981FD969A639156DE4252CC25C0E908DFF49369FD05EB895FDA32CB8',
+          exponent: 0,
+          aliases: ['erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280']
+        },
+        {
+          denom: 'berlin',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/F8097E48981FD969A639156DE4252CC25C0E908DFF49369FD05EB895FDA32CB8',
+      name: 'Teledisko DAO',
+      display: 'berlin',
+      symbol: 'BERLIN',
+      type_asset: 'erc20',
+      address: '0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-65'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The native EVM, governance and staking token of the Haqq Network',
       denom_units: [
@@ -1471,7 +1515,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/2F076EF5271FEAA26B68C4DB7835C7122B84D18780982A2EF65C019397BE7427',
+            'ibc/F5AF8C34AE1430F656331BCA5DC6D8D465165FA14DBC2F93A1F86BEEFD51E6BD',
           exponent: 0,
           aliases: [
             'ibc/E5CA126979E2FFB4C70C072F8094D07ECF27773B37623AD2BF7582AD0726F0F3'
@@ -1482,7 +1526,7 @@ const assets: AssetList = {
           exponent: 8
         }
       ],
-      base: 'ibc/2F076EF5271FEAA26B68C4DB7835C7122B84D18780982A2EF65C019397BE7427',
+      base: 'ibc/F5AF8C34AE1430F656331BCA5DC6D8D465165FA14DBC2F93A1F86BEEFD51E6BD',
       name: 'Wormhole Solana',
       display: 'sol',
       symbol: 'whSOL',
@@ -16281,6 +16325,50 @@ const assets: AssetList = {
           }
         }
       ]
+    },
+    {
+      description: 'The token of Source Protocol bridged from BSC.',
+      denom_units: [
+        {
+          denom:
+            'ibc/E05B0EFAD4E4D2E42FADA678754C7076AF6B42861D362CE477108A72F61C9C7D',
+          exponent: 0,
+          aliases: ['erc20/0x091F9A57A3F58d758b6572E9d41675918EAC7F09']
+        },
+        {
+          denom: 'srcx',
+          exponent: 9
+        }
+      ],
+      base: 'ibc/E05B0EFAD4E4D2E42FADA678754C7076AF6B42861D362CE477108A72F61C9C7D',
+      name: 'Source Token',
+      display: 'srcx',
+      symbol: 'SRCX',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'erc20/0x091F9A57A3F58d758b6572E9d41675918EAC7F09',
+            chain_name: 'planq'
+          },
+          chain: {
+            channel_id: 'channel-102'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'binancesmartchain',
+            base_denom: '0x454b90716a9435e7161a9aea5cf00e0acbe565ae'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
+      }
     },
     {
       description: 'The native token of Secret Network',

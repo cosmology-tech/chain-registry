@@ -48,6 +48,10 @@ const info: Chain = {
         provider: 'Oldcat'
       },
       {
+        address: 'https://like.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://rpc-likecoin-mainnet.pikaser.net',
         provider: 'PikaSer'
       },
@@ -62,6 +66,10 @@ const info: Chain = {
         provider: 'like.co'
       },
       {
+        address: 'https://like.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://likecoin-node.oldcat.io:443/api/',
         provider: 'Oldcat'
       },
@@ -74,6 +82,10 @@ const info: Chain = {
       {
         address: 'mainnet-node-grpc.like.co:80',
         provider: 'like.co'
+      },
+      {
+        address: 'like.grpc.m.stavr.tech:2000',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'https://likecoin-node.oldcat.io:443/grpc/',
@@ -102,6 +114,11 @@ const info: Chain = {
     {
       kind: 'lunie-ng',
       url: 'https://stake.like.co/'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Likecoin-M',
+      tx_page: 'https://explorer.stavr.tech/Likecoin-M/tx/${txHash}'
     },
     {
       kind: 'ping.pub',

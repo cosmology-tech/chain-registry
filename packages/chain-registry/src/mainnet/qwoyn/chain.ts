@@ -45,6 +45,10 @@ const info: Chain = {
         provider: 'AM Solutions'
       },
       {
+        address: 'https://qwoyn.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://qwoyn-rpc.staketab.org:443',
         provider: 'Staketab'
       },
@@ -69,6 +73,10 @@ const info: Chain = {
       {
         address: 'services.staketab.com:9430',
         provider: 'Staketab'
+      },
+      {
+        address: 'qwoyn.grpc.m.stavr.tech:1907',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'services.staketab.com:2000',
@@ -101,6 +109,10 @@ const info: Chain = {
         provider: 'Staketab'
       },
       {
+        address: 'https://qwoyn.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://qwoyn-rest-archive.staketab.org',
         provider: 'Staketab archive'
       },
@@ -125,6 +137,13 @@ const info: Chain = {
       tx_page: 'https://explorer.theamsolutions.info/qwoyn-main/blocks',
       account_page:
         'https://explorer.theamsolutions.info/qwoyn-main/account/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Qwoyn-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Qwoyn-Mainnet/tx/${txHash}',
+      account_page:
+        'https://explorer.stavr.tech/Qwoyn-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'ping',
