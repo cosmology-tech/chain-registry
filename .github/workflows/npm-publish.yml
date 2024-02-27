@@ -20,6 +20,7 @@ jobs:
           yarn build
           cd packages/chain-registry
           yarn codegen
+          yarn build
           cd ../../
           cd packages/assets
           yarn codegen
