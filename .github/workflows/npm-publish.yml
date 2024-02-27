@@ -17,6 +17,7 @@ jobs:
       - run: |
           yarn
           yarn bootstrap
+          yarn build
           cd packages/chain-registry
           yarn build:pkg
           yarn build
