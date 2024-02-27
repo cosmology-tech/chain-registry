@@ -18,22 +18,6 @@ jobs:
           yarn
           yarn bootstrap
           yarn build
-          cd packages/chain-registry
-          yarn codegen
-          cd ../../
-          cd packages/assets
-          yarn codegen
-          cd ../../
-          cd packages/osmosis
-          yarn codegen
-          cd ../../
-          cd packages/juno
-          yarn codegen
-          cd ../../
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor}}@users.noreply.github.com"
-          git commit -am "build 🛠"
-          git push origin main
           lerna publish --no-verify-access --yes
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
