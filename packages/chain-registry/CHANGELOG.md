@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.28.4](https://github.com/cosmology-tech/chain-registry/compare/chain-registry@1.28.3...chain-registry@1.28.4) (2024-02-27)
+
+**Note:** Version bump only for package chain-registry
+
+
+
+
+
 ## [1.28.3](https://github.com/cosmology-tech/chain-registry/compare/chain-registry@1.28.2...chain-registry@1.28.3) (2024-02-26)
 
 **Note:** Version bump only for package chain-registry
