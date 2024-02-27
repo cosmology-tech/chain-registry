@@ -19,7 +19,7 @@ jobs:
           yarn bootstrap
           yarn build
           cd packages/chain-registry
-          yarn build:pkg
+          yarn codegen
           yarn build
           cd ../../
           cd packages/assets
