@@ -48,6 +48,10 @@ const info: Chain = {
         provider: 'BccNodes'
       },
       {
+        address: 'https://planq.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://rpc.planq.nodestake.top',
         provider: 'NodeStake'
       },
@@ -86,6 +90,10 @@ const info: Chain = {
         provider: 'planq.network'
       },
       {
+        address: 'https://planq.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://api.planq.nodestake.top',
         provider: 'NodeStake'
       },
@@ -122,6 +130,10 @@ const info: Chain = {
       {
         address: 'grpc.planq.network:443',
         provider: 'planq.network'
+      },
+      {
+        address: 'planq.grpc.m.stavr.tech:2070',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'planq.grpc.bccnodes.com:443',
@@ -204,6 +216,11 @@ const info: Chain = {
       kind: 'bigdipper',
       url: 'https://explorer.planq.network',
       tx_page: 'https://explorer.planq.network/transactions/${txHash}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Planq-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Planq-Mainnet/tx/${txHash}'
     },
     {
       kind: 'blockscout',

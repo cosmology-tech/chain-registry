@@ -80,6 +80,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/bandchain/rpc',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://rpc.band.bronbro.io/',
+        provider: 'Bro_n_Bro'
       }
     ],
     rest: [
@@ -126,6 +130,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/bandchain/rest',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://lcd.band.bronbro.io/',
+        provider: 'Bro_n_Bro'
       }
     ],
     grpc: [
@@ -164,6 +172,10 @@ const info: Chain = {
       {
         address: 'band-grpc.stake-town.com:443',
         provider: 'StakeTown'
+      },
+      {
+        address: 'grpc.band.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ]
   },

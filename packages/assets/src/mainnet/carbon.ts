@@ -366,6 +366,50 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'The token of Teledisko DAO.',
+      denom_units: [
+        {
+          denom:
+            'ibc/3543CC7E24618A3BEF1084D8A83AE24B3212EFEC11B353347EC1CFD3CC517064',
+          exponent: 0,
+          aliases: ['erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280']
+        },
+        {
+          denom: 'berlin',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/3543CC7E24618A3BEF1084D8A83AE24B3212EFEC11B353347EC1CFD3CC517064',
+      name: 'Teledisko DAO',
+      display: 'berlin',
+      symbol: 'BERLIN',
+      type_asset: 'erc20',
+      address: '0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-23',
+            base_denom: 'erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-6'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The IRIS token is the native governance token for the IrisNet chain.',
       denom_units: [
@@ -1164,7 +1208,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/FDA83CD1D30E45FD01C278A3D943B5C94E6D516F083EE451974D82148711EEBE',
+            'ibc/53A7C940B9FA3D701D3D926A83695F5123C98008B4E94CDD8D109130F41E447C',
           exponent: 0,
           aliases: [
             'ibc/E5CA126979E2FFB4C70C072F8094D07ECF27773B37623AD2BF7582AD0726F0F3'
@@ -1175,7 +1219,7 @@ const assets: AssetList = {
           exponent: 8
         }
       ],
-      base: 'ibc/FDA83CD1D30E45FD01C278A3D943B5C94E6D516F083EE451974D82148711EEBE',
+      base: 'ibc/53A7C940B9FA3D701D3D926A83695F5123C98008B4E94CDD8D109130F41E447C',
       name: 'Wormhole Solana',
       display: 'sol',
       symbol: 'whSOL',
@@ -17048,6 +17092,54 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'Just a meme coin on Terra',
+      type_asset: 'cw20',
+      address:
+        'terra19nu4q2y0xe3vza6ve5ymup33uzm049pnrqq5ddeuulmrg279t57qstcces',
+      denom_units: [
+        {
+          denom:
+            'ibc/54CC794AA52170A042F78F5838BF3D37A4067A621D31A1F3B2E3C381BE17C543',
+          exponent: 0,
+          aliases: [
+            'cw20:terra19nu4q2y0xe3vza6ve5ymup33uzm049pnrqq5ddeuulmrg279t57qstcces'
+          ]
+        },
+        {
+          denom: 'GUGU',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/54CC794AA52170A042F78F5838BF3D37A4067A621D31A1F3B2E3C381BE17C543',
+      name: 'GUGU',
+      display: 'GUGU',
+      symbol: 'GUGU',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/gugu.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/gugu.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au',
+            channel_id: 'channel-41',
+            base_denom:
+              'cw20:terra19nu4q2y0xe3vza6ve5ymup33uzm049pnrqq5ddeuulmrg279t57qstcces',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-16'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The GraveDigger is the Liquid Staking Product of BackBone Labs. It will have its own platform. Its liquid staking derivative (LSD) is boneLUNA.',
       type_asset: 'cw20',
@@ -17609,6 +17701,55 @@ const assets: AssetList = {
             channel_id: 'channel-41',
             base_denom:
               'cw20:terra1epka8wevu90rxlvt6g5x9veevd800a760vtuftc5kqdfmrh47qds9f0m8h',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-16'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Bitmos opens doors for BRC20 tokens to thrive alongside established players in the Cosmos Network, revolutionizing decentralized finance (DeFi) for all.',
+      type_asset: 'cw20',
+      address:
+        'terra1sxe8u2hjczlekwfkcq0rs28egt38pg3wqzfx4zcrese4fnvzzupsk9gjkq',
+      denom_units: [
+        {
+          denom:
+            'ibc/3BB8B5197DA377AB95A9F58AE523D8BA60D47892EF37D6A1DEE71C08976AAC4A',
+          exponent: 0,
+          aliases: [
+            'cw20:terra1sxe8u2hjczlekwfkcq0rs28egt38pg3wqzfx4zcrese4fnvzzupsk9gjkq'
+          ]
+        },
+        {
+          denom: 'bitmos',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/3BB8B5197DA377AB95A9F58AE523D8BA60D47892EF37D6A1DEE71C08976AAC4A',
+      name: 'Bitmos',
+      display: 'bitmos',
+      symbol: 'BMOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bitmos.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bitmos.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au',
+            channel_id: 'channel-41',
+            base_denom:
+              'cw20:terra1sxe8u2hjczlekwfkcq0rs28egt38pg3wqzfx4zcrese4fnvzzupsk9gjkq',
             chain_name: 'terra2'
           },
           chain: {

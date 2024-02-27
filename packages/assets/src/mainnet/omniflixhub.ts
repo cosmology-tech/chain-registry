@@ -3,6 +3,94 @@ const assets: AssetList = {
   chain_name: 'omniflixhub',
   assets: [
     {
+      description:
+        'BLD is the token used to secure the Agoric chain through staking and to backstop Inter Protocol.',
+      denom_units: [
+        {
+          denom:
+            'ibc/57D5984743708A678E71C21D03EC777E3A343C51E1BDE0203C37FFD6D9C4BA7F',
+          exponent: 0,
+          aliases: ['ubld']
+        },
+        {
+          denom: 'bld',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/57D5984743708A678E71C21D03EC777E3A343C51E1BDE0203C37FFD6D9C4BA7F',
+      name: 'Agoric',
+      display: 'bld',
+      symbol: 'BLD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/bld.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/bld.svg'
+      },
+      coingecko_id: 'agoric',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/bld.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/bld.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-58',
+            base_denom: 'ubld',
+            chain_name: 'agoric'
+          },
+          chain: {
+            channel_id: 'channel-30'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'IST is the stable token used by the Agoric chain for execution fees and commerce.',
+      denom_units: [
+        {
+          denom:
+            'ibc/43D3010F4CA111744AC8B68E460BC95E565C32928A267FA2B30609C04C10B274',
+          exponent: 0,
+          aliases: ['uist']
+        },
+        {
+          denom: 'ist',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/43D3010F4CA111744AC8B68E460BC95E565C32928A267FA2B30609C04C10B274',
+      name: 'Inter Stable Token',
+      display: 'ist',
+      symbol: 'IST',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/ist.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/ist.svg'
+      },
+      coingecko_id: 'inter-stable-token',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/ist.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/ist.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-58',
+            base_denom: 'uist',
+            chain_name: 'agoric'
+          },
+          chain: {
+            channel_id: 'channel-30'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Archway network',
       denom_units: [
         {
@@ -147,6 +235,1459 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
         }
       ]
+    },
+    {
+      description: 'The native token of Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/3DA797999DE49B6FDEF54E6074C608AF56C39C8FAEE620195DC1010261CC0C25',
+          exponent: 0,
+          aliases: ['uaxl']
+        },
+        {
+          denom: 'axl',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/3DA797999DE49B6FDEF54E6074C608AF56C39C8FAEE620195DC1010261CC0C25',
+      name: 'Axelar',
+      display: 'axl',
+      symbol: 'AXL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
+      },
+      coingecko_id: 'axelar',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'uaxl',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ]
+    },
+    {
+      description: "Circle's stablecoin on Axelar",
+      denom_units: [
+        {
+          denom:
+            'ibc/AC4C84DD7D3732CFA95A420247FAD5179BE4F42E5635E2BF0A62C67E2E2FA4A9',
+          exponent: 0,
+          aliases: ['uusdc']
+        },
+        {
+          denom: 'usdc',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/AC4C84DD7D3732CFA95A420247FAD5179BE4F42E5635E2BF0A62C67E2E2FA4A9',
+      name: 'USD Coin',
+      display: 'usdc',
+      symbol: 'USDC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'uusdc',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg'
+      },
+      coingecko_id: 'axlusdc',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg'
+        }
+      ]
+    },
+    {
+      description: "Frax's fractional-algorithmic stablecoin on Axelar",
+      denom_units: [
+        {
+          denom:
+            'ibc/723567A905392CCF850CFF3C520B8A458836CA865BF5D8E68EA51A3518A4011E',
+          exponent: 0,
+          aliases: ['frax-wei']
+        },
+        {
+          denom: 'frax',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/723567A905392CCF850CFF3C520B8A458836CA865BF5D8E68EA51A3518A4011E',
+      name: 'Frax',
+      display: 'frax',
+      symbol: 'FRAX',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'frax-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
+        }
+      ]
+    },
+    {
+      description: 'Dai stablecoin on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/BF9907515D7E7D75544B05EEA0EEA463D96FCD96FDCCA9A56610F01D4034A763',
+          exponent: 0,
+          aliases: ['dai-wei']
+        },
+        {
+          denom: 'dai',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/BF9907515D7E7D75544B05EEA0EEA463D96FCD96FDCCA9A56610F01D4034A763',
+      name: 'Dai Stablecoin',
+      display: 'dai',
+      symbol: 'DAI',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'dai-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.svg'
+        }
+      ]
+    },
+    {
+      description: "Tether's USD stablecoin on Axelar",
+      denom_units: [
+        {
+          denom:
+            'ibc/BB85A71914729F6D05619845AD2300BBA9F161206466C1CD662CC8A586427124',
+          exponent: 0,
+          aliases: ['uusdt']
+        },
+        {
+          denom: 'usdt',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/BB85A71914729F6D05619845AD2300BBA9F161206466C1CD662CC8A586427124',
+      name: 'Tether USD',
+      display: 'usdt',
+      symbol: 'USDT',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'uusdt',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg'
+        }
+      ]
+    },
+    {
+      description: 'Wrapped Ether on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/2C7F428DA8C42A3B71B43A9DA6E183929C5F3AF5E1A3B181894A0BBB292AA3C0',
+          exponent: 0,
+          aliases: ['weth-wei']
+        },
+        {
+          denom: 'weth',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/2C7F428DA8C42A3B71B43A9DA6E183929C5F3AF5E1A3B181894A0BBB292AA3C0',
+      name: 'Wrapped Ether',
+      display: 'weth',
+      symbol: 'WETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'weth-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png'
+        }
+      ]
+    },
+    {
+      description: 'Wrapped Bitcoin on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/8CB1A59477C84FA8E93793D56F7D5F3D8DB5C223C96A156AAFACA7700F600FEB',
+          exponent: 0,
+          aliases: ['wbtc-satoshi']
+        },
+        {
+          denom: 'wbtc',
+          exponent: 8
+        }
+      ],
+      base: 'ibc/8CB1A59477C84FA8E93793D56F7D5F3D8DB5C223C96A156AAFACA7700F600FEB',
+      name: 'Wrapped Bitcoin',
+      display: 'wbtc',
+      symbol: 'WBTC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'wbtc-satoshi',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png'
+        }
+      ]
+    },
+    {
+      description: 'Aave on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/6232AEF3AA6CB726B0E33DAF4B1B316D5D361F81356FB1901C4C15D6C69D6872',
+          exponent: 0,
+          aliases: ['aave-wei']
+        },
+        {
+          denom: 'aave',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/6232AEF3AA6CB726B0E33DAF4B1B316D5D361F81356FB1901C4C15D6C69D6872',
+      name: 'Aave',
+      display: 'aave',
+      symbol: 'AAVE',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'aave-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg'
+        }
+      ]
+    },
+    {
+      description: 'ApeCoin on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/9434C5418BB9BD3C5CA4DE3CAC08828765F3E17F738D3418AD6790542E005162',
+          exponent: 0,
+          aliases: ['ape-wei']
+        },
+        {
+          denom: 'ape',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/9434C5418BB9BD3C5CA4DE3CAC08828765F3E17F738D3418AD6790542E005162',
+      name: 'ApeCoin',
+      display: 'ape',
+      symbol: 'APE',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'ape-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg'
+        }
+      ]
+    },
+    {
+      description: 'Axie Infinity Shard on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/3DB019E5AE4802D042E8C0F28B49363D1FE2E2A90FD29F0E23AD787465A678C5',
+          exponent: 0,
+          aliases: ['axs-wei']
+        },
+        {
+          denom: 'axs',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/3DB019E5AE4802D042E8C0F28B49363D1FE2E2A90FD29F0E23AD787465A678C5',
+      name: 'Axie Infinity Shard',
+      display: 'axs',
+      symbol: 'AXS',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'axs-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg'
+        }
+      ]
+    },
+    {
+      description: 'Chainlink on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/416F2C2FC59E4CCEBB646B872F349029B86044824B338628F5C3CBAD5E8C5F60',
+          exponent: 0,
+          aliases: ['link-wei']
+        },
+        {
+          denom: 'link',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/416F2C2FC59E4CCEBB646B872F349029B86044824B338628F5C3CBAD5E8C5F60',
+      name: 'Chainlink',
+      display: 'link',
+      symbol: 'LINK',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'link-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
+        }
+      ]
+    },
+    {
+      description: 'Maker on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/FF35DFB985481772846E9FDB19AAAD6093F40394BAAE21D8AA0AD0F21C077242',
+          exponent: 0,
+          aliases: ['mkr-wei']
+        },
+        {
+          denom: 'mkr',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/FF35DFB985481772846E9FDB19AAAD6093F40394BAAE21D8AA0AD0F21C077242',
+      name: 'Maker',
+      display: 'mkr',
+      symbol: 'MKR',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'mkr-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg'
+        }
+      ]
+    },
+    {
+      description: 'Rai Reflex Index on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/8FD7B4F3469698AE3700D4D875379069B62D48ECD8C1B6FF372112E2A17D6993',
+          exponent: 0,
+          aliases: ['rai-wei']
+        },
+        {
+          denom: 'rai',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/8FD7B4F3469698AE3700D4D875379069B62D48ECD8C1B6FF372112E2A17D6993',
+      name: 'Rai Reflex Index',
+      display: 'rai',
+      symbol: 'RAI',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'rai-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/rai.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/rai.svg'
+        }
+      ]
+    },
+    {
+      description: 'Shiba Inu on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/9863EA94ABFC7E0911854C412029CE3A4040EA5BFC692378031279A2C699F29E',
+          exponent: 0,
+          aliases: ['shib-wei']
+        },
+        {
+          denom: 'shib',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/9863EA94ABFC7E0911854C412029CE3A4040EA5BFC692378031279A2C699F29E',
+      name: 'Shiba Inu',
+      display: 'shib',
+      symbol: 'SHIB',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'shib-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg'
+        }
+      ]
+    },
+    {
+      description: 'Lido Staked Ether on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/29522A6EF76B147C853273ACAD889627C8650E9A362BEBB9E0BE75AF054C7D9D',
+          exponent: 0,
+          aliases: ['steth-wei']
+        },
+        {
+          denom: 'steth',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/29522A6EF76B147C853273ACAD889627C8650E9A362BEBB9E0BE75AF054C7D9D',
+      name: 'Lido Staked Ether',
+      display: 'steth',
+      symbol: 'stETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'steth-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg'
+        }
+      ]
+    },
+    {
+      description: 'Uniswap on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/16068528D4A7B040A112CA0A748F68B3E1DBBF1AEB638C552E098BC1C7429350',
+          exponent: 0,
+          aliases: ['uni-wei']
+        },
+        {
+          denom: 'uni',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/16068528D4A7B040A112CA0A748F68B3E1DBBF1AEB638C552E098BC1C7429350',
+      name: 'Uniswap',
+      display: 'uni',
+      symbol: 'UNI',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'uni-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg'
+        }
+      ]
+    },
+    {
+      description: 'Chain on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/DDA5C84CE08EF3478D56F825D74F6B2EA3F942873A16D32FB9B2CDFDD3F92F3A',
+          exponent: 0,
+          aliases: ['xcn-wei']
+        },
+        {
+          denom: 'xcn',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/DDA5C84CE08EF3478D56F825D74F6B2EA3F942873A16D32FB9B2CDFDD3F92F3A',
+      name: 'Chain',
+      display: 'xcn',
+      symbol: 'XCN',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'xcn-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg'
+        }
+      ]
+    },
+    {
+      description: 'Wrapped Polkadot on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/0E6BC4E05A008BD621F9467F665B0A6195E8CED8715149A1BC7634E5C2405C16',
+          exponent: 0,
+          aliases: ['dot-planck']
+        },
+        {
+          denom: 'dot',
+          exponent: 10
+        }
+      ],
+      base: 'ibc/0E6BC4E05A008BD621F9467F665B0A6195E8CED8715149A1BC7634E5C2405C16',
+      name: 'Wrapped Polkadot',
+      display: 'dot',
+      symbol: 'DOT',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'dot-planck',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg'
+        }
+      ]
+    },
+    {
+      description: 'Wrapped Moonbeam on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/3767E2BAD1F31EB4DA574ECA98DCE15D7CC5458813CBD80D6FE6DE14A32023FD',
+          exponent: 0,
+          aliases: ['wglmr-wei']
+        },
+        {
+          denom: 'wglmr',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/3767E2BAD1F31EB4DA574ECA98DCE15D7CC5458813CBD80D6FE6DE14A32023FD',
+      name: 'Wrapped Moonbeam',
+      display: 'wglmr',
+      symbol: 'WGLMR',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'wglmr-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg'
+        }
+      ]
+    },
+    {
+      description: 'Wrapped Matic on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/6CB71B14D0D37FAB8BCBB2D6DA0B5EB0502131E748B660E6E45C388192689E5F',
+          exponent: 0,
+          aliases: ['wmatic-wei']
+        },
+        {
+          denom: 'wmatic',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/6CB71B14D0D37FAB8BCBB2D6DA0B5EB0502131E748B660E6E45C388192689E5F',
+      name: 'Wrapped Matic',
+      display: 'wmatic',
+      symbol: 'WMATIC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'wmatic-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg'
+        }
+      ]
+    },
+    {
+      description: 'Wrapped BNB on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/B60809C1CFE21F01C384EFB3F3442D09094ED406FCB548205D5135B1688677CE',
+          exponent: 0,
+          aliases: ['wbnb-wei']
+        },
+        {
+          denom: 'wbnb',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/B60809C1CFE21F01C384EFB3F3442D09094ED406FCB548205D5135B1688677CE',
+      name: 'Wrapped BNB',
+      display: 'wbnb',
+      symbol: 'WBNB',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'wbnb-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.svg'
+        }
+      ]
+    },
+    {
+      description: 'Binance USD on Axelar.',
+      denom_units: [
+        {
+          denom:
+            'ibc/13EBA97B05F420F48BC5817F36E26AA6368DE8B47D7821FBF31DA16A0F1DF01F',
+          exponent: 0,
+          aliases: ['busd-wei']
+        },
+        {
+          denom: 'busd',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/13EBA97B05F420F48BC5817F36E26AA6368DE8B47D7821FBF31DA16A0F1DF01F',
+      name: 'Binance USD',
+      display: 'busd',
+      symbol: 'BUSD',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'busd-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/busd.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/busd.png'
+        }
+      ]
+    },
+    {
+      description: 'Wrapped AVAX on Axelar.',
+      denom_units: [
+        {
+          denom:
+            'ibc/B0231CA8C9EBFDB8AB9825A1BC6C85F00125E8CEDDAC12D7B691568136B3EEB4',
+          exponent: 0,
+          aliases: ['wavax-wei']
+        },
+        {
+          denom: 'avax',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/B0231CA8C9EBFDB8AB9825A1BC6C85F00125E8CEDDAC12D7B691568136B3EEB4',
+      name: 'Wrapped AVAX',
+      display: 'avax',
+      symbol: 'WAVAX',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'wavax-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/wavax.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/wavax.svg'
+        }
+      ]
+    },
+    {
+      description: 'Wrapped FTM on Axelar.',
+      denom_units: [
+        {
+          denom:
+            'ibc/B408450550D81C01DEF786F292D76A9EFDE90FCF97F84EBE8B7F7050F3080E6D',
+          exponent: 0,
+          aliases: ['wftm-wei']
+        },
+        {
+          denom: 'ftm',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/B408450550D81C01DEF786F292D76A9EFDE90FCF97F84EBE8B7F7050F3080E6D',
+      name: 'Wrapped FTM',
+      display: 'ftm',
+      symbol: 'WFTM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'wftm-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.png'
+        }
+      ]
+    },
+    {
+      description: "Circle's stablecoin from Polygon on Axelar",
+      denom_units: [
+        {
+          denom:
+            'ibc/D5FC0CC7E499D765EB874F9ECFB9E43EFA3F8DC57021CECF27A188DB83B8B7DC',
+          exponent: 0,
+          aliases: ['polygon-uusdc']
+        },
+        {
+          denom: 'polygon-usdc',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/D5FC0CC7E499D765EB874F9ECFB9E43EFA3F8DC57021CECF27A188DB83B8B7DC',
+      name: 'USD Coin from Polygon',
+      display: 'polygon-usdc',
+      symbol: 'USDC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'polygon-uusdc',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg'
+        }
+      ]
+    },
+    {
+      description: "Circle's stablecoin from Avalanche on Axelar",
+      denom_units: [
+        {
+          denom:
+            'ibc/896136CBE7942CC3159D536EFE36F9F2D4EA785452BA657C4FA8D19FE7B3DC4E',
+          exponent: 0,
+          aliases: ['avalanche-uusdc']
+        },
+        {
+          denom: 'avalanche-usdc',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/896136CBE7942CC3159D536EFE36F9F2D4EA785452BA657C4FA8D19FE7B3DC4E',
+      name: 'USD Coin from Avalanche',
+      display: 'avalanche-usdc',
+      symbol: 'USDC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'avalanche-uusdc',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg'
+        }
+      ]
+    },
+    {
+      description: 'Wrapped FIL on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/A7B840AC276BC9C81BE39BAFBC230A464A59BC861FA237611AD3F0EA057515C9',
+          exponent: 0,
+          aliases: ['wfil-wei']
+        },
+        {
+          denom: 'fil',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/A7B840AC276BC9C81BE39BAFBC230A464A59BC861FA237611AD3F0EA057515C9',
+      name: 'Wrapped FIL from Filecoin',
+      display: 'fil',
+      symbol: 'axlFIL',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'wfil-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/wfil.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/wfil.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/wfil.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/wfil.svg'
+        }
+      ]
+    },
+    {
+      description: 'Arbitrum on Axelar',
+      denom_units: [
+        {
+          denom:
+            'ibc/51146B5ED257231C9CC83A4E2097C7C3C52ACBA7CE610F312C89525BA8BF68C9',
+          exponent: 0,
+          aliases: ['arb-wei']
+        },
+        {
+          denom: 'arb',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/51146B5ED257231C9CC83A4E2097C7C3C52ACBA7CE610F312C89525BA8BF68C9',
+      name: 'Arbitrum',
+      display: 'arb',
+      symbol: 'ARB',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'arb-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/arbitrum/images/arb.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/arbitrum/images/arb.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/arbitrum/images/arb.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/arbitrum/images/arb.svg'
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/592D59A4896623303F408F9D940ACC9A4E762E8E333896F753ACEEB7E7A200AA',
+          exponent: 0,
+          aliases: ['pepe-wei']
+        },
+        {
+          denom: 'pepe',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/592D59A4896623303F408F9D940ACC9A4E762E8E333896F753ACEEB7E7A200AA',
+      name: 'Pepe',
+      display: 'pepe',
+      symbol: 'PEPE',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'pepe-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0x6982508145454Ce325dDbE47a25d4ec3d2311933'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/372491B41AD251700AA91577B452C5D81EEFB993BBECC3A7F6D106F228355622',
+          exponent: 0,
+          aliases: ['cbeth-wei']
+        },
+        {
+          denom: 'cbeth',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/372491B41AD251700AA91577B452C5D81EEFB993BBECC3A7F6D106F228355622',
+      name: 'Coinbase Wrapped Staked ETH',
+      display: 'cbeth',
+      symbol: 'cbETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'cbeth-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xbe9895146f7af43049ca1c1ae358b0541ea49704'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/cbeth.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/cbeth.png'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/F64F4AEF0C738B842A837A6B36C44B861EE59AA7F19B64C6E0AA920E18BB68AF',
+          exponent: 0,
+          aliases: ['reth-wei']
+        },
+        {
+          denom: 'reth',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/F64F4AEF0C738B842A837A6B36C44B861EE59AA7F19B64C6E0AA920E18BB68AF',
+      name: 'Rocket Pool Ether',
+      display: 'reth',
+      symbol: 'rETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'reth-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xae78736cd615f374d3085123a210448e74fc6393'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/reth.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/reth.png'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/6A3761B1C148441BDDE12ADB3A22CBDB812658901FFC2A23091BEBCB4C85CC61',
+          exponent: 0,
+          aliases: ['sfrxeth-wei']
+        },
+        {
+          denom: 'sfrxeth',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/6A3761B1C148441BDDE12ADB3A22CBDB812658901FFC2A23091BEBCB4C85CC61',
+      name: 'Staked Frax Ether',
+      display: 'sfrxeth',
+      symbol: 'sfrxETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'sfrxeth-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xac3e018457b222d93114458476f3e3416abbe38f'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sfrxeth.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sfrxeth.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/E9383A86D0A5E8A96E476BDF478D18DB40C92860CDBB0F5CB0E2C4E0D2D7C634',
+          exponent: 0,
+          aliases: ['wsteth-wei']
+        },
+        {
+          denom: 'wsteth',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/E9383A86D0A5E8A96E476BDF478D18DB40C92860CDBB0F5CB0E2C4E0D2D7C634',
+      name: 'Wrapped Lido Staked Ether',
+      display: 'wsteth',
+      symbol: 'wstETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'wsteth-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wsteth.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wsteth.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/B07E71E9C6FCA04AE9E0AE194F1A0A819DC1E7519994185C71F6C4160A006487',
+          exponent: 0,
+          aliases: ['yieldeth-wei']
+        },
+        {
+          denom: 'YieldETH',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/B07E71E9C6FCA04AE9E0AE194F1A0A819DC1E7519994185C71F6C4160A006487',
+      name: 'Real Yield Eth',
+      display: 'YieldETH',
+      symbol: 'YieldETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'yieldeth-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xb5b29320d2Dde5BA5BAFA1EbcD270052070483ec'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/yieldeth.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/yieldeth.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/yieldeth.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/yieldeth.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/8A5AFDAFDA576224986E1DE7665B474CEE316E827A90805D23F88109BF0AEC64',
+          exponent: 0,
+          aliases: ['ox-wei']
+        },
+        {
+          denom: 'ox',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/8A5AFDAFDA576224986E1DE7665B474CEE316E827A90805D23F88109BF0AEC64',
+      name: 'Open Exchange Token',
+      display: 'ox',
+      symbol: 'OX',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-77',
+            base_denom: 'ox-wei',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-27'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ox.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ox.svg'
+      }
     },
     {
       description: 'The native staking and governance token of the Cosmos Hub.',
@@ -1040,7 +2581,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/18A24135D50F625E4B7D2685ECD05DDD7C2D261519EEAE8FF0EC2909B09351D1',
+            'ibc/8823E9CAC3962DAB099E8F75132557AD010C96D6C75B10FA28A45889DBC171A6',
           exponent: 0,
           aliases: [
             'ibc/E5CA126979E2FFB4C70C072F8094D07ECF27773B37623AD2BF7582AD0726F0F3'
@@ -1051,7 +2592,7 @@ const assets: AssetList = {
           exponent: 8
         }
       ],
-      base: 'ibc/18A24135D50F625E4B7D2685ECD05DDD7C2D261519EEAE8FF0EC2909B09351D1',
+      base: 'ibc/8823E9CAC3962DAB099E8F75132557AD010C96D6C75B10FA28A45889DBC171A6',
       name: 'Wormhole Solana',
       display: 'sol',
       symbol: 'whSOL',

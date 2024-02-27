@@ -49,6 +49,10 @@ const info: Chain = {
         provider: 'kjnodes'
       },
       {
+        address: 'https://humans.rpc.nodeshub.online',
+        provider: 'NodesHub'
+      },
+      {
         address: 'https://humans-mainnet-rpc.itrocket.net',
         provider: 'itrocket'
       },
@@ -93,6 +97,10 @@ const info: Chain = {
       {
         address: 'https://humans.api.kjnodes.com',
         provider: 'kjnodes'
+      },
+      {
+        address: 'https://humans.api.nodeshub.online',
+        provider: 'NodesHub'
       },
       {
         address: 'https://humans-mainnet-api.itrocket.net',

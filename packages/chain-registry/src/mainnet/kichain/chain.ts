@@ -80,6 +80,10 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
+        address: 'https://kichain.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://api.kichain.chaintools.tech/',
         provider: 'ChainTools'
       },
@@ -139,6 +143,11 @@ const info: Chain = {
       url: 'https://www.mintscan.io/ki-chain',
       tx_page: 'https://www.mintscan.io/ki-chain/txs/${txHash}',
       account_page: 'https://www.mintscan.io/ki-chain/account/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Kichain-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Kichain-Mainnet/tx/${txHash}'
     },
     {
       kind: 'ping.pub',

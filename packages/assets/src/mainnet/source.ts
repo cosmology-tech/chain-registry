@@ -13597,6 +13597,94 @@ const assets: AssetList = {
           }
         }
       ]
+    },
+    {
+      description:
+        'The native EVM, governance and staking token of the Planq Network',
+      denom_units: [
+        {
+          denom:
+            'ibc/F0A06D765AE0B260AA2655BFEE907E56A1B29008905F92A8796EA2A86D5E2CE9',
+          exponent: 0,
+          aliases: ['aplanq']
+        },
+        {
+          denom: 'planq',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/F0A06D765AE0B260AA2655BFEE907E56A1B29008905F92A8796EA2A86D5E2CE9',
+      name: 'Planq',
+      display: 'planq',
+      symbol: 'PLQ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg'
+      },
+      coingecko_id: 'planq',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-61',
+            base_denom: 'aplanq',
+            chain_name: 'planq'
+          },
+          chain: {
+            channel_id: 'channel-1'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The token of Source Protocol bridged from BSC.',
+      denom_units: [
+        {
+          denom:
+            'ibc/FC5A7360EEED0713AE3E83E9D55A69AF873056A172AC495890ACE4582FF9685A',
+          exponent: 0,
+          aliases: ['erc20/0x091F9A57A3F58d758b6572E9d41675918EAC7F09']
+        },
+        {
+          denom: 'srcx',
+          exponent: 9
+        }
+      ],
+      base: 'ibc/FC5A7360EEED0713AE3E83E9D55A69AF873056A172AC495890ACE4582FF9685A',
+      name: 'Source Token',
+      display: 'srcx',
+      symbol: 'SRCX',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-61',
+            base_denom: 'erc20/0x091F9A57A3F58d758b6572E9d41675918EAC7F09',
+            chain_name: 'planq'
+          },
+          chain: {
+            channel_id: 'channel-1'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'binancesmartchain',
+            base_denom: '0x454b90716a9435e7161a9aea5cf00e0acbe565ae'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
+      }
     }
   ]
 };

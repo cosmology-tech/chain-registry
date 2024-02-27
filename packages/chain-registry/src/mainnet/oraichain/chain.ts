@@ -42,6 +42,10 @@ const info: Chain = {
         provider: 'oraichain-team'
       },
       {
+        address: 'https://rpc.orai.pfc.zone/',
+        provider: 'PFC'
+      },
+      {
         address: 'https://rpc-orai.nodine.id/',
         provider: 'Nodine.ID'
       },
@@ -88,6 +92,10 @@ const info: Chain = {
       {
         address: 'grpc-oraichain.mms.team:443',
         provider: 'MMS'
+      },
+      {
+        address: 'grpc.orai.pfc.zone:443',
+        provider: 'PFC'
       },
       {
         address: 'oraichain-mainnet-grpc.autostake.com:443',

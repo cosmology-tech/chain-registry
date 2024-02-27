@@ -78,6 +78,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/injective/rpc',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://rpc.injective.bronbro.io/',
+        provider: 'Bro_n_Bro'
       }
     ],
     rest: [
@@ -120,6 +124,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/injective/rest',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://lcd.injective.bronbro.io/',
+        provider: 'Bro_n_Bro'
       }
     ],
     grpc: [
@@ -166,6 +174,10 @@ const info: Chain = {
       {
         address: 'grpc-injective.whispernode.com:443',
         provider: 'WhisperNode 🤐'
+      },
+      {
+        address: 'grpc.injective.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ]
   },

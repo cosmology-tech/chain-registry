@@ -96,6 +96,7 @@ export * as realio from './realio';
 export * as rebus from './rebus';
 export * as regen from './regen';
 export * as rizon from './rizon';
+export * as scorum from './scorum';
 export * as secretnetwork from './secretnetwork';
 export * as sei from './sei';
 export * as sentinel from './sentinel';

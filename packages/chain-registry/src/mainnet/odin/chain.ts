@@ -42,6 +42,10 @@ const info: Chain = {
         provider: 'Heimdall Gateway'
       },
       {
+        address: 'https://odin.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://odin-rpc.lavenderfive.com/',
         provider: 'Lavender.Five Nodes 🐝'
       },
@@ -54,6 +58,10 @@ const info: Chain = {
       {
         address: 'https://api.odinprotocol.io',
         provider: 'Heimdall Gateway'
+      },
+      {
+        address: 'https://odin.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'https://odin-api.lavenderfive.com/',
@@ -70,6 +78,10 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
+        address: 'odin.grpc.m.stavr.tech:122',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'odin-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
       }
@@ -80,6 +92,11 @@ const info: Chain = {
       kind: 'odin web',
       url: 'https://mainnet.odinprotocol.io/',
       tx_page: 'https://mainnet.odinprotocol.io/transactions/${txHash}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Odin-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Odin-Mainnet/tx/${txHash}'
     },
     {
       kind: 'ping.pub',

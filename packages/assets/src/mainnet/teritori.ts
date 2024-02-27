@@ -894,7 +894,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/DD4BBB6B8CBA637A1C89F297C5E8263226ECFD12434649F3B3925F6ED0A32AAC',
+            'ibc/E4E14000D69EDA8FD1D20D22794740DE6DD38C336CB7229CA830CFFDF9BCC1D8',
           exponent: 0,
           aliases: [
             'ibc/E5CA126979E2FFB4C70C072F8094D07ECF27773B37623AD2BF7582AD0726F0F3'
@@ -905,7 +905,7 @@ const assets: AssetList = {
           exponent: 8
         }
       ],
-      base: 'ibc/DD4BBB6B8CBA637A1C89F297C5E8263226ECFD12434649F3B3925F6ED0A32AAC',
+      base: 'ibc/E4E14000D69EDA8FD1D20D22794740DE6DD38C336CB7229CA830CFFDF9BCC1D8',
       name: 'Wormhole Solana',
       display: 'sol',
       symbol: 'whSOL',

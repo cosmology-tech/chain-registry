@@ -98,6 +98,7 @@ import _realio from './realio';
 import _rebus from './rebus';
 import _regen from './regen';
 import _rizon from './rizon';
+import _scorum from './scorum';
 import _secretnetwork from './secretnetwork';
 import _sei from './sei';
 import _sentinel from './sentinel';
@@ -220,6 +221,7 @@ const assets: AssetList[] = [
   _rebus,
   _regen,
   _rizon,
+  _scorum,
   _secretnetwork,
   _sei,
   _sentinel,

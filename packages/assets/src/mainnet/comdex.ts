@@ -307,48 +307,6 @@ const assets: AssetList = {
     },
     {
       description:
-        'Hava Coin is the lifeblood of the Cosmos & Juno networks, rewarding builders and welcoming supporters. https://havacoin.xyz/',
-      denom_units: [
-        {
-          denom:
-            'ibc/F2F52F0A45BE34BDA4198B11E4C5FBB7142427D7729B25FEA79FA82721A115D5',
-          exponent: 0,
-          aliases: ['factory/juno195asgku87kxgu48s447z0ryhsyn5rl3yzvfw0d/uhava']
-        },
-        {
-          denom: 'hava',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/F2F52F0A45BE34BDA4198B11E4C5FBB7142427D7729B25FEA79FA82721A115D5',
-      name: 'Hava Coin',
-      display: 'hava',
-      symbol: 'HAVA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hava.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hava.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-36',
-            base_denom:
-              'factory/juno195asgku87kxgu48s447z0ryhsyn5rl3yzvfw0d/uhava',
-            chain_name: 'juno'
-          },
-          chain: {
-            channel_id: 'channel-18'
-          }
-        }
-      ]
-    },
-    {
-      description:
         'The native staking and governance token of the Kujira chain.',
       denom_units: [
         {
@@ -1102,7 +1060,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/FC6ED2F8C913125B31DB94FC86C7DC6052971101AE4C17EB650A71139DDEF804',
+            'ibc/2F57473C713CC79ACE2956A87E69A96FBB543A5936B6CBEB41ED0737B1EA357B',
           exponent: 0,
           aliases: [
             'ibc/E5CA126979E2FFB4C70C072F8094D07ECF27773B37623AD2BF7582AD0726F0F3'
@@ -1113,7 +1071,7 @@ const assets: AssetList = {
           exponent: 8
         }
       ],
-      base: 'ibc/FC6ED2F8C913125B31DB94FC86C7DC6052971101AE4C17EB650A71139DDEF804',
+      base: 'ibc/2F57473C713CC79ACE2956A87E69A96FBB543A5936B6CBEB41ED0737B1EA357B',
       name: 'Wormhole Solana',
       display: 'sol',
       symbol: 'whSOL',

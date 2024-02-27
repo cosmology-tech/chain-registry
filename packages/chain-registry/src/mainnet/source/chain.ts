@@ -150,6 +150,10 @@ const info: Chain = {
       {
         address: 'https://rest.source.posthuman.digital',
         provider: 'posthuman'
+      },
+      {
+        address: 'http://source.api.staking-explorer.com',
+        provider: 'Daily $SOURCE DROP 💰'
       }
     ],
     grpc: [

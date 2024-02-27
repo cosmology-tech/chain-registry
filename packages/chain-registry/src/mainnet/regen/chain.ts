@@ -45,6 +45,10 @@ const info: Chain = {
         provider: 'vitwit'
       },
       {
+        address: 'https://regen.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://regen.stakesystems.io:2053',
         provider: 'stakesystems'
       },
@@ -87,6 +91,10 @@ const info: Chain = {
         provider: 'stakesystems'
       },
       {
+        address: 'https://regen.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://api-regen-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
       },
@@ -125,6 +133,10 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
+        address: 'regen.grpc.m.stavr.tech:124',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'regen-grpc.w3coins.io:22790',
         provider: 'w3coins'
       },
@@ -140,6 +152,11 @@ const info: Chain = {
       url: 'https://www.mintscan.io/regen',
       tx_page: 'https://www.mintscan.io/regen/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/regen/accounts/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Regen-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Regen-Mainnet/tx/${txHash}'
     },
     {
       kind: 'ping.pub',

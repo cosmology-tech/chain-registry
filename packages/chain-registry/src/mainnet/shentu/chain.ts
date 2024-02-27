@@ -45,6 +45,10 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
+        address: 'https://shentu.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://shentu-rpc.ramuchi.tech',
         provider: 'ramuchi.tech'
       },
@@ -79,6 +83,10 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
+        address: 'https://shentu.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://shentu-api.ramuchi.tech',
         provider: 'ramuchi.tech'
       },
@@ -109,6 +117,10 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
+        address: 'shentu.grpc.m.stavr.tech:9593',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://shentu-grpc.ramuchi.tech:12090',
         provider: 'ramuchi.tech'
       },
@@ -136,6 +148,13 @@ const info: Chain = {
       url: 'https://app.ezstaking.io/shentu',
       tx_page: 'https://app.ezstaking.io/shentu/txs/${txHash}',
       account_page: 'https://app.ezstaking.io/shentu/account/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Shentu-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Shentu-Mainnet/txs/${txHash}',
+      account_page:
+        'https://explorer.stavr.tech/Shentu-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'mintscan',

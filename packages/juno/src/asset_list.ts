@@ -2239,7 +2239,8 @@ const asset_list: AssetList = {
       ]
     },
     {
-      description: 'L DON a BitSong Music FanToken',
+      deprecated: true,
+      description: '[Redacted] a BitSong Music FanToken',
       denom_units: [
         {
           denom:
@@ -2248,22 +2249,14 @@ const asset_list: AssetList = {
           aliases: ['ft347B1612A2B7659913679CF6CD45B8B130C50A00']
         },
         {
-          denom: 'ldon',
+          denom: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00/6',
           exponent: 6
         }
       ],
       base: 'ibc/98DDD2EC382F0BB185A0EC8206D939673B62FB2EA511D79ECC4A623E7FBC413E',
-      name: 'L DON Fantoken',
-      display: 'ldon',
+      name: '[Redacted] Fantoken (ft3...A00)',
+      display: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00/6',
       symbol: 'LDON',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft347B1612A2B7659913679CF6CD45B8B130C50A00.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft347B1612A2B7659913679CF6CD45B8B130C50A00.png'
-        }
-      ],
       traces: [
         {
           type: 'ibc',
@@ -4221,7 +4214,7 @@ const asset_list: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/9FB4893DF27BCBD63E23C5A1694A3F08DAC8507C292EB0515CD368FFE4229CAC',
+            'ibc/996B7975DE362A67674029A04255167200D41CB02DA4156B000323FD7B27EBEB',
           exponent: 0,
           aliases: [
             'ibc/E5CA126979E2FFB4C70C072F8094D07ECF27773B37623AD2BF7582AD0726F0F3'
@@ -4232,7 +4225,7 @@ const asset_list: AssetList = {
           exponent: 8
         }
       ],
-      base: 'ibc/9FB4893DF27BCBD63E23C5A1694A3F08DAC8507C292EB0515CD368FFE4229CAC',
+      base: 'ibc/996B7975DE362A67674029A04255167200D41CB02DA4156B000323FD7B27EBEB',
       name: 'Wormhole Solana',
       display: 'sol',
       symbol: 'whSOL',

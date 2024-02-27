@@ -1,6 +1,5 @@
 import { AssetList } from '@chain-registry/types';
 
-import * as _ from './';
 import * as _8ball from './8ball';
 import * as _acrechain from './acrechain';
 import * as _agoric from './agoric';
@@ -151,7 +150,6 @@ import * as _xpla from './xpla';
 import * as _zetachain from './zetachain';
 
 const assets: AssetList[] = [
-  _.assets,
   _8ball.assets,
   _acrechain.assets,
   _agoric.assets,
