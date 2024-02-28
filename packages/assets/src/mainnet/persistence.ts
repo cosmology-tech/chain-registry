@@ -18875,6 +18875,275 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'The native token of Stargaze',
+      denom_units: [
+        {
+          denom:
+            'ibc/AD8E1D4AC4EA8FC79CC46E33319A3791477D4DEBFC30D5D874074B993422B41B',
+          exponent: 0,
+          aliases: ['ustars']
+        },
+        {
+          denom: 'stars',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/AD8E1D4AC4EA8FC79CC46E33319A3791477D4DEBFC30D5D874074B993422B41B',
+      name: 'Stargaze',
+      display: 'stars',
+      symbol: 'STARS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
+      },
+      coingecko_id: 'stargaze',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-287',
+            base_denom: 'ustars',
+            chain_name: 'stargaze'
+          },
+          chain: {
+            channel_id: 'channel-197'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native token of ohhNFT.',
+      denom_units: [
+        {
+          denom:
+            'ibc/FAB9D0A5DA417BE2C76655EEE07872FEB763F7792BE3052C6534D39471C94271',
+          exponent: 0,
+          aliases: ['factory/stars16da2uus9zrsy83h23ur42v3lglg5rmyrpqnju4/dust']
+        },
+        {
+          denom: 'strdst',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/FAB9D0A5DA417BE2C76655EEE07872FEB763F7792BE3052C6534D39471C94271',
+      name: 'Stardust STRDST',
+      display: 'strdst',
+      symbol: 'STRDST',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/dust.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/dust.svg'
+      },
+      coingecko_id: '',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/dust.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/dust.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-287',
+            base_denom:
+              'factory/stars16da2uus9zrsy83h23ur42v3lglg5rmyrpqnju4/dust',
+            chain_name: 'stargaze'
+          },
+          chain: {
+            channel_id: 'channel-197'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native meme token of stargaze.',
+      denom_units: [
+        {
+          denom:
+            'ibc/AC9E1FB85A18A03C0B4999C352E6E7F80A998C06DC11A2D167914BDB509EB7AD',
+          exponent: 0,
+          aliases: [
+            'factory/stars16da2uus9zrsy83h23ur42v3lglg5rmyrpqnju4/mGAZE'
+          ]
+        },
+        {
+          denom: 'GAZE',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/AC9E1FB85A18A03C0B4999C352E6E7F80A998C06DC11A2D167914BDB509EB7AD',
+      name: 'Gaze GAZE',
+      display: 'GAZE',
+      symbol: 'GAZE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/gaze.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/gaze.svg'
+      },
+      coingecko_id: '',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/gaze.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/gaze.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-287',
+            base_denom:
+              'factory/stars16da2uus9zrsy83h23ur42v3lglg5rmyrpqnju4/mGAZE',
+            chain_name: 'stargaze'
+          },
+          chain: {
+            channel_id: 'channel-197'
+          }
+        }
+      ]
+    },
+    {
+      description: 'ohhNFT LP token.',
+      denom_units: [
+        {
+          denom:
+            'ibc/B1CE8021FE0212DD21FD5F62769B484C1964921869E50805CA336B0810B38CB9',
+          exponent: 0,
+          aliases: [
+            'factory/stars16da2uus9zrsy83h23ur42v3lglg5rmyrpqnju4/uBRNCH'
+          ]
+        },
+        {
+          denom: 'BRNCH',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/B1CE8021FE0212DD21FD5F62769B484C1964921869E50805CA336B0810B38CB9',
+      name: 'Branch',
+      display: 'BRNCH',
+      symbol: 'BRNCH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/brnch.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/brnch.svg'
+      },
+      coingecko_id: '',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/brnch.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/brnch.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-287',
+            base_denom:
+              'factory/stars16da2uus9zrsy83h23ur42v3lglg5rmyrpqnju4/uBRNCH',
+            chain_name: 'stargaze'
+          },
+          chain: {
+            channel_id: 'channel-197'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Social token for the ohhVAULT.',
+      denom_units: [
+        {
+          denom:
+            'ibc/BCAC1AFF5ADBA3ECC6D8675464E790381409BB8EEF0163058D0CA351E3E93830',
+          exponent: 0,
+          aliases: ['factory/stars16da2uus9zrsy83h23ur42v3lglg5rmyrpqnju4/uOHH']
+        },
+        {
+          denom: 'OHH',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/BCAC1AFF5ADBA3ECC6D8675464E790381409BB8EEF0163058D0CA351E3E93830',
+      name: 'ohhVAULT ohh',
+      display: 'OHH',
+      symbol: 'OHH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/ohh.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/ohh.svg'
+      },
+      coingecko_id: '',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/ohh.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/ohh.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-287',
+            base_denom:
+              'factory/stars16da2uus9zrsy83h23ur42v3lglg5rmyrpqnju4/uOHH',
+            chain_name: 'stargaze'
+          },
+          chain: {
+            channel_id: 'channel-197'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native coin of Sneaky Productions.',
+      denom_units: [
+        {
+          denom:
+            'ibc/AD31AD53FF81FEF89731F9AC8FCEFD379C2346CABEAA940E6551B89073863DEE',
+          exponent: 0,
+          aliases: [
+            'factory/stars1xx5976njvxpl9n4v8huvff6cudhx7yuu8e7rt4/usneaky'
+          ]
+        },
+        {
+          denom: 'sneaky',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/AD31AD53FF81FEF89731F9AC8FCEFD379C2346CABEAA940E6551B89073863DEE',
+      name: 'Sneaky Productions',
+      display: 'sneaky',
+      symbol: 'SNEAKY',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/sneaky.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/sneaky.svg'
+      },
+      coingecko_id: '',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/sneaky.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/sneaky.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-287',
+            base_denom:
+              'factory/stars1xx5976njvxpl9n4v8huvff6cudhx7yuu8e7rt4/usneaky',
+            chain_name: 'stargaze'
+          },
+          chain: {
+            channel_id: 'channel-197'
+          }
+        }
+      ]
+    },
+    {
       description:
         'IOV coin is the token for the Starname (IOV) Asset Name Service',
       denom_units: [

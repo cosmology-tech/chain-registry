@@ -13679,12 +13679,25 @@ const assets: AssetList = {
       display: 'nym',
       symbol: 'NYM',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym-token-light.png'
       },
       coingecko_id: 'nym',
       images: [
         {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym-token-light.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym-token-light.svg',
+          theme: {
+            dark_mode: false,
+            circle: true
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym-token-dark.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym-token-dark.svg',
+          theme: {
+            dark_mode: true,
+            circle: true
+          }
         }
       ],
       traces: [
@@ -22552,14 +22565,14 @@ const assets: AssetList = {
         'Minerva was one of the main goddesses worshiped by the Roman Pagans and is a goddess from Roman Mythology.',
       type_asset: 'cw20',
       address:
-        'juno1lsfym25w35ylhuq4m48fmycwe6nhntzh2ag2pttqtfe8cew9s25s2ym9t8',
+        'juno1h86ut5aevlxuuxrra6wy3dfq6e39zkzzv9eelz678jr6amxlc4gsx46j82',
       denom_units: [
         {
           denom:
-            'ibc/297AF7827A8D61CB77DADAF6D951D428ACAF56C37BB98079B4B32DC694A73F20',
+            'ibc/9E1F8DBB64753CAB022F2BDEA0D2C3B53522F372140DDF494AEE94C3078925E8',
           exponent: 0,
           aliases: [
-            'cw20:juno1lsfym25w35ylhuq4m48fmycwe6nhntzh2ag2pttqtfe8cew9s25s2ym9t8'
+            'cw20:juno1h86ut5aevlxuuxrra6wy3dfq6e39zkzzv9eelz678jr6amxlc4gsx46j82'
           ]
         },
         {
@@ -22567,7 +22580,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/297AF7827A8D61CB77DADAF6D951D428ACAF56C37BB98079B4B32DC694A73F20',
+      base: 'ibc/9E1F8DBB64753CAB022F2BDEA0D2C3B53522F372140DDF494AEE94C3078925E8',
       name: 'MINERVA',
       display: 'minerva',
       symbol: 'MRVA',
@@ -22586,7 +22599,56 @@ const assets: AssetList = {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
             channel_id: 'channel-47',
             base_denom:
-              'cw20:juno1lsfym25w35ylhuq4m48fmycwe6nhntzh2ag2pttqtfe8cew9s25s2ym9t8',
+              'cw20:juno1h86ut5aevlxuuxrra6wy3dfq6e39zkzzv9eelz678jr6amxlc4gsx46j82',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'In Roman mythology, Juno (Latin: Iuno; pronounced [[Help:Pronunciation|[ˈjuːnoː]]]) was the protector and advisor of the state.',
+      type_asset: 'cw20',
+      address:
+        'juno13c57ssxvlzefsj4v5spdz4m9r6c6s2far5npvmc9en7nz02xqjyqne40gk',
+      denom_units: [
+        {
+          denom:
+            'ibc/EF9E75F44C52D139A6C98A0E37183E1C32ED6F00BDCFA0020550D78C31A62C0E',
+          exponent: 0,
+          aliases: [
+            'cw20:juno13c57ssxvlzefsj4v5spdz4m9r6c6s2far5npvmc9en7nz02xqjyqne40gk'
+          ]
+        },
+        {
+          denom: 'luno',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/EF9E75F44C52D139A6C98A0E37183E1C32ED6F00BDCFA0020550D78C31A62C0E',
+      name: 'LUNO',
+      display: 'luno',
+      symbol: 'LUNO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/luno.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/luno.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno13c57ssxvlzefsj4v5spdz4m9r6c6s2far5npvmc9en7nz02xqjyqne40gk',
             chain_name: 'juno'
           },
           chain: {

@@ -218,6 +218,55 @@ const assets: AssetList = {
           }
         }
       ]
+    },
+    {
+      description: 'The native token of the Titan network.',
+      denom_units: [
+        {
+          denom:
+            'ibc/9EB62C79953545C992B245713E325596D9B821539417F5BF245DE5C84C538EAE',
+          exponent: 0,
+          aliases: ['atkx']
+        },
+        {
+          denom: 'utkx',
+          exponent: 12,
+          aliases: ['microtkx']
+        },
+        {
+          denom: 'mtkx',
+          exponent: 15,
+          aliases: ['millitkx']
+        },
+        {
+          denom: 'tkx',
+          exponent: 18,
+          aliases: []
+        }
+      ],
+      base: 'ibc/9EB62C79953545C992B245713E325596D9B821539417F5BF245DE5C84C538EAE',
+      display: 'tkx',
+      name: 'titan tkx',
+      symbol: 'TKX',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
+        }
+      ],
+      keywords: ['staking'],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'atkx',
+            chain_name: 'titantestnet'
+          },
+          chain: {
+            channel_id: 'channel-807'
+          }
+        }
+      ]
     }
   ]
 };

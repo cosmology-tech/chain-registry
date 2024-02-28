@@ -2866,6 +2866,50 @@ const assets: AssetList = {
     },
     {
       description:
+        'The native governance and staking token of the Dymension Hub',
+      denom_units: [
+        {
+          denom:
+            'ibc/E1C22332C083574F3418481359733BA8887D171E76C80AD9237422AEABB66018',
+          exponent: 0,
+          aliases: ['adym']
+        },
+        {
+          denom: 'dym',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/E1C22332C083574F3418481359733BA8887D171E76C80AD9237422AEABB66018',
+      name: 'Dymension',
+      display: 'dym',
+      symbol: 'DYM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg'
+      },
+      coingecko_id: 'dymension',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'adym',
+            chain_name: 'dymension'
+          },
+          chain: {
+            channel_id: 'channel-197'
+          }
+        }
+      ]
+    },
+    {
+      description:
         'The native EVM, governance and staking token of the Evmos Hub',
       denom_units: [
         {

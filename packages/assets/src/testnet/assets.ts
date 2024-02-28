@@ -29,6 +29,7 @@ import _quicksilvertestnet from './quicksilvertestnet';
 import _sagatestnet from './sagatestnet';
 import _sgetestnet from './sgetestnet';
 import _stargazetestnet from './stargazetestnet';
+import _titantestnet from './titantestnet';
 import _xiontestnet from './xiontestnet';
 
 const assets: AssetList[] = [
@@ -61,6 +62,7 @@ const assets: AssetList[] = [
   _sagatestnet,
   _sgetestnet,
   _stargazetestnet,
+  _titantestnet,
   _xiontestnet
 ];
 
