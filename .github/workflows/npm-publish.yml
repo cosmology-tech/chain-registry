@@ -35,6 +35,7 @@ jobs:
           git config user.email "${{ github.actor}}@users.noreply.github.com"
           BRANCH_NAME="build-$(date +%Y%m%d-%H%M%S)"
           git checkout -b $BRANCH_NAME
+          git add .
           git commit -am "build 🛠"
           git push origin $BRANCH_NAME
         env:
