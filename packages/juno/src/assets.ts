@@ -2056,11 +2056,11 @@ const assets: AssetList = {
         'Minerva was one of the main goddesses worshiped by the Roman Pagans and is a goddess from Roman Mythology.',
       type_asset: 'cw20',
       address:
-        'juno1lsfym25w35ylhuq4m48fmycwe6nhntzh2ag2pttqtfe8cew9s25s2ym9t8',
+        'juno1h86ut5aevlxuuxrra6wy3dfq6e39zkzzv9eelz678jr6amxlc4gsx46j82',
       denom_units: [
         {
           denom:
-            'cw20:juno1lsfym25w35ylhuq4m48fmycwe6nhntzh2ag2pttqtfe8cew9s25s2ym9t8',
+            'cw20:juno1h86ut5aevlxuuxrra6wy3dfq6e39zkzzv9eelz678jr6amxlc4gsx46j82',
           exponent: 0
         },
         {
@@ -2068,7 +2068,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'cw20:juno1lsfym25w35ylhuq4m48fmycwe6nhntzh2ag2pttqtfe8cew9s25s2ym9t8',
+      base: 'cw20:juno1h86ut5aevlxuuxrra6wy3dfq6e39zkzzv9eelz678jr6amxlc4gsx46j82',
       name: 'MINERVA',
       display: 'minerva',
       symbol: 'MRVA',
@@ -2078,6 +2078,36 @@ const assets: AssetList = {
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/minerva.png'
+        }
+      ]
+    },
+    {
+      description:
+        'In Roman mythology, Juno (Latin: Iuno; pronounced [[Help:Pronunciation|[ˈjuːnoː]]]) was the protector and advisor of the state.',
+      type_asset: 'cw20',
+      address:
+        'juno13c57ssxvlzefsj4v5spdz4m9r6c6s2far5npvmc9en7nz02xqjyqne40gk',
+      denom_units: [
+        {
+          denom:
+            'cw20:juno13c57ssxvlzefsj4v5spdz4m9r6c6s2far5npvmc9en7nz02xqjyqne40gk',
+          exponent: 0
+        },
+        {
+          denom: 'luno',
+          exponent: 6
+        }
+      ],
+      base: 'cw20:juno13c57ssxvlzefsj4v5spdz4m9r6c6s2far5npvmc9en7nz02xqjyqne40gk',
+      name: 'LUNO',
+      display: 'luno',
+      symbol: 'LUNO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/luno.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/luno.png'
         }
       ]
     }

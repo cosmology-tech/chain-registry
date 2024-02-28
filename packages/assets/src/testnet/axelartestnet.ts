@@ -565,6 +565,55 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'The native token of the Titan network.',
+      denom_units: [
+        {
+          denom:
+            'ibc/88434761790405D6F5B87C35B24B5CA7D1A12BF4C8832BEB601D4409E71777AD',
+          exponent: 0,
+          aliases: ['atkx']
+        },
+        {
+          denom: 'utkx',
+          exponent: 12,
+          aliases: ['microtkx']
+        },
+        {
+          denom: 'mtkx',
+          exponent: 15,
+          aliases: ['millitkx']
+        },
+        {
+          denom: 'tkx',
+          exponent: 18,
+          aliases: []
+        }
+      ],
+      base: 'ibc/88434761790405D6F5B87C35B24B5CA7D1A12BF4C8832BEB601D4409E71777AD',
+      display: 'tkx',
+      name: 'titan tkx',
+      symbol: 'TKX',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
+        }
+      ],
+      keywords: ['staking'],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'atkx',
+            chain_name: 'titantestnet'
+          },
+          chain: {
+            channel_id: 'channel-448'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native staking token of the Xion network.',
       denom_units: [
         {

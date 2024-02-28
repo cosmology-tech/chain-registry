@@ -1,13 +1,13 @@
 import { AssetList } from '@chain-registry/types';
 const assets: AssetList = {
-  chain_name: 'celestia',
+  chain_name: 'dymension',
   assets: [
     {
       description: 'The native token of Axelar',
       denom_units: [
         {
           denom:
-            'ibc/0E1517E2771CA7C03F2ED3F9BAECCAEADF0BFD79B89679E834933BC0F179AD98',
+            'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
           exponent: 0,
           aliases: ['uaxl']
         },
@@ -16,7 +16,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/0E1517E2771CA7C03F2ED3F9BAECCAEADF0BFD79B89679E834933BC0F179AD98',
+      base: 'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
       name: 'Axelar',
       display: 'axl',
       symbol: 'AXL',
@@ -35,12 +35,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'uaxl',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ]
@@ -50,7 +50,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/65D0BEC6DAD96C7F5043D1E54E54B6BB5D5B3AEC3FF6CEBB75B9E059F3580EA3',
+            'ibc/BFAAB7870A9AAABF64A7366DAAA0B8E5065EAA1FCE762F45677DC24BE796EF65',
           exponent: 0,
           aliases: ['uusdc']
         },
@@ -59,7 +59,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/65D0BEC6DAD96C7F5043D1E54E54B6BB5D5B3AEC3FF6CEBB75B9E059F3580EA3',
+      base: 'ibc/BFAAB7870A9AAABF64A7366DAAA0B8E5065EAA1FCE762F45677DC24BE796EF65',
       name: 'USD Coin',
       display: 'usdc',
       symbol: 'USDC',
@@ -67,12 +67,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'uusdc',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -93,7 +93,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/B826FA7F1989A109B506F861764AC25C82F90F2F8B1CA297FE61FAB8E39F9916',
+            'ibc/CA9DE7EFBE31CEEDDF4E11564C19612FFE1DCB0758069627A619510F1C5AE56A',
           exponent: 0,
           aliases: ['frax-wei']
         },
@@ -102,7 +102,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/B826FA7F1989A109B506F861764AC25C82F90F2F8B1CA297FE61FAB8E39F9916',
+      base: 'ibc/CA9DE7EFBE31CEEDDF4E11564C19612FFE1DCB0758069627A619510F1C5AE56A',
       name: 'Frax',
       display: 'frax',
       symbol: 'FRAX',
@@ -110,12 +110,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'frax-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -133,7 +133,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/7D52903C3B425450A5451BE8068F469A96BAFAA47DC0E06718210F3093E308D2',
+            'ibc/E1B637DCB7755B11574CA4FE1A10EEBE271ECC7F3C348A4BDD6B4204A2F66BB3',
           exponent: 0,
           aliases: ['dai-wei']
         },
@@ -142,7 +142,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/7D52903C3B425450A5451BE8068F469A96BAFAA47DC0E06718210F3093E308D2',
+      base: 'ibc/E1B637DCB7755B11574CA4FE1A10EEBE271ECC7F3C348A4BDD6B4204A2F66BB3',
       name: 'Dai Stablecoin',
       display: 'dai',
       symbol: 'DAI',
@@ -150,12 +150,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'dai-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -175,7 +175,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/A1F24CAA35E32235C8502B8A76AB9683211F66795876C9D99F0FB3F26182C6D0',
+            'ibc/462724F72AB1DDD92D751BF676AAD935B8FFE9ABF962259EA5ADDDC867959679',
           exponent: 0,
           aliases: ['uusdt']
         },
@@ -184,7 +184,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/A1F24CAA35E32235C8502B8A76AB9683211F66795876C9D99F0FB3F26182C6D0',
+      base: 'ibc/462724F72AB1DDD92D751BF676AAD935B8FFE9ABF962259EA5ADDDC867959679',
       name: 'Tether USD',
       display: 'usdt',
       symbol: 'USDT',
@@ -192,12 +192,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'uusdt',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -217,7 +217,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/DD0D56BDAB32493B216A4C0530A336620D86FBE1C682888C5513899838FF7389',
+            'ibc/E3AB0DFDE9E782262B770C32DF94AC2A92B93DC4825376D6F6C874D3C877864E',
           exponent: 0,
           aliases: ['weth-wei']
         },
@@ -226,7 +226,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/DD0D56BDAB32493B216A4C0530A336620D86FBE1C682888C5513899838FF7389',
+      base: 'ibc/E3AB0DFDE9E782262B770C32DF94AC2A92B93DC4825376D6F6C874D3C877864E',
       name: 'Wrapped Ether',
       display: 'weth',
       symbol: 'WETH',
@@ -234,12 +234,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'weth-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -257,7 +257,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/850E88B206F6EEB9AC9D13A0316CE92D693CD30A9C4756D9D151959AA3643C4F',
+            'ibc/45C87C0C3027BD5E5BBECF6A6BF8570857E555ABCB6689130AC90D391016AD17',
           exponent: 0,
           aliases: ['wbtc-satoshi']
         },
@@ -266,7 +266,7 @@ const assets: AssetList = {
           exponent: 8
         }
       ],
-      base: 'ibc/850E88B206F6EEB9AC9D13A0316CE92D693CD30A9C4756D9D151959AA3643C4F',
+      base: 'ibc/45C87C0C3027BD5E5BBECF6A6BF8570857E555ABCB6689130AC90D391016AD17',
       name: 'Wrapped Bitcoin',
       display: 'wbtc',
       symbol: 'WBTC',
@@ -274,12 +274,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'wbtc-satoshi',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -297,7 +297,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/8A00659EA12CF738566912B3CDDFE1EBABA2735F8273DA06864E3A8AD31F8527',
+            'ibc/B7B3E129C12B4ACCC9D921452B821C0A9B5DB91BFA1E0EDC464DB5DE7858D386',
           exponent: 0,
           aliases: ['aave-wei']
         },
@@ -306,7 +306,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/8A00659EA12CF738566912B3CDDFE1EBABA2735F8273DA06864E3A8AD31F8527',
+      base: 'ibc/B7B3E129C12B4ACCC9D921452B821C0A9B5DB91BFA1E0EDC464DB5DE7858D386',
       name: 'Aave',
       display: 'aave',
       symbol: 'AAVE',
@@ -314,12 +314,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'aave-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -337,7 +337,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/5059AE37193C2E0579F3D9F3C911295A13A93313808DCB5BA3E43D6C17AF0A85',
+            'ibc/92727E64D7B68B5F8036FC2B9CA13DC63363D189327B902A91D3499B60086D63',
           exponent: 0,
           aliases: ['ape-wei']
         },
@@ -346,7 +346,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/5059AE37193C2E0579F3D9F3C911295A13A93313808DCB5BA3E43D6C17AF0A85',
+      base: 'ibc/92727E64D7B68B5F8036FC2B9CA13DC63363D189327B902A91D3499B60086D63',
       name: 'ApeCoin',
       display: 'ape',
       symbol: 'APE',
@@ -354,12 +354,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'ape-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -377,7 +377,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/3A576EAFE91B3C9D8822AE896F450F4E6F11F1A33BF991D4FCE335BFC08D7574',
+            'ibc/4AD528BC4895BEA6EE5DF4259EE46F866FAA0D5C73E61925B9013050E39CE04A',
           exponent: 0,
           aliases: ['axs-wei']
         },
@@ -386,7 +386,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/3A576EAFE91B3C9D8822AE896F450F4E6F11F1A33BF991D4FCE335BFC08D7574',
+      base: 'ibc/4AD528BC4895BEA6EE5DF4259EE46F866FAA0D5C73E61925B9013050E39CE04A',
       name: 'Axie Infinity Shard',
       display: 'axs',
       symbol: 'AXS',
@@ -394,12 +394,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'axs-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -417,7 +417,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/E46F5D449A1543CECDB8A9B65B9F5713564C34C2AC7899508D06DB2E2DD5F9F2',
+            'ibc/5F01D08D8E63C951DDAD6111FBD235D459C95F89A57EA1BB2025430C3DD96719',
           exponent: 0,
           aliases: ['link-wei']
         },
@@ -426,7 +426,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/E46F5D449A1543CECDB8A9B65B9F5713564C34C2AC7899508D06DB2E2DD5F9F2',
+      base: 'ibc/5F01D08D8E63C951DDAD6111FBD235D459C95F89A57EA1BB2025430C3DD96719',
       name: 'Chainlink',
       display: 'link',
       symbol: 'LINK',
@@ -434,12 +434,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'link-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -459,7 +459,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/EC157449417448E5F1572D81BF8B0B097140FDD51116E4A98588691675F4900C',
+            'ibc/A201638824F62E8C8D9F6A93E7B2F242B912153008943C7DAE01F76C0C7A3430',
           exponent: 0,
           aliases: ['mkr-wei']
         },
@@ -468,7 +468,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/EC157449417448E5F1572D81BF8B0B097140FDD51116E4A98588691675F4900C',
+      base: 'ibc/A201638824F62E8C8D9F6A93E7B2F242B912153008943C7DAE01F76C0C7A3430',
       name: 'Maker',
       display: 'mkr',
       symbol: 'MKR',
@@ -476,12 +476,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'mkr-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -499,7 +499,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/85134A05F0A7B97E4156D421F5154F55C67028ABEFF03DDC1D5764F68F935228',
+            'ibc/CA23E7C30D51977BB7219CAC11056EF73E07B187DE5E4FF2E6B25C6E1903F4F5',
           exponent: 0,
           aliases: ['rai-wei']
         },
@@ -508,7 +508,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/85134A05F0A7B97E4156D421F5154F55C67028ABEFF03DDC1D5764F68F935228',
+      base: 'ibc/CA23E7C30D51977BB7219CAC11056EF73E07B187DE5E4FF2E6B25C6E1903F4F5',
       name: 'Rai Reflex Index',
       display: 'rai',
       symbol: 'RAI',
@@ -516,12 +516,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'rai-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -539,7 +539,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/9E8C062909538C2B572C29A478DC322749152D1A6553320F75C3F4B738AC338E',
+            'ibc/1BA9487241B5F9F9CFBC1EF0B099E668D953F6757185255225BB84A8B678AF8E',
           exponent: 0,
           aliases: ['shib-wei']
         },
@@ -548,7 +548,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/9E8C062909538C2B572C29A478DC322749152D1A6553320F75C3F4B738AC338E',
+      base: 'ibc/1BA9487241B5F9F9CFBC1EF0B099E668D953F6757185255225BB84A8B678AF8E',
       name: 'Shiba Inu',
       display: 'shib',
       symbol: 'SHIB',
@@ -556,12 +556,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'shib-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -579,7 +579,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/43C2F70FABEF6023DAA352C58277E802215EEEBEC5779403FE2EB1B03206E044',
+            'ibc/34DA84E6987ADD79495C14507B0ADA343F2B9C3DC4BCF9AC921626BF1ED03FE3',
           exponent: 0,
           aliases: ['steth-wei']
         },
@@ -588,7 +588,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/43C2F70FABEF6023DAA352C58277E802215EEEBEC5779403FE2EB1B03206E044',
+      base: 'ibc/34DA84E6987ADD79495C14507B0ADA343F2B9C3DC4BCF9AC921626BF1ED03FE3',
       name: 'Lido Staked Ether',
       display: 'steth',
       symbol: 'stETH',
@@ -596,12 +596,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'steth-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -619,7 +619,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/7E4E3F5580B9B59D43BBA944A070807BAB62C4123DAAE82D5C0E619981327B55',
+            'ibc/4709E749EF4BDA4D9533CC06B646DF9574DC7B7CBF019E162F46E542F62A6C57',
           exponent: 0,
           aliases: ['uni-wei']
         },
@@ -628,7 +628,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/7E4E3F5580B9B59D43BBA944A070807BAB62C4123DAAE82D5C0E619981327B55',
+      base: 'ibc/4709E749EF4BDA4D9533CC06B646DF9574DC7B7CBF019E162F46E542F62A6C57',
       name: 'Uniswap',
       display: 'uni',
       symbol: 'UNI',
@@ -636,12 +636,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'uni-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -659,7 +659,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/0F2F347B9D5D78D8717DF56FF8A281F91432B36AC5FB3A4C3CA7D62A4C92AF7E',
+            'ibc/DB03B7B0DB6EC92CC2F8989462BE2174757F3E562606518415BA5C3D3BBFB71E',
           exponent: 0,
           aliases: ['xcn-wei']
         },
@@ -668,7 +668,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/0F2F347B9D5D78D8717DF56FF8A281F91432B36AC5FB3A4C3CA7D62A4C92AF7E',
+      base: 'ibc/DB03B7B0DB6EC92CC2F8989462BE2174757F3E562606518415BA5C3D3BBFB71E',
       name: 'Chain',
       display: 'xcn',
       symbol: 'XCN',
@@ -676,12 +676,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'xcn-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -699,7 +699,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/50551EE1B7421026F68EB2714DDF2C607ECA3D4B14A67273A71767A0F8CC29F5',
+            'ibc/3D0D786201EA9704AE0957981B41B92EFA8F32E56318DAFE4B42DE5DE5B5E3FE',
           exponent: 0,
           aliases: ['dot-planck']
         },
@@ -708,7 +708,7 @@ const assets: AssetList = {
           exponent: 10
         }
       ],
-      base: 'ibc/50551EE1B7421026F68EB2714DDF2C607ECA3D4B14A67273A71767A0F8CC29F5',
+      base: 'ibc/3D0D786201EA9704AE0957981B41B92EFA8F32E56318DAFE4B42DE5DE5B5E3FE',
       name: 'Wrapped Polkadot',
       display: 'dot',
       symbol: 'DOT',
@@ -716,12 +716,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'dot-planck',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -741,7 +741,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/E3878CD653ECCD470639A4398EC4913C9915DD3E550697CF0424B572B2385B60',
+            'ibc/F1E05BAE0613BE43D98BD89DDA6937F04B1D34178668BA7800FC70F2FFB42BDD',
           exponent: 0,
           aliases: ['wglmr-wei']
         },
@@ -750,7 +750,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/E3878CD653ECCD470639A4398EC4913C9915DD3E550697CF0424B572B2385B60',
+      base: 'ibc/F1E05BAE0613BE43D98BD89DDA6937F04B1D34178668BA7800FC70F2FFB42BDD',
       name: 'Wrapped Moonbeam',
       display: 'wglmr',
       symbol: 'WGLMR',
@@ -758,12 +758,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'wglmr-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -783,7 +783,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/7BFC5893BCCC6C9A4B173BC1183D2706141CBF71679EA6BDCE15E679CEC05183',
+            'ibc/E97CB9081D7EB7CAEAE022E448FDEF6D1D0781B63DA4112CAE50285594B2B32C',
           exponent: 0,
           aliases: ['wmatic-wei']
         },
@@ -792,7 +792,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/7BFC5893BCCC6C9A4B173BC1183D2706141CBF71679EA6BDCE15E679CEC05183',
+      base: 'ibc/E97CB9081D7EB7CAEAE022E448FDEF6D1D0781B63DA4112CAE50285594B2B32C',
       name: 'Wrapped Matic',
       display: 'wmatic',
       symbol: 'WMATIC',
@@ -800,12 +800,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'wmatic-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -825,7 +825,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/52F7DAC8D338E4D7388D02EBD6E522B86EBB62A48C6732C2651423A9E79377DE',
+            'ibc/A0D7A4D3545AAF4C23FE0C432503D3EFB13A796B852AEF9B1B92D39AD80BD471',
           exponent: 0,
           aliases: ['wbnb-wei']
         },
@@ -834,7 +834,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/52F7DAC8D338E4D7388D02EBD6E522B86EBB62A48C6732C2651423A9E79377DE',
+      base: 'ibc/A0D7A4D3545AAF4C23FE0C432503D3EFB13A796B852AEF9B1B92D39AD80BD471',
       name: 'Wrapped BNB',
       display: 'wbnb',
       symbol: 'WBNB',
@@ -842,12 +842,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'wbnb-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -867,7 +867,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/97B1DE3106F835AA76ED7625C6DEF5110F35E9B349D3AC4CD6F78C8A6FCE9F2D',
+            'ibc/E0DAFC08CE018EB12427A35044AA3F375B30A2D31D528837FE7773F9DF0D2AEF',
           exponent: 0,
           aliases: ['busd-wei']
         },
@@ -876,7 +876,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/97B1DE3106F835AA76ED7625C6DEF5110F35E9B349D3AC4CD6F78C8A6FCE9F2D',
+      base: 'ibc/E0DAFC08CE018EB12427A35044AA3F375B30A2D31D528837FE7773F9DF0D2AEF',
       name: 'Binance USD',
       display: 'busd',
       symbol: 'BUSD',
@@ -884,12 +884,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'busd-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -907,7 +907,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/78D5DAB545549A930F5DB22CFA7C821ACE8EF55DCF787BED93A56D04CC7477F5',
+            'ibc/2991B858634D22E4637F772FA5A5F5BFCE3F30EA3ED208E36DD8DC07330490A9',
           exponent: 0,
           aliases: ['wavax-wei']
         },
@@ -916,7 +916,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/78D5DAB545549A930F5DB22CFA7C821ACE8EF55DCF787BED93A56D04CC7477F5',
+      base: 'ibc/2991B858634D22E4637F772FA5A5F5BFCE3F30EA3ED208E36DD8DC07330490A9',
       name: 'Wrapped AVAX',
       display: 'avax',
       symbol: 'WAVAX',
@@ -924,12 +924,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'wavax-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -947,7 +947,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/301A96A9BB897EF914BA74534EE1D75417753A0E113F2F766838274057290B79',
+            'ibc/BB68A322BA69ED1661EA38363B6A6D06D27AD205896875E78EA225AAF3A65CA6',
           exponent: 0,
           aliases: ['wftm-wei']
         },
@@ -956,7 +956,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/301A96A9BB897EF914BA74534EE1D75417753A0E113F2F766838274057290B79',
+      base: 'ibc/BB68A322BA69ED1661EA38363B6A6D06D27AD205896875E78EA225AAF3A65CA6',
       name: 'Wrapped FTM',
       display: 'ftm',
       symbol: 'WFTM',
@@ -964,12 +964,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'wftm-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -987,7 +987,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/D82D6BC5236279A14496692576272D92A449EA9EFFACB87071B1801CED1A1025',
+            'ibc/A67479BD570B60E62F8B53043ECF131ED471C7835AC146828904C7097AF30D0B',
           exponent: 0,
           aliases: ['polygon-uusdc']
         },
@@ -996,7 +996,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/D82D6BC5236279A14496692576272D92A449EA9EFFACB87071B1801CED1A1025',
+      base: 'ibc/A67479BD570B60E62F8B53043ECF131ED471C7835AC146828904C7097AF30D0B',
       name: 'USD Coin from Polygon',
       display: 'polygon-usdc',
       symbol: 'USDC',
@@ -1004,12 +1004,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'polygon-uusdc',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -1029,7 +1029,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/C8F93B4FCBC2DEF43B056F4A47156B3FE98EDAD7680D42B5F1A40ED9C371C0DF',
+            'ibc/4AF49824065A2EB5F05E5AD5823178E595577D26500592615E3E8746EBDA5652',
           exponent: 0,
           aliases: ['avalanche-uusdc']
         },
@@ -1038,7 +1038,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/C8F93B4FCBC2DEF43B056F4A47156B3FE98EDAD7680D42B5F1A40ED9C371C0DF',
+      base: 'ibc/4AF49824065A2EB5F05E5AD5823178E595577D26500592615E3E8746EBDA5652',
       name: 'USD Coin from Avalanche',
       display: 'avalanche-usdc',
       symbol: 'USDC',
@@ -1046,12 +1046,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'avalanche-uusdc',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -1071,7 +1071,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/64F437CA650406EC32948093BD96FDE7BE7ECB389D28D9426D04857E520A1D1D',
+            'ibc/11238441686A79C76DF0FE654527021E74DC7113CF84FADA03882FD53FFB5998',
           exponent: 0,
           aliases: ['wfil-wei']
         },
@@ -1080,7 +1080,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/64F437CA650406EC32948093BD96FDE7BE7ECB389D28D9426D04857E520A1D1D',
+      base: 'ibc/11238441686A79C76DF0FE654527021E74DC7113CF84FADA03882FD53FFB5998',
       name: 'Wrapped FIL from Filecoin',
       display: 'fil',
       symbol: 'axlFIL',
@@ -1088,12 +1088,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'wfil-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -1113,7 +1113,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/598E0EE8751CD6842128E9043DBED1BA6A03F58586E1D2E237933E17EDF27608',
+            'ibc/D35774A7E5C3D52146C03DF1F458C7E81EA7E633FAE36BA58E0012ECFD77A127',
           exponent: 0,
           aliases: ['arb-wei']
         },
@@ -1122,7 +1122,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/598E0EE8751CD6842128E9043DBED1BA6A03F58586E1D2E237933E17EDF27608',
+      base: 'ibc/D35774A7E5C3D52146C03DF1F458C7E81EA7E633FAE36BA58E0012ECFD77A127',
       name: 'Arbitrum',
       display: 'arb',
       symbol: 'ARB',
@@ -1130,12 +1130,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'arb-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -1154,7 +1154,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/BA5E586534A1E1FF6132B819ABE8D4D3C2FDCF9DFDC9D6FABE3E6CBCD7406C19',
+            'ibc/10807457AB2AF2C5F6FCE648CC894EA6E8953497203F8517A94C4FDB340F4A14',
           exponent: 0,
           aliases: ['pepe-wei']
         },
@@ -1163,7 +1163,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/BA5E586534A1E1FF6132B819ABE8D4D3C2FDCF9DFDC9D6FABE3E6CBCD7406C19',
+      base: 'ibc/10807457AB2AF2C5F6FCE648CC894EA6E8953497203F8517A94C4FDB340F4A14',
       name: 'Pepe',
       display: 'pepe',
       symbol: 'PEPE',
@@ -1171,12 +1171,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'pepe-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -1199,7 +1199,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/F0211D8FA296BBCABD74D8EC1D6BF1614BAED76F849A1F764E85595BB060D4BA',
+            'ibc/C9C39FC15FCE59FFD07E3F7FC7036465B6D41019387F4B8296657B53E3A6A796',
           exponent: 0,
           aliases: ['cbeth-wei']
         },
@@ -1208,7 +1208,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/F0211D8FA296BBCABD74D8EC1D6BF1614BAED76F849A1F764E85595BB060D4BA',
+      base: 'ibc/C9C39FC15FCE59FFD07E3F7FC7036465B6D41019387F4B8296657B53E3A6A796',
       name: 'Coinbase Wrapped Staked ETH',
       display: 'cbeth',
       symbol: 'cbETH',
@@ -1216,12 +1216,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'cbeth-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -1242,7 +1242,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/31C6106A9C6BD20BB1A323A6D229AC2753CB0508E8DDFF52A5E853F5FB94D172',
+            'ibc/E4CEBE54F4B294BA314A4403724FE2D20B25A4CC2F495208A2DBC78B33C568BF',
           exponent: 0,
           aliases: ['reth-wei']
         },
@@ -1251,7 +1251,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/31C6106A9C6BD20BB1A323A6D229AC2753CB0508E8DDFF52A5E853F5FB94D172',
+      base: 'ibc/E4CEBE54F4B294BA314A4403724FE2D20B25A4CC2F495208A2DBC78B33C568BF',
       name: 'Rocket Pool Ether',
       display: 'reth',
       symbol: 'rETH',
@@ -1259,12 +1259,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'reth-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -1285,7 +1285,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/4AEDE86813773F42D89F606736DE982FB45269C1C7A3ABDB89D76033B6BEA1A3',
+            'ibc/C1D794405A8C2585DA98C52EBD31A700E6BADF9F1C3413A28B4E52BE6CE52103',
           exponent: 0,
           aliases: ['sfrxeth-wei']
         },
@@ -1294,7 +1294,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/4AEDE86813773F42D89F606736DE982FB45269C1C7A3ABDB89D76033B6BEA1A3',
+      base: 'ibc/C1D794405A8C2585DA98C52EBD31A700E6BADF9F1C3413A28B4E52BE6CE52103',
       name: 'Staked Frax Ether',
       display: 'sfrxeth',
       symbol: 'sfrxETH',
@@ -1302,12 +1302,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'sfrxeth-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -1328,7 +1328,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/2BCE4106BF06DAECF08E1B8A8FC46B61A40484314CFED60E7008A28973B155CF',
+            'ibc/38D142F182413E7B44A3EBA2DA1FDBDE2B08BFC44A91DBD21A5D3583D99F47F6',
           exponent: 0,
           aliases: ['wsteth-wei']
         },
@@ -1337,7 +1337,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/2BCE4106BF06DAECF08E1B8A8FC46B61A40484314CFED60E7008A28973B155CF',
+      base: 'ibc/38D142F182413E7B44A3EBA2DA1FDBDE2B08BFC44A91DBD21A5D3583D99F47F6',
       name: 'Wrapped Lido Staked Ether',
       display: 'wsteth',
       symbol: 'wstETH',
@@ -1345,12 +1345,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'wsteth-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -1371,7 +1371,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/90969D2154B34BE0520E8E9E1516DC49019F30D3BA7752C692530F2D933E627C',
+            'ibc/AD8342772C24FCB5CC4B009E2A61AE176B72C60EF518D6273978435FC98DA85E',
           exponent: 0,
           aliases: ['yieldeth-wei']
         },
@@ -1380,7 +1380,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/90969D2154B34BE0520E8E9E1516DC49019F30D3BA7752C692530F2D933E627C',
+      base: 'ibc/AD8342772C24FCB5CC4B009E2A61AE176B72C60EF518D6273978435FC98DA85E',
       name: 'Real Yield Eth',
       display: 'YieldETH',
       symbol: 'YieldETH',
@@ -1388,12 +1388,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'yieldeth-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -1416,7 +1416,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/6F22B70CA6BBCE30BF0267D97C5B9181A30FCE22DA4931A3F29233DC34D1C33C',
+            'ibc/5F89561DF33736F6CF5F42C5900DE61F0BF668E1EE5870F481DCCFF70B049F68',
           exponent: 0,
           aliases: ['ox-wei']
         },
@@ -1425,7 +1425,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/6F22B70CA6BBCE30BF0267D97C5B9181A30FCE22DA4931A3F29233DC34D1C33C',
+      base: 'ibc/5F89561DF33736F6CF5F42C5900DE61F0BF668E1EE5870F481DCCFF70B049F68',
       name: 'Open Exchange Token',
       display: 'ox',
       symbol: 'OX',
@@ -1433,12 +1433,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-125',
+            channel_id: 'channel-138',
             base_denom: 'ox-wei',
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }
       ],
@@ -1456,158 +1456,100 @@ const assets: AssetList = {
       }
     },
     {
-      description: 'The native staking and governance token of Composable.',
+      description: '',
       denom_units: [
         {
           denom:
-            'ibc/A6F8FF700C6E1DB0A405338ED663CA64172D83311874A391391A68773ED7AD61',
+            'ibc/45D6B52CAD911A15BD9C2F5FFDA80E26AFCB05C7CD520070790ABC86D2B24229',
           exponent: 0,
-          aliases: ['ppica']
+          aliases: ['utia']
         },
         {
-          denom: 'pica',
-          exponent: 12
+          denom: 'tia',
+          exponent: 6
         }
       ],
-      base: 'ibc/A6F8FF700C6E1DB0A405338ED663CA64172D83311874A391391A68773ED7AD61',
-      name: 'Pica',
-      display: 'pica',
-      symbol: 'PICA',
-      coingecko_id: 'picasso',
+      base: 'ibc/45D6B52CAD911A15BD9C2F5FFDA80E26AFCB05C7CD520070790ABC86D2B24229',
+      name: 'Celestia',
+      display: 'tia',
+      symbol: 'TIA',
+      coingecko_id: 'celestia',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png'
+        }
+      ],
       traces: [
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-38',
-            base_denom: 'ppica',
-            chain_name: 'composable'
+            channel_id: 'channel-27',
+            base_denom: 'utia',
+            chain_name: 'celestia'
           },
           chain: {
-            channel_id: 'channel-12'
+            channel_id: 'channel-4'
           }
         }
-      ],
-      images: [
-        {
-          image_sync: {
-            chain_name: 'picasso',
-            base_denom: 'ppica'
-          },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
-        }
-      ],
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
-      }
+      ]
     },
     {
-      description:
-        'The native staking and governance token of Kusama Relay Chain.',
+      description: 'The native staking and governance token of the Cosmos Hub.',
       denom_units: [
         {
           denom:
-            'ibc/6764EF8774D74B90E6688836D968A19BA269EA3BB795A3D759F2F19882BC1AFC',
+            'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9',
           exponent: 0,
-          aliases: [
-            'ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9'
-          ]
+          aliases: ['uatom']
         },
         {
-          denom: 'ksm',
-          exponent: 12
+          denom: 'atom',
+          exponent: 6
         }
       ],
-      type_asset: 'ics20',
-      base: 'ibc/6764EF8774D74B90E6688836D968A19BA269EA3BB795A3D759F2F19882BC1AFC',
-      name: 'KSM',
-      display: 'ksm',
-      symbol: 'KSM',
+      base: 'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9',
+      name: 'Cosmos Hub Atom',
+      display: 'atom',
+      symbol: 'ATOM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+      },
+      coingecko_id: 'cosmos',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+        }
+      ],
       traces: [
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-38',
-            base_denom:
-              'ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9',
-            chain_name: 'composable'
+            channel_id: 'channel-794',
+            base_denom: 'uatom',
+            chain_name: 'cosmoshub'
           },
           chain: {
-            channel_id: 'channel-12'
+            channel_id: 'channel-1'
           }
         }
-      ],
-      images: [
-        {
-          image_sync: {
-            chain_name: 'picasso',
-            base_denom: '4'
-          },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/kusama/images/ksm.svg'
-        }
-      ],
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/kusama/images/ksm.svg'
-      }
+      ]
     },
     {
-      description:
-        'The native staking and governance token of Polkadot Relay Chain.',
+      description: 'Tether USDt on the Cosmos Hub',
       denom_units: [
         {
           denom:
-            'ibc/B305ADF906A54EA10296FC6F2D901E33D6CEF1A6EBA635F00EB04141C9FD8F3C',
+            'ibc/A377C4989C1735CDFBEEBF723D005E51AC893FF2B147BB18377C44234233D622',
           exponent: 0,
           aliases: [
-            'ibc/3CC19CEC7E5A3E90E78A5A9ECC5A0E2F8F826A375CF1E096F4515CF09DA3E366'
-          ]
-        },
-        {
-          denom: 'dot',
-          exponent: 10
-        }
-      ],
-      type_asset: 'ics20',
-      base: 'ibc/B305ADF906A54EA10296FC6F2D901E33D6CEF1A6EBA635F00EB04141C9FD8F3C',
-      name: 'DOT',
-      display: 'dot',
-      symbol: 'DOT',
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-38',
-            base_denom:
-              'ibc/3CC19CEC7E5A3E90E78A5A9ECC5A0E2F8F826A375CF1E096F4515CF09DA3E366',
-            chain_name: 'composable'
-          },
-          chain: {
-            channel_id: 'channel-12'
-          }
-        }
-      ],
-      images: [
-        {
-          image_sync: {
-            chain_name: 'picasso',
-            base_denom: '79228162514264337593543950342'
-          },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg'
-        }
-      ],
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg'
-      }
-    },
-    {
-      description:
-        'The native staking and governance token of Statemine parachain.',
-      denom_units: [
-        {
-          denom:
-            'ibc/CA02451B19C862596E860B11F594852A4B5544C3D105CD6189E29C25EFB70EE6',
-          exponent: 0,
-          aliases: [
-            'ibc/F3EC9F834E57DF704FA3AEAF14E8391C2E58397FE56960AD70E67562990D8265'
+            'ibc/F04D72CF9B5D9C849BB278B691CDFA2241813327430EC9CDC83F8F4CA4CDC2B0'
           ]
         },
         {
@@ -1616,139 +1558,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/CA02451B19C862596E860B11F594852A4B5544C3D105CD6189E29C25EFB70EE6',
-      name: 'USDT',
-      display: 'usdt',
-      symbol: 'USDT',
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-38',
-            base_denom:
-              'ibc/F3EC9F834E57DF704FA3AEAF14E8391C2E58397FE56960AD70E67562990D8265',
-            chain_name: 'composable'
-          },
-          chain: {
-            channel_id: 'channel-12'
-          }
-        }
-      ],
-      images: [
-        {
-          image_sync: {
-            chain_name: 'picasso',
-            base_denom: '130'
-          }
-        }
-      ]
-    },
-    {
-      description:
-        'The native governance and staking token of the Dymension Hub',
-      denom_units: [
-        {
-          denom:
-            'ibc/D5219DCDA4565FD7B3FD96C046854A2D4A005E895D1D2A7A5C83D8A3A279DD11',
-          exponent: 0,
-          aliases: ['adym']
-        },
-        {
-          denom: 'dym',
-          exponent: 18
-        }
-      ],
-      base: 'ibc/D5219DCDA4565FD7B3FD96C046854A2D4A005E895D1D2A7A5C83D8A3A279DD11',
-      name: 'Dymension',
-      display: 'dym',
-      symbol: 'DYM',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg'
-      },
-      coingecko_id: 'dymension',
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-4',
-            base_denom: 'adym',
-            chain_name: 'dymension'
-          },
-          chain: {
-            channel_id: 'channel-27'
-          }
-        }
-      ]
-    },
-    {
-      description:
-        'The native EVM, governance and staking token of the Evmos Hub',
-      denom_units: [
-        {
-          denom:
-            'ibc/C16830930080CD417D4F9DC5D569D48E33374990A8017464CCF8ABE63AAAA52A',
-          exponent: 0,
-          aliases: ['aevmos']
-        },
-        {
-          denom: 'evmos',
-          exponent: 18
-        }
-      ],
-      base: 'ibc/C16830930080CD417D4F9DC5D569D48E33374990A8017464CCF8ABE63AAAA52A',
-      name: 'Evmos',
-      display: 'evmos',
-      symbol: 'EVMOS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg'
-      },
-      coingecko_id: 'evmos',
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-106',
-            base_denom: 'aevmos',
-            chain_name: 'evmos'
-          },
-          chain: {
-            channel_id: 'channel-26'
-          }
-        }
-      ]
-    },
-    {
-      description: 'Tether USDt on Evmos',
-      denom_units: [
-        {
-          denom:
-            'ibc/FEECD6660542214061D526668624F44A121822B92293662280307C2211270002',
-          exponent: 0,
-          aliases: [
-            'ibc/95F4898F70B1E3765715808C57E955034419200A7BB6DDECBEAA5FD3AA3DF7D5'
-          ]
-        },
-        {
-          denom: 'usdt',
-          exponent: 6
-        }
-      ],
-      type_asset: 'ics20',
-      base: 'ibc/FEECD6660542214061D526668624F44A121822B92293662280307C2211270002',
+      base: 'ibc/A377C4989C1735CDFBEEBF723D005E51AC893FF2B147BB18377C44234233D622',
       name: 'Tether USDt',
       display: 'usdt',
       symbol: 'USDt',
@@ -1756,13 +1566,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-106',
+            channel_id: 'channel-794',
             base_denom:
-              'ibc/95F4898F70B1E3765715808C57E955034419200A7BB6DDECBEAA5FD3AA3DF7D5',
-            chain_name: 'evmos'
+              'ibc/F04D72CF9B5D9C849BB278B691CDFA2241813327430EC9CDC83F8F4CA4CDC2B0',
+            chain_name: 'cosmoshub'
           },
           chain: {
-            channel_id: 'channel-26'
+            channel_id: 'channel-1'
           }
         }
       ],
@@ -1780,624 +1590,57 @@ const assets: AssetList = {
       }
     },
     {
-      description: 'The token of Neokingdom DAO.',
+      description: 'FX on Cosmos Hub',
       denom_units: [
         {
           denom:
-            'ibc/015D3BA713B814E488ACA1E411C67E467088E70E60E25D84A1CC78E19A8F45B5',
-          exponent: 0,
-          aliases: ['erc20/0x655ecB57432CC1370f65e5dc2309588b71b473A9']
-        },
-        {
-          denom: 'neok',
-          exponent: 18
-        }
-      ],
-      base: 'ibc/015D3BA713B814E488ACA1E411C67E467088E70E60E25D84A1CC78E19A8F45B5',
-      name: 'Neokingdom DAO',
-      display: 'neok',
-      symbol: 'NEOK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-106',
-            base_denom: 'erc20/0x655ecB57432CC1370f65e5dc2309588b71b473A9',
-            chain_name: 'evmos'
-          },
-          chain: {
-            channel_id: 'channel-26'
-          }
-        }
-      ]
-    },
-    {
-      description: 'The token of Teledisko DAO.',
-      denom_units: [
-        {
-          denom:
-            'ibc/DB28D4D4E7FCBB7DBCCC9955213A3F3264C444BD024B25A1AD6D2A2B90BB2DB2',
-          exponent: 0,
-          aliases: ['erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280']
-        },
-        {
-          denom: 'berlin',
-          exponent: 18
-        }
-      ],
-      base: 'ibc/DB28D4D4E7FCBB7DBCCC9955213A3F3264C444BD024B25A1AD6D2A2B90BB2DB2',
-      name: 'Teledisko DAO',
-      display: 'berlin',
-      symbol: 'BERLIN',
-      type_asset: 'erc20',
-      address: '0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-106',
-            base_denom: 'erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
-            chain_name: 'evmos'
-          },
-          chain: {
-            channel_id: 'channel-26'
-          }
-        }
-      ]
-    },
-    {
-      description:
-        'The INJ token is the native governance token for the Injective chain.',
-      denom_units: [
-        {
-          denom:
-            'ibc/A39D6D491ED6349F67505000586546E68ECE05C486F07BE831871AF88A50CD19',
-          exponent: 0,
-          aliases: ['inj']
-        },
-        {
-          denom: 'INJ',
-          exponent: 18
-        }
-      ],
-      base: 'ibc/A39D6D491ED6349F67505000586546E68ECE05C486F07BE831871AF88A50CD19',
-      name: 'Injective',
-      display: 'INJ',
-      symbol: 'INJ',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
-      },
-      coingecko_id: 'injective-protocol',
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-152',
-            base_denom: 'inj',
-            chain_name: 'injective'
-          },
-          chain: {
-            channel_id: 'channel-7'
-          }
-        }
-      ]
-    },
-    {
-      description: 'Tether USDt on Injective',
-      denom_units: [
-        {
-          denom:
-            'ibc/CCCBD7307FEB70B0CF7ADF8503F711F6741F41623D25BAD8CB736E03BE384264',
+            'ibc/E9C8AB9A4970104FB2DF8C897ECF5B3BC0915654EA3F3A5868AF726845395814',
           exponent: 0,
           aliases: [
-            'ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB'
+            'ibc/4925E6ABA571A44D2BE0286D2D29AF42A294D0FF2BB16490149A1B26EAD33729'
           ]
-        },
-        {
-          denom: 'usdt',
-          exponent: 6
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/CCCBD7307FEB70B0CF7ADF8503F711F6741F41623D25BAD8CB736E03BE384264',
-      name: 'Tether USDt',
-      display: 'usdt',
-      symbol: 'USDt',
+      base: 'ibc/E9C8AB9A4970104FB2DF8C897ECF5B3BC0915654EA3F3A5868AF726845395814',
+      name: 'Function X',
+      display: 'FX',
+      symbol: 'FX',
       traces: [
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-152',
+            channel_id: 'channel-794',
             base_denom:
-              'ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB',
-            chain_name: 'injective'
+              'ibc/4925E6ABA571A44D2BE0286D2D29AF42A294D0FF2BB16490149A1B26EAD33729',
+            chain_name: 'cosmoshub'
           },
           chain: {
-            channel_id: 'channel-7'
+            channel_id: 'channel-1'
           }
         }
       ],
       images: [
         {
           image_sync: {
-            chain_name: 'kava',
-            base_denom: 'erc20/tether/usdt'
+            chain_name: 'fxcore',
+            base_denom: 'FX'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.svg'
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.svg'
       }
-    },
-    {
-      description: 'ERIS liquid staked INJ',
-      denom_units: [
-        {
-          denom:
-            'ibc/C2094EE460AEC4D63E6A618090D95DD1509C15A7C735BBF48ACF4105E35E81CD',
-          exponent: 0,
-          aliases: ['factory/inj1cdwt8g7nxgtg2k4fn8sj363mh9ahkw2qt0vrnc/ampINJ']
-        },
-        {
-          denom: 'ampINJ',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/C2094EE460AEC4D63E6A618090D95DD1509C15A7C735BBF48ACF4105E35E81CD',
-      name: 'ERIS Amplified INJ',
-      display: 'ampINJ',
-      symbol: 'ampINJ',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ampinj.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ampinj.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-152',
-            base_denom:
-              'factory/inj1cdwt8g7nxgtg2k4fn8sj363mh9ahkw2qt0vrnc/ampINJ',
-            chain_name: 'injective'
-          },
-          chain: {
-            channel_id: 'channel-7'
-          }
-        }
-      ]
-    },
-    {
-      description:
-        '$AUTISM exists to celebrate autism as a superior biological tech stack for a changing world',
-      denom_units: [
-        {
-          denom:
-            'ibc/BB8781B228A027D4DDD2D26CAAC9C9A8B894826390F04C6B59826FD30BC062B6',
-          exponent: 0,
-          aliases: ['factory/inj14lf8xm6fcvlggpa7guxzjqwjmtr24gnvf56hvz/autism']
-        },
-        {
-          denom: 'autism',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/BB8781B228A027D4DDD2D26CAAC9C9A8B894826390F04C6B59826FD30BC062B6',
-      name: 'Autism',
-      display: 'autism',
-      symbol: 'AUTISM',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/autism.png'
-      },
-      coingecko_id: 'autism',
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/autism.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-152',
-            base_denom:
-              'factory/inj14lf8xm6fcvlggpa7guxzjqwjmtr24gnvf56hvz/autism',
-            chain_name: 'injective'
-          },
-          chain: {
-            channel_id: 'channel-7'
-          }
-        }
-      ]
-    },
-    {
-      description:
-        'The first meme coin on Injective. It’s a dog, but he has nunchucks',
-      denom_units: [
-        {
-          denom:
-            'ibc/3432B1FA142B463A8115EA873BEF509C9654A7D40F20E93C18F52435A81B6288',
-          exponent: 0,
-          aliases: ['factory/inj1xtel2knkt8hmc9dnzpjz6kdmacgcfmlv5f308w/ninja']
-        },
-        {
-          denom: 'NINJA',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/3432B1FA142B463A8115EA873BEF509C9654A7D40F20E93C18F52435A81B6288',
-      name: 'Dog wif nunchucks',
-      display: 'NINJA',
-      symbol: 'NINJA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninja.png'
-      },
-      coingecko_id: 'dog-wif-nuchucks',
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninja.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-152',
-            base_denom:
-              'factory/inj1xtel2knkt8hmc9dnzpjz6kdmacgcfmlv5f308w/ninja',
-            chain_name: 'injective'
-          },
-          chain: {
-            channel_id: 'channel-7'
-          }
-        }
-      ]
-    },
-    {
-      description: 'The $WGMI Token - We Gonna Make It. Are you ready?',
-      denom_units: [
-        {
-          denom:
-            'ibc/CB19836165A2317BB3CD7073A4BAAC9C54051C5BA4A6E159B258F47FB864B586',
-          exponent: 0,
-          aliases: ['factory/inj1rmjzj9fn47kdmfk4f3z39qr6czexxe0yjyc546/WGMI']
-        },
-        {
-          denom: 'WGMI',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/CB19836165A2317BB3CD7073A4BAAC9C54051C5BA4A6E159B258F47FB864B586',
-      name: 'WGMI',
-      display: 'WGMI',
-      symbol: 'WGMI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/wgmi.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/wgmi.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-152',
-            base_denom:
-              'factory/inj1rmjzj9fn47kdmfk4f3z39qr6czexxe0yjyc546/WGMI',
-            chain_name: 'injective'
-          },
-          chain: {
-            channel_id: 'channel-7'
-          }
-        }
-      ]
-    },
-    {
-      description: 'The first memecoin on osmosis.',
-      denom_units: [
-        {
-          denom:
-            'ibc/EF93A19273CF6F1F9ECA251A223835878D3C8AA1F2CE422F1D58EDCE8B26408B',
-          exponent: 0,
-          aliases: [
-            'ibc/DD648F5D3CDA56D0D8D8820CF703D246B9FC4007725D8B38D23A21FF1A1477E3'
-          ]
-        },
-        {
-          denom: 'WOSMO',
-          exponent: 6
-        }
-      ],
-      type_asset: 'ics20',
-      base: 'ibc/EF93A19273CF6F1F9ECA251A223835878D3C8AA1F2CE422F1D58EDCE8B26408B',
-      name: 'Wosmo',
-      display: 'WOSMO',
-      symbol: 'WOSMO',
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-152',
-            base_denom:
-              'ibc/DD648F5D3CDA56D0D8D8820CF703D246B9FC4007725D8B38D23A21FF1A1477E3',
-            chain_name: 'injective'
-          },
-          chain: {
-            channel_id: 'channel-7'
-          }
-        }
-      ],
-      images: [
-        {
-          image_sync: {
-            chain_name: 'osmosis',
-            base_denom:
-              'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
-        }
-      ],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
-      }
-    },
-    {
-      description: 'GLTO-ERC20 on injective',
-      denom_units: [
-        {
-          denom:
-            'ibc/844FB7E33A8DCCDA6442FFED6C4BA32FE41B6F0263229E50890CEE84E0D7F22F',
-          exponent: 0,
-          aliases: ['peggy0xd73175f9eb15eee81745d367ae59309Ca2ceb5e2']
-        },
-        {
-          denom: 'glto',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/844FB7E33A8DCCDA6442FFED6C4BA32FE41B6F0263229E50890CEE84E0D7F22F',
-      name: 'Gelotto',
-      display: 'glto',
-      symbol: 'GLTO',
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-152',
-            base_denom: 'peggy0xd73175f9eb15eee81745d367ae59309Ca2ceb5e2',
-            chain_name: 'injective'
-          },
-          chain: {
-            channel_id: 'channel-7'
-          }
-        }
-      ],
-      images: [
-        {
-          image_sync: {
-            chain_name: 'ethereum',
-            base_denom: '0xd73175f9eb15eee81745d367ae59309Ca2ceb5e2'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
-        }
-      ],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
-      }
-    },
-    {
-      description:
-        'Hava Coin is the lifeblood of the Cosmos & Injective networks, rewarding builders and welcoming supporters. https://havacoin.xyz/',
-      denom_units: [
-        {
-          denom:
-            'ibc/EE7F7B854D5CC07A6F627BAD118C353BB4CEBB6AD1250DDE16000EEABF5297A3',
-          exponent: 0,
-          aliases: ['factory/inj1h0ypsdtjfcjynqu3m75z2zwwz5mmrj8rtk2g52/uhava']
-        },
-        {
-          denom: 'hava',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/EE7F7B854D5CC07A6F627BAD118C353BB4CEBB6AD1250DDE16000EEABF5297A3',
-      name: 'Hava Coin',
-      display: 'hava',
-      symbol: 'HAVA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/hava.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/hava.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-152',
-            base_denom:
-              'factory/inj1h0ypsdtjfcjynqu3m75z2zwwz5mmrj8rtk2g52/uhava',
-            chain_name: 'injective'
-          },
-          chain: {
-            channel_id: 'channel-7'
-          }
-        }
-      ]
-    },
-    {
-      description:
-        "A clan of 11y bad kids crafting chaos on the Cosmos eco. One bad memecoin to rule them all  $BADKID. Airdropped to Badkids NFT holders and $STARS stakers. It's so bad, your wallet's throwing a tantrum for it.",
-      denom_units: [
-        {
-          denom:
-            'ibc/6896A8E11982B823DE267B6B418281A58AB287EC90014CFB7FBC7F6C16CC2A76',
-          exponent: 0,
-          aliases: [
-            'ibc/A0C5AD197FECAF6636F589071338DC7ECD6B0809CD3A5AB131EAAA5395E7E5E8'
-          ]
-        },
-        {
-          denom: 'BADKID',
-          exponent: 6
-        }
-      ],
-      type_asset: 'ics20',
-      base: 'ibc/6896A8E11982B823DE267B6B418281A58AB287EC90014CFB7FBC7F6C16CC2A76',
-      name: 'Badkid',
-      display: 'BADKID',
-      symbol: 'BADKID',
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-152',
-            base_denom:
-              'ibc/A0C5AD197FECAF6636F589071338DC7ECD6B0809CD3A5AB131EAAA5395E7E5E8',
-            chain_name: 'injective'
-          },
-          chain: {
-            channel_id: 'channel-7'
-          }
-        }
-      ],
-      images: [
-        {
-          image_sync: {
-            chain_name: 'osmosis',
-            base_denom:
-              'factory/osmo10n8rv8npx870l69248hnp6djy6pll2yuzzn9x8/BADKID'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png'
-        }
-      ],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png'
-      }
-    },
-    {
-      description: 'The second meme coin on Injective.',
-      denom_units: [
-        {
-          denom:
-            'ibc/F4F2DAD0CADAA922DC146C17A35DBE5B215A795D31AF89484BFA0859B23C87DC',
-          exponent: 0,
-          aliases: ['inj1sudjgsyhufqu95yp7rqad3g78ws8g6htf32h88']
-        },
-        {
-          denom: 'NINPO',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/F4F2DAD0CADAA922DC146C17A35DBE5B215A795D31AF89484BFA0859B23C87DC',
-      name: 'Ninpo',
-      display: 'NINPO',
-      symbol: 'NINPO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninpo.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninpo.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-152',
-            base_denom: 'inj1sudjgsyhufqu95yp7rqad3g78ws8g6htf32h88',
-            chain_name: 'injective'
-          },
-          chain: {
-            channel_id: 'channel-7'
-          }
-        }
-      ]
-    },
-    {
-      description: 'JUDO is a very futuristic meme token.',
-      denom_units: [
-        {
-          denom:
-            'ibc/B0FBCFA07724F42B4C761228A2E22777B9FCCFDC797E9648A4219F768775F786',
-          exponent: 0,
-          aliases: ['inj16ukv8g2jcmml7gykxn5ws8ykhxjkugl4zhft5h']
-        },
-        {
-          denom: 'JUDO',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/B0FBCFA07724F42B4C761228A2E22777B9FCCFDC797E9648A4219F768775F786',
-      name: 'Judo',
-      display: 'JUDO',
-      symbol: 'JUDO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/judo.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/judo.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-152',
-            base_denom: 'inj16ukv8g2jcmml7gykxn5ws8ykhxjkugl4zhft5h',
-            chain_name: 'injective'
-          },
-          chain: {
-            channel_id: 'channel-7'
-          }
-        }
-      ]
     },
     {
       description: 'The native staking and governance token of Kava',
       denom_units: [
         {
           denom:
-            'ibc/147B3FF1D005512CCE4089559AF5D0C951F4211A031F15E782E505B85022DF89',
+            'ibc/567D01F41E7047F60174CD64D10E8D85E09E1B831023BC75622A8F67C540DCD4',
           exponent: 0,
           aliases: ['ukava']
         },
@@ -2406,7 +1649,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/147B3FF1D005512CCE4089559AF5D0C951F4211A031F15E782E505B85022DF89',
+      base: 'ibc/567D01F41E7047F60174CD64D10E8D85E09E1B831023BC75622A8F67C540DCD4',
       name: 'Kava',
       display: 'kava',
       symbol: 'KAVA',
@@ -2425,12 +1668,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-140',
+            channel_id: 'channel-144',
             base_denom: 'ukava',
             chain_name: 'kava'
           },
           chain: {
-            channel_id: 'channel-13'
+            channel_id: 'channel-3'
           }
         }
       ]
@@ -2440,7 +1683,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/0809E9DFC6F7809E9EE4A772FE775012E398200FCFEE8F83A4419C1AB6E15DDC',
+            'ibc/1462FB472FB073743BD33FE401926B9230CF532894B0A448F739CC7A4A524867',
           exponent: 0,
           aliases: ['hard']
         },
@@ -2449,7 +1692,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/0809E9DFC6F7809E9EE4A772FE775012E398200FCFEE8F83A4419C1AB6E15DDC',
+      base: 'ibc/1462FB472FB073743BD33FE401926B9230CF532894B0A448F739CC7A4A524867',
       name: 'Kava Hard',
       display: 'HARD',
       symbol: 'HARD',
@@ -2468,12 +1711,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-140',
+            channel_id: 'channel-144',
             base_denom: 'hard',
             chain_name: 'kava'
           },
           chain: {
-            channel_id: 'channel-13'
+            channel_id: 'channel-3'
           }
         }
       ]
@@ -2483,7 +1726,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/8D5D60499D05CB8A7A65A3931CAFFD50C9BF92ECD6EF48DD4728764873F8E27D',
+            'ibc/0DA3522636CF37C11E1EAFA89CCA65AB7291C31D9CC6558BC496CF76C07CE459',
           exponent: 0,
           aliases: ['swp']
         },
@@ -2492,7 +1735,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/8D5D60499D05CB8A7A65A3931CAFFD50C9BF92ECD6EF48DD4728764873F8E27D',
+      base: 'ibc/0DA3522636CF37C11E1EAFA89CCA65AB7291C31D9CC6558BC496CF76C07CE459',
       name: 'Kava Swap',
       display: 'SWP',
       symbol: 'SWP',
@@ -2511,12 +1754,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-140',
+            channel_id: 'channel-144',
             base_denom: 'swp',
             chain_name: 'kava'
           },
           chain: {
-            channel_id: 'channel-13'
+            channel_id: 'channel-3'
           }
         }
       ]
@@ -2526,7 +1769,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/238BC835DDF054E3B7E37AB91BF6E48508ECB9A142E614824BAE5A61DD1D9198',
+            'ibc/0E15445735D739EA562E8D125B76355BAD54E263B2276BA2775469511F494742',
           exponent: 0,
           aliases: ['usdx']
         },
@@ -2535,7 +1778,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/238BC835DDF054E3B7E37AB91BF6E48508ECB9A142E614824BAE5A61DD1D9198',
+      base: 'ibc/0E15445735D739EA562E8D125B76355BAD54E263B2276BA2775469511F494742',
       name: 'Kava USDX',
       display: 'USDX',
       symbol: 'USDX',
@@ -2554,12 +1797,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-140',
+            channel_id: 'channel-144',
             base_denom: 'usdx',
             chain_name: 'kava'
           },
           chain: {
-            channel_id: 'channel-13'
+            channel_id: 'channel-3'
           }
         }
       ]
@@ -2568,7 +1811,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/FAFF3F7B2FE30447544A27910DF77069763CF25472BFCF63A9E7C81F0AD545AC',
+            'ibc/B72B5B3F7AD44783584921DC33354BCE07C8EB0A7F0349247C3DAD38C3B6E6A5',
           exponent: 0,
           aliases: ['erc20/tether/usdt']
         },
@@ -2577,7 +1820,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/FAFF3F7B2FE30447544A27910DF77069763CF25472BFCF63A9E7C81F0AD545AC',
+      base: 'ibc/B72B5B3F7AD44783584921DC33354BCE07C8EB0A7F0349247C3DAD38C3B6E6A5',
       name: 'Tether USD',
       display: 'usdt',
       symbol: 'USDT',
@@ -2586,12 +1829,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-140',
+            channel_id: 'channel-144',
             base_denom: 'erc20/tether/usdt',
             chain_name: 'kava'
           },
           chain: {
-            channel_id: 'channel-13'
+            channel_id: 'channel-3'
           }
         }
       ],
@@ -2609,11 +1852,1431 @@ const assets: AssetList = {
       }
     },
     {
+      description:
+        'The native staking and governance token of the Kujira chain.',
+      denom_units: [
+        {
+          denom:
+            'ibc/B22B4DD21586965DAEF42A7600BA371EA77C02E90FC8A7F2330BF9F9DE129B07',
+          exponent: 0,
+          aliases: ['ukuji']
+        },
+        {
+          denom: 'kuji',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/B22B4DD21586965DAEF42A7600BA371EA77C02E90FC8A7F2330BF9F9DE129B07',
+      name: 'Kujira',
+      display: 'kuji',
+      symbol: 'KUJI',
+      coingecko_id: 'kujira',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom: 'ukuji',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'The native over-collateralized stablecoin from the Kujira chain.',
+      denom_units: [
+        {
+          denom:
+            'ibc/064760EBACCE86C3789222B211A91F235D6AE1F3E502A2B41139159367DDAF9E',
+          exponent: 0,
+          aliases: [
+            'factory/kujira1qk00h5atutpsv900x202pxx42npjr9thg58dnqpa72f2p7m2luase444a7/uusk'
+          ]
+        },
+        {
+          denom: 'usk',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/064760EBACCE86C3789222B211A91F235D6AE1F3E502A2B41139159367DDAF9E',
+      name: 'USK',
+      display: 'usk',
+      symbol: 'USK',
+      coingecko_id: 'usk',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'factory/kujira1qk00h5atutpsv900x202pxx42npjr9thg58dnqpa72f2p7m2luase444a7/uusk',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description: "Quark's auto-compounding KUJI derivative",
+      denom_units: [
+        {
+          denom:
+            'ibc/4F6B7EFA2D7D0A41FE57AE71F6A6E25C6946869A3258E302E89EB5DA4AC05B5C',
+          exponent: 0,
+          aliases: [
+            'factory/kujira1m96ucsfpt2yy72w09z2rxjdj38y5qd8lqx5jtggnejmdua2ynpnsxyvjex/urcpt'
+          ]
+        },
+        {
+          denom: 'qcKUJI',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/4F6B7EFA2D7D0A41FE57AE71F6A6E25C6946869A3258E302E89EB5DA4AC05B5C',
+      name: 'qcKUJI',
+      display: 'qcKUJI',
+      symbol: 'qcKUJI',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/qckuji.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/qckuji.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'factory/kujira1m96ucsfpt2yy72w09z2rxjdj38y5qd8lqx5jtggnejmdua2ynpnsxyvjex/urcpt',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description: 'ampKUJI',
+      denom_units: [
+        {
+          denom:
+            'ibc/6EFF29339976D6BE9131059FBC03957C8FF6866A4FD559D315440FA03408AD74',
+          exponent: 0,
+          aliases: [
+            'factory/kujira1n3fr5f56r2ce0s37wdvwrk98yhhq3unnxgcqus8nzsfxvllk0yxquurqty/ampKUJI'
+          ]
+        },
+        {
+          denom: 'ampKUJI',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/6EFF29339976D6BE9131059FBC03957C8FF6866A4FD559D315440FA03408AD74',
+      name: 'ampKUJI',
+      display: 'ampKUJI',
+      symbol: 'ampKUJI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/ampkuji.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/ampkuji.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/ampkuji.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/ampkuji.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'factory/kujira1n3fr5f56r2ce0s37wdvwrk98yhhq3unnxgcqus8nzsfxvllk0yxquurqty/ampKUJI',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description: 'MantaDAO Governance Token',
+      denom_units: [
+        {
+          denom:
+            'ibc/B52BB7A9F5E251207CE1082F1FC88D0F6A1DA0ADEE0EA733B833259F822028A0',
+          exponent: 0,
+          aliases: [
+            'factory/kujira1643jxg8wasy5cfcn7xm8rd742yeazcksqlg4d7/umnta'
+          ]
+        },
+        {
+          denom: 'mnta',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/B52BB7A9F5E251207CE1082F1FC88D0F6A1DA0ADEE0EA733B833259F822028A0',
+      name: 'MantaDAO',
+      display: 'mnta',
+      symbol: 'MNTA',
+      coingecko_id: 'mantadao',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/mnta.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/mnta.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/mnta.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/mnta.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'factory/kujira1643jxg8wasy5cfcn7xm8rd742yeazcksqlg4d7/umnta',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description: "Quark's auto-compounding MNTA derivative",
+      denom_units: [
+        {
+          denom:
+            'ibc/80D9E1590AC0996E3D1CC66E51516711CEF5F285ECCF288A94E90E4F740A7396',
+          exponent: 0,
+          aliases: [
+            'factory/kujira1qzu3up50auxhqyzfq56znuj8n38q2ra7daaf9ef7vg8gu66jh4fqd2wd2y/urcpt'
+          ]
+        },
+        {
+          denom: 'qcMNTA',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/80D9E1590AC0996E3D1CC66E51516711CEF5F285ECCF288A94E90E4F740A7396',
+      name: 'qcMNTA',
+      display: 'qcMNTA',
+      symbol: 'qcMNTA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/qcmnta.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/qcmnta.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'factory/kujira1qzu3up50auxhqyzfq56znuj8n38q2ra7daaf9ef7vg8gu66jh4fqd2wd2y/urcpt',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description: 'ERIS Liquid Staked MNTA',
+      denom_units: [
+        {
+          denom:
+            'ibc/4F963EA43250D3324BCD0C868ECC11AB0D392C096A1BED5AD5B0DB344BDF1ABC',
+          exponent: 0,
+          aliases: [
+            'factory/kujira175yatpvkpgw07w0chhzuks3zrrae9z9g2y6r7u5pzqesyau4x9eqqyv0rr/ampMNTA'
+          ]
+        },
+        {
+          denom: 'ampMNTA',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/4F963EA43250D3324BCD0C868ECC11AB0D392C096A1BED5AD5B0DB344BDF1ABC',
+      name: 'ERIS Amplified MNTA',
+      display: 'ampMNTA',
+      symbol: 'ampMNTA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/ampmnta.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/ampmnta.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'factory/kujira175yatpvkpgw07w0chhzuks3zrrae9z9g2y6r7u5pzqesyau4x9eqqyv0rr/ampMNTA',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The content house of Kujira',
+      denom_units: [
+        {
+          denom:
+            'ibc/8569884AF81B9F7FC864ADFCF441E2CDD740A90DF25987F6C8AEAC99B907EBCC',
+          exponent: 0,
+          aliases: [
+            'factory/kujira12cjjeytrqcj25uv349thltcygnp9k0kukpct0e/uwink'
+          ]
+        },
+        {
+          denom: 'wink',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/8569884AF81B9F7FC864ADFCF441E2CDD740A90DF25987F6C8AEAC99B907EBCC',
+      name: 'WINK',
+      display: 'wink',
+      symbol: 'WINK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/wink.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/wink.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/wink.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/wink.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'factory/kujira12cjjeytrqcj25uv349thltcygnp9k0kukpct0e/uwink',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Blend Token',
+      denom_units: [
+        {
+          denom:
+            'ibc/F8945C1E432754DA5DBFB0A6C8CE2167C5D47E0D6F92A04CFE8C2424038D0FEF',
+          exponent: 0,
+          aliases: [
+            'factory/kujira1slueerjz7mx9jp45u3y0rjwtvhcf8a68wf2mjt/ublend'
+          ]
+        },
+        {
+          denom: 'blend',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/F8945C1E432754DA5DBFB0A6C8CE2167C5D47E0D6F92A04CFE8C2424038D0FEF',
+      name: 'BLEND',
+      display: 'blend',
+      symbol: 'BLEND',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/blend.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/blend.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'factory/kujira1slueerjz7mx9jp45u3y0rjwtvhcf8a68wf2mjt/ublend',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Tether USDt on Kujira',
+      denom_units: [
+        {
+          denom:
+            'ibc/E62BD8B044D74A4E725796162F06301D8CA86FFC8FB103EA8651B99E50F92804',
+          exponent: 0,
+          aliases: [
+            'ibc/20014F963CC9E6488B299622F87B60C6DE71632864859EC08B4753478DAB2BB8'
+          ]
+        },
+        {
+          denom: 'usdt',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/E62BD8B044D74A4E725796162F06301D8CA86FFC8FB103EA8651B99E50F92804',
+      name: 'Tether USD',
+      display: 'usdt',
+      symbol: 'USDT',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'ibc/20014F963CC9E6488B299622F87B60C6DE71632864859EC08B4753478DAB2BB8',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'kava',
+            base_denom: 'erc20/tether/usdt'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+      }
+    },
+    {
+      description: 'The staking and governance token of Fuzion',
+      denom_units: [
+        {
+          denom:
+            'ibc/08A257D8100D24665F7F18770F1114D66D0457A11E138E511934739B7E0B8E70',
+          exponent: 0,
+          aliases: [
+            'factory/kujira1sc6a0347cc5q3k890jj0pf3ylx2s38rh4sza4t/ufuzn'
+          ]
+        },
+        {
+          denom: 'fuzn',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/08A257D8100D24665F7F18770F1114D66D0457A11E138E511934739B7E0B8E70',
+      name: 'Fuzion',
+      display: 'fuzn',
+      symbol: 'FUZN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/fuzion.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/fuzion.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/fuzion.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/fuzion.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'factory/kujira1sc6a0347cc5q3k890jj0pf3ylx2s38rh4sza4t/ufuzn',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The receipt token of Fuzion',
+      denom_units: [
+        {
+          denom:
+            'ibc/C83FE7E3C1C2603EE6479A566987A7E7305B7D094828AE257B3DE0A8FF49C937',
+          exponent: 0,
+          aliases: [
+            'factory/kujira1sc6a0347cc5q3k890jj0pf3ylx2s38rh4sza4t/urfuzn'
+          ]
+        },
+        {
+          denom: 'rfuzn',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/C83FE7E3C1C2603EE6479A566987A7E7305B7D094828AE257B3DE0A8FF49C937',
+      name: 'Fuzion Receipt',
+      display: 'rfuzn',
+      symbol: 'rFUZN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/fuzionr.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/fuzionr.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'factory/kujira1sc6a0347cc5q3k890jj0pf3ylx2s38rh4sza4t/urfuzn',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The yield token of Fuzion',
+      denom_units: [
+        {
+          denom:
+            'ibc/D023A46BF58C42223C89B5D68E736232727019B185F8A497C3229046FE59D53C',
+          exponent: 0,
+          aliases: [
+            'factory/kujira1sc6a0347cc5q3k890jj0pf3ylx2s38rh4sza4t/uyfuzn'
+          ]
+        },
+        {
+          denom: 'yfuzn',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/D023A46BF58C42223C89B5D68E736232727019B185F8A497C3229046FE59D53C',
+      name: 'Fuzion Yield',
+      display: 'yfuzn',
+      symbol: 'yFUZN',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/fuziony.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/fuziony.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'factory/kujira1sc6a0347cc5q3k890jj0pf3ylx2s38rh4sza4t/uyfuzn',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description: "Quark's auto-compounding FUZN derivative",
+      denom_units: [
+        {
+          denom:
+            'ibc/4E81108116576B4CC429FD5EB38D349F8529475ED4F63E77231A7E6599A7A3C9',
+          exponent: 0,
+          aliases: [
+            'factory/kujira1l04ged98c7a7s9tllu62ld09ztylwf442qgm4thfgmadrvngeumsz4zrh2/urcpt'
+          ]
+        },
+        {
+          denom: 'qcFUZN',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/4E81108116576B4CC429FD5EB38D349F8529475ED4F63E77231A7E6599A7A3C9',
+      name: 'qcFUZN',
+      display: 'qcFUZN',
+      symbol: 'qcFUZN',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/qcfuzn.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/qcfuzn.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'factory/kujira1l04ged98c7a7s9tllu62ld09ztylwf442qgm4thfgmadrvngeumsz4zrh2/urcpt',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The Revenue & Governance token of Unstake.fi',
+      denom_units: [
+        {
+          denom:
+            'ibc/83E5B7C857F1E07115E29F9F81D0473D614F02C8070547BF2E4201BACF920A02',
+          exponent: 0,
+          aliases: [
+            'factory/kujira1aaudpfr9y23lt9d45hrmskphpdfaq9ajxd3ukh/unstk'
+          ]
+        },
+        {
+          denom: 'nstk',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/83E5B7C857F1E07115E29F9F81D0473D614F02C8070547BF2E4201BACF920A02',
+      name: 'Unstake Fi',
+      display: 'nstk',
+      symbol: 'NSTK',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/nstk.svg'
+      },
+      coingecko_id: 'unstake-fi',
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/nstk.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'factory/kujira1aaudpfr9y23lt9d45hrmskphpdfaq9ajxd3ukh/unstk',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Local Money',
+      denom_units: [
+        {
+          denom:
+            'ibc/5050E1EDCAD2206E84F8C6DEA638CFC7F239955C658B46078F0715295E662C14',
+          exponent: 0,
+          aliases: [
+            'factory/kujira1swkuyt08z74n5jl7zr6hx0ru5sa2yev5v896p6/local'
+          ]
+        },
+        {
+          denom: 'local',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/5050E1EDCAD2206E84F8C6DEA638CFC7F239955C658B46078F0715295E662C14',
+      name: 'LOCAL',
+      display: 'local',
+      symbol: 'LOCAL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/local.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/local.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'factory/kujira1swkuyt08z74n5jl7zr6hx0ru5sa2yev5v896p6/local',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Food for whales',
+      denom_units: [
+        {
+          denom:
+            'ibc/4E98D101DC9A543C604610A087118701D81301A019CBACEE8B6E5B435EFB3C5E',
+          exponent: 0,
+          aliases: [
+            'factory/kujira166ysf07ze5suazfzj0r05tv8amk2yn8zvsfuu7/uplnk'
+          ]
+        },
+        {
+          denom: 'PLNK',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/4E98D101DC9A543C604610A087118701D81301A019CBACEE8B6E5B435EFB3C5E',
+      name: 'Plankton',
+      display: 'PLNK',
+      symbol: 'PLNK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/PLNK_drk.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/PLNK_drk.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'factory/kujira166ysf07ze5suazfzj0r05tv8amk2yn8zvsfuu7/uplnk',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/F2BE49171670C895E0B3919D5C396665244642506C200339FD27F5E40E4776EA',
+          exponent: 0,
+          aliases: [
+            'ibc/E5CA126979E2FFB4C70C072F8094D07ECF27773B37623AD2BF7582AD0726F0F3'
+          ]
+        },
+        {
+          denom: 'sol',
+          exponent: 8
+        }
+      ],
+      base: 'ibc/F2BE49171670C895E0B3919D5C396665244642506C200339FD27F5E40E4776EA',
+      name: 'Wormhole Solana',
+      display: 'sol',
+      symbol: 'whSOL',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'ibc/E5CA126979E2FFB4C70C072F8094D07ECF27773B37623AD2BF7582AD0726F0F3',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'gateway',
+            base_denom:
+              'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/8sYgCzLRJC3J7qPn2bNbx6PiGcarhyx8rBhVaNnfvHCA'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/34E33680F4E9DD2D0163CF4D029871B55C3281AA211828C8122F48046ED5E0BA',
+          exponent: 0,
+          aliases: [
+            'ibc/F3AA7EF362EC5E791FE78A0F4CCC69FEE1F9A7485EB1A8CAB3F6601C00522F10'
+          ]
+        },
+        {
+          denom: 'evmos',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/34E33680F4E9DD2D0163CF4D029871B55C3281AA211828C8122F48046ED5E0BA',
+      name: 'Evmos',
+      display: 'evmos',
+      symbol: 'EVMOS',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'ibc/F3AA7EF362EC5E791FE78A0F4CCC69FEE1F9A7485EB1A8CAB3F6601C00522F10',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'evmos',
+            base_denom: 'aevmos'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/173BC8BBC924713272B6F3E2F78E48AFD9A065C3654193BE3036B2EEA08D1EBD',
+          exponent: 0,
+          aliases: [
+            'ibc/004EBF085BBED1029326D56BE8A2E67C08CECE670A94AC1947DF413EF5130EB2'
+          ]
+        },
+        {
+          denom: 'avax',
+          exponent: 18
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/173BC8BBC924713272B6F3E2F78E48AFD9A065C3654193BE3036B2EEA08D1EBD',
+      name: 'Axelar Wrapped AVAX',
+      display: 'avax',
+      symbol: 'wAVAX',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'ibc/004EBF085BBED1029326D56BE8A2E67C08CECE670A94AC1947DF413EF5130EB2',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/wavax.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/wavax.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/5414A792DE2A310682DA8C35C1F5D07B5F2571E7AF62017D7C6CE9B9F019E13C',
+          exponent: 0,
+          aliases: [
+            'ibc/FE98AAD68F02F03565E9FA39A5E627946699B2B07115889ED812D8BA639576A9'
+          ]
+        },
+        {
+          denom: 'usdc',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/5414A792DE2A310682DA8C35C1F5D07B5F2571E7AF62017D7C6CE9B9F019E13C',
+      name: 'Noble USD Coin',
+      display: 'usdc',
+      symbol: 'USDC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'ibc/FE98AAD68F02F03565E9FA39A5E627946699B2B07115889ED812D8BA639576A9',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'noble',
+            base_denom: 'uusdc'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/7D13D3A6E3FB8DD686E0C052C0699329E33B8630C2D779056E52981DE93DE260',
+          exponent: 0,
+          aliases: [
+            'ibc/47BD209179859CDE4A2806763D7189B6E6FE13A17880FE2B42DE1E6C1E329E23'
+          ]
+        },
+        {
+          denom: 'osmo',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/7D13D3A6E3FB8DD686E0C052C0699329E33B8630C2D779056E52981DE93DE260',
+      name: 'Osmosis',
+      display: 'osmo',
+      symbol: 'OSMO',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'ibc/47BD209179859CDE4A2806763D7189B6E6FE13A17880FE2B42DE1E6C1E329E23',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom: 'uosmo'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/192CE21811502C16A6E34BE14F9263721EBAB6C8F0798F42AD5DE6385D6BF846',
+          exponent: 0,
+          aliases: [
+            'ibc/295548A78785A1007F232DE286149A6FF512F180AF5657780FC89C009E2C348F'
+          ]
+        },
+        {
+          denom: 'usdc',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/192CE21811502C16A6E34BE14F9263721EBAB6C8F0798F42AD5DE6385D6BF846',
+      name: 'Axelar USD Coin',
+      display: 'usdc',
+      symbol: 'axlUSDC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'ibc/295548A78785A1007F232DE286149A6FF512F180AF5657780FC89C009E2C348F',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'axelar',
+            base_denom: 'uusdc'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/C6380C79C86D6D5EA580A3AAE7D8DAEAF13998D2F18A0B1F2A2FB8D29C343997',
+          exponent: 0,
+          aliases: [
+            'ibc/3607EB5B5E64DD1C0E12E07F077FF470D5BC4706AFCBC98FE1BA960E5AE4CE07'
+          ]
+        },
+        {
+          denom: 'cmdx',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/C6380C79C86D6D5EA580A3AAE7D8DAEAF13998D2F18A0B1F2A2FB8D29C343997',
+      name: 'Comdex',
+      display: 'cmdx',
+      symbol: 'CMDX',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'ibc/3607EB5B5E64DD1C0E12E07F077FF470D5BC4706AFCBC98FE1BA960E5AE4CE07',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'comdex',
+            base_denom: 'ucmdx'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/178972FBD54E75AC07BBF55925D861F78DF65336DEFFB8D19C74A03D1465D758',
+          exponent: 0,
+          aliases: [
+            'ibc/EFF323CC632EC4F747C61BCE238A758EFDB7699C3226565F7C20DA06509D59A5'
+          ]
+        },
+        {
+          denom: 'juno',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/178972FBD54E75AC07BBF55925D861F78DF65336DEFFB8D19C74A03D1465D758',
+      name: 'Juno',
+      display: 'juno',
+      symbol: 'JUNO',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'ibc/EFF323CC632EC4F747C61BCE238A758EFDB7699C3226565F7C20DA06509D59A5',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'juno',
+            base_denom: 'ujuno'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/82FB2079A938946C0A545DB9CC19BEB148F9145D2C091AB5E7E71AAFD5B8710C',
+          exponent: 0,
+          aliases: [
+            'ibc/1B38805B1C75352B28169284F96DF56BDEBD9E8FAC005BDCC8CF0378C82AA8E7'
+          ]
+        },
+        {
+          denom: 'weth',
+          exponent: 18
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/82FB2079A938946C0A545DB9CC19BEB148F9145D2C091AB5E7E71AAFD5B8710C',
+      name: 'Axelar Wrapped Ether',
+      display: 'weth',
+      symbol: 'wETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'ibc/1B38805B1C75352B28169284F96DF56BDEBD9E8FAC005BDCC8CF0378C82AA8E7',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/2CA7FA605E0E3AF2E30FF14B7AC2474F2A8533835A16041A044277AED0A8E614',
+          exponent: 0,
+          aliases: [
+            'ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2'
+          ]
+        },
+        {
+          denom: 'atom',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/2CA7FA605E0E3AF2E30FF14B7AC2474F2A8533835A16041A044277AED0A8E614',
+      name: 'Cosmos Hub Atom',
+      display: 'atom',
+      symbol: 'ATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'cosmoshub',
+            base_denom: 'uatom'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/41FCD89744CE60F040B8E0192D4C1CF27511A0DD077E44721D434B967CC71779',
+          exponent: 0,
+          aliases: [
+            'ibc/DA59C009A0B3B95E0549E6BF7B075C8239285989FF457A8EDDBB56F10B2A6986'
+          ]
+        },
+        {
+          denom: 'luna',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/41FCD89744CE60F040B8E0192D4C1CF27511A0DD077E44721D434B967CC71779',
+      name: 'Luna',
+      display: 'luna',
+      symbol: 'LUNA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'ibc/DA59C009A0B3B95E0549E6BF7B075C8239285989FF457A8EDDBB56F10B2A6986',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'luna',
+            base_denom: 'uluna'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/B8417648B2321FEBB7387D69DEDAA7BA15641FE9983BB7E370BCB3F4C44D4A7E',
+          exponent: 0,
+          aliases: [
+            'ibc/4F393C3FCA4190C0A6756CE7F6D897D5D1BE57D6CCB80D0BC87393566A7B6602'
+          ]
+        },
+        {
+          denom: 'stars',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/B8417648B2321FEBB7387D69DEDAA7BA15641FE9983BB7E370BCB3F4C44D4A7E',
+      name: 'Stargaze',
+      display: 'stars',
+      symbol: 'STARS',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'ibc/4F393C3FCA4190C0A6756CE7F6D897D5D1BE57D6CCB80D0BC87393566A7B6602',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'stargaze',
+            base_denom: 'ustars'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/30D2779B2D021A919DF3ACEDB31D5B118A3FDF8B13CA44A1454FA839A00AE14B',
+          exponent: 0,
+          aliases: [
+            'ibc/A358D7F19237777AF6D8AD0E0F53268F8B18AE8A53ED318095C14D6D7F3B2DB5'
+          ]
+        },
+        {
+          denom: 'scrt',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/30D2779B2D021A919DF3ACEDB31D5B118A3FDF8B13CA44A1454FA839A00AE14B',
+      name: 'Secret Network',
+      display: 'scrt',
+      symbol: 'SCRT',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'ibc/A358D7F19237777AF6D8AD0E0F53268F8B18AE8A53ED318095C14D6D7F3B2DB5',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'scrt',
+            base_denom: 'uscrt'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/5BA3FB486A77F9272E248BA5D6025A50CF4505C767D3BC763AFAC23435BA0001',
+          exponent: 0,
+          aliases: [
+            'ibc/086C1B2E9E611F23D3C9159C858D3F4C6A911D348DFB916A11AE306A865A77A8'
+          ]
+        },
+        {
+          denom: 'stkatom',
+          exponent: 6,
+          aliases: ['stk/atom']
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/5BA3FB486A77F9272E248BA5D6025A50CF4505C767D3BC763AFAC23435BA0001',
+      name: 'PSTAKE staked ATOM',
+      display: 'stkatom',
+      symbol: 'stkATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-160',
+            base_denom:
+              'ibc/086C1B2E9E611F23D3C9159C858D3F4C6A911D348DFB916A11AE306A865A77A8',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'persistence',
+            base_denom: 'stk/uatom'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
+      }
+    },
+    {
       description: 'The native token of Neutron chain.',
       denom_units: [
         {
           denom:
-            'ibc/A020C9A03670A74D9BAD0E914FB4C0FC8AC9E762808BDB0EE4A0F6840297014B',
+            'ibc/2F2F132E47342479A8B7A8DB241F276609C53A1478CEB9A57411A910C9B061DB',
           exponent: 0,
           aliases: ['untrn']
         },
@@ -2622,7 +3285,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/A020C9A03670A74D9BAD0E914FB4C0FC8AC9E762808BDB0EE4A0F6840297014B',
+      base: 'ibc/2F2F132E47342479A8B7A8DB241F276609C53A1478CEB9A57411A910C9B061DB',
       name: 'Neutron',
       display: 'ntrn',
       symbol: 'NTRN',
@@ -2641,12 +3304,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom: 'untrn',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ]
@@ -2656,7 +3319,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/B77705179C4A73A08114A4CAAF2AD159DCA8D678D34553F236840939E30F3850',
+            'ibc/AF7439A784AE797BB9FC3621B363C287086324D97657DB0EDAD507CBC0CC469A',
           exponent: 0,
           aliases: [
             'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9'
@@ -2668,7 +3331,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/B77705179C4A73A08114A4CAAF2AD159DCA8D678D34553F236840939E30F3850',
+      base: 'ibc/AF7439A784AE797BB9FC3621B363C287086324D97657DB0EDAD507CBC0CC469A',
       name: 'IBC atom',
       display: 'atom',
       symbol: 'ATOM',
@@ -2676,13 +3339,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ],
@@ -2706,7 +3369,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/371CCF3843CAE5649165E4B1414C9038B1DC7C7757E0BB4CE6C5694B2BBBE947',
+            'ibc/2AF119C9F0FB6BD3F947821F317FE875EEAD703E0BEAFC13D394BDC7F6C405DA',
           exponent: 0,
           aliases: [
             'ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349'
@@ -2718,7 +3381,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/371CCF3843CAE5649165E4B1414C9038B1DC7C7757E0BB4CE6C5694B2BBBE947',
+      base: 'ibc/2AF119C9F0FB6BD3F947821F317FE875EEAD703E0BEAFC13D394BDC7F6C405DA',
       name: 'IBC usdc',
       display: 'usdc',
       symbol: 'USDC',
@@ -2726,13 +3389,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ],
@@ -2756,7 +3419,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/BDE6A5DC1027B6D055A7A34B44DAEF475089A41402D73A512A4CBB09A04D8816',
+            'ibc/9F673E558AF1D4EE72F4F80D2A7A6FD26F49C764231D597B993021E291DBC4BB',
           exponent: 0,
           aliases: [
             'ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7'
@@ -2768,7 +3431,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/BDE6A5DC1027B6D055A7A34B44DAEF475089A41402D73A512A4CBB09A04D8816',
+      base: 'ibc/9F673E558AF1D4EE72F4F80D2A7A6FD26F49C764231D597B993021E291DBC4BB',
       name: 'Celestia TIA',
       display: 'tia',
       symbol: 'TIA',
@@ -2776,13 +3439,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ],
@@ -2806,7 +3469,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/163DB871A2B0768CA8214C80BA67DC36C8CBE9FC47A0E65276EFFAEBC4A1EBAB',
+            'ibc/8E0EE407EC974036679B134932184587F7D7EDA87B1A2E502ECAE39C9276E9D7',
           exponent: 0,
           aliases: [
             'factory/neutron14henrqx9y328fjrdvz6l6d92r0t7g5hk86q5nd/uastropepe'
@@ -2817,7 +3480,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/163DB871A2B0768CA8214C80BA67DC36C8CBE9FC47A0E65276EFFAEBC4A1EBAB',
+      base: 'ibc/8E0EE407EC974036679B134932184587F7D7EDA87B1A2E502ECAE39C9276E9D7',
       name: 'AstroPepe',
       display: 'ASTROPEPE',
       symbol: 'ASTROPEPE',
@@ -2833,13 +3496,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'factory/neutron14henrqx9y328fjrdvz6l6d92r0t7g5hk86q5nd/uastropepe',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ]
@@ -2849,7 +3512,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/FF7D5B7216D58C267063FBB7AB9CE0B3217901692CADCCF546986708AAB6780C',
+            'ibc/EE01F9EB2F4115D8509E07C89EC2228ABF4F329C5D0B16AD6FD68040BE97F7D2',
           exponent: 0,
           aliases: [
             'factory/neutron1ug740qrkquxzrk2hh29qrlx3sktkfml3je7juusc2te7xmvsscns0n2wry/wstETH'
@@ -2860,7 +3523,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/FF7D5B7216D58C267063FBB7AB9CE0B3217901692CADCCF546986708AAB6780C',
+      base: 'ibc/EE01F9EB2F4115D8509E07C89EC2228ABF4F329C5D0B16AD6FD68040BE97F7D2',
       name: 'wstETH',
       display: 'wstETH',
       symbol: 'wstETH',
@@ -2868,13 +3531,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'factory/neutron1ug740qrkquxzrk2hh29qrlx3sktkfml3je7juusc2te7xmvsscns0n2wry/wstETH',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ],
@@ -2896,7 +3559,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/996B055F15A5DCE8E5A73913EB02220447B33D75F3BA11A3EE85429C915B5090',
+            'ibc/8AE61BF7BB1876B1848A89E1287BEBD66E1B9E844F4D4D4EF87623CC647ABEF3',
           exponent: 0,
           aliases: [
             'ibc/DDC3C60EE82BF544F1A0C6A983FF500EF1C14DE20071A5E1E7C0FB470E36E920'
@@ -2908,7 +3571,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/996B055F15A5DCE8E5A73913EB02220447B33D75F3BA11A3EE85429C915B5090',
+      base: 'ibc/8AE61BF7BB1876B1848A89E1287BEBD66E1B9E844F4D4D4EF87623CC647ABEF3',
       name: 'Nomic NBTC',
       display: 'sat',
       symbol: 'SAT',
@@ -2916,13 +3579,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'ibc/DDC3C60EE82BF544F1A0C6A983FF500EF1C14DE20071A5E1E7C0FB470E36E920',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ],
@@ -2946,7 +3609,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/3EDA02A6C2EBFFCD9FD982BB581D5E526207D4FF6460A8911FC0BC7D3B7490E2',
+            'ibc/508D8BF3A57F260C03FD0E86DB24915E9626B57104E4EE4C402AB28719274AE3',
           exponent: 0,
           aliases: [
             'ibc/2CB87BCE0937B1D1DFCEE79BE4501AAF3C265E923509AEAC410AD85D27F35130'
@@ -2958,7 +3621,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/3EDA02A6C2EBFFCD9FD982BB581D5E526207D4FF6460A8911FC0BC7D3B7490E2',
+      base: 'ibc/508D8BF3A57F260C03FD0E86DB24915E9626B57104E4EE4C402AB28719274AE3',
       name: 'DYDX',
       display: 'dydx',
       symbol: 'DYDX',
@@ -2966,13 +3629,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'ibc/2CB87BCE0937B1D1DFCEE79BE4501AAF3C265E923509AEAC410AD85D27F35130',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ],
@@ -2996,7 +3659,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/34392F64BCBEA5542B08BE0F2782527891C320CFADCE2DFE0B696914C3496A36',
+            'ibc/D9DF33ED00559ECE347019E1383B19FB922EA69CC43B5FDB232E1761FCD66B73',
           exponent: 0,
           aliases: [
             'factory/neutron1p8d89wvxyjcnawmgw72klknr3lg9gwwl6ypxda/newt'
@@ -3007,7 +3670,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/34392F64BCBEA5542B08BE0F2782527891C320CFADCE2DFE0B696914C3496A36',
+      base: 'ibc/D9DF33ED00559ECE347019E1383B19FB922EA69CC43B5FDB232E1761FCD66B73',
       name: 'Newt',
       display: 'newt',
       symbol: 'NEWT',
@@ -3024,13 +3687,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'factory/neutron1p8d89wvxyjcnawmgw72klknr3lg9gwwl6ypxda/newt',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ]
@@ -3040,7 +3703,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/F77655EE13EF6ABE00858EE3BE9519AE7F7B7A05724D6E6935862A273D68DB06',
+            'ibc/FFA0CC9EBA85FEF1EC64434F407A75ABB06451BD451C923F2BBBEF2368A40017',
           exponent: 0,
           aliases: [
             'ibc/5751B8BCDA688FD0A8EC0B292EEF1CDEAB4B766B63EC632778B196D317C40C3A'
@@ -3052,7 +3715,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/F77655EE13EF6ABE00858EE3BE9519AE7F7B7A05724D6E6935862A273D68DB06',
+      base: 'ibc/FFA0CC9EBA85FEF1EC64434F407A75ABB06451BD451C923F2BBBEF2368A40017',
       name: 'Astroport token',
       display: 'astro',
       symbol: 'ASTRO',
@@ -3060,13 +3723,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'ibc/5751B8BCDA688FD0A8EC0B292EEF1CDEAB4B766B63EC632778B196D317C40C3A',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ],
@@ -3091,7 +3754,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/3D0FA15E123299BE29801C4A37E1482AE03B07D6351DDC5C044874494D1DC223',
+            'ibc/B44899C2657037029211846C21BF87203BC1CFC7DFAD6919387A5EEE98878669',
           exponent: 0,
           aliases: [
             'factory/neutron1tklm6cvr2wxg8k65t8gh5ewslnzdfd5fsk0w3f/corgi'
@@ -3102,7 +3765,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/3D0FA15E123299BE29801C4A37E1482AE03B07D6351DDC5C044874494D1DC223',
+      base: 'ibc/B44899C2657037029211846C21BF87203BC1CFC7DFAD6919387A5EEE98878669',
       name: 'Baby Corgi',
       display: 'corgi',
       symbol: 'CORGI',
@@ -3118,13 +3781,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'factory/neutron1tklm6cvr2wxg8k65t8gh5ewslnzdfd5fsk0w3f/corgi',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ]
@@ -3134,7 +3797,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/87BF948D10C35B65E5F0CDA18A1369792052EC1C5189A0356E1D34277E69441F',
+            'ibc/17DB1BA7CC19713BFBEAB2D2EC28D17E5F32CEF4E14FF2C5DF89B5798362B95D',
           exponent: 0,
           aliases: [
             'factory/neutron170v88vrtnedesyfytuku257cggxc79rd7lwt7q/ucircus'
@@ -3145,7 +3808,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/87BF948D10C35B65E5F0CDA18A1369792052EC1C5189A0356E1D34277E69441F',
+      base: 'ibc/17DB1BA7CC19713BFBEAB2D2EC28D17E5F32CEF4E14FF2C5DF89B5798362B95D',
       name: 'AtomEconomicZone69JaeKwonInu',
       display: 'circus',
       symbol: 'CIRCUS',
@@ -3161,13 +3824,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'factory/neutron170v88vrtnedesyfytuku257cggxc79rd7lwt7q/ucircus',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ]
@@ -3177,7 +3840,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/73EC4E7B7D948E6C3C02FAA45D8B6C2AAB0654C0892A644EA97FF844BB5DC94F',
+            'ibc/DE932122E8CFB995BA68B5E6B205C44B3593C3AD8811E22C228281C5BBA5A351',
           exponent: 0,
           aliases: [
             'factory/neutron108x7vp9zv22d6wxrs9as8dshd3pd5vsga463yd/JIMMY'
@@ -3188,7 +3851,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/73EC4E7B7D948E6C3C02FAA45D8B6C2AAB0654C0892A644EA97FF844BB5DC94F',
+      base: 'ibc/DE932122E8CFB995BA68B5E6B205C44B3593C3AD8811E22C228281C5BBA5A351',
       name: 'jimmy',
       display: 'jimmy',
       symbol: 'JIMMY',
@@ -3204,13 +3867,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'factory/neutron108x7vp9zv22d6wxrs9as8dshd3pd5vsga463yd/JIMMY',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ]
@@ -3220,7 +3883,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/E0EDE14588FE538887ED85BAB81DADBC1A46CF2CEA86E1AD837C63A9CE61E58B',
+            'ibc/DA8D20FB85E3AD72D40D91E913762D55CAAE70C8CED773AE6C60B1D718E32BAA',
           exponent: 0,
           aliases: [
             'factory/neutron143wp6g8paqasnuuey6zyapucknwy9rhnld8hkr/bad'
@@ -3231,7 +3894,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/E0EDE14588FE538887ED85BAB81DADBC1A46CF2CEA86E1AD837C63A9CE61E58B',
+      base: 'ibc/DA8D20FB85E3AD72D40D91E913762D55CAAE70C8CED773AE6C60B1D718E32BAA',
       name: 'Badcoin',
       display: 'bad',
       symbol: 'BAD',
@@ -3247,13 +3910,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'factory/neutron143wp6g8paqasnuuey6zyapucknwy9rhnld8hkr/bad',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ]
@@ -3263,7 +3926,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/9F972735788701AC6BEA3F75B25E47316DF9B6261B427557520818BB120BD648',
+            'ibc/43BE84DBB801E0620A0789EB9492501BDCB28B2D587B533F8F0EBB190D79A535',
           exponent: 0,
           aliases: [
             'neutron1fjzg7fmv770hsvahqm0nwnu6grs3rjnd2wa6fvm9unv6vedkzekqpw44qj'
@@ -3274,7 +3937,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/9F972735788701AC6BEA3F75B25E47316DF9B6261B427557520818BB120BD648',
+      base: 'ibc/43BE84DBB801E0620A0789EB9492501BDCB28B2D587B533F8F0EBB190D79A535',
       name: 'Bitcosmos',
       display: 'bitcosmos',
       symbol: 'BTC',
@@ -3290,13 +3953,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'neutron1fjzg7fmv770hsvahqm0nwnu6grs3rjnd2wa6fvm9unv6vedkzekqpw44qj',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ]
@@ -3306,7 +3969,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/F45CB3152E94668155744CA84B6DF1E980B3752BBB32881DF9EDB2B1C9D02E40',
+            'ibc/CD1BC6A7D6F50523BF38BFA5BDB7346B0A3A71CC2D294F42C53BD4D627D36AEF',
           exponent: 0,
           aliases: [
             'neutron12h09p8hq5y4xpsmcuxxzsn9juef4f6jvekp8yefc6xnlwm6uumnsdk29wf'
@@ -3317,7 +3980,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/F45CB3152E94668155744CA84B6DF1E980B3752BBB32881DF9EDB2B1C9D02E40',
+      base: 'ibc/CD1BC6A7D6F50523BF38BFA5BDB7346B0A3A71CC2D294F42C53BD4D627D36AEF',
       name: 'wtf',
       display: 'wtf',
       symbol: 'WTF',
@@ -3333,13 +3996,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'neutron12h09p8hq5y4xpsmcuxxzsn9juef4f6jvekp8yefc6xnlwm6uumnsdk29wf',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ]
@@ -3349,7 +4012,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/8E9E3B1E391EFC33BDACBC30AD95F6F4E315E5867E4AB5C3272D621EEF2BEE56',
+            'ibc/D70B9AE36037B5E507C268E12CC68466068B4B8525F9C10B83FFB4A02C4AF4DA',
           exponent: 0,
           aliases: [
             'ibc/6C9E6701AC217C0FC7D74B0F7A6265B9B4E3C3CDA6E80AADE5F950A8F52F9972'
@@ -3361,7 +4024,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/8E9E3B1E391EFC33BDACBC30AD95F6F4E315E5867E4AB5C3272D621EEF2BEE56',
+      base: 'ibc/D70B9AE36037B5E507C268E12CC68466068B4B8525F9C10B83FFB4A02C4AF4DA',
       name: 'Nolus NLS',
       display: 'nls',
       symbol: 'NLS',
@@ -3369,13 +4032,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'ibc/6C9E6701AC217C0FC7D74B0F7A6265B9B4E3C3CDA6E80AADE5F950A8F52F9972',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ],
@@ -3399,7 +4062,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/E9F95C4A1B911AFC3E028A0EE92E5D103CB73477A4F19E0CBEDC5A9E350E8D0E',
+            'ibc/FEFB7B5DF226DA0708B0E481C526810B71A5C35B3BE39153708D745965394103',
           exponent: 0,
           aliases: [
             'factory/neutron1t5qrjtyryh8gzt800qr5vylhh2f8cmx4wmz9mc/ugoddard'
@@ -3410,7 +4073,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/E9F95C4A1B911AFC3E028A0EE92E5D103CB73477A4F19E0CBEDC5A9E350E8D0E',
+      base: 'ibc/FEFB7B5DF226DA0708B0E481C526810B71A5C35B3BE39153708D745965394103',
       name: 'Goddard',
       display: 'goddard',
       symbol: 'GODRD',
@@ -3426,13 +4089,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'factory/neutron1t5qrjtyryh8gzt800qr5vylhh2f8cmx4wmz9mc/ugoddard',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ]
@@ -3442,7 +4105,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/73346C5DA88930DC1AD67AB05F1C009E3C7DE1FD84ABAFEE16ED59E6F98CA59B',
+            'ibc/5344911D6D6029DBA1003A074E933255E10B4C0037520191443448D19ABFDE01',
           exponent: 0,
           aliases: [
             'factory/neutron154gg0wtm2v4h9ur8xg32ep64e8ef0g5twlsgvfeajqwghdryvyqsqhgk8e/APOLLO'
@@ -3453,7 +4116,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/73346C5DA88930DC1AD67AB05F1C009E3C7DE1FD84ABAFEE16ED59E6F98CA59B',
+      base: 'ibc/5344911D6D6029DBA1003A074E933255E10B4C0037520191443448D19ABFDE01',
       name: 'Apollo DAO',
       display: 'apollo',
       symbol: 'APOLLO',
@@ -3469,13 +4132,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'factory/neutron154gg0wtm2v4h9ur8xg32ep64e8ef0g5twlsgvfeajqwghdryvyqsqhgk8e/APOLLO',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ]
@@ -3485,7 +4148,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/4C123F36A85F5661844E9FA515AC0F041E45413DBDF9443765BD86E1B66B95C5',
+            'ibc/6A8D39D8AA315A5FB834D4EA3B75FFBD015022B15B05DFF7F195E393946E3A86',
           exponent: 0,
           aliases: [
             'factory/neutron1ume2n42r5j0660gegrr28fzdze7aqf7r5cd9y6/newtroll'
@@ -3496,7 +4159,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/4C123F36A85F5661844E9FA515AC0F041E45413DBDF9443765BD86E1B66B95C5',
+      base: 'ibc/6A8D39D8AA315A5FB834D4EA3B75FFBD015022B15B05DFF7F195E393946E3A86',
       name: 'Newtroll',
       display: 'newtroll',
       symbol: 'NTRL',
@@ -3512,13 +4175,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'factory/neutron1ume2n42r5j0660gegrr28fzdze7aqf7r5cd9y6/newtroll',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ]
@@ -3528,7 +4191,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/435EBCB1727E17E3F121FB417D7E8FDD9954A0713CB6102025CEF403DFE52E72',
+            'ibc/82AF8D8BF8789647954129B72A264B5A9208822FCDF8A649BDA7CF0C88568904',
           exponent: 0,
           aliases: [
             'factory/neutron1t24nc7whl77relnu3taxyg3p66pjyuk82png2y/uretro'
@@ -3539,7 +4202,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/435EBCB1727E17E3F121FB417D7E8FDD9954A0713CB6102025CEF403DFE52E72',
+      base: 'ibc/82AF8D8BF8789647954129B72A264B5A9208822FCDF8A649BDA7CF0C88568904',
       name: 'Retro',
       display: 'retro',
       symbol: 'RETRO',
@@ -3555,13 +4218,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'factory/neutron1t24nc7whl77relnu3taxyg3p66pjyuk82png2y/uretro',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ]
@@ -3571,7 +4234,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/D2D4EE43D3873048E305BDBB780FDA2202DFE7203ACE183EB1E9B0996850FDEC',
+            'ibc/2FD0A4C54A79C51D99134B534B0E03F157DA1D256DD0E8369F9101F138DED490',
           exponent: 0,
           aliases: [
             'factory/neutron1yqj9vcc0y73xfxjzegaj4v8q0zefevnlpuh4rj/GODDARD'
@@ -3582,7 +4245,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/D2D4EE43D3873048E305BDBB780FDA2202DFE7203ACE183EB1E9B0996850FDEC',
+      base: 'ibc/2FD0A4C54A79C51D99134B534B0E03F157DA1D256DD0E8369F9101F138DED490',
       name: 'Goddard',
       display: 'goddard',
       symbol: 'GODDARD',
@@ -3598,13 +4261,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'factory/neutron1yqj9vcc0y73xfxjzegaj4v8q0zefevnlpuh4rj/GODDARD',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ]
@@ -3614,7 +4277,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/E6E51D9712015ECD8135CE864E519A6ECA18DD73AE2055B6C5BD12FE0D13EA98',
+            'ibc/2D8ACD0837353BA768EA2C220939B8B5BDD719B404CC1F0F1E5071438503052D',
           exponent: 0,
           aliases: [
             'ibc/7DA39F5140741177846FCF3CFAB14450EE7F57B7794E5A94BEF73825D3741958'
@@ -3626,7 +4289,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/E6E51D9712015ECD8135CE864E519A6ECA18DD73AE2055B6C5BD12FE0D13EA98',
+      base: 'ibc/2D8ACD0837353BA768EA2C220939B8B5BDD719B404CC1F0F1E5071438503052D',
       name: 'Wosmo',
       display: 'WOSMO',
       symbol: 'WOSMO',
@@ -3634,13 +4297,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'ibc/7DA39F5140741177846FCF3CFAB14450EE7F57B7794E5A94BEF73825D3741958',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ],
@@ -3663,7 +4326,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/6BC14F65B2EA9111E37D3E460575C5A2A51E19E4495D9E4DA84AFF82E6F69DC8',
+            'ibc/FD4BF44CE3D5B5716BDD82849EBE46C6F04EADFD6D17E240E90C98F860E557FE',
           exponent: 0,
           aliases: [
             'neutron1uqvse8fdrd9tam47f2jhy9m6al6xxtqpc83f9pdnz5gdle4swc0spfnctv'
@@ -3674,7 +4337,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/6BC14F65B2EA9111E37D3E460575C5A2A51E19E4495D9E4DA84AFF82E6F69DC8',
+      base: 'ibc/FD4BF44CE3D5B5716BDD82849EBE46C6F04EADFD6D17E240E90C98F860E557FE',
       name: 'boy',
       display: 'boy',
       symbol: 'BOY',
@@ -3690,13 +4353,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'neutron1uqvse8fdrd9tam47f2jhy9m6al6xxtqpc83f9pdnz5gdle4swc0spfnctv',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ]
@@ -3707,7 +4370,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/59C753E584FDB74C2D6D1A3AAAD5D0DA6352B8D19363575A83C80BAAE5ACB502',
+            'ibc/5A665CE7CEB4BACE322CE952AB1B6B7C21E44094FF14E5E28C0B282C5031E41C',
           exponent: 0,
           aliases: [
             'ibc/9F8417FBA11E5E01F7F85DDD48C400EB746E95084C11706041663845B4A700A8'
@@ -3719,7 +4382,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/59C753E584FDB74C2D6D1A3AAAD5D0DA6352B8D19363575A83C80BAAE5ACB502',
+      base: 'ibc/5A665CE7CEB4BACE322CE952AB1B6B7C21E44094FF14E5E28C0B282C5031E41C',
       name: 'Badkid',
       display: 'BADKID',
       symbol: 'BADKID',
@@ -3727,13 +4390,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'ibc/9F8417FBA11E5E01F7F85DDD48C400EB746E95084C11706041663845B4A700A8',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
         }
       ],
@@ -3756,7 +4419,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/999D086E7DB2D13CCB94245C84442DFBF4A32CB7EEDC02B745F95F83031C33BB',
+            'ibc/30DB3922A424DCFA5CB8066BBB5064CE56C352AEEEC7D4A7B5E0F4BEE2F0010E',
           exponent: 0,
           aliases: [
             'factory/neutron1w0pz4mjw7n96kkragj8etgfgakg5vw9lzg77wq/cartel'
@@ -3767,7 +4430,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/999D086E7DB2D13CCB94245C84442DFBF4A32CB7EEDC02B745F95F83031C33BB',
+      base: 'ibc/30DB3922A424DCFA5CB8066BBB5064CE56C352AEEEC7D4A7B5E0F4BEE2F0010E',
       name: 'cartel',
       display: 'cartel',
       symbol: 'CARTEL',
@@ -3783,14 +4446,189 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-35',
+            channel_id: 'channel-675',
             base_denom:
               'factory/neutron1w0pz4mjw7n96kkragj8etgfgakg5vw9lzg77wq/cartel',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-8'
+            channel_id: 'channel-9'
           }
+        }
+      ]
+    },
+    {
+      description: 'The permissioned staking asset for Noble Chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/B73E9196C59EB34F42BECE5EA20511B33A0B1286B23210FDEEAA1AE876C037C7',
+          exponent: 0,
+          aliases: ['ustake']
+        },
+        {
+          denom: 'stake',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/B73E9196C59EB34F42BECE5EA20511B33A0B1286B23210FDEEAA1AE876C037C7',
+      name: 'Stake',
+      display: 'stake',
+      symbol: 'STAKE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-62',
+            base_denom: 'ustake',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-6'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Frienzies are an IBC token redeemable exclusively for a physical asset issued by the Noble entity.',
+      denom_units: [
+        {
+          denom:
+            'ibc/1A14CD454D073C3BE9AE2B8617CB5259911A711E4066C0146AB7FE1B50A5F811',
+          exponent: 0,
+          aliases: ['ufrienzies']
+        },
+        {
+          denom: 'frienzies',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/1A14CD454D073C3BE9AE2B8617CB5259911A711E4066C0146AB7FE1B50A5F811',
+      display: 'frienzies',
+      name: 'Frienzies',
+      symbol: 'FRNZ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-62',
+            base_denom: 'ufrienzies',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-6'
+          }
+        }
+      ]
+    },
+    {
+      description: 'ATOM token on Noble',
+      denom_units: [
+        {
+          denom:
+            'ibc/321CFD4F7FA7E2660C51C073877D79FEE4115BE457277F372486CBB35FC3026A',
+          exponent: 0,
+          aliases: [
+            'ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0'
+          ]
+        },
+        {
+          denom: 'atom',
+          exponent: 6,
+          aliases: ['ATOM']
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/321CFD4F7FA7E2660C51C073877D79FEE4115BE457277F372486CBB35FC3026A',
+      name: 'Atom Staking Coin',
+      display: 'atom',
+      symbol: 'ATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-62',
+            base_denom:
+              'ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-6'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+        }
+      ]
+    },
+    {
+      description: 'USD Coin',
+      denom_units: [
+        {
+          denom:
+            'ibc/B3504E092456BA618CC28AC671A71FB08C6CA0FD0BE7C8A5B5A3E2DD933CC9E4',
+          exponent: 0,
+          aliases: ['uusdc']
+        },
+        {
+          denom: 'usdc',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/B3504E092456BA618CC28AC671A71FB08C6CA0FD0BE7C8A5B5A3E2DD933CC9E4',
+      display: 'usdc',
+      name: 'USD Coin',
+      symbol: 'USDC',
+      coingecko_id: 'usd-coin',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-62',
+            base_denom: 'uusdc',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-6'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
         }
       ]
     },
@@ -3829,7 +4667,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom: 'uosmo',
             chain_name: 'osmosis'
           },
@@ -3873,7 +4711,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom: 'uion',
             chain_name: 'osmosis'
           },
@@ -3908,7 +4746,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858',
             chain_name: 'osmosis'
@@ -3963,7 +4801,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5',
             chain_name: 'osmosis'
@@ -4008,7 +4846,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F',
             chain_name: 'osmosis'
@@ -4061,7 +4899,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/8242AD24008032E457D2E12D46588FD39FB54FB29680C6C7663D296B383C37C4',
             chain_name: 'osmosis'
@@ -4110,7 +4948,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/0CD3A0285E1341859B5E86B6AB7682F023D03E97607CCC1DC95706411D866DF7',
             chain_name: 'osmosis'
@@ -4155,7 +4993,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/6329DD8CF31A334DD5BE3F68C846C9FE313281362B37686A62343BAC1EB1546D',
             chain_name: 'osmosis'
@@ -4201,7 +5039,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2',
             chain_name: 'osmosis'
@@ -4252,7 +5090,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/E6931F78057F7CC5DA0FD6CEF82FF39373A6E0452BF1FD76910B93292CF356C1',
             chain_name: 'osmosis'
@@ -4301,7 +5139,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/F4A070A6D78496D53127EA85C094A9EC87DFC1F36071B8CCDDBD020F933D213D',
             chain_name: 'osmosis'
@@ -4348,7 +5186,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/AB589511ED0DD5FA56171A39978AFBF1371DB986EC1C3526CE138A16377E39BB',
             chain_name: 'osmosis'
@@ -4394,7 +5232,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/6F62F01D913E3FFE472A38C78235B8F021B511BC6596ADFF02615C8F83D3B373',
             chain_name: 'osmosis'
@@ -4445,7 +5283,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/0EF15DF2F02480ADE0BB6E85D9EBB5DAEA2836D3860E9F97F9AADE4F57A31AA0',
             chain_name: 'osmosis'
@@ -4491,7 +5329,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED',
             chain_name: 'osmosis'
@@ -4537,7 +5375,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/3FF92D26B407FD61AE95D975712A7C319CDE28DE4D80BDC9978D935932B991D7',
             chain_name: 'osmosis'
@@ -4586,7 +5424,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/6AE98883D4D5D5FF9E50D7130F1305DA2FFA0C652D1DD9C123657C6B4EB2DF8A',
             chain_name: 'osmosis'
@@ -4632,7 +5470,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/57AA1A70A4BC9769C525EBF6386F7A21536E04A79D62E1981EFCEF9428EBB205',
             chain_name: 'osmosis'
@@ -4678,7 +5516,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/0954E1C28EB7AF5B72D24F3BC2B47BBB2FDF91BDDFD57B74B99E133AED40972A',
             chain_name: 'osmosis'
@@ -4730,7 +5568,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/BE1BB42D4BE3C30D50B68D7C41DB4DFCE9678E8EF8C539F6E6A9345048894FCC',
             chain_name: 'osmosis'
@@ -4776,7 +5614,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/987C17B11ABC2B20019178ACE62929FE9840202CE79498E29FE8E5CB02B7C0A4',
             chain_name: 'osmosis'
@@ -4826,7 +5664,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/B9E0A1A524E98BB407D3CED8720EFEFD186002F90C1B1B7964811DD0CCC12228',
             chain_name: 'osmosis'
@@ -4873,7 +5711,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/A0CC0CF735BFB30E730C70019D4218A1244FF383503FF7579C9201AB93CA9293',
             chain_name: 'osmosis'
@@ -4920,7 +5758,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/8061A06D3BD4D52C4A28FFECF7150D370393AF0BA661C3776C54FF32836C3961',
             chain_name: 'osmosis'
@@ -4968,7 +5806,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4',
             chain_name: 'osmosis'
@@ -5014,7 +5852,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/1DCC8A6CB5689018431323953344A9F6CC4D0BFB261E88C9F7777372C10CD076',
             chain_name: 'osmosis'
@@ -5060,7 +5898,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/9712DBB13B9631EDFA9BF61B55F1B2D290B2ADB67E3A4EB3A875F3B6081B3B84',
             chain_name: 'osmosis'
@@ -5107,7 +5945,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/7C4D60AA95E5A7558B0A364860979CA34B7FF8AAF255B87AF9E879374470CEC0',
             chain_name: 'osmosis'
@@ -5154,7 +5992,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/52B1AA623B34EB78FD767CEA69E8D7FA6C9CFE1FBF49C5406268FD325E2CC2AC',
             chain_name: 'osmosis'
@@ -5201,7 +6039,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/1DC495FCEFDA068A3820F903EDBD78B942FBD204D7E93D3BA2B432E9669D1A59',
             chain_name: 'osmosis'
@@ -5248,7 +6086,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/5973C068568365FFF40DEDCF1A1CB7582B6116B731CD31A12231AE25E20B871F',
             chain_name: 'osmosis'
@@ -5295,7 +6133,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/9989AD6CCA39D1131523DB0617B50F6442081162294B4795E26746292467B525',
             chain_name: 'osmosis'
@@ -5341,7 +6179,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/F3FF7A84A73B62921538642F9797C423D2B4C4ACB3C7FCFFCE7F12AA69909C4B',
             chain_name: 'osmosis'
@@ -5388,7 +6226,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/D805F1DA50D31B96E4282C1D4181EDDFB1A44A598BFF5666F4B43E4B8BEA95A5',
             chain_name: 'osmosis'
@@ -5434,7 +6272,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/4E5444C35610CC76FC94E7F7886B93121175C28262DDFDDE6F84E82BF2425452',
             chain_name: 'osmosis'
@@ -5480,7 +6318,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/B547DC9B897E7C3AA5B824696110B8E3D2C31E3ED3F02FF363DCBAD82457E07E',
             chain_name: 'osmosis'
@@ -5527,7 +6365,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/3BCCC93AD5DF58D11A6F8A05FA8BC801CBA0BA61A981F57E91B8B598BF8061CB',
             chain_name: 'osmosis'
@@ -5570,7 +6408,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/FE2CD1E6828EC0FAB8AF39BAC45BC25B965BA67CCBC50C13A14BD610B0D1E2C4',
             chain_name: 'osmosis'
@@ -5616,7 +6454,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/EA3E1640F9B1532AB129A571203A0B9F789A7F14BB66E350DCBFA18E1A1931F0',
             chain_name: 'osmosis'
@@ -5662,7 +6500,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/7A08C6F11EF0F59EB841B9F788A87EC9F2361C7D9703157EC13D940DC53031FA',
             chain_name: 'osmosis'
@@ -5708,7 +6546,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/8A34AF0C1943FD0DFCDE9ADBF0B2C9959C45E87E6088EA2FC6ADACD59261B8A2',
             chain_name: 'osmosis'
@@ -5754,7 +6592,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/E7B35499CFBEB0FF5778127ABA4FB2C4B79A6B8D3D831D4379C4048C238796BD',
             chain_name: 'osmosis'
@@ -5800,7 +6638,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/EA4C0A9F72E2CEDF10D0E7A9A6A22954DB3444910DB5BE980DF59B05A46DAD1C',
             chain_name: 'osmosis'
@@ -5846,7 +6684,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/307E5C96C8F60D1CBEE269A9A86C0834E1DB06F2B3788AE4F716EDB97A48B97D',
             chain_name: 'osmosis'
@@ -5897,7 +6735,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/9BBA9A1C257E971E38C1422780CE6F0B0686F0A3085E2D61118D904BFE0F5F5E',
             chain_name: 'osmosis'
@@ -5943,7 +6781,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/F867AE2112EFE646EC71A25CD2DFABB8927126AC1E19F1BBF0FF693A4ECA05DE',
             chain_name: 'osmosis'
@@ -5989,7 +6827,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/346786EA82F41FE55FAD14BF69AD8BA9B36985406E43F3CB23E6C45A285A9593',
             chain_name: 'osmosis'
@@ -6035,7 +6873,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/67795E528DF67C5606FC20F824EA39A6EF55BA133F4DC79C90A8C47A0901E17C',
             chain_name: 'osmosis'
@@ -6081,7 +6919,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/E97634A40119F1898989C2A23224ED83FDD0A57EA46B3A094E287288D1672B44',
             chain_name: 'osmosis'
@@ -6127,7 +6965,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/9BCB27203424535B6230D594553F1659C77EC173E36D9CF4759E7186EE747E84',
             chain_name: 'osmosis'
@@ -6173,7 +7011,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/F6B691D5F7126579DDC87357B09D653B47FDCE0A3383FF33C8D8B544FE29A8A6',
             chain_name: 'osmosis'
@@ -6220,7 +7058,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/8FEFAE6AECF6E2A255585617F781F35A8D5709A545A804482A261C0C9548A9D3',
             chain_name: 'osmosis'
@@ -6266,7 +7104,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/41999DF04D9441DAC0DF5D8291DF4333FBCBA810FFD63FDCE34FDF41EF37B6F7',
             chain_name: 'osmosis'
@@ -6313,7 +7151,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/5D1F516200EE8C6B2354102143B78A2DEDA25EDE771AC0F8DC3C1837C8FD4447',
             chain_name: 'osmosis'
@@ -6359,7 +7197,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/CBA34207E969623D95D057D9B11B0C8B32B89A71F170577D982FDDE623813FFC',
             chain_name: 'osmosis'
@@ -6405,7 +7243,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/297C64CC42B5A8D8F82FE2EBE208A6FE8F94B86037FA28C4529A23701C228F7A',
             chain_name: 'osmosis'
@@ -6452,7 +7290,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/64BA6E31FE887D66C6F8F31C7B1A80C7CA179239677B4088BB55F5EA07DBE273',
             chain_name: 'osmosis'
@@ -6504,7 +7342,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/204A582244FC241613DBB50B04D1D454116C58C4AF7866C186AA0D6EEAD42780',
             chain_name: 'osmosis'
@@ -6551,7 +7389,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/655BCEF3CDEBE32863FF281DBBE3B06160339E9897DC9C9C9821932A5F8BA6F8',
             chain_name: 'osmosis'
@@ -6599,7 +7437,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/8318FD63C42203D16DDCAF49FE10E8590669B3219A3E87676AC9DA50722687FB',
             chain_name: 'osmosis'
@@ -6646,7 +7484,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/7ED954CFFFC06EE8419387F3FC688837FF64EF264DE14219935F724EEEDBF8D3',
             chain_name: 'osmosis'
@@ -6693,7 +7531,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/C2A2E9CA95DDD4828B75124B5E27B8401C7D8493BC48353D418CBFC04565899B',
             chain_name: 'osmosis'
@@ -6740,7 +7578,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/6BDB4C8CCD45033F9604E4B93ED395008A753E01EECD6992E7D1EA23D9D3B788',
             chain_name: 'osmosis'
@@ -6787,7 +7625,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/0E43EDE2E2A3AFA36D0CD38BDDC0B49FECA64FA426A82E102F304E430ECF46EE',
             chain_name: 'osmosis'
@@ -6831,7 +7669,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/C9B0D48FD2C5B91135F118FF2484551888966590D7BDC20F6A87308DBA670796',
             chain_name: 'osmosis'
@@ -6879,7 +7717,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/65381C5F3FD21442283D56925E62EA524DED8B6927F0FF94E21E0020954C40B5',
             chain_name: 'osmosis'
@@ -6926,7 +7764,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/9F9B07EF9AD291167CF5700628145DE1DEB777C2CFC7907553B24446515F6D0E',
             chain_name: 'osmosis'
@@ -6973,7 +7811,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/F292A17CF920E3462C816CBE6B042E779F676CAB59096904C4C1C966413E3DF5',
             chain_name: 'osmosis'
@@ -7020,7 +7858,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/71B441E27F1BBB44DD0891BCD370C2794D404D60A4FFE5AECCD9B1E28BC89805',
             chain_name: 'osmosis'
@@ -7067,7 +7905,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/DB9755CB6FE55192948AE074D18FA815E1429D3D374D5BDA8D89623C6CF235C3',
             chain_name: 'osmosis'
@@ -7113,7 +7951,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/CE5BFF1D9BADA03BB5CCA5F56939392A761B53A10FBD03B37506669C3218D3B2',
             chain_name: 'osmosis'
@@ -7159,7 +7997,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/F49DE040EBA5AB2FAD5F660C2A1DDF98A68470FAE82229818BE775EBF3EE79F2',
             chain_name: 'osmosis'
@@ -7201,7 +8039,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/52E12CF5CA2BB903D84F5298B4BFD725D66CAB95E09AA4FC75B2904CA5485FEB',
             chain_name: 'osmosis'
@@ -7247,7 +8085,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/00B6E60AD3D65CBEF5579AC8AF609527C0B57535B6E32D96C80A735344FD9DCC',
             chain_name: 'osmosis'
@@ -7294,7 +8132,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/67C89B8B0A70C08F093C909A4DD996DD10E0494C87E28FD9A551697BF173D4CA',
             chain_name: 'osmosis'
@@ -7341,7 +8179,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/AA1C80225BCA7B32ED1FC6ABF8B8E899BEB48ECDB4B417FD69873C6D715F97E7',
             chain_name: 'osmosis'
@@ -7385,7 +8223,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/0CB9DB3441D0D50F35699DEE22B9C965487E83FB2D9F483D1CC5CA34E856C484',
             chain_name: 'osmosis'
@@ -7429,7 +8267,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/785AFEC6B3741100D15E7AF01374E3C4C36F24888E96479B1C33F5C71F364EF9',
             chain_name: 'osmosis'
@@ -7475,7 +8313,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/2716E3F2E146664BEFA9217F1A03BFCEDBCD5178B3C71CACB1A0D7584451D219',
             chain_name: 'osmosis'
@@ -7521,7 +8359,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/D6C28E07F7343360AC41E15DDD44D79701DDCA2E0C2C41279739C8D4AE5264BC',
             chain_name: 'osmosis'
@@ -7567,7 +8405,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/70CF1A54E23EA4E480DEDA9E12082D3FD5684C3483CBDCE190C5C807227688C5',
             chain_name: 'osmosis'
@@ -7614,7 +8452,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/D3327A763C23F01EC43D1F0DB3CEFEC390C362569B6FD191F40A5192F8960049',
             chain_name: 'osmosis'
@@ -7661,7 +8499,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/F16FDC11A7662B86BC0B9CE61871CBACF7C20606F95E86260FD38915184B75B4',
             chain_name: 'osmosis'
@@ -7709,7 +8547,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/384E5DD50BDE042E1AAF51F312B55F08F95BC985C503880189258B4D9374CBBE',
             chain_name: 'osmosis'
@@ -7755,7 +8593,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/F83CC6471DA4D4B508F437244F10B9E4C68975344E551A2DEB6B8617AB08F0D4',
             chain_name: 'osmosis'
@@ -7801,7 +8639,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/D27DDDF34BB47E5D5A570742CC667DE53277867116CCCA341F27785E899A70F3',
             chain_name: 'osmosis'
@@ -7846,7 +8684,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/BD796662F8825327D41C96355DF62045A5BA225BAE31C0A86289B9D88ED3F44E',
             chain_name: 'osmosis'
@@ -7892,7 +8730,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/19305E20681911F14D1FB275E538CDE524C3BF88CF9AE5D5F78F4D4DA05E85B2',
             chain_name: 'osmosis'
@@ -7938,7 +8776,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/BB6BCDB515050BAE97516111873CCD7BCF1FD0CCB723CC12F3C4F704D6C646CE',
             chain_name: 'osmosis'
@@ -7984,7 +8822,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/1E09CB0F506ACF12FDE4683FB6B34DA62FB4BE122641E0D93AAF98A87675676C',
             chain_name: 'osmosis'
@@ -8031,7 +8869,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/47EE224A9B33CF0ABEAC82106E52F0F6E8D8CEC5BA80B9D9A6F55172CBB0177D',
             chain_name: 'osmosis'
@@ -8075,7 +8913,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/C360EF34A86D334F625E4CBB7DA3223AEA97174B61F35BB3758081A8160F7D9B',
             chain_name: 'osmosis'
@@ -8122,7 +8960,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/9B6FBABA36BB4A3BF127AE5E96B572A5197FD9F3111D895D8919B07BC290764A',
             chain_name: 'osmosis'
@@ -8169,7 +9007,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/0CD46223FEABD2AEAAAF1F057D01E63BCA79B7D4BD6B68F1EB973A987344695D',
             chain_name: 'osmosis'
@@ -8216,7 +9054,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/AD185F62399F770CCCE8A36A180A77879FF6C26A0398BD3D2A74E087B0BFA121',
             chain_name: 'osmosis'
@@ -8261,7 +9099,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/1E26DB0E5122AED464D98462BD384FCCB595732A66B3970AE6CE0B58BAE0FC49',
             chain_name: 'osmosis'
@@ -8305,7 +9143,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/52C57FCA7D6854AA178E7A183DDBE4EF322B904B1D719FC485F6FFBC1F72A19E',
             chain_name: 'osmosis'
@@ -8351,7 +9189,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/7C781B4C2082CD62129A972D47486D78EC17155C299270E3C89348EA026BEAF8',
             chain_name: 'osmosis'
@@ -8397,7 +9235,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/5A7C219BA5F7582B99629BA3B2A01A61BFDA0F6FD1FE95B5366F7334C4BC0580',
             chain_name: 'osmosis'
@@ -8443,7 +9281,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/FFA652599C77E853F017193E36B5AB2D4D9AFC4B54721A74904F80C9236BF3B7',
             chain_name: 'osmosis'
@@ -8490,7 +9328,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/161D7D62BAB3B9C39003334F1671208F43C06B643CC9EDBBE82B64793C857F1D',
             chain_name: 'osmosis'
@@ -8536,7 +9374,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/E09ED39F390EC51FA9F3F69BEA08B5BBE6A48B3057B2B1C3467FAAE9E58B021B',
             chain_name: 'osmosis'
@@ -8582,7 +9420,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/C78F65E1648A3DFE0BAEB6C4CDA69CC2A75437F1793C0E6386DFDA26393790AE',
             chain_name: 'osmosis'
@@ -8629,7 +9467,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/2DA9C149E9AD2BD27FEFA635458FB37093C256C1A940392634A16BEA45262604',
             chain_name: 'osmosis'
@@ -8676,7 +9514,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/92BE0717F4678905E53F4E45B2DED18BC0CB97BF1F8B6A25AFEDF3D5A879B4D5',
             chain_name: 'osmosis'
@@ -8722,7 +9560,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/C6B6BFCB6EE49A7CAB1A7E7B021DE35B99D525AC660844952F0F6C78DCB2A57B',
             chain_name: 'osmosis'
@@ -8768,7 +9606,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/C2DF5C3949CA835B221C575625991F09BAB4E48FB9C11A4EE357194F736111E3',
             chain_name: 'osmosis'
@@ -8814,7 +9652,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/A8CA5EE328FA10C9519DF6057DA1F69682D28F7D0F5CCC7ECB72E3DCA2D157A4',
             chain_name: 'osmosis'
@@ -8863,7 +9701,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901',
             chain_name: 'osmosis'
@@ -8912,7 +9750,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/5DD1F95ED336014D00CE2520977EC71566D282F9749170ADC83A392E0EA7426A',
             chain_name: 'osmosis'
@@ -8959,7 +9797,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/C3FC4DED273E7D1DD2E7BAA3317EC9A53CD3252B577AA33DC00D9DF2BDF3ED5C',
             chain_name: 'osmosis'
@@ -9005,7 +9843,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/18A676A074F73B9B42DA4F9DFC8E5AEF334C9A6636DDEC8D34682F52F1DECDF6',
             chain_name: 'osmosis'
@@ -9051,7 +9889,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/903A61A498756EA560B85A85132D3AEE21B5DEDD41213725D22ABF276EA6945E',
             chain_name: 'osmosis'
@@ -9097,7 +9935,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/A1AC7F9EE2F643A68E3A35BCEB22040120BEA4059773BB56985C76BDFEBC71D9',
             chain_name: 'osmosis'
@@ -9143,7 +9981,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/EB7FB9C8B425F289B63703413327C2051030E848CE4EAAEA2E51199D6D39D3EC',
             chain_name: 'osmosis'
@@ -9192,7 +10030,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/84502A75BCA4A5F68D464C00B3F610CE2585847D59B52E5FFB7C3C9D2DDCD3FE',
             chain_name: 'osmosis'
@@ -9237,7 +10075,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC',
             chain_name: 'osmosis'
@@ -9287,7 +10125,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/6B982170CE024689E8DD0E7555B129B488005130D4EDA426733D552D10B36D8F',
             chain_name: 'osmosis'
@@ -9331,7 +10169,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/80825E8F04B12D914ABEADB1F4D39C04755B12C8402F6876EE3168450C0A90BB',
             chain_name: 'osmosis'
@@ -9378,7 +10216,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/44492EAB24B72E3FB59B9FA619A22337FB74F95D8808FE6BC78CC0E6C18DC2EC',
             chain_name: 'osmosis'
@@ -9424,7 +10262,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/608EF5C0CE64FEA097500DB39657BDD36CA708CC5DCC2E250A024B6981DD36BC',
             chain_name: 'osmosis'
@@ -9470,7 +10308,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA',
             chain_name: 'osmosis'
@@ -9516,7 +10354,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/A6383B6CF5EA23E067666C06BC34E2A96869927BD9744DC0C1643E589C710AA3',
             chain_name: 'osmosis'
@@ -9562,7 +10400,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/1FBA9E763B8679BEF7BAAAF2D16BCA78C3B297D226C3F31312C769D7B8F992D8',
             chain_name: 'osmosis'
@@ -9608,7 +10446,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/71055835C7639739EAE03AACD1324FE162DBA41D09F197CB72D966D014225B1C',
             chain_name: 'osmosis'
@@ -9652,7 +10490,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/9A8A93D04917A149C8AC7C16D3DA8F470D59E8D867499C4DA97450E1D7363213',
             chain_name: 'osmosis'
@@ -9699,7 +10537,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/D0E5BF2940FB58D9B283A339032DE88111407AAD7D94A7F1F3EB78874F8616D4',
             chain_name: 'osmosis'
@@ -9745,7 +10583,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/C822645522FC3EECF817609AA38C24B64D04F5C267A23BCCF8F2E3BC5755FA88',
             chain_name: 'osmosis'
@@ -9791,7 +10629,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/7CE5F388D661D82A0774E47B5129DA51CC7129BD1A70B5FA6BCEBB5B0A2FAEAF',
             chain_name: 'osmosis'
@@ -9836,7 +10674,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/BB936517F7E5D77A63E0ADB05217A6608B0C4CF8FBA7EA2F4BAE4107A7238F06',
             chain_name: 'osmosis'
@@ -9882,7 +10720,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/23CA6C8D1AB2145DD13EB1E089A2E3F960DC298B468CCE034E19E5A78B61136E',
             chain_name: 'osmosis'
@@ -9929,7 +10767,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/92B223EBFA74DB99BEA92B23DEAA6050734FEEAABB84689CB8E1AE8F9C9F9AF4',
             chain_name: 'osmosis'
@@ -9975,7 +10813,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/01E94A5FF29B8DDEFC86F412CC3927F7330E9B523CC63A6194B1108F5276025C',
             chain_name: 'osmosis'
@@ -10022,7 +10860,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/D3B574938631B0A1BA704879020C696E514CFADAA7643CDE4BD5EB010BDE327B',
             chain_name: 'osmosis'
@@ -10068,7 +10906,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/18A1B70E3205A48DE8590C0D11030E7146CDBF1048789261D53FFFD7527F8B55',
             chain_name: 'osmosis'
@@ -10114,7 +10952,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/B9606D347599F0F2FDF82BA3EE339000673B7D274EA50F59494DC51EFCD42163',
             chain_name: 'osmosis'
@@ -10162,7 +11000,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/CAA179E40F0266B0B29FB5EAA288FB9212E628822265D4141EBD1C47C3CBFCBC',
             chain_name: 'osmosis'
@@ -10210,7 +11048,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/E27CD305D33F150369AB526AEB6646A76EC3FFB1A6CA58A663B5DE657A89D55D',
             chain_name: 'osmosis'
@@ -10256,7 +11094,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/D3ADAF73F84CDF205BCB72C142FDAEEA2C612AB853CEE6D6C06F184FA38B1099',
             chain_name: 'osmosis'
@@ -10302,7 +11140,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/5D270A584B1078FBE07D14570ED5E88EC1FEDA8518B76C322606291E6FD8286F',
             chain_name: 'osmosis'
@@ -10349,7 +11187,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/B1E0166EA0D759FDF4B207D1F5F12210D8BFE36F2345CEFC76948CE2B36DFBAF',
             chain_name: 'osmosis'
@@ -10396,7 +11234,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/5E2DFDF1734137302129EA1C1BA21A580F96F778D4F021815EA4F6DB378DA1A4',
             chain_name: 'osmosis'
@@ -10443,7 +11281,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/47CAF2DB8C016FAC960F33BC492FD8E454593B65CC59D70FA9D9F30424F9C32F',
             chain_name: 'osmosis'
@@ -10490,7 +11328,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/46C83BB054E12E189882B5284542DB605D94C99827E367C9192CF0579CD5BC83',
             chain_name: 'osmosis'
@@ -10536,7 +11374,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/2FBAC4BF296D7844796844B35978E5899984BA5A6314B2DD8F83C215550010B3',
             chain_name: 'osmosis'
@@ -10583,7 +11421,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/231FD77ECCB2DB916D314019DA30FE013202833386B1908A191D16989AD80B5A',
             chain_name: 'osmosis'
@@ -10631,7 +11469,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/F17C9CA112815613C5B6771047A093054F837C3020CBA59DFFD9D780A8B2984C',
             chain_name: 'osmosis'
@@ -10678,7 +11516,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/573FCD90FACEE750F55A8864EF7D38265F07E5A9273FA0E8DAFD39951332B580',
             chain_name: 'osmosis'
@@ -10724,7 +11562,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/D38BB3DD46864694F009AF01DA5A815B3A875F8CC52FF5679BFFCC35DC7451D5',
             chain_name: 'osmosis'
@@ -10769,7 +11607,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/C491E7582E94AE921F6A029790083CDE1106C28F3F6C4AD7F1340544C13EC372',
             chain_name: 'osmosis'
@@ -10814,7 +11652,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/C5579A9595790017C600DD726276D978B9BF314CF82406CE342720A9C7911A01',
             chain_name: 'osmosis'
@@ -10860,7 +11698,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/E750D31033DC1CF4A044C3AA0A8117401316DC918FBEBC4E3D34F91B09D5F54C',
             chain_name: 'osmosis'
@@ -10906,7 +11744,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/8BE73A810E22F80E5E850531A688600D63AE7392E7C2770AE758CAA4FD921B7F',
             chain_name: 'osmosis'
@@ -10953,7 +11791,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/FA602364BEC305A696CBDF987058E99D8B479F0318E47314C49173E8838C5BAC',
             chain_name: 'osmosis'
@@ -10999,7 +11837,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/AD4DEA52408EA07C0C9E19444EC8DA84A274A70AD2687A710EFDDEB28BB2986A',
             chain_name: 'osmosis'
@@ -11046,7 +11884,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/79A676508A2ECA1021EDDC7BB9CF70CEEC9514C478DA526A5A8B3E78506C2206',
             chain_name: 'osmosis'
@@ -11093,7 +11931,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/4F24D904BAB5FFBD3524F2DE3EC3C7A9E687A2408D9A985E57B356D9FA9201C6',
             chain_name: 'osmosis'
@@ -11138,7 +11976,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/635CB83EF1DFE598B10A3E90485306FD0D47D34217A4BE5FD9977FA010A5367D',
             chain_name: 'osmosis'
@@ -11182,7 +12020,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/0F91EE8B98AAE3CF393D94CD7F89A10F8D7758C5EC707E721899DFE65C164C28',
             chain_name: 'osmosis'
@@ -11230,7 +12068,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/42D24879D4569CE6477B7E88206ADBFE47C222C6CAD51A54083E4A72594269FC',
             chain_name: 'osmosis'
@@ -11277,7 +12115,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/7FA7EC64490E3BDE5A1A28CBE73CC0AD22522794957BC891C46321E3A6074DB9',
             chain_name: 'osmosis'
@@ -11323,7 +12161,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/EDD6F0D66BCD49C1084FB2C35353B4ACD7B9191117CE63671B61320548F7C89D',
             chain_name: 'osmosis'
@@ -11369,7 +12207,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/BAC9C6998F1F5C316D3353622EAEDAF8BD00FAABEB374FECDF8C9BC475172CFA',
             chain_name: 'osmosis'
@@ -11413,7 +12251,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/DC0D3303BBE739E073224D0314385B88B247F56D71D726A91414CCA244FFFE7E',
             chain_name: 'osmosis'
@@ -11459,7 +12297,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/447A0DCE83691056289503DDAB8EB08E52E167A73629F2ACC59F056B92F51CE8',
             chain_name: 'osmosis'
@@ -11503,7 +12341,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/71066B030D8FC6479E638580E1BA9C44925E8C1F6E45036669D22017CFDC8C5E',
             chain_name: 'osmosis'
@@ -11550,7 +12388,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/A76EB6ECF4E3E2D4A23C526FD1B48FDD42F171B206C9D2758EF778A7826ADD68',
             chain_name: 'osmosis'
@@ -11596,7 +12434,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/0E4FA664327BD40B32803EE84A77F145834C0281B7F82B65521333B3669FA0BA',
             chain_name: 'osmosis'
@@ -11640,7 +12478,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/8AEEA9B9304392070F72611076C0E328CE3F2DECA1E18557E36F9DB4F09C0156',
             chain_name: 'osmosis'
@@ -11684,7 +12522,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/1EB03F13F29FEA73444586FC4E88A8C14ACE9291501E9658E3BEF951EA4AC85D',
             chain_name: 'osmosis'
@@ -11728,7 +12566,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/3DB1721541C94AD19D7735FECED74C227E13F925BDB814392980B40A19C1ED54',
             chain_name: 'osmosis'
@@ -11772,7 +12610,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/04BE4E9C825ED781F9684A1226114BB49607500CAD855F1E3FEEC18532297250',
             chain_name: 'osmosis'
@@ -11816,7 +12654,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/F4A07138CAEF0BFB4889E03C44C57956A48631061F1C8AB80421C1F229C1B835',
             chain_name: 'osmosis'
@@ -11861,7 +12699,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/56B988C4D934FB7503F5EA9B440C75D489C8AD5D193715B477BEC4F84B8BBA2A',
             chain_name: 'osmosis'
@@ -11905,7 +12743,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/CEE970BB3D26F4B907097B6B660489F13F3B0DA765B83CC7D9A0BC0CE220FA6F',
             chain_name: 'osmosis'
@@ -11951,7 +12789,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/7A496DB7C2277D4B74EC4428DDB5AC8A62816FBD0DEBE1CFE094935D746BE19C',
             chain_name: 'osmosis'
@@ -11995,7 +12833,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/3DC08BDF2689978DBCEE28C7ADC2932AA658B2F64B372760FBC5A0058669AD29',
             chain_name: 'osmosis'
@@ -12039,7 +12877,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/8A025A1E70101E39DE0C0F153E582A30806D3DA16795F6D868A3AA247D2DEDF7',
             chain_name: 'osmosis'
@@ -12085,7 +12923,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/912275A63A565BFD80734AEDFFB540132C51E446EAC41483B26EDE8A557C71CF',
             chain_name: 'osmosis'
@@ -12130,7 +12968,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/980A2748F37C938AD129B92A51E2ABA8CFFC6862ADD61EC1B291125535DBE30B',
             chain_name: 'osmosis'
@@ -12175,7 +13013,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/18FB5C09D9D2371F659D4846A956FA56225E377EE3C3652A2BF3542BF809159D',
             chain_name: 'osmosis'
@@ -12221,7 +13059,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/593F820ECE676A3E0890C734EC4F3A8DE16EC10A54EEDFA8BDFEB40EEA903960',
             chain_name: 'osmosis'
@@ -12265,7 +13103,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/0B3D528E74E3DEAADF8A68F393887AC7E06028904D02173561B0D27F6E751D0A',
             chain_name: 'osmosis'
@@ -12312,7 +13150,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/63CDD51098FD99E04E5F5610A3882CBE7614C441607BA6FCD7F3A3C1CD5325F8',
             chain_name: 'osmosis'
@@ -12359,7 +13197,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/10E5E5B06D78FFBB61FD9F89209DEE5FD4446ED0550CBB8E3747DA79E10D9DC6',
             chain_name: 'osmosis'
@@ -12405,7 +13243,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/5164ECF584AD7DC27DA9E6A89E75DAB0F7C4FCB0A624B69215B8BC6A2C40CD07',
             chain_name: 'osmosis'
@@ -12449,7 +13287,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/C00B17F74C94449A62935B4C886E6F0F643249A270DEF269D53CE6741ECCDB93',
             chain_name: 'osmosis'
@@ -12493,7 +13331,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/E47F4E97C534C95B942729E1B25DBDE111EA791411CFF100515050BEA0AC0C6B',
             chain_name: 'osmosis'
@@ -12549,7 +13387,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'factory/osmo14klwqgkmackvx2tqa0trtg69dmy0nrg4ntq4gjgw2za4734r5seqjqm4gm/uibcx',
             chain_name: 'osmosis'
@@ -12586,7 +13424,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/4D7A6F2A7744B1534C984A21F9EDFFF8809FC71A9E9243FFB702073E7FCA513A',
             chain_name: 'osmosis'
@@ -12631,7 +13469,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/E610B83FD5544E00A8A1967A2EB3BEF25F1A8CFE8650FE247A8BD4ECA9DC9222',
             chain_name: 'osmosis'
@@ -12676,7 +13514,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/81F578C39006EB4B27FFFA9460954527910D73390991B379C03B18934D272F46',
             chain_name: 'osmosis'
@@ -12719,7 +13557,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/B2BD584CD2A0A9CE53D4449667E26160C7D44A9C41AF50F602C201E5B3CCA46C',
             chain_name: 'osmosis'
@@ -12770,7 +13608,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/B1C1806A540B3E165A2D42222C59946FB85BA325596FC85662D7047649F419F3',
             chain_name: 'osmosis'
@@ -12820,7 +13658,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/98BCD43F190C6960D0005BC46BB765C827403A361C9C03C2FF694150A30284B0',
             chain_name: 'osmosis'
@@ -12863,7 +13701,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/02F196DA6FD0917DD5FEA249EE61880F4D941EE9059E7964C5C9B50AF103800F',
             chain_name: 'osmosis'
@@ -12920,7 +13758,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'factory/osmo1xqw2sl9zk8a6pch0csaw78n4swg5ws8t62wc5qta4gnjxfqg6v2qcs243k/stuibcx',
             chain_name: 'osmosis'
@@ -12956,7 +13794,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/D9AFCECDD361D38302AA66EB3BAC23B95234832C51D12489DC451FA2B7C72782',
             chain_name: 'osmosis'
@@ -13006,7 +13844,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/6F18EFEBF1688AA77F7EAC17065609494DC1BA12AFC78E9AEC832AF70A11BEF3',
             chain_name: 'osmosis'
@@ -13050,7 +13888,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/DA961FE314B009C38595FFE3AF41225D8894D663B8C3F6650DCB5B6F8435592E',
             chain_name: 'osmosis'
@@ -13094,7 +13932,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/126DA09104B71B164883842B769C0E9EC1486C0887D27A9999E395C2C8FB5682',
             chain_name: 'osmosis'
@@ -13140,7 +13978,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/2F5C084037D951B24D100F15CC013A131DF786DCE1B1DBDC48F018A9B9A138DE',
             chain_name: 'osmosis'
@@ -13184,7 +14022,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/56D7C03B8F6A07AD322EEE1BEF3AE996E09D1C1E34C27CF37E0D4A0AC5972516',
             chain_name: 'osmosis'
@@ -13233,7 +14071,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/6727B2F071643B3841BD535ECDD4ED9CAE52ABDD0DCD07C3630811A7A37B215C',
             chain_name: 'osmosis'
@@ -13278,7 +14116,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/6B2B19D874851F631FF0AF82C38A20D4B82F438C7A22F41EDA33568345397244',
             chain_name: 'osmosis'
@@ -13323,7 +14161,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/1B708808D372E959CD4839C594960309283424C775F4A038AAEBE7F83A988477',
             chain_name: 'osmosis'
@@ -13375,7 +14213,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/23AB778D694C1ECFC59B91D8C399C115CC53B0BD1C61020D8E19519F002BDD85',
             chain_name: 'osmosis'
@@ -13421,7 +14259,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/DD3938D8131F41994C1F01F4EB5233DEE9A0A5B787545B9A07A321925655BF38',
             chain_name: 'osmosis'
@@ -13466,7 +14304,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/AABCB14ACAFD53A5C455BAC01EA0CA5AE18714895846681A52BFF1E3B960B44E',
             chain_name: 'osmosis'
@@ -13510,7 +14348,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/613BF0BF2F2146AE9941E923725745E931676B2C14E9768CD609FA0849B2AE13',
             chain_name: 'osmosis'
@@ -13557,7 +14395,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB',
             chain_name: 'osmosis'
@@ -13615,7 +14453,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'factory/osmo1dv8wz09tckslr2wy5z86r46dxvegylhpt97r9yd6qc3kyc6tv42qa89dr9/ampOSMO',
             chain_name: 'osmosis'
@@ -13651,7 +14489,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/71F11BC0AF8E526B80E44172EBA9D3F0A8E03950BB882325435691EBC9450B1D',
             chain_name: 'osmosis'
@@ -13698,7 +14536,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/EAF76AD1EEF7B16D167D87711FB26ABE881AC7D9F7E6D0CF313D5FA530417208',
             chain_name: 'osmosis'
@@ -13745,7 +14583,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/208B2F137CDE510B44C41947C045CFDC27F996A9D990EA64460BDD5B3DBEB2ED',
             chain_name: 'osmosis'
@@ -13788,7 +14626,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/5A0060579D24FBE5268BEA74C3281E7FE533D361C41A99307B4998FEC611E46B',
             chain_name: 'osmosis'
@@ -13835,7 +14673,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/1E43D59E565D41FB4E54CA639B838FFD5BCFC20003D330A56CB1396231AA1CBA',
             chain_name: 'osmosis'
@@ -13880,7 +14718,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/CA3733CB0071F480FAE8EF0D9C3D47A49C6589144620A642BBE0D59A293D110E',
             chain_name: 'osmosis'
@@ -13926,7 +14764,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/2108F2D81CBE328F371AD0CEF56691B18A86E08C3651504E42487D9EE92DDE9C',
             chain_name: 'osmosis'
@@ -13978,7 +14816,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/B1C287C2701774522570010EEBCD864BCB7AB714711B3AA218699FDD75E832F5',
             chain_name: 'osmosis'
@@ -14024,7 +14862,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/A4D176906C1646949574B48C1928D475F2DF56DE0AC04E1C99B08F90BC21ABDE',
             chain_name: 'osmosis'
@@ -14074,7 +14912,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/51D893F870B7675E507E91DA8DB0B22EA66333207E4F5C0708757F08EE059B0B',
             chain_name: 'osmosis'
@@ -14119,7 +14957,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/D69F6D787EC649F4E998161A9F0646F4C2DCC64748A2AB982F14CAFBA7CC0EC9',
             chain_name: 'osmosis'
@@ -14165,7 +15003,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/6B99DB46AA9FF47162148C1726866919E44A6A5E0274B90912FD17E19A337695',
             chain_name: 'osmosis'
@@ -14218,7 +15056,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/62F82550D0B96522361C89B0DA1119DE262FBDFB25E5502BC5101B5C0D0DBAAC',
             chain_name: 'osmosis'
@@ -14267,7 +15105,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/498A0751C798A0D9A389AA3691123DADA57DAA4FE165D5C75894505B876BA6E4',
             chain_name: 'osmosis'
@@ -14320,7 +15158,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/FBB3FEF80ED2344D821D4F95C31DBFD33E4E31D5324CAD94EF756E67B749F668',
             chain_name: 'osmosis'
@@ -14370,7 +15208,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/95C9B5870F95E21A242E6AF9ADCB1F212EE4A8855087226C36FBE43FC41A77B8',
             chain_name: 'osmosis'
@@ -14417,7 +15255,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/98B3DBF1FA79C4C14CC5F08F62ACD5498560FCB515F677526FD200D54EA048B6',
             chain_name: 'osmosis'
@@ -14461,7 +15299,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/DEE262653B9DE39BCEF0493D47E0DFC4FE62F7F046CF38B9FDEFEBE98D149A71',
             chain_name: 'osmosis'
@@ -14507,7 +15345,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/1CDF9C7D073DD59ED06F15DB08CC0901F2A24759BE70463570E8896F9A444ADF',
             chain_name: 'osmosis'
@@ -14562,7 +15400,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'factory/osmo1s794h9rxggytja3a4pmwul53u98k06zy2qtrdvjnfuxruh7s8yjs6cyxgd/ucdt',
             chain_name: 'osmosis'
@@ -14607,7 +15445,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'factory/osmo1s794h9rxggytja3a4pmwul53u98k06zy2qtrdvjnfuxruh7s8yjs6cyxgd/umbrn',
             chain_name: 'osmosis'
@@ -14643,7 +15481,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/A1830DECC0B742F0B2044FF74BE727B5CF92C9A28A9235C3BACE4D24A23504FA',
             chain_name: 'osmosis'
@@ -14689,7 +15527,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/01D2F0C4739C871BFBEE7E786709E6904A55559DC1483DD92ED392EF12247862',
             chain_name: 'osmosis'
@@ -14733,7 +15571,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/B66CE615C600ED0A8B5AF425ECFE0D57BE2377587F66C45934A76886F34DC9B7',
             chain_name: 'osmosis'
@@ -14777,7 +15615,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/CFF40564FDA3E958D9904B8B479124987901168494655D9CC6B7C0EC0416020B',
             chain_name: 'osmosis'
@@ -14824,7 +15662,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/672406ADE4EDFD8C5EA7A0D0DD0C37E431DA7BD8393A15CD2CFDE3364917EB2A',
             chain_name: 'osmosis'
@@ -14871,7 +15709,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/F3166F4D31D6BA1EC6C9F5536F5DDDD4CC93DBA430F7419E7CDC41C497944A65',
             chain_name: 'osmosis'
@@ -14918,7 +15756,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/D79E7D83AB399BFFF93433E54FAA480C191248FC556924A2A8351AE2638B3877',
             chain_name: 'osmosis'
@@ -14968,7 +15806,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/831F0B1BBB1D08A2B75311892876D71565478C532967545476DF4C2D7492E48C',
             chain_name: 'osmosis'
@@ -15020,7 +15858,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/2B30802A0B03F91E4E16D6175C9B70F2911377C1CAE9E50FF011C821465463F9',
             chain_name: 'osmosis'
@@ -15066,7 +15904,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/75345531D87BD90BF108BE7240BD721CB2CB0A1F16D4EBA71B09EC3C43E15C8F',
             chain_name: 'osmosis'
@@ -15116,7 +15954,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/6928AFA9EA721938FED13B051F9DBF1272B16393D20C49EA5E4901BB76D94A90',
             chain_name: 'osmosis'
@@ -15175,7 +16013,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'factory/osmo1g8qypve6l95xmhgc0fddaecerffymsl7kn9muw/squosmo',
             chain_name: 'osmosis'
@@ -15211,7 +16049,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/690EB0A0CA0DA2DC1E9CF62FB23C935AE5C7E9F57919CF89690521D5D70948A7',
             chain_name: 'osmosis'
@@ -15255,7 +16093,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/71DAA4CAFA4FE2F9803ABA0696BA5FC0EFC14305A2EA8B4E01880DB851B1EC02',
             chain_name: 'osmosis'
@@ -15302,7 +16140,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/2F21E6D4271DE3F561F20A02CD541DAF7405B1E9CB3B9B07E3C2AC7D8A4338A5',
             chain_name: 'osmosis'
@@ -15354,7 +16192,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'factory/osmo1g8qypve6l95xmhgc0fddaecerffymsl7kn9muw/sqatom',
             chain_name: 'osmosis'
@@ -15397,7 +16235,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'factory/osmo1g8qypve6l95xmhgc0fddaecerffymsl7kn9muw/sqbtc',
             chain_name: 'osmosis'
@@ -15433,7 +16271,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/09FAF1E04435E14C68DE7AB0D03C521C92975C792DB12B2EA390BAA2E06B3F3D',
             chain_name: 'osmosis'
@@ -15474,7 +16312,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/4F3B0EC2FE2D370D10C3671A1B7B06D2A964C721470C305CBB846ED60E6CAA20',
             chain_name: 'osmosis'
@@ -15517,7 +16355,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/BCDB35B7390806F35E716D275E1E017999F8281A81B6F128F087EF34D1DFA761',
             chain_name: 'osmosis'
@@ -15564,7 +16402,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/D3A1900B2B520E45608B5671ADA461E1109628E89B4289099557C6D3996F7DAA',
             chain_name: 'osmosis'
@@ -15611,7 +16449,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/020F5162B7BC40656FC5432622647091F00D53E82EE8D21757B43D3282F25424',
             chain_name: 'osmosis'
@@ -15657,7 +16495,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/E7905742CE2EA4EA5D592527DC89220C59B617DE803939FE7293805A64B484D7',
             chain_name: 'osmosis'
@@ -15705,7 +16543,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/E42006ED917C769EDE1B474650EEA6BFE3F97958912B9206DD7010A28D01D9D5',
             chain_name: 'osmosis'
@@ -15750,7 +16588,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/ECBE78BF7677320A93E7BA1761D144BCBF0CBC247C290C049655E106FE5DC68E',
             chain_name: 'osmosis'
@@ -15814,7 +16652,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'factory/osmo1mlng7pz4pnyxtpq0akfwall37czyk9lukaucsrn30ameplhhshtqdvfm5c/ulvn',
             chain_name: 'osmosis'
@@ -15850,7 +16688,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/46AC07DBFF1352EC94AF5BD4D23740D92D9803A6B41F6E213E77F3A1143FB963',
             chain_name: 'osmosis'
@@ -15895,7 +16733,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/BF685448E564B5A4AC8F6E0493A0B979D0E0BF5EC11F7E15D25A0A2160C944DD',
             chain_name: 'osmosis'
@@ -15939,7 +16777,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA',
             chain_name: 'osmosis'
@@ -15986,7 +16824,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/4976049456D261659D0EC499CC9C2391D3C7D1128A0B9FB0BBF2842D1B2BC7BC',
             chain_name: 'osmosis'
@@ -16030,7 +16868,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/DDF1CD4CDC14AE2D6A3060193624605FF12DEE71CF1F8C19EEF35E9447653493',
             chain_name: 'osmosis'
@@ -16076,7 +16914,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/42A9553A7770F3D7B62F3A82AF04E7719B4FD6EAF31BE5645092AAC4A6C2201D',
             chain_name: 'osmosis'
@@ -16121,7 +16959,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/69110FF673D70B39904FF056CFDFD58A90BEC3194303F45C32CB91B8B0A738EA',
             chain_name: 'osmosis'
@@ -16168,7 +17006,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/9DDF52A334F92BC57A9E0D59DFF9984EAC61D2A14E5162605DF601AA58FDFC6D',
             chain_name: 'osmosis'
@@ -16219,7 +17057,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/23A62409E4AD8133116C249B1FA38EED30E500A115D7B153109462CD82C1CD99',
             chain_name: 'osmosis'
@@ -16269,7 +17107,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/6FD2938076A4C1BB3A324A676E76B0150A4443DAE0E002FB62AC0E6B604B1519',
             chain_name: 'osmosis'
@@ -16321,7 +17159,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/183C0BB962D2F57C957E0B134CFA0AC9D6F755C02DE9DC2A59089BA23009DEC3',
             chain_name: 'osmosis'
@@ -16365,7 +17203,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/5F5B7DA5ECC80F6C7A8702D525BB0B74279B1F7B8EFAE36E423D68788F7F39FF',
             chain_name: 'osmosis'
@@ -16409,7 +17247,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/1A611E8A3E4248106A1A5A80A64BFA812739435E8B9888EB3F652A21F029F317',
             chain_name: 'osmosis'
@@ -16455,7 +17293,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/37CB3078432510EE57B9AFA8DBE028B33AE3280A144826FEAC5F2334CF2C5539',
             chain_name: 'osmosis'
@@ -16499,7 +17337,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/2FFE07C4B4EFC0DDA099A16C6AF3C9CCA653CC56077E87217A585D48794B0BC7',
             chain_name: 'osmosis'
@@ -16543,7 +17381,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/8C8F6349F656C943543C6B040377BE44123D01F712277815C3C13098BB98818C',
             chain_name: 'osmosis'
@@ -16588,7 +17426,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/176DD560277BB0BD676260BE02EBAB697725CA85144D8A2BF286C6B5323DB5FE',
             chain_name: 'osmosis'
@@ -16632,7 +17470,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/9B8EC667B6DF55387DC0F3ACC4F187DA6921B0806ED35DE6B04DE96F5AB81F53',
             chain_name: 'osmosis'
@@ -16676,7 +17514,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/94ED1F172BC633DFC56D7E26551D8B101ADCCC69052AC44FED89F97FF658138F',
             chain_name: 'osmosis'
@@ -16728,7 +17566,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'factory/osmo1z0qrq605sjgcqpylfl4aa6s90x738j7m58wyatt0tdzflg2ha26q67k743/wbtc',
             chain_name: 'osmosis'
@@ -16778,7 +17616,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/442A08C33AE9875DF90792FFA73B5728E1CAECE87AB4F26AE9B422F1E682ED23',
             chain_name: 'osmosis'
@@ -16822,7 +17660,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/4BDADBEDA31899036AB286E9901116496A9D85FB87B35A408C9D67C0DCAC660A',
             chain_name: 'osmosis'
@@ -16874,7 +17712,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO',
             chain_name: 'osmosis'
@@ -16916,7 +17754,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'factory/osmo1g8qypve6l95xmhgc0fddaecerffymsl7kn9muw/sqtia',
             chain_name: 'osmosis'
@@ -16952,7 +17790,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/73BB20AF857D1FE6E061D01CA13870872AD0C979497CAF71BEA25B1CBF6879F1',
             chain_name: 'osmosis'
@@ -16996,7 +17834,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/980E82A9F8E7CA8CD480F4577E73682A6D3855A267D1831485D7EBEF0E7A6C2C',
             chain_name: 'osmosis'
@@ -17042,7 +17880,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/698350B8A61D575025F3ED13E9AC9C0F45C89DEFE92F76D5838F1D3C1A7FF7C9',
             chain_name: 'osmosis'
@@ -17088,7 +17926,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/072E5B3D6F278B3E6A9C51D7EAD1A737148609512C5EBE8CBCB5663264A0DDB7',
             chain_name: 'osmosis'
@@ -17140,7 +17978,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/9A76CDF0CBCEF37923F32518FA15E5DC92B9F56128292BC4D63C4AEA76CBB110',
             chain_name: 'osmosis'
@@ -17195,7 +18033,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'factory/osmo1279xudevmf5cw83vkhglct7jededp86k90k2le/RAPTR',
             chain_name: 'osmosis'
@@ -17230,7 +18068,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/0B3C3D06228578334B66B57FBFBA4033216CEB8119B27ACDEE18D92DA5B28D43',
             chain_name: 'osmosis'
@@ -17283,7 +18121,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'factory/osmo1rckme96ptawr4zwexxj5g5gej9s2dmud8r2t9j0k0prn5mch5g4snzzwjv/sail',
             chain_name: 'osmosis'
@@ -17319,7 +18157,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'ibc/F49DFB3BC8105C57EE7F17EC2402438825B31212CFDD81681EB87911E934F32C',
             chain_name: 'osmosis'
@@ -17379,7 +18217,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6994',
+            channel_id: 'channel-19774',
             base_denom:
               'factory/osmo10n8rv8npx870l69248hnp6djy6pll2yuzzn9x8/BADKID',
             chain_name: 'osmosis'
@@ -17395,7 +18233,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/E3459360643C2555C57C7DAB0567FA762B42D5D6D45A76615EA7D99D933AEC04',
+            'ibc/27A5DE18D796A595123D97078F9AB9EAEFC23540724384F219EACED2BD5511F5',
           exponent: 0,
           aliases: ['uscrt']
         },
@@ -17404,7 +18242,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/E3459360643C2555C57C7DAB0567FA762B42D5D6D45A76615EA7D99D933AEC04',
+      base: 'ibc/27A5DE18D796A595123D97078F9AB9EAEFC23540724384F219EACED2BD5511F5',
       name: 'Secret Network',
       display: 'scrt',
       symbol: 'SCRT',
@@ -17423,12 +18261,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-91',
+            channel_id: 'channel-130',
             base_denom: 'uscrt',
             chain_name: 'secretnetwork'
           },
           chain: {
-            channel_id: 'channel-14'
+            channel_id: 'channel-35'
           }
         }
       ]
@@ -17438,7 +18276,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/CE9455F316C89EF327D7C92B20DD3A0FC9ED0F218BE46F341C6D140104980B4F',
+            'ibc/FF6C2E86490C1C4FBBD24F55032831D2415B9D7882F85C3CC9C2401D79362BEA',
           exponent: 0,
           aliases: ['ustrd']
         },
@@ -17447,7 +18285,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/CE9455F316C89EF327D7C92B20DD3A0FC9ED0F218BE46F341C6D140104980B4F',
+      base: 'ibc/FF6C2E86490C1C4FBBD24F55032831D2415B9D7882F85C3CC9C2401D79362BEA',
       name: 'Stride',
       display: 'strd',
       symbol: 'STRD',
@@ -17466,12 +18304,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-162',
+            channel_id: 'channel-197',
             base_denom: 'ustrd',
             chain_name: 'stride'
           },
           chain: {
-            channel_id: 'channel-4'
+            channel_id: 'channel-0'
           }
         }
       ]
@@ -17480,7 +18318,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/94A161EACA407A39889F340889397FA023A8E18DBC9CF0C66E17235A4DBF21FB',
+            'ibc/054A44EC8D9B68B9A6F0D5708375E00A5569A28F21E0064FF12CADC3FEF1D04F',
           exponent: 0,
           aliases: ['stuatom']
         },
@@ -17489,7 +18327,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/94A161EACA407A39889F340889397FA023A8E18DBC9CF0C66E17235A4DBF21FB',
+      base: 'ibc/054A44EC8D9B68B9A6F0D5708375E00A5569A28F21E0064FF12CADC3FEF1D04F',
       name: 'Stride Staked ATOM',
       display: 'statom',
       symbol: 'stATOM',
@@ -17497,12 +18335,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-162',
+            channel_id: 'channel-197',
             base_denom: 'stuatom',
             chain_name: 'stride'
           },
           chain: {
-            channel_id: 'channel-4'
+            channel_id: 'channel-0'
           }
         }
       ],
@@ -17522,7 +18360,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/B7300D0CD9C05F7C2564E0C9001A32708F3C80366B5876CE0C2B738F9AD89F32',
+            'ibc/1B216B3FC63B5A9A90A3C44BBBEE4C1AADA43C9DA020025537BE2677E6E00C55',
           exponent: 0,
           aliases: ['stustars']
         },
@@ -17531,7 +18369,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/B7300D0CD9C05F7C2564E0C9001A32708F3C80366B5876CE0C2B738F9AD89F32',
+      base: 'ibc/1B216B3FC63B5A9A90A3C44BBBEE4C1AADA43C9DA020025537BE2677E6E00C55',
       name: 'Stride Staked STARS',
       display: 'ststars',
       symbol: 'stSTARS',
@@ -17539,12 +18377,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-162',
+            channel_id: 'channel-197',
             base_denom: 'stustars',
             chain_name: 'stride'
           },
           chain: {
-            channel_id: 'channel-4'
+            channel_id: 'channel-0'
           }
         }
       ],
@@ -17564,7 +18402,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/7B6F0D13075610B5F794D30673CD1F4875B92F8389C56B91D714E8D879DCA143',
+            'ibc/4263C1D1EEEA066572F679EF212BDD522ADF0E57C86819AF260C8BC82BD87602',
           exponent: 0,
           aliases: ['stuosmo']
         },
@@ -17573,7 +18411,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/7B6F0D13075610B5F794D30673CD1F4875B92F8389C56B91D714E8D879DCA143',
+      base: 'ibc/4263C1D1EEEA066572F679EF212BDD522ADF0E57C86819AF260C8BC82BD87602',
       name: 'Stride Staked OSMO',
       display: 'stosmo',
       symbol: 'stOSMO',
@@ -17581,12 +18419,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-162',
+            channel_id: 'channel-197',
             base_denom: 'stuosmo',
             chain_name: 'stride'
           },
           chain: {
-            channel_id: 'channel-4'
+            channel_id: 'channel-0'
           }
         }
       ],
@@ -17606,7 +18444,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/1C05FA4892344D49B509691AC4127BB961B17BE9E6E87B0E751D2E8FC380EFF3',
+            'ibc/C4385BAF25938E02B0EA90D512CE43BFACA892F7FAD81D63CC82BD8EBFA21857',
           exponent: 0,
           aliases: ['stujuno']
         },
@@ -17615,7 +18453,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/1C05FA4892344D49B509691AC4127BB961B17BE9E6E87B0E751D2E8FC380EFF3',
+      base: 'ibc/C4385BAF25938E02B0EA90D512CE43BFACA892F7FAD81D63CC82BD8EBFA21857',
       name: 'Stride Staked JUNO',
       display: 'stjuno',
       symbol: 'stJUNO',
@@ -17623,12 +18461,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-162',
+            channel_id: 'channel-197',
             base_denom: 'stujuno',
             chain_name: 'stride'
           },
           chain: {
-            channel_id: 'channel-4'
+            channel_id: 'channel-0'
           }
         }
       ],
@@ -17648,7 +18486,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/AE9636F988EB21C7B210FB59BADCB379C12C64E0237E3CCB20029213D8063624',
+            'ibc/0E42296D09755A081C28C04A4409998EB4285C6C8BF2A24D50DF266E62A601DD',
           exponent: 0,
           aliases: ['stuluna']
         },
@@ -17657,7 +18495,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/AE9636F988EB21C7B210FB59BADCB379C12C64E0237E3CCB20029213D8063624',
+      base: 'ibc/0E42296D09755A081C28C04A4409998EB4285C6C8BF2A24D50DF266E62A601DD',
       name: 'Stride Staked LUNA',
       display: 'stluna',
       symbol: 'stLUNA',
@@ -17665,12 +18503,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-162',
+            channel_id: 'channel-197',
             base_denom: 'stuluna',
             chain_name: 'stride'
           },
           chain: {
-            channel_id: 'channel-4'
+            channel_id: 'channel-0'
           }
         }
       ],
@@ -17690,7 +18528,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/98CD8220D455FD16234135B4B8E05D94A4C5F160F43011784B9032C7D161E042',
+            'ibc/C5E245652F3A58860617FD58912B2321345167399B652821F0F0562707A163F1',
           exponent: 0,
           aliases: ['stinj']
         },
@@ -17699,7 +18537,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/98CD8220D455FD16234135B4B8E05D94A4C5F160F43011784B9032C7D161E042',
+      base: 'ibc/C5E245652F3A58860617FD58912B2321345167399B652821F0F0562707A163F1',
       name: 'Stride Staked INJ',
       display: 'stINJ',
       symbol: 'stINJ',
@@ -17707,12 +18545,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-162',
+            channel_id: 'channel-197',
             base_denom: 'stinj',
             chain_name: 'stride'
           },
           chain: {
-            channel_id: 'channel-4'
+            channel_id: 'channel-0'
           }
         }
       ],
@@ -17731,7 +18569,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/8E12F60604AA84A8BD7E83A7B336A90AB7606E1F2C05B8B6E683A5C2938C58AC',
+            'ibc/04CDA5EBB8A7E94BB60879B7F43EF0EDD2604990D8AB5BA18ADCB173F66FF874',
           exponent: 0,
           aliases: ['staevmos']
         },
@@ -17740,7 +18578,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/8E12F60604AA84A8BD7E83A7B336A90AB7606E1F2C05B8B6E683A5C2938C58AC',
+      base: 'ibc/04CDA5EBB8A7E94BB60879B7F43EF0EDD2604990D8AB5BA18ADCB173F66FF874',
       name: 'Stride Staked EVMOS',
       display: 'stevmos',
       symbol: 'stEVMOS',
@@ -17748,12 +18586,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-162',
+            channel_id: 'channel-197',
             base_denom: 'staevmos',
             chain_name: 'stride'
           },
           chain: {
-            channel_id: 'channel-4'
+            channel_id: 'channel-0'
           }
         }
       ],
@@ -17774,7 +18612,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/31CD4865CB28BE048BBFD8013FE9910DA4199391AF4E13CDC2A033DA0C05BC26',
+            'ibc/C6BE35C03177D2959156FD22A76DE8006F4F7DE9E7B90CCA937C51872D862D41',
           exponent: 0,
           aliases: ['stadydx']
         },
@@ -17783,7 +18621,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/31CD4865CB28BE048BBFD8013FE9910DA4199391AF4E13CDC2A033DA0C05BC26',
+      base: 'ibc/C6BE35C03177D2959156FD22A76DE8006F4F7DE9E7B90CCA937C51872D862D41',
       name: 'Stride Staked DYDX',
       display: 'stDYDX',
       symbol: 'stDYDX',
@@ -17791,12 +18629,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-162',
+            channel_id: 'channel-197',
             base_denom: 'stadydx',
             chain_name: 'stride'
           },
           chain: {
-            channel_id: 'channel-4'
+            channel_id: 'channel-0'
           }
         }
       ],
@@ -17816,7 +18654,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/EADAE1AEE456C91C72D4FD4F8C3103C287909BF2929B4CE7A1B5123EA9B85AEA',
+            'ibc/F46BA5EDCA6DAA5F7EFD3838430E03647CDC786BB1B89BC9FDD1CBE16B099645',
           exponent: 0,
           aliases: ['stutia']
         },
@@ -17825,7 +18663,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/EADAE1AEE456C91C72D4FD4F8C3103C287909BF2929B4CE7A1B5123EA9B85AEA',
+      base: 'ibc/F46BA5EDCA6DAA5F7EFD3838430E03647CDC786BB1B89BC9FDD1CBE16B099645',
       name: 'Stride Staked TIA',
       display: 'stTIA',
       symbol: 'stTIA',
@@ -17833,12 +18671,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-162',
+            channel_id: 'channel-197',
             base_denom: 'stutia',
             chain_name: 'stride'
           },
           chain: {
-            channel_id: 'channel-4'
+            channel_id: 'channel-0'
           }
         }
       ],
@@ -17857,7 +18695,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/BBD9E8FA457315748D084E397AC6959759AFB4224F554FF2FFC353654932FCBC',
+            'ibc/92CE5F0DE7FAF6B1CF48C92EDD4878BF3F7099FEAA0ACCE9BB4FB2F7523D209E',
           exponent: 0,
           aliases: ['stuumee']
         },
@@ -17866,7 +18704,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/BBD9E8FA457315748D084E397AC6959759AFB4224F554FF2FFC353654932FCBC',
+      base: 'ibc/92CE5F0DE7FAF6B1CF48C92EDD4878BF3F7099FEAA0ACCE9BB4FB2F7523D209E',
       name: 'Stride Staked UMEE',
       display: 'stumee',
       symbol: 'stUMEE',
@@ -17874,12 +18712,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-162',
+            channel_id: 'channel-197',
             base_denom: 'stuumee',
             chain_name: 'stride'
           },
           chain: {
-            channel_id: 'channel-4'
+            channel_id: 'channel-0'
           }
         }
       ],
@@ -17899,7 +18737,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/9C5009B23D5272B1033ABEA2DECCC9CA7D76F2E1D3345DAAD35AF6FD23A701A8',
+            'ibc/48F9132D7497A534E15ACC9CDB8FD36EE93D397EFC5B2E22866287893FC8D360',
           exponent: 0,
           aliases: ['stucmdx']
         },
@@ -17908,7 +18746,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/9C5009B23D5272B1033ABEA2DECCC9CA7D76F2E1D3345DAAD35AF6FD23A701A8',
+      base: 'ibc/48F9132D7497A534E15ACC9CDB8FD36EE93D397EFC5B2E22866287893FC8D360',
       name: 'Stride Staked CMDX',
       display: 'stcmdx',
       symbol: 'stCMDX',
@@ -17916,12 +18754,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-162',
+            channel_id: 'channel-197',
             base_denom: 'stucmdx',
             chain_name: 'stride'
           },
           chain: {
-            channel_id: 'channel-4'
+            channel_id: 'channel-0'
           }
         }
       ],
@@ -17940,7 +18778,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/BBFBD191D6780767E8252AE89C8A6D6D051014B5BF917EA3EBD8A25DA4A3AB8A',
+            'ibc/9BCF0F77276359B4AC0328701DFE4F9BC3BA8829E0A853CFF69D8998A591BEEC',
           exponent: 0,
           aliases: ['stusomm']
         },
@@ -17949,7 +18787,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/BBFBD191D6780767E8252AE89C8A6D6D051014B5BF917EA3EBD8A25DA4A3AB8A',
+      base: 'ibc/9BCF0F77276359B4AC0328701DFE4F9BC3BA8829E0A853CFF69D8998A591BEEC',
       name: 'Stride Staked SOMM',
       display: 'stsomm',
       symbol: 'stSOMM',
@@ -17957,12 +18795,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-162',
+            channel_id: 'channel-197',
             base_denom: 'stusomm',
             chain_name: 'stride'
           },
           chain: {
-            channel_id: 'channel-4'
+            channel_id: 'channel-0'
           }
         }
       ],
@@ -17977,276 +18815,6 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsomm.svg'
         }
       ]
-    },
-    {
-      description: 'The native staking token of Terra.',
-      denom_units: [
-        {
-          denom:
-            'ibc/70541FE5CA74E84F51753FC9CABC86E88FBC8874EF554882F4E0407137C2E0E3',
-          exponent: 0,
-          aliases: ['uluna']
-        },
-        {
-          denom: 'luna',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/70541FE5CA74E84F51753FC9CABC86E88FBC8874EF554882F4E0407137C2E0E3',
-      name: 'Luna',
-      display: 'luna',
-      symbol: 'LUNA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
-      },
-      coingecko_id: 'terra-luna-2',
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-300',
-            base_denom: 'uluna',
-            chain_name: 'terra2'
-          },
-          chain: {
-            channel_id: 'channel-15'
-          }
-        }
-      ]
-    },
-    {
-      description: 'ERIS Alliance Staked ampWHALE on Terra',
-      denom_units: [
-        {
-          denom:
-            'ibc/D1E44E6850916F9052E6C7494E710F42FF6C17AC8A199310F651B0661CE9A8DB',
-          exponent: 0,
-          aliases: [
-            'factory/terra1j35ta0llaxcf55auv2cjqau5a7aee6g8fz7md7my7005cvh23jfsaw83dy/ampWHALEt'
-          ]
-        },
-        {
-          denom: 'ampWHALEt',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/D1E44E6850916F9052E6C7494E710F42FF6C17AC8A199310F651B0661CE9A8DB',
-      name: 'ERIS Alliance Staked ampWHALE',
-      display: 'ampWHALEt',
-      symbol: 'ampWHALEt',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampwhalet.svg'
-      },
-      images: [
-        {
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampwhalet.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-300',
-            base_denom:
-              'factory/terra1j35ta0llaxcf55auv2cjqau5a7aee6g8fz7md7my7005cvh23jfsaw83dy/ampWHALEt',
-            chain_name: 'terra2'
-          },
-          chain: {
-            channel_id: 'channel-15'
-          }
-        }
-      ]
-    },
-    {
-      description: 'ERIS Alliance Staked boneWHALE on Terra',
-      denom_units: [
-        {
-          denom:
-            'ibc/928776E0F53BE2D60795101A22499A15E61DDCDE5BEF765431F4192CB03A8A8E',
-          exponent: 0,
-          aliases: [
-            'factory/terra10j3zrymfrkta2pxe0gklc79gu06tqyuy8c3kh6tqdsrrprsjqkrqzfl4df/boneWHALEt'
-          ]
-        },
-        {
-          denom: 'boneWHALEt',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/928776E0F53BE2D60795101A22499A15E61DDCDE5BEF765431F4192CB03A8A8E',
-      name: 'ERIS Alliance Staked boneWHALE',
-      display: 'boneWHALEt',
-      symbol: 'boneWHALEt',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bonewhalet.svg'
-      },
-      images: [
-        {
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bonewhalet.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-300',
-            base_denom:
-              'factory/terra10j3zrymfrkta2pxe0gklc79gu06tqyuy8c3kh6tqdsrrprsjqkrqzfl4df/boneWHALEt',
-            chain_name: 'terra2'
-          },
-          chain: {
-            channel_id: 'channel-15'
-          }
-        }
-      ]
-    },
-    {
-      description: 'ERIS Liquid Enterprise Staked ROAR',
-      denom_units: [
-        {
-          denom:
-            'ibc/7D66BB2F9DC8FF7DF3A0FDC4DEA020587A4C27343821AC23A12942EE5B2BEF9B',
-          exponent: 0,
-          aliases: [
-            'factory/terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy/ampROAR'
-          ]
-        },
-        {
-          denom: 'ampROAR',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/7D66BB2F9DC8FF7DF3A0FDC4DEA020587A4C27343821AC23A12942EE5B2BEF9B',
-      name: 'ERIS Amplified ROAR',
-      display: 'ampROAR',
-      symbol: 'ampROAR',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/amproar.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/amproar.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-300',
-            base_denom:
-              'factory/terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy/ampROAR',
-            chain_name: 'terra2'
-          },
-          chain: {
-            channel_id: 'channel-15'
-          }
-        }
-      ]
-    },
-    {
-      denom_units: [
-        {
-          denom:
-            'ibc/A5713E2635624815A7B63EAE7DE6739BD79EB02E3DC462366B87E90CAC1B00D7',
-          exponent: 0,
-          aliases: [
-            'ibc/A356EC90DC3AE43D485514DA7260EDC7ABB5CFAA0654CE2524C739392975AD3C'
-          ]
-        },
-        {
-          denom:
-            'factory/neutron1ug740qrkquxzrk2hh29qrlx3sktkfml3je7juusc2te7xmvsscns0n2wry/wstETH',
-          exponent: 18
-        }
-      ],
-      type_asset: 'ics20',
-      base: 'ibc/A5713E2635624815A7B63EAE7DE6739BD79EB02E3DC462366B87E90CAC1B00D7',
-      name: 'Wrapped Lido Staked Ether',
-      display: 'wstETH',
-      symbol: 'wstETH',
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-300',
-            base_denom:
-              'ibc/A356EC90DC3AE43D485514DA7260EDC7ABB5CFAA0654CE2524C739392975AD3C',
-            chain_name: 'terra2'
-          },
-          chain: {
-            channel_id: 'channel-15'
-          }
-        }
-      ],
-      images: [
-        {
-          image_sync: {
-            chain_name: 'neutron',
-            base_denom:
-              'factory/neutron1ug740qrkquxzrk2hh29qrlx3sktkfml3je7juusc2te7xmvsscns0n2wry/wstETH'
-          },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wsteth.svg'
-        }
-      ],
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wsteth.svg'
-      }
-    },
-    {
-      description: 'The first memecoin on osmosis.',
-      denom_units: [
-        {
-          denom:
-            'ibc/01A169CB25FAE9813C3B06F793C5E8DDA753683B77D3A026E6325B6D41E7F9FB',
-          exponent: 0,
-          aliases: [
-            'ibc/7CB33A66F90533ED1E168CB3251253C719CF4B04FF1290AFD795F14CA1D67278'
-          ]
-        },
-        {
-          denom: 'WOSMO',
-          exponent: 6
-        }
-      ],
-      type_asset: 'ics20',
-      base: 'ibc/01A169CB25FAE9813C3B06F793C5E8DDA753683B77D3A026E6325B6D41E7F9FB',
-      name: 'Wosmo',
-      display: 'WOSMO',
-      symbol: 'WOSMO',
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-300',
-            base_denom:
-              'ibc/7CB33A66F90533ED1E168CB3251253C719CF4B04FF1290AFD795F14CA1D67278',
-            chain_name: 'terra2'
-          },
-          chain: {
-            channel_id: 'channel-15'
-          }
-        }
-      ],
-      images: [
-        {
-          image_sync: {
-            chain_name: 'osmosis',
-            base_denom:
-              'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
-        }
-      ],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
-      }
     }
   ]
 };

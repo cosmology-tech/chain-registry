@@ -26158,14 +26158,14 @@ const assets: AssetList = {
         'Minerva was one of the main goddesses worshiped by the Roman Pagans and is a goddess from Roman Mythology.',
       type_asset: 'cw20',
       address:
-        'juno1lsfym25w35ylhuq4m48fmycwe6nhntzh2ag2pttqtfe8cew9s25s2ym9t8',
+        'juno1h86ut5aevlxuuxrra6wy3dfq6e39zkzzv9eelz678jr6amxlc4gsx46j82',
       denom_units: [
         {
           denom:
-            'ibc/5E38E31A482F616D4468F564CF8612BB6277CCFC30B210E799528582ABF36962',
+            'ibc/BB3C502A386F77BD9065EF37AB094516F6471FF680CD2E5628B8F687DDD483A2',
           exponent: 0,
           aliases: [
-            'cw20:juno1lsfym25w35ylhuq4m48fmycwe6nhntzh2ag2pttqtfe8cew9s25s2ym9t8'
+            'cw20:juno1h86ut5aevlxuuxrra6wy3dfq6e39zkzzv9eelz678jr6amxlc4gsx46j82'
           ]
         },
         {
@@ -26173,7 +26173,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/5E38E31A482F616D4468F564CF8612BB6277CCFC30B210E799528582ABF36962',
+      base: 'ibc/BB3C502A386F77BD9065EF37AB094516F6471FF680CD2E5628B8F687DDD483A2',
       name: 'MINERVA',
       display: 'minerva',
       symbol: 'MRVA',
@@ -26192,7 +26192,56 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-163',
             base_denom:
-              'cw20:juno1lsfym25w35ylhuq4m48fmycwe6nhntzh2ag2pttqtfe8cew9s25s2ym9t8',
+              'cw20:juno1h86ut5aevlxuuxrra6wy3dfq6e39zkzzv9eelz678jr6amxlc4gsx46j82',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-45'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'In Roman mythology, Juno (Latin: Iuno; pronounced [[Help:Pronunciation|[ˈjuːnoː]]]) was the protector and advisor of the state.',
+      type_asset: 'cw20',
+      address:
+        'juno13c57ssxvlzefsj4v5spdz4m9r6c6s2far5npvmc9en7nz02xqjyqne40gk',
+      denom_units: [
+        {
+          denom:
+            'ibc/2A469DF99AA69F318A584B3E5ED0D3479F479811406977BA5FD6D955F2544C00',
+          exponent: 0,
+          aliases: [
+            'cw20:juno13c57ssxvlzefsj4v5spdz4m9r6c6s2far5npvmc9en7nz02xqjyqne40gk'
+          ]
+        },
+        {
+          denom: 'luno',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/2A469DF99AA69F318A584B3E5ED0D3479F479811406977BA5FD6D955F2544C00',
+      name: 'LUNO',
+      display: 'luno',
+      symbol: 'LUNO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/luno.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/luno.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'transfer',
+            channel_id: 'channel-163',
+            base_denom:
+              'cw20:juno13c57ssxvlzefsj4v5spdz4m9r6c6s2far5npvmc9en7nz02xqjyqne40gk',
             chain_name: 'juno'
           },
           chain: {

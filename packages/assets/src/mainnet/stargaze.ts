@@ -19039,6 +19039,429 @@ const assets: AssetList = {
       ]
     },
     {
+      description:
+        'The XPRT token is primarily a governance token for the Persistence chain.',
+      denom_units: [
+        {
+          denom:
+            'ibc/B0DD091AE8F4DF06E155C0328B5098206A756766466F101CDC2F7D196C3AA572',
+          exponent: 0,
+          aliases: ['uxprt']
+        },
+        {
+          denom: 'xprt',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/B0DD091AE8F4DF06E155C0328B5098206A756766466F101CDC2F7D196C3AA572',
+      name: 'Persistence',
+      display: 'xprt',
+      symbol: 'XPRT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
+      },
+      coingecko_id: 'persistence',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-197',
+            base_denom: 'uxprt',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-287'
+          }
+        }
+      ]
+    },
+    {
+      description: 'PSTAKE Liquid-Staked ATOM',
+      denom_units: [
+        {
+          denom:
+            'ibc/B72FE6CF3A688C7041B573126872368EAF241CA607AC52902845CB1F00AC1D79',
+          exponent: 0,
+          aliases: ['stk/uatom']
+        },
+        {
+          denom: 'stkatom',
+          exponent: 6,
+          aliases: ['stk/atom']
+        }
+      ],
+      base: 'ibc/B72FE6CF3A688C7041B573126872368EAF241CA607AC52902845CB1F00AC1D79',
+      name: 'PSTAKE staked ATOM',
+      display: 'stkatom',
+      symbol: 'stkATOM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
+      },
+      coingecko_id: 'stkatom',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-197',
+            base_denom: 'stk/uatom',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-287'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.',
+      denom_units: [
+        {
+          denom:
+            'ibc/3D794C5A2143187D1E7C2AE2ED7632C2129806BBCD399F344D1109B6D6046D31',
+          exponent: 0,
+          aliases: [
+            'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444'
+          ]
+        },
+        {
+          denom: 'pstake',
+          exponent: 18
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/3D794C5A2143187D1E7C2AE2ED7632C2129806BBCD399F344D1109B6D6046D31',
+      name: 'pSTAKE Finance',
+      display: 'pstake',
+      symbol: 'PSTAKE',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-197',
+            base_denom:
+              'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-287'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg'
+      },
+      keywords: ['canon'],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg'
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/30A13CC6A9F0BE97EA568660CF29413BEBB29EDB702A9DF94134CB9773D256FF',
+          exponent: 0,
+          aliases: [
+            'ibc/C8A74ABBE2AF892E15680D916A7C22130585CE5704F9B17A10F184A90D53BECA'
+          ]
+        },
+        {
+          denom: 'atom',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/30A13CC6A9F0BE97EA568660CF29413BEBB29EDB702A9DF94134CB9773D256FF',
+      name: 'Cosmos Hub Atom',
+      display: 'atom',
+      symbol: 'ATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-197',
+            base_denom:
+              'ibc/C8A74ABBE2AF892E15680D916A7C22130585CE5704F9B17A10F184A90D53BECA',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-287'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'cosmoshub',
+            base_denom: 'uatom'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+      }
+    },
+    {
+      description: 'Tether USDT on Persistence',
+      denom_units: [
+        {
+          denom:
+            'ibc/99D9C0416A2B4F0184EA68CCD5B365F3FBEBC1D819986D1121100C31E350C83F',
+          exponent: 0,
+          aliases: [
+            'ibc/C559977F5797BDC1D74C0836A10C379C991D664166CB60D776A83029852431B4'
+          ]
+        },
+        {
+          denom: 'usdt',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/99D9C0416A2B4F0184EA68CCD5B365F3FBEBC1D819986D1121100C31E350C83F',
+      name: 'Tether USDT',
+      display: 'usdt',
+      symbol: 'USDT',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-197',
+            base_denom:
+              'ibc/C559977F5797BDC1D74C0836A10C379C991D664166CB60D776A83029852431B4',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-287'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'kava',
+            base_denom: 'erc20/tether/usdt'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/76F8EF7737DA9DE4C1943E00553C669650D71D435ED7D5546C174D26FD448E9C',
+          exponent: 0,
+          aliases: [
+            'ibc/B3792E4A62DF4A934EF2DF5968556DB56F5776ED25BDE11188A4F58A7DD406F0'
+          ]
+        },
+        {
+          denom: 'usdc',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/76F8EF7737DA9DE4C1943E00553C669650D71D435ED7D5546C174D26FD448E9C',
+      name: 'Noble USD Coin',
+      display: 'usdc',
+      symbol: 'USDC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-197',
+            base_denom:
+              'ibc/B3792E4A62DF4A934EF2DF5968556DB56F5776ED25BDE11188A4F58A7DD406F0',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-287'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'noble',
+            base_denom: 'uusdc'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+      }
+    },
+    {
+      description: 'dydx staking token',
+      denom_units: [
+        {
+          denom:
+            'ibc/78D66445EAEE4BC5A5D13D7C44C294EB213403FCE659361069EDDAF85D00D2B0',
+          exponent: 0,
+          aliases: [
+            'ibc/23DC3FF0E4CBB53A1915E4C62507CB7796956E84C68CA49707787CB8BDE90A1E'
+          ]
+        },
+        {
+          denom: 'dydx',
+          exponent: 18
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/78D66445EAEE4BC5A5D13D7C44C294EB213403FCE659361069EDDAF85D00D2B0',
+      name: 'dYdX',
+      display: 'dydx',
+      symbol: 'DYDX',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-197',
+            base_denom:
+              'ibc/23DC3FF0E4CBB53A1915E4C62507CB7796956E84C68CA49707787CB8BDE90A1E',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-287'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'dydx',
+            base_denom: 'adydx'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
+      }
+    },
+    {
+      description: 'PSTAKE Liquid-Staked OSMO',
+      denom_units: [
+        {
+          denom:
+            'ibc/1766E5264A3E23D3DDFC81C500319491310BC53268D6BCAACC2C95B23DB9CA19',
+          exponent: 0,
+          aliases: ['stk/uosmo']
+        },
+        {
+          denom: 'stkosmo',
+          exponent: 6,
+          aliases: ['stk/osmo']
+        }
+      ],
+      base: 'ibc/1766E5264A3E23D3DDFC81C500319491310BC53268D6BCAACC2C95B23DB9CA19',
+      name: 'PSTAKE staked OSMO',
+      display: 'stkosmo',
+      symbol: 'stkOSMO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkosmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkosmo.svg'
+      },
+      coingecko_id: 'pstake-staked-osmo',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkosmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkosmo.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-197',
+            base_denom: 'stk/uosmo',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-287'
+          }
+        }
+      ]
+    },
+    {
+      description: 'PSTAKE Liquid-Staked DYDX',
+      denom_units: [
+        {
+          denom:
+            'ibc/7BEBE59AB8614A85EF2F2DA6A5336083FE05A7B618B2AE685B12385DFEEB7E62',
+          exponent: 0,
+          aliases: ['stk/adydx']
+        },
+        {
+          denom: 'stkdydx',
+          exponent: 18,
+          aliases: ['stk/dydx']
+        }
+      ],
+      base: 'ibc/7BEBE59AB8614A85EF2F2DA6A5336083FE05A7B618B2AE685B12385DFEEB7E62',
+      name: 'PSTAKE staked DYDX',
+      display: 'stkdydx',
+      symbol: 'stkDYDX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkdydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkdydx.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkdydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkdydx.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-197',
+            base_denom: 'stk/adydx',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-287'
+          }
+        }
+      ]
+    },
+    {
       description: 'QCK - native token of Quicksilver',
       denom_units: [
         {

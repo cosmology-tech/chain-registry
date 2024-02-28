@@ -1544,6 +1544,50 @@ const assets: AssetList = {
       ]
     },
     {
+      description:
+        'The native governance and staking token of the Dymension Hub',
+      denom_units: [
+        {
+          denom:
+            'ibc/0F9EA9664729F336E5DC0FCB341E1C1993B6A272F5E4003CA74D9F8D54CEF43A',
+          exponent: 0,
+          aliases: ['adym']
+        },
+        {
+          denom: 'dym',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/0F9EA9664729F336E5DC0FCB341E1C1993B6A272F5E4003CA74D9F8D54CEF43A',
+      name: 'Dymension',
+      display: 'dym',
+      symbol: 'DYM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg'
+      },
+      coingecko_id: 'dymension',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'adym',
+            chain_name: 'dymension'
+          },
+          chain: {
+            channel_id: 'channel-138'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native staking and governance token of Empower.',
       denom_units: [
         {
