@@ -1,12 +1,12 @@
 import { AssetList } from '@chain-registry/types';
 const assets: AssetList = {
-  "chain_name": "sagatestnet",
+  "chain_name": "titantestnet",
   "assets": [
     {
       "description": "The native token of Axelar",
       "denom_units": [
         {
-          "denom": "ibc/C01154C2547F4CB10A985EA78E7CD4BA891C1504360703A37E1D7043F06B5E1F",
+          "denom": "ibc/0E1517E2771CA7C03F2ED3F9BAECCAEADF0BFD79B89679E834933BC0F179AD98",
           "exponent": 0,
           "aliases": [
             "uaxl"
@@ -17,7 +17,7 @@ const assets: AssetList = {
           "exponent": 6
         }
       ],
-      "base": "ibc/C01154C2547F4CB10A985EA78E7CD4BA891C1504360703A37E1D7043F06B5E1F",
+      "base": "ibc/0E1517E2771CA7C03F2ED3F9BAECCAEADF0BFD79B89679E834933BC0F179AD98",
       "name": "Axelar",
       "display": "axl",
       "symbol": "AXL",
@@ -36,12 +36,12 @@ const assets: AssetList = {
         {
           "type": "ibc",
           "counterparty": {
-            "channel_id": "channel-370",
+            "channel_id": "channel-448",
             "base_denom": "uaxl",
             "chain_name": "axelartestnet"
           },
           "chain": {
-            "channel_id": "channel-9"
+            "channel_id": "channel-1"
           }
         }
       ]
@@ -50,7 +50,7 @@ const assets: AssetList = {
       "description": "Circle's stablecoin on Axelar",
       "denom_units": [
         {
-          "denom": "ibc/D36138944A9A06A5361EB9F9713D2AAC8B9A9ED88AFC9960A0005C17C8A0B447",
+          "denom": "ibc/4BDF2D63B8FFE3454AF30E9BC10D2D7979BD3A938D989889ABC94FC5B86F1E2D",
           "exponent": 0,
           "aliases": [
             "uausdc"
@@ -61,7 +61,7 @@ const assets: AssetList = {
           "exponent": 6
         }
       ],
-      "base": "ibc/D36138944A9A06A5361EB9F9713D2AAC8B9A9ED88AFC9960A0005C17C8A0B447",
+      "base": "ibc/4BDF2D63B8FFE3454AF30E9BC10D2D7979BD3A938D989889ABC94FC5B86F1E2D",
       "name": "USD Coin",
       "display": "ausdc",
       "symbol": "aUSDC",
@@ -69,12 +69,12 @@ const assets: AssetList = {
         {
           "type": "ibc",
           "counterparty": {
-            "channel_id": "channel-370",
+            "channel_id": "channel-448",
             "base_denom": "uausdc",
             "chain_name": "axelartestnet"
           },
           "chain": {
-            "channel_id": "channel-9"
+            "channel_id": "channel-1"
           }
         }
       ],
@@ -95,7 +95,7 @@ const assets: AssetList = {
       "description": "Wrapped Ether on Axelar",
       "denom_units": [
         {
-          "denom": "ibc/D236A44A8AB79841929225744AA3B4F7766E132654898E72B364FD8B1825FD70",
+          "denom": "ibc/13F73121EEA6CAA0DF51B06F64C39FD55EF394C64223881569DFA5628FA1288D",
           "exponent": 0,
           "aliases": [
             "eth-wei"
@@ -106,7 +106,7 @@ const assets: AssetList = {
           "exponent": 18
         }
       ],
-      "base": "ibc/D236A44A8AB79841929225744AA3B4F7766E132654898E72B364FD8B1825FD70",
+      "base": "ibc/13F73121EEA6CAA0DF51B06F64C39FD55EF394C64223881569DFA5628FA1288D",
       "name": "Wrapped Ether",
       "display": "weth",
       "symbol": "axlWETH",
@@ -114,12 +114,12 @@ const assets: AssetList = {
         {
           "type": "ibc",
           "counterparty": {
-            "channel_id": "channel-370",
+            "channel_id": "channel-448",
             "base_denom": "eth-wei",
             "chain_name": "axelartestnet"
           },
           "chain": {
-            "channel_id": "channel-9"
+            "channel_id": "channel-1"
           }
         }
       ],
@@ -140,7 +140,7 @@ const assets: AssetList = {
       "description": "Wrapped Moonbeam on Axelar",
       "denom_units": [
         {
-          "denom": "ibc/C8D63703F5805CE6A2B20555139CF6ED9CDFA870389648EB08D688B94B0AE2C1",
+          "denom": "ibc/E3878CD653ECCD470639A4398EC4913C9915DD3E550697CF0424B572B2385B60",
           "exponent": 0,
           "aliases": [
             "wglmr-wei"
@@ -151,7 +151,7 @@ const assets: AssetList = {
           "exponent": 18
         }
       ],
-      "base": "ibc/C8D63703F5805CE6A2B20555139CF6ED9CDFA870389648EB08D688B94B0AE2C1",
+      "base": "ibc/E3878CD653ECCD470639A4398EC4913C9915DD3E550697CF0424B572B2385B60",
       "name": "Wrapped Moonbeam",
       "display": "wglmr",
       "symbol": "WDEV",
@@ -159,12 +159,12 @@ const assets: AssetList = {
         {
           "type": "ibc",
           "counterparty": {
-            "channel_id": "channel-370",
+            "channel_id": "channel-448",
             "base_denom": "wglmr-wei",
             "chain_name": "axelartestnet"
           },
           "chain": {
-            "channel_id": "channel-9"
+            "channel_id": "channel-1"
           }
         }
       ],
@@ -185,7 +185,7 @@ const assets: AssetList = {
       "description": "Wrapped Matic on Axelar",
       "denom_units": [
         {
-          "denom": "ibc/A64467480BBE4CCFC3CF7E25AD1446AA9BDBD4F5BCB9EF6038B83D6964C784E6",
+          "denom": "ibc/7BFC5893BCCC6C9A4B173BC1183D2706141CBF71679EA6BDCE15E679CEC05183",
           "exponent": 0,
           "aliases": [
             "wmatic-wei"
@@ -196,7 +196,7 @@ const assets: AssetList = {
           "exponent": 18
         }
       ],
-      "base": "ibc/A64467480BBE4CCFC3CF7E25AD1446AA9BDBD4F5BCB9EF6038B83D6964C784E6",
+      "base": "ibc/7BFC5893BCCC6C9A4B173BC1183D2706141CBF71679EA6BDCE15E679CEC05183",
       "name": "Wrapped Matic",
       "display": "wmatic",
       "symbol": "WMATIC",
@@ -204,12 +204,12 @@ const assets: AssetList = {
         {
           "type": "ibc",
           "counterparty": {
-            "channel_id": "channel-370",
+            "channel_id": "channel-448",
             "base_denom": "wmatic-wei",
             "chain_name": "axelartestnet"
           },
           "chain": {
-            "channel_id": "channel-9"
+            "channel_id": "channel-1"
           }
         }
       ],
@@ -230,7 +230,7 @@ const assets: AssetList = {
       "description": "Wrapped BNB on Axelar",
       "denom_units": [
         {
-          "denom": "ibc/DADB399E742FCEE71853E98225D13E44E90292852CD0033DF5CABAB96F80B833",
+          "denom": "ibc/52F7DAC8D338E4D7388D02EBD6E522B86EBB62A48C6732C2651423A9E79377DE",
           "exponent": 0,
           "aliases": [
             "wbnb-wei"
@@ -241,7 +241,7 @@ const assets: AssetList = {
           "exponent": 18
         }
       ],
-      "base": "ibc/DADB399E742FCEE71853E98225D13E44E90292852CD0033DF5CABAB96F80B833",
+      "base": "ibc/52F7DAC8D338E4D7388D02EBD6E522B86EBB62A48C6732C2651423A9E79377DE",
       "name": "Wrapped BNB",
       "display": "wbnb",
       "symbol": "WBNB",
@@ -249,12 +249,12 @@ const assets: AssetList = {
         {
           "type": "ibc",
           "counterparty": {
-            "channel_id": "channel-370",
+            "channel_id": "channel-448",
             "base_denom": "wbnb-wei",
             "chain_name": "axelartestnet"
           },
           "chain": {
-            "channel_id": "channel-9"
+            "channel_id": "channel-1"
           }
         }
       ],
@@ -277,7 +277,7 @@ const assets: AssetList = {
       "description": "Wrapped AVAX on Axelar.",
       "denom_units": [
         {
-          "denom": "ibc/004EBF085BBED1029326D56BE8A2E67C08CECE670A94AC1947DF413EF5130EB2",
+          "denom": "ibc/78D5DAB545549A930F5DB22CFA7C821ACE8EF55DCF787BED93A56D04CC7477F5",
           "exponent": 0,
           "aliases": [
             "wavax-wei"
@@ -288,7 +288,7 @@ const assets: AssetList = {
           "exponent": 18
         }
       ],
-      "base": "ibc/004EBF085BBED1029326D56BE8A2E67C08CECE670A94AC1947DF413EF5130EB2",
+      "base": "ibc/78D5DAB545549A930F5DB22CFA7C821ACE8EF55DCF787BED93A56D04CC7477F5",
       "name": "Wrapped AVAX",
       "display": "avax",
       "symbol": "WAVAX",
@@ -296,12 +296,12 @@ const assets: AssetList = {
         {
           "type": "ibc",
           "counterparty": {
-            "channel_id": "channel-370",
+            "channel_id": "channel-448",
             "base_denom": "wavax-wei",
             "chain_name": "axelartestnet"
           },
           "chain": {
-            "channel_id": "channel-9"
+            "channel_id": "channel-1"
           }
         }
       ],
@@ -322,7 +322,7 @@ const assets: AssetList = {
       "description": "Wrapped FTM on Axelar.",
       "denom_units": [
         {
-          "denom": "ibc/E67ADA2204A941CD4743E70771BA08E24885E1ADD6FD140CE1F9E0FEBB68C6B2",
+          "denom": "ibc/301A96A9BB897EF914BA74534EE1D75417753A0E113F2F766838274057290B79",
           "exponent": 0,
           "aliases": [
             "wftm-wei"
@@ -333,7 +333,7 @@ const assets: AssetList = {
           "exponent": 18
         }
       ],
-      "base": "ibc/E67ADA2204A941CD4743E70771BA08E24885E1ADD6FD140CE1F9E0FEBB68C6B2",
+      "base": "ibc/301A96A9BB897EF914BA74534EE1D75417753A0E113F2F766838274057290B79",
       "name": "Wrapped FTM",
       "display": "ftm",
       "symbol": "WFTM",
@@ -341,12 +341,12 @@ const assets: AssetList = {
         {
           "type": "ibc",
           "counterparty": {
-            "channel_id": "channel-370",
+            "channel_id": "channel-448",
             "base_denom": "wftm-wei",
             "chain_name": "axelartestnet"
           },
           "chain": {
-            "channel_id": "channel-9"
+            "channel_id": "channel-1"
           }
         }
       ],
@@ -364,10 +364,53 @@ const assets: AssetList = {
       }
     },
     {
+      "description": "The native staking and governance token of the Theta testnet version of the Cosmos Hub.",
+      "denom_units": [
+        {
+          "denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+          "exponent": 0,
+          "aliases": [
+            "uatom"
+          ]
+        },
+        {
+          "denom": "atom",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+      "name": "Cosmos",
+      "display": "atom",
+      "symbol": "ATOM",
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png",
+        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg"
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg"
+        }
+      ],
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "channel_id": "channel-3910",
+            "base_denom": "uatom",
+            "chain_name": "cosmoshubtestnet"
+          },
+          "chain": {
+            "channel_id": "channel-0"
+          }
+        }
+      ]
+    },
+    {
       "description": "The native token of Osmosis",
       "denom_units": [
         {
-          "denom": "ibc/49B196A3117545AEEC9B11A8D006A36CC439DD4B79A4C4346A895E61C46FA674",
+          "denom": "ibc/13B2C536BB057AC79D5616B8EA1B9540EC1F2170718CAFF6F0083C966FFFED0B",
           "exponent": 0,
           "aliases": [
             "uosmo"
@@ -379,7 +422,7 @@ const assets: AssetList = {
           "aliases": []
         }
       ],
-      "base": "ibc/49B196A3117545AEEC9B11A8D006A36CC439DD4B79A4C4346A895E61C46FA674",
+      "base": "ibc/13B2C536BB057AC79D5616B8EA1B9540EC1F2170718CAFF6F0083C966FFFED0B",
       "name": "Osmosis",
       "display": "osmo",
       "symbol": "OSMO",
@@ -402,12 +445,12 @@ const assets: AssetList = {
         {
           "type": "ibc",
           "counterparty": {
-            "channel_id": "channel-4946",
+            "channel_id": "channel-5969",
             "base_denom": "uosmo",
             "chain_name": "osmosistestnet"
           },
           "chain": {
-            "channel_id": "channel-20"
+            "channel_id": "channel-2"
           }
         }
       ]
@@ -415,7 +458,7 @@ const assets: AssetList = {
     {
       "denom_units": [
         {
-          "denom": "ibc/99FBFDE656012D44445023B9868EE43AEC6279A610E3D327AB24336FE2956B31",
+          "denom": "ibc/6FA7B62692FBCA2E51F567947035DE3C5D7333D49D13B85A25F358E80DF4E991",
           "exponent": 0,
           "aliases": [
             "uion"
@@ -426,7 +469,7 @@ const assets: AssetList = {
           "exponent": 6
         }
       ],
-      "base": "ibc/99FBFDE656012D44445023B9868EE43AEC6279A610E3D327AB24336FE2956B31",
+      "base": "ibc/6FA7B62692FBCA2E51F567947035DE3C5D7333D49D13B85A25F358E80DF4E991",
       "name": "Ion",
       "display": "ion",
       "symbol": "ION",
@@ -448,12 +491,12 @@ const assets: AssetList = {
         {
           "type": "ibc",
           "counterparty": {
-            "channel_id": "channel-4946",
+            "channel_id": "channel-5969",
             "base_denom": "uion",
             "chain_name": "osmosistestnet"
           },
           "chain": {
-            "channel_id": "channel-20"
+            "channel_id": "channel-2"
           }
         }
       ]
@@ -461,7 +504,7 @@ const assets: AssetList = {
     {
       "denom_units": [
         {
-          "denom": "ibc/EB72FBC6930F8A7616520F6FE2A5509C7F8BBC1A9FB458CE7439F8DF3D855AA8",
+          "denom": "ibc/7B6DCC6FFBA65D66FE2F349B72A62298200CACC6BEF44F05BE337DA0DF6659DC",
           "exponent": 0,
           "aliases": [
             "factory/osmo1zlkzu72774ynac53necz46u4ycqtp36wedrar0/willyz"
@@ -472,7 +515,7 @@ const assets: AssetList = {
           "exponent": 6
         }
       ],
-      "base": "ibc/EB72FBC6930F8A7616520F6FE2A5509C7F8BBC1A9FB458CE7439F8DF3D855AA8",
+      "base": "ibc/7B6DCC6FFBA65D66FE2F349B72A62298200CACC6BEF44F05BE337DA0DF6659DC",
       "name": "Willyz",
       "display": "willyz",
       "symbol": "WILLYZ",
@@ -493,12 +536,54 @@ const assets: AssetList = {
         {
           "type": "ibc",
           "counterparty": {
-            "channel_id": "channel-4946",
+            "channel_id": "channel-5969",
             "base_denom": "factory/osmo1zlkzu72774ynac53necz46u4ycqtp36wedrar0/willyz",
             "chain_name": "osmosistestnet"
           },
           "chain": {
-            "channel_id": "channel-20"
+            "channel_id": "channel-2"
+          }
+        }
+      ]
+    },
+    {
+      "description": "The native token of Stargaze",
+      "denom_units": [
+        {
+          "denom": "ibc/482A30C07803B0455B1492BAF94EC3D600E862D52A814F25A34BCCAAA132FEE9",
+          "exponent": 0,
+          "aliases": [
+            "ustars"
+          ]
+        },
+        {
+          "denom": "stars",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/482A30C07803B0455B1492BAF94EC3D600E862D52A814F25A34BCCAAA132FEE9",
+      "name": "Stargaze",
+      "display": "stars",
+      "symbol": "STARS",
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png"
+      },
+      "coingecko_id": "stargaze",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png"
+        }
+      ],
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "channel_id": "channel-807",
+            "base_denom": "ustars",
+            "chain_name": "stargazetestnet"
+          },
+          "chain": {
+            "channel_id": "channel-3"
           }
         }
       ]
