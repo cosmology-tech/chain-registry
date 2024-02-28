@@ -43,10 +43,14 @@ const info: Chain = {
     cosmwasm_enabled: true
   },
   logo_URIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nyx.png'
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym-token-light.png'
   },
   apis: {
     rpc: [
+      {
+        address: 'https://rpc.nymtech.net/',
+        provider: 'Nym'
+      },
       {
         address: 'https://rpc.nyx.nodes.guru/',
         provider: 'nodes guru'
@@ -122,7 +126,20 @@ const info: Chain = {
   ],
   images: [
     {
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nyx.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym-token-light.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym-token-light.svg',
+      theme: {
+        dark_mode: false,
+        circle: true
+      }
+    },
+    {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym-token-dark.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym-token-dark.svg',
+      theme: {
+        dark_mode: true,
+        circle: true
+      }
     }
   ]
 };

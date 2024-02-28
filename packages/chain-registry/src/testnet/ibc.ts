@@ -22,6 +22,7 @@ import * as _nobletestnet from './nobletestnet';
 import * as _noistestnet from './noistestnet';
 import * as _nolustestnet from './nolustestnet';
 import * as _osmosistestnet from './osmosistestnet';
+import * as _stargazetestnet from './stargazetestnet';
 
 const ibc: IBCInfo[] = [
   ..._akashtestnet.ibc_chain1,
@@ -45,7 +46,8 @@ const ibc: IBCInfo[] = [
   ..._nobletestnet.ibc_chain1,
   ..._noistestnet.ibc_chain1,
   ..._nolustestnet.ibc_chain1,
-  ..._osmosistestnet.ibc_chain1
+  ..._osmosistestnet.ibc_chain1,
+  ..._stargazetestnet.ibc_chain1
 ];
 
 export default ibc;
