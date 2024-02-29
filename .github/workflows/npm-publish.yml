@@ -5,6 +5,8 @@ on:
     # Runs every day at 1:00 AM UTC
     - cron: "0 1 * * *"
 
+  workflow_dispatch:
+
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
