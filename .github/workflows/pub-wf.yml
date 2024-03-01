@@ -9,9 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-          # cd packages/chain-registry
-          # echo "test msg" > msg.txt
-          # cd ../../
+          cd packages/chain-registry
+          echo "test msg" > msg.txt
+          cd ../../
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
           BRANCH_NAME="build-$(date +%Y%m%d-%H%M%S)"
@@ -20,6 +20,7 @@ jobs:
           if ! git diff --staged --quiet; then
             git commit -am "build 🛠 $BRANCH_NAME"
             git push origin $BRANCH_NAME
+            gh pr create --base main --head $BRANCH_NAME --title "Automatic build 🛠 $BRANCH_NAME" --body "This is an auto-generated PR with build changes $BRANCH_NAME"
           else
             echo "No changes to commit."
           fi
