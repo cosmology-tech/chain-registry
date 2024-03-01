@@ -1,0 +1,28 @@
+name: Test Publish
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          cd packages/chain-registry
+          echo "test msg" > msg.txt
+          cd ../../
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor}}@users.noreply.github.com"
+          BRANCH_NAME="build-$(date +%Y%m%d-%H%M%S)"
+          git checkout -b $BRANCH_NAME
+          git add .
+          if ! git diff --staged --quiet; then
+            git commit -am "build 🛠 $BRANCH_NAME"
+            git push origin $BRANCH_NAME
+          else
+            echo "No changes to commit."
+          fi
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
+          GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
