@@ -40,8 +40,12 @@ jobs:
           BRANCH_NAME="build-$(date +%Y%m%d-%H%M%S)"
           git checkout -b $BRANCH_NAME
           git add .
-          git commit -am "build 🛠 $BRANCH_NAME"
-          git push origin $BRANCH_NAME
+          if ! git diff --staged --quiet; then
+            git commit -am "build 🛠 $BRANCH_NAME"
+            git push origin $BRANCH_NAME
+          else
+            echo "No changes to commit."
+          fi
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
           GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
