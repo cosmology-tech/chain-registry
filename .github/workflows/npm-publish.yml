@@ -18,7 +18,8 @@ jobs:
         with:
           node-version: 16.14.0
           registry-url: https://registry.npmjs.org/
-      - run: |
+      - name: Code Generation
+        run: |
           yarn
           yarn bootstrap
           yarn build
@@ -35,6 +36,8 @@ jobs:
           cd packages/juno
           yarn codegen
           cd ../../
+      - name: Git Ops
+        run: |
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
           BRANCH_NAME="build-$(date +%Y%m%d-%H%M%S)"
