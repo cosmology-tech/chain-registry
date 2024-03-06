@@ -20,6 +20,8 @@ jobs:
           yarn
           yarn bootstrap
           yarn build
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor}}@users.noreply.github.com"
           git checkout -b $BRANCH_NAME
           cd packages/chain-registry
           yarn codegen
@@ -33,8 +35,6 @@ jobs:
           cd ../../
       - name: Git Ops
         run: |
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor}}@users.noreply.github.com"
           git add .
           if ! git diff --staged --quiet; then
             git commit -am "build 🛠 $BRANCH_NAME"
