@@ -20,9 +20,11 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: Code Generation
         run: |
+          BRANCH_NAME="build-$(date +%Y%m%d-%H%M%S)"
           yarn
           yarn bootstrap
           yarn build
+          git checkout -b $BRANCH_NAME
           cd packages/chain-registry
           yarn codegen
           yarn build
@@ -40,8 +42,6 @@ jobs:
         run: |
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
-          BRANCH_NAME="build-$(date +%Y%m%d-%H%M%S)"
-          git checkout -b $BRANCH_NAME
           git add .
           if ! git diff --staged --quiet; then
             git commit -am "build 🛠 $BRANCH_NAME"
