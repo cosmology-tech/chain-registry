@@ -26,6 +26,10 @@ const info: AssetList = {
       coingecko_id: 'odin-protocol',
       images: [
         {
+          image_sync: {
+            chain_name: 'odin',
+            base_denom: 'loki'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg'
         }
@@ -53,58 +57,12 @@ const info: AssetList = {
       },
       images: [
         {
+          image_sync: {
+            chain_name: 'odin',
+            base_denom: 'mGeo'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
-        }
-      ]
-    },
-    {
-      description: 'DOKI the last Dragon',
-      denom_units: [
-        {
-          denom: 'udoki',
-          exponent: 0
-        },
-        {
-          denom: 'doki',
-          exponent: 6
-        }
-      ],
-      base: 'udoki',
-      name: 'DOKI',
-      display: 'doki',
-      symbol: 'DOKI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
-        }
-      ]
-    },
-    {
-      description: 'Myrkur the leader of OLD Order',
-      denom_units: [
-        {
-          denom: 'umyrk',
-          exponent: 0
-        },
-        {
-          denom: 'myrk',
-          exponent: 6
-        }
-      ],
-      base: 'umyrk',
-      name: 'MYRK',
-      display: 'myrk',
-      symbol: 'MYRK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
         }
       ]
     },
@@ -130,6 +88,10 @@ const info: AssetList = {
       },
       images: [
         {
+          image_sync: {
+            chain_name: 'odin',
+            base_denom: 'mO9W'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
         }

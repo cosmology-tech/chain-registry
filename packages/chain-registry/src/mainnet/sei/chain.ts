@@ -31,7 +31,7 @@ const info: Chain = {
     ]
   },
   codebase: {
-    cosmos_sdk_version: 'sei-cosmos v0.2.72',
+    cosmos_sdk_version: 'sei-cosmos v0.2.74',
     cosmwasm_enabled: true,
     cosmwasm_version: 'sei-wasmd v0.0.4'
   },

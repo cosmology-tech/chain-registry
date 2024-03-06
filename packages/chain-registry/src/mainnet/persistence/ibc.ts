@@ -3,6 +3,37 @@ const info: IBCInfo[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain_1: {
+      chain_name: 'agoric',
+      client_id: '07-tendermint-93',
+      connection_id: 'connection-91'
+    },
+    chain_2: {
+      chain_name: 'persistence',
+      client_id: '07-tendermint-167',
+      connection_id: 'connection-210'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-72',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-202',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
       chain_name: 'akash',
       client_id: '07-tendermint-15',
       connection_id: 'connection-8'
@@ -25,6 +56,37 @@ const info: IBCInfo[] = [
         ordering: 'unordered',
         version: 'ics20-1',
         tags: {}
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'chihuahua',
+      client_id: '07-tendermint-207',
+      connection_id: 'connection-137'
+    },
+    chain_2: {
+      chain_name: 'persistence',
+      client_id: '07-tendermint-168',
+      connection_id: 'connection-212'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-94',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-203',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
       }
     ]
   },
@@ -529,6 +591,19 @@ const info: IBCInfo[] = [
         chain_2: {
           channel_id: 'channel-64',
           port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {}
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-159',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-132',
+          port_id: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4'
         },
         ordering: 'unordered',
         version: 'ics20-1',

@@ -4,7 +4,8 @@ const info: AssetList = {
   chain_name: 'nyx',
   assets: [
     {
-      description: "NYX Token (NYX) is the Nym Network's native token.",
+      description:
+        "NYX Token (NYX) is the Nym Network's native staking and governance token.",
       denom_units: [
         {
           denom: 'unyx',
@@ -47,21 +48,21 @@ const info: AssetList = {
       display: 'nym',
       symbol: 'NYM',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym-token-light.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.png'
       },
       coingecko_id: 'nym',
       images: [
         {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym-token-light.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym-token-light.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.svg',
           theme: {
             dark_mode: false,
             circle: true
           }
         },
         {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym-token-dark.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym-token-dark.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_dark.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_dark.svg',
           theme: {
             dark_mode: true,
             circle: true

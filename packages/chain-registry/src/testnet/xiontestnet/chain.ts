@@ -30,16 +30,12 @@ const info: Chain = {
     ]
   },
   codebase: {
-    cosmos_sdk_version: '0.47.3',
+    cosmos_sdk_version: '0.47.5',
     cosmwasm_enabled: true,
-    cosmwasm_version: '0.40.1'
+    cosmwasm_version: '0.43.0'
   },
   apis: {
     rpc: [
-      {
-        address: 'https://rpc.xion-testnet-1.burnt.com',
-        provider: 'burnt-labs'
-      },
       {
         address: 'https://testnet-burnt-rpc.lavenderfive.com',
         provider: 'Lavender.Five Nodes 🐝'
@@ -51,10 +47,6 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://api.xion-testnet-1.burnt.com',
-        provider: 'burnt-labs'
-      },
-      {
         address: 'https://testnet-burnt-api.lavenderfive.com',
         provider: 'Lavender.Five Nodes 🐝'
       },
@@ -64,10 +56,6 @@ const info: Chain = {
       }
     ],
     grpc: [
-      {
-        address: 'https://grpc.xion-testnet-1.burnt.com:443',
-        provider: 'burnt-labs'
-      },
       {
         address: 'https://testnet-burnt-grpc.lavenderfive.com',
         provider: 'Lavender.Five Nodes 🐝'

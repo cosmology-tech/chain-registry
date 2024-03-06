@@ -1152,6 +1152,8 @@ const info: AssetList = {
     },
     {
       description: 'Kleomedes Token',
+      extended_description:
+        'Kleomedes is an infrastructure provider that self-hosts nodes that validate IBC networks. We are active in supporting the chains we validate through providing infrastructure support in the form of RPC endpoints and relayers.\n\nAs a DAO, we have a community of delegators who are active in the discussion of governance on all the chains we validate. We are one of the only validators in the Cosmos Ecosystem that places 100% of profits under the control of DAO governance.\n\nWe support innovation in the Cosmos Ecosystem by funding and supporting projects that we believe, support the growth and decentralization of the networks we validate.',
       type_asset: 'cw20',
       address:
         'juno10gthz5ufgrpuk5cscve2f0hjp56wgp90psqxcrqlg4m9mcu9dh8q4864xy',
@@ -2108,6 +2110,64 @@ const info: AssetList = {
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/luno.png'
+        }
+      ]
+    },
+    {
+      description: 'ATEN is NETA.',
+      type_asset: 'cw20',
+      address:
+        'juno1elpg96tju8a32vzn25u6asvscajjm4000589z0zthhvks28ajypqzurl7r',
+      denom_units: [
+        {
+          denom:
+            'cw20:juno1elpg96tju8a32vzn25u6asvscajjm4000589z0zthhvks28ajypqzurl7r',
+          exponent: 0
+        },
+        {
+          denom: 'aten',
+          exponent: 6
+        }
+      ],
+      base: 'cw20:juno1elpg96tju8a32vzn25u6asvscajjm4000589z0zthhvks28ajypqzurl7r',
+      name: 'ATEN',
+      display: 'aten',
+      symbol: 'ATEN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/aten.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/aten.png'
+        }
+      ]
+    },
+    {
+      description: 'HERA is the goddess of marriage in Greek mythology.',
+      type_asset: 'cw20',
+      address:
+        'juno1dtd45vxvv080v9x7hffysnmvrqm6ysecjdnvafqul28646hm04xs9gheh0',
+      denom_units: [
+        {
+          denom:
+            'cw20:juno1dtd45vxvv080v9x7hffysnmvrqm6ysecjdnvafqul28646hm04xs9gheh0',
+          exponent: 0
+        },
+        {
+          denom: 'hera',
+          exponent: 6
+        }
+      ],
+      base: 'cw20:juno1dtd45vxvv080v9x7hffysnmvrqm6ysecjdnvafqul28646hm04xs9gheh0',
+      name: 'HERA',
+      display: 'hera',
+      symbol: 'HERA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hera.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hera.png'
         }
       ]
     }

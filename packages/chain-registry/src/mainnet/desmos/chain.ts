@@ -30,7 +30,11 @@ const info: Chain = {
       }
     ]
   },
-  codebase: {},
+  codebase: {
+    cosmos_sdk_version: 'desmos-labs/cosmos-sdk v0.47.9-desmos',
+    cosmwasm_enabled: true,
+    cosmwasm_version: 'v0.45.0'
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg'

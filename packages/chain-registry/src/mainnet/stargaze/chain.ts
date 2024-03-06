@@ -113,6 +113,10 @@ const info: Chain = {
       {
         address: 'https://rpc.stargaze.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://stargaze-rpc.kleomedes.network',
+        provider: 'Kleomedes'
       }
     ],
     rest: [
@@ -191,6 +195,10 @@ const info: Chain = {
       {
         address: 'https://lcd.stargaze.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://stargaze-api.kleomedes.network',
+        provider: 'Kleomedes'
       }
     ],
     grpc: [

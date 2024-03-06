@@ -71,6 +71,10 @@ const info: Chain = {
       {
         address: 'https://shentu-rpc.panthea.eu',
         provider: 'Panthea EU'
+      },
+      {
+        address: 'https://shentu-rpc.kleomedes.network',
+        provider: 'Kleomedes'
       }
     ],
     rest: [
@@ -109,6 +113,10 @@ const info: Chain = {
       {
         address: 'https://shentu-api.panthea.eu',
         provider: 'Panthea EU'
+      },
+      {
+        address: 'https://shentu-api.kleomedes.network',
+        provider: 'Kleomedes'
       }
     ],
     grpc: [

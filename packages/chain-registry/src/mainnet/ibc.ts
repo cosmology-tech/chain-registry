@@ -21,6 +21,7 @@ import * as _canto from './canto';
 import * as _carbon from './carbon';
 import * as _celestia from './celestia';
 import * as _cerberus from './cerberus';
+import * as _chain4energy from './chain4energy';
 import * as _cheqd from './cheqd';
 import * as _chihuahua from './chihuahua';
 import * as _comdex from './comdex';
@@ -119,6 +120,7 @@ const ibc: IBCInfo[] = [
   ..._carbon.ibc_chain1,
   ..._celestia.ibc_chain1,
   ..._cerberus.ibc_chain1,
+  ..._chain4energy.ibc_chain1,
   ..._cheqd.ibc_chain1,
   ..._chihuahua.ibc_chain1,
   ..._comdex.ibc_chain1,

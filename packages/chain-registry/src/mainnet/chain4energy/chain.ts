@@ -5,18 +5,28 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   website: 'https://c4e.io/',
-  pretty_name: 'Chain4Energy',
+  pretty_name: 'C4E',
   chain_id: 'perun-1',
   bech32_prefix: 'c4e',
   daemon_name: 'c4ed',
   node_home: '$HOME/.c4e-chain',
   key_algos: ['secp256k1'],
-  slip44: 4444,
+  slip44: 118,
   fees: {
     fee_tokens: [
       {
         denom: 'uc4e',
-        fixed_min_gas_price: 0
+        fixed_min_gas_price: 0,
+        low_gas_price: 0.01,
+        average_gas_price: 0.025,
+        high_gas_price: 0.04
+      }
+    ]
+  },
+  staking: {
+    staking_tokens: [
+      {
+        denom: 'uc4e'
       }
     ]
   },

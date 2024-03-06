@@ -39,7 +39,7 @@ const info: AssetList = {
           denom:
             'ibc/FC5A7360EEED0713AE3E83E9D55A69AF873056A172AC495890ACE4582FF9685A',
           exponent: 0,
-          aliases: ['srcx']
+          aliases: ['nsrcx']
         },
         {
           denom: 'srcx',

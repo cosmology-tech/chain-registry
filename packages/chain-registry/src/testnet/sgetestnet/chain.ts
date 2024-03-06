@@ -21,10 +21,6 @@ const info: Chain = {
     ]
   },
   codebase: {},
-  logo_URIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sgetestnet/images/sge.png',
-    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sgetestnet/images/sge.svg'
-  },
   apis: {
     rpc: [
       {
@@ -84,9 +80,16 @@ const info: Chain = {
   ],
   images: [
     {
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sgetestnet/images/sge.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sgetestnet/images/sge.svg'
+      image_sync: {
+        chain_name: 'sge'
+      },
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'
     }
-  ]
+  ],
+  logo_URIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'
+  }
 };
 export default info;

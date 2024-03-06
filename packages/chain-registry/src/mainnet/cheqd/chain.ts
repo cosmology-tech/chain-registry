@@ -69,6 +69,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/cheqd/rpc',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://cheq-rpc.kleomedes.network',
+        provider: 'Kleomedes'
       }
     ],
     rest: [
@@ -107,6 +111,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/cheqd/rest',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://cheq-api.kleomedes.network',
+        provider: 'Kleomedes'
       }
     ],
     grpc: [

@@ -108,6 +108,10 @@ const info: Chain = {
       {
         address: 'https://rpc.jackal.mathnodes.com',
         provider: 'MathNodes'
+      },
+      {
+        address: 'https://jackal-rpc.kleomedes.network',
+        provider: 'Kleomedes'
       }
     ],
     rest: [
@@ -170,6 +174,10 @@ const info: Chain = {
       {
         address: 'https://api.jackal.mathnodes.com',
         provider: 'MathNodes'
+      },
+      {
+        address: 'https://jackal-api.kleomedes.network',
+        provider: 'Kleomedes'
       }
     ],
     grpc: [

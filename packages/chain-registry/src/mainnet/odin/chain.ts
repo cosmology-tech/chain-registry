@@ -2,7 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'odin',
-  status: 'live',
+  status: 'killed',
   network_type: 'mainnet',
   website: 'https://odinprotocol.io/',
   pretty_name: 'Odin Protocol',
@@ -38,12 +38,8 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc.odinprotocol.io',
-        provider: 'Heimdall Gateway'
-      },
-      {
-        address: 'https://odin.rpc.m.stavr.tech:443',
-        provider: '🔥STAVR🔥'
+        address: 'http://34.79.179.216:26657',
+        provider: 'Odin Protocol'
       },
       {
         address: 'https://odin-rpc.lavenderfive.com/',
@@ -56,12 +52,8 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://api.odinprotocol.io',
-        provider: 'Heimdall Gateway'
-      },
-      {
-        address: 'https://odin.api.m.stavr.tech',
-        provider: '🔥STAVR🔥'
+        address: 'http://34.79.179.216:1317/',
+        provider: 'Odin Protocol'
       },
       {
         address: 'https://odin-api.lavenderfive.com/',
@@ -78,10 +70,6 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'odin.grpc.m.stavr.tech:122',
-        provider: '🔥STAVR🔥'
-      },
-      {
         address: 'odin-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
       }
@@ -94,11 +82,6 @@ const info: Chain = {
       tx_page: 'https://mainnet.odinprotocol.io/transactions/${txHash}'
     },
     {
-      kind: '🔥STAVR🔥',
-      url: 'https://explorer.stavr.tech/Odin-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Odin-Mainnet/tx/${txHash}'
-    },
-    {
       kind: 'ping.pub',
       url: 'https://ping.pub/odin',
       tx_page: 'https://ping.pub/odin/tx/${txHash}'
@@ -106,6 +89,9 @@ const info: Chain = {
   ],
   images: [
     {
+      image_sync: {
+        chain_name: 'odin'
+      },
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg'
     }

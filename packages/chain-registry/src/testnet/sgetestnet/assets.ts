@@ -13,7 +13,7 @@ const info: AssetList = {
           aliases: []
         },
         {
-          denom: 'usge',
+          denom: 'sge',
           exponent: 6,
           aliases: []
         }

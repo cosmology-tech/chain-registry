@@ -40,10 +40,6 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://rpc-sifchain-ia.cosmosia.notional.ventures/',
-        provider: 'Notional'
-      },
-      {
         address: 'https://sifchain-mainnet-rpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
       },
@@ -72,10 +68,6 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'grpc-sifchain-ia.cosmosia.notional.ventures:443',
-        provider: 'Notional'
-      },
-      {
         address: 'sifchain-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
       },
@@ -91,21 +83,9 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'EZ Staking',
-      url: 'https://app.ezstaking.io/sifchain',
-      tx_page: 'https://app.ezstaking.io/sifchain/txs/${txHash}',
-      account_page:
-        'https://app.ezstaking.io/sifchain/account/${accountAddress}'
-    },
-    {
       kind: 'ping.pub',
       url: 'https://ping.pub/sifchain',
       tx_page: 'https://ping.pub/sifchain/tx/${txHash}'
-    },
-    {
-      kind: 'explorers.guru',
-      url: 'https://sifchain.explorers.guru',
-      tx_page: 'https://sifchain.explorers.guru/transaction/${txHash}'
     },
     {
       kind: 'atomscan',

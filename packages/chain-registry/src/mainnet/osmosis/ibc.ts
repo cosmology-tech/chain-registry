@@ -636,6 +636,38 @@ const info: IBCInfo[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain_1: {
+      chain_name: 'chain4energy',
+      client_id: '07-tendermint-2',
+      connection_id: 'connection-2'
+    },
+    chain_2: {
+      chain_name: 'osmosis',
+      client_id: '07-tendermint-3107',
+      connection_id: 'connection-2586'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-1',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-22172',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          dex: 'osmosis'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
       chain_name: 'cheqd',
       client_id: '07-tendermint-0',
       connection_id: 'connection-0'
@@ -2802,6 +2834,36 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true,
           dex: 'osmosis'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'osmosis',
+      client_id: '07-tendermint-3070',
+      connection_id: 'connection-2558'
+    },
+    chain_2: {
+      chain_name: 'pylons',
+      client_id: '07-tendermint-32',
+      connection_id: 'connection-25'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-17683',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-29',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live'
         }
       }
     ]

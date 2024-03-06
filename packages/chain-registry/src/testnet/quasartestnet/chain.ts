@@ -5,7 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Quasar Testnet',
-  chain_id: 'qsr-questnet-04',
+  chain_id: 'quasar-test-1',
   bech32_prefix: 'quasar',
   daemon_name: 'quasarnoded',
   node_home: '$HOME/.quasarnoded',
@@ -19,9 +19,9 @@ const info: Chain = {
     ]
   },
   codebase: {
-    cosmos_sdk_version: '0.46',
+    cosmos_sdk_version: '0.45.16',
     cosmwasm_enabled: true,
-    cosmwasm_version: '0.27'
+    cosmwasm_version: '0.31'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png',
@@ -34,12 +34,8 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://questnet.quasar-finance.rhinostake.com/',
-        provider: 'Rhino Stake'
-      },
-      {
-        address: 'https://quasar-testnet-rpc.swiss-staking.ch',
-        provider: 'Swiss Staking'
+        address: 'https://quasar-testnet-rpc.stakeandrelax.net/',
+        provider: 'Stake and Relax'
       }
     ],
     rest: [
@@ -48,12 +44,8 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://questnet.quasar-finance.rhinostake.com/',
-        provider: 'Rhino Stake'
-      },
-      {
-        address: 'https://quasar-testnet-api.swiss-staking.ch/',
-        provider: 'Swiss Staking'
+        address: 'https://quasar-testnet-api.stakeandrelax.net/',
+        provider: 'Stake and Relax'
       }
     ],
     grpc: [
@@ -62,8 +54,8 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'quasar-testnet-grpc.swiss-staking.ch:10090',
-        provider: 'Swiss Staking'
+        address: 'http://quasar-testnet-grpc.stakeandrelax.net:18290/',
+        provider: 'Stake and Relax'
       }
     ]
   },

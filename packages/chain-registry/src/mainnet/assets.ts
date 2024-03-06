@@ -51,6 +51,7 @@ import * as _empowerchain from './empowerchain';
 import * as _ethos from './ethos';
 import * as _evmos from './evmos';
 import * as _fetchhub from './fetchhub';
+import * as _finschia from './finschia';
 import * as _firmachain from './firmachain';
 import * as _furya from './furya';
 import * as _fxcore from './fxcore';
@@ -58,6 +59,7 @@ import * as _galaxy from './galaxy';
 import * as _gateway from './gateway';
 import * as _genesisl1 from './genesisl1';
 import * as _gitopia from './gitopia';
+import * as _govgen from './govgen';
 import * as _gravitybridge from './gravitybridge';
 import * as _haqq from './haqq';
 import * as _highbury from './highbury';
@@ -201,6 +203,7 @@ const assets: AssetList[] = [
   _ethos.assets,
   _evmos.assets,
   _fetchhub.assets,
+  _finschia.assets,
   _firmachain.assets,
   _furya.assets,
   _fxcore.assets,
@@ -208,6 +211,7 @@ const assets: AssetList[] = [
   _gateway.assets,
   _genesisl1.assets,
   _gitopia.assets,
+  _govgen.assets,
   _gravitybridge.assets,
   _haqq.assets,
   _highbury.assets,

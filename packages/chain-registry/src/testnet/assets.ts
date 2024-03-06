@@ -31,6 +31,7 @@ import * as _empowertestnet from './empowertestnet';
 import * as _entrypointtestnet from './entrypointtestnet';
 import * as _evmostestnet from './evmostestnet';
 import * as _fetchhubtestnet from './fetchhubtestnet';
+import * as _finschiatestnet from './finschiatestnet';
 import * as _gitopiatestnet from './gitopiatestnet';
 import * as _hedgetestnet from './hedgetestnet';
 import * as _humanstestnet from './humanstestnet';
@@ -72,6 +73,7 @@ import * as _seitestnet from './seitestnet';
 import * as _seitestnet2 from './seitestnet2';
 import * as _selfchaindevnet from './selfchaindevnet';
 import * as _sgetestnet from './sgetestnet';
+import * as _sgetestnet4 from './sgetestnet4';
 import * as _sixtestnet from './sixtestnet';
 import * as _sourcetestnet from './sourcetestnet';
 import * as _stargazetestnet from './stargazetestnet';
@@ -122,6 +124,7 @@ const assets: AssetList[] = [
   _entrypointtestnet.assets,
   _evmostestnet.assets,
   _fetchhubtestnet.assets,
+  _finschiatestnet.assets,
   _gitopiatestnet.assets,
   _hedgetestnet.assets,
   _humanstestnet.assets,
@@ -163,6 +166,7 @@ const assets: AssetList[] = [
   _seitestnet2.assets,
   _selfchaindevnet.assets,
   _sgetestnet.assets,
+  _sgetestnet4.assets,
   _sixtestnet.assets,
   _sourcetestnet.assets,
   _stargazetestnet.assets,
