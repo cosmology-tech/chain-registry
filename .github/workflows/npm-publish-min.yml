@@ -34,6 +34,7 @@ jobs:
           cd packages/juno
           yarn codegen
           cd ../../
+          git add .
           if ! git diff --staged --quiet; then
             git commit -am "build 🛠 $BRANCH_NAME"
             git push --set-upstream origin $BRANCH_NAME
