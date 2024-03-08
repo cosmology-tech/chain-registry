@@ -220,6 +220,109 @@ const assets: AssetList = {
     },
     {
       description:
+        'The native EVM, governance and staking token of the Titan Chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/B3A64456342C0AF30D36B1AA5EF761597258E07D5E9883B69C30C94DEA4AF539',
+          exponent: 0,
+          aliases: [
+            'ibc/28EEF762052DB8C3D27A7BF625E9F86A1B3B689CC8D80C818CEDF2EB6CBA02A6'
+          ]
+        },
+        {
+          denom: 'utkx',
+          exponent: 12,
+          aliases: ['microtkx']
+        },
+        {
+          denom: 'mtkx',
+          exponent: 15,
+          aliases: ['millitkx']
+        },
+        {
+          denom: 'tkx',
+          exponent: 18
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/B3A64456342C0AF30D36B1AA5EF761597258E07D5E9883B69C30C94DEA4AF539',
+      name: 'tkx',
+      display: 'tkx',
+      symbol: 'TKX',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4156',
+            base_denom:
+              'ibc/28EEF762052DB8C3D27A7BF625E9F86A1B3B689CC8D80C818CEDF2EB6CBA02A6',
+            chain_name: 'osmosistestnet'
+          },
+          chain: {
+            channel_id: 'channel-3306'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
+        }
+      ]
+    },
+    {
+      description: "Circle's stablecoin on Axelar",
+      denom_units: [
+        {
+          denom:
+            'ibc/DCF2315685816A1B90FC43ED43E98CEB7C8EBFA2A9A75D805BF98A1C74461ADD',
+          exponent: 0,
+          aliases: [
+            'ibc/2164BDB48DE5501430E71286448D87C6D2240EC0E078CF113CAB85E21A352BB0'
+          ]
+        },
+        {
+          denom: 'ausdc',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/DCF2315685816A1B90FC43ED43E98CEB7C8EBFA2A9A75D805BF98A1C74461ADD',
+      name: 'USD Coin (Axelar)',
+      display: 'ausdc',
+      symbol: 'aUSDC.axl',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4156',
+            base_denom:
+              'ibc/2164BDB48DE5501430E71286448D87C6D2240EC0E078CF113CAB85E21A352BB0',
+            chain_name: 'osmosistestnet'
+          },
+          chain: {
+            channel_id: 'channel-3306'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereumtestnet',
+            base_denom: '0x254d06f33bDc5b8ee05b2ea472107E300226659A'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+      }
+    },
+    {
+      description:
         'The XPRT token is primarily a governance token for the Persistence chain.',
       denom_units: [
         {

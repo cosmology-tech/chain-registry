@@ -170,6 +170,109 @@ const assets: AssetList = {
           }
         }
       ]
+    },
+    {
+      description:
+        'The native EVM, governance and staking token of the Titan Chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/CEE849E7746944873F0EBA9FE58313BF39C0D5411F0AF5B3E8FF5F040D0FEF96',
+          exponent: 0,
+          aliases: [
+            'ibc/28EEF762052DB8C3D27A7BF625E9F86A1B3B689CC8D80C818CEDF2EB6CBA02A6'
+          ]
+        },
+        {
+          denom: 'utkx',
+          exponent: 12,
+          aliases: ['microtkx']
+        },
+        {
+          denom: 'mtkx',
+          exponent: 15,
+          aliases: ['millitkx']
+        },
+        {
+          denom: 'tkx',
+          exponent: 18
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/CEE849E7746944873F0EBA9FE58313BF39C0D5411F0AF5B3E8FF5F040D0FEF96',
+      name: 'tkx',
+      display: 'tkx',
+      symbol: 'TKX',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4171',
+            base_denom:
+              'ibc/28EEF762052DB8C3D27A7BF625E9F86A1B3B689CC8D80C818CEDF2EB6CBA02A6',
+            chain_name: 'osmosistestnet'
+          },
+          chain: {
+            channel_id: 'channel-6'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
+        }
+      ]
+    },
+    {
+      description: "Circle's stablecoin on Axelar",
+      denom_units: [
+        {
+          denom:
+            'ibc/06E85292C0685D801A05DDFB19D1683812E1D975A5F93947D17E035C5D7CBC3C',
+          exponent: 0,
+          aliases: [
+            'ibc/2164BDB48DE5501430E71286448D87C6D2240EC0E078CF113CAB85E21A352BB0'
+          ]
+        },
+        {
+          denom: 'ausdc',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/06E85292C0685D801A05DDFB19D1683812E1D975A5F93947D17E035C5D7CBC3C',
+      name: 'USD Coin (Axelar)',
+      display: 'ausdc',
+      symbol: 'aUSDC.axl',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4171',
+            base_denom:
+              'ibc/2164BDB48DE5501430E71286448D87C6D2240EC0E078CF113CAB85E21A352BB0',
+            chain_name: 'osmosistestnet'
+          },
+          chain: {
+            channel_id: 'channel-6'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereumtestnet',
+            base_denom: '0x254d06f33bDc5b8ee05b2ea472107E300226659A'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+      }
     }
   ]
 };

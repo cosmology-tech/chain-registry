@@ -13597,6 +13597,53 @@ const assets: AssetList = {
           }
         }
       ]
+    },
+    {
+      description:
+        'The governance and utility token of Yieldmos, the Interchain Automation Protocol',
+      denom_units: [
+        {
+          denom:
+            'ibc/E898A914BB764F154B3156C4EE3B35BECEDEE4ADB73DA93D9C73D4C053D30A3C',
+          exponent: 0,
+          aliases: [
+            'factory/osmo1vdvnznwg597qngrq9mnfcfk0am9jdc9y446jewhcqdreqz4r75xq5j5zvy/ymos'
+          ]
+        },
+        {
+          denom: 'ymos',
+          exponent: 6
+        }
+      ],
+      type_asset: 'sdk.coin',
+      address:
+        'osmo1vdvnznwg597qngrq9mnfcfk0am9jdc9y446jewhcqdreqz4r75xq5j5zvy',
+      base: 'ibc/E898A914BB764F154B3156C4EE3B35BECEDEE4ADB73DA93D9C73D4C053D30A3C',
+      name: 'Yieldmos Coin',
+      display: 'ymos',
+      symbol: 'YMOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ymos.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ymos.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-648',
+            base_denom:
+              'factory/osmo1vdvnznwg597qngrq9mnfcfk0am9jdc9y446jewhcqdreqz4r75xq5j5zvy/ymos',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-12'
+          }
+        }
+      ]
     }
   ]
 };

@@ -1089,6 +1089,47 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'The native token of Chain4Energy',
+      denom_units: [
+        {
+          denom:
+            'ibc/51DF28237DFCC73155B2F3E61300F5BF0F4989BD9F0C103A5939B03BB5A62649',
+          exponent: 0,
+          aliases: ['uc4e']
+        },
+        {
+          denom: 'c4e',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/51DF28237DFCC73155B2F3E61300F5BF0F4989BD9F0C103A5939B03BB5A62649',
+      name: 'Chain4Energy',
+      display: 'c4e',
+      symbol: 'C4E',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chain4energy/images/c4e.png'
+      },
+      coingecko_id: '',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chain4energy/images/c4e.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'uc4e',
+            chain_name: 'chain4energy'
+          },
+          chain: {
+            channel_id: 'channel-141'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native staking and governance token of Composable.',
       denom_units: [
         {
@@ -5925,6 +5966,10 @@ const assets: AssetList = {
       coingecko_id: 'odin-protocol',
       images: [
         {
+          image_sync: {
+            chain_name: 'odin',
+            base_denom: 'loki'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg'
         }
@@ -5967,6 +6012,10 @@ const assets: AssetList = {
       },
       images: [
         {
+          image_sync: {
+            chain_name: 'odin',
+            base_denom: 'mGeo'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
         }
@@ -5977,86 +6026,6 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-37',
             base_denom: 'mGeo',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-102'
-          }
-        }
-      ]
-    },
-    {
-      description: 'DOKI the last Dragon',
-      denom_units: [
-        {
-          denom:
-            'ibc/2CD69A93A9FB69F6E3E1029021822E19D11C3942108A066234B8715D98B1596B',
-          exponent: 0,
-          aliases: ['udoki']
-        },
-        {
-          denom: 'doki',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/2CD69A93A9FB69F6E3E1029021822E19D11C3942108A066234B8715D98B1596B',
-      name: 'DOKI',
-      display: 'doki',
-      symbol: 'DOKI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-37',
-            base_denom: 'udoki',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-102'
-          }
-        }
-      ]
-    },
-    {
-      description: 'Myrkur the leader of OLD Order',
-      denom_units: [
-        {
-          denom:
-            'ibc/083B5AA8C6C2A17AD00A9275DAA79EA92F511D5F7CE4B30321C2605CB5F754A9',
-          exponent: 0,
-          aliases: ['umyrk']
-        },
-        {
-          denom: 'myrk',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/083B5AA8C6C2A17AD00A9275DAA79EA92F511D5F7CE4B30321C2605CB5F754A9',
-      name: 'MYRK',
-      display: 'myrk',
-      symbol: 'MYRK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-37',
-            base_denom: 'umyrk',
             chain_name: 'odin'
           },
           chain: {
@@ -6089,6 +6058,10 @@ const assets: AssetList = {
       },
       images: [
         {
+          image_sync: {
+            chain_name: 'odin',
+            base_denom: 'mO9W'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
         }
@@ -19984,6 +19957,53 @@ const assets: AssetList = {
             channel_id: 'channel-208',
             base_denom:
               'factory/osmo10n8rv8npx870l69248hnp6djy6pll2yuzzn9x8/BADKID',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-3'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'The governance and utility token of Yieldmos, the Interchain Automation Protocol',
+      denom_units: [
+        {
+          denom:
+            'ibc/035EBB65C2A2B526CD4DDFCA387F162E2AD6D2A5234C4678667E567570427947',
+          exponent: 0,
+          aliases: [
+            'factory/osmo1vdvnznwg597qngrq9mnfcfk0am9jdc9y446jewhcqdreqz4r75xq5j5zvy/ymos'
+          ]
+        },
+        {
+          denom: 'ymos',
+          exponent: 6
+        }
+      ],
+      type_asset: 'sdk.coin',
+      address:
+        'osmo1vdvnznwg597qngrq9mnfcfk0am9jdc9y446jewhcqdreqz4r75xq5j5zvy',
+      base: 'ibc/035EBB65C2A2B526CD4DDFCA387F162E2AD6D2A5234C4678667E567570427947',
+      name: 'Yieldmos Coin',
+      display: 'ymos',
+      symbol: 'YMOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ymos.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ymos.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-208',
+            base_denom:
+              'factory/osmo1vdvnznwg597qngrq9mnfcfk0am9jdc9y446jewhcqdreqz4r75xq5j5zvy/ymos',
             chain_name: 'osmosis'
           },
           chain: {

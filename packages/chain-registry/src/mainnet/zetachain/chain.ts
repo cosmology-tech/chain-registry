@@ -30,7 +30,7 @@ const info: Chain = {
     ]
   },
   codebase: {
-    cosmos_sdk_version: '0.46'
+    cosmos_sdk_version: 'v0.46.13'
   },
   apis: {
     rpc: [
@@ -41,6 +41,10 @@ const info: Chain = {
       {
         address: 'https://zetachain-mainnet-archive.allthatnode.com:26657',
         provider: 'All That Node'
+      },
+      {
+        address: 'https://zetachain-rpc.lavenderfive.com:443',
+        provider: 'Lavender.Five Nodes 🐝'
       }
     ],
     rest: [
@@ -51,9 +55,18 @@ const info: Chain = {
       {
         address: 'https://zetachain-mainnet-archive.allthatnode.com:1317',
         provider: 'All That Node'
+      },
+      {
+        address: 'https://zetachain-api.lavenderfive.com:443',
+        provider: 'Lavender.Five Nodes 🐝'
       }
     ],
-    grpc: []
+    grpc: [
+      {
+        address: 'https://zetachain-grpc.lavenderfive.com:443',
+        provider: 'Lavender.Five Nodes 🐝'
+      }
+    ]
   },
   explorers: [
     {

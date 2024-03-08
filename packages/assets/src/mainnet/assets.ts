@@ -21,6 +21,7 @@ import _canto from './canto';
 import _carbon from './carbon';
 import _celestia from './celestia';
 import _cerberus from './cerberus';
+import _chain4energy from './chain4energy';
 import _cheqd from './cheqd';
 import _chihuahua from './chihuahua';
 import _comdex from './comdex';
@@ -91,6 +92,7 @@ import _planq from './planq';
 import _point from './point';
 import _provenance from './provenance';
 import _pundix from './pundix';
+import _pylons from './pylons';
 import _quasar from './quasar';
 import _quicksilver from './quicksilver';
 import _qwoyn from './qwoyn';
@@ -144,6 +146,7 @@ const assets: AssetList[] = [
   _carbon,
   _celestia,
   _cerberus,
+  _chain4energy,
   _cheqd,
   _chihuahua,
   _comdex,
@@ -214,6 +217,7 @@ const assets: AssetList[] = [
   _point,
   _provenance,
   _pundix,
+  _pylons,
   _quasar,
   _quicksilver,
   _qwoyn,

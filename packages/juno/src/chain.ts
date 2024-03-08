@@ -154,6 +154,10 @@ const chain: Chain = {
       {
         address: 'https://rpc.juno.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://juno-rpc.cogwheel.zone',
+        provider: 'Cogwheel'
       }
     ],
     rest: [
@@ -248,6 +252,10 @@ const chain: Chain = {
       {
         address: 'https://lcd.juno.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://juno-api.cogwheel.zone',
+        provider: 'Cogwheel'
       }
     ],
     grpc: [
@@ -322,6 +330,10 @@ const chain: Chain = {
       {
         address: 'https://grpc.juno.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'juno-grpc.cogwheel.zone:443',
+        provider: 'Cogwheel'
       }
     ]
   },

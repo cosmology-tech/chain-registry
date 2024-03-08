@@ -1619,10 +1619,9 @@ const assets: AssetList = {
           aliases: ['usge']
         },
         {
-          denom:
-            'ibc/8446486081A4086F4C6D5846FC5DC12E01D2DDD0C6A89B00B2F25EDD9986D026',
+          denom: 'sge',
           exponent: 6,
-          aliases: ['usge']
+          aliases: []
         }
       ],
       base: 'ibc/8446486081A4086F4C6D5846FC5DC12E01D2DDD0C6A89B00B2F25EDD9986D026',
@@ -1749,11 +1748,6 @@ const assets: AssetList = {
             'ibc/3642669AD14386D3E38F43F30CFCA859B3E8A05BF6BD6A23DEBD2115AD1325E9',
           exponent: 0,
           aliases: ['uxion']
-        },
-        {
-          denom: 'mxion',
-          exponent: 3,
-          aliases: ['millixion']
         },
         {
           denom: 'XION',
@@ -1927,6 +1921,53 @@ const assets: AssetList = {
       ],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/919F3214F6DCEE01B9CB9F1793E42FA66A8D65203D5A057A5273692A97548540',
+          exponent: 0,
+          aliases: [
+            'ibc/0166AE2224341A3F70943E315DAC6EDF012A638D0F9358794FF7525BA1DFC191'
+          ]
+        },
+        {
+          denom: 'INJ',
+          exponent: 18
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/919F3214F6DCEE01B9CB9F1793E42FA66A8D65203D5A057A5273692A97548540',
+      name: 'Injective INJ token',
+      display: 'INJ',
+      symbol: 'INJ',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-12',
+            base_denom:
+              'ibc/0166AE2224341A3F70943E315DAC6EDF012A638D0F9358794FF7525BA1DFC191',
+            chain_name: 'xiontestnet'
+          },
+          chain: {
+            channel_id: 'channel-4410'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'injectivetestnet',
+            base_denom: 'inj'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
       }
     }
   ]

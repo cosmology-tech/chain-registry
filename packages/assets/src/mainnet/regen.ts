@@ -15338,6 +15338,53 @@ const assets: AssetList = {
     },
     {
       description:
+        'The governance and utility token of Yieldmos, the Interchain Automation Protocol',
+      denom_units: [
+        {
+          denom:
+            'ibc/5109AE9EBFED9AF98A5A3D7CA5525202ECCF6065877F74616C8A8B9DCC261F27',
+          exponent: 0,
+          aliases: [
+            'factory/osmo1vdvnznwg597qngrq9mnfcfk0am9jdc9y446jewhcqdreqz4r75xq5j5zvy/ymos'
+          ]
+        },
+        {
+          denom: 'ymos',
+          exponent: 6
+        }
+      ],
+      type_asset: 'sdk.coin',
+      address:
+        'osmo1vdvnznwg597qngrq9mnfcfk0am9jdc9y446jewhcqdreqz4r75xq5j5zvy',
+      base: 'ibc/5109AE9EBFED9AF98A5A3D7CA5525202ECCF6065877F74616C8A8B9DCC261F27',
+      name: 'Yieldmos Coin',
+      display: 'ymos',
+      symbol: 'YMOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ymos.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ymos.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom:
+              'factory/osmo1vdvnznwg597qngrq9mnfcfk0am9jdc9y446jewhcqdreqz4r75xq5j5zvy/ymos',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-1'
+          }
+        }
+      ]
+    },
+    {
+      description:
         'The XPRT token is primarily a governance token for the Persistence chain.',
       denom_units: [
         {
@@ -15399,17 +15446,6 @@ const assets: AssetList = {
       name: 'PSTAKE staked ATOM',
       display: 'stkatom',
       symbol: 'stkATOM',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
-      },
-      coingecko_id: 'stkatom',
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
-        }
-      ],
       traces: [
         {
           type: 'ibc',
@@ -15421,6 +15457,17 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-14'
           }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
+      },
+      coingecko_id: 'stkatom',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
         }
       ]
     },
@@ -15691,17 +15738,6 @@ const assets: AssetList = {
       name: 'PSTAKE staked OSMO',
       display: 'stkosmo',
       symbol: 'stkOSMO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkosmo.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkosmo.svg'
-      },
-      coingecko_id: 'pstake-staked-osmo',
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkosmo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkosmo.svg'
-        }
-      ],
       traces: [
         {
           type: 'ibc',
@@ -15713,6 +15749,17 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-14'
           }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkosmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkosmo.svg'
+      },
+      coingecko_id: 'pstake-staked-osmo',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkosmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkosmo.svg'
         }
       ]
     },
@@ -15735,16 +15782,6 @@ const assets: AssetList = {
       name: 'PSTAKE staked DYDX',
       display: 'stkdydx',
       symbol: 'stkDYDX',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkdydx.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkdydx.svg'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkdydx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkdydx.svg'
-        }
-      ],
       traces: [
         {
           type: 'ibc',
@@ -15756,6 +15793,158 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-14'
           }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkdydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkdydx.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkdydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkdydx.svg'
+        }
+      ]
+    },
+    {
+      description: 'PSTAKE Liquid-Staked STARS',
+      denom_units: [
+        {
+          denom:
+            'ibc/77C45E2DEFD2DDE126D84DDC75E1CAE86ADC5E134DB5C737794E37699EDBA531',
+          exponent: 0,
+          aliases: ['stk/ustars']
+        },
+        {
+          denom: 'stkstars',
+          exponent: 6,
+          aliases: ['stk/stars']
+        }
+      ],
+      base: 'ibc/77C45E2DEFD2DDE126D84DDC75E1CAE86ADC5E134DB5C737794E37699EDBA531',
+      name: 'PSTAKE staked STARS',
+      display: 'stkstars',
+      symbol: 'stkSTARS',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-21',
+            base_denom: 'stk/ustars',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-14'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkstars.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkstars.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkstars.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkstars.svg'
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/29538183BDB6F096DF371959CCC9E5E9085B8E9466AD7757D1BB315915D7EC85',
+          exponent: 0,
+          aliases: [
+            'ibc/AD8E1D4AC4EA8FC79CC46E33319A3791477D4DEBFC30D5D874074B993422B41B'
+          ]
+        },
+        {
+          denom: 'stars',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/29538183BDB6F096DF371959CCC9E5E9085B8E9466AD7757D1BB315915D7EC85',
+      name: 'Stargaze',
+      display: 'stars',
+      symbol: 'STARS',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-21',
+            base_denom:
+              'ibc/AD8E1D4AC4EA8FC79CC46E33319A3791477D4DEBFC30D5D874074B993422B41B',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-14'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'stargaze',
+            base_denom: 'ustars'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
+      }
+    },
+    {
+      description: 'The native token cw20 for Shade on Secret Network',
+      denom_units: [
+        {
+          denom:
+            'ibc/FAB16CD21E70831CAF712D47BC1865245C582E938DCF96C881347803405678BE',
+          exponent: 0,
+          aliases: [
+            'ibc/5D3B6445EA1D7064C4B1CCB588638589529556E1BCBADF13475021B42EA8C73B'
+          ]
+        },
+        {
+          denom: 'shd',
+          exponent: 8
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/FAB16CD21E70831CAF712D47BC1865245C582E938DCF96C881347803405678BE',
+      name: 'Shade',
+      display: 'shd',
+      symbol: 'SHD',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-21',
+            base_denom:
+              'ibc/5D3B6445EA1D7064C4B1CCB588638589529556E1BCBADF13475021B42EA8C73B',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-14'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.svg'
+      },
+      images: [
+        {
+          image_sync: {
+            chain_name: 'secretnetwork',
+            base_denom: 'cw20:secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.svg'
         }
       ]
     },
@@ -16143,6 +16332,49 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-29'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native token of Umee',
+      denom_units: [
+        {
+          denom:
+            'ibc/76ADAF7500FA7E048261145768030EB72392A488BFDEC353631B21EF15F0EE69',
+          exponent: 0,
+          aliases: ['uumee']
+        },
+        {
+          denom: 'umee',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/76ADAF7500FA7E048261145768030EB72392A488BFDEC353631B21EF15F0EE69',
+      name: 'Umee',
+      display: 'umee',
+      symbol: 'UMEE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.svg'
+      },
+      coingecko_id: 'umee',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-107',
+            base_denom: 'uumee',
+            chain_name: 'umee'
+          },
+          chain: {
+            channel_id: 'channel-158'
           }
         }
       ]
