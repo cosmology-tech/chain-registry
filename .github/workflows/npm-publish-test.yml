@@ -1,10 +1,6 @@
-name: Publish
+name: Publish Min Test
 
 on:
-  # schedule:
-  # Runs every day at 1:00 AM UTC
-  # - cron: "0 1 * * *"
-
   workflow_dispatch:
 
 jobs:
@@ -21,27 +17,13 @@ jobs:
       - name: Code Generation
         run: |
           BRANCH_NAME="build-$(date +%Y%m%d-%H%M%S)"
-          yarn
-          yarn bootstrap
-          yarn build
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
           git checkout -b $BRANCH_NAME
           cd packages/chain-registry
-          yarn codegen
-          yarn build
+          echo a > test.ts
+          echo "console.log('Example finished');" >> examples/examples.ts
           cd ../../
-          cd packages/assets
-          yarn codegen
-          cd ../../
-          cd packages/osmosis
-          yarn codegen
-          cd ../../
-          cd packages/juno
-          yarn codegen
-          cd ../../
-      - name: Git Ops
-        run: |
           git add .
           if ! git diff --staged --quiet; then
             git commit -am "build 🛠 $BRANCH_NAME"
