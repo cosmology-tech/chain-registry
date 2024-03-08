@@ -33,15 +33,16 @@ jobs:
           cd packages/juno
           yarn codegen
           cd ../../
-      - name: Git Ops
-        run: |
-          git add .
           if ! git diff --staged --quiet; then
             git commit -am "build 🛠 $BRANCH_NAME"
             git push --set-upstream origin $BRANCH_NAME
+            echo "GIT_RESULT=Done." >> $GITHUB_ENV
           else
-            echo "No changes to commit."
+            echo "GIT_RESULT=No changes to commit." >> $GITHUB_ENV
           fi
+      - name: Git Ops
+        run: |
+          echo $GIT_RESULT
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
           GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
