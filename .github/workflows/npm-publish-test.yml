@@ -24,15 +24,17 @@ jobs:
           echo a > test.ts
           echo "console.log('Example finished');" >> examples/examples.ts
           cd ../../
-      - name: Git Ops
-        run: |
           git add .
           if ! git diff --staged --quiet; then
             git commit -am "build 🛠 $BRANCH_NAME"
             git push --set-upstream origin $BRANCH_NAME
+            GIT_RESULT="Created"
           else
-            echo "No changes to commit."
+            GIT_RESULT="No changes to commit."
           fi
+      - name: Git Ops
+        run: |
+          echo $GIT_RESULT
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
           GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
