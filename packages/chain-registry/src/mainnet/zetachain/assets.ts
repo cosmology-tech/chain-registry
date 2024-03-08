@@ -19,6 +19,7 @@ const info: AssetList = {
       name: 'ZetaChain',
       display: 'zeta',
       symbol: 'ZETA',
+      coingecko_id: 'zetachain',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zetachain/images/zetachain.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zetachain/images/zetachain.svg'

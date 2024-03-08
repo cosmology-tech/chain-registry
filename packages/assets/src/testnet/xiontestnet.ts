@@ -356,6 +356,50 @@ const assets: AssetList = {
       }
     },
     {
+      description:
+        'The INJ token is the native governance token for the Injective chain.',
+      denom_units: [
+        {
+          denom:
+            'ibc/0166AE2224341A3F70943E315DAC6EDF012A638D0F9358794FF7525BA1DFC191',
+          exponent: 0,
+          aliases: ['inj']
+        },
+        {
+          denom: 'INJ',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/0166AE2224341A3F70943E315DAC6EDF012A638D0F9358794FF7525BA1DFC191',
+      name: 'Injective',
+      display: 'INJ',
+      symbol: 'INJ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
+      },
+      coingecko_id: 'injective-protocol',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-324',
+            base_denom: 'inj',
+            chain_name: 'injectivetestnet'
+          },
+          chain: {
+            channel_id: 'channel-215'
+          }
+        }
+      ]
+    },
+    {
       description: 'The controlled staking asset for Noble Chain',
       denom_units: [
         {
@@ -635,6 +679,109 @@ const assets: AssetList = {
           }
         }
       ]
+    },
+    {
+      description:
+        'The native EVM, governance and staking token of the Titan Chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/189B2C50BD4514595544694AA7D267DA509D1085F4C29ABC1A03F484DAC1C792',
+          exponent: 0,
+          aliases: [
+            'ibc/28EEF762052DB8C3D27A7BF625E9F86A1B3B689CC8D80C818CEDF2EB6CBA02A6'
+          ]
+        },
+        {
+          denom: 'utkx',
+          exponent: 12,
+          aliases: ['microtkx']
+        },
+        {
+          denom: 'mtkx',
+          exponent: 15,
+          aliases: ['millitkx']
+        },
+        {
+          denom: 'tkx',
+          exponent: 18
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/189B2C50BD4514595544694AA7D267DA509D1085F4C29ABC1A03F484DAC1C792',
+      name: 'tkx',
+      display: 'tkx',
+      symbol: 'TKX',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4410',
+            base_denom:
+              'ibc/28EEF762052DB8C3D27A7BF625E9F86A1B3B689CC8D80C818CEDF2EB6CBA02A6',
+            chain_name: 'osmosistestnet'
+          },
+          chain: {
+            channel_id: 'channel-12'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
+        }
+      ]
+    },
+    {
+      description: "Circle's stablecoin on Axelar",
+      denom_units: [
+        {
+          denom:
+            'ibc/3991F1E282275087A3E633977100736376EE72EE6B65BF2EE5BDA13BFFAD8F02',
+          exponent: 0,
+          aliases: [
+            'ibc/2164BDB48DE5501430E71286448D87C6D2240EC0E078CF113CAB85E21A352BB0'
+          ]
+        },
+        {
+          denom: 'ausdc',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/3991F1E282275087A3E633977100736376EE72EE6B65BF2EE5BDA13BFFAD8F02',
+      name: 'USD Coin (Axelar)',
+      display: 'ausdc',
+      symbol: 'aUSDC.axl',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4410',
+            base_denom:
+              'ibc/2164BDB48DE5501430E71286448D87C6D2240EC0E078CF113CAB85E21A352BB0',
+            chain_name: 'osmosistestnet'
+          },
+          chain: {
+            channel_id: 'channel-12'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereumtestnet',
+            base_denom: '0x254d06f33bDc5b8ee05b2ea472107E300226659A'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+      }
     }
   ]
 };

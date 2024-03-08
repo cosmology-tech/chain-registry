@@ -38,6 +38,10 @@ const info: Chain = {
       {
         address: 'https://testnet-swisstronik-rpc.genznodes.dev',
         provider: 'genznodes'
+      },
+      {
+        address: 'https://rpc.swisstronik.comunitynode.my.id',
+        provider: 'ComunityNode'
       }
     ],
     rest: [
@@ -48,6 +52,10 @@ const info: Chain = {
       {
         address: 'https://testnet-swisstronik-api.genznodes.dev',
         provider: 'genznodes'
+      },
+      {
+        address: 'https://rest.swisstronik.comunitynode.my.id/',
+        provider: 'Comunitynode'
       }
     ],
     grpc: [
@@ -64,6 +72,10 @@ const info: Chain = {
       {
         address: 'https://testnet-swisstronik-rpc-evm.genznodes.dev',
         provider: 'genznodes'
+      },
+      {
+        address: 'https://evm.swisstronik.comunitynode.my.id',
+        provider: 'comunitynode'
       }
     ]
   },

@@ -34,9 +34,9 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.47.4',
+    cosmos_sdk_version: '0.47.5',
     cosmwasm_enabled: true,
-    cosmwasm_version: '0.41.0'
+    cosmwasm_version: '0.42.0'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.png',
