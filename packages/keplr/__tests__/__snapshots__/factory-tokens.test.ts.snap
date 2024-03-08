@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`config 1`] = `
+{
+  "bech32Config": {
+    "bech32PrefixAccAddr": "pryzm",
+    "bech32PrefixAccPub": "pryzmpub",
+    "bech32PrefixConsAddr": "pryzmvalcons",
+    "bech32PrefixConsPub": "pryzmvalconspub",
+    "bech32PrefixValAddr": "pryzmvaloper",
+    "bech32PrefixValPub": "pryzmvaloperpub",
+  },
+  "bip44": {
+    "coinType": 118,
+  },
+  "chainId": "PRYZM_CHAIN_ID",
+  "chainName": "Pryzm Testnet",
+  "currencies": [
+    {
+      "coinDecimals": 6,
+      "coinDenom": "PRYZM",
+      "coinGeckoId": "pryzm",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/prism/images/prism-token.svg",
+      "coinMinimalDenom": "upryzm",
+    },
+    {
+      "coinDecimals": undefined,
+      "coinDenom": "PRYZM2",
+      "coinGeckoId": "pryzm2",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/prism/images/prism-token.svg",
+      "coinMinimalDenom": "factory/pryzm15k9s9p0ar0cx27nayrgk6vmhyec3lj7vkry7rx/uusdsim",
+    },
+  ],
+  "features": [
+    "stargate",
+    "ibc-transfer",
+  ],
+  "feeCurrencies": [
+    {
+      "coinDecimals": 6,
+      "coinDenom": "PRYZM",
+      "coinGeckoId": "pryzm",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/prism/images/prism-token.svg",
+      "coinMinimalDenom": "upryzm",
+      "gasPriceStep": {
+        "average": 0,
+        "high": 0.01,
+        "low": 0,
+      },
+    },
+    {
+      "coinDecimals": undefined,
+      "coinDenom": "PRYZM2",
+      "coinGeckoId": "pryzm2",
+      "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/prism/images/prism-token.svg",
+      "coinMinimalDenom": "factory/pryzm15k9s9p0ar0cx27nayrgk6vmhyec3lj7vkry7rx/uusdsim",
+      "gasPriceStep": {
+        "average": 0,
+        "high": 0.01,
+        "low": 0,
+      },
+    },
+  ],
+  "rest": "",
+  "rpc": "",
+  "stakeCurrency": {
+    "coinDecimals": 6,
+    "coinDenom": "PRYZM",
+    "coinGeckoId": "pryzm",
+    "coinImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/prism/images/prism-token.svg",
+    "coinMinimalDenom": "upryzm",
+  },
+}
+`;
