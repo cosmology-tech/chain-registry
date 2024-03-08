@@ -20,6 +20,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: Code Generation
         run: |
+          git submodule update --remote
           BRANCH_NAME="build-$(date +%Y%m%d-%H%M%S)"
           yarn
           yarn bootstrap
