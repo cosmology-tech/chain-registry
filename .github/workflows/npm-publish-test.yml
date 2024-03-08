@@ -28,9 +28,9 @@ jobs:
           if ! git diff --staged --quiet; then
             git commit -am "build 🛠 $BRANCH_NAME"
             git push --set-upstream origin $BRANCH_NAME
-            GIT_RESULT="Created"
+            echo "GIT_RESULT=Created" >> $GITHUB_ENV
           else
-            GIT_RESULT="No changes to commit."
+            echo "GIT_RESULT=No changes to commit." >> $GITHUB_ENV
           fi
       - name: Git Ops
         run: |
@@ -38,4 +38,3 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
           GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
-          GIT_RESULT: "init"
