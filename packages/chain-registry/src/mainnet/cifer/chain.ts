@@ -34,8 +34,18 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
   },
   apis: {
-    rpc: [],
-    rest: []
+    rpc: [
+      {
+        address: 'https://cif_node.cifer.ai/',
+        provider: 'Cifer'
+      }
+    ],
+    rest: [
+      {
+        address: 'https://api.cifer.ai',
+        provider: 'Cifer'
+      }
+    ]
   },
   explorers: [
     {

@@ -118,6 +118,10 @@ const info: Chain = {
       {
         address: 'https://nois-rpc.stakeandrelax.net',
         provider: 'Stake&Relax 🦥'
+      },
+      {
+        address: 'https://rpc.nois.cumulo.org.es',
+        provider: 'Cumulo'
       }
     ],
     grpc: [
@@ -188,6 +192,10 @@ const info: Chain = {
       {
         address: 'nois-grpc.stakeandrelax.net:17390',
         provider: 'Stake&Relax 🦥'
+      },
+      {
+        address: 'grpc.nois.cumulo.org.es:443',
+        provider: 'Cumulo'
       }
     ],
     rest: [
@@ -242,6 +250,10 @@ const info: Chain = {
       {
         address: 'https://nois-api.stakeandrelax.net',
         provider: 'Stake&Relax 🦥'
+      },
+      {
+        address: 'https://api.nois.cumulo.org.es',
+        provider: 'Cumulo'
       }
     ]
   },
