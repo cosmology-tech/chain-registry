@@ -29,7 +29,11 @@ const info: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://celestia.org/',
+        twitter: 'https://twitter.com/CelestiaOrg'
+      }
     }
   ]
 };

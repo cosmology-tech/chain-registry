@@ -29,7 +29,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://www.gravitybridge.net/',
+        twitter: 'https://twitter.com/gravity_bridge'
+      }
     },
     {
       description:

@@ -30,7 +30,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://bitsong.io/',
+        twitter: 'https://twitter.com/BitSongOfficial'
+      }
     },
     {
       description: 'Adam Clay a BitSong Music FanToken',

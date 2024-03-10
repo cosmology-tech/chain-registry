@@ -29,7 +29,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://www.kyve.network/',
+        twitter: 'https://twitter.com/KYVENetwork'
+      }
     }
   ]
 };

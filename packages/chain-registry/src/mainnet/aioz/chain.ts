@@ -17,10 +17,10 @@ const info: Chain = {
     fee_tokens: [
       {
         denom: 'attoaioz',
-        fixed_min_gas_price: 1000000000,
-        low_gas_price: 1000000000,
-        average_gas_price: 1000000000,
-        high_gas_price: 1500000000
+        fixed_min_gas_price: 7000000000,
+        low_gas_price: 7000000000,
+        average_gas_price: 7000000000,
+        high_gas_price: 10000000000
       }
     ]
   },

@@ -33,7 +33,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://archway.io/',
+        twitter: 'https://twitter.com/archwayHQ'
+      }
     },
     {
       description: 'ERIS liquid staked ARCH',

@@ -35,6 +35,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
         }
       ],
+      socials: {
+        webiste: 'https://archway.io/',
+        twitter: 'https://twitter.com/archwayHQ'
+      },
       traces: [
         {
           type: 'ibc',
@@ -177,6 +181,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
         }
       ],
+      socials: {
+        webiste: 'https://axelar.network/',
+        twitter: 'https://twitter.com/axelarnetwork'
+      },
       traces: [
         {
           type: 'ibc',
@@ -1630,6 +1638,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png'
         }
       ],
+      socials: {
+        webiste: 'https://celestia.org/',
+        twitter: 'https://twitter.com/CelestiaOrg'
+      },
       traces: [
         {
           type: 'ibc',
@@ -1988,6 +2000,10 @@ const assets: AssetList = {
       ],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
+      },
+      socials: {
+        webiste: 'https://www.composable.finance/',
+        twitter: 'https://twitter.com/ComposableFin'
       }
     },
     {
@@ -2162,6 +2178,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
         }
       ],
+      socials: {
+        webiste: 'https://cosmos.network',
+        twitter: 'https://twitter.com/cosmoshub'
+      },
       traces: [
         {
           type: 'ibc',
@@ -2305,6 +2325,10 @@ const assets: AssetList = {
           }
         }
       ],
+      socials: {
+        webiste: 'https://dydx.trade/',
+        twitter: 'https://twitter.com/dYdX'
+      },
       traces: [
         {
           type: 'ibc',
@@ -2399,6 +2423,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg'
         }
       ],
+      socials: {
+        webiste: 'https://portal.dymension.xyz',
+        twitter: 'https://twitter.com/dymension'
+      },
       traces: [
         {
           type: 'ibc',
@@ -2443,6 +2471,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
         }
       ],
+      socials: {
+        webiste: 'https://injective.com/',
+        twitter: 'https://twitter.com/Injective_'
+      },
       traces: [
         {
           type: 'ibc',
@@ -2766,6 +2798,10 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
+      },
+      socials: {
+        webiste: 'https://gelotto.io/',
+        twitter: 'https://twitter.com/Gelotto2'
       }
     },
     {
@@ -2969,6 +3005,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg'
         }
       ],
+      socials: {
+        webiste: 'https://www.kava.io/',
+        twitter: 'https://twitter.com/KAVA_CHAIN'
+      },
       traces: [
         {
           type: 'ibc',
@@ -3186,6 +3226,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg'
         }
       ],
+      socials: {
+        webiste: 'https://kujira.network/',
+        twitter: 'https://twitter.com/TeamKujira'
+      },
       traces: [
         {
           type: 'ibc',
@@ -4605,6 +4649,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
         }
       ],
+      socials: {
+        webiste: 'https://www.marsprotocol.io/',
+        twitter: 'https://twitter.com/mars_protocol'
+      },
       traces: [
         {
           type: 'ibc',
@@ -4866,6 +4914,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg'
         }
       ],
+      socials: {
+        webiste: 'https://nolus.io/',
+        twitter: 'https://twitter.com/NolusProtocol'
+      },
       traces: [
         {
           type: 'ibc',
@@ -5958,6 +6010,10 @@ const assets: AssetList = {
       ],
       coingecko_id: 'osmosis',
       keywords: ['dex', 'staking'],
+      socials: {
+        webiste: 'https://osmosis.zone',
+        twitter: 'https://twitter.com/osmosiszone'
+      },
       traces: [
         {
           type: 'ibc',
@@ -6001,7 +6057,11 @@ const assets: AssetList = {
         }
       ],
       coingecko_id: 'ion',
-      keywords: ['memecoin'],
+      keywords: ['memecoin', 'defi'],
+      socials: {
+        webiste: 'https://ion.wtf',
+        twitter: 'https://twitter.com/_IONDAO'
+      },
       traces: [
         {
           type: 'ibc',
@@ -19571,6 +19631,49 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'The memecoin built for the Celestia community',
+      denom_units: [
+        {
+          denom:
+            'ibc/8BD3EB6ABBD8DC8B1BA1F2E58CDFBAACFF8CF55DB8C475E9D6D97B9A56B052F0',
+          exponent: 0,
+          aliases: ['factory/osmo1nr8zfakf6jauye3uqa9lrmr5xumee5n42lv92z/toro']
+        },
+        {
+          denom: 'toro',
+          exponent: 6
+        }
+      ],
+      type_asset: 'sdk.coin',
+      address: 'osmo1nr8zfakf6jauye3uqa9lrmr5xumee5n42lv92z',
+      base: 'ibc/8BD3EB6ABBD8DC8B1BA1F2E58CDFBAACFF8CF55DB8C475E9D6D97B9A56B052F0',
+      name: 'TORO',
+      display: 'toro',
+      symbol: 'TORO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/toro.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/toro.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-874',
+            base_denom:
+              'factory/osmo1nr8zfakf6jauye3uqa9lrmr5xumee5n42lv92z/toro',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The XPRT token is primarily a governance token for the Persistence chain.',
       denom_units: [
@@ -19600,6 +19703,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
         }
       ],
+      socials: {
+        webiste: 'https://persistence.one/',
+        twitter: 'https://twitter.com/PersistenceOne'
+      },
       traces: [
         {
           type: 'ibc',
@@ -20164,6 +20271,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.svg'
         }
       ],
+      socials: {
+        webiste: 'https://www.sei.io/',
+        twitter: 'https://twitter.com/SeiNetwork'
+      },
       traces: [
         {
           type: 'ibc',
@@ -20425,6 +20536,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
         }
       ],
+      socials: {
+        webiste: 'https://www.stargaze.zone/',
+        twitter: 'https://twitter.com/StargazeZone'
+      },
       traces: [
         {
           type: 'ibc',
@@ -20694,6 +20809,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
         }
       ],
+      socials: {
+        webiste: 'https://stride.zone/',
+        twitter: 'https://twitter.com/stride_zone'
+      },
       traces: [
         {
           type: 'ibc',
@@ -21239,6 +21358,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
         }
       ],
+      socials: {
+        webiste: 'https://www.terra.money/',
+        twitter: 'https://twitter.com/terra_money'
+      },
       traces: [
         {
           type: 'ibc',
@@ -21978,6 +22101,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/astro.png'
         }
       ],
+      socials: {
+        webiste: 'https://astroport.finance/',
+        twitter: 'https://twitter.com/astroport_fi'
+      },
       traces: [
         {
           type: 'ibc-cw20',

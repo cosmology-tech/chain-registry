@@ -39,7 +39,11 @@ const info: AssetList = {
             dark_mode: true
           }
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://humans.ai/',
+        twitter: 'https://twitter.com/humansdotai'
+      }
     }
   ]
 };

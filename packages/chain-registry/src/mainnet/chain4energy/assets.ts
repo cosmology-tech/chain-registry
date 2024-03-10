@@ -27,7 +27,11 @@ const info: AssetList = {
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chain4energy/images/c4e.png'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://c4e.io/',
+        twitter: 'https://twitter.com/Chain4Energy'
+      }
     }
   ]
 };

@@ -29,7 +29,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://www.regen.network/',
+        twitter: 'https://twitter.com/regen_network'
+      }
     },
     {
       description:

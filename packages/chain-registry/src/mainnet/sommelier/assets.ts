@@ -36,7 +36,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://www.sommelier.finance/',
+        twitter: 'https://twitter.com/sommfinance'
+      }
     }
   ]
 };

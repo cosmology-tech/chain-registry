@@ -29,7 +29,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://omniflix.network/',
+        twitter: 'https://twitter.com/OmniFlixNetwork'
+      }
     },
     {
       denom_units: [

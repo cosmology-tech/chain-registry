@@ -49,7 +49,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'http://c4e.rpc.m.stavr.tech:17097',
+        address: 'https://c4e.rpc.m.stavr.tech:443',
         provider: '🔥STAVR🔥'
       },
       {

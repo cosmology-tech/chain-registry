@@ -30,7 +30,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://akash.network/',
+        twitter: 'https://twitter.com/akashnet_'
+      }
     },
     {
       description: 'Tether USDt on Akash',

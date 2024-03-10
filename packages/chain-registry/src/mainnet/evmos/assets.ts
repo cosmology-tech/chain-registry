@@ -30,7 +30,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://evmos.org/',
+        twitter: 'https://twitter.com/EvmosOrg'
+      }
     },
     {
       description: 'Tether USDt on Evmos',

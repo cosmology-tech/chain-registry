@@ -29,7 +29,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://nolus.io/',
+        twitter: 'https://twitter.com/NolusProtocol'
+      }
     },
     {
       description:

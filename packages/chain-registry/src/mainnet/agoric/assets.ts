@@ -30,7 +30,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/bld.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/bld.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://agoric.com/',
+        twitter: 'https://twitter.com/agoric'
+      }
     },
     {
       description:
