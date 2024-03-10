@@ -29,7 +29,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://axelar.network/',
+        twitter: 'https://twitter.com/axelarnetwork'
+      }
     },
     {
       description: "Circle's stablecoin on Axelar",

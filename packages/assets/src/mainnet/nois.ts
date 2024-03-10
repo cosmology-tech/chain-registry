@@ -35,6 +35,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
         }
       ],
+      socials: {
+        webiste: 'https://archway.io/',
+        twitter: 'https://twitter.com/archwayHQ'
+      },
       traces: [
         {
           type: 'ibc',
@@ -221,6 +225,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
         }
       ],
+      socials: {
+        webiste: 'https://injective.com/',
+        twitter: 'https://twitter.com/Injective_'
+      },
       traces: [
         {
           type: 'ibc',
@@ -544,6 +552,10 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
+      },
+      socials: {
+        webiste: 'https://gelotto.io/',
+        twitter: 'https://twitter.com/Gelotto2'
       }
     },
     {
@@ -747,6 +759,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
         }
       ],
+      socials: {
+        webiste: 'https://junonetwork.io/',
+        twitter: 'https://twitter.com/JunoNetwork'
+      },
       traces: [
         {
           type: 'ibc',
@@ -964,6 +980,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg'
         }
       ],
+      socials: {
+        webiste: 'https://neutron.org/',
+        twitter: 'https://twitter.com/Neutron_org'
+      },
       traces: [
         {
           type: 'ibc',
@@ -2152,6 +2172,10 @@ const assets: AssetList = {
       ],
       coingecko_id: 'osmosis',
       keywords: ['dex', 'staking'],
+      socials: {
+        webiste: 'https://osmosis.zone',
+        twitter: 'https://twitter.com/osmosiszone'
+      },
       traces: [
         {
           type: 'ibc',
@@ -2195,7 +2219,11 @@ const assets: AssetList = {
         }
       ],
       coingecko_id: 'ion',
-      keywords: ['memecoin'],
+      keywords: ['memecoin', 'defi'],
+      socials: {
+        webiste: 'https://ion.wtf',
+        twitter: 'https://twitter.com/_IONDAO'
+      },
       traces: [
         {
           type: 'ibc',
@@ -15765,6 +15793,49 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'The memecoin built for the Celestia community',
+      denom_units: [
+        {
+          denom:
+            'ibc/864D409267DAB5653C7376506907928E0AB89CCEA00C24B8869E4D9A0B4C1ECD',
+          exponent: 0,
+          aliases: ['factory/osmo1nr8zfakf6jauye3uqa9lrmr5xumee5n42lv92z/toro']
+        },
+        {
+          denom: 'toro',
+          exponent: 6
+        }
+      ],
+      type_asset: 'sdk.coin',
+      address: 'osmo1nr8zfakf6jauye3uqa9lrmr5xumee5n42lv92z',
+      base: 'ibc/864D409267DAB5653C7376506907928E0AB89CCEA00C24B8869E4D9A0B4C1ECD',
+      name: 'TORO',
+      display: 'toro',
+      symbol: 'TORO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/toro.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/toro.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8277',
+            base_denom:
+              'factory/osmo1nr8zfakf6jauye3uqa9lrmr5xumee5n42lv92z/toro',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-37'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native staking token of Sei.',
       denom_units: [
         {
@@ -15793,6 +15864,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.svg'
         }
       ],
+      socials: {
+        webiste: 'https://www.sei.io/',
+        twitter: 'https://twitter.com/SeiNetwork'
+      },
       traces: [
         {
           type: 'ibc',
@@ -16054,6 +16129,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
         }
       ],
+      socials: {
+        webiste: 'https://www.stargaze.zone/',
+        twitter: 'https://twitter.com/StargazeZone'
+      },
       traces: [
         {
           type: 'ibc',

@@ -30,7 +30,11 @@ const info: AssetList = {
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://www.quasar.fi/',
+        twitter: 'https://twitter.com/QuasarFi'
+      }
     },
     {
       description: 'OSMO from Osmosis',

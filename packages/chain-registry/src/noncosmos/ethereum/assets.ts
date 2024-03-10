@@ -509,7 +509,7 @@ const info: AssetList = {
     },
     {
       description:
-        "sfrxETH is the version of frxETH which accrues staking yield. All profit generated from Frax Ether validators is distributed to sfrxETH holders. By exchanging frxETH for sfrxETH, one become's eligible for staking yield, which is redeemed upon converting sfrxETH back to frxETH.",
+        'sfrxETH is the version of frxETH which accrues staking yield. All profit generated from Frax Ether validators is distributed to sfrxETH holders. By exchanging frxETH for sfrxETH, one becomes eligible for staking yield, which is redeemed upon converting sfrxETH back to frxETH.',
       type_asset: 'erc20',
       address: '0xac3e018457b222d93114458476f3e3416abbe38f',
       denom_units: [

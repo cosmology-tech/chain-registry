@@ -30,7 +30,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://portal.dymension.xyz',
+        twitter: 'https://twitter.com/dymension'
+      }
     }
   ]
 };

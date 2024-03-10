@@ -30,7 +30,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://injective.com/',
+        twitter: 'https://twitter.com/Injective_'
+      }
     },
     {
       description: 'Tether USDt on Injective',
@@ -267,6 +271,10 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
+      },
+      socials: {
+        webiste: 'https://gelotto.io/',
+        twitter: 'https://twitter.com/Gelotto2'
       }
     },
     {

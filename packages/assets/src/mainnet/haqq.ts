@@ -31,6 +31,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
         }
       ],
+      socials: {
+        webiste: 'https://axelar.network/',
+        twitter: 'https://twitter.com/axelarnetwork'
+      },
       traces: [
         {
           type: 'ibc',
@@ -1484,6 +1488,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
         }
       ],
+      socials: {
+        webiste: 'https://cosmos.network',
+        twitter: 'https://twitter.com/cosmoshub'
+      },
       traces: [
         {
           type: 'ibc',
@@ -1621,6 +1629,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg'
         }
       ],
+      socials: {
+        webiste: 'https://www.gravitybridge.net/',
+        twitter: 'https://twitter.com/gravity_bridge'
+      },
       traces: [
         {
           type: 'ibc',
@@ -2050,6 +2062,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg'
         }
       ],
+      socials: {
+        webiste: 'https://www.kava.io/',
+        twitter: 'https://twitter.com/KAVA_CHAIN'
+      },
       traces: [
         {
           type: 'ibc',
@@ -2443,6 +2459,10 @@ const assets: AssetList = {
       ],
       coingecko_id: 'osmosis',
       keywords: ['dex', 'staking'],
+      socials: {
+        webiste: 'https://osmosis.zone',
+        twitter: 'https://twitter.com/osmosiszone'
+      },
       traces: [
         {
           type: 'ibc',
@@ -2486,7 +2506,11 @@ const assets: AssetList = {
         }
       ],
       coingecko_id: 'ion',
-      keywords: ['memecoin'],
+      keywords: ['memecoin', 'defi'],
+      socials: {
+        webiste: 'https://ion.wtf',
+        twitter: 'https://twitter.com/_IONDAO'
+      },
       traces: [
         {
           type: 'ibc',
@@ -16047,6 +16071,49 @@ const assets: AssetList = {
             channel_id: 'channel-1575',
             base_denom:
               'factory/osmo1vdvnznwg597qngrq9mnfcfk0am9jdc9y446jewhcqdreqz4r75xq5j5zvy/ymos',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-2'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The memecoin built for the Celestia community',
+      denom_units: [
+        {
+          denom:
+            'ibc/895D502280E6C6EB4DCD6F5591231DAC2072890F67D5422BD5004D0747496F3B',
+          exponent: 0,
+          aliases: ['factory/osmo1nr8zfakf6jauye3uqa9lrmr5xumee5n42lv92z/toro']
+        },
+        {
+          denom: 'toro',
+          exponent: 6
+        }
+      ],
+      type_asset: 'sdk.coin',
+      address: 'osmo1nr8zfakf6jauye3uqa9lrmr5xumee5n42lv92z',
+      base: 'ibc/895D502280E6C6EB4DCD6F5591231DAC2072890F67D5422BD5004D0747496F3B',
+      name: 'TORO',
+      display: 'toro',
+      symbol: 'TORO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/toro.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/toro.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1575',
+            base_denom:
+              'factory/osmo1nr8zfakf6jauye3uqa9lrmr5xumee5n42lv92z/toro',
             chain_name: 'osmosis'
           },
           chain: {

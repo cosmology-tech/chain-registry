@@ -29,7 +29,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://cosmos.network',
+        twitter: 'https://twitter.com/cosmoshub'
+      }
     },
     {
       description: 'Tether USDt on the Cosmos Hub',

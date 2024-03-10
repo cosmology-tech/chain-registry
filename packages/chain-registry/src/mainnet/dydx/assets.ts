@@ -35,7 +35,11 @@ const info: AssetList = {
             circle: true
           }
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://dydx.trade/',
+        twitter: 'https://twitter.com/dYdX'
+      }
     },
     {
       description: 'Noble USDC on dYdX Protocol.',

@@ -31,7 +31,11 @@ const info: AssetList = {
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://cronos.org/',
+        twitter: 'https://twitter.com/cronos_chain'
+      }
     }
   ]
 };

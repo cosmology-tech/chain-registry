@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chain_name: 'solana',
   assets: [
     {
@@ -193,7 +193,11 @@ const info: AssetList = {
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/bskt.png'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://www.bskt.fi/',
+        twitter: 'https://twitter.com/bsktfi'
+      }
     }
   ]
 };

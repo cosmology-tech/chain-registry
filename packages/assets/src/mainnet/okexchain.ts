@@ -31,6 +31,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.svg'
         }
       ],
+      socials: {
+        webiste: 'https://www.assetmantle.one/',
+        twitter: 'https://twitter.com/AssetMantle'
+      },
       traces: [
         {
           type: 'ibc',
@@ -461,6 +465,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
         }
       ],
+      socials: {
+        webiste: 'https://junonetwork.io/',
+        twitter: 'https://twitter.com/JunoNetwork'
+      },
       traces: [
         {
           type: 'ibc',

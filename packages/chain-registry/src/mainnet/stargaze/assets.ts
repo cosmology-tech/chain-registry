@@ -29,7 +29,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://www.stargaze.zone/',
+        twitter: 'https://twitter.com/StargazeZone'
+      }
     },
     {
       description: 'The native token of ohhNFT.',

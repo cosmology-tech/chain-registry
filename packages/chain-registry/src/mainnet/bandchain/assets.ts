@@ -29,7 +29,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://www.bandprotocol.com/',
+        twitter: 'https://twitter.com/BandProtocol'
+      }
     }
   ]
 };

@@ -3,6 +3,156 @@ const assets: AssetList = {
   chain_name: 'dymension',
   assets: [
     {
+      description: 'The native token of Archway network',
+      denom_units: [
+        {
+          denom:
+            'ibc/5C58CC109FB067073F1B80481EE9C3A8484330FECB35D2591B28E7E1A6FCF64C',
+          exponent: 0,
+          aliases: ['aarch']
+        },
+        {
+          denom: 'uarch',
+          exponent: 12
+        },
+        {
+          denom: 'arch',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/5C58CC109FB067073F1B80481EE9C3A8484330FECB35D2591B28E7E1A6FCF64C',
+      name: 'Archway',
+      display: 'arch',
+      symbol: 'ARCH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+      },
+      coingecko_id: 'archway',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+        }
+      ],
+      socials: {
+        webiste: 'https://archway.io/',
+        twitter: 'https://twitter.com/archwayHQ'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-123',
+            base_denom: 'aarch',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-45'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The first memecoin on osmosis.',
+      denom_units: [
+        {
+          denom:
+            'ibc/7D3868A20087E7EB369F64F6AA2C5D70E59522E5C7E03B9973D2EDE86E1DB6F0',
+          exponent: 0,
+          aliases: [
+            'ibc/7CB33A66F90533ED1E168CB3251253C719CF4B04FF1290AFD795F14CA1D67278'
+          ]
+        },
+        {
+          denom: 'WOSMO',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/7D3868A20087E7EB369F64F6AA2C5D70E59522E5C7E03B9973D2EDE86E1DB6F0',
+      name: 'Wosmo',
+      display: 'WOSMO',
+      symbol: 'WOSMO',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-123',
+            base_denom:
+              'ibc/7CB33A66F90533ED1E168CB3251253C719CF4B04FF1290AFD795F14CA1D67278',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-45'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
+      }
+    },
+    {
+      description: 'The native token of Vidulum',
+      denom_units: [
+        {
+          denom:
+            'ibc/2E537B6325ADAFDE0B37F1609B8BC8F46B07C5030B3B97F15719B797EE1F1121',
+          exponent: 0,
+          aliases: [
+            'ibc/1BCF1FCAFE3568E234787EDFDA12460BD8931B17FE6A729DCD60FAD845558DA1'
+          ]
+        },
+        {
+          denom: 'vdl',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/2E537B6325ADAFDE0B37F1609B8BC8F46B07C5030B3B97F15719B797EE1F1121',
+      name: 'Vidulum',
+      display: 'vdl',
+      symbol: 'VDL',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-123',
+            base_denom:
+              'ibc/1BCF1FCAFE3568E234787EDFDA12460BD8931B17FE6A729DCD60FAD845558DA1',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-45'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
+      },
+      images: [
+        {
+          image_sync: {
+            chain_name: 'vidulum',
+            base_denom: 'uvdl'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
+        }
+      ]
+    },
+    {
       description: 'The native token of Axelar',
       denom_units: [
         {
@@ -31,6 +181,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
         }
       ],
+      socials: {
+        webiste: 'https://axelar.network/',
+        twitter: 'https://twitter.com/axelarnetwork'
+      },
       traces: [
         {
           type: 'ibc',
@@ -1484,6 +1638,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png'
         }
       ],
+      socials: {
+        webiste: 'https://celestia.org/',
+        twitter: 'https://twitter.com/CelestiaOrg'
+      },
       traces: [
         {
           type: 'ibc',
@@ -1527,6 +1685,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
         }
       ],
+      socials: {
+        webiste: 'https://cosmos.network',
+        twitter: 'https://twitter.com/cosmoshub'
+      },
       traces: [
         {
           type: 'ibc',
@@ -1665,6 +1827,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg'
         }
       ],
+      socials: {
+        webiste: 'https://evmos.org/',
+        twitter: 'https://twitter.com/EvmosOrg'
+      },
       traces: [
         {
           type: 'ibc',
@@ -1842,6 +2008,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg'
         }
       ],
+      socials: {
+        webiste: 'https://www.kava.io/',
+        twitter: 'https://twitter.com/KAVA_CHAIN'
+      },
       traces: [
         {
           type: 'ibc',
@@ -2059,6 +2229,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg'
         }
       ],
+      socials: {
+        webiste: 'https://kujira.network/',
+        twitter: 'https://twitter.com/TeamKujira'
+      },
       traces: [
         {
           type: 'ibc',
@@ -3478,6 +3652,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg'
         }
       ],
+      socials: {
+        webiste: 'https://neutron.org/',
+        twitter: 'https://twitter.com/Neutron_org'
+      },
       traces: [
         {
           type: 'ibc',
@@ -4841,6 +5019,10 @@ const assets: AssetList = {
       ],
       coingecko_id: 'osmosis',
       keywords: ['dex', 'staking'],
+      socials: {
+        webiste: 'https://osmosis.zone',
+        twitter: 'https://twitter.com/osmosiszone'
+      },
       traces: [
         {
           type: 'ibc',
@@ -4884,7 +5066,11 @@ const assets: AssetList = {
         }
       ],
       coingecko_id: 'ion',
-      keywords: ['memecoin'],
+      keywords: ['memecoin', 'defi'],
+      socials: {
+        webiste: 'https://ion.wtf',
+        twitter: 'https://twitter.com/_IONDAO'
+      },
       traces: [
         {
           type: 'ibc',
@@ -18454,6 +18640,49 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'The memecoin built for the Celestia community',
+      denom_units: [
+        {
+          denom:
+            'ibc/895D502280E6C6EB4DCD6F5591231DAC2072890F67D5422BD5004D0747496F3B',
+          exponent: 0,
+          aliases: ['factory/osmo1nr8zfakf6jauye3uqa9lrmr5xumee5n42lv92z/toro']
+        },
+        {
+          denom: 'toro',
+          exponent: 6
+        }
+      ],
+      type_asset: 'sdk.coin',
+      address: 'osmo1nr8zfakf6jauye3uqa9lrmr5xumee5n42lv92z',
+      base: 'ibc/895D502280E6C6EB4DCD6F5591231DAC2072890F67D5422BD5004D0747496F3B',
+      name: 'TORO',
+      display: 'toro',
+      symbol: 'TORO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/toro.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/toro.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-19774',
+            base_denom:
+              'factory/osmo1nr8zfakf6jauye3uqa9lrmr5xumee5n42lv92z/toro',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-2'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Secret Network',
       denom_units: [
         {
@@ -18482,6 +18711,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
         }
       ],
+      socials: {
+        webiste: 'https://scrt.network/',
+        twitter: 'https://twitter.com/SecretNetwork'
+      },
       traces: [
         {
           type: 'ibc',
@@ -18525,6 +18758,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
         }
       ],
+      socials: {
+        webiste: 'https://stride.zone/',
+        twitter: 'https://twitter.com/stride_zone'
+      },
       traces: [
         {
           type: 'ibc',

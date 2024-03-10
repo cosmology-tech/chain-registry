@@ -91,7 +91,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/D0760CFDA2FE5D16DA23234E87519AB9A6601DCC242B6D18A55A092ED945B5BB',
+            'ibc/40BDF4D1CFC245BA82B7F75833B27E7BEDE1ED37D061085E9ED629B6AE67699A',
           exponent: 0,
           aliases: ['ulava']
         },
@@ -100,7 +100,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/D0760CFDA2FE5D16DA23234E87519AB9A6601DCC242B6D18A55A092ED945B5BB',
+      base: 'ibc/40BDF4D1CFC245BA82B7F75833B27E7BEDE1ED37D061085E9ED629B6AE67699A',
       name: 'LAVA',
       display: 'lava',
       symbol: 'LAVA',
@@ -117,12 +117,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-1',
+            channel_id: 'channel-4',
             base_denom: 'ulava',
             chain_name: 'lavatestnet2'
           },
           chain: {
-            channel_id: 'channel-418'
+            channel_id: 'channel-444'
           }
         }
       ]

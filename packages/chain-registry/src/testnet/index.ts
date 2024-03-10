@@ -86,6 +86,7 @@ export * as ulastestnet from './ulastestnet';
 export * as uniontestnet from './uniontestnet';
 export * as upticktestnet from './upticktestnet';
 export * as vincechaintestnet from './vincechaintestnet';
+export * as wardenprotocoltestnet from './wardenprotocoltestnet';
 export * as wavehashtestnet from './wavehashtestnet';
 export * as xiontestnet from './xiontestnet';
 export * as zetachaintestnet from './zetachaintestnet';

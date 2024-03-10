@@ -29,7 +29,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://www.sei.io/',
+        twitter: 'https://twitter.com/SeiNetwork'
+      }
     },
     {
       description:

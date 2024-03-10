@@ -29,7 +29,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://neutron.org/',
+        twitter: 'https://twitter.com/Neutron_org'
+      }
     },
     {
       description: 'IBC uatom through cosmoshub-4 transfer/channel-1',

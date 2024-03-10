@@ -29,7 +29,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://www.terra.money/',
+        twitter: 'https://twitter.com/terra_money'
+      }
     },
     {
       description:
@@ -60,7 +64,11 @@ const info: AssetList = {
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/astro.png'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://astroport.finance/',
+        twitter: 'https://twitter.com/astroport_fi'
+      }
     },
     {
       description:

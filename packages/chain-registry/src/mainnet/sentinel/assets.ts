@@ -29,7 +29,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://www.sentinel.co/',
+        twitter: 'https://twitter.com/SentinelVPN'
+      }
     }
   ]
 };

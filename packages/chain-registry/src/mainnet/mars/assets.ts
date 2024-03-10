@@ -29,7 +29,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://www.marsprotocol.io/',
+        twitter: 'https://twitter.com/mars_protocol'
+      }
     }
   ]
 };

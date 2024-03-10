@@ -32,7 +32,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gitopia/images/gitopia.png'
         }
       ],
-      coingecko_id: 'gitopia'
+      coingecko_id: 'gitopia',
+      socials: {
+        webiste: 'https://gitopia.com/',
+        twitter: 'https://twitter.com/gitopiaDAO'
+      }
     }
   ]
 };

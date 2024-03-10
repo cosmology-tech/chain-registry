@@ -29,7 +29,11 @@ const info: AssetList = {
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
         }
-      ]
+      ],
+      socials: {
+        webiste: 'https://quicksilver.zone/',
+        twitter: 'https://twitter.com/quicksilverzone'
+      }
     },
     {
       description: 'Quicksilver Liquid Staked STARS',
