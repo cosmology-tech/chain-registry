@@ -28,3 +28,5 @@ jobs:
         run: cd ./packages/keplr && yarn test
       - name: utils
         run: cd ./packages/utils && yarn test
+      - name: client
+        run: cd ./packages/client && yarn test
