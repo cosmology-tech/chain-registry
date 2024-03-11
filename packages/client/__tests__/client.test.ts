@@ -1,6 +1,6 @@
 import { ChainRegistryClient } from '../src/client';
 
-const timeout = 5000;
+const timeout = 30000;
 
 describe('Test client', () => {
   let client: ChainRegistryClient;

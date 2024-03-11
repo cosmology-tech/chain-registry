@@ -1,6 +1,6 @@
 import { ChainRegistryClient } from '../src';
 
-const timeout = 5000;
+const timeout = 30000;
 const urls = [
   'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/chain.json',
   'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/assetlist.json',

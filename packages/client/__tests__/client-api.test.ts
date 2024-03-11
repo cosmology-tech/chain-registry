@@ -2,7 +2,7 @@ import request from 'supertest';
 
 import { ChainRegistryClient } from '../src/client';
 
-const timeout = 5000;
+const timeout = 30000;
 const host = 'https://raw.githubusercontent.com';
 
 describe('Test chain registry urls', () => {
