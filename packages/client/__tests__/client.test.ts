@@ -5,9 +5,9 @@ const timeout = 30000;
 describe('Test client', () => {
   let client: ChainRegistryClient;
 
-  beforeAll((done) => {
+  beforeAll(async () => {
     client = new ChainRegistryClient({ chainNames: ['osmosis'] });
-    client.fetch().then(() => done());
+    await client.fetch();
   }, timeout);
 
   it('Test fetching chain', () => {
@@ -15,16 +15,20 @@ describe('Test client', () => {
     expect(chain?.chain_name).toEqual('osmosis');
   });
 
-  it('Test fetching chain ibc info', async () => {
-    expect(client.ibcInfo.length).toEqual(0);
+  it(
+    'Test fetching chain ibc info',
+    async () => {
+      expect(client.ibcInfo.length).toEqual(0);
 
-    await client.fetch({ chainNames: ['juno'] });
+      await client.fetch({ chainNames: ['juno'] });
 
-    expect(client.urls.length).toEqual(5);
-    expect(client.chains.length).toEqual(2);
-    expect(client.ibcInfo.length).toEqual(1);
-    expect(client.ibcInfo[0].chain_1.chain_name).toEqual('juno');
-  });
+      expect(client.urls.length).toEqual(5);
+      expect(client.chains.length).toEqual(2);
+      expect(client.ibcInfo.length).toEqual(1);
+      expect(client.ibcInfo[0].chain_1.chain_name).toEqual('juno');
+    },
+    timeout
+  );
 
   it('Test fetching asset list', () => {
     const chainData = client.getChainFullData('osmosis');
