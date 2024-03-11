@@ -1,5 +1,7 @@
 import { ChainRegistryClient, ChainUtils } from '../src';
 
+const timeout = 30000;
+
 describe('tests for asset-list-util', () => {
   let utils: ChainUtils;
 
@@ -14,7 +16,7 @@ describe('tests for asset-list-util', () => {
       assetList,
       ibcAssetList
     });
-  });
+  }, timeout);
 
   it('getAssetByDenom', () => {
     const asset = utils.getAssetByDenom('uosmo');

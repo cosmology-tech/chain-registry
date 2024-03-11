@@ -21,18 +21,22 @@ describe('Test client', () => {
   let client: ChainRegistryClient;
 
   beforeAll(async () => {
-    nockByChainName('osmosis');
-    client = new ChainRegistryClient({ chainNames: ['osmosis'] });
+    nockByChainName('stargaze');
+    client = new ChainRegistryClient({ chainNames: ['stargaze'] });
     await client.fetch();
   });
 
+  afterAll(() => {
+    nock.restore();
+  });
+
   it('Test mock fetching chain data', () => {
-    const chainData = client.getChain('osmosis');
-    expect(chainData?.chain_name).toEqual('osmosis');
+    const chainData = client.getChain('stargaze');
+    expect(chainData?.chain_name).toEqual('stargaze');
   });
 
   it('Test mock fetching asset list', () => {
-    const assetList = client.getChainAssetList('osmosis');
-    expect(assetList?.assets.length).toEqual(3);
+    const assetList = client.getChainAssetList('stargaze');
+    expect(assetList?.assets.length).toEqual(1);
   });
 });
