@@ -24,6 +24,7 @@ import _cerberus from './cerberus';
 import _chain4energy from './chain4energy';
 import _cheqd from './cheqd';
 import _chihuahua from './chihuahua';
+import _cifer from './cifer';
 import _comdex from './comdex';
 import _composable from './composable';
 import _coreum from './coreum';
@@ -149,6 +150,7 @@ const assets: AssetList[] = [
   _chain4energy,
   _cheqd,
   _chihuahua,
+  _cifer,
   _comdex,
   _composable,
   _coreum,

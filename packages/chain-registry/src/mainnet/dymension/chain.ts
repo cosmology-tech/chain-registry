@@ -145,6 +145,10 @@ const info: Chain = {
       {
         address: 'https://rpc.dymension.node75.org',
         provider: 'Pro-Nodes75'
+      },
+      {
+        address: 'https://rpc.dymension.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ],
     rest: [
@@ -251,6 +255,10 @@ const info: Chain = {
       {
         address: 'https://api.dymension.node75.org',
         provider: 'Pro-Nodes75'
+      },
+      {
+        address: 'https://lcd.dymension.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ],
     grpc: [
@@ -329,6 +337,10 @@ const info: Chain = {
       {
         address: 'https://grpc.dymension.posthuman.digital',
         provider: 'posthuman'
+      },
+      {
+        address: 'https://grpc.dymension.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ],
     'evm-http-jsonrpc': [

@@ -22,6 +22,7 @@ export * as cerberus from './cerberus';
 export * as chain4energy from './chain4energy';
 export * as cheqd from './cheqd';
 export * as chihuahua from './chihuahua';
+export * as cifer from './cifer';
 export * as comdex from './comdex';
 export * as composable from './composable';
 export * as coreum from './coreum';
