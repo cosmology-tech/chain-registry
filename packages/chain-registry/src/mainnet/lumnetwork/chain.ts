@@ -40,7 +40,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://node0.mainnet.lum.network/rpc',
+        address: 'https://rpc.node0.mainnet.lum.network',
         provider: 'Lum Foundation'
       },
       {
@@ -66,7 +66,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://node0.mainnet.lum.network/rest',
+        address: 'https://rest.node0.mainnet.lum.network',
         provider: 'Lum Foundation'
       },
       {

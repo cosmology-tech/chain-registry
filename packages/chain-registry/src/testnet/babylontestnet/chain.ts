@@ -5,8 +5,9 @@ const info: Chain = {
   status: 'live',
   website: 'https://www.babylonchain.io',
   network_type: 'testnet',
-  pretty_name: 'Babylon Testnet',
-  chain_id: 'bbn-test1',
+  pretty_name: 'Babylon Testnet 3',
+  chain_id: 'bbn-test3',
+  pre_fork_chain_name: 'babylontestnet1',
   bech32_prefix: 'bbn',
   daemon_name: 'babylond',
   node_home: '$HOME/.babylond',
@@ -27,18 +28,18 @@ const info: Chain = {
   },
   codebase: {},
   logo_URIs: {
-    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/babylon/images/logo.svg'
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/babylontestnet/images/logo.svg'
   },
   apis: {
     rpc: [
       {
-        address: 'rpc.testnet.babylonchain.io:26657',
+        address: 'rpc.testnet3.babylonchain.io:443',
         provider: 'Babylon foundation'
       }
     ],
     rest: [
       {
-        address: 'rpc.testnet.babylonchain.io:1317',
+        address: 'lcd.testnet3.babylonchain.io:443',
         provider: 'Babylon foundation'
       }
     ],
@@ -51,13 +52,13 @@ const info: Chain = {
     },
     {
       kind: 'explorers.guru',
-      url: 'https://babylon.explorers.guru',
-      tx_page: 'https://babylon.explorers.guru/transaction/${txHash}'
+      url: 'https://testnet.babylon.explorers.guru',
+      tx_page: 'https://testnet.babylon.explorers.guru/transaction/${txHash}'
     }
   ],
   images: [
     {
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/babylon/images/logo.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/babylontestnet/images/logo.svg'
     }
   ],
   slip44: 118

@@ -24,6 +24,7 @@ import _cerberus from './cerberus';
 import _chain4energy from './chain4energy';
 import _cheqd from './cheqd';
 import _chihuahua from './chihuahua';
+import _cifer from './cifer';
 import _comdex from './comdex';
 import _composable from './composable';
 import _coreum from './coreum';
@@ -74,6 +75,7 @@ import _meme from './meme';
 import _microtick from './microtick';
 import _migaloo from './migaloo';
 import _neutron from './neutron';
+import _nibiru from './nibiru';
 import _noble from './noble';
 import _nois from './nois';
 import _nolus from './nolus';
@@ -149,6 +151,7 @@ const assets: AssetList[] = [
   _chain4energy,
   _cheqd,
   _chihuahua,
+  _cifer,
   _comdex,
   _composable,
   _coreum,
@@ -199,6 +202,7 @@ const assets: AssetList[] = [
   _microtick,
   _migaloo,
   _neutron,
+  _nibiru,
   _noble,
   _nois,
   _nolus,

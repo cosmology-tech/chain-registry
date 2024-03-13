@@ -5,6 +5,7 @@ export * as artelatestnet from './artelatestnet';
 export * as auratestnet from './auratestnet';
 export * as axelartestnet from './axelartestnet';
 export * as babylontestnet from './babylontestnet';
+export * as babylontestnet1 from './babylontestnet1';
 export * as bitcannadevnet from './bitcannadevnet';
 export * as cascadiatestnet from './cascadiatestnet';
 export * as celestiatestnet from './celestiatestnet';

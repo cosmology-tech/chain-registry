@@ -135,6 +135,10 @@ const info: Chain = {
       {
         address: 'https://rpc.c4e.validatus.com:443',
         provider: 'Validatus'
+      },
+      {
+        address: 'http://rpc-m.c4e.apeironnodes.com:41001',
+        provider: 'Apeiron Nodes'
       }
     ],
     rest: [
