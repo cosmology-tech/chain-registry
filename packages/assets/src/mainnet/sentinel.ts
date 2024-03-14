@@ -289,6 +289,49 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'The native token of Decentr',
+      denom_units: [
+        {
+          denom:
+            'ibc/B1C0DDB14F25279A2026BC8794E12B259F8BDA546A3C5132CCAEE4431CE36783',
+          exponent: 0,
+          aliases: ['udec']
+        },
+        {
+          denom: 'dec',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/B1C0DDB14F25279A2026BC8794E12B259F8BDA546A3C5132CCAEE4431CE36783',
+      name: 'Decentr',
+      display: 'dec',
+      symbol: 'DEC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg'
+      },
+      coingecko_id: 'decentr',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'udec',
+            chain_name: 'decentr'
+          },
+          chain: {
+            channel_id: 'channel-55'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The IRIS token is the native governance token for the IrisNet chain.',
       denom_units: [

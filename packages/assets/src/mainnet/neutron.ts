@@ -20243,6 +20243,53 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'The native token of Secret Network',
+      denom_units: [
+        {
+          denom:
+            'ibc/15EA36C3AB87E3E5E41A61717B7A20F03CC2363840C1A837A487B8BFE176328E',
+          exponent: 0,
+          aliases: ['uscrt']
+        },
+        {
+          denom: 'scrt',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/15EA36C3AB87E3E5E41A61717B7A20F03CC2363840C1A837A487B8BFE176328E',
+      name: 'Secret Network',
+      display: 'scrt',
+      symbol: 'SCRT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+      },
+      coingecko_id: 'secret',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+        }
+      ],
+      socials: {
+        webiste: 'https://scrt.network/',
+        twitter: 'https://twitter.com/SecretNetwork'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-144',
+            base_denom: 'uscrt',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            channel_id: 'channel-1551'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native staking token of Sei.',
       denom_units: [
         {
@@ -20506,6 +20553,50 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
       }
+    },
+    {
+      description:
+        'OOZARU is a meme token on SEI Network inspired by the iconic transformation in the Dragon Ball series',
+      denom_units: [
+        {
+          denom:
+            'ibc/38E2E07708E13BD81EA512BEBEF36A3CF51CD9C2B7398BC7C50935D42F298E42',
+          exponent: 0,
+          aliases: [
+            'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda'
+          ]
+        },
+        {
+          denom: 'oozaru',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/38E2E07708E13BD81EA512BEBEF36A3CF51CD9C2B7398BC7C50935D42F298E42',
+      name: 'Oozaru',
+      display: 'oozaru',
+      symbol: 'OOZARU',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oozaru.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oozaru.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-15',
+            base_denom:
+              'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda',
+            chain_name: 'sei'
+          },
+          chain: {
+            channel_id: 'channel-19'
+          }
+        }
+      ]
     },
     {
       description: 'The native token of Stargaze',
@@ -21205,6 +21296,48 @@ const assets: AssetList = {
       ]
     },
     {
+      description: "Stride's liquid staked DYM",
+      denom_units: [
+        {
+          denom:
+            'ibc/8D0C1AC5A72FB7EC187632D01BACBB68EF743CA1AF16A15C00ACBB9CF49A0070',
+          exponent: 0,
+          aliases: ['stadym']
+        },
+        {
+          denom: 'stDYM',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/8D0C1AC5A72FB7EC187632D01BACBB68EF743CA1AF16A15C00ACBB9CF49A0070',
+      name: 'Stride Staked DYM',
+      display: 'stDYM',
+      symbol: 'stDYM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-123',
+            base_denom: 'stadym',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-8'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.svg'
+        }
+      ]
+    },
+    {
       denom_units: [
         {
           denom:
@@ -21647,423 +21780,6 @@ const assets: AssetList = {
           chain: {
             port: 'transfer',
             channel_id: 'channel-52'
-          }
-        }
-      ]
-    },
-    {
-      description: 'The native token cw20 for SIENNA on Secret Network',
-      denom_units: [
-        {
-          denom:
-            'ibc/7C7D91C403F48EB73E1AF402FCDBFB2459F3963D23CD363A10FE0BC9D08B2424',
-          exponent: 0,
-          aliases: ['cw20:secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4']
-        },
-        {
-          denom: 'sienna',
-          exponent: 18
-        }
-      ],
-      type_asset: 'snip20',
-      address: 'secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4',
-      base: 'ibc/7C7D91C403F48EB73E1AF402FCDBFB2459F3963D23CD363A10FE0BC9D08B2424',
-      name: 'SIENNA',
-      display: 'sienna',
-      symbol: 'SIENNA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.svg'
-      },
-      coingecko_id: 'sienna',
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-104',
-            base_denom: 'cw20:secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-57'
-          }
-        }
-      ]
-    },
-    {
-      description: 'The native token cw20 for Shade on Secret Network',
-      denom_units: [
-        {
-          denom:
-            'ibc/C9ED06D67BE9EEB7D6FAB02182C03BFB7C4F4E288ACF70C99DA4130AF45AC81F',
-          exponent: 0,
-          aliases: ['cw20:secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d']
-        },
-        {
-          denom: 'shd',
-          exponent: 8
-        }
-      ],
-      type_asset: 'snip20',
-      address: 'secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d',
-      base: 'ibc/C9ED06D67BE9EEB7D6FAB02182C03BFB7C4F4E288ACF70C99DA4130AF45AC81F',
-      name: 'Shade (old)',
-      display: 'shd',
-      symbol: 'SHD(old)',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shdold.svg'
-      },
-      images: [
-        {
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shdold.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-104',
-            base_denom: 'cw20:secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-57'
-          }
-        }
-      ]
-    },
-    {
-      description: 'The native token cw20 for Shade on Secret Network',
-      denom_units: [
-        {
-          denom:
-            'ibc/C9EC35CF38586D2901211B819F812AA3088C248383C09722E806854EAF3D7C0C',
-          exponent: 0,
-          aliases: ['cw20:secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm']
-        },
-        {
-          denom: 'shd',
-          exponent: 8
-        }
-      ],
-      type_asset: 'snip25',
-      address: 'secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm',
-      base: 'ibc/C9EC35CF38586D2901211B819F812AA3088C248383C09722E806854EAF3D7C0C',
-      name: 'Shade',
-      display: 'shd',
-      symbol: 'SHD',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.svg'
-      },
-      coingecko_id: 'shade-protocol',
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-104',
-            base_denom: 'cw20:secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-57'
-          }
-        }
-      ]
-    },
-    {
-      description: 'The native token cw20 for Silk on Secret Network',
-      denom_units: [
-        {
-          denom:
-            'ibc/AD058E546520AB6DF039C593507C9A946CD98B0438DBAF151CF72A1EAB2A3484',
-          exponent: 0,
-          aliases: ['cw20:secret1fl449muk5yq8dlad7a22nje4p5d2pnsgymhjfd']
-        },
-        {
-          denom: 'silk',
-          exponent: 6
-        }
-      ],
-      type_asset: 'snip25',
-      address: 'secret1fl449muk5yq8dlad7a22nje4p5d2pnsgymhjfd',
-      base: 'ibc/AD058E546520AB6DF039C593507C9A946CD98B0438DBAF151CF72A1EAB2A3484',
-      name: 'Silk',
-      display: 'silk',
-      symbol: 'SILK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.svg'
-      },
-      coingecko_id: 'silk-bcec1136-561c-4706-a42c-8b67d0d7f7d2',
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-104',
-            base_denom: 'cw20:secret1fl449muk5yq8dlad7a22nje4p5d2pnsgymhjfd',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-57'
-          }
-        }
-      ]
-    },
-    {
-      description:
-        'The native token cw20 for SCRT Staking Derivatives on Secret Network',
-      denom_units: [
-        {
-          denom:
-            'ibc/C135CE91AC5FDB062265B5DAF3617777E8B5DC28B1C9F8BC2825D3EC2E387602',
-          exponent: 0,
-          aliases: ['cw20:secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4']
-        },
-        {
-          denom: 'stkd-scrt',
-          exponent: 6
-        }
-      ],
-      type_asset: 'snip20',
-      address: 'secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4',
-      base: 'ibc/C135CE91AC5FDB062265B5DAF3617777E8B5DC28B1C9F8BC2825D3EC2E387602',
-      name: 'SCRT Staking Derivatives',
-      display: 'stkd-scrt',
-      symbol: 'stkd-SCRT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.svg'
-      },
-      coingecko_id: 'stkd-scrt',
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-104',
-            base_denom: 'cw20:secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-57'
-          }
-        }
-      ]
-    },
-    {
-      description: 'The native token cw20 for Button on Secret Network',
-      denom_units: [
-        {
-          denom:
-            'ibc/2577239BDFEB560F1225AC22BA4E6192477FEB8634D9FD7214F15F93ADCF41F5',
-          exponent: 0,
-          aliases: ['cw20:secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt']
-        },
-        {
-          denom: 'butt',
-          exponent: 6
-        }
-      ],
-      type_asset: 'snip20',
-      address: 'secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt',
-      base: 'ibc/2577239BDFEB560F1225AC22BA4E6192477FEB8634D9FD7214F15F93ADCF41F5',
-      name: 'Button',
-      display: 'butt',
-      symbol: 'BUTT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'
-      },
-      coingecko_id: 'buttcoin-2',
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-104',
-            base_denom: 'cw20:secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-57'
-          }
-        }
-      ]
-    },
-    {
-      description: 'The native token cw20 for Alter on Secret Network',
-      denom_units: [
-        {
-          denom:
-            'ibc/08CFDC6BBD1B442D0EDD7CC57A24E07C41517A719B7B9CF6EB3FF27721C36F9B',
-          exponent: 0,
-          aliases: ['cw20:secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej']
-        },
-        {
-          denom: 'alter',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/08CFDC6BBD1B442D0EDD7CC57A24E07C41517A719B7B9CF6EB3FF27721C36F9B',
-      name: 'Alter',
-      display: 'alter',
-      symbol: 'ALTER',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg'
-      },
-      coingecko_id: 'alter',
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-104',
-            base_denom: 'cw20:secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-57'
-          }
-        }
-      ]
-    },
-    {
-      description: 'The native token cw20 for Amber on Secret Network',
-      denom_units: [
-        {
-          denom:
-            'ibc/FD06472CC39D0FC2FC7CE13D83E2A6271E7EB8916F54FA1F1CA15EE58D727A4B',
-          exponent: 0,
-          aliases: ['cw20:secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852']
-        },
-        {
-          denom: 'amber',
-          exponent: 6
-        }
-      ],
-      type_asset: 'snip20',
-      address: 'secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852',
-      base: 'ibc/FD06472CC39D0FC2FC7CE13D83E2A6271E7EB8916F54FA1F1CA15EE58D727A4B',
-      name: 'Amber',
-      display: 'amber',
-      symbol: 'AMBER',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.svg'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-104',
-            base_denom: 'cw20:secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-57'
-          }
-        }
-      ]
-    },
-    {
-      description: 'The native token cw20 for Shill on Secret Network',
-      denom_units: [
-        {
-          denom:
-            'ibc/DAF33D01449DF41AC692323605627F5B41BE725D1F48AB147FEB176DDB4383C2',
-          exponent: 0,
-          aliases: ['cw20:secret197dvnt9yjxwn8sjdlx05f7zuk27lsdxtfnwxse']
-        },
-        {
-          denom: 'shill',
-          exponent: 6
-        }
-      ],
-      type_asset: 'snip25',
-      address: 'secret197dvnt9yjxwn8sjdlx05f7zuk27lsdxtfnwxse',
-      base: 'ibc/DAF33D01449DF41AC692323605627F5B41BE725D1F48AB147FEB176DDB4383C2',
-      name: 'Shill',
-      display: 'shill',
-      symbol: 'SHILL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.svg'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-104',
-            base_denom: 'cw20:secret197dvnt9yjxwn8sjdlx05f7zuk27lsdxtfnwxse',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-57'
           }
         }
       ]

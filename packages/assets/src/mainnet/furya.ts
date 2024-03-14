@@ -224,6 +224,54 @@ const assets: AssetList = {
       ]
     },
     {
+      type_asset: 'sdk.coin',
+      denom_units: [
+        {
+          denom:
+            'ibc/86C68823F63A7B22D384826CACD890E35F5F26BB1CAD698CCC1CED67B6F3E1AA',
+          exponent: 0,
+          aliases: [
+            'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA'
+          ]
+        },
+        {
+          denom: 'arena',
+          exponent: 6
+        }
+      ],
+      address:
+        'juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy',
+      base: 'ibc/86C68823F63A7B22D384826CACD890E35F5F26BB1CAD698CCC1CED67B6F3E1AA',
+      name: 'Arena Token',
+      description: 'The token for the Arena DAO',
+      display: 'arena',
+      symbol: 'ARENA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-417',
+            base_denom:
+              'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-2'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The native staking and governance token of the Kujira chain.',
       denom_units: [

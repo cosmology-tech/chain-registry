@@ -131,6 +131,59 @@ const assets: AssetList = {
       ]
     },
     {
+      type_asset: 'sdk.coin',
+      denom_units: [
+        {
+          denom:
+            'ibc/8F4B563716B3ACCD722262A3C2834ECD903FC6BDC3320EA69816A68E35856C04',
+          exponent: 0,
+          aliases: [
+            'factory/juno12dgadj3wwv5jn0ec7tw5cgvq526nn4gnt2tujlmd57p2ra6k87esl36r9k/ARENA'
+          ]
+        },
+        {
+          denom: 'arena',
+          exponent: 6
+        }
+      ],
+      address:
+        'juno12dgadj3wwv5jn0ec7tw5cgvq526nn4gnt2tujlmd57p2ra6k87esl36r9k',
+      base: 'ibc/8F4B563716B3ACCD722262A3C2834ECD903FC6BDC3320EA69816A68E35856C04',
+      name: 'Arena Token',
+      description: 'The token for the Arena DAO',
+      display: 'arena',
+      symbol: 'ARENA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-877',
+            base_denom:
+              'factory/juno12dgadj3wwv5jn0ec7tw5cgvq526nn4gnt2tujlmd57p2ra6k87esl36r9k/ARENA',
+            chain_name: 'junotestnet'
+          },
+          chain: {
+            channel_id: 'channel-69'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+      },
+      images: [
+        {
+          image_sync: {
+            chain_name: 'juno',
+            base_denom:
+              'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+        }
+      ]
+    },
+    {
       description: 'The native token of Neutron chain',
       denom_units: [
         {

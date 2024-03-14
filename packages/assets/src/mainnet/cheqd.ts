@@ -14130,6 +14130,53 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'The native token of Secret Network',
+      denom_units: [
+        {
+          denom:
+            'ibc/C0DD602D2B4CA12D9BB1FEEEF23D0042473264FFB8A7D88CEDE4FAACC628FADF',
+          exponent: 0,
+          aliases: ['uscrt']
+        },
+        {
+          denom: 'scrt',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/C0DD602D2B4CA12D9BB1FEEEF23D0042473264FFB8A7D88CEDE4FAACC628FADF',
+      name: 'Secret Network',
+      display: 'scrt',
+      symbol: 'SCRT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+      },
+      coingecko_id: 'secret',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+        }
+      ],
+      socials: {
+        webiste: 'https://scrt.network/',
+        twitter: 'https://twitter.com/SecretNetwork'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-141',
+            base_denom: 'uscrt',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            channel_id: 'channel-36'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native staking token of Terra.',
       denom_units: [
         {

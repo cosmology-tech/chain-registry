@@ -72,8 +72,8 @@ const info: IBCInfo[] = [
     },
     chain_2: {
       chain_name: 'kujira',
-      client_id: '07-tendermint-15',
-      connection_id: 'connection-20'
+      client_id: '07-tendermint-20',
+      connection_id: 'connection-15'
     },
     channels: [
       {

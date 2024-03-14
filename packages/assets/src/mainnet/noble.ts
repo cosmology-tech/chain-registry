@@ -1777,6 +1777,54 @@ const assets: AssetList = {
       ]
     },
     {
+      type_asset: 'sdk.coin',
+      denom_units: [
+        {
+          denom:
+            'ibc/CCFFFD35794B39990FE77B1FD329F9621A3520DE8FB776A4740D5E6A3253A19B',
+          exponent: 0,
+          aliases: [
+            'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA'
+          ]
+        },
+        {
+          denom: 'arena',
+          exponent: 6
+        }
+      ],
+      address:
+        'juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy',
+      base: 'ibc/CCFFFD35794B39990FE77B1FD329F9621A3520DE8FB776A4740D5E6A3253A19B',
+      name: 'Arena Token',
+      description: 'The token for the Arena DAO',
+      display: 'arena',
+      symbol: 'ARENA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-224',
+            base_denom:
+              'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-3'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The native staking and governance token of the Kujira chain.',
       denom_units: [
@@ -4871,6 +4919,49 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-18'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native token of Nibiru network',
+      denom_units: [
+        {
+          denom:
+            'ibc/A77035AF12BBB11C0340BE804798C4B49F5332EA8C7523F471850C202C0742C5',
+          exponent: 0,
+          aliases: ['unibi']
+        },
+        {
+          denom: 'nibi',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/A77035AF12BBB11C0340BE804798C4B49F5332EA8C7523F471850C202C0742C5',
+      name: 'Nibiru',
+      display: 'nibi',
+      symbol: 'NIBI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.svg'
+      },
+      coingecko_id: 'nibiru',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'unibi',
+            chain_name: 'nibiru'
+          },
+          chain: {
+            channel_id: 'channel-67'
           }
         }
       ]
@@ -19742,6 +19833,50 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
       }
+    },
+    {
+      description:
+        'OOZARU is a meme token on SEI Network inspired by the iconic transformation in the Dragon Ball series',
+      denom_units: [
+        {
+          denom:
+            'ibc/9F058162A280B51EA31256997963B1F93DF5BCF024C5B141606C605478691D3A',
+          exponent: 0,
+          aliases: [
+            'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda'
+          ]
+        },
+        {
+          denom: 'oozaru',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/9F058162A280B51EA31256997963B1F93DF5BCF024C5B141606C605478691D3A',
+      name: 'Oozaru',
+      display: 'oozaru',
+      symbol: 'OOZARU',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oozaru.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oozaru.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-45',
+            base_denom:
+              'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda',
+            chain_name: 'sei'
+          },
+          chain: {
+            channel_id: 'channel-39'
+          }
+        }
+      ]
     },
     {
       description: 'The native token of Stargaze',

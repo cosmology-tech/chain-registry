@@ -165,6 +165,10 @@ const chain: Chain = {
       {
         address: 'https://rpc.cros-nest.com/osmosis',
         provider: 'Crosnest'
+      },
+      {
+        address: 'https://rpc-osmo.kewrnode.com',
+        provider: 'Kewr Node'
       }
     ],
     rest: [
@@ -255,6 +259,10 @@ const chain: Chain = {
       {
         address: 'https://rest.cros-nest.com/osmosis',
         provider: 'Crosnest'
+      },
+      {
+        address: 'https://rest-osmo.kewrnode.com',
+        provider: 'Kewr Node'
       }
     ],
     grpc: [

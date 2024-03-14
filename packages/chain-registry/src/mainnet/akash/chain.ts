@@ -29,7 +29,9 @@ const info: Chain = {
       }
     ]
   },
-  codebase: {},
+  codebase: {
+    cosmos_sdk_version: 'v0.45.16'
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
