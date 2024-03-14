@@ -658,6 +658,54 @@ const assets: AssetList = {
       ]
     },
     {
+      type_asset: 'sdk.coin',
+      denom_units: [
+        {
+          denom:
+            'ibc/C449123F321BF22DC8264805C94CE88A396A7AF2163458EBF7EFBC76516CC735',
+          exponent: 0,
+          aliases: [
+            'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA'
+          ]
+        },
+        {
+          denom: 'arena',
+          exponent: 6
+        }
+      ],
+      address:
+        'juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy',
+      base: 'ibc/C449123F321BF22DC8264805C94CE88A396A7AF2163458EBF7EFBC76516CC735',
+      name: 'Arena Token',
+      description: 'The token for the Arena DAO',
+      display: 'arena',
+      symbol: 'ARENA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-212',
+            base_denom:
+              'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Vidulum',
       denom_units: [
         {

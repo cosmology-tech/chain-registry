@@ -18233,6 +18233,50 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
       }
+    },
+    {
+      description:
+        'OOZARU is a meme token on SEI Network inspired by the iconic transformation in the Dragon Ball series',
+      denom_units: [
+        {
+          denom:
+            'ibc/4A23D62120F248EAFC835AB88EBDBA94788E4B700948086A1F5BD34E2DA81A5D',
+          exponent: 0,
+          aliases: [
+            'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda'
+          ]
+        },
+        {
+          denom: 'oozaru',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/4A23D62120F248EAFC835AB88EBDBA94788E4B700948086A1F5BD34E2DA81A5D',
+      name: 'Oozaru',
+      display: 'oozaru',
+      symbol: 'OOZARU',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oozaru.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oozaru.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-47',
+            base_denom:
+              'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda',
+            chain_name: 'sei'
+          },
+          chain: {
+            channel_id: 'channel-26'
+          }
+        }
+      ]
     }
   ]
 };

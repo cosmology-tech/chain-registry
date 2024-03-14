@@ -2856,6 +2856,54 @@ const assets: AssetList = {
       ]
     },
     {
+      type_asset: 'sdk.coin',
+      denom_units: [
+        {
+          denom:
+            'ibc/AFBEE6FC205C3532CECBC8692BBD4339DF141C008DD98564819872C315BDDE29',
+          exponent: 0,
+          aliases: [
+            'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA'
+          ]
+        },
+        {
+          denom: 'arena',
+          exponent: 6
+        }
+      ],
+      address:
+        'juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy',
+      base: 'ibc/AFBEE6FC205C3532CECBC8692BBD4339DF141C008DD98564819872C315BDDE29',
+      name: 'Arena Token',
+      description: 'The token for the Arena DAO',
+      display: 'arena',
+      symbol: 'ARENA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-71',
+            base_denom:
+              'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-4'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The native staking and governance token of the Kujira chain.',
       denom_units: [
@@ -5997,6 +6045,49 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-78'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The native token of Nibiru network',
+      denom_units: [
+        {
+          denom:
+            'ibc/52C9B73B0D9665A4FA1E973B001A83FCFF3B6062E44B564230D20536F1103112',
+          exponent: 0,
+          aliases: ['unibi']
+        },
+        {
+          denom: 'nibi',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/52C9B73B0D9665A4FA1E973B001A83FCFF3B6062E44B564230D20536F1103112',
+      name: 'Nibiru',
+      display: 'nibi',
+      symbol: 'NIBI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.svg'
+      },
+      coingecko_id: 'nibiru',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'unibi',
+            chain_name: 'nibiru'
+          },
+          chain: {
+            channel_id: 'channel-139'
           }
         }
       ]
@@ -20441,6 +20532,50 @@ const assets: AssetList = {
     },
     {
       description:
+        'OOZARU is a meme token on SEI Network inspired by the iconic transformation in the Dragon Ball series',
+      denom_units: [
+        {
+          denom:
+            'ibc/097C7F089CC601CDDB8AF64B2F5C81171619B28967F44D7E5B70F50D5CC8903E',
+          exponent: 0,
+          aliases: [
+            'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda'
+          ]
+        },
+        {
+          denom: 'oozaru',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/097C7F089CC601CDDB8AF64B2F5C81171619B28967F44D7E5B70F50D5CC8903E',
+      name: 'Oozaru',
+      display: 'oozaru',
+      symbol: 'OOZARU',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oozaru.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oozaru.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom:
+              'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda',
+            chain_name: 'sei'
+          },
+          chain: {
+            channel_id: 'channel-103'
+          }
+        }
+      ]
+    },
+    {
+      description:
         'Somm Token (SOMM) is the native staking token of the Sommelier Chain',
       denom_units: [
         {
@@ -20913,6 +21048,48 @@ const assets: AssetList = {
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/sttia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/sttia.svg'
+        }
+      ]
+    },
+    {
+      description: "Stride's liquid staked DYM",
+      denom_units: [
+        {
+          denom:
+            'ibc/BC7C43B72F3BFE01C3258AD6A3096ED1403366F1BEA54EA313E90EB3DE862A71',
+          exponent: 0,
+          aliases: ['stadym']
+        },
+        {
+          denom: 'stDYM',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/BC7C43B72F3BFE01C3258AD6A3096ED1403366F1BEA54EA313E90EB3DE862A71',
+      name: 'Stride Staked DYM',
+      display: 'stDYM',
+      symbol: 'stDYM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-69',
+            base_denom: 'stadym',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-64'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.svg'
         }
       ]
     },

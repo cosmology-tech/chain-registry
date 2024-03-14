@@ -12,7 +12,7 @@ const info: Chain = {
   bech32_prefix: 'omniflix',
   slip44: 118,
   codebase: {
-    cosmos_sdk_version: 'v0.47.9',
+    cosmos_sdk_version: 'v0.47.10',
     cosmwasm_version: 'v0.45.0'
   },
   logo_URIs: {

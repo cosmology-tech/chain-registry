@@ -952,6 +952,54 @@ const assets: AssetList = {
       ]
     },
     {
+      type_asset: 'sdk.coin',
+      denom_units: [
+        {
+          denom:
+            'ibc/1A67AFE7A75CC3D51941930A84C8650374125BD475A293CF0A52D7F5C1725F8F',
+          exponent: 0,
+          aliases: [
+            'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA'
+          ]
+        },
+        {
+          denom: 'arena',
+          exponent: 6
+        }
+      ],
+      address:
+        'juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy',
+      base: 'ibc/1A67AFE7A75CC3D51941930A84C8650374125BD475A293CF0A52D7F5C1725F8F',
+      name: 'Arena Token',
+      description: 'The token for the Arena DAO',
+      display: 'arena',
+      symbol: 'ARENA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-225',
+            base_denom:
+              'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-1'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Neutron chain.',
       denom_units: [
         {
@@ -16099,6 +16147,50 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
       }
+    },
+    {
+      description:
+        'OOZARU is a meme token on SEI Network inspired by the iconic transformation in the Dragon Ball series',
+      denom_units: [
+        {
+          denom:
+            'ibc/0241B5E88EAE12F166D9A966BECA98E2A443533960966C5E2197F652AA76582B',
+          exponent: 0,
+          aliases: [
+            'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda'
+          ]
+        },
+        {
+          denom: 'oozaru',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/0241B5E88EAE12F166D9A966BECA98E2A443533960966C5E2197F652AA76582B',
+      name: 'Oozaru',
+      display: 'oozaru',
+      symbol: 'OOZARU',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oozaru.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oozaru.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-58',
+            base_denom:
+              'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda',
+            chain_name: 'sei'
+          },
+          chain: {
+            channel_id: 'channel-43'
+          }
+        }
+      ]
     },
     {
       description: 'The native token of Stargaze',

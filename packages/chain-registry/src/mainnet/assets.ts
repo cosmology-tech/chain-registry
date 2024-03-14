@@ -77,6 +77,7 @@ import * as _konstellation from './konstellation';
 import * as _kujira from './kujira';
 import * as _kyve from './kyve';
 import * as _lambda from './lambda';
+import * as _lava from './lava';
 import * as _likecoin from './likecoin';
 import * as _logos from './logos';
 import * as _loyal from './loyal';
@@ -229,6 +230,7 @@ const assets: AssetList[] = [
   _kujira.assets,
   _kyve.assets,
   _lambda.assets,
+  _lava.assets,
   _likecoin.assets,
   _logos.assets,
   _loyal.assets,

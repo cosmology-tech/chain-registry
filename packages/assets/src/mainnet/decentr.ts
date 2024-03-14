@@ -13847,6 +13847,53 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'DVPN is the native token of the Sentinel Hub.',
+      denom_units: [
+        {
+          denom:
+            'ibc/B7489F796F582168A256F44B1B2AB93DD2E868487DA91F28FD2BA967E97F5712',
+          exponent: 0,
+          aliases: ['udvpn']
+        },
+        {
+          denom: 'dvpn',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/B7489F796F582168A256F44B1B2AB93DD2E868487DA91F28FD2BA967E97F5712',
+      name: 'Sentinel',
+      display: 'dvpn',
+      symbol: 'DVPN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg'
+      },
+      coingecko_id: 'sentinel',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg'
+        }
+      ],
+      socials: {
+        webiste: 'https://www.sentinel.co/',
+        twitter: 'https://twitter.com/SentinelVPN'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-55',
+            base_denom: 'udvpn',
+            chain_name: 'sentinel'
+          },
+          chain: {
+            channel_id: 'channel-4'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native staking token of Terra.',
       denom_units: [
         {

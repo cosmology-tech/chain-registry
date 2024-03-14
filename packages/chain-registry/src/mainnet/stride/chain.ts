@@ -93,9 +93,16 @@ const info: Chain = {
       },
       {
         denom: 'stadydx',
-        fixed_min_gas_price: 12500000000,
-        low_gas_price: 12500000000,
-        average_gas_price: 12500000000,
+        fixed_min_gas_price: 15000000000,
+        low_gas_price: 15000000000,
+        average_gas_price: 15000000000,
+        high_gas_price: 20000000000
+      },
+      {
+        denom: 'stadym',
+        fixed_min_gas_price: 15000000000,
+        low_gas_price: 15000000000,
+        average_gas_price: 15000000000,
         high_gas_price: 20000000000
       }
     ]

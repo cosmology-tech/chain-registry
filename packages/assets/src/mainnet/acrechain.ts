@@ -18074,6 +18074,48 @@ const assets: AssetList = {
       ]
     },
     {
+      description: "Stride's liquid staked DYM",
+      denom_units: [
+        {
+          denom:
+            'ibc/0A0EBCB578FCD339717D0E70C3A8FD20C641FBF191CF14FFA4BF92F8E8DE17F5',
+          exponent: 0,
+          aliases: ['stadym']
+        },
+        {
+          denom: 'stDYM',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/0A0EBCB578FCD339717D0E70C3A8FD20C641FBF191CF14FFA4BF92F8E8DE17F5',
+      name: 'Stride Staked DYM',
+      display: 'stDYM',
+      symbol: 'stDYM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-57',
+            base_denom: 'stadym',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-13'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.svg'
+        }
+      ]
+    },
+    {
       denom_units: [
         {
           denom:
