@@ -1,3 +1,3 @@
-export * from './asset-list-util';
+export * from './ibc';
 export * from './fees';
-export * from './utils';
+export * from './assets';
