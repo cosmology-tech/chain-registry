@@ -13695,6 +13695,50 @@ const assets: AssetList = {
           }
         }
       ]
+    },
+    {
+      description: 'SHARK is the apex price prediction market within Cosmos.',
+      denom_units: [
+        {
+          denom:
+            'ibc/38BEC8B42678213B7E67359033483A3106CBBA10AEB30E0C6C78949ECEA8E5CF',
+          exponent: 0,
+          aliases: [
+            'ibc/64D56DF9EC69BE554F49EBCE0199611062FF1137EF105E2F645C1997344F3834'
+          ]
+        },
+        {
+          denom: 'SHARK',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/38BEC8B42678213B7E67359033483A3106CBBA10AEB30E0C6C78949ECEA8E5CF',
+      name: 'SHARK',
+      display: 'SHARK',
+      symbol: 'SHARK',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-135',
+            base_denom:
+              'ibc/64D56DF9EC69BE554F49EBCE0199611062FF1137EF105E2F645C1997344F3834',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-2'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
+        }
+      ]
     }
   ]
 };

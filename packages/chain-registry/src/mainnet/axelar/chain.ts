@@ -30,7 +30,12 @@ const info: Chain = {
       }
     ]
   },
-  codebase: {},
+  codebase: {
+    cosmos_sdk_version:
+      'axelarnetwork/cosmos-sdk v0.45.17-0.20230904150332-37fb903a6c62',
+    cosmwasm_enabled: true,
+    cosmwasm_version: 'v0.33.0'
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axelar-chain-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axelar-chain-logo.svg'

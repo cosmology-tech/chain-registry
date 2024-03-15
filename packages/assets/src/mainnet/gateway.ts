@@ -15838,6 +15838,50 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'SHARK is the apex price prediction market within Cosmos.',
+      denom_units: [
+        {
+          denom:
+            'ibc/5F0F77462546A71E22B3ACF99A9F0B7507248B1EA13C574DB2AB7F044632F2A0',
+          exponent: 0,
+          aliases: [
+            'ibc/64D56DF9EC69BE554F49EBCE0199611062FF1137EF105E2F645C1997344F3834'
+          ]
+        },
+        {
+          denom: 'SHARK',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/5F0F77462546A71E22B3ACF99A9F0B7507248B1EA13C574DB2AB7F044632F2A0',
+      name: 'SHARK',
+      display: 'SHARK',
+      symbol: 'SHARK',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2186',
+            base_denom:
+              'ibc/64D56DF9EC69BE554F49EBCE0199611062FF1137EF105E2F645C1997344F3834',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-3'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
+        }
+      ]
+    },
+    {
       description: 'The native token of Stargaze',
       denom_units: [
         {
