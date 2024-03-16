@@ -8,6 +8,7 @@ import * as _chain4energytestnet from './chain4energytestnet';
 import * as _composabletestnet from './composabletestnet';
 import * as _cosmoshubtestnet from './cosmoshubtestnet';
 import * as _doravotatestnet from './doravotatestnet';
+import * as _elystestnet from './elystestnet';
 import * as _empowertestnet from './empowertestnet';
 import * as _entrypointtestnet from './entrypointtestnet';
 import * as _impacthubtestnet from './impacthubtestnet';
@@ -33,6 +34,7 @@ const ibc: IBCInfo[] = [
   ..._composabletestnet.ibc_chain1,
   ..._cosmoshubtestnet.ibc_chain1,
   ..._doravotatestnet.ibc_chain1,
+  ..._elystestnet.ibc_chain1,
   ..._empowertestnet.ibc_chain1,
   ..._entrypointtestnet.ibc_chain1,
   ..._impacthubtestnet.ibc_chain1,

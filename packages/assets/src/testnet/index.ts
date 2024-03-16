@@ -7,6 +7,7 @@ export * as composabletestnet from './composabletestnet';
 export * as cosmoshubtestnet from './cosmoshubtestnet';
 export * as doravotatestnet from './doravotatestnet';
 export * as dydxtestnet from './dydxtestnet';
+export * as elystestnet from './elystestnet';
 export * as empowertestnet from './empowertestnet';
 export * as entrypointtestnet from './entrypointtestnet';
 export * as impacthubtestnet from './impacthubtestnet';

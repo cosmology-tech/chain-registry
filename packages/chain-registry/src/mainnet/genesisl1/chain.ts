@@ -8,7 +8,7 @@ const info: Chain = {
   chain_id: 'genesis_29-2',
   bech32_prefix: 'genesis',
   daemon_name: 'genesisd',
-  node_home: '$HOME/.genesisd',
+  node_home: '$HOME/.genesis',
   slip44: 118,
   fees: {
     fee_tokens: [
@@ -27,7 +27,9 @@ const info: Chain = {
       }
     ]
   },
-  codebase: {},
+  codebase: {
+    cosmos_sdk_version: '0.46.15'
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.svg'
@@ -42,6 +44,16 @@ const info: Chain = {
     rest: [
       {
         address: 'https://api.genesisl1.org',
+        provider: 'GenesisL1'
+      },
+      {
+        address: 'https://1317.genesisl1.org',
+        provider: 'GenesisL1'
+      }
+    ],
+    'evm-http-jsonrpc': [
+      {
+        address: 'https://rpc.genesisl1.org',
         provider: 'GenesisL1'
       }
     ]

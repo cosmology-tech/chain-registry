@@ -223,6 +223,24 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-1559',
+          port_id:
+            'wasm.neutron14cwv7d4lwc69zrjrzywwh8c9327m8dpngpq52f5kgqephhgrjc2s9ry3eu'
+        },
+        chain_2: {
+          channel_id: 'channel-48',
+          port_id:
+            'wasm.nois1acyc05v6fgcdgj88nmz2t40aex9nlnptqpwp5hf8hwg7rhce9uuqgqz5wp'
+        },
+        ordering: 'unordered',
+        version: 'nois-v7',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
       }
     ]
   },
