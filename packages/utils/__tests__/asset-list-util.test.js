@@ -5,11 +5,11 @@ import {
   convertCoinGeckoPricesToDenomPriceMap,
   convertDollarValueToDenomUnits,
   getAssetByDenom,
-  getChainDenomBySymbol,
+  getDenomBySymbol,
   getCoinGeckoIdByDenom,
   getDenomByCoinGeckoId,
   getExponentByDenom,
-  getSymbolByChainDenom,
+  getSymbolByDenom,
   noDecimals
 } from '../src';
 
@@ -31,17 +31,17 @@ describe('tests for asset-list-util', () => {
     expect(denom2).toEqual('ustars');
   });
 
-  it('getSymbolByChainDenom', () => {
-    const denom1 = getSymbolByChainDenom(assets, 'swth');
+  it('getSymbolByDenom', () => {
+    const denom1 = getSymbolByDenom(assets, 'swth');
     expect(denom1).toEqual('SWTH');
-    const denom2 = getSymbolByChainDenom(assets, 'uusdc', 'axelar');
+    const denom2 = getSymbolByDenom(assets, 'uusdc', 'axelar');
     expect(denom2).toEqual('USDC');
   });
 
-  it('getChainDenomBySymbol', () => {
-    const denom1 = getChainDenomBySymbol(assets, 'OCTA');
+  it('getDenomBySymbol', () => {
+    const denom1 = getDenomBySymbol(assets, 'OCTA');
     expect(denom1).toEqual('uocta');
-    const denom2 = getChainDenomBySymbol(assets, 'NOM', 'nomic');
+    const denom2 = getDenomBySymbol(assets, 'NOM', 'nomic');
     expect(denom2).toEqual('unom');
   });
 
@@ -119,6 +119,6 @@ describe('getCoinGeckoIdByDenom', () => {
         return !asset.traces;
       }
     });
-    expect(id).toBeNull();
+    expect(id).toBeUndefined();
   });
 });

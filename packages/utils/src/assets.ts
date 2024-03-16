@@ -1,24 +1,15 @@
 import { Asset, AssetDenomUnit, AssetList } from '@chain-registry/types';
 import BigNumber from 'bignumber.js';
 
-export type CoinDenom = AssetDenomUnit['denom'];
+type Denom = AssetDenomUnit['denom'];
+type Exponent = AssetDenomUnit['exponent'];
 
-export type Exponent = AssetDenomUnit['exponent'];
-
-export interface CoinGeckoUSD {
-  usd: number;
-}
-
-export interface PriceHash {
-  [key: CoinDenom]: number;
-}
-
-function getAssetByKeyValue(
+const getAssetByKeyValue = (
   assets: AssetList[],
   key: keyof Asset,
   value: string,
   chainName?: string
-): Asset {
+): Asset | undefined => {
   const filteredAssets = assets
     .filter(({ chain_name }) => !chainName || chain_name === chainName)
     .flatMap(({ assets }) => assets);
@@ -26,34 +17,42 @@ function getAssetByKeyValue(
   const matchingAssets = filteredAssets.filter((asset) => asset[key] === value);
 
   if (matchingAssets.length === 0) {
-    throw new Error(`No asset found for ${key} '${value}'`);
+    return undefined;
   }
 
   if (matchingAssets.length > 1) {
     throw new Error(
-      `Ambiguity: ${matchingAssets.length} assets found for ${key} '${value}'`
+      `Ambiguity: ${matchingAssets.length} assets found for ${key}: ${value}`
     );
   }
 
   return matchingAssets[0];
-}
+};
 
-export function getAssetByDenom(
+export const getAssetByDenom = (
   assets: AssetList[],
-  denom: CoinDenom,
+  denom: Denom,
   chainName?: string
-): Asset {
+): Asset | undefined => {
   return getAssetByKeyValue(assets, 'base', denom, chainName);
-}
+};
 
-export function getDenomByCoinGeckoId(
+export const getAssetBySymbol = (
+  assets: AssetList[],
+  symbol: string,
+  chainName?: string
+): Asset | undefined => {
+  return getAssetByKeyValue(assets, 'symbol', symbol, chainName);
+};
+
+export const getDenomByCoinGeckoId = (
   assets: AssetList[],
   coinGeckoId: string,
   chainName?: string
-): CoinDenom {
+): Denom | undefined => {
   return getAssetByKeyValue(assets, 'coingecko_id', coinGeckoId, chainName)
-    .base;
-}
+    ?.base;
+};
 
 type GetCoinGeckoIdByDenomOptions = {
   chainName?: string;
@@ -62,16 +61,16 @@ type GetCoinGeckoIdByDenomOptions = {
   excludedChainNames?: string[];
 };
 
-export function getCoinGeckoIdByDenom(
+export const getCoinGeckoIdByDenom = (
   assets: AssetList[],
-  denom: CoinDenom,
+  denom: Denom,
   {
     chainName,
     allowTestnet = false,
     customAssetFilter = () => true,
     excludedChainNames = []
   }: GetCoinGeckoIdByDenomOptions = {}
-): string | null {
+): string | undefined => {
   const filteredAssetLists = assets.filter(({ chain_name }) => {
     return (
       (!chainName || chain_name === chainName) &&
@@ -87,86 +86,127 @@ export function getCoinGeckoIdByDenom(
 
   const asset = filteredAssets.find(({ base }) => base === denom);
 
-  return asset?.coingecko_id ?? null;
-}
+  return asset?.coingecko_id;
+};
 
-export function getSymbolByChainDenom(
+export const getSymbolByDenom = (
   assets: AssetList[],
-  denom: CoinDenom,
+  denom: Denom,
   chainName?: string
-): string {
-  return getAssetByDenom(assets, denom, chainName).symbol;
-}
+): string | undefined => {
+  return getAssetByDenom(assets, denom, chainName)?.symbol;
+};
 
-export function getChainDenomBySymbol(
+export const getDenomBySymbol = (
   assets: AssetList[],
   symbol: string,
   chainName?: string
-): CoinDenom {
-  return getAssetByKeyValue(assets, 'symbol', symbol, chainName).base;
-}
+): Denom | undefined => {
+  return getAssetByKeyValue(assets, 'symbol', symbol, chainName)?.base;
+};
 
-export function getExponentByDenom(
+export const getExponentFromAsset = (asset: Asset) => {
+  return asset.denom_units.find(({ denom }) => denom === asset.display)
+    ?.exponent;
+};
+
+export const getExponentByDenom = (
   assets: AssetList[],
-  denom: CoinDenom,
+  denom: Denom,
   chainName?: string
-): Exponent {
+): Exponent | undefined => {
   const asset = getAssetByDenom(assets, denom, chainName);
-  const unit = asset.denom_units.find(({ denom }) => denom === asset.display);
-  return unit?.exponent ?? 0;
+  return asset ? getExponentFromAsset(asset) : undefined;
+};
+
+export const getExponentBySymbol = (
+  assets: AssetList[],
+  symbol: string,
+  chainName?: string
+): Exponent | undefined => {
+  const asset = getAssetBySymbol(assets, symbol, chainName);
+  return asset ? getExponentFromAsset(asset) : undefined;
+};
+
+export interface CoinGeckoUSD {
+  usd: number;
 }
 
-export function convertCoinGeckoPricesToDenomPriceMap(
+export interface PriceHash {
+  [key: Denom]: number;
+}
+
+export const convertCoinGeckoPricesToDenomPriceMap = (
   assets: AssetList[],
   prices: Record<string, CoinGeckoUSD>
-): PriceHash {
+): PriceHash => {
   return Object.keys(prices).reduce((res: PriceHash, geckoId) => {
     const denom = getDenomByCoinGeckoId(assets, geckoId);
+    if (!denom) {
+      throw new Error(`No denom found for CoinGecko ID: ${geckoId}`);
+    }
     res[denom] = prices[geckoId].usd;
     return res;
   }, {});
-}
+};
 
-export function noDecimals(num: number | string): string {
+export const noDecimals = (num: number | string): string => {
   return new BigNumber(num).decimalPlaces(0, BigNumber.ROUND_DOWN).toString();
-}
+};
 
-export function convertBaseUnitsToDollarValue(
+export const convertBaseUnitsToDollarValue = (
   assets: AssetList[],
   prices: PriceHash,
   symbol: string,
   amount: string | number,
   chainName?: string
-): string {
-  const denom = getChainDenomBySymbol(assets, symbol, chainName);
+): string => {
+  const asset = getAssetBySymbol(assets, symbol, chainName);
+  const denom = asset?.base;
+  const exponent = asset ? getExponentFromAsset(asset) : undefined;
+
+  if (!denom || !exponent) {
+    throw new Error(`No denom or exponent found for symbol: ${symbol}`);
+  }
+
   return new BigNumber(amount)
-    .shiftedBy(-getExponentByDenom(assets, denom, chainName))
+    .shiftedBy(-exponent)
     .multipliedBy(prices[denom])
     .toString();
-}
+};
 
-export function convertDollarValueToDenomUnits(
+export const convertDollarValueToDenomUnits = (
   assets: AssetList[],
   prices: PriceHash,
   symbol: string,
   value: string | number,
   chainName?: string
-): string {
-  const denom = getChainDenomBySymbol(assets, symbol, chainName);
+): string => {
+  const asset = getAssetBySymbol(assets, symbol, chainName);
+  const denom = asset?.base;
+  const exponent = asset ? getExponentFromAsset(asset) : undefined;
+
+  if (!denom || !exponent) {
+    throw new Error(`No denom or exponent found for symbol: ${symbol}`);
+  }
+
   return new BigNumber(value)
     .dividedBy(prices[denom])
-    .shiftedBy(getExponentByDenom(assets, denom, chainName))
+    .shiftedBy(exponent)
     .toString();
-}
+};
 
-export function convertBaseUnitsToDisplayUnits(
+export const convertBaseUnitsToDisplayUnits = (
   assets: AssetList[],
   symbol: string,
   amount: string | number,
   chainName?: string
-): string {
-  const denom = getChainDenomBySymbol(assets, symbol, chainName);
-  return new BigNumber(amount)
-    .shiftedBy(-getExponentByDenom(assets, denom, chainName))
-    .toString();
-}
+): string => {
+  const exponent = getExponentBySymbol(assets, symbol, chainName);
+
+  if (!exponent) {
+    throw new Error(`No exponent found for symbol: ${symbol}`);
+  }
+
+  return new BigNumber(amount).shiftedBy(-exponent).toString();
+};
