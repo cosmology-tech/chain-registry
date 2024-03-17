@@ -66,10 +66,6 @@ const info: Chain = {
       {
         address: 'https://rpc-test.cascadia.hexnodes.co:443',
         provider: 'Hexnodes'
-      },
-      {
-        address: 'https://cascadia.rpc.liveraven.net:443',
-        provider: 'LiveRaveN'
       }
     ],
     grpc: [
@@ -88,10 +84,6 @@ const info: Chain = {
       {
         address: 'grpc-test.cascadia.hexnodes.co:19090',
         provider: 'Hexnodes'
-      },
-      {
-        address: 'cascadia.grpc.liveraven.net:443',
-        provider: 'LiveRaveN'
       }
     ],
     rest: [
@@ -110,10 +102,6 @@ const info: Chain = {
       {
         address: 'https://lcd-test.cascadia.hexnodes.co',
         provider: 'Hexnodes'
-      },
-      {
-        address: 'https://cascadia.api.liveraven.net:443',
-        provider: 'LiveRaveN'
       }
     ]
   },

@@ -45,6 +45,10 @@ const info: Chain = {
       {
         address: 'https://zetachain-rpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'https://rpc.zetachain.nodestake.org',
+        provider: 'NodeStake'
       }
     ],
     rest: [
@@ -59,12 +63,20 @@ const info: Chain = {
       {
         address: 'https://zetachain-api.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'https://api.zetachain.nodestake.org',
+        provider: 'NodeStake'
       }
     ],
     grpc: [
       {
         address: 'https://zetachain-grpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'https://grpc.zetachain.nodestake.org:443',
+        provider: 'NodeStake'
       }
     ]
   },
@@ -78,6 +90,11 @@ const info: Chain = {
       kind: 'BlockScout',
       url: 'https://zetachain.blockscout.com/',
       tx_page: 'https://zetachain.blockscout.com/tx/${txHash}'
+    },
+    {
+      kind: 'NodeStake Explorer',
+      url: 'https://explorer.nodestake.org/zetachain',
+      tx_page: 'https://explorer.nodestake.org/zetachain/tx/${txHash}'
     }
   ]
 };

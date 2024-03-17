@@ -100,7 +100,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/799FDD409719A1122586A629AE8FCA17380351A51C1F47A80A1B8E7F2A491098',
+            'ibc/3B6578698023BE802272D184CCA5B84C865546467D0548EC148ECEB91C6F714C',
           exponent: 0,
           aliases: ['uakt']
         },
@@ -109,7 +109,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/799FDD409719A1122586A629AE8FCA17380351A51C1F47A80A1B8E7F2A491098',
+      base: 'ibc/3B6578698023BE802272D184CCA5B84C865546467D0548EC148ECEB91C6F714C',
       name: 'Akash Network',
       display: 'akt',
       symbol: 'AKT',
@@ -132,12 +132,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6',
+            channel_id: 'channel-127',
             base_denom: 'uakt',
             chain_name: 'akash'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-213'
           }
         }
       ]
@@ -147,7 +147,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/115F68FBA220A028C6F6ED08EA0C1A9C8C52798B14FB66E6C89D5D8C06A524D4',
+            'ibc/3F9039B263FEF388106F5B86A28DCE9A3D071D9AC8713C4C5B92BC7D8FC4D347',
           exponent: 0,
           aliases: [
             'ibc/05DB6975261B805B6F6A157A4386C627F8A70BF8118D411655EFEDCA82BFABA5'
@@ -159,7 +159,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/115F68FBA220A028C6F6ED08EA0C1A9C8C52798B14FB66E6C89D5D8C06A524D4',
+      base: 'ibc/3F9039B263FEF388106F5B86A28DCE9A3D071D9AC8713C4C5B92BC7D8FC4D347',
       name: 'Tether USDt',
       display: 'usdt',
       symbol: 'USDt',
@@ -167,13 +167,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6',
+            channel_id: 'channel-127',
             base_denom:
               'ibc/05DB6975261B805B6F6A157A4386C627F8A70BF8118D411655EFEDCA82BFABA5',
             chain_name: 'akash'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-213'
           }
         }
       ],
@@ -18980,6 +18980,50 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-6'
           }
+        }
+      ]
+    },
+    {
+      description: 'SHARK is the apex price prediction market within Cosmos.',
+      denom_units: [
+        {
+          denom:
+            'ibc/95B15110C8BA3B330F4E24878A0E67A27CF51E15B69BF9BC023DA71CC3682FAC',
+          exponent: 0,
+          aliases: [
+            'ibc/64D56DF9EC69BE554F49EBCE0199611062FF1137EF105E2F645C1997344F3834'
+          ]
+        },
+        {
+          denom: 'SHARK',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/95B15110C8BA3B330F4E24878A0E67A27CF51E15B69BF9BC023DA71CC3682FAC',
+      name: 'SHARK',
+      display: 'SHARK',
+      symbol: 'SHARK',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom:
+              'ibc/64D56DF9EC69BE554F49EBCE0199611062FF1137EF105E2F645C1997344F3834',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-6'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
         }
       ]
     },
