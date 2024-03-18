@@ -16730,6 +16730,49 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'The Original Meme Coin on SEI Network',
+      denom_units: [
+        {
+          denom:
+            'ibc/B61F272C20D301DD6D0C036BDCDF8CD83A95EE594FBDD9977910AE69F58936D3',
+          exponent: 0,
+          aliases: [
+            'sei1hrndqntlvtmx2kepr0zsfgr7nzjptcc72cr4ppk4yav58vvy7v3s4er8ed'
+          ]
+        },
+        {
+          denom: 'SEIYAN',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/B61F272C20D301DD6D0C036BDCDF8CD83A95EE594FBDD9977910AE69F58936D3',
+      name: 'SEIYAN',
+      display: 'SEIYAN',
+      symbol: 'SEIYAN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/SEIYAN.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/SEIYAN.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'sei1hrndqntlvtmx2kepr0zsfgr7nzjptcc72cr4ppk4yav58vvy7v3s4er8ed',
+            chain_name: 'sei'
+          },
+          chain: {
+            channel_id: 'channel-782'
+          }
+        }
+      ]
+    },
+    {
       description: 'DVPN is the native token of the Sentinel Hub.',
       denom_units: [
         {

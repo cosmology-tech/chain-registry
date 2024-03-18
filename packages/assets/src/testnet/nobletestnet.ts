@@ -3,6 +3,198 @@ const assets: AssetList = {
   chain_name: 'nobletestnet',
   assets: [
     {
+      description: 'The native token of Elys Network',
+      denom_units: [
+        {
+          denom:
+            'ibc/AAA364B0A1B8482ED5415078451C58C907EDE7751F9C4A7F9D0C03181D97DE39',
+          exponent: 0,
+          aliases: ['uelys']
+        },
+        {
+          denom: 'melys',
+          exponent: 3,
+          aliases: ['millielys']
+        },
+        {
+          denom: 'elys',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/AAA364B0A1B8482ED5415078451C58C907EDE7751F9C4A7F9D0C03181D97DE39',
+      name: 'Elys Network',
+      display: 'elys',
+      symbol: 'ELYS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/elystestnet/images/elys.png'
+      },
+      coingecko_id: 'elys',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/elystestnet/images/elys.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-12',
+            base_denom: 'uelys',
+            chain_name: 'elystestnet'
+          },
+          chain: {
+            channel_id: 'channel-19'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Eden token definition',
+      denom_units: [
+        {
+          denom:
+            'ibc/A9C7A16BEEEE66019AD9A2693806C72521F502714B354324688D025F0DEF19F2',
+          exponent: 0,
+          aliases: ['ueden']
+        },
+        {
+          denom: 'meden',
+          exponent: 3,
+          aliases: ['millieden']
+        },
+        {
+          denom: 'eden',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/A9C7A16BEEEE66019AD9A2693806C72521F502714B354324688D025F0DEF19F2',
+      name: 'Eden',
+      display: 'eden',
+      symbol: 'EDEN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/elystestnet/images/eden.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/elystestnet/images/eden.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-12',
+            base_denom: 'ueden',
+            chain_name: 'elystestnet'
+          },
+          chain: {
+            channel_id: 'channel-19'
+          }
+        }
+      ]
+    },
+    {
+      description: 'USDC from Noble',
+      denom_units: [
+        {
+          denom:
+            'ibc/43F3DB349524D2EEB9C2E42E00A5004EF77475D53771856E853B555F4FB82E47',
+          exponent: 0,
+          aliases: [
+            'ibc/2180E84E20F5679FCC760D8C165B60F42065DEF7F46A72B447CFF1B7DC6C0A65'
+          ]
+        },
+        {
+          denom: 'usdc',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/43F3DB349524D2EEB9C2E42E00A5004EF77475D53771856E853B555F4FB82E47',
+      name: 'Noble USD Coin',
+      display: 'usdc',
+      symbol: 'USDC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-12',
+            base_denom:
+              'ibc/2180E84E20F5679FCC760D8C165B60F42065DEF7F46A72B447CFF1B7DC6C0A65',
+            chain_name: 'elystestnet'
+          },
+          chain: {
+            channel_id: 'channel-19'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'noble',
+            base_denom: 'uusdc'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+      }
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/9937AE9EB62A04DDDDF028561F0151F89C20E5C57EB1FF3598B8B7889CDBD5AD',
+          exponent: 0,
+          aliases: [
+            'ibc/E2D2F6ADCC68AA3384B2F5DFACCA437923D137C14E86FB8A10207CF3BED0C8D4'
+          ]
+        },
+        {
+          denom: 'atom',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/9937AE9EB62A04DDDDF028561F0151F89C20E5C57EB1FF3598B8B7889CDBD5AD',
+      name: 'ATOM on Elys',
+      display: 'atom',
+      symbol: 'ATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-12',
+            base_denom:
+              'ibc/E2D2F6ADCC68AA3384B2F5DFACCA437923D137C14E86FB8A10207CF3BED0C8D4',
+            chain_name: 'elystestnet'
+          },
+          chain: {
+            channel_id: 'channel-19'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'cosmoshub',
+            base_denom: 'uatom'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+      }
+    },
+    {
       description: 'The native token of Osmosis',
       denom_units: [
         {

@@ -11,7 +11,11 @@ const info: Chain = {
   slip44: 639,
   daemon_name: 'bitsongd',
   node_home: '$HOME/.bitsongd',
-  codebase: {},
+  codebase: {
+    cosmos_sdk_version: 'v0.45.16',
+    cosmwasm_enabled: true,
+    cosmwasm_version: 'v0.33.0'
+  },
   fees: {
     fee_tokens: [
       {

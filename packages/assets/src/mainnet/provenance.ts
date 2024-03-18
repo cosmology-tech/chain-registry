@@ -3,6 +3,181 @@ const assets: AssetList = {
   chain_name: 'provenance',
   assets: [
     {
+      description: 'The permissioned staking asset for Noble Chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/2478AF3448658796EA944FD3D7A324A532DA8CA9A53F849EAEE1E7AB5ED9448A',
+          exponent: 0,
+          aliases: ['ustake']
+        },
+        {
+          denom: 'stake',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/2478AF3448658796EA944FD3D7A324A532DA8CA9A53F849EAEE1E7AB5ED9448A',
+      name: 'Stake',
+      display: 'stake',
+      symbol: 'STAKE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-20',
+            base_denom: 'ustake',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Frienzies are an IBC token redeemable exclusively for a physical asset issued by the Noble entity.',
+      denom_units: [
+        {
+          denom:
+            'ibc/37B536E5A81E323BE166B4F7FF3A49C1C65234C05B19A3D8E274C0A05D7BEAA1',
+          exponent: 0,
+          aliases: ['ufrienzies']
+        },
+        {
+          denom: 'frienzies',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/37B536E5A81E323BE166B4F7FF3A49C1C65234C05B19A3D8E274C0A05D7BEAA1',
+      display: 'frienzies',
+      name: 'Frienzies',
+      symbol: 'FRNZ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-20',
+            base_denom: 'ufrienzies',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
+      description: 'ATOM token on Noble',
+      denom_units: [
+        {
+          denom:
+            'ibc/ED83D4C7E2BB7F515EFE01F39339583C8BABDC62EFA006AE81185F0BEA9BEC9E',
+          exponent: 0,
+          aliases: [
+            'ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0'
+          ]
+        },
+        {
+          denom: 'atom',
+          exponent: 6,
+          aliases: ['ATOM']
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/ED83D4C7E2BB7F515EFE01F39339583C8BABDC62EFA006AE81185F0BEA9BEC9E',
+      name: 'Atom Staking Coin',
+      display: 'atom',
+      symbol: 'ATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-20',
+            base_denom:
+              'ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+        }
+      ]
+    },
+    {
+      description: 'USD Coin',
+      denom_units: [
+        {
+          denom:
+            'ibc/616E26A85AD20A3DDEAEBDDE7262E3BA9356C557BC15CACEA86768D7D51FA703',
+          exponent: 0,
+          aliases: ['uusdc']
+        },
+        {
+          denom: 'usdc',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/616E26A85AD20A3DDEAEBDDE7262E3BA9356C557BC15CACEA86768D7D51FA703',
+      display: 'usdc',
+      name: 'USD Coin',
+      symbol: 'USDC',
+      coingecko_id: 'usd-coin',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-20',
+            base_denom: 'uusdc',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+        }
+      ]
+    },
+    {
       description: 'The native token of Osmosis',
       denom_units: [
         {
@@ -13693,6 +13868,50 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-7'
           }
+        }
+      ]
+    },
+    {
+      description: 'SHARK is the apex price prediction market within Cosmos.',
+      denom_units: [
+        {
+          denom:
+            'ibc/BF10AE5DF0897B50B535EF03898E748823410724EF83CADC9519E6150DAEB9B7',
+          exponent: 0,
+          aliases: [
+            'ibc/64D56DF9EC69BE554F49EBCE0199611062FF1137EF105E2F645C1997344F3834'
+          ]
+        },
+        {
+          denom: 'SHARK',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/BF10AE5DF0897B50B535EF03898E748823410724EF83CADC9519E6150DAEB9B7',
+      name: 'SHARK',
+      display: 'SHARK',
+      symbol: 'SHARK',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-222',
+            base_denom:
+              'ibc/64D56DF9EC69BE554F49EBCE0199611062FF1137EF105E2F645C1997344F3834',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-7'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
         }
       ]
     }

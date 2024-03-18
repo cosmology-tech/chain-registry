@@ -35,9 +35,9 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.svg'
   },
   codebase: {
-    cosmos_sdk_version: '0.46.15',
+    cosmos_sdk_version: 'v0.47.7',
     cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.30.1-0.20230320091624-f5072b9b04a6'
+    cosmwasm_version: 'v0.45.0'
   },
   apis: {
     rpc: [
