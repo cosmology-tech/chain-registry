@@ -1,22 +1,27 @@
 import { Asset, AssetList } from '@chain-registry/types';
 import type {
-  CoinDenom,
-  CoinGeckoUSD,
+  Denom,
   Exponent,
-  PriceHash
+  DenomPriceMap,
+  CoinGeckoUSDPrice
 } from '@chain-registry/utils';
 import {
-  convertBaseUnitsToDisplayUnits,
-  convertBaseUnitsToDollarValue,
-  convertCoinGeckoPricesToDenomPriceMap,
-  convertDollarValueToDenomUnits,
   getAssetByDenom,
-  getChainDenomBySymbol,
-  getCoinGeckoIdByDenom,
+  getAssetBySymbol,
   getDenomByCoinGeckoId,
+  getCoinGeckoIdByDenom,
+  getSymbolByDenom,
+  getDenomBySymbol,
   getExponentByDenom,
-  getSymbolByChainDenom,
-  noDecimals
+  getExponentBySymbol,
+  getTokenLogoByDenom,
+  getTokenNameByDenom,
+  getChainNameByDenom,
+  mapCoinGeckoPricesToDenoms,
+  convertBaseUnitToDollarValue,
+  convertDollarValueToBaseUnit,
+  convertBaseUnitToDisplayUnit,
+  convertDisplayUnitToBaseUnit
 } from '@chain-registry/utils';
 
 import { ChainInfo } from './chain-info';
@@ -27,98 +32,124 @@ export interface ChainRegistryChainUtilOptions {
 }
 
 export class ChainRegistryChainUtil {
-  chainName: string;
-  chainInfo: ChainInfo;
-  
   private _assets: AssetList[] = [];
+  private _chainName: string;
 
   constructor(options: ChainRegistryChainUtilOptions) {
-    this.chainName = options.chainName;
-    this.chainInfo = options.chainInfo;
+    const { chainName, chainInfo } = options;
+    this._chainName = options.chainName;
     this._assets = [
       {
         assets: [
-          ...this.chainInfo.nativeAssetList.assets,
-          ...this.chainInfo.assetLists.flatMap(({ assets }) => assets)
+          ...chainInfo.nativeAssetList.assets,
+          ...chainInfo.assetLists.flatMap(({ assets }) => assets)
         ],
-        chain_name: this.chainName
+        chain_name: chainName
       }
     ];
   }
 
-  getAssetByDenom(denom: CoinDenom): Asset {
-    return getAssetByDenom(this._assets, denom, this.chainName);
+  getAssetByDenom(denom: Denom): Asset | undefined {
+    return getAssetByDenom(this._assets, denom, this._chainName);
   }
 
-  getDenomByCoinGeckoId(coinGeckoId: string): CoinDenom {
-    return getDenomByCoinGeckoId(this._assets, coinGeckoId, this.chainName);
+  getAssetBySymbol(symbol: string): Asset | undefined {
+    return getAssetBySymbol(this._assets, symbol, this._chainName);
   }
 
-  getCoinGeckoIdByDenom(coinGeckoId: string): CoinDenom {
+  getDenomByCoinGeckoId(coinGeckoId: string): Denom | undefined {
+    return getDenomByCoinGeckoId(this._assets, coinGeckoId, this._chainName);
+  }
+
+  getCoinGeckoIdByDenom(coinGeckoId: string): Denom | undefined {
     return getCoinGeckoIdByDenom(this._assets, coinGeckoId, {
-      chainName: this.chainName
+      chainName: this._chainName
     });
   }
 
-  getSymbolByChainDenom(denom: CoinDenom): string {
-    return getSymbolByChainDenom(this._assets, denom, this.chainName);
+  getSymbolByDenom(denom: Denom): string | undefined {
+    return getSymbolByDenom(this._assets, denom, this._chainName);
   }
 
-  getChainDenomBySymbol(token: string): CoinDenom {
-    return getChainDenomBySymbol(this._assets, token, this.chainName);
+  getDenomBySymbol(symbol: string): Denom | undefined {
+    return getDenomBySymbol(this._assets, symbol, this._chainName);
   }
 
-  getExponentByDenom(denom: CoinDenom): Exponent {
-    return getExponentByDenom(this._assets, denom, this.chainName);
+  getExponentByDenom(denom: Denom): Exponent | undefined {
+    return getExponentByDenom(this._assets, denom, this._chainName);
   }
 
-  convertCoinGeckoPricesToDenomPriceMap(
-    prices: Record<string, CoinGeckoUSD>
-  ): PriceHash {
-    return convertCoinGeckoPricesToDenomPriceMap(this._assets, prices);
+  getExponentBySymbol(symbol: string): Exponent | undefined {
+    return getExponentBySymbol(this._assets, symbol, this._chainName);
   }
 
-  noDecimals(num: number | string): string {
-    return noDecimals(num);
+  getTokenLogoByDenom(denom: Denom): string | undefined {
+    return getTokenLogoByDenom(this._assets, denom, this._chainName);
   }
 
-  convertBaseUnitsToDollarValue(
-    prices: PriceHash,
+  getTokenNameByDenom(denom: Denom): string | undefined {
+    return getTokenNameByDenom(this._assets, denom, this._chainName);
+  }
+
+  getChainNameByDenom(denom: Denom): string | undefined {
+    return getChainNameByDenom(this._assets, denom);
+  }
+
+  mapCoinGeckoPricesToDenoms(
+    prices: Record<string, CoinGeckoUSDPrice>
+  ): DenomPriceMap {
+    return mapCoinGeckoPricesToDenoms(this._assets, prices);
+  }
+
+  convertBaseUnitToDollarValue(
+    prices: DenomPriceMap,
     symbol: string,
     amount: string | number
   ): string {
-    return convertBaseUnitsToDollarValue(
+    return convertBaseUnitToDollarValue(
       this._assets,
       prices,
       symbol,
       amount,
-      this.chainName
+      this._chainName
     );
   }
 
-  convertDollarValueToDenomUnits(
-    prices: PriceHash,
+  convertDollarValueToBaseUnit(
+    prices: DenomPriceMap,
     symbol: string,
     value: string | number
   ): string {
-    return convertDollarValueToDenomUnits(
+    return convertDollarValueToBaseUnit(
       this._assets,
       prices,
       symbol,
       value,
-      this.chainName
+      this._chainName
     );
   }
 
-  convertBaseUnitsToDisplayUnits(
+  convertBaseUnitToDisplayUnit(
     symbol: string,
     amount: string | number
   ): string {
-    return convertBaseUnitsToDisplayUnits(
+    return convertBaseUnitToDisplayUnit(
       this._assets,
       symbol,
       amount,
-      this.chainName
+      this._chainName
+    );
+  }
+
+  convertDisplayUnitToBaseUnit(
+    symbol: string,
+    amount: string | number
+  ): string {
+    return convertDisplayUnitToBaseUnit(
+      this._assets,
+      symbol,
+      amount,
+      this._chainName
     );
   }
 }
