@@ -15,8 +15,8 @@ export declare const getTransferChannel: (info: IBCInfo) => {
     };
     ordering: string;
     version: string;
-    tags?: object;
-};
+    tags?: object | undefined;
+} | undefined;
 export declare const getNonTransferChannel: (info: IBCInfo) => {
     chain_1: {
         channel_id: string;
@@ -28,8 +28,8 @@ export declare const getNonTransferChannel: (info: IBCInfo) => {
     };
     ordering: string;
     version: string;
-    tags?: object;
-};
+    tags?: object | undefined;
+} | undefined;
 export declare const getWasmChannel: (info: IBCInfo) => {
     chain_1: {
         channel_id: string;
@@ -41,8 +41,8 @@ export declare const getWasmChannel: (info: IBCInfo) => {
     };
     ordering: string;
     version: string;
-    tags?: object;
-};
+    tags?: object | undefined;
+} | undefined;
 export declare const getIbcAssetPath: (ibc: IBCInfo[], chain: string, counterparty: string, assets: AssetList[], base: string) => any;
 export declare const getIbcDenomByBase: (ibc: IBCInfo[], chain: string, counterparty: string, assets: AssetList[], base: string) => string;
 export declare const getIbcAssets: (chainName: string, ibc: IBCInfo[], assets: AssetList[]) => {
@@ -53,4 +53,7 @@ export declare const getCw20Assets: (chainName: string, ibc: IBCInfo[], assets: 
     chain_name: string;
     assets: any;
 }[];
-export declare const getAssetLists: (chainName: string, ibc: IBCInfo[], assets: AssetList[]) => any[];
+export declare const getAssetLists: (chainName: string, ibc: IBCInfo[], assets: AssetList[]) => {
+    chain_name: string;
+    assets: any;
+};
