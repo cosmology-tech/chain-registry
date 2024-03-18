@@ -106,7 +106,7 @@ export const getDenomBySymbol = (
   return getAssetByKeyValue(assets, 'symbol', symbol, chainName)?.base;
 };
 
-export const getExponentFromAsset = (asset: Asset) => {
+export const getExponentFromAsset = (asset: Asset): number | undefined => {
   return asset.denom_units.find(({ denom }) => denom === asset.display)
     ?.exponent;
 };
@@ -169,7 +169,10 @@ export const getTokenNameByDenom = (
   return asset?.name;
 };
 
-export const getChainNameByDenom = (assets: AssetList[], denom: Denom) => {
+export const getChainNameByDenom = (
+  assets: AssetList[],
+  denom: Denom
+): string | undefined => {
   const isIbcDenom = denom.startsWith('ibc/');
 
   if (isIbcDenom) {
