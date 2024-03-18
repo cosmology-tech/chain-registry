@@ -2,25 +2,24 @@ import { AssetList } from '@chain-registry/types';
 import BigNumber from 'bignumber.js';
 import {
   Denom,
-  getDenomByCoinGeckoId,
   getAssetBySymbol,
   getExponentFromAsset,
-  getExponentBySymbol
+  getDenomByCoinGeckoId
 } from './assets';
 
-export interface CoinGeckoUSD {
+export interface CoinGeckoUSDPrice {
   usd: number;
 }
 
-export interface PriceHash {
+export interface DenomPriceMap {
   [key: Denom]: number;
 }
 
-export const convertCoinGeckoPricesToDenomPriceMap = (
+export const mapCoinGeckoPricesToDenoms = (
   assets: AssetList[],
-  prices: Record<string, CoinGeckoUSD>
-): PriceHash => {
-  return Object.keys(prices).reduce((res: PriceHash, geckoId) => {
+  prices: Record<string, CoinGeckoUSDPrice>
+): DenomPriceMap => {
+  return Object.keys(prices).reduce((res: DenomPriceMap, geckoId) => {
     const denom = getDenomByCoinGeckoId(assets, geckoId);
     if (!denom) {
       throw new Error(`No denom found for CoinGecko ID: ${geckoId}`);
@@ -30,17 +29,15 @@ export const convertCoinGeckoPricesToDenomPriceMap = (
   }, {});
 };
 
-export const noDecimals = (num: number | string): string => {
-  return new BigNumber(num).decimalPlaces(0, BigNumber.ROUND_DOWN).toString();
+export const roundDown = (value: number | string): string => {
+  return new BigNumber(value).decimalPlaces(0, BigNumber.ROUND_DOWN).toString();
 };
 
-export const convertBaseUnitsToDollarValue = (
+const getAssetInfo = (
   assets: AssetList[],
-  prices: PriceHash,
   symbol: string,
-  amount: string | number,
   chainName?: string
-): string => {
+) => {
   const asset = getAssetBySymbol(assets, symbol, chainName);
   const denom = asset?.base;
   const exponent = asset ? getExponentFromAsset(asset) : undefined;
@@ -49,44 +46,57 @@ export const convertBaseUnitsToDollarValue = (
     throw new Error(`No denom or exponent found for symbol: ${symbol}`);
   }
 
-  return new BigNumber(amount)
-    .shiftedBy(-exponent)
-    .multipliedBy(prices[denom])
-    .toString();
+  return { denom, exponent };
 };
 
-export const convertDollarValueToDenomUnits = (
+const shiftDecimalPlaces = (
+  amount: string | number,
+  exponent: number,
+  direction: 1 | -1 = 1
+) => {
+  return new BigNumber(amount).shiftedBy(exponent * direction).toString();
+};
+
+export const convertBaseUnitToDollarValue = (
   assets: AssetList[],
-  prices: PriceHash,
+  prices: DenomPriceMap,
+  symbol: string,
+  amount: string | number,
+  chainName?: string
+): string => {
+  const { denom, exponent } = getAssetInfo(assets, symbol, chainName);
+  const baseAmount = shiftDecimalPlaces(amount, exponent, -1);
+  return new BigNumber(baseAmount).multipliedBy(prices[denom]).toString();
+};
+
+export const convertDollarValueToBaseUnit = (
+  assets: AssetList[],
+  prices: DenomPriceMap,
   symbol: string,
   value: string | number,
   chainName?: string
 ): string => {
-  const asset = getAssetBySymbol(assets, symbol, chainName);
-  const denom = asset?.base;
-  const exponent = asset ? getExponentFromAsset(asset) : undefined;
-
-  if (!denom || !exponent) {
-    throw new Error(`No denom or exponent found for symbol: ${symbol}`);
-  }
-
-  return new BigNumber(value)
-    .dividedBy(prices[denom])
-    .shiftedBy(exponent)
-    .toString();
+  const { denom, exponent } = getAssetInfo(assets, symbol, chainName);
+  const baseAmount = new BigNumber(value).dividedBy(prices[denom]).toString();
+  return roundDown(shiftDecimalPlaces(baseAmount, exponent));
 };
 
-export const convertBaseUnitsToDisplayUnits = (
+export const convertBaseUnitToDisplayUnit = (
   assets: AssetList[],
   symbol: string,
   amount: string | number,
   chainName?: string
 ): string => {
-  const exponent = getExponentBySymbol(assets, symbol, chainName);
+  const { exponent } = getAssetInfo(assets, symbol, chainName);
+  return shiftDecimalPlaces(amount, exponent, -1);
+};
 
-  if (!exponent) {
-    throw new Error(`No exponent found for symbol: ${symbol}`);
-  }
-
-  return new BigNumber(amount).shiftedBy(-exponent).toString();
+export const convertDisplayUnitToBaseUnit = (
+  assets: AssetList[],
+  symbol: string,
+  amount: string | number,
+  chainName?: string
+): string => {
+  const { exponent } = getAssetInfo(assets, symbol, chainName);
+  return roundDown(shiftDecimalPlaces(amount, exponent));
 };

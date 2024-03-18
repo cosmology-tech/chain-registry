@@ -3,6 +3,20 @@ import { Asset, AssetDenomUnit, AssetList } from '@chain-registry/types';
 export type Denom = AssetDenomUnit['denom'];
 export type Exponent = AssetDenomUnit['exponent'];
 
+export const customFind = <T>(
+  array: T[],
+  filterFn: (item: T) => boolean
+): T | undefined => {
+  const filteredItems = array.filter(filterFn);
+  const filterCount = filteredItems.length;
+
+  if (filterCount > 1) {
+    throw new Error(`Ambiguity Error: ${filterCount} items found.`);
+  }
+
+  return filteredItems[0];
+};
+
 const getAssetByKeyValue = (
   assets: AssetList[],
   key: keyof Asset,
@@ -13,19 +27,7 @@ const getAssetByKeyValue = (
     .filter(({ chain_name }) => !chainName || chain_name === chainName)
     .flatMap(({ assets }) => assets);
 
-  const matchingAssets = filteredAssets.filter((asset) => asset[key] === value);
-
-  if (matchingAssets.length === 0) {
-    return undefined;
-  }
-
-  if (matchingAssets.length > 1) {
-    throw new Error(
-      `Ambiguity: ${matchingAssets.length} assets found for ${key}: ${value}`
-    );
-  }
-
-  return matchingAssets[0];
+  return customFind(filteredAssets, (asset) => asset[key] === value);
 };
 
 export const getAssetByDenom = (
@@ -125,4 +127,58 @@ export const getExponentBySymbol = (
 ): Exponent | undefined => {
   const asset = getAssetBySymbol(assets, symbol, chainName);
   return asset ? getExponentFromAsset(asset) : undefined;
+};
+
+export const getNativeTokenByChainName = (
+  assets: AssetList[],
+  chainName: string
+): Asset | undefined => {
+  const assetList = customFind(
+    assets,
+    (assetList) =>
+      assetList.chain_name === chainName &&
+      !assetList.assets[0].base.startsWith('ibc/')
+  );
+
+  return assetList?.assets[0];
+};
+
+export const getTokenLogoByDenom = (
+  assets: AssetList[],
+  denom: Denom,
+  chainName?: string
+): string | undefined => {
+  const asset = getAssetByDenom(assets, denom, chainName);
+  return Object.values(asset?.logo_URIs || {})[0];
+};
+
+export const getChainLogo = (
+  assets: AssetList[],
+  chainName: string
+): string | undefined => {
+  const nativeToken = getNativeTokenByChainName(assets, chainName);
+  return Object.values(nativeToken?.logo_URIs || {})[0];
+};
+
+export const getTokenNameByDenom = (
+  assets: AssetList[],
+  denom: Denom,
+  chainName?: string
+): string | undefined => {
+  const asset = getAssetByDenom(assets, denom, chainName);
+  return asset?.name;
+};
+
+export const getChainNameByDenom = (assets: AssetList[], denom: Denom) => {
+  const isIbcDenom = denom.startsWith('ibc/');
+
+  if (isIbcDenom) {
+    const asset = getAssetByDenom(assets, denom);
+    return asset?.traces?.find((t) => t.type === 'ibc')?.counterparty
+      ?.chain_name;
+  }
+
+  return customFind(assets, (assetList) =>
+    assetList.assets.some((asset) => asset.base === denom)
+  )?.chain_name;
 };
