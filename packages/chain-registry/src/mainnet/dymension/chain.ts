@@ -135,7 +135,7 @@ const info: Chain = {
         provider: 'Wave'
       },
       {
-        address: 'https://dym.rpc.cumulo.com.es:443',
+        address: 'https://archive.rpc.dym.cumulo.com.es:443',
         provider: 'Cumulo'
       },
       {
@@ -245,7 +245,7 @@ const info: Chain = {
         provider: 'Wave'
       },
       {
-        address: 'https://dym.api.cumulo.com.es',
+        address: 'https://api.dym.cumulo.com.es',
         provider: 'Cumulo'
       },
       {
@@ -331,7 +331,7 @@ const info: Chain = {
         provider: 'Wave'
       },
       {
-        address: 'dym.grpc.cumulo.com.es:443',
+        address: 'grpc.dym.cumulo.com.es:443',
         provider: 'Cumulo'
       },
       {
@@ -361,7 +361,7 @@ const info: Chain = {
         provider: 'Wave'
       },
       {
-        address: 'https://dym.json-rpc.cumulo.com.es:443',
+        address: 'https://evm-rpc.dym.cumulo.com.es:443',
         provider: 'Cumulo'
       },
       {

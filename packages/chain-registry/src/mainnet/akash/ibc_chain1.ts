@@ -273,22 +273,22 @@ const info: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'akash',
-      client_id: '07-tendermint-15',
-      connection_id: 'connection-8'
+      client_id: '07-tendermint-188',
+      connection_id: 'connection-174'
     },
     chain_2: {
       chain_name: 'persistence',
-      client_id: '07-tendermint-5',
-      connection_id: 'connection-4'
+      client_id: '07-tendermint-169',
+      connection_id: 'connection-214'
     },
     channels: [
       {
         chain_1: {
-          channel_id: 'channel-6',
+          channel_id: 'channel-127',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-5',
+          channel_id: 'channel-213',
           port_id: 'transfer'
         },
         ordering: 'unordered',

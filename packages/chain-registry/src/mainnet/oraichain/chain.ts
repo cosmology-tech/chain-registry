@@ -30,7 +30,10 @@ const info: Chain = {
       }
     ]
   },
-  codebase: {},
+  codebase: {
+    cosmwasm_enabled: true,
+    cosmwasm_version: '0.30.2'
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.svg'
@@ -64,6 +67,10 @@ const info: Chain = {
       {
         address: 'https://mainnet-orai-rpc.konsortech.xyz',
         provider: 'KonsorTech'
+      },
+      {
+        address: 'https://rpc.orai.mortysnode.nl',
+        provider: "Morty's Nodes"
       }
     ],
     rest: [

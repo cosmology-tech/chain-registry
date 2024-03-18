@@ -64,6 +64,10 @@ const info: Chain = {
       {
         address: 'https://rpc.nibiru.silentvalidator.com',
         provider: 'silent'
+      },
+      {
+        address: 'https://nibiru.rpc.liveraven.net',
+        provider: 'LiveRaveN'
       }
     ],
     rest: [
@@ -86,6 +90,10 @@ const info: Chain = {
       {
         address: 'https://nibiru-api.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'https://nibiru.api.liveraven.net',
+        provider: 'LiveRaveN'
       }
     ],
     grpc: [
@@ -108,6 +116,10 @@ const info: Chain = {
       {
         address: 'https://nibiru-grpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'nibiru.grpc.liveraven.net:443',
+        provider: 'LiveRaveN'
       }
     ]
   },
@@ -124,6 +136,13 @@ const info: Chain = {
       tx_page: 'https://explorer.nodestake.org/nibiru/tx/${txHash}',
       account_page:
         'https://explorer.nodestake.org/nibiru/account/${accountAddress}'
+    },
+    {
+      kind: 'LiveRaveN',
+      url: 'https://mainnet.explorer.liveraven.net/nibiru',
+      tx_page: 'https://mainnet.explorer.liveraven.net/nibiru/tx/${txHash}',
+      account_page:
+        'https://mainnet.explorer.liveraven.net/nibiru/account/${accountAddress}'
     }
   ],
   images: [
