@@ -1,5 +1,5 @@
 import { AssetList, Chain, IBCInfo } from '@chain-registry/types';
-import { ChainUtils } from './chain-utils';
+import { ChainRegistryUtils } from './utils';
 export interface FetchOptions {
     urls?: string[];
     chainNames?: string[];
@@ -30,7 +30,7 @@ export declare class ChainRegistryClient {
         ibcInfo: IBCInfo[];
         ibcAssetList: AssetList;
     };
-    getChainUtils(chainName: string): ChainUtils;
+    getChainUtils(chainName: string): ChainRegistryUtils;
     fetch(options?: FetchOptions): Promise<void>;
     private formatChainUrl;
     private formatAssetListUrl;

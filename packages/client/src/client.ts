@@ -3,7 +3,7 @@ import { basename } from 'bfs-path';
 import { getAssetLists } from '@chain-registry/utils';
 import { AssetList, Chain, IBCInfo } from '@chain-registry/types';
 
-import { ChainUtils } from './chain-utils';
+import { ChainRegistryUtils } from './utils';
 
 const DEFAULT_BASE_URL =
   'https://raw.githubusercontent.com/cosmos/chain-registry/master';
@@ -80,7 +80,7 @@ export class ChainRegistryClient {
   }
 
   public getChainUtils(chainName: string) {
-    return new ChainUtils({
+    return new ChainRegistryUtils({
       chainName,
       assetList: this.getChainAssetList(chainName),
       ibcAssetList: this.getChainIbcAssetList(chainName)
