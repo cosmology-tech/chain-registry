@@ -448,6 +448,24 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-1559',
+          port_id:
+            'wasm.neutron14cwv7d4lwc69zrjrzywwh8c9327m8dpngpq52f5kgqephhgrjc2s9ry3eu'
+        },
+        chain_2: {
+          channel_id: 'channel-48',
+          port_id:
+            'wasm.nois1acyc05v6fgcdgj88nmz2t40aex9nlnptqpwp5hf8hwg7rhce9uuqgqz5wp'
+        },
+        ordering: 'unordered',
+        version: 'nois-v7',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
       }
     ]
   },
@@ -579,23 +597,23 @@ const info: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'neutron',
-      client_id: '07-tendermint-75',
-      connection_id: 'connection-54'
+      client_id: '07-tendermint-85',
+      connection_id: 'connection-63'
     },
     chain_2: {
       chain_name: 'secretnetwork',
-      client_id: '07-tendermint-19',
-      connection_id: 'connection-139'
+      client_id: '07-tendermint-199',
+      connection_id: 'connection-192'
     },
     channels: [
       {
         chain_1: {
-          channel_id: 'channel-57',
+          channel_id: 'channel-1551',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-104',
-          port_id: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4'
+          channel_id: 'channel-144',
+          port_id: 'transfer'
         },
         ordering: 'unordered',
         version: 'ics20-1',

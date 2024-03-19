@@ -3213,6 +3213,49 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'Decentralized Federated Learning',
+      denom_units: [
+        {
+          denom:
+            'ibc/747E15E4A659084E3B2E44D0B22EC7E50CBB0E2B9D436B94F3D1936B63D97534',
+          exponent: 0,
+          aliases: ['ucif']
+        },
+        {
+          denom: 'cif',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/747E15E4A659084E3B2E44D0B22EC7E50CBB0E2B9D436B94F3D1936B63D97534',
+      name: 'Cifer',
+      display: 'cif',
+      symbol: 'CIF',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
+      },
+      coingecko_id: '',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'ucif',
+            chain_name: 'cifer'
+          },
+          chain: {
+            channel_id: 'channel-0'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native staking and governance token of Composable.',
       denom_units: [
         {
@@ -5127,6 +5170,54 @@ const assets: AssetList = {
             channel_id: 'channel-1',
             base_denom:
               'factory/juno1u805lv20qc6jy7c3ttre7nct6uyl20pfky5r7e/DGL',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-207'
+          }
+        }
+      ]
+    },
+    {
+      type_asset: 'sdk.coin',
+      denom_units: [
+        {
+          denom:
+            'ibc/4AE9FF7A4D5DDCA9A37A6CC10771A9A1806D639CFC741EF72A5AD1F77F77AEB2',
+          exponent: 0,
+          aliases: [
+            'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA'
+          ]
+        },
+        {
+          denom: 'arena',
+          exponent: 6
+        }
+      ],
+      address:
+        'juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy',
+      base: 'ibc/4AE9FF7A4D5DDCA9A37A6CC10771A9A1806D639CFC741EF72A5AD1F77F77AEB2',
+      name: 'Arena Token',
+      description: 'The token for the Arena DAO',
+      display: 'arena',
+      symbol: 'ARENA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA',
             chain_name: 'juno'
           },
           chain: {
@@ -22262,6 +22353,50 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'SHARK is the apex price prediction market within Cosmos.',
+      denom_units: [
+        {
+          denom:
+            'ibc/3FB2FF048EF41F64A48AEDBCF90E8B5EF3AB242BFF5E960A680A6A49714BDE06',
+          exponent: 0,
+          aliases: [
+            'ibc/64D56DF9EC69BE554F49EBCE0199611062FF1137EF105E2F645C1997344F3834'
+          ]
+        },
+        {
+          denom: 'SHARK',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/3FB2FF048EF41F64A48AEDBCF90E8B5EF3AB242BFF5E960A680A6A49714BDE06',
+      name: 'SHARK',
+      display: 'SHARK',
+      symbol: 'SHARK',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'ibc/64D56DF9EC69BE554F49EBCE0199611062FF1137EF105E2F645C1997344F3834',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-141'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
+        }
+      ]
+    },
+    {
       description:
         'The XPRT token is primarily a governance token for the Persistence chain.',
       denom_units: [
@@ -23712,6 +23847,93 @@ const assets: AssetList = {
       }
     },
     {
+      description:
+        'OOZARU is a meme token on SEI Network inspired by the iconic transformation in the Dragon Ball series',
+      denom_units: [
+        {
+          denom:
+            'ibc/582D087820E10FF09C4F98253878701F659AB423C9E195D7FB913F923FA4398E',
+          exponent: 0,
+          aliases: [
+            'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda'
+          ]
+        },
+        {
+          denom: 'oozaru',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/582D087820E10FF09C4F98253878701F659AB423C9E195D7FB913F923FA4398E',
+      name: 'Oozaru',
+      display: 'oozaru',
+      symbol: 'OOZARU',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oozaru.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oozaru.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda',
+            chain_name: 'sei'
+          },
+          chain: {
+            channel_id: 'channel-584'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The Original Meme Coin on SEI Network',
+      denom_units: [
+        {
+          denom:
+            'ibc/30AB851E3A7D2D99D925A9578523535ADF99E92C73B085753FA58E58EDB6B9D6',
+          exponent: 0,
+          aliases: [
+            'sei1hrndqntlvtmx2kepr0zsfgr7nzjptcc72cr4ppk4yav58vvy7v3s4er8ed'
+          ]
+        },
+        {
+          denom: 'SEIYAN',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/30AB851E3A7D2D99D925A9578523535ADF99E92C73B085753FA58E58EDB6B9D6',
+      name: 'SEIYAN',
+      display: 'SEIYAN',
+      symbol: 'SEIYAN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/SEIYAN.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/SEIYAN.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'sei1hrndqntlvtmx2kepr0zsfgr7nzjptcc72cr4ppk4yav58vvy7v3s4er8ed',
+            chain_name: 'sei'
+          },
+          chain: {
+            channel_id: 'channel-584'
+          }
+        }
+      ]
+    },
+    {
       description: 'DVPN is the native token of the Sentinel Hub.',
       denom_units: [
         {
@@ -24476,6 +24698,48 @@ const assets: AssetList = {
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/sttia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/sttia.svg'
+        }
+      ]
+    },
+    {
+      description: "Stride's liquid staked DYM",
+      denom_units: [
+        {
+          denom:
+            'ibc/3F0A41ECB6FAF27E315583DBF39B5B69A7149D23959A0E4B319F7EF5C618DCD7',
+          exponent: 0,
+          aliases: ['stadym']
+        },
+        {
+          denom: 'stDYM',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/3F0A41ECB6FAF27E315583DBF39B5B69A7149D23959A0E4B319F7EF5C618DCD7',
+      name: 'Stride Staked DYM',
+      display: 'stDYM',
+      symbol: 'stDYM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'stadym',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-391'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.svg'
         }
       ]
     },

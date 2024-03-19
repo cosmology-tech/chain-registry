@@ -24,6 +24,7 @@ import * as _cerberus from './cerberus';
 import * as _chain4energy from './chain4energy';
 import * as _cheqd from './cheqd';
 import * as _chihuahua from './chihuahua';
+import * as _cifer from './cifer';
 import * as _comdex from './comdex';
 import * as _composable from './composable';
 import * as _coreum from './coreum';
@@ -74,6 +75,7 @@ import * as _meme from './meme';
 import * as _microtick from './microtick';
 import * as _migaloo from './migaloo';
 import * as _neutron from './neutron';
+import * as _nibiru from './nibiru';
 import * as _noble from './noble';
 import * as _nois from './nois';
 import * as _nolus from './nolus';
@@ -123,6 +125,7 @@ const ibc: IBCInfo[] = [
   ..._chain4energy.ibc_chain1,
   ..._cheqd.ibc_chain1,
   ..._chihuahua.ibc_chain1,
+  ..._cifer.ibc_chain1,
   ..._comdex.ibc_chain1,
   ..._composable.ibc_chain1,
   ..._coreum.ibc_chain1,
@@ -173,6 +176,7 @@ const ibc: IBCInfo[] = [
   ..._microtick.ibc_chain1,
   ..._migaloo.ibc_chain1,
   ..._neutron.ibc_chain1,
+  ..._nibiru.ibc_chain1,
   ..._noble.ibc_chain1,
   ..._nois.ibc_chain1,
   ..._nolus.ibc_chain1,

@@ -29,7 +29,10 @@ const info: Chain = {
       }
     ]
   },
-  codebase: {},
+  codebase: {
+    cosmwasm_enabled: true,
+    cosmwasm_version: '0.45'
+  },
   apis: {
     rpc: [
       {

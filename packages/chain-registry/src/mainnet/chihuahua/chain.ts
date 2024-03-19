@@ -50,6 +50,10 @@ const info: Chain = {
         provider: 'ecostake'
       },
       {
+        address: 'https://chihua.rpc.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://chihuahua-rpc.polkachu.com',
         provider: 'Polkachu'
       },
@@ -98,6 +102,10 @@ const info: Chain = {
       {
         address: 'https://rest-chihuahua.ecostake.com',
         provider: 'ecostake'
+      },
+      {
+        address: 'https://chihua.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'https://api-chihuahua-ia.cosmosia.notional.ventures',
@@ -150,6 +158,10 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
+        address: 'chihua.grpc.m.stavr.tech:108',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'grpc-chihuahua.cosmos-spaces.cloud:2290',
         provider: 'Cosmos Spaces'
       },
@@ -172,6 +184,11 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.pub/chihuahua',
       tx_page: 'https://ping.pub/chihuahua/tx/${txHash}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Chihua-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Chihua-Mainnet/tx/${txHash}'
     },
     {
       kind: 'mintscan',

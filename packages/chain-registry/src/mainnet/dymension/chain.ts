@@ -135,7 +135,7 @@ const info: Chain = {
         provider: 'Wave'
       },
       {
-        address: 'https://dym.rpc.cumulo.com.es:443',
+        address: 'https://archive.rpc.dym.cumulo.com.es:443',
         provider: 'Cumulo'
       },
       {
@@ -145,6 +145,10 @@ const info: Chain = {
       {
         address: 'https://rpc.dymension.node75.org',
         provider: 'Pro-Nodes75'
+      },
+      {
+        address: 'https://rpc.dymension.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ],
     rest: [
@@ -241,7 +245,7 @@ const info: Chain = {
         provider: 'Wave'
       },
       {
-        address: 'https://dym.api.cumulo.com.es',
+        address: 'https://api.dym.cumulo.com.es',
         provider: 'Cumulo'
       },
       {
@@ -251,6 +255,10 @@ const info: Chain = {
       {
         address: 'https://api.dymension.node75.org',
         provider: 'Pro-Nodes75'
+      },
+      {
+        address: 'https://lcd.dymension.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ],
     grpc: [
@@ -323,12 +331,16 @@ const info: Chain = {
         provider: 'Wave'
       },
       {
-        address: 'dym.grpc.cumulo.com.es:443',
+        address: 'grpc.dym.cumulo.com.es:443',
         provider: 'Cumulo'
       },
       {
         address: 'https://grpc.dymension.posthuman.digital',
         provider: 'posthuman'
+      },
+      {
+        address: 'https://grpc.dymension.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ],
     'evm-http-jsonrpc': [
@@ -349,7 +361,7 @@ const info: Chain = {
         provider: 'Wave'
       },
       {
-        address: 'https://dym.json-rpc.cumulo.com.es:443',
+        address: 'https://evm-rpc.dym.cumulo.com.es:443',
         provider: 'Cumulo'
       },
       {

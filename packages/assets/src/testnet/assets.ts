@@ -9,6 +9,7 @@ import _composabletestnet from './composabletestnet';
 import _cosmoshubtestnet from './cosmoshubtestnet';
 import _doravotatestnet from './doravotatestnet';
 import _dydxtestnet from './dydxtestnet';
+import _elystestnet from './elystestnet';
 import _empowertestnet from './empowertestnet';
 import _entrypointtestnet from './entrypointtestnet';
 import _impacthubtestnet from './impacthubtestnet';
@@ -42,6 +43,7 @@ const assets: AssetList[] = [
   _cosmoshubtestnet,
   _doravotatestnet,
   _dydxtestnet,
+  _elystestnet,
   _empowertestnet,
   _entrypointtestnet,
   _impacthubtestnet,

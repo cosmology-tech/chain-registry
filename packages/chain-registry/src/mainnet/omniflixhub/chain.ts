@@ -12,7 +12,7 @@ const info: Chain = {
   bech32_prefix: 'omniflix',
   slip44: 118,
   codebase: {
-    cosmos_sdk_version: 'v0.47.9',
+    cosmos_sdk_version: 'v0.47.10',
     cosmwasm_version: 'v0.45.0'
   },
   logo_URIs: {
@@ -100,6 +100,10 @@ const info: Chain = {
       {
         address: 'https://omniflix-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://mainnet.omniflix.rpc.srv.stakr.space',
+        provider: 'STAKR.space'
       }
     ],
     rest: [
@@ -158,6 +162,10 @@ const info: Chain = {
       {
         address: 'https://omniflix-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://mainnet.omniflix.api.srv.stakr.space',
+        provider: 'STAKR.space'
       }
     ],
     grpc: [
@@ -208,6 +216,10 @@ const info: Chain = {
       {
         address: 'omniflix-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'mainnet.omniflix.grpc.stakr.space:39090',
+        provider: 'STAKR.space'
       }
     ]
   },
@@ -232,6 +244,13 @@ const info: Chain = {
       tx_page: 'https://atomscan.com/omniflixhub/transactions/${txHash}',
       account_page:
         'https://atomscan.com/omniflixhub/accounts/${accountAddress}'
+    },
+    {
+      kind: 'STAKR.space explorer',
+      url: 'https://explorer.stakr.space/omniflix/',
+      tx_page: 'https://explorer.stakr.space/omniflix/tx/${txHash}',
+      account_page:
+        'https://explorer.stakr.space/omniflix/account/${accountAddress}'
     }
   ],
   images: [

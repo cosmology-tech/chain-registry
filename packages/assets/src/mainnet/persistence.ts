@@ -100,7 +100,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/799FDD409719A1122586A629AE8FCA17380351A51C1F47A80A1B8E7F2A491098',
+            'ibc/3B6578698023BE802272D184CCA5B84C865546467D0548EC148ECEB91C6F714C',
           exponent: 0,
           aliases: ['uakt']
         },
@@ -109,7 +109,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/799FDD409719A1122586A629AE8FCA17380351A51C1F47A80A1B8E7F2A491098',
+      base: 'ibc/3B6578698023BE802272D184CCA5B84C865546467D0548EC148ECEB91C6F714C',
       name: 'Akash Network',
       display: 'akt',
       symbol: 'AKT',
@@ -132,12 +132,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6',
+            channel_id: 'channel-127',
             base_denom: 'uakt',
             chain_name: 'akash'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-213'
           }
         }
       ]
@@ -147,7 +147,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/115F68FBA220A028C6F6ED08EA0C1A9C8C52798B14FB66E6C89D5D8C06A524D4',
+            'ibc/3F9039B263FEF388106F5B86A28DCE9A3D071D9AC8713C4C5B92BC7D8FC4D347',
           exponent: 0,
           aliases: [
             'ibc/05DB6975261B805B6F6A157A4386C627F8A70BF8118D411655EFEDCA82BFABA5'
@@ -159,7 +159,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/115F68FBA220A028C6F6ED08EA0C1A9C8C52798B14FB66E6C89D5D8C06A524D4',
+      base: 'ibc/3F9039B263FEF388106F5B86A28DCE9A3D071D9AC8713C4C5B92BC7D8FC4D347',
       name: 'Tether USDt',
       display: 'usdt',
       symbol: 'USDt',
@@ -167,13 +167,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-6',
+            channel_id: 'channel-127',
             base_denom:
               'ibc/05DB6975261B805B6F6A157A4386C627F8A70BF8118D411655EFEDCA82BFABA5',
             chain_name: 'akash'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-213'
           }
         }
       ],
@@ -2224,6 +2224,54 @@ const assets: AssetList = {
             channel_id: 'channel-33',
             base_denom:
               'factory/juno1u805lv20qc6jy7c3ttre7nct6uyl20pfky5r7e/DGL',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-37'
+          }
+        }
+      ]
+    },
+    {
+      type_asset: 'sdk.coin',
+      denom_units: [
+        {
+          denom:
+            'ibc/4A55F39C7A46F1DAD1454F728FB6EA9692C6F658411697B371BBD229F5A6EFAF',
+          exponent: 0,
+          aliases: [
+            'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA'
+          ]
+        },
+        {
+          denom: 'arena',
+          exponent: 6
+        }
+      ],
+      address:
+        'juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy',
+      base: 'ibc/4A55F39C7A46F1DAD1454F728FB6EA9692C6F658411697B371BBD229F5A6EFAF',
+      name: 'Arena Token',
+      description: 'The token for the Arena DAO',
+      display: 'arena',
+      symbol: 'ARENA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-33',
+            base_denom:
+              'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA',
             chain_name: 'juno'
           },
           chain: {
@@ -18936,6 +18984,50 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'SHARK is the apex price prediction market within Cosmos.',
+      denom_units: [
+        {
+          denom:
+            'ibc/95B15110C8BA3B330F4E24878A0E67A27CF51E15B69BF9BC023DA71CC3682FAC',
+          exponent: 0,
+          aliases: [
+            'ibc/64D56DF9EC69BE554F49EBCE0199611062FF1137EF105E2F645C1997344F3834'
+          ]
+        },
+        {
+          denom: 'SHARK',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/95B15110C8BA3B330F4E24878A0E67A27CF51E15B69BF9BC023DA71CC3682FAC',
+      name: 'SHARK',
+      display: 'SHARK',
+      symbol: 'SHARK',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom:
+              'ibc/64D56DF9EC69BE554F49EBCE0199611062FF1137EF105E2F645C1997344F3834',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-6'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
+        }
+      ]
+    },
+    {
       description: 'QCK - native token of Quicksilver',
       denom_units: [
         {
@@ -20167,6 +20259,48 @@ const assets: AssetList = {
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/sttia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/sttia.svg'
+        }
+      ]
+    },
+    {
+      description: "Stride's liquid staked DYM",
+      denom_units: [
+        {
+          denom:
+            'ibc/B904861665108490572DCF45FFC7156BE0F09E578B5A0C42BFF02065F6212D3E',
+          exponent: 0,
+          aliases: ['stadym']
+        },
+        {
+          denom: 'stDYM',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/B904861665108490572DCF45FFC7156BE0F09E578B5A0C42BFF02065F6212D3E',
+      name: 'Stride Staked DYM',
+      display: 'stDYM',
+      symbol: 'stDYM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-53',
+            base_denom: 'stadym',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-67'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.svg'
         }
       ]
     },

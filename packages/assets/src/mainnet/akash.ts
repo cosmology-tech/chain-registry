@@ -738,6 +738,54 @@ const assets: AssetList = {
       ]
     },
     {
+      type_asset: 'sdk.coin',
+      denom_units: [
+        {
+          denom:
+            'ibc/3C96A1D3B5FAEB38F07D8FEE2D249A7F059EC7DDF88F0E1880DA5216602D2EC6',
+          exponent: 0,
+          aliases: [
+            'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA'
+          ]
+        },
+        {
+          denom: 'arena',
+          exponent: 6
+        }
+      ],
+      address:
+        'juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy',
+      base: 'ibc/3C96A1D3B5FAEB38F07D8FEE2D249A7F059EC7DDF88F0E1880DA5216602D2EC6',
+      name: 'Arena Token',
+      description: 'The token for the Arena DAO',
+      display: 'arena',
+      symbol: 'ARENA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom:
+              'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-35'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The native staking and governance token of the Kujira chain.',
       denom_units: [
@@ -15856,12 +15904,56 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'SHARK is the apex price prediction market within Cosmos.',
+      denom_units: [
+        {
+          denom:
+            'ibc/4B8A4CB5A751EA1C03079CC7B25D8395B95D503E2CDD3C0149980D45F84B557C',
+          exponent: 0,
+          aliases: [
+            'ibc/64D56DF9EC69BE554F49EBCE0199611062FF1137EF105E2F645C1997344F3834'
+          ]
+        },
+        {
+          denom: 'SHARK',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/4B8A4CB5A751EA1C03079CC7B25D8395B95D503E2CDD3C0149980D45F84B557C',
+      name: 'SHARK',
+      display: 'SHARK',
+      symbol: 'SHARK',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'ibc/64D56DF9EC69BE554F49EBCE0199611062FF1137EF105E2F645C1997344F3834',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-9'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
+        }
+      ]
+    },
+    {
       description:
         'The XPRT token is primarily a governance token for the Persistence chain.',
       denom_units: [
         {
           denom:
-            'ibc/268814152066040B21D1617B04A1617CC0C2264A65179318B1624BE72735A733',
+            'ibc/1C83E3B8A612C4FB7F3D7C20AE3E827BD61FF21CE5343134CC7A4F5ADC57EE43',
           exponent: 0,
           aliases: ['uxprt']
         },
@@ -15870,7 +15962,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/268814152066040B21D1617B04A1617CC0C2264A65179318B1624BE72735A733',
+      base: 'ibc/1C83E3B8A612C4FB7F3D7C20AE3E827BD61FF21CE5343134CC7A4F5ADC57EE43',
       name: 'Persistence',
       display: 'xprt',
       symbol: 'XPRT',
@@ -15893,12 +15985,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-5',
+            channel_id: 'channel-213',
             base_denom: 'uxprt',
             chain_name: 'persistence'
           },
           chain: {
-            channel_id: 'channel-6'
+            channel_id: 'channel-127'
           }
         }
       ]
@@ -15908,7 +16000,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/714D59172A15972F9D0E1085E8519CE9BA7BFA6D12874492D9E035F23B2D681B',
+            'ibc/D8E19037269E886B6517AE94770DCEE45149CED646862CD2686B3EB7B2FC8197',
           exponent: 0,
           aliases: ['stk/uatom']
         },
@@ -15918,7 +16010,7 @@ const assets: AssetList = {
           aliases: ['stk/atom']
         }
       ],
-      base: 'ibc/714D59172A15972F9D0E1085E8519CE9BA7BFA6D12874492D9E035F23B2D681B',
+      base: 'ibc/D8E19037269E886B6517AE94770DCEE45149CED646862CD2686B3EB7B2FC8197',
       name: 'PSTAKE staked ATOM',
       display: 'stkatom',
       symbol: 'stkATOM',
@@ -15926,12 +16018,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-5',
+            channel_id: 'channel-213',
             base_denom: 'stk/uatom',
             chain_name: 'persistence'
           },
           chain: {
-            channel_id: 'channel-6'
+            channel_id: 'channel-127'
           }
         }
       ],
@@ -15953,7 +16045,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/3B3D6D224E3B1BD8BEE2B2763966F4E8784EFD871C7F26CA3305D6B2C4E3BC7E',
+            'ibc/847BA4DC0E558646729F00A095A06778651FCBD26FC4A4F644C60D7DB14893A2',
           exponent: 0,
           aliases: [
             'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444'
@@ -15965,7 +16057,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/3B3D6D224E3B1BD8BEE2B2763966F4E8784EFD871C7F26CA3305D6B2C4E3BC7E',
+      base: 'ibc/847BA4DC0E558646729F00A095A06778651FCBD26FC4A4F644C60D7DB14893A2',
       name: 'pSTAKE Finance',
       display: 'pstake',
       symbol: 'PSTAKE',
@@ -15973,13 +16065,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-5',
+            channel_id: 'channel-213',
             base_denom:
               'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444',
             chain_name: 'persistence'
           },
           chain: {
-            channel_id: 'channel-6'
+            channel_id: 'channel-127'
           }
         }
       ],
@@ -16003,7 +16095,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/05F8C2DC20A26870EC5BF205BE1F71B71A7EA3807370998EE6F543C1056C1A5A',
+            'ibc/2D2070616DC4E2B23161809B7C740349342DE5F38868289F781AE4000604F560',
           exponent: 0,
           aliases: [
             'ibc/C8A74ABBE2AF892E15680D916A7C22130585CE5704F9B17A10F184A90D53BECA'
@@ -16015,7 +16107,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/05F8C2DC20A26870EC5BF205BE1F71B71A7EA3807370998EE6F543C1056C1A5A',
+      base: 'ibc/2D2070616DC4E2B23161809B7C740349342DE5F38868289F781AE4000604F560',
       name: 'Cosmos Hub Atom',
       display: 'atom',
       symbol: 'ATOM',
@@ -16023,13 +16115,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-5',
+            channel_id: 'channel-213',
             base_denom:
               'ibc/C8A74ABBE2AF892E15680D916A7C22130585CE5704F9B17A10F184A90D53BECA',
             chain_name: 'persistence'
           },
           chain: {
-            channel_id: 'channel-6'
+            channel_id: 'channel-127'
           }
         }
       ],
@@ -16053,7 +16145,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/A8B5E8475B5BC7D57BAC649BE25EFDDF5B8E7932B398F4FB15820E3A9CC0DC06',
+            'ibc/0E283A7A7A0C19EF549BC8B27498E7C9FDB770BE038027DAC5396D91988DFBDE',
           exponent: 0,
           aliases: [
             'ibc/C559977F5797BDC1D74C0836A10C379C991D664166CB60D776A83029852431B4'
@@ -16065,7 +16157,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/A8B5E8475B5BC7D57BAC649BE25EFDDF5B8E7932B398F4FB15820E3A9CC0DC06',
+      base: 'ibc/0E283A7A7A0C19EF549BC8B27498E7C9FDB770BE038027DAC5396D91988DFBDE',
       name: 'Tether USDT',
       display: 'usdt',
       symbol: 'USDT',
@@ -16073,13 +16165,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-5',
+            channel_id: 'channel-213',
             base_denom:
               'ibc/C559977F5797BDC1D74C0836A10C379C991D664166CB60D776A83029852431B4',
             chain_name: 'persistence'
           },
           chain: {
-            channel_id: 'channel-6'
+            channel_id: 'channel-127'
           }
         }
       ],
@@ -16100,7 +16192,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/937C154B895EF25851DE5CEDBAAD039755C5EC7C4899EC2D5CBD0478BEEF4D68',
+            'ibc/F4983F5182C63AB1BD268C6269BCC35960772112BD5C1545E6CBCD4F133E1EE1',
           exponent: 0,
           aliases: [
             'ibc/B3792E4A62DF4A934EF2DF5968556DB56F5776ED25BDE11188A4F58A7DD406F0'
@@ -16112,7 +16204,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/937C154B895EF25851DE5CEDBAAD039755C5EC7C4899EC2D5CBD0478BEEF4D68',
+      base: 'ibc/F4983F5182C63AB1BD268C6269BCC35960772112BD5C1545E6CBCD4F133E1EE1',
       name: 'Noble USD Coin',
       display: 'usdc',
       symbol: 'USDC',
@@ -16120,13 +16212,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-5',
+            channel_id: 'channel-213',
             base_denom:
               'ibc/B3792E4A62DF4A934EF2DF5968556DB56F5776ED25BDE11188A4F58A7DD406F0',
             chain_name: 'persistence'
           },
           chain: {
-            channel_id: 'channel-6'
+            channel_id: 'channel-127'
           }
         }
       ],
@@ -16150,7 +16242,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/D16B0BD0E9895B40EF5884B8FB5AEF6182ECEA7FF449F3AFEA16C1BB52C05D2F',
+            'ibc/6A3DEE67D2ECA13071D78C8FBBA49763AAB0F9A3AF7439FD96A605C1283C66BF',
           exponent: 0,
           aliases: [
             'ibc/23DC3FF0E4CBB53A1915E4C62507CB7796956E84C68CA49707787CB8BDE90A1E'
@@ -16162,7 +16254,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/D16B0BD0E9895B40EF5884B8FB5AEF6182ECEA7FF449F3AFEA16C1BB52C05D2F',
+      base: 'ibc/6A3DEE67D2ECA13071D78C8FBBA49763AAB0F9A3AF7439FD96A605C1283C66BF',
       name: 'dYdX',
       display: 'dydx',
       symbol: 'DYDX',
@@ -16170,13 +16262,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-5',
+            channel_id: 'channel-213',
             base_denom:
               'ibc/23DC3FF0E4CBB53A1915E4C62507CB7796956E84C68CA49707787CB8BDE90A1E',
             chain_name: 'persistence'
           },
           chain: {
-            channel_id: 'channel-6'
+            channel_id: 'channel-127'
           }
         }
       ],
@@ -16200,7 +16292,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/3B6F2774F8F368538056C6F4C5A46F9E2CA793ACF505D36E31DD06D9AD6E6B6C',
+            'ibc/1047F04C3F3F31BA09BCBD6F47E7FBD627023064E3516849182E231E3F5F4408',
           exponent: 0,
           aliases: ['stk/uosmo']
         },
@@ -16210,7 +16302,7 @@ const assets: AssetList = {
           aliases: ['stk/osmo']
         }
       ],
-      base: 'ibc/3B6F2774F8F368538056C6F4C5A46F9E2CA793ACF505D36E31DD06D9AD6E6B6C',
+      base: 'ibc/1047F04C3F3F31BA09BCBD6F47E7FBD627023064E3516849182E231E3F5F4408',
       name: 'PSTAKE staked OSMO',
       display: 'stkosmo',
       symbol: 'stkOSMO',
@@ -16218,12 +16310,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-5',
+            channel_id: 'channel-213',
             base_denom: 'stk/uosmo',
             chain_name: 'persistence'
           },
           chain: {
-            channel_id: 'channel-6'
+            channel_id: 'channel-127'
           }
         }
       ],
@@ -16244,7 +16336,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/8F3FE2CCBC77B111DA9640B633FC63B6514E156E6413D838EBF0DA64C3CF6F3B',
+            'ibc/DE1231B22E50EBEC13460E63B56195B086B197D061B34AAF70DB59407B35B274',
           exponent: 0,
           aliases: ['stk/adydx']
         },
@@ -16254,7 +16346,7 @@ const assets: AssetList = {
           aliases: ['stk/dydx']
         }
       ],
-      base: 'ibc/8F3FE2CCBC77B111DA9640B633FC63B6514E156E6413D838EBF0DA64C3CF6F3B',
+      base: 'ibc/DE1231B22E50EBEC13460E63B56195B086B197D061B34AAF70DB59407B35B274',
       name: 'PSTAKE staked DYDX',
       display: 'stkdydx',
       symbol: 'stkDYDX',
@@ -16262,12 +16354,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-5',
+            channel_id: 'channel-213',
             base_denom: 'stk/adydx',
             chain_name: 'persistence'
           },
           chain: {
-            channel_id: 'channel-6'
+            channel_id: 'channel-127'
           }
         }
       ],
@@ -16287,7 +16379,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/F99B3E3241905674F50912429C2DEB6B36B3B725503795624E5470B2B78BF452',
+            'ibc/803D7549538EDDF6BA56FF6492A19E5FB274B14EBD601674AD9991F072F9BD9D',
           exponent: 0,
           aliases: ['stk/ustars']
         },
@@ -16297,7 +16389,7 @@ const assets: AssetList = {
           aliases: ['stk/stars']
         }
       ],
-      base: 'ibc/F99B3E3241905674F50912429C2DEB6B36B3B725503795624E5470B2B78BF452',
+      base: 'ibc/803D7549538EDDF6BA56FF6492A19E5FB274B14EBD601674AD9991F072F9BD9D',
       name: 'PSTAKE staked STARS',
       display: 'stkstars',
       symbol: 'stkSTARS',
@@ -16305,12 +16397,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-5',
+            channel_id: 'channel-213',
             base_denom: 'stk/ustars',
             chain_name: 'persistence'
           },
           chain: {
-            channel_id: 'channel-6'
+            channel_id: 'channel-127'
           }
         }
       ],
@@ -16329,7 +16421,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/6AD426D7E24D564E64F984CA92BF0A8935396942A0968BB7901C198AE9310EA6',
+            'ibc/DE8C75B4F901E0420E854D1000D814FCB790EA64E0E1D65B7563E9F794679FD2',
           exponent: 0,
           aliases: [
             'ibc/AD8E1D4AC4EA8FC79CC46E33319A3791477D4DEBFC30D5D874074B993422B41B'
@@ -16341,7 +16433,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/6AD426D7E24D564E64F984CA92BF0A8935396942A0968BB7901C198AE9310EA6',
+      base: 'ibc/DE8C75B4F901E0420E854D1000D814FCB790EA64E0E1D65B7563E9F794679FD2',
       name: 'Stargaze',
       display: 'stars',
       symbol: 'STARS',
@@ -16349,13 +16441,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-5',
+            channel_id: 'channel-213',
             base_denom:
               'ibc/AD8E1D4AC4EA8FC79CC46E33319A3791477D4DEBFC30D5D874074B993422B41B',
             chain_name: 'persistence'
           },
           chain: {
-            channel_id: 'channel-6'
+            channel_id: 'channel-127'
           }
         }
       ],
@@ -16379,7 +16471,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/E62E39531C9C873B79A6F807FF1F42BD8F62D64F2A1BB4BA95F2174561775339',
+            'ibc/A42238FD46EEE29BD1316CE2A24A01A5366E3481BD16743D9D38440F3A6C8C55',
           exponent: 0,
           aliases: [
             'ibc/5D3B6445EA1D7064C4B1CCB588638589529556E1BCBADF13475021B42EA8C73B'
@@ -16391,7 +16483,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/E62E39531C9C873B79A6F807FF1F42BD8F62D64F2A1BB4BA95F2174561775339',
+      base: 'ibc/A42238FD46EEE29BD1316CE2A24A01A5366E3481BD16743D9D38440F3A6C8C55',
       name: 'Shade',
       display: 'shd',
       symbol: 'SHD',
@@ -16399,13 +16491,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-5',
+            channel_id: 'channel-213',
             base_denom:
               'ibc/5D3B6445EA1D7064C4B1CCB588638589529556E1BCBADF13475021B42EA8C73B',
             chain_name: 'persistence'
           },
           chain: {
-            channel_id: 'channel-6'
+            channel_id: 'channel-127'
           }
         }
       ],

@@ -85,6 +85,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/sentinel/rpc',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'http://163.197.193.2:26657',
+        provider: 'Tesla Full Node'
       }
     ],
     rest: [
@@ -127,6 +131,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/sentinel/rest',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'http://163.197.193.2:26657',
+        provider: 'Tesla Full Node'
       }
     ],
     grpc: [

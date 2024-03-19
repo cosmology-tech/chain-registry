@@ -77,6 +77,7 @@ import * as _konstellation from './konstellation';
 import * as _kujira from './kujira';
 import * as _kyve from './kyve';
 import * as _lambda from './lambda';
+import * as _lava from './lava';
 import * as _likecoin from './likecoin';
 import * as _logos from './logos';
 import * as _loyal from './loyal';
@@ -230,6 +231,7 @@ const chains: Chain[] = [
   _kujira.chain,
   _kyve.chain,
   _lambda.chain,
+  _lava.chain,
   _likecoin.chain,
   _logos.chain,
   _loyal.chain,

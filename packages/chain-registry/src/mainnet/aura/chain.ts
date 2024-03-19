@@ -99,6 +99,10 @@ const info: Chain = {
       {
         address: 'https://aura-rpc.palamar.io',
         provider: 'Palamar'
+      },
+      {
+        address: 'https://aura.rpc.srv.stakr.space',
+        provider: 'STAKR.space'
       }
     ],
     rest: [
@@ -157,6 +161,10 @@ const info: Chain = {
       {
         address: 'https://aura-api.palamar.io',
         provider: 'Palamar'
+      },
+      {
+        address: 'https://aura.api.srv.stakr.space',
+        provider: 'STAKR.space'
       }
     ],
     grpc: [
@@ -219,6 +227,10 @@ const info: Chain = {
       {
         address: 'aura-grpc.palamar.io:443',
         provider: 'Palamar'
+      },
+      {
+        address: 'aura.grpc.srv.stakr.space:19090',
+        provider: 'STAKR.space'
       }
     ]
   },
@@ -269,6 +281,13 @@ const info: Chain = {
       tx_page: 'https://explorer.safeblock.space/aura/tx/${txHash}',
       account_page:
         'https://explorer.safeblock.space/aura/account/${accountAddress}'
+    },
+    {
+      kind: 'STAKR.space explorer',
+      url: 'https://explorer.stakr.space/aura/',
+      tx_page: 'https://explorer.stakr.space/aura/tx/${txHash}',
+      account_page:
+        'https://explorer.stakr.space/aura/account/${accountAddress}'
     }
   ],
   images: [

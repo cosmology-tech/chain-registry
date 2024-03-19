@@ -51,10 +51,6 @@ const info: Chain = {
         provider: 'Archway Foundation'
       },
       {
-        address: 'https://rpc-archway.cosmos-spaces.cloud',
-        provider: 'Cosmos Spaces'
-      },
-      {
         address: 'https://archway-mainnet-archive.allthatnode.com:26657',
         provider: 'All That Node'
       },
@@ -183,10 +179,6 @@ const info: Chain = {
       {
         address: 'https://archway.api.kjnodes.com',
         provider: 'kjnodes'
-      },
-      {
-        address: 'https://api-archway.cosmos-spaces.cloud',
-        provider: 'Cosmos Spaces'
       },
       {
         address: 'https://api-archway.cryptech.com.ua',
@@ -333,10 +325,6 @@ const info: Chain = {
       {
         address: 'grpc.archway.stakeup.tech:443',
         provider: 'StakeUp'
-      },
-      {
-        address: 'grpc-archway.cosmos-spaces.cloud:4820',
-        provider: 'Cosmos Spaces'
       },
       {
         address: 'grpc-archway-mainnet.testnet-pride.com:9096',
