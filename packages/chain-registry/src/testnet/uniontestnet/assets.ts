@@ -4,7 +4,7 @@ const info: AssetList = {
   chain_name: 'uniontestnet',
   assets: [
     {
-      description: 'The native token of union',
+      description: 'Union native token',
       denom_units: [
         {
           denom: 'muno',
@@ -18,17 +18,17 @@ const info: AssetList = {
         }
       ],
       base: 'muno',
-      name: 'union',
+      name: 'Union',
       display: 'union',
-      symbol: 'UNION',
+      symbol: 'UNO',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/union/images/union.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/uniontestnet/images/union.png'
       },
-      coingecko_id: 'unionlabs',
+      coingecko_id: '',
       keywords: ['staking'],
       images: [
         {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/union/images/union.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/uniontestnet/images/union.png'
         }
       ]
     }

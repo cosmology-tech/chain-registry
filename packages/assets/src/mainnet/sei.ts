@@ -1460,50 +1460,6 @@ const assets: AssetList = {
       }
     },
     {
-      description: 'The native token of Coreum',
-      denom_units: [
-        {
-          denom:
-            'ibc/63B67C6550E2A029F13741E380C24ED5D49A8EBE2FD0F4975B9437037066FF0B',
-          exponent: 0,
-          aliases: ['ucore']
-        },
-        {
-          denom: 'core',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/63B67C6550E2A029F13741E380C24ED5D49A8EBE2FD0F4975B9437037066FF0B',
-      name: 'Coreum',
-      display: 'core',
-      symbol: 'COREUM',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
-      },
-      coingecko_id: 'coreum',
-      keywords: ['dex', 'staking', 'wasm', 'assets', 'nft'],
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-26',
-            base_denom: 'ucore',
-            chain_name: 'coreum'
-          },
-          chain: {
-            channel_id: 'channel-47'
-          }
-        }
-      ]
-    },
-    {
       description: 'The native staking and governance token of the Cosmos Hub.',
       denom_units: [
         {

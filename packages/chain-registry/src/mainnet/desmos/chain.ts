@@ -68,6 +68,10 @@ const info: Chain = {
       {
         address: 'https://desmos-rpc.panthea.eu',
         provider: 'Panthea EU'
+      },
+      {
+        address: 'https://desmos.declab.pro:26613',
+        provider: 'Decloud Nodes Lab'
       }
     ],
     rest: [
@@ -98,6 +102,10 @@ const info: Chain = {
       {
         address: 'https://desmos-api.panthea.eu',
         provider: 'Panthea EU'
+      },
+      {
+        address: 'https://vidulum.declab.pro:443',
+        provider: 'Decloud Nodes Lab'
       }
     ],
     grpc: [
@@ -128,6 +136,10 @@ const info: Chain = {
       {
         address: 'desmos-grpc.panthea.eu:16730',
         provider: 'Panthea EU'
+      },
+      {
+        address: 'https://vidulum.declab.pro:9009',
+        provider: 'Decloud Nodes Lab'
       }
     ]
   },
@@ -164,6 +176,11 @@ const info: Chain = {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/desmos',
       tx_page: 'https://explorer.tcnetwork.io/desmos/transaction/${txHash}'
+    },
+    {
+      kind: 'Decloud Nodes Lab',
+      url: 'https://explorer.declab.pro/Desmos',
+      tx_page: 'https://explorer.declab.pro/Desmos/tx/${txHash}'
     }
   ],
   images: [

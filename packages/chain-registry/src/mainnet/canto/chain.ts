@@ -55,6 +55,10 @@ const info: Chain = {
       {
         address: 'https://canto-mainnet-rpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://rpc-canto.kewrnode.com',
+        provider: 'Kewr Node'
       }
     ],
     rest: [
@@ -73,6 +77,10 @@ const info: Chain = {
       {
         address: 'https://canto-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://rest-canto.kewrnode.com',
+        provider: 'Kewr Node'
       }
     ],
     grpc: [

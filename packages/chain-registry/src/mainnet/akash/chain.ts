@@ -103,6 +103,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/akash/rpc',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://akash.declab.pro:26601',
+        provider: 'Decloud Nodes Lab'
       }
     ],
     rest: [
@@ -169,6 +173,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/akash/rest',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://akash.declab.pro:443',
+        provider: 'Decloud Nodes Lab'
       }
     ],
     grpc: [
@@ -203,6 +211,10 @@ const info: Chain = {
       {
         address: 'akash-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://akash.declab.pro:9001',
+        provider: 'Decloud Nodes Lab'
       }
     ]
   },
@@ -249,6 +261,11 @@ const info: Chain = {
       kind: 'ValidatorNode',
       url: 'https://explorer.validatornode.com/akash-network',
       tx_page: 'https://explorer.validatornode.com/akash-network/tx/${txHash}'
+    },
+    {
+      kind: 'Decloud Nodes Lab',
+      url: 'https://explorer.declab.pro/Akash',
+      tx_page: 'https://explorer.declab.pro/Akash/tx/${txHash}'
     }
   ],
   images: [

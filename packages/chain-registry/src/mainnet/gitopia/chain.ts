@@ -160,6 +160,10 @@ const info: Chain = {
       {
         address: 'https://gitopia-rpc.tothemars.network:443',
         provider: 'ToTheMars'
+      },
+      {
+        address: 'https://gitopia.declab.pro:26625',
+        provider: 'Decloud Nodes Lab'
       }
     ],
     rest: [
@@ -282,6 +286,10 @@ const info: Chain = {
       {
         address: 'https://gitopia-api.tothemars.network:443',
         provider: 'ToTheMars'
+      },
+      {
+        address: 'https://gitopia.declab.pro:443',
+        provider: 'Decloud Nodes Lab'
       }
     ],
     grpc: [
@@ -396,6 +404,10 @@ const info: Chain = {
       {
         address: 'gitopia-grpc.tothemars.network:21190',
         provider: 'ToTheMars'
+      },
+      {
+        address: 'https://gitopia.declab.pro:9017',
+        provider: 'Decloud Nodes Lab'
       }
     ]
   },
@@ -501,6 +513,13 @@ const info: Chain = {
       tx_page: 'https://explorer.tothemars.network/gitopia/tx/${txHash}',
       account_page:
         'https://explorer.tothemars.network/gitopia/account/${accountAddress}'
+    },
+    {
+      kind: 'Decloud Nodes Lab',
+      url: 'https://explorer.declab.pro/Gitopia',
+      tx_page: 'https://explorer.declab.pro/Gitopia/tx/${txHash}',
+      account_page:
+        'https://explorer.declab.pro/Gitopia/account/${accountAddress}'
     }
   ],
   logo_URIs: {

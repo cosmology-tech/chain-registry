@@ -89,6 +89,10 @@ const info: Chain = {
       {
         address: 'http://163.197.193.2:26657',
         provider: 'Tesla Full Node'
+      },
+      {
+        address: 'https://sentinel.declab.pro:26628',
+        provider: 'Decloud Nodes Lab'
       }
     ],
     rest: [
@@ -135,6 +139,10 @@ const info: Chain = {
       {
         address: 'http://163.197.193.2:26657',
         provider: 'Tesla Full Node'
+      },
+      {
+        address: 'https://sentinel.declab.pro:443',
+        provider: 'Decloud Nodes Lab'
       }
     ],
     grpc: [
@@ -157,6 +165,10 @@ const info: Chain = {
       {
         address: 'sentinel-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://sentinel.declab.pro:9019',
+        provider: 'Decloud Nodes Lab'
       }
     ]
   },
@@ -186,6 +198,11 @@ const info: Chain = {
       kind: 'ValidatorNode',
       url: 'https://explorer.validatornode.com/sentinel',
       tx_page: 'https://explorer.validatornode.com/sentinel/tx/${txHash}'
+    },
+    {
+      kind: 'Decloud Nodes Lab',
+      url: 'https://explorer.declab.pro/Sentinel',
+      tx_page: 'https://explorer.declab.pro/Sentinel/tx/${txHash}'
     }
   ],
   images: [

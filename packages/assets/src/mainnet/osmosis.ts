@@ -4744,6 +4744,55 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'XRP bridged from XRPL',
+      denom_units: [
+        {
+          denom:
+            'ibc/63A7CA0B6838AD8CAD6B5103998FF9B9B6A6F06FBB9638BFF51E63E0142339F3',
+          exponent: 0,
+          aliases: [
+            'drop-core1zhs909jp9yktml6qqx9f0ptcq2xnhhj99cja03j3lfcsp2pgm86studdrz'
+          ]
+        },
+        {
+          denom: 'xrp',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/63A7CA0B6838AD8CAD6B5103998FF9B9B6A6F06FBB9638BFF51E63E0142339F3',
+      name: 'Ripple',
+      display: 'xrp',
+      symbol: 'XRP',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom:
+              'drop-core1zhs909jp9yktml6qqx9f0ptcq2xnhhj99cja03j3lfcsp2pgm86studdrz',
+            chain_name: 'coreum'
+          },
+          chain: {
+            channel_id: 'channel-2188'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'xrpl',
+            base_denom: 'drop'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.svg'
+      }
+    },
+    {
       description: 'The native staking and governance token of the Cosmos Hub.',
       denom_units: [
         {

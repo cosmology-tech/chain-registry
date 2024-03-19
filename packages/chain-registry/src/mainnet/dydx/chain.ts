@@ -51,10 +51,6 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://community.nuxian-node.ch:6797/dydx/trpc',
-        provider: 'PRO Delegators'
-      },
-      {
         address: 'https://dydx-dao-rpc.polkachu.com',
         provider: 'Polkachu'
       },
@@ -97,6 +93,10 @@ const info: Chain = {
       {
         address: 'https://dydx-rpc.enigma-validator.com',
         provider: 'Enigma'
+      },
+      {
+        address: 'https://community.nuxian-node.ch:6797/dydx/trpc',
+        provider: 'PRO Delegators'
       }
     ],
     rest: [

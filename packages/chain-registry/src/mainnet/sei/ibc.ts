@@ -34,37 +34,6 @@ const info: IBCInfo[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain_1: {
-      chain_name: 'coreum',
-      client_id: '07-tendermint-41',
-      connection_id: 'connection-28'
-    },
-    chain_2: {
-      chain_name: 'sei',
-      client_id: '07-tendermint-47',
-      connection_id: 'connection-79'
-    },
-    channels: [
-      {
-        chain_1: {
-          channel_id: 'channel-26',
-          port_id: 'transfer'
-        },
-        chain_2: {
-          channel_id: 'channel-47',
-          port_id: 'transfer'
-        },
-        ordering: 'unordered',
-        version: 'ics20-1',
-        tags: {
-          status: 'live',
-          preferred: true
-        }
-      }
-    ]
-  },
-  {
-    $schema: '../ibc_data.schema.json',
-    chain_1: {
       chain_name: 'cosmoshub',
       client_id: '07-tendermint-1140',
       connection_id: 'connection-827'

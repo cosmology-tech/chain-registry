@@ -1386,6 +1386,55 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'XRP bridged from XRPL',
+      denom_units: [
+        {
+          denom:
+            'ibc/B9B63288A0D54559B8A9358B863E0CA23A1C10232D80F6581ED0E4BEB907A428',
+          exponent: 0,
+          aliases: [
+            'drop-core1zhs909jp9yktml6qqx9f0ptcq2xnhhj99cja03j3lfcsp2pgm86studdrz'
+          ]
+        },
+        {
+          denom: 'xrp',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/B9B63288A0D54559B8A9358B863E0CA23A1C10232D80F6581ED0E4BEB907A428',
+      name: 'Ripple',
+      display: 'xrp',
+      symbol: 'XRP',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom:
+              'drop-core1zhs909jp9yktml6qqx9f0ptcq2xnhhj99cja03j3lfcsp2pgm86studdrz',
+            chain_name: 'coreum'
+          },
+          chain: {
+            channel_id: 'channel-120'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'xrpl',
+            base_denom: 'drop'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.svg'
+      }
+    },
+    {
       description: 'The native staking and governance token of the Cosmos Hub.',
       denom_units: [
         {
@@ -20259,6 +20308,49 @@ const assets: AssetList = {
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
+        }
+      ]
+    },
+    {
+      description: 'Hash is the staking token of the Provenance Blockchain',
+      denom_units: [
+        {
+          denom:
+            'ibc/3D4931D8D0FC8E1FF552C29F126C43448514DEDD156F4B6A5C7750D29A53FCCF',
+          exponent: 0,
+          aliases: ['nhash']
+        },
+        {
+          denom: 'hash',
+          exponent: 9
+        }
+      ],
+      base: 'ibc/3D4931D8D0FC8E1FF552C29F126C43448514DEDD156F4B6A5C7750D29A53FCCF',
+      name: 'Hash',
+      display: 'hash',
+      symbol: 'HASH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.svg'
+      },
+      coingecko_id: 'provenance-blockchain',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-9',
+            base_denom: 'nhash',
+            chain_name: 'provenance'
+          },
+          chain: {
+            channel_id: 'channel-116'
+          }
         }
       ]
     },

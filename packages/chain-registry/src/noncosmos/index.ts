@@ -15,6 +15,7 @@ export * as polygon from './polygon';
 export * as solana from './solana';
 export * as statemine from './statemine';
 export * as sui from './sui';
+export * as xrpl from './xrpl';
 export * as avalanchetestnet from './avalanchetestnet';
 export * as binancesmartchaintestnet from './binancesmartchaintestnet';
 export * as ethereumtestnet from './ethereumtestnet';

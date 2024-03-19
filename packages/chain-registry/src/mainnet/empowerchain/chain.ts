@@ -82,6 +82,10 @@ const info: Chain = {
       {
         address: 'https://rpc.empowerchain.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://empower.declab.pro:26607',
+        provider: 'Decloud Nodes Lab'
       }
     ],
     rest: [
@@ -128,6 +132,10 @@ const info: Chain = {
       {
         address: 'https://lcd.empowerchain.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://empower.declab.pro:443',
+        provider: 'Decloud Nodes Lab'
       }
     ],
     grpc: [
@@ -166,6 +174,10 @@ const info: Chain = {
       {
         address: 'https://grpc.empowerchain.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://empower.declab.pro:9005',
+        provider: 'Decloud Nodes Lab'
       }
     ]
   },
@@ -190,6 +202,13 @@ const info: Chain = {
       tx_page: 'https://exp.stakevillage.net/empower/tx/${txHash}',
       account_page:
         'https://exp.stakevillage.net/empower/account/${accountAddress}'
+    },
+    {
+      kind: 'Decloud Nodes Lab',
+      url: 'https://explorer.declab.pro/Empower',
+      tx_page: 'https://explorer.declab.pro/Empower/tx/${txHash}',
+      account_page:
+        'https://explorer.declab.pro/Empower/account/{$accountAddress}'
     }
   ]
 };
