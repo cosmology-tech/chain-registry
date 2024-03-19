@@ -1,15 +1,14 @@
-import { Asset } from '@chain-registry/types';
+import { Asset, AssetList } from '@chain-registry/types';
 import type { CoinDenom, CoinGeckoUSD, Exponent, PriceHash } from '@chain-registry/utils';
-import { ChainInfo } from './chain-info';
-export interface ChainRegistryChainUtilOptions {
+export interface ChainUtilsOptions {
     chainName: string;
-    chainInfo: ChainInfo;
+    assetList?: AssetList;
+    ibcAssetList?: AssetList;
 }
-export declare class ChainRegistryChainUtil {
-    chainName: string;
-    chainInfo: ChainInfo;
+export declare class ChainUtils {
+    private _chainName;
     private _assets;
-    constructor(options: ChainRegistryChainUtilOptions);
+    constructor(options: ChainUtilsOptions);
     getAssetByDenom(denom: CoinDenom): Asset;
     getDenomByCoinGeckoId(coinGeckoId: string): CoinDenom;
     getCoinGeckoIdByDenom(coinGeckoId: string): CoinDenom;
