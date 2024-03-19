@@ -1,9 +1,9 @@
-import { ChainRegistryClient, ChainUtils } from '../src';
+import { ChainRegistryClient, ChainRegistryUtils } from '../src';
 
 const timeout = 30000;
 
-describe('tests for asset-list-util', () => {
-  let utils: ChainUtils;
+describe('tests for chain registry utils', () => {
+  let utils: ChainRegistryUtils;
 
   beforeAll(async () => {
     const client = new ChainRegistryClient({ chainNames: ['osmosis'] });
@@ -11,7 +11,7 @@ describe('tests for asset-list-util', () => {
 
     const { assetList, ibcAssetList } = client.getChainFullData('osmosis');
 
-    utils = new ChainUtils({
+    utils = new ChainRegistryUtils({
       chainName: 'osmosis',
       assetList,
       ibcAssetList
@@ -20,7 +20,12 @@ describe('tests for asset-list-util', () => {
 
   it('getAssetByDenom', () => {
     const asset = utils.getAssetByDenom('uosmo');
-    expect(asset.base).toEqual('uosmo');
+    expect(asset?.base).toEqual('uosmo');
+  });
+
+  it('getAssetBySymbol', () => {
+    const asset = utils.getAssetBySymbol('ION');
+    expect(asset?.base).toEqual('uion');
   });
 
   it('getDenomByCoinGeckoId', () => {
@@ -30,17 +35,17 @@ describe('tests for asset-list-util', () => {
     expect(denom2).toEqual('uion');
   });
 
-  it('getSymbolByChainDenom', () => {
-    const denom1 = utils.getSymbolByChainDenom('uosmo');
+  it('getSymbolByDenom', () => {
+    const denom1 = utils.getSymbolByDenom('uosmo');
     expect(denom1).toEqual('OSMO');
-    const denom2 = utils.getSymbolByChainDenom('uion');
+    const denom2 = utils.getSymbolByDenom('uion');
     expect(denom2).toEqual('ION');
   });
 
-  it('getChainDenomBySymbol', () => {
-    const denom1 = utils.getChainDenomBySymbol('OSMO');
+  it('getDenomBySymbol', () => {
+    const denom1 = utils.getDenomBySymbol('OSMO');
     expect(denom1).toEqual('uosmo');
-    const denom2 = utils.getChainDenomBySymbol('ION');
+    const denom2 = utils.getDenomBySymbol('ION');
     expect(denom2).toEqual('uion');
   });
 
@@ -49,13 +54,54 @@ describe('tests for asset-list-util', () => {
     expect(exponent).toEqual(6);
   });
 
-  it('convertBaseUnitsToDollarValue', () => {
-    const value = utils.convertBaseUnitsToDollarValue({ uosmo: 1 }, 'OSMO', 5);
+  it('getExponentBySymbol', () => {
+    const exponent = utils.getExponentBySymbol('ION');
+    expect(exponent).toEqual(6);
+  });
+
+  it('getCoinGeckoIdByDenom', () => {
+    const id = utils.getCoinGeckoIdByDenom('uosmo');
+    expect(id).toEqual('osmosis');
+  });
+
+  it('getTokenLogoByDenom', () => {
+    const logo = utils.getTokenLogoByDenom('uosmo');
+    expect(logo).toEqual(
+      'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png'
+    );
+  });
+
+  it('getTokenNameByDenom', () => {
+    const name = utils.getTokenNameByDenom('uosmo');
+    expect(name).toEqual('Osmosis');
+  });
+
+  it('getChainNameByDenom', () => {
+    const name = utils.getChainNameByDenom(
+      'ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA'
+    );
+    expect(name).toEqual('jackal');
+  });
+
+  it('mapCoinGeckoPricesToDenoms', () => {
+    const prices = {
+      osmosis: { usd: 0.0001 },
+      ion: { usd: 0.0002 }
+    };
+    const priceMap = utils.mapCoinGeckoPricesToDenoms(prices);
+    expect(priceMap).toEqual({
+      uosmo: 0.0001,
+      uion: 0.0002
+    });
+  });
+
+  it('convertBaseUnitToDollarValue', () => {
+    const value = utils.convertBaseUnitToDollarValue({ uosmo: 1 }, 'OSMO', 5);
     expect(value).toEqual('0.000005');
   });
 
-  it('convertDollarValueToDenomUnits', () => {
-    const value = utils.convertDollarValueToDenomUnits(
+  it('convertDollarValueToBaseUnit', () => {
+    const value = utils.convertDollarValueToBaseUnit(
       { uosmo: 1 },
       'OSMO',
       0.00001
@@ -63,13 +109,13 @@ describe('tests for asset-list-util', () => {
     expect(value).toEqual('10');
   });
 
-  it('convertBaseUnitsToDisplayUnits', () => {
-    const value = utils.convertBaseUnitsToDisplayUnits('OSMO', 99);
+  it('convertBaseUnitToDisplayUnit', () => {
+    const value = utils.convertBaseUnitToDisplayUnit('OSMO', 99);
     expect(value).toEqual('0.000099');
   });
 
-  it('uosmo coingecko id', () => {
-    const id = utils.getCoinGeckoIdByDenom('uosmo');
-    expect(id).toEqual('osmosis');
+  it('convertDisplayUnitToBaseUnit', () => {
+    const value = utils.convertDisplayUnitToBaseUnit('OSMO', 0.000099);
+    expect(value).toEqual('99');
   });
 });

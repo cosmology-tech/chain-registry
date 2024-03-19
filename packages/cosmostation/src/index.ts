@@ -1,5 +1,5 @@
 import { Asset, AssetList, Chain } from '@chain-registry/types';
-import { getGasPriceStep } from '@chain-registry/utils';
+import { getGasPriceRangesFromChain } from '@chain-registry/utils';
 import { AddChainParams } from '@cosmostation/extension-client/types/message';
 
 const getRest = (chain: Chain): string => chain.apis?.rest[0]?.address;
@@ -50,7 +50,7 @@ export const chainRegistryChainToCosmostation = (
     currencies.find((currency) => stakingDenoms.includes(currency.baseDenom)) ??
     currencies[0];
 
-  const gasPriceStep = getGasPriceStep(chain);
+  const gasPriceRanges = getGasPriceRangesFromChain(chain);
 
   const chainInfo: AddChainParams = {
     chainId: chain.chain_id,
@@ -64,8 +64,8 @@ export const chainRegistryChainToCosmostation = (
     coinGeckoId: currencies[0].coinGeckoId,
     gasRate: {
       // optional (default: { average: '0.025', low: '0.0025', tiny: '0.00025' })
-      average: gasPriceStep.average.toString(),
-      low: gasPriceStep.low.toString(),
+      average: gasPriceRanges.average.toString(),
+      low: gasPriceRanges.low.toString(),
       tiny: '0.00025'
     }
     // TODO implement type

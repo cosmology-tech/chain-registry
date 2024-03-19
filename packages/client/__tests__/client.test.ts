@@ -39,6 +39,6 @@ describe('Test client', () => {
   it('Test chain utils', () => {
     const chainUtils = client.getChainUtils('osmosis');
     const asset = chainUtils.getAssetByDenom('uosmo');
-    expect(asset.name).toEqual('Osmosis');
+    expect(asset?.name).toEqual('Osmosis');
   });
 });
