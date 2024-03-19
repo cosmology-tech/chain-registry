@@ -1,0 +1,57 @@
+name: Publish
+
+on:
+  # schedule:
+  # Runs every day at 1:00 AM UTC
+  # - cron: "0 1 * * *"
+
+  workflow_dispatch:
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: "true"
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.14.0
+          registry-url: https://registry.npmjs.org/
+      - name: Code Generation
+        run: |
+          git submodule update --remote
+          CHANGES_DESC="build-$(date +%Y%m%d-%H%M%S)"
+          yarn
+          yarn bootstrap
+          yarn build
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor}}@users.noreply.github.com"
+          cd packages/chain-registry
+          yarn codegen
+          yarn build
+          cd ../../
+          cd packages/assets
+          yarn codegen
+          cd ../../
+          cd packages/osmosis
+          yarn codegen
+          cd ../../
+          cd packages/juno
+          yarn codegen
+          cd ../../
+          git add .
+          if ! git diff --staged --quiet; then
+            git commit -am "build 🛠 $CHANGES_DESC"
+            git push origin main
+            lerna publish --no-verify-access --yes
+            echo "GIT_RESULT=Done." >> $GITHUB_ENV
+          else
+            echo "GIT_RESULT=No changes to commit." >> $GITHUB_ENV
+          fi
+      - name: Git Ops
+        run: |
+          echo $GIT_RESULT
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
+          GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
