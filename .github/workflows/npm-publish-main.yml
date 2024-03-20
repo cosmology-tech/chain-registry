@@ -1,9 +1,9 @@
 name: Publish Main
 
 on:
-  # schedule:
-  # Runs every day at 1:00 AM UTC
-  # - cron: "0 1 * * *"
+  schedule:
+    # Runs every day at 1:00 AM UTC
+    - cron: "0 1 * * *"
 
   workflow_dispatch:
 
