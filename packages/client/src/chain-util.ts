@@ -24,25 +24,27 @@ import {
   convertDisplayUnitToBaseUnit
 } from '@chain-registry/utils';
 
-export interface ChainRegistryUtilsOptions {
+import { ChainInfo } from './chain-info';
+
+export interface ChainRegistryChainUtilOptions {
   chainName: string;
-  assetList?: AssetList;
-  ibcAssetList?: AssetList;
+  chainInfo: ChainInfo;
 }
 
-export class ChainRegistryUtils {
-  private _chainName: string;
+export class ChainRegistryChainUtil {
   private _assets: AssetList[] = [];
+  private _chainName: string;
 
-  constructor(options: ChainRegistryUtilsOptions) {
+  constructor(options: ChainRegistryChainUtilOptions) {
+    const { chainName, chainInfo } = options;
     this._chainName = options.chainName;
     this._assets = [
       {
         assets: [
-          ...(options.assetList?.assets || []),
-          ...(options.ibcAssetList?.assets || [])
+          ...chainInfo.nativeAssetList.assets,
+          ...chainInfo.assetLists.flatMap(({ assets }) => assets)
         ],
-        chain_name: options.chainName
+        chain_name: chainName
       }
     ];
   }

@@ -1,2 +1,4 @@
-export * from './utils';
-export * from './client';
+export * from './chain-info';
+export * from './chain-util';
+export * from './fetcher';
+export * from './registry';
