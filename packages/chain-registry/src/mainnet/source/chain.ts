@@ -92,6 +92,10 @@ const info: Chain = {
       {
         address: 'https://rpc.source.posthuman.digital',
         provider: 'posthuman'
+      },
+      {
+        address: 'https://source.declab.pro:26604',
+        provider: 'Decloud Nodes Lab'
       }
     ],
     rest: [
@@ -153,7 +157,11 @@ const info: Chain = {
       },
       {
         address: 'http://source.api.staking-explorer.com',
-        provider: 'Daily $SOURCE DROP 💰'
+        provider: 'Daily DROP'
+      },
+      {
+        address: 'https://source.declab.pro:443',
+        provider: 'Decloud Nodes Lab'
       }
     ],
     grpc: [
@@ -200,6 +208,10 @@ const info: Chain = {
       {
         address: 'grpc.source.roomit.xyz:8443',
         provider: 'RoomIT'
+      },
+      {
+        address: 'https://source.declab.pro:9003',
+        provider: 'Decloud Nodes Lab'
       }
     ]
   },
@@ -260,6 +272,13 @@ const info: Chain = {
       tx_page: 'https://explorer.posthuman.digital/source/tx/${txHash}',
       account_page:
         'https://explorer.posthuman.digital/source/account/${accountAddress}'
+    },
+    {
+      kind: 'Decloud Nodes Lab',
+      url: 'https://explorer.declab.pro/Source',
+      tx_page: 'https://explorer.declab.pro/Source/tx/${txHash}',
+      account_page:
+        'https://explorer.declab.pro/Source/account/${accountAddress}'
     }
   ],
   images: [

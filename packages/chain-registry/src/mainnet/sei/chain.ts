@@ -143,6 +143,12 @@ const info: Chain = {
       account_page: 'https://www.mintscan.io/sei/accounts/${accountAddress}'
     },
     {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/sei',
+      tx_page: 'https://ezstaking.app/sei/txs/${txHash}',
+      account_page: 'https://ezstaking.app/sei/account/${accountAddress}'
+    },
+    {
       kind: 'seiscan',
       url: 'https://www.seiscan.app/pacific-1',
       tx_page: 'https://www.seiscan.app/pacific-1/txs/${txHash}',

@@ -101,7 +101,7 @@ const info: Chain = {
         provider: 'StakeTown'
       },
       {
-        address: 'https://umee-rpc.highstakes.ch:26657/',
+        address: 'https://umee-rpc.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
@@ -167,7 +167,7 @@ const info: Chain = {
         provider: 'StakeTown'
       },
       {
-        address: 'https://umee-api.highstakes.ch:1317/',
+        address: 'https://umee-api.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
@@ -284,6 +284,12 @@ const info: Chain = {
       tx_page: 'https://exp.stakevillage.net/umee/tx/${txHash}',
       account_page:
         'https://exp.stakevillage.net/umee/account/${accountAddress}'
+    },
+    {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/umee',
+      tx_page: 'https://ezstaking.app/umee/txs/${txHash}',
+      account_page: 'https://ezstaking.app/umee/account/${accountAddress}'
     }
   ],
   images: [

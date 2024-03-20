@@ -106,6 +106,12 @@ const info: Chain = {
         'https://www.mintscan.io/likecoin/accounts/${accountAddress}'
     },
     {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/likecoin',
+      tx_page: 'https://ezstaking.app/likecoin/txs/${txHash}',
+      account_page: 'https://ezstaking.app/likecoin/account/${accountAddress}'
+    },
+    {
       kind: 'bigdipper',
       url: 'https://bigdipper.live/likecoin',
       tx_page: 'https://bigdipper.live/likecoin/transactions/${txHash}',

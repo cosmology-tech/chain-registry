@@ -68,6 +68,10 @@ const info: Chain = {
       {
         address: 'https://migaloo-rpc.cosmosrescue.com',
         provider: 'cosmosrescue'
+      },
+      {
+        address: 'https://migaloo-rpc.highstakes.ch',
+        provider: 'High Stakes 🇨🇭'
       }
     ],
     rest: [
@@ -98,6 +102,10 @@ const info: Chain = {
       {
         address: 'https://migaloo-api.cosmosrescue.com',
         provider: 'cosmosrescue'
+      },
+      {
+        address: 'https://migaloo-api.highstakes.ch',
+        provider: 'High Stakes 🇨🇭'
       }
     ],
     grpc: [

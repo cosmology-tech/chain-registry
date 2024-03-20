@@ -62,7 +62,7 @@ const info: Chain = {
         provider: 'Inter Blockchain Services'
       },
       {
-        address: 'https://provenance-rpc.highstakes.ch:26657/',
+        address: 'https://provenance-rpc.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
@@ -96,7 +96,7 @@ const info: Chain = {
         provider: 'Inter Blockchain Services'
       },
       {
-        address: 'https://provenance-api.highstakes.ch:1317/',
+        address: 'https://provenance-api.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
@@ -154,6 +154,12 @@ const info: Chain = {
       tx_page: 'https://www.mintscan.io/provenance/transactions/${txHash}',
       account_page:
         'https://www.mintscan.io/provenance/accounts/${accountAddress}'
+    },
+    {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/provenance',
+      tx_page: 'https://ezstaking.app/provenance/txs/${txHash}',
+      account_page: 'https://ezstaking.app/provenance/account/${accountAddress}'
     },
     {
       kind: 'atomscan',

@@ -140,6 +140,12 @@ const info: Chain = {
         'https://www.mintscan.io/sommelier/accounts/${accountAddress}'
     },
     {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/sommelier',
+      tx_page: 'https://ezstaking.app/sommelier/txs/${txHash}',
+      account_page: 'https://ezstaking.app/sommelier/account/${accountAddress}'
+    },
+    {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Sommelier-Mainnet',
       tx_page: 'https://explorer.stavr.tech/Sommelier-Mainnet/tx/${txHash}',

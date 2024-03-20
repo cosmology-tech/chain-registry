@@ -151,6 +151,12 @@ const info: Chain = {
         'https://www.mintscan.io/crescent/accounts/${accountAddress}'
     },
     {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/crescent',
+      tx_page: 'https://ezstaking.app/crescent/txs/${txHash}',
+      account_page: 'https://ezstaking.app/crescent/account/${accountAddress}'
+    },
+    {
       kind: 'ping.pub',
       url: 'https://ping.pub/crescent',
       tx_page: 'https://ping.pub/crescent/tx/${txHash}'

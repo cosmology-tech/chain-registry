@@ -30,7 +30,9 @@ const info: Chain = {
       }
     ]
   },
-  codebase: {},
+  codebase: {
+    cosmos_sdk_version: 'v0.46.16'
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
@@ -342,6 +344,12 @@ const info: Chain = {
         'https://explorer.theamsolutions.info/celestia-main/transaction/${txHash}',
       account_page:
         'https://explorer.theamsolutions.info/celestia-main/account/${accountAddress}'
+    },
+    {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/celestia',
+      tx_page: 'https://ezstaking.app/celestia/txs/${txHash}',
+      account_page: 'https://ezstaking.app/celestia/account/${accountAddress}'
     }
   ],
   images: [

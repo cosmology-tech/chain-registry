@@ -278,6 +278,90 @@ const assets: AssetList = {
       ]
     },
     {
+      description:
+        'The native staking and governance token of the Harpoon testnet version of Kujira.',
+      denom_units: [
+        {
+          denom:
+            'ibc/596C5A00AF1998532E1F72B0499B7C8CC5050EBF521C977191B4272DF78FA848',
+          exponent: 0,
+          aliases: ['ukuji']
+        },
+        {
+          denom: 'kuji',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/596C5A00AF1998532E1F72B0499B7C8CC5050EBF521C977191B4272DF78FA848',
+      name: 'Kuji',
+      display: 'kuji',
+      symbol: 'KUJI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/kujiratestnet/images/kuji.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/kujiratestnet/images/kuji.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-577',
+            base_denom: 'ukuji',
+            chain_name: 'kujiratestnet'
+          },
+          chain: {
+            channel_id: 'channel-3758'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The testnet token of Fuzion',
+      denom_units: [
+        {
+          denom:
+            'ibc/6F6F945FE0994AA4A715068B91DF86EE8FB8678BBA6C106D6FEC9DF865F3F908',
+          exponent: 0,
+          aliases: [
+            'factory/kujira16qpvzhmawvsm8mcj4hdvtz25dadatdhhgw79xa/FUZN'
+          ]
+        },
+        {
+          denom: 'fuzn',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/6F6F945FE0994AA4A715068B91DF86EE8FB8678BBA6C106D6FEC9DF865F3F908',
+      name: 'Fuzion',
+      display: 'fuzn',
+      symbol: 'FUZN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/kujiratestnet/images/fuzn.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/kujiratestnet/images/fuzn.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-577',
+            base_denom:
+              'factory/kujira16qpvzhmawvsm8mcj4hdvtz25dadatdhhgw79xa/FUZN',
+            chain_name: 'kujiratestnet'
+          },
+          chain: {
+            channel_id: 'channel-3758'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Osmosis',
       denom_units: [
         {

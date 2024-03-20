@@ -287,6 +287,12 @@ const info: Chain = {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/axelar',
       account_page: 'https://stakeflow.io/axelar/accounts/${accountAddress}'
+    },
+    {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/axelar',
+      tx_page: 'https://ezstaking.app/axelar/txs/${txHash}',
+      account_page: 'https://ezstaking.app/axelar/account/${accountAddress}'
     }
   ],
   images: [

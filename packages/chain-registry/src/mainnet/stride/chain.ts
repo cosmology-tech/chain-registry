@@ -317,10 +317,10 @@ const info: Chain = {
         'https://explorer.bccnodes.com/stride-M/account/${accountAddress}'
     },
     {
-      kind: 'EZ Staking',
-      url: 'https://app.ezstaking.io/stride',
-      tx_page: 'https://app.ezstaking.io/stride/txs/${txHash}',
-      account_page: 'https://app.ezstaking.io/stride/account/${accountAddress}'
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/stride',
+      tx_page: 'https://ezstaking.app/stride/txs/${txHash}',
+      account_page: 'https://ezstaking.app/stride/account/${accountAddress}'
     },
     {
       kind: 'Apollo',

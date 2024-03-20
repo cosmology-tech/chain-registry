@@ -67,7 +67,7 @@ const info: Chain = {
         provider: 'Cosmos Spaces'
       },
       {
-        address: 'https://terra-phoenix-rpc.highstakes.ch:26657/',
+        address: 'https://terra-phoenix-rpc.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
@@ -109,7 +109,7 @@ const info: Chain = {
         provider: 'Stakeflow'
       },
       {
-        address: 'https://terra-phoenix-api.highstakes.ch:1317/',
+        address: 'https://terra-phoenix-api.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {

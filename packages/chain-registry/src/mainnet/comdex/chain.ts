@@ -185,10 +185,10 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'EZ Staking',
-      url: 'https://app.ezstaking.io/comdex',
-      tx_page: 'https://app.ezstaking.io/comdex/txs/${txHash}',
-      account_page: 'https://app.ezstaking.io/comdex/account/${accountAddress}'
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/comdex',
+      tx_page: 'https://ezstaking.app/comdex/txs/${txHash}',
+      account_page: 'https://ezstaking.app/comdex/account/${accountAddress}'
     },
     {
       kind: 'mintscan',

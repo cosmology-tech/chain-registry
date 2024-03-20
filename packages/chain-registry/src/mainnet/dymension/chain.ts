@@ -376,6 +376,12 @@ const info: Chain = {
   },
   explorers: [
     {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/dymension',
+      tx_page: 'https://ezstaking.app/dymension/txs/${txHash}',
+      account_page: 'https://ezstaking.app/dymension/account/${accountAddress}'
+    },
+    {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.org/dymension',
       tx_page: 'https://explorer.nodestake.org/dymension/tx/${txHash}',

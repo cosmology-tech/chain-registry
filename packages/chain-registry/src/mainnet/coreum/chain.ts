@@ -206,6 +206,12 @@ const info: Chain = {
       tx_page: 'https://explorer.tcnetwork.io/coreum/transaction/${txHash}',
       account_page:
         'https://explorer.tcnetwork.io/coreum/account/${accountAddress}'
+    },
+    {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/coreum',
+      tx_page: 'https://ezstaking.app/coreum/txs/${txHash}',
+      account_page: 'https://ezstaking.app/coreum/account/${accountAddress}'
     }
   ],
   keywords: ['dex', 'staking', 'wasm', 'assets', 'nft']

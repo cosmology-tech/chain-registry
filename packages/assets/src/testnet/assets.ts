@@ -15,6 +15,7 @@ import _entrypointtestnet from './entrypointtestnet';
 import _impacthubtestnet from './impacthubtestnet';
 import _injectivetestnet from './injectivetestnet';
 import _junotestnet from './junotestnet';
+import _kujiratestnet from './kujiratestnet';
 import _kyvetestnet from './kyvetestnet';
 import _lavatestnet2 from './lavatestnet2';
 import _likecointestnet from './likecointestnet';
@@ -49,6 +50,7 @@ const assets: AssetList[] = [
   _impacthubtestnet,
   _injectivetestnet,
   _junotestnet,
+  _kujiratestnet,
   _kyvetestnet,
   _lavatestnet2,
   _likecointestnet,

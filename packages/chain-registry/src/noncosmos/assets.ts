@@ -17,6 +17,7 @@ import * as _polygon from './polygon';
 import * as _solana from './solana';
 import * as _statemine from './statemine';
 import * as _sui from './sui';
+import * as _xrpl from './xrpl';
 import * as _avalanchetestnet from './avalanchetestnet';
 import * as _binancesmartchaintestnet from './binancesmartchaintestnet';
 import * as _ethereumtestnet from './ethereumtestnet';
@@ -44,6 +45,7 @@ const assets: AssetList[] = [
   _solana.assets,
   _statemine.assets,
   _sui.assets,
+  _xrpl.assets,
   _avalanchetestnet.assets,
   _binancesmartchaintestnet.assets,
   _ethereumtestnet.assets,

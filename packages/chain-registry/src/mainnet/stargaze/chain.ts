@@ -246,11 +246,10 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'EZ Staking',
-      url: 'https://app.ezstaking.io/stargaze',
-      tx_page: 'https://app.ezstaking.io/stargaze/txs/${txHash}',
-      account_page:
-        'https://app.ezstaking.io/stargaze/account/${accountAddress}'
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/stargaze',
+      tx_page: 'https://ezstaking.app/stargaze/txs/${txHash}',
+      account_page: 'https://ezstaking.app/stargaze/account/${accountAddress}'
     },
     {
       kind: 'mintscan',

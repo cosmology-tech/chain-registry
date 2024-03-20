@@ -132,6 +132,12 @@ const info: Chain = {
         'https://www.mintscan.io/crypto-org/accounts/${accountAddress}'
     },
     {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/cronos',
+      tx_page: 'https://ezstaking.app/cronos/txs/${txHash}',
+      account_page: 'https://ezstaking.app/cronos/account/${accountAddress}'
+    },
+    {
       kind: 'cronos.org',
       url: 'https://cronos-pos.org/explorer',
       tx_page: 'https://cronos-pos.org/explorer/tx/${txHash}'

@@ -156,6 +156,12 @@ const info: Chain = {
   },
   explorers: [
     {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/mars',
+      tx_page: 'https://ezstaking.app/mars/txs/${txHash}',
+      account_page: 'https://ezstaking.app/mars/account/${accountAddress}'
+    },
+    {
       kind: 'BigDipper',
       url: 'https://explorer.marsprotocol.io',
       tx_page: 'https://explorer.marsprotocol.io/transactions/${txHash}',

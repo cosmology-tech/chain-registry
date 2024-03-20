@@ -65,7 +65,7 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
-        address: 'https://shentu-rpc.highstakes.ch:26657/',
+        address: 'https://shentu-rpc.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
@@ -107,7 +107,7 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
-        address: 'https://shentu-api.highstakes.ch:1317/',
+        address: 'https://shentu-api.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
@@ -152,10 +152,10 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'EZ Staking',
-      url: 'https://app.ezstaking.io/shentu',
-      tx_page: 'https://app.ezstaking.io/shentu/txs/${txHash}',
-      account_page: 'https://app.ezstaking.io/shentu/account/${accountAddress}'
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/shentu',
+      tx_page: 'https://ezstaking.app/shentu/txs/${txHash}',
+      account_page: 'https://ezstaking.app/shentu/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',

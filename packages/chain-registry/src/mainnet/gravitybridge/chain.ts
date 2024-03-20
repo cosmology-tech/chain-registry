@@ -187,11 +187,11 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'EZ Staking',
-      url: 'https://app.ezstaking.io/gravitybridge',
-      tx_page: 'https://app.ezstaking.io/gravitybridge/txs/${txHash}',
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/gravitybridge',
+      tx_page: 'https://ezstaking.app/gravitybridge/txs/${txHash}',
       account_page:
-        'https://app.ezstaking.io/gravitybridge/account/${accountAddress}'
+        'https://ezstaking.app/gravitybridge/account/${accountAddress}'
     },
     {
       kind: 'mintscan',

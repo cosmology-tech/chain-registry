@@ -51,10 +51,6 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://community.nuxian-node.ch:6797/dydx/trpc',
-        provider: 'PRO Delegators'
-      },
-      {
         address: 'https://dydx-dao-rpc.polkachu.com',
         provider: 'Polkachu'
       },
@@ -97,6 +93,10 @@ const info: Chain = {
       {
         address: 'https://dydx-rpc.enigma-validator.com',
         provider: 'Enigma'
+      },
+      {
+        address: 'https://community.nuxian-node.ch:6797/dydx/trpc',
+        provider: 'PRO Delegators'
       }
     ],
     rest: [
@@ -210,6 +210,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/dydx',
       tx_page: 'https://www.mintscan.io/dydx/txs/${txHash}',
       account_page: 'https://www.mintscan.io/dydx/account/${accountAddress}'
+    },
+    {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/dydx',
+      tx_page: 'https://ezstaking.app/dydx/txs/${txHash}',
+      account_page: 'https://ezstaking.app/dydx/account/${accountAddress}'
     },
     {
       kind: 'NodeStake',

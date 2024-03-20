@@ -152,7 +152,7 @@ const info: Chain = {
         provider: 'PRO Delegators'
       },
       {
-        address: 'https://cosmos-rpc.highstakes.ch:26657/',
+        address: 'https://cosmos-rpc.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
@@ -258,7 +258,7 @@ const info: Chain = {
         provider: 'PRO Delegators'
       },
       {
-        address: 'https://cosmos-api.highstakes.ch:1317/',
+        address: 'https://cosmos-api.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
@@ -355,17 +355,16 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'EZ Staking',
-      url: 'https://app.ezstaking.io/cosmoshub',
-      tx_page: 'https://app.ezstaking.io/cosmoshub/txs/${txHash}',
-      account_page:
-        'https://app.ezstaking.io/cosmoshub/account/${accountAddress}'
-    },
-    {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/cosmos',
       tx_page: 'https://www.mintscan.io/cosmos/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/cosmos/accounts/${accountAddress}'
+    },
+    {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/cosmoshub',
+      tx_page: 'https://ezstaking.app/cosmoshub/txs/${txHash}',
+      account_page: 'https://ezstaking.app/cosmoshub/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',

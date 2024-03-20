@@ -397,6 +397,12 @@ const info: Chain = {
       url: 'https://bigdipper.live/archway',
       tx_page: 'https://bigdipper.live/archway/transactions/${txHash}',
       account_page: 'https://bigdipper.live/archway/accounts/${accountAddress}'
+    },
+    {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/archway',
+      tx_page: 'https://ezstaking.app/archway/txs/${txHash}',
+      account_page: 'https://ezstaking.app/archway/account/${accountAddress}'
     }
   ],
   images: [

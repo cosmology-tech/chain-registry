@@ -298,6 +298,13 @@ const info: Chain = {
         'https://www.mintscan.io/quicksilver/accounts/${accountAddress}'
     },
     {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/quicksilver',
+      tx_page: 'https://ezstaking.app/quicksilver/txs/${txHash}',
+      account_page:
+        'https://ezstaking.app/quicksilver/account/${accountAddress}'
+    },
+    {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀 explorer',
       url: 'https://exp.utsa.tech/quicksilver',
       tx_page: 'https://exp.utsa.tech/quicksilver/tx/${txHash}'

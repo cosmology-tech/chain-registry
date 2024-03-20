@@ -154,6 +154,12 @@ const info: Chain = {
       account_page: 'https://www.mintscan.io/regen/accounts/${accountAddress}'
     },
     {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/regen',
+      tx_page: 'https://ezstaking.app/regen/txs/${txHash}',
+      account_page: 'https://ezstaking.app/regen/account/${accountAddress}'
+    },
+    {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Regen-Mainnet',
       tx_page: 'https://explorer.stavr.tech/Regen-Mainnet/tx/${txHash}'

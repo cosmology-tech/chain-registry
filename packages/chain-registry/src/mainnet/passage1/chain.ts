@@ -42,6 +42,12 @@ const info: Chain = {
       account_page: 'https://www.mintscan.io/passage/account/${accountAddress}'
     },
     {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/passage',
+      tx_page: 'https://ezstaking.app/passage/txs/${txHash}',
+      account_page: 'https://ezstaking.app/passage/account/${accountAddress}'
+    },
+    {
       kind: 'atomscan',
       url: 'https://atomscan.com/passage',
       tx_page: 'https://atomscan.com/passage/transactions/${txHash}',

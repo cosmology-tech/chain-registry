@@ -203,6 +203,12 @@ const info: Chain = {
       tx_page: 'https://www.mintscan.io/humans/tx/${txHash}'
     },
     {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/humans',
+      tx_page: 'https://ezstaking.app/humans/txs/${txHash}',
+      account_page: 'https://ezstaking.app/humans/account/${accountAddress}'
+    },
+    {
       kind: 'bigdipper',
       url: 'https://bigdipper.live/humans',
       tx_page: 'https://bigdipper.live/humans/transactions/${txHash}',

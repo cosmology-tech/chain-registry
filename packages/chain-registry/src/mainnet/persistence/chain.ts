@@ -104,7 +104,7 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
-        address: 'https://persistence-rpc.highstakes.ch:26657/',
+        address: 'https://persistence-rpc.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
@@ -178,7 +178,7 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
-        address: 'https://persistence-api.highstakes.ch:1317/',
+        address: 'https://persistence-api.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
@@ -252,6 +252,13 @@ const info: Chain = {
       tx_page: 'https://www.mintscan.io/persistence/transactions/${txHash}',
       account_page:
         'https://www.mintscan.io/persistence/accounts/${accountAddress}'
+    },
+    {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/persistence',
+      tx_page: 'https://ezstaking.app/persistence/txs/${txHash}',
+      account_page:
+        'https://ezstaking.app/persistence/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',

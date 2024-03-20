@@ -115,11 +115,10 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'EZ Staking',
-      url: 'https://app.ezstaking.io/lumnetwork',
-      tx_page: 'https://app.ezstaking.io/lumnetwork/txs/${txHash}',
-      account_page:
-        'https://app.ezstaking.io/lumnetwork/account/${accountAddress}'
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/lumnetwork',
+      tx_page: 'https://ezstaking.app/lumnetwork/txs/${txHash}',
+      account_page: 'https://ezstaking.app/lumnetwork/account/${accountAddress}'
     },
     {
       kind: 'mintscan',

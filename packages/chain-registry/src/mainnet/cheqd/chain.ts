@@ -172,10 +172,10 @@ const info: Chain = {
       account_page: 'https://atomscan.com/cheqd/accounts/${accountAddress}'
     },
     {
-      kind: 'EZ Staking',
-      url: 'https://app.ezstaking.io/cheqd',
-      tx_page: 'https://app.ezstaking.io/cheqd/txs/${txHash}',
-      account_page: 'https://app.ezstaking.io/cheqd/account/${accountAddress}'
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/cheqd',
+      tx_page: 'https://ezstaking.app/cheqd/txs/${txHash}',
+      account_page: 'https://ezstaking.app/cheqd/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',

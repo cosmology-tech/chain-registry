@@ -224,6 +224,12 @@ const info: Chain = {
       url: 'https://bigdipper.live/quasar',
       tx_page: 'https://bigdipper.live/quasar/transactions/${txHash}',
       account_page: 'https://bigdipper.live/quasar/accounts/${accountAddress}'
+    },
+    {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/quasar',
+      tx_page: 'https://ezstaking.app/quasar/txs/${txHash}',
+      account_page: 'https://ezstaking.app/quasar/account/${accountAddress}'
     }
   ],
   keywords: ['mainnet'],

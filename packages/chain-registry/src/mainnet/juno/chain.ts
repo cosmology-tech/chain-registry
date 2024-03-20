@@ -158,6 +158,10 @@ const info: Chain = {
       {
         address: 'https://juno-rpc.cogwheel.zone',
         provider: 'Cogwheel'
+      },
+      {
+        address: 'https://juno.declab.pro:26610',
+        provider: 'Decloud Nodes Lab'
       }
     ],
     rest: [
@@ -256,6 +260,14 @@ const info: Chain = {
       {
         address: 'https://juno-api.cogwheel.zone',
         provider: 'Cogwheel'
+      },
+      {
+        address: 'https://juno.declab.pro:443',
+        provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'http://juno.api.staking-explorer.com',
+        provider: 'Daily DROP'
       }
     ],
     grpc: [
@@ -334,15 +346,19 @@ const info: Chain = {
       {
         address: 'juno-grpc.cogwheel.zone:443',
         provider: 'Cogwheel'
+      },
+      {
+        address: 'https://juno.declab.pro:9007',
+        provider: 'Decloud Nodes Lab'
       }
     ]
   },
   explorers: [
     {
-      kind: 'EZ Staking',
-      url: 'https://app.ezstaking.io/juno',
-      tx_page: 'https://app.ezstaking.io/juno/txs/${txHash}',
-      account_page: 'https://app.ezstaking.io/juno/account/${accountAddress}'
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/juno',
+      tx_page: 'https://ezstaking.app/juno/txs/${txHash}',
+      account_page: 'https://ezstaking.app/juno/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
@@ -382,6 +398,11 @@ const info: Chain = {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/juno',
       account_page: 'https://stakeflow.io/juno/accounts/${accountAddress}'
+    },
+    {
+      kind: 'Decloud Nodes Lab',
+      url: 'https://explorer.declab.pro/Juno',
+      tx_page: 'https://explorer.declab.pro/Juno/tx/${txHash}'
     }
   ],
   images: [

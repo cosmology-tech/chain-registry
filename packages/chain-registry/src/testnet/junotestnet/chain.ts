@@ -75,7 +75,7 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'EZ Staking',
+      kind: 'ezstaking',
       url: 'https://testnet.app.ezstaking.io/juno-testnet',
       tx_page: 'https://testnet.app.ezstaking.io/juno-testnet/txs/${txHash}',
       account_page:

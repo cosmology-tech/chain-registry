@@ -222,6 +222,12 @@ const info: Chain = {
   },
   explorers: [
     {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/terra',
+      tx_page: 'https://ezstaking.app/terra/txs/${txHash}',
+      account_page: 'https://ezstaking.app/terra/account/${accountAddress}'
+    },
+    {
       kind: 'ping.pub',
       url: 'https://ping.pub/terra-luna',
       tx_page: 'https://ping.pub/terra-luna/tx/${txHash}'

@@ -137,11 +137,11 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'EZ Staking',
-      url: 'https://app.ezstaking.io/assetmantle',
-      tx_page: 'https://app.ezstaking.io/assetmantle/txs/${txHash}',
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/assetmantle',
+      tx_page: 'https://ezstaking.app/assetmantle/txs/${txHash}',
       account_page:
-        'https://app.ezstaking.io/assetmantle/account/${accountAddress}'
+        'https://ezstaking.app/assetmantle/account/${accountAddress}'
     },
     {
       kind: 'mintscan',

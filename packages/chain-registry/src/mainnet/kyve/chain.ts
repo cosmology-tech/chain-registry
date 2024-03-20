@@ -76,6 +76,10 @@ const info: Chain = {
       {
         address: 'https://rpc-kyve.mms.team',
         provider: 'MMS'
+      },
+      {
+        address: 'https://kyve.declab.pro:26616',
+        provider: 'Decloud Nodes Lab'
       }
     ],
     rest: [
@@ -114,6 +118,10 @@ const info: Chain = {
       {
         address: 'https://api-kyve.mms.team',
         provider: 'MMS'
+      },
+      {
+        address: 'https://kyve.declab.pro:443',
+        provider: 'Decloud Nodes Lab'
       }
     ],
     grpc: [
@@ -140,10 +148,20 @@ const info: Chain = {
       {
         address: 'grpc-kyve.mms.team:443',
         provider: 'MMS'
+      },
+      {
+        address: 'https://kyve.declab.pro:9011',
+        provider: 'Decloud Nodes Lab'
       }
     ]
   },
   explorers: [
+    {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/kyve',
+      tx_page: 'https://ezstaking.app/kyve/txs/${txHash}',
+      account_page: 'https://ezstaking.app/kyve/account/${accountAddress}'
+    },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/kyve',
@@ -169,6 +187,12 @@ const info: Chain = {
       tx_page: 'https://explorer.stake-take.com/kyve/txs/${txHash}',
       account_page:
         'https://explorer.stake-take.com/kyve/account/${accountAddress}'
+    },
+    {
+      kind: 'Decloud Nodes Lab',
+      url: 'https://explorer.declab.pro/Kyve',
+      tx_page: 'https://explorer.declab.pro/Kyve/txs/${txHash}',
+      account_page: 'https://explorer.declab.pro/Kyve/account/${accountAddress}'
     }
   ],
   images: [

@@ -64,7 +64,7 @@ const info: Chain = {
         provider: 'StakerHouse'
       },
       {
-        address: 'https://andromeda-rpc.highstakes.ch:26657',
+        address: 'https://andromeda-rpc.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
@@ -110,7 +110,7 @@ const info: Chain = {
         provider: 'StakerHouse'
       },
       {
-        address: 'https://andromeda-api.highstakes.ch:1317',
+        address: 'https://andromeda-api.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {

@@ -48,6 +48,10 @@ const info: Chain = {
       {
         address: 'https://rpc-vidulum-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
+      },
+      {
+        address: 'https://vidulum.declab.pro:26619',
+        provider: 'Decloud Nodes Lab'
       }
     ],
     rest: [
@@ -66,6 +70,10 @@ const info: Chain = {
       {
         address: 'https://api-vdl.nodine.id/',
         provider: 'Nodine.ID'
+      },
+      {
+        address: 'https://vidulum.declab.pro:443',
+        provider: 'Decloud Nodes Lab'
       }
     ],
     grpc: [
@@ -76,6 +84,10 @@ const info: Chain = {
       {
         address: 'vidulum.grpc.m.stavr.tech:2040',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://vidulum.declab.pro:9013',
+        provider: 'Decloud Nodes Lab'
       }
     ]
   },
@@ -105,6 +117,11 @@ const info: Chain = {
       kind: 'Nodine Explorer',
       url: 'https://explorer.co.id/vidulum',
       tx_page: 'https://explorer.co.id/vidulum/tx/${txHash}'
+    },
+    {
+      kind: 'Decloud Nodes Lab',
+      url: 'https://explorer.declab.pro/Vidulum',
+      tx_page: 'https://explorer.declab.pro/Vidulum/tx/${txHash}'
     }
   ],
   images: [

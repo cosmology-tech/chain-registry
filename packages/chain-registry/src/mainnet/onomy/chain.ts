@@ -62,6 +62,12 @@ const info: Chain = {
       tx_page: 'https://www.mintscan.io/onomy-protocol/transactions/${txHash}',
       account_page:
         'https://www.mintscan.io/onomy-protocol/accounts/${accountAddress}'
+    },
+    {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/onomy',
+      tx_page: 'https://ezstaking.app/onomy/txs/${txHash}',
+      account_page: 'https://ezstaking.app/onomy/account/${accountAddress}'
     }
   ],
   keywords: ['dex', 'stablecoin', 'bridge', 'staking'],

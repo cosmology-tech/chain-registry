@@ -103,6 +103,10 @@ const info: Chain = {
       {
         address: 'https://aura.rpc.srv.stakr.space',
         provider: 'STAKR.space'
+      },
+      {
+        address: 'https://aura-rpc.highstakes.ch',
+        provider: 'High Stakes 🇨🇭'
       }
     ],
     rest: [
@@ -165,6 +169,10 @@ const info: Chain = {
       {
         address: 'https://aura.api.srv.stakr.space',
         provider: 'STAKR.space'
+      },
+      {
+        address: 'https://aura-api.highstakes.ch',
+        provider: 'High Stakes 🇨🇭'
       }
     ],
     grpc: [

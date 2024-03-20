@@ -311,8 +311,8 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'EZStaking Tools',
-      url: 'https://app.ezstaking.io/bitcanna',
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/bitcanna',
       tx_page: 'https://ezstaking.tools/bitcanna/txs/${txHash}',
       account_page: 'https://ezstaking.tools/bitcanna/account/${accountAddress}'
     },

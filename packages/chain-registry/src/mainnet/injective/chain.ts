@@ -72,7 +72,7 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
-        address: 'https://injective-rpc.highstakes.ch:26657/',
+        address: 'https://injective-rpc.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
@@ -118,7 +118,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://injective-api.highstakes.ch:1317/',
+        address: 'https://injective-api.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
@@ -182,6 +182,12 @@ const info: Chain = {
     ]
   },
   explorers: [
+    {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/injective',
+      tx_page: 'https://ezstaking.app/injective/txs/${txHash}',
+      account_page: 'https://ezstaking.app/injective/account/${accountAddress}'
+    },
     {
       kind: 'injectiveprotocol',
       url: 'https://explorer.injective.network/',

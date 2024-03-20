@@ -37,12 +37,6 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'EZ Staking',
-      url: 'https://app.ezstaking.io/idep',
-      tx_page: 'https://app.ezstaking.io/idep/txs/${txHash}',
-      account_page: 'https://app.ezstaking.io/idep/account/${accountAddress}'
-    },
-    {
       kind: 'chadscan',
       url: 'https://chadscan.com',
       tx_page: 'https://chadscan.com/transactions/${txHash}'

@@ -149,7 +149,7 @@ const info: Chain = {
       },
       {
         address: 'http://omniflix.api.staking-explorer.com',
-        provider: 'Daily $FLIX DROP 💰'
+        provider: 'Daily DROP'
       },
       {
         address: 'https://api.omniflix.stakeup.tech',
@@ -225,11 +225,11 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'EZ Staking',
-      url: 'https://app.ezstaking.io/omniflixhub',
-      tx_page: 'https://app.ezstaking.io/omniflixhub/txs/${txHash}',
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/omniflixhub',
+      tx_page: 'https://ezstaking.app/omniflixhub/txs/${txHash}',
       account_page:
-        'https://app.ezstaking.io/omniflixhub/account/${accountAddress}'
+        'https://ezstaking.app/omniflixhub/account/${accountAddress}'
     },
     {
       kind: 'mintscan',

@@ -59,7 +59,7 @@ const info: Chain = {
         provider: '1RPC - Automata Network'
       },
       {
-        address: 'https://secretnetwork-rpc.highstakes.ch:26657/',
+        address: 'https://secretnetwork-rpc.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
@@ -89,7 +89,7 @@ const info: Chain = {
         provider: '1RPC - Automata Network'
       },
       {
-        address: 'https://secretnetwork-api.highstakes.ch:1317/',
+        address: 'https://secretnetwork-api.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
@@ -118,11 +118,11 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'EZ Staking',
-      url: 'https://app.ezstaking.io/secretnetwork',
-      tx_page: 'https://app.ezstaking.io/secretnetwork/txs/${txHash}',
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/secretnetwork',
+      tx_page: 'https://ezstaking.app/secretnetwork/txs/${txHash}',
       account_page:
-        'https://app.ezstaking.io/secretnetwork/account/${accountAddress}'
+        'https://ezstaking.app/secretnetwork/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',

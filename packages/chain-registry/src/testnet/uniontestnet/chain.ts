@@ -4,7 +4,7 @@ const info: Chain = {
   chain_name: 'uniontestnet',
   status: 'live',
   network_type: 'testnet',
-  pretty_name: 'union Testnet',
+  pretty_name: 'Union',
   chain_id: 'union-testnet-6',
   bech32_prefix: 'union',
   daemon_name: 'uniond',
@@ -32,10 +32,6 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc.cryptware.io',
-        provider: 'cryptware'
-      },
-      {
         address: 'https://union-testnet-rpc.polkachu.com',
         provider: 'Polkachu'
       },
@@ -49,10 +45,6 @@ const info: Chain = {
       }
     ],
     rest: [
-      {
-        address: 'https://api.cryptware.io',
-        provider: 'cryptware'
-      },
       {
         address: 'https://union-testnet-api.polkachu.com',
         provider: 'Polkachu'
@@ -68,10 +60,6 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'https://grpc.cryptware.io',
-        provider: 'cryptware'
-      },
-      {
         address: 'http://union-testnet-grpc.polkachu.com:24690',
         provider: 'Polkachu'
       },
@@ -86,21 +74,28 @@ const info: Chain = {
     ]
   },
   logo_URIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/union/images/union.png'
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/uniontestnet/images/union.png'
   },
   explorers: [
     {
       kind: 'ping.pub',
-      url: 'https://explorer.cryptware.io/union',
-      tx_page: 'https://explorer.cryptware.io/union/tx/${txHash}',
+      url: 'https://testnet.bonlulu.uno/union',
+      tx_page: 'https://testnet.bonlulu.uno/union/tx/${txHash}',
       account_page:
-        'https://explorer.cryptware.io/union/account/${accountAddress}'
+        'https://testnet.bonlulu.uno/union/account/${accountAddress}'
+    },
+    {
+      kind: 'explorers.guru',
+      url: 'https://testnet.union.explorers.guru',
+      tx_page: 'https://testnet.union.explorers.guru/transaction/${txHash}',
+      account_page:
+        'https://testnet.union.explorers.guru/account/${accountAddress}'
     }
   ],
   keywords: ['testnet'],
   images: [
     {
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/union/images/union.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/uniontestnet/images/union.png'
     }
   ]
 };

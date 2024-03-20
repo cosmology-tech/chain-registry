@@ -70,7 +70,7 @@ const info: Chain = {
         provider: 'w3coins'
       },
       {
-        address: 'https://bandprotocol-rpc.highstakes.ch:26657/',
+        address: 'https://bandprotocol-rpc.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
@@ -120,7 +120,7 @@ const info: Chain = {
         provider: 'w3coins'
       },
       {
-        address: 'https://bandprotocol-api.highstakes.ch:1317/',
+        address: 'https://bandprotocol-api.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       },
       {
