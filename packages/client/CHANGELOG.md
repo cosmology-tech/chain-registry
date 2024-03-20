@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.21.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/client@1.21.0...@chain-registry/client@1.21.1) (2024-03-20)
+
+
+### Bug Fixes
+
+* **client:** clear mock after tests ([c6dc7f3](https://github.com/cosmology-tech/chain-registry/commit/c6dc7f32e7fad26312ca93343bb9d1a166a3665f))
+
+
+
+
+
 # [1.21.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/client@1.20.1...@chain-registry/client@1.21.0) (2024-03-20)
 
 ### Bug Fixes
