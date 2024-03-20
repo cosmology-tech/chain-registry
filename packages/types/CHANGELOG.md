@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.18.2 (2024-03-20)
+
+**Note:** Version bump only for package @chain-registry/types
+
+
+
+
+
 ## [0.18.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/types@0.18.0...@chain-registry/types@0.18.1) (2024-02-27)
 
 **Note:** Version bump only for package @chain-registry/types
