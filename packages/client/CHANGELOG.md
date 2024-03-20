@@ -3,13 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.21.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/client@1.20.1...@chain-registry/client@1.21.0) (2024-03-20)
+
+### Bug Fixes
+
+- revert client package ([2534ca7](https://github.com/cosmology-tech/chain-registry/commit/2534ca747f0559bceca0a1bfa455a5c6e7e78ee7))
+
 ## 1.20.1 (2024-03-20)
 
 **Note:** Version bump only for package @chain-registry/client
-
-
-
-
 
 # [1.20.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/client@1.19.2...@chain-registry/client@1.20.0) (2024-03-19)
 
