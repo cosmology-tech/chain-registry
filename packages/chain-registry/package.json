@@ -26,7 +26,7 @@
     "build": "cross-env BABEL_ENV=production babel src --out-dir main --delete-dir-on-start --extensions \".tsx,.ts,.js\"",
     "build:ts": "tsc --project ./tsconfig.json",
     "buidl": "npm run build && npm run build:ts",
-    "build:pkg": "babel-node ./scripts/build.js",
+    "build:pkg": "ts-node ./scripts/generate.mts",
     "codegen": "npm run build:pkg && npm run format",
     "prepare": "npm run build",
     "lint": "eslint --ext .ts,.tsx,.js .",
@@ -59,12 +59,13 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
-    "glob": "8.0.3",
+    "glob": "^10.3.10",
     "jest": "^29.5.0",
     "mkdirp": "3.0.1",
     "prettier": "^2.8.7",
     "regenerator-runtime": "^0.13.11",
     "ts-jest": "^29.1.0",
+    "ts-node": "10.9.2",
     "typescript": "^5.0.4"
   },
   "dependencies": {

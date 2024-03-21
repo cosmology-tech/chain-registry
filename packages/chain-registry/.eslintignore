@@ -3,3 +3,6 @@ dist/
 main/
 module/
 coverage/
+src/mainnet
+src/testnet
+src/noncosmos

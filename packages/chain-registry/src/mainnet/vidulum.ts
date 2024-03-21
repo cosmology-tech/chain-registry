@@ -1,0 +1,233 @@
+import type { Chain, AssetList, ChainVersions } from '@chain-registry/types'
+
+export const vidulum: Chain = {
+  "$schema": "../chain.schema.json",
+  "chain_name": "vidulum",
+  "status": "live",
+  "network_type": "mainnet",
+  "website": "https://vidulum.app/",
+  "pretty_name": "Vidulum",
+  "chain_id": "vidulum-1",
+  "bech32_prefix": "vdl",
+  "daemon_name": "vidulumd",
+  "node_home": "$HOME/.vidulum",
+  "key_algos": [
+    "secp256k1"
+  ],
+  "slip44": 370,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "uvdl",
+        "fixed_min_gas_price": 0.0002,
+        "low_gas_price": 0.002,
+        "average_gas_price": 0.005,
+        "high_gas_price": 0.007
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": [
+      {
+        "denom": "uvdl"
+      }
+    ]
+  },
+  "codebase": {
+    "git_repo": "https://github.com/vidulum/mainnet",
+    "recommended_version": "v1.2.0",
+    "compatible_versions": [
+      "v1.2.0"
+    ],
+    "binaries": {
+      "linux/amd64": "https://github.com/vidulum/mainnet/releases/download/v1.2.0/vidulum_linux_amd64.tar.gz",
+      "linux/arm64": "https://github.com/vidulum/mainnet/releases/download/v1.2.0/vidulum_linux_arm64.tar.gz",
+      "darwin/amd64": "https://github.com/vidulum/mainnet/releases/download/v1.2.0/vidulum_darwin_amd64.tar.gz",
+      "windows/amd64": "https://github.com/vidulum/mainnet/releases/download/v1.2.0/vidulum_windows_amd64.zip"
+    },
+    "genesis": {
+      "genesis_url": "https://raw.githubusercontent.com/vidulum/mainnet/main/genesis.json"
+    },
+    "versions": [
+      {
+        "name": "v1.2.0",
+        "recommended_version": "v1.2.0",
+        "compatible_versions": [
+          "v1.2.0"
+        ],
+        "binaries": {
+          "linux/amd64": "https://github.com/vidulum/mainnet/releases/download/v1.2.0/vidulum_linux_amd64.tar.gz",
+          "linux/arm64": "https://github.com/vidulum/mainnet/releases/download/v1.2.0/vidulum_linux_arm64.tar.gz",
+          "darwin/amd64": "https://github.com/vidulum/mainnet/releases/download/v1.2.0/vidulum_darwin_amd64.tar.gz",
+          "windows/amd64": "https://github.com/vidulum/mainnet/releases/download/v1.2.0/vidulum_windows_amd64.zip"
+        }
+      }
+    ]
+  },
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png",
+    "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg"
+  },
+  "peers": {
+    "seeds": [
+      {
+        "id": "8542cd7e6bf9d260fef543bc49e59be5a3fa9074",
+        "address": "seed.publicnode.com:26656",
+        "provider": "Allnodes ⚡️ Nodes & Staking"
+      }
+    ],
+    "persistent_peers": [
+      {
+        "id": "52051fef449e76eb399966312f523e8e5e27490b",
+        "address": "95.217.118.211:26656",
+        "provider": "minerpool"
+      },
+      {
+        "id": "197f4d559555de6b7fe360c6a926ca8812a749be",
+        "address": "vidulum.peer.stavr.tech:1046",
+        "provider": "🔥STAVR🔥"
+      },
+      {
+        "id": "209688f5bccb88f6397a97cc11ab545a014aa559",
+        "address": "137.184.92.115:26656",
+        "provider": "1square"
+      },
+      {
+        "id": "73ef1c0f9bc77fd925decf7fa41f22a35b5dc76d",
+        "address": "vidulum.declab.pro:26621",
+        "provider": "Decloud Nodes Lab"
+      }
+    ]
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://mainnet-rpc.vidulum.app/",
+        "provider": "vidulum"
+      },
+      {
+        "address": "https://vidulum.rpc.m.stavr.tech:443",
+        "provider": "🔥STAVR🔥"
+      },
+      {
+        "address": "https://rpc-vidulum-ia.cosmosia.notional.ventures/",
+        "provider": "Notional"
+      },
+      {
+        "address": "https://vidulum.declab.pro:26619",
+        "provider": "Decloud Nodes Lab"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://mainnet-lcd.vidulum.app",
+        "provider": "vidulum"
+      },
+      {
+        "address": "https://api-vidulum-ia.cosmosia.notional.ventures/",
+        "provider": "Notional"
+      },
+      {
+        "address": "https://vidulum.api.m.stavr.tech",
+        "provider": "🔥STAVR🔥"
+      },
+      {
+        "address": "https://api-vdl.nodine.id/",
+        "provider": "Nodine.ID"
+      },
+      {
+        "address": "https://vidulum.declab.pro:443",
+        "provider": "Decloud Nodes Lab"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc-vidulum-ia.cosmosia.notional.ventures:443",
+        "provider": "Notional"
+      },
+      {
+        "address": "vidulum.grpc.m.stavr.tech:2040",
+        "provider": "🔥STAVR🔥"
+      },
+      {
+        "address": "https://vidulum.declab.pro:9013",
+        "provider": "Decloud Nodes Lab"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "ping.pub",
+      "url": "https://explorers.vidulum.app/vidulum",
+      "tx_page": "https://explorers.vidulum.app/vidulum/tx/${txHash}"
+    },
+    {
+      "kind": "ping.pub",
+      "url": "https://ping.pub/vidulum",
+      "tx_page": "https://ping.pub/vidulum/tx/${txHash}"
+    },
+    {
+      "kind": "🔥STAVR🔥",
+      "url": "https://explorer.stavr.tech/Vidulum-Mainnet",
+      "tx_page": "https://explorer.stavr.tech/Vidulum-Mainnet/tx/${txHash}"
+    },
+    {
+      "kind": "atomscan",
+      "url": "https://atomscan.com/vidulum",
+      "tx_page": "https://atomscan.com/vidulum/transactions/${txHash}",
+      "account_page": "https://atomscan.com/vidulum/accounts/${accountAddress}"
+    },
+    {
+      "kind": "Nodine Explorer",
+      "url": "https://explorer.co.id/vidulum",
+      "tx_page": "https://explorer.co.id/vidulum/tx/${txHash}"
+    },
+    {
+      "kind": "Decloud Nodes Lab",
+      "url": "https://explorer.declab.pro/Vidulum",
+      "tx_page": "https://explorer.declab.pro/Vidulum/tx/${txHash}"
+    }
+  ],
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png",
+      "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg"
+    }
+  ]
+}
+
+export const vidulumAssetList: AssetList = {
+  "$schema": "../assetlist.schema.json",
+  "chain_name": "vidulum",
+  "assets": [
+    {
+      "description": "The native token of Vidulum",
+      "denom_units": [
+        {
+          "denom": "uvdl",
+          "exponent": 0
+        },
+        {
+          "denom": "vdl",
+          "exponent": 6
+        }
+      ],
+      "base": "uvdl",
+      "name": "Vidulum",
+      "display": "vdl",
+      "symbol": "VDL",
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png",
+        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg"
+      },
+      "coingecko_id": "vidulum",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg"
+        }
+      ]
+    }
+  ]
+}
+

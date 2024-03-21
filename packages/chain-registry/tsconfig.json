@@ -1,4 +1,16 @@
 {
+    "ts-node": {
+        // It is faster to skip typechecking.
+        // Remove if you want ts-node to do typechecking.
+        "transpileOnly": true,
+        "files": true,
+        "esm": true,
+        "compilerOptions": {
+          "types": ["node"],
+          "module": "ESNext",
+          "target": "ESNext"
+        }
+    },
     "compilerOptions": {
         "target": "esnext",
         "moduleResolution": "node",
