@@ -44,7 +44,6 @@ jobs:
           if ! git diff --staged --quiet; then
             git commit -am "build 🛠 $CHANGES_DESC"
             git push origin main
-            lerna publish --scope chain-registry --no-verify-access --yes
             echo "GIT_RESULT=Published." >> $GITHUB_ENV
           else
             echo "GIT_RESULT=No changes to commit." >> $GITHUB_ENV
