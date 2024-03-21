@@ -19,6 +19,14 @@ export interface AdditionalMintageTrace {
     };
     provider: string;
 }
+export interface TestMintageTrace {
+    type: 'test-mintage';
+    counterparty: {
+        chain_name: string;
+        base_denom: string;
+    };
+    provider: string;
+}
 export interface SyntheicTrace {
     type: 'synthetic';
     counterparty: {
@@ -79,7 +87,7 @@ export interface IBCCw20Trace {
         path?: string;
     };
 }
-export type AssetTrace = IBCCw20Trace | IBCTrace | SyntheicTrace | LiquidStakeTrace | WrapTrace | BridgeTrace | AdditionalMintageTrace;
+export type AssetTrace = IBCCw20Trace | IBCTrace | SyntheicTrace | LiquidStakeTrace | WrapTrace | BridgeTrace | AdditionalMintageTrace | TestMintageTrace;
 export interface LogoImage {
     image_sync?: {
         chain_name: string;
@@ -91,7 +99,12 @@ export interface LogoImage {
     theme?: any;
 }
 export interface Asset {
+    /**
+     * [OPTIONAL] Whether the asset has been deprected for use. For readability, it is best to omit this property unless TRUE.
+     */
+    deprecated?: boolean;
     description?: string;
+    extended_description?: string;
     type_asset?: string;
     address?: string;
     denom_units: AssetDenomUnit[];
@@ -101,6 +114,7 @@ export interface Asset {
     symbol: string;
     logo_URIs?: LogoImage;
     images?: LogoImage[];
+    socials?: AssetSocials;
     coingecko_id?: string;
     keywords?: string[];
     traces?: AssetTrace[];
@@ -109,6 +123,11 @@ export interface Asset {
         source_denom?: string;
         dst_channel?: string;
     };
+}
+export type AssetSocials = {
+    webiste?: string;
+    website?: string;
+    twitter?: string;
 }
 export type AssetList = {
     $schema?: string;

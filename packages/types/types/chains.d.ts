@@ -44,7 +44,7 @@ export interface Chain {
     extra_codecs?: string[];
     keywords?: string[];
     node_home?: string;
-    slip44: number;
+    slip44?: number;
     alternative_slip44s?: number[];
     logo_URIs?: {
         png?: string;
@@ -52,11 +52,22 @@ export interface Chain {
         jpeg?: string;
     };
     images?: {
+        image_sync?: Pointer;
         png?: string;
         svg?: string;
         theme?: {
             primary_color_hex?: string;
+            circle?: boolean;
+            dark_mode?: boolean;
         };
+        /**
+         * logomark == icon only; logotype == text only; logo == icon + text.
+         */
+        layout?: 'logo' | 'logomark' | 'logotype';
+        /**
+         * Indicates in which position the text is placed, in case the layout is 'icon' type, it's required only in this case.
+         */
+        text_position?: 'top' | 'bottom' | 'left' | 'right' | 'integrated';
     }[];
     fees?: {
         fee_tokens: {
@@ -94,6 +105,7 @@ export interface Chain {
         account_page?: string;
     }[];
     codebase?: {
+        go_version?: string;
         git_repo?: string;
         recommended_version?: string;
         compatible_versions?: string[];
@@ -107,7 +119,7 @@ export interface Chain {
         };
         cosmos_sdk_version?: string;
         consensus?: {
-            type: 'tendermint' | 'cometbft';
+            type: 'tendermint' | 'cometbft' | 'sei-tendermint';
             version?: string;
         };
         cosmwasm_version?: string;
@@ -138,15 +150,23 @@ export interface Chain {
             height?: number;
             proposal?: number;
             /**
+             * [Optional] Name of the previous version
+             */
+            previous_version_name?: string;
+            /**
              * [Optional] Name of the following version
              */
             next_version_name?: string;
+            /**
+             * Minimum accepted go version to build the binary.
+             */
+            go_version?: string;
             recommended_version?: string;
             cosmwasm_path?: string;
             compatible_versions?: string[];
             cosmos_sdk_version?: string;
             consensus?: {
-                type: 'tendermint' | 'cometbft';
+                type: 'tendermint' | 'cometbft' | 'sei-tendermint';
                 version?: string;
             };
             cosmwasm_version?: string;
@@ -217,6 +237,20 @@ export interface Chain {
         }[];
     };
 }
+/**
+ * The (primary) key used to identify an object within the Chain Registry.
+ */
+export interface Pointer {
+    /**
+     * The chain name or platform from which the object resides. E.g., 'cosmoshub', 'ethereum', 'forex', or 'nasdaq'
+     */
+    chain_name: string;
+    /**
+     * The base denom of the asset from which the object originates. E.g., when describing ATOM from Cosmos Hub, specify 'uatom', NOT 'atom' nor 'ATOM'; base units are unique per platform.
+     */
+    base_denom?: string;
+}
+  
 export interface MemoKeys {
     $schema?: string;
     memo_keys: {
@@ -261,7 +295,7 @@ export interface ChainVersions {
         compatible_versions?: string[];
         cosmos_sdk_version?: string;
         consensus?: {
-            type: 'tendermint' | 'cometbft';
+            type: 'tendermint' | 'cometbft' | 'sei-tendermint';
             version?: string;
         };
         cosmwasm_version?: string;
