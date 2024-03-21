@@ -26,7 +26,7 @@
   "scripts": {
     "build": "vite build",
     "build:ts": "tsc",
-    "buidl": "npm run build && npm run build:ts",
+    "buidl": "npm run build:ts && npm run build",
     "build:pkg": "ts-node ./scripts/generate.mts",
     "codegen": "npm run build:pkg && npm run format",
     "prepare": "npm run build",
