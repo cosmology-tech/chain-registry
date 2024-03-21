@@ -1,15 +1,13 @@
-import { AssetList } from '@chain-registry/types';
+import type { AssetList } from '@chain-registry/types';
 
-import * as _mainnet from './mainnet/all';
-import * as _testnet from './testnet/all';
-import * as _devnet from './devnet/all';
-import * as _noncosmos from './noncosmos/all';
+import { mainnetAssets } from './mainnet';
+import { testnetAssets } from './testnet';
+import { noncosmosAssets } from './noncosmos';
 
 const assets: AssetList[] = [
-  ..._mainnet.assets,
-  ..._testnet.assets,
-  ..._devnet.assets,
-  ..._noncosmos.assets
+  ...mainnetAssets,
+  ...testnetAssets,
+  ...noncosmosAssets
 ];
 
 export default assets;

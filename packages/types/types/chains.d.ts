@@ -217,4 +217,73 @@ export interface Chain {
         }[];
     };
 }
+export interface MemoKeys {
+    $schema?: string;
+    memo_keys: {
+        key: string;
+        description: string;
+        git_repo: string;
+        memo: {
+            [k: string]: unknown;
+        };
+        [k: string]: unknown;
+    }[];
+}
+export interface ChainVersions {
+    $schema?: string;
+    chain_name: string;
+    versions: {
+        /**
+         * Official Upgrade Name
+         */
+        name: string;
+        /**
+         * Git Upgrade Tag
+         */
+        tag?: string;
+        /**
+         * Block Height
+         */
+        height?: number;
+        /**
+         * Proposal that will officially signal community acceptance of the upgrade.
+         */
+        proposal?: number;
+        /**
+         * [Optional] Name of the previous version
+         */
+        previous_version_name?: string;
+        /**
+         * [Optional] Name of the following version
+         */
+        next_version_name?: string;
+        recommended_version?: string;
+        compatible_versions?: string[];
+        cosmos_sdk_version?: string;
+        consensus?: {
+            type: 'tendermint' | 'cometbft';
+            version?: string;
+        };
+        cosmwasm_version?: string;
+        cosmwasm_enabled?: boolean;
+        /**
+         * Relative path to the cosmwasm directory. ex. $HOME/.juno/data/wasm
+         */
+        cosmwasm_path?: string;
+        ibc_go_version?: string;
+        /**
+         * List of IBC apps (usually corresponding to a ICS standard) which have been enabled on the network.
+         */
+        ics_enabled?: ('ics20-1' | 'ics27-1' | 'mauth')[];
+        binaries?: {
+            'linux/amd64'?: string;
+            'linux/arm64'?: string;
+            'darwin/amd64'?: string;
+            'darwin/arm64'?: string;
+            'windows/amd64'?: string;
+            'windows/arm64'?: string;
+        };
+    }[];
+    [k: string]: unknown;
+}
 export type Chains = Chain[];

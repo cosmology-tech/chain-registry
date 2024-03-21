@@ -1,13 +1,8 @@
 import { Chain } from '@chain-registry/types';
 
-import * as _mainnet from './mainnet/all';
-import * as _testnet from './testnet/all';
-import * as _devnet from './devnet/all';
+import { mainnetChains } from './mainnet';
+import { testnetChains } from './testnet';
 
-const chains: Chain[] = [
-  ..._mainnet.chains,
-  ..._testnet.chains,
-  ..._devnet.chains
-];
+const chains: Chain[] = [...mainnetChains, ...testnetChains];
 
 export default chains;

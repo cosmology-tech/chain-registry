@@ -1,9 +1,8 @@
-import { IBCInfo } from '@chain-registry/types';
+import type { IBCInfo } from '@chain-registry/types';
 
-import * as _mainnet from './mainnet/all';
-import * as _testnet from './testnet/all';
-import * as _noncosmos from './noncosmos/all';
+import { mainnetIbc } from './mainnet';
+import { testnetIbc } from './testnet';
 
-const ibc: IBCInfo[] = [..._mainnet.ibc, ..._testnet.ibc, ..._noncosmos.ibc];
+const ibc: IBCInfo[] = [...mainnetIbc, ...testnetIbc];
 
 export default ibc;

@@ -7,40 +7,55 @@ export declare const getIbcInfo: (ibc: IBCInfo[], chain: string, counterparty: s
 export declare const getTransferChannel: (info: IBCInfo) => {
     chain_1: {
         channel_id: string;
+        client_id?: string;
+        connection_id?: string;
         port_id: string;
     };
     chain_2: {
         channel_id: string;
+        client_id?: string;
+        connection_id?: string;
         port_id: string;
     };
     ordering: string;
     version: string;
+    fee_version?: string;
     tags?: object;
 };
 export declare const getNonTransferChannel: (info: IBCInfo) => {
     chain_1: {
         channel_id: string;
+        client_id?: string;
+        connection_id?: string;
         port_id: string;
     };
     chain_2: {
         channel_id: string;
+        client_id?: string;
+        connection_id?: string;
         port_id: string;
     };
     ordering: string;
     version: string;
+    fee_version?: string;
     tags?: object;
 };
 export declare const getWasmChannel: (info: IBCInfo) => {
     chain_1: {
         channel_id: string;
+        client_id?: string;
+        connection_id?: string;
         port_id: string;
     };
     chain_2: {
         channel_id: string;
+        client_id?: string;
+        connection_id?: string;
         port_id: string;
     };
     ordering: string;
     version: string;
+    fee_version?: string;
     tags?: object;
 };
 export declare const getIbcAssetPath: (ibc: IBCInfo[], chain: string, counterparty: string, assets: AssetList[], base: string) => any;

@@ -28,13 +28,7 @@ module.exports = {
       'LabeledStatement',
       'WithStatement'
     ],
-    'no-unused-vars': [
-      0,
-      {
-        ignoreSiblings: true,
-        argsIgnorePattern: 'React|res|next|^_'
-      }
-    ],
+    '@typescript-eslint/no-unused-vars': 'off',
     'prefer-const': [
       'error',
       {

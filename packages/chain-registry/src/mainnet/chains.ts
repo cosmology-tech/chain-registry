@@ -1,315 +1,313 @@
-import { Chain } from '@chain-registry/types';
-
-import * as _8ball from './8ball';
-import * as _acrechain from './acrechain';
-import * as _agoric from './agoric';
-import * as _aioz from './aioz';
-import * as _akash from './akash';
-import * as _andromeda from './andromeda';
-import * as _andromeda1 from './andromeda1';
-import * as _archway from './archway';
-import * as _arkh from './arkh';
-import * as _assetmantle from './assetmantle';
-import * as _aura from './aura';
-import * as _axelar from './axelar';
-import * as _bandchain from './bandchain';
-import * as _beezee from './beezee';
-import * as _bitcanna from './bitcanna';
-import * as _bitsong from './bitsong';
-import * as _bluzelle from './bluzelle';
-import * as _bostrom from './bostrom';
-import * as _canto from './canto';
-import * as _carbon from './carbon';
-import * as _celestia from './celestia';
-import * as _cerberus from './cerberus';
-import * as _chain4energy from './chain4energy';
-import * as _cheqd from './cheqd';
-import * as _chihuahua from './chihuahua';
-import * as _chimba from './chimba';
-import * as _chronicnetwork from './chronicnetwork';
-import * as _cifer from './cifer';
-import * as _comdex from './comdex';
-import * as _commercionetwork from './commercionetwork';
-import * as _composable from './composable';
-import * as _conscious from './conscious';
-import * as _coreum from './coreum';
-import * as _cosmoshub from './cosmoshub';
-import * as _coss from './coss';
-import * as _crescent from './crescent';
-import * as _cronos from './cronos';
-import * as _cryptoorgchain from './cryptoorgchain';
-import * as _cudos from './cudos';
-import * as _decentr from './decentr';
-import * as _desmos from './desmos';
-import * as _dig from './dig';
-import * as _doravota from './doravota';
-import * as _dydx from './dydx';
-import * as _dymension from './dymension';
-import * as _dyson from './dyson';
-import * as _echelon from './echelon';
-import * as _emoney from './emoney';
-import * as _empowerchain from './empowerchain';
-import * as _ethos from './ethos';
-import * as _evmos from './evmos';
-import * as _fetchhub from './fetchhub';
-import * as _finschia from './finschia';
-import * as _firmachain from './firmachain';
-import * as _furya from './furya';
-import * as _fxcore from './fxcore';
-import * as _galaxy from './galaxy';
-import * as _gateway from './gateway';
-import * as _genesisl1 from './genesisl1';
-import * as _gitopia from './gitopia';
-import * as _govgen from './govgen';
-import * as _gravitybridge from './gravitybridge';
-import * as _haqq from './haqq';
-import * as _highbury from './highbury';
-import * as _humans from './humans';
-import * as _idep from './idep';
-import * as _impacthub from './impacthub';
-import * as _imversed from './imversed';
-import * as _injective from './injective';
-import * as _irisnet from './irisnet';
-import * as _jackal from './jackal';
-import * as _juno from './juno';
-import * as _kava from './kava';
-import * as _kichain from './kichain';
-import * as _konstellation from './konstellation';
-import * as _kujira from './kujira';
-import * as _kyve from './kyve';
-import * as _lambda from './lambda';
-import * as _lava from './lava';
-import * as _likecoin from './likecoin';
-import * as _logos from './logos';
-import * as _loyal from './loyal';
-import * as _lumenx from './lumenx';
-import * as _lumnetwork from './lumnetwork';
-import * as _mars from './mars';
-import * as _mayachain from './mayachain';
-import * as _medasdigital from './medasdigital';
-import * as _meme from './meme';
-import * as _microtick from './microtick';
-import * as _migaloo from './migaloo';
-import * as _mises from './mises';
-import * as _mun from './mun';
-import * as _mythos from './mythos';
-import * as _neutron from './neutron';
-import * as _nibiru from './nibiru';
-import * as _noble from './noble';
-import * as _nois from './nois';
-import * as _nolus from './nolus';
-import * as _nomic from './nomic';
-import * as _nyx from './nyx';
-import * as _octa from './octa';
-import * as _odin from './odin';
-import * as _okexchain from './okexchain';
-import * as _omniflixhub from './omniflixhub';
-import * as _onomy from './onomy';
-import * as _oraichain from './oraichain';
-import * as _osmosis from './osmosis';
-import * as _panacea from './panacea';
-import * as _passage from './passage';
-import * as _passage1 from './passage1';
-import * as _persistence from './persistence';
-import * as _planq from './planq';
-import * as _point from './point';
-import * as _provenance from './provenance';
-import * as _pundix from './pundix';
-import * as _pylons from './pylons';
-import * as _quasar from './quasar';
-import * as _quicksilver from './quicksilver';
-import * as _qwoyn from './qwoyn';
-import * as _realio from './realio';
-import * as _rebus from './rebus';
-import * as _regen from './regen';
-import * as _rizon from './rizon';
-import * as _scorum from './scorum';
-import * as _secretnetwork from './secretnetwork';
-import * as _sei from './sei';
-import * as _sentinel from './sentinel';
-import * as _sge from './sge';
-import * as _shareledger from './shareledger';
-import * as _shentu from './shentu';
-import * as _sifchain from './sifchain';
-import * as _six from './six';
-import * as _sommelier from './sommelier';
-import * as _source from './source';
-import * as _stafihub from './stafihub';
-import * as _stargaze from './stargaze';
-import * as _starname from './starname';
-import * as _stratos from './stratos';
-import * as _stride from './stride';
-import * as _tenet from './tenet';
-import * as _teritori from './teritori';
-import * as _terpnetwork from './terpnetwork';
-import * as _terra from './terra';
-import * as _terra2 from './terra2';
-import * as _tgrade from './tgrade';
-import * as _thorchain from './thorchain';
-import * as _titan from './titan';
-import * as _umee from './umee';
-import * as _unification from './unification';
-import * as _ununifi from './ununifi';
-import * as _uptick from './uptick';
-import * as _vidulum from './vidulum';
-import * as _xpla from './xpla';
-import * as _zetachain from './zetachain';
-
-const chains: Chain[] = [
-  _8ball.chain,
-  _acrechain.chain,
-  _agoric.chain,
-  _aioz.chain,
-  _akash.chain,
-  _andromeda.chain,
-  _andromeda1.chain,
-  _archway.chain,
-  _arkh.chain,
-  _assetmantle.chain,
-  _aura.chain,
-  _axelar.chain,
-  _bandchain.chain,
-  _beezee.chain,
-  _bitcanna.chain,
-  _bitsong.chain,
-  _bluzelle.chain,
-  _bostrom.chain,
-  _canto.chain,
-  _carbon.chain,
-  _celestia.chain,
-  _cerberus.chain,
-  _chain4energy.chain,
-  _cheqd.chain,
-  _chihuahua.chain,
-  _chimba.chain,
-  _chronicnetwork.chain,
-  _cifer.chain,
-  _comdex.chain,
-  _commercionetwork.chain,
-  _composable.chain,
-  _conscious.chain,
-  _coreum.chain,
-  _cosmoshub.chain,
-  _coss.chain,
-  _crescent.chain,
-  _cronos.chain,
-  _cryptoorgchain.chain,
-  _cudos.chain,
-  _decentr.chain,
-  _desmos.chain,
-  _dig.chain,
-  _doravota.chain,
-  _dydx.chain,
-  _dymension.chain,
-  _dyson.chain,
-  _echelon.chain,
-  _emoney.chain,
-  _empowerchain.chain,
-  _ethos.chain,
-  _evmos.chain,
-  _fetchhub.chain,
-  _finschia.chain,
-  _firmachain.chain,
-  _furya.chain,
-  _fxcore.chain,
-  _galaxy.chain,
-  _gateway.chain,
-  _genesisl1.chain,
-  _gitopia.chain,
-  _govgen.chain,
-  _gravitybridge.chain,
-  _haqq.chain,
-  _highbury.chain,
-  _humans.chain,
-  _idep.chain,
-  _impacthub.chain,
-  _imversed.chain,
-  _injective.chain,
-  _irisnet.chain,
-  _jackal.chain,
-  _juno.chain,
-  _kava.chain,
-  _kichain.chain,
-  _konstellation.chain,
-  _kujira.chain,
-  _kyve.chain,
-  _lambda.chain,
-  _lava.chain,
-  _likecoin.chain,
-  _logos.chain,
-  _loyal.chain,
-  _lumenx.chain,
-  _lumnetwork.chain,
-  _mars.chain,
-  _mayachain.chain,
-  _medasdigital.chain,
-  _meme.chain,
-  _microtick.chain,
-  _migaloo.chain,
-  _mises.chain,
-  _mun.chain,
-  _mythos.chain,
-  _neutron.chain,
-  _nibiru.chain,
-  _noble.chain,
-  _nois.chain,
-  _nolus.chain,
-  _nomic.chain,
-  _nyx.chain,
-  _octa.chain,
-  _odin.chain,
-  _okexchain.chain,
-  _omniflixhub.chain,
-  _onomy.chain,
-  _oraichain.chain,
-  _osmosis.chain,
-  _panacea.chain,
-  _passage.chain,
-  _passage1.chain,
-  _persistence.chain,
-  _planq.chain,
-  _point.chain,
-  _provenance.chain,
-  _pundix.chain,
-  _pylons.chain,
-  _quasar.chain,
-  _quicksilver.chain,
-  _qwoyn.chain,
-  _realio.chain,
-  _rebus.chain,
-  _regen.chain,
-  _rizon.chain,
-  _scorum.chain,
-  _secretnetwork.chain,
-  _sei.chain,
-  _sentinel.chain,
-  _sge.chain,
-  _shareledger.chain,
-  _shentu.chain,
-  _sifchain.chain,
-  _six.chain,
-  _sommelier.chain,
-  _source.chain,
-  _stafihub.chain,
-  _stargaze.chain,
-  _starname.chain,
-  _stratos.chain,
-  _stride.chain,
-  _tenet.chain,
-  _teritori.chain,
-  _terpnetwork.chain,
-  _terra.chain,
-  _terra2.chain,
-  _tgrade.chain,
-  _thorchain.chain,
-  _titan.chain,
-  _umee.chain,
-  _unification.chain,
-  _ununifi.chain,
-  _uptick.chain,
-  _vidulum.chain,
-  _xpla.chain,
-  _zetachain.chain
+import { zetachain } from './zetachain'
+import { vidulum } from './vidulum'
+import { uptick } from './uptick'
+import { ununifi } from './ununifi'
+import { unification } from './unification'
+import { umee } from './umee'
+import { titan } from './titan'
+import { xpla } from './xpla'
+import { tgrade } from './tgrade'
+import { thorchain } from './thorchain'
+import { terra } from './terra'
+import { terpnetwork } from './terpnetwork'
+import { teritori } from './teritori'
+import { tenet } from './tenet'
+import { stride } from './stride'
+import { terra2 } from './terra2'
+import { stratos } from './stratos'
+import { starname } from './starname'
+import { stargaze } from './stargaze'
+import { source } from './source'
+import { sommelier } from './sommelier'
+import { six } from './six'
+import { sifchain } from './sifchain'
+import { shentu } from './shentu'
+import { shareledger } from './shareledger'
+import { sentinel } from './sentinel'
+import { sge } from './sge'
+import { sei } from './sei'
+import { stafihub } from './stafihub'
+import { secretnetwork } from './secretnetwork'
+import { scorum } from './scorum'
+import { regen } from './regen'
+import { rebus } from './rebus'
+import { realio } from './realio'
+import { qwoyn } from './qwoyn'
+import { quicksilver } from './quicksilver'
+import { quasar } from './quasar'
+import { pylons } from './pylons'
+import { rizon } from './rizon'
+import { pundix } from './pundix'
+import { provenance } from './provenance'
+import { point } from './point'
+import { persistence } from './persistence'
+import { passage1 } from './passage1'
+import { passage } from './passage'
+import { panacea } from './panacea'
+import { osmosis } from './osmosis'
+import { oraichain } from './oraichain'
+import { onomy } from './onomy'
+import { okexchain } from './okexchain'
+import { odin1 } from './odin1'
+import { omniflixhub } from './omniflixhub'
+import { planq } from './planq'
+import { odin } from './odin'
+import { octa } from './octa'
+import { nyx } from './nyx'
+import { nolus } from './nolus'
+import { nois } from './nois'
+import { noble } from './noble'
+import { nibiru } from './nibiru'
+import { mythos } from './mythos'
+import { neutron } from './neutron'
+import { nomic } from './nomic'
+import { mun } from './mun'
+import { mises } from './mises'
+import { migaloo } from './migaloo'
+import { meme } from './meme'
+import { medasdigital } from './medasdigital'
+import { mayachain } from './mayachain'
+import { mars } from './mars'
+import { lumenx } from './lumenx'
+import { lumnetwork } from './lumnetwork'
+import { loyal } from './loyal'
+import { microtick } from './microtick'
+import { logos } from './logos'
+import { likecoin } from './likecoin'
+import { lava } from './lava'
+import { kyve } from './kyve'
+import { kujira } from './kujira'
+import { konstellation } from './konstellation'
+import { kichain } from './kichain'
+import { kava } from './kava'
+import { juno } from './juno'
+import { irisnet } from './irisnet'
+import { jackal } from './jackal'
+import { lambda } from './lambda'
+import { injective } from './injective'
+import { imversed } from './imversed'
+import { impacthub } from './impacthub'
+import { humans } from './humans'
+import { haqq } from './haqq'
+import { highbury } from './highbury'
+import { gravitybridge } from './gravitybridge'
+import { idep } from './idep'
+import { gitopia } from './gitopia'
+import { govgen } from './govgen'
+import { genesisl1 } from './genesisl1'
+import { fxcore } from './fxcore'
+import { galaxy } from './galaxy'
+import { furya } from './furya'
+import { firmachain } from './firmachain'
+import { fetchhub } from './fetchhub'
+import { finschia } from './finschia'
+import { gateway } from './gateway'
+import { evmos } from './evmos'
+import { ethos } from './ethos'
+import { empowerchain } from './empowerchain'
+import { echelon } from './echelon'
+import { dyson } from './dyson'
+import { dymension } from './dymension'
+import { dydx } from './dydx'
+import { doravota } from './doravota'
+import { dig } from './dig'
+import { desmos } from './desmos'
+import { emoney } from './emoney'
+import { decentr } from './decentr'
+import { cudos } from './cudos'
+import { cryptoorgchain } from './cryptoorgchain'
+import { coss } from './coss'
+import { crescent } from './crescent'
+import { cosmoshub } from './cosmoshub'
+import { coreum } from './coreum'
+import { composable } from './composable'
+import { conscious } from './conscious'
+import { cronos } from './cronos'
+import { commercionetwork } from './commercionetwork'
+import { comdex } from './comdex'
+import { cifer } from './cifer'
+import { chimba } from './chimba'
+import { cheqd } from './cheqd'
+import { chihuahua } from './chihuahua'
+import { cerberus } from './cerberus'
+import { celestia } from './celestia'
+import { chain4Energy } from './chain4energy'
+import { chronicnetwork } from './chronicnetwork'
+import { carbon } from './carbon'
+import { bostrom } from './bostrom'
+import { canto } from './canto'
+import { bitsong } from './bitsong'
+import { bitcanna } from './bitcanna'
+import { beezee } from './beezee'
+import { bandchain } from './bandchain'
+import { axelar } from './axelar'
+import { aura } from './aura'
+import { assetmantle } from './assetmantle'
+import { bluzelle } from './bluzelle'
+import { arkh } from './arkh'
+import { archway } from './archway'
+import { andromeda1 } from './andromeda1'
+import { akash } from './akash'
+import { aioz } from './aioz'
+import { agoric } from './agoric'
+import { acrechain } from './acrechain'
+import { andromeda } from './andromeda'
+import { ball8 } from './ball8'
+    
+export const chains = [
+	zetachain,
+	vidulum,
+	uptick,
+	ununifi,
+	unification,
+	umee,
+	titan,
+	xpla,
+	tgrade,
+	thorchain,
+	terra,
+	terpnetwork,
+	teritori,
+	tenet,
+	stride,
+	terra2,
+	stratos,
+	starname,
+	stargaze,
+	source,
+	sommelier,
+	six,
+	sifchain,
+	shentu,
+	shareledger,
+	sentinel,
+	sge,
+	sei,
+	stafihub,
+	secretnetwork,
+	scorum,
+	regen,
+	rebus,
+	realio,
+	qwoyn,
+	quicksilver,
+	quasar,
+	pylons,
+	rizon,
+	pundix,
+	provenance,
+	point,
+	persistence,
+	passage1,
+	passage,
+	panacea,
+	osmosis,
+	oraichain,
+	onomy,
+	okexchain,
+	odin1,
+	omniflixhub,
+	planq,
+	odin,
+	octa,
+	nyx,
+	nolus,
+	nois,
+	noble,
+	nibiru,
+	mythos,
+	neutron,
+	nomic,
+	mun,
+	mises,
+	migaloo,
+	meme,
+	medasdigital,
+	mayachain,
+	mars,
+	lumenx,
+	lumnetwork,
+	loyal,
+	microtick,
+	logos,
+	likecoin,
+	lava,
+	kyve,
+	kujira,
+	konstellation,
+	kichain,
+	kava,
+	juno,
+	irisnet,
+	jackal,
+	lambda,
+	injective,
+	imversed,
+	impacthub,
+	humans,
+	haqq,
+	highbury,
+	gravitybridge,
+	idep,
+	gitopia,
+	govgen,
+	genesisl1,
+	fxcore,
+	galaxy,
+	furya,
+	firmachain,
+	fetchhub,
+	finschia,
+	gateway,
+	evmos,
+	ethos,
+	empowerchain,
+	echelon,
+	dyson,
+	dymension,
+	dydx,
+	doravota,
+	dig,
+	desmos,
+	emoney,
+	decentr,
+	cudos,
+	cryptoorgchain,
+	coss,
+	crescent,
+	cosmoshub,
+	coreum,
+	composable,
+	conscious,
+	cronos,
+	commercionetwork,
+	comdex,
+	cifer,
+	chimba,
+	cheqd,
+	chihuahua,
+	cerberus,
+	celestia,
+	chain4Energy,
+	chronicnetwork,
+	carbon,
+	bostrom,
+	canto,
+	bitsong,
+	bitcanna,
+	beezee,
+	bandchain,
+	axelar,
+	aura,
+	assetmantle,
+	bluzelle,
+	arkh,
+	archway,
+	andromeda1,
+	akash,
+	aioz,
+	agoric,
+	acrechain,
+	andromeda,
+	ball8
 ];
-
-export default chains;

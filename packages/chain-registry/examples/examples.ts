@@ -1,12 +1,7 @@
-// import single chain from folder, good for tree shaking
-import { chain as chain_akash } from '../src/mainnet/akash';
-
-console.log(chain_akash.apis);
-
 // import single chain from root, good for tree shaking
 import { akash, akashtestnet } from '../src';
 
-console.log(akash.chain.apis, akashtestnet.chain.apis);
+console.log(akash.apis, akashtestnet.apis);
 
 // backward compatibility using "all.ts": get all chains at once:
 import { chains as all_chains } from '../src/all';
@@ -19,7 +14,7 @@ import { chains } from '../src';
 console.log(chains.find((chain) => chain.chain_name === 'akash'));
 
 // made bundle smaller: get all chains only in mainnet:
-import { chains as chains_main } from '../src/mainnet/all';
+import { chains as chains_main } from '../src/mainnet/chains';
 
 console.log(chains_main.find((chain) => chain.chain_name === 'akash'));
 
