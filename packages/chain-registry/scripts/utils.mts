@@ -11,6 +11,8 @@ export function buildChainName(originalChainName: string): string {
 
 export async function processChains(chains: Path[], outputPath: string) {
   const chainDataMap = new Set();
+  const assetlistDataMap = new Set();
+  const availableChainDataMap = new Set();
 
   for (const chain of chains) {
     if (!chain.parent) {
@@ -31,8 +33,14 @@ export async function processChains(chains: Path[], outputPath: string) {
 
     let suffix = ': Chain';
 
+    if (chain.isNamed('chain.json')) {
+      availableChainDataMap.add(chainName);
+    }
+
     if (chain.isNamed('assetlist.json') || chain.isNamed('assetslist.json')) {
       suffix = 'AssetList: AssetList';
+
+      assetlistDataMap.add(chainName);
     }
 
     if (chain.isNamed('versions.json')) {
@@ -47,5 +55,9 @@ export async function processChains(chains: Path[], outputPath: string) {
     chainDataMap.add(chainName);
   }
 
-  return chainDataMap;
+  return {
+    chainDataMap,
+    assetlistDataMap,
+    availableChainDataMap
+  };
 }

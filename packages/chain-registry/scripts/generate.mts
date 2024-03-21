@@ -3,6 +3,7 @@ import { glob } from 'glob';
 import { URL } from 'url';
 import type { IBCInfo } from '@chain-registry/types';
 import { processChains } from './utils.mjs';
+import camelCase from 'camelcase';
 
 const __dirname = new URL('../', import.meta.url).pathname;
 const chainRegistryPath = `${__dirname}chain-registry/`;
@@ -53,7 +54,11 @@ const [
 await rm(mainnetsPath, { recursive: true, force: true });
 await mkdir(mainnetsPath);
 
-const mainnetChainFiles = await processChains(mainnetChains, mainnetsPath);
+const {
+  chainDataMap: mainnetChainFiles,
+  assetlistDataMap: mainnetAssetListFiles,
+  availableChainDataMap: mainnetAvailableChainFiles
+} = await processChains(mainnetChains, mainnetsPath);
 
 const ibcInfos: IBCInfo[] = [];
 
@@ -62,6 +67,39 @@ for (const ibcInfo of mainnetIBCData) {
 
   ibcInfos.push(JSON.parse(data));
 }
+
+await writeFile(
+  `${mainnetsPath}/assets.ts`,
+  `${Array.from(mainnetAssetListFiles.keys())
+    .map(
+      (chain) =>
+        `import { ${camelCase(chain as string)}AssetList } from './${chain}'`
+    )
+    .join('\n')}
+    
+export const assets = [
+${Array.from(mainnetAssetListFiles.keys())
+  .map((chain) => `\t${camelCase(chain as string)}AssetList`)
+  .join(',\n')}
+];
+`
+);
+
+await writeFile(
+  `${mainnetsPath}/chains.ts`,
+  `${Array.from(mainnetAvailableChainFiles.keys())
+    .map(
+      (chain) => `import { ${camelCase(chain as string)} } from './${chain}'`
+    )
+    .join('\n')}
+    
+export const chains = [
+${Array.from(mainnetAvailableChainFiles.keys())
+  .map((chain) => `\t${camelCase(chain as string)}`)
+  .join(',\n')}
+];
+`
+);
 
 await writeFile(
   `${mainnetsPath}/ibc.ts`,
@@ -91,15 +129,23 @@ mainnetChainFiles.add('memo-keys');
 
 await writeFile(
   `${mainnetsPath}/index.ts`,
-  Array.from(mainnetChainFiles.keys())
+  `${Array.from(mainnetChainFiles.keys())
     .map((chain) => `export * from './${chain}'`)
-    .join('\n')
+    .join('\n')}
+  
+  export { assets as mainnetAssets } from './assets';
+  export { chains as mainnetChains } from './chains';
+  `
 );
 
 await rm(testnetsPath, { recursive: true, force: true });
 await mkdir(testnetsPath);
 
-const testnetChainFiles = await processChains(testnetChains, testnetsPath);
+const {
+  chainDataMap: testnetChainFiles,
+  assetlistDataMap: testnetAssetListFiles,
+  availableChainDataMap: availableChainFiles
+} = await processChains(testnetChains, testnetsPath);
 
 const testnetIbcInfos: IBCInfo[] = [];
 
@@ -117,23 +163,83 @@ await writeFile(
 `
 );
 
+await writeFile(
+  `${testnetsPath}/assets.ts`,
+  `${Array.from(testnetAssetListFiles.keys())
+    .map(
+      (chain) =>
+        `import { ${camelCase(chain as string)}AssetList } from './${chain}'`
+    )
+    .join('\n')}
+  
+  export const assets = [
+  ${Array.from(testnetAssetListFiles.keys())
+    .map((chain) => `\t${camelCase(chain as string)}AssetList`)
+    .join(',\n')}
+  ];
+  `
+);
+
+await writeFile(
+  `${testnetsPath}/chains.ts`,
+  `${Array.from(availableChainFiles.keys())
+    .map(
+      (chain) => `import { ${camelCase(chain as string)} } from './${chain}'`
+    )
+    .join('\n')}
+  
+export const chains = [
+${Array.from(availableChainFiles.keys())
+  .map((chain) => `\t${camelCase(chain as string)}`)
+  .join(',\n')}
+];
+  `
+);
+
 testnetChainFiles.add('ibc');
 
 await writeFile(
   `${testnetsPath}/index.ts`,
-  Array.from(testnetChainFiles.keys())
+  `${Array.from(testnetChainFiles.keys())
     .map((chain) => `export * from './${chain}'`)
-    .join('\n')
+    .join('\n')}
+
+export { assets as testnetAssets } from './assets';
+export { chains as testnetChains } from './chains';
+`
 );
 
 await rm(noncosmosPath, { recursive: true, force: true });
 await mkdir(noncosmosPath);
 
-const noncosmosChainFiles = await processChains(noncosmosChains, noncosmosPath);
+const { chainDataMap: noncosmosChainFiles } = await processChains(
+  noncosmosChains,
+  noncosmosPath
+);
+
+await writeFile(
+  `${noncosmosPath}/assets.ts`,
+  `${Array.from(noncosmosChainFiles.keys())
+    .map(
+      (chain) =>
+        `import { ${camelCase(chain as string)}AssetList } from './${chain}'`
+    )
+    .join('\n')}
+
+export const assets = [
+${Array.from(noncosmosChainFiles.keys())
+  .map((chain) => `\t${camelCase(chain as string)}AssetList`)
+  .join(',\n')}
+];
+`
+);
 
 await writeFile(
   `${noncosmosPath}/index.ts`,
-  Array.from(noncosmosChainFiles.keys())
+  `${Array.from(noncosmosChainFiles.keys())
     .map((chain) => `export * from './${chain}'`)
-    .join('\n')
+    .join('\n')}
+
+export { assets as noncosmosAssets } from './assets';
+`
 );
