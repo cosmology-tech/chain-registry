@@ -108,11 +108,11 @@ const info: AssetList = {
             base_denom:
               'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
         }
       ],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
       }
     },
     {
@@ -162,6 +162,38 @@ const info: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
         }
       ]
+    },
+    {
+      description: 'Astrovault AXV',
+      type_asset: 'cw20',
+      address:
+        'archway1ecjefhcf8r60wtfnhwefrxhj9caeqa90fj58cqsaafqveawn6cjs5znd2n',
+      denom_units: [
+        {
+          denom:
+            'cw20:archway1ecjefhcf8r60wtfnhwefrxhj9caeqa90fj58cqsaafqveawn6cjs5znd2n',
+          exponent: 0
+        },
+        {
+          denom: 'AXV',
+          exponent: 6
+        }
+      ],
+      base: 'cw20:archway1ecjefhcf8r60wtfnhwefrxhj9caeqa90fj58cqsaafqveawn6cjs5znd2n',
+      name: 'Astrovault AXV',
+      display: 'AXV',
+      symbol: 'AXV',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/axv.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/axv.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/axv.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/axv.svg'
+        }
+      ],
+      coingecko_id: 'astrovault'
     }
   ]
 };

@@ -26,10 +26,6 @@ const info: AssetList = {
       coingecko_id: 'teritori',
       images: [
         {
-          image_sync: {
-            chain_name: 'teritori',
-            base_denom: 'utori'
-          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/utori.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/utori.svg'
         }

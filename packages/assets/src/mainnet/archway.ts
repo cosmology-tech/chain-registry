@@ -1733,6 +1733,647 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'BitSong Native Token',
+      denom_units: [
+        {
+          denom:
+            'ibc/E6208E49B5FA2353C9C47D2EB9AABA03FED788E4970C7C623F6B511263E7CB11',
+          exponent: 0,
+          aliases: ['ubtsg']
+        },
+        {
+          denom: 'btsg',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/E6208E49B5FA2353C9C47D2EB9AABA03FED788E4970C7C623F6B511263E7CB11',
+      name: 'BitSong',
+      display: 'btsg',
+      symbol: 'BTSG',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg'
+      },
+      type_asset: 'sdk.coin',
+      coingecko_id: 'bitsong',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg'
+        }
+      ],
+      socials: {
+        webiste: 'https://bitsong.io/',
+        twitter: 'https://twitter.com/BitSongOfficial'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'ubtsg',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel_id: 'channel-124'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Adam Clay a BitSong Music FanToken',
+      denom_units: [
+        {
+          denom:
+            'ibc/02037D2C2D99D3C057A0AABA4B730D8283EA8CE063FD28B89E533675073E8A5D',
+          exponent: 0,
+          aliases: ['ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09']
+        },
+        {
+          denom: 'clay',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/02037D2C2D99D3C057A0AABA4B730D8283EA8CE063FD28B89E533675073E8A5D',
+      name: 'Adam Clay FanToken',
+      display: 'clay',
+      symbol: 'CLAY',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel_id: 'channel-124'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Nicola Fasano a BitSong Music FanToken',
+      denom_units: [
+        {
+          denom:
+            'ibc/0EEE6BDD235771BDD6808AE2BAE5E7223F7C8B9ADE159D40F5383D8A9879CBCE',
+          exponent: 0,
+          aliases: ['ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7']
+        },
+        {
+          denom: 'fasano',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/0EEE6BDD235771BDD6808AE2BAE5E7223F7C8B9ADE159D40F5383D8A9879CBCE',
+      name: 'Nicola Fasano Fantoken',
+      display: 'fasano',
+      symbol: 'FASANO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel_id: 'channel-124'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Delta 9 a BitSong Music FanToken',
+      denom_units: [
+        {
+          denom:
+            'ibc/0D2D5D3F305976464F59F54CB46BC69C62BCDEEE1FEA900E7E154FB522A6AE9B',
+          exponent: 0,
+          aliases: ['ft575B10B0CEE2C164D9ED6A96313496F164A9607C']
+        },
+        {
+          denom: 'd9x',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/0D2D5D3F305976464F59F54CB46BC69C62BCDEEE1FEA900E7E154FB522A6AE9B',
+      name: 'Delta 9 Fantoken',
+      display: 'd9x',
+      symbol: 'D9X',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft575B10B0CEE2C164D9ED6A96313496F164A9607C.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft575B10B0CEE2C164D9ED6A96313496F164A9607C.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'ft575B10B0CEE2C164D9ED6A96313496F164A9607C',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel_id: 'channel-124'
+          }
+        }
+      ]
+    },
+    {
+      description: 'FONTI a BitSong Music FanToken',
+      denom_units: [
+        {
+          denom:
+            'ibc/C78EB7F8C50CB7E3187BF0CC77873CF4E17A287926C0B6D5238E5ABA2384E198',
+          exponent: 0,
+          aliases: ['ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305']
+        },
+        {
+          denom: 'fonti',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/C78EB7F8C50CB7E3187BF0CC77873CF4E17A287926C0B6D5238E5ABA2384E198',
+      name: 'FONTI Fantoken',
+      display: 'fonti',
+      symbol: 'FONTI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel_id: 'channel-124'
+          }
+        }
+      ]
+    },
+    {
+      description: 'BlackJack a BitSong Music FanToken',
+      denom_units: [
+        {
+          denom:
+            'ibc/82CA3AD753661AE76AB63C94F6ADA38701CCFD09B4D2F0D8AEC90027D65EA6D3',
+          exponent: 0,
+          aliases: ['ft52EEB0EE509AC546ED92EAC8591F731F213DDD16']
+        },
+        {
+          denom: 'bjks',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/82CA3AD753661AE76AB63C94F6ADA38701CCFD09B4D2F0D8AEC90027D65EA6D3',
+      name: 'BlackJack Fantoken',
+      display: 'bjks',
+      symbol: 'BJKS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft52EEB0EE509AC546ED92EAC8591F731F213DDD16.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft52EEB0EE509AC546ED92EAC8591F731F213DDD16.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'ft52EEB0EE509AC546ED92EAC8591F731F213DDD16',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel_id: 'channel-124'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Rawanne a BitSong Music FanToken',
+      denom_units: [
+        {
+          denom:
+            'ibc/9C8949DE87FE1B74D3264F684BF19BE4BA553566D6800FFD0C73B524D78FF507',
+          exponent: 0,
+          aliases: ['ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A']
+        },
+        {
+          denom: 'rwne',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/9C8949DE87FE1B74D3264F684BF19BE4BA553566D6800FFD0C73B524D78FF507',
+      name: 'Rawanne Fantoken',
+      display: 'rwne',
+      symbol: 'RWNE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel_id: 'channel-124'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Enmoda a BitSong Music FanToken',
+      denom_units: [
+        {
+          denom:
+            'ibc/A58B658F50A1005ECEABA87D812987EC145C935D9B672FB2F2649C8F63796065',
+          exponent: 0,
+          aliases: ['ft85AE1716C5E39EA6D64BBD7898C3899A7B500626']
+        },
+        {
+          denom: 'enmoda',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/A58B658F50A1005ECEABA87D812987EC145C935D9B672FB2F2649C8F63796065',
+      name: 'Enmoda Fantoken',
+      display: 'enmoda',
+      symbol: 'ENMODA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft85AE1716C5E39EA6D64BBD7898C3899A7B500626.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft85AE1716C5E39EA6D64BBD7898C3899A7B500626.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'ft85AE1716C5E39EA6D64BBD7898C3899A7B500626',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel_id: 'channel-124'
+          }
+        }
+      ]
+    },
+    {
+      description: '404Deep Records a BitSong Music FanToken',
+      denom_units: [
+        {
+          denom:
+            'ibc/1D56F21164592054BF1CD54404BFFCD2D2E24433204DB310901A016080947DBD',
+          exponent: 0,
+          aliases: ['ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A']
+        },
+        {
+          denom: '404dr',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/1D56F21164592054BF1CD54404BFFCD2D2E24433204DB310901A016080947DBD',
+      name: '404Deep Records Fantoken',
+      display: '404dr',
+      symbol: '404DR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel_id: 'channel-124'
+          }
+        }
+      ]
+    },
+    {
+      description: 'N43 a BitSong Music FanToken',
+      denom_units: [
+        {
+          denom:
+            'ibc/2013EC9F646F8E943ECA0BBD15D7B06D0B79EF464A7D4B6CFEA5989B9E2B1369',
+          exponent: 0,
+          aliases: ['ft387C1C279D962ED80C09C1D592A92C4275FD7C5D']
+        },
+        {
+          denom: 'n43',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/2013EC9F646F8E943ECA0BBD15D7B06D0B79EF464A7D4B6CFEA5989B9E2B1369',
+      name: 'N43 Fantoken',
+      display: 'n43',
+      symbol: 'N43',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'ft387C1C279D962ED80C09C1D592A92C4275FD7C5D',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel_id: 'channel-124'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Puro Lobo a BitSong Music FanToken',
+      denom_units: [
+        {
+          denom:
+            'ibc/B095B676914B628E81EF5C5C7647304019504C3219623CD7B2D0F7053C80AF4C',
+          exponent: 0,
+          aliases: ['ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB']
+        },
+        {
+          denom: 'lobo',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/B095B676914B628E81EF5C5C7647304019504C3219623CD7B2D0F7053C80AF4C',
+      name: 'Puro Lobo Fantoken',
+      display: 'lobo',
+      symbol: 'LOBO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel_id: 'channel-124'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Vibranium a BitSong Music FanToken',
+      denom_units: [
+        {
+          denom:
+            'ibc/537C192BC9691A2AB3D92101B2011F57AF06C0789038738E134C3BB70617AF55',
+          exponent: 0,
+          aliases: ['ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B']
+        },
+        {
+          denom: 'vibra',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/537C192BC9691A2AB3D92101B2011F57AF06C0789038738E134C3BB70617AF55',
+      name: 'Vibranium Fantoken',
+      display: 'vibra',
+      symbol: 'VIBRA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel_id: 'channel-124'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Karina a BitSong Music FanToken',
+      denom_units: [
+        {
+          denom:
+            'ibc/7144A27D3E79DB4D07049ADE349505D64C835380569F112A2FF84D5518039C9A',
+          exponent: 0,
+          aliases: ['ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE']
+        },
+        {
+          denom: 'karina',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/7144A27D3E79DB4D07049ADE349505D64C835380569F112A2FF84D5518039C9A',
+      name: 'Karina Fantoken',
+      display: 'karina',
+      symbol: 'KARINA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel_id: 'channel-124'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Luca Testa a BitSong Music FanToken',
+      denom_units: [
+        {
+          denom:
+            'ibc/5CBD5251DD2680090F539E833386DB393B3C432D702A04BEBB7A1C208770BAAB',
+          exponent: 0,
+          aliases: ['ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12']
+        },
+        {
+          denom: 'testa',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/5CBD5251DD2680090F539E833386DB393B3C432D702A04BEBB7A1C208770BAAB',
+      name: 'Luca Testa Fantoken',
+      display: 'testa',
+      symbol: 'TESTA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel_id: 'channel-124'
+          }
+        }
+      ]
+    },
+    {
+      description: 'Carolina Marquez a BitSong Music FanToken',
+      denom_units: [
+        {
+          denom:
+            'ibc/31BAE092CA00C2C1E762FC9BFB0279B1383A8AF8DA5DC9B225D994955549EA8A',
+          exponent: 0,
+          aliases: ['ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3']
+        },
+        {
+          denom: 'cmqz',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/31BAE092CA00C2C1E762FC9BFB0279B1383A8AF8DA5DC9B225D994955549EA8A',
+      name: 'Carolina Marquez Fantoken',
+      display: 'cmqz',
+      symbol: 'CMQZ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel_id: 'channel-124'
+          }
+        }
+      ]
+    },
+    {
+      deprecated: true,
+      description: '[Redacted] a BitSong Music FanToken',
+      denom_units: [
+        {
+          denom:
+            'ibc/A96635BBCDBDC872A516E44D5618CCFD6FBB3E60A5DD4D239D7B5EFCFF48F912',
+          exponent: 0,
+          aliases: ['ft347B1612A2B7659913679CF6CD45B8B130C50A00']
+        },
+        {
+          denom: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00/6',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/A96635BBCDBDC872A516E44D5618CCFD6FBB3E60A5DD4D239D7B5EFCFF48F912',
+      name: '[Redacted] Fantoken (ft3...A00)',
+      display: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00/6',
+      symbol: 'LDON',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00',
+            chain_name: 'bitsong'
+          },
+          chain: {
+            channel_id: 'channel-124'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native staking and governance token of the Cosmos Hub.',
       denom_units: [
         {
@@ -5600,13 +6241,15 @@ const assets: AssetList = {
             base_denom:
               'ibc/2FFE07C4B4EFC0DDA099A16C6AF3C9CCA653CC56077E87217A585D48794B0BC7'
           },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/baddog.png'
+        },
+        {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/baddog.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/baddog.svg'
         }
       ],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/baddog.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/baddog.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/baddog.png'
       }
     },
     {
@@ -5742,8 +6385,8 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdc.axl.svg',
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdc.axl.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdc.axl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdc.axl.svg'
       },
       images: [
         {
@@ -5797,12 +6440,16 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg'
       },
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg'
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png'
         }
       ]
     },
@@ -5842,8 +6489,8 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wbtc.axl.svg',
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wbtc.axl.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wbtc.axl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wbtc.axl.svg'
       },
       images: [
         {
@@ -5895,7 +6542,8 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdt.axl.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg'
       },
       images: [
         {
@@ -6182,12 +6830,16 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.svg'
       },
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.svg'
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.png'
         }
       ]
     },
@@ -6228,12 +6880,16 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.svg'
       },
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.svg'
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.png'
         }
       ]
     },
@@ -6371,7 +7027,8 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/dot.axl.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg'
       },
       images: [
         {
@@ -8665,7 +9322,8 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wbtc.grv.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg'
       },
       images: [
         {
@@ -8713,7 +9371,7 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/weth.grv.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg'
       },
       images: [
         {
@@ -8760,7 +9418,7 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdc.grv.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       images: [
         {
@@ -8807,7 +9465,7 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/dai.grv.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
       },
       images: [
         {
@@ -8854,7 +9512,7 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdt.grv.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
       },
       images: [
         {
@@ -12417,7 +13075,7 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/polygon.usdc.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       images: [
         {
@@ -12465,7 +13123,7 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/avalanche.usdc.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       images: [
         {
@@ -14553,7 +15211,7 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wstETH.axl.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wsteth.svg'
       },
       images: [
         {
@@ -15760,7 +16418,7 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdt.hole.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
       },
       images: [
         {
@@ -15858,7 +16516,7 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/aptos/images/apt-dm.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/aptos/images/aptos.svg'
       },
       images: [
         {
@@ -15999,7 +16657,7 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdc.hole.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       images: [
         {
@@ -16052,7 +16710,8 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/weth.hole.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg'
       },
       images: [
         {
@@ -16101,7 +16760,8 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
       },
       images: [
         {
@@ -16802,7 +17462,8 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx-circle.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
       },
       images: [
         {
@@ -18103,7 +18764,6 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.svg'
       },
       images: [
@@ -18112,7 +18772,6 @@ const assets: AssetList = {
             chain_name: 'binancesmartchain',
             base_denom: '0x29a63F4B209C29B4DC47f06FFA896F32667DAD2C'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.svg'
         }
       ],
@@ -20050,11 +20709,11 @@ const assets: AssetList = {
             base_denom:
               'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
         }
       ],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WOSMO.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
       }
     },
     {

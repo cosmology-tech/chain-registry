@@ -139,6 +139,10 @@ const info: Chain = {
       {
         address: 'http://rpc-m.c4e.apeironnodes.com:41001',
         provider: 'Apeiron Nodes'
+      },
+      {
+        address: 'http://rpc-c4e.cryptech.com.ua:443',
+        provider: 'Cryptech'
       }
     ],
     rest: [
@@ -229,6 +233,10 @@ const info: Chain = {
       {
         address: 'https://api.c4e.validatus.com:443',
         provider: 'Validatus'
+      },
+      {
+        address: 'https://api-c4e.cryptech.com.ua:443',
+        provider: 'CrypTech'
       }
     ],
     grpc: [
@@ -319,6 +327,10 @@ const info: Chain = {
       {
         address: 'https://grpc.c4e.validatus.com:443',
         provider: 'Validatus'
+      },
+      {
+        address: 'https://grpc-c4e.cryptech.com.ua:443',
+        provider: 'Cryptech'
       }
     ]
   },
@@ -388,6 +400,11 @@ const info: Chain = {
       kind: 'ScanRun',
       url: 'https://scanrun.io/c4e',
       tx_page: 'https://scanrun.io/c4e/transactions/${txHash}'
+    },
+    {
+      kind: 'Cryptech',
+      url: 'https://explorers.cryptech.com.ua/chain4energy',
+      tx_page: 'https://explorers.cryptech.com.ua/chain4energy/tx/${txHash}'
     }
   ],
   images: [

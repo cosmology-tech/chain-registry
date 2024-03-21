@@ -6,6 +6,7 @@ import * as _agoric from './agoric';
 import * as _aioz from './aioz';
 import * as _akash from './akash';
 import * as _andromeda from './andromeda';
+import * as _andromeda1 from './andromeda1';
 import * as _archway from './archway';
 import * as _arkh from './arkh';
 import * as _assetmantle from './assetmantle';
@@ -145,6 +146,7 @@ import * as _terra from './terra';
 import * as _terra2 from './terra2';
 import * as _tgrade from './tgrade';
 import * as _thorchain from './thorchain';
+import * as _titan from './titan';
 import * as _umee from './umee';
 import * as _unification from './unification';
 import * as _ununifi from './ununifi';
@@ -160,6 +162,7 @@ const chains: Chain[] = [
   _aioz.chain,
   _akash.chain,
   _andromeda.chain,
+  _andromeda1.chain,
   _archway.chain,
   _arkh.chain,
   _assetmantle.chain,
@@ -299,6 +302,7 @@ const chains: Chain[] = [
   _terra2.chain,
   _tgrade.chain,
   _thorchain.chain,
+  _titan.chain,
   _umee.chain,
   _unification.chain,
   _ununifi.chain,

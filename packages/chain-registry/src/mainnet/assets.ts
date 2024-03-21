@@ -144,6 +144,7 @@ import * as _terpnetwork from './terpnetwork';
 import * as _terra from './terra';
 import * as _terra2 from './terra2';
 import * as _tgrade from './tgrade';
+import * as _titan from './titan';
 import * as _umee from './umee';
 import * as _unification from './unification';
 import * as _ununifi from './ununifi';
@@ -297,6 +298,7 @@ const assets: AssetList[] = [
   _terra.assets,
   _terra2.assets,
   _tgrade.assets,
+  _titan.assets,
   _umee.assets,
   _unification.assets,
   _ununifi.assets,

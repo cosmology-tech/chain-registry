@@ -88,8 +88,8 @@ const info: AssetList = {
         }
       ],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg'
       },
       images: [
         {

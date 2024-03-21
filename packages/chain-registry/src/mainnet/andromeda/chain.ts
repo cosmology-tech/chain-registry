@@ -3,6 +3,7 @@ const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'andromeda',
   chain_id: 'andromeda-1',
+  pre_fork_chain_name: 'andromeda1',
   pretty_name: 'Andromeda',
   status: 'live',
   network_type: 'mainnet',
@@ -28,7 +29,11 @@ const info: Chain = {
       time: '1814400s'
     }
   },
-  codebase: {},
+  codebase: {
+    cosmos_sdk_version: 'v0.47.5',
+    cosmwasm_enabled: true,
+    cosmwasm_version: 'v0.41.0'
+  },
   apis: {
     rpc: [
       {

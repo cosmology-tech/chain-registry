@@ -40,12 +40,20 @@ const info: Chain = {
       {
         address: 'https://rpc-mainnet.onomy.io',
         provider: 'onomy'
+      },
+      {
+        address: 'https://onomy-mainnet-rpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
     rest: [
       {
         address: 'https://rest-mainnet.onomy.io',
         provider: 'onomy'
+      },
+      {
+        address: 'https://onomy-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
     grpc: []

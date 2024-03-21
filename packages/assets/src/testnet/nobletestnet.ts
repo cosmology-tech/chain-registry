@@ -741,10 +741,12 @@ const assets: AssetList = {
             chain_name: 'injectivetestnet',
             base_denom: 'inj'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png'
         }
       ],
       logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
       }
     }

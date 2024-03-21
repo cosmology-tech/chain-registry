@@ -357,6 +357,9 @@ const assets: AssetList = {
         }
       ],
       keywords: ['staking'],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
+      },
       traces: [
         {
           type: 'ibc',

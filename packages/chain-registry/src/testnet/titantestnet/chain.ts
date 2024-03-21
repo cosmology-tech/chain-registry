@@ -4,7 +4,7 @@ const info: Chain = {
   chain_name: 'titantestnet',
   status: 'live',
   network_type: 'testnet',
-  website: 'https://tokenize.exchange/',
+  website: 'https://titanlab.io/',
   pretty_name: 'Titan Testnet',
   chain_id: 'titan_18889-1',
   bech32_prefix: 'titan',
@@ -32,7 +32,7 @@ const info: Chain = {
     ]
   },
   codebase: {
-    cosmos_sdk_version: '0.47.6-titan.3',
+    cosmos_sdk_version: '0.47.6-titan.4',
     cosmwasm_enabled: true,
     cosmwasm_version: '0.45.0'
   },
@@ -45,40 +45,52 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://titan-testnet-rpc-1.tokenize-dev.com:443',
+        address: 'https://titan-testnet-rpc.titanlab.io:443',
         provider: 'Titanlab.io'
       },
       {
-        address: 'https://titan-testnet-rpc-2.tokenize-dev.com:443',
+        address: 'https://titan-testnet-rpc-1.titanlab.io:443',
         provider: 'Titanlab.io'
       },
       {
-        address: 'https://titan-testnet-rpc-3.tokenize-dev.com:443',
+        address: 'https://titan-testnet-rpc-2.titanlab.io:443',
         provider: 'Titanlab.io'
       },
       {
-        address: 'https://titan-testnet-rpc-4.tokenize-dev.com:443',
+        address: 'https://titan-testnet-rpc-3.titanlab.io:443',
+        provider: 'Titanlab.io'
+      },
+      {
+        address: 'https://titan-testnet-rpc-4.titanlab.io:443',
         provider: 'Titanlab.io'
       }
     ],
     rest: [
       {
-        address: 'https://titan-testnet-lcd-1.tokenize-dev.com:443',
+        address: 'https://titan-testnet-lcd.titanlab.io:443',
         provider: 'Titanlab.io'
       },
       {
-        address: 'https://titan-testnet-lcd-1.tokenize-dev.com:443',
+        address: 'https://titan-testnet-lcd-1.titanlab.io:443',
+        provider: 'Titanlab.io'
+      },
+      {
+        address: 'https://titan-testnet-lcd-2.titanlab.io:443',
         provider: 'Titanlab.io'
       }
     ],
     grpc: [],
     'evm-http-jsonrpc': [
       {
-        address: 'https://titan-testnet-json-rpc-1.tokenize-dev.com:443',
+        address: 'https://titan-testnet-json-rpc.titanlab.io:443',
         provider: 'Titanlab.io'
       },
       {
-        address: 'https://titan-testnet-json-rpc-2.tokenize-dev.com:443',
+        address: 'https://titan-testnet-json-rpc-1.titanlab.io:443',
+        provider: 'Titanlab.io'
+      },
+      {
+        address: 'https://titan-testnet-json-rpc-2.titanlab.io:443',
         provider: 'Titanlab.io'
       }
     ]
@@ -86,12 +98,16 @@ const info: Chain = {
   explorers: [
     {
       kind: 'ping.pub',
-      url: 'https://titan-testnet-explorer-light.tokenize-dev.com',
+      url: 'https://titan-testnet-explorer-light.titanlab.io',
       tx_page:
-        'https://titan-testnet-explorer-light.tokenize-dev.com/Titan%20Testnet/tx/${txHash}',
+        'https://titan-testnet-explorer-light.titanlab.io/Titan%20Testnet/tx/${txHash}',
       account_page:
-        'https://titan-testnet-explorer-light.tokenize-dev.com/Titan%20Testnet/account/${accountAddress}'
+        'https://titan-testnet-explorer-light.titanlab.io/Titan%20Testnet/account/${accountAddress}'
     }
-  ]
+  ],
+  logo_URIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/chain.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/chain.svg'
+  }
 };
 export default info;

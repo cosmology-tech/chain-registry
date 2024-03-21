@@ -65,6 +65,12 @@ const info: Chain = {
       url: 'https://explore.consciousdao.com/',
       tx_page: 'https://explore.consciousdao.com/tx/${txHash}'
     }
+  ],
+  images: [
+    {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg'
+    }
   ]
 };
 export default info;

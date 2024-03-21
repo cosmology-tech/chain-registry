@@ -31,7 +31,8 @@ const info: AssetList = {
         }
       ],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'
       },
       images: [
         {
@@ -39,7 +40,8 @@ const info: AssetList = {
             chain_name: 'sge',
             base_denom: 'usge'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'
         }
       ]
     }

@@ -166,6 +166,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/cosmoshub/rpc',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://rpc-cosmos.kewrnode.com',
+        provider: 'Kewr Node'
       }
     ],
     rest: [
@@ -272,6 +276,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/cosmoshub/rest',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://rest-cosmos.kewrnode.com',
+        provider: 'Kewr Node'
       }
     ],
     grpc: [

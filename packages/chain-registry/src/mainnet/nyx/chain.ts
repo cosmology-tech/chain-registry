@@ -43,7 +43,8 @@ const info: Chain = {
     cosmwasm_enabled: true
   },
   logo_URIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.png'
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.svg'
   },
   apis: {
     rpc: [
@@ -140,6 +141,9 @@ const info: Chain = {
         dark_mode: true,
         circle: true
       }
+    },
+    {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.png'
     }
   ]
 };
