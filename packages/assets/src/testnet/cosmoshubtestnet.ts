@@ -283,7 +283,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/596C5A00AF1998532E1F72B0499B7C8CC5050EBF521C977191B4272DF78FA848',
+            'ibc/E1D1BDB7784D5784980CAA320583F8D3DDBA182E01F082B0CE9E761C53C7F59B',
           exponent: 0,
           aliases: ['ukuji']
         },
@@ -292,7 +292,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/596C5A00AF1998532E1F72B0499B7C8CC5050EBF521C977191B4272DF78FA848',
+      base: 'ibc/E1D1BDB7784D5784980CAA320583F8D3DDBA182E01F082B0CE9E761C53C7F59B',
       name: 'Kuji',
       display: 'kuji',
       symbol: 'KUJI',
@@ -308,12 +308,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-577',
+            channel_id: 'channel-51',
             base_denom: 'ukuji',
             chain_name: 'kujiratestnet'
           },
           chain: {
-            channel_id: 'channel-3758'
+            channel_id: 'channel-4004'
           }
         }
       ]
@@ -323,7 +323,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/6F6F945FE0994AA4A715068B91DF86EE8FB8678BBA6C106D6FEC9DF865F3F908',
+            'ibc/FFDE1D253273143F6667D9B732537A189FD408404ED8C581F3A9B6AC96A63B62',
           exponent: 0,
           aliases: [
             'factory/kujira16qpvzhmawvsm8mcj4hdvtz25dadatdhhgw79xa/FUZN'
@@ -334,7 +334,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/6F6F945FE0994AA4A715068B91DF86EE8FB8678BBA6C106D6FEC9DF865F3F908',
+      base: 'ibc/FFDE1D253273143F6667D9B732537A189FD408404ED8C581F3A9B6AC96A63B62',
       name: 'Fuzion',
       display: 'fuzn',
       symbol: 'FUZN',
@@ -350,13 +350,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-577',
+            channel_id: 'channel-51',
             base_denom:
               'factory/kujira16qpvzhmawvsm8mcj4hdvtz25dadatdhhgw79xa/FUZN',
             chain_name: 'kujiratestnet'
           },
           chain: {
-            channel_id: 'channel-3758'
+            channel_id: 'channel-4004'
           }
         }
       ]

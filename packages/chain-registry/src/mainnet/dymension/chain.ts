@@ -9,6 +9,7 @@ const info: Chain = {
   chain_id: 'dymension_1100-1',
   bech32_prefix: 'dym',
   slip44: 60,
+  node_home: '$HOME/.dymension',
   daemon_name: 'dymd',
   fees: {
     fee_tokens: [

@@ -89,6 +89,10 @@ const info: Chain = {
       {
         address: 'https://bitsong-rpc.panthea.eu',
         provider: 'Panthea EU'
+      },
+      {
+        address: 'https://rpc.bitsong.mathnodes.com',
+        provider: 'MathNodes'
       }
     ],
     rest: [
@@ -135,6 +139,10 @@ const info: Chain = {
       {
         address: 'https://bitsong-api.panthea.eu',
         provider: 'Panthea EU'
+      },
+      {
+        address: 'https://api.bitsong.mathnodes.com',
+        provider: 'MathNodes'
       }
     ],
     grpc: [
@@ -157,6 +165,10 @@ const info: Chain = {
       {
         address: 'bitsong-grpc.panthea.eu:16750',
         provider: 'Panthea EU'
+      },
+      {
+        address: 'grpc.bitsong.mathnodes.com:9092',
+        provider: 'MathNodes'
       }
     ]
   },

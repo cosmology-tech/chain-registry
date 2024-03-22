@@ -45,6 +45,10 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
+        address: 'https://c4e.rpc.bccnodes.com',
+        provider: 'BccNodes'
+      },
+      {
         address: 'https://chain4energy-mainnet-rpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
       },
@@ -155,6 +159,10 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
+        address: 'https://c4e.lcd.bccnodes.com',
+        provider: 'BccNodes'
+      },
+      {
         address: 'https://chain4energy-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
       },
@@ -243,6 +251,10 @@ const info: Chain = {
       {
         address: 'grpc.c4e.nodestake.top:443',
         provider: 'NodeStake'
+      },
+      {
+        address: 'c4e.grpc.bccnodes.com:443',
+        provider: 'BccNodes'
       },
       {
         address: 'chain4energy-mainnet-grpc.autostake.com:443',
