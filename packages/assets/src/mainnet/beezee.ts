@@ -13748,6 +13748,51 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
         }
       ]
+    },
+    {
+      description: 'BackBone Labs Liquid Staked OSMO',
+      denom_units: [
+        {
+          denom:
+            'ibc/E79A31185D5A8A9B22E7AE3D96421EAC7A3E8A54B3A793B6DFAD93898C63C669',
+          exponent: 0,
+          aliases: [
+            'factory/osmo1s3l0lcqc7tu0vpj6wdjz9wqpxv8nk6eraevje4fuwkyjnwuy82qsx3lduv/boneOsmo'
+          ]
+        },
+        {
+          denom: 'bOSMO',
+          exponent: 6
+        }
+      ],
+      address:
+        'osmo1s3l0lcqc7tu0vpj6wdjz9wqpxv8nk6eraevje4fuwkyjnwuy82qsx3lduv',
+      base: 'ibc/E79A31185D5A8A9B22E7AE3D96421EAC7A3E8A54B3A793B6DFAD93898C63C669',
+      name: 'BackBone Labs Liquid Staked OSMO',
+      display: 'bOSMO',
+      symbol: 'bOSMO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/bOSMO.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/bOSMO.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-340',
+            base_denom:
+              'factory/osmo1s3l0lcqc7tu0vpj6wdjz9wqpxv8nk6eraevje4fuwkyjnwuy82qsx3lduv/boneOsmo',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-0'
+          }
+        }
+      ]
     }
   ]
 };

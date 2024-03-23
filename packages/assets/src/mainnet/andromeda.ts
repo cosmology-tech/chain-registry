@@ -2112,6 +2112,49 @@ const assets: AssetList = {
       }
     },
     {
+      description: 'BackBone Labs Liquid Staked KUJI',
+      denom_units: [
+        {
+          denom:
+            'ibc/AB346AA6C1C3C7F622E435037C66DE19DCF0BA79937C26CB05CFB40F0C8D70CE',
+          exponent: 0,
+          aliases: [
+            'factory/kujira15e8q5wzlk5k38gjxlhse3vu6vqnafysncx2ltexd6y9gx50vuj2qpt7dgv/boneKuji'
+          ]
+        },
+        {
+          denom: 'bKUJI',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/AB346AA6C1C3C7F622E435037C66DE19DCF0BA79937C26CB05CFB40F0C8D70CE',
+      name: 'BackBone Labs Liquid Staked KUJI',
+      display: 'bKUJI',
+      symbol: 'bKUJI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bKUJI.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bKUJI.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-123',
+            base_denom:
+              'factory/kujira15e8q5wzlk5k38gjxlhse3vu6vqnafysncx2ltexd6y9gx50vuj2qpt7dgv/boneKuji',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-5'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Secret Network',
       denom_units: [
         {

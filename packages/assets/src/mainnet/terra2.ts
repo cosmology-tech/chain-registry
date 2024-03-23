@@ -5468,6 +5468,49 @@ const assets: AssetList = {
       }
     },
     {
+      description: 'BackBone Labs Liquid Staked KUJI',
+      denom_units: [
+        {
+          denom:
+            'ibc/DBE3F5BFDA4559B19AC67491A971875B1B1901F3EEFF9F2A02DB4B5CCBD161C1',
+          exponent: 0,
+          aliases: [
+            'factory/kujira15e8q5wzlk5k38gjxlhse3vu6vqnafysncx2ltexd6y9gx50vuj2qpt7dgv/boneKuji'
+          ]
+        },
+        {
+          denom: 'bKUJI',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/DBE3F5BFDA4559B19AC67491A971875B1B1901F3EEFF9F2A02DB4B5CCBD161C1',
+      name: 'BackBone Labs Liquid Staked KUJI',
+      display: 'bKUJI',
+      symbol: 'bKUJI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bKUJI.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bKUJI.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom:
+              'factory/kujira15e8q5wzlk5k38gjxlhse3vu6vqnafysncx2ltexd6y9gx50vuj2qpt7dgv/boneKuji',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
       description: 'Mars protocol token',
       denom_units: [
         {
@@ -5601,7 +5644,7 @@ const assets: AssetList = {
       ]
     },
     {
-      description: 'boneWHALE',
+      description: 'BackBone Labs Liquid Staked WHALE',
       denom_units: [
         {
           denom:
@@ -5612,24 +5655,23 @@ const assets: AssetList = {
           ]
         },
         {
-          denom: 'boneWHALE',
+          denom: 'bWHALE',
           exponent: 6
         }
       ],
       base: 'ibc/517E13F14A1245D4DE8CF467ADD4DA0058974CDCC880FA6AE536DBCA1D16D84E',
-      name: 'boneWHALE',
-      display: 'boneWHALE',
+      name: 'BackBone Labs Liquid Staked WHALE',
+      display: 'bWHALE',
       symbol: 'bWHALE',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png'
       },
       images: [
         {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png'
         }
       ],
+      coingecko_id: 'backbone-labs-staked-whale',
       traces: [
         {
           type: 'ibc',
@@ -21151,6 +21193,51 @@ const assets: AssetList = {
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
+        }
+      ]
+    },
+    {
+      description: 'BackBone Labs Liquid Staked OSMO',
+      denom_units: [
+        {
+          denom:
+            'ibc/B59EB83C4DC29858022B59CF5E4280A8CE2E8C16A294960A19ED0792F5FC7F37',
+          exponent: 0,
+          aliases: [
+            'factory/osmo1s3l0lcqc7tu0vpj6wdjz9wqpxv8nk6eraevje4fuwkyjnwuy82qsx3lduv/boneOsmo'
+          ]
+        },
+        {
+          denom: 'bOSMO',
+          exponent: 6
+        }
+      ],
+      address:
+        'osmo1s3l0lcqc7tu0vpj6wdjz9wqpxv8nk6eraevje4fuwkyjnwuy82qsx3lduv',
+      base: 'ibc/B59EB83C4DC29858022B59CF5E4280A8CE2E8C16A294960A19ED0792F5FC7F37',
+      name: 'BackBone Labs Liquid Staked OSMO',
+      display: 'bOSMO',
+      symbol: 'bOSMO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/bOSMO.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/bOSMO.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-251',
+            base_denom:
+              'factory/osmo1s3l0lcqc7tu0vpj6wdjz9wqpxv8nk6eraevje4fuwkyjnwuy82qsx3lduv/boneOsmo',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-1'
+          }
         }
       ]
     },

@@ -735,8 +735,11 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/8A138BC76D0FB2665F8937EC2BF01B9F6A714F6127221A0E155106A45E09BCC5',
-          exponent: 0
+            'ibc/9E6AD21A09AA5B1695EFDE5167F2B5512D56C4100C322D5E72F2574724CF4E28',
+          exponent: 0,
+          aliases: [
+            'ibc/8A138BC76D0FB2665F8937EC2BF01B9F6A714F6127221A0E155106A45E09BCC5'
+          ]
         },
         {
           denom: 'atom',

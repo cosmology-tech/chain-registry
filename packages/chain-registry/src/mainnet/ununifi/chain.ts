@@ -34,7 +34,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.3-custom-bank-1',
+    cosmos_sdk_version: 'ununifi/cosmos-sdk v0.47.3-custom-bank-1',
     cosmwasm_enabled: true,
     cosmwasm_version: 'v0.40.1'
   },

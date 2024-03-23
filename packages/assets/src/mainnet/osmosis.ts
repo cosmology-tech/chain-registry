@@ -10577,6 +10577,49 @@ const assets: AssetList = {
       }
     },
     {
+      description: 'BackBone Labs Liquid Staked KUJI',
+      denom_units: [
+        {
+          denom:
+            'ibc/65DBF703194F41E26A236F929E45899A3FF2EE20B411D284833DD5056FD6C165',
+          exponent: 0,
+          aliases: [
+            'factory/kujira15e8q5wzlk5k38gjxlhse3vu6vqnafysncx2ltexd6y9gx50vuj2qpt7dgv/boneKuji'
+          ]
+        },
+        {
+          denom: 'bKUJI',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/65DBF703194F41E26A236F929E45899A3FF2EE20B411D284833DD5056FD6C165',
+      name: 'BackBone Labs Liquid Staked KUJI',
+      display: 'bKUJI',
+      symbol: 'bKUJI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bKUJI.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bKUJI.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'factory/kujira15e8q5wzlk5k38gjxlhse3vu6vqnafysncx2ltexd6y9gx50vuj2qpt7dgv/boneKuji',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-259'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native utility token of the KYVE network.',
       denom_units: [
         {
@@ -11060,7 +11103,7 @@ const assets: AssetList = {
       ]
     },
     {
-      description: 'boneWHALE',
+      description: 'BackBone Labs Liquid Staked WHALE',
       denom_units: [
         {
           denom:
@@ -11071,24 +11114,23 @@ const assets: AssetList = {
           ]
         },
         {
-          denom: 'boneWHALE',
+          denom: 'bWHALE',
           exponent: 6
         }
       ],
       base: 'ibc/917C4B1E92EE2F959FC11ECFC435C4048F97E8B00F9444592706F4604F24BF25',
-      name: 'boneWHALE',
-      display: 'boneWHALE',
+      name: 'BackBone Labs Liquid Staked WHALE',
+      display: 'bWHALE',
       symbol: 'bWHALE',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png'
       },
       images: [
         {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png'
         }
       ],
+      coingecko_id: 'backbone-labs-staked-whale',
       traces: [
         {
           type: 'ibc',
@@ -16435,6 +16477,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scr.svg'
         }
       ],
+      socials: {
+        webiste: 'https://scorum.com',
+        twitter: 'https://twitter.com/scorum_en'
+      },
       traces: [
         {
           type: 'ibc',
@@ -16877,49 +16923,6 @@ const assets: AssetList = {
             channel_id: 'channel-0',
             base_denom:
               'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda',
-            chain_name: 'sei'
-          },
-          chain: {
-            channel_id: 'channel-782'
-          }
-        }
-      ]
-    },
-    {
-      description: 'The Original Meme Coin on SEI Network',
-      denom_units: [
-        {
-          denom:
-            'ibc/B61F272C20D301DD6D0C036BDCDF8CD83A95EE594FBDD9977910AE69F58936D3',
-          exponent: 0,
-          aliases: [
-            'sei1hrndqntlvtmx2kepr0zsfgr7nzjptcc72cr4ppk4yav58vvy7v3s4er8ed'
-          ]
-        },
-        {
-          denom: 'SEIYAN',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/B61F272C20D301DD6D0C036BDCDF8CD83A95EE594FBDD9977910AE69F58936D3',
-      name: 'SEIYAN',
-      display: 'SEIYAN',
-      symbol: 'SEIYAN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/SEIYAN.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/SEIYAN.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom:
-              'sei1hrndqntlvtmx2kepr0zsfgr7nzjptcc72cr4ppk4yav58vvy7v3s4er8ed',
             chain_name: 'sei'
           },
           chain: {
@@ -20350,6 +20353,55 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'BackBone Labs Liquid Staked HUAHUA',
+      denom_units: [
+        {
+          denom:
+            'ibc/E40B7DE4A2723609B4D260B2022C279C0FE389494ECB093A46970F0C711F72B3',
+          exponent: 0,
+          aliases: [
+            'cw20:chihuahua1jz5n4aynhpxx7clf2m8hrv9dp5nz83k67fgaxhy4p9dfwl6zssrq3ymr6w'
+          ]
+        },
+        {
+          denom: 'bHUAHUA',
+          exponent: 6
+        }
+      ],
+      type_asset: 'cw20',
+      address:
+        'chihuahua1jz5n4aynhpxx7clf2m8hrv9dp5nz83k67fgaxhy4p9dfwl6zssrq3ymr6w',
+      base: 'ibc/E40B7DE4A2723609B4D260B2022C279C0FE389494ECB093A46970F0C711F72B3',
+      name: 'BackBone Labs Liquid Staked HUAHUA',
+      display: 'bHUAHUA',
+      symbol: 'bHUAHUA',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
+      },
+      coingecko_id: 'backbone-labs-staked-huahua',
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.chihuahua1jwkag4yvhyj9fuddtkygvavya8hmdjuzmgxwg9vp3lw9twv6lrcq9mgl52',
+            channel_id: 'channel-73',
+            base_denom:
+              'cw20:chihuahua1jz5n4aynhpxx7clf2m8hrv9dp5nz83k67fgaxhy4p9dfwl6zssrq3ymr6w',
+            chain_name: 'chihuahua'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-11348'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token cw20 for Neta on Juno Chain',
       type_asset: 'cw20',
       address:
@@ -23637,6 +23689,55 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'BackBone Labs Liquid Staked JUNO',
+      type_asset: 'cw20',
+      address:
+        'juno1mvkgcr5uce2rnpzr4qrzf50hx4qreuwzlt7fzsjrhjud3xnjmttq5mkh2m',
+      denom_units: [
+        {
+          denom:
+            'ibc/8ED0F4F84A6035D7DE3E0D6B8A0258401496C7366481F7C863C0B7B738C37A2B',
+          exponent: 0,
+          aliases: [
+            'cw20:juno1mvkgcr5uce2rnpzr4qrzf50hx4qreuwzlt7fzsjrhjud3xnjmttq5mkh2m'
+          ]
+        },
+        {
+          denom: 'bJUNO',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/8ED0F4F84A6035D7DE3E0D6B8A0258401496C7366481F7C863C0B7B738C37A2B',
+      name: 'BackBone Labs Liquid Staked JUNO',
+      display: 'bJUNO',
+      symbol: 'bJUNO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bJUNO-bbl.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bJUNO-bbl.png'
+        }
+      ],
+      coingecko_id: 'backbone-labs-staked-juno',
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom:
+              'cw20:juno1mvkgcr5uce2rnpzr4qrzf50hx4qreuwzlt7fzsjrhjud3xnjmttq5mkh2m',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }
+      ]
+    },
+    {
       description: 'ELEVENPARIS loyalty token on KiChain',
       type_asset: 'cw20',
       address: 'ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy',
@@ -24694,8 +24795,7 @@ const assets: AssetList = {
       ]
     },
     {
-      description:
-        'The GraveDigger is the Liquid Staking Product of BackBone Labs. It will have its own platform. Its liquid staking derivative (LSD) is boneLUNA.',
+      description: 'BackBone Labs Liquid Staked LUNA',
       type_asset: 'cw20',
       address:
         'terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml',
@@ -24709,22 +24809,23 @@ const assets: AssetList = {
           ]
         },
         {
-          denom: 'bluna',
+          denom: 'bLUNA',
           exponent: 6
         }
       ],
       base: 'ibc/14B25BDFFBE4A0584A82BF439C9FB93DE74054F931E162264B530EB994B590EF',
-      name: 'boneLuna',
-      display: 'bluna',
+      name: 'BackBone Labs Liquid Staked LUNA',
+      display: 'bLUNA',
       symbol: 'bLUNA',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/boneluna.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
       },
       images: [
         {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/boneluna.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
         }
       ],
+      coingecko_id: 'backbone-labs-staked-luna',
       traces: [
         {
           type: 'ibc-cw20',

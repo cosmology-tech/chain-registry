@@ -6005,7 +6005,7 @@ const assets: AssetList = {
       ]
     },
     {
-      description: 'boneWHALE',
+      description: 'BackBone Labs Liquid Staked WHALE',
       denom_units: [
         {
           denom:
@@ -6016,24 +6016,23 @@ const assets: AssetList = {
           ]
         },
         {
-          denom: 'boneWHALE',
+          denom: 'bWHALE',
           exponent: 6
         }
       ],
       base: 'ibc/0C86C1202E29CBB6356E86E0A641ECC068DC98DBDF32150CE05A5E8D4EDC8A6F',
-      name: 'boneWHALE',
-      display: 'boneWHALE',
+      name: 'BackBone Labs Liquid Staked WHALE',
+      display: 'bWHALE',
       symbol: 'bWHALE',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png'
       },
       images: [
         {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png'
         }
       ],
+      coingecko_id: 'backbone-labs-staked-whale',
       traces: [
         {
           type: 'ibc',
@@ -22077,6 +22076,51 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'BackBone Labs Liquid Staked OSMO',
+      denom_units: [
+        {
+          denom:
+            'ibc/37219C9B3EA107DDEC8820335516A2E0AF9135A51D6FAF92F31C955A9FFF6313',
+          exponent: 0,
+          aliases: [
+            'factory/osmo1s3l0lcqc7tu0vpj6wdjz9wqpxv8nk6eraevje4fuwkyjnwuy82qsx3lduv/boneOsmo'
+          ]
+        },
+        {
+          denom: 'bOSMO',
+          exponent: 6
+        }
+      ],
+      address:
+        'osmo1s3l0lcqc7tu0vpj6wdjz9wqpxv8nk6eraevje4fuwkyjnwuy82qsx3lduv',
+      base: 'ibc/37219C9B3EA107DDEC8820335516A2E0AF9135A51D6FAF92F31C955A9FFF6313',
+      name: 'BackBone Labs Liquid Staked OSMO',
+      display: 'bOSMO',
+      symbol: 'bOSMO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/bOSMO.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/bOSMO.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-259',
+            base_denom:
+              'factory/osmo1s3l0lcqc7tu0vpj6wdjz9wqpxv8nk6eraevje4fuwkyjnwuy82qsx3lduv/boneOsmo',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-3'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The XPRT token is primarily a governance token for the Persistence chain.',
       denom_units: [
@@ -25650,8 +25694,7 @@ const assets: AssetList = {
       ]
     },
     {
-      description:
-        'The GraveDigger is the Liquid Staking Product of BackBone Labs. It will have its own platform. Its liquid staking derivative (LSD) is boneLUNA.',
+      description: 'BackBone Labs Liquid Staked LUNA',
       type_asset: 'cw20',
       address:
         'terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml',
@@ -25665,22 +25708,23 @@ const assets: AssetList = {
           ]
         },
         {
-          denom: 'bluna',
+          denom: 'bLUNA',
           exponent: 6
         }
       ],
       base: 'ibc/665F3EBB89B38FB4A1D3B0C7FB6523F92DCDAACB38FF43C6607CA6E009B81603',
-      name: 'boneLuna',
-      display: 'bluna',
+      name: 'BackBone Labs Liquid Staked LUNA',
+      display: 'bLUNA',
       symbol: 'bLUNA',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/boneluna.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
       },
       images: [
         {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/boneluna.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
         }
       ],
+      coingecko_id: 'backbone-labs-staked-luna',
       traces: [
         {
           type: 'ibc-cw20',

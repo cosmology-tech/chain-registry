@@ -400,8 +400,7 @@ const info: AssetList = {
       ]
     },
     {
-      description:
-        'The GraveDigger is the Liquid Staking Product of BackBone Labs. It will have its own platform. Its liquid staking derivative (LSD) is boneLUNA.',
+      description: 'BackBone Labs Liquid Staked LUNA',
       type_asset: 'cw20',
       address:
         'terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml',
@@ -412,22 +411,23 @@ const info: AssetList = {
           exponent: 0
         },
         {
-          denom: 'bluna',
+          denom: 'bLUNA',
           exponent: 6
         }
       ],
       base: 'cw20:terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml',
-      name: 'boneLuna',
-      display: 'bluna',
+      name: 'BackBone Labs Liquid Staked LUNA',
+      display: 'bLUNA',
       symbol: 'bLUNA',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/boneluna.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
       },
       images: [
         {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/boneluna.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
         }
-      ]
+      ],
+      coingecko_id: 'backbone-labs-staked-luna'
     },
     {
       description:

@@ -2151,6 +2151,49 @@ const assets: AssetList = {
       }
     },
     {
+      description: 'BackBone Labs Liquid Staked KUJI',
+      denom_units: [
+        {
+          denom:
+            'ibc/8DD0A386945CDB4916F7497DF2776D2653F9BFCCD352064E2B0709AA6D03D16A',
+          exponent: 0,
+          aliases: [
+            'factory/kujira15e8q5wzlk5k38gjxlhse3vu6vqnafysncx2ltexd6y9gx50vuj2qpt7dgv/boneKuji'
+          ]
+        },
+        {
+          denom: 'bKUJI',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/8DD0A386945CDB4916F7497DF2776D2653F9BFCCD352064E2B0709AA6D03D16A',
+      name: 'BackBone Labs Liquid Staked KUJI',
+      display: 'bKUJI',
+      symbol: 'bKUJI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bKUJI.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bKUJI.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-51',
+            base_denom:
+              'factory/kujira15e8q5wzlk5k38gjxlhse3vu6vqnafysncx2ltexd6y9gx50vuj2qpt7dgv/boneKuji',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-23'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Osmosis',
       denom_units: [
         {
@@ -15898,6 +15941,51 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'BackBone Labs Liquid Staked OSMO',
+      denom_units: [
+        {
+          denom:
+            'ibc/B59EB83C4DC29858022B59CF5E4280A8CE2E8C16A294960A19ED0792F5FC7F37',
+          exponent: 0,
+          aliases: [
+            'factory/osmo1s3l0lcqc7tu0vpj6wdjz9wqpxv8nk6eraevje4fuwkyjnwuy82qsx3lduv/boneOsmo'
+          ]
+        },
+        {
+          denom: 'bOSMO',
+          exponent: 6
+        }
+      ],
+      address:
+        'osmo1s3l0lcqc7tu0vpj6wdjz9wqpxv8nk6eraevje4fuwkyjnwuy82qsx3lduv',
+      base: 'ibc/B59EB83C4DC29858022B59CF5E4280A8CE2E8C16A294960A19ED0792F5FC7F37',
+      name: 'BackBone Labs Liquid Staked OSMO',
+      display: 'bOSMO',
+      symbol: 'bOSMO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/bOSMO.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/bOSMO.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-492',
+            base_denom:
+              'factory/osmo1s3l0lcqc7tu0vpj6wdjz9wqpxv8nk6eraevje4fuwkyjnwuy82qsx3lduv/boneOsmo',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-1'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native staking token of Sei.',
       denom_units: [
         {
@@ -16198,49 +16286,6 @@ const assets: AssetList = {
             channel_id: 'channel-13',
             base_denom:
               'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda',
-            chain_name: 'sei'
-          },
-          chain: {
-            channel_id: 'channel-59'
-          }
-        }
-      ]
-    },
-    {
-      description: 'The Original Meme Coin on SEI Network',
-      denom_units: [
-        {
-          denom:
-            'ibc/B2D5D8F82E84F0E87B74AAD2FAFCD58181F9FE250B476A73E5F688C99B8828E5',
-          exponent: 0,
-          aliases: [
-            'sei1hrndqntlvtmx2kepr0zsfgr7nzjptcc72cr4ppk4yav58vvy7v3s4er8ed'
-          ]
-        },
-        {
-          denom: 'SEIYAN',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/B2D5D8F82E84F0E87B74AAD2FAFCD58181F9FE250B476A73E5F688C99B8828E5',
-      name: 'SEIYAN',
-      display: 'SEIYAN',
-      symbol: 'SEIYAN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/SEIYAN.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/SEIYAN.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-13',
-            base_denom:
-              'sei1hrndqntlvtmx2kepr0zsfgr7nzjptcc72cr4ppk4yav58vvy7v3s4er8ed',
             chain_name: 'sei'
           },
           chain: {

@@ -15,7 +15,7 @@ const info: AssetList = {
           exponent: 6
         }
       ],
-      base: 'uatom',
+      base: 'ubbn',
       name: 'Babylon BBN',
       display: 'bbn',
       symbol: 'BBN',

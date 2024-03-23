@@ -214,11 +214,13 @@ const info: AssetList = {
       ]
     },
     {
-      description: 'The Original Meme Coin on SEI Network',
+      description: 'The Original Meme Coin of SEI Network',
+      type_asset: 'cw20',
+      address: 'sei1hrndqntlvtmx2kepr0zsfgr7nzjptcc72cr4ppk4yav58vvy7v3s4er8ed',
       denom_units: [
         {
           denom:
-            'sei1hrndqntlvtmx2kepr0zsfgr7nzjptcc72cr4ppk4yav58vvy7v3s4er8ed',
+            'cw20:sei1hrndqntlvtmx2kepr0zsfgr7nzjptcc72cr4ppk4yav58vvy7v3s4er8ed',
           exponent: 0
         },
         {
@@ -226,7 +228,7 @@ const info: AssetList = {
           exponent: 6
         }
       ],
-      base: 'sei1hrndqntlvtmx2kepr0zsfgr7nzjptcc72cr4ppk4yav58vvy7v3s4er8ed',
+      base: 'cw20:sei1hrndqntlvtmx2kepr0zsfgr7nzjptcc72cr4ppk4yav58vvy7v3s4er8ed',
       name: 'SEIYAN',
       display: 'SEIYAN',
       symbol: 'SEIYAN',

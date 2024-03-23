@@ -3,6 +3,7 @@ export * as acrechain from './acrechain';
 export * as agoric from './agoric';
 export * as aioz from './aioz';
 export * as akash from './akash';
+export * as akiro from './akiro';
 export * as andromeda from './andromeda';
 export * as andromeda1 from './andromeda1';
 export * as archway from './archway';

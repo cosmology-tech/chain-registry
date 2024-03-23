@@ -4621,6 +4621,49 @@ const assets: AssetList = {
       }
     },
     {
+      description: 'BackBone Labs Liquid Staked KUJI',
+      denom_units: [
+        {
+          denom:
+            'ibc/B1B18BE0143729BA0672C745285D7177EAE429AD0AD9175E4A590C0F9AA615A2',
+          exponent: 0,
+          aliases: [
+            'factory/kujira15e8q5wzlk5k38gjxlhse3vu6vqnafysncx2ltexd6y9gx50vuj2qpt7dgv/boneKuji'
+          ]
+        },
+        {
+          denom: 'bKUJI',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/B1B18BE0143729BA0672C745285D7177EAE429AD0AD9175E4A590C0F9AA615A2',
+      name: 'BackBone Labs Liquid Staked KUJI',
+      display: 'bKUJI',
+      symbol: 'bKUJI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bKUJI.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bKUJI.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-75',
+            base_denom:
+              'factory/kujira15e8q5wzlk5k38gjxlhse3vu6vqnafysncx2ltexd6y9gx50vuj2qpt7dgv/boneKuji',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-3'
+          }
+        }
+      ]
+    },
+    {
       description: 'Mars protocol token',
       denom_units: [
         {
@@ -19781,6 +19824,51 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'BackBone Labs Liquid Staked OSMO',
+      denom_units: [
+        {
+          denom:
+            'ibc/2D9538CD39C19EC92906F91E724647C72DA3C4451EAB5958D9AF572507A6C6A0',
+          exponent: 0,
+          aliases: [
+            'factory/osmo1s3l0lcqc7tu0vpj6wdjz9wqpxv8nk6eraevje4fuwkyjnwuy82qsx3lduv/boneOsmo'
+          ]
+        },
+        {
+          denom: 'bOSMO',
+          exponent: 6
+        }
+      ],
+      address:
+        'osmo1s3l0lcqc7tu0vpj6wdjz9wqpxv8nk6eraevje4fuwkyjnwuy82qsx3lduv',
+      base: 'ibc/2D9538CD39C19EC92906F91E724647C72DA3C4451EAB5958D9AF572507A6C6A0',
+      name: 'BackBone Labs Liquid Staked OSMO',
+      display: 'bOSMO',
+      symbol: 'bOSMO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/bOSMO.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/bOSMO.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-874',
+            base_denom:
+              'factory/osmo1s3l0lcqc7tu0vpj6wdjz9wqpxv8nk6eraevje4fuwkyjnwuy82qsx3lduv/boneOsmo',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The XPRT token is primarily a governance token for the Persistence chain.',
       denom_units: [
@@ -20697,49 +20785,6 @@ const assets: AssetList = {
             channel_id: 'channel-15',
             base_denom:
               'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda',
-            chain_name: 'sei'
-          },
-          chain: {
-            channel_id: 'channel-19'
-          }
-        }
-      ]
-    },
-    {
-      description: 'The Original Meme Coin on SEI Network',
-      denom_units: [
-        {
-          denom:
-            'ibc/1D0175F192A23585DC3382310B3F968A46F0EFECB03E31C4E37AD415F5313A10',
-          exponent: 0,
-          aliases: [
-            'sei1hrndqntlvtmx2kepr0zsfgr7nzjptcc72cr4ppk4yav58vvy7v3s4er8ed'
-          ]
-        },
-        {
-          denom: 'SEIYAN',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/1D0175F192A23585DC3382310B3F968A46F0EFECB03E31C4E37AD415F5313A10',
-      name: 'SEIYAN',
-      display: 'SEIYAN',
-      symbol: 'SEIYAN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/SEIYAN.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/SEIYAN.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-15',
-            base_denom:
-              'sei1hrndqntlvtmx2kepr0zsfgr7nzjptcc72cr4ppk4yav58vvy7v3s4er8ed',
             chain_name: 'sei'
           },
           chain: {
@@ -21935,6 +21980,55 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'BackBone Labs Liquid Staked HUAHUA',
+      denom_units: [
+        {
+          denom:
+            'ibc/8CC818BC7D48241F5EDDCAB4C386FDE5CB4E05B5F1C5062937AC6064D0AED16B',
+          exponent: 0,
+          aliases: [
+            'cw20:chihuahua1jz5n4aynhpxx7clf2m8hrv9dp5nz83k67fgaxhy4p9dfwl6zssrq3ymr6w'
+          ]
+        },
+        {
+          denom: 'bHUAHUA',
+          exponent: 6
+        }
+      ],
+      type_asset: 'cw20',
+      address:
+        'chihuahua1jz5n4aynhpxx7clf2m8hrv9dp5nz83k67fgaxhy4p9dfwl6zssrq3ymr6w',
+      base: 'ibc/8CC818BC7D48241F5EDDCAB4C386FDE5CB4E05B5F1C5062937AC6064D0AED16B',
+      name: 'BackBone Labs Liquid Staked HUAHUA',
+      display: 'bHUAHUA',
+      symbol: 'bHUAHUA',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
+      },
+      coingecko_id: 'backbone-labs-staked-huahua',
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.chihuahua1jwkag4yvhyj9fuddtkygvavya8hmdjuzmgxwg9vp3lw9twv6lrcq9mgl52',
+            channel_id: 'channel-77',
+            base_denom:
+              'cw20:chihuahua1jz5n4aynhpxx7clf2m8hrv9dp5nz83k67fgaxhy4p9dfwl6zssrq3ymr6w',
+            chain_name: 'chihuahua'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-52'
+          }
+        }
+      ]
+    },
+    {
       description:
         'Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.',
       denom_units: [
@@ -22527,8 +22621,7 @@ const assets: AssetList = {
       ]
     },
     {
-      description:
-        'The GraveDigger is the Liquid Staking Product of BackBone Labs. It will have its own platform. Its liquid staking derivative (LSD) is boneLUNA.',
+      description: 'BackBone Labs Liquid Staked LUNA',
       type_asset: 'cw20',
       address:
         'terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml',
@@ -22542,22 +22635,23 @@ const assets: AssetList = {
           ]
         },
         {
-          denom: 'bluna',
+          denom: 'bLUNA',
           exponent: 6
         }
       ],
       base: 'ibc/A847ACCB987D74EBFE13322D970D95611B40E04800C262BE89E3576D45FEA0F2',
-      name: 'boneLuna',
-      display: 'bluna',
+      name: 'BackBone Labs Liquid Staked LUNA',
+      display: 'bLUNA',
       symbol: 'bLUNA',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/boneluna.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
       },
       images: [
         {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/boneluna.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
         }
       ],
+      coingecko_id: 'backbone-labs-staked-luna',
       traces: [
         {
           type: 'ibc-cw20',

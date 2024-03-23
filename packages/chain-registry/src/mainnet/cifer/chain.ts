@@ -45,6 +45,12 @@ const info: Chain = {
         address: 'https://api.cifer.ai',
         provider: 'Cifer'
       }
+    ],
+    grpc: [
+      {
+        address: 'https://grpc.cifer.ai',
+        provider: 'Cifer'
+      }
     ]
   },
   explorers: [
