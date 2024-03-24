@@ -19612,7 +19612,7 @@ const assets: AssetList = {
       type_asset: 'ics20',
       base: 'ibc/586045674A90C520BD80A445752578F175476513AACE398AA543681BA96712DA',
       name: 'Nomic',
-      display: 'nomic',
+      display: 'nom',
       symbol: 'nomic.NOM',
       traces: [
         {
@@ -22095,10 +22095,6 @@ const assets: AssetList = {
           aliases: [
             'cw20:terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k'
           ]
-        },
-        {
-          denom: 'Dinheiros',
-          exponent: 0
         }
       ],
       type_asset: 'cw20',
@@ -22106,7 +22102,8 @@ const assets: AssetList = {
         'terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k',
       base: 'ibc/F2240EA389ADB06A20FDAE82928F2F206FD72002A569375B17C8AEDABC17D44B',
       name: 'dinheiro',
-      display: 'Dinheiros',
+      display:
+        'cw20:terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k',
       symbol: 'DINHEIROS',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Dinheiros.png'

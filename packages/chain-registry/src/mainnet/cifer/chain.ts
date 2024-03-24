@@ -10,6 +10,7 @@ const info: Chain = {
   bech32_prefix: 'cife',
   daemon_name: 'ciferd',
   node_home: '$HOME/.ciferd',
+  slip44: 118,
   fees: {
     fee_tokens: [
       {
@@ -65,7 +66,6 @@ const info: Chain = {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
     }
-  ],
-  slip44: 118
+  ]
 };
 export default info;

@@ -13538,7 +13538,7 @@ const assets: AssetList = {
       type_asset: 'ics20',
       base: 'ibc/554A1DD781968E01912BD8D9F12E07D77A66A02E3BF0ABCB0C5E7BFA0F48D970',
       name: 'Nomic',
-      display: 'nomic',
+      display: 'nom',
       symbol: 'nomic.NOM',
       traces: [
         {

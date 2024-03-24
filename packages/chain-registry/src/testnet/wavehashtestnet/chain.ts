@@ -5,7 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'wavehash Testnet',
-  chain_id: 'testnet-1',
+  chain_id: 'INVALID-ID-wavehashtestnet-testnet-1',
   bech32_prefix: 'wavehash',
   daemon_name: 'wavehashd',
   node_home: '$HOME/.wavehash',

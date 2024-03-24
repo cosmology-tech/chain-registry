@@ -2521,49 +2521,6 @@ const assets: AssetList = {
       }
     },
     {
-      description: 'Bored APE IBC club token',
-      type_asset: 'cw20',
-      address:
-        'juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj',
-      denom_units: [
-        {
-          denom:
-            'cw20:juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj',
-          exponent: 0
-        },
-        {
-          denom: 'banana',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/B3ACD48DDF47EE346C6162A2F2FDA5B24EEFBC72F76DBE9546B45375526B3BCF',
-      name: 'Banana Token',
-      display: 'banana',
-      symbol: 'BANANA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/banana.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/banana.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-210',
-            base_denom:
-              'cw20:juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj',
-            chain_name: 'juno'
-          },
-          chain: {
-            channel_id: 'channel-1'
-          }
-        }
-      ]
-    },
-    {
       denom_units: [
         {
           denom:
@@ -18091,7 +18048,7 @@ const assets: AssetList = {
       type_asset: 'ics20',
       base: 'ibc/E8D6F7132FA68E9EA60C452F6075339080AD8EB668B5AF93E57C14FEF4672C44',
       name: 'Nomic',
-      display: 'nomic',
+      display: 'nom',
       symbol: 'nomic.NOM',
       traces: [
         {
@@ -19777,10 +19734,6 @@ const assets: AssetList = {
           aliases: [
             'cw20:terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k'
           ]
-        },
-        {
-          denom: 'Dinheiros',
-          exponent: 0
         }
       ],
       type_asset: 'cw20',
@@ -19788,7 +19741,8 @@ const assets: AssetList = {
         'terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k',
       base: 'ibc/9F88138FC1EC853341FD0010C34C552726E219F18296019E82BF58841127E630',
       name: 'dinheiro',
-      display: 'Dinheiros',
+      display:
+        'cw20:terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k',
       symbol: 'DINHEIROS',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Dinheiros.png'

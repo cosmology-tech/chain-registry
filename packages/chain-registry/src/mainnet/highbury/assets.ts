@@ -73,7 +73,7 @@ const info: AssetList = {
       ],
       base: 'jinxy',
       name: 'Jinxy',
-      display: 'JINXy',
+      display: 'JINXY',
       symbol: 'JINXy',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/jinxy.png',

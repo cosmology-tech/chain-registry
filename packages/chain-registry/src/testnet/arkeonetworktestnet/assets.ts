@@ -8,6 +8,10 @@ const info: AssetList = {
       denom_units: [
         {
           denom: 'uarkeo',
+          exponent: 0
+        },
+        {
+          denom: 'arkeo',
           exponent: 6
         }
       ],

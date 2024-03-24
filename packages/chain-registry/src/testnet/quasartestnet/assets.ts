@@ -33,7 +33,7 @@ const info: AssetList = {
           exponent: 6
         }
       ],
-      base: 'uay',
+      base: 'uayy',
       name: 'AYY',
       display: 'ayy',
       symbol: 'AYY'
@@ -49,7 +49,7 @@ const info: AssetList = {
           exponent: 6
         }
       ],
-      base: 'oro',
+      base: 'uoro',
       name: 'oro',
       display: 'oro',
       symbol: 'ORO'

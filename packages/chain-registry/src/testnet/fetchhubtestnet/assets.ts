@@ -17,7 +17,7 @@ const info: AssetList = {
       ],
       base: 'atestfet',
       name: 'fetch-ai',
-      display: 'fet',
+      display: 'testfet',
       symbol: 'FET',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.png',

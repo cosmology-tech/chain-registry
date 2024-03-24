@@ -5479,49 +5479,6 @@ const assets: AssetList = {
       }
     },
     {
-      description: 'Bored APE IBC club token',
-      type_asset: 'cw20',
-      address:
-        'juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj',
-      denom_units: [
-        {
-          denom:
-            'cw20:juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj',
-          exponent: 0
-        },
-        {
-          denom: 'banana',
-          exponent: 6
-        }
-      ],
-      base: 'ibc/B3ACD48DDF47EE346C6162A2F2FDA5B24EEFBC72F76DBE9546B45375526B3BCF',
-      name: 'Banana Token',
-      display: 'banana',
-      symbol: 'BANANA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/banana.png'
-      },
-      images: [
-        {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/banana.png'
-        }
-      ],
-      traces: [
-        {
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-87',
-            base_denom:
-              'cw20:juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj',
-            chain_name: 'juno'
-          },
-          chain: {
-            channel_id: 'channel-1'
-          }
-        }
-      ]
-    },
-    {
       denom_units: [
         {
           denom:
@@ -21864,7 +21821,7 @@ const assets: AssetList = {
       type_asset: 'ics20',
       base: 'ibc/C4DD2EA6C8EF05200B421AE1A7F32456E7DAA4CCCAAB46E15DA7708FA4FAD86B',
       name: 'Nomic',
-      display: 'nomic',
+      display: 'nom',
       symbol: 'nomic.NOM',
       traces: [
         {
@@ -24272,8 +24229,11 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/1FECA3491D88F4AD24DE0948ED96718CA6D93F6730CEE7708E621B953594BB5E',
-          exponent: 0
+            'ibc/62F967361FAC37055E5CC202546AD96623382A5EF7D132112ACB83FDCAFAB70F',
+          exponent: 0,
+          aliases: [
+            'ibc/1FECA3491D88F4AD24DE0948ED96718CA6D93F6730CEE7708E621B953594BB5E'
+          ]
         },
         {
           denom: 'kuji',
@@ -24320,8 +24280,11 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/FE98AAD68F02F03565E9FA39A5E627946699B2B07115889ED812D8BA639576A9',
-          exponent: 0
+            'ibc/3A444C1CFACF63632F191BB6984E916464CC1D0322923672D048B6319B21FAFC',
+          exponent: 0,
+          aliases: [
+            'ibc/FE98AAD68F02F03565E9FA39A5E627946699B2B07115889ED812D8BA639576A9'
+          ]
         },
         {
           denom: 'usdc',
@@ -24368,8 +24331,11 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/F3F6BDEE1A79664B169D742651107BF4E03FA67E931452E27380B75F5917B7E9',
-          exponent: 0
+            'ibc/17CAE1EA52EB482C7D4C91D962242FBE7A47EAA0756D40E20E0FDE8CFB573C67',
+          exponent: 0,
+          aliases: [
+            'ibc/F3F6BDEE1A79664B169D742651107BF4E03FA67E931452E27380B75F5917B7E9'
+          ]
         },
         {
           denom: 'scrt',
@@ -25168,10 +25134,6 @@ const assets: AssetList = {
           aliases: [
             'cw20:terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k'
           ]
-        },
-        {
-          denom: 'Dinheiros',
-          exponent: 0
         }
       ],
       type_asset: 'cw20',
@@ -25179,7 +25141,8 @@ const assets: AssetList = {
         'terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k',
       base: 'ibc/13FB0CFB5B6978A37FEAE7CA8B179FA0453C6E35E07514955AFBFD3B118B6452',
       name: 'dinheiro',
-      display: 'Dinheiros',
+      display:
+        'cw20:terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k',
       symbol: 'DINHEIROS',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Dinheiros.png'

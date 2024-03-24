@@ -2780,7 +2780,7 @@ const info: AssetList = {
         },
         {
           denom: 'alot',
-          exponent: 0
+          exponent: 6
         }
       ],
       type_asset: 'cw20',
@@ -4432,7 +4432,7 @@ const info: AssetList = {
         },
         {
           denom: 'lctfancard',
-          exponent: 0
+          exponent: 6
         }
       ],
       type_asset: 'cw20',
@@ -4562,7 +4562,7 @@ const info: AssetList = {
         },
         {
           denom: 'cstfancard',
-          exponent: 0
+          exponent: 6
         }
       ],
       type_asset: 'cw20',

@@ -1893,9 +1893,11 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/92E0120F15D037353CFB73C14651FC8930ADC05B93100FD7754D3A689E53B333',
+            'ibc/D278EA93F12028D3F2BB45F9DC680884E20280E3B46C6F1339C591D80CB6D14C',
           exponent: 0,
-          aliases: ['uosmo']
+          aliases: [
+            'ibc/92E0120F15D037353CFB73C14651FC8930ADC05B93100FD7754D3A689E53B333'
+          ]
         },
         {
           denom: 'osmo',
@@ -1912,7 +1914,8 @@ const assets: AssetList = {
           type: 'ibc',
           counterparty: {
             channel_id: 'channel-12',
-            base_denom: 'uosmo',
+            base_denom:
+              'ibc/92E0120F15D037353CFB73C14651FC8930ADC05B93100FD7754D3A689E53B333',
             chain_name: 'xiontestnet'
           },
           chain: {

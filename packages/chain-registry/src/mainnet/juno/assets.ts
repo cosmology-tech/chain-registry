@@ -901,7 +901,7 @@ const info: AssetList = {
           exponent: 6
         }
       ],
-      base: 'juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj',
+      base: 'cw20:juno1s2dp05rspeuzzpzyzdchk262szehrtfpz847uvf98cnwh53ulx4qg20qwj',
       name: 'Banana Token',
       display: 'banana',
       symbol: 'BANANA',

@@ -5,7 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Perm Testnet',
-  chain_id: 'testnet-1',
+  chain_id: 'INVALID-ID-permtestnet-testnet-1',
   bech32_prefix: 'perm',
   daemon_name: 'permd',
   node_home: '$HOME/.perm',

@@ -19,7 +19,7 @@ const info: AssetList = {
       ],
       base: 'muno',
       name: 'Union',
-      display: 'union',
+      display: 'uno',
       symbol: 'UNO',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/uniontestnet/images/union.png'

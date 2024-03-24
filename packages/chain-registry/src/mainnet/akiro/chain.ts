@@ -4,7 +4,7 @@ const info: Chain = {
   chain_name: 'akiro',
   status: 'live',
   network_type: 'mainnet',
-  pretty_name: 'AKIRO',
+  pretty_name: 'Akiro',
   chain_id: 'akiro-1',
   bech32_prefix: 'akiro',
   daemon_name: 'akirod',
