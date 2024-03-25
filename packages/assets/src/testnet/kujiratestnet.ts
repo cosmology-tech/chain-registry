@@ -44,6 +44,49 @@ const assets: AssetList = {
           }
         }
       ]
+    },
+    {
+      description: 'The native staking token of Terra.',
+      denom_units: [
+        {
+          denom:
+            'ibc/652BA8E08353A3EC4D0E48FBDEA045D942D654673FF5420B4EA6FA61A50EF27B',
+          exponent: 0,
+          aliases: ['uluna']
+        },
+        {
+          denom: 'luna',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/652BA8E08353A3EC4D0E48FBDEA045D942D654673FF5420B4EA6FA61A50EF27B',
+      name: 'Luna',
+      display: 'luna',
+      symbol: 'LUNA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
+      },
+      coingecko_id: 'terra-luna-2',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-541',
+            base_denom: 'uluna',
+            chain_name: 'terra2testnet'
+          },
+          chain: {
+            channel_id: 'channel-73'
+          }
+        }
+      ]
     }
   ]
 };

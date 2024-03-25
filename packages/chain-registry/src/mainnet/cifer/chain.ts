@@ -49,7 +49,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'https://grpc.cifer.ai',
+        address: 'http://grpc.cifer.ai',
         provider: 'Cifer'
       }
     ]

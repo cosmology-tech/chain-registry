@@ -42,6 +42,10 @@ const info: Chain = {
       {
         address: 'https://rpc.testnet.bonlulu.uno',
         provider: 'bonlulu'
+      },
+      {
+        address: 'https://union-testnet-rpc.itrocket.net',
+        provider: 'ITRocket'
       }
     ],
     rest: [
@@ -56,6 +60,10 @@ const info: Chain = {
       {
         address: 'https://api.testnet.bonlulu.uno',
         provider: 'bonlulu'
+      },
+      {
+        address: 'https://union-testnet-api.itrocket.net',
+        provider: 'ITRocket'
       }
     ],
     grpc: [
@@ -70,6 +78,10 @@ const info: Chain = {
       {
         address: 'https://grpc.testnet.bonlulu.uno',
         provider: 'bonlulu'
+      },
+      {
+        address: 'http://union-testnet-grpc.itrocket.net:23090',
+        provider: 'ITRocket'
       }
     ]
   },

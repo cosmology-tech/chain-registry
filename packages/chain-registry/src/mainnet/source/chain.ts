@@ -96,6 +96,10 @@ const info: Chain = {
       {
         address: 'https://source.declab.pro:26604',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'https://rpc.source.stakeup.tech',
+        provider: 'StakeUp'
       }
     ],
     rest: [
@@ -162,6 +166,10 @@ const info: Chain = {
       {
         address: 'https://source.declab.pro:443',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'https://rpc.source.stakeup.tech',
+        provider: 'StakeUp'
       }
     ],
     grpc: [
