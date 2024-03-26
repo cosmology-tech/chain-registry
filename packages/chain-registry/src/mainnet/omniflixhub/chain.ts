@@ -42,8 +42,8 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://omniflix.kingnodes.com',
-        provider: 'kingnodes'
+        address: 'https://omniflix-rpc.kingnodes.com',
+        provider: 'kingnodes 👑'
       },
       {
         address: 'https://rpc.omniflix.nodestake.top',
@@ -128,8 +128,8 @@ const info: Chain = {
         provider: 'silent'
       },
       {
-        address: 'https://omniflix.kingnodes.com',
-        provider: 'kingnodes'
+        address: 'https://omniflix-rest.kingnodes.com',
+        provider: 'kingnodes 👑'
       },
       {
         address: 'https://omniflixhub-mainnet-lcd.autostake.com:443',
@@ -170,8 +170,8 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'grpc-omniflix.kingnodes.com:443',
-        provider: 'kingnodes'
+        address: 'https://omniflix-grpc.kingnodes.com:443',
+        provider: 'kingnodes 👑'
       },
       {
         address: 'grpc.omniflix.nodestake.top:443',

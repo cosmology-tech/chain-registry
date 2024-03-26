@@ -3676,6 +3676,88 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'Synthetic XLM pegged 1:1 by Crypto.com',
+      denom_units: [
+        {
+          denom:
+            'ibc/4B8D78CF34C75BD314D5E754A367BA27883E1486F9CF488E021EBAAFF7B9B6B4',
+          exponent: 0,
+          aliases: ['baseXLM']
+        },
+        {
+          denom: 'lumen',
+          exponent: 7
+        }
+      ],
+      base: 'ibc/4B8D78CF34C75BD314D5E754A367BA27883E1486F9CF488E021EBAAFF7B9B6B4',
+      name: 'Lumen (XLM) pegged token',
+      display: 'lumen',
+      symbol: 'XLM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-27',
+            base_denom: 'baseXLM',
+            chain_name: 'cryptoorgchain'
+          },
+          chain: {
+            channel_id: 'channel-187'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'The native token of Stellar network, transferred via Solo Machine.',
+      denom_units: [
+        {
+          denom:
+            'ibc/4B8D78CF34C75BD314D5E754A367BA27883E1486F9CF488E021EBAAFF7B9B6B4',
+          exponent: 0,
+          aliases: [
+            'ibc/34A1D4BF5FFCDB912F64FE71D54426D56970F873F1279983B69C713B3A62D10D'
+          ]
+        },
+        {
+          denom: 'lumen',
+          exponent: 7
+        }
+      ],
+      base: 'ibc/4B8D78CF34C75BD314D5E754A367BA27883E1486F9CF488E021EBAAFF7B9B6B4',
+      name: 'Lumen (Solo Machine)',
+      display: 'lumen',
+      symbol: 'XLM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-27',
+            base_denom:
+              'ibc/34A1D4BF5FFCDB912F64FE71D54426D56970F873F1279983B69C713B3A62D10D',
+            chain_name: 'cryptoorgchain'
+          },
+          chain: {
+            channel_id: 'channel-187'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'stellar',
+            base_denom: 'stroop'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
+      }
+    },
+    {
       description:
         'The native staking and governance token of the Theta testnet version of the Dora Vota.',
       denom_units: [
@@ -4961,6 +5043,54 @@ const assets: AssetList = {
           }
         }
       ]
+    },
+    {
+      description: 'BEAST-ERC20 on injective',
+      denom_units: [
+        {
+          denom:
+            'ibc/330829A1A01A40157C0FFBF7AFF0E675B9F198F4992540F490ADD5BCF96254CF',
+          exponent: 0,
+          aliases: ['peggy0xA4426666addBE8c4985377d36683D17FB40c31Be']
+        },
+        {
+          denom: 'beast',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/330829A1A01A40157C0FFBF7AFF0E675B9F198F4992540F490ADD5BCF96254CF',
+      name: 'Gelotto BEAST',
+      display: 'beast',
+      symbol: 'BEAST',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'peggy0xA4426666addBE8c4985377d36683D17FB40c31Be',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-220'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xA4426666addBE8c4985377d36683D17FB40c31Be'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+      },
+      socials: {
+        webiste: 'https://gelotto.io/',
+        twitter: 'https://twitter.com/Gelotto2'
+      }
     },
     {
       description:
@@ -23116,6 +23246,8 @@ const assets: AssetList = {
     {
       description:
         'The native EVM, governance and staking token of the Planq Network',
+      extended_description:
+        'Planq is the very first cryptocurrency project to keep mobile platform usability at heart, taking a step away from dependency on desktop services. By focusing on easy accessibility and close integration of other blockchains via easy to use bridges, Planq will push Web 3 adoption in the mobile space to the next level.',
       denom_units: [
         {
           denom:
@@ -23143,6 +23275,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg'
         }
       ],
+      socials: {
+        website: 'https://planq.network',
+        twitter: 'https://twitter.com/planqfoundation'
+      },
       traces: [
         {
           type: 'ibc',

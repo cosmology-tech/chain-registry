@@ -6,6 +6,8 @@ const info: AssetList = {
     {
       description:
         'The native EVM, governance and staking token of the Planq Network',
+      extended_description:
+        'Planq is the very first cryptocurrency project to keep mobile platform usability at heart, taking a step away from dependency on desktop services. By focusing on easy accessibility and close integration of other blockchains via easy to use bridges, Planq will push Web 3 adoption in the mobile space to the next level.',
       denom_units: [
         {
           denom: 'aplanq',
@@ -30,7 +32,11 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg'
         }
-      ]
+      ],
+      socials: {
+        website: 'https://planq.network',
+        twitter: 'https://twitter.com/planqfoundation'
+      }
     },
     {
       description: 'The token of Source Protocol bridged from BSC.',

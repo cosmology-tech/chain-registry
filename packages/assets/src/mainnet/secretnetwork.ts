@@ -4069,6 +4069,54 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'BEAST-ERC20 on injective',
+      denom_units: [
+        {
+          denom:
+            'ibc/BCA8272DFD0BE7302F0026780B654EAF2E43447F7BA77693A73D251B7D295081',
+          exponent: 0,
+          aliases: ['peggy0xA4426666addBE8c4985377d36683D17FB40c31Be']
+        },
+        {
+          denom: 'beast',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/BCA8272DFD0BE7302F0026780B654EAF2E43447F7BA77693A73D251B7D295081',
+      name: 'Gelotto BEAST',
+      display: 'beast',
+      symbol: 'BEAST',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-88',
+            base_denom: 'peggy0xA4426666addBE8c4985377d36683D17FB40c31Be',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-23'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xA4426666addBE8c4985377d36683D17FB40c31Be'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+      },
+      socials: {
+        webiste: 'https://gelotto.io/',
+        twitter: 'https://twitter.com/Gelotto2'
+      }
+    },
+    {
       description: 'The native staking and governance token of Jackal.',
       denom_units: [
         {
@@ -7695,6 +7743,1070 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
         }
       ]
+    },
+    {
+      description: 'The native token of Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/862D31E2B69C7E2C08AF52E564E05FFE7A55061337912E43F55198268598E2D9',
+          exponent: 0,
+          aliases: ['unls']
+        },
+        {
+          denom: 'nls',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/862D31E2B69C7E2C08AF52E564E05FFE7A55061337912E43F55198268598E2D9',
+      name: 'Nolus',
+      display: 'nls',
+      symbol: 'NLS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg'
+      },
+      coingecko_id: 'nolus',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg'
+        }
+      ],
+      socials: {
+        webiste: 'https://nolus.io/',
+        twitter: 'https://twitter.com/NolusProtocol'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom: 'unls',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'axlUSDC transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/746F34C4DDBC0D51E87B16B5F88AC601FA92273A7A4D2BE5DF79C76F1CA8A7C6',
+          exponent: 0,
+          aliases: [
+            'ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911'
+          ]
+        },
+        {
+          denom: 'usdc',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/746F34C4DDBC0D51E87B16B5F88AC601FA92273A7A4D2BE5DF79C76F1CA8A7C6',
+      name: 'axlUSDC',
+      display: 'usdc',
+      symbol: 'axlUSDC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/7FBDBEEEBA9C50C4BCDF7BF438EAB99E64360833D240B32655C96E319559E911',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdc.axl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdc.axl.svg'
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdc.axl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdc.axl.svg'
+      }
+    },
+    {
+      description:
+        'OSMO transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/B07C56A5312C1729B0786D94031830FD2F82FCBE391D461956C9813FBD608E96',
+          exponent: 0,
+          aliases: [
+            'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518'
+          ]
+        },
+        {
+          denom: 'osmo',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/B07C56A5312C1729B0786D94031830FD2F82FCBE391D461956C9813FBD608E96',
+      name: 'Osmosis',
+      display: 'osmo',
+      symbol: 'OSMO',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom: 'uosmo'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+      }
+    },
+    {
+      description:
+        'stOSMO transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/2AA06731D80160B2F65F430FCD1E791E73AEB5CABE7713691AB91D154A00DFAA',
+          exponent: 0,
+          aliases: [
+            'ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1'
+          ]
+        },
+        {
+          denom: 'stosmo',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/2AA06731D80160B2F65F430FCD1E791E73AEB5CABE7713691AB91D154A00DFAA',
+      name: 'Osmosis',
+      display: 'stosmo',
+      symbol: 'stOSMO',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/AF5559D128329B6C753F15481BEC26E533B847A471074703FA4903E7E6F61BA1',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg'
+      }
+    },
+    {
+      description:
+        'ATOM transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/028A6B2FE142C2FEEA7C0CF032BE7C39414F676F68CC184CFDA2539A2F0D04E9',
+          exponent: 0,
+          aliases: [
+            'ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388'
+          ]
+        },
+        {
+          denom: 'atom',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/028A6B2FE142C2FEEA7C0CF032BE7C39414F676F68CC184CFDA2539A2F0D04E9',
+      name: 'Atom',
+      display: 'atom',
+      symbol: 'ATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/6CDD4663F2F09CD62285E2D45891FC149A3568E316CE3EBBE201A71A78A69388',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+      }
+    },
+    {
+      description:
+        'stATOM transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/780DD85CE063029C296E8D92A3344C585D8FE47BADB700C89495E15E5584CAEF',
+          exponent: 0,
+          aliases: [
+            'ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8'
+          ]
+        },
+        {
+          denom: 'statom',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/780DD85CE063029C296E8D92A3344C585D8FE47BADB700C89495E15E5584CAEF',
+      name: 'stATOM',
+      display: 'statom',
+      symbol: 'stATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/FCFF8B19C61677F3B78E2A5AE3B4A34A8D23858D16905F253B8438B3AFD07FF8',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg'
+      }
+    },
+    {
+      description:
+        'WETH transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/97651C889FDF398B6E136C6DC0FAB754C5A5EA67212F80DC91ECF226F66B6D12',
+          exponent: 0,
+          aliases: [
+            'ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C'
+          ]
+        },
+        {
+          denom: 'weth',
+          exponent: 18,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/97651C889FDF398B6E136C6DC0FAB754C5A5EA67212F80DC91ECF226F66B6D12',
+      name: 'WETH',
+      display: 'weth',
+      symbol: 'WETH',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/A7C4A3FB19E88ABE60416125F9189DA680800F4CDD14E3C10C874E022BEFF04C',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg'
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg'
+      }
+    },
+    {
+      description:
+        'WBTC transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/5FFCE29A6491A49CB7964D1AB971880B5861A1AF056C9A70308935A047E5867C',
+          exponent: 0,
+          aliases: [
+            'ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221'
+          ]
+        },
+        {
+          denom: 'wbtc',
+          exponent: 8,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/5FFCE29A6491A49CB7964D1AB971880B5861A1AF056C9A70308935A047E5867C',
+      name: 'WBTC',
+      display: 'wbtc',
+      symbol: 'WBTC',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/84E70F4A34FB2DE135FD3A04FDDF53B7DA4206080AA785C8BAB7F8B26299A221',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wbtc.axl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wbtc.axl.svg'
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wbtc.axl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wbtc.axl.svg'
+      }
+    },
+    {
+      description:
+        'AKT transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/B57CEBA7667AA155C2C8F8D5B1E1125D44AB5851797F9ADD3128208025121311',
+          exponent: 0,
+          aliases: [
+            'ibc/ADC63C00000CA75F909D2BE3ACB5A9980BED3A73B92746E0FCE6C67414055459'
+          ]
+        },
+        {
+          denom: 'akt',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/B57CEBA7667AA155C2C8F8D5B1E1125D44AB5851797F9ADD3128208025121311',
+      name: 'AKT',
+      display: 'akt',
+      symbol: 'AKT',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/ADC63C00000CA75F909D2BE3ACB5A9980BED3A73B92746E0FCE6C67414055459',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'ibc/1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
+      }
+    },
+    {
+      description:
+        'AXL transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/87E4FE69D9F941361A4A39B00B65BEB7F8B46B6987CBDD9B8DFDE5C7DA47E9A3',
+          exponent: 0,
+          aliases: [
+            'ibc/1B03A71B8E6F6EF424411DC9326A8E0D25D096E4D2616425CFAF2AF06F0FE717'
+          ]
+        },
+        {
+          denom: 'axl',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/87E4FE69D9F941361A4A39B00B65BEB7F8B46B6987CBDD9B8DFDE5C7DA47E9A3',
+      name: 'AXL',
+      display: 'axl',
+      symbol: 'AXL',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/1B03A71B8E6F6EF424411DC9326A8E0D25D096E4D2616425CFAF2AF06F0FE717',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'ibc/903A61A498756EA560B85A85132D3AEE21B5DEDD41213725D22ABF276EA6945E'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
+      }
+    },
+    {
+      description:
+        'JUNO transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/1610C062C28188503E46F43385F9F83DB6CCEC0FE512B1713F315B35D3B309AB',
+          exponent: 0,
+          aliases: [
+            'ibc/4F3E83AB35529435E4BFEA001F5D935E7250133347C4E1010A9C77149EF0394C'
+          ]
+        },
+        {
+          denom: 'juno',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/1610C062C28188503E46F43385F9F83DB6CCEC0FE512B1713F315B35D3B309AB',
+      name: 'JUNO',
+      display: 'juno',
+      symbol: 'JUNO',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/4F3E83AB35529435E4BFEA001F5D935E7250133347C4E1010A9C77149EF0394C',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
+      }
+    },
+    {
+      description:
+        'EVMOS transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/C147598072C3576899F79B8553ECA6AE64922D96337D83A659FB0EEEBCD899FC',
+          exponent: 0,
+          aliases: [
+            'ibc/A59A9C955F1AB8B76671B00C1A0482C64A6590352944BB5880E5122358F7E1CE'
+          ]
+        },
+        {
+          denom: 'evmos',
+          exponent: 18,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/C147598072C3576899F79B8553ECA6AE64922D96337D83A659FB0EEEBCD899FC',
+      name: 'EVMOS',
+      display: 'evmos',
+      symbol: 'EVMOS',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/A59A9C955F1AB8B76671B00C1A0482C64A6590352944BB5880E5122358F7E1CE',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'ibc/6AE98883D4D5D5FF9E50D7130F1305DA2FFA0C652D1DD9C123657C6B4EB2DF8A'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg'
+      }
+    },
+    {
+      description:
+        'stkATOM transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/DC1CDCBCF5F454757E54FD1175B63E7E5A81250B406EFA50DEDABB44C3F0FC2C',
+          exponent: 0,
+          aliases: [
+            'ibc/DAAD372DB7DD45BBCFA4DDD40CA9793E9D265D1530083AB41A8A0C53C3EBE865'
+          ]
+        },
+        {
+          denom: 'stk/atom',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/DC1CDCBCF5F454757E54FD1175B63E7E5A81250B406EFA50DEDABB44C3F0FC2C',
+      name: 'stkATOM',
+      display: 'stk/atom',
+      symbol: 'stkATOM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/DAAD372DB7DD45BBCFA4DDD40CA9793E9D265D1530083AB41A8A0C53C3EBE865',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'ibc/CAA179E40F0266B0B29FB5EAA288FB9212E628822265D4141EBD1C47C3CBFCBC'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
+      }
+    },
+    {
+      description:
+        'SCRT transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/F98D9F062344D4FAFD9174533BC41481346C320348764B3ED8704B3832396C94',
+          exponent: 0,
+          aliases: [
+            'ibc/EA00FFF0335B07B5CD1530B7EB3D2C710620AE5B168C71AFF7B50532D690E107'
+          ]
+        },
+        {
+          denom: 'scrt',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/F98D9F062344D4FAFD9174533BC41481346C320348764B3ED8704B3832396C94',
+      name: 'SCRT',
+      display: 'scrt',
+      symbol: 'SCRT',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/EA00FFF0335B07B5CD1530B7EB3D2C710620AE5B168C71AFF7B50532D690E107',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'ibc/0954E1C28EB7AF5B72D24F3BC2B47BBB2FDF91BDDFD57B74B99E133AED40972A'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+      }
+    },
+    {
+      description:
+        'CRO transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/9A3CB3244969804B64B779C8AA10EBE0AB6E21F1CBC29A5B7367FF0863A17E63',
+          exponent: 0,
+          aliases: [
+            'ibc/E1BCC0F7B932E654B1A930F72B76C0678D55095387E2A4D8F00E941A8F82EE48'
+          ]
+        },
+        {
+          denom: 'cro',
+          exponent: 8,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/9A3CB3244969804B64B779C8AA10EBE0AB6E21F1CBC29A5B7367FF0863A17E63',
+      name: 'CRO',
+      display: 'cro',
+      symbol: 'CRO',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/E1BCC0F7B932E654B1A930F72B76C0678D55095387E2A4D8F00E941A8F82EE48',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'ibc/E6931F78057F7CC5DA0FD6CEF82FF39373A6E0452BF1FD76910B93292CF356C1'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
+      }
+    },
+    {
+      description:
+        'STARS transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/85FB158D5DEBE87D6C2564F0BBAA0278123470DEBD7F6360CC14B0CF85AC7101',
+          exponent: 0,
+          aliases: [
+            'ibc/11E3CF372E065ACB1A39C531A3C7E7E03F60B5D0653AD2139D31128ACD2772B5'
+          ]
+        },
+        {
+          denom: 'stars',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/85FB158D5DEBE87D6C2564F0BBAA0278123470DEBD7F6360CC14B0CF85AC7101',
+      name: 'STARS',
+      display: 'stars',
+      symbol: 'STARS',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/11E3CF372E065ACB1A39C531A3C7E7E03F60B5D0653AD2139D31128ACD2772B5',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'ibc/987C17B11ABC2B20019178ACE62929FE9840202CE79498E29FE8E5CB02B7C0A4'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
+      }
+    },
+    {
+      description:
+        'TIA transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/74F3CEFE54F6F25CB6123C584D702CF0EFF2FEE3E05E331BF8BFFC7C2613CA9D',
+          exponent: 0,
+          aliases: [
+            'ibc/6C349F0EB135C5FA99301758F35B87DB88403D690E5E314AB080401FEE4066E5'
+          ]
+        },
+        {
+          denom: 'tia',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/74F3CEFE54F6F25CB6123C584D702CF0EFF2FEE3E05E331BF8BFFC7C2613CA9D',
+      name: 'TIA',
+      display: 'tia',
+      symbol: 'TIA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/6C349F0EB135C5FA99301758F35B87DB88403D690E5E314AB080401FEE4066E5',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'ibc/D79E7D83AB399BFFF93433E54FAA480C191248FC556924A2A8351AE2638B3877'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
+      }
+    },
+    {
+      description:
+        'STRD transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/8580B6C7C1F8122A40F7BCCDD3366398629E2B6D63BC502E6578E45F6511120C',
+          exponent: 0,
+          aliases: [
+            'ibc/04CA9067228BB51F1C39A506DA00DF07E1496D8308DD21E8EF66AD6169FA722B'
+          ]
+        },
+        {
+          denom: 'strd',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/8580B6C7C1F8122A40F7BCCDD3366398629E2B6D63BC502E6578E45F6511120C',
+      name: 'STRD',
+      display: 'strd',
+      symbol: 'STRD',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/04CA9067228BB51F1C39A506DA00DF07E1496D8308DD21E8EF66AD6169FA722B',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'osmosis',
+            base_denom:
+              'ibc/A8CA5EE328FA10C9519DF6057DA1F69682D28F7D0F5CCC7ECB72E3DCA2D157A4'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+      }
+    },
+    {
+      description:
+        'NTRN transferred from the Neutron mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/46F9F9F055140558A6CD666A2E558E85A855F62DA568D7DA88F7208604EA660F',
+          exponent: 0,
+          aliases: [
+            'ibc/3D6BC6E049CAEB905AC97031A42800588C58FB471EBDC7A3530FFCD0C3DC9E09'
+          ]
+        },
+        {
+          denom: 'ntrn',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/46F9F9F055140558A6CD666A2E558E85A855F62DA568D7DA88F7208604EA660F',
+      name: 'NTRN',
+      display: 'ntrn',
+      symbol: 'NTRN',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/3D6BC6E049CAEB905AC97031A42800588C58FB471EBDC7A3530FFCD0C3DC9E09',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'neutron',
+            base_denom: 'untrn'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg'
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg'
+      }
+    },
+    {
+      description:
+        'DYDX transferred from the Neutron mainnet that is supported on the Nolus chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/7E6CB5A9B4A8BD7104D48A14DABB04EB47A47219875EC2E26CA33C45EB14570B',
+          exponent: 0,
+          aliases: [
+            'ibc/6DF8CF5C976851D152E2C7270B0AB25C4F9D64C0A46513A68D6CBB2662A98DF4'
+          ]
+        },
+        {
+          denom: 'dydx',
+          exponent: 18,
+          aliases: []
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/7E6CB5A9B4A8BD7104D48A14DABB04EB47A47219875EC2E26CA33C45EB14570B',
+      name: 'DYDX',
+      display: 'dydx',
+      symbol: 'DYDX',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13995',
+            base_denom:
+              'ibc/6DF8CF5C976851D152E2C7270B0AB25C4F9D64C0A46513A68D6CBB2662A98DF4',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-146'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'neutron',
+            base_denom:
+              'ibc/2CB87BCE0937B1D1DFCEE79BE4501AAF3C265E923509AEAC410AD85D27F35130'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
+      }
     },
     {
       description: 'The native token of Oraichain',

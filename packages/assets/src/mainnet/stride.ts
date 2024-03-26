@@ -3654,6 +3654,54 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'BEAST-ERC20 on injective',
+      denom_units: [
+        {
+          denom:
+            'ibc/6A894428A0FD134FE0DE624589EB67AF9FEC2A29D74B5BD290FCBFAF62F7FE0D',
+          exponent: 0,
+          aliases: ['peggy0xA4426666addBE8c4985377d36683D17FB40c31Be']
+        },
+        {
+          denom: 'beast',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/6A894428A0FD134FE0DE624589EB67AF9FEC2A29D74B5BD290FCBFAF62F7FE0D',
+      name: 'Gelotto BEAST',
+      display: 'beast',
+      symbol: 'BEAST',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-89',
+            base_denom: 'peggy0xA4426666addBE8c4985377d36683D17FB40c31Be',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-6'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xA4426666addBE8c4985377d36683D17FB40c31Be'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+      },
+      socials: {
+        webiste: 'https://gelotto.io/',
+        twitter: 'https://twitter.com/Gelotto2'
+      }
+    },
+    {
       description: 'The native token of JUNO Chain',
       denom_units: [
         {

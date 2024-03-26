@@ -541,6 +541,22 @@ const info: IBCInfo[] = [
         version: 'ics20-1',
         tags: {
           status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-150',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-148',
+          port_id: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
           preferred: true,
           properties: 'privacy'
         }
@@ -815,6 +831,37 @@ const info: IBCInfo[] = [
         },
         chain_2: {
           channel_id: 'channel-88',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'nolus',
+      client_id: '07-tendermint-18',
+      connection_id: 'connection-14'
+    },
+    chain_2: {
+      chain_name: 'secretnetwork',
+      client_id: '07-tendermint-201',
+      connection_id: 'connection-193'
+    },
+    channels: [
+      {
+        chain_1: {
+          channel_id: 'channel-13995',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-146',
           port_id: 'transfer'
         },
         ordering: 'unordered',

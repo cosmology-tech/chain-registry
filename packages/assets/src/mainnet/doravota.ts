@@ -1121,6 +1121,54 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'BEAST-ERC20 on injective',
+      denom_units: [
+        {
+          denom:
+            'ibc/245D2BE83FD7DD64C11B189CAE62C8F08C3E823EB77BF3F16F0ED72C811A7B43',
+          exponent: 0,
+          aliases: ['peggy0xA4426666addBE8c4985377d36683D17FB40c31Be']
+        },
+        {
+          denom: 'beast',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/245D2BE83FD7DD64C11B189CAE62C8F08C3E823EB77BF3F16F0ED72C811A7B43',
+      name: 'Gelotto BEAST',
+      display: 'beast',
+      symbol: 'BEAST',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-182',
+            base_denom: 'peggy0xA4426666addBE8c4985377d36683D17FB40c31Be',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-5'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xA4426666addBE8c4985377d36683D17FB40c31Be'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+      },
+      socials: {
+        webiste: 'https://gelotto.io/',
+        twitter: 'https://twitter.com/Gelotto2'
+      }
+    },
+    {
       description: 'The native token of Nolus chain',
       denom_units: [
         {

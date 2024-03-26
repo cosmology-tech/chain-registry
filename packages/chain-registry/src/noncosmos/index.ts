@@ -14,6 +14,7 @@ export * as polkadot from './polkadot';
 export * as polygon from './polygon';
 export * as solana from './solana';
 export * as statemine from './statemine';
+export * as stellar from './stellar';
 export * as sui from './sui';
 export * as xrpl from './xrpl';
 export * as avalanchetestnet from './avalanchetestnet';

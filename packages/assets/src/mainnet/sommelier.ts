@@ -1995,6 +1995,54 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'BEAST-ERC20 on injective',
+      denom_units: [
+        {
+          denom:
+            'ibc/823578C8EC08E02DA66BA10E1157E3D3F77862A6057CE7A1B07C7DEB8D3CF8EB',
+          exponent: 0,
+          aliases: ['peggy0xA4426666addBE8c4985377d36683D17FB40c31Be']
+        },
+        {
+          denom: 'beast',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/823578C8EC08E02DA66BA10E1157E3D3F77862A6057CE7A1B07C7DEB8D3CF8EB',
+      name: 'Gelotto BEAST',
+      display: 'beast',
+      symbol: 'BEAST',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-93',
+            base_denom: 'peggy0xA4426666addBE8c4985377d36683D17FB40c31Be',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-1'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xA4426666addBE8c4985377d36683D17FB40c31Be'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+      },
+      socials: {
+        webiste: 'https://gelotto.io/',
+        twitter: 'https://twitter.com/Gelotto2'
+      }
+    },
+    {
       description:
         'The native staking and governance token of the Kujira chain.',
       denom_units: [

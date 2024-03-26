@@ -47,8 +47,8 @@ const info: Chain = {
         provider: 'Lavender Five'
       },
       {
-        address: 'https://test-dydx.kingnodes.com',
-        provider: 'KingNodes'
+        address: 'https://test-dydx-rpc.kingnodes.com',
+        provider: 'kingnodes 👑'
       },
       {
         address: 'https://dydx-testnet-rpc.polkachu.com',

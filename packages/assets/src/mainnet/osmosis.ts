@@ -5069,6 +5069,88 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'Synthetic XLM pegged 1:1 by Crypto.com',
+      denom_units: [
+        {
+          denom:
+            'ibc/04DDB3C027A5C06F499684FF02E80744CABC705ECF015460F52AE6E280006180',
+          exponent: 0,
+          aliases: ['baseXLM']
+        },
+        {
+          denom: 'lumen',
+          exponent: 7
+        }
+      ],
+      base: 'ibc/04DDB3C027A5C06F499684FF02E80744CABC705ECF015460F52AE6E280006180',
+      name: 'Lumen (XLM) pegged token',
+      display: 'lumen',
+      symbol: 'XLM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom: 'baseXLM',
+            chain_name: 'cryptoorgchain'
+          },
+          chain: {
+            channel_id: 'channel-5'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'The native token of Stellar network, transferred via Solo Machine.',
+      denom_units: [
+        {
+          denom:
+            'ibc/04DDB3C027A5C06F499684FF02E80744CABC705ECF015460F52AE6E280006180',
+          exponent: 0,
+          aliases: [
+            'ibc/34A1D4BF5FFCDB912F64FE71D54426D56970F873F1279983B69C713B3A62D10D'
+          ]
+        },
+        {
+          denom: 'lumen',
+          exponent: 7
+        }
+      ],
+      base: 'ibc/04DDB3C027A5C06F499684FF02E80744CABC705ECF015460F52AE6E280006180',
+      name: 'Lumen (Solo Machine)',
+      display: 'lumen',
+      symbol: 'XLM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom:
+              'ibc/34A1D4BF5FFCDB912F64FE71D54426D56970F873F1279983B69C713B3A62D10D',
+            chain_name: 'cryptoorgchain'
+          },
+          chain: {
+            channel_id: 'channel-5'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'stellar',
+            base_denom: 'stroop'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
+      }
+    },
+    {
       description: 'The native token of the Cudos blockchain',
       denom_units: [
         {
@@ -8489,6 +8571,54 @@ const assets: AssetList = {
           }
         }
       ]
+    },
+    {
+      description: 'BEAST-ERC20 on injective',
+      denom_units: [
+        {
+          denom:
+            'ibc/B84F8CC583A54DA8173711C0B66B22FDC1954FEB1CA8DBC66C89919DAFE02000',
+          exponent: 0,
+          aliases: ['peggy0xA4426666addBE8c4985377d36683D17FB40c31Be']
+        },
+        {
+          denom: 'beast',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/B84F8CC583A54DA8173711C0B66B22FDC1954FEB1CA8DBC66C89919DAFE02000',
+      name: 'Gelotto BEAST',
+      display: 'beast',
+      symbol: 'BEAST',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'peggy0xA4426666addBE8c4985377d36683D17FB40c31Be',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-122'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xA4426666addBE8c4985377d36683D17FB40c31Be'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+      },
+      socials: {
+        webiste: 'https://gelotto.io/',
+        twitter: 'https://twitter.com/Gelotto2'
+      }
     },
     {
       description:
@@ -12723,7 +12853,7 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-139',
+            channel_id: 'channel-0',
             base_denom: 'unibi',
             chain_name: 'nibiru'
           },
@@ -15376,6 +15506,8 @@ const assets: AssetList = {
     {
       description:
         'The native EVM, governance and staking token of the Planq Network',
+      extended_description:
+        'Planq is the very first cryptocurrency project to keep mobile platform usability at heart, taking a step away from dependency on desktop services. By focusing on easy accessibility and close integration of other blockchains via easy to use bridges, Planq will push Web 3 adoption in the mobile space to the next level.',
       denom_units: [
         {
           denom:
@@ -15403,6 +15535,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg'
         }
       ],
+      socials: {
+        website: 'https://planq.network',
+        twitter: 'https://twitter.com/planqfoundation'
+      },
       traces: [
         {
           type: 'ibc',
@@ -16105,7 +16241,9 @@ const assets: AssetList = {
       ]
     },
     {
-      description: 'QWOYN is the native governance token for Qwoyn Network',
+      description: 'The native governance token for Qwoyn Network',
+      extended_description:
+        'The Qwoyn Network stands as a cutting-edge gaming hub that embeds Web3 technologies into the core of interactive entertainment. It revolutionizes the gaming industry by ensuring true ownership of in-game assets for players, facilitated through blockchain. This approach not only enhances gameplay but also fosters a unique ecosystem of interoperability and innovation. As a beacon in the gaming world, Qwoyn Network is dedicated to merging the excitement of traditional gaming with the transformative potential of Web3, creating a seamless and enriched gaming experience.',
       denom_units: [
         {
           denom:
@@ -16119,7 +16257,7 @@ const assets: AssetList = {
         }
       ],
       base: 'ibc/09FAF1E04435E14C68DE7AB0D03C521C92975C792DB12B2EA390BAA2E06B3F3D',
-      name: 'Qwoyn Blockchain',
+      name: 'Qwoyn Network',
       display: 'qwoyn',
       symbol: 'QWOYN',
       logo_URIs: {
@@ -16130,6 +16268,12 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/qwoyn/images/qwoyn.png'
         }
       ],
+      coingecko_id: 'qwoyn',
+      keywords: ['gaming'],
+      socials: {
+        website: 'https://qwoyn.studio',
+        twitter: 'https://twitter.com/Qwoyn_Studios'
+      },
       traces: [
         {
           type: 'ibc',

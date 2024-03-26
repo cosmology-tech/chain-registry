@@ -289,6 +289,88 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'Synthetic XLM pegged 1:1 by Crypto.com',
+      denom_units: [
+        {
+          denom:
+            'ibc/6596A338A426EA746F173B6FA64EADA7BE7DC3C0316BA34D72B440ABEDD54F6B',
+          exponent: 0,
+          aliases: ['baseXLM']
+        },
+        {
+          denom: 'lumen',
+          exponent: 7
+        }
+      ],
+      base: 'ibc/6596A338A426EA746F173B6FA64EADA7BE7DC3C0316BA34D72B440ABEDD54F6B',
+      name: 'Lumen (XLM) pegged token',
+      display: 'lumen',
+      symbol: 'XLM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-19',
+            base_denom: 'baseXLM',
+            chain_name: 'cryptoorgchain'
+          },
+          chain: {
+            channel_id: 'channel-7'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'The native token of Stellar network, transferred via Solo Machine.',
+      denom_units: [
+        {
+          denom:
+            'ibc/6596A338A426EA746F173B6FA64EADA7BE7DC3C0316BA34D72B440ABEDD54F6B',
+          exponent: 0,
+          aliases: [
+            'ibc/34A1D4BF5FFCDB912F64FE71D54426D56970F873F1279983B69C713B3A62D10D'
+          ]
+        },
+        {
+          denom: 'lumen',
+          exponent: 7
+        }
+      ],
+      base: 'ibc/6596A338A426EA746F173B6FA64EADA7BE7DC3C0316BA34D72B440ABEDD54F6B',
+      name: 'Lumen (Solo Machine)',
+      display: 'lumen',
+      symbol: 'XLM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-19',
+            base_denom:
+              'ibc/34A1D4BF5FFCDB912F64FE71D54426D56970F873F1279983B69C713B3A62D10D',
+            chain_name: 'cryptoorgchain'
+          },
+          chain: {
+            channel_id: 'channel-7'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'stellar',
+            base_denom: 'stroop'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
+      }
+    },
+    {
       description: 'The native token of Decentr',
       denom_units: [
         {

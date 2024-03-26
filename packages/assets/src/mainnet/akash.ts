@@ -429,6 +429,88 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'Synthetic XLM pegged 1:1 by Crypto.com',
+      denom_units: [
+        {
+          denom:
+            'ibc/C44E73727B4A5E2404297791525EEE310254A20A8DBA1E552D774E8A9E143EB4',
+          exponent: 0,
+          aliases: ['baseXLM']
+        },
+        {
+          denom: 'lumen',
+          exponent: 7
+        }
+      ],
+      base: 'ibc/C44E73727B4A5E2404297791525EEE310254A20A8DBA1E552D774E8A9E143EB4',
+      name: 'Lumen (XLM) pegged token',
+      display: 'lumen',
+      symbol: 'XLM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-21',
+            base_denom: 'baseXLM',
+            chain_name: 'cryptoorgchain'
+          },
+          chain: {
+            channel_id: 'channel-14'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'The native token of Stellar network, transferred via Solo Machine.',
+      denom_units: [
+        {
+          denom:
+            'ibc/C44E73727B4A5E2404297791525EEE310254A20A8DBA1E552D774E8A9E143EB4',
+          exponent: 0,
+          aliases: [
+            'ibc/34A1D4BF5FFCDB912F64FE71D54426D56970F873F1279983B69C713B3A62D10D'
+          ]
+        },
+        {
+          denom: 'lumen',
+          exponent: 7
+        }
+      ],
+      base: 'ibc/C44E73727B4A5E2404297791525EEE310254A20A8DBA1E552D774E8A9E143EB4',
+      name: 'Lumen (Solo Machine)',
+      display: 'lumen',
+      symbol: 'XLM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-21',
+            base_denom:
+              'ibc/34A1D4BF5FFCDB912F64FE71D54426D56970F873F1279983B69C713B3A62D10D',
+            chain_name: 'cryptoorgchain'
+          },
+          chain: {
+            channel_id: 'channel-14'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'stellar',
+            base_denom: 'stroop'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
+      }
+    },
+    {
       description:
         'The native staking and governance token of the Theta testnet version of the Dora Vota.',
       denom_units: [

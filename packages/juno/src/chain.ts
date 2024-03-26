@@ -104,7 +104,7 @@ const chain: Chain = {
         provider: 'BlockHunters 🎯'
       },
       {
-        address: 'https://juno.kingnodes.com',
+        address: 'https://juno-rpc.kingnodes.com',
         provider: 'kingnodes 👑'
       },
       {
@@ -210,7 +210,7 @@ const chain: Chain = {
         provider: 'BlockHunters 🎯'
       },
       {
-        address: 'https://juno.kingnodes.com',
+        address: 'https://juno-rest.kingnodes.com',
         provider: 'kingnodes 👑'
       },
       {
@@ -288,7 +288,7 @@ const chain: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'grpc-juno.kingnodes.com:443',
+        address: 'https://juno-grpc.kingnodes.com:443',
         provider: 'kingnodes 👑'
       },
       {

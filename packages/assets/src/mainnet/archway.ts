@@ -20090,6 +20090,8 @@ const assets: AssetList = {
     {
       description:
         'The native EVM, governance and staking token of the Planq Network',
+      extended_description:
+        'Planq is the very first cryptocurrency project to keep mobile platform usability at heart, taking a step away from dependency on desktop services. By focusing on easy accessibility and close integration of other blockchains via easy to use bridges, Planq will push Web 3 adoption in the mobile space to the next level.',
       denom_units: [
         {
           denom:
@@ -20117,6 +20119,10 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg'
         }
       ],
+      socials: {
+        website: 'https://planq.network',
+        twitter: 'https://twitter.com/planqfoundation'
+      },
       traces: [
         {
           type: 'ibc',
@@ -20437,7 +20443,9 @@ const assets: AssetList = {
       ]
     },
     {
-      description: 'QWOYN is the native governance token for Qwoyn Network',
+      description: 'The native governance token for Qwoyn Network',
+      extended_description:
+        'The Qwoyn Network stands as a cutting-edge gaming hub that embeds Web3 technologies into the core of interactive entertainment. It revolutionizes the gaming industry by ensuring true ownership of in-game assets for players, facilitated through blockchain. This approach not only enhances gameplay but also fosters a unique ecosystem of interoperability and innovation. As a beacon in the gaming world, Qwoyn Network is dedicated to merging the excitement of traditional gaming with the transformative potential of Web3, creating a seamless and enriched gaming experience.',
       denom_units: [
         {
           denom:
@@ -20451,7 +20459,7 @@ const assets: AssetList = {
         }
       ],
       base: 'ibc/1112DFAC11501682456D28D0728C1E35E134729F4D8EAA897377ACDFB29F46CC',
-      name: 'Qwoyn Blockchain',
+      name: 'Qwoyn Network',
       display: 'qwoyn',
       symbol: 'QWOYN',
       logo_URIs: {
@@ -20462,6 +20470,12 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/qwoyn/images/qwoyn.png'
         }
       ],
+      coingecko_id: 'qwoyn',
+      keywords: ['gaming'],
+      socials: {
+        website: 'https://qwoyn.studio',
+        twitter: 'https://twitter.com/Qwoyn_Studios'
+      },
       traces: [
         {
           type: 'ibc',

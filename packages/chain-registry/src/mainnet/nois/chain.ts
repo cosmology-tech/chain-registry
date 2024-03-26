@@ -104,8 +104,8 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://nois.kingnodes.com',
-        provider: 'Kingnodes'
+        address: 'https://nois-rpc.kingnodes.com',
+        provider: 'kingnodes 👑'
       },
       {
         address: 'https://nois.rpc.kjnodes.com',
@@ -178,8 +178,8 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://grpc-nois.kingnodes.com',
-        provider: 'Kingnodes'
+        address: 'https://nois-grpc.kingnodes.com',
+        provider: 'kingnodes 👑'
       },
       {
         address: 'nois.grpc.kjnodes.com:15190',
@@ -236,8 +236,8 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://nois.kingnodes.com',
-        provider: 'Kingnodes'
+        address: 'https://nois-rest.kingnodes.com',
+        provider: 'kingnodes 👑'
       },
       {
         address: 'https://nois.api.kjnodes.com',

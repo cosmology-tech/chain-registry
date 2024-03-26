@@ -60,7 +60,7 @@ const info: Chain = {
       },
       {
         address: 'https://dydx-rpc.kingnodes.com:443',
-        provider: 'Kingnodes'
+        provider: 'Kingnodes 👑'
       },
       {
         address: 'https://dydx-rpc.lavenderfive.com:443',
@@ -114,7 +114,7 @@ const info: Chain = {
       },
       {
         address: 'https://dydx-rest.kingnodes.com:443',
-        provider: 'Kingnodes'
+        provider: 'Kingnodes 👑'
       },
       {
         address: 'https://dydx-api.lavenderfive.com:443',
@@ -176,7 +176,7 @@ const info: Chain = {
       },
       {
         address: 'https://dydx-grpc.kingnodes.com:443',
-        provider: 'Kingnodes'
+        provider: 'Kingnodes 👑'
       },
       {
         address: 'https://dydx-grpc.lavenderfive.com',

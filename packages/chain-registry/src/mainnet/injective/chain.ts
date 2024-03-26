@@ -40,6 +40,10 @@ const info: Chain = {
   apis: {
     rpc: [
       {
+        address: 'https://injective-1-public-rpc.mesa.ec1-prod.newmetric.xyz',
+        provider: 'NewMetric'
+      },
+      {
         address: 'https://rpc-injective.goldenratiostaking.net',
         provider: 'Golden Ratio Staking'
       },
@@ -86,6 +90,10 @@ const info: Chain = {
     ],
     rest: [
       {
+        address: 'https://injective-1-public-rest.mesa.ec1-prod.newmetric.xyz',
+        provider: 'NewMetric'
+      },
+      {
         address: 'https://api-injective-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
       },
@@ -131,6 +139,11 @@ const info: Chain = {
       }
     ],
     grpc: [
+      {
+        address:
+          'k8s-injectiv-publicin-731c880328-0f3d7889b57e31a3.elb.eu-central-1.amazonaws.com:80',
+        provider: 'NewMetric'
+      },
       {
         address: 'grpc-injective-ia.cosmosia.notional.ventures:443',
         provider: 'Notional'

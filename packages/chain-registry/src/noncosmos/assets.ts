@@ -16,6 +16,7 @@ import * as _polkadot from './polkadot';
 import * as _polygon from './polygon';
 import * as _solana from './solana';
 import * as _statemine from './statemine';
+import * as _stellar from './stellar';
 import * as _sui from './sui';
 import * as _xrpl from './xrpl';
 import * as _avalanchetestnet from './avalanchetestnet';
@@ -44,6 +45,7 @@ const assets: AssetList[] = [
   _polygon.assets,
   _solana.assets,
   _statemine.assets,
+  _stellar.assets,
   _sui.assets,
   _xrpl.assets,
   _avalanchetestnet.assets,

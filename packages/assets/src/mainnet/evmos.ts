@@ -2799,6 +2799,88 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'Synthetic XLM pegged 1:1 by Crypto.com',
+      denom_units: [
+        {
+          denom:
+            'ibc/0B4C48653ED52D11A97F6CFC048AFEBF59E80BDAF8B111C5F2334192FC5279FF',
+          exponent: 0,
+          aliases: ['baseXLM']
+        },
+        {
+          denom: 'lumen',
+          exponent: 7
+        }
+      ],
+      base: 'ibc/0B4C48653ED52D11A97F6CFC048AFEBF59E80BDAF8B111C5F2334192FC5279FF',
+      name: 'Lumen (XLM) pegged token',
+      display: 'lumen',
+      symbol: 'XLM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-57',
+            base_denom: 'baseXLM',
+            chain_name: 'cryptoorgchain'
+          },
+          chain: {
+            channel_id: 'channel-31'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'The native token of Stellar network, transferred via Solo Machine.',
+      denom_units: [
+        {
+          denom:
+            'ibc/0B4C48653ED52D11A97F6CFC048AFEBF59E80BDAF8B111C5F2334192FC5279FF',
+          exponent: 0,
+          aliases: [
+            'ibc/34A1D4BF5FFCDB912F64FE71D54426D56970F873F1279983B69C713B3A62D10D'
+          ]
+        },
+        {
+          denom: 'lumen',
+          exponent: 7
+        }
+      ],
+      base: 'ibc/0B4C48653ED52D11A97F6CFC048AFEBF59E80BDAF8B111C5F2334192FC5279FF',
+      name: 'Lumen (Solo Machine)',
+      display: 'lumen',
+      symbol: 'XLM',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-57',
+            base_denom:
+              'ibc/34A1D4BF5FFCDB912F64FE71D54426D56970F873F1279983B69C713B3A62D10D',
+            chain_name: 'cryptoorgchain'
+          },
+          chain: {
+            channel_id: 'channel-31'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'stellar',
+            base_denom: 'stroop'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
+      }
+    },
+    {
       description: 'The native staking token of dYdX Protocol.',
       denom_units: [
         {
@@ -4747,6 +4829,54 @@ const assets: AssetList = {
           }
         }
       ]
+    },
+    {
+      description: 'BEAST-ERC20 on injective',
+      denom_units: [
+        {
+          denom:
+            'ibc/5B21AF41092F6CA34F0A3D6340A0DF8A35F42E91EC052BBBB5F6BCA9440E38C0',
+          exponent: 0,
+          aliases: ['peggy0xA4426666addBE8c4985377d36683D17FB40c31Be']
+        },
+        {
+          denom: 'beast',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/5B21AF41092F6CA34F0A3D6340A0DF8A35F42E91EC052BBBB5F6BCA9440E38C0',
+      name: 'Gelotto BEAST',
+      display: 'beast',
+      symbol: 'BEAST',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-83',
+            base_denom: 'peggy0xA4426666addBE8c4985377d36683D17FB40c31Be',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xA4426666addBE8c4985377d36683D17FB40c31Be'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+      },
+      socials: {
+        webiste: 'https://gelotto.io/',
+        twitter: 'https://twitter.com/Gelotto2'
+      }
     },
     {
       description: 'The native staking and governance token of Kava',
