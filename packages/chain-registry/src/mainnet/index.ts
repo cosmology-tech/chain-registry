@@ -92,6 +92,7 @@ export * as migaloo from './migaloo';
 export * as mises from './mises';
 export * as mun from './mun';
 export * as mythos from './mythos';
+export * as neutaro from './neutaro';
 export * as neutron from './neutron';
 export * as nibiru from './nibiru';
 export * as noble from './noble';

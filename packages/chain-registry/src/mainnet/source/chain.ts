@@ -168,7 +168,7 @@ const info: Chain = {
         provider: 'Decloud Nodes Lab'
       },
       {
-        address: 'https://rpc.source.stakeup.tech',
+        address: 'https://api.source.stakeup.tech',
         provider: 'StakeUp'
       }
     ],

@@ -94,6 +94,7 @@ import * as _migaloo from './migaloo';
 import * as _mises from './mises';
 import * as _mun from './mun';
 import * as _mythos from './mythos';
+import * as _neutaro from './neutaro';
 import * as _neutron from './neutron';
 import * as _nibiru from './nibiru';
 import * as _noble from './noble';
@@ -251,6 +252,7 @@ const chains: Chain[] = [
   _mises.chain,
   _mun.chain,
   _mythos.chain,
+  _neutaro.chain,
   _neutron.chain,
   _nibiru.chain,
   _noble.chain,

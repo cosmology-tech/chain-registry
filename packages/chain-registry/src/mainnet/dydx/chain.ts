@@ -51,16 +51,16 @@ const info: Chain = {
   apis: {
     rpc: [
       {
+        address: 'https://dydx-rpc.kingnodes.com:443',
+        provider: 'Kingnodes 👑'
+      },
+      {
         address: 'https://dydx-dao-rpc.polkachu.com',
         provider: 'Polkachu'
       },
       {
         address: 'https://dydx-mainnet-full-rpc.public.blastapi.io',
         provider: 'Bware Labs'
-      },
-      {
-        address: 'https://dydx-rpc.kingnodes.com:443',
-        provider: 'Kingnodes 👑'
       },
       {
         address: 'https://dydx-rpc.lavenderfive.com:443',
