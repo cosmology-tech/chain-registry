@@ -1,13 +1,18 @@
 {
     "compilerOptions": {
-        "target": "esnext",
-        "moduleResolution": "node",
-        "allowJs": true,
-        "esModuleInterop": true,
+        "baseUrl": ".",
+        "rootDir": "src",
+        "skipLibCheck": true,
+        "emitDeclarationOnly": false,
         "declaration": true,
-        "declarationDir": "./types",
-        "emitDeclarationOnly": true,
-        "isolatedModules": true
+        "esModuleInterop": true,
+        "target": "es2022",
+        "module": "es2022",
+        "isolatedModules": true,
+        "allowJs": true,
+        "downlevelIteration": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true
     },
     "include": [
         "src/**/*"

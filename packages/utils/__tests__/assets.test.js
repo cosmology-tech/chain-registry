@@ -1,16 +1,16 @@
 import assets from '../../../__fixtures__/assets.json';
 import {
   getAssetByDenom,
-  getDenomBySymbol,
-  getCoinGeckoIdByDenom,
-  getDenomByCoinGeckoId,
-  getExponentByDenom,
-  getSymbolByDenom,
   getAssetBySymbol,
   getChainLogo,
   getChainNameByDenom,
+  getCoinGeckoIdByDenom,
+  getDenomByCoinGeckoId,
+  getDenomBySymbol,
+  getExponentByDenom,
   getExponentBySymbol,
   getNativeTokenByChainName,
+  getSymbolByDenom,
   getTokenLogoByDenom,
   getTokenNameByDenom
 } from '../src/assets';

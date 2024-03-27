@@ -11,6 +11,22 @@ export interface LiquidStakeTrace {
     };
     provider: string;
 }
+export interface TestMintageTrace {
+    type: 'test-mintage';
+    counterparty: {
+        chain_name: string;
+        base_denom: string;
+    };
+    provider: string;
+}
+export interface StringTypeTrace {
+    type: string;
+    counterparty: {
+        chain_name: string;
+        base_denom: string;
+    };
+    provider: string;
+}
 export interface AdditionalMintageTrace {
     type: 'additional-mintage';
     counterparty: {
@@ -79,7 +95,7 @@ export interface IBCCw20Trace {
         path?: string;
     };
 }
-export type AssetTrace = IBCCw20Trace | IBCTrace | SyntheicTrace | LiquidStakeTrace | WrapTrace | BridgeTrace | AdditionalMintageTrace;
+export type AssetTrace = IBCCw20Trace | IBCTrace | SyntheicTrace | LiquidStakeTrace | WrapTrace | BridgeTrace | AdditionalMintageTrace | TestMintageTrace | StringTypeTrace;
 export interface LogoImage {
     image_sync?: {
         chain_name: string;
@@ -91,7 +107,9 @@ export interface LogoImage {
     theme?: any;
 }
 export interface Asset {
+    deprecated?: boolean;
     description?: string;
+    extended_description?: string;
     type_asset?: string;
     address?: string;
     denom_units: AssetDenomUnit[];
@@ -108,6 +126,11 @@ export interface Asset {
         source_channel?: string;
         source_denom?: string;
         dst_channel?: string;
+    };
+    socials?: {
+        webiste?: string;
+        website?: string;
+        twitter?: string;
     };
 }
 export type AssetList = {

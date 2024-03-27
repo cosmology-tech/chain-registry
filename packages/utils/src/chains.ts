@@ -1,4 +1,5 @@
 import { Chain } from '@chain-registry/types';
+
 import { customFind } from './assets';
 
 export interface GasPriceRanges {

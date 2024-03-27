@@ -1,4 +1,4 @@
-export * from './ibc';
+export * from './assets';
 export * from './calc';
 export * from './chains';
-export * from './assets';
+export * from './ibc';
