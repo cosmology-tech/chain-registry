@@ -1,12 +1,12 @@
 import chains from '../../../__fixtures__/chains.json';
 import {
-  getChainByChainName,
+  getChainBech32Prefix,
   getChainByChainId,
+  getChainByChainName,
+  getChainGasPriceRanges,
   getChainIdByChainName,
   getChainNameByChainId,
-  getChainGasPriceRanges,
-  getChainPrettyName,
-  getChainBech32Prefix
+  getChainPrettyName
 } from '../src/chains';
 
 describe('tests for chains utils', () => {

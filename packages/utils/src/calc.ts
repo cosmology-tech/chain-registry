@@ -1,10 +1,11 @@
 import { AssetList } from '@chain-registry/types';
 import BigNumber from 'bignumber.js';
+
 import {
   Denom,
   getAssetBySymbol,
-  getExponentFromAsset,
-  getDenomByCoinGeckoId
+  getDenomByCoinGeckoId,
+  getExponentFromAsset
 } from './assets';
 
 export interface CoinGeckoUSDPrice {

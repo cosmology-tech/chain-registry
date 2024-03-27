@@ -1,11 +1,11 @@
 import assets from '../../../__fixtures__/assets.json';
 import {
-  roundDown,
-  mapCoinGeckoPricesToDenoms,
   convertBaseUnitToDisplayUnit,
   convertBaseUnitToDollarValue,
+  convertDisplayUnitToBaseUnit,
   convertDollarValueToBaseUnit,
-  convertDisplayUnitToBaseUnit
+  mapCoinGeckoPricesToDenoms,
+  roundDown
 } from '../src/calc';
 
 const osmosisAssets = assets.filter(
@@ -66,7 +66,11 @@ describe('tests for calc utils', () => {
   });
 
   it('convertDisplayUnitToBaseUnit', () => {
-    const value = convertDisplayUnitToBaseUnit(osmosisAssets, 'OSMO', 0.00009944);
+    const value = convertDisplayUnitToBaseUnit(
+      osmosisAssets,
+      'OSMO',
+      0.00009944
+    );
     expect(value).toEqual('99');
   });
 });

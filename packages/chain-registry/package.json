@@ -6,6 +6,7 @@
   "homepage": "https://github.com/cosmology-tech/chain-registry/tree/master/packages/chain-registry#readme",
   "license": "SEE LICENSE IN LICENSE",
   "main": "main/index.js",
+  "module": "esm/index.js",
   "typings": "types/index.d.ts",
   "directories": {
     "lib": "src",
@@ -13,6 +14,7 @@
   },
   "files": [
     "types",
+    "esm",
     "main"
   ],
   "publishConfig": {
@@ -23,9 +25,13 @@
     "url": "https://github.com/cosmology-tech/chain-registry"
   },
   "scripts": {
-    "build": "cross-env BABEL_ENV=production babel src --out-dir main --delete-dir-on-start --extensions \".tsx,.ts,.js\"",
-    "build:ts": "tsc --project ./tsconfig.json",
-    "buidl": "npm run build && npm run build:ts",
+    "build:cjs": "yarn tsc -p tsconfig.json --outDir main --module commonjs --declaration false || true",
+    "build:mjs": "yarn tsc -p tsconfig.json --outDir esm --module es2022 --declaration false || true",
+    "clean:main": "rimraf main",
+    "clean:esm": "rimraf esm",
+    "clean": "npm run clean:main && npm run clean:esm",
+    "build": "npm run clean && npm run build:mjs && npm run build:cjs",
+    "buidl": "npm run build",
     "build:pkg": "babel-node ./scripts/build.js",
     "codegen": "npm run build:pkg && npm run format",
     "prepare": "npm run build",
@@ -65,6 +71,7 @@
     "prettier": "^2.8.7",
     "regenerator-runtime": "^0.13.11",
     "ts-jest": "^29.1.0",
+    "rimraf": "^5.0.0",
     "typescript": "^5.0.4"
   },
   "dependencies": {

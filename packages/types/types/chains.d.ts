@@ -52,11 +52,18 @@ export interface Chain {
         jpeg?: string;
     };
     images?: {
+        image_sync?: {
+            chain_name?: string;
+        };
         png?: string;
         svg?: string;
         theme?: {
             primary_color_hex?: string;
+            dark_mode?: boolean;
+            circle?: boolean;
         };
+        layout?: string;
+        text_position?: string;
     }[];
     fees?: {
         fee_tokens: {
