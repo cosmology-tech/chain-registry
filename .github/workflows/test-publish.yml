@@ -1,0 +1,28 @@
+name: Publish
+
+on:
+  # schedule:
+  # Runs every day at 1:00 AM UTC
+  # - cron: "0 1 * * *"
+
+  workflow_dispatch:
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: "true"
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.14.0
+          registry-url: https://registry.npmjs.org/
+      - name: Code Generation
+        run: |
+          yarn
+          yarn bootstrap
+          lerna publish --force-publish=chain-registry --no-verify-access --yes --verbose
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
+          GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
