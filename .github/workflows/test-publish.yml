@@ -22,6 +22,8 @@ jobs:
         run: |
           yarn
           yarn bootstrap
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor}}@users.noreply.github.com"
           lerna publish --force-publish=chain-registry --no-verify-access --yes
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
