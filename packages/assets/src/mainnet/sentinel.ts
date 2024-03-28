@@ -14862,6 +14862,98 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'PSTAKE Liquid-Staked HUAHUA',
+      denom_units: [
+        {
+          denom:
+            'ibc/78A175D7B2850BAD9C745CD11FAC75B80093DE96EAE561748147855B9DB10EFB',
+          exponent: 0,
+          aliases: ['stk/uhuahua']
+        },
+        {
+          denom: 'stkhuahua',
+          exponent: 6,
+          aliases: ['stk/huahua']
+        }
+      ],
+      base: 'ibc/78A175D7B2850BAD9C745CD11FAC75B80093DE96EAE561748147855B9DB10EFB',
+      name: 'PSTAKE staked HUAHUA',
+      display: 'stkhuahua',
+      symbol: 'stkHUAHUA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-22',
+            base_denom: 'stk/uhuahua',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-15'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkhuahua.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkhuahua.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkhuahua.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkhuahua.svg'
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/1308C1320FC21B2EE3837D4F81F409E80104F660D6D17B636ECCFFB6CBFF08F3',
+          exponent: 0,
+          aliases: [
+            'ibc/B597D779FCDD9021263C98A48F1AFA9D2BCCCE980F397CDE5681CCEDE7DEE1A4'
+          ]
+        },
+        {
+          denom: 'huahua',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/1308C1320FC21B2EE3837D4F81F409E80104F660D6D17B636ECCFFB6CBFF08F3',
+      name: 'Chihuahua',
+      display: 'huahua',
+      symbol: 'HUAHUA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-22',
+            base_denom:
+              'ibc/B597D779FCDD9021263C98A48F1AFA9D2BCCCE980F397CDE5681CCEDE7DEE1A4',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-15'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'chihuahua',
+            base_denom: 'uhuahua'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
+      }
+    },
+    {
       description: 'REGEN coin is the token for the Regen Network Platform',
       denom_units: [
         {

@@ -18942,6 +18942,98 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'PSTAKE Liquid-Staked HUAHUA',
+      denom_units: [
+        {
+          denom:
+            'ibc/D221063975544C75E684FD8323AD3F799A8338031F29104C17F7F8B12A6D9883',
+          exponent: 0,
+          aliases: ['stk/uhuahua']
+        },
+        {
+          denom: 'stkhuahua',
+          exponent: 6,
+          aliases: ['stk/huahua']
+        }
+      ],
+      base: 'ibc/D221063975544C75E684FD8323AD3F799A8338031F29104C17F7F8B12A6D9883',
+      name: 'PSTAKE staked HUAHUA',
+      display: 'stkhuahua',
+      symbol: 'stkHUAHUA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-202',
+            base_denom: 'stk/uhuahua',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-72'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkhuahua.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkhuahua.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkhuahua.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkhuahua.svg'
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/9AEB65CFDF212382C654BA05ED73BA4F287CA5D981D8B9669F3B32B2806EC227',
+          exponent: 0,
+          aliases: [
+            'ibc/B597D779FCDD9021263C98A48F1AFA9D2BCCCE980F397CDE5681CCEDE7DEE1A4'
+          ]
+        },
+        {
+          denom: 'huahua',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/9AEB65CFDF212382C654BA05ED73BA4F287CA5D981D8B9669F3B32B2806EC227',
+      name: 'Chihuahua',
+      display: 'huahua',
+      symbol: 'HUAHUA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-202',
+            base_denom:
+              'ibc/B597D779FCDD9021263C98A48F1AFA9D2BCCCE980F397CDE5681CCEDE7DEE1A4',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-72'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'chihuahua',
+            base_denom: 'uhuahua'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
+      }
+    },
+    {
       description: 'The native token of Secret Network',
       denom_units: [
         {

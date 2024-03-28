@@ -23,10 +23,10 @@ const info: Chain = {
     fee_tokens: [
       {
         denom: 'uqsr',
-        fixed_min_gas_price: 0.01,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.03
+        fixed_min_gas_price: 0.1,
+        low_gas_price: 0.1,
+        average_gas_price: 0.25,
+        high_gas_price: 0.3
       },
       {
         denom:

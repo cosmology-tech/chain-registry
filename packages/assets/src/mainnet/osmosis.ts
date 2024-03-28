@@ -15504,6 +15504,98 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'PSTAKE Liquid-Staked HUAHUA',
+      denom_units: [
+        {
+          denom:
+            'ibc/AE9CCAE166980A396B2FD517C67D73F9958D9E6429CAFF61C922419286E4DD97',
+          exponent: 0,
+          aliases: ['stk/uhuahua']
+        },
+        {
+          denom: 'stkhuahua',
+          exponent: 6,
+          aliases: ['stk/huahua']
+        }
+      ],
+      base: 'ibc/AE9CCAE166980A396B2FD517C67D73F9958D9E6429CAFF61C922419286E4DD97',
+      name: 'PSTAKE staked HUAHUA',
+      display: 'stkhuahua',
+      symbol: 'stkHUAHUA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'stk/uhuahua',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-4'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkhuahua.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkhuahua.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkhuahua.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkhuahua.svg'
+        }
+      ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/EF913067EF5EB3E567C984176FE3947F91E61A12A83207D6D8EFACF4A11261AF',
+          exponent: 0,
+          aliases: [
+            'ibc/B597D779FCDD9021263C98A48F1AFA9D2BCCCE980F397CDE5681CCEDE7DEE1A4'
+          ]
+        },
+        {
+          denom: 'huahua',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/EF913067EF5EB3E567C984176FE3947F91E61A12A83207D6D8EFACF4A11261AF',
+      name: 'Chihuahua',
+      display: 'huahua',
+      symbol: 'HUAHUA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom:
+              'ibc/B597D779FCDD9021263C98A48F1AFA9D2BCCCE980F397CDE5681CCEDE7DEE1A4',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-4'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'chihuahua',
+            base_denom: 'uhuahua'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
+      }
+    },
+    {
       description:
         'The native EVM, governance and staking token of the Planq Network',
       extended_description:

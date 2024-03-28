@@ -68,6 +68,10 @@ const info: Chain = {
       {
         address: 'https://nibiru.rpc.liveraven.net',
         provider: 'LiveRaveN'
+      },
+      {
+        address: 'https://nibiru-rpc.cogwheel.zone',
+        provider: 'Cogwheel ⚙️'
       }
     ],
     rest: [
@@ -94,6 +98,10 @@ const info: Chain = {
       {
         address: 'https://nibiru.api.liveraven.net',
         provider: 'LiveRaveN'
+      },
+      {
+        address: 'https://nibiru-api.cogwheel.zone',
+        provider: 'Cogwheel ⚙️'
       }
     ],
     grpc: [
@@ -120,6 +128,10 @@ const info: Chain = {
       {
         address: 'nibiru.grpc.liveraven.net:443',
         provider: 'LiveRaveN'
+      },
+      {
+        address: 'nibiru-grpc.cogwheel.zone:443',
+        provider: 'Cogwheel ⚙️'
       }
     ]
   },

@@ -62,6 +62,10 @@ const info: Chain = {
       {
         address: 'https://elys-testnet-rpc.itrocket.net:443',
         provider: 'itrocket'
+      },
+      {
+        address: 'https://elys-rpc.kleomedes.network:443',
+        provider: 'Kleomedes'
       }
     ],
     rest: [
@@ -80,6 +84,10 @@ const info: Chain = {
       {
         address: 'https://elys-testnet-api.itrocket.net',
         provider: 'itrocket'
+      },
+      {
+        address: 'https://elys-api.kleomedes.network:443',
+        provider: 'Kleomedes'
       }
     ],
     grpc: [

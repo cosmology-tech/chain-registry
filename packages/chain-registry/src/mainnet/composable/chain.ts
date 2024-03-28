@@ -30,7 +30,9 @@ const info: Chain = {
       }
     ]
   },
-  codebase: {},
+  codebase: {
+    cosmos_sdk_version: 'v0.47.6'
+  },
   logo_URIs: {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/composable.svg'
   },

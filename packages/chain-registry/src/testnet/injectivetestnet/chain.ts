@@ -38,7 +38,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://k8s.testnet.tm.injective.network:443',
+        address: 'https://testnet.sentry.tm.injective.network:443',
         provider: 'injectiveLabs'
       },
       {
@@ -56,11 +56,11 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://k8s.testnet.lcd.injective.network',
+        address: 'https://testnet.sentry.lcd.injective.network:443',
         provider: 'injectiveLabs'
       },
       {
-        address: 'https://testnet.grpc.injective.network',
+        address: 'https://testnet.lcd.injective.network',
         provider: 'injectiveLabs'
       },
       {
@@ -74,7 +74,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'k8s.testnet.chain.grpc.injective.network:443',
+        address: 'testnet.sentry.chain.grpc.injective.network:443',
         provider: 'injectiveLabs'
       },
       {
