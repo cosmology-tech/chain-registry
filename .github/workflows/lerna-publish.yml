@@ -1,9 +1,10 @@
-name: Test Publish
+name: Lerna Publish
 
 on:
-  # schedule:
-  # Runs every day at 1:00 AM UTC
-  # - cron: "0 1 * * *"
+  workflow_run:
+    workflows: ["Publish Main"]
+    types:
+      - completed
 
   workflow_dispatch:
 
