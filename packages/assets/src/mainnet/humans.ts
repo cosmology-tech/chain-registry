@@ -13793,6 +13793,38 @@ const assets: AssetList = {
           }
         }
       ]
+    },
+    {
+      description: 'Memecoin for The International Brane Wave',
+      denom_units: [
+        {
+          denom:
+            'ibc/029021B0B4F49E5C62AC4477F6E856DA7219DE4C0AA4EE7DBF190AFF260478A7',
+          exponent: 0,
+          aliases: ['factory/osmo13gu58hzw3e9aqpj25h67m7snwcjuccd7v4p55w/brnz']
+        }
+      ],
+      base: 'ibc/029021B0B4F49E5C62AC4477F6E856DA7219DE4C0AA4EE7DBF190AFF260478A7',
+      name: 'Branez',
+      display: 'factory/osmo13gu58hzw3e9aqpj25h67m7snwcjuccd7v4p55w/brnz',
+      symbol: 'BRNZ',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/BRNZ.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-20082',
+            base_denom:
+              'factory/osmo13gu58hzw3e9aqpj25h67m7snwcjuccd7v4p55w/brnz',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-4'
+          }
+        }
+      ]
     }
   ]
 };

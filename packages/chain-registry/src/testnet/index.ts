@@ -44,7 +44,7 @@ export * as kichaintestnet from './kichaintestnet';
 export * as kujiratestnet from './kujiratestnet';
 export * as kyvetestnet from './kyvetestnet';
 export * as lavatestnet from './lavatestnet';
-export * as lavatestnet2 from './lavatestnet2';
+export * as lavatestnet1 from './lavatestnet1';
 export * as likecointestnet from './likecointestnet';
 export * as lumenxtestnet from './lumenxtestnet';
 export * as mantrachaintestnet from './mantrachaintestnet';

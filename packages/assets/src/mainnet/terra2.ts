@@ -21247,6 +21247,38 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'Memecoin for The International Brane Wave',
+      denom_units: [
+        {
+          denom:
+            'ibc/15360C82514B2D5CD5E18D6C102C15CD72B29319BBD33E00CE41CC494D049FD1',
+          exponent: 0,
+          aliases: ['factory/osmo13gu58hzw3e9aqpj25h67m7snwcjuccd7v4p55w/brnz']
+        }
+      ],
+      base: 'ibc/15360C82514B2D5CD5E18D6C102C15CD72B29319BBD33E00CE41CC494D049FD1',
+      name: 'Branez',
+      display: 'factory/osmo13gu58hzw3e9aqpj25h67m7snwcjuccd7v4p55w/brnz',
+      symbol: 'BRNZ',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/BRNZ.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-251',
+            base_denom:
+              'factory/osmo13gu58hzw3e9aqpj25h67m7snwcjuccd7v4p55w/brnz',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-1'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Secret Network',
       denom_units: [
         {

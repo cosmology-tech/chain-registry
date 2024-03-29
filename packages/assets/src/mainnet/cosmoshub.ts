@@ -22675,6 +22675,38 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'Memecoin for The International Brane Wave',
+      denom_units: [
+        {
+          denom:
+            'ibc/683DD4EFE376DB374C5AEB504EBD8ED223B025340077F2BC12ABB423B071F5F7',
+          exponent: 0,
+          aliases: ['factory/osmo13gu58hzw3e9aqpj25h67m7snwcjuccd7v4p55w/brnz']
+        }
+      ],
+      base: 'ibc/683DD4EFE376DB374C5AEB504EBD8ED223B025340077F2BC12ABB423B071F5F7',
+      name: 'Branez',
+      display: 'factory/osmo13gu58hzw3e9aqpj25h67m7snwcjuccd7v4p55w/brnz',
+      symbol: 'BRNZ',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/BRNZ.svg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'factory/osmo13gu58hzw3e9aqpj25h67m7snwcjuccd7v4p55w/brnz',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-141'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The XPRT token is primarily a governance token for the Persistence chain.',
       denom_units: [

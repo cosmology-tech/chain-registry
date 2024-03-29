@@ -1,7 +1,7 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
-  chain_name: 'lavatestnet2',
+  chain_name: 'lavatestnet1',
   assets: [
     {
       description: 'The native token of Lava',

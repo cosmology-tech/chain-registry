@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/types';
 const assets: AssetList = {
-  chain_name: 'lavatestnet2',
+  chain_name: 'lavatestnet',
   assets: [
     {
       description: 'The native token of Axelar',

@@ -1,12 +1,12 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'lavatestnet2',
-  status: 'live',
+  chain_name: 'lavatestnet1',
+  status: 'killed',
   network_type: 'testnet',
   website: 'https://www.lavanet.xyz/',
-  pretty_name: 'Lava Testnet',
-  chain_id: 'lava-testnet-2',
+  pretty_name: 'Lava',
+  chain_id: 'lava-testnet-1',
   bech32_prefix: 'lava@',
   daemon_name: 'lavad',
   node_home: '$HOME/.lava',
@@ -16,8 +16,8 @@ const info: Chain = {
     fee_tokens: [
       {
         denom: 'ulava',
-        fixed_min_gas_price: 0.000001,
-        low_gas_price: 0.000001,
+        fixed_min_gas_price: 0.0025,
+        low_gas_price: 0.0025,
         average_gas_price: 0.025,
         high_gas_price: 0.04
       }
@@ -34,7 +34,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.47.6',
+    cosmos_sdk_version: '0.45',
     cosmwasm_enabled: false,
     cosmwasm_version: '0.30'
   },
@@ -56,14 +56,22 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://public-rpc.lavanet.xyz:443',
+        address: 'https://public-rpc-testnet2.lavanet.xyz/',
         provider: 'Lava'
+      },
+      {
+        address: 'http://lava.rpc.t.stavr.tech:198',
+        provider: '🔥STAVR🔥'
       }
     ],
     rest: [
       {
-        address: 'https://public-rpc.lavanet.xyz/rest/',
+        address: 'https://public-rpc-testnet2.lavanet.xyz/rest/',
         provider: 'Lava'
+      },
+      {
+        address: 'https://lava.api.t.stavr.tech',
+        provider: '🔥STAVR🔥'
       }
     ]
   },
@@ -73,8 +81,22 @@ const info: Chain = {
       url: 'https://lava.explorers.guru/',
       tx_page: 'https://lava.explorers.guru//transaction/${txHash}',
       account_page: 'https://lava.explorers.guru//account/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Lava-Testnet',
+      tx_page: 'https://explorer.stavr.tech/Lava-Testnet/tx/${txHash}',
+      account_page:
+        'https://explorer.stavr.tech/Lava-Testnet/account/${accountAddress}'
+    },
+    {
+      kind: 'NodeStake Explorer',
+      url: 'https://explorer.nodestake.org/lava-testnet',
+      tx_page: 'https://explorer.nodestake.org/lava-testnet/tx/${txHash}',
+      account_page:
+        'https://explorer.nodestake.org/lava-testnet/account/${accountAddress}'
     }
   ],
-  keywords: ['rpc', 'api', 'modular', 'data']
+  keywords: ['rpc', 'api']
 };
 export default info;

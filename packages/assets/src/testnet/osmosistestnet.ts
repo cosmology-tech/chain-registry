@@ -1082,7 +1082,7 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-5',
             base_denom: 'ulava',
-            chain_name: 'lavatestnet2'
+            chain_name: 'lavatestnet'
           },
           chain: {
             channel_id: 'channel-6092'

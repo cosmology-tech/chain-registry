@@ -3,10 +3,11 @@ const info: Chain = {
   $schema: '../../chain.schema.json',
   chain_name: 'lavatestnet',
   status: 'live',
+  pre_fork_chain_name: 'lavatestnet1',
   network_type: 'testnet',
   website: 'https://www.lavanet.xyz/',
-  pretty_name: 'Lava',
-  chain_id: 'lava-testnet-1',
+  pretty_name: 'Lava Testnet',
+  chain_id: 'lava-testnet-2',
   bech32_prefix: 'lava@',
   daemon_name: 'lavad',
   node_home: '$HOME/.lava',
@@ -16,10 +17,10 @@ const info: Chain = {
     fee_tokens: [
       {
         denom: 'ulava',
-        fixed_min_gas_price: 1e-9,
-        low_gas_price: 1e-9,
-        average_gas_price: 1e-9,
-        high_gas_price: 1e-9
+        fixed_min_gas_price: 0.000001,
+        low_gas_price: 0.000001,
+        average_gas_price: 0.025,
+        high_gas_price: 0.04
       }
     ]
   },
@@ -34,7 +35,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.47',
+    cosmos_sdk_version: '0.47.7',
     cosmwasm_enabled: false,
     cosmwasm_version: '0.30'
   },
@@ -56,7 +57,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://https://public-rpc-testnet2.lavanet.xyz/',
+        address: 'https://public-rpc-testnet2.lavanet.xyz:443/rpc/',
         provider: 'Lava'
       },
       {
@@ -66,7 +67,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://public-rpc-testnet2.lavanet.xyz/rest/',
+        address: 'https://public-rpc-testnet2.lavanet.xyz:443/rest/',
         provider: 'Lava'
       },
       {
@@ -97,6 +98,6 @@ const info: Chain = {
         'https://explorer.nodestake.org/lava-testnet/account/${accountAddress}'
     }
   ],
-  keywords: ['rpc', 'api']
+  keywords: ['rpc', 'api', 'modular', 'data']
 };
 export default info;
