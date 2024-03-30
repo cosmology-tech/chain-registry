@@ -69,6 +69,10 @@ const info: Chain = {
       {
         address: ' https://lava-api.w3coins.io:443',
         provider: 'w3coins'
+      },
+      {
+        address: 'http://lava.api.staking-explorer.com',
+        provider: 'Daily DROP'
       }
     ]
   },

@@ -965,9 +965,17 @@ const assets: AssetList = {
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg',
+          theme: {
+            primary_color_hex: '#eaf143'
+          }
         }
       ],
+      coingecko_id: 'fanfury',
+      keywords: ['gaming', 'staking'],
+      socials: {
+        twitter: 'https://twitter.com/furyachain'
+      },
       traces: [
         {
           type: 'ibc',

@@ -82,6 +82,10 @@ const info: Chain = {
       {
         address: 'https://planq-rpc.stake-town.com',
         provider: 'StakeTown'
+      },
+      {
+        address: 'https://mainnet-planq-rpc.konsortech.xyz',
+        provider: 'KonsorTech'
       }
     ],
     rest: [
@@ -124,6 +128,10 @@ const info: Chain = {
       {
         address: 'https://planq-api.stake-town.com',
         provider: 'StakeTown'
+      },
+      {
+        address: 'https://mainnet-planq-api.konsortech.xyz',
+        provider: 'KonsorTech'
       }
     ],
     grpc: [
@@ -178,6 +186,10 @@ const info: Chain = {
       {
         address: 'planq-grpc.stake-town.com:443',
         provider: 'StakeTown'
+      },
+      {
+        address: 'mainnet-planq.konsortech.xyz:10090',
+        provider: 'KonsorTech'
       }
     ],
     'evm-http-jsonrpc': [
@@ -208,6 +220,10 @@ const info: Chain = {
       {
         address: 'https://planq-jsonrpc.stake-town.com',
         provider: 'StakeTown'
+      },
+      {
+        address: 'https://mainnet-planq-evmrpc.konsortech.xyz',
+        provider: 'KonsorTech'
       }
     ]
   },
@@ -273,6 +289,11 @@ const info: Chain = {
       kind: 'Safe Block',
       url: 'https://explorer.safeblock.space/planq',
       tx_page: 'https://explorer.safeblock.space/planq/tx/${txHash}'
+    },
+    {
+      kind: 'KonsorTech',
+      url: 'https://explorer.konsortech.xyz/planq',
+      tx_page: 'https://explorer.konsortech.xyz/planq/tx/${txHash}'
     }
   ],
   images: [

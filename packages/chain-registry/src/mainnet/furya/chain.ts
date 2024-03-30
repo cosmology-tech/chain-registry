@@ -37,19 +37,35 @@ const info: Chain = {
     rpc: [
       {
         address: 'https://rpc.furya.xyz',
-        provider: 'Furya Genesis Validator 🐝'
+        provider: 'Furya Genesis Validator'
+      },
+      {
+        address: 'https://furya-rpc.synergynodes.com',
+        provider: 'synergynodes'
+      },
+      {
+        address: 'https://furya.rpc.nodeshub.online:443',
+        provider: 'nodeshub'
       }
     ],
     rest: [
       {
         address: 'https://api.furya.xyz',
-        provider: 'Furya Genesis Validator 🐝'
+        provider: 'Furya Genesis Validator'
+      },
+      {
+        address: 'https://furya.api.nodeshub.online',
+        provider: 'synergynodes'
+      },
+      {
+        address: 'https://furya.api.nodeshub.online',
+        provider: 'Furya Genesis Validator'
       }
     ],
     grpc: [
       {
         address: 'grpc.furya.xyz:443',
-        provider: 'Lavender.Five Nodes 🐝'
+        provider: 'Furya Genesis Validator'
       }
     ]
   },
@@ -57,8 +73,15 @@ const info: Chain = {
     {
       kind: 'Furya Explorer',
       url: 'https://explorer.furya.xyz/',
-      tx_page: 'https://explorer.furya.xyz/txs/${txHash}',
-      account_page: 'https://explorer.furya.xyz/account/${accountAddress}'
+      tx_page: 'https://explorer.furya.xyz/furya/tx/${txHash}',
+      account_page: 'https://explorer.furya.xyz/furya/account/${accountAddress}'
+    },
+    {
+      kind: 'Nodeshub Explorer',
+      url: 'https://explorer.nodeshub.online/furya',
+      tx_page: 'https://explorer.nodeshub.online/furya/txs/${txHash}',
+      account_page:
+        'https://explorer.nodeshub.online/furya/account/${accountAddress}'
     }
   ],
   images: [
