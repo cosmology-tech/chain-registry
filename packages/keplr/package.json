@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/keplr",
-  "version": "1.38.13",
+  "version": "1.38.14",
   "description": "Chain Registry to Keplr",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
@@ -57,7 +57,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "29.5.0",
     "babel-watch": "^7.7.2",
-    "chain-registry": "^1.33.13",
+    "chain-registry": "^1.33.14",
     "cross-env": "^7.0.2",
     "eslint": "8.38.0",
     "eslint-config-prettier": "^8.8.0",
@@ -72,7 +72,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.21.0",
-    "@chain-registry/types": "^0.18.9",
+    "@chain-registry/types": "^0.18.10",
     "@keplr-wallet/cosmos": "0.12.28",
     "@keplr-wallet/crypto": "0.12.28",
     "semver": "^7.5.0"
