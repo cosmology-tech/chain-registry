@@ -663,6 +663,57 @@ const assets: AssetList = {
       ]
     },
     {
+      type_asset: 'ics20',
+      description: 'USD Coin on Juno',
+      denom_units: [
+        {
+          denom:
+            'ibc/C015416C3EB9FF8F14DF3BAADFD6D9B09234EA3C89A31334B29AEBEC5792A98A',
+          exponent: 0,
+          aliases: [
+            'ibc/4A482FA914A4B9B05801ED81C33713899F322B24F76A06F4B8FE872485EA22FF'
+          ]
+        },
+        {
+          denom: 'usdc',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/C015416C3EB9FF8F14DF3BAADFD6D9B09234EA3C89A31334B29AEBEC5792A98A',
+      name: 'USD Coin',
+      display: 'usdc',
+      symbol: 'USDC',
+      coingecko_id: 'usd-coin',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+      },
+      images: [
+        {
+          image_sync: {
+            chain_name: 'noble',
+            base_denom: 'uusdc'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-212',
+            base_denom:
+              'ibc/4A482FA914A4B9B05801ED81C33713899F322B24F76A06F4B8FE872485EA22FF',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Vidulum',
       denom_units: [
         {

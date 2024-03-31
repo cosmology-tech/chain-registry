@@ -14527,6 +14527,53 @@ const assets: AssetList = {
           }
         }
       ]
+    },
+    {
+      description:
+        'Cvn is a Layer-1 blockchain built to deliver on the promise of DeFi',
+      denom_units: [
+        {
+          denom:
+            'ibc/59374DA6D38BEEE549AB90F22E5AB91296B0FD84632F56B571D063CDB074D290',
+          exponent: 0,
+          aliases: [
+            'ibc/D3FAF77F5DE21C18413B164751239BA7D521A9D8EA53BFE553AADF338A721480'
+          ]
+        },
+        {
+          denom: 'cvnt',
+          exponent: 18
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/59374DA6D38BEEE549AB90F22E5AB91296B0FD84632F56B571D063CDB074D290',
+      name: 'CVN',
+      display: 'cvnt',
+      symbol: 'CVN',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-550',
+            base_denom:
+              'ibc/D3FAF77F5DE21C18413B164751239BA7D521A9D8EA53BFE553AADF338A721480',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-5'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg'
+        }
+      ]
     }
   ]
 };

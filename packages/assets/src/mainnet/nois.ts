@@ -1005,6 +1005,57 @@ const assets: AssetList = {
       ]
     },
     {
+      type_asset: 'ics20',
+      description: 'USD Coin on Juno',
+      denom_units: [
+        {
+          denom:
+            'ibc/BBF33F0050C5C889AFB5E8A22EC8419A90562970936F389417A0A5CA680BBFBE',
+          exponent: 0,
+          aliases: [
+            'ibc/4A482FA914A4B9B05801ED81C33713899F322B24F76A06F4B8FE872485EA22FF'
+          ]
+        },
+        {
+          denom: 'usdc',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/BBF33F0050C5C889AFB5E8A22EC8419A90562970936F389417A0A5CA680BBFBE',
+      name: 'USD Coin',
+      display: 'usdc',
+      symbol: 'USDC',
+      coingecko_id: 'usd-coin',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+      },
+      images: [
+        {
+          image_sync: {
+            chain_name: 'noble',
+            base_denom: 'uusdc'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-225',
+            base_denom:
+              'ibc/4A482FA914A4B9B05801ED81C33713899F322B24F76A06F4B8FE872485EA22FF',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-1'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Neutron chain.',
       denom_units: [
         {
@@ -16015,6 +16066,53 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-37'
           }
+        }
+      ]
+    },
+    {
+      description:
+        'Cvn is a Layer-1 blockchain built to deliver on the promise of DeFi',
+      denom_units: [
+        {
+          denom:
+            'ibc/656CCBA98F2BC3301FB07432BFA03439C91F46FFFE62385241A3380C4887F938',
+          exponent: 0,
+          aliases: [
+            'ibc/D3FAF77F5DE21C18413B164751239BA7D521A9D8EA53BFE553AADF338A721480'
+          ]
+        },
+        {
+          denom: 'cvnt',
+          exponent: 18
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/656CCBA98F2BC3301FB07432BFA03439C91F46FFFE62385241A3380C4887F938',
+      name: 'CVN',
+      display: 'cvnt',
+      symbol: 'CVN',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8277',
+            base_denom:
+              'ibc/D3FAF77F5DE21C18413B164751239BA7D521A9D8EA53BFE553AADF338A721480',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-37'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg'
         }
       ]
     },

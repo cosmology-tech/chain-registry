@@ -4340,7 +4340,7 @@ const asset_list: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/747E15E4A659084E3B2E44D0B22EC7E50CBB0E2B9D436B94F3D1936B63D97534',
+            'ibc/809498787C8B8ED7215ACADE0B1FE08A798F1DB0FE72CC9289D68EA230FEEBCD',
           exponent: 0,
           aliases: ['ucif']
         },
@@ -4349,7 +4349,7 @@ const asset_list: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/747E15E4A659084E3B2E44D0B22EC7E50CBB0E2B9D436B94F3D1936B63D97534',
+      base: 'ibc/809498787C8B8ED7215ACADE0B1FE08A798F1DB0FE72CC9289D68EA230FEEBCD',
       name: 'Cifer',
       display: 'cif',
       symbol: 'CIF',
@@ -4368,12 +4368,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-0',
+            channel_id: 'channel-2',
             base_denom: 'ucif',
             chain_name: 'cifer'
           },
           chain: {
-            channel_id: 'channel-0'
+            channel_id: 'channel-35741'
           }
         }
       ]
@@ -4695,6 +4695,50 @@ const asset_list: AssetList = {
           image_sync: {
             chain_name: 'picasso',
             base_denom: '130'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'Cvn is a Layer-1 blockchain built to deliver on the promise of DeFi',
+      denom_units: [
+        {
+          denom:
+            'ibc/D3FAF77F5DE21C18413B164751239BA7D521A9D8EA53BFE553AADF338A721480',
+          exponent: 0,
+          aliases: ['acvnt']
+        },
+        {
+          denom: 'cvnt',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/D3FAF77F5DE21C18413B164751239BA7D521A9D8EA53BFE553AADF338A721480',
+      name: 'Cvn',
+      display: 'cvnt',
+      symbol: 'CVN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg'
+      },
+      coingecko_id: 'consciousdao',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'acvnt',
+            chain_name: 'conscious'
+          },
+          chain: {
+            channel_id: 'channel-35264'
           }
         }
       ]
@@ -8933,6 +8977,57 @@ const asset_list: AssetList = {
             channel_id: 'channel-0',
             base_denom:
               'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-42'
+          }
+        }
+      ]
+    },
+    {
+      type_asset: 'ics20',
+      description: 'USD Coin on Juno',
+      denom_units: [
+        {
+          denom:
+            'ibc/A80F928DBB25E69A7A1D1491255079AD327B2B9C82D281B309531FCE9C082ADC',
+          exponent: 0,
+          aliases: [
+            'ibc/4A482FA914A4B9B05801ED81C33713899F322B24F76A06F4B8FE872485EA22FF'
+          ]
+        },
+        {
+          denom: 'usdc',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/A80F928DBB25E69A7A1D1491255079AD327B2B9C82D281B309531FCE9C082ADC',
+      name: 'USD Coin',
+      display: 'usdc',
+      symbol: 'USDC',
+      coingecko_id: 'usd-coin',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+      },
+      images: [
+        {
+          image_sync: {
+            chain_name: 'noble',
+            base_denom: 'uusdc'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'ibc/4A482FA914A4B9B05801ED81C33713899F322B24F76A06F4B8FE872485EA22FF',
             chain_name: 'juno'
           },
           chain: {

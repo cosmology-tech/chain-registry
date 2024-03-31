@@ -27,6 +27,7 @@ import * as _chihuahua from './chihuahua';
 import * as _cifer from './cifer';
 import * as _comdex from './comdex';
 import * as _composable from './composable';
+import * as _conscious from './conscious';
 import * as _coreum from './coreum';
 import * as _cosmoshub from './cosmoshub';
 import * as _crescent from './crescent';
@@ -128,6 +129,7 @@ const ibc: IBCInfo[] = [
   ..._cifer.ibc_chain1,
   ..._comdex.ibc_chain1,
   ..._composable.ibc_chain1,
+  ..._conscious.ibc_chain1,
   ..._coreum.ibc_chain1,
   ..._cosmoshub.ibc_chain1,
   ..._crescent.ibc_chain1,

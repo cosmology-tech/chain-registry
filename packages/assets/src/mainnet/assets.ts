@@ -27,6 +27,7 @@ import _chihuahua from './chihuahua';
 import _cifer from './cifer';
 import _comdex from './comdex';
 import _composable from './composable';
+import _conscious from './conscious';
 import _coreum from './coreum';
 import _cosmoshub from './cosmoshub';
 import _crescent from './crescent';
@@ -154,6 +155,7 @@ const assets: AssetList[] = [
   _cifer,
   _comdex,
   _composable,
+  _conscious,
   _coreum,
   _cosmoshub,
   _crescent,

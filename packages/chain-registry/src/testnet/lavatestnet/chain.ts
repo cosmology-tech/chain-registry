@@ -63,6 +63,10 @@ const info: Chain = {
       {
         address: 'http://lava.rpc.t.stavr.tech:198',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://lava-testnet-rpc.itrocket.net:443',
+        provider: '🚀ITRocket🚀'
       }
     ],
     rest: [
@@ -73,6 +77,10 @@ const info: Chain = {
       {
         address: 'https://lava.api.t.stavr.tech',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://lava-testnet-api.itrocket.net',
+        provider: '🚀ITRocket🚀'
       }
     ]
   },
@@ -96,6 +104,13 @@ const info: Chain = {
       tx_page: 'https://explorer.nodestake.org/lava-testnet/tx/${txHash}',
       account_page:
         'https://explorer.nodestake.org/lava-testnet/account/${accountAddress}'
+    },
+    {
+      kind: '🚀ITRocket🚀',
+      url: 'https://testnet.itrocket.net/lava',
+      tx_page: 'https://testnet.itrocket.net/lava/tx/${txHash}',
+      account_page:
+        'https://testnet.itrocket.net/lava/account/${accountAddress}'
     }
   ],
   keywords: ['rpc', 'api', 'modular', 'data']

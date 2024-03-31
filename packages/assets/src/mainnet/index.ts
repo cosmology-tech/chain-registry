@@ -25,6 +25,7 @@ export * as chihuahua from './chihuahua';
 export * as cifer from './cifer';
 export * as comdex from './comdex';
 export * as composable from './composable';
+export * as conscious from './conscious';
 export * as coreum from './coreum';
 export * as cosmoshub from './cosmoshub';
 export * as crescent from './crescent';

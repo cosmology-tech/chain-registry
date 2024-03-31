@@ -142,6 +142,10 @@ const info: Chain = {
       {
         address: 'https://bitcanna-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://rpc.bcna.sopko.net:443',
+        provider: '🐔 The Chicken Coop 🦝 Homestead'
       }
     ],
     grpc: [

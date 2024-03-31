@@ -3217,7 +3217,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/747E15E4A659084E3B2E44D0B22EC7E50CBB0E2B9D436B94F3D1936B63D97534',
+            'ibc/191E60A9919C6352F34DF2BBC3F88D0564D7740DCD374C1BDA0C8AD9F24ED960',
           exponent: 0,
           aliases: ['ucif']
         },
@@ -3226,7 +3226,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/747E15E4A659084E3B2E44D0B22EC7E50CBB0E2B9D436B94F3D1936B63D97534',
+      base: 'ibc/191E60A9919C6352F34DF2BBC3F88D0564D7740DCD374C1BDA0C8AD9F24ED960',
       name: 'Cifer',
       display: 'cif',
       symbol: 'CIF',
@@ -3245,12 +3245,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-0',
+            channel_id: 'channel-1',
             base_denom: 'ucif',
             chain_name: 'cifer'
           },
           chain: {
-            channel_id: 'channel-0'
+            channel_id: 'channel-822'
           }
         }
       ]
@@ -5354,6 +5354,57 @@ const assets: AssetList = {
             channel_id: 'channel-1',
             base_denom:
               'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-207'
+          }
+        }
+      ]
+    },
+    {
+      type_asset: 'ics20',
+      description: 'USD Coin on Juno',
+      denom_units: [
+        {
+          denom:
+            'ibc/273A28E60CE3CEB0EB158864627F20A29C601E4E4BBB929782926DF9A399BF83',
+          exponent: 0,
+          aliases: [
+            'ibc/4A482FA914A4B9B05801ED81C33713899F322B24F76A06F4B8FE872485EA22FF'
+          ]
+        },
+        {
+          denom: 'usdc',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/273A28E60CE3CEB0EB158864627F20A29C601E4E4BBB929782926DF9A399BF83',
+      name: 'USD Coin',
+      display: 'usdc',
+      symbol: 'USDC',
+      coingecko_id: 'usd-coin',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+      },
+      images: [
+        {
+          image_sync: {
+            chain_name: 'noble',
+            base_denom: 'uusdc'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'ibc/4A482FA914A4B9B05801ED81C33713899F322B24F76A06F4B8FE872485EA22FF',
             chain_name: 'juno'
           },
           chain: {
@@ -22703,6 +22754,53 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-141'
           }
+        }
+      ]
+    },
+    {
+      description:
+        'Cvn is a Layer-1 blockchain built to deliver on the promise of DeFi',
+      denom_units: [
+        {
+          denom:
+            'ibc/900403CF84578F1C41B65EA24611CDD1637D7ABC5AE5BDE6D12F731DF8CBD916',
+          exponent: 0,
+          aliases: [
+            'ibc/D3FAF77F5DE21C18413B164751239BA7D521A9D8EA53BFE553AADF338A721480'
+          ]
+        },
+        {
+          denom: 'cvnt',
+          exponent: 18
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/900403CF84578F1C41B65EA24611CDD1637D7ABC5AE5BDE6D12F731DF8CBD916',
+      name: 'CVN',
+      display: 'cvnt',
+      symbol: 'CVN',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom:
+              'ibc/D3FAF77F5DE21C18413B164751239BA7D521A9D8EA53BFE553AADF338A721480',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-141'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg'
         }
       ]
     },

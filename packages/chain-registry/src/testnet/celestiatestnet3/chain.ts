@@ -36,6 +36,10 @@ const info: Chain = {
       {
         address: 'https://rpc-mocha-full.avril14th.org',
         provider: 'Avril 14th'
+      },
+      {
+        address: 'https://celestia-testnet-rpc.itrocket.net',
+        provider: '🚀ITRocket🚀'
       }
     ],
     rest: [
@@ -50,6 +54,10 @@ const info: Chain = {
       {
         address: 'https://api-mocha-full.avril14th.org',
         provider: 'Avril 14th'
+      },
+      {
+        address: 'https://celestia-testnet-api.itrocket.net',
+        provider: '🚀ITRocket🚀'
       }
     ],
     grpc: [
@@ -60,6 +68,10 @@ const info: Chain = {
       {
         address: 'grpc-mocha-full.avril14th.org',
         provider: 'Avril 14th'
+      },
+      {
+        address: 'celestia-testnet-grpc.itrocket.net:11090',
+        provider: '🚀ITRocket🚀'
       }
     ]
   },
@@ -68,6 +80,13 @@ const info: Chain = {
       kind: 'Mintscan',
       url: 'https://testnet.mintscan.io/celestia-testnet',
       tx_page: 'https://testnet.mintscan.io/celestia-testnet/txs/${txHash}'
+    },
+    {
+      kind: '🚀ITRocket🚀',
+      url: 'https://testnet.itrocket.net/celestia',
+      tx_page: 'https://testnet.itrocket.net/celestia/tx/${txHash}',
+      account_page:
+        'https://testnet.itrocket.net/celestia/account/${accountAddress}'
     }
   ]
 };
