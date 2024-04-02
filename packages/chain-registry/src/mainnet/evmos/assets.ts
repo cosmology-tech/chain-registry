@@ -32,7 +32,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://evmos.org/',
+        website: 'https://evmos.org/',
         twitter: 'https://twitter.com/EvmosOrg'
       }
     },

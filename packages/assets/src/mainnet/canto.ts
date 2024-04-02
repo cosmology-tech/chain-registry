@@ -557,7 +557,7 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
       },
       socials: {
-        webiste: 'https://www.composable.finance/',
+        website: 'https://www.composable.finance/',
         twitter: 'https://twitter.com/ComposableFin'
       }
     },
@@ -736,7 +736,7 @@ const assets: AssetList = {
       coingecko_id: 'osmosis',
       keywords: ['dex', 'staking'],
       socials: {
-        webiste: 'https://osmosis.zone',
+        website: 'https://osmosis.zone',
         twitter: 'https://twitter.com/osmosiszone'
       },
       traces: [
@@ -784,7 +784,7 @@ const assets: AssetList = {
       coingecko_id: 'ion',
       keywords: ['memecoin', 'defi'],
       socials: {
-        webiste: 'https://ion.wtf',
+        website: 'https://ion.wtf',
         twitter: 'https://twitter.com/_IONDAO'
       },
       traces: [
@@ -14572,6 +14572,48 @@ const assets: AssetList = {
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg'
+        }
+      ]
+    },
+    {
+      description: 'LAB - Everything is an Experiment',
+      denom_units: [
+        {
+          denom:
+            'ibc/F7EC3CE77AB008AE3EFCFEDBA1CD07E7306AAA0A8800FADD4B2F1725C0DADB6B',
+          exponent: 0,
+          aliases: ['factory/osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n/LAB']
+        },
+        {
+          denom: 'LAB',
+          exponent: 6
+        }
+      ],
+      address: 'osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n',
+      base: 'ibc/F7EC3CE77AB008AE3EFCFEDBA1CD07E7306AAA0A8800FADD4B2F1725C0DADB6B',
+      name: 'LAB',
+      display: 'LAB',
+      symbol: 'LAB',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/LAB.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/LAB.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-550',
+            base_denom:
+              'factory/osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n/LAB',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-5'
+          }
         }
       ]
     }

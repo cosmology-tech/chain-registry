@@ -41,11 +41,20 @@ const info: Chain = {
         provider: 'cvn.io'
       }
     ],
-    rest: [],
+    rest: [
+      {
+        address: 'https://api.cvn.io',
+        provider: 'cvn.io'
+      }
+    ],
     grpc: [
       {
         address: 'https://rest.consciousdao.com',
         provider: 'consciousdao.com'
+      },
+      {
+        address: 'https://grpc.cvn.io',
+        provider: 'cvn.io'
       }
     ],
     'evm-http-jsonrpc': [

@@ -32,7 +32,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://portal.dymension.xyz',
+        website: 'https://portal.dymension.xyz',
         twitter: 'https://twitter.com/dymension'
       }
     }

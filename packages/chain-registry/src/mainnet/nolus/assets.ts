@@ -31,7 +31,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://nolus.io/',
+        website: 'https://nolus.io/',
         twitter: 'https://twitter.com/NolusProtocol'
       }
     },

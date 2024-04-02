@@ -63,6 +63,14 @@ const info: Chain = {
       {
         address: 'https://lava-rpc.w3coins.io:443',
         provider: 'w3coins'
+      },
+      {
+        address: 'https://lava-rpc.finteh.org:443',
+        provider: 'finteh'
+      },
+      {
+        address: 'https://lava-rpc.y2.finance:443',
+        provider: 'YTWOFUND'
       }
     ],
     rest: [

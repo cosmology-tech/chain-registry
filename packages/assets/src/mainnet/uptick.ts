@@ -32,7 +32,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://cosmos.network',
+        website: 'https://cosmos.network',
         twitter: 'https://twitter.com/cosmoshub'
       },
       traces: [

@@ -32,7 +32,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.kava.io/',
+        website: 'https://www.kava.io/',
         twitter: 'https://twitter.com/KAVA_CHAIN'
       },
       traces: [

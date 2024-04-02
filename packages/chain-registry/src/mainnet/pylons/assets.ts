@@ -28,7 +28,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://pylons.tech',
+        website: 'https://pylons.tech',
         twitter: 'https://twitter.com/pylonstech'
       }
     }

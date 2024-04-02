@@ -35,7 +35,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://archway.io/',
+        website: 'https://archway.io/',
         twitter: 'https://twitter.com/archwayHQ'
       }
     },

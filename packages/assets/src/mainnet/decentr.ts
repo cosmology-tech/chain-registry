@@ -36,7 +36,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://archway.io/',
+        website: 'https://archway.io/',
         twitter: 'https://twitter.com/archwayHQ'
       },
       traces: [
@@ -184,7 +184,7 @@ const assets: AssetList = {
       coingecko_id: 'osmosis',
       keywords: ['dex', 'staking'],
       socials: {
-        webiste: 'https://osmosis.zone',
+        website: 'https://osmosis.zone',
         twitter: 'https://twitter.com/osmosiszone'
       },
       traces: [
@@ -232,7 +232,7 @@ const assets: AssetList = {
       coingecko_id: 'ion',
       keywords: ['memecoin', 'defi'],
       socials: {
-        webiste: 'https://ion.wtf',
+        website: 'https://ion.wtf',
         twitter: 'https://twitter.com/_IONDAO'
       },
       traces: [
@@ -14024,6 +14024,48 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'LAB - Everything is an Experiment',
+      denom_units: [
+        {
+          denom:
+            'ibc/18B0967BE3E73DCCE3F10EDE6DEFC472AAA3339DBE536E77C0B8E7BCE2628966',
+          exponent: 0,
+          aliases: ['factory/osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n/LAB']
+        },
+        {
+          denom: 'LAB',
+          exponent: 6
+        }
+      ],
+      address: 'osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n',
+      base: 'ibc/18B0967BE3E73DCCE3F10EDE6DEFC472AAA3339DBE536E77C0B8E7BCE2628966',
+      name: 'LAB',
+      display: 'LAB',
+      symbol: 'LAB',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/LAB.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/LAB.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-181',
+            base_denom:
+              'factory/osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n/LAB',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-1'
+          }
+        }
+      ]
+    },
+    {
       description: 'DVPN is the native token of the Sentinel Hub.',
       denom_units: [
         {
@@ -14053,7 +14095,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.sentinel.co/',
+        website: 'https://www.sentinel.co/',
         twitter: 'https://twitter.com/SentinelVPN'
       },
       traces: [
@@ -14100,7 +14142,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.terra.money/',
+        website: 'https://www.terra.money/',
         twitter: 'https://twitter.com/terra_money'
       },
       traces: [

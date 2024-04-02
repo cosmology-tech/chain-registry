@@ -31,8 +31,8 @@ const info: Chain = {
     ]
   },
   codebase: {
-    cosmos_sdk_version: '0.45.16',
-    cosmwasm_version: '0.33.0'
+    cosmos_sdk_version: 'xpladev/cosmos-sdk v0.45.20-xpla',
+    cosmwasm_version: 'v0.33.0'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xpla/images/xpla.png',

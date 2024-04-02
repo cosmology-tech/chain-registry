@@ -31,7 +31,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://axelar.network/',
+        website: 'https://axelar.network/',
         twitter: 'https://twitter.com/axelarnetwork'
       }
     },

@@ -33,7 +33,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://agoric.com/',
+        website: 'https://agoric.com/',
         twitter: 'https://twitter.com/agoric'
       },
       traces: [
@@ -125,7 +125,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://akash.network/',
+        website: 'https://akash.network/',
         twitter: 'https://twitter.com/akashnet_'
       },
       traces: [
@@ -265,7 +265,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://archway.io/',
+        website: 'https://archway.io/',
         twitter: 'https://twitter.com/archwayHQ'
       },
       traces: [
@@ -411,7 +411,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://axelar.network/',
+        website: 'https://axelar.network/',
         twitter: 'https://twitter.com/axelarnetwork'
       },
       traces: [
@@ -1868,7 +1868,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://celestia.org/',
+        website: 'https://celestia.org/',
         twitter: 'https://twitter.com/CelestiaOrg'
       },
       traces: [
@@ -2403,7 +2403,7 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
       },
       socials: {
-        webiste: 'https://www.composable.finance/',
+        website: 'https://www.composable.finance/',
         twitter: 'https://twitter.com/ComposableFin'
       }
     },
@@ -2673,7 +2673,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://cosmos.network',
+        website: 'https://cosmos.network',
         twitter: 'https://twitter.com/cosmoshub'
       },
       traces: [
@@ -2901,7 +2901,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://portal.dymension.xyz',
+        website: 'https://portal.dymension.xyz',
         twitter: 'https://twitter.com/dymension'
       },
       traces: [
@@ -2949,7 +2949,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://evmos.org/',
+        website: 'https://evmos.org/',
         twitter: 'https://twitter.com/EvmosOrg'
       },
       traces: [
@@ -3130,7 +3130,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.gravitybridge.net/',
+        website: 'https://www.gravitybridge.net/',
         twitter: 'https://twitter.com/gravity_bridge'
       },
       traces: [
@@ -3564,7 +3564,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://injective.com/',
+        website: 'https://injective.com/',
         twitter: 'https://twitter.com/Injective_'
       },
       traces: [
@@ -3892,7 +3892,7 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
       },
       socials: {
-        webiste: 'https://gelotto.io/',
+        website: 'https://gelotto.io/',
         twitter: 'https://twitter.com/Gelotto2'
       }
     },
@@ -4112,7 +4112,7 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
       },
       socials: {
-        webiste: 'https://gelotto.io/',
+        website: 'https://gelotto.io/',
         twitter: 'https://twitter.com/Gelotto2'
       }
     },
@@ -4189,7 +4189,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://junonetwork.io/',
+        website: 'https://junonetwork.io/',
         twitter: 'https://twitter.com/JunoNetwork'
       },
       traces: [
@@ -4467,7 +4467,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://kujira.network/',
+        website: 'https://kujira.network/',
         twitter: 'https://twitter.com/TeamKujira'
       },
       traces: [
@@ -6460,7 +6460,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://neutron.org/',
+        website: 'https://neutron.org/',
         twitter: 'https://twitter.com/Neutron_org'
       },
       traces: [
@@ -7825,7 +7825,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://nolus.io/',
+        website: 'https://nolus.io/',
         twitter: 'https://twitter.com/NolusProtocol'
       },
       traces: [
@@ -8934,7 +8934,7 @@ const assets: AssetList = {
       coingecko_id: 'osmosis',
       keywords: ['dex', 'staking'],
       socials: {
-        webiste: 'https://osmosis.zone',
+        website: 'https://osmosis.zone',
         twitter: 'https://twitter.com/osmosiszone'
       },
       traces: [
@@ -8982,7 +8982,7 @@ const assets: AssetList = {
       coingecko_id: 'ion',
       keywords: ['memecoin', 'defi'],
       socials: {
-        webiste: 'https://ion.wtf',
+        website: 'https://ion.wtf',
         twitter: 'https://twitter.com/_IONDAO'
       },
       traces: [
@@ -22774,6 +22774,48 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'LAB - Everything is an Experiment',
+      denom_units: [
+        {
+          denom:
+            'ibc/18B0967BE3E73DCCE3F10EDE6DEFC472AAA3339DBE536E77C0B8E7BCE2628966',
+          exponent: 0,
+          aliases: ['factory/osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n/LAB']
+        },
+        {
+          denom: 'LAB',
+          exponent: 6
+        }
+      ],
+      address: 'osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n',
+      base: 'ibc/18B0967BE3E73DCCE3F10EDE6DEFC472AAA3339DBE536E77C0B8E7BCE2628966',
+      name: 'LAB',
+      display: 'LAB',
+      symbol: 'LAB',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/LAB.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/LAB.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-88',
+            base_denom:
+              'factory/osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n/LAB',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-1'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The XPRT token is primarily a governance token for the Persistence chain.',
       denom_units: [
@@ -22804,7 +22846,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://persistence.one/',
+        website: 'https://persistence.one/',
         twitter: 'https://twitter.com/PersistenceOne'
       },
       traces: [
@@ -23463,7 +23505,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://quicksilver.zone/',
+        website: 'https://quicksilver.zone/',
         twitter: 'https://twitter.com/quicksilverzone'
       },
       traces: [
@@ -23725,7 +23767,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.sentinel.co/',
+        website: 'https://www.sentinel.co/',
         twitter: 'https://twitter.com/SentinelVPN'
       },
       traces: [
@@ -23816,7 +23858,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.stargaze.zone/',
+        website: 'https://www.stargaze.zone/',
         twitter: 'https://twitter.com/StargazeZone'
       },
       traces: [
@@ -24089,7 +24131,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://stride.zone/',
+        website: 'https://stride.zone/',
         twitter: 'https://twitter.com/stride_zone'
       },
       traces: [
@@ -26084,7 +26126,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.terra.money/',
+        website: 'https://www.terra.money/',
         twitter: 'https://twitter.com/terra_money'
       },
       traces: [
@@ -29840,7 +29882,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://astroport.finance/',
+        website: 'https://astroport.finance/',
         twitter: 'https://twitter.com/astroport_fi'
       },
       traces: [
@@ -31014,6 +31056,54 @@ const assets: AssetList = {
             channel_id: 'channel-382',
             base_denom:
               'cw20:terra1sxe8u2hjczlekwfkcq0rs28egt38pg3wqzfx4zcrese4fnvzzupsk9gjkq',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-127'
+          }
+        }
+      ]
+    },
+    {
+      description: '',
+      type_asset: 'cw20',
+      address:
+        'terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj',
+      denom_units: [
+        {
+          denom:
+            'ibc/023202E278EBF1F6BBC3DEB6B890502C08896CE21CFEA69A6D28455EF33697E1',
+          exponent: 0,
+          aliases: [
+            'cw20:terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj'
+          ]
+        },
+        {
+          denom: 'lads',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/023202E278EBF1F6BBC3DEB6B890502C08896CE21CFEA69A6D28455EF33697E1',
+      name: 'LADS',
+      display: 'lads',
+      symbol: 'LADS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/LADS.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/LADS.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au',
+            channel_id: 'channel-382',
+            base_denom:
+              'cw20:terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj',
             chain_name: 'terra2'
           },
           chain: {

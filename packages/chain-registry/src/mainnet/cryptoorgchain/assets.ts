@@ -33,7 +33,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://cronos.org/',
+        website: 'https://cronos.org/',
         twitter: 'https://twitter.com/cronos_chain'
       }
     },

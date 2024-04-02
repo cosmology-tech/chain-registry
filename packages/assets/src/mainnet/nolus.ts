@@ -76,7 +76,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://neutron.org/',
+        website: 'https://neutron.org/',
         twitter: 'https://twitter.com/Neutron_org'
       },
       traces: [
@@ -1268,7 +1268,7 @@ const assets: AssetList = {
       coingecko_id: 'osmosis',
       keywords: ['dex', 'staking'],
       socials: {
-        webiste: 'https://osmosis.zone',
+        website: 'https://osmosis.zone',
         twitter: 'https://twitter.com/osmosiszone'
       },
       traces: [
@@ -1316,7 +1316,7 @@ const assets: AssetList = {
       coingecko_id: 'ion',
       keywords: ['memecoin', 'defi'],
       socials: {
-        webiste: 'https://ion.wtf',
+        website: 'https://ion.wtf',
         twitter: 'https://twitter.com/_IONDAO'
       },
       traces: [
@@ -15108,6 +15108,48 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'LAB - Everything is an Experiment',
+      denom_units: [
+        {
+          denom:
+            'ibc/93B1AE0AD5E88242745B245064A2A51DDA1319C18176A966D5F8F9E02ED5373E',
+          exponent: 0,
+          aliases: ['factory/osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n/LAB']
+        },
+        {
+          denom: 'LAB',
+          exponent: 6
+        }
+      ],
+      address: 'osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n',
+      base: 'ibc/93B1AE0AD5E88242745B245064A2A51DDA1319C18176A966D5F8F9E02ED5373E',
+      name: 'LAB',
+      display: 'LAB',
+      symbol: 'LAB',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/LAB.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/LAB.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-783',
+            base_denom:
+              'factory/osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n/LAB',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-0'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Secret Network',
       denom_units: [
         {
@@ -15137,7 +15179,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://scrt.network/',
+        website: 'https://scrt.network/',
         twitter: 'https://twitter.com/SecretNetwork'
       },
       traces: [

@@ -31,7 +31,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.sei.io/',
+        website: 'https://www.sei.io/',
         twitter: 'https://twitter.com/SeiNetwork'
       }
     },

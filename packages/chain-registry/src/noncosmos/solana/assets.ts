@@ -195,7 +195,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.bskt.fi/',
+        website: 'https://www.bskt.fi/',
         twitter: 'https://twitter.com/bsktfi'
       }
     }

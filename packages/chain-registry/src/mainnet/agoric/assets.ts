@@ -32,7 +32,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://agoric.com/',
+        website: 'https://agoric.com/',
         twitter: 'https://twitter.com/agoric'
       }
     },

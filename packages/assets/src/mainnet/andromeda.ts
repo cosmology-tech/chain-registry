@@ -36,7 +36,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://archway.io/',
+        website: 'https://archway.io/',
         twitter: 'https://twitter.com/archwayHQ'
       },
       traces: [
@@ -183,7 +183,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://injective.com/',
+        website: 'https://injective.com/',
         twitter: 'https://twitter.com/Injective_'
       },
       traces: [
@@ -511,7 +511,7 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
       },
       socials: {
-        webiste: 'https://gelotto.io/',
+        website: 'https://gelotto.io/',
         twitter: 'https://twitter.com/Gelotto2'
       }
     },
@@ -731,7 +731,7 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
       },
       socials: {
-        webiste: 'https://gelotto.io/',
+        website: 'https://gelotto.io/',
         twitter: 'https://twitter.com/Gelotto2'
       }
     },
@@ -766,7 +766,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://kujira.network/',
+        website: 'https://kujira.network/',
         twitter: 'https://twitter.com/TeamKujira'
       },
       traces: [
@@ -2232,7 +2232,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://scrt.network/',
+        website: 'https://scrt.network/',
         twitter: 'https://twitter.com/SecretNetwork'
       },
       traces: [
@@ -2279,7 +2279,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.terra.money/',
+        website: 'https://www.terra.money/',
         twitter: 'https://twitter.com/terra_money'
       },
       traces: [

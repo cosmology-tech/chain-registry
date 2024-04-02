@@ -31,7 +31,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.gravitybridge.net/',
+        website: 'https://www.gravitybridge.net/',
         twitter: 'https://twitter.com/gravity_bridge'
       }
     },

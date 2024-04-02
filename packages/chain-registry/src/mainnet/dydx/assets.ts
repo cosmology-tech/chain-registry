@@ -37,7 +37,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://dydx.trade/',
+        website: 'https://dydx.trade/',
         twitter: 'https://twitter.com/dYdX'
       }
     },

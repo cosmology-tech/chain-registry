@@ -43,7 +43,7 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
       },
       socials: {
-        webiste: 'https://www.composable.finance/',
+        website: 'https://www.composable.finance/',
         twitter: 'https://twitter.com/ComposableFin'
       }
     },

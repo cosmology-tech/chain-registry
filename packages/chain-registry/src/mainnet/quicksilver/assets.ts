@@ -31,7 +31,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://quicksilver.zone/',
+        website: 'https://quicksilver.zone/',
         twitter: 'https://twitter.com/quicksilverzone'
       }
     },

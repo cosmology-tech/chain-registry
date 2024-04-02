@@ -32,7 +32,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.quasar.fi/',
+        website: 'https://www.quasar.fi/',
         twitter: 'https://twitter.com/QuasarFi'
       }
     },

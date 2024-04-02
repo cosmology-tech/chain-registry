@@ -31,7 +31,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.assetmantle.one/',
+        website: 'https://www.assetmantle.one/',
         twitter: 'https://twitter.com/AssetMantle'
       }
     }

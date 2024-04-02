@@ -32,7 +32,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://bitsong.io/',
+        website: 'https://bitsong.io/',
         twitter: 'https://twitter.com/BitSongOfficial'
       }
     },

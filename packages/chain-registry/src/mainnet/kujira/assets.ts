@@ -32,7 +32,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://kujira.network/',
+        website: 'https://kujira.network/',
         twitter: 'https://twitter.com/TeamKujira'
       }
     },

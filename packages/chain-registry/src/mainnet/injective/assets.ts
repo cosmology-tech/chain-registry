@@ -32,7 +32,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://injective.com/',
+        website: 'https://injective.com/',
         twitter: 'https://twitter.com/Injective_'
       }
     },
@@ -273,7 +273,7 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
       },
       socials: {
-        webiste: 'https://gelotto.io/',
+        website: 'https://gelotto.io/',
         twitter: 'https://twitter.com/Gelotto2'
       }
     },
@@ -440,7 +440,7 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
       },
       socials: {
-        webiste: 'https://gelotto.io/',
+        website: 'https://gelotto.io/',
         twitter: 'https://twitter.com/Gelotto2'
       }
     }

@@ -56,6 +56,10 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
+        address: 'https://persistence.rpc.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://persistence-rpc.polkachu.com',
         provider: 'Polkachu'
       },
@@ -128,6 +132,10 @@ const info: Chain = {
       {
         address: 'https://api-persistent-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
+      },
+      {
+        address: 'https://persistence.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'https://persistence-api.polkachu.com',
@@ -204,6 +212,10 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
+        address: 'persistence.grpc.m.stavr.tech:410',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'persistence-grpc.polkachu.com:15490',
         provider: 'Polkachu'
       },
@@ -264,6 +276,11 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.pub/persistence',
       tx_page: 'https://ping.pub/persistence/tx/${txHash}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Persistence-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Persistence-Mainnet/tx/${txHash}'
     },
     {
       kind: 'atomscan',

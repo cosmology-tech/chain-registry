@@ -39,7 +39,7 @@ const info: AssetList = {
         'incentivized public rpc'
       ],
       socials: {
-        webiste: 'https://lavanet.xyz',
+        website: 'https://lavanet.xyz',
         twitter: 'https://twitter.com/lavanetxyz'
       }
     }

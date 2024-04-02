@@ -30,7 +30,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://scorum.com',
+        website: 'https://scorum.com',
         twitter: 'https://twitter.com/scorum_en'
       }
     },

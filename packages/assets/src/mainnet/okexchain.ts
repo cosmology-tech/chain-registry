@@ -32,7 +32,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.assetmantle.one/',
+        website: 'https://www.assetmantle.one/',
         twitter: 'https://twitter.com/AssetMantle'
       },
       traces: [
@@ -466,7 +466,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://junonetwork.io/',
+        website: 'https://junonetwork.io/',
         twitter: 'https://twitter.com/JunoNetwork'
       },
       traces: [

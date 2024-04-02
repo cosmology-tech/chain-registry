@@ -32,7 +32,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://akash.network/',
+        website: 'https://akash.network/',
         twitter: 'https://twitter.com/akashnet_'
       }
     },

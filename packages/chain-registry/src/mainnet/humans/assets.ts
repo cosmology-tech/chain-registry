@@ -34,7 +34,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://humans.ai/',
+        website: 'https://humans.ai/',
         twitter: 'https://twitter.com/humansdotai'
       }
     }

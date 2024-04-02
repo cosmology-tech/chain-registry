@@ -31,7 +31,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.kyve.network/',
+        website: 'https://www.kyve.network/',
         twitter: 'https://twitter.com/KYVENetwork'
       }
     }

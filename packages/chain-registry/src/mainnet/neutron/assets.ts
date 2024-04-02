@@ -31,7 +31,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://neutron.org/',
+        website: 'https://neutron.org/',
         twitter: 'https://twitter.com/Neutron_org'
       }
     },

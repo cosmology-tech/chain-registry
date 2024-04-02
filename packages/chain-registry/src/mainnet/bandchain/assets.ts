@@ -31,7 +31,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.bandprotocol.com/',
+        website: 'https://www.bandprotocol.com/',
         twitter: 'https://twitter.com/BandProtocol'
       }
     }

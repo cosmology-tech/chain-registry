@@ -31,7 +31,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://stride.zone/',
+        website: 'https://stride.zone/',
         twitter: 'https://twitter.com/stride_zone'
       }
     },

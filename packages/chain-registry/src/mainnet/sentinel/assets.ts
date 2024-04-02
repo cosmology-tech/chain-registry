@@ -31,7 +31,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.sentinel.co/',
+        website: 'https://www.sentinel.co/',
         twitter: 'https://twitter.com/SentinelVPN'
       }
     }

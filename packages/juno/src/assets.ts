@@ -31,7 +31,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://junonetwork.io/',
+        website: 'https://junonetwork.io/',
         twitter: 'https://twitter.com/JunoNetwork'
       }
     },

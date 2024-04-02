@@ -33,7 +33,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.sourceprotocol.io/',
+        website: 'https://www.sourceprotocol.io/',
         twitter: 'https://twitter.com/sourceprotocol_'
       }
     },

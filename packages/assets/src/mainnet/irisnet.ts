@@ -33,7 +33,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://akash.network/',
+        website: 'https://akash.network/',
         twitter: 'https://twitter.com/akashnet_'
       },
       traces: [
@@ -638,7 +638,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://cosmos.network',
+        website: 'https://cosmos.network',
         twitter: 'https://twitter.com/cosmoshub'
       },
       traces: [
@@ -867,7 +867,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://cronos.org/',
+        website: 'https://cronos.org/',
         twitter: 'https://twitter.com/cronos_chain'
       },
       traces: [
@@ -1262,7 +1262,7 @@ const assets: AssetList = {
       coingecko_id: 'osmosis',
       keywords: ['dex', 'staking'],
       socials: {
-        webiste: 'https://osmosis.zone',
+        website: 'https://osmosis.zone',
         twitter: 'https://twitter.com/osmosiszone'
       },
       traces: [
@@ -1310,7 +1310,7 @@ const assets: AssetList = {
       coingecko_id: 'ion',
       keywords: ['memecoin', 'defi'],
       socials: {
-        webiste: 'https://ion.wtf',
+        website: 'https://ion.wtf',
         twitter: 'https://twitter.com/_IONDAO'
       },
       traces: [
@@ -15102,6 +15102,48 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'LAB - Everything is an Experiment',
+      denom_units: [
+        {
+          denom:
+            'ibc/1DD53FA604F486331278F5002E6CBAC91D779C4DB0E882BE0FA125A78235D48F',
+          exponent: 0,
+          aliases: ['factory/osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n/LAB']
+        },
+        {
+          denom: 'LAB',
+          exponent: 6
+        }
+      ],
+      address: 'osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n',
+      base: 'ibc/1DD53FA604F486331278F5002E6CBAC91D779C4DB0E882BE0FA125A78235D48F',
+      name: 'LAB',
+      display: 'LAB',
+      symbol: 'LAB',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/LAB.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/LAB.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom:
+              'factory/osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n/LAB',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-3'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The XPRT token is primarily a governance token for the Persistence chain.',
       denom_units: [
@@ -15132,7 +15174,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://persistence.one/',
+        website: 'https://persistence.one/',
         twitter: 'https://twitter.com/PersistenceOne'
       },
       traces: [
@@ -15792,7 +15834,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.regen.network/',
+        website: 'https://www.regen.network/',
         twitter: 'https://twitter.com/regen_network'
       },
       traces: [
@@ -15883,7 +15925,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.sentinel.co/',
+        website: 'https://www.sentinel.co/',
         twitter: 'https://twitter.com/SentinelVPN'
       },
       traces: [
@@ -16180,7 +16222,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://app.starname.me/',
+        website: 'https://app.starname.me/',
         twitter: 'https://twitter.com/starname_me'
       },
       traces: [

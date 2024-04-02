@@ -34,7 +34,7 @@ const info: AssetList = {
       ],
       coingecko_id: 'gitopia',
       socials: {
-        webiste: 'https://gitopia.com/',
+        website: 'https://gitopia.com/',
         twitter: 'https://twitter.com/gitopiaDAO'
       }
     }

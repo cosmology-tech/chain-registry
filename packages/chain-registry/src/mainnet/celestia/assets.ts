@@ -31,7 +31,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://celestia.org/',
+        website: 'https://celestia.org/',
         twitter: 'https://twitter.com/CelestiaOrg'
       }
     }

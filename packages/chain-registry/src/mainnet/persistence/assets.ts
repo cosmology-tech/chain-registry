@@ -32,7 +32,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://persistence.one/',
+        website: 'https://persistence.one/',
         twitter: 'https://twitter.com/PersistenceOne'
       }
     },

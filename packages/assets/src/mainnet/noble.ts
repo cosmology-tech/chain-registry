@@ -33,7 +33,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://agoric.com/',
+        website: 'https://agoric.com/',
         twitter: 'https://twitter.com/agoric'
       },
       traces: [
@@ -128,7 +128,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://archway.io/',
+        website: 'https://archway.io/',
         twitter: 'https://twitter.com/archwayHQ'
       },
       traces: [
@@ -410,7 +410,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://cosmos.network',
+        website: 'https://cosmos.network',
         twitter: 'https://twitter.com/cosmoshub'
       },
       traces: [
@@ -643,7 +643,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://dydx.trade/',
+        website: 'https://dydx.trade/',
         twitter: 'https://twitter.com/dYdX'
       },
       traces: [
@@ -741,7 +741,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://portal.dymension.xyz',
+        website: 'https://portal.dymension.xyz',
         twitter: 'https://twitter.com/dymension'
       },
       traces: [
@@ -789,7 +789,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://evmos.org/',
+        website: 'https://evmos.org/',
         twitter: 'https://twitter.com/EvmosOrg'
       },
       traces: [
@@ -1108,7 +1108,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://injective.com/',
+        website: 'https://injective.com/',
         twitter: 'https://twitter.com/Injective_'
       },
       traces: [
@@ -1436,7 +1436,7 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
       },
       socials: {
-        webiste: 'https://gelotto.io/',
+        website: 'https://gelotto.io/',
         twitter: 'https://twitter.com/Gelotto2'
       }
     },
@@ -1656,7 +1656,7 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
       },
       socials: {
-        webiste: 'https://gelotto.io/',
+        website: 'https://gelotto.io/',
         twitter: 'https://twitter.com/Gelotto2'
       }
     },
@@ -1690,7 +1690,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://junonetwork.io/',
+        website: 'https://junonetwork.io/',
         twitter: 'https://twitter.com/JunoNetwork'
       },
       traces: [
@@ -1968,7 +1968,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://kujira.network/',
+        website: 'https://kujira.network/',
         twitter: 'https://twitter.com/TeamKujira'
       },
       traces: [
@@ -3961,7 +3961,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://neutron.org/',
+        website: 'https://neutron.org/',
         twitter: 'https://twitter.com/Neutron_org'
       },
       traces: [
@@ -5194,7 +5194,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://omniflix.network/',
+        website: 'https://omniflix.network/',
         twitter: 'https://twitter.com/OmniFlixNetwork'
       },
       traces: [
@@ -5408,6 +5408,57 @@ const assets: AssetList = {
       }
     },
     {
+      description:
+        "Akash Token (AKT) is the Akash Network's native utility token",
+      denom_units: [
+        {
+          denom:
+            'ibc/88283698014053329C72200C578011B129091FF60996FE956E3DAB69D4A7592E',
+          exponent: 0,
+          aliases: [
+            'ibc/6901B45BC2C5418ED8B3C3C9F9A641A3DAF2D234230AFA9DF32D8F9F9434721C'
+          ]
+        },
+        {
+          denom: 'akt',
+          exponent: 6
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/88283698014053329C72200C578011B129091FF60996FE956E3DAB69D4A7592E',
+      name: 'Akash',
+      display: 'akt',
+      symbol: 'AKT',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-38',
+            base_denom:
+              'ibc/6901B45BC2C5418ED8B3C3C9F9A641A3DAF2D234230AFA9DF32D8F9F9434721C',
+            chain_name: 'omniflixhub'
+          },
+          chain: {
+            channel_id: 'channel-44'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
+      },
+      images: [
+        {
+          image_sync: {
+            chain_name: 'akash',
+            base_denom: 'uakt'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
+        }
+      ]
+    },
+    {
       denom_units: [
         {
           denom:
@@ -5491,7 +5542,7 @@ const assets: AssetList = {
       coingecko_id: 'osmosis',
       keywords: ['dex', 'staking'],
       socials: {
-        webiste: 'https://osmosis.zone',
+        website: 'https://osmosis.zone',
         twitter: 'https://twitter.com/osmosiszone'
       },
       traces: [
@@ -5539,7 +5590,7 @@ const assets: AssetList = {
       coingecko_id: 'ion',
       keywords: ['memecoin', 'defi'],
       socials: {
-        webiste: 'https://ion.wtf',
+        website: 'https://ion.wtf',
         twitter: 'https://twitter.com/_IONDAO'
       },
       traces: [
@@ -19331,6 +19382,48 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'LAB - Everything is an Experiment',
+      denom_units: [
+        {
+          denom:
+            'ibc/18B0967BE3E73DCCE3F10EDE6DEFC472AAA3339DBE536E77C0B8E7BCE2628966',
+          exponent: 0,
+          aliases: ['factory/osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n/LAB']
+        },
+        {
+          denom: 'LAB',
+          exponent: 6
+        }
+      ],
+      address: 'osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n',
+      base: 'ibc/18B0967BE3E73DCCE3F10EDE6DEFC472AAA3339DBE536E77C0B8E7BCE2628966',
+      name: 'LAB',
+      display: 'LAB',
+      symbol: 'LAB',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/LAB.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/LAB.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-750',
+            base_denom:
+              'factory/osmo17fel472lgzs87ekt9dvk0zqyh5gl80sqp4sk4n/LAB',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-1'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The XPRT token is primarily a governance token for the Persistence chain.',
       denom_units: [
@@ -19361,7 +19454,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://persistence.one/',
+        website: 'https://persistence.one/',
         twitter: 'https://twitter.com/PersistenceOne'
       },
       traces: [
@@ -20064,7 +20157,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://scrt.network/',
+        website: 'https://scrt.network/',
         twitter: 'https://twitter.com/SecretNetwork'
       },
       traces: [
@@ -20111,7 +20204,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.sei.io/',
+        website: 'https://www.sei.io/',
         twitter: 'https://twitter.com/SeiNetwork'
       },
       traces: [
@@ -20420,7 +20513,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.stargaze.zone/',
+        website: 'https://www.stargaze.zone/',
         twitter: 'https://twitter.com/StargazeZone'
       },
       traces: [
@@ -20990,7 +21083,7 @@ const assets: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.terra.money/',
+        website: 'https://www.terra.money/',
         twitter: 'https://twitter.com/terra_money'
       },
       traces: [

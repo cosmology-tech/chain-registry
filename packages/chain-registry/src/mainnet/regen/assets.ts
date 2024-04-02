@@ -31,7 +31,7 @@ const info: AssetList = {
         }
       ],
       socials: {
-        webiste: 'https://www.regen.network/',
+        website: 'https://www.regen.network/',
         twitter: 'https://twitter.com/regen_network'
       }
     },

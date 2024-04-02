@@ -2,7 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'akiro',
-  status: 'live',
+  status: 'killed',
   network_type: 'mainnet',
   pretty_name: 'Akiro',
   chain_id: 'akiro-1',
