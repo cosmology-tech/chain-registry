@@ -16,6 +16,7 @@ export * as solana from './solana';
 export * as statemine from './statemine';
 export * as stellar from './stellar';
 export * as sui from './sui';
+export * as tinkernet from './tinkernet';
 export * as xrpl from './xrpl';
 export * as avalanchetestnet from './avalanchetestnet';
 export * as binancesmartchaintestnet from './binancesmartchaintestnet';

@@ -76,6 +76,10 @@ const info: Chain = {
       {
         address: 'https://realio.declab.pro:26622',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'https://realio-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -114,6 +118,10 @@ const info: Chain = {
       {
         address: 'https://realio.declab.pro:443',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'https://realio-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -152,6 +160,10 @@ const info: Chain = {
       {
         address: 'https://realio.declab.pro:9015',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'realio-grpc.noders.services:22090',
+        provider: '[NODERS]TEAM'
       }
     ],
     'evm-http-jsonrpc': [
@@ -170,6 +182,10 @@ const info: Chain = {
       {
         address: 'https://evm.realio.safeblock.space',
         provider: 'Safe Block'
+      },
+      {
+        address: 'https://realio-jsonrpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

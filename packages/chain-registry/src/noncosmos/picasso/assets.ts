@@ -141,6 +141,44 @@ const info: AssetList = {
           }
         }
       ]
+    },
+    {
+      denom_units: [
+        {
+          denom: '2125',
+          exponent: 0
+        },
+        {
+          denom: 'TNKR',
+          exponent: 12
+        }
+      ],
+      base: '2125',
+      name: 'Tinkernet',
+      display: 'TNKR',
+      symbol: 'TNKR',
+      traces: [
+        {
+          type: 'bridge',
+          counterparty: {
+            chain_name: 'tinkernet',
+            base_denom: 'Planck'
+          },
+          provider: 'Tinkernet Parachain'
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'tinkernet',
+            base_denom: 'Planck'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tinkernet/images/tnkr.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tinkernet/images/tnkr.svg'
+      }
     }
   ]
 };

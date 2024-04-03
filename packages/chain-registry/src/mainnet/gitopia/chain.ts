@@ -164,6 +164,10 @@ const info: Chain = {
       {
         address: 'https://gitopia.declab.pro:26625',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'https://gitopia-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -290,6 +294,10 @@ const info: Chain = {
       {
         address: 'https://gitopia.declab.pro:443',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'https://gitopia-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -408,6 +416,10 @@ const info: Chain = {
       {
         address: 'https://gitopia.declab.pro:9017',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'gitopia-grpc.noders.services:19090',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

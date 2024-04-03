@@ -49,6 +49,10 @@ const info: Chain = {
       {
         address: 'https://rpc.zetachain.nodestake.org',
         provider: 'NodeStake'
+      },
+      {
+        address: 'https://zetachain-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -67,6 +71,10 @@ const info: Chain = {
       {
         address: 'https://api.zetachain.nodestake.org',
         provider: 'NodeStake'
+      },
+      {
+        address: 'https://zetachain-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -77,6 +85,10 @@ const info: Chain = {
       {
         address: 'https://grpc.zetachain.nodestake.org:443',
         provider: 'NodeStake'
+      },
+      {
+        address: 'zetachain-grpc.noders.services:28090',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

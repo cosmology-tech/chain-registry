@@ -86,6 +86,10 @@ const info: Chain = {
       {
         address: 'https://rpc.injective.bronbro.io/',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://injective-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -136,6 +140,10 @@ const info: Chain = {
       {
         address: 'https://lcd.injective.bronbro.io/',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://injective-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -191,6 +199,10 @@ const info: Chain = {
       {
         address: 'grpc.injective.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'injective-grpc.noders.services:33090',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

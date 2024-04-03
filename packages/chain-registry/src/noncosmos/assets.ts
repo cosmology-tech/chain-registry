@@ -18,6 +18,7 @@ import * as _solana from './solana';
 import * as _statemine from './statemine';
 import * as _stellar from './stellar';
 import * as _sui from './sui';
+import * as _tinkernet from './tinkernet';
 import * as _xrpl from './xrpl';
 import * as _avalanchetestnet from './avalanchetestnet';
 import * as _binancesmartchaintestnet from './binancesmartchaintestnet';
@@ -47,6 +48,7 @@ const assets: AssetList[] = [
   _statemine.assets,
   _stellar.assets,
   _sui.assets,
+  _tinkernet.assets,
   _xrpl.assets,
   _avalanchetestnet.assets,
   _binancesmartchaintestnet.assets,

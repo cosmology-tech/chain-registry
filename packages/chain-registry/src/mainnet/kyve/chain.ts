@@ -80,6 +80,10 @@ const info: Chain = {
       {
         address: 'https://kyve.declab.pro:26616',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'https://kyve-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -122,6 +126,10 @@ const info: Chain = {
       {
         address: 'https://kyve.declab.pro:443',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'https://kyve-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -152,6 +160,10 @@ const info: Chain = {
       {
         address: 'https://kyve.declab.pro:9011',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'kyve-grpc.noders.services:15090',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

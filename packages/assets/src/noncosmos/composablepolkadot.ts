@@ -166,6 +166,49 @@ const assets: AssetList = {
           }
         }
       ]
+    },
+    {
+      denom_units: [
+        {
+          denom:
+            'ibc/496422C50CB1E12B1618C3CA706B5FF06821ACEB22DB9E834D9F55F37A644B8C',
+          exponent: 0,
+          aliases: ['2125']
+        },
+        {
+          denom: 'TNKR',
+          exponent: 12
+        }
+      ],
+      base: 'ibc/496422C50CB1E12B1618C3CA706B5FF06821ACEB22DB9E834D9F55F37A644B8C',
+      name: 'Tinkernet',
+      display: 'TNKR',
+      symbol: 'TNKR',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-15',
+            base_denom: '2125',
+            chain_name: 'picasso'
+          },
+          chain: {
+            channel_id: 'channel-15'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'tinkernet',
+            base_denom: 'Planck'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tinkernet/images/tnkr.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tinkernet/images/tnkr.svg'
+      }
     }
   ]
 };

@@ -93,6 +93,10 @@ const info: Chain = {
       {
         address: 'https://rpc.bitsong.mathnodes.com',
         provider: 'MathNodes'
+      },
+      {
+        address: 'https://bitsong-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -143,6 +147,10 @@ const info: Chain = {
       {
         address: 'https://api.bitsong.mathnodes.com',
         provider: 'MathNodes'
+      },
+      {
+        address: 'https://bitsong-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -169,6 +177,10 @@ const info: Chain = {
       {
         address: 'grpc.bitsong.mathnodes.com:9092',
         provider: 'MathNodes'
+      },
+      {
+        address: 'bitsong-grpc.noders.services:20090',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

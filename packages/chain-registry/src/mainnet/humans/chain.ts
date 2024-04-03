@@ -87,6 +87,10 @@ const info: Chain = {
       {
         address: 'https://rpc.humans.posthuman.digital',
         provider: 'posthuman'
+      },
+      {
+        address: 'https://humans-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -133,6 +137,10 @@ const info: Chain = {
       {
         address: 'https://rest.humans.posthuman.digital',
         provider: 'posthuman'
+      },
+      {
+        address: 'https://humans-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -167,6 +175,10 @@ const info: Chain = {
       {
         address: 'https://grpc-humans.cosmos-spaces.cloud:1190',
         provider: 'StakePool'
+      },
+      {
+        address: 'humans-grpc.noders.services:21090',
+        provider: '[NODERS]TEAM'
       }
     ],
     'evm-http-jsonrpc': [
@@ -193,6 +205,10 @@ const info: Chain = {
       {
         address: 'https://evm.humans.posthuman.digital',
         provider: 'posthuman'
+      },
+      {
+        address: 'https://humans-jsonrpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

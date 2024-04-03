@@ -72,6 +72,10 @@ const info: Chain = {
       {
         address: 'https://desmos.declab.pro:26613',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'https://desmos-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -106,6 +110,10 @@ const info: Chain = {
       {
         address: 'https://vidulum.declab.pro:443',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'https://desmos-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -140,6 +148,10 @@ const info: Chain = {
       {
         address: 'https://vidulum.declab.pro:9009',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'desmos-grpc.noders.services:27090',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

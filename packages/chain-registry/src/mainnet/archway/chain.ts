@@ -153,6 +153,10 @@ const info: Chain = {
       {
         address: 'https://rpc.archway.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://archway-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -255,6 +259,10 @@ const info: Chain = {
       {
         address: 'https://lcd.archway.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://archway-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -345,6 +353,10 @@ const info: Chain = {
       {
         address: 'https://grpc.archway.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'archway-grpc.noders.services:13090',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

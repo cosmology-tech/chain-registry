@@ -685,6 +685,53 @@ const assets: AssetList = {
       ]
     },
     {
+      description: '',
+      denom_units: [
+        {
+          denom:
+            'ibc/14D1406D84227FDF4B055EA5CB2298095BBCA3F3BC3EF583AE6DF36F0FB179C8',
+          exponent: 0,
+          aliases: ['utia']
+        },
+        {
+          denom: 'tia',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/14D1406D84227FDF4B055EA5CB2298095BBCA3F3BC3EF583AE6DF36F0FB179C8',
+      name: 'Celestia',
+      display: 'tia',
+      symbol: 'TIA',
+      coingecko_id: 'celestia',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png'
+        }
+      ],
+      socials: {
+        website: 'https://celestia.org/',
+        twitter: 'https://twitter.com/CelestiaOrg'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-33',
+            base_denom: 'utia',
+            chain_name: 'celestia'
+          },
+          chain: {
+            channel_id: 'channel-291'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native staking and governance token of Composable.',
       denom_units: [
         {
@@ -875,6 +922,55 @@ const assets: AssetList = {
           }
         }
       ]
+    },
+    {
+      description:
+        'The native fee, staking and governance token of the Tinkernet Parachain.',
+      denom_units: [
+        {
+          denom:
+            'ibc/4466B6680D2D7410603EC2D4E1C955D70568A015B167721284237A485D2D501A',
+          exponent: 0,
+          aliases: [
+            'ibc/C58E5D2571042137CB68B1B9851C4E7211C05F7C2C79E21E0966AF0F063961F8'
+          ]
+        },
+        {
+          denom: 'tnkr',
+          exponent: 12
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/4466B6680D2D7410603EC2D4E1C955D70568A015B167721284237A485D2D501A',
+      name: 'TNKR',
+      display: 'tnkr',
+      symbol: 'TNKR',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom:
+              'ibc/C58E5D2571042137CB68B1B9851C4E7211C05F7C2C79E21E0966AF0F063961F8',
+            chain_name: 'composable'
+          },
+          chain: {
+            channel_id: 'channel-184'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'picasso',
+            base_denom: '2125'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tinkernet/images/tnkr.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tinkernet/images/tnkr.svg'
+      }
     },
     {
       description: 'The native token of Crescent',
@@ -19335,11 +19431,13 @@ const assets: AssetList = {
       display: 'toro',
       symbol: 'TORO',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/toro.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/toro.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/toro.svg'
       },
       images: [
         {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/toro.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/toro.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/toro.svg'
         }
       ],
       traces: [
@@ -19564,6 +19662,94 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-0'
           }
+        }
+      ]
+    },
+    {
+      description:
+        'OnE mEmEcOiN tO cOnNeCt oL ImBeCiles - aNd in Da Cosmos BiNd DeM',
+      denom_units: [
+        {
+          denom:
+            'ibc/2C4FD60294AFF7A773489DDA68B91F190CB4E36F7BD7B1D6DBB65372856EC6C2',
+          exponent: 0,
+          aliases: ['factory/osmo1kqdw6pvn0xww6tyfv2sqvkkencdz0qw406x54r/IBC']
+        },
+        {
+          denom: 'IBC',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/2C4FD60294AFF7A773489DDA68B91F190CB4E36F7BD7B1D6DBB65372856EC6C2',
+      name: 'IBC',
+      display: 'IBC',
+      symbol: 'IBC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ibc.png'
+      },
+      coingecko_id: '',
+      keywords: ['memecoin'],
+      socials: {
+        webiste: 'https://www.ibcmeme.wtf',
+        twitter: 'https://twitter.com/IBCmemecoin'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-75',
+            base_denom:
+              'factory/osmo1kqdw6pvn0xww6tyfv2sqvkkencdz0qw406x54r/IBC',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-0'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'The native fee, governance and staking token of the Tinkernet Parachain.',
+      denom_units: [
+        {
+          denom:
+            'ibc/607C7EAB1F95A87ED83A7CCA4D7573107BDDF02A7308CB7F620BD21CD5FF1465',
+          exponent: 0,
+          aliases: [
+            'ibc/3A0A392E610A8D477851ABFEA74F3D828F36C015AB8E93B0FBB7566A6D13C4D6'
+          ]
+        },
+        {
+          denom: 'tnkr',
+          exponent: 12
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/607C7EAB1F95A87ED83A7CCA4D7573107BDDF02A7308CB7F620BD21CD5FF1465',
+      name: 'Tinkernet',
+      display: 'tnkr',
+      symbol: 'TNKR',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-75',
+            base_denom:
+              'ibc/3A0A392E610A8D477851ABFEA74F3D828F36C015AB8E93B0FBB7566A6D13C4D6',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-0'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tinkernet/images/tnkr.svg'
+      },
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tinkernet/images/tnkr.svg'
         }
       ]
     },

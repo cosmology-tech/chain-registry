@@ -195,6 +195,55 @@ const assets: AssetList = {
       ]
     },
     {
+      description:
+        'The native fee, staking and governance token of the Tinkernet Parachain.',
+      denom_units: [
+        {
+          denom:
+            'ibc/FFEBEADE598A15CD4407A40F4F2F7DAE0391FD458CBF036521F2A1651190495F',
+          exponent: 0,
+          aliases: [
+            'ibc/C58E5D2571042137CB68B1B9851C4E7211C05F7C2C79E21E0966AF0F063961F8'
+          ]
+        },
+        {
+          denom: 'tnkr',
+          exponent: 12
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/FFEBEADE598A15CD4407A40F4F2F7DAE0391FD458CBF036521F2A1651190495F',
+      name: 'TNKR',
+      display: 'tnkr',
+      symbol: 'TNKR',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom:
+              'ibc/C58E5D2571042137CB68B1B9851C4E7211C05F7C2C79E21E0966AF0F063961F8',
+            chain_name: 'composable'
+          },
+          chain: {
+            channel_id: 'channel-17'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'picasso',
+            base_denom: '2125'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tinkernet/images/tnkr.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tinkernet/images/tnkr.svg'
+      }
+    },
+    {
       denom_units: [
         {
           denom:

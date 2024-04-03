@@ -80,6 +80,10 @@ const info: Chain = {
       {
         address: 'https://rebus-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://rebus-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -122,6 +126,10 @@ const info: Chain = {
       {
         address: 'https://rebus-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https:/rebus-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -160,6 +168,10 @@ const info: Chain = {
       {
         address: 'rebus-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'rebus-grpc.noders.services:18090',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

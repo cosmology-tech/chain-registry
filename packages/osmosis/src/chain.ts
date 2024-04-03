@@ -168,6 +168,10 @@ const chain: Chain = {
       {
         address: 'https://rpc-osmo.kewrnode.com',
         provider: 'Kewr Node'
+      },
+      {
+        address: 'https://osmosis-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -262,6 +266,10 @@ const chain: Chain = {
       {
         address: 'https://rest-osmo.kewrnode.com',
         provider: 'Kewr Node'
+      },
+      {
+        address: 'https://osmosis-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -328,6 +336,10 @@ const chain: Chain = {
       {
         address: 'https://grpc.osmosis.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'osmosis-grpc.noders.services:10090',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

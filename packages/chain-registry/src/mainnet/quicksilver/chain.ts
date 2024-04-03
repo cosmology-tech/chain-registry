@@ -126,6 +126,10 @@ const info: Chain = {
       {
         address: 'https://rpc.quicksilver.validatus.com',
         provider: 'Validatus'
+      },
+      {
+        address: 'https://quicksilver-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -204,6 +208,10 @@ const info: Chain = {
       {
         address: 'https://api.quicksilver.validatus.com',
         provider: 'Validatus'
+      },
+      {
+        address: 'https://quicksilver-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -286,6 +294,10 @@ const info: Chain = {
       {
         address: 'grpc.quicksilver.validatus.com',
         provider: 'Validatus'
+      },
+      {
+        address: 'quicksilver-grpc.noders.services:16090',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

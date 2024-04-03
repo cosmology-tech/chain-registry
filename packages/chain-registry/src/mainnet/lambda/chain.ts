@@ -45,6 +45,10 @@ const info: Chain = {
       {
         address: 'https://rpc.lambda.nodestake.top',
         provider: 'NodeStake'
+      },
+      {
+        address: 'https://lambda-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -59,6 +63,10 @@ const info: Chain = {
       {
         address: 'https://api.lambda.nodestake.top',
         provider: 'NodeStake'
+      },
+      {
+        address: 'https://lambda-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -69,12 +77,20 @@ const info: Chain = {
       {
         address: 'grpc.lambda.nodestake.top:443',
         provider: 'NodeStake'
+      },
+      {
+        address: 'lambda-grpc.noders.services:31090',
+        provider: '[NODERS]TEAM'
       }
     ],
     'evm-http-jsonrpc': [
       {
         address: 'https://jsonrpc-lambda.d-stake.xyz',
         provider: 'D-stake'
+      },
+      {
+        address: 'https://lambda-jsonrpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

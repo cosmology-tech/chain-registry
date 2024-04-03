@@ -4701,6 +4701,55 @@ const asset_list: AssetList = {
     },
     {
       description:
+        'The native fee, staking and governance token of the Tinkernet Parachain.',
+      denom_units: [
+        {
+          denom:
+            'ibc/3A0A392E610A8D477851ABFEA74F3D828F36C015AB8E93B0FBB7566A6D13C4D6',
+          exponent: 0,
+          aliases: [
+            'ibc/C58E5D2571042137CB68B1B9851C4E7211C05F7C2C79E21E0966AF0F063961F8'
+          ]
+        },
+        {
+          denom: 'tnkr',
+          exponent: 12
+        }
+      ],
+      type_asset: 'ics20',
+      base: 'ibc/3A0A392E610A8D477851ABFEA74F3D828F36C015AB8E93B0FBB7566A6D13C4D6',
+      name: 'TNKR',
+      display: 'tnkr',
+      symbol: 'TNKR',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'ibc/C58E5D2571042137CB68B1B9851C4E7211C05F7C2C79E21E0966AF0F063961F8',
+            chain_name: 'composable'
+          },
+          chain: {
+            channel_id: 'channel-1279'
+          }
+        }
+      ],
+      images: [
+        {
+          image_sync: {
+            chain_name: 'picasso',
+            base_denom: '2125'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tinkernet/images/tnkr.svg'
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tinkernet/images/tnkr.svg'
+      }
+    },
+    {
+      description:
         'Cvn is a Layer-1 blockchain built to deliver on the promise of DeFi',
       denom_units: [
         {

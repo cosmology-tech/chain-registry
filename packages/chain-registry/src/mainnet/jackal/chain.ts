@@ -112,6 +112,10 @@ const info: Chain = {
       {
         address: 'https://jackal-rpc.kleomedes.network',
         provider: 'Kleomedes'
+      },
+      {
+        address: 'https://jackal-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -178,6 +182,10 @@ const info: Chain = {
       {
         address: 'https://jackal-api.kleomedes.network',
         provider: 'Kleomedes'
+      },
+      {
+        address: 'https://jackal-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -224,6 +232,10 @@ const info: Chain = {
       {
         address: 'grpc.jackal.silentvalidator.com:443',
         provider: 'silent'
+      },
+      {
+        address: 'jackal-grpc.noders.services:26090',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

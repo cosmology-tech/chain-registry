@@ -136,6 +136,10 @@ const info: Chain = {
       {
         address: 'https://rpc.celestia-app.bronbro.io',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://celestia-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -226,6 +230,10 @@ const info: Chain = {
       {
         address: 'https://lcd.celestia-app.bronbro.io',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://celestia-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -300,6 +308,10 @@ const info: Chain = {
       {
         address: 'grpc.celestia-app.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'celestia-grpc.noders.services:11090',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

@@ -88,6 +88,10 @@ const info: Chain = {
       {
         address: 'https://rpc-uptick.sr20de.xyz',
         provider: 'Sr20de'
+      },
+      {
+        address: 'https://uptick-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -134,6 +138,10 @@ const info: Chain = {
       {
         address: 'https://api-uptick.sr20de.xyz',
         provider: 'Sr20de'
+      },
+      {
+        address: 'https://uptick-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -180,6 +188,10 @@ const info: Chain = {
       {
         address: 'https://grpc-uptick.sr20de.xyz',
         provider: 'Sr20de'
+      },
+      {
+        address: 'uptick-grpc.noders.services:24090',
+        provider: '[NODERS]TEAM'
       }
     ],
     'evm-http-jsonrpc': [
@@ -194,6 +206,10 @@ const info: Chain = {
       {
         address: 'https://evm-uptick.sr20de.xyz',
         provider: 'Sr20de'
+      },
+      {
+        address: 'https://uptick-jsonrpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

@@ -84,6 +84,10 @@ const info: Chain = {
       {
         address: 'https://rpc.band.bronbro.io/',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://band-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -134,6 +138,10 @@ const info: Chain = {
       {
         address: 'https://lcd.band.bronbro.io/',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://band-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -176,6 +184,10 @@ const info: Chain = {
       {
         address: 'grpc.band.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'band-grpc.noders.services:30090',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

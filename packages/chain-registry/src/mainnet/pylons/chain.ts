@@ -39,12 +39,20 @@ const info: Chain = {
       {
         address: 'https://rpc.nodejumper.io:443/pylons',
         provider: 'Nodejumper.io'
+      },
+      {
+        address: 'https:/pylons-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
       {
         address: 'https://rest.nodejumper.io/pylons',
         provider: 'Nodejumper.io'
+      },
+      {
+        address: 'https://pylons-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ]
   },
