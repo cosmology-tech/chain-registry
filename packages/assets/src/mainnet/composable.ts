@@ -19633,6 +19633,7 @@ const assets: AssetList = {
           exponent: 12
         }
       ],
+      type_asset: 'substrate',
       base: 'ibc/6517CF990493C8F3D6AE1E03FA1B5167B1E40345061104F07296D883379B4A08',
       name: 'Pica',
       display: 'pica',
@@ -19672,6 +19673,7 @@ const assets: AssetList = {
           exponent: 12
         }
       ],
+      type_asset: 'substrate',
       base: 'ibc/EE9046745AEC0E8302CB7ED9D5AD67F528FB3B7AE044B247FB0FB293DBDA35E9',
       name: 'Kusama',
       display: 'ksm',
@@ -19715,6 +19717,7 @@ const assets: AssetList = {
           exponent: 10
         }
       ],
+      type_asset: 'substrate',
       base: 'ibc/3CC19CEC7E5A3E90E78A5A9ECC5A0E2F8F826A375CF1E096F4515CF09DA3E366',
       name: 'Polkadot',
       display: 'dot',
@@ -19758,6 +19761,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
+      type_asset: 'substrate',
       base: 'ibc/F3EC9F834E57DF704FA3AEAF14E8391C2E58397FE56960AD70E67562990D8265',
       name: 'Statemine',
       display: 'usdt',

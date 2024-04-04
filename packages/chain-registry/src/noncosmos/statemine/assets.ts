@@ -14,6 +14,7 @@ const info: AssetList = {
           exponent: 6
         }
       ],
+      type_asset: 'substrate',
       base: '130',
       name: 'Statemine',
       display: 'usdt',

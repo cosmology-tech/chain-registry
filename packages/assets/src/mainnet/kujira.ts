@@ -4429,6 +4429,58 @@ const assets: AssetList = {
       }
     },
     {
+      description:
+        'W is the native token powering the Wormhole interoperability platform.',
+      type_asset: 'sdk.coin',
+      address:
+        'wormhole1zecpd6puhcpgqgkjtwr59cc8cj3v89c5jkx0vr26fcclhhv7pmfqsuurzm',
+      denom_units: [
+        {
+          denom:
+            'ibc/1DE797A889DCBFA57612C949AFC1D89F3774F29EFF56DD19299C72694B9D7ADA',
+          exponent: 0,
+          aliases: [
+            'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/2Wb6ueMFc9WLc2eyYVha6qnwHKbwzUXdooXsg6XXVvos'
+          ]
+        },
+        {
+          denom: 'w',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/1DE797A889DCBFA57612C949AFC1D89F3774F29EFF56DD19299C72694B9D7ADA',
+      name: 'Wormhole Token',
+      display: 'w',
+      symbol: 'W',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-9',
+            base_denom:
+              'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/2Wb6ueMFc9WLc2eyYVha6qnwHKbwzUXdooXsg6XXVvos',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-113'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/w.png'
+      },
+      coingecko_id: '',
+      images: [
+        {
+          image_sync: {
+            chain_name: 'solana',
+            base_denom: '85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/w.png'
+        }
+      ]
+    },
+    {
       description: 'The native token of Gravity Bridge',
       denom_units: [
         {

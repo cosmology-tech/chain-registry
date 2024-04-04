@@ -30,7 +30,7 @@ const info: Chain = {
     ]
   },
   codebase: {
-    cosmos_sdk_version: '0.44'
+    cosmos_sdk_version: 'onomyprotocol/onomy-sdk v0.45.16-onomy-dev'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png'
@@ -60,11 +60,6 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'Big Dipper',
-      url: 'https://explorer.onomy.io',
-      tx_page: 'https://explorer.onomy.io/transactions/${txHash}'
-    },
-    {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/onomy-protocol',
       tx_page: 'https://www.mintscan.io/onomy-protocol/transactions/${txHash}',
@@ -78,7 +73,7 @@ const info: Chain = {
       account_page: 'https://ezstaking.app/onomy/account/${accountAddress}'
     }
   ],
-  keywords: ['dex', 'stablecoin', 'bridge', 'staking'],
+  keywords: ['dex', 'stablecoin', 'bridge', 'staking', 'ics', 'rwa'],
   images: [
     {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png'

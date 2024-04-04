@@ -17,6 +17,7 @@ const info: AssetList = {
           exponent: 7
         }
       ],
+      type_asset: 'evm-base',
       base: 'stroop',
       name: 'Lumen',
       display: 'lumen',

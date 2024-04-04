@@ -30,6 +30,7 @@ const info: AssetList = {
           exponent: 12
         }
       ],
+      type_asset: 'substrate',
       base: 'Planck',
       name: 'Kusama',
       display: 'KSM',

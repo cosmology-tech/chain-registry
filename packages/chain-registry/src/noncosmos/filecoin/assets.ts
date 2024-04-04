@@ -17,6 +17,7 @@ const info: AssetList = {
           exponent: 18
         }
       ],
+      type_asset: 'evm-base',
       base: 'attoFIL',
       name: 'Filecoin',
       display: 'fil',

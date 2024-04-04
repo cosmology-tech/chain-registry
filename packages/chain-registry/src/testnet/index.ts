@@ -31,6 +31,7 @@ export * as entrypointtestnet from './entrypointtestnet';
 export * as evmostestnet from './evmostestnet';
 export * as fetchhubtestnet from './fetchhubtestnet';
 export * as finschiatestnet from './finschiatestnet';
+export * as galacticatestnet from './galacticatestnet';
 export * as gitopiatestnet from './gitopiatestnet';
 export * as hedgetestnet from './hedgetestnet';
 export * as humanstestnet from './humanstestnet';

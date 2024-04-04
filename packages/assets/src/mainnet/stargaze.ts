@@ -2072,6 +2072,58 @@ const assets: AssetList = {
       }
     },
     {
+      description:
+        'W is the native token powering the Wormhole interoperability platform.',
+      type_asset: 'sdk.coin',
+      address:
+        'wormhole1zecpd6puhcpgqgkjtwr59cc8cj3v89c5jkx0vr26fcclhhv7pmfqsuurzm',
+      denom_units: [
+        {
+          denom:
+            'ibc/76444461D5DA253BA161034B122FA96139C196C64AF66510ECFFAA9A26C06626',
+          exponent: 0,
+          aliases: [
+            'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/2Wb6ueMFc9WLc2eyYVha6qnwHKbwzUXdooXsg6XXVvos'
+          ]
+        },
+        {
+          denom: 'w',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/76444461D5DA253BA161034B122FA96139C196C64AF66510ECFFAA9A26C06626',
+      name: 'Wormhole Token',
+      display: 'w',
+      symbol: 'W',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-12',
+            base_denom:
+              'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/2Wb6ueMFc9WLc2eyYVha6qnwHKbwzUXdooXsg6XXVvos',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-278'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/w.png'
+      },
+      coingecko_id: '',
+      images: [
+        {
+          image_sync: {
+            chain_name: 'solana',
+            base_denom: '85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/w.png'
+        }
+      ]
+    },
+    {
       description: 'The native token of JUNO Chain',
       denom_units: [
         {

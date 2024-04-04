@@ -17,6 +17,7 @@ const info: AssetList = {
           exponent: 6
         }
       ],
+      type_asset: 'evm-base',
       base: 'drop',
       name: 'Ripple',
       display: 'xrp',

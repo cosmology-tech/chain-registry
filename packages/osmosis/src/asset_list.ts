@@ -7433,6 +7433,58 @@ const asset_list: AssetList = {
     },
     {
       description:
+        'W is the native token powering the Wormhole interoperability platform.',
+      type_asset: 'sdk.coin',
+      address:
+        'wormhole1zecpd6puhcpgqgkjtwr59cc8cj3v89c5jkx0vr26fcclhhv7pmfqsuurzm',
+      denom_units: [
+        {
+          denom:
+            'ibc/AC6EE43E608B5A7EEE460C960480BC1C3708010E32B2071C429DA259836E10C3',
+          exponent: 0,
+          aliases: [
+            'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/2Wb6ueMFc9WLc2eyYVha6qnwHKbwzUXdooXsg6XXVvos'
+          ]
+        },
+        {
+          denom: 'w',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/AC6EE43E608B5A7EEE460C960480BC1C3708010E32B2071C429DA259836E10C3',
+      name: 'Wormhole Token',
+      display: 'w',
+      symbol: 'W',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom:
+              'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/2Wb6ueMFc9WLc2eyYVha6qnwHKbwzUXdooXsg6XXVvos',
+            chain_name: 'gateway'
+          },
+          chain: {
+            channel_id: 'channel-2186'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/w.png'
+      },
+      coingecko_id: '',
+      images: [
+        {
+          image_sync: {
+            chain_name: 'solana',
+            base_denom: '85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/w.png'
+        }
+      ]
+    },
+    {
+      description:
         'L1 coin is the GenesisL1 blockchain utility, governance and EVM token',
       denom_units: [
         {
@@ -21806,7 +21858,7 @@ const asset_list: AssetList = {
       ]
     },
     {
-      description: 'The native token cw20 for Fanfury on Juno Chain',
+      description: 'The deprecated cw20 token for Fanfury on Juno Chain',
       type_asset: 'cw20',
       address:
         'juno1cltgm8v842gu54srmejewghnd6uqa26lzkpa635wzra9m9xuudkqa2gtcz',
@@ -21825,9 +21877,9 @@ const asset_list: AssetList = {
         }
       ],
       base: 'ibc/7CE5F388D661D82A0774E47B5129DA51CC7129BD1A70B5FA6BCEBB5B0A2FAEAF',
-      name: 'Fanfury',
+      name: 'FURY.legacy',
       display: 'fury',
-      symbol: 'FURY',
+      symbol: 'FURY.legacy',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/fanfury.png'
       },

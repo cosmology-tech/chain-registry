@@ -42,6 +42,7 @@ import * as _cryptoorgchain from './cryptoorgchain';
 import * as _cudos from './cudos';
 import * as _decentr from './decentr';
 import * as _desmos from './desmos';
+import * as _dhealth from './dhealth';
 import * as _dig from './dig';
 import * as _doravota from './doravota';
 import * as _dydx from './dydx';
@@ -200,6 +201,7 @@ const chains: Chain[] = [
   _cudos.chain,
   _decentr.chain,
   _desmos.chain,
+  _dhealth.chain,
   _dig.chain,
   _doravota.chain,
   _dydx.chain,

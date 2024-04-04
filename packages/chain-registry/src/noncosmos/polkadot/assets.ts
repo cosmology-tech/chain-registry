@@ -37,6 +37,7 @@ const info: AssetList = {
           aliases: ['million', 'Million']
         }
       ],
+      type_asset: 'substrate',
       base: 'Planck',
       name: 'Polkadot',
       display: 'DOT',

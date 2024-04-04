@@ -15,6 +15,7 @@ const info: AssetList = {
           exponent: 8
         }
       ],
+      type_asset: 'bitcoin-like',
       base: 'sat',
       name: 'Bitcoin',
       display: 'btc',

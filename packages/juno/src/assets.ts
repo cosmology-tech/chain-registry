@@ -702,7 +702,7 @@ const assets: AssetList = {
       ]
     },
     {
-      description: 'The native token cw20 for Fanfury on Juno Chain',
+      description: 'The deprecated cw20 token for Fanfury on Juno Chain',
       type_asset: 'cw20',
       address:
         'juno1cltgm8v842gu54srmejewghnd6uqa26lzkpa635wzra9m9xuudkqa2gtcz',
@@ -718,9 +718,9 @@ const assets: AssetList = {
         }
       ],
       base: 'cw20:juno1cltgm8v842gu54srmejewghnd6uqa26lzkpa635wzra9m9xuudkqa2gtcz',
-      name: 'Fanfury',
+      name: 'FURY.legacy',
       display: 'fury',
-      symbol: 'FURY',
+      symbol: 'FURY.legacy',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/fanfury.png'
       },

@@ -21,6 +21,7 @@ const info: AssetList = {
           aliases: ['ether']
         }
       ],
+      type_asset: 'evm-base',
       base: 'wei',
       name: 'Ether',
       display: 'eth',

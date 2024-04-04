@@ -40,6 +40,7 @@ export * as cryptoorgchain from './cryptoorgchain';
 export * as cudos from './cudos';
 export * as decentr from './decentr';
 export * as desmos from './desmos';
+export * as dhealth from './dhealth';
 export * as dig from './dig';
 export * as doravota from './doravota';
 export * as dydx from './dydx';

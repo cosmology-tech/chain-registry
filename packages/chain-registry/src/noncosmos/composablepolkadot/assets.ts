@@ -14,6 +14,7 @@ const info: AssetList = {
           exponent: 10
         }
       ],
+      type_asset: 'substrate',
       base: '79228162514264337593543950342',
       name: 'Polkadot',
       display: 'dot',

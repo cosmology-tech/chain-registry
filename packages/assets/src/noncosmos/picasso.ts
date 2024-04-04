@@ -256,6 +256,7 @@ const assets: AssetList = {
           exponent: 10
         }
       ],
+      type_asset: 'substrate',
       base: 'ibc/4C6F58D844C29F8C4D0FD0AF3DD989C367330A8A76328203005C023FC1635391',
       name: 'Polkadot',
       display: 'dot',
