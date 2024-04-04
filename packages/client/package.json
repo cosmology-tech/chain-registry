@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/client",
-  "version": "1.21.11",
+  "version": "1.21.12",
   "description": "Chain Registry Client",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
@@ -75,8 +75,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.21.0",
-    "@chain-registry/types": "^0.18.13",
-    "@chain-registry/utils": "^1.19.12",
+    "@chain-registry/types": "^0.18.14",
+    "@chain-registry/utils": "^1.19.13",
     "bfs-path": "^1.0.2",
     "cross-fetch": "^3.1.5"
   },
