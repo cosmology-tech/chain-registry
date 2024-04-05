@@ -45,6 +45,10 @@ const info: Chain = {
         provider: 'Holdings'
       },
       {
+        address: 'https://xpla.rpc.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://xpla-rpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       }
@@ -57,6 +61,10 @@ const info: Chain = {
       {
         address: 'https://dimension-lcd.xpla.dev',
         provider: 'Holdings'
+      },
+      {
+        address: 'https://xpla.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'https://xpla-api.lavenderfive.com:443',
@@ -81,6 +89,11 @@ const info: Chain = {
       kind: 'finder',
       url: 'https://finder.xpla.io',
       tx_page: 'https://finder.xpla.io/mainnet/tx/${txHash}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Xpla-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Xpla-Mainnet/tx/${txHash}'
     },
     {
       kind: 'mintscan',

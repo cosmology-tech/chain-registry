@@ -5373,6 +5373,49 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'The native token of dHealth',
+      denom_units: [
+        {
+          denom:
+            'ibc/3C7FF3745FF85CCA532C46498BA14796348FF867D3ED4574CC89A436B8579100',
+          exponent: 0,
+          aliases: ['udhp']
+        },
+        {
+          denom: 'dhp',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/3C7FF3745FF85CCA532C46498BA14796348FF867D3ED4574CC89A436B8579100',
+      name: 'Digital Health Point',
+      display: 'dhp',
+      symbol: 'DHP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.svg'
+      },
+      coingecko_id: 'dhealth',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'udhp',
+            chain_name: 'dhealth'
+          },
+          chain: {
+            channel_id: 'channel-37505'
+          }
+        }
+      ]
+    },
+    {
       description: 'Native token of Dig Chain',
       denom_units: [
         {

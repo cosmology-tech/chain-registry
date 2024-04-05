@@ -77,7 +77,7 @@ const info: Chain = {
         provider: 'KonsorTech'
       },
       {
-        address: 'http://46.4.14.172:16657',
+        address: 'http://135.181.75.235:13657',
         provider: 'PPNV Service'
       },
       {
@@ -127,7 +127,7 @@ const info: Chain = {
         provider: 'KonsorTech'
       },
       {
-        address: 'http://46.4.14.172:16317',
+        address: 'http://135.181.75.235:13317',
         provider: 'PPNV Service'
       },
       {
@@ -169,7 +169,7 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       },
       {
-        address: '46.4.14.172:16090',
+        address: 'http://135.181.75.235:13090',
         provider: 'PPNV Service'
       },
       {

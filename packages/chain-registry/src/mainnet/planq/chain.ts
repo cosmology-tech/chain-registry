@@ -86,6 +86,10 @@ const info: Chain = {
       {
         address: 'https://mainnet-planq-rpc.konsortech.xyz',
         provider: 'KonsorTech'
+      },
+      {
+        address: 'https://planq_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -132,6 +136,10 @@ const info: Chain = {
       {
         address: 'https://mainnet-planq-api.konsortech.xyz',
         provider: 'KonsorTech'
+      },
+      {
+        address: 'https://planq_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -224,6 +232,10 @@ const info: Chain = {
       {
         address: 'https://mainnet-planq-evmrpc.konsortech.xyz',
         provider: 'KonsorTech'
+      },
+      {
+        address: 'https://planq_mainnet_evm.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ]
   },
@@ -294,6 +306,11 @@ const info: Chain = {
       kind: 'KonsorTech',
       url: 'https://explorer.konsortech.xyz/planq',
       tx_page: 'https://explorer.konsortech.xyz/planq/tx/${txHash}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/planq',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/tx/${txHash}'
     }
   ],
   images: [

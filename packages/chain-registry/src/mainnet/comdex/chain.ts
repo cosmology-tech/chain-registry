@@ -50,6 +50,10 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
+        address: 'https://comdex.rpc.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://rpc.comdex.chaintools.tech/',
         provider: 'ChainTools'
       },
@@ -104,6 +108,10 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
+        address: 'https://comdex.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://comdex-api.lavenderfive.com/',
         provider: 'Lavender.Five Nodes 🐝'
       },
@@ -154,6 +162,10 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
+        address: 'comdex.grpc.m.stavr.tech:104',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'grpc-comdex.cosmos-spaces.cloud:2300',
         provider: 'Cosmos Spaces'
       },
@@ -195,6 +207,13 @@ const info: Chain = {
       url: 'https://www.mintscan.io/comdex',
       tx_page: 'https://www.mintscan.io/comdex/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/comdex/accounts/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Comdex-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Comdex-Mainnet/txs/${txHash}',
+      account_page:
+        'https://explorer.stavr.tech/Comdex-Mainnet/accounts/${accountAddress}'
     },
     {
       kind: 'aneka',

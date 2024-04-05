@@ -6533,7 +6533,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/B37389C00EF9E6A96F48EC75355F7BEB1291EE5378D41547A1D6CED7D4554F38',
+            'ibc/991421FE564F5E02BC4610D43A061B1CC51935B830D16D53A9CFA21CAD9C399C',
           exponent: 0,
           aliases: ['ustake']
         },
@@ -6542,7 +6542,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/B37389C00EF9E6A96F48EC75355F7BEB1291EE5378D41547A1D6CED7D4554F38',
+      base: 'ibc/991421FE564F5E02BC4610D43A061B1CC51935B830D16D53A9CFA21CAD9C399C',
       name: 'Stake',
       display: 'stake',
       symbol: 'STAKE',
@@ -6560,12 +6560,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-10',
+            channel_id: 'channel-31',
             base_denom: 'ustake',
             chain_name: 'noble'
           },
           chain: {
-            channel_id: 'channel-146'
+            channel_id: 'channel-148'
           }
         }
       ]
@@ -6576,7 +6576,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/66573A2EBC337C6AF205B220F9BD0D42F3D55C8FE5CFC140B5D86022AFD74A11',
+            'ibc/CDD7374B312BEF9723AAEBDE622206490E112CE2B5F49275683CCCD86C7D4BCE',
           exponent: 0,
           aliases: ['ufrienzies']
         },
@@ -6585,7 +6585,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/66573A2EBC337C6AF205B220F9BD0D42F3D55C8FE5CFC140B5D86022AFD74A11',
+      base: 'ibc/CDD7374B312BEF9723AAEBDE622206490E112CE2B5F49275683CCCD86C7D4BCE',
       display: 'frienzies',
       name: 'Frienzies',
       symbol: 'FRNZ',
@@ -6603,12 +6603,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-10',
+            channel_id: 'channel-31',
             base_denom: 'ufrienzies',
             chain_name: 'noble'
           },
           chain: {
-            channel_id: 'channel-146'
+            channel_id: 'channel-148'
           }
         }
       ]
@@ -6618,7 +6618,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/B5314643793824047754709607454863D7E73ADB3083D966056C8F0A49128187',
+            'ibc/6EDBA7397B5A08C6C478781DA76D446122744825F5FC84E9091EA5672EEAEA0A',
           exponent: 0,
           aliases: [
             'ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0'
@@ -6631,7 +6631,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/B5314643793824047754709607454863D7E73ADB3083D966056C8F0A49128187',
+      base: 'ibc/6EDBA7397B5A08C6C478781DA76D446122744825F5FC84E9091EA5672EEAEA0A',
       name: 'Atom Staking Coin',
       display: 'atom',
       symbol: 'ATOM',
@@ -6639,13 +6639,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-10',
+            channel_id: 'channel-31',
             base_denom:
               'ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0',
             chain_name: 'noble'
           },
           chain: {
-            channel_id: 'channel-146'
+            channel_id: 'channel-148'
           }
         }
       ],
@@ -6665,7 +6665,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/59EEDFEAA77455A64667D96A83D94CC413AFCFC6A9827B8B3DF96A294FB03A2D',
+            'ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E',
           exponent: 0,
           aliases: ['uusdc']
         },
@@ -6674,7 +6674,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/59EEDFEAA77455A64667D96A83D94CC413AFCFC6A9827B8B3DF96A294FB03A2D',
+      base: 'ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E',
       display: 'usdc',
       name: 'USD Coin',
       symbol: 'USDC',
@@ -6683,12 +6683,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-10',
+            channel_id: 'channel-31',
             base_denom: 'uusdc',
             chain_name: 'noble'
           },
           chain: {
-            channel_id: 'channel-146'
+            channel_id: 'channel-148'
           }
         }
       ],

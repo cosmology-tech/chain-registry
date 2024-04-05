@@ -1083,7 +1083,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/ADF401C952ADD9EE232D52C8303B8BE17FE7953C8D420F20769AF77240BD0C58',
+            'ibc/C13664951326AE95004297843B30BA98FAB102B8F6904A68C03576D1812D1D72',
           exponent: 0,
           aliases: ['inj']
         },
@@ -1092,7 +1092,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/ADF401C952ADD9EE232D52C8303B8BE17FE7953C8D420F20769AF77240BD0C58',
+      base: 'ibc/C13664951326AE95004297843B30BA98FAB102B8F6904A68C03576D1812D1D72',
       name: 'Injective',
       display: 'INJ',
       symbol: 'INJ',
@@ -1115,12 +1115,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-146',
+            channel_id: 'channel-148',
             base_denom: 'inj',
             chain_name: 'injective'
           },
           chain: {
-            channel_id: 'channel-10'
+            channel_id: 'channel-31'
           }
         }
       ]
@@ -1130,7 +1130,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/AB855FDAD2D9C395BF44D3E82B165A68737FCC4B830B3B2C5EA3E6A8E3E8395B',
+            'ibc/588498A296E63D64BAA13F9189FA8C1D5AB1289F2103DE9582755BACBDF3727B',
           exponent: 0,
           aliases: [
             'ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB'
@@ -1142,7 +1142,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/AB855FDAD2D9C395BF44D3E82B165A68737FCC4B830B3B2C5EA3E6A8E3E8395B',
+      base: 'ibc/588498A296E63D64BAA13F9189FA8C1D5AB1289F2103DE9582755BACBDF3727B',
       name: 'Tether USDt',
       display: 'usdt',
       symbol: 'USDt',
@@ -1150,13 +1150,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-146',
+            channel_id: 'channel-148',
             base_denom:
               'ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB',
             chain_name: 'injective'
           },
           chain: {
-            channel_id: 'channel-10'
+            channel_id: 'channel-31'
           }
         }
       ],
@@ -1178,7 +1178,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/7A85ABBE47FC999887DBFEF64F685915B54D40BAA48D272BF3B21C8250901B9A',
+            'ibc/11AE38C76C651DF99D3FF6865376FD29D28E8031E13241BAAD28BE8CFDB2C23C',
           exponent: 0,
           aliases: ['factory/inj1cdwt8g7nxgtg2k4fn8sj363mh9ahkw2qt0vrnc/ampINJ']
         },
@@ -1187,7 +1187,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/7A85ABBE47FC999887DBFEF64F685915B54D40BAA48D272BF3B21C8250901B9A',
+      base: 'ibc/11AE38C76C651DF99D3FF6865376FD29D28E8031E13241BAAD28BE8CFDB2C23C',
       name: 'ERIS Amplified INJ',
       display: 'ampINJ',
       symbol: 'ampINJ',
@@ -1203,13 +1203,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-146',
+            channel_id: 'channel-148',
             base_denom:
               'factory/inj1cdwt8g7nxgtg2k4fn8sj363mh9ahkw2qt0vrnc/ampINJ',
             chain_name: 'injective'
           },
           chain: {
-            channel_id: 'channel-10'
+            channel_id: 'channel-31'
           }
         }
       ]
@@ -1220,7 +1220,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/7FAC52C5CB5609867F87B2E7D5E26FF2698870977C95D91F7EA510600D89B3BA',
+            'ibc/B0AB6CA4364E0C7FD8FDFEF8FBD2E5E9D43DDE0AE9399349ED57A04977942E6D',
           exponent: 0,
           aliases: ['factory/inj14lf8xm6fcvlggpa7guxzjqwjmtr24gnvf56hvz/autism']
         },
@@ -1229,7 +1229,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/7FAC52C5CB5609867F87B2E7D5E26FF2698870977C95D91F7EA510600D89B3BA',
+      base: 'ibc/B0AB6CA4364E0C7FD8FDFEF8FBD2E5E9D43DDE0AE9399349ED57A04977942E6D',
       name: 'Autism',
       display: 'autism',
       symbol: 'AUTISM',
@@ -1246,13 +1246,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-146',
+            channel_id: 'channel-148',
             base_denom:
               'factory/inj14lf8xm6fcvlggpa7guxzjqwjmtr24gnvf56hvz/autism',
             chain_name: 'injective'
           },
           chain: {
-            channel_id: 'channel-10'
+            channel_id: 'channel-31'
           }
         }
       ]
@@ -1263,7 +1263,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/7A74F3FE51B09D85DF872F1DA93C27D0E7FFDBB0769D04A6E5EC1235F19BD355',
+            'ibc/08DEDC7AB8588F72177630FFDACB1009939E69349BC8A17172EC0C5CD21503CC',
           exponent: 0,
           aliases: ['factory/inj1xtel2knkt8hmc9dnzpjz6kdmacgcfmlv5f308w/ninja']
         },
@@ -1272,7 +1272,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/7A74F3FE51B09D85DF872F1DA93C27D0E7FFDBB0769D04A6E5EC1235F19BD355',
+      base: 'ibc/08DEDC7AB8588F72177630FFDACB1009939E69349BC8A17172EC0C5CD21503CC',
       name: 'Dog wif nunchucks',
       display: 'NINJA',
       symbol: 'NINJA',
@@ -1289,13 +1289,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-146',
+            channel_id: 'channel-148',
             base_denom:
               'factory/inj1xtel2knkt8hmc9dnzpjz6kdmacgcfmlv5f308w/ninja',
             chain_name: 'injective'
           },
           chain: {
-            channel_id: 'channel-10'
+            channel_id: 'channel-31'
           }
         }
       ]
@@ -1305,7 +1305,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/1B734928A13715AE077E3CEF0C1A0AE6A8ADCDF65507746C99E271AB70AA18A3',
+            'ibc/5C98AD8AB0642857A58602202B0993AE218881A4B672AB54F339C6691094937A',
           exponent: 0,
           aliases: ['factory/inj1rmjzj9fn47kdmfk4f3z39qr6czexxe0yjyc546/WGMI']
         },
@@ -1314,7 +1314,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/1B734928A13715AE077E3CEF0C1A0AE6A8ADCDF65507746C99E271AB70AA18A3',
+      base: 'ibc/5C98AD8AB0642857A58602202B0993AE218881A4B672AB54F339C6691094937A',
       name: 'WGMI',
       display: 'WGMI',
       symbol: 'WGMI',
@@ -1330,13 +1330,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-146',
+            channel_id: 'channel-148',
             base_denom:
               'factory/inj1rmjzj9fn47kdmfk4f3z39qr6czexxe0yjyc546/WGMI',
             chain_name: 'injective'
           },
           chain: {
-            channel_id: 'channel-10'
+            channel_id: 'channel-31'
           }
         }
       ]
@@ -1346,7 +1346,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/0A0D299DF8327E0243ACB5164491FBDE25B17CBECE109357F67772338DAA530C',
+            'ibc/CD9654613674BFF7962F984119EC601CA921782C3DB7867A38FC5CB61709E327',
           exponent: 0,
           aliases: [
             'ibc/DD648F5D3CDA56D0D8D8820CF703D246B9FC4007725D8B38D23A21FF1A1477E3'
@@ -1358,7 +1358,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/0A0D299DF8327E0243ACB5164491FBDE25B17CBECE109357F67772338DAA530C',
+      base: 'ibc/CD9654613674BFF7962F984119EC601CA921782C3DB7867A38FC5CB61709E327',
       name: 'Wosmo',
       display: 'WOSMO',
       symbol: 'WOSMO',
@@ -1366,13 +1366,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-146',
+            channel_id: 'channel-148',
             base_denom:
               'ibc/DD648F5D3CDA56D0D8D8820CF703D246B9FC4007725D8B38D23A21FF1A1477E3',
             chain_name: 'injective'
           },
           chain: {
-            channel_id: 'channel-10'
+            channel_id: 'channel-31'
           }
         }
       ],
@@ -1395,7 +1395,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/5ABEAC3B7AF99B6C505F8FBACC287DDC7881E82C82C692120096FA44D775BFDC',
+            'ibc/EE40DCC61DF47199EC2E48BE711407DBF2380C9690D98322637B77B98987E3E2',
           exponent: 0,
           aliases: ['peggy0xd73175f9eb15eee81745d367ae59309Ca2ceb5e2']
         },
@@ -1404,7 +1404,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/5ABEAC3B7AF99B6C505F8FBACC287DDC7881E82C82C692120096FA44D775BFDC',
+      base: 'ibc/EE40DCC61DF47199EC2E48BE711407DBF2380C9690D98322637B77B98987E3E2',
       name: 'Gelotto',
       display: 'glto',
       symbol: 'GLTO',
@@ -1412,12 +1412,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-146',
+            channel_id: 'channel-148',
             base_denom: 'peggy0xd73175f9eb15eee81745d367ae59309Ca2ceb5e2',
             chain_name: 'injective'
           },
           chain: {
-            channel_id: 'channel-10'
+            channel_id: 'channel-31'
           }
         }
       ],
@@ -1446,7 +1446,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/53BD4AD380F9EB09D9E53C94195449F0AAC7D66E0EE0DDC04659C44F732E008B',
+            'ibc/00B1897C74D8BA61111457D1DCC191116A21C57CB38447CD56257F6ACC88197B',
           exponent: 0,
           aliases: ['factory/inj1h0ypsdtjfcjynqu3m75z2zwwz5mmrj8rtk2g52/uhava']
         },
@@ -1455,7 +1455,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/53BD4AD380F9EB09D9E53C94195449F0AAC7D66E0EE0DDC04659C44F732E008B',
+      base: 'ibc/00B1897C74D8BA61111457D1DCC191116A21C57CB38447CD56257F6ACC88197B',
       name: 'Hava Coin',
       display: 'hava',
       symbol: 'HAVA',
@@ -1471,13 +1471,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-146',
+            channel_id: 'channel-148',
             base_denom:
               'factory/inj1h0ypsdtjfcjynqu3m75z2zwwz5mmrj8rtk2g52/uhava',
             chain_name: 'injective'
           },
           chain: {
-            channel_id: 'channel-10'
+            channel_id: 'channel-31'
           }
         }
       ]
@@ -1488,7 +1488,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/C8BA7E2559E085783E0E44EC3F36F66B2A50061ECDB640D940E2BC1915F70D69',
+            'ibc/8EC6CBB287FE927E1D761CCAA6E06A82560C8E4E5250AE9B8F43C87568D03B33',
           exponent: 0,
           aliases: [
             'ibc/A0C5AD197FECAF6636F589071338DC7ECD6B0809CD3A5AB131EAAA5395E7E5E8'
@@ -1500,7 +1500,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/C8BA7E2559E085783E0E44EC3F36F66B2A50061ECDB640D940E2BC1915F70D69',
+      base: 'ibc/8EC6CBB287FE927E1D761CCAA6E06A82560C8E4E5250AE9B8F43C87568D03B33',
       name: 'Badkid',
       display: 'BADKID',
       symbol: 'BADKID',
@@ -1508,13 +1508,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-146',
+            channel_id: 'channel-148',
             base_denom:
               'ibc/A0C5AD197FECAF6636F589071338DC7ECD6B0809CD3A5AB131EAAA5395E7E5E8',
             chain_name: 'injective'
           },
           chain: {
-            channel_id: 'channel-10'
+            channel_id: 'channel-31'
           }
         }
       ],
@@ -1537,7 +1537,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/8D065F116ED0F967E6A73C8EE96E11C1DABB1C0B1F531BDA01D79FAC439F434E',
+            'ibc/5D69916A9B575E04FB2CFFBDC6527D869A02AE6537F6DC149B5679CEACDB671A',
           exponent: 0,
           aliases: ['inj1sudjgsyhufqu95yp7rqad3g78ws8g6htf32h88']
         },
@@ -1546,7 +1546,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/8D065F116ED0F967E6A73C8EE96E11C1DABB1C0B1F531BDA01D79FAC439F434E',
+      base: 'ibc/5D69916A9B575E04FB2CFFBDC6527D869A02AE6537F6DC149B5679CEACDB671A',
       name: 'Ninpo',
       display: 'NINPO',
       symbol: 'NINPO',
@@ -1562,12 +1562,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-146',
+            channel_id: 'channel-148',
             base_denom: 'inj1sudjgsyhufqu95yp7rqad3g78ws8g6htf32h88',
             chain_name: 'injective'
           },
           chain: {
-            channel_id: 'channel-10'
+            channel_id: 'channel-31'
           }
         }
       ]
@@ -1577,7 +1577,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/A958074A992C4CA9B836F4989F2B68A3F3FEDFEE75C3A1B0AE9744A0C79A1FE9',
+            'ibc/DDBB01967FED93BBB2E848F078073969099D1E09441B0F720AC8FBC51A0DD9B0',
           exponent: 0,
           aliases: ['inj16ukv8g2jcmml7gykxn5ws8ykhxjkugl4zhft5h']
         },
@@ -1586,7 +1586,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/A958074A992C4CA9B836F4989F2B68A3F3FEDFEE75C3A1B0AE9744A0C79A1FE9',
+      base: 'ibc/DDBB01967FED93BBB2E848F078073969099D1E09441B0F720AC8FBC51A0DD9B0',
       name: 'Judo',
       display: 'JUDO',
       symbol: 'JUDO',
@@ -1602,12 +1602,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-146',
+            channel_id: 'channel-148',
             base_denom: 'inj16ukv8g2jcmml7gykxn5ws8ykhxjkugl4zhft5h',
             chain_name: 'injective'
           },
           chain: {
-            channel_id: 'channel-10'
+            channel_id: 'channel-31'
           }
         }
       ]
@@ -1617,7 +1617,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/5B21AF41092F6CA34F0A3D6340A0DF8A35F42E91EC052BBBB5F6BCA9440E38C0',
+            'ibc/04661AADDEAFC4649FCE846B8F96E7CF086DED0556C6A2B9BA70E383BBF1F3DC',
           exponent: 0,
           aliases: ['peggy0xA4426666addBE8c4985377d36683D17FB40c31Be']
         },
@@ -1626,7 +1626,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/5B21AF41092F6CA34F0A3D6340A0DF8A35F42E91EC052BBBB5F6BCA9440E38C0',
+      base: 'ibc/04661AADDEAFC4649FCE846B8F96E7CF086DED0556C6A2B9BA70E383BBF1F3DC',
       name: 'Gelotto BEAST',
       display: 'beast',
       symbol: 'BEAST',
@@ -1634,12 +1634,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-146',
+            channel_id: 'channel-148',
             base_denom: 'peggy0xA4426666addBE8c4985377d36683D17FB40c31Be',
             chain_name: 'injective'
           },
           chain: {
-            channel_id: 'channel-10'
+            channel_id: 'channel-31'
           }
         }
       ],
