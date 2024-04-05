@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.36.20 (2024-04-05)
+
+**Note:** Version bump only for package @chain-registry/cosmostation
+
+
+
+
+
 ## 1.36.19 (2024-04-04)
 
 **Note:** Version bump only for package @chain-registry/cosmostation
