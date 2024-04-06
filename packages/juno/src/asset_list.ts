@@ -5582,6 +5582,148 @@ const asset_list: AssetList = {
       ]
     },
     {
+      description: 'The native staking token of Terra.',
+      denom_units: [
+        {
+          denom:
+            'ibc/A519221FF863F233F59FE05504D027EB7A81855F57BD8CCB8796787BCDD5A12D',
+          exponent: 0,
+          aliases: [
+            'ibc/4627AD2524E3E0523047E35BB76CC90E37D9D57ACF14F0FCBCEB2480705F3CB8'
+          ]
+        },
+        {
+          denom: 'luna',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/A519221FF863F233F59FE05504D027EB7A81855F57BD8CCB8796787BCDD5A12D',
+      name: 'Luna',
+      display: 'luna',
+      symbol: 'LUNA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'ibc/4627AD2524E3E0523047E35BB76CC90E37D9D57ACF14F0FCBCEB2480705F3CB8',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-210'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
+      },
+      coingecko_id: 'terra-luna-2',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
+        }
+      ],
+      socials: {
+        website: 'https://www.terra.money/',
+        twitter: 'https://twitter.com/terra_money'
+      }
+    },
+    {
+      description: 'Rakoff Token',
+      denom_units: [
+        {
+          denom:
+            'ibc/19EE2850414D4F3A71CA60F41AEAB123B5F17D86443CC636C2ECB7DDCAE81C30',
+          exponent: 0,
+          aliases: [
+            'ibc/44C29C91F202E20C8E28DFB1FA89B725C54171CD77B8948836C72E7A97E4A018'
+          ]
+        },
+        {
+          denom: 'Rakoff',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/19EE2850414D4F3A71CA60F41AEAB123B5F17D86443CC636C2ECB7DDCAE81C30',
+      type_asset: 'ics20',
+      name: 'Rakoff',
+      display: 'Rakoff',
+      symbol: 'RAKOFF',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'ibc/44C29C91F202E20C8E28DFB1FA89B725C54171CD77B8948836C72E7A97E4A018',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-210'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rakoff.png'
+      },
+      images: [
+        {
+          image_sync: {
+            chain_name: 'terra',
+            base_denom:
+              'cw20:terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rakoff.png'
+        }
+      ]
+    },
+    {
+      description: 'GASH',
+      denom_units: [
+        {
+          denom:
+            'ibc/D18A07A08779D37D1D1F0E0E8A71A4980D348E68D9746D5B2E5F2DC9119F25E6',
+          exponent: 0,
+          aliases: [
+            'factory/migaloo1r9x8fz4alekzr78k42rpmr9unpa7egsldpqeynmwl2nfvzexue9sn8l5rg/gash'
+          ]
+        },
+        {
+          denom: 'gash',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/D18A07A08779D37D1D1F0E0E8A71A4980D348E68D9746D5B2E5F2DC9119F25E6',
+      name: 'GASH',
+      display: 'gash',
+      symbol: 'GASH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/gash.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/gash.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom:
+              'factory/migaloo1r9x8fz4alekzr78k42rpmr9unpa7egsldpqeynmwl2nfvzexue9sn8l5rg/gash',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-210'
+          }
+        }
+      ]
+    },
+    {
       description: 'The permissioned staking asset for Noble Chain',
       denom_units: [
         {

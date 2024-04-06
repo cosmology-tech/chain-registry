@@ -20889,7 +20889,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/41FF0A58DD024FD4C352455DB3111C0E11A7F82F1A14B4EB0711742B65449A38',
+            'ibc/41646AADED0E33983922676F54BF2B8FD31DE06BB02C72949FD4F34081A41073',
           exponent: 0,
           aliases: ['usei']
         },
@@ -20898,7 +20898,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/41FF0A58DD024FD4C352455DB3111C0E11A7F82F1A14B4EB0711742B65449A38',
+      base: 'ibc/41646AADED0E33983922676F54BF2B8FD31DE06BB02C72949FD4F34081A41073',
       name: 'Sei',
       display: 'sei',
       symbol: 'SEI',
@@ -20921,12 +20921,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-15',
+            channel_id: 'channel-66',
             base_denom: 'usei',
             chain_name: 'sei'
           },
           chain: {
-            channel_id: 'channel-19'
+            channel_id: 'channel-2016'
           }
         }
       ]
@@ -20937,7 +20937,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/D94FEE6AF91F62B40B5F521380ADB2C60A3A39C2A5F620510308D53D56CB2889',
+            'ibc/0EBB6227E9167FC7AEAD3A7EEA02FAB98A7D321098403CEF75D3E45127E64FF7',
           exponent: 0,
           aliases: ['factory/sei1thgp6wamxwqt7rthfkeehktmq0ujh5kspluw6w/OIN']
         },
@@ -20947,7 +20947,7 @@ const assets: AssetList = {
         }
       ],
       address: 'sei1thgp6wamxwqt7rthfkeehktmq0ujh5kspluw6w',
-      base: 'ibc/D94FEE6AF91F62B40B5F521380ADB2C60A3A39C2A5F620510308D53D56CB2889',
+      base: 'ibc/0EBB6227E9167FC7AEAD3A7EEA02FAB98A7D321098403CEF75D3E45127E64FF7',
       name: 'OIN STORE OF VALUE',
       display: 'oin',
       symbol: 'OIN',
@@ -20964,13 +20964,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-15',
+            channel_id: 'channel-66',
             base_denom:
               'factory/sei1thgp6wamxwqt7rthfkeehktmq0ujh5kspluw6w/OIN',
             chain_name: 'sei'
           },
           chain: {
-            channel_id: 'channel-19'
+            channel_id: 'channel-2016'
           }
         }
       ]
@@ -20980,7 +20980,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/BBBCBA2A4805CE418D93E7B16B0967550D39538B4B5EA69CC846ED29E8E0025D',
+            'ibc/0C658BFEF58D1944DE329DB05840B1FD7742E88B2228F3EA01423754F144AE13',
           exponent: 0,
           aliases: [
             'factory/sei1x2fgaaqecvk8kwuqkjqcj27clw5p5g99uawdzy9sc4rku8avumcq3cky4k/ampSEI'
@@ -20991,7 +20991,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/BBBCBA2A4805CE418D93E7B16B0967550D39538B4B5EA69CC846ED29E8E0025D',
+      base: 'ibc/0C658BFEF58D1944DE329DB05840B1FD7742E88B2228F3EA01423754F144AE13',
       name: 'ERIS Amplified SEI',
       display: 'ampSEI',
       symbol: 'ampSEI',
@@ -21007,13 +21007,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-15',
+            channel_id: 'channel-66',
             base_denom:
               'factory/sei1x2fgaaqecvk8kwuqkjqcj27clw5p5g99uawdzy9sc4rku8avumcq3cky4k/ampSEI',
             chain_name: 'sei'
           },
           chain: {
-            channel_id: 'channel-19'
+            channel_id: 'channel-2016'
           }
         }
       ]
@@ -21023,7 +21023,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/5A8643D431A2C84F3D55953B83D1F847EA4475C1EC33C138B19ACE47ED95C748',
+            'ibc/960FB12990A8E50A6804EB0E97BFC623D64F1BB753544860BDB85663A633BAEC',
           exponent: 0,
           aliases: ['factory/sei1fl8pg59wfsgw2wp4aruk38zqccfnc2g8ptrm24/popeye']
         },
@@ -21032,7 +21032,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/5A8643D431A2C84F3D55953B83D1F847EA4475C1EC33C138B19ACE47ED95C748',
+      base: 'ibc/960FB12990A8E50A6804EB0E97BFC623D64F1BB753544860BDB85663A633BAEC',
       name: 'Popeye',
       display: 'popeye',
       symbol: 'POPEYE',
@@ -21048,13 +21048,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-15',
+            channel_id: 'channel-66',
             base_denom:
               'factory/sei1fl8pg59wfsgw2wp4aruk38zqccfnc2g8ptrm24/popeye',
             chain_name: 'sei'
           },
           chain: {
-            channel_id: 'channel-19'
+            channel_id: 'channel-2016'
           }
         }
       ]
@@ -21064,7 +21064,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/6AE8B0EDB26BF5F7E352F35235D398B5D9DF7A66952F076E9E6954BC1E532E0F',
+            'ibc/A14FB6E2804A6F352C71A0E96B7B13EBB10A33BEAE43233FB706AB5B97356A55',
           exponent: 0,
           aliases: ['factory/sei1ta5rkr6y2qlkj7px8w2cvear7m2822q4f4ea0m/sensei']
         },
@@ -21073,7 +21073,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/6AE8B0EDB26BF5F7E352F35235D398B5D9DF7A66952F076E9E6954BC1E532E0F',
+      base: 'ibc/A14FB6E2804A6F352C71A0E96B7B13EBB10A33BEAE43233FB706AB5B97356A55',
       name: 'Sensei Dog',
       display: 'sensei',
       symbol: 'SENSEI',
@@ -21089,13 +21089,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-15',
+            channel_id: 'channel-66',
             base_denom:
               'factory/sei1ta5rkr6y2qlkj7px8w2cvear7m2822q4f4ea0m/sensei',
             chain_name: 'sei'
           },
           chain: {
-            channel_id: 'channel-19'
+            channel_id: 'channel-2016'
           }
         }
       ]
@@ -21105,7 +21105,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/2E73F46B965CA3B1BF1DAAA96EFF5622DEF7B77A8A6FA5EB6960273A30BD9443',
+            'ibc/54D1292AC22F17474E4A3DB7839ABEE35AC08729C434D20B5BEC0A95266E3976',
           exponent: 0,
           aliases: [
             'ibc/AB7C92666DE8C7A977666B8080CABF0127B652B9D40F7251E6914DE942D9942B'
@@ -21117,7 +21117,7 @@ const assets: AssetList = {
         }
       ],
       type_asset: 'ics20',
-      base: 'ibc/2E73F46B965CA3B1BF1DAAA96EFF5622DEF7B77A8A6FA5EB6960273A30BD9443',
+      base: 'ibc/54D1292AC22F17474E4A3DB7839ABEE35AC08729C434D20B5BEC0A95266E3976',
       name: 'Wosmo',
       display: 'WOSMO',
       symbol: 'WOSMO',
@@ -21125,13 +21125,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-15',
+            channel_id: 'channel-66',
             base_denom:
               'ibc/AB7C92666DE8C7A977666B8080CABF0127B652B9D40F7251E6914DE942D9942B',
             chain_name: 'sei'
           },
           chain: {
-            channel_id: 'channel-19'
+            channel_id: 'channel-2016'
           }
         }
       ],
@@ -21155,7 +21155,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/38E2E07708E13BD81EA512BEBEF36A3CF51CD9C2B7398BC7C50935D42F298E42',
+            'ibc/4B4651AE181216ED6258A9B86DC6FF8FEB765DB9F90A38EE15A10E3F9EC33E88',
           exponent: 0,
           aliases: [
             'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda'
@@ -21166,7 +21166,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/38E2E07708E13BD81EA512BEBEF36A3CF51CD9C2B7398BC7C50935D42F298E42',
+      base: 'ibc/4B4651AE181216ED6258A9B86DC6FF8FEB765DB9F90A38EE15A10E3F9EC33E88',
       name: 'Oozaru',
       display: 'oozaru',
       symbol: 'OOZARU',
@@ -21182,13 +21182,13 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-15',
+            channel_id: 'channel-66',
             base_denom:
               'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda',
             chain_name: 'sei'
           },
           chain: {
-            channel_id: 'channel-19'
+            channel_id: 'channel-2016'
           }
         }
       ]

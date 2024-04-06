@@ -122,6 +122,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/persistence/rpc',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://persistence-rpc.stake-town.com',
+        provider: 'StakeTown'
       }
     ],
     rest: [
@@ -200,6 +204,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/persistence/rest',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://persistence-api.stake-town.com',
+        provider: 'StakeTown'
       }
     ],
     grpc: [
@@ -254,6 +262,10 @@ const info: Chain = {
       {
         address: 'grpc.persistence.validatus.com',
         provider: 'Validatus'
+      },
+      {
+        address: 'persistence-grpc.stake-town.com:443',
+        provider: 'StakeTown'
       }
     ]
   },

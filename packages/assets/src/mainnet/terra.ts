@@ -14817,6 +14817,55 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
       }
+    },
+    {
+      description: 'Auto componded USDC despoited into Ginkou on Migaloo chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/2446EFAED4FB74E4062F74B03EFC2764A99D86E9BDA0B0EE2928F815A37F4E12',
+          exponent: 0,
+          aliases: [
+            'cw20:migaloo10nucfm2zqgzqmy7y7ls398t58pjt9cwjsvpy88y2nvamtl34rgmqt5em2v'
+          ]
+        },
+        {
+          denom: 'mUSDC',
+          exponent: 6
+        }
+      ],
+      type_asset: 'cw20',
+      address:
+        'migaloo10nucfm2zqgzqmy7y7ls398t58pjt9cwjsvpy88y2nvamtl34rgmqt5em2v',
+      base: 'ibc/2446EFAED4FB74E4062F74B03EFC2764A99D86E9BDA0B0EE2928F815A37F4E12',
+      name: 'mUSDC',
+      display: 'mUSDC',
+      symbol: 'mUSDC',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/mUSDC.svg'
+      },
+      coingecko_id: '',
+      images: [
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/mUSDC.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'transfer',
+            channel_id: 'channel-114',
+            base_denom:
+              'cw20:migaloo10nucfm2zqgzqmy7y7ls398t58pjt9cwjsvpy88y2nvamtl34rgmqt5em2v',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-87'
+          }
+        }
+      ]
     }
   ]
 };

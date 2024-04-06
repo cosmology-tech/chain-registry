@@ -31,7 +31,8 @@ const info: Chain = {
     ]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.6'
+    cosmos_sdk_version:
+      'rust-ninja/cosmos-sdk v0.47.5-patch-validators-trim-tag'
   },
   logo_URIs: {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/composable.svg'

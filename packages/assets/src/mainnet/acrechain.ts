@@ -1783,6 +1783,50 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'The token of Crowdpunk DAO',
+      denom_units: [
+        {
+          denom:
+            'ibc/09694CB73E39EFFED3E27096202886D42EEA940805DC737E93F40504D68435BD',
+          exponent: 0,
+          aliases: ['erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f']
+        },
+        {
+          denom: 'crowdp',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/09694CB73E39EFFED3E27096202886D42EEA940805DC737E93F40504D68435BD',
+      name: 'Crowdpunk DAO',
+      display: 'crowdp',
+      address: '0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+      symbol: 'CROWDP',
+      type_asset: 'erc20',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-40',
+            base_denom: 'erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-14'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Gravity Bridge',
       denom_units: [
         {

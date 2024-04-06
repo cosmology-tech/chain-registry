@@ -421,7 +421,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/1C2BDEEC81CB0B7638FF2AB7F27CA3C685D1459B6EFC8DE20004F9CC42A785DE',
+            'ibc/2F740C82769D1D7697CFB3D211F952E835AFD9C1852D23B49F3FA7F0475D794B',
           exponent: 0,
           aliases: ['ubtsg']
         },
@@ -430,7 +430,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/1C2BDEEC81CB0B7638FF2AB7F27CA3C685D1459B6EFC8DE20004F9CC42A785DE',
+      base: 'ibc/2F740C82769D1D7697CFB3D211F952E835AFD9C1852D23B49F3FA7F0475D794B',
       name: 'BitSong',
       display: 'btsg',
       symbol: 'BTSG',
@@ -454,12 +454,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-28',
+            channel_id: 'channel-30',
             base_denom: 'ubtsg',
             chain_name: 'bitsong'
           },
           chain: {
-            channel_id: 'channel-140'
+            channel_id: 'channel-145'
           }
         }
       ]
@@ -469,7 +469,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/8DD09723568431357AD7BEE4865EAC9FC6323870B8499AEAE4304419C6E3C67E',
+            'ibc/BD42283812D886FFA1254CC307DA5408785004648B48E0F505B857407AF836A7',
           exponent: 0,
           aliases: ['ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09']
         },
@@ -478,7 +478,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/8DD09723568431357AD7BEE4865EAC9FC6323870B8499AEAE4304419C6E3C67E',
+      base: 'ibc/BD42283812D886FFA1254CC307DA5408785004648B48E0F505B857407AF836A7',
       name: 'Adam Clay FanToken',
       display: 'clay',
       symbol: 'CLAY',
@@ -494,12 +494,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-28',
+            channel_id: 'channel-30',
             base_denom: 'ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09',
             chain_name: 'bitsong'
           },
           chain: {
-            channel_id: 'channel-140'
+            channel_id: 'channel-145'
           }
         }
       ]
@@ -509,7 +509,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/7E0327B434B0CA9C62B23660247EF3322B31C4161DA6B96905E603941F0F25FF',
+            'ibc/02BABECEAA6E2541DF4E5C5D2EB35E3A194C0A81D80348B3A16536057FEB9949',
           exponent: 0,
           aliases: ['ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7']
         },
@@ -518,7 +518,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/7E0327B434B0CA9C62B23660247EF3322B31C4161DA6B96905E603941F0F25FF',
+      base: 'ibc/02BABECEAA6E2541DF4E5C5D2EB35E3A194C0A81D80348B3A16536057FEB9949',
       name: 'Nicola Fasano Fantoken',
       display: 'fasano',
       symbol: 'FASANO',
@@ -534,12 +534,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-28',
+            channel_id: 'channel-30',
             base_denom: 'ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7',
             chain_name: 'bitsong'
           },
           chain: {
-            channel_id: 'channel-140'
+            channel_id: 'channel-145'
           }
         }
       ]
@@ -549,7 +549,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/9EEB59238B0DD4D93A65A423011A74F932C76C6BC6648EB585D19B9C3A65F039',
+            'ibc/A73DC47AAE64FE5E31D72258A5A29CCC34070910DFAC42B18C5051EB3D9C99B5',
           exponent: 0,
           aliases: ['ft575B10B0CEE2C164D9ED6A96313496F164A9607C']
         },
@@ -558,7 +558,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/9EEB59238B0DD4D93A65A423011A74F932C76C6BC6648EB585D19B9C3A65F039',
+      base: 'ibc/A73DC47AAE64FE5E31D72258A5A29CCC34070910DFAC42B18C5051EB3D9C99B5',
       name: 'Delta 9 Fantoken',
       display: 'd9x',
       symbol: 'D9X',
@@ -574,12 +574,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-28',
+            channel_id: 'channel-30',
             base_denom: 'ft575B10B0CEE2C164D9ED6A96313496F164A9607C',
             chain_name: 'bitsong'
           },
           chain: {
-            channel_id: 'channel-140'
+            channel_id: 'channel-145'
           }
         }
       ]
@@ -589,7 +589,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/DE94D331946DE66D7DF882A5752FC3C3879FB9D0A262C474E6295AA9CD43EEDB',
+            'ibc/6D4D77B47DC28CFA024F02949E0375DD4A8E1533F82DCEC3EF81874CFA61D8E3',
           exponent: 0,
           aliases: ['ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305']
         },
@@ -598,7 +598,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/DE94D331946DE66D7DF882A5752FC3C3879FB9D0A262C474E6295AA9CD43EEDB',
+      base: 'ibc/6D4D77B47DC28CFA024F02949E0375DD4A8E1533F82DCEC3EF81874CFA61D8E3',
       name: 'FONTI Fantoken',
       display: 'fonti',
       symbol: 'FONTI',
@@ -614,12 +614,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-28',
+            channel_id: 'channel-30',
             base_denom: 'ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305',
             chain_name: 'bitsong'
           },
           chain: {
-            channel_id: 'channel-140'
+            channel_id: 'channel-145'
           }
         }
       ]
@@ -629,7 +629,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/2294E72A7AC390CA0CB492ED5DA6ECC644B340B904FA0E09A031119851AF4863',
+            'ibc/2D77EDF50D43BDEC29DAB89BB925D4BD2266D42BD5F9E434B6222EFFDBCDCED6',
           exponent: 0,
           aliases: ['ft52EEB0EE509AC546ED92EAC8591F731F213DDD16']
         },
@@ -638,7 +638,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/2294E72A7AC390CA0CB492ED5DA6ECC644B340B904FA0E09A031119851AF4863',
+      base: 'ibc/2D77EDF50D43BDEC29DAB89BB925D4BD2266D42BD5F9E434B6222EFFDBCDCED6',
       name: 'BlackJack Fantoken',
       display: 'bjks',
       symbol: 'BJKS',
@@ -654,12 +654,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-28',
+            channel_id: 'channel-30',
             base_denom: 'ft52EEB0EE509AC546ED92EAC8591F731F213DDD16',
             chain_name: 'bitsong'
           },
           chain: {
-            channel_id: 'channel-140'
+            channel_id: 'channel-145'
           }
         }
       ]
@@ -669,7 +669,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/42FEDD35C9988F001555C668F3BFDF631475E1A9BE1C6159B344149A669620DD',
+            'ibc/ED81064E3D4ACF9F1461C5824971BDE6AA03671A418C80FD742E53C66E86DB21',
           exponent: 0,
           aliases: ['ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A']
         },
@@ -678,7 +678,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/42FEDD35C9988F001555C668F3BFDF631475E1A9BE1C6159B344149A669620DD',
+      base: 'ibc/ED81064E3D4ACF9F1461C5824971BDE6AA03671A418C80FD742E53C66E86DB21',
       name: 'Rawanne Fantoken',
       display: 'rwne',
       symbol: 'RWNE',
@@ -694,12 +694,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-28',
+            channel_id: 'channel-30',
             base_denom: 'ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A',
             chain_name: 'bitsong'
           },
           chain: {
-            channel_id: 'channel-140'
+            channel_id: 'channel-145'
           }
         }
       ]
@@ -709,7 +709,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/D6BD2A7A0A96CCAD89F034C5957CF19A411879E97AED856E857BBF04DAA696BD',
+            'ibc/4CFC9605F9A7664D0689575FD95B194669248E0D6AB412C6C55A082622A2E1C6',
           exponent: 0,
           aliases: ['ft85AE1716C5E39EA6D64BBD7898C3899A7B500626']
         },
@@ -718,7 +718,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/D6BD2A7A0A96CCAD89F034C5957CF19A411879E97AED856E857BBF04DAA696BD',
+      base: 'ibc/4CFC9605F9A7664D0689575FD95B194669248E0D6AB412C6C55A082622A2E1C6',
       name: 'Enmoda Fantoken',
       display: 'enmoda',
       symbol: 'ENMODA',
@@ -734,12 +734,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-28',
+            channel_id: 'channel-30',
             base_denom: 'ft85AE1716C5E39EA6D64BBD7898C3899A7B500626',
             chain_name: 'bitsong'
           },
           chain: {
-            channel_id: 'channel-140'
+            channel_id: 'channel-145'
           }
         }
       ]
@@ -749,7 +749,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/8015700BD6A66AD17DDD9923D70568D9CBAFE6AAD40EBABA0711D895A43C2B1D',
+            'ibc/5CBABC751DCF84CF21599E0A872FE0F2AE720FE92C58F8B7B56EC5AC7C71F3B8',
           exponent: 0,
           aliases: ['ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A']
         },
@@ -758,7 +758,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/8015700BD6A66AD17DDD9923D70568D9CBAFE6AAD40EBABA0711D895A43C2B1D',
+      base: 'ibc/5CBABC751DCF84CF21599E0A872FE0F2AE720FE92C58F8B7B56EC5AC7C71F3B8',
       name: '404Deep Records Fantoken',
       display: '404dr',
       symbol: '404DR',
@@ -774,12 +774,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-28',
+            channel_id: 'channel-30',
             base_denom: 'ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A',
             chain_name: 'bitsong'
           },
           chain: {
-            channel_id: 'channel-140'
+            channel_id: 'channel-145'
           }
         }
       ]
@@ -789,7 +789,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/F70B30A909D9E2406ECBD21574A02FD6AF6D14227979AAB798D41E2D470ED8C2',
+            'ibc/DF8F3AF2AE7320982F61C8717971A29E53F1BC6DA9D60043F53EB218A914069C',
           exponent: 0,
           aliases: ['ft387C1C279D962ED80C09C1D592A92C4275FD7C5D']
         },
@@ -798,7 +798,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/F70B30A909D9E2406ECBD21574A02FD6AF6D14227979AAB798D41E2D470ED8C2',
+      base: 'ibc/DF8F3AF2AE7320982F61C8717971A29E53F1BC6DA9D60043F53EB218A914069C',
       name: 'N43 Fantoken',
       display: 'n43',
       symbol: 'N43',
@@ -814,12 +814,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-28',
+            channel_id: 'channel-30',
             base_denom: 'ft387C1C279D962ED80C09C1D592A92C4275FD7C5D',
             chain_name: 'bitsong'
           },
           chain: {
-            channel_id: 'channel-140'
+            channel_id: 'channel-145'
           }
         }
       ]
@@ -829,7 +829,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/487BBB62E9937A8ADCE5EDE18943C7D9BEECAE73860922EA1379AE5A65830D60',
+            'ibc/97C857DC6B5B4E3282F29E875F9E9BB85EEC306871A4CC13F187413ED51C5D07',
           exponent: 0,
           aliases: ['ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB']
         },
@@ -838,7 +838,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/487BBB62E9937A8ADCE5EDE18943C7D9BEECAE73860922EA1379AE5A65830D60',
+      base: 'ibc/97C857DC6B5B4E3282F29E875F9E9BB85EEC306871A4CC13F187413ED51C5D07',
       name: 'Puro Lobo Fantoken',
       display: 'lobo',
       symbol: 'LOBO',
@@ -854,12 +854,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-28',
+            channel_id: 'channel-30',
             base_denom: 'ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB',
             chain_name: 'bitsong'
           },
           chain: {
-            channel_id: 'channel-140'
+            channel_id: 'channel-145'
           }
         }
       ]
@@ -869,7 +869,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/40DA1D21045B26042DDF4575843C9BCAE473D664389F3554CB9BFD90AB5C207F',
+            'ibc/D41303C23C29301CCA81D0EDB0D4A71A3A7568078CB22BA9BAE8E8028DE75C9A',
           exponent: 0,
           aliases: ['ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B']
         },
@@ -878,7 +878,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/40DA1D21045B26042DDF4575843C9BCAE473D664389F3554CB9BFD90AB5C207F',
+      base: 'ibc/D41303C23C29301CCA81D0EDB0D4A71A3A7568078CB22BA9BAE8E8028DE75C9A',
       name: 'Vibranium Fantoken',
       display: 'vibra',
       symbol: 'VIBRA',
@@ -894,12 +894,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-28',
+            channel_id: 'channel-30',
             base_denom: 'ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B',
             chain_name: 'bitsong'
           },
           chain: {
-            channel_id: 'channel-140'
+            channel_id: 'channel-145'
           }
         }
       ]
@@ -909,7 +909,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/BF1C4B0607E64A760AFFAE13F2F15A9FBCF8454740EE70B6AD701D930BE4CB5B',
+            'ibc/14C6D9A5DF899570A7617DD1D9C1D02DBB2EEEDD6C381888F8FDDC22A6907E66',
           exponent: 0,
           aliases: ['ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE']
         },
@@ -918,7 +918,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/BF1C4B0607E64A760AFFAE13F2F15A9FBCF8454740EE70B6AD701D930BE4CB5B',
+      base: 'ibc/14C6D9A5DF899570A7617DD1D9C1D02DBB2EEEDD6C381888F8FDDC22A6907E66',
       name: 'Karina Fantoken',
       display: 'karina',
       symbol: 'KARINA',
@@ -934,12 +934,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-28',
+            channel_id: 'channel-30',
             base_denom: 'ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE',
             chain_name: 'bitsong'
           },
           chain: {
-            channel_id: 'channel-140'
+            channel_id: 'channel-145'
           }
         }
       ]
@@ -949,7 +949,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/8FB5249674D5DBC87E4066D316EAA5DC58E9ED4B0AD561275A88A129CA1FBC3C',
+            'ibc/D3E8AF07E28DFFEBC0178CC51DB22ED4762F360AF504BDB1B7D2790A66578B89',
           exponent: 0,
           aliases: ['ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12']
         },
@@ -958,7 +958,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/8FB5249674D5DBC87E4066D316EAA5DC58E9ED4B0AD561275A88A129CA1FBC3C',
+      base: 'ibc/D3E8AF07E28DFFEBC0178CC51DB22ED4762F360AF504BDB1B7D2790A66578B89',
       name: 'Luca Testa Fantoken',
       display: 'testa',
       symbol: 'TESTA',
@@ -974,12 +974,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-28',
+            channel_id: 'channel-30',
             base_denom: 'ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12',
             chain_name: 'bitsong'
           },
           chain: {
-            channel_id: 'channel-140'
+            channel_id: 'channel-145'
           }
         }
       ]
@@ -989,7 +989,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/E9E7CC47D7D8DC7BBCAD8655FC8DE50F97D794FFE132513A618683659E6AA594',
+            'ibc/E3D898BAD092CEB2722099C1A280DDDF37EB48B4E9808C024FD3AF686E47CB59',
           exponent: 0,
           aliases: ['ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3']
         },
@@ -998,7 +998,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/E9E7CC47D7D8DC7BBCAD8655FC8DE50F97D794FFE132513A618683659E6AA594',
+      base: 'ibc/E3D898BAD092CEB2722099C1A280DDDF37EB48B4E9808C024FD3AF686E47CB59',
       name: 'Carolina Marquez Fantoken',
       display: 'cmqz',
       symbol: 'CMQZ',
@@ -1014,12 +1014,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-28',
+            channel_id: 'channel-30',
             base_denom: 'ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3',
             chain_name: 'bitsong'
           },
           chain: {
-            channel_id: 'channel-140'
+            channel_id: 'channel-145'
           }
         }
       ]
@@ -1030,7 +1030,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/0139ABE32E1A867EDFF542A89F6212B8E0B5EA4749E8DA60CE581EDBCC7F49E2',
+            'ibc/77AB4C09BF89214CEA31FEC8E0C0AD5E660251EFF4303BC85333C6C0ECBFA695',
           exponent: 0,
           aliases: ['ft347B1612A2B7659913679CF6CD45B8B130C50A00']
         },
@@ -1039,7 +1039,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/0139ABE32E1A867EDFF542A89F6212B8E0B5EA4749E8DA60CE581EDBCC7F49E2',
+      base: 'ibc/77AB4C09BF89214CEA31FEC8E0C0AD5E660251EFF4303BC85333C6C0ECBFA695',
       name: '[Redacted] Fantoken (ft3...A00)',
       display: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00/6',
       symbol: 'LDON',
@@ -1047,12 +1047,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-28',
+            channel_id: 'channel-30',
             base_denom: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00',
             chain_name: 'bitsong'
           },
           chain: {
-            channel_id: 'channel-140'
+            channel_id: 'channel-145'
           }
         }
       ]
@@ -1972,6 +1972,50 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-21',
             base_denom: 'erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-22'
+          }
+        }
+      ]
+    },
+    {
+      description: 'The token of Crowdpunk DAO',
+      denom_units: [
+        {
+          denom:
+            'ibc/7107E690DF19ABABC671E80D15319D4493647134E0A7AD89F2BC236BB780B89D',
+          exponent: 0,
+          aliases: ['erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f']
+        },
+        {
+          denom: 'crowdp',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/7107E690DF19ABABC671E80D15319D4493647134E0A7AD89F2BC236BB780B89D',
+      name: 'Crowdpunk DAO',
+      display: 'crowdp',
+      address: '0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+      symbol: 'CROWDP',
+      type_asset: 'erc20',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-21',
+            base_denom: 'erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
             chain_name: 'evmos'
           },
           chain: {
@@ -5095,6 +5139,148 @@ const assets: AssetList = {
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/lsdshark.png'
+        }
+      ]
+    },
+    {
+      description: 'The native staking token of Terra.',
+      denom_units: [
+        {
+          denom:
+            'ibc/B739B13C81ED4FAFB036589761DEB88DABA83E044D8E41D976031BB63AC861AF',
+          exponent: 0,
+          aliases: [
+            'ibc/4627AD2524E3E0523047E35BB76CC90E37D9D57ACF14F0FCBCEB2480705F3CB8'
+          ]
+        },
+        {
+          denom: 'luna',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/B739B13C81ED4FAFB036589761DEB88DABA83E044D8E41D976031BB63AC861AF',
+      name: 'Luna',
+      display: 'luna',
+      symbol: 'LUNA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-53',
+            base_denom:
+              'ibc/4627AD2524E3E0523047E35BB76CC90E37D9D57ACF14F0FCBCEB2480705F3CB8',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-121'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
+      },
+      coingecko_id: 'terra-luna-2',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
+        }
+      ],
+      socials: {
+        website: 'https://www.terra.money/',
+        twitter: 'https://twitter.com/terra_money'
+      }
+    },
+    {
+      description: 'Rakoff Token',
+      denom_units: [
+        {
+          denom:
+            'ibc/5A0BB2E35F15C0D97EC65BCFCDBF895B51317B147916CB6CBA6783EBEF700284',
+          exponent: 0,
+          aliases: [
+            'ibc/44C29C91F202E20C8E28DFB1FA89B725C54171CD77B8948836C72E7A97E4A018'
+          ]
+        },
+        {
+          denom: 'Rakoff',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/5A0BB2E35F15C0D97EC65BCFCDBF895B51317B147916CB6CBA6783EBEF700284',
+      type_asset: 'ics20',
+      name: 'Rakoff',
+      display: 'Rakoff',
+      symbol: 'RAKOFF',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-53',
+            base_denom:
+              'ibc/44C29C91F202E20C8E28DFB1FA89B725C54171CD77B8948836C72E7A97E4A018',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-121'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rakoff.png'
+      },
+      images: [
+        {
+          image_sync: {
+            chain_name: 'terra',
+            base_denom:
+              'cw20:terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rakoff.png'
+        }
+      ]
+    },
+    {
+      description: 'GASH',
+      denom_units: [
+        {
+          denom:
+            'ibc/9C8FD0099CE1C45DF855483DE1740AA4DBA9D2DEB392B6C52BD91054CEFA21BB',
+          exponent: 0,
+          aliases: [
+            'factory/migaloo1r9x8fz4alekzr78k42rpmr9unpa7egsldpqeynmwl2nfvzexue9sn8l5rg/gash'
+          ]
+        },
+        {
+          denom: 'gash',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/9C8FD0099CE1C45DF855483DE1740AA4DBA9D2DEB392B6C52BD91054CEFA21BB',
+      name: 'GASH',
+      display: 'gash',
+      symbol: 'GASH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/gash.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/gash.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-53',
+            base_denom:
+              'factory/migaloo1r9x8fz4alekzr78k42rpmr9unpa7egsldpqeynmwl2nfvzexue9sn8l5rg/gash',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-121'
+          }
         }
       ]
     },

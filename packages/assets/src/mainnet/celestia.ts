@@ -1931,6 +1931,50 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'The token of Crowdpunk DAO',
+      denom_units: [
+        {
+          denom:
+            'ibc/D9E82D210741AE6724307330CB556759998C655FDE9A47B3A55C655F6ED3368D',
+          exponent: 0,
+          aliases: ['erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f']
+        },
+        {
+          denom: 'crowdp',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/D9E82D210741AE6724307330CB556759998C655FDE9A47B3A55C655F6ED3368D',
+      name: 'Crowdpunk DAO',
+      display: 'crowdp',
+      address: '0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+      symbol: 'CROWDP',
+      type_asset: 'erc20',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-106',
+            base_denom: 'erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-26'
+          }
+        }
+      ]
+    },
+    {
       description:
         'The INJ token is the native governance token for the Injective chain.',
       denom_units: [

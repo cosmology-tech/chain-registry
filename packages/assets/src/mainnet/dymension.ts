@@ -1980,6 +1980,50 @@ const assets: AssetList = {
       ]
     },
     {
+      description: 'The token of Crowdpunk DAO',
+      denom_units: [
+        {
+          denom:
+            'ibc/F852BFBCDAF997322A0DFBE14997B67463974BBE8E9C719167B5E1AB51B99012',
+          exponent: 0,
+          aliases: ['erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f']
+        },
+        {
+          denom: 'crowdp',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/F852BFBCDAF997322A0DFBE14997B67463974BBE8E9C719167B5E1AB51B99012',
+      name: 'Crowdpunk DAO',
+      display: 'crowdp',
+      address: '0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+      symbol: 'CROWDP',
+      type_asset: 'erc20',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-109',
+            base_denom: 'erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-37'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native staking and governance token of Kava',
       denom_units: [
         {

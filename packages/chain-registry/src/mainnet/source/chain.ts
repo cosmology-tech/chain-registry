@@ -100,6 +100,10 @@ const info: Chain = {
       {
         address: 'https://rpc.source.stakeup.tech',
         provider: 'StakeUp'
+      },
+      {
+        address: 'https://source_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -170,6 +174,10 @@ const info: Chain = {
       {
         address: 'https://api.source.stakeup.tech',
         provider: 'StakeUp'
+      },
+      {
+        address: 'https://source_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -287,6 +295,13 @@ const info: Chain = {
       tx_page: 'https://explorer.declab.pro/Source/tx/${txHash}',
       account_page:
         'https://explorer.declab.pro/Source/account/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/source',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/source/tx/${txHash}',
+      account_page:
+        'https://explorer.whenmoonwhenlambo.money/source/account/${accountAddress}'
     }
   ],
   images: [
