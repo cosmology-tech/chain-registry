@@ -164,6 +164,13 @@ const info: Chain = {
       url: 'https://ezstaking.app/canto',
       tx_page: 'https://ezstaking.app/canto/txs/${txHash}',
       account_page: 'https://ezstaking.app/canto/account/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Canto-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Canto-Mainnet/tx/${txHash}',
+      account_page:
+        'https://explorer.stavr.tech/Canto-Mainnet/account/${accountAddress}'
     }
   ],
   images: [

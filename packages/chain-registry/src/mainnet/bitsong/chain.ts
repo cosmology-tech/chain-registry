@@ -151,6 +151,10 @@ const info: Chain = {
       {
         address: 'https://bitsong-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://bitsong.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       }
     ],
     grpc: [
@@ -220,6 +224,13 @@ const info: Chain = {
       tx_page: 'https://explorer.safeblock.space/bitsong/tx/${txHash}',
       account_page:
         'https://explorer.safeblock.space/bitsong/account/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Bitsong',
+      tx_page: 'https://explorer.stavr.tech/Bitsong/tx/${txHash}',
+      account_page:
+        'https://explorer.stavr.tech/Bitsong/account/${accountAddress}'
     }
   ],
   images: [

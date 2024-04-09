@@ -72,6 +72,10 @@ const info: Chain = {
       {
         address: 'https://nibiru-rpc.cogwheel.zone',
         provider: 'Cogwheel ⚙️'
+      },
+      {
+        address: 'https://nibiru.rpc.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ],
     rest: [
@@ -102,6 +106,14 @@ const info: Chain = {
       {
         address: 'https://nibiru-api.cogwheel.zone',
         provider: 'Cogwheel ⚙️'
+      },
+      {
+        address: 'https://nibiru.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://nibiru.api.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ],
     grpc: [
@@ -132,6 +144,10 @@ const info: Chain = {
       {
         address: 'nibiru-grpc.cogwheel.zone:443',
         provider: 'Cogwheel ⚙️'
+      },
+      {
+        address: 'https://nibiru.grpc.nodeshub.online',
+        provider: 'Nodes Hub'
       }
     ]
   },
@@ -155,6 +171,20 @@ const info: Chain = {
       tx_page: 'https://mainnet.explorer.liveraven.net/nibiru/tx/${txHash}',
       account_page:
         'https://mainnet.explorer.liveraven.net/nibiru/account/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Nibiru-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Nibiru-Mainnet/tx/${txHash}',
+      account_page:
+        'https://explorer.stavr.tech/Nibiru-Mainnet/account/${accountAddress}'
+    },
+    {
+      kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
+      url: 'https://explorer.nodeshub.online/nibiru/',
+      tx_page: 'https://explorer.nodeshub.online/nibiru/tx/${txHash}',
+      account_page:
+        'https://explorer.nodeshub.online/nibiru/accounts/${accountAddress}'
     }
   ],
   images: [

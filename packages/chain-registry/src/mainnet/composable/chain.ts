@@ -130,6 +130,10 @@ const info: Chain = {
       {
         address: 'https://composable.api.moonbridge.team',
         provider: 'Moonbridge'
+      },
+      {
+        address: 'https://composable.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       }
     ],
     grpc: [
@@ -212,6 +216,11 @@ const info: Chain = {
       tx_page: 'https://exp.stakevillage.net/composable/tx/${txHash}',
       account_page:
         'https://exp.stakevillage.net/composable/account/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Composable-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Composable-Mainnet/tx/${txHash}'
     }
   ],
   images: [

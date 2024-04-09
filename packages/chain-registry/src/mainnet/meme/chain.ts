@@ -69,6 +69,10 @@ const info: Chain = {
       {
         address: 'https://meme.api.m.anode.team',
         provider: 'ANODE TEAM'
+      },
+      {
+        address: 'https://meme.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       }
     ],
     grpc: [
@@ -112,6 +116,12 @@ const info: Chain = {
       tx_page: 'https://explorer.stake-take.com/meme/tx/${txHash}',
       account_page:
         'https://explorer.stake-take.com/meme/account/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Meme',
+      tx_page: 'https://explorer.stavr.tech/Meme/tx/${txHash}',
+      account_page: 'https://explorer.stavr.tech/Meme/account/${accountAddress}'
     }
   ],
   images: [

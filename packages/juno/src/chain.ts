@@ -162,6 +162,10 @@ const chain: Chain = {
       {
         address: 'https://juno.declab.pro:26610',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'https://juno.rpc.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ],
     rest: [
@@ -268,6 +272,10 @@ const chain: Chain = {
       {
         address: 'http://juno.api.staking-explorer.com',
         provider: 'Daily DROP'
+      },
+      {
+        address: 'https://juno.api.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ],
     grpc: [
@@ -350,6 +358,10 @@ const chain: Chain = {
       {
         address: 'https://juno.declab.pro:9007',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'https://juno.grpc.nodeshub.online',
+        provider: 'Nodes Hub'
       }
     ]
   },
@@ -403,6 +415,13 @@ const chain: Chain = {
       kind: 'Decloud Nodes Lab',
       url: 'https://explorer.declab.pro/Juno',
       tx_page: 'https://explorer.declab.pro/Juno/tx/${txHash}'
+    },
+    {
+      kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
+      url: 'https://explorer.nodeshub.online/juno/',
+      tx_page: 'https://explorer.nodeshub.online/juno/tx/${txHash}',
+      account_page:
+        'https://explorer.nodeshub.online/juno/accounts/${accountAddress}'
     }
   ],
   images: [

@@ -146,6 +146,14 @@ const info: Chain = {
       {
         address: 'https://rpc.bcna.sopko.net:443',
         provider: '🐔 The Chicken Coop 🦝 Homestead'
+      },
+      {
+        address: 'https://bitcanna_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://bitcanna.rpc.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ],
     grpc: [
@@ -208,6 +216,10 @@ const info: Chain = {
       {
         address: 'grpc.bitcanna.safeblock.space:9090',
         provider: 'Safe Block'
+      },
+      {
+        address: 'https://bitcanna.grpc.nodeshub.online',
+        provider: 'Nodes Hub'
       }
     ],
     rest: [
@@ -310,6 +322,14 @@ const info: Chain = {
       {
         address: 'https://bitcanna-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://bitcanna_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://bitcanna.api.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ]
   },
@@ -378,6 +398,20 @@ const info: Chain = {
       tx_page: 'https://explorer.safeblock.space/bitcanna/tx/${txHash}',
       account_page:
         'https://explorer.safeblock.space/bitcanna/account/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/bitcanna',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/bitcanna/tx/${txHash}',
+      account_page:
+        'https://explorer.whenmoonwhenlambo.money/bitcanna/account/${accountAddress}'
+    },
+    {
+      kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
+      url: 'https://explorer.nodeshub.online/bitcanna/',
+      tx_page: 'https://explorer.nodeshub.online/bitcanna/tx/${txHash}',
+      account_page:
+        'https://explorer.nodeshub.online/bitcanna/accounts/${accountAddress}'
     }
   ],
   images: [

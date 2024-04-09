@@ -133,6 +133,7 @@ import * as _sentinel from './sentinel';
 import * as _sge from './sge';
 import * as _shareledger from './shareledger';
 import * as _shentu from './shentu';
+import * as _shido from './shido';
 import * as _sifchain from './sifchain';
 import * as _six from './six';
 import * as _sommelier from './sommelier';
@@ -292,6 +293,7 @@ const chains: Chain[] = [
   _sge.chain,
   _shareledger.chain,
   _shentu.chain,
+  _shido.chain,
   _sifchain.chain,
   _six.chain,
   _sommelier.chain,

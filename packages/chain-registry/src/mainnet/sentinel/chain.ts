@@ -93,6 +93,10 @@ const info: Chain = {
       {
         address: 'https://sentinel.declab.pro:26628',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'https://sentinel.rpc.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ],
     rest: [
@@ -143,6 +147,10 @@ const info: Chain = {
       {
         address: 'https://sentinel.declab.pro:443',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'https://sentinel.api.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ],
     grpc: [
@@ -169,6 +177,10 @@ const info: Chain = {
       {
         address: 'https://sentinel.declab.pro:9019',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'https://sentinel.grpc.nodeshub.online',
+        provider: 'Nodes Hub'
       }
     ]
   },
@@ -209,6 +221,13 @@ const info: Chain = {
       kind: 'Decloud Nodes Lab',
       url: 'https://explorer.declab.pro/Sentinel',
       tx_page: 'https://explorer.declab.pro/Sentinel/tx/${txHash}'
+    },
+    {
+      kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
+      url: 'https://explorer.nodeshub.online/sentinel/',
+      tx_page: 'https://explorer.nodeshub.online/sentinel/tx/${txHash}',
+      account_page:
+        'https://explorer.nodeshub.online/sentinel/accounts/${accountAddress}'
     }
   ],
   images: [

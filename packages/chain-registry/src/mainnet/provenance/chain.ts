@@ -88,6 +88,10 @@ const info: Chain = {
         provider: 'Figure'
       },
       {
+        address: 'https://provenance.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'https://api-provenance-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
       },
@@ -154,6 +158,13 @@ const info: Chain = {
       tx_page: 'https://www.mintscan.io/provenance/transactions/${txHash}',
       account_page:
         'https://www.mintscan.io/provenance/accounts/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Provenance',
+      tx_page: 'https://explorer.stavr.tech/Provenance/txs/${txHash}',
+      account_page:
+        'https://explorer.stavr.tech/Provenance/account/${accountAddress}'
     },
     {
       kind: 'ezstaking',

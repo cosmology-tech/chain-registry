@@ -132,6 +132,7 @@ import * as _sentinel from './sentinel';
 import * as _sge from './sge';
 import * as _shareledger from './shareledger';
 import * as _shentu from './shentu';
+import * as _shido from './shido';
 import * as _sifchain from './sifchain';
 import * as _six from './six';
 import * as _sommelier from './sommelier';
@@ -289,6 +290,7 @@ const assets: AssetList[] = [
   _sge.assets,
   _shareledger.assets,
   _shentu.assets,
+  _shido.assets,
   _sifchain.assets,
   _six.assets,
   _sommelier.assets,

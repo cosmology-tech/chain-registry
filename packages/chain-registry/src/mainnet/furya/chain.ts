@@ -60,12 +60,20 @@ const info: Chain = {
       {
         address: 'https://furya.api.nodeshub.online',
         provider: 'Furya Genesis Validator'
+      },
+      {
+        address: 'https://furya.api.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ],
     grpc: [
       {
         address: 'grpc.furya.xyz:443',
         provider: 'Furya Genesis Validator'
+      },
+      {
+        address: 'https://furya.grpc.nodeshub.online',
+        provider: 'Nodes Hub'
       }
     ]
   },

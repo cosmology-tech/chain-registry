@@ -52,6 +52,10 @@ const info: Chain = {
       {
         address: 'https://persistence-testnet-rpc.polkachu.com/',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://xprt-trpc.antrixy.org/',
+        provider: 'Antrix Validators'
       }
     ],
     rest: [
@@ -74,12 +78,20 @@ const info: Chain = {
       {
         address: 'https://persistence-testnet-api.polkachu.com/',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://xprt-trest.antrixy.org/',
+        provider: 'Antrix Validators'
       }
     ],
     grpc: [
       {
         address: 'persistence-testnet-grpc.polkachu.com:15490',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://xprt-tgrpc.antrixy.org/',
+        provider: 'Antrix Validators'
       }
     ]
   },

@@ -85,6 +85,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/fetchhub/rpc',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://fetch.rpc.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ],
     rest: [
@@ -139,6 +143,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/fetchhub/rest',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://fetch.api.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ],
     grpc: [
@@ -177,6 +185,10 @@ const info: Chain = {
       {
         address: 'fetch-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'fetch.grpc.nodeshub.online',
+        provider: 'Nodes Hub'
       }
     ]
   },
@@ -221,6 +233,13 @@ const info: Chain = {
         'https://fetchstation.azoyalabs.com/mainnet/explorer/transactions/${txHash}',
       account_page:
         'https://fetchstation.azoyalabs.com/mainnet/explorer/address/${accountAddress}'
+    },
+    {
+      kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
+      url: 'https://explorer.nodeshub.online/fetchhub/',
+      tx_page: 'https://explorer.nodeshub.online/fetchhub/tx/${txHash}',
+      account_page:
+        'https://explorer.nodeshub.online/fetchhub/accounts/${accountAddress}'
     }
   ],
   images: [

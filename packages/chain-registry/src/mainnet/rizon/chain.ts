@@ -69,6 +69,10 @@ const info: Chain = {
       {
         address: 'https://rizon-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://rizon.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       }
     ],
     grpc: [
@@ -111,6 +115,13 @@ const info: Chain = {
       url: 'https://bigdipper.live/rizon',
       tx_page: 'https://bigdipper.live/rizon/transactions/${txHash}',
       account_page: 'https://bigdipper.live/rizon/accounts/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Rizon',
+      tx_page: 'https://explorer.stavr.tech/Rizon/tx/${txHash}',
+      account_page:
+        'https://explorer.stavr.tech/Rizon/accounts/${accountAddress}'
     }
   ],
   images: [

@@ -92,6 +92,10 @@ const info: Chain = {
       {
         address: 'https://chihuahua-rpc.ibs.team',
         provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://chihuahua.rpc.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ],
     rest: [
@@ -142,6 +146,10 @@ const info: Chain = {
       {
         address: 'https://chihuahua-api.ibs.team',
         provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://chihuahua.api.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ],
     grpc: [
@@ -176,6 +184,10 @@ const info: Chain = {
       {
         address: 'grpc.chihuahua.validatus.com:443',
         provider: 'Validatus'
+      },
+      {
+        address: 'chihuahua.grpc.nodeshub.online',
+        provider: 'Nodes Hub'
       }
     ]
   },
@@ -208,6 +220,13 @@ const info: Chain = {
       url: 'https://ezstaking.app/chihuahua',
       tx_page: 'https://ezstaking.app/chihuahua/txs/${txHash}',
       account_page: 'https://ezstaking.app/chihuahua/account/${accountAddress}'
+    },
+    {
+      kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
+      url: 'https://explorer.nodeshub.online/chihuahua/',
+      tx_page: 'https://explorer.nodeshub.online/chihuahua/tx/${txHash}',
+      account_page:
+        'https://explorer.nodeshub.online/chihuahua/accounts/${accountAddress}'
     }
   ],
   images: [

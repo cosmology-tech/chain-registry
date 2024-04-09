@@ -438,6 +438,13 @@ const info: Chain = {
       tx_page: 'https://exp.stakevillage.net/evmos/tx/${txHash}',
       account_page:
         'https://exp.stakevillage.net/evmos/accounts/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/evmos',
+      tx_page: 'https://explorer.stavr.tech/evmos/tx/${txHash}',
+      account_page:
+        'https://explorer.stavr.tech/evmos/accounts/${accountAddress}'
     }
   ],
   images: [

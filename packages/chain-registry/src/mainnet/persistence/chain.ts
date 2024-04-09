@@ -124,6 +124,10 @@ const info: Chain = {
         provider: 'Stakewolle'
       },
       {
+        address: 'https://xprt-rpc.antrixy.org/',
+        provider: 'Antrix Validators'
+      },
+      {
         address: 'https://persistence-rpc.stake-town.com',
         provider: 'StakeTown'
       }
@@ -206,6 +210,10 @@ const info: Chain = {
         provider: 'Stakewolle'
       },
       {
+        address: 'https://xprt-rest.antrixy.org/',
+        provider: 'Antrix Validators'
+      },
+      {
         address: 'https://persistence-api.stake-town.com',
         provider: 'StakeTown'
       }
@@ -262,6 +270,10 @@ const info: Chain = {
       {
         address: 'grpc.persistence.validatus.com',
         provider: 'Validatus'
+      },
+      {
+        address: 'https://xprt-grpc.antrixy.org/',
+        provider: 'Antrix Validators'
       },
       {
         address: 'persistence-grpc.stake-town.com:443',

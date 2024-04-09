@@ -302,6 +302,13 @@ const info: Chain = {
       tx_page: 'https://explorer.whenmoonwhenlambo.money/source/tx/${txHash}',
       account_page:
         'https://explorer.whenmoonwhenlambo.money/source/account/${accountAddress}'
+    },
+    {
+      kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
+      url: 'https://explorer.nodeshub.online/source/',
+      tx_page: 'https://explorer.nodeshub.online/source/tx/${txHash}',
+      account_page:
+        'https://explorer.nodeshub.online/source/accounts/${accountAddress}'
     }
   ],
   images: [

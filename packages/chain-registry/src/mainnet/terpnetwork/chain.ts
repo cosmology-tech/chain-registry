@@ -55,6 +55,10 @@ const info: Chain = {
       {
         address: ' https://terp.api.nodex.one:443',
         provider: 'nodex.one'
+      },
+      {
+        address: 'https://terp.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       }
     ],
     grpc: [
@@ -87,18 +91,18 @@ const info: Chain = {
         'https://explorer.nodestake.top/terp/account/{$accountAddress}'
     },
     {
-      kind: '🔥STAVR🔥',
-      url: 'https://explorer.stavr.tech/Terp-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Terp-Mainnet/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Terp-Mainnet/account/{$accountAddress}'
-    },
-    {
       kind: 'ZenChainLabs',
       url: 'https://terp.zenscan.io/',
       tx_page: 'https://terp.zenscan.io/transaction.php?hash=${txHash}',
       account_page:
         'https://terp.zenscan.io/address.php?address=${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Terp-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Terp-Mainnet/tx/${txHash}',
+      account_page:
+        'https://explorer.stavr.tech/Terp-Mainnet/account/{$accountAddress}'
     }
   ],
   images: [

@@ -53,6 +53,10 @@ const info: Chain = {
       {
         address: 'https://zetachain-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://zetachain.rpc.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ],
     rest: [
@@ -75,6 +79,10 @@ const info: Chain = {
       {
         address: 'https://zetachain-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://zetachain.api.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ],
     grpc: [
@@ -89,6 +97,10 @@ const info: Chain = {
       {
         address: 'zetachain-grpc.noders.services:28090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://zetachain.grpc.nodeshub.online',
+        provider: 'Nodes Hub'
       }
     ]
   },
@@ -107,6 +119,13 @@ const info: Chain = {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.org/zetachain',
       tx_page: 'https://explorer.nodestake.org/zetachain/tx/${txHash}'
+    },
+    {
+      kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
+      url: 'https://explorer.nodeshub.online/zetachain/',
+      tx_page: 'https://explorer.nodeshub.online/zetachain/tx/${txHash}',
+      account_page:
+        'https://explorer.nodeshub.online/zetachain/accounts/${accountAddress}'
     }
   ]
 };

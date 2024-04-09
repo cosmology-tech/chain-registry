@@ -40,18 +40,30 @@ const info: Chain = {
       {
         address: 'https://px-json.pundix.com',
         provider: 'Pundi X'
+      },
+      {
+        address: 'https://pundix.rpc.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ],
     rest: [
       {
         address: 'https://px-rest.pundix.com',
         provider: 'Pundi X'
+      },
+      {
+        address: 'https://pundix.api.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ],
     grpc: [
       {
         address: 'https://px-grpc.pundix.com',
         provider: 'Pundi X'
+      },
+      {
+        address: 'https://pundix.grpc.nodeshub.online',
+        provider: 'Nodes Hub'
       }
     ]
   },
@@ -74,6 +86,13 @@ const info: Chain = {
       url: 'https://starscan.io',
       tx_page: 'https://starscan.io/pundix/tx/${txHash}',
       account_page: 'https://starscan.io/pundix/address/${accountAddress}'
+    },
+    {
+      kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
+      url: 'https://explorer.nodeshub.online/pundix/',
+      tx_page: 'https://explorer.nodeshub.online/pundix/tx/${txHash}',
+      account_page:
+        'https://explorer.nodeshub.online/pundix/accounts/${accountAddress}'
     }
   ]
 };
