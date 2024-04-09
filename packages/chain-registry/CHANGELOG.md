@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.33.24 (2024-04-09)
+
+**Note:** Version bump only for package chain-registry
+
+
+
+
+
 ## [1.33.23](https://github.com/cosmology-tech/chain-registry/compare/chain-registry@1.33.22...chain-registry@1.33.23) (2024-04-08)
 
 **Note:** Version bump only for package chain-registry
