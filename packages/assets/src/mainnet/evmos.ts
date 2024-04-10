@@ -21756,6 +21756,48 @@ const assets: AssetList = {
       ]
     },
     {
+      description: "Stride's liquid staked SAGA",
+      denom_units: [
+        {
+          denom:
+            'ibc/2B2116654ECB60090F1D4CE7EC50F3C8CCED44F9E9E25AB29D6B289043063489',
+          exponent: 0,
+          aliases: ['stusaga']
+        },
+        {
+          denom: 'stSAGA',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/2B2116654ECB60090F1D4CE7EC50F3C8CCED44F9E9E25AB29D6B289043063489',
+      name: 'Stride Staked SAGA',
+      display: 'stSAGA',
+      symbol: 'stSAGA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-9',
+            base_denom: 'stusaga',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-25'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.svg'
+        }
+      ]
+    },
+    {
       description: 'The native token of Tgrade',
       denom_units: [
         {

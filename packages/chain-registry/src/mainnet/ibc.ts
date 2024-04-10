@@ -93,6 +93,7 @@ import * as _persistence from './persistence';
 import * as _planq from './planq';
 import * as _quicksilver from './quicksilver';
 import * as _regen from './regen';
+import * as _saga from './saga';
 import * as _secretnetwork from './secretnetwork';
 import * as _sei from './sei';
 import * as _sentinel from './sentinel';
@@ -196,6 +197,7 @@ const ibc: IBCInfo[] = [
   ..._planq.ibc_chain1,
   ..._quicksilver.ibc_chain1,
   ..._regen.ibc_chain1,
+  ..._saga.ibc_chain1,
   ..._secretnetwork.ibc_chain1,
   ..._sei.ibc_chain1,
   ..._sentinel.ibc_chain1,

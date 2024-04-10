@@ -20027,6 +20027,48 @@ const assets: AssetList = {
       ]
     },
     {
+      description: "Stride's liquid staked SAGA",
+      denom_units: [
+        {
+          denom:
+            'ibc/8BA815042862996AFBFB65441A4CA8CFA4A34CCAF55614ACF6058687036AC813',
+          exponent: 0,
+          aliases: ['stusaga']
+        },
+        {
+          denom: 'stSAGA',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/8BA815042862996AFBFB65441A4CA8CFA4A34CCAF55614ACF6058687036AC813',
+      name: 'Stride Staked SAGA',
+      display: 'stSAGA',
+      symbol: 'stSAGA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-148',
+            base_denom: 'stusaga',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-59'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.svg'
+        }
+      ]
+    },
+    {
       description: 'The native token of Umee',
       denom_units: [
         {

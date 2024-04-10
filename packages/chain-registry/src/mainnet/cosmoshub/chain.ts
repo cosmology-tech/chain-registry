@@ -380,12 +380,6 @@ const info: Chain = {
       tx_page: 'https://ping.pub/cosmos/tx/${txHash}'
     },
     {
-      kind: 'bigdipper',
-      url: 'https://bigdipper.live/cosmos',
-      tx_page: 'https://bigdipper.live/cosmos/transactions/${txHash}',
-      account_page: 'https://bigdipper.live/cosmos/accounts/${accountAddress}'
-    },
-    {
       kind: 'atomscan',
       url: 'https://atomscan.com',
       tx_page: 'https://atomscan.com/transactions/${txHash}',

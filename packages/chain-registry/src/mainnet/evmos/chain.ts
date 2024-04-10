@@ -32,7 +32,7 @@ const info: Chain = {
     ]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.5-evmos.2'
+    cosmos_sdk_version: 'evmos/cosmos-sdk v0.47.5-evmos.2'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
@@ -394,12 +394,6 @@ const info: Chain = {
       url: 'https://www.mintscan.io/evmos',
       tx_page: 'https://www.mintscan.io/evmos/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/evmos/accounts/${accountAddress}'
-    },
-    {
-      kind: 'bigdipper',
-      url: 'https://bigdipper.live/evmos',
-      tx_page: 'https://bigdipper.live/evmos/transactions/${txHash}',
-      account_page: 'https://bigdipper.live/evmos/accounts/${accountAddress}'
     },
     {
       kind: 'blockscout',

@@ -3023,6 +3023,49 @@ const assets: AssetList = {
       ]
     },
     {
+      description: '$ATOM to $1,000 LFG!!',
+      denom_units: [
+        {
+          denom:
+            'ibc/99FE6941AEB59FD59295FD31E9FF01D98DE1A49422D1A8D94F9F062C228AB8D1',
+          exponent: 0,
+          aliases: [
+            'factory/neutron13lkh47msw28yynspc5rnmty3yktk43wc3dsv0l/ATOM1KLFG'
+          ]
+        },
+        {
+          denom: 'ATOM1KLFG',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/99FE6941AEB59FD59295FD31E9FF01D98DE1A49422D1A8D94F9F062C228AB8D1',
+      name: 'ATOM1KLFG',
+      display: 'ATOM1KLFG',
+      symbol: 'ATOM1KLFG',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ATOM1KLFGc.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ATOM1KLFGc.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-16',
+            base_denom:
+              'factory/neutron13lkh47msw28yynspc5rnmty3yktk43wc3dsv0l/ATOM1KLFG',
+            chain_name: 'neutron'
+          },
+          chain: {
+            channel_id: 'channel-37'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Osmosis',
       denom_units: [
         {

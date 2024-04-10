@@ -6729,6 +6729,49 @@ const assets: AssetList = {
       ]
     },
     {
+      description: '$ATOM to $1,000 LFG!!',
+      denom_units: [
+        {
+          denom:
+            'ibc/B31E4697E9188C53A792580C67BBAEE8BCDD1A0BDC1787CCFC69E1217EAD5D42',
+          exponent: 0,
+          aliases: [
+            'factory/neutron13lkh47msw28yynspc5rnmty3yktk43wc3dsv0l/ATOM1KLFG'
+          ]
+        },
+        {
+          denom: 'ATOM1KLFG',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/B31E4697E9188C53A792580C67BBAEE8BCDD1A0BDC1787CCFC69E1217EAD5D42',
+      name: 'ATOM1KLFG',
+      display: 'ATOM1KLFG',
+      symbol: 'ATOM1KLFG',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ATOM1KLFGc.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ATOM1KLFGc.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom:
+              'factory/neutron13lkh47msw28yynspc5rnmty3yktk43wc3dsv0l/ATOM1KLFG',
+            chain_name: 'neutron'
+          },
+          chain: {
+            channel_id: 'channel-123'
+          }
+        }
+      ]
+    },
+    {
       description: 'The native token of Osmosis',
       denom_units: [
         {
@@ -21391,6 +21434,67 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
       }
+    },
+    {
+      description: 'The native staking and governance token of Saga.',
+      extended_description:
+        'Saga is a Layer 1 protocol that allows developers to automatically spin up VM-agnostic, parallelized and interoperable dedicated chains, or “Chainlets,” that provide applications with infinite horizontal scalability. Each Chainlet is a replica of the Saga Mainnet, with the same validator set and security model.\n\nSaga’s mission is to enable the next 1000 chains in gaming and entertainment as part of the growing Saga Multiverse.',
+      denom_units: [
+        {
+          denom:
+            'ibc/520D9C4509027DE66C737A1D6A6021915A3071E30DBA8F758B46532B060D7AA5',
+          exponent: 0,
+          aliases: ['usaga']
+        },
+        {
+          denom: 'saga',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/520D9C4509027DE66C737A1D6A6021915A3071E30DBA8F758B46532B060D7AA5',
+      name: 'Saga',
+      display: 'saga',
+      symbol: 'SAGA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg'
+      },
+      coingecko_id: 'saga-2',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg',
+          theme: {
+            primary_color_hex: '#000000',
+            dark_mode: false
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga_white.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga_white.svg',
+          theme: {
+            primary_color_hex: '#FFFFFF',
+            dark_mode: true
+          }
+        }
+      ],
+      socials: {
+        webiste: 'https://www.saga.xyz/',
+        twitter: 'https://twitter.com/Sagaxyz__'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'usaga',
+            chain_name: 'saga'
+          },
+          chain: {
+            channel_id: 'channel-213'
+          }
+        }
+      ]
     },
     {
       description: 'The native token of Secret Network',

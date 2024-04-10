@@ -84,6 +84,10 @@ const info: Chain = {
       {
         address: 'https://kyve-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://kyve_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -130,6 +134,10 @@ const info: Chain = {
       {
         address: 'https://kyve-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://kyve_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -205,6 +213,13 @@ const info: Chain = {
       url: 'https://explorer.declab.pro/Kyve',
       tx_page: 'https://explorer.declab.pro/Kyve/txs/${txHash}',
       account_page: 'https://explorer.declab.pro/Kyve/account/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/kyve',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/kyve/txs/${txHash}',
+      account_page:
+        'https://explorer.whenmoonwhenlambo.money/kyve/account/${accountAddress}'
     }
   ],
   images: [

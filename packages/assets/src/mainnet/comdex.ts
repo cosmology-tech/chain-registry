@@ -17804,6 +17804,48 @@ const assets: AssetList = {
       ]
     },
     {
+      description: "Stride's liquid staked SAGA",
+      denom_units: [
+        {
+          denom:
+            'ibc/E7A878E12F14A032CBCFAA603B957D1798D1AA48D7004717A4864E053C32B304',
+          exponent: 0,
+          aliases: ['stusaga']
+        },
+        {
+          denom: 'stSAGA',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/E7A878E12F14A032CBCFAA603B957D1798D1AA48D7004717A4864E053C32B304',
+      name: 'Stride Staked SAGA',
+      display: 'stSAGA',
+      symbol: 'stSAGA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-49',
+            base_denom: 'stusaga',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-45'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.svg'
+        }
+      ]
+    },
+    {
       description: 'The native staking token of Terra.',
       denom_units: [
         {

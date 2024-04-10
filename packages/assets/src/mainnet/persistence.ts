@@ -5296,6 +5296,49 @@ const assets: AssetList = {
       ]
     },
     {
+      description: '$ATOM to $1,000 LFG!!',
+      denom_units: [
+        {
+          denom:
+            'ibc/1AE9B6C1221ECFEC1759B9D07211D59851F077F162D7FF6AFA342312F1F40905',
+          exponent: 0,
+          aliases: [
+            'factory/neutron13lkh47msw28yynspc5rnmty3yktk43wc3dsv0l/ATOM1KLFG'
+          ]
+        },
+        {
+          denom: 'ATOM1KLFG',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/1AE9B6C1221ECFEC1759B9D07211D59851F077F162D7FF6AFA342312F1F40905',
+      name: 'ATOM1KLFG',
+      display: 'ATOM1KLFG',
+      symbol: 'ATOM1KLFG',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ATOM1KLFGc.png'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ATOM1KLFGc.png'
+        }
+      ],
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-49',
+            base_denom:
+              'factory/neutron13lkh47msw28yynspc5rnmty3yktk43wc3dsv0l/ATOM1KLFG',
+            chain_name: 'neutron'
+          },
+          chain: {
+            channel_id: 'channel-136'
+          }
+        }
+      ]
+    },
+    {
       description: 'The permissioned staking asset for Noble Chain',
       denom_units: [
         {
@@ -20872,6 +20915,48 @@ const assets: AssetList = {
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsomm.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsomm.svg'
+        }
+      ]
+    },
+    {
+      description: "Stride's liquid staked SAGA",
+      denom_units: [
+        {
+          denom:
+            'ibc/8014FBF4296E7BAF5D217C487E435A0716D241730854E647F34B28482B2C4639',
+          exponent: 0,
+          aliases: ['stusaga']
+        },
+        {
+          denom: 'stSAGA',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/8014FBF4296E7BAF5D217C487E435A0716D241730854E647F34B28482B2C4639',
+      name: 'Stride Staked SAGA',
+      display: 'stSAGA',
+      symbol: 'stSAGA',
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-53',
+            base_denom: 'stusaga',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-67'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.svg'
+      },
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.svg'
         }
       ]
     },

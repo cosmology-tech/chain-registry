@@ -154,6 +154,10 @@ const info: Chain = {
       {
         address: 'https://bitcanna.rpc.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://rpc-bitcanna.cryptech.com.ua',
+        provider: 'CrypTech'
       }
     ],
     grpc: [
@@ -220,6 +224,10 @@ const info: Chain = {
       {
         address: 'https://bitcanna.grpc.nodeshub.online',
         provider: 'Nodes Hub'
+      },
+      {
+        address: 'https://grpc-bitcanna.cryptech.com.ua',
+        provider: 'CrypTech'
       }
     ],
     rest: [
@@ -330,6 +338,10 @@ const info: Chain = {
       {
         address: 'https://bitcanna.api.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://api-bitcanna.cryptech.com.ua',
+        provider: 'CrypTech'
       }
     ]
   },
@@ -412,6 +424,13 @@ const info: Chain = {
       tx_page: 'https://explorer.nodeshub.online/bitcanna/tx/${txHash}',
       account_page:
         'https://explorer.nodeshub.online/bitcanna/accounts/${accountAddress}'
+    },
+    {
+      kind: 'CrypTech Explorer',
+      url: 'https://explorers.cryptech.com.ua/bitcanna',
+      tx_page: 'https://explorers.cryptech.com.ua/bitcanna/txs/${txHash}',
+      account_page:
+        'https://explorers.cryptech.com.ua/bitcanna/account/${accountAddress}'
     }
   ],
   images: [

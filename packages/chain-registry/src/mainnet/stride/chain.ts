@@ -104,6 +104,13 @@ const info: Chain = {
         low_gas_price: 15000000000,
         average_gas_price: 15000000000,
         high_gas_price: 20000000000
+      },
+      {
+        denom: 'stusaga',
+        fixed_min_gas_price: 0.01,
+        low_gas_price: 0.01,
+        average_gas_price: 0.015,
+        high_gas_price: 0.03
       }
     ]
   },
@@ -348,12 +355,6 @@ const info: Chain = {
       url: 'https://www.mintscan.io/stride',
       tx_page: 'https://www.mintscan.io/stride/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/stride/accounts/${accountAddress}'
-    },
-    {
-      kind: 'bigdipper',
-      url: 'https://bigdipper.live/stride',
-      tx_page: 'https://bigdipper.live/stride/transactions/${txHash}',
-      account_page: 'https://bigdipper.live/stride/accounts/${accountAddress}'
     },
     {
       kind: 'atomscan',

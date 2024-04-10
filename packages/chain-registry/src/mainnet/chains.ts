@@ -29,6 +29,7 @@ import * as _chihuahua from './chihuahua';
 import * as _chimba from './chimba';
 import * as _chronicnetwork from './chronicnetwork';
 import * as _cifer from './cifer';
+import * as _cifer1 from './cifer1';
 import * as _comdex from './comdex';
 import * as _commercionetwork from './commercionetwork';
 import * as _composable from './composable';
@@ -126,6 +127,7 @@ import * as _realio from './realio';
 import * as _rebus from './rebus';
 import * as _regen from './regen';
 import * as _rizon from './rizon';
+import * as _saga from './saga';
 import * as _scorum from './scorum';
 import * as _secretnetwork from './secretnetwork';
 import * as _sei from './sei';
@@ -189,6 +191,7 @@ const chains: Chain[] = [
   _chimba.chain,
   _chronicnetwork.chain,
   _cifer.chain,
+  _cifer1.chain,
   _comdex.chain,
   _commercionetwork.chain,
   _composable.chain,
@@ -286,6 +289,7 @@ const chains: Chain[] = [
   _rebus.chain,
   _regen.chain,
   _rizon.chain,
+  _saga.chain,
   _scorum.chain,
   _secretnetwork.chain,
   _sei.chain,

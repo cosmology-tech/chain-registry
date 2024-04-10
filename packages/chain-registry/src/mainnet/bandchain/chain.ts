@@ -226,12 +226,6 @@ const info: Chain = {
         'https://atomscan.com/band-protocol/accounts/${accountAddress}'
     },
     {
-      kind: 'bigdipper',
-      url: 'https://bigdipper.live/band',
-      tx_page: 'https://bigdipper.live/band/transactions/${txHash}',
-      account_page: 'https://bigdipper.live/band/accounts/${accountAddress}'
-    },
-    {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/band-protocol',
       account_page:

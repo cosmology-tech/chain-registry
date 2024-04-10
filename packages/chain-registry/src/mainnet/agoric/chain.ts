@@ -198,19 +198,6 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'bigdipper',
-      url: 'https://agoric.bigdipper.live/',
-      tx_page: 'https://agoric.bigdipper.live/transactions/${txHash}',
-      account_page: 'https://agoric.bigdipper.live/accounts/${accountAddress}'
-    },
-    {
-      kind: '🔥STAVR🔥',
-      url: 'https://explorer.stavr.tech/Agoric',
-      tx_page: 'https://explorer.stavr.tech/Agoric/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Agoric/account/${accountAddress}'
-    },
-    {
       kind: 'explorers.guru',
       url: 'https://agoric.explorers.guru',
       tx_page: 'https://agoric.explorers.guru/transaction/${txHash}',
@@ -226,6 +213,13 @@ const info: Chain = {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/agoric',
       account_page: 'https://stakeflow.io/agoric/accounts/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Agoric',
+      tx_page: 'https://explorer.stavr.tech/Agoric/tx/${txHash}',
+      account_page:
+        'https://explorer.stavr.tech/Agoric/account/${accountAddress}'
     }
   ],
   images: [

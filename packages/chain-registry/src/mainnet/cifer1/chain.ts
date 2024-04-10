@@ -1,12 +1,12 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'cifer',
-  status: 'live',
+  chain_name: 'cifer1',
+  status: 'killed',
   network_type: 'mainnet',
   website: 'https://cifer.ai/',
   pretty_name: 'Cifer',
-  chain_id: 'cifer-2',
+  chain_id: 'cifer-1',
   bech32_prefix: 'cife',
   daemon_name: 'ciferd',
   node_home: '$HOME/.ciferd',

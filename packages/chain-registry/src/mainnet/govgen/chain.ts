@@ -60,6 +60,10 @@ const info: Chain = {
       {
         address: 'https://rpc.govgen.posthuman.digital:443',
         provider: 'posthuman'
+      },
+      {
+        address: 'https://rpc-govgen.kewrnode.com/',
+        provider: 'Kewr Node'
       }
     ],
     rest: [
@@ -82,6 +86,10 @@ const info: Chain = {
       {
         address: 'https://rest.govgen.posthuman.digital:443',
         provider: 'posthuman'
+      },
+      {
+        address: 'https://rest-govgen.kewrnode.com/',
+        provider: 'Kewr Node'
       }
     ],
     grpc: [

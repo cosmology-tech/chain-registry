@@ -173,12 +173,6 @@ const info: Chain = {
       account_page: 'https://atomscan.com/crescent/accounts/${accountAddress}'
     },
     {
-      kind: 'bigdipper',
-      url: 'https://bigdipper.live/crescent',
-      tx_page: 'https://bigdipper.live/crescent/transactions/${txHash}',
-      account_page: 'https://bigdipper.live/crescent/accounts/${accountAddress}'
-    },
-    {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/crescent',
       account_page: 'https://stakeflow.io/crescent/accounts/${accountAddress}'

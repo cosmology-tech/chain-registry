@@ -1,10 +1,10 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
-  chain_name: 'cifer',
+  chain_name: 'cifer1',
   assets: [
     {
-      description: 'Decentralized Machine Learning',
+      description: 'Decentralized Federated Learning',
       denom_units: [
         {
           denom: 'ucif',

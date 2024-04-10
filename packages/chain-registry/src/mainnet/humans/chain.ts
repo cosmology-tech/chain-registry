@@ -225,12 +225,6 @@ const info: Chain = {
       account_page: 'https://ezstaking.app/humans/account/${accountAddress}'
     },
     {
-      kind: 'bigdipper',
-      url: 'https://bigdipper.live/humans',
-      tx_page: 'https://bigdipper.live/humans/transactions/${txHash}',
-      account_page: 'https://bigdipper.live/humans/accounts/${accountAddress}'
-    },
-    {
       kind: 'ping.pub',
       url: 'https://ping.pub/humans',
       tx_page: 'https://ping.pub/humans/tx/${txHash}'

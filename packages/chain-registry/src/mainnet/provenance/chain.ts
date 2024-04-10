@@ -72,6 +72,10 @@ const info: Chain = {
       {
         address: 'https://provenance-rpc.panthea.eu',
         provider: 'Panthea EU'
+      },
+      {
+        address: 'https://provenance_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -110,6 +114,10 @@ const info: Chain = {
       {
         address: 'https://provenance-api.panthea.eu',
         provider: 'Panthea EU'
+      },
+      {
+        address: 'https://provenance_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -179,11 +187,12 @@ const info: Chain = {
       account_page: 'https://atomscan.com/provenance/accounts/${accountAddress}'
     },
     {
-      kind: 'bigdipper',
-      url: 'https://bigdipper.live/provenance',
-      tx_page: 'https://bigdipper.live/provenance/transactions/${txHash}',
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/provenance',
+      tx_page:
+        'https://explorer.whenmoonwhenlambo.money/provenance/tx/${txHash}',
       account_page:
-        'https://bigdipper.live/provenance/accounts/${accountAddress}'
+        'https://explorer.whenmoonwhenlambo.money/provenance/account/${accountAddress}'
     }
   ],
   images: [

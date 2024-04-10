@@ -237,11 +237,6 @@ const info: Chain = {
       tx_page: 'https://ping.pub/akash-network/tx/${txHash}'
     },
     {
-      kind: 'bigdipper',
-      url: 'https://akash.bigdipper.live/',
-      tx_page: 'https://akash.bigdipper.live/transactions/${txHash}'
-    },
-    {
       kind: 'atomscan',
       url: 'https://atomscan.com/akash',
       tx_page: 'https://atomscan.com/akash/transactions/${txHash}',
