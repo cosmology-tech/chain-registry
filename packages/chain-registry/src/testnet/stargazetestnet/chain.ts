@@ -31,12 +31,20 @@ const info: Chain = {
       {
         address: 'https://rpc.elgafar-1.stargaze-apis.com',
         provider: 'Stargaze Foundation'
+      },
+      {
+        address: 'https://stargaze-testnet-rpc.ibs.team:443',
+        provider: 'Inter Blockchain Services'
       }
     ],
     rest: [
       {
         address: 'https://rest.elgafar-1.stargaze-apis.com',
         provider: 'Stargaze Foundation'
+      },
+      {
+        address: 'https://stargaze-testnet-api.ibs.team:443',
+        provider: 'Inter Blockchain Services'
       }
     ],
     grpc: [

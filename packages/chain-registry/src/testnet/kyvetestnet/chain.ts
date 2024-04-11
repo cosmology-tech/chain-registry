@@ -39,6 +39,10 @@ const info: Chain = {
       {
         address: 'https://rpc-kyve-test.ecostake.com',
         provider: 'ecostake'
+      },
+      {
+        address: 'https://kyve-testnet-rpc.ibs.team:443',
+        provider: 'Inter Blockchain Services'
       }
     ],
     rest: [
@@ -49,6 +53,10 @@ const info: Chain = {
       {
         address: 'https://rest-kyve-test.ecostake.com',
         provider: 'ecostake'
+      },
+      {
+        address: 'https://kyve-testnet-api.ibs.team:443',
+        provider: 'Inter Blockchain Services'
       }
     ]
   },

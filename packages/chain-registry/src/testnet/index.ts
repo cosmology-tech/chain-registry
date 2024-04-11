@@ -82,6 +82,7 @@ export * as stridetestnet from './stridetestnet';
 export * as swisstroniktestnet from './swisstroniktestnet';
 export * as temporaltestnet from './temporaltestnet';
 export * as terpnettestnet from './terpnettestnet';
+export * as terpnettestnet2 from './terpnettestnet2';
 export * as terra2testnet from './terra2testnet';
 export * as titantestnet from './titantestnet';
 export * as ulastestnet from './ulastestnet';

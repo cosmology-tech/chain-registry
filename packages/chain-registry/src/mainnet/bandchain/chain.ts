@@ -11,10 +11,12 @@ const info: Chain = {
   node_home: '$HOME/.band',
   bech32_prefix: 'band',
   slip44: 494,
+  key_algos: ['secp256k1'],
   fees: {
     fee_tokens: [
       {
         denom: 'uband',
+        fixed_min_gas_price: 0.0025,
         low_gas_price: 0.0025,
         average_gas_price: 0.003,
         high_gas_price: 0.005
@@ -26,9 +28,14 @@ const info: Chain = {
       {
         denom: 'uband'
       }
-    ]
+    ],
+    lock_duration: {
+      time: '1814400s'
+    }
   },
-  codebase: {},
+  codebase: {
+    cosmos_sdk_version: '0.45.16'
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg'

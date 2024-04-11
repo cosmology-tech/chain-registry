@@ -4340,7 +4340,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/809498787C8B8ED7215ACADE0B1FE08A798F1DB0FE72CC9289D68EA230FEEBCD',
+            'ibc/EFC1776BEFB7842F2DC7BABD9A3050E188145C99007ECC5F3526FED45A68D5F5',
           exponent: 0,
           aliases: ['ucif']
         },
@@ -4349,7 +4349,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/809498787C8B8ED7215ACADE0B1FE08A798F1DB0FE72CC9289D68EA230FEEBCD',
+      base: 'ibc/EFC1776BEFB7842F2DC7BABD9A3050E188145C99007ECC5F3526FED45A68D5F5',
       name: 'Cifer',
       display: 'cif',
       symbol: 'CIF',
@@ -4368,12 +4368,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-2',
+            channel_id: 'channel-1',
             base_denom: 'ucif',
             chain_name: 'cifer'
           },
           chain: {
-            channel_id: 'channel-35741'
+            channel_id: 'channel-39205'
           }
         }
       ]

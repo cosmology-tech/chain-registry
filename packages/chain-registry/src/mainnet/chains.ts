@@ -84,6 +84,7 @@ import * as _lambda from './lambda';
 import * as _lava from './lava';
 import * as _likecoin from './likecoin';
 import * as _logos from './logos';
+import * as _loop from './loop';
 import * as _loyal from './loyal';
 import * as _lumenx from './lumenx';
 import * as _lumnetwork from './lumnetwork';
@@ -246,6 +247,7 @@ const chains: Chain[] = [
   _lava.chain,
   _likecoin.chain,
   _logos.chain,
+  _loop.chain,
   _loyal.chain,
   _lumenx.chain,
   _lumnetwork.chain,

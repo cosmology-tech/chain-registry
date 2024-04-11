@@ -39,6 +39,10 @@ const info: Chain = {
       {
         address: 'https://axelartest-rpc.quickapi.com/',
         provider: 'Quickapi'
+      },
+      {
+        address: 'https://axelar-testnet-rpc.ibs.team:443',
+        provider: 'Inter Blockchain Services'
       }
     ],
     rest: [
@@ -49,6 +53,10 @@ const info: Chain = {
       {
         address: 'https://axelartest-lcd.quickapi.com/',
         provider: 'Quickapi'
+      },
+      {
+        address: 'https://axelar-testnet-api.ibs.team:443',
+        provider: 'Inter Blockchain Services'
       }
     ]
   },

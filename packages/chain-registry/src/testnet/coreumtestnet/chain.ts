@@ -58,6 +58,10 @@ const info: Chain = {
       {
         address: 'https://full-node-eris.testnet-1.coreum.dev:26657',
         provider: 'Coreum Foundation'
+      },
+      {
+        address: 'https://coreum-testnet-rpc.ibs.team:443',
+        provider: 'Inter Blockchain Services'
       }
     ],
     grpc: [
@@ -74,6 +78,10 @@ const info: Chain = {
       {
         address: 'https://full-node.testnet-1.coreum.dev:1317',
         provider: 'Coreum'
+      },
+      {
+        address: 'https://coreum-testnet-api.ibs.team:443',
+        provider: 'Inter Blockchain Services'
       }
     ]
   },

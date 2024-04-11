@@ -5,7 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Terp-Network',
-  chain_id: '90u-2',
+  chain_id: '90u-4',
   bech32_prefix: 'terp',
   daemon_name: 'terpd',
   node_home: '$HOME/.terp',
@@ -33,11 +33,19 @@ const info: Chain = {
   apis: {
     rpc: [
       {
+        address: 'https://testnet-rpc.terp.network:443/',
+        provider: 'Terpnet Foundation'
+      },
+      {
         address: 'https://terp-testnet-rpc.itrocket.net:443/',
         provider: 'itrocket'
       }
     ],
     rest: [
+      {
+        address: 'https://testnet-api.terp.network:443/',
+        provider: 'Terpnet Foundation'
+      },
       {
         address: 'https://terp-testnet-api.itrocket.net:443/',
         provider: 'itrocket'

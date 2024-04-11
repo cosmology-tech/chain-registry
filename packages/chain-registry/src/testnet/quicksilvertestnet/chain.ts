@@ -45,6 +45,10 @@ const info: Chain = {
       {
         address: 'https://quicksilver-testnet-rpc.polkachu.com/',
         provider: 'polkachu'
+      },
+      {
+        address: 'https://quicksilver-testnet-rpc.ibs.team:443',
+        provider: 'Inter Blockchain Services'
       }
     ],
     rest: [
@@ -55,6 +59,10 @@ const info: Chain = {
       {
         address: 'https://quicksilver-testnet-api.polkachu.com/',
         provider: 'polkachu'
+      },
+      {
+        address: 'https://quicksilver-testnet-api.ibs.team:443',
+        provider: 'Inter Blockchain Services'
       }
     ],
     grpc: [

@@ -62,6 +62,10 @@ const info: Chain = {
       {
         address: 'https://lum-rpc.panthea.eu',
         provider: 'Panthea EU'
+      },
+      {
+        address: 'https://lumnetwork_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -88,6 +92,10 @@ const info: Chain = {
       {
         address: 'https://lum-api.panthea.eu',
         provider: 'Panthea EU'
+      },
+      {
+        address: 'https://lumnetwork_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -147,6 +155,14 @@ const info: Chain = {
       tx_page: 'https://atomscan.com/lum-network/transactions/${txHash}',
       account_page:
         'https://atomscan.com/lum-network/accounts/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/lum-network',
+      tx_page:
+        'https://explorer.whenmoonwhenlambo.money/lum-network/tx/${txHash}',
+      account_page:
+        'https://explorer.whenmoonwhenlambo.money/lum-network/account/${accountAddress}'
     }
   ],
   images: [

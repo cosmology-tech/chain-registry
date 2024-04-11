@@ -84,6 +84,7 @@ import * as _stridetestnet from './stridetestnet';
 import * as _swisstroniktestnet from './swisstroniktestnet';
 import * as _temporaltestnet from './temporaltestnet';
 import * as _terpnettestnet from './terpnettestnet';
+import * as _terpnettestnet2 from './terpnettestnet2';
 import * as _terra2testnet from './terra2testnet';
 import * as _titantestnet from './titantestnet';
 import * as _ulastestnet from './ulastestnet';
@@ -180,6 +181,7 @@ const chains: Chain[] = [
   _swisstroniktestnet.chain,
   _temporaltestnet.chain,
   _terpnettestnet.chain,
+  _terpnettestnet2.chain,
   _terra2testnet.chain,
   _titantestnet.chain,
   _ulastestnet.chain,

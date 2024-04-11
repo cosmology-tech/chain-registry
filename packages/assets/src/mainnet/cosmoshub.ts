@@ -3217,7 +3217,7 @@ const assets: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/191E60A9919C6352F34DF2BBC3F88D0564D7740DCD374C1BDA0C8AD9F24ED960',
+            'ibc/C7DE16F5065C5568C2A16C241069D76DA93F056172A40391EB682444AF40F048',
           exponent: 0,
           aliases: ['ucif']
         },
@@ -3226,7 +3226,7 @@ const assets: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/191E60A9919C6352F34DF2BBC3F88D0564D7740DCD374C1BDA0C8AD9F24ED960',
+      base: 'ibc/C7DE16F5065C5568C2A16C241069D76DA93F056172A40391EB682444AF40F048',
       name: 'Cifer',
       display: 'cif',
       symbol: 'CIF',
@@ -3245,12 +3245,12 @@ const assets: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-1',
+            channel_id: 'channel-0',
             base_denom: 'ucif',
             chain_name: 'cifer'
           },
           chain: {
-            channel_id: 'channel-822'
+            channel_id: 'channel-831'
           }
         }
       ]
@@ -22595,7 +22595,10 @@ const assets: AssetList = {
       }
     },
     {
-      description: 'Sail DAO Token',
+      description:
+        'Sail DAO is a liquidity deployment and management DAO built as a collaboration between the Osmosis and Migaloo Blockchains.',
+      extended_description:
+        "Sail DAO is a liquidity deployment and management DAO built as a collaboration between the Osmosis and Migaloo Blockchains. Seeded by both the Osmosis Community Pool and the Migaloo Foundation, Sail DAO is open to hear offers from cosmos based projects that hope to seed liquidity for their token on the Osmosis blockchain. Along with the creation of this DAO the White Whale DEX is deployed on Osmosis, being the first DEX apart from Osmosis to deploy on the chain, it is a great step towards Osmosis becoming an ecosystem from an appchain. Migaloo incubated projects are encouraged to participate in OTC deals with Sail DAO in order to seed or enhance liquidity on WW's Osmosis DEX. However, offers are not limited to Migaloo projects and liquidity is not limitied to being deployed on WW DEX. The treasury of this DAO can be deployed however it wishes at the discretion of the Sail DAO voters. The Osmosis CP has been given veto authorization over any props introduced in this DAO and has also been given clawback rights if this venture ever gets off track.",
       denom_units: [
         {
           denom:
@@ -22622,6 +22625,11 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/sail.png'
         }
       ],
+      socials: {
+        website:
+          'https://daodao.zone/dao/osmo106tvcj58rvdn9k36m9m3xcmcwk2c3fgft3ldcst9lgy05gcmjanqexru3h/home',
+        twitter: 'https://twitter.com/Sail_DAO_'
+      },
       traces: [
         {
           type: 'ibc',

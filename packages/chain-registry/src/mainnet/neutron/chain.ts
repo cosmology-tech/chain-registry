@@ -65,9 +65,9 @@ const info: Chain = {
     ]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.6',
+    cosmos_sdk_version: 'neutron-org/cosmos-sdk v0.47.10-neutron',
     cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.45.0'
+    cosmwasm_version: 'neutron-org/wasmd v0.45.0'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-black-logo.png',

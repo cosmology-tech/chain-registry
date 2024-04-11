@@ -41,6 +41,10 @@ const info: Chain = {
       {
         address: 'https://bitcanna-testnet.nodejumper.io:443',
         provider: 'NODEJUMPER'
+      },
+      {
+        address: 'https://bcna-testnet-rpc.ibs.team:443',
+        provider: 'Inter Blockchain Services'
       }
     ],
     rest: [
@@ -67,6 +71,10 @@ const info: Chain = {
       {
         address: 'https://bitcanna-testnet.nodejumper.io:1317',
         provider: 'NODEJUMPER'
+      },
+      {
+        address: 'https://bcna-testnet-api.ibs.team:443',
+        provider: 'Inter Blockchain Services'
       }
     ],
     grpc: [
