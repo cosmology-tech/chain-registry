@@ -86,9 +86,9 @@ const chain = client.getChain('osmosis');
 // get asset list
 const assetList = client.getChainAssetList('osmosis');
 // get ibc data
-const ibcData = client.getChainIbcData('osmosis);
+const ibcData = client.getChainIbcData('osmosis');
 // get asset list (including ibc assets)
-const generatedAssetList = client.getGeneratedAssetLists('osmosis);
+const generatedAssetList = client.getGeneratedAssetLists('osmosis');
 
 ```
 

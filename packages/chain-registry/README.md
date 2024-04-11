@@ -25,6 +25,8 @@ A unified store of chains info, assets, asset lists, and IBC channels for the Co
 
 ## example
 
+Fetch data from chain-registry:
+
 ```js
 import { assets, chains, ibc } from 'chain-registry';
 
@@ -61,6 +63,111 @@ will output:
     }
   ]
 }
+```
+
+Dynamically fetch data:
+
+```js
+import { ChainRegistryClient } from '@chain-registry/client';
+
+// create an instance of ChainRegistryClient by passing in the chain names
+const client = new ChainRegistryClient({
+  chainNames: [
+    'osmosis',
+    'juno',
+    'stargaze'
+  ]
+});
+
+// chain info, assets and ibc data will be downloaded dynamically by invoking fetchUrls method
+await client.fetchUrls();
+// get chain data
+const chain = client.getChain('osmosis');
+// get asset list
+const assetList = client.getChainAssetList('osmosis');
+// get ibc data
+const ibcData = client.getChainIbcData('osmosis');
+// get asset list (including ibc assets)
+const generatedAssetList = client.getGeneratedAssetLists('osmosis');
+
+```
+
+
+## packages
+
+#### [chain-registry](packages/chain-registry)
+
+An npm module for the Official `chain-registry` for the Cosmos ⚛️
+
+#### [@chain-registry/client](packages/client)
+
+A Client for `chain-registry` that allows you to dynamically fetch data.
+
+#### [@chain-registry/types](packages/types)
+
+Types for `chain-registry`.
+
+#### [@chain-registry/keplr](packages/keplr)
+
+Keplr integration for the chain-registry returning keplr's `ChainInfo` type from `@chain-registry/types` `Chain` type.
+
+#### [@chain-registry/assets](packages/assets)
+
+Asset lists for the Cosmos ⚛️
+
+#### [@chain-registry/osmosis](packages/osmosis)
+
+Chain Registry info for Osmosis, including asset lists.
+
+#### [@chain-registry/juno](packages/juno)
+
+Chain Registry info for Juno, including asset lists.
+
+#### [@chain-registry/utils](packages/utils)
+
+Utility functions for `chain-registry`.
+
+## Developing
+
+Checkout the repository and bootstrap the yarn workspace:
+
+```sh
+# Clone the repo.
+git clone https://github.com/cosmology-tech/chain-registry
+yarn
+yarn bootstrap
+```
+### Building
+
+```sh
+yarn build
+```
+
+### Publishing
+
+First, `cd` into the root folder of the project:
+
+```sh
+cd /your/path/to/chain-registry
+```
+
+Second, update the git submodules:
+
+```sh
+git submodule update --remote
+```
+
+Third, generate the code (this takes a bit since it does some linting):
+
+```sh
+yarn codegen
+```
+
+Finally, commit and publish the code!
+
+```sh
+git commit -am "new registry updates"
+lerna publish
 ```
 
 ## Related
