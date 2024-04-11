@@ -48,7 +48,7 @@ describe('tests for assets utils', () => {
     expect(() => getChainNameByDenom(assets, 'uatom')).toThrow();
   });
 
-  it.only('getChainNameByStakingDenom', () => {
+  it('getChainNameByStakingDenom', () => {
     const chain1 = getChainNameByStakingDenom(chains, 'ucmdx');
     expect(chain1).toEqual('comdex');
     const chain2 = getChainNameByStakingDenom(chains, 'uatom');
