@@ -13,7 +13,7 @@
 </p>
 
 
-This module provides utility functions for working with the data in the chain-registry, focusing on asset and chain data management within the Interchain ecosystem.
+This module provides utility functions for working with the data in the chain-registry, focusing on asset and chain data management within the interchain ecosystem.
 
 ## Installation
 
@@ -23,9 +23,71 @@ npm install @chain-registry/utils
 
 ## Usage
 
-### Assets
+### Chain Examples
 
-Import the required types and functions from the package:
+Import the functions from the package:
+
+```js
+import {
+  getGasPriceRangesFromChain,
+  getChainByChainName,
+  getChainByChainId,
+  getChainNameByChainId,
+  getChainIdByChainName,
+  getChainGasPriceRanges,
+  getChainPrettyName,
+  getChainBech32Prefix
+} from '@chain-registry/utils';
+
+// import from chain-registry or your own Chain[]
+import { chains } from 'chain-registry';
+```
+
+To retrieve a chain object by its name:
+
+```ts
+const chain = getChainByChainName(chains, 'osmosis');
+// { chain_name: 'osmosis', ... }
+```
+
+To get the chain ID by its name:
+
+```ts
+const chainId = getChainIdByChainName(chains, 'osmosis');
+// 'osmosis-1'
+```
+
+To get the pretty name of a chain:
+
+```ts
+const prettyName = getChainPrettyName(chains, 'osmosis');
+// 'Osmosis'
+```
+
+To find the gas price ranges for a chain:
+
+```ts
+const gasPriceRanges = getChainGasPriceRanges(chains, 'osmosis');
+// { low: number, average: number, high: number }
+```
+
+
+
+
+### Chain Functions
+
+- `getGasPriceRangesFromChain`: Returns the gas price ranges (low, average, high) for a given chain.
+- `getChainByChainName`: Finds a chain by its name.
+- `getChainByChainId`: Retrieves a chain by its chain ID.
+- `getChainNameByChainId`: Gets the chain name associated with a given chain ID.
+- `getChainIdByChainName`: Fetches the chain ID for a specified chain name.
+- `getChainGasPriceRanges`: Provides the gas price ranges for a specified chain name.
+- `getChainPrettyName`: Returns the pretty (display) name of the chain.
+- `getChainBech32Prefix`: Gets the Bech32 prefix for a given chain.
+
+### Asset Examples
+
+Import the functions from the package:
 
 ```js
 import {
@@ -50,10 +112,6 @@ import { assets } from 'chain-registry';
 
 ```
 
-The module includes functions like `getAssetByDenom`, `getAssetBySymbol`, `getDenomByCoinGeckoId`, etc., to retrieve specific asset information from the `chain-registry`.
-
-#### Asset Examples
-
 To find an asset by its denomination:
 
 ```js
@@ -75,7 +133,7 @@ const coinGeckoId = getCoinGeckoIdByDenom(assets, 'uosmo');
 console.log(coinGeckoId); // 'osmosis'
 ```
 
-#### Asset Functions
+### Asset Functions
 
 - `getAssetByDenom`: Retrieve an asset by its denomination.
 - `getAssetBySymbol`: Find an asset by its symbol.
