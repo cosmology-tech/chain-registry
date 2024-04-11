@@ -112,7 +112,7 @@ In this example, the `chainNames` option includes four chains, but `ibcNamePairs
 
 - `fetchUrls()`: Asynchronously fetches the data for all the configured URLs and stores the results internally within the client instance.
 - `getChain(chainName)`: Returns the `Chain` object for the specified chain name.
-- `getChainInfo(chainName)`: Retrieves detailed information about the specified chain, including its configuration, assets, and IBC connections.
+- `getChainInfo(chainName)`: Retrieves [`ChainInfo`](#chain-info), an object with detailed information about the specified chain, including its configuration, assets, and IBC connections.
 - `getAssetList(chainName)`: Obtains a list of assets available on the specified chain.
 - `getChainAssetList(chainName)`: Returns the `AssetList` for the specified chain.
 - `getGeneratedAssetLists(chainName)`: Generates and returns `AssetList[]` for the specified chain, including IBC-connected assets.
@@ -130,7 +130,7 @@ In this line, `client.fetchUrls()` asynchronously fetches the chain and asset da
 
 #### Accessing Chain Information
 
-After fetching the data, you can access detailed information about a specific chain using the `getChainInfo` method. This method returns a comprehensive object containing data about the requested chain, including its assets, IBC connections, and other metadata.
+After fetching the data, you can access detailed information about a specific chain using the `getChainInfo` method. This method returns a [`ChainInfo`](#chain-info) object, which contains data about the requested chain, including its assets, IBC connections, and other metadata. 
 
 ```js
 const osmosisInfo = client.getChainInfo('osmosis');
