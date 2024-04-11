@@ -17,15 +17,18 @@ This module provides utility functions for working with the data in the chain-re
 
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Chain Utilities](#chain-utilities)
-    - [Chain Examples](#chain-examples)
-    - [Chain Functions](#chain-functions)
-  - [Asset Utilities](#asset-utilities)
-    - [Asset Examples](#asset-examples)
-    - [Asset Functions](#asset-functions)
-  - [Calculation Utilities](#calculation-utilities)
-    - [Calculation Examples](#calculation-examples)
-    - [Calculation Functions](#calculation-functions)
+  - [Chain](#chain-utilities)
+    - [Examples](#chain-examples)
+    - [Functions](#chain-functions)
+  - [Asset](#asset-utilities)
+    - [Examples](#asset-examples)
+    - [Functions](#asset-functions)
+  - [IBC](#ibc-utilities)
+    - [Examples](#ibc-examples)
+    - [Functions](#ibc-functions)
+  - [Calculation](#calculation-utilities)
+    - [Examples](#calculation-examples)
+    - [Functions](#calculation-functions)
 - [Related](#related)
 - [Credits](#credits)
 - [Disclaimer](#disclaimer)
@@ -169,6 +172,50 @@ console.log(coinGeckoId); // 'osmosis'
 - `getNativeTokenByChainName`: Retrieve the native token for a given chain name.
 - `getTokenLogoByDenom`: Get the logo URL for a token by its denomination.
 - `getTokenNameByDenom`: Find the name of a token by its denomination.
+
+### IBC Utilities
+
+IBC Utilities provide mechanisms to derive IBC denominations and trace IBC asset paths across multiple chains, enabling the management of inter-blockchain assets.
+
+#### IBC Examples
+
+```ts
+import { 
+  getIbcAssetPath,
+  getIbcDenomByBase,
+  ibcDenom
+} from '@chain-registry/utils';
+
+// import from chain-registry or your own data
+import { assets, ibc } from 'chain-registry';
+```
+
+To get the IBC denomination for a specific asset:
+
+```ts
+const denom = getIbcDenomByBase(ibc, 'osmosis', 'akash', assets, 'uakt');
+// denom should be the IBC hashed denomination string
+```
+
+Example for AKT (Akash Token) on Osmosis:
+
+```ts
+const aktDenom = getIbcDenomByBase(ibc, 'osmosis', 'akash', assets, 'uakt');
+console.log(aktDenom); // Expected: 'ibc/1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4'
+```
+
+Example for STARS (Stargaze Token) on Osmosis:
+
+```ts
+const starsDenom = getIbcDenomByBase(ibc, 'osmosis', 'stargaze', assets, 'ustars');
+console.log(starsDenom); // Expected: 'ibc/987C17B11ABC2B20019178ACE62929FE9840202CE79498E29FE8E5CB02B7C0A4'
+```
+
+#### IBC Functions
+
+- `ibcDenom`: Generates the IBC denomination for an asset based on its transfer path.
+- `getIbcAssetPath`: Determines the path an asset takes across chains in the IBC network.
+- `getIbcDenomByBase`: Computes the IBC denomination for an asset from its base denomination.
 
 ### Calculation Utilities
 
