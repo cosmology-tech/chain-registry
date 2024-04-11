@@ -1,4 +1,4 @@
-name: Lerna Publish
+name: Lerna Publish Minor
 
 on:
   workflow_run:
