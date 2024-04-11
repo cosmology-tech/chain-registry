@@ -1,9 +1,9 @@
-import assets from '../../../__fixtures__/assets.json';
 import {
   getAssetByDenom,
   getAssetBySymbol,
   getChainLogo,
   getChainNameByDenom,
+  getChainNameByStakingDenom,
   getCoinGeckoIdByDenom,
   getDenomByCoinGeckoId,
   getDenomBySymbol,
@@ -14,20 +14,21 @@ import {
   getTokenLogoByDenom,
   getTokenNameByDenom
 } from '../src/assets';
+import { assets, chains } from '../test-utils';
 
 describe('tests for assets utils', () => {
   it('getAssetByDenom', () => {
     expect(() => getAssetByDenom(assets, 'uosmo')).toThrow();
     const asset = getAssetByDenom(assets, 'uosmo', 'osmosis');
-    expect(asset.base).toEqual('uosmo');
+    expect(asset?.base).toEqual('uosmo');
   });
 
   it('getAssetBySymbol', () => {
     expect(getAssetBySymbol([], 'ATOM')).toBeUndefined();
     const asset1 = getAssetBySymbol(assets, 'DVPN');
-    expect(asset1.base).toEqual('udvpn');
+    expect(asset1?.base).toEqual('udvpn');
     const asset2 = getAssetBySymbol(assets, 'SOMM');
-    expect(asset2.base).toEqual('usomm');
+    expect(asset2?.base).toEqual('usomm');
   });
 
   it('getChainLogo', () => {
@@ -45,6 +46,13 @@ describe('tests for assets utils', () => {
     const chain1 = getChainNameByDenom(assets, 'ucmdx');
     expect(chain1).toEqual('comdex');
     expect(() => getChainNameByDenom(assets, 'uatom')).toThrow();
+  });
+
+  it('getChainNameByStakingDenom', () => {
+    const chain1 = getChainNameByStakingDenom(chains, 'ucmdx');
+    expect(chain1).toEqual('comdex');
+    const chain2 = getChainNameByStakingDenom(chains, 'uatom');
+    expect(chain2).toEqual('cosmoshub');
   });
 
   it('getDenomByCoinGeckoId', () => {

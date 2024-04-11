@@ -1,6 +1,10 @@
-import assets from '../../../__fixtures__/assets.json';
+import { AssetList } from '@chain-registry/types';
+
+import _assets from '../../../__fixtures__/assets.json';
 import ibc from '../../../__fixtures__/ibc.json';
 import { getIbcDenomByBase } from '../src';
+
+const assets: AssetList[] = _assets as AssetList[];
 
 it('ATOM on stargaze', () => {
   const denom = getIbcDenomByBase(

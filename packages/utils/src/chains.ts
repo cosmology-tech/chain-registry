@@ -1,6 +1,6 @@
 import { Chain } from '@chain-registry/types';
 
-import { customFind } from './assets';
+import { customFind } from './utils';
 
 export interface GasPriceRanges {
   low: number;

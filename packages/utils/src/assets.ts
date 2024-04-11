@@ -1,21 +1,9 @@
-import { Asset, AssetDenomUnit, AssetList } from '@chain-registry/types';
+import { Asset, AssetDenomUnit, AssetList, Chain } from '@chain-registry/types';
+
+import { customFind } from './utils';
 
 export type Denom = AssetDenomUnit['denom'];
 export type Exponent = AssetDenomUnit['exponent'];
-
-export const customFind = <T>(
-  array: T[],
-  filterFn: (item: T) => boolean
-): T | undefined => {
-  const filteredItems = array.filter(filterFn);
-  const filterCount = filteredItems.length;
-
-  if (filterCount > 1) {
-    throw new Error(`Ambiguity Error: ${filterCount} items found.`);
-  }
-
-  return filteredItems[0];
-};
 
 const getAssetByKeyValue = (
   assets: AssetList[],
@@ -185,3 +173,18 @@ export const getChainNameByDenom = (
     assetList.assets.some((asset) => asset.base === denom)
   )?.chain_name;
 };
+
+export const getChainByStakingDenom = (
+  chains: Chain[],
+  denom: Denom
+): Chain | undefined =>
+  customFind(
+    chains,
+    (chain) =>
+      !!chain.staking?.staking_tokens.find((token) => token.denom === denom)
+  );
+
+export const getChainNameByStakingDenom = (
+  chains: Chain[],
+  denom: Denom
+): string | undefined => getChainByStakingDenom(chains, denom)?.chain_name;
