@@ -1,0 +1,27 @@
+name: Lerna Publish Minor
+
+on:
+
+  workflow_dispatch:
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: "true"
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.14.0
+          registry-url: https://registry.npmjs.org/
+      - name: Code Generation
+        run: |
+          yarn
+          yarn bootstrap
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor}}@users.noreply.github.com"
+          lerna publish minor --force-publish=chain-registry --no-verify-access --yes
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
+          GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
