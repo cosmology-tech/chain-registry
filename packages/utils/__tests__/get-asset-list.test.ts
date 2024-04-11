@@ -1,6 +1,5 @@
-import assets from '../../../__fixtures__/assets.json';
-import ibc from '../../../__fixtures__/ibc.json';
 import { getAssetLists } from '../src';
+import { assets, ibc } from '../test-utils';
 
 it('getAssetLists', () => {
   const chainName = 'osmosis';

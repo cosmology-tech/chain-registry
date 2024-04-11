@@ -40,6 +40,21 @@
   "bugs": {
     "url": "https://github.com/cosmology-tech/chain-registry/issues"
   },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.ts?$": "ts-jest"
+    },
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "testPathIgnorePatterns": [
+      "main/",
+      "module/",
+      "types/"
+    ]
+  },
   "devDependencies": {
     "@babel/cli": "7.21.0",
     "@babel/core": "7.21.4",

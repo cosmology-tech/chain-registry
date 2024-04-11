@@ -1,4 +1,3 @@
-import assets from '../../../__fixtures__/assets.json';
 import {
   convertBaseUnitToDisplayUnit,
   convertBaseUnitToDollarValue,
@@ -7,6 +6,7 @@ import {
   mapCoinGeckoPricesToDenoms,
   roundDown
 } from '../src/calc';
+import { assets } from '../test-utils';
 
 const osmosisAssets = assets.filter(
   ({ chain_name }) => chain_name === 'osmosis'
