@@ -1,11 +1,6 @@
 name: Lerna Publish Minor
 
 on:
-  workflow_run:
-    workflows: ["Publish Main"]
-    types:
-      - completed
-
   workflow_dispatch:
 
 jobs:
