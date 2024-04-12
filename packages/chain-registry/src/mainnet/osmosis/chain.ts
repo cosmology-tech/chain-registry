@@ -36,7 +36,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'osmosis-labs/cosmos-sdk v0.47.5-v23-osmo-4',
+    cosmos_sdk_version: 'osmosis-labs/cosmos-sdk v0.47.5-v24-osmo-5',
     cosmwasm_enabled: true,
     cosmwasm_version: 'osmosis-labs/wasmd v0.45.0-osmo'
   },

@@ -76,6 +76,10 @@ const info: Chain = {
       {
         address: 'https://nibiru.rpc.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://nibiru.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
       }
     ],
     rest: [
@@ -148,6 +152,10 @@ const info: Chain = {
       {
         address: 'https://nibiru.grpc.nodeshub.online',
         provider: 'Nodes Hub'
+      },
+      {
+        address: 'nibiru.grpc.m.stavr.tech:5023',
+        provider: '🔥STAVR🔥'
       }
     ]
   },

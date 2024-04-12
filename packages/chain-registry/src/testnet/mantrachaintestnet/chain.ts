@@ -1,12 +1,12 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chain_name: 'mantrachaintestnet',
   status: 'live',
   network_type: 'testnet',
-  pretty_name: 'MANTRA Chain',
-  chain_id: 'mantrachain-testnet-1',
-  bech32_prefix: 'uaum',
+  pretty_name: 'MANTRA Hongbai Testnet',
+  chain_id: 'mantra-hongbai-1',
+  bech32_prefix: 'uom',
   daemon_name: 'mantrachaind',
   node_home: '$HOME/.mantrachain',
   key_algos: ['secp256k1'],
@@ -14,7 +14,7 @@ const info: Chain = {
   fees: {
     fee_tokens: [
       {
-        denom: 'uaum',
+        denom: 'uom',
         fixed_min_gas_price: 0,
         low_gas_price: 0.001,
         average_gas_price: 0.002,
@@ -25,7 +25,7 @@ const info: Chain = {
   staking: {
     staking_tokens: [
       {
-        denom: 'uaum'
+        denom: 'uom'
       }
     ]
   },
@@ -37,19 +37,19 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc.testnet.mantrachain.io',
+        address: 'https://rpc.hongbai.mantrachain.io',
         provider: 'MANTRACHAIN'
       }
     ],
     rest: [
       {
-        address: 'https://api.testnet.mantrachain.io',
+        address: 'https://api.hongbai.mantrachain.io',
         provider: 'MANTRACHAIN'
       }
     ],
     grpc: [
       {
-        address: 'https://grpc.testnet.mantrachain.io',
+        address: 'https://grpc.hongbai.mantrachain.io',
         provider: 'MANTRACHAIN'
       }
     ]

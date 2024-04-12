@@ -5377,7 +5377,7 @@ const asset_list: AssetList = {
       denom_units: [
         {
           denom:
-            'ibc/3C7FF3745FF85CCA532C46498BA14796348FF867D3ED4574CC89A436B8579100',
+            'ibc/320F8D6EC17E14436D19C6D844BB9A5AE9B9A209F6D18364A2191FF08E8732A9',
           exponent: 0,
           aliases: ['udhp']
         },
@@ -5386,7 +5386,7 @@ const asset_list: AssetList = {
           exponent: 6
         }
       ],
-      base: 'ibc/3C7FF3745FF85CCA532C46498BA14796348FF867D3ED4574CC89A436B8579100',
+      base: 'ibc/320F8D6EC17E14436D19C6D844BB9A5AE9B9A209F6D18364A2191FF08E8732A9',
       name: 'Digital Health Point',
       display: 'dhp',
       symbol: 'DHP',
@@ -5405,12 +5405,12 @@ const asset_list: AssetList = {
         {
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-0',
+            channel_id: 'channel-1',
             base_denom: 'udhp',
             chain_name: 'dhealth'
           },
           chain: {
-            channel_id: 'channel-37505'
+            channel_id: 'channel-38776'
           }
         }
       ]
@@ -9226,6 +9226,8 @@ const asset_list: AssetList = {
     },
     {
       description: 'The native staking and governance token of Kava',
+      extended_description:
+        'The native staking and governance token of Kava\n\nKava is a Layer-1 blockchain that combines the speed and interoperability of Cosmos with the developer power of Ethereum.\n\nThe Kava Network uses a developer-optimized co-chain architecture. The Ethereum Co-Chain enables support for EVM smart contracts while the Cosmos Co-Chain enables the lightning-fast Tendermint consensus engine and the Inter Blockchain Communication Protocol (IBC).\n\nThe two co-chains are connected by a translator module that enables them to interoperate seamlessly, bringing the two most used blockchain development environments together in a single, scalable network.\n\nThe Kava Network features a native governance and utility token, KAVA, that can be staked by validators or delegated to validator nodes. Stakers and delegators earn 37.5% of all KAVA emissions as a reward for securing the network. Kava stakers also have voting rights in network governance proposals.',
       denom_units: [
         {
           denom:
@@ -17885,6 +17887,54 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-146'
+          }
+        }
+      ]
+    },
+    {
+      description:
+        'The native EVM and Wasm, governance and staking token of the Shido Chain',
+      denom_units: [
+        {
+          denom:
+            'ibc/BBE825F7D1673E1EBF05AB02000E23E6077967B79547A3733B60AE4ED62C4D32',
+          exponent: 0,
+          aliases: ['shido']
+        },
+        {
+          denom: 'SHIDO',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/BBE825F7D1673E1EBF05AB02000E23E6077967B79547A3733B60AE4ED62C4D32',
+      name: 'Shido',
+      display: 'SHIDO',
+      symbol: 'SHIDO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg'
+      },
+      coingecko_id: 'shido-2',
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg'
+        }
+      ],
+      socials: {
+        website: 'https://shido.io/',
+        twitter: 'https://twitter.com/ShidoGlobal'
+      },
+      traces: [
+        {
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'shido',
+            chain_name: 'shido'
+          },
+          chain: {
+            channel_id: 'channel-38921'
           }
         }
       ]

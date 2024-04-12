@@ -77,8 +77,12 @@ const info: Chain = {
         provider: 'genznodes'
       },
       {
-        address: 'https://nibiru.rpc.kjnodes.comv',
+        address: 'https://nibiru.rpc.kjnodes.com',
         provider: 'kjnodes.com 🦄'
+      },
+      {
+        address: 'andromeda-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -125,6 +129,10 @@ const info: Chain = {
       {
         address: 'https://nibiru.api.kjnodes.com',
         provider: 'kjnodes.com 🦄'
+      },
+      {
+        address: 'andromeda-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -167,6 +175,10 @@ const info: Chain = {
       {
         address: 'nibiru.grpc.kjnodes.com:443',
         provider: 'kjnodes.com 🦄'
+      },
+      {
+        address: 'andromeda-grpc.noders.services:34090',
+        provider: '[NODERS]TEAM'
       }
     ]
   },
