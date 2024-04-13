@@ -5,7 +5,6 @@ import { assets, chains, ibc } from 'chain-registry';
 import { rmSync, writeFileSync } from 'fs';
 import { mkdirpSync } from 'mkdirp';
 import * as path from 'path';
-import { AssetList, Chain } from '@chain-registry/types';
 import { jsStringify } from 'strfy-js';
 
 const NON_COSMOS_NETWORK_TYPE = 'noncosmos';
