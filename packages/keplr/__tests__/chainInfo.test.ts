@@ -1,15 +1,14 @@
 import { Chain } from '@chain-registry/types';
 
-import assets from '../../../__fixtures__/assets.json';
-import chains from '../../../__fixtures__/chains.json';
+import { assets, chains } from '../test-utils'
 import { chainRegistryChainToKeplr } from '../src/';
 
-const testChainData = async (chainName, chainId) => {
+const testChainData = async (chainName: string, chainId: ChainInfo['chainId']) => {
   const chain = await getChainInfo(chainId);
   expect(chain).toMatchSnapshot();
   const chainRegChain: Chain = chains.find(
     ({ chain_name }) => chain_name === chainName
-  );
+  )!;
   const chainReg = chainRegistryChainToKeplr(
     chainRegChain,
     assets
@@ -123,6 +122,11 @@ export type SimplifiedChainInfo = Omit<
   ChainInfo,
   'stakeCurrency' | 'feeCurrencies'
 > & {
+  gasPriceStep?: {
+    low: number;
+    average: number;
+    high: number;
+  },
   currencies: Array<
     AppCurrency & {
       isStakeCurrency?: boolean;
@@ -1533,6 +1537,7 @@ export const getChainInfo = async (
     // Check overrides for chain info.
     overrides?.find((info) => info.chainId === chainId) ||
     // Use embedded map as fallback.
+    // @ts-ignore
     ChainInfoMap[chainId];
 
   if (!chainInfo) {

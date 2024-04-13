@@ -32,9 +32,9 @@ export const chainRegistryChainToKeplr = (
   chain: Chain,
   assets: AssetList[],
   options: {
-    getRpcEndpoint: (chain: Chain) => string;
-    getRestEndpoint: (chain: Chain) => string;
-    getExplorer: (chain: Chain) => string;
+    getRpcEndpoint?: (chain: Chain) => string;
+    getRestEndpoint?: (chain: Chain) => string;
+    getExplorer?: (chain: Chain) => string;
   } = {
     getRpcEndpoint: getRpc,
     getRestEndpoint: getRest,
