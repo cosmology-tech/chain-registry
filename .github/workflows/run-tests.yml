@@ -12,21 +12,32 @@ jobs:
   run-tests:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout 🛎️
-        uses: actions/checkout@v2.3.1
-      - name: node
-        uses: actions/setup-node@v3
+      - name: Checkout Repository 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 16.14.0
-      - name: deps
-        run: yarn
-      - name: build
+          node-version: '20.x'
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Build Project
         run: yarn build
-      - name: keplr
-        run: cd ./packages/keplr && yarn test
-      - name: cosmostation
-        run: cd ./packages/cosmostation && yarn test
-      - name: utils
-        run: cd ./packages/utils && yarn test
-      - name: client
-        run: cd ./packages/client && yarn test
+
+      - name: Test @chain-registry/keplr
+        run: yarn test
+        working-directory: packages/keplr
+      
+      - name: Test @chain-registry/cosmostation
+        run: yarn test
+        working-directory: packages/cosmostation
+      
+      - name: Test @chain-registry/utils
+        run: yarn test
+        working-directory: packages/utils
+      
+      - name: Test @chain-registry/client
+        run: yarn test
+        working-directory: packages/client
