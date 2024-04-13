@@ -1,5 +1,6 @@
 import { AssetList, AssetTrace, IBCInfo, IBCChannelInfo, Asset } from '@chain-registry/types';
 import { sha256 } from 'sha.js';
+import { getNativeAssets } from './utils';
 
 export const ibcDenom = (
   paths: {
@@ -69,12 +70,12 @@ export const getWasmChannel = (info: IBCInfo) => {
 
 type DeepPartial<T> = {
   [P in keyof T]?: T[P] extends Array<infer U>
-      ? Array<DeepPartial<U>>       // Makes elements of arrays DeepPartial
-      : T[P] extends ReadonlyArray<infer U>
-      ? ReadonlyArray<DeepPartial<U>> // Handles readonly arrays
-      : T[P] extends object
-      ? DeepPartial<T[P]>            // Makes properties of objects DeepPartial
-      : T[P];                         // Leaves non-object types unchanged
+  ? Array<DeepPartial<U>>       // Makes elements of arrays DeepPartial
+  : T[P] extends ReadonlyArray<infer U>
+  ? ReadonlyArray<DeepPartial<U>> // Handles readonly arrays
+  : T[P] extends object
+  ? DeepPartial<T[P]>            // Makes properties of objects DeepPartial
+  : T[P];                         // Leaves non-object types unchanged
 };
 
 interface AssetListHash {
@@ -192,6 +193,7 @@ export const getIbcAssets = (
   ibc: IBCInfo[],
   assets: AssetList[]
 ): AssetList[] => {
+
   const chainIbcInfo = ibc.filter((i) => {
     return (
       i.chain_1.chain_name === chainName || i.chain_2.chain_name === chainName
@@ -490,7 +492,34 @@ export const getAssetLists = (
     const assets = [...v.assets];
     const cw20: AssetList = cw20Assets.find((a) => a.chain_name === chain);
     if (cw20) {
-       // @ts-ignore
+      // @ts-ignore
+      [].push.apply(assets, cw20.assets);
+    }
+    return [
+      {
+        chain_name: chain,
+        assets
+      },
+      ...m
+    ];
+  }, []);
+};
+
+export const getNativeAssetLists = (
+  chainName: string,
+  ibc: IBCInfo[],
+  _assets: AssetList[]
+) => {
+  const assets = getNativeAssets(_assets);
+  const ibcAssetLists = getIbcAssets(chainName, ibc, assets);
+  const cw20Assets = getCw20Assets(chainName, ibc, assets);
+
+  return ibcAssetLists.reduce((m, v) => {
+    const chain = v.chain_name;
+    const assets = [...v.assets];
+    const cw20: AssetList = cw20Assets.find((a) => a.chain_name === chain);
+    if (cw20) {
+      // @ts-ignore
       [].push.apply(assets, cw20.assets);
     }
     return [

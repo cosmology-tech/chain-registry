@@ -1,11 +1,10 @@
 // @ts-nocheck
 
-import { getAssetLists } from '@chain-registry/utils';
+import { getNativeAssetLists } from '@chain-registry/utils';
 import { assets, chains, ibc } from 'chain-registry';
 import { rmSync, writeFileSync } from 'fs';
 import { mkdirpSync } from 'mkdirp';
 import * as path from 'path';
-import { AssetList, Chain } from '@chain-registry/types';
 import { jsStringify } from 'strfy-js';
 
 const NON_COSMOS_NETWORK_TYPE = 'noncosmos';
@@ -18,7 +17,7 @@ chains.forEach((chain) => {
 });
 
 const asset_lists = assets.reduce((m, { chain_name }) => {
-  return [...m, ...getAssetLists(chain_name, ibc, assets)];
+  return [...m, ...getNativeAssetLists(chain_name, ibc, assets)];
 }, []);
 
 const SRC_ROOT = `${__dirname}/../src`;

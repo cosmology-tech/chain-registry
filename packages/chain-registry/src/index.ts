@@ -1,11 +1,11 @@
-export * from './mainnet';
-export * from './testnet';
-export * from './devnet';
-export * from './noncosmos';
-import all from './all';
+import assets from './assets';
+import chains from './chains';
+import ibc from './ibc';
 
-export default all;
-
-const { assets, chains, ibc } = all;
+export default {
+  assets,
+  chains,
+  ibc
+};
 
 export { assets, chains, ibc };
