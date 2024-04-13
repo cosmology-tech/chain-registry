@@ -1,5 +1,6 @@
 import { AssetList, AssetTrace, IBCInfo, IBCChannelInfo, Asset } from '@chain-registry/types';
 import { sha256 } from 'sha.js';
+import { getNativeAssets } from './utils';
 
 export const ibcDenom = (
   paths: {
@@ -187,49 +188,12 @@ export const getIbcDenomByBase = (
   }
 };
 
-
-
-export const getNativeAssets = (
-  assets: AssetList[]
-): AssetList[] => {
-  return assets.map(list => {
-    const clone = JSON.parse(JSON.stringify(list));
-    clone.assets = list.assets.filter(asset => {
-      switch (true) {
-        case asset.base.startsWith('factory/'):
-          return false;
-
-        case asset.base.startsWith('ft') && list.chain_name === 'bitsong':
-          return false;
-
-        case asset.base.startsWith('erc20/'):
-          return true;
-
-        case asset.base.startsWith('ibc/'):
-          return false;
-
-        case asset.base.startsWith('cw20:'):
-          return true;
-
-        default:
-          if (!asset.traces || !asset.traces.length) {
-            // asset.type_asset = 'sdk.coin'
-            return true;
-          }
-          return false;
-      }
-    });
-    return clone;
-  });
-};
-
 export const getIbcAssets = (
   chainName: string,
   ibc: IBCInfo[],
-  _assets: AssetList[]
+  assets: AssetList[]
 ): AssetList[] => {
 
-  const assets = getNativeAssets(_assets);
   const chainIbcInfo = ibc.filter((i) => {
     return (
       i.chain_1.chain_name === chainName || i.chain_2.chain_name === chainName
@@ -520,6 +484,33 @@ export const getAssetLists = (
   ibc: IBCInfo[],
   assets: AssetList[]
 ) => {
+  const ibcAssetLists = getIbcAssets(chainName, ibc, assets);
+  const cw20Assets = getCw20Assets(chainName, ibc, assets);
+
+  return ibcAssetLists.reduce((m, v) => {
+    const chain = v.chain_name;
+    const assets = [...v.assets];
+    const cw20: AssetList = cw20Assets.find((a) => a.chain_name === chain);
+    if (cw20) {
+      // @ts-ignore
+      [].push.apply(assets, cw20.assets);
+    }
+    return [
+      {
+        chain_name: chain,
+        assets
+      },
+      ...m
+    ];
+  }, []);
+};
+
+export const getNativeAssetLists = (
+  chainName: string,
+  ibc: IBCInfo[],
+  _assets: AssetList[]
+) => {
+  const assets = getNativeAssets(_assets);
   const ibcAssetLists = getIbcAssets(chainName, ibc, assets);
   const cw20Assets = getCw20Assets(chainName, ibc, assets);
 

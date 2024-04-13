@@ -1,6 +1,6 @@
 // @ts-nocheck
 
-import { getAssetLists } from '@chain-registry/utils';
+import { getNativeAssetLists } from '@chain-registry/utils';
 import { assets, chains, ibc } from 'chain-registry';
 import { writeFileSync } from 'fs';
 import { Asset, AssetList, Chain } from '@chain-registry/types';
@@ -10,7 +10,7 @@ const chainName = 'osmosis';
 
 const asset_list = assets.reduce((m, { chain_name }) => {
   if (chain_name !== chainName) return m;
-  return [...m, ...getAssetLists(chain_name, ibc, assets)];
+  return [...m, ...getNativeAssetLists(chain_name, ibc, assets)];
 }, []);
 
 const assetList = assets.find((list) => list.chain_name === chainName);
