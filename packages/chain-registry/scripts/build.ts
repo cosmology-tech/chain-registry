@@ -1,9 +1,8 @@
 // @ts-nocheck
 
-import { AssetList, Chain, IBCInfo } from '@chain-registry/types';
-import { mkdirpSync } from 'mkdirp';
-import { sync as glob } from 'glob';
 import * as fs from 'fs';
+import { sync as glob } from 'glob';
+import { mkdirpSync } from 'mkdirp';
 import * as path from 'path';
 import { jsStringify } from 'strfy-js';
 
@@ -46,11 +45,6 @@ const writeChainIndex = (filePath, chainObj) => {
         ? `import _ibc from './ibc';
 `
         : ''
-    }${
-      chainObj.ibc_chain1
-        ? `import _ibc_chain1 from './ibc_chain1';
-`
-        : ''
     }
 ${
   chainObj.assets
@@ -65,11 +59,6 @@ ${
     }${
       chainObj.ibc
         ? `export const ibc = _ibc;
-`
-        : ''
-    }${
-      chainObj.ibc_chain1
-        ? `export const ibc_chain1 = _ibc_chain1;
 `
         : ''
     }`
@@ -158,7 +147,7 @@ const writeNetworkIbc = (filePath, networkObj) => {
 
   const importStat = Object.keys(networkObj)
     .map((chain_name) => {
-      if (!networkObj[chain_name].ibc_chain1) {
+      if (!networkObj[chain_name].ibc) {
         return null;
       }
 
@@ -180,7 +169,7 @@ ${importStat}
 
 const ibc: IBCInfo[] = [\n${validChain
       .map((chain_name) => {
-        return `  ..._${chain_name}.ibc_chain1`;
+        return `  ..._${chain_name}.ibc`;
       })
       .join(',\n')}
 ];
@@ -525,19 +514,10 @@ paths.forEach((file) => {
     if (!network_type1) {
       initChainBlock(result, NON_COSMOS_NETWORK_TYPE, data.chain_1.chain_name);
       initIBC(result[NON_COSMOS_NETWORK_TYPE][data.chain_1.chain_name], 'ibc');
-      initIBC(
-        result[NON_COSMOS_NETWORK_TYPE][data.chain_1.chain_name],
-        'ibc_chain1'
-      );
       result[NON_COSMOS_NETWORK_TYPE][data.chain_1.chain_name].ibc.push(data);
-      result[NON_COSMOS_NETWORK_TYPE][data.chain_1.chain_name].ibc_chain1.push(
-        data
-      );
     } else {
       initIBC(result[network_type1][data.chain_1.chain_name], 'ibc');
-      initIBC(result[network_type1][data.chain_1.chain_name], 'ibc_chain1');
       result[network_type1][data.chain_1.chain_name].ibc.push(data);
-      result[network_type1][data.chain_1.chain_name].ibc_chain1.push(data);
     }
 
     const network_type2 = chainNetworkMap[data.chain_2.chain_name];
@@ -578,11 +558,6 @@ Object.keys(result).forEach((network_type) => {
     if (chainObj.ibc) {
       const ibcFilePath = path.join(chainFolderPath, 'ibc.ts');
       write(ibcFilePath, chainObj.ibc, 'IBCInfo', true);
-    }
-
-    if (chainObj.ibc_chain1) {
-      const ibc1FilePath = path.join(chainFolderPath, 'ibc_chain1.ts');
-      write(ibc1FilePath, chainObj.ibc_chain1, 'IBCInfo', true);
     }
 
     const indexFilePath = path.join(chainFolderPath, 'index.ts');
