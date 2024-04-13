@@ -69,12 +69,12 @@ export const getWasmChannel = (info: IBCInfo) => {
 
 type DeepPartial<T> = {
   [P in keyof T]?: T[P] extends Array<infer U>
-      ? Array<DeepPartial<U>>       // Makes elements of arrays DeepPartial
-      : T[P] extends ReadonlyArray<infer U>
-      ? ReadonlyArray<DeepPartial<U>> // Handles readonly arrays
-      : T[P] extends object
-      ? DeepPartial<T[P]>            // Makes properties of objects DeepPartial
-      : T[P];                         // Leaves non-object types unchanged
+  ? Array<DeepPartial<U>>       // Makes elements of arrays DeepPartial
+  : T[P] extends ReadonlyArray<infer U>
+  ? ReadonlyArray<DeepPartial<U>> // Handles readonly arrays
+  : T[P] extends object
+  ? DeepPartial<T[P]>            // Makes properties of objects DeepPartial
+  : T[P];                         // Leaves non-object types unchanged
 };
 
 interface AssetListHash {
@@ -187,11 +187,49 @@ export const getIbcDenomByBase = (
   }
 };
 
+
+
+export const getNativeAssets = (
+  assets: AssetList[]
+): AssetList[] => {
+  return assets.map(list => {
+    const clone = JSON.parse(JSON.stringify(list));
+    clone.assets = list.assets.filter(asset => {
+      switch (true) {
+        case asset.base.startsWith('factory/'):
+          return true;
+
+        case asset.base.startsWith('ft') && list.chain_name === 'bitsong':
+          return true;
+
+        case asset.base.startsWith('erc20/'):
+          return true;
+
+        case asset.base.startsWith('ibc/'):
+          return false;
+
+        case asset.base.startsWith('cw20:'):
+          return true;
+
+        default:
+          if (!asset.traces || !asset.traces.length) {
+            // asset.type_asset = 'sdk.coin'
+            return true;
+          }
+          return false;
+      }
+    });
+    return clone;
+  });
+};
+
 export const getIbcAssets = (
   chainName: string,
   ibc: IBCInfo[],
-  assets: AssetList[]
+  _assets: AssetList[]
 ): AssetList[] => {
+
+  const assets = getNativeAssets(_assets);
   const chainIbcInfo = ibc.filter((i) => {
     return (
       i.chain_1.chain_name === chainName || i.chain_2.chain_name === chainName
@@ -490,7 +528,7 @@ export const getAssetLists = (
     const assets = [...v.assets];
     const cw20: AssetList = cw20Assets.find((a) => a.chain_name === chain);
     if (cw20) {
-       // @ts-ignore
+      // @ts-ignore
       [].push.apply(assets, cw20.assets);
     }
     return [
