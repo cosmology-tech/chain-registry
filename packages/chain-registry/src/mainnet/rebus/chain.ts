@@ -13,24 +13,22 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'arebus',
         fixed_min_gas_price: 0,
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'arebus'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.svg'
@@ -213,11 +211,9 @@ const info: Chain = {
       account_page: 'https://atomscan.com/rebus/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.svg'
-    }
-  ]
+    }]
 };
 export default info;

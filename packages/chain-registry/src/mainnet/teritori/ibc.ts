@@ -12,8 +12,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-32',
       connection_id: 'connection-0'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-431',
           port_id: 'transfer'
@@ -28,8 +27,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -43,8 +41,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-61',
       connection_id: 'connection-38'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-89',
           port_id: 'transfer'
@@ -59,8 +56,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -74,8 +70,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-97',
       connection_id: 'connection-97'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-54',
           port_id: 'transfer'
@@ -90,8 +85,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -105,8 +99,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-0',
       connection_id: 'connection-0'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-362',
           port_id: 'transfer'
@@ -122,8 +115,7 @@ const info: IBCInfo[] = [
           preferred: true,
           dex: 'osmosis'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -137,8 +129,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-99',
       connection_id: 'connection-122'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-111',
           port_id: 'transfer'
@@ -154,8 +145,7 @@ const info: IBCInfo[] = [
           preferred: true,
           properties: 'privacy'
         }
-      }
-    ]
+      }]
   }
 ];
 export default info;

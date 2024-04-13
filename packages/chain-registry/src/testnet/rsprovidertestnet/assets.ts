@@ -2,20 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'rsprovidertestnet',
-  assets: [
-    {
-      description:
-        'The native staking and governance token of the Replicated Security Testnet.',
-      denom_units: [
-        {
+  assets: [{
+      description: 'The native staking and governance token of the Replicated Security Testnet.',
+      denom_units: [{
           denom: 'uatom',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'atom',
           exponent: 6
-        }
-      ],
+        }],
       base: 'uatom',
       name: 'Cosmos',
       display: 'atom',
@@ -24,13 +19,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

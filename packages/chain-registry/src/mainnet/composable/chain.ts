@@ -13,32 +13,26 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ppica',
         fixed_min_gas_price: 0,
         low_gas_price: 0,
         average_gas_price: 0,
         high_gas_price: 0
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ppica'
-      }
-    ]
+      }]
   },
   codebase: {
-    cosmos_sdk_version:
-      'rust-ninja/cosmos-sdk v0.47.5-patch-validators-trim-tag'
+    cosmos_sdk_version: 'rust-ninja/cosmos-sdk v0.47.5-patch-validators-trim-tag'
   },
   logo_URIs: {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/composable.svg'
   },
-  description:
-    'Composable is the base layer connecting L1s and L2s. We are scaling IBC to other ecosystems, pushing the boundaries of trust-minimized interoperability. We abstract the cross-chain experience for users, delivering seamless chain-agnostic execution of user intentions.',
+  description: 'Composable is the base layer connecting L1s and L2s. We are scaling IBC to other ecosystems, pushing the boundaries of trust-minimized interoperability. We abstract the cross-chain experience for users, delivering seamless chain-agnostic execution of user intentions.',
   apis: {
     rpc: [
       {
@@ -214,8 +208,7 @@ const info: Chain = {
       kind: 'Stake Village',
       url: 'https://exp.stakevillage.net/composable',
       tx_page: 'https://exp.stakevillage.net/composable/tx/${txHash}',
-      account_page:
-        'https://exp.stakevillage.net/composable/account/${accountAddress}'
+      account_page: 'https://exp.stakevillage.net/composable/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
@@ -223,10 +216,8 @@ const info: Chain = {
       tx_page: 'https://explorer.stavr.tech/Composable-Mainnet/tx/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/composable.svg'
-    }
-  ]
+    }]
 };
 export default info;

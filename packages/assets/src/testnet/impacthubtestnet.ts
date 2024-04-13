@@ -4,19 +4,15 @@ const assets: AssetList = {
   assets: [
     {
       description: 'The native token of Osmosis',
-      denom_units: [
-        {
-          denom:
-            'ibc/376222D6D9DAE23092E29740E56B758580935A6D77C24C2ABD57A6A78A1F3955',
+      denom_units: [{
+          denom: 'ibc/376222D6D9DAE23092E29740E56B758580935A6D77C24C2ABD57A6A78A1F3955',
           exponent: 0,
           aliases: ['uosmo']
-        },
-        {
+        }, {
           denom: 'osmo',
           exponent: 6,
           aliases: []
-        }
-      ],
+        }],
       base: 'ibc/376222D6D9DAE23092E29740E56B758580935A6D77C24C2ABD57A6A78A1F3955',
       name: 'Osmosis',
       display: 'osmo',
@@ -27,14 +23,11 @@ const assets: AssetList = {
       },
       coingecko_id: 'osmosis',
       keywords: ['dex', 'staking'],
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
-        }
-      ],
-      traces: [
-        {
+        }],
+      traces: [{
           type: 'ibc',
           counterparty: {
             channel_id: 'channel-1637',
@@ -44,22 +37,17 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-10'
           }
-        }
-      ]
+        }]
     },
     {
-      denom_units: [
-        {
-          denom:
-            'ibc/0433997003A2CFE10E483B93743BEC37F2F13B89854FD69599482E6DB8E6CE22',
+      denom_units: [{
+          denom: 'ibc/0433997003A2CFE10E483B93743BEC37F2F13B89854FD69599482E6DB8E6CE22',
           exponent: 0,
           aliases: ['uion']
-        },
-        {
+        }, {
           denom: 'ion',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ibc/0433997003A2CFE10E483B93743BEC37F2F13B89854FD69599482E6DB8E6CE22',
       name: 'Ion',
       display: 'ion',
@@ -70,14 +58,11 @@ const assets: AssetList = {
       },
       coingecko_id: 'ion',
       keywords: ['memecoin'],
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
-        }
-      ],
-      traces: [
-        {
+        }],
+      traces: [{
           type: 'ibc',
           counterparty: {
             channel_id: 'channel-1637',
@@ -87,24 +72,17 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-10'
           }
-        }
-      ]
+        }]
     },
     {
-      denom_units: [
-        {
-          denom:
-            'ibc/5849025C1D4D7404EE4AD4DF05041202803EA210C5D8B819B6353F5A5BAFBC5A',
+      denom_units: [{
+          denom: 'ibc/5849025C1D4D7404EE4AD4DF05041202803EA210C5D8B819B6353F5A5BAFBC5A',
           exponent: 0,
-          aliases: [
-            'factory/osmo1zlkzu72774ynac53necz46u4ycqtp36wedrar0/willyz'
-          ]
-        },
-        {
+          aliases: ['factory/osmo1zlkzu72774ynac53necz46u4ycqtp36wedrar0/willyz']
+        }, {
           denom: 'willyz',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ibc/5849025C1D4D7404EE4AD4DF05041202803EA210C5D8B819B6353F5A5BAFBC5A',
       name: 'Willyz',
       display: 'willyz',
@@ -114,38 +92,29 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/osmosistestnet/images/willyz.svg'
       },
       keywords: ['memecoin'],
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/osmosistestnet/images/willyz.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/osmosistestnet/images/willyz.svg'
-        }
-      ],
-      traces: [
-        {
+        }],
+      traces: [{
           type: 'ibc',
           counterparty: {
             channel_id: 'channel-1637',
-            base_denom:
-              'factory/osmo1zlkzu72774ynac53necz46u4ycqtp36wedrar0/willyz',
+            base_denom: 'factory/osmo1zlkzu72774ynac53necz46u4ycqtp36wedrar0/willyz',
             chain_name: 'osmosistestnet'
           },
           chain: {
             channel_id: 'channel-10'
           }
-        }
-      ]
+        }]
     },
     {
-      description:
-        'The native EVM, governance and staking token of the Titan Chain',
+      description: 'The native EVM, governance and staking token of the Titan Chain',
       denom_units: [
         {
-          denom:
-            'ibc/C67683B7AD488DD9917EF50E92D81A4ADF89BD875FE52A995D03E235C34716FC',
+          denom: 'ibc/C67683B7AD488DD9917EF50E92D81A4ADF89BD875FE52A995D03E235C34716FC',
           exponent: 0,
-          aliases: [
-            'ibc/28EEF762052DB8C3D27A7BF625E9F86A1B3B689CC8D80C818CEDF2EB6CBA02A6'
-          ]
+          aliases: ['ibc/28EEF762052DB8C3D27A7BF625E9F86A1B3B689CC8D80C818CEDF2EB6CBA02A6']
         },
         {
           denom: 'utkx',
@@ -167,73 +136,57 @@ const assets: AssetList = {
       name: 'tkx',
       display: 'tkx',
       symbol: 'TKX',
-      traces: [
-        {
+      traces: [{
           type: 'ibc',
           counterparty: {
             channel_id: 'channel-1637',
-            base_denom:
-              'ibc/28EEF762052DB8C3D27A7BF625E9F86A1B3B689CC8D80C818CEDF2EB6CBA02A6',
+            base_denom: 'ibc/28EEF762052DB8C3D27A7BF625E9F86A1B3B689CC8D80C818CEDF2EB6CBA02A6',
             chain_name: 'osmosistestnet'
           },
           chain: {
             channel_id: 'channel-10'
           }
-        }
-      ],
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
-        }
-      ]
+        }]
     },
     {
-      description: "Circle's stablecoin on Axelar",
-      denom_units: [
-        {
-          denom:
-            'ibc/D4F8922E7DCF22B914642E08346D1329A264C88DA989E64C87129163C4DACE6A',
+      description: 'Circle\'s stablecoin on Axelar',
+      denom_units: [{
+          denom: 'ibc/D4F8922E7DCF22B914642E08346D1329A264C88DA989E64C87129163C4DACE6A',
           exponent: 0,
-          aliases: [
-            'ibc/2164BDB48DE5501430E71286448D87C6D2240EC0E078CF113CAB85E21A352BB0'
-          ]
-        },
-        {
+          aliases: ['ibc/2164BDB48DE5501430E71286448D87C6D2240EC0E078CF113CAB85E21A352BB0']
+        }, {
           denom: 'ausdc',
           exponent: 6
-        }
-      ],
+        }],
       type_asset: 'ics20',
       base: 'ibc/D4F8922E7DCF22B914642E08346D1329A264C88DA989E64C87129163C4DACE6A',
       name: 'USD Coin (Axelar)',
       display: 'ausdc',
       symbol: 'aUSDC.axl',
-      traces: [
-        {
+      traces: [{
           type: 'ibc',
           counterparty: {
             channel_id: 'channel-1637',
-            base_denom:
-              'ibc/2164BDB48DE5501430E71286448D87C6D2240EC0E078CF113CAB85E21A352BB0',
+            base_denom: 'ibc/2164BDB48DE5501430E71286448D87C6D2240EC0E078CF113CAB85E21A352BB0',
             chain_name: 'osmosistestnet'
           },
           chain: {
             channel_id: 'channel-10'
           }
-        }
-      ],
-      images: [
-        {
+        }],
+      images: [{
           image_sync: {
             chain_name: 'ethereumtestnet',
             base_denom: '0x254d06f33bDc5b8ee05b2ea472107E300226659A'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
-        }
-      ],
+        }],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       }
@@ -241,3 +194,4 @@ const assets: AssetList = {
   ]
 };
 export default assets;
+    

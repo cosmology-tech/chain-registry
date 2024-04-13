@@ -12,8 +12,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-96',
       connection_id: 'connection-75'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-3',
           port_id: 'transfer'
@@ -29,8 +28,7 @@ const info: IBCInfo[] = [
           preferred: true,
           properties: 'privacy'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -44,8 +42,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-171',
       connection_id: 'connection-98'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-15',
           port_id: 'transfer'
@@ -61,8 +58,7 @@ const info: IBCInfo[] = [
           preferred: true,
           properties: 'privacy'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -76,8 +72,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-177',
       connection_id: 'connection-110'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-19',
           port_id: 'transfer'
@@ -93,8 +88,7 @@ const info: IBCInfo[] = [
           preferred: true,
           properties: 'privacy'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -108,8 +102,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-37',
       connection_id: 'connection-25'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-37',
           port_id: 'transfer'
@@ -125,8 +118,7 @@ const info: IBCInfo[] = [
           preferred: true,
           properties: 'privacy'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -140,8 +132,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-99',
       connection_id: 'connection-122'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-111',
           port_id: 'transfer'
@@ -157,8 +148,7 @@ const info: IBCInfo[] = [
           preferred: true,
           properties: 'privacy'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -172,8 +162,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-28',
       connection_id: 'connection-29'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-2',
           port_id: 'transfer'
@@ -189,8 +178,7 @@ const info: IBCInfo[] = [
           preferred: true,
           properties: 'privacy'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -204,8 +192,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-4',
       connection_id: 'connection-7'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-16',
           port_id: 'transfer'
@@ -221,16 +208,14 @@ const info: IBCInfo[] = [
           preferred: true,
           properties: 'privacy'
         }
-      },
-      {
+      }, {
         chain_1: {
           channel_id: 'channel-127',
           port_id: 'transfer'
         },
         chain_2: {
           channel_id: 'channel-382',
-          port_id:
-            'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au'
+          port_id: 'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au'
         },
         ordering: 'unordered',
         version: 'ics20-1',
@@ -239,8 +224,7 @@ const info: IBCInfo[] = [
           preferred: true,
           properties: 'privacy'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -254,8 +238,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-249',
       connection_id: 'connection-213'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-126',
           port_id: 'transfer'
@@ -271,8 +254,7 @@ const info: IBCInfo[] = [
           preferred: true,
           properties: 'privacy'
         }
-      }
-    ]
+      }]
   }
 ];
 export default info;

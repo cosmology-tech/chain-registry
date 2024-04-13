@@ -21,36 +21,31 @@ const info: Chain = {
         high_gas_price: 0.0053
       },
       {
-        denom:
-          'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9',
+        denom: 'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9',
         low_gas_price: 0.0008,
         average_gas_price: 0.0008,
         high_gas_price: 0.0008
       },
       {
-        denom:
-          'ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349',
+        denom: 'ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349',
         low_gas_price: 0.008,
         average_gas_price: 0.008,
         high_gas_price: 0.008
       },
       {
-        denom:
-          'factory/neutron1ug740qrkquxzrk2hh29qrlx3sktkfml3je7juusc2te7xmvsscns0n2wry/wstETH',
+        denom: 'factory/neutron1ug740qrkquxzrk2hh29qrlx3sktkfml3je7juusc2te7xmvsscns0n2wry/wstETH',
         low_gas_price: 2903231.6597,
         average_gas_price: 2903231.6597,
         high_gas_price: 2903231.6597
       },
       {
-        denom:
-          'ibc/2CB87BCE0937B1D1DFCEE79BE4501AAF3C265E923509AEAC410AD85D27F35130',
+        denom: 'ibc/2CB87BCE0937B1D1DFCEE79BE4501AAF3C265E923509AEAC410AD85D27F35130',
         low_gas_price: 2564102564.1026,
         average_gas_price: 2564102564.1026,
         high_gas_price: 2564102564.1026
       },
       {
-        denom:
-          'ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7',
+        denom: 'ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7',
         low_gas_price: 0.0004,
         average_gas_price: 0.0004,
         high_gas_price: 0.0004
@@ -58,11 +53,9 @@ const info: Chain = {
     ]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'untrn'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'neutron-org/cosmos-sdk v0.47.10-neutron',
@@ -73,8 +66,7 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-black-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-black-logo.svg'
   },
-  description:
-    'The most secure CosmWasm platform in Cosmos, Neutron lets smart-contracts leverage bleeding-edge Interchain technology with minimal overhead.',
+  description: 'The most secure CosmWasm platform in Cosmos, Neutron lets smart-contracts leverage bleeding-edge Interchain technology with minimal overhead.',
   apis: {
     rpc: [
       {
@@ -179,25 +171,20 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Mintscan',
       url: 'https://www.mintscan.io/neutron',
       tx_page: 'https://www.mintscan.io/neutron/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/neutron/accounts/${accountAddress}'
-    },
-    {
+    }, {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/neutron',
       tx_page: 'https://ezstaking.app/neutron/txs/${txHash}',
       account_page: 'https://ezstaking.app/neutron/account/${accountAddress}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-black-logo.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-black-logo.svg'
-    }
-  ]
+    }]
 };
 export default info;

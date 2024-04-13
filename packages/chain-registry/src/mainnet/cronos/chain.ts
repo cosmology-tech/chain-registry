@@ -14,58 +14,46 @@ const info: Chain = {
   extra_codecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'basecro'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.cronos.org/',
         provider: 'cronos.org'
-      },
-      {
+      }, {
         address: 'https://cronos-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://rest.cronos.org/',
         provider: 'cronos.org'
-      },
-      {
+      }, {
         address: 'https://cronos-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'grpc.cronos.org:443',
         provider: 'cronos.org'
-      },
-      {
+      }, {
         address: 'cronos-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      }
-    ],
-    'evm-http-jsonrpc': [
-      {
+      }],
+    "evm-http-jsonrpc": [{
         address: 'https://evm.cronos.org/',
         provider: 'cronos.org'
-      },
-      {
+      }, {
         address: 'https://cronos-evm.publicnode.com',
         provider: 'Allnodes.com ⚡️ Nodes & Staking'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -85,11 +73,9 @@ const info: Chain = {
       account_page: 'https://ezstaking.app/cronos/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
-    }
-  ]
+    }]
 };
 export default info;

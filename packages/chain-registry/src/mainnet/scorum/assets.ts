@@ -5,16 +5,13 @@ const info: AssetList = {
   assets: [
     {
       description: 'The native token of Scorum',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'nscr',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'scr',
           exponent: 9
-        }
-      ],
+        }],
       base: 'nscr',
       name: 'Scorum',
       display: 'scr',
@@ -23,12 +20,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scr.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scr.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scr.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scr.svg'
-        }
-      ],
+        }],
       socials: {
         website: 'https://scorum.com',
         twitter: 'https://twitter.com/scorum_en'
@@ -36,16 +31,13 @@ const info: AssetList = {
     },
     {
       description: 'Scorum Power used for internal mechanics and staking',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'nsp',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'sp',
           exponent: 9
-        }
-      ],
+        }],
       base: 'nsp',
       name: 'Scorum Power',
       display: 'sp',
@@ -54,21 +46,17 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'Virtual(non-transferable) coin used to pay gas',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'gas',
           exponent: 0
-        }
-      ],
+        }],
       base: 'gas',
       name: 'GAS',
       display: 'gas',
@@ -77,12 +65,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/gas.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/gas.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/gas.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/gas.svg'
-        }
-      ]
+        }]
     }
   ]
 };

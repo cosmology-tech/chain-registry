@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['ethsecp256k1'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'axpla',
         fixed_min_gas_price: 850000000000,
         low_gas_price: 850000000000,
         average_gas_price: 1147500000000,
         high_gas_price: 1487500000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'axpla'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'xpladev/cosmos-sdk v0.45.20-xpla',
@@ -72,12 +68,10 @@ const info: Chain = {
       }
     ],
     grpc: [],
-    'evm-http-jsonrpc': [
-      {
+    "evm-http-jsonrpc": [{
         address: 'https://dimension-evm-rpc.xpla.dev',
         provider: 'Holdings'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -108,11 +102,9 @@ const info: Chain = {
       account_page: 'https://ezstaking.app/xpla/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xpla/images/xpla.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xpla/images/xpla.svg'
-    }
-  ]
+    }]
 };
 export default info;

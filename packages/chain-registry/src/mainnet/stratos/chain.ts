@@ -14,13 +14,13 @@ const info: Chain = {
   extra_codecs: [],
   slip44: 606,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'wei'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.svg'
@@ -76,7 +76,7 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       }
     ],
-    'evm-http-jsonrpc': [
+    "evm-http-jsonrpc": [
       {
         address: 'https://web3-rpc.thestratos.org',
         provider: 'thestratos.org'
@@ -102,29 +102,24 @@ const info: Chain = {
       kind: 'blockscout',
       url: 'https://web3-explorer.thestratos.org',
       tx_page: 'https://web3-explorer.thestratos.org/tx/${txHash}',
-      account_page:
-        'https://web3-explorer.thestratos.org/address/${accountAddress}'
+      account_page: 'https://web3-explorer.thestratos.org/address/${accountAddress}'
     },
     {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.top/stratos',
       tx_page: 'https://explorer.nodestake.top/stratos/tx/${txHash}',
-      account_page:
-        'https://explorer.nodestake.top/stratos/accounts/${accountAddress}'
+      account_page: 'https://explorer.nodestake.top/stratos/accounts/${accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/stratos',
       tx_page: 'https://explorer.tcnetwork.io/stratos/transaction/${txHash}',
-      account_page:
-        'https://explorer.tcnetwork.io/stratos/account/${accountAddress}'
+      account_page: 'https://explorer.tcnetwork.io/stratos/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.svg'
-    }
-  ]
+    }]
 };
 export default info;

@@ -13,21 +13,17 @@ const info: Chain = {
   extra_codecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'atevmos',
         low_gas_price: 20000000000,
         average_gas_price: 25000000000,
         high_gas_price: 40000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'atevmos'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.46'
@@ -61,28 +57,22 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'https://evmos.test.grpc.coldyvalidator.net',
         provider: 'coldy'
-      },
-      {
+      }, {
         address: 'evmos-testnet-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Mintscan',
       url: 'https://testnet.mintscan.io/evmos-testnet',
       tx_page: 'https://testnet.mintscan.io/evmos-testnet/txs/${txHash}'
-    },
-    {
+    }, {
       kind: 'NodesGuru',
       url: 'https://testnet.evmos.explorers.guru/',
       tx_page: 'https://testnet.evmos.explorers.guru/transaction/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

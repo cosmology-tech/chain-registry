@@ -1,6 +1,5 @@
 import { IBCInfo } from '@chain-registry/types';
-const info: IBCInfo[] = [
-  {
+const info: IBCInfo[] = [{
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'archwaytestnet',
@@ -12,8 +11,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-603',
       connection_id: 'connection-418'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-50',
           port_id: 'transfer'
@@ -27,10 +25,8 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
-  },
-  {
+      }]
+  }, {
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'archwaytestnet',
@@ -42,8 +38,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-1195',
       connection_id: 'connection-1101'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-58',
           port_id: 'transfer'
@@ -57,8 +52,6 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
-  }
-];
+      }]
+  }];
 export default info;

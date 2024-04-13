@@ -12,8 +12,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-54',
       connection_id: 'connection-40'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-114',
           port_id: 'transfer'
@@ -28,8 +27,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -43,8 +41,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-9',
       connection_id: 'connection-9'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-204',
           port_id: 'transfer'
@@ -55,9 +52,10 @@ const info: IBCInfo[] = [
         },
         ordering: 'unordered',
         version: 'ics20-1',
-        tags: {}
-      }
-    ]
+        tags: {
+
+        }
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -71,8 +69,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-20',
       connection_id: 'connection-29'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-26',
           port_id: 'transfer'
@@ -87,8 +84,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -102,8 +98,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-1451',
       connection_id: 'connection-1137'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-4',
           port_id: 'transfer'
@@ -119,8 +114,7 @@ const info: IBCInfo[] = [
           preferred: true,
           dex: 'osmosis'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -134,8 +128,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-39',
       connection_id: 'connection-18'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-11',
           port_id: 'transfer'
@@ -146,9 +139,10 @@ const info: IBCInfo[] = [
         },
         ordering: 'unordered',
         version: 'ics20-1',
-        tags: {}
-      }
-    ]
+        tags: {
+
+        }
+      }]
   }
 ];
 export default info;

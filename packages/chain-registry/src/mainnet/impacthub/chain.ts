@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1', 'ed25519'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uixo',
         fixed_min_gas_price: 0.025,
         low_gas_price: 0.025,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uixo'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.45.16'
@@ -116,8 +112,7 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/IXO-Mainnet',
       tx_page: 'https://explorer.stavr.tech/IXO-Mainnet/txs/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/IXO-Mainnet/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/IXO-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'bigdipper',
@@ -142,11 +137,9 @@ const info: Chain = {
       account_page: 'https://www.mintscan.io/ixo/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.svg'
-    }
-  ]
+    }]
 };
 export default info;

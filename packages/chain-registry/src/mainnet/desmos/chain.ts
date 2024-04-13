@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 852,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'udsm',
         fixed_min_gas_price: 0.001,
         low_gas_price: 0.01,
         average_gas_price: 0.03,
         high_gas_price: 0.05
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'udsm'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'desmos-labs/cosmos-sdk v0.47.9-desmos',
@@ -195,11 +191,9 @@ const info: Chain = {
       tx_page: 'https://explorer.declab.pro/Desmos/tx/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg'
-    }
-  ]
+    }]
 };
 export default info;

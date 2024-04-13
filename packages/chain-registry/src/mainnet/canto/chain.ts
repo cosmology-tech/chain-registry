@@ -12,24 +12,22 @@ const info: Chain = {
   daemon_name: 'cantod',
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'acanto',
         fixed_min_gas_price: 1000000000000,
         low_gas_price: 1000000000000,
         average_gas_price: 2000000000000,
         high_gas_price: 3000000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'acanto'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg'
@@ -105,7 +103,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
-    'evm-http-jsonrpc': [
+    "evm-http-jsonrpc": [
       {
         address: 'https://canto.neobase.one/',
         provider: 'NeoBase'
@@ -169,15 +167,12 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Canto-Mainnet',
       tx_page: 'https://explorer.stavr.tech/Canto-Mainnet/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Canto-Mainnet/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Canto-Mainnet/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg'
-    }
-  ]
+    }]
 };
 export default info;

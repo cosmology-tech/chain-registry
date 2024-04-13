@@ -12,11 +12,9 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uelys'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1209600s'
     }
@@ -31,16 +29,14 @@ const info: Chain = {
         high_gas_price: 0.03
       },
       {
-        denom:
-          'ibc/2180E84E20F5679FCC760D8C165B60F42065DEF7F46A72B447CFF1B7DC6C0A65',
+        denom: 'ibc/2180E84E20F5679FCC760D8C165B60F42065DEF7F46A72B447CFF1B7DC6C0A65',
         fixed_min_gas_price: 0.01,
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.03
       },
       {
-        denom:
-          'ibc/E2D2F6ADCC68AA3384B2F5DFACCA437923D137C14E86FB8A10207CF3BED0C8D4',
+        denom: 'ibc/E2D2F6ADCC68AA3384B2F5DFACCA437923D137C14E86FB8A10207CF3BED0C8D4',
         fixed_min_gas_price: 0.01,
         low_gas_price: 0.01,
         average_gas_price: 0.025,
@@ -93,24 +89,20 @@ const info: Chain = {
         provider: 'Kleomedes'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'services.staketab.com:9390',
         provider: 'Staketab'
-      },
-      {
+      }, {
         address: 'elys-testnet-grpc.itrocket.net:38090',
         provider: 'itrocket'
-      }
-    ]
+      }]
   },
   explorers: [
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Elys-Testnet',
       tx_page: 'https://explorer.stavr.tech/Elys-Testnet/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Elys-Testnet/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Elys-Testnet/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
@@ -121,8 +113,7 @@ const info: Chain = {
       kind: 'itrocket',
       url: 'https://testnet.itrocket.net/elys',
       tx_page: 'https://testnet.itrocket.net/elys/staking/tx/${txHash}',
-      account_page:
-        'https://testnet.itrocket.net/elys/account/${accountAddress}'
+      account_page: 'https://testnet.itrocket.net/elys/account/${accountAddress}'
     }
   ]
 };

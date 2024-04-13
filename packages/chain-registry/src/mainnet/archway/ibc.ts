@@ -12,8 +12,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-23',
       connection_id: 'connection-21'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-60',
           port_id: 'transfer'
@@ -27,8 +26,7 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -42,8 +40,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-26',
       connection_id: 'connection-28'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-109',
           port_id: 'transfer'
@@ -54,9 +51,10 @@ const info: IBCInfo[] = [
         },
         ordering: 'unordered',
         version: 'ics20-1',
-        tags: {}
-      }
-    ]
+        tags: {
+
+        }
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -70,8 +68,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-58',
       connection_id: 'connection-68'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-11',
           port_id: 'transfer'
@@ -86,8 +83,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -101,8 +97,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-160',
       connection_id: 'connection-145'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-13',
           port_id: 'transfer'
@@ -116,8 +111,7 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -131,8 +125,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-83',
       connection_id: 'connection-74'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-35',
           port_id: 'transfer'
@@ -147,8 +140,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -162,8 +154,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-80',
       connection_id: 'connection-55'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-124',
           port_id: 'transfer'
@@ -177,8 +168,7 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -192,8 +182,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-1152',
       connection_id: 'connection-873'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-0',
           port_id: 'transfer'
@@ -207,8 +196,7 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -222,8 +210,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-21',
       connection_id: 'connection-8'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-36',
           port_id: 'transfer'
@@ -237,8 +224,7 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -252,8 +238,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-20',
       connection_id: 'connection-24'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-101',
           port_id: 'transfer'
@@ -269,8 +254,7 @@ const info: IBCInfo[] = [
           preferred: true,
           dex: 'osmosis'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -284,8 +268,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-39',
       connection_id: 'connection-30'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-123',
           port_id: 'transfer'
@@ -300,8 +283,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -315,8 +297,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-424',
       connection_id: 'connection-406'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-38',
           port_id: 'transfer'
@@ -330,8 +311,7 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -345,8 +325,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-61',
       connection_id: 'connection-50'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-14',
           port_id: 'transfer'
@@ -360,10 +339,8 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ],
-    operators: [
-      {
+      }],
+    operators: [{
         chain_1: {
           address: 'archway16l5ls4ajah6hethh374tpgn42r5q4sqeuw8udj'
         },
@@ -373,8 +350,7 @@ const info: IBCInfo[] = [
         memo: 'by AM Solutions | https://www.theamsolutions.info',
         name: 'AM Solutions',
         discord_handle: 'AlexeyM#5409'
-      },
-      {
+      }, {
         chain_1: {
           address: 'archway1nms20r7jzaa4ms9exv90ckl2xfn0rd3rmqh7zm'
         },
@@ -384,8 +360,7 @@ const info: IBCInfo[] = [
         memo: 'Relayed by NodeStake',
         name: 'NodeStake',
         discord_handle: 'nodestake'
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -399,8 +374,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-144',
       connection_id: 'connection-110'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-11',
           port_id: 'transfer'
@@ -414,8 +388,7 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -429,8 +402,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-62',
       connection_id: 'connection-43'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-61',
           port_id: 'transfer'
@@ -445,8 +417,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -460,8 +431,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-17',
       connection_id: 'connection-26'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-29',
           port_id: 'transfer'
@@ -475,8 +445,7 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -490,8 +459,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-15',
       connection_id: 'connection-9'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-17',
           port_id: 'transfer'
@@ -506,17 +474,14 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      },
-      {
+      }, {
         chain_1: {
           channel_id: 'channel-19',
-          port_id:
-            'wasm.archway10f3aasgsnpv84ymjyld50jayc4ecu267sdpjamauwm8nvxlzex9qj4dkwr'
+          port_id: 'wasm.archway10f3aasgsnpv84ymjyld50jayc4ecu267sdpjamauwm8nvxlzex9qj4dkwr'
         },
         chain_2: {
           channel_id: 'channel-22',
-          port_id:
-            'wasm.nois1acyc05v6fgcdgj88nmz2t40aex9nlnptqpwp5hf8hwg7rhce9uuqgqz5wp'
+          port_id: 'wasm.nois1acyc05v6fgcdgj88nmz2t40aex9nlnptqpwp5hf8hwg7rhce9uuqgqz5wp'
         },
         ordering: 'unordered',
         version: 'nois-v7',
@@ -524,8 +489,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -539,8 +503,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-49',
       connection_id: 'connection-43'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-37',
           port_id: 'transfer'
@@ -554,8 +517,7 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -569,8 +531,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-2850',
       connection_id: 'connection-2362'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-1',
           port_id: 'transfer'
@@ -584,8 +545,7 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -599,8 +559,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-561',
       connection_id: 'connection-486'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-112',
           port_id: 'transfer'
@@ -615,8 +574,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -630,8 +588,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-83',
       connection_id: 'connection-58'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-34',
           port_id: 'transfer'
@@ -645,8 +602,7 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -660,8 +616,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-8',
       connection_id: 'connection-5'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-88',
           port_id: 'transfer'
@@ -677,8 +632,7 @@ const info: IBCInfo[] = [
           preferred: true,
           dex: 'astrovault'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -692,8 +646,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-169',
       connection_id: 'connection-119'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-21',
           port_id: 'transfer'
@@ -707,8 +660,7 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -722,8 +674,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-384',
       connection_id: 'connection-360'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-50',
           port_id: 'transfer'
@@ -737,8 +688,7 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -752,8 +702,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-228',
       connection_id: 'connection-190'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-4',
           port_id: 'transfer'
@@ -767,8 +716,7 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -782,8 +730,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-49',
       connection_id: 'connection-46'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-110',
           port_id: 'transfer'
@@ -797,8 +744,7 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
+      }]
   }
 ];
 export default info;

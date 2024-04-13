@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ufis',
         fixed_min_gas_price: 0,
         low_gas_price: 0,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ufis'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1209600s'
     }
@@ -113,10 +109,8 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/stafihub-chain-logo.png'
   },
   keywords: ['liquid staking'],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/stafihub-chain-logo.png'
-    }
-  ]
+    }]
 };
 export default info;

@@ -12,72 +12,57 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uakiro',
         fixed_min_gas_price: 0.025,
         low_gas_price: 0.025,
         average_gas_price: 0.035,
         high_gas_price: 0.045
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uakiro'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'http://213.199.36.82:26657',
         provider: 'AKIRO'
-      },
-      {
+      }, {
         address: 'https://rpc-akiro.d-stake.xyz',
         provider: 'D-Stake'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'http://213.199.36.82:1317',
         provider: 'AKIRO'
-      },
-      {
+      }, {
         address: 'https://api-akiro.d-stake.xyz',
         provider: 'D-Stake'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'http://213.199.36.82:9090',
         provider: 'AKIRO'
-      },
-      {
+      }, {
         address: 'https://grpc-akiro.d-stake.xyz',
         provider: 'D-Stake'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'ping.pub',
       url: 'https://ping.pub/akiro',
       tx_page: 'https://ping.pub/akiro/tx/${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.svg'
-    }
-  ]
+    }]
 };
 export default info;

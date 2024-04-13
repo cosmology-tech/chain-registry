@@ -13,59 +13,43 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uqwoyn'
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uqwoyn'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.47.3'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://testnet-rpc.qwoyn.studio',
         provider: 'Qwoyn Studios'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'http://66.42.74.12:9090',
         provider: 'Qwoyn Studios'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://testnet-api.qwoyn.studio',
         provider: 'Qwoyn Studios'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'pingfork',
       url: 'https://explorer.theamsolutions.info/qwoyn-testnet/',
-      tx_page:
-        'https://explorer.theamsolutions.info/qwoyn-testnet/tx/${txHash}',
-      account_page:
-        'https://explorer.theamsolutions.info/qwoyn-testnet/account/${accountAddress}'
-    }
-  ],
+      tx_page: 'https://explorer.theamsolutions.info/qwoyn-testnet/tx/${txHash}',
+      account_page: 'https://explorer.theamsolutions.info/qwoyn-testnet/account/${accountAddress}'
+    }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/qwoyntestnet/images/qwoyn.png'
   },
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/qwoyntestnet/images/qwoyn.png'
-    }
-  ]
+    }]
 };
 export default info;

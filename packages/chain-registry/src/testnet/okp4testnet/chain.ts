@@ -13,24 +13,22 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uknow',
         fixed_min_gas_price: 0,
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.03
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uknow'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/okp4testnet/images/okp4.png'
   },
@@ -99,10 +97,8 @@ const info: Chain = {
       tx_page: 'https://explore.okp4.network/OKP4%20testnet/tx/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/okp4testnet/images/okp4.png'
-    }
-  ]
+    }]
 };
 export default info;

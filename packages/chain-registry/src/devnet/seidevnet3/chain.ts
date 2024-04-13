@@ -12,54 +12,42 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'usei',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.sei-devnet-3.seinetwork.io',
         provider: 'Sei Foundation'
-      },
-      {
+      }, {
         address: 'https://sei-testnet-2-rpc.brocha.in',
         provider: 'Brochain'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://rest.sei-devnet-3.seinetwork.io',
         provider: 'Sei Foundation'
-      },
-      {
+      }, {
         address: 'https://sei-testnet-2-rest.brocha.in',
         provider: 'Brochain'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'https://grpc.sei-devnet-3.seinetwork.io',
         provider: 'Sei Foundation'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'explorers.guru',
       url: 'https://devnet.sei.explorers.guru',
       tx_page: 'https://devnet.sei.explorers.guru/transaction/${txHash}'
-    },
-    {
+    }, {
       kind: 'Brochain',
       url: 'https://testnet-explorer.brocha.in/sei%20atlantic%202',
-      tx_page:
-        'https://testnet-explorer.brocha.in/sei%20atlantic%202/tx/${txHash}'
-    }
-  ]
+      tx_page: 'https://testnet-explorer.brocha.in/sei%20atlantic%202/tx/${txHash}'
+    }]
 };
 export default info;

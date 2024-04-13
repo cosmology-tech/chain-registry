@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 990,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ucore',
         fixed_min_gas_price: 0.03125,
         low_gas_price: 0.0625,
         average_gas_price: 0.0625,
         high_gas_price: 62.5
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ucore'
-      }
-    ],
+      }],
     lock_duration: {
       time: '168h'
     }
@@ -38,18 +34,15 @@ const info: Chain = {
     cosmwasm_enabled: true,
     cosmwasm_version: '0.30'
   },
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
       theme: {
         primary_color_hex: '#25d695'
       }
-    },
-    {
+    }, {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
-    }
-  ],
+    }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png'
   },
@@ -170,8 +163,7 @@ const info: Chain = {
       kind: 'Coreum',
       url: 'https://explorer.coreum.com/coreum',
       tx_page: 'https://explorer.coreum.com/coreum/transactions/${txHash}',
-      account_page:
-        'https://explorer.coreum.com/coreum/account/${accountAddress}'
+      account_page: 'https://explorer.coreum.com/coreum/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
@@ -183,29 +175,25 @@ const info: Chain = {
       kind: 'NODEXPLORER',
       url: 'https://explorer.nodexcapital.com/coreum',
       tx_page: 'https://explorer.nodexcapital.com/coreum/txs/${txHash}',
-      account_page:
-        'https://explorer.nodexcapital.com/coreum/account/${accountAddress}'
+      account_page: 'https://explorer.nodexcapital.com/coreum/account/${accountAddress}'
     },
     {
       kind: 'Silk Nodes',
       url: 'https://explorer.silknodes.io/coreum',
       tx_page: 'https://explorer.silknodes.io/coreum/tx/${txHash}',
-      account_page:
-        'https://explorer.silknodes.io/coreum/account/${accountAddress}'
+      account_page: 'https://explorer.silknodes.io/coreum/account/${accountAddress}'
     },
     {
       kind: '#SoloNation',
       url: 'https://explorer.solonation.io/core-main',
       tx_page: 'https://explorer.solonation.io/core-main/tx/${txHash}',
-      account_page:
-        'https://explorer.solonation.io/core-main/account/${accountAddress}'
+      account_page: 'https://explorer.solonation.io/core-main/account/${accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/coreum',
       tx_page: 'https://explorer.tcnetwork.io/coreum/transaction/${txHash}',
-      account_page:
-        'https://explorer.tcnetwork.io/coreum/account/${accountAddress}'
+      account_page: 'https://explorer.tcnetwork.io/coreum/account/${accountAddress}'
     },
     {
       kind: 'ezstaking',
@@ -214,6 +202,12 @@ const info: Chain = {
       account_page: 'https://ezstaking.app/coreum/account/${accountAddress}'
     }
   ],
-  keywords: ['dex', 'staking', 'wasm', 'assets', 'nft']
+  keywords: [
+    'dex',
+    'staking',
+    'wasm',
+    'assets',
+    'nft'
+  ]
 };
 export default info;

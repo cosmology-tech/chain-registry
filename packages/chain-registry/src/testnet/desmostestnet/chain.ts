@@ -12,62 +12,49 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 852,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'udaric',
         fixed_min_gas_price: 0.001,
         low_gas_price: 0.01,
         average_gas_price: 0.03,
         high_gas_price: 0.05
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'udaric'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.morpheus.desmos.network',
         provider: 'desmos'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://lcd.morpheus.desmos.network',
         provider: 'desmos'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'https://grpc.morpheus.desmos.network:443',
         provider: 'desmos'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'bigdipper',
       url: 'https://testnet.bigdipper.live/desmos',
       tx_page: 'https://testnet.live/desmos/transactions/${txHash}',
-      account_page:
-        'https://testnet.bigdipper.live/desmos/accounts/${accountAddress}'
-    }
-  ],
-  images: [
-    {
+      account_page: 'https://testnet.bigdipper.live/desmos/accounts/${accountAddress}'
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg'
-    }
-  ]
+    }]
 };
 export default info;

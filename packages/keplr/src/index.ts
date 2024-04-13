@@ -32,9 +32,9 @@ export const chainRegistryChainToKeplr = (
   chain: Chain,
   assets: AssetList[],
   options: {
-    getRpcEndpoint: (chain: Chain) => string;
-    getRestEndpoint: (chain: Chain) => string;
-    getExplorer: (chain: Chain) => string;
+    getRpcEndpoint?: (chain: Chain) => string;
+    getRestEndpoint?: (chain: Chain) => string;
+    getExplorer?: (chain: Chain) => string;
   } = {
     getRpcEndpoint: getRpc,
     getRestEndpoint: getRest,
@@ -79,14 +79,20 @@ export const chainRegistryChainToKeplr = (
    * If this field is empty, it just use the default gas price step (low: 0.01, average: 0.025, high: 0.04).
    * And, set field's type as primitive number because it is hard to restore the prototype after deserialzing if field's type is `Dec`.
    */
-  const gasPriceSteps = chain.fees?.fee_tokens?.reduce((m, feeToken) => {
+  interface GasPriceStep {
+    low: number;
+    average: number;
+    high: number;
+  }
+
+  const gasPriceSteps: Record<string, GasPriceStep> = chain.fees?.fee_tokens?.reduce((m, feeToken) => {
     m[feeToken.denom] = {
       low: feeToken.low_gas_price ?? 0.01,
       average: feeToken.average_gas_price ?? 0.025,
       high: feeToken.high_gas_price ?? 0.04
     };
     return m;
-  }, {});
+  }, {} as Record<string, GasPriceStep>);
 
   const stakingDenoms =
     chain.staking?.staking_tokens.map<string>(
@@ -113,8 +119,9 @@ export const chainRegistryChainToKeplr = (
     // USE THE FEE DENOMS
     .filter((currency) => feeDenoms.includes(currency.coinMinimalDenom))
     .map((feeCurrency) => {
-      if (!gasPriceSteps?.hasOwnProperty(feeCurrency.coinMinimalDenom))
+      if (!(feeCurrency.coinMinimalDenom in gasPriceSteps)) {
         return feeCurrency;
+      }
 
       // has gas
       const gasPriceStep = gasPriceSteps[feeCurrency.coinMinimalDenom];
@@ -128,8 +135,9 @@ export const chainRegistryChainToKeplr = (
     // USE THE STAKE CURRENCY
     .filter((currency) => stakeCurrency.coinDenom === currency.coinDenom)
     .map((feeCurrency) => {
-      if (!gasPriceSteps?.hasOwnProperty(feeCurrency.coinMinimalDenom))
+      if (!(feeCurrency.coinMinimalDenom in gasPriceSteps)) {
         return feeCurrency;
+      }
 
       // has gas
       const gasPriceStep = gasPriceSteps[feeCurrency.coinMinimalDenom];

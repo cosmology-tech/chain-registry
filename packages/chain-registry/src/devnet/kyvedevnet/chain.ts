@@ -12,34 +12,28 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'tkyve',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.korellia.kyve.network',
         provider: 'kyve'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://api.korellia.kyve.network',
         provider: 'kyve'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'explorers.guru',
       url: 'https://kyve.explorers.guru/',
       tx_page: 'https://kyve.explorers.guru/transaction/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

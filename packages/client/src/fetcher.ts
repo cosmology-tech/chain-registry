@@ -186,7 +186,7 @@ export class ChainRegistryFetcher implements ChainRegistry {
     });
   }
 
-  async fetch(url): Promise<void> {
+  async fetch(url: string): Promise<void> {
     const data = await fetchUrl(url);
     this.update(data);
   }

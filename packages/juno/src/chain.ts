@@ -13,30 +13,24 @@ const chain: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ujuno',
         fixed_min_gas_price: 0.075,
         low_gas_price: 0.075,
         average_gas_price: 0.1,
         high_gas_price: 0.125
-      },
-      {
-        denom:
-          'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9',
+      }, {
+        denom: 'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9',
         fixed_min_gas_price: 0.003,
         low_gas_price: 0.003,
         average_gas_price: 0.0035,
         high_gas_price: 0.004
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ujuno'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.47.6',
@@ -47,8 +41,7 @@ const chain: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
   },
-  description:
-    'Juno is a completely community owned and operated smart contract platform.',
+  description: 'Juno is a completely community owned and operated smart contract platform.',
   apis: {
     rpc: [
       {
@@ -398,8 +391,7 @@ const chain: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/juno',
       tx_page: 'https://explorer.stavr.tech/juno/transactions/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/juno/accounts/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/juno/accounts/${accountAddress}'
     },
     {
       kind: 'TC Network',
@@ -420,15 +412,13 @@ const chain: Chain = {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/juno/',
       tx_page: 'https://explorer.nodeshub.online/juno/tx/${txHash}',
-      account_page:
-        'https://explorer.nodeshub.online/juno/accounts/${accountAddress}'
+      account_page: 'https://explorer.nodeshub.online/juno/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
-    }
-  ]
+    }]
 };
 export default chain;
+    

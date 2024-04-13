@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'usei',
         fixed_min_gas_price: 0.02,
         low_gas_price: 0.02,
         average_gas_price: 0.02,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'usei'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'sei-cosmos v0.2.77',
@@ -39,8 +35,7 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.svg'
   },
-  description:
-    'Sei is the fastest Layer 1 blockchain, designed to scale with the industry.',
+  description: 'Sei is the fastest Layer 1 blockchain, designed to scale with the industry.',
   apis: {
     rpc: [
       {
@@ -152,15 +147,12 @@ const info: Chain = {
       kind: 'seiscan',
       url: 'https://www.seiscan.app/pacific-1',
       tx_page: 'https://www.seiscan.app/pacific-1/txs/${txHash}',
-      account_page:
-        'https://www.seiscan.app/pacific-1/accounts/${accountAddress}'
+      account_page: 'https://www.seiscan.app/pacific-1/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.svg'
-    }
-  ]
+    }]
 };
 export default info;

@@ -12,35 +12,30 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ppica'
-      }
-    ]
+      }]
   },
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ppica',
         fixed_min_gas_price: 0,
         low_gas_price: 0,
         average_gas_price: 0,
         high_gas_price: 0
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.composable-t.indonode.net:443',
         provider: 'Indonode'
-      },
-      {
+      }, {
         address: 'https://rpc-composable-testnet.sr20de.xyz:443',
         provider: 'Sr20de'
-      }
-    ],
+      }],
     rest: [
       {
         address: 'https://api.composable-t.indonode.net',
@@ -55,16 +50,13 @@ const info: Chain = {
         provider: 'Sr20de'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'https://grpc.composable-t.indonode.net:47090',
         provider: 'Indonode'
-      },
-      {
+      }, {
         address: 'https://grpc-composable-testnet.sr20de.xyz',
         provider: 'Sr20de'
-      }
-    ]
+      }]
   },
   explorers: [
     {

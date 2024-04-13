@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'unls',
         fixed_min_gas_price: 0.025,
         low_gas_price: 0.025,
         average_gas_price: 0.025,
         high_gas_price: 0.05
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'unls'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1814400s'
     }
@@ -42,8 +38,7 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg'
   },
-  description:
-    'Elevate your game with up to 3x equity. Dive into a world of minimized risks and unlock the full potential of your assets.',
+  description: 'Elevate your game with up to 3x equity. Dive into a world of minimized risks and unlock the full potential of your assets.',
   apis: {
     rpc: [
       {
@@ -181,8 +176,7 @@ const info: Chain = {
       kind: 'Nolus Explorer',
       url: 'https://explorer.nolus.io/pirin-1',
       tx_page: 'https://explorer.nolus.io/pirin-1/tx/${txHash}',
-      account_page:
-        'https://explorer.nolus.io/pirin-1/account/${accountAddress}'
+      account_page: 'https://explorer.nolus.io/pirin-1/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
@@ -194,8 +188,7 @@ const info: Chain = {
       kind: 'NODEXPLORER',
       url: 'https://explorer.nodexcapital.com/nolus',
       tx_page: 'https://explorer.nodexcapital.com/nolus/tx/${txHash}',
-      account_page:
-        'https://explorer.nodexcapital.com/nolus/account/${accountAddress}'
+      account_page: 'https://explorer.nodexcapital.com/nolus/account/${accountAddress}'
     },
     {
       kind: 'Nodes Guru Explorer',
@@ -206,16 +199,13 @@ const info: Chain = {
       kind: 'KJ Nodes Explorer',
       url: 'https://explorer.kjnodes.com/nolus',
       tx_page: 'https://explorer.kjnodes.com/nolus/tx/${txHash}',
-      account_page:
-        'https://explorer.kjnodes.com/nolus/account/${accountAddress}'
+      account_page: 'https://explorer.kjnodes.com/nolus/account/${accountAddress}'
     }
   ],
   keywords: ['mainnet'],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg'
-    }
-  ]
+    }]
 };
 export default info;

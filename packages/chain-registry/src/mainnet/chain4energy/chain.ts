@@ -13,24 +13,22 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uc4e',
         fixed_min_gas_price: 0,
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uc4e'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chain4energy/images/c4e.png'
   },
@@ -350,8 +348,7 @@ const info: Chain = {
     {
       kind: 'explorer',
       url: 'https://explorer.apeironnodes.com/chain4energy',
-      tx_page:
-        'https://explorer.apeironnodes.com/chain4energy/transactions/${txHash}'
+      tx_page: 'https://explorer.apeironnodes.com/chain4energy/transactions/${txHash}'
     },
     {
       kind: 'explorer',
@@ -366,8 +363,7 @@ const info: Chain = {
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/chain4energy',
-      tx_page:
-        'https://explorer.nodestake.top/chain4energy/transactions/${txHash}'
+      tx_page: 'https://explorer.nodestake.top/chain4energy/transactions/${txHash}'
     },
     {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀 Explorer',
@@ -382,8 +378,7 @@ const info: Chain = {
     {
       kind: 'BccNodes Explorer',
       url: 'https://explorer.bccnodes.com/chain4energy',
-      tx_page:
-        'https://explorer.bccnodes.com/chain4energy/transactions/${txHash}'
+      tx_page: 'https://explorer.bccnodes.com/chain4energy/transactions/${txHash}'
     },
     {
       kind: 'NODEXPLORER',
@@ -394,14 +389,12 @@ const info: Chain = {
       kind: 'atomscan',
       url: 'https://atomscan.com/chain4energy',
       tx_page: 'https://atomscan.com/chain4energy/transactions/${txHash}',
-      account_page:
-        'https://atomscan.com/chain4energy/accounts/${accountAddress}'
+      account_page: 'https://atomscan.com/chain4energy/accounts/${accountAddress}'
     },
     {
       kind: 'AM Solutions Explorer',
       url: 'https://explorer.theamsolutions.info/c4e-main/staking',
-      tx_page:
-        'https://explorer.theamsolutions.info/c4e-main/transactions/${txHash}'
+      tx_page: 'https://explorer.theamsolutions.info/c4e-main/transactions/${txHash}'
     },
     {
       kind: 'AlxVoy ⚡ ANODE.TEAM Explorer',
@@ -419,10 +412,8 @@ const info: Chain = {
       tx_page: 'https://explorers.cryptech.com.ua/chain4energy/tx/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chain4energy/images/c4e.png'
-    }
-  ]
+    }]
 };
 export default info;

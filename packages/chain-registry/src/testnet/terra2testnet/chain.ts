@@ -12,58 +12,46 @@ const info: Chain = {
   bech32_prefix: 'terra',
   slip44: 330,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uluna',
         fixed_min_gas_price: 0.0125,
         low_gas_price: 0.0125,
         average_gas_price: 0.015,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uluna'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://pisco-rpc.terra.dev:443',
         provider: 'Terraform Labs'
-      },
-      {
+      }, {
         address: 'https://terra-testnet-rpc.polkachu.com:443',
         provider: 'Polkachu'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://pisco-lcd.terra.dev:443',
         provider: 'Terraform Labs'
-      },
-      {
+      }, {
         address: 'https://terra-testnet-api.polkachu.com:443',
         provider: 'Polkachu'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'terra-testnet-grpc.polkachu.com:11790',
         provider: 'Polkachu'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'finder',
       url: 'http://finder.terra.money/testnet/',
       tx_page: 'https://finder.terra.money/testnet/tx/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

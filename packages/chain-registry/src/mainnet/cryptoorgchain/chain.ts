@@ -13,28 +13,25 @@ const info: Chain = {
   slip44: 394,
   alternative_slip44s: [118],
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'basecro',
         low_gas_price: 0.025,
         average_gas_price: 0.03,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'basecro'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cryptoorgchain/images/cronos.png'
   },
-  description:
-    'Cronos PoS Chain is a public, open-source and permissionless blockchain - a fully decentralized network with high speed and low fees, designed to be a public good that helps drive mass adoption of blockchain technology through use cases like Payments, DeFi and NFTs.',
+  description: 'Cronos PoS Chain is a public, open-source and permissionless blockchain - a fully decentralized network with high speed and low fees, designed to be a public good that helps drive mass adoption of blockchain technology through use cases like Payments, DeFi and NFTs.',
   apis: {
     rpc: [
       {
@@ -128,8 +125,7 @@ const info: Chain = {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/crypto-org',
       tx_page: 'https://www.mintscan.io/crypto-org/transactions/${txHash}',
-      account_page:
-        'https://www.mintscan.io/crypto-org/accounts/${accountAddress}'
+      account_page: 'https://www.mintscan.io/crypto-org/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',

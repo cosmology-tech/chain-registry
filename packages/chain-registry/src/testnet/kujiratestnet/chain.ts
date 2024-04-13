@@ -12,34 +12,28 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ukuji',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://kujira-testnet-rpc.polkachu.com',
         provider: 'polkachu'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://kujira-testnet-api.polkachu.com/',
         provider: 'polkachu'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'explorers.guru',
       url: 'https://kujira.explorers.guru',
       tx_page: 'https://kujira.explorers.guru/transaction/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

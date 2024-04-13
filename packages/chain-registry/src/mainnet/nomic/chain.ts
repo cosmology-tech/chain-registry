@@ -13,32 +13,29 @@ const info: Chain = {
   slip44: 118,
   key_algos: ['secp256k1'],
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'unom',
         low_gas_price: 0,
         average_gas_price: 0,
         high_gas_price: 0
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'unom'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1209600s'
     }
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.svg'
   },
-  description:
-    'The superior way to use Bitcoin in Cosmos DeFi. Use IBC to securely and efficiently bridge your BTC to Osmosis and more.',
+  description: 'The superior way to use Bitcoin in Cosmos DeFi. Use IBC to securely and efficiently bridge your BTC to Osmosis and more.',
   apis: {
     rpc: [
       {
@@ -62,34 +59,26 @@ const info: Chain = {
         provider: 'Bro_n_Bro'
       }
     ],
-    rest: [
-      {
+    rest: [{
         address: 'https://app.nomic.io:8443',
         provider: 'nomic-io'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'bigdipper',
       url: 'https://bigdipper.live/nomic',
       account_page: 'https://bigdipper.live/nomic/accounts/${accountAddress}',
       tx_page: 'https://bigdipper.live/nomic/transactions/${txHash}'
-    },
-    {
+    }, {
       kind: 'Zenscan.io',
       url: 'https://nomic.zenscan.io/index.php',
-      account_page:
-        'https://nomic.zenscan.io/address.php?address=${accountAddress}',
+      account_page: 'https://nomic.zenscan.io/address.php?address=${accountAddress}',
       tx_page: 'https://nomic.zenscan.io/transaction.php?hash=${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.svg'
-    }
-  ],
+    }],
   bech32_config: {
     bech32PrefixAccAddr: 'nomic',
     bech32PrefixAccPub: 'nomic',

@@ -14,34 +14,28 @@ const info: Chain = {
   extra_codecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'atkx',
         fixed_min_gas_price: 100000000000,
         low_gas_price: 100000000000,
         average_gas_price: 110000000000,
         high_gas_price: 200000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'atkx'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.47.6-titan.4',
     cosmwasm_enabled: true,
     cosmwasm_version: '0.45.0'
   },
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/chain.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/chain.svg'
-    }
-  ],
+    }],
   apis: {
     rpc: [
       {
@@ -80,7 +74,7 @@ const info: Chain = {
       }
     ],
     grpc: [],
-    'evm-http-jsonrpc': [
+    "evm-http-jsonrpc": [
       {
         address: 'https://titan-testnet-json-rpc.titanlab.io:443',
         provider: 'Titanlab.io'
@@ -95,16 +89,12 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'ping.pub',
       url: 'https://titan-testnet-explorer-light.titanlab.io',
-      tx_page:
-        'https://titan-testnet-explorer-light.titanlab.io/Titan%20Testnet/tx/${txHash}',
-      account_page:
-        'https://titan-testnet-explorer-light.titanlab.io/Titan%20Testnet/account/${accountAddress}'
-    }
-  ],
+      tx_page: 'https://titan-testnet-explorer-light.titanlab.io/Titan%20Testnet/tx/${txHash}',
+      account_page: 'https://titan-testnet-explorer-light.titanlab.io/Titan%20Testnet/account/${accountAddress}'
+    }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/chain.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/chain.svg'

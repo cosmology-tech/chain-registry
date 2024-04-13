@@ -13,21 +13,17 @@ const info: Chain = {
   extra_codecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'azeta',
         low_gas_price: 20000000000,
         average_gas_price: 25000000000,
         high_gas_price: 40000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'azeta'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.46.13'
@@ -124,8 +120,7 @@ const info: Chain = {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/zetachain/',
       tx_page: 'https://explorer.nodeshub.online/zetachain/tx/${txHash}',
-      account_page:
-        'https://explorer.nodeshub.online/zetachain/accounts/${accountAddress}'
+      account_page: 'https://explorer.nodeshub.online/zetachain/accounts/${accountAddress}'
     }
   ]
 };

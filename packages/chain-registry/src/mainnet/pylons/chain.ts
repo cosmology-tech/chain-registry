@@ -13,60 +13,48 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ubedrock',
         fixed_min_gas_price: 0,
         low_gas_price: 0,
         average_gas_price: 0.5,
         high_gas_price: 1
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ubedrock'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pylons/images/pylons.png'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.nodejumper.io:443/pylons',
         provider: 'Nodejumper.io'
-      },
-      {
+      }, {
         address: 'https:/pylons-rpc.noders.services',
         provider: '[NODERS]TEAM'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://rest.nodejumper.io/pylons',
         provider: 'Nodejumper.io'
-      },
-      {
+      }, {
         address: 'https://pylons-api.noders.services',
         provider: '[NODERS]TEAM'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Nodes.guru',
       url: 'https://pylons.explorers.guru/',
       tx_page: 'https://pylons.explorers.guru/transaction/${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pylons/images/pylons.png'
-    }
-  ]
+    }]
 };
 export default info;

@@ -5,17 +5,14 @@ const info: AssetList = {
   assets: [
     {
       description: 'The permissioned staking asset for Noble Chain',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ustake',
           exponent: 0,
           aliases: ['microstake']
-        },
-        {
+        }, {
           denom: 'stake',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ustake',
       name: 'Stake',
       display: 'stake',
@@ -24,27 +21,21 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg'
-        }
-      ]
+        }]
     },
     {
-      description:
-        'Frienzies are an IBC token redeemable exclusively for a physical asset issued by the Noble entity.',
-      denom_units: [
-        {
+      description: 'Frienzies are an IBC token redeemable exclusively for a physical asset issued by the Noble entity.',
+      denom_units: [{
           denom: 'ufrienzies',
           exponent: 0,
           aliases: ['microfrienzies']
-        },
-        {
+        }, {
           denom: 'frienzies',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ufrienzies',
       display: 'frienzies',
       name: 'Frienzies',
@@ -53,34 +44,27 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'ATOM token on Noble',
-      denom_units: [
-        {
-          denom:
-            'ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0',
+      denom_units: [{
+          denom: 'ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'atom',
           exponent: 6,
           aliases: ['ATOM']
-        }
-      ],
+        }],
       type_asset: 'ics20',
       base: 'ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0',
       name: 'Atom Staking Coin',
       display: 'atom',
       symbol: 'ATOM',
-      traces: [
-        {
+      traces: [{
           type: 'ibc',
           counterparty: {
             chain_name: 'cosmoshub',
@@ -91,57 +75,47 @@ const info: AssetList = {
             channel_id: 'channel-4',
             path: 'transfer/channel-4/uatom'
           }
-        }
-      ],
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'USD Coin',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'uusdc',
           exponent: 0,
           aliases: ['microusdc']
-        },
-        {
+        }, {
           denom: 'usdc',
           exponent: 6
-        }
-      ],
+        }],
       base: 'uusdc',
       display: 'usdc',
       name: 'USD Coin',
       symbol: 'USDC',
       coingecko_id: 'usd-coin',
-      traces: [
-        {
+      traces: [{
           type: 'additional-mintage',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
           },
           provider: 'Circle'
-        }
-      ],
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
-        }
-      ]
+        }]
     }
   ]
 };

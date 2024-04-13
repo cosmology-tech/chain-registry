@@ -13,21 +13,19 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'umun',
         fixed_min_gas_price: 0.025
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'umun'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mun/images/mun.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mun/images/mun.svg'
@@ -87,11 +85,9 @@ const info: Chain = {
       tx_page: 'https://explorer.tcnetwork.io/mun/transaction/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mun/images/mun.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mun/images/mun.svg'
-    }
-  ]
+    }]
 };
 export default info;

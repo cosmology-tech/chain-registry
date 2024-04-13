@@ -2,20 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'fantom',
-  assets: [
-    {
-      description:
-        "Fantom's native utility token — FTM — powers the entire Fantom blockchain ecosystem. FTM tokens are used for staking, governance, payments, and fees on the network.",
-      denom_units: [
-        {
+  assets: [{
+      description: 'Fantom\'s native utility token — FTM — powers the entire Fantom blockchain ecosystem. FTM tokens are used for staking, governance, payments, and fees on the network.',
+      denom_units: [{
           denom: 'wei',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'ftm',
           exponent: 18
-        }
-      ],
+        }],
       type_asset: 'evm-base',
       base: 'wei',
       name: 'Fantom',
@@ -26,33 +21,26 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.svg'
       },
       coingecko_id: 'fantom',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.svg'
-        }
-      ]
-    },
-    {
+        }]
+    }, {
       description: 'ERC20 wrapped version of FTM',
       type_asset: 'erc20',
       address: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
-      denom_units: [
-        {
+      denom_units: [{
           denom: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'wftm',
           exponent: 18
-        }
-      ],
+        }],
       base: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
       name: 'Wrapped Fantom',
       display: 'wftm',
       symbol: 'WFTM',
-      traces: [
-        {
+      traces: [{
           type: 'wrapped',
           counterparty: {
             chain_name: 'fantom',
@@ -62,23 +50,19 @@ const info: AssetList = {
             contract: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83'
           },
           provider: 'Fantom'
-        }
-      ],
-      images: [
-        {
+        }],
+      images: [{
           image_sync: {
             chain_name: 'fantom',
             base_denom: 'wei'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.svg'
-        }
-      ],
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.svg'
       }
-    }
-  ]
+    }]
 };
 export default info;

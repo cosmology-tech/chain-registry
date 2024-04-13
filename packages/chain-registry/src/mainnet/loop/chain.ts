@@ -13,59 +13,47 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'token',
         fixed_min_gas_price: 0,
         low_gas_price: 0,
         average_gas_price: 0,
         high_gas_price: 0
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'upoa'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmwasm_enabled: true
   },
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.svg',
       layout: 'logomark'
-    }
-  ],
+    }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.svg'
   },
   description: 'Empowering Artists and Superfans.',
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.loop.pfc.zone/',
         provider: 'PFC'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://api.loop.pfc.zone/',
         provider: 'PFC'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'ping.pub',
       url: 'https://ping.pfc.zone/loop',
       tx_page: 'https://ping.pfc.zone/loop/tx/${txHash}'
-    }
-  ],
+    }],
   keywords: ['fans']
 };
 export default info;

@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'lambda',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Lambda',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ulamb',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'lamb',
           exponent: 18
-        }
-      ],
+        }],
       base: 'ulamb',
       name: 'Lambda',
       display: 'lamb',
@@ -24,13 +20,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.svg'
       },
       coingecko_id: 'lambda',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

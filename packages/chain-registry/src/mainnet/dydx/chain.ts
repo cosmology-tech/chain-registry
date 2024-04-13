@@ -13,41 +13,33 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'adydx',
         fixed_min_gas_price: 12500000000,
         low_gas_price: 12500000000,
         average_gas_price: 12500000000,
         high_gas_price: 20000000000
-      },
-      {
-        denom:
-          'ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5',
+      }, {
+        denom: 'ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5',
         fixed_min_gas_price: 0.025,
         low_gas_price: 0.025,
         average_gas_price: 0.025,
         high_gas_price: 0.03
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'adydx'
-      }
-    ]
+      }]
   },
   codebase: {
-    cosmos_sdk_version:
-      'dydxprotocol/cosmos-sdk v0.50.6-0.20240326192503-dd116391188d'
+    cosmos_sdk_version: 'dydxprotocol/cosmos-sdk v0.50.6-0.20240326192503-dd116391188d'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
   },
-  description:
-    'Our goal is to build open source code that can power a first class product and trading experience.',
+  description: 'Our goal is to build open source code that can power a first class product and trading experience.',
   apis: {
     rpc: [
       {
@@ -221,22 +213,18 @@ const info: Chain = {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.top/dydx/',
       tx_page: 'https://explorer.nodestake.top/dydx/txs/${txHash}',
-      account_page:
-        'https://explorer.nodestake.top/dydx/account/${accountAddress}'
+      account_page: 'https://explorer.nodestake.top/dydx/account/${accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/dydx',
       tx_page: 'https://explorer.tcnetwork.io/dydx/transaction/${txHash}',
-      account_page:
-        'https://explorer.tcnetwork.io/dydx/account/${accountAddress}'
+      account_page: 'https://explorer.tcnetwork.io/dydx/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
-    }
-  ]
+    }]
 };
 export default info;

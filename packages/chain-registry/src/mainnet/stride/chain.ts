@@ -115,18 +115,14 @@ const info: Chain = {
     ]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ustrd'
-      }
-    ]
+      }]
   },
   codebase: {
-    cosmos_sdk_version:
-      'Stride-Labs/cosmos-sdk v0.47.10-stride-distribution-fix-0'
+    cosmos_sdk_version: 'Stride-Labs/cosmos-sdk v0.47.10-stride-distribution-fix-0'
   },
-  description:
-    'Stride is a blockchain that provides liquidity for staked tokens. Using Stride, you can earn both taking and DeFi yields across the Cosmos IBC ecosystem.',
+  description: 'Stride is a blockchain that provides liquidity for staked tokens. Using Stride, you can earn both taking and DeFi yields across the Cosmos IBC ecosystem.',
   apis: {
     rpc: [
       {
@@ -320,8 +316,7 @@ const info: Chain = {
       kind: 'BccNodes',
       url: 'https://explorer.bccnodes.com/stride-M',
       tx_page: 'https://explorer.bccnodes.com/stride-M/tx/${txHash}',
-      account_page:
-        'https://explorer.bccnodes.com/stride-M/account/${accountAddress}'
+      account_page: 'https://explorer.bccnodes.com/stride-M/account/${accountAddress}'
     },
     {
       kind: 'ezstaking',
@@ -333,22 +328,19 @@ const info: Chain = {
       kind: 'Apollo',
       url: 'https://apollo.chandrastation.com/stride',
       tx_page: 'https://apollo.chandrastation.com/stride/tx/${txHash}',
-      account_page:
-        'https://apollo.chandrastation.com/stride/account/${accountAddress}'
+      account_page: 'https://apollo.chandrastation.com/stride/account/${accountAddress}'
     },
     {
       kind: 'Stride Ping Pub',
       url: 'https://explorer.stride.zone/stride',
       tx_page: 'https://explorer.stride.zone/stride/tx/${txHash}',
-      account_page:
-        'https://explorer.stride.zone/stride/account/${accountAddress}'
+      account_page: 'https://explorer.stride.zone/stride/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥 Explorer',
       url: 'https://explorer.stavr.tech/stride',
       tx_page: 'https://explorer.stavr.tech/stride/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/stride/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/stride/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
@@ -371,19 +363,16 @@ const info: Chain = {
       kind: 'Stake-Take',
       url: 'https://explorer.stake-take.com/stride',
       tx_page: 'https://explorer.stake-take.com/stride/tx/${txHash}',
-      account_page:
-        'https://explorer.stake-take.com/stride/account/${accountAddress}'
+      account_page: 'https://explorer.stake-take.com/stride/account/${accountAddress}'
     }
   ],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stride-chain-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
   },
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stride-chain-logo.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
-    }
-  ]
+    }]
 };
 export default info;

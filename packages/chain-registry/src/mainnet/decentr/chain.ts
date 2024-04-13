@@ -12,24 +12,22 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'udec',
         fixed_min_gas_price: 0.025,
         low_gas_price: 0.025,
         average_gas_price: 0.025,
         high_gas_price: 0.025
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'udec'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg'
@@ -106,8 +104,7 @@ const info: Chain = {
     {
       kind: 'decentr.net',
       url: 'https://explorer.decentr.net',
-      tx_page:
-        'https://explorer.decentr.net/transactions/${txHash}?networkId=mainnet'
+      tx_page: 'https://explorer.decentr.net/transactions/${txHash}?networkId=mainnet'
     },
     {
       kind: 'ping.pub',
@@ -151,11 +148,9 @@ const info: Chain = {
       tx_page: 'https://explorer.comunitynode.my.id/decentr/tx/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg'
-    }
-  ]
+    }]
 };
 export default info;

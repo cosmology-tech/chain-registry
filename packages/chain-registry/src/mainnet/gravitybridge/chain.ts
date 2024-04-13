@@ -36,19 +36,18 @@ const info: Chain = {
     ]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ugraviton'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg'
   },
-  description:
-    'An open, decentralized bridge that unlocks the power of interoperability & liquidity between blockchain ecosystems.',
+  description: 'An open, decentralized bridge that unlocks the power of interoperability & liquidity between blockchain ecosystems.',
   apis: {
     rpc: [
       {
@@ -190,15 +189,13 @@ const info: Chain = {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/gravitybridge',
       tx_page: 'https://ezstaking.app/gravitybridge/txs/${txHash}',
-      account_page:
-        'https://ezstaking.app/gravitybridge/account/${accountAddress}'
+      account_page: 'https://ezstaking.app/gravitybridge/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/gravity-bridge',
       tx_page: 'https://www.mintscan.io/gravity-bridge/transactions/${txHash}',
-      account_page:
-        'https://www.mintscan.io/gravity-bridge/accounts/${accountAddress}'
+      account_page: 'https://www.mintscan.io/gravity-bridge/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
@@ -214,34 +211,28 @@ const info: Chain = {
       kind: 'atomscan',
       url: 'https://atomscan.com/gravity-bridge',
       tx_page: 'https://atomscan.com/gravity-bridge/transactions/${txHash}',
-      account_page:
-        'https://atomscan.com/gravity-bridge/accounts/${accountAddress}'
+      account_page: 'https://atomscan.com/gravity-bridge/accounts/${accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/gravitybridge',
-      tx_page:
-        'https://explorer.tcnetwork.io/gravitybridge/transaction/${txHash}'
+      tx_page: 'https://explorer.tcnetwork.io/gravitybridge/transaction/${txHash}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/gravity-bridge',
-      account_page:
-        'https://stakeflow.io/gravity-bridge/accounts/${accountAddress}'
+      account_page: 'https://stakeflow.io/gravity-bridge/accounts/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/GravityBridge',
       tx_page: 'https://explorer.stavr.tech/GravityBridge/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/GravityBridge/accounts/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/GravityBridge/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg'
-    }
-  ]
+    }]
 };
 export default info;

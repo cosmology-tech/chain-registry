@@ -2,21 +2,17 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'osmosistestnet4',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Osmosis',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'uosmo',
           exponent: 0,
           aliases: []
-        },
-        {
+        }, {
           denom: 'osmo',
           exponent: 6,
           aliases: []
-        }
-      ],
+        }],
       base: 'uosmo',
       name: 'Osmosis',
       display: 'osmo',
@@ -27,24 +23,18 @@ const info: AssetList = {
       },
       coingecko_id: 'osmosis',
       keywords: ['dex', 'staking'],
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
-        }
-      ]
-    },
-    {
-      denom_units: [
-        {
+        }]
+    }, {
+      denom_units: [{
           denom: 'uion',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'ion',
           exponent: 6
-        }
-      ],
+        }],
       base: 'uion',
       name: 'Ion',
       display: 'ion',
@@ -55,13 +45,10 @@ const info: AssetList = {
       },
       coingecko_id: 'ion',
       keywords: ['memecoin'],
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

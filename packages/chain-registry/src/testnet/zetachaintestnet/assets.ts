@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'zetachaintestnet',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of ZetaChain',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'azeta',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'tzeta',
           exponent: 18
-        }
-      ],
+        }],
       base: 'azeta',
       name: 'ZetaChain Testnet',
       display: 'tzeta',
@@ -23,13 +19,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/zetachaintestnet/images/zetachaintestnet.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/zetachaintestnet/images/zetachaintestnet.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/zetachaintestnet/images/zetachaintestnet.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/zetachaintestnet/images/zetachaintestnet.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

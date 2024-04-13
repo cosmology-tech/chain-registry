@@ -1,12 +1,12 @@
 import { Chain } from '@chain-registry/types';
-import { assets, chains } from 'chain-registry';
+import { assets, chains } from '../test-utils';
 
 import { chainRegistryChainToCosmostation } from '../src/';
 
-const testChainData = async (chainName, chainId) => {
+const testChainData = async (chainName: string, chainId: string) => {
   const chainRegChain: Chain = chains.find(
     ({ chain_name }) => chain_name === chainName
-  );
+  )!;
   const cosmostationData = chainRegistryChainToCosmostation(
     chainRegChain,
     assets

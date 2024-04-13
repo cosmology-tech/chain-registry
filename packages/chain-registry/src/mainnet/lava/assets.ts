@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'lava',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Lava',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ulava',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'lava',
           exponent: 6
-        }
-      ],
+        }],
       type_asset: 'sdk.coin',
       base: 'ulava',
       name: 'Lava',
@@ -23,11 +19,9 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lava/images/lava.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lava/images/lava.png'
-        }
-      ],
+        }],
       keywords: [
         'modular',
         'data',
@@ -42,7 +36,6 @@ const info: AssetList = {
         website: 'https://lavanet.xyz',
         twitter: 'https://twitter.com/lavanetxyz'
       }
-    }
-  ]
+    }]
 };
 export default info;

@@ -12,40 +12,32 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'nimv',
         fixed_min_gas_price: 0.001
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://tx-endpoint-test.imversed.com/',
         provider: 'imversed'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://query-endpoint-test.imversed.com/',
         provider: 'imversed'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'http://qs.imversed.com:9090',
         provider: 'imversed'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Big Dipper',
       url: 'https://tex-s.imversed.com',
       tx_page: 'https://tex-s.imversed.com/transactions/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

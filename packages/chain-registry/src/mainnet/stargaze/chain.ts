@@ -12,22 +12,18 @@ const info: Chain = {
   node_home: '$HOME/.starsd',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ustars',
         fixed_min_gas_price: 1,
         low_gas_price: 1,
         average_gas_price: 1.1,
         high_gas_price: 1.2
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ustars'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.47.10',
@@ -38,8 +34,7 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
   },
-  description:
-    'The premier community-focused blockchain for NFTs. Stargaze empowers creators, developers, collectors, and traders to participate on the platform. The Stargaze chain consists of various NFT-related apps such as a Launchpad, and a Marketplace with offers and auctions.',
+  description: 'The premier community-focused blockchain for NFTs. Stargaze empowers creators, developers, collectors, and traders to participate on the platform. The Stargaze chain consists of various NFT-related apps such as a Launchpad, and a Marketplace with offers and auctions.',
   apis: {
     rpc: [
       {
@@ -259,8 +254,7 @@ const info: Chain = {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/stargaze/',
       tx_page: 'https://www.mintscan.io/stargaze/transactions/${txHash}',
-      account_page:
-        'https://www.mintscan.io/stargaze/accounts/${accountAddress}'
+      account_page: 'https://www.mintscan.io/stargaze/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
@@ -280,11 +274,9 @@ const info: Chain = {
       account_page: 'https://starscan.net/stargaze-1/address/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
-    }
-  ]
+    }]
 };
 export default info;

@@ -12,8 +12,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-92',
       connection_id: 'connection-35'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-14',
           port_id: 'transfer'
@@ -28,8 +27,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -43,8 +41,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-5',
       connection_id: 'connection-6'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-24',
           port_id: 'transfer'
@@ -59,8 +56,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -74,8 +70,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-116',
       connection_id: 'connection-78'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-31',
           port_id: 'transfer'
@@ -91,8 +86,7 @@ const info: IBCInfo[] = [
           preferred: true,
           dex: 'crescent'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -106,8 +100,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-122',
       connection_id: 'connection-92'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-212',
           port_id: 'transfer'
@@ -122,8 +115,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -137,8 +129,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-5',
       connection_id: 'connection-13'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-37',
           port_id: 'transfer'
@@ -153,8 +144,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   }
 ];
 export default info;

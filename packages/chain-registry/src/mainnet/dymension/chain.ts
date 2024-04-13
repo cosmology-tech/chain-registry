@@ -12,35 +12,30 @@ const info: Chain = {
   node_home: '$HOME/.dymension',
   daemon_name: 'dymd',
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'adym',
         low_gas_price: 5000000000,
         average_gas_price: 5000000000,
         high_gas_price: 20000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'adym'
-      }
-    ]
+      }]
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg'
   },
-  description:
-    'Dymension is a network of easily deployable and lightning fast modular blockchains called RollApps.',
-  images: [
-    {
+  description: 'Dymension is a network of easily deployable and lightning fast modular blockchains called RollApps.',
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg'
-    }
-  ],
-  codebase: {},
+    }],
+  codebase: {
+
+  },
   apis: {
     rpc: [
       {
@@ -356,7 +351,7 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       }
     ],
-    'evm-http-jsonrpc': [
+    "evm-http-jsonrpc": [
       {
         address: 'https://dym-m-json.agoranodes.com',
         provider: 'AgoraNodes'
@@ -402,15 +397,13 @@ const info: Chain = {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.org/dymension',
       tx_page: 'https://explorer.nodestake.org/dymension/tx/${txHash}',
-      account_page:
-        'https://explorer.nodestake.org/dymension/account/${accountAddress}'
+      account_page: 'https://explorer.nodestake.org/dymension/account/${accountAddress}'
     },
     {
       kind: 'Kynraze',
       url: 'https://explorer.kynraze.com/dymension',
       tx_page: 'https://explorer.kynraze.com/dymension/tx/${txHash}',
-      account_page:
-        'https://explorer.kynraze.com/dymension/account/${accountAddress}'
+      account_page: 'https://explorer.kynraze.com/dymension/account/${accountAddress}'
     },
     {
       kind: 'Nodeist Explorer',
@@ -422,8 +415,7 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Dymension-Mainnet',
       tx_page: 'https://explorer.stavr.tech/Dymension-Mainnet/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Dymension-Mainnet/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Dymension-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'HoodScan',
@@ -435,8 +427,7 @@ const info: Chain = {
       kind: 'posthuman',
       url: 'https://explorer.posthuman.digital/dymension',
       tx_page: 'https://explorer.posthuman.digital/dymension/tx/${txHash}',
-      account_page:
-        'https://explorer.posthuman.digital/dymension/account/${accountAddress}'
+      account_page: 'https://explorer.posthuman.digital/dymension/account/${accountAddress}'
     }
   ]
 };

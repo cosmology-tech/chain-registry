@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'desmos',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Desmos',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'udsm',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'dsm',
           exponent: 6
-        }
-      ],
+        }],
       base: 'udsm',
       name: 'Desmos',
       display: 'dsm',
@@ -24,13 +20,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg'
       },
       coingecko_id: 'desmos',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

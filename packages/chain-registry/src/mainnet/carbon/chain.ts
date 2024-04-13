@@ -114,8 +114,7 @@ const info: Chain = {
         }
       },
       {
-        denom:
-          'ibc/07FA7831E1920D0C87C9388F86B0108677F6ED0C9DE7E4063F05ED675192405C',
+        denom: 'ibc/07FA7831E1920D0C87C9388F86B0108677F6ED0C9DE7E4063F05ED675192405C',
         fixed_min_gas_price: 0,
         low_gas_price: 0.0035,
         average_gas_price: 0.0035,
@@ -126,8 +125,7 @@ const info: Chain = {
         }
       },
       {
-        denom:
-          'ibc/16065EE5282C5217685C8F084FC44864C25C706AC37356B0D62811D50B96920F',
+        denom: 'ibc/16065EE5282C5217685C8F084FC44864C25C706AC37356B0D62811D50B96920F',
         fixed_min_gas_price: 0,
         low_gas_price: 0.0000075,
         average_gas_price: 0.0000075,
@@ -138,8 +136,7 @@ const info: Chain = {
         }
       },
       {
-        denom:
-          'ibc/2B58B8C147E8718EECCB3713271DF46DEE8A3A00A27242628604E31C2F370EF5',
+        denom: 'ibc/2B58B8C147E8718EECCB3713271DF46DEE8A3A00A27242628604E31C2F370EF5',
         fixed_min_gas_price: 0,
         low_gas_price: 0.00005,
         average_gas_price: 0.00005,
@@ -150,8 +147,7 @@ const info: Chain = {
         }
       },
       {
-        denom:
-          'ibc/3552CECB7BCE1891DB6070D37EC6E954C972B1400141308FCD85FD148BD06DE5',
+        denom: 'ibc/3552CECB7BCE1891DB6070D37EC6E954C972B1400141308FCD85FD148BD06DE5',
         fixed_min_gas_price: 0,
         low_gas_price: 0.00032,
         average_gas_price: 0.00032,
@@ -162,8 +158,7 @@ const info: Chain = {
         }
       },
       {
-        denom:
-          'ibc/35E771B8682D828173F4B795F6C307780F96DC64D6F914FAE4CC9B4666F66364',
+        denom: 'ibc/35E771B8682D828173F4B795F6C307780F96DC64D6F914FAE4CC9B4666F66364',
         fixed_min_gas_price: 0,
         low_gas_price: 300000000,
         average_gas_price: 300000000,
@@ -174,8 +169,7 @@ const info: Chain = {
         }
       },
       {
-        denom:
-          'ibc/4E06CF24FEBFB3F5AF645377DCC0B70AA6183BAF6B918B8B6243FCDEB7D38118',
+        denom: 'ibc/4E06CF24FEBFB3F5AF645377DCC0B70AA6183BAF6B918B8B6243FCDEB7D38118',
         fixed_min_gas_price: 0,
         low_gas_price: 0.0006,
         average_gas_price: 0.0006,
@@ -186,8 +180,7 @@ const info: Chain = {
         }
       },
       {
-        denom:
-          'ibc/662914D0C1CEBCB070C68F061D035E8B10A07C79AB286E7342C85F3BE74612C5',
+        denom: 'ibc/662914D0C1CEBCB070C68F061D035E8B10A07C79AB286E7342C85F3BE74612C5',
         fixed_min_gas_price: 0,
         low_gas_price: 0.00015,
         average_gas_price: 0.00015,
@@ -198,8 +191,7 @@ const info: Chain = {
         }
       },
       {
-        denom:
-          'ibc/6C349F0EB135C5FA99301758F35B87DB88403D690E5E314AB080401FEE4066E5',
+        denom: 'ibc/6C349F0EB135C5FA99301758F35B87DB88403D690E5E314AB080401FEE4066E5',
         fixed_min_gas_price: 0,
         low_gas_price: 0.0000075,
         average_gas_price: 0.0000075,
@@ -210,8 +202,7 @@ const info: Chain = {
         }
       },
       {
-        denom:
-          'ibc/75249A18DEFBEFE55F83B1C70CAD234DF164F174C6BC51682EE92C2C81C18C93',
+        denom: 'ibc/75249A18DEFBEFE55F83B1C70CAD234DF164F174C6BC51682EE92C2C81C18C93',
         fixed_min_gas_price: 0,
         low_gas_price: 0.00015,
         average_gas_price: 0.00015,
@@ -222,8 +213,7 @@ const info: Chain = {
         }
       },
       {
-        denom:
-          'ibc/92E974290AF9E2BC3AEEEC35305C8FD76AC5A22A74CF8D91270FDF5A1C41E861',
+        denom: 'ibc/92E974290AF9E2BC3AEEEC35305C8FD76AC5A22A74CF8D91270FDF5A1C41E861',
         fixed_min_gas_price: 0,
         low_gas_price: 200000000,
         average_gas_price: 200000000,
@@ -234,8 +224,7 @@ const info: Chain = {
         }
       },
       {
-        denom:
-          'ibc/A4DB47A9D3CF9A068D454513891B526702455D3EF08FB9EB558C561F9DC2B701',
+        denom: 'ibc/A4DB47A9D3CF9A068D454513891B526702455D3EF08FB9EB558C561F9DC2B701',
         fixed_min_gas_price: 0,
         low_gas_price: 0.00001,
         average_gas_price: 0.00001,
@@ -246,8 +235,7 @@ const info: Chain = {
         }
       },
       {
-        denom:
-          'ibc/B7864B03E1B9FD4F049243E92ABD691586F682137037A9F3FCA5222815620B3C',
+        denom: 'ibc/B7864B03E1B9FD4F049243E92ABD691586F682137037A9F3FCA5222815620B3C',
         fixed_min_gas_price: 0,
         low_gas_price: 0.00001,
         average_gas_price: 0.00001,
@@ -258,8 +246,7 @@ const info: Chain = {
         }
       },
       {
-        denom:
-          'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518',
+        denom: 'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518',
         fixed_min_gas_price: 0,
         low_gas_price: 0.00015,
         average_gas_price: 0.00015,
@@ -305,13 +292,13 @@ const info: Chain = {
     ]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'swth'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/swth.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/swth.svg'
@@ -353,16 +340,13 @@ const info: Chain = {
         provider: 'BlockHunters'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'https://carbon-grpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
+      }, {
         address: 'carbon-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -382,11 +366,9 @@ const info: Chain = {
       account_page: 'https://atomscan.com/carbon/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/swth.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/swth.svg'
-    }
-  ]
+    }]
 };
 export default info;

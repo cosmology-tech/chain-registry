@@ -13,35 +13,31 @@ const info: Chain = {
   slip44: 564,
   alternative_slip44s: [118],
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ubld',
         low_gas_price: 0.03,
         average_gas_price: 0.05,
         high_gas_price: 0.07
-      },
-      {
+      }, {
         denom: 'uist',
         low_gas_price: 0.0034,
         average_gas_price: 0.007,
         high_gas_price: 0.02
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ubld'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/Agoric-logo-color.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/Agoric-logo-color.svg'
   },
-  description:
-    'The Agoric platform makes it safe and seamless to build decentralized apps using your existing JavaScript knowledge.',
+  description: 'The Agoric platform makes it safe and seamless to build decentralized apps using your existing JavaScript knowledge.',
   apis: {
     rpc: [
       {
@@ -218,15 +214,12 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Agoric',
       tx_page: 'https://explorer.stavr.tech/Agoric/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Agoric/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Agoric/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/Agoric-logo-color.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/Agoric-logo-color.svg'
-    }
-  ]
+    }]
 };
 export default info;

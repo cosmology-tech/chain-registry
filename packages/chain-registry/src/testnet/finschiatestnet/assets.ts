@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'finschiatestnet',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Ebony',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'tcony',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'tfnsa',
           exponent: 6
-        }
-      ],
+        }],
       type_asset: 'sdk.coin',
       base: 'tcony',
       name: 'Test FINSCHIA',
@@ -24,14 +20,11 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.svg'
-        }
-      ],
+        }],
       keywords: ['staking']
-    }
-  ]
+    }]
 };
 export default info;

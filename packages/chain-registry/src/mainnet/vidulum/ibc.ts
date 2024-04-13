@@ -12,8 +12,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-49',
       connection_id: 'connection-46'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-110',
           port_id: 'transfer'
@@ -27,8 +26,7 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -42,8 +40,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-5',
       connection_id: 'connection-13'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-37',
           port_id: 'transfer'
@@ -58,8 +55,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -73,8 +69,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-0',
       connection_id: 'connection-0'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-124',
           port_id: 'transfer'
@@ -90,8 +85,7 @@ const info: IBCInfo[] = [
           preferred: true,
           dex: 'osmosis'
         }
-      }
-    ]
+      }]
   }
 ];
 export default info;

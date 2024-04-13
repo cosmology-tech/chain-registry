@@ -12,59 +12,46 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uward',
         fixed_min_gas_price: 0.005,
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.03
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uward'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.50',
     cosmwasm_enabled: false
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.alfama.wardenprotocol.org/',
         provider: 'Warden Protocol'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://rest.alfama.wardenprotocol.org/',
         provider: 'Warden Protocol'
-      }
-    ],
+      }],
     grpc: []
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/wardenprotocol/images/ward.png'
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'ping.pub',
       url: 'https://warden-explorer.paranorm.pro/warden',
       tx_page: 'https://warden-explorer.paranorm.pro/warden/tx/${txHash}',
-      account_page:
-        'https://warden-explorer.paranorm.pro/warden/account/${accountAddress}'
-    }
-  ],
+      account_page: 'https://warden-explorer.paranorm.pro/warden/account/${accountAddress}'
+    }],
   keywords: ['testnet'],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/wardenprotocol/images/ward.png'
-    }
-  ]
+    }]
 };
 export default info;

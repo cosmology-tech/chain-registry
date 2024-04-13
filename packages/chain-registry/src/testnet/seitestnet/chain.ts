@@ -13,51 +13,41 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'usei',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.svg'
   },
-  description:
-    'Sei is the fastest Layer 1 blockchain, designed to scale with the industry.',
+  description: 'Sei is the fastest Layer 1 blockchain, designed to scale with the industry.',
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://sei-testnet-rpc.brocha.in',
         provider: 'Brochain'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://sei-testnet-rest.brocha.in',
         provider: 'Brochain'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'explorers.guru',
       url: 'https://sei.explorers.guru',
       tx_page: 'https://sei.explorers.guru/transaction/${txHash}'
-    },
-    {
+    }, {
       kind: 'Brochain',
       url: 'https://testnet-explorer.brocha.in/sei',
       tx_page: 'https://testnet-explorer.brocha.in/sei/tx/${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.svg'
-    }
-  ]
+    }]
 };
 export default info;

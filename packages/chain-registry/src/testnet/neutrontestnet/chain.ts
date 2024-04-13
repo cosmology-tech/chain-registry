@@ -12,14 +12,12 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'untrn',
         low_gas_price: 0.02,
         average_gas_price: 0.02,
         high_gas_price: 0.02
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.47',
@@ -31,16 +29,13 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron-black-logo.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc-falcron.pion-1.ntrn.tech',
         provider: 'Neutron'
-      },
-      {
+      }, {
         address: 'https://neutron-testnet-rpc.polkachu.com/',
         provider: 'Polkachu'
-      }
-    ],
+      }],
     rest: [
       {
         address: 'https://rest-falcron.pion-1.ntrn.tech',
@@ -55,38 +50,28 @@ const info: Chain = {
         provider: 'Hypha'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'grpc-falcron.pion-1.ntrn.tech:80',
         provider: 'Neutron'
-      },
-      {
+      }, {
         address: 'grpc.baryon.remedy.tm.p2p.org:443',
         provider: 'P2P.ORG'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Ping.pub Explorer from Hypha',
       url: 'https://explorer.rs-testnet.polypore.xyz/pion-1',
       tx_page: 'https://explorer.rs-testnet.polypore.xyz/pion-1/tx/${txHash}',
-      account_page:
-        'https://explorer.rs-testnet.polypore.xyz/baryon-1/account/${accountAddress}'
-    },
-    {
+      account_page: 'https://explorer.rs-testnet.polypore.xyz/baryon-1/account/${accountAddress}'
+    }, {
       kind: 'Mintscan',
       url: 'https://testnet.mintscan.io/neutron-testnet',
       tx_page: 'https://testnet.mintscan.io/neutron-testnet/txs/${txHash}',
-      account_page:
-        'https://testnet.mintscan.io/neutron-testnet/account/${accountAddress}'
-    }
-  ],
-  images: [
-    {
+      account_page: 'https://testnet.mintscan.io/neutron-testnet/account/${accountAddress}'
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron-black-logo.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron-black-logo.svg'
-    }
-  ]
+    }]
 };
 export default info;

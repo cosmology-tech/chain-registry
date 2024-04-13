@@ -13,23 +13,21 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uatolo',
         low_gas_price: 0.025,
         average_gas_price: 0.025,
         high_gas_price: 0.035
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uatolo'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.svg'
@@ -75,16 +73,13 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'grpc-rizon.mms.team:443',
         provider: 'MMS'
-      },
-      {
+      }, {
         address: 'rizon-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -120,15 +115,12 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Rizon',
       tx_page: 'https://explorer.stavr.tech/Rizon/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Rizon/accounts/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Rizon/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.svg'
-    }
-  ]
+    }]
 };
 export default info;

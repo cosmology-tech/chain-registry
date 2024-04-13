@@ -5,16 +5,13 @@ const info: AssetList = {
   assets: [
     {
       description: 'Staking and governance token for ODIN Protocol',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'loki',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'odin',
           exponent: 6
-        }
-      ],
+        }],
       base: 'loki',
       name: 'ODIN',
       display: 'odin',
@@ -24,29 +21,24 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg'
       },
       coingecko_id: 'odin-protocol',
-      images: [
-        {
+      images: [{
           image_sync: {
             chain_name: 'odin',
             base_denom: 'loki'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'GEO token for ODIN Protocol',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'mGeo',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'geo',
           exponent: 6
-        }
-      ],
+        }],
       base: 'mGeo',
       name: 'GEO',
       display: 'geo',
@@ -55,29 +47,24 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
       },
-      images: [
-        {
+      images: [{
           image_sync: {
             chain_name: 'odin',
             base_denom: 'mGeo'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'O9W token for ODIN Protocol',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'mO9W',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'O9W',
           exponent: 6
-        }
-      ],
+        }],
       base: 'mO9W',
       name: 'O9W',
       display: 'O9W',
@@ -86,16 +73,14 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
       },
-      images: [
-        {
+      images: [{
           image_sync: {
             chain_name: 'odin',
             base_denom: 'mO9W'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
-        }
-      ]
+        }]
     }
   ]
 };

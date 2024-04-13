@@ -14,37 +14,32 @@ const info: Chain = {
   slip44: 529,
   alternative_slip44s: [118],
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uscrt',
         fixed_min_gas_price: 0.05,
         low_gas_price: 0.05,
         average_gas_price: 0.1,
         high_gas_price: 0.25
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uscrt'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
   },
-  description:
-    'Secret Network is the first blockchain with customizable privacy. You get to choose what you share, with whom, and how. This protects users, and empowers developers to build a better Web3.',
+  description: 'Secret Network is the first blockchain with customizable privacy. You get to choose what you share, with whom, and how. This protects users, and empowers developers to build a better Web3.',
   apis: {
-    'grpc-web': [
-      {
+    "grpc-web": [{
         address: 'https://grpc.mainnet.secretsaturn.net',
         provider: '🪐 𝕊ecret 𝕊aturn'
-      }
-    ],
+      }],
     rpc: [
       {
         address: 'https://scrt.public-rpc.com',
@@ -105,24 +100,20 @@ const info: Chain = {
         provider: 'Stakewolle'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'secretnetwork-grpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
+      }, {
         address: 'secretnetwork-mainnet-grpc.autostake.com:9090',
         provider: 'AutoStake 🛡️ Slash Protected'
-      }
-    ]
+      }]
   },
   explorers: [
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/secretnetwork',
       tx_page: 'https://ezstaking.app/secretnetwork/txs/${txHash}',
-      account_page:
-        'https://ezstaking.app/secretnetwork/account/${accountAddress}'
+      account_page: 'https://ezstaking.app/secretnetwork/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
@@ -139,15 +130,12 @@ const info: Chain = {
       kind: 'atomscan',
       url: 'https://atomscan.com/secret-network',
       tx_page: 'https://atomscan.com/secret-network/transactions/${txHash}',
-      account_page:
-        'https://atomscan.com/secret-network/accounts/${accountAddress}'
+      account_page: 'https://atomscan.com/secret-network/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
-    }
-  ]
+    }]
 };
 export default info;

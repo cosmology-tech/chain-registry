@@ -12,21 +12,17 @@ const testnet: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ujunox',
         low_gas_price: 0.003,
         average_gas_price: 0.0045,
         high_gas_price: 0.006
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ujunox'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.45',
@@ -66,27 +62,23 @@ const testnet: Chain = {
         provider: 'Reecepbcups'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'juno-testnet-grpc.polkachu.com:12690',
         provider: 'Polkachu'
-      }
-    ]
+      }]
   },
   explorers: [
     {
       kind: 'ezstaking',
       url: 'https://testnet.app.ezstaking.io/juno-testnet',
       tx_page: 'https://testnet.app.ezstaking.io/juno-testnet/txs/${txHash}',
-      account_page:
-        'https://testnet.app.ezstaking.io/juno-testnet/account/${accountAddress}'
+      account_page: 'https://testnet.app.ezstaking.io/juno-testnet/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Juno-Testnet',
       tx_page: 'https://explorer.stavr.tech/Juno-Testnet/txs/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Juno-Testnet/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Juno-Testnet/account/${accountAddress}'
     },
     {
       kind: 'Mintscan',
@@ -101,3 +93,4 @@ const testnet: Chain = {
   ]
 };
 export default testnet;
+    

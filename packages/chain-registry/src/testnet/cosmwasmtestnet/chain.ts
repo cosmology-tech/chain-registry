@@ -12,21 +12,17 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'umlg',
         low_gas_price: 0.03,
         average_gas_price: 0.04,
         high_gas_price: 0.05
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uand'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.45',
@@ -34,26 +30,19 @@ const info: Chain = {
     cosmwasm_version: '0.27'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.malaga-420.cosmwasm.com:443',
         provider: 'Confio'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://api.malaga-420.cosmwasm.com',
         provider: 'Confio'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'BIG DIPPER',
       url: 'https://block-explorer.malaga-420.cosmwasm.com/',
-      tx_page:
-        'https://block-explorer.malaga-420.cosmwasm.com/transactions/${txHash}'
-    }
-  ]
+      tx_page: 'https://block-explorer.malaga-420.cosmwasm.com/transactions/${txHash}'
+    }]
 };
 export default info;

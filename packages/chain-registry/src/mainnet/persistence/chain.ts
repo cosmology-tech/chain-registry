@@ -14,22 +14,18 @@ const info: Chain = {
   slip44: 118,
   alternative_slip44s: [750],
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uxprt',
         fixed_min_gas_price: 0,
         low_gas_price: 0,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uxprt'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1814400s'
     }
@@ -43,8 +39,7 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
   },
-  description:
-    'Persistence is an app chain for Liquid Staking powering an ecosystem of DeFi applications focused on unlocking the liquidity of staked assets.',
+  description: 'Persistence is an app chain for Liquid Staking powering an ecosystem of DeFi applications focused on unlocking the liquidity of staked assets.',
   apis: {
     rpc: [
       {
@@ -286,15 +281,13 @@ const info: Chain = {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/persistence',
       tx_page: 'https://www.mintscan.io/persistence/transactions/${txHash}',
-      account_page:
-        'https://www.mintscan.io/persistence/accounts/${accountAddress}'
+      account_page: 'https://www.mintscan.io/persistence/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/persistence',
       tx_page: 'https://ezstaking.app/persistence/txs/${txHash}',
-      account_page:
-        'https://ezstaking.app/persistence/account/${accountAddress}'
+      account_page: 'https://ezstaking.app/persistence/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
@@ -310,21 +303,17 @@ const info: Chain = {
       kind: 'atomscan',
       url: 'https://atomscan.com/persistence',
       tx_page: 'https://atomscan.com/persistence/transactions/${txHash}',
-      account_page:
-        'https://atomscan.com/persistence/accounts/${accountAddress}'
+      account_page: 'https://atomscan.com/persistence/accounts/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/persistence',
-      account_page:
-        'https://stakeflow.io/persistence/accounts/${accountAddress}'
+      account_page: 'https://stakeflow.io/persistence/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
-    }
-  ]
+    }]
 };
 export default info;

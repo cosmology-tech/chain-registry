@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 990,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'utestcore',
         fixed_min_gas_price: 0.03125,
         low_gas_price: 0.0625,
         average_gas_price: 0.0625,
         high_gas_price: 62.5
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'utestcore'
-      }
-    ],
+      }],
     lock_duration: {
       time: '168h'
     }
@@ -38,14 +34,12 @@ const info: Chain = {
     cosmwasm_enabled: true,
     cosmwasm_version: '0.30'
   },
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
       theme: {
         primary_color_hex: '#25d695'
       }
-    }
-  ],
+    }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png'
   },
@@ -64,37 +58,33 @@ const info: Chain = {
         provider: 'Inter Blockchain Services'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'https://full-node.testnet-1.coreum.dev:9090',
         provider: 'Coreum Foundation'
-      },
-      {
+      }, {
         address: 'https://full-node-eris.testnet-1.coreum.dev:9090',
         provider: 'Coreum Foundation'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://full-node.testnet-1.coreum.dev:1317',
         provider: 'Coreum'
-      },
-      {
+      }, {
         address: 'https://coreum-testnet-api.ibs.team:443',
         provider: 'Inter Blockchain Services'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Coreum',
       url: 'https://explorer.testnet-1.coreum.dev/coreum',
-      tx_page:
-        'https://explorer.testnet-1.coreum.dev/coreum/transactions/${txHash}',
-      account_page:
-        'https://explorer.testnet-1.coreum.dev/coreum/account/${accountAddress}'
-    }
-  ],
-  keywords: ['dex', 'staking', 'wasm', 'assets', 'nft']
+      tx_page: 'https://explorer.testnet-1.coreum.dev/coreum/transactions/${txHash}',
+      account_page: 'https://explorer.testnet-1.coreum.dev/coreum/account/${accountAddress}'
+    }],
+  keywords: [
+    'dex',
+    'staking',
+    'wasm',
+    'assets',
+    'nft'
+  ]
 };
 export default info;

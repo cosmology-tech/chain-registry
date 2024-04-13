@@ -13,27 +13,25 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uxprt',
         fixed_min_gas_price: 0,
         low_gas_price: 0.05,
         average_gas_price: 0.125,
         high_gas_price: 0.2
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uxprt'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1814400s'
     }
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
     rpc: [
       {
@@ -91,39 +89,32 @@ const info: Chain = {
         provider: 'YTWOFUND'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'persistence-testnet-grpc.polkachu.com:15490',
         provider: 'Polkachu'
-      },
-      {
+      }, {
         address: 'persistenceCoreTest-grpc.ytwofund.pro:9090',
         provider: 'YTWOFUND'
-      }
-    ]
+      }]
   },
   explorers: [
     {
       kind: 'mintscan',
       url: 'https://testnet.mintscan.io/persistence-testnet',
       tx_page: 'https://testnet.mintscan.io/persistence-testnet/txs/${txHash}',
-      account_page:
-        'https://testnet.mintscan.io/persistence-testnet/account/${accountAddress}'
+      account_page: 'https://testnet.mintscan.io/persistence-testnet/account/${accountAddress}'
     },
     {
       kind: 'StakeFlow',
       url: 'https://stakeflow.io/persistence-testnet',
-      tx_page:
-        'https://stakeflow.io/persistence-testnet/transactions/${txHash}',
-      account_page:
-        'https://stakeflow.io/persistence-testnet/accounts/${accountAddress}'
+      tx_page: 'https://stakeflow.io/persistence-testnet/transactions/${txHash}',
+      account_page: 'https://stakeflow.io/persistence-testnet/accounts/${accountAddress}'
     },
     {
       kind: 'baryon',
       url: 'https://testnet-explorer.baryon.dev/test-core-2',
       tx_page: 'https://testnet-explorer.baryon.dev/test-core-2/tx/{txHash}',
-      account_page:
-        'https://testnet-explorer.baryon.dev/test-core-2/account/${accountAddress}'
+      account_page: 'https://testnet-explorer.baryon.dev/test-core-2/account/${accountAddress}'
     }
   ]
 };

@@ -11,23 +11,21 @@ const info: Chain = {
   node_home: '$HOME/.fetchd',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'afet',
         low_gas_price: 0.025,
         average_gas_price: 0.025,
         high_gas_price: 0.035
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'afet'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.svg'
@@ -229,24 +227,19 @@ const info: Chain = {
     {
       kind: 'azoyalabs',
       url: 'https://fetchstation.azoyalabs.com/mainnet',
-      tx_page:
-        'https://fetchstation.azoyalabs.com/mainnet/explorer/transactions/${txHash}',
-      account_page:
-        'https://fetchstation.azoyalabs.com/mainnet/explorer/address/${accountAddress}'
+      tx_page: 'https://fetchstation.azoyalabs.com/mainnet/explorer/transactions/${txHash}',
+      account_page: 'https://fetchstation.azoyalabs.com/mainnet/explorer/address/${accountAddress}'
     },
     {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/fetchhub/',
       tx_page: 'https://explorer.nodeshub.online/fetchhub/tx/${txHash}',
-      account_page:
-        'https://explorer.nodeshub.online/fetchhub/accounts/${accountAddress}'
+      account_page: 'https://explorer.nodeshub.online/fetchhub/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.svg'
-    }
-  ]
+    }]
 };
 export default info;

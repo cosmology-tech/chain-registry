@@ -12,47 +12,37 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'udear',
         fixed_min_gas_price: 0.25
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'udear'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://testnet-rpc.deardoge.org',
         provider: 'dorafactory'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://testnet-rest.deardoge.org',
         provider: 'dorafactory'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'testnet-grpc.deardoge.org:443',
         provider: 'dorafactory'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Dear Doge Ping Pub',
       url: 'https://testnet-explorer.deardoge.org/deardoge',
       tx_page: 'https://testnet-explorer.deardoge.org/deardoge/tx/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

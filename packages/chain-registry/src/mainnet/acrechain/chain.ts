@@ -13,24 +13,22 @@ const info: Chain = {
   key_algos: ['ethsecp256k1'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'aacre',
         fixed_min_gas_price: 250000000,
         low_gas_price: 20000000000,
         average_gas_price: 25000000000,
         high_gas_price: 40000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'aacre'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
@@ -102,7 +100,7 @@ const info: Chain = {
         provider: 'Staketab'
       }
     ],
-    'evm-http-jsonrpc': [
+    "evm-http-jsonrpc": [
       {
         address: 'https://jsonrpc-acre.d-stake.xyz',
         provider: 'D-stake'
@@ -169,11 +167,9 @@ const info: Chain = {
       tx_page: 'https://explorer.tcnetwork.io/acre/transaction/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
-    }
-  ]
+    }]
 };
 export default info;

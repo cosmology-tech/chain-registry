@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'cascadiatestnet',
-  assets: [
-    {
-      description: "The World's First  Neocybernetic  Blockchain",
-      denom_units: [
-        {
+  assets: [{
+      description: 'The World\'s First  Neocybernetic  Blockchain',
+      denom_units: [{
           denom: 'aCC',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'tCC',
           exponent: 18
-        }
-      ],
+        }],
       base: 'aCC',
       name: 'Сascadia Testnet',
       display: 'tCC',
@@ -23,12 +19,9 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cascadiatestnet/images/cascadia.png'
       },
       keywords: ['cascadia', 'neocybernetic'],
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cascadiatestnet/images/cascadia.png'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

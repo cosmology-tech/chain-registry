@@ -11,23 +11,21 @@ const info: Chain = {
   daemon_name: 'pointd',
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'apoint',
         low_gas_price: 5000000000,
         average_gas_price: 25000000000,
         high_gas_price: 40000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'apoint'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.svg'
@@ -87,16 +85,13 @@ const info: Chain = {
         provider: 'Indonode'
       }
     ],
-    'evm-http-jsonrpc': [
-      {
+    "evm-http-jsonrpc": [{
         address: 'https://rpc-mainnet-1.point.space',
         provider: 'Point Network'
-      },
-      {
+      }, {
         address: 'https://jsonrpc.point.nodestake.top',
         provider: 'NodeStake'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -126,11 +121,9 @@ const info: Chain = {
       account_page: 'https://atomscan.com/point/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.svg'
-    }
-  ]
+    }]
 };
 export default info;

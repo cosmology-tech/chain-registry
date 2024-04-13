@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'crescent',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Crescent',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ucre',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'cre',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ucre',
       name: 'Crescent',
       display: 'cre',
@@ -24,25 +20,19 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg'
       },
       coingecko_id: 'crescent-network',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg'
-        }
-      ]
-    },
-    {
+        }]
+    }, {
       description: 'The bonded token of Crescent',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ubcre',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'bcre',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ubcre',
       name: 'Bonded Crescent',
       display: 'bcre',
@@ -52,13 +42,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
       },
       coingecko_id: 'liquid-staking-crescent',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

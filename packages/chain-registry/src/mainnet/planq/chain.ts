@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['ethsecp256k1'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'aplanq',
         fixed_min_gas_price: 20000000000,
         low_gas_price: 30000000000,
         average_gas_price: 35000000000,
         high_gas_price: 40000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'aplanq'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.46.3'
@@ -200,7 +196,7 @@ const info: Chain = {
         provider: 'KonsorTech'
       }
     ],
-    'evm-http-jsonrpc': [
+    "evm-http-jsonrpc": [
       {
         address: 'https://evm-rpc.planq.network',
         provider: 'planq.network'
@@ -268,8 +264,7 @@ const info: Chain = {
     {
       kind: 'RoomIT',
       url: 'https://explorer.tendermint.roomit.xyz/planq',
-      tx_page:
-        'https://explorer.tendermint.roomit.xyz/planq/transaction/${txHash}'
+      tx_page: 'https://explorer.tendermint.roomit.xyz/planq/transaction/${txHash}'
     },
     {
       kind: 'Kynraze',
@@ -313,11 +308,9 @@ const info: Chain = {
       tx_page: 'https://explorer.whenmoonwhenlambo.money/tx/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg'
-    }
-  ]
+    }]
 };
 export default info;

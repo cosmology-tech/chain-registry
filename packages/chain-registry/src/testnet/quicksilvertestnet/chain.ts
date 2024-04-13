@@ -12,21 +12,17 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uqck',
         low_gas_price: 0.0001,
         average_gas_price: 0.0001,
         high_gas_price: 0.00025
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uqck'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.46',
@@ -65,37 +61,26 @@ const info: Chain = {
         provider: 'Inter Blockchain Services'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'http://quick.grpc.t.stavr.tech:9112',
         provider: '🔥STAVR🔥'
-      },
-      {
+      }, {
         address: 'quicksilver-testnet-grpc.polkachu.com:11190',
         provider: 'polkachu'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Quicksilver',
       tx_page: 'https://explorer.stavr.tech/Quicksilver/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Quicksilver/account/${accountAddress}'
-    },
-    {
+      account_page: 'https://explorer.stavr.tech/Quicksilver/account/${accountAddress}'
+    }, {
       url: 'https://testnet.quicksilver.explorers.guru',
-      tx_page:
-        'https://testnet.quicksilver.explorers.guru/transaction/${txHash}',
-      account_page:
-        'https://testnet.quicksilver.explorers.guru/account/${accountAddress}'
-    }
-  ],
-  images: [
-    {
+      tx_page: 'https://testnet.quicksilver.explorers.guru/transaction/${txHash}',
+      account_page: 'https://testnet.quicksilver.explorers.guru/account/${accountAddress}'
+    }],
+  images: [{
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.svg'
-    }
-  ]
+    }]
 };
 export default info;

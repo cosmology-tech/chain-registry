@@ -2,10 +2,8 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'stratos',
-  assets: [
-    {
-      description:
-        'STOS coin is the token for the Stratos (STOS) cosmos based blockchain',
+  assets: [{
+      description: 'STOS coin is the token for the Stratos (STOS) cosmos based blockchain',
       denom_units: [
         {
           denom: 'wei',
@@ -29,13 +27,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.svg'
       },
       coingecko_id: 'stratos',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

@@ -13,66 +13,52 @@ const info: Chain = {
   slip44: 459,
   alternative_slip44s: [710],
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ufury',
         low_gas_price: 0.05,
         average_gas_price: 0.1,
         high_gas_price: 0.25
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ufury'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://gridiron.furya.io',
         provider: 'fanfury'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://api-mainnet.furya.io/',
         provider: 'fanfury'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'api-mainnet.furya.io:9090',
         provider: 'fanfury'
-      }
-    ],
-    'evm-http-jsonrpc': [
-      {
+      }],
+    "evm-http-jsonrpc": [{
         address: 'https://rest.furya.io/',
         provider: 'fanfury'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'pingpub',
       url: 'https://explorer.furya.wtf/',
       tx_page: 'https://www.explorer.furya.wtf//txs/${txHash}',
       account_page: 'https://explorer.furya.wtf//account/${accountAddress}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.svg'
-    }
-  ]
+    }]
 };
 export default info;

@@ -12,35 +12,28 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'utia',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc-blockspacerace.pops.one/',
         provider: 'P-OPs'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://celestia-blockspacerace-rest.brocha.in',
         provider: 'Brochain'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Mintscan',
       url: 'https://testnet.mintscan.io/celestia-incentivized-testnet',
-      tx_page:
-        'https://testnet.mintscan.io/celestia-incentivized-testnet/txs/${txHash}'
-    }
-  ]
+      tx_page: 'https://testnet.mintscan.io/celestia-incentivized-testnet/txs/${txHash}'
+    }]
 };
 export default info;

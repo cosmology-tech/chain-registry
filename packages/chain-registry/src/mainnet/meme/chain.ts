@@ -12,24 +12,22 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'umeme',
         fixed_min_gas_price: 0.025,
         low_gas_price: 0.025,
         average_gas_price: 0.035,
         high_gas_price: 0.045
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'umeme'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg'
@@ -75,12 +73,10 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'meme-grpc.polkachu.com:14790',
         provider: 'Polkachu'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -114,8 +110,7 @@ const info: Chain = {
       kind: 'Stake-Take',
       url: 'https://explorer.stake-take.com/meme',
       tx_page: 'https://explorer.stake-take.com/meme/tx/${txHash}',
-      account_page:
-        'https://explorer.stake-take.com/meme/account/${accountAddress}'
+      account_page: 'https://explorer.stake-take.com/meme/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
@@ -124,11 +119,9 @@ const info: Chain = {
       account_page: 'https://explorer.stavr.tech/Meme/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg'
-    }
-  ]
+    }]
 };
 export default info;

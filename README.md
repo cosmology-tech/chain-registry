@@ -135,7 +135,6 @@ Checkout the repository and bootstrap the yarn workspace:
 # Clone the repo.
 git clone https://github.com/cosmology-tech/chain-registry
 yarn
-yarn bootstrap
 ```
 ### Building
 

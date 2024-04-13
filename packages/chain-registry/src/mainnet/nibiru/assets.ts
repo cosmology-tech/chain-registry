@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'nibiru',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Nibiru network',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'unibi',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'nibi',
           exponent: 6
-        }
-      ],
+        }],
       base: 'unibi',
       name: 'Nibiru',
       display: 'nibi',
@@ -24,13 +20,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.svg'
       },
       coingecko_id: 'nibiru',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

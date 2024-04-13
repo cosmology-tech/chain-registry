@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 438,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'cony',
         fixed_min_gas_price: 0.015,
         low_gas_price: 0.015,
         average_gas_price: 0.015,
         high_gas_price: 0.015
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'cony'
-      }
-    ],
+      }],
     lock_duration: {
       time: '604800s'
     }
@@ -38,45 +34,33 @@ const info: Chain = {
     cosmwasm_enabled: true,
     cosmwasm_version: 'github.com/Finschia/wasmd@v0.2.0'
   },
-  description:
-    'Finschia (formerly LINE Blockchain Mainnet) aims to build a sustainable token model and create token demand to become a blockchain with 1 billion users.',
+  description: 'Finschia (formerly LINE Blockchain Mainnet) aims to build a sustainable token model and create token demand to become a blockchain with 1 billion users.',
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://finschia-rpc.finschia.io'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://finschia-api.finschia.io'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'finschia-grpc.finschia.io:443'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'mintscan',
       url: 'https://www.mintscan.io/finschia',
       tx_page: 'https://www.mintscan.io/finschia/tx/${txHash}',
       account_page: 'https://www.mintscan.io/finschia/address/${accountAddress}'
-    },
-    {
+    }, {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/finschia',
       tx_page: 'https://ezstaking.app/finschia/txs/${txHash}',
       account_page: 'https://ezstaking.app/finschia/account/${accountAddress}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.svg'
-    }
-  ],
+    }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.svg'

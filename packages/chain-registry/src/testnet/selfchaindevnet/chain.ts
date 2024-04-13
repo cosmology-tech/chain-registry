@@ -12,35 +12,28 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uself',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc-devnet.selfchain.xyz',
         provider: 'Selfchain'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://api-devnet.selfchain.xyz/',
         provider: 'Selfchain'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Selfchain',
       url: 'https://explorer-devnet.selfchain.xyz',
-      tx_page:
-        'https://explorer-devnet.selfchain.xyz/self/transactions/${txHash}'
-    }
-  ]
+      tx_page: 'https://explorer-devnet.selfchain.xyz/self/transactions/${txHash}'
+    }]
 };
 export default info;

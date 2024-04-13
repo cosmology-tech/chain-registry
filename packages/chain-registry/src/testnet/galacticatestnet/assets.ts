@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'galacticatestnet',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Galactica Protocol Testnet',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'agnet',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'gnet',
           exponent: 18
-        }
-      ],
+        }],
       base: 'agnet',
       name: 'Gnet',
       display: 'gnet',
@@ -22,15 +18,11 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galactica/images/galactica.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galactica/images/galactica.png'
-        },
-        {
+        }, {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galactica/images/galactica.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

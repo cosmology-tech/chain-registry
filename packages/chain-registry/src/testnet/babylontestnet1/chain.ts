@@ -12,54 +12,43 @@ const info: Chain = {
   node_home: '$HOME/.babylond',
   key_algos: ['secp256k1'],
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ubbn'
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ubbn'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/babylontestnet/images/logo.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'rpc.testnet.babylonchain.io:26657',
         provider: 'Babylon foundation'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'rpc.testnet.babylonchain.io:1317',
         provider: 'Babylon foundation'
-      }
-    ],
+      }],
     grpc: []
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'babylonscan',
       url: 'https://babylonscan.io'
-    },
-    {
+    }, {
       kind: 'explorers.guru',
       url: 'https://babylon.explorers.guru',
       tx_page: 'https://babylon.explorers.guru/transaction/${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/babylontestnet/images/logo.svg'
-    }
-  ],
+    }],
   slip44: 118
 };
 export default info;

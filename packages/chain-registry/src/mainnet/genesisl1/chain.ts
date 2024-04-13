@@ -11,21 +11,17 @@ const info: Chain = {
   node_home: '$HOME/.genesis',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'el1',
         low_gas_price: 51000000000,
         average_gas_price: 52000000000,
         high_gas_price: 53000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'el1'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.46.15'
@@ -35,28 +31,21 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://26657.genesisl1.org',
         provider: 'GenesisL1'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://api.genesisl1.org',
         provider: 'GenesisL1'
-      },
-      {
+      }, {
         address: 'https://1317.genesisl1.org',
         provider: 'GenesisL1'
-      }
-    ],
-    'evm-http-jsonrpc': [
-      {
+      }],
+    "evm-http-jsonrpc": [{
         address: 'https://rpc.genesisl1.org',
         provider: 'GenesisL1'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -73,8 +62,7 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Genesisl1',
       tx_page: 'https://explorer.stavr.tech/Genesisl1/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Genesisl1/accounts/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Genesisl1/accounts/${accountAddress}'
     },
     {
       kind: 'atomscan',
@@ -83,11 +71,9 @@ const info: Chain = {
       account_page: 'https://atomscan.com/genesisl1/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.svg'
-    }
-  ]
+    }]
 };
 export default info;

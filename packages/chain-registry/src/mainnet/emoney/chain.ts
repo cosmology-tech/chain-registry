@@ -52,13 +52,13 @@ const info: Chain = {
     ]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ungm'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.svg'
@@ -92,16 +92,13 @@ const info: Chain = {
         provider: 'BlockHunters 🎯'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'grpc-emoney-ia.cosmosia.notional.ventures:443',
         provider: 'Notional'
-      },
-      {
+      }, {
         address: 'emoney-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -128,11 +125,9 @@ const info: Chain = {
       account_page: 'https://atomscan.com/emoney/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.svg'
-    }
-  ]
+    }]
 };
 export default info;

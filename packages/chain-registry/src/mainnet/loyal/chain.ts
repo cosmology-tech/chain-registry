@@ -13,50 +13,40 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ulyl',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ulyl'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loyal/images/lyl.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loyal/images/lyl.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc-main.joinloyal.io/'
-      },
-      {
+      }, {
         address: 'https://loyal-rpc.polkachu.com',
         provider: 'Polkachu'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://lcd-main.joinloyal.io/'
-      },
-      {
+      }, {
         address: 'https://loyal-api.polkachu.com',
         provider: 'Polkachu'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'https://grpc.loyal.nodestake.top',
         provider: 'NodeStake'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -75,11 +65,9 @@ const info: Chain = {
       tx_page: 'https://explorer.nodestake.top/loyal/tx/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loyal/images/lyl.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loyal/images/lyl.svg'
-    }
-  ]
+    }]
 };
 export default info;

@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 5555,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'nund',
         fixed_min_gas_price: 25,
         low_gas_price: 100,
         average_gas_price: 200,
         high_gas_price: 300
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'nund'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1814400s'
     }
@@ -37,43 +33,32 @@ const info: Chain = {
     cosmos_sdk_version: '0.46.15',
     cosmwasm_enabled: false
   },
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.svg'
-    }
-  ],
+    }],
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc1.unification.io:443',
         provider: 'Unification'
-      },
-      {
+      }, {
         address: 'https://rpc.unification.chainmasters.ninja/',
         provider: 'Chainmasters'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://rest.unification.io',
         provider: 'Unification'
-      },
-      {
+      }, {
         address: 'https://rest.unification.chainmasters.ninja/',
         provider: 'Chainmasters'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'grpc.unification.io:443',
         provider: 'Unification'
-      },
-      {
+      }, {
         address: 'grpc.unification.chainmasters.info',
         provider: 'Chainmasters'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -85,17 +70,14 @@ const info: Chain = {
     {
       kind: 'ping.pub',
       url: 'https://explorer.unification.chainmasters.ninja/unification',
-      tx_page:
-        'https://explorer.unification.chainmasters.ninja/unification/tx/${txHash}',
-      account_page:
-        'https://explorer.unification.chainmasters.ninja/Unification/account/${accountAddress}'
+      tx_page: 'https://explorer.unification.chainmasters.ninja/unification/tx/${txHash}',
+      account_page: 'https://explorer.unification.chainmasters.ninja/Unification/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/unification',
       tx_page: 'https://atomscan.com/unification/transactions/${txHash}',
-      account_page:
-        'https://atomscan.com/unification/accounts/${accountAddress}'
+      account_page: 'https://atomscan.com/unification/accounts/${accountAddress}'
     }
   ],
   logo_URIs: {

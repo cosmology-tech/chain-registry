@@ -20,25 +20,20 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg'
   },
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uflix',
         fixed_min_gas_price: 0,
         low_gas_price: 0.001,
         average_gas_price: 0.0025,
         high_gas_price: 0.025
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uflix'
-      }
-    ]
+      }]
   },
-  description:
-    'Decentralized media and network layer for Creators & Sovereign Communities powered by NFTs and related distribution protocols.',
+  description: 'Decentralized media and network layer for Creators & Sovereign Communities powered by NFTs and related distribution protocols.',
   apis: {
     rpc: [
       {
@@ -228,36 +223,30 @@ const info: Chain = {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/omniflixhub',
       tx_page: 'https://ezstaking.app/omniflixhub/txs/${txHash}',
-      account_page:
-        'https://ezstaking.app/omniflixhub/account/${accountAddress}'
+      account_page: 'https://ezstaking.app/omniflixhub/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/omniflix',
       tx_page: 'https://www.mintscan.io/omniflix/transactions/${txHash}',
-      account_page:
-        'https://www.mintscan.io/omniflix/accounts/${accountAddress}'
+      account_page: 'https://www.mintscan.io/omniflix/accounts/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/omniflixhub',
       tx_page: 'https://atomscan.com/omniflixhub/transactions/${txHash}',
-      account_page:
-        'https://atomscan.com/omniflixhub/accounts/${accountAddress}'
+      account_page: 'https://atomscan.com/omniflixhub/accounts/${accountAddress}'
     },
     {
       kind: 'STAKR.space explorer',
       url: 'https://explorer.stakr.space/omniflix/',
       tx_page: 'https://explorer.stakr.space/omniflix/tx/${txHash}',
-      account_page:
-        'https://explorer.stakr.space/omniflix/account/${accountAddress}'
+      account_page: 'https://explorer.stakr.space/omniflix/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg'
-    }
-  ]
+    }]
 };
 export default info;

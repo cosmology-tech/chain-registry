@@ -11,22 +11,21 @@ const info: Chain = {
   daemon_name: 'thord',
   node_home: '$HOME/.thornode',
   slip44: 931,
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
     rpc: [],
     rest: []
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'THORChain explorer',
       url: 'https://thorchain.net',
       tx_page: 'https://thorchain.net/#/txs/${txHash}'
-    },
-    {
+    }, {
       kind: 'viewblock',
       url: 'https://viewblock.io/thorchain',
       tx_page: 'https://viewblock.io/thorchain/tx/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

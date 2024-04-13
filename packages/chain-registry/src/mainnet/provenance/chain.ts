@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 505,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'nhash',
         fixed_min_gas_price: 1905,
         low_gas_price: 1905,
         average_gas_price: 2100,
         high_gas_price: 2500
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'nhash'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.46.13',
@@ -152,8 +148,7 @@ const info: Chain = {
     {
       kind: 'hubble',
       url: 'https://hubble.figment.io/provenance/chains/pio-mainnet-1',
-      tx_page:
-        'https://hubble.figment.io/provenance/chains/pio-mainnet-1/${block}/transactions/${txHash}'
+      tx_page: 'https://hubble.figment.io/provenance/chains/pio-mainnet-1/${block}/transactions/${txHash}'
     },
     {
       kind: 'ping.pub',
@@ -164,15 +159,13 @@ const info: Chain = {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/provenance',
       tx_page: 'https://www.mintscan.io/provenance/transactions/${txHash}',
-      account_page:
-        'https://www.mintscan.io/provenance/accounts/${accountAddress}'
+      account_page: 'https://www.mintscan.io/provenance/accounts/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Provenance',
       tx_page: 'https://explorer.stavr.tech/Provenance/txs/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Provenance/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Provenance/account/${accountAddress}'
     },
     {
       kind: 'ezstaking',
@@ -189,17 +182,13 @@ const info: Chain = {
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/provenance',
-      tx_page:
-        'https://explorer.whenmoonwhenlambo.money/provenance/tx/${txHash}',
-      account_page:
-        'https://explorer.whenmoonwhenlambo.money/provenance/account/${accountAddress}'
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/provenance/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/provenance/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.svg'
-    }
-  ]
+    }]
 };
 export default info;

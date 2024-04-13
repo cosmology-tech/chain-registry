@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ubcna',
         fixed_min_gas_price: 0.001,
         low_gas_price: 0.001,
         average_gas_price: 0.0025,
         high_gas_price: 0.01
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ubcna'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.47.9'
@@ -373,8 +369,7 @@ const info: Chain = {
       kind: '🔥STAVR🔥 Explorer',
       url: 'https://explorer.stavr.tech/bitcanna',
       tx_page: 'https://explorer.stavr.tech/bitcanna/txs/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/bitcanna/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/bitcanna/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
@@ -396,8 +391,7 @@ const info: Chain = {
       kind: 'Moonbys Dashboard',
       url: 'https://explorer.moonbys.com',
       tx_page: 'https://explorer.moonbys.com/tx/${txHash}',
-      account_page:
-        'https://explorer.moonbys.com/bitcanna/account/${accountAddress}'
+      account_page: 'https://explorer.moonbys.com/bitcanna/account/${accountAddress}'
     },
     {
       kind: 'Indonode',
@@ -408,36 +402,30 @@ const info: Chain = {
       kind: 'Safe Block',
       url: 'https://explorer.safeblock.space/bitcanna',
       tx_page: 'https://explorer.safeblock.space/bitcanna/tx/${txHash}',
-      account_page:
-        'https://explorer.safeblock.space/bitcanna/account/${accountAddress}'
+      account_page: 'https://explorer.safeblock.space/bitcanna/account/${accountAddress}'
     },
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/bitcanna',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/bitcanna/tx/${txHash}',
-      account_page:
-        'https://explorer.whenmoonwhenlambo.money/bitcanna/account/${accountAddress}'
+      account_page: 'https://explorer.whenmoonwhenlambo.money/bitcanna/account/${accountAddress}'
     },
     {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/bitcanna/',
       tx_page: 'https://explorer.nodeshub.online/bitcanna/tx/${txHash}',
-      account_page:
-        'https://explorer.nodeshub.online/bitcanna/accounts/${accountAddress}'
+      account_page: 'https://explorer.nodeshub.online/bitcanna/accounts/${accountAddress}'
     },
     {
       kind: 'CrypTech Explorer',
       url: 'https://explorers.cryptech.com.ua/bitcanna',
       tx_page: 'https://explorers.cryptech.com.ua/bitcanna/txs/${txHash}',
-      account_page:
-        'https://explorers.cryptech.com.ua/bitcanna/account/${accountAddress}'
+      account_page: 'https://explorers.cryptech.com.ua/bitcanna/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg'
-    }
-  ]
+    }]
 };
 export default info;

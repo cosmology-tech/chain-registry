@@ -5,16 +5,13 @@ const info: AssetList = {
   assets: [
     {
       description: 'The native token of Secret Network',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'uscrt',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'scrt',
           exponent: 6
-        }
-      ],
+        }],
       base: 'uscrt',
       name: 'Secret Network',
       display: 'scrt',
@@ -24,12 +21,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
       },
       coingecko_id: 'secret',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
-        }
-      ],
+        }],
       socials: {
         website: 'https://scrt.network/',
         twitter: 'https://twitter.com/SecretNetwork'
@@ -37,16 +32,13 @@ const info: AssetList = {
     },
     {
       description: 'The native token cw20 for SIENNA on Secret Network',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'cw20:secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'sienna',
           exponent: 18
-        }
-      ],
+        }],
       type_asset: 'snip20',
       address: 'secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4',
       base: 'cw20:secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4',
@@ -58,25 +50,20 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.svg'
       },
       coingecko_id: 'sienna',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'The native token cw20 for Shade on Secret Network',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'cw20:secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'shd',
           exponent: 8
-        }
-      ],
+        }],
       type_asset: 'snip20',
       address: 'secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d',
       base: 'cw20:secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d',
@@ -86,24 +73,19 @@ const info: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shdold.svg'
       },
-      images: [
-        {
+      images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shdold.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'The native token cw20 for Shade on Secret Network',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'cw20:secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'shd',
           exponent: 8
-        }
-      ],
+        }],
       type_asset: 'snip25',
       address: 'secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm',
       base: 'cw20:secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm',
@@ -115,25 +97,20 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.svg'
       },
       coingecko_id: 'shade-protocol',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'The native token cw20 for Silk on Secret Network',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'cw20:secret1fl449muk5yq8dlad7a22nje4p5d2pnsgymhjfd',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'silk',
           exponent: 6
-        }
-      ],
+        }],
       type_asset: 'snip25',
       address: 'secret1fl449muk5yq8dlad7a22nje4p5d2pnsgymhjfd',
       base: 'cw20:secret1fl449muk5yq8dlad7a22nje4p5d2pnsgymhjfd',
@@ -145,26 +122,20 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.svg'
       },
       coingecko_id: 'silk-bcec1136-561c-4706-a42c-8b67d0d7f7d2',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.svg'
-        }
-      ]
+        }]
     },
     {
-      description:
-        'The native token cw20 for SCRT Staking Derivatives on Secret Network',
-      denom_units: [
-        {
+      description: 'The native token cw20 for SCRT Staking Derivatives on Secret Network',
+      denom_units: [{
           denom: 'cw20:secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'stkd-scrt',
           exponent: 6
-        }
-      ],
+        }],
       type_asset: 'snip20',
       address: 'secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4',
       base: 'cw20:secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4',
@@ -176,25 +147,20 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.svg'
       },
       coingecko_id: 'stkd-scrt',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'The native token cw20 for Button on Secret Network',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'cw20:secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'butt',
           exponent: 6
-        }
-      ],
+        }],
       type_asset: 'snip20',
       address: 'secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt',
       base: 'cw20:secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt',
@@ -206,25 +172,20 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'
       },
       coingecko_id: 'buttcoin-2',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'The native token cw20 for Alter on Secret Network',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'cw20:secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'alter',
           exponent: 6
-        }
-      ],
+        }],
       base: 'cw20:secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
       name: 'Alter',
       display: 'alter',
@@ -234,25 +195,20 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg'
       },
       coingecko_id: 'alter',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'The native token cw20 for Amber on Secret Network',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'cw20:secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'amber',
           exponent: 6
-        }
-      ],
+        }],
       type_asset: 'snip20',
       address: 'secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852',
       base: 'cw20:secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852',
@@ -263,25 +219,20 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'The native token cw20 for Shill on Secret Network',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'cw20:secret197dvnt9yjxwn8sjdlx05f7zuk27lsdxtfnwxse',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'shill',
           exponent: 6
-        }
-      ],
+        }],
       type_asset: 'snip25',
       address: 'secret197dvnt9yjxwn8sjdlx05f7zuk27lsdxtfnwxse',
       base: 'cw20:secret197dvnt9yjxwn8sjdlx05f7zuk27lsdxtfnwxse',
@@ -292,12 +243,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.svg'
-        }
-      ]
+        }]
     }
   ]
 };

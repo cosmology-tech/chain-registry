@@ -12,27 +12,23 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ucgas',
         fixed_min_gas_price: 0.001
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc-chronic.zenchainlabs.io/',
         provider: 'ZenChainLabs'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://api-chronic.zenchainlabs.io/',
         provider: 'ZenChainLabs'
-      }
-    ],
+      }],
     grpc: []
   },
   explorers: [
@@ -50,8 +46,7 @@ const info: Chain = {
       kind: 'atomscan',
       url: 'https://atomscan.com/chronicnetwork',
       tx_page: 'https://atomscan.com/chronicnetwork/transactions/${txHash}',
-      account_page:
-        'https://atomscan.com/chronicnetwork/accounts/${accountAddress}'
+      account_page: 'https://atomscan.com/chronicnetwork/accounts/${accountAddress}'
     }
   ]
 };

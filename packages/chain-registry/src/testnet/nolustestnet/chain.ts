@@ -13,21 +13,17 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'unls',
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.05
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'unls'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1814400s'
     }
@@ -42,40 +38,29 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nolustestnet/images/nolus.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rila-cl.nolus.network:26657',
         provider: 'NolusProtocol'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://rila-cl.nolus.network:1317',
         provider: 'NolusProtocol'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'https://rila-cl.nolus.network:9090',
         provider: 'NolusProtocol'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Nolus Explorer',
       url: 'https://explorer-rila.nolus.io/rila-1/',
       tx_page: 'https://explorer-rila.nolus.io/rila-1/tx/${txHash}',
-      account_page:
-        'https://explorer-rila.nolus.io/rila-1/account/${accountAddress}'
-    }
-  ],
+      account_page: 'https://explorer-rila.nolus.io/rila-1/account/${accountAddress}'
+    }],
   keywords: ['testnet'],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nolustestnet/images/nolus.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nolustestnet/images/nolus.svg'
-    }
-  ]
+    }]
 };
 export default info;

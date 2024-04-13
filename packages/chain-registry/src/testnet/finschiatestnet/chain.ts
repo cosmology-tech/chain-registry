@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 438,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'tcony',
         fixed_min_gas_price: 0.015,
         low_gas_price: 0.015,
         average_gas_price: 0.015,
         high_gas_price: 0.015
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'tcony'
-      }
-    ],
+      }],
     lock_duration: {
       time: '86400s'
     }
@@ -39,37 +35,26 @@ const info: Chain = {
     cosmwasm_version: 'github.com/Finschia/wasmd@v0.2.0'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://ebony-rpc.finschia.io'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://ebony-api.finschia.io'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'ebony-grpc.finschia.io:443'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'mintscan',
       url: 'https://www.mintscan.io/finschia-testnet',
       tx_page: 'https://www.mintscan.io/finschia-testnet/tx/${txHash}',
-      account_page:
-        'https://www.mintscan.io/finschia-testnet/address/${accountAddress}'
-    }
-  ],
-  images: [
-    {
+      account_page: 'https://www.mintscan.io/finschia-testnet/address/${accountAddress}'
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.svg'
-    }
-  ],
+    }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.svg'

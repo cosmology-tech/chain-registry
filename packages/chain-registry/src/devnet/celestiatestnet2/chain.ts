@@ -12,38 +12,31 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'utia',
         fixed_min_gas_price: 0,
         low_gas_price: 0.01,
         average_gas_price: 0.02,
         high_gas_price: 0.1
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://validator-1.celestia-arabica-11.com/',
         provider: 'Celestia Labs'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://api.celestia-arabica-11.com/',
         provider: 'Celestia Labs'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Ping.Pub',
       url: 'https://explorer.celestia-arabica-11.com/arabica-11',
-      tx_page:
-        'https://explorer.celestia-arabica-11.com/arabica-11/tx/${txHash}'
-    }
-  ]
+      tx_page: 'https://explorer.celestia-arabica-11.com/arabica-11/tx/${txHash}'
+    }]
 };
 export default info;

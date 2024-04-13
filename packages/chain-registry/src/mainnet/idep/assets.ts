@@ -2,21 +2,17 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'idep',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of IDEP chain',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'IDEP',
           exponent: 6,
           aliases: []
-        },
-        {
+        }, {
           denom: 'idep',
           exponent: 0,
           aliases: []
-        }
-      ],
+        }],
       base: 'idep',
       name: 'IDEP',
       display: 'IDEP',
@@ -25,13 +21,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

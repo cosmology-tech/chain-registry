@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'mars',
-  assets: [
-    {
+  assets: [{
       description: 'Mars protocol token',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'umars',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'mars',
           exponent: 6
-        }
-      ],
+        }],
       base: 'umars',
       name: 'Mars',
       display: 'mars',
@@ -24,17 +20,14 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
       },
       coingecko_id: 'mars-protocol-a7fcbcfb-fd61-4017-92f0-7ee9f9cc6da3',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
-        }
-      ],
+        }],
       socials: {
         website: 'https://www.marsprotocol.io/',
         twitter: 'https://twitter.com/mars_protocol'
       }
-    }
-  ]
+    }]
 };
 export default info;

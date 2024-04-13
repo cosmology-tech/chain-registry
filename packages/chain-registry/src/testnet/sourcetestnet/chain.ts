@@ -12,22 +12,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'usource',
         fixed_min_gas_price: 0.05,
         low_gas_price: 0.05,
         average_gas_price: 0.075,
         high_gas_price: 0.1
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'usource'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.45',
@@ -63,16 +59,13 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'source-testnet-grpc.stake-town.com:443',
         provider: 'StakeTown'
-      },
-      {
+      }, {
         address: 'grpc-testnet-source.sr20de.xyz/',
         provider: 'SR20DE'
-      }
-    ]
+      }]
   },
   explorers: [
     {

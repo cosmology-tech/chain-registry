@@ -13,29 +13,24 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'adv4tnt',
         fixed_min_gas_price: 12500000000,
         low_gas_price: 12500000000,
         average_gas_price: 12500000000,
         high_gas_price: 20000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'adv4tnt'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.47.4',
     cosmwasm_enabled: false
   },
-  description:
-    'Our goal is to build open source code that can power a first class product and trading experience.',
+  description: 'Our goal is to build open source code that can power a first class product and trading experience.',
   apis: {
     rpc: [
       {
@@ -92,27 +87,22 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'mintscan',
       url: 'https://www.mintscan.io/dydx-testnet',
       tx_page: 'https://www.mintscan.io/dydx-testnet/txs/${txHash}',
-      account_page:
-        'https://www.mintscan.io/dydx-testnet/account/${accountAddress}'
-    }
-  ],
+      account_page: 'https://www.mintscan.io/dydx-testnet/account/${accountAddress}'
+    }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
   },
-  images: [
-    {
+  images: [{
       image_sync: {
         chain_name: 'dydx'
       },
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
-    }
-  ]
+    }]
 };
 export default info;

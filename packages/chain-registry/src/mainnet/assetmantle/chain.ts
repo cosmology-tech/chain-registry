@@ -12,29 +12,26 @@ const info: Chain = {
   node_home: '$HOME/.mantleNode',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'umntl',
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'umntl'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/AM_Logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/AM_Logo_Dark.svg'
   },
-  description:
-    'AssetMantle’s suite of products is focused on the NFT ecosystem, helping you up your game with digital asset ownership.',
+  description: 'AssetMantle’s suite of products is focused on the NFT ecosystem, helping you up your game with digital asset ownership.',
   apis: {
     rpc: [
       {
@@ -140,15 +137,13 @@ const info: Chain = {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/assetmantle',
       tx_page: 'https://ezstaking.app/assetmantle/txs/${txHash}',
-      account_page:
-        'https://ezstaking.app/assetmantle/account/${accountAddress}'
+      account_page: 'https://ezstaking.app/assetmantle/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/asset-mantle',
       tx_page: 'https://www.mintscan.io/asset-mantle/transactions/${txHash}',
-      account_page:
-        'https://www.mintscan.io/asset-mantle/accounts/${accountAddress}'
+      account_page: 'https://www.mintscan.io/asset-mantle/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
@@ -169,15 +164,12 @@ const info: Chain = {
       kind: 'atomscan',
       url: 'https://atomscan.com/assetmantle',
       tx_page: 'https://atomscan.com/assetmantle/transactions/${txHash}',
-      account_page:
-        'https://atomscan.com/assetmantle/accounts/${accountAddress}'
+      account_page: 'https://atomscan.com/assetmantle/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/AM_Logo.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/AM_Logo_Dark.svg'
-    }
-  ]
+    }]
 };
 export default info;

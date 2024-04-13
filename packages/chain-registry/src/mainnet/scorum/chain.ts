@@ -13,80 +13,63 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'gas',
         fixed_min_gas_price: 1,
         low_gas_price: 1,
         average_gas_price: 1,
         high_gas_price: 1
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'nsp'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scorum.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scorum.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://scorum-blockchain-mainnet-rpc-1.scorum.com',
         provider: 'scorum'
-      },
-      {
+      }, {
         address: 'https://scorum-blockchain-mainnet-rpc-2.scorum.com',
         provider: 'scorum'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://scorum-blockchain-mainnet-api-1.scorum.com',
         provider: 'scorum'
-      },
-      {
+      }, {
         address: 'https://scorum-blockchain-mainnet-api-2.scorum.com',
         provider: 'scorum'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'https://scorum-blockchain-mainnet-grpc-1.scorum.com',
         provider: 'scorum'
-      },
-      {
+      }, {
         address: 'https://scorum-blockchain-mainnet-grpc-2.scorum.com',
         provider: 'scorum'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'ezstaking',
       url: 'https://ezstaking.app/scorum',
       tx_page: 'https://ezstaking.app/scorum/txs/${txHash}',
       account_page: 'https://ezstaking.app/scorum/account/${accountAddress}'
-    },
-    {
+    }, {
       kind: 'bigdipper',
       url: 'https://cosmos.scorum.com/scorum',
       tx_page: 'https://cosmos.scorum.com/scorum/transactions/${txHash}',
-      account_page:
-        'https://cosmos.scorum.com/scorum/accounts/${accountAddress}'
-    }
-  ],
-  images: [
-    {
+      account_page: 'https://cosmos.scorum.com/scorum/accounts/${accountAddress}'
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scorum.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scorum.svg'
-    }
-  ]
+    }]
 };
 export default info;

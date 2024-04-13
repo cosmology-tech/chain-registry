@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'unibi',
         fixed_min_gas_price: 0.025,
         low_gas_price: 0.025,
         average_gas_price: 0.05,
         high_gas_price: 0.1
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'unibi'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1814400s'
     }
@@ -170,36 +166,30 @@ const info: Chain = {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.org/nibiru',
       tx_page: 'https://explorer.nodestake.org/nibiru/tx/${txHash}',
-      account_page:
-        'https://explorer.nodestake.org/nibiru/account/${accountAddress}'
+      account_page: 'https://explorer.nodestake.org/nibiru/account/${accountAddress}'
     },
     {
       kind: 'LiveRaveN',
       url: 'https://mainnet.explorer.liveraven.net/nibiru',
       tx_page: 'https://mainnet.explorer.liveraven.net/nibiru/tx/${txHash}',
-      account_page:
-        'https://mainnet.explorer.liveraven.net/nibiru/account/${accountAddress}'
+      account_page: 'https://mainnet.explorer.liveraven.net/nibiru/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Nibiru-Mainnet',
       tx_page: 'https://explorer.stavr.tech/Nibiru-Mainnet/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Nibiru-Mainnet/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Nibiru-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/nibiru/',
       tx_page: 'https://explorer.nodeshub.online/nibiru/tx/${txHash}',
-      account_page:
-        'https://explorer.nodeshub.online/nibiru/accounts/${accountAddress}'
+      account_page: 'https://explorer.nodeshub.online/nibiru/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.svg'
-    }
-  ]
+    }]
 };
 export default info;

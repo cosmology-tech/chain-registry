@@ -14,22 +14,18 @@ const info: Chain = {
   extra_codecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'aheart',
         fixed_min_gas_price: 250000000,
         low_gas_price: 80000000000,
         average_gas_price: 100000000000,
         high_gas_price: 160000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'aheart'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.46.11'
@@ -181,7 +177,7 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       }
     ],
-    'evm-http-jsonrpc': [
+    "evm-http-jsonrpc": [
       {
         address: 'https://jsonrpc.humans.nodestake.top/',
         provider: 'NodeStake'
@@ -243,22 +239,18 @@ const info: Chain = {
       kind: 'itrocket',
       url: 'https://mainnet.itrocket.net/humans/staking',
       tx_page: 'https://mainnet.itrocket.net/humans/tx/${txHash}',
-      account_page:
-        'https://mainnet.itrocket.net/humans/account/${accountAddress}'
+      account_page: 'https://mainnet.itrocket.net/humans/account/${accountAddress}'
     },
     {
       kind: 'posthuman',
       url: 'https://explorer.posthuman.digital/humans',
       tx_page: 'https://explorer.posthuman.digital/humans/tx/${txHash}',
-      account_page:
-        'https://explorer.posthuman.digital/humans/account/${accountAddress}'
+      account_page: 'https://explorer.posthuman.digital/humans/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/humans/images/heart-dark-mode.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/humans/images/heart-dark-mode.svg'
-    }
-  ]
+    }]
 };
 export default info;

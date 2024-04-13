@@ -13,26 +13,21 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uaxl',
         fixed_min_gas_price: 0.007,
         low_gas_price: 0.007,
         average_gas_price: 0.007,
         high_gas_price: 0.01
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uaxl'
-      }
-    ]
+      }]
   },
   codebase: {
-    cosmos_sdk_version:
-      'axelarnetwork/cosmos-sdk v0.45.17-0.20230904150332-37fb903a6c62',
+    cosmos_sdk_version: 'axelarnetwork/cosmos-sdk v0.45.17-0.20230904150332-37fb903a6c62',
     cosmwasm_enabled: true,
     cosmwasm_version: 'v0.33.0'
   },
@@ -40,19 +35,15 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axelar-chain-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axelar-chain-logo.svg'
   },
-  description:
-    'Axelar delivers secure cross-chain communication for Web3. Our infrastructure enables dApp users to interact with any asset or application, on any chain, with one click.',
+  description: 'Axelar delivers secure cross-chain communication for Web3. Our infrastructure enables dApp users to interact with any asset or application, on any chain, with one click.',
   apis: {
-    'grpc-web': [
-      {
+    "grpc-web": [{
         address: 'axelar-grpcweb.chainode.tech',
         provider: 'Chainode'
-      },
-      {
+      }, {
         address: 'axelar-grpcweb.quantnode.tech:9091',
         provider: 'Quantnode'
-      }
-    ],
+      }],
     rpc: [
       {
         address: 'https://rpc-axelar.imperator.co:443',
@@ -295,11 +286,9 @@ const info: Chain = {
       account_page: 'https://ezstaking.app/axelar/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axelar-chain-logo.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axelar-chain-logo.svg'
-    }
-  ]
+    }]
 };
 export default info;

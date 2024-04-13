@@ -12,23 +12,21 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uiris',
         low_gas_price: 0.2,
         average_gas_price: 0.3,
         high_gas_price: 0.4
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uiris'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg'
@@ -120,16 +118,13 @@ const info: Chain = {
         provider: 'KonsorTech'
       }
     ],
-    'evm-http-jsonrpc': [
-      {
+    "evm-http-jsonrpc": [{
         address: 'https://iris-evm.publicnode.com',
         provider: 'Allnodes.com ⚡️ Nodes & Staking'
-      },
-      {
+      }, {
         address: 'https://mainnet-iris-evm.konsortech.xyz',
         provider: 'KonsorTech'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -153,8 +148,7 @@ const info: Chain = {
       kind: 'atomscan',
       url: 'https://atomscan.com/iris-network',
       tx_page: 'https://atomscan.com/iris-network/transactions/${txHash}',
-      account_page:
-        'https://atomscan.com/iris-network/accounts/${accountAddress}'
+      account_page: 'https://atomscan.com/iris-network/accounts/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
@@ -177,11 +171,9 @@ const info: Chain = {
       tx_page: 'https://explorer.konsortech.xyz/iris/tx/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg'
-    }
-  ]
+    }]
 };
 export default info;

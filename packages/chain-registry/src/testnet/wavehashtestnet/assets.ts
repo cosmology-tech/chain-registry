@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'wavehashtestnet',
-  assets: [
-    {
+  assets: [{
       description: 'WaveHash A Permissioned Blockchain',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'uwahax',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'wahax',
           exponent: 6
-        }
-      ],
+        }],
       base: 'uwahax',
       name: 'WaveHash',
       display: 'wahax',
@@ -23,12 +19,9 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/wavehashtestnet/images/WaveHash.png'
       },
       coingecko_id: '',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/wavehashtestnet/images/WaveHash.png'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

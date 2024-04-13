@@ -13,21 +13,17 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'usomm',
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'usomm'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.46.14'
@@ -36,8 +32,7 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg'
   },
-  description:
-    'Automated vaults find best-in-class yields while mitigating risk.',
+  description: 'Automated vaults find best-in-class yields while mitigating risk.',
   apis: {
     rpc: [
       {
@@ -136,8 +131,7 @@ const info: Chain = {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/sommelier',
       tx_page: 'https://www.mintscan.io/sommelier/transactions/${txHash}',
-      account_page:
-        'https://www.mintscan.io/sommelier/accounts/${accountAddress}'
+      account_page: 'https://www.mintscan.io/sommelier/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
@@ -149,15 +143,13 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Sommelier-Mainnet',
       tx_page: 'https://explorer.stavr.tech/Sommelier-Mainnet/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Sommelier-Mainnet/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Sommelier-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'NODEXPLORER',
       url: 'https://explorer.nodexcapital.com/sommelier',
       tx_page: 'https://explorer.nodexcapital.com/sommelier/tx/${txHash}',
-      account_page:
-        'https://explorer.nodexcapital.com/sommelier/account/${accountAddress}'
+      account_page: 'https://explorer.nodexcapital.com/sommelier/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
@@ -166,11 +158,9 @@ const info: Chain = {
       account_page: 'https://atomscan.com/sommelier/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg'
-    }
-  ]
+    }]
 };
 export default info;

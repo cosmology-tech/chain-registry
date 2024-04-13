@@ -1,3 +1,9 @@
+export interface IBCChannelInfo {
+  channel_id: string;
+  client_id?: string;
+  port_id: string;
+  connection_id?: string;
+}
 export interface IBCInfo {
   $schema?: string;
   chain_1: {
@@ -11,18 +17,8 @@ export interface IBCInfo {
     connection_id: string;
   };
   channels: {
-    chain_1: {
-      channel_id: string;
-      client_id?: string;
-      port_id: string;
-      connection_id?: string;
-    };
-    chain_2: {
-      channel_id: string;
-      client_id?: string;
-      port_id: string;
-      connection_id?: string;
-    };
+    chain_1: IBCChannelInfo;
+    chain_2: IBCChannelInfo;
     ordering: string;
     version: string;
     fee_version?: string;

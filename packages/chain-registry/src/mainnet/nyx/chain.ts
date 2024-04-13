@@ -12,29 +12,24 @@ const info: Chain = {
   node_home: '$HOME/.nyxd',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'unym',
         fixed_min_gas_price: 0.025,
         low_gas_price: 0.025,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      },
-      {
+      }, {
         denom: 'unyx',
         fixed_min_gas_price: 0.025,
         low_gas_price: 0.025,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'unyx'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1814400s'
     }
@@ -83,16 +78,13 @@ const info: Chain = {
         provider: 'Nym'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'nym-grpc.polkachu.com:15390',
         provider: 'Polkachu'
-      },
-      {
+      }, {
         address: 'grpc.nymtech.net:443',
         provider: 'Nym'
-      }
-    ]
+      }]
   },
   explorers: [
     {

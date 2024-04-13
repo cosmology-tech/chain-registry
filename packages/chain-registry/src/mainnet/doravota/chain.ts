@@ -12,63 +12,50 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'peaka',
         fixed_min_gas_price: 100000000000,
         low_gas_price: 100000000000,
         average_gas_price: 100000000000,
         high_gas_price: 100000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'peaka'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://vota-rpc.dorafactory.org/',
         provider: 'dorafactory'
-      },
-      {
+      }, {
         address: 'https://m-dora.rpc.utsa.tech',
         provider: 'lesnik | UTSA'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://vota-rest.dorafactory.org',
         provider: 'dorafactory'
-      },
-      {
+      }, {
         address: 'https://m-dora.api.utsa.tech',
         provider: 'lesnik | UTSA'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'vota-grpc.dorafactory.org:443',
         provider: 'dorafactory'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Dora Vota Ping Pub',
       url: 'https://vota-explorer.dorafactory.org',
       tx_page: 'https://vota-explorer.dorafactory.org/doravota/tx/${txHash}'
-    },
-    {
+    }, {
       kind: 'lesnik | UTSA Ping Pub',
       url: 'https://exp.utsa.tech/dora/staking',
       tx_page: 'https://exp.utsa.tech/dora/tx/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

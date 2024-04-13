@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'upticktestnet',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Uptick',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'auptick',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'uptick',
           exponent: 18
-        }
-      ],
+        }],
       base: 'auptick',
       name: 'Uptick',
       display: 'uptick',
@@ -23,12 +19,9 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/upticktestnet/images/uptick.png'
       },
       coingecko_id: '',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/upticktestnet/images/uptick.png'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

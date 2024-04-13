@@ -12,40 +12,32 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'usei',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://sei-testnet-2-rpc.brocha.in',
         provider: 'Brochain'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://sei-testnet-2-rest.brocha.in',
         provider: 'Brochain'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'explorers.guru',
       url: 'https://testnet.sei.explorers.guru',
       tx_page: 'https://testnet.sei.explorers.guru/transaction/${txHash}'
-    },
-    {
+    }, {
       kind: 'Brochain',
       url: 'https://testnet-explorer.brocha.in/sei%20atlantic%202',
-      tx_page:
-        'https://testnet-explorer.brocha.in/sei%20atlantic%202/tx/${txHash}'
-    }
-  ]
+      tx_page: 'https://testnet-explorer.brocha.in/sei%20atlantic%202/tx/${txHash}'
+    }]
 };
 export default info;

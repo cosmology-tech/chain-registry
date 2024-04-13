@@ -13,11 +13,9 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uqsr'
-      }
-    ]
+      }]
   },
   fees: {
     fee_tokens: [
@@ -29,24 +27,21 @@ const info: Chain = {
         high_gas_price: 0.3
       },
       {
-        denom:
-          'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
+        denom: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
         fixed_min_gas_price: 0.01,
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.03
       },
       {
-        denom:
-          'ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5',
+        denom: 'ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5',
         fixed_min_gas_price: 0.01,
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.03
       },
       {
-        denom:
-          'ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A',
+        denom: 'ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A',
         fixed_min_gas_price: 0.01,
         low_gas_price: 0.01,
         average_gas_price: 0.025,
@@ -62,8 +57,7 @@ const info: Chain = {
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png'
   },
-  description:
-    'Quasar is the first decentralized asset management (D.A.M.) platform enabled by IBC. A secure, permissionless, composable, and diversified interchain DeFi experience is finally here.',
+  description: 'Quasar is the first decentralized asset management (D.A.M.) platform enabled by IBC. A secure, permissionless, composable, and diversified interchain DeFi experience is finally here.',
   apis: {
     rpc: [
       {
@@ -212,25 +206,20 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'mintscan',
       url: 'https://www.mintscan.io/quasar',
       tx_page: 'https://www.mintscan.io/quasar/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/quasar/accounts/${accountAddress}'
-    },
-    {
+    }, {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/quasar',
       tx_page: 'https://ezstaking.app/quasar/txs/${txHash}',
       account_page: 'https://ezstaking.app/quasar/account/${accountAddress}'
-    }
-  ],
+    }],
   keywords: ['mainnet'],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png'
-    }
-  ]
+    }]
 };
 export default info;

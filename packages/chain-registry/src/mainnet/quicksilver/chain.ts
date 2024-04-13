@@ -12,35 +12,29 @@ const info: Chain = {
   bech32_prefix: 'quick',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uqck',
         fixed_min_gas_price: 0.0001,
         low_gas_price: 0.0001,
         average_gas_price: 0.0001,
         high_gas_price: 0.00025
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uqck'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.46.16',
     cosmwasm_enabled: true,
-    cosmwasm_version:
-      'notional-labs/wasmd v0.29.0-sdk46.0.20221114145317-d6e67fd50956'
+    cosmwasm_version: 'notional-labs/wasmd v0.29.0-sdk46.0.20221114145317-d6e67fd50956'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.svg'
   },
-  description:
-    'Liquid Stake your Cosmos assets with your preferred validator and receive liquid staked assets (qASSETs) that you can use for swapping, pooling, lending, and more, all while your original stake earns staking APY from securing the network.',
+  description: 'Liquid Stake your Cosmos assets with your preferred validator and receive liquid staked assets (qASSETs) that you can use for swapping, pooling, lending, and more, all while your original stake earns staking APY from securing the network.',
   apis: {
     rpc: [
       {
@@ -306,15 +300,13 @@ const info: Chain = {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/quicksilver',
       tx_page: 'https://www.mintscan.io/quicksilver/transactions/${txHash}',
-      account_page:
-        'https://www.mintscan.io/quicksilver/accounts/${accountAddress}'
+      account_page: 'https://www.mintscan.io/quicksilver/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/quicksilver',
       tx_page: 'https://ezstaking.app/quicksilver/txs/${txHash}',
-      account_page:
-        'https://ezstaking.app/quicksilver/account/${accountAddress}'
+      account_page: 'https://ezstaking.app/quicksilver/account/${accountAddress}'
     },
     {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀 explorer',
@@ -334,8 +326,7 @@ const info: Chain = {
     {
       kind: 'AM Solutions Explorers',
       url: 'https://explorer.theamsolutions.info/quicksilver-main/staking',
-      tx_page:
-        'https://explorer.theamsolutions.info/quicksilver-main/tx/${txHash}'
+      tx_page: 'https://explorer.theamsolutions.info/quicksilver-main/tx/${txHash}'
     },
     {
       kind: 'KonsorTech',
@@ -343,11 +334,9 @@ const info: Chain = {
       tx_page: 'https://explorer.konsortech.xyz/quicksilver/tx/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.svg'
-    }
-  ]
+    }]
 };
 export default info;

@@ -12,44 +12,34 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ustrd',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ustrd'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.46'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://stride.testnet-1.stridenet.co',
         provider: 'Stride'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://stride.testnet-1.stridenet.co/api',
         provider: 'Stride'
-      }
-    ],
+      }],
     grpc: []
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'PingPub',
       url: 'https://testnet.ping.pub/stride',
       tx_page: 'https://testnet.ping.pub/stride/tx/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

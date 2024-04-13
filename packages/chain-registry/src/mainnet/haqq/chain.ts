@@ -14,22 +14,18 @@ const info: Chain = {
   extra_codecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'aISLM',
         fixed_min_gas_price: 250000000,
         low_gas_price: 20000000000,
         average_gas_price: 25000000000,
         high_gas_price: 40000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'aISLM'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'evmos/cosmos-sdk v0.47.5-evmos'
@@ -153,7 +149,7 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       }
     ],
-    'evm-http-jsonrpc': [
+    "evm-http-jsonrpc": [
       {
         address: 'https://rpc.eth.haqq.network',
         provider: 'Haqq'
@@ -220,11 +216,9 @@ const info: Chain = {
       tx_page: 'https://explorer.palamar.io/haqq/tx/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/haqq.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/haqq.svg'
-    }
-  ]
+    }]
 };
 export default info;

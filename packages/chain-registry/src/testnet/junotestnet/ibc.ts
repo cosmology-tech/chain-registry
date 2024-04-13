@@ -12,8 +12,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-16',
       connection_id: 'connection-5'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-877',
           port_id: 'transfer'
@@ -28,17 +27,14 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      },
-      {
+      }, {
         chain_1: {
           channel_id: 'channel-198',
-          port_id:
-            'wasm.juno1pjpntyvkxeuxd709jlupuea3xzxlzsfq574kqefv77fr2kcg4mcqvwqedq'
+          port_id: 'wasm.juno1pjpntyvkxeuxd709jlupuea3xzxlzsfq574kqefv77fr2kcg4mcqvwqedq'
         },
         chain_2: {
           channel_id: 'channel-17',
-          port_id:
-            'wasm.nois1xwde9rzqk5u36fke0r9ddmtwvh43n4fv53c5vc462wz8xlnqjhls6d90xc'
+          port_id: 'wasm.nois1xwde9rzqk5u36fke0r9ddmtwvh43n4fv53c5vc462wz8xlnqjhls6d90xc'
         },
         ordering: 'unordered',
         version: 'nois-v7',
@@ -46,8 +42,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -61,8 +56,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-1932',
       connection_id: 'connection-1889'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-889',
           port_id: 'transfer'
@@ -78,8 +72,7 @@ const info: IBCInfo[] = [
           preferred: true,
           dex: 'osmosis'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -93,8 +86,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-4413',
       connection_id: 'connection-3814'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-140',
           port_id: 'transfer'
@@ -110,8 +102,7 @@ const info: IBCInfo[] = [
           preferred: true,
           dex: 'osmosis'
         }
-      }
-    ]
+      }]
   }
 ];
 export default info;

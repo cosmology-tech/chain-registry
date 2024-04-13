@@ -2,10 +2,8 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'kusama',
-  assets: [
-    {
-      description:
-        'The native fee, governance, staking, and bonding token of the Polkadot platform.',
+  assets: [{
+      description: 'The native fee, governance, staking, and bonding token of the Polkadot platform.',
       denom_units: [
         {
           denom: 'Planck',
@@ -39,12 +37,9 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/kusama/images/ksm.svg'
       },
       coingecko_id: 'kusama',
-      images: [
-        {
+      images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/kusama/images/ksm.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

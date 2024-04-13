@@ -12,21 +12,19 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uatom',
         fixed_min_gas_price: 0.005
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uatom'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
     rpc: [
       {
@@ -83,17 +81,14 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Mintscan',
       url: 'https://testnet.mintscan.io/ics-testnet-provider',
       tx_page: 'https://testnet.mintscan.io/ics-testnet-provider/txs/${txHash}'
-    },
-    {
+    }, {
       kind: 'Ping.pub',
       url: 'https://explorer.rs-testnet.polypore.xyz/provider',
       tx_page: 'https://explorer.rs-testnet.polypore.xyz/provider/tx/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

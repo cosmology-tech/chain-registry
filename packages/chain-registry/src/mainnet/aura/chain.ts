@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uaura',
         fixed_min_gas_price: 0.001,
         low_gas_price: 0.001,
         average_gas_price: 0.002,
         high_gas_price: 0.0025
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uaura'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1209600s'
     }
@@ -271,50 +267,42 @@ const info: Chain = {
       kind: '🔥STAVR🔥 Explorer',
       url: 'https://explorer.stavr.tech/Aura-Mainnet',
       tx_page: 'https://explorer.stavr.tech/aura-mainnet/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/aura-mainnet/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/aura-mainnet/account/${accountAddress}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/aura',
       tx_page: 'https://explorer.nodestake.top/aura/tx/${txHash}',
-      account_page:
-        'https://explorer.nodestake.top/aura/account/${accountAddress}'
+      account_page: 'https://explorer.nodestake.top/aura/account/${accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/aura',
       tx_page: 'https://explorer.tcnetwork.io/aura/transaction/${txHash}',
-      account_page:
-        'https://explorer.tcnetwork.io/aura/account/${accountAddress}'
+      account_page: 'https://explorer.tcnetwork.io/aura/account/${accountAddress}'
     },
     {
       kind: 'Stake-Take',
       url: 'https://explorer.stake-take.com/aura',
       tx_page: 'https://explorer.stake-take.com/aura/tx/${txHash}',
-      account_page:
-        'https://explorer.stake-take.com/aura/account/${accountAddress}'
+      account_page: 'https://explorer.stake-take.com/aura/account/${accountAddress}'
     },
     {
       kind: 'Safe Block',
       url: 'https://explorer.safeblock.space/aura',
       tx_page: 'https://explorer.safeblock.space/aura/tx/${txHash}',
-      account_page:
-        'https://explorer.safeblock.space/aura/account/${accountAddress}'
+      account_page: 'https://explorer.safeblock.space/aura/account/${accountAddress}'
     },
     {
       kind: 'STAKR.space explorer',
       url: 'https://explorer.stakr.space/aura/',
       tx_page: 'https://explorer.stakr.space/aura/tx/${txHash}',
-      account_page:
-        'https://explorer.stakr.space/aura/account/${accountAddress}'
+      account_page: 'https://explorer.stakr.space/aura/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.svg'
-    }
-  ]
+    }]
 };
 export default info;

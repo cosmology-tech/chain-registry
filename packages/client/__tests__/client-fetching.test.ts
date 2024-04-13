@@ -6,7 +6,7 @@ import {
 const timeout = 30000; // miliseconds
 
 describe('Test client', () => {
-  let client;
+  let client: ChainRegistryClient;
   beforeAll((done) => {
     const options: ChainRegistryClientOptions = {
       chainNames: ['osmosis']
@@ -29,7 +29,7 @@ describe('Test client', () => {
     'Test chain util',
     () => {
       const chainUtil = client.getChainUtil('osmosis');
-      const asset = chainUtil.getAssetByDenom('uosmo');
+      const asset = chainUtil.getAssetByDenom('uosmo')!;
       expect(asset.name).toEqual('Osmosis');
     },
     timeout

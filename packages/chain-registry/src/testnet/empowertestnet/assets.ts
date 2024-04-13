@@ -2,20 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'empowertestnet',
-  assets: [
-    {
-      description:
-        'The native staking and governance token of the testnet version of Empower.',
-      denom_units: [
-        {
+  assets: [{
+      description: 'The native staking and governance token of the testnet version of Empower.',
+      denom_units: [{
           denom: 'umpwr',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'mpwr',
           exponent: 6
-        }
-      ],
+        }],
       base: 'umpwr',
       name: 'MPWR',
       display: 'mpwr',
@@ -23,12 +18,9 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/empowertestnet/images/mpwr.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/empowertestnet/images/mpwr.png'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

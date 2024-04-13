@@ -12,22 +12,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'nanoekil',
         fixed_min_gas_price: 1000,
         low_gas_price: 1000,
         average_gas_price: 10000,
         high_gas_price: 1000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'nanoekil'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1814400s'
     }
@@ -37,48 +33,36 @@ const info: Chain = {
     cosmwasm_enabled: false
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://node.testnet.like.co/rpc/',
         provider: 'like.co'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://node.testnet.like.co/',
         provider: 'like.co'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'https://node.testnet-grpc.like.co/',
         provider: 'like.co'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'bigdipper',
       url: 'https://testnet.bigdipper.live/likecoin',
       tx_page: 'https://testnet.bigdipper.live/likecoin/transactions/${txHash}',
-      account_page:
-        'https://testnet.bigdipper.live/likecoin/accounts/${accountAddress}'
-    },
-    {
+      account_page: 'https://testnet.bigdipper.live/likecoin/accounts/${accountAddress}'
+    }, {
       kind: 'lunie-ng',
       url: 'https://likecoin-public-testnet-5.netlify.app/'
-    }
-  ],
+    }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.svg'
   },
   keywords: [],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.svg'
-    }
-  ]
+    }]
 };
 export default info;

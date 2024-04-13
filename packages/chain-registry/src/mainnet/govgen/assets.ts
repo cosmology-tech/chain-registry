@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'govgen',
-  assets: [
-    {
+  assets: [{
       description: 'The native staking and governance token of GovGen',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ugovgen',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'govgen',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ugovgen',
       name: 'GovGen',
       display: 'govgen',
@@ -23,13 +19,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/govgen/images/govgen.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/govgen/images/govgen.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/govgen/images/govgen.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/govgen/images/govgen.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

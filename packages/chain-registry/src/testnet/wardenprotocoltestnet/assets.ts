@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'wardenprotocoltestnet',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Warden Protocol Testnet',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'uward',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'ward',
           exponent: 6
-        }
-      ],
+        }],
       base: 'uward',
       name: 'Ward',
       display: 'ward',
@@ -23,13 +19,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/wardenprotocol/images/ward.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/wardenprotocol/images/ward.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/wardenprotocol/images/ward.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/wardenprotocol/images/ward.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

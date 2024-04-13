@@ -11,49 +11,41 @@ const info: Chain = {
   daemon_name: 'knstld',
   node_home: '$HOME/.knstld',
   slip44: 118,
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/Konstellation-dark.png'
   },
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'udarc',
         fixed_min_gas_price: 0,
         low_gas_price: 0.0001,
         average_gas_price: 0.001,
         high_gas_price: 0.01
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'udarc'
-      }
-    ]
+      }]
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc-konstellation-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
-      },
-      {
+      }, {
         address: 'https://konstellation-rpc.stakerhouse.com',
         provider: 'StakerHouse'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://api-konstellation-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
-      },
-      {
+      }, {
         address: 'https://konstellation-rest.stakerhouse.com',
         provider: 'StakerHouse'
-      }
-    ],
+      }],
     grpc: [
       {
         address: 'grpc-konstellation-ia.cosmosia.notional.ventures:443',
@@ -73,22 +65,17 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'konstellation',
       url: 'https://explorer.konstellation.tech/',
       tx_page: 'https://explorer.konstellation.tech/tx/${txHash}'
-    },
-    {
+    }, {
       kind: 'cosmotracker',
       url: 'https://cosmotracker.com/konstellation',
       tx_page: 'https://cosmotracker.com/konstellation/tx/${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/Konstellation-dark.png'
-    }
-  ]
+    }]
 };
 export default info;

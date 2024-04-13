@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 880,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ulum',
         fixed_min_gas_price: 0.001,
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ulum'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.47.5'
@@ -153,23 +149,18 @@ const info: Chain = {
       kind: 'atomscan',
       url: 'https://atomscan.com/lum-network',
       tx_page: 'https://atomscan.com/lum-network/transactions/${txHash}',
-      account_page:
-        'https://atomscan.com/lum-network/accounts/${accountAddress}'
+      account_page: 'https://atomscan.com/lum-network/accounts/${accountAddress}'
     },
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/lum-network',
-      tx_page:
-        'https://explorer.whenmoonwhenlambo.money/lum-network/tx/${txHash}',
-      account_page:
-        'https://explorer.whenmoonwhenlambo.money/lum-network/account/${accountAddress}'
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/lum-network/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/lum-network/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.svg'
-    }
-  ]
+    }]
 };
 export default info;

@@ -10,59 +10,48 @@ const info: Chain = {
   node_home: '$HOME/.echelond',
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'aechelon',
         low_gas_price: 10000000000,
         average_gas_price: 25000000000,
         high_gas_price: 40000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'aechelon'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/echelon.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://ech01trpc.mindheartsoul.org',
         provider: 'Mind Heart Soul'
-      },
-      {
+      }, {
         address: 'https://rpc.echjoker.lol',
         provider: '⚡ Echelon Joker ⚛ 🃏'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://ech01api.mindheartsoul.org',
         provider: 'Mind Heart Soul'
-      },
-      {
+      }, {
         address: 'https://api.echjoker.lol',
         provider: '⚡ Echelon Joker ⚛ 🃏'
-      }
-    ],
+      }],
     grpc: [],
-    'evm-http-jsonrpc': [
-      {
+    "evm-http-jsonrpc": [{
         address: 'https://ech01jrpc.mindheartsoul.org',
         provider: 'Mind Heart Soul'
-      },
-      {
+      }, {
         address: 'https://jrpc.echjoker.lol',
         provider: '⚡ Echelon Joker ⚛ 🃏'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -87,11 +76,9 @@ const info: Chain = {
       account_page: 'https://atomscan.com/echelon/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/logo.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/echelon.svg'
-    }
-  ]
+    }]
 };
 export default info;

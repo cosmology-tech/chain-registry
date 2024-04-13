@@ -13,24 +13,22 @@ const info: Chain = {
   daemon_name: 'injectived',
   node_home: '$HOME/.injectived',
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'inj',
         fixed_min_gas_price: 500000000,
         low_gas_price: 500000000,
         average_gas_price: 700000000,
         high_gas_price: 900000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'inj'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
     rpc: [
       {
@@ -87,13 +85,10 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'injectiveprotocol',
       url: 'https://testnet.explorer.injective.network/',
-      tx_page:
-        'https://testnet.explorer.injective.network/transaction/${txHash}'
-    }
-  ]
+      tx_page: 'https://testnet.explorer.injective.network/transaction/${txHash}'
+    }]
 };
 export default info;

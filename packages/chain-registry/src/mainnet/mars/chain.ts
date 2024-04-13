@@ -14,30 +14,25 @@ const info: Chain = {
   slip44: 118,
   alternative_slip44s: [330],
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'umars',
         fixed_min_gas_price: 0,
         low_gas_price: 0,
         average_gas_price: 0,
         high_gas_price: 0.01
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'umars'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.46.7',
     cosmwasm_enabled: true,
     cosmwasm_version: '0.30.0'
   },
-  description:
-    'Lend, borrow and earn with an autonomous credit protocol in the Cosmos universe. Open to all, closed to none.',
+  description: 'Lend, borrow and earn with an autonomous credit protocol in the Cosmos universe. Open to all, closed to none.',
   apis: {
     rpc: [
       {
@@ -165,15 +160,13 @@ const info: Chain = {
       kind: 'BigDipper',
       url: 'https://explorer.marsprotocol.io',
       tx_page: 'https://explorer.marsprotocol.io/transactions/${txHash}',
-      account_page:
-        'https://explorer.marsprotocol.io/accounts/${accountAddress}'
+      account_page: 'https://explorer.marsprotocol.io/accounts/${accountAddress}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/mars',
       tx_page: 'https://explorer.nodestake.top/mars/transactions/${txHash}',
-      account_page:
-        'https://explorer.nodestake.top/mars/account/${accountAddress}'
+      account_page: 'https://explorer.nodestake.top/mars/account/${accountAddress}'
     },
     {
       kind: 'Nodes.Guru',
@@ -185,8 +178,7 @@ const info: Chain = {
       kind: 'MintScan',
       url: 'https://www.mintscan.io/mars-protocol',
       tx_page: 'https://www.mintscan.io/mars-protocol/transactions/${txHash}',
-      account_page:
-        'https://www.mintscan.io/mars-protocol/accounts/${accountAddress}'
+      account_page: 'https://www.mintscan.io/mars-protocol/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
@@ -199,11 +191,9 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-protocol.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-protocol.svg'
   },
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-protocol.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-protocol.svg'
-    }
-  ]
+    }]
 };
 export default info;

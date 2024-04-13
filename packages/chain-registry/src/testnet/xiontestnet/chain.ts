@@ -12,22 +12,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uxion',
         fixed_min_gas_price: 0,
         low_gas_price: 0,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uxion'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.47.5',
@@ -35,45 +31,38 @@ const info: Chain = {
     cosmwasm_version: '0.43.0'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://testnet-burnt-rpc.lavenderfive.com',
         provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
+      }, {
         address: 'https://xion-testnet-rpc.polkachu.com',
         provider: 'polkachu'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://testnet-burnt-api.lavenderfive.com',
         provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
+      }, {
         address: 'https://xion-testnet-api.polkachu.com',
         provider: 'polkachu'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'https://testnet-burnt-grpc.lavenderfive.com',
         provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
+      }, {
         address: 'xion-testnet-grpc.polkachu.com:22390',
         provider: 'polkachu'
-      }
-    ]
+      }]
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt.png'
   },
-  keywords: ['xion', 'burnt', 'testnet'],
-  images: [
-    {
+  keywords: [
+    'xion',
+    'burnt',
+    'testnet'
+  ],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt.png'
-    }
-  ]
+    }]
 };
 export default info;

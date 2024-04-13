@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'furya',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Furya',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ufury',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'fury',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ufury',
       name: 'Furya',
       display: 'fury',
@@ -23,21 +19,18 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg',
           theme: {
             primary_color_hex: '#eaf143'
           }
-        }
-      ],
+        }],
       coingecko_id: 'fanfury',
       keywords: ['gaming', 'staking'],
       socials: {
         twitter: 'https://twitter.com/furyachain'
       }
-    }
-  ]
+    }]
 };
 export default info;

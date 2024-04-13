@@ -6,7 +6,7 @@ import {
 const timeout = 30000; // miliseconds
 
 describe('Test fetcher', () => {
-  let fetcher;
+  let fetcher: ChainRegistryFetcher;
   beforeAll((done) => {
     const options: ChainRegistryFetcherOptions = {
       urls: [

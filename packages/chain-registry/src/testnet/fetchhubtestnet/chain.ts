@@ -11,57 +11,44 @@ const info: Chain = {
   node_home: '$HOME/.fetchd',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'atestfet',
         low_gas_price: 0.025,
         average_gas_price: 0.025,
         high_gas_price: 0.035
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'atestfet'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc-dorado.fetch.ai:443',
         provider: 'fetch.ai'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://rest-dorado.fetch.ai',
         provider: 'fetch.ai'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'grpc-dorado.fetch.ai:443',
         provider: 'fetch.ai'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'bigdipper',
       url: 'https://explore-dorado.fetch.ai',
       tx_page: 'https://explore-dorado.fetch.ai/transactions/${txHash}'
-    },
-    {
+    }, {
       kind: 'azoyalabs',
       url: 'https://fetchstation.azoyalabs.com/testnet',
-      tx_page:
-        'https://fetchstation.azoyalabs.com/testnet/explorer/transactions/${txHash}',
-      account_page:
-        'https://fetchstation.azoyalabs.com/testnet/explorer/address/${accountAddress}'
-    }
-  ]
+      tx_page: 'https://fetchstation.azoyalabs.com/testnet/explorer/transactions/${txHash}',
+      account_page: 'https://fetchstation.azoyalabs.com/testnet/explorer/address/${accountAddress}'
+    }]
 };
 export default info;

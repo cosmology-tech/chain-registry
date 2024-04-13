@@ -13,21 +13,19 @@ const info: Chain = {
   node_home: '$HOME/.firmachain',
   key_algos: ['secp256k1'],
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ufct',
         fixed_min_gas_price: 0.1
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ufct'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.svg'
@@ -115,8 +113,7 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Firmachain-M',
       tx_page: 'https://explorer.stavr.tech/Firmachain-M/txs/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Firmachain-M/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Firmachain-M/account/${accountAddress}'
     },
     {
       kind: 'bigdipper',
@@ -138,15 +135,12 @@ const info: Chain = {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/firmachain/',
       tx_page: 'https://explorer.nodeshub.online/firmachain/tx/${txHash}',
-      account_page:
-        'https://explorer.nodeshub.online/firmachain/accounts/${accountAddress}'
+      account_page: 'https://explorer.nodeshub.online/firmachain/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.svg'
-    }
-  ]
+    }]
 };
 export default info;

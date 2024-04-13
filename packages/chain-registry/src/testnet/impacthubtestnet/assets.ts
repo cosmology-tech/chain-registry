@@ -2,48 +2,39 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'impacthubtestnet',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of IXO Chain',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'uixo',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'ixo',
           exponent: 6
-        }
-      ],
+        }],
       base: 'uixo',
       name: 'IXO',
       display: 'ixo',
       symbol: 'IXO',
-      traces: [
-        {
+      traces: [{
           type: 'test-mintage',
           counterparty: {
             chain_name: 'impacthub',
             base_denom: 'uixo'
           },
           provider: 'impacthub'
-        }
-      ],
-      images: [
-        {
+        }],
+      images: [{
           image_sync: {
             chain_name: 'impacthub',
             base_denom: 'uixo'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.svg'
-        }
-      ],
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.svg'
       }
-    }
-  ]
+    }]
 };
 export default info;

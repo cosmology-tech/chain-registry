@@ -14,22 +14,18 @@ const info: Chain = {
   extra_codecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'aevmos',
         fixed_min_gas_price: 250000000,
         low_gas_price: 20000000000,
         average_gas_price: 25000000000,
         high_gas_price: 40000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'aevmos'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'evmos/cosmos-sdk v0.47.5-evmos.2'
@@ -38,8 +34,7 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg'
   },
-  description:
-    'Developers use Evmos as the Ethereum Canary Chain to deploy applications of the future. Get all the functionalities of Ethereum with the power of IBC and Interchain composability.',
+  description: 'Developers use Evmos as the Ethereum Canary Chain to deploy applications of the future. Get all the functionalities of Ethereum with the power of IBC and Interchain composability.',
   apis: {
     rpc: [
       {
@@ -311,7 +306,7 @@ const info: Chain = {
         provider: 'Bro_n_Bro'
       }
     ],
-    'evm-http-jsonrpc': [
+    "evm-http-jsonrpc": [
       {
         address: 'https://eth.bd.evmos.org:8545',
         provider: 'Blockdaemon'
@@ -430,22 +425,18 @@ const info: Chain = {
       kind: 'Stake Village',
       url: 'https://exp.stakevillage.net/evmos',
       tx_page: 'https://exp.stakevillage.net/evmos/tx/${txHash}',
-      account_page:
-        'https://exp.stakevillage.net/evmos/accounts/${accountAddress}'
+      account_page: 'https://exp.stakevillage.net/evmos/accounts/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/evmos',
       tx_page: 'https://explorer.stavr.tech/evmos/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/evmos/accounts/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/evmos/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg'
-    }
-  ]
+    }]
 };
 export default info;

@@ -10,22 +10,18 @@ const info: Chain = {
   bech32_prefix: 'comdex',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ucmdx',
         fixed_min_gas_price: 0,
         low_gas_price: 0,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ucmdx'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.47.5',
@@ -212,8 +208,7 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Comdex-Mainnet',
       tx_page: 'https://explorer.stavr.tech/Comdex-Mainnet/txs/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Comdex-Mainnet/accounts/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Comdex-Mainnet/accounts/${accountAddress}'
     },
     {
       kind: 'aneka',
@@ -242,11 +237,9 @@ const info: Chain = {
       tx_page: 'https://explorer.validatornode.com/comdex/tx/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
-    }
-  ]
+    }]
 };
 export default info;

@@ -4,18 +4,14 @@ const info: AssetList = {
   chain_name: 'binancesmartchain',
   assets: [
     {
-      description:
-        'BNB powers the BNB Chain ecosystem and is the native coin of the BNB Beacon Chain and BNB Smart Chain.',
-      denom_units: [
-        {
+      description: 'BNB powers the BNB Chain ecosystem and is the native coin of the BNB Beacon Chain and BNB Smart Chain.',
+      denom_units: [{
           denom: 'wei',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'bnb',
           exponent: 18
-        }
-      ],
+        }],
       type_asset: 'evm-base',
       base: 'wei',
       name: 'Binance Coin',
@@ -26,34 +22,27 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/bnb.svg'
       },
       coingecko_id: 'binancecoin',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/bnb.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/bnb.svg'
-        }
-      ]
+        }]
     },
     {
-      description:
-        'Wrapped BNB. As the native coin of Binance Chain, BNB has multiple use cases: fueling transactions on the Chain, paying for transaction fees on Binance Exchange, making in-store payments, and many more.',
+      description: 'Wrapped BNB. As the native coin of Binance Chain, BNB has multiple use cases: fueling transactions on the Chain, paying for transaction fees on Binance Exchange, making in-store payments, and many more.',
       type_asset: 'erc20',
       address: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
-      denom_units: [
-        {
+      denom_units: [{
           denom: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'wbnb',
           exponent: 18
-        }
-      ],
+        }],
       base: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
       name: 'Wrapped BNB',
       display: 'wbnb',
       symbol: 'WBNB',
-      traces: [
-        {
+      traces: [{
           type: 'wrapped',
           counterparty: {
             chain_name: 'binancesmartchain',
@@ -63,108 +52,86 @@ const info: AssetList = {
             contract: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c'
           },
           provider: 'Binance'
-        }
-      ],
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.svg'
       },
       coingecko_id: 'wbnb',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.svg'
-        }
-      ]
+        }]
     },
     {
-      description:
-        'BUSD is a 1:1 USD-backed stablecoin approved by NYDFS and issued by Paxos on Ethereum. Binance provides Binance-Peg BUSD on other chains by locking an equivalent amount of assets on Ethereum. Note that Binance-Peg BUSD is provided by Binance, which is not issued by Paxos nor regulated by the NYDFS.',
-      denom_units: [
-        {
+      description: 'BUSD is a 1:1 USD-backed stablecoin approved by NYDFS and issued by Paxos on Ethereum. Binance provides Binance-Peg BUSD on other chains by locking an equivalent amount of assets on Ethereum. Note that Binance-Peg BUSD is provided by Binance, which is not issued by Paxos nor regulated by the NYDFS.',
+      denom_units: [{
           denom: '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'busd',
           exponent: 18
-        }
-      ],
+        }],
       type_asset: 'erc20',
       address: '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
       base: '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
       name: 'Binance-Peg BUSD Token',
       display: 'busd',
       symbol: 'BUSD',
-      traces: [
-        {
+      traces: [{
           type: 'synthetic',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
           },
           provider: 'Binance'
-        }
-      ],
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/busd.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/busd.png'
-        }
-      ]
+        }]
     },
     {
-      description:
-        'USD Coin (known by its ticker USDC) is a stablecoin that is pegged to the U.S. dollar on a 1:1 basis.',
-      denom_units: [
-        {
+      description: 'USD Coin (known by its ticker USDC) is a stablecoin that is pegged to the U.S. dollar on a 1:1 basis.',
+      denom_units: [{
           denom: '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'usdc',
           exponent: 18
-        }
-      ],
+        }],
       type_asset: 'erc20',
       address: '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d',
       base: '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d',
       name: 'Binance-Peg USD Coin',
       display: 'usdc',
       symbol: 'USDC',
-      traces: [
-        {
+      traces: [{
           type: 'synthetic',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0x4fabb145d64652a948d72533023f6e7a623c7c53'
           },
           provider: 'Binance'
-        }
-      ],
+        }],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
-      images: [
-        {
+      images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'PURSE Token',
-      denom_units: [
-        {
+      denom_units: [{
           denom: '0x29a63F4B209C29B4DC47f06FFA896F32667DAD2C',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'PURSE',
           exponent: 18
-        }
-      ],
+        }],
       type_asset: 'erc20',
       address: '0x29a63F4B209C29B4DC47f06FFA896F32667DAD2C',
       base: '0x29a63F4B209C29B4DC47f06FFA896F32667DAD2C',
@@ -176,25 +143,20 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'The SRCX token of Source Protocol.',
-      denom_units: [
-        {
+      denom_units: [{
           denom: '0x454b90716a9435e7161a9aea5cf00e0acbe565ae',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'srcx',
           exponent: 9
-        }
-      ],
+        }],
       type_asset: 'erc20',
       address: '0x454b90716a9435e7161a9aea5cf00e0acbe565ae',
       base: '0x454b90716a9435e7161a9aea5cf00e0acbe565ae',
@@ -205,11 +167,9 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
-        }
-      ]
+        }]
     }
   ]
 };
