@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'aarch',
         fixed_min_gas_price: 140000000000,
         low_gas_price: 196000000000,
         average_gas_price: 225400000000,
         high_gas_price: 254800000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'aarch'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1209600s'
     }
@@ -42,8 +38,7 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
   },
-  description:
-    'An incentivized L1 blockchain that allows developers to capture the value their dapps create, enabling sustainable economic models.',
+  description: 'An incentivized L1 blockchain that allows developers to capture the value their dapps create, enabling sustainable economic models.',
   apis: {
     rpc: [
       {
@@ -383,15 +378,13 @@ const info: Chain = {
       kind: 'Silk Nodes',
       url: 'https://explorer.silknodes.io/archway',
       tx_page: 'https://explorer.silknodes.io/archway/tx/${txHash}',
-      account_page:
-        'https://explorer.silknodes.io/archway/account/${accountAddress}'
+      account_page: 'https://explorer.silknodes.io/archway/account/${accountAddress}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/archway/',
       tx_page: 'https://explorer.nodestake.top/archway/txs/${txHash}',
-      account_page:
-        'https://explorer.nodestake.top/archway/account/${accountAddress}'
+      account_page: 'https://explorer.nodestake.top/archway/account/${accountAddress}'
     },
     {
       kind: 'Exploreme',
@@ -411,11 +404,9 @@ const info: Chain = {
       account_page: 'https://ezstaking.app/archway/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
-    }
-  ]
+    }]
 };
 export default info;

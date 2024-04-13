@@ -13,22 +13,18 @@ const info: Chain = {
   slip44: 494,
   key_algos: ['secp256k1'],
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uband',
         fixed_min_gas_price: 0.0025,
         low_gas_price: 0.0025,
         average_gas_price: 0.003,
         high_gas_price: 0.005
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uband'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1814400s'
     }
@@ -40,8 +36,7 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg'
   },
-  description:
-    'Band Protocol is a cross-chain data oracle platform that aggregates and connects real-world data and APIs to smart contracts.',
+  description: 'Band Protocol is a cross-chain data oracle platform that aggregates and connects real-world data and APIs to smart contracts.',
   apis: {
     rpc: [
       {
@@ -229,14 +224,12 @@ const info: Chain = {
       kind: 'atomscan',
       url: 'https://atomscan.com/band-protocol',
       tx_page: 'https://atomscan.com/band-protocol/transactions/${txHash}',
-      account_page:
-        'https://atomscan.com/band-protocol/accounts/${accountAddress}'
+      account_page: 'https://atomscan.com/band-protocol/accounts/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/band-protocol',
-      account_page:
-        'https://stakeflow.io/band-protocol/accounts/${accountAddress}'
+      account_page: 'https://stakeflow.io/band-protocol/accounts/${accountAddress}'
     },
     {
       kind: 'kjnodes Explorer',
@@ -244,11 +237,9 @@ const info: Chain = {
       tx_page: 'https://explorer.kjnodes.com/band/tx/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg'
-    }
-  ]
+    }]
 };
 export default info;

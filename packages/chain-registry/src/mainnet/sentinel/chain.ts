@@ -13,29 +13,26 @@ const info: Chain = {
   slip44: 118,
   key_algos: ['secp256k1'],
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'udvpn',
         low_gas_price: 0.1,
         average_gas_price: 0.25,
         high_gas_price: 0.4
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'udvpn'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg'
   },
-  description:
-    'The Sentinel ecosystem is a global network of autonomous dVPN applications that enable private and censorship resistant internet access.',
+  description: 'The Sentinel ecosystem is a global network of autonomous dVPN applications that enable private and censorship resistant internet access.',
   apis: {
     rpc: [
       {
@@ -189,8 +186,7 @@ const info: Chain = {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/sentinel',
       tx_page: 'https://www.mintscan.io/sentinel/transactions/${txHash}',
-      account_page:
-        'https://www.mintscan.io/sentinel/accounts/${accountAddress}'
+      account_page: 'https://www.mintscan.io/sentinel/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
@@ -207,10 +203,8 @@ const info: Chain = {
     {
       kind: 'RoomIT',
       url: 'https://explorer.tendermint.roomit.xyz/sentinel-mainnet',
-      tx_page:
-        'https://explorer.tendermint.roomit.xyz/sentinel-mainnet/transactions/${txHash}',
-      account_page:
-        'https://explorer.tendermint.roomit.xyz/sentinel-mainnet/accounts/${accountAddress}'
+      tx_page: 'https://explorer.tendermint.roomit.xyz/sentinel-mainnet/transactions/${txHash}',
+      account_page: 'https://explorer.tendermint.roomit.xyz/sentinel-mainnet/accounts/${accountAddress}'
     },
     {
       kind: 'ValidatorNode',
@@ -226,15 +220,12 @@ const info: Chain = {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/sentinel/',
       tx_page: 'https://explorer.nodeshub.online/sentinel/tx/${txHash}',
-      account_page:
-        'https://explorer.nodeshub.online/sentinel/accounts/${accountAddress}'
+      account_page: 'https://explorer.nodeshub.online/sentinel/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg'
-    }
-  ]
+    }]
 };
 export default info;

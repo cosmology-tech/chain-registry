@@ -17,29 +17,24 @@ const info: Chain = {
     cosmwasm_version: 'v0.33.0'
   },
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ubtsg',
         fixed_min_gas_price: 0,
         low_gas_price: 3,
         average_gas_price: 10,
         high_gas_price: 20
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ubtsg'
-      }
-    ]
+      }]
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg'
   },
-  description:
-    'Artists, Fans, Managers and Labels in One Single Holistic Ecosystem: $BTSG. Earn real-time royalties, discover exclusive content, mint and trade Fantokens, buy & sell NFTs.',
+  description: 'Artists, Fans, Managers and Labels in One Single Holistic Ecosystem: $BTSG. Earn real-time royalties, discover exclusive content, mint and trade Fantokens, buy & sell NFTs.',
   apis: {
     rpc: [
       {
@@ -216,22 +211,18 @@ const info: Chain = {
       kind: 'Safe Block',
       url: 'https://explorer.safeblok.space/bitsong',
       tx_page: 'https://explorer.safeblock.space/bitsong/tx/${txHash}',
-      account_page:
-        'https://explorer.safeblock.space/bitsong/account/${accountAddress}'
+      account_page: 'https://explorer.safeblock.space/bitsong/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Bitsong',
       tx_page: 'https://explorer.stavr.tech/Bitsong/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Bitsong/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Bitsong/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg'
-    }
-  ]
+    }]
 };
 export default info;

@@ -11,36 +11,29 @@ const info: Chain = {
   node_home: '$HOME/.hid-node',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uhid',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.prajna.hypersign.id',
         provider: 'Hypersign'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://api.prajna.hypersign.id',
         provider: 'Hypersign'
-      }
-    ],
+      }],
     grpc: []
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Hypersign',
       url: 'https://explorer.hypersign.id/hypersign-prajna-testnet',
-      tx_page:
-        'https://explorer.hypersign.id/hypersign-prajna-testnet/tx/${txHash}'
-    }
-  ]
+      tx_page: 'https://explorer.hypersign.id/hypersign-prajna-testnet/tx/${txHash}'
+    }]
 };
 export default info;

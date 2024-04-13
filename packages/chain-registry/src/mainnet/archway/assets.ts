@@ -28,12 +28,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
       },
       coingecko_id: 'archway',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
-        }
-      ],
+        }],
       socials: {
         website: 'https://archway.io/',
         twitter: 'https://twitter.com/archwayHQ'
@@ -42,19 +40,14 @@ const info: AssetList = {
     {
       description: 'ERIS liquid staked ARCH',
       type_asset: 'cw20',
-      address:
-        'archway1fwurjg7ah4v7hhs6xsc3wutqpvmahrfhns285s0lt34tgfdhplxq6m8xg5',
-      denom_units: [
-        {
-          denom:
-            'cw20:archway1fwurjg7ah4v7hhs6xsc3wutqpvmahrfhns285s0lt34tgfdhplxq6m8xg5',
+      address: 'archway1fwurjg7ah4v7hhs6xsc3wutqpvmahrfhns285s0lt34tgfdhplxq6m8xg5',
+      denom_units: [{
+          denom: 'cw20:archway1fwurjg7ah4v7hhs6xsc3wutqpvmahrfhns285s0lt34tgfdhplxq6m8xg5',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'ampARCH',
           exponent: 6
-        }
-      ],
+        }],
       base: 'cw20:archway1fwurjg7ah4v7hhs6xsc3wutqpvmahrfhns285s0lt34tgfdhplxq6m8xg5',
       name: 'ERIS Amplified ARCH',
       display: 'ampARCH',
@@ -62,80 +55,63 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/amparch.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/amparch.png'
-        }
-      ]
+        }]
     },
     {
       description: 'The first memecoin on osmosis.',
-      denom_units: [
-        {
-          denom:
-            'ibc/7CB33A66F90533ED1E168CB3251253C719CF4B04FF1290AFD795F14CA1D67278',
+      denom_units: [{
+          denom: 'ibc/7CB33A66F90533ED1E168CB3251253C719CF4B04FF1290AFD795F14CA1D67278',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'WOSMO',
           exponent: 6
-        }
-      ],
+        }],
       type_asset: 'ics20',
       base: 'ibc/7CB33A66F90533ED1E168CB3251253C719CF4B04FF1290AFD795F14CA1D67278',
       name: 'Wosmo',
       display: 'WOSMO',
       symbol: 'WOSMO',
-      traces: [
-        {
+      traces: [{
           type: 'ibc',
           counterparty: {
             chain_name: 'osmosis',
-            base_denom:
-              'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO',
+            base_denom: 'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO',
             channel_id: 'channel-1'
           },
           chain: {
             channel_id: 'channel-1429',
             path: 'transfer/channel-1429/factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
           }
-        }
-      ],
-      images: [
-        {
+        }],
+      images: [{
           image_sync: {
             chain_name: 'osmosis',
-            base_denom:
-              'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
+            base_denom: 'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
-        }
-      ],
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
       }
     },
     {
       description: 'The native token of Vidulum',
-      denom_units: [
-        {
-          denom:
-            'ibc/1BCF1FCAFE3568E234787EDFDA12460BD8931B17FE6A729DCD60FAD845558DA1',
+      denom_units: [{
+          denom: 'ibc/1BCF1FCAFE3568E234787EDFDA12460BD8931B17FE6A729DCD60FAD845558DA1',
           exponent: 0,
           aliases: ['uvdl']
-        },
-        {
+        }, {
           denom: 'vdl',
           exponent: 6
-        }
-      ],
+        }],
       type_asset: 'ics20',
       base: 'ibc/1BCF1FCAFE3568E234787EDFDA12460BD8931B17FE6A729DCD60FAD845558DA1',
       name: 'Vidulum',
       display: 'vdl',
       symbol: 'VDL',
-      traces: [
-        {
+      traces: [{
           type: 'ibc',
           counterparty: {
             chain_name: 'vidulum',
@@ -146,39 +122,31 @@ const info: AssetList = {
             channel_id: 'channel-110',
             path: 'transfer/channel-110/uvdl'
           }
-        }
-      ],
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
       },
-      images: [
-        {
+      images: [{
           image_sync: {
             chain_name: 'vidulum',
             base_denom: 'uvdl'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'Astrovault AXV',
       type_asset: 'cw20',
-      address:
-        'archway1ecjefhcf8r60wtfnhwefrxhj9caeqa90fj58cqsaafqveawn6cjs5znd2n',
-      denom_units: [
-        {
-          denom:
-            'cw20:archway1ecjefhcf8r60wtfnhwefrxhj9caeqa90fj58cqsaafqveawn6cjs5znd2n',
+      address: 'archway1ecjefhcf8r60wtfnhwefrxhj9caeqa90fj58cqsaafqveawn6cjs5znd2n',
+      denom_units: [{
+          denom: 'cw20:archway1ecjefhcf8r60wtfnhwefrxhj9caeqa90fj58cqsaafqveawn6cjs5znd2n',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'AXV',
           exponent: 6
-        }
-      ],
+        }],
       base: 'cw20:archway1ecjefhcf8r60wtfnhwefrxhj9caeqa90fj58cqsaafqveawn6cjs5znd2n',
       name: 'Astrovault AXV',
       display: 'AXV',
@@ -187,12 +155,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/axv.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/axv.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/axv.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/axv.svg'
-        }
-      ],
+        }],
       coingecko_id: 'astrovault'
     }
   ]

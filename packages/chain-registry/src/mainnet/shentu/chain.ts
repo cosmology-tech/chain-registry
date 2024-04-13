@@ -13,23 +13,21 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uctk',
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uctk'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.svg'
@@ -161,8 +159,7 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Shentu-Mainnet',
       tx_page: 'https://explorer.stavr.tech/Shentu-Mainnet/txs/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Shentu-Mainnet/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Shentu-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
@@ -173,8 +170,7 @@ const info: Chain = {
     {
       kind: 'Shentu Explorer',
       url: 'https://explorer.shentu.technology/?net=shentu-2.2',
-      tx_page:
-        'https://explorer.shentu.technology/transactions/${txHash}?net=shentu-2.2'
+      tx_page: 'https://explorer.shentu.technology/transactions/${txHash}?net=shentu-2.2'
     },
     {
       kind: 'ping.pub',
@@ -199,11 +195,9 @@ const info: Chain = {
       account_page: 'https://stakeflow.io/shentu/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.svg'
-    }
-  ]
+    }]
 };
 export default info;

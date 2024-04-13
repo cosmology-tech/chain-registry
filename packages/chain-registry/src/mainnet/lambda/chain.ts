@@ -11,23 +11,21 @@ const info: Chain = {
   daemon_name: 'lambdavm',
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ulamb',
         low_gas_price: 10000000000,
         average_gas_price: 25000000000,
         high_gas_price: 40000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ulamb'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.svg'
@@ -83,16 +81,13 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       }
     ],
-    'evm-http-jsonrpc': [
-      {
+    "evm-http-jsonrpc": [{
         address: 'https://jsonrpc-lambda.d-stake.xyz',
         provider: 'D-stake'
-      },
-      {
+      }, {
         address: 'https://lambda-jsonrpc.noders.services',
         provider: '[NODERS]TEAM'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -117,11 +112,9 @@ const info: Chain = {
       account_page: 'https://atomscan.com/lambda/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.svg'
-    }
-  ]
+    }]
 };
 export default info;

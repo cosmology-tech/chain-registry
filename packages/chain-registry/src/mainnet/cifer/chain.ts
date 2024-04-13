@@ -12,60 +12,48 @@ const info: Chain = {
   node_home: '$HOME/.ciferd',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ucif',
         fixed_min_gas_price: 0.0025,
         low_gas_price: 1,
         average_gas_price: 5,
         high_gas_price: 10
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ucif'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://cif_node.cifer.ai/',
         provider: 'Cifer'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://api.cifer.ai',
         provider: 'Cifer'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'http://grpc.cifer.ai',
         provider: 'Cifer'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'bigdipper',
       url: 'https://explorer.cifer.ai/',
       tx_page: 'https://explorer.cifer.ai/transactions/${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
-    }
-  ]
+    }]
 };
 export default info;

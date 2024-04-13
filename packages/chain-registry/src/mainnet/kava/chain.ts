@@ -13,29 +13,26 @@ const info: Chain = {
   slip44: 459,
   alternative_slip44s: [118],
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ukava',
         low_gas_price: 0.05,
         average_gas_price: 0.1,
         high_gas_price: 0.25
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ukava'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg'
   },
-  description:
-    'Kava is a decentralized blockchain that combines the speed and interoperability of Cosmos with the developer power of Ethereum.',
+  description: 'Kava is a decentralized blockchain that combines the speed and interoperability of Cosmos with the developer power of Ethereum.',
   apis: {
     rpc: [
       {
@@ -123,7 +120,7 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
-    'evm-http-jsonrpc': [
+    "evm-http-jsonrpc": [
       {
         address: 'https://evm.kava.io/',
         provider: 'kava'
@@ -168,11 +165,9 @@ const info: Chain = {
       account_page: 'https://stakeflow.io/kava/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg'
-    }
-  ]
+    }]
 };
 export default info;

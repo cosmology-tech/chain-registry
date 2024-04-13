@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'kichain',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Ki Chain',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'uxki',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'xki',
           exponent: 6
-        }
-      ],
+        }],
       base: 'uxki',
       name: 'Ki',
       display: 'xki',
@@ -24,28 +20,21 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'
       },
       coingecko_id: 'ki',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'
-        }
-      ]
-    },
-    {
+        }]
+    }, {
       description: 'ELEVENPARIS loyalty token on KiChain',
       type_asset: 'cw20',
       address: 'ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy',
-      denom_units: [
-        {
-          denom:
-            'cw20:ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy',
+      denom_units: [{
+          denom: 'cw20:ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'lvn',
           exponent: 6
-        }
-      ],
+        }],
       base: 'cw20:ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy',
       name: 'LVN',
       display: 'lvn',
@@ -54,12 +43,9 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/lvn.png'
       },
       coingecko_id: 'lvn',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/lvn.png'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

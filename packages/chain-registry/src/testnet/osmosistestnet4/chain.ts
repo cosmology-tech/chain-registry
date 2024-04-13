@@ -12,22 +12,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uosmo',
         fixed_min_gas_price: 0,
         low_gas_price: 0,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uosmo'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.45',
@@ -63,21 +59,17 @@ const info: Chain = {
         provider: ''
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'https://grpc-test.osmosis.zone:443',
         provider: 'Osmosis'
-      }
-    ]
+      }]
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
   },
   keywords: ['dex', 'testnet'],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
-    }
-  ]
+    }]
 };
 export default info;

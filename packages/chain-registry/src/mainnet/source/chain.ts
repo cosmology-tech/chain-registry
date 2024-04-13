@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'usource',
         fixed_min_gas_price: 0.05,
         low_gas_price: 0.05,
         average_gas_price: 0.075,
         high_gas_price: 0.1
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'usource'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.45',
@@ -236,8 +232,7 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Source-Mainnet/',
       tx_page: 'https://explorer.stavr.tech/Source-Mainnet/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Source-Mainnet/accounts/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Source-Mainnet/accounts/${accountAddress}'
     },
     {
       kind: 'Nodeist',
@@ -249,22 +244,19 @@ const info: Chain = {
       kind: 'MoonBridge',
       url: 'https://explorer.moonbridge.team/source',
       tx_page: 'https://explorer.moonbridge.team/source/tx/${txHash}',
-      account_page:
-        'https://explorer.moonbridge.team/source/accounts/${accountAddress}'
+      account_page: 'https://explorer.moonbridge.team/source/accounts/${accountAddress}'
     },
     {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.top/source',
       tx_page: 'https://explorer.nodestake.top/source/tx/${txHash}',
-      account_page:
-        'https://explorer.nodestake.top/source/accounts/${accountAddress}'
+      account_page: 'https://explorer.nodestake.top/source/accounts/${accountAddress}'
     },
     {
       kind: 'Sr20de',
       url: 'https://explorer.sr20de.xyz/Source-mainnet',
       tx_page: 'https://explorer.sr20de.xyz/Source-mainnet/tx/${txHash}',
-      account_page:
-        'https://explorer.sr20de.xyz/Source-mainnet/accounts/${accountAddress}'
+      account_page: 'https://explorer.sr20de.xyz/Source-mainnet/accounts/${accountAddress}'
     },
     {
       kind: 'TC Network',
@@ -279,44 +271,37 @@ const info: Chain = {
     {
       kind: 'RoomIT',
       url: 'https://explorer.tendermint.roomit.xyz/source-mainnet/',
-      tx_page:
-        'https://explorer.tendermint.roomit.xyz/source-mainnet/tx/${txHash}'
+      tx_page: 'https://explorer.tendermint.roomit.xyz/source-mainnet/tx/${txHash}'
     },
     {
       kind: 'posthuman',
       url: 'https://explorer.posthuman.digital/source',
       tx_page: 'https://explorer.posthuman.digital/source/tx/${txHash}',
-      account_page:
-        'https://explorer.posthuman.digital/source/account/${accountAddress}'
+      account_page: 'https://explorer.posthuman.digital/source/account/${accountAddress}'
     },
     {
       kind: 'Decloud Nodes Lab',
       url: 'https://explorer.declab.pro/Source',
       tx_page: 'https://explorer.declab.pro/Source/tx/${txHash}',
-      account_page:
-        'https://explorer.declab.pro/Source/account/${accountAddress}'
+      account_page: 'https://explorer.declab.pro/Source/account/${accountAddress}'
     },
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/source',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/source/tx/${txHash}',
-      account_page:
-        'https://explorer.whenmoonwhenlambo.money/source/account/${accountAddress}'
+      account_page: 'https://explorer.whenmoonwhenlambo.money/source/account/${accountAddress}'
     },
     {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/source/',
       tx_page: 'https://explorer.nodeshub.online/source/tx/${txHash}',
-      account_page:
-        'https://explorer.nodeshub.online/source/accounts/${accountAddress}'
+      account_page: 'https://explorer.nodeshub.online/source/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.svg'
-    }
-  ],
+    }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.svg'

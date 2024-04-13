@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'tenet',
-  assets: [
-    {
+  assets: [{
       description: 'The native EVM, governance and staking token of the Tenet',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'atenet',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'tenet',
           exponent: 18
-        }
-      ],
+        }],
       base: 'atenet',
       name: 'Tenet',
       display: 'tenet',
@@ -24,13 +20,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.svg'
       },
       coingecko_id: 'tenet-1b000f7b-59cb-4e06-89ce-d62b32d362b9',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

@@ -14,22 +14,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'upasg',
         fixed_min_gas_price: 0,
         low_gas_price: 0.001,
         average_gas_price: 0.0025,
         high_gas_price: 0.01
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'upasg'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.45.16',
@@ -262,10 +258,8 @@ const info: Chain = {
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png'
   },
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png'
-    }
-  ]
+    }]
 };
 export default info;

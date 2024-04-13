@@ -2,8 +2,7 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'titantestnet',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of the Titan network.',
       denom_units: [
         {
@@ -31,16 +30,13 @@ const info: AssetList = {
       display: 'tkx',
       name: 'titan tkx',
       symbol: 'TKX',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
-        }
-      ],
+        }],
       keywords: ['staking'],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
       }
-    }
-  ]
+    }]
 };
 export default info;

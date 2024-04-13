@@ -2,21 +2,17 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'commercionetwork',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Commercio.network',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ucommercio',
           exponent: 0,
           aliases: []
-        },
-        {
+        }, {
           denom: 'commercio',
           exponent: 6,
           aliases: []
-        }
-      ],
+        }],
       base: 'ucommercio',
       display: 'commercio',
       name: 'Commercio',
@@ -25,27 +21,21 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.svg'
-        }
-      ]
-    },
-    {
+        }]
+    }, {
       description: 'The cash credit token of Commercio.network',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'uccc',
           exponent: 0,
           aliases: []
-        },
-        {
+        }, {
           denom: 'ccc',
           exponent: 6,
           aliases: []
-        }
-      ],
+        }],
       base: 'uccc',
       display: 'ccc',
       name: 'Commercio Cash Credit',
@@ -54,13 +44,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/ccc.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/ccc.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/ccc.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/ccc.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

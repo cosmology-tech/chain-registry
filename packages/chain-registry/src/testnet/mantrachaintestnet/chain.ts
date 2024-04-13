@@ -12,22 +12,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uom',
         fixed_min_gas_price: 0,
         low_gas_price: 0.001,
         average_gas_price: 0.002,
         high_gas_price: 0.003
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uom'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.47.3',
@@ -35,35 +31,27 @@ const info: Chain = {
     cosmwasm_version: '0.41'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.hongbai.mantrachain.io',
         provider: 'MANTRACHAIN'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://api.hongbai.mantrachain.io',
         provider: 'MANTRACHAIN'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'https://grpc.hongbai.mantrachain.io',
         provider: 'MANTRACHAIN'
-      }
-    ]
+      }]
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.svg'
   },
   keywords: ['dex', 'testnet'],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.svg'
-    }
-  ]
+    }]
 };
 export default info;

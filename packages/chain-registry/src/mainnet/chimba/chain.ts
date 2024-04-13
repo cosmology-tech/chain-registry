@@ -11,55 +11,45 @@ const info: Chain = {
   daemon_name: 'chimbad',
   node_home: '$HOME/.chimbad',
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ucmba',
         fixed_min_gas_price: 0.25,
         low_gas_price: 1,
         average_gas_price: 5,
         high_gas_price: 10
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'chimba'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.mainnet.chimba.ooo',
         provider: 'chimba'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://mainnet.chimba.ooo',
         provider: 'chimba'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'bigdipper',
       url: 'https://explorer.chimba.ooo/',
       tx_page: 'https://explorer.chimba.ooo/transactions/${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.svg'
-    }
-  ],
+    }],
   slip44: 118
 };
 export default info;

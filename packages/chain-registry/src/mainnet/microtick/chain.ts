@@ -10,39 +10,33 @@ const info: Chain = {
   daemon_name: 'mtm',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'utick',
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'utick'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg'
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'ping.pub',
       url: 'https://ping.pub/microtick',
       tx_page: 'https://ping.pub/microtick/tx/${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg'
-    }
-  ]
+    }]
 };
 export default info;

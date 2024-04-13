@@ -12,14 +12,14 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uocta',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.svg'
@@ -28,18 +28,14 @@ const info: Chain = {
     rpc: [],
     rest: []
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Octa explorer',
       url: 'http://explorer.octa-coin.com/',
       tx_page: 'http://explorer.octa-coin.com/txs/${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.svg'
-    }
-  ]
+    }]
 };
 export default info;

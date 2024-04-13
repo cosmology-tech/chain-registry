@@ -13,24 +13,22 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uxprt',
         fixed_min_gas_price: 0,
         low_gas_price: 0.05,
         average_gas_price: 0.125,
         high_gas_price: 0.2
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uxprt'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
     rpc: [
       {
@@ -84,30 +82,23 @@ const info: Chain = {
         provider: 'Antrix Validators'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'persistence-testnet-grpc.polkachu.com:15490',
         provider: 'Polkachu'
-      },
-      {
+      }, {
         address: 'https://xprt-tgrpc.antrixy.org/',
         provider: 'Antrix Validators'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'ping.pub',
       url: 'https://testnet.ping.pub/test-core-1/',
       tx_page: 'https://testnet.ping.pub/test-core-1/tx/${txHash}'
-    },
-    {
+    }, {
       kind: 'mintscan',
       url: 'https://testnet.mintscan.io/persistence-testnet',
       tx_page: 'https://testnet.mintscan.io/persistence-testnet/txs/${txHash}',
-      account_page:
-        'https://testnet.mintscan.io/persistence-testnet/account/${accountAddress}'
-    }
-  ]
+      account_page: 'https://testnet.mintscan.io/persistence-testnet/account/${accountAddress}'
+    }]
 };
 export default info;

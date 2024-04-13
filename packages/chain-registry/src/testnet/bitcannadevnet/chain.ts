@@ -12,14 +12,14 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ubcna',
         fixed_min_gas_price: 0.001
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
     rpc: [
       {
@@ -109,8 +109,7 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Bitcanna-DEV',
       tx_page: 'https://explorer.stavr.tech/Bitcanna-DEV/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Bitcanna-DEV/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Bitcanna-DEV/account/${accountAddress}'
     },
     {
       url: 'https://explorer.kjnodes.com/bitcanna-testnet',

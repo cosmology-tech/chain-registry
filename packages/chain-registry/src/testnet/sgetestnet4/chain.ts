@@ -13,14 +13,14 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'usge',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
     rpc: [
       {
@@ -55,23 +55,18 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Sge BlockExplorer',
       url: 'https://blockexplorer.testnet.sgenetwork.io/',
-      tx_page:
-        'https://blockexplorer.testnet.sgenetwork.io/sge-network/tx/${txHash}'
-    }
-  ],
-  images: [
-    {
+      tx_page: 'https://blockexplorer.testnet.sgenetwork.io/sge-network/tx/${txHash}'
+    }],
+  images: [{
       image_sync: {
         chain_name: 'sge'
       },
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'
-    }
-  ],
+    }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'

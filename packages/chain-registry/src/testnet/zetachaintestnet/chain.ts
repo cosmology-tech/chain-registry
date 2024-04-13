@@ -13,59 +13,46 @@ const info: Chain = {
   extra_codecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'azeta',
         low_gas_price: 20000000000,
         average_gas_price: 25000000000,
         high_gas_price: 40000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'azeta'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.46'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://zetachain-athens.blockpi.network/rpc/v1/public',
         provider: 'BlockPI'
-      },
-      {
+      }, {
         address: 'https://zetachain-testnet-archive.allthatnode.com:26657',
         provider: 'All That Node'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://zetachain-athens.blockpi.network/lcd/v1/public',
         provider: 'BlockPI'
-      },
-      {
+      }, {
         address: 'https://zetachain-testnet-archive.allthatnode.com:1317',
         provider: 'All That Node'
-      }
-    ],
+      }],
     grpc: []
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'ZetaScan',
       url: 'https://athens.explorer.zetachain.com/',
       tx_page: 'https://athens.explorer.zetachain.com/cc/tx/${txHash}'
-    },
-    {
+    }, {
       kind: 'BlockScout',
       url: 'https://zetachain-athens-3.blockscout.com/',
       tx_page: 'https://zetachain-athens-3.blockscout.com/tx/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

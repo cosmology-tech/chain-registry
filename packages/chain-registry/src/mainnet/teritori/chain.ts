@@ -12,21 +12,17 @@ const info: Chain = {
   bech32_prefix: 'tori',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'utori',
         low_gas_price: 0,
         average_gas_price: 0.25,
         high_gas_price: 0.5
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'utori'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.47.6',
@@ -225,8 +221,7 @@ const info: Chain = {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/teritori',
       tx_page: 'https://www.mintscan.io/teritori/transactions/${txHash}',
-      account_page:
-        'https://www.mintscan.io/teritori/accounts/${accountAddress}'
+      account_page: 'https://www.mintscan.io/teritori/accounts/${accountAddress}'
     },
     {
       kind: 'TC Network',
@@ -240,11 +235,9 @@ const info: Chain = {
       account_page: 'https://atomscan.com/teritori/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/chain.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/chain.svg'
-    }
-  ]
+    }]
 };
 export default info;

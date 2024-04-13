@@ -153,13 +153,13 @@ const info: Chain = {
     ]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uluna'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.svg'
@@ -242,22 +242,18 @@ const info: Chain = {
       kind: 'finder',
       url: 'https://finder.terra.money/classic',
       tx_page: 'https://finder.terra.money/classic/tx/${txHash}',
-      account_page:
-        'https://finder.terra.money/classic/address/${accountAddress}'
+      account_page: 'https://finder.terra.money/classic/address/${accountAddress}'
     },
     {
       kind: 'finder',
       url: 'https://finder.terrarebels.net/classic',
       tx_page: 'https://finder.terrarebels.net/classic/tx/${txHash}',
-      account_page:
-        'https://finder.terrarebels.net/classic/address/${accountAddress}'
+      account_page: 'https://finder.terrarebels.net/classic/address/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.svg'
-    }
-  ]
+    }]
 };
 export default info;

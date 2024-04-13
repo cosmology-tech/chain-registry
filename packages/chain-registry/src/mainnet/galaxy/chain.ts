@@ -12,23 +12,21 @@ const info: Chain = {
   node_home: '$HOME/.galaxy',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uglx',
         low_gas_price: 0.025,
         average_gas_price: 0.025,
         high_gas_price: 0.035
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uglx'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.svg'
@@ -38,18 +36,14 @@ const info: Chain = {
     rest: [],
     grpc: []
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'ping.pub',
       url: 'https://explorer.postcapitalist.io/Galaxy',
       tx_page: 'https://explorer.postcapitalist.io/Galaxy/tx/${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.svg'
-    }
-  ]
+    }]
 };
 export default info;

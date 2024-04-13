@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['ethsecp256k1'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'aCC',
         fixed_min_gas_price: 0,
         low_gas_price: 7,
         average_gas_price: 10,
         high_gas_price: 15
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'aCC'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1814400s'
     }
@@ -38,14 +34,12 @@ const info: Chain = {
     cosmwasm_enabled: true,
     cosmwasm_version: '0.30'
   },
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cascadiatestnet/images/cascadia.png',
       theme: {
         primary_color_hex: '#004A96'
       }
-    }
-  ],
+    }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cascadiatestnet/images/cascadia.png'
   },
@@ -105,22 +99,22 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'validator_explorer',
       url: 'https://validator.cascadia.foundation/',
       tx_page: 'https://validator.cascadia.foundation/transactions/${txHash}',
-      account_page:
-        'https://validator.cascadia.foundation/accounts/${accountAddress}'
-    },
-    {
+      account_page: 'https://validator.cascadia.foundation/accounts/${accountAddress}'
+    }, {
       kind: 'block_explorer',
       url: 'https://explorer.cascadia.foundation/',
       tx_page: 'https://explorer.cascadia.foundation/tx/${txHash}',
-      account_page:
-        'https://explorer.cascadia.foundation/address/${accountAddress}'
-    }
-  ],
-  keywords: ['cascadia', 'cosmos', 'evm', 'cybernetic']
+      account_page: 'https://explorer.cascadia.foundation/address/${accountAddress}'
+    }],
+  keywords: [
+    'cascadia',
+    'cosmos',
+    'evm',
+    'cybernetic'
+  ]
 };
 export default info;

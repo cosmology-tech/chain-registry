@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uhuahua',
         fixed_min_gas_price: 0,
         low_gas_price: 500,
         average_gas_price: 1250,
         high_gas_price: 2000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uhuahua'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.47.5',
@@ -206,8 +202,7 @@ const info: Chain = {
       kind: 'mintscan',
       url: 'https://mintscan.io/chihuahua',
       tx_page: 'https://mintscan.io/chihuahua/transactions/${txHash}',
-      account_page:
-        'https://www.mintscan.io/chihuahua/accounts/${accountAddress}'
+      account_page: 'https://www.mintscan.io/chihuahua/accounts/${accountAddress}'
     },
     {
       kind: 'atomscan',
@@ -225,15 +220,12 @@ const info: Chain = {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/chihuahua/',
       tx_page: 'https://explorer.nodeshub.online/chihuahua/tx/${txHash}',
-      account_page:
-        'https://explorer.nodeshub.online/chihuahua/accounts/${accountAddress}'
+      account_page: 'https://explorer.nodeshub.online/chihuahua/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
-    }
-  ]
+    }]
 };
 export default info;

@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'beezee',
-  assets: [
-    {
+  assets: [{
       description: 'BeeZee native blockchain',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ubze',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'bze',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ubze',
       name: 'BeeZee',
       display: 'bze',
@@ -24,13 +20,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg'
       },
       coingecko_id: 'bzedge',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

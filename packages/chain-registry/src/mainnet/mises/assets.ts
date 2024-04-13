@@ -2,8 +2,7 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'mises',
-  assets: [
-    {
+  assets: [{
       description: 'The native staking and gov token of the Mises Network.',
       denom_units: [
         {
@@ -30,12 +29,9 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mises/images/mises.png'
       },
       coingecko_id: '',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mises/images/mises.png'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

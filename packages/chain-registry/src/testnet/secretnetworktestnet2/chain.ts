@@ -12,25 +12,22 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 529,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uscrt',
         fixed_min_gas_price: 0.1
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.testnet.secretsaturn.net',
         provider: '𝕊ecret 𝕊aturn'
-      },
-      {
+      }, {
         address: 'https://rpc.pulsar.scrttestnet.com',
         provider: 'SCRT Testnet Committee'
-      }
-    ],
+      }],
     rest: [
       {
         address: 'http://testnet.securesecrets.org:1317',
@@ -45,29 +42,22 @@ const info: Chain = {
         provider: 'SCRT Testnet Committee'
       }
     ],
-    'grpc-web': [
-      {
+    "grpc-web": [{
         address: 'https://grpc.testnet.secretsaturn.net',
         provider: '𝕊ecret 𝕊aturn'
-      },
-      {
+      }, {
         address: 'https://grpc.pulsar.scrttestnet.com',
         provider: 'SCRT Testnet Committee'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'secret nodes',
       url: 'https://secretnodes.com/secret/chains/pulsar-2',
-      tx_page:
-        'https://secretnodes.com/secret/chains/pulsar-2/transactions/${txHash}'
-    },
-    {
+      tx_page: 'https://secretnodes.com/secret/chains/pulsar-2/transactions/${txHash}'
+    }, {
       kind: 'ping.pub',
       url: 'https://testnet.ping.pub/secret',
       tx_page: 'https://testnet.ping.pub/secret/tx/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

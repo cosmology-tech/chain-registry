@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uguu',
         fixed_min_gas_price: 0.0025,
         low_gas_price: 0.0025,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uguu'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1209600s'
     }
@@ -135,12 +131,15 @@ const info: Chain = {
       tx_page: 'https://exp.nodeist.net/Ununifi/tx/${txHash}'
     }
   ],
-  keywords: ['staking', 'wasm', 'assets', 'nft'],
-  images: [
-    {
+  keywords: [
+    'staking',
+    'wasm',
+    'assets',
+    'nft'
+  ],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ununifi/images/ununifi.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ununifi/images/ununifi.svg'
-    }
-  ]
+    }]
 };
 export default info;

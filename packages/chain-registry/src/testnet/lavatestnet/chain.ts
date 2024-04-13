@@ -14,22 +14,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ulava',
         fixed_min_gas_price: 0.000001,
         low_gas_price: 0.000001,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ulava'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1209600s'
     }
@@ -39,18 +35,15 @@ const info: Chain = {
     cosmwasm_enabled: false,
     cosmwasm_version: '0.30'
   },
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lavatestnet/images/lava-icon.png',
       theme: {
         primary_color_hex: '#D7001F'
       }
-    },
-    {
+    }, {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lavatestnet/images/lava-icon.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lavatestnet/images/lava-icon.svg'
-    }
-  ],
+    }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lavatestnet/images/lava-icon.png'
   },
@@ -103,24 +96,26 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Lava-Testnet',
       tx_page: 'https://explorer.stavr.tech/Lava-Testnet/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Lava-Testnet/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Lava-Testnet/account/${accountAddress}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.org/lava-testnet',
       tx_page: 'https://explorer.nodestake.org/lava-testnet/tx/${txHash}',
-      account_page:
-        'https://explorer.nodestake.org/lava-testnet/account/${accountAddress}'
+      account_page: 'https://explorer.nodestake.org/lava-testnet/account/${accountAddress}'
     },
     {
       kind: '🚀ITRocket🚀',
       url: 'https://testnet.itrocket.net/lava',
       tx_page: 'https://testnet.itrocket.net/lava/tx/${txHash}',
-      account_page:
-        'https://testnet.itrocket.net/lava/account/${accountAddress}'
+      account_page: 'https://testnet.itrocket.net/lava/account/${accountAddress}'
     }
   ],
-  keywords: ['rpc', 'api', 'modular', 'data']
+  keywords: [
+    'rpc',
+    'api',
+    'modular',
+    'data'
+  ]
 };
 export default info;

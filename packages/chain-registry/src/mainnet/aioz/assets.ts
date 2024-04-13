@@ -2,10 +2,8 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'aioz',
-  assets: [
-    {
-      description:
-        'The native staking and governance token of the AIOZ Network.',
+  assets: [{
+      description: 'The native staking and governance token of the AIOZ Network.',
       denom_units: [
         {
           denom: 'attoaioz',
@@ -29,13 +27,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.svg'
       },
       coingecko_id: 'aioz-network',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

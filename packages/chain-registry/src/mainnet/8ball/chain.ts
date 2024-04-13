@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uebl',
         fixed_min_gas_price: 0,
         low_gas_price: 0,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uebl'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.46.7',
@@ -39,16 +35,13 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.8ball.info/',
         provider: '8ball'
-      },
-      {
+      }, {
         address: 'https://rpc.8ball.nodestake.top',
         provider: 'NodeStake'
-      }
-    ],
+      }],
     rest: [
       {
         address: 'https://rest.8ball.info',
@@ -63,16 +56,13 @@ const info: Chain = {
         provider: 'Nodine.ID'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'grpc.8ball.nodestake.top:443',
         provider: 'NodeStake'
-      },
-      {
+      }, {
         address: 'https://grpc.8ball.nodexcapital.com:443',
         provider: 'NodeX Validator'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -105,11 +95,9 @@ const info: Chain = {
       tx_page: 'https://explorer.nodexcapital.com/8ball/tx/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg'
-    }
-  ]
+    }]
 };
 export default info;

@@ -4,18 +4,14 @@ const info: AssetList = {
   chain_name: 'binancesmartchaintestnet',
   assets: [
     {
-      description:
-        'BNB powers the BNB Chain ecosystem and is the native coin of the BNB Beacon Chain and BNB Smart Chain.',
-      denom_units: [
-        {
+      description: 'BNB powers the BNB Chain ecosystem and is the native coin of the BNB Beacon Chain and BNB Smart Chain.',
+      denom_units: [{
           denom: 'wei',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'bnb',
           exponent: 18
-        }
-      ],
+        }],
       base: 'wei',
       name: 'Binance Coin',
       display: 'bnb',
@@ -25,34 +21,27 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/bnb.svg'
       },
       coingecko_id: 'binancecoin',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/bnb.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/bnb.svg'
-        }
-      ]
+        }]
     },
     {
-      description:
-        'Wrapped BNB. As the native coin of Binance Chain, BNB has multiple use cases: fueling transactions on the Chain, paying for transaction fees on Binance Exchange, making in-store payments, and many more.',
-      denom_units: [
-        {
+      description: 'Wrapped BNB. As the native coin of Binance Chain, BNB has multiple use cases: fueling transactions on the Chain, paying for transaction fees on Binance Exchange, making in-store payments, and many more.',
+      denom_units: [{
           denom: '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'wbnb',
           exponent: 18
-        }
-      ],
+        }],
       type_asset: 'erc20',
       address: '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd',
       base: '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd',
       name: 'Wrapped BNB',
       display: 'wbnb',
       symbol: 'WBNB',
-      traces: [
-        {
+      traces: [{
           type: 'wrapped',
           counterparty: {
             chain_name: 'binancesmartchaintestnet',
@@ -62,58 +51,47 @@ const info: AssetList = {
             contract: '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd'
           },
           provider: 'Binance'
-        }
-      ],
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.svg'
       },
       coingecko_id: 'wbnb',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.svg'
-        }
-      ]
+        }]
     },
     {
-      description:
-        'USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.',
+      description: 'USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.',
       type_asset: 'erc20',
       address: '0xc2fA98faB811B785b81c64Ac875b31CC9E40F9D2',
-      denom_units: [
-        {
+      denom_units: [{
           denom: '0xc2fA98faB811B785b81c64Ac875b31CC9E40F9D2',
           exponent: 0,
           aliases: ['uusdc']
-        },
-        {
+        }, {
           denom: 'axlusdc',
           exponent: 6
-        }
-      ],
+        }],
       base: '0xc2fA98faB811B785b81c64Ac875b31CC9E40F9D2',
       name: 'Axelar Wrapped USDC',
       display: 'axlusdc',
       symbol: 'axlUSDC',
-      traces: [
-        {
+      traces: [{
           type: 'bridge',
           counterparty: {
             chain_name: 'axelartestnet',
             base_denom: 'uusdc'
           },
           provider: 'Axelar'
-        }
-      ],
+        }],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
-      images: [
-        {
+      images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
-        }
-      ]
+        }]
     }
   ]
 };

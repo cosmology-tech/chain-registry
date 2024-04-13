@@ -12,39 +12,34 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ulumen',
         fixed_min_gas_price: 0.0025,
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.03
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ulumen'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc-lumenx.cryptonet.pl/',
         provider: 'CryptoNet'
-      },
-      {
+      }, {
         address: 'https://lumenx-rpc.kynraze.com/',
         provider: 'Kynraze'
-      }
-    ],
+      }],
     rest: [
       {
         address: 'https://api-lumenx.cryptonet.pl/',
@@ -107,11 +102,9 @@ const info: Chain = {
       account_page: 'https://atomscan.com/lumenx/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.svg'
-    }
-  ]
+    }]
 };
 export default info;

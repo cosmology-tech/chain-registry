@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'nanolike',
         fixed_min_gas_price: 1000,
         low_gas_price: 1000,
         average_gas_price: 10000,
         high_gas_price: 1000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'nanolike'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1814400s'
     }
@@ -102,8 +98,7 @@ const info: Chain = {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/likecoin',
       tx_page: 'https://www.mintscan.io/likecoin/transactions/${txHash}',
-      account_page:
-        'https://www.mintscan.io/likecoin/accounts/${accountAddress}'
+      account_page: 'https://www.mintscan.io/likecoin/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
@@ -136,12 +131,17 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.svg'
   },
-  keywords: ['depub', 'publishing', 'like', 'book', 'writing', 'nft'],
-  images: [
-    {
+  keywords: [
+    'depub',
+    'publishing',
+    'like',
+    'book',
+    'writing',
+    'nft'
+  ],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.svg'
-    }
-  ]
+    }]
 };
 export default info;

@@ -12,74 +12,58 @@ const info: Chain = {
   daemon_name: 'cvnd',
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'acvnt',
         fixed_min_gas_price: 100000000,
         low_gas_price: 100000000,
         average_gas_price: 200000000,
         high_gas_price: 300000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'acvnt'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.cvn.io/',
         provider: 'cvn.io'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://api.cvn.io',
         provider: 'cvn.io'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'https://rest.consciousdao.com',
         provider: 'consciousdao.com'
-      },
-      {
+      }, {
         address: 'https://grpc.cvn.io',
         provider: 'cvn.io'
-      }
-    ],
-    'evm-http-jsonrpc': [
-      {
+      }],
+    "evm-http-jsonrpc": [{
         address: 'https://node.cvn.io/',
         provider: 'cvn'
-      },
-      {
+      }, {
         address: 'https://node.consciousdao.io/',
         provider: 'consciousdao'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'blockscout',
       url: 'https://explore.consciousdao.com/',
       tx_page: 'https://explore.consciousdao.com/tx/${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg'
-    }
-  ]
+    }]
 };
 export default info;

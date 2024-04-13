@@ -11,24 +11,22 @@ const info: Chain = {
   daemon_name: 'cerberusd',
   node_home: '$HOME/.cerberus',
   slip44: 118,
-  codebase: {},
+  codebase: {
+
+  },
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ucrbrus',
         fixed_min_gas_price: 0,
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ucrbrus'
-      }
-    ]
+      }]
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png',
@@ -37,16 +35,13 @@ const info: Chain = {
   apis: {
     rpc: [],
     rest: [],
-    grpc: [
-      {
+    grpc: [{
         address: 'grpc-cerberus-ia.cosmosia.notional.ventures:443',
         provider: 'Notional'
-      },
-      {
+      }, {
         address: 'cerberus-grpc.polkachu.com:13890',
         provider: 'Polkachu'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -70,11 +65,9 @@ const info: Chain = {
       tx_page: 'https://explorer.tcnetwork.io/cerberus/transaction/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.svg'
-    }
-  ]
+    }]
 };
 export default info;

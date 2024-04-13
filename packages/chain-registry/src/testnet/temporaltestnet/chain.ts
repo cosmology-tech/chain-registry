@@ -12,48 +12,38 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'utprl',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'utprl'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.yieldmos.com/temporal-test-2',
         provider: 'Yieldmos'
-      },
-      {
+      }, {
         address: 'https://testnet-temporal-rpc.lavenderfive.com:443',
         provider: 'Lavender.Five'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://lcd.yieldmos.com/temporal-test-2',
         provider: 'Yieldmos'
-      },
-      {
+      }, {
         address: 'https://testnet-temporal-api.lavenderfive.com:443',
         provider: 'Lavender.Five'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: '142.132.157.153:24190',
         provider: 'Yieldmos'
-      }
-    ]
+      }]
   },
   explorers: [
     {

@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'dydx',
-  assets: [
-    {
+  assets: [{
       description: 'The native staking token of dYdX Protocol.',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'adydx',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'dydx',
           exponent: 18
-        }
-      ],
+        }],
       base: 'adydx',
       name: 'dYdX',
       display: 'dydx',
@@ -24,43 +20,34 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
       },
       coingecko_id: 'dydx',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
-        },
-        {
+        }, {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx-circle.svg',
           theme: {
             circle: true
           }
-        }
-      ],
+        }],
       socials: {
         website: 'https://dydx.trade/',
         twitter: 'https://twitter.com/dYdX'
       }
-    },
-    {
+    }, {
       description: 'Noble USDC on dYdX Protocol.',
-      denom_units: [
-        {
-          denom:
-            'ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5',
+      denom_units: [{
+          denom: 'ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'usdc',
           exponent: 6
-        }
-      ],
+        }],
       type_asset: 'ics20',
       base: 'ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5',
       name: 'Noble USDC',
       display: 'usdc',
       symbol: 'USDC',
-      traces: [
-        {
+      traces: [{
           type: 'ibc',
           counterparty: {
             chain_name: 'noble',
@@ -71,23 +58,19 @@ const info: AssetList = {
             channel_id: 'channel-0',
             path: 'transfer/channel-0/uusdc'
           }
-        }
-      ],
-      images: [
-        {
+        }],
+      images: [{
           image_sync: {
             chain_name: 'noble',
             base_denom: 'uusdc'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
-        }
-      ],
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
       }
-    }
-  ]
+    }]
 };
 export default info;

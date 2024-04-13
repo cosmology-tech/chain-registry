@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'bitcoin',
-  assets: [
-    {
+  assets: [{
       description: 'Bitcoin',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'sat',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'btc',
           exponent: 8
-        }
-      ],
+        }],
       type_asset: 'bitcoin-like',
       base: 'sat',
       name: 'Bitcoin',
@@ -24,12 +20,9 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.png'
       },
       coingecko_id: 'bitcoin',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.png'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

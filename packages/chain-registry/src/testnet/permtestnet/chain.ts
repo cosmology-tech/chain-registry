@@ -12,21 +12,17 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uperm',
         low_gas_price: 0.0025,
         average_gas_price: 0.0025,
         high_gas_price: 0.0024
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uperm'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.45',
@@ -34,31 +30,23 @@ const info: Chain = {
     cosmwasm_version: '0.30'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.3.finance/',
         provider: 'Perm Network'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://rest.3.finance/',
         provider: 'Perm Network'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'https://grpc.3.finance/',
         provider: 'Perm Network'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'bigdipper',
       url: 'https://explorer.testnet.perm.ooo/',
       tx_page: 'https://explorer.testnet.perm.ooo/transactions/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

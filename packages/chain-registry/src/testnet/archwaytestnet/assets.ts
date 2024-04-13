@@ -2,8 +2,7 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'archwaytestnet',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Archway testnetwork',
       denom_units: [
         {
@@ -23,7 +22,6 @@ const info: AssetList = {
       name: 'Archway',
       display: 'const',
       symbol: 'CONST'
-    }
-  ]
+    }]
 };
 export default info;

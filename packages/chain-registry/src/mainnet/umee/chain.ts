@@ -12,22 +12,18 @@ const info: Chain = {
   node_home: '$HOME/.umee',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uumee',
         fixed_min_gas_price: 0.1,
         low_gas_price: 0.1,
         average_gas_price: 0.12,
         high_gas_price: 0.2
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uumee'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.47',
@@ -287,15 +283,13 @@ const info: Chain = {
       kind: 'Stake-Take',
       url: 'https://explorer.stake-take.com/umee',
       tx_page: 'https://explorer.stake-take.com/umee/transactions/${txHash}',
-      account_page:
-        'https://explorer.stake-take.com/umee/account/${accountAddress}'
+      account_page: 'https://explorer.stake-take.com/umee/account/${accountAddress}'
     },
     {
       kind: 'Stake Village',
       url: 'https://exp.stakevillage.net/umee',
       tx_page: 'https://exp.stakevillage.net/umee/tx/${txHash}',
-      account_page:
-        'https://exp.stakevillage.net/umee/account/${accountAddress}'
+      account_page: 'https://exp.stakevillage.net/umee/account/${accountAddress}'
     },
     {
       kind: 'ezstaking',
@@ -304,11 +298,9 @@ const info: Chain = {
       account_page: 'https://ezstaking.app/umee/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.svg'
-    }
-  ]
+    }]
 };
 export default info;

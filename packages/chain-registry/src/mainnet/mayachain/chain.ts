@@ -11,27 +11,23 @@ const info: Chain = {
   daemon_name: 'mayanode',
   node_home: '$HOME/.mayanode',
   slip44: 931,
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://tendermint.mayachain.info',
         provider: 'tendermint'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://mayanode.mayachain.info',
         provider: 'mayanode'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Maya Protocol explorer',
       url: 'https://www.explorer.mayachain.info',
       tx_page: 'https://www.explorer.mayachain.info/#/txs/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

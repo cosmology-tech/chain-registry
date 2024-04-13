@@ -13,70 +13,53 @@ const info: Chain = {
   slip44: 118,
   key_algos: ['secp256k1'],
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'umedas',
         low_gas_price: 0.1,
         average_gas_price: 0.25,
         high_gas_price: 0.4
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'umedas'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.medas-digital.io:26657/',
         provider: 'Neptun Validator'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://lcd.medas-digital.io:1317/',
         provider: 'Neptun Validator'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'grpc.medas-digital.io:9090',
         provider: 'Neptun Validator'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'BigDipper',
       url: 'https://explorer.medas-digital.io:3100/medasdigital',
-      tx_page:
-        'https://explorer.medas-digital.io:3100/medasdigital/transactions/${txHash}',
-      account_page:
-        'explorer.medas-digital.io:3100/medasdigital/accounts/${accountAddress}'
-    },
-    {
+      tx_page: 'https://explorer.medas-digital.io:3100/medasdigital/transactions/${txHash}',
+      account_page: 'explorer.medas-digital.io:3100/medasdigital/accounts/${accountAddress}'
+    }, {
       kind: 'atomscan',
       url: 'https://atomscan.com/frontier/medasdigital',
-      tx_page:
-        'https://atomscan.com/frontier/medasdigital/transactions/${txHash}',
-      account_page:
-        'https://atomscan.com/frontier/medasdigital/accounts/${accountAddress}'
-    }
-  ],
-  images: [
-    {
+      tx_page: 'https://atomscan.com/frontier/medasdigital/transactions/${txHash}',
+      account_page: 'https://atomscan.com/frontier/medasdigital/accounts/${accountAddress}'
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.svg'
-    }
-  ]
+    }]
 };
 export default info;

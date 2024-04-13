@@ -11,21 +11,17 @@ const info: Chain = {
   node_home: '$HOME/.cyber',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'boot',
         low_gas_price: 0,
         average_gas_price: 0,
         high_gas_price: 0.01
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'boot'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmwasm_enabled: true
@@ -63,16 +59,13 @@ const info: Chain = {
         provider: 'Bro_n_Bro'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'grpc-cyber-ia.cosmosia.notional.ventures:443',
         provider: 'Notional'
-      },
-      {
+      }, {
         address: 'https://grpc.cyber.bronbro.io:443',
         provider: 'Bro_n_Bro'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -92,11 +85,9 @@ const info: Chain = {
       account_page: 'https://atomscan.com/bostrom/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.svg'
-    }
-  ]
+    }]
 };
 export default info;

@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ujkl',
         fixed_min_gas_price: 0,
         low_gas_price: 0.002,
         average_gas_price: 0.002,
         high_gas_price: 0.02
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ujkl'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmwasm_enabled: true
@@ -38,12 +34,10 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg'
   },
   apis: {
-    wss: [
-      {
+    wss: [{
         address: 'wss://jackal-rpc.agoranodes.com',
         provider: 'AgoraNodes'
-      }
-    ],
+      }],
     rpc: [
       {
         address: 'https://rpc.jackalprotocol.com',
@@ -276,11 +270,9 @@ const info: Chain = {
       tx_page: 'https://bigdipper.live/jackal/transactions/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg'
-    }
-  ]
+    }]
 };
 export default info;

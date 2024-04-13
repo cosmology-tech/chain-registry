@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'auptick',
         fixed_min_gas_price: 10000000000,
         low_gas_price: 10000000000,
         average_gas_price: 25000000000,
         high_gas_price: 40000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'auptick'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.46',
@@ -194,7 +190,7 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       }
     ],
-    'evm-http-jsonrpc': [
+    "evm-http-jsonrpc": [
       {
         address: 'https://jsonrpc.uptick.nodestake.top',
         provider: 'NodeStake'
@@ -255,11 +251,9 @@ const info: Chain = {
       tx_page: 'https://explorer.sr20de.xyz/uptick/tx/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.svg'
-    }
-  ]
+    }]
 };
 export default info;

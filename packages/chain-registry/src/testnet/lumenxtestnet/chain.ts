@@ -12,53 +12,43 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ulumen',
         fixed_min_gas_price: 0.0025,
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.03
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ulumen'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://testnet-rpc.lumenx.chaintools.tech/',
         provider: 'ChainTools'
-      },
-      {
+      }, {
         address: 'https://testrpc-lumenx.cryptonet.pl/',
         provider: 'CryptoNet'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://testnet-api.lumenx.chaintools.tech/',
         provider: 'ChainTools'
-      },
-      {
+      }, {
         address: 'https://testapi-lumenx.cryptonet.pl/',
         provider: 'CryptoNet'
-      }
-    ],
+      }],
     grpc: []
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'ping.pub',
       url: 'https://testnet.explorer.chaintools.tech/lumenx',
       tx_page: 'https://testnet.explorer.chaintools.tech/lumenx/tx/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

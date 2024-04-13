@@ -38,44 +38,36 @@ const info: Chain = {
     ]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ucgas'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/coss.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/coss.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://coss-rpc.coss.ink',
         provider: 'StellarGuardian'
-      },
-      {
+      }, {
         address: 'https://coss-rpc.cias.network',
         provider: 'CelestialPhoenix'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://coss-rest.coss.ink',
         provider: 'StellarGuardian'
-      },
-      {
+      }, {
         address: 'https://coss-rest.cias.network',
         provider: 'CelestialPhoenix'
-      }
-    ]
+      }]
   },
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/coss.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/coss.svg'
-    }
-  ]
+    }]
 };
 export default info;

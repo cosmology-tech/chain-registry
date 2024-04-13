@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'onomy',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Onomy Protocol',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'anom',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'nom',
           exponent: 18
-        }
-      ],
+        }],
       base: 'anom',
       name: 'Nom',
       display: 'nom',
@@ -23,15 +19,17 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.svg'
       },
-      keywords: ['dex', 'stablecoin', 'bridge', 'staking'],
+      keywords: [
+        'dex',
+        'stablecoin',
+        'bridge',
+        'staking'
+      ],
       coingecko_id: 'onomy-protocol',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

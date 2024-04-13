@@ -12,8 +12,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-765',
       connection_id: 'connection-554'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-3',
           port_id: 'transfer'
@@ -29,8 +28,7 @@ const info: IBCInfo[] = [
           preferred: true,
           dex: 'demex'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -44,8 +42,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-73',
       connection_id: 'connection-29'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-6',
           port_id: 'transfer'
@@ -61,8 +58,7 @@ const info: IBCInfo[] = [
           preferred: true,
           dex: 'demex'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -76,8 +72,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-151',
       connection_id: 'connection-114'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-28',
           port_id: 'transfer'
@@ -93,8 +88,7 @@ const info: IBCInfo[] = [
           preferred: true,
           dex: 'demex'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -108,8 +102,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-60',
       connection_id: 'connection-40'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-9',
           port_id: 'transfer'
@@ -125,8 +118,7 @@ const info: IBCInfo[] = [
           preferred: true,
           dex: 'demex'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -140,8 +132,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-1808',
       connection_id: 'connection-1412'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-0',
           port_id: 'transfer'
@@ -157,8 +148,7 @@ const info: IBCInfo[] = [
           preferred: true,
           dex: 'osmosis'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -172,8 +162,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-224',
       connection_id: 'connection-158'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-15',
           port_id: 'transfer'
@@ -189,8 +178,7 @@ const info: IBCInfo[] = [
           preferred: true,
           dex: 'demex'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -204,8 +192,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-40',
       connection_id: 'connection-27'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-8',
           port_id: 'transfer'
@@ -221,8 +208,7 @@ const info: IBCInfo[] = [
           preferred: true,
           dex: 'demex'
         }
-      }
-    ]
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -236,8 +222,7 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-66',
       connection_id: 'connection-54'
     },
-    channels: [
-      {
+    channels: [{
         chain_1: {
           channel_id: 'channel-12',
           port_id: 'transfer'
@@ -253,16 +238,14 @@ const info: IBCInfo[] = [
           preferred: true,
           dex: 'demex'
         }
-      },
-      {
+      }, {
         chain_1: {
           channel_id: 'channel-16',
           port_id: 'transfer'
         },
         chain_2: {
           channel_id: 'channel-41',
-          port_id:
-            'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au'
+          port_id: 'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au'
         },
         ordering: 'unordered',
         version: 'ics20-1',
@@ -270,8 +253,7 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }
-    ]
+      }]
   }
 ];
 export default info;

@@ -12,20 +12,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uarkeo'
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uarkeo'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
     rpc: [
       {
@@ -71,18 +69,14 @@ const info: Chain = {
         provider: 'arkeo'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'https://arkeonetwork-testnet.nodejumper.io:9090/',
         provider: 'NODEJUMPER'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       url: 'https://explorer.nodexcapital.com/arkeo',
       tx_page: 'https://explorer.nodexcapital.com/arkeo/tx/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

@@ -14,22 +14,18 @@ const info: Chain = {
   extra_codecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'atenet',
         fixed_min_gas_price: 250000000,
         low_gas_price: 20000000000,
         average_gas_price: 25000000000,
         high_gas_price: 40000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'atenet'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.46'
@@ -67,26 +63,20 @@ const info: Chain = {
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'tenet-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      },
-      {
+      }, {
         address: 'kichain-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
-      }
-    ],
-    'evm-http-jsonrpc': [
-      {
+      }],
+    "evm-http-jsonrpc": [{
         address: 'https://rpc.tenet.org',
         provider: 'tenet'
-      },
-      {
+      }, {
         address: 'https://tenet-evm.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -103,22 +93,18 @@ const info: Chain = {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/tenet',
       tx_page: 'https://explorer.tcnetwork.io/tenet/transaction/${txHash}',
-      account_page:
-        'https://explorer.tcnetwork.io/tenet/account/${accountAddress}'
+      account_page: 'https://explorer.tcnetwork.io/tenet/account/${accountAddress}'
     },
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/tenet',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/tenet/tx/${txHash}',
-      account_page:
-        'https://explorer.whenmoonwhenlambo.money/tenet/account/${accountAddress}'
+      account_page: 'https://explorer.whenmoonwhenlambo.money/tenet/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.svg'
-    }
-  ]
+    }]
 };
 export default info;

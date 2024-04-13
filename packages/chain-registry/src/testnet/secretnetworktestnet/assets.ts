@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'secretnetworktestnet',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Secret Network',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'uscrt',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'scrt',
           exponent: 6
-        }
-      ],
+        }],
       base: 'uscrt',
       name: 'Secret Network',
       display: 'scrt',
@@ -24,13 +20,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
       },
       coingecko_id: 'secret',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

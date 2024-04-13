@@ -12,23 +12,21 @@ const info: Chain = {
   bech32_prefix: 'furya',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ufury',
         low_gas_price: 0,
         average_gas_price: 0.25,
         high_gas_price: 0.5
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ufury'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/chain.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/chain.svg'
@@ -66,37 +64,28 @@ const info: Chain = {
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'grpc.furya.xyz:443',
         provider: 'Furya Genesis Validator'
-      },
-      {
+      }, {
         address: 'https://furya.grpc.nodeshub.online',
         provider: 'Nodes Hub'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Furya Explorer',
       url: 'https://explorer.furya.xyz/',
       tx_page: 'https://explorer.furya.xyz/furya/tx/${txHash}',
       account_page: 'https://explorer.furya.xyz/furya/account/${accountAddress}'
-    },
-    {
+    }, {
       kind: 'Nodeshub Explorer',
       url: 'https://explorer.nodeshub.online/furya',
       tx_page: 'https://explorer.nodeshub.online/furya/txs/${txHash}',
-      account_page:
-        'https://explorer.nodeshub.online/furya/account/${accountAddress}'
-    }
-  ],
-  images: [
-    {
+      account_page: 'https://explorer.nodeshub.online/furya/account/${accountAddress}'
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/chain.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/chain.svg'
-    }
-  ]
+    }]
 };
 export default info;

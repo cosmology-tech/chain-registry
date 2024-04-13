@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'neutrontestnet',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Neutron chain',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'untrn',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'ntrn',
           exponent: 6
-        }
-      ],
+        }],
       base: 'untrn',
       name: 'Neutron Testnet',
       display: 'ntrn',
@@ -23,13 +19,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

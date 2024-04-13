@@ -12,24 +12,22 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ucre',
         fixed_min_gas_price: 0,
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.03
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ucre'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg'
@@ -147,8 +145,7 @@ const info: Chain = {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/crescent',
       tx_page: 'https://www.mintscan.io/crescent/transactions/${txHash}',
-      account_page:
-        'https://www.mintscan.io/crescent/accounts/${accountAddress}'
+      account_page: 'https://www.mintscan.io/crescent/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
@@ -178,11 +175,9 @@ const info: Chain = {
       account_page: 'https://stakeflow.io/crescent/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg'
-    }
-  ]
+    }]
 };
 export default info;

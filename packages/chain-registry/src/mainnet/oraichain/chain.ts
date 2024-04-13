@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'orai',
         fixed_min_gas_price: 0,
         low_gas_price: 0.003,
         average_gas_price: 0.005,
         high_gas_price: 0.007
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'orai'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmwasm_enabled: true,
@@ -70,7 +66,7 @@ const info: Chain = {
       },
       {
         address: 'https://rpc.orai.mortysnode.nl',
-        provider: "Morty's Nodes"
+        provider: 'Morty\'s Nodes'
       }
     ],
     rest: [
@@ -143,17 +139,13 @@ const info: Chain = {
     {
       kind: 'KonsorTech Explorer',
       url: 'https://explorer.konsortech.xyz/oraichain',
-      tx_page:
-        'https://explorer.konsortech.xyz/oraichain/transactions/${txHash}',
-      account_page:
-        'https://explorer.konsortech.xyz/oraichain/accounts/${accountAddress}'
+      tx_page: 'https://explorer.konsortech.xyz/oraichain/transactions/${txHash}',
+      account_page: 'https://explorer.konsortech.xyz/oraichain/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.svg'
-    }
-  ]
+    }]
 };
 export default info;

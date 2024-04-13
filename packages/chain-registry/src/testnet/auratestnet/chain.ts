@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ueaura',
         fixed_min_gas_price: 0.001,
         low_gas_price: 0.001,
         average_gas_price: 0.002,
         high_gas_price: 0.0025
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ueaura'
-      }
-    ],
+      }],
     lock_duration: {
       time: '172800s'
     }
@@ -43,38 +39,28 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.euphoria.aura.network/',
         provider: 'Aura Network Foundation'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://lcd.euphoria.aura.network/',
         provider: 'Aura Network Foundation'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'http://grpc.euphoria.aura.network:9090',
         provider: 'Aura Network Foundation'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'aurascan',
       url: 'https://euphoria.aurascan.io',
       tx_page: 'https://euphoria.aurascan.io/transaction/${txHash}',
       account_page: 'https://euphoria.aurascan.io/account/${accountAddress}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.svg'
-    }
-  ]
+    }]
 };
 export default info;

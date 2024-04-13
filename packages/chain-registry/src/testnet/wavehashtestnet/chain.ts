@@ -12,21 +12,17 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uwahax',
         low_gas_price: 0.0025,
         average_gas_price: 0.0025,
         high_gas_price: 0.0024
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uwahax'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.45',
@@ -34,32 +30,23 @@ const info: Chain = {
     cosmwasm_version: '0.30'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.wavehash.online/',
         provider: 'WaveHash Network'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://lcd.wavehash.online/',
         provider: 'WaveHash Network'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'https://grpc.wavehash.online/',
         provider: 'WaveHash Network'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'atomscan',
       url: 'https://atomscan.com/directory/testnet/wavehashtestnet',
-      tx_page:
-        'https://atomscan.com/directory/testnet/wavehashtestnet/transactions/${txHash}'
-    }
-  ]
+      tx_page: 'https://atomscan.com/directory/testnet/wavehashtestnet/transactions/${txHash}'
+    }]
 };
 export default info;

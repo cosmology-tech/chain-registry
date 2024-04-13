@@ -12,26 +12,21 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'usge',
         fixed_min_gas_price: 0.001,
         low_gas_price: 0.1,
         average_gas_price: 0.25,
         high_gas_price: 0.5
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'usge'
-      }
-    ]
+      }]
   },
   codebase: {
-    cosmos_sdk_version:
-      'sge-network/cosmos-sdk v0.46.17-0.20240223100624-2a2661276cb4'
+    cosmos_sdk_version: 'sge-network/cosmos-sdk v0.46.17-0.20240223100624-2a2661276cb4'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
@@ -217,51 +212,42 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Sge-Mainnet',
       tx_page: 'https://explorer.stavr.tech/Sge-Mainnet/transaction/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Sge-Mainnet/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Sge-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/sge',
       tx_page: 'https://explorer.tcnetwork.io/sge/transaction/${txHash}',
-      account_page:
-        'https://explorer.tcnetwork.io/sge/account/${accountAddress}'
+      account_page: 'https://explorer.tcnetwork.io/sge/account/${accountAddress}'
     },
     {
       kind: 'Safe Block',
       url: 'https://explorer.safeblock.space/sge',
       tx_page: 'https://explorer.safeblock.space/sge/tx/${txHash}',
-      account_page:
-        'https://explorer.safeblock.space/sge/account/${accountAddress}'
+      account_page: 'https://explorer.safeblock.space/sge/account/${accountAddress}'
     },
     {
       kind: 'KonsorTech',
       url: 'https://explorer.konsortech.xyz/sge',
       tx_page: 'https://explorer.konsortech.xyz/sge/tx/${txHash}',
-      account_page:
-        'https://explorer.konsortech.xyz/sge/account/${accountAddress}'
+      account_page: 'https://explorer.konsortech.xyz/sge/account/${accountAddress}'
     },
     {
       kind: 'RoomIT',
       url: 'https://explorer.tendermint.roomit.xyz/sge-mainnet',
-      tx_page:
-        'https://explorer.tendermint.roomit.xyz/sge-mainnet/tx/${txHash}',
-      account_page:
-        'https://explorer.tendermint.roomit.xyz/sge-mainnet/account/${accountAddress}'
+      tx_page: 'https://explorer.tendermint.roomit.xyz/sge-mainnet/tx/${txHash}',
+      account_page: 'https://explorer.tendermint.roomit.xyz/sge-mainnet/account/${accountAddress}'
     },
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/sge',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/sge/tx/${txHash}',
-      account_page:
-        'https://explorer.whenmoonwhenlambo.money/sge/account/${accountAddress}'
+      account_page: 'https://explorer.whenmoonwhenlambo.money/sge/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'
-    }
-  ]
+    }]
 };
 export default info;

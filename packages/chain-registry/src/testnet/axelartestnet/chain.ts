@@ -13,23 +13,21 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uaxl',
         low_gas_price: 0.007,
         average_gas_price: 0.007,
         high_gas_price: 0.01
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uaxl'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
     rpc: [
       {
@@ -60,19 +58,15 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'axelarscan',
       url: 'https://testnet.axelarscan.io',
       tx_page: 'https://testnet.axelarscan.io/tx/${txHash}'
-    },
-    {
+    }, {
       kind: 'mintscan',
       url: 'https://testnet.mintscan.io/axelar-testnet',
       tx_page: 'https://testnet.mintscan.io/axelar-testnet/txs/${txHash}',
-      account_page:
-        'https://testnet.mintscan.io/axelar-testnet/account/${accountAddress}'
-    }
-  ]
+      account_page: 'https://testnet.mintscan.io/axelar-testnet/account/${accountAddress}'
+    }]
 };
 export default info;

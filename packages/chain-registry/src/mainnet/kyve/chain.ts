@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ukyve',
         fixed_min_gas_price: 0.02,
         low_gas_price: 0.02,
         average_gas_price: 0.03,
         high_gas_price: 0.06
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ukyve'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.47.6-kyve-rc0'
@@ -37,8 +33,7 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve.svg'
   },
-  description:
-    'Revolutionizing data reliability in the Web3 space, KYVE Network provides fast and easy tooling for data validation, immutability, and retrieval, ensuring trustless data for seamless scalability and eliminating data risks and roadblocks.',
+  description: 'Revolutionizing data reliability in the Web3 space, KYVE Network provides fast and easy tooling for data validation, immutability, and retrieval, ensuring trustless data for seamless scalability and eliminating data risks and roadblocks.',
   apis: {
     rpc: [
       {
@@ -192,8 +187,7 @@ const info: Chain = {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/kyve',
       tx_page: 'https://explorer.nodestake.top/kyve/txs/${txHash}',
-      account_page:
-        'https://explorer.nodestake.top/kyve/account/${accountAddress}'
+      account_page: 'https://explorer.nodestake.top/kyve/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
@@ -205,8 +199,7 @@ const info: Chain = {
       kind: 'Stake-Take',
       url: 'https://explorer.stake-take.com/kyve',
       tx_page: 'https://explorer.stake-take.com/kyve/txs/${txHash}',
-      account_page:
-        'https://explorer.stake-take.com/kyve/account/${accountAddress}'
+      account_page: 'https://explorer.stake-take.com/kyve/account/${accountAddress}'
     },
     {
       kind: 'Decloud Nodes Lab',
@@ -218,15 +211,12 @@ const info: Chain = {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/kyve',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/kyve/txs/${txHash}',
-      account_page:
-        'https://explorer.whenmoonwhenlambo.money/kyve/account/${accountAddress}'
+      account_page: 'https://explorer.whenmoonwhenlambo.money/kyve/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve.svg'
-    }
-  ]
+    }]
 };
 export default info;

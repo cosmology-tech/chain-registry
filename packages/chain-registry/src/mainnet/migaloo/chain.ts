@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uwhale',
         fixed_min_gas_price: 1,
         low_gas_price: 1,
         average_gas_price: 2,
         high_gas_price: 3
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uwhale'
-      }
-    ]
+      }]
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.png',
@@ -155,8 +151,7 @@ const info: Chain = {
       kind: 'Silk Nodes',
       url: 'https://explorer.silknodes.io/migaloo',
       tx_page: 'https://explorer.silknodes.io/migaloo/tx/${txHash}',
-      account_page:
-        'https://explorer.silknodes.io/migaloo/account/${accountAddress}'
+      account_page: 'https://explorer.silknodes.io/migaloo/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
@@ -165,11 +160,9 @@ const info: Chain = {
       account_page: 'https://atomscan.com/migaloo/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.svg'
-    }
-  ]
+    }]
 };
 export default info;

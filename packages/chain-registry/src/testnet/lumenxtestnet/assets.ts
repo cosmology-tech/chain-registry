@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'lumenxtestnet',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Lumen Network',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ulumen',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'lumen',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ulumen',
       name: 'LUMEN',
       display: 'lumen',
@@ -23,13 +19,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lumenxtestnet/images/lumen.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lumenxtestnet/images/lumen.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lumenxtestnet/images/lumen.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lumenxtestnet/images/lumen.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

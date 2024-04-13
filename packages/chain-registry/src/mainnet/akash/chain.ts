@@ -12,22 +12,18 @@ const info: Chain = {
   node_home: '$HOME/.akash',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uakt',
         fixed_min_gas_price: 0,
         low_gas_price: 0.00025,
         average_gas_price: 0.0025,
         high_gas_price: 0.025
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uakt'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.45.16'
@@ -36,8 +32,7 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
   },
-  description:
-    'Akash is open-source Supercloud that lets users buy and sell computing resources securely and efficiently. Purpose-built for public utility.',
+  description: 'Akash is open-source Supercloud that lets users buy and sell computing resources securely and efficiently. Purpose-built for public utility.',
   apis: {
     rpc: [
       {
@@ -263,11 +258,9 @@ const info: Chain = {
       tx_page: 'https://explorer.declab.pro/Akash/tx/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
-    }
-  ]
+    }]
 };
 export default info;

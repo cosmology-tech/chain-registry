@@ -13,59 +13,48 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'arkh',
         fixed_min_gas_price: 0.01,
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.03
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'arkh'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://asc-dataseed.arkhadian.com/',
         provider: 'arkhnetwork'
-      },
-      {
+      }, {
         address: 'https://arkh_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://asc-blockchain-api.arkhadian.com/',
         provider: 'arkhnetwork'
-      },
-      {
+      }, {
         address: 'https://arkh_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'grpc.arkh.nodestake.top:443',
         provider: 'NodeStake'
-      },
-      {
+      }, {
         address: 'https://grpc.arkh.nodexcapital.com:443',
         provider: 'NodeX Validator'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -86,17 +75,13 @@ const info: Chain = {
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/arkhadian',
-      tx_page:
-        'https://explorer.whenmoonwhenlambo.money/arkhadian/tx/${txHash}',
-      account_page:
-        'https://explorer.whenmoonwhenlambo.money/arkhadian/account/${accountAddress}'
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/arkhadian/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/arkhadian/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.svg'
-    }
-  ]
+    }]
 };
 export default info;

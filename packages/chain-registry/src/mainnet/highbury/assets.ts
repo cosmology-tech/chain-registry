@@ -4,18 +4,14 @@ const info: AssetList = {
   chain_name: 'highbury',
   assets: [
     {
-      description:
-        'The native staking and governance token of the Blackfury ecosystem',
-      denom_units: [
-        {
+      description: 'The native staking and governance token of the Blackfury ecosystem',
+      denom_units: [{
           denom: 'ufury',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'fury',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ufury',
       name: 'Fury',
       display: 'fury',
@@ -25,25 +21,20 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.svg'
       },
       coingecko_id: 'fanfury',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'Governance token of Jinx Wallet and Fury Lend Protocol',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'jinx',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'JINX',
           exponent: 6
-        }
-      ],
+        }],
       base: 'jinx',
       name: 'Jinx',
       display: 'JINX',
@@ -52,25 +43,20 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/jinx.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/jinx.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/jinx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/jinx.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'Governance token of Fury Swap Protocol',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'jinxy',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'JINXY',
           exponent: 6
-        }
-      ],
+        }],
       base: 'jinxy',
       name: 'Jinxy',
       display: 'JINXY',
@@ -79,12 +65,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/jinxy.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/jinxy.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/jinxy.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/jinxy.svg'
-        }
-      ]
+        }]
     }
   ]
 };

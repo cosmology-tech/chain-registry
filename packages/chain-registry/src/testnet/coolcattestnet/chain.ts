@@ -10,40 +10,34 @@ const info: Chain = {
   bech32_prefix: 'ccat',
   key_algos: ['secp256k1'],
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uccat',
         fixed_min_gas_price: 0,
         low_gas_price: 0,
         average_gas_price: 1,
         high_gas_price: 2
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uccat'
-      }
-    ]
+      }]
   },
   daemon_name: 'coolcat',
   node_home: '$HOME/.coolcat',
   slip44: 118,
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.coolcat.space',
         provider: 'Digital Kitchen'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://lcd.coolcat.space',
         provider: 'Digital Kitchen'
-      }
-    ],
+      }],
     grpc: []
   },
   explorers: []

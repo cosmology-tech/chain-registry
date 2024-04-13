@@ -13,24 +13,22 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'loki',
         fixed_min_gas_price: 0.0125,
         low_gas_price: 0.025,
         average_gas_price: 0.05,
         high_gas_price: 0.06
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'loki'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg'
@@ -64,37 +62,29 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'odin-grpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
+      }, {
         address: 'odin-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'odin web',
       url: 'https://mainnet.odinprotocol.io/',
       tx_page: 'https://mainnet.odinprotocol.io/transactions/${txHash}'
-    },
-    {
+    }, {
       kind: 'ping.pub',
       url: 'https://ping.pub/odin',
       tx_page: 'https://ping.pub/odin/tx/${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       image_sync: {
         chain_name: 'odin'
       },
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg'
-    }
-  ]
+    }]
 };
 export default info;

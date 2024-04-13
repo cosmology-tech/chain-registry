@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'unois',
         fixed_min_gas_price: 0,
         low_gas_price: 0.05,
         average_gas_price: 0.05,
         high_gas_price: 0.1
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'unois'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1814400s'
     }
@@ -38,14 +34,12 @@ const info: Chain = {
     cosmwasm_enabled: true,
     cosmwasm_version: '0.30'
   },
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
       theme: {
         primary_color_hex: '#0C0914'
       }
-    }
-  ],
+    }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png'
   },
@@ -101,22 +95,22 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Nois-Testnet',
       tx_page: 'https://explorer.stavr.tech/Nois-Testnet/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Nois-Testnet/account/${accountAddress}'
-    },
-    {
+      account_page: 'https://explorer.stavr.tech/Nois-Testnet/account/${accountAddress}'
+    }, {
       kind: 'explorers.guru',
       url: 'https://testnet.nois.explorers.guru',
       tx_page: 'https://testnet.nois.explorers.guru/transaction/${txHash}',
-      account_page:
-        'https://testnet.nois.explorers.guru/account/${accountAddress}'
-    }
-  ],
-  keywords: ['nois', 'randomness', 'drand', 'wasm']
+      account_page: 'https://testnet.nois.explorers.guru/account/${accountAddress}'
+    }],
+  keywords: [
+    'nois',
+    'randomness',
+    'drand',
+    'wasm'
+  ]
 };
 export default info;

@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'fxcore',
-  assets: [
-    {
+  assets: [{
       description: 'The native staking token of the Function X',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'FX',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'WFX',
           exponent: 18
-        }
-      ],
+        }],
       base: 'FX',
       name: 'Function X',
       display: 'WFX',
@@ -24,27 +20,21 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.svg'
       },
       coingecko_id: 'fx-coin',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.svg'
-        }
-      ]
-    },
-    {
+        }]
+    }, {
       description: 'The cross chain token of the Function X',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'eth0x0FD10b9899882a6f2fcb5c371E17e70FdEe00C38',
           exponent: 0,
           aliases: []
-        },
-        {
+        }, {
           denom: 'PUNDIX',
           exponent: 18,
           aliases: []
-        }
-      ],
+        }],
       base: 'eth0x0FD10b9899882a6f2fcb5c371E17e70FdEe00C38',
       display: 'PUNDIX',
       name: 'Pundi X Token',
@@ -54,13 +44,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

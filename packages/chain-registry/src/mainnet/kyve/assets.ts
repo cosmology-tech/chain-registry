@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'kyve',
-  assets: [
-    {
+  assets: [{
       description: 'The native utility token of the KYVE network.',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ukyve',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'kyve',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ukyve',
       name: 'KYVE',
       display: 'kyve',
@@ -24,17 +20,14 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.svg'
       },
       coingecko_id: 'kyve-network',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.svg'
-        }
-      ],
+        }],
       socials: {
         website: 'https://www.kyve.network/',
         twitter: 'https://twitter.com/KYVENetwork'
       }
-    }
-  ]
+    }]
 };
 export default info;

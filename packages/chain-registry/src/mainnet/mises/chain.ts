@@ -13,54 +13,44 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'umis',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'umis'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mises/images/mises.png'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.gw.mises.site:443',
         provider: 'Mises-1'
-      },
-      {
+      }, {
         address: 'https://e2.mises.site:443',
         provider: 'Mises-3'
-      }
-    ],
+      }],
     rest: [],
     grpc: []
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Mises-GW Explorer',
       url: 'https://gw.mises.site',
       tx_page: 'https://gw.mises.site/tx/${txHash}'
-    },
-    {
+    }, {
       kind: 'Jambulmerah ping.pub based',
       url: 'https://explorer.jambulmerah.dev/mises',
       tx_page: 'https://explorer.jambulmerah.dev/mises/tx/${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mises/images/mises.png'
-    }
-  ]
+    }]
 };
 export default info;

@@ -2,20 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'shido',
-  assets: [
-    {
-      description:
-        'The native EVM and Wasm, governance and staking token of the Shido Chain',
-      denom_units: [
-        {
+  assets: [{
+      description: 'The native EVM and Wasm, governance and staking token of the Shido Chain',
+      denom_units: [{
           denom: 'shido',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'SHIDO',
           exponent: 18
-        }
-      ],
+        }],
       base: 'shido',
       name: 'Shido',
       display: 'SHIDO',
@@ -25,17 +20,14 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg'
       },
       coingecko_id: 'shido-2',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg'
-        }
-      ],
+        }],
       socials: {
         website: 'https://shido.io/',
         twitter: 'https://twitter.com/ShidoGlobal'
       }
-    }
-  ]
+    }]
 };
 export default info;

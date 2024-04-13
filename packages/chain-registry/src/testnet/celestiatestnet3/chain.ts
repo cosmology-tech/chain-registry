@@ -12,17 +12,17 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'utia',
         fixed_min_gas_price: 0,
         low_gas_price: 0.01,
         average_gas_price: 0.02,
         high_gas_price: 0.1
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
     rpc: [
       {
@@ -75,19 +75,15 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Mintscan',
       url: 'https://testnet.mintscan.io/celestia-testnet',
       tx_page: 'https://testnet.mintscan.io/celestia-testnet/txs/${txHash}'
-    },
-    {
+    }, {
       kind: '🚀ITRocket🚀',
       url: 'https://testnet.itrocket.net/celestia',
       tx_page: 'https://testnet.itrocket.net/celestia/tx/${txHash}',
-      account_page:
-        'https://testnet.itrocket.net/celestia/account/${accountAddress}'
-    }
-  ]
+      account_page: 'https://testnet.itrocket.net/celestia/account/${accountAddress}'
+    }]
 };
 export default info;

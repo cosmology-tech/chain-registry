@@ -13,49 +13,39 @@ const info: Chain = {
   extra_codecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'aRYT'
-      }
-    ]
+      }]
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://ethos-rpc.provable.dev:443/',
         provider: 'laurel.provable'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://ethos.provable.dev/rest/',
         provider: 'laurel.provable'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'ethos-grpc.provable.dev:443',
         provider: 'laurel.provable'
-      }
-    ],
-    'evm-http-jsonrpc': [
-      {
+      }],
+    "evm-http-jsonrpc": [{
         address: 'https://ethos-evm.provable.dev/',
         provider: 'laurel.provable'
-      }
-    ]
+      }]
   },
   explorers: [],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.svg'
   },
-  codebase: {},
-  images: [
-    {
+  codebase: {
+
+  },
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.svg'
-    }
-  ]
+    }]
 };
 export default info;

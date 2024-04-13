@@ -12,65 +12,51 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uthiolx',
         fixed_min_gas_price: 0.5,
         low_gas_price: 0.75,
         average_gas_price: 1,
         high_gas_price: 1.25
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uterpx'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://testnet-rpc.terp.network:443/',
         provider: 'Terpnet Foundation'
-      },
-      {
+      }, {
         address: 'https://terp-testnet-rpc.itrocket.net:443/',
         provider: 'itrocket'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://testnet-api.terp.network:443/',
         provider: 'Terpnet Foundation'
-      },
-      {
+      }, {
         address: 'https://terp-testnet-api.itrocket.net:443/',
         provider: 'itrocket'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'terp-testnet-grpc.itrocket.net/',
         provider: 'itrocket'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Ping Pub',
       url: 'https://explorer.nodestake.top/terp-testnet',
       tx_page: 'https://explorer.nodestake.top/terp-testnet/tx/${txHash}'
-    },
-    {
+    }, {
       kind: 'NODEXPLORER',
       url: 'https://explorer.nodexcapital.com',
       tx_page: 'https://explorer.nodexcapital.com/terp/tx/${txHash}',
-      account_page:
-        'https://explorer.nodexcapital.com/terp/account/{$accountAddress}'
-    }
-  ]
+      account_page: 'https://explorer.nodexcapital.com/terp/account/{$accountAddress}'
+    }]
 };
 export default info;

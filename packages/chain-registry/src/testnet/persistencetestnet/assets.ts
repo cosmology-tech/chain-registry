@@ -2,20 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'persistencetestnet',
-  assets: [
-    {
-      description:
-        'The XPRT token is primarily a governance token for the Persistence chain.',
-      denom_units: [
-        {
+  assets: [{
+      description: 'The XPRT token is primarily a governance token for the Persistence chain.',
+      denom_units: [{
           denom: 'uxprt',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'xprt',
           exponent: 6
-        }
-      ],
+        }],
       base: 'uxprt',
       name: 'Persistence',
       display: 'xprt',
@@ -25,27 +20,21 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
       },
       coingecko_id: 'persistence',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
-        }
-      ]
-    },
-    {
+        }]
+    }, {
       description: 'PSTAKE Liquid-Staked ATOM',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'stk/uatom',
           exponent: 0,
           aliases: []
-        },
-        {
+        }, {
           denom: 'stkatom',
           exponent: 6,
           aliases: ['stk/atom']
-        }
-      ],
+        }],
       base: 'stk/uatom',
       name: 'PSTAKE staked ATOM',
       display: 'stkatom',
@@ -54,13 +43,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

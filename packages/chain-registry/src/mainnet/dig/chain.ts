@@ -14,51 +14,41 @@ const info: Chain = {
   extra_codecs: ['ethermint'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'udig',
         low_gas_price: 0.025,
         average_gas_price: 0.03,
         high_gas_price: 0.035
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'udig'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc-1-dig.notional.ventures'
-      },
-      {
+      }, {
         address: 'https://rpc-dig-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://api-1-dig.notional.ventures'
-      },
-      {
+      }, {
         address: 'https://api-dig-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'grpc-dig-ia.cosmosia.notional.ventures:443',
         provider: 'Notional'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -77,10 +67,8 @@ const info: Chain = {
       tx_page: 'https://explorer.tcnetwork.io/dig/transaction/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png'
-    }
-  ]
+    }]
 };
 export default info;

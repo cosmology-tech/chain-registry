@@ -12,24 +12,22 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uatom',
         fixed_min_gas_price: 0.005,
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.03
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uatom'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
     rpc: [
       {
@@ -102,18 +100,14 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'Mintscan',
       url: 'https://testnet.mintscan.io/cosmoshub-testnet',
       tx_page: 'https://testnet.mintscan.io/cosmoshub-testnet/txs/${txHash}'
-    },
-    {
+    }, {
       kind: 'Big Dipper',
       url: 'https://explorer.theta-testnet.polypore.xyz/',
-      tx_page:
-        'https://explorer.theta-testnet.polypore.xyz/transactions/${txHash}'
-    }
-  ]
+      tx_page: 'https://explorer.theta-testnet.polypore.xyz/transactions/${txHash}'
+    }]
 };
 export default info;

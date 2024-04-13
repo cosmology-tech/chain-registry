@@ -12,30 +12,27 @@ const info: Chain = {
   bech32_prefix: 'terra',
   slip44: 330,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uluna',
         fixed_min_gas_price: 0.015,
         low_gas_price: 0.015,
         average_gas_price: 0.015,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uluna'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
   },
-  description:
-    'Fueled by a passionate community and deep developer talent pool, the Terra blockchain is built to enable the next generation of Web3 products and services.',
+  description: 'Fueled by a passionate community and deep developer talent pool, the Terra blockchain is built to enable the next generation of Web3 products and services.',
   apis: {
     rpc: [
       {
@@ -167,8 +164,7 @@ const info: Chain = {
       kind: 'finder',
       url: 'http://finder.terra.money/',
       tx_page: 'https://finder.terra.money/mainnet/tx/${txHash}',
-      account_page:
-        'https://finder.terra.money/mainnet/address/${accountAddress}'
+      account_page: 'https://finder.terra.money/mainnet/address/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
@@ -182,11 +178,9 @@ const info: Chain = {
       account_page: 'https://www.mintscan.io/terra/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
-    }
-  ]
+    }]
 };
 export default info;

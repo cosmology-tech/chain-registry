@@ -5,50 +5,41 @@ const info: AssetList = {
   assets: [
     {
       description: 'The native token of Quasar',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'uqsr',
           exponent: 0,
           aliases: []
-        },
-        {
+        }, {
           denom: 'qsr',
           exponent: 6,
           aliases: []
-        }
-      ],
+        }],
       base: 'uqsr',
       name: 'Quasar',
       display: 'qsr',
       symbol: 'QSR'
     },
     {
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'uayy',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'ayy',
           exponent: 6
-        }
-      ],
+        }],
       base: 'uayy',
       name: 'AYY',
       display: 'ayy',
       symbol: 'AYY'
     },
     {
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'uoro',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'oro',
           exponent: 6
-        }
-      ],
+        }],
       base: 'uoro',
       name: 'oro',
       display: 'oro',

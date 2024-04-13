@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'hypersigntestnet',
-  assets: [
-    {
+  assets: [{
       description: 'Native token for Hypersign Identity Network',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'uhid',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'hid',
           exponent: 6
-        }
-      ],
+        }],
       base: 'uhid',
       display: 'hid',
       name: 'Hypersign',
@@ -23,12 +19,9 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/hypersigntestnet/images/hypersign.png'
       },
       coingecko_id: 'hypersign-identity-token',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/hypersigntestnet/images/hypersign.png'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

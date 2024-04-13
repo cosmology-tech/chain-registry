@@ -2,10 +2,8 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'polkadot',
-  assets: [
-    {
-      description:
-        'The native fee, governance, staking, and bonding token of the Polkadot platform.',
+  assets: [{
+      description: 'The native fee, governance, staking, and bonding token of the Polkadot platform.',
       denom_units: [
         {
           denom: 'Planck',
@@ -15,7 +13,11 @@ const info: AssetList = {
         {
           denom: 'uDOT',
           exponent: 4,
-          aliases: ['udot', 'microdot', 'Microdot']
+          aliases: [
+            'udot',
+            'microdot',
+            'Microdot'
+          ]
         },
         {
           denom: 'mDOT',
@@ -25,7 +27,11 @@ const info: AssetList = {
         {
           denom: 'DOT',
           exponent: 10,
-          aliases: ['dot', 'New DOT', 'new dot']
+          aliases: [
+            'dot',
+            'New DOT',
+            'new dot'
+          ]
         },
         {
           denom: 'DOT (old)',
@@ -46,12 +52,9 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg'
       },
       coingecko_id: 'polkadot',
-      images: [
-        {
+      images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

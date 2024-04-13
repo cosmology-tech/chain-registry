@@ -2,10 +2,8 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'sommelier',
-  assets: [
-    {
-      description:
-        'Somm Token (SOMM) is the native staking token of the Sommelier Chain',
+  assets: [{
+      description: 'Somm Token (SOMM) is the native staking token of the Sommelier Chain',
       denom_units: [
         {
           denom: 'usomm',
@@ -31,17 +29,14 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg'
       },
       coingecko_id: 'sommelier',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg'
-        }
-      ],
+        }],
       socials: {
         website: 'https://www.sommelier.finance/',
         twitter: 'https://twitter.com/sommfinance'
       }
-    }
-  ]
+    }]
 };
 export default info;

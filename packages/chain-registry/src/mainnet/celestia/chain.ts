@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'utia',
         fixed_min_gas_price: 0.002,
         low_gas_price: 0.01,
         average_gas_price: 0.02,
         high_gas_price: 0.1
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'utia'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.46.16'
@@ -37,8 +33,7 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
   },
-  description:
-    'Celestia is a modular data availability network that securely scales with the number of users, making it easy for anyone to launch their own blockchain.',
+  description: 'Celestia is a modular data availability network that securely scales with the number of users, making it easy for anyone to launch their own blockchain.',
   apis: {
     rpc: [
       {
@@ -326,8 +321,7 @@ const info: Chain = {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.top/celestia/',
       tx_page: 'https://explorer.nodestake.top/celestia/txs/${txHash}',
-      account_page:
-        'https://explorer.nodestake.top/celestia/account/${accountAddress}'
+      account_page: 'https://explorer.nodestake.top/celestia/account/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
@@ -338,24 +332,19 @@ const info: Chain = {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/celestia',
       tx_page: 'https://explorer.tcnetwork.io/celestia/transaction/${txHash}',
-      account_page:
-        'https://explorer.tcnetwork.io/celestia/account/${accountAddress}'
+      account_page: 'https://explorer.tcnetwork.io/celestia/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Celestia-Mainnet',
-      tx_page:
-        'https://explorer.stavr.tech/Celestia-Mainnet/transaction/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Celestia-Mainnet/account/${accountAddress}'
+      tx_page: 'https://explorer.stavr.tech/Celestia-Mainnet/transaction/${txHash}',
+      account_page: 'https://explorer.stavr.tech/Celestia-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'AM Solutions',
       url: 'https://explorer.theamsolutions.info/celestia-main',
-      tx_page:
-        'https://explorer.theamsolutions.info/celestia-main/transaction/${txHash}',
-      account_page:
-        'https://explorer.theamsolutions.info/celestia-main/account/${accountAddress}'
+      tx_page: 'https://explorer.theamsolutions.info/celestia-main/transaction/${txHash}',
+      account_page: 'https://explorer.theamsolutions.info/celestia-main/account/${accountAddress}'
     },
     {
       kind: 'ezstaking',
@@ -364,11 +353,9 @@ const info: Chain = {
       account_page: 'https://ezstaking.app/celestia/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
-    }
-  ]
+    }]
 };
 export default info;

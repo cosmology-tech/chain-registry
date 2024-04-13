@@ -12,22 +12,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'umpwr',
         fixed_min_gas_price: 0,
         low_gas_price: 0.025,
         average_gas_price: 0.025,
         high_gas_price: 0.03
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'umpwr'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmwasm_enabled: true,
@@ -198,29 +194,25 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Empower-Mainnet',
       tx_page: 'https://explorer.stavr.tech/Empower-Mainnet/txs/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Empower-Mainnet/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Empower-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/empower',
       tx_page: 'https://explorer.nodestake.top/empower/tx/${txHash}',
-      account_page:
-        'https://explorer.nodestake.top/empower/account/{$accountAddress}'
+      account_page: 'https://explorer.nodestake.top/empower/account/{$accountAddress}'
     },
     {
       kind: 'Stake Village',
       url: 'https://exp.stakevillage.net/empower',
       tx_page: 'https://exp.stakevillage.net/empower/tx/${txHash}',
-      account_page:
-        'https://exp.stakevillage.net/empower/account/${accountAddress}'
+      account_page: 'https://exp.stakevillage.net/empower/account/${accountAddress}'
     },
     {
       kind: 'Decloud Nodes Lab',
       url: 'https://explorer.declab.pro/Empower',
       tx_page: 'https://explorer.declab.pro/Empower/tx/${txHash}',
-      account_page:
-        'https://explorer.declab.pro/Empower/account/{$accountAddress}'
+      account_page: 'https://explorer.declab.pro/Empower/account/{$accountAddress}'
     }
   ]
 };

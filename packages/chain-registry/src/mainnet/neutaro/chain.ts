@@ -13,64 +13,50 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uneutaro',
         fixed_min_gas_price: 0,
         low_gas_price: 0,
         average_gas_price: 0,
         high_gas_price: 0.035
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uneutaro'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.svg'
   },
-  description:
-    'The Blockchain that is Pioneering Ethical Standards, Values, and Transparency in cross chain Blockchain Technology to drive innovation',
+  description: 'The Blockchain that is Pioneering Ethical Standards, Values, and Transparency in cross chain Blockchain Technology to drive innovation',
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc2.neutaro.tech:443',
         provider: 'Neutaro'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://api2.neutaro.tech:443',
         provider: 'Neutaro'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'https://grpc2.neutaro.tech:443',
         provider: 'Neutaro'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'ping.pub',
       url: 'https://explorer.neutaro.tech/Neutaro',
       tx_page: 'https://explorer.neutaro.tech/Neutaro/tx/${txHash}',
-      account_page:
-        'https://explorer.neutaro.tech/Neutaro/account/${accountAddress}'
-    }
-  ],
-  images: [
-    {
+      account_page: 'https://explorer.neutaro.tech/Neutaro/account/${accountAddress}'
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.svg'
-    }
-  ]
+    }]
 };
 export default info;

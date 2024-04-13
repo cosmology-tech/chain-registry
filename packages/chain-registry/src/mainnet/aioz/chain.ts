@@ -14,71 +14,56 @@ const info: Chain = {
   extra_codecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'attoaioz',
         fixed_min_gas_price: 7000000000,
         low_gas_price: 7000000000,
         average_gas_price: 7000000000,
         high_gas_price: 10000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'attoaioz'
-      }
-    ],
+      }],
     lock_duration: {
       time: '2419200s'
     }
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.svg'
   },
-  description:
-    'AIOZ Network is a DePIN for Web3 AI, Storage and Streaming.\n\nAIOZ empowers a faster, secure and decentralized future.\n\nPowered by a global network of DePINs, AIOZ rewards you for sharing your computational resources for storing, transcoding, and streaming digital media content and powering decentralized AI computation.',
+  description: 'AIOZ Network is a DePIN for Web3 AI, Storage and Streaming.\n\nAIOZ empowers a faster, secure and decentralized future.\n\nPowered by a global network of DePINs, AIOZ rewards you for sharing your computational resources for storing, transcoding, and streaming digital media content and powering decentralized AI computation.',
   apis: {
-    'evm-http-jsonrpc': [
-      {
+    "evm-http-jsonrpc": [{
         address: 'https://eth-dataseed.aioz.network',
         provider: 'AIOZ Network'
-      }
-    ],
-    rpc: [
-      {
+      }],
+    rpc: [{
         address: 'https://rpc-dataseed.aioz.network:443',
         provider: 'AIOZ Network'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://lcd-dataseed.aioz.network',
         provider: 'AIOZ Network'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'grpc-dataseed.aioz.network:443',
         provider: 'AIOZ Network'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'aioz',
       url: 'https://explorer.aioz.network',
       tx_page: 'https://explorer.aioz.network/tx/${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.svg'
-    }
-  ]
+    }]
 };
 export default info;

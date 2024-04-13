@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ugovgen',
         fixed_min_gas_price: 0.001,
         low_gas_price: 0.006,
         average_gas_price: 0.006,
         high_gas_price: 0.009
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ugovgen'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: 'v0.45.16'
@@ -37,8 +33,7 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/govgen/images/govgen.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/govgen/images/govgen.svg'
   },
-  description:
-    'GovGen is a governance-only chain separate from the proposed AtomOne hub chain. GovGen aims to gauge the sentiment of those who voted “NO” or “NO_WITH_VETO” on Cosmos Hub proposal 848 regarding the potential future of AtomOne. Through the native, non-transferable GOVGEN governance-only token, this community can come together to discuss, debate, submit proposals, and help shape the future of AtomOne in a fully decentralized community-driven initiative.',
+  description: 'GovGen is a governance-only chain separate from the proposed AtomOne hub chain. GovGen aims to gauge the sentiment of those who voted “NO” or “NO_WITH_VETO” on Cosmos Hub proposal 848 regarding the potential future of AtomOne. Through the native, non-transferable GOVGEN governance-only token, this community can come together to discuss, debate, submit proposals, and help shape the future of AtomOne in a fully decentralized community-driven initiative.',
   apis: {
     rpc: [
       {
@@ -112,22 +107,19 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://explorer.govgen.io/',
       tx_page: 'https://explorer.govgen.io/govgen/tx/${txHash}',
-      account_page:
-        'https://explorer.govgen.io/govgen/account/${accountAddress}'
+      account_page: 'https://explorer.govgen.io/govgen/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://explorer.nodeshub.online/govgen',
       tx_page: 'https://explorer.nodeshub.online/govgen/tx/${txHash}',
-      account_page:
-        'https://explorer.nodeshub.online/govgen/account/${accountAddress}'
+      account_page: 'https://explorer.nodeshub.online/govgen/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://explorer.equinoxdao.xyz/govgen',
       tx_page: 'https://explorer.equinoxdao.xyz/govgen/tx/${txHash}',
-      account_page:
-        'https://explorer.equinoxdao.xyz/govgen/account/${accountAddress}'
+      account_page: 'https://explorer.equinoxdao.xyz/govgen/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
@@ -139,15 +131,12 @@ const info: Chain = {
       kind: 'posthuman',
       url: 'https://explorer.posthuman.digital/govgen',
       tx_page: 'https://explorer.posthuman.digital/govgen/tx/${txHash}',
-      account_page:
-        'https://explorer.posthuman.digital/govgen/account/${accountAddress}'
+      account_page: 'https://explorer.posthuman.digital/govgen/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/govgen/images/govgen.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/govgen/images/govgen.svg'
-    }
-  ]
+    }]
 };
 export default info;

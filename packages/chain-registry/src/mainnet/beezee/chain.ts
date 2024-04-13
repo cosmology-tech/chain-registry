@@ -12,24 +12,22 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ubze',
         fixed_min_gas_price: 0.01,
         low_gas_price: 0.01,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ubze'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg'
@@ -97,8 +95,7 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://explorer.getbze.com/beezee',
       tx_page: 'https://explorer.getbze.com/beezee/tx/${txHash}',
-      account_page:
-        'https://explorer.getbze.com/beezee/account/${accountAddress}'
+      account_page: 'https://explorer.getbze.com/beezee/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
@@ -110,15 +107,12 @@ const info: Chain = {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/beezee',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/beezee/tx/${txHash}',
-      account_page:
-        'https://explorer.whenmoonwhenlambo.money/beezee/account/${accountAddress}'
+      account_page: 'https://explorer.whenmoonwhenlambo.money/beezee/account/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg'
-    }
-  ]
+    }]
 };
 export default info;

@@ -12,19 +12,15 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uswtr',
         fixed_min_gas_price: 7
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uswtr'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.47'
@@ -58,13 +54,11 @@ const info: Chain = {
         provider: 'Comunitynode'
       }
     ],
-    grpc: [
-      {
+    grpc: [{
         address: 'testnet-swisstronik-grpc.genznodes.dev:20090',
         provider: 'genznodes'
-      }
-    ],
-    'evm-http-jsonrpc': [
+      }],
+    "evm-http-jsonrpc": [
       {
         address: 'https://json-rpc.testnet.swisstronik.com',
         provider: 'Swisstronik'
@@ -79,13 +73,10 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'ping.pub',
       url: 'https://explorer-cosmos.testnet.swisstronik.com/swisstronik',
-      tx_page:
-        'https://explorer-cosmos.testnet.swisstronik.com/swisstronik/tx/${txHash}'
-    }
-  ]
+      tx_page: 'https://explorer-cosmos.testnet.swisstronik.com/swisstronik/tx/${txHash}'
+    }]
 };
 export default info;

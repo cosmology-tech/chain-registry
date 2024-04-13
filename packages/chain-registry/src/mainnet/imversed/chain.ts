@@ -14,24 +14,22 @@ const info: Chain = {
   extra_codecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'aimv',
         fixed_min_gas_price: 250000000,
         low_gas_price: 20000000000,
         average_gas_price: 25000000000,
         high_gas_price: 40000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'aimv'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.svg'
@@ -39,31 +37,23 @@ const info: Chain = {
   apis: {
     rpc: [],
     rest: [],
-    grpc: [
-      {
+    grpc: [{
         address: 'grpc.imversed.network:443',
         provider: 'imversed'
-      }
-    ],
-    'evm-http-jsonrpc': [
-      {
+      }],
+    "evm-http-jsonrpc": [{
         address: 'https://jsonrpc.imversed.network:443',
         provider: 'imversed'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'blockscout',
       url: 'https://txe.imversed.network/',
       tx_page: 'https://txe.imversed.network/tx/${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.svg'
-    }
-  ]
+    }]
 };
 export default info;

@@ -9,7 +9,9 @@ const info: Chain = {
   bech32_prefix: 'cudos',
   key_algos: ['secp256k1'],
   slip44: 118,
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
     rpc: [
       {
@@ -66,14 +68,11 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'bigdipper-testnet',
       url: 'https://explorer.testnet.cudos.org/',
       tx_page: 'https://explorer.testnet.cudos.org/transactions/${txHash}',
-      account_page:
-        'https://explorer.testnet.cudos.org/accounts/${accountAddress}'
-    }
-  ]
+      account_page: 'https://explorer.testnet.cudos.org/accounts/${accountAddress}'
+    }]
 };
 export default info;

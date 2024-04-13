@@ -13,30 +13,27 @@ const info: Chain = {
   daemon_name: 'injectived',
   node_home: '$HOME/.injectived',
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'inj',
         fixed_min_gas_price: 160000000,
         low_gas_price: 500000000,
         average_gas_price: 700000000,
         high_gas_price: 900000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'inj'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
   },
-  description:
-    'Injective’s mission is to create a truly free and inclusive financial system through decentralization.',
+  description: 'Injective’s mission is to create a truly free and inclusive financial system through decentralization.',
   apis: {
     rpc: [
       {
@@ -148,8 +145,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address:
-          'k8s-injectiv-publicin-731c880328-0f3d7889b57e31a3.elb.eu-central-1.amazonaws.com:80',
+        address: 'k8s-injectiv-publicin-731c880328-0f3d7889b57e31a3.elb.eu-central-1.amazonaws.com:80',
         provider: 'NewMetric'
       },
       {
@@ -233,8 +229,7 @@ const info: Chain = {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/injective',
       tx_page: 'https://www.mintscan.io/injective/transactions/${txHash}',
-      account_page:
-        'https://www.mintscan.io/injective/accounts/${accountAddress}'
+      account_page: 'https://www.mintscan.io/injective/accounts/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
@@ -242,11 +237,9 @@ const info: Chain = {
       account_page: 'https://stakeflow.io/injective/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
-    }
-  ]
+    }]
 };
 export default info;

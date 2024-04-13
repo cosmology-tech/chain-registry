@@ -14,34 +14,28 @@ const info: Chain = {
   extra_codecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'atkx',
         fixed_min_gas_price: 100000000000,
         low_gas_price: 100000000000,
         average_gas_price: 110000000000,
         high_gas_price: 200000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'atkx'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.47.6-titan.4',
     cosmwasm_enabled: true,
     cosmwasm_version: '0.45.0'
   },
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/titan/images/chain.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/titan/images/chain.svg'
-    }
-  ],
+    }],
   apis: {
     rpc: [
       {
@@ -65,34 +59,25 @@ const info: Chain = {
         provider: 'Titanlab.io'
       }
     ],
-    rest: [
-      {
+    rest: [{
         address: 'https://titan-lcd.titanlab.io:443',
         provider: 'Titanlab.io'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'titan-grpc.titanlab.io:443',
         provider: 'Titanlab.io'
-      }
-    ],
-    'evm-http-jsonrpc': [
-      {
+      }],
+    "evm-http-jsonrpc": [{
         address: 'https://titan-json-rpc.titanlab.io:443',
         provider: 'Titanlab.io'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'ping.pub',
       url: 'https://titan-explorer-light.titanlab.io',
       tx_page: 'https://titan-explorer-light.titanlab.io/Titan/tx/${txHash}',
-      account_page:
-        'https://titan-explorer-light.titanlab.io/Titan/account/${accountAddress}'
-    }
-  ],
+      account_page: 'https://titan-explorer-light.titanlab.io/Titan/account/${accountAddress}'
+    }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/titan/images/chain.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/titan/images/chain.svg'

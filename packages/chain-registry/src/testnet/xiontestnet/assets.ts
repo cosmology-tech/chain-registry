@@ -5,18 +5,15 @@ const info: AssetList = {
   assets: [
     {
       description: 'The native staking token of the Xion network.',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'uxion',
           exponent: 0,
           aliases: ['microxion']
-        },
-        {
+        }, {
           denom: 'XION',
           exponent: 6,
           aliases: ['xion']
-        }
-      ],
+        }],
       base: 'uxion',
       display: 'XION',
       name: 'xion',
@@ -24,32 +21,25 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
-        }
-      ]
+        }]
     },
     {
-      denom_units: [
-        {
-          denom:
-            'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
+      denom_units: [{
+          denom: 'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
           exponent: 0,
           aliases: ['uaxl']
-        },
-        {
+        }, {
           denom: 'axl',
           exponent: 6
-        }
-      ],
+        }],
       type_asset: 'ics20',
       base: 'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
       name: 'Axelar AXL Token',
       display: 'axl',
       symbol: 'AXL',
-      traces: [
-        {
+      traces: [{
           type: 'ibc',
           counterparty: {
             chain_name: 'axelartestnet',
@@ -60,43 +50,35 @@ const info: AssetList = {
             channel_id: 'channel-5',
             path: 'transfer/channel-5/uaxl'
           }
-        }
-      ],
-      images: [
-        {
+        }],
+      images: [{
           image_sync: {
             chain_name: 'axelartestnet',
             base_denom: 'uaxl'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
-        }
-      ],
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
       }
     },
     {
-      denom_units: [
-        {
-          denom:
-            'ibc/92E0120F15D037353CFB73C14651FC8930ADC05B93100FD7754D3A689E53B333',
+      denom_units: [{
+          denom: 'ibc/92E0120F15D037353CFB73C14651FC8930ADC05B93100FD7754D3A689E53B333',
           exponent: 0,
           aliases: ['uosmo']
-        },
-        {
+        }, {
           denom: 'osmo',
           exponent: 6
-        }
-      ],
+        }],
       type_asset: 'ics20',
       base: 'ibc/92E0120F15D037353CFB73C14651FC8930ADC05B93100FD7754D3A689E53B333',
       name: 'Osmosis OSMO Token',
       display: 'osmo',
       symbol: 'OSMO',
-      traces: [
-        {
+      traces: [{
           type: 'ibc',
           counterparty: {
             chain_name: 'osmosistestnet',
@@ -107,43 +89,35 @@ const info: AssetList = {
             channel_id: 'channel-8',
             path: 'transfer/channel-8/uosmo'
           }
-        }
-      ],
-      images: [
-        {
+        }],
+      images: [{
           image_sync: {
             chain_name: 'osmosistestnet',
             base_denom: 'uosmo'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
-        }
-      ],
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
       }
     },
     {
-      denom_units: [
-        {
-          denom:
-            'ibc/295548A78785A1007F232DE286149A6FF512F180AF5657780FC89C009E2C348F',
+      denom_units: [{
+          denom: 'ibc/295548A78785A1007F232DE286149A6FF512F180AF5657780FC89C009E2C348F',
           exponent: 0,
           aliases: ['uusdc']
-        },
-        {
+        }, {
           denom: 'usdc',
           exponent: 6
-        }
-      ],
+        }],
       type_asset: 'ics20',
       base: 'ibc/295548A78785A1007F232DE286149A6FF512F180AF5657780FC89C009E2C348F',
       name: 'Noble USDC Token',
       display: 'usdc',
       symbol: 'USDC',
-      traces: [
-        {
+      traces: [{
           type: 'ibc',
           counterparty: {
             chain_name: 'nobletestnet',
@@ -154,41 +128,33 @@ const info: AssetList = {
             channel_id: 'channel-9',
             path: 'transfer/channel-9/uusdc'
           }
-        }
-      ],
-      images: [
-        {
+        }],
+      images: [{
           image_sync: {
             chain_name: 'nobletestnet',
             base_denom: 'uusdc'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
-        }
-      ],
+        }],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       }
     },
     {
-      denom_units: [
-        {
-          denom:
-            'ibc/0166AE2224341A3F70943E315DAC6EDF012A638D0F9358794FF7525BA1DFC191',
+      denom_units: [{
+          denom: 'ibc/0166AE2224341A3F70943E315DAC6EDF012A638D0F9358794FF7525BA1DFC191',
           exponent: 0,
           aliases: ['inj']
-        },
-        {
+        }, {
           denom: 'INJ',
           exponent: 18
-        }
-      ],
+        }],
       type_asset: 'ics20',
       base: 'ibc/0166AE2224341A3F70943E315DAC6EDF012A638D0F9358794FF7525BA1DFC191',
       name: 'Injective INJ token',
       display: 'INJ',
       symbol: 'INJ',
-      traces: [
-        {
+      traces: [{
           type: 'ibc',
           counterparty: {
             chain_name: 'injectivetestnet',
@@ -199,18 +165,15 @@ const info: AssetList = {
             channel_id: 'channel-215',
             path: 'transfer/channel-215/inj'
           }
-        }
-      ],
-      images: [
-        {
+        }],
+      images: [{
           image_sync: {
             chain_name: 'injectivetestnet',
             base_denom: 'inj'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg',
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png'
-        }
-      ],
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'

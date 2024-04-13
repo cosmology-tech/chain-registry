@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'chimbatestnet',
-  assets: [
-    {
+  assets: [{
       description: 'The first blokchain in colombia',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ucmba',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'chimba',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ucmba',
       name: 'Chimba',
       display: 'chimba',
@@ -24,13 +20,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.svg'
       },
       coingecko_id: '',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

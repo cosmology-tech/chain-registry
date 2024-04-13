@@ -2,15 +2,12 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'loop',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Loop',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'token',
           exponent: 0
-        }
-      ],
+        }],
       type_asset: 'sdk.coin',
       base: 'token',
       name: 'Token',
@@ -20,30 +17,24 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.svg'
-        }
-      ],
+        }],
       coingecko_id: '',
       keywords: [],
       socials: {
         website: 'https://www.loop.fans/',
         twitter: 'https://twitter.com/LoopFans'
       }
-    },
-    {
-      denom_units: [
-        {
+    }, {
+      denom_units: [{
           denom: 'upoa',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'poa',
           exponent: 6
-        }
-      ],
+        }],
       type_asset: 'sdk.coin',
       base: 'upoa',
       name: 'POA',
@@ -53,15 +44,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/poa.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/poa.svg'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.svg'
-        }
-      ],
+        }],
       coingecko_id: '',
       keywords: ['poa']
-    }
-  ]
+    }]
 };
 export default info;

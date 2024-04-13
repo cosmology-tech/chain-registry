@@ -12,24 +12,22 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'tkyve',
         fixed_min_gas_price: 0.02,
         low_gas_price: 0.02,
         average_gas_price: 0.03,
         high_gas_price: 0.06
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'tkyve'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
     rpc: [
       {
@@ -60,14 +58,11 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'mintscan',
       url: 'https://testnet.mintscan.io/kyve-testnet',
       tx_page: 'https://testnet.mintscan.io/kyve-testnet/txs/${txHash}',
-      account_page:
-        'https://testnet.mintscan.io/kyve-testnet/account/${accountAddress}'
-    }
-  ]
+      account_page: 'https://testnet.mintscan.io/kyve-testnet/account/${accountAddress}'
+    }]
 };
 export default info;

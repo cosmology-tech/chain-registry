@@ -12,22 +12,18 @@ const info: Chain = {
   node_home: '$HOME/.cheqdnode',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ncheq',
         fixed_min_gas_price: 25,
         low_gas_price: 50,
         average_gas_price: 75,
         high_gas_price: 100
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'ncheq'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.46.10'
@@ -192,11 +188,9 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.svg'
   },
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.svg'
-    }
-  ]
+    }]
 };
 export default info;

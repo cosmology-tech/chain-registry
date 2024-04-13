@@ -2,20 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'meme',
-  assets: [
-    {
-      description:
-        'MEME Token (MEME) is the native staking token of the MEME Chain',
-      denom_units: [
-        {
+  assets: [{
+      description: 'MEME Token (MEME) is the native staking token of the MEME Chain',
+      denom_units: [{
           denom: 'umeme',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'meme',
           exponent: 6
-        }
-      ],
+        }],
       base: 'umeme',
       name: 'MEME',
       display: 'meme',
@@ -25,13 +20,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg'
       },
       coingecko_id: 'meme-network',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

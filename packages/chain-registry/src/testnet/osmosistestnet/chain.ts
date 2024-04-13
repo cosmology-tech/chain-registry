@@ -12,22 +12,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uosmo',
         fixed_min_gas_price: 0,
         low_gas_price: 0.0025,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uosmo'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.45',
@@ -35,54 +31,39 @@ const info: Chain = {
     cosmwasm_version: '0.30'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.osmotest5.osmosis.zone/',
         provider: 'Osmosis'
-      },
-      {
+      }, {
         address: 'https://rpc.testnet.osl.zone/',
         provider: 'OSL'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://lcd.osmotest5.osmosis.zone/',
         provider: 'Osmosis'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'https://grpc.osmotest5.osmosis.zone/',
         provider: 'Osmosis'
-      }
-    ]
+      }]
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'mintscan',
       url: 'https://testnet.mintscan.io/osmosis-testnet',
       tx_page: 'https://testnet.mintscan.io/osmosis-testnet/txs/${txHash}',
-      account_page:
-        'https://testnet.mintscan.io/osmosis-testnet/account/${accountAddress}'
-    },
-    {
+      account_page: 'https://testnet.mintscan.io/osmosis-testnet/account/${accountAddress}'
+    }, {
       kind: 'ping.pub',
       url: 'https://explorer.osmotest5.osmosis.zone',
-      tx_page:
-        'https://explorer.osmotest5.osmosis.zone/osmo-test-5/tx/${txHash}',
-      account_page:
-        'https://explorer.osmotest5.osmosis.zone/osmo-test-5/account/${accountAddress}'
-    }
-  ],
+      tx_page: 'https://explorer.osmotest5.osmosis.zone/osmo-test-5/tx/${txHash}',
+      account_page: 'https://explorer.osmotest5.osmosis.zone/osmo-test-5/account/${accountAddress}'
+    }],
   keywords: ['dex', 'testnet'],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
-    }
-  ]
+    }]
 };
 export default info;

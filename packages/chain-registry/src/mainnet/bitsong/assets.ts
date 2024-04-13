@@ -5,16 +5,13 @@ const info: AssetList = {
   assets: [
     {
       description: 'BitSong Native Token',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ubtsg',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'btsg',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ubtsg',
       name: 'BitSong',
       display: 'btsg',
@@ -25,12 +22,10 @@ const info: AssetList = {
       },
       type_asset: 'sdk.coin',
       coingecko_id: 'bitsong',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg'
-        }
-      ],
+        }],
       socials: {
         website: 'https://bitsong.io/',
         twitter: 'https://twitter.com/BitSongOfficial'
@@ -38,16 +33,13 @@ const info: AssetList = {
     },
     {
       description: 'Adam Clay a BitSong Music FanToken',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'clay',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09',
       name: 'Adam Clay FanToken',
       display: 'clay',
@@ -55,24 +47,19 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png'
-        }
-      ]
+        }]
     },
     {
       description: 'Nicola Fasano a BitSong Music FanToken',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'fasano',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7',
       name: 'Nicola Fasano Fantoken',
       display: 'fasano',
@@ -80,24 +67,19 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7.png'
-        }
-      ]
+        }]
     },
     {
       description: 'Delta 9 a BitSong Music FanToken',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ft575B10B0CEE2C164D9ED6A96313496F164A9607C',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'd9x',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ft575B10B0CEE2C164D9ED6A96313496F164A9607C',
       name: 'Delta 9 Fantoken',
       display: 'd9x',
@@ -105,24 +87,19 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft575B10B0CEE2C164D9ED6A96313496F164A9607C.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft575B10B0CEE2C164D9ED6A96313496F164A9607C.png'
-        }
-      ]
+        }]
     },
     {
       description: 'FONTI a BitSong Music FanToken',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'fonti',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305',
       name: 'FONTI Fantoken',
       display: 'fonti',
@@ -130,24 +107,19 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305.png'
-        }
-      ]
+        }]
     },
     {
       description: 'BlackJack a BitSong Music FanToken',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ft52EEB0EE509AC546ED92EAC8591F731F213DDD16',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'bjks',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ft52EEB0EE509AC546ED92EAC8591F731F213DDD16',
       name: 'BlackJack Fantoken',
       display: 'bjks',
@@ -155,24 +127,19 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft52EEB0EE509AC546ED92EAC8591F731F213DDD16.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft52EEB0EE509AC546ED92EAC8591F731F213DDD16.png'
-        }
-      ]
+        }]
     },
     {
       description: 'Rawanne a BitSong Music FanToken',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'rwne',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A',
       name: 'Rawanne Fantoken',
       display: 'rwne',
@@ -180,24 +147,19 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A.png'
-        }
-      ]
+        }]
     },
     {
       description: 'Enmoda a BitSong Music FanToken',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ft85AE1716C5E39EA6D64BBD7898C3899A7B500626',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'enmoda',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ft85AE1716C5E39EA6D64BBD7898C3899A7B500626',
       name: 'Enmoda Fantoken',
       display: 'enmoda',
@@ -205,24 +167,19 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft85AE1716C5E39EA6D64BBD7898C3899A7B500626.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft85AE1716C5E39EA6D64BBD7898C3899A7B500626.png'
-        }
-      ]
+        }]
     },
     {
       description: '404Deep Records a BitSong Music FanToken',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A',
           exponent: 0
-        },
-        {
+        }, {
           denom: '404dr',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A',
       name: '404Deep Records Fantoken',
       display: '404dr',
@@ -230,24 +187,19 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png'
-        }
-      ]
+        }]
     },
     {
       description: 'N43 a BitSong Music FanToken',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ft387C1C279D962ED80C09C1D592A92C4275FD7C5D',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'n43',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ft387C1C279D962ED80C09C1D592A92C4275FD7C5D',
       name: 'N43 Fantoken',
       display: 'n43',
@@ -255,24 +207,19 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png'
-        }
-      ]
+        }]
     },
     {
       description: 'Puro Lobo a BitSong Music FanToken',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'lobo',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB',
       name: 'Puro Lobo Fantoken',
       display: 'lobo',
@@ -280,24 +227,19 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB.png'
-        }
-      ]
+        }]
     },
     {
       description: 'Vibranium a BitSong Music FanToken',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'vibra',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B',
       name: 'Vibranium Fantoken',
       display: 'vibra',
@@ -305,24 +247,19 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B.png'
-        }
-      ]
+        }]
     },
     {
       description: 'Karina a BitSong Music FanToken',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'karina',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE',
       name: 'Karina Fantoken',
       display: 'karina',
@@ -330,24 +267,19 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE.png'
-        }
-      ]
+        }]
     },
     {
       description: 'Luca Testa a BitSong Music FanToken',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'testa',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12',
       name: 'Luca Testa Fantoken',
       display: 'testa',
@@ -355,24 +287,19 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12.png'
-        }
-      ]
+        }]
     },
     {
       description: 'Carolina Marquez a BitSong Music FanToken',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'cmqz',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3',
       name: 'Carolina Marquez Fantoken',
       display: 'cmqz',
@@ -380,25 +307,20 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3.png'
-        }
-      ]
+        }]
     },
     {
       deprecated: true,
       description: '[Redacted] a BitSong Music FanToken',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00/6',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00',
       name: '[Redacted] Fantoken (ft3...A00)',
       display: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00/6',

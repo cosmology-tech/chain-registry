@@ -13,14 +13,14 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'idep',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.svg'
@@ -28,12 +28,10 @@ const info: Chain = {
   apis: {
     rpc: [],
     rest: [],
-    grpc: [
-      {
+    grpc: [{
         address: 'idep-grpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
-      }
-    ]
+      }]
   },
   explorers: [
     {
@@ -53,11 +51,9 @@ const info: Chain = {
       tx_page: 'https://explorer.tcnetwork.io/idep/transaction/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.svg'
-    }
-  ]
+    }]
 };
 export default info;

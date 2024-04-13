@@ -2,20 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'fantomtestnet',
-  assets: [
-    {
-      description:
-        "Fantom's native utility token — FTM — powers the entire Fantom blockchain ecosystem. FTM tokens are used for staking, governance, payments, and fees on the network.",
-      denom_units: [
-        {
+  assets: [{
+      description: 'Fantom\'s native utility token — FTM — powers the entire Fantom blockchain ecosystem. FTM tokens are used for staking, governance, payments, and fees on the network.',
+      denom_units: [{
           denom: 'wei',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'ftm',
           exponent: 18
-        }
-      ],
+        }],
       base: 'wei',
       name: 'Fantom',
       display: 'ftm',
@@ -23,32 +18,25 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.png'
-        }
-      ]
-    },
-    {
+        }]
+    }, {
       description: 'ERC20 wrapped version of FTM',
       type_asset: 'erc20',
       address: '0x812666209b90344Ec8e528375298ab9045c2Bd08',
-      denom_units: [
-        {
+      denom_units: [{
           denom: '0x812666209b90344Ec8e528375298ab9045c2Bd08',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'wftm',
           exponent: 18
-        }
-      ],
+        }],
       base: '0x812666209b90344Ec8e528375298ab9045c2Bd08',
       name: 'Wrapped Fantom',
       display: 'wftm',
       symbol: 'WFTM',
-      traces: [
-        {
+      traces: [{
           type: 'wrapped',
           counterparty: {
             chain_name: 'fantomtestnet',
@@ -58,21 +46,17 @@ const info: AssetList = {
             contract: '0x812666209b90344Ec8e528375298ab9045c2Bd08'
           },
           provider: 'Fantom'
-        }
-      ],
-      images: [
-        {
+        }],
+      images: [{
           image_sync: {
             chain_name: 'fantomtestnet',
             base_denom: 'wei'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.png'
-        }
-      ],
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.png'
       }
-    }
-  ]
+    }]
 };
 export default info;

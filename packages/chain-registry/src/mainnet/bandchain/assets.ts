@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'bandchain',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of BandChain',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'uband',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'band',
           exponent: 6
-        }
-      ],
+        }],
       base: 'uband',
       display: 'band',
       name: 'Band Protocol',
@@ -24,17 +20,14 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg'
       },
       coingecko_id: 'band-protocol',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg'
-        }
-      ],
+        }],
       socials: {
         website: 'https://www.bandprotocol.com/',
         twitter: 'https://twitter.com/BandProtocol'
       }
-    }
-  ]
+    }]
 };
 export default info;

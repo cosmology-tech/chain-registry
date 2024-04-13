@@ -12,40 +12,32 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'utlore',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://gitopia-testnet.nodejumper.io',
         provider: 'NODEJUMPER'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://gitopia-testnet.nodejumper.io:1317',
         provider: 'NODEJUMPER'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'https://gitopia-testnet.nodejumper.io:9090',
         provider: 'NODEJUMPER'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'explorer.humans.zone',
       url: 'https://gitopia.explorers.guru/',
       tx_page: 'https://gitopia.explorers.guru/transaction/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

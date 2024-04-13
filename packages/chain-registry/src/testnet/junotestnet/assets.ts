@@ -5,16 +5,13 @@ const info: AssetList = {
   assets: [
     {
       description: 'The native token of JUNO Chain',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ujunox',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'junox',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ujunox',
       name: 'Juno Testnet',
       display: 'junox',
@@ -24,25 +21,20 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
       },
       coingecko_id: 'juno-network',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'The native token of NEXX GEN AI',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'factory/juno12klaltyqvg2j6v034jwdxrk5n4242ttse4sdpt/NEXX',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'nexx',
           exponent: 6
-        }
-      ],
+        }],
       base: 'factory/juno12klaltyqvg2j6v034jwdxrk5n4242ttse4sdpt/NEXX',
       name: 'NEXX GEN AI',
       display: 'nexx',
@@ -50,58 +42,45 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/nexx.png'
       },
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/nexx.png'
-        }
-      ]
+        }]
     },
     {
       type_asset: 'sdk.coin',
-      denom_units: [
-        {
-          denom:
-            'factory/juno12dgadj3wwv5jn0ec7tw5cgvq526nn4gnt2tujlmd57p2ra6k87esl36r9k/ARENA',
+      denom_units: [{
+          denom: 'factory/juno12dgadj3wwv5jn0ec7tw5cgvq526nn4gnt2tujlmd57p2ra6k87esl36r9k/ARENA',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'arena',
           exponent: 6
-        }
-      ],
-      address:
-        'juno12dgadj3wwv5jn0ec7tw5cgvq526nn4gnt2tujlmd57p2ra6k87esl36r9k',
+        }],
+      address: 'juno12dgadj3wwv5jn0ec7tw5cgvq526nn4gnt2tujlmd57p2ra6k87esl36r9k',
       base: 'factory/juno12dgadj3wwv5jn0ec7tw5cgvq526nn4gnt2tujlmd57p2ra6k87esl36r9k/ARENA',
       name: 'Arena Token',
       description: 'The token for the Arena DAO',
       display: 'arena',
       symbol: 'ARENA',
-      traces: [
-        {
+      traces: [{
           type: 'test-mintage',
           counterparty: {
             chain_name: 'juno',
-            base_denom:
-              'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA'
+            base_denom: 'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA'
           },
           provider: 'Arena DAO'
-        }
-      ],
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg'
       },
-      images: [
-        {
+      images: [{
           image_sync: {
             chain_name: 'juno',
-            base_denom:
-              'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA'
+            base_denom: 'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.svg',
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/arena.png'
-        }
-      ]
+        }]
     }
   ]
 };

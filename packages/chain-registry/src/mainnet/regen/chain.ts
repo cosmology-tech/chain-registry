@@ -13,27 +13,22 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uregen',
         low_gas_price: 0.015,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uregen'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.46'
   },
-  description:
-    'Regen Network, a platform to originate and invest in high-integrity carbon and biodiversity credits from ecological regeneration projects.',
+  description: 'Regen Network, a platform to originate and invest in high-integrity carbon and biodiversity credits from ecological regeneration projects.',
   apis: {
     rpc: [
       {
@@ -173,19 +168,16 @@ const info: Chain = {
       kind: 'atomscan',
       url: 'https://atomscan.com/regen-network',
       tx_page: 'https://atomscan.com/regen-network/transactions/${txHash}',
-      account_page:
-        'https://atomscan.com/regen-network/accounts/${accountAddress}'
+      account_page: 'https://atomscan.com/regen-network/accounts/${accountAddress}'
     }
   ],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg'
   },
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg'
-    }
-  ]
+    }]
 };
 export default info;

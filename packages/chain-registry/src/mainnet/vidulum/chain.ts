@@ -13,24 +13,22 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 370,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uvdl',
         fixed_min_gas_price: 0.0002,
         low_gas_price: 0.002,
         average_gas_price: 0.005,
         high_gas_price: 0.007
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uvdl'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
@@ -124,11 +122,9 @@ const info: Chain = {
       tx_page: 'https://explorer.declab.pro/Vidulum/tx/${txHash}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
-    }
-  ]
+    }]
 };
 export default info;

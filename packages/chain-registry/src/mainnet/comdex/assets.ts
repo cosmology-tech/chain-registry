@@ -5,16 +5,13 @@ const info: AssetList = {
   assets: [
     {
       description: 'Native Token of Comdex Protocol',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ucmdx',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'cmdx',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ucmdx',
       name: 'Comdex',
       display: 'cmdx',
@@ -24,25 +21,20 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
       },
       coingecko_id: 'comdex',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'Governance Token of Harbor protocol on Comdex network',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'uharbor',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'harbor',
           exponent: 6
-        }
-      ],
+        }],
       base: 'uharbor',
       name: 'Harbor',
       display: 'harbor',
@@ -52,25 +44,20 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg'
       },
       coingecko_id: 'harbor-2',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'Stable Token of Harbor protocol on Comdex network',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ucmst',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'cmst',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ucmst',
       name: 'CMST',
       display: 'cmst',
@@ -80,12 +67,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg'
       },
       coingecko_id: 'composite',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg'
-        }
-      ]
+        }]
     }
   ]
 };

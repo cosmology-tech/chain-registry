@@ -13,57 +13,46 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'aconst',
         low_gas_price: 1000000000000,
         average_gas_price: 1500000000000,
         high_gas_price: 2000000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'aconst'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/archwaytestnet/images/ArchwayBrandmark.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/archwaytestnet/images/ArchwayBrandmark.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.constantine.archway.tech',
         provider: 'Archway'
-      },
-      {
+      }, {
         address: 'https://archway-testnet-rpc.polkachu.com',
         provider: 'Polkachu'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://api.constantine.archway.tech',
         provider: 'Archway'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'archwayscan',
       url: 'https://testnet.archway.explorers.guru',
       tx_page: 'https://testnet.archway.explorers.guru/transaction/${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/archwaytestnet/images/ArchwayBrandmark.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/archwaytestnet/images/ArchwayBrandmark.svg'
-    }
-  ]
+    }]
 };
 export default info;

@@ -9,34 +9,28 @@ const info: Chain = {
   bech32_prefix: 'ulas',
   daemon_name: 'ulasd',
   node_home: '$HOME/.ulas',
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'http://65.49.204.199:26657',
         provider: 'UlasNetwork'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'http://65.49.204.199:1317',
         provider: 'UlasNetwork'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'http://65.49.204.199:9090',
         provider: 'UlasNetwork'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'ulas-scan',
       url: 'https://testnet-explorer.ulas.network',
       tx_page: 'https://testnet-explorer.ulas.network/ulas/tx/${txHash}'
-    }
-  ],
+    }],
   slip44: 118
 };
 export default info;

@@ -12,22 +12,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'uqsr',
         fixed_min_gas_price: 0,
         low_gas_price: 0.0025,
         average_gas_price: 0.025,
         high_gas_price: 0.04
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'uqsr'
-      }
-    ]
+      }]
   },
   codebase: {
     cosmos_sdk_version: '0.45.16',
@@ -39,43 +35,32 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://quasar-testnet-rpc.polkachu.com/',
         provider: 'Polkachu'
-      },
-      {
+      }, {
         address: 'https://quasar-testnet-rpc.stakeandrelax.net/',
         provider: 'Stake and Relax'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://quasar-testnet-api.polkachu.com/',
         provider: 'Polkachu'
-      },
-      {
+      }, {
         address: 'https://quasar-testnet-api.stakeandrelax.net/',
         provider: 'Stake and Relax'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'quasar-testnet-grpc.polkachu.com:18290',
         provider: 'Polkachu'
-      },
-      {
+      }, {
         address: 'http://quasar-testnet-grpc.stakeandrelax.net:18290/',
         provider: 'Stake and Relax'
-      }
-    ]
+      }]
   },
   keywords: ['testnet'],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.svg'
-    }
-  ]
+    }]
 };
 export default info;

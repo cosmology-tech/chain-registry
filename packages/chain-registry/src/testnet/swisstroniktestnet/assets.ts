@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'swisstroniktestnet',
-  assets: [
-    {
+  assets: [{
       description: 'The native currency of Swisstronik.',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'uswtr',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'swtr',
           exponent: 18
-        }
-      ],
+        }],
       base: 'uswtr',
       name: 'Swisstronik Testnet',
       display: 'swtr',
@@ -23,12 +19,9 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/swisstroniktestnet/images/swisstronik.png'
       },
       coingecko_id: '',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/swisstroniktestnet/images/swisstronik.png'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

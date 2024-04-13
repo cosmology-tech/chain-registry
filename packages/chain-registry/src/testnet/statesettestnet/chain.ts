@@ -12,34 +12,28 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ustate',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc.stateset.zone/',
         provider: 'stateset'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://rest-api.stateset.zone',
         provider: 'stateset'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'bigdipper',
       url: 'https://explore.stateset.zone',
       tx_page: 'https://explore.stateset.zone/transactions/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

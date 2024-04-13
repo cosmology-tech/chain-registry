@@ -5,16 +5,13 @@ const info: AssetList = {
   assets: [
     {
       description: 'The native staking and governance token of the COSS.',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ucgas',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'cgas',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ucgas',
       name: 'CGAS',
       display: 'cgas',
@@ -24,25 +21,20 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/cgas.svg'
       },
       coingecko_id: '',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/cgas.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/cgas.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'The inscription token of the COSS.',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ucoss',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'coss',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ucoss',
       name: 'COSS',
       display: 'coss',
@@ -52,25 +44,20 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/coss.svg'
       },
       coingecko_id: 'coss-2',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/coss.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/coss.svg'
-        }
-      ]
+        }]
     },
     {
       description: 'The inscription token of the CIAS.',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ucias',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'cias',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ucias',
       name: 'CIAS',
       display: 'cias',
@@ -80,12 +67,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/cias.svg'
       },
       coingecko_id: 'cias',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/cias.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/cias.svg'
-        }
-      ]
+        }]
     }
   ]
 };

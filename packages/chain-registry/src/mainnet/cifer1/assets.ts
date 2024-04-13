@@ -2,19 +2,15 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'cifer1',
-  assets: [
-    {
+  assets: [{
       description: 'Decentralized Federated Learning',
-      denom_units: [
-        {
+      denom_units: [{
           denom: 'ucif',
           exponent: 0
-        },
-        {
+        }, {
           denom: 'cif',
           exponent: 6
-        }
-      ],
+        }],
       base: 'ucif',
       name: 'Cifer',
       display: 'cif',
@@ -24,13 +20,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
       },
       coingecko_id: '',
-      images: [
-        {
+      images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
-        }
-      ]
-    }
-  ]
+        }]
+    }]
 };
 export default info;

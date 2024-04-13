@@ -12,41 +12,33 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 701,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ucommercio'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.svg'
   },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc-mainnet.commercio.network'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://lcd-mainnet.commercio.network'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'almerico',
       url: 'https://mainnet.commercio.network',
       tx_page: 'https://mainnet.commercio.network/transactions/detail/${txHash}'
-    }
-  ],
-  images: [
-    {
+    }],
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.svg'
-    }
-  ]
+    }]
 };
 export default info;

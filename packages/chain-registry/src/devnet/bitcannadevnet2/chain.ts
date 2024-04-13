@@ -12,39 +12,31 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ubcna',
         fixed_min_gas_price: 0.001
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc-devnet-6.bitcanna.io/',
         provider: 'bitcanna'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'http://devnet-6.bitcanna.io:9090',
         provider: 'bitcanna'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://lcd-devnet-6.bitcanna.io/',
         provider: 'bitcanna'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       url: 'https://explorer-devnet-6.bitcanna.io',
       tx_page: 'https://explorer-devnet-6.bitcanna.io/tx/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

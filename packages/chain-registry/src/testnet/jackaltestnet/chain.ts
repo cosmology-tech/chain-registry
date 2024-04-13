@@ -13,59 +13,46 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'ujkl',
         fixed_min_gas_price: 0
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'http://jkl.rpc.t.stavr.tech:19127',
         provider: '🔥STAVR🔥'
-      },
-      {
+      }, {
         address: 'https://testnet-rpc.jackalprotocol.com',
         provider: 'Jackal Labs'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://jkl.api.t.stavr.tech',
         provider: '🔥STAVR🔥'
-      },
-      {
+      }, {
         address: 'https://testnet-api.jackalprotocol.com',
         provider: 'Jackal Labs'
-      }
-    ],
-    grpc: [
-      {
+      }],
+    grpc: [{
         address: 'http://jkl.grpc.t.stavr.tech:5913',
         provider: '🔥STAVR🔥'
-      },
-      {
+      }, {
         address: 'https://testnet-grpc.jackalprotocol.com',
         provider: 'Jackal Labs'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Jackal-Testnet',
       tx_page: 'https://explorer.stavr.tech/Jackal-Testnet/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Jackal-Testnet/account/${accountAddress}'
-    },
-    {
+      account_page: 'https://explorer.stavr.tech/Jackal-Testnet/account/${accountAddress}'
+    }, {
       kind: 'ping.pub',
       url: 'https://ping.pub/jackal',
       tx_page: 'https://ping.pub/jackal/tx/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

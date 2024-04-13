@@ -13,22 +13,18 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'unois',
         fixed_min_gas_price: 0.05,
         low_gas_price: 0.05,
         average_gas_price: 0.05,
         high_gas_price: 0.1
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'unois'
-      }
-    ],
+      }],
     lock_duration: {
       time: '1814400s'
     }
@@ -38,18 +34,15 @@ const info: Chain = {
     cosmwasm_enabled: true,
     cosmwasm_version: 'v0.31.0'
   },
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
       theme: {
         primary_color_hex: '#0C0914'
       }
-    },
-    {
+    }, {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.svg'
-    }
-  ],
+    }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png'
   },
@@ -268,15 +261,13 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/nois-mainnet',
       tx_page: 'https://explorer.stavr.tech/nois-mainnet/txs/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/nois-mainnet/account/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/nois-mainnet/account/${accountAddress}'
     },
     {
       kind: 'BccNodes',
       url: 'https://explorer.stavr.tech/nois-mainnet',
       tx_page: 'https://explorer.bccnodes.com/nois-M/txs/${txHash}',
-      account_page:
-        'https://explorer.bccnodes.com/nois-M/account/${accountAddress}'
+      account_page: 'https://explorer.bccnodes.com/nois-M/account/${accountAddress}'
     },
     {
       kind: 'explorers.guru',
@@ -285,6 +276,11 @@ const info: Chain = {
       account_page: 'https://nois.explorers.guru/account/${accountAddress}'
     }
   ],
-  keywords: ['nois', 'randomness', 'drand', 'wasm']
+  keywords: [
+    'nois',
+    'randomness',
+    'drand',
+    'wasm'
+  ]
 };
 export default info;

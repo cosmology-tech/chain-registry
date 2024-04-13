@@ -12,34 +12,28 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'utki',
         fixed_min_gas_price: 0.025
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   apis: {
-    rpc: [
-      {
+    rpc: [{
         address: 'https://rpc-challenge.blockchain.ki/',
         provider: 'kifoundation'
-      }
-    ],
-    rest: [
-      {
+      }],
+    rest: [{
         address: 'https://api-challenge.blockchain.ki/',
         provider: 'kifoundation'
-      }
-    ]
+      }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'kifoundation',
       url: 'https://kichain-t-4.blockchain.ki/',
       tx_page: 'https://kichain-t-4.blockchain.ki/transactions/${txHash}'
-    }
-  ]
+    }]
 };
 export default info;

@@ -12,23 +12,21 @@ const info: Chain = {
   node_home: '$HOME/.sifnoded',
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
+    fee_tokens: [{
         denom: 'rowan',
         low_gas_price: 1000000000000,
         average_gas_price: 1500000000000,
         high_gas_price: 2000000000000
-      }
-    ]
+      }]
   },
   staking: {
-    staking_tokens: [
-      {
+    staking_tokens: [{
         denom: 'rowan'
-      }
-    ]
+      }]
   },
-  codebase: {},
+  codebase: {
+
+  },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg'
@@ -101,15 +99,12 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Sifchain',
       tx_page: 'https://explorer.stavr.tech/Sifchain/tx/${txHash}',
-      account_page:
-        'https://explorer.stavr.tech/Sifchain/accounts/${accountAddress}'
+      account_page: 'https://explorer.stavr.tech/Sifchain/accounts/${accountAddress}'
     }
   ],
-  images: [
-    {
+  images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg'
-    }
-  ]
+    }]
 };
 export default info;
