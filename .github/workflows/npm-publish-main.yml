@@ -23,7 +23,6 @@ jobs:
           git submodule update --remote
           CHANGES_DESC="build-$(date +%Y%m%d-%H%M%S)"
           yarn
-          yarn bootstrap
           yarn build
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"

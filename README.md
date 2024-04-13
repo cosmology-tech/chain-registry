@@ -129,7 +129,7 @@ Utility functions for `chain-registry`.
 
 ## Developing
 
-Checkout the repository and bootstrap the yarn workspace:
+Checkout the repository run yarn to initialize the workspace:
 
 ```sh
 # Clone the repo.

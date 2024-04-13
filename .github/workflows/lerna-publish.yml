@@ -22,7 +22,6 @@ jobs:
       - name: Code Generation
         run: |
           yarn
-          yarn bootstrap
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
           lerna publish --force-publish=chain-registry --no-verify-access --yes

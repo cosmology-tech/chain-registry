@@ -24,6 +24,8 @@ jobs:
         run: yarn build
       - name: keplr
         run: cd ./packages/keplr && yarn test
+      - name: cosmostation
+        run: cd ./packages/cosmostation && yarn test
       - name: utils
         run: cd ./packages/utils && yarn test
       - name: client

@@ -129,13 +129,12 @@ Utility functions for `chain-registry`.
 
 ## Developing
 
-Checkout the repository and bootstrap the yarn workspace:
+Checkout the repository run yarn to initialize the workspace:
 
 ```sh
 # Clone the repo.
 git clone https://github.com/cosmology-tech/chain-registry
 yarn
-yarn bootstrap
 ```
 ### Building
 
