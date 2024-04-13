@@ -27,17 +27,17 @@ jobs:
         run: yarn build
 
       - name: Test @chain-registry/keplr
-        run: yarn test
+        run: yarn workspace @chain-registry/keplr test
         working-directory: packages/keplr
       
       - name: Test @chain-registry/cosmostation
-        run: yarn test
+        run: yarn workspace @chain-registry/cosmostation test
         working-directory: packages/cosmostation
       
       - name: Test @chain-registry/utils
-        run: yarn test
+        run: yarn workspace @chain-registry/utils test
         working-directory: packages/utils
       
       - name: Test @chain-registry/client
-        run: yarn test
+        run: yarn workspace @chain-registry/client test
         working-directory: packages/client
