@@ -12,14 +12,18 @@ jobs:
   publish-npm:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Repository 🛎️
+        uses: actions/checkout@v4
         with:
           submodules: "true"
-      - uses: actions/setup-node@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 16.14.0
+          node-version: '20.x'
           registry-url: https://registry.npmjs.org/
-      - name: Code Generation
+
+      - name: Publish Patch Version
         run: |
           yarn
           git config user.name "${{ github.actor }}"
