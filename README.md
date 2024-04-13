@@ -16,16 +16,27 @@
 
 The npm package for the Official Cosmos [chain registry](https://github.com/cosmos/chain-registry)
 
-
 ```
 npm install chain-registry
 ```
 
 A unified store of chains info, assets, asset lists, and IBC channels for the Cosmos ecosystem. Get everything from token symbols, logos, and IBC denominations for all assets you want to support in your application.
 
-## example
 
-Fetch data from chain-registry:
+## Features 
+
+- 🌐 **Dynamic Loading via [ChainRegistryClient](https://github.com/cosmology-tech/chain-registry/tree/main/packages/client)** - Utilize the client for dynamic data fetching.
+- 📦 **Tree-Shaking Support** - Optimize your bundles by including only what you need.
+- 🔌 **Module Compatibility** - Supports both CommonJS and ES Module formats, ensuring compatibility with various JavaScript environments and tools.
+- 🛠 **Utilities for Working with Assets and Chains** - [Comprehensive tools](https://github.com/cosmology-tech/chain-registry/tree/main/packages/client) to manage assets and chains efficiently.
+- 🌎 **Pre-generated Asset Lists with IBC Denominations for All Chains** - Access ready-to-use [asset lists](ttps://github.com/cosmology-tech/chain-registry/tree/main/packages/assets) across all chains.
+- 🔄 **Conversions for Keplr, Cosmostation** - Easily convert data for use with Keplr and Cosmostation wallets.
+
+## Usage
+
+### Using the `chain-registry`
+
+Fetch data from `chain-registry`:
 
 ```js
 import { assets, chains, ibc } from 'chain-registry';
@@ -65,6 +76,8 @@ will output:
 }
 ```
 
+### Using the `@chain-registry/client` for dynamic data
+
 Dynamically fetch data:
 
 ```js
@@ -92,8 +105,7 @@ const generatedAssetList = client.getGeneratedAssetLists('osmosis');
 
 ```
 
-
-## packages
+## Packages
 
 #### [chain-registry](packages/chain-registry)
 
@@ -156,7 +168,7 @@ Second, update the git submodules:
 git submodule update --remote
 ```
 
-Third, generate the code (this takes a bit since it does some linting):
+Third, generate the code:
 
 ```sh
 yarn codegen
