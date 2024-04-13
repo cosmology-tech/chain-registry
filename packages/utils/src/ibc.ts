@@ -1,4 +1,4 @@
-import { AssetList, IBCInfo } from '@chain-registry/types';
+import { AssetList, AssetTrace, IBCInfo, IBCChannelInfo, Asset } from '@chain-registry/types';
 import { sha256 } from 'sha.js';
 
 export const ibcDenom = (
@@ -26,7 +26,7 @@ export const ibcDenom = (
   );
 };
 
-const findInfo = (ibc, to, from) =>
+const findInfo = (ibc: IBCInfo[], to: string, from: string) =>
   ibc.find((i) => i.chain_1.chain_name === from && i.chain_2.chain_name === to);
 
 export const getIbcInfo = (
@@ -67,13 +67,27 @@ export const getWasmChannel = (info: IBCInfo) => {
   );
 };
 
+type DeepPartial<T> = {
+  [P in keyof T]?: T[P] extends Array<infer U>
+      ? Array<DeepPartial<U>>       // Makes elements of arrays DeepPartial
+      : T[P] extends ReadonlyArray<infer U>
+      ? ReadonlyArray<DeepPartial<U>> // Handles readonly arrays
+      : T[P] extends object
+      ? DeepPartial<T[P]>            // Makes properties of objects DeepPartial
+      : T[P];                         // Leaves non-object types unchanged
+};
+
+interface AssetListHash {
+  [key: string]: DeepPartial<AssetList>[];
+}
+
 export const getIbcAssetPath = (
   ibc: IBCInfo[],
   chain: string,
   counterparty: string,
   assets: AssetList[],
   base: string
-) => {
+): IBCChannelInfo[] => {
   const ibcInfo = getIbcInfo(ibc, chain, counterparty);
   if (!ibcInfo) {
     return [];
@@ -86,7 +100,7 @@ export const getIbcAssetPath = (
   if (!channel) {
     return [];
   }
-  let channelInfo;
+  let channelInfo: IBCChannelInfo
   if (ibcInfo.chain_1.chain_name === chain) {
     channelInfo = channel.chain_1;
   } else {
@@ -177,7 +191,7 @@ export const getIbcAssets = (
   chainName: string,
   ibc: IBCInfo[],
   assets: AssetList[]
-) => {
+): AssetList[] => {
   const chainIbcInfo = ibc.filter((i) => {
     return (
       i.chain_1.chain_name === chainName || i.chain_2.chain_name === chainName
@@ -267,7 +281,7 @@ export const getIbcAssets = (
     })
     .filter(Boolean);
 
-  const hash = ibcAssetLists.reduce((m, v) => {
+  const hash = ibcAssetLists.reduce((m: any, v) => {
     m[v.chain.chain_name] = m[v.chain.chain_name] || [];
     const assets = v.assets
       .map((asset) => {
@@ -314,7 +328,7 @@ export const getIbcAssets = (
   return Object.keys(hash).map((chain) => {
     return {
       chain_name: chain,
-      assets: hash[chain].reduce((m, v) => {
+      assets: hash[chain].reduce((m: AssetList[], v: AssetList) => {
         return [...m, ...v.assets];
       }, [])
     };
@@ -325,7 +339,7 @@ export const getCw20Assets = (
   chainName: string,
   ibc: IBCInfo[],
   assets: AssetList[]
-) => {
+): AssetList[] => {
   const chainIbcInfo = ibc.filter((i) => {
     return (
       i.chain_1.chain_name === chainName || i.chain_2.chain_name === chainName
@@ -408,10 +422,11 @@ export const getCw20Assets = (
     })
     .filter(Boolean);
 
-  const hash = cw20AssetLists.reduce((m, v) => {
-    m[v.chain.chain_name] = m[v.chain.chain_name] || [];
-    const assets = v.assets
-      .map((asset) => {
+  const hash: AssetListHash = cw20AssetLists.reduce((m: any, v) => {
+    const assetList: any = v;
+    m[assetList.chain.chain_name] = m[assetList.chain.chain_name] || [];
+    const assets = assetList.assets
+      .map((asset: Asset) => {
         try {
           return {
             ...asset,
@@ -473,8 +488,9 @@ export const getAssetLists = (
   return ibcAssetLists.reduce((m, v) => {
     const chain = v.chain_name;
     const assets = [...v.assets];
-    const cw20 = cw20Assets.find((a) => a.chain_name === chain);
+    const cw20: AssetList = cw20Assets.find((a) => a.chain_name === chain);
     if (cw20) {
+       // @ts-ignore
       [].push.apply(assets, cw20.assets);
     }
     return [
