@@ -197,10 +197,10 @@ export const getNativeAssets = (
     clone.assets = list.assets.filter(asset => {
       switch (true) {
         case asset.base.startsWith('factory/'):
-          return true;
+          return false;
 
         case asset.base.startsWith('ft') && list.chain_name === 'bitsong':
-          return true;
+          return false;
 
         case asset.base.startsWith('erc20/'):
           return true;
