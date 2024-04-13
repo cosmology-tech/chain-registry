@@ -181,7 +181,7 @@ export default ibc;
   return true;
 };
 
-const writeNetworkIndex = (filePath, networkObj) => {
+const writeNamedIndex = (filePath, networkObj) => {
   fs.writeFileSync(
     filePath,
     `${Object.keys(networkObj)
@@ -264,7 +264,7 @@ const writeRootAssets = (filePath, obj) => {
       }
 
       validNetwork.push(network_type);
-      return `import * as _${network_type} from './${network_type}/all';`;
+      return `import * as _${network_type} from './${network_type}/index';`;
     })
     .filter(Boolean)
     .join('\n');
@@ -303,7 +303,7 @@ const writeRootChains = (filePath, obj) => {
       }
 
       validNetwork.push(network_type);
-      return `import * as _${network_type} from './${network_type}/all';`;
+      return `import * as _${network_type} from './${network_type}/index';`;
     })
     .filter(Boolean)
     .join('\n');
@@ -342,7 +342,7 @@ const writeRootIbc = (filePath, obj) => {
       }
 
       validNetwork.push(network_type);
-      return `import * as _${network_type} from './${network_type}/all';`;
+      return `import * as _${network_type} from './${network_type}/index';`;
     })
     .filter(Boolean)
     .join('\n');
@@ -371,7 +371,7 @@ export default ibc;
   return true;
 };
 
-const writeRootAll = (filePath) => {
+const writeRootIndex = (filePath) => {
   fs.writeFileSync(
     filePath,
     `import assets from './assets';
@@ -388,16 +388,16 @@ export { assets, chains, ibc };`
   );
 };
 
-const writeRootIndex = (filePath, obj) => {
+const writeRootNamedFile = (filePath, obj) => {
   let imports = Object.keys(obj)
     .map((network_type) => {
-      return `export * from './${network_type}';`;
+      return `export * from './${network_type}/named';`;
     })
     .filter(Boolean)
     .join('\n');
 
   imports = `${imports}
-import all from './all';
+import all from './index';
 
 export default all;
 
@@ -573,10 +573,10 @@ Object.keys(result).forEach((network_type) => {
   const ibcFilePath = path.join(networkFolder, 'ibc.ts');
   const isIbc = writeNetworkIbc(ibcFilePath, result[network_type]);
 
-  const indexFilePath = path.join(networkFolder, 'index.ts');
-  writeNetworkIndex(indexFilePath, result[network_type]);
+  const indexFilePath = path.join(networkFolder, 'named.ts');
+  writeNamedIndex(indexFilePath, result[network_type]);
 
-  const allFilePath = path.join(networkFolder, 'all.ts');
+  const allFilePath = path.join(networkFolder, 'index.ts');
   result[network_type]['all_files'] = {
     isAssets,
     isChains,
@@ -594,8 +594,8 @@ writeRootChains(chainsRootFilePath, result);
 const ibcRootFilePath = path.join(SRC_ROOT, 'ibc.ts');
 writeRootIbc(ibcRootFilePath, result);
 
-const allRootFilePath = path.join(SRC_ROOT, 'all.ts');
-writeRootAll(allRootFilePath);
+const indexFilePath = path.join(SRC_ROOT, 'index.ts');
+writeRootIndex(indexFilePath);
 
-const indexRootFilePath = path.join(SRC_ROOT, 'index.ts');
-writeRootIndex(indexRootFilePath, result);
+const namedFilePath = path.join(SRC_ROOT, 'named.ts');
+writeRootNamedFile(namedFilePath, result);

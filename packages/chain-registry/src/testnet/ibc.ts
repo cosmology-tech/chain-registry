@@ -8,6 +8,7 @@ import * as _chain4energytestnet from './chain4energytestnet';
 import * as _composabletestnet from './composabletestnet';
 import * as _cosmoshubtestnet from './cosmoshubtestnet';
 import * as _doravotatestnet from './doravotatestnet';
+import * as _dydxtestnet from './dydxtestnet';
 import * as _elystestnet from './elystestnet';
 import * as _empowertestnet from './empowertestnet';
 import * as _entrypointtestnet from './entrypointtestnet';
@@ -24,34 +25,51 @@ import * as _nobletestnet from './nobletestnet';
 import * as _noistestnet from './noistestnet';
 import * as _nolustestnet from './nolustestnet';
 import * as _osmosistestnet from './osmosistestnet';
+import * as _osmosistestnet4 from './osmosistestnet4';
+import * as _persistencetestnet2 from './persistencetestnet2';
+import * as _quicksilvertestnet from './quicksilvertestnet';
+import * as _sagatestnet from './sagatestnet';
+import * as _sgetestnet from './sgetestnet';
 import * as _stargazetestnet from './stargazetestnet';
+import * as _terra2testnet from './terra2testnet';
+import * as _titantestnet from './titantestnet';
+import * as _xiontestnet from './xiontestnet';
 
 const ibc: IBCInfo[] = [
-  ..._akashtestnet.ibc_chain1,
-  ..._archwaytestnet.ibc_chain1,
-  ..._axelartestnet.ibc_chain1,
-  ..._celestiatestnet3.ibc_chain1,
-  ..._chain4energytestnet.ibc_chain1,
-  ..._composabletestnet.ibc_chain1,
-  ..._cosmoshubtestnet.ibc_chain1,
-  ..._doravotatestnet.ibc_chain1,
-  ..._elystestnet.ibc_chain1,
-  ..._empowertestnet.ibc_chain1,
-  ..._entrypointtestnet.ibc_chain1,
-  ..._impacthubtestnet.ibc_chain1,
-  ..._injectivetestnet.ibc_chain1,
-  ..._junotestnet.ibc_chain1,
-  ..._kujiratestnet.ibc_chain1,
-  ..._kyvetestnet.ibc_chain1,
-  ..._lavatestnet.ibc_chain1,
-  ..._likecointestnet.ibc_chain1,
-  ..._marstestnet.ibc_chain1,
-  ..._neutrontestnet.ibc_chain1,
-  ..._nobletestnet.ibc_chain1,
-  ..._noistestnet.ibc_chain1,
-  ..._nolustestnet.ibc_chain1,
-  ..._osmosistestnet.ibc_chain1,
-  ..._stargazetestnet.ibc_chain1
+  ..._akashtestnet.ibc,
+  ..._archwaytestnet.ibc,
+  ..._axelartestnet.ibc,
+  ..._celestiatestnet3.ibc,
+  ..._chain4energytestnet.ibc,
+  ..._composabletestnet.ibc,
+  ..._cosmoshubtestnet.ibc,
+  ..._doravotatestnet.ibc,
+  ..._dydxtestnet.ibc,
+  ..._elystestnet.ibc,
+  ..._empowertestnet.ibc,
+  ..._entrypointtestnet.ibc,
+  ..._impacthubtestnet.ibc,
+  ..._injectivetestnet.ibc,
+  ..._junotestnet.ibc,
+  ..._kujiratestnet.ibc,
+  ..._kyvetestnet.ibc,
+  ..._lavatestnet.ibc,
+  ..._likecointestnet.ibc,
+  ..._marstestnet.ibc,
+  ..._neutrontestnet.ibc,
+  ..._nobletestnet.ibc,
+  ..._noistestnet.ibc,
+  ..._nolustestnet.ibc,
+  ..._osmosistestnet.ibc,
+  ..._osmosistestnet4.ibc,
+  ..._persistencetestnet2.ibc,
+  ..._quicksilvertestnet.ibc,
+  ..._sagatestnet.ibc,
+  ..._sgetestnet.ibc,
+  ..._stargazetestnet.ibc,
+  ..._terra2testnet.ibc,
+  ..._titantestnet.ibc,
+  ..._xiontestnet.ibc
 ];
 
 export default ibc;
