@@ -1,5 +1,4 @@
-import assets from '../../../__fixtures__/assets.json';
-import chains from '../../../__fixtures__/chains.json';
+import { assets, chains } from '../test-utils';
 
 import {
   ChainRegistryChainUtil,

@@ -1,7 +1,6 @@
 import nock from 'nock';
 
-import assets from '../../../__fixtures__/assets.json';
-import chains from '../../../__fixtures__/chains.json';
+import { assets, chains } from '../test-utils';
 import { ChainRegistryClient } from '../src/registry';
 
 const baseUrl = 'https://raw.githubusercontent.com';
@@ -18,7 +17,7 @@ function nockByChainName(chainName: string) {
 }
 
 describe('Test client', () => {
-  let client;
+  let client: ChainRegistryClient;
   
   beforeAll(async () => {
     nockByChainName('stargaze');
