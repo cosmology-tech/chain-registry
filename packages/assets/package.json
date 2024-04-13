@@ -35,5 +35,12 @@
   "dependencies": {
     "@chain-registry/types": "^0.21.1"
   },
-  "keywords": ["chain-registry", "web3", "cosmos", "cosmos-sdk", "interchain", "tokens"]
+  "keywords": [
+    "chain-registry",
+    "web3",
+    "cosmos",
+    "cosmos-sdk",
+    "interchain",
+    "tokens"
+  ]
 }

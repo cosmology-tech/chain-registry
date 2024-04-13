@@ -27,5 +27,10 @@
     "test": "jest",
     "test:watch": "jest --watch"
   },
-  "keywords": ["chain-registry", "web3", "cosmos", "interchain"]
+  "keywords": [
+    "chain-registry",
+    "web3",
+    "cosmos",
+    "interchain"
+  ]
 }

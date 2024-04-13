@@ -25,7 +25,7 @@
     "prepare": "npm run build",
     "build": "npm run clean; tsc; tsc -p tsconfig.esm.json; npm run copy",
     "test": "jest",
-    "test:watch": "jest --watch"   
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
     "chain-registry": "^1.37.0"
@@ -35,5 +35,11 @@
     "@chain-registry/utils": "^1.22.1",
     "@cosmostation/extension-client": "0.1.15"
   },
-  "keywords": ["chain-registry", "web3", "cosmos", "interchain", "cosmostation"]
+  "keywords": [
+    "chain-registry",
+    "web3",
+    "cosmos",
+    "interchain",
+    "cosmostation"
+  ]
 }

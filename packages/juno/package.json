@@ -26,7 +26,7 @@
     "codegen": "ts-node ./scripts/build.ts",
     "build": "npm run clean; tsc; tsc -p tsconfig.esm.json; npm run copy",
     "test": "jest",
-    "test:watch": "jest --watch"   
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
     "chain-registry": "^1.37.0"
@@ -34,5 +34,13 @@
   "dependencies": {
     "@chain-registry/types": "^0.21.1"
   },
-  "keywords": ["chain-registry", "web3", "cosmos", "cosmos-sdk", "interchain", "tokens", "juno"]
+  "keywords": [
+    "chain-registry",
+    "web3",
+    "cosmos",
+    "cosmos-sdk",
+    "interchain",
+    "tokens",
+    "juno"
+  ]
 }

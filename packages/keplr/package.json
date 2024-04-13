@@ -36,5 +36,11 @@
     "@keplr-wallet/crypto": "0.12.28",
     "semver": "^7.5.0"
   },
-  "keywords": ["chain-registry", "web3", "cosmos", "interchain", "keplr"]
+  "keywords": [
+    "chain-registry",
+    "web3",
+    "cosmos",
+    "interchain",
+    "keplr"
+  ]
 }

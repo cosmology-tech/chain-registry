@@ -32,5 +32,11 @@
   "dependencies": {
     "@chain-registry/types": "^0.21.1"
   },
-  "keywords": ["chain-registry", "web3", "cosmos", "interchain", "osmosis"]
+  "keywords": [
+    "chain-registry",
+    "web3",
+    "cosmos",
+    "interchain",
+    "osmosis"
+  ]
 }
