@@ -1424,6 +1424,7 @@ const assets: AssetList = {
     },
     {
       description: 'Staking and governance coin for the Unification Blockchain',
+      extended_description: 'Fundamentally, the Unification Blockchain Toolkit comprises two core branches: Blockchain Business products, to welcome traditional enterprises into the Web3 economy; and Permissionless Products, an open-access toolkit to power and enrich Dapps on Ethereum/EVM networks',
       denom_units: [{
           denom: 'ibc/D157AD8A50DAB0FC4EB95BBE1D9407A590FA2CDEE04C90A76C005089BF76E519',
           exponent: 0,
@@ -1443,6 +1444,10 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.svg'
+      },
+      socials: {
+        website: 'https://unification.com',
+        twitter: 'https://twitter.com/UnificationUND'
       },
       coingecko_id: 'unification',
       traces: [{
@@ -1847,6 +1852,7 @@ const assets: AssetList = {
     },
     {
       description: 'Staking and governance coin for the Unification Blockchain',
+      extended_description: 'Fundamentally, the Unification Blockchain Toolkit comprises two core branches: Blockchain Business products, to welcome traditional enterprises into the Web3 economy; and Permissionless Products, an open-access toolkit to power and enrich Dapps on Ethereum/EVM networks',
       denom_units: [{
           denom: 'ibc/D157AD8A50DAB0FC4EB95BBE1D9407A590FA2CDEE04C90A76C005089BF76E519',
           exponent: 0,
@@ -1866,6 +1872,10 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.svg'
+      },
+      socials: {
+        website: 'https://unification.com',
+        twitter: 'https://twitter.com/UnificationUND'
       },
       coingecko_id: 'unification',
       traces: [{

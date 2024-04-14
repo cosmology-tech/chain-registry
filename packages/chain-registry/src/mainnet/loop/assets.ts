@@ -45,8 +45,8 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/poa.svg'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/poa.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/poa.svg'
         }],
       coingecko_id: '',
       keywords: ['poa']

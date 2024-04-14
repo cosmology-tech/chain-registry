@@ -11220,6 +11220,7 @@ const assets: AssetList = {
     },
     {
       description: 'Staking and governance coin for the Unification Blockchain',
+      extended_description: 'Fundamentally, the Unification Blockchain Toolkit comprises two core branches: Blockchain Business products, to welcome traditional enterprises into the Web3 economy; and Permissionless Products, an open-access toolkit to power and enrich Dapps on Ethereum/EVM networks',
       denom_units: [{
           denom: 'ibc/608EF5C0CE64FEA097500DB39657BDD36CA708CC5DCC2E250A024B6981DD36BC',
           exponent: 0,
@@ -11239,6 +11240,10 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.svg'
+      },
+      socials: {
+        website: 'https://unification.com',
+        twitter: 'https://twitter.com/UnificationUND'
       },
       coingecko_id: 'unification',
       traces: [{
@@ -13763,6 +13768,7 @@ const assets: AssetList = {
     },
     {
       description: 'Staking and governance coin for the Unification Blockchain',
+      extended_description: 'Fundamentally, the Unification Blockchain Toolkit comprises two core branches: Blockchain Business products, to welcome traditional enterprises into the Web3 economy; and Permissionless Products, an open-access toolkit to power and enrich Dapps on Ethereum/EVM networks',
       denom_units: [{
           denom: 'ibc/608EF5C0CE64FEA097500DB39657BDD36CA708CC5DCC2E250A024B6981DD36BC',
           exponent: 0,
@@ -13782,6 +13788,10 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.svg'
+      },
+      socials: {
+        website: 'https://unification.com',
+        twitter: 'https://twitter.com/UnificationUND'
       },
       coingecko_id: 'unification',
       traces: [{
@@ -19515,26 +19525,23 @@ const assets: AssetList = {
           exponent: 0,
           aliases: ['cw20:terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26']
         }, {
-          denom: 'astro',
+          denom: 'astro.cw20',
           exponent: 6
         }],
       type_asset: 'cw20',
       address: 'terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26',
       base: 'ibc/8410580A4F5421DFDBD888212624591E92A9E3B5C87D3C58913CE16ABD98B9B4',
-      name: 'Astroport',
-      display: 'astro',
-      symbol: 'ASTRO',
+      name: 'Astroport CW20 Token',
+      display: 'astro.cw20',
+      symbol: 'ASTRO.cw20',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
       },
-      coingecko_id: 'astroport-fi',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
         }],
       socials: {
-        website: 'https://astroport.finance/',
+        website: 'https://astroport.fi/',
         twitter: 'https://twitter.com/astroport_fi'
       },
       traces: [{
@@ -20445,6 +20452,42 @@ const assets: AssetList = {
             port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
             channel_id: 'channel-85',
             base_denom: 'cw20:terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }]
+    },
+    {
+      description: 'ClonEliteFund invests in Cosmos ecosystem projects, focusing on scalability, security, and interoperability to maximize returns.',
+      type_asset: 'cw20',
+      address: 'terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2',
+      denom_units: [{
+          denom: 'ibc/CBD4AB7EA218D56F69E3440359392D2EFA0F46C9DD5BE145C36CA36D699A8827',
+          exponent: 0,
+          aliases: ['cw20:terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2']
+        }, {
+          denom: 'CLON',
+          exponent: 6
+        }],
+      base: 'ibc/CBD4AB7EA218D56F69E3440359392D2EFA0F46C9DD5BE145C36CA36D699A8827',
+      name: 'CLON',
+      display: 'CLON',
+      symbol: 'CLON',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/clon1.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/clon1.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2',
             chain_name: 'terra2'
           },
           chain: {
@@ -20804,26 +20847,23 @@ const assets: AssetList = {
           exponent: 0,
           aliases: ['cw20:terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26']
         }, {
-          denom: 'astro',
+          denom: 'astro.cw20',
           exponent: 6
         }],
       type_asset: 'cw20',
       address: 'terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26',
       base: 'ibc/8410580A4F5421DFDBD888212624591E92A9E3B5C87D3C58913CE16ABD98B9B4',
-      name: 'Astroport',
-      display: 'astro',
-      symbol: 'ASTRO',
+      name: 'Astroport CW20 Token',
+      display: 'astro.cw20',
+      symbol: 'ASTRO.cw20',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
       },
-      coingecko_id: 'astroport-fi',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
         }],
       socials: {
-        website: 'https://astroport.finance/',
+        website: 'https://astroport.fi/',
         twitter: 'https://twitter.com/astroport_fi'
       },
       traces: [{
@@ -21734,6 +21774,42 @@ const assets: AssetList = {
             port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
             channel_id: 'channel-85',
             base_denom: 'cw20:terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }]
+    },
+    {
+      description: 'ClonEliteFund invests in Cosmos ecosystem projects, focusing on scalability, security, and interoperability to maximize returns.',
+      type_asset: 'cw20',
+      address: 'terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2',
+      denom_units: [{
+          denom: 'ibc/CBD4AB7EA218D56F69E3440359392D2EFA0F46C9DD5BE145C36CA36D699A8827',
+          exponent: 0,
+          aliases: ['cw20:terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2']
+        }, {
+          denom: 'CLON',
+          exponent: 6
+        }],
+      base: 'ibc/CBD4AB7EA218D56F69E3440359392D2EFA0F46C9DD5BE145C36CA36D699A8827',
+      name: 'CLON',
+      display: 'CLON',
+      symbol: 'CLON',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/clon1.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/clon1.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2',
             chain_name: 'terra2'
           },
           chain: {

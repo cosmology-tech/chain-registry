@@ -521,6 +521,21 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
+      }, {
+        chain_1: {
+          channel_id: 'channel-2107',
+          port_id: 'wasm.neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07'
+        },
+        chain_2: {
+          channel_id: 'channel-39589',
+          port_id: 'wasm.osmo1pfeve3esg5rhhkfhlujxtthc25akcf3zpa3t9whghvvp2v5v92ps0z30r6'
+        },
+        ordering: 'unordered',
+        version: 'astroport-ibc-v1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
       }]
   },
   {
@@ -652,6 +667,21 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
+      }, {
+        chain_1: {
+          channel_id: 'channel-2110',
+          port_id: 'wasm.neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07'
+        },
+        chain_2: {
+          channel_id: 'channel-71',
+          port_id: 'wasm.sei12fykm2xhg5ces2vmf4q2aem8c958exv3v0wmvrspa8zucrdwjeds2e2ntx'
+        },
+        ordering: 'unordered',
+        version: 'astroport-ibc-v1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
       }]
   },
   {
@@ -759,12 +789,12 @@ const info: IBCInfo[] = [
       },
       {
         chain_1: {
-          channel_id: 'channel-6',
+          channel_id: 'channel-2112',
           port_id: 'wasm.neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07'
         },
         chain_2: {
-          channel_id: 'channel-168',
-          port_id: 'wasm.terra1fkuhmq52pj08qqffp0elrvmzel8zz857x0pjjuuaar54mgcpe35s9km660'
+          channel_id: 'channel-396',
+          port_id: 'wasm.terra1k9j8rcyk87v5jvfla2m9wp200azegjz0eshl7n2pwv852a7ssceqsnn7pq'
         },
         ordering: 'unordered',
         version: 'astroport-ibc-v1',

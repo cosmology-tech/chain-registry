@@ -53,6 +53,7 @@ const info: AssetList = {
       display: 'PURSE',
       symbol: 'PURSE',
       logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.svg'
       },
       traces: [{
@@ -69,7 +70,8 @@ const info: AssetList = {
             chain_name: 'binancesmartchain',
             base_denom: '0x29a63F4B209C29B4DC47f06FFA896F32667DAD2C'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.png'
         }]
     }]
 };
