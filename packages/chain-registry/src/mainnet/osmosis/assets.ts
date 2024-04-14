@@ -11630,7 +11630,10 @@ const info: AssetList = {
       symbol: 'BRNZ',
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/BRNZ.svg'
-      }
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/BRNZ.svg'
+        }]
     },
     {
       description: 'Cvn is a Layer-1 blockchain built to deliver on the promise of DeFi',
@@ -11711,6 +11714,49 @@ const info: AssetList = {
       socials: {
         webiste: 'https://www.ibcmeme.wtf',
         twitter: 'https://twitter.com/IBCmemecoin'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ibc.png'
+        }]
+    },
+    {
+      description: 'Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.',
+      denom_units: [{
+          denom: 'ibc/B8C608CEE08C4F30A15A7955306F2EDAF4A02BB191CABC4185C1A57FD978DA1B',
+          exponent: 0,
+          aliases: ['uastro']
+        }, {
+          denom: 'astro',
+          exponent: 6
+        }],
+      type_asset: 'ics20',
+      base: 'ibc/B8C608CEE08C4F30A15A7955306F2EDAF4A02BB191CABC4185C1A57FD978DA1B',
+      name: 'Astroport token',
+      display: 'astro',
+      symbol: 'ASTRO',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'neutron',
+            base_denom: 'factory/neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07/astro',
+            channel_id: 'channel-10'
+          },
+          chain: {
+            channel_id: 'channel-874',
+            path: 'transfer/channel-874/factory/neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07/astro'
+          }
+        }],
+      images: [{
+          image_sync: {
+            chain_name: 'neutron',
+            base_denom: 'factory/neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07/astro'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.svg'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.svg'
       }
     },
     {
@@ -11767,6 +11813,106 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tinkernet/images/tnkr.svg'
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/04FAC73DFF7F1DD59395948F2F043B0BBF978AD4533EE37E811340F501A08FFB',
+          exponent: 0,
+          aliases: ['factory/migaloo1d0uma9qzcts4fzt7ml39xp44aut5k6qyjfzz4asalnecppppr3rsl52vvv/rstk']
+        }, {
+          denom: 'rstk',
+          exponent: 6
+        }],
+      type_asset: 'ics20',
+      base: 'ibc/04FAC73DFF7F1DD59395948F2F043B0BBF978AD4533EE37E811340F501A08FFB',
+      name: 'Restake DAO Token',
+      display: 'rstk',
+      symbol: 'RSTK',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'migaloo',
+            base_denom: 'factory/migaloo1d0uma9qzcts4fzt7ml39xp44aut5k6qyjfzz4asalnecppppr3rsl52vvv/rstk',
+            channel_id: 'channel-5'
+          },
+          chain: {
+            channel_id: 'channel-642',
+            path: 'transfer/channel-642/factory/migaloo1d0uma9qzcts4fzt7ml39xp44aut5k6qyjfzz4asalnecppppr3rsl52vvv/rstk'
+          }
+        }],
+      images: [{
+          image_sync: {
+            chain_name: 'migaloo',
+            base_denom: 'factory/migaloo1d0uma9qzcts4fzt7ml39xp44aut5k6qyjfzz4asalnecppppr3rsl52vvv/rstk'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.svg'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.svg'
+      }
+    },
+    {
+      description: 'Gravity Bridge Paxos Gold',
+      denom_units: [{
+          denom: 'ibc/A5CCD24BA902843B1003A7EEE5F937C632808B9CF4925601241B15C5A0A51A53',
+          exponent: 0,
+          aliases: ['gravity0x45804880De22913dAFE09f4980848ECE6EcbAf78']
+        }, {
+          denom: 'gpaxg',
+          exponent: 18
+        }],
+      type_asset: 'ics20',
+      base: 'ibc/A5CCD24BA902843B1003A7EEE5F937C632808B9CF4925601241B15C5A0A51A53',
+      name: 'Paxos Gold (Gravity Bridge)',
+      display: 'gpaxg',
+      symbol: 'PAXG.grv',
+      traces: [
+        {
+          type: 'synthetic',
+          counterparty: {
+            chain_name: 'comex',
+            base_denom: 'XAU'
+          },
+          provider: 'Paxos'
+        },
+        {
+          type: 'bridge',
+          counterparty: {
+            chain_name: 'ethereum',
+            base_denom: '0x45804880De22913dAFE09f4980848ECE6EcbAf78'
+          },
+          provider: 'Gravity Bridge'
+        },
+        {
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'gravitybridge',
+            base_denom: 'gravity0x45804880De22913dAFE09f4980848ECE6EcbAf78',
+            channel_id: 'channel-10'
+          },
+          chain: {
+            channel_id: 'channel-144',
+            path: 'transfer/channel-144/gravity0x45804880De22913dAFE09f4980848ECE6EcbAf78'
+          }
+        }
+      ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/paxg.grv.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/paxg.grv.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/paxg.grv.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/paxg.grv.svg'
+        }, {
+          image_sync: {
+            chain_name: 'gravitybridge',
+            base_denom: 'gravity0x45804880De22913dAFE09f4980848ECE6EcbAf78'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/paxg.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/paxg.svg'
         }]
     }
   ]
