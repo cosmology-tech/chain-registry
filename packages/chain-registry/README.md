@@ -26,7 +26,7 @@ A unified store of chains info, assets, asset lists, and IBC channels for the Co
 ## Features 
 
 - 🌐 **Dynamic Loading via [ChainRegistryClient](https://github.com/cosmology-tech/chain-registry/tree/main/packages/client)** - Utilize the client for dynamic data fetching.
-- 📦 **Tree-Shaking Support** - Optimize your bundles by including only what you need.
+- 📦 **Tree-Shaking Support** - Optimize your bundles and [include only what you need](#tree-shaking-imports-from-chain-registry).
 - 🔌 **Module Compatibility** - Supports both CommonJS and ES Module formats, ensuring compatibility with various JavaScript environments and tools.
 - 🛠 **Utilities for Working with Assets and Chains** - [Comprehensive tools](https://github.com/cosmology-tech/chain-registry/tree/main/packages/client) to manage assets and chains efficiently.
 - 🌎 **Pre-generated Asset Lists with IBC Denominations for All Chains** - Access ready-to-use [asset lists](ttps://github.com/cosmology-tech/chain-registry/tree/main/packages/assets) across all chains.
@@ -102,7 +102,57 @@ const assetList = client.getChainAssetList('osmosis');
 const ibcData = client.getChainIbcData('osmosis');
 // get asset list (including ibc assets)
 const generatedAssetList = client.getGeneratedAssetLists('osmosis');
+```
 
+### Tree-Shaking Imports from `chain-registry`
+
+Tree-shaking is a modern JavaScript feature that allows for smaller bundle sizes by only including the code that is actually used in your project. The `chain-registry` package supports tree-shaking, ensuring that only the specified imports are included in your bundle. Below are examples of how to import different datasets according to your needs.
+
+#### Importing Data from Mainnets, Testnets, and Devnets
+
+You can directly import assets and chain information based on the network type - mainnet, testnet, or devnet. Here’s how you can import data for each network type:
+
+- **Mainnet Chains and Assets**
+```js
+import { assets, chains } from 'chain-registry/mainnet';
+```
+
+- **Testnet Chains and Assets**
+```js
+import { assets, chains } from 'chain-registry/testnet';
+```
+
+- **Devnet Chains and Assets**
+```js
+import { assets, chains } from 'chain-registry/devnet';
+```
+
+#### Importing Specific Data from a Particular Chain
+
+If you are interested in a specific chain, such as Osmosis on the mainnet, you can import data related to that particular chain only:
+
+- **Chains and Assets from a Specific Mainnet Chain (e.g., Osmosis)**
+```js
+import { assets, chain } from 'chain-registry/mainnet/osmosis';
+```
+
+- **Only Assets from a Specific Mainnet Chain (e.g., Osmosis)**
+```js
+import assets from 'chain-registry/mainnet/osmosis/assets';
+```
+
+- **Only Chain Information from a Specific Mainnet Chain (e.g., Osmosis)**
+```js
+import chain from 'chain-registry/mainnet/osmosis/chain';
+```
+
+#### Importing Data from Non-Cosmos Chains
+
+To include data from non-Cosmos chains, use the following import:
+
+- **Assets from Non-Cosmos Chains**
+```js
+import { assets } from 'chain-registry/noncosmos';
 ```
 
 ## Packages
