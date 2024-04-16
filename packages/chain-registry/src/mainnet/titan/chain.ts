@@ -43,6 +43,18 @@ const info: Chain = {
         provider: 'Titanlab.io'
       },
       {
+        address: 'https://titan-rpc-tokyo.titanlab.io:443',
+        provider: 'Titanlab.io'
+      },
+      {
+        address: 'https://titan-rpc-seoul.titanlab.io:443',
+        provider: 'Titanlab.io'
+      },
+      {
+        address: 'https://titan-rpc-hongkong.titanlab.io:443',
+        provider: 'Titanlab.io'
+      },
+      {
         address: 'https://titan-rpc-1.titanlab.io:443',
         provider: 'Titanlab.io'
       },
@@ -51,32 +63,70 @@ const info: Chain = {
         provider: 'Titanlab.io'
       },
       {
-        address: 'https://titan-rpc-seed-1.titanlab.io:443',
-        provider: 'Titanlab.io'
-      },
-      {
         address: 'https://titan-rpc-full-1.titanlab.io:443',
         provider: 'Titanlab.io'
       }
     ],
-    rest: [{
+    rest: [
+      {
         address: 'https://titan-lcd.titanlab.io:443',
         provider: 'Titanlab.io'
-      }],
-    grpc: [{
+      },
+      {
+        address: 'https://titan-lcd-tokyo.titanlab.io:443',
+        provider: 'Titanlab.io'
+      },
+      {
+        address: 'https://titan-lcd-seoul.titanlab.io:443',
+        provider: 'Titanlab.io'
+      },
+      {
+        address: 'https://titan-lcd-hongkong.titanlab.io:443',
+        provider: 'Titanlab.io'
+      }
+    ],
+    grpc: [
+      {
         address: 'titan-grpc.titanlab.io:443',
         provider: 'Titanlab.io'
-      }],
-    "evm-http-jsonrpc": [{
+      },
+      {
+        address: 'titan-grpc-hongkong.titanlab.io:443',
+        provider: 'Titanlab.io'
+      },
+      {
+        address: 'titan-grpc-tokyo.titanlab.io:443',
+        provider: 'Titanlab.io'
+      },
+      {
+        address: 'titan-grpc-seoul.titanlab.io:443',
+        provider: 'Titanlab.io'
+      }
+    ],
+    "evm-http-jsonrpc": [
+      {
         address: 'https://titan-json-rpc.titanlab.io:443',
         provider: 'Titanlab.io'
-      }]
+      },
+      {
+        address: 'https://titan-json-rpc-tokyo.titanlab.io:443',
+        provider: 'Titanlab.io'
+      },
+      {
+        address: 'https://titan-json-rpc-seoul.titanlab.io:443',
+        provider: 'Titanlab.io'
+      },
+      {
+        address: 'https://titan-json-rpc-hongkong.titanlab.io:443',
+        provider: 'Titanlab.io'
+      }
+    ]
   },
   explorers: [{
       kind: 'ping.pub',
-      url: 'https://titan-explorer-light.titanlab.io',
-      tx_page: 'https://titan-explorer-light.titanlab.io/Titan/tx/${txHash}',
-      account_page: 'https://titan-explorer-light.titanlab.io/Titan/account/${accountAddress}'
+      url: 'https://tkxscan.io',
+      tx_page: 'https://tkxscan.io/Titan/tx/${txHash}',
+      account_page: 'https://tkxscan.io/Titan/account/${accountAddress}'
     }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/titan/images/chain.png',

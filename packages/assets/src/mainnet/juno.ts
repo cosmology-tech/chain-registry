@@ -2133,7 +2133,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.svg'
       },
-      coingecko_id: 'terrakrw',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.svg'
@@ -3728,7 +3727,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.svg'
       },
-      coingecko_id: 'terrakrw',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.svg'

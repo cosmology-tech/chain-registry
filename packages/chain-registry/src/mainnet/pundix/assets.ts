@@ -3,7 +3,7 @@ const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'pundix',
   assets: [{
-      description: 'Pundi X Token',
+      description: 'PUNDIX token is the native token that functions within the Pundi X ecosystem, including PundiX Chain and XPOS. PUNDIX has several core use cases, including:\n- Payment for goods and services from merchants through XPOS\n- Gas Fee on PundiX Chain\n- Listing tokens in the XPOS\n- Merchant payments for loyalty programs and ads',
       denom_units: [{
           denom: 'ibc/55367B7B6572631B78A93C66EF9FDFCE87CDE372CC4ED7848DA78C1EB1DCDD78',
           exponent: 0
@@ -11,6 +11,7 @@ const info: AssetList = {
           denom: 'PUNDIX',
           exponent: 18
         }],
+      type_asset: 'ics20',
       base: 'ibc/55367B7B6572631B78A93C66EF9FDFCE87CDE372CC4ED7848DA78C1EB1DCDD78',
       name: 'Pundi X Token',
       display: 'PUNDIX',
@@ -38,9 +39,14 @@ const info: AssetList = {
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.svg'
-        }]
+        }],
+      coingecko_id: 'pundi-x-2',
+      socials: {
+        website: 'https://pundix.com',
+        twitter: 'https://twitter.com/PundiXLabs'
+      }
     }, {
-      description: 'PURSE Token',
+      description: 'Purse is the decentralised loyalty program for physical stores and merchants. PURSE token shall serve as governance token of the PURSE Merchant loyalty point platform, the gas fee as well as the transaction fee on PURSE Merchant platform. To launch any merchant loyalty tokens and do transaction on the merchant platform, users and merchants need Purse tokens.',
       denom_units: [{
           denom: 'bsc0x29a63F4B209C29B4DC47f06FFA896F32667DAD2C',
           exponent: 0
@@ -48,6 +54,7 @@ const info: AssetList = {
           denom: 'PURSE',
           exponent: 18
         }],
+      type_asset: 'erc20',
       base: 'bsc0x29a63F4B209C29B4DC47f06FFA896F32667DAD2C',
       name: 'PURSE Token',
       display: 'PURSE',
@@ -72,7 +79,13 @@ const info: AssetList = {
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.svg',
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.png'
-        }]
+        }],
+      coingecko_id: 'pundi-x-purse',
+      socials: {
+        website: 'https://purse.land',
+        twitter: 'https://twitter.com/Purse_Land'
+      },
+      address: '0x29a63F4B209C29B4DC47f06FFA896F32667DAD2C'
     }]
 };
 export default info;

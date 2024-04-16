@@ -1052,7 +1052,8 @@ const asset_list: AssetList = {
         }]
     },
     {
-      description: '',
+      description: 'The native token of the Celestia blockchain.',
+      extended_description: 'Celestia is a modular data availability network. It simplifies the process of launching blockchains, making blockchain technology more accessible and user-friendly. Unlike traditional blockchains that handle multiple functions, Celestia specializes in specific roles, which leads to enhanced scalability, flexibility, and interoperability. This specialization enables developers to create blockchain applications for mass adoption​.',
       denom_units: [{
           denom: 'ibc/D79E7D83AB399BFFF93433E54FAA480C191248FC556924A2A8351AE2638B3877',
           exponent: 0,
@@ -1071,8 +1072,8 @@ const asset_list: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
         }],
       socials: {
         website: 'https://celestia.org/',
@@ -5441,7 +5442,8 @@ const asset_list: AssetList = {
         }]
     },
     {
-      description: '',
+      description: 'The native token of the Celestia blockchain.',
+      extended_description: 'Celestia is a modular data availability network. It simplifies the process of launching blockchains, making blockchain technology more accessible and user-friendly. Unlike traditional blockchains that handle multiple functions, Celestia specializes in specific roles, which leads to enhanced scalability, flexibility, and interoperability. This specialization enables developers to create blockchain applications for mass adoption​.',
       denom_units: [{
           denom: 'ibc/D79E7D83AB399BFFF93433E54FAA480C191248FC556924A2A8351AE2638B3877',
           exponent: 0,
@@ -5460,8 +5462,8 @@ const asset_list: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
         }],
       socials: {
         website: 'https://celestia.org/',
@@ -10232,7 +10234,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.svg'
       },
-      coingecko_id: 'terrakrw',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.svg'
@@ -12780,7 +12781,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.svg'
       },
-      coingecko_id: 'terrakrw',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.svg'

@@ -29,6 +29,7 @@ const info: Chain = {
   codebase: {
     cosmos_sdk_version: '0.45.11'
   },
+  description: 'Pundi X Chain is a dedicated payment-focused blockchain in the Function X network. It is specially designed to perform high throughput transactions with low latency and low transaction fees. In addition, it provides room for future compliance requirement upgrades, hardware (XPOS) integration, and Point-of-Sales compatibility, with tokenonomics that offer incentives to merchants and payment processors.',
   apis: {
     rpc: [{
         address: 'https://px-json.pundix.com',

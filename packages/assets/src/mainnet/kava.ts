@@ -38,7 +38,8 @@ const assets: AssetList = {
         }]
     },
     {
-      description: '',
+      description: 'The native token of the Celestia blockchain.',
+      extended_description: 'Celestia is a modular data availability network. It simplifies the process of launching blockchains, making blockchain technology more accessible and user-friendly. Unlike traditional blockchains that handle multiple functions, Celestia specializes in specific roles, which leads to enhanced scalability, flexibility, and interoperability. This specialization enables developers to create blockchain applications for mass adoption​.',
       denom_units: [{
           denom: 'ibc/7828FD453E26CA18E7516F4F15C9698A36E92EA058B6A113B1F75CE828BF5398',
           exponent: 0,
@@ -57,8 +58,8 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
         }],
       socials: {
         website: 'https://celestia.org/',
@@ -559,7 +560,8 @@ const assets: AssetList = {
         }]
     },
     {
-      description: '',
+      description: 'The native token of the Celestia blockchain.',
+      extended_description: 'Celestia is a modular data availability network. It simplifies the process of launching blockchains, making blockchain technology more accessible and user-friendly. Unlike traditional blockchains that handle multiple functions, Celestia specializes in specific roles, which leads to enhanced scalability, flexibility, and interoperability. This specialization enables developers to create blockchain applications for mass adoption​.',
       denom_units: [{
           denom: 'ibc/7828FD453E26CA18E7516F4F15C9698A36E92EA058B6A113B1F75CE828BF5398',
           exponent: 0,
@@ -578,8 +580,8 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
         }],
       socials: {
         website: 'https://celestia.org/',

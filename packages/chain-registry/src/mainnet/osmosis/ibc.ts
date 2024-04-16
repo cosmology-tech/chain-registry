@@ -3456,6 +3456,21 @@ const info: IBCInfo[] = [
           preferred: true,
           dex: 'osmosis'
         }
+      }, {
+        chain_1: {
+          channel_id: 'channel-39535',
+          port_id: 'wasm.osmo10vzkd8pyme67z38epdr3gf027y03dxq7t8vau5fp3r28vxks7mwse02j8f'
+        },
+        chain_2: {
+          channel_id: 'channel-309',
+          port_id: 'wasm.stars1r0a8ygvnjfaegy4n5z9325e0ew9uy2s7rn4vt7qf4ltv49fj4tnsk6pvtv'
+        },
+        ordering: 'unordered',
+        version: 'ics721-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
       }]
   },
   {

@@ -718,7 +718,7 @@ const info: AssetList = {
         }]
     },
     {
-      description: '',
+      description: 'Pepe is a community based memecoin with one mission: to make memecoins great again. Made to honor the iconic meme we all know and love, Pepe is here to take reign as the most memeable memecoin in existence, fueled purely by memetic power. Pepe is for the people.',
       type_asset: 'erc20',
       address: '0x6982508145454Ce325dDbE47a25d4ec3d2311933',
       denom_units: [{
@@ -741,7 +741,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.svg'
-        }]
+        }],
+      keywords: ['meme']
     },
     {
       description: 'Maximize ETH yield through leveraged staking across Aave, Compound and Morpho and liquidity provision of ETH liquid staking tokens on Uniswap V3.',

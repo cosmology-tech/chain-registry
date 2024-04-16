@@ -73,7 +73,7 @@ const info: Chain = {
         provider: 'genznodes'
       },
       {
-        address: 'https://nibiru.rpc.kjnodes.com',
+        address: 'https://andromeda.rpc.kjnodes.com',
         provider: 'kjnodes.com 🦄'
       },
       {
@@ -123,7 +123,7 @@ const info: Chain = {
         provider: 'genznodes'
       },
       {
-        address: 'https://nibiru.api.kjnodes.com',
+        address: 'https://andromeda.api.kjnodes.com',
         provider: 'kjnodes.com 🦄'
       },
       {
@@ -169,7 +169,7 @@ const info: Chain = {
         provider: 'genznodes'
       },
       {
-        address: 'nibiru.grpc.kjnodes.com:443',
+        address: 'andromeda.grpc.kjnodes.com:443',
         provider: 'kjnodes.com 🦄'
       },
       {

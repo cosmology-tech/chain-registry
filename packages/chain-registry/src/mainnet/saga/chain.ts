@@ -14,7 +14,7 @@ const info: Chain = {
   slip44: 118,
   staking: {
     staking_tokens: [{
-        denom: 'saga'
+        denom: 'usaga'
       }],
     lock_duration: {
       time: '1814400s'

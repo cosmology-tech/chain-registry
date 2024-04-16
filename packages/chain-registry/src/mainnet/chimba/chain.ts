@@ -21,7 +21,7 @@ const info: Chain = {
   },
   staking: {
     staking_tokens: [{
-        denom: 'chimba'
+        denom: 'ucmba'
       }]
   },
   codebase: {
