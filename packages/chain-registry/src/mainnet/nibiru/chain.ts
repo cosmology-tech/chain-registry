@@ -114,6 +114,10 @@ const info: Chain = {
       {
         address: 'https://nibiru.api.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://nibiru.api.staking-explorer.com',
+        provider: 'Daily DROP'
       }
     ],
     grpc: [

@@ -85,20 +85,21 @@ const assets: AssetList = {
           exponent: 6,
           aliases: []
         }],
+      type_asset: 'sdk.coin',
       base: 'ibc/595E931CAD432E2AE4EBDF3C8B63150265B752C6E8410B64ABBA8875F3E1CFF3',
-      name: 'Osmosis',
+      name: 'Osmosis Testnet',
       display: 'osmo',
       symbol: 'OSMO',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
       },
-      coingecko_id: 'osmosis',
-      keywords: ['dex', 'staking'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
         }],
+      coingecko_id: 'osmosis',
+      keywords: ['dex', 'staking'],
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -120,6 +121,7 @@ const assets: AssetList = {
           denom: 'ion',
           exponent: 6
         }],
+      type_asset: 'sdk.coin',
       base: 'ibc/6956448FB6415647C7065B983EDF76018FADDC95988F1BCC1C9B43C2354CF9BC',
       name: 'Ion',
       display: 'ion',
@@ -128,12 +130,12 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
       },
-      coingecko_id: 'ion',
-      keywords: ['memecoin'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
         }],
+      coingecko_id: 'ion',
+      keywords: ['memecoin'],
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -229,20 +231,21 @@ const assets: AssetList = {
           exponent: 6,
           aliases: []
         }],
+      type_asset: 'sdk.coin',
       base: 'ibc/595E931CAD432E2AE4EBDF3C8B63150265B752C6E8410B64ABBA8875F3E1CFF3',
-      name: 'Osmosis',
+      name: 'Osmosis Testnet',
       display: 'osmo',
       symbol: 'OSMO',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
       },
-      coingecko_id: 'osmosis',
-      keywords: ['dex', 'staking'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
         }],
+      coingecko_id: 'osmosis',
+      keywords: ['dex', 'staking'],
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -264,6 +267,7 @@ const assets: AssetList = {
           denom: 'ion',
           exponent: 6
         }],
+      type_asset: 'sdk.coin',
       base: 'ibc/6956448FB6415647C7065B983EDF76018FADDC95988F1BCC1C9B43C2354CF9BC',
       name: 'Ion',
       display: 'ion',
@@ -272,12 +276,12 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
       },
-      coingecko_id: 'ion',
-      keywords: ['memecoin'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
         }],
+      coingecko_id: 'ion',
+      keywords: ['memecoin'],
       traces: [{
           type: 'ibc',
           counterparty: {

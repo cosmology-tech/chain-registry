@@ -54,7 +54,7 @@ const info: AssetList = {
           denom: 'PURSE',
           exponent: 18
         }],
-      type_asset: 'erc20',
+      type_asset: 'sdk.coin',
       base: 'bsc0x29a63F4B209C29B4DC47f06FFA896F32667DAD2C',
       name: 'PURSE Token',
       display: 'PURSE',
@@ -84,8 +84,7 @@ const info: AssetList = {
       socials: {
         website: 'https://purse.land',
         twitter: 'https://twitter.com/Purse_Land'
-      },
-      address: '0x29a63F4B209C29B4DC47f06FFA896F32667DAD2C'
+      }
     }]
 };
 export default info;

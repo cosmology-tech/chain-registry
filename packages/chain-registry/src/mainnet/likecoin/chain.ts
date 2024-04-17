@@ -52,7 +52,7 @@ const info: Chain = {
         provider: 'PikaSer'
       },
       {
-        address: 'http://51.159.223.25:28657',
+        address: 'https://rpc.likecoin.citizenweb3.com:443',
         provider: 'Citizen Web3'
       }
     ],

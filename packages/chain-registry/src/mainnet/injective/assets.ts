@@ -225,7 +225,7 @@ const info: AssetList = {
       }
     },
     {
-      description: 'Hava Coin is the lifeblood of the Cosmos & Injective networks, rewarding builders and welcoming supporters. https://havacoin.xyz/',
+      description: 'Hava Coin is the lifeblood of the Cosmos & Injective networks, rewarding builders and welcoming supporters.',
       denom_units: [{
           denom: 'factory/inj1h0ypsdtjfcjynqu3m75z2zwwz5mmrj8rtk2g52/uhava',
           exponent: 0
@@ -237,12 +237,17 @@ const info: AssetList = {
       name: 'Hava Coin',
       display: 'hava',
       symbol: 'HAVA',
+      coingecko_id: 'hava-coin',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/hava.png'
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/hava.png'
-        }]
+        }],
+      socials: {
+        webiste: 'https://havacoin.xyz/',
+        twitter: 'https://twitter.com/Hava_Coin'
+      }
     },
     {
       description: 'A clan of 11y bad kids crafting chaos on the Cosmos eco. One bad memecoin to rule them all  $BADKID. Airdropped to Badkids NFT holders and $STARS stakers. It\'s so bad, your wallet\'s throwing a tantrum for it.',

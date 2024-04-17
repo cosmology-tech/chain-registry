@@ -88,7 +88,7 @@ const info: Chain = {
         provider: 'Hexnodes'
       },
       {
-        address: 'http://rpc.bitcanna.citizencosmos.space/',
+        address: 'https://rpc.bitcanna.citizenweb3.com:443',
         provider: 'Citizen Web3'
       },
       {
