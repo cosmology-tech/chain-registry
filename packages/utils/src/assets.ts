@@ -150,7 +150,7 @@ export const getExponentBySymbol = (
   return asset ? getExponentFromAsset(asset) : undefined;
 };
 
-export const getNativeTokenByChainName = (
+export const getNativeAssetByChainName = (
   assets: AssetList[],
   chainName: string
 ): Asset | undefined => {
@@ -165,7 +165,7 @@ export const getNativeTokenByChainName = (
   return assetList?.assets[0];
 };
 
-export const getTokenLogoByDenom = (
+export const getAssetLogoByDenom = (
   assets: AssetList[],
   denom: Denom,
   chainName?: string
@@ -178,11 +178,11 @@ export const getChainLogo = (
   assets: AssetList[],
   chainName: string
 ): string | undefined => {
-  const nativeToken = getNativeTokenByChainName(assets, chainName);
-  return Object.values(nativeToken?.logo_URIs || {})[0];
+  const nativeAsset = getNativeAssetByChainName(assets, chainName);
+  return Object.values(nativeAsset?.logo_URIs || {})[0];
 };
 
-export const getTokenNameByDenom = (
+export const getAssetNameByDenom = (
   assets: AssetList[],
   denom: Denom,
   chainName?: string
