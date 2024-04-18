@@ -9438,7 +9438,7 @@ const asset_list: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scr.svg'
         }],
       socials: {
-        website: 'https://scorum.com',
+        website: 'https://scorum.network',
         twitter: 'https://twitter.com/scorum_en'
       },
       traces: [{
@@ -11985,7 +11985,7 @@ const asset_list: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scr.svg'
         }],
       socials: {
-        website: 'https://scorum.com',
+        website: 'https://scorum.network',
         twitter: 'https://twitter.com/scorum_en'
       },
       traces: [{

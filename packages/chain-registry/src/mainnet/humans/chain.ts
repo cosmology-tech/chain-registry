@@ -87,6 +87,10 @@ const info: Chain = {
       {
         address: 'https://humans-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://humans-mainnet-rpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
     rest: [
@@ -137,6 +141,10 @@ const info: Chain = {
       {
         address: 'https://humans-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://humans-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
     grpc: [
@@ -175,6 +183,10 @@ const info: Chain = {
       {
         address: 'humans-grpc.noders.services:21090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'humans-mainnet-grpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
     "evm-http-jsonrpc": [

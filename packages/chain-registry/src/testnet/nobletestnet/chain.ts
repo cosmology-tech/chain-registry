@@ -55,8 +55,8 @@ const info: Chain = {
   },
   explorers: [{
       kind: 'mintscan',
-      url: 'https://testnet.mintscan.io/noble-testnet',
-      tx_page: 'https://testnet.mintscan.io/noble-testnet/txs/${txHash}'
+      url: 'https://mintscan.io/noble-testnet',
+      tx_page: 'https://mintscan.io/noble-testnet/txs/${txHash}'
     }, {
       kind: 'ping.pub',
       url: 'https://explore.strange.love/grand-1',

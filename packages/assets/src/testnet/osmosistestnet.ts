@@ -141,14 +141,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Chain4Energy',
       denom_units: [{
-          denom: 'ibc/E3D323CB6F427C49E56F913C853A416F6B71BAA9B0164625AD0203266F92B3ED',
+          denom: 'ibc/539BC2B6E70117D220834D6DF8E27307655D1325C0CADF7E3AF90AB00D9F8D69',
           exponent: 0,
           aliases: ['uc4e']
         }, {
           denom: 'c4e',
           exponent: 6
         }],
-      base: 'ibc/E3D323CB6F427C49E56F913C853A416F6B71BAA9B0164625AD0203266F92B3ED',
+      base: 'ibc/539BC2B6E70117D220834D6DF8E27307655D1325C0CADF7E3AF90AB00D9F8D69',
       name: 'Chain4Energy',
       display: 'c4e',
       symbol: 'C4E',
@@ -162,12 +162,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-0',
+            channel_id: 'channel-5',
             base_denom: 'uc4e',
             chain_name: 'chain4energytestnet'
           },
           chain: {
-            channel_id: 'channel-111'
+            channel_id: 'channel-7735'
           }
         }]
     },
@@ -773,14 +773,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Chain4Energy',
       denom_units: [{
-          denom: 'ibc/E3D323CB6F427C49E56F913C853A416F6B71BAA9B0164625AD0203266F92B3ED',
+          denom: 'ibc/539BC2B6E70117D220834D6DF8E27307655D1325C0CADF7E3AF90AB00D9F8D69',
           exponent: 0,
           aliases: ['uc4e']
         }, {
           denom: 'c4e',
           exponent: 6
         }],
-      base: 'ibc/E3D323CB6F427C49E56F913C853A416F6B71BAA9B0164625AD0203266F92B3ED',
+      base: 'ibc/539BC2B6E70117D220834D6DF8E27307655D1325C0CADF7E3AF90AB00D9F8D69',
       name: 'Chain4Energy',
       display: 'c4e',
       symbol: 'C4E',
@@ -794,12 +794,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-0',
+            channel_id: 'channel-5',
             base_denom: 'uc4e',
             chain_name: 'chain4energytestnet'
           },
           chain: {
-            channel_id: 'channel-111'
+            channel_id: 'channel-7735'
           }
         }]
     },
