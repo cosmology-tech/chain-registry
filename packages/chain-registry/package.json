@@ -1,6 +1,6 @@
 {
   "name": "chain-registry",
-  "version": "1.41.4",
+  "version": "1.41.5",
   "description": "Cosmos chain registry ⚛️",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry/tree/master/packages/chain-registry#readme",
@@ -29,11 +29,11 @@
     "test:watch": "jest --watch"
   },
   "devDependencies": {
-    "@chain-registry/utils": "^1.26.3",
+    "@chain-registry/utils": "^1.26.4",
     "deepmerge": "^4.2.2"
   },
   "dependencies": {
-    "@chain-registry/types": "^0.25.3"
+    "@chain-registry/types": "^0.25.4"
   },
   "keywords": [
     "chain-registry",
