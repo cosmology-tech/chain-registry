@@ -45,39 +45,66 @@ const info: Chain = {
       {
         address: 'https://saga-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://rpc.saga.nodestake.org',
+        provider: 'NodeStake'
       }
     ],
-    rest: [{
+    rest: [
+      {
         address: 'https://saga-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
-      }, {
+      },
+      {
         address: 'https://saga-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      }],
-    grpc: [{
+      },
+      {
+        address: 'https://api.saga.nodestake.org',
+        provider: 'NodeStake'
+      }
+    ],
+    grpc: [
+      {
         address: 'saga-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
-      }, {
+      },
+      {
         address: 'saga-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      }]
+      },
+      {
+        address: 'grpc.saga.nodestake.org:443',
+        provider: 'NodeStake'
+      }
+    ]
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg'
   },
   description: 'Saga is a Layer 1 protocol that allows developers to automatically spin up VM-agnostic, parallelized and interoperable dedicated chains, or “Chainlets,” that provide applications with infinite horizontal scalability. Each Chainlet is a replica of the Saga Mainnet, with the same validator set and security model.\n\nSaga’s mission is to enable the next 1000 chains in gaming and entertainment as part of the growing Saga Multiverse. ',
-  explorers: [{
+  explorers: [
+    {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/saga',
       tx_page: 'https://www.mintscan.io/saga/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/saga/accounts/${accountAddress}'
-    }, {
+    },
+    {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/saga',
       tx_page: 'https://ezstaking.app/saga/txs/${txHash}',
       account_page: 'https://ezstaking.app/saga/account/${accountAddress}'
-    }],
+    },
+    {
+      kind: 'NodeStake',
+      url: 'https://explorer.nodestake.org/saga',
+      tx_page: 'https://explorer.nodestake.org/saga/tx/${txHash}',
+      account_page: 'https://explorer.nodestake.org/saga/account/${accountAddress}'
+    }
+  ],
   keywords: [],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
