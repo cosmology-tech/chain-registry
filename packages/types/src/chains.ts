@@ -1,3 +1,25 @@
+interface BinaryPlatforms {
+  'linux/amd64'?: string;
+  'linux/arm64'?: string;
+  'darwin/amd64'?: string;
+  'darwin/arm64'?: string;
+  'windows/amd64'?: string;
+  'windows/arm64'?: string;
+}
+
+interface ApiConfiguration {
+  address: string;
+  provider?: string;
+  archive?: boolean;
+}
+
+type IcsEnabled = ('ics20-1' | 'ics27-1' | 'mauth' | string)[];
+
+interface ConsensusType {
+  type: 'tendermint' | 'cometbft';
+  version?: string;
+}
+
 export interface Chain {
   $schema?: string;
   chain_name: string;
@@ -104,19 +126,9 @@ export interface Chain {
     git_repo?: string;
     recommended_version?: string;
     compatible_versions?: string[];
-    binaries?: {
-      'linux/amd64'?: string;
-      'linux/arm64'?: string;
-      'darwin/amd64'?: string;
-      'darwin/arm64'?: string;
-      'windows/amd64'?: string;
-      'windows/arm64'?: string;
-    };
+    binaries?: BinaryPlatforms;
     cosmos_sdk_version?: string;
-    consensus?: {
-      type: 'tendermint' | 'cometbft';
-      version?: string;
-    };
+    consensus?: ConsensusType;
     cosmwasm_version?: string;
     cosmwasm_enabled?: boolean;
     cosmwasm_path?: string;
@@ -124,7 +136,7 @@ export interface Chain {
     /**
      * List of IBC apps (usually corresponding to a ICS standard) which have been enabled on the network.
      */
-    ics_enabled?: ('ics20-1' | 'ics27-1' | 'mauth' | string)[];
+    ics_enabled?: IcsEnabled;
     genesis?: {
       name?: string;
       genesis_url?: string;
@@ -152,25 +164,15 @@ export interface Chain {
       cosmwasm_path?: string;
       compatible_versions?: string[];
       cosmos_sdk_version?: string;
-      consensus?: {
-        type: 'tendermint' | 'cometbft';
-        version?: string;
-      };
+      consensus?: ConsensusType;
       cosmwasm_version?: string;
       cosmwasm_enabled?: boolean;
       ibc_go_version?: string;
       /**
        * List of IBC apps (usually corresponding to a ICS standard) which have been enabled on the network.
        */
-      ics_enabled?: ('ics20-1' | 'ics27-1' | 'mauth' | string)[];
-      binaries?: {
-        'linux/amd64'?: string;
-        'linux/arm64'?: string;
-        'darwin/amd64'?: string;
-        'darwin/arm64'?: string;
-        'windows/amd64'?: string;
-        'windows/arm64'?: string;
-      };
+      ics_enabled?: IcsEnabled;
+      binaries?: BinaryPlatforms;
     }[];
   };
   peers?: {
@@ -182,46 +184,14 @@ export interface Chain {
     }[];
   };
   apis?: {
-    rpc?: {
-      address: string;
-      provider?: string;
-      archive?: boolean;
-    }[];
-    rest?: {
-      address: string;
-      provider?: string;
-      archive?: boolean;
-    }[];
-    grpc?: {
-      address: string;
-      provider?: string;
-      archive?: boolean;
-    }[];
-    'evm-http-jsonrpc'?: {
-      address: string;
-      provider?: string;
-      archive?: boolean;
-    }[];
-    'grpc-web'?: {
-      address: string;
-      provider?: string;
-      archive?: boolean;
-    }[];
-    wss?: {
-      address: string;
-      provider?: string;
-      archive?: boolean;
-    }[];
-    sidechains_rpc?: {
-      address: string;
-      provider?: string;
-      archive?: boolean;
-    }[];
-    [key: string]: {
-      address: string;
-      provider?: string;
-      archive?: boolean;
-    }[];
+    rpc?: ApiConfiguration[];
+    rest?: ApiConfiguration[];
+    grpc?: ApiConfiguration[];
+    'evm-http-jsonrpc'?: ApiConfiguration[];
+    'grpc-web'?: ApiConfiguration[];
+    wss?: ApiConfiguration[];
+    sidechains_rpc?: ApiConfiguration[];
+    [key: string]: ApiConfiguration[]|undefined;
   };
 }
 

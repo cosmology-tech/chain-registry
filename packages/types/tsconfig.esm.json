@@ -4,6 +4,7 @@
     "outDir": "dist/esm",
     "module": "es2022",
     "rootDir": "src/",
-    "declaration": false
+    "declaration": false,
+    "strict": true
   }
 }
