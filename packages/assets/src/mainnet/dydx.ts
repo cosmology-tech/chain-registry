@@ -195,6 +195,7 @@ const assets: AssetList = {
     },
     {
       description: 'The token of Neokingdom DAO.',
+      extended_description: 'Neokingdom DAO wants to make employment fairer, by facilitating both web3 and real-world businesses to operate as Decentralized Autonomous Organizations (DAOs).',
       denom_units: [{
           denom: 'ibc/0B41F8EB39912A15611BC834EB98962B59EE03C4CA8F781E709BB875BC18DC4B',
           exponent: 0,
@@ -215,6 +216,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg'
         }],
+      socials: {
+        webiste: 'https://www.neokingdom.org/',
+        twitter: 'https://twitter.com/NEOKingdomDAO'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -996,6 +1001,7 @@ const assets: AssetList = {
     },
     {
       description: 'The token of Neokingdom DAO.',
+      extended_description: 'Neokingdom DAO wants to make employment fairer, by facilitating both web3 and real-world businesses to operate as Decentralized Autonomous Organizations (DAOs).',
       denom_units: [{
           denom: 'ibc/0B41F8EB39912A15611BC834EB98962B59EE03C4CA8F781E709BB875BC18DC4B',
           exponent: 0,
@@ -1016,6 +1022,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg'
         }],
+      socials: {
+        webiste: 'https://www.neokingdom.org/',
+        twitter: 'https://twitter.com/NEOKingdomDAO'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {

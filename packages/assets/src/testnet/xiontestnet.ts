@@ -5,14 +5,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Axelar',
       denom_units: [{
-          denom: 'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
+          denom: 'ibc/05007A23A23D8B3D286EC4A541189D86C0B76FD769008E4C85EBE977DDA437D3',
           exponent: 0,
           aliases: ['uaxl']
         }, {
           denom: 'axl',
           exponent: 6
         }],
-      base: 'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
+      base: 'ibc/05007A23A23D8B3D286EC4A541189D86C0B76FD769008E4C85EBE977DDA437D3',
       name: 'Axelar',
       display: 'axl',
       symbol: 'AXL',
@@ -28,26 +28,26 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-283',
+            channel_id: 'channel-462',
             base_denom: 'uaxl',
             chain_name: 'axelartestnet'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-486'
           }
         }]
     },
     {
       description: 'The INJ token is the native governance token for the Injective chain.',
       denom_units: [{
-          denom: 'ibc/0166AE2224341A3F70943E315DAC6EDF012A638D0F9358794FF7525BA1DFC191',
+          denom: 'ibc/05314A48723E06A1B1B666066B6BEC89F3708E8854DF2E5E9193387AA9653036',
           exponent: 0,
           aliases: ['inj']
         }, {
           denom: 'INJ',
           exponent: 18
         }],
-      base: 'ibc/0166AE2224341A3F70943E315DAC6EDF012A638D0F9358794FF7525BA1DFC191',
+      base: 'ibc/05314A48723E06A1B1B666066B6BEC89F3708E8854DF2E5E9193387AA9653036',
       name: 'Injective',
       display: 'INJ',
       symbol: 'INJ',
@@ -63,71 +63,71 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-324',
+            channel_id: 'channel-489',
             base_denom: 'inj',
             chain_name: 'injectivetestnet'
           },
           chain: {
-            channel_id: 'channel-215'
+            channel_id: 'channel-487'
           }
         }]
     },
     {
       description: 'The controlled staking asset for Noble Chain',
       denom_units: [{
-          denom: 'ibc/64332FEC2E9CD57D3289247C3AE47D5CB0F517A8247963F5025F31F32E3AA501',
+          denom: 'ibc/C8FD14D5DA62F9C74732082F87954EF1EAAB921A1E0F9435A8036EB0AAFB2224',
           exponent: 0,
           aliases: ['ustake']
         }, {
           denom: 'stake',
           exponent: 6
         }],
-      base: 'ibc/64332FEC2E9CD57D3289247C3AE47D5CB0F517A8247963F5025F31F32E3AA501',
+      base: 'ibc/C8FD14D5DA62F9C74732082F87954EF1EAAB921A1E0F9435A8036EB0AAFB2224',
       name: 'Stake',
       display: 'stake',
       symbol: 'STAKE',
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-17',
+            channel_id: 'channel-147',
             base_denom: 'ustake',
             chain_name: 'nobletestnet'
           },
           chain: {
-            channel_id: 'channel-9'
+            channel_id: 'channel-489'
           }
         }]
     },
     {
       description: 'Love is a test tokenfactory asset controlled by the Strangelove Team',
       denom_units: [{
-          denom: 'ibc/3960120CE93CEA8FEA2CDA063D3BADA5954E9F0113DA7FBA288592F8C4DABF5B',
+          denom: 'ibc/197E0E61120F536972C6456BF2D4D2F786110EA228E31E5CE8695F7C5C96D42B',
           exponent: 0,
           aliases: ['ulove']
         }, {
           denom: 'love',
           exponent: 6
         }],
-      base: 'ibc/3960120CE93CEA8FEA2CDA063D3BADA5954E9F0113DA7FBA288592F8C4DABF5B',
+      base: 'ibc/197E0E61120F536972C6456BF2D4D2F786110EA228E31E5CE8695F7C5C96D42B',
       display: 'love',
       name: 'Love',
       symbol: 'LOVE',
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-17',
+            channel_id: 'channel-147',
             base_denom: 'ulove',
             chain_name: 'nobletestnet'
           },
           chain: {
-            channel_id: 'channel-9'
+            channel_id: 'channel-489'
           }
         }]
     },
     {
       description: 'The native token of Osmosis',
       denom_units: [{
-          denom: 'ibc/6AE2756AA7EAA8FA06E11472EA05CA681BD8D3FBC1AAA9F06C79D1EC1C90DC9B',
+          denom: 'ibc/484532EB74866F3FB8A71F909F7B1B470FE2E66313DA0A1F9EE5B7C5C046D195',
           exponent: 0,
           aliases: ['uosmo']
         }, {
@@ -136,7 +136,7 @@ const assets: AssetList = {
           aliases: []
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/6AE2756AA7EAA8FA06E11472EA05CA681BD8D3FBC1AAA9F06C79D1EC1C90DC9B',
+      base: 'ibc/484532EB74866F3FB8A71F909F7B1B470FE2E66313DA0A1F9EE5B7C5C046D195',
       name: 'Osmosis Testnet',
       display: 'osmo',
       symbol: 'OSMO',
@@ -153,18 +153,18 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4410',
+            channel_id: 'channel-6668',
             base_denom: 'uosmo',
             chain_name: 'osmosistestnet'
           },
           chain: {
-            channel_id: 'channel-12'
+            channel_id: 'channel-490'
           }
         }]
     },
     {
       denom_units: [{
-          denom: 'ibc/FBA36393A0FF23EAAD5B1A99E06F66128F20E7A78B3FD58632F0FC247167DA17',
+          denom: 'ibc/C622FF9AEDA0202E1910CF9F8D67C2BCC7AEE49E506EFE617A364875B8BFD92F',
           exponent: 0,
           aliases: ['uion']
         }, {
@@ -172,7 +172,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/FBA36393A0FF23EAAD5B1A99E06F66128F20E7A78B3FD58632F0FC247167DA17',
+      base: 'ibc/C622FF9AEDA0202E1910CF9F8D67C2BCC7AEE49E506EFE617A364875B8BFD92F',
       name: 'Ion',
       display: 'ion',
       symbol: 'ION',
@@ -189,26 +189,26 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4410',
+            channel_id: 'channel-6668',
             base_denom: 'uion',
             chain_name: 'osmosistestnet'
           },
           chain: {
-            channel_id: 'channel-12'
+            channel_id: 'channel-490'
           }
         }]
     },
     {
       description: 'The native token of Axelar',
       denom_units: [{
-          denom: 'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
+          denom: 'ibc/05007A23A23D8B3D286EC4A541189D86C0B76FD769008E4C85EBE977DDA437D3',
           exponent: 0,
           aliases: ['uaxl']
         }, {
           denom: 'axl',
           exponent: 6
         }],
-      base: 'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
+      base: 'ibc/05007A23A23D8B3D286EC4A541189D86C0B76FD769008E4C85EBE977DDA437D3',
       name: 'Axelar',
       display: 'axl',
       symbol: 'AXL',
@@ -224,26 +224,26 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-283',
+            channel_id: 'channel-462',
             base_denom: 'uaxl',
             chain_name: 'axelartestnet'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-486'
           }
         }]
     },
     {
       description: 'The INJ token is the native governance token for the Injective chain.',
       denom_units: [{
-          denom: 'ibc/0166AE2224341A3F70943E315DAC6EDF012A638D0F9358794FF7525BA1DFC191',
+          denom: 'ibc/05314A48723E06A1B1B666066B6BEC89F3708E8854DF2E5E9193387AA9653036',
           exponent: 0,
           aliases: ['inj']
         }, {
           denom: 'INJ',
           exponent: 18
         }],
-      base: 'ibc/0166AE2224341A3F70943E315DAC6EDF012A638D0F9358794FF7525BA1DFC191',
+      base: 'ibc/05314A48723E06A1B1B666066B6BEC89F3708E8854DF2E5E9193387AA9653036',
       name: 'Injective',
       display: 'INJ',
       symbol: 'INJ',
@@ -259,71 +259,71 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-324',
+            channel_id: 'channel-489',
             base_denom: 'inj',
             chain_name: 'injectivetestnet'
           },
           chain: {
-            channel_id: 'channel-215'
+            channel_id: 'channel-487'
           }
         }]
     },
     {
       description: 'The controlled staking asset for Noble Chain',
       denom_units: [{
-          denom: 'ibc/64332FEC2E9CD57D3289247C3AE47D5CB0F517A8247963F5025F31F32E3AA501',
+          denom: 'ibc/C8FD14D5DA62F9C74732082F87954EF1EAAB921A1E0F9435A8036EB0AAFB2224',
           exponent: 0,
           aliases: ['ustake']
         }, {
           denom: 'stake',
           exponent: 6
         }],
-      base: 'ibc/64332FEC2E9CD57D3289247C3AE47D5CB0F517A8247963F5025F31F32E3AA501',
+      base: 'ibc/C8FD14D5DA62F9C74732082F87954EF1EAAB921A1E0F9435A8036EB0AAFB2224',
       name: 'Stake',
       display: 'stake',
       symbol: 'STAKE',
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-17',
+            channel_id: 'channel-147',
             base_denom: 'ustake',
             chain_name: 'nobletestnet'
           },
           chain: {
-            channel_id: 'channel-9'
+            channel_id: 'channel-489'
           }
         }]
     },
     {
       description: 'Love is a test tokenfactory asset controlled by the Strangelove Team',
       denom_units: [{
-          denom: 'ibc/3960120CE93CEA8FEA2CDA063D3BADA5954E9F0113DA7FBA288592F8C4DABF5B',
+          denom: 'ibc/197E0E61120F536972C6456BF2D4D2F786110EA228E31E5CE8695F7C5C96D42B',
           exponent: 0,
           aliases: ['ulove']
         }, {
           denom: 'love',
           exponent: 6
         }],
-      base: 'ibc/3960120CE93CEA8FEA2CDA063D3BADA5954E9F0113DA7FBA288592F8C4DABF5B',
+      base: 'ibc/197E0E61120F536972C6456BF2D4D2F786110EA228E31E5CE8695F7C5C96D42B',
       display: 'love',
       name: 'Love',
       symbol: 'LOVE',
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-17',
+            channel_id: 'channel-147',
             base_denom: 'ulove',
             chain_name: 'nobletestnet'
           },
           chain: {
-            channel_id: 'channel-9'
+            channel_id: 'channel-489'
           }
         }]
     },
     {
       description: 'The native token of Osmosis',
       denom_units: [{
-          denom: 'ibc/6AE2756AA7EAA8FA06E11472EA05CA681BD8D3FBC1AAA9F06C79D1EC1C90DC9B',
+          denom: 'ibc/484532EB74866F3FB8A71F909F7B1B470FE2E66313DA0A1F9EE5B7C5C046D195',
           exponent: 0,
           aliases: ['uosmo']
         }, {
@@ -332,7 +332,7 @@ const assets: AssetList = {
           aliases: []
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/6AE2756AA7EAA8FA06E11472EA05CA681BD8D3FBC1AAA9F06C79D1EC1C90DC9B',
+      base: 'ibc/484532EB74866F3FB8A71F909F7B1B470FE2E66313DA0A1F9EE5B7C5C046D195',
       name: 'Osmosis Testnet',
       display: 'osmo',
       symbol: 'OSMO',
@@ -349,18 +349,18 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4410',
+            channel_id: 'channel-6668',
             base_denom: 'uosmo',
             chain_name: 'osmosistestnet'
           },
           chain: {
-            channel_id: 'channel-12'
+            channel_id: 'channel-490'
           }
         }]
     },
     {
       denom_units: [{
-          denom: 'ibc/FBA36393A0FF23EAAD5B1A99E06F66128F20E7A78B3FD58632F0FC247167DA17',
+          denom: 'ibc/C622FF9AEDA0202E1910CF9F8D67C2BCC7AEE49E506EFE617A364875B8BFD92F',
           exponent: 0,
           aliases: ['uion']
         }, {
@@ -368,7 +368,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/FBA36393A0FF23EAAD5B1A99E06F66128F20E7A78B3FD58632F0FC247167DA17',
+      base: 'ibc/C622FF9AEDA0202E1910CF9F8D67C2BCC7AEE49E506EFE617A364875B8BFD92F',
       name: 'Ion',
       display: 'ion',
       symbol: 'ION',
@@ -385,12 +385,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4410',
+            channel_id: 'channel-6668',
             base_denom: 'uion',
             chain_name: 'osmosistestnet'
           },
           chain: {
-            channel_id: 'channel-12'
+            channel_id: 'channel-490'
           }
         }]
     }

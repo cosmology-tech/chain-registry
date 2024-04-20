@@ -1591,7 +1591,7 @@ const assets: AssetList = {
     {
       description: 'The native staking token of the Xion network.',
       denom_units: [{
-          denom: 'ibc/3642669AD14386D3E38F43F30CFCA859B3E8A05BF6BD6A23DEBD2115AD1325E9',
+          denom: 'ibc/5C274155106FEB0C093F76A12BB67222E479E1EBE043F319CE4463E54F7A357C',
           exponent: 0,
           aliases: ['uxion']
         }, {
@@ -1599,7 +1599,7 @@ const assets: AssetList = {
           exponent: 6,
           aliases: ['xion']
         }],
-      base: 'ibc/3642669AD14386D3E38F43F30CFCA859B3E8A05BF6BD6A23DEBD2115AD1325E9',
+      base: 'ibc/5C274155106FEB0C093F76A12BB67222E479E1EBE043F319CE4463E54F7A357C',
       display: 'XION',
       name: 'xion',
       symbol: 'XION',
@@ -1612,12 +1612,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-12',
+            channel_id: 'channel-490',
             base_denom: 'uxion',
             chain_name: 'xiontestnet'
           },
           chain: {
-            channel_id: 'channel-4410'
+            channel_id: 'channel-6668'
           }
         }]
     },
@@ -1946,7 +1946,7 @@ const assets: AssetList = {
     {
       description: 'The native staking token of the Xion network.',
       denom_units: [{
-          denom: 'ibc/3642669AD14386D3E38F43F30CFCA859B3E8A05BF6BD6A23DEBD2115AD1325E9',
+          denom: 'ibc/5C274155106FEB0C093F76A12BB67222E479E1EBE043F319CE4463E54F7A357C',
           exponent: 0,
           aliases: ['uxion']
         }, {
@@ -1954,7 +1954,7 @@ const assets: AssetList = {
           exponent: 6,
           aliases: ['xion']
         }],
-      base: 'ibc/3642669AD14386D3E38F43F30CFCA859B3E8A05BF6BD6A23DEBD2115AD1325E9',
+      base: 'ibc/5C274155106FEB0C093F76A12BB67222E479E1EBE043F319CE4463E54F7A357C',
       display: 'XION',
       name: 'xion',
       symbol: 'XION',
@@ -1967,12 +1967,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-12',
+            channel_id: 'channel-490',
             base_denom: 'uxion',
             chain_name: 'xiontestnet'
           },
           chain: {
-            channel_id: 'channel-4410'
+            channel_id: 'channel-6668'
           }
         }]
     }

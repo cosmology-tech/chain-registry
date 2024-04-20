@@ -41,10 +41,16 @@ const info: Chain = {
     rpc: [{
         address: 'https://tendermint.shidoscan.com',
         provider: 'Shido'
+      }, {
+        address: 'https://shidochain_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }],
     rest: [{
         address: 'https://swagger.shidoscan.com',
         provider: 'Shido'
+      }, {
+        address: 'https://shidochain_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }],
     grpc: [{
         address: 'https://grpc.shidoscan.com',
@@ -53,19 +59,31 @@ const info: Chain = {
         address: 'https://grpc-web.shidoscan.com',
         provider: 'shido.io'
       }],
-    "evm-http-jsonrpc": [{
+    "evm-http-jsonrpc": [
+      {
         address: 'https://rpc-nodes.shidoscan.com',
         provider: 'Shido'
-      }, {
+      },
+      {
         address: 'https://rpc-delta-nodes.shidoscan.com',
         provider: 'Shido'
-      }]
+      },
+      {
+        address: 'https://shidochain_mainnet_evm.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      }
+    ]
   },
   explorers: [{
       kind: 'shido',
       url: 'https://shidoscan.com',
       tx_page: 'https://shidoscan.com/tx/${txHash}',
       account_page: 'https://shidoscan.com/address/${accountAddress}'
+    }, {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/shido',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/shido/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/shido/account/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',

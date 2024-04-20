@@ -4,21 +4,21 @@ const info: IBCInfo[] = [
     $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'axelartestnet',
-      client_id: '07-tendermint-585',
-      connection_id: 'connection-402'
+      client_id: '07-tendermint-895',
+      connection_id: 'connection-685'
     },
     chain_2: {
       chain_name: 'xiontestnet',
-      client_id: '07-tendermint-10',
-      connection_id: 'connection-5'
+      client_id: '07-tendermint-118',
+      connection_id: 'connection-54'
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-283',
+          channel_id: 'channel-462',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-5',
+          channel_id: 'channel-486',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -32,21 +32,21 @@ const info: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'injectivetestnet',
-      client_id: '07-tendermint-228',
-      connection_id: 'connection-211'
+      client_id: '07-tendermint-239',
+      connection_id: 'connection-220'
     },
     chain_2: {
       chain_name: 'xiontestnet',
-      client_id: '07-tendermint-105',
-      connection_id: 'connection-43'
+      client_id: '07-tendermint-119',
+      connection_id: 'connection-55'
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-324',
+          channel_id: 'channel-489',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-215',
+          channel_id: 'channel-487',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -61,21 +61,21 @@ const info: IBCInfo[] = [
     $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'nobletestnet',
-      client_id: '07-tendermint-25',
-      connection_id: 'connection-24'
+      client_id: '07-tendermint-224',
+      connection_id: 'connection-176'
     },
     chain_2: {
       chain_name: 'xiontestnet',
-      client_id: '07-tendermint-17',
-      connection_id: 'connection-9'
+      client_id: '07-tendermint-120',
+      connection_id: 'connection-56'
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-17',
+          channel_id: 'channel-147',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-9',
+          channel_id: 'channel-489',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -89,21 +89,21 @@ const info: IBCInfo[] = [
     $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'osmosistestnet',
-      client_id: '07-tendermint-1474',
-      connection_id: 'connection-1380'
+      client_id: '07-tendermint-3125',
+      connection_id: 'connection-2826'
     },
     chain_2: {
       chain_name: 'xiontestnet',
-      client_id: '07-tendermint-22',
-      connection_id: 'connection-12'
+      client_id: '07-tendermint-121',
+      connection_id: 'connection-57'
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-4410',
+          channel_id: 'channel-6668',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-12',
+          channel_id: 'channel-490',
           port_id: 'transfer'
         },
         ordering: 'unordered',

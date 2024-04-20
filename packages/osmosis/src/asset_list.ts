@@ -1706,14 +1706,14 @@ const asset_list: AssetList = {
     {
       description: 'The native token of dHealth',
       denom_units: [{
-          denom: 'ibc/320F8D6EC17E14436D19C6D844BB9A5AE9B9A209F6D18364A2191FF08E8732A9',
+          denom: 'ibc/415797C6CE8DC6E9B4C894EE802B4CF47F74932D282C351A1D9DCB21D94B7162',
           exponent: 0,
           aliases: ['udhp']
         }, {
           denom: 'dhp',
           exponent: 6
         }],
-      base: 'ibc/320F8D6EC17E14436D19C6D844BB9A5AE9B9A209F6D18364A2191FF08E8732A9',
+      base: 'ibc/415797C6CE8DC6E9B4C894EE802B4CF47F74932D282C351A1D9DCB21D94B7162',
       name: 'Digital Health Point',
       display: 'dhp',
       symbol: 'DHP',
@@ -1729,12 +1729,12 @@ const asset_list: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-1',
+            channel_id: 'channel-2',
             base_denom: 'udhp',
             chain_name: 'dhealth'
           },
           chain: {
-            channel_id: 'channel-38776'
+            channel_id: 'channel-73360'
           }
         }]
     },
@@ -2236,6 +2236,7 @@ const asset_list: AssetList = {
     },
     {
       description: 'The token of Neokingdom DAO.',
+      extended_description: 'Neokingdom DAO wants to make employment fairer, by facilitating both web3 and real-world businesses to operate as Decentralized Autonomous Organizations (DAOs).',
       denom_units: [{
           denom: 'ibc/DEE262653B9DE39BCEF0493D47E0DFC4FE62F7F046CF38B9FDEFEBE98D149A71',
           exponent: 0,
@@ -2256,6 +2257,10 @@ const asset_list: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg'
         }],
+      socials: {
+        webiste: 'https://www.neokingdom.org/',
+        twitter: 'https://twitter.com/NEOKingdomDAO'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6096,14 +6101,14 @@ const asset_list: AssetList = {
     {
       description: 'The native token of dHealth',
       denom_units: [{
-          denom: 'ibc/320F8D6EC17E14436D19C6D844BB9A5AE9B9A209F6D18364A2191FF08E8732A9',
+          denom: 'ibc/415797C6CE8DC6E9B4C894EE802B4CF47F74932D282C351A1D9DCB21D94B7162',
           exponent: 0,
           aliases: ['udhp']
         }, {
           denom: 'dhp',
           exponent: 6
         }],
-      base: 'ibc/320F8D6EC17E14436D19C6D844BB9A5AE9B9A209F6D18364A2191FF08E8732A9',
+      base: 'ibc/415797C6CE8DC6E9B4C894EE802B4CF47F74932D282C351A1D9DCB21D94B7162',
       name: 'Digital Health Point',
       display: 'dhp',
       symbol: 'DHP',
@@ -6119,12 +6124,12 @@ const asset_list: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-1',
+            channel_id: 'channel-2',
             base_denom: 'udhp',
             chain_name: 'dhealth'
           },
           chain: {
-            channel_id: 'channel-38776'
+            channel_id: 'channel-73360'
           }
         }]
     },
@@ -6626,6 +6631,7 @@ const asset_list: AssetList = {
     },
     {
       description: 'The token of Neokingdom DAO.',
+      extended_description: 'Neokingdom DAO wants to make employment fairer, by facilitating both web3 and real-world businesses to operate as Decentralized Autonomous Organizations (DAOs).',
       denom_units: [{
           denom: 'ibc/DEE262653B9DE39BCEF0493D47E0DFC4FE62F7F046CF38B9FDEFEBE98D149A71',
           exponent: 0,
@@ -6646,6 +6652,10 @@ const asset_list: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg'
         }],
+      socials: {
+        webiste: 'https://www.neokingdom.org/',
+        twitter: 'https://twitter.com/NEOKingdomDAO'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
