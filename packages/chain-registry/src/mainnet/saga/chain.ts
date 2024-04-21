@@ -49,6 +49,10 @@ const info: Chain = {
       {
         address: 'https://rpc.saga.nodestake.org',
         provider: 'NodeStake'
+      },
+      {
+        address: 'https://saga.rpc.kjnodes.com',
+        provider: 'kjnodes'
       }
     ],
     rest: [
@@ -63,6 +67,10 @@ const info: Chain = {
       {
         address: 'https://api.saga.nodestake.org',
         provider: 'NodeStake'
+      },
+      {
+        address: 'https://saga.api.kjnodes.com',
+        provider: 'kjnodes'
       }
     ],
     grpc: [
@@ -77,6 +85,10 @@ const info: Chain = {
       {
         address: 'grpc.saga.nodestake.org:443',
         provider: 'NodeStake'
+      },
+      {
+        address: 'saga.grpc.kjnodes.com:443',
+        provider: 'kjnodes'
       }
     ]
   },

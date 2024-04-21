@@ -34,9 +34,6 @@ const testnet: Chain = {
     rpc: [{
         address: 'https://rpc.osmotest5.osmosis.zone/',
         provider: 'Osmosis'
-      }, {
-        address: 'https://rpc.testnet.osl.zone/',
-        provider: 'OSL'
       }],
     rest: [{
         address: 'https://lcd.osmotest5.osmosis.zone/',

@@ -65,7 +65,7 @@ const info: Chain = {
       }
     ],
     rest: [{
-        address: ' https://lava-api.w3coins.io:443',
+        address: 'https://lava-api.w3coins.io:443',
         provider: 'w3coins'
       }, {
         address: 'https://lava.api.staking-explorer.com',
