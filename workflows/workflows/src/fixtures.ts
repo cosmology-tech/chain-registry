@@ -11,7 +11,7 @@ const REG_DIR: string = 'chain-registry/chain-registry';
 export const registryDir: string = join(__dirname, `/../../../packages/${REG_DIR}`);
 
 // Type definitions for file path processing results
-interface FilePathInfo {
+export interface FilePathInfo {
   filepath: string;
   origpath: string;
 }
@@ -43,4 +43,4 @@ const globPatterns: { [key: string]: string } = {
 export const chains: FilePathInfo[] = filterAndMapFiles(glob(globPatterns.chains));
 export const assetLists: FilePathInfo[] = filterAndMapFiles(glob(globPatterns.assetLists));
 export const ibcInfo: FilePathInfo[] = filterAndMapFiles(glob(globPatterns.ibcInfo));
-export const schemas: string[] = glob(globPatterns.schemas);
+export const schemas: FilePathInfo[] = filterAndMapFiles(glob(globPatterns.schemas));

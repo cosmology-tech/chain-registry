@@ -1,1 +1,2 @@
-export const cli = 1;
+export * from './commands';
+export * from './utils';

@@ -1,5 +1,6 @@
 import { basename, dirname, join } from 'path';
 import { generateTypeScript, JSONSchema, SchemaTSOptions } from 'schema-typescript';
+import { FilePathInfo } from './fixtures';
 
 // Default titles for certain schemas
 // TODO create issue in cosmos/chain-registry
@@ -24,7 +25,7 @@ export interface SchemaTypeGeneratorOptions {
   schemaTSOptions: Partial<SchemaTSOptions>;
   readFs: FileSystem;
   writeFs: FileSystem;
-  schemas: string[];
+  schemas: FilePathInfo[];
   supportedSchemas?: string[];
 }
 
@@ -32,7 +33,7 @@ export class SchemaTypeGenerator {
   private outputDir: string;
   private writeFs: FileSystem;
   private readFs: FileSystem;
-  private schemas: string[];
+  private schemas: FilePathInfo[];
   private schemaTSOptions: Partial<SchemaTSOptions>
   private supportedSchemas: Set<string>;
 
@@ -58,7 +59,8 @@ export class SchemaTypeGenerator {
   }
 
   public generateTypes(): void {
-    this.schemas.forEach(schemaFile => {
+    this.schemas.forEach(fileInfo => {
+      const schemaFile = fileInfo.origpath;
       if (this.isSchemaSupported(schemaFile)) {
         try {
           const schema: JSONSchema = this.readJsonFile(schemaFile);

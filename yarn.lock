@@ -303,6 +303,11 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@chain-registry/types@^0.25.6":
+  version "0.25.6"
+  resolved "https://registry.yarnpkg.com/@chain-registry/types/-/types-0.25.6.tgz#8e79979a729a7c75846b282c4b1a307f61046d4b"
+  integrity sha512-GtLJ0XDqEp8rIqHSj83j27nhzaZYs+vQKy+qCNe0FyBgBanrmA99ilzSy2RDg2KIlsGTt4fe6zGVN9Yc6BMhfA==
+
 "@cosmostation/extension-client@0.1.15":
   version "0.1.15"
   resolved "https://registry.yarnpkg.com/@cosmostation/extension-client/-/extension-client-0.1.15.tgz#cdc6d8fce42217704c1c0d5814f0ee7ce27e8dab"
@@ -4037,6 +4042,16 @@ inquirer@^8.2.4:
     strip-ansi "^6.0.0"
     through "^2.3.6"
     wrap-ansi "^6.0.1"
+
+inquirerer@^0.10.1:
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/inquirerer/-/inquirerer-0.10.1.tgz#c53ecc1c35d349e140cd1f934630720b11c3064e"
+  integrity sha512-E9E3D8Zlmdg25sVGbwP8GiJ4ucKJ550E3SYspWdq70Svho18bp3w6OJ34ohohRp5TcCFgGnapgd5sss+Qu4PeQ==
+  dependencies:
+    chalk "^4.1.0"
+    deepmerge "^4.3.1"
+    js-yaml "^4.1.0"
+    minimist "^1.2.8"
 
 ip-address@^9.0.5:
   version "9.0.5"
