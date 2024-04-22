@@ -8,7 +8,7 @@ export const NON_INFO_DIRS: string[] = [
   '.github'
 ];
 const REG_DIR: string = 'chain-registry/chain-registry';
-export const registryDir: string = join(__dirname, `/../../${REG_DIR}`);
+export const registryDir: string = join(__dirname, `/../../../packages/${REG_DIR}`);
 
 // Type definitions for file path processing results
 interface FilePathInfo {
