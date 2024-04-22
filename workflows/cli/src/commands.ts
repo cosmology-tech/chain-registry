@@ -134,8 +134,8 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
           type: 'autocomplete',
           name: 'chain-1',
           message: 'Select an IBC chain:',
-          options: registry.ibcInfo.map(info => info.content.chain_1 + ' <> ' + info.content.chain_2),
-          maxDisplayLines: 5
+          options: registry.chains.map(chain => chain.content.chain_name),
+          maxDisplayLines: 15
         }
       ]);
       
@@ -144,12 +144,23 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
           type: 'autocomplete',
           name: 'chain-2',
           message: 'Select an IBC chain:',
-          options: registry.ibcInfo.map(info => info.content.chain_1 + ' <> ' + info.content.chain_2),
-          maxDisplayLines: 5
+          options: registry.chains.map(chain => chain.content.chain_name),
+          maxDisplayLines: 15
         }
       ]);
 
-      console.log(argv);
+      const chain1 = argv['chain-1'];
+      const chain2 = argv['chain-2'];
+
+      // Create an array of the chain names, sort them alphabetically, and then join them with a hyphen
+      const sortedChainNames = [chain1, chain2].sort();
+      const chainNameString = sortedChainNames.join('-');
+
+      const i = registry.ibcInfo.find(ibc=>ibc.filepath.endsWith(chainNameString+'.json') );
+
+      if (i) {
+        console.log(i.content.channels);
+      }
 
       break;
     case 'schemas':
