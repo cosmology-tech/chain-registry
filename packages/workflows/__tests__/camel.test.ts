@@ -18,7 +18,9 @@ it('types', () => {
     supportedSchemas: [
         'chain.schema.json',
         'assetlist.schema.json',
-        'ibc_data.schema.json'
+        'ibc_data.schema.json',
+        'versions.schema.json',
+        'memo_keys.schema.json',
     ],
     schemas,
     schemaTSOptions: {

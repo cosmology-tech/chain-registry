@@ -1,6 +1,16 @@
 import { basename, dirname, join } from 'path';
 import { generateTypeScript, JSONSchema, SchemaTSOptions } from 'schema-typescript';
 
+// Default titles for certain schemas
+// TODO create issue in cosmos/chain-registry
+const DEFAULT_TITLES: { [filename: string]: string } = {
+  'ibc_data.schema.json': 'IBCData',
+  'chain.schema.json': 'Chain',
+  'assetlist.schema.json': 'AssetList',
+  'versions.schema.json': 'Versions',
+  'memo_keys.schema.json': 'MemoKeys',
+};
+
 // Define an interface for the filesystem operations
 export interface FileSystem {
   readFileSync(path: string, encoding: string): string;
@@ -18,13 +28,6 @@ export interface SchemaTypeGeneratorOptions {
   supportedSchemas?: string[];
 }
 
-// Default titles for certain schemas
-// TODO create issue in cosmos/chain-registry
-const DEFAULT_TITLES: { [filename: string]: string } = {
-  'ibc_data.schema.json': 'IBCData',
-  'chain.schema.json': 'Chain',
-  'assetlist.schema.json': 'AssetList'
-};
 export class SchemaTypeGenerator {
   private outputDir: string;
   private writeFs: FileSystem;
