@@ -1,7 +1,7 @@
 {
-  "name": "@chain-registry/keplr",
-  "version": "1.46.4",
-  "description": "Chain Registry to Keplr",
+  "name": "@chain-registry/workflows",
+  "version": "1.26.3",
+  "description": "Chain Registry Workflows",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
   "license": "SEE LICENSE IN LICENSE",
@@ -28,19 +28,22 @@
     "test:watch": "jest --watch"
   },
   "devDependencies": {
-    "chain-registry": "^1.41.4"
+    "@types/sha.js": "^2.4.0",
+    "strfy-js": "^2.2.2"
   },
   "dependencies": {
     "@chain-registry/types": "^0.25.3",
-    "@keplr-wallet/cosmos": "0.12.28",
-    "@keplr-wallet/crypto": "0.12.28",
-    "semver": "^7.5.0"
+    "bignumber.js": "9.1.1",
+    "file-ts": "^0.7.15",
+    "minimatch": "^9.0.4",
+    "schema-typescript": "^0.2.3",
+    "sha.js": "^2.4.11",
+    "strfy-js": "^2.2.2"
   },
   "keywords": [
     "chain-registry",
     "web3",
     "cosmos",
-    "interchain",
-    "keplr"
+    "interchain"
   ]
 }
