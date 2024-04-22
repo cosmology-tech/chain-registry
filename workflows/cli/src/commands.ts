@@ -1,7 +1,7 @@
-import { AssetList, Chain,IBCInfo } from '@chain-registry/types'
-import { assetLists, chains, FilePathInfo, ibcInfo, JSONSchema,registryDir, schemas } from '@chain-registry/workflows';
+import { AssetList, Chain, IBCInfo } from '@chain-registry/types'
+import { assetLists, chains, FilePathInfo, ibcInfo, JSONSchema, registryDir, schemas } from '@chain-registry/workflows';
 import { existsSync, readFileSync } from 'fs';
-import { CLIOptions, Inquirerer } from 'inquirerer'
+import { CLIOptions, Inquirerer, Question } from 'inquirerer'
 import { ParsedArgs } from 'minimist';
 import { join, resolve } from 'path';
 
@@ -33,24 +33,39 @@ interface Registry {
 
 
 export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, _options: CLIOptions) => {
-  let command = argv._[0] as string; // Safely assume command is a string
+  let command;
 
-  if (!command) {
-    ({ command } = await prompter.prompt(argv, [
-      {
-        type: 'autocomplete',
-        name: 'command',
-        message: 'choose a command',
-        options: [
-          'chains',
-          'asset-lists',
-          'ibc-data',
-          'schemas'
-        ]
-      }
-    ]));
-
+  if (argv._.length > 0) {
+    command = argv._[0];
   }
+
+  if (command) {
+    argv.command = command;
+  }
+
+  const questions: Question[] = [
+    {
+      type: 'autocomplete',
+      name: 'command',
+      message: 'choose a command',
+      options: [
+        'chain',
+        'asset-lists',
+        'ibc-data',
+        'schemas'
+      ]
+    }
+  ];
+  console.log('prompt');
+  ({ command } = await prompter.prompt(argv, questions, {
+    manPageInfo: {
+      commandName: 'registry',
+      questions,
+      author: 'Dan Lynch <pyrmation@gmail.com>',
+      description: 'Utilities for Chain Registry'
+    }
+  }));
+  console.log({ command })
 
   argv = await prompter.prompt(argv, [
     {
@@ -79,16 +94,21 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
   const registry: Registry = parseRegistryFiles(registryPaths);
 
   switch (command) {
-    case 'chains':
+    case 'chain':
       argv = await prompter.prompt(argv, [
         {
           type: 'autocomplete',
-          name: 'chainName',
+          name: 'chain',
           message: 'Select a chain:',
-          options: registry.chains.map(chain => chain.content.chain_name),
+          options: registry.chains.map(chain => ({ name: chain.content.chain_name, value: chain.content })),
           maxDisplayLines: 15
         }
       ]);
+      const chain: Chain = argv.chain;
+      console.log(chain.chain_id);
+      // console.log(chain.codebase.cosmos_sdk_version);
+      // console.log(chain.codebase.cosmwasm_version);
+      // console.log(chain.codebase.ibc_go_version);
       break;
     case 'asset-lists':
       argv = await prompter.prompt(argv, [
@@ -108,7 +128,7 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
           message: 'Select an asset:',
           options: registry.assetLists
             .filter(list => list.content.chain_name === argv.chainName)
-            .flatMap(list=>list.content.assets)
+            .flatMap(list => list.content.assets)
             .map(asset => ({
               name: `${asset.symbol} | ${asset.base}`,
               value: asset
@@ -117,7 +137,7 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
         }
       ]);
 
-      console.log(JSON.stringify(argv.asset,null,2))
+      console.log(JSON.stringify(argv.asset, null, 2))
       break;
     case 'ibc-data':
       console.log(argv);
@@ -138,7 +158,7 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
           maxDisplayLines: 15
         }
       ]);
-      
+
       argv = await prompter.prompt(argv, [
         {
           type: 'autocomplete',
@@ -156,7 +176,7 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
       const sortedChainNames = [chain1, chain2].sort();
       const chainNameString = sortedChainNames.join('-');
 
-      const i = registry.ibcInfo.find(ibc=>ibc.filepath.endsWith(chainNameString+'.json') );
+      const i = registry.ibcInfo.find(ibc => ibc.filepath.endsWith(chainNameString + '.json'));
 
       if (i) {
         console.log(i.content.channels);
@@ -169,14 +189,14 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
           type: 'autocomplete',
           name: 'schemaName',
           message: 'Select a schema:',
-          options: registry.schemas.map(schema => schema.content.title),
+          options: registry.schemas.map(schema => null),
           maxDisplayLines: 5
         }
       ]);
       break;
 
     default:
-      console.log("No recognized command provided or no command given.");
+      console.log(`No recognized command provided or no command given: ${command}`);
       break;
   }
 
@@ -208,4 +228,4 @@ function parseRegistryFiles(registryPaths: RegistryPaths): Registry {
   });
 
   return parsedRegistry;
-}
+} 

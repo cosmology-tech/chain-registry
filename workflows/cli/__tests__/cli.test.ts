@@ -1,8 +1,8 @@
+import { CLI, CLIOptions } from 'inquirerer';
 import readline from 'readline';
 import { Readable, Transform,Writable } from 'stream';
 import stripAnsi from 'strip-ansi';
 
-import { CLI, CLIOptions } from '../src/commander';
 import { commands } from '../src/commands'
 
 jest.mock('readline');
@@ -88,7 +88,7 @@ describe('Inquirerer', () => {
   });
 
   it('prompts user and correctly processes delayed input', async () => {
-    enqueueInputResponse({ type: 'read', value: 'user input' });
+    enqueueInputResponse({ type: 'read', value: 'osmosis' });
 
     const options: Partial<CLIOptions> = {
         noTty: false,
@@ -102,10 +102,10 @@ describe('Inquirerer', () => {
       };
     
     const app = new CLI(commands, options, {
-        _: ['chains']
+        _: ['chain']
     });
 
-    const expectedResult = { username: 'user input' };
+    const expectedResult = { username: 'osmosis' };
 
     const result = await app.run();
 

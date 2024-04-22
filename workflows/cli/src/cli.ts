@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import { CLI, CLIOptions } from './commander';
+import { CLI, CLIOptions } from 'inquirerer';
+
 import { commands } from './commands'
 
 export const options: Partial<CLIOptions> = {
