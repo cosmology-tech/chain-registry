@@ -4043,10 +4043,10 @@ inquirer@^8.2.4:
     through "^2.3.6"
     wrap-ansi "^6.0.1"
 
-inquirerer@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/inquirerer/-/inquirerer-1.5.0.tgz#4962ddf18c4d4c500e4e4ef83861465b1278c20e"
-  integrity sha512-Bq7vi0oDWdwvh09ydW1EyVi6UEoxzZyb2yNV1UUL8XcJ1fwatISImgpT34xILfZzwpKuLfJ4dcNzOiWCtegSZQ==
+inquirerer@1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/inquirerer/-/inquirerer-1.6.1.tgz#669fd17c9a1559ba1a42ad71af8a3fc9fa76a415"
+  integrity sha512-fV1We5PFBcmbmszubXW6PGFj7gtYYnkZ6XArjnHjKGdjsL1KWuuO9Z4LQdScG32qZTWzpTtwUIQxxYq6BFKU+g==
   dependencies:
     chalk "^4.1.0"
     deepmerge "^4.3.1"

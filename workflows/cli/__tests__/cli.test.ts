@@ -5,6 +5,13 @@ import stripAnsi from 'strip-ansi';
 
 import { commands } from '../src/commands'
 
+const KEY_SEQUENCES = {
+  ENTER: '\u000d',     // Carriage return
+  UP_ARROW: '\u001b[A', // ANSI escape sequence for the up arrow
+  DOWN_ARROW: '\u001b[B',
+  SPACE: ' '
+};
+
 jest.mock('readline');
 
 const snap = (str: any) => expect(str).toMatchSnapshot();
@@ -36,21 +43,14 @@ describe('Inquirerer', () => {
 
   function enqueueInputResponse(input: { type: 'key' | 'read', value: string }) {
     if (input.type === 'key') {
-  // Push key events directly to mockInput
-  // @ts-ignore
+      // Push key events directly to mockInput
+      // @ts-ignore
       setTimeout(() => mockInput.push(input.value), 350);
     } else {
       // Queue readline responses to be handled by the readline mock
       inputQueue.push(input);
     }
   }
-
-  const KEY_SEQUENCES = {
-    ENTER: '\u000d',     // Carriage return
-    UP_ARROW: '\u001b[A', // ANSI escape sequence for the up arrow
-    DOWN_ARROW: '\u001b[B',
-    SPACE: ' '
-  };
 
   beforeEach(() => {
     mockWrite = jest.fn();
@@ -89,6 +89,9 @@ describe('Inquirerer', () => {
 
   it('prompts user and correctly processes delayed input', async () => {
     enqueueInputResponse({ type: 'read', value: 'osmosis' });
+    enqueueInputResponse({ type: 'key', value: KEY_SEQUENCES.ENTER });
+    enqueueInputResponse({ type: 'read', value: 'agoric' });
+    enqueueInputResponse({ type: 'key', value: KEY_SEQUENCES.ENTER });
 
     const options: Partial<CLIOptions> = {
         noTty: false,
@@ -102,14 +105,12 @@ describe('Inquirerer', () => {
       };
     
     const app = new CLI(commands, options, {
-        _: ['chain']
+        _: ['asset-lists']
     });
-
-    const expectedResult = { username: 'osmosis' };
 
     const result = await app.run();
 
-    expect(result).toEqual(expectedResult);
+    expect(result).toMatchSnapshot();
     snap(writeResults);
     snap(transformResults);
   });

@@ -3,7 +3,7 @@ import { assetLists, chains, FilePathInfo, ibcInfo, JSONSchema, registryDir, sch
 import { existsSync, readFileSync } from 'fs';
 import { CLIOptions, Inquirerer, Question } from 'inquirerer'
 import { ParsedArgs } from 'minimist';
-import { join, resolve } from 'path';
+import { join, relative, resolve } from 'path';
 
 interface RegistryPaths {
   chains: ResolvedPath[];
@@ -57,14 +57,7 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
     }
   ];
   console.log('prompt');
-  ({ command } = await prompter.prompt(argv, questions, {
-    manPageInfo: {
-      commandName: 'registry',
-      questions,
-      author: 'Dan Lynch <pyrmation@gmail.com>',
-      description: 'Utilities for Chain Registry'
-    }
-  }));
+  ({ command } = await prompter.prompt(argv, questions));
   console.log({ command })
 
   argv = await prompter.prompt(argv, [
@@ -72,14 +65,13 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
       type: 'text',
       name: 'registryDir',
       message: 'provide a registryDir:',
-      // default: relative(process.cwd(), registryDir)
-      default: registryDir,
+      default: relative(process.cwd(), registryDir),
       useDefault: true // remove later
     }
   ]);
 
   if (!existsSync(argv.registryDir)) {
-    prompter.close();
+    prompter.exit();
     throw new Error('bad registry path!');
   }
 
