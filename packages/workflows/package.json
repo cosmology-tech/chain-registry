@@ -36,7 +36,7 @@
     "bignumber.js": "9.1.1",
     "file-ts": "^0.7.15",
     "minimatch": "^9.0.4",
-    "schema-typescript": "^0.2.3",
+    "schema-typescript": "^0.2.4",
     "sha.js": "^2.4.11",
     "strfy-js": "^2.2.2"
   },
