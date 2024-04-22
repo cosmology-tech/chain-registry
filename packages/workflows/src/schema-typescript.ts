@@ -17,6 +17,14 @@ export interface SchemaTypeGeneratorOptions {
   schemas: string[];
   supportedSchemas?: string[];
 }
+
+// Default titles for certain schemas
+// TODO create issue in cosmos/chain-registry
+const DEFAULT_TITLES: { [filename: string]: string } = {
+  'ibc_data.schema.json': 'IBCData',
+  'chain.schema.json': 'Chain',
+  'assetlist.schema.json': 'AssetList'
+};
 export class SchemaTypeGenerator {
   private outputDir: string;
   private writeFs: FileSystem;
@@ -31,7 +39,13 @@ export class SchemaTypeGenerator {
     this.readFs = options.readFs;
     this.schemas = options.schemas;
     this.supportedSchemas = new Set(options.supportedSchemas || []);
+  }
 
+  private updateSchemaTitle(schema: JSONSchema, schemaFile: string): void {
+    const filename = basename(schemaFile);
+    if (DEFAULT_TITLES[filename]) {
+      schema.title = DEFAULT_TITLES[filename];
+    }
   }
 
   private isSchemaSupported(filePath: string): boolean {
@@ -40,11 +54,12 @@ export class SchemaTypeGenerator {
     return this.supportedSchemas.has(filename);
   }
 
-  generateTypes(): void {
+  public generateTypes(): void {
     this.schemas.forEach(schemaFile => {
       if (this.isSchemaSupported(schemaFile)) {
         try {
           const schema: JSONSchema = this.readJsonFile(schemaFile);
+          this.updateSchemaTitle(schema, schemaFile);
           const result = this.generateTypeScript(schema);
           const filename = this.getOutputFilename(schemaFile);
           this.ensureDirExists(filename);

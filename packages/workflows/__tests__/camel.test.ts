@@ -18,7 +18,7 @@ it('types', () => {
     supportedSchemas: [
         'chain.schema.json',
         'assetlist.schema.json',
-        // 'ibc_data.schema.json'
+        'ibc_data.schema.json'
     ],
     schemas,
     schemaTSOptions: {
