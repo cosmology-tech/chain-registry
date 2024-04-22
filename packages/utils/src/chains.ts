@@ -21,14 +21,14 @@ export const getChainByChainName = (
   chains: Chain[],
   chainName: string
 ): Chain | undefined => {
-  return customFind(chains, (chain) => chain.chain_name === chainName);
+  return customFind(chains, (chain) => chain.chain_name === chainName, `chainName:${chainName}`);
 };
 
 export const getChainByChainId = (
   chains: Chain[],
   chainId: string
 ): Chain | undefined => {
-  return customFind(chains, (chain) => chain.chain_id === chainId);
+  return customFind(chains, (chain) => chain.chain_id === chainId, `chainId:${chainId}`);
 };
 
 export const getChainNameByChainId = (
