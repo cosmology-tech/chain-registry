@@ -27,8 +27,8 @@ jobs:
         run: |
           cd packages/chain-registry/chain-registry
           git fetch
-          git checkout 27aeb233a272dbd076a50cb5a9aa5a45296e3c96
-          
+          git checkout a25edb798078336ee7f9b472350404c7558ba872
+
       # - name: Git Submodules
       #   run: git submodule update --remote
 
