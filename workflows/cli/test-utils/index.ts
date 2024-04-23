@@ -1,3 +1,4 @@
+import { CLIOptions } from 'inquirerer';
 import readline from 'readline';
 import { Readable, Transform, Writable } from 'stream';
 import stripAnsi from 'strip-ansi';
@@ -30,6 +31,7 @@ interface MockReadline {
 }
 
 export interface TestEnvironment {
+    options: Partial<CLIOptions>;
     mockInput: Readable;
     mockOutput: Writable;
     writeResults: string[];
@@ -50,6 +52,7 @@ function setupReadlineMock(inputQueue: InputResponse[], currentInputIndex: numbe
 }
 
 export function setupTests(): () => TestEnvironment {
+    let options: Partial<CLIOptions>;
     let mockWrite: jest.Mock;
     let mockInput: Readable;
     let mockOutput: Writable;
@@ -83,6 +86,18 @@ export function setupTests(): () => TestEnvironment {
             }
         });
 
+        // mock I/O streams so we can keep TTY for testing and CI/CD 🎨
+        options = {
+            noTty: false,
+            input: mockInput,
+            output: mockOutput,
+            minimistOpts: {
+                alias: {
+                    v: 'version'
+                }
+            }
+        };
+
         transformStream = new Transform({
             transform(chunk, encoding, callback) {
                 const data = chunk.toString();
@@ -109,6 +124,7 @@ export function setupTests(): () => TestEnvironment {
 
 
         return {
+            options,
             mockInput,
             mockOutput,
             writeResults,
