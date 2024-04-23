@@ -1,58 +1,52 @@
-name: Run Tests
+name: Run Workflow Tests 🧪
 
 on:
-  push:
-
   pull_request:
     types: [opened, reopened]
-
   workflow_dispatch:
 
 jobs:
   run-tests:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository 🛎️
+      - name: Checkout Repository 📥
         uses: actions/checkout@v4
         with:
-            submodules: 'recursive'  # Ensures submodules are also checked out
+          submodules: 'recursive'  # Ensures submodules are also checked out
 
-      - name: Setup Node.js
+      - name: Setup Node.js 🌐
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
           cache: 'yarn'
 
-      - name: Checkout specific commit in submodule
+      - name: Update Git Submodules 🔄
         run: |
+          git submodule update --remote
           cd packages/chain-registry/chain-registry
           git fetch
           git checkout a25edb798078336ee7f9b472350404c7558ba872
 
-      # - name: Git Submodules
-      #   run: git submodule update --remote
-
-      - name: Install Dependencies
+      - name: Install Dependencies 🧶
         run: yarn install
 
-      - name: Build Project
+      - name: Build Project 🏗️
         run: yarn build
 
-      - name: Test @chain-registry/keplr
+      - name: Test @chain-registry/keplr 🔍
         run: cd packages/keplr && yarn test
       
-      - name: Test @chain-registry/cosmostation
+      - name: Test @chain-registry/cosmostation 🔍
         run: cd packages/cosmostation && yarn test
       
-      - name: Test @chain-registry/utils
+      - name: Test @chain-registry/utils 🔍
         run: cd packages/utils && yarn test
       
-      - name: Test @chain-registry/client
+      - name: Test @chain-registry/client 🔍
         run: cd packages/client && yarn test
         
-      - name: Test @chain-registry/workflows
-        run: cd workflows/workflows && yarn test
+      - name: Test @chain-registry/workflows 🔍
+        run: cd workflows && yarn test
 
-      - name: Test @chain-registry/cli
+      - name: Test @chain-registry/cli 🔍
         run: cd workflows/cli && yarn test
-        
