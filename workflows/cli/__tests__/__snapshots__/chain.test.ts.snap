@@ -174,52 +174,52 @@ exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
 exports[`Inquirerer prompts user and correctly processes delayed input 2`] = `
 [
   "",
-  "choose a command
+  "choose<SPACE>a<SPACE>command
 [--command]:
-$ 
+$<SPACE>
 ",
-  "> chain
+  "><SPACE>chain
 ",
-  "  asset-lists
+  "<SPACE><SPACE>asset-lists
 ",
-  "  ibc-data
+  "<SPACE><SPACE>ibc-data
 ",
-  "  schemas
+  "<SPACE><SPACE>schemas
 ",
   "",
-  "Select a chain:
+  "Select<SPACE>a<SPACE>chain:
 [--chain]:
-$ 
+$<SPACE>
 ",
-  "> 8ball
+  "><SPACE>8ball
 ",
-  "  acrechain
+  "<SPACE><SPACE>acrechain
 ",
-  "  agoric
+  "<SPACE><SPACE>agoric
 ",
-  "  aioz
+  "<SPACE><SPACE>aioz
 ",
-  "  akash
+  "<SPACE><SPACE>akash
 ",
-  "  akiro
+  "<SPACE><SPACE>akiro
 ",
-  "  andromeda
+  "<SPACE><SPACE>andromeda
 ",
-  "  andromeda1
+  "<SPACE><SPACE>andromeda1
 ",
-  "  archway
+  "<SPACE><SPACE>archway
 ",
-  "  arkh
+  "<SPACE><SPACE>arkh
 ",
-  "  assetmantle
+  "<SPACE><SPACE>assetmantle
 ",
-  "  aura
+  "<SPACE><SPACE>aura
 ",
-  "  axelar
+  "<SPACE><SPACE>axelar
 ",
-  "  bandchain
+  "<SPACE><SPACE>bandchain
 ",
-  "  beezee
+  "<SPACE><SPACE>beezee
 ",
   "",
 ]
@@ -227,9 +227,7 @@ $
 
 exports[`Inquirerer prompts user and correctly processes delayed input 3`] = `
 [
-  "
-",
-  "
-",
+  "<ENTER>",
+  "<ENTER>",
 ]
 `;

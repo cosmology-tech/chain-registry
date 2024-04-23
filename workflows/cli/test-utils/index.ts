@@ -17,7 +17,7 @@ function humanizeKeySequences(data: string): string {
         ' ': '<SPACE>'
     };
 
-    return data.replace(/[\u000d\u001b[A\u001b[B ]/g, (match) => keyMap[match]);
+    return data.replace(/[\u000d\u001b[A\u001b[B ]/g, (match) => keyMap[match] ?? match);
 }
 interface InputResponse {
     type: 'key' | 'read';
