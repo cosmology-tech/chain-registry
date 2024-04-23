@@ -1,3 +1,5 @@
+import { Pointer } from "./shared";
+
 export interface Asset {
   deprecated?: boolean;
   description?: string;
@@ -40,10 +42,6 @@ export interface DenomUnit {
   denom: string;
   exponent: number;
   aliases?: string[];
-}
-export interface Pointer {
-  chainName: string;
-  baseDenom?: string;
 }
 export interface IbcTransition {
   type: "ibc";

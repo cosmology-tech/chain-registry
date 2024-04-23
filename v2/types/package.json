@@ -1,5 +1,5 @@
 {
-  "name": "@chainregistry/types",
+  "name": "@chain-registry/v2-types",
   "version": "0.25.7",
   "description": "Chain Registry types",
   "author": "Dan Lynch <pyramation@gmail.com>",
