@@ -7,7 +7,8 @@
   ],
   "packages": [
     "packages/*",
-    "workflows/*"
+    "workflows/*",
+    "v2/*"
   ],
   "version": "independent",
   "registry": "https://registry.npmjs.org",
