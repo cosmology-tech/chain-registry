@@ -5,7 +5,7 @@ import { resolve } from 'path';
 import { schemas } from '../src';
 import { SchemaTypeGenerator } from '../src';
 
-const outputDir = resolve(__dirname +'/../../../__output__/camel');
+const outputDir = resolve(__dirname +'/../../../__output__/base-types');
 
 it('types', () => {
   const generator = new SchemaTypeGenerator({
@@ -20,7 +20,7 @@ it('types', () => {
     schemas,
     schemaTSOptions: {
         strictTypeSafety: true,
-        useCamelCase: true,
+        useCamelCase: false,
         useSingleQuotes: true
     }
   });

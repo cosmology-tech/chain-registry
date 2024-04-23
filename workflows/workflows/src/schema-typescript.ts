@@ -32,6 +32,7 @@ export class SchemaTypeGenerator {
   constructor(options: SchemaTypeGeneratorOptions) {
     this.outputDir = options.outputDir;
     this.schemas = options.schemas;
+    this.schemaTSOptions = options.schemaTSOptions;
     this.supportedSchemas = new Set(options.supportedSchemas || []);
   }
 
@@ -55,7 +56,8 @@ export class SchemaTypeGenerator {
         try {
           const schema: JSONSchema = this.readJsonFile(schemaFile);
           this.updateSchemaTitle(schema, schemaFile);
-          const result = this.generateTypeScript(schema);
+          console.log(this.schemaTSOptions)
+          const result = generateTypeScript(schema, this.schemaTSOptions);
           const filename = this.getOutputFilename(schemaFile);
           this.ensureDirExists(filename);
           this.writeFile(filename, result);
@@ -68,10 +70,6 @@ export class SchemaTypeGenerator {
 
   private readJsonFile(filePath: string): JSONSchema {
     return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-  }
-
-  private generateTypeScript(schema: JSONSchema): string {
-    return generateTypeScript(schema, this.schemaTSOptions);
   }
 
   private getOutputFilename(schemaFile: string): string {
