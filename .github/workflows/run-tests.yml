@@ -20,6 +20,9 @@ jobs:
         with:
           node-version: '20.x'
 
+      - name: Git Submodules
+        run: git submodule update --remote
+
       - name: Install Dependencies
         run: yarn install
 

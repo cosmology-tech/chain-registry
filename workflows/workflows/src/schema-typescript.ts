@@ -56,7 +56,6 @@ export class SchemaTypeGenerator {
         try {
           const schema: JSONSchema = this.readJsonFile(schemaFile);
           this.updateSchemaTitle(schema, schemaFile);
-          console.log(this.schemaTSOptions)
           const result = generateTypeScript(schema, this.schemaTSOptions);
           const filename = this.getOutputFilename(schemaFile);
           this.ensureDirExists(filename);
