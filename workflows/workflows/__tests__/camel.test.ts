@@ -3,7 +3,7 @@ import * as nativeFs from 'fs';
 
 import { schemas } from '../src';
 import { SchemaTypeGenerator } from '../src';
-import { globSync, mkdirpSync } from '../test-utils';
+import { globSync } from '../test-utils';
 
 it('types', () => {
   const generator = new SchemaTypeGenerator({
@@ -11,10 +11,7 @@ it('types', () => {
     // @ts-ignore
     readFs: nativeFs,
     // @ts-ignore
-    writeFs: {
-        ...fs,
-        mkdirpSync
-    },
+    writeFs: fs,
     supportedSchemas: [
         'chain.schema.json',
         'assetlist.schema.json',

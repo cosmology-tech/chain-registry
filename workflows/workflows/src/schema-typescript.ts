@@ -1,5 +1,6 @@
 import { basename, dirname, join } from 'path';
 import { generateTypeScript, JSONSchema, SchemaTSOptions } from 'schema-typescript';
+
 import { FilePathInfo } from './fixtures';
 
 // Default titles for certain schemas
@@ -16,7 +17,8 @@ const DEFAULT_TITLES: { [filename: string]: string } = {
 export interface FileSystem {
   readFileSync(path: string, encoding: string): string;
   writeFileSync(path: string, data: string): void;
-  mkdirpSync(path: string): void;
+  mkdirSync(path: string): void;
+  existsSync(path: string): boolean;
 }
 
 // Define an interface for the constructor options
@@ -89,9 +91,17 @@ export class SchemaTypeGenerator {
     return join(this.outputDir, filename.replace(/.json$/, '.ts'));
   }
 
-  private ensureDirExists(filePath: string): void {
-    this.writeFs.mkdirpSync(dirname(filePath));
+  private ensureDirExists(filePath: string): void {    
+    this.mkdirpSync(dirname(filePath));
   }
+
+  private mkdirpSync(p: string): void {
+    if (!this.writeFs.existsSync(p)) {
+      this.mkdirpSync(dirname(p));
+      this.writeFs.mkdirSync(p);
+    }
+  }
+
 
   private writeFile(filePath: string, content: string): void {
     this.writeFs.writeFileSync(filePath, content);
