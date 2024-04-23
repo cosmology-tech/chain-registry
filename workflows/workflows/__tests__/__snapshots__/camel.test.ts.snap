@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`types 1`] = `
+[
+  "/assetlist.schema.ts",
+  "/chain.schema.ts",
+  "/ibc_data.schema.ts",
+  "/memo_keys.schema.ts",
+  "/versions.schema.ts",
+]
+`;

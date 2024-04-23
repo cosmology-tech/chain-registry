@@ -1,13 +1,16 @@
 {
-  "name": "chain-registry",
-  "version": "1.41.9",
-  "description": "Cosmos chain registry ⚛️",
+  "name": "@chain-registry/cli",
+  "version": "1.26.3",
+  "description": "Chain Registry CLI",
   "author": "Dan Lynch <pyramation@gmail.com>",
-  "homepage": "https://github.com/cosmology-tech/chain-registry/tree/master/packages/chain-registry#readme",
+  "homepage": "https://github.com/cosmology-tech/chain-registry",
   "license": "SEE LICENSE IN LICENSE",
   "main": "index.js",
   "module": "esm/index.js",
   "types": "index.d.ts",
+  "bin":  {
+    "registry": "cli.js"
+  },
   "publishConfig": {
     "access": "public",
     "directory": "dist"
@@ -23,24 +26,24 @@
     "copy": "copyfiles -f LICENSE README.md package.json dist",
     "clean": "del dist/**",
     "prepare": "npm run build",
-    "codegen": "ts-node ./scripts/build.ts",
     "build": "npm run clean; tsc; tsc -p tsconfig.esm.json; npm run copy",
+    "dev": "ts-node src/cli",
     "test": "jest",
     "test:watch": "jest --watch"
   },
-  "devDependencies": {
-    "@chain-registry/utils": "^1.26.7",
-    "deepmerge": "^4.2.2"
-  },
   "dependencies": {
-    "@chain-registry/types": "^0.25.7"
+    "@chain-registry/workflows": "^1.26.3",
+    "@chain-registry/types": "^0.25.6",
+    "chalk": "^4.1.0",
+    "deepmerge": "^4.3.1",
+    "inquirerer": "1.6.1",
+    "minimist": "^1.2.8"
   },
   "keywords": [
+    "cli",
     "chain-registry",
     "web3",
     "cosmos",
-    "cosmos-sdk",
-    "interchain",
-    "tokens"
+    "interchain"
   ]
 }

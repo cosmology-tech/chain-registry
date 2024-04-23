@@ -1,9 +1,9 @@
 {
-  "name": "chain-registry",
-  "version": "1.41.9",
-  "description": "Cosmos chain registry ⚛️",
+  "name": "@chain-registry/workflows",
+  "version": "1.26.3",
+  "description": "Chain Registry Workflows",
   "author": "Dan Lynch <pyramation@gmail.com>",
-  "homepage": "https://github.com/cosmology-tech/chain-registry/tree/master/packages/chain-registry#readme",
+  "homepage": "https://github.com/cosmology-tech/chain-registry",
   "license": "SEE LICENSE IN LICENSE",
   "main": "index.js",
   "module": "esm/index.js",
@@ -23,24 +23,29 @@
     "copy": "copyfiles -f LICENSE README.md package.json dist",
     "clean": "del dist/**",
     "prepare": "npm run build",
-    "codegen": "ts-node ./scripts/build.ts",
     "build": "npm run clean; tsc; tsc -p tsconfig.esm.json; npm run copy",
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "devDependencies": {
-    "@chain-registry/utils": "^1.26.7",
-    "deepmerge": "^4.2.2"
+    "@types/sha.js": "^2.4.0",
+    "strfy-js": "^2.2.2"
   },
   "dependencies": {
-    "@chain-registry/types": "^0.25.7"
+    "@chain-registry/types": "^0.25.3",
+    "bignumber.js": "9.1.1",
+    "file-ts": "^0.7.15",
+    "mkdirp": "3.0.1",
+    "glob": "^7.1.4",
+    "minimatch": "^9.0.4",
+    "schema-typescript": "^0.2.4",
+    "sha.js": "^2.4.11",
+    "strfy-js": "^2.2.2"
   },
   "keywords": [
     "chain-registry",
     "web3",
     "cosmos",
-    "cosmos-sdk",
-    "interchain",
-    "tokens"
+    "interchain"
   ]
 }
