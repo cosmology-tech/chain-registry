@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`registry 1`] = `
+{
+  "assetLists": 290,
+  "chains": 263,
+  "ibcData": 614,
+  "memoKeys": 1,
+  "versions": 2,
+}
+`;
