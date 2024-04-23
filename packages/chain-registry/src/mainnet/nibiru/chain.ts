@@ -76,6 +76,10 @@ const info: Chain = {
       {
         address: 'https://nibiru.rpc.m.stavr.tech:443',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://nibiru-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -118,6 +122,10 @@ const info: Chain = {
       {
         address: 'https://nibiru.api.staking-explorer.com',
         provider: 'Daily DROP'
+      },
+      {
+        address: 'https://nibiru-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -156,6 +164,10 @@ const info: Chain = {
       {
         address: 'nibiru.grpc.m.stavr.tech:5023',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'nibiru-grpc.noders.services:35090',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

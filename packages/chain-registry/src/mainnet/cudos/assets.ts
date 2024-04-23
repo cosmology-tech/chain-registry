@@ -24,7 +24,11 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg'
-        }]
+        }],
+      socials: {
+        website: 'http://www.cudos.org',
+        twitter: 'https://twitter.com/CUDOS_'
+      }
     }]
 };
 export default info;

@@ -23,7 +23,11 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.svg'
-        }]
+        }],
+      socials: {
+        website: 'https://rizon.world/',
+        twitter: 'https://twitter.com/hdac_rizon'
+      }
     }]
 };
 export default info;

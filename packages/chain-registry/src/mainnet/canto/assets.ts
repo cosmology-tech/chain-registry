@@ -23,7 +23,11 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg'
-        }]
+        }],
+      socials: {
+        website: 'https://canto.io/',
+        twitter: 'https://twitter.com/CantoPublic'
+      }
     }, {
       description: 'Tether USDt on Canto',
       denom_units: [{

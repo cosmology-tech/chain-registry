@@ -356,6 +356,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg'
         }],
+      socials: {
+        website: 'http://www.bitcanna.io/',
+        twitter: 'https://twitter.com/BitCannaGlobal'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1394,6 +1398,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg'
         }],
+      socials: {
+        website: 'http://www.bitcanna.io/',
+        twitter: 'https://twitter.com/BitCannaGlobal'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {

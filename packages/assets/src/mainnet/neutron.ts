@@ -1627,7 +1627,7 @@ const assets: AssetList = {
           }
         }],
       socials: {
-        webiste: 'https://www.saga.xyz/',
+        website: 'https://www.saga.xyz/',
         twitter: 'https://twitter.com/Sagaxyz__'
       },
       traces: [{
@@ -2206,7 +2206,7 @@ const assets: AssetList = {
           }
         }],
       socials: {
-        webiste: 'https://www.saga.xyz/',
+        website: 'https://www.saga.xyz/',
         twitter: 'https://twitter.com/Sagaxyz__'
       },
       traces: [{
@@ -2848,6 +2848,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg'
         }],
+      socials: {
+        website: 'http://alter.network/',
+        twitter: 'https://twitter.com/AlterDapp'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -2886,6 +2890,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.svg'
         }],
+      socials: {
+        website: 'http://amber.money/',
+        twitter: 'https://twitter.com/AmberDAO_'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -4170,6 +4178,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg'
         }],
+      socials: {
+        website: 'http://alter.network/',
+        twitter: 'https://twitter.com/AlterDapp'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -4208,6 +4220,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.svg'
         }],
+      socials: {
+        website: 'http://amber.money/',
+        twitter: 'https://twitter.com/AmberDAO_'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {

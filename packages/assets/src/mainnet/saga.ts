@@ -435,6 +435,45 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Secret Network',
+      denom_units: [{
+          denom: 'ibc/1B28CD5F3CDC17E585A7F2F05931FA694B3EFF0233D98CEF3505A35410D53CED',
+          exponent: 0,
+          aliases: ['uscrt']
+        }, {
+          denom: 'scrt',
+          exponent: 6
+        }],
+      base: 'ibc/1B28CD5F3CDC17E585A7F2F05931FA694B3EFF0233D98CEF3505A35410D53CED',
+      name: 'Secret Network',
+      display: 'scrt',
+      symbol: 'SCRT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+      },
+      coingecko_id: 'secret',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+        }],
+      socials: {
+        website: 'https://scrt.network/',
+        twitter: 'https://twitter.com/SecretNetwork'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-152',
+            base_denom: 'uscrt',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            channel_id: 'channel-17'
+          }
+        }]
+    },
+    {
       description: 'The native token of Stride',
       denom_units: [{
           denom: 'ibc/FF6C2E86490C1C4FBBD24F55032831D2415B9D7882F85C3CC9C2401D79362BEA',
@@ -470,6 +509,45 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-0'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Secret Network',
+      denom_units: [{
+          denom: 'ibc/1B28CD5F3CDC17E585A7F2F05931FA694B3EFF0233D98CEF3505A35410D53CED',
+          exponent: 0,
+          aliases: ['uscrt']
+        }, {
+          denom: 'scrt',
+          exponent: 6
+        }],
+      base: 'ibc/1B28CD5F3CDC17E585A7F2F05931FA694B3EFF0233D98CEF3505A35410D53CED',
+      name: 'Secret Network',
+      display: 'scrt',
+      symbol: 'SCRT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+      },
+      coingecko_id: 'secret',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+        }],
+      socials: {
+        website: 'https://scrt.network/',
+        twitter: 'https://twitter.com/SecretNetwork'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-152',
+            base_denom: 'uscrt',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            channel_id: 'channel-17'
           }
         }]
     },

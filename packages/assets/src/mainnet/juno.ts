@@ -142,6 +142,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg'
         }],
+      socials: {
+        website: 'http://www.bitcanna.io/',
+        twitter: 'https://twitter.com/BitCannaGlobal'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -868,6 +872,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg'
         }],
+      socials: {
+        website: 'http://www.bitcanna.io/',
+        twitter: 'https://twitter.com/BitCannaGlobal'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4896,6 +4904,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg'
         }],
+      socials: {
+        website: 'http://alter.network/',
+        twitter: 'https://twitter.com/AlterDapp'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -4934,6 +4946,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.svg'
         }],
+      socials: {
+        website: 'http://amber.money/',
+        twitter: 'https://twitter.com/AmberDAO_'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -5240,6 +5256,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg'
         }],
+      socials: {
+        website: 'http://alter.network/',
+        twitter: 'https://twitter.com/AlterDapp'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -5278,6 +5298,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.svg'
         }],
+      socials: {
+        website: 'http://amber.money/',
+        twitter: 'https://twitter.com/AmberDAO_'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {

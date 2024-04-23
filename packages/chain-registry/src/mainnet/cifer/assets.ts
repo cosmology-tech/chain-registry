@@ -23,7 +23,11 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
-        }]
+        }],
+      socials: {
+        website: 'http://cifer.ai/',
+        twitter: 'https://twitter.com/cifer_ai'
+      }
     }]
 };
 export default info;

@@ -30,7 +30,11 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
-        }]
+        }],
+      socials: {
+        website: 'https://www.coreum.com/',
+        twitter: 'https://twitter.com/CoreumOfficial'
+      }
     }, {
       description: 'XRP bridged from XRPL',
       denom_units: [{

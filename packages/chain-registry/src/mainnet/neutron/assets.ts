@@ -611,7 +611,11 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/apollo.svg'
-        }]
+        }],
+      socials: {
+        website: 'https://apollo.farm/',
+        twitter: 'https://twitter.com/ApolloDAO'
+      }
     },
     {
       description: 'NEWTROLL',

@@ -90,7 +90,7 @@ const info: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg'
         }],
       socials: {
-        webiste: 'https://www.neokingdom.org/',
+        website: 'https://www.neokingdom.org/',
         twitter: 'https://twitter.com/NEOKingdomDAO'
       }
     },

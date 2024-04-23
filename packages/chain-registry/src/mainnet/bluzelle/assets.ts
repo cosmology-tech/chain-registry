@@ -26,7 +26,11 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/bluzelle.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/bluzelle.svg'
-        }]
+        }],
+      socials: {
+        website: 'http://bluzelle.com/',
+        twitter: 'https://twitter.com/BluzelleHQ'
+      }
     },
     {
       description: 'The ELT token of Bluzelle\'s Gamma 4 Gaming Ecosystem',

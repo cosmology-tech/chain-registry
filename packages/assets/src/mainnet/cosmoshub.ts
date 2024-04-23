@@ -25,6 +25,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
         }],
+      socials: {
+        website: 'https://arable.finance/',
+        twitter: 'https://twitter.com/ArableProtocol'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -60,6 +64,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
         }],
+      socials: {
+        website: 'https://arable.finance/',
+        twitter: 'https://twitter.com/ArableProtocol'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -210,6 +218,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.svg'
         }],
+      socials: {
+        website: 'https://aioz.network/',
+        twitter: 'https://twitter.com/AIOZNetwork'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -404,6 +416,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg'
         }],
+      socials: {
+        website: 'http://www.bitcanna.io/',
+        twitter: 'https://twitter.com/BitCannaGlobal'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -588,6 +604,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
         }],
+      socials: {
+        website: 'http://cifer.ai/',
+        twitter: 'https://twitter.com/cifer_ai'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -630,6 +650,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
         }],
+      socials: {
+        website: 'https://www.coreum.com/',
+        twitter: 'https://twitter.com/CoreumOfficial'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -665,6 +689,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
         }],
+      socials: {
+        website: 'https://arable.finance/',
+        twitter: 'https://twitter.com/ArableProtocol'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -700,6 +728,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
         }],
+      socials: {
+        website: 'https://arable.finance/',
+        twitter: 'https://twitter.com/ArableProtocol'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -850,6 +882,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.svg'
         }],
+      socials: {
+        website: 'https://aioz.network/',
+        twitter: 'https://twitter.com/AIOZNetwork'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1044,6 +1080,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg'
         }],
+      socials: {
+        website: 'http://www.bitcanna.io/',
+        twitter: 'https://twitter.com/BitCannaGlobal'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1228,6 +1268,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
         }],
+      socials: {
+        website: 'http://cifer.ai/',
+        twitter: 'https://twitter.com/cifer_ai'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1270,6 +1314,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
         }],
+      socials: {
+        website: 'https://www.coreum.com/',
+        twitter: 'https://twitter.com/CoreumOfficial'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1769,7 +1817,7 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg'
         }],
       socials: {
-        webiste: 'https://www.neokingdom.org/',
+        website: 'https://www.neokingdom.org/',
         twitter: 'https://twitter.com/NEOKingdomDAO'
       },
       traces: [{
@@ -4151,7 +4199,7 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg'
         }],
       socials: {
-        webiste: 'https://www.neokingdom.org/',
+        website: 'https://www.neokingdom.org/',
         twitter: 'https://twitter.com/NEOKingdomDAO'
       },
       traces: [{

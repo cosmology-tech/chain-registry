@@ -30,7 +30,11 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.svg'
-        }]
+        }],
+      socials: {
+        website: 'https://aioz.network/',
+        twitter: 'https://twitter.com/AIOZNetwork'
+      }
     }]
 };
 export default info;

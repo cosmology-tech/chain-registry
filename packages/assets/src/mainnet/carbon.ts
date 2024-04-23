@@ -25,6 +25,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg'
         }],
+      socials: {
+        website: 'https://canto.io/',
+        twitter: 'https://twitter.com/CantoPublic'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -60,6 +64,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg'
         }],
+      socials: {
+        website: 'https://canto.io/',
+        twitter: 'https://twitter.com/CantoPublic'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -174,7 +182,7 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg'
         }],
       socials: {
-        webiste: 'https://www.neokingdom.org/',
+        website: 'https://www.neokingdom.org/',
         twitter: 'https://twitter.com/NEOKingdomDAO'
       },
       traces: [{
@@ -635,7 +643,7 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg'
         }],
       socials: {
-        webiste: 'https://www.neokingdom.org/',
+        website: 'https://www.neokingdom.org/',
         twitter: 'https://twitter.com/NEOKingdomDAO'
       },
       traces: [{

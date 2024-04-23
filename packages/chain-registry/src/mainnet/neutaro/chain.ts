@@ -38,14 +38,23 @@ const info: Chain = {
     rpc: [{
         address: 'https://rpc2.neutaro.tech:443',
         provider: 'Neutaro'
+      }, {
+        address: 'https://rpc-neutaro.blockval.io',
+        provider: 'Blockval'
       }],
     rest: [{
         address: 'https://api2.neutaro.tech:443',
         provider: 'Neutaro'
+      }, {
+        address: 'https://api-neutaro.blockval.io',
+        provider: 'Blockval'
       }],
     grpc: [{
         address: 'https://grpc2.neutaro.tech:443',
         provider: 'Neutaro'
+      }, {
+        address: 'https://grpc-neutaro.blockval.io',
+        provider: 'Blockval'
       }]
   },
   explorers: [{

@@ -10,6 +10,7 @@ const info: Chain = {
   bech32_prefix: 'cvn',
   node_home: '$HOME/.cvnd',
   daemon_name: 'cvnd',
+  key_algos: ['ethsecp256k1'],
   slip44: 60,
   fees: {
     fee_tokens: [{
@@ -42,9 +43,6 @@ const info: Chain = {
         provider: 'cvn.io'
       }],
     grpc: [{
-        address: 'https://rest.consciousdao.com',
-        provider: 'consciousdao.com'
-      }, {
         address: 'https://grpc.cvn.io',
         provider: 'cvn.io'
       }],

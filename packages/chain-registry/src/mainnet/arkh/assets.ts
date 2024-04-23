@@ -22,7 +22,11 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.svg'
-        }]
+        }],
+      socials: {
+        website: 'https://arkhadian.io/',
+        twitter: 'https://twitter.com/ArkhadianSas'
+      }
     }]
 };
 export default info;

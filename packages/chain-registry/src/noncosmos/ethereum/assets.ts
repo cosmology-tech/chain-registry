@@ -1090,7 +1090,7 @@ const info: AssetList = {
         }],
       coingecko_id: 'pax-gold',
       socials: {
-        webiste: 'https://www.paxos.com/paxgold/',
+        website: 'https://www.paxos.com/paxgold/',
         twitter: 'https://twitter.com/paxosglobal'
       },
       images: [{

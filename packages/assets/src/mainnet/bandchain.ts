@@ -32,6 +32,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
         }],
+      socials: {
+        website: 'https://www.coreum.com/',
+        twitter: 'https://twitter.com/CoreumOfficial'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -155,6 +159,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
         }],
+      socials: {
+        website: 'https://www.coreum.com/',
+        twitter: 'https://twitter.com/CoreumOfficial'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {

@@ -24,7 +24,11 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
-        }]
+        }],
+      socials: {
+        website: 'https://arable.finance/',
+        twitter: 'https://twitter.com/ArableProtocol'
+      }
     },
     {
       description: 'Overcollateralized stable coin for Arable derivatives v1',
@@ -47,7 +51,11 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
-        }]
+        }],
+      socials: {
+        website: 'https://arable.finance/',
+        twitter: 'https://twitter.com/ArableProtocol'
+      }
     },
     {
       description: 'Ciento Exchange Token',

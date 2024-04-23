@@ -37,7 +37,7 @@ const info: AssetList = {
           }
         }],
       socials: {
-        webiste: 'https://www.saga.xyz/',
+        website: 'https://www.saga.xyz/',
         twitter: 'https://twitter.com/Sagaxyz__'
       }
     }]

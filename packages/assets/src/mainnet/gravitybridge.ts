@@ -25,6 +25,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
         }],
+      socials: {
+        website: 'https://arable.finance/',
+        twitter: 'https://twitter.com/ArableProtocol'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -60,6 +64,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
         }],
+      socials: {
+        website: 'https://arable.finance/',
+        twitter: 'https://twitter.com/ArableProtocol'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -291,6 +299,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
         }],
+      socials: {
+        website: 'https://www.coreum.com/',
+        twitter: 'https://twitter.com/CoreumOfficial'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -436,7 +448,7 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg'
         }],
       socials: {
-        webiste: 'https://www.neokingdom.org/',
+        website: 'https://www.neokingdom.org/',
         twitter: 'https://twitter.com/NEOKingdomDAO'
       },
       traces: [{
@@ -546,6 +558,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
         }],
+      socials: {
+        website: 'https://arable.finance/',
+        twitter: 'https://twitter.com/ArableProtocol'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -581,6 +597,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
         }],
+      socials: {
+        website: 'https://arable.finance/',
+        twitter: 'https://twitter.com/ArableProtocol'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -812,6 +832,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
         }],
+      socials: {
+        website: 'https://www.coreum.com/',
+        twitter: 'https://twitter.com/CoreumOfficial'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -957,7 +981,7 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg'
         }],
       socials: {
-        webiste: 'https://www.neokingdom.org/',
+        website: 'https://www.neokingdom.org/',
         twitter: 'https://twitter.com/NEOKingdomDAO'
       },
       traces: [{
@@ -2154,6 +2178,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg'
         }],
+      socials: {
+        website: 'http://alter.network/',
+        twitter: 'https://twitter.com/AlterDapp'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -2192,6 +2220,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.svg'
         }],
+      socials: {
+        website: 'http://amber.money/',
+        twitter: 'https://twitter.com/AmberDAO_'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -2498,6 +2530,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg'
         }],
+      socials: {
+        website: 'http://alter.network/',
+        twitter: 'https://twitter.com/AlterDapp'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -2536,6 +2572,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.svg'
         }],
+      socials: {
+        website: 'http://amber.money/',
+        twitter: 'https://twitter.com/AmberDAO_'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {

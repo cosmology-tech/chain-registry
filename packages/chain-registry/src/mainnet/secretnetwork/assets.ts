@@ -198,7 +198,11 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg'
-        }]
+        }],
+      socials: {
+        website: 'http://alter.network/',
+        twitter: 'https://twitter.com/AlterDapp'
+      }
     },
     {
       description: 'The native token cw20 for Amber on Secret Network',
@@ -222,7 +226,11 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.svg'
-        }]
+        }],
+      socials: {
+        website: 'http://amber.money/',
+        twitter: 'https://twitter.com/AmberDAO_'
+      }
     },
     {
       description: 'The native token cw20 for Shill on Secret Network',

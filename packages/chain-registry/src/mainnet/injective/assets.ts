@@ -245,7 +245,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/hava.png'
         }],
       socials: {
-        webiste: 'https://havacoin.xyz/',
+        website: 'https://havacoin.xyz/',
         twitter: 'https://twitter.com/Hava_Coin'
       }
     },

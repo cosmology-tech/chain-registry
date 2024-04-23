@@ -8461,7 +8461,11 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/amposmo.png'
-        }]
+        }],
+      socials: {
+        website: 'https://www.erisprotocol.com/',
+        twitter: 'https://twitter.com/eris_protocol'
+      }
     },
     {
       description: 'The native staking token of Sei.',
@@ -12854,7 +12858,7 @@ const info: AssetList = {
         }],
       keywords: ['memecoin', 'osmosis_unlisted'],
       socials: {
-        webiste: 'https://www.ibcmeme.wtf',
+        website: 'https://www.ibcmeme.wtf',
         twitter: 'https://twitter.com/IBCmemecoin'
       }
     },
@@ -13187,6 +13191,28 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/BRNZ.svg'
+        }]
+    },
+    {
+      description: 'Bernese Mountain Dog. Thematic dog token to have fun and be friends with all other dog tokens. Fixed supply 132M',
+      denom_units: [{
+          denom: 'factory/osmo1s6ht8qrm8x0eg8xag5x3ckx9mse9g4se248yss/BERNESE',
+          exponent: 0
+        }, {
+          denom: 'BERNESE',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      address: 'osmo1s6ht8qrm8x0eg8xag5x3ckx9mse9g4se248yss',
+      base: 'factory/osmo1s6ht8qrm8x0eg8xag5x3ckx9mse9g4se248yss/BERNESE',
+      name: 'BERNESE',
+      display: 'BERNESE',
+      symbol: 'BERNESE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/bernese.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/bernese.png'
         }]
     }
   ]

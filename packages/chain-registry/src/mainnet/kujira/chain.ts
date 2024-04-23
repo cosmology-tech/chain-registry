@@ -191,7 +191,7 @@ const info: Chain = {
       },
       {
         address: 'https://kujira-mainnet-rpc.autostake.com:443',
-        provider: 'AutoStake ⚡️ 0% fee'
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'https://rpc.kujira.rektdao.club',
@@ -265,7 +265,7 @@ const info: Chain = {
       },
       {
         address: 'https://kujira-mainnet-lcd.autostake.com:443',
-        provider: 'AutoStake ⚡️ 0% fee'
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'https://api.kujira.rektdao.club',
@@ -311,7 +311,7 @@ const info: Chain = {
       },
       {
         address: 'kujira-mainnet-grpc.autostake.com:443',
-        provider: 'AutoStake ⚡️ 0% fee'
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'kujira.grpc.kjnodes.com:11390',

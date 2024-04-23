@@ -25,6 +25,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
         }],
+      socials: {
+        website: 'https://arable.finance/',
+        twitter: 'https://twitter.com/ArableProtocol'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -60,6 +64,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
         }],
+      socials: {
+        website: 'https://arable.finance/',
+        twitter: 'https://twitter.com/ArableProtocol'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -398,6 +406,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
         }],
+      socials: {
+        website: 'https://www.coreum.com/',
+        twitter: 'https://twitter.com/CoreumOfficial'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -664,6 +676,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
         }],
+      socials: {
+        website: 'https://arable.finance/',
+        twitter: 'https://twitter.com/ArableProtocol'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -699,6 +715,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
         }],
+      socials: {
+        website: 'https://arable.finance/',
+        twitter: 'https://twitter.com/ArableProtocol'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1037,6 +1057,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
         }],
+      socials: {
+        website: 'https://www.coreum.com/',
+        twitter: 'https://twitter.com/CoreumOfficial'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {

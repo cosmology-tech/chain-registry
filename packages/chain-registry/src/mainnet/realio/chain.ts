@@ -75,6 +75,10 @@ const info: Chain = {
       {
         address: 'https://realio-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://rpc-realio.blockval.io',
+        provider: 'Blockval'
       }
     ],
     rest: [
@@ -117,6 +121,10 @@ const info: Chain = {
       {
         address: 'https://realio-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://api-realio.blockval.io',
+        provider: 'Blockval'
       }
     ],
     grpc: [
@@ -159,6 +167,10 @@ const info: Chain = {
       {
         address: 'realio-grpc.noders.services:22090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://grpc-realio.blockval.io',
+        provider: 'Blockval'
       }
     ],
     "evm-http-jsonrpc": [

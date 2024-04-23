@@ -23,7 +23,11 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg'
-        }]
+        }],
+      socials: {
+        website: 'https://cvn.io',
+        twitter: 'https://twitter.com/conscious_chain'
+      }
     }]
 };
 export default info;
