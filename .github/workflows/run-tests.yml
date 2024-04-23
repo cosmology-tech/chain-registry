@@ -14,14 +14,16 @@ jobs:
     steps:
       - name: Checkout Repository 🛎️
         uses: actions/checkout@v4
+        with:
+            submodules: 'recursive'  # Ensures submodules are also checked out
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
 
-      - name: Git Submodules
-        run: git submodule update --remote
+      # - name: Git Submodules
+      #   run: git submodule update --remote
 
       - name: Install Dependencies
         run: yarn install
