@@ -4,6 +4,6 @@ exports[`numAssets 1`] = `289`;
 
 exports[`numChains 1`] = `262`;
 
-exports[`numIBC 1`] = `613`;
+exports[`numIBC 1`] = `614`;
 
 exports[`numSchemas 1`] = `5`;
