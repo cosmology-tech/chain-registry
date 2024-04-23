@@ -17,6 +17,7 @@ describe('Inquirerer', () => {
 
     enqueueInputResponse({ type: 'read', value: 'osmosis' });
     enqueueInputResponse({ type: 'key', value: KEY_SEQUENCES.ENTER });
+    enqueueInputResponse({ type: 'read', value: 'agoric' });
     enqueueInputResponse({ type: 'key', value: KEY_SEQUENCES.ENTER });
 
     const options: Partial<CLIOptions> = {
@@ -31,7 +32,7 @@ describe('Inquirerer', () => {
     };
 
     const app = new CLI(commands, options, {
-      _: ['chain']
+      _: ['asset-lists']
     });
 
     const result = await app.run();

@@ -3,7 +3,7 @@
 exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
 {
   "_": [
-    "asset-lists",
+    "chain",
   ],
   "chain": {
     "$schema": "../chain.schema.json",

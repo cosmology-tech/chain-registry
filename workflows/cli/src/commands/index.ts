@@ -131,8 +131,6 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
       console.log(JSON.stringify(argv.asset, null, 2))
       break;
     case 'ibc-data':
-      console.log(argv);
-
       if (Array.isArray(argv.chain)) {
         argv['chain-1'] = argv.chain[0];
         argv['chain-2'] = argv.chain[1];

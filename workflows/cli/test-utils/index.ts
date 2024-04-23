@@ -50,6 +50,8 @@ export function setupTests(): () => TestEnvironment {
 
     let inputQueue: InputResponse[] = [];
     let currentInputIndex = 0;
+    let lastScheduledTime = 0;
+
 
     const beforeEachSetup = (): TestEnvironment => {
         jest.clearAllMocks();
@@ -57,7 +59,7 @@ export function setupTests(): () => TestEnvironment {
         writeResults = [];
         transformResults = [];
 
-        mockInput = new Readable({ read(size) {} });
+        mockInput = new Readable({ read(size) { } });
         (mockInput as any).setRawMode = jest.fn();
 
         mockOutput = new Writable({
@@ -81,18 +83,23 @@ export function setupTests(): () => TestEnvironment {
         setupReadlineMock(inputQueue, currentInputIndex);
         mockInput.pipe(transformStream);
 
+        const enqueueInputResponse = (input: InputResponse) => {
+            lastScheduledTime += 350;
+
+            if (input.type === 'key') {
+                setTimeout(() => mockInput.push(input.value), lastScheduledTime);
+            } else {
+                inputQueue.push(input);  // We assume that handling read inputs remains the same unless you need to delay these as well
+            }
+        };
+
+
         return {
             mockInput,
             mockOutput,
             writeResults,
             transformResults,
-            enqueueInputResponse: (input: InputResponse) => {
-                if (input.type === 'key') {
-                    setTimeout(() => mockInput.push(input.value), 350);
-                } else {
-                    inputQueue.push(input);
-                }
-            }
+            enqueueInputResponse
         };
     };
 
