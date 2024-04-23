@@ -21,7 +21,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
+          cache: 'yarn'
 
+      - name: Checkout specific commit in submodule
+        run: |
+          cd packages/chain-registry/chain-registry
+          git fetch
+          git checkout 27aeb233a272dbd076a50cb5a9aa5a45296e3c96
+          
       # - name: Git Submodules
       #   run: git submodule update --remote
 
