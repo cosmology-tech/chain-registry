@@ -25,7 +25,7 @@ jobs:
           git submodule update --remote
           cd packages/chain-registry/chain-registry
           git fetch
-          git checkout a25edb798078336ee7f9b472350404c7558ba872
+          git checkout 15ea51409be8e5c2a63663b7c3a27ee642066f01
 
       - name: Install Dependencies 🧶
         run: yarn install
