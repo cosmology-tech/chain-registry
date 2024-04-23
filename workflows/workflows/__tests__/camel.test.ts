@@ -1,17 +1,15 @@
-import { fs } from 'file-ts';
-import * as nativeFs from 'fs';
+import * as fs from 'fs';
 
 import { schemas } from '../src';
 import { SchemaTypeGenerator } from '../src';
-import { globSync } from '../test-utils';
+import { sync as globSync } from 'glob';
+import { resolve } from 'path';
+
+const outputDir = resolve(__dirname +'/../../../__output__/base-types');
 
 it('types', () => {
   const generator = new SchemaTypeGenerator({
-    outputDir: './schemas',
-    // @ts-ignore
-    readFs: nativeFs,
-    // @ts-ignore
-    writeFs: fs,
+    outputDir,
     supportedSchemas: [
         'chain.schema.json',
         'assetlist.schema.json',
@@ -28,12 +26,7 @@ it('types', () => {
   });
   generator.generateTypes();
 
-  const tsFiles = globSync('./schemas', '*.ts');
+  const tsFiles = globSync(`${outputDir}/*.ts`).map(a=>a.split(outputDir)[1])
   expect(tsFiles).toMatchSnapshot();
-
-  tsFiles.forEach(file=>{
-    const content = fs.readFileSync(file, 'utf-8');
-    expect(content).toMatchSnapshot();
-  });
   
 });

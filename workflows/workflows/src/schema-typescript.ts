@@ -1,3 +1,4 @@
+import * as fs from 'fs';
 import { basename, dirname, join } from 'path';
 import { generateTypeScript, JSONSchema, SchemaTSOptions } from 'schema-typescript';
 
@@ -13,36 +14,23 @@ const DEFAULT_TITLES: { [filename: string]: string } = {
   'memo_keys.schema.json': 'MemoKeys',
 };
 
-// Define an interface for the filesystem operations
-export interface FileSystem {
-  readFileSync(path: string, encoding: string): string;
-  writeFileSync(path: string, data: string): void;
-  mkdirSync(path: string): void;
-  existsSync(path: string): boolean;
-}
 
 // Define an interface for the constructor options
 export interface SchemaTypeGeneratorOptions {
   outputDir: string;
   schemaTSOptions: Partial<SchemaTSOptions>;
-  readFs: FileSystem;
-  writeFs: FileSystem;
   schemas: FilePathInfo[];
   supportedSchemas?: string[];
 }
 
 export class SchemaTypeGenerator {
   private outputDir: string;
-  private writeFs: FileSystem;
-  private readFs: FileSystem;
   private schemas: FilePathInfo[];
   private schemaTSOptions: Partial<SchemaTSOptions>
   private supportedSchemas: Set<string>;
 
   constructor(options: SchemaTypeGeneratorOptions) {
     this.outputDir = options.outputDir;
-    this.writeFs = options.writeFs;
-    this.readFs = options.readFs;
     this.schemas = options.schemas;
     this.supportedSchemas = new Set(options.supportedSchemas || []);
   }
@@ -79,7 +67,7 @@ export class SchemaTypeGenerator {
   }
 
   private readJsonFile(filePath: string): JSONSchema {
-    return JSON.parse(this.readFs.readFileSync(filePath, 'utf-8'));
+    return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
   }
 
   private generateTypeScript(schema: JSONSchema): string {
@@ -96,14 +84,14 @@ export class SchemaTypeGenerator {
   }
 
   private mkdirpSync(p: string): void {
-    if (!this.writeFs.existsSync(p)) {
+    if (!fs.existsSync(p)) {
       this.mkdirpSync(dirname(p));
-      this.writeFs.mkdirSync(p);
+      fs.mkdirSync(p);
     }
   }
 
 
   private writeFile(filePath: string, content: string): void {
-    this.writeFs.writeFileSync(filePath, content);
+    fs.writeFileSync(filePath, content);
   }
 }

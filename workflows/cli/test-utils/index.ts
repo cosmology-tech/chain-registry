@@ -9,6 +9,16 @@ export const KEY_SEQUENCES = {
     SPACE: ' '
 };
 
+function humanizeKeySequences(data: string): string {
+    const keyMap: { [key: string]: string } = {
+        '\u000d': '<ENTER>',
+        '\u001b[A': '<UP_ARROW>',
+        '\u001b[B': '<DOWN_ARROW>',
+        ' ': '<SPACE>'
+    };
+
+    return data.replace(/[\u000d\u001b[A\u001b[B ]/g, (match) => keyMap[match]);
+}
 interface InputResponse {
     type: 'key' | 'read';
     value: string;
@@ -65,7 +75,9 @@ export function setupTests(): () => TestEnvironment {
         mockOutput = new Writable({
             write: (chunk, encoding, callback) => {
                 const str = chunk.toString();
-                writeResults.push(stripAnsi(str));
+                const humanizedStr = humanizeKeySequences(str);
+                const cleanStr = stripAnsi(humanizedStr);
+                writeResults.push(cleanStr);
                 mockWrite(str);
                 callback();
             }
@@ -74,7 +86,9 @@ export function setupTests(): () => TestEnvironment {
         transformStream = new Transform({
             transform(chunk, encoding, callback) {
                 const data = chunk.toString();
-                transformResults.push(stripAnsi(data));
+                const humanizedData = humanizeKeySequences(data);
+                const cleanData = stripAnsi(humanizedData);
+                transformResults.push(cleanData);
                 this.push(chunk);
                 callback();
             }

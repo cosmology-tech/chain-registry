@@ -35,6 +35,8 @@
     "@chain-registry/types": "^0.25.3",
     "bignumber.js": "9.1.1",
     "file-ts": "^0.7.15",
+    "mkdirp": "3.0.1",
+    "glob": "^7.1.4",
     "minimatch": "^9.0.4",
     "schema-typescript": "^0.2.4",
     "sha.js": "^2.4.11",
