@@ -1,7 +1,7 @@
 import { AssetList, Chain, IBCData, MemoKeys, Versions } from '@chain-registry/interfaces';
 import { readFileSync } from 'fs';
 import { sync as glob } from 'glob';
-import { basename, join } from 'path';
+import { basename, dirname, join } from 'path';
 import { JSONSchema } from "schema-typescript";
 
 const SCHEMATA_MAPPING: Record<string, string> = {
@@ -20,21 +20,46 @@ const SCHEMA_WHITELIST = [
   'versions.schema.json'
 ];
 
-interface JSONSchemaContent {
+const IGNORE_DIRS = ['_scripts', '_template', '.github'];
+
+export interface JSONSchemaContent<T> {
   $schemaFile: string;
   path: string;
-  content: JSONSchema;
+  content: T;  // Now generic, holds specific schema data type
+}
+export interface DataMapping {
+  AssetList: JSONSchemaContent<AssetList>[]
+  IBCData: JSONSchemaContent<IBCData>[]
+  Chain: JSONSchemaContent<Chain>[]
+  MemoKeys: JSONSchemaContent<MemoKeys>[]
+  Versions: JSONSchemaContent<Versions>[]
 }
 
-interface DataMapping {
-  [key: string]: any[];
+export interface SchemaMapping {
+  AssetList: JSONSchema;
+  IBCData: JSONSchema;
+  Chain: JSONSchema;
+  MemoKeys: JSONSchema;
+  Versions: JSONSchema;
 }
 
 export class RegistryFixture {
-  private definitions: JSONSchemaContent[];
-  private basePath: string;
-  private schemaMappings: { [title: string]: JSONSchema } = {};
-  private dataMappings: DataMapping = {};
+  private definitions: JSONSchemaContent<JSONSchema>[];
+  public basePath: string;
+  public schemaMappings: SchemaMapping = {
+    AssetList: null,
+    IBCData: null,
+    Chain: null,
+    MemoKeys: null,
+    Versions: null
+  };
+  public dataMappings: DataMapping = {
+    AssetList: [],
+    IBCData: [],
+    Chain: [],
+    MemoKeys: [],
+    Versions: []
+  };
 
   constructor(basePath: string) {
     this.basePath = basePath;
@@ -66,7 +91,7 @@ export class RegistryFixture {
     return false;
   }
 
-  private getSchemaFrom$Schema(data: JSONSchemaContent): JSONSchema {
+  private getSchemaFrom$Schema(data: JSONSchemaContent<JSONSchema>): JSONSchema {
     const schema = this.definitions.find(defn => {
       const pred = basename(defn.path) === data.$schemaFile;
       return pred;
@@ -84,32 +109,47 @@ export class RegistryFixture {
     return false;
   }
 
-  private loadData(schema: JSONSchemaContent): void {
+  private loadData(schema: JSONSchemaContent<JSONSchema>): void {
     if (this.isData(schema.content)) {
       const defn = this.getSchemaFrom$Schema(schema);
-      this.dataMappings[this.getCamelCase(defn)].push(schema.content);
+      this.dataMappings[defn.title as keyof DataMapping].push(schema as any);
     }
   }
 
   private initStoreForSchema(schema: JSONSchema) {
     // if it exists return
-    if (schema.title in this.schemaMappings) return;
+    if (this.schemaMappings[schema.title as keyof SchemaMapping]) return;
 
     // initialize
-    const camel = this.getCamelCase(schema);
-    this.schemaMappings[schema.title] = schema;
-    this.dataMappings[camel] = [];
+    this.schemaMappings[schema.title as keyof SchemaMapping] = schema;
   }
 
   private initializeData(): void {
 
     let types: any = {};
 
+    
     // parse every JSON file
-    this.definitions = glob(`${this.basePath}/**/*.json`)
+    this.definitions = glob(`${this.basePath}/**/*.json`, {
+      ignore: [
+        `${this.basePath}/_template/**/*`,
+        `${this.basePath}/.github/**/*`,
+        `${this.basePath}/.git/**/*`,
+        `${this.basePath}/node_modules/**/*`
+      ]
+    })
+      .filter(path=> {
+        const a = dirname(path.split(this.basePath)[1]);
+        
+        return true;
+        //  !IGNORE_DIRS.includes()
+      })
       .map(path => {
         const content = JSON.parse(readFileSync(path, 'utf-8'));
         if (!this.isJsonSchema(content)) return;
+
+        // https://stackoverflow.com/questions/69133771/ajv-no-schema-with-key-or-ref-https-json-schema-org-draft-07-schema
+        content.$schema = content.$schema.replace(/https/, 'http');
         types[basename(content.$schema)] = true;
         return {
           $schemaFile: basename(content.$schema),
@@ -140,23 +180,23 @@ export class RegistryFixture {
   }
 
   public get chains(): Chain[] {
-    return this.dataMappings.chains || [];
+    return this.dataMappings.Chain.map(c=>c.content);
   }
 
   public get assetLists(): AssetList[] {
-    return this.dataMappings.assetLists || [];
+    return this.dataMappings.AssetList.map(c=>c.content);
   }
 
   public get ibcData(): IBCData[] {
-    return this.dataMappings.ibcData || [];
+    return this.dataMappings.IBCData.map(c=>c.content);
   }
 
   public get memoKeys(): MemoKeys[] {
-    return this.dataMappings.memoKeys || [];
+    return this.dataMappings.MemoKeys.map(c=>c.content);
   }
 
   public get versions(): Versions[] {
-    return this.dataMappings.versions || [];
+    return this.dataMappings.Versions.map(c=>c.content);
   }
 
   public get count() {

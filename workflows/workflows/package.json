@@ -33,11 +33,13 @@
   },
   "dependencies": {
     "@chain-registry/interfaces": "^0.25.7",
+    "ajv": "^8.12.0",
+    "ajv-formats": "^3.0.1",
     "bignumber.js": "9.1.1",
     "file-ts": "^0.7.15",
-    "mkdirp": "3.0.1",
     "glob": "^7.1.4",
     "minimatch": "^9.0.4",
+    "mkdirp": "3.0.1",
     "schema-typescript": "^0.2.5",
     "sha.js": "^2.4.11",
     "strfy-js": "^2.2.2"
