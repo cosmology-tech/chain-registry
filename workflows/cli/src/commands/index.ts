@@ -56,9 +56,8 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
       ]
     }
   ];
-  console.log('prompt');
+
   ({ command } = await prompter.prompt(argv, questions));
-  console.log({ command })
 
   argv = await prompter.prompt(argv, [
     {
@@ -98,9 +97,9 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
       ]);
       const chain: Chain = argv.chain;
       console.log(chain.chain_id);
-      // console.log(chain.codebase.cosmos_sdk_version);
-      // console.log(chain.codebase.cosmwasm_version);
-      // console.log(chain.codebase.ibc_go_version);
+      chain.codebase.cosmos_sdk_version && console.log(chain.codebase.cosmos_sdk_version);
+      chain.codebase.cosmwasm_version && console.log(chain.codebase.cosmwasm_version);
+      chain.codebase.ibc_go_version && console.log(chain.codebase.ibc_go_version);
       break;
     case 'asset-lists':
       argv = await prompter.prompt(argv, [
