@@ -36,8 +36,11 @@ jobs:
         run: cd packages/utils && yarn test
       
       - name: Test @chain-registry/client
-        run: cd workflows/client && yarn test
+        run: cd packages/client && yarn test
         
+      - name: Test @chain-registry/workflows
+        run: cd workflows/workflows && yarn test
+
       - name: Test @chain-registry/cli
         run: cd workflows/cli && yarn test
         
