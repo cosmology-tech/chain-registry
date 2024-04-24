@@ -1,9 +1,9 @@
 import { join, resolve } from "path";
 
-import { RegistryFixture } from "../src/registry";
+import { Registry } from "../src/registry";
 
 export const getRegistry = () => {
-  const registry = new RegistryFixture(
+  const registry = new Registry(
     join(__dirname, '/../../../packages/chain-registry/chain-registry')
   );
   return registry;

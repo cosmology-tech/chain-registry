@@ -14,25 +14,15 @@ describe('Inquirerer', () => {
   });
 
   it('prompts user and correctly processes delayed input', async () => {
-    const { options, writeResults, transformResults } = environment;
-
-    // enqueueInputResponse({ type: 'read', value: registryDir });
-    // enqueueInputResponse({ type: 'read', value: 'osmosis' });
-    // enqueueInputResponse({ type: 'key', value: KEY_SEQUENCES.ENTER });
-    // enqueueInputResponse({ type: 'read', value: 'agoric' });
-    // enqueueInputResponse({ type: 'key', value: KEY_SEQUENCES.ENTER });
+    const { options  } = environment;
 
     const app = new CLI(commands, options, {
-      _: ['asset-list'],
-      registryDir,
-      chain: 'osmosis',
-      asset: 'uion'
+      _: ['validate'],
+      registryDir
     });
 
     const result = await app.run();
 
     expect(result).toMatchSnapshot();
-    expect(writeResults).toMatchSnapshot();
-    expect(transformResults).toMatchSnapshot();
   });
 });

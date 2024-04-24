@@ -1,9 +1,10 @@
 import { CLI } from 'inquirerer';
 
-import { commands } from '../src/commands';
-import { KEY_SEQUENCES, setupTests, TestEnvironment } from '../test-utils';
+import { commands } from '../src/commands/info';
+import { setupTests, TestEnvironment } from '../test-utils';
 
 const beforeEachSetup = setupTests();
+const registryDir = '../../packages/chain-registry/chain-registry';
 
 describe('Inquirerer', () => {
   let environment: TestEnvironment;
@@ -13,14 +14,13 @@ describe('Inquirerer', () => {
   });
 
   it('prompts user and correctly processes delayed input', async () => {
-    const { options, writeResults, transformResults, enqueueInputResponse } = environment;
+    const { options, writeResults, transformResults } = environment;
 
-    enqueueInputResponse({ type: 'read', value: 'osmosis' });
-    enqueueInputResponse({ type: 'key', value: KEY_SEQUENCES.ENTER });
-    enqueueInputResponse({ type: 'key', value: KEY_SEQUENCES.ENTER });
 
     const app = new CLI(commands, options, {
-      _: ['chain']
+      _: ['chain'],
+      registryDir,
+      chain: 'osmosis'
     });
 
     const result = await app.run();

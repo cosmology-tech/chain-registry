@@ -4,7 +4,7 @@ import { join } from 'path';
 import { SchemaTypeGenerator } from '../src';
 import { fixtureOutputDir, getRegistry } from '../test-utils';
 
-const outputDir = join(fixtureOutputDir, 'camel');
+const outputDir = join(fixtureOutputDir, 'base');
 
 const registry = getRegistry()
 

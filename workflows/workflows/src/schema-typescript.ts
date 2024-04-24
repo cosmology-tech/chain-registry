@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import { basename, dirname, join } from 'path';
 import { generateTypeScript, JSONSchema, SchemaTSOptions } from 'schema-typescript';
 
-import { RegistryFixture } from './registry';
+import { Registry } from './registry';
 
 // Default titles for certain schemas
 // TODO create issue in cosmos/chain-registry
@@ -20,12 +20,12 @@ export interface SchemaTypeGeneratorOptions {
   outputDir: string;
   schemaTSOptions: Partial<SchemaTSOptions>;
   supportedSchemas?: string[];
-  registry: RegistryFixture;
+  registry: Registry;
 }
 
 export class SchemaTypeGenerator {
   private outputDir: string;
-  private registry: RegistryFixture;
+  private registry: Registry;
   private schemaTSOptions: Partial<SchemaTSOptions>
   private supportedSchemas: Set<string>;
 

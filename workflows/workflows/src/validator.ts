@@ -1,68 +1,59 @@
 import Ajv, { ValidateFunction } from 'ajv/dist/2019';
 import addFormats from 'ajv-formats';
+import chalk from 'chalk';
+import { JSONSchema } from 'schema-typescript';
 
-import { DataMapping, RegistryFixture } from './registry';
+import { DataMapping, JSONSchemaContent, Registry } from './registry';
+
+export interface SchemaValidatorOptions {
+    useStrict?: boolean;
+    allErrors?: boolean;
+    useDefaults?: boolean;
+}
 
 export class SchemaValidator {
     private ajv: Ajv;
-    private registry: RegistryFixture;
+    private registry: Registry;
 
-    constructor(registry: RegistryFixture) {
+    constructor(registry: Registry, options?: SchemaValidatorOptions) {
+        const { useStrict = false, allErrors = true, useDefaults = true } = options ?? {};
+
         this.ajv = new Ajv({
-            strict: false,
-            allErrors: true,
-            useDefaults: true
+            strict: useStrict,
+            allErrors,
+            useDefaults
         });
+
         this.registry = registry;
         addFormats(this.ajv);
-        this.loadSchemasAndValidate();
     }
 
-    private loadSchemasAndValidate() {
-        // Compile and validate each schema using AJV
-        Object.entries(this.registry.schemaMappings).forEach(([title, schema]) => {
-            schema.$schema = 'https://json-schema.org/draft/2019-09/schema';
-            if (!title) {
-                console.log(title);
-                return;
-            }
-            const dataMap = this.registry.dataMappings[title as keyof DataMapping];
-            if (!dataMap) {
-                console.error(`No data found for schema titled ${title}`);
-                return;
-            }
-            const validate: ValidateFunction<unknown> = this.ajv.compile(schema);
-            dataMap.forEach(data => {
-                try {
-                    if (!validate(data.content)) {
-                        console.error(`Validation errors for ${data.path} ${title}:`, validate.errors);
-                        throw new Error(`Data validation failed for ${title}`);
-                    }
-                } catch (e) {
-                    console.log(data);
-                    throw e;
-                }
-            });
-        });
-    }
-
-    public validateData(): void {
+    public validateAllData(verbose: boolean = false) {
         // Compile and validate each schema, then validate corresponding data
         Object.entries(this.registry.schemaMappings).forEach(([title, schema]) => {
-            const validate: ValidateFunction<unknown> = this.ajv.compile(schema);
+            schema.content.$schema = 'https://json-schema.org/draft/2019-09/schema';
+            const validate: ValidateFunction<unknown> = this.ajv.compile(schema.content);
             const dataMap = this.registry.dataMappings[title as keyof DataMapping];
+
             if (!dataMap) {
-                console.error(`No data found for schema titled ${title}`);
+                console.error(chalk.yellow(`⚠️  No data found for schema titled ${chalk.bold(title)}`));
                 return;
             }
-            dataMap.forEach(data => {
-                if (!validate(data.content)) {
-                    console.error(`Validation errors for ${data.content} ${title}:`, validate.errors);
-                    throw new Error(`Data validation failed for ${title}`);
-                }
-            });
 
+            dataMap.forEach(data => {
+                this.validateJsonSchema(data, title, validate, verbose);
+            });
         });
     }
 
+    private validateJsonSchema(data: JSONSchemaContent<JSONSchema>, title: string, validate: ValidateFunction<unknown>, verbose: boolean) {
+        if (!validate(data.content)) {
+            console.error(chalk.red(`❌ Validation errors for ${chalk.bold(title)} in file ${chalk.magenta(data.path)}:`));
+            validate.errors?.forEach(error => {
+                console.error(chalk.red(`  ➡️ ${error.instancePath} ${error.message}`));
+            });
+        } else if (verbose) {
+            console.log(chalk.green(`✅ Validation passed for ${chalk.bold(title)} in file ${chalk.magenta(data.path)}`));
+        }
+    }
 }

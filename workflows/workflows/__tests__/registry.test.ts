@@ -1,9 +1,9 @@
 import { join } from "path";
 
-import { RegistryFixture } from "../src/registry";
+import { Registry } from "../src/registry";
 import { SchemaValidator } from "../src/validator";
 
-const registry = new RegistryFixture(
+const registry = new Registry(
   join(__dirname, '/../../../packages/chain-registry/chain-registry')
 );
 
@@ -17,6 +17,6 @@ it('validator', () => {
     registry
   );
   
-  validator.validateData();
+  validator.validateAllData();
   
 })

@@ -47,7 +47,7 @@ export interface SchemaMapping {
   Versions: JSONSchemaContent<JSONSchema>;
 }
 
-export class RegistryFixture {
+export class Registry {
   private definitions: JSONSchemaContent<JSONSchema>[];
   public basePath: string;
   public schemaMappings: SchemaMapping = {
