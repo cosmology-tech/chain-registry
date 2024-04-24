@@ -9,7 +9,29 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
     {
       type: 'text',
       name: 'registryDir',
-      message: 'provide a registryDir:'
+      message: 'provide a registryDir:',
+      required: true,
+    },
+    {
+      type: 'confirm',
+      name: 'useStrict',
+      required: true,
+      useDefault: true,
+      default: false
+    },
+    {
+      type: 'confirm',
+      name: 'allErrors',
+      required: true,
+      useDefault: true,
+      default: true
+    },
+    {
+      type: 'confirm',
+      name: 'useDefaults',
+      required: true,
+      useDefault: true,
+      default: true
     }
   ]);
 
@@ -19,7 +41,11 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
   }
 
   const registry = new Registry(argv.registryDir)
-  const validator = new SchemaValidator(registry);
+  const validator = new SchemaValidator(registry, {
+    allErrors,
+    useDefaults,
+    useStrict
+  });
 
   validator.validateAllData(true);
 
