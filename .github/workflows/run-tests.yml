@@ -2,7 +2,7 @@ name: Run Workflow Tests 🧪
 
 on:
   pull_request:
-    types: [opened, reopened]
+    types: [opened, push, reopened]
   workflow_dispatch:
 
 jobs:
