@@ -29,8 +29,8 @@ jobs:
 
       - name: Install Dependencies 🧶
         run: |
-        yarn install
-        yarn symlink
+          yarn install
+          yarn symlink
 
       - name: Build Project 🏗️
         run: yarn build
