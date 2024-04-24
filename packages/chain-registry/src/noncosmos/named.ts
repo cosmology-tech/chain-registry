@@ -1,3 +1,4 @@
+export * as ethereum from './ethereum';
 export * as picasso from './picasso';
 export * as composablepolkadot from './composablepolkadot';
 export * as aptos from './aptos';
@@ -5,7 +6,6 @@ export * as arbitrum from './arbitrum';
 export * as avalanche from './avalanche';
 export * as binancesmartchain from './binancesmartchain';
 export * as bitcoin from './bitcoin';
-export * as ethereum from './ethereum';
 export * as fantom from './fantom';
 export * as filecoin from './filecoin';
 export * as kusama from './kusama';

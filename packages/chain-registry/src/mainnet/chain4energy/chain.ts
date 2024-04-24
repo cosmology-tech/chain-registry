@@ -139,7 +139,7 @@ const info: Chain = {
         provider: 'Validatus'
       },
       {
-        address: 'http://rpc-m.c4e.apeironnodes.com:41001',
+        address: 'https://rpc-m-c4e.apeironnodes.com:443',
         provider: 'Apeiron Nodes'
       },
       {
@@ -243,6 +243,10 @@ const info: Chain = {
       {
         address: 'https://api-c4e.cryptech.com.ua:443',
         provider: 'CrypTech'
+      },
+      {
+        address: 'https://lcd-m-c4e.apeironnodes.com',
+        provider: 'Apeiron Nodes'
       }
     ],
     grpc: [

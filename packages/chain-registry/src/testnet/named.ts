@@ -55,6 +55,7 @@ export * as neutrontestnet from './neutrontestnet';
 export * as nobletestnet from './nobletestnet';
 export * as noistestnet from './noistestnet';
 export * as nolustestnet from './nolustestnet';
+export * as nyxtestnet from './nyxtestnet';
 export * as okp4testnet from './okp4testnet';
 export * as osmosistestnet from './osmosistestnet';
 export * as osmosistestnet4 from './osmosistestnet4';

@@ -496,6 +496,584 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Ethereum (ETH) is a decentralized, open-source blockchain system featuring smart contract functionality. It\'s the native cryptocurrency of the Ethereum platform, often regarded as the second most popular digital currency after Bitcoin. Ethereum was proposed in late 2013 and development was crowdfunded in 2014, leading to its network going live on 30 July 2015.\n\nETH, as a digital currency, is used for a variety of purposes within the Ethereum ecosystem, including the execution of decentralized smart contracts and as a mode of payment. Unlike Bitcoin, Ethereum was designed to be a platform for applications that can operate without the need for intermediaries, using blockchain technology. This has made Ethereum a leading platform for various applications, including decentralized finance (DeFi), non-fungible tokens (NFTs), and more. Ethereum is constantly evolving, with a significant upgrade termed Ethereum 2.0, which aims to improve its scalability, security, and sustainability.',
+      denom_units: [
+        {
+          denom: 'ibc/F9D075D4079FC56A9C49B601E54A45292C319D8B0E8CC0F8439041130AA7166C',
+          exponent: 0,
+          aliases: ['wei']
+        },
+        {
+          denom: 'gwei',
+          exponent: 9
+        },
+        {
+          denom: 'eth',
+          exponent: 18,
+          aliases: ['ether']
+        }
+      ],
+      type_asset: 'evm-base',
+      base: 'ibc/F9D075D4079FC56A9C49B601E54A45292C319D8B0E8CC0F8439041130AA7166C',
+      name: 'Ether',
+      display: 'eth',
+      symbol: 'ETH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg'
+      },
+      coingecko_id: 'ethereum',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'wei',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'Aave is an Open Source and Non-Custodial protocol to earn interest on deposits & borrow assets. It also features access to highly innovative flash loans, which let developers borrow instantly and easily; no collateral needed. With 16 different assets, 5 of which are stablecoins.',
+      type_asset: 'erc20',
+      address: '0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9',
+      denom_units: [{
+          denom: 'ibc/D699577F9FD6116299F6396696B8EA9D4D1BFB7D79D63F0A5F2FF06F49DF065F',
+          exponent: 0,
+          aliases: ['0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9']
+        }, {
+          denom: 'aave',
+          exponent: 18
+        }],
+      base: 'ibc/D699577F9FD6116299F6396696B8EA9D4D1BFB7D79D63F0A5F2FF06F49DF065F',
+      name: 'Aave',
+      display: 'aave',
+      symbol: 'AAVE',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg'
+      },
+      coingecko_id: 'aave',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'ApeCoin found new expression in web3 through art, gaming, entertainment, and events. APE is a token made to support what’s next, controlled, and built on by the community. It will serve as a decentralized protocol layer for community-led initiatives that drive culture forward into the metaverse.',
+      type_asset: 'erc20',
+      address: '0x4d224452801aced8b2f0aebe155379bb5d594381',
+      denom_units: [{
+          denom: 'ibc/A663A63F05108530D073ED2117283883064D18F505DF144C4142DDB7E8659738',
+          exponent: 0,
+          aliases: ['0x4d224452801aced8b2f0aebe155379bb5d594381']
+        }, {
+          denom: 'ape',
+          exponent: 18
+        }],
+      base: 'ibc/A663A63F05108530D073ED2117283883064D18F505DF144C4142DDB7E8659738',
+      name: 'ApeCoin',
+      display: 'ape',
+      symbol: 'APE',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg'
+      },
+      coingecko_id: 'apecoin',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x4d224452801aced8b2f0aebe155379bb5d594381',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'Axie Infinity is a Pokémon-inspired digital pet universe where anyone can earn tokens through skilled gameplay and contributions to the ecosystem. Players can battle, collect, raise, and build a land-based kingdom for their pets (known as Axies).',
+      type_asset: 'erc20',
+      address: '0xbb0e17ef65f82ab018d8edd776e8dd940327b28b',
+      denom_units: [{
+          denom: 'ibc/DC03A3B473C171CA30E799B7D69B0B7DABBE3BF5B036991720E813EA0959DDF8',
+          exponent: 0,
+          aliases: ['0xbb0e17ef65f82ab018d8edd776e8dd940327b28b']
+        }, {
+          denom: 'axs',
+          exponent: 18
+        }],
+      base: 'ibc/DC03A3B473C171CA30E799B7D69B0B7DABBE3BF5B036991720E813EA0959DDF8',
+      name: 'Axie Infinity Shard',
+      display: 'axs',
+      symbol: 'AXS',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg'
+      },
+      coingecko_id: 'axie-infinity',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0xbb0e17ef65f82ab018d8edd776e8dd940327b28b',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'A blockchain-based middleware, acting as a bridge between cryptocurrency smart contracts, data feeds, APIs and traditional bank account payments.',
+      type_asset: 'erc20',
+      address: '0x514910771af9ca656af840dff83e8264ecf986ca',
+      denom_units: [{
+          denom: 'ibc/D18DE9EC817E5583927285DFCFB8BDA27662CAA8D1FA3D38CF84705030F6F2E8',
+          exponent: 0,
+          aliases: ['0x514910771af9ca656af840dff83e8264ecf986ca']
+        }, {
+          denom: 'link',
+          exponent: 18
+        }],
+      base: 'ibc/D18DE9EC817E5583927285DFCFB8BDA27662CAA8D1FA3D38CF84705030F6F2E8',
+      name: 'Chainlink',
+      display: 'link',
+      symbol: 'LINK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
+      },
+      coingecko_id: 'chainlink',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x514910771af9ca656af840dff83e8264ecf986ca',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'Maker is a Decentralized Autonomous Organization that creates and insures the dai stablecoin on the Ethereum blockchain',
+      type_asset: 'erc20',
+      address: '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2',
+      denom_units: [{
+          denom: 'ibc/A6CC40E71F564A8C273FE489417C996B3660B8241E44182B64F8E18B8269969A',
+          exponent: 0,
+          aliases: ['0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2']
+        }, {
+          denom: 'mkr',
+          exponent: 18
+        }],
+      base: 'ibc/A6CC40E71F564A8C273FE489417C996B3660B8241E44182B64F8E18B8269969A',
+      name: 'Maker',
+      display: 'mkr',
+      symbol: 'MKR',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg'
+      },
+      coingecko_id: 'maker',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'SHIBA INU is a 100% decentralized community experiment with it claims that 1/2 the tokens have been sent to Vitalik and the other half were locked to a Uniswap pool and the keys burned.',
+      type_asset: 'erc20',
+      address: '0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce',
+      denom_units: [{
+          denom: 'ibc/158F220393E7A6C7324BC89730263BF6C9079EC541B69BA9E6D7EE6C9AEDCF66',
+          exponent: 0,
+          aliases: ['0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce']
+        }, {
+          denom: 'shib',
+          exponent: 18
+        }],
+      base: 'ibc/158F220393E7A6C7324BC89730263BF6C9079EC541B69BA9E6D7EE6C9AEDCF66',
+      name: 'Shiba Inu',
+      display: 'shib',
+      symbol: 'SHIB',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg'
+      },
+      coingecko_id: 'shiba-inu',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'UNI token served as governance token for Uniswap protocol with 1 billion UNI have been minted at genesis. 60% of the UNI genesis supply is allocated to Uniswap community members and remaining for team, investors and advisors.',
+      type_asset: 'erc20',
+      address: '0x1f9840a85d5af5bf1d1762f925bdaddc4201f984',
+      denom_units: [{
+          denom: 'ibc/921D7E89244C857A07BAE5D6F81F2DC62865E72CA52B1D1319D99A86705B252E',
+          exponent: 0,
+          aliases: ['0x1f9840a85d5af5bf1d1762f925bdaddc4201f984']
+        }, {
+          denom: 'uni',
+          exponent: 18
+        }],
+      base: 'ibc/921D7E89244C857A07BAE5D6F81F2DC62865E72CA52B1D1319D99A86705B252E',
+      name: 'Uniswap',
+      display: 'uni',
+      symbol: 'UNI',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg'
+      },
+      coingecko_id: 'uniswap',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x1f9840a85d5af5bf1d1762f925bdaddc4201f984',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'Chain is a cloud blockchain protocol that enables organizations to build better financial services from the ground up powered by Sequence and Chain Core.',
+      type_asset: 'erc20',
+      address: '0xa2cd3d43c775978a96bdbf12d733d5a1ed94fb18',
+      denom_units: [{
+          denom: 'ibc/1A81C660B7417536B5F77B7968C647AC2EF9C56AA947C03AD88C492D29E1CB09',
+          exponent: 0,
+          aliases: ['0xa2cd3d43c775978a96bdbf12d733d5a1ed94fb18']
+        }, {
+          denom: 'xcn',
+          exponent: 18
+        }],
+      base: 'ibc/1A81C660B7417536B5F77B7968C647AC2EF9C56AA947C03AD88C492D29E1CB09',
+      name: 'Chain',
+      display: 'xcn',
+      symbol: 'XCN',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg'
+      },
+      coingecko_id: 'chain-2',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0xa2cd3d43c775978a96bdbf12d733d5a1ed94fb18',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'Pepe is a community based memecoin with one mission: to make memecoins great again. Made to honor the iconic meme we all know and love, Pepe is here to take reign as the most memeable memecoin in existence, fueled purely by memetic power. Pepe is for the people.',
+      type_asset: 'erc20',
+      address: '0x6982508145454Ce325dDbE47a25d4ec3d2311933',
+      denom_units: [{
+          denom: 'ibc/C7D82BA3545AAEDD0DEA0123C2F8DA53873AA5D99C8D46BBE79827545F0DC1E6',
+          exponent: 0,
+          aliases: ['0x6982508145454Ce325dDbE47a25d4ec3d2311933']
+        }, {
+          denom: 'pepe',
+          exponent: 18
+        }],
+      base: 'ibc/C7D82BA3545AAEDD0DEA0123C2F8DA53873AA5D99C8D46BBE79827545F0DC1E6',
+      name: 'Pepe',
+      display: 'pepe',
+      symbol: 'PEPE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.svg'
+      },
+      coingecko_id: 'pepe',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.svg'
+        }],
+      keywords: ['meme'],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x6982508145454Ce325dDbE47a25d4ec3d2311933',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'The OCC token acts as the fuel for the OccamRazer launchpad and it is indirectly used as well on the DAO governance layer.',
+      type_asset: 'erc20',
+      address: '0x2F109021aFe75B949429fe30523Ee7C0D5B27207',
+      denom_units: [{
+          denom: 'ibc/19BF897B03066D7CCC00C6A0963E175E22E2593C21179D3F38E6411B3C9EA16B',
+          exponent: 0,
+          aliases: ['0x2F109021aFe75B949429fe30523Ee7C0D5B27207']
+        }, {
+          denom: 'occ',
+          exponent: 18
+        }],
+      base: 'ibc/19BF897B03066D7CCC00C6A0963E175E22E2593C21179D3F38E6411B3C9EA16B',
+      name: 'OccamFi',
+      display: 'occ',
+      symbol: 'OCC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/occamfi.png'
+      },
+      coingecko_id: 'occamfi',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/occamfi.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x2F109021aFe75B949429fe30523Ee7C0D5B27207',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'The PAGE token is used for actions in the PageDAO NFT literary ecosystem and for DAO governance.',
+      type_asset: 'erc20',
+      address: '0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e',
+      denom_units: [{
+          denom: 'ibc/17690D9023E45DF8AB9F7030A470C782214AA963BFD656CF9DCD800A92F3F0F6',
+          exponent: 0,
+          aliases: ['0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e']
+        }, {
+          denom: 'page',
+          exponent: 8
+        }],
+      base: 'ibc/17690D9023E45DF8AB9F7030A470C782214AA963BFD656CF9DCD800A92F3F0F6',
+      name: 'Page',
+      display: 'page',
+      symbol: 'PAGE',
+      coingecko_id: 'page',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: '',
+      type_asset: 'erc20',
+      address: '0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f',
+      denom_units: [{
+          denom: 'ibc/86BEC3CF0E2A1BF8BC3C5AD0AD3FC46350940F07F003A3C1577BF654E808217F',
+          exponent: 0,
+          aliases: ['0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f']
+        }, {
+          denom: 'ox',
+          exponent: 18
+        }],
+      base: 'ibc/86BEC3CF0E2A1BF8BC3C5AD0AD3FC46350940F07F003A3C1577BF654E808217F',
+      name: 'Open Exchange Token',
+      display: 'ox',
+      symbol: 'OX',
+      coingecko_id: 'open-exchange-token',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ox.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ox.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'BEAST: Battle, Breed, and Customize unique creatures powered by Ethereum & Cosmos',
+      extended_description: 'A monster breeding & battling game with a twist. Each game interaction burns $BEAST tokens, adding a strategic depth to breeding, battling, and customization. Dive into a world where every move counts!',
+      type_asset: 'erc20',
+      address: '0xA4426666addBE8c4985377d36683D17FB40c31Be',
+      denom_units: [{
+          denom: 'ibc/1E0E07A6EDA2FA9D8C4DFC0575561B049172CF6748C47D7494614D712BF05DF9',
+          exponent: 0,
+          aliases: ['0xA4426666addBE8c4985377d36683D17FB40c31Be']
+        }, {
+          denom: 'beast',
+          exponent: 6
+        }],
+      base: 'ibc/1E0E07A6EDA2FA9D8C4DFC0575561B049172CF6748C47D7494614D712BF05DF9',
+      name: 'Gelotto BEAST',
+      display: 'beast',
+      symbol: 'BEAST',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0xA4426666addBE8c4985377d36683D17FB40c31Be',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'PUNDIX token is the native token that functions within the Pundi X ecosystem, including PundiX Chain and XPOS.',
+      type_asset: 'erc20',
+      address: '0x0FD10b9899882a6f2fcb5c371E17e70FdEe00C38',
+      denom_units: [{
+          denom: 'ibc/9141B9C2A74294F94C6861FA6B9D5B562874BD84F7C4239569BFD540D86A7E1A',
+          exponent: 0,
+          aliases: ['0x0FD10b9899882a6f2fcb5c371E17e70FdEe00C38']
+        }, {
+          denom: 'PUNDIX',
+          exponent: 18
+        }],
+      base: 'ibc/9141B9C2A74294F94C6861FA6B9D5B562874BD84F7C4239569BFD540D86A7E1A',
+      name: 'Pundi X Token',
+      display: 'PUNDIX',
+      symbol: 'PUNDIX',
+      coingecko_id: 'pundi-x-2',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pundix.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pundix.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x0FD10b9899882a6f2fcb5c371E17e70FdEe00C38',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'FXS is the value accrual and governance token of the entire Frax ecosystem. Frax is a fractional-algorithmic stablecoin protocol. It aims to provide a highly scalable, decentralized, algorithmic money in place of fixed-supply assets like BTC.',
+      type_asset: 'erc20',
+      address: '0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0',
+      denom_units: [{
+          denom: 'ibc/5F9BE030FC355733EC79307409FA98398BBFC747C9430B326C144A74F6808B29',
+          exponent: 0,
+          aliases: ['0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0']
+        }, {
+          denom: 'fxs',
+          exponent: 18
+        }],
+      base: 'ibc/5F9BE030FC355733EC79307409FA98398BBFC747C9430B326C144A74F6808B29',
+      name: 'Frax Share',
+      display: 'fxs',
+      symbol: 'FXS',
+      coingecko_id: 'frax-share',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/fxs.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/fxs.svg'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/fxs.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/fxs.svg'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
       description: 'The native EVM, governance and staking token of the Evmos Hub',
       denom_units: [{
           denom: 'ibc/73E97EB411B29C6F989C35D277D1A7FC65083572F102AC6BD101884EE9FB2C9F',
@@ -2038,6 +2616,584 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-5'
+          }
+        }]
+    },
+    {
+      description: 'Ethereum (ETH) is a decentralized, open-source blockchain system featuring smart contract functionality. It\'s the native cryptocurrency of the Ethereum platform, often regarded as the second most popular digital currency after Bitcoin. Ethereum was proposed in late 2013 and development was crowdfunded in 2014, leading to its network going live on 30 July 2015.\n\nETH, as a digital currency, is used for a variety of purposes within the Ethereum ecosystem, including the execution of decentralized smart contracts and as a mode of payment. Unlike Bitcoin, Ethereum was designed to be a platform for applications that can operate without the need for intermediaries, using blockchain technology. This has made Ethereum a leading platform for various applications, including decentralized finance (DeFi), non-fungible tokens (NFTs), and more. Ethereum is constantly evolving, with a significant upgrade termed Ethereum 2.0, which aims to improve its scalability, security, and sustainability.',
+      denom_units: [
+        {
+          denom: 'ibc/F9D075D4079FC56A9C49B601E54A45292C319D8B0E8CC0F8439041130AA7166C',
+          exponent: 0,
+          aliases: ['wei']
+        },
+        {
+          denom: 'gwei',
+          exponent: 9
+        },
+        {
+          denom: 'eth',
+          exponent: 18,
+          aliases: ['ether']
+        }
+      ],
+      type_asset: 'evm-base',
+      base: 'ibc/F9D075D4079FC56A9C49B601E54A45292C319D8B0E8CC0F8439041130AA7166C',
+      name: 'Ether',
+      display: 'eth',
+      symbol: 'ETH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg'
+      },
+      coingecko_id: 'ethereum',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'wei',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'Aave is an Open Source and Non-Custodial protocol to earn interest on deposits & borrow assets. It also features access to highly innovative flash loans, which let developers borrow instantly and easily; no collateral needed. With 16 different assets, 5 of which are stablecoins.',
+      type_asset: 'erc20',
+      address: '0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9',
+      denom_units: [{
+          denom: 'ibc/D699577F9FD6116299F6396696B8EA9D4D1BFB7D79D63F0A5F2FF06F49DF065F',
+          exponent: 0,
+          aliases: ['0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9']
+        }, {
+          denom: 'aave',
+          exponent: 18
+        }],
+      base: 'ibc/D699577F9FD6116299F6396696B8EA9D4D1BFB7D79D63F0A5F2FF06F49DF065F',
+      name: 'Aave',
+      display: 'aave',
+      symbol: 'AAVE',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg'
+      },
+      coingecko_id: 'aave',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'ApeCoin found new expression in web3 through art, gaming, entertainment, and events. APE is a token made to support what’s next, controlled, and built on by the community. It will serve as a decentralized protocol layer for community-led initiatives that drive culture forward into the metaverse.',
+      type_asset: 'erc20',
+      address: '0x4d224452801aced8b2f0aebe155379bb5d594381',
+      denom_units: [{
+          denom: 'ibc/A663A63F05108530D073ED2117283883064D18F505DF144C4142DDB7E8659738',
+          exponent: 0,
+          aliases: ['0x4d224452801aced8b2f0aebe155379bb5d594381']
+        }, {
+          denom: 'ape',
+          exponent: 18
+        }],
+      base: 'ibc/A663A63F05108530D073ED2117283883064D18F505DF144C4142DDB7E8659738',
+      name: 'ApeCoin',
+      display: 'ape',
+      symbol: 'APE',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg'
+      },
+      coingecko_id: 'apecoin',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x4d224452801aced8b2f0aebe155379bb5d594381',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'Axie Infinity is a Pokémon-inspired digital pet universe where anyone can earn tokens through skilled gameplay and contributions to the ecosystem. Players can battle, collect, raise, and build a land-based kingdom for their pets (known as Axies).',
+      type_asset: 'erc20',
+      address: '0xbb0e17ef65f82ab018d8edd776e8dd940327b28b',
+      denom_units: [{
+          denom: 'ibc/DC03A3B473C171CA30E799B7D69B0B7DABBE3BF5B036991720E813EA0959DDF8',
+          exponent: 0,
+          aliases: ['0xbb0e17ef65f82ab018d8edd776e8dd940327b28b']
+        }, {
+          denom: 'axs',
+          exponent: 18
+        }],
+      base: 'ibc/DC03A3B473C171CA30E799B7D69B0B7DABBE3BF5B036991720E813EA0959DDF8',
+      name: 'Axie Infinity Shard',
+      display: 'axs',
+      symbol: 'AXS',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg'
+      },
+      coingecko_id: 'axie-infinity',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0xbb0e17ef65f82ab018d8edd776e8dd940327b28b',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'A blockchain-based middleware, acting as a bridge between cryptocurrency smart contracts, data feeds, APIs and traditional bank account payments.',
+      type_asset: 'erc20',
+      address: '0x514910771af9ca656af840dff83e8264ecf986ca',
+      denom_units: [{
+          denom: 'ibc/D18DE9EC817E5583927285DFCFB8BDA27662CAA8D1FA3D38CF84705030F6F2E8',
+          exponent: 0,
+          aliases: ['0x514910771af9ca656af840dff83e8264ecf986ca']
+        }, {
+          denom: 'link',
+          exponent: 18
+        }],
+      base: 'ibc/D18DE9EC817E5583927285DFCFB8BDA27662CAA8D1FA3D38CF84705030F6F2E8',
+      name: 'Chainlink',
+      display: 'link',
+      symbol: 'LINK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
+      },
+      coingecko_id: 'chainlink',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x514910771af9ca656af840dff83e8264ecf986ca',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'Maker is a Decentralized Autonomous Organization that creates and insures the dai stablecoin on the Ethereum blockchain',
+      type_asset: 'erc20',
+      address: '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2',
+      denom_units: [{
+          denom: 'ibc/A6CC40E71F564A8C273FE489417C996B3660B8241E44182B64F8E18B8269969A',
+          exponent: 0,
+          aliases: ['0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2']
+        }, {
+          denom: 'mkr',
+          exponent: 18
+        }],
+      base: 'ibc/A6CC40E71F564A8C273FE489417C996B3660B8241E44182B64F8E18B8269969A',
+      name: 'Maker',
+      display: 'mkr',
+      symbol: 'MKR',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg'
+      },
+      coingecko_id: 'maker',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'SHIBA INU is a 100% decentralized community experiment with it claims that 1/2 the tokens have been sent to Vitalik and the other half were locked to a Uniswap pool and the keys burned.',
+      type_asset: 'erc20',
+      address: '0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce',
+      denom_units: [{
+          denom: 'ibc/158F220393E7A6C7324BC89730263BF6C9079EC541B69BA9E6D7EE6C9AEDCF66',
+          exponent: 0,
+          aliases: ['0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce']
+        }, {
+          denom: 'shib',
+          exponent: 18
+        }],
+      base: 'ibc/158F220393E7A6C7324BC89730263BF6C9079EC541B69BA9E6D7EE6C9AEDCF66',
+      name: 'Shiba Inu',
+      display: 'shib',
+      symbol: 'SHIB',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg'
+      },
+      coingecko_id: 'shiba-inu',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'UNI token served as governance token for Uniswap protocol with 1 billion UNI have been minted at genesis. 60% of the UNI genesis supply is allocated to Uniswap community members and remaining for team, investors and advisors.',
+      type_asset: 'erc20',
+      address: '0x1f9840a85d5af5bf1d1762f925bdaddc4201f984',
+      denom_units: [{
+          denom: 'ibc/921D7E89244C857A07BAE5D6F81F2DC62865E72CA52B1D1319D99A86705B252E',
+          exponent: 0,
+          aliases: ['0x1f9840a85d5af5bf1d1762f925bdaddc4201f984']
+        }, {
+          denom: 'uni',
+          exponent: 18
+        }],
+      base: 'ibc/921D7E89244C857A07BAE5D6F81F2DC62865E72CA52B1D1319D99A86705B252E',
+      name: 'Uniswap',
+      display: 'uni',
+      symbol: 'UNI',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg'
+      },
+      coingecko_id: 'uniswap',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x1f9840a85d5af5bf1d1762f925bdaddc4201f984',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'Chain is a cloud blockchain protocol that enables organizations to build better financial services from the ground up powered by Sequence and Chain Core.',
+      type_asset: 'erc20',
+      address: '0xa2cd3d43c775978a96bdbf12d733d5a1ed94fb18',
+      denom_units: [{
+          denom: 'ibc/1A81C660B7417536B5F77B7968C647AC2EF9C56AA947C03AD88C492D29E1CB09',
+          exponent: 0,
+          aliases: ['0xa2cd3d43c775978a96bdbf12d733d5a1ed94fb18']
+        }, {
+          denom: 'xcn',
+          exponent: 18
+        }],
+      base: 'ibc/1A81C660B7417536B5F77B7968C647AC2EF9C56AA947C03AD88C492D29E1CB09',
+      name: 'Chain',
+      display: 'xcn',
+      symbol: 'XCN',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg'
+      },
+      coingecko_id: 'chain-2',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0xa2cd3d43c775978a96bdbf12d733d5a1ed94fb18',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'Pepe is a community based memecoin with one mission: to make memecoins great again. Made to honor the iconic meme we all know and love, Pepe is here to take reign as the most memeable memecoin in existence, fueled purely by memetic power. Pepe is for the people.',
+      type_asset: 'erc20',
+      address: '0x6982508145454Ce325dDbE47a25d4ec3d2311933',
+      denom_units: [{
+          denom: 'ibc/C7D82BA3545AAEDD0DEA0123C2F8DA53873AA5D99C8D46BBE79827545F0DC1E6',
+          exponent: 0,
+          aliases: ['0x6982508145454Ce325dDbE47a25d4ec3d2311933']
+        }, {
+          denom: 'pepe',
+          exponent: 18
+        }],
+      base: 'ibc/C7D82BA3545AAEDD0DEA0123C2F8DA53873AA5D99C8D46BBE79827545F0DC1E6',
+      name: 'Pepe',
+      display: 'pepe',
+      symbol: 'PEPE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.svg'
+      },
+      coingecko_id: 'pepe',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.svg'
+        }],
+      keywords: ['meme'],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x6982508145454Ce325dDbE47a25d4ec3d2311933',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'The OCC token acts as the fuel for the OccamRazer launchpad and it is indirectly used as well on the DAO governance layer.',
+      type_asset: 'erc20',
+      address: '0x2F109021aFe75B949429fe30523Ee7C0D5B27207',
+      denom_units: [{
+          denom: 'ibc/19BF897B03066D7CCC00C6A0963E175E22E2593C21179D3F38E6411B3C9EA16B',
+          exponent: 0,
+          aliases: ['0x2F109021aFe75B949429fe30523Ee7C0D5B27207']
+        }, {
+          denom: 'occ',
+          exponent: 18
+        }],
+      base: 'ibc/19BF897B03066D7CCC00C6A0963E175E22E2593C21179D3F38E6411B3C9EA16B',
+      name: 'OccamFi',
+      display: 'occ',
+      symbol: 'OCC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/occamfi.png'
+      },
+      coingecko_id: 'occamfi',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/occamfi.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x2F109021aFe75B949429fe30523Ee7C0D5B27207',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'The PAGE token is used for actions in the PageDAO NFT literary ecosystem and for DAO governance.',
+      type_asset: 'erc20',
+      address: '0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e',
+      denom_units: [{
+          denom: 'ibc/17690D9023E45DF8AB9F7030A470C782214AA963BFD656CF9DCD800A92F3F0F6',
+          exponent: 0,
+          aliases: ['0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e']
+        }, {
+          denom: 'page',
+          exponent: 8
+        }],
+      base: 'ibc/17690D9023E45DF8AB9F7030A470C782214AA963BFD656CF9DCD800A92F3F0F6',
+      name: 'Page',
+      display: 'page',
+      symbol: 'PAGE',
+      coingecko_id: 'page',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: '',
+      type_asset: 'erc20',
+      address: '0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f',
+      denom_units: [{
+          denom: 'ibc/86BEC3CF0E2A1BF8BC3C5AD0AD3FC46350940F07F003A3C1577BF654E808217F',
+          exponent: 0,
+          aliases: ['0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f']
+        }, {
+          denom: 'ox',
+          exponent: 18
+        }],
+      base: 'ibc/86BEC3CF0E2A1BF8BC3C5AD0AD3FC46350940F07F003A3C1577BF654E808217F',
+      name: 'Open Exchange Token',
+      display: 'ox',
+      symbol: 'OX',
+      coingecko_id: 'open-exchange-token',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ox.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ox.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'BEAST: Battle, Breed, and Customize unique creatures powered by Ethereum & Cosmos',
+      extended_description: 'A monster breeding & battling game with a twist. Each game interaction burns $BEAST tokens, adding a strategic depth to breeding, battling, and customization. Dive into a world where every move counts!',
+      type_asset: 'erc20',
+      address: '0xA4426666addBE8c4985377d36683D17FB40c31Be',
+      denom_units: [{
+          denom: 'ibc/1E0E07A6EDA2FA9D8C4DFC0575561B049172CF6748C47D7494614D712BF05DF9',
+          exponent: 0,
+          aliases: ['0xA4426666addBE8c4985377d36683D17FB40c31Be']
+        }, {
+          denom: 'beast',
+          exponent: 6
+        }],
+      base: 'ibc/1E0E07A6EDA2FA9D8C4DFC0575561B049172CF6748C47D7494614D712BF05DF9',
+      name: 'Gelotto BEAST',
+      display: 'beast',
+      symbol: 'BEAST',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/beast.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0xA4426666addBE8c4985377d36683D17FB40c31Be',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'PUNDIX token is the native token that functions within the Pundi X ecosystem, including PundiX Chain and XPOS.',
+      type_asset: 'erc20',
+      address: '0x0FD10b9899882a6f2fcb5c371E17e70FdEe00C38',
+      denom_units: [{
+          denom: 'ibc/9141B9C2A74294F94C6861FA6B9D5B562874BD84F7C4239569BFD540D86A7E1A',
+          exponent: 0,
+          aliases: ['0x0FD10b9899882a6f2fcb5c371E17e70FdEe00C38']
+        }, {
+          denom: 'PUNDIX',
+          exponent: 18
+        }],
+      base: 'ibc/9141B9C2A74294F94C6861FA6B9D5B562874BD84F7C4239569BFD540D86A7E1A',
+      name: 'Pundi X Token',
+      display: 'PUNDIX',
+      symbol: 'PUNDIX',
+      coingecko_id: 'pundi-x-2',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pundix.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pundix.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x0FD10b9899882a6f2fcb5c371E17e70FdEe00C38',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'FXS is the value accrual and governance token of the entire Frax ecosystem. Frax is a fractional-algorithmic stablecoin protocol. It aims to provide a highly scalable, decentralized, algorithmic money in place of fixed-supply assets like BTC.',
+      type_asset: 'erc20',
+      address: '0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0',
+      denom_units: [{
+          denom: 'ibc/5F9BE030FC355733EC79307409FA98398BBFC747C9430B326C144A74F6808B29',
+          exponent: 0,
+          aliases: ['0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0']
+        }, {
+          denom: 'fxs',
+          exponent: 18
+        }],
+      base: 'ibc/5F9BE030FC355733EC79307409FA98398BBFC747C9430B326C144A74F6808B29',
+      name: 'Frax Share',
+      display: 'fxs',
+      symbol: 'FXS',
+      coingecko_id: 'frax-share',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/fxs.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/fxs.svg'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/fxs.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/fxs.svg'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
           }
         }]
     },

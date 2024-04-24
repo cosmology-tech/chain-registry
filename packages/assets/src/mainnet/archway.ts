@@ -634,6 +634,45 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of JUNO Chain',
+      denom_units: [{
+          denom: 'ibc/3BEA25F3A13A9C17476C821CCF8ECCC84351DDB7B1B06B98654C3B4427F785CC',
+          exponent: 0,
+          aliases: ['ujuno']
+        }, {
+          denom: 'juno',
+          exponent: 6
+        }],
+      base: 'ibc/3BEA25F3A13A9C17476C821CCF8ECCC84351DDB7B1B06B98654C3B4427F785CC',
+      name: 'Juno',
+      display: 'juno',
+      symbol: 'JUNO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
+      },
+      coingecko_id: 'juno-network',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
+        }],
+      socials: {
+        website: 'https://junonetwork.io/',
+        twitter: 'https://twitter.com/JunoNetwork'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-290',
+            base_denom: 'ujuno',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-15'
+          }
+        }]
+    },
+    {
       description: 'The native staking and governance token of the Kujira chain.',
       denom_units: [{
           denom: 'ibc/27357E0424B1895B62F7A63584266AA6C6E536B2830416C16440A17AD9837AD3',
@@ -1672,6 +1711,45 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-14'
+          }
+        }]
+    },
+    {
+      description: 'The native token of JUNO Chain',
+      denom_units: [{
+          denom: 'ibc/3BEA25F3A13A9C17476C821CCF8ECCC84351DDB7B1B06B98654C3B4427F785CC',
+          exponent: 0,
+          aliases: ['ujuno']
+        }, {
+          denom: 'juno',
+          exponent: 6
+        }],
+      base: 'ibc/3BEA25F3A13A9C17476C821CCF8ECCC84351DDB7B1B06B98654C3B4427F785CC',
+      name: 'Juno',
+      display: 'juno',
+      symbol: 'JUNO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
+      },
+      coingecko_id: 'juno-network',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
+        }],
+      socials: {
+        website: 'https://junonetwork.io/',
+        twitter: 'https://twitter.com/JunoNetwork'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-290',
+            base_denom: 'ujuno',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-15'
           }
         }]
     },

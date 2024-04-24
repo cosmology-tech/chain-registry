@@ -42,6 +42,52 @@ const asset_list: AssetList = {
         }]
     },
     {
+      description: 'The native token of Archway network',
+      denom_units: [
+        {
+          denom: 'ibc/537D8D8BF13799FBB38CACDF8090063E3C79CDCC6A70AE493F12A3F9E44DD074',
+          exponent: 0,
+          aliases: ['aarch']
+        },
+        {
+          denom: 'uarch',
+          exponent: 12
+        },
+        {
+          denom: 'arch',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/537D8D8BF13799FBB38CACDF8090063E3C79CDCC6A70AE493F12A3F9E44DD074',
+      name: 'Archway',
+      display: 'arch',
+      symbol: 'ARCH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+      },
+      coingecko_id: 'archway',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+        }],
+      socials: {
+        website: 'https://archway.io/',
+        twitter: 'https://twitter.com/archwayHQ'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-15',
+            base_denom: 'aarch',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-290'
+          }
+        }]
+    },
+    {
       description: 'The native token of Asset Mantle',
       denom_units: [{
           denom: 'ibc/5CB906E82B7A88E62644AD811361F5858B74BA9EBD75C84B6D24B20C01A4819F',
@@ -768,6 +814,52 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-29'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Archway network',
+      denom_units: [
+        {
+          denom: 'ibc/537D8D8BF13799FBB38CACDF8090063E3C79CDCC6A70AE493F12A3F9E44DD074',
+          exponent: 0,
+          aliases: ['aarch']
+        },
+        {
+          denom: 'uarch',
+          exponent: 12
+        },
+        {
+          denom: 'arch',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/537D8D8BF13799FBB38CACDF8090063E3C79CDCC6A70AE493F12A3F9E44DD074',
+      name: 'Archway',
+      display: 'arch',
+      symbol: 'ARCH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+      },
+      coingecko_id: 'archway',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+        }],
+      socials: {
+        website: 'https://archway.io/',
+        twitter: 'https://twitter.com/archwayHQ'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-15',
+            base_denom: 'aarch',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-290'
           }
         }]
     },

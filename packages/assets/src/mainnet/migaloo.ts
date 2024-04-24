@@ -8716,6 +8716,78 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Tadpole Frogztrik Token meme',
+      type_asset: 'cw20',
+      address: 'terra19gzvkw5hft3ulp8n6ws3p9yradhc802axqal59lzxau6rqxktj9q0dwf9c',
+      display: 'tadf',
+      denom_units: [{
+          denom: 'ibc/54D497B75FAD27A74BD7B1C365E5BC1063E88787747D6408E3F12638D265B962',
+          exponent: 0,
+          aliases: ['cw20:terra19gzvkw5hft3ulp8n6ws3p9yradhc802axqal59lzxau6rqxktj9q0dwf9c']
+        }, {
+          denom: 'tadf',
+          exponent: 6
+        }],
+      base: 'ibc/54D497B75FAD27A74BD7B1C365E5BC1063E88787747D6408E3F12638D265B962',
+      name: 'Tadpole Frogztrik Token',
+      symbol: 'TADF',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tadf.png'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tadf.png'
+      },
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-87',
+            base_denom: 'cw20:terra19gzvkw5hft3ulp8n6ws3p9yradhc802axqal59lzxau6rqxktj9q0dwf9c',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-114'
+          }
+        }]
+    },
+    {
+      description: 'Frogztrik NFT Token',
+      type_asset: 'cw20',
+      address: 'terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9',
+      display: 'frog',
+      denom_units: [{
+          denom: 'ibc/B1BD4EF49A2E051EFC85E8C6A932B559CE62F9519E0E83BE29A8F0BDF89BD1D3',
+          exponent: 0,
+          aliases: ['cw20:terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9']
+        }, {
+          denom: 'frog',
+          exponent: 6
+        }],
+      base: 'ibc/B1BD4EF49A2E051EFC85E8C6A932B559CE62F9519E0E83BE29A8F0BDF89BD1D3',
+      name: 'Frogztrik NFT Token',
+      symbol: 'FROG',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/FROG.png'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/FROG.png'
+      },
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-87',
+            base_denom: 'cw20:terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-114'
+          }
+        }]
+    },
+    {
       description: 'Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.',
       denom_units: [{
           denom: 'ibc/8935E9B60645CD61DC925E7C71956DC909D4548262103D1AB75E2A5306AC84C1',
@@ -16572,6 +16644,78 @@ const assets: AssetList = {
             port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
             channel_id: 'channel-87',
             base_denom: 'cw20:terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-114'
+          }
+        }]
+    },
+    {
+      description: 'Tadpole Frogztrik Token meme',
+      type_asset: 'cw20',
+      address: 'terra19gzvkw5hft3ulp8n6ws3p9yradhc802axqal59lzxau6rqxktj9q0dwf9c',
+      display: 'tadf',
+      denom_units: [{
+          denom: 'ibc/54D497B75FAD27A74BD7B1C365E5BC1063E88787747D6408E3F12638D265B962',
+          exponent: 0,
+          aliases: ['cw20:terra19gzvkw5hft3ulp8n6ws3p9yradhc802axqal59lzxau6rqxktj9q0dwf9c']
+        }, {
+          denom: 'tadf',
+          exponent: 6
+        }],
+      base: 'ibc/54D497B75FAD27A74BD7B1C365E5BC1063E88787747D6408E3F12638D265B962',
+      name: 'Tadpole Frogztrik Token',
+      symbol: 'TADF',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tadf.png'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tadf.png'
+      },
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-87',
+            base_denom: 'cw20:terra19gzvkw5hft3ulp8n6ws3p9yradhc802axqal59lzxau6rqxktj9q0dwf9c',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-114'
+          }
+        }]
+    },
+    {
+      description: 'Frogztrik NFT Token',
+      type_asset: 'cw20',
+      address: 'terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9',
+      display: 'frog',
+      denom_units: [{
+          denom: 'ibc/B1BD4EF49A2E051EFC85E8C6A932B559CE62F9519E0E83BE29A8F0BDF89BD1D3',
+          exponent: 0,
+          aliases: ['cw20:terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9']
+        }, {
+          denom: 'frog',
+          exponent: 6
+        }],
+      base: 'ibc/B1BD4EF49A2E051EFC85E8C6A932B559CE62F9519E0E83BE29A8F0BDF89BD1D3',
+      name: 'Frogztrik NFT Token',
+      symbol: 'FROG',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/FROG.png'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/FROG.png'
+      },
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-87',
+            base_denom: 'cw20:terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9',
             chain_name: 'terra'
           },
           chain: {

@@ -1,5 +1,6 @@
 import { AssetList } from '@chain-registry/types';
 
+import * as _ethereum from './ethereum';
 import * as _picasso from './picasso';
 import * as _composablepolkadot from './composablepolkadot';
 import * as _aptos from './aptos';
@@ -7,7 +8,6 @@ import * as _arbitrum from './arbitrum';
 import * as _avalanche from './avalanche';
 import * as _binancesmartchain from './binancesmartchain';
 import * as _bitcoin from './bitcoin';
-import * as _ethereum from './ethereum';
 import * as _fantom from './fantom';
 import * as _filecoin from './filecoin';
 import * as _kusama from './kusama';
@@ -30,6 +30,7 @@ import * as _polygontestnet from './polygontestnet';
 import * as _ojotestnet from './ojotestnet';
 
 const assets: AssetList[] = [
+  _ethereum.assets,
   _picasso.assets,
   _composablepolkadot.assets,
   _aptos.assets,
@@ -37,7 +38,6 @@ const assets: AssetList[] = [
   _avalanche.assets,
   _binancesmartchain.assets,
   _bitcoin.assets,
-  _ethereum.assets,
   _fantom.assets,
   _filecoin.assets,
   _kusama.assets,
