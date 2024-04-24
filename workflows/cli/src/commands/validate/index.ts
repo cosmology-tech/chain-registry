@@ -41,6 +41,11 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
   }
 
   const registry = new Registry(argv.registryDir)
+  const {
+    allErrors,
+    useDefaults,
+    useStrict
+  } = argv;
   const validator = new SchemaValidator(registry, {
     allErrors,
     useDefaults,
