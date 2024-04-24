@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/cli",
-  "version": "1.26.3",
+  "version": "1.27.0",
   "description": "Chain Registry CLI",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
@@ -8,7 +8,7 @@
   "main": "index.js",
   "module": "esm/index.js",
   "types": "index.d.ts",
-  "bin":  {
+  "bin": {
     "registry": "cli.js"
   },
   "publishConfig": {
@@ -32,8 +32,8 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@chain-registry/workflows": "^1.26.3",
-    "@chain-registry/interfaces": "^0.25.7",
+    "@chain-registry/interfaces": "^0.26.0",
+    "@chain-registry/workflows": "^1.27.0",
     "chalk": "^4.1.0",
     "deepmerge": "^4.3.1",
     "inquirerer": "1.8.0",
