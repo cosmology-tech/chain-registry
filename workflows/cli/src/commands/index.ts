@@ -4,6 +4,7 @@ import { ParsedArgs } from 'minimist';
 import { commands as codegen } from './codegen';
 import { commands as info } from './info';
 import { commands as validate } from './validate';
+import { getUsage } from '../help';
 
 export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, _options: CLIOptions) => {
   let command;
@@ -14,6 +15,12 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
 
   if (command) {
     argv.command = command;
+  }
+
+  if (command === 'help') {
+    const usage = getUsage();
+    console.log(usage);
+    process.exit(0);
   }
 
   const questions: Question[] = [
