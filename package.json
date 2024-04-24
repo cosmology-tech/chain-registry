@@ -40,7 +40,7 @@
     "lerna": "^6",
     "mkdirp": "3.0.1",
     "prettier": "^3.0.2",
-    "strfy-js": "^1.5.0",
+    "strfy-js": "^2.2.2",
     "strip-ansi": "^6",
     "symlink-workspace": "^1.1.0",
     "ts-jest": "^29.1.1",
