@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`numAssets 1`] = `290`;
-
-exports[`numChains 1`] = `263`;
-
-exports[`numIBC 1`] = `616`;
-
-exports[`numSchemas 1`] = `5`;

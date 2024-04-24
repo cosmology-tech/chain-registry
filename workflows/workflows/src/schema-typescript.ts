@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import { basename, dirname, join } from 'path';
 import { generateTypeScript, JSONSchema, SchemaTSOptions } from 'schema-typescript';
 
-import { FilePathInfo } from './fixtures';
+import { RegistryFixture } from './registry';
 
 // Default titles for certain schemas
 // TODO create issue in cosmos/chain-registry
@@ -19,19 +19,19 @@ const DEFAULT_TITLES: { [filename: string]: string } = {
 export interface SchemaTypeGeneratorOptions {
   outputDir: string;
   schemaTSOptions: Partial<SchemaTSOptions>;
-  schemas: FilePathInfo[];
   supportedSchemas?: string[];
+  registry: RegistryFixture;
 }
 
 export class SchemaTypeGenerator {
   private outputDir: string;
-  private schemas: FilePathInfo[];
+  private registry: RegistryFixture;
   private schemaTSOptions: Partial<SchemaTSOptions>
   private supportedSchemas: Set<string>;
 
   constructor(options: SchemaTypeGeneratorOptions) {
     this.outputDir = options.outputDir;
-    this.schemas = options.schemas;
+    this.registry = options.registry;
     this.schemaTSOptions = options.schemaTSOptions;
     this.supportedSchemas = new Set(options.supportedSchemas || []);
   }
@@ -50,11 +50,11 @@ export class SchemaTypeGenerator {
   }
 
   public generateTypes(): void {
-    this.schemas.forEach(fileInfo => {
-      const schemaFile = fileInfo.origpath;
+    this.registry.schemas.forEach(fileInfo => {
+      const schemaFile = fileInfo.path;
       if (this.isSchemaSupported(schemaFile)) {
         try {
-          const schema: JSONSchema = this.readJsonFile(schemaFile);
+          const schema = fileInfo.content;
           this.updateSchemaTitle(schema, schemaFile);
           const result = generateTypeScript(schema, this.schemaTSOptions);
           const filename = this.getOutputFilename(schemaFile);
@@ -65,10 +65,6 @@ export class SchemaTypeGenerator {
         }
       }
     });
-  }
-
-  private readJsonFile(filePath: string): JSONSchema {
-    return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
   }
 
   private getOutputFilename(schemaFile: string): string {

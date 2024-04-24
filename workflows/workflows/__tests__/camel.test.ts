@@ -1,11 +1,12 @@
-
 import { sync as globSync } from 'glob';
-import { resolve } from 'path';
+import { join } from "path";
 
-import { schemas } from '../src';
 import { SchemaTypeGenerator } from '../src';
+import { fixtureOutputDir, getRegistry } from '../test-utils';
 
-const outputDir = resolve(__dirname +'/../../../__output__/camel');
+const outputDir = join(fixtureOutputDir, 'camel');
+
+const registry = getRegistry();
 
 it('types', () => {
   const generator = new SchemaTypeGenerator({
@@ -17,7 +18,7 @@ it('types', () => {
         'versions.schema.json',
         'memo_keys.schema.json',
     ],
-    schemas,
+    registry,
     schemaTSOptions: {
         strictTypeSafety: true,
         useCamelCase: true,

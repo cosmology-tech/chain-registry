@@ -1,7 +1,7 @@
 import { AssetList, Chain, IBCData, MemoKeys, Versions } from '@chain-registry/interfaces';
 import { readFileSync } from 'fs';
 import { sync as glob } from 'glob';
-import { basename, dirname, join } from 'path';
+import { basename } from 'path';
 import { JSONSchema } from "schema-typescript";
 
 const SCHEMATA_MAPPING: Record<string, string> = {
@@ -20,8 +20,6 @@ const SCHEMA_WHITELIST = [
   'versions.schema.json'
 ];
 
-const IGNORE_DIRS = ['_scripts', '_template', '.github'];
-
 export interface JSONSchemaContent<T> {
   $schemaFile: string;
   path: string;
@@ -35,12 +33,18 @@ export interface DataMapping {
   Versions: JSONSchemaContent<Versions>[]
 }
 
+const IGNORE_ROOT_DIRS =  [
+  `_template`,
+  `.github`,
+  `.git`,
+  `node_modules`
+];
 export interface SchemaMapping {
-  AssetList: JSONSchema;
-  IBCData: JSONSchema;
-  Chain: JSONSchema;
-  MemoKeys: JSONSchema;
-  Versions: JSONSchema;
+  AssetList: JSONSchemaContent<JSONSchema>;
+  IBCData: JSONSchemaContent<JSONSchema>;
+  Chain: JSONSchemaContent<JSONSchema>;
+  MemoKeys: JSONSchemaContent<JSONSchema>;
+  Versions: JSONSchemaContent<JSONSchema>;
 }
 
 export class RegistryFixture {
@@ -64,10 +68,6 @@ export class RegistryFixture {
   constructor(basePath: string) {
     this.basePath = basePath;
     this.initializeData();
-  }
-
-  private getCamelCase(schema: JSONSchema): string {
-    return SCHEMATA_MAPPING[schema.title];
   }
 
   private isJsonSchema(schema: JSONSchema): boolean {
@@ -116,38 +116,25 @@ export class RegistryFixture {
     }
   }
 
-  private initStoreForSchema(schema: JSONSchema) {
+  private initStoreForSchema(schema: JSONSchemaContent<JSONSchema>) {
     // if it exists return
-    if (this.schemaMappings[schema.title as keyof SchemaMapping]) return;
+    if (this.schemaMappings[schema.content.title as keyof SchemaMapping]) return;
 
     // initialize
-    this.schemaMappings[schema.title as keyof SchemaMapping] = schema;
+    this.schemaMappings[schema.content.title as keyof SchemaMapping] = schema;
   }
 
   private initializeData(): void {
-
     let types: any = {};
 
-    
     // parse every JSON file
     this.definitions = glob(`${this.basePath}/**/*.json`, {
-      ignore: [
-        `${this.basePath}/_template/**/*`,
-        `${this.basePath}/.github/**/*`,
-        `${this.basePath}/.git/**/*`,
-        `${this.basePath}/node_modules/**/*`
-      ]
+      // ignore certain root directories
+      ignore: IGNORE_ROOT_DIRS.map(dir=>`${this.basePath}/${dir}/**/*`)
     })
-      .filter(path=> {
-        const a = dirname(path.split(this.basePath)[1]);
-        
-        return true;
-        //  !IGNORE_DIRS.includes()
-      })
       .map(path => {
         const content = JSON.parse(readFileSync(path, 'utf-8'));
         if (!this.isJsonSchema(content)) return;
-
         // https://stackoverflow.com/questions/69133771/ajv-no-schema-with-key-or-ref-https-json-schema-org-draft-07-schema
         content.$schema = content.$schema.replace(/https/, 'http');
         types[basename(content.$schema)] = true;
@@ -168,7 +155,7 @@ export class RegistryFixture {
 
     // create schemaMappings and data
     schemas.forEach(schema => {
-      this.initStoreForSchema(schema.content);
+      this.initStoreForSchema(schema);
     });
 
     // load data
@@ -180,23 +167,29 @@ export class RegistryFixture {
   }
 
   public get chains(): Chain[] {
-    return this.dataMappings.Chain.map(c=>c.content);
+    return this.dataMappings.Chain.map(c => c.content);
   }
 
   public get assetLists(): AssetList[] {
-    return this.dataMappings.AssetList.map(c=>c.content);
+    return this.dataMappings.AssetList.map(c => c.content);
   }
 
   public get ibcData(): IBCData[] {
-    return this.dataMappings.IBCData.map(c=>c.content);
+    return this.dataMappings.IBCData.map(c => c.content);
   }
 
   public get memoKeys(): MemoKeys[] {
-    return this.dataMappings.MemoKeys.map(c=>c.content);
+    return this.dataMappings.MemoKeys.map(c => c.content);
   }
 
   public get versions(): Versions[] {
-    return this.dataMappings.Versions.map(c=>c.content);
+    return this.dataMappings.Versions.map(c => c.content);
+  }
+
+  public get schemas(): JSONSchemaContent<JSONSchema>[] {
+    return Object.entries(this.schemaMappings).map(([_str, obj])=> {
+      return obj as JSONSchemaContent<JSONSchema>;
+    })
   }
 
   public get count() {
