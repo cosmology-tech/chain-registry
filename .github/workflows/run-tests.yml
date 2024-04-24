@@ -28,8 +28,9 @@ jobs:
           git checkout 5b5b73004a1acf84ed65694121828ddb6cb34de4
 
       - name: Install Dependencies 🧶
-        run: yarn install
-        run: yarn symlink
+        run: |
+        yarn install
+        yarn symlink
 
       - name: Build Project 🏗️
         run: yarn build
