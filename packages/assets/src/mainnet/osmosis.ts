@@ -9878,14 +9878,14 @@ const assets: AssetList = {
     {
       description: 'The native EVM and Wasm, governance and staking token of the Shido Chain',
       denom_units: [{
-          denom: 'ibc/BBE825F7D1673E1EBF05AB02000E23E6077967B79547A3733B60AE4ED62C4D32',
+          denom: 'ibc/62B50BB1DAEAD2A92D6C6ACAC118F4ED8CBE54265DCF5688E8D0A0A978AA46E7',
           exponent: 0,
           aliases: ['shido']
         }, {
           denom: 'SHIDO',
           exponent: 18
         }],
-      base: 'ibc/BBE825F7D1673E1EBF05AB02000E23E6077967B79547A3733B60AE4ED62C4D32',
+      base: 'ibc/62B50BB1DAEAD2A92D6C6ACAC118F4ED8CBE54265DCF5688E8D0A0A978AA46E7',
       name: 'Shido',
       display: 'SHIDO',
       symbol: 'SHIDO',
@@ -9910,7 +9910,7 @@ const assets: AssetList = {
             chain_name: 'shido'
           },
           chain: {
-            channel_id: 'channel-38921'
+            channel_id: 'channel-73755'
           }
         }]
     },
@@ -12429,14 +12429,14 @@ const assets: AssetList = {
     {
       description: 'The native EVM and Wasm, governance and staking token of the Shido Chain',
       denom_units: [{
-          denom: 'ibc/BBE825F7D1673E1EBF05AB02000E23E6077967B79547A3733B60AE4ED62C4D32',
+          denom: 'ibc/62B50BB1DAEAD2A92D6C6ACAC118F4ED8CBE54265DCF5688E8D0A0A978AA46E7',
           exponent: 0,
           aliases: ['shido']
         }, {
           denom: 'SHIDO',
           exponent: 18
         }],
-      base: 'ibc/BBE825F7D1673E1EBF05AB02000E23E6077967B79547A3733B60AE4ED62C4D32',
+      base: 'ibc/62B50BB1DAEAD2A92D6C6ACAC118F4ED8CBE54265DCF5688E8D0A0A978AA46E7',
       name: 'Shido',
       display: 'SHIDO',
       symbol: 'SHIDO',
@@ -12461,7 +12461,7 @@ const assets: AssetList = {
             chain_name: 'shido'
           },
           chain: {
-            channel_id: 'channel-38921'
+            channel_id: 'channel-73755'
           }
         }]
     },

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.43.0 (2024-04-24)
+
+**Note:** Version bump only for package @chain-registry/osmosis
+
+
+
+
+
+## 1.42.8 (2024-04-24)
+
+**Note:** Version bump only for package @chain-registry/osmosis
+
+
+
+
+
 ## 1.42.7 (2024-04-23)
 
 **Note:** Version bump only for package @chain-registry/osmosis

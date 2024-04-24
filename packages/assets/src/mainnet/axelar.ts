@@ -2011,6 +2011,45 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native EVM and Wasm, governance and staking token of the Shido Chain',
+      denom_units: [{
+          denom: 'ibc/69610BB9AA825ED55EC650937F3AD9FD94FEFE7488354C0824C65C9DD04D4511',
+          exponent: 0,
+          aliases: ['shido']
+        }, {
+          denom: 'SHIDO',
+          exponent: 18
+        }],
+      base: 'ibc/69610BB9AA825ED55EC650937F3AD9FD94FEFE7488354C0824C65C9DD04D4511',
+      name: 'Shido',
+      display: 'SHIDO',
+      symbol: 'SHIDO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg'
+      },
+      coingecko_id: 'shido-2',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg'
+        }],
+      socials: {
+        website: 'https://shido.io/',
+        twitter: 'https://twitter.com/ShidoGlobal'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'shido',
+            chain_name: 'shido'
+          },
+          chain: {
+            channel_id: 'channel-148'
+          }
+        }]
+    },
+    {
       description: 'Somm Token (SOMM) is the native staking token of the Sommelier Chain',
       denom_units: [
         {
@@ -3641,6 +3680,45 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-103'
+          }
+        }]
+    },
+    {
+      description: 'The native EVM and Wasm, governance and staking token of the Shido Chain',
+      denom_units: [{
+          denom: 'ibc/69610BB9AA825ED55EC650937F3AD9FD94FEFE7488354C0824C65C9DD04D4511',
+          exponent: 0,
+          aliases: ['shido']
+        }, {
+          denom: 'SHIDO',
+          exponent: 18
+        }],
+      base: 'ibc/69610BB9AA825ED55EC650937F3AD9FD94FEFE7488354C0824C65C9DD04D4511',
+      name: 'Shido',
+      display: 'SHIDO',
+      symbol: 'SHIDO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg'
+      },
+      coingecko_id: 'shido-2',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg'
+        }],
+      socials: {
+        website: 'https://shido.io/',
+        twitter: 'https://twitter.com/ShidoGlobal'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'shido',
+            chain_name: 'shido'
+          },
+          chain: {
+            channel_id: 'channel-148'
           }
         }]
     },

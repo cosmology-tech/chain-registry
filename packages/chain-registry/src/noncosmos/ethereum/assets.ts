@@ -1007,16 +1007,16 @@ const info: AssetList = {
     {
       description: 'Staked FRAX (sFRAX) is an ERC4626 staking vault that distributes part of the Frax Protocol yield weekly to stakers denominated in FRAX stablecoins.',
       type_asset: 'erc20',
-      address: '0xA663B02CF0a4b149d2aD41910CB81e23e1c41c32',
+      address: '0xa663b02cf0a4b149d2ad41910cb81e23e1c41c32',
       denom_units: [{
-          denom: '0xA663B02CF0a4b149d2aD41910CB81e23e1c41c32',
+          denom: '0xa663b02cf0a4b149d2ad41910cb81e23e1c41c32',
           exponent: 0,
           aliases: ['sfrax-wei']
         }, {
           denom: 'sfrax',
           exponent: 18
         }],
-      base: '0xA663B02CF0a4b149d2aD41910CB81e23e1c41c32',
+      base: '0xa663b02cf0a4b149d2ad41910cb81e23e1c41c32',
       name: 'Staked FRAX',
       display: 'sfrax',
       symbol: 'sFRAX',
@@ -1024,7 +1024,7 @@ const info: AssetList = {
           type: 'liquid-stake',
           counterparty: {
             chain_name: 'ethereum',
-            base_denom: '0x853d955acef822db058eb8505911ed77f175b99e'
+            base_denom: '0xa663b02cf0a4b149d2ad41910cb81e23e1c41c32'
           },
           provider: 'Frax'
         }],
@@ -1041,16 +1041,16 @@ const info: AssetList = {
     {
       description: 'FXS is the value accrual and governance token of the entire Frax ecosystem. Frax is a fractional-algorithmic stablecoin protocol. It aims to provide a highly scalable, decentralized, algorithmic money in place of fixed-supply assets like BTC.',
       type_asset: 'erc20',
-      address: '0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0',
+      address: '0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0',
       denom_units: [{
-          denom: '0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0',
+          denom: '0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0',
           exponent: 0,
           aliases: ['fxs-wei']
         }, {
           denom: 'fxs',
           exponent: 18
         }],
-      base: '0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0',
+      base: '0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0',
       name: 'Frax Share',
       display: 'fxs',
       symbol: 'FXS',

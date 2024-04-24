@@ -6,7 +6,7 @@ const info: Chain = {
   pretty_name: 'SGE Testnet4',
   status: 'live',
   network_type: 'testnet',
-  website: 'sgenetwork.io',
+  website: 'https://sgenetwork.io',
   bech32_prefix: 'sge',
   daemon_name: 'usge',
   node_home: '$HOME/.sged',

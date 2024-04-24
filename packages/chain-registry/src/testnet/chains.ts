@@ -57,6 +57,7 @@ import * as _neutrontestnet from './neutrontestnet';
 import * as _nobletestnet from './nobletestnet';
 import * as _noistestnet from './noistestnet';
 import * as _nolustestnet from './nolustestnet';
+import * as _nyxtestnet from './nyxtestnet';
 import * as _okp4testnet from './okp4testnet';
 import * as _osmosistestnet from './osmosistestnet';
 import * as _osmosistestnet4 from './osmosistestnet4';
@@ -154,6 +155,7 @@ const chains: Chain[] = [
   _nobletestnet.chain,
   _noistestnet.chain,
   _nolustestnet.chain,
+  _nyxtestnet.chain,
   _okp4testnet.chain,
   _osmosistestnet.chain,
   _osmosistestnet4.chain,
