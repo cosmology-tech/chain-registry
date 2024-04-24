@@ -20,7 +20,7 @@
     "url": "https://github.com/cosmology-tech/chain-registry/issues"
   },
   "scripts": {
-    "copy": "copyfiles -f ../../LICENSE README.md package.json dist",
+    "copy": "copyfiles -f LICENSE README.md package.json dist",
     "clean": "del dist/**",
     "prepare": "npm run build",
     "codegen": "ts-node ./scripts/build.ts",

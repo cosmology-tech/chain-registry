@@ -1,0 +1,49 @@
+{
+  "name": "@chain-registry/cli",
+  "version": "1.26.3",
+  "description": "Chain Registry CLI",
+  "author": "Dan Lynch <pyramation@gmail.com>",
+  "homepage": "https://github.com/cosmology-tech/chain-registry",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "index.js",
+  "module": "esm/index.js",
+  "types": "index.d.ts",
+  "bin":  {
+    "registry": "cli.js"
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cosmology-tech/chain-registry"
+  },
+  "bugs": {
+    "url": "https://github.com/cosmology-tech/chain-registry/issues"
+  },
+  "scripts": {
+    "copy": "copyfiles -f LICENSE README.md package.json dist",
+    "clean": "del dist/**",
+    "prepare": "npm run build",
+    "build": "npm run clean; tsc; tsc -p tsconfig.esm.json; npm run copy",
+    "dev": "ts-node src/cli",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@chain-registry/workflows": "^1.26.3",
+    "@chain-registry/interfaces": "^0.25.7",
+    "chalk": "^4.1.0",
+    "deepmerge": "^4.3.1",
+    "inquirerer": "1.8.0",
+    "minimist": "^1.2.8"
+  },
+  "keywords": [
+    "cli",
+    "chain-registry",
+    "web3",
+    "cosmos",
+    "interchain"
+  ]
+}

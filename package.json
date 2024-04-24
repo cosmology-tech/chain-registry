@@ -12,7 +12,9 @@
     "access": "restricted"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "workflows/*",
+    "v2/*"
   ],
   "scripts": {
     "clean": "lerna run clean",
