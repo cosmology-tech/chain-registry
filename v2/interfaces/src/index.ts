@@ -1,6 +1,3 @@
-export * from './assetlist.schema';
-export * from './chain.schema';
-export * from './ibc_data.schema';
-export * from './memo_keys.schema';
-export * from './shared';
-export * from './versions.schema';
+export { Asset, AssetList } from './assetlist.schema';
+export { Chain } from './chain.schema';
+export { IBCData } from './ibc_data.schema';
