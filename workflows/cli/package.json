@@ -9,7 +9,8 @@
   "module": "esm/index.js",
   "types": "index.d.ts",
   "bin": {
-    "registry": "cli.js"
+    "registry": "cli.js",
+    "chain-registry": "cli.js"
   },
   "publishConfig": {
     "access": "public",
@@ -45,5 +46,8 @@
     "web3",
     "cosmos",
     "interchain"
-  ]
+  ],
+  "devDependencies": {
+    "strfy-js": "^2.2.2"
+  }
 }

@@ -1,5 +1,3 @@
-import { Pointer } from "./shared";
-
 export interface Peer {
   id: string;
   address: string;
@@ -29,6 +27,10 @@ export interface FeeToken {
 }
 export interface StakingToken {
   denom: string;
+}
+export interface Pointer {
+  chainName: string;
+  baseDenom?: string;
 }
 export interface Chain {
   schema?: string;

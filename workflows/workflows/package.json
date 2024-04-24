@@ -42,8 +42,7 @@
     "minimatch": "^9.0.4",
     "mkdirp": "3.0.1",
     "schema-typescript": "^0.2.5",
-    "sha.js": "^2.4.11",
-    "strfy-js": "^2.2.2"
+    "sha.js": "^2.4.11"
   },
   "keywords": [
     "chain-registry",

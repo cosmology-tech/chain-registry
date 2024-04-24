@@ -9,11 +9,86 @@
     <img height="20" src="https://github.com/cosmology-tech/chain-registry/actions/workflows/run-tests.yml/badge.svg" />
   </a>
    <a href="https://github.com/cosmology-tech/chain-registry/blob/main/LICENSE"><img height="20" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
-   <a href="https://www.npmjs.com/package/@chain-registry/workflows"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=packages%2Fworkflows%2Fpackage.json"></a>
+   <a href="https://www.npmjs.com/package/@chain-registry/workflows"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=workflows%2Fworkflows%2Fpackage.json"></a>
 </p>
 
-TODO
+The `@chain-registry/workflows` is a powerful library that powers our command-line interface ([`@chain-registry/cli`](https://github.com/cosmology-tech/chain-registry/tree/main/workflows/cli)) designed to interact with the Chain Registry, allowing users to fetch information, validate data, and generate TypeScript interfaces directly from JSON schemas.
 
+## Features
+
+🔍 **Info**: Retrieve detailed information about chains, assets, and asset lists.
+
+✅ **Validate**: Check the integrity and validity of the registry data against its schemas.
+
+🛠️ **Codegen**: Generate TypeScript definitions for use in development, ensuring type safety and adherence to the schema definitions.
+
+
+## Installation
+
+We recommend using the CLI to use workflows. To get started with `@chain-registry/cli`, install it via npm or yarn:
+
+```js
+npm install @chain-registry/cli
+# or
+yarn add @chain-registry/cli
+```
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Command Details](#command-details)
+  - [Info](#info)
+  - [Validate](#validate)
+  - [Codegen](#codegen)
+- [Related Projects](#related)
+- [Credits](#credits)
+- [Disclaimer](#disclaimer)
+
+## Command Details
+
+### Info
+
+Fetch and display information about entities in the chain registry:
+
+```sh
+chain-registry info
+```
+
+Options:
+
+- `chain`: Fetch information specific to a chain.
+- `asset-list`: Fetch asset lists associated with a specific chain.
+- `asset`: Fetch detailed information about a specific asset.
+- `--registryDir`: Path to the chain registry directory.
+
+### Validate
+
+Validate the data in the registry against the provided JSON schemas:
+
+```sh
+chain-registry validate
+```
+
+Options:
+
+- `--outputDir`: Directory to output the generated TypeScript files.
+- `--registryDir`: Path to the chain registry directory.
+
+### Codegen
+
+Generate TypeScript interfaces for the registry:
+
+```sh
+chain-registry codegen --outputDir ./src --registryDir /path/to/registry
+```
+
+Options:
+
+- `--outputDir`: Directory to output the generated TypeScript files.
+- `--registryDir`: Path to the chain registry directory.
+- `--strictTypeSafety`: Enables strict TypeScript type definitions.
+- `--useCamelCase`: Converts JSON schema properties to camelCase in the generated TypeScript files.
 
 ## Related
 

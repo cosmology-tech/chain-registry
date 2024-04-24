@@ -303,6 +303,41 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@chain-registry/cli@1.27.0":
+  version "1.27.0"
+  resolved "https://registry.yarnpkg.com/@chain-registry/cli/-/cli-1.27.0.tgz#e8d17881cc5f82dd45ac65ea0a8dc49714f13b9a"
+  integrity sha512-wVqc0AYTeEOCnFxd1MAE5EuBVCnpmyDW2JNJ4Vbb2A0dIj6S9oconFzIolg0QwEdUu/YDlXv10Lgda/4IQQITA==
+  dependencies:
+    "@chain-registry/interfaces" "^0.26.0"
+    "@chain-registry/workflows" "^1.27.0"
+    chalk "^4.1.0"
+    deepmerge "^4.3.1"
+    inquirerer "1.8.0"
+    minimist "^1.2.8"
+
+"@chain-registry/interfaces@^0.26.0":
+  version "0.26.0"
+  resolved "https://registry.yarnpkg.com/@chain-registry/interfaces/-/interfaces-0.26.0.tgz#4395998bcbe50d75b901f035168ef7900fcbd172"
+  integrity sha512-/0tTsSr6d8W1p6Mq/QmlyH6zGGM/mBVszKti9xtZqFto1afwBadakGk0m3zgl7ty1QtziRtbwE89uYq64GgIhg==
+
+"@chain-registry/workflows@^1.27.0":
+  version "1.27.0"
+  resolved "https://registry.yarnpkg.com/@chain-registry/workflows/-/workflows-1.27.0.tgz#768cd470ad481079d2a496cd209ae97cfaae1f2b"
+  integrity sha512-LppJ23y1KmW7xWpja2sBj+F25csKgqxJ0Remcz5e5A0gBqcq+xc5NpQZ0x54Zsh5F5qQOCNdTRsKqyRKDcUCsA==
+  dependencies:
+    "@chain-registry/interfaces" "^0.26.0"
+    ajv "^8.12.0"
+    ajv-formats "^3.0.1"
+    bignumber.js "9.1.1"
+    chalk "^4.1.0"
+    file-ts "^0.7.15"
+    glob "^7.1.4"
+    minimatch "^9.0.4"
+    mkdirp "3.0.1"
+    schema-typescript "^0.2.5"
+    sha.js "^2.4.11"
+    strfy-js "^2.2.2"
+
 "@cosmostation/extension-client@0.1.15":
   version "0.1.15"
   resolved "https://registry.yarnpkg.com/@cosmostation/extension-client/-/extension-client-0.1.15.tgz#cdc6d8fce42217704c1c0d5814f0ee7ce27e8dab"
@@ -4055,10 +4090,10 @@ inquirer@^8.2.4:
     through "^2.3.6"
     wrap-ansi "^6.0.1"
 
-inquirerer@1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/inquirerer/-/inquirerer-1.6.1.tgz#669fd17c9a1559ba1a42ad71af8a3fc9fa76a415"
-  integrity sha512-fV1We5PFBcmbmszubXW6PGFj7gtYYnkZ6XArjnHjKGdjsL1KWuuO9Z4LQdScG32qZTWzpTtwUIQxxYq6BFKU+g==
+inquirerer@1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/inquirerer/-/inquirerer-1.8.0.tgz#870af4e609048e1883fe293834835294dc053a8f"
+  integrity sha512-KWYtN8wy05+UZOGPLdj2H/e4OVhcKkyyJgDGZ5S+3kihBJuC0hv5vlbPxehHE5/lPIBx+F2kQyQc6FSD53TAhA==
   dependencies:
     chalk "^4.1.0"
     deepmerge "^4.3.1"
@@ -6848,11 +6883,6 @@ stack-utils@^2.0.3:
   integrity sha512-XlkWvfIm6RmsWtNJx+uqtKLS8eqFbxUg0ZzLXqY0caEy9l7hruX8IpiDnjsLavoBgqCCR71TqWO8MaXYheJ3RQ==
   dependencies:
     escape-string-regexp "^2.0.0"
-
-strfy-js@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/strfy-js/-/strfy-js-1.5.0.tgz#80da9fe2a0599a6a7a36f7b514a4fd32323980ba"
-  integrity sha512-QHyrXpVazTuLBRFLf96/pQaZ25WFq693KEfMfwVNB2Chj4QkTEXYXrJKULRTCBvADs35+Rl915A1saxZNT5X0A==
 
 strfy-js@^2.2.2:
   version "2.2.2"

@@ -1,0 +1,55 @@
+name: Generate Types
+
+on:
+  workflow_dispatch:
+
+jobs:
+  generate-types:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository 📥
+        uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'  # Ensures submodules are also checked out
+
+      - name: Setup Node.js 🌐
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'yarn'
+
+      - name: Update Git Submodules 🔄
+        run: |
+          git submodule update --remote
+          cd packages/chain-registry/chain-registry
+
+      - name: Types Generation
+        run: |
+          git submodule update --remote
+          CHANGES_DESC="build-$(date +%Y%m%d-%H%M%S)"
+          yarn
+          yarn build
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor}}@users.noreply.github.com"
+          cd v2/types
+          yarn types
+          yarn build
+          cd ../../
+          cd v2/interfaces
+          yarn types
+          yarn build
+          cd ../../
+          git add .
+          if ! git diff --staged --quiet; then
+            git commit -am "build 🛠 $CHANGES_DESC"
+            git push origin main
+            echo "GIT_RESULT=Published." >> $GITHUB_ENV
+          else
+            echo "GIT_RESULT=No changes to commit." >> $GITHUB_ENV
+          fi
+      - name: Git Ops
+        run: |
+          echo $GIT_RESULT
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
+          GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
