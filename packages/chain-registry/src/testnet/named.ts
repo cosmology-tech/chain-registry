@@ -62,6 +62,7 @@ export * as osmosistestnet4 from './osmosistestnet4';
 export * as permtestnet from './permtestnet';
 export * as persistencetestnet from './persistencetestnet';
 export * as persistencetestnet2 from './persistencetestnet2';
+export * as planqtestnet from './planqtestnet';
 export * as pryzmtestnet from './pryzmtestnet';
 export * as quasartestnet from './quasartestnet';
 export * as quicksilvertestnet from './quicksilvertestnet';
