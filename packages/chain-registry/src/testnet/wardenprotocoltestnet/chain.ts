@@ -4,8 +4,8 @@ const info: Chain = {
   chain_name: 'wardenprotocoltestnet',
   status: 'live',
   network_type: 'testnet',
-  pretty_name: 'Warden Protocol Alfama Testnet',
-  chain_id: 'alfama',
+  pretty_name: 'Warden Protocol Buenavista',
+  chain_id: 'buenavista-1',
   bech32_prefix: 'warden',
   daemon_name: 'wardend',
   node_home: '$HOME/.warden',
@@ -31,24 +31,22 @@ const info: Chain = {
   },
   apis: {
     rpc: [{
-        address: 'https://rpc.alfama.wardenprotocol.org/',
+        address: 'https://rpc.buenavista.wardenprotocol.org/',
         provider: 'Warden Protocol'
       }],
     rest: [{
-        address: 'https://rest.alfama.wardenprotocol.org/',
+        address: 'https://api.buenavista.wardenprotocol.org/',
         provider: 'Warden Protocol'
       }],
-    grpc: []
+    grpc: [{
+        address: 'https://grpc.buenavista.wardenprotocol.org/',
+        provider: 'Warden Protocol'
+      }]
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/wardenprotocol/images/ward.png'
   },
-  explorers: [{
-      kind: 'ping.pub',
-      url: 'https://warden-explorer.paranorm.pro/warden',
-      tx_page: 'https://warden-explorer.paranorm.pro/warden/tx/${txHash}',
-      account_page: 'https://warden-explorer.paranorm.pro/warden/account/${accountAddress}'
-    }],
+  explorers: [],
   keywords: ['testnet'],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/wardenprotocol/images/ward.png'

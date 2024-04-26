@@ -6,7 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   website: 'https://aura.network/',
   pretty_name: 'Aura Euphoria Network',
-  chain_id: 'euphoria-2',
+  chain_id: 'aura_6321-3',
   bech32_prefix: 'aura',
   daemon_name: 'aurad',
   node_home: '$HOME/.aura',
@@ -30,9 +30,9 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.47.4',
+    cosmos_sdk_version: 'v0.47.8',
     cosmwasm_enabled: true,
-    cosmwasm_version: '0.41.0'
+    cosmwasm_version: '0.42.0'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.png',
@@ -55,8 +55,8 @@ const info: Chain = {
   explorers: [{
       kind: 'aurascan',
       url: 'https://euphoria.aurascan.io',
-      tx_page: 'https://euphoria.aurascan.io/transaction/${txHash}',
-      account_page: 'https://euphoria.aurascan.io/account/${accountAddress}'
+      tx_page: 'https://euphoria.aurascan.io/tx/${txHash}',
+      account_page: 'https://euphoria.aurascan.io/address/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.png',

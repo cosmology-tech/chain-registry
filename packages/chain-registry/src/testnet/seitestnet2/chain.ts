@@ -14,7 +14,7 @@ const info: Chain = {
   fees: {
     fee_tokens: [{
         denom: 'usei',
-        fixed_min_gas_price: 0
+        fixed_min_gas_price: 0.08
       }]
   },
   codebase: {

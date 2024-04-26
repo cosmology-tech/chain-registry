@@ -1024,7 +1024,7 @@ const info: AssetList = {
           type: 'liquid-stake',
           counterparty: {
             chain_name: 'ethereum',
-            base_denom: '0xa663b02cf0a4b149d2ad41910cb81e23e1c41c32'
+            base_denom: '0x853d955acef822db058eb8505911ed77f175b99e'
           },
           provider: 'Frax'
         }],

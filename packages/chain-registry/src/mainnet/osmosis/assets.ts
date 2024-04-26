@@ -12072,6 +12072,7 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/sail.png'
         }],
+      coingecko_id: 'sail-dao',
       socials: {
         website: 'https://daodao.zone/dao/osmo106tvcj58rvdn9k36m9m3xcmcwk2c3fgft3ldcst9lgy05gcmjanqexru3h/home',
         twitter: 'https://twitter.com/Sail_DAO_'

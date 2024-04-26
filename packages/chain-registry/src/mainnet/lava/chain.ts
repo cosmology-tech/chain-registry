@@ -62,15 +62,26 @@ const info: Chain = {
       {
         address: 'https://lava-rpc.y2.finance:443',
         provider: 'YTWOFUND'
+      },
+      {
+        address: 'https://lava-rpc.ibs.team:443',
+        provider: 'Inter Blockchain Services'
       }
     ],
-    rest: [{
+    rest: [
+      {
         address: 'https://lava-api.w3coins.io:443',
         provider: 'w3coins'
-      }, {
+      },
+      {
         address: 'https://lava.api.staking-explorer.com',
         provider: 'Daily DROP'
-      }]
+      },
+      {
+        address: 'https://lava-api.ibs.team:443',
+        provider: 'Inter Blockchain Services'
+      }
+    ]
   },
   explorers: [{
       kind: 'w3coins',
