@@ -80,6 +80,10 @@ const info: Chain = {
       {
         address: 'https://nibiru-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://nibiru-mainnet.rpc.stakevillage.net:443',
+        provider: 'Stake Village'
       }
     ],
     rest: [
@@ -126,6 +130,10 @@ const info: Chain = {
       {
         address: 'https://nibiru-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://nibiru-mainnet.api.stakevillage.net',
+        provider: 'Stake Village'
       }
     ],
     grpc: [
@@ -168,6 +176,10 @@ const info: Chain = {
       {
         address: 'nibiru-grpc.noders.services:35090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'nibiru-mainnet.grpc.stakevillage.net:443',
+        provider: 'Stake Village'
       }
     ]
   },
@@ -201,6 +213,12 @@ const info: Chain = {
       url: 'https://explorer.nodeshub.online/nibiru/',
       tx_page: 'https://explorer.nodeshub.online/nibiru/tx/${txHash}',
       account_page: 'https://explorer.nodeshub.online/nibiru/accounts/${accountAddress}'
+    },
+    {
+      kind: 'Stake Village',
+      url: 'https://exp.stakevillage.net/nibiru-mainnet',
+      tx_page: 'https://exp.stakevillage.net/nibiru-mainnet/tx/${txHash}',
+      account_page: 'https://exp.stakevillage.net/nibiru-mainnet/accounts/${accountAddress}'
     }
   ],
   images: [{
