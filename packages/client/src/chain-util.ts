@@ -14,8 +14,8 @@ import {
   getDenomBySymbol,
   getExponentByDenom,
   getExponentBySymbol,
-  getTokenLogoByDenom,
-  getTokenNameByDenom,
+  getAssetLogoByDenom,
+  getAssetNameByDenom,
   getChainNameByDenom,
   mapCoinGeckoPricesToDenoms,
   convertBaseUnitToDollarValue,
@@ -83,12 +83,12 @@ export class ChainRegistryChainUtil {
     return getExponentBySymbol(this._assets, symbol, this._chainName);
   }
 
-  getTokenLogoByDenom(denom: Denom): string | undefined {
-    return getTokenLogoByDenom(this._assets, denom, this._chainName);
+  getAssetLogoByDenom(denom: Denom): string | undefined {
+    return getAssetLogoByDenom(this._assets, denom, this._chainName);
   }
 
-  getTokenNameByDenom(denom: Denom): string | undefined {
-    return getTokenNameByDenom(this._assets, denom, this._chainName);
+  getAssetNameByDenom(denom: Denom): string | undefined {
+    return getAssetNameByDenom(this._assets, denom, this._chainName);
   }
 
   getChainNameByDenom(denom: Denom): string | undefined {

@@ -75,15 +75,15 @@ describe('tests for asset-list-util', () => {
     expect(id).toEqual('osmosis');
   });
 
-  it('getTokenLogoByDenom', () => {
-    const logo = client.getTokenLogoByDenom('uosmo');
+  it('getAssetLogoByDenom', () => {
+    const logo = client.getAssetLogoByDenom('uosmo');
     expect(logo).toEqual(
       'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png'
     );
   });
 
-  it('getTokenNameByDenom', () => {
-    const name = client.getTokenNameByDenom('uion');
+  it('getAssetNameByDenom', () => {
+    const name = client.getAssetNameByDenom('uion');
     expect(name).toEqual('Ion');
   });
 

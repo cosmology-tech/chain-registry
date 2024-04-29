@@ -124,10 +124,10 @@ import {
   getDenomBySymbol,
   getExponentByDenom,
   getExponentBySymbol,
-  getNativeTokenByChainName,
+  getNativeAssetByChainName,
   getSymbolByDenom,
-  getTokenLogoByDenom,
-  getTokenNameByDenom
+  getAssetLogoByDenom,
+  getAssetNameByDenom
 } from '@chain-registry/utils';
 
 // import from chain-registry or your own AssetList[]
@@ -169,9 +169,9 @@ console.log(coinGeckoId); // 'osmosis'
 - `getDenomBySymbol`: Get the denomination of an asset by its symbol.
 - `getExponentByDenom`: Find the exponent for a denomination.
 - `getExponentBySymbol`: Get the exponent for a symbol.
-- `getNativeTokenByChainName`: Retrieve the native token for a given chain name.
-- `getTokenLogoByDenom`: Get the logo URL for a token by its denomination.
-- `getTokenNameByDenom`: Find the name of a token by its denomination.
+- `getNativeAssetByChainName`: Retrieve the native token for a given chain name.
+- `getAssetLogoByDenom`: Get the logo URL for a token by its denomination.
+- `getAssetNameByDenom`: Find the name of a token by its denomination.
 
 ### IBC Utilities
 

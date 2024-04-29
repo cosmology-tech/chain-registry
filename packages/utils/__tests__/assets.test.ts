@@ -1,6 +1,9 @@
+
 import {
   getAssetByDenom,
   getAssetBySymbol,
+  getAssetLogoByDenom,
+  getAssetNameByDenom,
   getChainLogo,
   getChainNameByDenom,
   getChainNameByStakingDenom,
@@ -9,10 +12,8 @@ import {
   getDenomBySymbol,
   getExponentByDenom,
   getExponentBySymbol,
-  getNativeTokenByChainName,
-  getSymbolByDenom,
-  getTokenLogoByDenom,
-  getTokenNameByDenom
+  getNativeAssetByChainName,
+  getSymbolByDenom
 } from '../src/assets';
 import { assets, chains } from '../test-utils';
 
@@ -89,34 +90,34 @@ describe('tests for assets utils', () => {
     expect(exponent2).toEqual(6);
   });
 
-  it('getNativeTokenByChainName', () => {
-    const nativeToken = getNativeTokenByChainName(assets, 'osmosis');
+  it('getNativeAssetByChainName', () => {
+    const nativeToken = getNativeAssetByChainName(assets, 'osmosis')
     expect(nativeToken.base).toEqual('uosmo');
-    const nativeToken2 = getNativeTokenByChainName(assets, 'juno');
+    const nativeToken2 = getNativeAssetByChainName(assets, 'juno');
     expect(nativeToken2.base).toEqual('ujuno');
   });
 
-  it('getTokenLogoByDenom', () => {
-    const logo = getTokenLogoByDenom(assets, 'uosmo', 'osmosis');
+  it('getAssetLogoByDenom', () => {
+    const logo = getAssetLogoByDenom(assets, 'uosmo', 'osmosis');
     expect(logo).toEqual(
       'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png'
     );
-    expect(() => getTokenLogoByDenom(assets, 'uatom')).toThrow();
-    const logo2 = getTokenLogoByDenom(assets, 'uatom', 'cosmoshub');
+    expect(() => getAssetLogoByDenom(assets, 'uatom')).toThrow();
+    const logo2 = getAssetLogoByDenom(assets, 'uatom', 'cosmoshub');
     expect(logo2).toEqual(
       'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png'
     );
-    const logo3 = getTokenLogoByDenom(assets, 'ubcre');
+    const logo3 = getAssetLogoByDenom(assets, 'ubcre');
     expect(logo3).toEqual(
       'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png'
     );
   });
 
-  it('getTokenNameByDenom', () => {
-    expect(() => getTokenNameByDenom(assets, 'uatom')).toThrow();
-    const name = getTokenNameByDenom(assets, 'uatom', 'cosmoshub');
+  it('getAssetNameByDenom', () => {
+    expect(() => getAssetNameByDenom(assets, 'uatom')).toThrow();
+    const name = getAssetNameByDenom(assets, 'uatom', 'cosmoshub');
     expect(name).toEqual('Cosmos');
-    const name2 = getTokenNameByDenom(assets, 'ubcre');
+    const name2 = getAssetNameByDenom(assets, 'ubcre');
     expect(name2).toEqual('Bonded Crescent');
   });
 });
