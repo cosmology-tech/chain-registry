@@ -1,12 +1,17 @@
+
+import { assets } from 'chain-registry/mainnet'
+
+import { getDenomsByCoinGeckoId } from '../src/assets';
 import {
   convertBaseUnitToDisplayUnit,
+  convertBaseUnitToDisplayUnitByDenom,
   convertBaseUnitToDollarValue,
+  convertBaseUnitToDollarValueByDenom,
   convertDisplayUnitToBaseUnit,
   convertDollarValueToBaseUnit,
   mapCoinGeckoPricesToDenoms,
   roundDown
 } from '../src/calc';
-import { assets } from '../test-utils';
 
 const osmosisAssets = assets.filter(
   ({ chain_name }) => chain_name === 'osmosis'
@@ -61,7 +66,7 @@ describe('tests for calc utils', () => {
     const value = convertBaseUnitToDisplayUnit(osmosisAssets, 'OSMO', 329823);
     expect(value).toEqual('0.329823');
     expect(() =>
-      convertBaseUnitToDisplayUnit(osmosisAssets, 'ATOM', 100)
+      convertBaseUnitToDisplayUnit(osmosisAssets, 'AATOM', 100)
     ).toThrow();
   });
 
@@ -73,4 +78,25 @@ describe('tests for calc utils', () => {
     );
     expect(value).toEqual('99');
   });
+
+  it('getDenomsByCoinGeckoId', () => {
+    const denoms = getDenomsByCoinGeckoId(osmosisAssets, 'osmosis');
+    expect(denoms).toMatchObject(['uosmo']);
+  })
+
+
+  it('convertBaseUnitToDisplayUnitByDenom', () => {
+    const value = convertBaseUnitToDisplayUnitByDenom(osmosisAssets, 'ibc/52E12CF5CA2BB903D84F5298B4BFD725D66CAB95E09AA4FC75B2904CA5485FEB', 1000, 'osmosis')
+    expect(value).toBe("1000")
+  })
+
+  it('convertBaseUnitToDollarValueByDenom' ,()=>{
+    const priceMap = mapCoinGeckoPricesToDenoms(osmosisAssets, coinGeckoPrices)
+    const dolloar1 = convertBaseUnitToDollarValueByDenom(osmosisAssets, priceMap, 'uosmo', 1000000, 'osmosis')
+    expect(dolloar1).toBe("0.498124")
+    const dolloarNoPrice = convertBaseUnitToDollarValueByDenom(osmosisAssets, priceMap, 'ibc/52E12CF5CA2BB903D84F5298B4BFD725D66CAB95E09AA4FC75B2904CA5485FEB', 1000000, 'osmosis')
+    expect(dolloarNoPrice).toBe('0')
+  })
+
+
 });

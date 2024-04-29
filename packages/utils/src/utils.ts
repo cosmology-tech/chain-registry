@@ -2,12 +2,14 @@ import { AssetList } from "@chain-registry/types";
 
 export const customFind = <T>(
   array: T[],
-  filterFn: (item: T) => boolean
+  filterFn: (item: T) => boolean,
+  message: string,
+  
 ): T | undefined => {
   const filteredItems = array.filter(filterFn);
   const filterCount = filteredItems.length;
   if (filterCount > 1) {
-    throw new Error(`Ambiguity Error: ${filterCount} items found.`);
+    throw new Error(`Ambiguity Error: ${filterCount} items found ${message}.`);
   }
 
   return filteredItems[0];

@@ -15,7 +15,7 @@ const getAssetByKeyValue = (
     .filter(({ chain_name }) => !chainName || chain_name === chainName)
     .flatMap(({ assets }) => assets);
 
-  return customFind(filteredAssets, (asset) => asset[key] === value);
+  return customFind(filteredAssets, (asset) => asset[key] === value, `key:${key} value:${value} chainName:${chainName}`);
 };
 
 export const getAssetByDenom = (
@@ -23,7 +23,17 @@ export const getAssetByDenom = (
   denom: Denom,
   chainName?: string
 ): Asset | undefined => {
-  return getAssetByKeyValue(assets, 'base', denom, chainName);
+
+  const filteredAssets = assets
+  .filter(({ chain_name }) => !chainName || chain_name === chainName)
+  .flatMap(({ assets }) => assets);
+
+  return customFind(filteredAssets, (asset) => {
+    const found = asset.denom_units.find(unit => unit.denom === denom)
+  
+    return !!found
+  },`denom:${denom} chainName:${chainName}`);
+
 };
 
 export const getAssetBySymbol = (
@@ -41,6 +51,22 @@ export const getDenomByCoinGeckoId = (
 ): Denom | undefined => {
   return getAssetByKeyValue(assets, 'coingecko_id', coinGeckoId, chainName)
     ?.base;
+};
+
+export const getDenomsByCoinGeckoId = (
+  assets: AssetList[],
+  coinGeckoId: string,
+  chainName?: string
+): Denom[] => {
+  const filteredAssets = assets
+  .filter(({ chain_name }) => !chainName || chain_name === chainName)
+  .flatMap(({ assets }) => assets);
+
+  const denoms = filteredAssets
+    .filter( a => a.coingecko_id === coinGeckoId)
+    .map(a => a.base);
+
+  return denoms;
 };
 
 type GetCoinGeckoIdByDenomOptions = {
@@ -99,6 +125,13 @@ export const getExponentFromAsset = (asset: Asset): number | undefined => {
     ?.exponent;
 };
 
+export const getExponentByDenomFromAsset = (asset: Asset, denom: string): number | undefined => {
+  return asset.denom_units.find((unit) => {
+    return unit.denom === denom || unit?.aliases?.find(a => a === denom)
+  })
+    ?.exponent;
+};
+
 export const getExponentByDenom = (
   assets: AssetList[],
   denom: Denom,
@@ -125,7 +158,8 @@ export const getNativeTokenByChainName = (
     assets,
     (assetList) =>
       assetList.chain_name === chainName &&
-      !assetList.assets[0].base.startsWith('ibc/')
+      !assetList.assets[0].base.startsWith('ibc/'),
+    `chainName:${chainName}`
   );
 
   return assetList?.assets[0];
@@ -170,7 +204,8 @@ export const getChainNameByDenom = (
   }
 
   return customFind(assets, (assetList) =>
-    assetList.assets.some((asset) => asset.base === denom)
+    assetList.assets.some((asset) => asset.base === denom),
+  `denom:${denom}`
   )?.chain_name;
 };
 
@@ -181,7 +216,8 @@ export const getChainByStakingDenom = (
   customFind(
     chains,
     (chain) =>
-      !!chain.staking?.staking_tokens.find((token) => token.denom === denom)
+      !!chain.staking?.staking_tokens.find((token) => token.denom === denom),
+    `denom:${denom}`
   );
 
 export const getChainNameByStakingDenom = (
