@@ -40,7 +40,7 @@ ${header('COMMANDS')}
             ${normal('Specifies the path to the chain registry directory.')}
         ${option('--strictTypeSafety')}
             ${normal('Enables strict TypeScript type definitions.')}
-        ${option('--useCamelCase')}
+        ${option('--camelCase')}
             ${normal('Converts JSON schema properties to camelCase in the generated TypeScript files.')}
 
 ${header('EXAMPLES')}

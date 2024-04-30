@@ -19,7 +19,7 @@
   "scripts": {
     "clean": "lerna run clean",
     "build": "lerna run build",
-    "symlink": "symlink-workspace",
+    "symlink": "symlink-workspace --logLevel error",
     "postinstall": "yarn symlink",
     "codegen": "lerna run codegen --parallel"
   },

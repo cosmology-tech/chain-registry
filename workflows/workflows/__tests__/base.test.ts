@@ -21,7 +21,7 @@ it('types', () => {
     registry,
     schemaTSOptions: {
         strictTypeSafety: true,
-        useCamelCase: false,
+        camelCase: false,
         useSingleQuotes: true
     }
   });

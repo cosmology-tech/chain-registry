@@ -89,7 +89,7 @@ Options:
 - `--outputDir`: Directory to output the generated TypeScript files.
 - `--registryDir`: Path to the chain registry directory.
 - `--strictTypeSafety`: Enables strict TypeScript type definitions.
-- `--useCamelCase`: Converts JSON schema properties to camelCase in the generated TypeScript files.
+- `--camelCase`: Converts JSON schema properties to camelCase in the generated TypeScript files.
 
 ## Related
 

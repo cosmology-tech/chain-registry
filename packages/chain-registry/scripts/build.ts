@@ -7,6 +7,8 @@ import * as path from 'path';
 import { jsStringify } from 'strfy-js';
 
 const NON_COSMOS_NETWORK_TYPE = 'noncosmos';
+const registryDir = path.resolve(`${__dirname}/../chain-registry`);
+const registryDirInRepoPath = 'chain-registry/chain-registry';
 
 const getValidVarName = (varName) => {
   if (!/^[a-zA-Z_$]/.test(varName)) {
@@ -426,20 +428,20 @@ const initIBC = (obj, ibcFieldName) => {
 
 const NON_INFO_DIRS = ['_memo_keys', '_scripts', '_template', '.github'];
 
-const chainPaths = glob(`${__dirname}/../chain-registry/**/chain.json`).filter(
+const chainPaths = glob(`${registryDir}/**/chain.json`).filter(
   (a) => {
-    const splitedDirs = a.split('chain-registry/chain-registry');
+    const splitedDirs = a.split(registryDirInRepoPath);
     let dir = splitedDirs.pop();
     dir = path.basename(path.dirname(dir));
     return !NON_INFO_DIRS.includes(dir);
   }
 );
 
-const paths = glob(`${__dirname}/../chain-registry/**/*.json`)
+const paths = glob(`${registryDir}/**/*.json`)
   .filter((a) => path.basename(a) !== 'package.json')
   .filter((a) => path.basename(a) !== 'package-lock.json')
   .filter((a) => {
-  const splitedDirs = a.split('chain-registry/chain-registry');
+  const splitedDirs = a.split(registryDirInRepoPath);
   const filePath = splitedDirs.pop();
   const dir = path.basename(path.dirname(filePath));
   return (
