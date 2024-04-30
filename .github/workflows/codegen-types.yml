@@ -29,6 +29,7 @@ jobs:
           CHANGES_DESC="build-$(date +%Y%m%d-%H%M%S)"
           yarn
           yarn build
+          yarn symlink
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
           cd v2/types
