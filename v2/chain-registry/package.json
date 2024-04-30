@@ -1,0 +1,46 @@
+{
+  "name": "@chain-registry/v2",
+  "version": "1.45.5",
+  "description": "Cosmos chain registry ⚛️",
+  "author": "Dan Lynch <pyramation@gmail.com>",
+  "homepage": "https://github.com/cosmology-tech/chain-registry/tree/master/packages/chain-registry#readme",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "index.js",
+  "module": "esm/index.js",
+  "types": "index.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cosmology-tech/chain-registry"
+  },
+  "bugs": {
+    "url": "https://github.com/cosmology-tech/chain-registry/issues"
+  },
+  "scripts": {
+    "copy": "copyfiles -f LICENSE README.md package.json dist",
+    "clean": "del dist/**",
+    "prepare": "npm run build",
+    "codegen": "ts-node ./scripts/build.ts",
+    "build": "npm run clean; tsc; tsc -p tsconfig.esm.json; npm run copy",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@chain-registry/utils": "^1.29.4",
+    "deepmerge": "^4.2.2"
+  },
+  "dependencies": {
+    "@chain-registry/types": "^0.28.4"
+  },
+  "keywords": [
+    "chain-registry",
+    "web3",
+    "cosmos",
+    "cosmos-sdk",
+    "interchain",
+    "tokens"
+  ]
+}

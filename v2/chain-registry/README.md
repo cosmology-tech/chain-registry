@@ -1,0 +1,255 @@
+# chain-registry
+
+<p align="center" width="100%">
+    <img height="90" src="https://user-images.githubusercontent.com/545047/190171475-b416f99e-2831-4786-9ba3-a7ff4d95b0d3.svg" />
+</p>
+
+<p align="center" width="100%">
+  
+  <a href="https://github.com/cosmology-tech/chain-registry/actions/workflows/run-tests.yml">
+    <img height="20" src="https://github.com/cosmology-tech/chain-registry/actions/workflows/run-tests.yml/badge.svg" />
+  </a>
+   <a href="https://github.com/cosmology-tech/chain-registry/blob/main/LICENSE"><img height="20" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+   <a href="https://www.npmjs.com/package/chain-registry"><img height="20" src="https://img.shields.io/npm/dt/chain-registry"></a>
+   <a href="https://www.npmjs.com/package/chain-registry"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=packages%2Fchain-registry%2Fpackage.json"></a>
+</p>
+
+The npm package for the Official Cosmos [chain registry](https://github.com/cosmos/chain-registry)
+
+```
+npm install chain-registry
+```
+
+A unified store of chains info, assets, asset lists, and IBC channels for the Cosmos ecosystem. Get everything from token symbols, logos, and IBC denominations for all assets you want to support in your application.
+
+
+## Features 
+
+- 🌐 **Dynamic Loading via [ChainRegistryClient](https://github.com/cosmology-tech/chain-registry/tree/main/packages/client)** - Utilize the client for dynamic data fetching.
+- 📦 **Tree-Shaking Support** - Optimize your bundles and [include only what you need](#tree-shaking-imports-from-chain-registry).
+- 🔌 **Module Compatibility** - Supports both CommonJS and ES Module formats, ensuring compatibility with various JavaScript environments and tools.
+- 🛠 **Utilities for Working with Assets and Chains** - [Comprehensive tools](https://github.com/cosmology-tech/chain-registry/tree/main/packages/client) to manage assets and chains efficiently.
+- 🌎 **Pre-generated Asset Lists with IBC Denominations for All Chains** - Access ready-to-use [asset lists](ttps://github.com/cosmology-tech/chain-registry/tree/main/packages/assets) across all chains.
+- 🔄 **Conversions for Keplr, Cosmostation** - Easily convert data for use with Keplr and Cosmostation wallets.
+
+## Usage
+
+### Using the `chain-registry`
+
+Fetch data from `chain-registry`:
+
+```js
+import { assets, chains, ibc } from 'chain-registry';
+
+const assetList = assets.find(({chain_name})=>chain_name==='osmosis');
+
+console.log(assetList);
+```
+
+will output:
+
+```js
+{
+  '$schema': '../assetlist.schema.json',
+  chain_name: 'osmosis',
+  assets: [
+    {
+      description: 'The native token of Osmosis',
+      denom_units: [Array],
+      base: 'uosmo',
+      name: 'Osmosis',
+      display: 'osmo',
+      symbol: 'OSMO',
+      logo_URIs: [Object],
+      coingecko_id: 'osmosis'
+    },
+    {
+      denom_units: [Array],
+      base: 'uion',
+      name: 'Ion',
+      display: 'ion',
+      symbol: 'ION',
+      logo_URIs: [Object],
+      coingecko_id: 'ion'
+    }
+  ]
+}
+```
+
+### Using the `@chain-registry/client` for dynamic data
+
+Dynamically fetch data:
+
+```js
+import { ChainRegistryClient } from '@chain-registry/client';
+
+// create an instance of ChainRegistryClient by passing in the chain names
+const client = new ChainRegistryClient({
+  chainNames: [
+    'osmosis',
+    'juno',
+    'stargaze'
+  ]
+});
+
+// chain info, assets and ibc data will be downloaded dynamically by invoking fetchUrls method
+await client.fetchUrls();
+// get chain data
+const chain = client.getChain('osmosis');
+// get asset list
+const assetList = client.getChainAssetList('osmosis');
+// get ibc data
+const ibcData = client.getChainIbcData('osmosis');
+// get asset list (including ibc assets)
+const generatedAssetList = client.getGeneratedAssetLists('osmosis');
+```
+
+### Tree-Shaking Imports from `chain-registry`
+
+Tree-shaking is a modern JavaScript feature that allows for smaller bundle sizes by only including the code that is actually used in your project. The `chain-registry` package supports tree-shaking, ensuring that only the specified imports are included in your bundle. Below are examples of how to import different datasets according to your needs.
+
+#### Importing Data from Mainnets, Testnets, and Devnets
+
+You can directly import assets and chain information based on the network type - mainnet, testnet, or devnet. Here’s how you can import data for each network type:
+
+- **Mainnet Chains and Assets**
+```js
+import { assets, chains } from 'chain-registry/mainnet';
+```
+
+- **Testnet Chains and Assets**
+```js
+import { assets, chains } from 'chain-registry/testnet';
+```
+
+- **Devnet Chains and Assets**
+```js
+import { assets, chains } from 'chain-registry/devnet';
+```
+
+#### Importing Specific Data from a Particular Chain
+
+If you are interested in a specific chain, such as Osmosis on the mainnet, you can import data related to that particular chain only:
+
+- **Chains and Assets from a Specific Mainnet Chain (e.g., Osmosis)**
+```js
+import { assets, chain } from 'chain-registry/mainnet/osmosis';
+```
+
+- **Only Assets from a Specific Mainnet Chain (e.g., Osmosis)**
+```js
+import assets from 'chain-registry/mainnet/osmosis/assets';
+```
+
+- **Only Chain Information from a Specific Mainnet Chain (e.g., Osmosis)**
+```js
+import chain from 'chain-registry/mainnet/osmosis/chain';
+```
+
+#### Importing Data from Non-Cosmos Chains
+
+To include data from non-Cosmos chains, use the following import:
+
+- **Assets from Non-Cosmos Chains**
+```js
+import { assets } from 'chain-registry/noncosmos';
+```
+
+## Packages
+
+#### [chain-registry](packages/chain-registry)
+
+An npm module for the Official `chain-registry` for the Cosmos ⚛️
+
+#### [@chain-registry/client](packages/client)
+
+A Client for `chain-registry` that allows you to dynamically fetch data.
+
+#### [@chain-registry/types](packages/types)
+
+Types for `chain-registry`.
+
+#### [@chain-registry/keplr](packages/keplr)
+
+Keplr integration for the chain-registry returning keplr's `ChainInfo` type from `@chain-registry/types` `Chain` type.
+
+#### [@chain-registry/assets](packages/assets)
+
+Asset lists for the Cosmos ⚛️
+
+#### [@chain-registry/osmosis](packages/osmosis)
+
+Chain Registry info for Osmosis, including asset lists.
+
+#### [@chain-registry/juno](packages/juno)
+
+Chain Registry info for Juno, including asset lists.
+
+#### [@chain-registry/utils](packages/utils)
+
+Utility functions for `chain-registry`.
+
+## Developing
+
+Checkout the repository run yarn to initialize the workspace:
+
+```sh
+# Clone the repo.
+git clone https://github.com/cosmology-tech/chain-registry
+yarn
+```
+### Building
+
+```sh
+yarn build
+```
+
+### Publishing
+
+First, `cd` into the root folder of the project:
+
+```sh
+cd /your/path/to/chain-registry
+```
+
+Second, update the git submodules:
+
+```sh
+git submodule update --remote
+```
+
+Third, generate the code:
+
+```sh
+yarn codegen
+```
+
+Finally, commit and publish the code!
+
+```sh
+git commit -am "new registry updates"
+lerna publish
+```
+
+## Related
+
+Checkout these related projects:
+
+* [@cosmology/telescope](https://github.com/cosmology-tech/telescope) Your Frontend Companion for Building with TypeScript with Cosmos SDK Modules.
+* [@cosmwasm/ts-codegen](https://github.com/CosmWasm/ts-codegen) Convert your CosmWasm smart contracts into dev-friendly TypeScript classes.
+* [chain-registry](https://github.com/cosmology-tech/chain-registry) Everything from token symbols, logos, and IBC denominations for all assets you want to support in your application.
+* [cosmos-kit](https://github.com/cosmology-tech/cosmos-kit) Experience the convenience of connecting with a variety of web3 wallets through a single, streamlined interface.
+* [create-cosmos-app](https://github.com/cosmology-tech/create-cosmos-app) Set up a modern Cosmos app by running one command.
+* [interchain-ui](https://github.com/cosmology-tech/interchain-ui) The Interchain Design System, empowering developers with a flexible, easy-to-use UI kit.
+* [starship](https://github.com/cosmology-tech/starship) Unified Testing and Development for the Interchain.
+
+## Credits
+
+🛠 Built by Cosmology — if you like our tools, please consider delegating to [our validator ⚛️](https://cosmology.zone/validator)
+
+
+## Disclaimer
+
+AS DESCRIBED IN THE LICENSES, THE SOFTWARE IS PROVIDED “AS IS”, AT YOUR OWN RISK, AND WITHOUT WARRANTIES OF ANY KIND.
+
+No developer or entity involved in creating this software will be liable for any claims or damages whatsoever associated with your use, inability to use, or your interaction with other users of the code, including any direct, indirect, incidental, special, exemplary, punitive or consequential damages, or loss of profits, cryptocurrencies, tokens, or anything else of value.

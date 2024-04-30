@@ -1,0 +1,29 @@
+import { AssetList } from '@chain-registry/types';
+const info: AssetList = {
+  $schema: '../assetlist.schema.json',
+  chain_name: 'dhealth',
+  assets: [{
+      description: 'The native token of dHealth',
+      denom_units: [{
+          denom: 'udhp',
+          exponent: 0
+        }, {
+          denom: 'dhp',
+          exponent: 6
+        }],
+      base: 'udhp',
+      name: 'Digital Health Point',
+      display: 'dhp',
+      symbol: 'DHP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.svg'
+      },
+      coingecko_id: 'dhealth',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.svg'
+        }]
+    }]
+};
+export default info;
