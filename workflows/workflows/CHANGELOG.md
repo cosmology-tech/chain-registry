@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.31.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/workflows@1.30.5...@chain-registry/workflows@1.31.0) (2024-04-30)
+
+**Note:** Version bump only for package @chain-registry/workflows
+
+
+
+
+
 ## 1.30.5 (2024-04-30)
 
 **Note:** Version bump only for package @chain-registry/workflows
