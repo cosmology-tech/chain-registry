@@ -41,7 +41,7 @@ jobs:
           yarn build
           cd ../../
           cd v2/chain-registry
-          yarn types
+          yarn codegen
           yarn build
           cd ../../
           git add .
