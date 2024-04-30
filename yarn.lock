@@ -4050,10 +4050,10 @@ inquirer@^8.2.4:
     through "^2.3.6"
     wrap-ansi "^6.0.1"
 
-inquirerer@1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/inquirerer/-/inquirerer-1.8.0.tgz#870af4e609048e1883fe293834835294dc053a8f"
-  integrity sha512-KWYtN8wy05+UZOGPLdj2H/e4OVhcKkyyJgDGZ5S+3kihBJuC0hv5vlbPxehHE5/lPIBx+F2kQyQc6FSD53TAhA==
+inquirerer@1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/inquirerer/-/inquirerer-1.9.0.tgz#108071773a28ea5b950271572ac3051f34e0c92e"
+  integrity sha512-/LAn/F70YvRQZWz9r1q1seoO2oRMiSCSK8xKHGlkNebSibx5FppUKZLEjXgkCy1tgccas933q/Y7qNccFxrYkw==
   dependencies:
     chalk "^4.1.0"
     deepmerge "^4.3.1"
