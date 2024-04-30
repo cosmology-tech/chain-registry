@@ -19,11 +19,12 @@
   "scripts": {
     "clean": "lerna run clean",
     "build": "lerna run build",
-    "symlink": "symlink-workspace --logLevel error",
+    "symlink": "symlink-workspace --logLevel info",
     "postinstall": "yarn symlink",
     "codegen": "lerna run codegen --parallel"
   },
   "devDependencies": {
+    "@chain-registry/cli": "^1.31.0",
     "@types/glob": "^8.1.0",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.12.7",
@@ -42,7 +43,7 @@
     "prettier": "^3.0.2",
     "strfy-js": "^2.2.2",
     "strip-ansi": "^6",
-    "symlink-workspace": "^1.1.0",
+    "symlink-workspace": "^1.9.0",
     "ts-jest": "^29.1.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.1.6"

@@ -13,7 +13,7 @@ export interface ChannelInfo {
   connectionId?: string;
 }
 export interface IBCData {
-  schema?: string;
+  $schema?: string;
   chain1: ChainInfo;
   chain2: ChainInfo;
   channels: {

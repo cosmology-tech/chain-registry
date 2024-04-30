@@ -1,5 +1,5 @@
 export interface MemoKeys {
-  schema?: string;
+  $schema?: string;
   memoKeys: {
     key: string;
     description: string;

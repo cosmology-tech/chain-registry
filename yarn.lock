@@ -7001,10 +7001,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-symlink-workspace@^1.1.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/symlink-workspace/-/symlink-workspace-1.5.0.tgz#e63274dc695eafd19a457173c621810040940f19"
-  integrity sha512-qYA3YNVyCZlBbfJ5GoGR8U8YEi0mISJOAzCds5A4PRQyO2VpyNKFVbL7TRerW0ry/IakbjqzkwEJlpTPyIPlHQ==
+symlink-workspace@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/symlink-workspace/-/symlink-workspace-1.9.0.tgz#df4c5ce48bd55e54580e813126c643a86e29e759"
+  integrity sha512-eKSISj/3r5gLU4NCY5Ir16PLPavHYb2s2DMN7wGheaZAMlUGEuq8qUhlmbBMR8J32Yq9PCtcA+yritgHpwUDfw==
   dependencies:
     chalk "4.1.2"
     glob "8.1.0"

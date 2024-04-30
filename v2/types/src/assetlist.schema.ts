@@ -84,7 +84,7 @@ export interface NonIbcTransition {
   provider: string;
 }
 export interface AssetList {
-  schema?: string;
+  $schema?: string;
   chainName: string;
   assets: Asset[];
 }

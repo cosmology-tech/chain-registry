@@ -1,5 +1,5 @@
 export interface Versions {
-  schema?: string;
+  $schema?: string;
   chainName: string;
   versions: {
     name: string;
