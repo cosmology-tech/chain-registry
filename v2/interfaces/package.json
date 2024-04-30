@@ -29,7 +29,7 @@
     "test:watch": "jest --watch"
   },
   "devDependencies": {
-    "@chain-registry/cli": "^1.30.5"
+    "@chain-registry/cli": "^1.30.6"
   },
   "keywords": [
     "chain-registry",
