@@ -1,30 +1,30 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'coolcattestnet',
+  chainName: 'coolcattestnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://app.coolcat.space/',
-  pretty_name: 'CoolCat',
-  chain_id: 'kitten-04',
-  bech32_prefix: 'ccat',
-  key_algos: ['secp256k1'],
+  prettyName: 'CoolCat',
+  chainId: 'kitten-04',
+  bech32Prefix: 'ccat',
+  keyAlgos: ['secp256k1'],
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uccat',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 1,
-        high_gas_price: 2
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0,
+        averageGasPrice: 1,
+        highGasPrice: 2
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uccat'
       }]
   },
-  daemon_name: 'coolcat',
-  node_home: '$HOME/.coolcat',
+  daemonName: 'coolcat',
+  nodeHome: '$HOME/.coolcat',
   slip44: 118,
   codebase: {
 

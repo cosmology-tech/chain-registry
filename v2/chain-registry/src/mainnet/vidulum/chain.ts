@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'vidulum',
+  chainName: 'vidulum',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://vidulum.app/',
-  pretty_name: 'Vidulum',
-  chain_id: 'vidulum-1',
-  bech32_prefix: 'vdl',
-  daemon_name: 'vidulumd',
-  node_home: '$HOME/.vidulum',
-  key_algos: ['secp256k1'],
+  prettyName: 'Vidulum',
+  chainId: 'vidulum-1',
+  bech32Prefix: 'vdl',
+  daemonName: 'vidulumd',
+  nodeHome: '$HOME/.vidulum',
+  keyAlgos: ['secp256k1'],
   slip44: 370,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uvdl',
-        fixed_min_gas_price: 0.0002,
-        low_gas_price: 0.002,
-        average_gas_price: 0.005,
-        high_gas_price: 0.007
+        fixedMinGasPrice: 0.0002,
+        lowGasPrice: 0.002,
+        averageGasPrice: 0.005,
+        highGasPrice: 0.007
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uvdl'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
   },
@@ -93,33 +93,33 @@ const info: Chain = {
     {
       kind: 'ping.pub',
       url: 'https://explorers.vidulum.app/vidulum',
-      tx_page: 'https://explorers.vidulum.app/vidulum/tx/${txHash}'
+      txPage: 'https://explorers.vidulum.app/vidulum/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/vidulum',
-      tx_page: 'https://ping.pub/vidulum/tx/${txHash}'
+      txPage: 'https://ping.pub/vidulum/tx/${txHash}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Vidulum-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Vidulum-Mainnet/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/Vidulum-Mainnet/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/vidulum',
-      tx_page: 'https://atomscan.com/vidulum/transactions/${txHash}',
-      account_page: 'https://atomscan.com/vidulum/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/vidulum/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/vidulum/accounts/${accountAddress}'
     },
     {
       kind: 'Nodine Explorer',
       url: 'https://explorer.co.id/vidulum',
-      tx_page: 'https://explorer.co.id/vidulum/tx/${txHash}'
+      txPage: 'https://explorer.co.id/vidulum/tx/${txHash}'
     },
     {
       kind: 'Decloud Nodes Lab',
       url: 'https://explorer.declab.pro/Vidulum',
-      tx_page: 'https://explorer.declab.pro/Vidulum/tx/${txHash}'
+      txPage: 'https://explorer.declab.pro/Vidulum/tx/${txHash}'
     }
   ],
   images: [{

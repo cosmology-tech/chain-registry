@@ -1,27 +1,27 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'okexchain',
+  chainName: 'okexchain',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'OKExChain',
-  chain_id: 'exchain-66',
-  bech32_prefix: 'ex',
-  daemon_name: 'exchaind',
-  node_home: '$HOME/.exchaind',
+  networkType: 'mainnet',
+  prettyName: 'OKExChain',
+  chainId: 'exchain-66',
+  bech32Prefix: 'ex',
+  daemonName: 'exchaind',
+  nodeHome: '$HOME/.exchaind',
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'wei',
-        low_gas_price: 200000000,
-        average_gas_price: 250000000,
-        high_gas_price: 400000000
+        lowGasPrice: 200000000,
+        averageGasPrice: 250000000,
+        highGasPrice: 400000000
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/okexchain/images/okc.png'
   },
   apis: {
@@ -34,8 +34,8 @@ const info: Chain = {
   explorers: [{
       kind: 'OKLink',
       url: 'https://www.oklink.com/en/okc',
-      tx_page: 'https://www.oklink.com/en/okc/tx/${txHash}',
-      account_page: 'https://www.oklink.com/en/okc/address/${accountAddress}'
+      txPage: 'https://www.oklink.com/en/okc/tx/${txHash}',
+      accountPage: 'https://www.oklink.com/en/okc/address/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/okexchain/images/okc.png'

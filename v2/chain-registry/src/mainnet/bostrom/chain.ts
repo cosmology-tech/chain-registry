@@ -1,32 +1,32 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'bostrom',
+  chainName: 'bostrom',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'bostrom',
-  chain_id: 'bostrom',
-  bech32_prefix: 'bostrom',
-  daemon_name: 'cyber',
-  node_home: '$HOME/.cyber',
+  networkType: 'mainnet',
+  prettyName: 'bostrom',
+  chainId: 'bostrom',
+  bech32Prefix: 'bostrom',
+  daemonName: 'cyber',
+  nodeHome: '$HOME/.cyber',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'boot',
-        low_gas_price: 0,
-        average_gas_price: 0,
-        high_gas_price: 0.01
+        lowGasPrice: 0,
+        averageGasPrice: 0,
+        highGasPrice: 0.01
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'boot'
       }]
   },
   codebase: {
-    cosmwasm_enabled: true
+    cosmwasmEnabled: true
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.svg'
   },
@@ -71,18 +71,18 @@ const info: Chain = {
     {
       kind: 'cyb',
       url: 'https://cyb.ai/',
-      tx_page: 'https://cyb.ai/network/bostrom/tx/${txHash}'
+      txPage: 'https://cyb.ai/network/bostrom/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/bostrom',
-      tx_page: 'https://ping.pub/bostrom/tx/${txHash}'
+      txPage: 'https://ping.pub/bostrom/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/bostrom',
-      tx_page: 'https://atomscan.com/bostrom/transactions/${txHash}',
-      account_page: 'https://atomscan.com/bostrom/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/bostrom/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/bostrom/accounts/${accountAddress}'
     }
   ],
   images: [{

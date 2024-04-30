@@ -1,40 +1,40 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'archway',
+  chainName: 'archway',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://archway.io/',
-  pretty_name: 'Archway',
-  chain_id: 'archway-1',
-  bech32_prefix: 'archway',
-  daemon_name: 'archwayd',
-  node_home: '$HOME/.archway',
-  key_algos: ['secp256k1'],
+  prettyName: 'Archway',
+  chainId: 'archway-1',
+  bech32Prefix: 'archway',
+  daemonName: 'archwayd',
+  nodeHome: '$HOME/.archway',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'aarch',
-        fixed_min_gas_price: 140000000000,
-        low_gas_price: 196000000000,
-        average_gas_price: 225400000000,
-        high_gas_price: 254800000000
+        fixedMinGasPrice: 140000000000,
+        lowGasPrice: 196000000000,
+        averageGasPrice: 225400000000,
+        highGasPrice: 254800000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'aarch'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1209600s'
     }
   },
   codebase: {
-    cosmos_sdk_version: 'v0.45.16',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.33.0'
+    cosmosSdkVersion: 'v0.45.16',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'v0.33.0'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
   },
@@ -359,49 +359,49 @@ const info: Chain = {
     {
       kind: 'Nodes Guru',
       url: 'https://archway.explorers.guru/',
-      tx_page: 'https://archway.explorers.guru/transaction/${txHash}',
-      account_page: 'https://archway.explorers.guru/account/${accountAddress}'
+      txPage: 'https://archway.explorers.guru/transaction/${txHash}',
+      accountPage: 'https://archway.explorers.guru/account/${accountAddress}'
     },
     {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀',
       url: 'https://exp.utsa.tech/archway',
-      tx_page: 'https://exp.utsa.tech/archway/tx/${txHash}',
-      account_page: 'https://exp.utsa.tech/archway/account/${accountAddress}'
+      txPage: 'https://exp.utsa.tech/archway/tx/${txHash}',
+      accountPage: 'https://exp.utsa.tech/archway/account/${accountAddress}'
     },
     {
       kind: 'Mintscan',
       url: 'https://mintscan.io/archway/',
-      tx_page: 'https://mintscan.io/archway/transactions/${txHash}',
-      account_page: 'https://mintscan.io/archway/accounts/${accountAddress}'
+      txPage: 'https://mintscan.io/archway/transactions/${txHash}',
+      accountPage: 'https://mintscan.io/archway/accounts/${accountAddress}'
     },
     {
       kind: 'Silk Nodes',
       url: 'https://explorer.silknodes.io/archway',
-      tx_page: 'https://explorer.silknodes.io/archway/tx/${txHash}',
-      account_page: 'https://explorer.silknodes.io/archway/account/${accountAddress}'
+      txPage: 'https://explorer.silknodes.io/archway/tx/${txHash}',
+      accountPage: 'https://explorer.silknodes.io/archway/account/${accountAddress}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/archway/',
-      tx_page: 'https://explorer.nodestake.top/archway/txs/${txHash}',
-      account_page: 'https://explorer.nodestake.top/archway/account/${accountAddress}'
+      txPage: 'https://explorer.nodestake.top/archway/txs/${txHash}',
+      accountPage: 'https://explorer.nodestake.top/archway/account/${accountAddress}'
     },
     {
       kind: 'Exploreme',
       url: 'https://archway.exploreme.pro/',
-      tx_page: 'https://archway.exploreme.pro/transaction/${txHash}',
-      account_page: 'https://archway.exploreme.pro/account/${accountAddress}'
+      txPage: 'https://archway.exploreme.pro/transaction/${txHash}',
+      accountPage: 'https://archway.exploreme.pro/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/archway',
-      tx_page: 'https://ping.pub/archway/tx/${txHash}'
+      txPage: 'https://ping.pub/archway/tx/${txHash}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/archway',
-      tx_page: 'https://ezstaking.app/archway/txs/${txHash}',
-      account_page: 'https://ezstaking.app/archway/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/archway/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/archway/account/${accountAddress}'
     }
   ],
   images: [{

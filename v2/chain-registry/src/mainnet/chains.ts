@@ -1,4 +1,4 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 
 import * as _8ball from './8ball';
 import * as _acrechain from './acrechain';

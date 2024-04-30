@@ -1,37 +1,37 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'comdex',
+  chainName: 'comdex',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://comdex.one/',
-  pretty_name: 'Comdex',
-  chain_id: 'comdex-1',
-  bech32_prefix: 'comdex',
+  prettyName: 'Comdex',
+  chainId: 'comdex-1',
+  bech32Prefix: 'comdex',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ucmdx',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ucmdx'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.5',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.41.0'
+    cosmosSdkVersion: 'v0.47.5',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'v0.41.0'
   },
-  daemon_name: 'comdex',
-  node_home: '$HOME/.comdex',
-  key_algos: ['secp256k1'],
-  logo_URIs: {
+  daemonName: 'comdex',
+  nodeHome: '$HOME/.comdex',
+  keyAlgos: ['secp256k1'],
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
   },
@@ -195,46 +195,46 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/comdex',
-      tx_page: 'https://ezstaking.app/comdex/txs/${txHash}',
-      account_page: 'https://ezstaking.app/comdex/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/comdex/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/comdex/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/comdex',
-      tx_page: 'https://www.mintscan.io/comdex/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/comdex/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/comdex/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/comdex/accounts/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Comdex-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Comdex-Mainnet/txs/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Comdex-Mainnet/accounts/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Comdex-Mainnet/txs/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Comdex-Mainnet/accounts/${accountAddress}'
     },
     {
       kind: 'aneka',
       url: 'https://comdex.aneka.io/',
-      tx_page: 'https://comdex.aneka.io/txs/${txHash}'
+      txPage: 'https://comdex.aneka.io/txs/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/comdex',
-      tx_page: 'https://ping.pub/comdex/tx/${txHash}'
+      txPage: 'https://ping.pub/comdex/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/comdex',
-      tx_page: 'https://atomscan.com/comdex/transactions/${txHash}',
-      account_page: 'https://atomscan.com/comdex/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/comdex/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/comdex/accounts/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/comdex',
-      account_page: 'https://stakeflow.io/comdex/accounts/${accountAddress}'
+      accountPage: 'https://stakeflow.io/comdex/accounts/${accountAddress}'
     },
     {
       kind: 'ValidatorNode',
       url: 'https://explorer.validatornode.com/comdex',
-      tx_page: 'https://explorer.validatornode.com/comdex/tx/${txHash}'
+      txPage: 'https://explorer.validatornode.com/comdex/tx/${txHash}'
     }
   ],
   images: [{

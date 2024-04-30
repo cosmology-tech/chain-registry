@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'onomy',
+  chainName: 'onomy',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://onomy.io/',
-  pretty_name: 'Onomy',
-  chain_id: 'onomy-mainnet-1',
-  bech32_prefix: 'onomy',
-  daemon_name: 'onomyd',
-  node_home: '$HOME/.onomyd',
-  key_algos: ['secp256k1'],
+  prettyName: 'Onomy',
+  chainId: 'onomy-mainnet-1',
+  bech32Prefix: 'onomy',
+  daemonName: 'onomyd',
+  nodeHome: '$HOME/.onomyd',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'anom',
-        low_gas_price: 0,
-        average_gas_price: 0.03,
-        high_gas_price: 0.06
+        lowGasPrice: 0,
+        averageGasPrice: 0.03,
+        highGasPrice: 0.06
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'anom'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'onomyprotocol/onomy-sdk v0.45.16-onomy-dev'
+    cosmosSdkVersion: 'onomyprotocol/onomy-sdk v0.45.16-onomy-dev'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png'
   },
   apis: {
@@ -51,13 +51,13 @@ const info: Chain = {
   explorers: [{
       kind: 'mintscan',
       url: 'https://www.mintscan.io/onomy-protocol',
-      tx_page: 'https://www.mintscan.io/onomy-protocol/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/onomy-protocol/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/onomy-protocol/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/onomy-protocol/accounts/${accountAddress}'
     }, {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/onomy',
-      tx_page: 'https://ezstaking.app/onomy/txs/${txHash}',
-      account_page: 'https://ezstaking.app/onomy/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/onomy/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/onomy/account/${accountAddress}'
     }],
   keywords: [
     'dex',

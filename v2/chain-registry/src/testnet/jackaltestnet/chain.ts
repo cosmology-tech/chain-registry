@@ -1,21 +1,21 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'jackaltestnet',
-  chain_id: 'canine-1',
+  chainName: 'jackaltestnet',
+  chainId: 'canine-1',
   website: 'https://jackalprotocol.com',
-  pretty_name: 'Jackal',
+  prettyName: 'Jackal',
   status: 'live',
-  network_type: 'testnet',
-  bech32_prefix: 'jkl',
-  daemon_name: 'canined',
-  node_home: '$HOME/.canine',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'jkl',
+  daemonName: 'canined',
+  nodeHome: '$HOME/.canine',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ujkl',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   codebase: {
@@ -47,12 +47,12 @@ const info: Chain = {
   explorers: [{
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Jackal-Testnet',
-      tx_page: 'https://explorer.stavr.tech/Jackal-Testnet/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Jackal-Testnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Jackal-Testnet/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Jackal-Testnet/account/${accountAddress}'
     }, {
       kind: 'ping.pub',
       url: 'https://ping.pub/jackal',
-      tx_page: 'https://ping.pub/jackal/tx/${txHash}'
+      txPage: 'https://ping.pub/jackal/tx/${txHash}'
     }]
 };
 export default info;

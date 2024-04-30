@@ -1,27 +1,27 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'cosmoshubtestnet',
-  chain_id: 'theta-testnet-001',
-  pretty_name: 'Cosmos Hub Public Testnet',
+  chainName: 'cosmoshubtestnet',
+  chainId: 'theta-testnet-001',
+  prettyName: 'Cosmos Hub Public Testnet',
   status: 'live',
-  network_type: 'testnet',
-  bech32_prefix: 'cosmos',
-  daemon_name: 'gaiad',
-  node_home: '$HOME/.gaia',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'cosmos',
+  daemonName: 'gaiad',
+  nodeHome: '$HOME/.gaia',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uatom',
-        fixed_min_gas_price: 0.005,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.03
+        fixedMinGasPrice: 0.005,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.03
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uatom'
       }]
   },
@@ -103,11 +103,11 @@ const info: Chain = {
   explorers: [{
       kind: 'Mintscan',
       url: 'https://testnet.mintscan.io/cosmoshub-testnet',
-      tx_page: 'https://testnet.mintscan.io/cosmoshub-testnet/txs/${txHash}'
+      txPage: 'https://testnet.mintscan.io/cosmoshub-testnet/txs/${txHash}'
     }, {
       kind: 'Big Dipper',
       url: 'https://explorer.theta-testnet.polypore.xyz/',
-      tx_page: 'https://explorer.theta-testnet.polypore.xyz/transactions/${txHash}'
+      txPage: 'https://explorer.theta-testnet.polypore.xyz/transactions/${txHash}'
     }]
 };
 export default info;

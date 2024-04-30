@@ -1,39 +1,39 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'agoric',
+  chainName: 'agoric',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://agoric.com/',
-  pretty_name: 'Agoric',
-  chain_id: 'agoric-3',
-  bech32_prefix: 'agoric',
-  daemon_name: 'agd',
-  node_home: '$HOME/.agoric',
+  prettyName: 'Agoric',
+  chainId: 'agoric-3',
+  bech32Prefix: 'agoric',
+  daemonName: 'agd',
+  nodeHome: '$HOME/.agoric',
   slip44: 564,
-  alternative_slip44s: [118],
+  alternativeSlip44s: [118],
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ubld',
-        low_gas_price: 0.03,
-        average_gas_price: 0.05,
-        high_gas_price: 0.07
+        lowGasPrice: 0.03,
+        averageGasPrice: 0.05,
+        highGasPrice: 0.07
       }, {
         denom: 'uist',
-        low_gas_price: 0.0034,
-        average_gas_price: 0.007,
-        high_gas_price: 0.02
+        lowGasPrice: 0.0034,
+        averageGasPrice: 0.007,
+        highGasPrice: 0.02
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ubld'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/Agoric-logo-color.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/Agoric-logo-color.svg'
   },
@@ -196,25 +196,25 @@ const info: Chain = {
     {
       kind: 'explorers.guru',
       url: 'https://agoric.explorers.guru',
-      tx_page: 'https://agoric.explorers.guru/transaction/${txHash}',
-      account_page: 'https://agoric.explorers.guru/account/${accountAddress}'
+      txPage: 'https://agoric.explorers.guru/transaction/${txHash}',
+      accountPage: 'https://agoric.explorers.guru/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/agoric/',
-      tx_page: 'https://atomscan.com/agoric/transactions/${txHash}',
-      account_page: 'https://atomscan.com/agoric/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/agoric/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/agoric/accounts/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/agoric',
-      account_page: 'https://stakeflow.io/agoric/accounts/${accountAddress}'
+      accountPage: 'https://stakeflow.io/agoric/accounts/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Agoric',
-      tx_page: 'https://explorer.stavr.tech/Agoric/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Agoric/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Agoric/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Agoric/account/${accountAddress}'
     }
   ],
   images: [{

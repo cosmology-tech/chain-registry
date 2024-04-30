@@ -1,36 +1,36 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'quicksilver',
+  chainName: 'quicksilver',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://quicksilver.zone/',
-  pretty_name: 'Quicksilver',
-  chain_id: 'quicksilver-2',
-  daemon_name: 'quicksilverd',
-  node_home: '$HOME/.quicksilverd',
-  bech32_prefix: 'quick',
+  prettyName: 'Quicksilver',
+  chainId: 'quicksilver-2',
+  daemonName: 'quicksilverd',
+  nodeHome: '$HOME/.quicksilverd',
+  bech32Prefix: 'quick',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uqck',
-        fixed_min_gas_price: 0.0001,
-        low_gas_price: 0.0001,
-        average_gas_price: 0.0001,
-        high_gas_price: 0.00025
+        fixedMinGasPrice: 0.0001,
+        lowGasPrice: 0.0001,
+        averageGasPrice: 0.0001,
+        highGasPrice: 0.00025
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uqck'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.46.16',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'notional-labs/wasmd v0.29.0-sdk46.0.20221114145317-d6e67fd50956'
+    cosmosSdkVersion: 'v0.46.16',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'notional-labs/wasmd v0.29.0-sdk46.0.20221114145317-d6e67fd50956'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.svg'
   },
@@ -299,39 +299,39 @@ const info: Chain = {
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/quicksilver',
-      tx_page: 'https://www.mintscan.io/quicksilver/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/quicksilver/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/quicksilver/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/quicksilver/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/quicksilver',
-      tx_page: 'https://ezstaking.app/quicksilver/txs/${txHash}',
-      account_page: 'https://ezstaking.app/quicksilver/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/quicksilver/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/quicksilver/account/${accountAddress}'
     },
     {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀 explorer',
       url: 'https://exp.utsa.tech/quicksilver',
-      tx_page: 'https://exp.utsa.tech/quicksilver/tx/${txHash}'
+      txPage: 'https://exp.utsa.tech/quicksilver/tx/${txHash}'
     },
     {
       kind: '🔥STAVR🔥 explorer',
       url: 'https://explorer.stavr.tech/quicksilver-mainnet',
-      tx_page: 'https://explorer.stavr.tech/quicksilver-mainnet/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/quicksilver-mainnet/tx/${txHash}'
     },
     {
       kind: 'Stake-Take',
       url: 'https://explorer.stake-take.com/quicksilver',
-      tx_page: 'https://explorer.stake-take.com/quicksilver/tx/${txHash}'
+      txPage: 'https://explorer.stake-take.com/quicksilver/tx/${txHash}'
     },
     {
       kind: 'AM Solutions Explorers',
       url: 'https://explorer.theamsolutions.info/quicksilver-main/staking',
-      tx_page: 'https://explorer.theamsolutions.info/quicksilver-main/tx/${txHash}'
+      txPage: 'https://explorer.theamsolutions.info/quicksilver-main/tx/${txHash}'
     },
     {
       kind: 'KonsorTech',
       url: 'https://explorer.konsortech.xyz/quicksilver/staking',
-      tx_page: 'https://explorer.konsortech.xyz/quicksilver/tx/${txHash}'
+      txPage: 'https://explorer.konsortech.xyz/quicksilver/tx/${txHash}'
     }
   ],
   images: [{

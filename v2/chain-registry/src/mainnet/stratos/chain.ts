@@ -1,27 +1,27 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'stratos',
+  chainName: 'stratos',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.thestratos.org',
-  pretty_name: 'Stratos',
-  chain_id: 'stratos-1',
-  bech32_prefix: 'st',
-  daemon_name: 'stchaind',
-  node_home: '$HOME/.stchaind',
-  key_algos: ['ethsecp256k1'],
-  extra_codecs: [],
+  prettyName: 'Stratos',
+  chainId: 'stratos-1',
+  bech32Prefix: 'st',
+  daemonName: 'stchaind',
+  nodeHome: '$HOME/.stchaind',
+  keyAlgos: ['ethsecp256k1'],
+  extraCodecs: [],
   slip44: 606,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'wei'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.svg'
   },
@@ -76,7 +76,7 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       }
     ],
-    "evm-http-jsonrpc": [
+    evmHttpJsonrpc: [
       {
         address: 'https://web3-rpc.thestratos.org',
         provider: 'thestratos.org'
@@ -95,26 +95,26 @@ const info: Chain = {
     {
       kind: 'bigdipper',
       url: 'https://explorer.thestratos.org',
-      tx_page: 'https://explorer.thestratos.org/transactions/${txHash}',
-      account_page: 'https://explorer.thestratos.org/accounts/${accountAddress}'
+      txPage: 'https://explorer.thestratos.org/transactions/${txHash}',
+      accountPage: 'https://explorer.thestratos.org/accounts/${accountAddress}'
     },
     {
       kind: 'blockscout',
       url: 'https://web3-explorer.thestratos.org',
-      tx_page: 'https://web3-explorer.thestratos.org/tx/${txHash}',
-      account_page: 'https://web3-explorer.thestratos.org/address/${accountAddress}'
+      txPage: 'https://web3-explorer.thestratos.org/tx/${txHash}',
+      accountPage: 'https://web3-explorer.thestratos.org/address/${accountAddress}'
     },
     {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.top/stratos',
-      tx_page: 'https://explorer.nodestake.top/stratos/tx/${txHash}',
-      account_page: 'https://explorer.nodestake.top/stratos/accounts/${accountAddress}'
+      txPage: 'https://explorer.nodestake.top/stratos/tx/${txHash}',
+      accountPage: 'https://explorer.nodestake.top/stratos/accounts/${accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/stratos',
-      tx_page: 'https://explorer.tcnetwork.io/stratos/transaction/${txHash}',
-      account_page: 'https://explorer.tcnetwork.io/stratos/account/${accountAddress}'
+      txPage: 'https://explorer.tcnetwork.io/stratos/transaction/${txHash}',
+      accountPage: 'https://explorer.tcnetwork.io/stratos/account/${accountAddress}'
     }
   ],
   images: [{

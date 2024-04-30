@@ -1,20 +1,20 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'gitopiatestnet',
-  chain_id: 'gitopia-janus-testnet-2',
-  pretty_name: 'Gitopia Testnet',
+  chainName: 'gitopiatestnet',
+  chainId: 'gitopia-janus-testnet-2',
+  prettyName: 'Gitopia Testnet',
   status: 'live',
-  network_type: 'testnet',
-  bech32_prefix: 'gitopia',
-  daemon_name: 'gitopiad',
-  node_home: '$HOME/.gitopia',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'gitopia',
+  daemonName: 'gitopiad',
+  nodeHome: '$HOME/.gitopia',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'utlore',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   codebase: {
@@ -37,7 +37,7 @@ const info: Chain = {
   explorers: [{
       kind: 'explorer.humans.zone',
       url: 'https://gitopia.explorers.guru/',
-      tx_page: 'https://gitopia.explorers.guru/transaction/${txHash}'
+      txPage: 'https://gitopia.explorers.guru/transaction/${txHash}'
     }]
 };
 export default info;

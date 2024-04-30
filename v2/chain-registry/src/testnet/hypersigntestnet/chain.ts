@@ -1,19 +1,19 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'hypersigntestnet',
+  chainName: 'hypersigntestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Hypersign Testnet',
-  chain_id: 'prajna-1',
-  bech32_prefix: 'hid',
-  daemon_name: 'hid-noded',
-  node_home: '$HOME/.hid-node',
+  networkType: 'testnet',
+  prettyName: 'Hypersign Testnet',
+  chainId: 'prajna-1',
+  bech32Prefix: 'hid',
+  daemonName: 'hid-noded',
+  nodeHome: '$HOME/.hid-node',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uhid',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   codebase: {
@@ -33,7 +33,7 @@ const info: Chain = {
   explorers: [{
       kind: 'Hypersign',
       url: 'https://explorer.hypersign.id/hypersign-prajna-testnet',
-      tx_page: 'https://explorer.hypersign.id/hypersign-prajna-testnet/tx/${txHash}'
+      txPage: 'https://explorer.hypersign.id/hypersign-prajna-testnet/tx/${txHash}'
     }]
 };
 export default info;

@@ -1,20 +1,20 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'humanstestnet',
-  chain_id: 'testnet-1',
-  pretty_name: 'Humans AI Testnet',
+  chainName: 'humanstestnet',
+  chainId: 'testnet-1',
+  prettyName: 'Humans AI Testnet',
   status: 'live',
-  network_type: 'testnet',
-  bech32_prefix: 'humans',
-  daemon_name: 'humansd',
-  node_home: '$HOME/.humans',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'humans',
+  daemonName: 'humansd',
+  nodeHome: '$HOME/.humans',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uheart',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   codebase: {
@@ -37,7 +37,7 @@ const info: Chain = {
   explorers: [{
       kind: 'explorer.humans.zone',
       url: 'https://explorer.humans.zone/',
-      tx_page: 'https://explorer.humans.zone/humans-testnet/tx/${txHash}'
+      txPage: 'https://explorer.humans.zone/humans-testnet/tx/${txHash}'
     }]
 };
 export default info;

@@ -1,33 +1,33 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'permtestnet',
+  chainName: 'permtestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Perm Testnet',
-  chain_id: 'INVALID-ID-permtestnet-testnet-1',
-  bech32_prefix: 'perm',
-  daemon_name: 'permd',
-  node_home: '$HOME/.perm',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Perm Testnet',
+  chainId: 'INVALID-ID-permtestnet-testnet-1',
+  bech32Prefix: 'perm',
+  daemonName: 'permd',
+  nodeHome: '$HOME/.perm',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uperm',
-        low_gas_price: 0.0025,
-        average_gas_price: 0.0025,
-        high_gas_price: 0.0024
+        lowGasPrice: 0.0025,
+        averageGasPrice: 0.0025,
+        highGasPrice: 0.0024
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uperm'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.45',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.30'
+    cosmosSdkVersion: '0.45',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.30'
   },
   apis: {
     rpc: [{
@@ -46,7 +46,7 @@ const info: Chain = {
   explorers: [{
       kind: 'bigdipper',
       url: 'https://explorer.testnet.perm.ooo/',
-      tx_page: 'https://explorer.testnet.perm.ooo/transactions/${txHash}'
+      txPage: 'https://explorer.testnet.perm.ooo/transactions/${txHash}'
     }]
 };
 export default info;

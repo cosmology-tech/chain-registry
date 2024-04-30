@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'odin',
+  chainName: 'odin',
   status: 'killed',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://odinprotocol.io/',
-  pretty_name: 'Odin Protocol',
-  chain_id: 'odin-mainnet-freya',
-  bech32_prefix: 'odin',
-  daemon_name: 'odind',
-  node_home: '$HOME/.odin',
-  key_algos: ['secp256k1'],
+  prettyName: 'Odin Protocol',
+  chainId: 'odin-mainnet-freya',
+  bech32Prefix: 'odin',
+  daemonName: 'odind',
+  nodeHome: '$HOME/.odin',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'loki',
-        fixed_min_gas_price: 0.0125,
-        low_gas_price: 0.025,
-        average_gas_price: 0.05,
-        high_gas_price: 0.06
+        fixedMinGasPrice: 0.0125,
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.05,
+        highGasPrice: 0.06
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'loki'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg'
   },
@@ -73,15 +73,15 @@ const info: Chain = {
   explorers: [{
       kind: 'odin web',
       url: 'https://mainnet.odinprotocol.io/',
-      tx_page: 'https://mainnet.odinprotocol.io/transactions/${txHash}'
+      txPage: 'https://mainnet.odinprotocol.io/transactions/${txHash}'
     }, {
       kind: 'ping.pub',
       url: 'https://ping.pub/odin',
-      tx_page: 'https://ping.pub/odin/tx/${txHash}'
+      txPage: 'https://ping.pub/odin/tx/${txHash}'
     }],
   images: [{
-      image_sync: {
-        chain_name: 'odin'
+      imageSync: {
+        chainName: 'odin'
       },
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg'

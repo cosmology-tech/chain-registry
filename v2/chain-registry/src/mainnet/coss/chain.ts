@@ -1,51 +1,51 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'coss',
-  chain_id: 'coss-1',
+  chainName: 'coss',
+  chainId: 'coss-1',
   website: 'https://coss.ink/',
-  pretty_name: 'COSS',
+  prettyName: 'COSS',
   status: 'live',
-  network_type: 'mainnet',
-  bech32_prefix: 'coss',
-  daemon_name: 'cossd',
-  node_home: '$HOME/.coss',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  bech32Prefix: 'coss',
+  daemonName: 'cossd',
+  nodeHome: '$HOME/.coss',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
+    feeTokens: [
       {
         denom: 'ucoss',
-        fixed_min_gas_price: 0.025,
-        low_gas_price: 0.025,
-        average_gas_price: 0.03,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.025,
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.03,
+        highGasPrice: 0.04
       },
       {
         denom: 'ucgas',
-        fixed_min_gas_price: 0.025,
-        low_gas_price: 0.025,
-        average_gas_price: 0.03,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.025,
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.03,
+        highGasPrice: 0.04
       },
       {
         denom: 'ucias',
-        fixed_min_gas_price: 0.025,
-        low_gas_price: 0.025,
-        average_gas_price: 0.03,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.025,
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.03,
+        highGasPrice: 0.04
       }
     ]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ucgas'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/coss.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/coss.svg'
   },

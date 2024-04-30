@@ -1,40 +1,40 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'nibiru',
+  chainName: 'nibiru',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://nibiru.fi/',
-  pretty_name: 'Nibiru',
-  chain_id: 'cataclysm-1',
-  bech32_prefix: 'nibi',
-  daemon_name: 'nibid',
-  node_home: '$HOME/.nibid',
-  key_algos: ['secp256k1'],
+  prettyName: 'Nibiru',
+  chainId: 'cataclysm-1',
+  bech32Prefix: 'nibi',
+  daemonName: 'nibid',
+  nodeHome: '$HOME/.nibid',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'unibi',
-        fixed_min_gas_price: 0.025,
-        low_gas_price: 0.025,
-        average_gas_price: 0.05,
-        high_gas_price: 0.1
+        fixedMinGasPrice: 0.025,
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.05,
+        highGasPrice: 0.1
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'unibi'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1814400s'
     }
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.10',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.44.0'
+    cosmosSdkVersion: 'v0.47.10',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'v0.44.0'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.svg'
   },
@@ -80,6 +80,10 @@ const info: Chain = {
       {
         address: 'https://nibiru-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://nibiru-mainnet.rpc.stakevillage.net:443',
+        provider: 'Stake Village'
       }
     ],
     rest: [
@@ -126,6 +130,10 @@ const info: Chain = {
       {
         address: 'https://nibiru-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://nibiru-mainnet.api.stakevillage.net',
+        provider: 'Stake Village'
       }
     ],
     grpc: [
@@ -168,6 +176,10 @@ const info: Chain = {
       {
         address: 'nibiru-grpc.noders.services:35090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'nibiru-mainnet.grpc.stakevillage.net:443',
+        provider: 'Stake Village'
       }
     ]
   },
@@ -175,32 +187,38 @@ const info: Chain = {
     {
       kind: 'Nodes Guru',
       url: 'https://nibiru.explorers.guru/',
-      tx_page: 'https://nibiru.explorers.guru/transaction/${txHash}',
-      account_page: 'https://nibiru.explorers.guru/account/${accountAddress}'
+      txPage: 'https://nibiru.explorers.guru/transaction/${txHash}',
+      accountPage: 'https://nibiru.explorers.guru/account/${accountAddress}'
     },
     {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.org/nibiru',
-      tx_page: 'https://explorer.nodestake.org/nibiru/tx/${txHash}',
-      account_page: 'https://explorer.nodestake.org/nibiru/account/${accountAddress}'
+      txPage: 'https://explorer.nodestake.org/nibiru/tx/${txHash}',
+      accountPage: 'https://explorer.nodestake.org/nibiru/account/${accountAddress}'
     },
     {
       kind: 'LiveRaveN',
       url: 'https://mainnet.explorer.liveraven.net/nibiru',
-      tx_page: 'https://mainnet.explorer.liveraven.net/nibiru/tx/${txHash}',
-      account_page: 'https://mainnet.explorer.liveraven.net/nibiru/account/${accountAddress}'
+      txPage: 'https://mainnet.explorer.liveraven.net/nibiru/tx/${txHash}',
+      accountPage: 'https://mainnet.explorer.liveraven.net/nibiru/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Nibiru-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Nibiru-Mainnet/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Nibiru-Mainnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Nibiru-Mainnet/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Nibiru-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/nibiru/',
-      tx_page: 'https://explorer.nodeshub.online/nibiru/tx/${txHash}',
-      account_page: 'https://explorer.nodeshub.online/nibiru/accounts/${accountAddress}'
+      txPage: 'https://explorer.nodeshub.online/nibiru/tx/${txHash}',
+      accountPage: 'https://explorer.nodeshub.online/nibiru/accounts/${accountAddress}'
+    },
+    {
+      kind: 'Stake Village',
+      url: 'https://exp.stakevillage.net/nibiru-mainnet',
+      txPage: 'https://exp.stakevillage.net/nibiru-mainnet/tx/${txHash}',
+      accountPage: 'https://exp.stakevillage.net/nibiru-mainnet/accounts/${accountAddress}'
     }
   ],
   images: [{

@@ -1,28 +1,28 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'composabletestnet',
+  chainName: 'composabletestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Composable Testnet',
-  chain_id: 'banksy-testnet-3',
-  bech32_prefix: 'centauri',
-  daemon_name: 'centaurid',
-  node_home: '$HOME/.banksy',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Composable Testnet',
+  chainId: 'banksy-testnet-3',
+  bech32Prefix: 'centauri',
+  daemonName: 'centaurid',
+  nodeHome: '$HOME/.banksy',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ppica'
       }]
   },
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ppica',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0,
-        high_gas_price: 0
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0,
+        averageGasPrice: 0,
+        highGasPrice: 0
       }]
   },
   codebase: {
@@ -61,20 +61,20 @@ const info: Chain = {
   explorers: [
     {
       url: 'https://explorer.nodexcapital.com/composable-3',
-      tx_page: 'https://explorer.nodexcapital.com/composable-3/tx/${txHash}'
+      txPage: 'https://explorer.nodexcapital.com/composable-3/tx/${txHash}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Composable-Testnet4',
-      tx_page: 'https://explorer.stavr.tech/Composable-Testnet4/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/Composable-Testnet4/tx/${txHash}'
     },
     {
       url: 'https://explorer.indonode.net/composable-testnet-3',
-      tx_page: 'https://explorer.indonode.net/composable-testnet-3/tx/${txHash}'
+      txPage: 'https://explorer.indonode.net/composable-testnet-3/tx/${txHash}'
     },
     {
       url: 'https://explorer.sr20de.xyz/Composible-3',
-      tx_page: 'https://explorer.sr20de.xyz/Composible-3/tx/${txHash}'
+      txPage: 'https://explorer.sr20de.xyz/Composible-3/tx/${txHash}'
     }
   ]
 };

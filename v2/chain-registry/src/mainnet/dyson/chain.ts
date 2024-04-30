@@ -1,33 +1,33 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'dyson',
+  chainName: 'dyson',
   website: 'https://dysonprotocol.com/',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'Dyson Protocol',
-  chain_id: 'dyson-mainnet-01',
-  bech32_prefix: 'dys',
-  node_home: '$HOME/.dyson',
-  daemon_name: 'dysond',
+  networkType: 'mainnet',
+  prettyName: 'Dyson Protocol',
+  chainId: 'dyson-mainnet-01',
+  bech32Prefix: 'dys',
+  nodeHome: '$HOME/.dyson',
+  daemonName: 'dysond',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'dys',
-        low_gas_price: 0.0001,
-        average_gas_price: 0.0002,
-        high_gas_price: 0.0003
+        lowGasPrice: 0.0001,
+        averageGasPrice: 0.0002,
+        highGasPrice: 0.0003
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'dys'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dyson.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dyson.svg'
   },
@@ -57,8 +57,8 @@ const info: Chain = {
   explorers: [{
       kind: 'dysonprotocol',
       url: 'https://explorer.dys.dysonprotocol.com/dyson/',
-      tx_page: 'https://explorer.dys.dysonprotocol.com/dyson/tx/${txHash}',
-      account_page: 'https://explorer.dys.dysonprotocol.com/dyson/account/${accountAddress}'
+      txPage: 'https://explorer.dys.dysonprotocol.com/dyson/tx/${txHash}',
+      accountPage: 'https://explorer.dys.dysonprotocol.com/dyson/account/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dyson.png',

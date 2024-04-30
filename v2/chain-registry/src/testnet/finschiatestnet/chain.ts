@@ -1,38 +1,38 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'finschiatestnet',
-  chain_id: 'ebony-2',
+  chainName: 'finschiatestnet',
+  chainId: 'ebony-2',
   website: 'https://www.finschia.io/',
-  pretty_name: 'Ebony',
+  prettyName: 'Ebony',
   status: 'live',
-  network_type: 'testnet',
-  bech32_prefix: 'tlink',
-  daemon_name: 'fnsad',
-  node_home: '$HOME/.finschia',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'tlink',
+  daemonName: 'fnsad',
+  nodeHome: '$HOME/.finschia',
+  keyAlgos: ['secp256k1'],
   slip44: 438,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'tcony',
-        fixed_min_gas_price: 0.015,
-        low_gas_price: 0.015,
-        average_gas_price: 0.015,
-        high_gas_price: 0.015
+        fixedMinGasPrice: 0.015,
+        lowGasPrice: 0.015,
+        averageGasPrice: 0.015,
+        highGasPrice: 0.015
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'tcony'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '86400s'
     }
   },
   codebase: {
-    cosmos_sdk_version: 'github.com/Finschia/finschia-sdk@v0.48.1',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'github.com/Finschia/wasmd@v0.2.0'
+    cosmosSdkVersion: 'github.com/Finschia/finschia-sdk@v0.48.1',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'github.com/Finschia/wasmd@v0.2.0'
   },
   apis: {
     rpc: [{
@@ -48,14 +48,14 @@ const info: Chain = {
   explorers: [{
       kind: 'mintscan',
       url: 'https://www.mintscan.io/finschia-testnet',
-      tx_page: 'https://www.mintscan.io/finschia-testnet/tx/${txHash}',
-      account_page: 'https://www.mintscan.io/finschia-testnet/address/${accountAddress}'
+      txPage: 'https://www.mintscan.io/finschia-testnet/tx/${txHash}',
+      accountPage: 'https://www.mintscan.io/finschia-testnet/address/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.svg'
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.svg'
   }

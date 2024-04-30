@@ -1,36 +1,36 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'haqq',
+  chainName: 'haqq',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://haqq.network/',
-  pretty_name: 'Haqq Network',
-  chain_id: 'haqq_11235-1',
-  bech32_prefix: 'haqq',
-  node_home: '$HOME/.haqqd',
-  daemon_name: 'haqqd',
-  key_algos: ['ethsecp256k1'],
-  extra_codecs: ['ethermint'],
+  prettyName: 'Haqq Network',
+  chainId: 'haqq_11235-1',
+  bech32Prefix: 'haqq',
+  nodeHome: '$HOME/.haqqd',
+  daemonName: 'haqqd',
+  keyAlgos: ['ethsecp256k1'],
+  extraCodecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'aISLM',
-        fixed_min_gas_price: 250000000,
-        low_gas_price: 20000000000,
-        average_gas_price: 25000000000,
-        high_gas_price: 40000000000
+        fixedMinGasPrice: 250000000,
+        lowGasPrice: 20000000000,
+        averageGasPrice: 25000000000,
+        highGasPrice: 40000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'aISLM'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'evmos/cosmos-sdk v0.47.5-evmos'
+    cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.5-evmos'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/haqq.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/haqq.svg'
   },
@@ -149,7 +149,7 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       }
     ],
-    "evm-http-jsonrpc": [
+    evmHttpJsonrpc: [
       {
         address: 'https://rpc.eth.haqq.network',
         provider: 'Haqq'
@@ -188,32 +188,32 @@ const info: Chain = {
     {
       kind: 'blockscout',
       url: 'https://explorer.haqq.network',
-      tx_page: 'https://explorer.haqq.network/tx/${txHash}'
+      txPage: 'https://explorer.haqq.network/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/haqq',
-      tx_page: 'https://ping.pub/haqq/tx/${txHash}'
+      txPage: 'https://ping.pub/haqq/tx/${txHash}'
     },
     {
       kind: 'explorers.guru',
       url: 'https://haqq.explorers.guru',
-      tx_page: 'https://haqq.explorers.guru/transaction/${txHash}'
+      txPage: 'https://haqq.explorers.guru/transaction/${txHash}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/haqq',
-      tx_page: 'https://explorer.nodestake.top/haqq/tx/${txHash}'
+      txPage: 'https://explorer.nodestake.top/haqq/tx/${txHash}'
     },
     {
       kind: 'KonsorTech Explorer',
       url: 'https://explorer.konsortech.xyz/haqq',
-      tx_page: 'https://explorer.konsortech.xyz/haqq/tx/${txHash}'
+      txPage: 'https://explorer.konsortech.xyz/haqq/tx/${txHash}'
     },
     {
       kind: 'Palamar Explorer',
       url: 'https://explorer.palamar.io/haqq',
-      tx_page: 'https://explorer.palamar.io/haqq/tx/${txHash}'
+      txPage: 'https://explorer.palamar.io/haqq/tx/${txHash}'
     }
   ],
   images: [{

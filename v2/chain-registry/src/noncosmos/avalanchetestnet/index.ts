@@ -1,3 +1,3 @@
-import _assets from './assets';
+import _assetList from './asset-list';
 
-export const assets = _assets;
+export const assetList = _assetList;

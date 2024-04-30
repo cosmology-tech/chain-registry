@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'jackal',
-  chain_id: 'jackal-1',
+  chainName: 'jackal',
+  chainId: 'jackal-1',
   website: 'https://jackalprotocol.com',
-  pretty_name: 'Jackal',
+  prettyName: 'Jackal',
   status: 'live',
-  network_type: 'mainnet',
-  bech32_prefix: 'jkl',
-  daemon_name: 'canined',
-  node_home: '$HOME/.canine',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  bech32Prefix: 'jkl',
+  daemonName: 'canined',
+  nodeHome: '$HOME/.canine',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ujkl',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.002,
-        average_gas_price: 0.002,
-        high_gas_price: 0.02
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.002,
+        averageGasPrice: 0.002,
+        highGasPrice: 0.02
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ujkl'
       }]
   },
   codebase: {
-    cosmwasm_enabled: true
+    cosmwasmEnabled: true
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg'
   },
@@ -237,37 +237,37 @@ const info: Chain = {
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/jackal',
-      tx_page: 'https://ping.pub/jackal/tx/${txHash}'
+      txPage: 'https://ping.pub/jackal/tx/${txHash}'
     },
     {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.top/jackal',
-      tx_page: 'https://explorer.nodestake.top/jackal/tx/${txHash}'
+      txPage: 'https://explorer.nodestake.top/jackal/tx/${txHash}'
     },
     {
       kind: 'BccNodes',
       url: 'https://explorer.bccnodes.com/jackal',
-      tx_page: 'https://explorer.bccnodes.com/jackal/tx/${txHash}'
+      txPage: 'https://explorer.bccnodes.com/jackal/tx/${txHash}'
     },
     {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀',
       url: 'https://exp.utsa.tech/jackal',
-      tx_page: 'https://exp.utsa.tech/jackal/tx/${txHash}'
+      txPage: 'https://exp.utsa.tech/jackal/tx/${txHash}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/jackal',
-      tx_page: 'https://explorer.stavr.tech/jackal/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/jackal/tx/${txHash}'
     },
     {
       kind: 'Nodeist Explorer',
       url: 'https://exp.nodeist.net/jackal',
-      tx_page: 'https://exp.nodeist.net/jackal/tx/${txHash}'
+      txPage: 'https://exp.nodeist.net/jackal/tx/${txHash}'
     },
     {
       kind: 'Big Dipper',
       url: 'https://bigdipper.live/jackal',
-      tx_page: 'https://bigdipper.live/jackal/transactions/${txHash}'
+      txPage: 'https://bigdipper.live/jackal/transactions/${txHash}'
     }
   ],
   images: [{

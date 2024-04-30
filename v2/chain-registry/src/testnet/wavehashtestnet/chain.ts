@@ -1,33 +1,33 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'wavehashtestnet',
+  chainName: 'wavehashtestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'wavehash Testnet',
-  chain_id: 'INVALID-ID-wavehashtestnet-testnet-1',
-  bech32_prefix: 'wavehash',
-  daemon_name: 'wavehashd',
-  node_home: '$HOME/.wavehash',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'wavehash Testnet',
+  chainId: 'INVALID-ID-wavehashtestnet-testnet-1',
+  bech32Prefix: 'wavehash',
+  daemonName: 'wavehashd',
+  nodeHome: '$HOME/.wavehash',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uwahax',
-        low_gas_price: 0.0025,
-        average_gas_price: 0.0025,
-        high_gas_price: 0.0024
+        lowGasPrice: 0.0025,
+        averageGasPrice: 0.0025,
+        highGasPrice: 0.0024
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uwahax'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.45',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.30'
+    cosmosSdkVersion: '0.45',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.30'
   },
   apis: {
     rpc: [{
@@ -46,7 +46,7 @@ const info: Chain = {
   explorers: [{
       kind: 'atomscan',
       url: 'https://atomscan.com/directory/testnet/wavehashtestnet',
-      tx_page: 'https://atomscan.com/directory/testnet/wavehashtestnet/transactions/${txHash}'
+      txPage: 'https://atomscan.com/directory/testnet/wavehashtestnet/transactions/${txHash}'
     }]
 };
 export default info;

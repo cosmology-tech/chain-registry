@@ -1,27 +1,27 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'uniontestnet',
+  chainName: 'uniontestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Union',
-  chain_id: 'union-testnet-6',
-  bech32_prefix: 'union',
-  daemon_name: 'uniond',
-  node_home: '$HOME/.uniond',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Union',
+  chainId: 'union-testnet-6',
+  bech32Prefix: 'union',
+  daemonName: 'uniond',
+  nodeHome: '$HOME/.uniond',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'muno',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.0025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.0025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'muno'
       }]
   },
@@ -81,19 +81,19 @@ const info: Chain = {
       }
     ]
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/uniontestnet/images/union.png'
   },
   explorers: [{
       kind: 'ping.pub',
       url: 'https://testnet.bonlulu.uno/union',
-      tx_page: 'https://testnet.bonlulu.uno/union/tx/${txHash}',
-      account_page: 'https://testnet.bonlulu.uno/union/account/${accountAddress}'
+      txPage: 'https://testnet.bonlulu.uno/union/tx/${txHash}',
+      accountPage: 'https://testnet.bonlulu.uno/union/account/${accountAddress}'
     }, {
       kind: 'explorers.guru',
       url: 'https://testnet.union.explorers.guru',
-      tx_page: 'https://testnet.union.explorers.guru/transaction/${txHash}',
-      account_page: 'https://testnet.union.explorers.guru/account/${accountAddress}'
+      txPage: 'https://testnet.union.explorers.guru/transaction/${txHash}',
+      accountPage: 'https://testnet.union.explorers.guru/account/${accountAddress}'
     }],
   keywords: ['testnet'],
   images: [{

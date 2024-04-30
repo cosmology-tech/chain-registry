@@ -1,19 +1,19 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'mythos',
+  chainName: 'mythos',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'Mythos',
-  chain_id: 'mythos_7001-1',
-  bech32_prefix: 'mythos',
-  daemon_name: 'mythosd',
-  node_home: '$HOME/.mythosd',
-  key_algos: ['ethsecp256k1'],
-  extra_codecs: ['ethermint'],
+  networkType: 'mainnet',
+  prettyName: 'Mythos',
+  chainId: 'mythos_7001-1',
+  bech32Prefix: 'mythos',
+  daemonName: 'mythosd',
+  nodeHome: '$HOME/.mythosd',
+  keyAlgos: ['ethsecp256k1'],
+  extraCodecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'aMYT'
       }]
   },
@@ -30,10 +30,10 @@ const info: Chain = {
         address: 'mythos-grpc.provable.dev:443',
         provider: 'laurel.provable'
       }],
-    "evm-http-jsonrpc": []
+    evmHttpJsonrpc: []
   },
   explorers: [],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mythos/images/mythos.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mythos/images/mythos.svg'
   },

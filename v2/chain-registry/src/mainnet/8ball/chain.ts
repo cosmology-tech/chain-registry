@@ -1,36 +1,36 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: '8ball',
+  chainName: '8ball',
   status: 'live',
   website: 'https://8ball.info/',
-  network_type: 'mainnet',
-  pretty_name: '8ball',
-  chain_id: 'eightball-1',
-  bech32_prefix: '8ball',
-  daemon_name: '8ball',
-  node_home: '$HOME/.8ball',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  prettyName: '8ball',
+  chainId: 'eightball-1',
+  bech32Prefix: '8ball',
+  daemonName: '8ball',
+  nodeHome: '$HOME/.8ball',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uebl',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uebl'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46.7',
-    cosmwasm_enabled: true
+    cosmosSdkVersion: '0.46.7',
+    cosmwasmEnabled: true
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg'
   },
@@ -67,32 +67,32 @@ const info: Chain = {
   explorers: [
     {
       url: 'https://explorer.8ball.info/',
-      tx_page: 'https://explorer.8ball.info/8ball/tx/${txHash}'
+      txPage: 'https://explorer.8ball.info/8ball/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/8ball',
-      tx_page: 'https://ping.pub/8ball/tx/${txHash}'
+      txPage: 'https://ping.pub/8ball/tx/${txHash}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/8ball/',
-      tx_page: 'https://explorer.nodestake.top/8ball/tx/${txHash}'
+      txPage: 'https://explorer.nodestake.top/8ball/tx/${txHash}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/8ball',
-      tx_page: 'https://explorer.tcnetwork.io/8ball/transaction/${txHash}'
+      txPage: 'https://explorer.tcnetwork.io/8ball/transaction/${txHash}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.co.id/8ball',
-      tx_page: 'https://explorer.co.id/8ball/tx/${txHash}'
+      txPage: 'https://explorer.co.id/8ball/tx/${txHash}'
     },
     {
       kind: 'NODEXPLORER',
       url: 'https://explorer.nodexcapital.com/8ball',
-      tx_page: 'https://explorer.nodexcapital.com/8ball/tx/${txHash}'
+      txPage: 'https://explorer.nodexcapital.com/8ball/tx/${txHash}'
     }
   ],
   images: [{

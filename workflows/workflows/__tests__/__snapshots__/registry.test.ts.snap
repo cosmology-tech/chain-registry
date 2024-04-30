@@ -2,8 +2,8 @@
 
 exports[`registry 1`] = `
 {
-  "assetLists": 290,
-  "chains": 263,
+  "assetLists": 291,
+  "chains": 264,
   "ibcData": 616,
   "memoKeys": 1,
   "versions": 2,

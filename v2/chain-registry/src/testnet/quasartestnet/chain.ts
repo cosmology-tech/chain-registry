@@ -1,36 +1,36 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'quasartestnet',
+  chainName: 'quasartestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Quasar Testnet',
-  chain_id: 'quasar-test-1',
-  bech32_prefix: 'quasar',
-  daemon_name: 'quasarnoded',
-  node_home: '$HOME/.quasarnoded',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Quasar Testnet',
+  chainId: 'quasar-test-1',
+  bech32Prefix: 'quasar',
+  daemonName: 'quasarnoded',
+  nodeHome: '$HOME/.quasarnoded',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uqsr',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.0025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.0025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uqsr'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.45.16',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.31'
+    cosmosSdkVersion: '0.45.16',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.31'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.svg'
   },

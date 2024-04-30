@@ -1,27 +1,27 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'idep',
+  chainName: 'idep',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.idep.network/',
-  pretty_name: 'IDEP',
-  chain_id: 'Antora',
-  bech32_prefix: 'idep',
-  daemon_name: 'idep',
-  node_home: '$HOME/.ion',
-  key_algos: ['secp256k1'],
+  prettyName: 'IDEP',
+  chainId: 'Antora',
+  bech32Prefix: 'idep',
+  daemonName: 'idep',
+  nodeHome: '$HOME/.ion',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'idep',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.svg'
   },
@@ -37,18 +37,18 @@ const info: Chain = {
     {
       kind: 'chadscan',
       url: 'https://chadscan.com',
-      tx_page: 'https://chadscan.com/transactions/${txHash}'
+      txPage: 'https://chadscan.com/transactions/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/idep',
-      tx_page: 'https://atomscan.com/idep/transactions/${txHash}',
-      account_page: 'https://atomscan.com/idep/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/idep/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/idep/accounts/${accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/idep',
-      tx_page: 'https://explorer.tcnetwork.io/idep/transaction/${txHash}'
+      txPage: 'https://explorer.tcnetwork.io/idep/transaction/${txHash}'
     }
   ],
   images: [{

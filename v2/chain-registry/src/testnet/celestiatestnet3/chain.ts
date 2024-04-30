@@ -1,23 +1,23 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'celestiatestnet3',
-  chain_id: 'mocha-4',
-  pretty_name: 'Mocha Testnet',
+  chainName: 'celestiatestnet3',
+  chainId: 'mocha-4',
+  prettyName: 'Mocha Testnet',
   status: 'live',
-  network_type: 'testnet',
-  bech32_prefix: 'celestia',
-  daemon_name: 'celestia-appd',
-  node_home: '$HOME/.celestia-app',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'celestia',
+  daemonName: 'celestia-appd',
+  nodeHome: '$HOME/.celestia-app',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'utia',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.01,
-        average_gas_price: 0.02,
-        high_gas_price: 0.1
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.02,
+        highGasPrice: 0.1
       }]
   },
   codebase: {
@@ -78,12 +78,12 @@ const info: Chain = {
   explorers: [{
       kind: 'Mintscan',
       url: 'https://testnet.mintscan.io/celestia-testnet',
-      tx_page: 'https://testnet.mintscan.io/celestia-testnet/txs/${txHash}'
+      txPage: 'https://testnet.mintscan.io/celestia-testnet/txs/${txHash}'
     }, {
       kind: '🚀ITRocket🚀',
       url: 'https://testnet.itrocket.net/celestia',
-      tx_page: 'https://testnet.itrocket.net/celestia/tx/${txHash}',
-      account_page: 'https://testnet.itrocket.net/celestia/account/${accountAddress}'
+      txPage: 'https://testnet.itrocket.net/celestia/tx/${txHash}',
+      accountPage: 'https://testnet.itrocket.net/celestia/account/${accountAddress}'
     }]
 };
 export default info;

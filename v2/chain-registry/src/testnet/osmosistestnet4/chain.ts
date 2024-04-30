@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'osmosistestnet4',
+  chainName: 'osmosistestnet4',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Osmosis Testnet',
-  chain_id: 'osmo-test-4',
-  bech32_prefix: 'osmo',
-  daemon_name: 'osmosisd',
-  node_home: '$HOME/.osmosisd',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Osmosis Testnet',
+  chainId: 'osmo-test-4',
+  bech32Prefix: 'osmo',
+  daemonName: 'osmosisd',
+  nodeHome: '$HOME/.osmosisd',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uosmo',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uosmo'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.45',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.29'
+    cosmosSdkVersion: '0.45',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.29'
   },
   apis: {
     rpc: [
@@ -64,7 +64,7 @@ const info: Chain = {
         provider: 'Osmosis'
       }]
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
   },
   keywords: ['dex', 'testnet'],

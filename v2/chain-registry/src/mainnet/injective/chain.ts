@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'injective',
+  chainName: 'injective',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://injective.com/',
-  pretty_name: 'Injective',
-  chain_id: 'injective-1',
-  bech32_prefix: 'inj',
-  extra_codecs: ['injective'],
+  prettyName: 'Injective',
+  chainId: 'injective-1',
+  bech32Prefix: 'inj',
+  extraCodecs: ['injective'],
   slip44: 60,
-  daemon_name: 'injectived',
-  node_home: '$HOME/.injectived',
+  daemonName: 'injectived',
+  nodeHome: '$HOME/.injectived',
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'inj',
-        fixed_min_gas_price: 160000000,
-        low_gas_price: 500000000,
-        average_gas_price: 700000000,
-        high_gas_price: 900000000
+        fixedMinGasPrice: 160000000,
+        lowGasPrice: 500000000,
+        averageGasPrice: 700000000,
+        highGasPrice: 900000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'inj'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
   },
@@ -206,35 +206,35 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/injective',
-      tx_page: 'https://ezstaking.app/injective/txs/${txHash}',
-      account_page: 'https://ezstaking.app/injective/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/injective/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/injective/account/${accountAddress}'
     },
     {
       kind: 'injectiveprotocol',
       url: 'https://explorer.injective.network/',
-      tx_page: 'https://explorer.injective.network/transaction/${txHash}'
+      txPage: 'https://explorer.injective.network/transaction/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/injective',
-      tx_page: 'https://ping.pub/injective/tx/${txHash}'
+      txPage: 'https://ping.pub/injective/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/injective',
-      tx_page: 'https://atomscan.com/injective/transactions/${txHash}',
-      account_page: 'https://atomscan.com/injective/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/injective/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/injective/accounts/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/injective',
-      tx_page: 'https://www.mintscan.io/injective/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/injective/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/injective/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/injective/accounts/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/injective',
-      account_page: 'https://stakeflow.io/injective/accounts/${accountAddress}'
+      accountPage: 'https://stakeflow.io/injective/accounts/${accountAddress}'
     }
   ],
   images: [{

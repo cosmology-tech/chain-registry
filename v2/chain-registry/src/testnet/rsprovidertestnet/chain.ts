@@ -1,24 +1,24 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'rsprovidertestnet',
-  chain_id: 'provider',
-  pretty_name: 'Replicated Security Provider Testnet',
+  chainName: 'rsprovidertestnet',
+  chainId: 'provider',
+  prettyName: 'Replicated Security Provider Testnet',
   status: 'live',
-  network_type: 'testnet',
-  bech32_prefix: 'cosmos',
-  daemon_name: 'gaiad',
-  node_home: '$HOME/.gaia',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'cosmos',
+  daemonName: 'gaiad',
+  nodeHome: '$HOME/.gaia',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uatom',
-        fixed_min_gas_price: 0.005
+        fixedMinGasPrice: 0.005
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uatom'
       }]
   },
@@ -84,11 +84,11 @@ const info: Chain = {
   explorers: [{
       kind: 'Mintscan',
       url: 'https://testnet.mintscan.io/ics-testnet-provider',
-      tx_page: 'https://testnet.mintscan.io/ics-testnet-provider/txs/${txHash}'
+      txPage: 'https://testnet.mintscan.io/ics-testnet-provider/txs/${txHash}'
     }, {
       kind: 'Ping.pub',
       url: 'https://explorer.rs-testnet.polypore.xyz/provider',
-      tx_page: 'https://explorer.rs-testnet.polypore.xyz/provider/tx/${txHash}'
+      txPage: 'https://explorer.rs-testnet.polypore.xyz/provider/tx/${txHash}'
     }]
 };
 export default info;

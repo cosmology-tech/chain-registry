@@ -1,15 +1,15 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'mayachain',
+  chainName: 'mayachain',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://mayaprotocol.com/',
-  pretty_name: 'Maya Protocol',
-  chain_id: 'mayachain-mainnet-v1',
-  bech32_prefix: 'maya',
-  daemon_name: 'mayanode',
-  node_home: '$HOME/.mayanode',
+  prettyName: 'Maya Protocol',
+  chainId: 'mayachain-mainnet-v1',
+  bech32Prefix: 'maya',
+  daemonName: 'mayanode',
+  nodeHome: '$HOME/.mayanode',
   slip44: 931,
   codebase: {
 
@@ -27,7 +27,7 @@ const info: Chain = {
   explorers: [{
       kind: 'Maya Protocol explorer',
       url: 'https://www.explorer.mayachain.info',
-      tx_page: 'https://www.explorer.mayachain.info/#/txs/${txHash}'
+      txPage: 'https://www.explorer.mayachain.info/#/txs/${txHash}'
     }]
 };
 export default info;

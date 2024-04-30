@@ -1,33 +1,33 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'irisnet',
+  chainName: 'irisnet',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'IRISnet',
-  chain_id: 'irishub-1',
-  bech32_prefix: 'iaa',
-  daemon_name: 'iris',
-  node_home: '$HOME/.iris',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  prettyName: 'IRISnet',
+  chainId: 'irishub-1',
+  bech32Prefix: 'iaa',
+  daemonName: 'iris',
+  nodeHome: '$HOME/.iris',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uiris',
-        low_gas_price: 0.2,
-        average_gas_price: 0.3,
-        high_gas_price: 0.4
+        lowGasPrice: 0.2,
+        averageGasPrice: 0.3,
+        highGasPrice: 0.4
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uiris'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg'
   },
@@ -118,7 +118,7 @@ const info: Chain = {
         provider: 'KonsorTech'
       }
     ],
-    "evm-http-jsonrpc": [{
+    evmHttpJsonrpc: [{
         address: 'https://iris-evm.publicnode.com',
         provider: 'Allnodes.com ⚡️ Nodes & Staking'
       }, {
@@ -130,45 +130,45 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/irisnet',
-      tx_page: 'https://ezstaking.app/irisnet/txs/${txHash}',
-      account_page: 'https://ezstaking.app/irisnet/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/irisnet/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/irisnet/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/iris',
-      tx_page: 'https://www.mintscan.io/iris/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/iris/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/iris/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/iris/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/iris-network',
-      tx_page: 'https://ping.pub/iris-network/tx/${txHash}'
+      txPage: 'https://ping.pub/iris-network/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/iris-network',
-      tx_page: 'https://atomscan.com/iris-network/transactions/${txHash}',
-      account_page: 'https://atomscan.com/iris-network/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/iris-network/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/iris-network/accounts/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/irisnet',
-      account_page: 'https://stakeflow.io/irisnet/accounts/${accountAddress}'
+      accountPage: 'https://stakeflow.io/irisnet/accounts/${accountAddress}'
     },
     {
       kind: 'Nodeist Explorer',
       url: 'https://exp.nodeist.net/iris',
-      tx_page: 'https://exp.nodeist.net/iris/tx/${txHash}'
+      txPage: 'https://exp.nodeist.net/iris/tx/${txHash}'
     },
     {
       kind: 'L0vd.com ❤️',
       url: 'https://explorers.l0vd.com/iris-mainnet',
-      tx_page: 'https://explorers.l0vd.com/iris-mainnet/tx/${txHash}'
+      txPage: 'https://explorers.l0vd.com/iris-mainnet/tx/${txHash}'
     },
     {
       kind: 'KonsorTech',
       url: 'https://explorer.konsortech.xyz/iris',
-      tx_page: 'https://explorer.konsortech.xyz/iris/tx/${txHash}'
+      txPage: 'https://explorer.konsortech.xyz/iris/tx/${txHash}'
     }
   ],
   images: [{

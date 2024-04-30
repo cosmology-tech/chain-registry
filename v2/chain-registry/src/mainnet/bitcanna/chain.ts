@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'bitcanna',
+  chainName: 'bitcanna',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.bitcanna.io/',
-  pretty_name: 'BitCanna',
-  chain_id: 'bitcanna-1',
-  bech32_prefix: 'bcna',
-  daemon_name: 'bcnad',
-  node_home: '$HOME/.bcna',
-  key_algos: ['secp256k1'],
+  prettyName: 'BitCanna',
+  chainId: 'bitcanna-1',
+  bech32Prefix: 'bcna',
+  daemonName: 'bcnad',
+  nodeHome: '$HOME/.bcna',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ubcna',
-        fixed_min_gas_price: 0.001,
-        low_gas_price: 0.001,
-        average_gas_price: 0.0025,
-        high_gas_price: 0.01
+        fixedMinGasPrice: 0.001,
+        lowGasPrice: 0.001,
+        averageGasPrice: 0.0025,
+        highGasPrice: 0.01
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ubcna'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.9'
+    cosmosSdkVersion: 'v0.47.9'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg'
   },
@@ -345,82 +345,82 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/bitcanna',
-      tx_page: 'https://ezstaking.tools/bitcanna/txs/${txHash}',
-      account_page: 'https://ezstaking.tools/bitcanna/account/${accountAddress}'
+      txPage: 'https://ezstaking.tools/bitcanna/txs/${txHash}',
+      accountPage: 'https://ezstaking.tools/bitcanna/account/${accountAddress}'
     },
     {
       kind: 'forbole',
       url: 'https://explorer.bitcanna.io',
-      tx_page: 'https://explorer.bitcanna.io/transactions/${txHash}',
-      account_page: 'https://explorer.bitcanna.io/accounts/${accountAddress}'
+      txPage: 'https://explorer.bitcanna.io/transactions/${txHash}',
+      accountPage: 'https://explorer.bitcanna.io/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/bitcanna',
-      tx_page: 'https://ping.pub/bitcanna/tx/${txHash}'
+      txPage: 'https://ping.pub/bitcanna/tx/${txHash}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/bitcanna/',
-      tx_page: 'https://www.mintscan.io/bitcanna/txs/${txHash}',
-      account_page: 'https://www.mintscan.io/bitcanna/account/${accountAddress}'
+      txPage: 'https://www.mintscan.io/bitcanna/txs/${txHash}',
+      accountPage: 'https://www.mintscan.io/bitcanna/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥 Explorer',
       url: 'https://explorer.stavr.tech/bitcanna',
-      tx_page: 'https://explorer.stavr.tech/bitcanna/txs/${txHash}',
-      account_page: 'https://explorer.stavr.tech/bitcanna/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/bitcanna/txs/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/bitcanna/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/bitcanna',
-      tx_page: 'https://atomscan.com/bitcanna/transactions/${txHash}'
+      txPage: 'https://atomscan.com/bitcanna/transactions/${txHash}'
     },
     {
       kind: 'ValidatorNode Explorer',
       url: 'https://explorer.validatornode.com/bitcanna',
-      tx_page: 'https://explorer.validatornode.com/bitcanna/tx/${txHash}'
+      txPage: 'https://explorer.validatornode.com/bitcanna/tx/${txHash}'
     },
     {
       kind: 'AlxVoy ⚡ ANODE.TEAM Explorer',
       url: 'https://main.anode.team/bitcanna',
-      tx_page: 'https://main.anode.team/bitcanna/txs/${txHash}',
-      account_page: 'https://main.anode.team/bitcanna/account/${accountAddress}'
+      txPage: 'https://main.anode.team/bitcanna/txs/${txHash}',
+      accountPage: 'https://main.anode.team/bitcanna/account/${accountAddress}'
     },
     {
       kind: 'Moonbys Dashboard',
       url: 'https://explorer.moonbys.com',
-      tx_page: 'https://explorer.moonbys.com/tx/${txHash}',
-      account_page: 'https://explorer.moonbys.com/bitcanna/account/${accountAddress}'
+      txPage: 'https://explorer.moonbys.com/tx/${txHash}',
+      accountPage: 'https://explorer.moonbys.com/bitcanna/account/${accountAddress}'
     },
     {
       kind: 'Indonode',
       url: 'https://explorer.indonode.net/bitcanna',
-      tx_page: 'https://explorer.indonode.net/bitcanna/tx/${txHash}'
+      txPage: 'https://explorer.indonode.net/bitcanna/tx/${txHash}'
     },
     {
       kind: 'Safe Block',
       url: 'https://explorer.safeblock.space/bitcanna',
-      tx_page: 'https://explorer.safeblock.space/bitcanna/tx/${txHash}',
-      account_page: 'https://explorer.safeblock.space/bitcanna/account/${accountAddress}'
+      txPage: 'https://explorer.safeblock.space/bitcanna/tx/${txHash}',
+      accountPage: 'https://explorer.safeblock.space/bitcanna/account/${accountAddress}'
     },
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/bitcanna',
-      tx_page: 'https://explorer.whenmoonwhenlambo.money/bitcanna/tx/${txHash}',
-      account_page: 'https://explorer.whenmoonwhenlambo.money/bitcanna/account/${accountAddress}'
+      txPage: 'https://explorer.whenmoonwhenlambo.money/bitcanna/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/bitcanna/account/${accountAddress}'
     },
     {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/bitcanna/',
-      tx_page: 'https://explorer.nodeshub.online/bitcanna/tx/${txHash}',
-      account_page: 'https://explorer.nodeshub.online/bitcanna/accounts/${accountAddress}'
+      txPage: 'https://explorer.nodeshub.online/bitcanna/tx/${txHash}',
+      accountPage: 'https://explorer.nodeshub.online/bitcanna/accounts/${accountAddress}'
     },
     {
       kind: 'CrypTech Explorer',
       url: 'https://explorers.cryptech.com.ua/bitcanna',
-      tx_page: 'https://explorers.cryptech.com.ua/bitcanna/txs/${txHash}',
-      account_page: 'https://explorers.cryptech.com.ua/bitcanna/account/${accountAddress}'
+      txPage: 'https://explorers.cryptech.com.ua/bitcanna/txs/${txHash}',
+      accountPage: 'https://explorers.cryptech.com.ua/bitcanna/account/${accountAddress}'
     }
   ],
   images: [{

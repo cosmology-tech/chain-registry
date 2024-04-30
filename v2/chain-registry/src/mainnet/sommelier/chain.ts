@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'sommelier',
+  chainName: 'sommelier',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://sommelier.finance/',
-  pretty_name: 'Sommelier',
-  chain_id: 'sommelier-3',
-  bech32_prefix: 'somm',
-  daemon_name: 'sommelier',
-  node_home: '$HOME/.sommelier',
-  key_algos: ['secp256k1'],
+  prettyName: 'Sommelier',
+  chainId: 'sommelier-3',
+  bech32Prefix: 'somm',
+  daemonName: 'sommelier',
+  nodeHome: '$HOME/.sommelier',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'usomm',
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'usomm'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.46.14'
+    cosmosSdkVersion: 'v0.46.14'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg'
   },
@@ -125,37 +125,37 @@ const info: Chain = {
     {
       kind: 'sommscan',
       url: 'https://sommscan.io',
-      tx_page: 'https://sommscan.io'
+      txPage: 'https://sommscan.io'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/sommelier',
-      tx_page: 'https://www.mintscan.io/sommelier/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/sommelier/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/sommelier/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/sommelier/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/sommelier',
-      tx_page: 'https://ezstaking.app/sommelier/txs/${txHash}',
-      account_page: 'https://ezstaking.app/sommelier/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/sommelier/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/sommelier/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Sommelier-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Sommelier-Mainnet/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Sommelier-Mainnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Sommelier-Mainnet/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Sommelier-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'NODEXPLORER',
       url: 'https://explorer.nodexcapital.com/sommelier',
-      tx_page: 'https://explorer.nodexcapital.com/sommelier/tx/${txHash}',
-      account_page: 'https://explorer.nodexcapital.com/sommelier/account/${accountAddress}'
+      txPage: 'https://explorer.nodexcapital.com/sommelier/tx/${txHash}',
+      accountPage: 'https://explorer.nodexcapital.com/sommelier/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/sommelier',
-      tx_page: 'https://atomscan.com/sommelier/transactions/${txHash}',
-      account_page: 'https://atomscan.com/sommelier/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/sommelier/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/sommelier/accounts/${accountAddress}'
     }
   ],
   images: [{

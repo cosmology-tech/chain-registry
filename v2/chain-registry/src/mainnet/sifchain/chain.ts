@@ -1,33 +1,33 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'sifchain',
+  chainName: 'sifchain',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://sifchain.finance/',
-  pretty_name: 'Sifchain',
-  chain_id: 'sifchain-1',
-  bech32_prefix: 'sif',
-  daemon_name: 'sifnoded',
-  node_home: '$HOME/.sifnoded',
+  prettyName: 'Sifchain',
+  chainId: 'sifchain-1',
+  bech32Prefix: 'sif',
+  daemonName: 'sifnoded',
+  nodeHome: '$HOME/.sifnoded',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'rowan',
-        low_gas_price: 1000000000000,
-        average_gas_price: 1500000000000,
-        high_gas_price: 2000000000000
+        lowGasPrice: 1000000000000,
+        averageGasPrice: 1500000000000,
+        highGasPrice: 2000000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'rowan'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg'
   },
@@ -87,19 +87,19 @@ const info: Chain = {
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/sifchain',
-      tx_page: 'https://ping.pub/sifchain/tx/${txHash}'
+      txPage: 'https://ping.pub/sifchain/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/sifchain',
-      tx_page: 'https://atomscan.com/sifchain/transactions/${txHash}',
-      account_page: 'https://atomscan.com/sifchain/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/sifchain/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/sifchain/accounts/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Sifchain',
-      tx_page: 'https://explorer.stavr.tech/Sifchain/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Sifchain/accounts/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Sifchain/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Sifchain/accounts/${accountAddress}'
     }
   ],
   images: [{

@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'beezee',
+  chainName: 'beezee',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'BeeZee',
-  chain_id: 'beezee-1',
-  bech32_prefix: 'bze',
-  daemon_name: 'bzed',
-  node_home: '$HOME/.bze',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  prettyName: 'BeeZee',
+  chainId: 'beezee-1',
+  bech32Prefix: 'bze',
+  daemonName: 'bzed',
+  nodeHome: '$HOME/.bze',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ubze',
-        fixed_min_gas_price: 0.01,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.01,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ubze'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg'
   },
@@ -88,26 +88,26 @@ const info: Chain = {
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/beezee',
-      tx_page: 'https://ping.pub/beezee/tx/${txHash}',
-      account_page: 'https://ping.pub/beezee/account/${accountAddress}'
+      txPage: 'https://ping.pub/beezee/tx/${txHash}',
+      accountPage: 'https://ping.pub/beezee/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://explorer.getbze.com/beezee',
-      tx_page: 'https://explorer.getbze.com/beezee/tx/${txHash}',
-      account_page: 'https://explorer.getbze.com/beezee/account/${accountAddress}'
+      txPage: 'https://explorer.getbze.com/beezee/tx/${txHash}',
+      accountPage: 'https://explorer.getbze.com/beezee/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/beezee',
-      tx_page: 'https://atomscan.com/beezee/transactions/${txHash}',
-      account_page: 'https://atomscan.com/beezee/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/beezee/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/beezee/accounts/${accountAddress}'
     },
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/beezee',
-      tx_page: 'https://explorer.whenmoonwhenlambo.money/beezee/tx/${txHash}',
-      account_page: 'https://explorer.whenmoonwhenlambo.money/beezee/account/${accountAddress}'
+      txPage: 'https://explorer.whenmoonwhenlambo.money/beezee/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/beezee/account/${accountAddress}'
     }
   ],
   images: [{

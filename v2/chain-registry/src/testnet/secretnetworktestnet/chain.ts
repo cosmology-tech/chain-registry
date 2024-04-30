@@ -1,21 +1,21 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'secretnetworktestnet',
+  chainName: 'secretnetworktestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Secret Network',
-  chain_id: 'pulsar-3',
-  pre_fork_chain_name: 'secretnetworktestnet2',
-  bech32_prefix: 'secret',
-  daemon_name: 'secretd',
-  node_home: '$HOME/.secretd',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Secret Network',
+  chainId: 'pulsar-3',
+  preForkChainName: 'secretnetworktestnet2',
+  bech32Prefix: 'secret',
+  daemonName: 'secretd',
+  nodeHome: '$HOME/.secretd',
+  keyAlgos: ['secp256k1'],
   slip44: 529,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uscrt',
-        fixed_min_gas_price: 0.1
+        fixedMinGasPrice: 0.1
       }]
   },
   codebase: {
@@ -36,7 +36,7 @@ const info: Chain = {
         address: 'https://api.pulsar.scrttestnet.com',
         provider: 'SCRT Testnet Committee'
       }],
-    "grpc-web": [{
+    grpcWeb: [{
         address: 'https://grpc.testnet.secretsaturn.net',
         provider: '𝕊ecret 𝕊aturn'
       }, {
@@ -47,7 +47,7 @@ const info: Chain = {
   explorers: [{
       kind: 'ping.pub',
       url: 'https://testnet.ping.pub/secret',
-      tx_page: 'https://testnet.ping.pub/secret/tx/${txHash}'
+      txPage: 'https://testnet.ping.pub/secret/tx/${txHash}'
     }]
 };
 export default info;

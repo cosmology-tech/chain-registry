@@ -1,29 +1,29 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'qwoyntestnet',
+  chainName: 'qwoyntestnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://qwoyn.studio/',
-  pretty_name: 'Qwoyn',
-  chain_id: 'earendel-1',
-  bech32_prefix: 'qwoyn',
-  daemon_name: 'qwoynd',
-  node_home: '$HOME/.qwoynd',
-  key_algos: ['secp256k1'],
+  prettyName: 'Qwoyn',
+  chainId: 'earendel-1',
+  bech32Prefix: 'qwoyn',
+  daemonName: 'qwoynd',
+  nodeHome: '$HOME/.qwoynd',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uqwoyn'
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uqwoyn'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.47.3'
+    cosmosSdkVersion: '0.47.3'
   },
   apis: {
     rpc: [{
@@ -42,10 +42,10 @@ const info: Chain = {
   explorers: [{
       kind: 'pingfork',
       url: 'https://explorer.theamsolutions.info/qwoyn-testnet/',
-      tx_page: 'https://explorer.theamsolutions.info/qwoyn-testnet/tx/${txHash}',
-      account_page: 'https://explorer.theamsolutions.info/qwoyn-testnet/account/${accountAddress}'
+      txPage: 'https://explorer.theamsolutions.info/qwoyn-testnet/tx/${txHash}',
+      accountPage: 'https://explorer.theamsolutions.info/qwoyn-testnet/account/${accountAddress}'
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/qwoyntestnet/images/qwoyn.png'
   },
   images: [{

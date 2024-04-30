@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'impacthubtestnet',
+  chainName: 'impacthubtestnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://www.ixo.world/',
-  pretty_name: 'ixo',
-  chain_id: 'pandora-8',
-  bech32_prefix: 'ixo',
-  daemon_name: 'ixod',
-  node_home: '$HOME/.ixod',
-  key_algos: ['secp256k1', 'ed25519'],
+  prettyName: 'ixo',
+  chainId: 'pandora-8',
+  bech32Prefix: 'ixo',
+  daemonName: 'ixod',
+  nodeHome: '$HOME/.ixod',
+  keyAlgos: ['secp256k1', 'ed25519'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uixo',
-        fixed_min_gas_price: 0.015,
-        low_gas_price: 0.015,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.015,
+        lowGasPrice: 0.015,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uixo'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.svg'
   },
@@ -47,8 +47,8 @@ const info: Chain = {
   explorers: [{
       kind: 'ixoworld',
       url: 'https://blockscan.testnet.ixo.earth/ixo',
-      tx_page: 'https://blockscan.testnet.ixo.earth/ixo/transactions/${txHash}',
-      account_page: 'https://blockscan.testnet.ixo.earth/ixo/accounts/${accountAddress}'
+      txPage: 'https://blockscan.testnet.ixo.earth/ixo/transactions/${txHash}',
+      accountPage: 'https://blockscan.testnet.ixo.earth/ixo/accounts/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png',

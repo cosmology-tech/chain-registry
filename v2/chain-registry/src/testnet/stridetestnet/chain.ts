@@ -1,29 +1,29 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'stridetestnet',
+  chainName: 'stridetestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Stride Testnet',
-  chain_id: 'stride-testnet-1',
-  bech32_prefix: 'stride',
-  daemon_name: 'strided',
-  node_home: '$HOME/.stride',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Stride Testnet',
+  chainId: 'stride-testnet-1',
+  bech32Prefix: 'stride',
+  daemonName: 'strided',
+  nodeHome: '$HOME/.stride',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ustrd',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ustrd'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46'
+    cosmosSdkVersion: '0.46'
   },
   apis: {
     rpc: [{
@@ -39,7 +39,7 @@ const info: Chain = {
   explorers: [{
       kind: 'PingPub',
       url: 'https://testnet.ping.pub/stride',
-      tx_page: 'https://testnet.ping.pub/stride/tx/${txHash}'
+      txPage: 'https://testnet.ping.pub/stride/tx/${txHash}'
     }]
 };
 export default info;

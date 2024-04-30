@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'hedgetestnet',
-  chain_id: 'berberis-1',
-  pretty_name: 'Hedge Testnet',
+  chainName: 'hedgetestnet',
+  chainId: 'berberis-1',
+  prettyName: 'Hedge Testnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://hedgeblock.io',
-  bech32_prefix: 'hedge',
-  daemon_name: 'hedged',
-  node_home: '$HOME/.hedge',
-  key_algos: ['secp256k1'],
+  bech32Prefix: 'hedge',
+  daemonName: 'hedged',
+  nodeHome: '$HOME/.hedge',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uhedge',
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.03
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.03
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uhedge'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/hedgetestnet/images/hedge.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/hedgetestnet/images/hedge.svg'
   },
@@ -45,7 +45,7 @@ const info: Chain = {
   explorers: [{
       kind: 'hedgescan',
       url: 'https://berberis.hedgescan.io',
-      tx_page: 'https://berberis.hedgescan.io/txs/${txHash}'
+      txPage: 'https://berberis.hedgescan.io/txs/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/hedgetestnet/images/hedge.png',

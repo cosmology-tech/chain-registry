@@ -1,33 +1,33 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'furya',
+  chainName: 'furya',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://furya.xyz/',
-  pretty_name: 'furya',
-  chain_id: 'furya-1',
-  daemon_name: 'furyad',
-  node_home: '$HOME/.furyad',
-  bech32_prefix: 'furya',
+  prettyName: 'furya',
+  chainId: 'furya-1',
+  daemonName: 'furyad',
+  nodeHome: '$HOME/.furyad',
+  bech32Prefix: 'furya',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ufury',
-        low_gas_price: 0,
-        average_gas_price: 0.25,
-        high_gas_price: 0.5
+        lowGasPrice: 0,
+        averageGasPrice: 0.25,
+        highGasPrice: 0.5
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ufury'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/chain.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/chain.svg'
   },
@@ -75,13 +75,13 @@ const info: Chain = {
   explorers: [{
       kind: 'Furya Explorer',
       url: 'https://explorer.furya.xyz/',
-      tx_page: 'https://explorer.furya.xyz/furya/tx/${txHash}',
-      account_page: 'https://explorer.furya.xyz/furya/account/${accountAddress}'
+      txPage: 'https://explorer.furya.xyz/furya/tx/${txHash}',
+      accountPage: 'https://explorer.furya.xyz/furya/account/${accountAddress}'
     }, {
       kind: 'Nodeshub Explorer',
       url: 'https://explorer.nodeshub.online/furya',
-      tx_page: 'https://explorer.nodeshub.online/furya/txs/${txHash}',
-      account_page: 'https://explorer.nodeshub.online/furya/account/${accountAddress}'
+      txPage: 'https://explorer.nodeshub.online/furya/txs/${txHash}',
+      accountPage: 'https://explorer.nodeshub.online/furya/account/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/chain.png',

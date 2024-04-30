@@ -1,38 +1,38 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'finschia',
-  chain_id: 'finschia-2',
+  chainName: 'finschia',
+  chainId: 'finschia-2',
   website: 'https://www.finschia.io/',
-  pretty_name: 'Finschia',
+  prettyName: 'Finschia',
   status: 'live',
-  network_type: 'mainnet',
-  bech32_prefix: 'link',
-  daemon_name: 'fnsad',
-  node_home: '$HOME/.finschia',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  bech32Prefix: 'link',
+  daemonName: 'fnsad',
+  nodeHome: '$HOME/.finschia',
+  keyAlgos: ['secp256k1'],
   slip44: 438,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'cony',
-        fixed_min_gas_price: 0.015,
-        low_gas_price: 0.015,
-        average_gas_price: 0.015,
-        high_gas_price: 0.015
+        fixedMinGasPrice: 0.015,
+        lowGasPrice: 0.015,
+        averageGasPrice: 0.015,
+        highGasPrice: 0.015
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'cony'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '604800s'
     }
   },
   codebase: {
-    cosmos_sdk_version: 'github.com/Finschia/finschia-sdk@v0.48.1',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'github.com/Finschia/wasmd@v0.2.0'
+    cosmosSdkVersion: 'github.com/Finschia/finschia-sdk@v0.48.1',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'github.com/Finschia/wasmd@v0.2.0'
   },
   description: 'Finschia (formerly LINE Blockchain Mainnet) aims to build a sustainable token model and create token demand to become a blockchain with 1 billion users.',
   apis: {
@@ -49,19 +49,19 @@ const info: Chain = {
   explorers: [{
       kind: 'mintscan',
       url: 'https://www.mintscan.io/finschia',
-      tx_page: 'https://www.mintscan.io/finschia/tx/${txHash}',
-      account_page: 'https://www.mintscan.io/finschia/address/${accountAddress}'
+      txPage: 'https://www.mintscan.io/finschia/tx/${txHash}',
+      accountPage: 'https://www.mintscan.io/finschia/address/${accountAddress}'
     }, {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/finschia',
-      tx_page: 'https://ezstaking.app/finschia/txs/${txHash}',
-      account_page: 'https://ezstaking.app/finschia/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/finschia/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/finschia/account/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.svg'
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/finschia/images/fnsa.svg'
   }

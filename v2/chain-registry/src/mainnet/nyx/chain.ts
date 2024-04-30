@@ -1,43 +1,43 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'nyx',
+  chainName: 'nyx',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://nymtech.net/',
-  pretty_name: 'Nym',
-  chain_id: 'nyx',
-  bech32_prefix: 'n',
-  daemon_name: 'nyxd',
-  node_home: '$HOME/.nyxd',
+  prettyName: 'Nym',
+  chainId: 'nyx',
+  bech32Prefix: 'n',
+  daemonName: 'nyxd',
+  nodeHome: '$HOME/.nyxd',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'unym',
-        fixed_min_gas_price: 0.025,
-        low_gas_price: 0.025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.025,
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }, {
         denom: 'unyx',
-        fixed_min_gas_price: 0.025,
-        low_gas_price: 0.025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.025,
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'unyx'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1814400s'
     }
   },
   codebase: {
-    cosmwasm_enabled: true
+    cosmwasmEnabled: true
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.svg'
   },
@@ -90,25 +90,25 @@ const info: Chain = {
     {
       kind: 'Nodes Guru explorer',
       url: 'https://nym.explorers.guru/',
-      tx_page: 'https://nym.explorers.guru/transaction/${txHash}',
-      account_page: 'https://nym.explorers.guru/account/${accountAddress}'
+      txPage: 'https://nym.explorers.guru/transaction/${txHash}',
+      accountPage: 'https://nym.explorers.guru/account/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/nyx',
-      tx_page: 'https://ezstaking.app/nyx/txs/${txHash}',
-      account_page: 'https://ezstaking.app/nyx/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/nyx/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/nyx/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/nyx',
-      tx_page: 'https://www.mintscan.io/nyx/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/nyx/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/nyx/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/nyx/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/nyx',
-      tx_page: 'https://ping.pub/nyx/tx/${txHash}'
+      txPage: 'https://ping.pub/nyx/tx/${txHash}'
     }
   ],
   images: [
@@ -116,7 +116,7 @@ const info: Chain = {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.svg',
       theme: {
-        dark_mode: false,
+        darkMode: false,
         circle: true
       }
     },
@@ -124,7 +124,7 @@ const info: Chain = {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_dark.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_dark.svg',
       theme: {
-        dark_mode: true,
+        darkMode: true,
         circle: true
       }
     },

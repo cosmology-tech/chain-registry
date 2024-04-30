@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'passage',
-  chain_id: 'passage-2',
-  pre_fork_chain_name: 'passage1',
-  pretty_name: 'Passage',
+  chainName: 'passage',
+  chainId: 'passage-2',
+  preForkChainName: 'passage1',
+  prettyName: 'Passage',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://passage3d.com/',
-  bech32_prefix: 'pasg',
-  daemon_name: 'passage',
-  node_home: '$HOME/.passage',
-  key_algos: ['secp256k1'],
+  bech32Prefix: 'pasg',
+  daemonName: 'passage',
+  nodeHome: '$HOME/.passage',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'upasg',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.001,
-        average_gas_price: 0.0025,
-        high_gas_price: 0.01
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.001,
+        averageGasPrice: 0.0025,
+        highGasPrice: 0.01
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'upasg'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.45.16',
-    cosmwasm_version: 'v0.31.0'
+    cosmosSdkVersion: 'v0.45.16',
+    cosmwasmVersion: 'v0.31.0'
   },
   apis: {
     rpc: [
@@ -227,35 +227,35 @@ const info: Chain = {
     {
       kind: 'aneka',
       url: 'https://passage.aneka.io',
-      tx_page: 'https://passage.aneka.io/txs/${txHash}',
-      account_page: 'https://passage.aneka.io/accounts/${accountAddress}'
+      txPage: 'https://passage.aneka.io/txs/${txHash}',
+      accountPage: 'https://passage.aneka.io/accounts/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/passage',
-      tx_page: 'https://www.mintscan.io/passage/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/passage/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/passage/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/passage/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/passage',
-      tx_page: 'https://ezstaking.app/passage/txs/${txHash}',
-      account_page: 'https://ezstaking.app/passage/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/passage/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/passage/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/passage',
-      tx_page: 'https://atomscan.com/passage/transactions/${txHash}',
-      account_page: 'https://atomscan.com/passage/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/passage/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/passage/accounts/${accountAddress}'
     },
     {
       kind: 'cosmotracker',
       url: 'https://cosmotracker.com/passage',
-      tx_page: 'https://cosmotracker.com/passage/tx/${txHash}',
-      account_page: 'https://cosmotracker.com/passage/account/${accountAddress}'
+      txPage: 'https://cosmotracker.com/passage/tx/${txHash}',
+      accountPage: 'https://cosmotracker.com/passage/account/${accountAddress}'
     }
   ],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png'
   },
   images: [{

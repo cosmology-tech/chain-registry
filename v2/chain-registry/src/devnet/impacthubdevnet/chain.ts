@@ -1,28 +1,28 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'impacthubdevnet',
+  chainName: 'impacthubdevnet',
   status: 'live',
-  network_type: 'devnet',
+  networkType: 'devnet',
   website: 'https://www.ixo.world/',
-  pretty_name: 'ixo',
-  chain_id: 'devnet-1',
-  bech32_prefix: 'ixo',
-  daemon_name: 'ixod',
-  node_home: '$HOME/.ixod',
-  key_algos: ['secp256k1', 'ed25519'],
+  prettyName: 'ixo',
+  chainId: 'devnet-1',
+  bech32Prefix: 'ixo',
+  daemonName: 'ixod',
+  nodeHome: '$HOME/.ixod',
+  keyAlgos: ['secp256k1', 'ed25519'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uixo',
-        fixed_min_gas_price: 0.015,
-        low_gas_price: 0.015,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.015,
+        lowGasPrice: 0.015,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uixo'
       }]
   },
@@ -43,8 +43,8 @@ const info: Chain = {
   explorers: [{
       kind: 'ixoworld',
       url: 'https://blockscan.devnet.ixo.earth/ixo',
-      tx_page: 'https://blockscan.devnet.ixo.earth/ixo/transactions/${txHash}',
-      account_page: 'https://blockscan.devnet.ixo.earth/ixo/accounts/${accountAddress}'
+      txPage: 'https://blockscan.devnet.ixo.earth/ixo/transactions/${txHash}',
+      accountPage: 'https://blockscan.devnet.ixo.earth/ixo/accounts/${accountAddress}'
     }]
 };
 export default info;

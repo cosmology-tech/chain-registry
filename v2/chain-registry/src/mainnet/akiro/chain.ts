@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'akiro',
+  chainName: 'akiro',
   status: 'killed',
-  network_type: 'mainnet',
-  pretty_name: 'Akiro',
-  chain_id: 'akiro-1',
-  bech32_prefix: 'akiro',
-  daemon_name: 'akirod',
-  node_home: '$HOME/.akiro',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  prettyName: 'Akiro',
+  chainId: 'akiro-1',
+  bech32Prefix: 'akiro',
+  daemonName: 'akirod',
+  nodeHome: '$HOME/.akiro',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uakiro',
-        fixed_min_gas_price: 0.025,
-        low_gas_price: 0.025,
-        average_gas_price: 0.035,
-        high_gas_price: 0.045
+        fixedMinGasPrice: 0.025,
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.035,
+        highGasPrice: 0.045
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uakiro'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.svg'
   },
@@ -58,7 +58,7 @@ const info: Chain = {
   explorers: [{
       kind: 'ping.pub',
       url: 'https://ping.pub/akiro',
-      tx_page: 'https://ping.pub/akiro/tx/${txHash}'
+      txPage: 'https://ping.pub/akiro/tx/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.png',

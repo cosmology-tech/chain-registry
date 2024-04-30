@@ -1,31 +1,31 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'echelon',
+  chainName: 'echelon',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'Echelon',
-  chain_id: 'echelon_3000-3',
-  bech32_prefix: 'echelon',
-  node_home: '$HOME/.echelond',
+  networkType: 'mainnet',
+  prettyName: 'Echelon',
+  chainId: 'echelon_3000-3',
+  bech32Prefix: 'echelon',
+  nodeHome: '$HOME/.echelond',
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'aechelon',
-        low_gas_price: 10000000000,
-        average_gas_price: 25000000000,
-        high_gas_price: 40000000000
+        lowGasPrice: 10000000000,
+        averageGasPrice: 25000000000,
+        highGasPrice: 40000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'aechelon'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/echelon.svg'
   },
@@ -45,7 +45,7 @@ const info: Chain = {
         provider: '⚡ Echelon Joker ⚛ 🃏'
       }],
     grpc: [],
-    "evm-http-jsonrpc": [{
+    evmHttpJsonrpc: [{
         address: 'https://ech01jrpc.mindheartsoul.org',
         provider: 'Mind Heart Soul'
       }, {
@@ -57,23 +57,23 @@ const info: Chain = {
     {
       kind: 'echelon',
       url: 'https://app.ech.network/explorer',
-      tx_page: 'https://app.ech.network/explorer/tx/${txHash}'
+      txPage: 'https://app.ech.network/explorer/tx/${txHash}'
     },
     {
       kind: 'blockscout',
       url: 'https://scout.ech.network',
-      tx_page: 'https://scout.ech.network/tx/${txHash}'
+      txPage: 'https://scout.ech.network/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/echelon',
-      tx_page: 'https://ping.pub/echelon/tx/${txHash}'
+      txPage: 'https://ping.pub/echelon/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/echelon',
-      tx_page: 'https://atomscan.com/echelon/transactions/${txHash}',
-      account_page: 'https://atomscan.com/echelon/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/echelon/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/echelon/accounts/${accountAddress}'
     }
   ],
   images: [{

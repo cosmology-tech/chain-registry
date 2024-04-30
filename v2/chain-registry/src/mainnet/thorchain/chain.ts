@@ -1,15 +1,15 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'thorchain',
+  chainName: 'thorchain',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://thorchain.org/',
-  pretty_name: 'THORChain',
-  chain_id: 'thorchain-mainnet-v1',
-  bech32_prefix: 'thor',
-  daemon_name: 'thord',
-  node_home: '$HOME/.thornode',
+  prettyName: 'THORChain',
+  chainId: 'thorchain-mainnet-v1',
+  bech32Prefix: 'thor',
+  daemonName: 'thord',
+  nodeHome: '$HOME/.thornode',
   slip44: 931,
   codebase: {
 
@@ -21,11 +21,11 @@ const info: Chain = {
   explorers: [{
       kind: 'THORChain explorer',
       url: 'https://thorchain.net',
-      tx_page: 'https://thorchain.net/#/txs/${txHash}'
+      txPage: 'https://thorchain.net/#/txs/${txHash}'
     }, {
       kind: 'viewblock',
       url: 'https://viewblock.io/thorchain',
-      tx_page: 'https://viewblock.io/thorchain/tx/${txHash}'
+      txPage: 'https://viewblock.io/thorchain/tx/${txHash}'
     }]
 };
 export default info;

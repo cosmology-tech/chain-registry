@@ -1,20 +1,20 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'celestiatestnet',
-  chain_id: 'blockspacerace-0',
-  pretty_name: 'Blockspace Race Testnet',
+  chainName: 'celestiatestnet',
+  chainId: 'blockspacerace-0',
+  prettyName: 'Blockspace Race Testnet',
   status: 'live',
-  network_type: 'testnet',
-  bech32_prefix: 'celestia',
-  daemon_name: 'celestia-appd',
-  node_home: '$HOME/.celestia-app',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'celestia',
+  daemonName: 'celestia-appd',
+  nodeHome: '$HOME/.celestia-app',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'utia',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   codebase: {
@@ -33,7 +33,7 @@ const info: Chain = {
   explorers: [{
       kind: 'Mintscan',
       url: 'https://testnet.mintscan.io/celestia-incentivized-testnet',
-      tx_page: 'https://testnet.mintscan.io/celestia-incentivized-testnet/txs/${txHash}'
+      txPage: 'https://testnet.mintscan.io/celestia-incentivized-testnet/txs/${txHash}'
     }]
 };
 export default info;

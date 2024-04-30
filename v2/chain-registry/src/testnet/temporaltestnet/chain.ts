@@ -1,24 +1,24 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'temporaltestnet',
-  chain_id: 'temporal-test-2',
-  pretty_name: 'Temporal Testnet',
+  chainName: 'temporaltestnet',
+  chainId: 'temporal-test-2',
+  prettyName: 'Temporal Testnet',
   status: 'killed',
-  network_type: 'testnet',
-  bech32_prefix: 'temporal',
-  daemon_name: 'temporald',
-  node_home: '$HOME/.temporal',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'temporal',
+  daemonName: 'temporald',
+  nodeHome: '$HOME/.temporal',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'utprl',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'utprl'
       }]
   },
@@ -49,17 +49,17 @@ const info: Chain = {
     {
       kind: 'ping.pub',
       url: 'https://testnet.explorer.thesilverfox.pro/temporal',
-      tx_page: 'https://testnet.explorer.thesilverfox.pro/temporal/tx/${txHash}'
+      txPage: 'https://testnet.explorer.thesilverfox.pro/temporal/tx/${txHash}'
     },
     {
       kind: 'Nodes.Guru',
       url: 'https://testnet.temporal.explorers.guru',
-      tx_page: 'https://testnet.temporal.explorers.guru/transaction/${txHash}'
+      txPage: 'https://testnet.temporal.explorers.guru/transaction/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://testnet.ping.pub/temporal',
-      tx_page: 'https://testnet.ping.pub/temporal/tx/${txHash}'
+      txPage: 'https://testnet.ping.pub/temporal/tx/${txHash}'
     }
   ]
 };

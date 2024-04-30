@@ -1,32 +1,32 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'zetachain',
+  chainName: 'zetachain',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'ZetaChain',
-  chain_id: 'zetachain_7000-1',
-  bech32_prefix: 'zeta',
-  daemon_name: 'zetacored',
-  node_home: '$HOME/.zetacored',
-  key_algos: ['ethsecp256k1'],
-  extra_codecs: ['ethermint'],
+  networkType: 'mainnet',
+  prettyName: 'ZetaChain',
+  chainId: 'zetachain_7000-1',
+  bech32Prefix: 'zeta',
+  daemonName: 'zetacored',
+  nodeHome: '$HOME/.zetacored',
+  keyAlgos: ['ethsecp256k1'],
+  extraCodecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'azeta',
-        low_gas_price: 20000000000,
-        average_gas_price: 25000000000,
-        high_gas_price: 40000000000
+        lowGasPrice: 20000000000,
+        averageGasPrice: 25000000000,
+        highGasPrice: 40000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'azeta'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.46.13'
+    cosmosSdkVersion: 'v0.46.13'
   },
   apis: {
     rpc: [
@@ -104,23 +104,23 @@ const info: Chain = {
     {
       kind: 'ZetaScan',
       url: 'https://explorer.zetachain.com/',
-      tx_page: 'https://explorer.zetachain.com/cc/tx/${txHash}'
+      txPage: 'https://explorer.zetachain.com/cc/tx/${txHash}'
     },
     {
       kind: 'BlockScout',
       url: 'https://zetachain.blockscout.com/',
-      tx_page: 'https://zetachain.blockscout.com/tx/${txHash}'
+      txPage: 'https://zetachain.blockscout.com/tx/${txHash}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.org/zetachain',
-      tx_page: 'https://explorer.nodestake.org/zetachain/tx/${txHash}'
+      txPage: 'https://explorer.nodestake.org/zetachain/tx/${txHash}'
     },
     {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/zetachain/',
-      tx_page: 'https://explorer.nodeshub.online/zetachain/tx/${txHash}',
-      account_page: 'https://explorer.nodeshub.online/zetachain/accounts/${accountAddress}'
+      txPage: 'https://explorer.nodeshub.online/zetachain/tx/${txHash}',
+      accountPage: 'https://explorer.nodeshub.online/zetachain/accounts/${accountAddress}'
     }
   ]
 };

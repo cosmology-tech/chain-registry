@@ -1,26 +1,26 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'octa',
+  chainName: 'octa',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'Octa',
-  chain_id: 'octa',
-  bech32_prefix: 'octa',
-  daemon_name: 'octadaemon',
-  node_home: '$HOME/.octa',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  prettyName: 'Octa',
+  chainId: 'octa',
+  bech32Prefix: 'octa',
+  daemonName: 'octadaemon',
+  nodeHome: '$HOME/.octa',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uocta',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.svg'
   },
@@ -31,7 +31,7 @@ const info: Chain = {
   explorers: [{
       kind: 'Octa explorer',
       url: 'http://explorer.octa-coin.com/',
-      tx_page: 'http://explorer.octa-coin.com/txs/${txHash}'
+      txPage: 'http://explorer.octa-coin.com/txs/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.png',

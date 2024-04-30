@@ -1,43 +1,43 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'axelar',
-  chain_id: 'axelar-dojo-1',
-  pretty_name: 'Axelar',
+  chainName: 'axelar',
+  chainId: 'axelar-dojo-1',
+  prettyName: 'Axelar',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://axelar.network/',
-  bech32_prefix: 'axelar',
-  daemon_name: 'axelard',
-  node_home: '$HOME/.axelar',
-  key_algos: ['secp256k1'],
+  bech32Prefix: 'axelar',
+  daemonName: 'axelard',
+  nodeHome: '$HOME/.axelar',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uaxl',
-        fixed_min_gas_price: 0.007,
-        low_gas_price: 0.007,
-        average_gas_price: 0.007,
-        high_gas_price: 0.01
+        fixedMinGasPrice: 0.007,
+        lowGasPrice: 0.007,
+        averageGasPrice: 0.007,
+        highGasPrice: 0.01
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uaxl'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'axelarnetwork/cosmos-sdk v0.45.17-0.20230904150332-37fb903a6c62',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.33.0'
+    cosmosSdkVersion: 'axelarnetwork/cosmos-sdk v0.45.17-0.20230904150332-37fb903a6c62',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'v0.33.0'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axelar-chain-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axelar-chain-logo.svg'
   },
   description: 'Axelar delivers secure cross-chain communication for Web3. Our infrastructure enables dApp users to interact with any asset or application, on any chain, with one click.',
   apis: {
-    "grpc-web": [{
+    grpcWeb: [{
         address: 'axelar-grpcweb.chainode.tech',
         provider: 'Chainode'
       }, {
@@ -255,35 +255,35 @@ const info: Chain = {
     {
       kind: 'axelarscan',
       url: 'https://axelarscan.io',
-      tx_page: 'https://axelarscan.io/tx/${txHash}'
+      txPage: 'https://axelarscan.io/tx/${txHash}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/axelar',
-      tx_page: 'https://www.mintscan.io/axelar/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/axelar/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/axelar/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/axelar/accounts/${accountAddress}'
     },
     {
       kind: 'explorers.guru',
       url: 'https://axelar.explorers.guru',
-      tx_page: 'https://axelar.explorers.guru/transaction/${txHash}'
+      txPage: 'https://axelar.explorers.guru/transaction/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/axelar',
-      tx_page: 'https://atomscan.com/axelar/transactions/${txHash}',
-      account_page: 'https://atomscan.com/axelar/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/axelar/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/axelar/accounts/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/axelar',
-      account_page: 'https://stakeflow.io/axelar/accounts/${accountAddress}'
+      accountPage: 'https://stakeflow.io/axelar/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/axelar',
-      tx_page: 'https://ezstaking.app/axelar/txs/${txHash}',
-      account_page: 'https://ezstaking.app/axelar/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/axelar/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/axelar/account/${accountAddress}'
     }
   ],
   images: [{

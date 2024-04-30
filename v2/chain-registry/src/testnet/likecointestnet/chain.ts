@@ -1,36 +1,36 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'likecointestnet',
+  chainName: 'likecointestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'LikeCoin Testnet',
-  chain_id: 'likecoin-public-testnet-5',
-  bech32_prefix: 'like',
-  daemon_name: 'liked',
-  node_home: '$HOME/.liked',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'LikeCoin Testnet',
+  chainId: 'likecoin-public-testnet-5',
+  bech32Prefix: 'like',
+  daemonName: 'liked',
+  nodeHome: '$HOME/.liked',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'nanoekil',
-        fixed_min_gas_price: 1000,
-        low_gas_price: 1000,
-        average_gas_price: 10000,
-        high_gas_price: 1000000
+        fixedMinGasPrice: 1000,
+        lowGasPrice: 1000,
+        averageGasPrice: 10000,
+        highGasPrice: 1000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'nanoekil'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1814400s'
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.46',
-    cosmwasm_enabled: false
+    cosmosSdkVersion: '0.46',
+    cosmwasmEnabled: false
   },
   apis: {
     rpc: [{
@@ -49,13 +49,13 @@ const info: Chain = {
   explorers: [{
       kind: 'bigdipper',
       url: 'https://testnet.bigdipper.live/likecoin',
-      tx_page: 'https://testnet.bigdipper.live/likecoin/transactions/${txHash}',
-      account_page: 'https://testnet.bigdipper.live/likecoin/accounts/${accountAddress}'
+      txPage: 'https://testnet.bigdipper.live/likecoin/transactions/${txHash}',
+      accountPage: 'https://testnet.bigdipper.live/likecoin/accounts/${accountAddress}'
     }, {
       kind: 'lunie-ng',
       url: 'https://likecoin-public-testnet-5.netlify.app/'
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.svg'
   },

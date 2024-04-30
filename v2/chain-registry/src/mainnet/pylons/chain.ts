@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'pylons',
+  chainName: 'pylons',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://pylons.tech',
-  pretty_name: 'Pylons',
-  chain_id: 'pylons-mainnet-1',
-  bech32_prefix: 'pylo',
-  node_home: '$HOME/.pylons',
-  daemon_name: 'pylonsd',
-  key_algos: ['secp256k1'],
+  prettyName: 'Pylons',
+  chainId: 'pylons-mainnet-1',
+  bech32Prefix: 'pylo',
+  nodeHome: '$HOME/.pylons',
+  daemonName: 'pylonsd',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ubedrock',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0.5,
-        high_gas_price: 1
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0,
+        averageGasPrice: 0.5,
+        highGasPrice: 1
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ubedrock'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pylons/images/pylons.png'
   },
   apis: {
@@ -51,7 +51,7 @@ const info: Chain = {
   explorers: [{
       kind: 'Nodes.guru',
       url: 'https://pylons.explorers.guru/',
-      tx_page: 'https://pylons.explorers.guru/transaction/${txHash}'
+      txPage: 'https://pylons.explorers.guru/transaction/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pylons/images/pylons.png'

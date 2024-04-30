@@ -1,28 +1,28 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'injectivetestnet',
+  chainName: 'injectivetestnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://injective.com',
-  pretty_name: 'Injective',
-  chain_id: 'injective-888',
-  bech32_prefix: 'inj',
-  extra_codecs: ['injective'],
+  prettyName: 'Injective',
+  chainId: 'injective-888',
+  bech32Prefix: 'inj',
+  extraCodecs: ['injective'],
   slip44: 60,
-  daemon_name: 'injectived',
-  node_home: '$HOME/.injectived',
+  daemonName: 'injectived',
+  nodeHome: '$HOME/.injectived',
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'inj',
-        fixed_min_gas_price: 500000000,
-        low_gas_price: 500000000,
-        average_gas_price: 700000000,
-        high_gas_price: 900000000
+        fixedMinGasPrice: 500000000,
+        lowGasPrice: 500000000,
+        averageGasPrice: 700000000,
+        highGasPrice: 900000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'inj'
       }]
   },
@@ -88,7 +88,7 @@ const info: Chain = {
   explorers: [{
       kind: 'injectiveprotocol',
       url: 'https://testnet.explorer.injective.network/',
-      tx_page: 'https://testnet.explorer.injective.network/transaction/${txHash}'
+      txPage: 'https://testnet.explorer.injective.network/transaction/${txHash}'
     }]
 };
 export default info;

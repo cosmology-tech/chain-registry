@@ -1,33 +1,33 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'sagatestnet',
+  chainName: 'sagatestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Saga Testnet',
-  chain_id: 'ssc-testnet-1',
-  bech32_prefix: 'saga',
-  daemon_name: 'sscd',
-  node_home: '$HOME/.ssc',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Saga Testnet',
+  chainId: 'ssc-testnet-1',
+  bech32Prefix: 'saga',
+  daemonName: 'sscd',
+  nodeHome: '$HOME/.ssc',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'utsaga',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.0025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.0025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'utsaga'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.47',
-    cosmwasm_enabled: false
+    cosmosSdkVersion: '0.47',
+    cosmwasmEnabled: false
   },
   apis: {
     rpc: [{
@@ -43,14 +43,14 @@ const info: Chain = {
         provider: 'Saga'
       }]
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png'
   },
   explorers: [{
       kind: 'mintscan',
       url: 'https://mintscan.io/saga-testnet',
-      tx_page: 'https://www.mintscan.io/saga-testnet/tx/${txHash}',
-      account_page: 'https://mintscan.io/saga-testnet/address/${accountAddress}'
+      txPage: 'https://www.mintscan.io/saga-testnet/tx/${txHash}',
+      accountPage: 'https://mintscan.io/saga-testnet/address/${accountAddress}'
     }],
   keywords: ['testnet', 'chainlet'],
   images: [{

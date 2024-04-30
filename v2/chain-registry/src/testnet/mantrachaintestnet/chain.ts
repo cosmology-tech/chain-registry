@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'mantrachaintestnet',
+  chainName: 'mantrachaintestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'MANTRA Hongbai Testnet',
-  chain_id: 'mantra-hongbai-1',
-  bech32_prefix: 'uom',
-  daemon_name: 'mantrachaind',
-  node_home: '$HOME/.mantrachain',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'MANTRA Hongbai Testnet',
+  chainId: 'mantra-hongbai-1',
+  bech32Prefix: 'uom',
+  daemonName: 'mantrachaind',
+  nodeHome: '$HOME/.mantrachain',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uom',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.001,
-        average_gas_price: 0.002,
-        high_gas_price: 0.003
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.001,
+        averageGasPrice: 0.002,
+        highGasPrice: 0.003
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uom'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.47.3',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.41'
+    cosmosSdkVersion: '0.47.3',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.41'
   },
   apis: {
     rpc: [{
@@ -44,7 +44,7 @@ const info: Chain = {
         provider: 'MANTRACHAIN'
       }]
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.svg'
   },

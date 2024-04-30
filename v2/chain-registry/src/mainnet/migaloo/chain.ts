@@ -1,39 +1,39 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'migaloo',
+  chainName: 'migaloo',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.whitewhale.money/',
-  pretty_name: 'Migaloo',
-  chain_id: 'migaloo-1',
-  bech32_prefix: 'migaloo',
-  daemon_name: 'migalood',
-  node_home: '$HOME/.migalood',
-  key_algos: ['secp256k1'],
+  prettyName: 'Migaloo',
+  chainId: 'migaloo-1',
+  bech32Prefix: 'migaloo',
+  daemonName: 'migalood',
+  nodeHome: '$HOME/.migalood',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uwhale',
-        fixed_min_gas_price: 1,
-        low_gas_price: 1,
-        average_gas_price: 2,
-        high_gas_price: 3
+        fixedMinGasPrice: 1,
+        lowGasPrice: 1,
+        averageGasPrice: 2,
+        highGasPrice: 3
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uwhale'
       }]
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.svg'
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.7',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.45.0'
+    cosmosSdkVersion: 'v0.47.7',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'v0.45.0'
   },
   apis: {
     rpc: [
@@ -139,25 +139,25 @@ const info: Chain = {
     {
       kind: 'Migaloo Explorers Guru',
       url: 'https://migaloo.explorers.guru',
-      tx_page: 'https://migaloo.explorers.guru/transaction/${txHash}',
-      account_page: 'https://migaloo.explorers.guru/account/${accountAddress}'
+      txPage: 'https://migaloo.explorers.guru/transaction/${txHash}',
+      accountPage: 'https://migaloo.explorers.guru/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/migaloo',
-      tx_page: 'https://ping.pub/migaloo/tx/${txHash}'
+      txPage: 'https://ping.pub/migaloo/tx/${txHash}'
     },
     {
       kind: 'Silk Nodes',
       url: 'https://explorer.silknodes.io/migaloo',
-      tx_page: 'https://explorer.silknodes.io/migaloo/tx/${txHash}',
-      account_page: 'https://explorer.silknodes.io/migaloo/account/${accountAddress}'
+      txPage: 'https://explorer.silknodes.io/migaloo/tx/${txHash}',
+      accountPage: 'https://explorer.silknodes.io/migaloo/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/migaloo',
-      tx_page: 'https://atomscan.com/migaloo/transactions/${txHash}',
-      account_page: 'https://atomscan.com/migaloo/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/migaloo/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/migaloo/accounts/${accountAddress}'
     }
   ],
   images: [{

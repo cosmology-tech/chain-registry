@@ -1,46 +1,46 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'cascadiatestnet',
+  chainName: 'cascadiatestnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://cascadia.foundation/',
-  pretty_name: 'Cascadia',
-  chain_id: 'cascadia_6102-1',
-  bech32_prefix: 'cascadia',
-  daemon_name: 'cascadiad',
-  node_home: '$HOME/.cascadiad',
-  key_algos: ['ethsecp256k1'],
+  prettyName: 'Cascadia',
+  chainId: 'cascadia_6102-1',
+  bech32Prefix: 'cascadia',
+  daemonName: 'cascadiad',
+  nodeHome: '$HOME/.cascadiad',
+  keyAlgos: ['ethsecp256k1'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'aCC',
-        fixed_min_gas_price: 0,
-        low_gas_price: 7,
-        average_gas_price: 10,
-        high_gas_price: 15
+        fixedMinGasPrice: 0,
+        lowGasPrice: 7,
+        averageGasPrice: 10,
+        highGasPrice: 15
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'aCC'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1814400s'
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.46.10',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.30'
+    cosmosSdkVersion: '0.46.10',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.30'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cascadiatestnet/images/cascadia.png',
       theme: {
-        primary_color_hex: '#004A96'
+        primaryColorHex: '#004A96'
       }
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cascadiatestnet/images/cascadia.png'
   },
   apis: {
@@ -102,13 +102,13 @@ const info: Chain = {
   explorers: [{
       kind: 'validator_explorer',
       url: 'https://validator.cascadia.foundation/',
-      tx_page: 'https://validator.cascadia.foundation/transactions/${txHash}',
-      account_page: 'https://validator.cascadia.foundation/accounts/${accountAddress}'
+      txPage: 'https://validator.cascadia.foundation/transactions/${txHash}',
+      accountPage: 'https://validator.cascadia.foundation/accounts/${accountAddress}'
     }, {
       kind: 'block_explorer',
       url: 'https://explorer.cascadia.foundation/',
-      tx_page: 'https://explorer.cascadia.foundation/tx/${txHash}',
-      account_page: 'https://explorer.cascadia.foundation/address/${accountAddress}'
+      txPage: 'https://explorer.cascadia.foundation/tx/${txHash}',
+      accountPage: 'https://explorer.cascadia.foundation/address/${accountAddress}'
     }],
   keywords: [
     'cascadia',

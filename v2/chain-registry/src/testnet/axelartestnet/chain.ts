@@ -1,27 +1,27 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'axelartestnet',
-  chain_id: 'axelar-testnet-lisbon-3',
-  pretty_name: 'Axelar Testnet',
+  chainName: 'axelartestnet',
+  chainId: 'axelar-testnet-lisbon-3',
+  prettyName: 'Axelar Testnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://axelar.network/',
-  bech32_prefix: 'axelar',
-  daemon_name: 'axelard',
-  node_home: '$HOME/.axelard',
-  key_algos: ['secp256k1'],
+  bech32Prefix: 'axelar',
+  daemonName: 'axelard',
+  nodeHome: '$HOME/.axelard',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uaxl',
-        low_gas_price: 0.007,
-        average_gas_price: 0.007,
-        high_gas_price: 0.01
+        lowGasPrice: 0.007,
+        averageGasPrice: 0.007,
+        highGasPrice: 0.01
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uaxl'
       }]
   },
@@ -61,12 +61,12 @@ const info: Chain = {
   explorers: [{
       kind: 'axelarscan',
       url: 'https://testnet.axelarscan.io',
-      tx_page: 'https://testnet.axelarscan.io/tx/${txHash}'
+      txPage: 'https://testnet.axelarscan.io/tx/${txHash}'
     }, {
       kind: 'mintscan',
       url: 'https://testnet.mintscan.io/axelar-testnet',
-      tx_page: 'https://testnet.mintscan.io/axelar-testnet/txs/${txHash}',
-      account_page: 'https://testnet.mintscan.io/axelar-testnet/account/${accountAddress}'
+      txPage: 'https://testnet.mintscan.io/axelar-testnet/txs/${txHash}',
+      accountPage: 'https://testnet.mintscan.io/axelar-testnet/account/${accountAddress}'
     }]
 };
 export default info;

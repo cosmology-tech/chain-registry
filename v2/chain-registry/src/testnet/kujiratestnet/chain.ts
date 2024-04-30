@@ -1,20 +1,20 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'kujiratestnet',
-  chain_id: 'harpoon-4',
-  pretty_name: 'Kujira Harpoon',
+  chainName: 'kujiratestnet',
+  chainId: 'harpoon-4',
+  prettyName: 'Kujira Harpoon',
   status: 'live',
-  network_type: 'testnet',
-  bech32_prefix: 'kujira',
-  daemon_name: 'kujirad',
-  node_home: '$HOME/.kujira',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'kujira',
+  daemonName: 'kujirad',
+  nodeHome: '$HOME/.kujira',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ukuji',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   codebase: {
@@ -33,7 +33,7 @@ const info: Chain = {
   explorers: [{
       kind: 'explorers.guru',
       url: 'https://kujira.explorers.guru',
-      tx_page: 'https://kujira.explorers.guru/transaction/${txHash}'
+      txPage: 'https://kujira.explorers.guru/transaction/${txHash}'
     }]
 };
 export default info;

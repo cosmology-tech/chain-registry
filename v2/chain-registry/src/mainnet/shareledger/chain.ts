@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'shareledger',
+  chainName: 'shareledger',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.sharering.network/',
-  pretty_name: 'Shareledger',
-  chain_id: 'ShareRing-VoyagerNet',
-  bech32_prefix: 'shareledger',
-  daemon_name: 'shareledger',
-  node_home: '$HOME/.shareledger',
-  key_algos: ['secp256k1'],
+  prettyName: 'Shareledger',
+  chainId: 'ShareRing-VoyagerNet',
+  bech32Prefix: 'shareledger',
+  daemonName: 'shareledger',
+  nodeHome: '$HOME/.shareledger',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'nshr',
-        fixed_min_gas_price: 0,
-        low_gas_price: 2000,
-        average_gas_price: 3000,
-        high_gas_price: 4000
+        fixedMinGasPrice: 0,
+        lowGasPrice: 2000,
+        averageGasPrice: 3000,
+        highGasPrice: 4000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'nshr'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.45',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.27'
+    cosmosSdkVersion: '0.45',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.27'
   },
   apis: {
     rpc: [{
@@ -48,10 +48,10 @@ const info: Chain = {
   explorers: [{
       kind: 'big dipper',
       url: 'https://explorer.shareri.ng',
-      tx_page: 'https://explorer.shareri.ng/transactions/${txHash}',
-      account_page: 'https://explorer.shareri.ng/accounts/${accountAddress}'
+      txPage: 'https://explorer.shareri.ng/transactions/${txHash}',
+      accountPage: 'https://explorer.shareri.ng/accounts/${accountAddress}'
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/chain-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/token.svg'
   },

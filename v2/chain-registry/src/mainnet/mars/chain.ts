@@ -1,36 +1,36 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'mars',
+  chainName: 'mars',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.marsprotocol.io/',
-  pretty_name: 'Mars Hub',
-  chain_id: 'mars-1',
-  bech32_prefix: 'mars',
-  daemon_name: 'marsd',
-  node_home: '$HOME/.mars',
-  key_algos: ['secp256k1'],
+  prettyName: 'Mars Hub',
+  chainId: 'mars-1',
+  bech32Prefix: 'mars',
+  daemonName: 'marsd',
+  nodeHome: '$HOME/.mars',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
-  alternative_slip44s: [330],
+  alternativeSlip44s: [330],
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'umars',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0,
-        high_gas_price: 0.01
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0,
+        averageGasPrice: 0,
+        highGasPrice: 0.01
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'umars'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46.7',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.30.0'
+    cosmosSdkVersion: '0.46.7',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.30.0'
   },
   description: 'Lend, borrow and earn with an autonomous credit protocol in the Cosmos universe. Open to all, closed to none.',
   apis: {
@@ -153,41 +153,41 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/mars',
-      tx_page: 'https://ezstaking.app/mars/txs/${txHash}',
-      account_page: 'https://ezstaking.app/mars/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/mars/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/mars/account/${accountAddress}'
     },
     {
       kind: 'BigDipper',
       url: 'https://explorer.marsprotocol.io',
-      tx_page: 'https://explorer.marsprotocol.io/transactions/${txHash}',
-      account_page: 'https://explorer.marsprotocol.io/accounts/${accountAddress}'
+      txPage: 'https://explorer.marsprotocol.io/transactions/${txHash}',
+      accountPage: 'https://explorer.marsprotocol.io/accounts/${accountAddress}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/mars',
-      tx_page: 'https://explorer.nodestake.top/mars/transactions/${txHash}',
-      account_page: 'https://explorer.nodestake.top/mars/account/${accountAddress}'
+      txPage: 'https://explorer.nodestake.top/mars/transactions/${txHash}',
+      accountPage: 'https://explorer.nodestake.top/mars/account/${accountAddress}'
     },
     {
       kind: 'Nodes.Guru',
       url: 'https://mars.explorers.guru/',
-      tx_page: 'https://mars.explorers.guru/transaction/${txHash}',
-      account_page: 'https://mars.explorers.guru/account/${accountAddress}'
+      txPage: 'https://mars.explorers.guru/transaction/${txHash}',
+      accountPage: 'https://mars.explorers.guru/account/${accountAddress}'
     },
     {
       kind: 'MintScan',
       url: 'https://www.mintscan.io/mars-protocol',
-      tx_page: 'https://www.mintscan.io/mars-protocol/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/mars-protocol/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/mars-protocol/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/mars-protocol/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/mars',
-      tx_page: 'https://ping.pub/mars/tx/${txHash}',
-      account_page: 'https://ping.pub/mars/account/${accountAddress}'
+      txPage: 'https://ping.pub/mars/tx/${txHash}',
+      accountPage: 'https://ping.pub/mars/account/${accountAddress}'
     }
   ],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-protocol.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-protocol.svg'
   },

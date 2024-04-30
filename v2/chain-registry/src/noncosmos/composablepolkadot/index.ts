@@ -1,5 +1,5 @@
-import _assets from './assets';
-import _ibc from './ibc';
+import _assetList from './asset-list';
+import _ibcData from './ibc-data';
 
-export const assets = _assets;
-export const ibc = _ibc;
+export const assetList = _assetList;
+export const ibcData = _ibcData;

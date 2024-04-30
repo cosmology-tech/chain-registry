@@ -1,60 +1,60 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'quasar',
+  chainName: 'quasar',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.quasar.fi/',
-  pretty_name: 'Quasar',
-  chain_id: 'quasar-1',
-  bech32_prefix: 'quasar',
-  daemon_name: 'quasarnoded',
-  node_home: '$HOME/.quasarnode',
-  key_algos: ['secp256k1'],
+  prettyName: 'Quasar',
+  chainId: 'quasar-1',
+  bech32Prefix: 'quasar',
+  daemonName: 'quasarnoded',
+  nodeHome: '$HOME/.quasarnode',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uqsr'
       }]
   },
   fees: {
-    fee_tokens: [
+    feeTokens: [
       {
         denom: 'uqsr',
-        fixed_min_gas_price: 0.1,
-        low_gas_price: 0.1,
-        average_gas_price: 0.25,
-        high_gas_price: 0.3
+        fixedMinGasPrice: 0.1,
+        lowGasPrice: 0.1,
+        averageGasPrice: 0.25,
+        highGasPrice: 0.3
       },
       {
         denom: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
-        fixed_min_gas_price: 0.01,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.03
+        fixedMinGasPrice: 0.01,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.03
       },
       {
         denom: 'ibc/FA0006F056DB6719B8C16C551FC392B62F5729978FC0B125AC9A432DBB2AA1A5',
-        fixed_min_gas_price: 0.01,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.03
+        fixedMinGasPrice: 0.01,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.03
       },
       {
         denom: 'ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A',
-        fixed_min_gas_price: 0.01,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.03
+        fixedMinGasPrice: 0.01,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.03
       }
     ]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.45.16',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.31.0'
+    cosmosSdkVersion: 'v0.45.16',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'v0.31.0'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png'
   },
   description: 'Quasar is the first decentralized asset management (D.A.M.) platform enabled by IBC. A secure, permissionless, composable, and diversified interchain DeFi experience is finally here.',
@@ -209,13 +209,13 @@ const info: Chain = {
   explorers: [{
       kind: 'mintscan',
       url: 'https://www.mintscan.io/quasar',
-      tx_page: 'https://www.mintscan.io/quasar/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/quasar/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/quasar/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/quasar/accounts/${accountAddress}'
     }, {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/quasar',
-      tx_page: 'https://ezstaking.app/quasar/txs/${txHash}',
-      account_page: 'https://ezstaking.app/quasar/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/quasar/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/quasar/account/${accountAddress}'
     }],
   keywords: ['mainnet'],
   images: [{

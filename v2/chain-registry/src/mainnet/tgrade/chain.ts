@@ -1,33 +1,33 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'tgrade',
+  chainName: 'tgrade',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://tgrade.finance/',
-  pretty_name: 'Tgrade',
-  chain_id: 'tgrade-mainnet-1',
-  bech32_prefix: 'tgrade',
-  daemon_name: 'tgrade',
-  node_home: '$HOME/.tgrade',
-  key_algos: ['secp256k1'],
+  prettyName: 'Tgrade',
+  chainId: 'tgrade-mainnet-1',
+  bech32Prefix: 'tgrade',
+  daemonName: 'tgrade',
+  nodeHome: '$HOME/.tgrade',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'utgd',
-        fixed_min_gas_price: 0.05,
-        low_gas_price: 0.05,
-        average_gas_price: 0.075,
-        high_gas_price: 0.1
+        fixedMinGasPrice: 0.05,
+        lowGasPrice: 0.05,
+        averageGasPrice: 0.075,
+        highGasPrice: 0.1
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'utgd'
       }]
   },
   codebase: {
-    cosmwasm_enabled: true
+    cosmwasmEnabled: true
   },
   apis: {
     rpc: [{
@@ -49,10 +49,10 @@ const info: Chain = {
   explorers: [{
       kind: 'aneka',
       url: 'https://tgrade.aneka.io',
-      tx_page: 'https://tgrade.aneka.io/txs/${txHash}',
-      account_page: 'https://tgrade.aneka.io/accounts/${accountAddress}'
+      txPage: 'https://tgrade.aneka.io/txs/${txHash}',
+      accountPage: 'https://tgrade.aneka.io/accounts/${accountAddress}'
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-logo-gradient_h.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.svg'
   },

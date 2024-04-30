@@ -1,36 +1,36 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'stafihub',
-  chain_id: 'stafihub-1',
+  chainName: 'stafihub',
+  chainId: 'stafihub-1',
   website: 'https://stafihub.io/',
-  pretty_name: 'StaFi Hub',
+  prettyName: 'StaFi Hub',
   status: 'live',
-  network_type: 'mainnet',
-  bech32_prefix: 'stafi',
-  daemon_name: 'stafihubd',
-  node_home: '$HOME/.stafihub',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  bech32Prefix: 'stafi',
+  daemonName: 'stafihubd',
+  nodeHome: '$HOME/.stafihub',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ufis',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ufis'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1209600s'
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.46'
+    cosmosSdkVersion: '0.46'
   },
   apis: {
     rpc: [
@@ -84,28 +84,28 @@ const info: Chain = {
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/stafi',
-      tx_page: 'https://www.mintscan.io/stafi/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/stafi/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/stafi/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/stafi/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/stafihub',
-      tx_page: 'https://ezstaking.app/stafihub/txs/${txHash}',
-      account_page: 'https://ezstaking.app/stafihub/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/stafihub/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/stafihub/account/${accountAddress}'
     },
     {
       kind: 'ping-pub',
       url: 'https://ping.pub/stafihub',
-      tx_page: 'https://ping.pub/stafihub/tx/${txHash}'
+      txPage: 'https://ping.pub/stafihub/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/stafihub',
-      tx_page: 'https://atomscan.com/stafihub/transactions/${txHash}',
-      account_page: 'https://atomscan.com/stafihub/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/stafihub/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/stafihub/accounts/${accountAddress}'
     }
   ],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/stafihub-chain-logo.png'
   },
   keywords: ['liquid staking'],

@@ -1,37 +1,37 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'uptick',
+  chainName: 'uptick',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://uptick.network/',
-  pretty_name: 'Uptick',
-  chain_id: 'uptick_117-1',
-  bech32_prefix: 'uptick',
-  daemon_name: 'uptickd',
-  node_home: '$HOME/.uptickd',
-  key_algos: ['secp256k1'],
+  prettyName: 'Uptick',
+  chainId: 'uptick_117-1',
+  bech32Prefix: 'uptick',
+  daemonName: 'uptickd',
+  nodeHome: '$HOME/.uptickd',
+  keyAlgos: ['secp256k1'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'auptick',
-        fixed_min_gas_price: 10000000000,
-        low_gas_price: 10000000000,
-        average_gas_price: 25000000000,
-        high_gas_price: 40000000000
+        fixedMinGasPrice: 10000000000,
+        lowGasPrice: 10000000000,
+        averageGasPrice: 25000000000,
+        highGasPrice: 40000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'auptick'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46',
-    cosmwasm_enabled: false,
-    cosmwasm_version: ''
+    cosmosSdkVersion: '0.46',
+    cosmwasmEnabled: false,
+    cosmwasmVersion: ''
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.svg'
   },
@@ -190,7 +190,7 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       }
     ],
-    "evm-http-jsonrpc": [
+    evmHttpJsonrpc: [
       {
         address: 'https://jsonrpc.uptick.nodestake.top',
         provider: 'NodeStake'
@@ -213,42 +213,42 @@ const info: Chain = {
     {
       kind: 'ping.pub',
       url: 'https://explorers.brocha.in/uptick',
-      tx_page: 'https://explorers.brocha.in/uptick/tx/${txHash}'
+      txPage: 'https://explorers.brocha.in/uptick/tx/${txHash}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/uptick',
-      tx_page: 'https://explorer.nodestake.top/uptick/tx/${txHash}'
+      txPage: 'https://explorer.nodestake.top/uptick/tx/${txHash}'
     },
     {
       kind: 'BccNodes Explorer',
       url: 'https://explorer.bccnodes.com/uptick-M',
-      tx_page: 'https://explorer.bccnodes.com/uptick-M/tx/${txHash}'
+      txPage: 'https://explorer.bccnodes.com/uptick-M/tx/${txHash}'
     },
     {
       kind: '🔥STAVR🔥 Explorer',
       url: 'https://explorer.stavr.tech/uptick-mainnet',
-      tx_page: 'https://explorer.stavr.tech/uptick-mainnet/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/uptick-mainnet/tx/${txHash}'
     },
     {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀 Explorer',
       url: 'https://exp.utsa.tech/uptick',
-      tx_page: 'https://exp.utsa.tech/uptick/tx/${txHash}'
+      txPage: 'https://exp.utsa.tech/uptick/tx/${txHash}'
     },
     {
       kind: 'cosmotracker',
       url: 'https://cosmotracker.com/uptick',
-      tx_page: 'https://cosmotracker.com/uptick/tx/${txHash}'
+      txPage: 'https://cosmotracker.com/uptick/tx/${txHash}'
     },
     {
       kind: 'Upscan',
       url: 'https://upscan.xyz/',
-      tx_page: 'https://upscan.xyz/uptick_117-1/tx/${txHash}'
+      txPage: 'https://upscan.xyz/uptick_117-1/tx/${txHash}'
     },
     {
       kind: 'Sr20de',
       url: 'https://explorer.sr20de.xyz/uptick',
-      tx_page: 'https://explorer.sr20de.xyz/uptick/tx/${txHash}'
+      txPage: 'https://explorer.sr20de.xyz/uptick/tx/${txHash}'
     }
   ],
   images: [{

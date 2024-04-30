@@ -1,39 +1,39 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'nolustestnet',
+  chainName: 'nolustestnet',
   status: 'live',
   website: 'https://nolus.io/',
-  network_type: 'testnet',
-  pretty_name: 'Nolus Testnet',
-  chain_id: 'rila-1',
-  bech32_prefix: 'nolus',
-  daemon_name: 'nolusd',
-  node_home: '$HOME/.nolusd',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Nolus Testnet',
+  chainId: 'rila-1',
+  bech32Prefix: 'nolus',
+  daemonName: 'nolusd',
+  nodeHome: '$HOME/.nolusd',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'unls',
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.05
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.05
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'unls'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1814400s'
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.45',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.31'
+    cosmosSdkVersion: '0.45',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.31'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nolustestnet/images/nolus.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nolustestnet/images/nolus.svg'
   },
@@ -54,8 +54,8 @@ const info: Chain = {
   explorers: [{
       kind: 'Nolus Explorer',
       url: 'https://explorer-rila.nolus.io/rila-1/',
-      tx_page: 'https://explorer-rila.nolus.io/rila-1/tx/${txHash}',
-      account_page: 'https://explorer-rila.nolus.io/rila-1/account/${accountAddress}'
+      txPage: 'https://explorer-rila.nolus.io/rila-1/tx/${txHash}',
+      accountPage: 'https://explorer-rila.nolus.io/rila-1/account/${accountAddress}'
     }],
   keywords: ['testnet'],
   images: [{

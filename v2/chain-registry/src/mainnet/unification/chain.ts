@@ -1,37 +1,37 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'unification',
+  chainName: 'unification',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://unification.com/',
-  pretty_name: 'Unification',
-  chain_id: 'FUND-MainNet-2',
-  bech32_prefix: 'und',
-  daemon_name: 'und',
-  node_home: '$HOME/.und_mainchain',
-  key_algos: ['secp256k1'],
+  prettyName: 'Unification',
+  chainId: 'FUND-MainNet-2',
+  bech32Prefix: 'und',
+  daemonName: 'und',
+  nodeHome: '$HOME/.und_mainchain',
+  keyAlgos: ['secp256k1'],
   slip44: 5555,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'nund',
-        fixed_min_gas_price: 25,
-        low_gas_price: 100,
-        average_gas_price: 200,
-        high_gas_price: 300
+        fixedMinGasPrice: 25,
+        lowGasPrice: 100,
+        averageGasPrice: 200,
+        highGasPrice: 300
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'nund'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1814400s'
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.46.15',
-    cosmwasm_enabled: false
+    cosmosSdkVersion: '0.46.15',
+    cosmwasmEnabled: false
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png',
@@ -64,23 +64,23 @@ const info: Chain = {
     {
       kind: 'bigdipper',
       url: 'https://explorer.unification.io/',
-      tx_page: 'https://explorer.unification.io/transactions/${txHash}',
-      account_page: 'https://explorer.unification.io/accounts/${accountAddress}'
+      txPage: 'https://explorer.unification.io/transactions/${txHash}',
+      accountPage: 'https://explorer.unification.io/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://explorer.unification.chainmasters.ninja/unification',
-      tx_page: 'https://explorer.unification.chainmasters.ninja/unification/tx/${txHash}',
-      account_page: 'https://explorer.unification.chainmasters.ninja/Unification/account/${accountAddress}'
+      txPage: 'https://explorer.unification.chainmasters.ninja/unification/tx/${txHash}',
+      accountPage: 'https://explorer.unification.chainmasters.ninja/Unification/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/unification',
-      tx_page: 'https://atomscan.com/unification/transactions/${txHash}',
-      account_page: 'https://atomscan.com/unification/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/unification/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/unification/accounts/${accountAddress}'
     }
   ],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.svg'
   }

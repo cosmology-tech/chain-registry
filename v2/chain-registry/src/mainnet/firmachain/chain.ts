@@ -1,32 +1,32 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'firmachain',
+  chainName: 'firmachain',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://firmachain.org/',
-  pretty_name: 'FirmaChain',
-  chain_id: 'colosseum-1',
-  bech32_prefix: 'firma',
+  prettyName: 'FirmaChain',
+  chainId: 'colosseum-1',
+  bech32Prefix: 'firma',
   slip44: 7777777,
-  daemon_name: 'firmachaind',
-  node_home: '$HOME/.firmachain',
-  key_algos: ['secp256k1'],
+  daemonName: 'firmachaind',
+  nodeHome: '$HOME/.firmachain',
+  keyAlgos: ['secp256k1'],
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ufct',
-        fixed_min_gas_price: 0.1
+        fixedMinGasPrice: 0.1
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ufct'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.svg'
   },
@@ -106,36 +106,36 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/firmachain',
-      tx_page: 'https://ezstaking.app/firmachain/txs/${txHash}',
-      account_page: 'https://ezstaking.app/firmachain/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/firmachain/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/firmachain/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Firmachain-M',
-      tx_page: 'https://explorer.stavr.tech/Firmachain-M/txs/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Firmachain-M/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Firmachain-M/txs/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Firmachain-M/account/${accountAddress}'
     },
     {
       kind: 'bigdipper',
       url: 'https://explorer.firmachain.dev',
-      tx_page: 'https://explorer.firmachain.dev/transactions/${txHash}'
+      txPage: 'https://explorer.firmachain.dev/transactions/${txHash}'
     },
     {
       kind: 'explorer.ChainTools',
       url: 'https://explorer.chaintools.tech/firmachain',
-      tx_page: 'https://explorer.chaintools.tech/firmachain/tx/${txHash}'
+      txPage: 'https://explorer.chaintools.tech/firmachain/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/firmachain',
-      tx_page: 'https://atomscan.com/firmachain/transactions/${txHash}',
-      account_page: 'https://atomscan.com/firmachain/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/firmachain/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/firmachain/accounts/${accountAddress}'
     },
     {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/firmachain/',
-      tx_page: 'https://explorer.nodeshub.online/firmachain/tx/${txHash}',
-      account_page: 'https://explorer.nodeshub.online/firmachain/accounts/${accountAddress}'
+      txPage: 'https://explorer.nodeshub.online/firmachain/tx/${txHash}',
+      accountPage: 'https://explorer.nodeshub.online/firmachain/accounts/${accountAddress}'
     }
   ],
   images: [{

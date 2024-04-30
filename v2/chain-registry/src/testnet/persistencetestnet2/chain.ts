@@ -1,31 +1,31 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'persistencetestnet2',
-  chain_id: 'test-core-2',
-  pretty_name: 'Persistence Testnet',
+  chainName: 'persistencetestnet2',
+  chainId: 'test-core-2',
+  prettyName: 'Persistence Testnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://persistence.one/',
-  bech32_prefix: 'persistence',
-  daemon_name: 'persistenceCore',
-  node_home: '$HOME/.persistenceCore',
-  key_algos: ['secp256k1'],
+  bech32Prefix: 'persistence',
+  daemonName: 'persistenceCore',
+  nodeHome: '$HOME/.persistenceCore',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uxprt',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.05,
-        average_gas_price: 0.125,
-        high_gas_price: 0.2
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.05,
+        averageGasPrice: 0.125,
+        highGasPrice: 0.2
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uxprt'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1814400s'
     }
   },
@@ -101,20 +101,20 @@ const info: Chain = {
     {
       kind: 'mintscan',
       url: 'https://testnet.mintscan.io/persistence-testnet',
-      tx_page: 'https://testnet.mintscan.io/persistence-testnet/txs/${txHash}',
-      account_page: 'https://testnet.mintscan.io/persistence-testnet/account/${accountAddress}'
+      txPage: 'https://testnet.mintscan.io/persistence-testnet/txs/${txHash}',
+      accountPage: 'https://testnet.mintscan.io/persistence-testnet/account/${accountAddress}'
     },
     {
       kind: 'StakeFlow',
       url: 'https://stakeflow.io/persistence-testnet',
-      tx_page: 'https://stakeflow.io/persistence-testnet/transactions/${txHash}',
-      account_page: 'https://stakeflow.io/persistence-testnet/accounts/${accountAddress}'
+      txPage: 'https://stakeflow.io/persistence-testnet/transactions/${txHash}',
+      accountPage: 'https://stakeflow.io/persistence-testnet/accounts/${accountAddress}'
     },
     {
       kind: 'baryon',
       url: 'https://testnet-explorer.baryon.dev/test-core-2',
-      tx_page: 'https://testnet-explorer.baryon.dev/test-core-2/tx/{txHash}',
-      account_page: 'https://testnet-explorer.baryon.dev/test-core-2/account/${accountAddress}'
+      txPage: 'https://testnet-explorer.baryon.dev/test-core-2/tx/{txHash}',
+      accountPage: 'https://testnet-explorer.baryon.dev/test-core-2/account/${accountAddress}'
     }
   ]
 };

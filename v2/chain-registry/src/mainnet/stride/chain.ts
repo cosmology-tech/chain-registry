@@ -1,126 +1,126 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'stride',
+  chainName: 'stride',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://stride.zone/',
-  pretty_name: 'Stride',
-  chain_id: 'stride-1',
-  bech32_prefix: 'stride',
-  daemon_name: 'strided',
-  node_home: '$HOME/.stride',
-  key_algos: ['ed25519'],
+  prettyName: 'Stride',
+  chainId: 'stride-1',
+  bech32Prefix: 'stride',
+  daemonName: 'strided',
+  nodeHome: '$HOME/.stride',
+  keyAlgos: ['ed25519'],
   slip44: 118,
   fees: {
-    fee_tokens: [
+    feeTokens: [
       {
         denom: 'ustrd',
-        fixed_min_gas_price: 0.0005,
-        low_gas_price: 0.0005,
-        average_gas_price: 0.001,
-        high_gas_price: 0.002
+        fixedMinGasPrice: 0.0005,
+        lowGasPrice: 0.0005,
+        averageGasPrice: 0.001,
+        highGasPrice: 0.002
       },
       {
         denom: 'stuatom',
-        fixed_min_gas_price: 0.0001,
-        low_gas_price: 0.0001,
-        average_gas_price: 0.0002,
-        high_gas_price: 0.0005
+        fixedMinGasPrice: 0.0001,
+        lowGasPrice: 0.0001,
+        averageGasPrice: 0.0002,
+        highGasPrice: 0.0005
       },
       {
         denom: 'stuosmo',
-        fixed_min_gas_price: 0.001,
-        low_gas_price: 0.001,
-        average_gas_price: 0.002,
-        high_gas_price: 0.004
+        fixedMinGasPrice: 0.001,
+        lowGasPrice: 0.001,
+        averageGasPrice: 0.002,
+        highGasPrice: 0.004
       },
       {
         denom: 'stustars',
-        fixed_min_gas_price: 1,
-        low_gas_price: 1,
-        average_gas_price: 1.1,
-        high_gas_price: 1.2
+        fixedMinGasPrice: 1,
+        lowGasPrice: 1,
+        averageGasPrice: 1.1,
+        highGasPrice: 1.2
       },
       {
         denom: 'stujuno',
-        fixed_min_gas_price: 0.075,
-        low_gas_price: 0.075,
-        average_gas_price: 0.1,
-        high_gas_price: 0.125
+        fixedMinGasPrice: 0.075,
+        lowGasPrice: 0.075,
+        averageGasPrice: 0.1,
+        highGasPrice: 0.125
       },
       {
         denom: 'stuluna',
-        fixed_min_gas_price: 0.0125,
-        low_gas_price: 0.0125,
-        average_gas_price: 0.015,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.0125,
+        lowGasPrice: 0.0125,
+        averageGasPrice: 0.015,
+        highGasPrice: 0.04
       },
       {
         denom: 'staevmos',
-        fixed_min_gas_price: 250000000,
-        low_gas_price: 20000000000,
-        average_gas_price: 25000000000,
-        high_gas_price: 40000000000
+        fixedMinGasPrice: 250000000,
+        lowGasPrice: 20000000000,
+        averageGasPrice: 25000000000,
+        highGasPrice: 40000000000
       },
       {
         denom: 'stinj',
-        fixed_min_gas_price: 500000000,
-        low_gas_price: 500000000,
-        average_gas_price: 700000000,
-        high_gas_price: 900000000
+        fixedMinGasPrice: 500000000,
+        lowGasPrice: 500000000,
+        averageGasPrice: 700000000,
+        highGasPrice: 900000000
       },
       {
         denom: 'stucmdx',
-        fixed_min_gas_price: 0.02,
-        low_gas_price: 0.02,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.02,
+        lowGasPrice: 0.02,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       },
       {
         denom: 'stuumee',
-        fixed_min_gas_price: 0.1,
-        low_gas_price: 0.1,
-        average_gas_price: 0.12,
-        high_gas_price: 0.2
+        fixedMinGasPrice: 0.1,
+        lowGasPrice: 0.1,
+        averageGasPrice: 0.12,
+        highGasPrice: 0.2
       },
       {
         denom: 'stutia',
-        fixed_min_gas_price: 0.002,
-        low_gas_price: 0.01,
-        average_gas_price: 0.02,
-        high_gas_price: 0.1
+        fixedMinGasPrice: 0.002,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.02,
+        highGasPrice: 0.1
       },
       {
         denom: 'stadydx',
-        fixed_min_gas_price: 15000000000,
-        low_gas_price: 15000000000,
-        average_gas_price: 15000000000,
-        high_gas_price: 20000000000
+        fixedMinGasPrice: 15000000000,
+        lowGasPrice: 15000000000,
+        averageGasPrice: 15000000000,
+        highGasPrice: 20000000000
       },
       {
         denom: 'stadym',
-        fixed_min_gas_price: 15000000000,
-        low_gas_price: 15000000000,
-        average_gas_price: 15000000000,
-        high_gas_price: 20000000000
+        fixedMinGasPrice: 15000000000,
+        lowGasPrice: 15000000000,
+        averageGasPrice: 15000000000,
+        highGasPrice: 20000000000
       },
       {
         denom: 'stusaga',
-        fixed_min_gas_price: 0.01,
-        low_gas_price: 0.01,
-        average_gas_price: 0.015,
-        high_gas_price: 0.03
+        fixedMinGasPrice: 0.01,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.015,
+        highGasPrice: 0.03
       }
     ]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ustrd'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'Stride-Labs/cosmos-sdk v0.47.10-stride-distribution-fix-0'
+    cosmosSdkVersion: 'Stride-Labs/cosmos-sdk v0.47.10-stride-distribution-fix-0'
   },
   description: 'Stride is a blockchain that provides liquidity for staked tokens. Using Stride, you can earn both taking and DeFi yields across the Cosmos IBC ecosystem.',
   apis: {
@@ -315,58 +315,58 @@ const info: Chain = {
     {
       kind: 'BccNodes',
       url: 'https://explorer.bccnodes.com/stride-M',
-      tx_page: 'https://explorer.bccnodes.com/stride-M/tx/${txHash}',
-      account_page: 'https://explorer.bccnodes.com/stride-M/account/${accountAddress}'
+      txPage: 'https://explorer.bccnodes.com/stride-M/tx/${txHash}',
+      accountPage: 'https://explorer.bccnodes.com/stride-M/account/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/stride',
-      tx_page: 'https://ezstaking.app/stride/txs/${txHash}',
-      account_page: 'https://ezstaking.app/stride/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/stride/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/stride/account/${accountAddress}'
     },
     {
       kind: 'Apollo',
       url: 'https://apollo.chandrastation.com/stride',
-      tx_page: 'https://apollo.chandrastation.com/stride/tx/${txHash}',
-      account_page: 'https://apollo.chandrastation.com/stride/account/${accountAddress}'
+      txPage: 'https://apollo.chandrastation.com/stride/tx/${txHash}',
+      accountPage: 'https://apollo.chandrastation.com/stride/account/${accountAddress}'
     },
     {
       kind: 'Stride Ping Pub',
       url: 'https://explorer.stride.zone/stride',
-      tx_page: 'https://explorer.stride.zone/stride/tx/${txHash}',
-      account_page: 'https://explorer.stride.zone/stride/account/${accountAddress}'
+      txPage: 'https://explorer.stride.zone/stride/tx/${txHash}',
+      accountPage: 'https://explorer.stride.zone/stride/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥 Explorer',
       url: 'https://explorer.stavr.tech/stride',
-      tx_page: 'https://explorer.stavr.tech/stride/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/stride/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/stride/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/stride/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/stride',
-      tx_page: 'https://www.mintscan.io/stride/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/stride/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/stride/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/stride/accounts/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/stride',
-      tx_page: 'https://atomscan.com/stride/transactions/${txHash}',
-      account_page: 'https://atomscan.com/stride/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/stride/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/stride/accounts/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/stride',
-      account_page: 'https://stakeflow.io/stride/accounts/${accountAddress}'
+      accountPage: 'https://stakeflow.io/stride/accounts/${accountAddress}'
     },
     {
       kind: 'Stake-Take',
       url: 'https://explorer.stake-take.com/stride',
-      tx_page: 'https://explorer.stake-take.com/stride/tx/${txHash}',
-      account_page: 'https://explorer.stake-take.com/stride/account/${accountAddress}'
+      txPage: 'https://explorer.stake-take.com/stride/tx/${txHash}',
+      accountPage: 'https://explorer.stake-take.com/stride/account/${accountAddress}'
     }
   ],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stride-chain-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
   },

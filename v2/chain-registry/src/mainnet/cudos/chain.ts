@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'cudos',
+  chainName: 'cudos',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'Cudos',
-  chain_id: 'cudos-1',
-  bech32_prefix: 'cudos',
-  daemon_name: 'cudos-noded',
+  networkType: 'mainnet',
+  prettyName: 'Cudos',
+  chainId: 'cudos-1',
+  bech32Prefix: 'cudos',
+  daemonName: 'cudos-noded',
   website: 'https://www.cudos.org/',
-  node_home: '$HOME/cudos-data',
-  key_algos: ['secp256k1'],
+  nodeHome: '$HOME/cudos-data',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'acudos',
-        low_gas_price: 5000000000000,
-        average_gas_price: 10000000000000,
-        high_gas_price: 20000000000000
+        lowGasPrice: 5000000000000,
+        averageGasPrice: 10000000000000,
+        highGasPrice: 20000000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'acudos'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg'
   },
@@ -96,32 +96,32 @@ const info: Chain = {
     {
       kind: 'bigdipper',
       url: 'https://explorer.cudos.org/',
-      tx_page: 'https://explorer.cudos.org/transactions/${txHash}',
-      account_page: 'https://explorer.cudos.org/accounts/${accountAddress}'
+      txPage: 'https://explorer.cudos.org/transactions/${txHash}',
+      accountPage: 'https://explorer.cudos.org/accounts/${accountAddress}'
     },
     {
       kind: 'cudos-dashboard',
       url: 'https://dashboard.cudos.org/',
-      tx_page: 'https://explorer.cudos.org/transactions/${txHash}',
-      account_page: 'https://explorer.cudos.org/accounts/${accountAddress}'
+      txPage: 'https://explorer.cudos.org/transactions/${txHash}',
+      accountPage: 'https://explorer.cudos.org/accounts/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/cudos',
-      tx_page: 'https://www.mintscan.io/cudos/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/cudos/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/cudos/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/cudos/accounts/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/cudos',
-      tx_page: 'https://atomscan.com/cudos/transactions/${txHash}',
-      account_page: 'https://atomscan.com/cudos/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/cudos/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/cudos/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/cudos',
-      tx_page: 'https://ezstaking.app/cudos/txs/${txHash}',
-      account_page: 'https://ezstaking.app/cudos/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/cudos/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/cudos/account/${accountAddress}'
     }
   ],
   images: [{

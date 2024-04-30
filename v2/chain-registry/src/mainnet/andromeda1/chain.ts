@@ -1,26 +1,26 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'andromeda1',
-  chain_id: 'andromeda-1',
-  pretty_name: 'Andromeda',
+  chainName: 'andromeda1',
+  chainId: 'andromeda-1',
+  prettyName: 'Andromeda',
   status: 'killed',
-  network_type: 'mainnet',
-  bech32_prefix: 'andr',
-  daemon_name: 'andromedad',
-  node_home: '$HOME/.andromeda',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  bech32Prefix: 'andr',
+  daemonName: 'andromedad',
+  nodeHome: '$HOME/.andromeda',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uandr'
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uandr'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1814400s'
     }
   },
@@ -167,28 +167,28 @@ const info: Chain = {
     {
       kind: '🔥STAVR🔥 Explorer',
       url: 'https://explorer.stavr.tech/Andromeda-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Andromeda-Mainnet/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Andromeda-Mainnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Andromeda-Mainnet/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Andromeda-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'exploreme.pro',
       url: 'https://andromeda.exploreme.pro',
-      tx_page: 'https://andromeda.exploreme.pro/transaction/${txHash}',
-      account_page: 'https://andromeda.exploreme.pro/account/${accountAddress}'
+      txPage: 'https://andromeda.exploreme.pro/transaction/${txHash}',
+      accountPage: 'https://andromeda.exploreme.pro/account/${accountAddress}'
     },
     {
       kind: 'Cosmotracker',
       url: 'https://cosmotracker.com/andromeda',
-      tx_page: 'https://cosmotracker.com/andromeda/tx/${txHash}',
-      account_page: 'https://cosmotracker.com/andromeda/account/${accountAddress}'
+      txPage: 'https://cosmotracker.com/andromeda/tx/${txHash}',
+      accountPage: 'https://cosmotracker.com/andromeda/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/andromeda',
-      tx_page: 'https://ping.pub/andromeda/tx/${txHash}'
+      txPage: 'https://ping.pub/andromeda/tx/${txHash}'
     }
   ],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/andromeda/images/andromeda-logo.png'
   },
   images: [{

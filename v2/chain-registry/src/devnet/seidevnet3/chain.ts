@@ -1,20 +1,20 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'seidevnet3',
-  chain_id: 'sei-devnet-3',
-  pretty_name: 'Sei Devnet 3',
+  chainName: 'seidevnet3',
+  chainId: 'sei-devnet-3',
+  prettyName: 'Sei Devnet 3',
   status: 'live',
-  network_type: 'devnet',
-  bech32_prefix: 'sei',
-  daemon_name: 'seid',
-  node_home: '$HOME/.sei',
-  key_algos: ['secp256k1'],
+  networkType: 'devnet',
+  bech32Prefix: 'sei',
+  daemonName: 'seid',
+  nodeHome: '$HOME/.sei',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'usei',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   codebase: {
@@ -43,11 +43,11 @@ const info: Chain = {
   explorers: [{
       kind: 'explorers.guru',
       url: 'https://devnet.sei.explorers.guru',
-      tx_page: 'https://devnet.sei.explorers.guru/transaction/${txHash}'
+      txPage: 'https://devnet.sei.explorers.guru/transaction/${txHash}'
     }, {
       kind: 'Brochain',
       url: 'https://testnet-explorer.brocha.in/sei%20atlantic%202',
-      tx_page: 'https://testnet-explorer.brocha.in/sei%20atlantic%202/tx/${txHash}'
+      txPage: 'https://testnet-explorer.brocha.in/sei%20atlantic%202/tx/${txHash}'
     }]
 };
 export default info;

@@ -1,0 +1,201 @@
+import { AssetList } from '@chain-registry/v2-types';
+
+import * as _akashtestnet from './akashtestnet';
+import * as _archwaytestnet from './archwaytestnet';
+import * as _arkeonetworktestnet from './arkeonetworktestnet';
+import * as _artelatestnet from './artelatestnet';
+import * as _auratestnet from './auratestnet';
+import * as _axelartestnet from './axelartestnet';
+import * as _babylontestnet from './babylontestnet';
+import * as _babylontestnet1 from './babylontestnet1';
+import * as _bitcannadevnet from './bitcannadevnet';
+import * as _cascadiatestnet from './cascadiatestnet';
+import * as _celestiatestnet from './celestiatestnet';
+import * as _celestiatestnet3 from './celestiatestnet3';
+import * as _chain4energytestnet from './chain4energytestnet';
+import * as _cheqdtestnet from './cheqdtestnet';
+import * as _chimbatestnet from './chimbatestnet';
+import * as _composabletestnet from './composabletestnet';
+import * as _coolcattestnet from './coolcattestnet';
+import * as _coreumtestnet from './coreumtestnet';
+import * as _cosmoshubtestnet from './cosmoshubtestnet';
+import * as _cosmwasmtestnet from './cosmwasmtestnet';
+import * as _cosstestnet from './cosstestnet';
+import * as _cudostestnet from './cudostestnet';
+import * as _deardogetestnet from './deardogetestnet';
+import * as _desmostestnet from './desmostestnet';
+import * as _doravotatestnet from './doravotatestnet';
+import * as _doravotatestnet2 from './doravotatestnet2';
+import * as _dydxtestnet from './dydxtestnet';
+import * as _elystestnet from './elystestnet';
+import * as _empowertestnet from './empowertestnet';
+import * as _entrypointtestnet from './entrypointtestnet';
+import * as _evmostestnet from './evmostestnet';
+import * as _fetchhubtestnet from './fetchhubtestnet';
+import * as _finschiatestnet from './finschiatestnet';
+import * as _galacticatestnet from './galacticatestnet';
+import * as _gitopiatestnet from './gitopiatestnet';
+import * as _hedgetestnet from './hedgetestnet';
+import * as _humanstestnet from './humanstestnet';
+import * as _hypersigntestnet from './hypersigntestnet';
+import * as _impacthubtestnet from './impacthubtestnet';
+import * as _imversedtestnet from './imversedtestnet';
+import * as _injectivetestnet from './injectivetestnet';
+import * as _jackaltestnet from './jackaltestnet';
+import * as _junotestnet from './junotestnet';
+import * as _kichaintestnet from './kichaintestnet';
+import * as _kujiratestnet from './kujiratestnet';
+import * as _kyvetestnet from './kyvetestnet';
+import * as _lavatestnet from './lavatestnet';
+import * as _lavatestnet1 from './lavatestnet1';
+import * as _likecointestnet from './likecointestnet';
+import * as _lumenxtestnet from './lumenxtestnet';
+import * as _mantrachaintestnet from './mantrachaintestnet';
+import * as _marstestnet from './marstestnet';
+import * as _migalootestnet from './migalootestnet';
+import * as _neutrontestnet from './neutrontestnet';
+import * as _nobletestnet from './nobletestnet';
+import * as _noistestnet from './noistestnet';
+import * as _nolustestnet from './nolustestnet';
+import * as _nyxtestnet from './nyxtestnet';
+import * as _okp4testnet from './okp4testnet';
+import * as _osmosistestnet from './osmosistestnet';
+import * as _osmosistestnet4 from './osmosistestnet4';
+import * as _permtestnet from './permtestnet';
+import * as _persistencetestnet from './persistencetestnet';
+import * as _persistencetestnet2 from './persistencetestnet2';
+import * as _planqtestnet from './planqtestnet';
+import * as _pryzmtestnet from './pryzmtestnet';
+import * as _quasartestnet from './quasartestnet';
+import * as _quicksilvertestnet from './quicksilvertestnet';
+import * as _qwoyntestnet from './qwoyntestnet';
+import * as _rsprovidertestnet from './rsprovidertestnet';
+import * as _sagatestnet from './sagatestnet';
+import * as _secretnetworktestnet from './secretnetworktestnet';
+import * as _secretnetworktestnet2 from './secretnetworktestnet2';
+import * as _seitestnet from './seitestnet';
+import * as _seitestnet2 from './seitestnet2';
+import * as _selfchaindevnet from './selfchaindevnet';
+import * as _sgetestnet from './sgetestnet';
+import * as _sgetestnet4 from './sgetestnet4';
+import * as _sixtestnet from './sixtestnet';
+import * as _sourcetestnet from './sourcetestnet';
+import * as _stargazetestnet from './stargazetestnet';
+import * as _statesettestnet from './statesettestnet';
+import * as _stridetestnet from './stridetestnet';
+import * as _swisstroniktestnet from './swisstroniktestnet';
+import * as _temporaltestnet from './temporaltestnet';
+import * as _terpnettestnet from './terpnettestnet';
+import * as _terpnettestnet2 from './terpnettestnet2';
+import * as _terra2testnet from './terra2testnet';
+import * as _titantestnet from './titantestnet';
+import * as _ulastestnet from './ulastestnet';
+import * as _uniontestnet from './uniontestnet';
+import * as _upticktestnet from './upticktestnet';
+import * as _vincechaintestnet from './vincechaintestnet';
+import * as _wardenprotocoltestnet from './wardenprotocoltestnet';
+import * as _wavehashtestnet from './wavehashtestnet';
+import * as _xiontestnet from './xiontestnet';
+import * as _zetachaintestnet from './zetachaintestnet';
+
+const assetList: AssetList[] = [
+  _akashtestnet.assetList,
+  _archwaytestnet.assetList,
+  _arkeonetworktestnet.assetList,
+  _artelatestnet.assetList,
+  _auratestnet.assetList,
+  _axelartestnet.assetList,
+  _babylontestnet.assetList,
+  _babylontestnet1.assetList,
+  _bitcannadevnet.assetList,
+  _cascadiatestnet.assetList,
+  _celestiatestnet.assetList,
+  _celestiatestnet3.assetList,
+  _chain4energytestnet.assetList,
+  _cheqdtestnet.assetList,
+  _chimbatestnet.assetList,
+  _composabletestnet.assetList,
+  _coolcattestnet.assetList,
+  _coreumtestnet.assetList,
+  _cosmoshubtestnet.assetList,
+  _cosmwasmtestnet.assetList,
+  _cosstestnet.assetList,
+  _cudostestnet.assetList,
+  _deardogetestnet.assetList,
+  _desmostestnet.assetList,
+  _doravotatestnet.assetList,
+  _doravotatestnet2.assetList,
+  _dydxtestnet.assetList,
+  _elystestnet.assetList,
+  _empowertestnet.assetList,
+  _entrypointtestnet.assetList,
+  _evmostestnet.assetList,
+  _fetchhubtestnet.assetList,
+  _finschiatestnet.assetList,
+  _galacticatestnet.assetList,
+  _gitopiatestnet.assetList,
+  _hedgetestnet.assetList,
+  _humanstestnet.assetList,
+  _hypersigntestnet.assetList,
+  _impacthubtestnet.assetList,
+  _imversedtestnet.assetList,
+  _injectivetestnet.assetList,
+  _jackaltestnet.assetList,
+  _junotestnet.assetList,
+  _kichaintestnet.assetList,
+  _kujiratestnet.assetList,
+  _kyvetestnet.assetList,
+  _lavatestnet.assetList,
+  _lavatestnet1.assetList,
+  _likecointestnet.assetList,
+  _lumenxtestnet.assetList,
+  _mantrachaintestnet.assetList,
+  _marstestnet.assetList,
+  _migalootestnet.assetList,
+  _neutrontestnet.assetList,
+  _nobletestnet.assetList,
+  _noistestnet.assetList,
+  _nolustestnet.assetList,
+  _nyxtestnet.assetList,
+  _okp4testnet.assetList,
+  _osmosistestnet.assetList,
+  _osmosistestnet4.assetList,
+  _permtestnet.assetList,
+  _persistencetestnet.assetList,
+  _persistencetestnet2.assetList,
+  _planqtestnet.assetList,
+  _pryzmtestnet.assetList,
+  _quasartestnet.assetList,
+  _quicksilvertestnet.assetList,
+  _qwoyntestnet.assetList,
+  _rsprovidertestnet.assetList,
+  _sagatestnet.assetList,
+  _secretnetworktestnet.assetList,
+  _secretnetworktestnet2.assetList,
+  _seitestnet.assetList,
+  _seitestnet2.assetList,
+  _selfchaindevnet.assetList,
+  _sgetestnet.assetList,
+  _sgetestnet4.assetList,
+  _sixtestnet.assetList,
+  _sourcetestnet.assetList,
+  _stargazetestnet.assetList,
+  _statesettestnet.assetList,
+  _stridetestnet.assetList,
+  _swisstroniktestnet.assetList,
+  _temporaltestnet.assetList,
+  _terpnettestnet.assetList,
+  _terpnettestnet2.assetList,
+  _terra2testnet.assetList,
+  _titantestnet.assetList,
+  _ulastestnet.assetList,
+  _uniontestnet.assetList,
+  _upticktestnet.assetList,
+  _vincechaintestnet.assetList,
+  _wardenprotocoltestnet.assetList,
+  _wavehashtestnet.assetList,
+  _xiontestnet.assetList,
+  _zetachaintestnet.assetList
+];
+
+export default assetList;

@@ -1,32 +1,32 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'point',
+  chainName: 'point',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'Point Network',
-  chain_id: 'point_10687-1',
-  bech32_prefix: 'point',
-  node_home: '$HOME/.pointd',
-  daemon_name: 'pointd',
+  networkType: 'mainnet',
+  prettyName: 'Point Network',
+  chainId: 'point_10687-1',
+  bech32Prefix: 'point',
+  nodeHome: '$HOME/.pointd',
+  daemonName: 'pointd',
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'apoint',
-        low_gas_price: 5000000000,
-        average_gas_price: 25000000000,
-        high_gas_price: 40000000000
+        lowGasPrice: 5000000000,
+        averageGasPrice: 25000000000,
+        highGasPrice: 40000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'apoint'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.svg'
   },
@@ -85,7 +85,7 @@ const info: Chain = {
         provider: 'Indonode'
       }
     ],
-    "evm-http-jsonrpc": [{
+    evmHttpJsonrpc: [{
         address: 'https://rpc-mainnet-1.point.space',
         provider: 'Point Network'
       }, {
@@ -97,28 +97,28 @@ const info: Chain = {
     {
       kind: 'blockscout',
       url: 'https://explorer.pointnetwork.io/',
-      tx_page: 'https://explorer.pointnetwork.io/tx/${txHash}'
+      txPage: 'https://explorer.pointnetwork.io/tx/${txHash}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Point-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Point-Mainnet/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/Point-Mainnet/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://cosmos.pointnetwork.io/',
-      tx_page: 'https://cosmos.pointnetwork.io/point/tx/${txHash}'
+      txPage: 'https://cosmos.pointnetwork.io/point/tx/${txHash}'
     },
     {
       kind: 'NODEXPLORER',
       url: 'https://explorer.nodexcapital.com/point',
-      tx_page: 'https://explorer.nodexcapital.com/point/tx/${txHash}'
+      txPage: 'https://explorer.nodexcapital.com/point/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/point',
-      tx_page: 'https://atomscan.com/point/transactions/${txHash}',
-      account_page: 'https://atomscan.com/point/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/point/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/point/accounts/${accountAddress}'
     }
   ],
   images: [{

@@ -1,46 +1,46 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'noistestnet',
+  chainName: 'noistestnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://nois.network',
-  pretty_name: 'Nois',
-  chain_id: 'nois-testnet-005',
-  bech32_prefix: 'nois',
-  daemon_name: 'noisd',
-  node_home: '$HOME/.noisd',
-  key_algos: ['secp256k1'],
+  prettyName: 'Nois',
+  chainId: 'nois-testnet-005',
+  bech32Prefix: 'nois',
+  daemonName: 'noisd',
+  nodeHome: '$HOME/.noisd',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'unois',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.05,
-        average_gas_price: 0.05,
-        high_gas_price: 0.1
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.05,
+        averageGasPrice: 0.05,
+        highGasPrice: 0.1
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'unois'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1814400s'
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.45',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.30'
+    cosmosSdkVersion: '0.45',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.30'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
       theme: {
-        primary_color_hex: '#0C0914'
+        primaryColorHex: '#0C0914'
       }
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png'
   },
   apis: {
@@ -98,13 +98,13 @@ const info: Chain = {
   explorers: [{
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Nois-Testnet',
-      tx_page: 'https://explorer.stavr.tech/Nois-Testnet/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Nois-Testnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Nois-Testnet/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Nois-Testnet/account/${accountAddress}'
     }, {
       kind: 'explorers.guru',
       url: 'https://testnet.nois.explorers.guru',
-      tx_page: 'https://testnet.nois.explorers.guru/transaction/${txHash}',
-      account_page: 'https://testnet.nois.explorers.guru/account/${accountAddress}'
+      txPage: 'https://testnet.nois.explorers.guru/transaction/${txHash}',
+      accountPage: 'https://testnet.nois.explorers.guru/account/${accountAddress}'
     }],
   keywords: [
     'nois',

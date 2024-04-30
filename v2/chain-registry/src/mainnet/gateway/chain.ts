@@ -1,46 +1,46 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'gateway',
+  chainName: 'gateway',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://wormhole.com',
-  pretty_name: 'Wormhole Gateway',
-  chain_id: 'wormchain',
-  bech32_prefix: 'wormhole',
-  daemon_name: 'wormchaind',
-  node_home: '$HOME/.wormchaind',
-  key_algos: ['secp256k1'],
+  prettyName: 'Wormhole Gateway',
+  chainId: 'wormchain',
+  bech32Prefix: 'wormhole',
+  daemonName: 'wormchaind',
+  nodeHome: '$HOME/.wormchaind',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'utest',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0,
-        high_gas_price: 0
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0,
+        averageGasPrice: 0,
+        highGasPrice: 0
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uworm'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'github.com/wormhole-foundation/cosmos-sdk@v0.45.9-wormhole-2',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'github.com/wormhole-foundation/wasmd@v0.30.0-wormchain-2'
+    cosmosSdkVersion: 'github.com/wormhole-foundation/cosmos-sdk@v0.45.9-wormhole-2',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'github.com/wormhole-foundation/wasmd@v0.30.0-wormchain-2'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gateway/images/gateway_logo.png',
       theme: {
-        primary_color_hex: '#0F0C48'
+        primaryColorHex: '#0F0C48'
       }
     }, {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gateway/images/gateway_logo.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gateway/images/wormhole_logo.svg'
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gateway/images/gateway_logo.png'
   },
   apis: {
@@ -66,8 +66,8 @@ const info: Chain = {
   explorers: [{
       kind: 'bigdipper',
       url: 'https://bigdipper.live/wormhole',
-      tx_page: 'https://bigdipper.live/wormhole/transactions/${txHash}',
-      account_page: 'https://bigdipper.live/wormhole/accounts/${accountAddress}'
+      txPage: 'https://bigdipper.live/wormhole/transactions/${txHash}',
+      accountPage: 'https://bigdipper.live/wormhole/accounts/${accountAddress}'
     }],
   keywords: ['bridge']
 };

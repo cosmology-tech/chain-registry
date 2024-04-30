@@ -1,32 +1,32 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'regen',
+  chainName: 'regen',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.regen.network/',
-  pretty_name: 'Regen',
-  chain_id: 'regen-1',
-  bech32_prefix: 'regen',
-  daemon_name: 'regen',
-  node_home: '$HOME/.regen',
-  key_algos: ['secp256k1'],
+  prettyName: 'Regen',
+  chainId: 'regen-1',
+  bech32Prefix: 'regen',
+  daemonName: 'regen',
+  nodeHome: '$HOME/.regen',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uregen',
-        low_gas_price: 0.015,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        lowGasPrice: 0.015,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uregen'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46'
+    cosmosSdkVersion: '0.46'
   },
   description: 'Regen Network, a platform to originate and invest in high-integrity carbon and biodiversity credits from ecological regeneration projects.',
   apis: {
@@ -145,33 +145,33 @@ const info: Chain = {
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/regen',
-      tx_page: 'https://www.mintscan.io/regen/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/regen/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/regen/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/regen/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/regen',
-      tx_page: 'https://ezstaking.app/regen/txs/${txHash}',
-      account_page: 'https://ezstaking.app/regen/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/regen/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/regen/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Regen-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Regen-Mainnet/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/Regen-Mainnet/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/regen',
-      tx_page: 'https://ping.pub/regen/tx/${txHash}'
+      txPage: 'https://ping.pub/regen/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/regen-network',
-      tx_page: 'https://atomscan.com/regen-network/transactions/${txHash}',
-      account_page: 'https://atomscan.com/regen-network/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/regen-network/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/regen-network/accounts/${accountAddress}'
     }
   ],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg'
   },

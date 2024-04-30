@@ -1,26 +1,26 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'cheqdtestnet',
+  chainName: 'cheqdtestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'cheqd',
-  chain_id: 'cheqd-testnet-6',
-  bech32_prefix: 'cheqd',
-  daemon_name: 'cheqd-noded',
-  node_home: '$HOME/.cheqdnode',
+  networkType: 'testnet',
+  prettyName: 'cheqd',
+  chainId: 'cheqd-testnet-6',
+  bech32Prefix: 'cheqd',
+  daemonName: 'cheqd-noded',
+  nodeHome: '$HOME/.cheqdnode',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ncheq',
-        fixed_min_gas_price: 25,
-        low_gas_price: 50,
-        average_gas_price: 75,
-        high_gas_price: 100
+        fixedMinGasPrice: 25,
+        lowGasPrice: 50,
+        averageGasPrice: 75,
+        highGasPrice: 100
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46.10'
+    cosmosSdkVersion: '0.46.10'
   },
   apis: {
     rpc: [{
@@ -39,9 +39,9 @@ const info: Chain = {
   explorers: [{
       kind: 'bigdipper',
       url: 'https://testnet-explorer.cheqd.io/',
-      tx_page: 'https://testnet-explorer.cheqd.io/transactions/${txHash}'
+      txPage: 'https://testnet-explorer.cheqd.io/transactions/${txHash}'
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.svg'
   },

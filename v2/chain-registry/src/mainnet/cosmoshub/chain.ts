@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'cosmoshub',
-  chain_id: 'cosmoshub-4',
+  chainName: 'cosmoshub',
+  chainId: 'cosmoshub-4',
   website: 'https://cosmos.network/',
-  pretty_name: 'Cosmos Hub',
+  prettyName: 'Cosmos Hub',
   status: 'live',
-  network_type: 'mainnet',
-  bech32_prefix: 'cosmos',
-  daemon_name: 'gaiad',
-  node_home: '$HOME/.gaia',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  bech32Prefix: 'cosmos',
+  daemonName: 'gaiad',
+  nodeHome: '$HOME/.gaia',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uatom',
-        fixed_min_gas_price: 0.005,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.03
+        fixedMinGasPrice: 0.005,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.03
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uatom'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
   },
@@ -362,51 +362,51 @@ const info: Chain = {
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/cosmos',
-      tx_page: 'https://www.mintscan.io/cosmos/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/cosmos/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/cosmos/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/cosmos/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/cosmoshub',
-      tx_page: 'https://ezstaking.app/cosmoshub/txs/${txHash}',
-      account_page: 'https://ezstaking.app/cosmoshub/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/cosmoshub/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/cosmoshub/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/cosmos',
-      tx_page: 'https://ping.pub/cosmos/tx/${txHash}'
+      txPage: 'https://ping.pub/cosmos/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com',
-      tx_page: 'https://atomscan.com/transactions/${txHash}',
-      account_page: 'https://atomscan.com/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/accounts/${accountAddress}'
     },
     {
       kind: 'unichain',
       url: 'https://unicha.in/cosmos',
-      tx_page: 'https://unicha.in/cosmos/transaction/${txHash}'
+      txPage: 'https://unicha.in/cosmos/transaction/${txHash}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/cosmoshub',
-      tx_page: 'https://explorer.tcnetwork.io/cosmoshub/transaction/${txHash}'
+      txPage: 'https://explorer.tcnetwork.io/cosmoshub/transaction/${txHash}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/cosmos',
-      account_page: 'https://stakeflow.io/cosmos/accounts/${accountAddress}'
+      accountPage: 'https://stakeflow.io/cosmos/accounts/${accountAddress}'
     },
     {
       kind: 'Nodeist Explorer',
       url: 'https://exp.nodeist.net/cosmos',
-      tx_page: 'https://exp.nodeist.net/cosmos/tx/${txHash}'
+      txPage: 'https://exp.nodeist.net/cosmos/tx/${txHash}'
     },
     {
       kind: 'Inbloc',
       url: 'https://inbloc.org',
-      tx_page: 'https://inbloc.org/transactions/${txHash}',
-      account_page: 'https://inbloc.org/account/${accountAddress}'
+      txPage: 'https://inbloc.org/transactions/${txHash}',
+      accountPage: 'https://inbloc.org/account/${accountAddress}'
     }
   ],
   images: [{

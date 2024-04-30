@@ -1,54 +1,52 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'wardenprotocoltestnet',
+  chainName: 'wardenprotocoltestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Warden Protocol Alfama Testnet',
-  chain_id: 'alfama',
-  bech32_prefix: 'warden',
-  daemon_name: 'wardend',
-  node_home: '$HOME/.warden',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Warden Protocol Buenavista',
+  chainId: 'buenavista-1',
+  bech32Prefix: 'warden',
+  daemonName: 'wardend',
+  nodeHome: '$HOME/.warden',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uward',
-        fixed_min_gas_price: 0.005,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.03
+        fixedMinGasPrice: 0.005,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.03
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uward'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.50',
-    cosmwasm_enabled: false
+    cosmosSdkVersion: '0.50',
+    cosmwasmEnabled: false
   },
   apis: {
     rpc: [{
-        address: 'https://rpc.alfama.wardenprotocol.org/',
+        address: 'https://rpc.buenavista.wardenprotocol.org/',
         provider: 'Warden Protocol'
       }],
     rest: [{
-        address: 'https://rest.alfama.wardenprotocol.org/',
+        address: 'https://api.buenavista.wardenprotocol.org/',
         provider: 'Warden Protocol'
       }],
-    grpc: []
+    grpc: [{
+        address: 'https://grpc.buenavista.wardenprotocol.org/',
+        provider: 'Warden Protocol'
+      }]
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/wardenprotocol/images/ward.png'
   },
-  explorers: [{
-      kind: 'ping.pub',
-      url: 'https://warden-explorer.paranorm.pro/warden',
-      tx_page: 'https://warden-explorer.paranorm.pro/warden/tx/${txHash}',
-      account_page: 'https://warden-explorer.paranorm.pro/warden/account/${accountAddress}'
-    }],
+  explorers: [],
   keywords: ['testnet'],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/wardenprotocol/images/ward.png'

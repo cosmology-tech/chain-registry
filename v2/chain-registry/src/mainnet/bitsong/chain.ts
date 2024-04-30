@@ -1,36 +1,36 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'bitsong',
+  chainName: 'bitsong',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://bitsong.io/',
-  pretty_name: 'BitSong',
-  chain_id: 'bitsong-2b',
-  bech32_prefix: 'bitsong',
+  prettyName: 'BitSong',
+  chainId: 'bitsong-2b',
+  bech32Prefix: 'bitsong',
   slip44: 639,
-  daemon_name: 'bitsongd',
-  node_home: '$HOME/.bitsongd',
+  daemonName: 'bitsongd',
+  nodeHome: '$HOME/.bitsongd',
   codebase: {
-    cosmos_sdk_version: 'v0.45.16',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.33.0'
+    cosmosSdkVersion: 'v0.45.16',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'v0.33.0'
   },
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ubtsg',
-        fixed_min_gas_price: 0,
-        low_gas_price: 3,
-        average_gas_price: 10,
-        high_gas_price: 20
+        fixedMinGasPrice: 0,
+        lowGasPrice: 3,
+        averageGasPrice: 10,
+        highGasPrice: 20
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ubtsg'
       }]
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg'
   },
@@ -187,37 +187,37 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/bitsong',
-      tx_page: 'https://ezstaking.app/bitsong/txs/${txHash}',
-      account_page: 'https://ezstaking.app/bitsong/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/bitsong/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/bitsong/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/bitsong',
-      tx_page: 'https://ping.pub/bitsong/tx/${txHash}'
+      txPage: 'https://ping.pub/bitsong/tx/${txHash}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/bitsong',
-      tx_page: 'https://www.mintscan.io/bitsong/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/bitsong/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/bitsong/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/bitsong/accounts/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/bitsong',
-      tx_page: 'https://atomscan.com/bitsong/transactions/${txHash}',
-      account_page: 'https://atomscan.com/bitsong/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/bitsong/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/bitsong/accounts/${accountAddress}'
     },
     {
       kind: 'Safe Block',
       url: 'https://explorer.safeblok.space/bitsong',
-      tx_page: 'https://explorer.safeblock.space/bitsong/tx/${txHash}',
-      account_page: 'https://explorer.safeblock.space/bitsong/account/${accountAddress}'
+      txPage: 'https://explorer.safeblock.space/bitsong/tx/${txHash}',
+      accountPage: 'https://explorer.safeblock.space/bitsong/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Bitsong',
-      tx_page: 'https://explorer.stavr.tech/Bitsong/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Bitsong/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Bitsong/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Bitsong/account/${accountAddress}'
     }
   ],
   images: [{

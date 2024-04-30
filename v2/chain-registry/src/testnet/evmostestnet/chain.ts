@@ -1,32 +1,32 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'evmostestnet',
+  chainName: 'evmostestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Evmos Testnet',
-  chain_id: 'evmos_9000-4',
-  bech32_prefix: 'evmos',
-  daemon_name: 'evmosd',
-  node_home: '$HOME/.evmosd',
-  key_algos: ['ethsecp256k1'],
-  extra_codecs: ['ethermint'],
+  networkType: 'testnet',
+  prettyName: 'Evmos Testnet',
+  chainId: 'evmos_9000-4',
+  bech32Prefix: 'evmos',
+  daemonName: 'evmosd',
+  nodeHome: '$HOME/.evmosd',
+  keyAlgos: ['ethsecp256k1'],
+  extraCodecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'atevmos',
-        low_gas_price: 20000000000,
-        average_gas_price: 25000000000,
-        high_gas_price: 40000000000
+        lowGasPrice: 20000000000,
+        averageGasPrice: 25000000000,
+        highGasPrice: 40000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'atevmos'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46'
+    cosmosSdkVersion: '0.46'
   },
   apis: {
     rpc: [
@@ -68,11 +68,11 @@ const info: Chain = {
   explorers: [{
       kind: 'Mintscan',
       url: 'https://testnet.mintscan.io/evmos-testnet',
-      tx_page: 'https://testnet.mintscan.io/evmos-testnet/txs/${txHash}'
+      txPage: 'https://testnet.mintscan.io/evmos-testnet/txs/${txHash}'
     }, {
       kind: 'NodesGuru',
       url: 'https://testnet.evmos.explorers.guru/',
-      tx_page: 'https://testnet.evmos.explorers.guru/transaction/${txHash}'
+      txPage: 'https://testnet.evmos.explorers.guru/transaction/${txHash}'
     }]
 };
 export default info;

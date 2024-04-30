@@ -1,36 +1,36 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'saga',
+  chainName: 'saga',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.saga.xyz/',
-  pretty_name: 'Saga',
-  chain_id: 'ssc-1',
-  bech32_prefix: 'saga',
-  daemon_name: 'sscd',
-  node_home: '$HOME/.ssc',
-  key_algos: ['secp256k1'],
+  prettyName: 'Saga',
+  chainId: 'ssc-1',
+  bech32Prefix: 'saga',
+  daemonName: 'sscd',
+  nodeHome: '$HOME/.ssc',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'usaga'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1814400s'
     }
   },
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'usaga',
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'osmosis-labs/cosmos-sdk v0.47.5',
-    cosmwasm_enabled: false
+    cosmosSdkVersion: 'osmosis-labs/cosmos-sdk v0.47.5',
+    cosmwasmEnabled: false
   },
   apis: {
     rpc: [
@@ -92,7 +92,7 @@ const info: Chain = {
       }
     ]
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg'
   },
@@ -101,20 +101,20 @@ const info: Chain = {
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/saga',
-      tx_page: 'https://www.mintscan.io/saga/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/saga/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/saga/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/saga/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/saga',
-      tx_page: 'https://ezstaking.app/saga/txs/${txHash}',
-      account_page: 'https://ezstaking.app/saga/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/saga/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/saga/account/${accountAddress}'
     },
     {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.org/saga',
-      tx_page: 'https://explorer.nodestake.org/saga/tx/${txHash}',
-      account_page: 'https://explorer.nodestake.org/saga/account/${accountAddress}'
+      txPage: 'https://explorer.nodestake.org/saga/tx/${txHash}',
+      accountPage: 'https://explorer.nodestake.org/saga/account/${accountAddress}'
     }
   ],
   keywords: [],

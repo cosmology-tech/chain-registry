@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'quicksilvertestnet',
+  chainName: 'quicksilvertestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Quicksilver Testnet',
-  chain_id: 'rhye-2',
-  bech32_prefix: 'quick',
-  daemon_name: 'quicksilverd',
-  node_home: '$HOME/.quicksilverd',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Quicksilver Testnet',
+  chainId: 'rhye-2',
+  bech32Prefix: 'quick',
+  daemonName: 'quicksilverd',
+  nodeHome: '$HOME/.quicksilverd',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uqck',
-        low_gas_price: 0.0001,
-        average_gas_price: 0.0001,
-        high_gas_price: 0.00025
+        lowGasPrice: 0.0001,
+        averageGasPrice: 0.0001,
+        highGasPrice: 0.00025
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uqck'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.29'
+    cosmosSdkVersion: '0.46',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.29'
   },
-  logo_URIs: {
+  logoURIs: {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.svg'
   },
   apis: {
@@ -72,12 +72,12 @@ const info: Chain = {
   explorers: [{
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Quicksilver',
-      tx_page: 'https://explorer.stavr.tech/Quicksilver/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Quicksilver/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Quicksilver/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Quicksilver/account/${accountAddress}'
     }, {
       url: 'https://testnet.quicksilver.explorers.guru',
-      tx_page: 'https://testnet.quicksilver.explorers.guru/transaction/${txHash}',
-      account_page: 'https://testnet.quicksilver.explorers.guru/account/${accountAddress}'
+      txPage: 'https://testnet.quicksilver.explorers.guru/transaction/${txHash}',
+      accountPage: 'https://testnet.quicksilver.explorers.guru/account/${accountAddress}'
     }],
   images: [{
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.svg'

@@ -1,24 +1,24 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'doravotatestnet',
-  chain_id: 'vota-testnet',
-  pretty_name: 'Dora Vota Testnet',
+  chainName: 'doravotatestnet',
+  chainId: 'vota-testnet',
+  prettyName: 'Dora Vota Testnet',
   status: 'live',
-  network_type: 'testnet',
-  bech32_prefix: 'dora',
-  daemon_name: 'dorad',
-  node_home: '$HOME/.dora',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'dora',
+  daemonName: 'dorad',
+  nodeHome: '$HOME/.dora',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'peaka',
-        fixed_min_gas_price: 100000000000
+        fixedMinGasPrice: 100000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'peaka'
       }]
   },
@@ -42,7 +42,7 @@ const info: Chain = {
   explorers: [{
       kind: 'Dora Vota Ping Pub',
       url: 'https://maci-explorer-test.dorafactory.org',
-      tx_page: 'https://maci-explorer-test.dorafactory.org/dora/tx/${txHash}'
+      txPage: 'https://maci-explorer-test.dorafactory.org/dora/tx/${txHash}'
     }]
 };
 export default info;

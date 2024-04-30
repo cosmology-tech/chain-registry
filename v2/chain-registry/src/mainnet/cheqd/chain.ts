@@ -1,32 +1,32 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'cheqd',
+  chainName: 'cheqd',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.cheqd.io/',
-  pretty_name: 'Cheqd',
-  chain_id: 'cheqd-mainnet-1',
-  bech32_prefix: 'cheqd',
-  daemon_name: 'cheqd-noded',
-  node_home: '$HOME/.cheqdnode',
+  prettyName: 'Cheqd',
+  chainId: 'cheqd-mainnet-1',
+  bech32Prefix: 'cheqd',
+  daemonName: 'cheqd-noded',
+  nodeHome: '$HOME/.cheqdnode',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ncheq',
-        fixed_min_gas_price: 25,
-        low_gas_price: 50,
-        average_gas_price: 75,
-        high_gas_price: 100
+        fixedMinGasPrice: 25,
+        lowGasPrice: 50,
+        averageGasPrice: 75,
+        highGasPrice: 100
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ncheq'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46.10'
+    cosmosSdkVersion: 'cheqd/cosmos-sdk v0.47.10-height-mismatch'
   },
   apis: {
     rpc: [
@@ -148,43 +148,43 @@ const info: Chain = {
     {
       kind: 'bigdipper',
       url: 'https://bigdipper.live/cheqd',
-      tx_page: 'https://bigdipper.live/cheqd/transactions/${txHash}',
-      account_page: 'https://bigdipper.live/cheqd/accounts/${accountAddress}'
+      txPage: 'https://bigdipper.live/cheqd/transactions/${txHash}',
+      accountPage: 'https://bigdipper.live/cheqd/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/cheqd',
-      tx_page: 'https://ping.pub/cheqd/tx/${txHash}'
+      txPage: 'https://ping.pub/cheqd/tx/${txHash}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Cheqd-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Cheqd-Mainnet/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/Cheqd-Mainnet/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/cheqd',
-      tx_page: 'https://atomscan.com/cheqd/transactions/${txHash}',
-      account_page: 'https://atomscan.com/cheqd/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/cheqd/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/cheqd/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/cheqd',
-      tx_page: 'https://ezstaking.app/cheqd/txs/${txHash}',
-      account_page: 'https://ezstaking.app/cheqd/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/cheqd/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/cheqd/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://look.chillvalidation.com/cheqd',
-      tx_page: 'https://look.chillvalidation.com/cheqd/tx/${txHash}'
+      txPage: 'https://look.chillvalidation.com/cheqd/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.wildsage.io/cheqd',
-      tx_page: 'https://ping.wildsage.io/cheqd/tx/${txHash}'
+      txPage: 'https://ping.wildsage.io/cheqd/tx/${txHash}'
     }
   ],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.svg'
   },

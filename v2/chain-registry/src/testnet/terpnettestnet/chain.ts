@@ -1,27 +1,27 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'terpnettestnet',
+  chainName: 'terpnettestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Terp-Network',
-  chain_id: '90u-4',
-  bech32_prefix: 'terp',
-  daemon_name: 'terpd',
-  node_home: '$HOME/.terp',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Terp-Network',
+  chainId: '90u-4',
+  bech32Prefix: 'terp',
+  daemonName: 'terpd',
+  nodeHome: '$HOME/.terp',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uthiolx',
-        fixed_min_gas_price: 0.5,
-        low_gas_price: 0.75,
-        average_gas_price: 1,
-        high_gas_price: 1.25
+        fixedMinGasPrice: 0.5,
+        lowGasPrice: 0.75,
+        averageGasPrice: 1,
+        highGasPrice: 1.25
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uterpx'
       }]
   },
@@ -51,12 +51,12 @@ const info: Chain = {
   explorers: [{
       kind: 'Ping Pub',
       url: 'https://explorer.nodestake.top/terp-testnet',
-      tx_page: 'https://explorer.nodestake.top/terp-testnet/tx/${txHash}'
+      txPage: 'https://explorer.nodestake.top/terp-testnet/tx/${txHash}'
     }, {
       kind: 'NODEXPLORER',
       url: 'https://explorer.nodexcapital.com',
-      tx_page: 'https://explorer.nodexcapital.com/terp/tx/${txHash}',
-      account_page: 'https://explorer.nodexcapital.com/terp/account/{$accountAddress}'
+      txPage: 'https://explorer.nodexcapital.com/terp/tx/${txHash}',
+      accountPage: 'https://explorer.nodexcapital.com/terp/account/{$accountAddress}'
     }]
 };
 export default info;

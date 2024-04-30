@@ -1,29 +1,29 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'swisstroniktestnet',
-  chain_id: 'swisstronik_1291-1',
-  pretty_name: 'Swisstronik Testnet',
+  chainName: 'swisstroniktestnet',
+  chainId: 'swisstronik_1291-1',
+  prettyName: 'Swisstronik Testnet',
   status: 'live',
-  network_type: 'testnet',
-  bech32_prefix: 'swtr',
-  daemon_name: 'swisstronikd',
-  node_home: '$HOME/.swisstronik',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'swtr',
+  daemonName: 'swisstronikd',
+  nodeHome: '$HOME/.swisstronik',
+  keyAlgos: ['secp256k1'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uswtr',
-        fixed_min_gas_price: 7
+        fixedMinGasPrice: 7
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uswtr'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.47'
+    cosmosSdkVersion: '0.47'
   },
   apis: {
     rpc: [
@@ -58,7 +58,7 @@ const info: Chain = {
         address: 'testnet-swisstronik-grpc.genznodes.dev:20090',
         provider: 'genznodes'
       }],
-    "evm-http-jsonrpc": [
+    evmHttpJsonrpc: [
       {
         address: 'https://json-rpc.testnet.swisstronik.com',
         provider: 'Swisstronik'
@@ -76,7 +76,7 @@ const info: Chain = {
   explorers: [{
       kind: 'ping.pub',
       url: 'https://explorer-cosmos.testnet.swisstronik.com/swisstronik',
-      tx_page: 'https://explorer-cosmos.testnet.swisstronik.com/swisstronik/tx/${txHash}'
+      txPage: 'https://explorer-cosmos.testnet.swisstronik.com/swisstronik/tx/${txHash}'
     }]
 };
 export default info;

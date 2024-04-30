@@ -1,38 +1,38 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'microtick',
+  chainName: 'microtick',
   status: 'killed',
-  network_type: 'mainnet',
-  pretty_name: 'Microtick',
-  chain_id: 'microtick-1',
-  bech32_prefix: 'micro',
-  daemon_name: 'mtm',
+  networkType: 'mainnet',
+  prettyName: 'Microtick',
+  chainId: 'microtick-1',
+  bech32Prefix: 'micro',
+  daemonName: 'mtm',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'utick',
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'utick'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg'
   },
   explorers: [{
       kind: 'ping.pub',
       url: 'https://ping.pub/microtick',
-      tx_page: 'https://ping.pub/microtick/tx/${txHash}'
+      txPage: 'https://ping.pub/microtick/tx/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png',

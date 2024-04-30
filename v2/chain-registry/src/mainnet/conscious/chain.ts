@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'conscious',
+  chainName: 'conscious',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://cvn.io/',
-  pretty_name: 'ConsciousDAO',
-  chain_id: 'cvn_2032-1',
-  bech32_prefix: 'cvn',
-  node_home: '$HOME/.cvnd',
-  daemon_name: 'cvnd',
-  key_algos: ['ethsecp256k1'],
+  prettyName: 'ConsciousDAO',
+  chainId: 'cvn_2032-1',
+  bech32Prefix: 'cvn',
+  nodeHome: '$HOME/.cvnd',
+  daemonName: 'cvnd',
+  keyAlgos: ['ethsecp256k1'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'acvnt',
-        fixed_min_gas_price: 100000000,
-        low_gas_price: 100000000,
-        average_gas_price: 200000000,
-        high_gas_price: 300000000
+        fixedMinGasPrice: 100000000,
+        lowGasPrice: 100000000,
+        averageGasPrice: 200000000,
+        highGasPrice: 300000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'acvnt'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg'
   },
@@ -46,7 +46,7 @@ const info: Chain = {
         address: 'https://grpc.cvn.io',
         provider: 'cvn.io'
       }],
-    "evm-http-jsonrpc": [{
+    evmHttpJsonrpc: [{
         address: 'https://node.cvn.io/',
         provider: 'cvn'
       }, {
@@ -57,7 +57,7 @@ const info: Chain = {
   explorers: [{
       kind: 'blockscout',
       url: 'https://explore.consciousdao.com/',
-      tx_page: 'https://explore.consciousdao.com/tx/${txHash}'
+      txPage: 'https://explore.consciousdao.com/tx/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',

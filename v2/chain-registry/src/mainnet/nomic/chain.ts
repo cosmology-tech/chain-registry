@@ -1,37 +1,37 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'nomic',
+  chainName: 'nomic',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'Nomic',
+  networkType: 'mainnet',
+  prettyName: 'Nomic',
   website: 'https://nomic.io/',
-  chain_id: 'nomic-stakenet-3',
-  bech32_prefix: 'nomic',
-  daemon_name: 'nomic',
-  node_home: '$HOME/.nomic-stakenet-3',
+  chainId: 'nomic-stakenet-3',
+  bech32Prefix: 'nomic',
+  daemonName: 'nomic',
+  nodeHome: '$HOME/.nomic-stakenet-3',
   slip44: 118,
-  key_algos: ['secp256k1'],
+  keyAlgos: ['secp256k1'],
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'unom',
-        low_gas_price: 0,
-        average_gas_price: 0,
-        high_gas_price: 0
+        lowGasPrice: 0,
+        averageGasPrice: 0,
+        highGasPrice: 0
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'unom'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1209600s'
     }
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.svg'
   },
@@ -67,19 +67,19 @@ const info: Chain = {
   explorers: [{
       kind: 'bigdipper',
       url: 'https://bigdipper.live/nomic',
-      account_page: 'https://bigdipper.live/nomic/accounts/${accountAddress}',
-      tx_page: 'https://bigdipper.live/nomic/transactions/${txHash}'
+      accountPage: 'https://bigdipper.live/nomic/accounts/${accountAddress}',
+      txPage: 'https://bigdipper.live/nomic/transactions/${txHash}'
     }, {
       kind: 'Zenscan.io',
       url: 'https://nomic.zenscan.io/index.php',
-      account_page: 'https://nomic.zenscan.io/address.php?address=${accountAddress}',
-      tx_page: 'https://nomic.zenscan.io/transaction.php?hash=${txHash}'
+      accountPage: 'https://nomic.zenscan.io/address.php?address=${accountAddress}',
+      txPage: 'https://nomic.zenscan.io/transaction.php?hash=${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.svg'
     }],
-  bech32_config: {
+  bech32Config: {
     bech32PrefixAccAddr: 'nomic',
     bech32PrefixAccPub: 'nomic',
     bech32PrefixConsAddr: 'nomic',

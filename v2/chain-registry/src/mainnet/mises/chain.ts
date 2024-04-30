@@ -1,32 +1,32 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'mises',
+  chainName: 'mises',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://mises.site',
-  pretty_name: 'Mises',
-  chain_id: 'mainnet',
-  bech32_prefix: 'mises',
-  node_home: '$HOME/.misestm',
-  daemon_name: 'misestmd',
-  key_algos: ['secp256k1'],
+  prettyName: 'Mises',
+  chainId: 'mainnet',
+  bech32Prefix: 'mises',
+  nodeHome: '$HOME/.misestm',
+  daemonName: 'misestmd',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'umis',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'umis'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mises/images/mises.png'
   },
   apis: {
@@ -43,11 +43,11 @@ const info: Chain = {
   explorers: [{
       kind: 'Mises-GW Explorer',
       url: 'https://gw.mises.site',
-      tx_page: 'https://gw.mises.site/tx/${txHash}'
+      txPage: 'https://gw.mises.site/tx/${txHash}'
     }, {
       kind: 'Jambulmerah ping.pub based',
       url: 'https://explorer.jambulmerah.dev/mises',
-      tx_page: 'https://explorer.jambulmerah.dev/mises/tx/${txHash}'
+      txPage: 'https://explorer.jambulmerah.dev/mises/tx/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mises/images/mises.png'

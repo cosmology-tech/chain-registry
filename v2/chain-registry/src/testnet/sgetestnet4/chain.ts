@@ -1,21 +1,21 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'sgetestnet4',
-  chain_id: 'sge-network-4',
-  pretty_name: 'SGE Testnet4',
+  chainName: 'sgetestnet4',
+  chainId: 'sge-network-4',
+  prettyName: 'SGE Testnet4',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://sgenetwork.io',
-  bech32_prefix: 'sge',
-  daemon_name: 'usge',
-  node_home: '$HOME/.sged',
-  key_algos: ['secp256k1'],
+  bech32Prefix: 'sge',
+  daemonName: 'usge',
+  nodeHome: '$HOME/.sged',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'usge',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   codebase: {
@@ -58,16 +58,16 @@ const info: Chain = {
   explorers: [{
       kind: 'Sge BlockExplorer',
       url: 'https://blockexplorer.testnet.sgenetwork.io/',
-      tx_page: 'https://blockexplorer.testnet.sgenetwork.io/sge-network/tx/${txHash}'
+      txPage: 'https://blockexplorer.testnet.sgenetwork.io/sge-network/tx/${txHash}'
     }],
   images: [{
-      image_sync: {
-        chain_name: 'sge'
+      imageSync: {
+        chainName: 'sge'
       },
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'
   }

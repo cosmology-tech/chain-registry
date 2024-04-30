@@ -1,52 +1,52 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'osmosis',
+  chainName: 'osmosis',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://osmosis.zone/',
-  update_link: 'https://raw.githubusercontent.com/osmosis-labs/osmosis/main/chain.schema.json',
-  pretty_name: 'Osmosis',
-  chain_id: 'osmosis-1',
-  bech32_prefix: 'osmo',
-  daemon_name: 'osmosisd',
-  node_home: '$HOME/.osmosisd',
-  key_algos: ['secp256k1'],
+  updateLink: 'https://raw.githubusercontent.com/osmosis-labs/osmosis/main/chain.schema.json',
+  prettyName: 'Osmosis',
+  chainId: 'osmosis-1',
+  bech32Prefix: 'osmo',
+  daemonName: 'osmosisd',
+  nodeHome: '$HOME/.osmosisd',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uosmo',
-        fixed_min_gas_price: 0.0025,
-        low_gas_price: 0.0025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.0025,
+        lowGasPrice: 0.0025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uosmo'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1209600s'
     }
   },
   codebase: {
-    cosmos_sdk_version: 'osmosis-labs/cosmos-sdk v0.47.5-v24-osmo-5',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'osmosis-labs/wasmd v0.45.0-osmo'
+    cosmosSdkVersion: 'osmosis-labs/cosmos-sdk v0.47.5-v24-osmo-5',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'osmosis-labs/wasmd v0.45.0-osmo'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png',
       theme: {
-        primary_color_hex: '#231D4B'
+        primaryColorHex: '#231D4B'
       },
       layout: 'logo',
-      text_position: 'right'
+      textPosition: 'right'
     }, {
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
       layout: 'logomark'
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png'
   },
   description: 'Osmosis (OSMO) is the premier DEX and cross-chain DeFi hub within the Cosmos ecosystem, a network of over 50 sovereign, interoperable blockchains seamlessly connected through the Inter-Blockchain Communication Protocol (IBC). Pioneering in its approach, Osmosis offers a dynamic trading and liquidity provision experience, integrating non-IBC assets from other ecosystems, including Ethereum, Solana, Avalanche, and Polkadot. Initially adopting Balancer-style pools, Osmosis now also features a concentrated liquidity model that is orders of magnitude more capital efficient, meaning that significantly less liquidity is required to handle the same amount of trading volume with minimal slippage.\n\nAs a true appchain, Osmosis has greater control over the full blockchain stack than traditional smart contract DEXs, which must follow the code of the parent chain that it is built on. This fine-grained control has enabled, for example, the development of Superfluid Staking, an extension of Proof of Stake that allows assets at the application layer to be staked to secure the chain. The customizability of appchains also allows implementing features like the Protocol Revenue module, which enables Osmosis to conduct on-chain arbitrage on behalf of OSMO stakers, balancing prices across pools while generating real yield revenue from this volume. Additionally, as a sovereign appchain, Osmosis governance can vote on upgrades to the protocol. One example of this was the introduction of a Taker Fee, which switched on the collection of exchange fees to generate diverse yield from Osmosis volume and distribute it to OSMO stakers.\n\nOsmosis is bringing the full centralized exchange experience to the decentralized world by building a cross-chain native DEX and trading suite that connects all chains over IBC, including Ethereum and Bitcoin. To reach this goal, Osmosis hosts an ever-expanding suite of DeFi applications aimed at providing a one-stop experience that includes lending, credit, margin, DeFi strategy vaults, power perps, fiat on-ramps, NFTs, stablecoins, and more — all of the functionalities that centralized exchange offer and more, in the trust-minimized environment of decentralized finance.',
@@ -338,57 +338,57 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/osmosis',
-      tx_page: 'https://ezstaking.app/osmosis/txs/${txHash}',
-      account_page: 'https://ezstaking.app/osmosis/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/osmosis/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/osmosis/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/osmosis',
-      tx_page: 'https://www.mintscan.io/osmosis/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/osmosis/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/osmosis/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/osmosis/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/osmosis',
-      tx_page: 'https://ping.pub/osmosis/tx/${txHash}'
+      txPage: 'https://ping.pub/osmosis/tx/${txHash}'
     },
     {
       kind: 'explorers.guru',
       url: 'https://osmosis.explorers.guru',
-      tx_page: 'https://osmosis.explorers.guru/transaction/${txHash}',
-      account_page: 'https://osmosis.explorers.guru/account/${accountAddress}'
+      txPage: 'https://osmosis.explorers.guru/transaction/${txHash}',
+      accountPage: 'https://osmosis.explorers.guru/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/osmosis',
-      tx_page: 'https://atomscan.com/osmosis/transactions/${txHash}',
-      account_page: 'https://atomscan.com/osmosis/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/osmosis/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/osmosis/accounts/${accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/osmosis',
-      tx_page: 'https://explorer.tcnetwork.io/osmosis/transaction/${txHash}',
-      account_page: 'https://explorer.tcnetwork.io/osmosis/account/${accountAddress}'
+      txPage: 'https://explorer.tcnetwork.io/osmosis/transaction/${txHash}',
+      accountPage: 'https://explorer.tcnetwork.io/osmosis/account/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/osmosis',
-      account_page: 'https://stakeflow.io/osmosis/accounts/${accountAddress}'
+      accountPage: 'https://stakeflow.io/osmosis/accounts/${accountAddress}'
     },
     {
       kind: 'Nodeist Explorer',
       url: 'https://exp.nodeist.net/osmosis',
-      tx_page: 'https://exp.nodeist.net/osmosis/tx/${txHash}'
+      txPage: 'https://exp.nodeist.net/osmosis/tx/${txHash}'
     },
     {
       kind: 'L0vd.com ❤️',
       url: 'https://explorers.l0vd.com/osmosis-mainnet',
-      tx_page: 'https://explorers.l0vd.com/osmosis-mainnet/tx/${txHash}'
+      txPage: 'https://explorers.l0vd.com/osmosis-mainnet/tx/${txHash}'
     },
     {
       kind: 'Chainscope',
       url: 'https://chainsco.pe/osmosis',
-      tx_page: 'https://chainsco.pe/osmosis/tx/${txHash}'
+      txPage: 'https://chainsco.pe/osmosis/tx/${txHash}'
     }
   ],
   keywords: ['dex']

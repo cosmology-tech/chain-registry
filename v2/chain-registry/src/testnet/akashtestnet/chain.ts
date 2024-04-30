@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'akashtestnet',
+  chainName: 'akashtestnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://akash.network/',
-  pretty_name: 'Sandbox',
-  chain_id: 'sandbox-01',
-  bech32_prefix: 'akash',
-  daemon_name: 'akash',
-  node_home: '$HOME/.akash',
+  prettyName: 'Sandbox',
+  chainId: 'sandbox-01',
+  bech32Prefix: 'akash',
+  daemonName: 'akash',
+  nodeHome: '$HOME/.akash',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uakt',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uakt'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
   },
@@ -49,7 +49,7 @@ const info: Chain = {
   explorers: [{
       kind: 'ping.pub',
       url: 'https://explorer.sandbox-01.aksh.pw/akash',
-      tx_page: 'https://explorer.sandbox-01.aksh.pw/akash/tx/${txHash}'
+      txPage: 'https://explorer.sandbox-01.aksh.pw/akash/tx/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',

@@ -1,32 +1,32 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'loyal',
+  chainName: 'loyal',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.joinloyal.com/',
-  pretty_name: 'Loyal',
-  chain_id: 'loyal-main-02',
-  bech32_prefix: 'loyal',
-  daemon_name: 'loyald',
-  node_home: '$HOME/.loyal',
-  key_algos: ['secp256k1'],
+  prettyName: 'Loyal',
+  chainId: 'loyal-main-02',
+  bech32Prefix: 'loyal',
+  daemonName: 'loyald',
+  nodeHome: '$HOME/.loyal',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ulyl',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ulyl'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loyal/images/lyl.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loyal/images/lyl.svg'
   },
@@ -52,17 +52,17 @@ const info: Chain = {
     {
       kind: 'Loyal explorer',
       url: 'https://pingpub.joinloyal.io/loyal',
-      tx_page: 'https://pingpub.joinloyal.io/loyal/tx/${txHash}'
+      txPage: 'https://pingpub.joinloyal.io/loyal/tx/${txHash}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/loyal',
-      tx_page: 'https://explorer.tcnetwork.io/loyal/transaction/${txHash}'
+      txPage: 'https://explorer.tcnetwork.io/loyal/transaction/${txHash}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/loyal',
-      tx_page: 'https://explorer.nodestake.top/loyal/tx/${txHash}'
+      txPage: 'https://explorer.nodestake.top/loyal/tx/${txHash}'
     }
   ],
   images: [{

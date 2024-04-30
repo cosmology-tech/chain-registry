@@ -1,24 +1,24 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'deardogetestnet',
-  chain_id: 'deardoge-testnet',
-  pretty_name: 'Dear Doge Testnet',
+  chainName: 'deardogetestnet',
+  chainId: 'deardoge-testnet',
+  prettyName: 'Dear Doge Testnet',
   status: 'live',
-  network_type: 'testnet',
-  bech32_prefix: 'deardoge',
-  daemon_name: 'dogd',
-  node_home: '$HOME/.deardoge',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'deardoge',
+  daemonName: 'dogd',
+  nodeHome: '$HOME/.deardoge',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'udear',
-        fixed_min_gas_price: 0.25
+        fixedMinGasPrice: 0.25
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'udear'
       }]
   },
@@ -42,7 +42,7 @@ const info: Chain = {
   explorers: [{
       kind: 'Dear Doge Ping Pub',
       url: 'https://testnet-explorer.deardoge.org/deardoge',
-      tx_page: 'https://testnet-explorer.deardoge.org/deardoge/tx/${txHash}'
+      txPage: 'https://testnet-explorer.deardoge.org/deardoge/tx/${txHash}'
     }]
 };
 export default info;

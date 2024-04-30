@@ -1,11 +1,11 @@
-import assets from './assets';
+import assetLists from './asset-lists';
 import chains from './chains';
-import ibc from './ibc';
+import ibcData from './ibc-data';
 
 export default {
-  assets,
+  assetLists,
   chains,
-  ibc
+  ibcData
 };
 
-export { assets, chains, ibc };
+export { assetLists, chains, ibcData };

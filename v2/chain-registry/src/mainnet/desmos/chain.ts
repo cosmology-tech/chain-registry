@@ -1,37 +1,37 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'desmos',
+  chainName: 'desmos',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://desmos.network/',
-  pretty_name: 'Desmos',
-  chain_id: 'desmos-mainnet',
-  bech32_prefix: 'desmos',
-  daemon_name: 'desmos',
-  node_home: '$HOME/.desmos',
-  key_algos: ['secp256k1'],
+  prettyName: 'Desmos',
+  chainId: 'desmos-mainnet',
+  bech32Prefix: 'desmos',
+  daemonName: 'desmos',
+  nodeHome: '$HOME/.desmos',
+  keyAlgos: ['secp256k1'],
   slip44: 852,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'udsm',
-        fixed_min_gas_price: 0.001,
-        low_gas_price: 0.01,
-        average_gas_price: 0.03,
-        high_gas_price: 0.05
+        fixedMinGasPrice: 0.001,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.03,
+        highGasPrice: 0.05
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'udsm'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'desmos-labs/cosmos-sdk v0.47.9-desmos',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.45.0'
+    cosmosSdkVersion: 'desmos-labs/cosmos-sdk v0.47.9-desmos',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'v0.45.0'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg'
   },
@@ -155,40 +155,40 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/desmos',
-      tx_page: 'https://ezstaking.app/desmos/txs/${txHash}',
-      account_page: 'https://ezstaking.app/desmos/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/desmos/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/desmos/account/${accountAddress}'
     },
     {
       kind: 'bigdipper',
       url: 'https://bigdipper.live/desmos',
-      tx_page: 'https://bigdipper.live/desmos/transactions/${txHash}',
-      account_page: 'https://bigdipper.live/desmos/accounts/${accountAddress}'
+      txPage: 'https://bigdipper.live/desmos/transactions/${txHash}',
+      accountPage: 'https://bigdipper.live/desmos/accounts/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/desmos',
-      tx_page: 'https://www.mintscan.io/desmos/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/desmos/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/desmos/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/desmos/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/desmos',
-      tx_page: 'https://ping.pub/desmos/tx/${txHash}'
+      txPage: 'https://ping.pub/desmos/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/desmos',
-      tx_page: 'https://atomscan.com/desmos/transactions/${txHash}'
+      txPage: 'https://atomscan.com/desmos/transactions/${txHash}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/desmos',
-      tx_page: 'https://explorer.tcnetwork.io/desmos/transaction/${txHash}'
+      txPage: 'https://explorer.tcnetwork.io/desmos/transaction/${txHash}'
     },
     {
       kind: 'Decloud Nodes Lab',
       url: 'https://explorer.declab.pro/Desmos',
-      tx_page: 'https://explorer.declab.pro/Desmos/tx/${txHash}'
+      txPage: 'https://explorer.declab.pro/Desmos/tx/${txHash}'
     }
   ],
   images: [{

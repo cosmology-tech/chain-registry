@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'chain4energy',
+  chainName: 'chain4energy',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://c4e.io/',
-  pretty_name: 'C4E',
-  chain_id: 'perun-1',
-  bech32_prefix: 'c4e',
-  daemon_name: 'c4ed',
-  node_home: '$HOME/.c4e-chain',
-  key_algos: ['secp256k1'],
+  prettyName: 'C4E',
+  chainId: 'perun-1',
+  bech32Prefix: 'c4e',
+  daemonName: 'c4ed',
+  nodeHome: '$HOME/.c4e-chain',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uc4e',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uc4e'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chain4energy/images/c4e.png'
   },
   apis: {
@@ -352,68 +352,68 @@ const info: Chain = {
     {
       kind: 'explorer',
       url: 'https://explorer.apeironnodes.com/chain4energy',
-      tx_page: 'https://explorer.apeironnodes.com/chain4energy/transactions/${txHash}'
+      txPage: 'https://explorer.apeironnodes.com/chain4energy/transactions/${txHash}'
     },
     {
       kind: 'explorer',
       url: 'https://explorer.ppnv.space/c4e',
-      tx_page: 'https://explorer.ppnv.space/c4e/transactions/${txHash}'
+      txPage: 'https://explorer.ppnv.space/c4e/transactions/${txHash}'
     },
     {
       kind: 'explorer',
       url: 'https://explorer.c4e.io/',
-      tx_page: 'https://explorer.c4e.io/transactions/${txHash}'
+      txPage: 'https://explorer.c4e.io/transactions/${txHash}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/chain4energy',
-      tx_page: 'https://explorer.nodestake.top/chain4energy/transactions/${txHash}'
+      txPage: 'https://explorer.nodestake.top/chain4energy/transactions/${txHash}'
     },
     {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀 Explorer',
       url: 'https://exp.utsa.tech/c4e',
-      tx_page: 'https://exp.utsa.tech/c4e/tx/${txHash}'
+      txPage: 'https://exp.utsa.tech/c4e/tx/${txHash}'
     },
     {
       kind: '🔥STAVR🔥 Explorer',
       url: 'https://explorer.stavr.tech/c4e',
-      tx_page: 'https://explorer.stavr.tech/c4e/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/c4e/tx/${txHash}'
     },
     {
       kind: 'BccNodes Explorer',
       url: 'https://explorer.bccnodes.com/chain4energy',
-      tx_page: 'https://explorer.bccnodes.com/chain4energy/transactions/${txHash}'
+      txPage: 'https://explorer.bccnodes.com/chain4energy/transactions/${txHash}'
     },
     {
       kind: 'NODEXPLORER',
       url: 'https://explorer.nodexcapital.com/c4e',
-      tx_page: 'https://explorer.nodexcapital.com/c4e/transactions/${txHash}'
+      txPage: 'https://explorer.nodexcapital.com/c4e/transactions/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/chain4energy',
-      tx_page: 'https://atomscan.com/chain4energy/transactions/${txHash}',
-      account_page: 'https://atomscan.com/chain4energy/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/chain4energy/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/chain4energy/accounts/${accountAddress}'
     },
     {
       kind: 'AM Solutions Explorer',
       url: 'https://explorer.theamsolutions.info/c4e-main/staking',
-      tx_page: 'https://explorer.theamsolutions.info/c4e-main/transactions/${txHash}'
+      txPage: 'https://explorer.theamsolutions.info/c4e-main/transactions/${txHash}'
     },
     {
       kind: 'AlxVoy ⚡ ANODE.TEAM Explorer',
       url: 'https://main.anode.team/c4e',
-      tx_page: 'https://main.anode.team/c4e/tx/${txHash}'
+      txPage: 'https://main.anode.team/c4e/tx/${txHash}'
     },
     {
       kind: 'ScanRun',
       url: 'https://scanrun.io/c4e',
-      tx_page: 'https://scanrun.io/c4e/transactions/${txHash}'
+      txPage: 'https://scanrun.io/c4e/transactions/${txHash}'
     },
     {
       kind: 'Cryptech',
       url: 'https://explorers.cryptech.com.ua/chain4energy',
-      tx_page: 'https://explorers.cryptech.com.ua/chain4energy/tx/${txHash}'
+      txPage: 'https://explorers.cryptech.com.ua/chain4energy/tx/${txHash}'
     }
   ],
   images: [{

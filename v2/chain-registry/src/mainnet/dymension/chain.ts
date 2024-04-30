@@ -1,30 +1,30 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'dymension',
+  chainName: 'dymension',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://portal.dymension.xyz',
-  pretty_name: 'Dymension Hub',
-  chain_id: 'dymension_1100-1',
-  bech32_prefix: 'dym',
+  prettyName: 'Dymension Hub',
+  chainId: 'dymension_1100-1',
+  bech32Prefix: 'dym',
   slip44: 60,
-  node_home: '$HOME/.dymension',
-  daemon_name: 'dymd',
+  nodeHome: '$HOME/.dymension',
+  daemonName: 'dymd',
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'adym',
-        low_gas_price: 5000000000,
-        average_gas_price: 5000000000,
-        high_gas_price: 20000000000
+        lowGasPrice: 5000000000,
+        averageGasPrice: 5000000000,
+        highGasPrice: 20000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'adym'
       }]
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg'
   },
@@ -351,7 +351,7 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       }
     ],
-    "evm-http-jsonrpc": [
+    evmHttpJsonrpc: [
       {
         address: 'https://dym-m-json.agoranodes.com',
         provider: 'AgoraNodes'
@@ -390,44 +390,44 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/dymension',
-      tx_page: 'https://ezstaking.app/dymension/txs/${txHash}',
-      account_page: 'https://ezstaking.app/dymension/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/dymension/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/dymension/account/${accountAddress}'
     },
     {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.org/dymension',
-      tx_page: 'https://explorer.nodestake.org/dymension/tx/${txHash}',
-      account_page: 'https://explorer.nodestake.org/dymension/account/${accountAddress}'
+      txPage: 'https://explorer.nodestake.org/dymension/tx/${txHash}',
+      accountPage: 'https://explorer.nodestake.org/dymension/account/${accountAddress}'
     },
     {
       kind: 'Kynraze',
       url: 'https://explorer.kynraze.com/dymension',
-      tx_page: 'https://explorer.kynraze.com/dymension/tx/${txHash}',
-      account_page: 'https://explorer.kynraze.com/dymension/account/${accountAddress}'
+      txPage: 'https://explorer.kynraze.com/dymension/tx/${txHash}',
+      accountPage: 'https://explorer.kynraze.com/dymension/account/${accountAddress}'
     },
     {
       kind: 'Nodeist Explorer',
       url: 'https://explorer.ist/dymension',
-      tx_page: 'https://explorer.ist/dymension/tx/${txHash}',
-      account_page: 'https://explorer.ist/dymension/account/${accountAddress}'
+      txPage: 'https://explorer.ist/dymension/tx/${txHash}',
+      accountPage: 'https://explorer.ist/dymension/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Dymension-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Dymension-Mainnet/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Dymension-Mainnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Dymension-Mainnet/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Dymension-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'HoodScan',
       url: 'https://hoodscan.io/dymension',
-      tx_page: 'https://hoodscan.io/dymension/transactions/${txHash}',
-      account_page: 'https://hoodscan.io/dymension/accounts/${accountAddress}'
+      txPage: 'https://hoodscan.io/dymension/transactions/${txHash}',
+      accountPage: 'https://hoodscan.io/dymension/accounts/${accountAddress}'
     },
     {
       kind: 'posthuman',
       url: 'https://explorer.posthuman.digital/dymension',
-      tx_page: 'https://explorer.posthuman.digital/dymension/tx/${txHash}',
-      account_page: 'https://explorer.posthuman.digital/dymension/account/${accountAddress}'
+      txPage: 'https://explorer.posthuman.digital/dymension/tx/${txHash}',
+      accountPage: 'https://explorer.posthuman.digital/dymension/account/${accountAddress}'
     }
   ]
 };

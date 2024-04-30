@@ -1,49 +1,49 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'coreum',
+  chainName: 'coreum',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.coreum.com',
-  pretty_name: 'Coreum',
-  chain_id: 'coreum-mainnet-1',
-  bech32_prefix: 'core',
-  daemon_name: 'cored',
-  node_home: '$HOME/.core/coreum-mainnet-1',
-  key_algos: ['secp256k1'],
+  prettyName: 'Coreum',
+  chainId: 'coreum-mainnet-1',
+  bech32Prefix: 'core',
+  daemonName: 'cored',
+  nodeHome: '$HOME/.core/coreum-mainnet-1',
+  keyAlgos: ['secp256k1'],
   slip44: 990,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ucore',
-        fixed_min_gas_price: 0.03125,
-        low_gas_price: 0.0625,
-        average_gas_price: 0.0625,
-        high_gas_price: 62.5
+        fixedMinGasPrice: 0.03125,
+        lowGasPrice: 0.0625,
+        averageGasPrice: 0.0625,
+        highGasPrice: 62.5
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ucore'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '168h'
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.47',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.30'
+    cosmosSdkVersion: '0.47',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.30'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
       theme: {
-        primary_color_hex: '#25d695'
+        primaryColorHex: '#25d695'
       }
     }, {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png'
   },
   apis: {
@@ -162,44 +162,44 @@ const info: Chain = {
     {
       kind: 'Coreum',
       url: 'https://explorer.coreum.com/coreum',
-      tx_page: 'https://explorer.coreum.com/coreum/transactions/${txHash}',
-      account_page: 'https://explorer.coreum.com/coreum/account/${accountAddress}'
+      txPage: 'https://explorer.coreum.com/coreum/transactions/${txHash}',
+      accountPage: 'https://explorer.coreum.com/coreum/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/coreum',
-      tx_page: 'https://www.mintscan.io/coreum/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/coreum/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/coreum/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/coreum/accounts/${accountAddress}'
     },
     {
       kind: 'NODEXPLORER',
       url: 'https://explorer.nodexcapital.com/coreum',
-      tx_page: 'https://explorer.nodexcapital.com/coreum/txs/${txHash}',
-      account_page: 'https://explorer.nodexcapital.com/coreum/account/${accountAddress}'
+      txPage: 'https://explorer.nodexcapital.com/coreum/txs/${txHash}',
+      accountPage: 'https://explorer.nodexcapital.com/coreum/account/${accountAddress}'
     },
     {
       kind: 'Silk Nodes',
       url: 'https://explorer.silknodes.io/coreum',
-      tx_page: 'https://explorer.silknodes.io/coreum/tx/${txHash}',
-      account_page: 'https://explorer.silknodes.io/coreum/account/${accountAddress}'
+      txPage: 'https://explorer.silknodes.io/coreum/tx/${txHash}',
+      accountPage: 'https://explorer.silknodes.io/coreum/account/${accountAddress}'
     },
     {
       kind: '#SoloNation',
       url: 'https://explorer.solonation.io/core-main',
-      tx_page: 'https://explorer.solonation.io/core-main/tx/${txHash}',
-      account_page: 'https://explorer.solonation.io/core-main/account/${accountAddress}'
+      txPage: 'https://explorer.solonation.io/core-main/tx/${txHash}',
+      accountPage: 'https://explorer.solonation.io/core-main/account/${accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/coreum',
-      tx_page: 'https://explorer.tcnetwork.io/coreum/transaction/${txHash}',
-      account_page: 'https://explorer.tcnetwork.io/coreum/account/${accountAddress}'
+      txPage: 'https://explorer.tcnetwork.io/coreum/transaction/${txHash}',
+      accountPage: 'https://explorer.tcnetwork.io/coreum/account/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/coreum',
-      tx_page: 'https://ezstaking.app/coreum/txs/${txHash}',
-      account_page: 'https://ezstaking.app/coreum/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/coreum/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/coreum/account/${accountAddress}'
     }
   ],
   keywords: [

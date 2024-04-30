@@ -1,37 +1,37 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'realio',
+  chainName: 'realio',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://realio.network/',
-  pretty_name: 'Realio Network',
-  chain_id: 'realionetwork_3301-1',
-  bech32_prefix: 'realio',
-  node_home: '$HOME/.realio-network',
-  daemon_name: 'realio-networkd',
-  key_algos: ['ethsecp256k1'],
+  prettyName: 'Realio Network',
+  chainId: 'realionetwork_3301-1',
+  bech32Prefix: 'realio',
+  nodeHome: '$HOME/.realio-network',
+  daemonName: 'realio-networkd',
+  keyAlgos: ['ethsecp256k1'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ario',
-        fixed_min_gas_price: 1000000000,
-        low_gas_price: 4000000000,
-        average_gas_price: 5000000000,
-        high_gas_price: 8000000000
+        fixedMinGasPrice: 1000000000,
+        lowGasPrice: 4000000000,
+        averageGasPrice: 5000000000,
+        highGasPrice: 8000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ario'
       }, {
         denom: 'arst'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.46.12'
+    cosmosSdkVersion: 'v0.46.12'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rio.png'
   },
   apis: {
@@ -173,7 +173,7 @@ const info: Chain = {
         provider: 'Blockval'
       }
     ],
-    "evm-http-jsonrpc": [
+    evmHttpJsonrpc: [
       {
         address: 'https://realio-rpc-evm.genznodes.dev',
         provider: 'genznodes'
@@ -200,38 +200,38 @@ const info: Chain = {
     {
       kind: '🔥STAVR🔥 Explorer',
       url: 'https://explorer.stavr.tech/realio-mainnet',
-      tx_page: 'https://explorer.stavr.tech/realio-mainnet/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/realio-mainnet/account/{$accountAddress}'
+      txPage: 'https://explorer.stavr.tech/realio-mainnet/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/realio-mainnet/account/{$accountAddress}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/realio',
-      tx_page: 'https://explorer.nodestake.top/realio/tx/${txHash}',
-      account_page: 'https://explorer.nodestake.top/realio/account/{$accountAddress}'
+      txPage: 'https://explorer.nodestake.top/realio/tx/${txHash}',
+      accountPage: 'https://explorer.nodestake.top/realio/account/{$accountAddress}'
     },
     {
       kind: 'Sr20de Explorer',
       url: 'https://explorer.sr20de.xyz/Realio',
-      tx_page: 'https://explorer.sr20de.xyz/Realio/tx/${txHash}',
-      account_page: 'https://explorer.sr20de.xyz/Realio/account/{$accountAddress}'
+      txPage: 'https://explorer.sr20de.xyz/Realio/tx/${txHash}',
+      accountPage: 'https://explorer.sr20de.xyz/Realio/account/{$accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/realio',
-      tx_page: 'https://explorer.tcnetwork.io/realio/transaction/${txHash}',
-      account_page: 'https://explorer.tcnetwork.io/realio/account/${accountAddress}'
+      txPage: 'https://explorer.tcnetwork.io/realio/transaction/${txHash}',
+      accountPage: 'https://explorer.tcnetwork.io/realio/account/${accountAddress}'
     },
     {
       kind: 'Safe Block',
       url: 'https://explorer.safeblock.space/realio',
-      tx_page: 'https://explorer.safeblock.space/realio/tx/${txHash}',
-      account_page: 'https://explorer.safeblock.space/realio/account/${accountAddress}'
+      txPage: 'https://explorer.safeblock.space/realio/tx/${txHash}',
+      accountPage: 'https://explorer.safeblock.space/realio/account/${accountAddress}'
     },
     {
       kind: 'Decloud Nodes Lab',
       url: 'https://explorer.declab.pro/realio',
-      tx_page: 'https://explorer.declab.pro/realio/tx/${txHash}',
-      account_page: 'https://explorer.declab.pro/realio/account/{$accountAddress}'
+      txPage: 'https://explorer.declab.pro/realio/tx/${txHash}',
+      accountPage: 'https://explorer.declab.pro/realio/account/{$accountAddress}'
     }
   ],
   images: [{

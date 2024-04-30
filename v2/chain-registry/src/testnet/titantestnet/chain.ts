@@ -1,36 +1,36 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'titantestnet',
+  chainName: 'titantestnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://titanlab.io/',
-  pretty_name: 'Titan Testnet',
-  chain_id: 'titan_18889-1',
-  bech32_prefix: 'titan',
-  node_home: '$HOME/.titand',
-  daemon_name: 'titand',
-  key_algos: ['ethsecp256k1'],
-  extra_codecs: ['ethermint'],
+  prettyName: 'Titan Testnet',
+  chainId: 'titan_18889-1',
+  bech32Prefix: 'titan',
+  nodeHome: '$HOME/.titand',
+  daemonName: 'titand',
+  keyAlgos: ['ethsecp256k1'],
+  extraCodecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'atkx',
-        fixed_min_gas_price: 100000000000,
-        low_gas_price: 100000000000,
-        average_gas_price: 110000000000,
-        high_gas_price: 200000000000
+        fixedMinGasPrice: 100000000000,
+        lowGasPrice: 100000000000,
+        averageGasPrice: 110000000000,
+        highGasPrice: 200000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'atkx'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.47.6-titan.4',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.45.0'
+    cosmosSdkVersion: '0.47.6-titan.4',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.45.0'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/chain.png',
@@ -74,7 +74,7 @@ const info: Chain = {
       }
     ],
     grpc: [],
-    "evm-http-jsonrpc": [
+    evmHttpJsonrpc: [
       {
         address: 'https://titan-testnet-json-rpc.titanlab.io:443',
         provider: 'Titanlab.io'
@@ -92,10 +92,10 @@ const info: Chain = {
   explorers: [{
       kind: 'ping.pub',
       url: 'https://titan-testnet-explorer-light.titanlab.io',
-      tx_page: 'https://titan-testnet-explorer-light.titanlab.io/Titan%20Testnet/tx/${txHash}',
-      account_page: 'https://titan-testnet-explorer-light.titanlab.io/Titan%20Testnet/account/${accountAddress}'
+      txPage: 'https://titan-testnet-explorer-light.titanlab.io/Titan%20Testnet/tx/${txHash}',
+      accountPage: 'https://titan-testnet-explorer-light.titanlab.io/Titan%20Testnet/account/${accountAddress}'
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/chain.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/chain.svg'
   }

@@ -1,20 +1,20 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'statesettestnet',
+  chainName: 'statesettestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Stateset Testnet',
-  chain_id: 'stateset-1-testnet',
-  bech32_prefix: 'stateset',
-  daemon_name: 'statesetd',
-  node_home: '$HOME/.statesetd',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Stateset Testnet',
+  chainId: 'stateset-1-testnet',
+  bech32Prefix: 'stateset',
+  daemonName: 'statesetd',
+  nodeHome: '$HOME/.statesetd',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ustate',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   codebase: {
@@ -33,7 +33,7 @@ const info: Chain = {
   explorers: [{
       kind: 'bigdipper',
       url: 'https://explore.stateset.zone',
-      tx_page: 'https://explore.stateset.zone/transactions/${txHash}'
+      txPage: 'https://explore.stateset.zone/transactions/${txHash}'
     }]
 };
 export default info;

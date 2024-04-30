@@ -1,27 +1,27 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'terra2testnet',
+  chainName: 'terra2testnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://www.terra.money/',
-  pretty_name: 'Terra 2.0',
-  chain_id: 'pisco-1',
-  daemon_name: 'terrad',
-  node_home: '$HOME/.terra',
-  bech32_prefix: 'terra',
+  prettyName: 'Terra 2.0',
+  chainId: 'pisco-1',
+  daemonName: 'terrad',
+  nodeHome: '$HOME/.terra',
+  bech32Prefix: 'terra',
   slip44: 330,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uluna',
-        fixed_min_gas_price: 0.0125,
-        low_gas_price: 0.0125,
-        average_gas_price: 0.015,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.0125,
+        lowGasPrice: 0.0125,
+        averageGasPrice: 0.015,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uluna'
       }]
   },
@@ -51,7 +51,7 @@ const info: Chain = {
   explorers: [{
       kind: 'finder',
       url: 'http://finder.terra.money/testnet/',
-      tx_page: 'https://finder.terra.money/testnet/tx/${txHash}'
+      txPage: 'https://finder.terra.money/testnet/tx/${txHash}'
     }]
 };
 export default info;

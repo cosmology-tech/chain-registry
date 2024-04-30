@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'chain4energytestnet',
+  chainName: 'chain4energytestnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://c4e.io/',
-  pretty_name: 'Chain4Energy Testnet',
-  chain_id: 'babajaga-1',
-  bech32_prefix: 'c4e',
-  daemon_name: 'c4ed',
-  node_home: '$HOME/.c4e-chain',
-  key_algos: ['secp256k1'],
+  prettyName: 'Chain4Energy Testnet',
+  chainId: 'babajaga-1',
+  bech32Prefix: 'c4e',
+  daemonName: 'c4ed',
+  nodeHome: '$HOME/.c4e-chain',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uc4e',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.02,
-        average_gas_price: 0.03,
-        high_gas_price: 0.06
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.02,
+        averageGasPrice: 0.03,
+        highGasPrice: 0.06
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uc4e'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/chain4energytestnet/images/c4e.png'
   },
   apis: {
@@ -52,11 +52,11 @@ const info: Chain = {
   explorers: [{
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/C4E-Testnet',
-      tx_page: 'https://explorer.stavr.tech/C4E-Testnet/transactions/${txHash}'
+      txPage: 'https://explorer.stavr.tech/C4E-Testnet/transactions/${txHash}'
     }, {
       kind: 'explorer',
       url: 'https://explorer-testnet.c4e.io/',
-      tx_page: 'https://explorer-testnet.c4e.io/transactions/${txHash}'
+      txPage: 'https://explorer-testnet.c4e.io/transactions/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/chain4energytestnet/images/c4e.png'

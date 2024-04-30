@@ -1,36 +1,36 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'humans',
+  chainName: 'humans',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://humans.ai/',
-  pretty_name: 'Humans.ai',
-  chain_id: 'humans_1089-1',
-  bech32_prefix: 'human',
-  node_home: '$HOME/.humansd',
-  daemon_name: 'humansd',
-  key_algos: ['ethsecp256k1'],
-  extra_codecs: ['ethermint'],
+  prettyName: 'Humans.ai',
+  chainId: 'humans_1089-1',
+  bech32Prefix: 'human',
+  nodeHome: '$HOME/.humansd',
+  daemonName: 'humansd',
+  keyAlgos: ['ethsecp256k1'],
+  extraCodecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'aheart',
-        fixed_min_gas_price: 250000000,
-        low_gas_price: 80000000000,
-        average_gas_price: 100000000000,
-        high_gas_price: 160000000000
+        fixedMinGasPrice: 250000000,
+        lowGasPrice: 80000000000,
+        averageGasPrice: 100000000000,
+        highGasPrice: 160000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'aheart'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46.11'
+    cosmosSdkVersion: '0.46.11'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/humans/images/heart-dark-mode.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/humans/images/heart-dark-mode.svg'
   },
@@ -189,7 +189,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
-    "evm-http-jsonrpc": [
+    evmHttpJsonrpc: [
       {
         address: 'https://jsonrpc.humans.nodestake.top/',
         provider: 'NodeStake'
@@ -224,40 +224,40 @@ const info: Chain = {
     {
       kind: 'mintscan',
       url: 'https://mintscan.io/humans',
-      tx_page: 'https://www.mintscan.io/humans/tx/${txHash}'
+      txPage: 'https://www.mintscan.io/humans/tx/${txHash}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/humans',
-      tx_page: 'https://ezstaking.app/humans/txs/${txHash}',
-      account_page: 'https://ezstaking.app/humans/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/humans/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/humans/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/humans',
-      tx_page: 'https://ping.pub/humans/tx/${txHash}'
+      txPage: 'https://ping.pub/humans/tx/${txHash}'
     },
     {
       kind: 'explorers.guru',
       url: 'https://humans.explorers.guru',
-      tx_page: 'https://humans.explorers.guru/transaction/${txHash}'
+      txPage: 'https://humans.explorers.guru/transaction/${txHash}'
     },
     {
       kind: 'exploreme',
       url: 'https://humansai.exploreme.pro/',
-      tx_page: 'https://humans.exploreme.pro/transaction/${txHash}'
+      txPage: 'https://humans.exploreme.pro/transaction/${txHash}'
     },
     {
       kind: 'itrocket',
       url: 'https://mainnet.itrocket.net/humans/staking',
-      tx_page: 'https://mainnet.itrocket.net/humans/tx/${txHash}',
-      account_page: 'https://mainnet.itrocket.net/humans/account/${accountAddress}'
+      txPage: 'https://mainnet.itrocket.net/humans/tx/${txHash}',
+      accountPage: 'https://mainnet.itrocket.net/humans/account/${accountAddress}'
     },
     {
       kind: 'posthuman',
       url: 'https://explorer.posthuman.digital/humans',
-      tx_page: 'https://explorer.posthuman.digital/humans/tx/${txHash}',
-      account_page: 'https://explorer.posthuman.digital/humans/account/${accountAddress}'
+      txPage: 'https://explorer.posthuman.digital/humans/tx/${txHash}',
+      accountPage: 'https://explorer.posthuman.digital/humans/account/${accountAddress}'
     }
   ],
   images: [{

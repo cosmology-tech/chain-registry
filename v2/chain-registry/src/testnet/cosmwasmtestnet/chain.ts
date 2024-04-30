@@ -1,33 +1,33 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'cosmwasmtestnet',
+  chainName: 'cosmwasmtestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'CosmWasm Testnet',
-  chain_id: 'malaga-420',
-  bech32_prefix: 'wasm',
-  daemon_name: 'wasmd',
-  node_home: '$HOME/.wasmd',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'CosmWasm Testnet',
+  chainId: 'malaga-420',
+  bech32Prefix: 'wasm',
+  daemonName: 'wasmd',
+  nodeHome: '$HOME/.wasmd',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'umlg',
-        low_gas_price: 0.03,
-        average_gas_price: 0.04,
-        high_gas_price: 0.05
+        lowGasPrice: 0.03,
+        averageGasPrice: 0.04,
+        highGasPrice: 0.05
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uand'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.45',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.27'
+    cosmosSdkVersion: '0.45',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.27'
   },
   apis: {
     rpc: [{
@@ -42,7 +42,7 @@ const info: Chain = {
   explorers: [{
       kind: 'BIG DIPPER',
       url: 'https://block-explorer.malaga-420.cosmwasm.com/',
-      tx_page: 'https://block-explorer.malaga-420.cosmwasm.com/transactions/${txHash}'
+      txPage: 'https://block-explorer.malaga-420.cosmwasm.com/transactions/${txHash}'
     }]
 };
 export default info;

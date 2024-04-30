@@ -1,5 +1,5 @@
-import _assets from './assets';
+import _assetList from './asset-list';
 import _chain from './chain';
 
-export const assets = _assets;
+export const assetList = _assetList;
 export const chain = _chain;

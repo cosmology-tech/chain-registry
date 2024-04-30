@@ -1,32 +1,32 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'zetachaintestnet',
+  chainName: 'zetachaintestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'ZetaChain Testnet',
-  chain_id: 'athens_7001-1',
-  bech32_prefix: 'zeta',
-  daemon_name: 'zetacored',
-  node_home: '$HOME/.zetacored',
-  key_algos: ['ethsecp256k1'],
-  extra_codecs: ['ethermint'],
+  networkType: 'testnet',
+  prettyName: 'ZetaChain Testnet',
+  chainId: 'athens_7001-1',
+  bech32Prefix: 'zeta',
+  daemonName: 'zetacored',
+  nodeHome: '$HOME/.zetacored',
+  keyAlgos: ['ethsecp256k1'],
+  extraCodecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'azeta',
-        low_gas_price: 20000000000,
-        average_gas_price: 25000000000,
-        high_gas_price: 40000000000
+        lowGasPrice: 20000000000,
+        averageGasPrice: 25000000000,
+        highGasPrice: 40000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'azeta'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46'
+    cosmosSdkVersion: '0.46'
   },
   apis: {
     rpc: [{
@@ -48,11 +48,11 @@ const info: Chain = {
   explorers: [{
       kind: 'ZetaScan',
       url: 'https://athens.explorer.zetachain.com/',
-      tx_page: 'https://athens.explorer.zetachain.com/cc/tx/${txHash}'
+      txPage: 'https://athens.explorer.zetachain.com/cc/tx/${txHash}'
     }, {
       kind: 'BlockScout',
       url: 'https://zetachain-athens-3.blockscout.com/',
-      tx_page: 'https://zetachain-athens-3.blockscout.com/tx/${txHash}'
+      txPage: 'https://zetachain-athens-3.blockscout.com/tx/${txHash}'
     }]
 };
 export default info;

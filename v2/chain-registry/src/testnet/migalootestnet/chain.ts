@@ -1,39 +1,39 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'migalootestnet',
+  chainName: 'migalootestnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://www.whitewhale.money/',
-  pretty_name: 'Migaloo Testnet',
-  chain_id: 'narwhal-2',
-  bech32_prefix: 'migaloo',
-  daemon_name: 'migalood',
-  node_home: '$HOME/.migalood',
-  key_algos: ['secp256k1'],
+  prettyName: 'Migaloo Testnet',
+  chainId: 'narwhal-2',
+  bech32Prefix: 'migaloo',
+  daemonName: 'migalood',
+  nodeHome: '$HOME/.migalood',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uwhale',
-        fixed_min_gas_price: 0.25,
-        low_gas_price: 0.25,
-        average_gas_price: 0.5,
-        high_gas_price: 0.75
+        fixedMinGasPrice: 0.25,
+        lowGasPrice: 0.25,
+        averageGasPrice: 0.5,
+        highGasPrice: 0.75
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uwhale'
       }]
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.svg'
   },
   codebase: {
-    cosmos_sdk_version: '0.45',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.28'
+    cosmosSdkVersion: '0.45',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.28'
   },
   apis: {
     rpc: [{
@@ -49,7 +49,7 @@ const info: Chain = {
   explorers: [{
       kind: 'ping.pub',
       url: 'https://ping.pfc.zone/narwhal-testnet',
-      tx_page: 'https://ping.pfc.zone/narwhal-testnet/tx/${txHash}'
+      txPage: 'https://ping.pfc.zone/narwhal-testnet/tx/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.png',

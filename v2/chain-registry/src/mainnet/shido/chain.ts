@@ -1,38 +1,38 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'shido',
+  chainName: 'shido',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://shido.io/',
-  pretty_name: 'Shido',
-  chain_id: 'shido_9008-1',
-  bech32_prefix: 'shido',
-  node_home: '$HOME/.shidod',
-  daemon_name: 'shidod',
-  key_algos: ['ethsecp256k1'],
-  extra_codecs: ['ethermint'],
+  prettyName: 'Shido',
+  chainId: 'shido_9008-1',
+  bech32Prefix: 'shido',
+  nodeHome: '$HOME/.shidod',
+  daemonName: 'shidod',
+  keyAlgos: ['ethsecp256k1'],
+  extraCodecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'shido',
-        fixed_min_gas_price: 250000000,
-        low_gas_price: 20000000000,
-        average_gas_price: 25000000000,
-        high_gas_price: 40000000000
+        fixedMinGasPrice: 250000000,
+        lowGasPrice: 20000000000,
+        averageGasPrice: 25000000000,
+        highGasPrice: 40000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'shido'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.4',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.45.0'
+    cosmosSdkVersion: 'v0.47.4',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'v0.45.0'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg'
   },
@@ -59,7 +59,7 @@ const info: Chain = {
         address: 'https://grpc-web.shidoscan.com',
         provider: 'shido.io'
       }],
-    "evm-http-jsonrpc": [
+    evmHttpJsonrpc: [
       {
         address: 'https://rpc-nodes.shidoscan.com',
         provider: 'Shido'
@@ -77,13 +77,13 @@ const info: Chain = {
   explorers: [{
       kind: 'shido',
       url: 'https://shidoscan.com',
-      tx_page: 'https://shidoscan.com/tx/${txHash}',
-      account_page: 'https://shidoscan.com/address/${accountAddress}'
+      txPage: 'https://shidoscan.com/tx/${txHash}',
+      accountPage: 'https://shidoscan.com/address/${accountAddress}'
     }, {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/shido',
-      tx_page: 'https://explorer.whenmoonwhenlambo.money/shido/tx/${txHash}',
-      account_page: 'https://explorer.whenmoonwhenlambo.money/shido/account/${accountAddress}'
+      txPage: 'https://explorer.whenmoonwhenlambo.money/shido/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/shido/account/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',

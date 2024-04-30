@@ -1,40 +1,40 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'aura',
+  chainName: 'aura',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://aura.network/',
-  pretty_name: 'Aura Network',
-  chain_id: 'xstaxy-1',
-  bech32_prefix: 'aura',
-  daemon_name: 'aurad',
-  node_home: '$HOME/.aura',
-  key_algos: ['secp256k1'],
+  prettyName: 'Aura Network',
+  chainId: 'xstaxy-1',
+  bech32Prefix: 'aura',
+  daemonName: 'aurad',
+  nodeHome: '$HOME/.aura',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uaura',
-        fixed_min_gas_price: 0.001,
-        low_gas_price: 0.001,
-        average_gas_price: 0.002,
-        high_gas_price: 0.0025
+        fixedMinGasPrice: 0.001,
+        lowGasPrice: 0.001,
+        averageGasPrice: 0.002,
+        highGasPrice: 0.0025
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uaura'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1209600s'
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.47.5',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.42.0'
+    cosmosSdkVersion: '0.47.5',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.42.0'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.svg'
   },
@@ -254,50 +254,50 @@ const info: Chain = {
     {
       kind: 'aurascan',
       url: 'https://aurascan.io',
-      tx_page: 'https://aurascan.io/transaction/${txHash}',
-      account_page: 'https://aurascan.io/account/${accountAddress}'
+      txPage: 'https://aurascan.io/transaction/${txHash}',
+      accountPage: 'https://aurascan.io/account/${accountAddress}'
     },
     {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀 Explorer',
       url: 'https://exp.utsa.tech/aura',
-      tx_page: 'https://exp.utsa.tech/aura/tx/${txHash}',
-      account_page: 'https://exp.utsa.tech/aura/account/${accountAddress}'
+      txPage: 'https://exp.utsa.tech/aura/tx/${txHash}',
+      accountPage: 'https://exp.utsa.tech/aura/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥 Explorer',
       url: 'https://explorer.stavr.tech/Aura-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/aura-mainnet/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/aura-mainnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/aura-mainnet/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/aura-mainnet/account/${accountAddress}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/aura',
-      tx_page: 'https://explorer.nodestake.top/aura/tx/${txHash}',
-      account_page: 'https://explorer.nodestake.top/aura/account/${accountAddress}'
+      txPage: 'https://explorer.nodestake.top/aura/tx/${txHash}',
+      accountPage: 'https://explorer.nodestake.top/aura/account/${accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/aura',
-      tx_page: 'https://explorer.tcnetwork.io/aura/transaction/${txHash}',
-      account_page: 'https://explorer.tcnetwork.io/aura/account/${accountAddress}'
+      txPage: 'https://explorer.tcnetwork.io/aura/transaction/${txHash}',
+      accountPage: 'https://explorer.tcnetwork.io/aura/account/${accountAddress}'
     },
     {
       kind: 'Stake-Take',
       url: 'https://explorer.stake-take.com/aura',
-      tx_page: 'https://explorer.stake-take.com/aura/tx/${txHash}',
-      account_page: 'https://explorer.stake-take.com/aura/account/${accountAddress}'
+      txPage: 'https://explorer.stake-take.com/aura/tx/${txHash}',
+      accountPage: 'https://explorer.stake-take.com/aura/account/${accountAddress}'
     },
     {
       kind: 'Safe Block',
       url: 'https://explorer.safeblock.space/aura',
-      tx_page: 'https://explorer.safeblock.space/aura/tx/${txHash}',
-      account_page: 'https://explorer.safeblock.space/aura/account/${accountAddress}'
+      txPage: 'https://explorer.safeblock.space/aura/tx/${txHash}',
+      accountPage: 'https://explorer.safeblock.space/aura/account/${accountAddress}'
     },
     {
       kind: 'STAKR.space explorer',
       url: 'https://explorer.stakr.space/aura/',
-      tx_page: 'https://explorer.stakr.space/aura/tx/${txHash}',
-      account_page: 'https://explorer.stakr.space/aura/account/${accountAddress}'
+      txPage: 'https://explorer.stakr.space/aura/tx/${txHash}',
+      accountPage: 'https://explorer.stakr.space/aura/account/${accountAddress}'
     }
   ],
   images: [{

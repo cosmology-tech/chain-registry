@@ -1,28 +1,28 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'stargazetestnet',
+  chainName: 'stargazetestnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://stargaze.zone/',
-  pretty_name: 'Stargaze Testnet',
-  chain_id: 'elgafar-1',
-  bech32_prefix: 'stars',
-  daemon_name: 'starsd',
-  node_home: '$HOME/.starsd',
+  prettyName: 'Stargaze Testnet',
+  chainId: 'elgafar-1',
+  bech32Prefix: 'stars',
+  daemonName: 'starsd',
+  nodeHome: '$HOME/.starsd',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ustars',
-        low_gas_price: 0.03,
-        average_gas_price: 0.04,
-        high_gas_price: 0.05
+        lowGasPrice: 0.03,
+        averageGasPrice: 0.04,
+        highGasPrice: 0.05
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.45',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.28'
+    cosmosSdkVersion: '0.45',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.28'
   },
   apis: {
     rpc: [{
@@ -50,7 +50,7 @@ const info: Chain = {
   explorers: [{
       kind: 'ping.pub',
       url: 'https://testnet-explorer.publicawesome.dev/stargaze',
-      tx_page: 'https://testnet-explorer.publicawesome.dev/stargaze/tx/${txHash}'
+      txPage: 'https://testnet-explorer.publicawesome.dev/stargaze/tx/${txHash}'
     }]
 };
 export default info;

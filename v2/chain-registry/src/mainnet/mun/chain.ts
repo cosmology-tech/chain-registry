@@ -1,32 +1,32 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'mun',
+  chainName: 'mun',
   website: 'https://mun.money',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'Mun',
-  chain_id: 'mun-1',
-  bech32_prefix: 'mun',
-  daemon_name: 'mund',
-  node_home: '$HOME/.mun',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  prettyName: 'Mun',
+  chainId: 'mun-1',
+  bech32Prefix: 'mun',
+  daemonName: 'mund',
+  nodeHome: '$HOME/.mun',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'umun',
-        fixed_min_gas_price: 0.025
+        fixedMinGasPrice: 0.025
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'umun'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mun/images/mun.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mun/images/mun.svg'
   },
@@ -64,25 +64,25 @@ const info: Chain = {
   explorers: [
     {
       url: 'https://explorer.mun.money/mun',
-      tx_page: 'https://explorer.mun.money/mun/${txHash}'
+      txPage: 'https://explorer.mun.money/mun/${txHash}'
     },
     {
       url: 'https://explorer.indonode.net/mun/staking',
-      tx_page: 'https://explorer.indonode.net/mun/${txHash}'
+      txPage: 'https://explorer.indonode.net/mun/${txHash}'
     },
     {
       url: 'https://explorer.konsortech.xyz/mun/staking',
-      tx_page: 'https://explorer.konsortech.xyz/mun/${txHash}'
+      txPage: 'https://explorer.konsortech.xyz/mun/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/mun',
-      tx_page: 'https://ping.pub/mun/${txHash}'
+      txPage: 'https://ping.pub/mun/${txHash}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/mun',
-      tx_page: 'https://explorer.tcnetwork.io/mun/transaction/${txHash}'
+      txPage: 'https://explorer.tcnetwork.io/mun/transaction/${txHash}'
     }
   ],
   images: [{

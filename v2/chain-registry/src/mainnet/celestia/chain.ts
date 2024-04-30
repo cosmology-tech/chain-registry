@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'celestia',
-  chain_id: 'celestia',
-  pretty_name: 'Celestia',
+  chainName: 'celestia',
+  chainId: 'celestia',
+  prettyName: 'Celestia',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://celestia.org/',
-  bech32_prefix: 'celestia',
-  daemon_name: 'celestia-appd',
-  node_home: '$HOME/.celestia-app',
-  key_algos: ['secp256k1'],
+  bech32Prefix: 'celestia',
+  daemonName: 'celestia-appd',
+  nodeHome: '$HOME/.celestia-app',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'utia',
-        fixed_min_gas_price: 0.002,
-        low_gas_price: 0.01,
-        average_gas_price: 0.02,
-        high_gas_price: 0.1
+        fixedMinGasPrice: 0.002,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.02,
+        highGasPrice: 0.1
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'utia'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.46.16'
+    cosmosSdkVersion: 'v0.46.16'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
   },
@@ -314,43 +314,43 @@ const info: Chain = {
     {
       kind: 'Mintscan',
       url: 'https://mintscan.io/celestia',
-      tx_page: 'https://mintscan.io/celestia/txs/${txHash}',
-      account_page: 'https://mintscan.io/celestia/address/${accountAddress}'
+      txPage: 'https://mintscan.io/celestia/txs/${txHash}',
+      accountPage: 'https://mintscan.io/celestia/address/${accountAddress}'
     },
     {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.top/celestia/',
-      tx_page: 'https://explorer.nodestake.top/celestia/txs/${txHash}',
-      account_page: 'https://explorer.nodestake.top/celestia/account/${accountAddress}'
+      txPage: 'https://explorer.nodestake.top/celestia/txs/${txHash}',
+      accountPage: 'https://explorer.nodestake.top/celestia/account/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/celestia',
-      tx_page: 'https://stakeflow.io/celestia/transactions/${txHash}'
+      txPage: 'https://stakeflow.io/celestia/transactions/${txHash}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/celestia',
-      tx_page: 'https://explorer.tcnetwork.io/celestia/transaction/${txHash}',
-      account_page: 'https://explorer.tcnetwork.io/celestia/account/${accountAddress}'
+      txPage: 'https://explorer.tcnetwork.io/celestia/transaction/${txHash}',
+      accountPage: 'https://explorer.tcnetwork.io/celestia/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Celestia-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Celestia-Mainnet/transaction/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Celestia-Mainnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Celestia-Mainnet/transaction/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Celestia-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'AM Solutions',
       url: 'https://explorer.theamsolutions.info/celestia-main',
-      tx_page: 'https://explorer.theamsolutions.info/celestia-main/transaction/${txHash}',
-      account_page: 'https://explorer.theamsolutions.info/celestia-main/account/${accountAddress}'
+      txPage: 'https://explorer.theamsolutions.info/celestia-main/transaction/${txHash}',
+      accountPage: 'https://explorer.theamsolutions.info/celestia-main/account/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/celestia',
-      tx_page: 'https://ezstaking.app/celestia/txs/${txHash}',
-      account_page: 'https://ezstaking.app/celestia/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/celestia/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/celestia/account/${accountAddress}'
     }
   ],
   images: [{

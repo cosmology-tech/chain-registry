@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'shentu',
+  chainName: 'shentu',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.shentu.technology/',
-  pretty_name: 'Shentu',
-  chain_id: 'shentu-2.2',
-  bech32_prefix: 'shentu',
-  daemon_name: 'shentud',
-  node_home: '$HOME/.shentud',
-  key_algos: ['secp256k1'],
+  prettyName: 'Shentu',
+  chainId: 'shentu-2.2',
+  bech32Prefix: 'shentu',
+  daemonName: 'shentud',
+  nodeHome: '$HOME/.shentud',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uctk',
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uctk'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.svg'
   },
@@ -152,47 +152,47 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/shentu',
-      tx_page: 'https://ezstaking.app/shentu/txs/${txHash}',
-      account_page: 'https://ezstaking.app/shentu/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/shentu/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/shentu/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Shentu-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Shentu-Mainnet/txs/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Shentu-Mainnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Shentu-Mainnet/txs/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Shentu-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/shentu',
-      tx_page: 'https://www.mintscan.io/shentu/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/shentu/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/shentu/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/shentu/accounts/${accountAddress}'
     },
     {
       kind: 'Shentu Explorer',
       url: 'https://explorer.shentu.technology/?net=shentu-2.2',
-      tx_page: 'https://explorer.shentu.technology/transactions/${txHash}?net=shentu-2.2'
+      txPage: 'https://explorer.shentu.technology/transactions/${txHash}?net=shentu-2.2'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/shentu',
-      tx_page: 'https://ping.pub/shentu/tx/${txHash}'
+      txPage: 'https://ping.pub/shentu/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/shentu',
-      tx_page: 'https://atomscan.com/shentu/transactions/${txHash}',
-      account_page: 'https://atomscan.com/shentu/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/shentu/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/shentu/accounts/${accountAddress}'
     },
     {
       kind: 'bigdipper',
       url: 'https://bigdipper.live/shentu',
-      tx_page: 'https://bigdipper.live/shentu/transactions/${txHash}',
-      account_page: 'https://bigdipper.live/shentu/accounts/${accountAddress}'
+      txPage: 'https://bigdipper.live/shentu/transactions/${txHash}',
+      accountPage: 'https://bigdipper.live/shentu/accounts/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/shentu',
-      account_page: 'https://stakeflow.io/shentu/accounts/${accountAddress}'
+      accountPage: 'https://stakeflow.io/shentu/accounts/${accountAddress}'
     }
   ],
   images: [{

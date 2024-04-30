@@ -1,21 +1,21 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'sgetestnet',
-  chain_id: 'sge-network-3',
-  pretty_name: 'SGE Testnet',
+  chainName: 'sgetestnet',
+  chainId: 'sge-network-3',
+  prettyName: 'SGE Testnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://sgenetwork.io',
-  bech32_prefix: 'sge',
-  daemon_name: 'usge',
-  node_home: '$HOME/.sged',
-  key_algos: ['secp256k1'],
+  bech32Prefix: 'sge',
+  daemonName: 'usge',
+  nodeHome: '$HOME/.sged',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'usge',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   codebase: {
@@ -66,21 +66,21 @@ const info: Chain = {
   explorers: [{
       kind: 'Sge BlockExplorer',
       url: 'https://blockexplorer.testnet.sgenetwork.io/',
-      tx_page: 'https://blockexplorer.testnet.sgenetwork.io/sge-network/tx/${txHash}'
+      txPage: 'https://blockexplorer.testnet.sgenetwork.io/sge-network/tx/${txHash}'
     }, {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Sge-Testnet',
-      tx_page: 'https://explorer.stavr.tech/Sge-Testnet/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Sge-Testnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Sge-Testnet/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Sge-Testnet/account/${accountAddress}'
     }],
   images: [{
-      image_sync: {
-        chain_name: 'sge'
+      imageSync: {
+        chainName: 'sge'
       },
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'
   }

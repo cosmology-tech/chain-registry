@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'cerberus',
+  chainName: 'cerberus',
   status: 'killed',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://cerberus.zone/',
-  pretty_name: 'Cerberus',
-  chain_id: 'cerberus-chain-1',
-  bech32_prefix: 'cerberus',
-  daemon_name: 'cerberusd',
-  node_home: '$HOME/.cerberus',
+  prettyName: 'Cerberus',
+  chainId: 'cerberus-chain-1',
+  bech32Prefix: 'cerberus',
+  daemonName: 'cerberusd',
+  nodeHome: '$HOME/.cerberus',
   slip44: 118,
   codebase: {
 
   },
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ucrbrus',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ucrbrus'
       }]
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.svg'
   },
@@ -47,22 +47,22 @@ const info: Chain = {
     {
       kind: 'skynetexplorers',
       url: 'https://skynetexplorers.com/cerberus',
-      tx_page: 'https://skynetexplorers.com/cerberus/tx/${txHash}'
+      txPage: 'https://skynetexplorers.com/cerberus/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/cerberus',
-      tx_page: 'https://ping.pub/cerberus/tx/${txHash}'
+      txPage: 'https://ping.pub/cerberus/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/cerberus',
-      tx_page: 'https://atomscan.com/cerberus/transactions/${txHash}'
+      txPage: 'https://atomscan.com/cerberus/transactions/${txHash}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/cerberus',
-      tx_page: 'https://explorer.tcnetwork.io/cerberus/transaction/${txHash}'
+      txPage: 'https://explorer.tcnetwork.io/cerberus/transaction/${txHash}'
     }
   ],
   images: [{

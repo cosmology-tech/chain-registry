@@ -1,20 +1,20 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'bitcannadevnet',
+  chainName: 'bitcannadevnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'BitCanna Devnet-1',
-  chain_id: 'bitcanna-dev-1',
-  bech32_prefix: 'bcna',
-  daemon_name: 'bcnad',
-  node_home: '$HOME/.bcna',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'BitCanna Devnet-1',
+  chainId: 'bitcanna-dev-1',
+  bech32Prefix: 'bcna',
+  daemonName: 'bcnad',
+  nodeHome: '$HOME/.bcna',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ubcna',
-        fixed_min_gas_price: 0.001
+        fixedMinGasPrice: 0.001
       }]
   },
   codebase: {
@@ -99,25 +99,25 @@ const info: Chain = {
   explorers: [
     {
       url: 'https://explorer.thesilverfox.pro/bitcanna',
-      tx_page: 'https://explorer.thesilverfox.pro/bitcanna/tx/${txHash}'
+      txPage: 'https://explorer.thesilverfox.pro/bitcanna/tx/${txHash}'
     },
     {
       url: 'https://testnets-cosmos.mintthemoon.xyz/bitcanna',
-      tx_page: 'https://testnets-cosmos.mintthemoon.xyz/bitcanna/tx/${txHash}'
+      txPage: 'https://testnets-cosmos.mintthemoon.xyz/bitcanna/tx/${txHash}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Bitcanna-DEV',
-      tx_page: 'https://explorer.stavr.tech/Bitcanna-DEV/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Bitcanna-DEV/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Bitcanna-DEV/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Bitcanna-DEV/account/${accountAddress}'
     },
     {
       url: 'https://explorer.kjnodes.com/bitcanna-testnet',
-      tx_page: 'https://explorer.kjnodes.com/bitcanna-testnet/tx/${txHash}'
+      txPage: 'https://explorer.kjnodes.com/bitcanna-testnet/tx/${txHash}'
     },
     {
       url: 'https://explorer.stavr.tech/bitcanna-dev',
-      tx_page: 'https://explorer.stavr.tech/bitcanna-dev/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/bitcanna-dev/tx/${txHash}'
     }
   ]
 };

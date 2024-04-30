@@ -1,37 +1,37 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'likecoin',
+  chainName: 'likecoin',
   status: 'live',
   website: 'https://like.co/',
-  network_type: 'mainnet',
-  pretty_name: 'LikeCoin',
-  chain_id: 'likecoin-mainnet-2',
-  bech32_prefix: 'like',
-  daemon_name: 'liked',
-  node_home: '$HOME/.liked',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  prettyName: 'LikeCoin',
+  chainId: 'likecoin-mainnet-2',
+  bech32Prefix: 'like',
+  daemonName: 'liked',
+  nodeHome: '$HOME/.liked',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'nanolike',
-        fixed_min_gas_price: 1000,
-        low_gas_price: 1000,
-        average_gas_price: 10000,
-        high_gas_price: 1000000
+        fixedMinGasPrice: 1000,
+        lowGasPrice: 1000,
+        averageGasPrice: 10000,
+        highGasPrice: 1000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'nanolike'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1814400s'
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.46',
-    cosmwasm_enabled: false
+    cosmosSdkVersion: '0.46',
+    cosmwasmEnabled: false
   },
   apis: {
     rpc: [
@@ -97,14 +97,14 @@ const info: Chain = {
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/likecoin',
-      tx_page: 'https://www.mintscan.io/likecoin/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/likecoin/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/likecoin/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/likecoin/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/likecoin',
-      tx_page: 'https://ezstaking.app/likecoin/txs/${txHash}',
-      account_page: 'https://ezstaking.app/likecoin/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/likecoin/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/likecoin/account/${accountAddress}'
     },
     {
       kind: 'lunie-ng',
@@ -113,21 +113,21 @@ const info: Chain = {
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Likecoin-M',
-      tx_page: 'https://explorer.stavr.tech/Likecoin-M/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/Likecoin-M/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/likecoin',
-      tx_page: 'https://ping.pub/likecoin/tx/${txHash}'
+      txPage: 'https://ping.pub/likecoin/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/likecoin',
-      tx_page: 'https://atomscan.com/likecoin/transactions/${txHash}',
-      account_page: 'https://atomscan.com/likecoin/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/likecoin/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/likecoin/accounts/${accountAddress}'
     }
   ],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.svg'
   },

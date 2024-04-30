@@ -1,36 +1,36 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'umee',
+  chainName: 'umee',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.ux.xyz',
-  pretty_name: 'UX Chain',
-  chain_id: 'umee-1',
-  bech32_prefix: 'umee',
-  daemon_name: 'umeed',
-  node_home: '$HOME/.umee',
+  prettyName: 'UX Chain',
+  chainId: 'umee-1',
+  bech32Prefix: 'umee',
+  daemonName: 'umeed',
+  nodeHome: '$HOME/.umee',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uumee',
-        fixed_min_gas_price: 0.1,
-        low_gas_price: 0.1,
-        average_gas_price: 0.12,
-        high_gas_price: 0.2
+        fixedMinGasPrice: 0.1,
+        lowGasPrice: 0.1,
+        averageGasPrice: 0.12,
+        highGasPrice: 0.2
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uumee'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.47',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.43'
+    cosmosSdkVersion: '0.47',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.43'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.svg'
   },
@@ -250,52 +250,52 @@ const info: Chain = {
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/umee/',
-      tx_page: 'https://www.mintscan.io/umee/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/umee/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/umee/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/umee/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/umee',
-      tx_page: 'https://ping.pub/umee/tx/${txHash}'
+      txPage: 'https://ping.pub/umee/tx/${txHash}'
     },
     {
       kind: '🔥STAVR🔥 Explorer',
       url: 'https://explorer.stavr.tech/umee',
-      tx_page: 'https://explorer.stavr.tech/umee/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/umee/tx/${txHash}'
     },
     {
       kind: 'explorers.guru',
       url: 'https://umee.explorers.guru',
-      tx_page: 'https://umee.explorers.guru/transaction/${txHash}'
+      txPage: 'https://umee.explorers.guru/transaction/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/umee',
-      tx_page: 'https://atomscan.com/umee/transactions/${txHash}',
-      account_page: 'https://atomscan.com/umee/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/umee/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/umee/accounts/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/umee',
-      account_page: 'https://stakeflow.io/umee/accounts/${accountAddress}'
+      accountPage: 'https://stakeflow.io/umee/accounts/${accountAddress}'
     },
     {
       kind: 'Stake-Take',
       url: 'https://explorer.stake-take.com/umee',
-      tx_page: 'https://explorer.stake-take.com/umee/transactions/${txHash}',
-      account_page: 'https://explorer.stake-take.com/umee/account/${accountAddress}'
+      txPage: 'https://explorer.stake-take.com/umee/transactions/${txHash}',
+      accountPage: 'https://explorer.stake-take.com/umee/account/${accountAddress}'
     },
     {
       kind: 'Stake Village',
       url: 'https://exp.stakevillage.net/umee',
-      tx_page: 'https://exp.stakevillage.net/umee/tx/${txHash}',
-      account_page: 'https://exp.stakevillage.net/umee/account/${accountAddress}'
+      txPage: 'https://exp.stakevillage.net/umee/tx/${txHash}',
+      accountPage: 'https://exp.stakevillage.net/umee/account/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/umee',
-      tx_page: 'https://ezstaking.app/umee/txs/${txHash}',
-      account_page: 'https://ezstaking.app/umee/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/umee/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/umee/account/${accountAddress}'
     }
   ],
   images: [{

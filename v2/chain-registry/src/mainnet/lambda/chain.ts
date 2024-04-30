@@ -1,32 +1,32 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'lambda',
+  chainName: 'lambda',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'Lambda',
-  chain_id: 'lambda_92000-1',
-  bech32_prefix: 'lamb',
-  node_home: '$HOME/.lambdavm',
-  daemon_name: 'lambdavm',
+  networkType: 'mainnet',
+  prettyName: 'Lambda',
+  chainId: 'lambda_92000-1',
+  bech32Prefix: 'lamb',
+  nodeHome: '$HOME/.lambdavm',
+  daemonName: 'lambdavm',
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ulamb',
-        low_gas_price: 10000000000,
-        average_gas_price: 25000000000,
-        high_gas_price: 40000000000
+        lowGasPrice: 10000000000,
+        averageGasPrice: 25000000000,
+        highGasPrice: 40000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ulamb'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.svg'
   },
@@ -81,7 +81,7 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       }
     ],
-    "evm-http-jsonrpc": [{
+    evmHttpJsonrpc: [{
         address: 'https://jsonrpc-lambda.d-stake.xyz',
         provider: 'D-stake'
       }, {
@@ -93,23 +93,23 @@ const info: Chain = {
     {
       kind: 'blockscout',
       url: 'https://explorer.lambda.im/',
-      tx_page: 'https://explorer.lambda.im/tx/${txHash}'
+      txPage: 'https://explorer.lambda.im/tx/${txHash}'
     },
     {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.top/lambda',
-      tx_page: 'https://explorer.nodestake.top/lambda/txs/${txHash}'
+      txPage: 'https://explorer.nodestake.top/lambda/txs/${txHash}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/lambda',
-      tx_page: 'https://explorer.stavr.tech/lambda/txs/${txHash}'
+      txPage: 'https://explorer.stavr.tech/lambda/txs/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/lambda',
-      tx_page: 'https://atomscan.com/lambda/transactions/${txHash}',
-      account_page: 'https://atomscan.com/lambda/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/lambda/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/lambda/accounts/${accountAddress}'
     }
   ],
   images: [{

@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'medasdigital',
+  chainName: 'medasdigital',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://medas-digital.io/',
-  pretty_name: 'Medas Digital Network',
-  chain_id: 'medasdigital-1',
-  bech32_prefix: 'medas',
-  daemon_name: 'medasdigitald',
-  node_home: '$HOME/.medasdigital',
+  prettyName: 'Medas Digital Network',
+  chainId: 'medasdigital-1',
+  bech32Prefix: 'medas',
+  daemonName: 'medasdigitald',
+  nodeHome: '$HOME/.medasdigital',
   slip44: 118,
-  key_algos: ['secp256k1'],
+  keyAlgos: ['secp256k1'],
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'umedas',
-        low_gas_price: 0.1,
-        average_gas_price: 0.25,
-        high_gas_price: 0.4
+        lowGasPrice: 0.1,
+        averageGasPrice: 0.25,
+        highGasPrice: 0.4
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'umedas'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.svg'
   },
@@ -49,13 +49,13 @@ const info: Chain = {
   explorers: [{
       kind: 'BigDipper',
       url: 'https://explorer.medas-digital.io:3100/medasdigital',
-      tx_page: 'https://explorer.medas-digital.io:3100/medasdigital/transactions/${txHash}',
-      account_page: 'explorer.medas-digital.io:3100/medasdigital/accounts/${accountAddress}'
+      txPage: 'https://explorer.medas-digital.io:3100/medasdigital/transactions/${txHash}',
+      accountPage: 'explorer.medas-digital.io:3100/medasdigital/accounts/${accountAddress}'
     }, {
       kind: 'atomscan',
       url: 'https://atomscan.com/frontier/medasdigital',
-      tx_page: 'https://atomscan.com/frontier/medasdigital/transactions/${txHash}',
-      account_page: 'https://atomscan.com/frontier/medasdigital/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/frontier/medasdigital/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/frontier/medasdigital/accounts/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.png',

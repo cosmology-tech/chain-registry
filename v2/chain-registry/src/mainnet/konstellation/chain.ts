@@ -1,33 +1,33 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'konstellation',
+  chainName: 'konstellation',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://konstellation.tech/',
-  pretty_name: 'Konstellation',
-  chain_id: 'darchub',
-  bech32_prefix: 'darc',
-  daemon_name: 'knstld',
-  node_home: '$HOME/.knstld',
+  prettyName: 'Konstellation',
+  chainId: 'darchub',
+  bech32Prefix: 'darc',
+  daemonName: 'knstld',
+  nodeHome: '$HOME/.knstld',
   slip44: 118,
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/Konstellation-dark.png'
   },
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'udarc',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.0001,
-        average_gas_price: 0.001,
-        high_gas_price: 0.01
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.0001,
+        averageGasPrice: 0.001,
+        highGasPrice: 0.01
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'udarc'
       }]
   },
@@ -68,11 +68,11 @@ const info: Chain = {
   explorers: [{
       kind: 'konstellation',
       url: 'https://explorer.konstellation.tech/',
-      tx_page: 'https://explorer.konstellation.tech/tx/${txHash}'
+      txPage: 'https://explorer.konstellation.tech/tx/${txHash}'
     }, {
       kind: 'cosmotracker',
       url: 'https://cosmotracker.com/konstellation',
-      tx_page: 'https://cosmotracker.com/konstellation/tx/${txHash}'
+      txPage: 'https://cosmotracker.com/konstellation/tx/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/Konstellation-dark.png'

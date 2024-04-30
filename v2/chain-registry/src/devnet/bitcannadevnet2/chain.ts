@@ -1,20 +1,20 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'bitcannadevnet2',
+  chainName: 'bitcannadevnet2',
   status: 'live',
-  network_type: 'devnet',
-  pretty_name: 'BitCanna Devnet-6 SDK v0.46.x',
-  chain_id: 'bitcanna-dev-6',
-  bech32_prefix: 'bcna',
-  daemon_name: 'bcnad',
-  node_home: '$HOME/.bcna',
-  key_algos: ['secp256k1'],
+  networkType: 'devnet',
+  prettyName: 'BitCanna Devnet-6 SDK v0.46.x',
+  chainId: 'bitcanna-dev-6',
+  bech32Prefix: 'bcna',
+  daemonName: 'bcnad',
+  nodeHome: '$HOME/.bcna',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ubcna',
-        fixed_min_gas_price: 0.001
+        fixedMinGasPrice: 0.001
       }]
   },
   codebase: {
@@ -36,7 +36,7 @@ const info: Chain = {
   },
   explorers: [{
       url: 'https://explorer-devnet-6.bitcanna.io',
-      tx_page: 'https://explorer-devnet-6.bitcanna.io/tx/${txHash}'
+      txPage: 'https://explorer-devnet-6.bitcanna.io/tx/${txHash}'
     }]
 };
 export default info;

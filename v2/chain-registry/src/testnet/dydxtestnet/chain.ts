@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'dydxtestnet',
+  chainName: 'dydxtestnet',
   status: 'live',
   website: 'https://dydx.trade/',
-  network_type: 'testnet',
-  pretty_name: 'dYdX Protocol',
-  chain_id: 'dydx-testnet-4',
-  bech32_prefix: 'dydx',
-  daemon_name: 'dydxprotocold',
-  node_home: '$HOME/.dydxprotocol',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'dYdX Protocol',
+  chainId: 'dydx-testnet-4',
+  bech32Prefix: 'dydx',
+  daemonName: 'dydxprotocold',
+  nodeHome: '$HOME/.dydxprotocol',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'adv4tnt',
-        fixed_min_gas_price: 12500000000,
-        low_gas_price: 12500000000,
-        average_gas_price: 12500000000,
-        high_gas_price: 20000000000
+        fixedMinGasPrice: 12500000000,
+        lowGasPrice: 12500000000,
+        averageGasPrice: 12500000000,
+        highGasPrice: 20000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'adv4tnt'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.4',
-    cosmwasm_enabled: false
+    cosmosSdkVersion: 'v0.47.4',
+    cosmwasmEnabled: false
   },
   description: 'Our goal is to build open source code that can power a first class product and trading experience.',
   apis: {
@@ -90,16 +90,16 @@ const info: Chain = {
   explorers: [{
       kind: 'mintscan',
       url: 'https://www.mintscan.io/dydx-testnet',
-      tx_page: 'https://www.mintscan.io/dydx-testnet/txs/${txHash}',
-      account_page: 'https://www.mintscan.io/dydx-testnet/account/${accountAddress}'
+      txPage: 'https://www.mintscan.io/dydx-testnet/txs/${txHash}',
+      accountPage: 'https://www.mintscan.io/dydx-testnet/account/${accountAddress}'
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
   },
   images: [{
-      image_sync: {
-        chain_name: 'dydx'
+      imageSync: {
+        chainName: 'dydx'
       },
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'

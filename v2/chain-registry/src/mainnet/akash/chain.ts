@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'akash',
+  chainName: 'akash',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://akash.network/',
-  pretty_name: 'Akash',
-  chain_id: 'akashnet-2',
-  bech32_prefix: 'akash',
-  daemon_name: 'akash',
-  node_home: '$HOME/.akash',
+  prettyName: 'Akash',
+  chainId: 'akashnet-2',
+  bech32Prefix: 'akash',
+  daemonName: 'akash',
+  nodeHome: '$HOME/.akash',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uakt',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.00025,
-        average_gas_price: 0.0025,
-        high_gas_price: 0.025
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.00025,
+        averageGasPrice: 0.0025,
+        highGasPrice: 0.025
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uakt'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.45.16'
+    cosmosSdkVersion: 'v0.45.16'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
   },
@@ -217,45 +217,45 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/akash',
-      tx_page: 'https://ezstaking.app/akash/txs/${txHash}',
-      account_page: 'https://ezstaking.app/akash/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/akash/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/akash/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/akash',
-      tx_page: 'https://www.mintscan.io/akash/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/akash/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/akash/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/akash/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/akash-network',
-      tx_page: 'https://ping.pub/akash-network/tx/${txHash}'
+      txPage: 'https://ping.pub/akash-network/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/akash',
-      tx_page: 'https://atomscan.com/akash/transactions/${txHash}',
-      account_page: 'https://atomscan.com/akash/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/akash/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/akash/accounts/${accountAddress}'
     },
     {
       kind: 'cloudmos',
       url: 'https://cloudmos.io/blocks',
-      tx_page: 'https://cloudmos.io/transactions/${txHash}'
+      txPage: 'https://cloudmos.io/transactions/${txHash}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/akash',
-      account_page: 'https://stakeflow.io/akash/accounts/${accountAddress}'
+      accountPage: 'https://stakeflow.io/akash/accounts/${accountAddress}'
     },
     {
       kind: 'ValidatorNode',
       url: 'https://explorer.validatornode.com/akash-network',
-      tx_page: 'https://explorer.validatornode.com/akash-network/tx/${txHash}'
+      txPage: 'https://explorer.validatornode.com/akash-network/tx/${txHash}'
     },
     {
       kind: 'Decloud Nodes Lab',
       url: 'https://explorer.declab.pro/Akash',
-      tx_page: 'https://explorer.declab.pro/Akash/tx/${txHash}'
+      txPage: 'https://explorer.declab.pro/Akash/tx/${txHash}'
     }
   ],
   images: [{

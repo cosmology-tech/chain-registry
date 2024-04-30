@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'acrechain',
+  chainName: 'acrechain',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://arable.finance/',
-  pretty_name: 'Acrechain',
-  chain_id: 'acre_9052-1',
-  bech32_prefix: 'acre',
-  node_home: '$HOME/.acred',
-  daemon_name: 'acred',
-  key_algos: ['ethsecp256k1'],
+  prettyName: 'Acrechain',
+  chainId: 'acre_9052-1',
+  bech32Prefix: 'acre',
+  nodeHome: '$HOME/.acred',
+  daemonName: 'acred',
+  keyAlgos: ['ethsecp256k1'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'aacre',
-        fixed_min_gas_price: 250000000,
-        low_gas_price: 20000000000,
-        average_gas_price: 25000000000,
-        high_gas_price: 40000000000
+        fixedMinGasPrice: 250000000,
+        lowGasPrice: 20000000000,
+        averageGasPrice: 25000000000,
+        highGasPrice: 40000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'aacre'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
   },
@@ -100,7 +100,7 @@ const info: Chain = {
         provider: 'Staketab'
       }
     ],
-    "evm-http-jsonrpc": [
+    evmHttpJsonrpc: [
       {
         address: 'https://jsonrpc-acre.d-stake.xyz',
         provider: 'D-stake'
@@ -139,32 +139,32 @@ const info: Chain = {
     {
       kind: 'blockscout',
       url: 'https://acrescout.mindheartsoul.org',
-      tx_page: 'https://acrescout.mindheartsoul.org/tx/${txHash}'
+      txPage: 'https://acrescout.mindheartsoul.org/tx/${txHash}'
     },
     {
       kind: 'blockscout',
       url: 'https://acrescan.com',
-      tx_page: 'https://acrescan.com/tx/${txHash}'
+      txPage: 'https://acrescan.com/tx/${txHash}'
     },
     {
       kind: 'blockscout',
       url: 'https://acreblockexplorer.jet-node.com',
-      tx_page: 'https://acreblockexplorer.jet-node.com/tx/${txHash}'
+      txPage: 'https://acreblockexplorer.jet-node.com/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://explorer.nodestake.top/acre',
-      tx_page: 'https://explorer.nodestake.top/acre/tx/${txHash}'
+      txPage: 'https://explorer.nodestake.top/acre/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://cosmosrun.info/acre-mainnet',
-      tx_page: 'https://cosmosrun.info/acre-mainnet/tx/${txHash}'
+      txPage: 'https://cosmosrun.info/acre-mainnet/tx/${txHash}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/acre',
-      tx_page: 'https://explorer.tcnetwork.io/acre/transaction/${txHash}'
+      txPage: 'https://explorer.tcnetwork.io/acre/transaction/${txHash}'
     }
   ],
   images: [{

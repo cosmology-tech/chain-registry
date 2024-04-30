@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'okp4testnet',
-  chain_id: 'okp4-nemeton-1',
+  chainName: 'okp4testnet',
+  chainId: 'okp4-nemeton-1',
   website: 'https://okp4.network/',
-  pretty_name: 'OKP4 Nemeton',
+  prettyName: 'OKP4 Nemeton',
   status: 'live',
-  network_type: 'testnet',
-  bech32_prefix: 'okp4',
-  daemon_name: 'okp4d',
-  node_home: '$HOME/.okp4',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'okp4',
+  daemonName: 'okp4d',
+  nodeHome: '$HOME/.okp4',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uknow',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.03
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.03
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uknow'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/okp4testnet/images/okp4.png'
   },
   apis: {
@@ -84,17 +84,17 @@ const info: Chain = {
     {
       kind: 'ping.pub',
       url: 'https://testnet.ping.pub/OKP4%20testnet',
-      tx_page: 'https://testnet.ping.pub/OKP4%20testnet/tx/${txHash}'
+      txPage: 'https://testnet.ping.pub/OKP4%20testnet/tx/${txHash}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/OKP4-Testnet',
-      tx_page: 'https://explorer.stavr.tech/OKP4-Testnet/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/OKP4-Testnet/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://explore.okp4.network/OKP4%20testnet',
-      tx_page: 'https://explore.okp4.network/OKP4%20testnet/tx/${txHash}'
+      txPage: 'https://explore.okp4.network/OKP4%20testnet/tx/${txHash}'
     }
   ],
   images: [{

@@ -1,4 +1,4 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 
 import * as _akashtestnet from './akashtestnet';
 import * as _archwaytestnet from './archwaytestnet';
@@ -64,6 +64,7 @@ import * as _osmosistestnet4 from './osmosistestnet4';
 import * as _permtestnet from './permtestnet';
 import * as _persistencetestnet from './persistencetestnet';
 import * as _persistencetestnet2 from './persistencetestnet2';
+import * as _planqtestnet from './planqtestnet';
 import * as _pryzmtestnet from './pryzmtestnet';
 import * as _quasartestnet from './quasartestnet';
 import * as _quicksilvertestnet from './quicksilvertestnet';
@@ -162,6 +163,7 @@ const chains: Chain[] = [
   _permtestnet.chain,
   _persistencetestnet.chain,
   _persistencetestnet2.chain,
+  _planqtestnet.chain,
   _pryzmtestnet.chain,
   _quasartestnet.chain,
   _quicksilvertestnet.chain,

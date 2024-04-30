@@ -1,36 +1,36 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'evmos',
+  chainName: 'evmos',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://evmos.org/',
-  pretty_name: 'Evmos',
-  chain_id: 'evmos_9001-2',
-  bech32_prefix: 'evmos',
-  node_home: '$HOME/.evmosd',
-  daemon_name: 'evmosd',
-  key_algos: ['ethsecp256k1'],
-  extra_codecs: ['ethermint'],
+  prettyName: 'Evmos',
+  chainId: 'evmos_9001-2',
+  bech32Prefix: 'evmos',
+  nodeHome: '$HOME/.evmosd',
+  daemonName: 'evmosd',
+  keyAlgos: ['ethsecp256k1'],
+  extraCodecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'aevmos',
-        fixed_min_gas_price: 250000000,
-        low_gas_price: 20000000000,
-        average_gas_price: 25000000000,
-        high_gas_price: 40000000000
+        fixedMinGasPrice: 250000000,
+        lowGasPrice: 20000000000,
+        averageGasPrice: 25000000000,
+        highGasPrice: 40000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'aevmos'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'evmos/cosmos-sdk v0.47.5-evmos.2'
+    cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.5-evmos.2'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg'
   },
@@ -306,7 +306,7 @@ const info: Chain = {
         provider: 'Bro_n_Bro'
       }
     ],
-    "evm-http-jsonrpc": [
+    evmHttpJsonrpc: [
       {
         address: 'https://eth.bd.evmos.org:8545',
         provider: 'Blockdaemon'
@@ -381,57 +381,57 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/evmos',
-      tx_page: 'https://ezstaking.app/evmos/txs/${txHash}',
-      account_page: 'https://ezstaking.app/evmos/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/evmos/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/evmos/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/evmos',
-      tx_page: 'https://www.mintscan.io/evmos/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/evmos/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/evmos/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/evmos/accounts/${accountAddress}'
     },
     {
       kind: 'blockscout',
       url: 'https://evm.evmos.org',
-      tx_page: 'https://evm.evmos.org/tx/${txHash}'
+      txPage: 'https://evm.evmos.org/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/evmos',
-      tx_page: 'https://ping.pub/evmos/tx/${txHash}'
+      txPage: 'https://ping.pub/evmos/tx/${txHash}'
     },
     {
       kind: 'explorers.guru',
       url: 'https://evmos.explorers.guru',
-      tx_page: 'https://evmos.explorers.guru/transaction/${txHash}'
+      txPage: 'https://evmos.explorers.guru/transaction/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/evmos',
-      tx_page: 'https://atomscan.com/evmos/transactions/${txHash}',
-      account_page: 'https://atomscan.com/evmos/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/evmos/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/evmos/accounts/${accountAddress}'
     },
     {
       kind: 'tcnetwork',
       url: 'https://evmos.tcnetwork.io',
-      tx_page: 'https://evmos.tcnetwork.io/transaction/${txHash}'
+      txPage: 'https://evmos.tcnetwork.io/transaction/${txHash}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/evmos',
-      account_page: 'https://stakeflow.io/evmos/accounts/${accountAddress}'
+      accountPage: 'https://stakeflow.io/evmos/accounts/${accountAddress}'
     },
     {
       kind: 'Stake Village',
       url: 'https://exp.stakevillage.net/evmos',
-      tx_page: 'https://exp.stakevillage.net/evmos/tx/${txHash}',
-      account_page: 'https://exp.stakevillage.net/evmos/accounts/${accountAddress}'
+      txPage: 'https://exp.stakevillage.net/evmos/tx/${txHash}',
+      accountPage: 'https://exp.stakevillage.net/evmos/accounts/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/evmos',
-      tx_page: 'https://explorer.stavr.tech/evmos/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/evmos/accounts/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/evmos/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/evmos/accounts/${accountAddress}'
     }
   ],
   images: [{

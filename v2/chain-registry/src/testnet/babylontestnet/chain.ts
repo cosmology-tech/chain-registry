@@ -1,31 +1,31 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'babylontestnet',
+  chainName: 'babylontestnet',
   status: 'live',
   website: 'https://www.babylonchain.io',
-  network_type: 'testnet',
-  pretty_name: 'Babylon Testnet 3',
-  chain_id: 'bbn-test3',
-  pre_fork_chain_name: 'babylontestnet1',
-  bech32_prefix: 'bbn',
-  daemon_name: 'babylond',
-  node_home: '$HOME/.babylond',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Babylon Testnet 3',
+  chainId: 'bbn-test3',
+  preForkChainName: 'babylontestnet1',
+  bech32Prefix: 'bbn',
+  daemonName: 'babylond',
+  nodeHome: '$HOME/.babylond',
+  keyAlgos: ['secp256k1'],
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ubbn'
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ubbn'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/babylontestnet/images/logo.svg'
   },
   apis: {
@@ -45,7 +45,7 @@ const info: Chain = {
     }, {
       kind: 'explorers.guru',
       url: 'https://testnet.babylon.explorers.guru',
-      tx_page: 'https://testnet.babylon.explorers.guru/transaction/${txHash}'
+      txPage: 'https://testnet.babylon.explorers.guru/transaction/${txHash}'
     }],
   images: [{
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/babylontestnet/images/logo.svg'

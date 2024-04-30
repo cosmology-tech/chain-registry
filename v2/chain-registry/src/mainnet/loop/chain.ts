@@ -1,40 +1,40 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'loop',
+  chainName: 'loop',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.loop.fans/',
-  pretty_name: 'Loop',
-  chain_id: 'loop-1',
-  bech32_prefix: 'loop',
-  daemon_name: 'loopd',
-  node_home: '$HOME/.loopchain',
-  key_algos: ['secp256k1'],
+  prettyName: 'Loop',
+  chainId: 'loop-1',
+  bech32Prefix: 'loop',
+  daemonName: 'loopd',
+  nodeHome: '$HOME/.loopchain',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'token',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0,
-        high_gas_price: 0
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0,
+        averageGasPrice: 0,
+        highGasPrice: 0
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'upoa'
       }]
   },
   codebase: {
-    cosmwasm_enabled: true
+    cosmwasmEnabled: true
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.svg',
       layout: 'logomark'
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.svg'
   },
@@ -52,7 +52,7 @@ const info: Chain = {
   explorers: [{
       kind: 'ping.pub',
       url: 'https://ping.pfc.zone/loop',
-      tx_page: 'https://ping.pfc.zone/loop/tx/${txHash}'
+      txPage: 'https://ping.pfc.zone/loop/tx/${txHash}'
     }],
   keywords: ['fans']
 };

@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'vincechaintestnet',
+  chainName: 'vincechaintestnet',
   status: 'killed',
-  network_type: 'testnet',
-  pretty_name: 'VinceChain Testnet',
-  chain_id: 'vince_1903-1',
-  bech32_prefix: 'vce',
-  node_home: '$HOME/.vinced',
+  networkType: 'testnet',
+  prettyName: 'VinceChain Testnet',
+  chainId: 'vince_1903-1',
+  bech32Prefix: 'vce',
+  nodeHome: '$HOME/.vinced',
   slip44: 60,
-  key_algos: ['ethsecp256k1'],
-  extra_codecs: ['ethermint'],
+  keyAlgos: ['ethsecp256k1'],
+  extraCodecs: ['ethermint'],
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'avce',
-        fixed_min_gas_price: 250000000,
-        low_gas_price: 10000000000,
-        average_gas_price: 25000000000,
-        high_gas_price: 40000000000
+        fixedMinGasPrice: 250000000,
+        lowGasPrice: 10000000000,
+        averageGasPrice: 25000000000,
+        highGasPrice: 40000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'avce'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/vincechaintestnet/images/vince.png'
   },
   apis: {
@@ -41,7 +41,7 @@ const info: Chain = {
         provider: 'vincescan.com'
       }],
     grpc: [],
-    "evm-http-jsonrpc": [{
+    evmHttpJsonrpc: [{
         address: 'http://rpc-testnet.vincechain.com',
         provider: 'vincescan.com'
       }]
@@ -49,7 +49,7 @@ const info: Chain = {
   explorers: [{
       kind: 'blockscout',
       url: 'https://scan-testnet.vincechain.com',
-      tx_page: 'https://scan-testnet.vincechain.com/tx/${txHash}'
+      txPage: 'https://scan-testnet.vincechain.com/tx/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/vincechaintestnet/images/vince.png'

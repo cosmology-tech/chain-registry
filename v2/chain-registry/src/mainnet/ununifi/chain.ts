@@ -1,40 +1,40 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'ununifi',
+  chainName: 'ununifi',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://ununifi.io/',
-  pretty_name: 'UnUniFi',
-  chain_id: 'ununifi-beta-v1',
-  bech32_prefix: 'ununifi',
-  daemon_name: 'ununifid',
-  node_home: '$HOME/.ununifi',
-  key_algos: ['secp256k1'],
+  prettyName: 'UnUniFi',
+  chainId: 'ununifi-beta-v1',
+  bech32Prefix: 'ununifi',
+  daemonName: 'ununifid',
+  nodeHome: '$HOME/.ununifi',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uguu',
-        fixed_min_gas_price: 0.0025,
-        low_gas_price: 0.0025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.0025,
+        lowGasPrice: 0.0025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uguu'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1209600s'
     }
   },
   codebase: {
-    cosmos_sdk_version: 'ununifi/cosmos-sdk v0.47.3-custom-bank-1',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.40.1'
+    cosmosSdkVersion: 'ununifi/cosmos-sdk v0.47.3-custom-bank-1',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'v0.40.1'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ununifi/images/ununifi.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ununifi/images/ununifi.svg'
   },
@@ -118,17 +118,17 @@ const info: Chain = {
     {
       kind: 'UnUniFi Explorer',
       url: 'https://ununifi.io/explorer',
-      tx_page: 'https://ununifi.io/explorer/txs/${txHash}'
+      txPage: 'https://ununifi.io/explorer/txs/${txHash}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/ununifi',
-      tx_page: 'https://explorer.nodestake.top/ununifi/tx/${txHash}'
+      txPage: 'https://explorer.nodestake.top/ununifi/tx/${txHash}'
     },
     {
       kind: 'Nodeist Explorer',
       url: 'https://exp.nodeist.net/Ununifi',
-      tx_page: 'https://exp.nodeist.net/Ununifi/tx/${txHash}'
+      txPage: 'https://exp.nodeist.net/Ununifi/tx/${txHash}'
     }
   ],
   keywords: [

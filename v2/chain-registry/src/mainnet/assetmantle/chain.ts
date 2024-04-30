@@ -1,33 +1,33 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'assetmantle',
+  chainName: 'assetmantle',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://assetmantle.one/',
-  pretty_name: 'AssetMantle',
-  chain_id: 'mantle-1',
-  bech32_prefix: 'mantle',
-  daemon_name: 'mantleNode',
-  node_home: '$HOME/.mantleNode',
+  prettyName: 'AssetMantle',
+  chainId: 'mantle-1',
+  bech32Prefix: 'mantle',
+  daemonName: 'mantleNode',
+  nodeHome: '$HOME/.mantleNode',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'umntl',
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'umntl'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/AM_Logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/AM_Logo_Dark.svg'
   },
@@ -136,35 +136,35 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/assetmantle',
-      tx_page: 'https://ezstaking.app/assetmantle/txs/${txHash}',
-      account_page: 'https://ezstaking.app/assetmantle/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/assetmantle/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/assetmantle/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/asset-mantle',
-      tx_page: 'https://www.mintscan.io/asset-mantle/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/asset-mantle/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/asset-mantle/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/asset-mantle/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://explorer.postcapitalist.io/AssetMantle',
-      tx_page: 'https://explorer.postcapitalist.io/AssetMantle/tx/${txHash}'
+      txPage: 'https://explorer.postcapitalist.io/AssetMantle/tx/${txHash}'
     },
     {
       kind: 'other',
       url: 'https://explorer.assetmantle.one',
-      tx_page: 'https://explorer.assetmantle.one/transactions/${txHash}'
+      txPage: 'https://explorer.assetmantle.one/transactions/${txHash}'
     },
     {
       kind: 'explorers.guru',
       url: 'https://assetmantle.explorers.guru',
-      tx_page: 'https://assetmantle.explorers.guru/transaction/${txHash}'
+      txPage: 'https://assetmantle.explorers.guru/transaction/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/assetmantle',
-      tx_page: 'https://atomscan.com/assetmantle/transactions/${txHash}',
-      account_page: 'https://atomscan.com/assetmantle/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/assetmantle/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/assetmantle/accounts/${accountAddress}'
     }
   ],
   images: [{

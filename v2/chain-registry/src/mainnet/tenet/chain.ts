@@ -1,36 +1,36 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'tenet',
+  chainName: 'tenet',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://tenet.org/',
-  pretty_name: 'Tenet',
-  chain_id: 'tenet_1559-1',
-  bech32_prefix: 'tenet',
-  node_home: '$HOME/.tenetd',
-  daemon_name: 'tenetd',
-  key_algos: ['ethsecp256k1'],
-  extra_codecs: ['ethermint'],
+  prettyName: 'Tenet',
+  chainId: 'tenet_1559-1',
+  bech32Prefix: 'tenet',
+  nodeHome: '$HOME/.tenetd',
+  daemonName: 'tenetd',
+  keyAlgos: ['ethsecp256k1'],
+  extraCodecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'atenet',
-        fixed_min_gas_price: 250000000,
-        low_gas_price: 20000000000,
-        average_gas_price: 25000000000,
-        high_gas_price: 40000000000
+        fixedMinGasPrice: 250000000,
+        lowGasPrice: 20000000000,
+        averageGasPrice: 25000000000,
+        highGasPrice: 40000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'atenet'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46'
+    cosmosSdkVersion: '0.46'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.svg'
   },
@@ -70,7 +70,7 @@ const info: Chain = {
         address: 'kichain-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
       }],
-    "evm-http-jsonrpc": [{
+    evmHttpJsonrpc: [{
         address: 'https://rpc.tenet.org',
         provider: 'tenet'
       }, {
@@ -82,24 +82,24 @@ const info: Chain = {
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/tenet',
-      tx_page: 'https://ping.pub/tenet/tx/${txHash}'
+      txPage: 'https://ping.pub/tenet/tx/${txHash}'
     },
     {
       kind: 'Nodeist Explorer',
       url: 'https://exp.nodeist.net/Tenet',
-      tx_page: 'https://exp.nodeist.net/Tenet/tx/${txHash}'
+      txPage: 'https://exp.nodeist.net/Tenet/tx/${txHash}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/tenet',
-      tx_page: 'https://explorer.tcnetwork.io/tenet/transaction/${txHash}',
-      account_page: 'https://explorer.tcnetwork.io/tenet/account/${accountAddress}'
+      txPage: 'https://explorer.tcnetwork.io/tenet/transaction/${txHash}',
+      accountPage: 'https://explorer.tcnetwork.io/tenet/account/${accountAddress}'
     },
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/tenet',
-      tx_page: 'https://explorer.whenmoonwhenlambo.money/tenet/tx/${txHash}',
-      account_page: 'https://explorer.whenmoonwhenlambo.money/tenet/account/${accountAddress}'
+      txPage: 'https://explorer.whenmoonwhenlambo.money/tenet/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/tenet/account/${accountAddress}'
     }
   ],
   images: [{

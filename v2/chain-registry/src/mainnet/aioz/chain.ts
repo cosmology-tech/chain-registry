@@ -1,45 +1,45 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'aioz',
+  chainName: 'aioz',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://aioz.network/',
-  pretty_name: 'AIOZ Network',
-  chain_id: 'aioz_168-1',
-  bech32_prefix: 'aioz',
-  daemon_name: 'aiozd',
-  node_home: '$HOME/.aioz',
-  key_algos: ['ethsecp256k1'],
-  extra_codecs: ['ethermint'],
+  prettyName: 'AIOZ Network',
+  chainId: 'aioz_168-1',
+  bech32Prefix: 'aioz',
+  daemonName: 'aiozd',
+  nodeHome: '$HOME/.aioz',
+  keyAlgos: ['ethsecp256k1'],
+  extraCodecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'attoaioz',
-        fixed_min_gas_price: 7000000000,
-        low_gas_price: 7000000000,
-        average_gas_price: 7000000000,
-        high_gas_price: 10000000000
+        fixedMinGasPrice: 7000000000,
+        lowGasPrice: 7000000000,
+        averageGasPrice: 7000000000,
+        highGasPrice: 10000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'attoaioz'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '2419200s'
     }
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.svg'
   },
   description: 'AIOZ Network is a DePIN for Web3 AI, Storage and Streaming.\n\nAIOZ empowers a faster, secure and decentralized future.\n\nPowered by a global network of DePINs, AIOZ rewards you for sharing your computational resources for storing, transcoding, and streaming digital media content and powering decentralized AI computation.',
   apis: {
-    "evm-http-jsonrpc": [{
+    evmHttpJsonrpc: [{
         address: 'https://eth-dataseed.aioz.network',
         provider: 'AIOZ Network'
       }],
@@ -59,7 +59,7 @@ const info: Chain = {
   explorers: [{
       kind: 'aioz',
       url: 'https://explorer.aioz.network',
-      tx_page: 'https://explorer.aioz.network/tx/${txHash}'
+      txPage: 'https://explorer.aioz.network/tx/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png',

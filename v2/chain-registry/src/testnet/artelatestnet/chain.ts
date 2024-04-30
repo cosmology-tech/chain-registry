@@ -1,31 +1,31 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'artelatestnet',
+  chainName: 'artelatestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Artela Testnet',
-  chain_id: 'artela_11820-1',
-  bech32_prefix: 'art',
-  daemon_name: 'artelad',
-  node_home: '$HOME/.artelad',
-  key_algos: ['ethsecp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Artela Testnet',
+  chainId: 'artela_11820-1',
+  bech32Prefix: 'art',
+  daemonName: 'artelad',
+  nodeHome: '$HOME/.artelad',
+  keyAlgos: ['ethsecp256k1'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uart',
-        low_gas_price: 20000000000,
-        average_gas_price: 25000000000,
-        high_gas_price: 40000000000
+        lowGasPrice: 20000000000,
+        averageGasPrice: 25000000000,
+        highGasPrice: 40000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uart'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.47'
+    cosmosSdkVersion: '0.47'
   },
   apis: {
     rpc: [{
@@ -50,7 +50,7 @@ const info: Chain = {
   explorers: [{
       kind: 'Artela Network',
       url: 'https://testnet-scan.artela.network',
-      tx_page: 'https://testnet-scan.artela.network/tx/${txHash}'
+      txPage: 'https://testnet-scan.artela.network/tx/${txHash}'
     }]
 };
 export default info;

@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'panacea',
+  chainName: 'panacea',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://medibloc.com/en/',
-  pretty_name: 'Medibloc',
-  chain_id: 'panacea-3',
-  bech32_prefix: 'panacea',
-  daemon_name: 'panacead',
-  node_home: '$HOME/.panacead',
-  key_algos: ['secp256k1'],
+  prettyName: 'Medibloc',
+  chainId: 'panacea-3',
+  bech32Prefix: 'panacea',
+  daemonName: 'panacead',
+  nodeHome: '$HOME/.panacead',
+  keyAlgos: ['secp256k1'],
   slip44: 371,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'umed',
-        fixed_min_gas_price: 5,
-        low_gas_price: 5,
-        average_gas_price: 7,
-        high_gas_price: 9
+        fixedMinGasPrice: 5,
+        lowGasPrice: 5,
+        averageGasPrice: 7,
+        highGasPrice: 9
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'umed'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.svg'
   },
@@ -56,12 +56,12 @@ const info: Chain = {
   explorers: [{
       kind: 'mintscan',
       url: 'https://www.mintscan.io/medibloc',
-      tx_page: 'https://www.mintscan.io/medibloc/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/medibloc/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/medibloc/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/medibloc/accounts/${accountAddress}'
     }, {
       kind: 'bigdipper',
       url: 'https://explorer.gopanacea.org',
-      tx_page: 'https://explorer.gopanacea.org/transactions/${txHash}'
+      txPage: 'https://explorer.gopanacea.org/transactions/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.png',

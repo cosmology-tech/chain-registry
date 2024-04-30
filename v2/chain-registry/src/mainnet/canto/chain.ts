@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'canto',
+  chainName: 'canto',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://canto.io/',
-  pretty_name: 'Canto',
-  chain_id: 'canto_7700-1',
-  bech32_prefix: 'canto',
-  node_home: '$HOME/.cantod',
-  daemon_name: 'cantod',
+  prettyName: 'Canto',
+  chainId: 'canto_7700-1',
+  bech32Prefix: 'canto',
+  nodeHome: '$HOME/.cantod',
+  daemonName: 'cantod',
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'acanto',
-        fixed_min_gas_price: 1000000000000,
-        low_gas_price: 1000000000000,
-        average_gas_price: 2000000000000,
-        high_gas_price: 3000000000000
+        fixedMinGasPrice: 1000000000000,
+        lowGasPrice: 1000000000000,
+        averageGasPrice: 2000000000000,
+        highGasPrice: 3000000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'acanto'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg'
   },
@@ -103,7 +103,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
-    "evm-http-jsonrpc": [
+    evmHttpJsonrpc: [
       {
         address: 'https://canto.neobase.one/',
         provider: 'NeoBase'
@@ -134,40 +134,40 @@ const info: Chain = {
     {
       kind: 'bigdipper',
       url: 'https://cosmos.explorer.canto.io',
-      tx_page: 'https://cosmos.explorer.canto.io/transactions/${txHash}'
+      txPage: 'https://cosmos.explorer.canto.io/transactions/${txHash}'
     },
     {
       kind: 'blockscout',
       url: 'https://evm.explorer.canto.io/',
-      tx_page: 'https://evm.explorer.canto.io/tx/${txHash}'
+      txPage: 'https://evm.explorer.canto.io/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://cosmos-explorers.neobase.one/canto',
-      tx_page: 'https://cosmos-explorers.neobase.one/canto/tx/${txHash}'
+      txPage: 'https://cosmos-explorers.neobase.one/canto/tx/${txHash}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/canto',
-      tx_page: 'https://www.mintscan.io/canto/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/canto/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/canto/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/canto/accounts/${accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/canto',
-      tx_page: 'https://explorer.tcnetwork.io/canto/transaction/${txHash}'
+      txPage: 'https://explorer.tcnetwork.io/canto/transaction/${txHash}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/canto',
-      tx_page: 'https://ezstaking.app/canto/txs/${txHash}',
-      account_page: 'https://ezstaking.app/canto/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/canto/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/canto/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Canto-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Canto-Mainnet/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Canto-Mainnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Canto-Mainnet/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Canto-Mainnet/account/${accountAddress}'
     }
   ],
   images: [{

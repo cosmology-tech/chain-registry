@@ -1,32 +1,32 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'fetchhub',
+  chainName: 'fetchhub',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'Fetch.ai',
-  chain_id: 'fetchhub-4',
-  bech32_prefix: 'fetch',
-  daemon_name: 'fetchd',
-  node_home: '$HOME/.fetchd',
+  networkType: 'mainnet',
+  prettyName: 'Fetch.ai',
+  chainId: 'fetchhub-4',
+  bech32Prefix: 'fetch',
+  daemonName: 'fetchd',
+  nodeHome: '$HOME/.fetchd',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'afet',
-        low_gas_price: 0.025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.035
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.035
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'afet'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.svg'
   },
@@ -194,47 +194,47 @@ const info: Chain = {
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/fetchai',
-      tx_page: 'https://www.mintscan.io/fetchai/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/fetchai/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/fetchai/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/fetchai/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/fetchhub',
-      tx_page: 'https://ezstaking.app/fetchhub/txs/${txHash}',
-      account_page: 'https://ezstaking.app/fetchhub/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/fetchhub/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/fetchhub/account/${accountAddress}'
     },
     {
       kind: 'bigdipper',
       url: 'https://explore-fetchhub.fetch.ai',
-      tx_page: 'https://explore-fetchhub.fetch.ai/transactions/${txHash}'
+      txPage: 'https://explore-fetchhub.fetch.ai/transactions/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/fetchhub',
-      tx_page: 'https://ping.pub/fetchhub/tx/${txHash}'
+      txPage: 'https://ping.pub/fetchhub/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/fetchai',
-      tx_page: 'https://atomscan.com/fetchai/transactions/${txHash}',
-      account_page: 'https://atomscan.com/fetchai/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/fetchai/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/fetchai/accounts/${accountAddress}'
     },
     {
       kind: 'bigdipper',
       url: 'https://fetch-explorer.teasel.org',
-      tx_page: 'https://fetch-explorer.teasel.org/transactions/${txHash}'
+      txPage: 'https://fetch-explorer.teasel.org/transactions/${txHash}'
     },
     {
       kind: 'azoyalabs',
       url: 'https://fetchstation.azoyalabs.com/mainnet',
-      tx_page: 'https://fetchstation.azoyalabs.com/mainnet/explorer/transactions/${txHash}',
-      account_page: 'https://fetchstation.azoyalabs.com/mainnet/explorer/address/${accountAddress}'
+      txPage: 'https://fetchstation.azoyalabs.com/mainnet/explorer/transactions/${txHash}',
+      accountPage: 'https://fetchstation.azoyalabs.com/mainnet/explorer/address/${accountAddress}'
     },
     {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/fetchhub/',
-      tx_page: 'https://explorer.nodeshub.online/fetchhub/tx/${txHash}',
-      account_page: 'https://explorer.nodeshub.online/fetchhub/accounts/${accountAddress}'
+      txPage: 'https://explorer.nodeshub.online/fetchhub/tx/${txHash}',
+      accountPage: 'https://explorer.nodeshub.online/fetchhub/accounts/${accountAddress}'
     }
   ],
   images: [{

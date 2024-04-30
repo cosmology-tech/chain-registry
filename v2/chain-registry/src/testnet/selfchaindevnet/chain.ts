@@ -1,20 +1,20 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'selfchaindevnet',
-  chain_id: 'self-dev-1',
-  pretty_name: 'Devnet 1',
+  chainName: 'selfchaindevnet',
+  chainId: 'self-dev-1',
+  prettyName: 'Devnet 1',
   status: 'live',
-  network_type: 'testnet',
-  bech32_prefix: 'self',
-  daemon_name: 'selfchaind',
-  node_home: '$HOME/.selfchain',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'self',
+  daemonName: 'selfchaind',
+  nodeHome: '$HOME/.selfchain',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uself',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   codebase: {
@@ -33,7 +33,7 @@ const info: Chain = {
   explorers: [{
       kind: 'Selfchain',
       url: 'https://explorer-devnet.selfchain.xyz',
-      tx_page: 'https://explorer-devnet.selfchain.xyz/self/transactions/${txHash}'
+      txPage: 'https://explorer-devnet.selfchain.xyz/self/transactions/${txHash}'
     }]
 };
 export default info;

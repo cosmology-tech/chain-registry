@@ -1,36 +1,36 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'oraichain',
+  chainName: 'oraichain',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://orai.io/',
-  pretty_name: 'Oraichain',
-  chain_id: 'Oraichain',
-  bech32_prefix: 'orai',
-  daemon_name: 'oraid',
-  node_home: '$WORKSPACE/.oraid',
-  key_algos: ['secp256k1'],
+  prettyName: 'Oraichain',
+  chainId: 'Oraichain',
+  bech32Prefix: 'orai',
+  daemonName: 'oraid',
+  nodeHome: '$WORKSPACE/.oraid',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'orai',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.003,
-        average_gas_price: 0.005,
-        high_gas_price: 0.007
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.003,
+        averageGasPrice: 0.005,
+        highGasPrice: 0.007
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'orai'
       }]
   },
   codebase: {
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.30.2'
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.30.2'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.svg'
   },
@@ -118,29 +118,29 @@ const info: Chain = {
     {
       kind: 'oraiscan',
       url: 'https://scan.orai.io',
-      tx_page: 'https://scan.orai.io/txs/${txHash}'
+      txPage: 'https://scan.orai.io/txs/${txHash}'
     },
     {
       kind: 'Nodine Explorer',
       url: 'https://explorer.co.id/orai',
-      tx_page: 'https://explorer.co.id/orai/tx/${txHash}'
+      txPage: 'https://explorer.co.id/orai/tx/${txHash}'
     },
     {
       kind: 'Blockval Explorer',
       url: 'https://explorer.blockval.io/oraichain',
-      tx_page: 'https://explorer.blockval.io/oraichain/tx/${txHash}'
+      txPage: 'https://explorer.blockval.io/oraichain/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/orai',
-      tx_page: 'https://atomscan.com/orai/transactions/${txHash}',
-      account_page: 'https://atomscan.com/orai/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/orai/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/orai/accounts/${accountAddress}'
     },
     {
       kind: 'KonsorTech Explorer',
       url: 'https://explorer.konsortech.xyz/oraichain',
-      tx_page: 'https://explorer.konsortech.xyz/oraichain/transactions/${txHash}',
-      account_page: 'https://explorer.konsortech.xyz/oraichain/accounts/${accountAddress}'
+      txPage: 'https://explorer.konsortech.xyz/oraichain/transactions/${txHash}',
+      accountPage: 'https://explorer.konsortech.xyz/oraichain/accounts/${accountAddress}'
     }
   ],
   images: [{

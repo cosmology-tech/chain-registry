@@ -1,49 +1,49 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'nois',
+  chainName: 'nois',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://nois.network',
-  pretty_name: 'Nois',
-  chain_id: 'nois-1',
-  bech32_prefix: 'nois',
-  daemon_name: 'noisd',
-  node_home: '$HOME/.noisd',
-  key_algos: ['secp256k1'],
+  prettyName: 'Nois',
+  chainId: 'nois-1',
+  bech32Prefix: 'nois',
+  daemonName: 'noisd',
+  nodeHome: '$HOME/.noisd',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'unois',
-        fixed_min_gas_price: 0.05,
-        low_gas_price: 0.05,
-        average_gas_price: 0.05,
-        high_gas_price: 0.1
+        fixedMinGasPrice: 0.05,
+        lowGasPrice: 0.05,
+        averageGasPrice: 0.05,
+        highGasPrice: 0.1
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'unois'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1814400s'
     }
   },
   codebase: {
-    cosmos_sdk_version: 'v0.45.15',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.31.0'
+    cosmosSdkVersion: 'v0.45.15',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'v0.31.0'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
       theme: {
-        primary_color_hex: '#0C0914'
+        primaryColorHex: '#0C0914'
       }
     }, {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.svg'
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png'
   },
   apis: {
@@ -254,26 +254,26 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/nois',
-      tx_page: 'https://ezstaking.app/nois/txs/${txHash}',
-      account_page: 'https://ezstaking.app/nois/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/nois/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/nois/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/nois-mainnet',
-      tx_page: 'https://explorer.stavr.tech/nois-mainnet/txs/${txHash}',
-      account_page: 'https://explorer.stavr.tech/nois-mainnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/nois-mainnet/txs/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/nois-mainnet/account/${accountAddress}'
     },
     {
       kind: 'BccNodes',
       url: 'https://explorer.stavr.tech/nois-mainnet',
-      tx_page: 'https://explorer.bccnodes.com/nois-M/txs/${txHash}',
-      account_page: 'https://explorer.bccnodes.com/nois-M/account/${accountAddress}'
+      txPage: 'https://explorer.bccnodes.com/nois-M/txs/${txHash}',
+      accountPage: 'https://explorer.bccnodes.com/nois-M/account/${accountAddress}'
     },
     {
       kind: 'explorers.guru',
       url: 'https://nois.explorers.guru',
-      tx_page: 'https://nois.explorers.guru/transaction/${txHash}',
-      account_page: 'https://nois.explorers.guru/account/${accountAddress}'
+      txPage: 'https://nois.explorers.guru/transaction/${txHash}',
+      accountPage: 'https://nois.explorers.guru/account/${accountAddress}'
     }
   ],
   keywords: [

@@ -1,166 +1,166 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'terra',
+  chainName: 'terra',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'Terra Classic',
-  chain_id: 'columbus-5',
-  daemon_name: 'terrad',
-  node_home: '$HOME/.terra',
-  bech32_prefix: 'terra',
+  networkType: 'mainnet',
+  prettyName: 'Terra Classic',
+  chainId: 'columbus-5',
+  daemonName: 'terrad',
+  nodeHome: '$HOME/.terra',
+  bech32Prefix: 'terra',
   slip44: 330,
   fees: {
-    fee_tokens: [
+    feeTokens: [
       {
         denom: 'uluna',
-        low_gas_price: 28.325,
-        average_gas_price: 28.325,
-        high_gas_price: 50
+        lowGasPrice: 28.325,
+        averageGasPrice: 28.325,
+        highGasPrice: 50
       },
       {
         denom: 'usdr',
-        low_gas_price: 0.52469,
-        average_gas_price: 0.52469,
-        high_gas_price: 0.52469
+        lowGasPrice: 0.52469,
+        averageGasPrice: 0.52469,
+        highGasPrice: 0.52469
       },
       {
         denom: 'uusd',
-        low_gas_price: 0.75,
-        average_gas_price: 0.75,
-        high_gas_price: 0.75
+        lowGasPrice: 0.75,
+        averageGasPrice: 0.75,
+        highGasPrice: 0.75
       },
       {
         denom: 'ukrw',
-        low_gas_price: 850,
-        average_gas_price: 850,
-        high_gas_price: 850
+        lowGasPrice: 850,
+        averageGasPrice: 850,
+        highGasPrice: 850
       },
       {
         denom: 'umnt',
-        low_gas_price: 2142.855,
-        average_gas_price: 2142.855,
-        high_gas_price: 2142.855
+        lowGasPrice: 2142.855,
+        averageGasPrice: 2142.855,
+        highGasPrice: 2142.855
       },
       {
         denom: 'ueur',
-        low_gas_price: 0.625,
-        average_gas_price: 0.625,
-        high_gas_price: 0.625
+        lowGasPrice: 0.625,
+        averageGasPrice: 0.625,
+        highGasPrice: 0.625
       },
       {
         denom: 'ucny',
-        low_gas_price: 4.9,
-        average_gas_price: 4.9,
-        high_gas_price: 4.9
+        lowGasPrice: 4.9,
+        averageGasPrice: 4.9,
+        highGasPrice: 4.9
       },
       {
         denom: 'ujpy',
-        low_gas_price: 81.85,
-        average_gas_price: 81.85,
-        high_gas_price: 81.85
+        lowGasPrice: 81.85,
+        averageGasPrice: 81.85,
+        highGasPrice: 81.85
       },
       {
         denom: 'ugbp',
-        low_gas_price: 0.55,
-        average_gas_price: 0.55,
-        high_gas_price: 0.55
+        lowGasPrice: 0.55,
+        averageGasPrice: 0.55,
+        highGasPrice: 0.55
       },
       {
         denom: 'uinr',
-        low_gas_price: 54.4,
-        average_gas_price: 54.4,
-        high_gas_price: 54.4
+        lowGasPrice: 54.4,
+        averageGasPrice: 54.4,
+        highGasPrice: 54.4
       },
       {
         denom: 'ucad',
-        low_gas_price: 0.95,
-        average_gas_price: 0.95,
-        high_gas_price: 0.95
+        lowGasPrice: 0.95,
+        averageGasPrice: 0.95,
+        highGasPrice: 0.95
       },
       {
         denom: 'uchf',
-        low_gas_price: 0.7,
-        average_gas_price: 0.7,
-        high_gas_price: 0.7
+        lowGasPrice: 0.7,
+        averageGasPrice: 0.7,
+        highGasPrice: 0.7
       },
       {
         denom: 'uaud',
-        low_gas_price: 0.95,
-        average_gas_price: 0.95,
-        high_gas_price: 0.95
+        lowGasPrice: 0.95,
+        averageGasPrice: 0.95,
+        highGasPrice: 0.95
       },
       {
         denom: 'usgd',
-        low_gas_price: 1,
-        average_gas_price: 1,
-        high_gas_price: 1
+        lowGasPrice: 1,
+        averageGasPrice: 1,
+        highGasPrice: 1
       },
       {
         denom: 'uthb',
-        low_gas_price: 23.1,
-        average_gas_price: 23.1,
-        high_gas_price: 23.1
+        lowGasPrice: 23.1,
+        averageGasPrice: 23.1,
+        highGasPrice: 23.1
       },
       {
         denom: 'usek',
-        low_gas_price: 6.25,
-        average_gas_price: 6.25,
-        high_gas_price: 6.25
+        lowGasPrice: 6.25,
+        averageGasPrice: 6.25,
+        highGasPrice: 6.25
       },
       {
         denom: 'unok',
-        low_gas_price: 6.25,
-        average_gas_price: 6.25,
-        high_gas_price: 6.25
+        lowGasPrice: 6.25,
+        averageGasPrice: 6.25,
+        highGasPrice: 6.25
       },
       {
         denom: 'udkk',
-        low_gas_price: 4.5,
-        average_gas_price: 4.5,
-        high_gas_price: 4.5
+        lowGasPrice: 4.5,
+        averageGasPrice: 4.5,
+        highGasPrice: 4.5
       },
       {
         denom: 'uidr',
-        low_gas_price: 10900,
-        average_gas_price: 10900,
-        high_gas_price: 10900
+        lowGasPrice: 10900,
+        averageGasPrice: 10900,
+        highGasPrice: 10900
       },
       {
         denom: 'uphp',
-        low_gas_price: 38,
-        average_gas_price: 38,
-        high_gas_price: 38
+        lowGasPrice: 38,
+        averageGasPrice: 38,
+        highGasPrice: 38
       },
       {
         denom: 'uhkd',
-        low_gas_price: 5.85,
-        average_gas_price: 5.85,
-        high_gas_price: 5.85
+        lowGasPrice: 5.85,
+        averageGasPrice: 5.85,
+        highGasPrice: 5.85
       },
       {
         denom: 'umyr',
-        low_gas_price: 3,
-        average_gas_price: 3,
-        high_gas_price: 3
+        lowGasPrice: 3,
+        averageGasPrice: 3,
+        highGasPrice: 3
       },
       {
         denom: 'utwd',
-        low_gas_price: 20,
-        average_gas_price: 20,
-        high_gas_price: 20
+        lowGasPrice: 20,
+        averageGasPrice: 20,
+        highGasPrice: 20
       }
     ]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uluna'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.svg'
   },
@@ -224,31 +224,31 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/terra',
-      tx_page: 'https://ezstaking.app/terra/txs/${txHash}',
-      account_page: 'https://ezstaking.app/terra/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/terra/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/terra/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/terra-luna',
-      tx_page: 'https://ping.pub/terra-luna/tx/${txHash}'
+      txPage: 'https://ping.pub/terra-luna/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/terra',
-      tx_page: 'https://atomscan.com/terra/transactions/${txHash}',
-      account_page: 'https://atomscan.com/terra/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/terra/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/terra/accounts/${accountAddress}'
     },
     {
       kind: 'finder',
       url: 'https://finder.terra.money/classic',
-      tx_page: 'https://finder.terra.money/classic/tx/${txHash}',
-      account_page: 'https://finder.terra.money/classic/address/${accountAddress}'
+      txPage: 'https://finder.terra.money/classic/tx/${txHash}',
+      accountPage: 'https://finder.terra.money/classic/address/${accountAddress}'
     },
     {
       kind: 'finder',
       url: 'https://finder.terrarebels.net/classic',
-      tx_page: 'https://finder.terrarebels.net/classic/tx/${txHash}',
-      account_page: 'https://finder.terrarebels.net/classic/address/${accountAddress}'
+      txPage: 'https://finder.terrarebels.net/classic/tx/${txHash}',
+      accountPage: 'https://finder.terrarebels.net/classic/address/${accountAddress}'
     }
   ],
   images: [{

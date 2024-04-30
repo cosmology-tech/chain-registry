@@ -1,12 +1,12 @@
-import assets from './assets';
+import assetLists from './asset-lists';
 import chains from './chains';
 
 
 
 export default {
-  assets, chains
+  assetLists, chains
 };
 
 export {
-  assets, chains
+  assetLists, chains
 };

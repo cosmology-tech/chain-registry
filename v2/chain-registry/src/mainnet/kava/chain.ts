@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'kava',
+  chainName: 'kava',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.kava.io/',
-  pretty_name: 'Kava',
-  chain_id: 'kava_2222-10',
-  bech32_prefix: 'kava',
-  daemon_name: 'kava',
-  node_home: '$HOME/.kava',
+  prettyName: 'Kava',
+  chainId: 'kava_2222-10',
+  bech32Prefix: 'kava',
+  daemonName: 'kava',
+  nodeHome: '$HOME/.kava',
   slip44: 459,
-  alternative_slip44s: [118],
+  alternativeSlip44s: [118],
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ukava',
-        low_gas_price: 0.05,
-        average_gas_price: 0.1,
-        high_gas_price: 0.25
+        lowGasPrice: 0.05,
+        averageGasPrice: 0.1,
+        highGasPrice: 0.25
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ukava'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg'
   },
@@ -120,7 +120,7 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
-    "evm-http-jsonrpc": [
+    evmHttpJsonrpc: [
       {
         address: 'https://evm.kava.io/',
         provider: 'kava'
@@ -139,30 +139,30 @@ const info: Chain = {
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/kava',
-      tx_page: 'https://www.mintscan.io/kava/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/kava/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/kava/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/kava/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/kava',
-      tx_page: 'https://ezstaking.app/kava/txs/${txHash}',
-      account_page: 'https://ezstaking.app/kava/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/kava/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/kava/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/kava',
-      tx_page: 'https://ping.pub/kava/tx/${txHash}'
+      txPage: 'https://ping.pub/kava/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/kava',
-      tx_page: 'https://atomscan.com/kava/transactions/${txHash}',
-      account_page: 'https://atomscan.com/kava/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/kava/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/kava/accounts/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/kava',
-      account_page: 'https://stakeflow.io/kava/accounts/${accountAddress}'
+      accountPage: 'https://stakeflow.io/kava/accounts/${accountAddress}'
     }
   ],
   images: [{

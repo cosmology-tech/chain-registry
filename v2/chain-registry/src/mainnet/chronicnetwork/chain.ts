@@ -1,20 +1,20 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'chronicnetwork',
+  chainName: 'chronicnetwork',
   status: 'killed',
-  network_type: 'mainnet',
-  pretty_name: 'Chronic Chain',
-  chain_id: 'morocco-1',
-  bech32_prefix: 'chronic',
-  daemon_name: 'chtd',
-  node_home: '$HOME/.cht',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  prettyName: 'Chronic Chain',
+  chainId: 'morocco-1',
+  bech32Prefix: 'chronic',
+  daemonName: 'chtd',
+  nodeHome: '$HOME/.cht',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ucgas',
-        fixed_min_gas_price: 0.001
+        fixedMinGasPrice: 0.001
       }]
   },
   codebase: {
@@ -35,18 +35,18 @@ const info: Chain = {
     {
       kind: 'skynetexplorers',
       url: 'https://www.skynetexplorers.com/chronic-token',
-      tx_page: ''
+      txPage: ''
     },
     {
       kind: 'Zenscan.io',
       url: 'https://www.chronic.zenscan.io',
-      tx_page: ''
+      txPage: ''
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/chronicnetwork',
-      tx_page: 'https://atomscan.com/chronicnetwork/transactions/${txHash}',
-      account_page: 'https://atomscan.com/chronicnetwork/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/chronicnetwork/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/chronicnetwork/accounts/${accountAddress}'
     }
   ]
 };

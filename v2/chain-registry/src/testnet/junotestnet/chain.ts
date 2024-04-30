@@ -1,33 +1,33 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'junotestnet',
+  chainName: 'junotestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Juno Testnet',
-  chain_id: 'uni-6',
-  bech32_prefix: 'juno',
-  daemon_name: 'junod',
-  node_home: '$HOME/.juno',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Juno Testnet',
+  chainId: 'uni-6',
+  bech32Prefix: 'juno',
+  daemonName: 'junod',
+  nodeHome: '$HOME/.juno',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ujunox',
-        low_gas_price: 0.003,
-        average_gas_price: 0.0045,
-        high_gas_price: 0.006
+        lowGasPrice: 0.003,
+        averageGasPrice: 0.0045,
+        highGasPrice: 0.006
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ujunox'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.45',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.31'
+    cosmosSdkVersion: '0.45',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.31'
   },
   apis: {
     rpc: [
@@ -71,24 +71,24 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://testnet.app.ezstaking.io/juno-testnet',
-      tx_page: 'https://testnet.app.ezstaking.io/juno-testnet/txs/${txHash}',
-      account_page: 'https://testnet.app.ezstaking.io/juno-testnet/account/${accountAddress}'
+      txPage: 'https://testnet.app.ezstaking.io/juno-testnet/txs/${txHash}',
+      accountPage: 'https://testnet.app.ezstaking.io/juno-testnet/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Juno-Testnet',
-      tx_page: 'https://explorer.stavr.tech/Juno-Testnet/txs/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Juno-Testnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Juno-Testnet/txs/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Juno-Testnet/account/${accountAddress}'
     },
     {
       kind: 'Mintscan',
       url: 'https://testnet.mintscan.io/juno-testnet',
-      tx_page: 'https://testnet.mintscan.io/juno-testnet/txs/${txHash}'
+      txPage: 'https://testnet.mintscan.io/juno-testnet/txs/${txHash}'
     },
     {
       kind: 'NodesGuru',
       url: 'https://testnet.juno.explorers.guru/',
-      tx_page: 'https://testnet.juno.explorers.guru/transaction/${txHash}'
+      txPage: 'https://testnet.juno.explorers.guru/transaction/${txHash}'
     }
   ]
 };

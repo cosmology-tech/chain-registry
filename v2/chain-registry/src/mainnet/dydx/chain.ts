@@ -1,41 +1,41 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'dydx',
+  chainName: 'dydx',
   status: 'live',
   website: 'https://dydx.trade/',
-  network_type: 'mainnet',
-  pretty_name: 'dYdX Protocol',
-  chain_id: 'dydx-mainnet-1',
-  bech32_prefix: 'dydx',
-  daemon_name: 'dydxprotocold',
-  node_home: '$HOME/.dydxprotocol',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  prettyName: 'dYdX Protocol',
+  chainId: 'dydx-mainnet-1',
+  bech32Prefix: 'dydx',
+  daemonName: 'dydxprotocold',
+  nodeHome: '$HOME/.dydxprotocol',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'adydx',
-        fixed_min_gas_price: 12500000000,
-        low_gas_price: 12500000000,
-        average_gas_price: 12500000000,
-        high_gas_price: 20000000000
+        fixedMinGasPrice: 12500000000,
+        lowGasPrice: 12500000000,
+        averageGasPrice: 12500000000,
+        highGasPrice: 20000000000
       }, {
         denom: 'ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5',
-        fixed_min_gas_price: 0.025,
-        low_gas_price: 0.025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.03
+        fixedMinGasPrice: 0.025,
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.03
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'adydx'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'dydxprotocol/cosmos-sdk v0.50.6-0.20240326192503-dd116391188d'
+    cosmosSdkVersion: 'dydxprotocol/cosmos-sdk v0.50.5-0.20240220212824-35f31482370c'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
   },
@@ -200,26 +200,26 @@ const info: Chain = {
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/dydx',
-      tx_page: 'https://www.mintscan.io/dydx/txs/${txHash}',
-      account_page: 'https://www.mintscan.io/dydx/account/${accountAddress}'
+      txPage: 'https://www.mintscan.io/dydx/txs/${txHash}',
+      accountPage: 'https://www.mintscan.io/dydx/account/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/dydx',
-      tx_page: 'https://ezstaking.app/dydx/txs/${txHash}',
-      account_page: 'https://ezstaking.app/dydx/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/dydx/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/dydx/account/${accountAddress}'
     },
     {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.top/dydx/',
-      tx_page: 'https://explorer.nodestake.top/dydx/txs/${txHash}',
-      account_page: 'https://explorer.nodestake.top/dydx/account/${accountAddress}'
+      txPage: 'https://explorer.nodestake.top/dydx/txs/${txHash}',
+      accountPage: 'https://explorer.nodestake.top/dydx/account/${accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/dydx',
-      tx_page: 'https://explorer.tcnetwork.io/dydx/transaction/${txHash}',
-      account_page: 'https://explorer.tcnetwork.io/dydx/account/${accountAddress}'
+      txPage: 'https://explorer.tcnetwork.io/dydx/transaction/${txHash}',
+      accountPage: 'https://explorer.tcnetwork.io/dydx/account/${accountAddress}'
     }
   ],
   images: [{

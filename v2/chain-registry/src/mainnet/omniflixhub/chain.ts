@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'omniflixhub',
+  chainName: 'omniflixhub',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://omniflix.network/',
-  pretty_name: 'OmniFlix',
-  chain_id: 'omniflixhub-1',
-  daemon_name: 'omniflixhubd',
-  node_home: '$HOME/.omniflixhub',
-  bech32_prefix: 'omniflix',
+  prettyName: 'OmniFlix',
+  chainId: 'omniflixhub-1',
+  daemonName: 'omniflixhubd',
+  nodeHome: '$HOME/.omniflixhub',
+  bech32Prefix: 'omniflix',
   slip44: 118,
   codebase: {
-    cosmos_sdk_version: 'v0.47.10',
-    cosmwasm_version: 'v0.45.0'
+    cosmosSdkVersion: 'v0.47.10',
+    cosmwasmVersion: 'v0.45.0'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg'
   },
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uflix',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.001,
-        average_gas_price: 0.0025,
-        high_gas_price: 0.025
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.001,
+        averageGasPrice: 0.0025,
+        highGasPrice: 0.025
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uflix'
       }]
   },
@@ -222,26 +222,26 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/omniflixhub',
-      tx_page: 'https://ezstaking.app/omniflixhub/txs/${txHash}',
-      account_page: 'https://ezstaking.app/omniflixhub/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/omniflixhub/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/omniflixhub/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/omniflix',
-      tx_page: 'https://www.mintscan.io/omniflix/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/omniflix/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/omniflix/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/omniflix/accounts/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/omniflixhub',
-      tx_page: 'https://atomscan.com/omniflixhub/transactions/${txHash}',
-      account_page: 'https://atomscan.com/omniflixhub/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/omniflixhub/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/omniflixhub/accounts/${accountAddress}'
     },
     {
       kind: 'STAKR.space explorer',
       url: 'https://explorer.stakr.space/omniflix/',
-      tx_page: 'https://explorer.stakr.space/omniflix/tx/${txHash}',
-      account_page: 'https://explorer.stakr.space/omniflix/account/${accountAddress}'
+      txPage: 'https://explorer.stakr.space/omniflix/tx/${txHash}',
+      accountPage: 'https://explorer.stakr.space/omniflix/account/${accountAddress}'
     }
   ],
   images: [{

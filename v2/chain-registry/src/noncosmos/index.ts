@@ -1,12 +1,12 @@
-import assets from './assets';
-import ibc from './ibc';
+import assetLists from './asset-lists';
+import ibcData from './ibc-data';
 
 
 
 export default {
-  assets, ibc
+  assetLists, ibcData
 };
 
 export {
-  assets, ibc
+  assetLists, ibcData
 };

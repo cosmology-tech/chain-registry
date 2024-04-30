@@ -1,7 +1,7 @@
-import _assets from './assets';
+import _assetList from './asset-list';
 import _chain from './chain';
-import _ibc from './ibc';
+import _ibcData from './ibc-data';
 
-export const assets = _assets;
+export const assetList = _assetList;
 export const chain = _chain;
-export const ibc = _ibc;
+export const ibcData = _ibcData;

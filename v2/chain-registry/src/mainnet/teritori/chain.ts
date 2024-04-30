@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'teritori',
+  chainName: 'teritori',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://teritori.com/',
-  pretty_name: 'Teritori',
-  chain_id: 'teritori-1',
-  daemon_name: 'teritorid',
-  node_home: '$HOME/.teritorid',
-  bech32_prefix: 'tori',
+  prettyName: 'Teritori',
+  chainId: 'teritori-1',
+  daemonName: 'teritorid',
+  nodeHome: '$HOME/.teritorid',
+  bech32Prefix: 'tori',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'utori',
-        low_gas_price: 0,
-        average_gas_price: 0.25,
-        high_gas_price: 0.5
+        lowGasPrice: 0,
+        averageGasPrice: 0.25,
+        highGasPrice: 0.5
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'utori'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.6',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.41.0'
+    cosmosSdkVersion: 'v0.47.6',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'v0.41.0'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/chain.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/chain.svg'
   },
@@ -189,50 +189,50 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/teritori',
-      tx_page: 'https://ezstaking.app/teritori/txs/${txHash}',
-      account_page: 'https://ezstaking.app/teritori/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/teritori/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/teritori/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://explorer.teritori.com/teritori',
-      tx_page: 'https://explorer.teritori.com/teritori/tx/${txHash}'
+      txPage: 'https://explorer.teritori.com/teritori/tx/${txHash}'
     },
     {
       kind: '🔥STAVR🔥 Explorer',
       url: 'https://explorer.stavr.tech/teritori-main',
-      tx_page: 'https://explorer.stavr.tech/teritori-main/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/teritori-main/tx/${txHash}'
     },
     {
       kind: 'guru',
       url: 'https://teritori.explorers.guru/',
-      tx_page: 'https://teritori.explorers.guru/transaction/${txHash}'
+      txPage: 'https://teritori.explorers.guru/transaction/${txHash}'
     },
     {
       kind: 'Brochain',
       url: 'https://explorer.brocha.in/teritori',
-      tx_page: 'https://explorer.brocha.in/teritori/tx/${txHash}'
+      txPage: 'https://explorer.brocha.in/teritori/tx/${txHash}'
     },
     {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀',
       url: 'https://exp.utsa.tech/teritori',
-      tx_page: 'https://exp.utsa.tech/teritori/tx/${txHash}'
+      txPage: 'https://exp.utsa.tech/teritori/tx/${txHash}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/teritori',
-      tx_page: 'https://www.mintscan.io/teritori/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/teritori/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/teritori/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/teritori/accounts/${accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/teritori',
-      tx_page: 'https://explorer.tcnetwork.io/teritori/transaction/${txHash}'
+      txPage: 'https://explorer.tcnetwork.io/teritori/transaction/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/teritori',
-      tx_page: 'https://atomscan.com/teritori/transactions/${txHash}',
-      account_page: 'https://atomscan.com/teritori/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/teritori/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/teritori/accounts/${accountAddress}'
     }
   ],
   images: [{

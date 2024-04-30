@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'planq',
+  chainName: 'planq',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://planq.network/',
-  pretty_name: 'Planq',
-  chain_id: 'planq_7070-2',
-  bech32_prefix: 'plq',
-  node_home: '$HOME/.planqd',
-  daemon_name: 'planqd',
-  key_algos: ['ethsecp256k1'],
+  prettyName: 'Planq',
+  chainId: 'planq_7070-2',
+  bech32Prefix: 'plq',
+  nodeHome: '$HOME/.planqd',
+  daemonName: 'planqd',
+  keyAlgos: ['ethsecp256k1'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'aplanq',
-        fixed_min_gas_price: 20000000000,
-        low_gas_price: 30000000000,
-        average_gas_price: 35000000000,
-        high_gas_price: 40000000000
+        fixedMinGasPrice: 20000000000,
+        lowGasPrice: 30000000000,
+        averageGasPrice: 35000000000,
+        highGasPrice: 40000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'aplanq'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.46.3'
+    cosmosSdkVersion: 'v0.46.3'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg'
   },
@@ -208,7 +208,7 @@ const info: Chain = {
         provider: 'Blockval'
       }
     ],
-    "evm-http-jsonrpc": [
+    evmHttpJsonrpc: [
       {
         address: 'https://evm-rpc.planq.network',
         provider: 'planq.network'
@@ -251,73 +251,73 @@ const info: Chain = {
     {
       kind: 'bigdipper',
       url: 'https://explorer.planq.network',
-      tx_page: 'https://explorer.planq.network/transactions/${txHash}'
+      txPage: 'https://explorer.planq.network/transactions/${txHash}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Planq-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Planq-Mainnet/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/Planq-Mainnet/tx/${txHash}'
     },
     {
       kind: 'blockscout',
       url: 'https://evm.planq.network',
-      tx_page: 'https://evm.planq.network/tx/${txHash}'
+      txPage: 'https://evm.planq.network/tx/${txHash}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/planq',
-      tx_page: 'https://explorer.nodestake.top/planq/tx/${txHash}'
+      txPage: 'https://explorer.nodestake.top/planq/tx/${txHash}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/planq',
-      tx_page: 'https://explorer.tcnetwork.io/planq/transaction/${txHash}'
+      txPage: 'https://explorer.tcnetwork.io/planq/transaction/${txHash}'
     },
     {
       kind: 'RoomIT',
       url: 'https://explorer.tendermint.roomit.xyz/planq',
-      tx_page: 'https://explorer.tendermint.roomit.xyz/planq/transaction/${txHash}'
+      txPage: 'https://explorer.tendermint.roomit.xyz/planq/transaction/${txHash}'
     },
     {
       kind: 'Kynraze',
       url: 'https://explorer.kynraze.com/planq',
-      tx_page: 'https://explorer.kynraze.com/planq/tx/${txHash}'
+      txPage: 'https://explorer.kynraze.com/planq/tx/${txHash}'
     },
     {
       kind: 'THE EXPLORER',
       url: 'https://explorer.sxlzptprjkt.xyz/planq',
-      tx_page: 'https://explorer.sxlzptprjkt.xyz/planq/tx/${txHash}'
+      txPage: 'https://explorer.sxlzptprjkt.xyz/planq/tx/${txHash}'
     },
     {
       kind: 'NODEXPLORER',
       url: 'https://explorer.nodexcapital.com/planq',
-      tx_page: 'https://explorer.nodexcapital.com/planq/tx/${txHash}'
+      txPage: 'https://explorer.nodexcapital.com/planq/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/planq',
-      tx_page: 'https://atomscan.com/planq/transactions/${txHash}',
-      account_page: 'https://atomscan.com/planq/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/planq/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/planq/accounts/${accountAddress}'
     },
     {
       kind: 'Indonode',
       url: 'https://explorer.indonode.net/planq',
-      tx_page: 'https://explorer.indonode.net/planq/tx/${txHash}'
+      txPage: 'https://explorer.indonode.net/planq/tx/${txHash}'
     },
     {
       kind: 'Safe Block',
       url: 'https://explorer.safeblock.space/planq',
-      tx_page: 'https://explorer.safeblock.space/planq/tx/${txHash}'
+      txPage: 'https://explorer.safeblock.space/planq/tx/${txHash}'
     },
     {
       kind: 'KonsorTech',
       url: 'https://explorer.konsortech.xyz/planq',
-      tx_page: 'https://explorer.konsortech.xyz/planq/tx/${txHash}'
+      txPage: 'https://explorer.konsortech.xyz/planq/tx/${txHash}'
     },
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/planq',
-      tx_page: 'https://explorer.whenmoonwhenlambo.money/tx/${txHash}'
+      txPage: 'https://explorer.whenmoonwhenlambo.money/tx/${txHash}'
     }
   ],
   images: [{

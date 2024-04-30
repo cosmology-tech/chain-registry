@@ -1,33 +1,33 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'galaxy',
+  chainName: 'galaxy',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://galaxychain.zone/',
-  pretty_name: 'Galaxy',
-  chain_id: 'galaxy-1',
-  bech32_prefix: 'galaxy',
-  daemon_name: 'galaxyd',
-  node_home: '$HOME/.galaxy',
+  prettyName: 'Galaxy',
+  chainId: 'galaxy-1',
+  bech32Prefix: 'galaxy',
+  daemonName: 'galaxyd',
+  nodeHome: '$HOME/.galaxy',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uglx',
-        low_gas_price: 0.025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.035
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.035
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uglx'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.svg'
   },
@@ -39,7 +39,7 @@ const info: Chain = {
   explorers: [{
       kind: 'ping.pub',
       url: 'https://explorer.postcapitalist.io/Galaxy',
-      tx_page: 'https://explorer.postcapitalist.io/Galaxy/tx/${txHash}'
+      txPage: 'https://explorer.postcapitalist.io/Galaxy/tx/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.png',

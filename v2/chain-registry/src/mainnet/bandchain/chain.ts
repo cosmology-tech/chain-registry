@@ -1,38 +1,38 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'bandchain',
+  chainName: 'bandchain',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://bandprotocol.com/',
-  pretty_name: 'Band Protocol',
-  chain_id: 'laozi-mainnet',
-  daemon_name: 'bandd',
-  node_home: '$HOME/.band',
-  bech32_prefix: 'band',
+  prettyName: 'Band Protocol',
+  chainId: 'laozi-mainnet',
+  daemonName: 'bandd',
+  nodeHome: '$HOME/.band',
+  bech32Prefix: 'band',
   slip44: 494,
-  key_algos: ['secp256k1'],
+  keyAlgos: ['secp256k1'],
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uband',
-        fixed_min_gas_price: 0.0025,
-        low_gas_price: 0.0025,
-        average_gas_price: 0.003,
-        high_gas_price: 0.005
+        fixedMinGasPrice: 0.0025,
+        lowGasPrice: 0.0025,
+        averageGasPrice: 0.003,
+        highGasPrice: 0.005
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uband'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1814400s'
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.45.16'
+    cosmosSdkVersion: '0.45.16'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg'
   },
@@ -197,44 +197,44 @@ const info: Chain = {
     {
       kind: 'cosmoscan',
       url: 'https://cosmoscan.io',
-      tx_page: 'https://cosmoscan.io/tx/${txHash}'
+      txPage: 'https://cosmoscan.io/tx/${txHash}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/band',
-      tx_page: 'https://www.mintscan.io/band/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/band/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/band/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/band/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/band-protocol',
-      tx_page: 'https://ping.pub/band-protocol/tx/${txHash}'
+      txPage: 'https://ping.pub/band-protocol/tx/${txHash}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Band-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Band-Mainnet/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/Band-Mainnet/tx/${txHash}'
     },
     {
       kind: 'Nodeist Explorer',
       url: 'https://exp.nodeist.net/band',
-      tx_page: 'https://exp.nodeist.net/band/tx/${txHash}'
+      txPage: 'https://exp.nodeist.net/band/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/band-protocol',
-      tx_page: 'https://atomscan.com/band-protocol/transactions/${txHash}',
-      account_page: 'https://atomscan.com/band-protocol/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/band-protocol/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/band-protocol/accounts/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/band-protocol',
-      account_page: 'https://stakeflow.io/band-protocol/accounts/${accountAddress}'
+      accountPage: 'https://stakeflow.io/band-protocol/accounts/${accountAddress}'
     },
     {
       kind: 'kjnodes Explorer',
       url: 'https://explorer.kjnodes.com/band',
-      tx_page: 'https://explorer.kjnodes.com/band/tx/${txHash}'
+      txPage: 'https://explorer.kjnodes.com/band/tx/${txHash}'
     }
   ],
   images: [{

@@ -1,33 +1,33 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'cosstestnet',
+  chainName: 'cosstestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'COSS Testnet',
-  chain_id: 'coss-testnet-1',
-  bech32_prefix: 'coss',
-  daemon_name: 'cossd',
-  node_home: '$HOME/.cossd',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'COSS Testnet',
+  chainId: 'coss-testnet-1',
+  bech32Prefix: 'coss',
+  daemonName: 'cossd',
+  nodeHome: '$HOME/.cossd',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ucgas',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ucgas'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.50.2',
-    cosmwasm_enabled: false
+    cosmosSdkVersion: '0.50.2',
+    cosmwasmEnabled: false
   },
   apis: {
     rpc: [{

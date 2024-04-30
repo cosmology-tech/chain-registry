@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'kichain',
+  chainName: 'kichain',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://foundation.ki/',
-  pretty_name: 'Ki',
-  chain_id: 'kichain-2',
-  bech32_prefix: 'ki',
-  daemon_name: 'kid',
-  node_home: '$HOME/.kid',
-  key_algos: ['secp256k1'],
+  prettyName: 'Ki',
+  chainId: 'kichain-2',
+  bech32Prefix: 'ki',
+  daemonName: 'kid',
+  nodeHome: '$HOME/.kid',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uxki',
-        fixed_min_gas_price: 0.025,
-        low_gas_price: 0.025,
-        average_gas_price: 0.03,
-        high_gas_price: 0.05
+        fixedMinGasPrice: 0.025,
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.03,
+        highGasPrice: 0.05
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uxki'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'
   },
@@ -133,30 +133,30 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/kichain',
-      tx_page: 'https://ezstaking.app/kichain/txs/${txHash}',
-      account_page: 'https://ezstaking.app/kichain/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/kichain/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/kichain/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/ki-chain',
-      tx_page: 'https://www.mintscan.io/ki-chain/txs/${txHash}',
-      account_page: 'https://www.mintscan.io/ki-chain/account/${accountAddress}'
+      txPage: 'https://www.mintscan.io/ki-chain/txs/${txHash}',
+      accountPage: 'https://www.mintscan.io/ki-chain/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Kichain-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Kichain-Mainnet/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/Kichain-Mainnet/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/kichain',
-      tx_page: 'https://ping.pub/kichain/tx/${txHash}'
+      txPage: 'https://ping.pub/kichain/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/ki-chain',
-      tx_page: 'https://atomscan.com/ki-chain/transactions/${txHash}',
-      account_page: 'https://atomscan.com/ki-chain/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/ki-chain/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/ki-chain/accounts/${accountAddress}'
     }
   ],
   images: [{

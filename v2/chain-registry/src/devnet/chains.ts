@@ -1,4 +1,4 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 
 import * as _bitcannadevnet2 from './bitcannadevnet2';
 import * as _celestiatestnet2 from './celestiatestnet2';

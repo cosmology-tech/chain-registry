@@ -1,37 +1,37 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'nobletestnet',
-  chain_id: 'grand-1',
+  chainName: 'nobletestnet',
+  chainId: 'grand-1',
   website: 'https://nobleassets.xyz/',
-  pretty_name: 'Noble',
+  prettyName: 'Noble',
   status: 'live',
-  network_type: 'testnet',
-  bech32_prefix: 'noble',
-  daemon_name: 'nobled',
-  node_home: '$HOME/.nobled',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'noble',
+  daemonName: 'nobled',
+  nodeHome: '$HOME/.nobled',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uusdc',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.03
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.03
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ustake'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1814400s'
     }
   },
   codebase: {
-    cosmos_sdk_version: 'v0.45',
-    cosmwasm_enabled: false
+    cosmosSdkVersion: 'v0.45',
+    cosmwasmEnabled: false
   },
   apis: {
     rpc: [{
@@ -56,11 +56,11 @@ const info: Chain = {
   explorers: [{
       kind: 'mintscan',
       url: 'https://mintscan.io/noble-testnet',
-      tx_page: 'https://mintscan.io/noble-testnet/txs/${txHash}'
+      txPage: 'https://mintscan.io/noble-testnet/txs/${txHash}'
     }, {
       kind: 'ping.pub',
       url: 'https://explore.strange.love/grand-1',
-      tx_page: 'https://explore.strange.love/grand-1/tx/${txHash}'
+      txPage: 'https://explore.strange.love/grand-1/tx/${txHash}'
     }]
 };
 export default info;

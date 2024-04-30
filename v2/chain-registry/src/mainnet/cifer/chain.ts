@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'cifer',
+  chainName: 'cifer',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://cifer.ai/',
-  pretty_name: 'Cifer',
-  chain_id: 'cifer-2',
-  bech32_prefix: 'cife',
-  daemon_name: 'ciferd',
-  node_home: '$HOME/.ciferd',
+  prettyName: 'Cifer',
+  chainId: 'cifer-2',
+  bech32Prefix: 'cife',
+  daemonName: 'ciferd',
+  nodeHome: '$HOME/.ciferd',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ucif',
-        fixed_min_gas_price: 0.0025,
-        low_gas_price: 1,
-        average_gas_price: 5,
-        high_gas_price: 10
+        fixedMinGasPrice: 0.0025,
+        lowGasPrice: 1,
+        averageGasPrice: 5,
+        highGasPrice: 10
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ucif'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
   },
@@ -49,7 +49,7 @@ const info: Chain = {
   explorers: [{
       kind: 'bigdipper',
       url: 'https://explorer.cifer.ai/',
-      tx_page: 'https://explorer.cifer.ai/transactions/${txHash}'
+      txPage: 'https://explorer.cifer.ai/transactions/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',

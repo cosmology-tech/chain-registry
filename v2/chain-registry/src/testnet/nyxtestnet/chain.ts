@@ -1,43 +1,43 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'nyxtestnet',
+  chainName: 'nyxtestnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://nymtech.net/',
-  pretty_name: 'Nym',
-  chain_id: 'sandbox',
-  bech32_prefix: 'n',
-  daemon_name: 'nyxd',
-  node_home: '$HOME/.nyxd',
+  prettyName: 'Nym',
+  chainId: 'sandbox',
+  bech32Prefix: 'n',
+  daemonName: 'nyxd',
+  nodeHome: '$HOME/.nyxd',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'unym',
-        fixed_min_gas_price: 0.025,
-        low_gas_price: 0.025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.025,
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }, {
         denom: 'unyx',
-        fixed_min_gas_price: 0.025,
-        low_gas_price: 0.025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.025,
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'unyx'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '432000s'
     }
   },
   codebase: {
-    cosmwasm_enabled: true
+    cosmwasmEnabled: true
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyxtestnet/images/nym_token_light.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyxtestnet/images/nym_token_light.svg'
   },
@@ -58,14 +58,14 @@ const info: Chain = {
   explorers: [{
       kind: 'ping.pub',
       url: 'https://sandbox-blocks.nymtech.net/sandbox',
-      tx_page: 'https://sandbox-blocks.nymtech.net/sandbox/tx/${txHash}'
+      txPage: 'https://sandbox-blocks.nymtech.net/sandbox/tx/${txHash}'
     }],
   images: [
     {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyxtestnet/images/nym_token_light.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyxtestnet/images/nym_token_light.svg',
       theme: {
-        dark_mode: false,
+        darkMode: false,
         circle: true
       }
     },
@@ -73,7 +73,7 @@ const info: Chain = {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyxtestnet/images/nym_token_dark.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyxtestnet/images/nym_token_dark.svg',
       theme: {
-        dark_mode: true,
+        darkMode: true,
         circle: true
       }
     },

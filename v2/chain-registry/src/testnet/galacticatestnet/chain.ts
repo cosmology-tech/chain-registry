@@ -1,33 +1,33 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'galacticatestnet',
+  chainName: 'galacticatestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Galactica Protocol Testnet',
-  chain_id: 'galactica_9302-1',
-  bech32_prefix: 'gala',
-  daemon_name: 'galacticad',
-  node_home: '$HOME/.galactica',
-  key_algos: ['ethsecp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Galactica Protocol Testnet',
+  chainId: 'galactica_9302-1',
+  bech32Prefix: 'gala',
+  daemonName: 'galacticad',
+  nodeHome: '$HOME/.galactica',
+  keyAlgos: ['ethsecp256k1'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'agnet',
-        fixed_min_gas_price: 10,
-        low_gas_price: 10,
-        average_gas_price: 10,
-        high_gas_price: 20
+        fixedMinGasPrice: 10,
+        lowGasPrice: 10,
+        averageGasPrice: 10,
+        highGasPrice: 20
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'agnet'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46',
-    cosmwasm_enabled: false
+    cosmosSdkVersion: '0.46',
+    cosmwasmEnabled: false
   },
   apis: {
     rpc: [{
@@ -49,14 +49,14 @@ const info: Chain = {
         provider: 'PFC'
       }]
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galactica/images/galactica.png'
   },
   explorers: [{
       kind: 'ping.pub',
       url: 'https://ping.pfc.zone/galactica-testnet',
-      tx_page: 'https://ping.pfc.zone/galactica-testnet/tx/${txHash}',
-      account_page: 'https://ping.pfc.zone/galactica-testnet/account/${accountAddress}'
+      txPage: 'https://ping.pfc.zone/galactica-testnet/tx/${txHash}',
+      accountPage: 'https://ping.pfc.zone/galactica-testnet/account/${accountAddress}'
     }],
   keywords: ['testnet'],
   images: [{

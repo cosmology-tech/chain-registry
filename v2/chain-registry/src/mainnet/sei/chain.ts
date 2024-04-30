@@ -1,37 +1,37 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'sei',
+  chainName: 'sei',
   status: 'live',
   website: 'https://www.sei.io/',
-  network_type: 'mainnet',
-  pretty_name: 'Sei',
-  chain_id: 'pacific-1',
-  bech32_prefix: 'sei',
-  daemon_name: 'seid',
-  node_home: '$HOME/.sei',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  prettyName: 'Sei',
+  chainId: 'pacific-1',
+  bech32Prefix: 'sei',
+  daemonName: 'seid',
+  nodeHome: '$HOME/.sei',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'usei',
-        fixed_min_gas_price: 0.02,
-        low_gas_price: 0.02,
-        average_gas_price: 0.02,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.02,
+        lowGasPrice: 0.02,
+        averageGasPrice: 0.02,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'usei'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'sei-cosmos v0.2.77',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'sei-wasmd v0.0.8'
+    cosmosSdkVersion: 'sei-cosmos v0.2.77',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'sei-wasmd v0.0.8'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.svg'
   },
@@ -128,26 +128,26 @@ const info: Chain = {
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/sei',
-      tx_page: 'https://ping.pub/sei/tx/${txHash}',
-      account_page: 'https://ping.pub/sei/account/${accountAddress}'
+      txPage: 'https://ping.pub/sei/tx/${txHash}',
+      accountPage: 'https://ping.pub/sei/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/sei',
-      tx_page: 'https://www.mintscan.io/sei/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/sei/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/sei/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/sei/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/sei',
-      tx_page: 'https://ezstaking.app/sei/txs/${txHash}',
-      account_page: 'https://ezstaking.app/sei/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/sei/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/sei/account/${accountAddress}'
     },
     {
       kind: 'seiscan',
       url: 'https://www.seiscan.app/pacific-1',
-      tx_page: 'https://www.seiscan.app/pacific-1/txs/${txHash}',
-      account_page: 'https://www.seiscan.app/pacific-1/accounts/${accountAddress}'
+      txPage: 'https://www.seiscan.app/pacific-1/txs/${txHash}',
+      accountPage: 'https://www.seiscan.app/pacific-1/accounts/${accountAddress}'
     }
   ],
   images: [{

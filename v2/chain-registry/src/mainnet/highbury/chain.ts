@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'highbury',
+  chainName: 'highbury',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.fury.black/',
-  pretty_name: 'Highbury',
-  chain_id: 'highbury_710-1',
-  bech32_prefix: 'fury',
-  daemon_name: 'fury',
-  node_home: '$HOME/.fury',
+  prettyName: 'Highbury',
+  chainId: 'highbury_710-1',
+  bech32Prefix: 'fury',
+  daemonName: 'fury',
+  nodeHome: '$HOME/.fury',
   slip44: 459,
-  alternative_slip44s: [710],
+  alternativeSlip44s: [710],
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ufury',
-        low_gas_price: 0.05,
-        average_gas_price: 0.1,
-        high_gas_price: 0.25
+        lowGasPrice: 0.05,
+        averageGasPrice: 0.1,
+        highGasPrice: 0.25
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ufury'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.svg'
   },
@@ -45,7 +45,7 @@ const info: Chain = {
         address: 'api-mainnet.furya.io:9090',
         provider: 'fanfury'
       }],
-    "evm-http-jsonrpc": [{
+    evmHttpJsonrpc: [{
         address: 'https://rest.furya.io/',
         provider: 'fanfury'
       }]
@@ -53,8 +53,8 @@ const info: Chain = {
   explorers: [{
       kind: 'pingpub',
       url: 'https://explorer.furya.wtf/',
-      tx_page: 'https://www.explorer.furya.wtf//txs/${txHash}',
-      account_page: 'https://explorer.furya.wtf//account/${accountAddress}'
+      txPage: 'https://www.explorer.furya.wtf//txs/${txHash}',
+      accountPage: 'https://explorer.furya.wtf//account/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.png',

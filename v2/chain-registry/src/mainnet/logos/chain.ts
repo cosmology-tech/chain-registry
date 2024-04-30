@@ -1,19 +1,19 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'logos',
+  chainName: 'logos',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'Logos',
-  chain_id: 'logos_7002-1',
-  bech32_prefix: 'logos',
-  daemon_name: 'logosd',
-  node_home: '$HOME/.logos',
-  key_algos: ['ethsecp256k1'],
-  extra_codecs: ['ethermint'],
+  networkType: 'mainnet',
+  prettyName: 'Logos',
+  chainId: 'logos_7002-1',
+  bech32Prefix: 'logos',
+  daemonName: 'logosd',
+  nodeHome: '$HOME/.logos',
+  keyAlgos: ['ethsecp256k1'],
+  extraCodecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'aLYT'
       }]
   },
@@ -30,13 +30,13 @@ const info: Chain = {
         address: 'logos-grpc.provable.dev:443',
         provider: 'laurel.provable'
       }],
-    "evm-http-jsonrpc": [{
+    evmHttpJsonrpc: [{
         address: 'https://logos-evm.provable.dev/',
         provider: 'laurel.provable'
       }]
   },
   explorers: [],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.svg'
   },

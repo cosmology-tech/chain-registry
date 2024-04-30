@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'impacthub',
+  chainName: 'impacthub',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.ixo.world/',
-  pretty_name: 'Impacts Hub',
-  chain_id: 'ixo-5',
-  bech32_prefix: 'ixo',
-  daemon_name: 'ixod',
-  node_home: '$HOME/.ixod',
-  key_algos: ['secp256k1', 'ed25519'],
+  prettyName: 'Impacts Hub',
+  chainId: 'ixo-5',
+  bech32Prefix: 'ixo',
+  daemonName: 'ixod',
+  nodeHome: '$HOME/.ixod',
+  keyAlgos: ['secp256k1', 'ed25519'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uixo',
-        fixed_min_gas_price: 0.025,
-        low_gas_price: 0.025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.025,
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uixo'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.45.16'
+    cosmosSdkVersion: 'v0.45.16'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.svg'
   },
@@ -105,36 +105,36 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/ixo',
-      tx_page: 'https://ezstaking.app/ixo/txs/${txHash}',
-      account_page: 'https://ezstaking.app/ixo/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/ixo/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/ixo/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/IXO-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/IXO-Mainnet/txs/${txHash}',
-      account_page: 'https://explorer.stavr.tech/IXO-Mainnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/IXO-Mainnet/txs/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/IXO-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'bigdipper',
       url: 'https://blockscan.ixo.world',
-      tx_page: 'https://blockscan.ixo.world/transactions/${txHash}'
+      txPage: 'https://blockscan.ixo.world/transactions/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/ixo',
-      tx_page: 'https://ping.pub/ixo/tx/${txHash}'
+      txPage: 'https://ping.pub/ixo/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/ixo',
-      tx_page: 'https://atomscan.com/ixo/transactions/${txHash}',
-      account_page: 'https://atomscan.com/ixo/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/ixo/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/ixo/accounts/${accountAddress}'
     },
     {
       kind: 'Mintscan',
       url: 'https://www.mintscan.io/ixo',
-      tx_page: 'https://www.mintscan.io/ixo/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/ixo/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/ixo/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/ixo/accounts/${accountAddress}'
     }
   ],
   images: [{

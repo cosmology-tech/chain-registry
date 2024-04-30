@@ -1,27 +1,27 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'kyvetestnet',
-  chain_id: 'kaon-1',
-  pretty_name: 'KYVE Kaon',
+  chainName: 'kyvetestnet',
+  chainId: 'kaon-1',
+  prettyName: 'KYVE Kaon',
   status: 'live',
-  network_type: 'testnet',
-  bech32_prefix: 'kyve',
-  daemon_name: 'kyved',
-  node_home: '$HOME/.kyve',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'kyve',
+  daemonName: 'kyved',
+  nodeHome: '$HOME/.kyve',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'tkyve',
-        fixed_min_gas_price: 0.02,
-        low_gas_price: 0.02,
-        average_gas_price: 0.03,
-        high_gas_price: 0.06
+        fixedMinGasPrice: 0.02,
+        lowGasPrice: 0.02,
+        averageGasPrice: 0.03,
+        highGasPrice: 0.06
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'tkyve'
       }]
   },
@@ -61,8 +61,8 @@ const info: Chain = {
   explorers: [{
       kind: 'mintscan',
       url: 'https://testnet.mintscan.io/kyve-testnet',
-      tx_page: 'https://testnet.mintscan.io/kyve-testnet/txs/${txHash}',
-      account_page: 'https://testnet.mintscan.io/kyve-testnet/account/${accountAddress}'
+      txPage: 'https://testnet.mintscan.io/kyve-testnet/txs/${txHash}',
+      accountPage: 'https://testnet.mintscan.io/kyve-testnet/account/${accountAddress}'
     }]
 };
 export default info;

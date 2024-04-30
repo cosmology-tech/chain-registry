@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'composable',
-  chain_id: 'centauri-1',
+  chainName: 'composable',
+  chainId: 'centauri-1',
   website: 'https://www.composable.finance/',
-  pretty_name: 'Composable',
+  prettyName: 'Composable',
   status: 'live',
-  network_type: 'mainnet',
-  bech32_prefix: 'centauri',
-  daemon_name: 'centaurid',
-  node_home: '$HOME/.banksy',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  bech32Prefix: 'centauri',
+  daemonName: 'centaurid',
+  nodeHome: '$HOME/.banksy',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ppica',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0,
-        high_gas_price: 0
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0,
+        averageGasPrice: 0,
+        highGasPrice: 0
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ppica'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'rust-ninja/cosmos-sdk v0.47.5-patch-validators-trim-tag'
+    cosmosSdkVersion: 'rust-ninja/cosmos-sdk v0.47.5-patch-validators-trim-tag'
   },
-  logo_URIs: {
+  logoURIs: {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/composable.svg'
   },
   description: 'Picasso is a DeFi infrastructure-focused Layer 1 protocol that leads the industry in building the trust-minimized interoperability solution -Cross-Ecosystem IBC. Complementary to the interoperability work, Picasso is building the first Generalized Restaking Layer starting with deployment on Solana, and expand support for all IBC connected ecosystems.',
@@ -197,23 +197,23 @@ const info: Chain = {
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/composable',
-      tx_page: 'https://ping.pub/composable/tx/${txHash}'
+      txPage: 'https://ping.pub/composable/tx/${txHash}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/composable',
-      tx_page: 'https://explorer.nodestake.top/composable/tx/${txHash}'
+      txPage: 'https://explorer.nodestake.top/composable/tx/${txHash}'
     },
     {
       kind: 'Stake Village',
       url: 'https://exp.stakevillage.net/composable',
-      tx_page: 'https://exp.stakevillage.net/composable/tx/${txHash}',
-      account_page: 'https://exp.stakevillage.net/composable/account/${accountAddress}'
+      txPage: 'https://exp.stakevillage.net/composable/tx/${txHash}',
+      accountPage: 'https://exp.stakevillage.net/composable/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Composable-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Composable-Mainnet/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/Composable-Mainnet/tx/${txHash}'
     }
   ],
   images: [{

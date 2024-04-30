@@ -1,36 +1,36 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'stargaze',
+  chainName: 'stargaze',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://stargaze.zone/',
-  pretty_name: 'Stargaze',
-  chain_id: 'stargaze-1',
-  bech32_prefix: 'stars',
-  daemon_name: 'starsd',
-  node_home: '$HOME/.starsd',
+  prettyName: 'Stargaze',
+  chainId: 'stargaze-1',
+  bech32Prefix: 'stars',
+  daemonName: 'starsd',
+  nodeHome: '$HOME/.starsd',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ustars',
-        fixed_min_gas_price: 1,
-        low_gas_price: 1,
-        average_gas_price: 1.1,
-        high_gas_price: 1.2
+        fixedMinGasPrice: 1,
+        lowGasPrice: 1,
+        averageGasPrice: 1.1,
+        highGasPrice: 1.2
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ustars'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.10',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.45.0'
+    cosmosSdkVersion: 'v0.47.10',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'v0.45.0'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
   },
@@ -247,31 +247,31 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/stargaze',
-      tx_page: 'https://ezstaking.app/stargaze/txs/${txHash}',
-      account_page: 'https://ezstaking.app/stargaze/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/stargaze/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/stargaze/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/stargaze/',
-      tx_page: 'https://www.mintscan.io/stargaze/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/stargaze/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/stargaze/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/stargaze/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/stargaze',
-      tx_page: 'https://ping.pub/stargaze/tx/${txHash}'
+      txPage: 'https://ping.pub/stargaze/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/stargaze',
-      tx_page: 'https://atomscan.com/stargaze/transactions/${txHash}',
-      account_page: 'https://atomscan.com/stargaze/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/stargaze/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/stargaze/accounts/${accountAddress}'
     },
     {
       kind: 'Starscan',
       url: 'https://starscan.net/',
-      tx_page: 'https://starscan.net/stargaze-1/tx/${txHash}',
-      account_page: 'https://starscan.net/stargaze-1/address/${accountAddress}'
+      txPage: 'https://starscan.net/stargaze-1/tx/${txHash}',
+      accountPage: 'https://starscan.net/stargaze-1/address/${accountAddress}'
     }
   ],
   images: [{

@@ -1,52 +1,52 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'elystestnet',
+  chainName: 'elystestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Elys Network',
-  chain_id: 'elystestnet-1',
-  bech32_prefix: 'elys',
-  daemon_name: 'elysd',
-  node_home: '$HOME/.elys',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Elys Network',
+  chainId: 'elystestnet-1',
+  bech32Prefix: 'elys',
+  daemonName: 'elysd',
+  nodeHome: '$HOME/.elys',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uelys'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1209600s'
     }
   },
   fees: {
-    fee_tokens: [
+    feeTokens: [
       {
         denom: 'uelys',
-        fixed_min_gas_price: 0.01,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.03
+        fixedMinGasPrice: 0.01,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.03
       },
       {
         denom: 'ibc/2180E84E20F5679FCC760D8C165B60F42065DEF7F46A72B447CFF1B7DC6C0A65',
-        fixed_min_gas_price: 0.01,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.03
+        fixedMinGasPrice: 0.01,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.03
       },
       {
         denom: 'ibc/E2D2F6ADCC68AA3384B2F5DFACCA437923D137C14E86FB8A10207CF3BED0C8D4',
-        fixed_min_gas_price: 0.01,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.03
+        fixedMinGasPrice: 0.01,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.03
       }
     ]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47',
-    cosmwasm_enabled: false
+    cosmosSdkVersion: 'v0.47',
+    cosmwasmEnabled: false
   },
   apis: {
     rpc: [
@@ -101,19 +101,19 @@ const info: Chain = {
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Elys-Testnet',
-      tx_page: 'https://explorer.stavr.tech/Elys-Testnet/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Elys-Testnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Elys-Testnet/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Elys-Testnet/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://testnet.elys.network/elys',
-      tx_page: 'https://testnet.elys.network/elys/tx/${txHash}'
+      txPage: 'https://testnet.elys.network/elys/tx/${txHash}'
     },
     {
       kind: 'itrocket',
       url: 'https://testnet.itrocket.net/elys',
-      tx_page: 'https://testnet.itrocket.net/elys/staking/tx/${txHash}',
-      account_page: 'https://testnet.itrocket.net/elys/account/${accountAddress}'
+      txPage: 'https://testnet.itrocket.net/elys/staking/tx/${txHash}',
+      accountPage: 'https://testnet.itrocket.net/elys/account/${accountAddress}'
     }
   ]
 };

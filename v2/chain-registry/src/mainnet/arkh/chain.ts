@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'arkh',
+  chainName: 'arkh',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://arkhadian.com/',
-  pretty_name: 'Arkhadian',
-  chain_id: 'arkh',
-  bech32_prefix: 'arkh',
-  daemon_name: 'arkhd',
-  node_home: '$HOME/.arkh',
-  key_algos: ['secp256k1'],
+  prettyName: 'Arkhadian',
+  chainId: 'arkh',
+  bech32Prefix: 'arkh',
+  daemonName: 'arkhd',
+  nodeHome: '$HOME/.arkh',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'arkh',
-        fixed_min_gas_price: 0.01,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.03
+        fixedMinGasPrice: 0.01,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.03
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'arkh'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.svg'
   },
@@ -60,23 +60,23 @@ const info: Chain = {
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/arkh',
-      tx_page: 'https://explorer.nodestake.top/arkh/tx/${txHash}'
+      txPage: 'https://explorer.nodestake.top/arkh/tx/${txHash}'
     },
     {
       kind: 'Kynraze Explorer',
       url: 'https://explorer.kynraze.com/arkhadian',
-      tx_page: 'https://explorer.kynraze.com/arkhadian/tx/${txHash}'
+      txPage: 'https://explorer.kynraze.com/arkhadian/tx/${txHash}'
     },
     {
       kind: 'NODEXPLORER',
       url: 'https://explorer.nodexcapital.com/arkhadian',
-      tx_page: 'https://explorer.nodexcapital.com/arkhadian/tx/${txHash}'
+      txPage: 'https://explorer.nodexcapital.com/arkhadian/tx/${txHash}'
     },
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/arkhadian',
-      tx_page: 'https://explorer.whenmoonwhenlambo.money/arkhadian/tx/${txHash}',
-      account_page: 'https://explorer.whenmoonwhenlambo.money/arkhadian/account/${accountAddress}'
+      txPage: 'https://explorer.whenmoonwhenlambo.money/arkhadian/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/arkhadian/account/${accountAddress}'
     }
   ],
   images: [{

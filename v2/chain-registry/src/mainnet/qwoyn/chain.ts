@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'qwoyn',
+  chainName: 'qwoyn',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://qwoyn.studio/',
   description: 'The Qwoyn Network stands as a cutting-edge gaming hub that embeds Web3 technologies into the core of interactive entertainment. It revolutionizes the gaming industry by ensuring true ownership of in-game assets for players, facilitated through blockchain. This approach not only enhances gameplay but also fosters a unique ecosystem of interoperability and innovation. As a beacon in the gaming world, Qwoyn Network is dedicated to merging the excitement of traditional gaming with the transformative potential of Web3, creating a seamless and enriched gaming experience.',
-  pretty_name: 'Qwoyn',
-  chain_id: 'qwoyn-1',
-  bech32_prefix: 'qwoyn',
-  daemon_name: 'qwoynd',
-  node_home: '$HOME/.qwoynd',
-  key_algos: ['secp256k1'],
+  prettyName: 'Qwoyn',
+  chainId: 'qwoyn-1',
+  bech32Prefix: 'qwoyn',
+  daemonName: 'qwoynd',
+  nodeHome: '$HOME/.qwoynd',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uqwoyn',
-        fixed_min_gas_price: 0.03,
-        low_gas_price: 0.03,
-        average_gas_price: 0.05,
-        high_gas_price: 0.075
+        fixedMinGasPrice: 0.03,
+        lowGasPrice: 0.03,
+        averageGasPrice: 0.05,
+        highGasPrice: 0.075
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uqwoyn'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.47.6',
-    cosmwasm_version: '0.40.0'
+    cosmosSdkVersion: '0.47.6',
+    cosmwasmVersion: '0.40.0'
   },
   apis: {
     rpc: [
@@ -131,23 +131,23 @@ const info: Chain = {
     {
       kind: 'ping',
       url: 'https://explorer.theamsolutions.info/qwoyn-main/',
-      tx_page: 'https://explorer.theamsolutions.info/qwoyn-main/blocks',
-      account_page: 'https://explorer.theamsolutions.info/qwoyn-main/account/${accountAddress}'
+      txPage: 'https://explorer.theamsolutions.info/qwoyn-main/blocks',
+      accountPage: 'https://explorer.theamsolutions.info/qwoyn-main/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Qwoyn-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Qwoyn-Mainnet/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Qwoyn-Mainnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Qwoyn-Mainnet/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Qwoyn-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'ping',
       url: 'https://explorer.theamsolutions.info/QWOYN-MAIN',
-      tx_page: 'https://explorer.theamsolutions.info/QWOYN-MAIN/tx/${txHash}',
-      account_page: 'https://explorer.theamsolutions.info/QWOYN-MAIN/account/${accountAddress}'
+      txPage: 'https://explorer.theamsolutions.info/QWOYN-MAIN/tx/${txHash}',
+      accountPage: 'https://explorer.theamsolutions.info/QWOYN-MAIN/account/${accountAddress}'
     }
   ],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/qwoyn/images/qwoyn.png'
   },
   images: [{

@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'neutaro',
+  chainName: 'neutaro',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://neutaro.com/',
-  pretty_name: 'Neutaro',
-  chain_id: 'Neutaro-1',
-  bech32_prefix: 'neutaro',
-  daemon_name: 'neutaro',
-  node_home: '$HOME/.Neutaro',
-  key_algos: ['secp256k1'],
+  prettyName: 'Neutaro',
+  chainId: 'Neutaro-1',
+  bech32Prefix: 'neutaro',
+  daemonName: 'neutaro',
+  nodeHome: '$HOME/.Neutaro',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uneutaro',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0,
-        high_gas_price: 0.035
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0,
+        averageGasPrice: 0,
+        highGasPrice: 0.035
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uneutaro'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.svg'
   },
@@ -60,8 +60,8 @@ const info: Chain = {
   explorers: [{
       kind: 'ping.pub',
       url: 'https://explorer.neutaro.tech/Neutaro',
-      tx_page: 'https://explorer.neutaro.tech/Neutaro/tx/${txHash}',
-      account_page: 'https://explorer.neutaro.tech/Neutaro/account/${accountAddress}'
+      txPage: 'https://explorer.neutaro.tech/Neutaro/tx/${txHash}',
+      accountPage: 'https://explorer.neutaro.tech/Neutaro/account/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.png',

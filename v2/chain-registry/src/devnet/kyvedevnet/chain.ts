@@ -1,20 +1,20 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'kyvedevnet',
-  chain_id: 'korellia-2',
-  pretty_name: 'KYVE Korellia',
+  chainName: 'kyvedevnet',
+  chainId: 'korellia-2',
+  prettyName: 'KYVE Korellia',
   status: 'live',
-  network_type: 'devnet',
-  bech32_prefix: 'kyve',
-  daemon_name: 'chaind',
-  node_home: '$HOME/.kyve',
-  key_algos: ['secp256k1'],
+  networkType: 'devnet',
+  bech32Prefix: 'kyve',
+  daemonName: 'chaind',
+  nodeHome: '$HOME/.kyve',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'tkyve',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   codebase: {
@@ -33,7 +33,7 @@ const info: Chain = {
   explorers: [{
       kind: 'explorers.guru',
       url: 'https://kyve.explorers.guru/',
-      tx_page: 'https://kyve.explorers.guru/transaction/${txHash}'
+      txPage: 'https://kyve.explorers.guru/transaction/${txHash}'
     }]
 };
 export default info;

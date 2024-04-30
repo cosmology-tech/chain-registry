@@ -1,30 +1,30 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'neutrontestnet',
+  chainName: 'neutrontestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Neutron Testnet',
-  chain_id: 'pion-1',
-  bech32_prefix: 'neutron',
-  daemon_name: 'neutrond',
-  node_home: '$HOME/.neutrond',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Neutron Testnet',
+  chainId: 'pion-1',
+  bech32Prefix: 'neutron',
+  daemonName: 'neutrond',
+  nodeHome: '$HOME/.neutrond',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'untrn',
-        low_gas_price: 0.02,
-        average_gas_price: 0.02,
-        high_gas_price: 0.02
+        lowGasPrice: 0.02,
+        averageGasPrice: 0.02,
+        highGasPrice: 0.02
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.47',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.45'
+    cosmosSdkVersion: '0.47',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.45'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron-black-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron-black-logo.svg'
   },
@@ -61,13 +61,13 @@ const info: Chain = {
   explorers: [{
       kind: 'Ping.pub Explorer from Hypha',
       url: 'https://explorer.rs-testnet.polypore.xyz/pion-1',
-      tx_page: 'https://explorer.rs-testnet.polypore.xyz/pion-1/tx/${txHash}',
-      account_page: 'https://explorer.rs-testnet.polypore.xyz/baryon-1/account/${accountAddress}'
+      txPage: 'https://explorer.rs-testnet.polypore.xyz/pion-1/tx/${txHash}',
+      accountPage: 'https://explorer.rs-testnet.polypore.xyz/baryon-1/account/${accountAddress}'
     }, {
       kind: 'Mintscan',
       url: 'https://testnet.mintscan.io/neutron-testnet',
-      tx_page: 'https://testnet.mintscan.io/neutron-testnet/txs/${txHash}',
-      account_page: 'https://testnet.mintscan.io/neutron-testnet/account/${accountAddress}'
+      txPage: 'https://testnet.mintscan.io/neutron-testnet/txs/${txHash}',
+      accountPage: 'https://testnet.mintscan.io/neutron-testnet/account/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron-black-logo.png',

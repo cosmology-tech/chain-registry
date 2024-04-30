@@ -1,41 +1,41 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'persistence',
-  chain_id: 'core-1',
-  pretty_name: 'Persistence',
+  chainName: 'persistence',
+  chainId: 'core-1',
+  prettyName: 'Persistence',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://persistence.one/',
-  bech32_prefix: 'persistence',
-  daemon_name: 'persistenceCore',
-  node_home: '$HOME/.persistenceCore',
-  key_algos: ['secp256k1'],
+  bech32Prefix: 'persistence',
+  daemonName: 'persistenceCore',
+  nodeHome: '$HOME/.persistenceCore',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
-  alternative_slip44s: [750],
+  alternativeSlip44s: [750],
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uxprt',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uxprt'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1814400s'
     }
   },
   codebase: {
-    cosmos_sdk_version: 'persistenceOne/cosmos-sdk v0.47.3-lsm5',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'persistenceOne/wasmd v0.40.2-lsm3'
+    cosmosSdkVersion: 'persistenceOne/cosmos-sdk v0.47.10-lsm-rc0',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'v0.45.0'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
   },
@@ -280,35 +280,35 @@ const info: Chain = {
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/persistence',
-      tx_page: 'https://www.mintscan.io/persistence/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/persistence/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/persistence/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/persistence/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/persistence',
-      tx_page: 'https://ezstaking.app/persistence/txs/${txHash}',
-      account_page: 'https://ezstaking.app/persistence/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/persistence/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/persistence/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/persistence',
-      tx_page: 'https://ping.pub/persistence/tx/${txHash}'
+      txPage: 'https://ping.pub/persistence/tx/${txHash}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Persistence-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Persistence-Mainnet/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/Persistence-Mainnet/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/persistence',
-      tx_page: 'https://atomscan.com/persistence/transactions/${txHash}',
-      account_page: 'https://atomscan.com/persistence/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/persistence/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/persistence/accounts/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/persistence',
-      account_page: 'https://stakeflow.io/persistence/accounts/${accountAddress}'
+      accountPage: 'https://stakeflow.io/persistence/accounts/${accountAddress}'
     }
   ],
   images: [{

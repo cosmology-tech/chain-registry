@@ -1,20 +1,20 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'empowertestnet',
-  chain_id: 'circulus-1',
-  pretty_name: 'Empower Testnet',
+  chainName: 'empowertestnet',
+  chainId: 'circulus-1',
+  prettyName: 'Empower Testnet',
   status: 'live',
-  network_type: 'testnet',
-  bech32_prefix: 'empower',
-  daemon_name: 'empowerd',
-  node_home: '$HOME/.empowerchain',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  bech32Prefix: 'empower',
+  daemonName: 'empowerd',
+  nodeHome: '$HOME/.empowerchain',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'umpwr',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   codebase: {
@@ -116,32 +116,32 @@ const info: Chain = {
     {
       kind: 'exploreme',
       url: 'https://empowerchain.exploreme.pro',
-      tx_page: 'https://empowerchain.exploreme.pro/transaction/${txHash}'
+      txPage: 'https://empowerchain.exploreme.pro/transaction/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://exp.nodeist.net/Empower',
-      tx_page: 'https://exp.nodeist.net/Empower/tx/${txHash}'
+      txPage: 'https://exp.nodeist.net/Empower/tx/${txHash}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Empower',
-      tx_page: 'https://explorer.stavr.tech/Empower/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/Empower/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://explorer.nodestake.top/empower-testnet',
-      tx_page: 'https://explorer.nodestake.top/empower-testnet/tx/${txHash}'
+      txPage: 'https://explorer.nodestake.top/empower-testnet/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://testnet.itrocket.net/empower/staking',
-      tx_page: 'https://testnet.itrocket.net/empower/staking/tx/${txHash}'
+      txPage: 'https://testnet.itrocket.net/empower/staking/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://explorer.stavr.tech/empower',
-      tx_page: 'https://explorer.stavr.tech/empower/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/empower/tx/${txHash}'
     }
   ]
 };

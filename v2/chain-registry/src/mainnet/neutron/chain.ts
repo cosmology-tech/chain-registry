@@ -1,68 +1,68 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'neutron',
+  chainName: 'neutron',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'Neutron',
-  chain_id: 'neutron-1',
-  bech32_prefix: 'neutron',
+  networkType: 'mainnet',
+  prettyName: 'Neutron',
+  chainId: 'neutron-1',
+  bech32Prefix: 'neutron',
   website: 'https://neutron.org/',
-  daemon_name: 'neutrond',
-  node_home: '$HOME/.neutrond',
-  key_algos: ['secp256k1'],
+  daemonName: 'neutrond',
+  nodeHome: '$HOME/.neutrond',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
+    feeTokens: [
       {
         denom: 'untrn',
-        low_gas_price: 0.0053,
-        average_gas_price: 0.0053,
-        high_gas_price: 0.0053
+        lowGasPrice: 0.0053,
+        averageGasPrice: 0.0053,
+        highGasPrice: 0.0053
       },
       {
         denom: 'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9',
-        low_gas_price: 0.0008,
-        average_gas_price: 0.0008,
-        high_gas_price: 0.0008
+        lowGasPrice: 0.0008,
+        averageGasPrice: 0.0008,
+        highGasPrice: 0.0008
       },
       {
         denom: 'ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349',
-        low_gas_price: 0.008,
-        average_gas_price: 0.008,
-        high_gas_price: 0.008
+        lowGasPrice: 0.008,
+        averageGasPrice: 0.008,
+        highGasPrice: 0.008
       },
       {
         denom: 'factory/neutron1ug740qrkquxzrk2hh29qrlx3sktkfml3je7juusc2te7xmvsscns0n2wry/wstETH',
-        low_gas_price: 2903231.6597,
-        average_gas_price: 2903231.6597,
-        high_gas_price: 2903231.6597
+        lowGasPrice: 2903231.6597,
+        averageGasPrice: 2903231.6597,
+        highGasPrice: 2903231.6597
       },
       {
         denom: 'ibc/2CB87BCE0937B1D1DFCEE79BE4501AAF3C265E923509AEAC410AD85D27F35130',
-        low_gas_price: 2564102564.1026,
-        average_gas_price: 2564102564.1026,
-        high_gas_price: 2564102564.1026
+        lowGasPrice: 2564102564.1026,
+        averageGasPrice: 2564102564.1026,
+        highGasPrice: 2564102564.1026
       },
       {
         denom: 'ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7',
-        low_gas_price: 0.0004,
-        average_gas_price: 0.0004,
-        high_gas_price: 0.0004
+        lowGasPrice: 0.0004,
+        averageGasPrice: 0.0004,
+        highGasPrice: 0.0004
       }
     ]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'untrn'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'neutron-org/cosmos-sdk v0.47.10-neutron',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'neutron-org/wasmd v0.45.0'
+    cosmosSdkVersion: 'neutron-org/cosmos-sdk v0.47.10-neutron',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'neutron-org/wasmd v0.45.0'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-black-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-black-logo.svg'
   },
@@ -174,13 +174,13 @@ const info: Chain = {
   explorers: [{
       kind: 'Mintscan',
       url: 'https://www.mintscan.io/neutron',
-      tx_page: 'https://www.mintscan.io/neutron/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/neutron/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/neutron/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/neutron/accounts/${accountAddress}'
     }, {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/neutron',
-      tx_page: 'https://ezstaking.app/neutron/txs/${txHash}',
-      account_page: 'https://ezstaking.app/neutron/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/neutron/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/neutron/account/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-black-logo.png',

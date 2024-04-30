@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'dig',
+  chainName: 'dig',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://digchain.org/',
-  pretty_name: 'Dig Chain',
-  chain_id: 'dig-1',
-  bech32_prefix: 'dig',
-  daemon_name: 'digd',
-  node_home: '$HOME/.dig',
-  key_algos: ['secp256k1', 'ethsecp256k1'],
-  extra_codecs: ['ethermint'],
+  prettyName: 'Dig Chain',
+  chainId: 'dig-1',
+  bech32Prefix: 'dig',
+  daemonName: 'digd',
+  nodeHome: '$HOME/.dig',
+  keyAlgos: ['secp256k1', 'ethsecp256k1'],
+  extraCodecs: ['ethermint'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'udig',
-        low_gas_price: 0.025,
-        average_gas_price: 0.03,
-        high_gas_price: 0.035
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.03,
+        highGasPrice: 0.035
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'udig'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png'
   },
   apis: {
@@ -54,17 +54,17 @@ const info: Chain = {
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/dig',
-      tx_page: 'https://ping.pub/dig/tx/${txHash}'
+      txPage: 'https://ping.pub/dig/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/dig',
-      tx_page: 'https://atomscan.com/dig/transactions/${txHash}'
+      txPage: 'https://atomscan.com/dig/transactions/${txHash}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/dig',
-      tx_page: 'https://explorer.tcnetwork.io/dig/transaction/${txHash}'
+      txPage: 'https://explorer.tcnetwork.io/dig/transaction/${txHash}'
     }
   ],
   images: [{

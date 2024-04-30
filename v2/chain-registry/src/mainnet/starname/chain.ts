@@ -1,32 +1,32 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'starname',
+  chainName: 'starname',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.starname.me/',
-  pretty_name: 'Starname',
-  chain_id: 'iov-mainnet-ibc',
-  bech32_prefix: 'star',
+  prettyName: 'Starname',
+  chainId: 'iov-mainnet-ibc',
+  bech32Prefix: 'star',
   slip44: 234,
-  alternative_slip44s: [118],
+  alternativeSlip44s: [118],
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uiov',
-        low_gas_price: 1,
-        average_gas_price: 2,
-        high_gas_price: 3
+        lowGasPrice: 1,
+        averageGasPrice: 2,
+        highGasPrice: 3
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uiov'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.svg'
   },
@@ -54,12 +54,12 @@ const info: Chain = {
   explorers: [{
       kind: 'ping.pub',
       url: 'https://ping.pub/starname',
-      tx_page: 'https://ping.pub/starname/tx/${txHash}'
+      txPage: 'https://ping.pub/starname/tx/${txHash}'
     }, {
       kind: 'atomscan',
       url: 'https://atomscan.com/starname',
-      tx_page: 'https://atomscan.com/starname/transactions/${txHash}',
-      account_page: 'https://atomscan.com/starname/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/starname/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/starname/accounts/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.png',

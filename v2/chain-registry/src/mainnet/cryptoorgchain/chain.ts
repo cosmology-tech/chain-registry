@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'cryptoorgchain',
+  chainName: 'cryptoorgchain',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'Cronos POS Chain',
-  chain_id: 'crypto-org-chain-mainnet-1',
-  bech32_prefix: 'cro',
+  networkType: 'mainnet',
+  prettyName: 'Cronos POS Chain',
+  chainId: 'crypto-org-chain-mainnet-1',
+  bech32Prefix: 'cro',
   website: 'https://cronos-pos.org/',
-  daemon_name: 'chain-maind',
-  node_home: '$HOME/.chain-maind',
+  daemonName: 'chain-maind',
+  nodeHome: '$HOME/.chain-maind',
   slip44: 394,
-  alternative_slip44s: [118],
+  alternativeSlip44s: [118],
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'basecro',
-        low_gas_price: 0.025,
-        average_gas_price: 0.03,
-        high_gas_price: 0.04
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.03,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'basecro'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cryptoorgchain/images/cronos.png'
   },
   description: 'Cronos PoS Chain is a public, open-source and permissionless blockchain - a fully decentralized network with high speed and low fees, designed to be a public good that helps drive mass adoption of blockchain technology through use cases like Payments, DeFi and NFTs.',
@@ -124,29 +124,29 @@ const info: Chain = {
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/crypto-org',
-      tx_page: 'https://www.mintscan.io/crypto-org/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/crypto-org/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/crypto-org/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/crypto-org/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/cronos',
-      tx_page: 'https://ezstaking.app/cronos/txs/${txHash}',
-      account_page: 'https://ezstaking.app/cronos/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/cronos/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/cronos/account/${accountAddress}'
     },
     {
       kind: 'cronos.org',
       url: 'https://cronos-pos.org/explorer',
-      tx_page: 'https://cronos-pos.org/explorer/tx/${txHash}'
+      txPage: 'https://cronos-pos.org/explorer/tx/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/crypto-com-chain',
-      tx_page: 'https://ping.pub/crypto-com-chain/tx/${txHash}'
+      txPage: 'https://ping.pub/crypto-com-chain/tx/${txHash}'
     },
     {
       kind: 'yummy-explorer',
       url: 'https://explorer.yummy.capital',
-      tx_page: 'https://explorer.yummy.capital/txs/${txHash}'
+      txPage: 'https://explorer.yummy.capital/txs/${txHash}'
     }
   ],
   images: [

@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'fxcore',
-  chain_id: 'fxcore',
+  chainName: 'fxcore',
+  chainId: 'fxcore',
   website: 'https://functionx.io',
-  pretty_name: 'f(x)Core',
+  prettyName: 'f(x)Core',
   status: 'live',
-  network_type: 'mainnet',
-  bech32_prefix: 'fx',
-  daemon_name: 'fxcored',
-  node_home: '$HOME/.fxcore',
-  key_algos: ['ethsecp256k1'],
-  extra_codecs: ['ethermint'],
+  networkType: 'mainnet',
+  bech32Prefix: 'fx',
+  daemonName: 'fxcored',
+  nodeHome: '$HOME/.fxcore',
+  keyAlgos: ['ethsecp256k1'],
+  extraCodecs: ['ethermint'],
   slip44: 60,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'FX',
-        fixed_min_gas_price: 4000000000000,
-        low_gas_price: 4000000000000,
-        average_gas_price: 4200000000000,
-        high_gas_price: 5000000000000
+        fixedMinGasPrice: 4000000000000,
+        lowGasPrice: 4000000000000,
+        averageGasPrice: 4200000000000,
+        highGasPrice: 5000000000000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'FX'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46'
+    cosmosSdkVersion: '0.46'
   },
   apis: {
     rpc: [{
@@ -59,7 +59,7 @@ const info: Chain = {
         provider: 'Nodes Hub'
       }
     ],
-    "evm-http-jsonrpc": [{
+    evmHttpJsonrpc: [{
         address: 'https://fx-web3.functionx.io',
         provider: 'Function X'
       }]
@@ -68,25 +68,25 @@ const info: Chain = {
     {
       kind: 'starscan',
       url: 'https://starscan.io',
-      tx_page: 'https://starscan.io/fxcore/tx/${txHash}',
-      account_page: 'https://starscan.io/fxcore/address/${accountAddress}'
+      txPage: 'https://starscan.io/fxcore/tx/${txHash}',
+      accountPage: 'https://starscan.io/fxcore/address/${accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/fx',
-      tx_page: 'https://explorer.tcnetwork.io/fx/transaction/${txHash}',
-      account_page: 'https://explorer.tcnetwork.io/fx/account/${accountAddress}'
+      txPage: 'https://explorer.tcnetwork.io/fx/transaction/${txHash}',
+      accountPage: 'https://explorer.tcnetwork.io/fx/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/fxcore',
-      tx_page: 'https://ping.pub/fxcore/tx/${txHash}'
+      txPage: 'https://ping.pub/fxcore/tx/${txHash}'
     },
     {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/fxcore/',
-      tx_page: 'https://explorer.nodeshub.online/fxcore/tx/${txHash}',
-      account_page: 'https://explorer.nodeshub.online/fxcore/accounts/${accountAddress}'
+      txPage: 'https://explorer.nodeshub.online/fxcore/tx/${txHash}',
+      accountPage: 'https://explorer.nodeshub.online/fxcore/accounts/${accountAddress}'
     }
   ]
 };

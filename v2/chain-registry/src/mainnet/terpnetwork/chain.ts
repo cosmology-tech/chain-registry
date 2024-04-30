@@ -1,29 +1,29 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'terpnetwork',
+  chainName: 'terpnetwork',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'Terp-Network',
-  chain_id: 'morocco-1',
-  bech32_prefix: 'terp',
-  daemon_name: 'terp',
-  node_home: '$HOME/.terp',
+  networkType: 'mainnet',
+  prettyName: 'Terp-Network',
+  chainId: 'morocco-1',
+  bech32Prefix: 'terp',
+  daemonName: 'terp',
+  nodeHome: '$HOME/.terp',
   codebase: {
 
   },
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uthiol',
-        fixed_min_gas_price: 0.05
+        fixedMinGasPrice: 0.05
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uterp'
       }]
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terpnetwork/images/logo.png'
   },
   apis: {
@@ -78,26 +78,26 @@ const info: Chain = {
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/terp',
-      tx_page: 'https://ping.pub/terp/tx/${txHash}',
-      account_page: 'https://ping.pub/terp/account/{$accountAddress}'
+      txPage: 'https://ping.pub/terp/tx/${txHash}',
+      accountPage: 'https://ping.pub/terp/account/{$accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://explorer.nodestake.top',
-      tx_page: 'https://explorer.nodestake.top/terp/tx/${txHash}',
-      account_page: 'https://explorer.nodestake.top/terp/account/{$accountAddress}'
+      txPage: 'https://explorer.nodestake.top/terp/tx/${txHash}',
+      accountPage: 'https://explorer.nodestake.top/terp/account/{$accountAddress}'
     },
     {
       kind: 'ZenChainLabs',
       url: 'https://terp.zenscan.io/',
-      tx_page: 'https://terp.zenscan.io/transaction.php?hash=${txHash}',
-      account_page: 'https://terp.zenscan.io/address.php?address=${accountAddress}'
+      txPage: 'https://terp.zenscan.io/transaction.php?hash=${txHash}',
+      accountPage: 'https://terp.zenscan.io/address.php?address=${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Terp-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Terp-Mainnet/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Terp-Mainnet/account/{$accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Terp-Mainnet/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Terp-Mainnet/account/{$accountAddress}'
     }
   ],
   images: [{

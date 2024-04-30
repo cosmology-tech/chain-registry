@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'crescent',
+  chainName: 'crescent',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'Crescent',
-  chain_id: 'crescent-1',
-  bech32_prefix: 'cre',
-  daemon_name: 'crescentd',
-  node_home: '$HOME/.crescent',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  prettyName: 'Crescent',
+  chainId: 'crescent-1',
+  bech32Prefix: 'cre',
+  daemonName: 'crescentd',
+  nodeHome: '$HOME/.crescent',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ucre',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.03
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.03
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ucre'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg'
   },
@@ -144,35 +144,35 @@ const info: Chain = {
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/crescent',
-      tx_page: 'https://www.mintscan.io/crescent/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/crescent/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/crescent/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/crescent/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/crescent',
-      tx_page: 'https://ezstaking.app/crescent/txs/${txHash}',
-      account_page: 'https://ezstaking.app/crescent/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/crescent/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/crescent/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/crescent',
-      tx_page: 'https://ping.pub/crescent/tx/${txHash}'
+      txPage: 'https://ping.pub/crescent/tx/${txHash}'
     },
     {
       kind: 'explorers.guru',
       url: 'https://crescent.explorers.guru',
-      tx_page: 'https://crescent.explorers.guru/transaction/${txHash}'
+      txPage: 'https://crescent.explorers.guru/transaction/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/crescent',
-      tx_page: 'https://atomscan.com/crescent/transactions/${txHash}',
-      account_page: 'https://atomscan.com/crescent/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/crescent/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/crescent/accounts/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/crescent',
-      account_page: 'https://stakeflow.io/crescent/accounts/${accountAddress}'
+      accountPage: 'https://stakeflow.io/crescent/accounts/${accountAddress}'
     }
   ],
   images: [{

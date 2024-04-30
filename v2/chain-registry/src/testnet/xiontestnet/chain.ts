@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'xiontestnet',
+  chainName: 'xiontestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Xion Testnet',
-  chain_id: 'xion-testnet-1',
-  bech32_prefix: 'xion',
-  daemon_name: 'xiond',
-  node_home: '$HOME/.xiond',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Xion Testnet',
+  chainId: 'xion-testnet-1',
+  bech32Prefix: 'xion',
+  daemonName: 'xiond',
+  nodeHome: '$HOME/.xiond',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uxion',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uxion'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.47.10',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.45.1'
+    cosmosSdkVersion: '0.47.10',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.45.1'
   },
   apis: {
     rpc: [{
@@ -53,7 +53,7 @@ const info: Chain = {
         provider: 'polkachu'
       }]
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt.png'
   },
   keywords: [

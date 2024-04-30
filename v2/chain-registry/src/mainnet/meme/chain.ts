@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'meme',
+  chainName: 'meme',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'MEME',
-  chain_id: 'meme-1',
-  bech32_prefix: 'meme',
-  daemon_name: 'memed',
-  node_home: '$HOME/.memed',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  prettyName: 'MEME',
+  chainId: 'meme-1',
+  bech32Prefix: 'meme',
+  daemonName: 'memed',
+  nodeHome: '$HOME/.memed',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'umeme',
-        fixed_min_gas_price: 0.025,
-        low_gas_price: 0.025,
-        average_gas_price: 0.035,
-        high_gas_price: 0.045
+        fixedMinGasPrice: 0.025,
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.035,
+        highGasPrice: 0.045
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'umeme'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg'
   },
@@ -82,41 +82,41 @@ const info: Chain = {
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/meme',
-      tx_page: 'https://ping.pub/meme/tx/${txHash}'
+      txPage: 'https://ping.pub/meme/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/meme',
-      tx_page: 'https://atomscan.com/meme/transactions/${txHash}',
-      account_page: 'https://atomscan.com/meme/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/meme/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/meme/accounts/${accountAddress}'
     },
     {
       kind: 'MEME Explorer',
       url: 'https://explorer.meme.sx/meme',
-      tx_page: 'https://explorer.meme.sx/meme/tx/${txHash}'
+      txPage: 'https://explorer.meme.sx/meme/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/meme',
-      tx_page: 'https://atomscan.com/meme/transactions/${txHash}',
-      account_page: 'https://atomscan.com/meme/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/meme/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/meme/accounts/${accountAddress}'
     },
     {
       kind: 'Brochain',
       url: 'https://explorer.brocha.in/meme',
-      tx_page: 'https://explorer.brocha.in/meme/tx/${txHash}'
+      txPage: 'https://explorer.brocha.in/meme/tx/${txHash}'
     },
     {
       kind: 'Stake-Take',
       url: 'https://explorer.stake-take.com/meme',
-      tx_page: 'https://explorer.stake-take.com/meme/tx/${txHash}',
-      account_page: 'https://explorer.stake-take.com/meme/account/${accountAddress}'
+      txPage: 'https://explorer.stake-take.com/meme/tx/${txHash}',
+      accountPage: 'https://explorer.stake-take.com/meme/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Meme',
-      tx_page: 'https://explorer.stavr.tech/Meme/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Meme/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Meme/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Meme/account/${accountAddress}'
     }
   ],
   images: [{

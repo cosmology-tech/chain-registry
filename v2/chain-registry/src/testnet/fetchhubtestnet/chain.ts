@@ -1,25 +1,25 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'fetchhubtestnet',
+  chainName: 'fetchhubtestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Fetch.ai Testnet',
-  chain_id: 'dorado-1',
-  bech32_prefix: 'fetch',
-  daemon_name: 'fetchd',
-  node_home: '$HOME/.fetchd',
+  networkType: 'testnet',
+  prettyName: 'Fetch.ai Testnet',
+  chainId: 'dorado-1',
+  bech32Prefix: 'fetch',
+  daemonName: 'fetchd',
+  nodeHome: '$HOME/.fetchd',
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'atestfet',
-        low_gas_price: 0.025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.035
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.035
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'atestfet'
       }]
   },
@@ -43,12 +43,12 @@ const info: Chain = {
   explorers: [{
       kind: 'bigdipper',
       url: 'https://explore-dorado.fetch.ai',
-      tx_page: 'https://explore-dorado.fetch.ai/transactions/${txHash}'
+      txPage: 'https://explore-dorado.fetch.ai/transactions/${txHash}'
     }, {
       kind: 'azoyalabs',
       url: 'https://fetchstation.azoyalabs.com/testnet',
-      tx_page: 'https://fetchstation.azoyalabs.com/testnet/explorer/transactions/${txHash}',
-      account_page: 'https://fetchstation.azoyalabs.com/testnet/explorer/address/${accountAddress}'
+      txPage: 'https://fetchstation.azoyalabs.com/testnet/explorer/transactions/${txHash}',
+      accountPage: 'https://fetchstation.azoyalabs.com/testnet/explorer/address/${accountAddress}'
     }]
 };
 export default info;

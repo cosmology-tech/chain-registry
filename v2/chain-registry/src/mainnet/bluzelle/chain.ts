@@ -1,38 +1,38 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'bluzelle',
+  chainName: 'bluzelle',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://bluzelle.com/',
-  pretty_name: 'Bluzelle',
-  chain_id: 'bluzelle-9',
-  bech32_prefix: 'bluzelle',
-  daemon_name: 'curiumd',
-  node_home: '$HOME/.curium',
-  key_algos: ['secp256k1'],
+  prettyName: 'Bluzelle',
+  chainId: 'bluzelle-9',
+  bech32Prefix: 'bluzelle',
+  daemonName: 'curiumd',
+  nodeHome: '$HOME/.curium',
+  keyAlgos: ['secp256k1'],
   slip44: 483,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ubnt',
-        fixed_min_gas_price: 0.002,
-        low_gas_price: 0.002,
-        average_gas_price: 0.002,
-        high_gas_price: 0.025
+        fixedMinGasPrice: 0.002,
+        lowGasPrice: 0.002,
+        averageGasPrice: 0.002,
+        highGasPrice: 0.025
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ubnt'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1814400s'
     }
   },
   codebase: {
-    cosmos_sdk_version: 'v0.45.11'
+    cosmosSdkVersion: 'v0.45.11'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/bluzelle.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/bluzelle.svg'
   },
@@ -96,24 +96,24 @@ const info: Chain = {
     {
       kind: 'ping.pub',
       url: 'https://ping.explorer.net.bluzelle.com/bluzelle',
-      tx_page: 'https://ping.explorer.net.bluzelle.com/bluzelle/tx/${txHash}',
-      account_page: 'https://ping.explorer.net.bluzelle.com/bluzelle/account/${accountAddress}'
+      txPage: 'https://ping.explorer.net.bluzelle.com/bluzelle/tx/${txHash}',
+      accountPage: 'https://ping.explorer.net.bluzelle.com/bluzelle/account/${accountAddress}'
     },
     {
       kind: 'big dipper',
       url: 'https://bd.explorer.net.bluzelle.com',
-      tx_page: 'https://bd.explorer.net.bluzelle.com/transactions/${txHash}',
-      account_page: 'https://bd.explorer.net.bluzelle.com/accounts/${accountAddress}'
+      txPage: 'https://bd.explorer.net.bluzelle.com/transactions/${txHash}',
+      accountPage: 'https://bd.explorer.net.bluzelle.com/accounts/${accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/bluzelle',
-      tx_page: 'https://explorer.tcnetwork.io/bluzelle/transaction/${txHash}'
+      txPage: 'https://explorer.tcnetwork.io/bluzelle/transaction/${txHash}'
     },
     {
       kind: 'Nodine.ID',
       url: 'https://explorer.co.id/bluzelle',
-      tx_page: 'https://explorer.co.id/bluzelle/transaction/${txHash}'
+      txPage: 'https://explorer.co.id/bluzelle/transaction/${txHash}'
     }
   ],
   keywords: [

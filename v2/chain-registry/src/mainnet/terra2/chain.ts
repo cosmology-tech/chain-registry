@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'terra2',
+  chainName: 'terra2',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://www.terra.money/',
-  pretty_name: 'Terra',
-  chain_id: 'phoenix-1',
-  daemon_name: 'terrad',
-  node_home: '$HOME/.terra',
-  bech32_prefix: 'terra',
+  prettyName: 'Terra',
+  chainId: 'phoenix-1',
+  daemonName: 'terrad',
+  nodeHome: '$HOME/.terra',
+  bech32Prefix: 'terra',
   slip44: 330,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uluna',
-        fixed_min_gas_price: 0.015,
-        low_gas_price: 0.015,
-        average_gas_price: 0.015,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.015,
+        lowGasPrice: 0.015,
+        averageGasPrice: 0.015,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uluna'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
   },
@@ -157,25 +157,25 @@ const info: Chain = {
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/terra2',
-      tx_page: 'https://atomscan.com/terra2/transactions/${txHash}',
-      account_page: 'https://atomscan.com/terra2/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/terra2/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/terra2/accounts/${accountAddress}'
     },
     {
       kind: 'finder',
       url: 'http://finder.terra.money/',
-      tx_page: 'https://finder.terra.money/mainnet/tx/${txHash}',
-      account_page: 'https://finder.terra.money/mainnet/address/${accountAddress}'
+      txPage: 'https://finder.terra.money/mainnet/tx/${txHash}',
+      accountPage: 'https://finder.terra.money/mainnet/address/${accountAddress}'
     },
     {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/terra',
-      account_page: 'https://stakeflow.io/terra/accounts/${accountAddress}'
+      accountPage: 'https://stakeflow.io/terra/accounts/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/terra',
-      tx_page: 'https://www.mintscan.io/terra/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/terra/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/terra/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/terra/accounts/${accountAddress}'
     }
   ],
   images: [{

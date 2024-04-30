@@ -1,25 +1,25 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'commercionetwork',
-  chain_id: 'commercio-3',
-  pretty_name: 'Commercio.network',
+  chainName: 'commercionetwork',
+  chainId: 'commercio-3',
+  prettyName: 'Commercio.network',
   status: 'live',
-  network_type: 'mainnet',
-  bech32_prefix: 'did:com:',
-  daemon_name: 'commercionetworkd',
-  node_home: '$HOME/.commercionetwork',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  bech32Prefix: 'did:com:',
+  daemonName: 'commercionetworkd',
+  nodeHome: '$HOME/.commercionetwork',
+  keyAlgos: ['secp256k1'],
   slip44: 701,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ucommercio'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.svg'
   },
@@ -34,7 +34,7 @@ const info: Chain = {
   explorers: [{
       kind: 'almerico',
       url: 'https://mainnet.commercio.network',
-      tx_page: 'https://mainnet.commercio.network/transactions/detail/${txHash}'
+      txPage: 'https://mainnet.commercio.network/transactions/detail/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.png',

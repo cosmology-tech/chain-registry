@@ -1,33 +1,33 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'empowerchain',
-  chain_id: 'empowerchain-1',
-  pretty_name: 'EmpowerChain',
+  chainName: 'empowerchain',
+  chainId: 'empowerchain-1',
+  prettyName: 'EmpowerChain',
   status: 'live',
-  network_type: 'mainnet',
-  bech32_prefix: 'empower',
-  daemon_name: 'empowerd',
-  node_home: '$HOME/.empowerchain',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  bech32Prefix: 'empower',
+  daemonName: 'empowerd',
+  nodeHome: '$HOME/.empowerchain',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'umpwr',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.03
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.03
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'umpwr'
       }]
   },
   codebase: {
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.45'
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.45'
   },
   apis: {
     rpc: [
@@ -193,26 +193,26 @@ const info: Chain = {
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Empower-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Empower-Mainnet/txs/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Empower-Mainnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Empower-Mainnet/txs/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Empower-Mainnet/account/${accountAddress}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/empower',
-      tx_page: 'https://explorer.nodestake.top/empower/tx/${txHash}',
-      account_page: 'https://explorer.nodestake.top/empower/account/{$accountAddress}'
+      txPage: 'https://explorer.nodestake.top/empower/tx/${txHash}',
+      accountPage: 'https://explorer.nodestake.top/empower/account/{$accountAddress}'
     },
     {
       kind: 'Stake Village',
       url: 'https://exp.stakevillage.net/empower',
-      tx_page: 'https://exp.stakevillage.net/empower/tx/${txHash}',
-      account_page: 'https://exp.stakevillage.net/empower/account/${accountAddress}'
+      txPage: 'https://exp.stakevillage.net/empower/tx/${txHash}',
+      accountPage: 'https://exp.stakevillage.net/empower/account/${accountAddress}'
     },
     {
       kind: 'Decloud Nodes Lab',
       url: 'https://explorer.declab.pro/Empower',
-      tx_page: 'https://explorer.declab.pro/Empower/tx/${txHash}',
-      account_page: 'https://explorer.declab.pro/Empower/account/{$accountAddress}'
+      txPage: 'https://explorer.declab.pro/Empower/tx/${txHash}',
+      accountPage: 'https://explorer.declab.pro/Empower/account/{$accountAddress}'
     }
   ]
 };

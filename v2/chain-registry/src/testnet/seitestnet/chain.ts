@@ -1,27 +1,27 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'seitestnet',
-  chain_id: 'atlantic-1',
-  pretty_name: 'Sei Atlantic',
+  chainName: 'seitestnet',
+  chainId: 'atlantic-1',
+  prettyName: 'Sei Atlantic',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://www.sei.io/',
-  bech32_prefix: 'sei',
-  daemon_name: 'seid',
-  node_home: '$HOME/.sei',
-  key_algos: ['secp256k1'],
+  bech32Prefix: 'sei',
+  daemonName: 'seid',
+  nodeHome: '$HOME/.sei',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'usei',
-        fixed_min_gas_price: 0
+        fixedMinGasPrice: 0
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.svg'
   },
@@ -39,11 +39,11 @@ const info: Chain = {
   explorers: [{
       kind: 'explorers.guru',
       url: 'https://sei.explorers.guru',
-      tx_page: 'https://sei.explorers.guru/transaction/${txHash}'
+      txPage: 'https://sei.explorers.guru/transaction/${txHash}'
     }, {
       kind: 'Brochain',
       url: 'https://testnet-explorer.brocha.in/sei',
-      tx_page: 'https://testnet-explorer.brocha.in/sei/tx/${txHash}'
+      txPage: 'https://testnet-explorer.brocha.in/sei/tx/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.png',

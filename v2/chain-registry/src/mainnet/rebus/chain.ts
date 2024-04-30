@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'rebus',
+  chainName: 'rebus',
   website: 'https://www.rebuschain.com/',
   status: 'live',
-  network_type: 'mainnet',
-  pretty_name: 'Rebus',
-  chain_id: 'reb_1111-1',
-  bech32_prefix: 'rebus',
-  daemon_name: 'rebusd',
-  node_home: '$HOME/.rebusd',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  prettyName: 'Rebus',
+  chainId: 'reb_1111-1',
+  bech32Prefix: 'rebus',
+  daemonName: 'rebusd',
+  nodeHome: '$HOME/.rebusd',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'arebus',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0.01,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'arebus'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.svg'
   },
@@ -177,38 +177,38 @@ const info: Chain = {
     {
       kind: 'explorers.guru',
       url: 'https://rebus.explorers.guru',
-      tx_page: 'https://rebus.explorers.guru/transaction/${txHash}'
+      txPage: 'https://rebus.explorers.guru/transaction/${txHash}'
     },
     {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.top/rebus',
-      tx_page: 'https://explorer.nodestake.top/rebus/tx/${txHash}'
+      txPage: 'https://explorer.nodestake.top/rebus/tx/${txHash}'
     },
     {
       kind: 'BccNodes',
       url: 'https://explorer.bccnodes.com/rebus-M',
-      tx_page: 'https://explorer.bccnodes.com/rebus-M/tx/${txHash}'
+      txPage: 'https://explorer.bccnodes.com/rebus-M/tx/${txHash}'
     },
     {
       kind: 'Brochain',
       url: 'https://explorer.brocha.in/rebus',
-      tx_page: 'https://explorer.brocha.in/rebus/tx/${txHash}'
+      txPage: 'https://explorer.brocha.in/rebus/tx/${txHash}'
     },
     {
       kind: '🔥STAVR🔥 Explorer',
       url: 'https://explorer.stavr.tech/rebus',
-      tx_page: 'https://explorer.stavr.tech/rebus/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/rebus/tx/${txHash}'
     },
     {
       kind: 'tcnetwork',
       url: 'https://rebus.tcnetwork.io',
-      tx_page: 'https://rebus.tcnetwork.io/transaction/${txHash}'
+      txPage: 'https://rebus.tcnetwork.io/transaction/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/rebus',
-      tx_page: 'https://atomscan.com/rebus/transactions/${txHash}',
-      account_page: 'https://atomscan.com/rebus/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/rebus/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/rebus/accounts/${accountAddress}'
     }
   ],
   images: [{

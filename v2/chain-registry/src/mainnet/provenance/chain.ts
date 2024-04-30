@@ -1,37 +1,37 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'provenance',
+  chainName: 'provenance',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://provenance.io/',
-  pretty_name: 'Provenance',
-  chain_id: 'pio-mainnet-1',
-  bech32_prefix: 'pb',
-  daemon_name: 'provenanced',
-  node_home: '$HOME/Provenance',
-  key_algos: ['secp256k1'],
+  prettyName: 'Provenance',
+  chainId: 'pio-mainnet-1',
+  bech32Prefix: 'pb',
+  daemonName: 'provenanced',
+  nodeHome: '$HOME/Provenance',
+  keyAlgos: ['secp256k1'],
   slip44: 505,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'nhash',
-        fixed_min_gas_price: 1905,
-        low_gas_price: 1905,
-        average_gas_price: 2100,
-        high_gas_price: 2500
+        fixedMinGasPrice: 1905,
+        lowGasPrice: 1905,
+        averageGasPrice: 2100,
+        highGasPrice: 2500
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'nhash'
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46.13',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.30'
+    cosmosSdkVersion: '0.46.13',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: '0.30'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.svg'
   },
@@ -143,47 +143,47 @@ const info: Chain = {
     {
       kind: 'Provenance',
       url: 'https://explorer.provenance.io',
-      tx_page: 'https://explorer.provenance.io/tx/${txHash}'
+      txPage: 'https://explorer.provenance.io/tx/${txHash}'
     },
     {
       kind: 'hubble',
       url: 'https://hubble.figment.io/provenance/chains/pio-mainnet-1',
-      tx_page: 'https://hubble.figment.io/provenance/chains/pio-mainnet-1/${block}/transactions/${txHash}'
+      txPage: 'https://hubble.figment.io/provenance/chains/pio-mainnet-1/${block}/transactions/${txHash}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/provenance',
-      tx_page: 'https://ping.pub/provenance/tx/${txHash}'
+      txPage: 'https://ping.pub/provenance/tx/${txHash}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/provenance',
-      tx_page: 'https://www.mintscan.io/provenance/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/provenance/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/provenance/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/provenance/accounts/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Provenance',
-      tx_page: 'https://explorer.stavr.tech/Provenance/txs/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Provenance/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Provenance/txs/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Provenance/account/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/provenance',
-      tx_page: 'https://ezstaking.app/provenance/txs/${txHash}',
-      account_page: 'https://ezstaking.app/provenance/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/provenance/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/provenance/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/provenance',
-      tx_page: 'https://atomscan.com/provenance/transactions/${txHash}',
-      account_page: 'https://atomscan.com/provenance/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/provenance/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/provenance/accounts/${accountAddress}'
     },
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/provenance',
-      tx_page: 'https://explorer.whenmoonwhenlambo.money/provenance/tx/${txHash}',
-      account_page: 'https://explorer.whenmoonwhenlambo.money/provenance/account/${accountAddress}'
+      txPage: 'https://explorer.whenmoonwhenlambo.money/provenance/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/provenance/account/${accountAddress}'
     }
   ],
   images: [{

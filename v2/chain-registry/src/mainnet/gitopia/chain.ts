@@ -1,36 +1,36 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'gitopia',
+  chainName: 'gitopia',
   status: 'live',
   website: 'https://gitopia.com/',
-  network_type: 'mainnet',
-  pretty_name: 'Gitopia',
-  chain_id: 'gitopia',
-  bech32_prefix: 'gitopia',
-  daemon_name: 'gitopiad',
-  node_home: '$HOME/.gitopia',
-  key_algos: ['secp256k1'],
+  networkType: 'mainnet',
+  prettyName: 'Gitopia',
+  chainId: 'gitopia',
+  bech32Prefix: 'gitopia',
+  daemonName: 'gitopiad',
+  nodeHome: '$HOME/.gitopia',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ulore',
-        fixed_min_gas_price: 0.001,
-        low_gas_price: 0.0012,
-        average_gas_price: 0.0016,
-        high_gas_price: 0.0024
+        fixedMinGasPrice: 0.001,
+        lowGasPrice: 0.0012,
+        averageGasPrice: 0.0016,
+        highGasPrice: 0.0024
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ulore'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1814400s'
     }
   },
   codebase: {
-    cosmos_sdk_version: 'v0.46.13'
+    cosmosSdkVersion: 'v0.46.13'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gitopia/images/gitopia.png'
@@ -420,101 +420,101 @@ const info: Chain = {
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/gitopia',
-      tx_page: 'https://ping.pub/gitopia/tx/${txHash}',
-      account_page: 'https://ping.pub/gitopia/account/${accountAddress}'
+      txPage: 'https://ping.pub/gitopia/tx/${txHash}',
+      accountPage: 'https://ping.pub/gitopia/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Gitopia-M',
-      tx_page: 'https://explorer.stavr.tech/Gitopia-M/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Gitopia-M/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Gitopia-M/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Gitopia-M/account/${accountAddress}'
     },
     {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀',
       url: 'https://exp.utsa.tech/gitopia',
-      tx_page: 'https://exp.utsa.tech/gitopia/tx/${txHash}',
-      account_page: 'https://exp.utsa.tech/gitopia/account/${accountAddress}'
+      txPage: 'https://exp.utsa.tech/gitopia/tx/${txHash}',
+      accountPage: 'https://exp.utsa.tech/gitopia/account/${accountAddress}'
     },
     {
       kind: 'Nodeist',
       url: 'https://exp.nodeist.net/gitopia',
-      tx_page: 'https://exp.nodeist.net/gitopia/tx/${txHash}',
-      account_page: 'https://exp.nodeist.net/gitopia/account/${accountAddress}'
+      txPage: 'https://exp.nodeist.net/gitopia/tx/${txHash}',
+      accountPage: 'https://exp.nodeist.net/gitopia/account/${accountAddress}'
     },
     {
       kind: 'Stake-Take',
       url: 'https://explorer.stake-take.com/gitopia',
-      tx_page: 'https://explorer.stake-take.com/gitopia/tx/${txHash}',
-      account_page: 'https://explorer.stake-take.com/gitopia/account/${accountAddress}'
+      txPage: 'https://explorer.stake-take.com/gitopia/tx/${txHash}',
+      accountPage: 'https://explorer.stake-take.com/gitopia/account/${accountAddress}'
     },
     {
       kind: 'NODEXPLORER',
       url: 'https://explorer.nodexcapital.com/gitopia',
-      tx_page: 'https://explorer.nodexcapital.com/gitopia/tx/${txHash}',
-      account_page: 'https://explorer.nodexcapital.com/gitopia/account/${accountAddress}'
+      txPage: 'https://explorer.nodexcapital.com/gitopia/tx/${txHash}',
+      accountPage: 'https://explorer.nodexcapital.com/gitopia/account/${accountAddress}'
     },
     {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/gitopia',
-      tx_page: 'https://explorer.tcnetwork.io/gitopia/transaction/${txHash}',
-      account_page: 'https://explorer.tcnetwork.io/gitopia/account/${accountAddress}'
+      txPage: 'https://explorer.tcnetwork.io/gitopia/transaction/${txHash}',
+      accountPage: 'https://explorer.tcnetwork.io/gitopia/account/${accountAddress}'
     },
     {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.top/gitopia',
-      tx_page: 'https://explorer.nodestake.top/gitopia/tx/${txHash}',
-      account_page: 'https://explorer.nodestake.top/gitopia/account/${accountAddress}'
+      txPage: 'https://explorer.nodestake.top/gitopia/tx/${txHash}',
+      accountPage: 'https://explorer.nodestake.top/gitopia/account/${accountAddress}'
     },
     {
       kind: 'RoomIT',
       url: 'https://explorer.tendermint.roomit.xyz/gitopia',
-      tx_page: 'https://explorer.tendermint.roomit.xyz/gitopia/transaction/${txHash}',
-      account_page: 'https://explorer.tendermint.roomit.xyz/gitopia/account/${accountAddress}'
+      txPage: 'https://explorer.tendermint.roomit.xyz/gitopia/transaction/${txHash}',
+      accountPage: 'https://explorer.tendermint.roomit.xyz/gitopia/account/${accountAddress}'
     },
     {
       kind: 'Moonbridge',
       url: 'https://explorer.moonbridge.team/gitopia',
-      tx_page: 'https://explorer.moonbridge.team/gitopia/tx/${txHash}',
-      account_page: 'https://explorer.moonbridge.team/gitopia/account/${accountAddress}'
+      txPage: 'https://explorer.moonbridge.team/gitopia/tx/${txHash}',
+      accountPage: 'https://explorer.moonbridge.team/gitopia/account/${accountAddress}'
     },
     {
       kind: 'KonsorTech',
       url: 'https://explorer.konsortech.xyz/gitopia',
-      tx_page: 'https://explorer.konsortech.xyz/gitopia/tx/${txHash}',
-      account_page: 'https://explorer.konsortech.xyz/gitopia/account/${accountAddress}'
+      txPage: 'https://explorer.konsortech.xyz/gitopia/tx/${txHash}',
+      accountPage: 'https://explorer.konsortech.xyz/gitopia/account/${accountAddress}'
     },
     {
       kind: 'Stake Village',
       url: 'https://exp.stakevillage.net/gitopia',
-      tx_page: 'https://exp.stakevillage.net/gitopia/tx/${txHash}',
-      account_page: 'https://exp.stakevillage.net/gitopia/account/${accountAddress}'
+      txPage: 'https://exp.stakevillage.net/gitopia/tx/${txHash}',
+      accountPage: 'https://exp.stakevillage.net/gitopia/account/${accountAddress}'
     },
     {
       kind: 'AlxVoy ⚡ ANODE.TEAM',
       url: 'https://main.anode.team/gitopia',
-      tx_page: 'https://main.anode.team/gitopia/tx/${txHash}',
-      account_page: 'https://main.anode.team/gitopia/account/${accountAddress}'
+      txPage: 'https://main.anode.team/gitopia/tx/${txHash}',
+      accountPage: 'https://main.anode.team/gitopia/account/${accountAddress}'
     },
     {
       kind: 'L0vd.com ❤️',
       url: 'https://chain-services.l0vd.com/mainnets/gitopia',
-      tx_page: 'https://chain-services.l0vd.com/mainnets/gitopia/tx/${txHash}',
-      account_page: 'https://chain-services.l0vd.com/mainnets/gitopia/account/${accountAddress}'
+      txPage: 'https://chain-services.l0vd.com/mainnets/gitopia/tx/${txHash}',
+      accountPage: 'https://chain-services.l0vd.com/mainnets/gitopia/account/${accountAddress}'
     },
     {
       kind: 'ToTheMars',
       url: 'https://explorer.tothemars.network/gitopia',
-      tx_page: 'https://explorer.tothemars.network/gitopia/tx/${txHash}',
-      account_page: 'https://explorer.tothemars.network/gitopia/account/${accountAddress}'
+      txPage: 'https://explorer.tothemars.network/gitopia/tx/${txHash}',
+      accountPage: 'https://explorer.tothemars.network/gitopia/account/${accountAddress}'
     },
     {
       kind: 'Decloud Nodes Lab',
       url: 'https://explorer.declab.pro/Gitopia',
-      tx_page: 'https://explorer.declab.pro/Gitopia/tx/${txHash}',
-      account_page: 'https://explorer.declab.pro/Gitopia/account/${accountAddress}'
+      txPage: 'https://explorer.declab.pro/Gitopia/tx/${txHash}',
+      accountPage: 'https://explorer.declab.pro/Gitopia/account/${accountAddress}'
     }
   ],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gitopia/images/gitopia.png'
   }
 };

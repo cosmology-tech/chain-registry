@@ -1,37 +1,37 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'chihuahua',
+  chainName: 'chihuahua',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://chihuahua.wtf/',
-  pretty_name: 'Chihuahua',
-  chain_id: 'chihuahua-1',
-  bech32_prefix: 'chihuahua',
-  daemon_name: 'chihuahuad',
-  node_home: '$HOME/.chihuahuad',
-  key_algos: ['secp256k1'],
+  prettyName: 'Chihuahua',
+  chainId: 'chihuahua-1',
+  bech32Prefix: 'chihuahua',
+  daemonName: 'chihuahuad',
+  nodeHome: '$HOME/.chihuahuad',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uhuahua',
-        fixed_min_gas_price: 0,
-        low_gas_price: 500,
-        average_gas_price: 1250,
-        high_gas_price: 2000
+        fixedMinGasPrice: 0,
+        lowGasPrice: 500,
+        averageGasPrice: 1250,
+        highGasPrice: 2000
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uhuahua'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.5',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.41.0'
+    cosmosSdkVersion: 'v0.47.5',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'v0.41.0'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
   },
@@ -191,36 +191,36 @@ const info: Chain = {
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/chihuahua',
-      tx_page: 'https://ping.pub/chihuahua/tx/${txHash}'
+      txPage: 'https://ping.pub/chihuahua/tx/${txHash}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Chihua-Mainnet',
-      tx_page: 'https://explorer.stavr.tech/Chihua-Mainnet/tx/${txHash}'
+      txPage: 'https://explorer.stavr.tech/Chihua-Mainnet/tx/${txHash}'
     },
     {
       kind: 'mintscan',
       url: 'https://mintscan.io/chihuahua',
-      tx_page: 'https://mintscan.io/chihuahua/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/chihuahua/accounts/${accountAddress}'
+      txPage: 'https://mintscan.io/chihuahua/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/chihuahua/accounts/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/chihuahua',
-      tx_page: 'https://atomscan.com/chihuahua/transactions/${txHash}',
-      account_page: 'https://atomscan.com/chihuahua/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/chihuahua/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/chihuahua/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/chihuahua',
-      tx_page: 'https://ezstaking.app/chihuahua/txs/${txHash}',
-      account_page: 'https://ezstaking.app/chihuahua/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/chihuahua/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/chihuahua/account/${accountAddress}'
     },
     {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/chihuahua/',
-      tx_page: 'https://explorer.nodeshub.online/chihuahua/tx/${txHash}',
-      account_page: 'https://explorer.nodeshub.online/chihuahua/accounts/${accountAddress}'
+      txPage: 'https://explorer.nodeshub.online/chihuahua/tx/${txHash}',
+      accountPage: 'https://explorer.nodeshub.online/chihuahua/accounts/${accountAddress}'
     }
   ],
   images: [{

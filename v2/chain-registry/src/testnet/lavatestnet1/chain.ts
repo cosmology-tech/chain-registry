@@ -1,49 +1,49 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'lavatestnet1',
+  chainName: 'lavatestnet1',
   status: 'killed',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://www.lavanet.xyz/',
-  pretty_name: 'Lava',
-  chain_id: 'lava-testnet-1',
-  bech32_prefix: 'lava@',
-  daemon_name: 'lavad',
-  node_home: '$HOME/.lava',
-  key_algos: ['secp256k1'],
+  prettyName: 'Lava',
+  chainId: 'lava-testnet-1',
+  bech32Prefix: 'lava@',
+  daemonName: 'lavad',
+  nodeHome: '$HOME/.lava',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ulava',
-        fixed_min_gas_price: 0.0025,
-        low_gas_price: 0.0025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixedMinGasPrice: 0.0025,
+        lowGasPrice: 0.0025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ulava'
       }],
-    lock_duration: {
+    lockDuration: {
       time: '1209600s'
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.45',
-    cosmwasm_enabled: false,
-    cosmwasm_version: '0.30'
+    cosmosSdkVersion: '0.45',
+    cosmwasmEnabled: false,
+    cosmwasmVersion: '0.30'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lavatestnet/images/lava-icon.png',
       theme: {
-        primary_color_hex: '#D7001F'
+        primaryColorHex: '#D7001F'
       }
     }, {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lavatestnet/images/lava-icon.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lavatestnet/images/lava-icon.svg'
     }],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lavatestnet/images/lava-icon.png'
   },
   apis: {
@@ -66,20 +66,20 @@ const info: Chain = {
     {
       kind: 'explorers.guru',
       url: 'https://lava.explorers.guru/',
-      tx_page: 'https://lava.explorers.guru//transaction/${txHash}',
-      account_page: 'https://lava.explorers.guru//account/${accountAddress}'
+      txPage: 'https://lava.explorers.guru//transaction/${txHash}',
+      accountPage: 'https://lava.explorers.guru//account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Lava-Testnet',
-      tx_page: 'https://explorer.stavr.tech/Lava-Testnet/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Lava-Testnet/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Lava-Testnet/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Lava-Testnet/account/${accountAddress}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.org/lava-testnet',
-      tx_page: 'https://explorer.nodestake.org/lava-testnet/tx/${txHash}',
-      account_page: 'https://explorer.nodestake.org/lava-testnet/account/${accountAddress}'
+      txPage: 'https://explorer.nodestake.org/lava-testnet/tx/${txHash}',
+      accountPage: 'https://explorer.nodestake.org/lava-testnet/account/${accountAddress}'
     }
   ],
   keywords: ['rpc', 'api']

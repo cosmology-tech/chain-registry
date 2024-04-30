@@ -1,20 +1,20 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'imversedtestnet',
+  chainName: 'imversedtestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'Imversed Testnet',
-  chain_id: 'imversed-test-1',
-  bech32_prefix: 'imv',
-  daemon_name: 'imversed',
-  node_home: '$HOME/.imversed',
-  key_algos: ['secp256k1'],
+  networkType: 'testnet',
+  prettyName: 'Imversed Testnet',
+  chainId: 'imversed-test-1',
+  bech32Prefix: 'imv',
+  daemonName: 'imversed',
+  nodeHome: '$HOME/.imversed',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'nimv',
-        fixed_min_gas_price: 0.001
+        fixedMinGasPrice: 0.001
       }]
   },
   codebase: {
@@ -37,7 +37,7 @@ const info: Chain = {
   explorers: [{
       kind: 'Big Dipper',
       url: 'https://tex-s.imversed.com',
-      tx_page: 'https://tex-s.imversed.com/transactions/${txHash}'
+      txPage: 'https://tex-s.imversed.com/transactions/${txHash}'
     }]
 };
 export default info;

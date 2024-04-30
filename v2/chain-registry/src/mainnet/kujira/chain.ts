@@ -1,142 +1,142 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'kujira',
-  chain_id: 'kaiyo-1',
-  pretty_name: 'Kujira',
+  chainName: 'kujira',
+  chainId: 'kaiyo-1',
+  prettyName: 'Kujira',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://kujira.app/',
-  bech32_prefix: 'kujira',
-  daemon_name: 'kujirad',
-  node_home: '$HOME/.kujira',
-  key_algos: ['secp256k1'],
+  bech32Prefix: 'kujira',
+  daemonName: 'kujirad',
+  nodeHome: '$HOME/.kujira',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [
+    feeTokens: [
       {
         denom: 'ukuji',
-        fixed_min_gas_price: 0.0034,
-        low_gas_price: 0.0034,
-        average_gas_price: 0.0051,
-        high_gas_price: 0.00681
+        fixedMinGasPrice: 0.0034,
+        lowGasPrice: 0.0034,
+        averageGasPrice: 0.0051,
+        highGasPrice: 0.00681
       },
       {
         denom: 'factory/kujira1qk00h5atutpsv900x202pxx42npjr9thg58dnqpa72f2p7m2luase444a7/uusk',
-        fixed_min_gas_price: 0.01186,
-        low_gas_price: 0.01186,
-        average_gas_price: 0.01779,
-        high_gas_price: 0.02372
+        fixedMinGasPrice: 0.01186,
+        lowGasPrice: 0.01186,
+        averageGasPrice: 0.01779,
+        highGasPrice: 0.02372
       },
       {
         denom: 'ibc/295548A78785A1007F232DE286149A6FF512F180AF5657780FC89C009E2C348F',
-        fixed_min_gas_price: 0.0119,
-        low_gas_price: 0.0119,
-        average_gas_price: 0.01785,
-        high_gas_price: 0.02379
+        fixedMinGasPrice: 0.0119,
+        lowGasPrice: 0.0119,
+        averageGasPrice: 0.01785,
+        highGasPrice: 0.02379
       },
       {
         denom: 'ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2',
-        fixed_min_gas_price: 0.00129,
-        low_gas_price: 0.00129,
-        average_gas_price: 0.00193,
-        high_gas_price: 0.00258
+        fixedMinGasPrice: 0.00129,
+        lowGasPrice: 0.00129,
+        averageGasPrice: 0.00193,
+        highGasPrice: 0.00258
       },
       {
         denom: 'ibc/47BD209179859CDE4A2806763D7189B6E6FE13A17880FE2B42DE1E6C1E329E23',
-        fixed_min_gas_price: 0.01795,
-        low_gas_price: 0.01795,
-        average_gas_price: 0.02692,
-        high_gas_price: 0.0359
+        fixedMinGasPrice: 0.01795,
+        lowGasPrice: 0.01795,
+        averageGasPrice: 0.02692,
+        highGasPrice: 0.0359
       },
       {
         denom: 'ibc/3607EB5B5E64DD1C0E12E07F077FF470D5BC4706AFCBC98FE1BA960E5AE4CE07',
-        fixed_min_gas_price: 0.65943,
-        low_gas_price: 0.65943,
-        average_gas_price: 0.98915,
-        high_gas_price: 1.31887
+        fixedMinGasPrice: 0.65943,
+        lowGasPrice: 0.65943,
+        averageGasPrice: 0.98915,
+        highGasPrice: 1.31887
       },
       {
         denom: 'ibc/F3AA7EF362EC5E791FE78A0F4CCC69FEE1F9A7485EB1A8CAB3F6601C00522F10',
-        fixed_min_gas_price: 160416396197,
-        low_gas_price: 160416396197,
-        average_gas_price: 240624594296,
-        high_gas_price: 320832792394
+        fixedMinGasPrice: 160416396197,
+        lowGasPrice: 160416396197,
+        averageGasPrice: 240624594296,
+        highGasPrice: 320832792394
       },
       {
         denom: 'ibc/EFF323CC632EC4F747C61BCE238A758EFDB7699C3226565F7C20DA06509D59A5',
-        fixed_min_gas_price: 0.02689,
-        low_gas_price: 0.02689,
-        average_gas_price: 0.04034,
-        high_gas_price: 0.05379
+        fixedMinGasPrice: 0.02689,
+        lowGasPrice: 0.02689,
+        averageGasPrice: 0.04034,
+        highGasPrice: 0.05379
       },
       {
         denom: 'ibc/DA59C009A0B3B95E0549E6BF7B075C8239285989FF457A8EDDBB56F10B2A6986',
-        fixed_min_gas_price: 0.01495,
-        low_gas_price: 0.01495,
-        average_gas_price: 0.02243,
-        high_gas_price: 0.02991
+        fixedMinGasPrice: 0.01495,
+        lowGasPrice: 0.01495,
+        averageGasPrice: 0.02243,
+        highGasPrice: 0.02991
       },
       {
         denom: 'ibc/A358D7F19237777AF6D8AD0E0F53268F8B18AE8A53ED318095C14D6D7F3B2DB5',
-        fixed_min_gas_price: 0.03139,
-        low_gas_price: 0.03139,
-        average_gas_price: 0.04709,
-        high_gas_price: 0.06278
+        fixedMinGasPrice: 0.03139,
+        lowGasPrice: 0.03139,
+        averageGasPrice: 0.04709,
+        highGasPrice: 0.06278
       },
       {
         denom: 'ibc/4F393C3FCA4190C0A6756CE7F6D897D5D1BE57D6CCB80D0BC87393566A7B6602',
-        fixed_min_gas_price: 0.90403,
-        low_gas_price: 0.90403,
-        average_gas_price: 1.35605,
-        high_gas_price: 1.80806
+        fixedMinGasPrice: 0.90403,
+        lowGasPrice: 0.90403,
+        averageGasPrice: 1.35605,
+        highGasPrice: 1.80806
       },
       {
         denom: 'ibc/004EBF085BBED1029326D56BE8A2E67C08CECE670A94AC1947DF413EF5130EB2',
-        fixed_min_gas_price: 559196837,
-        low_gas_price: 559196837,
-        average_gas_price: 838795256,
-        high_gas_price: 1118393675
+        fixedMinGasPrice: 559196837,
+        lowGasPrice: 559196837,
+        averageGasPrice: 838795256,
+        highGasPrice: 1118393675
       },
       {
         denom: 'ibc/1B38805B1C75352B28169284F96DF56BDEBD9E8FAC005BDCC8CF0378C82AA8E7',
-        fixed_min_gas_price: 5772801,
-        low_gas_price: 5772801,
-        average_gas_price: 8659201,
-        high_gas_price: 11545602
+        fixedMinGasPrice: 5772801,
+        lowGasPrice: 5772801,
+        averageGasPrice: 8659201,
+        highGasPrice: 11545602
       },
       {
         denom: 'factory/kujira1643jxg8wasy5cfcn7xm8rd742yeazcksqlg4d7/umnta',
-        fixed_min_gas_price: 0.01807,
-        low_gas_price: 0.01807,
-        average_gas_price: 0.02711,
-        high_gas_price: 0.03615
+        fixedMinGasPrice: 0.01807,
+        lowGasPrice: 0.01807,
+        averageGasPrice: 0.02711,
+        highGasPrice: 0.03615
       },
       {
         denom: 'ibc/FE98AAD68F02F03565E9FA39A5E627946699B2B07115889ED812D8BA639576A9',
-        fixed_min_gas_price: 0.01194,
-        low_gas_price: 0.01194,
-        average_gas_price: 0.01792,
-        high_gas_price: 0.02389
+        fixedMinGasPrice: 0.01194,
+        lowGasPrice: 0.01194,
+        averageGasPrice: 0.01792,
+        highGasPrice: 0.02389
       },
       {
         denom: 'ibc/E5CA126979E2FFB4C70C072F8094D07ECF27773B37623AD2BF7582AD0726F0F3',
-        fixed_min_gas_price: 0.00019,
-        low_gas_price: 0.00019,
-        average_gas_price: 0.00029,
-        high_gas_price: 0.00039
+        fixedMinGasPrice: 0.00019,
+        lowGasPrice: 0.00019,
+        averageGasPrice: 0.00029,
+        highGasPrice: 0.00039
       }
     ]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ukuji'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.5',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.45.0'
+    cosmosSdkVersion: 'v0.47.8',
+    cosmwasmEnabled: true,
+    cosmwasmVersion: 'v0.45.0'
   },
   description: 'A decentralized ecosystem for protocols, builders and web3 users seeking sustainable FinTech.',
   apis: {
@@ -339,27 +339,27 @@ const info: Chain = {
     {
       kind: 'kujira',
       url: 'https://finder.kujira.app',
-      tx_page: 'https://finder.kujira.app/kaiyo-1/tx/${txHash}'
+      txPage: 'https://finder.kujira.app/kaiyo-1/tx/${txHash}'
     },
     {
       kind: 'explorers.guru',
       url: 'https://kujira.explorers.guru',
-      tx_page: 'https://kujira.explorers.guru/transaction/${txHash}'
+      txPage: 'https://kujira.explorers.guru/transaction/${txHash}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/kujira',
-      tx_page: 'https://ezstaking.app/kujira/txs/${txHash}',
-      account_page: 'https://ezstaking.app/kujira/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/kujira/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/kujira/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/kujira',
-      tx_page: 'https://atomscan.com/kujira/transactions/${txHash}',
-      account_page: 'https://atomscan.com/kujira/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/kujira/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/kujira/accounts/${accountAddress}'
     }
   ],
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kujira-chain-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg'
   },

@@ -1,35 +1,35 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'kyve',
-  chain_id: 'kyve-1',
-  pretty_name: 'KYVE',
+  chainName: 'kyve',
+  chainId: 'kyve-1',
+  prettyName: 'KYVE',
   status: 'live',
-  network_type: 'mainnet',
-  bech32_prefix: 'kyve',
-  daemon_name: 'kyved',
-  node_home: '$HOME/.kyve',
+  networkType: 'mainnet',
+  bech32Prefix: 'kyve',
+  daemonName: 'kyved',
+  nodeHome: '$HOME/.kyve',
   website: 'https://www.kyve.network/',
-  key_algos: ['secp256k1'],
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ukyve',
-        fixed_min_gas_price: 0.02,
-        low_gas_price: 0.02,
-        average_gas_price: 0.03,
-        high_gas_price: 0.06
+        fixedMinGasPrice: 0.02,
+        lowGasPrice: 0.02,
+        averageGasPrice: 0.03,
+        highGasPrice: 0.06
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ukyve'
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.6-kyve-rc0'
+    cosmosSdkVersion: 'v0.47.6-kyve-rc0'
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve.svg'
   },
@@ -174,44 +174,44 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/kyve',
-      tx_page: 'https://ezstaking.app/kyve/txs/${txHash}',
-      account_page: 'https://ezstaking.app/kyve/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/kyve/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/kyve/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/kyve',
-      tx_page: 'https://www.mintscan.io/kyve/txs/${txHash}',
-      account_page: 'https://www.mintscan.io/kyve/account/${accountAddress}'
+      txPage: 'https://www.mintscan.io/kyve/txs/${txHash}',
+      accountPage: 'https://www.mintscan.io/kyve/account/${accountAddress}'
     },
     {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/kyve',
-      tx_page: 'https://explorer.nodestake.top/kyve/txs/${txHash}',
-      account_page: 'https://explorer.nodestake.top/kyve/account/${accountAddress}'
+      txPage: 'https://explorer.nodestake.top/kyve/txs/${txHash}',
+      accountPage: 'https://explorer.nodestake.top/kyve/account/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Kyve',
-      tx_page: 'https://explorer.stavr.tech/Kyve/txs/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Kyve/account/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Kyve/txs/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Kyve/account/${accountAddress}'
     },
     {
       kind: 'Stake-Take',
       url: 'https://explorer.stake-take.com/kyve',
-      tx_page: 'https://explorer.stake-take.com/kyve/txs/${txHash}',
-      account_page: 'https://explorer.stake-take.com/kyve/account/${accountAddress}'
+      txPage: 'https://explorer.stake-take.com/kyve/txs/${txHash}',
+      accountPage: 'https://explorer.stake-take.com/kyve/account/${accountAddress}'
     },
     {
       kind: 'Decloud Nodes Lab',
       url: 'https://explorer.declab.pro/Kyve',
-      tx_page: 'https://explorer.declab.pro/Kyve/txs/${txHash}',
-      account_page: 'https://explorer.declab.pro/Kyve/account/${accountAddress}'
+      txPage: 'https://explorer.declab.pro/Kyve/txs/${txHash}',
+      accountPage: 'https://explorer.declab.pro/Kyve/account/${accountAddress}'
     },
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/kyve',
-      tx_page: 'https://explorer.whenmoonwhenlambo.money/kyve/txs/${txHash}',
-      account_page: 'https://explorer.whenmoonwhenlambo.money/kyve/account/${accountAddress}'
+      txPage: 'https://explorer.whenmoonwhenlambo.money/kyve/txs/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/kyve/account/${accountAddress}'
     }
   ],
   images: [{

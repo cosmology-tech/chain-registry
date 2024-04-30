@@ -1,14 +1,14 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'ulastestnet',
+  chainName: 'ulastestnet',
   status: 'live',
-  network_type: 'testnet',
-  pretty_name: 'ULAS',
-  chain_id: 'ulas',
-  bech32_prefix: 'ulas',
-  daemon_name: 'ulasd',
-  node_home: '$HOME/.ulas',
+  networkType: 'testnet',
+  prettyName: 'ULAS',
+  chainId: 'ulas',
+  bech32Prefix: 'ulas',
+  daemonName: 'ulasd',
+  nodeHome: '$HOME/.ulas',
   codebase: {
 
   },
@@ -29,7 +29,7 @@ const info: Chain = {
   explorers: [{
       kind: 'ulas-scan',
       url: 'https://testnet-explorer.ulas.network',
-      tx_page: 'https://testnet-explorer.ulas.network/ulas/tx/${txHash}'
+      txPage: 'https://testnet-explorer.ulas.network/ulas/tx/${txHash}'
     }],
   slip44: 118
 };

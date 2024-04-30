@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'rizon',
+  chainName: 'rizon',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://rizon.world/',
-  pretty_name: 'Rizon',
-  chain_id: 'titan-1',
-  bech32_prefix: 'rizon',
-  daemon_name: 'rizond',
-  node_home: '$HOME/.rizon',
-  key_algos: ['secp256k1'],
+  prettyName: 'Rizon',
+  chainId: 'titan-1',
+  bech32Prefix: 'rizon',
+  daemonName: 'rizond',
+  nodeHome: '$HOME/.rizon',
+  keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'uatolo',
-        low_gas_price: 0.025,
-        average_gas_price: 0.025,
-        high_gas_price: 0.035
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.035
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'uatolo'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.svg'
   },
@@ -85,37 +85,37 @@ const info: Chain = {
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/rizon',
-      tx_page: 'https://ezstaking.app/rizon/txs/${txHash}',
-      account_page: 'https://ezstaking.app/rizon/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/rizon/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/rizon/account/${accountAddress}'
     },
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/rizon',
-      tx_page: 'https://www.mintscan.io/rizon/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/rizon/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/rizon/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/rizon/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',
       url: 'https://ping.pub/rizon',
-      tx_page: 'https://ping.pub/rizon/tx/${txHash}'
+      txPage: 'https://ping.pub/rizon/tx/${txHash}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/rizon',
-      tx_page: 'https://atomscan.com/rizon/transactions/${txHash}',
-      account_page: 'https://atomscan.com/rizon/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/rizon/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/rizon/accounts/${accountAddress}'
     },
     {
       kind: 'bigdipper',
       url: 'https://bigdipper.live/rizon',
-      tx_page: 'https://bigdipper.live/rizon/transactions/${txHash}',
-      account_page: 'https://bigdipper.live/rizon/accounts/${accountAddress}'
+      txPage: 'https://bigdipper.live/rizon/transactions/${txHash}',
+      accountPage: 'https://bigdipper.live/rizon/accounts/${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Rizon',
-      tx_page: 'https://explorer.stavr.tech/Rizon/tx/${txHash}',
-      account_page: 'https://explorer.stavr.tech/Rizon/accounts/${accountAddress}'
+      txPage: 'https://explorer.stavr.tech/Rizon/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Rizon/accounts/${accountAddress}'
     }
   ],
   images: [{

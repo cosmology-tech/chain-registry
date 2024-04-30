@@ -1,34 +1,34 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'sentinel',
+  chainName: 'sentinel',
   status: 'live',
-  network_type: 'mainnet',
+  networkType: 'mainnet',
   website: 'https://sentinel.co/',
-  pretty_name: 'Sentinel',
-  chain_id: 'sentinelhub-2',
-  bech32_prefix: 'sent',
-  daemon_name: 'sentinelhub',
-  node_home: '$HOME/.sentinelhub',
+  prettyName: 'Sentinel',
+  chainId: 'sentinelhub-2',
+  bech32Prefix: 'sent',
+  daemonName: 'sentinelhub',
+  nodeHome: '$HOME/.sentinelhub',
   slip44: 118,
-  key_algos: ['secp256k1'],
+  keyAlgos: ['secp256k1'],
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'udvpn',
-        low_gas_price: 0.1,
-        average_gas_price: 0.25,
-        high_gas_price: 0.4
+        lowGasPrice: 0.1,
+        averageGasPrice: 0.25,
+        highGasPrice: 0.4
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'udvpn'
       }]
   },
   codebase: {
 
   },
-  logo_URIs: {
+  logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg'
   },
@@ -185,42 +185,42 @@ const info: Chain = {
     {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/sentinel',
-      tx_page: 'https://www.mintscan.io/sentinel/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/sentinel/accounts/${accountAddress}'
+      txPage: 'https://www.mintscan.io/sentinel/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/sentinel/accounts/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/sentinel',
-      tx_page: 'https://ezstaking.app/sentinel/txs/${txHash}',
-      account_page: 'https://ezstaking.app/sentinel/account/${accountAddress}'
+      txPage: 'https://ezstaking.app/sentinel/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/sentinel/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
       url: 'https://atomscan.com/sentinel',
-      tx_page: 'https://atomscan.com/sentinel/transactions/${txHash}',
-      account_page: 'https://atomscan.com/sentinel/accounts/${accountAddress}'
+      txPage: 'https://atomscan.com/sentinel/transactions/${txHash}',
+      accountPage: 'https://atomscan.com/sentinel/accounts/${accountAddress}'
     },
     {
       kind: 'RoomIT',
       url: 'https://explorer.tendermint.roomit.xyz/sentinel-mainnet',
-      tx_page: 'https://explorer.tendermint.roomit.xyz/sentinel-mainnet/transactions/${txHash}',
-      account_page: 'https://explorer.tendermint.roomit.xyz/sentinel-mainnet/accounts/${accountAddress}'
+      txPage: 'https://explorer.tendermint.roomit.xyz/sentinel-mainnet/transactions/${txHash}',
+      accountPage: 'https://explorer.tendermint.roomit.xyz/sentinel-mainnet/accounts/${accountAddress}'
     },
     {
       kind: 'ValidatorNode',
       url: 'https://explorer.validatornode.com/sentinel',
-      tx_page: 'https://explorer.validatornode.com/sentinel/tx/${txHash}'
+      txPage: 'https://explorer.validatornode.com/sentinel/tx/${txHash}'
     },
     {
       kind: 'Decloud Nodes Lab',
       url: 'https://explorer.declab.pro/Sentinel',
-      tx_page: 'https://explorer.declab.pro/Sentinel/tx/${txHash}'
+      txPage: 'https://explorer.declab.pro/Sentinel/tx/${txHash}'
     },
     {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/sentinel/',
-      tx_page: 'https://explorer.nodeshub.online/sentinel/tx/${txHash}',
-      account_page: 'https://explorer.nodeshub.online/sentinel/accounts/${accountAddress}'
+      txPage: 'https://explorer.nodeshub.online/sentinel/tx/${txHash}',
+      accountPage: 'https://explorer.nodeshub.online/sentinel/accounts/${accountAddress}'
     }
   ],
   images: [{

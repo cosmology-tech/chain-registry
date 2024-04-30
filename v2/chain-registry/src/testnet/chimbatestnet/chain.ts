@@ -1,26 +1,26 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'chimbatestnet',
+  chainName: 'chimbatestnet',
   status: 'live',
-  network_type: 'testnet',
+  networkType: 'testnet',
   website: 'https://chimba.ooo/',
-  pretty_name: 'Chimba',
-  chain_id: 'chimba-testnet',
-  bech32_prefix: 'chimba',
-  daemon_name: 'chimbad',
-  node_home: '$HOME/.chimbad',
+  prettyName: 'Chimba',
+  chainId: 'chimba-testnet',
+  bech32Prefix: 'chimba',
+  daemonName: 'chimbad',
+  nodeHome: '$HOME/.chimbad',
   fees: {
-    fee_tokens: [{
+    feeTokens: [{
         denom: 'ucmba',
-        fixed_min_gas_price: 0.25,
-        low_gas_price: 1,
-        average_gas_price: 5,
-        high_gas_price: 10
+        fixedMinGasPrice: 0.25,
+        lowGasPrice: 1,
+        averageGasPrice: 5,
+        highGasPrice: 10
       }]
   },
   staking: {
-    staking_tokens: [{
+    stakingTokens: [{
         denom: 'ucmba'
       }]
   },
@@ -40,7 +40,7 @@ const info: Chain = {
   explorers: [{
       kind: 'bigdipper',
       url: 'https://explorer.testnet.chimba.ooo/',
-      tx_page: 'https://explorer.testnet.chimba.ooo/transactions/${txHash}'
+      txPage: 'https://explorer.testnet.chimba.ooo/transactions/${txHash}'
     }],
   slip44: 118
 };
