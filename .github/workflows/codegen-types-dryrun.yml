@@ -1,4 +1,4 @@
-name: Generate Types
+name: Generate Types Dryrun
 
 on:
   workflow_dispatch:
