@@ -298,40 +298,6 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@chain-registry/cli@^1.30.5":
-  version "1.30.5"
-  resolved "https://registry.yarnpkg.com/@chain-registry/cli/-/cli-1.30.5.tgz#be4da15d6b8e8f2b005269a48194d4917ed0902c"
-  integrity sha512-2r+7oSoEVRuh8pOEQEgLb5J6jZMuRYaDt8+tH59QeFluNgd48stY1Lu9WT4oIRj37yXj2VaNZHASm/+DPX7RPA==
-  dependencies:
-    "@chain-registry/interfaces" "^0.29.5"
-    "@chain-registry/workflows" "^1.30.5"
-    chalk "^4.1.0"
-    deepmerge "^4.3.1"
-    inquirerer "1.8.0"
-    minimist "^1.2.8"
-
-"@chain-registry/interfaces@^0.29.5":
-  version "0.29.5"
-  resolved "https://registry.yarnpkg.com/@chain-registry/interfaces/-/interfaces-0.29.5.tgz#f2d51a450eeb0e164a4be867f1dc2aedce2f6fb3"
-  integrity sha512-x733wKLp+D40pXkmVoaIieL+jKzjr0y7xnerodI9n5zHMx2WnsYBHZ5by8UCoLysQLcGzVF0Y5YWf2ip21/4Pw==
-
-"@chain-registry/workflows@^1.30.5":
-  version "1.30.5"
-  resolved "https://registry.yarnpkg.com/@chain-registry/workflows/-/workflows-1.30.5.tgz#de358967d80de4d4efe246dfa0dd80fe724ab44b"
-  integrity sha512-kVjIup5A0wbYbK2nxCEyTVhkr2QTbA+nM3g1DVae/fPMPqx2r9oxexMTuMMucLPVw7Jtu+DD//MXxXQzktdQ5g==
-  dependencies:
-    "@chain-registry/interfaces" "^0.29.5"
-    ajv "^8.12.0"
-    ajv-formats "^3.0.1"
-    bignumber.js "9.1.1"
-    chalk "^4.1.0"
-    file-ts "^0.7.15"
-    glob "^7.1.4"
-    minimatch "^9.0.4"
-    mkdirp "3.0.1"
-    schema-typescript "^0.2.5"
-    sha.js "^2.4.11"
-
 "@cosmostation/extension-client@0.1.15":
   version "0.1.15"
   resolved "https://registry.yarnpkg.com/@cosmostation/extension-client/-/extension-client-0.1.15.tgz#cdc6d8fce42217704c1c0d5814f0ee7ce27e8dab"
@@ -6633,16 +6599,6 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
-
-schema-typescript@^0.2.5:
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/schema-typescript/-/schema-typescript-0.2.5.tgz#7ada4e9287dade85cb379ac1fdbc055264e4e166"
-  integrity sha512-PauNlmaOuGjOce9A0njOlxshRm6iYSzgXSH6yKQ2gM4S3kIpRmZ3/l/ekQYxgvEab7KQN9qQbOX05x58KuTU7w==
-  dependencies:
-    "@babel/core" "^7.24.4"
-    "@babel/generator" "^7.24.4"
-    "@babel/types" "^7.24.0"
-    deepmerge "^4.3.1"
 
 schema-typescript@^0.4.0:
   version "0.4.0"
