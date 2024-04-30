@@ -1,0 +1,60 @@
+import { Chain } from '@chain-registry/v2-types';
+const info: Chain = {
+  $schema: '../chain.schema.json',
+  chainName: 'pylons',
+  status: 'live',
+  networkType: 'mainnet',
+  website: 'https://pylons.tech',
+  prettyName: 'Pylons',
+  chainId: 'pylons-mainnet-1',
+  bech32Prefix: 'pylo',
+  nodeHome: '$HOME/.pylons',
+  daemonName: 'pylonsd',
+  keyAlgos: ['secp256k1'],
+  slip44: 118,
+  fees: {
+    feeTokens: [{
+        denom: 'ubedrock',
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0,
+        averageGasPrice: 0.5,
+        highGasPrice: 1
+      }]
+  },
+  staking: {
+    stakingTokens: [{
+        denom: 'ubedrock'
+      }]
+  },
+  codebase: {
+
+  },
+  logoURIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pylons/images/pylons.png'
+  },
+  apis: {
+    rpc: [{
+        address: 'https://rpc.nodejumper.io:443/pylons',
+        provider: 'Nodejumper.io'
+      }, {
+        address: 'https:/pylons-rpc.noders.services',
+        provider: '[NODERS]TEAM'
+      }],
+    rest: [{
+        address: 'https://rest.nodejumper.io/pylons',
+        provider: 'Nodejumper.io'
+      }, {
+        address: 'https://pylons-api.noders.services',
+        provider: '[NODERS]TEAM'
+      }]
+  },
+  explorers: [{
+      kind: 'Nodes.guru',
+      url: 'https://pylons.explorers.guru/',
+      txPage: 'https://pylons.explorers.guru/transaction/${txHash}'
+    }],
+  images: [{
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pylons/images/pylons.png'
+    }]
+};
+export default info;

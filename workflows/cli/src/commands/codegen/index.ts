@@ -3,13 +3,15 @@ import { existsSync } from 'fs';
 import { CLIOptions, Inquirerer } from 'inquirerer'
 import { ParsedArgs } from 'minimist';
 
+import { toCamelCase } from '../../utils';
+
 export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, _options: CLIOptions) => {
 
   const {
     registryDir,
     outputDir,
     strictTypeSafety,
-    useCamelCase
+    camelCase
   } = await prompter.prompt(argv, [
     {
       type: 'text',
@@ -29,7 +31,7 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
     },
     {
       type: 'confirm',
-      name: 'useCamelCase',
+      name: 'camelCase',
       default: true,
       useDefault: false
     }
@@ -46,7 +48,8 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
     registry,
     schemaTSOptions: {
       strictTypeSafety,
-      useCamelCase
+      camelCase,
+      camelCaseFn: toCamelCase
     }
   });
 

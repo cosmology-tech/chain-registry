@@ -46,8 +46,5 @@
     "web3",
     "cosmos",
     "interchain"
-  ],
-  "devDependencies": {
-    "strfy-js": "^2.2.2"
-  }
+  ]
 }

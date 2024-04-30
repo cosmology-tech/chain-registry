@@ -1,10 +1,10 @@
 import { CLIOptions, Inquirerer, Question } from 'inquirerer'
 import { ParsedArgs } from 'minimist';
 
+import { getUsage } from '../help';
 import { commands as codegen } from './codegen';
 import { commands as info } from './info';
 import { commands as validate } from './validate';
-import { getUsage } from '../help';
 
 export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, _options: CLIOptions) => {
   let command;

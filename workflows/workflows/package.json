@@ -28,8 +28,7 @@
     "test:watch": "jest --watch"
   },
   "devDependencies": {
-    "@types/sha.js": "^2.4.0",
-    "strfy-js": "^2.2.2"
+    "@types/sha.js": "^2.4.0"
   },
   "dependencies": {
     "@chain-registry/interfaces": "^0.29.5",
@@ -41,7 +40,7 @@
     "glob": "^7.1.4",
     "minimatch": "^9.0.4",
     "mkdirp": "3.0.1",
-    "schema-typescript": "^0.2.5",
+    "schema-typescript": "^0.4.0",
     "sha.js": "^2.4.11"
   },
   "keywords": [

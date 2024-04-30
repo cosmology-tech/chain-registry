@@ -1,0 +1,66 @@
+import { Chain } from '@chain-registry/v2-types';
+const info: Chain = {
+  $schema: '../../chain.schema.json',
+  chainName: 'galacticatestnet',
+  status: 'live',
+  networkType: 'testnet',
+  prettyName: 'Galactica Protocol Testnet',
+  chainId: 'galactica_9302-1',
+  bech32Prefix: 'gala',
+  daemonName: 'galacticad',
+  nodeHome: '$HOME/.galactica',
+  keyAlgos: ['ethsecp256k1'],
+  slip44: 60,
+  fees: {
+    feeTokens: [{
+        denom: 'agnet',
+        fixedMinGasPrice: 10,
+        lowGasPrice: 10,
+        averageGasPrice: 10,
+        highGasPrice: 20
+      }]
+  },
+  staking: {
+    stakingTokens: [{
+        denom: 'agnet'
+      }]
+  },
+  codebase: {
+    cosmosSdkVersion: '0.46',
+    cosmwasmEnabled: false
+  },
+  apis: {
+    rpc: [{
+        address: 'https://rpc.galactica.test.pfc.zone/',
+        provider: 'PFC'
+      }, {
+        address: 'https://galactica-testnet-rpc.ibs.team:443',
+        provider: 'Inter Blockchain Services'
+      }],
+    rest: [{
+        address: 'https://api.galactica.test.pfc.zone/',
+        provider: 'PFC'
+      }, {
+        address: 'https://galactica-testnet-api.ibs.team:443',
+        provider: 'Inter Blockchain Services'
+      }],
+    grpc: [{
+        address: 'https://grpc.galactica.test.pfc.zone/',
+        provider: 'PFC'
+      }]
+  },
+  logoURIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galactica/images/galactica.png'
+  },
+  explorers: [{
+      kind: 'ping.pub',
+      url: 'https://ping.pfc.zone/galactica-testnet',
+      txPage: 'https://ping.pfc.zone/galactica-testnet/tx/${txHash}',
+      accountPage: 'https://ping.pfc.zone/galactica-testnet/account/${accountAddress}'
+    }],
+  keywords: ['testnet'],
+  images: [{
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galactica/images/galactica.png'
+    }]
+};
+export default info;

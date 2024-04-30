@@ -1,0 +1,59 @@
+import { Chain } from '@chain-registry/v2-types';
+const info: Chain = {
+  $schema: '../chain.schema.json',
+  chainName: 'akashtestnet',
+  status: 'live',
+  networkType: 'testnet',
+  website: 'https://akash.network/',
+  prettyName: 'Sandbox',
+  chainId: 'sandbox-01',
+  bech32Prefix: 'akash',
+  daemonName: 'akash',
+  nodeHome: '$HOME/.akash',
+  slip44: 118,
+  fees: {
+    feeTokens: [{
+        denom: 'uakt',
+        fixedMinGasPrice: 0,
+        lowGasPrice: 0.025,
+        averageGasPrice: 0.025,
+        highGasPrice: 0.04
+      }]
+  },
+  staking: {
+    stakingTokens: [{
+        denom: 'uakt'
+      }]
+  },
+  codebase: {
+
+  },
+  logoURIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
+  },
+  apis: {
+    rpc: [{
+        address: 'https://rpc.sandbox-01.aksh.pw:443',
+        provider: 'akash'
+      }],
+    rest: [{
+        address: 'https://api.sandbox-01.aksh.pw:443',
+        provider: 'akash'
+      }],
+    grpc: [{
+        address: 'grpc.sandbox-01.aksh.pw:9090',
+        provider: 'akash'
+      }]
+  },
+  explorers: [{
+      kind: 'ping.pub',
+      url: 'https://explorer.sandbox-01.aksh.pw/akash',
+      txPage: 'https://explorer.sandbox-01.aksh.pw/akash/tx/${txHash}'
+    }],
+  images: [{
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
+    }]
+};
+export default info;
