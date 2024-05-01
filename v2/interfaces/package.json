@@ -28,9 +28,6 @@
     "test": "jest",
     "test:watch": "jest --watch"
   },
-  "devDependencies": {
-    "@chain-registry/cli": "^1.32.0"
-  },
   "keywords": [
     "chain-registry",
     "web3",
