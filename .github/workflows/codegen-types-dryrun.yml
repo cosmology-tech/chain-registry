@@ -32,12 +32,14 @@ jobs:
           yarn symlink
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
+          cd workflows/generate-types
+          yarn generate:types
+          yarn generate:interfaces
+          cd ../../
           cd v2/types
-          yarn types
           yarn build
           cd ../../
           cd v2/interfaces
-          yarn types
           yarn build
           cd ../../
           cd v2/chain-registry
