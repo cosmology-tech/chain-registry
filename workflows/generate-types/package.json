@@ -1,16 +1,13 @@
 {
-  "name": "@chain-registry/interfaces",
-  "version": "0.31.1",
+  "name": "@chain-registry/generate-types",
+  "version": "0.31.0",
   "description": "Chain Registry interfaces",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
   "license": "SEE LICENSE IN LICENSE",
-  "main": "index.js",
-  "module": "esm/index.js",
-  "types": "index.d.ts",
+  "private": true,
   "publishConfig": {
-    "access": "public",
-    "directory": "dist"
+    "access": "restricted"
   },
   "repository": {
     "type": "git",
@@ -20,12 +17,11 @@
     "url": "https://github.com/cosmology-tech/chain-registry/issues"
   },
   "scripts": {
-    "copy": "copyfiles -f LICENSE README.md package.json dist",
-    "clean": "del dist/**",
-    "prepare": "npm run build",
-    "build": "npm run clean; tsc; tsc -p tsconfig.esm.json; npm run copy",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "generate:interfaces": "chain-registry codegen --outputDir ../../v2/interfaces/src/ --no-camelCase --registryDir ../../packages/chain-registry/chain-registry",
+    "generate:types": "chain-registry codegen --outputDir ../../v2/types/src/ --camelCase --registryDir ../../packages/chain-registry/chain-registry"
+  },
+  "devDependencies": {
+    "@chain-registry/cli": "^1.32.0"
   },
   "keywords": [
     "chain-registry",

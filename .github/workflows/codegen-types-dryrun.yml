@@ -1,4 +1,4 @@
-name: Generate Types Dryrun
+name: Generate Types Dry Run
 
 on:
   workflow_dispatch:
@@ -20,36 +20,49 @@ jobs:
 
       - name: Update Git Submodules 🔄
         run: |
-          git submodule update --remote
-          cd packages/chain-registry/chain-registry
+          make use-cosmos
 
-      - name: Types Generation
+      - name: Install Dependencies 🧶
         run: |
-          git submodule update --remote
-          CHANGES_DESC="build-$(date +%Y%m%d-%H%M%S)"
-          yarn
+          yarn install
+          yarn symlink
+
+      - name: Build Project 🏗️
+        run: |
           yarn build
           yarn symlink
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor}}@users.noreply.github.com"
-          cd v2/types
-          yarn types
+
+      - name: Types Generation 🛠
+        run: |         
+          # Generate types and interfaces
+          pushd workflows/generate-types
+          yarn generate:types
+          yarn generate:interfaces
+          popd
+
+          # Build types
+          pushd v2/types
           yarn build
-          cd ../../
-          cd v2/interfaces
-          yarn types
+          popd
+
+          # Build interfaces
+          pushd v2/interfaces
           yarn build
-          cd ../../
-          cd v2/chain-registry
+          popd
+
+          # Generate and build code for chain registry
+          pushd v2/chain-registry
           yarn codegen
           yarn build
-          cd ../../
+          popd
+
+          # check changes
           git add .
           if ! git diff --staged --quiet; then
             echo "GIT_RESULT=Changes to commit and/or publish." >> $GITHUB_ENV
           else
             echo "GIT_RESULT=No changes to commit." >> $GITHUB_ENV
           fi
-      - name: Git Ops
+      - name: Git Result
         run: |
           echo $GIT_RESULT

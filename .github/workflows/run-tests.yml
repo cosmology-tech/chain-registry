@@ -22,10 +22,7 @@ jobs:
 
       - name: Update Git Submodules 🔄
         run: |
-          git submodule update --remote
-          cd packages/chain-registry/chain-registry
-          git fetch
-          git checkout b3dcd322284b332c1ef9458926dbcdf2985aac3e
+          make use-fixtures
 
       - name: Install Dependencies 🧶
         run: |
@@ -33,7 +30,9 @@ jobs:
           yarn symlink
 
       - name: Build Project 🏗️
-        run: yarn build
+        run: |
+          yarn build
+          yarn symlink
 
       - name: Test @chain-registry/keplr 🔍
         run: cd packages/keplr && yarn test

@@ -1,22 +1,26 @@
-name: Generate Types
+name: Codegen Main
 
 on:
+  schedule:
+    # Runs every day at 1:00 AM UTC
+    - cron: "0 1 * * *"
+
   workflow_dispatch:
 
 jobs:
-  generate-types:
+  publish-npm:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository 📥
         uses: actions/checkout@v4
         with:
-          submodules: 'recursive'  # Ensures submodules are also checked out
+          submodules: 'recursive'
 
       - name: Setup Node.js 🌐
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          cache: 'yarn'
+          registry-url: https://registry.npmjs.org/
 
       - name: Update Git Submodules 🔄
         run: |
@@ -32,28 +36,24 @@ jobs:
           yarn build
           yarn symlink
 
-      - name: Types Generation 🛠
-        run: |         
-          # Generate types and interfaces
-          pushd workflows/generate-types
-          yarn generate:types
-          yarn generate:interfaces
-          popd
-
-          # Build types
-          pushd v2/types
-          yarn build
-          popd
-
-          # Build interfaces
-          pushd v2/interfaces
-          yarn build
-          popd
-
-          # Generate and build code for chain registry
-          pushd v2/chain-registry
+      - name: Code Generation 🛠
+        run: |
+          # Code generation and build for various packages
+          pushd packages/chain-registry
           yarn codegen
           yarn build
+          popd
+
+          pushd packages/assets
+          yarn codegen
+          popd
+
+          pushd packages/osmosis
+          yarn codegen
+          popd
+
+          pushd packages/juno
+          yarn codegen
           popd
 
           # Stage all changes and commit if there are any changes

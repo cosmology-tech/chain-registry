@@ -1,4 +1,4 @@
-name: Codegen Dry Run
+name: Codegen Main Dry Run
 
 on:
 
@@ -19,15 +19,25 @@ jobs:
           node-version: '20.x'
           registry-url: https://registry.npmjs.org/
 
-      - name: Code Generation
+      - name: Update Git Submodules 🔄
         run: |
-          git submodule update --remote
-          CHANGES_DESC="build-$(date +%Y%m%d-%H%M%S)"
-          yarn
+          make use-cosmos
+
+      - name: Install Dependencies 🧶
+        run: |
+          yarn install
+          yarn symlink
+
+      - name: Build Project 🏗️
+        run: |
+          yarn build
+          yarn symlink
+
+      - name: Code Generation 🛠
+        run: |
           yarn codegen
           git add .
           if ! git diff --staged --quiet; then
-            echo "build 🛠 $CHANGES_DESC"
             echo "GIT_RESULT=Changes detected." >> $GITHUB_ENV
           else
             echo "GIT_RESULT=No changes to commit." >> $GITHUB_ENV

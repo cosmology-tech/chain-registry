@@ -23,13 +23,9 @@
     "copy": "copyfiles -f LICENSE README.md package.json dist",
     "clean": "del dist/**",
     "prepare": "npm run build",
-    "types": "chain-registry codegen --outputDir ./src/ --camelCase --registryDir ../../packages/chain-registry/chain-registry",
     "build": "npm run clean; tsc; tsc -p tsconfig.esm.json; npm run copy",
     "test": "jest",
     "test:watch": "jest --watch"
-  },
-  "devDependencies": {
-    "@chain-registry/cli": "^1.32.1"
   },
   "keywords": [
     "chain-registry",
