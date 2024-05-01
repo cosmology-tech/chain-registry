@@ -30,7 +30,9 @@ jobs:
           yarn symlink
 
       - name: Build Project 🏗️
-        run: yarn build
+        run: |
+          yarn build
+          yarn symlink
 
       - name: Test @chain-registry/keplr 🔍
         run: cd packages/keplr && yarn test

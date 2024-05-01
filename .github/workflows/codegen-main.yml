@@ -1,0 +1,76 @@
+name: Codegen Main
+
+on:
+  schedule:
+    # Runs every day at 1:00 AM UTC
+    - cron: "0 1 * * *"
+
+  workflow_dispatch:
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository 📥
+        uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+
+      - name: Setup Node.js 🌐
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: https://registry.npmjs.org/
+
+      - name: Update Git Submodules 🔄
+        run: |
+          make use-cosmos
+
+      - name: Install Dependencies 🧶
+        run: |
+          yarn install
+          yarn symlink
+
+      - name: Build Project 🏗️
+        run: |
+          yarn build
+          yarn symlink
+
+      - name: Code Generation 🛠
+        run: |
+          # Code generation and build for various packages
+          pushd packages/chain-registry
+          yarn codegen
+          yarn build
+          popd
+
+          pushd packages/assets
+          yarn codegen
+          popd
+
+          pushd packages/osmosis
+          yarn codegen
+          popd
+
+          pushd packages/juno
+          yarn codegen
+          popd
+
+          # Stage all changes and commit if there are any changes
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git add .
+          if ! git diff --staged --quiet; then
+            git commit -am "build 🛠 build-$(date +%Y%m%d-%H%M%S)"
+            git push origin main
+            echo "GIT_RESULT=Published." >> $GITHUB_ENV
+          else
+            echo "GIT_RESULT=No changes to commit." >> $GITHUB_ENV
+          fi
+
+      - name: Git Ops
+        run: |
+          echo $GIT_RESULT
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
+          GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}

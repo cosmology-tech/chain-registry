@@ -231,6 +231,29 @@ git commit -am "new registry updates"
 lerna publish
 ```
 
+
+### Switching Submodule Sources
+
+Use the following Makefile commands to switch the submodule between the official repository and a testing fixtures repository:
+
+- **use-cosmos**: Switches the submodule to use the official `cosmos/chain-registry` repository. Use this for standard development and production updates.
+
+```
+make use-cosmos
+```
+
+- **use-fixtures**: Switches the submodule to use the `cosmology-tech/chain-registry-fixtures` repository. This is useful for testing, allowing developers to work with stable test data, without syncing to random production data changes.
+
+```
+make use-fixtures
+```
+
+### When to Use Fixtures
+
+Use the `use-fixtures` command when you need to test the system with controlled data.
+
+⚠️ DO NOT COMMIT code that is using `use-fixtures`! 
+
 ## Related
 
 Checkout these related projects:

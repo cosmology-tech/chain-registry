@@ -2,7 +2,7 @@ name: Lerna Publish
 
 on:
   workflow_run:
-    workflows: ["Publish Main"]
+    workflows: ["Codegen Main"]
     types:
       - completed
 
