@@ -1722,6 +1722,65 @@ const info: AssetList = {
             path: 'transfer/channel-224/uusdc'
           }
         }]
+    },
+    {
+      denomUnits: [{
+          denom: 'ibc/F0C440C8040E2FCCAC621D32D3A00D9B347C989D52CE869A91CB34D07B0021D2',
+          exponent: 0,
+          aliases: ['factory/migaloo1d0uma9qzcts4fzt7ml39xp44aut5k6qyjfzz4asalnecppppr3rsl52vvv/rstk']
+        }, {
+          denom: 'rstk',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/F0C440C8040E2FCCAC621D32D3A00D9B347C989D52CE869A91CB34D07B0021D2',
+      name: 'Restake DAO Token',
+      display: 'rstk',
+      symbol: 'RSTK',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'migaloo',
+            baseDenom: 'factory/migaloo1d0uma9qzcts4fzt7ml39xp44aut5k6qyjfzz4asalnecppppr3rsl52vvv/rstk',
+            channelId: 'channel-1'
+          },
+          chain: {
+            channelId: 'channel-210',
+            path: 'transfer/channel-210/factory/migaloo1d0uma9qzcts4fzt7ml39xp44aut5k6qyjfzz4asalnecppppr3rsl52vvv/rstk'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'migaloo',
+            baseDenom: 'factory/migaloo1d0uma9qzcts4fzt7ml39xp44aut5k6qyjfzz4asalnecppppr3rsl52vvv/rstk'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.svg'
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.svg'
+      }
+    },
+    {
+      denomUnits: [{
+          denom: 'factory/juno1h6y8tkceau4d8zyv5aa0fwdj2pa2y0gz2hx0tq/uwind',
+          exponent: 0
+        }, {
+          denom: 'wind',
+          exponent: 6
+        }],
+      address: 'juno1h6y8tkceau4d8zyv5aa0fwdj2pa2y0gz2hx0tq',
+      base: 'factory/juno1h6y8tkceau4d8zyv5aa0fwdj2pa2y0gz2hx0tq/uwind',
+      name: 'Wind Token',
+      display: 'wind',
+      symbol: 'WIND',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wind.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wind.png'
+        }]
     }
   ]
 };
