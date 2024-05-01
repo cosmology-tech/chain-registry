@@ -108,6 +108,7 @@ import * as _octa from './octa';
 import * as _odin from './odin';
 import * as _okexchain from './okexchain';
 import * as _omniflixhub from './omniflixhub';
+import * as _onex from './onex';
 import * as _onomy from './onomy';
 import * as _oraichain from './oraichain';
 import * as _osmosis from './osmosis';
@@ -269,6 +270,7 @@ const assets: AssetList[] = [
   _odin.assets,
   _okexchain.assets,
   _omniflixhub.assets,
+  _onex.assets,
   _onomy.assets,
   _oraichain.assets,
   _osmosis.assets,

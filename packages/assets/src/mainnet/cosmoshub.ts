@@ -1513,6 +1513,42 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Nim Network.',
+      extended_description: 'Nim Network is a highly-adoptable AI Gaming chain that will provide the ultimate ecosystem for exploration and development of games at the intersection of Web3 and AI.',
+      denom_units: [{
+          denom: 'ibc/1DF265BDFB1B601908DC11667EE1D84D2A882423D2444325405311F3ACD22223',
+          exponent: 0,
+          aliases: ['anim']
+        }, {
+          denom: 'nim',
+          exponent: 18
+        }],
+      base: 'ibc/1DF265BDFB1B601908DC11667EE1D84D2A882423D2444325405311F3ACD22223',
+      name: 'NIM Network',
+      display: 'nim',
+      symbol: 'NIM',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/nim.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/nim.svg'
+        }],
+      socials: {
+        website: 'https://nim.network/',
+        twitter: 'https://twitter.com/nim_network'
+      },
+      keywords: ['gaming', 'AI'],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'anim',
+            chain_name: 'dymension'
+          },
+          chain: {
+            channel_id: 'channel-794'
+          }
+        }]
+    },
+    {
       description: 'e-Money NGM staking token. In addition to earning staking rewards the token is bought back and burned based on e-Money stablecoin inflation.',
       denom_units: [{
           denom: 'ibc/E070CE91CC4BD15AEC9B5788C0826755AAD35052A3037E9AC62BE70B4C9A7DBB',
@@ -3887,6 +3923,42 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-1',
             base_denom: 'adym',
+            chain_name: 'dymension'
+          },
+          chain: {
+            channel_id: 'channel-794'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Nim Network.',
+      extended_description: 'Nim Network is a highly-adoptable AI Gaming chain that will provide the ultimate ecosystem for exploration and development of games at the intersection of Web3 and AI.',
+      denom_units: [{
+          denom: 'ibc/1DF265BDFB1B601908DC11667EE1D84D2A882423D2444325405311F3ACD22223',
+          exponent: 0,
+          aliases: ['anim']
+        }, {
+          denom: 'nim',
+          exponent: 18
+        }],
+      base: 'ibc/1DF265BDFB1B601908DC11667EE1D84D2A882423D2444325405311F3ACD22223',
+      name: 'NIM Network',
+      display: 'nim',
+      symbol: 'NIM',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/nim.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/nim.svg'
+        }],
+      socials: {
+        website: 'https://nim.network/',
+        twitter: 'https://twitter.com/nim_network'
+      },
+      keywords: ['gaming', 'AI'],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'anim',
             chain_name: 'dymension'
           },
           chain: {

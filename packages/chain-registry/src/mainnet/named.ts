@@ -107,6 +107,7 @@ export * as octa from './octa';
 export * as odin from './odin';
 export * as okexchain from './okexchain';
 export * as omniflixhub from './omniflixhub';
+export * as onex from './onex';
 export * as onomy from './onomy';
 export * as oraichain from './oraichain';
 export * as osmosis from './osmosis';
