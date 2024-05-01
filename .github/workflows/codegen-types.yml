@@ -32,33 +32,42 @@ jobs:
           yarn build
           yarn symlink
 
-      - name: Types Generation
-        run: |
-          CHANGES_DESC="build-$(date +%Y%m%d-%H%M%S)"
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor}}@users.noreply.github.com"
-          cd workflows/generate-types
+      - name: Types Generation 🛠
+        run: |         
+          # Generate types and interfaces
+          pushd workflows/generate-types
           yarn generate:types
           yarn generate:interfaces
-          cd ../../
-          cd v2/types
+          popd
+
+          # Build types
+          pushd v2/types
           yarn build
-          cd ../../
-          cd v2/interfaces
+          popd
+
+          # Build interfaces
+          pushd v2/interfaces
           yarn build
-          cd ../../
-          cd v2/chain-registry
+          popd
+
+          # Generate and build code for chain registry
+          pushd v2/chain-registry
           yarn codegen
           yarn build
-          cd ../../
+          popd
+
+          # Stage all changes and commit if there are any changes
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
           git add .
           if ! git diff --staged --quiet; then
-            git commit -am "build 🛠 $CHANGES_DESC"
+            git commit -am "build 🛠 build-$(date +%Y%m%d-%H%M%S)"
             git push origin main
             echo "GIT_RESULT=Published." >> $GITHUB_ENV
           else
             echo "GIT_RESULT=No changes to commit." >> $GITHUB_ENV
           fi
+
       - name: Git Ops
         run: |
           echo $GIT_RESULT
