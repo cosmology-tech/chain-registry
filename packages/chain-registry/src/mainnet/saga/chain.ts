@@ -53,6 +53,10 @@ const info: Chain = {
       {
         address: 'https://saga.rpc.kjnodes.com',
         provider: 'kjnodes'
+      },
+      {
+        address: 'https://rpc.saga.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ],
     rest: [
@@ -71,6 +75,10 @@ const info: Chain = {
       {
         address: 'https://saga.api.kjnodes.com',
         provider: 'kjnodes'
+      },
+      {
+        address: 'https://lcd.saga.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ],
     grpc: [
@@ -89,6 +97,10 @@ const info: Chain = {
       {
         address: 'saga.grpc.kjnodes.com:443',
         provider: 'kjnodes'
+      },
+      {
+        address: 'grpc.saga.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ]
   },
