@@ -22,13 +22,7 @@ jobs:
 
       - name: Update Git Submodules 🔄
         run: |
-          # Changing the remote URL temporarily
-          git config submodule.packages/chain-registry/chain-registry.url https://github.com/cosmology-tech/chain-registry-fixtures.git
-          git submodule sync
-          git submodule update --init --remote packages/chain-registry/chain-registry
-          cd packages/chain-registry/chain-registry
-          git fetch
-          git checkout master  # Switching to the master branch
+          make use-fixtures
 
       - name: Install Dependencies 🧶
         run: |
