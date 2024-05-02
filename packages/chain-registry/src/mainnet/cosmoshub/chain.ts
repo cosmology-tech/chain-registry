@@ -167,6 +167,10 @@ const info: Chain = {
       {
         address: 'https://rpc-cosmos.kewrnode.com',
         provider: 'Kewr Node'
+      },
+      {
+        address: 'https://rpc.cosmoshub-4.citizenweb3.com',
+        provider: 'Citizen Web3'
       }
     ],
     rest: [

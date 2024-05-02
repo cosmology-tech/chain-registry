@@ -37,27 +37,45 @@ const info: Chain = {
     rpc: [{
         address: 'https://rpc.cvn.io/',
         provider: 'cvn.io'
+      }, {
+        address: 'https://conscious_mainnet_rpc.chain.whenmoonwhenlambo.money/',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }],
     rest: [{
         address: 'https://api.cvn.io',
         provider: 'cvn.io'
+      }, {
+        address: 'https://conscious_mainnet_api.chain.whenmoonwhenlambo.money/',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }],
     grpc: [{
         address: 'https://grpc.cvn.io',
         provider: 'cvn.io'
       }],
-    "evm-http-jsonrpc": [{
+    "evm-http-jsonrpc": [
+      {
         address: 'https://node.cvn.io/',
         provider: 'cvn'
-      }, {
+      },
+      {
         address: 'https://node.consciousdao.io/',
         provider: 'consciousdao'
-      }]
+      },
+      {
+        address: 'https://conscious_mainnet_evm.chain.whenmoonwhenlambo.money/',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      }
+    ]
   },
   explorers: [{
       kind: 'blockscout',
       url: 'https://explore.consciousdao.com/',
       tx_page: 'https://explore.consciousdao.com/tx/${txHash}'
+    }, {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/conscious',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/conscious/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/conscious/account/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',

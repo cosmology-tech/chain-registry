@@ -4402,6 +4402,41 @@ const asset_list: AssetList = {
         }]
     },
     {
+      description: 'The native token of ONEX',
+      denom_units: [{
+          denom: 'ibc/B8FD98E11799F3D76F184A6976CA25EDA8625AE5F05B1875ACF2D430A611DD99',
+          exponent: 0,
+          aliases: ['aonex']
+        }, {
+          denom: 'onex',
+          exponent: 18
+        }],
+      base: 'ibc/B8FD98E11799F3D76F184A6976CA25EDA8625AE5F05B1875ACF2D430A611DD99',
+      name: 'ONEX',
+      display: 'onex',
+      symbol: 'ONEX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.svg'
+      },
+      keywords: ['dex'],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-145',
+            base_denom: 'aonex',
+            chain_name: 'onex'
+          },
+          chain: {
+            channel_id: 'channel-74628'
+          }
+        }]
+    },
+    {
       description: 'The native token of Onomy Protocol',
       denom_units: [{
           denom: 'ibc/B9606D347599F0F2FDF82BA3EE339000673B7D274EA50F59494DC51EFCD42163',
@@ -8873,6 +8908,41 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-199'
+          }
+        }]
+    },
+    {
+      description: 'The native token of ONEX',
+      denom_units: [{
+          denom: 'ibc/B8FD98E11799F3D76F184A6976CA25EDA8625AE5F05B1875ACF2D430A611DD99',
+          exponent: 0,
+          aliases: ['aonex']
+        }, {
+          denom: 'onex',
+          exponent: 18
+        }],
+      base: 'ibc/B8FD98E11799F3D76F184A6976CA25EDA8625AE5F05B1875ACF2D430A611DD99',
+      name: 'ONEX',
+      display: 'onex',
+      symbol: 'ONEX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.svg'
+      },
+      keywords: ['dex'],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-145',
+            base_denom: 'aonex',
+            chain_name: 'onex'
+          },
+          chain: {
+            channel_id: 'channel-74628'
           }
         }]
     },

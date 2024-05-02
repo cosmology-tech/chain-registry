@@ -135,6 +135,10 @@ const info: Chain = {
       {
         address: 'https://celestia-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://rpc.celestia.citizenweb3.com',
+        provider: 'Citizen Web3'
       }
     ],
     rest: [

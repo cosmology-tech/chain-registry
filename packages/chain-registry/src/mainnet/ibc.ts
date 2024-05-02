@@ -86,6 +86,7 @@ import * as _nyx from './nyx';
 import * as _odin from './odin';
 import * as _okexchain from './okexchain';
 import * as _omniflixhub from './omniflixhub';
+import * as _onex from './onex';
 import * as _onomy from './onomy';
 import * as _oraichain from './oraichain';
 import * as _osmosis from './osmosis';
@@ -217,6 +218,7 @@ const ibc: IBCInfo[] = [
   ..._odin.ibc,
   ..._okexchain.ibc,
   ..._omniflixhub.ibc,
+  ..._onex.ibc,
   ..._onomy.ibc,
   ..._oraichain.ibc,
   ..._osmosis.ibc,

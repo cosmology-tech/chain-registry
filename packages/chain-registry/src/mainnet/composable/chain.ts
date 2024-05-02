@@ -78,6 +78,10 @@ const info: Chain = {
       {
         address: 'https://composable.rpc.moonbridge.team',
         provider: 'Moonbridge'
+      },
+      {
+        address: 'https://rpc.composable.citizenweb3.com:443',
+        provider: 'Citizen Web3'
       }
     ],
     rest: [

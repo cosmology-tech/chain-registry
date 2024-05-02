@@ -86,6 +86,7 @@ import _nyx from './nyx';
 import _odin from './odin';
 import _okexchain from './okexchain';
 import _omniflixhub from './omniflixhub';
+import _onex from './onex';
 import _onomy from './onomy';
 import _oraichain from './oraichain';
 import _osmosis from './osmosis';
@@ -130,6 +131,6 @@ import _uptick from './uptick';
 import _vidulum from './vidulum';
 import _xpla from './xpla'
 
-const assets: AssetList[] = [_8ball,_acrechain,_agoric,_aioz,_akash,_andromeda,_archway,_arkh,_assetmantle,_aura,_axelar,_bandchain,_beezee,_bitcanna,_bitsong,_bluzelle,_bostrom,_canto,_carbon,_celestia,_cerberus,_chain4energy,_cheqd,_chihuahua,_cifer,_comdex,_composable,_conscious,_coreum,_cosmoshub,_crescent,_cronos,_cryptoorgchain,_cudos,_decentr,_desmos,_dhealth,_dig,_doravota,_dydx,_dymension,_dyson,_echelon,_emoney,_empowerchain,_evmos,_fetchhub,_furya,_fxcore,_galaxy,_gateway,_genesisl1,_gitopia,_gravitybridge,_haqq,_humans,_impacthub,_imversed,_injective,_irisnet,_jackal,_juno,_kava,_kichain,_konstellation,_kujira,_kyve,_lambda,_likecoin,_lumenx,_lumnetwork,_mars,_medasdigital,_meme,_microtick,_migaloo,_neutron,_nibiru,_noble,_nois,_nolus,_nomic,_nyx,_odin,_okexchain,_omniflixhub,_onomy,_oraichain,_osmosis,_panacea,_passage,_persistence,_planq,_point,_provenance,_pundix,_pylons,_quasar,_quicksilver,_qwoyn,_realio,_rebus,_regen,_rizon,_saga,_scorum,_secretnetwork,_sei,_sentinel,_sge,_shareledger,_shentu,_shido,_sifchain,_sommelier,_source,_stafihub,_stargaze,_starname,_stride,_teritori,_terra,_terra2,_tgrade,_umee,_unification,_uptick,_vidulum,_xpla];
+const assets: AssetList[] = [_8ball,_acrechain,_agoric,_aioz,_akash,_andromeda,_archway,_arkh,_assetmantle,_aura,_axelar,_bandchain,_beezee,_bitcanna,_bitsong,_bluzelle,_bostrom,_canto,_carbon,_celestia,_cerberus,_chain4energy,_cheqd,_chihuahua,_cifer,_comdex,_composable,_conscious,_coreum,_cosmoshub,_crescent,_cronos,_cryptoorgchain,_cudos,_decentr,_desmos,_dhealth,_dig,_doravota,_dydx,_dymension,_dyson,_echelon,_emoney,_empowerchain,_evmos,_fetchhub,_furya,_fxcore,_galaxy,_gateway,_genesisl1,_gitopia,_gravitybridge,_haqq,_humans,_impacthub,_imversed,_injective,_irisnet,_jackal,_juno,_kava,_kichain,_konstellation,_kujira,_kyve,_lambda,_likecoin,_lumenx,_lumnetwork,_mars,_medasdigital,_meme,_microtick,_migaloo,_neutron,_nibiru,_noble,_nois,_nolus,_nomic,_nyx,_odin,_okexchain,_omniflixhub,_onex,_onomy,_oraichain,_osmosis,_panacea,_passage,_persistence,_planq,_point,_provenance,_pundix,_pylons,_quasar,_quicksilver,_qwoyn,_realio,_rebus,_regen,_rizon,_saga,_scorum,_secretnetwork,_sei,_sentinel,_sge,_shareledger,_shentu,_shido,_sifchain,_sommelier,_source,_stafihub,_stargaze,_starname,_stride,_teritori,_terra,_terra2,_tgrade,_umee,_unification,_uptick,_vidulum,_xpla];
 
 export default assets;
