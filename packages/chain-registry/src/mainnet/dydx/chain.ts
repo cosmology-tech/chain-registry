@@ -89,6 +89,10 @@ const info: Chain = {
       {
         address: 'https://community.nuxian-node.ch:6797/dydx/trpc',
         provider: 'PRO Delegators'
+      },
+      {
+        address: 'https://dydx-rpc.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     rest: [
@@ -139,6 +143,10 @@ const info: Chain = {
       {
         address: 'https://dydx-lcd.enigma-validator.com',
         provider: 'Enigma'
+      },
+      {
+        address: 'https://dydx-api.noders.services',
+        provider: '[NODERS]TEAM'
       }
     ],
     grpc: [
@@ -193,6 +201,10 @@ const info: Chain = {
       {
         address: 'dydx-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'dydx-grpc.noders.services:37090',
+        provider: '[NODERS]TEAM'
       }
     ]
   },

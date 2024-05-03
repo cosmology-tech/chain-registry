@@ -3,6 +3,7 @@ import { AssetList } from '@chain-registry/types';
 import * as _ethereum from './ethereum';
 import * as _picasso from './picasso';
 import * as _composablepolkadot from './composablepolkadot';
+import * as _0l from './0l';
 import * as _aptos from './aptos';
 import * as _arbitrum from './arbitrum';
 import * as _avalanche from './avalanche';
@@ -33,6 +34,7 @@ const assets: AssetList[] = [
   _ethereum.assets,
   _picasso.assets,
   _composablepolkadot.assets,
+  _0l.assets,
   _aptos.assets,
   _arbitrum.assets,
   _avalanche.assets,

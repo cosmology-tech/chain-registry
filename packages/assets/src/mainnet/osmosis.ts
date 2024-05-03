@@ -1408,14 +1408,14 @@ const assets: AssetList = {
     {
       description: 'Cvn is a Layer-1 blockchain built to deliver on the promise of DeFi',
       denom_units: [{
-          denom: 'ibc/D3FAF77F5DE21C18413B164751239BA7D521A9D8EA53BFE553AADF338A721480',
+          denom: 'ibc/044B7B28AFE93CEC769CF529ADC626DA09EA0EFA3E0E3284D540E9E00E01E24A',
           exponent: 0,
           aliases: ['acvnt']
         }, {
           denom: 'cvnt',
           exponent: 18
         }],
-      base: 'ibc/D3FAF77F5DE21C18413B164751239BA7D521A9D8EA53BFE553AADF338A721480',
+      base: 'ibc/044B7B28AFE93CEC769CF529ADC626DA09EA0EFA3E0E3284D540E9E00E01E24A',
       name: 'Cvn',
       display: 'cvnt',
       symbol: 'CVN',
@@ -1435,12 +1435,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-5',
+            channel_id: 'channel-6',
             base_denom: 'acvnt',
             chain_name: 'conscious'
           },
           chain: {
-            channel_id: 'channel-35264'
+            channel_id: 'channel-73971'
           }
         }]
     },
@@ -5918,14 +5918,14 @@ const assets: AssetList = {
     {
       description: 'Cvn is a Layer-1 blockchain built to deliver on the promise of DeFi',
       denom_units: [{
-          denom: 'ibc/D3FAF77F5DE21C18413B164751239BA7D521A9D8EA53BFE553AADF338A721480',
+          denom: 'ibc/044B7B28AFE93CEC769CF529ADC626DA09EA0EFA3E0E3284D540E9E00E01E24A',
           exponent: 0,
           aliases: ['acvnt']
         }, {
           denom: 'cvnt',
           exponent: 18
         }],
-      base: 'ibc/D3FAF77F5DE21C18413B164751239BA7D521A9D8EA53BFE553AADF338A721480',
+      base: 'ibc/044B7B28AFE93CEC769CF529ADC626DA09EA0EFA3E0E3284D540E9E00E01E24A',
       name: 'Cvn',
       display: 'cvnt',
       symbol: 'CVN',
@@ -5945,12 +5945,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-5',
+            channel_id: 'channel-6',
             base_denom: 'acvnt',
             chain_name: 'conscious'
           },
           chain: {
-            channel_id: 'channel-35264'
+            channel_id: 'channel-73971'
           }
         }]
     },
