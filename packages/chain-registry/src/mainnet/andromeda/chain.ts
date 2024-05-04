@@ -79,6 +79,10 @@ const info: Chain = {
       {
         address: 'andromeda-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'rpc-andromeda.blockval.io',
+        provider: 'Blockval'
       }
     ],
     rest: [
@@ -129,6 +133,10 @@ const info: Chain = {
       {
         address: 'andromeda-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'api-andromeda.blockval.io',
+        provider: 'Blockval'
       }
     ],
     grpc: [
@@ -175,6 +183,10 @@ const info: Chain = {
       {
         address: 'andromeda-grpc.noders.services:34090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'grpc-andromeda.blockval.io:443',
+        provider: 'Blockval'
       }
     ]
   },

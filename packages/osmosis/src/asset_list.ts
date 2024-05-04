@@ -4427,7 +4427,7 @@ const asset_list: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-145',
+            channel_id: 'channel-6',
             base_denom: 'aonex',
             chain_name: 'onex'
           },
@@ -8937,7 +8937,7 @@ const asset_list: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-145',
+            channel_id: 'channel-6',
             base_denom: 'aonex',
             chain_name: 'onex'
           },

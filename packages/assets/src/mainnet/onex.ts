@@ -503,7 +503,7 @@ const assets: AssetList = {
     {
       description: 'The native token of Osmosis',
       denom_units: [{
-          denom: 'ibc/0885FF215A70DF6E7338D8F9297D19891961B3E258F9D9FCA9838958317C9652',
+          denom: 'ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85',
           exponent: 0,
           aliases: ['uosmo']
         }, {
@@ -511,7 +511,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/0885FF215A70DF6E7338D8F9297D19891961B3E258F9D9FCA9838958317C9652',
+      base: 'ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85',
       name: 'Osmosis',
       display: 'osmo',
       symbol: 'OSMO',
@@ -537,13 +537,13 @@ const assets: AssetList = {
             chain_name: 'osmosis'
           },
           chain: {
-            channel_id: 'channel-145'
+            channel_id: 'channel-6'
           }
         }]
     },
     {
       denom_units: [{
-          denom: 'ibc/14AED6E4A80B0853B0ED05739F31614FB5B324FB27140F636842698D4859DB78',
+          denom: 'ibc/69B4810E989B56FC6CA41F395228236FA7E7F59B9A3B7AF3FB0A344361C38389',
           exponent: 0,
           aliases: ['uion']
         }, {
@@ -551,7 +551,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/14AED6E4A80B0853B0ED05739F31614FB5B324FB27140F636842698D4859DB78',
+      base: 'ibc/69B4810E989B56FC6CA41F395228236FA7E7F59B9A3B7AF3FB0A344361C38389',
       name: 'Ion DAO',
       display: 'ion',
       symbol: 'ION',
@@ -577,14 +577,14 @@ const assets: AssetList = {
             chain_name: 'osmosis'
           },
           chain: {
-            channel_id: 'channel-145'
+            channel_id: 'channel-6'
           }
         }]
     },
     {
       description: 'The native token of Osmosis',
       denom_units: [{
-          denom: 'ibc/0885FF215A70DF6E7338D8F9297D19891961B3E258F9D9FCA9838958317C9652',
+          denom: 'ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85',
           exponent: 0,
           aliases: ['uosmo']
         }, {
@@ -592,7 +592,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/0885FF215A70DF6E7338D8F9297D19891961B3E258F9D9FCA9838958317C9652',
+      base: 'ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85',
       name: 'Osmosis',
       display: 'osmo',
       symbol: 'OSMO',
@@ -618,13 +618,13 @@ const assets: AssetList = {
             chain_name: 'osmosis'
           },
           chain: {
-            channel_id: 'channel-145'
+            channel_id: 'channel-6'
           }
         }]
     },
     {
       denom_units: [{
-          denom: 'ibc/14AED6E4A80B0853B0ED05739F31614FB5B324FB27140F636842698D4859DB78',
+          denom: 'ibc/69B4810E989B56FC6CA41F395228236FA7E7F59B9A3B7AF3FB0A344361C38389',
           exponent: 0,
           aliases: ['uion']
         }, {
@@ -632,7 +632,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/14AED6E4A80B0853B0ED05739F31614FB5B324FB27140F636842698D4859DB78',
+      base: 'ibc/69B4810E989B56FC6CA41F395228236FA7E7F59B9A3B7AF3FB0A344361C38389',
       name: 'Ion DAO',
       display: 'ion',
       symbol: 'ION',
@@ -658,7 +658,7 @@ const assets: AssetList = {
             chain_name: 'osmosis'
           },
           chain: {
-            channel_id: 'channel-145'
+            channel_id: 'channel-6'
           }
         }]
     }

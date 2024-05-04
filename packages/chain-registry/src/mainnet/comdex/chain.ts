@@ -88,6 +88,10 @@ const info: Chain = {
       {
         address: 'https://comdex-rpc.validatornode.com',
         provider: 'ValidatorNode'
+      },
+      {
+        address: 'https://rpc-comdex.blockval.io',
+        provider: 'Blockval'
       }
     ],
     rest: [
@@ -142,6 +146,10 @@ const info: Chain = {
       {
         address: 'https://comdex-api.validatornode.com',
         provider: 'ValidatorNode'
+      },
+      {
+        address: 'https://api-comdex.blockval.io',
+        provider: 'Blockval'
       }
     ],
     grpc: [
@@ -188,6 +196,10 @@ const info: Chain = {
       {
         address: 'comdex-grpc.stakerhouse.com:443',
         provider: 'StakerHouse'
+      },
+      {
+        address: 'https://grpc-comdex.blockval.io:443',
+        provider: 'Blockval'
       }
     ]
   },

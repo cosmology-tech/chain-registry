@@ -131,6 +131,7 @@ import * as _rizon from './rizon';
 import * as _saga from './saga';
 import * as _scorum from './scorum';
 import * as _secretnetwork from './secretnetwork';
+import * as _seda from './seda';
 import * as _sei from './sei';
 import * as _sentinel from './sentinel';
 import * as _sge from './sge';
@@ -293,6 +294,7 @@ const assets: AssetList[] = [
   _saga.assets,
   _scorum.assets,
   _secretnetwork.assets,
+  _seda.assets,
   _sei.assets,
   _sentinel.assets,
   _sge.assets,
