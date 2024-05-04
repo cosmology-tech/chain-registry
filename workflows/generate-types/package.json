@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/generate-types",
-  "version": "0.31.3",
+  "version": "0.31.4",
   "description": "Chain Registry interfaces",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
@@ -21,7 +21,7 @@
     "generate:types": "chain-registry codegen --outputDir ../../v2/types/src/ --camelCase --registryDir ../../packages/chain-registry/chain-registry"
   },
   "devDependencies": {
-    "@chain-registry/cli": "^1.32.4"
+    "@chain-registry/cli": "^1.32.5"
   },
   "keywords": [
     "chain-registry",
