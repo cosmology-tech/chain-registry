@@ -15,6 +15,7 @@ const info: Chain = {
   fees: {
     fee_tokens: [{
         denom: 'aseda',
+        fixed_min_gas_price: 10000000000,
         low_gas_price: 10000000000,
         average_gas_price: 10000000000,
         high_gas_price: 14000000000

@@ -108,6 +108,7 @@ import * as _rizon from './rizon';
 import * as _saga from './saga';
 import * as _scorum from './scorum';
 import * as _secretnetwork from './secretnetwork';
+import * as _seda from './seda';
 import * as _sei from './sei';
 import * as _sentinel from './sentinel';
 import * as _sge from './sge';
@@ -240,6 +241,7 @@ const ibc: IBCInfo[] = [
   ..._saga.ibc,
   ..._scorum.ibc,
   ..._secretnetwork.ibc,
+  ..._seda.ibc,
   ..._sei.ibc,
   ..._sentinel.ibc,
   ..._sge.ibc,

@@ -13236,7 +13236,7 @@ const assets: AssetList = {
           type: 'bridge',
           counterparty: {
             chain_name: '0l',
-            base_denom: 'uLibra'
+            base_denom: 'microlibra'
           },
           provider: 'LibraBridge'
         }],
@@ -13247,7 +13247,7 @@ const assets: AssetList = {
       images: [{
           image_sync: {
             chain_name: '0l',
-            base_denom: 'uLibra'
+            base_denom: 'microlibra'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/0l/images/libra.svg',
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/0l/images/libra.png'

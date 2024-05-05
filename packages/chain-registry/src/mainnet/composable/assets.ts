@@ -4,7 +4,7 @@ const info: AssetList = {
   chain_name: 'composable',
   assets: [
     {
-      description: 'The native staking and governance token of Composable.',
+      description: 'The native staking, governance and revenue sharing token of Picasso.',
       denom_units: [{
           denom: 'ppica',
           exponent: 0
@@ -20,20 +20,20 @@ const info: AssetList = {
       traces: [{
           type: 'additional-mintage',
           counterparty: {
-            chain_name: 'picasso',
+            chain_name: 'composable',
             base_denom: 'ppica'
           },
           provider: 'Picasso'
         }],
       images: [{
           image_sync: {
-            chain_name: 'picasso',
+            chain_name: 'composable',
             base_denom: 'ppica'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/picasso/images/pica.svg'
         }],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/picasso/images/pica.svg'
       },
       socials: {
         website: 'https://picasso.xyz/',
@@ -117,7 +117,7 @@ const info: AssetList = {
       }
     },
     {
-      description: 'The native staking and governance token of Statemine parachain.',
+      description: 'USDT issued by the Kusama Asset Hub.',
       denom_units: [{
           denom: 'ibc/F3EC9F834E57DF704FA3AEAF14E8391C2E58397FE56960AD70E67562990D8265',
           exponent: 0,

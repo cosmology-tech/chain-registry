@@ -3,12 +3,12 @@ const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'composable',
   chain_id: 'centauri-1',
-  website: 'https://www.composable.finance/',
-  pretty_name: 'Composable',
+  website: 'https://www.picasso.xyz/',
+  pretty_name: 'Picasso',
   status: 'live',
   network_type: 'mainnet',
-  bech32_prefix: 'centauri',
-  daemon_name: 'centaurid',
+  bech32_prefix: 'pica',
+  daemon_name: 'picad',
   node_home: '$HOME/.banksy',
   key_algos: ['secp256k1'],
   slip44: 118,
@@ -30,7 +30,7 @@ const info: Chain = {
     cosmos_sdk_version: 'rust-ninja/cosmos-sdk v0.47.5-patch-validators-trim-tag'
   },
   logo_URIs: {
-    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/composable.svg'
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
   },
   description: 'Picasso is a DeFi infrastructure-focused Layer 1 protocol that leads the industry in building the trust-minimized interoperability solution -Cross-Ecosystem IBC. Complementary to the interoperability work, Picasso is building the first Generalized Restaking Layer starting with deployment on Solana, and expand support for all IBC connected ecosystems.',
   apis: {
@@ -221,7 +221,7 @@ const info: Chain = {
     }
   ],
   images: [{
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/composable.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
     }]
 };
 export default info;

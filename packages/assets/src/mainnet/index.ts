@@ -106,6 +106,7 @@ export * as rizon from './rizon';
 export * as saga from './saga';
 export * as scorum from './scorum';
 export * as secretnetwork from './secretnetwork';
+export * as seda from './seda';
 export * as sei from './sei';
 export * as sentinel from './sentinel';
 export * as sge from './sge';

@@ -47,6 +47,10 @@ const info: Chain = {
       {
         address: 'https://lambda-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://lambda_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -65,6 +69,10 @@ const info: Chain = {
       {
         address: 'https://lambda-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://lambda_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -81,13 +89,20 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       }
     ],
-    "evm-http-jsonrpc": [{
+    "evm-http-jsonrpc": [
+      {
         address: 'https://jsonrpc-lambda.d-stake.xyz',
         provider: 'D-stake'
-      }, {
+      },
+      {
         address: 'https://lambda-jsonrpc.noders.services',
         provider: '[NODERS]TEAM'
-      }]
+      },
+      {
+        address: 'https://lambda_mainnet_evm.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      }
+    ]
   },
   explorers: [
     {
@@ -110,6 +125,12 @@ const info: Chain = {
       url: 'https://atomscan.com/lambda',
       tx_page: 'https://atomscan.com/lambda/transactions/${txHash}',
       account_page: 'https://atomscan.com/lambda/accounts/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/lambda',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/lambda/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/lambda/account/${accountAddress}'
     }
   ],
   images: [{

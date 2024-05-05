@@ -39,14 +39,14 @@ const info: Chain = {
         provider: 'Planq Network'
       }, {
         address: 'https://planq_testnet_rpc.chain.whenmoonwhenlambo.money',
-        provider: 'WMWL'
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }],
     rest: [{
         address: 'https://rest-atlas.planq.network',
         provider: 'Planq Network'
       }, {
         address: 'https://planq_testnet_api.chain.whenmoonwhenlambo.money',
-        provider: 'WMWL'
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }],
     grpc: [{
         address: 'https://grpc-atlas.planq.network',
@@ -57,7 +57,7 @@ const info: Chain = {
         provider: 'Planq Network'
       }, {
         address: 'https://planq_testnet_evm.chain.whenmoonwhenlambo.money',
-        provider: 'WMWL'
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }]
   },
   explorers: [
@@ -72,7 +72,7 @@ const info: Chain = {
       tx_page: 'https://testnet-explorer.konsortech.xyz/planq/tx/${txHash}'
     },
     {
-      kind: 'WMWL',
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/planq-testnet',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/planq-testnet/tx/${txHash}'
     }

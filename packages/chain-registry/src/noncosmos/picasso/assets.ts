@@ -4,7 +4,7 @@ const info: AssetList = {
   chain_name: 'picasso',
   assets: [
     {
-      description: 'The native staking and governance token of Picasso.',
+      description: 'The native staking and governance token of Picasso Kusama.',
       denom_units: [{
           denom: 'ppica',
           exponent: 0
@@ -18,10 +18,10 @@ const info: AssetList = {
       display: 'pica',
       symbol: 'PICA',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/picasso/images/pica.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/picasso/images/pica.svg'
         }]
     },
     {

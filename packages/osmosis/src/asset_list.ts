@@ -1750,14 +1750,14 @@ const asset_list: AssetList = {
     {
       description: 'The native token of dHealth',
       denom_units: [{
-          denom: 'ibc/415797C6CE8DC6E9B4C894EE802B4CF47F74932D282C351A1D9DCB21D94B7162',
+          denom: 'ibc/FD506CCA1FC574F2A8175FB574C981E9F6351E194AA48AC219BD67FF934E2F33',
           exponent: 0,
           aliases: ['udhp']
         }, {
           denom: 'dhp',
           exponent: 6
         }],
-      base: 'ibc/415797C6CE8DC6E9B4C894EE802B4CF47F74932D282C351A1D9DCB21D94B7162',
+      base: 'ibc/FD506CCA1FC574F2A8175FB574C981E9F6351E194AA48AC219BD67FF934E2F33',
       name: 'Digital Health Point',
       display: 'dhp',
       symbol: 'DHP',
@@ -1773,12 +1773,12 @@ const asset_list: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-2',
+            channel_id: 'channel-4',
             base_denom: 'udhp',
             chain_name: 'dhealth'
           },
           chain: {
-            channel_id: 'channel-73360'
+            channel_id: 'channel-75030'
           }
         }]
     },
@@ -6260,14 +6260,14 @@ const asset_list: AssetList = {
     {
       description: 'The native token of dHealth',
       denom_units: [{
-          denom: 'ibc/415797C6CE8DC6E9B4C894EE802B4CF47F74932D282C351A1D9DCB21D94B7162',
+          denom: 'ibc/FD506CCA1FC574F2A8175FB574C981E9F6351E194AA48AC219BD67FF934E2F33',
           exponent: 0,
           aliases: ['udhp']
         }, {
           denom: 'dhp',
           exponent: 6
         }],
-      base: 'ibc/415797C6CE8DC6E9B4C894EE802B4CF47F74932D282C351A1D9DCB21D94B7162',
+      base: 'ibc/FD506CCA1FC574F2A8175FB574C981E9F6351E194AA48AC219BD67FF934E2F33',
       name: 'Digital Health Point',
       display: 'dhp',
       symbol: 'DHP',
@@ -6283,12 +6283,12 @@ const asset_list: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-2',
+            channel_id: 'channel-4',
             base_denom: 'udhp',
             chain_name: 'dhealth'
           },
           chain: {
-            channel_id: 'channel-73360'
+            channel_id: 'channel-75030'
           }
         }]
     },
@@ -9803,6 +9803,46 @@ const asset_list: AssetList = {
         }]
     },
     {
+      description: 'The native token of SEDA Chain.',
+      extended_description: 'SEDA is a standard for modular data transport and querying. Any data type, for all networks.',
+      denom_units: [{
+          denom: 'ibc/956AEF1DA92F70584266E87978C3F30A43B91EE6ABC62F03D097E79F6B99C4D8',
+          exponent: 0,
+          aliases: ['aseda']
+        }, {
+          denom: 'seda',
+          exponent: 18
+        }],
+      base: 'ibc/956AEF1DA92F70584266E87978C3F30A43B91EE6ABC62F03D097E79F6B99C4D8',
+      name: 'Seda',
+      display: 'seda',
+      symbol: 'SEDA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/seda/images/seda.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/seda/images/seda.svg'
+      },
+      coingecko_id: 'seda-2',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/seda/images/seda.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/seda/images/seda.svg'
+        }],
+      socials: {
+        website: 'https://www.seda.xyz/',
+        twitter: 'https://twitter.com/sedaprotocol'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'aseda',
+            chain_name: 'seda'
+          },
+          chain: {
+            channel_id: 'channel-75016'
+          }
+        }]
+    },
+    {
       description: 'The native staking token of Sei.',
       denom_units: [{
           denom: 'ibc/71F11BC0AF8E526B80E44172EBA9D3F0A8E03950BB882325435691EBC9450B1D',
@@ -12351,6 +12391,46 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-88'
+          }
+        }]
+    },
+    {
+      description: 'The native token of SEDA Chain.',
+      extended_description: 'SEDA is a standard for modular data transport and querying. Any data type, for all networks.',
+      denom_units: [{
+          denom: 'ibc/956AEF1DA92F70584266E87978C3F30A43B91EE6ABC62F03D097E79F6B99C4D8',
+          exponent: 0,
+          aliases: ['aseda']
+        }, {
+          denom: 'seda',
+          exponent: 18
+        }],
+      base: 'ibc/956AEF1DA92F70584266E87978C3F30A43B91EE6ABC62F03D097E79F6B99C4D8',
+      name: 'Seda',
+      display: 'seda',
+      symbol: 'SEDA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/seda/images/seda.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/seda/images/seda.svg'
+      },
+      coingecko_id: 'seda-2',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/seda/images/seda.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/seda/images/seda.svg'
+        }],
+      socials: {
+        website: 'https://www.seda.xyz/',
+        twitter: 'https://twitter.com/sedaprotocol'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'aseda',
+            chain_name: 'seda'
+          },
+          chain: {
+            channel_id: 'channel-75016'
           }
         }]
     },
