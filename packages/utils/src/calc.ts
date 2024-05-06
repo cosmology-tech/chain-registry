@@ -141,7 +141,7 @@ export const convertDollarValueToBaseUnit = (
 ): string => {
   const { denom, exponent } = getAssetInfo(assets, symbol, chainName);
   const baseAmount = new BigNumber(value).dividedBy(prices[denom]).toString();
-  return roundDown(shiftDecimalPlaces(baseAmount, exponent));
+  return shiftDecimalPlaces(baseAmount, exponent);
 };
 
 export const convertBaseUnitToDisplayUnit = (
@@ -183,6 +183,6 @@ export const convertDisplayUnitToBaseUnit = (
   chainName?: string
 ): string => {
   const { exponent } = getAssetInfo(assets, symbol, chainName);
-  return roundDown(shiftDecimalPlaces(amount, exponent));
+  return shiftDecimalPlaces(amount, exponent);
 };
 
