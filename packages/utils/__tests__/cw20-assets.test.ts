@@ -1,9 +1,9 @@
 import { getCw20Assets } from '../src';
-import { assets, ibc } from '../test-utils';
+import { assetLists, ibcData } from '@chain-registry/v2';
 
 it('getCw20Assets', () => {
   const chainName = 'osmosis';
-  const list = getCw20Assets(chainName, ibc, assets);
+  const list = getCw20Assets(chainName, ibcData, assetLists);
 
   expect(list).toMatchSnapshot();
 });
