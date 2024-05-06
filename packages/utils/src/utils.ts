@@ -1,4 +1,4 @@
-import { AssetList } from "@chain-registry/types";
+import { AssetList } from "@chain-registry/v2-types";
 
 export const customFind = <T>(
   array: T[],
@@ -26,7 +26,7 @@ export const getNativeAssets = (
         case asset.base.startsWith('factory/'):
           return false;
 
-        case asset.base.startsWith('ft') && list.chain_name === 'bitsong':
+        case asset.base.startsWith('ft') && list.chainName === 'bitsong':
           return false;
 
         case asset.base.startsWith('erc20/'):

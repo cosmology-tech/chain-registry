@@ -1,4 +1,4 @@
-import { Asset, AssetList } from '@chain-registry/types';
+import { Asset, AssetList } from '@chain-registry/v2-types';
 import BigNumber from 'bignumber.js';
 
 import {

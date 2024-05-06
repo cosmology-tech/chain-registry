@@ -32,6 +32,8 @@
   },
   "dependencies": {
     "@chain-registry/types": "^0.28.13",
+    "@chain-registry/v2": "^1.48.6",
+    "@chain-registry/v2-types": "^0.32.6",
     "bignumber.js": "9.1.1",
     "sha.js": "^2.4.11"
   },

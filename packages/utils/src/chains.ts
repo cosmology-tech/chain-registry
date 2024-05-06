@@ -1,4 +1,4 @@
-import { Chain } from '@chain-registry/types';
+import { Chain } from '@chain-registry/v2-types';
 
 import { customFind } from './utils';
 
@@ -9,11 +9,11 @@ export interface GasPriceRanges {
 }
 
 export const getGasPriceRangesFromChain = (chain: Chain): GasPriceRanges => {
-  const feeToken = chain.fees?.fee_tokens?.[0];
+  const feeToken = chain.fees?.feeTokens?.[0];
   return {
-    low: feeToken?.low_gas_price ?? 0.01,
-    average: feeToken?.average_gas_price ?? 0.025,
-    high: feeToken?.high_gas_price ?? 0.04
+    low: feeToken?.lowGasPrice ?? 0.01,
+    average: feeToken?.averageGasPrice ?? 0.025,
+    high: feeToken?.highGasPrice ?? 0.04
   };
 };
 
@@ -21,28 +21,28 @@ export const getChainByChainName = (
   chains: Chain[],
   chainName: string
 ): Chain | undefined => {
-  return customFind(chains, (chain) => chain.chain_name === chainName, `chainName:${chainName}`);
+  return customFind(chains, (chain) => chain.chainName === chainName, `chainName:${chainName}`);
 };
 
 export const getChainByChainId = (
   chains: Chain[],
   chainId: string
 ): Chain | undefined => {
-  return customFind(chains, (chain) => chain.chain_id === chainId, `chainId:${chainId}`);
+  return customFind(chains, (chain) => chain.chainId === chainId, `chainId:${chainId}`);
 };
 
 export const getChainNameByChainId = (
   chains: Chain[],
   chainId: string
 ): string | undefined => {
-  return getChainByChainId(chains, chainId)?.chain_name;
+  return getChainByChainId(chains, chainId)?.chainName;
 };
 
 export const getChainIdByChainName = (
   chains: Chain[],
   chainName: string
 ): string | undefined => {
-  return getChainByChainName(chains, chainName)?.chain_id;
+  return getChainByChainName(chains, chainName)?.chainId;
 };
 
 export const getChainGasPriceRanges = (
@@ -57,12 +57,12 @@ export const getChainPrettyName = (
   chains: Chain[],
   chainName: string
 ): string | undefined => {
-  return getChainByChainName(chains, chainName)?.pretty_name;
+  return getChainByChainName(chains, chainName)?.prettyName;
 };
 
 export const getChainBech32Prefix = (
   chains: Chain[],
   chainName: string
 ): string | undefined => {
-  return getChainByChainName(chains, chainName)?.bech32_prefix;
+  return getChainByChainName(chains, chainName)?.bech32Prefix;
 };
