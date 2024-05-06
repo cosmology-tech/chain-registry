@@ -7,14 +7,14 @@ import {
   getChainNameByChainId,
   getChainPrettyName
 } from '../src/chains';
-import { chains } from '../test-utils';
+import { chains } from '@chain-registry/v2'
 
 describe('tests for chains utils', () => {
   it('getChainByChainName', () => {
     const chain = getChainByChainName(chains, 'osmosis');
-    expect(chain?.chain_name).toEqual('osmosis');
+    expect(chain?.chainName).toEqual('osmosis');
     const chain2 = getChainByChainName(chains, 'cosmoshub');
-    expect(chain2?.chain_name).toEqual('cosmoshub');
+    expect(chain2?.chainName).toEqual('cosmoshub');
     const chain3 = getChainByChainName(chains, 'testchain');
     expect(chain3).toBeUndefined();
     expect(() =>
@@ -24,9 +24,9 @@ describe('tests for chains utils', () => {
 
   it('getChainByChainId', () => {
     const chain = getChainByChainId(chains, 'osmosis-1');
-    expect(chain?.chain_name).toEqual('osmosis');
+    expect(chain?.chainName).toEqual('osmosis');
     const chain2 = getChainByChainId(chains, 'cosmoshub-4');
-    expect(chain2?.chain_name).toEqual('cosmoshub');
+    expect(chain2?.chainName).toEqual('cosmoshub');
   });
 
   it('getChainIdByChainName', () => {
@@ -49,7 +49,7 @@ describe('tests for chains utils', () => {
     const gasPriceRanges2 = getChainGasPriceRanges(chains, 'tgrade');
     expect(gasPriceRanges2?.high).toEqual(0.1);
     const gasPriceRanges3 = getChainGasPriceRanges(chains, 'juno');
-    expect(gasPriceRanges3?.low).toEqual(0.01);
+    expect(gasPriceRanges3?.low).toEqual(0.075);
   });
 
   it('getChainPrettyName', () => {
