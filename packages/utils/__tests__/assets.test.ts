@@ -117,7 +117,7 @@ describe('tests for assets utils', () => {
   it('getAssetNameByDenom', () => {
     expect(() => getAssetNameByDenom(assetLists, 'uatom')).toThrow();
     const name = getAssetNameByDenom(assetLists, 'uatom', 'cosmoshub');
-    expect(name).toEqual('Cosmos');
+    expect(name).toEqual('Cosmos Hub Atom');
     const name2 = getAssetNameByDenom(assetLists, 'ubcre');
     expect(name2).toEqual('Bonded Crescent');
   });
