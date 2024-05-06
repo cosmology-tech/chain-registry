@@ -1,30 +1,25 @@
-import { AssetList } from '@chain-registry/types';
-
-import _assets from '../../../__fixtures__/assets.json';
-import ibc from '../../../__fixtures__/ibc.json';
 import { getIbcDenomByBase } from '../src';
-
-const assets: AssetList[] = _assets as AssetList[];
+import { assetLists, ibcData } from '@chain-registry/v2'
 
 it('ATOM on stargaze', () => {
   const denom = getIbcDenomByBase(
-    ibc,
+    ibcData,
     'stargaze',
     'cosmoshub',
     //
-    assets,
+    assetLists,
     'uatom'
   );
-  expect(denom).toEqual(undefined);
+  expect(denom).toEqual('ibc/9DF365E2C0EF4EA02FA771F638BB9C0C830EFCD354629BDC017F79B348B4E989');
 });
 
 it('JUNO on stargaze', () => {
   const denom = getIbcDenomByBase(
-    ibc,
+    ibcData,
     'stargaze',
     'juno',
     //
-    assets,
+    assetLists,
     'ujuno'
   );
   expect(denom).toEqual(
@@ -34,11 +29,11 @@ it('JUNO on stargaze', () => {
 
 it('STARS on juno', () => {
   const denom = getIbcDenomByBase(
-    ibc,
+    ibcData,
     'juno',
     'stargaze',
     //
-    assets,
+    assetLists,
     'ustars'
   );
   expect(denom).toEqual(
