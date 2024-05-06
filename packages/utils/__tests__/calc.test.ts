@@ -1,5 +1,4 @@
-
-import { assets } from 'chain-registry/mainnet'
+import { assetLists } from '@chain-registry/v2';
 
 import { getDenomsByCoinGeckoId } from '../src/assets';
 import {
@@ -13,8 +12,8 @@ import {
   roundDown
 } from '../src/calc';
 
-const osmosisAssets = assets.filter(
-  ({ chain_name }) => chain_name === 'osmosis'
+const osmosisAssets = assetLists.filter(
+  ({ chainName }) => chainName === 'osmosis'
 );
 
 const coinGeckoPrices = {
