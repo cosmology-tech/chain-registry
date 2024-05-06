@@ -1,13 +1,13 @@
 import { getIbcAssetPath, getIbcDenomByBase, ibcDenom } from '../src';
-import { assets, ibc } from '../test-utils';
+import { assetLists, ibcData } from '@chain-registry/v2';
 
 it('AKT on osmosis', () => {
   const denom = getIbcDenomByBase(
-    ibc,
+    ibcData,
     'osmosis',
     'akash',
     //
-    assets,
+    assetLists,
     'uakt'
   );
   expect(denom).toEqual(
@@ -17,11 +17,11 @@ it('AKT on osmosis', () => {
 
 it('STARS on osmosis', () => {
   const denom = getIbcDenomByBase(
-    ibc,
+    ibcData,
     'osmosis',
     'stargaze',
     //
-    assets,
+    assetLists,
     'ustars'
   );
   expect(denom).toEqual(
@@ -31,11 +31,11 @@ it('STARS on osmosis', () => {
 
 it('JUNO on osmosis', () => {
   const denom = getIbcDenomByBase(
-    ibc,
+    ibcData,
     'osmosis',
     'juno',
     //
-    assets,
+    assetLists,
     'ujuno'
   );
   expect(denom).toEqual(
@@ -176,14 +176,14 @@ it('PSTAKE ibcDenom on osmosis', () => {
       {
         // THIS IS THE CHANNEL TO PERSISTENCE
         // ON OSMOSIS
-        channel_id: 'channel-4',
-        port_id: 'transfer'
+        channelId: 'channel-4',
+        portId: 'transfer'
       },
       {
         // THIS IS THE CHANNEL TO GRAVITYBRIDGE
         // ON PERSISTENCE
-        channel_id: 'channel-38',
-        port_id: 'transfer'
+        channelId: 'channel-38',
+        portId: 'transfer'
       }
     ],
     // why is this gravity?
@@ -196,11 +196,11 @@ it('PSTAKE ibcDenom on osmosis', () => {
 
 it('PSTAKE on osmosis', () => {
   const denom = getIbcDenomByBase(
-    ibc,
+    ibcData,
     'osmosis',
     'persistence',
     //
-    assets,
+    assetLists,
     'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444'
     // 'gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
   );
@@ -211,55 +211,55 @@ it('PSTAKE on osmosis', () => {
 
 it('PSTAKE path on osmosis', () => {
   const path = getIbcAssetPath(
-    ibc,
+    ibcData,
     'osmosis',
     'persistence',
     //
-    assets,
+    assetLists,
     'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444'
   );
   expect(path).toEqual([
     {
       // THIS IS THE CHANNEL TO PERSISTENCE
       // ON OSMOSIS
-      channel_id: 'channel-4',
-      port_id: 'transfer'
+      channelId: 'channel-4',
+      portId: 'transfer'
     },
     {
       // THIS IS THE CHANNEL TO GRAVITYBRIDGE
       // ON PERSISTENCE
-      channel_id: 'channel-38',
-      port_id: 'transfer'
+      channelId: 'channel-38',
+      portId: 'transfer'
     }
   ]);
 });
 
 it('AKASH path on osmosis', () => {
   const path = getIbcAssetPath(
-    ibc,
+    ibcData,
     'osmosis',
     'akash',
     //
-    assets,
+    assetLists,
     'uakt'
   );
   expect(path).toEqual([
     {
       // THIS IS THE CHANNEL TO AAKSH
       // ON OSMOSIS
-      channel_id: 'channel-1',
-      port_id: 'transfer'
+      channelId: 'channel-1',
+      portId: 'transfer'
     }
   ]);
 });
 
 it('OSMO on juno', () => {
   const denom = getIbcDenomByBase(
-    ibc,
+    ibcData,
     'juno',
     'osmosis',
     //
-    assets,
+    assetLists,
     'uosmo'
   );
   expect(denom).toEqual(
