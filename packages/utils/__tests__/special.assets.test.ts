@@ -4,21 +4,21 @@ import {
   getIbcDenomByBase,
   ibcDenom
 } from '../src';
-import { assets, ibc } from '../test-utils';
+import { assetLists, ibcData } from '@chain-registry/v2'
 
 it('getAssetLists', () => {
   const chainName = 'persistence';
-  const list = getAssetLists(chainName, ibc, assets);
+  const list = getAssetLists(chainName, ibcData, assetLists);
   expect(list).toMatchSnapshot();
 });
 
 it('NETA on osmosis getIbcDenomByBaseForCw20', () => {
   const denom = getIbcDenomByBase(
-    ibc,
+    ibcData,
     'osmosis',
     'juno',
     //
-    assets,
+    assetLists,
     'cw20:juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr'
   );
   expect(denom).toEqual(
@@ -30,8 +30,8 @@ it('NETA on osmosis ibcDenom', () => {
   const denom = ibcDenom(
     [
       {
-        channel_id: 'channel-169',
-        port_id: 'transfer'
+        channelId: 'channel-169',
+        portId: 'transfer'
       }
     ],
     'cw20:juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr'
@@ -43,37 +43,37 @@ it('NETA on osmosis ibcDenom', () => {
 
 xit('NETA path on osmosis', () => {
   const path = getIbcAssetPath(
-    ibc,
+    ibcData,
     'osmosis',
     'juno',
     //
-    assets,
+    assetLists,
     // 'uneta'
     'cw20:juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr'
   );
   expect(path).toEqual([
     {
-      channel_id: 'channel-169',
-      port_id: 'transfer'
+      channelId: 'channel-169',
+      portId: 'transfer'
     }
   ]);
 });
 
 it('AKASH path on osmosis', () => {
   const path = getIbcAssetPath(
-    ibc,
+    ibcData,
     'osmosis',
     'akash',
     //
-    assets,
+    assetLists,
     'uakt'
   );
   expect(path).toEqual([
     {
       // THIS IS THE CHANNEL TO AKASH
       // ON OSMOSIS
-      channel_id: 'channel-1',
-      port_id: 'transfer'
+      channelId: 'channel-1',
+      portId: 'transfer'
     }
   ]);
 });
