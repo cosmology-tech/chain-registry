@@ -15,38 +15,38 @@ import {
   getNativeAssetByChainName,
   getSymbolByDenom
 } from '../src/assets';
-import { assets, chains } from '../test-utils';
+import { assetLists, chains } from '@chain-registry/v2'
 
 describe('tests for assets utils', () => {
   it('getAssetByDenom', () => {
-    expect(() => getAssetByDenom(assets, 'uosmo')).toThrow();
-    const asset = getAssetByDenom(assets, 'uosmo', 'osmosis');
+    expect(() => getAssetByDenom(assetLists, 'uosmo')).toThrow();
+    const asset = getAssetByDenom(assetLists, 'uosmo', 'osmosis');
     expect(asset?.base).toEqual('uosmo');
   });
 
   it('getAssetBySymbol', () => {
     expect(getAssetBySymbol([], 'ATOM')).toBeUndefined();
-    const asset1 = getAssetBySymbol(assets, 'DVPN');
+    const asset1 = getAssetBySymbol(assetLists, 'DVPN');
     expect(asset1?.base).toEqual('udvpn');
-    const asset2 = getAssetBySymbol(assets, 'SOMM');
+    const asset2 = getAssetBySymbol(assetLists, 'SOMM');
     expect(asset2?.base).toEqual('usomm');
   });
 
   it('getChainLogo', () => {
-    const logo1 = getChainLogo(assets, 'comdex');
+    const logo1 = getChainLogo(assetLists, 'comdex');
     expect(logo1).toEqual(
       'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png'
     );
-    const logo2 = getChainLogo(assets, 'cosmoshub');
+    const logo2 = getChainLogo(assetLists, 'cosmoshub');
     expect(logo2).toEqual(
       'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png'
     );
   });
 
   it('getChainNameByDenom', () => {
-    const chain1 = getChainNameByDenom(assets, 'ucmdx');
+    const chain1 = getChainNameByDenom(assetLists, 'ucmdx');
     expect(chain1).toEqual('comdex');
-    expect(() => getChainNameByDenom(assets, 'uatom')).toThrow();
+    expect(() => getChainNameByDenom(assetLists, 'uatom')).toThrow();
   });
 
   it('getChainNameByStakingDenom', () => {
@@ -57,79 +57,79 @@ describe('tests for assets utils', () => {
   });
 
   it('getDenomByCoinGeckoId', () => {
-    const denom1 = getDenomByCoinGeckoId(assets, 'jackal');
+    const denom1 = getDenomByCoinGeckoId(assetLists, 'jackal');
     expect(denom1).toEqual('ujkl');
-    const denom2 = getDenomByCoinGeckoId(assets, 'stargaze', 'stargaze');
+    const denom2 = getDenomByCoinGeckoId(assetLists, 'stargaze', 'stargaze');
     expect(denom2).toEqual('ustars');
   });
 
   it('getSymbolByDenom', () => {
-    const denom1 = getSymbolByDenom(assets, 'swth');
+    const denom1 = getSymbolByDenom(assetLists, 'swth');
     expect(denom1).toEqual('SWTH');
-    const denom2 = getSymbolByDenom(assets, 'uusdc', 'axelar');
+    const denom2 = getSymbolByDenom(assetLists, 'uusdc', 'axelar');
     expect(denom2).toEqual('USDC');
   });
 
   it('getDenomBySymbol', () => {
-    const denom1 = getDenomBySymbol(assets, 'OCTA');
+    const denom1 = getDenomBySymbol(assetLists, 'OCTA');
     expect(denom1).toEqual('uocta');
-    const denom2 = getDenomBySymbol(assets, 'NOM', 'nomic');
+    const denom2 = getDenomBySymbol(assetLists, 'NOM', 'nomic');
     expect(denom2).toEqual('unom');
   });
 
   it('getExponentByDenom', () => {
-    const exponent = getExponentByDenom(assets, 'uosmo', 'osmosis');
+    const exponent = getExponentByDenom(assetLists, 'uosmo', 'osmosis');
     expect(exponent).toEqual(6);
   });
 
   it('getExponentBySymbol', () => {
-    const exponent = getExponentBySymbol(assets, 'OCTA');
+    const exponent = getExponentBySymbol(assetLists, 'OCTA');
     expect(exponent).toEqual(6);
-    expect(() => getExponentBySymbol(assets, 'ATOM')).toThrow();
-    const exponent2 = getExponentBySymbol(assets, 'ATOM', 'cosmoshub');
+    expect(() => getExponentBySymbol(assetLists, 'ATOM')).toThrow();
+    const exponent2 = getExponentBySymbol(assetLists, 'ATOM', 'cosmoshub');
     expect(exponent2).toEqual(6);
   });
 
   it('getNativeAssetByChainName', () => {
-    const nativeToken = getNativeAssetByChainName(assets, 'osmosis')
+    const nativeToken = getNativeAssetByChainName(assetLists, 'osmosis')
     expect(nativeToken.base).toEqual('uosmo');
-    const nativeToken2 = getNativeAssetByChainName(assets, 'juno');
+    const nativeToken2 = getNativeAssetByChainName(assetLists, 'juno');
     expect(nativeToken2.base).toEqual('ujuno');
   });
 
   it('getAssetLogoByDenom', () => {
-    const logo = getAssetLogoByDenom(assets, 'uosmo', 'osmosis');
+    const logo = getAssetLogoByDenom(assetLists, 'uosmo', 'osmosis');
     expect(logo).toEqual(
       'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png'
     );
-    expect(() => getAssetLogoByDenom(assets, 'uatom')).toThrow();
-    const logo2 = getAssetLogoByDenom(assets, 'uatom', 'cosmoshub');
+    expect(() => getAssetLogoByDenom(assetLists, 'uatom')).toThrow();
+    const logo2 = getAssetLogoByDenom(assetLists, 'uatom', 'cosmoshub');
     expect(logo2).toEqual(
       'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png'
     );
-    const logo3 = getAssetLogoByDenom(assets, 'ubcre');
+    const logo3 = getAssetLogoByDenom(assetLists, 'ubcre');
     expect(logo3).toEqual(
       'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png'
     );
   });
 
   it('getAssetNameByDenom', () => {
-    expect(() => getAssetNameByDenom(assets, 'uatom')).toThrow();
-    const name = getAssetNameByDenom(assets, 'uatom', 'cosmoshub');
+    expect(() => getAssetNameByDenom(assetLists, 'uatom')).toThrow();
+    const name = getAssetNameByDenom(assetLists, 'uatom', 'cosmoshub');
     expect(name).toEqual('Cosmos');
-    const name2 = getAssetNameByDenom(assets, 'ubcre');
+    const name2 = getAssetNameByDenom(assetLists, 'ubcre');
     expect(name2).toEqual('Bonded Crescent');
   });
 });
 
 describe('getCoinGeckoIdByDenom', () => {
   it('uosmo coingecko id', () => {
-    const id = getCoinGeckoIdByDenom(assets, 'uosmo');
+    const id = getCoinGeckoIdByDenom(assetLists, 'uosmo');
     expect(id).toEqual('osmosis');
   });
 
   it('ujkl coingecko id on testnet', () => {
-    const id = getCoinGeckoIdByDenom(assets, 'ujkl', {
+    const id = getCoinGeckoIdByDenom(assetLists, 'ujkl', {
       allowTestnet: true,
       excludedChainNames: ['jackal']
     });
@@ -137,14 +137,14 @@ describe('getCoinGeckoIdByDenom', () => {
   });
 
   it('uluna coingecko id on terra2', () => {
-    const id = getCoinGeckoIdByDenom(assets, 'uluna', {
+    const id = getCoinGeckoIdByDenom(assetLists, 'uluna', {
       excludedChainNames: ['terra']
     });
     expect(id).toEqual('terra-luna-2');
   });
 
   it('uusdc coingecko id without traces', () => {
-    const id = getCoinGeckoIdByDenom(assets, 'uusdcc', {
+    const id = getCoinGeckoIdByDenom(assetLists, 'uusdcc', {
       customAssetFilter(asset) {
         return !asset.traces;
       }
