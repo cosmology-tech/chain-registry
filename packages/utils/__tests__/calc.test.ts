@@ -59,7 +59,7 @@ describe('tests for calc utils', () => {
       'OSMO',
       100
     );
-    expect(value).toEqual('200753226');
+    expect(value).toEqual('200753226.10434349679999');
   });
 
   it('convertBaseUnitToDisplayUnit', () => {
@@ -76,7 +76,7 @@ describe('tests for calc utils', () => {
       'OSMO',
       0.00009944
     );
-    expect(value).toEqual('99');
+    expect(value).toEqual('99.44');
   });
 
   it('getDenomsByCoinGeckoId', () => {
