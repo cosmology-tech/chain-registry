@@ -26,9 +26,9 @@ describe('tests for assets utils', () => {
 
   it('getAssetBySymbol', () => {
     expect(getAssetBySymbol([], 'ATOM')).toBeUndefined();
-    const asset1 = getAssetBySymbol(assetLists, 'DVPN');
+    const asset1 = getAssetBySymbol(assetLists, 'DVPN', 'sentinel');
     expect(asset1?.base).toEqual('udvpn');
-    const asset2 = getAssetBySymbol(assetLists, 'SOMM');
+    const asset2 = getAssetBySymbol(assetLists, 'SOMM', 'sommelier');
     expect(asset2?.base).toEqual('usomm');
   });
 
