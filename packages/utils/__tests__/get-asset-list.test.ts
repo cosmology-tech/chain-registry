@@ -1,9 +1,10 @@
 import { getAssetLists } from '../src';
-import { assets, ibc } from '../test-utils';
+import { ibcData, assetLists } from '@chain-registry/v2';
+
 
 it('getAssetLists', () => {
   const chainName = 'osmosis';
-  const list = getAssetLists(chainName, ibc, assets);
+  const list = getAssetLists(chainName, ibcData, assetLists);
 
   expect(list).toMatchSnapshot();
 });
