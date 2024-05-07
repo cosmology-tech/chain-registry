@@ -1,4 +1,4 @@
-import { Asset, AssetList, Chain } from '@chain-registry/types';
+import { Asset, AssetList, Chain } from '@chain-registry/v2-types';
 import { getGasPriceRangesFromChain } from '@chain-registry/utils';
 import { AddChainParams } from '@cosmostation/extension-client/types/message';
 
@@ -30,10 +30,10 @@ export const chainRegistryChainToCosmostation = (
   if (!options.getRestEndpoint) options.getRestEndpoint = getRest;
 
   const chainAssets =
-    assets.find((asset) => asset.chain_name === chain.chain_name)?.assets || [];
+    assets.find((asset) => asset.chainName === chain.chainName)?.assets || [];
 
   const stakingDenoms =
-    chain.staking?.staking_tokens.map<string>(
+    chain.staking?.stakingTokens.map<string>(
       (stakingToken) => stakingToken.denom
     ) || [];
 
@@ -41,8 +41,8 @@ export const chainRegistryChainToCosmostation = (
     return {
       displayDenom: currency.symbol,
       baseDenom: currency.base,
-      coinGeckoId: currency.coingecko_id,
-      imageURL: currency.logo_URIs?.svg ?? currency.logo_URIs?.png
+      coinGeckoId: currency.coingeckoId,
+      imageURL: currency.logoURIs?.svg ?? currency.logoURIs?.png
     };
   });
 
@@ -53,14 +53,14 @@ export const chainRegistryChainToCosmostation = (
   const gasPriceRanges = getGasPriceRangesFromChain(chain);
 
   const chainInfo: AddChainParams = {
-    chainId: chain.chain_id,
-    chainName: chain.pretty_name,
+    chainId: chain.chainId,
+    chainName: chain.prettyName,
     restURL: options.getRestEndpoint(chain),
     imageURL: stakeCurrency.imageURL,
     baseDenom: stakeCurrency.baseDenom,
     displayDenom: stakeCurrency.displayDenom,
     coinType: chain.slip44.toString(),
-    addressPrefix: chain.bech32_prefix,
+    addressPrefix: chain.bech32Prefix,
     coinGeckoId: currencies[0].coinGeckoId,
     gasRate: {
       // optional (default: { average: '0.025', low: '0.0025', tiny: '0.00025' })
