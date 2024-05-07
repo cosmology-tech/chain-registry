@@ -1,4 +1,4 @@
-import { Asset, AssetList } from '@chain-registry/types';
+import { Asset, AssetList } from '@chain-registry/v2-types';
 import type {
   Denom,
   Exponent,
@@ -44,7 +44,7 @@ export class ChainRegistryChainUtil {
           ...chainInfo.nativeAssetList.assets,
           ...chainInfo.assetLists.flatMap(({ assets }) => assets)
         ],
-        chain_name: chainName
+        chainName: chainName
       }
     ];
   }

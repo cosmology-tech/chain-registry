@@ -1,4 +1,4 @@
-import { AssetList, Chain, IBCInfo } from '@chain-registry/types';
+import { AssetList, Chain, IBCData } from '@chain-registry/v2-types';
 import { getAssetLists } from '@chain-registry/utils';
 
 import { ChainRegistryFetcher } from './fetcher';
@@ -15,7 +15,7 @@ export class ChainInfo {
   protected _chain: Chain;
   protected _assetList: AssetList;
   protected _assetLists: AssetList[];
-  protected _ibcData: IBCInfo[] = [];
+  protected _ibcData: IBCData[] = [];
 
   constructor(options: ChainInfoOptions) {
     this.chainName = options.chainName;
@@ -30,13 +30,13 @@ export class ChainInfo {
     this._chain = this.fetcher.getChain(this.chainName);
 
     const supportedChains = this._ibcData.reduce((m, v) => {
-      if (!m.includes(v.chain_1.chain_name)) m.push(v.chain_1.chain_name);
-      if (!m.includes(v.chain_2.chain_name)) m.push(v.chain_2.chain_name);
+      if (!m.includes(v.chain1.chainName)) m.push(v.chain1.chainName);
+      if (!m.includes(v.chain1.chainName)) m.push(v.chain1.chainName);
       return m;
     }, []);
 
     this._assetLists = this.fetcher.assetLists.filter((list) =>
-      supportedChains.includes(list.chain_name)
+      supportedChains.includes(list.chainName)
     );
   }
 
