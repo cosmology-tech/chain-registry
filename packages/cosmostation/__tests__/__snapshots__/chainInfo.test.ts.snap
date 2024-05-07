@@ -10,8 +10,8 @@ exports[`gravity 1`] = `
   "coinType": "118",
   "displayDenom": "GRAV",
   "gasRate": {
-    "average": "0.025",
-    "low": "0.01",
+    "average": "0",
+    "low": "0",
     "tiny": "0.00025",
   },
   "imageURL": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
@@ -29,11 +29,11 @@ exports[`kava 1`] = `
   "coinType": "459",
   "displayDenom": "KAVA",
   "gasRate": {
-    "average": "0.025",
-    "low": "0.01",
+    "average": "0.1",
+    "low": "0.05",
     "tiny": "0.00025",
   },
-  "imageURL": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png",
+  "imageURL": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg",
   "restURL": "https://api.data.kava.io/",
 }
 `;
@@ -49,11 +49,11 @@ exports[`osmosis 1`] = `
   "displayDenom": "OSMO",
   "gasRate": {
     "average": "0.025",
-    "low": "0",
+    "low": "0.0025",
     "tiny": "0.00025",
   },
   "imageURL": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg",
-  "restURL": "https://osmosis-lcd.quickapi.com:443",
+  "restURL": "https://lcd.osmosis.zone/",
 }
 `;
 
@@ -64,11 +64,11 @@ exports[`persistence 1`] = `
   "chainId": "core-1",
   "chainName": "Persistence",
   "coinGeckoId": "persistence",
-  "coinType": "750",
+  "coinType": "118",
   "displayDenom": "XPRT",
   "gasRate": {
     "average": "0.025",
-    "low": "0.01",
+    "low": "0",
     "tiny": "0.00025",
   },
   "imageURL": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg",

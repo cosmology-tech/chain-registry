@@ -11,11 +11,11 @@ exports[`getExplorer 1`] = `
   "displayDenom": "OSMO",
   "gasRate": {
     "average": "0.025",
-    "low": "0",
+    "low": "0.0025",
     "tiny": "0.00025",
   },
   "imageURL": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg",
-  "restURL": "https://lcd-osmosis.whispernode.com",
+  "restURL": "https://osmosis-lcd.quickapi.com:443",
 }
 `;
 
@@ -30,10 +30,10 @@ exports[`keplr 1`] = `
   "displayDenom": "OSMO",
   "gasRate": {
     "average": "0.025",
-    "low": "0",
+    "low": "0.0025",
     "tiny": "0.00025",
   },
   "imageURL": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg",
-  "restURL": "https://osmosis-lcd.quickapi.com:443",
+  "restURL": "https://lcd.osmosis.zone/",
 }
 `;

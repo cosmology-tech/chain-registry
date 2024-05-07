@@ -1,15 +1,15 @@
-import { Chain } from '@chain-registry/types';
-import { assets, chains } from '../test-utils';
+import { Chain } from '@chain-registry/v2-types';
+import { assetLists, chains } from '@chain-registry/v2'
 
 import { chainRegistryChainToCosmostation } from '../src/';
 
-const testChainData = async (chainName: string, chainId: string) => {
+const testChainData = async (_chainName: string, chainId: string) => {
   const chainRegChain: Chain = chains.find(
-    ({ chain_name }) => chain_name === chainName
+    ({ chainName }) => chainName === _chainName
   )!;
   const cosmostationData = chainRegistryChainToCosmostation(
     chainRegChain,
-    assets
+    assetLists
     // {
     //     getRestEndpoint: (chain) => preferredChainInfo[chain.chain_name].rest,
     // }
