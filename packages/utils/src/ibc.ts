@@ -483,11 +483,11 @@ export const getAssetLists = (
   chainName: string,
   ibc: IBCData[],
   assets: AssetList[]
-) => {
+): AssetList[] => {
   const ibcAssetLists = getIbcAssets(chainName, ibc, assets);
   const cw20Assets = getCw20Assets(chainName, ibc, assets);
 
-  return ibcAssetLists.reduce((m, v) => {
+  return ibcAssetLists.reduce((m:AssetList[], v:AssetList) => {
     const chain = v.chainName;
     const assets = [...v.assets];
     const cw20: AssetList = cw20Assets.find((a) => a.chainName === chain);
@@ -497,7 +497,7 @@ export const getAssetLists = (
     }
     return [
       {
-        chain_name: chain,
+        chainName: chain,
         assets
       },
       ...m
@@ -509,12 +509,12 @@ export const getNativeAssetLists = (
   chainName: string,
   ibc: IBCData[],
   _assets: AssetList[]
-) => {
+): AssetList[] => {
   const assets = getNativeAssets(_assets);
   const ibcAssetLists = getIbcAssets(chainName, ibc, assets);
   const cw20Assets = getCw20Assets(chainName, ibc, assets);
 
-  return ibcAssetLists.reduce((m, v) => {
+  return ibcAssetLists.reduce((m:AssetList[], v:AssetList) => {
     const chain = v.chainName;
     const assets = [...v.assets];
     const cw20: AssetList = cw20Assets.find((a) => a.chainName === chain);
@@ -524,10 +524,10 @@ export const getNativeAssetLists = (
     }
     return [
       {
-        chain_name: chain,
+        chainName: chain,
         assets
       },
       ...m
     ];
-  }, []);
+  }, [] as AssetList[]);
 };

@@ -58219,7 +58219,7 @@ We support innovation in the Cosmos Ecosystem by funding and supporting projects
         "typeAsset": "cw20",
       },
     ],
-    "chain_name": "osmosis",
+    "chainName": "osmosis",
   },
 ]
 `;

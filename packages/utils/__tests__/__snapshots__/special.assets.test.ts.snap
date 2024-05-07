@@ -49231,7 +49231,7 @@ The Swap Process: After the initial deposit period, $OSMO was converted into $LA
         "typeAsset": "snip25",
       },
     ],
-    "chain_name": "persistence",
+    "chainName": "persistence",
   },
 ]
 `;
