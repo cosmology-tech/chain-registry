@@ -76,6 +76,7 @@ export * as microtick from './microtick';
 export * as migaloo from './migaloo';
 export * as neutron from './neutron';
 export * as nibiru from './nibiru';
+export * as nim from './nim';
 export * as noble from './noble';
 export * as nois from './nois';
 export * as nolus from './nolus';

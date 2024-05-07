@@ -12,7 +12,7 @@ const info: AssetList = {
           denom: 'libra',
           exponent: 6
         }],
-      type_asset: 'evm-base',
+      type_asset: 'unknown',
       base: 'microlibra',
       name: 'Libra Coin',
       display: 'libra',

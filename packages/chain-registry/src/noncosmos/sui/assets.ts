@@ -12,7 +12,7 @@ const info: AssetList = {
           denom: 'SUI',
           exponent: 9
         }],
-      type_asset: 'evm-base',
+      type_asset: 'unknown',
       base: '0x2::sui::SUI',
       name: 'Sui',
       display: 'SUI',

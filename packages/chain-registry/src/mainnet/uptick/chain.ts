@@ -15,10 +15,10 @@ const info: Chain = {
   fees: {
     fee_tokens: [{
         denom: 'auptick',
-        fixed_min_gas_price: 10000000000,
-        low_gas_price: 10000000000,
-        average_gas_price: 25000000000,
-        high_gas_price: 40000000000
+        fixed_min_gas_price: 13000000000,
+        low_gas_price: 13000000000,
+        average_gas_price: 16000000000,
+        high_gas_price: 20000000000
       }]
   },
   staking: {
@@ -27,9 +27,9 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46',
-    cosmwasm_enabled: false,
-    cosmwasm_version: ''
+    cosmos_sdk_version: 'v0.47.5',
+    cosmwasm_enabled: true,
+    cosmwasm_version: 'v0.45.0'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.png',

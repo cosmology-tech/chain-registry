@@ -20,14 +20,14 @@ const info: AssetList = {
       traces: [{
           type: 'additional-mintage',
           counterparty: {
-            chain_name: 'composable',
+            chain_name: 'picasso',
             base_denom: 'ppica'
           },
           provider: 'Picasso'
         }],
       images: [{
           image_sync: {
-            chain_name: 'composable',
+            chain_name: 'picasso',
             base_denom: 'ppica'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/picasso/images/pica.svg'

@@ -143,8 +143,8 @@ const info: Chain = {
         provider: 'Daksha Validator'
       },
       {
-        address: 'http://omniflix.api.staking-explorer.com',
-        provider: 'Daily DROP'
+        address: 'https://omniflix.api.staking-explorer.com',
+        provider: 'Daily DROP | 1% Fee'
       },
       {
         address: 'https://api.omniflix.stakeup.tech',

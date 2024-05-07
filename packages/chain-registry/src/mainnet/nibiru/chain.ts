@@ -125,7 +125,7 @@ const info: Chain = {
       },
       {
         address: 'https://nibiru.api.staking-explorer.com',
-        provider: 'Daily DROP'
+        provider: 'Daily DROP | 2% Fee'
       },
       {
         address: 'https://nibiru-api.noders.services',

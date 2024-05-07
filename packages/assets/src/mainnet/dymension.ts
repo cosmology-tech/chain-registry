@@ -836,6 +836,43 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Nim Network.',
+      extended_description: 'Nim Network is a highly-adoptable AI Gaming chain that will provide the ultimate ecosystem for exploration and development of games at the intersection of Web3 and AI.',
+      denom_units: [{
+          denom: 'ibc/FB53D1684F155CBB86D9CE917807E42B59209EBE3AD3A92E15EF66586C073942',
+          exponent: 0,
+          aliases: ['anim']
+        }, {
+          denom: 'nim',
+          exponent: 18
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/FB53D1684F155CBB86D9CE917807E42B59209EBE3AD3A92E15EF66586C073942',
+      name: 'NIM Network',
+      display: 'nim',
+      symbol: 'NIM',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nim/images/nim.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nim/images/nim.svg'
+        }],
+      socials: {
+        website: 'https://ai.nim.network/',
+        twitter: 'https://twitter.com/nim_network'
+      },
+      keywords: ['gaming', 'AI'],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'anim',
+            chain_name: 'nim'
+          },
+          chain: {
+            channel_id: 'channel-49'
+          }
+        }]
+    },
+    {
       description: 'The permissioned staking asset for Noble Chain',
       denom_units: [{
           denom: 'ibc/B73E9196C59EB34F42BECE5EA20511B33A0B1286B23210FDEEAA1AE876C037C7',
@@ -1564,6 +1601,43 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-9'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Nim Network.',
+      extended_description: 'Nim Network is a highly-adoptable AI Gaming chain that will provide the ultimate ecosystem for exploration and development of games at the intersection of Web3 and AI.',
+      denom_units: [{
+          denom: 'ibc/FB53D1684F155CBB86D9CE917807E42B59209EBE3AD3A92E15EF66586C073942',
+          exponent: 0,
+          aliases: ['anim']
+        }, {
+          denom: 'nim',
+          exponent: 18
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/FB53D1684F155CBB86D9CE917807E42B59209EBE3AD3A92E15EF66586C073942',
+      name: 'NIM Network',
+      display: 'nim',
+      symbol: 'NIM',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nim/images/nim.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nim/images/nim.svg'
+        }],
+      socials: {
+        website: 'https://ai.nim.network/',
+        twitter: 'https://twitter.com/nim_network'
+      },
+      keywords: ['gaming', 'AI'],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'anim',
+            chain_name: 'nim'
+          },
+          chain: {
+            channel_id: 'channel-49'
           }
         }]
     },

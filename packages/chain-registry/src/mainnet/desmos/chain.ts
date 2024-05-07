@@ -27,7 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'desmos-labs/cosmos-sdk v0.47.9-desmos',
+    cosmos_sdk_version: 'desmos-labs/cosmos-sdk v0.47.10-desmos',
     cosmwasm_enabled: true,
     cosmwasm_version: 'v0.45.0'
   },
@@ -60,10 +60,6 @@ const info: Chain = {
       {
         address: 'https://rpc.desmos.bronbro.io:443',
         provider: 'Bro_n_Bro'
-      },
-      {
-        address: 'https://desmos-rpc.panthea.eu',
-        provider: 'Panthea EU'
       },
       {
         address: 'https://desmos.declab.pro:26613',
@@ -100,10 +96,6 @@ const info: Chain = {
         provider: 'Bro_n_Bro'
       },
       {
-        address: 'https://desmos-api.panthea.eu',
-        provider: 'Panthea EU'
-      },
-      {
         address: 'https://vidulum.declab.pro:443',
         provider: 'Decloud Nodes Lab'
       },
@@ -136,10 +128,6 @@ const info: Chain = {
       {
         address: 'https://grpc.desmos.bronbro.io:443',
         provider: 'Bro_n_Bro'
-      },
-      {
-        address: 'desmos-grpc.panthea.eu:16730',
-        provider: 'Panthea EU'
       },
       {
         address: 'https://vidulum.declab.pro:9009',

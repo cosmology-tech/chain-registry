@@ -263,10 +263,6 @@ const chain: Chain = {
         provider: 'Decloud Nodes Lab'
       },
       {
-        address: 'http://juno.api.staking-explorer.com',
-        provider: 'Daily DROP'
-      },
-      {
         address: 'https://juno.api.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       }

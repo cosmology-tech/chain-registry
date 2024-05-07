@@ -30,67 +30,28 @@ const testnet: Chain = {
     cosmwasm_version: '0.31'
   },
   apis: {
-    rpc: [
-      {
-        address: 'https://rpc.uni.junonetwork.io',
-        provider: 'Juno'
-      },
-      {
+    rpc: [{
         address: 'https://juno-testnet-rpc.polkachu.com',
         provider: 'Polkachu'
-      },
-      {
-        address: 'https://uni-rpc.reece.sh',
-        provider: 'Reecepbcups'
-      }
-    ],
-    rest: [
-      {
-        address: 'https://api.uni.junonetwork.io',
-        provider: 'Juno'
-      },
-      {
+      }],
+    rest: [{
         address: 'https://juno-testnet-api.polkachu.com',
         provider: 'Polkachu'
-      },
-      {
+      }, {
         address: 'https://juno.api.t.stavr.tech',
         provider: '🔥STAVR🔥'
-      },
-      {
-        address: 'https://uni-api.reece.sh',
-        provider: 'Reecepbcups'
-      }
-    ],
+      }],
     grpc: [{
         address: 'juno-testnet-grpc.polkachu.com:12690',
         provider: 'Polkachu'
       }]
   },
-  explorers: [
-    {
-      kind: 'ezstaking',
-      url: 'https://testnet.app.ezstaking.io/juno-testnet',
-      tx_page: 'https://testnet.app.ezstaking.io/juno-testnet/txs/${txHash}',
-      account_page: 'https://testnet.app.ezstaking.io/juno-testnet/account/${accountAddress}'
-    },
-    {
+  explorers: [{
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Juno-Testnet',
       tx_page: 'https://explorer.stavr.tech/Juno-Testnet/txs/${txHash}',
       account_page: 'https://explorer.stavr.tech/Juno-Testnet/account/${accountAddress}'
-    },
-    {
-      kind: 'Mintscan',
-      url: 'https://testnet.mintscan.io/juno-testnet',
-      tx_page: 'https://testnet.mintscan.io/juno-testnet/txs/${txHash}'
-    },
-    {
-      kind: 'NodesGuru',
-      url: 'https://testnet.juno.explorers.guru/',
-      tx_page: 'https://testnet.juno.explorers.guru/transaction/${txHash}'
-    }
-  ]
+    }]
 };
 export default testnet;
     

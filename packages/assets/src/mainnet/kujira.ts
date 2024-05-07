@@ -807,6 +807,7 @@ const assets: AssetList = {
           denom: 'dym',
           exponent: 18
         }],
+      type_asset: 'sdk.coin',
       base: 'ibc/9012F7E79EACC34CE81A4404ECBEED5A5DFFD61CCEE23F2B8600BAC948C483E6',
       name: 'Dymension',
       display: 'dym',
@@ -829,42 +830,6 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-10',
             base_denom: 'adym',
-            chain_name: 'dymension'
-          },
-          chain: {
-            channel_id: 'channel-160'
-          }
-        }]
-    },
-    {
-      description: 'The native token of Nim Network.',
-      extended_description: 'Nim Network is a highly-adoptable AI Gaming chain that will provide the ultimate ecosystem for exploration and development of games at the intersection of Web3 and AI.',
-      denom_units: [{
-          denom: 'ibc/4955E2AE23CE802C60879F5217BB3F2EFE44DC304F737C1549934ECBDB4E06B6',
-          exponent: 0,
-          aliases: ['anim']
-        }, {
-          denom: 'nim',
-          exponent: 18
-        }],
-      base: 'ibc/4955E2AE23CE802C60879F5217BB3F2EFE44DC304F737C1549934ECBDB4E06B6',
-      name: 'NIM Network',
-      display: 'nim',
-      symbol: 'NIM',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/nim.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/nim.svg'
-        }],
-      socials: {
-        website: 'https://nim.network/',
-        twitter: 'https://twitter.com/nim_network'
-      },
-      keywords: ['gaming', 'AI'],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-10',
-            base_denom: 'anim',
             chain_name: 'dymension'
           },
           chain: {
@@ -2322,6 +2287,7 @@ const assets: AssetList = {
           denom: 'dym',
           exponent: 18
         }],
+      type_asset: 'sdk.coin',
       base: 'ibc/9012F7E79EACC34CE81A4404ECBEED5A5DFFD61CCEE23F2B8600BAC948C483E6',
       name: 'Dymension',
       display: 'dym',
@@ -2344,42 +2310,6 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-10',
             base_denom: 'adym',
-            chain_name: 'dymension'
-          },
-          chain: {
-            channel_id: 'channel-160'
-          }
-        }]
-    },
-    {
-      description: 'The native token of Nim Network.',
-      extended_description: 'Nim Network is a highly-adoptable AI Gaming chain that will provide the ultimate ecosystem for exploration and development of games at the intersection of Web3 and AI.',
-      denom_units: [{
-          denom: 'ibc/4955E2AE23CE802C60879F5217BB3F2EFE44DC304F737C1549934ECBDB4E06B6',
-          exponent: 0,
-          aliases: ['anim']
-        }, {
-          denom: 'nim',
-          exponent: 18
-        }],
-      base: 'ibc/4955E2AE23CE802C60879F5217BB3F2EFE44DC304F737C1549934ECBDB4E06B6',
-      name: 'NIM Network',
-      display: 'nim',
-      symbol: 'NIM',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/nim.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/nim.svg'
-        }],
-      socials: {
-        website: 'https://nim.network/',
-        twitter: 'https://twitter.com/nim_network'
-      },
-      keywords: ['gaming', 'AI'],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-10',
-            base_denom: 'anim',
             chain_name: 'dymension'
           },
           chain: {

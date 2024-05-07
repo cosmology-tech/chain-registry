@@ -12,7 +12,7 @@ const info: AssetList = {
           denom: 'APT',
           exponent: 8
         }],
-      type_asset: 'evm-base',
+      type_asset: 'unknown',
       base: '0x1::aptos_coin::AptosCoin',
       name: 'Aptos Coin',
       display: 'APT',

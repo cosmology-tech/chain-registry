@@ -12,7 +12,7 @@ const info: AssetList = {
           denom: 'xrp',
           exponent: 6
         }],
-      type_asset: 'evm-base',
+      type_asset: 'unknown',
       base: 'drop',
       name: 'Ripple',
       display: 'xrp',

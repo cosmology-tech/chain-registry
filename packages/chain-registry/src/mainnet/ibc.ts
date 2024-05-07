@@ -78,6 +78,7 @@ import * as _microtick from './microtick';
 import * as _migaloo from './migaloo';
 import * as _neutron from './neutron';
 import * as _nibiru from './nibiru';
+import * as _nim from './nim';
 import * as _noble from './noble';
 import * as _nois from './nois';
 import * as _nolus from './nolus';
@@ -211,6 +212,7 @@ const ibc: IBCInfo[] = [
   ..._migaloo.ibc,
   ..._neutron.ibc,
   ..._nibiru.ibc,
+  ..._nim.ibc,
   ..._noble.ibc,
   ..._nois.ibc,
   ..._nolus.ibc,
