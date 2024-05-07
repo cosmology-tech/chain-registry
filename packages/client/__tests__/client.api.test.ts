@@ -1,4 +1,4 @@
-import { assets, chains } from '../test-utils';
+import { assetLists as _assetLists, chains } from '@chain-registry/v2'
 
 import {
   ChainRegistryChainUtil,
@@ -8,11 +8,11 @@ import {
 } from '../src';
 
 describe('tests for asset-list-util', () => {
-  const assetLists = assets.filter(
-    ({ chain_name }) => chain_name === 'osmosis'
+  const assetLists = _assetLists.filter(
+    ({ chainName }) => chainName === 'osmosis'
   );
   const chainInfos = chains.filter(
-    ({ chain_name }) => chain_name === 'osmosis'
+    ({ chainName }) => chainName === 'osmosis'
   );
 
   const regOptions: ChainRegistryClientOptions = {
@@ -84,7 +84,7 @@ describe('tests for asset-list-util', () => {
 
   it('getAssetNameByDenom', () => {
     const name = client.getAssetNameByDenom('uion');
-    expect(name).toEqual('Ion');
+    expect(name).toEqual('Ion DAO');
   });
 
   it('getChainNameByDenom', () => {

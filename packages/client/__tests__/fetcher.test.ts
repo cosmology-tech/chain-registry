@@ -3,11 +3,9 @@ import {
   ChainRegistryFetcherOptions
 } from '../src/fetcher';
 
-const timeout = 30000; // miliseconds
-
 describe('Test fetcher', () => {
   let fetcher: ChainRegistryFetcher;
-  beforeAll((done) => {
+  beforeAll(async () => {
     const options: ChainRegistryFetcherOptions = {
       urls: [
         'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/chain.json',
@@ -20,34 +18,23 @@ describe('Test fetcher', () => {
     };
 
     fetcher = new ChainRegistryFetcher(options);
-    fetcher.fetchUrls().then(() => done());
-  }, timeout);
+    await fetcher.fetchUrls()
+  });
 
-  it(
-    'Test chain registry',
-    (done) => {
-      expect(fetcher.chains.length).toBe(1);
-      expect(fetcher.assetLists.length).toBe(3);
-      done();
-    },
-    timeout
-  );
+  it('Test chain registry',() => {
+    expect(fetcher.chains.length).toBe(1);
+    expect(fetcher.assetLists.length).toBe(3);
+  });
 
-  it(
-    'Test chain info',
-    (done) => {
-      const chainInfo = fetcher.getChainInfo('osmosis');
-      const generated = fetcher.getGeneratedAssetLists('osmosis');
-      expect(chainInfo.assetLists).toEqual(generated);
+  it('Test chain info',() => {
+    const chainInfo = fetcher.getChainInfo('osmosis');
+    const generated = fetcher.getGeneratedAssetLists('osmosis');
+    expect(chainInfo.assetLists).toEqual(generated);
 
-      const osmosis = fetcher.getChain('osmosis');
-      expect(chainInfo.chain).toEqual(osmosis);
+    const osmosis = fetcher.getChain('osmosis');
+    expect(chainInfo.chain).toEqual(osmosis);
 
-      const osmosisAssets = fetcher.getChainAssetList('osmosis');
-      expect(chainInfo.nativeAssetList).toEqual(osmosisAssets);
-
-      done();
-    },
-    timeout
-  );
+    const osmosisAssets = fetcher.getChainAssetList('osmosis');
+    expect(chainInfo.nativeAssetList).toEqual(osmosisAssets);
+  });
 });
