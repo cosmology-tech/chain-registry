@@ -37,14 +37,23 @@ jobs:
       - name: Test @chain-registry/keplr 🔍
         run: cd packages/keplr && yarn test
       
-      - name: Test @chain-registry/cosmostation 🔍
-        run: cd packages/cosmostation && yarn test
+      - name: Legacy Test @chain-registry/cosmostation 🔍
+        run: cd legacy/cosmostation && yarn test
+      
+      - name: Test @chain-registry/v2-cosmostation 🔍
+        run: cd v2/cosmostation && yarn test
+      
+      - name: Legacy Test @chain-registry/utils 🔍
+        run: cd legacy/utils && yarn test
       
       - name: Test @chain-registry/utils 🔍
-        run: cd packages/utils && yarn test
+        run: cd v2/utils && yarn test
       
+      - name: Legacy Test @chain-registry/client 🔍
+        run: cd legacy/client && yarn test
+        
       - name: Test @chain-registry/client 🔍
-        run: cd packages/client && yarn test
+        run: cd v2/client && yarn test
         
       - name: Test @chain-registry/workflows 🔍
         run: cd workflows/workflows && yarn test
