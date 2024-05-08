@@ -22,7 +22,7 @@ jobs:
 
       - name: Update Git Submodules 🔄
         run: |
-          make use-fixtures
+          make update-fixtures
 
       - name: Install Dependencies 🧶
         run: |
