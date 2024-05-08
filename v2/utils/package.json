@@ -1,0 +1,45 @@
+{
+  "name": "@chain-registry/v2-utils",
+  "version": "1.29.13",
+  "description": "Chain Registry Utils",
+  "author": "Dan Lynch <pyramation@gmail.com>",
+  "homepage": "https://github.com/cosmology-tech/chain-registry",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "index.js",
+  "module": "esm/index.js",
+  "types": "index.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cosmology-tech/chain-registry"
+  },
+  "bugs": {
+    "url": "https://github.com/cosmology-tech/chain-registry/issues"
+  },
+  "scripts": {
+    "copy": "copyfiles -f LICENSE README.md package.json dist",
+    "clean": "del dist/**",
+    "prepare": "npm run build",
+    "build": "npm run clean; tsc; tsc -p tsconfig.esm.json; npm run copy",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@types/sha.js": "^2.4.0"
+  },
+  "dependencies": {
+    "@chain-registry/v2": "^1.48.6",
+    "@chain-registry/v2-types": "^0.32.8",
+    "bignumber.js": "9.1.1",
+    "sha.js": "^2.4.11"
+  },
+  "keywords": [
+    "chain-registry",
+    "web3",
+    "cosmos",
+    "interchain"
+  ]
+}

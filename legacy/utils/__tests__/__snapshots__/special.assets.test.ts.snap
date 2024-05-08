@@ -1,0 +1,910 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getAssetLists 1`] = `
+[
+  {
+    "assets": [
+      {
+        "base": "ibc/799FDD409719A1122586A629AE8FCA17380351A51C1F47A80A1B8E7F2A491098",
+        "coingecko_id": "akash-network",
+        "denom_units": [
+          {
+            "aliases": [
+              "uakt",
+            ],
+            "denom": "ibc/799FDD409719A1122586A629AE8FCA17380351A51C1F47A80A1B8E7F2A491098",
+            "exponent": 0,
+          },
+          {
+            "denom": "akt",
+            "exponent": 6,
+          },
+        ],
+        "description": "Akash Token (AKT) is the Akash Network's native utility token, used as the primary means to govern, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
+        "display": "akt",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg",
+        },
+        "name": "Akash Network",
+        "symbol": "AKT",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-5",
+            },
+            "counterparty": {
+              "base_denom": "uakt",
+              "chain_name": "akash",
+              "channel_id": "channel-6",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/C8A74ABBE2AF892E15680D916A7C22130585CE5704F9B17A10F184A90D53BECA",
+        "coingecko_id": "cosmos",
+        "denom_units": [
+          {
+            "aliases": [
+              "uatom",
+            ],
+            "denom": "ibc/C8A74ABBE2AF892E15680D916A7C22130585CE5704F9B17A10F184A90D53BECA",
+            "exponent": 0,
+          },
+          {
+            "denom": "atom",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native staking and governance token of the Cosmos Hub.",
+        "display": "atom",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg",
+        },
+        "name": "Cosmos",
+        "symbol": "ATOM",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-24",
+            },
+            "counterparty": {
+              "base_denom": "uatom",
+              "chain_name": "cosmoshub",
+              "channel_id": "channel-190",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/F53B622B0117ECCD0908C1F33ED71B846D9B0C888BE8A16C58098C0AB9497B0A",
+        "coingecko_id": "crypto-com-chain",
+        "denom_units": [
+          {
+            "aliases": [
+              "basecro",
+            ],
+            "denom": "ibc/F53B622B0117ECCD0908C1F33ED71B846D9B0C888BE8A16C58098C0AB9497B0A",
+            "exponent": 0,
+          },
+          {
+            "denom": "cro",
+            "exponent": 8,
+          },
+        ],
+        "description": "CRO coin is the token for the Crypto.com platform.",
+        "display": "cro",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png",
+        },
+        "name": "Cronos",
+        "symbol": "CRO",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-11",
+            },
+            "counterparty": {
+              "base_denom": "basecro",
+              "chain_name": "cryptoorgchain",
+              "channel_id": "channel-17",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/5709B8339F05C7E37D27FCFEC18CEDBB0747309144C8B3C4A49C122F0F30B96B",
+        "coingecko_id": "iris-network",
+        "denom_units": [
+          {
+            "aliases": [
+              "uiris",
+            ],
+            "denom": "ibc/5709B8339F05C7E37D27FCFEC18CEDBB0747309144C8B3C4A49C122F0F30B96B",
+            "exponent": 0,
+          },
+          {
+            "denom": "iris",
+            "exponent": 6,
+          },
+        ],
+        "description": "The IRIS token is the native governance token for the IrisNet chain.",
+        "display": "iris",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg",
+        },
+        "name": "IRISnet",
+        "symbol": "IRIS",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-19",
+            },
+            "counterparty": {
+              "base_denom": "uiris",
+              "chain_name": "irisnet",
+              "channel_id": "channel-15",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/CA687302422C075B26948BEC7143F6D47BACAB53421D57DF30741F91D4DFCA1F",
+        "coingecko_id": "juno-network",
+        "denom_units": [
+          {
+            "aliases": [
+              "ujuno",
+            ],
+            "denom": "ibc/CA687302422C075B26948BEC7143F6D47BACAB53421D57DF30741F91D4DFCA1F",
+            "exponent": 0,
+          },
+          {
+            "denom": "juno",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of JUNO Chain",
+        "display": "juno",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg",
+        },
+        "name": "Juno",
+        "symbol": "JUNO",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-37",
+            },
+            "counterparty": {
+              "base_denom": "ujuno",
+              "chain_name": "juno",
+              "channel_id": "channel-33",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85",
+        "coingecko_id": "osmosis",
+        "denom_units": [
+          {
+            "aliases": [
+              "uosmo",
+            ],
+            "denom": "ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85",
+            "exponent": 0,
+          },
+          {
+            "aliases": [],
+            "denom": "osmo",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Osmosis",
+        "display": "osmo",
+        "keywords": [
+          "dex",
+          "staking",
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg",
+        },
+        "name": "Osmosis",
+        "symbol": "OSMO",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "uosmo",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/69B4810E989B56FC6CA41F395228236FA7E7F59B9A3B7AF3FB0A344361C38389",
+        "coingecko_id": "ion",
+        "denom_units": [
+          {
+            "aliases": [
+              "uion",
+            ],
+            "denom": "ibc/69B4810E989B56FC6CA41F395228236FA7E7F59B9A3B7AF3FB0A344361C38389",
+            "exponent": 0,
+          },
+          {
+            "denom": "ion",
+            "exponent": 6,
+          },
+        ],
+        "display": "ion",
+        "keywords": [
+          "memecoin",
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg",
+        },
+        "name": "Ion",
+        "symbol": "ION",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "uion",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/78EFDD10E0EEFA96FF7C9A57EA6496C7C13620A4B66E04667480428B948ECC6A",
+        "coingecko_id": "jackal-protocol",
+        "denom_units": [
+          {
+            "aliases": [
+              "ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA",
+            ],
+            "denom": "ibc/78EFDD10E0EEFA96FF7C9A57EA6496C7C13620A4B66E04667480428B948ECC6A",
+            "exponent": 0,
+          },
+          {
+            "denom": "jkl",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native staking and governance token of Jackal.",
+        "display": "jkl",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg",
+        },
+        "name": "Jackal",
+        "symbol": "JKL",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-6",
+            },
+            "counterparty": {
+              "base_denom": "ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA",
+              "chain_name": "osmosis",
+              "channel_id": "channel-4",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/7D053E5CF515235C2C8A923840D6D5352F19B08722B774355AC97C596C729D5C",
+        "coingecko_id": "regen",
+        "denom_units": [
+          {
+            "aliases": [
+              "uregen",
+            ],
+            "denom": "ibc/7D053E5CF515235C2C8A923840D6D5352F19B08722B774355AC97C596C729D5C",
+            "exponent": 0,
+          },
+          {
+            "denom": "regen",
+            "exponent": 6,
+          },
+        ],
+        "description": "REGEN coin is the token for the Regen Network Platform",
+        "display": "regen",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png",
+        },
+        "name": "Regen Network",
+        "symbol": "REGEN",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-21",
+            },
+            "counterparty": {
+              "base_denom": "uregen",
+              "chain_name": "regen",
+              "channel_id": "channel-14",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/4F03563F9E504B0C147FD395DBCF0A41A45E9A1134DFEC83A94B5E11D43EAA04",
+        "coingecko_id": "sentinel",
+        "denom_units": [
+          {
+            "aliases": [
+              "udvpn",
+            ],
+            "denom": "ibc/4F03563F9E504B0C147FD395DBCF0A41A45E9A1134DFEC83A94B5E11D43EAA04",
+            "exponent": 0,
+          },
+          {
+            "denom": "dvpn",
+            "exponent": 6,
+          },
+        ],
+        "description": "DVPN is the native token of the Sentinel Hub.",
+        "display": "dvpn",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png",
+        },
+        "name": "Sentinel",
+        "symbol": "DVPN",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-22",
+            },
+            "counterparty": {
+              "base_denom": "udvpn",
+              "chain_name": "sentinel",
+              "channel_id": "channel-15",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/BA51309DEEE69EF9159FADDCD9F566C372157A1F4E559076D201B255C27F484A",
+        "coingecko_id": "sifchain",
+        "denom_units": [
+          {
+            "aliases": [
+              "rowan",
+            ],
+            "denom": "ibc/BA51309DEEE69EF9159FADDCD9F566C372157A1F4E559076D201B255C27F484A",
+            "exponent": 18,
+          },
+        ],
+        "description": "Rowan Token (ROWAN) is the Sifchain Network's native utility token, used as the primary means to govern, provide liquidity, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
+        "display": "rowan",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg",
+        },
+        "name": "Sifchain Rowan",
+        "symbol": "ROWAN",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-26",
+            },
+            "counterparty": {
+              "base_denom": "rowan",
+              "chain_name": "sifchain",
+              "channel_id": "channel-7",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/43F1FDAC4E552DD8194B3FFD35EE16957BC39AFF5CA57545DB71161FA66E7DC0",
+        "coingecko_id": "starname",
+        "denom_units": [
+          {
+            "aliases": [
+              "uiov",
+            ],
+            "denom": "ibc/43F1FDAC4E552DD8194B3FFD35EE16957BC39AFF5CA57545DB71161FA66E7DC0",
+            "exponent": 0,
+          },
+          {
+            "denom": "iov",
+            "exponent": 6,
+          },
+        ],
+        "description": "IOV coin is the token for the Starname (IOV) Asset Name Service",
+        "display": "iov",
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.svg",
+        },
+        "name": "Starname",
+        "symbol": "IOV",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-27",
+            },
+            "counterparty": {
+              "base_denom": "uiov",
+              "chain_name": "starname",
+              "channel_id": "channel-13",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/31D711D31CD5D83D98E76B1486EEDA1A38CD1F7D6FCBD03521FE51323115AECA",
+        "coingecko_id": "graviton",
+        "denom_units": [
+          {
+            "aliases": [
+              "ugraviton",
+            ],
+            "denom": "ibc/31D711D31CD5D83D98E76B1486EEDA1A38CD1F7D6FCBD03521FE51323115AECA",
+            "exponent": 0,
+          },
+          {
+            "denom": "graviton",
+            "exponent": 6,
+          },
+        ],
+        "description": "The native token of Gravity Bridge",
+        "display": "graviton",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
+        },
+        "name": "Graviton",
+        "symbol": "GRAV",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "ugraviton",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+        "denom_units": [
+          {
+            "aliases": [
+              "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+            ],
+            "denom": "ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444",
+            "exponent": 0,
+          },
+          {
+            "denom": "pstake",
+            "exponent": 18,
+          },
+        ],
+        "description": "pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
+        "display": "pstake",
+        "images": [
+          {
+            "image_sync": {
+              "base_denom": "0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+              "chain_name": "ethereum",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg",
+        },
+        "name": "pSTAKE Finance",
+        "symbol": "PSTAKE",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/ACFDD4DA449EF4925B5D90F19198E96966B6D425D550D7B5676164F303C5BDA7",
+        "denom_units": [
+          {
+            "aliases": [
+              "gravity0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+            ],
+            "denom": "ibc/ACFDD4DA449EF4925B5D90F19198E96966B6D425D550D7B5676164F303C5BDA7",
+            "exponent": 0,
+          },
+          {
+            "denom": "gweth",
+            "exponent": 18,
+          },
+        ],
+        "description": "Gravity Bridge WETH",
+        "display": "gweth",
+        "images": [
+          {
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg",
+          },
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg",
+        },
+        "name": "Wrapped Ethereum",
+        "symbol": "WETH",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "gravity0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/6F681B32B47E765AE278844A8A97C8B7AD5A3FB591E37CFDFA0E208EFEBEF97D",
+        "denom_units": [
+          {
+            "aliases": [
+              "gravity0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+            ],
+            "denom": "ibc/6F681B32B47E765AE278844A8A97C8B7AD5A3FB591E37CFDFA0E208EFEBEF97D",
+            "exponent": 0,
+          },
+          {
+            "denom": "gusdc",
+            "exponent": 6,
+          },
+        ],
+        "description": "Gravity Bridge USDC",
+        "display": "gusdc",
+        "images": [
+          {
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg",
+          },
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg",
+        },
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "gravity0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/7F6928F9DB35D5A420330B9470EA4419B5F305EEB668D3274FC1ACDAC325ED17",
+        "denom_units": [
+          {
+            "aliases": [
+              "gravity0xdAC17F958D2ee523a2206206994597C13D831ec7",
+            ],
+            "denom": "ibc/7F6928F9DB35D5A420330B9470EA4419B5F305EEB668D3274FC1ACDAC325ED17",
+            "exponent": 0,
+          },
+          {
+            "denom": "gusdt",
+            "exponent": 6,
+          },
+        ],
+        "description": "Gravity Bridge USDT",
+        "display": "gusdt",
+        "images": [
+          {
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg",
+          },
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg",
+        },
+        "name": "Tether USD",
+        "symbol": "USDT",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "gravity0xdAC17F958D2ee523a2206206994597C13D831ec7",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/16254B8D442184E723683C38F09E7945AF5849E0F5FB9C1890494EF2AC65532A",
+        "denom_units": [
+          {
+            "aliases": [
+              "gravity0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+            ],
+            "denom": "ibc/16254B8D442184E723683C38F09E7945AF5849E0F5FB9C1890494EF2AC65532A",
+            "exponent": 0,
+          },
+          {
+            "denom": "gwbtc",
+            "exponent": 8,
+          },
+        ],
+        "description": "Gravity Bridge WBTC",
+        "display": "gwbtc",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg",
+        },
+        "name": "Wrapped Bitcoin",
+        "symbol": "WBTC",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "gravity0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/40E10C9B078055FFC5D25166268107A81BBCAE78C62F17A07969F05B7E31F55C",
+        "denom_units": [
+          {
+            "aliases": [
+              "gravity0x6B175474E89094C44Da98b954EedeAC495271d0F",
+            ],
+            "denom": "ibc/40E10C9B078055FFC5D25166268107A81BBCAE78C62F17A07969F05B7E31F55C",
+            "exponent": 0,
+          },
+          {
+            "denom": "gdai",
+            "exponent": 18,
+          },
+        ],
+        "description": "Gravity Bridge DAI",
+        "display": "gdai",
+        "images": [
+          {
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg",
+          },
+        ],
+        "logo_URIs": {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg",
+        },
+        "name": "Dai Stablecoin",
+        "symbol": "DAI",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "gravity0x6B175474E89094C44Da98b954EedeAC495271d0F",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/76464BD93F13DED4381980282741D7A1C14DC9ECD3F13778FEF474423DD2D544",
+        "denom_units": [
+          {
+            "aliases": [
+              "gravity0x83F20F44975D03b1b09e64809B757c47f942BEeA",
+            ],
+            "denom": "ibc/76464BD93F13DED4381980282741D7A1C14DC9ECD3F13778FEF474423DD2D544",
+            "exponent": 0,
+          },
+          {
+            "denom": "gsdai",
+            "exponent": 18,
+          },
+        ],
+        "description": "Gravity Bridge sDAI",
+        "display": "gsdai",
+        "images": [
+          {
+            "image_sync": {
+              "base_denom": "ethereum",
+              "chain_name": "0x83F20F44975D03b1b09e64809B757c47f942BEeA",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.svg",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.svg",
+        },
+        "name": "Savings Dai",
+        "symbol": "sDAI",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "gravity0x83F20F44975D03b1b09e64809B757c47f942BEeA",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/14EA52FE50F7B63F377798E22751D1773B3016B07884904C0430818C48F54823",
+        "denom_units": [
+          {
+            "aliases": [
+              "gravity0x2F109021aFe75B949429fe30523Ee7C0D5B27207",
+            ],
+            "denom": "ibc/14EA52FE50F7B63F377798E22751D1773B3016B07884904C0430818C48F54823",
+            "exponent": 0,
+          },
+          {
+            "denom": "gocc",
+            "exponent": 18,
+          },
+        ],
+        "description": "Gravity Bridge OCC",
+        "display": "gocc",
+        "images": [
+          {
+            "image_sync": {
+              "base_denom": "0x2F109021aFe75B949429fe30523Ee7C0D5B27207",
+              "chain_name": "ethereum",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/occamfi.png",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/occamfi.png",
+        },
+        "name": "OccamFi",
+        "symbol": "OCC",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "gravity0x2F109021aFe75B949429fe30523Ee7C0D5B27207",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+      {
+        "base": "ibc/E4E6AD88A4C3754ADABE5CEFCD92C00EF7C1CA9A760BAA654D0A923D7B0347D3",
+        "denom_units": [
+          {
+            "aliases": [
+              "gravity0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e",
+            ],
+            "denom": "ibc/E4E6AD88A4C3754ADABE5CEFCD92C00EF7C1CA9A760BAA654D0A923D7B0347D3",
+            "exponent": 0,
+          },
+          {
+            "denom": "page",
+            "exponent": 8,
+          },
+        ],
+        "description": "The PAGE token is used for actions in the PageDAO NFT literary ecosystem and for DAO governance.",
+        "display": "page",
+        "images": [
+          {
+            "image_sync": {
+              "base_denom": "0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e",
+              "chain_name": "ethereum",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg",
+          },
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg",
+        },
+        "name": "Page",
+        "symbol": "PAGE",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-38",
+            },
+            "counterparty": {
+              "base_denom": "gravity0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e",
+              "chain_name": "gravitybridge",
+              "channel_id": "channel-24",
+            },
+            "type": "ibc",
+          },
+        ],
+      },
+    ],
+    "chain_name": "persistence",
+  },
+]
+`;
