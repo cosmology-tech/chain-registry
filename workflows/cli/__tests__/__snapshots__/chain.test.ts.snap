@@ -82,10 +82,6 @@ exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
           "provider": "Osmosis Foundation",
         },
         {
-          "address": "https://rest.osmosis.goldenratiostaking.net",
-          "provider": "Golden Ratio Staking",
-        },
-        {
           "address": "https://osmosis-lcd.quickapi.com:443",
           "provider": "Chainlayer",
         },
@@ -286,10 +282,6 @@ exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
         {
           "address": "https://rpc-osmo.kewrnode.com",
           "provider": "Kewr Node",
-        },
-        {
-          "address": "https://rpc.osmosis.goldenratiostaking.net",
-          "provider": "Golden Ratio Staking",
         },
         {
           "address": "https://osmosis-rpc.noders.services",
@@ -550,7 +542,7 @@ Osmosis is bringing the full centralized exchange experience to the decentralize
     "website": "https://osmosis.zone/",
   },
   "command": "chain",
-  "registryDir": "../../packages/chain-registry/chain-registry",
+  "registryDir": "../../packages/chain-registry/chain-registry-fixtures",
   "tty": true,
 }
 `;
