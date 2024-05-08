@@ -1,5 +1,5 @@
 import { Asset, AssetList, Chain } from '@chain-registry/v2-types';
-import { getGasPriceRangesFromChain } from '@chain-registry/utils';
+import { getGasPriceRangesFromChain } from '@chain-registry/v2-utils';
 import { AddChainParams } from '@cosmostation/extension-client/types/message';
 
 const getRest = (chain: Chain): string => chain.apis?.rest[0]?.address;
