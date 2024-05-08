@@ -1,3 +1,6 @@
 [submodule "packages/chain-registry/chain-registry"]
 	path = packages/chain-registry/chain-registry
-	url = git@github.com:cosmos/chain-registry.git
+	url = https://github.com/cosmos/chain-registry.git
+[submodule "packages/chain-registry/chain-registry-fixtures"]
+	path = packages/chain-registry/chain-registry-fixtures
+	url = https://github.com/cosmology-tech/chain-registry-fixtures
