@@ -24,7 +24,7 @@ jobs:
 
       - name: Update Git Submodules 🔄
         run: |
-          make use-cosmos
+          make update-cosmos
 
       - name: Install Dependencies 🧶
         run: |

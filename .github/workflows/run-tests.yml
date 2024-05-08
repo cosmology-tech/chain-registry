@@ -2,7 +2,7 @@ name: Run Registry Tests 🧪
 
 on:
   pull_request:
-    types: [opened, push, reopened]
+    types: [opened, synchronize, reopened]
   workflow_dispatch:
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
 
       - name: Update Git Submodules 🔄
         run: |
-          make use-fixtures
+          make update-fixtures
 
       - name: Install Dependencies 🧶
         run: |

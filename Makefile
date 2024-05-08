@@ -1,17 +1,17 @@
-.PHONY: def use-cosmos use-fixtures
+.PHONY: def update-cosmos update-fixtures
 
-def: use-cosmos
+def: update-cosmos update-fixtures
 
-use-cosmos:
-	@echo "Switching submodule to use cosmos/chain-registry"
+update-cosmos:
+	@echo "Updating cosmos/chain-registry submodule"
 	git config submodule.packages/chain-registry/chain-registry.url https://github.com/cosmos/chain-registry
 	git submodule sync packages/chain-registry/chain-registry
 	git submodule update --init --remote packages/chain-registry/chain-registry
-	@echo "Submodule is now using cosmos/chain-registry"
+	@echo "cosmos/chain-registry submodule is updated"
 
-use-fixtures:
-	@echo "Switching submodule to use cosmology-tech/chain-registry-fixtures"
-	git config submodule.packages/chain-registry/chain-registry.url https://github.com/cosmology-tech/chain-registry-fixtures
-	git submodule sync packages/chain-registry/chain-registry
-	git submodule update --init --remote packages/chain-registry/chain-registry
-	@echo "Submodule is now using cosmology-tech/chain-registry-fixtures"
+update-fixtures:
+	@echo "Updating cosmology-tech/chain-registry-fixtures submodule"
+	git config submodule.packages/chain-registry/chain-registry-fixtures.url https://github.com/cosmology-tech/chain-registry-fixtures
+	git submodule sync packages/chain-registry/chain-registry-fixtures
+	git submodule update --init --remote packages/chain-registry/chain-registry-fixtures
+	@echo "cosmology-tech/chain-registry-fixtures submodule is updated"

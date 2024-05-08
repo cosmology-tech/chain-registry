@@ -4,7 +4,7 @@ import { Registry } from "../src/registry";
 
 export const getRegistry = () => {
   const registry = new Registry(
-    join(__dirname, '/../../../packages/chain-registry/chain-registry')
+    join(__dirname, '/../../../packages/chain-registry/chain-registry-fixtures')
   );
   return registry;
 }

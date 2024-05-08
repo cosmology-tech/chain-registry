@@ -231,28 +231,21 @@ git commit -am "new registry updates"
 lerna publish
 ```
 
+### Updating Submodule Data
 
-### Switching Submodule Sources
+Use the following Makefile commands to update the data in the submodules. These commands will ensure that your submodules are synchronized with their respective remote repositories.
 
-Use the following Makefile commands to switch the submodule between the official repository and a testing fixtures repository:
-
-- **use-cosmos**: Switches the submodule to use the official `cosmos/chain-registry` repository. Use this for standard development and production updates.
-
-```
-make use-cosmos
-```
-
-- **use-fixtures**: Switches the submodule to use the `cosmology-tech/chain-registry-fixtures` repository. This is useful for testing, allowing developers to work with stable test data, without syncing to random production data changes.
+- **update-cosmos**: Updates the submodule to the latest commits of the `cosmos/chain-registry` repository. This should be used to pull the most current production data into your local environment.
 
 ```
-make use-fixtures
+make update-cosmos
 ```
 
-### When to Use Fixtures
+- **update-fixtures**: Updates the submodule to the latest commits of the `cosmology-tech/chain-registry-fixtures` repository. Use this for testing purposes to ensure that your tests are running against stable, controlled data sets.
 
-Use the `use-fixtures` command when you need to test the system with controlled data.
-
-⚠️ DO NOT COMMIT code that is using `use-fixtures`! 
+```
+make update-fixtures
+```
 
 ## Related
 
