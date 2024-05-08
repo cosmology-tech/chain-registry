@@ -2,7 +2,7 @@ name: Run Registry Tests 🧪
 
 on:
   pull_request:
-    types: [opened, push, reopened]
+    types: [opened, synchronize, reopened]
   workflow_dispatch:
 
 jobs:

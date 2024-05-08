@@ -4,7 +4,7 @@ import { Registry } from "../src/registry";
 import { SchemaValidator } from "../src/validator";
 
 const registry = new Registry(
-  join(__dirname, '/../../../packages/chain-registry/chain-registry')
+  join(__dirname, '/../../../packages/chain-registry/chain-registry-fixtures')
 );
 
 it('registry', () => {
