@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`gravity 1`] = `
+{
+  "addressPrefix": "gravity",
+  "baseDenom": "ugraviton",
+  "chainId": "gravity-bridge-3",
+  "chainName": "Gravity Bridge",
+  "coinGeckoId": "graviton",
+  "coinType": "118",
+  "displayDenom": "GRAV",
+  "gasRate": {
+    "average": "0",
+    "low": "0",
+    "tiny": "0.00025",
+  },
+  "imageURL": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
+  "restURL": "https://gravitychain.io:1317",
+}
+`;
+
+exports[`kava 1`] = `
+{
+  "addressPrefix": "kava",
+  "baseDenom": "ukava",
+  "chainId": "kava_2222-10",
+  "chainName": "Kava",
+  "coinGeckoId": "kava",
+  "coinType": "459",
+  "displayDenom": "KAVA",
+  "gasRate": {
+    "average": "0.1",
+    "low": "0.05",
+    "tiny": "0.00025",
+  },
+  "imageURL": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg",
+  "restURL": "https://api.data.kava.io/",
+}
+`;
+
+exports[`osmosis 1`] = `
+{
+  "addressPrefix": "osmo",
+  "baseDenom": "uosmo",
+  "chainId": "osmosis-1",
+  "chainName": "Osmosis",
+  "coinGeckoId": "osmosis",
+  "coinType": "118",
+  "displayDenom": "OSMO",
+  "gasRate": {
+    "average": "0.025",
+    "low": "0.0025",
+    "tiny": "0.00025",
+  },
+  "imageURL": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg",
+  "restURL": "https://lcd.osmosis.zone/",
+}
+`;
+
+exports[`persistence 1`] = `
+{
+  "addressPrefix": "persistence",
+  "baseDenom": "uxprt",
+  "chainId": "core-1",
+  "chainName": "Persistence",
+  "coinGeckoId": "persistence",
+  "coinType": "118",
+  "displayDenom": "XPRT",
+  "gasRate": {
+    "average": "0.025",
+    "low": "0",
+    "tiny": "0.00025",
+  },
+  "imageURL": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg",
+  "restURL": "https://rest.core.persistence.one",
+}
+`;

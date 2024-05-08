@@ -298,6 +298,20 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@chain-registry/types@^0.28.13":
+  version "0.28.13"
+  resolved "https://registry.yarnpkg.com/@chain-registry/types/-/types-0.28.13.tgz#cf656483ea5e71f9d950a22c549be93a2342540e"
+  integrity sha512-mgv3reASu/AFMkrRmNaXQZ0RxHIegmq02joZ2HzysoSOUgB1cmLsBwTWoUuPz4z9V3WSGfyw2san9WhrKqPggQ==
+
+"@chain-registry/utils@^1.29.13":
+  version "1.29.13"
+  resolved "https://registry.yarnpkg.com/@chain-registry/utils/-/utils-1.29.13.tgz#2e7dd27ac6318d1519927c77dc6550ba1b888f76"
+  integrity sha512-NiF3DzOh/LqXdUPU6P+PnCEs5so80vP3mGk3cWvPNLkp58p6nFigV5kNTGFac7rTFUj0nIowMCKWPIkWndIaow==
+  dependencies:
+    "@chain-registry/types" "^0.28.13"
+    bignumber.js "9.1.1"
+    sha.js "^2.4.11"
+
 "@cosmostation/extension-client@0.1.15":
   version "0.1.15"
   resolved "https://registry.yarnpkg.com/@cosmostation/extension-client/-/extension-client-0.1.15.tgz#cdc6d8fce42217704c1c0d5814f0ee7ce27e8dab"

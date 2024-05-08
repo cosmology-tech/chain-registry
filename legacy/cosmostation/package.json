@@ -1,0 +1,45 @@
+{
+  "name": "@chain-registry/cosmostation",
+  "version": "1.49.8",
+  "description": "Chain Registry to Cosmostation",
+  "author": "Dan Lynch <pyramation@gmail.com>",
+  "homepage": "https://github.com/cosmology-tech/chain-registry",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "index.js",
+  "module": "esm/index.js",
+  "types": "index.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cosmology-tech/chain-registry"
+  },
+  "bugs": {
+    "url": "https://github.com/cosmology-tech/chain-registry/issues"
+  },
+  "scripts": {
+    "copy": "copyfiles -f LICENSE README.md package.json dist",
+    "clean": "del dist/**",
+    "prepare": "npm run build",
+    "build": "npm run clean; tsc; tsc -p tsconfig.esm.json; npm run copy",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "chain-registry": "^1.46.8"
+  },
+  "dependencies": {
+    "@chain-registry/types": "^0.28.12",
+    "@chain-registry/utils": "^1.29.12",
+    "@cosmostation/extension-client": "0.1.15"
+  },
+  "keywords": [
+    "chain-registry",
+    "web3",
+    "cosmos",
+    "interchain",
+    "cosmostation"
+  ]
+}

@@ -6,6 +6,7 @@
     "--no-lockfile"
   ],
   "packages": [
+    "legacy/*",
     "packages/*",
     "workflows/*",
     "v2/*"
