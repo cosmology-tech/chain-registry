@@ -4,8 +4,8 @@ const info: Chain = {
   chain_name: 'uniontestnet',
   status: 'live',
   network_type: 'testnet',
-  pretty_name: 'Union',
-  chain_id: 'union-testnet-6',
+  pretty_name: 'Union Testnet',
+  chain_id: 'union-testnet-8',
   bech32_prefix: 'union',
   daemon_name: 'uniond',
   node_home: '$HOME/.uniond',
@@ -28,6 +28,10 @@ const info: Chain = {
   apis: {
     rpc: [
       {
+        address: 'https://rpc.testnet.bonlulu.uno',
+        provider: 'bonlulu'
+      },
+      {
         address: 'https://union-testnet-rpc.polkachu.com',
         provider: 'Polkachu'
       },
@@ -36,15 +40,15 @@ const info: Chain = {
         provider: 'Nodeist'
       },
       {
-        address: 'https://rpc.testnet.bonlulu.uno',
-        provider: 'bonlulu'
-      },
-      {
         address: 'https://union-testnet-rpc.itrocket.net',
         provider: 'ITRocket'
       }
     ],
     rest: [
+      {
+        address: 'https://api.testnet.bonlulu.uno',
+        provider: 'bonlulu'
+      },
       {
         address: 'https://union-testnet-api.polkachu.com',
         provider: 'Polkachu'
@@ -54,15 +58,15 @@ const info: Chain = {
         provider: 'Nodeist'
       },
       {
-        address: 'https://api.testnet.bonlulu.uno',
-        provider: 'bonlulu'
-      },
-      {
         address: 'https://union-testnet-api.itrocket.net',
         provider: 'ITRocket'
       }
     ],
     grpc: [
+      {
+        address: 'https://grpc.testnet.bonlulu.uno',
+        provider: 'bonlulu'
+      },
       {
         address: 'http://union-testnet-grpc.polkachu.com:24690',
         provider: 'Polkachu'
@@ -70,10 +74,6 @@ const info: Chain = {
       {
         address: 'https://grpc-testnet-union.nodeist.net',
         provider: 'Nodeist'
-      },
-      {
-        address: 'https://grpc.testnet.bonlulu.uno',
-        provider: 'bonlulu'
       },
       {
         address: 'http://union-testnet-grpc.itrocket.net:23090',

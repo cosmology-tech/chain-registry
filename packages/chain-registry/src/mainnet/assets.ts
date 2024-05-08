@@ -148,6 +148,7 @@ import * as _stargaze from './stargaze';
 import * as _starname from './starname';
 import * as _stratos from './stratos';
 import * as _stride from './stride';
+import * as _sunrise from './sunrise';
 import * as _tenet from './tenet';
 import * as _teritori from './teritori';
 import * as _terpnetwork from './terpnetwork';
@@ -312,6 +313,7 @@ const assets: AssetList[] = [
   _starname.assets,
   _stratos.assets,
   _stride.assets,
+  _sunrise.assets,
   _tenet.assets,
   _teritori.assets,
   _terpnetwork.assets,

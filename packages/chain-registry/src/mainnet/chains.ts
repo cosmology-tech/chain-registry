@@ -6,6 +6,7 @@ import * as _agoric from './agoric';
 import * as _aioz from './aioz';
 import * as _akash from './akash';
 import * as _akiro from './akiro';
+import * as _althea from './althea';
 import * as _andromeda from './andromeda';
 import * as _andromeda1 from './andromeda1';
 import * as _archway from './archway';
@@ -149,6 +150,7 @@ import * as _stargaze from './stargaze';
 import * as _starname from './starname';
 import * as _stratos from './stratos';
 import * as _stride from './stride';
+import * as _sunrise from './sunrise';
 import * as _tenet from './tenet';
 import * as _teritori from './teritori';
 import * as _terpnetwork from './terpnetwork';
@@ -172,6 +174,7 @@ const chains: Chain[] = [
   _aioz.chain,
   _akash.chain,
   _akiro.chain,
+  _althea.chain,
   _andromeda.chain,
   _andromeda1.chain,
   _archway.chain,
@@ -315,6 +318,7 @@ const chains: Chain[] = [
   _starname.chain,
   _stratos.chain,
   _stride.chain,
+  _sunrise.chain,
   _tenet.chain,
   _teritori.chain,
   _terpnetwork.chain,

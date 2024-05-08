@@ -161,6 +161,10 @@ const info: Chain = {
         provider: 'Kewr Node'
       },
       {
+        address: 'https://rpc.osmosis.goldenratiostaking.net',
+        provider: 'Golden Ratio Staking'
+      },
+      {
         address: 'https://osmosis-rpc.noders.services',
         provider: '[NODERS]TEAM'
       }
@@ -169,6 +173,10 @@ const info: Chain = {
       {
         address: 'https://lcd.osmosis.zone/',
         provider: 'Osmosis Foundation'
+      },
+      {
+        address: 'https://rest.osmosis.goldenratiostaking.net',
+        provider: 'Golden Ratio Staking'
       },
       {
         address: 'https://osmosis-lcd.quickapi.com:443',

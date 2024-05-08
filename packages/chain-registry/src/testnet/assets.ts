@@ -54,6 +54,8 @@ import * as _mantrachaintestnet from './mantrachaintestnet';
 import * as _marstestnet from './marstestnet';
 import * as _migalootestnet from './migalootestnet';
 import * as _neutrontestnet from './neutrontestnet';
+import * as _nibirutestnet from './nibirutestnet';
+import * as _nibirutestnet2 from './nibirutestnet2';
 import * as _nobletestnet from './nobletestnet';
 import * as _noistestnet from './noistestnet';
 import * as _nolustestnet from './nolustestnet';
@@ -153,6 +155,8 @@ const assets: AssetList[] = [
   _marstestnet.assets,
   _migalootestnet.assets,
   _neutrontestnet.assets,
+  _nibirutestnet.assets,
+  _nibirutestnet2.assets,
   _nobletestnet.assets,
   _noistestnet.assets,
   _nolustestnet.assets,

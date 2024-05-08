@@ -25,7 +25,11 @@ const info: AssetList = {
         website: 'https://ai.nim.network/',
         twitter: 'https://twitter.com/nim_network'
       },
-      keywords: ['gaming', 'AI']
+      keywords: ['gaming', 'AI'],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nim/images/nim.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nim/images/nim.svg'
+      }
     }]
 };
 export default info;

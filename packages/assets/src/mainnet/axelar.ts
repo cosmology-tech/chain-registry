@@ -1632,6 +1632,75 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'uoprek',
+      denom_units: [{
+          denom: 'ibc/156C8BCC21BD4109444240C5138A5239C4432127B8E092B55369405452F86C63',
+          exponent: 0,
+          aliases: ['tf/nibi149m52kn7nvsg5nftvv4fh85scsavpdfxp5nr7zasz97dum89dp5qkyhy0t/uoprek']
+        }],
+      base: 'ibc/156C8BCC21BD4109444240C5138A5239C4432127B8E092B55369405452F86C63',
+      name: 'uoprek',
+      display: 'tf/nibi149m52kn7nvsg5nftvv4fh85scsavpdfxp5nr7zasz97dum89dp5qkyhy0t/uoprek',
+      symbol: 'UOPREK',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'tf/nibi149m52kn7nvsg5nftvv4fh85scsavpdfxp5nr7zasz97dum89dp5qkyhy0t/uoprek',
+            chain_name: 'nibiru'
+          },
+          chain: {
+            channel_id: 'channel-139'
+          }
+        }]
+    },
+    {
+      description: 'utestate',
+      denom_units: [{
+          denom: 'ibc/057AE0D6341E14801F21207D500B9F0230DC26011DA23DE28EE03BCE837E4CFD',
+          exponent: 0,
+          aliases: ['tf/nibi1lp28kx3gz0prsztl024z730ufkg3alahaq3e7a6gae22nk0dqdvsyrrgqw/utestate']
+        }],
+      base: 'ibc/057AE0D6341E14801F21207D500B9F0230DC26011DA23DE28EE03BCE837E4CFD',
+      name: 'utestate',
+      display: 'tf/nibi1lp28kx3gz0prsztl024z730ufkg3alahaq3e7a6gae22nk0dqdvsyrrgqw/utestate',
+      symbol: 'UTESTATE',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'tf/nibi1lp28kx3gz0prsztl024z730ufkg3alahaq3e7a6gae22nk0dqdvsyrrgqw/utestate',
+            chain_name: 'nibiru'
+          },
+          chain: {
+            channel_id: 'channel-139'
+          }
+        }]
+    },
+    {
+      description: 'npp',
+      denom_units: [{
+          denom: 'ibc/ADEC8C91DF95EA9215BD0EE2743CEC78F3350D99907AFDA13A9CCE1899FFA1D9',
+          exponent: 0,
+          aliases: ['tf/nibi1xpp7yn0tce62ffattws3gpd6v0tah0mlevef3ej3r4pnfvsehcgqk3jvxq/NPP']
+        }],
+      base: 'ibc/ADEC8C91DF95EA9215BD0EE2743CEC78F3350D99907AFDA13A9CCE1899FFA1D9',
+      name: 'npp',
+      display: 'tf/nibi1xpp7yn0tce62ffattws3gpd6v0tah0mlevef3ej3r4pnfvsehcgqk3jvxq/NPP',
+      symbol: 'NPP',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'tf/nibi1xpp7yn0tce62ffattws3gpd6v0tah0mlevef3ej3r4pnfvsehcgqk3jvxq/NPP',
+            chain_name: 'nibiru'
+          },
+          chain: {
+            channel_id: 'channel-139'
+          }
+        }]
+    },
+    {
       description: 'Staking and governance token for ODIN Protocol',
       denom_units: [{
           denom: 'ibc/8D58BF228C8B8930F5D8D45ED617FFC34CA2AA397288495444FD822201A315DF',
@@ -1787,6 +1856,7 @@ const assets: AssetList = {
     },
     {
       description: 'The native token of Osmosis',
+      extended_description: 'Osmosis (OSMO) is the premier DEX and cross-chain DeFi hub within the Cosmos ecosystem, a network of over 50 sovereign, interoperable blockchains seamlessly connected through the Inter-Blockchain Communication Protocol (IBC). Pioneering in its approach, Osmosis offers a dynamic trading and liquidity provision experience, integrating non-IBC assets from other ecosystems, including Ethereum, Solana, Avalanche, and Polkadot. Initially adopting Balancer-style pools, Osmosis now also features a concentrated liquidity model that is orders of magnitude more capital efficient, meaning that significantly less liquidity is required to handle the same amount of trading volume with minimal slippage.\n\nAs a true appchain, Osmosis has greater control over the full blockchain stack than traditional smart contract DEXs, which must follow the code of the parent chain that it is built on. This fine-grained control has enabled, for example, the development of Superfluid Staking, an extension of Proof of Stake that allows assets at the application layer to be staked to secure the chain. The customizability of appchains also allows implementing features like the Protocol Revenue module, which enables Osmosis to conduct on-chain arbitrage on behalf of OSMO stakers, balancing prices across pools while generating real yield revenue from this volume. Additionally, as a sovereign appchain, Osmosis governance can vote on upgrades to the protocol. One example of this was the introduction of a Taker Fee, which switched on the collection of exchange fees to generate diverse yield from Osmosis volume and distribute it to OSMO stakers.\n\nOsmosis is bringing the full centralized exchange experience to the decentralized world by building a cross-chain native DEX and trading suite that connects all chains over IBC, including Ethereum and Bitcoin. To reach this goal, Osmosis hosts an ever-expanding suite of DeFi applications aimed at providing a one-stop experience that includes lending, credit, margin, DeFi strategy vaults, power perps, fiat on-ramps, NFTs, stablecoins, and more — all of the functionalities that centralized exchange offer and more, in the trust-minimized environment of decentralized finance.',
       denom_units: [{
           denom: 'ibc/47BD209179859CDE4A2806763D7189B6E6FE13A17880FE2B42DE1E6C1E329E23',
           exponent: 0,
@@ -1827,6 +1897,8 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'ION is the second native token of Osmosis.',
+      extended_description: 'ION DAO is governed by ION holders. ION is the second native token of Osmosis, the biggest DEX in Cosmos. The origin of ION was a meme coin, but ION DAO has been trying to find ways to add values on ION.',
       denom_units: [{
           denom: 'ibc/6CDA7F7E4DDB86FD275A986E78F13DF2FC500E3FEC2149E2215061FA51BB8C5D',
           exponent: 0,
@@ -3306,6 +3378,75 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'uoprek',
+      denom_units: [{
+          denom: 'ibc/156C8BCC21BD4109444240C5138A5239C4432127B8E092B55369405452F86C63',
+          exponent: 0,
+          aliases: ['tf/nibi149m52kn7nvsg5nftvv4fh85scsavpdfxp5nr7zasz97dum89dp5qkyhy0t/uoprek']
+        }],
+      base: 'ibc/156C8BCC21BD4109444240C5138A5239C4432127B8E092B55369405452F86C63',
+      name: 'uoprek',
+      display: 'tf/nibi149m52kn7nvsg5nftvv4fh85scsavpdfxp5nr7zasz97dum89dp5qkyhy0t/uoprek',
+      symbol: 'UOPREK',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'tf/nibi149m52kn7nvsg5nftvv4fh85scsavpdfxp5nr7zasz97dum89dp5qkyhy0t/uoprek',
+            chain_name: 'nibiru'
+          },
+          chain: {
+            channel_id: 'channel-139'
+          }
+        }]
+    },
+    {
+      description: 'utestate',
+      denom_units: [{
+          denom: 'ibc/057AE0D6341E14801F21207D500B9F0230DC26011DA23DE28EE03BCE837E4CFD',
+          exponent: 0,
+          aliases: ['tf/nibi1lp28kx3gz0prsztl024z730ufkg3alahaq3e7a6gae22nk0dqdvsyrrgqw/utestate']
+        }],
+      base: 'ibc/057AE0D6341E14801F21207D500B9F0230DC26011DA23DE28EE03BCE837E4CFD',
+      name: 'utestate',
+      display: 'tf/nibi1lp28kx3gz0prsztl024z730ufkg3alahaq3e7a6gae22nk0dqdvsyrrgqw/utestate',
+      symbol: 'UTESTATE',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'tf/nibi1lp28kx3gz0prsztl024z730ufkg3alahaq3e7a6gae22nk0dqdvsyrrgqw/utestate',
+            chain_name: 'nibiru'
+          },
+          chain: {
+            channel_id: 'channel-139'
+          }
+        }]
+    },
+    {
+      description: 'npp',
+      denom_units: [{
+          denom: 'ibc/ADEC8C91DF95EA9215BD0EE2743CEC78F3350D99907AFDA13A9CCE1899FFA1D9',
+          exponent: 0,
+          aliases: ['tf/nibi1xpp7yn0tce62ffattws3gpd6v0tah0mlevef3ej3r4pnfvsehcgqk3jvxq/NPP']
+        }],
+      base: 'ibc/ADEC8C91DF95EA9215BD0EE2743CEC78F3350D99907AFDA13A9CCE1899FFA1D9',
+      name: 'npp',
+      display: 'tf/nibi1xpp7yn0tce62ffattws3gpd6v0tah0mlevef3ej3r4pnfvsehcgqk3jvxq/NPP',
+      symbol: 'NPP',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'tf/nibi1xpp7yn0tce62ffattws3gpd6v0tah0mlevef3ej3r4pnfvsehcgqk3jvxq/NPP',
+            chain_name: 'nibiru'
+          },
+          chain: {
+            channel_id: 'channel-139'
+          }
+        }]
+    },
+    {
       description: 'Staking and governance token for ODIN Protocol',
       denom_units: [{
           denom: 'ibc/8D58BF228C8B8930F5D8D45ED617FFC34CA2AA397288495444FD822201A315DF',
@@ -3461,6 +3602,7 @@ const assets: AssetList = {
     },
     {
       description: 'The native token of Osmosis',
+      extended_description: 'Osmosis (OSMO) is the premier DEX and cross-chain DeFi hub within the Cosmos ecosystem, a network of over 50 sovereign, interoperable blockchains seamlessly connected through the Inter-Blockchain Communication Protocol (IBC). Pioneering in its approach, Osmosis offers a dynamic trading and liquidity provision experience, integrating non-IBC assets from other ecosystems, including Ethereum, Solana, Avalanche, and Polkadot. Initially adopting Balancer-style pools, Osmosis now also features a concentrated liquidity model that is orders of magnitude more capital efficient, meaning that significantly less liquidity is required to handle the same amount of trading volume with minimal slippage.\n\nAs a true appchain, Osmosis has greater control over the full blockchain stack than traditional smart contract DEXs, which must follow the code of the parent chain that it is built on. This fine-grained control has enabled, for example, the development of Superfluid Staking, an extension of Proof of Stake that allows assets at the application layer to be staked to secure the chain. The customizability of appchains also allows implementing features like the Protocol Revenue module, which enables Osmosis to conduct on-chain arbitrage on behalf of OSMO stakers, balancing prices across pools while generating real yield revenue from this volume. Additionally, as a sovereign appchain, Osmosis governance can vote on upgrades to the protocol. One example of this was the introduction of a Taker Fee, which switched on the collection of exchange fees to generate diverse yield from Osmosis volume and distribute it to OSMO stakers.\n\nOsmosis is bringing the full centralized exchange experience to the decentralized world by building a cross-chain native DEX and trading suite that connects all chains over IBC, including Ethereum and Bitcoin. To reach this goal, Osmosis hosts an ever-expanding suite of DeFi applications aimed at providing a one-stop experience that includes lending, credit, margin, DeFi strategy vaults, power perps, fiat on-ramps, NFTs, stablecoins, and more — all of the functionalities that centralized exchange offer and more, in the trust-minimized environment of decentralized finance.',
       denom_units: [{
           denom: 'ibc/47BD209179859CDE4A2806763D7189B6E6FE13A17880FE2B42DE1E6C1E329E23',
           exponent: 0,
@@ -3501,6 +3643,8 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'ION is the second native token of Osmosis.',
+      extended_description: 'ION DAO is governed by ION holders. ION is the second native token of Osmosis, the biggest DEX in Cosmos. The origin of ION was a meme coin, but ION DAO has been trying to find ways to add values on ION.',
       denom_units: [{
           denom: 'ibc/6CDA7F7E4DDB86FD275A986E78F13DF2FC500E3FEC2149E2215061FA51BB8C5D',
           exponent: 0,
@@ -4096,7 +4240,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'
       },
-      coingecko_id: 'buttcoin-2',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'
@@ -4448,7 +4591,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'
       },
-      coingecko_id: 'buttcoin-2',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'

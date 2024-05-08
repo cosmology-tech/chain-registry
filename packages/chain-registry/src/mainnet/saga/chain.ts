@@ -55,6 +55,10 @@ const info: Chain = {
         provider: 'kjnodes'
       },
       {
+        address: 'https://rpc.saga.goldenratiostaking.net',
+        provider: 'Golden Ratio Staking'
+      },
+      {
         address: 'https://rpc.saga.bronbro.io:443',
         provider: 'Bro_n_Bro'
       }
@@ -67,6 +71,10 @@ const info: Chain = {
       {
         address: 'https://saga-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://rest.saga.goldenratiostaking.net',
+        provider: 'Golden Ratio Staking'
       },
       {
         address: 'https://api.saga.nodestake.org',

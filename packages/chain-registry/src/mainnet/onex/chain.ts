@@ -55,6 +55,9 @@ const info: Chain = {
       tx_page: 'https://dexplorer.cakralabs.site/txs/${txHash}',
       account_page: 'https://dexplorer.cakralabs.site/${accountAddress}'
     }],
-  keywords: ['dex']
+  keywords: ['dex'],
+  logo_URIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.png'
+  }
 };
 export default info;

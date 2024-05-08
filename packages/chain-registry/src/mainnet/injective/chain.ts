@@ -41,7 +41,7 @@ const info: Chain = {
         provider: 'NewMetric'
       },
       {
-        address: 'https://rpc-injective.goldenratiostaking.net',
+        address: 'https://rpc.injective.goldenratiostaking.net',
         provider: 'Golden Ratio Staking'
       },
       {
@@ -115,7 +115,7 @@ const info: Chain = {
         provider: 'Stakeflow'
       },
       {
-        address: 'https://rest-injective.goldenratiostaking.net',
+        address: 'https://rest.injective.goldenratiostaking.net',
         provider: 'Golden Ratio Staking'
       },
       {

@@ -112,7 +112,6 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.svg'
       },
-      coingecko_id: 'marble',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.svg'
@@ -137,7 +136,6 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.svg'
       },
-      coingecko_id: 'hope-galaxy',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.svg'
@@ -233,7 +231,6 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.svg'
       },
-      coingecko_id: 'junoswap-raw-dao',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.svg'
@@ -420,7 +417,6 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.svg'
       },
-      coingecko_id: 'stakeeasy-juno-derivative',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.svg'
@@ -445,7 +441,6 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.svg'
       },
-      coingecko_id: 'stakeeasy-bjuno',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.svg'
@@ -611,7 +606,6 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.svg'
       },
-      coingecko_id: 'hopers-io',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.svg'

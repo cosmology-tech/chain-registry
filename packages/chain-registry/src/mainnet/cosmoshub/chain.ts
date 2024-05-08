@@ -125,7 +125,7 @@ const info: Chain = {
         provider: 'kjnodes'
       },
       {
-        address: 'https://rpc-cosmoshub.goldenratiostaking.net',
+        address: 'https://rpc.cosmoshub.goldenratiostaking.net',
         provider: 'Golden Ratio Staking'
       },
       {
@@ -179,7 +179,7 @@ const info: Chain = {
         provider: 'Chainlayer'
       },
       {
-        address: 'https://rest-cosmoshub.goldenratiostaking.net',
+        address: 'https://rest.cosmoshub.goldenratiostaking.net',
         provider: 'Golden Ratio Staking'
       },
       {

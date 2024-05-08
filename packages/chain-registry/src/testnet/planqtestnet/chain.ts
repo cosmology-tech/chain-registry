@@ -76,6 +76,10 @@ const info: Chain = {
       url: 'https://explorer.whenmoonwhenlambo.money/planq-testnet',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/planq-testnet/tx/${txHash}'
     }
-  ]
+  ],
+  images: [{
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/planqtestnet/images/planq.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/planqtestnet/images/planq.svg'
+    }]
 };
 export default info;

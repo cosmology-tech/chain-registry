@@ -52,6 +52,8 @@ export * as mantrachaintestnet from './mantrachaintestnet';
 export * as marstestnet from './marstestnet';
 export * as migalootestnet from './migalootestnet';
 export * as neutrontestnet from './neutrontestnet';
+export * as nibirutestnet from './nibirutestnet';
+export * as nibirutestnet2 from './nibirutestnet2';
 export * as nobletestnet from './nobletestnet';
 export * as noistestnet from './noistestnet';
 export * as nolustestnet from './nolustestnet';
