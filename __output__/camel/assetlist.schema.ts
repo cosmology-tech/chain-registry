@@ -3,7 +3,7 @@ export interface Asset {
   description?: string;
   extendedDescription?: string;
   denomUnits: DenomUnit[];
-  typeAsset?: "sdk.coin" | "cw20" | "erc20" | "ics20" | "snip20" | "snip25" | "bitcoin-like" | "evm-base" | "svm-base" | "substrate";
+  typeAsset?: "sdk.coin" | "cw20" | "erc20" | "ics20" | "snip20" | "snip25" | "bitcoin-like" | "evm-base" | "svm-base" | "substrate" | "unknown";
   address?: string;
   base: string;
   name: string;
