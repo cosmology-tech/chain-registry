@@ -1,12 +1,10 @@
+import { AssetList as IAssetList, Chain as IChain, IBCData as IIBCData} from '@chain-registry/interfaces'
 import {
   AssetList,
   Chain,
   IBCData
 } from '@chain-registry/v2-types';
-
-import { Chain as IChain, AssetList as IAssetList, IBCData as IIBCData} from '@chain-registry/interfaces'
-
-import { getAssetLists } from '@chain-registry/utils';
+import { getAssetLists } from '@chain-registry/v2-utils';
 import { basename } from 'bfs-path';
 import fetch from 'cross-fetch';
 
