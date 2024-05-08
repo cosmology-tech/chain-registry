@@ -1,11 +1,10 @@
-import { Asset, AssetList } from '@chain-registry/types';
+import { AssetList } from '@chain-registry/types';
 import BigNumber from 'bignumber.js';
 
 import {
   Denom,
   getAssetByDenom,
   getAssetBySymbol,
-  getDenomByCoinGeckoId,
   getDenomsByCoinGeckoId,
   getExponentByDenomFromAsset,
   getExponentFromAsset
@@ -75,9 +74,6 @@ const getAssetInfoByDenom = (
   return { denom, exponent };
 };
 
-
-
-
 const shiftDecimalPlaces = (
   amount: string | number,
   exponent: number,
@@ -85,8 +81,6 @@ const shiftDecimalPlaces = (
 ) => {
   return new BigNumber(amount).shiftedBy(exponent * direction).toString();
 };
-
-
 
 export const convertBaseUnitToDollarValue = (
   assets: AssetList[],
@@ -99,9 +93,6 @@ export const convertBaseUnitToDollarValue = (
   const baseAmount = shiftDecimalPlaces(amount, exponent, -1);
   return new BigNumber(baseAmount).multipliedBy(prices[denom]).toString();
 };
-
-
-
 
 export const convertBaseUnitToDollarValueByDenom = (
   assets: AssetList[],

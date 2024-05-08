@@ -20,7 +20,7 @@ export const getNativeAssets = (
   assets: AssetList[]
 ): AssetList[] => {
   return assets.map(list => {
-    const clone = JSON.parse(JSON.stringify(list));
+    const clone = JSON.parse(JSON.stringify(list)) as AssetList;
     clone.assets = list.assets.filter(asset => {
       switch (true) {
         case asset.base.startsWith('factory/'):
@@ -45,7 +45,11 @@ export const getNativeAssets = (
           }
           return false;
       }
+    }).map(asset=>{
+      delete asset.extendedDescription;
+      return asset;
     });
+
     return clone;
   });
 };
