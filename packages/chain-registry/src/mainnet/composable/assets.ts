@@ -30,10 +30,10 @@ const info: AssetList = {
             chain_name: 'picasso',
             base_denom: 'ppica'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/picasso/images/pica.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
         }],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/picasso/images/pica.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
       },
       socials: {
         website: 'https://picasso.xyz/',

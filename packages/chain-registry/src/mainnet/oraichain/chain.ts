@@ -67,6 +67,10 @@ const info: Chain = {
       {
         address: 'https://rpc.orai.mortysnode.nl',
         provider: 'Morty\'s Nodes'
+      },
+      {
+        address: 'https://orai.rpc.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       }
     ],
     rest: [
@@ -89,6 +93,10 @@ const info: Chain = {
       {
         address: 'https://mainnet-orai-api.konsortech.xyz',
         provider: 'KonsorTech'
+      },
+      {
+        address: 'https://orai.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       }
     ],
     grpc: [
@@ -111,6 +119,10 @@ const info: Chain = {
       {
         address: 'mainnet-orai.konsortech.xyz:33090',
         provider: 'KonsorTech'
+      },
+      {
+        address: 'orai.grpc.m.stavr.tech:110',
+        provider: '🔥STAVR🔥'
       }
     ]
   },
@@ -141,6 +153,12 @@ const info: Chain = {
       url: 'https://explorer.konsortech.xyz/oraichain',
       tx_page: 'https://explorer.konsortech.xyz/oraichain/transactions/${txHash}',
       account_page: 'https://explorer.konsortech.xyz/oraichain/accounts/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥 Explorer',
+      url: 'https://explorer.stavr.tech/Orai-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Orai-Mainnet/transactions/${txHash}',
+      account_page: 'https://explorer.stavr.tech/Orai-Mainnet/accounts/${accountAddress}'
     }
   ],
   images: [{

@@ -132,6 +132,7 @@ const info: AssetList = {
       name: 'Tether USD',
       display: 'usdt',
       symbol: 'USDT',
+      coingecko_id: 'bridged-tether-axelar',
       traces: [{
           type: 'bridge',
           counterparty: {
@@ -190,6 +191,7 @@ const info: AssetList = {
       name: 'Wrapped Bitcoin',
       display: 'wbtc',
       symbol: 'WBTC',
+      coingecko_id: 'axlwbtc',
       traces: [{
           type: 'bridge',
           counterparty: {

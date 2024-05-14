@@ -1796,7 +1796,6 @@ const assets: AssetList = {
     },
     {
       description: 'The token of Neokingdom DAO.',
-      extended_description: 'Neokingdom DAO wants to make employment fairer, by facilitating both web3 and real-world businesses to operate as Decentralized Autonomous Organizations (DAOs).',
       denom_units: [{
           denom: 'ibc/FCB0126B85D91CCBDF17FC273023372D41DE033B6E6B666EA2E0E30EAECFEFFC',
           exponent: 0,
@@ -2225,7 +2224,6 @@ const assets: AssetList = {
     },
     {
       description: 'The native staking and governance token of Kava',
-      extended_description: 'The native staking and governance token of Kava\n\nKava is a Layer-1 blockchain that combines the speed and interoperability of Cosmos with the developer power of Ethereum.\n\nThe Kava Network uses a developer-optimized co-chain architecture. The Ethereum Co-Chain enables support for EVM smart contracts while the Cosmos Co-Chain enables the lightning-fast Tendermint consensus engine and the Inter Blockchain Communication Protocol (IBC).\n\nThe two co-chains are connected by a translator module that enables them to interoperate seamlessly, bringing the two most used blockchain development environments together in a single, scalable network.\n\nThe Kava Network features a native governance and utility token, KAVA, that can be staked by validators or delegated to validator nodes. Stakers and delegators earn 37.5% of all KAVA emissions as a reward for securing the network. Kava stakers also have voting rights in network governance proposals.',
       denom_units: [{
           denom: 'ibc/8870C4203CEBF2279BA065E3DE95FC3F8E05A4A93424E7DC707A21514BE353A0',
           exponent: 0,
@@ -2867,6 +2865,7 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'ION is the second native token of Osmosis.',
       denom_units: [{
           denom: 'ibc/5BB694D466CCF099EF73F165F88472AF51D9C4991EAA42BD1168C5304712CC0D',
           exponent: 0,
@@ -2947,7 +2946,6 @@ const assets: AssetList = {
     },
     {
       description: 'The native EVM, governance and staking token of the Planq Network',
-      extended_description: 'Planq is the very first cryptocurrency project to keep mobile platform usability at heart, taking a step away from dependency on desktop services. By focusing on easy accessibility and close integration of other blockchains via easy to use bridges, Planq will push Web 3 adoption in the mobile space to the next level.',
       denom_units: [{
           denom: 'ibc/1452F322F7B459CB7EC111AD5BD2404552B011375002C8C85BA615A95B9121CF',
           exponent: 0,
@@ -4179,7 +4177,6 @@ const assets: AssetList = {
     },
     {
       description: 'The token of Neokingdom DAO.',
-      extended_description: 'Neokingdom DAO wants to make employment fairer, by facilitating both web3 and real-world businesses to operate as Decentralized Autonomous Organizations (DAOs).',
       denom_units: [{
           denom: 'ibc/FCB0126B85D91CCBDF17FC273023372D41DE033B6E6B666EA2E0E30EAECFEFFC',
           exponent: 0,
@@ -4608,7 +4605,6 @@ const assets: AssetList = {
     },
     {
       description: 'The native staking and governance token of Kava',
-      extended_description: 'The native staking and governance token of Kava\n\nKava is a Layer-1 blockchain that combines the speed and interoperability of Cosmos with the developer power of Ethereum.\n\nThe Kava Network uses a developer-optimized co-chain architecture. The Ethereum Co-Chain enables support for EVM smart contracts while the Cosmos Co-Chain enables the lightning-fast Tendermint consensus engine and the Inter Blockchain Communication Protocol (IBC).\n\nThe two co-chains are connected by a translator module that enables them to interoperate seamlessly, bringing the two most used blockchain development environments together in a single, scalable network.\n\nThe Kava Network features a native governance and utility token, KAVA, that can be staked by validators or delegated to validator nodes. Stakers and delegators earn 37.5% of all KAVA emissions as a reward for securing the network. Kava stakers also have voting rights in network governance proposals.',
       denom_units: [{
           denom: 'ibc/8870C4203CEBF2279BA065E3DE95FC3F8E05A4A93424E7DC707A21514BE353A0',
           exponent: 0,
@@ -5250,6 +5246,7 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'ION is the second native token of Osmosis.',
       denom_units: [{
           denom: 'ibc/5BB694D466CCF099EF73F165F88472AF51D9C4991EAA42BD1168C5304712CC0D',
           exponent: 0,
@@ -5330,7 +5327,6 @@ const assets: AssetList = {
     },
     {
       description: 'The native EVM, governance and staking token of the Planq Network',
-      extended_description: 'Planq is the very first cryptocurrency project to keep mobile platform usability at heart, taking a step away from dependency on desktop services. By focusing on easy accessibility and close integration of other blockchains via easy to use bridges, Planq will push Web 3 adoption in the mobile space to the next level.',
       denom_units: [{
           denom: 'ibc/1452F322F7B459CB7EC111AD5BD2404552B011375002C8C85BA615A95B9121CF',
           exponent: 0,

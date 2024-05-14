@@ -260,7 +260,6 @@ const assets: AssetList = {
     },
     {
       description: 'The native token of the Celestia blockchain.',
-      extended_description: 'Celestia is a modular data availability network. It simplifies the process of launching blockchains, making blockchain technology more accessible and user-friendly. Unlike traditional blockchains that handle multiple functions, Celestia specializes in specific roles, which leads to enhanced scalability, flexibility, and interoperability. This specialization enables developers to create blockchain applications for mass adoption​.',
       denom_units: [{
           denom: 'ibc/14D1406D84227FDF4B055EA5CB2298095BBCA3F3BC3EF583AE6DF36F0FB179C8',
           exponent: 0,
@@ -448,7 +447,6 @@ const assets: AssetList = {
     },
     {
       description: 'The token of Neokingdom DAO.',
-      extended_description: 'Neokingdom DAO wants to make employment fairer, by facilitating both web3 and real-world businesses to operate as Decentralized Autonomous Organizations (DAOs).',
       denom_units: [{
           denom: 'ibc/425F3A00B04B7F59A003909792FF5A499DCF641D1DBB19E5C068F112628DCBBD',
           exponent: 0,
@@ -1011,6 +1009,7 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'ION is the second native token of Osmosis.',
       denom_units: [{
           denom: 'ibc/F7E92EE59B5428793F3EF5C1A4CB2494F61A9D0C9A69469D02390714A1372E16',
           exponent: 0,
@@ -1424,7 +1423,6 @@ const assets: AssetList = {
     },
     {
       description: 'The native token of the Celestia blockchain.',
-      extended_description: 'Celestia is a modular data availability network. It simplifies the process of launching blockchains, making blockchain technology more accessible and user-friendly. Unlike traditional blockchains that handle multiple functions, Celestia specializes in specific roles, which leads to enhanced scalability, flexibility, and interoperability. This specialization enables developers to create blockchain applications for mass adoption​.',
       denom_units: [{
           denom: 'ibc/14D1406D84227FDF4B055EA5CB2298095BBCA3F3BC3EF583AE6DF36F0FB179C8',
           exponent: 0,
@@ -1612,7 +1610,6 @@ const assets: AssetList = {
     },
     {
       description: 'The token of Neokingdom DAO.',
-      extended_description: 'Neokingdom DAO wants to make employment fairer, by facilitating both web3 and real-world businesses to operate as Decentralized Autonomous Organizations (DAOs).',
       denom_units: [{
           denom: 'ibc/425F3A00B04B7F59A003909792FF5A499DCF641D1DBB19E5C068F112628DCBBD',
           exponent: 0,
@@ -2175,6 +2172,7 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'ION is the second native token of Osmosis.',
       denom_units: [{
           denom: 'ibc/F7E92EE59B5428793F3EF5C1A4CB2494F61A9D0C9A69469D02390714A1372E16',
           exponent: 0,

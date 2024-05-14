@@ -207,6 +207,7 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'ION is the second native token of Osmosis.',
       denom_units: [{
           denom: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
           exponent: 0,
@@ -451,6 +452,7 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'ION is the second native token of Osmosis.',
       denom_units: [{
           denom: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
           exponent: 0,
@@ -563,7 +565,6 @@ const assets: AssetList = {
     },
     {
       description: 'The native token of SOURCE Chain',
-      extended_description: 'Enterprises, developers, and individuals are empowered to use SOURCE\'s sustainable and value backed network to easily access, build, and integrate web3 applications and services.',
       denom_units: [{
           denom: 'ibc/8B1A2352E009D7D5AEFA5FDDF23EF644EB818DA9E0806A0FEDEA8562EC15F474',
           exponent: 0,
@@ -674,7 +675,6 @@ const assets: AssetList = {
     },
     {
       description: 'The native token of SOURCE Chain',
-      extended_description: 'Enterprises, developers, and individuals are empowered to use SOURCE\'s sustainable and value backed network to easily access, build, and integrate web3 applications and services.',
       denom_units: [{
           denom: 'ibc/8B1A2352E009D7D5AEFA5FDDF23EF644EB818DA9E0806A0FEDEA8562EC15F474',
           exponent: 0,

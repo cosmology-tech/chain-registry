@@ -13,6 +13,7 @@ import * as _fantom from './fantom';
 import * as _filecoin from './filecoin';
 import * as _kusama from './kusama';
 import * as _moonbeam from './moonbeam';
+import * as _penumbra from './penumbra';
 import * as _polkadot from './polkadot';
 import * as _polygon from './polygon';
 import * as _solana from './solana';
@@ -44,6 +45,7 @@ const assets: AssetList[] = [
   _filecoin.assets,
   _kusama.assets,
   _moonbeam.assets,
+  _penumbra.assets,
   _polkadot.assets,
   _polygon.assets,
   _solana.assets,

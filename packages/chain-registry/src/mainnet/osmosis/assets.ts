@@ -5302,6 +5302,7 @@ const info: AssetList = {
     },
     {
       description: 'The native token cw20 for PHMN on Juno Chain',
+      extended_description: '$PHMN is the governance token of a distributed validator. Similar to PoS chains, each holder possesses voting rights proportionate to the number of locked tokens. PHMN holders can govern the POSTHUMAN validator via DAODAO. For instance, decisions such as diversifying the treasury, updating the validator\'s commission rate, or exiting the network are determined by the PHMN community.',
       denom_units: [{
           denom: 'ibc/D3B574938631B0A1BA704879020C696E514CFADAA7643CDE4BD5EB010BDE327B',
           exponent: 0,
@@ -5336,7 +5337,11 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/phmn.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/phmn.svg'
-        }]
+        }],
+      socials: {
+        website: 'https://posthuman.digital/',
+        twitter: 'https://twitter.com/POSTHUMAN_DVS'
+      }
     },
     {
       description: 'The native token cw20 for Amber on Secret Network',
@@ -8072,14 +8077,14 @@ const info: AssetList = {
           }
         }],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/picasso/images/pica.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
       },
       images: [{
           image_sync: {
             chain_name: 'picasso',
             base_denom: 'ppica'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/picasso/images/pica.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
         }]
     },
     {
@@ -12411,10 +12416,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/LAB.png'
-        }]
+        }],
+      coingecko_id: 'mad-scientists'
     },
     {
       description: 'BackBone Labs Liquid Staked OSMO',
+      extended_description: 'bOSMO - solving capital inefficiencies in the NFT market space',
       denom_units: [{
           denom: 'factory/osmo1s3l0lcqc7tu0vpj6wdjz9wqpxv8nk6eraevje4fuwkyjnwuy82qsx3lduv/boneOsmo',
           exponent: 0
@@ -12434,7 +12441,10 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/bOSMO.png'
         }],
-      keywords: ['osmosis_unlisted']
+      socials: {
+        website: 'https://app.backbonelabs.io/',
+        twitter: 'https://twitter.com/BackBone_Labs'
+      }
     },
     {
       description: 'PUNDIX token is the native token that functions within the Pundi X ecosystem, including PundiX Chain and XPOS.',
@@ -13454,6 +13464,204 @@ const info: AssetList = {
             base_denom: 'factory/neutron133xakkrfksq39wxy575unve2nyehg5npx75nph/WEIRD'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/WEIRD.png'
+        }]
+    },
+    {
+      description: 'Quicksilver Liquid Staked JUNO',
+      denom_units: [{
+          denom: 'ibc/B4E18E61E1505C2F371B621E49B09E983F6A138F251A7B5286A6BDF739FD0D54',
+          exponent: 0,
+          aliases: ['uqjuno']
+        }, {
+          denom: 'qjuno',
+          exponent: 6,
+          aliases: []
+        }],
+      type_asset: 'ics20',
+      base: 'ibc/B4E18E61E1505C2F371B621E49B09E983F6A138F251A7B5286A6BDF739FD0D54',
+      name: 'Quicksilver Liquid Staked JUNO',
+      display: 'qjuno',
+      symbol: 'qJUNO',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chain_name: 'juno',
+            base_denom: 'ujuno'
+          },
+          provider: 'Quicksilver'
+        }, {
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'quicksilver',
+            base_denom: 'uqjuno',
+            channel_id: 'channel-2'
+          },
+          chain: {
+            channel_id: 'channel-522',
+            path: 'transfer/channel-522/uqjuno'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qjuno.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qjuno.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qjuno.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qjuno.svg'
+        }]
+    },
+    {
+      description: 'Quicksilver Liquid Staked SAGA',
+      denom_units: [{
+          denom: 'ibc/F2D400F2728E9DA06EAE2AFAB289931A69EDDA5A661578C66A3177EDFE3C0D13',
+          exponent: 0,
+          aliases: ['uqsaga']
+        }, {
+          denom: 'qsaga',
+          exponent: 6,
+          aliases: []
+        }],
+      type_asset: 'ics20',
+      base: 'ibc/F2D400F2728E9DA06EAE2AFAB289931A69EDDA5A661578C66A3177EDFE3C0D13',
+      name: 'Quicksilver Liquid Staked SAGA',
+      display: 'qsaga',
+      symbol: 'qSAGA',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chain_name: 'saga',
+            base_denom: 'usaga'
+          },
+          provider: 'Quicksilver'
+        }, {
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'quicksilver',
+            base_denom: 'uqsaga',
+            channel_id: 'channel-2'
+          },
+          chain: {
+            channel_id: 'channel-522',
+            path: 'transfer/channel-522/uqsaga'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qsaga.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qsaga.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qsaga.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qsaga.svg'
+        }]
+    },
+    {
+      description: 'Quicksilver Liquid Staked BLD',
+      denom_units: [{
+          denom: 'ibc/C1C106D915C8E8C59E5DC69BF30FEF64729A6F788060B184C86A315DBB762EF7',
+          exponent: 0,
+          aliases: ['uqbld']
+        }, {
+          denom: 'qbld',
+          exponent: 6,
+          aliases: []
+        }],
+      type_asset: 'ics20',
+      base: 'ibc/C1C106D915C8E8C59E5DC69BF30FEF64729A6F788060B184C86A315DBB762EF7',
+      name: 'Quicksilver Liquid Staked BLD',
+      display: 'qbld',
+      symbol: 'qBLD',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chain_name: 'agoric',
+            base_denom: 'ubld'
+          },
+          provider: 'Quicksilver'
+        }, {
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'quicksilver',
+            base_denom: 'uqbld',
+            channel_id: 'channel-2'
+          },
+          chain: {
+            channel_id: 'channel-522',
+            path: 'transfer/channel-522/uqbld'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qbld.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qbld.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qbld.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qbld.svg'
+        }]
+    },
+    {
+      description: 'Quicksilver Liquid Staked DYDX',
+      denom_units: [{
+          denom: 'ibc/273C593E51ACE56F1F2BDB3E03A5CB81BB208B894BCAA642676A32C3454E8C27',
+          exponent: 0,
+          aliases: ['aqdydx']
+        }, {
+          denom: 'qdydx',
+          exponent: 18,
+          aliases: []
+        }],
+      type_asset: 'ics20',
+      base: 'ibc/273C593E51ACE56F1F2BDB3E03A5CB81BB208B894BCAA642676A32C3454E8C27',
+      name: 'Quicksilver Liquid Staked DYDX',
+      display: 'qdydx',
+      symbol: 'qDYDX',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chain_name: 'dydx',
+            base_denom: 'adydx'
+          },
+          provider: 'Quicksilver'
+        }, {
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'quicksilver',
+            base_denom: 'aqdydx',
+            channel_id: 'channel-2'
+          },
+          chain: {
+            channel_id: 'channel-522',
+            path: 'transfer/channel-522/aqdydx'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qdydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qdydx.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qdydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qdydx.svg'
+        }]
+    },
+    {
+      description: 'Uhm, Power Bottom',
+      denom_units: [{
+          denom: 'factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/pbb',
+          exponent: 0
+        }, {
+          denom: 'PBB',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      address: 'osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8',
+      base: 'factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/pbb',
+      name: 'Power Bottom',
+      display: 'PBB',
+      symbol: 'PBB',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/PBB.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/PBB.png'
         }]
     }
   ]

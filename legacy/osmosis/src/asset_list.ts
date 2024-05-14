@@ -1081,7 +1081,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The native token of the Celestia blockchain.',
-      extended_description: 'Celestia is a modular data availability network. It simplifies the process of launching blockchains, making blockchain technology more accessible and user-friendly. Unlike traditional blockchains that handle multiple functions, Celestia specializes in specific roles, which leads to enhanced scalability, flexibility, and interoperability. This specialization enables developers to create blockchain applications for mass adoption​.',
       denom_units: [{
           denom: 'ibc/D79E7D83AB399BFFF93433E54FAA480C191248FC556924A2A8351AE2638B3877',
           exponent: 0,
@@ -1982,7 +1981,6 @@ const asset_list: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/ech.svg'
       },
-      coingecko_id: 'echelon',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/ech.svg'
         }],
@@ -2281,7 +2279,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The token of Neokingdom DAO.',
-      extended_description: 'Neokingdom DAO wants to make employment fairer, by facilitating both web3 and real-world businesses to operate as Decentralized Autonomous Organizations (DAOs).',
       denom_units: [{
           denom: 'ibc/DEE262653B9DE39BCEF0493D47E0DFC4FE62F7F046CF38B9FDEFEBE98D149A71',
           exponent: 0,
@@ -3137,7 +3134,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The native staking and governance token of Kava',
-      extended_description: 'The native staking and governance token of Kava\n\nKava is a Layer-1 blockchain that combines the speed and interoperability of Cosmos with the developer power of Ethereum.\n\nThe Kava Network uses a developer-optimized co-chain architecture. The Ethereum Co-Chain enables support for EVM smart contracts while the Cosmos Co-Chain enables the lightning-fast Tendermint consensus engine and the Inter Blockchain Communication Protocol (IBC).\n\nThe two co-chains are connected by a translator module that enables them to interoperate seamlessly, bringing the two most used blockchain development environments together in a single, scalable network.\n\nThe Kava Network features a native governance and utility token, KAVA, that can be staked by validators or delegated to validator nodes. Stakers and delegators earn 37.5% of all KAVA emissions as a reward for securing the network. Kava stakers also have voting rights in network governance proposals.',
       denom_units: [{
           denom: 'ibc/57AA1A70A4BC9769C525EBF6386F7A21536E04A79D62E1981EFCEF9428EBB205',
           exponent: 0,
@@ -3945,6 +3941,75 @@ const asset_list: AssetList = {
           counterparty: {
             channel_id: 'channel-0',
             base_denom: 'unibi',
+            chain_name: 'nibiru'
+          },
+          chain: {
+            channel_id: 'channel-21113'
+          }
+        }]
+    },
+    {
+      description: 'uoprek',
+      denom_units: [{
+          denom: 'ibc/A6A1B44D1234A9481D2BA8AD777804E40F42C4B57002072CF2E54462870038CA',
+          exponent: 0,
+          aliases: ['tf/nibi149m52kn7nvsg5nftvv4fh85scsavpdfxp5nr7zasz97dum89dp5qkyhy0t/uoprek']
+        }],
+      base: 'ibc/A6A1B44D1234A9481D2BA8AD777804E40F42C4B57002072CF2E54462870038CA',
+      name: 'uoprek',
+      display: 'tf/nibi149m52kn7nvsg5nftvv4fh85scsavpdfxp5nr7zasz97dum89dp5qkyhy0t/uoprek',
+      symbol: 'UOPREK',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'tf/nibi149m52kn7nvsg5nftvv4fh85scsavpdfxp5nr7zasz97dum89dp5qkyhy0t/uoprek',
+            chain_name: 'nibiru'
+          },
+          chain: {
+            channel_id: 'channel-21113'
+          }
+        }]
+    },
+    {
+      description: 'utestate',
+      denom_units: [{
+          denom: 'ibc/93439CEF023602D42D8B4F2D0F483730E1A8CC52891AA668CF68DAC984A8FA26',
+          exponent: 0,
+          aliases: ['tf/nibi1lp28kx3gz0prsztl024z730ufkg3alahaq3e7a6gae22nk0dqdvsyrrgqw/utestate']
+        }],
+      base: 'ibc/93439CEF023602D42D8B4F2D0F483730E1A8CC52891AA668CF68DAC984A8FA26',
+      name: 'utestate',
+      display: 'tf/nibi1lp28kx3gz0prsztl024z730ufkg3alahaq3e7a6gae22nk0dqdvsyrrgqw/utestate',
+      symbol: 'UTESTATE',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'tf/nibi1lp28kx3gz0prsztl024z730ufkg3alahaq3e7a6gae22nk0dqdvsyrrgqw/utestate',
+            chain_name: 'nibiru'
+          },
+          chain: {
+            channel_id: 'channel-21113'
+          }
+        }]
+    },
+    {
+      description: 'npp',
+      denom_units: [{
+          denom: 'ibc/553D4B783DD4599E28138D5874FFED5D4648ACAF169A04ABEAFAAFE900A019CC',
+          exponent: 0,
+          aliases: ['tf/nibi1xpp7yn0tce62ffattws3gpd6v0tah0mlevef3ej3r4pnfvsehcgqk3jvxq/NPP']
+        }],
+      base: 'ibc/553D4B783DD4599E28138D5874FFED5D4648ACAF169A04ABEAFAAFE900A019CC',
+      name: 'npp',
+      display: 'tf/nibi1xpp7yn0tce62ffattws3gpd6v0tah0mlevef3ej3r4pnfvsehcgqk3jvxq/NPP',
+      symbol: 'NPP',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'tf/nibi1xpp7yn0tce62ffattws3gpd6v0tah0mlevef3ej3r4pnfvsehcgqk3jvxq/NPP',
             chain_name: 'nibiru'
           },
           chain: {
@@ -5556,7 +5621,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The native token of the Celestia blockchain.',
-      extended_description: 'Celestia is a modular data availability network. It simplifies the process of launching blockchains, making blockchain technology more accessible and user-friendly. Unlike traditional blockchains that handle multiple functions, Celestia specializes in specific roles, which leads to enhanced scalability, flexibility, and interoperability. This specialization enables developers to create blockchain applications for mass adoption​.',
       denom_units: [{
           denom: 'ibc/D79E7D83AB399BFFF93433E54FAA480C191248FC556924A2A8351AE2638B3877',
           exponent: 0,
@@ -6457,7 +6521,6 @@ const asset_list: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/ech.svg'
       },
-      coingecko_id: 'echelon',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/ech.svg'
         }],
@@ -6756,7 +6819,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The token of Neokingdom DAO.',
-      extended_description: 'Neokingdom DAO wants to make employment fairer, by facilitating both web3 and real-world businesses to operate as Decentralized Autonomous Organizations (DAOs).',
       denom_units: [{
           denom: 'ibc/DEE262653B9DE39BCEF0493D47E0DFC4FE62F7F046CF38B9FDEFEBE98D149A71',
           exponent: 0,
@@ -7612,7 +7674,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The native staking and governance token of Kava',
-      extended_description: 'The native staking and governance token of Kava\n\nKava is a Layer-1 blockchain that combines the speed and interoperability of Cosmos with the developer power of Ethereum.\n\nThe Kava Network uses a developer-optimized co-chain architecture. The Ethereum Co-Chain enables support for EVM smart contracts while the Cosmos Co-Chain enables the lightning-fast Tendermint consensus engine and the Inter Blockchain Communication Protocol (IBC).\n\nThe two co-chains are connected by a translator module that enables them to interoperate seamlessly, bringing the two most used blockchain development environments together in a single, scalable network.\n\nThe Kava Network features a native governance and utility token, KAVA, that can be staked by validators or delegated to validator nodes. Stakers and delegators earn 37.5% of all KAVA emissions as a reward for securing the network. Kava stakers also have voting rights in network governance proposals.',
       denom_units: [{
           denom: 'ibc/57AA1A70A4BC9769C525EBF6386F7A21536E04A79D62E1981EFCEF9428EBB205',
           exponent: 0,
@@ -8428,6 +8489,75 @@ const asset_list: AssetList = {
         }]
     },
     {
+      description: 'uoprek',
+      denom_units: [{
+          denom: 'ibc/A6A1B44D1234A9481D2BA8AD777804E40F42C4B57002072CF2E54462870038CA',
+          exponent: 0,
+          aliases: ['tf/nibi149m52kn7nvsg5nftvv4fh85scsavpdfxp5nr7zasz97dum89dp5qkyhy0t/uoprek']
+        }],
+      base: 'ibc/A6A1B44D1234A9481D2BA8AD777804E40F42C4B57002072CF2E54462870038CA',
+      name: 'uoprek',
+      display: 'tf/nibi149m52kn7nvsg5nftvv4fh85scsavpdfxp5nr7zasz97dum89dp5qkyhy0t/uoprek',
+      symbol: 'UOPREK',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'tf/nibi149m52kn7nvsg5nftvv4fh85scsavpdfxp5nr7zasz97dum89dp5qkyhy0t/uoprek',
+            chain_name: 'nibiru'
+          },
+          chain: {
+            channel_id: 'channel-21113'
+          }
+        }]
+    },
+    {
+      description: 'utestate',
+      denom_units: [{
+          denom: 'ibc/93439CEF023602D42D8B4F2D0F483730E1A8CC52891AA668CF68DAC984A8FA26',
+          exponent: 0,
+          aliases: ['tf/nibi1lp28kx3gz0prsztl024z730ufkg3alahaq3e7a6gae22nk0dqdvsyrrgqw/utestate']
+        }],
+      base: 'ibc/93439CEF023602D42D8B4F2D0F483730E1A8CC52891AA668CF68DAC984A8FA26',
+      name: 'utestate',
+      display: 'tf/nibi1lp28kx3gz0prsztl024z730ufkg3alahaq3e7a6gae22nk0dqdvsyrrgqw/utestate',
+      symbol: 'UTESTATE',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'tf/nibi1lp28kx3gz0prsztl024z730ufkg3alahaq3e7a6gae22nk0dqdvsyrrgqw/utestate',
+            chain_name: 'nibiru'
+          },
+          chain: {
+            channel_id: 'channel-21113'
+          }
+        }]
+    },
+    {
+      description: 'npp',
+      denom_units: [{
+          denom: 'ibc/553D4B783DD4599E28138D5874FFED5D4648ACAF169A04ABEAFAAFE900A019CC',
+          exponent: 0,
+          aliases: ['tf/nibi1xpp7yn0tce62ffattws3gpd6v0tah0mlevef3ej3r4pnfvsehcgqk3jvxq/NPP']
+        }],
+      base: 'ibc/553D4B783DD4599E28138D5874FFED5D4648ACAF169A04ABEAFAAFE900A019CC',
+      name: 'npp',
+      display: 'tf/nibi1xpp7yn0tce62ffattws3gpd6v0tah0mlevef3ej3r4pnfvsehcgqk3jvxq/NPP',
+      symbol: 'NPP',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'tf/nibi1xpp7yn0tce62ffattws3gpd6v0tah0mlevef3ej3r4pnfvsehcgqk3jvxq/NPP',
+            chain_name: 'nibiru'
+          },
+          chain: {
+            channel_id: 'channel-21113'
+          }
+        }]
+    },
+    {
       description: 'The permissioned staking asset for Noble Chain',
       denom_units: [{
           denom: 'ibc/B36FA1449007D770F373A0806EC5A907CC2D7DC11AE73FA8AFF76C5903A4F9B0',
@@ -9061,7 +9191,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The native EVM, governance and staking token of the Planq Network',
-      extended_description: 'Planq is the very first cryptocurrency project to keep mobile platform usability at heart, taking a step away from dependency on desktop services. By focusing on easy accessibility and close integration of other blockchains via easy to use bridges, Planq will push Web 3 adoption in the mobile space to the next level.',
       denom_units: [{
           denom: 'ibc/B1E0166EA0D759FDF4B207D1F5F12210D8BFE36F2345CEFC76948CE2B36DFBAF',
           exponent: 0,
@@ -9285,7 +9414,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The native governance token for Qwoyn Network',
-      extended_description: 'The Qwoyn Network stands as a cutting-edge gaming hub that embeds Web3 technologies into the core of interactive entertainment. It revolutionizes the gaming industry by ensuring true ownership of in-game assets for players, facilitated through blockchain. This approach not only enhances gameplay but also fosters a unique ecosystem of interoperability and innovation. As a beacon in the gaming world, Qwoyn Network is dedicated to merging the excitement of traditional gaming with the transformative potential of Web3, creating a seamless and enriched gaming experience.',
       denom_units: [{
           denom: 'ibc/09FAF1E04435E14C68DE7AB0D03C521C92975C792DB12B2EA390BAA2E06B3F3D',
           exponent: 0,
@@ -9540,7 +9668,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The native staking and governance token of Saga.',
-      extended_description: 'Saga is a Layer 1 protocol that allows developers to automatically spin up VM-agnostic, parallelized and interoperable dedicated chains, or “Chainlets,” that provide applications with infinite horizontal scalability. Each Chainlet is a replica of the Saga Mainnet, with the same validator set and security model.\n\nSaga’s mission is to enable the next 1000 chains in gaming and entertainment as part of the growing Saga Multiverse.',
       denom_units: [{
           denom: 'ibc/094FB70C3006906F67F5D674073D2DAFAFB41537E7033098F5C752F211E7B6C2',
           exponent: 0,
@@ -9591,7 +9718,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The native token of Scorum',
-      extended_description: 'Scorum is a dynamic Layer-1 blockchain powered by Cosmos, designed to redefine the gaming and entertainment industries. Currently, it supports Aviatrix, a compelling crash game that not only leverages blockchain technology for secure and transparent gaming outcomes but also utilizes it for the integration of Non-Fungible Tokens (NFTs). Central to Scorum’s ecosystem is the SCR token, which supports both Aviatrix and future applications set to expand the platform’s offerings. The adoption of the Inter-Blockchain Communication protocol significantly enhances Scorum’s interoperability and scalability, paving the way for its ongoing expansion and the development of innovative, blockchain-powered entertainment solutions.',
       denom_units: [{
           denom: 'ibc/178248C262DE2E141EE6287EE7AB0854F05F25B0A3F40C4B912FA1C7E51F466E',
           exponent: 0,
@@ -9734,7 +9860,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The native token of SEDA Chain.',
-      extended_description: 'SEDA is a standard for modular data transport and querying. Any data type, for all networks.',
       denom_units: [{
           denom: 'ibc/956AEF1DA92F70584266E87978C3F30A43B91EE6ABC62F03D097E79F6B99C4D8',
           exponent: 0,
@@ -10111,7 +10236,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The native token of SOURCE Chain',
-      extended_description: 'Enterprises, developers, and individuals are empowered to use SOURCE\'s sustainable and value backed network to easily access, build, and integrate web3 applications and services.',
       denom_units: [{
           denom: 'ibc/E7905742CE2EA4EA5D592527DC89220C59B617DE803939FE7293805A64B484D7',
           exponent: 0,
@@ -11436,7 +11560,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'Staking and governance coin for the Unification Blockchain',
-      extended_description: 'Fundamentally, the Unification Blockchain Toolkit comprises two core branches: Blockchain Business products, to welcome traditional enterprises into the Web3 economy; and Permissionless Products, an open-access toolkit to power and enrich Dapps on Ethereum/EVM networks',
       denom_units: [{
           denom: 'ibc/608EF5C0CE64FEA097500DB39657BDD36CA708CC5DCC2E250A024B6981DD36BC',
           exponent: 0,
@@ -11653,7 +11776,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The native EVM, governance and staking token of the Planq Network',
-      extended_description: 'Planq is the very first cryptocurrency project to keep mobile platform usability at heart, taking a step away from dependency on desktop services. By focusing on easy accessibility and close integration of other blockchains via easy to use bridges, Planq will push Web 3 adoption in the mobile space to the next level.',
       denom_units: [{
           denom: 'ibc/B1E0166EA0D759FDF4B207D1F5F12210D8BFE36F2345CEFC76948CE2B36DFBAF',
           exponent: 0,
@@ -11877,7 +11999,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The native governance token for Qwoyn Network',
-      extended_description: 'The Qwoyn Network stands as a cutting-edge gaming hub that embeds Web3 technologies into the core of interactive entertainment. It revolutionizes the gaming industry by ensuring true ownership of in-game assets for players, facilitated through blockchain. This approach not only enhances gameplay but also fosters a unique ecosystem of interoperability and innovation. As a beacon in the gaming world, Qwoyn Network is dedicated to merging the excitement of traditional gaming with the transformative potential of Web3, creating a seamless and enriched gaming experience.',
       denom_units: [{
           denom: 'ibc/09FAF1E04435E14C68DE7AB0D03C521C92975C792DB12B2EA390BAA2E06B3F3D',
           exponent: 0,
@@ -12132,7 +12253,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The native staking and governance token of Saga.',
-      extended_description: 'Saga is a Layer 1 protocol that allows developers to automatically spin up VM-agnostic, parallelized and interoperable dedicated chains, or “Chainlets,” that provide applications with infinite horizontal scalability. Each Chainlet is a replica of the Saga Mainnet, with the same validator set and security model.\n\nSaga’s mission is to enable the next 1000 chains in gaming and entertainment as part of the growing Saga Multiverse.',
       denom_units: [{
           denom: 'ibc/094FB70C3006906F67F5D674073D2DAFAFB41537E7033098F5C752F211E7B6C2',
           exponent: 0,
@@ -12183,7 +12303,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The native token of Scorum',
-      extended_description: 'Scorum is a dynamic Layer-1 blockchain powered by Cosmos, designed to redefine the gaming and entertainment industries. Currently, it supports Aviatrix, a compelling crash game that not only leverages blockchain technology for secure and transparent gaming outcomes but also utilizes it for the integration of Non-Fungible Tokens (NFTs). Central to Scorum’s ecosystem is the SCR token, which supports both Aviatrix and future applications set to expand the platform’s offerings. The adoption of the Inter-Blockchain Communication protocol significantly enhances Scorum’s interoperability and scalability, paving the way for its ongoing expansion and the development of innovative, blockchain-powered entertainment solutions.',
       denom_units: [{
           denom: 'ibc/178248C262DE2E141EE6287EE7AB0854F05F25B0A3F40C4B912FA1C7E51F466E',
           exponent: 0,
@@ -12326,7 +12445,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The native token of SEDA Chain.',
-      extended_description: 'SEDA is a standard for modular data transport and querying. Any data type, for all networks.',
       denom_units: [{
           denom: 'ibc/956AEF1DA92F70584266E87978C3F30A43B91EE6ABC62F03D097E79F6B99C4D8',
           exponent: 0,
@@ -12703,7 +12821,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'The native token of SOURCE Chain',
-      extended_description: 'Enterprises, developers, and individuals are empowered to use SOURCE\'s sustainable and value backed network to easily access, build, and integrate web3 applications and services.',
       denom_units: [{
           denom: 'ibc/E7905742CE2EA4EA5D592527DC89220C59B617DE803939FE7293805A64B484D7',
           exponent: 0,
@@ -14028,7 +14145,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'Staking and governance coin for the Unification Blockchain',
-      extended_description: 'Fundamentally, the Unification Blockchain Toolkit comprises two core branches: Blockchain Business products, to welcome traditional enterprises into the Web3 economy; and Permissionless Products, an open-access toolkit to power and enrich Dapps on Ethereum/EVM networks',
       denom_units: [{
           denom: 'ibc/608EF5C0CE64FEA097500DB39657BDD36CA708CC5DCC2E250A024B6981DD36BC',
           exponent: 0,
@@ -14268,7 +14384,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.svg'
       },
-      coingecko_id: 'marble',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.svg'
@@ -14307,7 +14422,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.svg'
       },
-      coingecko_id: 'hope-galaxy',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.svg'
@@ -14458,7 +14572,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.svg'
       },
-      coingecko_id: 'junoswap-raw-dao',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.svg'
@@ -14757,7 +14870,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.svg'
       },
-      coingecko_id: 'stakeeasy-juno-derivative',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.svg'
@@ -14796,7 +14908,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.svg'
       },
-      coingecko_id: 'stakeeasy-bjuno',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.svg'
@@ -15060,7 +15171,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.svg'
       },
-      coingecko_id: 'hopers-io',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.svg'
@@ -15520,7 +15630,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'Kleomedes Token',
-      extended_description: 'Kleomedes is an infrastructure provider that self-hosts nodes that validate IBC networks. We are active in supporting the chains we validate through providing infrastructure support in the form of RPC endpoints and relayers.\n\nAs a DAO, we have a community of delegators who are active in the discussion of governance on all the chains we validate. We are one of the only validators in the Cosmos Ecosystem that places 100% of profits under the control of DAO governance.\n\nWe support innovation in the Cosmos Ecosystem by funding and supporting projects that we believe, support the growth and decentralization of the networks we validate.',
       type_asset: 'cw20',
       address: 'juno10gthz5ufgrpuk5cscve2f0hjp56wgp90psqxcrqlg4m9mcu9dh8q4864xy',
       denom_units: [{
@@ -16740,6 +16849,36 @@ const asset_list: AssetList = {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
             channel_id: 'channel-47',
             base_denom: 'cw20:juno1mvkgcr5uce2rnpzr4qrzf50hx4qreuwzlt7fzsjrhjud3xnjmttq5mkh2m',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }]
+    },
+    {
+      description: 'Airdrop For All [AFA - New Name on Cosmos Ecosystem, A4A - Old Name on TurtleNetwork] is a token from turtleNetwork towards cosmos ecosystem.',
+      type_asset: 'cw20',
+      address: 'juno1spjes0smg5yp40dl7gqyw0h8rn03tnmve06dd2m5acwgh6tlx86swha3xg',
+      denom_units: [{
+          denom: 'ibc/0D62E47FDEBBC199D4E1853C0708F0F9337AC62D95B719585C9700E466060995',
+          exponent: 0,
+          aliases: ['cw20:juno1spjes0smg5yp40dl7gqyw0h8rn03tnmve06dd2m5acwgh6tlx86swha3xg']
+        }],
+      base: 'ibc/0D62E47FDEBBC199D4E1853C0708F0F9337AC62D95B719585C9700E466060995',
+      name: 'Airdrop For All',
+      display: 'cw20:juno1spjes0smg5yp40dl7gqyw0h8rn03tnmve06dd2m5acwgh6tlx86swha3xg',
+      symbol: 'AFA',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/afa.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom: 'cw20:juno1spjes0smg5yp40dl7gqyw0h8rn03tnmve06dd2m5acwgh6tlx86swha3xg',
             chain_name: 'juno'
           },
           chain: {
@@ -16917,7 +17056,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.svg'
       },
-      coingecko_id: 'marble',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.svg'
@@ -16956,7 +17094,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.svg'
       },
-      coingecko_id: 'hope-galaxy',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.svg'
@@ -17107,7 +17244,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.svg'
       },
-      coingecko_id: 'junoswap-raw-dao',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.svg'
@@ -17406,7 +17542,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.svg'
       },
-      coingecko_id: 'stakeeasy-juno-derivative',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/sejuno.svg'
@@ -17445,7 +17580,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.svg'
       },
-      coingecko_id: 'stakeeasy-bjuno',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bjuno.svg'
@@ -17709,7 +17843,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.svg'
       },
-      coingecko_id: 'hopers-io',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hopers.svg'
@@ -18169,7 +18302,6 @@ const asset_list: AssetList = {
     },
     {
       description: 'Kleomedes Token',
-      extended_description: 'Kleomedes is an infrastructure provider that self-hosts nodes that validate IBC networks. We are active in supporting the chains we validate through providing infrastructure support in the form of RPC endpoints and relayers.\n\nAs a DAO, we have a community of delegators who are active in the discussion of governance on all the chains we validate. We are one of the only validators in the Cosmos Ecosystem that places 100% of profits under the control of DAO governance.\n\nWe support innovation in the Cosmos Ecosystem by funding and supporting projects that we believe, support the growth and decentralization of the networks we validate.',
       type_asset: 'cw20',
       address: 'juno10gthz5ufgrpuk5cscve2f0hjp56wgp90psqxcrqlg4m9mcu9dh8q4864xy',
       denom_units: [{
@@ -19389,6 +19521,36 @@ const asset_list: AssetList = {
             port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
             channel_id: 'channel-47',
             base_denom: 'cw20:juno1mvkgcr5uce2rnpzr4qrzf50hx4qreuwzlt7fzsjrhjud3xnjmttq5mkh2m',
+            chain_name: 'juno'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-169'
+          }
+        }]
+    },
+    {
+      description: 'Airdrop For All [AFA - New Name on Cosmos Ecosystem, A4A - Old Name on TurtleNetwork] is a token from turtleNetwork towards cosmos ecosystem.',
+      type_asset: 'cw20',
+      address: 'juno1spjes0smg5yp40dl7gqyw0h8rn03tnmve06dd2m5acwgh6tlx86swha3xg',
+      denom_units: [{
+          denom: 'ibc/0D62E47FDEBBC199D4E1853C0708F0F9337AC62D95B719585C9700E466060995',
+          exponent: 0,
+          aliases: ['cw20:juno1spjes0smg5yp40dl7gqyw0h8rn03tnmve06dd2m5acwgh6tlx86swha3xg']
+        }],
+      base: 'ibc/0D62E47FDEBBC199D4E1853C0708F0F9337AC62D95B719585C9700E466060995',
+      name: 'Airdrop For All',
+      display: 'cw20:juno1spjes0smg5yp40dl7gqyw0h8rn03tnmve06dd2m5acwgh6tlx86swha3xg',
+      symbol: 'AFA',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/afa.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.juno1v4887y83d6g28puzvt8cl0f3cdhd3y6y9mpysnsp3k8krdm7l6jqgm0rkn',
+            channel_id: 'channel-47',
+            base_denom: 'cw20:juno1spjes0smg5yp40dl7gqyw0h8rn03tnmve06dd2m5acwgh6tlx86swha3xg',
             chain_name: 'juno'
           },
           chain: {
@@ -19646,7 +19808,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'
       },
-      coingecko_id: 'buttcoin-2',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'
@@ -20976,7 +21137,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'
       },
-      coingecko_id: 'buttcoin-2',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'

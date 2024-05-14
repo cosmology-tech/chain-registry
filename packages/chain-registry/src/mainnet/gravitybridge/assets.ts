@@ -119,6 +119,7 @@ const info: AssetList = {
       name: 'USD Coin',
       display: 'gusdc',
       symbol: 'USDC',
+      coingecko_id: 'bridged-usd-coin-gravity-bridge',
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },

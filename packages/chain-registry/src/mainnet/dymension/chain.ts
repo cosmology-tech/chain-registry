@@ -149,6 +149,10 @@ const info: Chain = {
       {
         address: 'https://dymension-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://rpc.mainnet.dymension.aviaone.com',
+        provider: 'AVIAONE 🟢'
       }
     ],
     rest: [
@@ -263,6 +267,10 @@ const info: Chain = {
       {
         address: 'https://dymension-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://api.mainnet.dymension.aviaone.com',
+        provider: 'AVIAONE 🟢'
       }
     ],
     grpc: [
@@ -349,6 +357,10 @@ const info: Chain = {
       {
         address: 'dymension-grpc.noders.services:12090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://grpc.mainnet.dymension.aviaone.com:9092',
+        provider: 'AVIAONE 🟢'
       }
     ],
     "evm-http-jsonrpc": [
@@ -387,6 +399,12 @@ const info: Chain = {
     ]
   },
   explorers: [
+    {
+      kind: 'mintscan',
+      url: 'https://www.mintscan.io/dymension',
+      tx_page: 'https://www.mintscan.io/dymension/tx/${txHash}',
+      account_page: 'https://www.mintscan.io/dymension/account/${accountAddress}'
+    },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/dymension',
@@ -428,6 +446,12 @@ const info: Chain = {
       url: 'https://explorer.posthuman.digital/dymension',
       tx_page: 'https://explorer.posthuman.digital/dymension/tx/${txHash}',
       account_page: 'https://explorer.posthuman.digital/dymension/account/${accountAddress}'
+    },
+    {
+      kind: 'AVIAONE 🟢',
+      url: 'https://mainnet.explorer.aviaone.com/dymension',
+      tx_page: 'https://mainnet.explorer.aviaone.com/dymension/tx/${txHash}',
+      account_page: 'https://mainnet.explorer.aviaone.com/dymension/account/${accountAddress}'
     }
   ]
 };

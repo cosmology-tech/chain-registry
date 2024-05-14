@@ -63,6 +63,14 @@ const info: Chain = {
       {
         address: 'https://seda-rpc.ibs.team:443',
         provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://seda-mainnet-rpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://rpc.seda.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ],
     rest: [
@@ -93,6 +101,14 @@ const info: Chain = {
       {
         address: 'https://seda-api.ibs.team:443',
         provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://seda-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://lcd.seda.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ],
     grpc: [
@@ -111,6 +127,14 @@ const info: Chain = {
       {
         address: 'https://seda-grpc.lavenderfive.com',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'seda-mainnet-grpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://grpc.seda.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ]
   },

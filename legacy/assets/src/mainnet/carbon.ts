@@ -160,7 +160,6 @@ const assets: AssetList = {
     },
     {
       description: 'The token of Neokingdom DAO.',
-      extended_description: 'Neokingdom DAO wants to make employment fairer, by facilitating both web3 and real-world businesses to operate as Decentralized Autonomous Organizations (DAOs).',
       denom_units: [{
           denom: 'ibc/DB17D8D720B09503376E950B6AD1F04C456861480787ADF7BE61406ACB8BC0F3',
           exponent: 0,
@@ -385,6 +384,7 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'ION is the second native token of Osmosis.',
       denom_units: [{
           denom: 'ibc/F7E92EE59B5428793F3EF5C1A4CB2494F61A9D0C9A69469D02390714A1372E16',
           exponent: 0,
@@ -621,7 +621,6 @@ const assets: AssetList = {
     },
     {
       description: 'The token of Neokingdom DAO.',
-      extended_description: 'Neokingdom DAO wants to make employment fairer, by facilitating both web3 and real-world businesses to operate as Decentralized Autonomous Organizations (DAOs).',
       denom_units: [{
           denom: 'ibc/DB17D8D720B09503376E950B6AD1F04C456861480787ADF7BE61406ACB8BC0F3',
           exponent: 0,
@@ -846,6 +845,7 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'ION is the second native token of Osmosis.',
       denom_units: [{
           denom: 'ibc/F7E92EE59B5428793F3EF5C1A4CB2494F61A9D0C9A69469D02390714A1372E16',
           exponent: 0,

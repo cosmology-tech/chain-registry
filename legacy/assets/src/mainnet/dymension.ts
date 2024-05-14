@@ -89,7 +89,6 @@ const assets: AssetList = {
     },
     {
       description: 'The native token of the Celestia blockchain.',
-      extended_description: 'Celestia is a modular data availability network. It simplifies the process of launching blockchains, making blockchain technology more accessible and user-friendly. Unlike traditional blockchains that handle multiple functions, Celestia specializes in specific roles, which leads to enhanced scalability, flexibility, and interoperability. This specialization enables developers to create blockchain applications for mass adoption​.',
       denom_units: [{
           denom: 'ibc/45D6B52CAD911A15BD9C2F5FFDA80E26AFCB05C7CD520070790ABC86D2B24229',
           exponent: 0,
@@ -253,7 +252,6 @@ const assets: AssetList = {
     },
     {
       description: 'The native token of the Celestia blockchain.',
-      extended_description: 'Celestia is a modular data availability network. It simplifies the process of launching blockchains, making blockchain technology more accessible and user-friendly. Unlike traditional blockchains that handle multiple functions, Celestia specializes in specific roles, which leads to enhanced scalability, flexibility, and interoperability. This specialization enables developers to create blockchain applications for mass adoption​.',
       denom_units: [{
           denom: 'ibc/45D6B52CAD911A15BD9C2F5FFDA80E26AFCB05C7CD520070790ABC86D2B24229',
           exponent: 0,
@@ -371,7 +369,6 @@ const assets: AssetList = {
     },
     {
       description: 'The token of Neokingdom DAO.',
-      extended_description: 'Neokingdom DAO wants to make employment fairer, by facilitating both web3 and real-world businesses to operate as Decentralized Autonomous Organizations (DAOs).',
       denom_units: [{
           denom: 'ibc/6C4D9DB68084D08303E480598D82DE54815F0F9FE058AA81F8780C80D2CE9D56',
           exponent: 0,
@@ -482,7 +479,6 @@ const assets: AssetList = {
     },
     {
       description: 'The native staking and governance token of Kava',
-      extended_description: 'The native staking and governance token of Kava\n\nKava is a Layer-1 blockchain that combines the speed and interoperability of Cosmos with the developer power of Ethereum.\n\nThe Kava Network uses a developer-optimized co-chain architecture. The Ethereum Co-Chain enables support for EVM smart contracts while the Cosmos Co-Chain enables the lightning-fast Tendermint consensus engine and the Inter Blockchain Communication Protocol (IBC).\n\nThe two co-chains are connected by a translator module that enables them to interoperate seamlessly, bringing the two most used blockchain development environments together in a single, scalable network.\n\nThe Kava Network features a native governance and utility token, KAVA, that can be staked by validators or delegated to validator nodes. Stakers and delegators earn 37.5% of all KAVA emissions as a reward for securing the network. Kava stakers also have voting rights in network governance proposals.',
       denom_units: [{
           denom: 'ibc/567D01F41E7047F60174CD64D10E8D85E09E1B831023BC75622A8F67C540DCD4',
           exponent: 0,
@@ -837,7 +833,6 @@ const assets: AssetList = {
     },
     {
       description: 'The native token of Nim Network.',
-      extended_description: 'Nim Network is a highly-adoptable AI Gaming chain that will provide the ultimate ecosystem for exploration and development of games at the intersection of Web3 and AI.',
       denom_units: [{
           denom: 'ibc/FB53D1684F155CBB86D9CE917807E42B59209EBE3AD3A92E15EF66586C073942',
           exponent: 0,
@@ -860,6 +855,10 @@ const assets: AssetList = {
         twitter: 'https://twitter.com/nim_network'
       },
       keywords: ['gaming', 'AI'],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nim/images/nim.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nim/images/nim.svg'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -982,6 +981,7 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'ION is the second native token of Osmosis.',
       denom_units: [{
           denom: 'ibc/6FA7B62692FBCA2E51F567947035DE3C5D7333D49D13B85A25F358E80DF4E991',
           exponent: 0,
@@ -1140,7 +1140,6 @@ const assets: AssetList = {
     },
     {
       description: 'The token of Neokingdom DAO.',
-      extended_description: 'Neokingdom DAO wants to make employment fairer, by facilitating both web3 and real-world businesses to operate as Decentralized Autonomous Organizations (DAOs).',
       denom_units: [{
           denom: 'ibc/6C4D9DB68084D08303E480598D82DE54815F0F9FE058AA81F8780C80D2CE9D56',
           exponent: 0,
@@ -1251,7 +1250,6 @@ const assets: AssetList = {
     },
     {
       description: 'The native staking and governance token of Kava',
-      extended_description: 'The native staking and governance token of Kava\n\nKava is a Layer-1 blockchain that combines the speed and interoperability of Cosmos with the developer power of Ethereum.\n\nThe Kava Network uses a developer-optimized co-chain architecture. The Ethereum Co-Chain enables support for EVM smart contracts while the Cosmos Co-Chain enables the lightning-fast Tendermint consensus engine and the Inter Blockchain Communication Protocol (IBC).\n\nThe two co-chains are connected by a translator module that enables them to interoperate seamlessly, bringing the two most used blockchain development environments together in a single, scalable network.\n\nThe Kava Network features a native governance and utility token, KAVA, that can be staked by validators or delegated to validator nodes. Stakers and delegators earn 37.5% of all KAVA emissions as a reward for securing the network. Kava stakers also have voting rights in network governance proposals.',
       denom_units: [{
           denom: 'ibc/567D01F41E7047F60174CD64D10E8D85E09E1B831023BC75622A8F67C540DCD4',
           exponent: 0,
@@ -1606,7 +1604,6 @@ const assets: AssetList = {
     },
     {
       description: 'The native token of Nim Network.',
-      extended_description: 'Nim Network is a highly-adoptable AI Gaming chain that will provide the ultimate ecosystem for exploration and development of games at the intersection of Web3 and AI.',
       denom_units: [{
           denom: 'ibc/FB53D1684F155CBB86D9CE917807E42B59209EBE3AD3A92E15EF66586C073942',
           exponent: 0,
@@ -1629,6 +1626,10 @@ const assets: AssetList = {
         twitter: 'https://twitter.com/nim_network'
       },
       keywords: ['gaming', 'AI'],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nim/images/nim.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nim/images/nim.svg'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1751,6 +1752,7 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'ION is the second native token of Osmosis.',
       denom_units: [{
           denom: 'ibc/6FA7B62692FBCA2E51F567947035DE3C5D7333D49D13B85A25F358E80DF4E991',
           exponent: 0,

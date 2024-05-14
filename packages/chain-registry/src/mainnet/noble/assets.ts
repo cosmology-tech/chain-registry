@@ -97,7 +97,7 @@ const info: AssetList = {
         }],
       base: 'uusdc',
       display: 'usdc',
-      name: 'USD Coin',
+      name: 'USDC',
       symbol: 'USDC',
       coingecko_id: 'usd-coin',
       traces: [{

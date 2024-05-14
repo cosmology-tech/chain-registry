@@ -44,11 +44,11 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://composable-rpc.cogwheel.zone:443',
-        provider: 'Cogwheel'
+        address: 'https://picasso-rpc.cogwheel.zone:443',
+        provider: 'Cogwheel ⚙️'
       },
       {
-        address: 'https://composable-rpc.lavenderfive.com:443',
+        address: 'https://picasso-rpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -82,6 +82,10 @@ const info: Chain = {
       {
         address: 'https://rpc.composable.citizenweb3.com:443',
         provider: 'Citizen Web3'
+      },
+      {
+        address: 'https://composable.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
       }
     ],
     rest: [
@@ -94,11 +98,11 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://composable-api.cogwheel.zone:443',
-        provider: 'Cogwheel'
+        address: 'https://picasso-api.cogwheel.zone:443',
+        provider: 'Cogwheel ⚙️'
       },
       {
-        address: 'https://composable-api.lavenderfive.com:443',
+        address: 'https://picasso-api.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -152,11 +156,11 @@ const info: Chain = {
         provider: 'Cosmos Spaces'
       },
       {
-        address: 'https://composable-grpc.cogwheel.zone:443',
-        provider: 'Cogwheel'
+        address: 'https://picasso-grpc.cogwheel.zone:443',
+        provider: 'Cogwheel ⚙️'
       },
       {
-        address: 'https://composable-grpc.lavenderfive.com:443',
+        address: 'https://picasso-grpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -194,6 +198,10 @@ const info: Chain = {
       {
         address: 'https://composable.grpc.moonbridge.team',
         provider: 'Moonbridge'
+      },
+      {
+        address: 'composable.grpc.m.stavr.tech:9907',
+        provider: '🔥STAVR🔥'
       }
     ]
   },

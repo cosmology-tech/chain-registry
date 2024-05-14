@@ -87,6 +87,10 @@ const info: Chain = {
       {
         address: 'https://fetch.rpc.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://rpc.fetchhub-4.fetch.aviaone.com',
+        provider: 'AVIAONE 🟢'
       }
     ],
     rest: [
@@ -145,6 +149,10 @@ const info: Chain = {
       {
         address: 'https://fetch.api.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://api.fetchhub-4.fetch.aviaone.com/',
+        provider: 'AVIAONE 🟢'
       }
     ],
     grpc: [
@@ -187,6 +195,10 @@ const info: Chain = {
       {
         address: 'fetch.grpc.nodeshub.online',
         provider: 'Nodes Hub'
+      },
+      {
+        address: 'grpc.fetchhub-4.fetch.aviaone.com:9094',
+        provider: 'AVIAONE 🟢'
       }
     ]
   },
@@ -235,6 +247,12 @@ const info: Chain = {
       url: 'https://explorer.nodeshub.online/fetchhub/',
       tx_page: 'https://explorer.nodeshub.online/fetchhub/tx/${txHash}',
       account_page: 'https://explorer.nodeshub.online/fetchhub/accounts/${accountAddress}'
+    },
+    {
+      kind: 'Blockchain Explorer by AVIAONE 🟢',
+      url: 'https://mainnet.explorer.aviaone.com/fetchhub',
+      tx_page: 'https://mainnet.explorer.aviaone.com/fetchhub/tx/${txHash}',
+      account_page: 'https://mainnet.explorer.aviaone.com/fetchhub/accounts/${accountAddress}'
     }
   ],
   images: [{

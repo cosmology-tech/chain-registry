@@ -66,6 +66,10 @@ const info: Chain = {
       {
         address: 'https://lava-rpc.ibs.team:443',
         provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://rpc.lava-mainnet-1.lava.aviaone.com:443',
+        provider: 'AVIAONE'
       }
     ],
     rest: [
@@ -80,6 +84,10 @@ const info: Chain = {
       {
         address: 'https://lava-api.ibs.team:443',
         provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://api.lava-mainnet-1.lava.aviaone.com',
+        provider: 'AVIAONE'
       }
     ]
   },

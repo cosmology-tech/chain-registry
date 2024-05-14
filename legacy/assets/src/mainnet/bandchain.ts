@@ -90,6 +90,7 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'ION is the second native token of Osmosis.',
       denom_units: [{
           denom: 'ibc/1005CD468908E4EB83A7E3D4A68E90128D073E3A85611B8B424320F306C508E1',
           exponent: 0,
@@ -217,6 +218,7 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'ION is the second native token of Osmosis.',
       denom_units: [{
           denom: 'ibc/1005CD468908E4EB83A7E3D4A68E90128D073E3A85611B8B424320F306C508E1',
           exponent: 0,

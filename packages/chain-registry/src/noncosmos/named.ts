@@ -11,6 +11,7 @@ export * as fantom from './fantom';
 export * as filecoin from './filecoin';
 export * as kusama from './kusama';
 export * as moonbeam from './moonbeam';
+export * as penumbra from './penumbra';
 export * as polkadot from './polkadot';
 export * as polygon from './polygon';
 export * as solana from './solana';

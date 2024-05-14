@@ -27,7 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.9'
+    cosmos_sdk_version: 'v0.47.11'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png',
@@ -421,6 +421,12 @@ const info: Chain = {
       url: 'https://explorers.cryptech.com.ua/bitcanna',
       tx_page: 'https://explorers.cryptech.com.ua/bitcanna/txs/${txHash}',
       account_page: 'https://explorers.cryptech.com.ua/bitcanna/account/${accountAddress}'
+    },
+    {
+      kind: 'Blockchain Explorer by AVIAONE 🟢',
+      url: 'https://mainnet.explorer.aviaone.com/bitcanna',
+      tx_page: 'https://mainnet.explorer.aviaone.com/bitcanna/txs/${txHash}',
+      account_page: 'https://mainnet.explorer.aviaone.com/bitcanna/account/${accountAddress}'
     }
   ],
   images: [{

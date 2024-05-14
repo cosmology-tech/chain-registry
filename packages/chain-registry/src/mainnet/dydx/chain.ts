@@ -93,6 +93,10 @@ const info: Chain = {
       {
         address: 'https://dydx-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://dydx.interstellar-lounge.org',
+        provider: 'Interstellar Lounge 🍸'
       }
     ],
     rest: [
@@ -147,6 +151,10 @@ const info: Chain = {
       {
         address: 'https://dydx-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://dydx-rest.interstellar-lounge.org',
+        provider: 'Interstellar Lounge 🍸'
       }
     ],
     grpc: [

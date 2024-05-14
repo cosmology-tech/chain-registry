@@ -120,6 +120,7 @@ import * as _persistence from './persistence';
 import * as _planq from './planq';
 import * as _point from './point';
 import * as _provenance from './provenance';
+import * as _pryzm from './pryzm';
 import * as _pundix from './pundix';
 import * as _pylons from './pylons';
 import * as _quasar from './quasar';
@@ -285,6 +286,7 @@ const assets: AssetList[] = [
   _planq.assets,
   _point.assets,
   _provenance.assets,
+  _pryzm.assets,
   _pundix.assets,
   _pylons.assets,
   _quasar.assets,

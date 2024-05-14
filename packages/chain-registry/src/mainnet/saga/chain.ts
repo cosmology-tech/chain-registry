@@ -61,6 +61,10 @@ const info: Chain = {
       {
         address: 'https://rpc.saga.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://saga-rpc.lavenderfive.com:443',
+        provider: 'Lavender.Five Nodes 🐝'
       }
     ],
     rest: [
@@ -87,6 +91,10 @@ const info: Chain = {
       {
         address: 'https://lcd.saga.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://saga-api.lavenderfive.com:443',
+        provider: 'Lavender.Five Nodes 🐝'
       }
     ],
     grpc: [
@@ -109,6 +117,10 @@ const info: Chain = {
       {
         address: 'grpc.saga.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://saga-grpc.lavenderfive.com:443',
+        provider: 'Lavender.Five Nodes 🐝'
       }
     ]
   },
