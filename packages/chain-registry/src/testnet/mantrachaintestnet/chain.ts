@@ -34,14 +34,23 @@ const info: Chain = {
     rpc: [{
         address: 'https://rpc.hongbai.mantrachain.io',
         provider: 'MANTRACHAIN'
+      }, {
+        address: 'https://mantra-testnet-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }],
     rest: [{
         address: 'https://api.hongbai.mantrachain.io',
         provider: 'MANTRACHAIN'
+      }, {
+        address: 'https://mantra-testnet-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }],
     grpc: [{
         address: 'https://grpc.hongbai.mantrachain.io',
         provider: 'MANTRACHAIN'
+      }, {
+        address: 'mantra-testnet-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }]
   },
   logo_URIs: {

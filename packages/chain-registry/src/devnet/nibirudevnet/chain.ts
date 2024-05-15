@@ -40,6 +40,10 @@ const info: Chain = {
   },
   description: 'A Web3 hub ushering in the next era of money',
   apis: {
+    wss: [{
+        address: 'wss://hm-graphql.devnet-1.nibiru.fi/query',
+        provider: 'Nibiru Foundation'
+      }],
     rpc: [{
         address: 'https://rpc.devnet-1.nibiru.fi',
         provider: 'Nibiru Foundation'

@@ -13661,6 +13661,28 @@ const assets: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/PBB.png'
         }]
+    },
+    {
+      description: 'Like cosmos, but shit',
+      denom_units: [{
+          denom: 'factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/shitmos',
+          exponent: 0
+        }, {
+          denom: 'SHITMOS',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      address: 'osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8',
+      base: 'factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/shitmos',
+      name: 'Shitmos',
+      display: 'SHITMOS',
+      symbol: 'SHITMOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/SHITMOS.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/SHITMOS.png'
+        }]
     }
   ]
 };

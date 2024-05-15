@@ -65,6 +65,10 @@ const info: Chain = {
       {
         address: 'https://elys-rpc.kleomedes.network:443',
         provider: 'Kleomedes'
+      },
+      {
+        address: 'https://elys-testnet-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     rest: [
@@ -87,15 +91,26 @@ const info: Chain = {
       {
         address: 'https://elys-api.kleomedes.network:443',
         provider: 'Kleomedes'
+      },
+      {
+        address: 'https://elys-testnet-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
-    grpc: [{
+    grpc: [
+      {
         address: 'services.staketab.com:9390',
         provider: 'Staketab'
-      }, {
+      },
+      {
         address: 'elys-testnet-grpc.itrocket.net:38090',
         provider: 'itrocket'
-      }]
+      },
+      {
+        address: 'elys-testnet-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
+      }
+    ]
   },
   explorers: [
     {

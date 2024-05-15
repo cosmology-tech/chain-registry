@@ -47,6 +47,10 @@ const info: Chain = {
       {
         address: 'https://xpla-rpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'https://xpla-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     rest: [
@@ -65,12 +69,22 @@ const info: Chain = {
       {
         address: 'https://xpla-api.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'https://xpla-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
-    grpc: [],
+    grpc: [{
+        address: 'xpla-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
+      }],
     "evm-http-jsonrpc": [{
         address: 'https://dimension-evm-rpc.xpla.dev',
         provider: 'Holdings'
+      }, {
+        address: 'https://xpla-evm-rpc.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }]
   },
   explorers: [

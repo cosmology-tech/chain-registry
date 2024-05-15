@@ -40,6 +40,10 @@ const info: Chain = {
   },
   description: 'A Web3 hub ushering in the next era of money',
   apis: {
+    wss: [{
+        address: 'wss://hm-graphql.nibiru.fi/query',
+        provider: 'Nibiru Foundation'
+      }],
     rpc: [
       {
         address: 'https://rpc.nibiru.fi',
@@ -84,6 +88,10 @@ const info: Chain = {
       {
         address: 'https://nibiru-mainnet.rpc.stakevillage.net:443',
         provider: 'Stake Village'
+      },
+      {
+        address: 'https://nibiru-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     rest: [
@@ -134,6 +142,10 @@ const info: Chain = {
       {
         address: 'https://nibiru-mainnet.api.stakevillage.net',
         provider: 'Stake Village'
+      },
+      {
+        address: 'https://nibiru-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     grpc: [
@@ -180,6 +192,10 @@ const info: Chain = {
       {
         address: 'nibiru-mainnet.grpc.stakevillage.net:443',
         provider: 'Stake Village'
+      },
+      {
+        address: 'nibiru-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ]
   },

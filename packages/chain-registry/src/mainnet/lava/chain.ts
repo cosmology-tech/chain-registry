@@ -70,6 +70,10 @@ const info: Chain = {
       {
         address: 'https://rpc.lava-mainnet-1.lava.aviaone.com:443',
         provider: 'AVIAONE'
+      },
+      {
+        address: 'https://lava-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     rest: [
@@ -88,8 +92,16 @@ const info: Chain = {
       {
         address: 'https://api.lava-mainnet-1.lava.aviaone.com',
         provider: 'AVIAONE'
+      },
+      {
+        address: 'https://lava-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
-    ]
+    ],
+    grpc: [{
+        address: 'lava-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
+      }]
   },
   explorers: [{
       kind: 'w3coins',

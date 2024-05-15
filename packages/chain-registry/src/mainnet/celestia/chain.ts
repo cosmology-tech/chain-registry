@@ -139,6 +139,10 @@ const info: Chain = {
       {
         address: 'https://rpc.celestia.citizenweb3.com',
         provider: 'Citizen Web3'
+      },
+      {
+        address: 'https://celestia-mainnet-rpc.itrocket.net',
+        provider: '🚀 itrocket 🚀'
       }
     ],
     rest: [
@@ -233,6 +237,10 @@ const info: Chain = {
       {
         address: 'https://celestia-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://celestia-mainnet-api.itrocket.net',
+        provider: '🚀 itrocket 🚀'
       }
     ],
     grpc: [
@@ -311,6 +319,10 @@ const info: Chain = {
       {
         address: 'celestia-grpc.noders.services:11090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'celestia-mainnet-grpc.itrocket.net:40090',
+        provider: '🚀 itrocket 🚀'
       }
     ]
   },
@@ -355,6 +367,12 @@ const info: Chain = {
       url: 'https://ezstaking.app/celestia',
       tx_page: 'https://ezstaking.app/celestia/txs/${txHash}',
       account_page: 'https://ezstaking.app/celestia/account/${accountAddress}'
+    },
+    {
+      kind: '🚀 itrocket 🚀',
+      url: 'https://mainnet.itrocket.net/celestia',
+      tx_page: 'https://mainnet.itrocket.net/celestia/transaction/${txHash}',
+      account_page: 'https://mainnet.itrocket.net/celestia/account/${accountAddress}'
     }
   ],
   images: [{

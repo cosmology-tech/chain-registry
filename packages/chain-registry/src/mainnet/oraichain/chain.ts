@@ -71,6 +71,10 @@ const info: Chain = {
       {
         address: 'https://orai.rpc.m.stavr.tech',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://oraichain-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     rest: [
@@ -97,6 +101,10 @@ const info: Chain = {
       {
         address: 'https://orai.api.m.stavr.tech',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://oraichain-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     grpc: [
@@ -123,6 +131,10 @@ const info: Chain = {
       {
         address: 'orai.grpc.m.stavr.tech:110',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'oraichain-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ]
   },

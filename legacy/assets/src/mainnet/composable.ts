@@ -1071,6 +1071,76 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'CRV is the governance token for Curve Finance.',
+      type_asset: 'erc20',
+      address: '0xd533a949740bb3306d119cc777fa900ba034cd52',
+      denom_units: [{
+          denom: 'ibc/52C8C6197989684F891076F228F20CD1659AB6E1776E3B85E65CBBEC67DA5DED',
+          exponent: 0,
+          aliases: ['0xd533a949740bb3306d119cc777fa900ba034cd52']
+        }, {
+          denom: 'crv',
+          exponent: 18
+        }],
+      base: 'ibc/52C8C6197989684F891076F228F20CD1659AB6E1776E3B85E65CBBEC67DA5DED',
+      name: 'Curve DAO',
+      display: 'crv',
+      symbol: 'CRV',
+      coingecko_id: 'curve-dao-token',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/crv.png'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/crv.png'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0xd533a949740bb3306d119cc777fa900ba034cd52',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'The native governance token of Ethena.',
+      type_asset: 'erc20',
+      address: '0x57e114b691db790c35207b2e685d4a43181e6061',
+      denom_units: [{
+          denom: 'ibc/B089810D5A6316AD5E9C7808733DC4AB11C7BA3033221D28711FC7206BACB929',
+          exponent: 0,
+          aliases: ['0x57e114b691db790c35207b2e685d4a43181e6061']
+        }, {
+          denom: 'ena',
+          exponent: 18
+        }],
+      base: 'ibc/B089810D5A6316AD5E9C7808733DC4AB11C7BA3033221D28711FC7206BACB929',
+      name: 'Ethena',
+      display: 'ena',
+      symbol: 'ENA',
+      coingecko_id: 'ethena',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ena.png'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ena.png'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x57e114b691db790c35207b2e685d4a43181e6061',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
       description: 'The native EVM, governance and staking token of the Evmos Hub',
       denom_units: [{
           denom: 'ibc/73E97EB411B29C6F989C35D277D1A7FC65083572F102AC6BD101884EE9FB2C9F',
@@ -3186,6 +3256,76 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-2',
             base_denom: '0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'CRV is the governance token for Curve Finance.',
+      type_asset: 'erc20',
+      address: '0xd533a949740bb3306d119cc777fa900ba034cd52',
+      denom_units: [{
+          denom: 'ibc/52C8C6197989684F891076F228F20CD1659AB6E1776E3B85E65CBBEC67DA5DED',
+          exponent: 0,
+          aliases: ['0xd533a949740bb3306d119cc777fa900ba034cd52']
+        }, {
+          denom: 'crv',
+          exponent: 18
+        }],
+      base: 'ibc/52C8C6197989684F891076F228F20CD1659AB6E1776E3B85E65CBBEC67DA5DED',
+      name: 'Curve DAO',
+      display: 'crv',
+      symbol: 'CRV',
+      coingecko_id: 'curve-dao-token',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/crv.png'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/crv.png'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0xd533a949740bb3306d119cc777fa900ba034cd52',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'The native governance token of Ethena.',
+      type_asset: 'erc20',
+      address: '0x57e114b691db790c35207b2e685d4a43181e6061',
+      denom_units: [{
+          denom: 'ibc/B089810D5A6316AD5E9C7808733DC4AB11C7BA3033221D28711FC7206BACB929',
+          exponent: 0,
+          aliases: ['0x57e114b691db790c35207b2e685d4a43181e6061']
+        }, {
+          denom: 'ena',
+          exponent: 18
+        }],
+      base: 'ibc/B089810D5A6316AD5E9C7808733DC4AB11C7BA3033221D28711FC7206BACB929',
+      name: 'Ethena',
+      display: 'ena',
+      symbol: 'ENA',
+      coingecko_id: 'ethena',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ena.png'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ena.png'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x57e114b691db790c35207b2e685d4a43181e6061',
             chain_name: 'ethereum'
           },
           chain: {
