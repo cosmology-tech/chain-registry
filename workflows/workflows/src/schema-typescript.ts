@@ -51,6 +51,13 @@ export class SchemaTypeGenerator {
 
   public generateTypes(): void {
     this.registry.schemas.forEach(fileInfo => {
+      
+      // WTF! TOOD
+      if (!fileInfo) {
+        console.warn('Warning: generateTypes() registry has empty value for schema');
+        return;
+      }
+
       const schemaFile = fileInfo.path;
       if (this.isSchemaSupported(schemaFile)) {
         try {
