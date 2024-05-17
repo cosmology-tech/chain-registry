@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/interfaces",
-  "version": "0.34.0",
+  "version": "0.35.0",
   "description": "Chain Registry interfaces",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
