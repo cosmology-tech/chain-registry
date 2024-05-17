@@ -3280,6 +3280,11 @@ fast-glob@^3.2.9, fast-glob@^3.3.0:
     merge2 "^1.3.0"
     micromatch "^4.0.4"
 
+fast-json-patch@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/fast-json-patch/-/fast-json-patch-3.1.1.tgz#85064ea1b1ebf97a3f7ad01e23f9337e72c66947"
+  integrity sha512-vf6IHUX2SBcA+5/+4883dsIjpBTqmfBjmYiWK1savxQmFk4JfBMLa7ynTYOs1Rolp/T1betJxHiGD3g1Mn8lUQ==
+
 fast-json-stable-stringify@2.x, fast-json-stable-stringify@^2.0.0, fast-json-stable-stringify@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz#874bf69c6f404c2b5d99c481341399fd55892633"
@@ -4718,6 +4723,13 @@ json-parse-even-better-errors@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/json-parse-even-better-errors/-/json-parse-even-better-errors-3.0.1.tgz#02bb29fb5da90b5444581749c22cedd3597c6cb0"
   integrity sha512-aatBvbL26wVUCLmbWdCpeu9iF5wOyWpagiKkInA+kfws3sWdBrTnsvN2CKcyCYyUrc7rebNBlK6+kteg7ksecg==
+
+json-schema-patch@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/json-schema-patch/-/json-schema-patch-0.4.0.tgz#cdd6cd7a0064501149f939241cb7dfecbaabb421"
+  integrity sha512-TVHSylom1Tva3H5p7ud8DFrj3cvSc7EYNkoyYGRu2GqgHdbxrsjbdhhbwK00INr8BCYq/KZRwfL04kSOoLsb/Q==
+  dependencies:
+    fast-json-patch "^3.1.1"
 
 json-schema-traverse@^0.4.1:
   version "0.4.1"

@@ -1,0 +1,81 @@
+export interface Endpoint {
+  address: string;
+}
+export interface Explorer {
+  kind?: string;
+  url?: string;
+  txPage?: string;
+  accountPage?: string;
+}
+export interface FeeToken {
+  denom: string;
+  fixedMinGasPrice?: number;
+  lowGasPrice?: number;
+  averageGasPrice?: number;
+  highGasPrice?: number;
+  gasCosts?: {
+    cosmosSend?: number;
+    ibcTransfer?: number;
+  };
+}
+export interface StakingToken {
+  denom: string;
+}
+export interface Pointer {
+  chainName: string;
+  baseDenom?: string;
+}
+export interface Chain {
+  schema?: string;
+  chainName: string;
+  chainId: string;
+  preForkChainName?: string;
+  prettyName?: string;
+  website?: string;
+  networkType?: "mainnet" | "testnet" | "devnet";
+  bech32Prefix: string;
+  nodeHome?: string;
+  keyAlgos?: ("secp256k1" | "ethsecp256k1" | "ed25519" | "sr25519" | "bn254")[];
+  slip44?: number;
+  fees?: {
+    feeTokens: FeeToken[];
+  };
+  staking?: {
+    stakingTokens: StakingToken[];
+    lockDuration?: {
+      blocks?: number;
+      time?: string;
+    };
+  };
+  codebase?: {
+    cosmosSdkVersion?: string;
+    cosmwasmVersion?: string;
+    cosmwasmEnabled?: boolean;
+    ibcGoVersion?: string;
+    icsEnabled?: ("ics20-1" | "ics27-1" | "mauth")[];
+  };
+  images?: {
+    imageSync?: Pointer;
+    png?: string;
+    svg?: string;
+    theme?: {
+      primaryColorHex?: string;
+      circle?: boolean;
+      darkMode?: boolean;
+    };
+    layout?: "logo" | "logomark" | "logotype";
+    textPosition?: "top" | "bottom" | "left" | "right" | "integrated";
+  }[];
+  description?: string;
+  apis?: {
+    rpc?: Endpoint[];
+    rest?: Endpoint[];
+    grpc?: Endpoint[];
+    wss?: Endpoint[];
+    grpcWeb?: Endpoint[];
+    evmHttpJsonrpc?: Endpoint[];
+  };
+  explorers?: Explorer[];
+  keywords?: string[];
+  extraCodecs?: ("ethermint" | "injective")[];
+}
