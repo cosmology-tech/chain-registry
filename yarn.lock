@@ -4724,10 +4724,10 @@ json-parse-even-better-errors@^3.0.0:
   resolved "https://registry.yarnpkg.com/json-parse-even-better-errors/-/json-parse-even-better-errors-3.0.1.tgz#02bb29fb5da90b5444581749c22cedd3597c6cb0"
   integrity sha512-aatBvbL26wVUCLmbWdCpeu9iF5wOyWpagiKkInA+kfws3sWdBrTnsvN2CKcyCYyUrc7rebNBlK6+kteg7ksecg==
 
-json-schema-patch@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/json-schema-patch/-/json-schema-patch-0.4.0.tgz#cdd6cd7a0064501149f939241cb7dfecbaabb421"
-  integrity sha512-TVHSylom1Tva3H5p7ud8DFrj3cvSc7EYNkoyYGRu2GqgHdbxrsjbdhhbwK00INr8BCYq/KZRwfL04kSOoLsb/Q==
+json-schema-patch@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/json-schema-patch/-/json-schema-patch-0.5.0.tgz#c87e54f5a55c0bdf3f8ba230b1c0276ab14fadab"
+  integrity sha512-40NsAR5ROrOaQ39yEgs06HPhR7d+0CH1zh9+JNRnOh50R8PaQus2xH8K/Mn310FnErQta/MmZATUZ6n8oBwfKg==
   dependencies:
     fast-json-patch "^3.1.1"
 
