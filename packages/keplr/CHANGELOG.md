@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.53.0 (2024-05-17)
+
+**Note:** Version bump only for package @chain-registry/keplr
+
+
+
+
+
 ## [1.52.10](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.52.9...@chain-registry/keplr@1.52.10) (2024-05-17)
 
 **Note:** Version bump only for package @chain-registry/keplr
