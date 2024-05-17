@@ -33,7 +33,7 @@
   "dependencies": {
     "@chain-registry/v2": "^1.49.2",
     "@chain-registry/v2-types": "^0.33.2",
-    "bignumber.js": "9.1.1",
+    "bignumber.js": "9.1.2",
     "sha.js": "^2.4.11"
   },
   "keywords": [

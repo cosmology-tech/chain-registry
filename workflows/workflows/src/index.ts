@@ -1,3 +1,4 @@
+export * from './build';
 export * from './registry';
 export * from './schema-typescript';
 export * from './validator';

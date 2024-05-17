@@ -33,7 +33,7 @@
     "deepmerge": "^4.2.2"
   },
   "dependencies": {
-    "@chain-registry/types": "^0.28.13"
+    "@chain-registry/types": "^0.29.2"
   },
   "keywords": [
     "chain-registry",
