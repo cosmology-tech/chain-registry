@@ -20,6 +20,9 @@ const SCHEMA_WHITELIST = [
   'versions.schema.json'
 ];
 
+// export type SchemaMapper<T, V> = (value: V[], index: number, array: T[][]) => T;
+export type SchemaMapper = ([title, schema]: [string, JSONSchemaContent<any>]) => any;
+
 export interface JSONSchemaContent<T> {
   $schemaFile: string;
   path: string;
@@ -166,6 +169,20 @@ export class Registry {
       })
   }
 
+  public mapSchemas(mapper: SchemaMapper): any {
+    return Object.entries(this.schemaMappings).map(([title, schema]) => {
+      if (schema) return [title, schema];
+    }).filter(Boolean)
+    .map(mapper as any);
+  }
+
+  public forEachSchemas(mapper: SchemaMapper): any {
+    return Object.entries(this.schemaMappings).map(([title, schema]) => {
+      if (schema) return [title, schema];
+    }).filter(Boolean)
+    .forEach(mapper as any);
+  }
+
   public get chains(): Chain[] {
     return this.dataMappings.Chain.map(c => c.content);
   }
@@ -187,7 +204,7 @@ export class Registry {
   }
 
   public get schemas(): JSONSchemaContent<JSONSchema>[] {
-    return Object.entries(this.schemaMappings).map(([_str, obj])=> {
+    return this.mapSchemas(([_str, obj])=> {
       return obj as JSONSchemaContent<JSONSchema>;
     })
   }
