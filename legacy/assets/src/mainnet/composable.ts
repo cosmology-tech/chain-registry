@@ -1798,6 +1798,188 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Solana (SOL) is the native asset of the Solana blockchain.',
+      denom_units: [{
+          denom: 'ibc/C7F9D7DFF5469F53AB878ED0FBE53CC6B8B2720CD0ED09FD65F25343B13517CC',
+          exponent: 0,
+          aliases: ['Lamport']
+        }, {
+          denom: 'SOL',
+          exponent: 9
+        }],
+      type_asset: 'svm-base',
+      base: 'ibc/C7F9D7DFF5469F53AB878ED0FBE53CC6B8B2720CD0ED09FD65F25343B13517CC',
+      name: 'Solana',
+      display: 'SOL',
+      symbol: 'SOL',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol.svg'
+      },
+      coingecko_id: 'solana',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'Lamport',
+            chain_name: 'solana'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }]
+    },
+    {
+      description: 'The Official Bonk Inu token',
+      type_asset: 'erc20',
+      address: 'DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263',
+      denom_units: [{
+          denom: 'ibc/A09E5A2B0DE6CB5E8EC67F1662C7EE4202CEC192923DA1D4FCAEA078B4FCF5AC',
+          exponent: 0,
+          aliases: ['DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263']
+        }, {
+          denom: 'bonk',
+          exponent: 5
+        }],
+      base: 'ibc/A09E5A2B0DE6CB5E8EC67F1662C7EE4202CEC192923DA1D4FCAEA078B4FCF5AC',
+      name: 'Bonk',
+      display: 'bonk',
+      symbol: 'BONK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/bonk.png'
+      },
+      coingecko_id: 'bonk',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/bonk.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263',
+            chain_name: 'solana'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }]
+    },
+    {
+      description: 'Pyth is a protocol that allows market participants to publish pricing information on-chain for others to use. The protocol is an interaction between three parties:\n-Publishers submit pricing information to Pyth\'s oracle program. Pyth has multiple data publishers for every product to improve the accuracy and robustness of the system.\n-Pyth\'s oracle program combines publishers\' data to produce a single aggregate price and confidence interval.\nConsumers read the price information produced by the oracle program.\n\nPyth\'s oracle program runs simultaneously on both Solana mainnet and Pythnet. Each instance of the program is responsible for its own set of price feeds. Solana Price Feeds are available for use by Solana protocols. In this case, since the oracle program itself runs on Solana, the resulting prices are immediately available to consumers without requiring any additional work. Pythnet Price Feeds are available on 12+ blockchains. The prices constructed on Pythnet are transferred cross-chain to reach consumers on these blockchains.\n\nIn both cases, the critical component of the system is the oracle program that combines the data from each individual publisher. This program maintains a number of different Solana accounts that list the products on Pyth and their current price data. Publishers publish their price and confidence by interacting with the oracle program on every slot. The program stores this information in its accounts. The first price update in a slot additionally triggers price aggregation, which combines the price data from the previous slot into a single aggregate price and confidence interval. This aggregate price is written to the Solana account where it is readable by other on-chain programs and available for transmission to other blockchains.',
+      type_asset: 'erc20',
+      address: 'HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3',
+      denom_units: [{
+          denom: 'ibc/62F989E5DC56D690987A3B633C3A86CE85C0A19260E0AB203FBDF1CB22EF0063',
+          exponent: 0,
+          aliases: ['HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3']
+        }, {
+          denom: 'pyth',
+          exponent: 6
+        }],
+      base: 'ibc/62F989E5DC56D690987A3B633C3A86CE85C0A19260E0AB203FBDF1CB22EF0063',
+      name: 'Pyth Network',
+      display: 'pyth',
+      symbol: 'PYTH',
+      coingecko_id: 'pyth-network',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/pyth.svg'
+        }],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/pyth.svg'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3',
+            chain_name: 'solana'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }]
+    },
+    {
+      description: 'BSKT tracks the top assets across the crypto ecosystem',
+      type_asset: 'erc20',
+      address: '6gnCPhXtLnUD76HjQuSYPENLSZdG8RvDB1pTLM5aLSJA',
+      denom_units: [{
+          denom: 'ibc/B1762780F941FD2BDD4F0564C2F1CF13710B7E0FB8DC4D77A94A71A7361115C3',
+          exponent: 0,
+          aliases: ['6gnCPhXtLnUD76HjQuSYPENLSZdG8RvDB1pTLM5aLSJA']
+        }, {
+          denom: 'bskt',
+          exponent: 5
+        }],
+      base: 'ibc/B1762780F941FD2BDD4F0564C2F1CF13710B7E0FB8DC4D77A94A71A7361115C3',
+      name: 'Basket',
+      display: 'bskt',
+      symbol: 'BSKT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/bskt.png'
+      },
+      coingecko_id: 'basket',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/bskt.png'
+        }],
+      socials: {
+        website: 'https://www.bskt.fi/',
+        twitter: 'https://twitter.com/bsktfi'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: '6gnCPhXtLnUD76HjQuSYPENLSZdG8RvDB1pTLM5aLSJA',
+            chain_name: 'solana'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }]
+    },
+    {
+      description: 'W is the native token powering the Wormhole interoperability platform.',
+      type_asset: 'erc20',
+      address: '85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ',
+      denom_units: [{
+          denom: 'ibc/804A1A334531205A32BE4C73F071B25ED757827678C8756715ACAF8438B78AE4',
+          exponent: 0,
+          aliases: ['85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ']
+        }, {
+          denom: 'w',
+          exponent: 6
+        }],
+      base: 'ibc/804A1A334531205A32BE4C73F071B25ED757827678C8756715ACAF8438B78AE4',
+      name: 'Wormhole Token',
+      display: 'w',
+      symbol: 'W',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/w.png'
+      },
+      coingecko_id: 'wormhole',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/w.png'
+        }],
+      socials: {
+        website: 'https://wormhole.com/',
+        twitter: 'https://twitter.com/wormhole'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: '85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ',
+            chain_name: 'solana'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }]
+    },
+    {
       description: 'The native token of Stargaze',
       denom_units: [{
           denom: 'ibc/7078D8FA8BCB50A1E7855458F1E9898A3FDA0093B703DA3B3108DD35ED99E048',
@@ -3363,6 +3545,188 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-2'
+          }
+        }]
+    },
+    {
+      description: 'Solana (SOL) is the native asset of the Solana blockchain.',
+      denom_units: [{
+          denom: 'ibc/C7F9D7DFF5469F53AB878ED0FBE53CC6B8B2720CD0ED09FD65F25343B13517CC',
+          exponent: 0,
+          aliases: ['Lamport']
+        }, {
+          denom: 'SOL',
+          exponent: 9
+        }],
+      type_asset: 'svm-base',
+      base: 'ibc/C7F9D7DFF5469F53AB878ED0FBE53CC6B8B2720CD0ED09FD65F25343B13517CC',
+      name: 'Solana',
+      display: 'SOL',
+      symbol: 'SOL',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol.svg'
+      },
+      coingecko_id: 'solana',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'Lamport',
+            chain_name: 'solana'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }]
+    },
+    {
+      description: 'The Official Bonk Inu token',
+      type_asset: 'erc20',
+      address: 'DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263',
+      denom_units: [{
+          denom: 'ibc/A09E5A2B0DE6CB5E8EC67F1662C7EE4202CEC192923DA1D4FCAEA078B4FCF5AC',
+          exponent: 0,
+          aliases: ['DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263']
+        }, {
+          denom: 'bonk',
+          exponent: 5
+        }],
+      base: 'ibc/A09E5A2B0DE6CB5E8EC67F1662C7EE4202CEC192923DA1D4FCAEA078B4FCF5AC',
+      name: 'Bonk',
+      display: 'bonk',
+      symbol: 'BONK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/bonk.png'
+      },
+      coingecko_id: 'bonk',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/bonk.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263',
+            chain_name: 'solana'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }]
+    },
+    {
+      description: 'Pyth is a protocol that allows market participants to publish pricing information on-chain for others to use. The protocol is an interaction between three parties:\n-Publishers submit pricing information to Pyth\'s oracle program. Pyth has multiple data publishers for every product to improve the accuracy and robustness of the system.\n-Pyth\'s oracle program combines publishers\' data to produce a single aggregate price and confidence interval.\nConsumers read the price information produced by the oracle program.\n\nPyth\'s oracle program runs simultaneously on both Solana mainnet and Pythnet. Each instance of the program is responsible for its own set of price feeds. Solana Price Feeds are available for use by Solana protocols. In this case, since the oracle program itself runs on Solana, the resulting prices are immediately available to consumers without requiring any additional work. Pythnet Price Feeds are available on 12+ blockchains. The prices constructed on Pythnet are transferred cross-chain to reach consumers on these blockchains.\n\nIn both cases, the critical component of the system is the oracle program that combines the data from each individual publisher. This program maintains a number of different Solana accounts that list the products on Pyth and their current price data. Publishers publish their price and confidence by interacting with the oracle program on every slot. The program stores this information in its accounts. The first price update in a slot additionally triggers price aggregation, which combines the price data from the previous slot into a single aggregate price and confidence interval. This aggregate price is written to the Solana account where it is readable by other on-chain programs and available for transmission to other blockchains.',
+      type_asset: 'erc20',
+      address: 'HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3',
+      denom_units: [{
+          denom: 'ibc/62F989E5DC56D690987A3B633C3A86CE85C0A19260E0AB203FBDF1CB22EF0063',
+          exponent: 0,
+          aliases: ['HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3']
+        }, {
+          denom: 'pyth',
+          exponent: 6
+        }],
+      base: 'ibc/62F989E5DC56D690987A3B633C3A86CE85C0A19260E0AB203FBDF1CB22EF0063',
+      name: 'Pyth Network',
+      display: 'pyth',
+      symbol: 'PYTH',
+      coingecko_id: 'pyth-network',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/pyth.svg'
+        }],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/pyth.svg'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3',
+            chain_name: 'solana'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }]
+    },
+    {
+      description: 'BSKT tracks the top assets across the crypto ecosystem',
+      type_asset: 'erc20',
+      address: '6gnCPhXtLnUD76HjQuSYPENLSZdG8RvDB1pTLM5aLSJA',
+      denom_units: [{
+          denom: 'ibc/B1762780F941FD2BDD4F0564C2F1CF13710B7E0FB8DC4D77A94A71A7361115C3',
+          exponent: 0,
+          aliases: ['6gnCPhXtLnUD76HjQuSYPENLSZdG8RvDB1pTLM5aLSJA']
+        }, {
+          denom: 'bskt',
+          exponent: 5
+        }],
+      base: 'ibc/B1762780F941FD2BDD4F0564C2F1CF13710B7E0FB8DC4D77A94A71A7361115C3',
+      name: 'Basket',
+      display: 'bskt',
+      symbol: 'BSKT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/bskt.png'
+      },
+      coingecko_id: 'basket',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/bskt.png'
+        }],
+      socials: {
+        website: 'https://www.bskt.fi/',
+        twitter: 'https://twitter.com/bsktfi'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: '6gnCPhXtLnUD76HjQuSYPENLSZdG8RvDB1pTLM5aLSJA',
+            chain_name: 'solana'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }]
+    },
+    {
+      description: 'W is the native token powering the Wormhole interoperability platform.',
+      type_asset: 'erc20',
+      address: '85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ',
+      denom_units: [{
+          denom: 'ibc/804A1A334531205A32BE4C73F071B25ED757827678C8756715ACAF8438B78AE4',
+          exponent: 0,
+          aliases: ['85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ']
+        }, {
+          denom: 'w',
+          exponent: 6
+        }],
+      base: 'ibc/804A1A334531205A32BE4C73F071B25ED757827678C8756715ACAF8438B78AE4',
+      name: 'Wormhole Token',
+      display: 'w',
+      symbol: 'W',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/w.png'
+      },
+      coingecko_id: 'wormhole',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/w.png'
+        }],
+      socials: {
+        website: 'https://wormhole.com/',
+        twitter: 'https://twitter.com/wormhole'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: '85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ',
+            chain_name: 'solana'
+          },
+          chain: {
+            channel_id: 'channel-71'
           }
         }]
     },

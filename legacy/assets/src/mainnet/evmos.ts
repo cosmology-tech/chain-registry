@@ -399,7 +399,8 @@ const assets: AssetList = {
         'staking',
         'wasm',
         'assets',
-        'nft'
+        'nft',
+        'XRPL'
       ],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
@@ -1050,7 +1051,8 @@ const assets: AssetList = {
         'staking',
         'wasm',
         'assets',
-        'nft'
+        'nft',
+        'XRPL'
       ],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
@@ -1782,6 +1784,40 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-7',
             base_denom: 'ufrienzies',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-64'
+          }
+        }]
+    },
+    {
+      description: 'USDLR is a fiat-backed stablecoin issued by Stable. Stable pays DeFi protocols who distribute USDLR.',
+      denom_units: [{
+          denom: 'ibc/5360B9CFE94B978F3BA8DD35F4E5D5359F6415A1C2664AB321E54F466E97D103',
+          exponent: 0,
+          aliases: ['uusdlr']
+        }, {
+          denom: 'usdlr',
+          exponent: 6
+        }],
+      base: 'ibc/5360B9CFE94B978F3BA8DD35F4E5D5359F6415A1C2664AB321E54F466E97D103',
+      display: 'usdlr',
+      name: 'USDLR by Stable',
+      symbol: 'USDLR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-7',
+            base_denom: 'uusdlr',
             chain_name: 'noble'
           },
           chain: {
@@ -2501,6 +2537,40 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-7',
             base_denom: 'ufrienzies',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-64'
+          }
+        }]
+    },
+    {
+      description: 'USDLR is a fiat-backed stablecoin issued by Stable. Stable pays DeFi protocols who distribute USDLR.',
+      denom_units: [{
+          denom: 'ibc/5360B9CFE94B978F3BA8DD35F4E5D5359F6415A1C2664AB321E54F466E97D103',
+          exponent: 0,
+          aliases: ['uusdlr']
+        }, {
+          denom: 'usdlr',
+          exponent: 6
+        }],
+      base: 'ibc/5360B9CFE94B978F3BA8DD35F4E5D5359F6415A1C2664AB321E54F466E97D103',
+      display: 'usdlr',
+      name: 'USDLR by Stable',
+      symbol: 'USDLR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-7',
+            base_denom: 'uusdlr',
             chain_name: 'noble'
           },
           chain: {

@@ -676,7 +676,8 @@ const assets: AssetList = {
         'staking',
         'wasm',
         'assets',
-        'nft'
+        'nft',
+        'XRPL'
       ],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
@@ -1966,6 +1967,56 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-116'
+          }
+        }]
+    },
+    {
+      description: 'The native staking and governance token of Saga.',
+      denom_units: [{
+          denom: 'ibc/AFE3377888BF66513E7D48A6D4D409626114481E3CC6F6E1C9B92C9AA25673FA',
+          exponent: 0,
+          aliases: ['usaga']
+        }, {
+          denom: 'saga',
+          exponent: 6
+        }],
+      base: 'ibc/AFE3377888BF66513E7D48A6D4D409626114481E3CC6F6E1C9B92C9AA25673FA',
+      name: 'Saga',
+      display: 'saga',
+      symbol: 'SAGA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg'
+      },
+      coingecko_id: 'saga-2',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg',
+          theme: {
+            primary_color_hex: '#000000',
+            dark_mode: false
+          }
+        }, {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga_white.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga_white.svg',
+          theme: {
+            primary_color_hex: '#FFFFFF',
+            dark_mode: true
+          }
+        }],
+      socials: {
+        website: 'https://www.saga.xyz/',
+        twitter: 'https://twitter.com/Sagaxyz__'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-24',
+            base_denom: 'usaga',
+            chain_name: 'saga'
+          },
+          chain: {
+            channel_id: 'channel-146'
           }
         }]
     },
@@ -2418,7 +2469,8 @@ const assets: AssetList = {
         'staking',
         'wasm',
         'assets',
-        'nft'
+        'nft',
+        'XRPL'
       ],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
@@ -3708,6 +3760,56 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-116'
+          }
+        }]
+    },
+    {
+      description: 'The native staking and governance token of Saga.',
+      denom_units: [{
+          denom: 'ibc/AFE3377888BF66513E7D48A6D4D409626114481E3CC6F6E1C9B92C9AA25673FA',
+          exponent: 0,
+          aliases: ['usaga']
+        }, {
+          denom: 'saga',
+          exponent: 6
+        }],
+      base: 'ibc/AFE3377888BF66513E7D48A6D4D409626114481E3CC6F6E1C9B92C9AA25673FA',
+      name: 'Saga',
+      display: 'saga',
+      symbol: 'SAGA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg'
+      },
+      coingecko_id: 'saga-2',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg',
+          theme: {
+            primary_color_hex: '#000000',
+            dark_mode: false
+          }
+        }, {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga_white.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga_white.svg',
+          theme: {
+            primary_color_hex: '#FFFFFF',
+            dark_mode: true
+          }
+        }],
+      socials: {
+        website: 'https://www.saga.xyz/',
+        twitter: 'https://twitter.com/Sagaxyz__'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-24',
+            base_denom: 'usaga',
+            chain_name: 'saga'
+          },
+          chain: {
+            channel_id: 'channel-146'
           }
         }]
     },

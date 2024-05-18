@@ -111,7 +111,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://grpc-sei.whispernode.com:443',
+        address: 'grpc-sei.whispernode.com:443',
         provider: 'WhisperNode 🤐'
       },
       {
@@ -148,6 +148,12 @@ const info: Chain = {
       url: 'https://www.seiscan.app/pacific-1',
       tx_page: 'https://www.seiscan.app/pacific-1/txs/${txHash}',
       account_page: 'https://www.seiscan.app/pacific-1/accounts/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/sei',
+      tx_page: 'https://mainnet.whispernode.com/sei/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/sei/account/${accountAddress}'
     }
   ],
   images: [{

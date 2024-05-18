@@ -644,7 +644,8 @@ const assets: AssetList = {
         'staking',
         'wasm',
         'assets',
-        'nft'
+        'nft',
+        'XRPL'
       ],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
@@ -1308,7 +1309,8 @@ const assets: AssetList = {
         'staking',
         'wasm',
         'assets',
-        'nft'
+        'nft',
+        'XRPL'
       ],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
@@ -2750,6 +2752,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'USDLR is a fiat-backed stablecoin issued by Stable. Stable pays DeFi protocols who distribute USDLR.',
+      denom_units: [{
+          denom: 'ibc/2ED9C3834477E2BBFEC3FCAFB6E58D6F9AE57E83FB77BE73CDCCA4EBC36636AF',
+          exponent: 0,
+          aliases: ['uusdlr']
+        }, {
+          denom: 'usdlr',
+          exponent: 6
+        }],
+      base: 'ibc/2ED9C3834477E2BBFEC3FCAFB6E58D6F9AE57E83FB77BE73CDCCA4EBC36636AF',
+      display: 'usdlr',
+      name: 'USDLR by Stable',
+      symbol: 'USDLR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'uusdlr',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-536'
+          }
+        }]
+    },
+    {
       description: 'The native staking token of OmniFlix Hub.',
       denom_units: [{
           denom: 'ibc/15B4D31D457B80DD46CA46F6B89FD6BB15CB92FE7BBF8763947417537C3A4C2E',
@@ -3051,6 +3087,40 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-404'
+          }
+        }]
+    },
+    {
+      description: 'The native token of PRYZM',
+      denom_units: [{
+          denom: 'ibc/6157A428CE89ABB9CD524CFA613862AED49BAC4AE104B2B867C4CB1EA506501F',
+          exponent: 0,
+          aliases: ['upryzm']
+        }, {
+          denom: 'pryzm',
+          exponent: 6
+        }],
+      base: 'ibc/6157A428CE89ABB9CD524CFA613862AED49BAC4AE104B2B867C4CB1EA506501F',
+      name: 'Pryzm',
+      display: 'pryzm',
+      symbol: 'PRYZM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'upryzm',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-859'
           }
         }]
     },
@@ -5131,6 +5201,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'USDLR is a fiat-backed stablecoin issued by Stable. Stable pays DeFi protocols who distribute USDLR.',
+      denom_units: [{
+          denom: 'ibc/2ED9C3834477E2BBFEC3FCAFB6E58D6F9AE57E83FB77BE73CDCCA4EBC36636AF',
+          exponent: 0,
+          aliases: ['uusdlr']
+        }, {
+          denom: 'usdlr',
+          exponent: 6
+        }],
+      base: 'ibc/2ED9C3834477E2BBFEC3FCAFB6E58D6F9AE57E83FB77BE73CDCCA4EBC36636AF',
+      display: 'usdlr',
+      name: 'USDLR by Stable',
+      symbol: 'USDLR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'uusdlr',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-536'
+          }
+        }]
+    },
+    {
       description: 'The native staking token of OmniFlix Hub.',
       denom_units: [{
           denom: 'ibc/15B4D31D457B80DD46CA46F6B89FD6BB15CB92FE7BBF8763947417537C3A4C2E',
@@ -5432,6 +5536,40 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-404'
+          }
+        }]
+    },
+    {
+      description: 'The native token of PRYZM',
+      denom_units: [{
+          denom: 'ibc/6157A428CE89ABB9CD524CFA613862AED49BAC4AE104B2B867C4CB1EA506501F',
+          exponent: 0,
+          aliases: ['upryzm']
+        }, {
+          denom: 'pryzm',
+          exponent: 6
+        }],
+      base: 'ibc/6157A428CE89ABB9CD524CFA613862AED49BAC4AE104B2B867C4CB1EA506501F',
+      name: 'Pryzm',
+      display: 'pryzm',
+      symbol: 'PRYZM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'upryzm',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-859'
           }
         }]
     },

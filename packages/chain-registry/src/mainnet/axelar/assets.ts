@@ -132,7 +132,7 @@ const info: AssetList = {
       name: 'Tether USD',
       display: 'usdt',
       symbol: 'USDT',
-      coingecko_id: 'bridged-tether-axelar',
+      coingecko_id: 'axelar-usdt',
       traces: [{
           type: 'bridge',
           counterparty: {

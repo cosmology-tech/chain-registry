@@ -284,6 +284,12 @@ const info: Chain = {
       url: 'https://ezstaking.app/axelar',
       tx_page: 'https://ezstaking.app/axelar/txs/${txHash}',
       account_page: 'https://ezstaking.app/axelar/account/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/axelar',
+      tx_page: 'https://mainnet.whispernode.com/axelar/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/axelar/account/${accountAddress}'
     }
   ],
   images: [{

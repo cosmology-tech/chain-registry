@@ -235,6 +235,12 @@ const info: Chain = {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/injective',
       account_page: 'https://stakeflow.io/injective/accounts/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/injective',
+      tx_page: 'https://mainnet.whispernode.com/injective/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/injective/account/${accountAddress}'
     }
   ],
   images: [{

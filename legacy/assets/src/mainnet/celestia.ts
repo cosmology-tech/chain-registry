@@ -770,6 +770,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of PRYZM',
+      denom_units: [{
+          denom: 'ibc/5439463152822F31205E0047CEF0B9D32E29E1ED46910048519F7E4B5B0E9EC7',
+          exponent: 0,
+          aliases: ['upryzm']
+        }, {
+          denom: 'pryzm',
+          exponent: 6
+        }],
+      base: 'ibc/5439463152822F31205E0047CEF0B9D32E29E1ED46910048519F7E4B5B0E9EC7',
+      name: 'Pryzm',
+      display: 'pryzm',
+      symbol: 'PRYZM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'upryzm',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-34'
+          }
+        }]
+    },
+    {
       description: 'The native token of Secret Network',
       denom_units: [{
           denom: 'ibc/E3459360643C2555C57C7DAB0567FA762B42D5D6D45A76615EA7D99D933AEC04',
@@ -1646,6 +1680,40 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-2'
+          }
+        }]
+    },
+    {
+      description: 'The native token of PRYZM',
+      denom_units: [{
+          denom: 'ibc/5439463152822F31205E0047CEF0B9D32E29E1ED46910048519F7E4B5B0E9EC7',
+          exponent: 0,
+          aliases: ['upryzm']
+        }, {
+          denom: 'pryzm',
+          exponent: 6
+        }],
+      base: 'ibc/5439463152822F31205E0047CEF0B9D32E29E1ED46910048519F7E4B5B0E9EC7',
+      name: 'Pryzm',
+      display: 'pryzm',
+      symbol: 'PRYZM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'upryzm',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-34'
           }
         }]
     },

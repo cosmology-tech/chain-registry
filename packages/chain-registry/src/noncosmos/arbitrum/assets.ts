@@ -2,7 +2,8 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'arbitrum',
-  assets: [{
+  assets: [
+    {
       description: 'The governance token of Arbitrum',
       type_asset: 'erc20',
       address: '0x912CE59144191C1204E64559FE8253a0e49E6548',
@@ -27,6 +28,30 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/arbitrum/images/arb.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/arbitrum/images/arb.svg'
         }]
-    }]
+    },
+    {
+      type_asset: 'evm-base',
+      denom_units: [{
+          denom: 'wei',
+          exponent: 0
+        }],
+      base: 'wei',
+      display: 'wei',
+      name: 'Ether',
+      symbol: 'ETH'
+    },
+    {
+      type_asset: 'erc20',
+      denom_units: [{
+          denom: '0xab19bdaeb37242fa0f30486195f45b9cf5361b78',
+          exponent: 0
+        }],
+      address: '0xab19bdaeb37242fa0f30486195f45b9cf5361b78',
+      base: '0xab19bdaeb37242fa0f30486195f45b9cf5361b78',
+      display: '0xab19bdaeb37242fa0f30486195f45b9cf5361b78',
+      name: 'cGLP',
+      symbol: 'cGLP'
+    }
+  ]
 };
 export default info;

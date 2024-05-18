@@ -194,6 +194,12 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.wildsage.io/cheqd',
       tx_page: 'https://ping.wildsage.io/cheqd/tx/${txHash}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/cheqd',
+      tx_page: 'https://mainnet.whispernode.com/cheqd/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/cheqd/account/${accountAddress}'
     }
   ],
   logo_URIs: {

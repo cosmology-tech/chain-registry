@@ -95,6 +95,7 @@ export * as persistence from './persistence';
 export * as planq from './planq';
 export * as point from './point';
 export * as provenance from './provenance';
+export * as pryzm from './pryzm';
 export * as pundix from './pundix';
 export * as pylons from './pylons';
 export * as quasar from './quasar';

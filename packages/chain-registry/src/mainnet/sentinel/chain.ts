@@ -221,6 +221,12 @@ const info: Chain = {
       url: 'https://explorer.nodeshub.online/sentinel/',
       tx_page: 'https://explorer.nodeshub.online/sentinel/tx/${txHash}',
       account_page: 'https://explorer.nodeshub.online/sentinel/accounts/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/sentinel',
+      tx_page: 'https://mainnet.whispernode.com/sentinel/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/sentinel/account/${accountAddress}'
     }
   ],
   images: [{

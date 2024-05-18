@@ -402,6 +402,12 @@ const info: Chain = {
       url: 'https://ezstaking.app/archway',
       tx_page: 'https://ezstaking.app/archway/txs/${txHash}',
       account_page: 'https://ezstaking.app/archway/account/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/archway',
+      tx_page: 'https://mainnet.whispernode.com/archway/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/archway/account/${accountAddress}'
     }
   ],
   images: [{

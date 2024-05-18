@@ -78,6 +78,11 @@ const info: Chain = {
       url: 'https://explorer.testnet-1.coreum.dev/coreum',
       tx_page: 'https://explorer.testnet-1.coreum.dev/coreum/transactions/${txHash}',
       account_page: 'https://explorer.testnet-1.coreum.dev/coreum/account/${accountAddress}'
+    }, {
+      kind: 'mintscan',
+      url: 'https://www.mintscan.io/coreum-testnet',
+      tx_page: 'https://www.mintscan.io/coreum-testnet/transactions/${txHash}',
+      account_page: 'https://www.mintscan.io/coreum-testnet/accounts/${accountAddress}'
     }],
   keywords: [
     'dex',

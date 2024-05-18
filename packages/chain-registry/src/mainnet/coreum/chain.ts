@@ -32,7 +32,7 @@ const info: Chain = {
   codebase: {
     cosmos_sdk_version: '0.47',
     cosmwasm_enabled: true,
-    cosmwasm_version: '0.30'
+    cosmwasm_version: '0.44'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
@@ -207,7 +207,8 @@ const info: Chain = {
     'staking',
     'wasm',
     'assets',
-    'nft'
+    'nft',
+    'XRPL'
   ]
 };
 export default info;

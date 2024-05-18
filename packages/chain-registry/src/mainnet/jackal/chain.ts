@@ -268,6 +268,12 @@ const info: Chain = {
       kind: 'Big Dipper',
       url: 'https://bigdipper.live/jackal',
       tx_page: 'https://bigdipper.live/jackal/transactions/${txHash}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/jackal',
+      tx_page: 'https://mainnet.whispernode.com/jackal/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/jackal/account/${accountAddress}'
     }
   ],
   images: [{

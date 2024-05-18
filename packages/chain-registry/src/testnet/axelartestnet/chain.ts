@@ -64,9 +64,9 @@ const info: Chain = {
       tx_page: 'https://testnet.axelarscan.io/tx/${txHash}'
     }, {
       kind: 'mintscan',
-      url: 'https://testnet.mintscan.io/axelar-testnet',
-      tx_page: 'https://testnet.mintscan.io/axelar-testnet/txs/${txHash}',
-      account_page: 'https://testnet.mintscan.io/axelar-testnet/account/${accountAddress}'
+      url: 'https://mintscan.io/axelar-testnet',
+      tx_page: 'https://mintscan.io/axelar-testnet/txs/${txHash}',
+      account_page: 'https://mintscan.io/axelar-testnet/account/${accountAddress}'
     }]
 };
 export default info;

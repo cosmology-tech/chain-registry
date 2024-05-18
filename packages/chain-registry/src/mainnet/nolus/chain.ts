@@ -30,7 +30,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'nolus-protocol/cosmos-sdk v0.47.6-nolus',
+    cosmos_sdk_version: 'nolus-protocol/cosmos-sdk v0.47.8-nolus',
     cosmwasm_enabled: true,
     cosmwasm_version: 'neutron-org/wasmd v0.45.0'
   },

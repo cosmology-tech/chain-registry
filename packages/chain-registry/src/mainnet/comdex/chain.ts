@@ -247,6 +247,12 @@ const info: Chain = {
       kind: 'ValidatorNode',
       url: 'https://explorer.validatornode.com/comdex',
       tx_page: 'https://explorer.validatornode.com/comdex/tx/${txHash}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/comdex',
+      tx_page: 'https://mainnet.whispernode.com/comdex/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/comdex/account/${accountAddress}'
     }
   ],
   images: [{

@@ -171,17 +171,26 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'Mintscan',
       url: 'https://www.mintscan.io/neutron',
       tx_page: 'https://www.mintscan.io/neutron/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/neutron/accounts/${accountAddress}'
-    }, {
+    },
+    {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/neutron',
       tx_page: 'https://ezstaking.app/neutron/txs/${txHash}',
       account_page: 'https://ezstaking.app/neutron/account/${accountAddress}'
-    }],
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/neutron',
+      tx_page: 'https://mainnet.whispernode.com/neutron/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/neutron/account/${accountAddress}'
+    }
+  ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-black-logo.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-black-logo.svg'

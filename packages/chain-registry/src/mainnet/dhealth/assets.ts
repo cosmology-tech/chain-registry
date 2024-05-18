@@ -4,6 +4,7 @@ const info: AssetList = {
   chain_name: 'dhealth',
   assets: [{
       description: 'The native token of dHealth',
+      extended_description: 'dHealth Network is an Operating System for Web3 Healthcare. It provides Web3 components such as Decentralised Digital Identity, Digital Payment, and user-controlled data access to support dApps and business models at the intersection of healthcare and blockchain technology.',
       denom_units: [{
           denom: 'udhp',
           exponent: 0
@@ -20,6 +21,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.svg'
       },
       coingecko_id: 'dhealth',
+      socials: {
+        website: 'https://dhealth.com',
+        twitter: 'https://twitter.com/dhealth_network'
+      },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.svg'

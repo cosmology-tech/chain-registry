@@ -64,17 +64,26 @@ const info: Chain = {
         provider: 'nomic-io'
       }]
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'bigdipper',
       url: 'https://bigdipper.live/nomic',
       account_page: 'https://bigdipper.live/nomic/accounts/${accountAddress}',
       tx_page: 'https://bigdipper.live/nomic/transactions/${txHash}'
-    }, {
+    },
+    {
       kind: 'Zenscan.io',
       url: 'https://nomic.zenscan.io/index.php',
       account_page: 'https://nomic.zenscan.io/address.php?address=${accountAddress}',
       tx_page: 'https://nomic.zenscan.io/transaction.php?hash=${txHash}'
-    }],
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/nomic',
+      tx_page: 'https://mainnet.whispernode.com/nomic/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/nomic/account/${accountAddress}'
+    }
+  ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.svg'

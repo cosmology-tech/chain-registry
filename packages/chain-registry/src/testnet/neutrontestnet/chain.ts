@@ -65,9 +65,9 @@ const info: Chain = {
       account_page: 'https://explorer.rs-testnet.polypore.xyz/baryon-1/account/${accountAddress}'
     }, {
       kind: 'Mintscan',
-      url: 'https://testnet.mintscan.io/neutron-testnet',
-      tx_page: 'https://testnet.mintscan.io/neutron-testnet/txs/${txHash}',
-      account_page: 'https://testnet.mintscan.io/neutron-testnet/account/${accountAddress}'
+      url: 'https://mintscan.io/neutron-testnet',
+      tx_page: 'https://mintscan.io/neutron-testnet/txs/${txHash}',
+      account_page: 'https://mintscan.io/neutron-testnet/account/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron-black-logo.png',

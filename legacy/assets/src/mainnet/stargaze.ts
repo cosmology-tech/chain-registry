@@ -928,6 +928,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'USDLR is a fiat-backed stablecoin issued by Stable. Stable pays DeFi protocols who distribute USDLR.',
+      denom_units: [{
+          denom: 'ibc/0484E1E3C8D20DC5BF3F5575E4E7D93C683CA7DDCA4F8E2227642F8A1DA2D1E7',
+          exponent: 0,
+          aliases: ['uusdlr']
+        }, {
+          denom: 'usdlr',
+          exponent: 6
+        }],
+      base: 'ibc/0484E1E3C8D20DC5BF3F5575E4E7D93C683CA7DDCA4F8E2227642F8A1DA2D1E7',
+      display: 'usdlr',
+      name: 'USDLR by Stable',
+      symbol: 'USDLR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-11',
+            base_denom: 'uusdlr',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-204'
+          }
+        }]
+    },
+    {
       description: 'The native token of Nois',
       denom_units: [{
           denom: 'ibc/0F181D9F5BB18A8496153C1666E934169515592C135E8E9FCCC355889858EAF9',
@@ -2083,6 +2117,40 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-11',
             base_denom: 'ufrienzies',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-204'
+          }
+        }]
+    },
+    {
+      description: 'USDLR is a fiat-backed stablecoin issued by Stable. Stable pays DeFi protocols who distribute USDLR.',
+      denom_units: [{
+          denom: 'ibc/0484E1E3C8D20DC5BF3F5575E4E7D93C683CA7DDCA4F8E2227642F8A1DA2D1E7',
+          exponent: 0,
+          aliases: ['uusdlr']
+        }, {
+          denom: 'usdlr',
+          exponent: 6
+        }],
+      base: 'ibc/0484E1E3C8D20DC5BF3F5575E4E7D93C683CA7DDCA4F8E2227642F8A1DA2D1E7',
+      display: 'usdlr',
+      name: 'USDLR by Stable',
+      symbol: 'USDLR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-11',
+            base_denom: 'uusdlr',
             chain_name: 'noble'
           },
           chain: {

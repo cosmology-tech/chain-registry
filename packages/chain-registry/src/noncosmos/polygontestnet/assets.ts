@@ -67,7 +67,7 @@ const info: AssetList = {
       denom_units: [{
           denom: '0x2c852e740B62308c46DD29B982FBb650D063Bd07',
           exponent: 0,
-          aliases: ['uusdc']
+          aliases: ['uausdc']
         }, {
           denom: 'axlusdc',
           exponent: 6
@@ -80,7 +80,7 @@ const info: AssetList = {
           type: 'bridge',
           counterparty: {
             chain_name: 'axelartestnet',
-            base_denom: 'uusdc'
+            base_denom: 'uausdc'
           },
           provider: 'Axelar'
         }],
@@ -88,6 +88,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       images: [{
+          image_sync: {
+            chain_name: 'axelartestnet',
+            base_denom: 'uausdc'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }]
     }

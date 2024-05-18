@@ -27,7 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    cosmos_sdk_version: 'v0.47.13-ics-lsm'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
@@ -411,6 +411,12 @@ const info: Chain = {
       url: 'https://inbloc.org',
       tx_page: 'https://inbloc.org/transactions/${txHash}',
       account_page: 'https://inbloc.org/account/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/cosmos',
+      tx_page: 'https://mainnet.whispernode.com/cosmos/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/cosmos/account/${accountAddress}'
     }
   ],
   images: [{

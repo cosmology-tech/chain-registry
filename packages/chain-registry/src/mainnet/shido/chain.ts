@@ -38,20 +38,34 @@ const info: Chain = {
   },
   description: 'Developers use Shido as the Ethereum and Wasm Chain to deploy applications of the future. Get all the functionalities of Ethereum and Wasm with the power of IBC and Interchain composability.',
   apis: {
-    rpc: [{
+    rpc: [
+      {
         address: 'https://tendermint.shidoscan.com',
         provider: 'Shido'
-      }, {
+      },
+      {
         address: 'https://shidochain_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
-      }],
-    rest: [{
+      },
+      {
+        address: 'https://shido-rpc.applejuice.256x25.tech:443',
+        provider: 'Apple juice 🧃'
+      }
+    ],
+    rest: [
+      {
         address: 'https://swagger.shidoscan.com',
         provider: 'Shido'
-      }, {
+      },
+      {
         address: 'https://shidochain_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
-      }],
+      },
+      {
+        address: 'https://shido-api.applejuice.256x25.tech:443',
+        provider: 'Apple juice 🧃'
+      }
+    ],
     grpc: [{
         address: 'https://grpc.shidoscan.com',
         provider: 'shido.io'
@@ -71,20 +85,33 @@ const info: Chain = {
       {
         address: 'https://shidochain_mainnet_evm.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://shido-evm.applejuice.256x25.tech:443',
+        provider: 'Apple juice 🧃'
       }
     ]
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'shido',
       url: 'https://shidoscan.com',
       tx_page: 'https://shidoscan.com/tx/${txHash}',
       account_page: 'https://shidoscan.com/address/${accountAddress}'
-    }, {
+    },
+    {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/shido',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/shido/tx/${txHash}',
       account_page: 'https://explorer.whenmoonwhenlambo.money/shido/account/${accountAddress}'
-    }],
+    },
+    {
+      kind: 'Apple juice 🧃',
+      url: 'https://explorer.256x25.tech/shido',
+      tx_page: 'https://explorer.256x25.tech/shido/tx/${txHash}',
+      account_page: 'https://explorer.256x25.tech//shido/account/${accountAddress}'
+    }
+  ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg'

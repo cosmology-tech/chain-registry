@@ -77,8 +77,8 @@ const info: Chain = {
   },
   explorers: [{
       kind: 'Mintscan',
-      url: 'https://testnet.mintscan.io/celestia-testnet',
-      tx_page: 'https://testnet.mintscan.io/celestia-testnet/txs/${txHash}'
+      url: 'https://mintscan.io/celestia-testnet',
+      tx_page: 'https://mintscan.io/celestia-testnet/txs/${txHash}'
     }, {
       kind: '🚀ITRocket🚀',
       url: 'https://testnet.itrocket.net/celestia',

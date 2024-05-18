@@ -6043,7 +6043,7 @@ const assets: AssetList = {
           type: 'liquid-stake',
           counterparty: {
             chain_name: 'evmos',
-            base_denom: 'uaevmos'
+            base_denom: 'aevmos'
           },
           provider: 'Stride'
         }, {
@@ -13363,10 +13363,10 @@ const assets: AssetList = {
       display: 'bwh',
       symbol: 'BWH',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/bwh.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/BWH.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/bwh.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/BWH.png'
         }]
     },
     {
@@ -13682,6 +13682,28 @@ const assets: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/SHITMOS.png'
+        }]
+    },
+    {
+      description: 'Coin to support the real world in Wilhelmshall im Huy',
+      denom_units: [{
+          denom: 'factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/wiha',
+          exponent: 0
+        }, {
+          denom: 'WIHA',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      address: 'osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8',
+      base: 'factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/wiha',
+      name: 'WiliHall',
+      display: 'WIHA',
+      symbol: 'WIHA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WIHA.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/WIHA.png'
         }]
     }
   ]

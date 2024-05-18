@@ -759,7 +759,7 @@ const info: AssetList = {
           type: 'bridge',
           counterparty: {
             chain_name: 'ethereum',
-            base_denom: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+            base_denom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48',
             contract: '0x9a016ce184a22dbf6c17daa59eb7d3140dbd1c54'
           },
           chain: {
@@ -771,6 +771,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       images: [{
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }]
     },

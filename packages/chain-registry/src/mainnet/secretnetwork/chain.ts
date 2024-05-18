@@ -131,6 +131,12 @@ const info: Chain = {
       url: 'https://atomscan.com/secret-network',
       tx_page: 'https://atomscan.com/secret-network/transactions/${txHash}',
       account_page: 'https://atomscan.com/secret-network/accounts/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/secret',
+      tx_page: 'https://mainnet.whispernode.com/secret/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/secret/account/${accountAddress}'
     }
   ],
   images: [{

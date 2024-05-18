@@ -83,8 +83,8 @@ const info: Chain = {
   },
   explorers: [{
       kind: 'Mintscan',
-      url: 'https://testnet.mintscan.io/ics-testnet-provider',
-      tx_page: 'https://testnet.mintscan.io/ics-testnet-provider/txs/${txHash}'
+      url: 'https://mintscan.io/ics-testnet-provider',
+      tx_page: 'https://mintscan.io/ics-testnet-provider/txs/${txHash}'
     }, {
       kind: 'Ping.pub',
       url: 'https://explorer.rs-testnet.polypore.xyz/provider',

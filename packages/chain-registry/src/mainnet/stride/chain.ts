@@ -364,6 +364,12 @@ const info: Chain = {
       url: 'https://explorer.stake-take.com/stride',
       tx_page: 'https://explorer.stake-take.com/stride/tx/${txHash}',
       account_page: 'https://explorer.stake-take.com/stride/account/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/stride',
+      tx_page: 'https://mainnet.whispernode.com/stride/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/stride/account/${accountAddress}'
     }
   ],
   logo_URIs: {

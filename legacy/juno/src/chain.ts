@@ -409,6 +409,12 @@ const chain: Chain = {
       url: 'https://explorer.nodeshub.online/juno/',
       tx_page: 'https://explorer.nodeshub.online/juno/tx/${txHash}',
       account_page: 'https://explorer.nodeshub.online/juno/accounts/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/juno',
+      tx_page: 'https://mainnet.whispernode.com/juno/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/juno/account/${accountAddress}'
     }
   ],
   images: [{

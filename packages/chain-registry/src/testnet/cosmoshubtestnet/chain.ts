@@ -102,8 +102,8 @@ const info: Chain = {
   },
   explorers: [{
       kind: 'Mintscan',
-      url: 'https://testnet.mintscan.io/cosmoshub-testnet',
-      tx_page: 'https://testnet.mintscan.io/cosmoshub-testnet/txs/${txHash}'
+      url: 'https://mintscan.io/cosmoshub-testnet',
+      tx_page: 'https://mintscan.io/cosmoshub-testnet/txs/${txHash}'
     }, {
       kind: 'Big Dipper',
       url: 'https://explorer.theta-testnet.polypore.xyz/',

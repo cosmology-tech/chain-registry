@@ -1790,6 +1790,26 @@ const assets: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/afa.png'
         }]
+    },
+    {
+      description: 'The token for the Arena DAO',
+      type_asset: 'sdk.coin',
+      address: 'juno12dgadj3wwv5jn0ec7tw5cgvq526nn4gnt2tujlmd57p2ra6k87esl36r9k',
+      denom_units: [{
+          denom: 'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA',
+          exponent: 0
+        }, {
+          denom: 'arena',
+          exponent: 6
+        }],
+      base: 'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA',
+      name: 'Arena Token',
+      display: 'arena',
+      symbol: 'ARENA',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/arena.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/arena.png'
+        }]
     }
   ]
 };

@@ -49,9 +49,9 @@ const testnet: Chain = {
   },
   explorers: [{
       kind: 'mintscan',
-      url: 'https://testnet.mintscan.io/osmosis-testnet',
-      tx_page: 'https://testnet.mintscan.io/osmosis-testnet/txs/${txHash}',
-      account_page: 'https://testnet.mintscan.io/osmosis-testnet/account/${accountAddress}'
+      url: 'https://mintscan.io/osmosis-testnet',
+      tx_page: 'https://mintscan.io/osmosis-testnet/txs/${txHash}',
+      account_page: 'https://mintscan.io/osmosis-testnet/account/${accountAddress}'
     }, {
       kind: 'ping.pub',
       url: 'https://explorer.osmotest5.osmosis.zone',

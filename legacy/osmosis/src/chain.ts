@@ -31,7 +31,7 @@ const chain: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'osmosis-labs/cosmos-sdk v0.47.5-v24-osmo-5',
+    cosmos_sdk_version: 'osmosis-labs/cosmos-sdk v0.47.5-v25-osmo-1',
     cosmwasm_enabled: true,
     cosmwasm_version: 'osmosis-labs/wasmd v0.45.0-osmo'
   },
@@ -397,6 +397,12 @@ const chain: Chain = {
       kind: 'Chainscope',
       url: 'https://chainsco.pe/osmosis',
       tx_page: 'https://chainsco.pe/osmosis/tx/${txHash}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/osmosis',
+      tx_page: 'https://mainnet.whispernode.com/osmosis/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/osmosis/account/${accountAddress}'
     }
   ],
   keywords: ['dex']

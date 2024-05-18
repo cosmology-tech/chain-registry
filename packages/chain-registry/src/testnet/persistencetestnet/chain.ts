@@ -96,9 +96,9 @@ const info: Chain = {
       tx_page: 'https://testnet.ping.pub/test-core-1/tx/${txHash}'
     }, {
       kind: 'mintscan',
-      url: 'https://testnet.mintscan.io/persistence-testnet',
-      tx_page: 'https://testnet.mintscan.io/persistence-testnet/txs/${txHash}',
-      account_page: 'https://testnet.mintscan.io/persistence-testnet/account/${accountAddress}'
+      url: 'https://mintscan.io/persistence-testnet',
+      tx_page: 'https://mintscan.io/persistence-testnet/txs/${txHash}',
+      account_page: 'https://mintscan.io/persistence-testnet/account/${accountAddress}'
     }]
 };
 export default info;

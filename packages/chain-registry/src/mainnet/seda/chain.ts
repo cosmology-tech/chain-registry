@@ -71,6 +71,14 @@ const info: Chain = {
       {
         address: 'https://rpc.seda.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://rpc-seda.whispernode.com:443',
+        provider: 'WhisperNode 🤐'
+      },
+      {
+        address: 'https://seda-rpc.applejuice.256x25.tech:443',
+        provider: 'Apple juice 🧃'
       }
     ],
     rest: [
@@ -109,6 +117,14 @@ const info: Chain = {
       {
         address: 'https://lcd.seda.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://api-seda.whispernode.com:443',
+        provider: 'WhisperNode 🤐'
+      },
+      {
+        address: 'https://seda-api.applejuice.256x25.tech:443',
+        provider: 'Apple juice 🧃'
       }
     ],
     grpc: [
@@ -135,20 +151,39 @@ const info: Chain = {
       {
         address: 'https://grpc.seda.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'grpc-seda.whispernode.com:443',
+        provider: 'WhisperNode 🤐'
       }
     ]
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'sedaexplorer',
       url: 'https://explorer.seda.xyz/',
       tx_page: 'https://explorer.seda.xyz/txs/${txHash}',
       account_page: 'https://explorer.seda.xyz/account/${accountAddress}'
-    }, {
+    },
+    {
       kind: 'explorers.guru',
       url: 'https://seda.explorers.guru',
       tx_page: 'https://seda.explorers.guru/transaction/${txHash}',
       account_page: 'https://seda.explorers.guru/account/${accountAddress}'
-    }],
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/seda',
+      tx_page: 'https://mainnet.whispernode.com/seda/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/seda/account/${accountAddress}'
+    },
+    {
+      kind: 'Apple juice 🧃',
+      url: 'https://explorer.256x25.tech/seda-mainnet',
+      tx_page: 'https://explorer.256x25.tech/seda-mainnet/tx/${txHash}',
+      account_page: 'https://explorer.256x25.tech/seda-mainnet/account/${accountAddress}'
+    }
+  ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/seda/images/seda.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/seda/images/seda.svg'

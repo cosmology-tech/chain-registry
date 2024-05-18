@@ -279,6 +279,35 @@ const info: IBCInfo[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain_1: {
+      chain_name: 'juno',
+      client_id: '07-tendermint-557',
+      connection_id: 'connection-524'
+    },
+    chain_2: {
+      chain_name: 'neutron',
+      client_id: '07-tendermint-97',
+      connection_id: 'connection-71'
+    },
+    channels: [{
+        chain_1: {
+          channel_id: 'channel-548',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-4328',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
       chain_name: 'kava',
       client_id: '07-tendermint-151',
       connection_id: 'connection-194'
@@ -557,6 +586,35 @@ const info: IBCInfo[] = [
         },
         chain_2: {
           channel_id: 'channel-136',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'neutron',
+      client_id: '07-tendermint-98',
+      connection_id: 'connection-72'
+    },
+    chain_2: {
+      chain_name: 'pryzm',
+      client_id: '07-tendermint-6',
+      connection_id: 'connection-6'
+    },
+    channels: [{
+        chain_1: {
+          channel_id: 'channel-4329',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-6',
           port_id: 'transfer'
         },
         ordering: 'unordered',

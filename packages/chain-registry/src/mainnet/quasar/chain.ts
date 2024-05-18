@@ -206,17 +206,26 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/quasar',
       tx_page: 'https://www.mintscan.io/quasar/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/quasar/accounts/${accountAddress}'
-    }, {
+    },
+    {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/quasar',
       tx_page: 'https://ezstaking.app/quasar/txs/${txHash}',
       account_page: 'https://ezstaking.app/quasar/account/${accountAddress}'
-    }],
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/quasar',
+      tx_page: 'https://mainnet.whispernode.com/quasar/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/quasar/account/${accountAddress}'
+    }
+  ],
   keywords: ['mainnet'],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png'

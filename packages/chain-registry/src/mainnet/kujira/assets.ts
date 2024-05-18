@@ -469,7 +469,7 @@ const info: AssetList = {
           type: 'ibc',
           counterparty: {
             chain_name: 'axelar',
-            base_denom: 'wawax-wei',
+            base_denom: 'wavax-wei',
             channel_id: 'channel-14'
           },
           chain: {
@@ -478,6 +478,10 @@ const info: AssetList = {
           }
         }],
       images: [{
+          image_sync: {
+            chain_name: 'axelar',
+            base_denom: 'wavax-wei'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/wavax.svg'
         }],
       logo_URIs: {
@@ -769,7 +773,7 @@ const info: AssetList = {
         }],
       images: [{
           image_sync: {
-            chain_name: 'luna',
+            chain_name: 'terra2',
             base_denom: 'uluna'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
@@ -844,7 +848,7 @@ const info: AssetList = {
         }],
       images: [{
           image_sync: {
-            chain_name: 'scrt',
+            chain_name: 'secretnetwork',
             base_denom: 'uscrt'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
@@ -1016,7 +1020,7 @@ const info: AssetList = {
           },
           chain: {
             channel_id: 'channel-32',
-            path: 'transfer/channel-32/uatom'
+            path: 'transfer/channel-32/stuatom'
           }
         }],
       logo_URIs: {
@@ -1026,7 +1030,7 @@ const info: AssetList = {
       images: [{
           image_sync: {
             chain_name: 'stride',
-            base_denom: 'statom'
+            base_denom: 'stuatom'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg'

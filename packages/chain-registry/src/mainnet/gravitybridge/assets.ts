@@ -119,7 +119,7 @@ const info: AssetList = {
       name: 'USD Coin',
       display: 'gusdc',
       symbol: 'USDC',
-      coingecko_id: 'bridged-usd-coin-gravity-bridge',
+      coingecko_id: 'gravity-bridge-usdc',
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
@@ -276,8 +276,8 @@ const info: AssetList = {
         }],
       images: [{
           image_sync: {
-            base_denom: 'ethereum',
-            chain_name: '0x83F20F44975D03b1b09e64809B757c47f942BEeA'
+            chain_name: 'ethereum',
+            base_denom: '0x83F20F44975D03b1b09e64809B757c47f942BEeA'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.svg'
@@ -376,8 +376,8 @@ const info: AssetList = {
         }],
       images: [{
           image_sync: {
-            base_denom: 'ethereum',
-            chain_name: '0x45804880De22913dAFE09f4980848ECE6EcbAf78'
+            chain_name: 'ethereum',
+            base_denom: '0x45804880De22913dAFE09f4980848ECE6EcbAf78'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/paxg.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/paxg.svg'

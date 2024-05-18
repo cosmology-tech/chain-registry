@@ -225,7 +225,7 @@ const info: AssetList = {
           type: 'liquid-stake',
           counterparty: {
             chain_name: 'evmos',
-            base_denom: 'uaevmos'
+            base_denom: 'aevmos'
           },
           provider: 'Stride'
         }],

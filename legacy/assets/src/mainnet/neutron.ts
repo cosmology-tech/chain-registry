@@ -388,6 +388,45 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of JUNO Chain',
+      denom_units: [{
+          denom: 'ibc/AB73A0D964FCE74EA9D7695553A1EA4B3D8E332571B049E8CC0ADEBFB4931503',
+          exponent: 0,
+          aliases: ['ujuno']
+        }, {
+          denom: 'juno',
+          exponent: 6
+        }],
+      base: 'ibc/AB73A0D964FCE74EA9D7695553A1EA4B3D8E332571B049E8CC0ADEBFB4931503',
+      name: 'Juno',
+      display: 'juno',
+      symbol: 'JUNO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
+      },
+      coingecko_id: 'juno-network',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
+        }],
+      socials: {
+        website: 'https://junonetwork.io/',
+        twitter: 'https://twitter.com/JunoNetwork'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-548',
+            base_denom: 'ujuno',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-4328'
+          }
+        }]
+    },
+    {
       description: 'The native staking and governance token of Kava',
       denom_units: [{
           denom: 'ibc/A9FDC3F1C168CC2196CF00A09504AD42D4D8E0BF1C7FBBB4B3531FA16F633F6E',
@@ -1031,6 +1070,45 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of JUNO Chain',
+      denom_units: [{
+          denom: 'ibc/AB73A0D964FCE74EA9D7695553A1EA4B3D8E332571B049E8CC0ADEBFB4931503',
+          exponent: 0,
+          aliases: ['ujuno']
+        }, {
+          denom: 'juno',
+          exponent: 6
+        }],
+      base: 'ibc/AB73A0D964FCE74EA9D7695553A1EA4B3D8E332571B049E8CC0ADEBFB4931503',
+      name: 'Juno',
+      display: 'juno',
+      symbol: 'JUNO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
+      },
+      coingecko_id: 'juno-network',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
+        }],
+      socials: {
+        website: 'https://junonetwork.io/',
+        twitter: 'https://twitter.com/JunoNetwork'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-548',
+            base_denom: 'ujuno',
+            chain_name: 'juno'
+          },
+          chain: {
+            channel_id: 'channel-4328'
+          }
+        }]
+    },
+    {
       description: 'The native staking and governance token of Kava',
       denom_units: [{
           denom: 'ibc/A9FDC3F1C168CC2196CF00A09504AD42D4D8E0BF1C7FBBB4B3531FA16F633F6E',
@@ -1357,6 +1435,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'USDLR is a fiat-backed stablecoin issued by Stable. Stable pays DeFi protocols who distribute USDLR.',
+      denom_units: [{
+          denom: 'ibc/52DFA9ED74512048DBC9B13FEADB2FD4C8687C035C9CCEC667D1ED43661026F4',
+          exponent: 0,
+          aliases: ['uusdlr']
+        }, {
+          denom: 'usdlr',
+          exponent: 6
+        }],
+      base: 'ibc/52DFA9ED74512048DBC9B13FEADB2FD4C8687C035C9CCEC667D1ED43661026F4',
+      display: 'usdlr',
+      name: 'USDLR by Stable',
+      symbol: 'USDLR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-18',
+            base_denom: 'uusdlr',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-30'
+          }
+        }]
+    },
+    {
       description: 'The native token of Nois',
       denom_units: [{
           denom: 'ibc/D03F341CAA5D24B43ABE27C11A214EA3589DDEA125A2E6A76C7C37F2F3C59692',
@@ -1587,6 +1699,40 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-49'
+          }
+        }]
+    },
+    {
+      description: 'The native token of PRYZM',
+      denom_units: [{
+          denom: 'ibc/E67D49D7F361750487844054310EA5D787EDEC21F951CD8E605699097E65A3EC',
+          exponent: 0,
+          aliases: ['upryzm']
+        }, {
+          denom: 'pryzm',
+          exponent: 6
+        }],
+      base: 'ibc/E67D49D7F361750487844054310EA5D787EDEC21F951CD8E605699097E65A3EC',
+      name: 'Pryzm',
+      display: 'pryzm',
+      symbol: 'PRYZM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'upryzm',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-4329'
           }
         }]
     },
@@ -1936,6 +2082,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'USDLR is a fiat-backed stablecoin issued by Stable. Stable pays DeFi protocols who distribute USDLR.',
+      denom_units: [{
+          denom: 'ibc/52DFA9ED74512048DBC9B13FEADB2FD4C8687C035C9CCEC667D1ED43661026F4',
+          exponent: 0,
+          aliases: ['uusdlr']
+        }, {
+          denom: 'usdlr',
+          exponent: 6
+        }],
+      base: 'ibc/52DFA9ED74512048DBC9B13FEADB2FD4C8687C035C9CCEC667D1ED43661026F4',
+      display: 'usdlr',
+      name: 'USDLR by Stable',
+      symbol: 'USDLR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-18',
+            base_denom: 'uusdlr',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-30'
+          }
+        }]
+    },
+    {
       description: 'The native token of Nois',
       denom_units: [{
           denom: 'ibc/D03F341CAA5D24B43ABE27C11A214EA3589DDEA125A2E6A76C7C37F2F3C59692',
@@ -2166,6 +2346,40 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-49'
+          }
+        }]
+    },
+    {
+      description: 'The native token of PRYZM',
+      denom_units: [{
+          denom: 'ibc/E67D49D7F361750487844054310EA5D787EDEC21F951CD8E605699097E65A3EC',
+          exponent: 0,
+          aliases: ['upryzm']
+        }, {
+          denom: 'pryzm',
+          exponent: 6
+        }],
+      base: 'ibc/E67D49D7F361750487844054310EA5D787EDEC21F951CD8E605699097E65A3EC',
+      name: 'Pryzm',
+      display: 'pryzm',
+      symbol: 'PRYZM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'upryzm',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-4329'
           }
         }]
     },

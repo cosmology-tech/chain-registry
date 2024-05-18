@@ -56,11 +56,11 @@ const info: Chain = {
         provider: 'genznodes'
       },
       {
-        address: 'https://rpc-composable.whispernode.com:443',
+        address: 'https://rpc-picasso.whispernode.com:443',
         provider: 'WhisperNode 🤐'
       },
       {
-        address: 'https://composable-rpc.stake-town.com',
+        address: 'https://picasso-rpc.stake-town.com',
         provider: 'StakeTown'
       },
       {
@@ -110,11 +110,11 @@ const info: Chain = {
         provider: 'genznodes'
       },
       {
-        address: 'https://lcd-composable.whispernode.com:443',
+        address: 'https://api-picasso.whispernode.com:443',
         provider: 'WhisperNode 🤐'
       },
       {
-        address: 'https://composable-api.stake-town.com',
+        address: 'https://picasso-api.stake-town.com',
         provider: 'StakeTown'
       },
       {
@@ -168,7 +168,7 @@ const info: Chain = {
         provider: 'genznodes'
       },
       {
-        address: 'composable-grpc.stake-town.com:443',
+        address: 'picasso-grpc.stake-town.com:443',
         provider: 'StakeTown'
       },
       {
@@ -202,6 +202,10 @@ const info: Chain = {
       {
         address: 'composable.grpc.m.stavr.tech:9907',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'grpc-picasso.whispernode.com:443',
+        provider: 'WhisperNode 🤐'
       }
     ]
   },
@@ -226,6 +230,12 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Composable-Mainnet',
       tx_page: 'https://explorer.stavr.tech/Composable-Mainnet/tx/${txHash}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/picasso',
+      tx_page: 'https://mainnet.whispernode.com/picasso/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/picasso/account/${accountAddress}'
     }
   ],
   images: [{

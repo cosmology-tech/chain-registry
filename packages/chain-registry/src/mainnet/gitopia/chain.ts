@@ -512,6 +512,12 @@ const info: Chain = {
       url: 'https://explorer.declab.pro/Gitopia',
       tx_page: 'https://explorer.declab.pro/Gitopia/tx/${txHash}',
       account_page: 'https://explorer.declab.pro/Gitopia/account/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/gitopia',
+      tx_page: 'https://mainnet.whispernode.com/gitopia/tx/${txHash}',
+      account_page: 'https://mainnet.whispernode.com/gitopia/account/${accountAddress}'
     }
   ],
   logo_URIs: {

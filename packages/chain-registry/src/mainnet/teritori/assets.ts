@@ -165,7 +165,7 @@ const info: AssetList = {
           type: 'ibc',
           counterparty: {
             chain_name: 'noble',
-            base_denom: 'usdc',
+            base_denom: 'uusdc',
             channel_id: 'channel-54'
           },
           chain: {
