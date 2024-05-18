@@ -32,17 +32,23 @@ export class SchemaValidator {
         // Compile and validate each schema, then validate corresponding data
         this.registry.forEachSchemas(([title, schema]) => {
             schema.content.$schema = 'https://json-schema.org/draft/2019-09/schema';
-            const validate: ValidateFunction<unknown> = this.ajv.compile(schema.content);
-            const dataMap = this.registry.dataMappings[title as keyof DataMapping];
+            try {
 
-            if (!dataMap) {
-                console.error(chalk.yellow(`⚠️  No data found for schema titled ${chalk.bold(title)}`));
-                return;
+                const validate: ValidateFunction<unknown> = this.ajv.compile(schema.content);
+                const dataMap = this.registry.dataMappings[title as keyof DataMapping];
+
+                if (!dataMap) {
+                    console.error(chalk.yellow(`⚠️  No data found for schema titled ${chalk.bold(title)}`));
+                    return;
+                }
+
+                dataMap.forEach(data => {
+                    this.validateJsonSchema(data, title, validate, verbose);
+                });
+            } catch (e) {
+                console.error(chalk.red(`❌ Strict Validation errors for schema ${chalk.bold(title)} in file ${chalk.magenta(schema.path)}:`));
+                throw e;
             }
-
-            dataMap.forEach(data => {
-                this.validateJsonSchema(data, title, validate, verbose);
-            });
         });
     }
 
