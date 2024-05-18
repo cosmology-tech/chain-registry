@@ -20,3 +20,19 @@ it('validator', () => {
   validator.validateAllData();
   
 })
+
+it('validator strict', () => {
+
+  const validator = new SchemaValidator(
+    registry,
+    {
+      allErrors: true,
+      useStrict: true
+    }
+  );
+  
+  expect(() => {
+    validator.validateAllData();
+  }).toThrow();
+  
+})
