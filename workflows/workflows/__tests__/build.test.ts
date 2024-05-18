@@ -9,6 +9,15 @@ import { fixtureOutputDir, getRegistry } from '../test-utils';
 // TODO replace
 // import { toCamelCase } from 'schema-typescript';
 
+// FROM schema-typescript
+// // Determine if the key is a valid JavaScript identifier
+
+// Determine if the key is a valid JavaScript-like identifier, allowing internal hyphens
+function isValidIdentifierCamelized(key: string) {
+  return /^[$A-Z_][0-9A-Z_$\-]*$/i.test(key) && !/^[0-9]+$/.test(key) && !/^-/.test(key);
+}
+
+// FROM strfy-js
 function camelCaseTransform(key: string): string {
   return key.replace(/[-_\s]+(.)?/g, (_, c) => c ? c.toUpperCase() : '');
 }
@@ -221,7 +230,7 @@ it('types', () => {
   // console.log(builder);
 
   // builder.build(outputDir);
-  builder.buildSchemas(outputDir, camelCaseTransform);
+  builder.buildSchemas(outputDir, camelCaseTransform, isValidIdentifierCamelized);
 
   const registry2 = new Registry(outputDir);
 
