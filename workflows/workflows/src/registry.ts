@@ -36,7 +36,7 @@ export interface DataMapping {
   Versions: JSONSchemaContent<Versions>[]
 }
 
-const IGNORE_ROOT_DIRS =  [
+const IGNORE_ROOT_DIRS = [
   `_template`,
   `.github`,
   `.git`,
@@ -133,19 +133,24 @@ export class Registry {
     // parse every JSON file
     this.definitions = glob(`${this.basePath}/**/*.json`, {
       // ignore certain root directories
-      ignore: IGNORE_ROOT_DIRS.map(dir=>`${this.basePath}/${dir}/**/*`)
+      ignore: IGNORE_ROOT_DIRS.map(dir => `${this.basePath}/${dir}/**/*`)
     })
       .map(path => {
-        const content = JSON.parse(readFileSync(path, 'utf-8'));
-        if (!this.isJsonSchema(content)) return;
-        // https://stackoverflow.com/questions/69133771/ajv-no-schema-with-key-or-ref-https-json-schema-org-draft-07-schema
-        content.$schema = content.$schema.replace(/https/, 'http');
-        types[basename(content.$schema)] = true;
-        return {
-          $schemaFile: basename(content.$schema),
-          path,
-          content
-        };
+        try {
+          const content = JSON.parse(readFileSync(path, 'utf-8'));
+          if (!this.isJsonSchema(content)) return;
+          // https://stackoverflow.com/questions/69133771/ajv-no-schema-with-key-or-ref-https-json-schema-org-draft-07-schema
+          content.$schema = content.$schema.replace(/https/, 'http');
+          types[basename(content.$schema)] = true;
+          return {
+            $schemaFile: basename(content.$schema),
+            path,
+            content
+          };
+        } catch (error) {
+          // Throw a custom error with a clear message including the file path
+          throw new Error(`Failed to parse JSON. The file at "${path}" is not valid JSON.`);
+        }
       }).filter(Boolean)
 
     // filter out schemas (e.g. draft-04/schema )
@@ -173,14 +178,14 @@ export class Registry {
     return Object.entries(this.schemaMappings).map(([title, schema]) => {
       if (schema) return [title, schema];
     }).filter(Boolean)
-    .map(mapper as any);
+      .map(mapper as any);
   }
 
   public forEachSchemas(mapper: SchemaMapper): any {
     return Object.entries(this.schemaMappings).map(([title, schema]) => {
       if (schema) return [title, schema];
     }).filter(Boolean)
-    .forEach(mapper as any);
+      .forEach(mapper as any);
   }
 
   public get chains(): Chain[] {
@@ -204,7 +209,7 @@ export class Registry {
   }
 
   public get schemas(): JSONSchemaContent<JSONSchema>[] {
-    return this.mapSchemas(([_str, obj])=> {
+    return this.mapSchemas(([_str, obj]) => {
       return obj as JSONSchemaContent<JSONSchema>;
     })
   }
