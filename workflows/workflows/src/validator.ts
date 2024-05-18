@@ -30,7 +30,7 @@ export class SchemaValidator {
 
     public validateAllData(verbose: boolean = false) {
         // Compile and validate each schema, then validate corresponding data
-        Object.entries(this.registry.schemaMappings).forEach(([title, schema]) => {
+        this.registry.forEachSchemas(([title, schema]) => {
             schema.content.$schema = 'https://json-schema.org/draft/2019-09/schema';
             const validate: ValidateFunction<unknown> = this.ajv.compile(schema.content);
             const dataMap = this.registry.dataMappings[title as keyof DataMapping];
