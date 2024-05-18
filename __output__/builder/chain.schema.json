@@ -5,60 +5,18 @@
   "description": "Chain.json is a metadata file that contains information about a blockchain.",
   "type": "object",
   "required": [
-    "chain_name",
-    "chain_id",
-    "bech32_prefix"
+    "chainName",
+    "chainId",
+    "bech32Prefix"
   ],
   "properties": {
     "$schema": {
       "type": "string",
       "pattern": "^(\\.\\./)+chain\\.schema\\.json$"
     },
-    "chain_name": {
-      "type": "string",
-      "pattern": "[a-z0-9]+"
-    },
-    "chain_id": {
-      "type": "string"
-    },
-    "pre_fork_chain_name": {
-      "type": "string",
-      "pattern": "[a-z0-9]+"
-    },
-    "pretty_name": {
-      "type": "string"
-    },
     "website": {
       "type": "string",
       "format": "uri"
-    },
-    "network_type": {
-      "enum": [
-        "mainnet",
-        "testnet",
-        "devnet"
-      ]
-    },
-    "bech32_prefix": {
-      "type": "string",
-      "description": "The default prefix for the human-readable part of addresses that identifies the coin type. Must be registered with SLIP-0173. E.g., 'cosmos'"
-    },
-    "node_home": {
-      "type": "string"
-    },
-    "key_algos": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "enum": [
-          "secp256k1",
-          "ethsecp256k1",
-          "ed25519",
-          "sr25519",
-          "bn254"
-        ],
-        "uniqueItems": true
-      }
     },
     "slip44": {
       "type": "number"
@@ -66,13 +24,13 @@
     "fees": {
       "type": "object",
       "required": [
-        "fee_tokens"
+        "feeTokens"
       ],
       "properties": {
-        "fee_tokens": {
+        "feeTokens": {
           "type": "array",
           "items": {
-            "$ref": "#/$defs/fee_token"
+            "$ref": "#/$defs/feeToken"
           }
         }
       },
@@ -81,16 +39,16 @@
     "staking": {
       "type": "object",
       "required": [
-        "staking_tokens"
+        "stakingTokens"
       ],
       "properties": {
-        "staking_tokens": {
+        "stakingTokens": {
           "type": "array",
           "items": {
-            "$ref": "#/$defs/staking_token"
+            "$ref": "#/$defs/stakingToken"
           }
         },
-        "lock_duration": {
+        "lockDuration": {
           "type": "object",
           "properties": {
             "blocks": {
@@ -111,19 +69,19 @@
     "codebase": {
       "type": "object",
       "properties": {
-        "cosmos_sdk_version": {
+        "cosmosSdkVersion": {
           "type": "string"
         },
-        "cosmwasm_version": {
+        "cosmwasmVersion": {
           "type": "string"
         },
-        "cosmwasm_enabled": {
+        "cosmwasmEnabled": {
           "type": "boolean"
         },
-        "ibc_go_version": {
+        "ibcGoVersion": {
           "type": "string"
         },
-        "ics_enabled": {
+        "icsEnabled": {
           "type": "array",
           "description": "List of IBC apps (usually corresponding to a ICS standard) which have been enabled on the network.",
           "items": {
@@ -144,9 +102,6 @@
       "items": {
         "type": "object",
         "properties": {
-          "image_sync": {
-            "$ref": "#/$defs/pointer"
-          },
           "png": {
             "type": "string",
             "format": "uri-reference",
@@ -160,14 +115,14 @@
           "theme": {
             "type": "object",
             "properties": {
-              "primary_color_hex": {
-                "type": "string",
-                "pattern": "^#[0-9a-fA-F]{6}$"
-              },
               "circle": {
                 "type": "boolean"
               },
-              "dark_mode": {
+              "primaryColorHex": {
+                "type": "string",
+                "pattern": "^#[0-9a-fA-F]{6}$"
+              },
+              "darkMode": {
                 "type": "boolean"
               }
             },
@@ -183,7 +138,10 @@
             ],
             "description": "logomark == icon only; logotype == text only; logo == icon + text."
           },
-          "text_position": {
+          "imageSync": {
+            "$ref": "#/$defs/pointer"
+          },
+          "textPosition": {
             "type": "string",
             "enum": [
               "top",
@@ -269,7 +227,49 @@
         "type": "string"
       }
     },
-    "extra_codecs": {
+    "chainName": {
+      "type": "string",
+      "pattern": "[a-z0-9]+"
+    },
+    "chainId": {
+      "type": "string"
+    },
+    "preForkChainName": {
+      "type": "string",
+      "pattern": "[a-z0-9]+"
+    },
+    "prettyName": {
+      "type": "string"
+    },
+    "networkType": {
+      "enum": [
+        "mainnet",
+        "testnet",
+        "devnet"
+      ]
+    },
+    "bech32Prefix": {
+      "type": "string",
+      "description": "The default prefix for the human-readable part of addresses that identifies the coin type. Must be registered with SLIP-0173. E.g., 'cosmos'"
+    },
+    "nodeHome": {
+      "type": "string"
+    },
+    "keyAlgos": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "secp256k1",
+          "ethsecp256k1",
+          "ed25519",
+          "sr25519",
+          "bn254"
+        ],
+        "uniqueItems": true
+      }
+    },
+    "extraCodecs": {
       "type": "array",
       "items": {
         "type": "string",
@@ -283,6 +283,25 @@
   },
   "additionalProperties": false,
   "$defs": {
+    "peer": {
+      "type": "object",
+      "required": [
+        "id",
+        "address"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "provider": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
     "endpoint": {
       "type": "object",
       "required": [
@@ -304,59 +323,10 @@
         "url": {
           "type": "string"
         },
-        "tx_page": {
+        "txPage": {
           "type": "string"
         },
-        "account_page": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-    "fee_token": {
-      "type": "object",
-      "required": [
-        "denom"
-      ],
-      "properties": {
-        "denom": {
-          "type": "string"
-        },
-        "fixed_min_gas_price": {
-          "type": "number"
-        },
-        "low_gas_price": {
-          "type": "number"
-        },
-        "average_gas_price": {
-          "type": "number"
-        },
-        "high_gas_price": {
-          "type": "number"
-        },
-        "gas_costs": {
-          "type": "object",
-          "properties": {
-            "cosmos_send": {
-              "type": "number"
-            },
-            "ibc_transfer": {
-              "type": "number"
-            }
-          },
-          "additionalProperties": false,
-          "minProperties": 1
-        }
-      },
-      "additionalProperties": false
-    },
-    "staking_token": {
-      "type": "object",
-      "required": [
-        "denom"
-      ],
-      "properties": {
-        "denom": {
+        "accountPage": {
           "type": "string"
         }
       },
@@ -366,16 +336,65 @@
       "type": "object",
       "description": "The (primary) key used to identify an object within the Chain Registry.",
       "required": [
-        "chain_name"
+        "chainName"
       ],
       "properties": {
-        "chain_name": {
+        "chainName": {
           "type": "string",
           "description": "The chain name or platform from which the object resides. E.g., 'cosmoshub', 'ethereum', 'forex', or 'nasdaq'"
         },
-        "base_denom": {
+        "baseDenom": {
           "type": "string",
           "description": "The base denom of the asset from which the object originates. E.g., when describing ATOM from Cosmos Hub, specify 'uatom', NOT 'atom' nor 'ATOM'; base units are unique per platform."
+        }
+      },
+      "additionalProperties": false
+    },
+    "feeToken": {
+      "type": "object",
+      "required": [
+        "denom"
+      ],
+      "properties": {
+        "denom": {
+          "type": "string"
+        },
+        "fixedMinGasPrice": {
+          "type": "number"
+        },
+        "lowGasPrice": {
+          "type": "number"
+        },
+        "averageGasPrice": {
+          "type": "number"
+        },
+        "highGasPrice": {
+          "type": "number"
+        },
+        "gasCosts": {
+          "type": "object",
+          "properties": {
+            "cosmosSend": {
+              "type": "number"
+            },
+            "ibcTransfer": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": false,
+          "minProperties": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "stakingToken": {
+      "type": "object",
+      "required": [
+        "denom"
+      ],
+      "properties": {
+        "denom": {
+          "type": "string"
         }
       },
       "additionalProperties": false
