@@ -199,13 +199,13 @@
             "$ref": "#/$defs/endpoint"
           }
         },
-        "grpc-web": {
+        "grpcWeb": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/endpoint"
           }
         },
-        "evm-http-jsonrpc": {
+        "evmHttpJsonrpc": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/endpoint"
