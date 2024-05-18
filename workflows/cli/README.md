@@ -75,6 +75,7 @@ Options:
 - `--useStrict`: Enables strict mode in the schema validation process, ensuring that only explicitly permitted properties are present in the data (default: false).
 - `--allErrors`: Configures the validator to return all errors found during validation instead of stopping at the first error (default: true).
 - `--useDefaults`: Applies default values defined in the schema during validation, filling in missing data as needed (default: true).
+- `--draft`: Choose between JSON Schema drafts: `draft-07`, `2019-09`, and `2020-12` (default: 2019-09).
 
 ### Codegen
 

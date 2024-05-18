@@ -27,6 +27,13 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
       default: true
     },
     {
+      type: 'text',
+      name: 'draft',
+      required: true,
+      useDefault: true,
+      default: '2019-09'
+    },
+    {
       type: 'confirm',
       name: 'useDefaults',
       required: true,
@@ -41,12 +48,16 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
   }
 
   const registry = new Registry(argv.registryDir)
+  
   const {
+    draft,
     allErrors,
     useDefaults,
     useStrict
   } = argv;
+
   const validator = new SchemaValidator(registry, {
+    draft,
     allErrors,
     useDefaults,
     useStrict
