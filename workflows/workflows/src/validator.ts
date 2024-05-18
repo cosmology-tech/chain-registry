@@ -18,6 +18,7 @@ export class SchemaValidator {
     private ajv: Ajv2020 | Ajv2019;
     private registry: Registry;
     private options: SchemaValidatorOptions;
+    private failures: number = 0;
 
     constructor(registry: Registry, options?: SchemaValidatorOptions) {
         const { useStrict = false, allErrors = true, useDefaults = true, draft = '2019-09' } = options ?? {};
@@ -97,6 +98,9 @@ export class SchemaValidator {
                 throw e;
             }
         });
+        if (this.options.allErrors && this.failures > 0) {
+            throw new Error('❌ Validation Failed.');
+        }
     }
 
     private validateJsonSchema(
@@ -106,6 +110,7 @@ export class SchemaValidator {
         verbose: boolean
     ) {
         if (!validate(data.content)) {
+            this.failures++;
             console.error(chalk.red(`❌ Validation errors for ${chalk.bold(title)} in file ${chalk.magenta(data.path)}:`));
             validate.errors?.forEach(error => {
                 console.error(chalk.red(`  ➡️ ${error.instancePath} ${error.message}`));
