@@ -13,15 +13,10 @@ export interface ChannelInfo {
   connectionId?: string;
 }
 export interface IBCData {
-  schema?: string;
-  chain1: ChainInfo;
-  chain2: ChainInfo;
+  $schema?: string;
   channels: {
-    chain1: ChannelInfo;
-    chain2: ChannelInfo;
     ordering: "ordered" | "unordered";
     version: string;
-    feeVersion?: string;
     description?: string;
     tags?: {
       status?: "live" | "upcoming" | "killed";
@@ -29,12 +24,17 @@ export interface IBCData {
       dex?: string;
       properties?: string;
     };
+    chain1: ChannelInfo;
+    chain2: ChannelInfo;
+    feeVersion?: string;
   }[];
   operators?: {
-    chain1: ChainOperatorInfo;
-    chain2: ChainOperatorInfo;
     memo: string;
     name: string;
+    chain1: ChainOperatorInfo;
+    chain2: ChainOperatorInfo;
     discordHandle?: string;
   }[];
+  chain1: ChainInfo;
+  chain2: ChainInfo;
 }

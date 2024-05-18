@@ -6,6 +6,13 @@ import { JSStringifySetterOptions } from 'strfy-js';
 import { Registry, RegistryBuilder, RegistryBuilderOptions, SchemaTypeGenerator } from '../src';
 import { fixtureOutputDir, getRegistry } from '../test-utils';
 
+// TODO replace
+// import { toCamelCase } from 'schema-typescript';
+
+function camelCaseTransform(key: string): string {
+  return key.replace(/[-_\s]+(.)?/g, (_, c) => c ? c.toUpperCase() : '');
+}
+
 const outputDir = join(fixtureOutputDir, 'builder');
 const outputDir2 = join(fixtureOutputDir, 'builder-schemata');
 
@@ -214,7 +221,7 @@ it('types', () => {
   // console.log(builder);
 
   // builder.build(outputDir);
-  builder.buildSchemas(outputDir);
+  builder.buildSchemas(outputDir, camelCaseTransform);
 
   const registry2 = new Registry(outputDir);
 
@@ -228,7 +235,8 @@ it('types', () => {
     registry: registry2,
     schemaTSOptions: {
         strictTypeSafety: true,
-        camelCase: true,
+        // NO NEED TO DO CAMEL HERE! just use the schema ;) 
+        // camelCase: true,
         useSingleQuotes: true
     }
   });

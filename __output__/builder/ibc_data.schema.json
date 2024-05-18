@@ -3,8 +3,8 @@
   "title": "IBCData",
   "type": "object",
   "required": [
-    "chain_1",
-    "chain_2",
+    "chain1",
+    "chain2",
     "channels"
   ],
   "properties": {
@@ -12,33 +12,17 @@
       "type": "string",
       "pattern": "^(\\.\\./)+ibc_data\\.schema\\.json$"
     },
-    "chain_1": {
-      "type": "object",
-      "$ref": "#/$defs/chain_info"
-    },
-    "chain_2": {
-      "type": "object",
-      "$ref": "#/$defs/chain_info"
-    },
     "channels": {
       "type": "array",
       "items": {
         "type": "object",
         "required": [
-          "chain_1",
-          "chain_2",
+          "chain1",
+          "chain2",
           "ordering",
           "version"
         ],
         "properties": {
-          "chain_1": {
-            "type": "object",
-            "$ref": "#/$defs/channel_info"
-          },
-          "chain_2": {
-            "type": "object",
-            "$ref": "#/$defs/channel_info"
-          },
           "ordering": {
             "enum": [
               "ordered",
@@ -49,10 +33,6 @@
           "version": {
             "type": "string",
             "description": "IBC Version"
-          },
-          "fee_version": {
-            "type": "string",
-            "description": "Fee Version"
           },
           "description": {
             "type": "string",
@@ -81,6 +61,18 @@
               }
             },
             "additionalProperties": true
+          },
+          "chain1": {
+            "type": "object",
+            "$ref": "#/$defs/channelInfo"
+          },
+          "chain2": {
+            "type": "object",
+            "$ref": "#/$defs/channelInfo"
+          },
+          "feeVersion": {
+            "type": "string",
+            "description": "Fee Version"
           }
         },
         "additionalProperties": false
@@ -92,20 +84,12 @@
       "items": {
         "type": "object",
         "required": [
-          "chain_1",
-          "chain_2",
+          "chain1",
+          "chain2",
           "memo",
           "name"
         ],
         "properties": {
-          "chain_1": {
-            "type": "object",
-            "$ref": "#/$defs/chain_operator_info"
-          },
-          "chain_2": {
-            "type": "object",
-            "$ref": "#/$defs/chain_operator_info"
-          },
           "memo": {
             "type": "string"
           },
@@ -113,16 +97,32 @@
             "type": "string",
             "description": "Operator display name"
           },
-          "discord_handle": {
+          "chain1": {
+            "type": "object",
+            "$ref": "#/$defs/chainOperatorInfo"
+          },
+          "chain2": {
+            "type": "object",
+            "$ref": "#/$defs/chainOperatorInfo"
+          },
+          "discordHandle": {
             "type": "string"
           }
         }
       }
+    },
+    "chain1": {
+      "type": "object",
+      "$ref": "#/$defs/chainInfo"
+    },
+    "chain2": {
+      "type": "object",
+      "$ref": "#/$defs/chainInfo"
     }
   },
   "additionalProperties": false,
   "$defs": {
-    "chain_operator_info": {
+    "chainOperatorInfo": {
       "type": "object",
       "description": "Operator information on a specific chain.",
       "properties": {
@@ -131,49 +131,49 @@
         }
       }
     },
-    "chain_info": {
+    "chainInfo": {
       "type": "object",
       "description": "Top level IBC data pertaining to the chain. `chain_1` and `chain_2` should be in alphabetical order.",
       "required": [
-        "chain_name",
-        "client_id",
-        "connection_id"
+        "chainName",
+        "clientId",
+        "connectionId"
       ],
       "properties": {
-        "chain_name": {
+        "chainName": {
           "type": "string"
         },
-        "client_id": {
+        "clientId": {
           "type": "string",
           "description": "The client ID on the corresponding chain representing the other chain's light client."
         },
-        "connection_id": {
+        "connectionId": {
           "type": "string",
           "description": "The connection ID on the corresponding chain representing a connection to the other chain."
         }
       },
       "additionalProperties": false
     },
-    "channel_info": {
+    "channelInfo": {
       "type": "object",
       "required": [
-        "channel_id",
-        "port_id"
+        "channelId",
+        "portId"
       ],
       "properties": {
-        "channel_id": {
+        "channelId": {
           "type": "string",
           "description": "The channel ID on the corresponding chain's connection representing a channel on the other chain."
         },
-        "port_id": {
+        "portId": {
           "type": "string",
           "description": "The IBC port ID which a relevant module binds to on the corresponding chain."
         },
-        "client_id": {
+        "clientId": {
           "type": "string",
           "description": "Optional. The client ID on the corresponding chain representing the other chain's light client."
         },
-        "connection_id": {
+        "connectionId": {
           "type": "string",
           "description": "Optional. The connection ID on the corresponding chain representing a connection to the other chain."
         }
