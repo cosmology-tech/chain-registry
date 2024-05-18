@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/v2-cosmostation",
-  "version": "1.57.0",
+  "version": "1.58.0",
   "description": "Chain Registry to Cosmostation",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
@@ -28,11 +28,11 @@
     "test:watch": "jest --watch"
   },
   "devDependencies": {
-    "chain-registry": "^1.54.0"
+    "chain-registry": "^1.55.0"
   },
   "dependencies": {
-    "@chain-registry/types": "^0.36.0",
-    "@chain-registry/utils": "^1.37.0",
+    "@chain-registry/types": "^0.37.0",
+    "@chain-registry/utils": "^1.38.0",
     "@cosmostation/extension-client": "0.1.15"
   },
   "keywords": [
