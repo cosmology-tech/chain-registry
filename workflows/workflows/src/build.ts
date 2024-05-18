@@ -1,6 +1,6 @@
 import { writeFileSync } from 'fs';
 import { JSONSchemaPatch, JSONSchemaPatchOperation } from 'json-schema-patch';
-import { TransformFunction } from 'json-schema-patch/types/utils';
+import { BooleanFunction, TransformFunction } from 'json-schema-patch/types/utils';
 import { sync as mkdirp } from 'mkdirp';
 import { dirname, join } from 'path';
 import { jsonStringify, JSONStringifyOptions } from 'strfy-js';
@@ -36,10 +36,16 @@ export class RegistryBuilder {
     writeFileSync(file, str);
   }
 
-  writeSchema(outDir: string, info: JSONSchemaContent<any>, ops: JSONSchemaPatchOperation[], transformer: TransformFunction) {
+  writeSchema(
+    outDir: string,
+    info: JSONSchemaContent<any>,
+    ops: JSONSchemaPatchOperation[],
+    transformer: TransformFunction,
+    transformTest: BooleanFunction
+  ) {
     const patcher = new JSONSchemaPatch(info.content);
     ops.forEach(patcher.prepareOperation.bind(patcher));
-    patcher.transform(transformer.bind(patcher));
+    patcher.transform(transformer.bind(patcher), transformTest);
     // @ts-ignore
     patcher.applyPatch();
 
@@ -48,10 +54,10 @@ export class RegistryBuilder {
     writeFileSync(file, JSON.stringify(patcher.schema, null, 2));
   }
 
-  buildSchemas(outDir: string, transformer: TransformFunction) {
-    this.writeSchema(outDir, this.registry.schemaMappings.AssetList, this.options.ops.assetList, transformer);
-    this.writeSchema(outDir, this.registry.schemaMappings.Chain, this.options.ops.chain, transformer);
-    this.writeSchema(outDir, this.registry.schemaMappings.IBCData, this.options.ops.ibcData, transformer);
+  buildSchemas(outDir: string, transformer: TransformFunction, transformTest: BooleanFunction) {
+    this.writeSchema(outDir, this.registry.schemaMappings.AssetList, this.options.ops.assetList, transformer, transformTest);
+    this.writeSchema(outDir, this.registry.schemaMappings.Chain, this.options.ops.chain, transformer, transformTest);
+    this.writeSchema(outDir, this.registry.schemaMappings.IBCData, this.options.ops.ibcData, transformer, transformTest);
   }
 
   build(outDir: string) {
