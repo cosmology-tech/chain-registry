@@ -1789,7 +1789,10 @@ const assets: AssetList = {
       symbol: 'AFA',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/afa.png'
-        }]
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/afa.png'
+      }
     },
     {
       description: 'The token for the Arena DAO',
@@ -1809,7 +1812,11 @@ const assets: AssetList = {
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/arena.svg',
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/arena.png'
-        }]
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/arena.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/arena.svg'
+      }
     }
   ]
 };

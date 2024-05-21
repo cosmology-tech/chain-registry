@@ -703,6 +703,10 @@ const info: AssetList = {
           }
         }],
       images: [{
+          image_sync: {
+            chain_name: 'axelar',
+            base_denom: 'weth-wei'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png'
         }],
       logo_URIs: {
@@ -1102,6 +1106,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg'
       },
       images: [{
+          image_sync: {
+            chain_name: 'stride',
+            base_denom: 'stuosmo'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg'
         }]
@@ -1859,6 +1867,7 @@ const info: AssetList = {
       name: 'NAMI',
       display: 'nami',
       symbol: 'NAMI',
+      coingecko_id: 'nami-protocol',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/nami.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/nami.svg'

@@ -55,6 +55,10 @@ const info: AssetList = {
       },
       coingecko_id: 'wrapped-moonbeam',
       images: [{
+          image_sync: {
+            chain_name: 'moonbeamtestnet',
+            base_denom: 'Wei'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg'
         }]
     },

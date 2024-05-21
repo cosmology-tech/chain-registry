@@ -54,10 +54,12 @@ const info: AssetList = {
           provider: 'Polygon'
         }],
       logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg'
       },
       coingecko_id: 'wmatic',
       images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg'
         }]
     },
@@ -90,6 +92,10 @@ const info: AssetList = {
       },
       coingecko_id: 'usd-coin',
       images: [{
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }]
     },
@@ -152,6 +158,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
       },
       images: [{
+          image_sync: {
+            chain_name: 'axelar',
+            base_denom: 'frax-wei'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
         }]
     },

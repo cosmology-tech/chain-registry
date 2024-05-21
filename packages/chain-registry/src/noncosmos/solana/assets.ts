@@ -53,6 +53,10 @@ const info: AssetList = {
       },
       coingecko_id: 'wrapped-solana',
       images: [{
+          image_sync: {
+            chain_name: 'solana',
+            base_denom: 'Lamport'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol.svg'
         }]
     },

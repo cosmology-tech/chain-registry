@@ -86,6 +86,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
       },
       images: [{
+          image_sync: {
+            chain_name: 'cosmoshubtestnet',
+            base_denom: 'uatom'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
         }]
@@ -233,6 +237,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
       },
       images: [{
+          image_sync: {
+            chain_name: 'junotestnet',
+            base_denom: 'ujunox'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
         }]
@@ -269,6 +277,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
       },
       images: [{
+          image_sync: {
+            chain_name: 'marstestnet',
+            base_denom: 'umars'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
         }]
@@ -330,6 +342,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       images: [{
+          image_sync: {
+            chain_name: 'nobletestnet',
+            base_denom: 'uusdc'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }]
     },
@@ -365,6 +381,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
       },
       images: [{
+          image_sync: {
+            chain_name: 'akashtestnet',
+            base_denom: 'uakt'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
         }]
@@ -448,6 +468,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
       },
       images: [{
+          image_sync: {
+            chain_name: 'quicksilvertestnet',
+            base_denom: 'uqck'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
         }]
     },
@@ -482,6 +506,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/chain4energytestnet/images/c4e.png'
       },
       images: [{
+          image_sync: {
+            chain_name: 'chain4energytestnet',
+            base_denom: 'uc4e'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/chain4energytestnet/images/c4e.png'
         }]
     },
@@ -517,6 +545,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
       },
       images: [{
+          image_sync: {
+            chain_name: 'persistencetestnet2',
+            base_denom: 'uxprt'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
         }]
@@ -553,6 +585,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
       },
       images: [{
+          image_sync: {
+            chain_name: 'xiontestnet',
+            base_denom: 'uxion'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
         }]
     },
@@ -589,6 +625,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg'
       },
       images: [{
+          image_sync: {
+            chain_name: 'sagatestnet',
+            base_denom: 'utsaga'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg'
         }]

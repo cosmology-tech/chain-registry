@@ -8254,6 +8254,9 @@ const assets: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/afa.png'
         }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/afa.png'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -10853,6 +10856,9 @@ const assets: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/afa.png'
         }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/afa.png'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {

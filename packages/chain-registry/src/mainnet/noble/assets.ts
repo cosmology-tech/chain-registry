@@ -81,6 +81,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
       },
       images: [{
+          image_sync: {
+            chain_name: 'cosmoshub',
+            base_denom: 'uatom'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
         }]

@@ -24,6 +24,10 @@ const info: AssetList = {
           provider: 'Dydx'
         }],
       images: [{
+          image_sync: {
+            chain_name: 'dydx',
+            base_denom: 'adydx'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
         }, {
