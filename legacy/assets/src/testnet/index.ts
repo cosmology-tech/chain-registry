@@ -17,6 +17,7 @@ export * as kujiratestnet from './kujiratestnet';
 export * as kyvetestnet from './kyvetestnet';
 export * as lavatestnet from './lavatestnet';
 export * as likecointestnet from './likecointestnet';
+export * as mantrachaintestnet from './mantrachaintestnet';
 export * as marstestnet from './marstestnet';
 export * as neutrontestnet from './neutrontestnet';
 export * as nobletestnet from './nobletestnet';

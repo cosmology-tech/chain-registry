@@ -8962,7 +8962,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Escudos is the everyday currency of dioalma.protocol, good to send money back and foward.',
+      description: 'Escudos is the everyday currency of dioalma.protocol, good to send money back and forward.',
       denom_units: [{
           denom: 'ibc/C025F721CC19CA353AD9EC405716358965A1C3D12739A840CF5FD787E712B86F',
           exponent: 0,
@@ -16896,7 +16896,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Escudos is the everyday currency of dioalma.protocol, good to send money back and foward.',
+      description: 'Escudos is the everyday currency of dioalma.protocol, good to send money back and forward.',
       denom_units: [{
           denom: 'ibc/C025F721CC19CA353AD9EC405716358965A1C3D12739A840CF5FD787E712B86F',
           exponent: 0,

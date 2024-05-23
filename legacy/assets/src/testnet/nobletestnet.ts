@@ -86,6 +86,50 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of MANTRA',
+      denom_units: [{
+          denom: 'ibc/81B164F4C8A85A47FDC4D7E4041B5911988837212CB73E93AE5676F291602B2E',
+          exponent: 0,
+          aliases: ['uom']
+        }, {
+          denom: 'om',
+          exponent: 6,
+          aliases: []
+        }],
+      base: 'ibc/81B164F4C8A85A47FDC4D7E4041B5911988837212CB73E93AE5676F291602B2E',
+      name: 'MANTRA Chain',
+      display: 'om',
+      symbol: 'OM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.svg'
+      },
+      coingecko_id: '',
+      keywords: [
+        'mantra',
+        'staking',
+        'delegating',
+        'governance',
+        'regulation',
+        'defi'
+      ],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'uom',
+            chain_name: 'mantrachaintestnet'
+          },
+          chain: {
+            channel_id: 'channel-174'
+          }
+        }]
+    },
+    {
       description: 'The native token of Elys Network',
       denom_units: [
         {
@@ -165,6 +209,50 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-19'
+          }
+        }]
+    },
+    {
+      description: 'The native token of MANTRA',
+      denom_units: [{
+          denom: 'ibc/81B164F4C8A85A47FDC4D7E4041B5911988837212CB73E93AE5676F291602B2E',
+          exponent: 0,
+          aliases: ['uom']
+        }, {
+          denom: 'om',
+          exponent: 6,
+          aliases: []
+        }],
+      base: 'ibc/81B164F4C8A85A47FDC4D7E4041B5911988837212CB73E93AE5676F291602B2E',
+      name: 'MANTRA Chain',
+      display: 'om',
+      symbol: 'OM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.svg'
+      },
+      coingecko_id: '',
+      keywords: [
+        'mantra',
+        'staking',
+        'delegating',
+        'governance',
+        'regulation',
+        'defi'
+      ],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'uom',
+            chain_name: 'mantrachaintestnet'
+          },
+          chain: {
+            channel_id: 'channel-174'
           }
         }]
     },
