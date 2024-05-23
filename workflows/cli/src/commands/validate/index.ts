@@ -39,6 +39,13 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
       required: true,
       useDefault: true,
       default: true
+    },
+    {
+      type: 'text',
+      name: 'logLevel',
+      required: true,
+      useDefault: true,
+      default: 'info'
     }
   ]);
 
@@ -53,14 +60,16 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
     draft,
     allErrors,
     useDefaults,
-    useStrict
+    useStrict,
+    logLevel
   } = argv;
 
   const validator = new SchemaValidator(registry, {
     draft,
     allErrors,
     useDefaults,
-    useStrict
+    useStrict,
+    logLevel
   });
 
   validator.validateAllData(true);

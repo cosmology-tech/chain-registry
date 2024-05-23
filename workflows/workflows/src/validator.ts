@@ -12,6 +12,7 @@ export interface SchemaValidatorOptions {
     useStrict?: boolean;
     allErrors?: boolean;
     useDefaults?: boolean;
+    logLevel?: 'info' | 'error' | 'none';
 }
 
 export class SchemaValidator {
@@ -21,13 +22,20 @@ export class SchemaValidator {
     private failures: number = 0;
 
     constructor(registry: Registry, options?: SchemaValidatorOptions) {
-        const { useStrict = false, allErrors = true, useDefaults = true, draft = '2019-09' } = options ?? {};
+        const { 
+            useStrict = false,
+            allErrors = true,
+            useDefaults = true,
+            draft = '2019-09',
+            logLevel = 'info'
+        } = options ?? {};
 
         this.options = {
             useDefaults,
             useStrict,
             draft,
-            allErrors
+            allErrors,
+            logLevel
         };
 
         switch (draft) {
@@ -94,7 +102,9 @@ export class SchemaValidator {
                     this.validateJsonSchema(data, title, validate, verbose);
                 });
             } catch (e) {
-                console.error(chalk.red(`❌ Strict Validation errors for schema ${chalk.bold(title)} in file ${chalk.magenta(schema.path)}:`));
+                if (['info', 'error'].includes(this.options.logLevel)) {
+                    console.error(chalk.red(`❌ Strict Validation errors for schema ${chalk.bold(title)} in file ${chalk.magenta(schema.path)}:`));
+                }
                 throw e;
             }
         });
@@ -111,12 +121,17 @@ export class SchemaValidator {
     ) {
         if (!validate(data.content)) {
             this.failures++;
-            console.error(chalk.red(`❌ Validation errors for ${chalk.bold(title)} in file ${chalk.magenta(data.path)}:`));
-            validate.errors?.forEach(error => {
-                console.error(chalk.red(`  ➡️ ${error.instancePath} ${error.message}`));
-            });
+            if (['info', 'error'].includes(this.options.logLevel)) {
+                console.error(chalk.red(`❌ Validation errors for ${chalk.bold(title)} in file ${chalk.magenta(data.path)}:`));
+
+                validate.errors?.forEach(error => {
+                    console.error(chalk.red(`  ➡️ ${error.instancePath} ${error.message}`));
+                });
+            }
         } else if (verbose) {
-            console.log(chalk.green(`✅ Validation passed for ${chalk.bold(title)} in file ${chalk.magenta(data.path)}`));
+            if (['info'].includes(this.options.logLevel)) {
+                console.log(chalk.green(`✅ Validation passed for ${chalk.bold(title)} in file ${chalk.magenta(data.path)}`));
+            }
         }
     }
 }
