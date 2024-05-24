@@ -206,6 +206,49 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Coreum',
+      denom_units: [{
+          denom: 'ibc/35CA3AB73EF616E989E6DDD91EA33BEBAF77CA710641973028460CCFE69452AB',
+          exponent: 0,
+          aliases: ['utestcore']
+        }, {
+          denom: 'testcore',
+          exponent: 6
+        }],
+      base: 'ibc/35CA3AB73EF616E989E6DDD91EA33BEBAF77CA710641973028460CCFE69452AB',
+      name: 'Coreum',
+      display: 'testcore',
+      symbol: 'TESTCORE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
+      },
+      coingecko_id: 'coreum',
+      keywords: [
+        'dex',
+        'staking',
+        'wasm',
+        'assets',
+        'nft',
+        'XRPL'
+      ],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-47',
+            base_denom: 'utestcore',
+            chain_name: 'coreumtestnet'
+          },
+          chain: {
+            channel_id: 'channel-7894'
+          }
+        }]
+    },
+    {
       description: 'The native staking and governance token of the Theta testnet version of the Cosmos Hub.',
       denom_units: [{
           denom: 'ibc/9FF2B7A5F55038A7EE61F4FD6749D9A648B48E89830F2682B67B5DC158E2753C',
@@ -477,50 +520,6 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-4357'
-          }
-        }]
-    },
-    {
-      description: 'The native token of MANTRA',
-      denom_units: [{
-          denom: 'ibc/F25F6570FF2BD0CD6EB85761BD9CA411C2D5201E8D308D5A49BAD845B5D5E9B2',
-          exponent: 0,
-          aliases: ['uom']
-        }, {
-          denom: 'om',
-          exponent: 6,
-          aliases: []
-        }],
-      base: 'ibc/F25F6570FF2BD0CD6EB85761BD9CA411C2D5201E8D308D5A49BAD845B5D5E9B2',
-      name: 'MANTRA Chain',
-      display: 'om',
-      symbol: 'OM',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.svg'
-      },
-      coingecko_id: '',
-      keywords: [
-        'mantra',
-        'staking',
-        'delegating',
-        'governance',
-        'regulation',
-        'defi'
-      ],
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.svg'
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'uom',
-            chain_name: 'mantrachaintestnet'
-          },
-          chain: {
-            channel_id: 'channel-7944'
           }
         }]
     },
@@ -882,6 +881,49 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Coreum',
+      denom_units: [{
+          denom: 'ibc/35CA3AB73EF616E989E6DDD91EA33BEBAF77CA710641973028460CCFE69452AB',
+          exponent: 0,
+          aliases: ['utestcore']
+        }, {
+          denom: 'testcore',
+          exponent: 6
+        }],
+      base: 'ibc/35CA3AB73EF616E989E6DDD91EA33BEBAF77CA710641973028460CCFE69452AB',
+      name: 'Coreum',
+      display: 'testcore',
+      symbol: 'TESTCORE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
+      },
+      coingecko_id: 'coreum',
+      keywords: [
+        'dex',
+        'staking',
+        'wasm',
+        'assets',
+        'nft',
+        'XRPL'
+      ],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-47',
+            base_denom: 'utestcore',
+            chain_name: 'coreumtestnet'
+          },
+          chain: {
+            channel_id: 'channel-7894'
+          }
+        }]
+    },
+    {
       description: 'The native staking and governance token of the Theta testnet version of the Cosmos Hub.',
       denom_units: [{
           denom: 'ibc/9FF2B7A5F55038A7EE61F4FD6749D9A648B48E89830F2682B67B5DC158E2753C',
@@ -1153,50 +1195,6 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-4357'
-          }
-        }]
-    },
-    {
-      description: 'The native token of MANTRA',
-      denom_units: [{
-          denom: 'ibc/F25F6570FF2BD0CD6EB85761BD9CA411C2D5201E8D308D5A49BAD845B5D5E9B2',
-          exponent: 0,
-          aliases: ['uom']
-        }, {
-          denom: 'om',
-          exponent: 6,
-          aliases: []
-        }],
-      base: 'ibc/F25F6570FF2BD0CD6EB85761BD9CA411C2D5201E8D308D5A49BAD845B5D5E9B2',
-      name: 'MANTRA Chain',
-      display: 'om',
-      symbol: 'OM',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.svg'
-      },
-      coingecko_id: '',
-      keywords: [
-        'mantra',
-        'staking',
-        'delegating',
-        'governance',
-        'regulation',
-        'defi'
-      ],
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.svg'
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'uom',
-            chain_name: 'mantrachaintestnet'
-          },
-          chain: {
-            channel_id: 'channel-7944'
           }
         }]
     },

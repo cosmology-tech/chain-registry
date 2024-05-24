@@ -1971,6 +1971,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of PRYZM',
+      denom_units: [{
+          denom: 'ibc/073577C4EBEA41C59CEC70217300F09D4F4A6442B5EF22E882E1CD9CEDEAD799',
+          exponent: 0,
+          aliases: ['upryzm']
+        }, {
+          denom: 'pryzm',
+          exponent: 6
+        }],
+      base: 'ibc/073577C4EBEA41C59CEC70217300F09D4F4A6442B5EF22E882E1CD9CEDEAD799',
+      name: 'Pryzm',
+      display: 'pryzm',
+      symbol: 'PRYZM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'upryzm',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
+          }
+        }]
+    },
+    {
       description: 'The native staking and governance token of Saga.',
       denom_units: [{
           denom: 'ibc/AFE3377888BF66513E7D48A6D4D409626114481E3CC6F6E1C9B92C9AA25673FA',
@@ -3760,6 +3794,40 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-116'
+          }
+        }]
+    },
+    {
+      description: 'The native token of PRYZM',
+      denom_units: [{
+          denom: 'ibc/073577C4EBEA41C59CEC70217300F09D4F4A6442B5EF22E882E1CD9CEDEAD799',
+          exponent: 0,
+          aliases: ['upryzm']
+        }, {
+          denom: 'pryzm',
+          exponent: 6
+        }],
+      base: 'ibc/073577C4EBEA41C59CEC70217300F09D4F4A6442B5EF22E882E1CD9CEDEAD799',
+      name: 'Pryzm',
+      display: 'pryzm',
+      symbol: 'PRYZM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'upryzm',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
           }
         }]
     },

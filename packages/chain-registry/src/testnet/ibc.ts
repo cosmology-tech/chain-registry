@@ -6,6 +6,7 @@ import * as _axelartestnet from './axelartestnet';
 import * as _celestiatestnet3 from './celestiatestnet3';
 import * as _chain4energytestnet from './chain4energytestnet';
 import * as _composabletestnet from './composabletestnet';
+import * as _coreumtestnet from './coreumtestnet';
 import * as _cosmoshubtestnet from './cosmoshubtestnet';
 import * as _doravotatestnet from './doravotatestnet';
 import * as _dydxtestnet from './dydxtestnet';
@@ -43,6 +44,7 @@ const ibc: IBCInfo[] = [
   ..._celestiatestnet3.ibc,
   ..._chain4energytestnet.ibc,
   ..._composabletestnet.ibc,
+  ..._coreumtestnet.ibc,
   ..._cosmoshubtestnet.ibc,
   ..._doravotatestnet.ibc,
   ..._dydxtestnet.ibc,

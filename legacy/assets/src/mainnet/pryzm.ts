@@ -3,6 +3,45 @@ const assets: AssetList = {
   chain_name: 'pryzm',
   assets: [
     {
+      description: 'The native token of Axelar',
+      denom_units: [{
+          denom: 'ibc/E21808AEBCB7E02F594897100186C126E3BC9A36B0974196AF116750A4573F06',
+          exponent: 0,
+          aliases: ['uaxl']
+        }, {
+          denom: 'axl',
+          exponent: 6
+        }],
+      base: 'ibc/E21808AEBCB7E02F594897100186C126E3BC9A36B0974196AF116750A4573F06',
+      name: 'Axelar',
+      display: 'axl',
+      symbol: 'AXL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
+      },
+      coingecko_id: 'axelar',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
+        }],
+      socials: {
+        website: 'https://axelar.network/',
+        twitter: 'https://twitter.com/axelarnetwork'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-155',
+            base_denom: 'uaxl',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-13'
+          }
+        }]
+    },
+    {
       description: 'The native token of the Celestia blockchain.',
       denom_units: [{
           denom: 'ibc/BF28D9C17E0306B194D50F51C3B2590BEAD15E04E03ADD34C3A26E62D85C9676',
@@ -499,6 +538,45 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-2'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Axelar',
+      denom_units: [{
+          denom: 'ibc/E21808AEBCB7E02F594897100186C126E3BC9A36B0974196AF116750A4573F06',
+          exponent: 0,
+          aliases: ['uaxl']
+        }, {
+          denom: 'axl',
+          exponent: 6
+        }],
+      base: 'ibc/E21808AEBCB7E02F594897100186C126E3BC9A36B0974196AF116750A4573F06',
+      name: 'Axelar',
+      display: 'axl',
+      symbol: 'AXL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
+      },
+      coingecko_id: 'axelar',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
+        }],
+      socials: {
+        website: 'https://axelar.network/',
+        twitter: 'https://twitter.com/axelarnetwork'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-155',
+            base_denom: 'uaxl',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-13'
           }
         }]
     },

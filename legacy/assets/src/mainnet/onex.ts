@@ -567,6 +567,47 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Onomy Protocol',
+      denom_units: [{
+          denom: 'ibc/F6EBE6ED48B065996D9FD2D31809AF14F36D999D829C750FEAC0A7507F768FD1',
+          exponent: 0,
+          aliases: ['anom']
+        }, {
+          denom: 'nom',
+          exponent: 18
+        }],
+      base: 'ibc/F6EBE6ED48B065996D9FD2D31809AF14F36D999D829C750FEAC0A7507F768FD1',
+      name: 'Nom',
+      display: 'nom',
+      symbol: 'NOM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.svg'
+      },
+      keywords: [
+        'dex',
+        'stablecoin',
+        'bridge',
+        'staking'
+      ],
+      coingecko_id: 'onomy-protocol',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-11',
+            base_denom: 'anom',
+            chain_name: 'onomy'
+          },
+          chain: {
+            channel_id: 'channel-2'
+          }
+        }]
+    },
+    {
       description: 'The native token of Osmosis',
       denom_units: [{
           denom: 'ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85',
@@ -645,6 +686,47 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-6'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Onomy Protocol',
+      denom_units: [{
+          denom: 'ibc/F6EBE6ED48B065996D9FD2D31809AF14F36D999D829C750FEAC0A7507F768FD1',
+          exponent: 0,
+          aliases: ['anom']
+        }, {
+          denom: 'nom',
+          exponent: 18
+        }],
+      base: 'ibc/F6EBE6ED48B065996D9FD2D31809AF14F36D999D829C750FEAC0A7507F768FD1',
+      name: 'Nom',
+      display: 'nom',
+      symbol: 'NOM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.svg'
+      },
+      keywords: [
+        'dex',
+        'stablecoin',
+        'bridge',
+        'staking'
+      ],
+      coingecko_id: 'onomy-protocol',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-11',
+            base_denom: 'anom',
+            chain_name: 'onomy'
+          },
+          chain: {
+            channel_id: 'channel-2'
           }
         }]
     },

@@ -6,6 +6,7 @@ import _axelartestnet from './axelartestnet';
 import _celestiatestnet3 from './celestiatestnet3';
 import _chain4energytestnet from './chain4energytestnet';
 import _composabletestnet from './composabletestnet';
+import _coreumtestnet from './coreumtestnet';
 import _cosmoshubtestnet from './cosmoshubtestnet';
 import _doravotatestnet from './doravotatestnet';
 import _dydxtestnet from './dydxtestnet';
@@ -36,6 +37,6 @@ import _terra2testnet from './terra2testnet';
 import _titantestnet from './titantestnet';
 import _xiontestnet from './xiontestnet'
 
-const assets: AssetList[] = [_akashtestnet,_archwaytestnet,_axelartestnet,_celestiatestnet3,_chain4energytestnet,_composabletestnet,_cosmoshubtestnet,_doravotatestnet,_dydxtestnet,_elystestnet,_empowertestnet,_entrypointtestnet,_impacthubtestnet,_injectivetestnet,_junotestnet,_kujiratestnet,_kyvetestnet,_lavatestnet,_likecointestnet,_mantrachaintestnet,_marstestnet,_neutrontestnet,_nobletestnet,_noistestnet,_nolustestnet,_osmosistestnet,_osmosistestnet4,_persistencetestnet2,_quicksilvertestnet,_sagatestnet,_sgetestnet,_stargazetestnet,_terra2testnet,_titantestnet,_xiontestnet];
+const assets: AssetList[] = [_akashtestnet,_archwaytestnet,_axelartestnet,_celestiatestnet3,_chain4energytestnet,_composabletestnet,_coreumtestnet,_cosmoshubtestnet,_doravotatestnet,_dydxtestnet,_elystestnet,_empowertestnet,_entrypointtestnet,_impacthubtestnet,_injectivetestnet,_junotestnet,_kujiratestnet,_kyvetestnet,_lavatestnet,_likecointestnet,_mantrachaintestnet,_marstestnet,_neutrontestnet,_nobletestnet,_noistestnet,_nolustestnet,_osmosistestnet,_osmosistestnet4,_persistencetestnet2,_quicksilvertestnet,_sagatestnet,_sgetestnet,_stargazetestnet,_terra2testnet,_titantestnet,_xiontestnet];
 
 export default assets;

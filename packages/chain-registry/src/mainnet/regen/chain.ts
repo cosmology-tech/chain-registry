@@ -143,12 +143,6 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'mintscan',
-      url: 'https://www.mintscan.io/regen',
-      tx_page: 'https://www.mintscan.io/regen/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/regen/accounts/${accountAddress}'
-    },
-    {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/regen',
       tx_page: 'https://ezstaking.app/regen/txs/${txHash}',

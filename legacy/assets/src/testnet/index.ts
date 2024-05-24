@@ -4,6 +4,7 @@ export * as axelartestnet from './axelartestnet';
 export * as celestiatestnet3 from './celestiatestnet3';
 export * as chain4energytestnet from './chain4energytestnet';
 export * as composabletestnet from './composabletestnet';
+export * as coreumtestnet from './coreumtestnet';
 export * as cosmoshubtestnet from './cosmoshubtestnet';
 export * as doravotatestnet from './doravotatestnet';
 export * as dydxtestnet from './dydxtestnet';

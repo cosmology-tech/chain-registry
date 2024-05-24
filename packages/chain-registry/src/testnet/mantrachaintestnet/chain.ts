@@ -53,14 +53,15 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       }]
   },
-  logo_URIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.png',
-    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.svg'
-  },
   keywords: ['dex', 'testnet'],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.svg'
+      image_sync: {
+        chain_name: 'mantrachain',
+        base_denom: 'uom'
+      },
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg',
+      layout: 'logomark'
     }]
 };
 export default info;

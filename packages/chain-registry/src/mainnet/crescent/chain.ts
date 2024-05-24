@@ -142,12 +142,6 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'mintscan',
-      url: 'https://www.mintscan.io/crescent',
-      tx_page: 'https://www.mintscan.io/crescent/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/crescent/accounts/${accountAddress}'
-    },
-    {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/crescent',
       tx_page: 'https://ezstaking.app/crescent/txs/${txHash}',

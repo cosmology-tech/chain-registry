@@ -110,6 +110,12 @@ const info: Chain = {
       url: 'https://explorer.256x25.tech/shido',
       tx_page: 'https://explorer.256x25.tech/shido/tx/${txHash}',
       account_page: 'https://explorer.256x25.tech//shido/account/${accountAddress}'
+    },
+    {
+      kind: 'MavNode',
+      url: 'https://explorer.mavnode.io/shido',
+      tx_page: 'https://explorer.mavnode.io/shido/tx/${txHash}',
+      account_page: 'https://explorer.mavnode.io/shido/account/${accountAddress}'
     }
   ],
   images: [{

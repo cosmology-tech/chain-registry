@@ -83,6 +83,10 @@ const info: Chain = {
       {
         address: 'https://kyve_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://kyve-mainnet-rpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
     rest: [
@@ -133,6 +137,10 @@ const info: Chain = {
       {
         address: 'https://kyve_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://kyve-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
     grpc: [
@@ -167,6 +175,10 @@ const info: Chain = {
       {
         address: 'kyve-grpc.noders.services:15090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'kyve-mainnet-grpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ]
   },

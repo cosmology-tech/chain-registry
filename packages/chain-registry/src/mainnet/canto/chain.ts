@@ -147,12 +147,6 @@ const info: Chain = {
       tx_page: 'https://cosmos-explorers.neobase.one/canto/tx/${txHash}'
     },
     {
-      kind: 'mintscan',
-      url: 'https://www.mintscan.io/canto',
-      tx_page: 'https://www.mintscan.io/canto/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/canto/accounts/${accountAddress}'
-    },
-    {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/canto',
       tx_page: 'https://explorer.tcnetwork.io/canto/transaction/${txHash}'

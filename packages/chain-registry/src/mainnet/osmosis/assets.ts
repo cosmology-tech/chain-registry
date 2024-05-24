@@ -14830,10 +14830,10 @@ const info: AssetList = {
       display: 'COCA',
       symbol: 'COCA',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/CoCa.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/COCA.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/CoCa.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/COCA.png'
         }]
     }
   ]

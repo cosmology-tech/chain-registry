@@ -1980,6 +1980,42 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'dogwifhat is a meme coin that operates on Solana.',
+      type_asset: 'erc20',
+      address: 'EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm',
+      denom_units: [{
+          denom: 'ibc/BA34EAA22BBDA46C228DC70E4ED7E42A0867D5B051D625F953CC7B1CEF58C071',
+          exponent: 0,
+          aliases: ['EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm']
+        }, {
+          denom: 'wif',
+          exponent: 6
+        }],
+      base: 'ibc/BA34EAA22BBDA46C228DC70E4ED7E42A0867D5B051D625F953CC7B1CEF58C071',
+      name: 'dogwifhat',
+      display: 'wif',
+      symbol: 'WIF',
+      coingecko_id: 'dogwifcoin',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/wif.png'
+        }],
+      socials: {
+        website: 'https://dogwifcoin.org/',
+        twitter: 'https://twitter.com/dogwifcoin'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm',
+            chain_name: 'solana'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }]
+    },
+    {
       description: 'The native token of Stargaze',
       denom_units: [{
           denom: 'ibc/7078D8FA8BCB50A1E7855458F1E9898A3FDA0093B703DA3B3108DD35ED99E048',
@@ -3723,6 +3759,42 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-1',
             base_denom: '85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ',
+            chain_name: 'solana'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }]
+    },
+    {
+      description: 'dogwifhat is a meme coin that operates on Solana.',
+      type_asset: 'erc20',
+      address: 'EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm',
+      denom_units: [{
+          denom: 'ibc/BA34EAA22BBDA46C228DC70E4ED7E42A0867D5B051D625F953CC7B1CEF58C071',
+          exponent: 0,
+          aliases: ['EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm']
+        }, {
+          denom: 'wif',
+          exponent: 6
+        }],
+      base: 'ibc/BA34EAA22BBDA46C228DC70E4ED7E42A0867D5B051D625F953CC7B1CEF58C071',
+      name: 'dogwifhat',
+      display: 'wif',
+      symbol: 'WIF',
+      coingecko_id: 'dogwifcoin',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/wif.png'
+        }],
+      socials: {
+        website: 'https://dogwifcoin.org/',
+        twitter: 'https://twitter.com/dogwifcoin'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm',
             chain_name: 'solana'
           },
           chain: {

@@ -108,12 +108,6 @@ const info: Chain = {
       account_page: 'https://ezstaking.app/emoney/account/${accountAddress}'
     },
     {
-      kind: 'mintscan',
-      url: 'https://www.mintscan.io/emoney',
-      tx_page: 'https://www.mintscan.io/emoney/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/emoney/accounts/${accountAddress}'
-    },
-    {
       kind: 'ping.pub',
       url: 'https://ping.pub/e-money',
       tx_page: 'https://ping.pub/e-money/tx/${txHash}'
