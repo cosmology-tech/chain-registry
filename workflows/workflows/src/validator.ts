@@ -20,6 +20,7 @@ export class SchemaValidator {
     private registry: Registry;
     private options: SchemaValidatorOptions;
     private failures: number = 0;
+    private tests: number = 0;
 
     constructor(registry: Registry, options?: SchemaValidatorOptions) {
         const { 
@@ -111,6 +112,10 @@ export class SchemaValidator {
         if (this.options.allErrors && this.failures > 0) {
             throw new Error('❌ Validation Failed.');
         }
+        if (this.failures === 0) {
+            console.log(`✅ Validation Passed.`);
+        }
+        console.log(`${this.tests} Tests.`);
     }
 
     private validateJsonSchema(
@@ -119,6 +124,7 @@ export class SchemaValidator {
         validate: ValidateFunction2019<unknown> | ValidateFunction2020<unknown> | ValidateFunctionDraft07<unknown>,
         verbose: boolean
     ) {
+        this.tests++;
         if (!validate(data.content)) {
             this.failures++;
             if (['info', 'error'].includes(this.options.logLevel)) {
