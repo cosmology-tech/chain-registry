@@ -1,28 +1,26 @@
 import { Asset, AssetList } from '@chain-registry/types';
 import type {
+  CoinGeckoUSDPrice,
   Denom,
-  Exponent,
   DenomPriceMap,
-  CoinGeckoUSDPrice
-} from '@chain-registry/utils';
+  Exponent} from '@chain-registry/utils';
 import {
+  convertBaseUnitToDisplayUnit,
+  convertBaseUnitToDollarValue,
+  convertDisplayUnitToBaseUnit,
+  convertDollarValueToBaseUnit,
   getAssetByDenom,
   getAssetBySymbol,
-  getDenomByCoinGeckoId,
-  getCoinGeckoIdByDenom,
-  getSymbolByDenom,
-  getDenomBySymbol,
-  getExponentByDenom,
-  getExponentBySymbol,
   getAssetLogoByDenom,
   getAssetNameByDenom,
   getChainNameByDenom,
-  mapCoinGeckoPricesToDenoms,
-  convertBaseUnitToDollarValue,
-  convertDollarValueToBaseUnit,
-  convertBaseUnitToDisplayUnit,
-  convertDisplayUnitToBaseUnit
-} from '@chain-registry/utils';
+  getCoinGeckoIdByDenom,
+  getDenomByCoinGeckoId,
+  getDenomBySymbol,
+  getExponentByDenom,
+  getExponentBySymbol,
+  getSymbolByDenom,
+  mapCoinGeckoPricesToDenoms} from '@chain-registry/utils';
 
 import { ChainInfo } from './chain-info';
 

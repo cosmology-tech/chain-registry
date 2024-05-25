@@ -1,3 +1,5 @@
+import { chains } from '@chain-registry/v2'
+
 import {
   getChainBech32Prefix,
   getChainByChainId,
@@ -7,7 +9,6 @@ import {
   getChainNameByChainId,
   getChainPrettyName
 } from '../src/chains';
-import { chains } from '@chain-registry/v2'
 
 describe('tests for chains utils', () => {
   it('getChainByChainName', () => {

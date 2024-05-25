@@ -1,7 +1,7 @@
 import { Chain } from '@chain-registry/types';
-import { assets, chains } from '../test-utils';
 
 import { chainRegistryChainToCosmostation } from '../src/';
+import { assets, chains } from '../test-utils';
 
 const testChainData = async (chainName: string, chainId: string) => {
   const chainRegChain: Chain = chains.find(

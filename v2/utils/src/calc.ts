@@ -1,11 +1,10 @@
-import { Asset, AssetList } from '@chain-registry/v2-types';
+import { AssetList } from '@chain-registry/v2-types';
 import BigNumber from 'bignumber.js';
 
 import {
   Denom,
   getAssetByDenom,
   getAssetBySymbol,
-  getDenomByCoinGeckoId,
   getDenomsByCoinGeckoId,
   getExponentByDenomFromAsset,
   getExponentFromAsset

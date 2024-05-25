@@ -1,7 +1,7 @@
 import nock from 'nock';
 
-import { assets, chains } from '../test-utils';
 import { ChainRegistryClient } from '../src/registry';
+import { assets, chains } from '../test-utils';
 
 const baseUrl = 'https://raw.githubusercontent.com';
 

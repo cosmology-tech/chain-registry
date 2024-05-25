@@ -1,6 +1,5 @@
-import { assets, chains } from '../test-utils';
-
 import { chainRegistryChainToCosmostation } from '../src';
+import { assets, chains } from '../test-utils';
 
 it('keplr', () => {
   const chain = chains.find((chain) => chain.chain_name === 'osmosis')!;

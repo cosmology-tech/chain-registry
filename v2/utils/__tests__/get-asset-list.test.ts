@@ -1,5 +1,6 @@
+import { assetLists,ibcData } from '@chain-registry/v2';
+
 import { getAssetLists } from '../src';
-import { ibcData, assetLists } from '@chain-registry/v2';
 
 
 it('getAssetLists', () => {

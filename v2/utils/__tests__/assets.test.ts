@@ -1,4 +1,7 @@
 
+import { assetLists } from '@chain-registry/v2'
+import { chains as mainNetChains } from '@chain-registry/v2/mainnet'
+
 import {
   getAssetByDenom,
   getAssetBySymbol,
@@ -15,8 +18,6 @@ import {
   getNativeAssetByChainName,
   getSymbolByDenom
 } from '../src/assets';
-import { assetLists } from '@chain-registry/v2'
-import { chains as mainNetChains } from '@chain-registry/v2/mainnet'
 
 describe('tests for assets utils', () => {
   it('getAssetByDenom', () => {

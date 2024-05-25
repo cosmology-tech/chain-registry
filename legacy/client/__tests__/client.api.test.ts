@@ -1,11 +1,10 @@
-import { assets, chains } from '../test-utils';
-
 import {
   ChainRegistryChainUtil,
   ChainRegistryChainUtilOptions,
   ChainRegistryClient,
   ChainRegistryClientOptions
 } from '../src';
+import { assets, chains } from '../test-utils';
 
 describe('tests for asset-list-util', () => {
   const assetLists = assets.filter(

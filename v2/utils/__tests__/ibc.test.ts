@@ -1,5 +1,6 @@
-import { getIbcAssetPath, getIbcDenomByBase, ibcDenom } from '../src';
 import { assetLists, ibcData } from '@chain-registry/v2';
+
+import { getIbcAssetPath, getIbcDenomByBase, ibcDenom } from '../src';
 
 it('AKT on osmosis', () => {
   const denom = getIbcDenomByBase(

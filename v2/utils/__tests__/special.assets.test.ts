@@ -1,10 +1,11 @@
+import { assetLists, ibcData } from '@chain-registry/v2'
+
 import {
   getAssetLists,
   getIbcAssetPath,
   getIbcDenomByBase,
   ibcDenom
 } from '../src';
-import { assetLists, ibcData } from '@chain-registry/v2'
 
 it('getAssetLists', () => {
   const chainName = 'persistence';

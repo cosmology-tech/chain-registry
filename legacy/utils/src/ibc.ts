@@ -1,5 +1,6 @@
-import { AssetList, AssetTrace, IBCInfo, IBCChannelInfo, Asset } from '@chain-registry/types';
+import { Asset,AssetList, IBCChannelInfo, IBCInfo } from '@chain-registry/types';
 import { sha256 } from 'sha.js';
+
 import { getNativeAssets } from './utils';
 
 export const ibcDenom = (

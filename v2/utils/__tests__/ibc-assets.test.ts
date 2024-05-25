@@ -1,5 +1,6 @@
-import { getIbcAssets } from '../src';
 import { assetLists, ibcData } from '@chain-registry/v2';
+
+import { getIbcAssets } from '../src';
 
 it('getIbcAssets', () => {
   const chainName = 'osmosis';

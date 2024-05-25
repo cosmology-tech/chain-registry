@@ -1,5 +1,6 @@
-import { getIbcDenomByBase } from '../src';
 import { assetLists, ibcData } from '@chain-registry/v2'
+
+import { getIbcDenomByBase } from '../src';
 
 it('ATOM on stargaze', () => {
   const denom = getIbcDenomByBase(
