@@ -91,7 +91,7 @@ describe('tests for assets utils', () => {
   });
 
   it('getNativeAssetByChainName', () => {
-    const nativeToken = getNativeAssetByChainName(assets, 'osmosis')
+    const nativeToken = getNativeAssetByChainName(assets, 'osmosis');
     expect(nativeToken.base).toEqual('uosmo');
     const nativeToken2 = getNativeAssetByChainName(assets, 'juno');
     expect(nativeToken2.base).toEqual('ujuno');

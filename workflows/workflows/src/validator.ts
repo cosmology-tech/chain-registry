@@ -62,7 +62,7 @@ export class SchemaValidator {
       });
       break;
     default:
-      throw new Error('JSONSchema draft not yet supported.')
+      throw new Error('JSONSchema draft not yet supported.');
 
     }
 

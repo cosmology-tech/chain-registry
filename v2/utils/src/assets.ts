@@ -29,9 +29,9 @@ export const getAssetByDenom = (
     .flatMap(({ assets }) => assets);
 
   return customFind(filteredAssets, (asset) => {
-    const found = asset.denomUnits.find(unit => unit.denom === denom)
+    const found = asset.denomUnits.find(unit => unit.denom === denom);
   
-    return !!found
+    return !!found;
   },`denom:${denom} chainName:${chainName}`);
 
 };
@@ -127,7 +127,7 @@ export const getExponentFromAsset = (asset: Asset): number | undefined => {
 
 export const getExponentByDenomFromAsset = (asset: Asset, denom: string): number | undefined => {
   return asset.denomUnits.find((unit) => {
-    return unit.denom === denom || unit?.aliases?.find(a => a === denom)
+    return unit.denom === denom || unit?.aliases?.find(a => a === denom);
   })
     ?.exponent;
 };

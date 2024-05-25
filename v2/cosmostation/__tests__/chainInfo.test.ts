@@ -1,4 +1,4 @@
-import { assetLists, chains } from '@chain-registry/v2'
+import { assetLists, chains } from '@chain-registry/v2';
 import { Chain } from '@chain-registry/v2-types';
 
 import { chainRegistryChainToCosmostation } from '../src/';

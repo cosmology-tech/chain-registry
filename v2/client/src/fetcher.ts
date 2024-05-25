@@ -1,4 +1,4 @@
-import { AssetList as IAssetList, Chain as IChain, IBCData as IIBCData} from '@chain-registry/interfaces'
+import { AssetList as IAssetList, Chain as IChain, IBCData as IIBCData} from '@chain-registry/interfaces';
 import {
   AssetList,
   Chain,
@@ -21,7 +21,7 @@ const keysToCamel = (o: any): any => {
     return o.map((i) => keysToCamel(i));
   }
   return o;
-}
+};
 
 const fetchUrl = (url: string) => {
   return fetch(url).then((res) => {
@@ -115,7 +115,7 @@ export class ChainRegistryFetcher {
       );
     });
 
-    const convertedData: Chain = keysToCamel(data)
+    const convertedData: Chain = keysToCamel(data);
 
     if (!found) {
       this._chains.push(convertedData);
@@ -139,7 +139,7 @@ export class ChainRegistryFetcher {
       return list.chainName === data.chain_name;
     });
 
-    const convertedData: AssetList = keysToCamel(data)
+    const convertedData: AssetList = keysToCamel(data);
 
     if (!found) {
       this._assetLists.push(convertedData);
@@ -163,7 +163,7 @@ export class ChainRegistryFetcher {
       );
     });
 
-    const convertedData: IBCData = keysToCamel(data)
+    const convertedData: IBCData = keysToCamel(data);
 
     if (!found) {
       this._ibcData.push(convertedData);

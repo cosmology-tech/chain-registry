@@ -6,7 +6,7 @@ import { fixtureOutputDir, getRegistry } from '../test-utils';
 
 const outputDir = join(fixtureOutputDir, 'base');
 
-const registry = getRegistry()
+const registry = getRegistry();
 
 it('types', () => {
   const generator = new SchemaTypeGenerator({
@@ -27,7 +27,7 @@ it('types', () => {
   });
   generator.generateTypes();
 
-  const tsFiles = globSync(`${outputDir}/*.ts`).map(a=>a.split(outputDir)[1])
+  const tsFiles = globSync(`${outputDir}/*.ts`).map(a=>a.split(outputDir)[1]);
   expect(tsFiles).toMatchSnapshot();
   
 });

@@ -20,7 +20,7 @@ it('validator 2020 draft', () => {
 
   validator.validateAllData();
 
-})
+});
 
 it('validator 2019 draft', () => {
 
@@ -34,7 +34,7 @@ it('validator 2019 draft', () => {
   );
 
   validator.validateAllData();
-})
+});
 
 it('validator draft-07', () => {
 
@@ -48,4 +48,4 @@ it('validator draft-07', () => {
   );
 
   validator.validateAllData();
-})
+});

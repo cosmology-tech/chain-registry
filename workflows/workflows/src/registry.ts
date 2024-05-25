@@ -80,7 +80,7 @@ export class Registry {
   }
 
   private startsWithUrl(schema: JSONSchema): boolean {
-    return (/^http/.test(schema.$schema))
+    return (/^http/.test(schema.$schema));
   }
 
   private isSchema(schema: JSONSchema): boolean {
@@ -151,14 +151,14 @@ export class Registry {
           // Throw a custom error with a clear message including the file path
           throw new Error(`Failed to parse JSON. The file at "${path}" is not valid JSON.`);
         }
-      }).filter(Boolean)
+      }).filter(Boolean);
 
     // filter out schemas (e.g. draft-04/schema )
     const schemas = this.definitions.filter(schema => this.isSchema(schema.content)).filter(Boolean);
 
     // validate
     schemas.forEach(schema => {
-      if (!(schema.content.title in SCHEMATA_MAPPING)) throw new Error('MISSING SCHEMA: ' + schema.content.title)
+      if (!(schema.content.title in SCHEMATA_MAPPING)) throw new Error('MISSING SCHEMA: ' + schema.content.title);
     });
 
     // create schemaMappings and data
@@ -170,8 +170,8 @@ export class Registry {
     this.definitions
       .filter(d => SCHEMA_WHITELIST.includes(d.$schemaFile))
       .forEach(schema => {
-        this.loadData(schema)
-      })
+        this.loadData(schema);
+      });
   }
 
   public mapSchemas(mapper: SchemaMapper): any {
@@ -211,7 +211,7 @@ export class Registry {
   public get schemas(): JSONSchemaContent<JSONSchema>[] {
     return this.mapSchemas(([_str, obj]) => {
       return obj as JSONSchemaContent<JSONSchema>;
-    })
+    });
   }
 
   public get count() {
@@ -221,6 +221,6 @@ export class Registry {
       ibcData: this.ibcData.length,
       memoKeys: this.memoKeys.length,
       versions: this.versions.length,
-    }
+    };
   }
 }

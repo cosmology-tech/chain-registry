@@ -50,16 +50,16 @@ const options: RegistryBuilderOptions = {
           return 'erc20';
 
         case asset.base.startsWith('ibc/'):
-          return 'ics20'
+          return 'ics20';
 
         case asset.base.startsWith('cw20:'):
-          return 'cw20'
+          return 'cw20';
 
         default: 
           if (chain?.slip44 === 118 || chain?.codebase?.cosmos_sdk_version) {
             return 'sdk.Coin';
           }
-          return 'unknown'
+          return 'unknown';
         }
       }
     },
@@ -222,7 +222,7 @@ const options: RegistryBuilderOptions = {
     ],
     ibcData: []
   }
-}
+};
 
 it('types', () => {
 
@@ -251,7 +251,7 @@ it('types', () => {
   });
   generator.generateTypes();
 
-  const outFiles = globSync(`${outputDir}/*.ts`).map(a => a.split(outputDir)[1])
+  const outFiles = globSync(`${outputDir}/*.ts`).map(a => a.split(outputDir)[1]);
   expect(outFiles).toMatchSnapshot();
 
 });

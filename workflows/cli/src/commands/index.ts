@@ -1,4 +1,4 @@
-import { CLIOptions, Inquirerer, Question } from 'inquirerer'
+import { CLIOptions, Inquirerer, Question } from 'inquirerer';
 import { ParsedArgs } from 'minimist';
 
 import { getUsage } from '../help';

@@ -26,7 +26,7 @@ export interface SchemaTypeGeneratorOptions {
 export class SchemaTypeGenerator {
   private outputDir: string;
   private registry: Registry;
-  private schemaTSOptions: Partial<SchemaTSOptions>
+  private schemaTSOptions: Partial<SchemaTSOptions>;
   private supportedSchemas: Set<string>;
 
   constructor(options: SchemaTypeGeneratorOptions) {
@@ -68,7 +68,7 @@ export class SchemaTypeGenerator {
           this.ensureDirExists(filename);
           this.writeFile(filename, result);
         } catch (e) {
-          console.log({ schemaFile })
+          console.log({ schemaFile });
         }
       }
     });

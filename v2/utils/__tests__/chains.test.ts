@@ -1,4 +1,4 @@
-import { chains } from '@chain-registry/v2'
+import { chains } from '@chain-registry/v2';
 
 import {
   getChainBech32Prefix,
