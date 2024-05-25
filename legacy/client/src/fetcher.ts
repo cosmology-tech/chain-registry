@@ -168,17 +168,17 @@ export class ChainRegistryFetcher implements ChainRegistry {
     const type = basename(data.$schema, '.schema.json');
 
     switch (type) {
-      case 'chain':
-        this.upsertChain(data as Chain);
-        break;
-      case 'assetlist':
-        this.updateAssetList(data as AssetList);
-        break;
-      case 'ibc_data':
-        this.upsertIbcData(data as IBCInfo);
-        break;
-      default:
-        throw new Error('unknown schema type');
+    case 'chain':
+      this.upsertChain(data as Chain);
+      break;
+    case 'assetlist':
+      this.updateAssetList(data as AssetList);
+      break;
+    case 'ibc_data':
+      this.upsertIbcData(data as IBCInfo);
+      break;
+    default:
+      throw new Error('unknown schema type');
     }
 
     this.chainInfoList.forEach((chainInfo) => {

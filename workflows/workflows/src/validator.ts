@@ -16,128 +16,128 @@ export interface SchemaValidatorOptions {
 }
 
 export class SchemaValidator {
-    private ajv: Ajv2020 | Ajv2019;
-    private registry: Registry;
-    private options: SchemaValidatorOptions;
-    private failures: number = 0;
-    private tests: number = 0;
+  private ajv: Ajv2020 | Ajv2019;
+  private registry: Registry;
+  private options: SchemaValidatorOptions;
+  private failures: number = 0;
+  private tests: number = 0;
 
-    constructor(registry: Registry, options?: SchemaValidatorOptions) {
-        const { 
-            useStrict = false,
-            allErrors = true,
-            useDefaults = true,
-            draft = '2019-09',
-            logLevel = 'info'
-        } = options ?? {};
+  constructor(registry: Registry, options?: SchemaValidatorOptions) {
+    const { 
+      useStrict = false,
+      allErrors = true,
+      useDefaults = true,
+      draft = '2019-09',
+      logLevel = 'info'
+    } = options ?? {};
 
-        this.options = {
-            useDefaults,
-            useStrict,
-            draft,
-            allErrors,
-            logLevel
-        };
+    this.options = {
+      useDefaults,
+      useStrict,
+      draft,
+      allErrors,
+      logLevel
+    };
 
-        switch (draft) {
-            case 'draft-07':
-                this.ajv = new AjvDraft07({
-                    strict: useStrict,
-                    allErrors,
-                    useDefaults
-                });
-                break;
-            case '2019-09':
-                this.ajv = new Ajv2019({
-                    strict: useStrict,
-                    allErrors,
-                    useDefaults
-                });
-                break;
-            case '2020-12':
-                this.ajv = new Ajv2020({
-                    strict: useStrict,
-                    allErrors,
-                    useDefaults
-                });
-                break;
-            default:
-                throw new Error('JSONSchema draft not yet supported.')
+    switch (draft) {
+    case 'draft-07':
+      this.ajv = new AjvDraft07({
+        strict: useStrict,
+        allErrors,
+        useDefaults
+      });
+      break;
+    case '2019-09':
+      this.ajv = new Ajv2019({
+        strict: useStrict,
+        allErrors,
+        useDefaults
+      });
+      break;
+    case '2020-12':
+      this.ajv = new Ajv2020({
+        strict: useStrict,
+        allErrors,
+        useDefaults
+      });
+      break;
+    default:
+      throw new Error('JSONSchema draft not yet supported.')
 
-        }
-
-
-        this.registry = registry;
-        addFormats(this.ajv);
     }
 
-    public validateAllData(verbose: boolean = false) {
-        // Compile and validate each schema, then validate corresponding data
-        this.registry.forEachSchemas(([title, schema]) => {
-            try {
+
+    this.registry = registry;
+    addFormats(this.ajv);
+  }
+
+  public validateAllData(verbose: boolean = false) {
+    // Compile and validate each schema, then validate corresponding data
+    this.registry.forEachSchemas(([title, schema]) => {
+      try {
                 
-                switch (this.options.draft) {
-                    case 'draft-07':
-                        schema.content.$schema = 'http://json-schema.org/draft-07/schema';
-                        break;
-                    case '2019-09':
-                        schema.content.$schema = 'https://json-schema.org/draft/2019-09/schema';
-                        break;
-                    case '2020-12':
-                        schema.content.$schema = 'https://json-schema.org/draft/2020-12/schema';
-                        break;
-                    default:
-                        break;
-                }
+        switch (this.options.draft) {
+        case 'draft-07':
+          schema.content.$schema = 'http://json-schema.org/draft-07/schema';
+          break;
+        case '2019-09':
+          schema.content.$schema = 'https://json-schema.org/draft/2019-09/schema';
+          break;
+        case '2020-12':
+          schema.content.$schema = 'https://json-schema.org/draft/2020-12/schema';
+          break;
+        default:
+          break;
+        }
                 
-                const validate: any = this.ajv.compile(schema.content);
+        const validate: any = this.ajv.compile(schema.content);
 
-                const dataMap = this.registry.dataMappings[title as keyof DataMapping];
+        const dataMap = this.registry.dataMappings[title as keyof DataMapping];
 
-                if (!dataMap) {
-                    console.error(chalk.yellow(`⚠️  No data found for schema titled ${chalk.bold(title)}`));
-                    return;
-                }
+        if (!dataMap) {
+          console.error(chalk.yellow(`⚠️  No data found for schema titled ${chalk.bold(title)}`));
+          return;
+        }
 
-                dataMap.forEach(data => {
-                    this.validateJsonSchema(data, title, validate, verbose);
-                });
-            } catch (e) {
-                if (['info', 'error'].includes(this.options.logLevel)) {
-                    console.error(chalk.red(`❌ Strict Validation errors for schema ${chalk.bold(title)} in file ${chalk.magenta(schema.path)}:`));
-                }
-                throw e;
-            }
+        dataMap.forEach(data => {
+          this.validateJsonSchema(data, title, validate, verbose);
         });
-        if (this.options.allErrors && this.failures > 0) {
-            throw new Error('❌ Validation Failed.');
+      } catch (e) {
+        if (['info', 'error'].includes(this.options.logLevel)) {
+          console.error(chalk.red(`❌ Strict Validation errors for schema ${chalk.bold(title)} in file ${chalk.magenta(schema.path)}:`));
         }
-        if (this.failures === 0) {
-            console.log(`✅ Validation Passed.`);
-        }
-        console.log(`${this.tests} Tests.`);
+        throw e;
+      }
+    });
+    if (this.options.allErrors && this.failures > 0) {
+      throw new Error('❌ Validation Failed.');
     }
-
-    private validateJsonSchema(
-        data: JSONSchemaContent<JSONSchema>,
-        title: string,
-        validate: ValidateFunction2019<unknown> | ValidateFunction2020<unknown> | ValidateFunctionDraft07<unknown>,
-        verbose: boolean
-    ) {
-        this.tests++;
-        if (!validate(data.content)) {
-            this.failures++;
-            if (['info', 'error'].includes(this.options.logLevel)) {
-                console.error(chalk.red(`❌ Validation errors for ${chalk.bold(title)} in file ${chalk.magenta(data.path)}:`));
-
-                validate.errors?.forEach(error => {
-                    console.error(chalk.red(`  ➡️ ${error.instancePath} ${error.message}`));
-                });
-            }
-        } else if (verbose) {
-            if (['info'].includes(this.options.logLevel)) {
-                console.log(chalk.green(`✅ Validation passed for ${chalk.bold(title)} in file ${chalk.magenta(data.path)}`));
-            }
-        }
+    if (this.failures === 0) {
+      console.log(`✅ Validation Passed.`);
     }
+    console.log(`${this.tests} Tests.`);
+  }
+
+  private validateJsonSchema(
+    data: JSONSchemaContent<JSONSchema>,
+    title: string,
+    validate: ValidateFunction2019<unknown> | ValidateFunction2020<unknown> | ValidateFunctionDraft07<unknown>,
+    verbose: boolean
+  ) {
+    this.tests++;
+    if (!validate(data.content)) {
+      this.failures++;
+      if (['info', 'error'].includes(this.options.logLevel)) {
+        console.error(chalk.red(`❌ Validation errors for ${chalk.bold(title)} in file ${chalk.magenta(data.path)}:`));
+
+        validate.errors?.forEach(error => {
+          console.error(chalk.red(`  ➡️ ${error.instancePath} ${error.message}`));
+        });
+      }
+    } else if (verbose) {
+      if (['info'].includes(this.options.logLevel)) {
+        console.log(chalk.green(`✅ Validation passed for ${chalk.bold(title)} in file ${chalk.magenta(data.path)}`));
+      }
+    }
+  }
 }

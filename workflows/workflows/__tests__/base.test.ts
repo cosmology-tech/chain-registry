@@ -12,17 +12,17 @@ it('types', () => {
   const generator = new SchemaTypeGenerator({
     outputDir,
     supportedSchemas: [
-        'chain.schema.json',
-        'assetlist.schema.json',
-        'ibc_data.schema.json',
-        'versions.schema.json',
-        'memo_keys.schema.json',
+      'chain.schema.json',
+      'assetlist.schema.json',
+      'ibc_data.schema.json',
+      'versions.schema.json',
+      'memo_keys.schema.json',
     ],
     registry,
     schemaTSOptions: {
-        strictTypeSafety: true,
-        camelCase: false,
-        useSingleQuotes: true
+      strictTypeSafety: true,
+      camelCase: false,
+      useSingleQuotes: true
     }
   });
   generator.generateTypes();

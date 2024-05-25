@@ -4,12 +4,12 @@ import { CLI, CLIOptions } from 'inquirerer';
 import { commands } from './commands'
 
 export const options: Partial<CLIOptions> = {
-    minimistOpts: {
-      alias: {
-        v: 'version'
-      }
+  minimistOpts: {
+    alias: {
+      v: 'version'
     }
-  };
+  }
+};
 
 const app = new CLI(commands, options);
 

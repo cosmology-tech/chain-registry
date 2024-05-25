@@ -87,13 +87,13 @@ describe('tests for calc utils', () => {
 
   it('convertBaseUnitToDisplayUnitByDenom', () => {
     const value = convertBaseUnitToDisplayUnitByDenom(osmosisAssets, 'ibc/52E12CF5CA2BB903D84F5298B4BFD725D66CAB95E09AA4FC75B2904CA5485FEB', 1000, 'osmosis')
-    expect(value).toBe("1000")
+    expect(value).toBe('1000')
   })
 
   it('convertBaseUnitToDollarValueByDenom' ,()=>{
     const priceMap = mapCoinGeckoPricesToDenoms(osmosisAssets, coinGeckoPrices)
     const dolloar1 = convertBaseUnitToDollarValueByDenom(osmosisAssets, priceMap, 'uosmo', 1000000, 'osmosis')
-    expect(dolloar1).toBe("0.498124")
+    expect(dolloar1).toBe('0.498124')
     const dolloarNoPrice = convertBaseUnitToDollarValueByDenom(osmosisAssets, priceMap, 'ibc/52E12CF5CA2BB903D84F5298B4BFD725D66CAB95E09AA4FC75B2904CA5485FEB', 1000000, 'osmosis')
     expect(dolloarNoPrice).toBe('0')
   })

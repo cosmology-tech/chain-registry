@@ -1,7 +1,7 @@
-import { join } from "path";
+import { join } from 'path';
 
-import { Registry } from "../src/registry";
-import { SchemaValidator } from "../src/validator";
+import { Registry } from '../src/registry';
+import { SchemaValidator } from '../src/validator';
 
 const registry = new Registry(
   join(__dirname, '/../../../packages/chain-registry/chain-registry-fixtures')

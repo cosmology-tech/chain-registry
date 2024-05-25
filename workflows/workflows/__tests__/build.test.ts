@@ -1,6 +1,6 @@
 import { Asset, AssetList } from '@chain-registry/interfaces';
 import { sync as globSync } from 'glob';
-import { join } from "path";
+import { join } from 'path';
 import { JSStringifySetterOptions } from 'strfy-js';
 
 import { Registry, RegistryBuilder, RegistryBuilderOptions, SchemaTypeGenerator } from '../src';
@@ -35,31 +35,31 @@ const options: RegistryBuilderOptions = {
       '/assets/*/type_asset': 'asset_type'
     },
     defaultValuesSetter: {
-      "/assets/*/type_asset": function (options: JSStringifySetterOptions<Asset, AssetList>): any {
+      '/assets/*/type_asset': function (options: JSStringifySetterOptions<Asset, AssetList>): any {
         const asset = options.obj;
         const chain = registry.chains.find(chain=>chain.chain_name === options.root.chain_name);
 
         switch (true) {
-          case asset.base.startsWith('factory/'):
-            return 'sdk.Factory';
+        case asset.base.startsWith('factory/'):
+          return 'sdk.Factory';
 
-          case asset.base.startsWith('ft') && options.root.chain_name === 'bitsong':
-            return 'bitsong';
+        case asset.base.startsWith('ft') && options.root.chain_name === 'bitsong':
+          return 'bitsong';
 
-          case asset.base.startsWith('erc20/'):
-            return 'erc20';
+        case asset.base.startsWith('erc20/'):
+          return 'erc20';
 
-          case asset.base.startsWith('ibc/'):
-            return 'ics20'
+        case asset.base.startsWith('ibc/'):
+          return 'ics20'
 
-          case asset.base.startsWith('cw20:'):
-            return 'cw20'
+        case asset.base.startsWith('cw20:'):
+          return 'cw20'
 
-          default: 
-            if (chain?.slip44 === 118 || chain?.codebase?.cosmos_sdk_version) {
-              return 'sdk.Coin';
-            }
-            return 'unknown'
+        default: 
+          if (chain?.slip44 === 118 || chain?.codebase?.cosmos_sdk_version) {
+            return 'sdk.Coin';
+          }
+          return 'unknown'
         }
       }
     },
@@ -237,16 +237,16 @@ it('types', () => {
   const generator = new SchemaTypeGenerator({
     outputDir: outputDir2,
     supportedSchemas: [
-        'chain.schema.json',
-        'assetlist.schema.json',
-        'ibc_data.schema.json'
+      'chain.schema.json',
+      'assetlist.schema.json',
+      'ibc_data.schema.json'
     ],
     registry: registry2,
     schemaTSOptions: {
-        strictTypeSafety: true,
-        // NO NEED TO DO CAMEL HERE! just use the schema ;) 
-        // camelCase: true,
-        useSingleQuotes: true
+      strictTypeSafety: true,
+      // NO NEED TO DO CAMEL HERE! just use the schema ;) 
+      // camelCase: true,
+      useSingleQuotes: true
     }
   });
   generator.generateTypes();

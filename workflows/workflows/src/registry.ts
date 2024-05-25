@@ -2,7 +2,7 @@ import { AssetList, Chain, IBCData, MemoKeys, Versions } from '@chain-registry/i
 import { readFileSync } from 'fs';
 import { sync as glob } from 'glob';
 import { basename } from 'path';
-import { JSONSchema } from "schema-typescript";
+import { JSONSchema } from 'schema-typescript';
 
 const SCHEMATA_MAPPING: Record<string, string> = {
   AssetList: 'assetLists',

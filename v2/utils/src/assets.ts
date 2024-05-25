@@ -25,8 +25,8 @@ export const getAssetByDenom = (
 ): Asset | undefined => {
 
   const filteredAssets = assets
-  .filter((assetList) => !chainName || assetList.chainName === chainName)
-  .flatMap(({ assets }) => assets);
+    .filter((assetList) => !chainName || assetList.chainName === chainName)
+    .flatMap(({ assets }) => assets);
 
   return customFind(filteredAssets, (asset) => {
     const found = asset.denomUnits.find(unit => unit.denom === denom)
@@ -59,8 +59,8 @@ export const getDenomsByCoinGeckoId = (
   chainName?: string
 ): Denom[] => {
   const filteredAssets = assets
-  .filter((assetList) => !chainName || assetList.chainName === chainName)
-  .flatMap(({ assets }) => assets);
+    .filter((assetList) => !chainName || assetList.chainName === chainName)
+    .flatMap(({ assets }) => assets);
 
   const denoms = filteredAssets
     .filter( a => a.coingeckoId === coinGeckoId)

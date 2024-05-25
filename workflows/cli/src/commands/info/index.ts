@@ -49,67 +49,67 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
   const registry: Registry = new Registry(argv.registryDir);
 
   switch (command) {
-    case 'chain':
-      argv = await prompter.prompt(argv, [
-        {
-          type: 'autocomplete',
-          name: 'chain',
-          message: 'Select a chain:',
-          options: registry.chains.map(chain => ({ name: chain.chain_name, value: chain })),
-          maxDisplayLines: 15
-        }
-      ]);
-      displayChain(argv.chain);
-      break;
+  case 'chain':
+    argv = await prompter.prompt(argv, [
+      {
+        type: 'autocomplete',
+        name: 'chain',
+        message: 'Select a chain:',
+        options: registry.chains.map(chain => ({ name: chain.chain_name, value: chain })),
+        maxDisplayLines: 15
+      }
+    ]);
+    displayChain(argv.chain);
+    break;
 
-    case 'asset-list':
-      argv = await prompter.prompt(argv, [
-        {
-          type: 'autocomplete',
-          name: 'chain',
-          message: 'Select a chain:',
-          options: registry.chains.map(chain => chain.chain_name),
-          maxDisplayLines: 15
-        }
-      ]);
+  case 'asset-list':
+    argv = await prompter.prompt(argv, [
+      {
+        type: 'autocomplete',
+        name: 'chain',
+        message: 'Select a chain:',
+        options: registry.chains.map(chain => chain.chain_name),
+        maxDisplayLines: 15
+      }
+    ]);
 
-      const assetList = registry.assetLists.find(a => a.chain_name === argv.chain);
-      displayAssetList(assetList);
-      break;
+    const assetList = registry.assetLists.find(a => a.chain_name === argv.chain);
+    displayAssetList(assetList);
+    break;
 
-    case 'asset':
-      argv = await prompter.prompt(argv, [
-        {
-          type: 'autocomplete',
-          name: 'chain',
-          message: 'Select a chain:',
-          options: registry.chains.map(chain => chain.chain_name),
-          maxDisplayLines: 15
-        }
-      ]);
+  case 'asset':
+    argv = await prompter.prompt(argv, [
+      {
+        type: 'autocomplete',
+        name: 'chain',
+        message: 'Select a chain:',
+        options: registry.chains.map(chain => chain.chain_name),
+        maxDisplayLines: 15
+      }
+    ]);
 
-      argv = await prompter.prompt(argv, [
-        {
-          type: 'autocomplete',
-          name: 'asset',
-          message: 'Select an asset:',
-          options: registry.assetLists
-            .filter(list => list.chain_name === argv.chain)
-            .flatMap(list => list.assets)
-            .map(asset => ({
-              name: asset.base,
-              value: asset
-            })),
-          maxDisplayLines: 15
-        }
-      ]);
+    argv = await prompter.prompt(argv, [
+      {
+        type: 'autocomplete',
+        name: 'asset',
+        message: 'Select an asset:',
+        options: registry.assetLists
+          .filter(list => list.chain_name === argv.chain)
+          .flatMap(list => list.assets)
+          .map(asset => ({
+            name: asset.base,
+            value: asset
+          })),
+        maxDisplayLines: 15
+      }
+    ]);
 
-      displayAsset(argv.asset);
-      break;
+    displayAsset(argv.asset);
+    break;
 
-    default:
-      console.log(`No recognized command provided or no command given: ${command}`);
-      break;
+  default:
+    console.log(`No recognized command provided or no command given: ${command}`);
+    break;
   }
 
   return argv;

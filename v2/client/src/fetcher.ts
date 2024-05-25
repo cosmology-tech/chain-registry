@@ -186,17 +186,17 @@ export class ChainRegistryFetcher {
     if (!data.$schema) throw new Error('not a registered JSON schema type');
     const type = basename(data.$schema, '.schema.json');
     switch (type) {
-      case 'chain':
-        this.upsertChain(data as IChain);
-        break;
-      case 'assetlist':
-        this.updateAssetList(data as IAssetList);
-        break;
-      case 'ibc_data':
-        this.upsertIbcData(data as IIBCData);
-        break;
-      default:
-        throw new Error('unknown schema type');
+    case 'chain':
+      this.upsertChain(data as IChain);
+      break;
+    case 'assetlist':
+      this.updateAssetList(data as IAssetList);
+      break;
+    case 'ibc_data':
+      this.upsertIbcData(data as IIBCData);
+      break;
+    default:
+      throw new Error('unknown schema type');
     }
 
     this.chainInfoList.forEach((chainInfo) => {

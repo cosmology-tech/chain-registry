@@ -45,20 +45,20 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
   prompter.exit = () => {};
 
   switch (command) {
-    case 'info':
-        argv = await info(argv, prompter, _options);
-        break;
-    case 'validate':
-        argv = await validate(argv, prompter, _options);
-        break;
+  case 'info':
+    argv = await info(argv, prompter, _options);
+    break;
+  case 'validate':
+    argv = await validate(argv, prompter, _options);
+    break;
 
-    case 'codegen':
-        argv = await codegen(argv, prompter, _options);
-        break;
+  case 'codegen':
+    argv = await codegen(argv, prompter, _options);
+    break;
 
-    default:
-      console.log(`No recognized command provided or no command given: ${command}`);
-      break;
+  default:
+    console.log(`No recognized command provided or no command given: ${command}`);
+    break;
   }
 
   return argv;
