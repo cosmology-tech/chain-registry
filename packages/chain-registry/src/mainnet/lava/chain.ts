@@ -74,6 +74,14 @@ const info: Chain = {
       {
         address: 'https://lava-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://lava.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://lava.rpc-archive.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
       }
     ],
     rest: [
@@ -96,12 +104,30 @@ const info: Chain = {
       {
         address: 'https://lava-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://lava.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://lava.api-archive.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       }
     ],
-    grpc: [{
+    grpc: [
+      {
         address: 'lava-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      }]
+      },
+      {
+        address: 'lava.grpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'lava.grpc-archive.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      }
+    ]
   },
   explorers: [{
       kind: 'w3coins',
