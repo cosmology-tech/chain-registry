@@ -9,7 +9,7 @@ const registry = new Registry(
 
 it('registry', () => {
   expect(registry.count).toMatchSnapshot();
-})
+});
 
 it('validator', () => {
 
@@ -19,7 +19,7 @@ it('validator', () => {
   
   validator.validateAllData();
   
-})
+});
 
 it('validator strict', () => {
 
@@ -35,7 +35,7 @@ it('validator strict', () => {
     validator.validateAllData();
   }).toThrow();
   
-})
+});
 
 it('validator strict 2020 draft', () => {
 
@@ -52,7 +52,7 @@ it('validator strict 2020 draft', () => {
     validator.validateAllData();
   }).toThrow();
   
-})
+});
 
 it('validator strict 2019 draft', () => {
 
@@ -69,7 +69,7 @@ it('validator strict 2019 draft', () => {
     validator.validateAllData();
   }).toThrow();
   
-})
+});
 
 it('validator strict draft-07', () => {
 
@@ -88,4 +88,4 @@ it('validator strict draft-07', () => {
   
   // expect(validator.validateAllData()).rejects.toThrow('strict mode: required property "address" is not defined at "https://osmosis.zone/assetlists.schema.json#/then" (strictRequired)');
 
-})
+});

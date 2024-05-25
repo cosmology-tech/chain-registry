@@ -1,6 +1,6 @@
 
-import { assetLists } from '@chain-registry/v2'
-import { chains as mainNetChains } from '@chain-registry/v2/mainnet'
+import { assetLists } from '@chain-registry/v2';
+import { chains as mainNetChains } from '@chain-registry/v2/mainnet';
 
 import {
   getAssetByDenom,
@@ -93,7 +93,7 @@ describe('tests for assets utils', () => {
   });
 
   it('getNativeAssetByChainName', () => {
-    const nativeToken = getNativeAssetByChainName(assetLists, 'osmosis')
+    const nativeToken = getNativeAssetByChainName(assetLists, 'osmosis');
     expect(nativeToken.base).toEqual('uosmo');
     const nativeToken2 = getNativeAssetByChainName(assetLists, 'juno');
     expect(nativeToken2.base).toEqual('ujuno');

@@ -1,4 +1,4 @@
-import { assetLists, ibcData } from '@chain-registry/v2'
+import { assetLists, ibcData } from '@chain-registry/v2';
 
 import { getIbcDenomByBase } from '../src';
 

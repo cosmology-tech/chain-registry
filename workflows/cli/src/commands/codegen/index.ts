@@ -1,6 +1,6 @@
 import { Registry, SchemaTypeGenerator } from '@chain-registry/workflows';
 import { existsSync } from 'fs';
-import { CLIOptions, Inquirerer } from 'inquirerer'
+import { CLIOptions, Inquirerer } from 'inquirerer';
 import { ParsedArgs } from 'minimist';
 
 import { toCamelCase } from '../../utils';
@@ -53,7 +53,7 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
     }
   });
 
-  generator.generateTypes()
+  generator.generateTypes();
 
   return argv;
 };

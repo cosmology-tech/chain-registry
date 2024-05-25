@@ -28,6 +28,7 @@
     "test:watch": "jest --watch"
   },
   "devDependencies": {
+    "@types/semver": "^7.5.8",
     "chain-registry": "^1.61.2"
   },
   "dependencies": {

@@ -1,6 +1,6 @@
 import { Registry } from '@chain-registry/workflows';
 import { existsSync } from 'fs';
-import { CLIOptions, Inquirerer, Question } from 'inquirerer'
+import { CLIOptions, Inquirerer, Question } from 'inquirerer';
 import { ParsedArgs } from 'minimist';
 
 import { displayAsset } from './asset';

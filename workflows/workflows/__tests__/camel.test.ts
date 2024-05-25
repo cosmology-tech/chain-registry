@@ -27,7 +27,7 @@ it('types', () => {
   });
   generator.generateTypes();
 
-  const tsFiles = globSync(`${outputDir}/*.ts`).map(a=>a.split(outputDir)[1])
+  const tsFiles = globSync(`${outputDir}/*.ts`).map(a=>a.split(outputDir)[1]);
   expect(tsFiles).toMatchSnapshot();
   
 });

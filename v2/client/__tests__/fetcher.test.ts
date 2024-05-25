@@ -18,7 +18,7 @@ describe('Test fetcher', () => {
     };
 
     fetcher = new ChainRegistryFetcher(options);
-    await fetcher.fetchUrls()
+    await fetcher.fetchUrls();
   });
 
   it('Test chain registry',() => {

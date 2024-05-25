@@ -7,6 +7,6 @@ export const getRegistry = () => {
     join(__dirname, '/../../../packages/chain-registry/chain-registry-fixtures')
   );
   return registry;
-}
+};
 
 export const fixtureOutputDir = resolve(__dirname +'/../../../__output__/');

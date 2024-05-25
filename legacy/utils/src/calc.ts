@@ -23,7 +23,7 @@ export const mapCoinGeckoPricesToDenoms = (
   prices: Record<string, CoinGeckoUSDPrice>
 ): DenomPriceMap => {
   return Object.keys(prices).reduce((res: DenomPriceMap, geckoId) => {
-    const denoms = getDenomsByCoinGeckoId(assets, geckoId)
+    const denoms = getDenomsByCoinGeckoId(assets, geckoId);
     
     if (!denoms.length) {
       throw new Error(`No denom found for CoinGecko ID: ${geckoId}`);
@@ -32,7 +32,7 @@ export const mapCoinGeckoPricesToDenoms = (
     // some tokens list same coingeckoId
     denoms.forEach(d => {
       res[d] = prices[geckoId].usd;
-    })
+    });
     return res;
   }, {});
 };

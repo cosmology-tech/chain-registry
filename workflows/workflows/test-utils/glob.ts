@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { readdirSync } from 'file-ts'
+import { readdirSync } from 'file-ts';
 import { join } from 'file-ts/main/emulation/path';
 import { minimatch } from 'minimatch';
 

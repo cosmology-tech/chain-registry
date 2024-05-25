@@ -1,4 +1,4 @@
-import { assetLists as _assetLists, chains } from '@chain-registry/v2'
+import { assetLists as _assetLists, chains } from '@chain-registry/v2';
 
 import {
   ChainRegistryChainUtil,

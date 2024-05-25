@@ -102,7 +102,7 @@ export const getIbcAssetPath = (
   if (!channel) {
     return [];
   }
-  let channelInfo: IBCChannelInfo
+  let channelInfo: IBCChannelInfo;
   if (ibcInfo.chain_1.chain_name === chain) {
     channelInfo = channel.chain_1;
   } else {

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { CLI, CLIOptions } from 'inquirerer';
 
-import { commands } from './commands'
+import { commands } from './commands';
 
 export const options: Partial<CLIOptions> = {
   minimistOpts: {
@@ -18,4 +18,4 @@ app.run().then(()=> {
 }).catch(error => {
   console.error(error);
   process.exit(1);
-})
+});
