@@ -1,26 +1,11 @@
 import { Asset, AssetList } from '@chain-registry/interfaces';
+import { isValidIdentifierCamelized,toCamelCase } from '@interweb/casing';
 import { sync as globSync } from 'glob';
 import { join } from 'path';
 import { JSStringifySetterOptions } from 'strfy-js';
 
 import { Registry, RegistryBuilder, RegistryBuilderOptions, SchemaTypeGenerator } from '../src';
 import { fixtureOutputDir, getRegistry } from '../test-utils';
-
-// TODO replace
-// import { toCamelCase } from 'schema-typescript';
-
-// FROM schema-typescript
-// // Determine if the key is a valid JavaScript identifier
-
-// Determine if the key is a valid JavaScript-like identifier, allowing internal hyphens
-function isValidIdentifierCamelized(key: string) {
-  return /^[$A-Z_][0-9A-Z_$-]*$/i.test(key) && !/^[0-9]+$/.test(key) && !/^-/.test(key);
-}
-
-// FROM strfy-js
-function camelCaseTransform(key: string): string {
-  return key.replace(/[-_\s]+(.)?/g, (_, c) => c ? c.toUpperCase() : '');
-}
 
 const outputDir = join(fixtureOutputDir, 'builder');
 const outputDir2 = join(fixtureOutputDir, 'builder-schemata');
@@ -227,10 +212,7 @@ const options: RegistryBuilderOptions = {
 it('types', () => {
 
   const builder = new RegistryBuilder(registry, options);
-  // console.log(builder);
-
-  // builder.build(outputDir);
-  builder.buildSchemas(outputDir, camelCaseTransform, isValidIdentifierCamelized);
+  builder.buildSchemas(outputDir, toCamelCase, isValidIdentifierCamelized);
 
   const registry2 = new Registry(outputDir);
 

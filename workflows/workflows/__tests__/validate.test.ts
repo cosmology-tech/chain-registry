@@ -1,11 +1,7 @@
-import { join } from 'path';
-
-import { Registry } from '../src/registry';
 import { SchemaValidator } from '../src/validator';
+import { getRegistry } from '../test-utils';
 
-const registry = new Registry(
-  join(__dirname, '/../../../packages/chain-registry/chain-registry-fixtures')
-);
+const registry = getRegistry();
 
 it('validator 2020 draft', () => {
 
