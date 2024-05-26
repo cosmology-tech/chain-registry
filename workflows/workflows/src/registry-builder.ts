@@ -17,7 +17,6 @@ export interface RegistryBuilderOptions {
     chain: JSONSchemaPatchOperation[];
     ibcData: JSONSchemaPatchOperation[];
   }
-  
 }
 
 export class RegistryBuilder {

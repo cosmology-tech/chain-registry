@@ -419,6 +419,11 @@
   resolved "https://registry.yarnpkg.com/@hutson/parse-repository-url/-/parse-repository-url-3.0.2.tgz#98c23c950a3d9b6c8f0daed06da6c3af06981340"
   integrity sha512-H9XAx3hc0BQHY6l+IFSWHDySypcXsvsuLhgYLUGywmJ5pswRVQJUHpOsobnLYp2ZUaUlKiKDrgWWhosOwAEM8Q==
 
+"@interweb/casing@0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@interweb/casing/-/casing-0.6.0.tgz#857a414f1aaa28f961941fb9980026e580a756db"
+  integrity sha512-wBE9b4BcLcfnsID40jGDNkOgvG9LGoy/0ORjvHxDrFCtEqcty2fT13AueWJXS+js6OtzpXjkrf9C/YWIEixhhQ==
+
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/@isaacs/cliui/-/cliui-8.0.2.tgz#b37667b7bc181c168782259bab42474fbf52b550"
