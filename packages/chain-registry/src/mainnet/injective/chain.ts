@@ -87,6 +87,10 @@ const info: Chain = {
       {
         address: 'https://injective-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://rpc-injective.ecostake.com',
+        provider: 'ecostake'
       }
     ],
     rest: [
@@ -141,6 +145,10 @@ const info: Chain = {
       {
         address: 'https://injective-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://rest-injective.ecostake.com',
+        provider: 'ecostake'
       }
     ],
     grpc: [

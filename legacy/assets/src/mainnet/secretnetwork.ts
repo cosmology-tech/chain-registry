@@ -6518,6 +6518,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/phmn.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/phmn.svg'
         }],
+      socials: {
+        website: 'https://posthuman.digital/',
+        twitter: 'https://twitter.com/POSTHUMAN_DVS'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -9120,6 +9124,10 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/phmn.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/phmn.svg'
         }],
+      socials: {
+        website: 'https://posthuman.digital/',
+        twitter: 'https://twitter.com/POSTHUMAN_DVS'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
