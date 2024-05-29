@@ -1,3 +1,5 @@
+export * from './build';
+export * from './convert';
 export * from './registry';
 export * from './registry-builder';
 export * from './schema-typescript';
