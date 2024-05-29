@@ -2420,6 +2420,81 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native EVM, governance and staking token of the Planq Network',
+      denom_units: [{
+          denom: 'ibc/BE8141075AE7950E12CE1821638C8AB9C7FFDBAEC4205714EE8D4A08169271BD',
+          exponent: 0,
+          aliases: ['aplanq']
+        }, {
+          denom: 'planq',
+          exponent: 18
+        }],
+      base: 'ibc/BE8141075AE7950E12CE1821638C8AB9C7FFDBAEC4205714EE8D4A08169271BD',
+      name: 'Planq',
+      display: 'planq',
+      symbol: 'PLQ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg'
+      },
+      coingecko_id: 'planq',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg'
+        }],
+      socials: {
+        website: 'https://planq.network',
+        twitter: 'https://twitter.com/planqfoundation'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-63',
+            base_denom: 'aplanq',
+            chain_name: 'planq'
+          },
+          chain: {
+            channel_id: 'channel-82'
+          }
+        }]
+    },
+    {
+      description: 'The token of Source Protocol bridged from BSC.',
+      denom_units: [{
+          denom: 'ibc/2582AC072D9D80ED244FF78E8392AADA41AE01979A9310B96508BBA7A967197B',
+          exponent: 0,
+          aliases: ['erc20/0x091F9A57A3F58d758b6572E9d41675918EAC7F09']
+        }, {
+          denom: 'srcx',
+          exponent: 9
+        }],
+      base: 'ibc/2582AC072D9D80ED244FF78E8392AADA41AE01979A9310B96508BBA7A967197B',
+      name: 'Source Token',
+      display: 'srcx',
+      symbol: 'SRCX',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-63',
+            base_denom: 'erc20/0x091F9A57A3F58d758b6572E9d41675918EAC7F09',
+            chain_name: 'planq'
+          },
+          chain: {
+            channel_id: 'channel-82'
+          }
+        }],
+      images: [{
+          image_sync: {
+            chain_name: 'binancesmartchain',
+            base_denom: '0x454b90716a9435e7161a9aea5cf00e0acbe565ae'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
+      }
+    },
+    {
       description: 'Hash is the staking token of the Provenance Blockchain',
       denom_units: [{
           denom: 'ibc/ADDA7F388EBD91BA9EBE1D996E28902738CED906CA4E8200549C3BF8CDF155A4',
@@ -2940,6 +3015,81 @@ const assets: AssetList = {
             channel_id: 'channel-36'
           }
         }]
+    },
+    {
+      description: 'The native EVM, governance and staking token of the Planq Network',
+      denom_units: [{
+          denom: 'ibc/BE8141075AE7950E12CE1821638C8AB9C7FFDBAEC4205714EE8D4A08169271BD',
+          exponent: 0,
+          aliases: ['aplanq']
+        }, {
+          denom: 'planq',
+          exponent: 18
+        }],
+      base: 'ibc/BE8141075AE7950E12CE1821638C8AB9C7FFDBAEC4205714EE8D4A08169271BD',
+      name: 'Planq',
+      display: 'planq',
+      symbol: 'PLQ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg'
+      },
+      coingecko_id: 'planq',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg'
+        }],
+      socials: {
+        website: 'https://planq.network',
+        twitter: 'https://twitter.com/planqfoundation'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-63',
+            base_denom: 'aplanq',
+            chain_name: 'planq'
+          },
+          chain: {
+            channel_id: 'channel-82'
+          }
+        }]
+    },
+    {
+      description: 'The token of Source Protocol bridged from BSC.',
+      denom_units: [{
+          denom: 'ibc/2582AC072D9D80ED244FF78E8392AADA41AE01979A9310B96508BBA7A967197B',
+          exponent: 0,
+          aliases: ['erc20/0x091F9A57A3F58d758b6572E9d41675918EAC7F09']
+        }, {
+          denom: 'srcx',
+          exponent: 9
+        }],
+      base: 'ibc/2582AC072D9D80ED244FF78E8392AADA41AE01979A9310B96508BBA7A967197B',
+      name: 'Source Token',
+      display: 'srcx',
+      symbol: 'SRCX',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-63',
+            base_denom: 'erc20/0x091F9A57A3F58d758b6572E9d41675918EAC7F09',
+            chain_name: 'planq'
+          },
+          chain: {
+            channel_id: 'channel-82'
+          }
+        }],
+      images: [{
+          image_sync: {
+            chain_name: 'binancesmartchain',
+            base_denom: '0x454b90716a9435e7161a9aea5cf00e0acbe565ae'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
+      }
     },
     {
       description: 'Hash is the staking token of the Provenance Blockchain',
