@@ -1,7 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`createAliasedImportDeclaration 1`] = `"import { assetList as _mychain } from "mychain";"`;
+
+exports[`createExportAllDeclarations 1`] = `
+"export * from "./asset-lists";
+export * from "./chains";
+export * from "./ibc-data";"
+`;
+
+exports[`createExportedArrayDeclaration 1`] = `"export const assetLists: AssetList[] = [_bitcannadev1, _celestiadevnet2, _interwebdevnet];"`;
+
+exports[`createImportDeclaration 1`] = `"import { AssetList, Chain } from "@chain-registry/types";"`;
+
+exports[`generateImportsAndExport 1`] = `
+"import { assetLists } from "./asset-lists";
+import { chains } from "./chains";
+export { assetLists, chains };"
+`;
+
 exports[`json-to-ast var declaration 1`] = `
-"const assets: AssetList = {
+"export const assetList: AssetList = {
   $schema: "../assetlist.schema.json",
   chainName: "8ball",
   assets: [{
@@ -16,6 +34,8 @@ exports[`json-to-ast var declaration 1`] = `
     base: "uebl",
     name: "8ball",
     display: "ebl",
+    "some/property": "goes-here",
+    _prop: "goes-here",
     symbol: "EBL",
     logoURIs: {
       png: "https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png",
