@@ -4,3 +4,9 @@
 [submodule "packages/chain-registry/chain-registry-fixtures"]
 	path = packages/chain-registry/chain-registry-fixtures
 	url = https://github.com/cosmology-tech/chain-registry-fixtures
+[submodule "repos/fixtures"]
+	path = repos/fixtures
+	url = https://github.com/chain-registry/fixtures.git
+[submodule "repos/chain-registry"]
+	path = repos/chain-registry
+	url = https://github.com/cosmos/chain-registry.git
