@@ -154,3 +154,79 @@ export function createExportAllDeclarations(sources: string[]): t.ExportAllDecla
     t.exportAllDeclaration(t.stringLiteral(source))
   );
 }
+
+export function generateImportExportsAtRoot(
+  specifier: string,
+  aliasesSources: { alias: string; source: string }[],
+  exportVariableName: string,
+  exportVariableType: string
+): t.Statement[] {
+  // Create import declarations
+  const importDeclarations = aliasesSources.map(({ alias, source }) =>
+    t.importDeclaration(
+      [t.importSpecifier(t.identifier(alias), t.identifier(specifier))],
+      t.stringLiteral(source)
+    )
+  );
+
+  // Create array elements for the export
+  const arrayElements = aliasesSources.map(({ alias }) =>
+    t.spreadElement(t.identifier(alias))
+  );
+  
+  // Create the export variable identifier with a type annotation
+  const exportIdentifier = t.identifier(exportVariableName);
+  exportIdentifier.typeAnnotation = t.tsTypeAnnotation(
+    t.tsArrayType(t.tsTypeReference(t.identifier(exportVariableType)))
+  );
+
+  // Create the variable declarator using the annotated identifier
+  const exportDeclarator = t.variableDeclarator(
+    exportIdentifier,
+    t.arrayExpression(arrayElements)
+  );
+
+  // Create the variable declaration with 'const'
+  const exportDeclaration = t.variableDeclaration('const', [exportDeclarator]);
+
+  // Combine import declarations and the export declaration
+  return [...importDeclarations, exportDeclaration];
+}
+
+interface ImportSpec {
+  specifier: string;
+  source: string;
+}
+
+export function createImportsAndExportsAtRootForIndex(imports: ImportSpec[]): t.Statement[] {
+  // Generate default import declarations
+  const importDeclarations = imports.map(({ specifier, source }) =>
+    t.importDeclaration(
+      [t.importDefaultSpecifier(t.identifier(specifier))],
+      t.stringLiteral(source)
+    )
+  );
+
+  // Generate identifiers for the export object and named exports
+  const identifiers = imports.map(({ specifier }) => t.identifier(specifier));
+
+  // Create the default export declaration with an object expression
+  const defaultExportDeclaration = t.exportDefaultDeclaration(
+    t.objectExpression(
+      identifiers.map(identifier =>
+        t.objectProperty(identifier, identifier, false, true) // shorthand syntax
+      )
+    )
+  );
+
+  // Create the named export declaration
+  const namedExportDeclaration = t.exportNamedDeclaration(
+    null, 
+    identifiers.map(identifier =>
+      t.exportSpecifier(identifier, identifier)
+    )
+  );
+
+  // Combine all declarations into a single array to return
+  return [...importDeclarations, defaultExportDeclaration, namedExportDeclaration];
+}

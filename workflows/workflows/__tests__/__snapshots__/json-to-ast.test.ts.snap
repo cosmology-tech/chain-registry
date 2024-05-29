@@ -12,6 +12,25 @@ exports[`createExportedArrayDeclaration 1`] = `"export const assetLists: AssetLi
 
 exports[`createImportDeclaration 1`] = `"import { AssetList, Chain } from "@chain-registry/types";"`;
 
+exports[`createImportsAndExportsAtRootForIndex 1`] = `
+"import assetLists from "./asset-lists";
+import chains from "./chains";
+import ibcData from "./ibc-data";
+export default {
+  assetLists,
+  chains,
+  ibcData
+};
+export { assetLists, chains, ibcData };"
+`;
+
+exports[`generateImportExportsAtRoot 1`] = `
+"import { ibcData as _mainnet } from "./mainnet";
+import { ibcData as _noncosmos } from "./noncosmos";
+import { ibcData as _testnets } from "./testnets";
+const ibcData: IBCData[] = [..._mainnet, ..._noncosmos, ..._testnets];"
+`;
+
 exports[`generateImportsAndExport 1`] = `
 "import { assetLists } from "./asset-lists";
 import { chains } from "./chains";

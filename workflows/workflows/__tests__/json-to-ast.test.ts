@@ -1,7 +1,7 @@
 import generate from '@babel/generator';
 import * as t from '@babel/types';
 
-import { createAliasedImportDeclaration, createExportAllDeclarations, createExportedArrayDeclaration, createImportDeclaration, createTypedVariableDeclaration, createVariableAssignment, generateImportsAndExport, JsonObject } from '../src';
+import { createAliasedImportDeclaration, createExportAllDeclarations, createExportedArrayDeclaration, createImportDeclaration, createImportsAndExportsAtRootForIndex, createTypedVariableDeclaration, createVariableAssignment, generateImportExportsAtRoot, generateImportsAndExport, JsonObject } from '../src';
 const jsonData: JsonObject = {
   $schema: '../assetlist.schema.json',
   chainName: '8ball',
@@ -89,6 +89,39 @@ it('createExportAllDeclarations', () => {
     './asset-lists',
     './chains',
     './ibc-data'
+  ]);
+  const code = generate(t.program([
+    ...imports
+  ])).code;
+  expect(code).toMatchSnapshot();
+});
+
+it('generateImportExportsAtRoot', () => {
+  const imports = generateImportExportsAtRoot('ibcData', [
+    {
+      alias: '_mainnet',
+      source: './mainnet'
+    },
+    {
+      alias: '_noncosmos',
+      source: './noncosmos'
+    },
+    {
+      alias: '_testnets',
+      source: './testnets'
+    }
+  ], 'ibcData', 'IBCData');
+  const code = generate(t.program([
+    ...imports
+  ])).code;
+  expect(code).toMatchSnapshot();
+});
+
+it('createImportsAndExportsAtRootForIndex', () => {
+  const imports = createImportsAndExportsAtRootForIndex([
+    { specifier: 'assetLists', source: './asset-lists' },
+    { specifier: 'chains', source: './chains' },
+    { specifier: 'ibcData', source: './ibc-data' }
   ]);
   const code = generate(t.program([
     ...imports
