@@ -13,7 +13,9 @@ export const pascalCase = (str: string) => {
   return toPascalCase(str);
 }
 
-// Fixtures registry data is used in test and has less update frequency
+/**
+ * Fixtures registry data is used in test and has less update frequency
+ */
 export const getFixturesRegistry = () => {
   const registry = new Registry(
     join(__dirname, '/../../../repos/fixtures')
