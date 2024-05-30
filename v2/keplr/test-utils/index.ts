@@ -1,11 +1,11 @@
-import { AssetList, Chain, IBCInfo } from '@chain-registry/types';
+// @ts-nocheck 
+import { AssetList, Chain, IBCData } from '@chain-registry/v2-types';
+import { getFixturesRegistry } from '@chain-registry/workflows';
 
-import _assets from '../../../__fixtures__/assets.json';
-import _chains from '../../../__fixtures__/chains.json';
-import _ibc from '../../../__fixtures__/ibc.json';
+const fixturesReg = getFixturesRegistry();
 
-export const assets: AssetList[] = _assets as AssetList[];
+export const assets: AssetList[] = fixturesReg.assetLists
 // TODO update fixtures, they may be missing properties and/or old schema
-export const chains: Chain[] = _chains as any;
+export const chains: Chain[] = fixturesReg.chains;
 
-export const ibc: IBCInfo[] = _ibc as IBCInfo[];
+export const ibc: IBCData[] = fixturesReg.ibcData;

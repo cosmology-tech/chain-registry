@@ -1,13 +1,12 @@
-import { Chain } from '@chain-registry/types';
-
+import { Chain } from '@chain-registry/v2-types';
 import { assets, chains } from '../test-utils'
 import { chainRegistryChainToKeplr } from '../src/';
 
-const testChainData = async (chainName: string, chainId: ChainInfo['chainId']) => {
-  const chain = await getChainInfo(chainId);
+const testChainData = async (chain_name: string, chain_id: ChainInfo['chainId']) => {
+  const chain = await getChainInfo(chain_id);
   expect(chain).toMatchSnapshot();
   const chainRegChain: Chain = chains.find(
-    ({ chain_name }) => chain_name === chainName
+    ({ chainName }) => chainName === chain_name
   )!;
   const chainReg = chainRegistryChainToKeplr(
     chainRegChain,

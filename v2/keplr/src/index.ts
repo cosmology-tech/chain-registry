@@ -1,4 +1,4 @@
-import { Asset, AssetList, Chain } from '@chain-registry/types';
+import { Asset, AssetList, Chain } from '@chain-registry/v2-types';
 import { Bech32Address } from '@keplr-wallet/cosmos';
 import { ChainInfo, Currency, FeeCurrency } from '@keplr-wallet/types';
 import semver from 'semver';
@@ -20,6 +20,7 @@ const cleanVer = (ver: string) => {
       case 2:
         return ver + '.0';
       case 3:
+        return ver;
       default:
         throw new Error(
           'contact @chain-registry/keplr maintainers: bad version'
@@ -36,10 +37,10 @@ export const chainRegistryChainToKeplr = (
     getRestEndpoint?: (chain: Chain) => string;
     getExplorer?: (chain: Chain) => string;
   } = {
-    getRpcEndpoint: getRpc,
-    getRestEndpoint: getRest,
-    getExplorer: getExplr
-  }
+      getRpcEndpoint: getRpc,
+      getRestEndpoint: getRest,
+      getExplorer: getExplr
+    }
 ): ChainInfo => {
   if (!options.getRestEndpoint) options.getRestEndpoint = getRest;
   if (!options.getRpcEndpoint) options.getRpcEndpoint = getRpc;
@@ -47,8 +48,8 @@ export const chainRegistryChainToKeplr = (
 
   const features = [];
   // if NOT specified, we assume stargate, sorry not sorry
-  const sdkVer = chain.codebase?.cosmos_sdk_version
-    ? cleanVer(chain.codebase?.cosmos_sdk_version)
+  const sdkVer = chain.codebase?.cosmosSdkVersion
+    ? cleanVer(chain.codebase?.cosmosSdkVersion)
     : '0.40';
 
   // stargate
@@ -61,17 +62,17 @@ export const chainRegistryChainToKeplr = (
   // ibc-go
   if (semver.satisfies(sdkVer, '>=0.45')) features.push('ibc-go');
 
-  if (chain.codebase?.cosmwasm_enabled) {
+  if (chain.codebase?.cosmwasmEnabled) {
     features.push('cosmwasm');
-    const wasmVer = cleanVer(chain.codebase.cosmwasm_version ?? '0.24');
+    const wasmVer = cleanVer(chain.codebase.cosmwasmVersion ?? '0.24');
     if (semver.satisfies(wasmVer, '>=0.24')) features.push('wasmd_0.24+');
   }
 
   const chainAssets =
-    assets.find((asset) => asset.chain_name === chain.chain_name)?.assets || [];
+    assets.find((asset) => asset.chainName === chain.chainName)?.assets || [];
 
   const feeDenoms =
-    chain.fees?.fee_tokens.map<string>((feeToken) => feeToken.denom) || [];
+    chain.fees?.feeTokens.map<string>((feeToken) => feeToken.denom) || [];
 
   /**
    * FROM KEPLR chain-info.d.ts:
@@ -85,17 +86,17 @@ export const chainRegistryChainToKeplr = (
     high: number;
   }
 
-  const gasPriceSteps: Record<string, GasPriceStep> = chain.fees?.fee_tokens?.reduce((m, feeToken) => {
+  const gasPriceSteps: Record<string, GasPriceStep> = chain.fees?.feeTokens?.reduce((m, feeToken) => {
     m[feeToken.denom] = {
-      low: feeToken.low_gas_price ?? 0.01,
-      average: feeToken.average_gas_price ?? 0.025,
-      high: feeToken.high_gas_price ?? 0.04
+      low: feeToken.lowGasPrice ?? 0.01,
+      average: feeToken.averageGasPrice ?? 0.025,
+      high: feeToken.highGasPrice ?? 0.04
     };
     return m;
   }, {} as Record<string, GasPriceStep>);
 
   const stakingDenoms =
-    chain.staking?.staking_tokens.map<string>(
+    chain.staking?.stakingTokens.map<string>(
       (stakingToken) => stakingToken.denom
     ) || [];
 
@@ -103,11 +104,11 @@ export const chainRegistryChainToKeplr = (
     return {
       coinDenom: currency.symbol,
       coinMinimalDenom: currency.base,
-      coinDecimals: currency.denom_units.filter(
+      coinDecimals: currency.denomUnits.filter(
         (denomUnit: { denom: string }) => denomUnit.denom === currency.display
       )[0]?.exponent,
-      coinGeckoId: currency.coingecko_id || undefined,
-      coinImageUrl: currency.logo_URIs?.svg ?? currency.logo_URIs?.png
+      coinGeckoId: currency.coingeckoId || undefined,
+      coinImageUrl: currency.logoURIs?.svg ?? currency.logoURIs?.png
     };
   });
 
@@ -150,12 +151,12 @@ export const chainRegistryChainToKeplr = (
   const chainInfo: ChainInfo = {
     rpc: options.getRpcEndpoint(chain),
     rest: options.getRestEndpoint(chain),
-    chainId: chain.chain_id,
-    chainName: chain.pretty_name,
+    chainId: chain.chainId,
+    chainName: chain.prettyName,
     bip44: {
       coinType: chain.slip44
     },
-    bech32Config: Bech32Address.defaultBech32Config(chain.bech32_prefix),
+    bech32Config: Bech32Address.defaultBech32Config(chain.bech32Prefix),
     currencies: currencies,
     stakeCurrency: stakeCurrency || currencies[0],
     feeCurrencies:
