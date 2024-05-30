@@ -4,6 +4,7 @@ const info: AssetList = {
   chain_name: 'chain4energy',
   assets: [{
       description: 'The native token of Chain4Energy',
+      extended_description: 'C4E is a DePIN L1 Blockchain platform, designed to support a variety of innovative energy and e-mobility applications by creating a decentralized and democratized community-powered ecosystem.',
       denom_units: [{
           denom: 'uc4e',
           exponent: 0
@@ -18,7 +19,7 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chain4energy/images/c4e.png'
       },
-      coingecko_id: '',
+      coingecko_id: 'chain4energy',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chain4energy/images/c4e.png'
         }],
