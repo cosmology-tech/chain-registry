@@ -8,12 +8,12 @@ describe('Test fetcher', () => {
   beforeAll(async () => {
     const options: ChainRegistryFetcherOptions = {
       urls: [
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/chain.json',
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/assetlist.json',
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/assetlist.json',
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/assetlist.json',
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/_IBC/juno-osmosis.json',
-        'https://raw.githubusercontent.com/cosmos/chain-registry/master/_IBC/osmosis-secretnetwork.json'
+        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/minimal/osmosis/chain.json',
+        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/minimal/osmosis/assetlist.json',
+        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/minimal/juno/assetlist.json',
+        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/minimal/secretnetwork/assetlist.json',
+        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/minimal/_IBC/juno-osmosis.json',
+        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/minimal/_IBC/osmosis-secretnetwork.json'
       ]
     };
 
