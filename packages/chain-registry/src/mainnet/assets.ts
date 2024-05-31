@@ -96,6 +96,7 @@ import * as _migaloo from './migaloo';
 import * as _mises from './mises';
 import * as _mun from './mun';
 import * as _mythos from './mythos';
+import * as _neura from './neura';
 import * as _neutaro from './neutaro';
 import * as _neutron from './neutron';
 import * as _nibiru from './nibiru';
@@ -262,6 +263,7 @@ const assets: AssetList[] = [
   _mises.assets,
   _mun.assets,
   _mythos.assets,
+  _neura.assets,
   _neutaro.assets,
   _neutron.assets,
   _nibiru.assets,

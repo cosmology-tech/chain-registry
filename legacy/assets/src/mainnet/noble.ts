@@ -2854,6 +2854,80 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'REGEN coin is the token for the Regen Network Platform',
+      denom_units: [{
+          denom: 'ibc/94A226B8B40465682AD3F4AB14BA19BC3B9AA7BD2D1C9BDB7871A7464F19CE82',
+          exponent: 0,
+          aliases: ['uregen']
+        }, {
+          denom: 'regen',
+          exponent: 6
+        }],
+      base: 'ibc/94A226B8B40465682AD3F4AB14BA19BC3B9AA7BD2D1C9BDB7871A7464F19CE82',
+      name: 'Regen Network',
+      display: 'regen',
+      symbol: 'REGEN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg'
+      },
+      coingecko_id: 'regen',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg'
+        }],
+      socials: {
+        website: 'https://www.regen.network/',
+        twitter: 'https://twitter.com/regen_network'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-165',
+            base_denom: 'uregen',
+            chain_name: 'regen'
+          },
+          chain: {
+            channel_id: 'channel-83'
+          }
+        }]
+    },
+    {
+      description: 'Nature Carbon Ton (NCT) is a carbon token standard backed 1:1 by carbon credits issued by Verra, a global leader in the voluntary carbon market. NCT credits on Regen Network have been tokenized by Toucan.earth.',
+      denom_units: [{
+          denom: 'ibc/C15E5758621B9ECD61D6EE4A6B8E21238E9C8873539523F1A3A2921611A37767',
+          exponent: 0,
+          aliases: ['eco.uC.NCT']
+        }, {
+          denom: 'nct',
+          exponent: 6
+        }],
+      base: 'ibc/C15E5758621B9ECD61D6EE4A6B8E21238E9C8873539523F1A3A2921611A37767',
+      name: 'Nature Carbon Ton',
+      display: 'nct',
+      symbol: 'NCT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.svg'
+      },
+      coingecko_id: 'toucan-protocol-nature-carbon-tonne',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-165',
+            base_denom: 'eco.uC.NCT',
+            chain_name: 'regen'
+          },
+          chain: {
+            channel_id: 'channel-83'
+          }
+        }]
+    },
+    {
       description: 'The native token of Secret Network',
       denom_units: [{
           denom: 'ibc/1B28CD5F3CDC17E585A7F2F05931FA694B3EFF0233D98CEF3505A35410D53CED',
@@ -3447,6 +3521,80 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-79'
+          }
+        }]
+    },
+    {
+      description: 'REGEN coin is the token for the Regen Network Platform',
+      denom_units: [{
+          denom: 'ibc/94A226B8B40465682AD3F4AB14BA19BC3B9AA7BD2D1C9BDB7871A7464F19CE82',
+          exponent: 0,
+          aliases: ['uregen']
+        }, {
+          denom: 'regen',
+          exponent: 6
+        }],
+      base: 'ibc/94A226B8B40465682AD3F4AB14BA19BC3B9AA7BD2D1C9BDB7871A7464F19CE82',
+      name: 'Regen Network',
+      display: 'regen',
+      symbol: 'REGEN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg'
+      },
+      coingecko_id: 'regen',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg'
+        }],
+      socials: {
+        website: 'https://www.regen.network/',
+        twitter: 'https://twitter.com/regen_network'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-165',
+            base_denom: 'uregen',
+            chain_name: 'regen'
+          },
+          chain: {
+            channel_id: 'channel-83'
+          }
+        }]
+    },
+    {
+      description: 'Nature Carbon Ton (NCT) is a carbon token standard backed 1:1 by carbon credits issued by Verra, a global leader in the voluntary carbon market. NCT credits on Regen Network have been tokenized by Toucan.earth.',
+      denom_units: [{
+          denom: 'ibc/C15E5758621B9ECD61D6EE4A6B8E21238E9C8873539523F1A3A2921611A37767',
+          exponent: 0,
+          aliases: ['eco.uC.NCT']
+        }, {
+          denom: 'nct',
+          exponent: 6
+        }],
+      base: 'ibc/C15E5758621B9ECD61D6EE4A6B8E21238E9C8873539523F1A3A2921611A37767',
+      name: 'Nature Carbon Ton',
+      display: 'nct',
+      symbol: 'NCT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.svg'
+      },
+      coingecko_id: 'toucan-protocol-nature-carbon-tonne',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-165',
+            base_denom: 'eco.uC.NCT',
+            chain_name: 'regen'
+          },
+          chain: {
+            channel_id: 'channel-83'
           }
         }]
     },
