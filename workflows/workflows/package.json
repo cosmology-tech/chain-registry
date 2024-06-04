@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/workflows",
-  "version": "1.48.0",
+  "version": "1.48.1",
   "description": "Chain Registry Workflows",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
