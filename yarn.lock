@@ -6711,13 +6711,6 @@ stack-utils@^2.0.3:
   dependencies:
     escape-string-regexp "^2.0.0"
 
-strfy-js@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/strfy-js/-/strfy-js-3.0.0.tgz#220cd40fd74d51d9a41b62ea0ff8facb8245748c"
-  integrity sha512-czLj2fn94uKjkfyqbXzBTFWK8yxuzGQy/7PH2bT5Q2fOsJmG2OqkKaFKSxssxzBIlCjaJZ7gjC3IZXNJKtJaJg==
-  dependencies:
-    minimatch "^9.0.4"
-
 strfy-js@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/strfy-js/-/strfy-js-3.0.1.tgz#71e90dc1b6976ced46ff9cb1c129a45b8d2de680"
