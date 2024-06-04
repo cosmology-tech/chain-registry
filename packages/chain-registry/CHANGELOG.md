@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.62.0 (2024-06-04)
+
+**Note:** Version bump only for package chain-registry
+
+
+
+
+
+## 1.61.12 (2024-06-04)
+
+**Note:** Version bump only for package chain-registry
+
+
+
+
+
+## [1.61.11](https://github.com/cosmology-tech/chain-registry/compare/chain-registry@1.61.10...chain-registry@1.61.11) (2024-06-03)
+
+**Note:** Version bump only for package chain-registry
+
+
+
+
+
+## [1.61.10](https://github.com/cosmology-tech/chain-registry/compare/chain-registry@1.61.9...chain-registry@1.61.10) (2024-06-02)
+
+**Note:** Version bump only for package chain-registry
+
+
+
+
+
+## 1.61.9 (2024-06-01)
+
+**Note:** Version bump only for package chain-registry
+
+
+
+
+
+## 1.61.8 (2024-05-31)
+
+**Note:** Version bump only for package chain-registry
+
+
+
+
+
 ## 1.61.7 (2024-05-30)
 
 **Note:** Version bump only for package chain-registry

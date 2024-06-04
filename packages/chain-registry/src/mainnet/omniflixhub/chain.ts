@@ -144,7 +144,7 @@ const info: Chain = {
       },
       {
         address: 'https://omniflix.api.staking-explorer.com',
-        provider: 'Daily DROP | 1% Fee'
+        provider: 'Daily DROP | 3% Fee'
       },
       {
         address: 'https://api.omniflix.stakeup.tech',

@@ -90,10 +90,6 @@ const info: Chain = {
         provider: 'w3coins'
       },
       {
-        address: 'https://lava.api.staking-explorer.com',
-        provider: 'Daily DROP'
-      },
-      {
         address: 'https://lava-api.ibs.team:443',
         provider: 'Inter Blockchain Services'
       },

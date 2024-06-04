@@ -61,6 +61,10 @@ const info: Chain = {
         provider: 'ecostake'
       },
       {
+        address: 'https://go.getblock.io/17515cb3ec0e43b7817f182e5de6066a',
+        provider: 'GetBlock RPC Nodes'
+      },
+      {
         address: 'https://rpc-cosmoshub.pupmos.network',
         provider: 'PUPMØS'
       },

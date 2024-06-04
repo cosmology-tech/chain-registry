@@ -5,14 +5,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Axelar',
       denom_units: [{
-          denom: 'ibc/C0E66D1C81D8AAF0E6896E05190FDFBC222367148F86AC3EA679C28327A763CD',
+          denom: 'ibc/0634D0993744740D675AD01E81156EAC945AEAAE17C074918DC7FF52F41B263E',
           exponent: 0,
           aliases: ['uaxl']
         }, {
           denom: 'axl',
           exponent: 6
         }],
-      base: 'ibc/C0E66D1C81D8AAF0E6896E05190FDFBC222367148F86AC3EA679C28327A763CD',
+      base: 'ibc/0634D0993744740D675AD01E81156EAC945AEAAE17C074918DC7FF52F41B263E',
       name: 'Axelar',
       display: 'axl',
       symbol: 'AXL',
@@ -28,26 +28,26 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-503',
+            channel_id: 'channel-506',
             base_denom: 'uaxl',
             chain_name: 'axelartestnet'
           },
           chain: {
-            channel_id: 'channel-2'
+            channel_id: 'channel-4'
           }
         }]
     },
     {
       description: 'The native token of Axelar',
       denom_units: [{
-          denom: 'ibc/C0E66D1C81D8AAF0E6896E05190FDFBC222367148F86AC3EA679C28327A763CD',
+          denom: 'ibc/0634D0993744740D675AD01E81156EAC945AEAAE17C074918DC7FF52F41B263E',
           exponent: 0,
           aliases: ['uaxl']
         }, {
           denom: 'axl',
           exponent: 6
         }],
-      base: 'ibc/C0E66D1C81D8AAF0E6896E05190FDFBC222367148F86AC3EA679C28327A763CD',
+      base: 'ibc/0634D0993744740D675AD01E81156EAC945AEAAE17C074918DC7FF52F41B263E',
       name: 'Axelar',
       display: 'axl',
       symbol: 'AXL',
@@ -63,12 +63,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-503',
+            channel_id: 'channel-506',
             base_denom: 'uaxl',
             chain_name: 'axelartestnet'
           },
           chain: {
-            channel_id: 'channel-2'
+            channel_id: 'channel-4'
           }
         }]
     },

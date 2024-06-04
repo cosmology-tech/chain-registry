@@ -50,6 +50,10 @@ const info: Chain = {
       {
         address: 'https://shido-rpc.applejuice.256x25.tech:443',
         provider: 'Apple juice 🧃'
+      },
+      {
+        address: 'https://rpc.shido.indonode.net:443',
+        provider: 'Indonode'
       }
     ],
     rest: [
@@ -64,6 +68,10 @@ const info: Chain = {
       {
         address: 'https://shido-api.applejuice.256x25.tech:443',
         provider: 'Apple juice 🧃'
+      },
+      {
+        address: 'https://api.shido.indonode.net',
+        provider: 'Indonode'
       }
     ],
     grpc: [{
@@ -116,6 +124,12 @@ const info: Chain = {
       url: 'https://explorer.mavnode.io/shido',
       tx_page: 'https://explorer.mavnode.io/shido/tx/${txHash}',
       account_page: 'https://explorer.mavnode.io/shido/account/${accountAddress}'
+    },
+    {
+      kind: 'Indonode',
+      url: 'https://explorer.indonode.net/shido',
+      tx_page: 'https://explorer.indonode.net/shido/tx/${txHash}',
+      account_page: 'https://explorer.indonode.net/shido/account/${accountAddress}'
     }
   ],
   images: [{

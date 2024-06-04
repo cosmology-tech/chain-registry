@@ -26,6 +26,8 @@ import * as _sui from './sui';
 import * as _tinkernet from './tinkernet';
 import * as _xrpl from './xrpl';
 import * as _zilliqa from './zilliqa';
+import * as _berachain from './berachain';
+import * as _initia from './initia';
 import * as _mantrachain from './mantrachain';
 import * as _avalanchetestnet from './avalanchetestnet';
 import * as _binancesmartchaintestnet from './binancesmartchaintestnet';
@@ -63,6 +65,8 @@ const assets: AssetList[] = [
   _tinkernet.assets,
   _xrpl.assets,
   _zilliqa.assets,
+  _berachain.assets,
+  _initia.assets,
   _mantrachain.assets,
   _avalanchetestnet.assets,
   _binancesmartchaintestnet.assets,

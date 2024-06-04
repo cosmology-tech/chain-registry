@@ -79,6 +79,10 @@ const info: Chain = {
       {
         address: 'https://seda-rpc.applejuice.256x25.tech:443',
         provider: 'Apple juice 🧃'
+      },
+      {
+        address: 'https://seda-rpc.bluestake.net:443',
+        provider: 'BlueStake 🚀'
       }
     ],
     rest: [
@@ -125,6 +129,10 @@ const info: Chain = {
       {
         address: 'https://seda-api.applejuice.256x25.tech:443',
         provider: 'Apple juice 🧃'
+      },
+      {
+        address: 'https://seda-api.bluestake.net',
+        provider: 'BlueStake 🚀'
       }
     ],
     grpc: [

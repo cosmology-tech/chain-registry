@@ -24,6 +24,8 @@ export * as sui from './sui';
 export * as tinkernet from './tinkernet';
 export * as xrpl from './xrpl';
 export * as zilliqa from './zilliqa';
+export * as berachain from './berachain';
+export * as initia from './initia';
 export * as mantrachain from './mantrachain';
 export * as avalanchetestnet from './avalanchetestnet';
 export * as binancesmartchaintestnet from './binancesmartchaintestnet';

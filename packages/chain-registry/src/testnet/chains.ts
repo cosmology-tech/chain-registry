@@ -53,6 +53,7 @@ import * as _lumenxtestnet from './lumenxtestnet';
 import * as _mantrachaintestnet from './mantrachaintestnet';
 import * as _marstestnet from './marstestnet';
 import * as _migalootestnet from './migalootestnet';
+import * as _neuratestnet from './neuratestnet';
 import * as _neutrontestnet from './neutrontestnet';
 import * as _nibirutestnet from './nibirutestnet';
 import * as _nibirutestnet2 from './nibirutestnet2';
@@ -154,6 +155,7 @@ const chains: Chain[] = [
   _mantrachaintestnet.chain,
   _marstestnet.chain,
   _migalootestnet.chain,
+  _neuratestnet.chain,
   _neutrontestnet.chain,
   _nibirutestnet.chain,
   _nibirutestnet2.chain,

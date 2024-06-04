@@ -27,7 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.5',
+    cosmos_sdk_version: 'v0.47.8',
     cosmwasm_enabled: true,
     cosmwasm_version: 'v0.41.0'
   },

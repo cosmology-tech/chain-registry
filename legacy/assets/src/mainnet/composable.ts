@@ -77,6 +77,52 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Archway network',
+      denom_units: [
+        {
+          denom: 'ibc/F173CEF4C064F20614E24A502212B506B450622F664BB08D26E804DEE10490C9',
+          exponent: 0,
+          aliases: ['aarch']
+        },
+        {
+          denom: 'uarch',
+          exponent: 12
+        },
+        {
+          denom: 'arch',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/F173CEF4C064F20614E24A502212B506B450622F664BB08D26E804DEE10490C9',
+      name: 'Archway',
+      display: 'arch',
+      symbol: 'ARCH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+      },
+      coingecko_id: 'archway',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+        }],
+      socials: {
+        website: 'https://archway.io/',
+        twitter: 'https://twitter.com/archwayHQ'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-145',
+            base_denom: 'aarch',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-73'
+          }
+        }]
+    },
+    {
       description: 'The native token of Axelar',
       denom_units: [{
           denom: 'ibc/DAA33E5758BACBE5F37E6ACC1E32F1C4A721C803BC6A174CB3717B9619DACEEC',
@@ -264,6 +310,52 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-13'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Archway network',
+      denom_units: [
+        {
+          denom: 'ibc/F173CEF4C064F20614E24A502212B506B450622F664BB08D26E804DEE10490C9',
+          exponent: 0,
+          aliases: ['aarch']
+        },
+        {
+          denom: 'uarch',
+          exponent: 12
+        },
+        {
+          denom: 'arch',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/F173CEF4C064F20614E24A502212B506B450622F664BB08D26E804DEE10490C9',
+      name: 'Archway',
+      display: 'arch',
+      symbol: 'ARCH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+      },
+      coingecko_id: 'archway',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+        }],
+      socials: {
+        website: 'https://archway.io/',
+        twitter: 'https://twitter.com/archwayHQ'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-145',
+            base_denom: 'aarch',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-73'
           }
         }]
     },
@@ -1133,6 +1225,42 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-2',
             base_denom: '0x57e114b691db790c35207b2e685d4a43181e6061',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'Ankr is a Web3 decentralized infrastructure provider that helps developers, dapps, and stakers easily interact with multiple blockchains. It allows you to create DApps using API and RPC, staking on Ankr Earn, and use customized blockchain solutions for businesses.',
+      type_asset: 'erc20',
+      address: '0x8290333ceF9e6D528dD5618Fb97a76f268f3EDD4',
+      denom_units: [{
+          denom: 'ibc/E64D52799D200F95FC626C49D03E685CBE99132A0A6949A151D94BA34D56862D',
+          exponent: 0,
+          aliases: ['0x8290333ceF9e6D528dD5618Fb97a76f268f3EDD4']
+        }, {
+          denom: 'ankr',
+          exponent: 18
+        }],
+      base: 'ibc/E64D52799D200F95FC626C49D03E685CBE99132A0A6949A151D94BA34D56862D',
+      name: 'Ankr Network',
+      display: 'ankr',
+      symbol: 'ANKR',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ankr.svg'
+        }],
+      coingecko_id: 'ankr',
+      socials: {
+        website: 'https://www.ankr.com',
+        twitter: 'https://x.com/ankr'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x8290333ceF9e6D528dD5618Fb97a76f268f3EDD4',
             chain_name: 'ethereum'
           },
           chain: {
@@ -3834,6 +3962,42 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-2',
             base_denom: '0x57e114b691db790c35207b2e685d4a43181e6061',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'Ankr is a Web3 decentralized infrastructure provider that helps developers, dapps, and stakers easily interact with multiple blockchains. It allows you to create DApps using API and RPC, staking on Ankr Earn, and use customized blockchain solutions for businesses.',
+      type_asset: 'erc20',
+      address: '0x8290333ceF9e6D528dD5618Fb97a76f268f3EDD4',
+      denom_units: [{
+          denom: 'ibc/E64D52799D200F95FC626C49D03E685CBE99132A0A6949A151D94BA34D56862D',
+          exponent: 0,
+          aliases: ['0x8290333ceF9e6D528dD5618Fb97a76f268f3EDD4']
+        }, {
+          denom: 'ankr',
+          exponent: 18
+        }],
+      base: 'ibc/E64D52799D200F95FC626C49D03E685CBE99132A0A6949A151D94BA34D56862D',
+      name: 'Ankr Network',
+      display: 'ankr',
+      symbol: 'ANKR',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ankr.svg'
+        }],
+      coingecko_id: 'ankr',
+      socials: {
+        website: 'https://www.ankr.com',
+        twitter: 'https://x.com/ankr'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0x8290333ceF9e6D528dD5618Fb97a76f268f3EDD4',
             chain_name: 'ethereum'
           },
           chain: {

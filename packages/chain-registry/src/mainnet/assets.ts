@@ -11,6 +11,7 @@ import * as _archway from './archway';
 import * as _arkh from './arkh';
 import * as _assetmantle from './assetmantle';
 import * as _aura from './aura';
+import * as _aura1 from './aura1';
 import * as _axelar from './axelar';
 import * as _bandchain from './bandchain';
 import * as _beezee from './beezee';
@@ -96,6 +97,7 @@ import * as _migaloo from './migaloo';
 import * as _mises from './mises';
 import * as _mun from './mun';
 import * as _mythos from './mythos';
+import * as _neura from './neura';
 import * as _neutaro from './neutaro';
 import * as _neutron from './neutron';
 import * as _nibiru from './nibiru';
@@ -177,6 +179,7 @@ const assets: AssetList[] = [
   _arkh.assets,
   _assetmantle.assets,
   _aura.assets,
+  _aura1.assets,
   _axelar.assets,
   _bandchain.assets,
   _beezee.assets,
@@ -262,6 +265,7 @@ const assets: AssetList[] = [
   _mises.assets,
   _mun.assets,
   _mythos.assets,
+  _neura.assets,
   _neutaro.assets,
   _neutron.assets,
   _nibiru.assets,

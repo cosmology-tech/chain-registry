@@ -53,18 +53,6 @@ const info: Chain = {
       {
         address: 'https://titan-rpc-hongkong.titanlab.io:443',
         provider: 'Titanlab.io'
-      },
-      {
-        address: 'https://titan-rpc-1.titanlab.io:443',
-        provider: 'Titanlab.io'
-      },
-      {
-        address: 'https://titan-rpc-2.titanlab.io:443',
-        provider: 'Titanlab.io'
-      },
-      {
-        address: 'https://titan-rpc-full-1.titanlab.io:443',
-        provider: 'Titanlab.io'
       }
     ],
     rest: [

@@ -13,6 +13,7 @@ import * as _archway from './archway';
 import * as _arkh from './arkh';
 import * as _assetmantle from './assetmantle';
 import * as _aura from './aura';
+import * as _aura1 from './aura1';
 import * as _axelar from './axelar';
 import * as _bandchain from './bandchain';
 import * as _beezee from './beezee';
@@ -98,6 +99,7 @@ import * as _migaloo from './migaloo';
 import * as _mises from './mises';
 import * as _mun from './mun';
 import * as _mythos from './mythos';
+import * as _neura from './neura';
 import * as _neutaro from './neutaro';
 import * as _neutron from './neutron';
 import * as _nibiru from './nibiru';
@@ -182,6 +184,7 @@ const chains: Chain[] = [
   _arkh.chain,
   _assetmantle.chain,
   _aura.chain,
+  _aura1.chain,
   _axelar.chain,
   _bandchain.chain,
   _beezee.chain,
@@ -267,6 +270,7 @@ const chains: Chain[] = [
   _mises.chain,
   _mun.chain,
   _mythos.chain,
+  _neura.chain,
   _neutaro.chain,
   _neutron.chain,
   _nibiru.chain,
