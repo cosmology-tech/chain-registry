@@ -2,11 +2,13 @@ import { join, resolve } from 'path';
 
 import { Registry } from '../src/registry';
 
-export const getRegistry = () => {
+export type RegistryType = 'original' | 'minimal' | 'full'
+
+export const getRegistry = (registryType: RegistryType = 'original') => {
   const registry = new Registry(
-    join(__dirname, '/../../../packages/chain-registry/chain-registry-fixtures')
+    join(__dirname, `/../../../repos/fixtures/registries/${registryType}`)
   );
   return registry;
 };
 
-export const fixtureOutputDir = resolve(__dirname +'/../../../__output__/');
+export const fixtureOutputDir = resolve(__dirname + '/../../../__output__/');

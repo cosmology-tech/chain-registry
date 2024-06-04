@@ -2,10 +2,10 @@
 
 exports[`registry 1`] = `
 {
-  "assetLists": 292,
-  "chains": 265,
-  "ibcData": 616,
-  "memoKeys": 1,
-  "versions": 2,
+  "assetLists": 307,
+  "chains": 274,
+  "ibcData": 638,
+  "memoKeys": 0,
+  "versions": 0,
 }
 `;

@@ -169,7 +169,7 @@ A Client for `chain-registry` that allows you to dynamically fetch data.
 
 Types for `chain-registry`.
 
-#### [@chain-registry/keplr](packages/keplr)
+#### [@chain-registry/keplr](legacy/keplr)
 
 Keplr integration for the chain-registry returning keplr's `ChainInfo` type from `@chain-registry/types` `Chain` type.
 
@@ -241,7 +241,7 @@ Use the following Makefile commands to update the data in the submodules. These 
 make update-cosmos
 ```
 
-- **update-fixtures**: Updates the submodule to the latest commits of the `cosmology-tech/chain-registry-fixtures` repository. Use this for testing purposes to ensure that your tests are running against stable, controlled data sets.
+- **update-fixtures**: Updates the submodule to the latest commits of the `chain-registry/fixtures` repository. Use this for testing purposes to ensure that your tests are running against stable, controlled data sets.
 
 ```
 make update-fixtures

@@ -187,7 +187,7 @@ await registry.fetchUrls();
 
 #### Fetching Schemata
 
-We currently only support fetching JSON schemas as defined in https://github.com/cosmos/chain-registry. Supported are `assetlist.schema.json`, `chain.schema.json` and `ibc_data.schema.json`.
+We currently only support fetching JSON schemas as defined in https://github.com/chain-registry/chain-registry/tree/main/registries/minimal. Supported are `assetlist.schema.json`, `chain.schema.json` and `ibc_data.schema.json`.
 
 #### fetchUrls
 
