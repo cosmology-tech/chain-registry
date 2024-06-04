@@ -1,11 +1,11 @@
-import { AssetList } from '@chain-registry/interfaces';
+import { AssetList, Chain } from '@chain-registry/interfaces';
 import { writeFileSync } from 'fs';
 import { mkdirpSync as mkdirp } from 'mkdirp';
 import { dirname, join } from 'path';
 import { JSONStringifyOptions } from 'strfy-js';
 import { jsStringify } from 'strfy-js';
 
-import { JSONSchemaContent, Registry } from './registry';
+import { ChainFilterOptions, JSONSchemaContent, Registry } from './registry';
 
 export interface TSBuilderOptions {
   assetList: JSONStringifyOptions;
@@ -22,7 +22,16 @@ export class TSBuilder {
     this.options = options;
   }
 
-  build(outDir: string) {
+  build(outDir: string, filterOpts: ChainFilterOptions) {
+
+    // chainNames
+    // denoms
+    // assetType
+
+    // filterOpts.networkScope === 'all'
+    // filterOpts.networkScope === 'cosmos'
+    // filterOpts.networkScope === 'non-cosmos'
+
     this.registry.dataMappings.AssetList.forEach((info: JSONSchemaContent<AssetList>) => {
       //
       console.log(info);

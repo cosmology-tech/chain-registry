@@ -50,6 +50,16 @@ export interface SchemaMapping {
   Versions: JSONSchemaContent<JSONSchema>;
 }
 
+export interface ChainFilterOptions {
+  networkTypes?: string[];
+  networkScope?: 'cosmos' | 'non-cosmos' | 'all';
+  // filterFields in in the case where we have a derivative registry
+  filterFields?: {
+    chain_name?: string;
+    network_type?: string;
+  }
+}
+
 export class Registry {
   private definitions: JSONSchemaContent<JSONSchema>[];
   public basePath: string;
@@ -187,6 +197,51 @@ export class Registry {
     }).filter(Boolean)
       .forEach(mapper as any);
   }
+
+  public parseFilterOpts(options: ChainFilterOptions = {}): ChainFilterOptions {
+    const { 
+      networkTypes = ['devnet', 'mainnet', 'testnet'], 
+      networkScope = 'all',
+      filterFields = { }
+    } = options;
+    
+    if (!filterFields.chain_name) filterFields.chain_name = 'chain_name';
+    if (!filterFields.network_type) filterFields.network_type = 'network_type';
+
+    return {
+      networkTypes,
+      networkScope,
+      filterFields
+    };
+  }
+
+  public getChains(options: ChainFilterOptions = {}): JSONSchemaContent<Chain>[] {
+    const opts = this.parseFilterOpts(options);
+
+    return this.dataMappings['Chain']
+      .filter(chain => 
+        // Filter by network type if specified
+        opts.networkTypes.includes(chain.content[opts.filterFields.network_type as 'network_type']) &&
+        // Filter by cosmos scope
+        (
+          opts.networkScope === 'all' || 
+          (opts.networkScope === 'cosmos' && !chain.path.includes('_non-cosmos')) ||
+          (opts.networkScope === 'non-cosmos' && chain.path.includes('_non-cosmos'))
+        )
+      );
+  }
+
+  public getAssetLists(options: ChainFilterOptions = {}): JSONSchemaContent<AssetList>[] {
+    const opts = this.parseFilterOpts(options);
+    // First, use the getChains method to fetch chains based on the provided options
+    const relevantChains = this.getChains(opts)
+      .map(chain => chain.content[opts.filterFields.chain_name as 'chain_name']); // Extract chain names from the filtered chains
+
+    // Now, filter AssetLists where the chain_name matches any of the relevant chain names
+    return this.dataMappings['AssetList']
+      .filter(assetList => relevantChains.includes(assetList.content[opts.filterFields.chain_name as 'chain_name']));
+  }
+
 
   public get chains(): Chain[] {
     return this.dataMappings.Chain.map(c => c.content);
