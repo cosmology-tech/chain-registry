@@ -1,16 +1,15 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
-  chain_name: 'aura',
-  status: 'live',
+  chain_name: 'aura1',
+  status: 'killed',
   network_type: 'mainnet',
   website: 'https://aura.network/',
   pretty_name: 'Aura Network',
-  chain_id: 'aura_6322-2',
+  chain_id: 'xstaxy-1',
   bech32_prefix: 'aura',
   daemon_name: 'aurad',
   node_home: '$HOME/.aura',
-  pre_fork_chain_name: 'aura1',
   key_algos: ['secp256k1'],
   slip44: 118,
   fees: {
@@ -31,13 +30,9 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'evmos/cosmos-sdk v0.47.8-evmos',
+    cosmos_sdk_version: '0.47.5',
     cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.42.0'
-  },
-  logo_URIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.png',
-    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.svg'
+    cosmwasm_version: '0.42.0'
   },
   apis: {
     rpc: [
@@ -255,8 +250,8 @@ const info: Chain = {
     {
       kind: 'aurascan',
       url: 'https://aurascan.io',
-      tx_page: 'https://aurascan.io/tx/${txHash}',
-      account_page: 'https://aurascan.io/address/${accountAddress}'
+      tx_page: 'https://aurascan.io/transaction/${txHash}',
+      account_page: 'https://aurascan.io/account/${accountAddress}'
     },
     {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀 Explorer',
@@ -302,6 +297,9 @@ const info: Chain = {
     }
   ],
   images: [{
+      image_sync: {
+        chain_name: 'aura'
+      },
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.svg'
     }]

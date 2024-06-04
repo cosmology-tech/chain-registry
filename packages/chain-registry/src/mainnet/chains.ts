@@ -13,6 +13,7 @@ import * as _archway from './archway';
 import * as _arkh from './arkh';
 import * as _assetmantle from './assetmantle';
 import * as _aura from './aura';
+import * as _aura1 from './aura1';
 import * as _axelar from './axelar';
 import * as _bandchain from './bandchain';
 import * as _beezee from './beezee';
@@ -183,6 +184,7 @@ const chains: Chain[] = [
   _arkh.chain,
   _assetmantle.chain,
   _aura.chain,
+  _aura1.chain,
   _axelar.chain,
   _bandchain.chain,
   _beezee.chain,

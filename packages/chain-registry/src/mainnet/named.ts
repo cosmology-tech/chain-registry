@@ -11,6 +11,7 @@ export * as archway from './archway';
 export * as arkh from './arkh';
 export * as assetmantle from './assetmantle';
 export * as aura from './aura';
+export * as aura1 from './aura1';
 export * as axelar from './axelar';
 export * as bandchain from './bandchain';
 export * as beezee from './beezee';
