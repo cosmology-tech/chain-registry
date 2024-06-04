@@ -82,6 +82,10 @@ exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
           "provider": "Osmosis Foundation",
         },
         {
+          "address": "https://rest.osmosis.goldenratiostaking.net",
+          "provider": "Golden Ratio Staking",
+        },
+        {
           "address": "https://osmosis-lcd.quickapi.com:443",
           "provider": "Chainlayer",
         },
@@ -284,6 +288,10 @@ exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
           "provider": "Kewr Node",
         },
         {
+          "address": "https://rpc.osmosis.goldenratiostaking.net",
+          "provider": "Golden Ratio Staking",
+        },
+        {
           "address": "https://osmosis-rpc.noders.services",
           "provider": "[NODERS]TEAM",
         },
@@ -294,18 +302,17 @@ exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
     "chain_name": "osmosis",
     "codebase": {
       "binaries": {
-        "linux/amd64": "https://github.com/osmosis-labs/osmosis/releases/download/v24.0.1/osmosisd-24.0.1-linux-amd64",
-        "linux/arm64": "https://github.com/osmosis-labs/osmosis/releases/download/v24.0.1/osmosisd-24.0.1-linux-arm64",
+        "linux/amd64": "https://github.com/osmosis-labs/osmosis/releases/download/v25.0.0/osmosisd-25.0.0-linux-amd64",
+        "linux/arm64": "https://github.com/osmosis-labs/osmosis/releases/download/v25.0.0/osmosisd-25.0.0-linux-arm64",
       },
       "compatible_versions": [
-        "v24.0.1",
-        "v24.0.0",
+        "v25.0.0",
       ],
       "consensus": {
         "type": "cometbft",
-        "version": "osmosis-labs/cometbft v0.37.4-v24-osmo-2",
+        "version": "osmosis-labs/cometbft v0.37.4-v25-osmo-2",
       },
-      "cosmos_sdk_version": "osmosis-labs/cosmos-sdk v0.47.5-v24-osmo-5",
+      "cosmos_sdk_version": "osmosis-labs/cosmos-sdk v0.47.5-v25-osmo-1",
       "cosmwasm_enabled": true,
       "cosmwasm_version": "osmosis-labs/wasmd v0.45.0-osmo",
       "genesis": {
@@ -313,12 +320,12 @@ exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
         "name": "v3",
       },
       "git_repo": "https://github.com/osmosis-labs/osmosis",
-      "go_version": "1.21",
+      "go_version": "1.21.4",
       "ibc_go_version": "v7.4.0",
       "ics_enabled": [
         "ics20-1",
       ],
-      "recommended_version": "v24.0.1",
+      "recommended_version": "v25.0.0",
     },
     "daemon_name": "osmosisd",
     "description": "Osmosis (OSMO) is the premier DEX and cross-chain DeFi hub within the Cosmos ecosystem, a network of over 50 sovereign, interoperable blockchains seamlessly connected through the Inter-Blockchain Communication Protocol (IBC). Pioneering in its approach, Osmosis offers a dynamic trading and liquidity provision experience, integrating non-IBC assets from other ecosystems, including Ethereum, Solana, Avalanche, and Polkadot. Initially adopting Balancer-style pools, Osmosis now also features a concentrated liquidity model that is orders of magnitude more capital efficient, meaning that significantly less liquidity is required to handle the same amount of trading volume with minimal slippage.
@@ -381,6 +388,12 @@ Osmosis is bringing the full centralized exchange experience to the decentralize
         "kind": "Chainscope",
         "tx_page": "https://chainsco.pe/osmosis/tx/\${txHash}",
         "url": "https://chainsco.pe/osmosis",
+      },
+      {
+        "account_page": "https://mainnet.whispernode.com/osmosis/account/\${accountAddress}",
+        "kind": "WhisperNode 🤐",
+        "tx_page": "https://mainnet.whispernode.com/osmosis/tx/\${txHash}",
+        "url": "https://mainnet.whispernode.com/osmosis",
       },
     ],
     "fees": {
@@ -542,7 +555,7 @@ Osmosis is bringing the full centralized exchange experience to the decentralize
     "website": "https://osmosis.zone/",
   },
   "command": "chain",
-  "registryDir": "../../packages/chain-registry/chain-registry-fixtures",
+  "registryDir": "../../repos/fixtures/registries/original",
   "tty": true,
 }
 `;

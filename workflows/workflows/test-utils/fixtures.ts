@@ -2,9 +2,11 @@ import { join, resolve } from 'path';
 
 import { Registry } from '../src/registry';
 
-export const getRegistry = () => {
+export type RegistryType = 'original' | 'minimal' | 'full'
+
+export const getRegistry = (registryType: RegistryType = 'original') => {
   const registry = new Registry(
-    join(__dirname, '/../../../repos/fixtures')
+    join(__dirname, `/../../../repos/fixtures/registries/${registryType}`)
   );
   return registry;
 };

@@ -241,7 +241,7 @@ Use the following Makefile commands to update the data in the submodules. These 
 make update-cosmos
 ```
 
-- **update-fixtures**: Updates the submodule to the latest commits of the `cosmology-tech/chain-registry-fixtures` repository. Use this for testing purposes to ensure that your tests are running against stable, controlled data sets.
+- **update-fixtures**: Updates the submodule to the latest commits of the `chain-registry/fixtures` repository. Use this for testing purposes to ensure that your tests are running against stable, controlled data sets.
 
 ```
 make update-fixtures
