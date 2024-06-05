@@ -14,7 +14,10 @@ const info: Chain = {
   slip44: 118,
   fees: {
     fee_tokens: [{
-        denom: 'uandr'
+        denom: 'uandr',
+        low_gas_price: 0.03,
+        average_gas_price: 0.05,
+        high_gas_price: 0.075
       }]
   },
   staking: {

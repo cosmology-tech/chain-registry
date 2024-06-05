@@ -28,9 +28,6 @@ const info: Chain = {
   codebase: {
     cosmos_sdk_version: 'onomyprotocol/onomy-sdk v0.45.16-onomy-dev'
   },
-  logo_URIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png'
-  },
   apis: {
     rpc: [{
         address: 'https://rpc-mainnet.onomy.io',
@@ -68,7 +65,8 @@ const info: Chain = {
     'rwa'
   ],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onomy/images/nom.svg'
     }]
 };
 export default info;

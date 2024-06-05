@@ -524,6 +524,27 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/NBZ.png'
       }
+    },
+    {
+      description: 'Talis revenue sharing token',
+      denom_units: [{
+          denom: 'factory/inj1maeyvxfamtn8lfyxpjca8kuvauuf2qeu6gtxm3/xTalis',
+          exponent: 0
+        }, {
+          denom: 'xTalis',
+          exponent: 6
+        }],
+      base: 'factory/inj1maeyvxfamtn8lfyxpjca8kuvauuf2qeu6gtxm3/xTalis',
+      name: 'xTalis Token',
+      display: 'xTalis',
+      symbol: 'XTALIS',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/xtalis.png'
+        }],
+      socials: {
+        website: 'https://talis.art/',
+        twitter: 'https://twitter.com/ProtocolTalis'
+      }
     }
   ]
 };

@@ -58,10 +58,6 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://migaloo.rpc.kjnodes.com',
-        provider: 'kjnodes'
-      },
-      {
         address: 'https://migaloo-rpc.cosmosrescue.com',
         provider: 'cosmosrescue'
       },
@@ -92,10 +88,6 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://migaloo.api.kjnodes.com',
-        provider: 'kjnodes'
-      },
-      {
         address: 'https://migaloo-api.cosmosrescue.com',
         provider: 'cosmosrescue'
       },
@@ -124,10 +116,6 @@ const info: Chain = {
       {
         address: 'https://grpc.whitewhale.nodestake.top',
         provider: 'NodeStake'
-      },
-      {
-        address: 'migaloo.grpc.kjnodes.com:14990',
-        provider: 'kjnodes'
       },
       {
         address: 'migaloo-grpc.cosmosrescue.com:9090',

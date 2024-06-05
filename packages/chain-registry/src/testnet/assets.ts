@@ -9,6 +9,7 @@ import * as _axelartestnet from './axelartestnet';
 import * as _babylontestnet from './babylontestnet';
 import * as _babylontestnet1 from './babylontestnet1';
 import * as _bitcannadevnet from './bitcannadevnet';
+import * as _blockxtestnet from './blockxtestnet';
 import * as _cascadiatestnet from './cascadiatestnet';
 import * as _celestiatestnet from './celestiatestnet';
 import * as _celestiatestnet3 from './celestiatestnet3';
@@ -111,6 +112,7 @@ const assets: AssetList[] = [
   _babylontestnet.assets,
   _babylontestnet1.assets,
   _bitcannadevnet.assets,
+  _blockxtestnet.assets,
   _cascadiatestnet.assets,
   _celestiatestnet.assets,
   _celestiatestnet3.assets,

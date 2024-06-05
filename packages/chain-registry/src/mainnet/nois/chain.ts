@@ -101,10 +101,6 @@ const info: Chain = {
         provider: 'kingnodes 👑'
       },
       {
-        address: 'https://nois.rpc.kjnodes.com',
-        provider: 'kjnodes'
-      },
-      {
         address: 'https://rpc.nois.silentvalidator.com',
         provider: 'silent'
       },
@@ -175,10 +171,6 @@ const info: Chain = {
         provider: 'kingnodes 👑'
       },
       {
-        address: 'nois.grpc.kjnodes.com:15190',
-        provider: 'kjnodes'
-      },
-      {
         address: 'grpc.nois.silentvalidator.com:443',
         provider: 'silent'
       },
@@ -231,10 +223,6 @@ const info: Chain = {
       {
         address: 'https://nois-rest.kingnodes.com',
         provider: 'kingnodes 👑'
-      },
-      {
-        address: 'https://nois.api.kjnodes.com',
-        provider: 'kjnodes'
       },
       {
         address: 'https://api.nois.silentvalidator.com',

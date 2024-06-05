@@ -2289,6 +2289,41 @@ const assets: AssetList = {
         }]
     },
     {
+      address: 'ATeTQcUkWGs7AZ15mCiFUWCW9EUL7KpDZEHCN1Y8pump',
+      base: 'ibc/9D5DA3720001F91DD76B8F609A93F96688EC8185B54BF9A1A1450EB34FF2D912',
+      description: 'Whinecoin is an experimental memecoin by the Sommelier Finance team.',
+      name: 'WHINEcoin',
+      display: 'whine',
+      symbol: 'WHINE',
+      type_asset: 'erc20',
+      denom_units: [{
+          denom: 'ibc/9D5DA3720001F91DD76B8F609A93F96688EC8185B54BF9A1A1450EB34FF2D912',
+          exponent: 0,
+          aliases: ['ATeTQcUkWGs7AZ15mCiFUWCW9EUL7KpDZEHCN1Y8pump']
+        }, {
+          denom: 'whine',
+          exponent: 6
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/whine.png'
+        }],
+      socials: {
+        website: 'https://whinecoin.com/',
+        twitter: 'https://twitter.com/whinecoin'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'ATeTQcUkWGs7AZ15mCiFUWCW9EUL7KpDZEHCN1Y8pump',
+            chain_name: 'solana'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }]
+    },
+    {
       description: 'The native token of Stargaze',
       denom_units: [{
           denom: 'ibc/7078D8FA8BCB50A1E7855458F1E9898A3FDA0093B703DA3B3108DD35ED99E048',
@@ -4249,6 +4284,41 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-1',
             base_denom: 'EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm',
+            chain_name: 'solana'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }]
+    },
+    {
+      address: 'ATeTQcUkWGs7AZ15mCiFUWCW9EUL7KpDZEHCN1Y8pump',
+      base: 'ibc/9D5DA3720001F91DD76B8F609A93F96688EC8185B54BF9A1A1450EB34FF2D912',
+      description: 'Whinecoin is an experimental memecoin by the Sommelier Finance team.',
+      name: 'WHINEcoin',
+      display: 'whine',
+      symbol: 'WHINE',
+      type_asset: 'erc20',
+      denom_units: [{
+          denom: 'ibc/9D5DA3720001F91DD76B8F609A93F96688EC8185B54BF9A1A1450EB34FF2D912',
+          exponent: 0,
+          aliases: ['ATeTQcUkWGs7AZ15mCiFUWCW9EUL7KpDZEHCN1Y8pump']
+        }, {
+          denom: 'whine',
+          exponent: 6
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/whine.png'
+        }],
+      socials: {
+        website: 'https://whinecoin.com/',
+        twitter: 'https://twitter.com/whinecoin'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'ATeTQcUkWGs7AZ15mCiFUWCW9EUL7KpDZEHCN1Y8pump',
             chain_name: 'solana'
           },
           chain: {
