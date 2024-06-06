@@ -83,6 +83,7 @@ import * as _selfchaindevnet from './selfchaindevnet';
 import * as _sgetestnet from './sgetestnet';
 import * as _sgetestnet4 from './sgetestnet4';
 import * as _sixtestnet from './sixtestnet';
+import * as _soarchaintestnet from './soarchaintestnet';
 import * as _sourcetestnet from './sourcetestnet';
 import * as _stargazetestnet from './stargazetestnet';
 import * as _statesettestnet from './statesettestnet';
@@ -186,6 +187,7 @@ const assets: AssetList[] = [
   _sgetestnet.assets,
   _sgetestnet4.assets,
   _sixtestnet.assets,
+  _soarchaintestnet.assets,
   _sourcetestnet.assets,
   _stargazetestnet.assets,
   _statesettestnet.assets,

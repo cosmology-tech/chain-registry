@@ -48,7 +48,7 @@ const info: Chain = {
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       },
       {
-        address: 'https://shido-rpc.applejuice.256x25.tech:443',
+        address: 'https://s2.shido-rpc.applejuice.256x25.tech:443',
         provider: 'Apple juice 🧃'
       },
       {
@@ -66,7 +66,7 @@ const info: Chain = {
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       },
       {
-        address: 'https://shido-api.applejuice.256x25.tech:443',
+        address: 'https://s2.shido-api.applejuice.256x25.tech:443',
         provider: 'Apple juice 🧃'
       },
       {
@@ -74,13 +74,20 @@ const info: Chain = {
         provider: 'Indonode'
       }
     ],
-    grpc: [{
+    grpc: [
+      {
         address: 'https://grpc.shidoscan.com',
         provider: 'shido.io'
-      }, {
+      },
+      {
         address: 'https://grpc-web.shidoscan.com',
         provider: 'shido.io'
-      }],
+      },
+      {
+        address: 'https://s2.shido-grpc.applejuice.256x25.tech',
+        provider: 'Apple juice 🧃'
+      }
+    ],
     "evm-http-jsonrpc": [
       {
         address: 'https://rpc-nodes.shidoscan.com',
@@ -95,7 +102,7 @@ const info: Chain = {
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       },
       {
-        address: 'https://shido-evm.applejuice.256x25.tech:443',
+        address: 'https://s2.shido-evm.applejuice.256x25.tech:443',
         provider: 'Apple juice 🧃'
       }
     ]

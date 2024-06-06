@@ -80,7 +80,7 @@ const assets: AssetList = {
       description: 'The native token of Archway network',
       denom_units: [
         {
-          denom: 'ibc/F173CEF4C064F20614E24A502212B506B450622F664BB08D26E804DEE10490C9',
+          denom: 'ibc/9E3125737681BAD7BCB7AD87E845B1D277CF6E25555DAE2B6604C9BBCAB2C9C4',
           exponent: 0,
           aliases: ['aarch']
         },
@@ -93,7 +93,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/F173CEF4C064F20614E24A502212B506B450622F664BB08D26E804DEE10490C9',
+      base: 'ibc/9E3125737681BAD7BCB7AD87E845B1D277CF6E25555DAE2B6604C9BBCAB2C9C4',
       name: 'Archway',
       display: 'arch',
       symbol: 'ARCH',
@@ -113,12 +113,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-145',
+            channel_id: 'channel-108',
             base_denom: 'aarch',
             chain_name: 'archway'
           },
           chain: {
-            channel_id: 'channel-73'
+            channel_id: 'channel-50'
           }
         }]
     },
@@ -317,7 +317,7 @@ const assets: AssetList = {
       description: 'The native token of Archway network',
       denom_units: [
         {
-          denom: 'ibc/F173CEF4C064F20614E24A502212B506B450622F664BB08D26E804DEE10490C9',
+          denom: 'ibc/9E3125737681BAD7BCB7AD87E845B1D277CF6E25555DAE2B6604C9BBCAB2C9C4',
           exponent: 0,
           aliases: ['aarch']
         },
@@ -330,7 +330,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/F173CEF4C064F20614E24A502212B506B450622F664BB08D26E804DEE10490C9',
+      base: 'ibc/9E3125737681BAD7BCB7AD87E845B1D277CF6E25555DAE2B6604C9BBCAB2C9C4',
       name: 'Archway',
       display: 'arch',
       symbol: 'ARCH',
@@ -350,12 +350,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-145',
+            channel_id: 'channel-108',
             base_denom: 'aarch',
             chain_name: 'archway'
           },
           chain: {
-            channel_id: 'channel-73'
+            channel_id: 'channel-50'
           }
         }]
     },
@@ -1107,12 +1107,14 @@ const assets: AssetList = {
       display: 'PUNDIX',
       symbol: 'PUNDIX',
       coingecko_id: 'pundi-x-2',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pundix.png'
-      },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pundix.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.svg'
         }],
+      socials: {
+        website: 'https://pundix.com',
+        twitter: 'https://x.com/PundiXLabs'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3879,12 +3881,14 @@ const assets: AssetList = {
       display: 'PUNDIX',
       symbol: 'PUNDIX',
       coingecko_id: 'pundi-x-2',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pundix.png'
-      },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pundix.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.svg'
         }],
+      socials: {
+        website: 'https://pundix.com',
+        twitter: 'https://x.com/PundiXLabs'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {

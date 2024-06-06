@@ -1929,47 +1929,15 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.svg'
         }],
+      socials: {
+        website: 'https://functionx.io',
+        twitter: 'https://x.com/functionx_io'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
             channel_id: 'channel-10',
             base_denom: 'FX',
-            chain_name: 'fxcore'
-          },
-          chain: {
-            channel_id: 'channel-585'
-          }
-        }]
-    },
-    {
-      description: 'The cross chain token of the Function X',
-      denom_units: [{
-          denom: 'ibc/BBF433E6DDA629CB84BF52C6190251D34D2DC2077DE1E5990D8258CE8E6FA9B8',
-          exponent: 0,
-          aliases: ['eth0x0FD10b9899882a6f2fcb5c371E17e70FdEe00C38']
-        }, {
-          denom: 'PUNDIX',
-          exponent: 18,
-          aliases: []
-        }],
-      base: 'ibc/BBF433E6DDA629CB84BF52C6190251D34D2DC2077DE1E5990D8258CE8E6FA9B8',
-      display: 'PUNDIX',
-      name: 'Pundi X Token',
-      symbol: 'PUNDIX',
-      coingecko_id: 'pundi-x-2',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.svg'
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-10',
-            base_denom: 'eth0x0FD10b9899882a6f2fcb5c371E17e70FdEe00C38',
             chain_name: 'fxcore'
           },
           chain: {
@@ -4523,47 +4491,15 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.svg'
         }],
+      socials: {
+        website: 'https://functionx.io',
+        twitter: 'https://x.com/functionx_io'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
             channel_id: 'channel-10',
             base_denom: 'FX',
-            chain_name: 'fxcore'
-          },
-          chain: {
-            channel_id: 'channel-585'
-          }
-        }]
-    },
-    {
-      description: 'The cross chain token of the Function X',
-      denom_units: [{
-          denom: 'ibc/BBF433E6DDA629CB84BF52C6190251D34D2DC2077DE1E5990D8258CE8E6FA9B8',
-          exponent: 0,
-          aliases: ['eth0x0FD10b9899882a6f2fcb5c371E17e70FdEe00C38']
-        }, {
-          denom: 'PUNDIX',
-          exponent: 18,
-          aliases: []
-        }],
-      base: 'ibc/BBF433E6DDA629CB84BF52C6190251D34D2DC2077DE1E5990D8258CE8E6FA9B8',
-      display: 'PUNDIX',
-      name: 'Pundi X Token',
-      symbol: 'PUNDIX',
-      coingecko_id: 'pundi-x-2',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.svg'
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-10',
-            base_denom: 'eth0x0FD10b9899882a6f2fcb5c371E17e70FdEe00C38',
             chain_name: 'fxcore'
           },
           chain: {

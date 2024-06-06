@@ -122,6 +122,20 @@ const info: Chain = {
         address: 'sei-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
       }
+    ],
+    "evm-http-jsonrpc": [
+      {
+        address: 'https://evm-rpc.sei-apis.com',
+        provider: 'Rhino'
+      },
+      {
+        address: 'https://seievm-rpc.polkachu.com',
+        provider: 'Polkachu'
+      },
+      {
+        address: 'https://sei-jsonrpc.lavenderfive.com',
+        provider: 'Lavender.Five Nodes'
+      }
     ]
   },
   explorers: [
