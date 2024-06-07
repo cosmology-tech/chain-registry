@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.44.3 (2024-06-07)
+
+**Note:** Version bump only for package @chain-registry/types
+
+
+
+
+
 ## 0.44.2 (2024-06-06)
 
 **Note:** Version bump only for package @chain-registry/types
