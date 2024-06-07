@@ -13,13 +13,13 @@ const info: Chain = {
   slip44: 60,
   fees: {
     fee_tokens: [{
-        denom: 'uswtr',
+        denom: 'aswtr',
         fixed_min_gas_price: 7
       }]
   },
   staking: {
     staking_tokens: [{
-        denom: 'uswtr'
+        denom: 'aswtr'
       }]
   },
   codebase: {

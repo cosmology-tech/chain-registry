@@ -14962,11 +14962,9 @@ const info: AssetList = {
       name: 'Shitmos',
       display: 'SHITMOS',
       symbol: 'SHITMOS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/SHITMOS.png'
-      },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/SHITMOS.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.svg'
         }]
     },
     {

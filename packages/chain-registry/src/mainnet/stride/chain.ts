@@ -17,9 +17,9 @@ const info: Chain = {
       {
         denom: 'ustrd',
         fixed_min_gas_price: 0.0005,
-        low_gas_price: 0.0005,
-        average_gas_price: 0.001,
-        high_gas_price: 0.002
+        low_gas_price: 0.005,
+        average_gas_price: 0.005,
+        high_gas_price: 0.05
       },
       {
         denom: 'stuatom',

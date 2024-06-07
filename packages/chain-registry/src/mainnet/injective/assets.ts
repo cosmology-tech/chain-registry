@@ -526,6 +526,27 @@ const info: AssetList = {
       }
     },
     {
+      description: 'Talis governance token',
+      denom_units: [{
+          denom: 'factory/inj1maeyvxfamtn8lfyxpjca8kuvauuf2qeu6gtxm3/Talis',
+          exponent: 0
+        }, {
+          denom: 'Talis',
+          exponent: 6
+        }],
+      base: 'factory/inj1maeyvxfamtn8lfyxpjca8kuvauuf2qeu6gtxm3/Talis',
+      name: 'Talis Token',
+      display: 'Talis',
+      symbol: 'TALIS',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/talis.png'
+        }],
+      socials: {
+        website: 'https://talis.art/',
+        twitter: 'https://twitter.com/ProtocolTalis'
+      }
+    },
+    {
       description: 'Talis revenue sharing token',
       denom_units: [{
           denom: 'factory/inj1maeyvxfamtn8lfyxpjca8kuvauuf2qeu6gtxm3/xTalis',

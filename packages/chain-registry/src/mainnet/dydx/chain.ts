@@ -33,7 +33,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'dydxprotocol/cosmos-sdk v0.50.5-0.20240220212824-35f31482370c'
+    cosmos_sdk_version: 'dydxprotocol/cosmos-sdk v0.50.6-0.20240517185527-7330926cd9ad'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',

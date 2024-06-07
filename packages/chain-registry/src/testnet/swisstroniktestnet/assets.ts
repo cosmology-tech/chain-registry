@@ -5,13 +5,13 @@ const info: AssetList = {
   assets: [{
       description: 'The native currency of Swisstronik.',
       denom_units: [{
-          denom: 'uswtr',
+          denom: 'aswtr',
           exponent: 0
         }, {
           denom: 'swtr',
           exponent: 18
         }],
-      base: 'uswtr',
+      base: 'aswtr',
       name: 'Swisstronik Testnet',
       display: 'swtr',
       symbol: 'SWTR',
