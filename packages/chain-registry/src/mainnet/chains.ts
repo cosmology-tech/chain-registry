@@ -76,6 +76,7 @@ import * as _imversed from './imversed';
 import * as _injective from './injective';
 import * as _irisnet from './irisnet';
 import * as _jackal from './jackal';
+import * as _joltify from './joltify';
 import * as _juno from './juno';
 import * as _kava from './kava';
 import * as _kichain from './kichain';
@@ -247,6 +248,7 @@ const chains: Chain[] = [
   _injective.chain,
   _irisnet.chain,
   _jackal.chain,
+  _joltify.chain,
   _juno.chain,
   _kava.chain,
   _kichain.chain,

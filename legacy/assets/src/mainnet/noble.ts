@@ -907,6 +907,41 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native staking and governance token of Joltify',
+      denom_units: [{
+          denom: 'ibc/65EA348F02942489EDA268CF050DBD03F1842C97C60DB2F598F54CAAFC90FF0F',
+          exponent: 0,
+          aliases: ['ujolt']
+        }, {
+          denom: 'jolt',
+          exponent: 6
+        }],
+      base: 'ibc/65EA348F02942489EDA268CF050DBD03F1842C97C60DB2F598F54CAAFC90FF0F',
+      name: 'Joltify',
+      display: 'jolt',
+      symbol: 'JOLT',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/joltify/images/jolt.png'
+        }],
+      coingecko_id: 'joltify',
+      keywords: ['staking'],
+      socials: {
+        website: 'https://www.joltify.io/',
+        twitter: 'https://twitter.com/joltify_finance'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'ujolt',
+            chain_name: 'joltify'
+          },
+          chain: {
+            channel_id: 'channel-81'
+          }
+        }]
+    },
+    {
       description: 'The native token of JUNO Chain',
       denom_units: [{
           denom: 'ibc/C814F0B662234E24248AE3B2FE2C1B54BBAF12934B757F6E7BC5AEC119963895',
@@ -2159,6 +2194,41 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-31'
+          }
+        }]
+    },
+    {
+      description: 'The native staking and governance token of Joltify',
+      denom_units: [{
+          denom: 'ibc/65EA348F02942489EDA268CF050DBD03F1842C97C60DB2F598F54CAAFC90FF0F',
+          exponent: 0,
+          aliases: ['ujolt']
+        }, {
+          denom: 'jolt',
+          exponent: 6
+        }],
+      base: 'ibc/65EA348F02942489EDA268CF050DBD03F1842C97C60DB2F598F54CAAFC90FF0F',
+      name: 'Joltify',
+      display: 'jolt',
+      symbol: 'JOLT',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/joltify/images/jolt.png'
+        }],
+      coingecko_id: 'joltify',
+      keywords: ['staking'],
+      socials: {
+        website: 'https://www.joltify.io/',
+        twitter: 'https://twitter.com/joltify_finance'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'ujolt',
+            chain_name: 'joltify'
+          },
+          chain: {
+            channel_id: 'channel-81'
           }
         }]
     },

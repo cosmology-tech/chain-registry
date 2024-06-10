@@ -59,6 +59,7 @@ export * as imversed from './imversed';
 export * as injective from './injective';
 export * as irisnet from './irisnet';
 export * as jackal from './jackal';
+export * as joltify from './joltify';
 export * as juno from './juno';
 export * as kava from './kava';
 export * as kichain from './kichain';

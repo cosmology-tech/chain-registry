@@ -75,6 +75,7 @@ import * as _imversed from './imversed';
 import * as _injective from './injective';
 import * as _irisnet from './irisnet';
 import * as _jackal from './jackal';
+import * as _joltify from './joltify';
 import * as _juno from './juno';
 import * as _kava from './kava';
 import * as _kichain from './kichain';
@@ -244,6 +245,7 @@ const assets: AssetList[] = [
   _injective.assets,
   _irisnet.assets,
   _jackal.assets,
+  _joltify.assets,
   _juno.assets,
   _kava.assets,
   _kichain.assets,
