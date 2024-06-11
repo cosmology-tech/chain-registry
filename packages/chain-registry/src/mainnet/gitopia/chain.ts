@@ -107,10 +107,6 @@ const info: Chain = {
         provider: 'KonsorTech'
       },
       {
-        address: 'https://rpc.gitopia.quokkastake.io',
-        provider: '🐹 Quokka Stake'
-      },
-      {
         address: 'https://rpc.gitopia.roomit.xyz',
         provider: 'RoomIT'
       },
@@ -235,10 +231,6 @@ const info: Chain = {
       {
         address: 'https://mainnet-gitopia-api.konsortech.xyz',
         provider: 'KonsorTech'
-      },
-      {
-        address: 'https://api.gitopia.quokkastake.io',
-        provider: '🐹 Quokka Stake'
       },
       {
         address: 'https://api.gitopia.roomit.xyz',

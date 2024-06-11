@@ -1710,6 +1710,10 @@ const assets: AssetList = {
     },
     {
       description: 'The native token of Nibiru network',
+      socials: {
+        website: 'https://nibiru.fi',
+        twitter: 'https://twitter.com/nibiruchain'
+      },
       denom_units: [{
           denom: 'ibc/52C9B73B0D9665A4FA1E973B001A83FCFF3B6062E44B564230D20536F1103112',
           exponent: 0,
@@ -3650,6 +3654,10 @@ const assets: AssetList = {
     },
     {
       description: 'The native token of Nibiru network',
+      socials: {
+        website: 'https://nibiru.fi',
+        twitter: 'https://twitter.com/nibiruchain'
+      },
       denom_units: [{
           denom: 'ibc/52C9B73B0D9665A4FA1E973B001A83FCFF3B6062E44B564230D20536F1103112',
           exponent: 0,

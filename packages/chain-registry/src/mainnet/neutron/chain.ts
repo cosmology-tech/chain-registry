@@ -100,6 +100,10 @@ const info: Chain = {
       {
         address: 'https://rpc.neutron.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://rpc.neutron.quokkastake.io',
+        provider: '🐹 Quokka Stake'
       }
     ],
     rest: [
@@ -134,6 +138,10 @@ const info: Chain = {
       {
         address: 'https://lcd.neutron.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://api.neutron.quokkastake.io',
+        provider: '🐹 Quokka Stake'
       }
     ],
     grpc: [
@@ -168,6 +176,10 @@ const info: Chain = {
       {
         address: 'https://grpc.neutron.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'rpc.neutron.quokkastake.io:9090',
+        provider: '🐹 Quokka Stake'
       }
     ]
   },

@@ -41,6 +41,7 @@ export * as impacthubtestnet from './impacthubtestnet';
 export * as imversedtestnet from './imversedtestnet';
 export * as injectivetestnet from './injectivetestnet';
 export * as jackaltestnet from './jackaltestnet';
+export * as jackaltestnet2 from './jackaltestnet2';
 export * as junotestnet from './junotestnet';
 export * as kichaintestnet from './kichaintestnet';
 export * as kujiratestnet from './kujiratestnet';

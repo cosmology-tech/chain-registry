@@ -43,6 +43,7 @@ import * as _impacthubtestnet from './impacthubtestnet';
 import * as _imversedtestnet from './imversedtestnet';
 import * as _injectivetestnet from './injectivetestnet';
 import * as _jackaltestnet from './jackaltestnet';
+import * as _jackaltestnet2 from './jackaltestnet2';
 import * as _junotestnet from './junotestnet';
 import * as _kichaintestnet from './kichaintestnet';
 import * as _kujiratestnet from './kujiratestnet';
@@ -147,6 +148,7 @@ const chains: Chain[] = [
   _imversedtestnet.chain,
   _injectivetestnet.chain,
   _jackaltestnet.chain,
+  _jackaltestnet2.chain,
   _junotestnet.chain,
   _kichaintestnet.chain,
   _kujiratestnet.chain,

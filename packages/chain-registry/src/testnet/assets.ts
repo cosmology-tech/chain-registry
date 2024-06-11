@@ -43,6 +43,7 @@ import * as _impacthubtestnet from './impacthubtestnet';
 import * as _imversedtestnet from './imversedtestnet';
 import * as _injectivetestnet from './injectivetestnet';
 import * as _jackaltestnet from './jackaltestnet';
+import * as _jackaltestnet2 from './jackaltestnet2';
 import * as _junotestnet from './junotestnet';
 import * as _kichaintestnet from './kichaintestnet';
 import * as _kujiratestnet from './kujiratestnet';
@@ -147,6 +148,7 @@ const assets: AssetList[] = [
   _imversedtestnet.assets,
   _injectivetestnet.assets,
   _jackaltestnet.assets,
+  _jackaltestnet2.assets,
   _junotestnet.assets,
   _kichaintestnet.assets,
   _kujiratestnet.assets,
