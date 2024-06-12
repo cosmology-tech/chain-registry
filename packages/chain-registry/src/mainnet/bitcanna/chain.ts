@@ -162,10 +162,6 @@ const info: Chain = {
         provider: 'bitcanna'
       },
       {
-        address: 'bitcanna-grpc.lavenderfive.com:443',
-        provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
         address: 'bitcanna.grpc.m.stavr.tech:9081',
         provider: '🔥STAVR🔥'
       },
@@ -262,10 +258,6 @@ const info: Chain = {
       {
         address: 'https://bitcanna.api.kjnodes.com',
         provider: 'kjnodes'
-      },
-      {
-        address: 'https://bitcanna-api.lavenderfive.com/',
-        provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'https://bitcanna-api.genznodes.dev',

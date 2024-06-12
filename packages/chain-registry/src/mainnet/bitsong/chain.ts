@@ -58,10 +58,6 @@ const info: Chain = {
         provider: '🐹 Quokka Stake'
       },
       {
-        address: 'https://bitsong-rpc.lavenderfive.com/',
-        provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
         address: 'https://rpc-bitsong.starsquid.io',
         provider: 'Starsquid'
       },
@@ -116,10 +112,6 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       },
       {
-        address: 'https://bitsong-api.lavenderfive.com/',
-        provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
         address: 'https://api-bitsong.starsquid.io',
         provider: 'Starsquid'
       },
@@ -156,10 +148,6 @@ const info: Chain = {
       {
         address: 'grpc-bitsong-ia.cosmosia.notional.ventures:443',
         provider: 'Notional'
-      },
-      {
-        address: 'bitsong-grpc.lavenderfive.com:443',
-        provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'bitsong.grpc.nodersteam.com:9111/',

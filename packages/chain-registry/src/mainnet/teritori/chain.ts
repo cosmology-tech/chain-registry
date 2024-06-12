@@ -36,10 +36,6 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://teritori-rpc.lavenderfive.com:443',
-        provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
         address: 'https://teritori-rpc.polkachu.com',
         provider: 'Polkachu'
       },
@@ -94,10 +90,6 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://teritori-api.lavenderfive.com:443',
-        provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
         address: 'https://teritori-api.polkachu.com',
         provider: 'Polkachu'
       },
@@ -147,10 +139,6 @@ const info: Chain = {
       }
     ],
     grpc: [
-      {
-        address: 'teritori-grpc.lavenderfive.com:443',
-        provider: 'Lavender.Five Nodes 🐝'
-      },
       {
         address: 'grpc.teritori.nodestake.top:443',
         provider: 'NodeStake'

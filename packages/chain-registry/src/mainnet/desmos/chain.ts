@@ -42,10 +42,6 @@ const info: Chain = {
         provider: 'desmos'
       },
       {
-        address: 'https://desmos-rpc.lavenderfive.com/',
-        provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
         address: 'https://desmos-rpc.ibs.team/',
         provider: 'Inter Blockchain Services'
       },
@@ -76,10 +72,6 @@ const info: Chain = {
         provider: 'desmos'
       },
       {
-        address: 'https://desmos-api.lavenderfive.com/',
-        provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
         address: 'https://desmos-api.ibs.team/',
         provider: 'Inter Blockchain Services'
       },
@@ -105,10 +97,6 @@ const info: Chain = {
       }
     ],
     grpc: [
-      {
-        address: 'desmos-grpc.lavenderfive.com:443',
-        provider: 'Lavender.Five Nodes 🐝'
-      },
       {
         address: 'https://grpc-desmos.explorer.co.id',
         provider: 'Nodine.ID'
