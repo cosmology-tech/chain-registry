@@ -158,19 +158,19 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The token of Teledisko DAO.',
+      description: 'The legacy token of Teledisko DAO.',
       denom_units: [{
           denom: 'ibc/3D477A624F9AFBBDE800A2B302A4923980B95859BDEA8462E09C1D283E933456',
           exponent: 0,
           aliases: ['erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280']
         }, {
-          denom: 'berlin',
+          denom: 'berlin-legacy',
           exponent: 18
         }],
       base: 'ibc/3D477A624F9AFBBDE800A2B302A4923980B95859BDEA8462E09C1D283E933456',
-      name: 'Teledisko DAO',
-      display: 'berlin',
-      symbol: 'BERLIN',
+      name: 'Teledisko DAO - Legacy',
+      display: 'berlin-legacy',
+      symbol: 'BERLIN-legacy',
       type_asset: 'erc20',
       address: '0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
       logo_URIs: {
@@ -1688,19 +1688,19 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The token of Teledisko DAO.',
+      description: 'The legacy token of Teledisko DAO.',
       denom_units: [{
           denom: 'ibc/3D477A624F9AFBBDE800A2B302A4923980B95859BDEA8462E09C1D283E933456',
           exponent: 0,
           aliases: ['erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280']
         }, {
-          denom: 'berlin',
+          denom: 'berlin-legacy',
           exponent: 18
         }],
       base: 'ibc/3D477A624F9AFBBDE800A2B302A4923980B95859BDEA8462E09C1D283E933456',
-      name: 'Teledisko DAO',
-      display: 'berlin',
-      symbol: 'BERLIN',
+      name: 'Teledisko DAO - Legacy',
+      display: 'berlin-legacy',
+      symbol: 'BERLIN-legacy',
       type_asset: 'erc20',
       address: '0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
       logo_URIs: {
