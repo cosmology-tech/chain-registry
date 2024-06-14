@@ -14948,7 +14948,8 @@ const info: AssetList = {
         }]
     },
     {
-      description: 'Like cosmos, but shit',
+      description: 'The Cosmos Network\'s premier self-hatred memecoin.',
+      extended_description: 'Shitmos is a fair launched token deployed via the start.cooking liquidity bootstrapping protocol (LBP) on the Osmosis blockchain. It is powered by the Shitmos Economic Zone (SEZ), and it has been designed with the goal of uniting the Cosmos Network and interchain-at-large ecosystems by making crypto fun. The SEZ is a federation of nft collections on Stargaze that supports Shitmos by providing at least 2% of royalties towards open market purchases of Shitmos.',
       denom_units: [{
           denom: 'factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/shitmos',
           exponent: 0
@@ -14969,7 +14970,12 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.svg'
-        }]
+        }],
+      keywords: ['memecoin'],
+      socials: {
+        website: 'https://shitmos.wtf',
+        twitter: 'https://twitter.com/shitoncosmos'
+      }
     },
     {
       description: 'Quicksilver Liquid Staked JUNO',
@@ -15997,11 +16003,7 @@ const info: AssetList = {
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
         }],
-      keywords: ['osmosis_unlisted'],
-      socials: {
-        website: 'https://osmosis.zone',
-        twitter: 'https://twitter.com/osmosiszone'
-      }
+      keywords: ['osmosis_unlisted']
     },
     {
       description: 'PUNDIX token is the native token that functions within the Pundi X ecosystem, including PundiX Chain and XPOS.',

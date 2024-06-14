@@ -14,7 +14,7 @@ const info: Chain = {
   fees: {
     fee_tokens: [{
         denom: 'ufury',
-        low_gas_price: 0,
+        low_gas_price: 0.1,
         average_gas_price: 0.25,
         high_gas_price: 0.5
       }]
@@ -32,51 +32,30 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/chain.svg'
   },
   apis: {
-    rpc: [
-      {
-        address: 'https://rpc.furya.xyz',
-        provider: 'Furya Genesis Validator'
-      },
-      {
+    rpc: [{
         address: 'https://furya-rpc.synergynodes.com',
         provider: 'synergynodes'
-      },
-      {
+      }, {
         address: 'https://furya.rpc.nodeshub.online:443',
         provider: 'nodeshub'
-      }
-    ],
-    rest: [
-      {
-        address: 'https://api.furya.xyz',
-        provider: 'Furya Genesis Validator'
-      },
-      {
+      }],
+    rest: [{
         address: 'https://furya.api.nodeshub.online',
         provider: 'synergynodes'
-      },
-      {
-        address: 'https://furya.api.nodeshub.online',
-        provider: 'Furya Genesis Validator'
-      },
-      {
+      }, {
         address: 'https://furya.api.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
-      }
-    ],
+      }],
     grpc: [{
-        address: 'grpc.furya.xyz:443',
-        provider: 'Furya Genesis Validator'
-      }, {
         address: 'https://furya.grpc.nodeshub.online',
         provider: 'Nodes Hub'
       }]
   },
   explorers: [{
       kind: 'Furya Explorer',
-      url: 'https://explorer.furya.xyz/',
-      tx_page: 'https://explorer.furya.xyz/furya/tx/${txHash}',
-      account_page: 'https://explorer.furya.xyz/furya/account/${accountAddress}'
+      url: 'https://explorer.furya.network/furya-1/',
+      tx_page: 'https://explorer.furya.network/furya-1/tx/${txHash}',
+      account_page: 'https://explorer.furya.network/furya-1/account/${accountAddress}'
     }, {
       kind: 'Nodeshub Explorer',
       url: 'https://explorer.nodeshub.online/furya',

@@ -751,15 +751,12 @@ const assets: AssetList = {
       display: 'fury',
       symbol: 'FURY',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg',
-          theme: {
-            primary_color_hex: '#eaf143'
-          }
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
         }],
       coingecko_id: 'fanfury',
       keywords: ['gaming', 'staking'],
@@ -1527,15 +1524,12 @@ const assets: AssetList = {
       display: 'fury',
       symbol: 'FURY',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg',
-          theme: {
-            primary_color_hex: '#eaf143'
-          }
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
         }],
       coingecko_id: 'fanfury',
       keywords: ['gaming', 'staking'],

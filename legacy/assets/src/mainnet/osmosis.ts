@@ -2464,27 +2464,24 @@ const assets: AssetList = {
     {
       description: 'The native token of Furya',
       denom_units: [{
-          denom: 'ibc/42D0FBF9DDC72D7359D309A93A6DF9F6FDEE3987EA1C5B3CDE95C06FCE183F12',
+          denom: 'ibc/E4C60B9F95BF54CC085A5E39F6057ABD4DF92793D330EB884A36530F7E6804DE',
           exponent: 0,
           aliases: ['ufury']
         }, {
           denom: 'fury',
           exponent: 6
         }],
-      base: 'ibc/42D0FBF9DDC72D7359D309A93A6DF9F6FDEE3987EA1C5B3CDE95C06FCE183F12',
+      base: 'ibc/E4C60B9F95BF54CC085A5E39F6057ABD4DF92793D330EB884A36530F7E6804DE',
       name: 'Furya',
       display: 'fury',
       symbol: 'FURY',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg',
-          theme: {
-            primary_color_hex: '#eaf143'
-          }
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
         }],
       coingecko_id: 'fanfury',
       keywords: ['gaming', 'staking'],
@@ -2494,12 +2491,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-3',
+            channel_id: 'channel-8',
             base_denom: 'ufury',
             chain_name: 'furya'
           },
           chain: {
-            channel_id: 'channel-8690'
+            channel_id: 'channel-74222'
           }
         }]
     },
@@ -4678,14 +4675,36 @@ const assets: AssetList = {
       display: 'ORAI',
       symbol: 'ORAI',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-token.png'
       },
       coingecko_id: 'oraichain-token',
-      images: [{
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-token.png',
+          theme: {
+            circle: true,
+            dark_mode: true
+          }
+        },
+        {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.svg'
-        }],
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.svg',
+          theme: {
+            circle: true,
+            dark_mode: true,
+            primary_color_hex: '#FFFFFF'
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.svg',
+          theme: {
+            circle: true,
+            dark_mode: false,
+            primary_color_hex: '#000000'
+          }
+        }
+      ],
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -7160,27 +7179,24 @@ const assets: AssetList = {
     {
       description: 'The native token of Furya',
       denom_units: [{
-          denom: 'ibc/42D0FBF9DDC72D7359D309A93A6DF9F6FDEE3987EA1C5B3CDE95C06FCE183F12',
+          denom: 'ibc/E4C60B9F95BF54CC085A5E39F6057ABD4DF92793D330EB884A36530F7E6804DE',
           exponent: 0,
           aliases: ['ufury']
         }, {
           denom: 'fury',
           exponent: 6
         }],
-      base: 'ibc/42D0FBF9DDC72D7359D309A93A6DF9F6FDEE3987EA1C5B3CDE95C06FCE183F12',
+      base: 'ibc/E4C60B9F95BF54CC085A5E39F6057ABD4DF92793D330EB884A36530F7E6804DE',
       name: 'Furya',
       display: 'fury',
       symbol: 'FURY',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg',
-          theme: {
-            primary_color_hex: '#eaf143'
-          }
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
         }],
       coingecko_id: 'fanfury',
       keywords: ['gaming', 'staking'],
@@ -7190,12 +7206,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-3',
+            channel_id: 'channel-8',
             base_denom: 'ufury',
             chain_name: 'furya'
           },
           chain: {
-            channel_id: 'channel-8690'
+            channel_id: 'channel-74222'
           }
         }]
     },
@@ -9374,14 +9390,36 @@ const assets: AssetList = {
       display: 'ORAI',
       symbol: 'ORAI',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-token.png'
       },
       coingecko_id: 'oraichain-token',
-      images: [{
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-token.png',
+          theme: {
+            circle: true,
+            dark_mode: true
+          }
+        },
+        {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.svg'
-        }],
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.svg',
+          theme: {
+            circle: true,
+            dark_mode: true,
+            primary_color_hex: '#FFFFFF'
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.svg',
+          theme: {
+            circle: true,
+            dark_mode: false,
+            primary_color_hex: '#000000'
+          }
+        }
+      ],
       traces: [{
           type: 'ibc',
           counterparty: {

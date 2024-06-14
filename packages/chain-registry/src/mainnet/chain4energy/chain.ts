@@ -39,6 +39,10 @@ const info: Chain = {
         provider: 'C4E'
       },
       {
+        address: 'https://rpc.c4e.mainnet.dteam.tech:443',
+        provider: 'DTEAM'
+      },
+      {
         address: 'https://rpc.c4e.nodestake.top',
         provider: 'NodeStake'
       },
@@ -153,6 +157,10 @@ const info: Chain = {
         provider: 'C4E'
       },
       {
+        address: 'https://api.c4e.mainnet.dteam.tech:443',
+        provider: 'DTEAM'
+      },
+      {
         address: 'https://api.c4e.nodestake.top',
         provider: 'NodeStake'
       },
@@ -255,6 +263,10 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
+        address: 'grpc.c4e.mainnet.dteam.tech:30090',
+        provider: 'DTEAM'
+      },
+      {
         address: 'c4e.grpc.bccnodes.com:443',
         provider: 'BccNodes'
       },
@@ -353,6 +365,11 @@ const info: Chain = {
       kind: 'explorer',
       url: 'https://explorer.apeironnodes.com/chain4energy',
       tx_page: 'https://explorer.apeironnodes.com/chain4energy/transactions/${txHash}'
+    },
+    {
+      kind: 'DTEAM | Explorer',
+      url: 'https://explorer.mainnet.dteam.tech/chain4energy',
+      tx_page: 'https://explorer.mainnet.dteam.tech/chain4energytransactions/${txHash}'
     },
     {
       kind: 'explorer',

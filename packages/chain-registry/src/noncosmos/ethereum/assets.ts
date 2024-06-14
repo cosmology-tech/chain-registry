@@ -591,7 +591,11 @@ const info: AssetList = {
       coingecko_id: 'tether',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
-        }]
+        }],
+      socials: {
+        website: 'https://tether.to/',
+        twitter: 'https://x.com/Tether_to'
+      }
     },
     {
       description: 'Wrapped Bitcoin (WBTC) is an ERC20 token backed 1:1 with Bitcoin. Completely transparent. 100% verifiable. Community led.',

@@ -92,21 +92,21 @@ const info: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'furya',
-      client_id: '07-tendermint-4',
-      connection_id: 'connection-3'
+      client_id: '07-tendermint-10',
+      connection_id: 'connection-9'
     },
     chain_2: {
       chain_name: 'osmosis',
-      client_id: '07-tendermint-3029',
-      connection_id: 'connection-2515'
+      client_id: '07-tendermint-3201',
+      connection_id: 'connection-2658'
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-3',
+          channel_id: 'channel-8',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-8690',
+          channel_id: 'channel-74222',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -122,21 +122,21 @@ const info: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'furya',
-      client_id: '07-tendermint-2',
-      connection_id: 'connection-1'
+      client_id: '07-tendermint-14',
+      connection_id: 'connection-10'
     },
     chain_2: {
       chain_name: 'terra2',
-      client_id: '07-tendermint-385',
-      connection_id: 'connection-361'
+      client_id: '07-tendermint-422',
+      connection_id: 'connection-436'
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-1',
+          channel_id: 'channel-9',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-271',
+          channel_id: 'channel-495',
           port_id: 'transfer'
         },
         ordering: 'unordered',

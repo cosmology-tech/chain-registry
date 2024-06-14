@@ -561,15 +561,12 @@ const assets: AssetList = {
       display: 'fury',
       symbol: 'FURY',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg',
-          theme: {
-            primary_color_hex: '#eaf143'
-          }
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
         }],
       coingecko_id: 'fanfury',
       keywords: ['gaming', 'staking'],
@@ -1856,15 +1853,12 @@ const assets: AssetList = {
       display: 'fury',
       symbol: 'FURY',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg',
-          theme: {
-            primary_color_hex: '#eaf143'
-          }
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
         }],
       coingecko_id: 'fanfury',
       keywords: ['gaming', 'staking'],
@@ -3116,6 +3110,45 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native EVM and Wasm, governance and staking token of the Shido Chain',
+      denom_units: [{
+          denom: 'ibc/C56696E0EA0481CE109E2DD25BDD27F4020D748C5A09D82D9D70F167D23224FA',
+          exponent: 0,
+          aliases: ['shido']
+        }, {
+          denom: 'SHIDO',
+          exponent: 18
+        }],
+      base: 'ibc/C56696E0EA0481CE109E2DD25BDD27F4020D748C5A09D82D9D70F167D23224FA',
+      name: 'Shido',
+      display: 'SHIDO',
+      symbol: 'SHIDO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg'
+      },
+      coingecko_id: 'shido-2',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg'
+        }],
+      socials: {
+        website: 'https://shido.io/',
+        twitter: 'https://twitter.com/ShidoGlobal'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'shido',
+            chain_name: 'shido'
+          },
+          chain: {
+            channel_id: 'channel-84'
+          }
+        }]
+    },
+    {
       description: 'The native token of Stargaze',
       denom_units: [{
           denom: 'ibc/D7CBF85B893451FA339A4171FEEC19A328FE7AFA86D37D6CD66EAAC02AF6EB5F',
@@ -3783,6 +3816,45 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-39'
+          }
+        }]
+    },
+    {
+      description: 'The native EVM and Wasm, governance and staking token of the Shido Chain',
+      denom_units: [{
+          denom: 'ibc/C56696E0EA0481CE109E2DD25BDD27F4020D748C5A09D82D9D70F167D23224FA',
+          exponent: 0,
+          aliases: ['shido']
+        }, {
+          denom: 'SHIDO',
+          exponent: 18
+        }],
+      base: 'ibc/C56696E0EA0481CE109E2DD25BDD27F4020D748C5A09D82D9D70F167D23224FA',
+      name: 'Shido',
+      display: 'SHIDO',
+      symbol: 'SHIDO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg'
+      },
+      coingecko_id: 'shido-2',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg'
+        }],
+      socials: {
+        website: 'https://shido.io/',
+        twitter: 'https://twitter.com/ShidoGlobal'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'shido',
+            chain_name: 'shido'
+          },
+          chain: {
+            channel_id: 'channel-84'
           }
         }]
     },

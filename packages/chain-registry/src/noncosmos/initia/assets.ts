@@ -21,7 +21,11 @@ const info: AssetList = {
           theme: {
             circle: true
           }
-        }]
+        }],
+      socials: {
+        website: 'https://initia.xyz/',
+        twitter: 'https://twitter.com/initiaFDN'
+      }
     }]
 };
 export default info;

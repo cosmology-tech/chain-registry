@@ -750,27 +750,24 @@ const assets: AssetList = {
     {
       description: 'The native token of Furya',
       denom_units: [{
-          denom: 'ibc/285542A3C81252D7A2D9D79D8182E440309DEE320BE8E5269E1E7268D94D6CDF',
+          denom: 'ibc/717ED17364D7D0C9F9049F1F38DCCB6C35AE67EB8199E490A4D6046B64F1B52D',
           exponent: 0,
           aliases: ['ufury']
         }, {
           denom: 'fury',
           exponent: 6
         }],
-      base: 'ibc/285542A3C81252D7A2D9D79D8182E440309DEE320BE8E5269E1E7268D94D6CDF',
+      base: 'ibc/717ED17364D7D0C9F9049F1F38DCCB6C35AE67EB8199E490A4D6046B64F1B52D',
       name: 'Furya',
       display: 'fury',
       symbol: 'FURY',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg',
-          theme: {
-            primary_color_hex: '#eaf143'
-          }
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
         }],
       coingecko_id: 'fanfury',
       keywords: ['gaming', 'staking'],
@@ -780,12 +777,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-1',
+            channel_id: 'channel-9',
             base_denom: 'ufury',
             chain_name: 'furya'
           },
           chain: {
-            channel_id: 'channel-271'
+            channel_id: 'channel-495'
           }
         }]
     },
@@ -3611,27 +3608,24 @@ const assets: AssetList = {
     {
       description: 'The native token of Furya',
       denom_units: [{
-          denom: 'ibc/285542A3C81252D7A2D9D79D8182E440309DEE320BE8E5269E1E7268D94D6CDF',
+          denom: 'ibc/717ED17364D7D0C9F9049F1F38DCCB6C35AE67EB8199E490A4D6046B64F1B52D',
           exponent: 0,
           aliases: ['ufury']
         }, {
           denom: 'fury',
           exponent: 6
         }],
-      base: 'ibc/285542A3C81252D7A2D9D79D8182E440309DEE320BE8E5269E1E7268D94D6CDF',
+      base: 'ibc/717ED17364D7D0C9F9049F1F38DCCB6C35AE67EB8199E490A4D6046B64F1B52D',
       name: 'Furya',
       display: 'fury',
       symbol: 'FURY',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg',
-          theme: {
-            primary_color_hex: '#eaf143'
-          }
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
         }],
       coingecko_id: 'fanfury',
       keywords: ['gaming', 'staking'],
@@ -3641,12 +3635,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-1',
+            channel_id: 'channel-9',
             base_denom: 'ufury',
             chain_name: 'furya'
           },
           chain: {
-            channel_id: 'channel-271'
+            channel_id: 'channel-495'
           }
         }]
     },
