@@ -9,7 +9,7 @@
     <img height="20" src="https://github.com/cosmology-tech/chain-registry/actions/workflows/run-tests.yml/badge.svg" />
   </a>
    <a href="https://github.com/cosmology-tech/chain-registry/blob/main/LICENSE"><img height="20" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
-   <a href="https://www.npmjs.com/package/@chain-registry/assets"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=packages%2Fassets%2Fpackage.json"></a>
+   <a href="https://www.npmjs.com/package/@chain-registry/assets"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=legacy%2Fassets%2Fpackage.json"></a>
 </p>
 
 Asset lists for the Cosmos ⚛️
