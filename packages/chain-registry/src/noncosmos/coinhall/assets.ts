@@ -13,10 +13,10 @@ const info: AssetList = {
         }],
       base: 'uhall',
       display: 'hall',
-      name: 'Coinhall',
+      name: 'Hall',
       symbol: 'HALL',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/namada/images/hall.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/namada/images/hall.svg',
           theme: {
             circle: false
           }
