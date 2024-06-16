@@ -7,26 +7,52 @@ const getRpc = (chain: Chain): string => chain.apis?.rpc?.[0]?.address ?? '';
 const getRest = (chain: Chain): string => chain.apis?.rest?.[0]?.address ?? '';
 const getExplr = (chain: Chain): string => chain.explorers?.[0]?.url ?? '';
 
-const cleanVer = (ver: string) => {
-  if (!semver.valid(ver)) {
-    // try to split by @ for repo@version
-    ver = ver.split('@').pop();
-    if (semver.valid(ver)) return ver;
-
-    const spaces = ver.split('.').length;
-    switch (spaces) {
-      case 1:
-        return ver + '.0.0';
-      case 2:
-        return ver + '.0';
-      case 3:
-      default:
-        throw new Error(
-          'contact @chain-registry/keplr maintainers: bad version'
-        );
-    }
-  }
+const versionPatterns = {
+  fullSemver: /v?(\d+\.\d+\.\d+)(?=-[\w.-]+|$)/, // Matches complete semver patterns like '0.47.20' or 'v0.47.20'
+  partialSemver: /v?(\d+\.\d+)(?=(?:\.\d+)?(?=-[\w.-]+|$))/, // Matches partial semver patterns like '0.47' or 'v0.47'
+  basicVersion: /v?(\d+)(?=(?:\.\d+)?(?:\.\d+)?(?=-[\w.-]+|$))/, // Matches basic versions like '0' or 'v0'
+  tagged: /@v(\d+\.\d+)(?:\.x)?(?=-[\w.-]+|$)/, // Specific for tagged formats
+  embedded: /\/v(\d+\.\d+\.\d+)(?=-[\w.-]+|$)/, // For versions embedded in paths
+  simple: /v?(\d+)(?:\.(\d+))?(?:\.(\d+))?$/, // General simple versions
+  complexEmbedded: /[\w-]+\/[\w-]+ v(\d+)(?:\.(\d+))?(?:\.(\d+))?(?:-\d+[\w.-]*)/, // Complex formats with namespaces
+  taggedVersion: /[\w-]+\/[\w-]+ v(\d+)(?:\.(\d+))?(?:\.(\d+))?(?=-[\w.-]+|$)/ // Versions with descriptive tags
 };
+
+export function extractVersion(input: string): string | null {
+  let version = null;
+
+  // Check each pattern in turn
+  if (versionPatterns.fullSemver.test(input)) {
+    version = input.match(versionPatterns.fullSemver)?.[1];
+  } else if (versionPatterns.partialSemver.test(input)) {
+    version = input.match(versionPatterns.partialSemver)?.[1];
+  } else if (versionPatterns.basicVersion.test(input)) {
+    version = input.match(versionPatterns.basicVersion)?.[1];
+  } else if (versionPatterns.taggedVersion.test(input)) {
+    version = input.match(versionPatterns.taggedVersion)?.[1];
+  } else if (versionPatterns.complexEmbedded.test(input)) {
+    version = input.match(versionPatterns.complexEmbedded)?.[1];
+  } else if (versionPatterns.simple.test(input)) {
+    version = input.match(versionPatterns.simple)?.[1];
+  } else if (versionPatterns.tagged.test(input)) {
+    version = input.match(versionPatterns.tagged)?.[1];
+  } else if (versionPatterns.embedded.test(input)) {
+    version = input.match(versionPatterns.embedded)?.[1];
+  }
+
+  return version ? normalizeVersion(version) : null;
+}
+
+function normalizeVersion(version: string): string {
+  // Ensures the version is normalized to the 'x.y.z' format, if applicable
+  const parts = version.split('.');
+  while (parts.length < 3) {
+    parts.push('0');
+  }
+  return parts.join('.');
+}
+
+
 
 export const chainRegistryChainToKeplr = (
   chain: Chain,
@@ -48,7 +74,7 @@ export const chainRegistryChainToKeplr = (
   const features = [];
   // if NOT specified, we assume stargate, sorry not sorry
   const sdkVer = chain.codebase?.cosmos_sdk_version
-    ? cleanVer(chain.codebase?.cosmos_sdk_version)
+    ? extractVersion(chain.codebase?.cosmos_sdk_version)
     : '0.40';
 
   // stargate
@@ -63,7 +89,7 @@ export const chainRegistryChainToKeplr = (
 
   if (chain.codebase?.cosmwasm_enabled) {
     features.push('cosmwasm');
-    const wasmVer = cleanVer(chain.codebase.cosmwasm_version ?? '0.24');
+    const wasmVer = extractVersion(chain.codebase.cosmwasm_version ?? '0.24');
     if (semver.satisfies(wasmVer, '>=0.24')) features.push('wasmd_0.24+');
   }
 
