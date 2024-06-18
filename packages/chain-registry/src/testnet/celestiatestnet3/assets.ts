@@ -3,7 +3,6 @@ const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'celestiatestnet3',
   assets: [{
-      description: '',
       denom_units: [{
           denom: 'utia',
           exponent: 0

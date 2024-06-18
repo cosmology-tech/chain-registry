@@ -53,7 +53,7 @@ const info: Chain = {
       },
       {
         address: 'https://dymension-mainnet-rpc.autostake.com:443',
-        provider: 'AutoStake | Delegate for StakeDrops'
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'https://dymension-rpc.lavenderfive.com:443',
@@ -171,7 +171,7 @@ const info: Chain = {
       },
       {
         address: 'https://dymension-mainnet-lcd.autostake.com:443',
-        provider: 'AutoStake | Delegate for StakeDrops'
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'https://dymension-api.lavenderfive.com:443',
@@ -285,7 +285,7 @@ const info: Chain = {
       },
       {
         address: 'dymension-mainnet-grpc.autostake.com:443',
-        provider: 'AutoStake | Delegate for StakeDrops'
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'dymension.mainnet.grpc.noders.team:42090',

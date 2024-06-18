@@ -30,12 +30,10 @@ const info: Chain = {
   },
   apis: {
     rpc: [{
-        address: 'https://sixnet-rpc.sixprotocol.net:443',
-        provider: ''
+        address: 'https://sixnet-rpc.sixprotocol.net:443'
       }],
     rest: [{
-        address: 'https://sixnet-api.sixprotocol.net:443',
-        provider: ''
+        address: 'https://sixnet-api.sixprotocol.net:443'
       }]
   },
   explorers: [{

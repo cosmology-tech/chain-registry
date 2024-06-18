@@ -3,7 +3,6 @@ const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'arkeonetworktestnet',
   assets: [{
-      description: '',
       denom_units: [{
           denom: 'uarkeo',
           exponent: 0

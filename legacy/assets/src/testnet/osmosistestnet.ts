@@ -105,7 +105,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: '',
       denom_units: [{
           denom: 'ibc/0E22FFB61DB307FE01D3D0DFF4A8EBEB6CC4997DCF9E901AE0751A2FFF4B90DD',
           exponent: 0,
@@ -155,7 +154,6 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/chain4energytestnet/images/c4e.png'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/chain4energytestnet/images/c4e.png'
         }],
@@ -780,7 +778,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: '',
       denom_units: [{
           denom: 'ibc/0E22FFB61DB307FE01D3D0DFF4A8EBEB6CC4997DCF9E901AE0751A2FFF4B90DD',
           exponent: 0,
@@ -830,7 +827,6 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/chain4energytestnet/images/c4e.png'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/chain4energytestnet/images/c4e.png'
         }],

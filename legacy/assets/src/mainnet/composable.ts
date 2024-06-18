@@ -1022,7 +1022,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: '',
       type_asset: 'erc20',
       address: '0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f',
       denom_units: [{
@@ -3796,7 +3795,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: '',
       type_asset: 'erc20',
       address: '0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f',
       denom_units: [{

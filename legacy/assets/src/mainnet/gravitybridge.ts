@@ -1159,7 +1159,6 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nyx.png'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nyx.png'
         }],
@@ -1586,7 +1585,6 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nyx.png'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nyx.png'
         }],

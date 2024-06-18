@@ -42,8 +42,7 @@ const info: Chain = {
       }, {
         address: 'https://zetachain-testnet-archive.allthatnode.com:1317',
         provider: 'All That Node'
-      }],
-    grpc: []
+      }]
   },
   explorers: [{
       kind: 'ZetaScan',

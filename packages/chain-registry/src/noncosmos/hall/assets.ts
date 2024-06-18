@@ -1,7 +1,7 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
-  chain_name: 'coinhall',
+  chain_name: 'hall',
   assets: [{
       description: 'The native token of Coinhall',
       denom_units: [{
@@ -16,7 +16,7 @@ const info: AssetList = {
       name: 'Hall',
       symbol: 'HALL',
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/namada/images/hall.svg',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/hall/images/hall.svg',
           theme: {
             circle: false
           }

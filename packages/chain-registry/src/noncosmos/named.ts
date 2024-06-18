@@ -25,7 +25,7 @@ export * as tinkernet from './tinkernet';
 export * as xrpl from './xrpl';
 export * as zilliqa from './zilliqa';
 export * as berachain from './berachain';
-export * as coinhall from './coinhall';
+export * as hall from './hall';
 export * as initia from './initia';
 export * as mantrachain from './mantrachain';
 export * as movement from './movement';

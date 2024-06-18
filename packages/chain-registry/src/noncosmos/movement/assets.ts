@@ -16,7 +16,7 @@ const info: AssetList = {
       name: 'Movement',
       symbol: 'MOVE',
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/namada/images/move.svg',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/movement/images/move.svg',
           theme: {
             circle: true
           }

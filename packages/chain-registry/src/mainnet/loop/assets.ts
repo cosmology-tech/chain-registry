@@ -21,8 +21,6 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.svg'
         }],
-      coingecko_id: '',
-      keywords: [],
       socials: {
         website: 'https://www.loop.fans/',
         twitter: 'https://twitter.com/LoopFans'
@@ -48,7 +46,6 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/poa.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/poa.svg'
         }],
-      coingecko_id: '',
       keywords: ['poa']
     }]
 };

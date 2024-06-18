@@ -3,7 +3,6 @@ const assets: AssetList = {
   chain_name: 'neutrontestnet',
   assets: [
     {
-      description: '',
       denom_units: [{
           denom: 'ibc/1CA64A501480AF80A85BC663E82AA5E8C52B03417457F69A09B2A3B384AB71F8',
           exponent: 0,
@@ -37,7 +36,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: '',
       denom_units: [{
           denom: 'ibc/1CA64A501480AF80A85BC663E82AA5E8C52B03417457F69A09B2A3B384AB71F8',
           exponent: 0,

@@ -8628,7 +8628,6 @@ const assets: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/mUSDC.svg'
       },
-      coingecko_id: '',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/mUSDC.svg'
         }],
@@ -11234,7 +11233,6 @@ const assets: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/mUSDC.svg'
       },
-      coingecko_id: '',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/mUSDC.svg'
         }],
@@ -12159,7 +12157,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: '',
       type_asset: 'cw20',
       address: 'terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj',
       denom_units: [{
@@ -13137,7 +13134,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: '',
       type_asset: 'cw20',
       address: 'terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj',
       denom_units: [{

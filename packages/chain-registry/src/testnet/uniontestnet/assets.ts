@@ -6,12 +6,10 @@ const info: AssetList = {
       description: 'Union native token',
       denom_units: [{
           denom: 'muno',
-          exponent: 0,
-          aliases: []
+          exponent: 0
         }, {
           denom: 'uno',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }],
       base: 'muno',
       name: 'Union',
@@ -20,7 +18,6 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/uniontestnet/images/union.png'
       },
-      coingecko_id: '',
       keywords: ['staking'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/uniontestnet/images/union.png'

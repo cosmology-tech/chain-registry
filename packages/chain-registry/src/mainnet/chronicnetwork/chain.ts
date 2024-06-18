@@ -28,19 +28,16 @@ const info: Chain = {
     rest: [{
         address: 'https://api-chronic.zenchainlabs.io/',
         provider: 'ZenChainLabs'
-      }],
-    grpc: []
+      }]
   },
   explorers: [
     {
       kind: 'skynetexplorers',
-      url: 'https://www.skynetexplorers.com/chronic-token',
-      tx_page: ''
+      url: 'https://www.skynetexplorers.com/chronic-token'
     },
     {
       kind: 'Zenscan.io',
-      url: 'https://www.chronic.zenscan.io',
-      tx_page: ''
+      url: 'https://www.chronic.zenscan.io'
     },
     {
       kind: 'atomscan',

@@ -26,7 +26,6 @@ const info: AssetList = {
         }]
     },
     {
-      description: '',
       type_asset: 'erc20',
       address: 'So11111111111111111111111111111111111111112',
       denom_units: [{

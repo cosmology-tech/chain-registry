@@ -3,7 +3,6 @@ const assets: AssetList = {
   chain_name: 'cosmoshubtestnet',
   assets: [
     {
-      description: '',
       denom_units: [{
           denom: 'ibc/0171A118CC803DBD96B62593C957A8D663961DFE8E9E15AD47C252F6BB3CF308',
           exponent: 0,
@@ -120,7 +119,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: '',
       denom_units: [{
           denom: 'ibc/0171A118CC803DBD96B62593C957A8D663961DFE8E9E15AD47C252F6BB3CF308',
           exponent: 0,

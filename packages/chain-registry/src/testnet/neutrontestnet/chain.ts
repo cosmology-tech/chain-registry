@@ -14,15 +14,15 @@ const info: Chain = {
   fees: {
     fee_tokens: [{
         denom: 'untrn',
-        low_gas_price: 0.02,
-        average_gas_price: 0.02,
-        high_gas_price: 0.02
+        low_gas_price: 0.0053,
+        average_gas_price: 0.0053,
+        high_gas_price: 0.0053
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.47',
+    cosmos_sdk_version: '0.50',
     cosmwasm_enabled: true,
-    cosmwasm_version: '0.45'
+    cosmwasm_version: '0.52'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron-black-logo.png',

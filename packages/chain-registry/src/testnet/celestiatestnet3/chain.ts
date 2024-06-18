@@ -40,6 +40,10 @@ const info: Chain = {
       {
         address: 'https://celestia-testnet-rpc.itrocket.net',
         provider: '🚀ITRocket🚀'
+      },
+      {
+        address: 'https://rpc-celestia-testnet.cryptech.com.ua',
+        provider: 'CrypTech'
       }
     ],
     rest: [
@@ -58,6 +62,10 @@ const info: Chain = {
       {
         address: 'https://celestia-testnet-api.itrocket.net',
         provider: '🚀ITRocket🚀'
+      },
+      {
+        address: 'https://api-celestia-testnet.cryptech.com.ua',
+        provider: 'CrypTech'
       }
     ],
     grpc: [
@@ -72,18 +80,31 @@ const info: Chain = {
       {
         address: 'celestia-testnet-grpc.itrocket.net:11090',
         provider: '🚀ITRocket🚀'
+      },
+      {
+        address: 'https://grpc-celestia-testnet.cryptech.com.ua',
+        provider: 'CrypTech'
       }
     ]
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'Mintscan',
       url: 'https://mintscan.io/celestia-testnet',
       tx_page: 'https://mintscan.io/celestia-testnet/txs/${txHash}'
-    }, {
+    },
+    {
       kind: '🚀ITRocket🚀',
       url: 'https://testnet.itrocket.net/celestia',
       tx_page: 'https://testnet.itrocket.net/celestia/tx/${txHash}',
       account_page: 'https://testnet.itrocket.net/celestia/account/${accountAddress}'
-    }]
+    },
+    {
+      kind: 'CrypTech',
+      url: 'https://explorers.cryptech.com.ua/Celestia-Testnet',
+      tx_page: 'https://explorers.cryptech.com.ua/Celestia-Testnet/tx/${txHash}',
+      account_page: 'https://explorers.cryptech.com.ua/Celestia-Testnet/account/${accountAddress}'
+    }
+  ]
 };
 export default info;

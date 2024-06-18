@@ -413,8 +413,7 @@ const assets: AssetList = {
           aliases: ['utest']
         }, {
           denom: 'test',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }],
       type_asset: 'sdk.coin',
       base: 'ibc/A83851234A83F3FE51CDB44FF1A4435472A197C096EF9E7312B69E67C16B7FB7',
@@ -441,8 +440,7 @@ const assets: AssetList = {
           aliases: ['uworm']
         }, {
           denom: 'worm',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }],
       type_asset: 'sdk.coin',
       base: 'ibc/13C9967E4F065F5E4946302C1F94EA5F21261F3F90DAC0212C4037FA3E058297',
@@ -872,8 +870,7 @@ const assets: AssetList = {
           aliases: ['utest']
         }, {
           denom: 'test',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }],
       type_asset: 'sdk.coin',
       base: 'ibc/A83851234A83F3FE51CDB44FF1A4435472A197C096EF9E7312B69E67C16B7FB7',
@@ -900,8 +897,7 @@ const assets: AssetList = {
           aliases: ['uworm']
         }, {
           denom: 'worm',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }],
       type_asset: 'sdk.coin',
       base: 'ibc/13C9967E4F065F5E4946302C1F94EA5F21261F3F90DAC0212C4037FA3E058297',

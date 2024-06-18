@@ -30,12 +30,10 @@ const info: Chain = {
   },
   apis: {
     rpc: [{
-        address: 'https://rpc1.fivenet.sixprotocol.net:443',
-        provider: ''
+        address: 'https://rpc1.fivenet.sixprotocol.net:443'
       }],
     rest: [{
-        address: 'https://api1.fivenet.sixprotocol.net:443',
-        provider: ''
+        address: 'https://api1.fivenet.sixprotocol.net:443'
       }]
   },
   explorers: [{

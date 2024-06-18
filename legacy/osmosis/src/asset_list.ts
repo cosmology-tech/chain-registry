@@ -20,7 +20,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg'
@@ -716,7 +715,6 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/elt.png'
       },
-      coingecko_id: '',
       keywords: ['elt'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/elt.png'
@@ -750,7 +748,6 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/g4.png'
       },
-      coingecko_id: '',
       keywords: ['g4'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/g4.png'
@@ -1278,7 +1275,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
@@ -1952,7 +1948,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.svg'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.svg'
@@ -2089,7 +2084,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.svg'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.svg'
@@ -2124,7 +2118,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.svg'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.svg'
@@ -2159,7 +2152,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.svg'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.svg'
@@ -2194,7 +2186,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.svg'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.svg'
@@ -2581,8 +2572,7 @@ const asset_list: AssetList = {
           aliases: ['utest']
         }, {
           denom: 'test',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }],
       type_asset: 'sdk.coin',
       base: 'ibc/2FE9F7929F8F170BE4BAAB9575913EF5727559C47FFDF925CAE171312A175EF5',
@@ -2609,8 +2599,7 @@ const asset_list: AssetList = {
           aliases: ['uworm']
         }, {
           denom: 'worm',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }],
       type_asset: 'sdk.coin',
       base: 'ibc/48BC9DB84957B3190E6D2172B83E54DA1E16F3276E3BA01E42BFD788889324DC',
@@ -4368,7 +4357,6 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nyx.png'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nyx.png'
         }],
@@ -4735,7 +4723,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg'
@@ -5431,7 +5418,6 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/elt.png'
       },
-      coingecko_id: '',
       keywords: ['elt'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/elt.png'
@@ -5465,7 +5451,6 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/g4.png'
       },
-      coingecko_id: '',
       keywords: ['g4'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/g4.png'
@@ -5993,7 +5978,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
@@ -6667,7 +6651,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.svg'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.svg'
@@ -6804,7 +6787,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.svg'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.svg'
@@ -6839,7 +6821,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.svg'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.svg'
@@ -6874,7 +6855,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.svg'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.svg'
@@ -6909,7 +6889,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.svg'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.svg'
@@ -7296,8 +7275,7 @@ const asset_list: AssetList = {
           aliases: ['utest']
         }, {
           denom: 'test',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }],
       type_asset: 'sdk.coin',
       base: 'ibc/2FE9F7929F8F170BE4BAAB9575913EF5727559C47FFDF925CAE171312A175EF5',
@@ -7324,8 +7302,7 @@ const asset_list: AssetList = {
           aliases: ['uworm']
         }, {
           denom: 'worm',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }],
       type_asset: 'sdk.coin',
       base: 'ibc/48BC9DB84957B3190E6D2172B83E54DA1E16F3276E3BA01E42BFD788889324DC',
@@ -9083,7 +9060,6 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nyx.png'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nyx.png'
         }],
@@ -9886,7 +9862,6 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rst.png'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rst.png'
         }],
@@ -12505,7 +12480,6 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rst.png'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rst.png'
         }],
@@ -21286,7 +21260,6 @@ const asset_list: AssetList = {
         }]
     },
     {
-      description: '',
       type_asset: 'cw20',
       address: 'terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj',
       denom_units: [{
@@ -22615,7 +22588,6 @@ const asset_list: AssetList = {
         }]
     },
     {
-      description: '',
       type_asset: 'cw20',
       address: 'terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj',
       denom_units: [{

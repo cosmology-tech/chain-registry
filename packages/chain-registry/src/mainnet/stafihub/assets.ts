@@ -48,7 +48,6 @@ const info: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/ratom.svg'
       },
-      coingecko_id: '',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/ratom.svg'
         }]
@@ -77,7 +76,6 @@ const info: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/riris.svg'
       },
-      coingecko_id: '',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/riris.svg'
         }]
@@ -106,7 +104,6 @@ const info: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/rhuahua.svg'
       },
-      coingecko_id: '',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/rhuahua.svg'
         }]
@@ -135,7 +132,6 @@ const info: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/rswth.svg'
       },
-      coingecko_id: '',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/rswth.svg'
         }]

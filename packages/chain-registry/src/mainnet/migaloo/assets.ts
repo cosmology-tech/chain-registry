@@ -220,7 +220,6 @@ const info: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/mUSDC.svg'
       },
-      coingecko_id: '',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/mUSDC.svg'
         }]

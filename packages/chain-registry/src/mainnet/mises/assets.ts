@@ -17,8 +17,7 @@ const info: AssetList = {
         },
         {
           denom: 'mis',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }
       ],
       base: 'umis',
@@ -28,7 +27,6 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mises/images/mises.png'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mises/images/mises.png'
         }]

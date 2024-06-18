@@ -1034,8 +1034,7 @@ const assets: AssetList = {
           aliases: ['utest']
         }, {
           denom: 'test',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }],
       type_asset: 'sdk.coin',
       base: 'ibc/608B2FA2CC241DC41B3D8CBF7DB2A0D11B4636B859FE4A8A73F1F5DBAAB3745B',
@@ -1062,8 +1061,7 @@ const assets: AssetList = {
           aliases: ['uworm']
         }, {
           denom: 'worm',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }],
       type_asset: 'sdk.coin',
       base: 'ibc/B07CA9FD2C05A5D34E517647E18B84B33A9AC7FF5BC12E334D63F63D4EDC37DF',
@@ -2655,8 +2653,7 @@ const assets: AssetList = {
           aliases: ['utest']
         }, {
           denom: 'test',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }],
       type_asset: 'sdk.coin',
       base: 'ibc/608B2FA2CC241DC41B3D8CBF7DB2A0D11B4636B859FE4A8A73F1F5DBAAB3745B',
@@ -2683,8 +2680,7 @@ const assets: AssetList = {
           aliases: ['uworm']
         }, {
           denom: 'worm',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }],
       type_asset: 'sdk.coin',
       base: 'ibc/B07CA9FD2C05A5D34E517647E18B84B33A9AC7FF5BC12E334D63F63D4EDC37DF',
@@ -3991,7 +3987,6 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rst.png'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rst.png'
         }],
@@ -5099,7 +5094,6 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rst.png'
       },
-      coingecko_id: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rst.png'
         }],
@@ -6718,7 +6712,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: '',
       type_asset: 'cw20',
       address: 'terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj',
       denom_units: [{
@@ -8047,7 +8040,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: '',
       type_asset: 'cw20',
       address: 'terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj',
       denom_units: [{

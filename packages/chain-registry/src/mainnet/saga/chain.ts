@@ -149,7 +149,6 @@ const info: Chain = {
       account_page: 'https://explorer.nodestake.org/saga/account/${accountAddress}'
     }
   ],
-  keywords: [],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg'

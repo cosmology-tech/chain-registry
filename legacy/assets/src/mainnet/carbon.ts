@@ -1909,7 +1909,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: '',
       type_asset: 'cw20',
       address: 'terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj',
       denom_units: [{
@@ -2887,7 +2886,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: '',
       type_asset: 'cw20',
       address: 'terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj',
       denom_units: [{

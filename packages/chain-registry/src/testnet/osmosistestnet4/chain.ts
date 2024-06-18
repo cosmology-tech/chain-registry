@@ -55,8 +55,7 @@ const info: Chain = {
         provider: 'ChainLayer'
       },
       {
-        address: 'https://testnet-rest.osmosis.zone/',
-        provider: ''
+        address: 'https://testnet-rest.osmosis.zone/'
       }
     ],
     grpc: [{

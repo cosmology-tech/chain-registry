@@ -10,14 +10,12 @@ const info: AssetList = {
           aliases: ['microtsoar']
         }, {
           denom: 'tsoar',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }],
       base: 'utsoar',
       display: 'tsoar',
       name: 'tsoar',
       symbol: 'tsoar',
-      coingecko_id: '',
       keywords: ['DePin'],
       socials: {
         website: 'https://www.soarchain.com',

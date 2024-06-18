@@ -27,7 +27,7 @@ import * as _tinkernet from './tinkernet';
 import * as _xrpl from './xrpl';
 import * as _zilliqa from './zilliqa';
 import * as _berachain from './berachain';
-import * as _coinhall from './coinhall';
+import * as _hall from './hall';
 import * as _initia from './initia';
 import * as _mantrachain from './mantrachain';
 import * as _movement from './movement';
@@ -70,7 +70,7 @@ const assets: AssetList[] = [
   _xrpl.assets,
   _zilliqa.assets,
   _berachain.assets,
-  _coinhall.assets,
+  _hall.assets,
   _initia.assets,
   _mantrachain.assets,
   _movement.assets,
