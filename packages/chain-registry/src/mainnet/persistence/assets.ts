@@ -586,16 +586,16 @@ const info: AssetList = {
           }
         }],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/wbtc.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/wbtc.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg'
       },
       images: [{
           image_sync: {
             chain_name: 'osmosis',
             base_denom: 'factory/osmo1z0qrq605sjgcqpylfl4aa6s90x738j7m58wyatt0tdzflg2ha26q67k743/wbtc'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/wbtc.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/wbtc.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg'
         }]
     }
   ]

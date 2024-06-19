@@ -30,7 +30,8 @@ const info: Chain = {
     cosmwasm_enabled: false
   },
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/joltify/images/jolt.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/joltify/images/jolt.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/joltify/images/jolt.svg'
     }],
   description: 'Joltify is the First EVM compatible game-changing L1 Public Chain built on the Cosmos SDK for Real-World Assets (RWA) and Beyond.',
   apis: {

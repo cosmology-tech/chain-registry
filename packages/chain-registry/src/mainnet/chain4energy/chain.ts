@@ -357,6 +357,10 @@ const info: Chain = {
       {
         address: 'https://grpc-c4e.cryptech.com.ua:443',
         provider: 'Cryptech'
+      },
+      {
+        address: 'http://207.180.208.47:46657',
+        provider: 'NakoTurk'
       }
     ]
   },

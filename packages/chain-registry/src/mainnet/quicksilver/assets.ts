@@ -349,7 +349,9 @@ const info: AssetList = {
           image_sync: {
             chain_name: 'noble',
             base_denom: 'uusdc'
-          }
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
         }]
     }
   ]

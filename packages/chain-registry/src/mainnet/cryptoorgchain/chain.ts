@@ -142,11 +142,6 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.pub/crypto-com-chain',
       tx_page: 'https://ping.pub/crypto-com-chain/tx/${txHash}'
-    },
-    {
-      kind: 'yummy-explorer',
-      url: 'https://explorer.yummy.capital',
-      tx_page: 'https://explorer.yummy.capital/txs/${txHash}'
     }
   ],
   images: [

@@ -4436,16 +4436,18 @@ const assets: AssetList = {
           }
         }],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-token.png'
       },
       images: [{
           image_sync: {
             chain_name: 'oraichain',
             base_denom: 'orai'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-token.png',
+          theme: {
+            circle: true,
+            dark_mode: true
+          }
         }]
     },
     {
@@ -12640,9 +12642,9 @@ const assets: AssetList = {
         }],
       type_asset: 'ics20',
       base: 'ibc/2BF9656CAB0384A31167DB9B0254F0FB1CB4346A229BD7E5CBDCBB911C3740F7',
-      name: 'Teledisko DAO',
+      name: 'Teledisko DAO - Legacy',
       display: 'berlin',
-      symbol: 'BERLIN',
+      symbol: 'BERLIN-legacy',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -12744,8 +12746,7 @@ const assets: AssetList = {
             base_denom: 'uc4e'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chain4energy/images/c4e.png'
-        }],
-      keywords: ['osmosis_unlisted']
+        }]
     },
     {
       description: 'Bitmos opens doors for BRC20 tokens to thrive alongside established players in the Cosmos Network, revolutionizing decentralized finance (DeFi) for all.',
@@ -13643,6 +13644,10 @@ const assets: AssetList = {
           }
         }],
       images: [{
+          image_sync: {
+            chain_name: 'dhealth',
+            base_denom: 'udhp'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.svg'
         }]
@@ -13650,7 +13655,7 @@ const assets: AssetList = {
     {
       description: 'The native token of Furya',
       denom_units: [{
-          denom: 'ibc/42D0FBF9DDC72D7359D309A93A6DF9F6FDEE3987EA1C5B3CDE95C06FCE183F12',
+          denom: 'ibc/E4C60B9F95BF54CC085A5E39F6057ABD4DF92793D330EB884A36530F7E6804DE',
           exponent: 0,
           aliases: ['ufury']
         }, {
@@ -13658,7 +13663,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'ics20',
-      base: 'ibc/42D0FBF9DDC72D7359D309A93A6DF9F6FDEE3987EA1C5B3CDE95C06FCE183F12',
+      base: 'ibc/E4C60B9F95BF54CC085A5E39F6057ABD4DF92793D330EB884A36530F7E6804DE',
       name: 'furya',
       display: 'fury',
       symbol: 'FURY',
@@ -13667,27 +13672,16 @@ const assets: AssetList = {
           counterparty: {
             chain_name: 'furya',
             base_denom: 'ufury',
-            channel_id: 'channel-3'
+            channel_id: 'channel-8'
           },
           chain: {
-            channel_id: 'channel-8690',
-            path: 'transfer/channel-8690/ufury'
+            channel_id: 'channel-74222',
+            path: 'transfer/channel-74222/ufury'
           }
         }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg'
-      },
       images: [{
-          image_sync: {
-            chain_name: 'furya',
-            base_denom: 'ufury'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg',
-          theme: {
-            primary_color_hex: '#eaf143'
-          }
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
         }],
       keywords: ['gaming', 'staking']
     },
@@ -13808,6 +13802,10 @@ const assets: AssetList = {
           }
         }],
       images: [{
+          image_sync: {
+            chain_name: 'shido',
+            base_denom: 'shido'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg'
         }],
@@ -13946,6 +13944,10 @@ const assets: AssetList = {
           }
         }],
       images: [{
+          image_sync: {
+            chain_name: 'evmos',
+            base_denom: 'erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg'
         }],
@@ -14642,6 +14644,10 @@ const assets: AssetList = {
           }
         }],
       images: [{
+          image_sync: {
+            chain_name: 'bitsong',
+            base_denom: 'ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png'
         }]
     },
@@ -14673,6 +14679,10 @@ const assets: AssetList = {
           }
         }],
       images: [{
+          image_sync: {
+            chain_name: 'bitsong',
+            base_denom: 'ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png'
         }]
     },
@@ -14806,6 +14816,10 @@ const assets: AssetList = {
           }
         }],
       images: [{
+          image_sync: {
+            chain_name: 'seda',
+            base_denom: 'aseda'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/seda/images/seda.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/seda/images/seda.svg'
         }]
@@ -14942,6 +14956,10 @@ const assets: AssetList = {
           }
         }],
       images: [{
+          image_sync: {
+            chain_name: 'juno',
+            base_denom: 'cw20:juno1spjes0smg5yp40dl7gqyw0h8rn03tnmve06dd2m5acwgh6tlx86swha3xg'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/afa.png'
         }]
     },
@@ -15727,7 +15745,7 @@ const assets: AssetList = {
             chain_name: 'solana',
             base_denom: 'Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/usdt.png'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
         }],
       keywords: ['osmosis_unlisted']
     },
@@ -15843,7 +15861,7 @@ const assets: AssetList = {
             chain_name: 'solana',
             base_denom: 'mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/lst.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/msol.png'
         }],
       keywords: ['osmosis_unlisted']
     },
@@ -16004,6 +16022,115 @@ const assets: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
         }],
       keywords: ['osmosis_unlisted']
+    },
+    {
+      description: 'Whinecoin is an experimental memecoin by the Sommelier Finance team.',
+      denom_units: [{
+          denom: 'ibc/A8C568580D613F16F7E9075EA9FAD69FEBE0CC1F4AF46C60255FEC4459C166F1',
+          exponent: 0,
+          aliases: ['ATeTQcUkWGs7AZ15mCiFUWCW9EUL7KpDZEHCN1Y8pump', 'ibc/9D5DA3720001F91DD76B8F609A93F96688EC8185B54BF9A1A1450EB34FF2D912']
+        }, {
+          denom: 'whine',
+          exponent: 6
+        }],
+      type_asset: 'ics20',
+      base: 'ibc/A8C568580D613F16F7E9075EA9FAD69FEBE0CC1F4AF46C60255FEC4459C166F1',
+      name: 'WHINEcoin',
+      display: 'whine',
+      symbol: 'WHINE',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'solana',
+            base_denom: 'ATeTQcUkWGs7AZ15mCiFUWCW9EUL7KpDZEHCN1Y8pump',
+            channel_id: 'channel-1'
+          },
+          chain: {
+            channel_id: 'channel-71',
+            path: 'transfer/channel-71/ATeTQcUkWGs7AZ15mCiFUWCW9EUL7KpDZEHCN1Y8pump'
+          }
+        }, {
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'composable',
+            base_denom: 'ibc/9D5DA3720001F91DD76B8F609A93F96688EC8185B54BF9A1A1450EB34FF2D912',
+            channel_id: 'channel-3'
+          },
+          chain: {
+            channel_id: 'channel-1279',
+            path: 'transfer/channel-1279/transfer/channel-71/ATeTQcUkWGs7AZ15mCiFUWCW9EUL7KpDZEHCN1Y8pump'
+          }
+        }],
+      images: [{
+          image_sync: {
+            chain_name: 'solana',
+            base_denom: 'ATeTQcUkWGs7AZ15mCiFUWCW9EUL7KpDZEHCN1Y8pump'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/whine.png'
+        }]
+    },
+    {
+      description: 'A group of french boulanger who wanna bring fun and baguette on cosmos',
+      denom_units: [{
+          denom: 'factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/bag',
+          exponent: 0
+        }, {
+          denom: 'BAG',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      address: 'osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8',
+      base: 'factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/bag',
+      name: 'Baguette',
+      display: 'BAG',
+      symbol: 'BAG',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/BAG.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/BAG.png'
+        }]
+    },
+    {
+      description: 'The native token of Furya',
+      denom_units: [{
+          denom: 'ibc/42D0FBF9DDC72D7359D309A93A6DF9F6FDEE3987EA1C5B3CDE95C06FCE183F12',
+          exponent: 0,
+          aliases: ['ufury']
+        }, {
+          denom: 'fury',
+          exponent: 6
+        }],
+      type_asset: 'ics20',
+      base: 'ibc/42D0FBF9DDC72D7359D309A93A6DF9F6FDEE3987EA1C5B3CDE95C06FCE183F12',
+      name: 'furya',
+      display: 'fury',
+      symbol: 'FURY',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'furya',
+            base_denom: 'ufury',
+            channel_id: 'channel-3'
+          },
+          chain: {
+            channel_id: 'channel-8690',
+            path: 'transfer/channel-8690/ufury'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
+      },
+      images: [{
+          image_sync: {
+            chain_name: 'furya',
+            base_denom: 'ufury'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
+        }],
+      keywords: ['gaming', 'staking']
     },
     {
       description: 'PUNDIX token is the native token that functions within the Pundi X ecosystem, including PundiX Chain and XPOS.',
@@ -16345,28 +16472,6 @@ const assets: AssetList = {
             base_denom: 'factory/migaloo1eqntnl6tzcj9h86psg4y4h6hh05g2h9nj8e09l/ugrac'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/grac.png'
-        }]
-    },
-    {
-      description: 'A group of french boulanger who wanna bring fun and baguette on cosmos',
-      denom_units: [{
-          denom: 'factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/bag',
-          exponent: 0
-        }, {
-          denom: 'BAG',
-          exponent: 6
-        }],
-      type_asset: 'sdk.coin',
-      address: 'osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8',
-      base: 'factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/bag',
-      name: 'Baguette',
-      display: 'BAG',
-      symbol: 'BAG',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/BAG.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/BAG.png'
         }]
     }
   ]
