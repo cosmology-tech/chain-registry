@@ -38,6 +38,10 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
+        address: 'https://source.rpc.bccnodes.com/',
+        provider: 'BccNodes'
+      },
+      {
         address: 'https://source.rpc.moonbridge.team/',
         provider: 'MoonBridge'
       },
@@ -106,6 +110,10 @@ const info: Chain = {
       {
         address: 'https://api.source.nodestake.top',
         provider: 'NodeStake'
+      },
+      {
+        address: 'https://source.lcd.bccnodes.com/',
+        provider: 'BccNodes'
       },
       {
         address: 'https://api-source.nodeist.net',
@@ -180,6 +188,10 @@ const info: Chain = {
       {
         address: 'source-mainnet-grpc.itrocket.net:32090',
         provider: 'ITRocket'
+      },
+      {
+        address: 'source.grpc.bccnodes.com:443',
+        provider: 'BccNodes'
       },
       {
         address: 'http://source.grpc.m.stavr.tech:9590',
