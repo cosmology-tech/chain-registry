@@ -50,6 +50,7 @@ const info: AssetList = {
     },
     {
       description: 'has a hat',
+      extended_description: 'Chihuahuawifhat is the biggest cult of the Chihuahua chain aiming to take over Cosmos. The token is $BADDOG and we\'re not playing around.',
       denom_units: [{
           denom: 'factory/chihuahua1x4q2vkrz4dfgd9hcw0p5m2f2nuv2uqmt9xr8k2/achihuahuawifhat',
           exponent: 0
@@ -65,8 +66,17 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/baddog.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/baddog.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/baddog.png',
+          theme: {
+            primary_color_hex: '#F7E3C0',
+            background_color_hex: '#F7E3C0',
+            circle: true
+          }
+        }],
+      socials: {
+        website: 'https://baddog.lol/',
+        twitter: 'https://x.com/chihuahuawifhat'
+      }
     },
     {
       description: 'Woof',

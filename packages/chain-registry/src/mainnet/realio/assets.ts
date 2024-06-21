@@ -4,6 +4,7 @@ const info: AssetList = {
   chain_name: 'realio',
   assets: [{
       description: 'The native currency of the Realio Network.',
+      extended_description: 'An interoperable Layer-1 multi-chain Web3 ecosystem focused on the issuance and management of digitally native real-world assets (RWAs). Its design is fully open-source, permissionless, and purpose-built.',
       denom_units: [{
           denom: 'ario',
           exponent: 0
@@ -22,8 +23,17 @@ const info: AssetList = {
       coingecko_id: 'realio-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rio.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rio.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rio.svg',
+          theme: {
+            primary_color_hex: '#000000',
+            background_color_hex: '#000000',
+            circle: true
+          }
+        }],
+      socials: {
+        webiste: 'https://realio.network/',
+        twitter: 'https://x.com/realio_network'
+      }
     }, {
       description: 'A hybrid equity token that represent ownership of the Realio Ecosystem and provides utility functions on the Network.',
       denom_units: [{

@@ -88,6 +88,7 @@ export * as stargazetestnet from './stargazetestnet';
 export * as statesettestnet from './statesettestnet';
 export * as stridetestnet from './stridetestnet';
 export * as swisstroniktestnet from './swisstroniktestnet';
+export * as symphonytestnet from './symphonytestnet';
 export * as temporaltestnet from './temporaltestnet';
 export * as terpnettestnet from './terpnettestnet';
 export * as terpnettestnet2 from './terpnettestnet2';

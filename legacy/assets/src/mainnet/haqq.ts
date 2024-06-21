@@ -601,6 +601,45 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Stride',
+      denom_units: [{
+          denom: 'ibc/C59BA2DCB37CC726B34A6D203EEF52B06D7477ED20070821C026F78BB54C9159',
+          exponent: 0,
+          aliases: ['ustrd']
+        }, {
+          denom: 'strd',
+          exponent: 6
+        }],
+      base: 'ibc/C59BA2DCB37CC726B34A6D203EEF52B06D7477ED20070821C026F78BB54C9159',
+      name: 'Stride',
+      display: 'strd',
+      symbol: 'STRD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+      },
+      coingecko_id: 'stride',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+        }],
+      socials: {
+        website: 'https://stride.zone/',
+        twitter: 'https://twitter.com/stride_zone'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-240',
+            base_denom: 'ustrd',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-7'
+          }
+        }]
+    },
+    {
       description: 'The native staking and governance token of Kava',
       denom_units: [{
           denom: 'ibc/AB083B5EEEE4A922F76D6348F13548170C2305DF7E3A1BB203362B3A03224F3F',
@@ -961,6 +1000,45 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-2'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Stride',
+      denom_units: [{
+          denom: 'ibc/C59BA2DCB37CC726B34A6D203EEF52B06D7477ED20070821C026F78BB54C9159',
+          exponent: 0,
+          aliases: ['ustrd']
+        }, {
+          denom: 'strd',
+          exponent: 6
+        }],
+      base: 'ibc/C59BA2DCB37CC726B34A6D203EEF52B06D7477ED20070821C026F78BB54C9159',
+      name: 'Stride',
+      display: 'strd',
+      symbol: 'STRD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+      },
+      coingecko_id: 'stride',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+        }],
+      socials: {
+        website: 'https://stride.zone/',
+        twitter: 'https://twitter.com/stride_zone'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-240',
+            base_denom: 'ustrd',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-7'
           }
         }]
     }

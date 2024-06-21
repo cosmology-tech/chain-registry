@@ -823,6 +823,41 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native EVM, governance and staking token of the Haqq Network',
+      denom_units: [{
+          denom: 'ibc/255BEB856BFBC1B75A3C349CF769E9FADEB595804F4FC688A72D651576B9180E',
+          exponent: 0,
+          aliases: ['aISLM']
+        }, {
+          denom: 'ISLM',
+          exponent: 18
+        }],
+      base: 'ibc/255BEB856BFBC1B75A3C349CF769E9FADEB595804F4FC688A72D651576B9180E',
+      name: 'Islamic Coin',
+      display: 'ISLM',
+      symbol: 'ISLM',
+      coingecko_id: 'islamic-coin',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-7',
+            base_denom: 'aISLM',
+            chain_name: 'haqq'
+          },
+          chain: {
+            channel_id: 'channel-240'
+          }
+        }]
+    },
+    {
       description: 'The INJ token is the native governance token for the Injective chain.',
       denom_units: [{
           denom: 'ibc/A7454562FF29FE068F42F9DE4805ABEF54F599D1720B345D6518D9B5C64EA6D2',
@@ -2467,6 +2502,41 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-9'
+          }
+        }]
+    },
+    {
+      description: 'The native EVM, governance and staking token of the Haqq Network',
+      denom_units: [{
+          denom: 'ibc/255BEB856BFBC1B75A3C349CF769E9FADEB595804F4FC688A72D651576B9180E',
+          exponent: 0,
+          aliases: ['aISLM']
+        }, {
+          denom: 'ISLM',
+          exponent: 18
+        }],
+      base: 'ibc/255BEB856BFBC1B75A3C349CF769E9FADEB595804F4FC688A72D651576B9180E',
+      name: 'Islamic Coin',
+      display: 'ISLM',
+      symbol: 'ISLM',
+      coingecko_id: 'islamic-coin',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-7',
+            base_denom: 'aISLM',
+            chain_name: 'haqq'
+          },
+          chain: {
+            channel_id: 'channel-240'
           }
         }]
     },

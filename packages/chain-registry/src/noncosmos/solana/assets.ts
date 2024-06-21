@@ -503,7 +503,12 @@ const info: AssetList = {
           exponent: 6
         }],
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/whine.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/whine.png',
+          theme: {
+            primary_color_hex: '#FFFFFF',
+            background_color_hex: '#FFFFFF',
+            circle: false
+          }
         }],
       socials: {
         website: 'https://whinecoin.com/',

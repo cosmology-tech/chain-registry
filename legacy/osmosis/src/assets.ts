@@ -14985,7 +14985,11 @@ const assets: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.svg',
+          theme: {
+            primary_color_hex: '#639BFF',
+            circle: true
+          }
         }],
       keywords: ['memecoin'],
       socials: {

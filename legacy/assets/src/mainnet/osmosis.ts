@@ -9831,8 +9831,17 @@ const assets: AssetList = {
       coingecko_id: 'realio-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rio.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rio.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rio.svg',
+          theme: {
+            primary_color_hex: '#000000',
+            background_color_hex: '#000000',
+            circle: true
+          }
         }],
+      socials: {
+        webiste: 'https://realio.network/',
+        twitter: 'https://x.com/realio_network'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -10387,8 +10396,17 @@ const assets: AssetList = {
       coingecko_id: 'six-sigma',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg',
+          theme: {
+            primary_color_hex: '#C0A15B',
+            background_color_hex: '#00000000',
+            circle: false
+          }
         }],
+      socials: {
+        website: 'https://sgenetwork.io/',
+        twitter: 'https://x.com/sge_network'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -12449,8 +12467,17 @@ const assets: AssetList = {
       coingecko_id: 'realio-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rio.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rio.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rio.svg',
+          theme: {
+            primary_color_hex: '#000000',
+            background_color_hex: '#000000',
+            circle: true
+          }
         }],
+      socials: {
+        webiste: 'https://realio.network/',
+        twitter: 'https://x.com/realio_network'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -13005,8 +13032,17 @@ const assets: AssetList = {
       coingecko_id: 'six-sigma',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg',
+          theme: {
+            primary_color_hex: '#C0A15B',
+            background_color_hex: '#00000000',
+            circle: false
+          }
         }],
+      socials: {
+        website: 'https://sgenetwork.io/',
+        twitter: 'https://x.com/sge_network'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
