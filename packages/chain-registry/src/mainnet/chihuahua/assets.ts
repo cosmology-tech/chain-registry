@@ -243,11 +243,11 @@ const info: AssetList = {
           counterparty: {
             chain_name: 'migaloo',
             base_denom: 'factory/migaloo1nsskhvvh0msm7d5ke2kfg24a8d4jecsnxd28s27h0uz5kf9ap60shlqmcl/ampGASH',
-            channel_id: 'channel-39'
+            channel_id: 'channel-10'
           },
           chain: {
-            channel_id: 'channel-10',
-            path: 'transfer/channel-10/factory/migaloo1nsskhvvh0msm7d5ke2kfg24a8d4jecsnxd28s27h0uz5kf9ap60shlqmcl/ampGASH'
+            channel_id: 'channel-39',
+            path: 'transfer/channel-39/factory/migaloo1nsskhvvh0msm7d5ke2kfg24a8d4jecsnxd28s27h0uz5kf9ap60shlqmcl/ampGASH'
           }
         }],
       images: [{
@@ -259,6 +259,43 @@ const info: AssetList = {
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ampgash.png'
+      }
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/DBBDE1753EFA93F09C468DB5E384861BB741D4AA73E9C7032D139BB2C99FDD65',
+          exponent: 0,
+          aliases: ['factory/migaloo1etlu2h30tjvv8rfa4fwdc43c92f6ul5w9acxzk/uguppy']
+        }, {
+          denom: 'GUPPY',
+          exponent: 6
+        }],
+      type_asset: 'ics20',
+      base: 'ibc/DBBDE1753EFA93F09C468DB5E384861BB741D4AA73E9C7032D139BB2C99FDD65',
+      name: 'GUPPY',
+      display: 'GUPPY',
+      symbol: 'GUPPY',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'migaloo',
+            base_denom: 'factory/migaloo1etlu2h30tjvv8rfa4fwdc43c92f6ul5w9acxzk/uguppy',
+            channel_id: 'channel-10'
+          },
+          chain: {
+            channel_id: 'channel-39',
+            path: 'transfer/channel-39/factory/migaloo1etlu2h30tjvv8rfa4fwdc43c92f6ul5w9acxzk/uguppy'
+          }
+        }],
+      images: [{
+          image_sync: {
+            chain_name: 'migaloo',
+            base_denom: 'factory/migaloo1etlu2h30tjvv8rfa4fwdc43c92f6ul5w9acxzk/uguppy'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/guppy.png'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/guppy.png'
       }
     }
   ]

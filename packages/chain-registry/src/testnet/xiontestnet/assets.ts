@@ -27,7 +27,7 @@ const info: AssetList = {
     },
     {
       denom_units: [{
-          denom: 'ibc/05007A23A23D8B3D286EC4A541189D86C0B76FD769008E4C85EBE977DDA437D3',
+          denom: 'ibc/33517D439F5E545A1AAB148FAE43AAE17CF68FFB9BC97AE0048A3E3B64518C58',
           exponent: 0,
           aliases: ['uaxl']
         }, {
@@ -35,7 +35,7 @@ const info: AssetList = {
           exponent: 6
         }],
       type_asset: 'ics20',
-      base: 'ibc/05007A23A23D8B3D286EC4A541189D86C0B76FD769008E4C85EBE977DDA437D3',
+      base: 'ibc/33517D439F5E545A1AAB148FAE43AAE17CF68FFB9BC97AE0048A3E3B64518C58',
       name: 'Axelar AXL Token',
       display: 'axl',
       symbol: 'AXL',
@@ -44,11 +44,11 @@ const info: AssetList = {
           counterparty: {
             chain_name: 'axelartestnet',
             base_denom: 'uaxl',
-            channel_id: 'channel-462'
+            channel_id: 'channel-521'
           },
           chain: {
-            channel_id: 'channel-486',
-            path: 'transfer/channel-486/uaxl'
+            channel_id: 'channel-225057',
+            path: 'transfer/channel-225057/uaxl'
           }
         }],
       images: [{

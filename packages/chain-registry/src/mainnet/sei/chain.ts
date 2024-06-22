@@ -27,7 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'sei-cosmos v0.3.13',
+    cosmos_sdk_version: 'sei-cosmos v0.3.19',
     cosmwasm_enabled: true,
     cosmwasm_version: 'sei-wasmd v0.1.5'
   },

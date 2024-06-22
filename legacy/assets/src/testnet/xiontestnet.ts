@@ -5,14 +5,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Axelar',
       denom_units: [{
-          denom: 'ibc/05007A23A23D8B3D286EC4A541189D86C0B76FD769008E4C85EBE977DDA437D3',
+          denom: 'ibc/33517D439F5E545A1AAB148FAE43AAE17CF68FFB9BC97AE0048A3E3B64518C58',
           exponent: 0,
           aliases: ['uaxl']
         }, {
           denom: 'axl',
           exponent: 6
         }],
-      base: 'ibc/05007A23A23D8B3D286EC4A541189D86C0B76FD769008E4C85EBE977DDA437D3',
+      base: 'ibc/33517D439F5E545A1AAB148FAE43AAE17CF68FFB9BC97AE0048A3E3B64518C58',
       name: 'Axelar',
       display: 'axl',
       symbol: 'AXL',
@@ -28,12 +28,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-462',
+            channel_id: 'channel-521',
             base_denom: 'uaxl',
             chain_name: 'axelartestnet'
           },
           chain: {
-            channel_id: 'channel-486'
+            channel_id: 'channel-225057'
           }
         }]
     },
@@ -201,14 +201,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Axelar',
       denom_units: [{
-          denom: 'ibc/05007A23A23D8B3D286EC4A541189D86C0B76FD769008E4C85EBE977DDA437D3',
+          denom: 'ibc/33517D439F5E545A1AAB148FAE43AAE17CF68FFB9BC97AE0048A3E3B64518C58',
           exponent: 0,
           aliases: ['uaxl']
         }, {
           denom: 'axl',
           exponent: 6
         }],
-      base: 'ibc/05007A23A23D8B3D286EC4A541189D86C0B76FD769008E4C85EBE977DDA437D3',
+      base: 'ibc/33517D439F5E545A1AAB148FAE43AAE17CF68FFB9BC97AE0048A3E3B64518C58',
       name: 'Axelar',
       display: 'axl',
       symbol: 'AXL',
@@ -224,12 +224,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-462',
+            channel_id: 'channel-521',
             base_denom: 'uaxl',
             chain_name: 'axelartestnet'
           },
           chain: {
-            channel_id: 'channel-486'
+            channel_id: 'channel-225057'
           }
         }]
     },
