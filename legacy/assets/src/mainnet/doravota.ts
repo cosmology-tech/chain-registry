@@ -45,7 +45,7 @@ const assets: AssetList = {
       description: 'The native token of Archway network',
       denom_units: [
         {
-          denom: 'ibc/1150925B42A4D5ED6A82549350330B1B79AA62ECD7891C49FD3C8109221AE4C1',
+          denom: 'ibc/2128CEA1302902DC2F28B762CB8B596D741AAD065F6202D81392A2A7C9E180EA',
           exponent: 0,
           aliases: ['aarch']
         },
@@ -58,7 +58,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/1150925B42A4D5ED6A82549350330B1B79AA62ECD7891C49FD3C8109221AE4C1',
+      base: 'ibc/2128CEA1302902DC2F28B762CB8B596D741AAD065F6202D81392A2A7C9E180EA',
       name: 'Archway',
       display: 'arch',
       symbol: 'ARCH',
@@ -78,12 +78,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-101',
+            channel_id: 'channel-146',
             base_denom: 'aarch',
             chain_name: 'archway'
           },
           chain: {
-            channel_id: 'channel-10'
+            channel_id: 'channel-13'
           }
         }]
     },
@@ -216,7 +216,7 @@ const assets: AssetList = {
       description: 'The native token of Archway network',
       denom_units: [
         {
-          denom: 'ibc/1150925B42A4D5ED6A82549350330B1B79AA62ECD7891C49FD3C8109221AE4C1',
+          denom: 'ibc/2128CEA1302902DC2F28B762CB8B596D741AAD065F6202D81392A2A7C9E180EA',
           exponent: 0,
           aliases: ['aarch']
         },
@@ -229,7 +229,7 @@ const assets: AssetList = {
           exponent: 18
         }
       ],
-      base: 'ibc/1150925B42A4D5ED6A82549350330B1B79AA62ECD7891C49FD3C8109221AE4C1',
+      base: 'ibc/2128CEA1302902DC2F28B762CB8B596D741AAD065F6202D81392A2A7C9E180EA',
       name: 'Archway',
       display: 'arch',
       symbol: 'ARCH',
@@ -249,12 +249,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-101',
+            channel_id: 'channel-146',
             base_denom: 'aarch',
             chain_name: 'archway'
           },
           chain: {
-            channel_id: 'channel-10'
+            channel_id: 'channel-13'
           }
         }]
     },

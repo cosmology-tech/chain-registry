@@ -11947,6 +11947,7 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Wrapped Bitcoin (WBTC) is an ERC20 token backed 1:1 with Bitcoin. Completely transparent. 100% verifiable. Community led.',
       denom_units: [{
           denom: 'factory/osmo1z0qrq605sjgcqpylfl4aa6s90x738j7m58wyatt0tdzflg2ha26q67k743/wbtc',
           exponent: 0,
@@ -16096,6 +16097,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'An alloy of BTC asset variants on Osmosis.',
+      extended_description: 'Multiple Bitcoin variants on Osmosis comprise the liquidity backing of a tokenized transmuter pool to create an alloy of BTC.',
+      denom_units: [{
+          denom: 'factory/osmo1z6r6qdknhgsc0zeracktgpcxf43j6sekq07nw8sxduc9lg0qjjlqfu25e3/alloyed/allBTC',
+          exponent: 0
+        }, {
+          denom: 'allBTC',
+          exponent: 8
+        }],
+      type_asset: 'sdk.coin',
+      address: 'osmo1z6r6qdknhgsc0zeracktgpcxf43j6sekq07nw8sxduc9lg0qjjlqfu25e3',
+      base: 'factory/osmo1z6r6qdknhgsc0zeracktgpcxf43j6sekq07nw8sxduc9lg0qjjlqfu25e3/alloyed/allBTC',
+      name: 'Alloyed BTC',
+      display: 'allBTC',
+      symbol: 'allBTC',
+      traces: [{
+          type: 'synthetic',
+          counterparty: {
+            chain_name: 'bitcoin',
+            base_denom: 'sat'
+          },
+          provider: 'Osmosis'
+        }],
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/allBTC.svg'
+        }, {
+          image_sync: {
+            chain_name: 'bitcoin',
+            base_denom: 'sat'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.png'
+        }]
+    },
+    {
       description: 'The native token of Furya',
       denom_units: [{
           denom: 'ibc/42D0FBF9DDC72D7359D309A93A6DF9F6FDEE3987EA1C5B3CDE95C06FCE183F12',
@@ -16479,37 +16514,38 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'An alloy of BTC asset variants on Osmosis.',
-      extended_description: 'Multiple Bitcoin variants on Osmosis comprise the liquidity backing of a tokenized transmuter pool to create an alloy of BTC.',
+      description: 'N43 a BitSong Music FanToken',
       denom_units: [{
-          denom: 'factory/osmo1z6r6qdknhgsc0zeracktgpcxf43j6sekq07nw8sxduc9lg0qjjlqfu25e3/alloyed/allBTC',
-          exponent: 0
+          denom: 'ibc/E4FFAACCDB7D55CE2D257DF637C00158CB841F11D0013B2D03E31FF7800A2C58',
+          exponent: 0,
+          aliases: ['ft387C1C279D962ED80C09C1D592A92C4275FD7C5D']
         }, {
-          denom: 'allBTC',
-          exponent: 8
+          denom: 'n43',
+          exponent: 6
         }],
-      type_asset: 'sdk.coin',
-      address: 'osmo1z6r6qdknhgsc0zeracktgpcxf43j6sekq07nw8sxduc9lg0qjjlqfu25e3',
-      base: 'factory/osmo1z6r6qdknhgsc0zeracktgpcxf43j6sekq07nw8sxduc9lg0qjjlqfu25e3/alloyed/allBTC',
-      name: 'Alloyed BTC',
-      display: 'allBTC',
-      symbol: 'allBTC',
+      type_asset: 'ics20',
+      base: 'ibc/E4FFAACCDB7D55CE2D257DF637C00158CB841F11D0013B2D03E31FF7800A2C58',
+      name: 'N43 FanToken',
+      display: 'n43',
+      symbol: 'N43',
       traces: [{
-          type: 'synthetic',
+          type: 'ibc',
           counterparty: {
-            chain_name: 'bitcoin',
-            base_denom: 'sat'
+            chain_name: 'bitsong',
+            base_denom: 'ft387C1C279D962ED80C09C1D592A92C4275FD7C5D',
+            channel_id: 'channel-0'
           },
-          provider: 'Osmosis'
+          chain: {
+            channel_id: 'channel-73',
+            path: 'transfer/channel-73/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D'
+          }
         }],
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/allBTC.svg'
-        }, {
           image_sync: {
-            chain_name: 'bitcoin',
-            base_denom: 'sat'
+            chain_name: 'bitsong',
+            base_denom: 'ft387C1C279D962ED80C09C1D592A92C4275FD7C5D'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png'
         }]
     }
   ]

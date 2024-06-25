@@ -489,14 +489,14 @@ const assets: AssetList = {
     {
       description: 'The native staking and governance token of the Theta testnet version of the Dora Vota.',
       denom_units: [{
-          denom: 'ibc/CF326F6F0E8DCCD631159F23A60F1F5F31C81A46406D88641C130BA16D75280B',
+          denom: 'ibc/31F64223268EE70F0B172E500148208EA5580869A1054D860B35A25B87930AC3',
           exponent: 0,
           aliases: ['peaka']
         }, {
           denom: 'DORA',
           exponent: 18
         }],
-      base: 'ibc/CF326F6F0E8DCCD631159F23A60F1F5F31C81A46406D88641C130BA16D75280B',
+      base: 'ibc/31F64223268EE70F0B172E500148208EA5580869A1054D860B35A25B87930AC3',
       name: 'Dora Vota',
       display: 'DORA',
       symbol: 'DORA',
@@ -511,12 +511,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-10',
+            channel_id: 'channel-13',
             base_denom: 'peaka',
             chain_name: 'doravota'
           },
           chain: {
-            channel_id: 'channel-101'
+            channel_id: 'channel-146'
           }
         }]
     },
@@ -1604,14 +1604,14 @@ const assets: AssetList = {
     {
       description: 'The native staking and governance token of the Theta testnet version of the Dora Vota.',
       denom_units: [{
-          denom: 'ibc/CF326F6F0E8DCCD631159F23A60F1F5F31C81A46406D88641C130BA16D75280B',
+          denom: 'ibc/31F64223268EE70F0B172E500148208EA5580869A1054D860B35A25B87930AC3',
           exponent: 0,
           aliases: ['peaka']
         }, {
           denom: 'DORA',
           exponent: 18
         }],
-      base: 'ibc/CF326F6F0E8DCCD631159F23A60F1F5F31C81A46406D88641C130BA16D75280B',
+      base: 'ibc/31F64223268EE70F0B172E500148208EA5580869A1054D860B35A25B87930AC3',
       name: 'Dora Vota',
       display: 'DORA',
       symbol: 'DORA',
@@ -1626,12 +1626,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-10',
+            channel_id: 'channel-13',
             base_denom: 'peaka',
             chain_name: 'doravota'
           },
           chain: {
-            channel_id: 'channel-101'
+            channel_id: 'channel-146'
           }
         }]
     },
