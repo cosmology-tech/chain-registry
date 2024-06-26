@@ -5,12 +5,13 @@
 </p>
 
 <p align="center" width="100%">
-  
   <a href="https://github.com/cosmology-tech/chain-registry/actions/workflows/run-tests.yml">
     <img height="20" src="https://github.com/cosmology-tech/chain-registry/actions/workflows/run-tests.yml/badge.svg" />
   </a>
-   <a href="https://github.com/cosmology-tech/chain-registry/blob/main/LICENSE"><img height="20" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
-   <a href="https://www.npmjs.com/package/chain-registry"><img height="20" src="https://img.shields.io/npm/dt/chain-registry"></a>
+  <img height="20" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcosmology-tech%2Flib-count%2Fmain%2Foutput%2Fbadges%2Fproducts%2Fchain-registry%2Ftotal.json" />  
+    <img height="20" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcosmology-tech%2Flib-count%2Fmain%2Foutput%2Fbadges%2Fproducts%2Fchain-registry%2Fmonthly.json" />
+    <br />
+  <a href="https://github.com/cosmology-tech/chain-registry/blob/main/LICENSE"><img height="20" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
    <a href="https://www.npmjs.com/package/chain-registry"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=packages%2Fchain-registry%2Fpackage.json"></a>
 </p>
 
@@ -229,6 +230,22 @@ Finally, commit and publish the code!
 ```sh
 git commit -am "new registry updates"
 lerna publish
+```
+
+### Updating Submodule Data
+
+Use the following Makefile commands to update the data in the submodules. These commands will ensure that your submodules are synchronized with their respective remote repositories.
+
+- **update-cosmos**: Updates the submodule to the latest commits of the `cosmos/chain-registry` repository. This should be used to pull the most current production data into your local environment.
+
+```
+make update-cosmos
+```
+
+- **update-fixtures**: Updates the submodule to the latest commits of the `cosmology-tech/chain-registry-fixtures` repository. Use this for testing purposes to ensure that your tests are running against stable, controlled data sets.
+
+```
+make update-fixtures
 ```
 
 ## Related
