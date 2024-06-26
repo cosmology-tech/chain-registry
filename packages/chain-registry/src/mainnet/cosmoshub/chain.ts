@@ -53,10 +53,6 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'https://rpc.cosmoshub.strange.love',
-        provider: 'strangelove-ventures'
-      },
-      {
         address: 'https://rpc-cosmoshub.ecostake.com',
         provider: 'ecostake'
       },

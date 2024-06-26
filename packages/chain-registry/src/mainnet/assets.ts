@@ -18,6 +18,7 @@ import * as _bandchain from './bandchain';
 import * as _beezee from './beezee';
 import * as _bitcanna from './bitcanna';
 import * as _bitsong from './bitsong';
+import * as _bluechip from './bluechip';
 import * as _bluzelle from './bluzelle';
 import * as _bostrom from './bostrom';
 import * as _canto from './canto';
@@ -188,6 +189,7 @@ const assets: AssetList[] = [
   _beezee.assets,
   _bitcanna.assets,
   _bitsong.assets,
+  _bluechip.assets,
   _bluzelle.assets,
   _bostrom.assets,
   _canto.assets,
