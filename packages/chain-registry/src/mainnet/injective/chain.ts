@@ -37,7 +37,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://injective-1-public-rpc.mesa.ec1-prod.newmetric.xyz',
+        address: 'https://6d0ff611-9009-4bd1-a7a7-acec7c70d454.injective-1.mesa-rpc.newmetric.xyz',
         provider: 'NewMetric'
       },
       {
@@ -95,7 +95,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://injective-1-public-rest.mesa.ec1-prod.newmetric.xyz',
+        address: 'https://6d0ff611-9009-4bd1-a7a7-acec7c70d454.injective-1.mesa-rest.newmetric.xyz',
         provider: 'NewMetric'
       },
       {
@@ -153,7 +153,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'k8s-injectiv-publicin-731c880328-0f3d7889b57e31a3.elb.eu-central-1.amazonaws.com:80',
+        address: '6d0ff611-9009-4bd1-a7a7-acec7c70d454.injective-1.mesa-grpc.newmetric.xyz:80',
         provider: 'NewMetric'
       },
       {

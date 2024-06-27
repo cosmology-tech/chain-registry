@@ -2282,6 +2282,43 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native staking token of Self Chain.',
+      denom_units: [{
+          denom: 'ibc/A3F82E2FAA04727360424B2A7F40FCBA8880E4278F1A5D3DFA4218AF9B0CF7A1',
+          exponent: 0,
+          aliases: ['uslf']
+        }, {
+          denom: 'slf',
+          exponent: 6
+        }],
+      base: 'ibc/A3F82E2FAA04727360424B2A7F40FCBA8880E4278F1A5D3DFA4218AF9B0CF7A1',
+      name: 'Self',
+      display: 'slf',
+      symbol: 'SLF',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/self/images/self.png'
+      },
+      coingecko_id: 'self-chain',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/self/images/self.png'
+        }],
+      socials: {
+        website: 'https://selfchain.xyz',
+        twitter: 'https://x.com/selfchainxyz'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'uslf',
+            chain_name: 'self'
+          },
+          chain: {
+            channel_id: 'channel-157'
+          }
+        }]
+    },
+    {
       description: 'The native EVM and Wasm, governance and staking token of the Shido Chain',
       denom_units: [{
           denom: 'ibc/69610BB9AA825ED55EC650937F3AD9FD94FEFE7488354C0824C65C9DD04D4511',
@@ -4222,6 +4259,43 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-103'
+          }
+        }]
+    },
+    {
+      description: 'The native staking token of Self Chain.',
+      denom_units: [{
+          denom: 'ibc/A3F82E2FAA04727360424B2A7F40FCBA8880E4278F1A5D3DFA4218AF9B0CF7A1',
+          exponent: 0,
+          aliases: ['uslf']
+        }, {
+          denom: 'slf',
+          exponent: 6
+        }],
+      base: 'ibc/A3F82E2FAA04727360424B2A7F40FCBA8880E4278F1A5D3DFA4218AF9B0CF7A1',
+      name: 'Self',
+      display: 'slf',
+      symbol: 'SLF',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/self/images/self.png'
+      },
+      coingecko_id: 'self-chain',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/self/images/self.png'
+        }],
+      socials: {
+        website: 'https://selfchain.xyz',
+        twitter: 'https://x.com/selfchainxyz'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'uslf',
+            chain_name: 'self'
+          },
+          chain: {
+            channel_id: 'channel-157'
           }
         }]
     },

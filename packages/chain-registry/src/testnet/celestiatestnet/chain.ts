@@ -4,7 +4,7 @@ const info: Chain = {
   chain_name: 'celestiatestnet',
   chain_id: 'blockspacerace-0',
   pretty_name: 'Blockspace Race Testnet',
-  status: 'live',
+  status: 'killed',
   network_type: 'testnet',
   bech32_prefix: 'celestia',
   daemon_name: 'celestia-appd',

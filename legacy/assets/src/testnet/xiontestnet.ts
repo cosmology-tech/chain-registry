@@ -125,6 +125,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Ondo US Dollar Yield',
+      denom_units: [{
+          denom: 'ibc/A8A749F55FBD297CA013B5B1A7524E39244C2B7B95331603E3E9D801B7DCC23D',
+          exponent: 0,
+          aliases: ['ausdy']
+        }, {
+          denom: 'usdy',
+          exponent: 18
+        }],
+      base: 'ibc/A8A749F55FBD297CA013B5B1A7524E39244C2B7B95331603E3E9D801B7DCC23D',
+      display: 'usdy',
+      name: 'Ondo US Dollar Yield',
+      symbol: 'USDY',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-147',
+            base_denom: 'ausdy',
+            chain_name: 'nobletestnet'
+          },
+          chain: {
+            channel_id: 'channel-489'
+          }
+        }]
+    },
+    {
       description: 'The native token of Osmosis',
       denom_units: [{
           denom: 'ibc/484532EB74866F3FB8A71F909F7B1B470FE2E66313DA0A1F9EE5B7C5C046D195',
@@ -313,6 +347,40 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-147',
             base_denom: 'ulove',
+            chain_name: 'nobletestnet'
+          },
+          chain: {
+            channel_id: 'channel-489'
+          }
+        }]
+    },
+    {
+      description: 'Ondo US Dollar Yield',
+      denom_units: [{
+          denom: 'ibc/A8A749F55FBD297CA013B5B1A7524E39244C2B7B95331603E3E9D801B7DCC23D',
+          exponent: 0,
+          aliases: ['ausdy']
+        }, {
+          denom: 'usdy',
+          exponent: 18
+        }],
+      base: 'ibc/A8A749F55FBD297CA013B5B1A7524E39244C2B7B95331603E3E9D801B7DCC23D',
+      display: 'usdy',
+      name: 'Ondo US Dollar Yield',
+      symbol: 'USDY',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-147',
+            base_denom: 'ausdy',
             chain_name: 'nobletestnet'
           },
           chain: {

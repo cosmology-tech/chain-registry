@@ -111,6 +111,7 @@ export * as scorum from './scorum';
 export * as secretnetwork from './secretnetwork';
 export * as seda from './seda';
 export * as sei from './sei';
+export * as self from './self';
 export * as sentinel from './sentinel';
 export * as sge from './sge';
 export * as shareledger from './shareledger';

@@ -141,6 +141,7 @@ import * as _scorum from './scorum';
 import * as _secretnetwork from './secretnetwork';
 import * as _seda from './seda';
 import * as _sei from './sei';
+import * as _self from './self';
 import * as _sentinel from './sentinel';
 import * as _sge from './sge';
 import * as _shareledger from './shareledger';
@@ -314,6 +315,7 @@ const chains: Chain[] = [
   _secretnetwork.chain,
   _seda.chain,
   _sei.chain,
+  _self.chain,
   _sentinel.chain,
   _sge.chain,
   _shareledger.chain,

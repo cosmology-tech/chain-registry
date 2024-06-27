@@ -3588,6 +3588,43 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native staking token of Self Chain.',
+      denom_units: [{
+          denom: 'ibc/07C1552AD0D5C8FE63F7E9AAD52E0488D5A9C2D2F49C0D9A0EFF940F5034C8FC',
+          exponent: 0,
+          aliases: ['uslf']
+        }, {
+          denom: 'slf',
+          exponent: 6
+        }],
+      base: 'ibc/07C1552AD0D5C8FE63F7E9AAD52E0488D5A9C2D2F49C0D9A0EFF940F5034C8FC',
+      name: 'Self',
+      display: 'slf',
+      symbol: 'SLF',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/self/images/self.png'
+      },
+      coingecko_id: 'self-chain',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/self/images/self.png'
+        }],
+      socials: {
+        website: 'https://selfchain.xyz',
+        twitter: 'https://x.com/selfchainxyz'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'uslf',
+            chain_name: 'self'
+          },
+          chain: {
+            channel_id: 'channel-892'
+          }
+        }]
+    },
+    {
       description: 'DVPN is the native token of the Sentinel Hub.',
       denom_units: [{
           denom: 'ibc/42E47A5BA708EBE6E0C227006254F2784E209F4DBD3C6BB77EDC4B29EF875E8E',
@@ -6208,6 +6245,43 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-584'
+          }
+        }]
+    },
+    {
+      description: 'The native staking token of Self Chain.',
+      denom_units: [{
+          denom: 'ibc/07C1552AD0D5C8FE63F7E9AAD52E0488D5A9C2D2F49C0D9A0EFF940F5034C8FC',
+          exponent: 0,
+          aliases: ['uslf']
+        }, {
+          denom: 'slf',
+          exponent: 6
+        }],
+      base: 'ibc/07C1552AD0D5C8FE63F7E9AAD52E0488D5A9C2D2F49C0D9A0EFF940F5034C8FC',
+      name: 'Self',
+      display: 'slf',
+      symbol: 'SLF',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/self/images/self.png'
+      },
+      coingecko_id: 'self-chain',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/self/images/self.png'
+        }],
+      socials: {
+        website: 'https://selfchain.xyz',
+        twitter: 'https://x.com/selfchainxyz'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'uslf',
+            chain_name: 'self'
+          },
+          chain: {
+            channel_id: 'channel-892'
           }
         }]
     },

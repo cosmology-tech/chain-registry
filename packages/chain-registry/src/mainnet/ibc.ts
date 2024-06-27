@@ -113,6 +113,7 @@ import * as _scorum from './scorum';
 import * as _secretnetwork from './secretnetwork';
 import * as _seda from './seda';
 import * as _sei from './sei';
+import * as _self from './self';
 import * as _sentinel from './sentinel';
 import * as _sge from './sge';
 import * as _shareledger from './shareledger';
@@ -249,6 +250,7 @@ const ibc: IBCInfo[] = [
   ..._secretnetwork.ibc,
   ..._seda.ibc,
   ..._sei.ibc,
+  ..._self.ibc,
   ..._sentinel.ibc,
   ..._sge.ibc,
   ..._shareledger.ibc,
