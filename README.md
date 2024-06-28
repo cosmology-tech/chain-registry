@@ -8,11 +8,15 @@
   <a href="https://github.com/cosmology-tech/chain-registry/actions/workflows/run-tests.yml">
     <img height="20" src="https://github.com/cosmology-tech/chain-registry/actions/workflows/run-tests.yml/badge.svg" />
   </a>
+  <a href="https://github.com/cosmology-tech/lib-count">
   <img height="20" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcosmology-tech%2Flib-count%2Fmain%2Foutput%2Fbadges%2Fproducts%2Fchain-registry%2Ftotal.json" />  
+  </a>
+  <a href="https://github.com/cosmology-tech/lib-count">
     <img height="20" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcosmology-tech%2Flib-count%2Fmain%2Foutput%2Fbadges%2Fproducts%2Fchain-registry%2Fmonthly.json" />
-    <br />
+  </a>
+  <br />
   <a href="https://github.com/cosmology-tech/chain-registry/blob/main/LICENSE"><img height="20" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
-   <a href="https://www.npmjs.com/package/chain-registry"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=packages%2Fchain-registry%2Fpackage.json"></a>
+  <a href="https://www.npmjs.com/package/chain-registry"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=packages%2Fchain-registry%2Fpackage.json"></a>
 </p>
 
 The npm package for the Official Cosmos [chain registry](https://github.com/cosmos/chain-registry)
