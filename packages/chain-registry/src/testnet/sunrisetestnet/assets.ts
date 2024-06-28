@@ -1,7 +1,7 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
-  chain_name: 'sunrise',
+  $schema: '../../assetlist.schema.json',
+  chain_name: 'sunrisetestnet',
   assets: [{
       description: 'The native token of the Sunrise network for staking. This token is non transferrable. This token can be retrieved by providing liquidity.',
       denom_units: [{

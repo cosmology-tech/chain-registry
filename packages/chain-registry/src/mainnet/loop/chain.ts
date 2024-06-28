@@ -31,8 +31,7 @@ const info: Chain = {
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.svg',
-      layout: 'logomark'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.svg'
     }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.png',

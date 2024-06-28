@@ -32,8 +32,8 @@ const info: Chain = {
 
   },
   logo_URIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.png',
-    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.svg'
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg'
   },
   description: 'The superior way to use Bitcoin in Cosmos DeFi. Use IBC to securely and efficiently bridge your BTC to Osmosis and more.',
   apis: {
@@ -85,8 +85,12 @@ const info: Chain = {
     }
   ],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.svg'
+      image_sync: {
+        chain_name: 'nomic',
+        base_denom: 'unom'
+      },
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg'
     }],
   bech32_config: {
     bech32PrefixAccAddr: 'nomic',

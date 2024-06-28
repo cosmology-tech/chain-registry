@@ -89,6 +89,7 @@ import * as _sourcetestnet from './sourcetestnet';
 import * as _stargazetestnet from './stargazetestnet';
 import * as _statesettestnet from './statesettestnet';
 import * as _stridetestnet from './stridetestnet';
+import * as _sunrisetestnet from './sunrisetestnet';
 import * as _swisstroniktestnet from './swisstroniktestnet';
 import * as _symphonytestnet from './symphonytestnet';
 import * as _temporaltestnet from './temporaltestnet';
@@ -195,6 +196,7 @@ const chains: Chain[] = [
   _stargazetestnet.chain,
   _statesettestnet.chain,
   _stridetestnet.chain,
+  _sunrisetestnet.chain,
   _swisstroniktestnet.chain,
   _symphonytestnet.chain,
   _temporaltestnet.chain,

@@ -61,7 +61,6 @@ const info: Chain = {
       },
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg',
-      layout: 'logomark',
       theme: {
         circle: true
       }
