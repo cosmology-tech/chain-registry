@@ -69,6 +69,7 @@ import * as _gitopia from './gitopia';
 import * as _govgen from './govgen';
 import * as _gravitybridge from './gravitybridge';
 import * as _haqq from './haqq';
+import * as _heli from './heli';
 import * as _highbury from './highbury';
 import * as _humans from './humans';
 import * as _idep from './idep';
@@ -243,6 +244,7 @@ const chains: Chain[] = [
   _govgen.chain,
   _gravitybridge.chain,
   _haqq.chain,
+  _heli.chain,
   _highbury.chain,
   _humans.chain,
   _idep.chain,

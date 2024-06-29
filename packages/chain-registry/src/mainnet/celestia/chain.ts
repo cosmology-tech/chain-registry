@@ -143,6 +143,10 @@ const info: Chain = {
       {
         address: 'https://celestia-mainnet-rpc.itrocket.net',
         provider: '🚀 itrocket 🚀'
+      },
+      {
+        address: 'https://rpc.celestia.mainnet.dteam.tech:443',
+        provider: 'DTEAM'
       }
     ],
     rest: [
@@ -241,6 +245,10 @@ const info: Chain = {
       {
         address: 'https://celestia-mainnet-api.itrocket.net',
         provider: '🚀 itrocket 🚀'
+      },
+      {
+        address: 'https://api.celestia.mainnet.dteam.tech:443',
+        provider: 'DTEAM'
       }
     ],
     grpc: [
@@ -323,6 +331,10 @@ const info: Chain = {
       {
         address: 'celestia-mainnet-grpc.itrocket.net:40090',
         provider: '🚀 itrocket 🚀'
+      },
+      {
+        address: 'grpc.celestia.mainnet.dteam.tech:28090',
+        provider: 'DTEAM'
       }
     ]
   },
@@ -373,6 +385,12 @@ const info: Chain = {
       url: 'https://mainnet.itrocket.net/celestia',
       tx_page: 'https://mainnet.itrocket.net/celestia/transaction/${txHash}',
       account_page: 'https://mainnet.itrocket.net/celestia/account/${accountAddress}'
+    },
+    {
+      kind: 'DTEAM | Explorer',
+      url: 'https://explorer.mainnet.dteam.tech/celestia',
+      tx_page: 'https://explorer.mainnet.dteam.tech/celestia/transaction/${txHash}',
+      account_page: 'https://explorer.mainnet.dteam.tech/celestia/account/${accountAddress}'
     }
   ],
   images: [{

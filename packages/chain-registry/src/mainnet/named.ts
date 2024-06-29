@@ -67,6 +67,7 @@ export * as gitopia from './gitopia';
 export * as govgen from './govgen';
 export * as gravitybridge from './gravitybridge';
 export * as haqq from './haqq';
+export * as heli from './heli';
 export * as highbury from './highbury';
 export * as humans from './humans';
 export * as idep from './idep';

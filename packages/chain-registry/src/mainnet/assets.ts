@@ -68,6 +68,7 @@ import * as _gitopia from './gitopia';
 import * as _govgen from './govgen';
 import * as _gravitybridge from './gravitybridge';
 import * as _haqq from './haqq';
+import * as _heli from './heli';
 import * as _highbury from './highbury';
 import * as _humans from './humans';
 import * as _idep from './idep';
@@ -240,6 +241,7 @@ const assets: AssetList[] = [
   _govgen.assets,
   _gravitybridge.assets,
   _haqq.assets,
+  _heli.assets,
   _highbury.assets,
   _humans.assets,
   _idep.assets,

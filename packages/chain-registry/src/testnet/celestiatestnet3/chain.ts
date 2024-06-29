@@ -44,6 +44,10 @@ const info: Chain = {
       {
         address: 'https://rpc-celestia-testnet.cryptech.com.ua',
         provider: 'CrypTech'
+      },
+      {
+        address: 'https://rpc.celestia.testnet.dteam.tech:443',
+        provider: 'DTEAM'
       }
     ],
     rest: [
@@ -66,6 +70,10 @@ const info: Chain = {
       {
         address: 'https://api-celestia-testnet.cryptech.com.ua',
         provider: 'CrypTech'
+      },
+      {
+        address: 'https://api.celestia.testnet.dteam.tech:443',
+        provider: 'DTEAM'
       }
     ],
     grpc: [
@@ -84,6 +92,10 @@ const info: Chain = {
       {
         address: 'https://grpc-celestia-testnet.cryptech.com.ua',
         provider: 'CrypTech'
+      },
+      {
+        address: 'grpc.celestia.testnet.dteam.tech:27090',
+        provider: 'DTEAM'
       }
     ]
   },
@@ -104,6 +116,12 @@ const info: Chain = {
       url: 'https://explorers.cryptech.com.ua/Celestia-Testnet',
       tx_page: 'https://explorers.cryptech.com.ua/Celestia-Testnet/tx/${txHash}',
       account_page: 'https://explorers.cryptech.com.ua/Celestia-Testnet/account/${accountAddress}'
+    },
+    {
+      kind: 'DTEAM | Explorer',
+      url: 'https://explorer.testnet.dteam.tech/celestia',
+      tx_page: 'https://explorer.testnet.dteam.tech/celestia/tx/${txHash}',
+      account_page: 'https://explorer.testnet.dteam.tech/celestia/account/${accountAddress}'
     }
   ]
 };
