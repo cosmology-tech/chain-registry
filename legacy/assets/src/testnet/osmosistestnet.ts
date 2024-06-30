@@ -1692,6 +1692,38 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native currency of Swisstronik.',
+      denom_units: [{
+          denom: 'ibc/7693B5E16070750C244B382F151E7347F324AEA7F4FFE94F4A3E02D26B35DE67',
+          exponent: 0,
+          aliases: ['aswtr']
+        }, {
+          denom: 'swtr',
+          exponent: 18
+        }],
+      base: 'ibc/7693B5E16070750C244B382F151E7347F324AEA7F4FFE94F4A3E02D26B35DE67',
+      name: 'Swisstronik Testnet',
+      display: 'swtr',
+      symbol: 'SWTR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/swisstroniktestnet/images/swisstronik.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/swisstroniktestnet/images/swisstronik.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'aswtr',
+            chain_name: 'swisstroniktestnet'
+          },
+          chain: {
+            channel_id: 'channel-8295'
+          }
+        }]
+    },
+    {
       description: 'The native token of the Titan network.',
       denom_units: [
         {
@@ -2043,6 +2075,38 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-4175'
+          }
+        }]
+    },
+    {
+      description: 'The native currency of Swisstronik.',
+      denom_units: [{
+          denom: 'ibc/7693B5E16070750C244B382F151E7347F324AEA7F4FFE94F4A3E02D26B35DE67',
+          exponent: 0,
+          aliases: ['aswtr']
+        }, {
+          denom: 'swtr',
+          exponent: 18
+        }],
+      base: 'ibc/7693B5E16070750C244B382F151E7347F324AEA7F4FFE94F4A3E02D26B35DE67',
+      name: 'Swisstronik Testnet',
+      display: 'swtr',
+      symbol: 'SWTR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/swisstroniktestnet/images/swisstronik.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/swisstroniktestnet/images/swisstronik.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'aswtr',
+            chain_name: 'swisstroniktestnet'
+          },
+          chain: {
+            channel_id: 'channel-8295'
           }
         }]
     },

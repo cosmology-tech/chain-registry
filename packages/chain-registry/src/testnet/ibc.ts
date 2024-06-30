@@ -34,6 +34,7 @@ import * as _quicksilvertestnet from './quicksilvertestnet';
 import * as _sagatestnet from './sagatestnet';
 import * as _sgetestnet from './sgetestnet';
 import * as _stargazetestnet from './stargazetestnet';
+import * as _swisstroniktestnet from './swisstroniktestnet';
 import * as _terra2testnet from './terra2testnet';
 import * as _titantestnet from './titantestnet';
 import * as _xiontestnet from './xiontestnet';
@@ -73,6 +74,7 @@ const ibc: IBCInfo[] = [
   ..._sagatestnet.ibc,
   ..._sgetestnet.ibc,
   ..._stargazetestnet.ibc,
+  ..._swisstroniktestnet.ibc,
   ..._terra2testnet.ibc,
   ..._titantestnet.ibc,
   ..._xiontestnet.ibc

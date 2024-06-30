@@ -11,12 +11,14 @@ import * as _avalanche from './avalanche';
 import * as _binancesmartchain from './binancesmartchain';
 import * as _bitcoin from './bitcoin';
 import * as _comex from './comex';
+import * as _dogecoin from './dogecoin';
 import * as _fantom from './fantom';
 import * as _filecoin from './filecoin';
 import * as _forex from './forex';
 import * as _kusama from './kusama';
 import * as _moonbeam from './moonbeam';
 import * as _neo from './neo';
+import * as _optimism from './optimism';
 import * as _penumbra from './penumbra';
 import * as _polkadot from './polkadot';
 import * as _polygon from './polygon';
@@ -54,12 +56,14 @@ const assets: AssetList[] = [
   _binancesmartchain.assets,
   _bitcoin.assets,
   _comex.assets,
+  _dogecoin.assets,
   _fantom.assets,
   _filecoin.assets,
   _forex.assets,
   _kusama.assets,
   _moonbeam.assets,
   _neo.assets,
+  _optimism.assets,
   _penumbra.assets,
   _polkadot.assets,
   _polygon.assets,

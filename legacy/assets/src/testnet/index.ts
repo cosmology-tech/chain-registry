@@ -32,6 +32,7 @@ export * as quicksilvertestnet from './quicksilvertestnet';
 export * as sagatestnet from './sagatestnet';
 export * as sgetestnet from './sgetestnet';
 export * as stargazetestnet from './stargazetestnet';
+export * as swisstroniktestnet from './swisstroniktestnet';
 export * as terra2testnet from './terra2testnet';
 export * as titantestnet from './titantestnet';
 export * as xiontestnet from './xiontestnet'
