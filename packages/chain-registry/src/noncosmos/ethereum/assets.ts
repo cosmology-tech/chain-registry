@@ -392,7 +392,7 @@ const info: AssetList = {
       display: 'frxeth',
       symbol: 'frxETH',
       traces: [{
-          type: 'liquid-stake',
+          type: 'synthetic',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: 'wei'
@@ -426,7 +426,7 @@ const info: AssetList = {
       display: 'sfrxeth',
       symbol: 'sfrxETH',
       traces: [{
-          type: 'wrapped',
+          type: 'liquid-stake',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0x5e8422345238f34275888049021821e8e08caa1f'

@@ -38,6 +38,9 @@ const info: Chain = {
     rest: [{
         address: 'https://api.selfchain.io',
         provider: 'Self Chain'
+      }, {
+        address: 'https://selfchain.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       }],
     grpc: []
   },
@@ -46,6 +49,11 @@ const info: Chain = {
       url: 'https://explorer.selfchain.xyz/selfchain',
       tx_page: 'https://explorer.selfchain.xyz/selfchain/tx/${txHash}',
       account_page: 'https://explorer.selfchain.xyz/selfchain/account/${accountAddress}'
+    }, {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Selfchain-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Selfchain-Mainnet/tx/${txHash}',
+      account_page: 'https://explorer.stavr.tech/Selfchain-Mainnet/account/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/self/images/self.png'

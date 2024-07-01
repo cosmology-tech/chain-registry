@@ -100,6 +100,7 @@ import * as _meme from './meme';
 import * as _microtick from './microtick';
 import * as _migaloo from './migaloo';
 import * as _mises from './mises';
+import * as _mtgbp from './mtgbp';
 import * as _mun from './mun';
 import * as _mythos from './mythos';
 import * as _neura from './neura';
@@ -130,6 +131,7 @@ import * as _provenance from './provenance';
 import * as _pryzm from './pryzm';
 import * as _pundix from './pundix';
 import * as _pylons from './pylons';
+import * as _qfs from './qfs';
 import * as _quasar from './quasar';
 import * as _quicksilver from './quicksilver';
 import * as _qwoyn from './qwoyn';
@@ -158,6 +160,7 @@ import * as _starname from './starname';
 import * as _stratos from './stratos';
 import * as _stride from './stride';
 import * as _sunrise from './sunrise';
+import * as _taketitan from './taketitan';
 import * as _tenet from './tenet';
 import * as _teritori from './teritori';
 import * as _terpnetwork from './terpnetwork';
@@ -275,6 +278,7 @@ const chains: Chain[] = [
   _microtick.chain,
   _migaloo.chain,
   _mises.chain,
+  _mtgbp.chain,
   _mun.chain,
   _mythos.chain,
   _neura.chain,
@@ -305,6 +309,7 @@ const chains: Chain[] = [
   _pryzm.chain,
   _pundix.chain,
   _pylons.chain,
+  _qfs.chain,
   _quasar.chain,
   _quicksilver.chain,
   _qwoyn.chain,
@@ -333,6 +338,7 @@ const chains: Chain[] = [
   _stratos.chain,
   _stride.chain,
   _sunrise.chain,
+  _taketitan.chain,
   _tenet.chain,
   _teritori.chain,
   _terpnetwork.chain,

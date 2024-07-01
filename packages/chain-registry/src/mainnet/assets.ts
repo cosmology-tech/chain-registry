@@ -99,6 +99,7 @@ import * as _meme from './meme';
 import * as _microtick from './microtick';
 import * as _migaloo from './migaloo';
 import * as _mises from './mises';
+import * as _mtgbp from './mtgbp';
 import * as _mun from './mun';
 import * as _mythos from './mythos';
 import * as _neura from './neura';
@@ -129,6 +130,7 @@ import * as _provenance from './provenance';
 import * as _pryzm from './pryzm';
 import * as _pundix from './pundix';
 import * as _pylons from './pylons';
+import * as _qfs from './qfs';
 import * as _quasar from './quasar';
 import * as _quicksilver from './quicksilver';
 import * as _qwoyn from './qwoyn';
@@ -157,6 +159,7 @@ import * as _starname from './starname';
 import * as _stratos from './stratos';
 import * as _stride from './stride';
 import * as _sunrise from './sunrise';
+import * as _taketitan from './taketitan';
 import * as _tenet from './tenet';
 import * as _teritori from './teritori';
 import * as _terpnetwork from './terpnetwork';
@@ -272,6 +275,7 @@ const assets: AssetList[] = [
   _microtick.assets,
   _migaloo.assets,
   _mises.assets,
+  _mtgbp.assets,
   _mun.assets,
   _mythos.assets,
   _neura.assets,
@@ -302,6 +306,7 @@ const assets: AssetList[] = [
   _pryzm.assets,
   _pundix.assets,
   _pylons.assets,
+  _qfs.assets,
   _quasar.assets,
   _quicksilver.assets,
   _qwoyn.assets,
@@ -330,6 +335,7 @@ const assets: AssetList[] = [
   _stratos.assets,
   _stride.assets,
   _sunrise.assets,
+  _taketitan.assets,
   _tenet.assets,
   _teritori.assets,
   _terpnetwork.assets,
