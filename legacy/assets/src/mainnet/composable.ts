@@ -1270,6 +1270,41 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'YUM is the Cacao Swap token, powering decentralised rails.',
+      type_asset: 'erc20',
+      address: '0xcE682c89C63d2850Cb2ca898E44D6c7c30d897a6',
+      denom_units: [{
+          denom: 'ibc/36FEE012470D3F8906244C38F8670E1225B73FD14363B01927B00074B47AC273',
+          exponent: 0,
+          aliases: ['0xcE682c89C63d2850Cb2ca898E44D6c7c30d897a6']
+        }, {
+          denom: 'yum',
+          exponent: 18
+        }],
+      base: 'ibc/36FEE012470D3F8906244C38F8670E1225B73FD14363B01927B00074B47AC273',
+      name: 'Yum',
+      display: 'yum',
+      symbol: 'YUM',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/yum.png'
+        }],
+      socials: {
+        website: 'https://cacaoswap.app',
+        twitter: 'https://x.com/CacaoSwap'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0xcE682c89C63d2850Cb2ca898E44D6c7c30d897a6',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
       description: 'The native EVM, governance and staking token of the Evmos Hub',
       denom_units: [{
           denom: 'ibc/73E97EB411B29C6F989C35D277D1A7FC65083572F102AC6BD101884EE9FB2C9F',
@@ -4040,6 +4075,41 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-2',
             base_denom: '0x8290333ceF9e6D528dD5618Fb97a76f268f3EDD4',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
+      description: 'YUM is the Cacao Swap token, powering decentralised rails.',
+      type_asset: 'erc20',
+      address: '0xcE682c89C63d2850Cb2ca898E44D6c7c30d897a6',
+      denom_units: [{
+          denom: 'ibc/36FEE012470D3F8906244C38F8670E1225B73FD14363B01927B00074B47AC273',
+          exponent: 0,
+          aliases: ['0xcE682c89C63d2850Cb2ca898E44D6c7c30d897a6']
+        }, {
+          denom: 'yum',
+          exponent: 18
+        }],
+      base: 'ibc/36FEE012470D3F8906244C38F8670E1225B73FD14363B01927B00074B47AC273',
+      name: 'Yum',
+      display: 'yum',
+      symbol: 'YUM',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/yum.png'
+        }],
+      socials: {
+        website: 'https://cacaoswap.app',
+        twitter: 'https://x.com/CacaoSwap'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0xcE682c89C63d2850Cb2ca898E44D6c7c30d897a6',
             chain_name: 'ethereum'
           },
           chain: {
