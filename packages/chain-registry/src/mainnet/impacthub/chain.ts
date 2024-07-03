@@ -58,6 +58,10 @@ const info: Chain = {
       {
         address: 'https://ixo-rpc.ibs.team',
         provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://ixo-rpc.bluestake.net:443',
+        provider: 'BlueStake 🚀'
       }
     ],
     rest: [
@@ -84,6 +88,10 @@ const info: Chain = {
       {
         address: 'https://ixo-api.ibs.team',
         provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://ixo-api.bluestake.net',
+        provider: 'BlueStake 🚀'
       }
     ],
     grpc: [

@@ -86,6 +86,10 @@ const info: Chain = {
       {
         address: 'https://teritori-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://teritori-rpc.bluestake.net:443',
+        provider: 'BlueStake 🚀'
       }
     ],
     rest: [
@@ -136,6 +140,10 @@ const info: Chain = {
       {
         address: 'https://teritori-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://teritori-api.bluestake.net',
+        provider: 'BlueStake 🚀'
       }
     ],
     grpc: [

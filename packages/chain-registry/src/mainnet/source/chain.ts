@@ -104,6 +104,10 @@ const info: Chain = {
       {
         address: 'https://source_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://source-rpc.bluestake.net:443',
+        provider: 'BlueStake 🚀'
       }
     ],
     rest: [
@@ -182,6 +186,10 @@ const info: Chain = {
       {
         address: 'https://source_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://source-api.bluestake.net',
+        provider: 'BlueStake 🚀'
       }
     ],
     grpc: [

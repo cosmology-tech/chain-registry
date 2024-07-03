@@ -92,6 +92,10 @@ const info: Chain = {
       {
         address: 'https://rpc-comdex.blockval.io',
         provider: 'Blockval'
+      },
+      {
+        address: 'https://comdex-rpc.bluestake.net:443',
+        provider: 'BlueStake 🚀'
       }
     ],
     rest: [
@@ -150,6 +154,10 @@ const info: Chain = {
       {
         address: 'https://api-comdex.blockval.io',
         provider: 'Blockval'
+      },
+      {
+        address: 'https://comdex-api.bluestake.net',
+        provider: 'BlueStake 🚀'
       }
     ],
     grpc: [

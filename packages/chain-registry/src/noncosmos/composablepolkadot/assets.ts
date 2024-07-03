@@ -21,7 +21,7 @@ const info: AssetList = {
             chain_name: 'polkadot',
             base_denom: 'Planck'
           },
-          provider: 'Polkadot Relay'
+          provider: 'Polkadot Parachain'
         }],
       images: [{
           image_sync: {

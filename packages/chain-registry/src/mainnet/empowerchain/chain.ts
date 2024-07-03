@@ -86,6 +86,10 @@ const info: Chain = {
       {
         address: 'https://empower-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://empower-rpc.bluestake.net:443',
+        provider: 'BlueStake 🚀'
       }
     ],
     rest: [
@@ -140,6 +144,10 @@ const info: Chain = {
       {
         address: 'https://empower-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://empower-api.bluestake.net',
+        provider: 'BlueStake 🚀'
       }
     ],
     grpc: [

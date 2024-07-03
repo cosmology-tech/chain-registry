@@ -100,6 +100,10 @@ const info: Chain = {
       {
         address: 'https://rpc.passage.silentvalidator.com',
         provider: 'silent'
+      },
+      {
+        address: 'https://passage-rpc.bluestake.net:443',
+        provider: 'BlueStake 🚀'
       }
     ],
     rest: [
@@ -170,6 +174,10 @@ const info: Chain = {
       {
         address: 'https://api.passage.silentvalidator.com',
         provider: 'silent'
+      },
+      {
+        address: 'https://passage-api.bluestake.net',
+        provider: 'BlueStake 🚀'
       }
     ],
     grpc: [

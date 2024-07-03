@@ -91,6 +91,10 @@ const info: Chain = {
       {
         address: 'https://rpc.fetchhub-4.fetch.aviaone.com',
         provider: 'AVIAONE 🟢'
+      },
+      {
+        address: 'https://fetchai-rpc.bluestake.net:443',
+        provider: 'BlueStake 🚀'
       }
     ],
     rest: [
@@ -153,6 +157,10 @@ const info: Chain = {
       {
         address: 'https://api.fetchhub-4.fetch.aviaone.com/',
         provider: 'AVIAONE 🟢'
+      },
+      {
+        address: 'https://fetchai-api.bluestake.net',
+        provider: 'BlueStake 🚀'
       }
     ],
     grpc: [
