@@ -30,7 +30,8 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg',
           theme: {
-            circle: true
+            circle: true,
+            primary_color_hex: '#fba0c1'
           }
         },
         {
@@ -38,7 +39,8 @@ const info: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Darkmatt.svg',
           theme: {
             dark_mode: true,
-            circle: true
+            circle: true,
+            primary_color_hex: '#342c2c'
           }
         },
         {
@@ -46,7 +48,8 @@ const info: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-WHT.svg',
           theme: {
             dark_mode: false,
-            circle: true
+            circle: true,
+            primary_color_hex: '#342c2c'
           }
         }
       ],

@@ -30,7 +30,10 @@ const assets: AssetList = {
       coingecko_id: 'archway',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg',
+          theme: {
+            primary_color_hex: '#fc4c04'
+          }
         }],
       socials: {
         website: 'https://archway.io/',
@@ -69,7 +72,10 @@ const assets: AssetList = {
       coingecko_id: 'injective-protocol',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg',
+          theme: {
+            primary_color_hex: '#04a2fc'
+          }
         }],
       socials: {
         website: 'https://injective.com/',
@@ -105,7 +111,10 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninpo.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninpo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninpo.png',
+          theme: {
+            primary_color_hex: '#31292a'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -137,7 +146,10 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/judo.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/judo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/judo.png',
+          theme: {
+            primary_color_hex: '#18120f'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -166,7 +178,10 @@ const assets: AssetList = {
       display: 'nINJ',
       symbol: 'nINJ',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninj.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninj.png',
+          theme: {
+            primary_color_hex: '#293a6f'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -195,7 +210,10 @@ const assets: AssetList = {
       display: 'nATOM',
       symbol: 'nATOM',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/natom.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/natom.png',
+          theme: {
+            primary_color_hex: '#272f4b'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -224,7 +242,10 @@ const assets: AssetList = {
       display: 'nWETH',
       symbol: 'nWETH',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/nweth.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/nweth.png',
+          theme: {
+            primary_color_hex: '#2a303f'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -253,7 +274,10 @@ const assets: AssetList = {
       display: 'nUSDT',
       symbol: 'nUSDT',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/nusdt.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/nusdt.png',
+          theme: {
+            primary_color_hex: '#54ac94'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -282,7 +306,10 @@ const assets: AssetList = {
       display: 'nTIA',
       symbol: 'nTIA',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ntia.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ntia.png',
+          theme: {
+            primary_color_hex: '#7931f9'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -317,7 +344,10 @@ const assets: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg',
+          theme: {
+            primary_color_hex: '#e33b34'
+          }
         }],
       socials: {
         website: 'https://kujira.network/',
@@ -356,7 +386,10 @@ const assets: AssetList = {
       coingecko_id: 'secret',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }],
       socials: {
         website: 'https://scrt.network/',
@@ -395,7 +428,10 @@ const assets: AssetList = {
       coingecko_id: 'terra-luna-2',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg',
+          theme: {
+            primary_color_hex: '#f4de6f'
+          }
         }],
       socials: {
         website: 'https://www.terra.money/',
@@ -441,7 +477,10 @@ const assets: AssetList = {
       coingecko_id: 'archway',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg',
+          theme: {
+            primary_color_hex: '#fc4c04'
+          }
         }],
       socials: {
         website: 'https://archway.io/',
@@ -480,7 +519,10 @@ const assets: AssetList = {
       coingecko_id: 'injective-protocol',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg',
+          theme: {
+            primary_color_hex: '#04a2fc'
+          }
         }],
       socials: {
         website: 'https://injective.com/',
@@ -516,7 +558,10 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninpo.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninpo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninpo.png',
+          theme: {
+            primary_color_hex: '#31292a'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -548,7 +593,10 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/judo.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/judo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/judo.png',
+          theme: {
+            primary_color_hex: '#18120f'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -577,7 +625,10 @@ const assets: AssetList = {
       display: 'nINJ',
       symbol: 'nINJ',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninj.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ninj.png',
+          theme: {
+            primary_color_hex: '#293a6f'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -606,7 +657,10 @@ const assets: AssetList = {
       display: 'nATOM',
       symbol: 'nATOM',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/natom.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/natom.png',
+          theme: {
+            primary_color_hex: '#272f4b'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -635,7 +689,10 @@ const assets: AssetList = {
       display: 'nWETH',
       symbol: 'nWETH',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/nweth.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/nweth.png',
+          theme: {
+            primary_color_hex: '#2a303f'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -664,7 +721,10 @@ const assets: AssetList = {
       display: 'nUSDT',
       symbol: 'nUSDT',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/nusdt.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/nusdt.png',
+          theme: {
+            primary_color_hex: '#54ac94'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -693,7 +753,10 @@ const assets: AssetList = {
       display: 'nTIA',
       symbol: 'nTIA',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ntia.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/ntia.png',
+          theme: {
+            primary_color_hex: '#7931f9'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -728,7 +791,10 @@ const assets: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg',
+          theme: {
+            primary_color_hex: '#e33b34'
+          }
         }],
       socials: {
         website: 'https://kujira.network/',
@@ -767,7 +833,10 @@ const assets: AssetList = {
       coingecko_id: 'secret',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }],
       socials: {
         website: 'https://scrt.network/',
@@ -806,7 +875,10 @@ const assets: AssetList = {
       coingecko_id: 'terra-luna-2',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg',
+          theme: {
+            primary_color_hex: '#f4de6f'
+          }
         }],
       socials: {
         website: 'https://www.terra.money/',

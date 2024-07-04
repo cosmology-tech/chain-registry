@@ -22,7 +22,10 @@ const info: AssetList = {
       coingecko_id: 'sifchain',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg',
+          theme: {
+            primary_color_hex: '#be9926'
+          }
         }]
     }]
 };

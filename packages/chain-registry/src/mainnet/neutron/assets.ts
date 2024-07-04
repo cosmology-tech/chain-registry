@@ -23,7 +23,10 @@ const info: AssetList = {
       coingecko_id: 'neutron-3',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }],
       socials: {
         website: 'https://neutron.org/',
@@ -63,7 +66,10 @@ const info: AssetList = {
             base_denom: 'uatom'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
+          theme: {
+            primary_color_hex: '#272d45'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
@@ -103,7 +109,10 @@ const info: AssetList = {
             base_denom: 'uusdc'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg',
+          theme: {
+            primary_color_hex: '#2474cc'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png',
@@ -143,7 +152,10 @@ const info: AssetList = {
             base_denom: 'utia'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
+          theme: {
+            primary_color_hex: '#7c2cfb'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
@@ -167,7 +179,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astropepe.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astropepe.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astropepe.png',
+          theme: {
+            primary_color_hex: '#47391d'
+          }
         }]
     },
     {
@@ -235,7 +250,10 @@ const info: AssetList = {
             base_denom: 'usat'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg',
+          theme: {
+            primary_color_hex: '#8436e6'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png',
@@ -275,7 +293,10 @@ const info: AssetList = {
             base_denom: 'adydx'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg',
+          theme: {
+            primary_color_hex: '#21212f'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
@@ -301,7 +322,10 @@ const info: AssetList = {
       },
       coingecko_id: 'newt',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/newt.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/newt.png',
+          theme: {
+            primary_color_hex: '#16233d'
+          }
         }]
     },
     {
@@ -321,7 +345,10 @@ const info: AssetList = {
       coingecko_id: 'astroport-fi',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.svg',
+          theme: {
+            primary_color_hex: '#4056e9'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.png',
@@ -423,7 +450,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/babycorgi.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/babycorgi.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/babycorgi.png',
+          theme: {
+            primary_color_hex: '#fab442'
+          }
         }]
     },
     {
@@ -444,7 +474,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/circus.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/circus.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/circus.png',
+          theme: {
+            primary_color_hex: '#242033'
+          }
         }]
     },
     {
@@ -465,7 +498,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/jimmy.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/jimmy.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/jimmy.png',
+          theme: {
+            primary_color_hex: '#7d3c20'
+          }
         }]
     },
     {
@@ -486,7 +522,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/bad.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/bad.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/bad.png',
+          theme: {
+            primary_color_hex: '#211a0d'
+          }
         }]
     },
     {
@@ -507,7 +546,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/bitcosmos.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/bitcosmos.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/bitcosmos.png',
+          theme: {
+            primary_color_hex: '#1b0847'
+          }
         }]
     },
     {
@@ -528,7 +570,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/WTF.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/WTF.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/WTF.png',
+          theme: {
+            primary_color_hex: '#dcd5ab'
+          }
         }]
     },
     {
@@ -564,7 +609,10 @@ const info: AssetList = {
             base_denom: 'unls'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg',
+          theme: {
+            primary_color_hex: '#fc542c'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
@@ -589,7 +637,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/goddardntrn.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/goddardntrn.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/goddardntrn.png',
+          theme: {
+            primary_color_hex: '#516b80'
+          }
         }]
     },
     {
@@ -711,7 +762,10 @@ const info: AssetList = {
             chain_name: 'osmosis',
             base_denom: 'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png',
+          theme: {
+            primary_color_hex: '#edd5ee'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
@@ -735,7 +789,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/boy.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/boy.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/boy.png',
+          theme: {
+            primary_color_hex: '#333333'
+          }
         }]
     },
     {
@@ -769,7 +826,10 @@ const info: AssetList = {
             chain_name: 'osmosis',
             base_denom: 'factory/osmo10n8rv8npx870l69248hnp6djy6pll2yuzzn9x8/BADKID'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png',
+          theme: {
+            primary_color_hex: '#57443f'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png'
@@ -793,7 +853,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/cartel.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/cartel.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/cartel.png',
+          theme: {
+            primary_color_hex: '#8c9098'
+          }
         }]
     },
     {
@@ -814,7 +877,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ATOM1KLFGc.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ATOM1KLFGc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ATOM1KLFGc.png',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }]
     },
     {
@@ -843,7 +909,10 @@ const info: AssetList = {
             base_denom: 'uusdc'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg',
+          theme: {
+            primary_color_hex: '#2474cc'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -876,7 +945,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/WEIRD.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/WEIRD.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/WEIRD.png',
+          theme: {
+            primary_color_hex: '#ebf0f4'
+          }
         }]
     },
     {
@@ -893,7 +965,10 @@ const info: AssetList = {
       display: 'takumi',
       symbol: 'TAKUMI',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/TAKUMI.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/TAKUMI.png',
+          theme: {
+            primary_color_hex: '#556867'
+          }
         }]
     },
     {
@@ -914,7 +989,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/NBZ.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/NBZ.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/NBZ.png',
+          theme: {
+            primary_color_hex: '#9890f9'
+          }
         }]
     }
   ]

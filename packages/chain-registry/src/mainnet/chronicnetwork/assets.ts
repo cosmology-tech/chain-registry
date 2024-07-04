@@ -20,7 +20,10 @@ const info: AssetList = {
       },
       coingecko_id: 'cht',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chronicnetwork/images/cht.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chronicnetwork/images/cht.png',
+          theme: {
+            primary_color_hex: '#1eb975'
+          }
         }]
     }, {
       description: 'The CGAS coin is the transactional token within the Chronic Chain network, aimed to serve the entire cannabis community through its payment network, supply chain and trust network.',
@@ -40,7 +43,10 @@ const info: AssetList = {
       },
       coingecko_id: 'cgas',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chronicnetwork/images/cgas.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chronicnetwork/images/cgas.png',
+          theme: {
+            primary_color_hex: '#ecb368'
+          }
         }]
     }]
 };

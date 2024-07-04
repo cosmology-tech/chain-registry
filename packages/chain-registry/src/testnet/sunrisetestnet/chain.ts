@@ -34,15 +34,24 @@ const info: Chain = {
   },
   apis: {
     rpc: [{
-        address: 'https://sunrise-test-1.cauchye.net/',
+        address: 'https://a-node.sunrise-test-1.cauchye.net/',
+        provider: 'CauchyE'
+      }, {
+        address: 'https://b-node.sunrise-test-1.cauchye.net/',
         provider: 'CauchyE'
       }],
     rest: [{
-        address: 'https://sunrise-test-1.cauchye.net:1318',
+        address: 'https://a-node.sunrise-test-1.cauchye.net:1318',
+        provider: 'CauchyE'
+      }, {
+        address: 'https://b-node.sunrise-test-1.cauchye.net:1318',
         provider: 'CauchyE'
       }],
     grpc: [{
-        address: 'https://sunrise-test-1.cauchye.net:9092',
+        address: 'https://a.sunrise-test-1.cauchye.net:9092',
+        provider: 'CauchyE'
+      }, {
+        address: 'https://b.sunrise-test-1.cauchye.net:9092',
         provider: 'CauchyE'
       }]
   },

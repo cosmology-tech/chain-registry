@@ -22,7 +22,10 @@ const info: AssetList = {
       coingecko_id: 'shido-2',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg',
+          theme: {
+            primary_color_hex: '#046ffc'
+          }
         }],
       socials: {
         website: 'https://shido.io/',

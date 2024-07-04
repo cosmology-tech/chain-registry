@@ -22,7 +22,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zetachain/images/zetachain.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zetachain/images/zetachain.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zetachain/images/zetachain.svg',
+          theme: {
+            primary_color_hex: '#045443'
+          }
         }]
     }]
 };

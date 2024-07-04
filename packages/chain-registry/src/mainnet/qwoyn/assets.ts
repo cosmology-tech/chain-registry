@@ -20,7 +20,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/qwoyn/images/qwoyn.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/qwoyn/images/qwoyn.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/qwoyn/images/qwoyn.png',
+          theme: {
+            primary_color_hex: '#04e4fc'
+          }
         }],
       coingecko_id: 'qwoyn',
       keywords: ['gaming'],

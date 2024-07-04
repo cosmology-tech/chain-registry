@@ -22,7 +22,10 @@ const info: AssetList = {
       coingecko_id: 'crescent-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg',
+          theme: {
+            primary_color_hex: '#3c2832'
+          }
         }]
     }, {
       description: 'The bonded token of Crescent',
@@ -44,7 +47,10 @@ const info: AssetList = {
       coingecko_id: 'liquid-staking-crescent',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
+          theme: {
+            primary_color_hex: '#df969f'
+          }
         }]
     }]
 };

@@ -18,7 +18,10 @@ const info: AssetList = {
       symbol: 'FUND',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png',
+          theme: {
+            primary_color_hex: '#2279c0'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png',

@@ -22,7 +22,10 @@ const info: AssetList = {
       coingecko_id: 'bzedge',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg',
+          theme: {
+            primary_color_hex: '#079fd7'
+          }
         }]
     }]
 };

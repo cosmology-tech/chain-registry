@@ -22,7 +22,10 @@ const info: AssetList = {
       coingecko_id: 'desmos',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg',
+          theme: {
+            primary_color_hex: '#fb804e'
+          }
         }]
     }]
 };

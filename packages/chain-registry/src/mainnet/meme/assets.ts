@@ -22,7 +22,10 @@ const info: AssetList = {
       coingecko_id: 'meme-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg',
+          theme: {
+            primary_color_hex: '#b7dcd8'
+          }
         }]
     }]
 };

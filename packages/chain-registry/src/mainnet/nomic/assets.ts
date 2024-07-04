@@ -21,7 +21,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg',
+          theme: {
+            primary_color_hex: '#6404fc'
+          }
         }]
     }, {
       description: 'Bitcoin. On Cosmos.',
@@ -50,7 +53,10 @@ const info: AssetList = {
         }],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg',
+          theme: {
+            primary_color_hex: '#8436e6'
+          }
         }]
     }]
 };

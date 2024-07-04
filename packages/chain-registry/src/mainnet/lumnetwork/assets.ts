@@ -22,7 +22,10 @@ const info: AssetList = {
       coingecko_id: 'lum-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.svg',
+          theme: {
+            primary_color_hex: '#080808'
+          }
         }]
     }]
 };

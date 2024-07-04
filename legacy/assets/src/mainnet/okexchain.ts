@@ -23,7 +23,10 @@ const assets: AssetList = {
       coingecko_id: 'assetmantle',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.svg',
+          theme: {
+            primary_color_hex: '#edb548'
+          }
         }],
       socials: {
         website: 'https://www.assetmantle.one/',
@@ -62,7 +65,10 @@ const assets: AssetList = {
       coingecko_id: 'chihuahua-token',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg',
+          theme: {
+            primary_color_hex: '#343434'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -97,7 +103,10 @@ const assets: AssetList = {
       coingecko_id: 'crescent-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg',
+          theme: {
+            primary_color_hex: '#3c2832'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -132,7 +141,10 @@ const assets: AssetList = {
       coingecko_id: 'liquid-staking-crescent',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
+          theme: {
+            primary_color_hex: '#df969f'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -167,7 +179,10 @@ const assets: AssetList = {
       coingecko_id: 'juno-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg',
+          theme: {
+            primary_color_hex: '#fa7b7b'
+          }
         }],
       socials: {
         website: 'https://junonetwork.io/',
@@ -206,7 +221,10 @@ const assets: AssetList = {
       coingecko_id: 'assetmantle',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.svg',
+          theme: {
+            primary_color_hex: '#edb548'
+          }
         }],
       socials: {
         website: 'https://www.assetmantle.one/',
@@ -245,7 +263,10 @@ const assets: AssetList = {
       coingecko_id: 'chihuahua-token',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg',
+          theme: {
+            primary_color_hex: '#343434'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -280,7 +301,10 @@ const assets: AssetList = {
       coingecko_id: 'crescent-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg',
+          theme: {
+            primary_color_hex: '#3c2832'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -315,7 +339,10 @@ const assets: AssetList = {
       coingecko_id: 'liquid-staking-crescent',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
+          theme: {
+            primary_color_hex: '#df969f'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -350,7 +377,10 @@ const assets: AssetList = {
       coingecko_id: 'juno-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg',
+          theme: {
+            primary_color_hex: '#fa7b7b'
+          }
         }],
       socials: {
         website: 'https://junonetwork.io/',
@@ -389,7 +419,10 @@ const assets: AssetList = {
       coingecko_id: 'vidulum',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg',
+          theme: {
+            primary_color_hex: '#3454bc'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -424,7 +457,10 @@ const assets: AssetList = {
       coingecko_id: 'vidulum',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg',
+          theme: {
+            primary_color_hex: '#3454bc'
+          }
         }],
       traces: [{
           type: 'ibc',

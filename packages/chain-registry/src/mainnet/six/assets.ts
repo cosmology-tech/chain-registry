@@ -19,7 +19,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/six/images/six.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/six/images/six.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/six/images/six.png',
+          theme: {
+            primary_color_hex: '#3b75f3'
+          }
         }]
     }]
 };

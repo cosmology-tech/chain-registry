@@ -53,7 +53,10 @@ const info: AssetList = {
             base_denom: 'mGeo'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg',
+          theme: {
+            primary_color_hex: '#c3ebf3'
+          }
         }]
     },
     {
@@ -79,7 +82,10 @@ const info: AssetList = {
             base_denom: 'mO9W'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }]
     }
   ]

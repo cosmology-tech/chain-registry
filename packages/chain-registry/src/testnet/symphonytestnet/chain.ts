@@ -26,7 +26,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.45',
+    cosmos_sdk_version: '0.47.8',
     cosmwasm_enabled: true,
     cosmwasm_version: '0.30'
   },
@@ -40,7 +40,7 @@ const info: Chain = {
         provider: 'Orchestra Labs'
       }],
     grpc: [{
-        address: 'https://grpc.testnet.symphonychain.org/',
+        address: 'grpc.testnet.symphonychain.org:9090',
         provider: 'Orchestra Labs'
       }]
   },

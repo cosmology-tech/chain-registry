@@ -23,7 +23,10 @@ const info: AssetList = {
       coingecko_id: 'comdex',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg',
+          theme: {
+            primary_color_hex: '#fc4454'
+          }
         }]
     },
     {
@@ -46,7 +49,10 @@ const info: AssetList = {
       coingecko_id: 'harbor-2',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg',
+          theme: {
+            primary_color_hex: '#645ca4'
+          }
         }]
     },
     {
@@ -69,7 +75,10 @@ const info: AssetList = {
       coingecko_id: 'composite',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }]
     }
   ]

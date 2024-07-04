@@ -20,7 +20,10 @@ const info: AssetList = {
       },
       coingecko_id: 'oec-token',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/okexchain/images/okc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/okexchain/images/okc.png',
+          theme: {
+            primary_color_hex: '#bbbbbb'
+          }
         }]
     }]
 };

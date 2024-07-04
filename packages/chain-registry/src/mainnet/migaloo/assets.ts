@@ -23,7 +23,10 @@ const info: AssetList = {
       coingecko_id: 'white-whale',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.svg',
+          theme: {
+            primary_color_hex: '#1c1c1c'
+          }
         }]
     },
     {
@@ -63,7 +66,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png',
+          theme: {
+            primary_color_hex: '#d8d8d8'
+          }
         }],
       coingecko_id: 'backbone-labs-staked-whale'
     },
@@ -117,10 +123,13 @@ const info: AssetList = {
           }
         }],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/boneluna.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/boneluna.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png',
+          theme: {
+            primary_color_hex: '#070707'
+          }
         }]
     },
     {
@@ -142,7 +151,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rac.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rac.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rac.svg',
+          theme: {
+            primary_color_hex: '#2b2434'
+          }
         }]
     },
     {
@@ -248,7 +260,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/guppy.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/guppy.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/guppy.png',
+          theme: {
+            primary_color_hex: '#d9966e'
+          }
         }]
     },
     {
@@ -268,7 +283,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ophir.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ophir.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ophir.png',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }]
     },
     {
@@ -288,7 +306,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png',
+          theme: {
+            primary_color_hex: '#062d54'
+          }
         }]
     },
     {
@@ -316,7 +337,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/lsdshark.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/lsdshark.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/lsdshark.png',
+          theme: {
+            primary_color_hex: '#0d739c'
+          }
         }]
     },
     {
@@ -355,7 +379,10 @@ const info: AssetList = {
             base_denom: 'uluna'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg',
+          theme: {
+            primary_color_hex: '#f4de6f'
+          }
         }],
       socials: {
         website: 'https://www.terra.money/',
@@ -398,7 +425,10 @@ const info: AssetList = {
             chain_name: 'terra',
             base_denom: 'cw20:terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rakoff.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rakoff.png',
+          theme: {
+            primary_color_hex: '#191717'
+          }
         }]
     },
     {
@@ -418,7 +448,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/gash.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/gash.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/gash.png',
+          theme: {
+            primary_color_hex: '#1d0918'
+          }
         }]
     },
     {
@@ -440,7 +473,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.svg',
+          theme: {
+            primary_color_hex: '#3ccc64'
+          }
         }]
     },
     {
@@ -479,7 +515,10 @@ const info: AssetList = {
             chain_name: 'terra',
             base_denom: 'cw20:terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/FROG.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/FROG.png',
+          theme: {
+            primary_color_hex: '#182615'
+          }
         }]
     },
     {
@@ -499,7 +538,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/grac.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/grac.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/grac.png',
+          theme: {
+            primary_color_hex: '#f5bf09'
+          }
         }]
     },
     {
@@ -533,7 +575,10 @@ const info: AssetList = {
             chain_name: 'juno',
             base_denom: 'factory/juno1h6y8tkceau4d8zyv5aa0fwdj2pa2y0gz2hx0tq/uwind'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wind.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wind.png',
+          theme: {
+            primary_color_hex: '#122b4d'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wind.png'
@@ -596,7 +641,10 @@ const info: AssetList = {
       display: 'ampGASH',
       symbol: 'ampGASH',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ampgash.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ampgash.png',
+          theme: {
+            primary_color_hex: '#374455'
+          }
         }],
       traces: [{
           type: 'liquid-stake',

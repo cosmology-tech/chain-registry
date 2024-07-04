@@ -1,5 +1,6 @@
 import { Chain } from '@chain-registry/types';
 
+import * as _airchainstestnet from './airchainstestnet';
 import * as _akashtestnet from './akashtestnet';
 import * as _archwaytestnet from './archwaytestnet';
 import * as _arkeonetworktestnet from './arkeonetworktestnet';
@@ -20,6 +21,7 @@ import * as _composabletestnet from './composabletestnet';
 import * as _coolcattestnet from './coolcattestnet';
 import * as _coreumtestnet from './coreumtestnet';
 import * as _cosmoshubtestnet from './cosmoshubtestnet';
+import * as _cosmosicsprovidertestnet from './cosmosicsprovidertestnet';
 import * as _cosmwasmtestnet from './cosmwasmtestnet';
 import * as _cosstestnet from './cosstestnet';
 import * as _cudostestnet from './cudostestnet';
@@ -75,7 +77,6 @@ import * as _pryzmtestnet from './pryzmtestnet';
 import * as _quasartestnet from './quasartestnet';
 import * as _quicksilvertestnet from './quicksilvertestnet';
 import * as _qwoyntestnet from './qwoyntestnet';
-import * as _rsprovidertestnet from './rsprovidertestnet';
 import * as _sagatestnet from './sagatestnet';
 import * as _secretnetworktestnet from './secretnetworktestnet';
 import * as _secretnetworktestnet2 from './secretnetworktestnet2';
@@ -108,6 +109,7 @@ import * as _xiontestnet from './xiontestnet';
 import * as _zetachaintestnet from './zetachaintestnet';
 
 const chains: Chain[] = [
+  _airchainstestnet.chain,
   _akashtestnet.chain,
   _archwaytestnet.chain,
   _arkeonetworktestnet.chain,
@@ -128,6 +130,7 @@ const chains: Chain[] = [
   _coolcattestnet.chain,
   _coreumtestnet.chain,
   _cosmoshubtestnet.chain,
+  _cosmosicsprovidertestnet.chain,
   _cosmwasmtestnet.chain,
   _cosstestnet.chain,
   _cudostestnet.chain,
@@ -183,7 +186,6 @@ const chains: Chain[] = [
   _quasartestnet.chain,
   _quicksilvertestnet.chain,
   _qwoyntestnet.chain,
-  _rsprovidertestnet.chain,
   _sagatestnet.chain,
   _secretnetworktestnet.chain,
   _secretnetworktestnet2.chain,

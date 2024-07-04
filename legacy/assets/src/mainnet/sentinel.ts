@@ -23,7 +23,10 @@ const assets: AssetList = {
       coingecko_id: 'akash-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg',
+          theme: {
+            primary_color_hex: '#bc342c'
+          }
         }],
       socials: {
         website: 'https://akash.network/',
@@ -62,7 +65,10 @@ const assets: AssetList = {
       coingecko_id: 'cosmos',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
+          theme: {
+            primary_color_hex: '#272d45'
+          }
         }],
       socials: {
         website: 'https://cosmos.network',
@@ -101,7 +107,10 @@ const assets: AssetList = {
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
         }, {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png',
+          theme: {
+            primary_color_hex: '#0c2c71'
+          }
         }],
       socials: {
         website: 'https://cronos.org/',
@@ -140,7 +149,10 @@ const assets: AssetList = {
       coingecko_id: 'decentr',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg',
+          theme: {
+            primary_color_hex: '#4678e9'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -175,7 +187,10 @@ const assets: AssetList = {
       coingecko_id: 'iris-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg',
+          theme: {
+            primary_color_hex: '#5664ad'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -210,7 +225,10 @@ const assets: AssetList = {
       keywords: ['medas'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.svg',
+          theme: {
+            primary_color_hex: '#147ccc'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -245,7 +263,10 @@ const assets: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
+          theme: {
+            primary_color_hex: '#760dbb'
+          }
         }],
       coingecko_id: 'osmosis',
       keywords: ['dex', 'staking'],
@@ -286,7 +307,10 @@ const assets: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg',
+          theme: {
+            primary_color_hex: '#4453c7'
+          }
         }],
       coingecko_id: 'ion',
       keywords: ['memecoin', 'defi'],
@@ -327,7 +351,10 @@ const assets: AssetList = {
       coingecko_id: 'persistence',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg',
+          theme: {
+            primary_color_hex: '#242424'
+          }
         }],
       socials: {
         website: 'https://persistence.one/',
@@ -366,7 +393,10 @@ const assets: AssetList = {
       coingecko_id: 'regen',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg',
+          theme: {
+            primary_color_hex: '#56b790'
+          }
         }],
       socials: {
         website: 'https://www.regen.network/',
@@ -405,7 +435,10 @@ const assets: AssetList = {
       coingecko_id: 'toucan-protocol-nature-carbon-tonne',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.svg',
+          theme: {
+            primary_color_hex: '#171c25'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -440,7 +473,10 @@ const assets: AssetList = {
       coingecko_id: 'secret',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }],
       socials: {
         website: 'https://scrt.network/',
@@ -479,7 +515,10 @@ const assets: AssetList = {
       coingecko_id: 'akash-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg',
+          theme: {
+            primary_color_hex: '#bc342c'
+          }
         }],
       socials: {
         website: 'https://akash.network/',
@@ -518,7 +557,10 @@ const assets: AssetList = {
       coingecko_id: 'cosmos',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
+          theme: {
+            primary_color_hex: '#272d45'
+          }
         }],
       socials: {
         website: 'https://cosmos.network',
@@ -557,7 +599,10 @@ const assets: AssetList = {
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
         }, {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png',
+          theme: {
+            primary_color_hex: '#0c2c71'
+          }
         }],
       socials: {
         website: 'https://cronos.org/',
@@ -596,7 +641,10 @@ const assets: AssetList = {
       coingecko_id: 'decentr',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg',
+          theme: {
+            primary_color_hex: '#4678e9'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -631,7 +679,10 @@ const assets: AssetList = {
       coingecko_id: 'iris-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg',
+          theme: {
+            primary_color_hex: '#5664ad'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -666,7 +717,10 @@ const assets: AssetList = {
       keywords: ['medas'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.svg',
+          theme: {
+            primary_color_hex: '#147ccc'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -701,7 +755,10 @@ const assets: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
+          theme: {
+            primary_color_hex: '#760dbb'
+          }
         }],
       coingecko_id: 'osmosis',
       keywords: ['dex', 'staking'],
@@ -742,7 +799,10 @@ const assets: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg',
+          theme: {
+            primary_color_hex: '#4453c7'
+          }
         }],
       coingecko_id: 'ion',
       keywords: ['memecoin', 'defi'],
@@ -783,7 +843,10 @@ const assets: AssetList = {
       coingecko_id: 'persistence',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg',
+          theme: {
+            primary_color_hex: '#242424'
+          }
         }],
       socials: {
         website: 'https://persistence.one/',
@@ -822,7 +885,10 @@ const assets: AssetList = {
       coingecko_id: 'regen',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg',
+          theme: {
+            primary_color_hex: '#56b790'
+          }
         }],
       socials: {
         website: 'https://www.regen.network/',
@@ -861,7 +927,10 @@ const assets: AssetList = {
       coingecko_id: 'toucan-protocol-nature-carbon-tonne',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/nct.svg',
+          theme: {
+            primary_color_hex: '#171c25'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -896,7 +965,10 @@ const assets: AssetList = {
       coingecko_id: 'secret',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }],
       socials: {
         website: 'https://scrt.network/',
@@ -935,7 +1007,10 @@ const assets: AssetList = {
       coingecko_id: 'sifchain',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg',
+          theme: {
+            primary_color_hex: '#be9926'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -970,7 +1045,10 @@ const assets: AssetList = {
       coingecko_id: 'starname',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.svg',
+          theme: {
+            primary_color_hex: '#5c64b4'
+          }
         }],
       socials: {
         website: 'https://app.starname.me/',
@@ -1009,7 +1087,10 @@ const assets: AssetList = {
       coingecko_id: 'sifchain',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg',
+          theme: {
+            primary_color_hex: '#be9926'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -1044,7 +1125,10 @@ const assets: AssetList = {
       coingecko_id: 'starname',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.svg',
+          theme: {
+            primary_color_hex: '#5c64b4'
+          }
         }],
       socials: {
         website: 'https://app.starname.me/',

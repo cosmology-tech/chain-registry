@@ -6,6 +6,7 @@ export * as _0l from './0l';
 export * as aptos from './aptos';
 export * as arbitrum from './arbitrum';
 export * as avalanche from './avalanche';
+export * as base from './base';
 export * as binancesmartchain from './binancesmartchain';
 export * as bitcoin from './bitcoin';
 export * as comex from './comex';

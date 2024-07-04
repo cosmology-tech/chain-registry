@@ -23,7 +23,10 @@ const info: AssetList = {
       coingecko_id: 'consciousdao',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg',
+          theme: {
+            primary_color_hex: '#047e04'
+          }
         }],
       socials: {
         website: 'https://cvn.io',

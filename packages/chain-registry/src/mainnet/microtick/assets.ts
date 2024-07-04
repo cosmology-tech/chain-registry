@@ -22,7 +22,10 @@ const info: AssetList = {
       coingecko_id: 'microtick',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg',
+          theme: {
+            primary_color_hex: '#6bab14'
+          }
         }]
     }]
 };

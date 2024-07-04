@@ -33,7 +33,10 @@ const info: AssetList = {
       coingecko_id: 'terra-luna',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.svg',
+          theme: {
+            primary_color_hex: '#fcdb5b'
+          }
         }]
     },
     {
@@ -66,7 +69,10 @@ const info: AssetList = {
       coingecko_id: 'terrausd',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ust.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ust.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ust.svg',
+          theme: {
+            primary_color_hex: '#5493f2'
+          }
         }]
     },
     {
@@ -98,7 +104,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.svg',
+          theme: {
+            primary_color_hex: '#4b83e0'
+          }
         }]
     },
     {
@@ -121,7 +130,10 @@ const info: AssetList = {
       },
       coingecko_id: 'white-whale',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whale.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whale.png',
+          theme: {
+            primary_color_hex: '#43b24b'
+          }
         }]
     },
     {
@@ -142,7 +154,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bluna.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bluna.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bluna.png',
+          theme: {
+            primary_color_hex: '#fbdb5b'
+          }
         }]
     },
     {
@@ -163,7 +178,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/beth.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/beth.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/beth.png',
+          theme: {
+            primary_color_hex: '#54b649'
+          }
         }]
     },
     {
@@ -184,7 +202,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aust.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aust.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aust.png',
+          theme: {
+            primary_color_hex: '#dd7e7f'
+          }
         }]
     },
     {
@@ -205,7 +226,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/anc.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/anc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/anc.png',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }]
     },
     {
@@ -226,7 +250,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mir.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mir.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mir.png',
+          theme: {
+            primary_color_hex: '#142444'
+          }
         }]
     },
     {
@@ -247,7 +274,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maapl.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maapl.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maapl.png',
+          theme: {
+            primary_color_hex: '#acacac'
+          }
         }]
     },
     {
@@ -268,7 +298,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mabnb.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mabnb.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mabnb.png',
+          theme: {
+            primary_color_hex: '#e4545c'
+          }
         }]
     },
     {
@@ -289,7 +322,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamc.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamc.png',
+          theme: {
+            primary_color_hex: '#cc2444'
+          }
         }]
     },
     {
@@ -310,7 +346,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamd.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamd.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamd.png',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }]
     },
     {
@@ -331,7 +370,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamzn.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamzn.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamzn.png',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }]
     },
     {
@@ -352,7 +394,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/markk.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/markk.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/markk.png',
+          theme: {
+            primary_color_hex: '#0d0d25'
+          }
         }]
     },
     {
@@ -373,7 +418,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbaba.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbaba.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbaba.png',
+          theme: {
+            primary_color_hex: '#f38506'
+          }
         }]
     },
     {
@@ -394,7 +442,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbtc.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbtc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbtc.png',
+          theme: {
+            primary_color_hex: '#f4941c'
+          }
         }]
     },
     {
@@ -415,7 +466,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mcoin.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mcoin.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mcoin.png',
+          theme: {
+            primary_color_hex: '#1454f4'
+          }
         }]
     },
     {
@@ -436,7 +490,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdis.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdis.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdis.png',
+          theme: {
+            primary_color_hex: '#050505'
+          }
         }]
     },
     {
@@ -457,7 +514,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdot.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdot.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdot.png',
+          theme: {
+            primary_color_hex: '#1c1c1c'
+          }
         }]
     },
     {
@@ -478,7 +538,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/meth.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/meth.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/meth.png',
+          theme: {
+            primary_color_hex: '#5c648e'
+          }
         }]
     },
     {
@@ -499,7 +562,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mfb.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mfb.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mfb.png',
+          theme: {
+            primary_color_hex: '#1c74f4'
+          }
         }]
     },
     {
@@ -520,7 +586,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mglxy.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mglxy.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mglxy.png',
+          theme: {
+            primary_color_hex: '#1d4cac'
+          }
         }]
     },
     {
@@ -541,7 +610,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgme.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgme.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgme.png',
+          theme: {
+            primary_color_hex: '#070707'
+          }
         }]
     },
     {
@@ -562,7 +634,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgoogl.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgoogl.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgoogl.png',
+          theme: {
+            primary_color_hex: '#34ac54'
+          }
         }]
     },
     {
@@ -583,7 +658,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgs.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgs.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgs.png',
+          theme: {
+            primary_color_hex: '#749cc4'
+          }
         }]
     },
     {
@@ -604,7 +682,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mhood.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mhood.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mhood.png',
+          theme: {
+            primary_color_hex: '#54c48c'
+          }
         }]
     },
     {
@@ -625,7 +706,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png',
+          theme: {
+            primary_color_hex: '#141c2c'
+          }
         }]
     },
     {
@@ -646,7 +730,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png',
+          theme: {
+            primary_color_hex: '#141c2c'
+          }
         }]
     },
     {
@@ -667,7 +754,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mjnj.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mjnj.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mjnj.png',
+          theme: {
+            primary_color_hex: '#c41d2c'
+          }
         }]
     },
     {
@@ -688,7 +778,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mko.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mko.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mko.png',
+          theme: {
+            primary_color_hex: '#fcc9cc'
+          }
         }]
     },
     {
@@ -709,7 +802,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mmsft.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mmsft.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mmsft.png',
+          theme: {
+            primary_color_hex: '#04a4ec'
+          }
         }]
     },
     {
@@ -730,7 +826,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnflx.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnflx.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnflx.png',
+          theme: {
+            primary_color_hex: '#af040c'
+          }
         }]
     },
     {
@@ -751,7 +850,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnio.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnio.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnio.png',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }]
     },
     {
@@ -772,7 +874,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnke.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnke.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnke.png',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }]
     },
     {
@@ -793,7 +898,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnvda.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnvda.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnvda.png',
+          theme: {
+            primary_color_hex: '#74bc04'
+          }
         }]
     },
     {
@@ -814,7 +922,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mpypl.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mpypl.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mpypl.png',
+          theme: {
+            primary_color_hex: '#24377a'
+          }
         }]
     },
     {
@@ -835,7 +946,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mqqq.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mqqq.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mqqq.png',
+          theme: {
+            primary_color_hex: '#041c7c'
+          }
         }]
     },
     {
@@ -856,7 +970,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msbux.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msbux.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msbux.png',
+          theme: {
+            primary_color_hex: '#047444'
+          }
         }]
     },
     {
@@ -877,7 +994,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mslv.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mslv.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mslv.png',
+          theme: {
+            primary_color_hex: '#141c2c'
+          }
         }]
     },
     {
@@ -898,7 +1018,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mspy.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mspy.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mspy.png',
+          theme: {
+            primary_color_hex: '#141c2c'
+          }
         }]
     },
     {
@@ -919,7 +1042,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msq.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msq.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msq.png',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }]
     },
     {
@@ -940,7 +1066,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtsla.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtsla.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtsla.png',
+          theme: {
+            primary_color_hex: '#e41c34'
+          }
         }]
     },
     {
@@ -961,7 +1090,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtwtr.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtwtr.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtwtr.png',
+          theme: {
+            primary_color_hex: '#2cace4'
+          }
         }]
     },
     {
@@ -982,7 +1114,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/muso.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/muso.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/muso.png',
+          theme: {
+            primary_color_hex: '#141c2c'
+          }
         }]
     },
     {
@@ -1003,7 +1138,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png',
+          theme: {
+            primary_color_hex: '#141c2c'
+          }
         }]
     },
     {
@@ -1024,7 +1162,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png',
+          theme: {
+            primary_color_hex: '#141c2c'
+          }
         }]
     },
     {
@@ -1045,7 +1186,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lota.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lota.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lota.png',
+          theme: {
+            primary_color_hex: '#c63adc'
+          }
         }]
     },
     {
@@ -1066,7 +1210,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dph.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dph.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dph.png',
+          theme: {
+            primary_color_hex: '#2c4c9c'
+          }
         }]
     },
     {
@@ -1087,7 +1234,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mine.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mine.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mine.png',
+          theme: {
+            primary_color_hex: '#042c44'
+          }
         }]
     },
     {
@@ -1108,7 +1258,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bpsidp-24m.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bpsidp-24m.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bpsidp-24m.png',
+          theme: {
+            primary_color_hex: '#3d6d8e'
+          }
         }]
     },
     {
@@ -1129,7 +1282,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/spec.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/spec.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/spec.png',
+          theme: {
+            primary_color_hex: '#fa2d6c'
+          }
         }]
     },
     {
@@ -1150,7 +1306,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loop.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loop.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loop.png',
+          theme: {
+            primary_color_hex: '#04dff9'
+          }
         }]
     },
     {
@@ -1171,7 +1330,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loopr.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loopr.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loopr.png',
+          theme: {
+            primary_color_hex: '#550555'
+          }
         }]
     },
     {
@@ -1192,7 +1354,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stt.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stt.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stt.png',
+          theme: {
+            primary_color_hex: '#f5e604'
+          }
         }]
     },
     {
@@ -1213,7 +1378,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twd.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twd.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twd.png',
+          theme: {
+            primary_color_hex: '#25abe3'
+          }
         }]
     },
     {
@@ -1234,7 +1402,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xtra.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xtra.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xtra.png',
+          theme: {
+            primary_color_hex: '#0c9cd4'
+          }
         }]
     },
     {
@@ -1255,7 +1426,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miaw.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miaw.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miaw.png',
+          theme: {
+            primary_color_hex: '#060606'
+          }
         }]
     },
     {
@@ -1276,7 +1450,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/psi.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/psi.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/psi.png',
+          theme: {
+            primary_color_hex: '#1c1c2c'
+          }
         }]
     },
     {
@@ -1423,7 +1600,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vkr.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vkr.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vkr.png',
+          theme: {
+            primary_color_hex: '#1c1c1c'
+          }
         }]
     },
     {
@@ -1444,7 +1624,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orion.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orion.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orion.png',
+          theme: {
+            primary_color_hex: '#04bc74'
+          }
         }]
     },
     {
@@ -1465,7 +1648,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tland.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tland.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tland.png',
+          theme: {
+            primary_color_hex: '#c3a990'
+          }
         }]
     },
     {
@@ -1486,7 +1672,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vust.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vust.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vust.png',
+          theme: {
+            primary_color_hex: '#3ccb64'
+          }
         }]
     },
     {
@@ -1507,7 +1696,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eth.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eth.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eth.png',
+          theme: {
+            primary_color_hex: '#2d2831'
+          }
         }]
     },
     {
@@ -1528,7 +1720,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wbtc.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wbtc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wbtc.png',
+          theme: {
+            primary_color_hex: '#f3931e'
+          }
         }]
     },
     {
@@ -1549,7 +1744,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sol.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sol.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sol.png',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }]
     },
     {
@@ -1570,7 +1768,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticet.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticet.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticet.png',
+          theme: {
+            primary_color_hex: '#8447e1'
+          }
         }]
     },
     {
@@ -1591,7 +1792,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bnb.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bnb.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bnb.png',
+          theme: {
+            primary_color_hex: '#f4bc2c'
+          }
         }]
     },
     {
@@ -1612,7 +1816,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cake.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cake.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cake.png',
+          theme: {
+            primary_color_hex: '#d0894d'
+          }
         }]
     },
     {
@@ -1633,7 +1840,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/link.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/link.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/link.png',
+          theme: {
+            primary_color_hex: '#345cd4'
+          }
         }]
     },
     {
@@ -1654,7 +1864,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sushi.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sushi.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sushi.png',
+          theme: {
+            primary_color_hex: '#cd68ac'
+          }
         }]
     },
     {
@@ -1675,7 +1888,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/uni.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/uni.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/uni.png',
+          theme: {
+            primary_color_hex: '#b01e66'
+          }
         }]
     },
     {
@@ -1696,7 +1912,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtet.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtet.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtet.png',
+          theme: {
+            primary_color_hex: '#56a995'
+          }
         }]
     },
     {
@@ -1717,7 +1936,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcet.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcet.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcet.png',
+          theme: {
+            primary_color_hex: '#2a75c9'
+          }
         }]
     },
     {
@@ -1738,7 +1960,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kuji.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kuji.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kuji.png',
+          theme: {
+            primary_color_hex: '#24242c'
+          }
         }]
     },
     {
@@ -1759,7 +1984,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/skuji.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/skuji.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/skuji.png',
+          theme: {
+            primary_color_hex: '#252933'
+          }
         }]
     },
     {
@@ -1780,7 +2008,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wsteth.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wsteth.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wsteth.png',
+          theme: {
+            primary_color_hex: '#9cdcfc'
+          }
         }]
     },
     {
@@ -1801,7 +2032,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wstsol.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wstsol.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wstsol.png',
+          theme: {
+            primary_color_hex: '#1dbffc'
+          }
         }]
     },
     {
@@ -1843,7 +2077,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ldo.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ldo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ldo.png',
+          theme: {
+            primary_color_hex: '#f49c8c'
+          }
         }]
     },
     {
@@ -1885,7 +2122,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stluna.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stluna.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stluna.png',
+          theme: {
+            primary_color_hex: '#1fc0fb'
+          }
         }]
     },
     {
@@ -1921,7 +2161,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/btl.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/btl.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/btl.png',
+          theme: {
+            primary_color_hex: '#5cbc8c'
+          }
         }]
     },
     {
@@ -1942,7 +2185,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lunax.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lunax.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lunax.png',
+          theme: {
+            primary_color_hex: '#cdcdce'
+          }
         }]
     },
     {
@@ -1963,7 +2209,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luni.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luni.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luni.png',
+          theme: {
+            primary_color_hex: '#232742'
+          }
         }]
     },
     {
@@ -1984,7 +2233,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ply.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ply.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ply.png',
+          theme: {
+            primary_color_hex: '#070706'
+          }
         }]
     },
     {
@@ -2005,7 +2257,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfloki.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfloki.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfloki.png',
+          theme: {
+            primary_color_hex: '#f6c911'
+          }
         }]
     },
     {
@@ -2026,7 +2281,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tftic.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tftic.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tftic.png',
+          theme: {
+            primary_color_hex: '#1c1c1b'
+          }
         }]
     },
     {
@@ -2047,7 +2305,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticii.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticii.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticii.png',
+          theme: {
+            primary_color_hex: '#1c1c1b'
+          }
         }]
     },
     {
@@ -2068,7 +2329,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticiii.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticiii.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticiii.png',
+          theme: {
+            primary_color_hex: '#1c1c1b'
+          }
         }]
     },
     {
@@ -2089,7 +2353,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/moon.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/moon.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/moon.png',
+          theme: {
+            primary_color_hex: '#ebb30c'
+          }
         }]
     },
     {
@@ -2164,7 +2431,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/halo.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/halo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/halo.png',
+          theme: {
+            primary_color_hex: '#54a4dc'
+          }
         }]
     },
     {
@@ -2185,7 +2455,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pug.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pug.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pug.png',
+          theme: {
+            primary_color_hex: '#252424'
+          }
         }]
     },
     {
@@ -2206,7 +2479,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orne.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orne.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orne.png',
+          theme: {
+            primary_color_hex: '#fbfbfb'
+          }
         }]
     },
     {
@@ -2227,7 +2503,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tns.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tns.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tns.png',
+          theme: {
+            primary_color_hex: '#2442cf'
+          }
         }]
     },
     {
@@ -2248,7 +2527,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xrune.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xrune.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xrune.png',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }]
     },
     {
@@ -2269,7 +2551,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/alot.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/alot.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/alot.png',
+          theme: {
+            primary_color_hex: '#c7bea1'
+          }
         }]
     },
     {
@@ -2311,7 +2596,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/glow.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/glow.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/glow.png',
+          theme: {
+            primary_color_hex: '#262238'
+          }
         }]
     },
     {
@@ -2332,7 +2620,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/apollo.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/apollo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/apollo.png',
+          theme: {
+            primary_color_hex: '#10192a'
+          }
         }]
     },
     {
@@ -2389,7 +2680,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/prism.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/prism.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/prism.png',
+          theme: {
+            primary_color_hex: '#f6f6f6'
+          }
         }]
     },
     {
@@ -2425,7 +2719,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whsail.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whsail.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whsail.png',
+          theme: {
+            primary_color_hex: '#0472b3'
+          }
         }]
     },
     {
@@ -2446,7 +2743,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whgsail.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whgsail.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whgsail.png',
+          theme: {
+            primary_color_hex: '#046baa'
+          }
         }]
     },
     {
@@ -2467,7 +2767,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xprism.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xprism.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xprism.png',
+          theme: {
+            primary_color_hex: '#242434'
+          }
         }]
     },
     {
@@ -2503,7 +2806,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ctx.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ctx.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ctx.png',
+          theme: {
+            primary_color_hex: '#04b4fc'
+          }
         }]
     },
     {
@@ -2524,7 +2830,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cluna.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cluna.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cluna.png',
+          theme: {
+            primary_color_hex: '#211f2e'
+          }
         }]
     },
     {
@@ -2545,7 +2854,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pluna.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pluna.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pluna.png',
+          theme: {
+            primary_color_hex: '#202030'
+          }
         }]
     },
     {
@@ -2566,7 +2878,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/yluna.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/yluna.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/yluna.png',
+          theme: {
+            primary_color_hex: '#202130'
+          }
         }]
     },
     {
@@ -2587,7 +2902,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlo.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlo.png',
+          theme: {
+            primary_color_hex: '#1b3667'
+          }
         }]
     },
     {
@@ -2608,7 +2926,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/local.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/local.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/local.png',
+          theme: {
+            primary_color_hex: '#242424'
+          }
         }]
     },
     {
@@ -2629,7 +2950,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luv.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luv.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luv.png',
+          theme: {
+            primary_color_hex: '#f7a02f'
+          }
         }]
     },
     {
@@ -2650,7 +2974,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/robo.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/robo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/robo.png',
+          theme: {
+            primary_color_hex: '#2473d2'
+          }
         }]
     },
     {
@@ -2671,7 +2998,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luart.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luart.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luart.png',
+          theme: {
+            primary_color_hex: '#1b1429'
+          }
         }]
     },
     {
@@ -2812,7 +3142,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sd.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sd.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sd.png',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }]
     },
     {
@@ -2833,7 +3166,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xsd.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xsd.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xsd.png',
+          theme: {
+            primary_color_hex: '#f3f3f3'
+          }
         }]
     },
     {
@@ -2854,7 +3190,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/paxg.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/paxg.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/paxg.png',
+          theme: {
+            primary_color_hex: '#848484'
+          }
         }]
     },
     {
@@ -2875,7 +3214,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whdao.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whdao.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whdao.png',
+          theme: {
+            primary_color_hex: '#2c2c44'
+          }
         }]
     },
     {
@@ -2896,7 +3238,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/link.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/link.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/link.png',
+          theme: {
+            primary_color_hex: '#345cd4'
+          }
         }]
     },
     {
@@ -2917,7 +3262,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sayve.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sayve.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sayve.png',
+          theme: {
+            primary_color_hex: '#f3ebdb'
+          }
         }]
     },
     {
@@ -3040,7 +3388,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sst.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sst.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sst.png',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }]
     },
     {
@@ -3061,7 +3412,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlas.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlas.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlas.png',
+          theme: {
+            primary_color_hex: '#c77a91'
+          }
         }]
     },
     {
@@ -3082,7 +3436,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/audio.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/audio.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/audio.png',
+          theme: {
+            primary_color_hex: '#7d1dc0'
+          }
         }]
     },
     {
@@ -3103,7 +3460,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/avax.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/avax.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/avax.png',
+          theme: {
+            primary_color_hex: '#e74245'
+          }
         }]
     },
     {
@@ -3124,7 +3484,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bat.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bat.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bat.png',
+          theme: {
+            primary_color_hex: '#f75108'
+          }
         }]
     },
     {
@@ -3145,7 +3508,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/busdbs.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/busdbs.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/busdbs.png',
+          theme: {
+            primary_color_hex: '#f4bc0f'
+          }
         }]
     },
     {
@@ -3166,7 +3532,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dai.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dai.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dai.png',
+          theme: {
+            primary_color_hex: '#fbb932'
+          }
         }]
     },
     {
@@ -3187,7 +3556,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticpo.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticpo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticpo.png',
+          theme: {
+            primary_color_hex: '#8445e3'
+          }
         }]
     },
     {
@@ -3208,7 +3580,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mimet.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mimet.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mimet.png',
+          theme: {
+            primary_color_hex: '#6f6df0'
+          }
         }]
     },
     {
@@ -3229,7 +3604,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ray.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ray.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ray.png',
+          theme: {
+            primary_color_hex: '#4d75f2'
+          }
         }]
     },
     {
@@ -3250,7 +3628,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sbr.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sbr.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sbr.png',
+          theme: {
+            primary_color_hex: '#161527'
+          }
         }]
     },
     {
@@ -3271,7 +3652,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/shib.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/shib.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/shib.png',
+          theme: {
+            primary_color_hex: '#f99e0e'
+          }
         }]
     },
     {
@@ -3292,7 +3676,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/srmso.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/srmso.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/srmso.png',
+          theme: {
+            primary_color_hex: '#40c2d6'
+          }
         }]
     },
     {
@@ -3313,7 +3700,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcav.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcav.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcav.png',
+          theme: {
+            primary_color_hex: '#2775cb'
+          }
         }]
     },
     {
@@ -3334,7 +3724,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcbs.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcbs.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcbs.png',
+          theme: {
+            primary_color_hex: '#2675cb'
+          }
         }]
     },
     {
@@ -3355,7 +3748,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcpo.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcpo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcpo.png',
+          theme: {
+            primary_color_hex: '#2a73cc'
+          }
         }]
     },
     {
@@ -3376,7 +3772,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcso.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcso.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcso.png',
+          theme: {
+            primary_color_hex: '#2a76cc'
+          }
         }]
     },
     {
@@ -3397,7 +3796,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtav.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtav.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtav.png',
+          theme: {
+            primary_color_hex: '#55ac94'
+          }
         }]
     },
     {
@@ -3418,7 +3820,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtbs.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtbs.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtbs.png',
+          theme: {
+            primary_color_hex: '#55ac94'
+          }
         }]
     },
     {
@@ -3439,7 +3844,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtso.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtso.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtso.png',
+          theme: {
+            primary_color_hex: '#54ac96'
+          }
         }]
     },
     {
@@ -3460,7 +3868,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gohm.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gohm.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gohm.png',
+          theme: {
+            primary_color_hex: '#b3bec1'
+          }
         }]
     },
     {
@@ -3481,7 +3892,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msol.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msol.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msol.png',
+          theme: {
+            primary_color_hex: '#c8e8e1'
+          }
         }]
     },
     {
@@ -3502,7 +3916,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/steth.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/steth.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/steth.png',
+          theme: {
+            primary_color_hex: '#04a4fb'
+          }
         }]
     },
     {
@@ -3523,7 +3940,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lct.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lct.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lct.png',
+          theme: {
+            primary_color_hex: '#2664a3'
+          }
         }]
     },
     {
@@ -3607,7 +4027,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lctfancard.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lctfancard.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lctfancard.png',
+          theme: {
+            primary_color_hex: '#2968a5'
+          }
         }]
     },
     {
@@ -3691,7 +4114,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cst.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cst.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cst.png',
+          theme: {
+            primary_color_hex: '#5d2616'
+          }
         }]
     },
     {
@@ -3712,7 +4138,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cstfancard.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cstfancard.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cstfancard.png',
+          theme: {
+            primary_color_hex: '#5d2616'
+          }
         }]
     },
     {
@@ -3733,7 +4162,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwld.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwld.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwld.png',
+          theme: {
+            primary_color_hex: '#046394'
+          }
         }]
     },
     {
@@ -3754,7 +4186,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/fury.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/fury.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/fury.png',
+          theme: {
+            primary_color_hex: '#14045c'
+          }
         }]
     },
     {
@@ -3796,7 +4231,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vitc.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vitc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vitc.png',
+          theme: {
+            primary_color_hex: '#e3551b'
+          }
         }]
     },
     {
@@ -3817,7 +4255,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sb.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sb.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sb.png',
+          theme: {
+            primary_color_hex: '#7c241c'
+          }
         }]
     },
     {
@@ -3859,7 +4300,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orionastro.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orionastro.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orionastro.png',
+          theme: {
+            primary_color_hex: '#1d90d6'
+          }
         }]
     },
     {
@@ -3880,7 +4324,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/retro.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/retro.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/retro.png',
+          theme: {
+            primary_color_hex: '#eb4024'
+          }
         }]
     },
     {
@@ -3901,7 +4348,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tnd.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tnd.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tnd.png',
+          theme: {
+            primary_color_hex: '#1c53fb'
+          }
         }]
     },
     {
@@ -3943,7 +4393,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwt.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwt.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwt.png',
+          theme: {
+            primary_color_hex: '#aeb8f5'
+          }
         }]
     },
     {
@@ -3975,7 +4428,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aut.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aut.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aut.svg',
+          theme: {
+            primary_color_hex: '#5981d7'
+          }
         }]
     },
     {
@@ -4007,7 +4463,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cat.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cat.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cat.svg',
+          theme: {
+            primary_color_hex: '#de725b'
+          }
         }]
     },
     {
@@ -4039,7 +4498,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cht.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cht.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cht.svg',
+          theme: {
+            primary_color_hex: '#c95c41'
+          }
         }]
     },
     {
@@ -4071,7 +4533,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnt.svg',
+          theme: {
+            primary_color_hex: '#d3684c'
+          }
         }]
     },
     {
@@ -4103,7 +4568,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dkt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dkt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dkt.svg',
+          theme: {
+            primary_color_hex: '#db300a'
+          }
         }]
     },
     {
@@ -4135,7 +4603,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eut.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eut.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eut.svg',
+          theme: {
+            primary_color_hex: '#1535b2'
+          }
         }]
     },
     {
@@ -4167,7 +4638,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gbt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gbt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gbt.svg',
+          theme: {
+            primary_color_hex: '#d49b9c'
+          }
         }]
     },
     {
@@ -4199,7 +4673,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/hkt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/hkt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/hkt.svg',
+          theme: {
+            primary_color_hex: '#dc300a'
+          }
         }]
     },
     {
@@ -4231,7 +4708,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/idt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/idt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/idt.svg',
+          theme: {
+            primary_color_hex: '#5893ed'
+          }
         }]
     },
     {
@@ -4263,7 +4743,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/int.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/int.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/int.svg',
+          theme: {
+            primary_color_hex: '#4b87e6'
+          }
         }]
     },
     {
@@ -4295,7 +4778,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/jpt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/jpt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/jpt.svg',
+          theme: {
+            primary_color_hex: '#cfcfcf'
+          }
         }]
     },
     {
@@ -4327,7 +4813,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnt.svg',
+          theme: {
+            primary_color_hex: '#4085f0'
+          }
         }]
     },
     {
@@ -4359,7 +4848,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/myt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/myt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/myt.svg',
+          theme: {
+            primary_color_hex: '#5893ed'
+          }
         }]
     },
     {
@@ -4391,7 +4883,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/not.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/not.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/not.svg',
+          theme: {
+            primary_color_hex: '#5493f3'
+          }
         }]
     },
     {
@@ -4423,7 +4918,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pht.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pht.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pht.svg',
+          theme: {
+            primary_color_hex: '#e88057'
+          }
         }]
     },
     {
@@ -4455,7 +4953,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sdt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sdt.svg',
+          theme: {
+            primary_color_hex: '#2fa4f1'
+          }
         }]
     },
     {
@@ -4487,7 +4988,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/set.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/set.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/set.svg',
+          theme: {
+            primary_color_hex: '#2e71e1'
+          }
         }]
     },
     {
@@ -4519,7 +5023,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sgt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sgt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sgt.svg',
+          theme: {
+            primary_color_hex: '#4886e7'
+          }
         }]
     },
     {
@@ -4551,7 +5058,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tht.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tht.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tht.svg',
+          theme: {
+            primary_color_hex: '#5493f3'
+          }
         }]
     },
     {
@@ -4583,7 +5093,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twt.svg',
+          theme: {
+            primary_color_hex: '#5493f3'
+          }
         }]
     },
     {
@@ -4604,7 +5117,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/neb.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/neb.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/neb.png',
+          theme: {
+            primary_color_hex: '#8b90ad'
+          }
         }]
     },
     {
@@ -4625,7 +5141,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/trit.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/trit.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/trit.png',
+          theme: {
+            primary_color_hex: '#24ab9b'
+          }
         }]
     },
     {
@@ -4647,7 +5166,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rakoff.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rakoff.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rakoff.png',
+          theme: {
+            primary_color_hex: '#191717'
+          }
         }]
     },
     {
@@ -4666,7 +5188,10 @@ const info: AssetList = {
       name: 'Tadpole Frogztrik Token',
       symbol: 'TADF',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tadf.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tadf.png',
+          theme: {
+            primary_color_hex: '#e9f9f2'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tadf.png'
@@ -4688,7 +5213,10 @@ const info: AssetList = {
       name: 'Frogztrik NFT Token',
       symbol: 'FROG',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/FROG.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/FROG.png',
+          theme: {
+            primary_color_hex: '#182615'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/FROG.png'

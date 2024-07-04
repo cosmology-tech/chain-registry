@@ -19,7 +19,8 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/initia/images/init.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/initia/images/init.svg',
           theme: {
-            circle: true
+            circle: true,
+            primary_color_hex: '#040404'
           }
         }],
       socials: {

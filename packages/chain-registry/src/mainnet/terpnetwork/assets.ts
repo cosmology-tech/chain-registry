@@ -19,7 +19,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terpnetwork/images/terp.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terpnetwork/images/terp.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terpnetwork/images/terp.png',
+          theme: {
+            primary_color_hex: '#a2cd9a'
+          }
         }]
     }, {
       description: 'Thiol Gas Token (Thiols) is the Terp Network\'s native utility token, used as the primary means to govern, secure the blockchain & incentivize participants.',
@@ -38,7 +41,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terpnetwork/images/thiol.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terpnetwork/images/thiol.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terpnetwork/images/thiol.png',
+          theme: {
+            primary_color_hex: '#060607'
+          }
         }]
     }]
 };

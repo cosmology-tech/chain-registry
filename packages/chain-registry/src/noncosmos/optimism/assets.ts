@@ -20,7 +20,10 @@ const info: AssetList = {
       coingecko_id: 'optimism',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/optimism/images/op.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/optimism/images/op.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/optimism/images/op.png',
+          theme: {
+            primary_color_hex: '#fc0424'
+          }
         }]
     }, {
       type_asset: 'evm-base',

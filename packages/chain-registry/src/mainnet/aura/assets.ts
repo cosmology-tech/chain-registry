@@ -22,7 +22,10 @@ const info: AssetList = {
       coingecko_id: 'aura-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.svg',
+          theme: {
+            primary_color_hex: '#a7c8d4'
+          }
         }]
     }]
 };

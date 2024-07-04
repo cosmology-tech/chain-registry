@@ -22,7 +22,10 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/vrise.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/vrise.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/vrise.png',
+          theme: {
+            primary_color_hex: '#a4b4c4'
+          }
         }],
       socials: {
         website: 'https://sunriselayer.io/',
@@ -48,7 +51,10 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.png',
+          theme: {
+            primary_color_hex: '#ecbc64'
+          }
         }],
       socials: {
         website: 'https://sunriselayer.io/',

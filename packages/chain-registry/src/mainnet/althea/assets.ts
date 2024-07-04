@@ -16,7 +16,10 @@ const info: AssetList = {
       display: 'althea',
       symbol: 'ALTHEA',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/althea/images/althea.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/althea/images/althea.png',
+          theme: {
+            primary_color_hex: '#0474dc'
+          }
         }, {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/althea/images/althea.svg'
         }]

@@ -23,7 +23,10 @@ const info: AssetList = {
       keywords: ['id'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/token.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/token.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/token.svg',
+          theme: {
+            primary_color_hex: '#1c2474'
+          }
         }]
     }]
 };

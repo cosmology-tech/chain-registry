@@ -28,7 +28,10 @@ const info: AssetList = {
       coingecko_id: 'nibiru',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.svg',
+          theme: {
+            primary_color_hex: '#14c0ce'
+          }
         }]
     },
     {

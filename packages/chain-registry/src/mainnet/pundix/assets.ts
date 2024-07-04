@@ -35,7 +35,10 @@ const info: AssetList = {
             base_denom: 'eth0x0FD10b9899882a6f2fcb5c371E17e70FdEe00C38'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.svg',
+          theme: {
+            primary_color_hex: '#f1d20c'
+          }
         }],
       socials: {
         website: 'https://pundix.com',
@@ -70,7 +73,10 @@ const info: AssetList = {
             base_denom: '0x29a63F4B209C29B4DC47f06FFA896F32667DAD2C'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.png',
+          theme: {
+            primary_color_hex: '#1c1c1b'
+          }
         }],
       socials: {
         website: 'https://purse.land',

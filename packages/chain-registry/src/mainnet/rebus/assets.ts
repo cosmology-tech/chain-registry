@@ -22,7 +22,10 @@ const info: AssetList = {
       coingecko_id: 'rebus',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.svg',
+          theme: {
+            primary_color_hex: '#e75486'
+          }
         }]
     }]
 };

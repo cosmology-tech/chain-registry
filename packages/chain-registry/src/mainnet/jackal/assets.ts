@@ -22,7 +22,10 @@ const info: AssetList = {
       coingecko_id: 'jackal-protocol',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg',
+          theme: {
+            primary_color_hex: '#dbdbcb'
+          }
         }]
     }]
 };

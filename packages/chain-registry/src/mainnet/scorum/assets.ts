@@ -23,7 +23,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scr.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scr.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scr.svg',
+          theme: {
+            primary_color_hex: '#0bc47e'
+          }
         }],
       socials: {
         website: 'https://scorum.network',
@@ -49,7 +52,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.svg',
+          theme: {
+            primary_color_hex: '#9421e3'
+          }
         }]
     },
     {
@@ -68,7 +74,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/gas.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/gas.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/gas.svg',
+          theme: {
+            primary_color_hex: '#555555'
+          }
         }]
     }
   ]

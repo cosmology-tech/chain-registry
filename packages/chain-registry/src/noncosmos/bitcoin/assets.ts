@@ -21,7 +21,10 @@ const info: AssetList = {
       },
       coingecko_id: 'bitcoin',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.png',
+          theme: {
+            primary_color_hex: '#f4941c'
+          }
         }]
     }]
 };

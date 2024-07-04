@@ -24,7 +24,10 @@ const info: AssetList = {
       coingecko_id: 'avalanche-2',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.svg',
+          theme: {
+            primary_color_hex: '#eb4444'
+          }
         }]
     },
     {

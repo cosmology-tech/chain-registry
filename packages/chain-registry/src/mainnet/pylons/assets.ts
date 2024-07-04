@@ -19,7 +19,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pylons/images/pylons.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pylons/images/pylons.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pylons/images/pylons.png',
+          theme: {
+            primary_color_hex: '#ec4424'
+          }
         }],
       socials: {
         website: 'https://pylons.tech',

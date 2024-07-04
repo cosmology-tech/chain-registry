@@ -24,7 +24,10 @@ const info: AssetList = {
       coingecko_id: 'filecoin',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/fil.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/fil.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/fil.svg',
+          theme: {
+            primary_color_hex: '#0493fc'
+          }
         }]
     }, {
       description: 'Wrapped Filecoin, ERC20 Wrapper over Filecoin',
@@ -56,7 +59,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/wfil.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/wfil.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/wfil.svg',
+          theme: {
+            primary_color_hex: '#0694fc'
+          }
         }]
     }]
 };

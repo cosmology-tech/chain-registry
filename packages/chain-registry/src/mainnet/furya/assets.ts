@@ -21,7 +21,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }],
       coingecko_id: 'fanfury',
       keywords: ['gaming', 'staking'],

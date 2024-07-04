@@ -21,7 +21,8 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/penumbra/images/um.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/penumbra/images/um.svg',
           theme: {
-            circle: true
+            circle: true,
+            primary_color_hex: '#c7b07f'
           }
         }],
       socials: {

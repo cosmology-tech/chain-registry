@@ -18,7 +18,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/prysm/images/prysm.png',
           theme: {
-            circle: true
+            circle: true,
+            primary_color_hex: '#cf654f'
           }
         }],
       socials: {

@@ -22,7 +22,10 @@ const info: AssetList = {
       coingecko_id: 'canto',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg',
+          theme: {
+            primary_color_hex: '#1c1f1f'
+          }
         }],
       socials: {
         website: 'https://canto.io/',

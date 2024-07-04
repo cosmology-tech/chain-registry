@@ -30,7 +30,10 @@ const info: AssetList = {
       coingecko_id: 'archway',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg',
+          theme: {
+            primary_color_hex: '#fc4c04'
+          }
         }],
       socials: {
         website: 'https://archway.io/',
@@ -56,7 +59,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/amparch.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/amparch.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/amparch.png',
+          theme: {
+            primary_color_hex: '#5c84cc'
+          }
         }]
     },
     {
@@ -90,7 +96,10 @@ const info: AssetList = {
             chain_name: 'osmosis',
             base_denom: 'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png',
+          theme: {
+            primary_color_hex: '#edd5ee'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
@@ -133,7 +142,10 @@ const info: AssetList = {
             base_denom: 'uvdl'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg',
+          theme: {
+            primary_color_hex: '#3454bc'
+          }
         }]
     },
     {
@@ -157,7 +169,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/axv.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/axv.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/axv.svg',
+          theme: {
+            primary_color_hex: '#141434'
+          }
         }],
       coingecko_id: 'astrovault'
     }

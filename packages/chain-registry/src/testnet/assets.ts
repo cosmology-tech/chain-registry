@@ -1,5 +1,6 @@
 import { AssetList } from '@chain-registry/types';
 
+import * as _airchainstestnet from './airchainstestnet';
 import * as _akashtestnet from './akashtestnet';
 import * as _archwaytestnet from './archwaytestnet';
 import * as _arkeonetworktestnet from './arkeonetworktestnet';
@@ -20,6 +21,7 @@ import * as _composabletestnet from './composabletestnet';
 import * as _coolcattestnet from './coolcattestnet';
 import * as _coreumtestnet from './coreumtestnet';
 import * as _cosmoshubtestnet from './cosmoshubtestnet';
+import * as _cosmosicsprovidertestnet from './cosmosicsprovidertestnet';
 import * as _cosmwasmtestnet from './cosmwasmtestnet';
 import * as _cosstestnet from './cosstestnet';
 import * as _cudostestnet from './cudostestnet';
@@ -75,7 +77,6 @@ import * as _pryzmtestnet from './pryzmtestnet';
 import * as _quasartestnet from './quasartestnet';
 import * as _quicksilvertestnet from './quicksilvertestnet';
 import * as _qwoyntestnet from './qwoyntestnet';
-import * as _rsprovidertestnet from './rsprovidertestnet';
 import * as _sagatestnet from './sagatestnet';
 import * as _secretnetworktestnet from './secretnetworktestnet';
 import * as _secretnetworktestnet2 from './secretnetworktestnet2';
@@ -108,6 +109,7 @@ import * as _xiontestnet from './xiontestnet';
 import * as _zetachaintestnet from './zetachaintestnet';
 
 const assets: AssetList[] = [
+  _airchainstestnet.assets,
   _akashtestnet.assets,
   _archwaytestnet.assets,
   _arkeonetworktestnet.assets,
@@ -128,6 +130,7 @@ const assets: AssetList[] = [
   _coolcattestnet.assets,
   _coreumtestnet.assets,
   _cosmoshubtestnet.assets,
+  _cosmosicsprovidertestnet.assets,
   _cosmwasmtestnet.assets,
   _cosstestnet.assets,
   _cudostestnet.assets,
@@ -183,7 +186,6 @@ const assets: AssetList[] = [
   _quasartestnet.assets,
   _quicksilvertestnet.assets,
   _qwoyntestnet.assets,
-  _rsprovidertestnet.assets,
   _sagatestnet.assets,
   _secretnetworktestnet.assets,
   _secretnetworktestnet2.assets,

@@ -23,7 +23,10 @@ const info: AssetList = {
       coingecko_id: 'planq',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg',
+          theme: {
+            primary_color_hex: '#d4f3fb'
+          }
         }],
       socials: {
         website: 'https://planq.network',
@@ -59,7 +62,10 @@ const info: AssetList = {
             chain_name: 'binancesmartchain',
             base_denom: '0x454b90716a9435e7161a9aea5cf00e0acbe565ae'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png',
+          theme: {
+            primary_color_hex: '#7f22bc'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'

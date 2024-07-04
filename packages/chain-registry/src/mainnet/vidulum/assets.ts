@@ -22,7 +22,10 @@ const info: AssetList = {
       coingecko_id: 'vidulum',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg',
+          theme: {
+            primary_color_hex: '#3454bc'
+          }
         }]
     }]
 };

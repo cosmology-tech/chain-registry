@@ -21,7 +21,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg',
+          theme: {
+            primary_color_hex: '#c6ddf5'
+          }
         }]
     }, {
       description: 'The meme token of PRYZM',
@@ -42,7 +45,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/AUUU.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/AUUU.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/AUUU.svg',
+          theme: {
+            primary_color_hex: '#eb536c'
+          }
         }]
     }]
 };

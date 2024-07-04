@@ -25,7 +25,10 @@ const info: AssetList = {
       coingecko_id: 'matic-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.svg',
+          theme: {
+            primary_color_hex: '#8444e4'
+          }
         }]
     },
     {
@@ -60,7 +63,10 @@ const info: AssetList = {
       coingecko_id: 'wmatic',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg',
+          theme: {
+            primary_color_hex: '#2b93fb'
+          }
         }]
     },
     {
@@ -261,7 +267,41 @@ const info: AssetList = {
             base_denom: '0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg',
+          theme: {
+            primary_color_hex: '#ebb324'
+          }
+        }]
+    },
+    {
+      description: 'wETH is \'wrapped ETH\'',
+      type_asset: 'erc20',
+      denom_units: [{
+          denom: '0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619',
+          exponent: 0
+        }, {
+          denom: 'weth',
+          exponent: 18
+        }],
+      address: '0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619',
+      base: '0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619',
+      display: 'weth',
+      name: 'Wrapped Ether',
+      symbol: 'WETH',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chain_name: 'ethereum',
+            base_denom: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+          },
+          provider: 'Polygon PoS Bridge'
+        }],
+      images: [{
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg'
         }]
     }
   ]

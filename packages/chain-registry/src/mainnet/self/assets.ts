@@ -20,7 +20,10 @@ const info: AssetList = {
       },
       coingecko_id: 'self-chain',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/self/images/self.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/self/images/self.png',
+          theme: {
+            primary_color_hex: '#9454f1'
+          }
         }],
       socials: {
         website: 'https://selfchain.xyz',

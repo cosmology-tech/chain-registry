@@ -22,7 +22,10 @@ const info: AssetList = {
       coingecko_id: 'imv',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.svg',
+          theme: {
+            primary_color_hex: '#4c54e4'
+          }
         }]
     }]
 };

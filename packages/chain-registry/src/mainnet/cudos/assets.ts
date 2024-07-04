@@ -23,7 +23,10 @@ const info: AssetList = {
       coingecko_id: 'cudos',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg',
+          theme: {
+            primary_color_hex: '#5d95ec'
+          }
         }],
       socials: {
         website: 'http://www.cudos.org',

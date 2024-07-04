@@ -19,7 +19,10 @@ const info: AssetList = {
       symbol: 'NIM',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nim/images/nim.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nim/images/nim.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nim/images/nim.svg',
+          theme: {
+            primary_color_hex: '#519cea'
+          }
         }],
       socials: {
         website: 'https://ai.nim.network/',

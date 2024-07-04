@@ -21,7 +21,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.svg',
+          theme: {
+            primary_color_hex: '#f7f0e1'
+          }
         }]
     }]
 };

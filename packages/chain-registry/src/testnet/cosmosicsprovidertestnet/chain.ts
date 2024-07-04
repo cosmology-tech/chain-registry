@@ -1,9 +1,9 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'rsprovidertestnet',
+  chain_name: 'cosmosicsprovidertestnet',
   chain_id: 'provider',
-  pretty_name: 'Replicated Security Provider Testnet',
+  pretty_name: 'Cosmos ICS Provider Testnet',
   status: 'live',
   network_type: 'testnet',
   bech32_prefix: 'cosmos',
@@ -23,7 +23,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    cosmos_sdk_version: 'v0.47.16-ics-lsm'
   },
   apis: {
     rpc: [

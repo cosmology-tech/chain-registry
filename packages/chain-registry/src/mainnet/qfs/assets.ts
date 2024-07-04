@@ -19,7 +19,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/qfs/images/qfs.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/qfs/images/qfs.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/qfs/images/qfs.svg',
+          theme: {
+            primary_color_hex: '#2979dc'
+          }
         }],
       socials: {
         website: 'https://qfsone.com/'

@@ -22,7 +22,10 @@ const info: AssetList = {
       coingecko_id: 'mars-protocol-a7fcbcfb-fd61-4017-92f0-7ee9f9cc6da3',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg',
+          theme: {
+            primary_color_hex: '#d43c3f'
+          }
         }],
       socials: {
         website: 'https://www.marsprotocol.io/',

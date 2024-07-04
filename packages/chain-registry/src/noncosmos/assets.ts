@@ -8,6 +8,7 @@ import * as _0l from './0l';
 import * as _aptos from './aptos';
 import * as _arbitrum from './arbitrum';
 import * as _avalanche from './avalanche';
+import * as _base from './base';
 import * as _binancesmartchain from './binancesmartchain';
 import * as _bitcoin from './bitcoin';
 import * as _comex from './comex';
@@ -53,6 +54,7 @@ const assets: AssetList[] = [
   _aptos.assets,
   _arbitrum.assets,
   _avalanche.assets,
+  _base.assets,
   _binancesmartchain.assets,
   _bitcoin.assets,
   _comex.assets,

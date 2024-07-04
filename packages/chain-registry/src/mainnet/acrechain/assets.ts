@@ -23,7 +23,10 @@ const info: AssetList = {
       coingecko_id: 'arable-protocol',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg',
+          theme: {
+            primary_color_hex: '#4aa29e'
+          }
         }],
       socials: {
         website: 'https://arable.finance/',
@@ -50,7 +53,10 @@ const info: AssetList = {
       coingecko_id: 'arable-usd',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg',
+          theme: {
+            primary_color_hex: '#77b64f'
+          }
         }],
       socials: {
         website: 'https://arable.finance/',
@@ -76,7 +82,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.svg',
+          theme: {
+            primary_color_hex: '#ecc53b'
+          }
         }]
     }
   ]

@@ -19,7 +19,10 @@ const info: AssetList = {
       symbol: 'DOGE',
       coingecko_id: 'dogecoin',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/dogecoin/images/doge.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/dogecoin/images/doge.png',
+          theme: {
+            primary_color_hex: '#bda148'
+          }
         }]
     }]
 };

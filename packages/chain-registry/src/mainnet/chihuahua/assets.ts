@@ -23,7 +23,10 @@ const info: AssetList = {
       coingecko_id: 'chihuahua-token',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg',
+          theme: {
+            primary_color_hex: '#343434'
+          }
         }]
     },
     {
@@ -42,7 +45,10 @@ const info: AssetList = {
       display: 'puppy',
       symbol: 'PUPPY',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/puppyhuahua_logo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/puppyhuahua_logo.png',
+          theme: {
+            primary_color_hex: '#100e0d'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/puppyhuahua_logo.png'
@@ -95,7 +101,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/woof.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/woof.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/woof.png',
+          theme: {
+            primary_color_hex: '#d9905f'
+          }
         }]
     },
     {
@@ -115,7 +124,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/tacos.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/tacos.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/tacos.png',
+          theme: {
+            primary_color_hex: '#f3bb5b'
+          }
         }]
     },
     {
@@ -135,7 +147,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/weed.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/weed.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/weed.png',
+          theme: {
+            primary_color_hex: '#43b333'
+          }
         }]
     },
     {
@@ -155,7 +170,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bdog.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bdog.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bdog.png',
+          theme: {
+            primary_color_hex: '#040404'
+          }
         }]
     },
     {
@@ -175,7 +193,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/corso.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/corso.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/corso.png',
+          theme: {
+            primary_color_hex: '#d9d2d2'
+          }
         }]
     },
     {
@@ -194,7 +215,10 @@ const info: AssetList = {
       display: 'bHUAHUA',
       symbol: 'bHUAHUA',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png',
+          theme: {
+            primary_color_hex: '#f2bd3a'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
@@ -218,7 +242,10 @@ const info: AssetList = {
       display: 'ashHUAHUA',
       symbol: 'ashHUAHUA',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/ashhuahua.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/ashhuahua.png',
+          theme: {
+            primary_color_hex: '#f46c0f'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/ashhuahua.png'
@@ -255,7 +282,10 @@ const info: AssetList = {
             chain_name: 'migaloo',
             base_denom: 'factory/migaloo1nsskhvvh0msm7d5ke2kfg24a8d4jecsnxd28s27h0uz5kf9ap60shlqmcl/ampGASH'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ampgash.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ampgash.png',
+          theme: {
+            primary_color_hex: '#374455'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ampgash.png'
@@ -292,7 +322,10 @@ const info: AssetList = {
             chain_name: 'migaloo',
             base_denom: 'factory/migaloo1etlu2h30tjvv8rfa4fwdc43c92f6ul5w9acxzk/uguppy'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/guppy.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/guppy.png',
+          theme: {
+            primary_color_hex: '#d9966e'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/guppy.png'

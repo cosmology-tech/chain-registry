@@ -32,7 +32,10 @@ const info: AssetList = {
       symbol: 'TKX',
       coingecko_id: 'tokenize-xchange',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/titan/images/tkx.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/titan/images/tkx.png',
+          theme: {
+            primary_color_hex: '#fc641c'
+          }
         }],
       keywords: ['staking'],
       logo_URIs: {

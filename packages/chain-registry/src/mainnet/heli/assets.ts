@@ -18,7 +18,10 @@ const info: AssetList = {
       coingecko_id: 'helichain',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/heli/images/heli.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/heli/images/heli.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/heli/images/heli.svg',
+          theme: {
+            primary_color_hex: '#fccc24'
+          }
         }]
     }]
 };
