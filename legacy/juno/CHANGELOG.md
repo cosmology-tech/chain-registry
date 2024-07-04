@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.64.18 (2024-07-04)
+
+**Note:** Version bump only for package @chain-registry/juno
+
+
+
+
+
 ## 1.64.17 (2024-07-03)
 
 **Note:** Version bump only for package @chain-registry/juno
