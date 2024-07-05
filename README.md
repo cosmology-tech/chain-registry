@@ -166,11 +166,11 @@ import { assets } from 'chain-registry/noncosmos';
 
 An npm module for the Official `chain-registry` for the Cosmos ⚛️
 
-#### [@chain-registry/client](packages/client)
+#### [@chain-registry/client](legacy/client)
 
 A Client for `chain-registry` that allows you to dynamically fetch data.
 
-#### [@chain-registry/types](packages/types)
+#### [@chain-registry/types](legacy/types)
 
 Types for `chain-registry`.
 
@@ -178,19 +178,19 @@ Types for `chain-registry`.
 
 Keplr integration for the chain-registry returning keplr's `ChainInfo` type from `@chain-registry/types` `Chain` type.
 
-#### [@chain-registry/assets](packages/assets)
+#### [@chain-registry/assets](legacy/assets)
 
 Asset lists for the Cosmos ⚛️
 
-#### [@chain-registry/osmosis](packages/osmosis)
+#### [@chain-registry/osmosis](legacy/osmosis)
 
 Chain Registry info for Osmosis, including asset lists.
 
-#### [@chain-registry/juno](packages/juno)
+#### [@chain-registry/juno](legacy/juno)
 
 Chain Registry info for Juno, including asset lists.
 
-#### [@chain-registry/utils](packages/utils)
+#### [@chain-registry/utils](legacy/utils)
 
 Utility functions for `chain-registry`.
 
