@@ -235,7 +235,10 @@ const info: Chain = {
     }
   ],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rio.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rio.png',
+      theme: {
+        primary_color_hex: '#181818'
+      }
     }]
 };
 export default info;

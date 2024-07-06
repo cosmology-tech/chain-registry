@@ -123,7 +123,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.svg',
+      theme: {
+        primary_color_hex: '#040404'
+      }
     }]
 };
 export default info;

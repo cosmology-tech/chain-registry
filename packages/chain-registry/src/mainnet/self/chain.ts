@@ -34,29 +34,54 @@ const info: Chain = {
     rpc: [{
         address: 'https://rpc.selfchain.io:26657',
         provider: 'Self Chain'
+      }, {
+        address: 'https://rpc.selfchain.roomit.xyz',
+        provider: 'Roomit'
       }],
-    rest: [{
+    rest: [
+      {
         address: 'https://api.selfchain.io',
         provider: 'Self Chain'
-      }, {
+      },
+      {
         address: 'https://selfchain.api.m.stavr.tech',
         provider: '🔥STAVR🔥'
-      }],
-    grpc: []
+      },
+      {
+        address: 'https://api.selfchain.roomit.xyz',
+        provider: 'Roomit'
+      }
+    ],
+    grpc: [{
+        address: 'grpc.selfchain.roomit.xyz:8443',
+        provider: 'Roomit'
+      }]
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'Self Chain',
       url: 'https://explorer.selfchain.xyz/selfchain',
       tx_page: 'https://explorer.selfchain.xyz/selfchain/tx/${txHash}',
       account_page: 'https://explorer.selfchain.xyz/selfchain/account/${accountAddress}'
-    }, {
+    },
+    {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Selfchain-Mainnet',
       tx_page: 'https://explorer.stavr.tech/Selfchain-Mainnet/tx/${txHash}',
       account_page: 'https://explorer.stavr.tech/Selfchain-Mainnet/account/${accountAddress}'
-    }],
+    },
+    {
+      kind: 'Roomit',
+      url: 'https://explorer.tendermint.roomit.xyz/selfchain-mainnet',
+      tx_page: 'https://explorer.tendermint.roomit.xyz/selfchain-mainnet/tx/${txHash}',
+      account_page: 'https://explorer.tendermint.roomit.xyz/selfchain-mainnet/account/${accountAddress}'
+    }
+  ],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/self/images/self.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/self/images/self.png',
+      theme: {
+        primary_color_hex: '#9454f1'
+      }
     }]
 };
 export default info;

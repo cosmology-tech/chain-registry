@@ -53,7 +53,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.svg',
+      theme: {
+        primary_color_hex: '#c5b4cf'
+      }
     }]
 };
 export default info;

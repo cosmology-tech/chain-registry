@@ -60,7 +60,10 @@ const info: Chain = {
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scorum.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scorum.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scorum.svg',
+      theme: {
+        primary_color_hex: '#242424'
+      }
     }]
 };
 export default info;

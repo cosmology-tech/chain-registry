@@ -52,7 +52,10 @@ const info: Chain = {
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/heli/images/heli.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/heli/images/heli.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/heli/images/heli.svg',
+      theme: {
+        primary_color_hex: '#fccc24'
+      }
     }]
 };
 export default info;

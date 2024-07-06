@@ -33,7 +33,10 @@ const info: Chain = {
     cosmos_sdk_version: 'v0.46.13'
   },
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gitopia/images/gitopia.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gitopia/images/gitopia.png',
+      theme: {
+        primary_color_hex: '#2e154d'
+      }
     }],
   description: 'Gitopia is the next-generation Code Collaboration Platform fuelled by a decentralized network and interactive token economy. It is designed to optimize the open-source software development process through collaboration, transparency, and incentivization.',
   apis: {
@@ -108,7 +111,7 @@ const info: Chain = {
       },
       {
         address: 'https://rpc.gitopia.roomit.xyz',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://gitopia.rpc.moonbridge.team',
@@ -234,7 +237,7 @@ const info: Chain = {
       },
       {
         address: 'https://api.gitopia.roomit.xyz',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://gitopia.api.moonbridge.team',
@@ -356,7 +359,7 @@ const info: Chain = {
       },
       {
         address: 'grpc.gitopia.roomit.xyz:8443',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://gitopia.grpc.moonbridge.team',
@@ -458,10 +461,10 @@ const info: Chain = {
       account_page: 'https://explorer.nodestake.top/gitopia/account/${accountAddress}'
     },
     {
-      kind: 'RoomIT',
-      url: 'https://explorer.tendermint.roomit.xyz/gitopia',
-      tx_page: 'https://explorer.tendermint.roomit.xyz/gitopia/transaction/${txHash}',
-      account_page: 'https://explorer.tendermint.roomit.xyz/gitopia/account/${accountAddress}'
+      kind: 'Roomit',
+      url: 'https://explorer.tendermint.roomit.xyz/gitopia-mainnet',
+      tx_page: 'https://explorer.tendermint.roomit.xyz/gitopia-mainnet/transaction/${txHash}',
+      account_page: 'https://explorer.tendermint.roomit.xyz/gitopia-mainnet/account/${accountAddress}'
     },
     {
       kind: 'Moonbridge',

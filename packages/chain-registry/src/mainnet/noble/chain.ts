@@ -88,7 +88,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg',
+      theme: {
+        primary_color_hex: '#a8bbfb'
+      }
     }]
 };
 export default info;

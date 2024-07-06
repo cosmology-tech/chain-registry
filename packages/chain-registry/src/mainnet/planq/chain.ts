@@ -61,7 +61,7 @@ const info: Chain = {
       },
       {
         address: 'https://rpc.planq.roomit.xyz',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://planq-rpc.genznodes.dev',
@@ -115,7 +115,7 @@ const info: Chain = {
       },
       {
         address: 'https://api.planq.roomit.xyz',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://planq-api.genznodes.dev',
@@ -176,8 +176,8 @@ const info: Chain = {
         provider: 'NodeX Validator'
       },
       {
-        address: 'https://grpc.planq.roomit.xyz:8443',
-        provider: 'RoomIT'
+        address: 'grpc.planq.roomit.xyz:8443',
+        provider: 'Roomit'
       },
       {
         address: 'https://grpc.planq.hexnodes.co:33090',
@@ -244,6 +244,10 @@ const info: Chain = {
       {
         address: 'https://planq_mainnet_evm.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://evm.planq.roomit.xyz',
+        provider: 'Roomit'
       }
     ]
   },
@@ -274,9 +278,9 @@ const info: Chain = {
       tx_page: 'https://explorer.tcnetwork.io/planq/transaction/${txHash}'
     },
     {
-      kind: 'RoomIT',
-      url: 'https://explorer.tendermint.roomit.xyz/planq',
-      tx_page: 'https://explorer.tendermint.roomit.xyz/planq/transaction/${txHash}'
+      kind: 'Roomit',
+      url: 'https://explorer.tendermint.roomit.xyz/planq-mainnet',
+      tx_page: 'https://explorer.tendermint.roomit.xyz/planq-mainnet/transaction/${txHash}'
     },
     {
       kind: 'Kynraze',
@@ -322,7 +326,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg',
+      theme: {
+        primary_color_hex: '#d4f3fb'
+      }
     }]
 };
 export default info;

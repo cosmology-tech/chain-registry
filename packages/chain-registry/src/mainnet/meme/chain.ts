@@ -121,7 +121,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg',
+      theme: {
+        primary_color_hex: '#b7dcd8'
+      }
     }]
 };
 export default info;

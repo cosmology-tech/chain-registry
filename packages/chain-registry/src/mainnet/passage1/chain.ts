@@ -56,7 +56,10 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png'
   },
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png',
+      theme: {
+        primary_color_hex: '#05050c'
+      }
     }]
 };
 export default info;

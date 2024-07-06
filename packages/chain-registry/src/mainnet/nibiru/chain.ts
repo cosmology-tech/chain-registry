@@ -92,6 +92,10 @@ const info: Chain = {
       {
         address: 'https://nibiru-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://rpc.nibiru.roomit.xyz',
+        provider: 'Roomit'
       }
     ],
     rest: [
@@ -146,6 +150,10 @@ const info: Chain = {
       {
         address: 'https://nibiru-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://api.nibiru.roomit.xyz',
+        provider: 'Roomit'
       }
     ],
     grpc: [
@@ -196,6 +204,10 @@ const info: Chain = {
       {
         address: 'nibiru-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'grpc.nibiru.roomit.xyz:8443',
+        provider: 'Roomit'
       }
     ]
   },
@@ -235,11 +247,20 @@ const info: Chain = {
       url: 'https://exp.stakevillage.net/nibiru-mainnet',
       tx_page: 'https://exp.stakevillage.net/nibiru-mainnet/tx/${txHash}',
       account_page: 'https://exp.stakevillage.net/nibiru-mainnet/accounts/${accountAddress}'
+    },
+    {
+      kind: 'Roomit',
+      url: 'https://explorer.tendermint.roomit.xyz/nibiru-mainnet',
+      tx_page: 'https://explorer.tendermint.roomit.xyz/nibiru-mainnet/tx/${txHash}',
+      account_page: 'https://explorer.tendermint.roomit.xyz/nibiru-mainnet/accounts/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.svg',
+      theme: {
+        primary_color_hex: '#14c0ce'
+      }
     }]
 };
 export default info;

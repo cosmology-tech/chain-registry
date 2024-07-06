@@ -57,7 +57,7 @@ const info: Chain = {
       },
       {
         address: 'https://rpc.dvpn.roomit.xyz',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://sentinel-rpc.badgerbite.io/',
@@ -127,7 +127,7 @@ const info: Chain = {
       },
       {
         address: 'https://api.dvpn.roomit.xyz',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://sentinel-rest.publicnode.com',
@@ -189,7 +189,7 @@ const info: Chain = {
       },
       {
         address: 'grpc.dvpn.roomit.xyz:8443',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'sentinel-rpc.publicnode.com:443',
@@ -249,7 +249,7 @@ const info: Chain = {
       account_page: 'https://atomscan.com/sentinel/accounts/${accountAddress}'
     },
     {
-      kind: 'RoomIT',
+      kind: 'Roomit',
       url: 'https://explorer.tendermint.roomit.xyz/sentinel-mainnet',
       tx_page: 'https://explorer.tendermint.roomit.xyz/sentinel-mainnet/transactions/${txHash}',
       account_page: 'https://explorer.tendermint.roomit.xyz/sentinel-mainnet/accounts/${accountAddress}'
@@ -279,7 +279,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg',
+      theme: {
+        primary_color_hex: '#10a7ef'
+      }
     }]
 };
 export default info;

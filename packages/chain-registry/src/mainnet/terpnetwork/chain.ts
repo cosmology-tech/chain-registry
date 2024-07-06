@@ -101,7 +101,10 @@ const info: Chain = {
     }
   ],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terpnetwork/images/logo.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terpnetwork/images/logo.png',
+      theme: {
+        primary_color_hex: '#a2cd9a'
+      }
     }],
   slip44: 118
 };

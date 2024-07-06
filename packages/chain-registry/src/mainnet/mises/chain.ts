@@ -50,7 +50,10 @@ const info: Chain = {
       tx_page: 'https://explorer.jambulmerah.dev/mises/tx/${txHash}'
     }],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mises/images/mises.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mises/images/mises.png',
+      theme: {
+        primary_color_hex: '#f5f5f8'
+      }
     }]
 };
 export default info;

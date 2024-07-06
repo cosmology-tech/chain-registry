@@ -136,7 +136,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/govgen/images/govgen.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/govgen/images/govgen.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/govgen/images/govgen.svg',
+      theme: {
+        primary_color_hex: '#65d6d4'
+      }
     }]
 };
 export default info;

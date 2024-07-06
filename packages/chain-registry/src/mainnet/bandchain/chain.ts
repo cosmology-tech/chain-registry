@@ -88,6 +88,10 @@ const info: Chain = {
         provider: 'Bro_n_Bro'
       },
       {
+        address: 'https://rpc.band.roomit.xyz/',
+        provider: 'Roomit'
+      },
+      {
         address: 'https://band-rpc.noders.services',
         provider: '[NODERS]TEAM'
       }
@@ -142,6 +146,10 @@ const info: Chain = {
         provider: 'Bro_n_Bro'
       },
       {
+        address: 'https://api.band.roomit.xyz/',
+        provider: 'Roomit'
+      },
+      {
         address: 'https://band-api.noders.services',
         provider: '[NODERS]TEAM'
       }
@@ -188,6 +196,10 @@ const info: Chain = {
         provider: 'Bro_n_Bro'
       },
       {
+        address: 'grpc.band.roomit.xyz:8443',
+        provider: 'Roomit'
+      },
+      {
         address: 'band-grpc.noders.services:30090',
         provider: '[NODERS]TEAM'
       }
@@ -232,6 +244,11 @@ const info: Chain = {
       account_page: 'https://stakeflow.io/band-protocol/accounts/${accountAddress}'
     },
     {
+      kind: 'Roomit Explorer',
+      url: 'https://explorer.tendermint.roomit.xyz/band-mainnet',
+      account_page: 'https://explorer.tendermint.roomit.xyz/band-mainnet/accounts/${accountAddress}'
+    },
+    {
       kind: 'kjnodes Explorer',
       url: 'https://explorer.kjnodes.com/band',
       tx_page: 'https://explorer.kjnodes.com/band/tx/${txHash}'
@@ -239,7 +256,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg',
+      theme: {
+        primary_color_hex: '#4424e4'
+      }
     }]
 };
 export default info;

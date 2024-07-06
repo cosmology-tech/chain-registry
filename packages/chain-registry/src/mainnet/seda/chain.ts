@@ -194,7 +194,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/seda/images/seda.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/seda/images/seda.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/seda/images/seda.svg',
+      theme: {
+        primary_color_hex: '#8178d1'
+      }
     }]
 };
 export default info;

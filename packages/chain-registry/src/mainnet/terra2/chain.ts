@@ -180,7 +180,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg',
+      theme: {
+        primary_color_hex: '#f4de6f'
+      }
     }]
 };
 export default info;

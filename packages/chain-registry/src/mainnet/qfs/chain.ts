@@ -55,7 +55,10 @@ const info: Chain = {
   keywords: [],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/qfs/images/qfs.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/qfs/images/qfs.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/qfs/images/qfs.svg',
+      theme: {
+        primary_color_hex: '#2979dc'
+      }
     }]
 };
 export default info;

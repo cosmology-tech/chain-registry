@@ -58,7 +58,10 @@ const info: Chain = {
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.svg',
+      theme: {
+        primary_color_hex: '#040404'
+      }
     }]
 };
 export default info;

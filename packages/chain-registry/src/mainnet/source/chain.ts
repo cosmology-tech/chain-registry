@@ -87,7 +87,7 @@ const info: Chain = {
       },
       {
         address: 'https://rpc.source.roomit.xyz/',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://rpc.source.posthuman.digital',
@@ -165,7 +165,7 @@ const info: Chain = {
       },
       {
         address: 'https://api.source.roomit.xyz',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://rest.source.posthuman.digital',
@@ -239,7 +239,7 @@ const info: Chain = {
       },
       {
         address: 'grpc.source.roomit.xyz:8443',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://source.declab.pro:9003',
@@ -289,7 +289,7 @@ const info: Chain = {
       tx_page: 'https://explorer.indonode.net/source/tx/${txHash}'
     },
     {
-      kind: 'RoomIT',
+      kind: 'Roomit',
       url: 'https://explorer.tendermint.roomit.xyz/source-mainnet/',
       tx_page: 'https://explorer.tendermint.roomit.xyz/source-mainnet/tx/${txHash}'
     },
@@ -320,7 +320,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.svg',
+      theme: {
+        primary_color_hex: '#39a5fc'
+      }
     }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.png',

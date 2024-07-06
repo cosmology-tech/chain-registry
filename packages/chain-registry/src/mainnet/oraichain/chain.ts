@@ -175,7 +175,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.svg',
+      theme: {
+        primary_color_hex: '#040404'
+      }
     }]
 };
 export default info;

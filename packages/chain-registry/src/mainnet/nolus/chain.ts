@@ -205,7 +205,10 @@ const info: Chain = {
   keywords: ['mainnet'],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg',
+      theme: {
+        primary_color_hex: '#fc542c'
+      }
     }]
 };
 export default info;

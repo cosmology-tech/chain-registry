@@ -171,7 +171,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg',
+      theme: {
+        primary_color_hex: '#3c2832'
+      }
     }]
 };
 export default info;

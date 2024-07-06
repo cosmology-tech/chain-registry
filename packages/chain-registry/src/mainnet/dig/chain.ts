@@ -68,7 +68,10 @@ const info: Chain = {
     }
   ],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png',
+      theme: {
+        primary_color_hex: '#1b1433'
+      }
     }]
 };
 export default info;

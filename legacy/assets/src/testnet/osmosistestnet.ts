@@ -37,39 +37,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Archway testnetwork',
-      denom_units: [
-        {
-          denom: 'ibc/B317B0AF2B4E47C4F69665403AF2E6E1BE0096CA4B7D9926B22911590899AF66',
-          exponent: 0,
-          aliases: ['aconst']
-        },
-        {
-          denom: 'uconst',
-          exponent: 12
-        },
-        {
-          denom: 'const',
-          exponent: 18
-        }
-      ],
-      base: 'ibc/B317B0AF2B4E47C4F69665403AF2E6E1BE0096CA4B7D9926B22911590899AF66',
-      name: 'Archway',
-      display: 'const',
-      symbol: 'CONST',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-58',
-            base_denom: 'aconst',
-            chain_name: 'archwaytestnet'
-          },
-          chain: {
-            channel_id: 'channel-3938'
-          }
-        }]
-    },
-    {
       description: 'The native token of Axelar',
       denom_units: [{
           denom: 'ibc/CAC33C89EFB6AD6064184EB63289F76C0447B25D720C21275D5E4D3C1890405F',
@@ -740,39 +707,6 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-4171'
-          }
-        }]
-    },
-    {
-      description: 'The native token of Archway testnetwork',
-      denom_units: [
-        {
-          denom: 'ibc/B317B0AF2B4E47C4F69665403AF2E6E1BE0096CA4B7D9926B22911590899AF66',
-          exponent: 0,
-          aliases: ['aconst']
-        },
-        {
-          denom: 'uconst',
-          exponent: 12
-        },
-        {
-          denom: 'const',
-          exponent: 18
-        }
-      ],
-      base: 'ibc/B317B0AF2B4E47C4F69665403AF2E6E1BE0096CA4B7D9926B22911590899AF66',
-      name: 'Archway',
-      display: 'const',
-      symbol: 'CONST',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-58',
-            base_denom: 'aconst',
-            chain_name: 'archwaytestnet'
-          },
-          chain: {
-            channel_id: 'channel-3938'
           }
         }]
     },

@@ -75,7 +75,10 @@ const info: Chain = {
       tx_page: 'https://cosmotracker.com/konstellation/tx/${txHash}'
     }],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/Konstellation-dark.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/Konstellation-dark.png',
+      theme: {
+        primary_color_hex: '#a3d3fb'
+      }
     }]
 };
 export default info;

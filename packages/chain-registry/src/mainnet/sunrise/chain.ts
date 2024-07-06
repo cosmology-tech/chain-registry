@@ -44,7 +44,10 @@ const info: Chain = {
   explorers: [],
   images: [{
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.svg',
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.png',
+      theme: {
+        primary_color_hex: '#ecbc64'
+      }
     }]
 };
 export default info;

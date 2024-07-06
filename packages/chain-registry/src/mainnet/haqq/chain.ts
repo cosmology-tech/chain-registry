@@ -218,7 +218,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/haqq.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/haqq.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/haqq.svg',
+      theme: {
+        primary_color_hex: '#b9744f'
+      }
     }]
 };
 export default info;

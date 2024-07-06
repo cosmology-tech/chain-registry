@@ -55,7 +55,10 @@ const info: Chain = {
   keywords: [],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/taketitan/images/taketitan.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/taketitan/images/taketitan.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/taketitan/images/taketitan.svg',
+      theme: {
+        primary_color_hex: '#41918c'
+      }
     }]
 };
 export default info;

@@ -48,7 +48,7 @@ const info: Chain = {
       },
       {
         address: 'https://rpc.sge.roomit.xyz/',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://sge.rpc.m.stavr.tech:443',
@@ -142,7 +142,7 @@ const info: Chain = {
       },
       {
         address: 'https://api.sge.roomit.xyz/',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://sge_mainnet_api.chain.whenmoonwhenlambo.money',
@@ -188,7 +188,7 @@ const info: Chain = {
       },
       {
         address: 'grpc.sge.roomit.xyz:8443',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       }
     ]
   },
@@ -233,7 +233,7 @@ const info: Chain = {
       account_page: 'https://explorer.konsortech.xyz/sge/account/${accountAddress}'
     },
     {
-      kind: 'RoomIT',
+      kind: 'Roomit',
       url: 'https://explorer.tendermint.roomit.xyz/sge-mainnet',
       tx_page: 'https://explorer.tendermint.roomit.xyz/sge-mainnet/tx/${txHash}',
       account_page: 'https://explorer.tendermint.roomit.xyz/sge-mainnet/account/${accountAddress}'
@@ -247,7 +247,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg',
+      theme: {
+        primary_color_hex: '#b99952'
+      }
     }]
 };
 export default info;

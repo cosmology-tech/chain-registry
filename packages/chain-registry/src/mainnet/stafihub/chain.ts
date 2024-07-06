@@ -110,7 +110,10 @@ const info: Chain = {
   },
   keywords: ['liquid staking'],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/stafihub-chain-logo.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/stafihub-chain-logo.png',
+      theme: {
+        primary_color_hex: '#100d10'
+      }
     }]
 };
 export default info;
