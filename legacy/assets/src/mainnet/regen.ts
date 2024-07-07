@@ -3,7 +3,7 @@ const assets: AssetList = {
   chain_name: 'regen',
   assets: [
     {
-      description: 'Akash Token (AKT) is the Akash Network\'s native utility token, used as the primary means to govern, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.',
+      description: 'Akash Network is a decentralized cloud computing marketplace that connects users with unused computing resources, offering a cost-effective alternative to traditional cloud providers.',
       denom_units: [{
           denom: 'ibc/95762EB27E57BC8916A4EB9C37E20919C8B61025461CED7CA6EF71A38FD51C4E',
           exponent: 0,
@@ -45,7 +45,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Cosmos Hub.',
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/5FEB332D2B121921C792F1A0DBF7C3163FF205337B4AFE6E14F69E8E49545F49',
           exponent: 0,
@@ -167,7 +167,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/2C36BD1A8484EF8C711F40B07DD2627F8B94D9975BF420FC4E0D5265A852FB93',
           exponent: 0,
@@ -408,7 +408,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The XPRT token is primarily a governance token for the Persistence chain.',
+      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
       denom_units: [{
           denom: 'ibc/AAA241B0C1B237AA252F939C7CB7AB4C21A46BAA97464DDB8B5C92D4AF635E29',
           exponent: 0,
@@ -491,7 +491,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Akash Token (AKT) is the Akash Network\'s native utility token, used as the primary means to govern, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.',
+      description: 'Akash Network is a decentralized cloud computing marketplace that connects users with unused computing resources, offering a cost-effective alternative to traditional cloud providers.',
       denom_units: [{
           denom: 'ibc/95762EB27E57BC8916A4EB9C37E20919C8B61025461CED7CA6EF71A38FD51C4E',
           exponent: 0,
@@ -533,7 +533,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Cosmos Hub.',
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/5FEB332D2B121921C792F1A0DBF7C3163FF205337B4AFE6E14F69E8E49545F49',
           exponent: 0,
@@ -655,7 +655,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/2C36BD1A8484EF8C711F40B07DD2627F8B94D9975BF420FC4E0D5265A852FB93',
           exponent: 0,
@@ -896,7 +896,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The XPRT token is primarily a governance token for the Persistence chain.',
+      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
       denom_units: [{
           denom: 'ibc/AAA241B0C1B237AA252F939C7CB7AB4C21A46BAA97464DDB8B5C92D4AF635E29',
           exponent: 0,

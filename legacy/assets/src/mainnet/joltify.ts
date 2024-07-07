@@ -3,7 +3,7 @@ const assets: AssetList = {
   chain_name: 'joltify',
   assets: [
     {
-      description: 'The native staking and governance token of the Cosmos Hub.',
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/9117A26BA81E29FA4F78F57DC2BD90CD3D26848101BA880445F119B22A1E254E',
           exponent: 0,
@@ -45,7 +45,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Cosmos Hub.',
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/9117A26BA81E29FA4F78F57DC2BD90CD3D26848101BA880445F119B22A1E254E',
           exponent: 0,

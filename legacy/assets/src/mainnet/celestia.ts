@@ -3,7 +3,7 @@ const assets: AssetList = {
   chain_name: 'celestia',
   assets: [
     {
-      description: 'The native token of Axelar',
+      description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
       denom_units: [{
           denom: 'ibc/0E1517E2771CA7C03F2ED3F9BAECCAEADF0BFD79B89679E834933BC0F179AD98',
           exponent: 0,
@@ -45,7 +45,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Axelar',
+      description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
       denom_units: [{
           denom: 'ibc/0E1517E2771CA7C03F2ED3F9BAECCAEADF0BFD79B89679E834933BC0F179AD98',
           exponent: 0,
@@ -291,7 +291,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The INJ token is the native governance token for the Injective chain.',
+      description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/A39D6D491ED6349F67505000586546E68ECE05C486F07BE831871AF88A50CD19',
           exponent: 0,
@@ -563,7 +563,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of Kava',
+      description: 'Kava is a decentralized finance (DeFi) platform that provides a range of financial services, including lending, borrowing, and stablecoins, leveraging the Cosmos and Ethereum ecosystems.',
       denom_units: [{
           denom: 'ibc/147B3FF1D005512CCE4089559AF5D0C951F4211A031F15E782E505B85022DF89',
           exponent: 0,
@@ -762,7 +762,7 @@ const assets: AssetList = {
       }
     },
     {
-      description: 'The native token of Neutron chain.',
+      description: 'Neutron is a smart contract blockchain within the Cosmos ecosystem, leveraging the Cosmos Hub\'s security to provide cross-chain DeFi applications.',
       denom_units: [{
           denom: 'ibc/A020C9A03670A74D9BAD0E914FB4C0FC8AC9E762808BDB0EE4A0F6840297014B',
           exponent: 0,
@@ -1034,7 +1034,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Secret Network',
+      description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
       denom_units: [{
           denom: 'ibc/E3459360643C2555C57C7DAB0567FA762B42D5D6D45A76615EA7D99D933AEC04',
           exponent: 0,
@@ -1076,7 +1076,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stargaze',
+      description: 'Stargaze is a decentralized blockchain platform designed specifically for non-fungible tokens (NFTs), enabling creators to mint, trade, and interact with NFTs in a fully decentralized environment.',
       denom_units: [{
           denom: 'ibc/924CF5AAC6E825CC79DB3A220DB0689EEFFE4DB67382622D143884E6AC73C92A',
           exponent: 0,
@@ -1118,7 +1118,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stride',
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
       denom_units: [{
           denom: 'ibc/CE9455F316C89EF327D7C92B20DD3A0FC9ED0F218BE46F341C6D140104980B4F',
           exponent: 0,
@@ -1444,7 +1444,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The INJ token is the native governance token for the Injective chain.',
+      description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/A39D6D491ED6349F67505000586546E68ECE05C486F07BE831871AF88A50CD19',
           exponent: 0,
@@ -1716,7 +1716,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of Kava',
+      description: 'Kava is a decentralized finance (DeFi) platform that provides a range of financial services, including lending, borrowing, and stablecoins, leveraging the Cosmos and Ethereum ecosystems.',
       denom_units: [{
           denom: 'ibc/147B3FF1D005512CCE4089559AF5D0C951F4211A031F15E782E505B85022DF89',
           exponent: 0,
@@ -1915,7 +1915,7 @@ const assets: AssetList = {
       }
     },
     {
-      description: 'The native token of Neutron chain.',
+      description: 'Neutron is a smart contract blockchain within the Cosmos ecosystem, leveraging the Cosmos Hub\'s security to provide cross-chain DeFi applications.',
       denom_units: [{
           denom: 'ibc/A020C9A03670A74D9BAD0E914FB4C0FC8AC9E762808BDB0EE4A0F6840297014B',
           exponent: 0,
@@ -2187,7 +2187,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Secret Network',
+      description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
       denom_units: [{
           denom: 'ibc/E3459360643C2555C57C7DAB0567FA762B42D5D6D45A76615EA7D99D933AEC04',
           exponent: 0,
@@ -2229,7 +2229,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stargaze',
+      description: 'Stargaze is a decentralized blockchain platform designed specifically for non-fungible tokens (NFTs), enabling creators to mint, trade, and interact with NFTs in a fully decentralized environment.',
       denom_units: [{
           denom: 'ibc/924CF5AAC6E825CC79DB3A220DB0689EEFFE4DB67382622D143884E6AC73C92A',
           exponent: 0,
@@ -2271,7 +2271,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stride',
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
       denom_units: [{
           denom: 'ibc/CE9455F316C89EF327D7C92B20DD3A0FC9ED0F218BE46F341C6D140104980B4F',
           exponent: 0,

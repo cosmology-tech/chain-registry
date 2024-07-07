@@ -3,7 +3,7 @@ const assets: AssetList = {
   chain_name: 'acrechain',
   assets: [
     {
-      description: 'The native token of Axelar',
+      description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
       denom_units: [{
           denom: 'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
           exponent: 0,
@@ -45,7 +45,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Cosmos Hub.',
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/15E9C5CF5969080539DB395FA7D9C0868265217EFC528433671AAF9B1912D159',
           exponent: 0,
@@ -290,7 +290,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/6DD0D40C3A5FE38336FC5EF017CC248E11C15E28C76F95C83A8FFE61E1566063',
           exponent: 0,
@@ -478,7 +478,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stargaze',
+      description: 'Stargaze is a decentralized blockchain platform designed specifically for non-fungible tokens (NFTs), enabling creators to mint, trade, and interact with NFTs in a fully decentralized environment.',
       denom_units: [{
           denom: 'ibc/16E817E682AD1A73FD748BC989574B2702E109C4105550498086531FA3D6B050',
           exponent: 0,
@@ -520,7 +520,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stride',
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
       denom_units: [{
           denom: 'ibc/B183F98F84C113AE32DF2F7F8C58A8E6965BA74EB789DB032C5A232762DBAE51',
           exponent: 0,
@@ -562,7 +562,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking token of Terra Classic.',
+      description: 'Terra Classic is the original blockchain platform that powered the UST stablecoin and LUNA token before the launch of Terra 2.0, focusing on stablecoins and DeFi applications.',
       denom_units: [
         {
           denom: 'ibc/2B58B8C147E8718EECCB3713271DF46DEE8A3A00A27242628604E31C2F370EF5',
@@ -1664,7 +1664,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Axelar',
+      description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
       denom_units: [{
           denom: 'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
           exponent: 0,
@@ -1706,7 +1706,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Cosmos Hub.',
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/15E9C5CF5969080539DB395FA7D9C0868265217EFC528433671AAF9B1912D159',
           exponent: 0,
@@ -1951,7 +1951,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/6DD0D40C3A5FE38336FC5EF017CC248E11C15E28C76F95C83A8FFE61E1566063',
           exponent: 0,
@@ -2139,7 +2139,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stargaze',
+      description: 'Stargaze is a decentralized blockchain platform designed specifically for non-fungible tokens (NFTs), enabling creators to mint, trade, and interact with NFTs in a fully decentralized environment.',
       denom_units: [{
           denom: 'ibc/16E817E682AD1A73FD748BC989574B2702E109C4105550498086531FA3D6B050',
           exponent: 0,
@@ -2181,7 +2181,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stride',
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
       denom_units: [{
           denom: 'ibc/B183F98F84C113AE32DF2F7F8C58A8E6965BA74EB789DB032C5A232762DBAE51',
           exponent: 0,
@@ -2223,7 +2223,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking token of Terra Classic.',
+      description: 'Terra Classic is the original blockchain platform that powered the UST stablecoin and LUNA token before the launch of Terra 2.0, focusing on stablecoins and DeFi applications.',
       denom_units: [
         {
           denom: 'ibc/2B58B8C147E8718EECCB3713271DF46DEE8A3A00A27242628604E31C2F370EF5',

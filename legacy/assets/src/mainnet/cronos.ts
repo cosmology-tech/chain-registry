@@ -3,7 +3,7 @@ const assets: AssetList = {
   chain_name: 'cronos',
   assets: [
     {
-      description: 'The native staking and governance token of Kava',
+      description: 'Kava is a decentralized finance (DeFi) platform that provides a range of financial services, including lending, borrowing, and stablecoins, leveraging the Cosmos and Ethereum ecosystems.',
       denom_units: [{
           denom: 'ibc/BF0F0916EADB14F62A27BB6669132766BBCFDCCB8914C60972CBF815781F10F7',
           exponent: 0,
@@ -202,7 +202,7 @@ const assets: AssetList = {
       }
     },
     {
-      description: 'The native staking and governance token of Kava',
+      description: 'Kava is a decentralized finance (DeFi) platform that provides a range of financial services, including lending, borrowing, and stablecoins, leveraging the Cosmos and Ethereum ecosystems.',
       denom_units: [{
           denom: 'ibc/BF0F0916EADB14F62A27BB6669132766BBCFDCCB8914C60972CBF815781F10F7',
           exponent: 0,

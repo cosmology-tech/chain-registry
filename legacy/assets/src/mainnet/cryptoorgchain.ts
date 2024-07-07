@@ -3,7 +3,7 @@ const assets: AssetList = {
   chain_name: 'cryptoorgchain',
   assets: [
     {
-      description: 'Akash Token (AKT) is the Akash Network\'s native utility token, used as the primary means to govern, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.',
+      description: 'Akash Network is a decentralized cloud computing marketplace that connects users with unused computing resources, offering a cost-effective alternative to traditional cloud providers.',
       denom_units: [{
           denom: 'ibc/448B29AB9766D29CC09944EDF6A08573B45A37C55746A45FA3CF53F1B58DF98D',
           exponent: 0,
@@ -45,7 +45,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Cosmos Hub.',
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/B5919B1B65A79F595F71D2E8306FD1FB70B969A268230E745A6DBE86F1060D58',
           exponent: 0,
@@ -163,7 +163,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Akash Token (AKT) is the Akash Network\'s native utility token, used as the primary means to govern, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.',
+      description: 'Akash Network is a decentralized cloud computing marketplace that connects users with unused computing resources, offering a cost-effective alternative to traditional cloud providers.',
       denom_units: [{
           denom: 'ibc/448B29AB9766D29CC09944EDF6A08573B45A37C55746A45FA3CF53F1B58DF98D',
           exponent: 0,
@@ -205,7 +205,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Cosmos Hub.',
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/B5919B1B65A79F595F71D2E8306FD1FB70B969A268230E745A6DBE86F1060D58',
           exponent: 0,
@@ -610,7 +610,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The XPRT token is primarily a governance token for the Persistence chain.',
+      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
       denom_units: [{
           denom: 'ibc/B3CC9901DF8BA5F6154EDA69B3016EE16A795B6C422216AE08307FBBEAC22575',
           exponent: 0,
@@ -1141,7 +1141,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The XPRT token is primarily a governance token for the Persistence chain.',
+      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
       denom_units: [{
           denom: 'ibc/B3CC9901DF8BA5F6154EDA69B3016EE16A795B6C422216AE08307FBBEAC22575',
           exponent: 0,

@@ -87,7 +87,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Cosmos Hub.',
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/A4DB47A9D3CF9A068D454513891B526702455D3EF08FB9EB558C561F9DC2B701',
           exponent: 0,
@@ -328,7 +328,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/662914D0C1CEBCB070C68F061D035E8B10A07C79AB286E7342C85F3BE74612C5',
           exponent: 0,
@@ -458,7 +458,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stargaze',
+      description: 'Stargaze is a decentralized blockchain platform designed specifically for non-fungible tokens (NFTs), enabling creators to mint, trade, and interact with NFTs in a fully decentralized environment.',
       denom_units: [{
           denom: 'ibc/07FA7831E1920D0C87C9388F86B0108677F6ED0C9DE7E4063F05ED675192405C',
           exponent: 0,
@@ -500,7 +500,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stride',
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
       denom_units: [{
           denom: 'ibc/3552CECB7BCE1891DB6070D37EC6E954C972B1400141308FCD85FD148BD06DE5',
           exponent: 0,
@@ -584,7 +584,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Cosmos Hub.',
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/A4DB47A9D3CF9A068D454513891B526702455D3EF08FB9EB558C561F9DC2B701',
           exponent: 0,
@@ -825,7 +825,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/662914D0C1CEBCB070C68F061D035E8B10A07C79AB286E7342C85F3BE74612C5',
           exponent: 0,
@@ -955,7 +955,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stargaze',
+      description: 'Stargaze is a decentralized blockchain platform designed specifically for non-fungible tokens (NFTs), enabling creators to mint, trade, and interact with NFTs in a fully decentralized environment.',
       denom_units: [{
           denom: 'ibc/07FA7831E1920D0C87C9388F86B0108677F6ED0C9DE7E4063F05ED675192405C',
           exponent: 0,
@@ -997,7 +997,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stride',
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
       denom_units: [{
           denom: 'ibc/3552CECB7BCE1891DB6070D37EC6E954C972B1400141308FCD85FD148BD06DE5',
           exponent: 0,

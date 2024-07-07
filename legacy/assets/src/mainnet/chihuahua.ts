@@ -45,7 +45,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Migaloo Chain',
+      description: 'Migaloo is a cosmwasm-powered, permissionless blockchain designed to build decentralized applications with a focus on interchain liquidity solutions.',
       denom_units: [{
           denom: 'ibc/FA7112322CE7656DC84D441E49BAEAB9DC0AB3C7618A178A212CDE8B3F17C70B',
           exponent: 0,
@@ -83,7 +83,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Neutron chain.',
+      description: 'Neutron is a smart contract blockchain within the Cosmos ecosystem, leveraging the Cosmos Hub\'s security to provide cross-chain DeFi applications.',
       denom_units: [{
           denom: 'ibc/602B2AB3379A9917CB9E7BA6DA2B8F63AD842DAD36D1B36CCDBF3AB620B60904',
           exponent: 0,
@@ -354,7 +354,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The XPRT token is primarily a governance token for the Persistence chain.',
+      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
       denom_units: [{
           denom: 'ibc/D1489F3713939AE235BE7C4D6D01C49B3A67791D86F79520EE67CFA4A1A88846',
           exponent: 0,
@@ -396,7 +396,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Secret Network',
+      description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
       denom_units: [{
           denom: 'ibc/EB2CED20AB0466F18BE49285E56B31306D4C60438A022EA995BA65D5E3CF7E09',
           exponent: 0,
@@ -513,7 +513,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Migaloo Chain',
+      description: 'Migaloo is a cosmwasm-powered, permissionless blockchain designed to build decentralized applications with a focus on interchain liquidity solutions.',
       denom_units: [{
           denom: 'ibc/FA7112322CE7656DC84D441E49BAEAB9DC0AB3C7618A178A212CDE8B3F17C70B',
           exponent: 0,
@@ -551,7 +551,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Neutron chain.',
+      description: 'Neutron is a smart contract blockchain within the Cosmos ecosystem, leveraging the Cosmos Hub\'s security to provide cross-chain DeFi applications.',
       denom_units: [{
           denom: 'ibc/602B2AB3379A9917CB9E7BA6DA2B8F63AD842DAD36D1B36CCDBF3AB620B60904',
           exponent: 0,
@@ -822,7 +822,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The XPRT token is primarily a governance token for the Persistence chain.',
+      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
       denom_units: [{
           denom: 'ibc/D1489F3713939AE235BE7C4D6D01C49B3A67791D86F79520EE67CFA4A1A88846',
           exponent: 0,
@@ -864,7 +864,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Secret Network',
+      description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
       denom_units: [{
           denom: 'ibc/EB2CED20AB0466F18BE49285E56B31306D4C60438A022EA995BA65D5E3CF7E09',
           exponent: 0,

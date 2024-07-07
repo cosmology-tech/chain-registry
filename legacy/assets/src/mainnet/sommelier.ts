@@ -3,7 +3,7 @@ const assets: AssetList = {
   chain_name: 'sommelier',
   assets: [
     {
-      description: 'The native token of Axelar',
+      description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
       denom_units: [{
           denom: 'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
           exponent: 0,
@@ -45,7 +45,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The INJ token is the native governance token for the Injective chain.',
+      description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/DE63D8AC34B752FB7D4CAA7594145EDE1C9FC256AC6D4043D0F12310EB8FC255',
           exponent: 0,
@@ -317,7 +317,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/30F3F34E95CE24EB7746527607FB223E7BF4578B389425548131C6298A9B3945',
           exponent: 0,
@@ -447,7 +447,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Axelar',
+      description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
       denom_units: [{
           denom: 'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
           exponent: 0,
@@ -489,7 +489,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The INJ token is the native governance token for the Injective chain.',
+      description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/DE63D8AC34B752FB7D4CAA7594145EDE1C9FC256AC6D4043D0F12310EB8FC255',
           exponent: 0,
@@ -761,7 +761,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/30F3F34E95CE24EB7746527607FB223E7BF4578B389425548131C6298A9B3945',
           exponent: 0,
@@ -891,7 +891,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stride',
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
       denom_units: [{
           denom: 'ibc/281A7A97BAE3A3D93A52324119EC0BAC0ACDA8A0AC9E1D62AC78B95F449E06DD',
           exponent: 0,
@@ -933,7 +933,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stride',
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
       denom_units: [{
           denom: 'ibc/281A7A97BAE3A3D93A52324119EC0BAC0ACDA8A0AC9E1D62AC78B95F449E06DD',
           exponent: 0,

@@ -3,7 +3,7 @@ const assets: AssetList = {
   chain_name: 'migaloo',
   assets: [
     {
-      description: 'The native token of Axelar',
+      description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
       denom_units: [{
           denom: 'ibc/B1F66414EA8D434F52150F7EC1E79BC917BE78B60E7D5FB089607936FAE67139',
           exponent: 0,
@@ -45,7 +45,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Chihuahua Chain',
+      description: 'Chihuahua is a community-driven blockchain project focused on creating a fun and engaging ecosystem with an emphasis on social interactions and community building.',
       denom_units: [{
           denom: 'ibc/AEE2F7EF838464848886097FA71AAB4A3A085F16D7585A0ED8B972383710B69F',
           exponent: 0,
@@ -197,7 +197,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The INJ token is the native governance token for the Injective chain.',
+      description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/1C2D8505A29823310B4484E4C63CFDCB08C0D3B57537A615A45F4E5D42CDC789',
           exponent: 0,
@@ -511,7 +511,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of Kava',
+      description: 'Kava is a decentralized finance (DeFi) platform that provides a range of financial services, including lending, borrowing, and stablecoins, leveraging the Cosmos and Ethereum ecosystems.',
       denom_units: [{
           denom: 'ibc/54EE2583A6907B48E1AF14594F6E91B95E358D9D871E9FAD7D6D6B709E813FE7',
           exponent: 0,
@@ -710,7 +710,7 @@ const assets: AssetList = {
       }
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/EF4222BF77971A75F4E655E2AD2AFDDC520CE428EF938A1C91157E9DFBFF32A3',
           exponent: 0,
@@ -752,7 +752,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Axelar',
+      description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
       denom_units: [{
           denom: 'ibc/B1F66414EA8D434F52150F7EC1E79BC917BE78B60E7D5FB089607936FAE67139',
           exponent: 0,
@@ -794,7 +794,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Chihuahua Chain',
+      description: 'Chihuahua is a community-driven blockchain project focused on creating a fun and engaging ecosystem with an emphasis on social interactions and community building.',
       denom_units: [{
           denom: 'ibc/AEE2F7EF838464848886097FA71AAB4A3A085F16D7585A0ED8B972383710B69F',
           exponent: 0,
@@ -946,7 +946,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The INJ token is the native governance token for the Injective chain.',
+      description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/1C2D8505A29823310B4484E4C63CFDCB08C0D3B57537A615A45F4E5D42CDC789',
           exponent: 0,
@@ -1260,7 +1260,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of Kava',
+      description: 'Kava is a decentralized finance (DeFi) platform that provides a range of financial services, including lending, borrowing, and stablecoins, leveraging the Cosmos and Ethereum ecosystems.',
       denom_units: [{
           denom: 'ibc/54EE2583A6907B48E1AF14594F6E91B95E358D9D871E9FAD7D6D6B709E813FE7',
           exponent: 0,
@@ -1459,7 +1459,7 @@ const assets: AssetList = {
       }
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/EF4222BF77971A75F4E655E2AD2AFDDC520CE428EF938A1C91157E9DFBFF32A3',
           exponent: 0,
@@ -1700,7 +1700,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Secret Network',
+      description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
       denom_units: [{
           denom: 'ibc/7F977DD9265DD84BBFF026C93AC87B3CEABDA4064E5A0B1059CB14B056D629D5',
           exponent: 0,
@@ -1819,7 +1819,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stargaze',
+      description: 'Stargaze is a decentralized blockchain platform designed specifically for non-fungible tokens (NFTs), enabling creators to mint, trade, and interact with NFTs in a fully decentralized environment.',
       denom_units: [{
           denom: 'ibc/294784AEC606DBCDC595033731D96044C8DE473FA102A61CF490DCBC3C0B9F04',
           exponent: 0,
@@ -2140,7 +2140,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Secret Network',
+      description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
       denom_units: [{
           denom: 'ibc/7F977DD9265DD84BBFF026C93AC87B3CEABDA4064E5A0B1059CB14B056D629D5',
           exponent: 0,
@@ -2259,7 +2259,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stargaze',
+      description: 'Stargaze is a decentralized blockchain platform designed specifically for non-fungible tokens (NFTs), enabling creators to mint, trade, and interact with NFTs in a fully decentralized environment.',
       denom_units: [{
           denom: 'ibc/294784AEC606DBCDC595033731D96044C8DE473FA102A61CF490DCBC3C0B9F04',
           exponent: 0,

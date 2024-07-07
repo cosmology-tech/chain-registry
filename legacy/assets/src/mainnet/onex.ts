@@ -3,7 +3,7 @@ const assets: AssetList = {
   chain_name: 'onex',
   assets: [
     {
-      description: 'The native staking and governance token of Kava',
+      description: 'Kava is a decentralized finance (DeFi) platform that provides a range of financial services, including lending, borrowing, and stablecoins, leveraging the Cosmos and Ethereum ecosystems.',
       denom_units: [{
           denom: 'ibc/04AF92756F44EF9DCCC4DD2BFBDE3744B5DBB4ACDC294DAA47BA11ACBF8CDD07',
           exponent: 0,
@@ -313,7 +313,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of Kava',
+      description: 'Kava is a decentralized finance (DeFi) platform that provides a range of financial services, including lending, borrowing, and stablecoins, leveraging the Cosmos and Ethereum ecosystems.',
       denom_units: [{
           denom: 'ibc/04AF92756F44EF9DCCC4DD2BFBDE3744B5DBB4ACDC294DAA47BA11ACBF8CDD07',
           exponent: 0,

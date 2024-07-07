@@ -3,7 +3,7 @@ const assets: AssetList = {
   chain_name: 'nomic',
   assets: [
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/90F27756D300141BDF07B83E65401BDC58C05269B9BAE3ECB0B20FAB166BCF8F',
           exponent: 0,
@@ -45,7 +45,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Neutron chain.',
+      description: 'Neutron is a smart contract blockchain within the Cosmos ecosystem, leveraging the Cosmos Hub\'s security to provide cross-chain DeFi applications.',
       denom_units: [{
           denom: 'ibc/D3D9C4C9103B38458D7C1B53C39CC6F886AA28ED028D7ACD101D4943DC7A490A',
           exponent: 0,
@@ -192,7 +192,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/90F27756D300141BDF07B83E65401BDC58C05269B9BAE3ECB0B20FAB166BCF8F',
           exponent: 0,
@@ -234,7 +234,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Neutron chain.',
+      description: 'Neutron is a smart contract blockchain within the Cosmos ecosystem, leveraging the Cosmos Hub\'s security to provide cross-chain DeFi applications.',
       denom_units: [{
           denom: 'ibc/D3D9C4C9103B38458D7C1B53C39CC6F886AA28ED028D7ACD101D4943DC7A490A',
           exponent: 0,

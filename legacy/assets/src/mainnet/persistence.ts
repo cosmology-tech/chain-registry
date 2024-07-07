@@ -3,7 +3,7 @@ const assets: AssetList = {
   chain_name: 'persistence',
   assets: [
     {
-      description: 'BLD is the token used to secure the Agoric chain through staking and to backstop Inter Protocol.',
+      description: 'Agoric is a smart contract platform that uses JavaScript to enable developers to build secure and scalable decentralized applications (dApps) easily.',
       denom_units: [{
           denom: 'ibc/5BCA39AEE3A48194602328FF11D873FCC61ADDD40C7F1BBB7B05C9AA2896B407',
           exponent: 0,
@@ -83,7 +83,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Akash Token (AKT) is the Akash Network\'s native utility token, used as the primary means to govern, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.',
+      description: 'Akash Network is a decentralized cloud computing marketplace that connects users with unused computing resources, offering a cost-effective alternative to traditional cloud providers.',
       denom_units: [{
           denom: 'ibc/3B6578698023BE802272D184CCA5B84C865546467D0548EC148ECEB91C6F714C',
           exponent: 0,
@@ -125,7 +125,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Chihuahua Chain',
+      description: 'Chihuahua is a community-driven blockchain project focused on creating a fun and engaging ecosystem with an emphasis on social interactions and community building.',
       denom_units: [{
           denom: 'ibc/B597D779FCDD9021263C98A48F1AFA9D2BCCCE980F397CDE5681CCEDE7DEE1A4',
           exponent: 0,
@@ -277,7 +277,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Cosmos Hub.',
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/C8A74ABBE2AF892E15680D916A7C22130585CE5704F9B17A10F184A90D53BECA',
           exponent: 0,
@@ -437,7 +437,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking token of dYdX Protocol.',
+      description: 'DYDX is a decentralized trading platform focused on derivatives and perpetual contracts, offering a secure and efficient trading experience without intermediaries.',
       denom_units: [{
           denom: 'ibc/23DC3FF0E4CBB53A1915E4C62507CB7796956E84C68CA49707787CB8BDE90A1E',
           exponent: 0,
@@ -526,7 +526,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The INJ token is the native governance token for the Injective chain.',
+      description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/D64E84758BCA42602C27E9ED2DB8F4EFDAE6A1E311CF404B516D45FEDF319D73',
           exponent: 0,
@@ -878,7 +878,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of Kava',
+      description: 'Kava is a decentralized finance (DeFi) platform that provides a range of financial services, including lending, borrowing, and stablecoins, leveraging the Cosmos and Ethereum ecosystems.',
       denom_units: [{
           denom: 'ibc/1D1218E270EC508BAF00AEA3EB24E6FA50C19D93AFABD406886633098D0B76B0',
           exponent: 0,
@@ -1077,7 +1077,7 @@ const assets: AssetList = {
       }
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/98248BECF49363FACC3BA46A557771ED4F9F593F821D7E390BD89E201441E12D',
           exponent: 0,
@@ -1119,7 +1119,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Neutron chain.',
+      description: 'Neutron is a smart contract blockchain within the Cosmos ecosystem, leveraging the Cosmos Hub\'s security to provide cross-chain DeFi applications.',
       denom_units: [{
           denom: 'ibc/88386638D9EE3A4BD2B16E4A7EB239A435E4BA1B1BB450EA46ADB771BAB10A63',
           exponent: 0,
@@ -1465,7 +1465,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'BLD is the token used to secure the Agoric chain through staking and to backstop Inter Protocol.',
+      description: 'Agoric is a smart contract platform that uses JavaScript to enable developers to build secure and scalable decentralized applications (dApps) easily.',
       denom_units: [{
           denom: 'ibc/5BCA39AEE3A48194602328FF11D873FCC61ADDD40C7F1BBB7B05C9AA2896B407',
           exponent: 0,
@@ -1545,7 +1545,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Akash Token (AKT) is the Akash Network\'s native utility token, used as the primary means to govern, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.',
+      description: 'Akash Network is a decentralized cloud computing marketplace that connects users with unused computing resources, offering a cost-effective alternative to traditional cloud providers.',
       denom_units: [{
           denom: 'ibc/3B6578698023BE802272D184CCA5B84C865546467D0548EC148ECEB91C6F714C',
           exponent: 0,
@@ -1587,7 +1587,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Chihuahua Chain',
+      description: 'Chihuahua is a community-driven blockchain project focused on creating a fun and engaging ecosystem with an emphasis on social interactions and community building.',
       denom_units: [{
           denom: 'ibc/B597D779FCDD9021263C98A48F1AFA9D2BCCCE980F397CDE5681CCEDE7DEE1A4',
           exponent: 0,
@@ -1739,7 +1739,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Cosmos Hub.',
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/C8A74ABBE2AF892E15680D916A7C22130585CE5704F9B17A10F184A90D53BECA',
           exponent: 0,
@@ -1899,7 +1899,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking token of dYdX Protocol.',
+      description: 'DYDX is a decentralized trading platform focused on derivatives and perpetual contracts, offering a secure and efficient trading experience without intermediaries.',
       denom_units: [{
           denom: 'ibc/23DC3FF0E4CBB53A1915E4C62507CB7796956E84C68CA49707787CB8BDE90A1E',
           exponent: 0,
@@ -1988,7 +1988,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The INJ token is the native governance token for the Injective chain.',
+      description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/D64E84758BCA42602C27E9ED2DB8F4EFDAE6A1E311CF404B516D45FEDF319D73',
           exponent: 0,
@@ -2340,7 +2340,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of Kava',
+      description: 'Kava is a decentralized finance (DeFi) platform that provides a range of financial services, including lending, borrowing, and stablecoins, leveraging the Cosmos and Ethereum ecosystems.',
       denom_units: [{
           denom: 'ibc/1D1218E270EC508BAF00AEA3EB24E6FA50C19D93AFABD406886633098D0B76B0',
           exponent: 0,
@@ -2539,7 +2539,7 @@ const assets: AssetList = {
       }
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/98248BECF49363FACC3BA46A557771ED4F9F593F821D7E390BD89E201441E12D',
           exponent: 0,
@@ -2581,7 +2581,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Neutron chain.',
+      description: 'Neutron is a smart contract blockchain within the Cosmos ecosystem, leveraging the Cosmos Hub\'s security to provide cross-chain DeFi applications.',
       denom_units: [{
           denom: 'ibc/88386638D9EE3A4BD2B16E4A7EB239A435E4BA1B1BB450EA46ADB771BAB10A63',
           exponent: 0,
@@ -3048,7 +3048,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Secret Network',
+      description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
       denom_units: [{
           denom: 'ibc/8AD0356E16A8EC966F71C62016EECF54239762CC276BA1BAB4F954423951CF5C',
           exponent: 0,
@@ -3170,7 +3170,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stargaze',
+      description: 'Stargaze is a decentralized blockchain platform designed specifically for non-fungible tokens (NFTs), enabling creators to mint, trade, and interact with NFTs in a fully decentralized environment.',
       denom_units: [{
           denom: 'ibc/AD8E1D4AC4EA8FC79CC46E33319A3791477D4DEBFC30D5D874074B993422B41B',
           exponent: 0,
@@ -3254,7 +3254,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stride',
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
       denom_units: [{
           denom: 'ibc/C98348DF19AA429B2202B408DD87332BA3A9533CC626E507F5A16082F26FCF16',
           exponent: 0,
@@ -3455,7 +3455,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Secret Network',
+      description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
       denom_units: [{
           denom: 'ibc/8AD0356E16A8EC966F71C62016EECF54239762CC276BA1BAB4F954423951CF5C',
           exponent: 0,
@@ -3577,7 +3577,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stargaze',
+      description: 'Stargaze is a decentralized blockchain platform designed specifically for non-fungible tokens (NFTs), enabling creators to mint, trade, and interact with NFTs in a fully decentralized environment.',
       denom_units: [{
           denom: 'ibc/AD8E1D4AC4EA8FC79CC46E33319A3791477D4DEBFC30D5D874074B993422B41B',
           exponent: 0,
@@ -3661,7 +3661,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stride',
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
       denom_units: [{
           denom: 'ibc/C98348DF19AA429B2202B408DD87332BA3A9533CC626E507F5A16082F26FCF16',
           exponent: 0,

@@ -121,7 +121,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/9F3B9FA98C4D46C7E8A5CFA250CDD875DC670715A307EEBFE59F113B2FB096FD',
           exponent: 0,
@@ -163,7 +163,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Migaloo Chain',
+      description: 'Migaloo is a cosmwasm-powered, permissionless blockchain designed to build decentralized applications with a focus on interchain liquidity solutions.',
       denom_units: [{
           denom: 'ibc/1A8D30507F3EAC6A99666EDCB8CD147D1453B35E68F4331B63848B2040E9A5E2',
           exponent: 0,
@@ -289,7 +289,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The XPRT token is primarily a governance token for the Persistence chain.',
+      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
       denom_units: [{
           denom: 'ibc/E437FFE5ABB5163FA7968BAF68146512B81E842DF05BA27E3B25E64B7CDC9AC7',
           exponent: 0,
@@ -331,7 +331,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Secret Network',
+      description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
       denom_units: [{
           denom: 'ibc/345D30E8ED06B47FC538ED131D99D16126F07CD6F8B35DE96AAF4C1E445AF466',
           exponent: 0,
@@ -373,7 +373,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stride',
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
       denom_units: [{
           denom: 'ibc/365407B27EE99FD841FC3805F2B63323E4E0A7EA35D4413E305188134B640B4D',
           exponent: 0,
@@ -575,7 +575,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/9F3B9FA98C4D46C7E8A5CFA250CDD875DC670715A307EEBFE59F113B2FB096FD',
           exponent: 0,
@@ -617,7 +617,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Migaloo Chain',
+      description: 'Migaloo is a cosmwasm-powered, permissionless blockchain designed to build decentralized applications with a focus on interchain liquidity solutions.',
       denom_units: [{
           denom: 'ibc/1A8D30507F3EAC6A99666EDCB8CD147D1453B35E68F4331B63848B2040E9A5E2',
           exponent: 0,
@@ -743,7 +743,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The XPRT token is primarily a governance token for the Persistence chain.',
+      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
       denom_units: [{
           denom: 'ibc/E437FFE5ABB5163FA7968BAF68146512B81E842DF05BA27E3B25E64B7CDC9AC7',
           exponent: 0,
@@ -785,7 +785,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Secret Network',
+      description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
       denom_units: [{
           denom: 'ibc/345D30E8ED06B47FC538ED131D99D16126F07CD6F8B35DE96AAF4C1E445AF466',
           exponent: 0,
@@ -827,7 +827,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Stride',
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
       denom_units: [{
           denom: 'ibc/365407B27EE99FD841FC3805F2B63323E4E0A7EA35D4413E305188134B640B4D',
           exponent: 0,

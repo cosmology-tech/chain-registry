@@ -3,7 +3,7 @@ const assets: AssetList = {
   chain_name: 'stafihub',
   assets: [
     {
-      description: 'The native token of Chihuahua Chain',
+      description: 'Chihuahua is a community-driven blockchain project focused on creating a fun and engaging ecosystem with an emphasis on social interactions and community building.',
       denom_units: [{
           denom: 'ibc/B5C5ADF9955FF42C1AD0C2B8924256DDBC91BD57E4AD232803419266661D3BDC',
           exponent: 0,
@@ -41,7 +41,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Cosmos Hub.',
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2',
           exponent: 0,
@@ -121,7 +121,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/6D6A70DED7038F6BC7D0181C1A0A63A202C0E050AD30A016D99B37848B47E6F1',
           exponent: 0,
@@ -251,7 +251,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Chihuahua Chain',
+      description: 'Chihuahua is a community-driven blockchain project focused on creating a fun and engaging ecosystem with an emphasis on social interactions and community building.',
       denom_units: [{
           denom: 'ibc/B5C5ADF9955FF42C1AD0C2B8924256DDBC91BD57E4AD232803419266661D3BDC',
           exponent: 0,
@@ -289,7 +289,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Cosmos Hub.',
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2',
           exponent: 0,
@@ -369,7 +369,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/6D6A70DED7038F6BC7D0181C1A0A63A202C0E050AD30A016D99B37848B47E6F1',
           exponent: 0,

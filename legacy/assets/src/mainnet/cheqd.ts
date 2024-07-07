@@ -133,7 +133,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Secret Network',
+      description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
       denom_units: [{
           denom: 'ibc/C0DD602D2B4CA12D9BB1FEEEF23D0042473264FFB8A7D88CEDE4FAACC628FADF',
           exponent: 0,
@@ -347,7 +347,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Secret Network',
+      description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
       denom_units: [{
           denom: 'ibc/C0DD602D2B4CA12D9BB1FEEEF23D0042473264FFB8A7D88CEDE4FAACC628FADF',
           exponent: 0,

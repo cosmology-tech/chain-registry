@@ -3,7 +3,7 @@ const assets: AssetList = {
   chain_name: 'xpla',
   assets: [
     {
-      description: 'The INJ token is the native governance token for the Injective chain.',
+      description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/A39D6D491ED6349F67505000586546E68ECE05C486F07BE831871AF88A50CD19',
           exponent: 0,
@@ -363,7 +363,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The INJ token is the native governance token for the Injective chain.',
+      description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/A39D6D491ED6349F67505000586546E68ECE05C486F07BE831871AF88A50CD19',
           exponent: 0,

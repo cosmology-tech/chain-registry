@@ -45,7 +45,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Chihuahua Chain',
+      description: 'Chihuahua is a community-driven blockchain project focused on creating a fun and engaging ecosystem with an emphasis on social interactions and community building.',
       denom_units: [{
           denom: 'ibc/CC12CFFD769D5E0059D98E760DD34FAB477261785B99240C97F6AABC4F566CB5',
           exponent: 0,
@@ -243,7 +243,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Chihuahua Chain',
+      description: 'Chihuahua is a community-driven blockchain project focused on creating a fun and engaging ecosystem with an emphasis on social interactions and community building.',
       denom_units: [{
           denom: 'ibc/CC12CFFD769D5E0059D98E760DD34FAB477261785B99240C97F6AABC4F566CB5',
           exponent: 0,

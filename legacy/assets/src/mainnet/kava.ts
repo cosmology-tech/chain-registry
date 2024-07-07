@@ -41,7 +41,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of the Celestia blockchain.',
+      description: 'Celestia is a modular blockchain network focused on data availability, allowing developers to deploy their own customizable blockchains with ease.',
       denom_units: [{
           denom: 'ibc/7828FD453E26CA18E7516F4F15C9698A36E92EA058B6A113B1F75CE828BF5398',
           exponent: 0,
@@ -133,7 +133,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Cosmos Hub.',
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2',
           exponent: 0,
@@ -175,7 +175,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking token of dYdX Protocol.',
+      description: 'DYDX is a decentralized trading platform focused on derivatives and perpetual contracts, offering a secure and efficient trading experience without intermediaries.',
       denom_units: [{
           denom: 'ibc/504AB5ACDC94480E27C4ECCCFB9E0468A0AF5C0AF6E7CF9BB504DE54C3D8E7DB',
           exponent: 0,
@@ -464,7 +464,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The INJ token is the native governance token for the Injective chain.',
+      description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/64BA6E31FE887D66C6F8F31C7B1A80C7CA179239677B4088BB55F5EA07DBE273',
           exponent: 0,
@@ -774,7 +774,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of the Celestia blockchain.',
+      description: 'Celestia is a modular blockchain network focused on data availability, allowing developers to deploy their own customizable blockchains with ease.',
       denom_units: [{
           denom: 'ibc/7828FD453E26CA18E7516F4F15C9698A36E92EA058B6A113B1F75CE828BF5398',
           exponent: 0,
@@ -866,7 +866,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Cosmos Hub.',
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2',
           exponent: 0,
@@ -908,7 +908,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking token of dYdX Protocol.',
+      description: 'DYDX is a decentralized trading platform focused on derivatives and perpetual contracts, offering a secure and efficient trading experience without intermediaries.',
       denom_units: [{
           denom: 'ibc/504AB5ACDC94480E27C4ECCCFB9E0468A0AF5C0AF6E7CF9BB504DE54C3D8E7DB',
           exponent: 0,
@@ -1197,7 +1197,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The INJ token is the native governance token for the Injective chain.',
+      description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/64BA6E31FE887D66C6F8F31C7B1A80C7CA179239677B4088BB55F5EA07DBE273',
           exponent: 0,
@@ -1469,7 +1469,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/2CA1ED8E0335BADDAE8CC30149583A78A8517FBED0AF3910E04525CCEBB173B1',
           exponent: 0,
@@ -1511,7 +1511,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Migaloo Chain',
+      description: 'Migaloo is a cosmwasm-powered, permissionless blockchain designed to build decentralized applications with a focus on interchain liquidity solutions.',
       denom_units: [{
           denom: 'ibc/59C30B8D59BF723D152E0680071A213DED52B22102DE8394A398C97163C49D00',
           exponent: 0,
@@ -1549,7 +1549,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Neutron chain.',
+      description: 'Neutron is a smart contract blockchain within the Cosmos ecosystem, leveraging the Cosmos Hub\'s security to provide cross-chain DeFi applications.',
       denom_units: [{
           denom: 'ibc/88386638D9EE3A4BD2B16E4A7EB239A435E4BA1B1BB450EA46ADB771BAB10A63',
           exponent: 0,
@@ -1819,7 +1819,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The XPRT token is primarily a governance token for the Persistence chain.',
+      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
       denom_units: [{
           denom: 'ibc/134CED3DD0201C9A01D9B67DD7FC6BF6DEF8A7F709C22B0ABCEC263002B13207',
           exponent: 0,
@@ -2018,7 +2018,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/2CA1ED8E0335BADDAE8CC30149583A78A8517FBED0AF3910E04525CCEBB173B1',
           exponent: 0,
@@ -2060,7 +2060,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Migaloo Chain',
+      description: 'Migaloo is a cosmwasm-powered, permissionless blockchain designed to build decentralized applications with a focus on interchain liquidity solutions.',
       denom_units: [{
           denom: 'ibc/59C30B8D59BF723D152E0680071A213DED52B22102DE8394A398C97163C49D00',
           exponent: 0,
@@ -2098,7 +2098,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Neutron chain.',
+      description: 'Neutron is a smart contract blockchain within the Cosmos ecosystem, leveraging the Cosmos Hub\'s security to provide cross-chain DeFi applications.',
       denom_units: [{
           denom: 'ibc/88386638D9EE3A4BD2B16E4A7EB239A435E4BA1B1BB450EA46ADB771BAB10A63',
           exponent: 0,
@@ -2368,7 +2368,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The XPRT token is primarily a governance token for the Persistence chain.',
+      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
       denom_units: [{
           denom: 'ibc/134CED3DD0201C9A01D9B67DD7FC6BF6DEF8A7F709C22B0ABCEC263002B13207',
           exponent: 0,

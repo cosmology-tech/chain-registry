@@ -3,7 +3,7 @@ const assets: AssetList = {
   chain_name: 'odin',
   assets: [
     {
-      description: 'The native token of Axelar',
+      description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
       denom_units: [{
           denom: 'ibc/1F6F47BC4AF41C7F767DD84D9387BC6058FCFEEF0C6D0D6E6C53DA23A761D139',
           exponent: 0,
@@ -45,7 +45,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The INJ token is the native governance token for the Injective chain.',
+      description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/D81F6FFB8675A994DBB94B4CA9777CA03A3DEDBAC3E61685E350C1CA20731AF8',
           exponent: 0,
@@ -317,7 +317,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/C4BE30A03C8FA2274C3C80C751F0517B538BB419546370C6DB19D32417CA3E3D',
           exponent: 0,
@@ -359,7 +359,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Axelar',
+      description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
       denom_units: [{
           denom: 'ibc/1F6F47BC4AF41C7F767DD84D9387BC6058FCFEEF0C6D0D6E6C53DA23A761D139',
           exponent: 0,
@@ -401,7 +401,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The INJ token is the native governance token for the Injective chain.',
+      description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/D81F6FFB8675A994DBB94B4CA9777CA03A3DEDBAC3E61685E350C1CA20731AF8',
           exponent: 0,
@@ -673,7 +673,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/C4BE30A03C8FA2274C3C80C751F0517B538BB419546370C6DB19D32417CA3E3D',
           exponent: 0,

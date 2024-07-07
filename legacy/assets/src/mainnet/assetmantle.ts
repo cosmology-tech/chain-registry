@@ -45,7 +45,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/7CD0497ECB1486F19696C90E6CB500494DC67E2E83E127D97562A117C2316C1F',
           exponent: 0,
@@ -253,7 +253,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/7CD0497ECB1486F19696C90E6CB500494DC67E2E83E127D97562A117C2316C1F',
           exponent: 0,
