@@ -31,10 +31,12 @@ import * as _doravotatestnet from './doravotatestnet';
 import * as _doravotatestnet2 from './doravotatestnet2';
 import * as _dydxtestnet from './dydxtestnet';
 import * as _elystestnet from './elystestnet';
+import * as _empetestnet from './empetestnet';
 import * as _empowertestnet from './empowertestnet';
 import * as _entrypointtestnet from './entrypointtestnet';
 import * as _evmostestnet from './evmostestnet';
 import * as _fetchhubtestnet from './fetchhubtestnet';
+import * as _fiammatestnet from './fiammatestnet';
 import * as _finschiatestnet from './finschiatestnet';
 import * as _galacticatestnet from './galacticatestnet';
 import * as _gitopiatestnet from './gitopiatestnet';
@@ -140,10 +142,12 @@ const assets: AssetList[] = [
   _doravotatestnet2.assets,
   _dydxtestnet.assets,
   _elystestnet.assets,
+  _empetestnet.assets,
   _empowertestnet.assets,
   _entrypointtestnet.assets,
   _evmostestnet.assets,
   _fetchhubtestnet.assets,
+  _fiammatestnet.assets,
   _finschiatestnet.assets,
   _galacticatestnet.assets,
   _gitopiatestnet.assets,

@@ -24,9 +24,9 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.5',
+    cosmos_sdk_version: 'v0.47.9',
     cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.41.0'
+    cosmwasm_version: 'v0.45.0'
   },
   daemon_name: 'comdex',
   node_home: '$HOME/.comdex',

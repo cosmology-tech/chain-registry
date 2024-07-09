@@ -5,7 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Sunrise Testnet',
-  chain_id: 'sunrise-test',
+  chain_id: 'sunrise-test-0.1',
   bech32_prefix: 'sunrise',
   daemon_name: 'sunrised',
   node_home: '$HOME/.sunrise',

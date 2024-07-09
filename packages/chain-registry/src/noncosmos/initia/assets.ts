@@ -16,8 +16,8 @@ const info: AssetList = {
       name: 'Initia',
       symbol: 'INIT',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/initia/images/init.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/initia/images/init.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/initia/images/INIT.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/initia/images/INIT.svg',
           theme: {
             circle: true,
             primary_color_hex: '#040404'

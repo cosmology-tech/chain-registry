@@ -31,13 +31,20 @@ const info: Chain = {
   },
   description: 'Self Chain Is The First Modular Intent-Centric Access Layer L1 Blockchain And Keyless Wallet Infrastructure Service That Uses MPC-TSS/AA For Multi-Chain Web3 Access.',
   apis: {
-    rpc: [{
+    rpc: [
+      {
         address: 'https://rpc.selfchain.io:26657',
         provider: 'Self Chain'
-      }, {
+      },
+      {
         address: 'https://rpc.selfchain.roomit.xyz',
         provider: 'Roomit'
-      }],
+      },
+      {
+        address: 'https://selfchain_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      }
+    ],
     rest: [
       {
         address: 'https://api.selfchain.io',
@@ -50,6 +57,10 @@ const info: Chain = {
       {
         address: 'https://api.selfchain.roomit.xyz',
         provider: 'Roomit'
+      },
+      {
+        address: 'https://selfchain_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [{
@@ -75,6 +86,12 @@ const info: Chain = {
       url: 'https://explorer.tendermint.roomit.xyz/selfchain-mainnet',
       tx_page: 'https://explorer.tendermint.roomit.xyz/selfchain-mainnet/tx/${txHash}',
       account_page: 'https://explorer.tendermint.roomit.xyz/selfchain-mainnet/account/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/self',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/self/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/self/account/${accountAddress}'
     }
   ],
   images: [{

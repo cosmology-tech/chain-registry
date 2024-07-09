@@ -31,10 +31,12 @@ import * as _doravotatestnet from './doravotatestnet';
 import * as _doravotatestnet2 from './doravotatestnet2';
 import * as _dydxtestnet from './dydxtestnet';
 import * as _elystestnet from './elystestnet';
+import * as _empetestnet from './empetestnet';
 import * as _empowertestnet from './empowertestnet';
 import * as _entrypointtestnet from './entrypointtestnet';
 import * as _evmostestnet from './evmostestnet';
 import * as _fetchhubtestnet from './fetchhubtestnet';
+import * as _fiammatestnet from './fiammatestnet';
 import * as _finschiatestnet from './finschiatestnet';
 import * as _galacticatestnet from './galacticatestnet';
 import * as _gitopiatestnet from './gitopiatestnet';
@@ -140,10 +142,12 @@ const chains: Chain[] = [
   _doravotatestnet2.chain,
   _dydxtestnet.chain,
   _elystestnet.chain,
+  _empetestnet.chain,
   _empowertestnet.chain,
   _entrypointtestnet.chain,
   _evmostestnet.chain,
   _fetchhubtestnet.chain,
+  _fiammatestnet.chain,
   _finschiatestnet.chain,
   _galacticatestnet.chain,
   _gitopiatestnet.chain,
