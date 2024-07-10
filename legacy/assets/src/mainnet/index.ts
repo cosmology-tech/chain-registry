@@ -70,6 +70,7 @@ export * as lambda from './lambda';
 export * as likecoin from './likecoin';
 export * as lumenx from './lumenx';
 export * as lumnetwork from './lumnetwork';
+export * as mande from './mande';
 export * as mars from './mars';
 export * as medasdigital from './medasdigital';
 export * as meme from './meme';

@@ -34,21 +34,22 @@ const info: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'archwaytestnet',
-      client_id: '07-tendermint-77',
-      connection_id: 'connection-73'
+      client_id: '07-tendermint-121',
+      connection_id: 'connection-120'
     },
     chain_2: {
       chain_name: 'osmosistestnet',
-      client_id: '07-tendermint-1195',
-      connection_id: 'connection-1101'
+      client_id: '07-tendermint-3459',
+      connection_id: 'connection-3027'
     },
-    channels: [{
+    channels: [
+      {
         chain_1: {
-          channel_id: 'channel-58',
+          channel_id: 'channel-225',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-3938',
+          channel_id: 'channel-7779',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -56,7 +57,38 @@ const info: IBCInfo[] = [
         tags: {
           status: 'live'
         }
-      }]
+      },
+      {
+        chain_1: {
+          channel_id: '*',
+          port_id: 'wasm.*'
+        },
+        chain_2: {
+          channel_id: '*',
+          port_id: 'icahost'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live'
+        }
+      },
+      {
+        chain_1: {
+          channel_id: '*',
+          port_id: 'wasm.*'
+        },
+        chain_2: {
+          channel_id: '*',
+          port_id: 'icqhost'
+        },
+        ordering: 'unordered',
+        version: 'icq-1',
+        tags: {
+          status: 'live'
+        }
+      }
+    ]
   },
   {
     $schema: '../ibc_data.schema.json',

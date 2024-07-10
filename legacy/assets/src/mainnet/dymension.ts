@@ -755,6 +755,50 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Mande Network.',
+      denom_units: [{
+          denom: 'ibc/5A26C8DC8DA66F4DD94326E67F94510188F5F7AFE2DB3933A0C823670E56EABF',
+          exponent: 0,
+          aliases: ['amand']
+        }, {
+          denom: 'mand',
+          exponent: 18
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/5A26C8DC8DA66F4DD94326E67F94510188F5F7AFE2DB3933A0C823670E56EABF',
+      name: 'Mande Network',
+      display: 'mand',
+      symbol: 'MAND',
+      coingecko_id: 'mande-network',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mande/images/mande.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mande/images/mande.svg',
+          theme: {
+            primary_color_hex: '#274cbf'
+          }
+        }],
+      socials: {
+        website: 'https://mande.network/',
+        twitter: 'https://twitter.com/MandeNetwork'
+      },
+      keywords: ['credibility', 'web3'],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mande/images/mande.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mande/images/mande.svg'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'amand',
+            chain_name: 'mande'
+          },
+          chain: {
+            channel_id: 'channel-51'
+          }
+        }]
+    },
+    {
       description: 'Neutron is a smart contract blockchain within the Cosmos ecosystem, leveraging the Cosmos Hub\'s security to provide cross-chain DeFi applications.',
       denom_units: [{
           denom: 'ibc/2F2F132E47342479A8B7A8DB241F276609C53A1478CEB9A57411A910C9B061DB',
@@ -1626,6 +1670,50 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-10'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Mande Network.',
+      denom_units: [{
+          denom: 'ibc/5A26C8DC8DA66F4DD94326E67F94510188F5F7AFE2DB3933A0C823670E56EABF',
+          exponent: 0,
+          aliases: ['amand']
+        }, {
+          denom: 'mand',
+          exponent: 18
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/5A26C8DC8DA66F4DD94326E67F94510188F5F7AFE2DB3933A0C823670E56EABF',
+      name: 'Mande Network',
+      display: 'mand',
+      symbol: 'MAND',
+      coingecko_id: 'mande-network',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mande/images/mande.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mande/images/mande.svg',
+          theme: {
+            primary_color_hex: '#274cbf'
+          }
+        }],
+      socials: {
+        website: 'https://mande.network/',
+        twitter: 'https://twitter.com/MandeNetwork'
+      },
+      keywords: ['credibility', 'web3'],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mande/images/mande.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mande/images/mande.svg'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'amand',
+            chain_name: 'mande'
+          },
+          chain: {
+            channel_id: 'channel-51'
           }
         }]
     },

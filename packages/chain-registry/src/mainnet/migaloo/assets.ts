@@ -143,7 +143,7 @@ const info: AssetList = {
           exponent: 6
         }],
       base: 'factory/migaloo1eqntnl6tzcj9h86psg4y4h6hh05g2h9nj8e09l/urac',
-      name: 'RAC',
+      name: 'Racoon',
       display: 'RAC',
       symbol: 'RAC',
       logo_URIs: {

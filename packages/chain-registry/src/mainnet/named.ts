@@ -91,6 +91,7 @@ export * as loop from './loop';
 export * as loyal from './loyal';
 export * as lumenx from './lumenx';
 export * as lumnetwork from './lumnetwork';
+export * as mande from './mande';
 export * as mars from './mars';
 export * as mayachain from './mayachain';
 export * as medasdigital from './medasdigital';

@@ -371,7 +371,7 @@ const info: AssetList = {
       display: 'wsteth',
       symbol: 'wstETH',
       traces: [{
-          type: 'wrapped',
+          type: 'liquid-stake',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0xae7ab96520de3a18e5e111b5eaab095312d7fe84'
@@ -550,7 +550,8 @@ const info: AssetList = {
         }]
     },
     {
-      description: 'USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.',
+      description: 'USDC (USD Coin) is a stablecoin fully backed by US dollars, providing a transparent and regulated digital dollar solution.',
+      extended_description: 'USD Coin (USDC) was launched in 2018 as a joint effort between Coinbase and Circle, managed by the Centre Consortium. USDC is a fully reserved stablecoin, meaning each token is backed 1:1 by US dollars held in reserve. This structure is designed to provide transparency and trust, reinforced by regular audits from reputable third-party firms. Initially built on the Ethereum blockchain, USDC has expanded to support multiple blockchain networks, including Algorand, Solana, and more. It is widely used in DeFi protocols, as collateral, and for international transactions, offering a stable and compliant digital dollar solution.',
       type_asset: 'erc20',
       address: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48',
       denom_units: [{
@@ -582,7 +583,8 @@ const info: AssetList = {
         }]
     },
     {
-      description: 'Tether gives you the joint benefits of open blockchain technology and traditional currency by converting your cash into a stable digital currency equivalent.',
+      description: 'USDT (Tether) is a stablecoin that is pegged to the US dollar, designed to provide stability and liquidity within the cryptocurrency market.',
+      extended_description: 'Tether (USDT) is a pioneering stablecoin introduced in 2014 by Tether Limited. It aims to provide stability and liquidity by maintaining a 1:1 value ratio with the US dollar. USDT operates across multiple blockchain platforms, including Ethereum, Tron, and others, enhancing its accessibility and interoperability. It is widely used for trading, hedging against market volatility, and facilitating quick transfers between exchanges. Despite facing scrutiny over its transparency and backing reserves, USDT remains a cornerstone in the crypto market, offering a stable digital asset that bridges traditional finance and cryptocurrencies.',
       type_asset: 'erc20',
       address: '0xdac17f958d2ee523a2206206994597c13d831ec7',
       denom_units: [{
@@ -971,25 +973,13 @@ const info: AssetList = {
       name: 'Gelotto',
       display: 'glto',
       symbol: 'GLTO',
-      traces: [{
-          type: 'additional-mintage',
-          counterparty: {
-            chain_name: 'juno',
-            base_denom: 'cw20:juno1j0a9ymgngasfn3l5me8qpd53l5zlm9wurfdk7r65s5mg6tkxal3qpgf5se'
-          },
-          provider: 'Gelotto'
-        }],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.svg'
       },
       images: [{
-          image_sync: {
-            chain_name: 'juno',
-            base_denom: 'cw20:juno1j0a9ymgngasfn3l5me8qpd53l5zlm9wurfdk7r65s5mg6tkxal3qpgf5se'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.svg',
           theme: {
             primary_color_hex: '#501cad'
           }

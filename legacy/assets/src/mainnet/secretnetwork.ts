@@ -3815,7 +3815,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'DVPN is the native token of the Sentinel Hub.',
+      description: 'Sentinel is a decentralized VPN (dVPN) network that provides private and secure internet access by leveraging blockchain technology.',
       denom_units: [{
           denom: 'ibc/E83107E876FF194B54E9AC3099E49DBB7728156F250ABD3E997D2B7E89E0810B',
           exponent: 0,
@@ -5157,7 +5157,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'DVPN is the native token of the Sentinel Hub.',
+      description: 'Sentinel is a decentralized VPN (dVPN) network that provides private and secure internet access by leveraging blockchain technology.',
       denom_units: [{
           denom: 'ibc/E83107E876FF194B54E9AC3099E49DBB7728156F250ABD3E997D2B7E89E0810B',
           exponent: 0,
@@ -6638,18 +6638,6 @@ const assets: AssetList = {
       name: 'Racoon',
       display: 'rac',
       symbol: 'RAC',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.svg'
-      },
-      coingecko_id: 'racoon',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.svg',
-          theme: {
-            primary_color_hex: '#070f0e'
-          }
-        }],
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -6661,6 +6649,18 @@ const assets: AssetList = {
           chain: {
             port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
             channel_id: 'channel-45'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.svg'
+      },
+      coingecko_id: 'racoon',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.svg',
+          theme: {
+            primary_color_hex: '#070f0e'
           }
         }]
     },
@@ -6955,17 +6955,6 @@ const assets: AssetList = {
       name: 'Gelotto',
       display: 'glto',
       symbol: 'GLTO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg',
-          theme: {
-            primary_color_hex: '#501cad'
-          }
-        }],
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -6977,6 +6966,21 @@ const assets: AssetList = {
           chain: {
             port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
             channel_id: 'channel-45'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.svg'
+      },
+      images: [{
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xd73175f9eb15eee81745d367ae59309Ca2ceb5e2'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.svg',
+          theme: {
+            primary_color_hex: '#501cad'
           }
         }]
     },
@@ -7321,16 +7325,6 @@ const assets: AssetList = {
       name: 'FURY.legacy',
       display: 'fury',
       symbol: 'FURY.legacy',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/fanfury.png'
-      },
-      coingecko_id: 'fanfury',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/fanfury.png',
-          theme: {
-            primary_color_hex: '#14045c'
-          }
-        }],
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -7342,6 +7336,15 @@ const assets: AssetList = {
           chain: {
             port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
             channel_id: 'channel-45'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/fanfury.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/fanfury.png',
+          theme: {
+            primary_color_hex: '#14045c'
           }
         }]
     },
@@ -9447,18 +9450,6 @@ const assets: AssetList = {
       name: 'Racoon',
       display: 'rac',
       symbol: 'RAC',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.svg'
-      },
-      coingecko_id: 'racoon',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.svg',
-          theme: {
-            primary_color_hex: '#070f0e'
-          }
-        }],
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -9470,6 +9461,18 @@ const assets: AssetList = {
           chain: {
             port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
             channel_id: 'channel-45'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.svg'
+      },
+      coingecko_id: 'racoon',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.svg',
+          theme: {
+            primary_color_hex: '#070f0e'
           }
         }]
     },
@@ -9764,17 +9767,6 @@ const assets: AssetList = {
       name: 'Gelotto',
       display: 'glto',
       symbol: 'GLTO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg',
-          theme: {
-            primary_color_hex: '#501cad'
-          }
-        }],
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -9786,6 +9778,21 @@ const assets: AssetList = {
           chain: {
             port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
             channel_id: 'channel-45'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.svg'
+      },
+      images: [{
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xd73175f9eb15eee81745d367ae59309Ca2ceb5e2'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.svg',
+          theme: {
+            primary_color_hex: '#501cad'
           }
         }]
     },
@@ -10130,16 +10137,6 @@ const assets: AssetList = {
       name: 'FURY.legacy',
       display: 'fury',
       symbol: 'FURY.legacy',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/fanfury.png'
-      },
-      coingecko_id: 'fanfury',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/fanfury.png',
-          theme: {
-            primary_color_hex: '#14045c'
-          }
-        }],
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -10151,6 +10148,15 @@ const assets: AssetList = {
           chain: {
             port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
             channel_id: 'channel-45'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/fanfury.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/fanfury.png',
+          theme: {
+            primary_color_hex: '#14045c'
           }
         }]
     },
@@ -12132,16 +12138,6 @@ const assets: AssetList = {
       name: 'Astroport CW20 Token',
       display: 'astro.cw20',
       symbol: 'ASTRO.cw20',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
-        }],
-      socials: {
-        website: 'https://astroport.fi/',
-        twitter: 'https://twitter.com/astroport_fi'
-      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -12154,7 +12150,27 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-127'
           }
-        }]
+        }],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
+        }, {
+          image_sync: {
+            chain_name: 'neutron',
+            base_denom: 'factory/neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07/astro'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.svg',
+          theme: {
+            primary_color_hex: '#4056e9'
+          }
+        }],
+      socials: {
+        website: 'https://astroport.fi/',
+        twitter: 'https://twitter.com/astroport_fi'
+      }
     },
     {
       description: 'Dinheiros is the reserve currency of dioalma.protocol, an undivisible and rare token.',
@@ -13184,16 +13200,6 @@ const assets: AssetList = {
       name: 'Astroport CW20 Token',
       display: 'astro.cw20',
       symbol: 'ASTRO.cw20',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
-        }],
-      socials: {
-        website: 'https://astroport.fi/',
-        twitter: 'https://twitter.com/astroport_fi'
-      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -13206,7 +13212,27 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-127'
           }
-        }]
+        }],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
+        }, {
+          image_sync: {
+            chain_name: 'neutron',
+            base_denom: 'factory/neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07/astro'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.svg',
+          theme: {
+            primary_color_hex: '#4056e9'
+          }
+        }],
+      socials: {
+        website: 'https://astroport.fi/',
+        twitter: 'https://twitter.com/astroport_fi'
+      }
     },
     {
       description: 'Dinheiros is the reserve currency of dioalma.protocol, an undivisible and rare token.',

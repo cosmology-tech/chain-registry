@@ -93,6 +93,7 @@ import * as _loop from './loop';
 import * as _loyal from './loyal';
 import * as _lumenx from './lumenx';
 import * as _lumnetwork from './lumnetwork';
+import * as _mande from './mande';
 import * as _mars from './mars';
 import * as _mayachain from './mayachain';
 import * as _medasdigital from './medasdigital';
@@ -271,6 +272,7 @@ const chains: Chain[] = [
   _loyal.chain,
   _lumenx.chain,
   _lumnetwork.chain,
+  _mande.chain,
   _mars.chain,
   _mayachain.chain,
   _medasdigital.chain,

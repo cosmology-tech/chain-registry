@@ -2376,7 +2376,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking token of Sei.',
+      description: 'Sei is a layer-1 blockchain optimized for trading, focusing on providing high throughput, low latency, and efficient execution for decentralized exchanges.',
       denom_units: [{
           denom: 'ibc/07B3CA39C1A40FE3ACF1CA5CCBC92D7C37957AE35D41E1954AF4951250AC2961',
           exponent: 0,
@@ -4504,7 +4504,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking token of Sei.',
+      description: 'Sei is a layer-1 blockchain optimized for trading, focusing on providing high throughput, low latency, and efficient execution for decentralized exchanges.',
       denom_units: [{
           denom: 'ibc/07B3CA39C1A40FE3ACF1CA5CCBC92D7C37957AE35D41E1954AF4951250AC2961',
           exponent: 0,

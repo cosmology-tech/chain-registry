@@ -1082,6 +1082,45 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Gelotto blends gaming, DEFI, and fun Dapps in a unique Web3 ecosystem. Join us to become part of the house, earning from all Gelotto products. Our main goal? To bring the masses into Web3 with open, accessible, and enjoyable Dapps.',
+      type_asset: 'erc20',
+      address: '0xd73175f9eb15eee81745d367ae59309Ca2ceb5e2',
+      denom_units: [{
+          denom: 'ibc/262D63AEF61017AD67C33909E2A0B0BD97C5AF559143BA0BE085DED815B12104',
+          exponent: 0,
+          aliases: ['0xd73175f9eb15eee81745d367ae59309Ca2ceb5e2']
+        }, {
+          denom: 'glto',
+          exponent: 6
+        }],
+      base: 'ibc/262D63AEF61017AD67C33909E2A0B0BD97C5AF559143BA0BE085DED815B12104',
+      name: 'Gelotto',
+      display: 'glto',
+      symbol: 'GLTO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.svg',
+          theme: {
+            primary_color_hex: '#501cad'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0xd73175f9eb15eee81745d367ae59309Ca2ceb5e2',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
       type_asset: 'erc20',
       address: '0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f',
       denom_units: [{
@@ -2149,6 +2188,7 @@ const assets: AssetList = {
       name: 'Pica',
       display: 'pica',
       symbol: 'PICA',
+      coingecko_id: 'picasso',
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
       },
@@ -4093,6 +4133,45 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Gelotto blends gaming, DEFI, and fun Dapps in a unique Web3 ecosystem. Join us to become part of the house, earning from all Gelotto products. Our main goal? To bring the masses into Web3 with open, accessible, and enjoyable Dapps.',
+      type_asset: 'erc20',
+      address: '0xd73175f9eb15eee81745d367ae59309Ca2ceb5e2',
+      denom_units: [{
+          denom: 'ibc/262D63AEF61017AD67C33909E2A0B0BD97C5AF559143BA0BE085DED815B12104',
+          exponent: 0,
+          aliases: ['0xd73175f9eb15eee81745d367ae59309Ca2ceb5e2']
+        }, {
+          denom: 'glto',
+          exponent: 6
+        }],
+      base: 'ibc/262D63AEF61017AD67C33909E2A0B0BD97C5AF559143BA0BE085DED815B12104',
+      name: 'Gelotto',
+      display: 'glto',
+      symbol: 'GLTO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/glto.svg',
+          theme: {
+            primary_color_hex: '#501cad'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: '0xd73175f9eb15eee81745d367ae59309Ca2ceb5e2',
+            chain_name: 'ethereum'
+          },
+          chain: {
+            channel_id: 'channel-52'
+          }
+        }]
+    },
+    {
       type_asset: 'erc20',
       address: '0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f',
       denom_units: [{
@@ -4408,6 +4487,7 @@ const assets: AssetList = {
       name: 'Pica',
       display: 'pica',
       symbol: 'PICA',
+      coingecko_id: 'picasso',
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
       },

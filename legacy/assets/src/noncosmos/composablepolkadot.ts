@@ -16,6 +16,7 @@ const assets: AssetList = {
       name: 'Pica',
       display: 'pica',
       symbol: 'PICA',
+      coingecko_id: 'picasso',
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
       },
@@ -48,6 +49,7 @@ const assets: AssetList = {
       name: 'Pica',
       display: 'pica',
       symbol: 'PICA',
+      coingecko_id: 'picasso',
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
       },

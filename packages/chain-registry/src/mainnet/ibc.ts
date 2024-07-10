@@ -72,6 +72,7 @@ import * as _lambda from './lambda';
 import * as _likecoin from './likecoin';
 import * as _lumenx from './lumenx';
 import * as _lumnetwork from './lumnetwork';
+import * as _mande from './mande';
 import * as _mars from './mars';
 import * as _medasdigital from './medasdigital';
 import * as _meme from './meme';
@@ -209,6 +210,7 @@ const ibc: IBCInfo[] = [
   ..._likecoin.ibc,
   ..._lumenx.ibc,
   ..._lumnetwork.ibc,
+  ..._mande.ibc,
   ..._mars.ibc,
   ..._medasdigital.ibc,
   ..._meme.ibc,

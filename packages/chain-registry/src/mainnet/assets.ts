@@ -92,6 +92,7 @@ import * as _loop from './loop';
 import * as _loyal from './loyal';
 import * as _lumenx from './lumenx';
 import * as _lumnetwork from './lumnetwork';
+import * as _mande from './mande';
 import * as _mars from './mars';
 import * as _mayachain from './mayachain';
 import * as _medasdigital from './medasdigital';
@@ -268,6 +269,7 @@ const assets: AssetList[] = [
   _loyal.assets,
   _lumenx.assets,
   _lumnetwork.assets,
+  _mande.assets,
   _mars.assets,
   _mayachain.assets,
   _medasdigital.assets,

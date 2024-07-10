@@ -2295,7 +2295,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking token of Sei.',
+      description: 'Sei is a layer-1 blockchain optimized for trading, focusing on providing high throughput, low latency, and efficient execution for decentralized exchanges.',
       denom_units: [{
           denom: 'ibc/41646AADED0E33983922676F54BF2B8FD31DE06BB02C72949FD4F34081A41073',
           exponent: 0,
@@ -2990,7 +2990,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking token of Sei.',
+      description: 'Sei is a layer-1 blockchain optimized for trading, focusing on providing high throughput, low latency, and efficient execution for decentralized exchanges.',
       denom_units: [{
           denom: 'ibc/41646AADED0E33983922676F54BF2B8FD31DE06BB02C72949FD4F34081A41073',
           exponent: 0,
@@ -3741,16 +3741,6 @@ const assets: AssetList = {
       name: 'Astroport CW20 Token',
       display: 'astro.cw20',
       symbol: 'ASTRO.cw20',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
-        }],
-      socials: {
-        website: 'https://astroport.fi/',
-        twitter: 'https://twitter.com/astroport_fi'
-      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -3763,7 +3753,27 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-5'
           }
-        }]
+        }],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
+        }, {
+          image_sync: {
+            chain_name: 'neutron',
+            base_denom: 'factory/neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07/astro'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.svg',
+          theme: {
+            primary_color_hex: '#4056e9'
+          }
+        }],
+      socials: {
+        website: 'https://astroport.fi/',
+        twitter: 'https://twitter.com/astroport_fi'
+      }
     },
     {
       description: 'Dinheiros is the reserve currency of dioalma.protocol, an undivisible and rare token.',
@@ -5168,16 +5178,6 @@ const assets: AssetList = {
       name: 'Astroport CW20 Token',
       display: 'astro.cw20',
       symbol: 'ASTRO.cw20',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
-        }],
-      socials: {
-        website: 'https://astroport.fi/',
-        twitter: 'https://twitter.com/astroport_fi'
-      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -5190,7 +5190,27 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-5'
           }
-        }]
+        }],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
+        }, {
+          image_sync: {
+            chain_name: 'neutron',
+            base_denom: 'factory/neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07/astro'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.svg',
+          theme: {
+            primary_color_hex: '#4056e9'
+          }
+        }],
+      socials: {
+        website: 'https://astroport.fi/',
+        twitter: 'https://twitter.com/astroport_fi'
+      }
     },
     {
       description: 'Dinheiros is the reserve currency of dioalma.protocol, an undivisible and rare token.',

@@ -34,14 +34,14 @@ const info: Chain = {
   },
   apis: {
     rpc: [{
-        address: 'rpc.constantine.archway.io',
+        address: 'https://rpc.constantine.archway.io',
         provider: 'Archway'
       }, {
         address: 'https://archway-testnet-rpc.polkachu.com',
         provider: 'Polkachu'
       }],
     rest: [{
-        address: 'https://api.constantine.archway.tech',
+        address: 'https://api.constantine.archway.io',
         provider: 'Archway'
       }]
   },

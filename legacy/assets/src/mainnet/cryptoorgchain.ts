@@ -732,7 +732,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'DVPN is the native token of the Sentinel Hub.',
+      description: 'Sentinel is a decentralized VPN (dVPN) network that provides private and secure internet access by leveraging blockchain technology.',
       denom_units: [{
           denom: 'ibc/EA3EE13F2D2A4085922BE6AF07F2DC7009A80D9461A37BB4C4F76B2A5817D23A',
           exponent: 0,
@@ -1263,7 +1263,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'DVPN is the native token of the Sentinel Hub.',
+      description: 'Sentinel is a decentralized VPN (dVPN) network that provides private and secure internet access by leveraging blockchain technology.',
       denom_units: [{
           denom: 'ibc/EA3EE13F2D2A4085922BE6AF07F2DC7009A80D9461A37BB4C4F76B2A5817D23A',
           exponent: 0,
