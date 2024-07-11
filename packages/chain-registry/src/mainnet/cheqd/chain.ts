@@ -159,9 +159,9 @@ const info: Chain = {
   explorers: [
     {
       kind: 'bigdipper',
-      url: 'https://bigdipper.live/cheqd',
-      tx_page: 'https://bigdipper.live/cheqd/transactions/${txHash}',
-      account_page: 'https://bigdipper.live/cheqd/accounts/${accountAddress}'
+      url: 'https://explorer.cheqd.io',
+      tx_page: 'https://explorer.cheqd.io/transactions/${txHash}',
+      account_page: 'https://explorer.cheqd.io/accounts/${accountAddress}'
     },
     {
       kind: 'ping.pub',

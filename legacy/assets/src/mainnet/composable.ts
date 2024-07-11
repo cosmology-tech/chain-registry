@@ -2561,6 +2561,54 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Pepe Bruce Jenner',
+      type_asset: 'erc20',
+      address: 'ANu4Wuq86WzRU8tykszQUJ66eQzFNfkwap2HcQ5UaFaU',
+      denom_units: [{
+          denom: 'ibc/42EC3E55A9B8027537550D9D029843B4A48BEFAEA21D52282EE0449A74EDBE2A',
+          exponent: 0,
+          aliases: ['ANu4Wuq86WzRU8tykszQUJ66eQzFNfkwap2HcQ5UaFaU']
+        }, {
+          denom: 'pbj',
+          exponent: 5
+        }],
+      base: 'ibc/42EC3E55A9B8027537550D9D029843B4A48BEFAEA21D52282EE0449A74EDBE2A',
+      name: 'Pepe Bruce Jenner',
+      display: 'pbj',
+      symbol: 'PBJ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/pbj.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/pbj.png',
+          theme: {
+            primary_color_hex: '#488000',
+            background_color_hex: '#ee0000'
+          }
+        }],
+      socials: {
+        website: 'https://sandwichswap.io/',
+        twitter: 'https://twitter.com/pepebjenner_sol'
+      },
+      keywords: [
+        'meme',
+        'pump.fun',
+        'pumpdotfun',
+        'pepe'
+      ],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'ANu4Wuq86WzRU8tykszQUJ66eQzFNfkwap2HcQ5UaFaU',
+            chain_name: 'solana'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }]
+    },
+    {
       description: 'Stargaze is a decentralized blockchain platform designed specifically for non-fungible tokens (NFTs), enabling creators to mint, trade, and interact with NFTs in a fully decentralized environment.',
       denom_units: [{
           denom: 'ibc/7078D8FA8BCB50A1E7855458F1E9898A3FDA0093B703DA3B3108DD35ED99E048',
@@ -4769,6 +4817,54 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-1',
             base_denom: 'ATeTQcUkWGs7AZ15mCiFUWCW9EUL7KpDZEHCN1Y8pump',
+            chain_name: 'solana'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }]
+    },
+    {
+      description: 'Pepe Bruce Jenner',
+      type_asset: 'erc20',
+      address: 'ANu4Wuq86WzRU8tykszQUJ66eQzFNfkwap2HcQ5UaFaU',
+      denom_units: [{
+          denom: 'ibc/42EC3E55A9B8027537550D9D029843B4A48BEFAEA21D52282EE0449A74EDBE2A',
+          exponent: 0,
+          aliases: ['ANu4Wuq86WzRU8tykszQUJ66eQzFNfkwap2HcQ5UaFaU']
+        }, {
+          denom: 'pbj',
+          exponent: 5
+        }],
+      base: 'ibc/42EC3E55A9B8027537550D9D029843B4A48BEFAEA21D52282EE0449A74EDBE2A',
+      name: 'Pepe Bruce Jenner',
+      display: 'pbj',
+      symbol: 'PBJ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/pbj.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/pbj.png',
+          theme: {
+            primary_color_hex: '#488000',
+            background_color_hex: '#ee0000'
+          }
+        }],
+      socials: {
+        website: 'https://sandwichswap.io/',
+        twitter: 'https://twitter.com/pepebjenner_sol'
+      },
+      keywords: [
+        'meme',
+        'pump.fun',
+        'pumpdotfun',
+        'pepe'
+      ],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'ANu4Wuq86WzRU8tykszQUJ66eQzFNfkwap2HcQ5UaFaU',
             chain_name: 'solana'
           },
           chain: {

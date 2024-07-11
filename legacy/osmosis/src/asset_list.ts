@@ -4200,6 +4200,44 @@ const asset_list: AssetList = {
         }]
     },
     {
+      description: 'The native token of Neutaro',
+      denom_units: [{
+          denom: 'ibc/DAED51CBD967A3BE0C467687970AFD97B202AFE4A1718B36936F49178AFE0133',
+          exponent: 0,
+          aliases: ['uneutaro']
+        }, {
+          denom: 'neutaro',
+          exponent: 6
+        }],
+      base: 'ibc/DAED51CBD967A3BE0C467687970AFD97B202AFE4A1718B36936F49178AFE0133',
+      name: 'Neutaro',
+      display: 'neutaro',
+      symbol: 'NTMPI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.svg'
+      },
+      coingecko_id: 'neutaro',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.svg',
+          theme: {
+            primary_color_hex: '#cbfb06'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'uneutaro',
+            chain_name: 'neutaro'
+          },
+          chain: {
+            channel_id: 'channel-79092'
+          }
+        }]
+    },
+    {
       description: 'Neutron is a smart contract blockchain within the Cosmos ecosystem, leveraging the Cosmos Hub\'s security to provide cross-chain DeFi applications.',
       denom_units: [{
           denom: 'ibc/126DA09104B71B164883842B769C0E9EC1486C0887D27A9999E395C2C8FB5682',
@@ -9271,6 +9309,44 @@ const asset_list: AssetList = {
         }]
     },
     {
+      description: 'The native token of Neutaro',
+      denom_units: [{
+          denom: 'ibc/DAED51CBD967A3BE0C467687970AFD97B202AFE4A1718B36936F49178AFE0133',
+          exponent: 0,
+          aliases: ['uneutaro']
+        }, {
+          denom: 'neutaro',
+          exponent: 6
+        }],
+      base: 'ibc/DAED51CBD967A3BE0C467687970AFD97B202AFE4A1718B36936F49178AFE0133',
+      name: 'Neutaro',
+      display: 'neutaro',
+      symbol: 'NTMPI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.svg'
+      },
+      coingecko_id: 'neutaro',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.svg',
+          theme: {
+            primary_color_hex: '#cbfb06'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'uneutaro',
+            chain_name: 'neutaro'
+          },
+          chain: {
+            channel_id: 'channel-79092'
+          }
+        }]
+    },
+    {
       description: 'Neutron is a smart contract blockchain within the Cosmos ecosystem, leveraging the Cosmos Hub\'s security to provide cross-chain DeFi applications.',
       denom_units: [{
           denom: 'ibc/126DA09104B71B164883842B769C0E9EC1486C0887D27A9999E395C2C8FB5682',
@@ -11210,7 +11286,7 @@ const asset_list: AssetList = {
         }],
       socials: {
         website: 'https://www.sentinel.co/',
-        twitter: 'https://twitter.com/SentinelVPN'
+        twitter: 'https://x.com/SentinelDVPN'
       },
       traces: [{
           type: 'ibc',
@@ -14076,7 +14152,7 @@ const asset_list: AssetList = {
         }],
       socials: {
         website: 'https://www.sentinel.co/',
-        twitter: 'https://twitter.com/SentinelVPN'
+        twitter: 'https://x.com/SentinelDVPN'
       },
       traces: [{
           type: 'ibc',

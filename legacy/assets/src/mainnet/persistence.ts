@@ -3117,7 +3117,7 @@ const assets: AssetList = {
         }],
       socials: {
         website: 'https://www.sentinel.co/',
-        twitter: 'https://twitter.com/SentinelVPN'
+        twitter: 'https://x.com/SentinelDVPN'
       },
       traces: [{
           type: 'ibc',
@@ -3524,7 +3524,7 @@ const assets: AssetList = {
         }],
       socials: {
         website: 'https://www.sentinel.co/',
-        twitter: 'https://twitter.com/SentinelVPN'
+        twitter: 'https://x.com/SentinelDVPN'
       },
       traces: [{
           type: 'ibc',

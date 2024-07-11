@@ -78,6 +78,7 @@ import * as _medasdigital from './medasdigital';
 import * as _meme from './meme';
 import * as _microtick from './microtick';
 import * as _migaloo from './migaloo';
+import * as _neutaro from './neutaro';
 import * as _neutron from './neutron';
 import * as _nibiru from './nibiru';
 import * as _nim from './nim';
@@ -216,6 +217,7 @@ const ibc: IBCInfo[] = [
   ..._meme.ibc,
   ..._microtick.ibc,
   ..._migaloo.ibc,
+  ..._neutaro.ibc,
   ..._neutron.ibc,
   ..._nibiru.ibc,
   ..._nim.ibc,

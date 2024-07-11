@@ -76,6 +76,7 @@ export * as medasdigital from './medasdigital';
 export * as meme from './meme';
 export * as microtick from './microtick';
 export * as migaloo from './migaloo';
+export * as neutaro from './neutaro';
 export * as neutron from './neutron';
 export * as nibiru from './nibiru';
 export * as nim from './nim';

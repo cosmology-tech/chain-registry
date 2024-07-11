@@ -1,11 +1,11 @@
 import { AssetList } from '@chain-registry/types';
 const assets: AssetList = {
-  chain_name: 'medasdigital',
+  chain_name: 'neutaro',
   assets: [
     {
       description: 'The native token of Osmosis',
       denom_units: [{
-          denom: 'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518',
+          denom: 'ibc/05AC4BBA78C5951339A47DD1BC1E7FC922A9311DF81C85745B1C162F516FF2F1',
           exponent: 0,
           aliases: ['uosmo']
         }, {
@@ -13,7 +13,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518',
+      base: 'ibc/05AC4BBA78C5951339A47DD1BC1E7FC922A9311DF81C85745B1C162F516FF2F1',
       name: 'Osmosis',
       display: 'osmo',
       symbol: 'OSMO',
@@ -37,19 +37,19 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-519',
+            channel_id: 'channel-79092',
             base_denom: 'uosmo',
             chain_name: 'osmosis'
           },
           chain: {
-            channel_id: 'channel-0'
+            channel_id: 'channel-4'
           }
         }]
     },
     {
       description: 'ION is the second native token of Osmosis.',
       denom_units: [{
-          denom: 'ibc/F7E92EE59B5428793F3EF5C1A4CB2494F61A9D0C9A69469D02390714A1372E16',
+          denom: 'ibc/B1468D7420773B5D59561CC0E91D6A5F75415E216DCF2966D657E23B97322B36',
           exponent: 0,
           aliases: ['uion']
         }, {
@@ -57,7 +57,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/F7E92EE59B5428793F3EF5C1A4CB2494F61A9D0C9A69469D02390714A1372E16',
+      base: 'ibc/B1468D7420773B5D59561CC0E91D6A5F75415E216DCF2966D657E23B97322B36',
       name: 'Ion DAO',
       display: 'ion',
       symbol: 'ION',
@@ -81,61 +81,19 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-519',
+            channel_id: 'channel-79092',
             base_denom: 'uion',
             chain_name: 'osmosis'
           },
           chain: {
-            channel_id: 'channel-0'
-          }
-        }]
-    },
-    {
-      description: 'Sentinel is a decentralized VPN (dVPN) network that provides private and secure internet access by leveraging blockchain technology.',
-      denom_units: [{
-          denom: 'ibc/4C49BE4C3CE3E5FF53784FFF47CAF34D78925B23F3C60416A7A2A0D0A1D7135B',
-          exponent: 0,
-          aliases: ['udvpn']
-        }, {
-          denom: 'dvpn',
-          exponent: 6
-        }],
-      base: 'ibc/4C49BE4C3CE3E5FF53784FFF47CAF34D78925B23F3C60416A7A2A0D0A1D7135B',
-      name: 'Sentinel',
-      display: 'dvpn',
-      symbol: 'DVPN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg'
-      },
-      coingecko_id: 'sentinel',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg',
-          theme: {
-            primary_color_hex: '#10a7ef'
-          }
-        }],
-      socials: {
-        website: 'https://www.sentinel.co/',
-        twitter: 'https://x.com/SentinelDVPN'
-      },
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-60',
-            base_denom: 'udvpn',
-            chain_name: 'sentinel'
-          },
-          chain: {
-            channel_id: 'channel-0'
+            channel_id: 'channel-4'
           }
         }]
     },
     {
       description: 'The native token of Osmosis',
       denom_units: [{
-          denom: 'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518',
+          denom: 'ibc/05AC4BBA78C5951339A47DD1BC1E7FC922A9311DF81C85745B1C162F516FF2F1',
           exponent: 0,
           aliases: ['uosmo']
         }, {
@@ -143,7 +101,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518',
+      base: 'ibc/05AC4BBA78C5951339A47DD1BC1E7FC922A9311DF81C85745B1C162F516FF2F1',
       name: 'Osmosis',
       display: 'osmo',
       symbol: 'OSMO',
@@ -167,19 +125,19 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-519',
+            channel_id: 'channel-79092',
             base_denom: 'uosmo',
             chain_name: 'osmosis'
           },
           chain: {
-            channel_id: 'channel-0'
+            channel_id: 'channel-4'
           }
         }]
     },
     {
       description: 'ION is the second native token of Osmosis.',
       denom_units: [{
-          denom: 'ibc/F7E92EE59B5428793F3EF5C1A4CB2494F61A9D0C9A69469D02390714A1372E16',
+          denom: 'ibc/B1468D7420773B5D59561CC0E91D6A5F75415E216DCF2966D657E23B97322B36',
           exponent: 0,
           aliases: ['uion']
         }, {
@@ -187,7 +145,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/F7E92EE59B5428793F3EF5C1A4CB2494F61A9D0C9A69469D02390714A1372E16',
+      base: 'ibc/B1468D7420773B5D59561CC0E91D6A5F75415E216DCF2966D657E23B97322B36',
       name: 'Ion DAO',
       display: 'ion',
       symbol: 'ION',
@@ -211,54 +169,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-519',
+            channel_id: 'channel-79092',
             base_denom: 'uion',
             chain_name: 'osmosis'
           },
           chain: {
-            channel_id: 'channel-0'
-          }
-        }]
-    },
-    {
-      description: 'Sentinel is a decentralized VPN (dVPN) network that provides private and secure internet access by leveraging blockchain technology.',
-      denom_units: [{
-          denom: 'ibc/4C49BE4C3CE3E5FF53784FFF47CAF34D78925B23F3C60416A7A2A0D0A1D7135B',
-          exponent: 0,
-          aliases: ['udvpn']
-        }, {
-          denom: 'dvpn',
-          exponent: 6
-        }],
-      base: 'ibc/4C49BE4C3CE3E5FF53784FFF47CAF34D78925B23F3C60416A7A2A0D0A1D7135B',
-      name: 'Sentinel',
-      display: 'dvpn',
-      symbol: 'DVPN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg'
-      },
-      coingecko_id: 'sentinel',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg',
-          theme: {
-            primary_color_hex: '#10a7ef'
-          }
-        }],
-      socials: {
-        website: 'https://www.sentinel.co/',
-        twitter: 'https://x.com/SentinelDVPN'
-      },
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-60',
-            base_denom: 'udvpn',
-            chain_name: 'sentinel'
-          },
-          chain: {
-            channel_id: 'channel-0'
+            channel_id: 'channel-4'
           }
         }]
     }
