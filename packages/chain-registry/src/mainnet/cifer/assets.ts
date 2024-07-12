@@ -3,7 +3,7 @@ const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'cifer',
   assets: [{
-      description: 'Decentralized Machine Learning',
+      description: 'Cifer Blockchain Network Built for Decentralized Machine Learning.',
       denom_units: [{
           denom: 'ucif',
           exponent: 0

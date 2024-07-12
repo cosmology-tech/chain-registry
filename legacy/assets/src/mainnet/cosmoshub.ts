@@ -627,7 +627,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Decentralized Machine Learning',
+      description: 'Cifer Blockchain Network Built for Decentralized Machine Learning.',
       denom_units: [{
           denom: 'ibc/C7DE16F5065C5568C2A16C241069D76DA93F056172A40391EB682444AF40F048',
           exponent: 0,
@@ -1342,7 +1342,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Decentralized Machine Learning',
+      description: 'Cifer Blockchain Network Built for Decentralized Machine Learning.',
       denom_units: [{
           denom: 'ibc/C7DE16F5065C5568C2A16C241069D76DA93F056172A40391EB682444AF40F048',
           exponent: 0,
@@ -1872,7 +1872,19 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.svg',
+          theme: {
+            primary_color_hex: '#00e33a',
+            background_color_hex: '#00e33a',
+            circle: true
+          }
+        }, {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.png',
+          theme: {
+            primary_color_hex: '#00e33a',
+            background_color_hex: '#00e33a',
+            circle: false
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -2934,7 +2946,9 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg',
           theme: {
-            primary_color_hex: '#040404'
+            primary_color_hex: '#040404',
+            background_color_hex: '#000000',
+            circle: true
           }
         }],
       socials: {
@@ -4748,7 +4762,19 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.svg',
+          theme: {
+            primary_color_hex: '#00e33a',
+            background_color_hex: '#00e33a',
+            circle: true
+          }
+        }, {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.png',
+          theme: {
+            primary_color_hex: '#00e33a',
+            background_color_hex: '#00e33a',
+            circle: false
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -5810,7 +5836,9 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg',
           theme: {
-            primary_color_hex: '#040404'
+            primary_color_hex: '#040404',
+            background_color_hex: '#000000',
+            circle: true
           }
         }],
       socials: {

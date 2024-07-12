@@ -932,7 +932,19 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.svg',
+          theme: {
+            primary_color_hex: '#00e33a',
+            background_color_hex: '#00e33a',
+            circle: true
+          }
+        }, {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.png',
+          theme: {
+            primary_color_hex: '#00e33a',
+            background_color_hex: '#00e33a',
+            circle: false
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -1722,7 +1734,9 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg',
           theme: {
-            primary_color_hex: '#040404'
+            primary_color_hex: '#040404',
+            background_color_hex: '#000000',
+            circle: true
           }
         }],
       socials: {
@@ -3060,7 +3074,19 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.svg',
+          theme: {
+            primary_color_hex: '#00e33a',
+            background_color_hex: '#00e33a',
+            circle: true
+          }
+        }, {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.png',
+          theme: {
+            primary_color_hex: '#00e33a',
+            background_color_hex: '#00e33a',
+            circle: false
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -3850,7 +3876,9 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg',
           theme: {
-            primary_color_hex: '#040404'
+            primary_color_hex: '#040404',
+            background_color_hex: '#000000',
+            circle: true
           }
         }],
       socials: {

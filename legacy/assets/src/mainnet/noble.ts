@@ -1162,7 +1162,9 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg',
           theme: {
-            primary_color_hex: '#040404'
+            primary_color_hex: '#040404',
+            background_color_hex: '#000000',
+            circle: true
           }
         }],
       socials: {
@@ -2557,7 +2559,9 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg',
           theme: {
-            primary_color_hex: '#040404'
+            primary_color_hex: '#040404',
+            background_color_hex: '#000000',
+            circle: true
           }
         }],
       socials: {
@@ -3357,14 +3361,14 @@ const assets: AssetList = {
     {
       description: 'The native EVM and Wasm, governance and staking token of the Shido Chain',
       denom_units: [{
-          denom: 'ibc/C56696E0EA0481CE109E2DD25BDD27F4020D748C5A09D82D9D70F167D23224FA',
+          denom: 'ibc/7A3DE0BD9545098B328261DFF34EFEBD6CAE2A7181D5116737A922BD43BAB8D1',
           exponent: 0,
           aliases: ['shido']
         }, {
           denom: 'SHIDO',
           exponent: 18
         }],
-      base: 'ibc/C56696E0EA0481CE109E2DD25BDD27F4020D748C5A09D82D9D70F167D23224FA',
+      base: 'ibc/7A3DE0BD9545098B328261DFF34EFEBD6CAE2A7181D5116737A922BD43BAB8D1',
       name: 'Shido',
       display: 'SHIDO',
       symbol: 'SHIDO',
@@ -3387,12 +3391,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4',
+            channel_id: 'channel-5',
             base_denom: 'shido',
             chain_name: 'shido'
           },
           chain: {
-            channel_id: 'channel-84'
+            channel_id: 'channel-87'
           }
         }]
     },
@@ -4121,14 +4125,14 @@ const assets: AssetList = {
     {
       description: 'The native EVM and Wasm, governance and staking token of the Shido Chain',
       denom_units: [{
-          denom: 'ibc/C56696E0EA0481CE109E2DD25BDD27F4020D748C5A09D82D9D70F167D23224FA',
+          denom: 'ibc/7A3DE0BD9545098B328261DFF34EFEBD6CAE2A7181D5116737A922BD43BAB8D1',
           exponent: 0,
           aliases: ['shido']
         }, {
           denom: 'SHIDO',
           exponent: 18
         }],
-      base: 'ibc/C56696E0EA0481CE109E2DD25BDD27F4020D748C5A09D82D9D70F167D23224FA',
+      base: 'ibc/7A3DE0BD9545098B328261DFF34EFEBD6CAE2A7181D5116737A922BD43BAB8D1',
       name: 'Shido',
       display: 'SHIDO',
       symbol: 'SHIDO',
@@ -4151,12 +4155,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4',
+            channel_id: 'channel-5',
             base_denom: 'shido',
             chain_name: 'shido'
           },
           chain: {
-            channel_id: 'channel-84'
+            channel_id: 'channel-87'
           }
         }]
     },

@@ -1961,7 +1961,9 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg',
           theme: {
-            primary_color_hex: '#040404'
+            primary_color_hex: '#040404',
+            background_color_hex: '#000000',
+            circle: true
           }
         }],
       socials: {
@@ -3350,7 +3352,9 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg',
           theme: {
-            primary_color_hex: '#040404'
+            primary_color_hex: '#040404',
+            background_color_hex: '#000000',
+            circle: true
           }
         }],
       socials: {

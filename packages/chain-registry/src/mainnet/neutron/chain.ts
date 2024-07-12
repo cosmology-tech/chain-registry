@@ -58,9 +58,9 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'neutron-org/cosmos-sdk v0.47.10-neutron',
+    cosmos_sdk_version: 'neutron-org/cosmos-sdk v0.50.7-neutron',
     cosmwasm_enabled: true,
-    cosmwasm_version: 'neutron-org/wasmd v0.45.0'
+    cosmwasm_version: 'neutron-org/wasmd v0.51.0'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-black-logo.png',
@@ -204,10 +204,20 @@ const info: Chain = {
     }
   ],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-black-logo.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-black-logo.svg',
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-raw.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-raw.svg',
       theme: {
-        primary_color_hex: '#040404'
+        primary_color_hex: '#000000',
+        background_color_hex: '#00000000',
+        circle: false
+      }
+    }, {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg',
+      theme: {
+        primary_color_hex: '#040404',
+        background_color_hex: '#000000',
+        circle: true
       }
     }]
 };

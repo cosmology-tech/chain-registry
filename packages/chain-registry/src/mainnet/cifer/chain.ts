@@ -34,7 +34,7 @@ const info: Chain = {
   },
   apis: {
     rpc: [{
-        address: 'https://cif_node.cifer.ai/',
+        address: 'http://34.128.114.243:26657',
         provider: 'Cifer'
       }],
     rest: [{
@@ -42,7 +42,7 @@ const info: Chain = {
         provider: 'Cifer'
       }],
     grpc: [{
-        address: 'http://grpc.cifer.ai',
+        address: 'http://34.128.114.243:9090',
         provider: 'Cifer'
       }]
   },
