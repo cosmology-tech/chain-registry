@@ -2,7 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chain_name: 'blockxtestnet',
-  chain_id: 'blockx_190-1',
+  chain_id: 'blockx_19077-1',
   pretty_name: 'BlockX-Atlantis-Testnet',
   website: 'https://www.blockxnet.com/',
   status: 'live',

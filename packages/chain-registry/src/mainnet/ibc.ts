@@ -47,6 +47,7 @@ import * as _emoney from './emoney';
 import * as _empowerchain from './empowerchain';
 import * as _evmos from './evmos';
 import * as _fetchhub from './fetchhub';
+import * as _firmachain from './firmachain';
 import * as _furya from './furya';
 import * as _fxcore from './fxcore';
 import * as _galaxy from './galaxy';
@@ -186,6 +187,7 @@ const ibc: IBCInfo[] = [
   ..._empowerchain.ibc,
   ..._evmos.ibc,
   ..._fetchhub.ibc,
+  ..._firmachain.ibc,
   ..._furya.ibc,
   ..._fxcore.ibc,
   ..._galaxy.ibc,

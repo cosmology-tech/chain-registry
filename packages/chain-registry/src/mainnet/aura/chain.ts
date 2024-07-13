@@ -66,10 +66,6 @@ const info: Chain = {
         provider: 'KonsorTech'
       },
       {
-        address: 'https://aura-rpc.tienthuattoan.ventures',
-        provider: 'TienThuatToan'
-      },
-      {
         address: 'https://aura-rpc.lavenderfive.com',
         provider: 'Lavender.Five Nodes 🐝'
       },

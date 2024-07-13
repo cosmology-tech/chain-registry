@@ -2660,6 +2660,44 @@ const asset_list: AssetList = {
         }]
     },
     {
+      description: 'The native token of FirmaChain',
+      denom_units: [{
+          denom: 'ibc/E43ABCC7E80E99E4E6E1226AE5695DDE0F83CB5C257CD04D47C36B8B90C1C839',
+          exponent: 0,
+          aliases: ['ufct']
+        }, {
+          denom: 'fct',
+          exponent: 6
+        }],
+      base: 'ibc/E43ABCC7E80E99E4E6E1226AE5695DDE0F83CB5C257CD04D47C36B8B90C1C839',
+      name: 'FirmaChain',
+      display: 'fct',
+      symbol: 'FCT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.svg'
+      },
+      coingecko_id: 'firmachain',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.svg',
+          theme: {
+            primary_color_hex: '#1c1c1c'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'ufct',
+            chain_name: 'firmachain'
+          },
+          chain: {
+            channel_id: 'channel-79241'
+          }
+        }]
+    },
+    {
       description: 'The native token of Furya',
       denom_units: [{
           denom: 'ibc/E4C60B9F95BF54CC085A5E39F6057ABD4DF92793D330EB884A36530F7E6804DE',
@@ -7783,6 +7821,44 @@ const asset_list: AssetList = {
         }]
     },
     {
+      description: 'The native token of FirmaChain',
+      denom_units: [{
+          denom: 'ibc/E43ABCC7E80E99E4E6E1226AE5695DDE0F83CB5C257CD04D47C36B8B90C1C839',
+          exponent: 0,
+          aliases: ['ufct']
+        }, {
+          denom: 'fct',
+          exponent: 6
+        }],
+      base: 'ibc/E43ABCC7E80E99E4E6E1226AE5695DDE0F83CB5C257CD04D47C36B8B90C1C839',
+      name: 'FirmaChain',
+      display: 'fct',
+      symbol: 'FCT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.svg'
+      },
+      coingecko_id: 'firmachain',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.svg',
+          theme: {
+            primary_color_hex: '#1c1c1c'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'ufct',
+            chain_name: 'firmachain'
+          },
+          chain: {
+            channel_id: 'channel-79241'
+          }
+        }]
+    },
+    {
       description: 'The native token of Furya',
       denom_units: [{
           denom: 'ibc/E4C60B9F95BF54CC085A5E39F6057ABD4DF92793D330EB884A36530F7E6804DE',
@@ -11677,7 +11753,7 @@ const asset_list: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg',
           theme: {
-            primary_color_hex: '#b7dfbd'
+            primary_color_hex: '#db2777'
           }
         }],
       socials: {
@@ -14543,7 +14619,7 @@ const asset_list: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg',
           theme: {
-            primary_color_hex: '#b7dfbd'
+            primary_color_hex: '#db2777'
           }
         }],
       socials: {

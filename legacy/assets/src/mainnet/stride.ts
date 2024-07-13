@@ -1803,7 +1803,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg',
           theme: {
-            primary_color_hex: '#b7dfbd'
+            primary_color_hex: '#db2777'
           }
         }],
       socials: {
@@ -3623,7 +3623,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg',
           theme: {
-            primary_color_hex: '#b7dfbd'
+            primary_color_hex: '#db2777'
           }
         }],
       socials: {

@@ -55,10 +55,6 @@ const info: Chain = {
         provider: 'Stakeflow'
       },
       {
-        address: 'https://shentu-rpc.tienthuattoan.ventures',
-        provider: 'TienThuatToan'
-      },
-      {
         address: 'https://shentu-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },

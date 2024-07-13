@@ -45,6 +45,7 @@ export * as emoney from './emoney';
 export * as empowerchain from './empowerchain';
 export * as evmos from './evmos';
 export * as fetchhub from './fetchhub';
+export * as firmachain from './firmachain';
 export * as furya from './furya';
 export * as fxcore from './fxcore';
 export * as galaxy from './galaxy';

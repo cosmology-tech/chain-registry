@@ -61,8 +61,8 @@ const info: Chain = {
         provider: 'QuantNode'
       },
       {
-        address: 'https://umee-rpc.tienthuattoan.ventures',
-        provider: 'TienThuatToan'
+        address: 'https://umee-rpc.tienthuattoan.com',
+        provider: 'TTT 🇻🇳'
       },
       {
         address: 'https://rpc-umee-01.stakeflow.io',
