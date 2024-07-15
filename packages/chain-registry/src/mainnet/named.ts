@@ -17,6 +17,7 @@ export * as bandchain from './bandchain';
 export * as beezee from './beezee';
 export * as bitcanna from './bitcanna';
 export * as bitsong from './bitsong';
+export * as blockx from './blockx';
 export * as bluechip from './bluechip';
 export * as bluzelle from './bluzelle';
 export * as bostrom from './bostrom';

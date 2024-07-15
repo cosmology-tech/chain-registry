@@ -19,6 +19,7 @@ import * as _bandchain from './bandchain';
 import * as _beezee from './beezee';
 import * as _bitcanna from './bitcanna';
 import * as _bitsong from './bitsong';
+import * as _blockx from './blockx';
 import * as _bluechip from './bluechip';
 import * as _bluzelle from './bluzelle';
 import * as _bostrom from './bostrom';
@@ -198,6 +199,7 @@ const chains: Chain[] = [
   _beezee.chain,
   _bitcanna.chain,
   _bitsong.chain,
+  _blockx.chain,
   _bluechip.chain,
   _bluzelle.chain,
   _bostrom.chain,
