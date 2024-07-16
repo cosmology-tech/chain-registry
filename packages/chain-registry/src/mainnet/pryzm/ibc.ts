@@ -70,7 +70,8 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-0',
       connection_id: 'connection-0'
     },
-    channels: [{
+    channels: [
+      {
         chain_1: {
           channel_id: 'channel-859',
           port_id: 'transfer'
@@ -85,7 +86,56 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }]
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-863',
+          port_id: 'icahost'
+        },
+        chain_2: {
+          channel_id: 'channel-8',
+          port_id: 'icacontroller-reward-uatom'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-861',
+          port_id: 'icahost'
+        },
+        chain_2: {
+          channel_id: 'channel-9',
+          port_id: 'icacontroller-sweep-uatom'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-891',
+          port_id: 'icahost'
+        },
+        chain_2: {
+          channel_id: 'channel-20',
+          port_id: 'icacontroller-delegation-uatom'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -99,7 +149,8 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-1',
       connection_id: 'connection-1'
     },
-    channels: [{
+    channels: [
+      {
         chain_1: {
           channel_id: 'channel-284',
           port_id: 'transfer'
@@ -114,7 +165,56 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }]
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-285',
+          port_id: 'icahost'
+        },
+        chain_2: {
+          channel_id: 'channel-10',
+          port_id: 'icacontroller-delegation-inj'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-286',
+          port_id: 'icahost'
+        },
+        chain_2: {
+          channel_id: 'channel-11',
+          port_id: 'icacontroller-reward-inj'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-287',
+          port_id: 'icahost'
+        },
+        chain_2: {
+          channel_id: 'channel-12',
+          port_id: 'icacontroller-sweep-inj'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -186,7 +286,8 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-2',
       connection_id: 'connection-2'
     },
-    channels: [{
+    channels: [
+      {
         chain_1: {
           channel_id: 'channel-75755',
           port_id: 'transfer'
@@ -201,7 +302,56 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }]
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-76804',
+          port_id: 'icahost'
+        },
+        chain_2: {
+          channel_id: 'channel-15',
+          port_id: 'icacontroller-reward-uosmo'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-76805',
+          port_id: 'icahost'
+        },
+        chain_2: {
+          channel_id: 'channel-16',
+          port_id: 'icacontroller-sweep-uosmo'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-79080',
+          port_id: 'icahost'
+        },
+        chain_2: {
+          channel_id: 'channel-22',
+          port_id: 'icacontroller-delegation-uosmo'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
   },
   {
     $schema: '../ibc_data.schema.json',
@@ -215,7 +365,8 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-410',
       connection_id: 'connection-414'
     },
-    channels: [{
+    channels: [
+      {
         chain_1: {
           channel_id: 'channel-4',
           port_id: 'transfer'
@@ -230,7 +381,56 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }]
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-17',
+          port_id: 'icacontroller-delegation-uluna'
+        },
+        chain_2: {
+          channel_id: 'channel-478',
+          port_id: 'icahost'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-18',
+          port_id: 'icacontroller-reward-uluna'
+        },
+        chain_2: {
+          channel_id: 'channel-479',
+          port_id: 'icahost'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-19',
+          port_id: 'icacontroller-sweep-uluna'
+        },
+        chain_2: {
+          channel_id: 'channel-480',
+          port_id: 'icahost'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
   }
 ];
 export default info;

@@ -44,6 +44,10 @@ const info: Chain = {
       {
         address: 'https://sifchain-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://sifchain_mainnet_rpc.chain.whenmoonwhenlambo.money:443',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -66,6 +70,10 @@ const info: Chain = {
       {
         address: 'https://sifchain.api.m.stavr.tech',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://sifchain_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -100,6 +108,12 @@ const info: Chain = {
       url: 'https://explorer.stavr.tech/Sifchain',
       tx_page: 'https://explorer.stavr.tech/Sifchain/tx/${txHash}',
       account_page: 'https://explorer.stavr.tech/Sifchain/accounts/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/sifchain',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/sifchain/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/sifchain/account/${accountAddress}'
     }
   ],
   images: [{

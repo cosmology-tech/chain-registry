@@ -96,6 +96,10 @@ const info: Chain = {
       {
         address: 'https://rpc.nibiru.roomit.xyz',
         provider: 'Roomit'
+      },
+      {
+        address: 'https://nibiru_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -154,6 +158,10 @@ const info: Chain = {
       {
         address: 'https://api.nibiru.roomit.xyz',
         provider: 'Roomit'
+      },
+      {
+        address: 'https://nibiru_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -253,6 +261,12 @@ const info: Chain = {
       url: 'https://explorer.tendermint.roomit.xyz/nibiru-mainnet',
       tx_page: 'https://explorer.tendermint.roomit.xyz/nibiru-mainnet/tx/${txHash}',
       account_page: 'https://explorer.tendermint.roomit.xyz/nibiru-mainnet/accounts/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/nibiru',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/nibiru/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/nibiru/account/${accountAddress}'
     }
   ],
   images: [{

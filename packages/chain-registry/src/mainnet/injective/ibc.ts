@@ -585,7 +585,8 @@ const info: IBCInfo[] = [
       client_id: '07-tendermint-1',
       connection_id: 'connection-1'
     },
-    channels: [{
+    channels: [
+      {
         chain_1: {
           channel_id: 'channel-284',
           port_id: 'transfer'
@@ -600,7 +601,56 @@ const info: IBCInfo[] = [
           status: 'live',
           preferred: true
         }
-      }]
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-285',
+          port_id: 'icahost'
+        },
+        chain_2: {
+          channel_id: 'channel-10',
+          port_id: 'icacontroller-delegation-inj'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-286',
+          port_id: 'icahost'
+        },
+        chain_2: {
+          channel_id: 'channel-11',
+          port_id: 'icacontroller-reward-inj'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-287',
+          port_id: 'icahost'
+        },
+        chain_2: {
+          channel_id: 'channel-12',
+          port_id: 'icacontroller-sweep-inj'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
   },
   {
     $schema: '../ibc_data.schema.json',

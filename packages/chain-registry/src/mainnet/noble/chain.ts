@@ -36,7 +36,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'v0.45.16',
+    cosmos_sdk_version: 'noble-assets/cosmos-sdk v0.45.16-send-restrictions',
     cosmwasm_enabled: false
   },
   logo_URIs: {
