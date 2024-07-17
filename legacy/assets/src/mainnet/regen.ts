@@ -307,6 +307,10 @@ const assets: AssetList = {
             primary_color_hex: '#142c5c'
           }
         }],
+      socials: {
+        website: 'https://ondo.finance/usdy',
+        twitter: 'https://x.com/OndoFinance'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -795,6 +799,10 @@ const assets: AssetList = {
             primary_color_hex: '#142c5c'
           }
         }],
+      socials: {
+        website: 'https://ondo.finance/usdy',
+        twitter: 'https://x.com/OndoFinance'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {

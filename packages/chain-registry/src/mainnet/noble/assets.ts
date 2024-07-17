@@ -135,6 +135,7 @@ const info: AssetList = {
     },
     {
       description: 'Ondo US Dollar Yield',
+      extended_description: 'USDY is a tokenized note secured by short-term US Treasuries and bank demand deposits. USDY is accessible to non-US individual and institutional investors and is transferable onchain 40-50 days after purchase.',
       denom_units: [{
           denom: 'ausdy',
           exponent: 0,
@@ -157,7 +158,11 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#142c5c'
           }
-        }]
+        }],
+      socials: {
+        website: 'https://ondo.finance/usdy',
+        twitter: 'https://x.com/OndoFinance'
+      }
     }
   ]
 };

@@ -579,7 +579,10 @@ const info: AssetList = {
       },
       coingecko_id: 'usd-coin',
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          theme: {
+            circle: true
+          }
         }]
     },
     {
