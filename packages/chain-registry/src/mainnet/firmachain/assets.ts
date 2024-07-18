@@ -3,7 +3,7 @@ const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'firmachain',
   assets: [{
-      description: 'The native token of FirmaChain',
+      description: 'FIRMACHAIN adds a signing and verifying e-contract function to the blockchain. Unlocking new limits of electronic contracts with blockchain technology, FIRMACHAIN seeks to resolve all the social and legal issues (contracts, notarial, etc.) with written contracts through the use of electronic contracts based on FIRMACHAIN’s data blockchain.',
       denom_units: [{
           denom: 'ufct',
           exponent: 0
@@ -12,7 +12,7 @@ const info: AssetList = {
           exponent: 6
         }],
       base: 'ufct',
-      name: 'FirmaChain',
+      name: 'FIRMACHAIN',
       display: 'fct',
       symbol: 'FCT',
       logo_URIs: {

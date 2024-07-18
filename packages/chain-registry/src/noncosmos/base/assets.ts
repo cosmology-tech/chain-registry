@@ -4,6 +4,37 @@ const info: AssetList = {
   chain_name: 'base',
   assets: [
     {
+      description: 'Ether (ETH) is the native currency of Base.',
+      type_asset: 'evm-base',
+      denom_units: [{
+          denom: 'wei',
+          exponent: 0
+        }, {
+          denom: 'eth',
+          exponent: 18
+        }],
+      base: 'wei',
+      display: 'eth',
+      name: 'Ether',
+      symbol: 'ETH',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chain_name: 'ethereum',
+            base_denom: 'wei'
+          },
+          provider: 'Base Bridge'
+        }],
+      images: [{
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: 'wei'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png'
+        }]
+    },
+    {
       description: 'wETH is \'wrapped ETH\'',
       type_asset: 'erc20',
       denom_units: [{
@@ -19,12 +50,12 @@ const info: AssetList = {
       name: 'Wrapped Ether',
       symbol: 'WETH',
       traces: [{
-          type: 'bridge',
+          type: 'wrapped',
           counterparty: {
-            chain_name: 'ethereum',
-            base_denom: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+            chain_name: 'base',
+            base_denom: 'wei'
           },
-          provider: 'Base Bridge'
+          provider: 'Base'
         }],
       images: [{
           image_sync: {
@@ -32,21 +63,28 @@ const info: AssetList = {
             base_denom: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg'
+        }, {
+          image_sync: {
+            chain_name: 'base',
+            base_denom: 'wei'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png'
         }]
     },
     {
       description: 'USDC issued on Base.',
       type_asset: 'erc20',
-      address: '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 ',
+      address: '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913',
       denom_units: [{
-          denom: '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 ',
+          denom: '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913',
           exponent: 0,
           aliases: ['uusdc']
         }, {
           denom: 'usdc',
           exponent: 6
         }],
-      base: '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 ',
+      base: '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913',
       name: 'USDC',
       display: 'usdc',
       symbol: 'USDC',

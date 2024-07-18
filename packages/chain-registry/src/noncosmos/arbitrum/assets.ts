@@ -34,6 +34,37 @@ const info: AssetList = {
         }]
     },
     {
+      description: 'Ether (ETH) is the native currency of Arbitrum.',
+      type_asset: 'evm-base',
+      denom_units: [{
+          denom: 'wei',
+          exponent: 0
+        }, {
+          denom: 'eth',
+          exponent: 18
+        }],
+      base: 'wei',
+      display: 'eth',
+      name: 'Ether',
+      symbol: 'ETH',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chain_name: 'ethereum',
+            base_denom: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+          },
+          provider: 'Arbitrum Bridge'
+        }],
+      images: [{
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: 'wei'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png'
+        }]
+    },
+    {
       description: 'wETH is \'wrapped ETH\'',
       type_asset: 'erc20',
       denom_units: [{
@@ -49,12 +80,12 @@ const info: AssetList = {
       name: 'Wrapped Ether',
       symbol: 'WETH',
       traces: [{
-          type: 'bridge',
+          type: 'wrapped',
           counterparty: {
-            chain_name: 'ethereum',
-            base_denom: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+            chain_name: 'arbitrum',
+            base_denom: 'wei'
           },
-          provider: 'Arbitrum Bridge'
+          provider: 'Arbitrum'
         }],
       images: [{
           image_sync: {
@@ -62,6 +93,13 @@ const info: AssetList = {
             base_denom: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg'
+        }, {
+          image_sync: {
+            chain_name: 'arbitrum',
+            base_denom: 'wei'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png'
         }]
     },
     {
