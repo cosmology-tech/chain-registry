@@ -2599,6 +2599,48 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of SOURCE Chain',
+      denom_units: [{
+          denom: 'ibc/F6D0827F10AB04D63596542BFC84B454A90FAE386324325CFD59265F0E08B5EF',
+          exponent: 0,
+          aliases: ['usource']
+        }, {
+          denom: 'source',
+          exponent: 6
+        }],
+      base: 'ibc/F6D0827F10AB04D63596542BFC84B454A90FAE386324325CFD59265F0E08B5EF',
+      name: 'Source',
+      display: 'source',
+      symbol: 'SOURCE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.svg'
+      },
+      coingecko_id: 'source',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.svg',
+          theme: {
+            primary_color_hex: '#39a5fc'
+          }
+        }],
+      socials: {
+        website: 'https://www.sourceprotocol.io/',
+        twitter: 'https://twitter.com/sourceprotocol_'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'usource',
+            chain_name: 'source'
+          },
+          chain: {
+            channel_id: 'channel-160'
+          }
+        }]
+    },
+    {
       description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
       denom_units: [{
           denom: 'ibc/F42AC6E51C46D30F7F39ADCA1A38E29374745771F23AB3250444F09EBBB4A107',
@@ -4737,6 +4779,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-72'
+          }
+        }]
+    },
+    {
+      description: 'The native token of SOURCE Chain',
+      denom_units: [{
+          denom: 'ibc/F6D0827F10AB04D63596542BFC84B454A90FAE386324325CFD59265F0E08B5EF',
+          exponent: 0,
+          aliases: ['usource']
+        }, {
+          denom: 'source',
+          exponent: 6
+        }],
+      base: 'ibc/F6D0827F10AB04D63596542BFC84B454A90FAE386324325CFD59265F0E08B5EF',
+      name: 'Source',
+      display: 'source',
+      symbol: 'SOURCE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.svg'
+      },
+      coingecko_id: 'source',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.svg',
+          theme: {
+            primary_color_hex: '#39a5fc'
+          }
+        }],
+      socials: {
+        website: 'https://www.sourceprotocol.io/',
+        twitter: 'https://twitter.com/sourceprotocol_'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'usource',
+            chain_name: 'source'
+          },
+          chain: {
+            channel_id: 'channel-160'
           }
         }]
     },

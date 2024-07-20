@@ -5,7 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Stride Testnet',
-  chain_id: 'stride-testnet-1',
+  chain_id: 'stride-internal-1',
   bech32_prefix: 'stride',
   daemon_name: 'strided',
   node_home: '$HOME/.stride',
