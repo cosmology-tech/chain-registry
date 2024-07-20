@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/osmosis",
-  "version": "1.62.28",
+  "version": "1.62.29",
   "description": "Chain Registry info for Osmosis",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
@@ -30,7 +30,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@chain-registry/types": "^0.45.28"
+    "@chain-registry/types": "^0.45.29"
   },
   "keywords": [
     "chain-registry",
