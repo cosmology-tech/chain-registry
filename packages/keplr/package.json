@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/keplr",
-  "version": "1.68.34",
+  "version": "1.68.35",
   "description": "Chain Registry to Keplr",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@types/semver": "^7.5.8",
-    "chain-registry": "^1.63.34"
+    "chain-registry": "^1.63.35"
   },
   "dependencies": {
     "@chain-registry/types": "^0.45.29",
