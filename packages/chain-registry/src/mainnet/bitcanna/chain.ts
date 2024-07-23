@@ -142,6 +142,10 @@ const info: Chain = {
       {
         address: 'https://bitcanna.rpc.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️'
+      },
+      {
+        address: 'https://bitcanna_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -334,6 +338,10 @@ const info: Chain = {
       {
         address: 'https://bitcanna.api.nodeshub.online',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️'
+      },
+      {
+        address: 'https://bitcanna_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ]
   },
@@ -439,6 +447,12 @@ const info: Chain = {
       url: 'https://explorer.nodeshub.online/bitcanna/',
       tx_page: 'https://explorer.nodeshub.online/bitcanna/tx/${txHash}',
       account_page: 'https://explorer.nodeshub.online/bitcanna/accounts/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/bitcanna',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/bitcanna/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/bitcanna/account/${accountAddress}'
     }
   ],
   images: [{

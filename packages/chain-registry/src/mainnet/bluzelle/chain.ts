@@ -49,6 +49,10 @@ const info: Chain = {
       {
         address: 'https://c.client.sentry.net.bluzelle.com:26657',
         provider: 'Bluzelle'
+      },
+      {
+        address: 'https://bluzelle_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -67,6 +71,10 @@ const info: Chain = {
       {
         address: 'https://bluzelle-api.genznodes.dev/',
         provider: 'genznodes'
+      },
+      {
+        address: 'https://bluzelle_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -114,6 +122,12 @@ const info: Chain = {
       kind: 'Nodine.ID',
       url: 'https://explorer.co.id/bluzelle',
       tx_page: 'https://explorer.co.id/bluzelle/transaction/${txHash}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/bluzelle',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/bluzelle/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/bluzelle/account/${accountAddress}'
     }
   ],
   keywords: [

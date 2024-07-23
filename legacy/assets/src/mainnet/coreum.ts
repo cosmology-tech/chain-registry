@@ -839,6 +839,7 @@ const assets: AssetList = {
             primary_color_hex: '#142c5c'
           }
         }],
+      coingecko_id: 'ondo-us-dollar-yield',
       socials: {
         website: 'https://ondo.finance/usdy',
         twitter: 'https://x.com/OndoFinance'
@@ -1654,6 +1655,7 @@ const assets: AssetList = {
             primary_color_hex: '#142c5c'
           }
         }],
+      coingecko_id: 'ondo-us-dollar-yield',
       socials: {
         website: 'https://ondo.finance/usdy',
         twitter: 'https://x.com/OndoFinance'

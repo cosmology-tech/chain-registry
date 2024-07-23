@@ -68,7 +68,7 @@ const info: Chain = {
         provider: 'Stake Village'
       },
       {
-        address: 'https://composable-rpc.stakeandrelax.net',
+        address: 'https://picasso-rpc.stakeandrelax.net',
         provider: 'Stake&Relax 🦥'
       },
       {
@@ -122,7 +122,7 @@ const info: Chain = {
         provider: 'Stake Village'
       },
       {
-        address: 'https://composable-api.stakeandrelax.net',
+        address: 'https://picasso-api.stakeandrelax.net',
         provider: 'Stake&Relax 🦥'
       },
       {
@@ -184,7 +184,7 @@ const info: Chain = {
         provider: 'Stake Village'
       },
       {
-        address: 'composable-rpc.stakeandrelax.net:22290',
+        address: 'picasso-rpc.stakeandrelax.net:22290',
         provider: 'Stake&Relax 🦥'
       },
       {

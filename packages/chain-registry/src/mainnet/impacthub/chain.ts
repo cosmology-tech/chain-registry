@@ -62,6 +62,10 @@ const info: Chain = {
       {
         address: 'https://ixo-rpc.bluestake.net:443',
         provider: 'BlueStake 🚀'
+      },
+      {
+        address: 'https://impacthub_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -92,6 +96,10 @@ const info: Chain = {
       {
         address: 'https://ixo-api.bluestake.net',
         provider: 'BlueStake 🚀'
+      },
+      {
+        address: 'https://impacthub_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -143,6 +151,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/ixo',
       tx_page: 'https://www.mintscan.io/ixo/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/ixo/accounts/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/ixo',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/ixo/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/ixo/account/${accountAddress}'
     }
   ],
   images: [{

@@ -43,6 +43,10 @@ const info: Chain = {
       {
         address: 'https://rpc.mun.tcnetwork.io',
         provider: 'TC Network'
+      },
+      {
+        address: 'https://mun_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -57,6 +61,10 @@ const info: Chain = {
       {
         address: 'https://rest.mun.tcnetwork.io',
         provider: 'TC Network'
+      },
+      {
+        address: 'https://mun_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: []
@@ -83,6 +91,12 @@ const info: Chain = {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/mun',
       tx_page: 'https://explorer.tcnetwork.io/mun/transaction/${txHash}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/mun',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/mun/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/mun/account/${accountAddress}'
     }
   ],
   images: [{

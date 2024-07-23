@@ -17,6 +17,7 @@ const info: AssetList = {
       name: 'NIM Network',
       display: 'nim',
       symbol: 'NIM',
+      coingecko_id: 'nim-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nim/images/nim.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nim/images/nim.svg',

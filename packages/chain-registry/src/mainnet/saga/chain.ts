@@ -65,6 +65,10 @@ const info: Chain = {
       {
         address: 'https://saga-rpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'https://saga-rpc.stakeandrelax.net',
+        provider: 'Stake&Relax 🦥'
       }
     ],
     rest: [
@@ -95,6 +99,10 @@ const info: Chain = {
       {
         address: 'https://saga-api.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'https://saga-api.stakeandrelax.net',
+        provider: 'Stake&Relax 🦥'
       }
     ],
     grpc: [
@@ -121,6 +129,10 @@ const info: Chain = {
       {
         address: 'https://saga-grpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'http://saga-grpc.stakeandrelax.net:24990',
+        provider: 'Stake&Relax 🦥'
       }
     ]
   },
