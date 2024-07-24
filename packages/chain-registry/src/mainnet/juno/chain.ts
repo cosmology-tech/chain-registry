@@ -33,7 +33,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.11-0.20240417094812-f556fd956fb1',
+    cosmos_sdk_version: 'v0.47.12',
     cosmwasm_enabled: true,
     cosmwasm_version: 'v0.45.0'
   },

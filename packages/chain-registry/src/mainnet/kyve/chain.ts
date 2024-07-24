@@ -27,7 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.6-kyve-rc0'
+    cosmos_sdk_version: 'v0.50.7-kyve-rc0'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve.png',
