@@ -246,6 +246,48 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of BandChain',
+      denom_units: [{
+          denom: 'ibc/AC11D57A5FBC0DF322615027DB86FAA602283F1801ED71FDDAA26117C41256D7',
+          exponent: 0,
+          aliases: ['uband']
+        }, {
+          denom: 'band',
+          exponent: 6
+        }],
+      base: 'ibc/AC11D57A5FBC0DF322615027DB86FAA602283F1801ED71FDDAA26117C41256D7',
+      display: 'band',
+      name: 'Band Protocol',
+      symbol: 'BAND',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg'
+      },
+      coingecko_id: 'band-protocol',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg',
+          theme: {
+            primary_color_hex: '#4424e4'
+          }
+        }],
+      socials: {
+        website: 'https://www.bandprotocol.com/',
+        twitter: 'https://twitter.com/BandProtocol'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-161',
+            base_denom: 'uband',
+            chain_name: 'bandchain'
+          },
+          chain: {
+            channel_id: 'channel-258'
+          }
+        }]
+    },
+    {
       description: 'The native governance token of Carbon',
       denom_units: [{
           denom: 'ibc/5D9C9AD9C09F2D78F99DE11C7F7A86934A6034E7CA777B954A6FC16F31B0B015',
@@ -1558,6 +1600,43 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-53'
+          }
+        }]
+    },
+    {
+      description: 'The native token of PRYZM',
+      denom_units: [{
+          denom: 'ibc/1E0EFAC20BCF1D7B409655DC2D44B24F17FFA92A2A55905567D2A50AED22FCA2',
+          exponent: 0,
+          aliases: ['upryzm']
+        }, {
+          denom: 'pryzm',
+          exponent: 6
+        }],
+      base: 'ibc/1E0EFAC20BCF1D7B409655DC2D44B24F17FFA92A2A55905567D2A50AED22FCA2',
+      name: 'Pryzm',
+      display: 'pryzm',
+      symbol: 'PRYZM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg',
+          theme: {
+            primary_color_hex: '#c6ddf5'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-23',
+            base_denom: 'upryzm',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-257'
           }
         }]
     },
@@ -2066,6 +2145,48 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of BandChain',
+      denom_units: [{
+          denom: 'ibc/AC11D57A5FBC0DF322615027DB86FAA602283F1801ED71FDDAA26117C41256D7',
+          exponent: 0,
+          aliases: ['uband']
+        }, {
+          denom: 'band',
+          exponent: 6
+        }],
+      base: 'ibc/AC11D57A5FBC0DF322615027DB86FAA602283F1801ED71FDDAA26117C41256D7',
+      display: 'band',
+      name: 'Band Protocol',
+      symbol: 'BAND',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg'
+      },
+      coingecko_id: 'band-protocol',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg',
+          theme: {
+            primary_color_hex: '#4424e4'
+          }
+        }],
+      socials: {
+        website: 'https://www.bandprotocol.com/',
+        twitter: 'https://twitter.com/BandProtocol'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-161',
+            base_denom: 'uband',
+            chain_name: 'bandchain'
+          },
+          chain: {
+            channel_id: 'channel-258'
+          }
+        }]
+    },
+    {
       description: 'The native governance token of Carbon',
       denom_units: [{
           denom: 'ibc/5D9C9AD9C09F2D78F99DE11C7F7A86934A6034E7CA777B954A6FC16F31B0B015',
@@ -3378,6 +3499,43 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-53'
+          }
+        }]
+    },
+    {
+      description: 'The native token of PRYZM',
+      denom_units: [{
+          denom: 'ibc/1E0EFAC20BCF1D7B409655DC2D44B24F17FFA92A2A55905567D2A50AED22FCA2',
+          exponent: 0,
+          aliases: ['upryzm']
+        }, {
+          denom: 'pryzm',
+          exponent: 6
+        }],
+      base: 'ibc/1E0EFAC20BCF1D7B409655DC2D44B24F17FFA92A2A55905567D2A50AED22FCA2',
+      name: 'Pryzm',
+      display: 'pryzm',
+      symbol: 'PRYZM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg',
+          theme: {
+            primary_color_hex: '#c6ddf5'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-23',
+            base_denom: 'upryzm',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-257'
           }
         }]
     },

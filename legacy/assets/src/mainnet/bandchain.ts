@@ -141,6 +141,48 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
+      denom_units: [{
+          denom: 'ibc/D52A5D01857CBFA11D16DF3727B9541B53D4AC19CE42BF937D24AD93EE38FA4B',
+          exponent: 0,
+          aliases: ['ustrd']
+        }, {
+          denom: 'strd',
+          exponent: 6
+        }],
+      base: 'ibc/D52A5D01857CBFA11D16DF3727B9541B53D4AC19CE42BF937D24AD93EE38FA4B',
+      name: 'Stride',
+      display: 'strd',
+      symbol: 'STRD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+      },
+      coingecko_id: 'stride',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg',
+          theme: {
+            primary_color_hex: '#e4047c'
+          }
+        }],
+      socials: {
+        website: 'https://stride.zone/',
+        twitter: 'https://twitter.com/stride_zone'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-258',
+            base_denom: 'ustrd',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-161'
+          }
+        }]
+    },
+    {
       description: 'The native token of Coreum',
       denom_units: [{
           denom: 'ibc/B1C1F38CD3DD068952FE0A274450F02019BC0CA7852B65D13269C2CAAD371B99',
@@ -275,6 +317,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-83'
+          }
+        }]
+    },
+    {
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
+      denom_units: [{
+          denom: 'ibc/D52A5D01857CBFA11D16DF3727B9541B53D4AC19CE42BF937D24AD93EE38FA4B',
+          exponent: 0,
+          aliases: ['ustrd']
+        }, {
+          denom: 'strd',
+          exponent: 6
+        }],
+      base: 'ibc/D52A5D01857CBFA11D16DF3727B9541B53D4AC19CE42BF937D24AD93EE38FA4B',
+      name: 'Stride',
+      display: 'strd',
+      symbol: 'STRD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+      },
+      coingecko_id: 'stride',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg',
+          theme: {
+            primary_color_hex: '#e4047c'
+          }
+        }],
+      socials: {
+        website: 'https://stride.zone/',
+        twitter: 'https://twitter.com/stride_zone'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-258',
+            base_denom: 'ustrd',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-161'
           }
         }]
     }

@@ -129,6 +129,53 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'DYDX is a decentralized trading platform focused on derivatives and perpetual contracts, offering a secure and efficient trading experience without intermediaries.',
+      denom_units: [{
+          denom: 'ibc/F8CA5236869F819BC006EEF088E67889A26E4140339757878F0F4E229CDDA858',
+          exponent: 0,
+          aliases: ['adydx']
+        }, {
+          denom: 'dydx',
+          exponent: 18
+        }],
+      base: 'ibc/F8CA5236869F819BC006EEF088E67889A26E4140339757878F0F4E229CDDA858',
+      name: 'dYdX',
+      display: 'dydx',
+      symbol: 'DYDX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
+      },
+      coingecko_id: 'dydx-chain',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg',
+          theme: {
+            primary_color_hex: '#21212f'
+          }
+        }, {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx-circle.svg',
+          theme: {
+            circle: true
+          }
+        }],
+      socials: {
+        website: 'https://dydx.trade/',
+        twitter: 'https://twitter.com/dYdX'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-71',
+            base_denom: 'adydx',
+            chain_name: 'dydx'
+          },
+          chain: {
+            channel_id: 'channel-24'
+          }
+        }]
+    },
+    {
       description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/DE63D8AC34B752FB7D4CAA7594145EDE1C9FC256AC6D4043D0F12310EB8FC255',
@@ -880,6 +927,53 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'DYDX is a decentralized trading platform focused on derivatives and perpetual contracts, offering a secure and efficient trading experience without intermediaries.',
+      denom_units: [{
+          denom: 'ibc/F8CA5236869F819BC006EEF088E67889A26E4140339757878F0F4E229CDDA858',
+          exponent: 0,
+          aliases: ['adydx']
+        }, {
+          denom: 'dydx',
+          exponent: 18
+        }],
+      base: 'ibc/F8CA5236869F819BC006EEF088E67889A26E4140339757878F0F4E229CDDA858',
+      name: 'dYdX',
+      display: 'dydx',
+      symbol: 'DYDX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
+      },
+      coingecko_id: 'dydx-chain',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg',
+          theme: {
+            primary_color_hex: '#21212f'
+          }
+        }, {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx-circle.svg',
+          theme: {
+            circle: true
+          }
+        }],
+      socials: {
+        website: 'https://dydx.trade/',
+        twitter: 'https://twitter.com/dYdX'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-71',
+            base_denom: 'adydx',
+            chain_name: 'dydx'
+          },
+          chain: {
+            channel_id: 'channel-24'
+          }
+        }]
+    },
+    {
       description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/DE63D8AC34B752FB7D4CAA7594145EDE1C9FC256AC6D4043D0F12310EB8FC255',
@@ -1505,6 +1599,48 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
+      denom_units: [{
+          denom: 'ibc/61F66EF28D261575EDEC2BDE3F46714DA2BB5B70EBB7D4DD223E3688EFFD74CB',
+          exponent: 0,
+          aliases: ['ustrd']
+        }, {
+          denom: 'strd',
+          exponent: 6
+        }],
+      base: 'ibc/61F66EF28D261575EDEC2BDE3F46714DA2BB5B70EBB7D4DD223E3688EFFD74CB',
+      name: 'Stride',
+      display: 'strd',
+      symbol: 'STRD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+      },
+      coingecko_id: 'stride',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg',
+          theme: {
+            primary_color_hex: '#e4047c'
+          }
+        }],
+      socials: {
+        website: 'https://stride.zone/',
+        twitter: 'https://twitter.com/stride_zone'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-257',
+            base_denom: 'ustrd',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-23'
+          }
+        }]
+    },
+    {
       description: 'The native staking token of Terra.',
       denom_units: [{
           denom: 'ibc/B8AF5D92165F35AB31F3FC7C7B444B9D240760FA5D406C49D24862BD0284E395',
@@ -1543,6 +1679,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-4'
+          }
+        }]
+    },
+    {
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
+      denom_units: [{
+          denom: 'ibc/61F66EF28D261575EDEC2BDE3F46714DA2BB5B70EBB7D4DD223E3688EFFD74CB',
+          exponent: 0,
+          aliases: ['ustrd']
+        }, {
+          denom: 'strd',
+          exponent: 6
+        }],
+      base: 'ibc/61F66EF28D261575EDEC2BDE3F46714DA2BB5B70EBB7D4DD223E3688EFFD74CB',
+      name: 'Stride',
+      display: 'strd',
+      symbol: 'STRD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+      },
+      coingecko_id: 'stride',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg',
+          theme: {
+            primary_color_hex: '#e4047c'
+          }
+        }],
+      socials: {
+        website: 'https://stride.zone/',
+        twitter: 'https://twitter.com/stride_zone'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-257',
+            base_denom: 'ustrd',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-23'
           }
         }]
     },

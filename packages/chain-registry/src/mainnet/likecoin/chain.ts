@@ -95,12 +95,6 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'mintscan',
-      url: 'https://www.mintscan.io/likecoin',
-      tx_page: 'https://www.mintscan.io/likecoin/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/likecoin/accounts/${accountAddress}'
-    },
-    {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/likecoin',
       tx_page: 'https://ezstaking.app/likecoin/txs/${txHash}',
@@ -132,6 +126,7 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.svg'
   },
   keywords: [
+    'ebook',
     'depub',
     'publishing',
     'like',

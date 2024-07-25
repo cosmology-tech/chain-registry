@@ -32,6 +32,7 @@ export * as chimba from './chimba';
 export * as chronicnetwork from './chronicnetwork';
 export * as cifer from './cifer';
 export * as cifer1 from './cifer1';
+export * as cnhostables from './cnhostables';
 export * as comdex from './comdex';
 export * as commercionetwork from './commercionetwork';
 export * as composable from './composable';

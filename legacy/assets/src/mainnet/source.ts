@@ -45,6 +45,48 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native utility token of the KYVE network.',
+      denom_units: [{
+          denom: 'ibc/81DD1BA0AE960255C9BBB3557F9ADA47CBBA628796E462AAEC803F2943724B1F',
+          exponent: 0,
+          aliases: ['ukyve']
+        }, {
+          denom: 'kyve',
+          exponent: 6
+        }],
+      base: 'ibc/81DD1BA0AE960255C9BBB3557F9ADA47CBBA628796E462AAEC803F2943724B1F',
+      name: 'KYVE',
+      display: 'kyve',
+      symbol: 'KYVE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.svg'
+      },
+      coingecko_id: 'kyve-network',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.svg',
+          theme: {
+            primary_color_hex: '#335350'
+          }
+        }],
+      socials: {
+        website: 'https://www.kyve.network/',
+        twitter: 'https://twitter.com/KYVENetwork'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'ukyve',
+            chain_name: 'kyve'
+          },
+          chain: {
+            channel_id: 'channel-2'
+          }
+        }]
+    },
+    {
       description: 'The native token of Osmosis',
       denom_units: [{
           denom: 'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518',
@@ -252,6 +294,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-3'
+          }
+        }]
+    },
+    {
+      description: 'The native utility token of the KYVE network.',
+      denom_units: [{
+          denom: 'ibc/81DD1BA0AE960255C9BBB3557F9ADA47CBBA628796E462AAEC803F2943724B1F',
+          exponent: 0,
+          aliases: ['ukyve']
+        }, {
+          denom: 'kyve',
+          exponent: 6
+        }],
+      base: 'ibc/81DD1BA0AE960255C9BBB3557F9ADA47CBBA628796E462AAEC803F2943724B1F',
+      name: 'KYVE',
+      display: 'kyve',
+      symbol: 'KYVE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.svg'
+      },
+      coingecko_id: 'kyve-network',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.svg',
+          theme: {
+            primary_color_hex: '#335350'
+          }
+        }],
+      socials: {
+        website: 'https://www.kyve.network/',
+        twitter: 'https://twitter.com/KYVENetwork'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'ukyve',
+            chain_name: 'kyve'
+          },
+          chain: {
+            channel_id: 'channel-2'
           }
         }]
     },

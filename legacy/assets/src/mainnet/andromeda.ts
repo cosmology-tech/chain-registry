@@ -366,6 +366,48 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native utility token of the KYVE network.',
+      denom_units: [{
+          denom: 'ibc/1FFDAE788DE0ABC1E0F7E110C39CA58EE0700ED4185CFAC25911F17F2F6A0DEF',
+          exponent: 0,
+          aliases: ['ukyve']
+        }, {
+          denom: 'kyve',
+          exponent: 6
+        }],
+      base: 'ibc/1FFDAE788DE0ABC1E0F7E110C39CA58EE0700ED4185CFAC25911F17F2F6A0DEF',
+      name: 'KYVE',
+      display: 'kyve',
+      symbol: 'KYVE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.svg'
+      },
+      coingecko_id: 'kyve-network',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.svg',
+          theme: {
+            primary_color_hex: '#335350'
+          }
+        }],
+      socials: {
+        website: 'https://www.kyve.network/',
+        twitter: 'https://twitter.com/KYVENetwork'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'ukyve',
+            chain_name: 'kyve'
+          },
+          chain: {
+            channel_id: 'channel-14'
+          }
+        }]
+    },
+    {
       description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
       denom_units: [{
           denom: 'ibc/BCEFD8175B8C47D712FB639034128CB43776364B79E3251F073CB3A2A32582A0',
@@ -809,6 +851,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-5'
+          }
+        }]
+    },
+    {
+      description: 'The native utility token of the KYVE network.',
+      denom_units: [{
+          denom: 'ibc/1FFDAE788DE0ABC1E0F7E110C39CA58EE0700ED4185CFAC25911F17F2F6A0DEF',
+          exponent: 0,
+          aliases: ['ukyve']
+        }, {
+          denom: 'kyve',
+          exponent: 6
+        }],
+      base: 'ibc/1FFDAE788DE0ABC1E0F7E110C39CA58EE0700ED4185CFAC25911F17F2F6A0DEF',
+      name: 'KYVE',
+      display: 'kyve',
+      symbol: 'KYVE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.svg'
+      },
+      coingecko_id: 'kyve-network',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve-token.svg',
+          theme: {
+            primary_color_hex: '#335350'
+          }
+        }],
+      socials: {
+        website: 'https://www.kyve.network/',
+        twitter: 'https://twitter.com/KYVENetwork'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'ukyve',
+            chain_name: 'kyve'
+          },
+          chain: {
+            channel_id: 'channel-14'
           }
         }]
     },

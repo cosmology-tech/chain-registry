@@ -34,6 +34,7 @@ import * as _chimba from './chimba';
 import * as _chronicnetwork from './chronicnetwork';
 import * as _cifer from './cifer';
 import * as _cifer1 from './cifer1';
+import * as _cnhostables from './cnhostables';
 import * as _comdex from './comdex';
 import * as _commercionetwork from './commercionetwork';
 import * as _composable from './composable';
@@ -214,6 +215,7 @@ const chains: Chain[] = [
   _chronicnetwork.chain,
   _cifer.chain,
   _cifer1.chain,
+  _cnhostables.chain,
   _comdex.chain,
   _commercionetwork.chain,
   _composable.chain,

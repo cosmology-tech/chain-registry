@@ -37,7 +37,7 @@ const info: Chain = {
         provider: 'itrocket.net'
       },
       {
-        address: ' https://terp.rpc.nodex.one:443',
+        address: 'https://terp.rpc.nodex.one:443',
         provider: 'nodex.one'
       }
     ],
@@ -51,7 +51,7 @@ const info: Chain = {
         provider: 'itrocket.net'
       },
       {
-        address: ' https://terp.api.nodex.one:443',
+        address: 'https://terp.api.nodex.one:443',
         provider: 'nodex.one'
       },
       {
@@ -69,7 +69,7 @@ const info: Chain = {
         provider: 'itrocket.net'
       },
       {
-        address: ' https://terp.grpc.nodex.one:443',
+        address: 'https://terp.grpc.nodex.one:443',
         provider: 'nodex.one'
       }
     ]

@@ -730,6 +730,49 @@ const info: AssetList = {
         }, {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }]
+    },
+    {
+      description: 'The most degenerate NFT on Injective. Gravedigger collection for $bINJ. Giving power back to the community.',
+      denom_units: [{
+          denom: 'factory/inj1a6xdezq7a94qwamec6n6cnup02nvewvjtz6h6e/SYN',
+          exponent: 0
+        }, {
+          denom: 'SYN',
+          exponent: 6
+        }],
+      base: 'factory/inj1a6xdezq7a94qwamec6n6cnup02nvewvjtz6h6e/SYN',
+      name: 'Syndicate',
+      display: 'SYN',
+      symbol: 'SYN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/syn.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/syn.png',
+          theme: {
+            primary_color_hex: '#04a2fc'
+          }
+        }]
+    },
+    {
+      description: 'SYN burn Derivative; minted when SYN is burned via The Furnace',
+      denom_units: [{
+          denom: 'factory/inj1ej2f3lmpxj4djsmmuxvnfuvplrut7zmwrq7zj8/syn.ash',
+          exponent: 0
+        }, {
+          denom: 'ashSYN',
+          exponent: 6
+        }],
+      base: 'factory/inj1ej2f3lmpxj4djsmmuxvnfuvplrut7zmwrq7zj8/syn.ash',
+      name: 'ASH Syndicate',
+      display: 'ashSYN',
+      symbol: 'ashSYN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/syn.ash.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/syn.ash.png'
+        }]
     }
   ]
 };

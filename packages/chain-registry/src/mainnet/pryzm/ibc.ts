@@ -140,6 +140,35 @@ const info: IBCInfo[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain_1: {
+      chain_name: 'dydx',
+      client_id: '07-tendermint-29',
+      connection_id: 'connection-34'
+    },
+    chain_2: {
+      chain_name: 'pryzm',
+      client_id: '07-tendermint-9',
+      connection_id: 'connection-9'
+    },
+    channels: [{
+        chain_1: {
+          channel_id: 'channel-71',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-24',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
       chain_name: 'injective',
       client_id: '07-tendermint-267',
       connection_id: 'connection-268'
@@ -352,6 +381,35 @@ const info: IBCInfo[] = [
         }
       }
     ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'pryzm',
+      client_id: '07-tendermint-8',
+      connection_id: 'connection-8'
+    },
+    chain_2: {
+      chain_name: 'stride',
+      client_id: '07-tendermint-145',
+      connection_id: 'connection-145'
+    },
+    channels: [{
+        chain_1: {
+          channel_id: 'channel-23',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-257',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
   },
   {
     $schema: '../ibc_data.schema.json',

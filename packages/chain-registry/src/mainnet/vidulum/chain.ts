@@ -2,7 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'vidulum',
-  status: 'live',
+  status: 'killed',
   network_type: 'mainnet',
   website: 'https://vidulum.app/',
   pretty_name: 'Vidulum',

@@ -33,6 +33,14 @@ const info: Chain = {
   apis: {
     rpc: [
       {
+        address: 'https://source-testnet-rpc.itrocket.net/',
+        provider: 'ITRocket'
+      },
+      {
+        address: 'https://source-test.rpc.moonbridge.team/',
+        provider: 'MoonBridge'
+      },
+      {
         address: 'https://source-testnet-rpc.stake-town.com:443',
         provider: 'StakeTown'
       },
@@ -46,6 +54,14 @@ const info: Chain = {
       }
     ],
     rest: [
+      {
+        address: 'https://source-testnet-api.itrocket.net/',
+        provider: 'ITRocket'
+      },
+      {
+        address: 'https://source-test.api.moonbridge.team/',
+        provider: 'MoonBridge'
+      },
       {
         address: 'https://source-testnet-api.stake-town.com:443',
         provider: 'StakeTown'

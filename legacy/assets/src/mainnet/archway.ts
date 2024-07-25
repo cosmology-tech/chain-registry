@@ -1493,44 +1493,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Vidulum',
-      denom_units: [{
-          denom: 'ibc/1BCF1FCAFE3568E234787EDFDA12460BD8931B17FE6A729DCD60FAD845558DA1',
-          exponent: 0,
-          aliases: ['uvdl']
-        }, {
-          denom: 'vdl',
-          exponent: 6
-        }],
-      base: 'ibc/1BCF1FCAFE3568E234787EDFDA12460BD8931B17FE6A729DCD60FAD845558DA1',
-      name: 'Vidulum',
-      display: 'vdl',
-      symbol: 'VDL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
-      },
-      coingecko_id: 'vidulum',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg',
-          theme: {
-            primary_color_hex: '#3454bc'
-          }
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-24',
-            base_denom: 'uvdl',
-            chain_name: 'vidulum'
-          },
-          chain: {
-            channel_id: 'channel-110'
-          }
-        }]
-    },
-    {
       description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
       denom_units: [{
           denom: 'ibc/E21808AEBCB7E02F594897100186C126E3BC9A36B0974196AF116750A4573F06',
@@ -2701,44 +2663,6 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-4'
-          }
-        }]
-    },
-    {
-      description: 'The native token of Vidulum',
-      denom_units: [{
-          denom: 'ibc/1BCF1FCAFE3568E234787EDFDA12460BD8931B17FE6A729DCD60FAD845558DA1',
-          exponent: 0,
-          aliases: ['uvdl']
-        }, {
-          denom: 'vdl',
-          exponent: 6
-        }],
-      base: 'ibc/1BCF1FCAFE3568E234787EDFDA12460BD8931B17FE6A729DCD60FAD845558DA1',
-      name: 'Vidulum',
-      display: 'vdl',
-      symbol: 'VDL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
-      },
-      coingecko_id: 'vidulum',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg',
-          theme: {
-            primary_color_hex: '#3454bc'
-          }
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-24',
-            base_denom: 'uvdl',
-            chain_name: 'vidulum'
-          },
-          chain: {
-            channel_id: 'channel-110'
           }
         }]
     }

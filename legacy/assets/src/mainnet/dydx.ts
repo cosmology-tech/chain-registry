@@ -974,6 +974,43 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of PRYZM',
+      denom_units: [{
+          denom: 'ibc/8900C95B745A70E88CC18EC68176C89E3B67A83B01D53815EDA4A4E568276E5B',
+          exponent: 0,
+          aliases: ['upryzm']
+        }, {
+          denom: 'pryzm',
+          exponent: 6
+        }],
+      base: 'ibc/8900C95B745A70E88CC18EC68176C89E3B67A83B01D53815EDA4A4E568276E5B',
+      name: 'Pryzm',
+      display: 'pryzm',
+      symbol: 'PRYZM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg',
+          theme: {
+            primary_color_hex: '#c6ddf5'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-24',
+            base_denom: 'upryzm',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-71'
+          }
+        }]
+    },
+    {
       description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
       denom_units: [{
           denom: 'ibc/49D0858EB94005A4DB308330F2498999E03A23058AD08E27B0BD2917B2E0C7AC',
@@ -1889,6 +1926,43 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-4'
+          }
+        }]
+    },
+    {
+      description: 'The native token of PRYZM',
+      denom_units: [{
+          denom: 'ibc/8900C95B745A70E88CC18EC68176C89E3B67A83B01D53815EDA4A4E568276E5B',
+          exponent: 0,
+          aliases: ['upryzm']
+        }, {
+          denom: 'pryzm',
+          exponent: 6
+        }],
+      base: 'ibc/8900C95B745A70E88CC18EC68176C89E3B67A83B01D53815EDA4A4E568276E5B',
+      name: 'Pryzm',
+      display: 'pryzm',
+      symbol: 'PRYZM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm.svg',
+          theme: {
+            primary_color_hex: '#c6ddf5'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-24',
+            base_denom: 'upryzm',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-71'
           }
         }]
     },

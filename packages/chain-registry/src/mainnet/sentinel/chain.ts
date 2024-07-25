@@ -106,6 +106,10 @@ const info: Chain = {
       {
         address: 'https://rpc.noncompliant.network:443',
         provider: 'Noncompliant Network'
+      },
+      {
+        address: 'https://rpc-sentinel.chainvibes.com:443',
+        provider: 'chainvibes'
       }
     ],
     rest: [
@@ -172,6 +176,10 @@ const info: Chain = {
       {
         address: 'https://api.noncompliant.network:443',
         provider: 'Noncompliant Network'
+      },
+      {
+        address: 'https://api-sentinel.chainvibes.com:443',
+        provider: 'chainvibes'
       }
     ],
     grpc: [

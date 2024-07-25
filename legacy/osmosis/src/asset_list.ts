@@ -13125,44 +13125,6 @@ const asset_list: AssetList = {
         }]
     },
     {
-      description: 'The native token of Vidulum',
-      denom_units: [{
-          denom: 'ibc/E7B35499CFBEB0FF5778127ABA4FB2C4B79A6B8D3D831D4379C4048C238796BD',
-          exponent: 0,
-          aliases: ['uvdl']
-        }, {
-          denom: 'vdl',
-          exponent: 6
-        }],
-      base: 'ibc/E7B35499CFBEB0FF5778127ABA4FB2C4B79A6B8D3D831D4379C4048C238796BD',
-      name: 'Vidulum',
-      display: 'vdl',
-      symbol: 'VDL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
-      },
-      coingecko_id: 'vidulum',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg',
-          theme: {
-            primary_color_hex: '#3454bc'
-          }
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'uvdl',
-            chain_name: 'vidulum'
-          },
-          chain: {
-            channel_id: 'channel-124'
-          }
-        }]
-    },
-    {
       description: 'The native staking token of XPLA.',
       denom_units: [{
           denom: 'ibc/95C9B5870F95E21A242E6AF9ADCB1F212EE4A8855087226C36FBE43FC41A77B8',
@@ -15987,44 +15949,6 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-382'
-          }
-        }]
-    },
-    {
-      description: 'The native token of Vidulum',
-      denom_units: [{
-          denom: 'ibc/E7B35499CFBEB0FF5778127ABA4FB2C4B79A6B8D3D831D4379C4048C238796BD',
-          exponent: 0,
-          aliases: ['uvdl']
-        }, {
-          denom: 'vdl',
-          exponent: 6
-        }],
-      base: 'ibc/E7B35499CFBEB0FF5778127ABA4FB2C4B79A6B8D3D831D4379C4048C238796BD',
-      name: 'Vidulum',
-      display: 'vdl',
-      symbol: 'VDL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
-      },
-      coingecko_id: 'vidulum',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg',
-          theme: {
-            primary_color_hex: '#3454bc'
-          }
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'uvdl',
-            chain_name: 'vidulum'
-          },
-          chain: {
-            channel_id: 'channel-124'
           }
         }]
     },
