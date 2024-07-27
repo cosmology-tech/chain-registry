@@ -4,6 +4,7 @@ import * as _ethereum from './ethereum';
 import * as _picasso from './picasso';
 import * as _solana from './solana';
 import * as _composablepolkadot from './composablepolkadot';
+import * as _penumbra from './penumbra';
 import * as _0l from './0l';
 import * as _aptos from './aptos';
 import * as _arbitrum from './arbitrum';
@@ -20,7 +21,6 @@ import * as _kusama from './kusama';
 import * as _moonbeam from './moonbeam';
 import * as _neo from './neo';
 import * as _optimism from './optimism';
-import * as _penumbra from './penumbra';
 import * as _polkadot from './polkadot';
 import * as _polygon from './polygon';
 import * as _statemine from './statemine';
@@ -50,6 +50,7 @@ const assets: AssetList[] = [
   _picasso.assets,
   _solana.assets,
   _composablepolkadot.assets,
+  _penumbra.assets,
   _0l.assets,
   _aptos.assets,
   _arbitrum.assets,
@@ -66,7 +67,6 @@ const assets: AssetList[] = [
   _moonbeam.assets,
   _neo.assets,
   _optimism.assets,
-  _penumbra.assets,
   _polkadot.assets,
   _polygon.assets,
   _statemine.assets,

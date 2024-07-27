@@ -122,6 +122,7 @@ export * as onex from './onex';
 export * as onomy from './onomy';
 export * as oraichain from './oraichain';
 export * as osmosis from './osmosis';
+export * as paloma from './paloma';
 export * as panacea from './panacea';
 export * as passage from './passage';
 export * as passage1 from './passage1';

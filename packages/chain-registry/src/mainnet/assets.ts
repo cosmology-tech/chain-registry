@@ -123,6 +123,7 @@ import * as _onex from './onex';
 import * as _onomy from './onomy';
 import * as _oraichain from './oraichain';
 import * as _osmosis from './osmosis';
+import * as _paloma from './paloma';
 import * as _panacea from './panacea';
 import * as _passage from './passage';
 import * as _passage1 from './passage1';
@@ -302,6 +303,7 @@ const assets: AssetList[] = [
   _onomy.assets,
   _oraichain.assets,
   _osmosis.assets,
+  _paloma.assets,
   _panacea.assets,
   _passage.assets,
   _passage1.assets,

@@ -60,10 +60,6 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://andromeda-rpc.stake-town.com:443',
-        provider: 'StakeTown'
-      },
-      {
         address: 'https://andromeda-rpc.stakerhouse.com:443',
         provider: 'StakerHouse'
       },
@@ -118,10 +114,6 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://andromeda-api.stake-town.com:443',
-        provider: 'StakeTown'
-      },
-      {
         address: 'https://andromeda-rest.stakerhouse.com:443',
         provider: 'StakerHouse'
       },
@@ -174,10 +166,6 @@ const info: Chain = {
       {
         address: 'http://andromedad.grpc.t.stavr.tech:132',
         provider: '🔥STAVR🔥'
-      },
-      {
-        address: 'andromeda-grpc.stake-town.com:443',
-        provider: 'StakeTown'
       },
       {
         address: 'andromeda-grpc.stakerhouse.com:443',

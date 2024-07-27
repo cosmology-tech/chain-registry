@@ -1,5 +1,5 @@
 import _assets from './assets';
-import _ibc from './ibc';
+import _chain from './chain';
 
 export const assets = _assets;
-export const ibc = _ibc;
+export const chain = _chain;

@@ -568,6 +568,38 @@ const info: AssetList = {
             primary_color_hex: '#e40474'
           }
         }]
+    },
+    {
+      denom_units: [{
+          denom: 'stuband',
+          exponent: 0
+        }, {
+          denom: 'stBAND',
+          exponent: 6
+        }],
+      base: 'stuband',
+      name: 'Stride Staked BAND',
+      display: 'stBAND',
+      symbol: 'stBAND',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chain_name: 'bandchain',
+            base_denom: 'uband'
+          },
+          provider: 'Stride'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stband.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stband.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stband.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stband.svg',
+          theme: {
+            primary_color_hex: '#e40474'
+          }
+        }]
     }
   ]
 };

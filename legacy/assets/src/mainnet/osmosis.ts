@@ -10409,6 +10409,45 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Penumbra.',
+      denom_units: [{
+          denom: 'ibc/0FA9232B262B89E77D1335D54FB1E1F506A92A7E4B51524B400DC69C68D28372',
+          exponent: 0,
+          aliases: ['upenumbra']
+        }, {
+          denom: 'penumbra',
+          exponent: 6
+        }],
+      type_asset: 'unknown',
+      base: 'ibc/0FA9232B262B89E77D1335D54FB1E1F506A92A7E4B51524B400DC69C68D28372',
+      display: 'penumbra',
+      symbol: 'UM',
+      name: 'Penumbra',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/penumbra/images/um.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/penumbra/images/um.svg',
+          theme: {
+            circle: true,
+            primary_color_hex: '#c7b07f'
+          }
+        }],
+      socials: {
+        website: 'https://penumbra.zone/',
+        twitter: 'https://twitter.com/penumbrazone'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'upenumbra',
+            chain_name: 'penumbra'
+          },
+          chain: {
+            channel_id: 'channel-79703'
+          }
+        }]
+    },
+    {
       description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
       denom_units: [{
           denom: 'ibc/A0CC0CF735BFB30E730C70019D4218A1244FF383503FF7579C9201AB93CA9293',
@@ -15987,6 +16026,45 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-1634'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Penumbra.',
+      denom_units: [{
+          denom: 'ibc/0FA9232B262B89E77D1335D54FB1E1F506A92A7E4B51524B400DC69C68D28372',
+          exponent: 0,
+          aliases: ['upenumbra']
+        }, {
+          denom: 'penumbra',
+          exponent: 6
+        }],
+      type_asset: 'unknown',
+      base: 'ibc/0FA9232B262B89E77D1335D54FB1E1F506A92A7E4B51524B400DC69C68D28372',
+      display: 'penumbra',
+      symbol: 'UM',
+      name: 'Penumbra',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/penumbra/images/um.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/penumbra/images/um.svg',
+          theme: {
+            circle: true,
+            primary_color_hex: '#c7b07f'
+          }
+        }],
+      socials: {
+        website: 'https://penumbra.zone/',
+        twitter: 'https://twitter.com/penumbrazone'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'upenumbra',
+            chain_name: 'penumbra'
+          },
+          chain: {
+            channel_id: 'channel-79703'
           }
         }]
     },
