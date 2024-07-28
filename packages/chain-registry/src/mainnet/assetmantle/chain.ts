@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://assetmantle.one/',
   pretty_name: 'AssetMantle',
+  chain_type: 'cosmos',
   chain_id: 'mantle-1',
   bech32_prefix: 'mantle',
   daemon_name: 'mantleNode',

@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://comdex.one/',
   pretty_name: 'Comdex',
+  chain_type: 'cosmos',
   chain_id: 'comdex-1',
   bech32_prefix: 'comdex',
   slip44: 118,

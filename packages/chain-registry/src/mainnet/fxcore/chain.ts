@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'fxcore',
+  chain_type: 'cosmos',
   chain_id: 'fxcore',
   website: 'https://functionx.io',
   pretty_name: 'f(x)Core',

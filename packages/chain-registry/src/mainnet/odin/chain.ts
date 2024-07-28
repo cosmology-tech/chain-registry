@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://odinprotocol.io/',
   pretty_name: 'Odin Protocol',
+  chain_type: 'cosmos',
   chain_id: 'odin-mainnet-freya',
   bech32_prefix: 'odin',
   daemon_name: 'odind',

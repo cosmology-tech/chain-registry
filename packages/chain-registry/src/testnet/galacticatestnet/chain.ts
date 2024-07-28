@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Galactica Protocol Testnet',
+  chain_type: 'cosmos',
   chain_id: 'galactica_9302-1',
   bech32_prefix: 'gala',
   daemon_name: 'galacticad',

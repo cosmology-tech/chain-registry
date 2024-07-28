@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://sentinel.co/',
   pretty_name: 'Sentinel',
+  chain_type: 'cosmos',
   chain_id: 'sentinelhub-2',
   bech32_prefix: 'sent',
   daemon_name: 'sentinelhub',

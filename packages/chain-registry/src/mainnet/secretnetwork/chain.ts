@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://scrt.network/',
   pretty_name: 'Secret Network',
+  chain_type: 'cosmos',
   chain_id: 'secret-4',
   bech32_prefix: 'secret',
   daemon_name: 'secretd',

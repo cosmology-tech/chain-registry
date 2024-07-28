@@ -6,6 +6,7 @@ const info: Chain = {
   website: 'https://nolus.io/',
   network_type: 'testnet',
   pretty_name: 'Nolus Testnet',
+  chain_type: 'cosmos',
   chain_id: 'rila-1',
   bech32_prefix: 'nolus',
   daemon_name: 'nolusd',

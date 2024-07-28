@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://pylons.tech',
   pretty_name: 'Pylons',
+  chain_type: 'cosmos',
   chain_id: 'pylons-mainnet-1',
   bech32_prefix: 'pylo',
   node_home: '$HOME/.pylons',

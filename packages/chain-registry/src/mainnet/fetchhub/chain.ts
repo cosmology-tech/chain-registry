@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'Fetch.ai',
+  chain_type: 'cosmos',
   chain_id: 'fetchhub-4',
   bech32_prefix: 'fetch',
   daemon_name: 'fetchd',

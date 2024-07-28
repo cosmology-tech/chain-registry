@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   website: 'https://chimba.ooo/',
   pretty_name: 'Chimba',
+  chain_type: 'cosmos',
   chain_id: 'chimba-testnet',
   bech32_prefix: 'chimba',
   daemon_name: 'chimbad',

@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://bitsong.io/',
   pretty_name: 'BitSong',
+  chain_type: 'cosmos',
   chain_id: 'bitsong-2b',
   bech32_prefix: 'bitsong',
   slip44: 639,

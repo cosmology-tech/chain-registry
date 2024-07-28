@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://www.fury.black/',
   pretty_name: 'Highbury',
+  chain_type: 'cosmos',
   chain_id: 'highbury_710-1',
   bech32_prefix: 'fury',
   daemon_name: 'fury',

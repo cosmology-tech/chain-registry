@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   website: 'https://akash.network/',
   pretty_name: 'Sandbox',
+  chain_type: 'cosmos',
   chain_id: 'sandbox-01',
   bech32_prefix: 'akash',
   daemon_name: 'akash',

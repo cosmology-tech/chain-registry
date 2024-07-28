@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://stride.zone/',
   pretty_name: 'Stride',
+  chain_type: 'cosmos',
   chain_id: 'stride-1',
   bech32_prefix: 'stride',
   daemon_name: 'strided',

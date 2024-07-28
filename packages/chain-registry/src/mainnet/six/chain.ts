@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'SIX Protocol',
+  chain_type: 'cosmos',
   chain_id: 'sixnet',
   bech32_prefix: '6x',
   daemon_name: 'sixd',

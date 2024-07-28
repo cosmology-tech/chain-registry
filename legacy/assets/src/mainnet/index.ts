@@ -1,3 +1,5 @@
+export * as ethereum from './ethereum';
+export * as solana from './solana';
 export * as _8ball from './8ball';
 export * as acrechain from './acrechain';
 export * as agoric from './agoric';

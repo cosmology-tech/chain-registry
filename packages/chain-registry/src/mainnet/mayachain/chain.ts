@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://mayaprotocol.com/',
   pretty_name: 'Maya Protocol',
+  chain_type: 'cosmos',
   chain_id: 'mayachain-mainnet-v1',
   bech32_prefix: 'maya',
   daemon_name: 'mayanode',

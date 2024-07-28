@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://akash.network/',
   pretty_name: 'Akash',
+  chain_type: 'cosmos',
   chain_id: 'akashnet-2',
   bech32_prefix: 'akash',
   daemon_name: 'akash',

@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'BitCanna Devnet-1',
+  chain_type: 'cosmos',
   chain_id: 'bitcanna-dev-1',
   bech32_prefix: 'bcna',
   daemon_name: 'bcnad',

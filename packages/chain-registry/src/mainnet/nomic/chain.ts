@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   pretty_name: 'Nomic',
   website: 'https://nomic.io/',
+  chain_type: 'cosmos',
   chain_id: 'nomic-stakenet-3',
   bech32_prefix: 'nomic',
   daemon_name: 'nomic',

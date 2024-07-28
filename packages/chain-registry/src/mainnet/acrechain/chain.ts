@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://arable.finance/',
   pretty_name: 'Acrechain',
+  chain_type: 'cosmos',
   chain_id: 'acre_9052-1',
   bech32_prefix: 'acre',
   node_home: '$HOME/.acred',

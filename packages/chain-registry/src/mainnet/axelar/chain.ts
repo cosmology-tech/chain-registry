@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'axelar',
+  chain_type: 'cosmos',
   chain_id: 'axelar-dojo-1',
   pretty_name: 'Axelar',
   status: 'live',

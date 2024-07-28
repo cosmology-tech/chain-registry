@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Evmos Testnet',
+  chain_type: 'cosmos',
   chain_id: 'evmos_9000-4',
   bech32_prefix: 'evmos',
   daemon_name: 'evmosd',

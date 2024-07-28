@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'killed',
   network_type: 'mainnet',
   pretty_name: 'Chronic Chain',
+  chain_type: 'cosmos',
   chain_id: 'morocco-1',
   bech32_prefix: 'chronic',
   daemon_name: 'chtd',

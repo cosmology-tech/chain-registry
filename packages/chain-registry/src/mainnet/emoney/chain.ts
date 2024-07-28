@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'e-Money',
+  chain_type: 'cosmos',
   chain_id: 'emoney-3',
   bech32_prefix: 'emoney',
   daemon_name: 'emd',

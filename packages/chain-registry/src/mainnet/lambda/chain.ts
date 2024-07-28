@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'Lambda',
+  chain_type: 'cosmos',
   chain_id: 'lambda_92000-1',
   bech32_prefix: 'lamb',
   node_home: '$HOME/.lambdavm',

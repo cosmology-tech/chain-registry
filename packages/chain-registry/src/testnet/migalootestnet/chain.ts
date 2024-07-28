@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   website: 'https://www.whitewhale.money/',
   pretty_name: 'Migaloo Testnet',
+  chain_type: 'cosmos',
   chain_id: 'narwhal-2',
   bech32_prefix: 'migaloo',
   daemon_name: 'migalood',

@@ -6,6 +6,7 @@ const info: Chain = {
   website: 'https://airchains.io/',
   network_type: 'testnet',
   pretty_name: 'Airchains Switchyard Testnet',
+  chain_type: 'cosmos',
   chain_id: 'junction',
   bech32_prefix: 'air',
   daemon_name: 'junctiond',

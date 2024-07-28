@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://thorchain.org/',
   pretty_name: 'THORChain',
+  chain_type: 'cosmos',
   chain_id: 'thorchain-mainnet-v1',
   bech32_prefix: 'thor',
   daemon_name: 'thord',

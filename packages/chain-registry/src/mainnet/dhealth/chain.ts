@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://dhealth.com/',
   pretty_name: 'dHealth',
+  chain_type: 'cosmos',
   chain_id: 'dhealth',
   bech32_prefix: 'dh',
   daemon_name: 'dhealthd',

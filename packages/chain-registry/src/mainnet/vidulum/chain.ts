@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://vidulum.app/',
   pretty_name: 'Vidulum',
+  chain_type: 'cosmos',
   chain_id: 'vidulum-1',
   bech32_prefix: 'vdl',
   daemon_name: 'vidulumd',

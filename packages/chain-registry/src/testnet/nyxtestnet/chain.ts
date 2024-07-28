@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   website: 'https://nymtech.net/',
   pretty_name: 'Nym',
+  chain_type: 'cosmos',
   chain_id: 'sandbox',
   bech32_prefix: 'n',
   daemon_name: 'nyxd',

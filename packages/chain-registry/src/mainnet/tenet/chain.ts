@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://tenet.org/',
   pretty_name: 'Tenet',
+  chain_type: 'cosmos',
   chain_id: 'tenet_1559-1',
   bech32_prefix: 'tenet',
   node_home: '$HOME/.tenetd',

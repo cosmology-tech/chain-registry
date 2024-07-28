@@ -6,6 +6,7 @@ const info: Chain = {
   website: 'https://www.babylonchain.io',
   network_type: 'testnet',
   pretty_name: 'Babylon Testnet',
+  chain_type: 'cosmos',
   chain_id: 'bbn-test1',
   bech32_prefix: 'bbn',
   daemon_name: 'babylond',

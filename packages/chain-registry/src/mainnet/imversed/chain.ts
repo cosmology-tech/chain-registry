@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://imversed.network/',
   pretty_name: 'Imversed',
+  chain_type: 'cosmos',
   chain_id: 'imversed_5555555-1',
   bech32_prefix: 'imv',
   daemon_name: 'imversed',

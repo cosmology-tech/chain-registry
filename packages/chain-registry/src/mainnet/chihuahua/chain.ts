@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://chihuahua.wtf/',
   pretty_name: 'Chihuahua',
+  chain_type: 'cosmos',
   chain_id: 'chihuahua-1',
   bech32_prefix: 'chihuahua',
   daemon_name: 'chihuahuad',

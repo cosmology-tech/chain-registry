@@ -361,6 +361,44 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'BeeZee native blockchain',
+      denom_units: [{
+          denom: 'ibc/477BF795EE81A93C4B278F032FF847261D1FA5A3E41C5338DA3D8173699D9739',
+          exponent: 0,
+          aliases: ['ubze']
+        }, {
+          denom: 'bze',
+          exponent: 6
+        }],
+      base: 'ibc/477BF795EE81A93C4B278F032FF847261D1FA5A3E41C5338DA3D8173699D9739',
+      name: 'BeeZee',
+      display: 'bze',
+      symbol: 'BZE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg'
+      },
+      coingecko_id: 'bzedge',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg',
+          theme: {
+            primary_color_hex: '#079fd7'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'ubze',
+            chain_name: 'beezee'
+          },
+          chain: {
+            channel_id: 'channel-147'
+          }
+        }]
+    },
+    {
       description: 'The BCNA coin is the transactional token within the BitCanna network, serving the legal cannabis industry through its payment network, supply chain and trust network.',
       denom_units: [{
           denom: 'ibc/FCB240D2C3838369155A0FA8970A8BE3EC1042F698269B9D6D9859274F00A0BB',
@@ -1531,6 +1569,44 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-13'
+          }
+        }]
+    },
+    {
+      description: 'BeeZee native blockchain',
+      denom_units: [{
+          denom: 'ibc/477BF795EE81A93C4B278F032FF847261D1FA5A3E41C5338DA3D8173699D9739',
+          exponent: 0,
+          aliases: ['ubze']
+        }, {
+          denom: 'bze',
+          exponent: 6
+        }],
+      base: 'ibc/477BF795EE81A93C4B278F032FF847261D1FA5A3E41C5338DA3D8173699D9739',
+      name: 'BeeZee',
+      display: 'bze',
+      symbol: 'BZE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg'
+      },
+      coingecko_id: 'bzedge',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg',
+          theme: {
+            primary_color_hex: '#079fd7'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'ubze',
+            chain_name: 'beezee'
+          },
+          chain: {
+            channel_id: 'channel-147'
           }
         }]
     },

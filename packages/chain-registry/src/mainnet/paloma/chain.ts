@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://palomachain.com/',
   pretty_name: 'Paloma',
+  chain_type: 'cosmos',
   chain_id: 'tumbler',
   bech32_prefix: 'paloma',
   daemon_name: 'palomad',

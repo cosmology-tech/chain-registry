@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://www.sourceprotocol.io/',
   pretty_name: 'Source',
+  chain_type: 'cosmos',
   chain_id: 'source-1',
   bech32_prefix: 'source',
   daemon_name: 'sourced',

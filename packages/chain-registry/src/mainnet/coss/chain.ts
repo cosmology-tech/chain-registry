@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'coss',
+  chain_type: 'cosmos',
   chain_id: 'coss-1',
   website: 'https://coss.ink/',
   pretty_name: 'COSS',

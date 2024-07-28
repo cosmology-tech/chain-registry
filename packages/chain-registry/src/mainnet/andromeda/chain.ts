@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'andromeda',
+  chain_type: 'cosmos',
   chain_id: 'andromeda-1',
   pre_fork_chain_name: 'andromeda1',
   pretty_name: 'Andromeda',

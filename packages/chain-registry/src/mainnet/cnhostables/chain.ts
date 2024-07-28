@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://cnho.io/',
   pretty_name: 'CNHO Stables',
+  chain_type: 'cosmos',
   chain_id: 'cnho_stables-1',
   bech32_prefix: 'cnho',
   daemon_name: 'cnho',

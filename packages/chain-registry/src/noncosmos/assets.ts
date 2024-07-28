@@ -1,8 +1,6 @@
 import { AssetList } from '@chain-registry/types';
 
-import * as _ethereum from './ethereum';
 import * as _picasso from './picasso';
-import * as _solana from './solana';
 import * as _composablepolkadot from './composablepolkadot';
 import * as _penumbra from './penumbra';
 import * as _0l from './0l';
@@ -46,9 +44,7 @@ import * as _polygontestnet from './polygontestnet';
 import * as _ojotestnet from './ojotestnet';
 
 const assets: AssetList[] = [
-  _ethereum.assets,
   _picasso.assets,
-  _solana.assets,
   _composablepolkadot.assets,
   _penumbra.assets,
   _0l.assets,

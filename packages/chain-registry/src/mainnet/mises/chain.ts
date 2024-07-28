@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://mises.site',
   pretty_name: 'Mises',
+  chain_type: 'cosmos',
   chain_id: 'mainnet',
   bech32_prefix: 'mises',
   node_home: '$HOME/.misestm',

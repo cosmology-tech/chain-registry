@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'pundix',
+  chain_type: 'cosmos',
   chain_id: 'PUNDIX',
   website: 'https://pundix.com',
   pretty_name: 'Pundi X Chain',

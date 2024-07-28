@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Nillion Testnet',
+  chain_type: 'cosmos',
   chain_id: 'nillion-chain-testnet-1',
   bech32_prefix: 'nillion',
   daemon_name: 'nilchaind',

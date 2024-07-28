@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Mars Hub Testnet',
+  chain_type: 'cosmos',
   chain_id: 'ares-1',
   bech32_prefix: 'mars',
   key_algos: ['secp256k1'],

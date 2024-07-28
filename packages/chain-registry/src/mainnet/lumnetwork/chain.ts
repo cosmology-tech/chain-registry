@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://lum.network/',
   pretty_name: 'Lum Network',
+  chain_type: 'cosmos',
   chain_id: 'lum-network-1',
   bech32_prefix: 'lum',
   daemon_name: 'lumd',

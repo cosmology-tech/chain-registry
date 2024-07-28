@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://www.joltify.io/',
   pretty_name: 'Joltify',
+  chain_type: 'cosmos',
   chain_id: 'joltify_1729-1',
   bech32_prefix: 'jolt',
   daemon_name: 'jolt',

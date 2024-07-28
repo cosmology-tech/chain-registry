@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'Cudos',
+  chain_type: 'cosmos',
   chain_id: 'cudos-1',
   bech32_prefix: 'cudos',
   daemon_name: 'cudos-noded',

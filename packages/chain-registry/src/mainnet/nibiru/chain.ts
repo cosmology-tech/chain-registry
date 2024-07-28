@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://nibiru.fi/',
   pretty_name: 'Nibiru',
+  chain_type: 'cosmos',
   chain_id: 'cataclysm-1',
   bech32_prefix: 'nibi',
   daemon_name: 'nibid',

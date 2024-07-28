@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'ZetaChain',
+  chain_type: 'cosmos',
   chain_id: 'zetachain_7000-1',
   bech32_prefix: 'zeta',
   daemon_name: 'zetacored',

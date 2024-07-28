@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'LikeCoin Testnet',
+  chain_type: 'cosmos',
   chain_id: 'likecoin-public-testnet-5',
   bech32_prefix: 'like',
   daemon_name: 'liked',

@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chain_name: 'soarchaintestnet',
+  chain_type: 'cosmos',
   chain_id: 'soarchaintestnet',
   pretty_name: 'Soarchain Testnet',
   status: 'live',

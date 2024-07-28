@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://furya.xyz/',
   pretty_name: 'furya',
+  chain_type: 'cosmos',
   chain_id: 'furya-1',
   daemon_name: 'furyad',
   node_home: '$HOME/.furyad',

@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://unification.com/',
   pretty_name: 'Unification',
+  chain_type: 'cosmos',
   chain_id: 'FUND-MainNet-2',
   bech32_prefix: 'und',
   daemon_name: 'und',

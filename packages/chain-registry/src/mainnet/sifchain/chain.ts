@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://sifchain.finance/',
   pretty_name: 'Sifchain',
+  chain_type: 'cosmos',
   chain_id: 'sifchain-1',
   bech32_prefix: 'sif',
   daemon_name: 'sifnoded',

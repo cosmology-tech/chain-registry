@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://uptick.network/',
   pretty_name: 'Uptick',
+  chain_type: 'cosmos',
   chain_id: 'uptick_117-1',
   bech32_prefix: 'uptick',
   daemon_name: 'uptickd',

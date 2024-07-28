@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://haqq.network/',
   pretty_name: 'Haqq Network',
+  chain_type: 'cosmos',
   chain_id: 'haqq_11235-1',
   bech32_prefix: 'haqq',
   node_home: '$HOME/.haqqd',

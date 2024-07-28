@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://helichain.com/',
   pretty_name: 'HeliChain',
+  chain_type: 'cosmos',
   chain_id: 'helichain',
   bech32_prefix: 'heli',
   daemon_name: 'helichaind',

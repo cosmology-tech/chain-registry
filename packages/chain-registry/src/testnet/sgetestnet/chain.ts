@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'sgetestnet',
+  chain_type: 'cosmos',
   chain_id: 'sge-network-3',
   pretty_name: 'SGE Testnet',
   status: 'live',

@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Quicksilver Testnet',
+  chain_type: 'cosmos',
   chain_id: 'rhye-2',
   bech32_prefix: 'quick',
   daemon_name: 'quicksilverd',

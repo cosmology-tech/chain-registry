@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://quicksilver.zone/',
   pretty_name: 'Quicksilver',
+  chain_type: 'cosmos',
   chain_id: 'quicksilver-2',
   daemon_name: 'quicksilverd',
   node_home: '$HOME/.quicksilverd',

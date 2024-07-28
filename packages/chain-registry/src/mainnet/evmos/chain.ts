@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://evmos.org/',
   pretty_name: 'Evmos',
+  chain_type: 'cosmos',
   chain_id: 'evmos_9001-2',
   bech32_prefix: 'evmos',
   node_home: '$HOME/.evmosd',

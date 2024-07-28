@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://medas-digital.io/',
   pretty_name: 'Medas Digital Network',
+  chain_type: 'cosmos',
   chain_id: 'medasdigital-1',
   bech32_prefix: 'medas',
   daemon_name: 'medasdigitald',

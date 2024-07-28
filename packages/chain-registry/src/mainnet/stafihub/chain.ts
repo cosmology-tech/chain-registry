@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'stafihub',
+  chain_type: 'cosmos',
   chain_id: 'stafihub-1',
   website: 'https://stafihub.io/',
   pretty_name: 'StaFi Hub',

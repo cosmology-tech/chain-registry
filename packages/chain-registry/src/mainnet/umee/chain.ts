@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://www.ux.xyz',
   pretty_name: 'UX Chain',
+  chain_type: 'cosmos',
   chain_id: 'umee-1',
   bech32_prefix: 'umee',
   daemon_name: 'umeed',

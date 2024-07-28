@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://www.bitcanna.io/',
   pretty_name: 'BitCanna',
+  chain_type: 'cosmos',
   chain_id: 'bitcanna-1',
   bech32_prefix: 'bcna',
   daemon_name: 'bcnad',

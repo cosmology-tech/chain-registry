@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://portal.dymension.xyz',
   pretty_name: 'Dymension Hub',
+  chain_type: 'cosmos',
   chain_id: 'dymension_1100-1',
   bech32_prefix: 'dym',
   slip44: 60,

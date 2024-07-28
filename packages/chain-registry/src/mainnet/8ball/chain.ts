@@ -6,6 +6,7 @@ const info: Chain = {
   website: 'https://8ball.info/',
   network_type: 'mainnet',
   pretty_name: '8ball',
+  chain_type: 'cosmos',
   chain_id: 'eightball-1',
   bech32_prefix: '8ball',
   daemon_name: '8ball',

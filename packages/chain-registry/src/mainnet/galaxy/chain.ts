@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://galaxychain.zone/',
   pretty_name: 'Galaxy',
+  chain_type: 'cosmos',
   chain_id: 'galaxy-1',
   bech32_prefix: 'galaxy',
   daemon_name: 'galaxyd',

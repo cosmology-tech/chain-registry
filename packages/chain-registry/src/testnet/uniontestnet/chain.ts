@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Union Testnet',
+  chain_type: 'cosmos',
   chain_id: 'union-testnet-8',
   bech32_prefix: 'union',
   daemon_name: 'uniond',

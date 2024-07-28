@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   website: 'https://qwoyn.studio/',
   pretty_name: 'Qwoyn',
+  chain_type: 'cosmos',
   chain_id: 'earendel-1',
   bech32_prefix: 'qwoyn',
   daemon_name: 'qwoynd',

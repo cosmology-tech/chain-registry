@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'Carbon',
+  chain_type: 'cosmos',
   chain_id: 'carbon-1',
   bech32_prefix: 'swth',
   daemon_name: 'carbond',

@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   website: 'https://www.ixo.world/',
   pretty_name: 'ixo',
+  chain_type: 'cosmos',
   chain_id: 'pandora-8',
   bech32_prefix: 'ixo',
   daemon_name: 'ixod',

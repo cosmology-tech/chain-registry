@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   website: 'https://www.terra.money/',
   pretty_name: 'Terra 2.0',
+  chain_type: 'cosmos',
   chain_id: 'pisco-1',
   daemon_name: 'terrad',
   node_home: '$HOME/.terra',

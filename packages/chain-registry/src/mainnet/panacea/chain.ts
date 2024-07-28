@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://medibloc.com/en/',
   pretty_name: 'Medibloc',
+  chain_type: 'cosmos',
   chain_id: 'panacea-3',
   bech32_prefix: 'panacea',
   daemon_name: 'panacead',

@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Stateset Testnet',
+  chain_type: 'cosmos',
   chain_id: 'stateset-1-testnet',
   bech32_prefix: 'stateset',
   daemon_name: 'statesetd',

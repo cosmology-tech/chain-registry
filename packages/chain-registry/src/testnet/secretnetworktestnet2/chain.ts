@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'killed',
   network_type: 'testnet',
   pretty_name: 'Secret Network Testnet',
+  chain_type: 'cosmos',
   chain_id: 'pulsar-2',
   bech32_prefix: 'secret',
   daemon_name: 'secretd',

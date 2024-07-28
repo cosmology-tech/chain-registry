@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Warden Protocol Buenavista',
+  chain_type: 'cosmos',
   chain_id: 'buenavista-1',
   bech32_prefix: 'warden',
   daemon_name: 'wardend',

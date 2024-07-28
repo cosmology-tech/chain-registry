@@ -7,6 +7,7 @@ const chain: Chain = {
   website: 'https://osmosis.zone/',
   update_link: 'https://raw.githubusercontent.com/osmosis-labs/osmosis/main/chain.schema.json',
   pretty_name: 'Osmosis',
+  chain_type: 'cosmos',
   chain_id: 'osmosis-1',
   bech32_prefix: 'osmo',
   daemon_name: 'osmosisd',

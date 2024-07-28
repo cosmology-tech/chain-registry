@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   website: 'https://nois.network',
   pretty_name: 'Nois',
+  chain_type: 'cosmos',
   chain_id: 'nois-testnet-005',
   bech32_prefix: 'nois',
   daemon_name: 'noisd',

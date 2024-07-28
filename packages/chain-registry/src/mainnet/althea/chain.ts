@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://althea.net/',
   pretty_name: 'Althea',
+  chain_type: 'cosmos',
   chain_id: 'althea_258432-1',
   bech32_prefix: 'althea',
   daemon_name: 'althea',

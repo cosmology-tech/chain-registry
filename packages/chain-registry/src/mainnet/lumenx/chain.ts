@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'killed',
   network_type: 'mainnet',
   pretty_name: 'LumenX',
+  chain_type: 'cosmos',
   chain_id: 'LumenX',
   bech32_prefix: 'lumen',
   daemon_name: 'lumenxd',

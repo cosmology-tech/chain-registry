@@ -6,6 +6,7 @@ const info: Chain = {
   website: 'https://xpla.io',
   network_type: 'mainnet',
   pretty_name: 'XPLA',
+  chain_type: 'cosmos',
   chain_id: 'dimension_37-1',
   bech32_prefix: 'xpla',
   daemon_name: 'xplad',

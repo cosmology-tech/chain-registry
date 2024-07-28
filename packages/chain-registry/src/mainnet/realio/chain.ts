@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://realio.network/',
   pretty_name: 'Realio Network',
+  chain_type: 'cosmos',
   chain_id: 'realionetwork_3301-1',
   bech32_prefix: 'realio',
   node_home: '$HOME/.realio-network',

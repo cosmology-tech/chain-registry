@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://ai.nim.network',
   pretty_name: 'Nim Network',
+  chain_type: 'cosmos',
   chain_id: 'nim_1122-1',
   bech32_prefix: 'nim',
   slip44: 60,

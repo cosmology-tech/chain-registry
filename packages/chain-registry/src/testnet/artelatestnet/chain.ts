@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Artela Testnet',
+  chain_type: 'cosmos',
   chain_id: 'artela_11820-1',
   bech32_prefix: 'art',
   daemon_name: 'artelad',

@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://www.junonetwork.io/',
   pretty_name: 'Juno',
+  chain_type: 'cosmos',
   chain_id: 'juno-1',
   bech32_prefix: 'juno',
   daemon_name: 'junod',

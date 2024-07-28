@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'Point Network',
+  chain_type: 'cosmos',
   chain_id: 'point_10687-1',
   bech32_prefix: 'point',
   node_home: '$HOME/.pointd',

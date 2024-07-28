@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://rizon.world/',
   pretty_name: 'Rizon',
+  chain_type: 'cosmos',
   chain_id: 'titan-1',
   bech32_prefix: 'rizon',
   daemon_name: 'rizond',

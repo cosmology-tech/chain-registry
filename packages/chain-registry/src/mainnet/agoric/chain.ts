@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://agoric.com/',
   pretty_name: 'Agoric',
+  chain_type: 'cosmos',
   chain_id: 'agoric-3',
   bech32_prefix: 'agoric',
   daemon_name: 'agd',

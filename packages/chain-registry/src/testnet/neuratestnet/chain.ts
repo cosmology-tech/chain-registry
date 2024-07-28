@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chain_name: 'neuratestnet',
+  chain_type: 'cosmos',
   chain_id: 'neura_267-1',
   bech32_prefix: 'neura',
   pretty_name: 'Neura Testnet',

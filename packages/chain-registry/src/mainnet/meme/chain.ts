@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'MEME',
+  chain_type: 'cosmos',
   chain_id: 'meme-1',
   bech32_prefix: 'meme',
   daemon_name: 'memed',

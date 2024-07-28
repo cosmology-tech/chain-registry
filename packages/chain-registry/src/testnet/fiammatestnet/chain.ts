@@ -6,6 +6,7 @@ const info: Chain = {
   website: 'https://www.fiammachain.io',
   network_type: 'testnet',
   pretty_name: 'Fiamma Testnet',
+  chain_type: 'cosmos',
   chain_id: 'fiamma-testnet-1',
   bech32_prefix: 'fiamma',
   daemon_name: 'fiammad',

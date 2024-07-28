@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   website: 'https://injective.com',
   pretty_name: 'Injective',
+  chain_type: 'cosmos',
   chain_id: 'injective-888',
   bech32_prefix: 'inj',
   extra_codecs: ['injective'],

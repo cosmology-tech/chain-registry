@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://desmos.network/',
   pretty_name: 'Desmos',
+  chain_type: 'cosmos',
   chain_id: 'desmos-mainnet',
   bech32_prefix: 'desmos',
   daemon_name: 'desmos',

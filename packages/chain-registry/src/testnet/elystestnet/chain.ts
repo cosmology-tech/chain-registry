@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Elys Network',
+  chain_type: 'cosmos',
   chain_id: 'elystestnet-1',
   bech32_prefix: 'elys',
   daemon_name: 'elysd',

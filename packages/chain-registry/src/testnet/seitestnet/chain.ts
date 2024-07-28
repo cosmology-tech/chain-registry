@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chain_name: 'seitestnet',
+  chain_type: 'cosmos',
   chain_id: 'atlantic-1',
   pretty_name: 'Sei Atlantic',
   status: 'live',

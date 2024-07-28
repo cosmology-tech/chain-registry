@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'killed',
   network_type: 'testnet',
   pretty_name: 'VinceChain Testnet',
+  chain_type: 'cosmos',
   chain_id: 'vince_1903-1',
   bech32_prefix: 'vce',
   node_home: '$HOME/.vinced',

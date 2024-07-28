@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://bandprotocol.com/',
   pretty_name: 'Band Protocol',
+  chain_type: 'cosmos',
   chain_id: 'laozi-mainnet',
   daemon_name: 'bandd',
   node_home: '$HOME/.band',

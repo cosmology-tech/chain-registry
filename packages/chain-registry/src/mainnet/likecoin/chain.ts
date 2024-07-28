@@ -6,6 +6,7 @@ const info: Chain = {
   website: 'https://like.co/',
   network_type: 'mainnet',
   pretty_name: 'LikeCoin',
+  chain_type: 'cosmos',
   chain_id: 'likecoin-mainnet-2',
   bech32_prefix: 'like',
   daemon_name: 'liked',

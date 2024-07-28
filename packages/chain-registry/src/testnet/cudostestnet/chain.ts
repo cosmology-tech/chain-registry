@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Cudos Testnet',
+  chain_type: 'cosmos',
   chain_id: 'cudos-testnet-public-3',
   bech32_prefix: 'cudos',
   key_algos: ['secp256k1'],

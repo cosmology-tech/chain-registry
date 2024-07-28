@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'BeeZee',
+  chain_type: 'cosmos',
   chain_id: 'beezee-1',
   bech32_prefix: 'bze',
   daemon_name: 'bzed',

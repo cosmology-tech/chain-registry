@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://www.idep.network/',
   pretty_name: 'IDEP',
+  chain_type: 'cosmos',
   chain_id: 'Antora',
   bech32_prefix: 'idep',
   daemon_name: 'idep',

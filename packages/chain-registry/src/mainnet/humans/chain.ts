@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://humans.ai/',
   pretty_name: 'Humans.ai',
+  chain_type: 'cosmos',
   chain_id: 'humans_1089-1',
   bech32_prefix: 'human',
   node_home: '$HOME/.humansd',

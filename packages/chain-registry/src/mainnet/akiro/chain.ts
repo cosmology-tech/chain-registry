@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'killed',
   network_type: 'mainnet',
   pretty_name: 'Akiro',
+  chain_type: 'cosmos',
   chain_id: 'akiro-1',
   bech32_prefix: 'akiro',
   daemon_name: 'akirod',

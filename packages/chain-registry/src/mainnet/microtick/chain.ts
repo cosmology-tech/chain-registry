@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'killed',
   network_type: 'mainnet',
   pretty_name: 'Microtick',
+  chain_type: 'cosmos',
   chain_id: 'microtick-1',
   bech32_prefix: 'micro',
   daemon_name: 'mtm',

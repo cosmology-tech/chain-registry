@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://canto.io/',
   pretty_name: 'Canto',
+  chain_type: 'cosmos',
   chain_id: 'canto_7700-1',
   bech32_prefix: 'canto',
   node_home: '$HOME/.cantod',

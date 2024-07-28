@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'finschia',
+  chain_type: 'cosmos',
   chain_id: 'finschia-2',
   website: 'https://www.finschia.io/',
   pretty_name: 'Finschia',

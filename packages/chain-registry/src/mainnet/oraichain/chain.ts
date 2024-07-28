@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://orai.io/',
   pretty_name: 'Oraichain',
+  chain_type: 'cosmos',
   chain_id: 'Oraichain',
   bech32_prefix: 'orai',
   daemon_name: 'oraid',

@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chain_name: 'okp4testnet',
+  chain_type: 'cosmos',
   chain_id: 'okp4-nemeton-1',
   website: 'https://okp4.network/',
   pretty_name: 'OKP4 Nemeton',

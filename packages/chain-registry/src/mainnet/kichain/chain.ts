@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://foundation.ki/',
   pretty_name: 'Ki',
+  chain_type: 'cosmos',
   chain_id: 'kichain-2',
   bech32_prefix: 'ki',
   daemon_name: 'kid',

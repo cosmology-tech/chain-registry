@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Juno Testnet',
+  chain_type: 'cosmos',
   chain_id: 'uni-6',
   bech32_prefix: 'juno',
   daemon_name: 'junod',

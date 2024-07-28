@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://stargaze.zone/',
   pretty_name: 'Stargaze',
+  chain_type: 'cosmos',
   chain_id: 'stargaze-1',
   bech32_prefix: 'stars',
   daemon_name: 'starsd',

@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://www.joinloyal.com/',
   pretty_name: 'Loyal',
+  chain_type: 'cosmos',
   chain_id: 'loyal-main-02',
   bech32_prefix: 'loyal',
   daemon_name: 'loyald',

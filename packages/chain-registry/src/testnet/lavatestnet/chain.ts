@@ -7,6 +7,7 @@ const info: Chain = {
   network_type: 'testnet',
   website: 'https://www.lavanet.xyz/',
   pretty_name: 'Lava Testnet',
+  chain_type: 'cosmos',
   chain_id: 'lava-testnet-2',
   bech32_prefix: 'lava@',
   daemon_name: 'lavad',

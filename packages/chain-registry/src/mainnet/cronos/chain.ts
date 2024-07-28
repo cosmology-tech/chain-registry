@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://cronos.org',
   pretty_name: 'Cronos',
+  chain_type: 'cosmos',
   chain_id: 'cronosmainnet_25-1',
   bech32_prefix: 'crc',
   daemon_name: 'cronosd',

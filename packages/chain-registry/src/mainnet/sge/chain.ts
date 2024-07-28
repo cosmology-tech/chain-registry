@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'SGE',
+  chain_type: 'cosmos',
   chain_id: 'sgenet-1',
   bech32_prefix: 'sge',
   daemon_name: 'sged',

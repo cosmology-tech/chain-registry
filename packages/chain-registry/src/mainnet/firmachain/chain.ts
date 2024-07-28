@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://firmachain.org/',
   pretty_name: 'FIRMACHAIN',
+  chain_type: 'cosmos',
   chain_id: 'colosseum-1',
   bech32_prefix: 'firma',
   slip44: 7777777,

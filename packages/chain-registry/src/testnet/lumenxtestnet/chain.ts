@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'LumenX-Test',
+  chain_type: 'cosmos',
   chain_id: 'lumenx-test',
   bech32_prefix: 'lumen',
   daemon_name: 'lumenxd',

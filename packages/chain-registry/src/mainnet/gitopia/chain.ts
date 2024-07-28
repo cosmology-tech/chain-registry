@@ -6,6 +6,7 @@ const info: Chain = {
   website: 'https://gitopia.com/',
   network_type: 'mainnet',
   pretty_name: 'Gitopia',
+  chain_type: 'cosmos',
   chain_id: 'gitopia',
   bech32_prefix: 'gitopia',
   daemon_name: 'gitopiad',

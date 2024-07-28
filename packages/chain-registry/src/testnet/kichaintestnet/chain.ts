@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Ki',
+  chain_type: 'cosmos',
   chain_id: 'kichain-t-4',
   bech32_prefix: 'tki',
   daemon_name: 'kid',

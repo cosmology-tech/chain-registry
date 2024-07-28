@@ -1,5 +1,7 @@
 import { IBCInfo } from '@chain-registry/types';
 
+import * as _ethereum from './ethereum';
+import * as _solana from './solana';
 import * as _8ball from './8ball';
 import * as _acrechain from './acrechain';
 import * as _agoric from './agoric';
@@ -140,6 +142,8 @@ import * as _vidulum from './vidulum';
 import * as _xpla from './xpla';
 
 const ibc: IBCInfo[] = [
+  ..._ethereum.ibc,
+  ..._solana.ibc,
   ..._8ball.ibc,
   ..._acrechain.ibc,
   ..._agoric.ibc,

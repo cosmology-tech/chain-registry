@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://tgrade.finance/',
   pretty_name: 'Tgrade',
+  chain_type: 'cosmos',
   chain_id: 'tgrade-mainnet-1',
   bech32_prefix: 'tgrade',
   daemon_name: 'tgrade',

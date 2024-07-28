@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://www.regen.network/',
   pretty_name: 'Regen',
+  chain_type: 'cosmos',
   chain_id: 'regen-1',
   bech32_prefix: 'regen',
   daemon_name: 'regen',

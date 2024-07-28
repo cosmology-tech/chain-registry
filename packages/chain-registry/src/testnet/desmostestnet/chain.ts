@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Desmos Testnet',
+  chain_type: 'cosmos',
   chain_id: 'morpheus-apollo-3',
   bech32_prefix: 'desmos',
   daemon_name: 'desmos',

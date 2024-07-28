@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   website: 'https://app.coolcat.space/',
   pretty_name: 'CoolCat',
+  chain_type: 'cosmos',
   chain_id: 'kitten-04',
   bech32_prefix: 'ccat',
   key_algos: ['secp256k1'],

@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   website: 'https://cascadia.foundation/',
   pretty_name: 'Cascadia',
+  chain_type: 'cosmos',
   chain_id: 'cascadia_6102-1',
   bech32_prefix: 'cascadia',
   daemon_name: 'cascadiad',

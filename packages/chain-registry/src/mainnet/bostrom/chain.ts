@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'bostrom',
+  chain_type: 'cosmos',
   chain_id: 'bostrom',
   bech32_prefix: 'bostrom',
   daemon_name: 'cyber',

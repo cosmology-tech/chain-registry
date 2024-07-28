@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://sommelier.finance/',
   pretty_name: 'Sommelier',
+  chain_type: 'cosmos',
   chain_id: 'sommelier-3',
   bech32_prefix: 'somm',
   daemon_name: 'sommelier',

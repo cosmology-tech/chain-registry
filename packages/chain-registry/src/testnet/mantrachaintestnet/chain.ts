@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'MANTRA Hongbai Testnet',
+  chain_type: 'cosmos',
   chain_id: 'mantra-hongbai-1',
   bech32_prefix: 'uom',
   daemon_name: 'mantrachaind',

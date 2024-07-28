@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'cheqd',
+  chain_type: 'cosmos',
   chain_id: 'cheqd-testnet-6',
   bech32_prefix: 'cheqd',
   daemon_name: 'cheqd-noded',

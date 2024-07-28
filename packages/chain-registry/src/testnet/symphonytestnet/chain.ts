@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Symphony Testnet',
+  chain_type: 'cosmos',
   chain_id: 'symphony-testnet-1',
   bech32_prefix: 'symphony',
   daemon_name: 'symphonyd',

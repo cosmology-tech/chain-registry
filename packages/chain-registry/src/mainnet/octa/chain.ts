@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'Octa',
+  chain_type: 'cosmos',
   chain_id: 'octa',
   bech32_prefix: 'octa',
   daemon_name: 'octadaemon',

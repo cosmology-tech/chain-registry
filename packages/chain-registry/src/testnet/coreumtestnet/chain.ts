@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   website: 'https://www.coreum.com',
   pretty_name: 'Coreum',
+  chain_type: 'cosmos',
   chain_id: 'coreum-testnet-1',
   bech32_prefix: 'testcore',
   daemon_name: 'cored',

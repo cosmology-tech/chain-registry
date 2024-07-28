@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://www.quasar.fi/',
   pretty_name: 'Quasar',
+  chain_type: 'cosmos',
   chain_id: 'quasar-1',
   bech32_prefix: 'quasar',
   daemon_name: 'quasarnoded',

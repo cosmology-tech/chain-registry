@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://www.sharering.network/',
   pretty_name: 'Shareledger',
+  chain_type: 'cosmos',
   chain_id: 'ShareRing-VoyagerNet',
   bech32_prefix: 'shareledger',
   daemon_name: 'shareledger',

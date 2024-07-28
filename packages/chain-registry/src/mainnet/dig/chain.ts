@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://digchain.org/',
   pretty_name: 'Dig Chain',
+  chain_type: 'cosmos',
   chain_id: 'dig-1',
   bech32_prefix: 'dig',
   daemon_name: 'digd',

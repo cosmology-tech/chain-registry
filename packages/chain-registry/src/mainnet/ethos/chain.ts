@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'Ethos',
+  chain_type: 'cosmos',
   chain_id: 'ethos_7003-1',
   bech32_prefix: 'ethos',
   daemon_name: 'ethosd',

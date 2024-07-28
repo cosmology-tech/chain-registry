@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'Terp-Network',
+  chain_type: 'cosmos',
   chain_id: 'morocco-1',
   bech32_prefix: 'terp',
   daemon_name: 'terp',

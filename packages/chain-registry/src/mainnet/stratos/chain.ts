@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://www.thestratos.org',
   pretty_name: 'Stratos',
+  chain_type: 'cosmos',
   chain_id: 'stratos-1',
   bech32_prefix: 'st',
   daemon_name: 'stchaind',

@@ -6,6 +6,7 @@ const info: Chain = {
   website: 'https://www.bluechip.link',
   network_type: 'mainnet',
   pretty_name: 'BlueChip',
+  chain_type: 'cosmos',
   chain_id: 'bluechip-1',
   bech32_prefix: 'bcp',
   daemon_name: 'bluechipd',

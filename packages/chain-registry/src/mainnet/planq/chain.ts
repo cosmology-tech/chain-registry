@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://planq.network/',
   pretty_name: 'Planq',
+  chain_type: 'cosmos',
   chain_id: 'planq_7070-2',
   bech32_prefix: 'plq',
   node_home: '$HOME/.planqd',

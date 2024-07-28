@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://bluzelle.com/',
   pretty_name: 'Bluzelle',
+  chain_type: 'cosmos',
   chain_id: 'bluzelle-9',
   bech32_prefix: 'bluzelle',
   daemon_name: 'curiumd',

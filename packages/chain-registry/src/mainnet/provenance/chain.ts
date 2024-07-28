@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://provenance.io/',
   pretty_name: 'Provenance',
+  chain_type: 'cosmos',
   chain_id: 'pio-mainnet-1',
   bech32_prefix: 'pb',
   daemon_name: 'provenanced',

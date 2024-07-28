@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'Neutron',
+  chain_type: 'cosmos',
   chain_id: 'neutron-1',
   bech32_prefix: 'neutron',
   website: 'https://neutron.org/',

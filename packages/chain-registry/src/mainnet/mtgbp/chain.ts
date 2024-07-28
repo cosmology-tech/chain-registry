@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://mtgbp.com/',
   pretty_name: 'mtgbp',
+  chain_type: 'cosmos',
   chain_id: 'mtgbp-1',
   bech32_prefix: 'mtgbp',
   daemon_name: 'mtgbp',

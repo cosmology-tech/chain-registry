@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://shido.io/',
   pretty_name: 'Shido',
+  chain_type: 'cosmos',
   chain_id: 'shido_9008-1',
   bech32_prefix: 'shido',
   node_home: '$HOME/.shidod',

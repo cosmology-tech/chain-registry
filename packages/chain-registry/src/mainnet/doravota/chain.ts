@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'doravota',
+  chain_type: 'cosmos',
   chain_id: 'vota-ash',
   pretty_name: 'Dora Vota',
   status: 'live',

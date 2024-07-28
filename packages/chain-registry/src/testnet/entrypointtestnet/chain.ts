@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'EntryPoint Testnet',
+  chain_type: 'cosmos',
   chain_id: 'entrypoint-pubtest-2',
   bech32_prefix: 'entrypoint',
   daemon_name: 'entrypointd',

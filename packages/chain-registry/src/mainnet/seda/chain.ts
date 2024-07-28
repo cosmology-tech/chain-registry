@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://www.seda.xyz/',
   pretty_name: 'SEDA',
+  chain_type: 'cosmos',
   chain_id: 'seda-1',
   bech32_prefix: 'seda',
   daemon_name: 'sedad',

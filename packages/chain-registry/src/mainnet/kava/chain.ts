@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://www.kava.io/',
   pretty_name: 'Kava',
+  chain_type: 'cosmos',
   chain_id: 'kava_2222-10',
   bech32_prefix: 'kava',
   daemon_name: 'kava',

@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   website: 'https://titanlab.io/',
   pretty_name: 'Titan Testnet',
+  chain_type: 'cosmos',
   chain_id: 'titan_18889-1',
   bech32_prefix: 'titan',
   node_home: '$HOME/.titand',

@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chain_name: 'gitopiatestnet',
+  chain_type: 'cosmos',
   chain_id: 'gitopia-janus-testnet-2',
   pretty_name: 'Gitopia Testnet',
   status: 'live',

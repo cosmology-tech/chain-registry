@@ -6,6 +6,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'Mun',
+  chain_type: 'cosmos',
   chain_id: 'mun-1',
   bech32_prefix: 'mun',
   daemon_name: 'mund',

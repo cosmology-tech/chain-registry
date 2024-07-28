@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://taketitan.com/',
   pretty_name: 'TakeTitan',
+  chain_type: 'cosmos',
   chain_id: 'taketitan-12',
   bech32_prefix: 'taketitan',
   daemon_name: 'ttnc',

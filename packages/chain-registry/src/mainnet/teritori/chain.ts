@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://teritori.com/',
   pretty_name: 'Teritori',
+  chain_type: 'cosmos',
   chain_id: 'teritori-1',
   daemon_name: 'teritorid',
   node_home: '$HOME/.teritorid',

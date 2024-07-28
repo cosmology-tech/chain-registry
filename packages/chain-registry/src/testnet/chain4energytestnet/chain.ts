@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   website: 'https://c4e.io/',
   pretty_name: 'Chain4Energy Testnet',
+  chain_type: 'cosmos',
   chain_id: 'babajaga-1',
   bech32_prefix: 'c4e',
   daemon_name: 'c4ed',

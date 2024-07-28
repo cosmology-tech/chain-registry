@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://onomy.io/',
   pretty_name: 'Onomy',
+  chain_type: 'cosmos',
   chain_id: 'onomy-mainnet-1',
   bech32_prefix: 'onomy',
   daemon_name: 'onomyd',

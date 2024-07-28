@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://omniflix.network/',
   pretty_name: 'OmniFlix',
+  chain_type: 'cosmos',
   chain_id: 'omniflixhub-1',
   daemon_name: 'omniflixhubd',
   node_home: '$HOME/.omniflixhub',

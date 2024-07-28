@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://cifer.ai/',
   pretty_name: 'Cifer',
+  chain_type: 'cosmos',
   chain_id: 'cifer-1',
   bech32_prefix: 'cife',
   daemon_name: 'ciferd',

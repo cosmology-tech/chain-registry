@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://www.cheqd.io/',
   pretty_name: 'Cheqd',
+  chain_type: 'cosmos',
   chain_id: 'cheqd-mainnet-1',
   bech32_prefix: 'cheqd',
   daemon_name: 'cheqd-noded',

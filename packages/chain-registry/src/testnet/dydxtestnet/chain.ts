@@ -6,6 +6,7 @@ const info: Chain = {
   website: 'https://dydx.trade/',
   network_type: 'testnet',
   pretty_name: 'dYdX Protocol',
+  chain_type: 'cosmos',
   chain_id: 'dydx-testnet-4',
   bech32_prefix: 'dydx',
   daemon_name: 'dydxprotocold',

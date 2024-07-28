@@ -6,6 +6,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'Rebus',
+  chain_type: 'cosmos',
   chain_id: 'reb_1111-1',
   bech32_prefix: 'rebus',
   daemon_name: 'rebusd',

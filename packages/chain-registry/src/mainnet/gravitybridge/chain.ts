@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://www.gravitybridge.net/',
   pretty_name: 'Gravity Bridge',
+  chain_type: 'cosmos',
   chain_id: 'gravity-bridge-3',
   bech32_prefix: 'gravity',
   daemon_name: 'gravity',

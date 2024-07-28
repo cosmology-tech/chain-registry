@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Arkeo Network',
+  chain_type: 'cosmos',
   chain_id: 'arkeo',
   bech32_prefix: 'tarkeo',
   daemon_name: 'arkeod',

@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://wormhole.com',
   pretty_name: 'Wormhole Gateway',
+  chain_type: 'cosmos',
   chain_id: 'wormchain',
   bech32_prefix: 'wormhole',
   daemon_name: 'wormchaind',

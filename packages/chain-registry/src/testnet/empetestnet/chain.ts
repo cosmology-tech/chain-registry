@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'empetestnet',
+  chain_type: 'cosmos',
   chain_id: 'empe-testnet-2',
   website: 'https://empe.io',
   pretty_name: 'Empe',

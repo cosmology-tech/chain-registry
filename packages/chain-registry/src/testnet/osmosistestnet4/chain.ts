@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Osmosis Testnet',
+  chain_type: 'cosmos',
   chain_id: 'osmo-test-4',
   bech32_prefix: 'osmo',
   daemon_name: 'osmosisd',

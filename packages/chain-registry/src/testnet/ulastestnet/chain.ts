@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'ULAS',
+  chain_type: 'cosmos',
   chain_id: 'ulas',
   bech32_prefix: 'ulas',
   daemon_name: 'ulasd',

@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Planq Atlas Testnet',
+  chain_type: 'cosmos',
   chain_id: 'planq_7077-1',
   bech32_prefix: 'plq',
   daemon_name: 'planqd',

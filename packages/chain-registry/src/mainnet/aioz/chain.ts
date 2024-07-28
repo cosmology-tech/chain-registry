@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://aioz.network/',
   pretty_name: 'AIOZ Network',
+  chain_type: 'cosmos',
   chain_id: 'aioz_168-1',
   bech32_prefix: 'aioz',
   daemon_name: 'aiozd',

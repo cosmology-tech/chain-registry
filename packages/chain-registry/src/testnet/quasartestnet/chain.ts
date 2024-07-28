@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Quasar Testnet',
+  chain_type: 'cosmos',
   chain_id: 'quasar-test-1',
   bech32_prefix: 'quasar',
   daemon_name: 'quasarnoded',

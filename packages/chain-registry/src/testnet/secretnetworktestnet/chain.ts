@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Secret Network',
+  chain_type: 'cosmos',
   chain_id: 'pulsar-3',
   pre_fork_chain_name: 'secretnetworktestnet2',
   bech32_prefix: 'secret',

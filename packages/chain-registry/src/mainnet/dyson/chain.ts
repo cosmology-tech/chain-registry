@@ -6,6 +6,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'Dyson Protocol',
+  chain_type: 'cosmos',
   chain_id: 'dyson-mainnet-01',
   bech32_prefix: 'dys',
   node_home: '$HOME/.dyson',

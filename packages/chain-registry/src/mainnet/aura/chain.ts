@@ -6,6 +6,7 @@ const info: Chain = {
   network_type: 'mainnet',
   website: 'https://aura.network/',
   pretty_name: 'Aura Network',
+  chain_type: 'cosmos',
   chain_id: 'aura_6322-2',
   bech32_prefix: 'aura',
   daemon_name: 'aurad',

@@ -7,6 +7,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   pretty_name: 'Pryzm',
+  chain_type: 'cosmos',
   chain_id: 'pryzm-1',
   bech32_prefix: 'pryzm',
   daemon_name: 'pryzmd',

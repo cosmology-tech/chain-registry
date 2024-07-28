@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   pretty_name: 'Imversed Testnet',
+  chain_type: 'cosmos',
   chain_id: 'imversed-test-1',
   bech32_prefix: 'imv',
   daemon_name: 'imversed',
