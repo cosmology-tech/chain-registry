@@ -73,8 +73,8 @@ const info: Chain = {
         provider: 'ValidatorNode'
       },
       {
-        address: 'https://rpc.trinityvalidator.com',
-        provider: 'Trinity Validator'
+        address: 'https://rpc.trinitystake.io',
+        provider: 'Trinity Stake'
       },
       {
         address: 'https://rpc.sentinelgrowthdao.com',
@@ -143,8 +143,8 @@ const info: Chain = {
         provider: 'ValidatorNode'
       },
       {
-        address: 'https://api.trinityvalidator.com',
-        provider: 'Trinity Validator'
+        address: 'https://api.trinitystake.io',
+        provider: 'Trinity Stake'
       },
       {
         address: 'https://api.sentinelgrowthdao.com',
