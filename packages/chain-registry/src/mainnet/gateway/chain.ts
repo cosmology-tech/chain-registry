@@ -22,11 +22,6 @@ const info: Chain = {
         high_gas_price: 0
       }]
   },
-  staking: {
-    staking_tokens: [{
-        denom: 'uworm'
-      }]
-  },
   codebase: {
     cosmos_sdk_version: 'github.com/wormhole-foundation/cosmos-sdk@v0.45.9-wormhole-2',
     cosmwasm_enabled: true,

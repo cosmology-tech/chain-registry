@@ -2,7 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'lava',
-  status: 'upcoming',
+  status: 'live',
   network_type: 'mainnet',
   website: 'https://lavanet.xyz/',
   update_link: 'https://raw.githubusercontent.com/lavanet/lava/main/chain.schema.json',
@@ -17,10 +17,10 @@ const info: Chain = {
   fees: {
     fee_tokens: [{
         denom: 'ulava',
-        fixed_min_gas_price: 1e-9,
-        low_gas_price: 1e-9,
-        average_gas_price: 0.00005,
-        high_gas_price: 0.0001
+        fixed_min_gas_price: 0.00002,
+        low_gas_price: 0.00002,
+        average_gas_price: 0.025,
+        high_gas_price: 0.05
       }]
   },
   staking: {
@@ -47,6 +47,10 @@ const info: Chain = {
   description: 'Lava (LAVA) is the data access layer of the modular stack. developers and ecosystems permissionlessly add services to be served or accessed through lava. featuring a fully decentralized open source sdk integrable in frontends and a battle tested fully scalable open source server kit and can be used locally or through managed endpoints. Lava features rpc data access, indexing services, debug apis, archive access and more. Service providers can join the network, earn rewards either in the native token of the chain via token bought subscriptions on chain or through any ibc transferred token via incentive pools created and funded by ecosystems and DAOs. Developers can use the abstraction and go multi chain in seconds, not needing to choose what tools to use, having the access aggregated for them. Build whatever, wherever.',
   apis: {
     rpc: [
+      {
+        address: 'https://lava.tendermintrpc.lava.build',
+        provider: 'Lava Over Lava'
+      },
       {
         address: 'https://lava-rpc.w3coins.io:443',
         provider: 'w3coins'
@@ -78,9 +82,17 @@ const info: Chain = {
       {
         address: 'https://lava.rpc-archive.m.stavr.tech:443',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://lava-rpc.stake-town.com:443',
+        provider: 'StakeTown'
       }
     ],
     rest: [
+      {
+        address: 'https://lava.rest.lava.build',
+        provider: 'Lava Over Lava'
+      },
       {
         address: 'https://lava-api.w3coins.io:443',
         provider: 'w3coins'
@@ -104,9 +116,17 @@ const info: Chain = {
       {
         address: 'https://lava.api-archive.m.stavr.tech',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://lava-api.stake-town.com:443',
+        provider: 'StakeTown'
       }
     ],
     grpc: [
+      {
+        address: 'lava.grpc.lava.build:443',
+        provider: 'Lava Over Lava'
+      },
       {
         address: 'lava-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
@@ -118,10 +138,19 @@ const info: Chain = {
       {
         address: 'lava.grpc-archive.m.stavr.tech:443',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'lava-grpc.stake-town.com:443',
+        provider: 'StakeTown'
       }
     ]
   },
   explorers: [{
+      kind: 'guru',
+      url: 'https://lava.explorers.guru/',
+      tx_page: 'ttps://lava.explorers.guru/transaction/${txHash}',
+      account_page: 'https://lava.explorers.guru/account/${accountAddress}'
+    }, {
       kind: 'w3coins',
       url: 'https://lava-explorer.w3coins.io/Lava',
       tx_page: 'https://lava-explorer.w3coins.io/Lava/tx/${txHash}',

@@ -70,6 +70,7 @@ export * as konstellation from './konstellation';
 export * as kujira from './kujira';
 export * as kyve from './kyve';
 export * as lambda from './lambda';
+export * as lava from './lava';
 export * as likecoin from './likecoin';
 export * as lumenx from './lumenx';
 export * as lumnetwork from './lumnetwork';

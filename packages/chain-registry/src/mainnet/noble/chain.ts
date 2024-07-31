@@ -28,14 +28,6 @@ const info: Chain = {
         high_gas_price: 0.02
       }]
   },
-  staking: {
-    staking_tokens: [{
-        denom: 'ustake'
-      }],
-    lock_duration: {
-      time: '1814400s'
-    }
-  },
   codebase: {
     cosmos_sdk_version: 'noble-assets/cosmos-sdk v0.45.16-send-restrictions',
     cosmwasm_enabled: false

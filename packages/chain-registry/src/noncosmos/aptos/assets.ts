@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chain_name: 'aptos',
   assets: [{
       description: 'Aptos token (APT) is the Aptos blockchain native token used for paying network and transaction fees.',

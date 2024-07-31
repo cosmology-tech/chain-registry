@@ -14,6 +14,7 @@ const info: AssetList = {
       type_asset: 'sdk.coin',
       base: 'ulava',
       name: 'Lava',
+      coingecko_id: 'lava-network',
       display: 'lava',
       symbol: 'LAVA',
       logo_URIs: {
