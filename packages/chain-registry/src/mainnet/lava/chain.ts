@@ -86,6 +86,10 @@ const info: Chain = {
       {
         address: 'https://lava-rpc.stake-town.com:443',
         provider: 'StakeTown'
+      },
+      {
+        address: 'https://lava.rpc.liveraven.net',
+        provider: 'LiveRaveN'
       }
     ],
     rest: [
@@ -120,6 +124,10 @@ const info: Chain = {
       {
         address: 'https://lava-api.stake-town.com:443',
         provider: 'StakeTown'
+      },
+      {
+        address: 'https://lava.api.liveraven.net',
+        provider: 'LiveRaveN'
       }
     ],
     grpc: [
@@ -142,6 +150,10 @@ const info: Chain = {
       {
         address: 'lava-grpc.stake-town.com:443',
         provider: 'StakeTown'
+      },
+      {
+        address: 'lava.grpc.liveraven.net:443',
+        provider: 'LiveRaveN'
       }
     ]
   },

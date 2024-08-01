@@ -17829,7 +17829,7 @@ const assets: AssetList = {
           aliases: ['upenumbra']
         }, {
           denom: 'penumbra',
-          exponent: 18
+          exponent: 6
         }],
       type_asset: 'ics20',
       base: 'ibc/0FA9232B262B89E77D1335D54FB1E1F506A92A7E4B51524B400DC69C68D28372',
@@ -17883,7 +17883,7 @@ const assets: AssetList = {
             chain_name: 'tron',
             base_denom: 'sun'
           },
-          provider: 'Nitro'
+          provider: 'Router'
         }],
       images: [{
           image_sync: {
@@ -17928,7 +17928,7 @@ const assets: AssetList = {
             chain_name: 'tron',
             base_denom: 'TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t'
           },
-          provider: 'Nitro'
+          provider: 'Router'
         }],
       images: [{
           image_sync: {
