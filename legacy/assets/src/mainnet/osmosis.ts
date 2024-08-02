@@ -3943,7 +3943,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Lava',
+      description: 'Lava Network is a modular data network designed to provide fast, reliable, and scalable access to blockchain data for developers and users.',
       denom_units: [{
           denom: 'ibc/1AEF145C549D4F9847C79E49710B198C294C7F4A107F4610DEE8E725FFC4B378',
           exponent: 0,
@@ -9160,7 +9160,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Lava',
+      description: 'Lava Network is a modular data network designed to provide fast, reliable, and scalable access to blockchain data for developers and users.',
       denom_units: [{
           denom: 'ibc/1AEF145C549D4F9847C79E49710B198C294C7F4A107F4610DEE8E725FFC4B378',
           exponent: 0,

@@ -29,8 +29,8 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc.testnet.bonlulu.uno',
-        provider: 'bonlulu'
+        address: 'https://rpc.testnet-8.union.build',
+        provider: 'union'
       },
       {
         address: 'https://union-testnet-rpc.polkachu.com',
@@ -47,8 +47,8 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://api.testnet.bonlulu.uno',
-        provider: 'bonlulu'
+        address: 'https://rest.testnet-8.union.build',
+        provider: 'union'
       },
       {
         address: 'https://union-testnet-api.polkachu.com',
@@ -65,8 +65,8 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'https://grpc.testnet.bonlulu.uno',
-        provider: 'bonlulu'
+        address: 'grpc.testnet-8.union.build',
+        provider: 'union'
       },
       {
         address: 'http://union-testnet-grpc.polkachu.com:24690',
@@ -87,9 +87,9 @@ const info: Chain = {
   },
   explorers: [{
       kind: 'ping.pub',
-      url: 'https://testnet.bonlulu.uno/union',
-      tx_page: 'https://testnet.bonlulu.uno/union/tx/${txHash}',
-      account_page: 'https://testnet.bonlulu.uno/union/account/${accountAddress}'
+      url: 'https://explorer.testnet-8.union.build/union',
+      tx_page: 'https://explorer.testnet-8.union.build/union/tx/${txHash}',
+      account_page: 'https://explorer.testnet-8.union.build/union/account/${accountAddress}'
     }, {
       kind: 'explorers.guru',
       url: 'https://testnet.union.explorers.guru',

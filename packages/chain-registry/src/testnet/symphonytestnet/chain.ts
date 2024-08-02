@@ -35,14 +35,23 @@ const info: Chain = {
     rpc: [{
         address: 'https://rpc.testnet.symphonychain.org/',
         provider: 'Orchestra Labs'
+      }, {
+        address: 'https://symphony-testnet-rpc.cogwheel.zone',
+        provider: 'Cogwheel ⚙️ '
       }],
     rest: [{
         address: 'https://lcd.testnet.symphonychain.org/',
         provider: 'Orchestra Labs'
+      }, {
+        address: 'https://symphony-testnet-api.cogwheel.zone',
+        provider: 'Cogwheel ⚙️ '
       }],
     grpc: [{
         address: 'grpc.testnet.symphonychain.org:9090',
         provider: 'Orchestra Labs'
+      }, {
+        address: 'symphony-testnet-grpc.cogwheel.zone:443',
+        provider: 'Cogwheel ⚙️ '
       }]
   },
   logo_URIs: {

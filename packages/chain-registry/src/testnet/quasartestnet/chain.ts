@@ -27,36 +27,57 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.45.16',
+    cosmos_sdk_version: '0.47.12',
     cosmwasm_enabled: true,
-    cosmwasm_version: '0.31'
+    cosmwasm_version: '0.45.0'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.svg'
   },
   apis: {
-    rpc: [{
+    rpc: [
+      {
         address: 'https://quasar-testnet-rpc.polkachu.com/',
         provider: 'Polkachu'
-      }, {
+      },
+      {
         address: 'https://quasar-testnet-rpc.stakeandrelax.net/',
         provider: 'Stake and Relax'
-      }],
-    rest: [{
+      },
+      {
+        address: 'https://quasar-testnet.rpc.kjnodes.com',
+        provider: 'KJNodes.com'
+      }
+    ],
+    rest: [
+      {
         address: 'https://quasar-testnet-api.polkachu.com/',
         provider: 'Polkachu'
-      }, {
+      },
+      {
         address: 'https://quasar-testnet-api.stakeandrelax.net/',
         provider: 'Stake and Relax'
-      }],
-    grpc: [{
+      },
+      {
+        address: 'https://quasar-testnet.api.kjnodes.com/',
+        provider: 'KJNodes.com'
+      }
+    ],
+    grpc: [
+      {
         address: 'quasar-testnet-grpc.polkachu.com:18290',
         provider: 'Polkachu'
-      }, {
+      },
+      {
         address: 'http://quasar-testnet-grpc.stakeandrelax.net:18290/',
         provider: 'Stake and Relax'
-      }]
+      },
+      {
+        address: 'quasar-testnet.grpc.kjnodes.com:443',
+        provider: 'KJNodes.com'
+      }
+    ]
   },
   keywords: ['testnet'],
   images: [{
