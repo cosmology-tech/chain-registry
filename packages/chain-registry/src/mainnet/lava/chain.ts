@@ -90,6 +90,10 @@ const info: Chain = {
       {
         address: 'https://lava.rpc.liveraven.net',
         provider: 'LiveRaveN'
+      },
+      {
+        address: 'https://lava-mainnet-rpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
     rest: [
@@ -128,6 +132,10 @@ const info: Chain = {
       {
         address: 'https://lava.api.liveraven.net',
         provider: 'LiveRaveN'
+      },
+      {
+        address: 'https://lava-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
     grpc: [
@@ -154,13 +162,17 @@ const info: Chain = {
       {
         address: 'lava.grpc.liveraven.net:443',
         provider: 'LiveRaveN'
+      },
+      {
+        address: 'lava-mainnet-grpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ]
   },
   explorers: [{
       kind: 'guru',
       url: 'https://lava.explorers.guru/',
-      tx_page: 'ttps://lava.explorers.guru/transaction/${txHash}',
+      tx_page: 'https://lava.explorers.guru/transaction/${txHash}',
       account_page: 'https://lava.explorers.guru/account/${accountAddress}'
     }, {
       kind: 'w3coins',

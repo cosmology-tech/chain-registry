@@ -2,7 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: '8ball',
-  status: 'live',
+  status: 'killed',
   website: 'https://8ball.info/',
   network_type: 'mainnet',
   pretty_name: '8ball',

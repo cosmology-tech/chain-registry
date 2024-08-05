@@ -77,10 +77,6 @@ const info: Chain = {
         provider: 'High Stakes 🇨🇭'
       },
       {
-        address: 'https://band-rpc.stake-town.com',
-        provider: 'StakeTown'
-      },
-      {
         address: 'https://public.stakewolle.com/cosmos/bandchain/rpc',
         provider: 'Stakewolle'
       },
@@ -135,10 +131,6 @@ const info: Chain = {
         provider: 'High Stakes 🇨🇭'
       },
       {
-        address: 'https://band-api.stake-town.com',
-        provider: 'StakeTown'
-      },
-      {
         address: 'https://public.stakewolle.com/cosmos/bandchain/rest',
         provider: 'Stakewolle'
       },
@@ -187,10 +179,6 @@ const info: Chain = {
       {
         address: 'band.grpc.kjnodes.com:443',
         provider: 'kjnodes'
-      },
-      {
-        address: 'band-grpc.stake-town.com:443',
-        provider: 'StakeTown'
       },
       {
         address: 'grpc.band.bronbro.io:443',

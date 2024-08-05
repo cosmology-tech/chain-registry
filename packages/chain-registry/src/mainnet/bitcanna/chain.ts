@@ -438,7 +438,7 @@ const info: Chain = {
       account_page: 'https://explorer.kalia.network/bitcanna/account/${accountAddress}'
     },
     {
-      kind: 'AVIAONE',
+      kind: 'AviaOne Explorer 🟢',
       url: 'https://mainnet.explorer.aviaone.com/bitcanna',
       tx_page: 'https://mainnet.explorer.aviaone.com/bitcanna/tx/${txHash}',
       account_page: 'https://mainnet.explorer.aviaone.com/bitcanna/account/${accountAddress}'
