@@ -145,6 +145,7 @@ import * as _realio from './realio';
 import * as _rebus from './rebus';
 import * as _regen from './regen';
 import * as _rizon from './rizon';
+import * as _routerchain from './routerchain';
 import * as _saga from './saga';
 import * as _scorum from './scorum';
 import * as _secretnetwork from './secretnetwork';
@@ -166,6 +167,7 @@ import * as _starname from './starname';
 import * as _stratos from './stratos';
 import * as _stride from './stride';
 import * as _sunrise from './sunrise';
+import * as _synternet from './synternet';
 import * as _taketitan from './taketitan';
 import * as _tenet from './tenet';
 import * as _teritori from './teritori';
@@ -328,6 +330,7 @@ const assets: AssetList[] = [
   _rebus.assets,
   _regen.assets,
   _rizon.assets,
+  _routerchain.assets,
   _saga.assets,
   _scorum.assets,
   _secretnetwork.assets,
@@ -349,6 +352,7 @@ const assets: AssetList[] = [
   _stratos.assets,
   _stride.assets,
   _sunrise.assets,
+  _synternet.assets,
   _taketitan.assets,
   _tenet.assets,
   _teritori.assets,

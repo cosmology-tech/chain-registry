@@ -163,7 +163,7 @@ const info: Chain = {
         provider: 'HexNodes'
       },
       {
-        address: 'grpc.bitcanna-1.bitcanna.aviaone.com:9092',
+        address: 'grpc.bitcanna-1.bitcanna.aviaone.com:9102',
         provider: 'AVIAONE 🟢'
       },
       {
@@ -273,7 +273,7 @@ const info: Chain = {
         provider: 'genznodes'
       },
       {
-        address: 'https://api.bitcanna-1.bitcanna.aviaone.com/',
+        address: 'https://api.bitcanna-1.bitcanna.aviaone.com',
         provider: 'AVIAONE 🟢'
       },
       {
@@ -454,6 +454,12 @@ const info: Chain = {
       url: 'https://explorer.whenmoonwhenlambo.money/bitcanna',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/bitcanna/tx/${txHash}',
       account_page: 'https://explorer.whenmoonwhenlambo.money/bitcanna/account/${accountAddress}'
+    },
+    {
+      kind: 'AviaOne Explorer 🟢',
+      url: 'https://mainnet.explorer.aviaone.com/bitcanna',
+      tx_page: 'https://mainnet.explorer.aviaone.com/bitcanna/tx/${txHash}',
+      account_page: 'https://mainnet.explorer.aviaone.com/bitcanna/account/${accountAddress}'
     }
   ],
   images: [{

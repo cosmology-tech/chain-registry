@@ -360,7 +360,7 @@ const assets: AssetList = {
       description: 'The native token of the Titan network.',
       denom_units: [
         {
-          denom: 'ibc/88434761790405D6F5B87C35B24B5CA7D1A12BF4C8832BEB601D4409E71777AD',
+          denom: 'ibc/5D117E795758A846D84F90ED2CDBB092B5AF5BFDA5E16C70D7E78D41CD856DEA',
           exponent: 0,
           aliases: ['atkx']
         },
@@ -380,7 +380,7 @@ const assets: AssetList = {
           aliases: []
         }
       ],
-      base: 'ibc/88434761790405D6F5B87C35B24B5CA7D1A12BF4C8832BEB601D4409E71777AD',
+      base: 'ibc/5D117E795758A846D84F90ED2CDBB092B5AF5BFDA5E16C70D7E78D41CD856DEA',
       display: 'tkx',
       name: 'titan tkx',
       symbol: 'TKX',
@@ -394,12 +394,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-1',
+            channel_id: 'channel-5',
             base_denom: 'atkx',
             chain_name: 'titantestnet'
           },
           chain: {
-            channel_id: 'channel-448'
+            channel_id: 'channel-537'
           }
         }]
     },
@@ -794,7 +794,7 @@ const assets: AssetList = {
       description: 'The native token of the Titan network.',
       denom_units: [
         {
-          denom: 'ibc/88434761790405D6F5B87C35B24B5CA7D1A12BF4C8832BEB601D4409E71777AD',
+          denom: 'ibc/5D117E795758A846D84F90ED2CDBB092B5AF5BFDA5E16C70D7E78D41CD856DEA',
           exponent: 0,
           aliases: ['atkx']
         },
@@ -814,7 +814,7 @@ const assets: AssetList = {
           aliases: []
         }
       ],
-      base: 'ibc/88434761790405D6F5B87C35B24B5CA7D1A12BF4C8832BEB601D4409E71777AD',
+      base: 'ibc/5D117E795758A846D84F90ED2CDBB092B5AF5BFDA5E16C70D7E78D41CD856DEA',
       display: 'tkx',
       name: 'titan tkx',
       symbol: 'TKX',
@@ -828,12 +828,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-1',
+            channel_id: 'channel-5',
             base_denom: 'atkx',
             chain_name: 'titantestnet'
           },
           chain: {
-            channel_id: 'channel-448'
+            channel_id: 'channel-537'
           }
         }]
     },

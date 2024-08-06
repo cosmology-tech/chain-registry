@@ -146,6 +146,7 @@ import * as _realio from './realio';
 import * as _rebus from './rebus';
 import * as _regen from './regen';
 import * as _rizon from './rizon';
+import * as _routerchain from './routerchain';
 import * as _saga from './saga';
 import * as _scorum from './scorum';
 import * as _secretnetwork from './secretnetwork';
@@ -167,6 +168,7 @@ import * as _starname from './starname';
 import * as _stratos from './stratos';
 import * as _stride from './stride';
 import * as _sunrise from './sunrise';
+import * as _synternet from './synternet';
 import * as _taketitan from './taketitan';
 import * as _tenet from './tenet';
 import * as _teritori from './teritori';
@@ -331,6 +333,7 @@ const chains: Chain[] = [
   _rebus.chain,
   _regen.chain,
   _rizon.chain,
+  _routerchain.chain,
   _saga.chain,
   _scorum.chain,
   _secretnetwork.chain,
@@ -352,6 +355,7 @@ const chains: Chain[] = [
   _stratos.chain,
   _stride.chain,
   _sunrise.chain,
+  _synternet.chain,
   _taketitan.chain,
   _tenet.chain,
   _teritori.chain,

@@ -5,14 +5,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Axelar',
       denom_units: [{
-          denom: 'ibc/0E1517E2771CA7C03F2ED3F9BAECCAEADF0BFD79B89679E834933BC0F179AD98',
+          denom: 'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
           exponent: 0,
           aliases: ['uaxl']
         }, {
           denom: 'axl',
           exponent: 6
         }],
-      base: 'ibc/0E1517E2771CA7C03F2ED3F9BAECCAEADF0BFD79B89679E834933BC0F179AD98',
+      base: 'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
       name: 'Axelar',
       display: 'axl',
       symbol: 'AXL',
@@ -28,12 +28,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-448',
+            channel_id: 'channel-537',
             base_denom: 'uaxl',
             chain_name: 'axelartestnet'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }]
     },
@@ -181,14 +181,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Axelar',
       denom_units: [{
-          denom: 'ibc/0E1517E2771CA7C03F2ED3F9BAECCAEADF0BFD79B89679E834933BC0F179AD98',
+          denom: 'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
           exponent: 0,
           aliases: ['uaxl']
         }, {
           denom: 'axl',
           exponent: 6
         }],
-      base: 'ibc/0E1517E2771CA7C03F2ED3F9BAECCAEADF0BFD79B89679E834933BC0F179AD98',
+      base: 'ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2',
       name: 'Axelar',
       display: 'axl',
       symbol: 'AXL',
@@ -204,12 +204,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-448',
+            channel_id: 'channel-537',
             base_denom: 'uaxl',
             chain_name: 'axelartestnet'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }]
     },

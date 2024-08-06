@@ -94,6 +94,10 @@ const info: Chain = {
       {
         address: 'https://lava-mainnet-rpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://lava-rpc.bluestake.net:443',
+        provider: 'BlueStake 🚀'
       }
     ],
     rest: [
@@ -136,6 +140,10 @@ const info: Chain = {
       {
         address: 'https://lava-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://lava-api.bluestake.net',
+        provider: 'BlueStake 🚀'
       }
     ],
     grpc: [

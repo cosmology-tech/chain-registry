@@ -4,21 +4,21 @@ const info: IBCInfo[] = [
     $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'axelartestnet',
-      client_id: '07-tendermint-858',
-      connection_id: 'connection-663'
+      client_id: '07-tendermint-1001',
+      connection_id: 'connection-780'
     },
     chain_2: {
       chain_name: 'titantestnet',
-      client_id: '07-tendermint-1',
-      connection_id: 'connection-1'
+      client_id: '07-tendermint-6',
+      connection_id: 'connection-4'
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-448',
+          channel_id: 'channel-537',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-1',
+          channel_id: 'channel-5',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -53,7 +53,7 @@ const info: IBCInfo[] = [
         ordering: 'unordered',
         version: 'ics20-1',
         tags: {
-          status: 'live',
+          status: 'killed',
           preferred: true
         }
       }]
@@ -82,7 +82,7 @@ const info: IBCInfo[] = [
         ordering: 'unordered',
         version: 'ics20-1',
         tags: {
-          status: 'live',
+          status: 'killed',
           preferred: true
         }
       }]
@@ -111,7 +111,7 @@ const info: IBCInfo[] = [
         ordering: 'unordered',
         version: 'ics20-1',
         tags: {
-          status: 'live',
+          status: 'killed',
           preferred: true
         }
       }]

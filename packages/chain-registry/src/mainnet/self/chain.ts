@@ -44,6 +44,10 @@ const info: Chain = {
       {
         address: 'https://selfchain_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://selfchain.rpc.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️'
       }
     ],
     rest: [
@@ -62,11 +66,18 @@ const info: Chain = {
       {
         address: 'https://selfchain_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://selfchain.api.nodeshub.online',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️'
       }
     ],
     grpc: [{
         address: 'grpc.selfchain.roomit.xyz:8443',
         provider: 'Roomit'
+      }, {
+        address: 'selfchain.grpc.nodeshub.online',
+        provider: 'Nodes Hub'
       }]
   },
   explorers: [
@@ -93,6 +104,12 @@ const info: Chain = {
       url: 'https://explorer.whenmoonwhenlambo.money/self',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/self/tx/${txHash}',
       account_page: 'https://explorer.whenmoonwhenlambo.money/self/account/${accountAddress}'
+    },
+    {
+      kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️',
+      url: 'https://explorer.nodeshub.online/selfchain/',
+      tx_page: 'https://explorer.nodeshub.online/selfchain/tx/${txHash}',
+      account_page: 'https://explorer.nodeshub.online/selfchain/accounts/${accountAddress}'
     }
   ],
   images: [{

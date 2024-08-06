@@ -97,6 +97,7 @@ import * as _stridetestnet from './stridetestnet';
 import * as _sunrisetestnet from './sunrisetestnet';
 import * as _swisstroniktestnet from './swisstroniktestnet';
 import * as _symphonytestnet from './symphonytestnet';
+import * as _synternettestnet from './synternettestnet';
 import * as _temporaltestnet from './temporaltestnet';
 import * as _terpnettestnet from './terpnettestnet';
 import * as _terpnettestnet2 from './terpnettestnet2';
@@ -209,6 +210,7 @@ const assets: AssetList[] = [
   _sunrisetestnet.assets,
   _swisstroniktestnet.assets,
   _symphonytestnet.assets,
+  _synternettestnet.assets,
   _temporaltestnet.assets,
   _terpnettestnet.assets,
   _terpnettestnet2.assets,

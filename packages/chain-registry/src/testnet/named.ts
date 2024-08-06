@@ -95,6 +95,7 @@ export * as stridetestnet from './stridetestnet';
 export * as sunrisetestnet from './sunrisetestnet';
 export * as swisstroniktestnet from './swisstroniktestnet';
 export * as symphonytestnet from './symphonytestnet';
+export * as synternettestnet from './synternettestnet';
 export * as temporaltestnet from './temporaltestnet';
 export * as terpnettestnet from './terpnettestnet';
 export * as terpnettestnet2 from './terpnettestnet2';

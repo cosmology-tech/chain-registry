@@ -67,6 +67,10 @@ const info: Chain = {
       {
         address: 'https://ki-rpc.ibs.team/',
         provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://rpc.kichain-2.kichain.aviaone.com',
+        provider: 'AVIAONE 🟢'
       }
     ],
     rest: [
@@ -105,6 +109,10 @@ const info: Chain = {
       {
         address: 'https://ki-api.ibs.team/',
         provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://api.kichain-2.kichain.aviaone.com',
+        provider: 'AVIAONE 🟢'
       }
     ],
     grpc: [
@@ -127,6 +135,10 @@ const info: Chain = {
       {
         address: 'kichain-grpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'grpc.kichain-2.kichain.aviaone.com:9230',
+        provider: 'AVIAONE 🟢'
       }
     ]
   },
@@ -158,6 +170,12 @@ const info: Chain = {
       url: 'https://atomscan.com/ki-chain',
       tx_page: 'https://atomscan.com/ki-chain/transactions/${txHash}',
       account_page: 'https://atomscan.com/ki-chain/accounts/${accountAddress}'
+    },
+    {
+      kind: 'AVIAONE Explorer 🟢',
+      url: 'https://mainnet.explorer.aviaone.com/kichain',
+      tx_page: 'https://mainnet.explorer.aviaone.com/kichain/transactions/${txHash}',
+      account_page: 'https://mainnet.explorer.aviaone.com/kichain/accounts/${accountAddress}'
     }
   ],
   images: [{

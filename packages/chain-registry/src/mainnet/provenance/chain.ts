@@ -73,6 +73,10 @@ const info: Chain = {
       {
         address: 'https://provenance_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://rpc.pio-mainnet-1.provenance.aviaone.com',
+        provider: 'AVIAONE 🟢'
       }
     ],
     rest: [
@@ -115,6 +119,10 @@ const info: Chain = {
       {
         address: 'https://provenance_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://api.pio-mainnet-1.provenance.aviaone.com',
+        provider: 'AVIAONE 🟢'
       }
     ],
     grpc: [
@@ -137,6 +145,10 @@ const info: Chain = {
       {
         address: 'provenance-grpc.panthea.eu:16780',
         provider: 'Panthea EU'
+      },
+      {
+        address: 'grpc.pio-mainnet-1.provenance.aviaone.com:9231',
+        provider: 'AVIAONE 🟢'
       }
     ]
   },
@@ -185,6 +197,12 @@ const info: Chain = {
       url: 'https://explorer.whenmoonwhenlambo.money/provenance',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/provenance/tx/${txHash}',
       account_page: 'https://explorer.whenmoonwhenlambo.money/provenance/account/${accountAddress}'
+    },
+    {
+      kind: 'AVIAONE 🟢',
+      url: 'https://mainnet.explorer.aviaone.com/provenance',
+      tx_page: 'https://mainnet.explorer.aviaone.com/provenance/tx/${txHash}',
+      account_page: 'https://mainnet.explorer.aviaone.com/provenance/account/${accountAddress}'
     }
   ],
   images: [{

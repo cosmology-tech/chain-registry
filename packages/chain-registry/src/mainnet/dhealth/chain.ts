@@ -37,33 +37,59 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.svg'
   },
   apis: {
-    rpc: [{
+    rpc: [
+      {
         address: 'https://rpc.dhealth.com',
         provider: 'dhealth'
-      }, {
+      },
+      {
         address: 'https://rpc.dhealth.nodestake.org',
         provider: 'NodeStake'
-      }],
-    rest: [{
+      },
+      {
+        address: 'https://dhealth.rpc.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️'
+      }
+    ],
+    rest: [
+      {
         address: 'https://lcd.dhealth.com',
         provider: 'dhealth'
-      }, {
+      },
+      {
         address: 'https://api.dhealth.nodestake.org',
         provider: 'NodeStake'
-      }],
-    grpc: [{
+      },
+      {
+        address: 'https://dhealth.api.nodeshub.online',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️'
+      }
+    ],
+    grpc: [
+      {
         address: 'https://grpc.dhealth.com:443',
         provider: 'dhealth'
-      }, {
+      },
+      {
         address: 'https://grpc.dhealth.nodestake.org:443',
         provider: 'NodeStake'
-      }]
+      },
+      {
+        address: 'dhealth.grpc.nodeshub.online',
+        provider: 'Nodes Hub'
+      }
+    ]
   },
   explorers: [{
       kind: 'nodestake',
       url: 'https://explorer.nodestake.org/dhealth',
       tx_page: 'https://explorer.nodestake.org/dhealth/tx/${txHash}',
       account_page: 'https://explorer.nodestake.org/dhealth/account/${accountAddress}'
+    }, {
+      kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️',
+      url: 'https://explorer.nodeshub.online/dhealth/',
+      tx_page: 'https://explorer.nodeshub.online/dhealth/tx/${txHash}',
+      account_page: 'https://explorer.nodeshub.online/dhealth/accounts/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.png',

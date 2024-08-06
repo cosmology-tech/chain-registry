@@ -98,6 +98,10 @@ const info: Chain = {
       {
         address: 'https://rpc.g-bridge.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://rpc.gravity-bridge-3.gravity.aviaone.com:443',
+        provider: 'AviaOne 🟢'
       }
     ],
     rest: [
@@ -144,6 +148,10 @@ const info: Chain = {
       {
         address: 'https://lcd.g-bridge.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://api.gravity-bridge-3.gravity.aviaone.com',
+        provider: 'AviaOne 🟢'
       }
     ],
     grpc: [
@@ -182,6 +190,10 @@ const info: Chain = {
       {
         address: 'https://grpc.g-bridge.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'grpc.gravity-bridge-3.gravity.aviaone.com:9200',
+        provider: 'AviaOne 🟢'
       }
     ]
   },
@@ -229,6 +241,12 @@ const info: Chain = {
       url: 'https://explorer.stavr.tech/GravityBridge',
       tx_page: 'https://explorer.stavr.tech/GravityBridge/tx/${txHash}',
       account_page: 'https://explorer.stavr.tech/GravityBridge/accounts/${accountAddress}'
+    },
+    {
+      kind: 'AviaOne 🟢',
+      url: 'https://mainnet.explorer.aviaone.com/gravity-bridge',
+      tx_page: 'https://mainnet.explorer.aviaone.com/gravity-bridge/tx/${txHash}',
+      account_page: 'https://mainnet.explorer.aviaone.com/gravity-bridge/accounts/${accountAddress}'
     }
   ],
   images: [{
