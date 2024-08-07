@@ -98,6 +98,10 @@ const info: Chain = {
       {
         address: 'https://lava-rpc.bluestake.net:443',
         provider: 'BlueStake 🚀'
+      },
+      {
+        address: 'https://lava.rpc.stakevillage.net:443',
+        provider: 'Stake Village'
       }
     ],
     rest: [
@@ -144,6 +148,10 @@ const info: Chain = {
       {
         address: 'https://lava-api.bluestake.net',
         provider: 'BlueStake 🚀'
+      },
+      {
+        address: 'https://lava.api.stakevillage.net:443',
+        provider: 'Stake Village'
       }
     ],
     grpc: [
@@ -174,20 +182,33 @@ const info: Chain = {
       {
         address: 'lava-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'lava.grpc.stakevillage.net:443',
+        provider: 'Stake Village'
       }
     ]
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'guru',
       url: 'https://lava.explorers.guru/',
       tx_page: 'https://lava.explorers.guru/transaction/${txHash}',
       account_page: 'https://lava.explorers.guru/account/${accountAddress}'
-    }, {
+    },
+    {
       kind: 'w3coins',
       url: 'https://lava-explorer.w3coins.io/Lava',
       tx_page: 'https://lava-explorer.w3coins.io/Lava/tx/${txHash}',
       account_page: 'https://lava-explorer.w3coins.io/Lava/account/${accountAddress}'
-    }],
+    },
+    {
+      kind: 'Stake Village',
+      url: 'https://exp.stakevillage.net/lava-mainnet',
+      tx_page: 'https://exp.stakevillage.net/lava-mainnet/tx/${txHash}',
+      account_page: 'https://exp.stakevillage.net/lava-mainnet/account/${accountAddress}'
+    }
+  ],
   keywords: [
     'modular',
     'data',

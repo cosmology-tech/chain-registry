@@ -3,15 +3,16 @@ const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'routerchain',
   chain_type: 'cosmos',
-  chain_id: '9600',
+  chain_id: 'router_9600-1',
   pretty_name: 'Router Protocol',
   status: 'live',
   network_type: 'mainnet',
   website: 'https://www.routerprotocol.com/',
   bech32_prefix: 'router',
+  node_home: '$HOME/.routerd',
   daemon_name: 'routerd',
   key_algos: ['secp256k1'],
-  slip44: 118,
+  slip44: 60,
   fees: {
     fee_tokens: [{
         denom: 'route',
