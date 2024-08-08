@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.68.53 (2024-08-08)
+
+**Note:** Version bump only for package @chain-registry/keplr
+
+
+
+
+
 ## 1.68.52 (2024-08-07)
 
 **Note:** Version bump only for package @chain-registry/keplr
