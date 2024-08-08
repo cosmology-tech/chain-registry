@@ -11150,6 +11150,44 @@ const asset_list: AssetList = {
         }]
     },
     {
+      description: 'The native token of Router Chain',
+      denom_units: [{
+          denom: 'ibc/3F8F00094F0F79D17750FF69C5F09B078084018570AAF4F1C92C86D3F73E6488',
+          exponent: 0,
+          aliases: ['route']
+        }, {
+          denom: 'ROUTE',
+          exponent: 18
+        }],
+      base: 'ibc/3F8F00094F0F79D17750FF69C5F09B078084018570AAF4F1C92C86D3F73E6488',
+      name: 'Router Chain',
+      display: 'ROUTE',
+      symbol: 'ROUTE',
+      coingecko_id: 'route',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.png'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.png',
+          theme: {
+            primary_color_hex: '#cb0766'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-7',
+            base_denom: 'route',
+            chain_name: 'routerchain'
+          },
+          chain: {
+            channel_id: 'channel-79180'
+          }
+        }]
+    },
+    {
       description: 'Saga is a blockchain platform focused on providing customizable blockchain solutions with a strong emphasis on security and scalability.',
       denom_units: [{
           denom: 'ibc/094FB70C3006906F67F5D674073D2DAFAFB41537E7033098F5C752F211E7B6C2',
@@ -13974,6 +14012,44 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-221'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Router Chain',
+      denom_units: [{
+          denom: 'ibc/3F8F00094F0F79D17750FF69C5F09B078084018570AAF4F1C92C86D3F73E6488',
+          exponent: 0,
+          aliases: ['route']
+        }, {
+          denom: 'ROUTE',
+          exponent: 18
+        }],
+      base: 'ibc/3F8F00094F0F79D17750FF69C5F09B078084018570AAF4F1C92C86D3F73E6488',
+      name: 'Router Chain',
+      display: 'ROUTE',
+      symbol: 'ROUTE',
+      coingecko_id: 'route',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.png'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.png',
+          theme: {
+            primary_color_hex: '#cb0766'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-7',
+            base_denom: 'route',
+            chain_name: 'routerchain'
+          },
+          chain: {
+            channel_id: 'channel-79180'
           }
         }]
     },

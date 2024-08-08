@@ -7,7 +7,7 @@ const info: Chain = {
   pretty_name: 'MANTRA Hongbai Testnet',
   chain_type: 'cosmos',
   chain_id: 'mantra-hongbai-1',
-  bech32_prefix: 'uom',
+  bech32_prefix: 'mantra',
   daemon_name: 'mantrachaind',
   node_home: '$HOME/.mantrachain',
   key_algos: ['secp256k1'],

@@ -114,6 +114,7 @@ import * as _realio from './realio';
 import * as _rebus from './rebus';
 import * as _regen from './regen';
 import * as _rizon from './rizon';
+import * as _routerchain from './routerchain';
 import * as _saga from './saga';
 import * as _scorum from './scorum';
 import * as _secretnetwork from './secretnetwork';
@@ -257,6 +258,7 @@ const ibc: IBCInfo[] = [
   ..._rebus.ibc,
   ..._regen.ibc,
   ..._rizon.ibc,
+  ..._routerchain.ibc,
   ..._saga.ibc,
   ..._scorum.ibc,
   ..._secretnetwork.ibc,

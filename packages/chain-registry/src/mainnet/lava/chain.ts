@@ -69,7 +69,7 @@ const info: Chain = {
       },
       {
         address: 'https://rpc.lava-mainnet-1.lava.aviaone.com:443',
-        provider: 'AVIAONE'
+        provider: 'AVIAONE 🟢'
       },
       {
         address: 'https://lava-rpc.publicnode.com:443',
@@ -119,7 +119,7 @@ const info: Chain = {
       },
       {
         address: 'https://api.lava-mainnet-1.lava.aviaone.com',
-        provider: 'AVIAONE'
+        provider: 'AVIAONE 🟢'
       },
       {
         address: 'https://lava-rest.publicnode.com',
@@ -186,6 +186,10 @@ const info: Chain = {
       {
         address: 'lava.grpc.stakevillage.net:443',
         provider: 'Stake Village'
+      },
+      {
+        address: 'grpc.lava-mainnet-1.lava.aviaone.com:9104/',
+        provider: 'AVIAONE 🟢'
       }
     ]
   },
@@ -207,6 +211,12 @@ const info: Chain = {
       url: 'https://exp.stakevillage.net/lava-mainnet',
       tx_page: 'https://exp.stakevillage.net/lava-mainnet/tx/${txHash}',
       account_page: 'https://exp.stakevillage.net/lava-mainnet/account/${accountAddress}'
+    },
+    {
+      kind: 'AVIAONE 🟢',
+      url: 'https://mainnet.explorer.aviaone.com/lava/',
+      tx_page: 'https://mainnet.explorer.aviaone.com/lava/tx/${txHash}',
+      account_page: 'https://mainnet.explorer.aviaone.com/lava/account/${accountAddress}'
     }
   ],
   keywords: [

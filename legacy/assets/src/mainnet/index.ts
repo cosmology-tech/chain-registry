@@ -112,6 +112,7 @@ export * as realio from './realio';
 export * as rebus from './rebus';
 export * as regen from './regen';
 export * as rizon from './rizon';
+export * as routerchain from './routerchain';
 export * as saga from './saga';
 export * as scorum from './scorum';
 export * as secretnetwork from './secretnetwork';

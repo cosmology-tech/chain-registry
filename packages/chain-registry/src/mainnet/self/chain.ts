@@ -48,6 +48,10 @@ const info: Chain = {
       {
         address: 'https://selfchain.rpc.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️'
+      },
+      {
+        address: 'https://selfchain-mainnet.rpc.stakevillage.net:443',
+        provider: 'Stake Village'
       }
     ],
     rest: [
@@ -70,15 +74,26 @@ const info: Chain = {
       {
         address: 'https://selfchain.api.nodeshub.online',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️'
+      },
+      {
+        address: 'https://selfchain-mainnet.api.stakevillage.net',
+        provider: 'Stake Village'
       }
     ],
-    grpc: [{
+    grpc: [
+      {
         address: 'grpc.selfchain.roomit.xyz:8443',
         provider: 'Roomit'
-      }, {
+      },
+      {
         address: 'selfchain.grpc.nodeshub.online',
         provider: 'Nodes Hub'
-      }]
+      },
+      {
+        address: 'selfchain-mainnet.grpc.stakevillage.net:443',
+        provider: 'Stake Village'
+      }
+    ]
   },
   explorers: [
     {
@@ -110,6 +125,12 @@ const info: Chain = {
       url: 'https://explorer.nodeshub.online/selfchain/',
       tx_page: 'https://explorer.nodeshub.online/selfchain/tx/${txHash}',
       account_page: 'https://explorer.nodeshub.online/selfchain/accounts/${accountAddress}'
+    },
+    {
+      kind: 'Stake Village',
+      url: 'https://exp.stakevillage.net/selfchain-mainnet',
+      tx_page: 'https://exp.stakevillage.net/selfchain-mainnet/tx/${txHash}',
+      account_page: 'https://exp.stakevillage.net/selfchain-mainnet/accounts/${accountAddress}'
     }
   ],
   images: [{

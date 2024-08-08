@@ -150,6 +150,10 @@ const info: Chain = {
       {
         address: 'http://rpc-c4e.cryptech.com.ua:443',
         provider: 'Cryptech'
+      },
+      {
+        address: 'http://37.60.240.43:46657',
+        provider: 'NakoTurk'
       }
     ],
     rest: [
