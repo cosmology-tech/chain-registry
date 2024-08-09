@@ -53,6 +53,13 @@ const info: Chain = {
       }, {
         address: 'router-grpc.genznodes.dev:3090',
         provider: 'genznodes'
+      }],
+    "evm-http-jsonrpc": [{
+        address: 'https://sentry.evm.rpc.routerprotocol.com',
+        provider: 'Router'
+      }, {
+        address: 'https://router-rpc-evm.genznodes.dev',
+        provider: 'genznodes'
       }]
   },
   explorers: [

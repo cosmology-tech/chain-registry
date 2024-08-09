@@ -315,6 +315,53 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of the Titan network.',
+      denom_units: [
+        {
+          denom: 'ibc/F4A4713F419E8769A4094CC87A7B2408398B1CD144B6877F68A6A0877C691565',
+          exponent: 0,
+          aliases: ['atkx']
+        },
+        {
+          denom: 'utkx',
+          exponent: 12,
+          aliases: ['microtkx']
+        },
+        {
+          denom: 'mtkx',
+          exponent: 15,
+          aliases: ['millitkx']
+        },
+        {
+          denom: 'tkx',
+          exponent: 18,
+          aliases: []
+        }
+      ],
+      base: 'ibc/F4A4713F419E8769A4094CC87A7B2408398B1CD144B6877F68A6A0877C691565',
+      display: 'tkx',
+      name: 'titan tkx',
+      symbol: 'TKX',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
+        }],
+      keywords: ['staking'],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-7',
+            base_denom: 'atkx',
+            chain_name: 'titantestnet'
+          },
+          chain: {
+            channel_id: 'channel-208'
+          }
+        }]
+    },
+    {
       description: 'The native staking token of the Xion network.',
       denom_units: [{
           denom: 'ibc/475ED5117C702EF62A36D41F1EB50AF2770427251920C605CA34014895FF10EC',
@@ -490,6 +537,53 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-4'
+          }
+        }]
+    },
+    {
+      description: 'The native token of the Titan network.',
+      denom_units: [
+        {
+          denom: 'ibc/F4A4713F419E8769A4094CC87A7B2408398B1CD144B6877F68A6A0877C691565',
+          exponent: 0,
+          aliases: ['atkx']
+        },
+        {
+          denom: 'utkx',
+          exponent: 12,
+          aliases: ['microtkx']
+        },
+        {
+          denom: 'mtkx',
+          exponent: 15,
+          aliases: ['millitkx']
+        },
+        {
+          denom: 'tkx',
+          exponent: 18,
+          aliases: []
+        }
+      ],
+      base: 'ibc/F4A4713F419E8769A4094CC87A7B2408398B1CD144B6877F68A6A0877C691565',
+      display: 'tkx',
+      name: 'titan tkx',
+      symbol: 'TKX',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
+        }],
+      keywords: ['staking'],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-7',
+            base_denom: 'atkx',
+            chain_name: 'titantestnet'
+          },
+          chain: {
+            channel_id: 'channel-208'
           }
         }]
     },

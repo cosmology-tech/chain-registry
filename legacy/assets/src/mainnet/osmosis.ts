@@ -29640,7 +29640,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Alem is a local currency for the region of Alentejo in Portugal, sibling of Dinheiros, Reis and Alem, a token of dioalma.protocol.',
+      description: 'Alem is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
       denom_units: [{
           denom: 'ibc/ED11A4C3C7090F571BA5918A7DC828CD4D84C62BB65819D2012FF528914070DF',
           exponent: 0,
@@ -29670,6 +29670,240 @@ const assets: AssetList = {
             port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
             channel_id: 'channel-85',
             base_denom: 'cw20:terra1cmf8ytutcwrjrv08zskj9phuh46a3w3nkjax7en4hxezsrdr58lqvzy05q',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }]
+    },
+    {
+      description: 'almagem is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/48181F07E2926C34B576975F41A763C2DD8FAB72DDF767DB3E5C74D481702458',
+          exponent: 0,
+          aliases: ['cw20:terra1en42e2vsvtdsvrcqg5s5e5e4djejjaed6fxmvtpweg3tu33h6k5qkg9c40']
+        }, {
+          denom: 'AMG',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1en42e2vsvtdsvrcqg5s5e5e4djejjaed6fxmvtpweg3tu33h6k5qkg9c40',
+      base: 'ibc/48181F07E2926C34B576975F41A763C2DD8FAB72DDF767DB3E5C74D481702458',
+      name: 'almagem',
+      display: 'AMG',
+      symbol: 'AMG',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/almagem.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/almagem.png',
+          theme: {
+            primary_color_hex: '#d1b295'
+          }
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1en42e2vsvtdsvrcqg5s5e5e4djejjaed6fxmvtpweg3tu33h6k5qkg9c40',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }]
+    },
+    {
+      description: 'arika is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/F2336F11762C81459BEE128F1E02D50451C9E323CFDD13A8EA0E16210B3DB21C',
+          exponent: 0,
+          aliases: ['cw20:terra1ysd87nayjuelxj4wvp4wnp9as0mwszzkje6a9z6f3xx2903ghnsq4hm50y']
+        }, {
+          denom: 'ARK',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1ysd87nayjuelxj4wvp4wnp9as0mwszzkje6a9z6f3xx2903ghnsq4hm50y',
+      base: 'ibc/F2336F11762C81459BEE128F1E02D50451C9E323CFDD13A8EA0E16210B3DB21C',
+      name: 'arika',
+      display: 'ARK',
+      symbol: 'ARK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arika.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arika.png',
+          theme: {
+            primary_color_hex: '#d1b295'
+          }
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1ysd87nayjuelxj4wvp4wnp9as0mwszzkje6a9z6f3xx2903ghnsq4hm50y',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }]
+    },
+    {
+      description: 'danu is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/78CAE7506E28750D3F4116B74531000B9D2535B6DF07FAD25179BB3ECCE4153E',
+          exponent: 0,
+          aliases: ['cw20:terra1vj68f2ntauaj5dfvy5z4tq4we3hsyg363k63js5sae2t7th9aacqan89sr']
+        }, {
+          denom: 'DANU',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1vj68f2ntauaj5dfvy5z4tq4we3hsyg363k63js5sae2t7th9aacqan89sr',
+      base: 'ibc/78CAE7506E28750D3F4116B74531000B9D2535B6DF07FAD25179BB3ECCE4153E',
+      name: 'danu',
+      display: 'DANU',
+      symbol: 'DANU',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/danu.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/danu.png',
+          theme: {
+            primary_color_hex: '#d1b295'
+          }
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1vj68f2ntauaj5dfvy5z4tq4we3hsyg363k63js5sae2t7th9aacqan89sr',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }]
+    },
+    {
+      description: 'torus is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/129335060D0EA13A2712524AC6A8790549FC5CED7FEDF29643E54F9E92FDA121',
+          exponent: 0,
+          aliases: ['cw20:terra1swzpenwh39f8aa7qht34r05f8ew6k2vehvqt2aw4fjy0fgghhheqs9l6h7']
+        }, {
+          denom: 'TRS',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1swzpenwh39f8aa7qht34r05f8ew6k2vehvqt2aw4fjy0fgghhheqs9l6h7',
+      base: 'ibc/129335060D0EA13A2712524AC6A8790549FC5CED7FEDF29643E54F9E92FDA121',
+      name: 'torus',
+      display: 'TRS',
+      symbol: 'TRS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/trs.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/trs.png',
+          theme: {
+            primary_color_hex: '#d1b295'
+          }
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1swzpenwh39f8aa7qht34r05f8ew6k2vehvqt2aw4fjy0fgghhheqs9l6h7',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }]
+    },
+    {
+      description: 'plasma is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/8E49ABB7B070F65D1F379BA521D873B29B65864F0791FCAFCA241EE23F854E30',
+          exponent: 0,
+          aliases: ['cw20:terra1mqs6mdx0ak7qvjzs6efhg65g4j5pzwpdkcgdsv5tpekln3qhggrq3qzvdp']
+        }, {
+          denom: 'PLASMA',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1mqs6mdx0ak7qvjzs6efhg65g4j5pzwpdkcgdsv5tpekln3qhggrq3qzvdp',
+      base: 'ibc/8E49ABB7B070F65D1F379BA521D873B29B65864F0791FCAFCA241EE23F854E30',
+      name: 'plasma',
+      display: 'PLASMA',
+      symbol: 'PLASMA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/plasma.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/plasma.png',
+          theme: {
+            primary_color_hex: '#d1b295'
+          }
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1mqs6mdx0ak7qvjzs6efhg65g4j5pzwpdkcgdsv5tpekln3qhggrq3qzvdp',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }]
+    },
+    {
+      description: 'dmt is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/12FC7AE39C50C1C8E394014E643845D64AA179EDEC34886D0447F86BE2997730',
+          exponent: 0,
+          aliases: ['cw20:terra1xfkkgwxychgrnq0vcp82u32mecrzj8s64s03cxtmf46k6j2n2wssc7rzjf']
+        }, {
+          denom: 'DMT',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1xfkkgwxychgrnq0vcp82u32mecrzj8s64s03cxtmf46k6j2n2wssc7rzjf',
+      base: 'ibc/12FC7AE39C50C1C8E394014E643845D64AA179EDEC34886D0447F86BE2997730',
+      name: 'dmt',
+      display: 'DMT',
+      symbol: 'DMT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/dmt.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/dmt.png',
+          theme: {
+            primary_color_hex: '#d1b295'
+          }
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1xfkkgwxychgrnq0vcp82u32mecrzj8s64s03cxtmf46k6j2n2wssc7rzjf',
             chain_name: 'terra2'
           },
           chain: {
@@ -38141,7 +38375,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Alem is a local currency for the region of Alentejo in Portugal, sibling of Dinheiros, Reis and Alem, a token of dioalma.protocol.',
+      description: 'Alem is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
       denom_units: [{
           denom: 'ibc/ED11A4C3C7090F571BA5918A7DC828CD4D84C62BB65819D2012FF528914070DF',
           exponent: 0,
@@ -38171,6 +38405,240 @@ const assets: AssetList = {
             port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
             channel_id: 'channel-85',
             base_denom: 'cw20:terra1cmf8ytutcwrjrv08zskj9phuh46a3w3nkjax7en4hxezsrdr58lqvzy05q',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }]
+    },
+    {
+      description: 'almagem is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/48181F07E2926C34B576975F41A763C2DD8FAB72DDF767DB3E5C74D481702458',
+          exponent: 0,
+          aliases: ['cw20:terra1en42e2vsvtdsvrcqg5s5e5e4djejjaed6fxmvtpweg3tu33h6k5qkg9c40']
+        }, {
+          denom: 'AMG',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1en42e2vsvtdsvrcqg5s5e5e4djejjaed6fxmvtpweg3tu33h6k5qkg9c40',
+      base: 'ibc/48181F07E2926C34B576975F41A763C2DD8FAB72DDF767DB3E5C74D481702458',
+      name: 'almagem',
+      display: 'AMG',
+      symbol: 'AMG',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/almagem.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/almagem.png',
+          theme: {
+            primary_color_hex: '#d1b295'
+          }
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1en42e2vsvtdsvrcqg5s5e5e4djejjaed6fxmvtpweg3tu33h6k5qkg9c40',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }]
+    },
+    {
+      description: 'arika is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/F2336F11762C81459BEE128F1E02D50451C9E323CFDD13A8EA0E16210B3DB21C',
+          exponent: 0,
+          aliases: ['cw20:terra1ysd87nayjuelxj4wvp4wnp9as0mwszzkje6a9z6f3xx2903ghnsq4hm50y']
+        }, {
+          denom: 'ARK',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1ysd87nayjuelxj4wvp4wnp9as0mwszzkje6a9z6f3xx2903ghnsq4hm50y',
+      base: 'ibc/F2336F11762C81459BEE128F1E02D50451C9E323CFDD13A8EA0E16210B3DB21C',
+      name: 'arika',
+      display: 'ARK',
+      symbol: 'ARK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arika.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arika.png',
+          theme: {
+            primary_color_hex: '#d1b295'
+          }
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1ysd87nayjuelxj4wvp4wnp9as0mwszzkje6a9z6f3xx2903ghnsq4hm50y',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }]
+    },
+    {
+      description: 'danu is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/78CAE7506E28750D3F4116B74531000B9D2535B6DF07FAD25179BB3ECCE4153E',
+          exponent: 0,
+          aliases: ['cw20:terra1vj68f2ntauaj5dfvy5z4tq4we3hsyg363k63js5sae2t7th9aacqan89sr']
+        }, {
+          denom: 'DANU',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1vj68f2ntauaj5dfvy5z4tq4we3hsyg363k63js5sae2t7th9aacqan89sr',
+      base: 'ibc/78CAE7506E28750D3F4116B74531000B9D2535B6DF07FAD25179BB3ECCE4153E',
+      name: 'danu',
+      display: 'DANU',
+      symbol: 'DANU',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/danu.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/danu.png',
+          theme: {
+            primary_color_hex: '#d1b295'
+          }
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1vj68f2ntauaj5dfvy5z4tq4we3hsyg363k63js5sae2t7th9aacqan89sr',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }]
+    },
+    {
+      description: 'torus is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/129335060D0EA13A2712524AC6A8790549FC5CED7FEDF29643E54F9E92FDA121',
+          exponent: 0,
+          aliases: ['cw20:terra1swzpenwh39f8aa7qht34r05f8ew6k2vehvqt2aw4fjy0fgghhheqs9l6h7']
+        }, {
+          denom: 'TRS',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1swzpenwh39f8aa7qht34r05f8ew6k2vehvqt2aw4fjy0fgghhheqs9l6h7',
+      base: 'ibc/129335060D0EA13A2712524AC6A8790549FC5CED7FEDF29643E54F9E92FDA121',
+      name: 'torus',
+      display: 'TRS',
+      symbol: 'TRS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/trs.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/trs.png',
+          theme: {
+            primary_color_hex: '#d1b295'
+          }
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1swzpenwh39f8aa7qht34r05f8ew6k2vehvqt2aw4fjy0fgghhheqs9l6h7',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }]
+    },
+    {
+      description: 'plasma is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/8E49ABB7B070F65D1F379BA521D873B29B65864F0791FCAFCA241EE23F854E30',
+          exponent: 0,
+          aliases: ['cw20:terra1mqs6mdx0ak7qvjzs6efhg65g4j5pzwpdkcgdsv5tpekln3qhggrq3qzvdp']
+        }, {
+          denom: 'PLASMA',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1mqs6mdx0ak7qvjzs6efhg65g4j5pzwpdkcgdsv5tpekln3qhggrq3qzvdp',
+      base: 'ibc/8E49ABB7B070F65D1F379BA521D873B29B65864F0791FCAFCA241EE23F854E30',
+      name: 'plasma',
+      display: 'PLASMA',
+      symbol: 'PLASMA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/plasma.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/plasma.png',
+          theme: {
+            primary_color_hex: '#d1b295'
+          }
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1mqs6mdx0ak7qvjzs6efhg65g4j5pzwpdkcgdsv5tpekln3qhggrq3qzvdp',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559'
+          }
+        }]
+    },
+    {
+      description: 'dmt is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/12FC7AE39C50C1C8E394014E643845D64AA179EDEC34886D0447F86BE2997730',
+          exponent: 0,
+          aliases: ['cw20:terra1xfkkgwxychgrnq0vcp82u32mecrzj8s64s03cxtmf46k6j2n2wssc7rzjf']
+        }, {
+          denom: 'DMT',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1xfkkgwxychgrnq0vcp82u32mecrzj8s64s03cxtmf46k6j2n2wssc7rzjf',
+      base: 'ibc/12FC7AE39C50C1C8E394014E643845D64AA179EDEC34886D0447F86BE2997730',
+      name: 'dmt',
+      display: 'DMT',
+      symbol: 'DMT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/dmt.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/dmt.png',
+          theme: {
+            primary_color_hex: '#d1b295'
+          }
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1xfkkgwxychgrnq0vcp82u32mecrzj8s64s03cxtmf46k6j2n2wssc7rzjf',
             chain_name: 'terra2'
           },
           chain: {

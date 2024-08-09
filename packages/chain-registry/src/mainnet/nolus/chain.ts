@@ -31,9 +31,9 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'nolus-protocol/cosmos-sdk v0.47.8-nolus',
+    cosmos_sdk_version: 'nolus-protocol/cosmos-sdk v0.50.7-nolus-rc1',
     cosmwasm_enabled: true,
-    cosmwasm_version: 'neutron-org/wasmd v0.45.0'
+    cosmwasm_version: 'neutron-org/wasmd v0.51.0'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
