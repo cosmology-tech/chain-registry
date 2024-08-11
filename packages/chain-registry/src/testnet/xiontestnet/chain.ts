@@ -2,11 +2,12 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chain_name: 'xiontestnet',
+  chain_id: 'xion-testnet-1',
+  pretty_name: 'Xion Testnet',
+  website: 'https://burnt.com',
   status: 'live',
   network_type: 'testnet',
-  pretty_name: 'Xion Testnet',
   chain_type: 'cosmos',
-  chain_id: 'xion-testnet-1',
   bech32_prefix: 'xion',
   daemon_name: 'xiond',
   node_home: '$HOME/.xiond',
@@ -15,8 +16,8 @@ const info: Chain = {
   fees: {
     fee_tokens: [{
         denom: 'uxion',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
+        fixed_min_gas_price: 0.025,
+        low_gas_price: 0.025,
         average_gas_price: 0.025,
         high_gas_price: 0.04
       }]
@@ -27,9 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.47.10',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.45.1'
+
   },
   apis: {
     rpc: [{
@@ -54,6 +53,9 @@ const info: Chain = {
         provider: 'polkachu'
       }]
   },
+  images: [{
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt.png'
+    }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt.png'
   },
@@ -61,9 +63,6 @@ const info: Chain = {
     'xion',
     'burnt',
     'testnet'
-  ],
-  images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt.png'
-    }]
+  ]
 };
 export default info;
