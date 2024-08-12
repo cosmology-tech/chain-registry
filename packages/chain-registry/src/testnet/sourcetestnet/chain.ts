@@ -52,6 +52,10 @@ const info: Chain = {
       {
         address: 'https://source-testnet.rpc.kjnodes.com',
         provider: 'kjnodes'
+      },
+      {
+        address: 'https://source_testnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -74,6 +78,10 @@ const info: Chain = {
       {
         address: 'https://source.api.t.stavr.tech',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://source_testnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [{
@@ -99,6 +107,12 @@ const info: Chain = {
       kind: 'SR20DE',
       url: 'https://explorer.sr20de.xyz/Source-testnet',
       tx_page: 'https://explorer.sr20de.xyz/Source-testnet/txs/${txHash}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/source-testnet',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/source-testnet/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/source-testnet/account/${accountAddress}'
     }
   ]
 };

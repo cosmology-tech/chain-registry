@@ -92,6 +92,10 @@ const info: Chain = {
       {
         address: 'https://rpc-injective.ecostake.com',
         provider: 'ecostake'
+      },
+      {
+        address: 'https://rpc-injective.kewrnode.com',
+        provider: 'Kewr Node'
       }
     ],
     rest: [
@@ -150,6 +154,10 @@ const info: Chain = {
       {
         address: 'https://rest-injective.ecostake.com',
         provider: 'ecostake'
+      },
+      {
+        address: 'https://rest-injective.kewrnode.com',
+        provider: 'Kewr Node'
       }
     ],
     grpc: [
