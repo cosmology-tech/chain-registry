@@ -177,6 +177,7 @@ import * as _terra2 from './terra2';
 import * as _tgrade from './tgrade';
 import * as _titan from './titan';
 import * as _umee from './umee';
+import * as _unicorn from './unicorn';
 import * as _unification from './unification';
 import * as _ununifi from './ununifi';
 import * as _uptick from './uptick';
@@ -362,6 +363,7 @@ const assets: AssetList[] = [
   _tgrade.assets,
   _titan.assets,
   _umee.assets,
+  _unicorn.assets,
   _unification.assets,
   _ununifi.assets,
   _uptick.assets,

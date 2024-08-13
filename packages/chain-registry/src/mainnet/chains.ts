@@ -179,6 +179,7 @@ import * as _tgrade from './tgrade';
 import * as _thorchain from './thorchain';
 import * as _titan from './titan';
 import * as _umee from './umee';
+import * as _unicorn from './unicorn';
 import * as _unification from './unification';
 import * as _ununifi from './ununifi';
 import * as _uptick from './uptick';
@@ -366,6 +367,7 @@ const chains: Chain[] = [
   _thorchain.chain,
   _titan.chain,
   _umee.chain,
+  _unicorn.chain,
   _unification.chain,
   _ununifi.chain,
   _uptick.chain,

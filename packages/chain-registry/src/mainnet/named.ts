@@ -177,6 +177,7 @@ export * as tgrade from './tgrade';
 export * as thorchain from './thorchain';
 export * as titan from './titan';
 export * as umee from './umee';
+export * as unicorn from './unicorn';
 export * as unification from './unification';
 export * as ununifi from './ununifi';
 export * as uptick from './uptick';

@@ -250,7 +250,11 @@ const assets: AssetList = {
       },
       coingecko_id: 'shiba-inu',
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg',
+          theme: {
+            primary_color_hex: '#FFA409',
+            background_color_hex: '#00000000'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -1987,7 +1991,11 @@ const assets: AssetList = {
       },
       coingecko_id: 'shiba-inu',
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg',
+          theme: {
+            primary_color_hex: '#FFA409',
+            background_color_hex: '#00000000'
+          }
         }],
       traces: [{
           type: 'ibc',

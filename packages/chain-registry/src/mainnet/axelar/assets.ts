@@ -1190,6 +1190,7 @@ const info: AssetList = {
       }
     },
     {
+      type_asset: 'sdk.coin',
       denom_units: [{
           denom: 'yum-wei',
           exponent: 0,
@@ -1225,6 +1226,7 @@ const info: AssetList = {
       }
     },
     {
+      type_asset: 'sdk.coin',
       denom_units: [{
           denom: 'arbitrum-weth-wei',
           exponent: 0
@@ -1253,6 +1255,7 @@ const info: AssetList = {
         }]
     },
     {
+      type_asset: 'sdk.coin',
       denom_units: [{
           denom: 'base-weth-wei',
           exponent: 0
@@ -1281,6 +1284,7 @@ const info: AssetList = {
         }]
     },
     {
+      type_asset: 'sdk.coin',
       denom_units: [{
           denom: 'polygon-weth-wei',
           exponent: 0
@@ -1306,6 +1310,40 @@ const info: AssetList = {
             base_denom: '0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg'
+        }]
+    },
+    {
+      type_asset: 'sdk.coin',
+      denom_units: [{
+          denom: 'op-wei',
+          exponent: 0,
+          aliases: ['0x4200000000000000000000000000000000000042']
+        }, {
+          denom: 'op',
+          exponent: 18
+        }],
+      base: 'op-wei',
+      name: 'Optimism',
+      display: 'op',
+      symbol: 'OP',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chain_name: 'optimism',
+            base_denom: '0x4200000000000000000000000000000000000042'
+          },
+          provider: 'Axelar'
+        }],
+      images: [{
+          image_sync: {
+            chain_name: 'optimism',
+            base_denom: '0x4200000000000000000000000000000000000042'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/optimism/images/op.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/optimism/images/op.png',
+          theme: {
+            primary_color_hex: '#fc0424'
+          }
         }]
     }
   ]
