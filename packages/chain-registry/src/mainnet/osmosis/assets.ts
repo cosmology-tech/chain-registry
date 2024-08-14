@@ -18065,7 +18065,7 @@ const info: AssetList = {
           exponent: 0
         }, {
           denom: 'op',
-          exponent: 18
+          exponent: 12
         }],
       type_asset: 'sdk.coin',
       address: 'osmo1nufyzqlm8qhu2w7lm0l4rrax0ec8rsk69mga4tel8eare7c7ljaqpk2lyg',
@@ -18136,7 +18136,7 @@ const info: AssetList = {
           exponent: 0
         }, {
           denom: 'shib',
-          exponent: 18
+          exponent: 12
         }],
       type_asset: 'sdk.coin',
       address: 'osmo1f588gk9dazpsueevdl2w6wfkmfmhg5gdvg2uerdlzl0atkasqhsq59qc6a',
@@ -18178,7 +18178,7 @@ const info: AssetList = {
           exponent: 0
         }, {
           denom: 'link',
-          exponent: 18
+          exponent: 12
         }],
       type_asset: 'sdk.coin',
       address: 'osmo18zdw5yvs6gfp95rp74qqwug9yduw2fyr8kplk2xgs726s9axc5usa2vpgw',
@@ -18220,7 +18220,7 @@ const info: AssetList = {
           exponent: 0
         }, {
           denom: 'pepe',
-          exponent: 18
+          exponent: 12
         }],
       type_asset: 'sdk.coin',
       address: 'osmo1nnlxegt0scm9qkzys9c874t0ntapv4epfjy2w49c0xdrp3dr0v4ssmelzx',
@@ -18261,7 +18261,7 @@ const info: AssetList = {
           exponent: 0
         }, {
           denom: 'arb',
-          exponent: 18
+          exponent: 12
         }],
       type_asset: 'sdk.coin',
       address: 'osmo1p7x454ex08s4f9ztmm7wfv7lvtgdkfztj2u7v7fezfcauy85q35qmqrdpk',
@@ -18302,7 +18302,7 @@ const info: AssetList = {
           exponent: 0
         }, {
           denom: 'dot',
-          exponent: 18
+          exponent: 10
         }],
       type_asset: 'sdk.coin',
       address: 'osmo1r53fx9fvcdzncrs7zkn4gw5vfelx5gk8k5wc6wqha2jpkh992rusr5tk02',

@@ -173,6 +173,10 @@ const info: Chain = {
       {
         address: 'https://rpc.cosmoshub-4.citizenweb3.com',
         provider: 'Citizen Web3'
+      },
+      {
+        address: 'https://cosmos-rpc.stakeandrelax.net',
+        provider: 'Stake&Relax 🦥'
       }
     ],
     rest: [
@@ -283,6 +287,10 @@ const info: Chain = {
       {
         address: 'https://rest-cosmos.kewrnode.com',
         provider: 'Kewr Node'
+      },
+      {
+        address: 'https://cosmos-api.stakeandrelax.net',
+        provider: 'Stake&Relax 🦥'
       }
     ],
     grpc: [
@@ -359,7 +367,7 @@ const info: Chain = {
         provider: 'Nodeist'
       },
       {
-        address: 'cosmos-grpc.stakeandrelax.net:14990',
+        address: 'cosmos-grpc.stakeandrelax.net:15090',
         provider: 'Stake&Relax 🦥'
       }
     ]
