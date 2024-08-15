@@ -5,14 +5,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Axelar',
       denom_units: [{
-          denom: 'ibc/0634D0993744740D675AD01E81156EAC945AEAAE17C074918DC7FF52F41B263E',
+          denom: 'ibc/062588846168EDFECF20F7681F2A0A131A53B9A3C8535BCA8F7D1A268246974B',
           exponent: 0,
           aliases: ['uaxl']
         }, {
           denom: 'axl',
           exponent: 6
         }],
-      base: 'ibc/0634D0993744740D675AD01E81156EAC945AEAAE17C074918DC7FF52F41B263E',
+      base: 'ibc/062588846168EDFECF20F7681F2A0A131A53B9A3C8535BCA8F7D1A268246974B',
       name: 'Axelar',
       display: 'axl',
       symbol: 'AXL',
@@ -28,26 +28,26 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-506',
+            channel_id: 'channel-540',
             base_denom: 'uaxl',
             chain_name: 'axelartestnet'
           },
           chain: {
-            channel_id: 'channel-4'
+            channel_id: 'channel-7'
           }
         }]
     },
     {
       description: 'The native token of Axelar',
       denom_units: [{
-          denom: 'ibc/0634D0993744740D675AD01E81156EAC945AEAAE17C074918DC7FF52F41B263E',
+          denom: 'ibc/062588846168EDFECF20F7681F2A0A131A53B9A3C8535BCA8F7D1A268246974B',
           exponent: 0,
           aliases: ['uaxl']
         }, {
           denom: 'axl',
           exponent: 6
         }],
-      base: 'ibc/0634D0993744740D675AD01E81156EAC945AEAAE17C074918DC7FF52F41B263E',
+      base: 'ibc/062588846168EDFECF20F7681F2A0A131A53B9A3C8535BCA8F7D1A268246974B',
       name: 'Axelar',
       display: 'axl',
       symbol: 'AXL',
@@ -63,78 +63,78 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-506',
+            channel_id: 'channel-540',
             base_denom: 'uaxl',
             chain_name: 'axelartestnet'
           },
           chain: {
-            channel_id: 'channel-4'
+            channel_id: 'channel-7'
           }
         }]
     },
     {
       description: 'The controlled staking asset for Noble Chain',
       denom_units: [{
-          denom: 'ibc/0CC1485F7DF4F335F6F416C46EDB77B09557EC7E5B7215BED40EB741D45FD6C8',
+          denom: 'ibc/B73E9196C59EB34F42BECE5EA20511B33A0B1286B23210FDEEAA1AE876C037C7',
           exponent: 0,
           aliases: ['ustake']
         }, {
           denom: 'stake',
           exponent: 6
         }],
-      base: 'ibc/0CC1485F7DF4F335F6F416C46EDB77B09557EC7E5B7215BED40EB741D45FD6C8',
+      base: 'ibc/B73E9196C59EB34F42BECE5EA20511B33A0B1286B23210FDEEAA1AE876C037C7',
       name: 'Stake',
       display: 'stake',
       symbol: 'STAKE',
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-174',
+            channel_id: 'channel-209',
             base_denom: 'ustake',
             chain_name: 'nobletestnet'
           },
           chain: {
-            channel_id: 'channel-3'
+            channel_id: 'channel-6'
           }
         }]
     },
     {
       description: 'Love is a test tokenfactory asset controlled by the Strangelove Team',
       denom_units: [{
-          denom: 'ibc/A4DB4D17B664D8D4EE8FEE7C4B94CBA11BE6C2220CFD17D38B177623B4405144',
+          denom: 'ibc/F4F6A43C577D89E0378157FA0C6DBF205356CBDDBC08656C858318B9B0A8D711',
           exponent: 0,
           aliases: ['ulove']
         }, {
           denom: 'love',
           exponent: 6
         }],
-      base: 'ibc/A4DB4D17B664D8D4EE8FEE7C4B94CBA11BE6C2220CFD17D38B177623B4405144',
+      base: 'ibc/F4F6A43C577D89E0378157FA0C6DBF205356CBDDBC08656C858318B9B0A8D711',
       display: 'love',
       name: 'Love',
       symbol: 'LOVE',
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-174',
+            channel_id: 'channel-209',
             base_denom: 'ulove',
             chain_name: 'nobletestnet'
           },
           chain: {
-            channel_id: 'channel-3'
+            channel_id: 'channel-6'
           }
         }]
     },
     {
       description: 'Ondo US Dollar Yield',
       denom_units: [{
-          denom: 'ibc/441C99C902014BEFAB273290871973B8C0EAEAC141CD6574FCBD9232774C7EA5',
+          denom: 'ibc/91F767993B4EE4FAE1CD94094005554A277F0643F16DBE8EB080304E1308015C',
           exponent: 0,
           aliases: ['ausdy']
         }, {
           denom: 'usdy',
           exponent: 18
         }],
-      base: 'ibc/441C99C902014BEFAB273290871973B8C0EAEAC141CD6574FCBD9232774C7EA5',
+      base: 'ibc/91F767993B4EE4FAE1CD94094005554A277F0643F16DBE8EB080304E1308015C',
       display: 'usdy',
       name: 'Ondo US Dollar Yield',
       symbol: 'USDY',
@@ -149,19 +149,19 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-174',
+            channel_id: 'channel-209',
             base_denom: 'ausdy',
             chain_name: 'nobletestnet'
           },
           chain: {
-            channel_id: 'channel-3'
+            channel_id: 'channel-6'
           }
         }]
     },
     {
       description: 'The native token of Osmosis',
       denom_units: [{
-          denom: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
+          denom: 'ibc/D24B4564BCD51D3D02D9987D92571EAC5915676A9BD6D9B0C1D0254CB8A5EA34',
           exponent: 0,
           aliases: ['uosmo']
         }, {
@@ -170,7 +170,7 @@ const assets: AssetList = {
           aliases: []
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
+      base: 'ibc/D24B4564BCD51D3D02D9987D92571EAC5915676A9BD6D9B0C1D0254CB8A5EA34',
       name: 'Osmosis Testnet',
       display: 'osmo',
       symbol: 'OSMO',
@@ -187,18 +187,18 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-7944',
+            channel_id: 'channel-8734',
             base_denom: 'uosmo',
             chain_name: 'osmosistestnet'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }]
     },
     {
       denom_units: [{
-          denom: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
+          denom: 'ibc/07F71BEE7FA84450268B4F6895417F12FBCD1792B57C98431F5210E42117B206',
           exponent: 0,
           aliases: ['uion']
         }, {
@@ -206,7 +206,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
+      base: 'ibc/07F71BEE7FA84450268B4F6895417F12FBCD1792B57C98431F5210E42117B206',
       name: 'Ion',
       display: 'ion',
       symbol: 'ION',
@@ -223,78 +223,78 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-7944',
+            channel_id: 'channel-8734',
             base_denom: 'uion',
             chain_name: 'osmosistestnet'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }]
     },
     {
       description: 'The controlled staking asset for Noble Chain',
       denom_units: [{
-          denom: 'ibc/0CC1485F7DF4F335F6F416C46EDB77B09557EC7E5B7215BED40EB741D45FD6C8',
+          denom: 'ibc/B73E9196C59EB34F42BECE5EA20511B33A0B1286B23210FDEEAA1AE876C037C7',
           exponent: 0,
           aliases: ['ustake']
         }, {
           denom: 'stake',
           exponent: 6
         }],
-      base: 'ibc/0CC1485F7DF4F335F6F416C46EDB77B09557EC7E5B7215BED40EB741D45FD6C8',
+      base: 'ibc/B73E9196C59EB34F42BECE5EA20511B33A0B1286B23210FDEEAA1AE876C037C7',
       name: 'Stake',
       display: 'stake',
       symbol: 'STAKE',
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-174',
+            channel_id: 'channel-209',
             base_denom: 'ustake',
             chain_name: 'nobletestnet'
           },
           chain: {
-            channel_id: 'channel-3'
+            channel_id: 'channel-6'
           }
         }]
     },
     {
       description: 'Love is a test tokenfactory asset controlled by the Strangelove Team',
       denom_units: [{
-          denom: 'ibc/A4DB4D17B664D8D4EE8FEE7C4B94CBA11BE6C2220CFD17D38B177623B4405144',
+          denom: 'ibc/F4F6A43C577D89E0378157FA0C6DBF205356CBDDBC08656C858318B9B0A8D711',
           exponent: 0,
           aliases: ['ulove']
         }, {
           denom: 'love',
           exponent: 6
         }],
-      base: 'ibc/A4DB4D17B664D8D4EE8FEE7C4B94CBA11BE6C2220CFD17D38B177623B4405144',
+      base: 'ibc/F4F6A43C577D89E0378157FA0C6DBF205356CBDDBC08656C858318B9B0A8D711',
       display: 'love',
       name: 'Love',
       symbol: 'LOVE',
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-174',
+            channel_id: 'channel-209',
             base_denom: 'ulove',
             chain_name: 'nobletestnet'
           },
           chain: {
-            channel_id: 'channel-3'
+            channel_id: 'channel-6'
           }
         }]
     },
     {
       description: 'Ondo US Dollar Yield',
       denom_units: [{
-          denom: 'ibc/441C99C902014BEFAB273290871973B8C0EAEAC141CD6574FCBD9232774C7EA5',
+          denom: 'ibc/91F767993B4EE4FAE1CD94094005554A277F0643F16DBE8EB080304E1308015C',
           exponent: 0,
           aliases: ['ausdy']
         }, {
           denom: 'usdy',
           exponent: 18
         }],
-      base: 'ibc/441C99C902014BEFAB273290871973B8C0EAEAC141CD6574FCBD9232774C7EA5',
+      base: 'ibc/91F767993B4EE4FAE1CD94094005554A277F0643F16DBE8EB080304E1308015C',
       display: 'usdy',
       name: 'Ondo US Dollar Yield',
       symbol: 'USDY',
@@ -309,19 +309,19 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-174',
+            channel_id: 'channel-209',
             base_denom: 'ausdy',
             chain_name: 'nobletestnet'
           },
           chain: {
-            channel_id: 'channel-3'
+            channel_id: 'channel-6'
           }
         }]
     },
     {
       description: 'The native token of Osmosis',
       denom_units: [{
-          denom: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
+          denom: 'ibc/D24B4564BCD51D3D02D9987D92571EAC5915676A9BD6D9B0C1D0254CB8A5EA34',
           exponent: 0,
           aliases: ['uosmo']
         }, {
@@ -330,7 +330,7 @@ const assets: AssetList = {
           aliases: []
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
+      base: 'ibc/D24B4564BCD51D3D02D9987D92571EAC5915676A9BD6D9B0C1D0254CB8A5EA34',
       name: 'Osmosis Testnet',
       display: 'osmo',
       symbol: 'OSMO',
@@ -347,18 +347,18 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-7944',
+            channel_id: 'channel-8734',
             base_denom: 'uosmo',
             chain_name: 'osmosistestnet'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }]
     },
     {
       denom_units: [{
-          denom: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
+          denom: 'ibc/07F71BEE7FA84450268B4F6895417F12FBCD1792B57C98431F5210E42117B206',
           exponent: 0,
           aliases: ['uion']
         }, {
@@ -366,7 +366,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
+      base: 'ibc/07F71BEE7FA84450268B4F6895417F12FBCD1792B57C98431F5210E42117B206',
       name: 'Ion',
       display: 'ion',
       symbol: 'ION',
@@ -383,12 +383,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-7944',
+            channel_id: 'channel-8734',
             base_denom: 'uion',
             chain_name: 'osmosistestnet'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-5'
           }
         }]
     }

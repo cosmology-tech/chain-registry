@@ -153,9 +153,9 @@ const info: Chain = {
   explorers: [
     {
       kind: 'ezstaking',
-      url: 'https://ezstaking.app/mars',
-      tx_page: 'https://ezstaking.app/mars/txs/${txHash}',
-      account_page: 'https://ezstaking.app/mars/account/${accountAddress}'
+      url: 'https://ezstaking.app/mars-protocol',
+      tx_page: 'https://ezstaking.app/mars-protocol/txs/${txHash}',
+      account_page: 'https://ezstaking.app/mars-protocol/account/${accountAddress}'
     },
     {
       kind: 'BigDipper',

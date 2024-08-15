@@ -4,21 +4,21 @@ const info: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'axelartestnet',
-      client_id: '07-tendermint-953',
-      connection_id: 'connection-734'
+      client_id: '07-tendermint-1009',
+      connection_id: 'connection-783'
     },
     chain_2: {
       chain_name: 'mantrachaintestnet',
-      client_id: '07-tendermint-4',
-      connection_id: 'connection-4'
+      client_id: '07-tendermint-7',
+      connection_id: 'connection-7'
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-506',
+          channel_id: 'channel-540',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-4',
+          channel_id: 'channel-7',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -33,21 +33,21 @@ const info: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'mantrachaintestnet',
-      client_id: '07-tendermint-3',
-      connection_id: 'connection-3'
+      client_id: '07-tendermint-6',
+      connection_id: 'connection-6'
     },
     chain_2: {
       chain_name: 'nobletestnet',
-      client_id: '07-tendermint-256',
-      connection_id: 'connection-207'
+      client_id: '07-tendermint-294',
+      connection_id: 'connection-247'
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-3',
+          channel_id: 'channel-6',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-174',
+          channel_id: 'channel-209',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -62,21 +62,21 @@ const info: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'mantrachaintestnet',
-      client_id: '07-tendermint-1',
-      connection_id: 'connection-1'
+      client_id: '07-tendermint-5',
+      connection_id: 'connection-5'
     },
     chain_2: {
       chain_name: 'osmosistestnet',
-      client_id: '07-tendermint-3545',
-      connection_id: 'connection-3106'
+      client_id: '07-tendermint-3930',
+      connection_id: 'connection-3411'
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-1',
+          channel_id: 'channel-5',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-7944',
+          channel_id: 'channel-8734',
           port_id: 'transfer'
         },
         ordering: 'unordered',

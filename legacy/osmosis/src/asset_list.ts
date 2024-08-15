@@ -3428,6 +3428,38 @@ const asset_list: AssetList = {
         }]
     },
     {
+      description: 'DRUGS meme coin',
+      denom_units: [{
+          denom: 'ibc/5F036A5A222C8F4CD24621B353F605AA5F686C66D45EB4439D0789913D3EA637',
+          exponent: 0,
+          aliases: ['inj19vy83ne9tzta2yqynj8yg7dq9ghca6yqn9hyej']
+        }, {
+          denom: 'DRUGS',
+          exponent: 6
+        }],
+      base: 'ibc/5F036A5A222C8F4CD24621B353F605AA5F686C66D45EB4439D0789913D3EA637',
+      name: 'DRUGS',
+      display: 'DRUGS',
+      symbol: 'DRUGS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/drugs.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/drugs.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'inj19vy83ne9tzta2yqynj8yg7dq9ghca6yqn9hyej',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-122'
+          }
+        }]
+    },
+    {
       description: 'The IRIS token is the native governance token for the IrisNet chain.',
       denom_units: [{
           denom: 'ibc/7C4D60AA95E5A7558B0A364860979CA34B7FF8AAF255B87AF9E879374470CEC0',
@@ -8637,6 +8669,38 @@ const asset_list: AssetList = {
           counterparty: {
             channel_id: 'channel-8',
             base_denom: 'inj1fzquxxxam59z6fzewy2hvvreeh3m04x83zg4vv',
+            chain_name: 'injective'
+          },
+          chain: {
+            channel_id: 'channel-122'
+          }
+        }]
+    },
+    {
+      description: 'DRUGS meme coin',
+      denom_units: [{
+          denom: 'ibc/5F036A5A222C8F4CD24621B353F605AA5F686C66D45EB4439D0789913D3EA637',
+          exponent: 0,
+          aliases: ['inj19vy83ne9tzta2yqynj8yg7dq9ghca6yqn9hyej']
+        }, {
+          denom: 'DRUGS',
+          exponent: 6
+        }],
+      base: 'ibc/5F036A5A222C8F4CD24621B353F605AA5F686C66D45EB4439D0789913D3EA637',
+      name: 'DRUGS',
+      display: 'DRUGS',
+      symbol: 'DRUGS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/drugs.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/drugs.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'inj19vy83ne9tzta2yqynj8yg7dq9ghca6yqn9hyej',
             chain_name: 'injective'
           },
           chain: {

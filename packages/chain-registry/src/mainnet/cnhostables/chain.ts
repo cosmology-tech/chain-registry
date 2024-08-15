@@ -39,10 +39,16 @@ const info: Chain = {
     rpc: [{
         address: 'https://rpc.cnho.io',
         provider: 'CNHO Stables'
+      }, {
+        address: 'https://cnhostables_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }],
     rest: [{
         address: 'https://api.cnho.io',
         provider: 'CNHO Stables'
+      }, {
+        address: 'https://cnhostables_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }],
     grpc: [{
         address: '159.138.232.248:9090',
@@ -53,6 +59,11 @@ const info: Chain = {
       url: 'https://explorer.cnho.io',
       tx_page: 'https://explorer.cnho.io/transaction/${txHash}',
       account_page: 'https://explorer.cnho.io/account/${accountAddress}'
+    }, {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/cnhostables',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/cnhostables/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/cnhostables/account/${accountAddress}'
     }],
   keywords: ['CNHO'],
   images: [{

@@ -31,7 +31,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channnel-8686',
+            channel_id: 'channel-8686',
             base_denom: 'uosmo',
             chain_name: 'osmosistestnet'
           },
@@ -67,7 +67,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channnel-8686',
+            channel_id: 'channel-8686',
             base_denom: 'uion',
             chain_name: 'osmosistestnet'
           },
@@ -138,7 +138,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channnel-8686',
+            channel_id: 'channel-8686',
             base_denom: 'uosmo',
             chain_name: 'osmosistestnet'
           },
@@ -174,7 +174,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channnel-8686',
+            channel_id: 'channel-8686',
             base_denom: 'uion',
             chain_name: 'osmosistestnet'
           },
