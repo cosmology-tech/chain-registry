@@ -1191,6 +1191,46 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Deenar gold-backed stablecoin',
+      denom_units: [{
+          denom: 'ibc/4D3E3BE7ABF8AB1C13DEE7E6773C9EA1F479EF2D84A3B2DD071475C873AA8F78',
+          exponent: 0,
+          aliases: ['erc20/0x4FEBDDe47Ab9a76200e57eFcC80b212a07b3e6cE']
+        }, {
+          denom: 'DEEN',
+          exponent: 6
+        }],
+      base: 'ibc/4D3E3BE7ABF8AB1C13DEE7E6773C9EA1F479EF2D84A3B2DD071475C873AA8F78',
+      name: 'Deenar',
+      display: 'DEEN',
+      address: '0x4FEBDDe47Ab9a76200e57eFcC80b212a07b3e6cE',
+      symbol: 'DEEN',
+      type_asset: 'erc20',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'erc20/0x4FEBDDe47Ab9a76200e57eFcC80b212a07b3e6cE',
+            chain_name: 'haqq'
+          },
+          chain: {
+            channel_id: 'channel-100'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.svg',
+          theme: {
+            primary_color_hex: '#ffbc05',
+            circle: true
+          }
+        }]
+    },
+    {
       description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/6BEE6DBC35E5CCB3C8ADA943CF446735E6A3D48B174FEE027FAB3410EDE6319C',
@@ -1645,6 +1685,46 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-100'
+          }
+        }]
+    },
+    {
+      description: 'Deenar gold-backed stablecoin',
+      denom_units: [{
+          denom: 'ibc/4D3E3BE7ABF8AB1C13DEE7E6773C9EA1F479EF2D84A3B2DD071475C873AA8F78',
+          exponent: 0,
+          aliases: ['erc20/0x4FEBDDe47Ab9a76200e57eFcC80b212a07b3e6cE']
+        }, {
+          denom: 'DEEN',
+          exponent: 6
+        }],
+      base: 'ibc/4D3E3BE7ABF8AB1C13DEE7E6773C9EA1F479EF2D84A3B2DD071475C873AA8F78',
+      name: 'Deenar',
+      display: 'DEEN',
+      address: '0x4FEBDDe47Ab9a76200e57eFcC80b212a07b3e6cE',
+      symbol: 'DEEN',
+      type_asset: 'erc20',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'erc20/0x4FEBDDe47Ab9a76200e57eFcC80b212a07b3e6cE',
+            chain_name: 'haqq'
+          },
+          chain: {
+            channel_id: 'channel-100'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.svg',
+          theme: {
+            primary_color_hex: '#ffbc05',
+            circle: true
           }
         }]
     },

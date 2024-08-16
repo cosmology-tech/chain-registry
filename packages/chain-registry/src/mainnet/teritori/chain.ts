@@ -91,6 +91,10 @@ const info: Chain = {
       {
         address: 'https://teritori-rpc.bluestake.net:443',
         provider: 'BlueStake 🚀'
+      },
+      {
+        address: 'https://teritori_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -145,6 +149,10 @@ const info: Chain = {
       {
         address: 'https://teritori-api.bluestake.net',
         provider: 'BlueStake 🚀'
+      },
+      {
+        address: 'https://teritori_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -230,6 +238,12 @@ const info: Chain = {
       url: 'https://atomscan.com/teritori',
       tx_page: 'https://atomscan.com/teritori/transactions/${txHash}',
       account_page: 'https://atomscan.com/teritori/accounts/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/teritori',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/teritori/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/teritori/account/${accountAddress}'
     }
   ],
   images: [{

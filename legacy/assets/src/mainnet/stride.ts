@@ -969,6 +969,46 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Deenar gold-backed stablecoin',
+      denom_units: [{
+          denom: 'ibc/3973C5943C3BA56C227AAF71D072DB915FA53FBDD2D5CA648E44D3FD234922BA',
+          exponent: 0,
+          aliases: ['erc20/0x4FEBDDe47Ab9a76200e57eFcC80b212a07b3e6cE']
+        }, {
+          denom: 'DEEN',
+          exponent: 6
+        }],
+      base: 'ibc/3973C5943C3BA56C227AAF71D072DB915FA53FBDD2D5CA648E44D3FD234922BA',
+      name: 'Deenar',
+      display: 'DEEN',
+      address: '0x4FEBDDe47Ab9a76200e57eFcC80b212a07b3e6cE',
+      symbol: 'DEEN',
+      type_asset: 'erc20',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-7',
+            base_denom: 'erc20/0x4FEBDDe47Ab9a76200e57eFcC80b212a07b3e6cE',
+            chain_name: 'haqq'
+          },
+          chain: {
+            channel_id: 'channel-240'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.svg',
+          theme: {
+            primary_color_hex: '#ffbc05',
+            circle: true
+          }
+        }]
+    },
+    {
       description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/A7454562FF29FE068F42F9DE4805ABEF54F599D1720B345D6518D9B5C64EA6D2',
@@ -2896,6 +2936,46 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-240'
+          }
+        }]
+    },
+    {
+      description: 'Deenar gold-backed stablecoin',
+      denom_units: [{
+          denom: 'ibc/3973C5943C3BA56C227AAF71D072DB915FA53FBDD2D5CA648E44D3FD234922BA',
+          exponent: 0,
+          aliases: ['erc20/0x4FEBDDe47Ab9a76200e57eFcC80b212a07b3e6cE']
+        }, {
+          denom: 'DEEN',
+          exponent: 6
+        }],
+      base: 'ibc/3973C5943C3BA56C227AAF71D072DB915FA53FBDD2D5CA648E44D3FD234922BA',
+      name: 'Deenar',
+      display: 'DEEN',
+      address: '0x4FEBDDe47Ab9a76200e57eFcC80b212a07b3e6cE',
+      symbol: 'DEEN',
+      type_asset: 'erc20',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-7',
+            base_denom: 'erc20/0x4FEBDDe47Ab9a76200e57eFcC80b212a07b3e6cE',
+            chain_name: 'haqq'
+          },
+          chain: {
+            channel_id: 'channel-240'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.svg',
+          theme: {
+            primary_color_hex: '#ffbc05',
+            circle: true
           }
         }]
     },

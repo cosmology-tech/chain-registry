@@ -17865,8 +17865,7 @@ const assets: AssetList = {
       description: 'TRONIX is the mainnet native token of the TRON Protocol issued by TRON DAO, known as TRX.',
       denom_units: [{
           denom: 'factory/osmo1myv2g72h8dan7n4hx7stt3mmust6ws03zh6gxc7vz4hpmgp5z3lq9aunm9/TRX.rt',
-          exponent: 0,
-          aliases: ['sun']
+          exponent: 0
         }, {
           denom: 'trx',
           exponent: 6
@@ -17900,11 +17899,10 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'USDT is the official stablecoin issued by Tether on the TRON network.',
+      description: 'A synthetic version of USDT issued by Router, which can be unwrapped to USDT on several chains.',
       denom_units: [{
           denom: 'factory/osmo1myv2g72h8dan7n4hx7stt3mmust6ws03zh6gxc7vz4hpmgp5z3lq9aunm9/USDT.rt',
-          exponent: 0,
-          aliases: ['TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t']
+          exponent: 0
         }, {
           denom: 'usdt',
           exponent: 6
@@ -17916,24 +17914,17 @@ const assets: AssetList = {
       display: 'usdt',
       symbol: 'USDT',
       traces: [{
-          type: 'additional-mintage',
+          type: 'synthetic',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0xdac17f958d2ee523a2206206994597c13d831ec7'
-          },
-          provider: 'Tether'
-        }, {
-          type: 'bridge',
-          counterparty: {
-            chain_name: 'tron',
-            base_denom: 'TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t'
           },
           provider: 'Router'
         }],
       images: [{
           image_sync: {
-            chain_name: 'tron',
-            base_denom: 'TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t'
+            chain_name: 'ethereum',
+            base_denom: '0xdac17f958d2ee523a2206206994597c13d831ec7'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',

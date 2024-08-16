@@ -6,7 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   pretty_name: 'Symphony Testnet',
   chain_type: 'cosmos',
-  chain_id: 'symphony-testnet-2',
+  chain_id: 'symphony-testnet-3',
   bech32_prefix: 'symphony',
   daemon_name: 'symphonyd',
   node_home: '$HOME/.symphonyd',
@@ -33,16 +33,16 @@ const info: Chain = {
   },
   apis: {
     rpc: [{
-        address: 'https://symphony-rpc.kleomedes.network',
-        provider: 'Kleomedes'
+        address: 'https://symphony.test.rpc.nodeshub.online/',
+        provider: 'Nodes Hub'
       }],
     rest: [{
-        address: 'https://symphony-api.kleomedes.network',
-        provider: 'Kleomedes'
+        address: 'https://symphony.test.api.nodeshub.online/',
+        provider: 'Nodes Hub'
       }],
     grpc: [{
-        address: 'symphony-grpc.kleomedes.network',
-        provider: 'Kleomedes'
+        address: 'https://symphony.test.grpc.nodeshub.online/',
+        provider: 'Nodes Hub'
       }]
   },
   logo_URIs: {
