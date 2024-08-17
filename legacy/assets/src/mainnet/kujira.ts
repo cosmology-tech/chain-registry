@@ -3571,48 +3571,6 @@ const assets: AssetList = {
       }
     },
     {
-      description: 'Mars protocol token',
-      denom_units: [{
-          denom: 'ibc/DBF6ABDB5F3D4267C039967515594453F4A31007FD838A566F563A01D2C2FB80',
-          exponent: 0,
-          aliases: ['umars']
-        }, {
-          denom: 'mars',
-          exponent: 6
-        }],
-      base: 'ibc/DBF6ABDB5F3D4267C039967515594453F4A31007FD838A566F563A01D2C2FB80',
-      name: 'Mars',
-      display: 'mars',
-      symbol: 'MARS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
-      },
-      coingecko_id: 'mars-protocol-a7fcbcfb-fd61-4017-92f0-7ee9f9cc6da3',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg',
-          theme: {
-            primary_color_hex: '#d43c3f'
-          }
-        }],
-      socials: {
-        website: 'https://www.marsprotocol.io/',
-        twitter: 'https://twitter.com/mars_protocol'
-      },
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'umars',
-            chain_name: 'mars'
-          },
-          chain: {
-            channel_id: 'channel-55'
-          }
-        }]
-    },
-    {
       description: 'Migaloo is a cosmwasm-powered, permissionless blockchain designed to build decentralized applications with a focus on interchain liquidity solutions.',
       denom_units: [{
           denom: 'ibc/21F041CFE99994E0D027D0C5F72A9EB6224CBCAF5A6AD5DDB75F67A781D46C68',
@@ -4771,48 +4729,6 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-5'
-          }
-        }]
-    },
-    {
-      description: 'Mars protocol token',
-      denom_units: [{
-          denom: 'ibc/DBF6ABDB5F3D4267C039967515594453F4A31007FD838A566F563A01D2C2FB80',
-          exponent: 0,
-          aliases: ['umars']
-        }, {
-          denom: 'mars',
-          exponent: 6
-        }],
-      base: 'ibc/DBF6ABDB5F3D4267C039967515594453F4A31007FD838A566F563A01D2C2FB80',
-      name: 'Mars',
-      display: 'mars',
-      symbol: 'MARS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
-      },
-      coingecko_id: 'mars-protocol-a7fcbcfb-fd61-4017-92f0-7ee9f9cc6da3',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg',
-          theme: {
-            primary_color_hex: '#d43c3f'
-          }
-        }],
-      socials: {
-        website: 'https://www.marsprotocol.io/',
-        twitter: 'https://twitter.com/mars_protocol'
-      },
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'umars',
-            chain_name: 'mars'
-          },
-          chain: {
-            channel_id: 'channel-55'
           }
         }]
     },

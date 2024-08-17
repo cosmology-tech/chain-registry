@@ -6844,49 +6844,6 @@ const info: AssetList = {
         }]
     },
     {
-      description: 'Mars protocol token',
-      denom_units: [{
-          denom: 'ibc/573FCD90FACEE750F55A8864EF7D38265F07E5A9273FA0E8DAFD39951332B580',
-          exponent: 0,
-          aliases: ['umars']
-        }, {
-          denom: 'mars',
-          exponent: 6
-        }],
-      type_asset: 'ics20',
-      base: 'ibc/573FCD90FACEE750F55A8864EF7D38265F07E5A9273FA0E8DAFD39951332B580',
-      name: 'Mars Hub',
-      display: 'mars',
-      symbol: 'MARS',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            chain_name: 'mars',
-            base_denom: 'umars',
-            channel_id: 'channel-1'
-          },
-          chain: {
-            channel_id: 'channel-557',
-            path: 'transfer/channel-557/umars'
-          }
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
-      },
-      images: [{
-          image_sync: {
-            chain_name: 'mars',
-            base_denom: 'umars'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg',
-          theme: {
-            primary_color_hex: '#d43c3f'
-          }
-        }]
-    },
-    {
       description: 'Ciento Exchange Token',
       denom_units: [{
           denom: 'ibc/D38BB3DD46864694F009AF01DA5A815B3A875F8CC52FF5679BFFCC35DC7451D5',
@@ -18326,6 +18283,92 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e4047c',
             background_color_hex: '#000000'
+          }
+        }]
+    },
+    {
+      description: 'Mars Protocol token (pre-migration)',
+      denom_units: [{
+          denom: 'ibc/573FCD90FACEE750F55A8864EF7D38265F07E5A9273FA0E8DAFD39951332B580',
+          exponent: 0,
+          aliases: ['umars']
+        }, {
+          denom: 'MARS.old',
+          exponent: 6
+        }],
+      type_asset: 'ics20',
+      base: 'ibc/573FCD90FACEE750F55A8864EF7D38265F07E5A9273FA0E8DAFD39951332B580',
+      name: 'Mars Hub',
+      display: 'MARS.old',
+      symbol: 'MARS.old',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'mars',
+            base_denom: 'umars',
+            channel_id: 'channel-1'
+          },
+          chain: {
+            channel_id: 'channel-557',
+            path: 'transfer/channel-557/umars'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token-ibc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token-ibc.svg'
+      },
+      images: [{
+          image_sync: {
+            chain_name: 'mars',
+            base_denom: 'umars'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token-ibc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token-ibc.svg',
+          theme: {
+            primary_color_hex: '#FFFFFF'
+          }
+        }]
+    },
+    {
+      description: 'Mars Protocol is a cross-collateralized Money Market Protocol on Neutron and Osmosis',
+      denom_units: [{
+          denom: 'ibc/B67DF59507B3755EEDE0866C449445BD54B4DA82CCEBA89D775E53DC35664255',
+          exponent: 0,
+          aliases: ['umars']
+        }, {
+          denom: 'MARS',
+          exponent: 6
+        }],
+      type_asset: 'ics20',
+      base: 'ibc/B67DF59507B3755EEDE0866C449445BD54B4DA82CCEBA89D775E53DC35664255',
+      name: 'Mars Hub',
+      display: 'MARS',
+      symbol: 'MARS',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'neutron',
+            base_denom: 'factory/neutron1ndu2wvkrxtane8se2tr48gv7nsm46y5gcqjhux/MARS',
+            channel_id: 'channel-10'
+          },
+          chain: {
+            channel_id: 'channel-874',
+            path: 'transfer/channel-874/factory/neutron1ndu2wvkrxtane8se2tr48gv7nsm46y5gcqjhux/MARS'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/mars-token.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/mars-token.svg'
+      },
+      images: [{
+          image_sync: {
+            chain_name: 'neutron',
+            base_denom: 'factory/neutron1ndu2wvkrxtane8se2tr48gv7nsm46y5gcqjhux/MARS'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/mars-token.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/mars-token.svg',
+          theme: {
+            primary_color_hex: '#ef4136'
           }
         }]
     }
