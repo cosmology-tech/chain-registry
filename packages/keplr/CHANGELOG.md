@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.68.64](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.63...@chain-registry/keplr@1.68.64) (2024-08-19)
+
+**Note:** Version bump only for package @chain-registry/keplr
+
+
+
+
+
 ## [1.68.63](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.62...@chain-registry/keplr@1.68.63) (2024-08-18)
 
 **Note:** Version bump only for package @chain-registry/keplr
