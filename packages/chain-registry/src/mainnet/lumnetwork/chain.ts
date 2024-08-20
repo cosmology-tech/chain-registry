@@ -57,10 +57,6 @@ const info: Chain = {
         provider: 'StakerHouse'
       },
       {
-        address: 'https://lum-rpc.panthea.eu',
-        provider: 'Panthea EU'
-      },
-      {
         address: 'https://lumnetwork_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
@@ -87,10 +83,6 @@ const info: Chain = {
         provider: 'StakerHouse'
       },
       {
-        address: 'https://lum-api.panthea.eu',
-        provider: 'Panthea EU'
-      },
-      {
         address: 'https://lumnetwork_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
@@ -111,10 +103,6 @@ const info: Chain = {
       {
         address: 'lum-grpc.stakerhouse.com:443',
         provider: 'StakerHouse'
-      },
-      {
-        address: 'lum-grpc.panthea.eu:16770',
-        provider: 'Panthea EU'
       }
     ]
   },

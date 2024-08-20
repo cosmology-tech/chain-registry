@@ -55,6 +55,10 @@ const info: Chain = {
       {
         address: 'https://rpc.shido.indonode.net:443',
         provider: 'Indonode'
+      },
+      {
+        address: 'https://rpc-maverick.mavnode.io',
+        provider: 'MavNode'
       }
     ],
     rest: [
@@ -73,6 +77,10 @@ const info: Chain = {
       {
         address: 'https://api.shido.indonode.net',
         provider: 'Indonode'
+      },
+      {
+        address: 'https://api-maverick.mavnode.io',
+        provider: 'MavNode'
       }
     ],
     grpc: [
@@ -87,6 +95,10 @@ const info: Chain = {
       {
         address: 'https://s2.shido-grpc.applejuice.256x25.tech',
         provider: 'Apple juice 🧃'
+      },
+      {
+        address: 'https://grpc-maverick.mavnode.io',
+        provider: 'MavNode'
       }
     ],
     "evm-http-jsonrpc": [
@@ -105,6 +117,10 @@ const info: Chain = {
       {
         address: 'https://s2.shido-evm.applejuice.256x25.tech:443',
         provider: 'Apple juice 🧃'
+      },
+      {
+        address: 'https://evm-maverick.mavnode.io',
+        provider: 'MavNode'
       }
     ]
   },
