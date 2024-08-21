@@ -31,7 +31,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-8686',
+            channel_id: 'channel-8743',
             base_denom: 'uosmo',
             chain_name: 'osmosistestnet'
           },
@@ -67,7 +67,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-8686',
+            channel_id: 'channel-8743',
             base_denom: 'uion',
             chain_name: 'osmosistestnet'
           },
@@ -79,14 +79,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Stargaze',
       denom_units: [{
-          denom: 'ibc/C6469BA9DC791E65B3C1596CD2005941324C00659E2DF90D5E08D86B82E7E08B',
+          denom: 'ibc/16E817E682AD1A73FD748BC989574B2702E109C4105550498086531FA3D6B050',
           exponent: 0,
           aliases: ['ustars']
         }, {
           denom: 'stars',
           exponent: 6
         }],
-      base: 'ibc/C6469BA9DC791E65B3C1596CD2005941324C00659E2DF90D5E08D86B82E7E08B',
+      base: 'ibc/16E817E682AD1A73FD748BC989574B2702E109C4105550498086531FA3D6B050',
       name: 'Stargaze',
       display: 'stars',
       symbol: 'STARS',
@@ -100,12 +100,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-638',
+            channel_id: 'channel-998',
             base_denom: 'ustars',
             chain_name: 'stargazetestnet'
           },
           chain: {
-            channel_id: 'channel-2'
+            channel_id: 'channel-4'
           }
         }]
     },
@@ -138,7 +138,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-8686',
+            channel_id: 'channel-8743',
             base_denom: 'uosmo',
             chain_name: 'osmosistestnet'
           },
@@ -174,7 +174,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-8686',
+            channel_id: 'channel-8743',
             base_denom: 'uion',
             chain_name: 'osmosistestnet'
           },
@@ -186,14 +186,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Stargaze',
       denom_units: [{
-          denom: 'ibc/C6469BA9DC791E65B3C1596CD2005941324C00659E2DF90D5E08D86B82E7E08B',
+          denom: 'ibc/16E817E682AD1A73FD748BC989574B2702E109C4105550498086531FA3D6B050',
           exponent: 0,
           aliases: ['ustars']
         }, {
           denom: 'stars',
           exponent: 6
         }],
-      base: 'ibc/C6469BA9DC791E65B3C1596CD2005941324C00659E2DF90D5E08D86B82E7E08B',
+      base: 'ibc/16E817E682AD1A73FD748BC989574B2702E109C4105550498086531FA3D6B050',
       name: 'Stargaze',
       display: 'stars',
       symbol: 'STARS',
@@ -207,12 +207,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-638',
+            channel_id: 'channel-998',
             base_denom: 'ustars',
             chain_name: 'stargazetestnet'
           },
           chain: {
-            channel_id: 'channel-2'
+            channel_id: 'channel-4'
           }
         }]
     }

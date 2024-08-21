@@ -32,7 +32,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'evmos/cosmos-sdk v0.47.8-evmos',
+    cosmos_sdk_version: 'evmos/cosmos-sdk v0.47.12-evmos',
     cosmwasm_enabled: true,
     cosmwasm_version: 'v0.42.0'
   },

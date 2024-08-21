@@ -297,7 +297,7 @@ const assets: AssetList = {
     {
       description: 'The native token of Symphony',
       denom_units: [{
-          denom: 'ibc/4349702B8734A8372397BBBCD845AF21DF7EA780265D31058E56C5FE3308C11C',
+          denom: 'ibc/BC82BC9C0E4C0BB5E27130B22F54497245989B7D4ACE48D02FADD908DE34EE95',
           exponent: 0,
           aliases: ['note']
         }, {
@@ -306,7 +306,7 @@ const assets: AssetList = {
           aliases: ['melody']
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/4349702B8734A8372397BBBCD845AF21DF7EA780265D31058E56C5FE3308C11C',
+      base: 'ibc/BC82BC9C0E4C0BB5E27130B22F54497245989B7D4ACE48D02FADD908DE34EE95',
       name: 'Melody',
       display: 'mld',
       symbol: 'MLD',
@@ -319,12 +319,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-2',
+            channel_id: 'channel-4',
             base_denom: 'note',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-638'
+            channel_id: 'channel-998'
           }
         }]
     },
@@ -378,7 +378,7 @@ const assets: AssetList = {
     {
       description: 'The native token of Symphony',
       denom_units: [{
-          denom: 'ibc/4349702B8734A8372397BBBCD845AF21DF7EA780265D31058E56C5FE3308C11C',
+          denom: 'ibc/BC82BC9C0E4C0BB5E27130B22F54497245989B7D4ACE48D02FADD908DE34EE95',
           exponent: 0,
           aliases: ['note']
         }, {
@@ -387,7 +387,7 @@ const assets: AssetList = {
           aliases: ['melody']
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/4349702B8734A8372397BBBCD845AF21DF7EA780265D31058E56C5FE3308C11C',
+      base: 'ibc/BC82BC9C0E4C0BB5E27130B22F54497245989B7D4ACE48D02FADD908DE34EE95',
       name: 'Melody',
       display: 'mld',
       symbol: 'MLD',
@@ -400,12 +400,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-2',
+            channel_id: 'channel-4',
             base_denom: 'note',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-638'
+            channel_id: 'channel-998'
           }
         }]
     },

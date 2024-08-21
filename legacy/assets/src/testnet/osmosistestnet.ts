@@ -1660,7 +1660,7 @@ const assets: AssetList = {
     {
       description: 'The native token of Symphony',
       denom_units: [{
-          denom: 'ibc/F84DBD0020FABB8AF90D3F265CE32929B4ECBF93F14B22FD10F471D32DF5E125',
+          denom: 'ibc/B8435C53F8B5CC87703531FF736508875DF473D0C231E93A3EF5C2C934E562A4',
           exponent: 0,
           aliases: ['note']
         }, {
@@ -1669,7 +1669,7 @@ const assets: AssetList = {
           aliases: ['melody']
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/F84DBD0020FABB8AF90D3F265CE32929B4ECBF93F14B22FD10F471D32DF5E125',
+      base: 'ibc/B8435C53F8B5CC87703531FF736508875DF473D0C231E93A3EF5C2C934E562A4',
       name: 'Melody',
       display: 'mld',
       symbol: 'MLD',
@@ -1687,7 +1687,7 @@ const assets: AssetList = {
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-8686'
+            channel_id: 'channel-8743'
           }
         }]
     },
@@ -2081,7 +2081,7 @@ const assets: AssetList = {
     {
       description: 'The native token of Symphony',
       denom_units: [{
-          denom: 'ibc/F84DBD0020FABB8AF90D3F265CE32929B4ECBF93F14B22FD10F471D32DF5E125',
+          denom: 'ibc/B8435C53F8B5CC87703531FF736508875DF473D0C231E93A3EF5C2C934E562A4',
           exponent: 0,
           aliases: ['note']
         }, {
@@ -2090,7 +2090,7 @@ const assets: AssetList = {
           aliases: ['melody']
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/F84DBD0020FABB8AF90D3F265CE32929B4ECBF93F14B22FD10F471D32DF5E125',
+      base: 'ibc/B8435C53F8B5CC87703531FF736508875DF473D0C231E93A3EF5C2C934E562A4',
       name: 'Melody',
       display: 'mld',
       symbol: 'MLD',
@@ -2108,7 +2108,7 @@ const assets: AssetList = {
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-8686'
+            channel_id: 'channel-8743'
           }
         }]
     },

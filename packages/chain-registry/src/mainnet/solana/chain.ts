@@ -25,11 +25,11 @@ const info: Chain = {
       tx_page: 'https://explorer.solana.com/tx/${txHash}'
     }],
   images: [{
-      image_sync: {
-        chain_name: 'solana',
-        base_denom: 'Lamport'
-      },
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol.svg',
+      theme: {
+        circle: false,
+        background_color_hex: '#00000000'
+      }
     }]
 };
 export default info;

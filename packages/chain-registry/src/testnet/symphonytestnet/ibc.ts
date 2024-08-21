@@ -3,17 +3,17 @@ const info: IBCInfo[] = [{
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'osmosistestnet',
-      client_id: '07-tendermint-3902',
-      connection_id: 'connection-3027'
+      client_id: '07-tendermint-3946',
+      connection_id: 'connection-3419'
     },
     chain_2: {
       chain_name: 'symphonytestnet',
-      client_id: '07-tendermint-1',
-      connection_id: 'connection-3393'
+      client_id: '07-tendermint-0',
+      connection_id: 'connection-0'
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-8686',
+          channel_id: 'channel-8743',
           port_id: 'transfer'
         },
         chain_2: {
@@ -32,21 +32,21 @@ const info: IBCInfo[] = [{
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'stargazetestnet',
-      client_id: '07-tendermint-949',
-      connection_id: 'connection-944'
+      client_id: '07-tendermint-952',
+      connection_id: 'connection-947'
     },
     chain_2: {
       chain_name: 'symphonytestnet',
-      client_id: '07-tendermint-6',
-      connection_id: 'connection-5'
+      client_id: '07-tendermint-4',
+      connection_id: 'connection-4'
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-638',
+          channel_id: 'channel-998',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-2',
+          channel_id: 'channel-4',
           port_id: 'transfer'
         },
         ordering: 'unordered',
