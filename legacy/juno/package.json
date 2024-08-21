@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/juno",
-  "version": "1.64.65",
+  "version": "1.64.66",
   "description": "Chain Registry info for Juno",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
@@ -29,10 +29,10 @@
     "test:watch": "jest --watch"
   },
   "devDependencies": {
-    "chain-registry": "^1.63.65"
+    "chain-registry": "^1.63.66"
   },
   "dependencies": {
-    "@chain-registry/types": "^0.45.53"
+    "@chain-registry/types": "^0.45.54"
   },
   "keywords": [
     "chain-registry",
