@@ -653,38 +653,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'DRUGS meme coin',
-      denom_units: [{
-          denom: 'ibc/0162FD5B2AAC65E7C958282CCD5B1BC4D178B4443C1FEE8D81DD6C31308B144B',
-          exponent: 0,
-          aliases: ['inj19vy83ne9tzta2yqynj8yg7dq9ghca6yqn9hyej']
-        }, {
-          denom: 'DRUGS',
-          exponent: 6
-        }],
-      base: 'ibc/0162FD5B2AAC65E7C958282CCD5B1BC4D178B4443C1FEE8D81DD6C31308B144B',
-      name: 'DRUGS',
-      display: 'DRUGS',
-      symbol: 'DRUGS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/drugs.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/drugs.png'
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-159',
-            base_denom: 'inj19vy83ne9tzta2yqynj8yg7dq9ghca6yqn9hyej',
-            chain_name: 'injective'
-          },
-          chain: {
-            channel_id: 'channel-116'
-          }
-        }]
-    },
-    {
       description: 'Kava is a decentralized finance (DeFi) platform that provides a range of financial services, including lending, borrowing, and stablecoins, leveraging the Cosmos and Ethereum ecosystems.',
       denom_units: [{
           denom: 'ibc/A81D1B9E93070A920F6DC6680FB48F83645F165BB3597D87F1D6DD2EFB6677AF',
@@ -2015,38 +1983,6 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-159',
             base_denom: 'inj1fzquxxxam59z6fzewy2hvvreeh3m04x83zg4vv',
-            chain_name: 'injective'
-          },
-          chain: {
-            channel_id: 'channel-116'
-          }
-        }]
-    },
-    {
-      description: 'DRUGS meme coin',
-      denom_units: [{
-          denom: 'ibc/0162FD5B2AAC65E7C958282CCD5B1BC4D178B4443C1FEE8D81DD6C31308B144B',
-          exponent: 0,
-          aliases: ['inj19vy83ne9tzta2yqynj8yg7dq9ghca6yqn9hyej']
-        }, {
-          denom: 'DRUGS',
-          exponent: 6
-        }],
-      base: 'ibc/0162FD5B2AAC65E7C958282CCD5B1BC4D178B4443C1FEE8D81DD6C31308B144B',
-      name: 'DRUGS',
-      display: 'DRUGS',
-      symbol: 'DRUGS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/drugs.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/drugs.png'
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-159',
-            base_denom: 'inj19vy83ne9tzta2yqynj8yg7dq9ghca6yqn9hyej',
             chain_name: 'injective'
           },
           chain: {

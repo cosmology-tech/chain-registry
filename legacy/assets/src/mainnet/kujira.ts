@@ -1476,38 +1476,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'DRUGS meme coin',
-      denom_units: [{
-          denom: 'ibc/3FA8949F9ECFFC51FB527B44270AE28FE96C3FBB036998792F640FCAADA9CFBF',
-          exponent: 0,
-          aliases: ['inj19vy83ne9tzta2yqynj8yg7dq9ghca6yqn9hyej']
-        }, {
-          denom: 'DRUGS',
-          exponent: 6
-        }],
-      base: 'ibc/3FA8949F9ECFFC51FB527B44270AE28FE96C3FBB036998792F640FCAADA9CFBF',
-      name: 'DRUGS',
-      display: 'DRUGS',
-      symbol: 'DRUGS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/drugs.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/drugs.png'
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-98',
-            base_denom: 'inj19vy83ne9tzta2yqynj8yg7dq9ghca6yqn9hyej',
-            chain_name: 'injective'
-          },
-          chain: {
-            channel_id: 'channel-54'
-          }
-        }]
-    },
-    {
       description: 'Jackal Network is a decentralized storage platform that aims to provide secure, private, and efficient data storage solutions on the blockchain.',
       denom_units: [{
           denom: 'ibc/2034A2717C2E9F5C19285A7F697CECFA14F34784B912AD32B6E3D7833090EB16',
@@ -3252,38 +3220,6 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-98',
             base_denom: 'inj1fzquxxxam59z6fzewy2hvvreeh3m04x83zg4vv',
-            chain_name: 'injective'
-          },
-          chain: {
-            channel_id: 'channel-54'
-          }
-        }]
-    },
-    {
-      description: 'DRUGS meme coin',
-      denom_units: [{
-          denom: 'ibc/3FA8949F9ECFFC51FB527B44270AE28FE96C3FBB036998792F640FCAADA9CFBF',
-          exponent: 0,
-          aliases: ['inj19vy83ne9tzta2yqynj8yg7dq9ghca6yqn9hyej']
-        }, {
-          denom: 'DRUGS',
-          exponent: 6
-        }],
-      base: 'ibc/3FA8949F9ECFFC51FB527B44270AE28FE96C3FBB036998792F640FCAADA9CFBF',
-      name: 'DRUGS',
-      display: 'DRUGS',
-      symbol: 'DRUGS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/drugs.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/drugs.png'
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-98',
-            base_denom: 'inj19vy83ne9tzta2yqynj8yg7dq9ghca6yqn9hyej',
             chain_name: 'injective'
           },
           chain: {

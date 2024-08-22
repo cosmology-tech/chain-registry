@@ -1916,6 +1916,2182 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Pryzm\'s refracted principal token for ATOM with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/368C7971AACA45D4E15D6C6299E22EE2FD2CA772C8CE1635B6498E62DFAA8E08',
+          exponent: 0,
+          aliases: ['p:uatom:30Sep2024']
+        }, {
+          denom: 'pATOM30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/368C7971AACA45D4E15D6C6299E22EE2FD2CA772C8CE1635B6498E62DFAA8E08',
+      name: 'pAtom (30Sep2024)',
+      display: 'pATOM30Sep2024',
+      symbol: 'pATOM-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uatom:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for ATOM with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/57C2F2AD1A2FE89E7CF82D3234CAC94029ABADC04949269C5994C641C161CDDC',
+          exponent: 0,
+          aliases: ['p:uatom:31Dec2024']
+        }, {
+          denom: 'pATOM31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/57C2F2AD1A2FE89E7CF82D3234CAC94029ABADC04949269C5994C641C161CDDC',
+      name: 'pAtom (31Dec2024)',
+      display: 'pATOM31Dec2024',
+      symbol: 'pATOM-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uatom:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for ATOM with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/DFC8484D05ABEED6336C48468E9B03FFF808F9BD2F01985DBFADD98CA4099F33',
+          exponent: 0,
+          aliases: ['p:uatom:31Dec2025']
+        }, {
+          denom: 'pATOM31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/DFC8484D05ABEED6336C48468E9B03FFF808F9BD2F01985DBFADD98CA4099F33',
+      name: 'pAtom (31Dec2025)',
+      display: 'pATOM31Dec2025',
+      symbol: 'pATOM-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uatom:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for OSMO with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/705F080D0191A6937EEAFD050D8FD03BE819790240D4F447F445716F22F887C6',
+          exponent: 0,
+          aliases: ['p:uosmo:30Sep2024']
+        }, {
+          denom: 'pOSMO30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/705F080D0191A6937EEAFD050D8FD03BE819790240D4F447F445716F22F887C6',
+      name: 'pOsmo (30Sep2024)',
+      display: 'pOSMO30Sep2024',
+      symbol: 'pOSMO-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uosmo:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for OSMO with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/102FF3A6E5585EC3A89B7C1611ADB27C9DD33049EC587A91488BDAF084F92854',
+          exponent: 0,
+          aliases: ['p:uosmo:31Dec2024']
+        }, {
+          denom: 'pOSMO31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/102FF3A6E5585EC3A89B7C1611ADB27C9DD33049EC587A91488BDAF084F92854',
+      name: 'pOsmo (31Dec2024)',
+      display: 'pOSMO31Dec2024',
+      symbol: 'pOSMO-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uosmo:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for OSMO with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/DC05A4336A8321FA0F30C6FA0FD0078362358BF8A6CF181D816FE4962848CCA3',
+          exponent: 0,
+          aliases: ['p:uosmo:31Dec2025']
+        }, {
+          denom: 'pOSMO31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/DC05A4336A8321FA0F30C6FA0FD0078362358BF8A6CF181D816FE4962848CCA3',
+      name: 'pOsmo (31Dec2025)',
+      display: 'pOSMO31Dec2025',
+      symbol: 'pOSMO-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uosmo:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for INJ with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/D0F3CC8B6BAB6B597F02BB7F3EDEB3581AC4EA4302CAE673727E4BBBE076EB72',
+          exponent: 0,
+          aliases: ['p:inj:30Sep2024']
+        }, {
+          denom: 'pINJ30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/D0F3CC8B6BAB6B597F02BB7F3EDEB3581AC4EA4302CAE673727E4BBBE076EB72',
+      name: 'pInj (30Sep2024)',
+      display: 'pINJ30Sep2024',
+      symbol: 'pINJ-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:inj:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for INJ with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/338F1E8716BC3A62E6AF0C1C9D89CD165BA845EB07FEF6089E985D097CA650DA',
+          exponent: 0,
+          aliases: ['p:inj:31Dec2024']
+        }, {
+          denom: 'pINJ31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/338F1E8716BC3A62E6AF0C1C9D89CD165BA845EB07FEF6089E985D097CA650DA',
+      name: 'pInj (31Dec2024)',
+      display: 'pINJ31Dec2024',
+      symbol: 'pINJ-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:inj:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for INJ with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/ECB1978C49F5A56455C98BF3ED5898B352F09237F1591689E4BE9131A0D7C503',
+          exponent: 0,
+          aliases: ['p:inj:31Dec2025']
+        }, {
+          denom: 'pINJ31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/ECB1978C49F5A56455C98BF3ED5898B352F09237F1591689E4BE9131A0D7C503',
+      name: 'pInj (31Dec2025)',
+      display: 'pINJ31Dec2025',
+      symbol: 'pINJ-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:inj:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for LUNA with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/DFCDD25BA6D1AF26487B57FE7C3CEDE136D778A313B3BD5F8908C6FDC9A2D6F9',
+          exponent: 0,
+          aliases: ['p:uluna:30Sep2024']
+        }, {
+          denom: 'pLUNA30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/DFCDD25BA6D1AF26487B57FE7C3CEDE136D778A313B3BD5F8908C6FDC9A2D6F9',
+      name: 'pLuna (30Sep2024)',
+      display: 'pLUNA30Sep2024',
+      symbol: 'pLUNA-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uluna:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for LUNA with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/8D76730A902BEA1C1ED330F3BF367EF633F861BEBA66D68EF09D474C007F3737',
+          exponent: 0,
+          aliases: ['p:uluna:31Dec2024']
+        }, {
+          denom: 'pLUNA31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/8D76730A902BEA1C1ED330F3BF367EF633F861BEBA66D68EF09D474C007F3737',
+      name: 'pLuna (31Dec2024)',
+      display: 'pLUNA31Dec2024',
+      symbol: 'pLUNA-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uluna:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for LUNA with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/0AD7F861767F69C332039D9AC97138A8FB8C58EE743C7827EC78A71F5B99C072',
+          exponent: 0,
+          aliases: ['p:uluna:31Dec2025']
+        }, {
+          denom: 'pLUNA31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/0AD7F861767F69C332039D9AC97138A8FB8C58EE743C7827EC78A71F5B99C072',
+      name: 'pLuna (31Dec2025)',
+      display: 'pLUNA31Dec2025',
+      symbol: 'pLUNA-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uluna:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for AUUU with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/49ADCAC494A9E9FE1EB1FE6FE5E8F32AA54F38A50DDDA3292DB4DCC0623893D7',
+          exponent: 0,
+          aliases: ['p:uauuu:30Sep2024']
+        }, {
+          denom: 'pAUUU30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/49ADCAC494A9E9FE1EB1FE6FE5E8F32AA54F38A50DDDA3292DB4DCC0623893D7',
+      name: 'pAuuu (30Sep2024)',
+      display: 'pAUUU30Sep2024',
+      symbol: 'pAUUU-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uauuu:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for AUUU with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/7AA47960D29638950C9A96CD87D19883D325876A8AFE0B5367B26B1ABD290D04',
+          exponent: 0,
+          aliases: ['p:uauuu:31Dec2024']
+        }, {
+          denom: 'pAUUU31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/7AA47960D29638950C9A96CD87D19883D325876A8AFE0B5367B26B1ABD290D04',
+      name: 'pAuuu (31Dec2024)',
+      display: 'pAUUU31Dec2024',
+      symbol: 'pAUUU-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uauuu:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for AUUU with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/BD80CB79FCE0BDD1B23E0275558628CC34D40849583E5B5C3C4059BF25E67B44',
+          exponent: 0,
+          aliases: ['p:uauuu:31Dec2025']
+        }, {
+          denom: 'pAUUU31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/BD80CB79FCE0BDD1B23E0275558628CC34D40849583E5B5C3C4059BF25E67B44',
+      name: 'pAuuu (31Dec2025)',
+      display: 'pAUUU31Dec2025',
+      symbol: 'pAUUU-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uauuu:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for stTIA with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/7A18E05E78C867C18A593066E830BE95B789F643934FB58EAF77A00D0451591B',
+          exponent: 0,
+          aliases: ['p:stutia:30Sep2024']
+        }, {
+          denom: 'pstTIA30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/7A18E05E78C867C18A593066E830BE95B789F643934FB58EAF77A00D0451591B',
+      name: 'pstTia (30Sep2024)',
+      display: 'pstTIA30Sep2024',
+      symbol: 'pstTIA-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:stutia:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for stTIA with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/4D68207899DB3A8AC13322871EEC3F35DE9EEF1EB4AD1E269B563C043425287C',
+          exponent: 0,
+          aliases: ['p:stutia:31Dec2024']
+        }, {
+          denom: 'pstTIA31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/4D68207899DB3A8AC13322871EEC3F35DE9EEF1EB4AD1E269B563C043425287C',
+      name: 'pstTia (31Dec2024)',
+      display: 'pstTIA31Dec2024',
+      symbol: 'pstTIA-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:stutia:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for stTIA with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/76BAC47E42CF4021CAA3E2341F65958B7FFC0719CB42C1630C4D61C229D68A24',
+          exponent: 0,
+          aliases: ['p:stutia:31Dec2025']
+        }, {
+          denom: 'pstTIA31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/76BAC47E42CF4021CAA3E2341F65958B7FFC0719CB42C1630C4D61C229D68A24',
+      name: 'pstTia (31Dec2025)',
+      display: 'pstTIA31Dec2025',
+      symbol: 'pstTIA-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:stutia:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for stDYDX with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/F9D2FBA8C2795DC27C4578A190DFB0608A18427F0B322BC90A339F5EA7F66D77',
+          exponent: 0,
+          aliases: ['p:stadydx:30Sep2024']
+        }, {
+          denom: 'pstDYDX30Sep2024',
+          exponent: 18
+        }],
+      base: 'ibc/F9D2FBA8C2795DC27C4578A190DFB0608A18427F0B322BC90A339F5EA7F66D77',
+      name: 'pstDydx (30Sep2024)',
+      display: 'pstDYDX30Sep2024',
+      symbol: 'pstDYDX-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:stadydx:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for stDYDX with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/730220B27C6C740A9A4535DC99D57E4ADE81E48107C428C1541F3AAE75C7F769',
+          exponent: 0,
+          aliases: ['p:stadydx:31Dec2024']
+        }, {
+          denom: 'pstDYDX31Dec2024',
+          exponent: 18
+        }],
+      base: 'ibc/730220B27C6C740A9A4535DC99D57E4ADE81E48107C428C1541F3AAE75C7F769',
+      name: 'pstDydx (31Dec2024)',
+      display: 'pstDYDX31Dec2024',
+      symbol: 'pstDYDX-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:stadydx:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for stDYDX with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/1062574A328559A77CBF08D5C9C1A8C9F3F7583AC5769CCC81A7C239D6D1E7E6',
+          exponent: 0,
+          aliases: ['p:stadydx:31Dec2025']
+        }, {
+          denom: 'pstDYDX31Dec2025',
+          exponent: 18
+        }],
+      base: 'ibc/1062574A328559A77CBF08D5C9C1A8C9F3F7583AC5769CCC81A7C239D6D1E7E6',
+      name: 'pstDydx (31Dec2025)',
+      display: 'pstDYDX31Dec2025',
+      symbol: 'pstDYDX-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:stadydx:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for ATOM with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/7A994E4C7A02029E5FDA02F927787250F2BBCCCBC7B13A41009D2C548F3B234E',
+          exponent: 0,
+          aliases: ['y:uatom:30Sep2024']
+        }, {
+          denom: 'yATOM30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/7A994E4C7A02029E5FDA02F927787250F2BBCCCBC7B13A41009D2C548F3B234E',
+      name: 'yAtom (30Sep2024)',
+      display: 'yATOM30Sep2024',
+      symbol: 'yATOM-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uatom:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for ATOM with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/2504C9CFD5F0CF8220A83DF1437E83EFB1433D7B26C8B887AF5F7B1CB1C8CD47',
+          exponent: 0,
+          aliases: ['y:uatom:31Dec2024']
+        }, {
+          denom: 'yATOM31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/2504C9CFD5F0CF8220A83DF1437E83EFB1433D7B26C8B887AF5F7B1CB1C8CD47',
+      name: 'yAtom (31Dec2024)',
+      display: 'yATOM31Dec2024',
+      symbol: 'yATOM-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uatom:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for ATOM with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/9E2194238758130F29211AAFB963FE69CA40DB065DAF8B72BB049F61B56F4BBE',
+          exponent: 0,
+          aliases: ['y:uatom:31Dec2025']
+        }, {
+          denom: 'yATOM31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/9E2194238758130F29211AAFB963FE69CA40DB065DAF8B72BB049F61B56F4BBE',
+      name: 'yAtom (31Dec2025)',
+      display: 'yATOM31Dec2025',
+      symbol: 'yATOM-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uatom:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for OSMO with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/C1C6E4CA01E5ADEF91E90E08B4B021FD63791C5D2AD576C495557A5FC950C1D4',
+          exponent: 0,
+          aliases: ['y:uosmo:30Sep2024']
+        }, {
+          denom: 'yOSMO30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/C1C6E4CA01E5ADEF91E90E08B4B021FD63791C5D2AD576C495557A5FC950C1D4',
+      name: 'yOsmo (30Sep2024)',
+      display: 'yOSMO30Sep2024',
+      symbol: 'yOSMO-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uosmo:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for OSMO with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/6D2CCF76FC0DEA11AD471E28B9F0EC6EEB3ADEC26FC565B5695351A5635A73B7',
+          exponent: 0,
+          aliases: ['y:uosmo:31Dec2024']
+        }, {
+          denom: 'yOSMO31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/6D2CCF76FC0DEA11AD471E28B9F0EC6EEB3ADEC26FC565B5695351A5635A73B7',
+      name: 'yOsmo (31Dec2024)',
+      display: 'yOSMO31Dec2024',
+      symbol: 'yOSMO-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uosmo:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for OSMO with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/B8C323AF887823F6F98576A8D9C861E7ACAA5BA661E61B3A841CCAC442EF0CE7',
+          exponent: 0,
+          aliases: ['y:uosmo:31Dec2025']
+        }, {
+          denom: 'yOSMO31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/B8C323AF887823F6F98576A8D9C861E7ACAA5BA661E61B3A841CCAC442EF0CE7',
+      name: 'yOsmo (31Dec2025)',
+      display: 'yOSMO31Dec2025',
+      symbol: 'yOSMO-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uosmo:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for INJ with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/E912C340250ABAFDAAC0E76DF6ACFF20A33665794A2C2F03C19DACF51EDA19CF',
+          exponent: 0,
+          aliases: ['y:inj:30Sep2024']
+        }, {
+          denom: 'yINJ30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/E912C340250ABAFDAAC0E76DF6ACFF20A33665794A2C2F03C19DACF51EDA19CF',
+      name: 'yInj (30Sep2024)',
+      display: 'yINJ30Sep2024',
+      symbol: 'yINJ-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:inj:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for INJ with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/2DFF81D4E81995579791F19D722697570CC1331ADF2F08FBEA8A76D51FCEC6E8',
+          exponent: 0,
+          aliases: ['y:inj:31Dec2024']
+        }, {
+          denom: 'yINJ31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/2DFF81D4E81995579791F19D722697570CC1331ADF2F08FBEA8A76D51FCEC6E8',
+      name: 'yInj (31Dec2024)',
+      display: 'yINJ31Dec2024',
+      symbol: 'yINJ-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:inj:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for INJ with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/39793B014139A056461F0E4444EE3E2F81F7846CF1AEA0EEBBE49C3667DC1F7A',
+          exponent: 0,
+          aliases: ['y:inj:31Dec2025']
+        }, {
+          denom: 'yINJ31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/39793B014139A056461F0E4444EE3E2F81F7846CF1AEA0EEBBE49C3667DC1F7A',
+      name: 'yInj (31Dec2025)',
+      display: 'yINJ31Dec2025',
+      symbol: 'yINJ-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:inj:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for LUNA with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/812CF63AC61F8C618801672103AB5A5651CE83FA2C5187ABD71D4181B83F21F0',
+          exponent: 0,
+          aliases: ['y:uluna:30Sep2024']
+        }, {
+          denom: 'yLUNA30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/812CF63AC61F8C618801672103AB5A5651CE83FA2C5187ABD71D4181B83F21F0',
+      name: 'yLuna (30Sep2024)',
+      display: 'yLUNA30Sep2024',
+      symbol: 'yLUNA-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uluna:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for LUNA with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/8DC9F05FE9A3A1FD8244715ADA0EC9820FFA6CAA9255BC6E9A6A8FC41C2FC97E',
+          exponent: 0,
+          aliases: ['y:uluna:31Dec2024']
+        }, {
+          denom: 'yLUNA31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/8DC9F05FE9A3A1FD8244715ADA0EC9820FFA6CAA9255BC6E9A6A8FC41C2FC97E',
+      name: 'yLuna (31Dec2024)',
+      display: 'yLUNA31Dec2024',
+      symbol: 'yLUNA-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uluna:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for LUNA with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/DBE8CB115CC6244C79DB9AC9C37364CE817E5D6B6DB4A609C3C6AE5B71786E3B',
+          exponent: 0,
+          aliases: ['y:uluna:31Dec2025']
+        }, {
+          denom: 'yLUNA31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/DBE8CB115CC6244C79DB9AC9C37364CE817E5D6B6DB4A609C3C6AE5B71786E3B',
+      name: 'yLuna (31Dec2025)',
+      display: 'yLUNA31Dec2025',
+      symbol: 'yLUNA-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uluna:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for AUUU with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/A0ADC985CD3BD5F76028433E6A1A694CAFC6859670992995FDCDF32B5AEB2340',
+          exponent: 0,
+          aliases: ['y:uauuu:30Sep2024']
+        }, {
+          denom: 'yAUUU30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/A0ADC985CD3BD5F76028433E6A1A694CAFC6859670992995FDCDF32B5AEB2340',
+      name: 'yAuuu (30Sep2024)',
+      display: 'yAUUU30Sep2024',
+      symbol: 'yAUUU-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uauuu:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for AUUU with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/1DD3F7C436B23B7105E1C92434F481162F8CDE2D67DC4F7F57431B4DA933296A',
+          exponent: 0,
+          aliases: ['y:uauuu:31Dec2024']
+        }, {
+          denom: 'yAUUU31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/1DD3F7C436B23B7105E1C92434F481162F8CDE2D67DC4F7F57431B4DA933296A',
+      name: 'yAuuu (31Dec2024)',
+      display: 'yAUUU31Dec2024',
+      symbol: 'yAUUU-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uauuu:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for AUUU with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/0B0FDB379E84CCA18A6468E75737F4F3DEDD099CC298201DF089E2B2947410A0',
+          exponent: 0,
+          aliases: ['y:uauuu:31Dec2025']
+        }, {
+          denom: 'yAUUU31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/0B0FDB379E84CCA18A6468E75737F4F3DEDD099CC298201DF089E2B2947410A0',
+      name: 'yAuuu (31Dec2025)',
+      display: 'yAUUU31Dec2025',
+      symbol: 'yAUUU-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uauuu:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for stTIA with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/E826B3323727FFA2E9A960AF168582E9AD20404B021C0A6EDC9AFB3976FB559D',
+          exponent: 0,
+          aliases: ['y:stutia:30Sep2024']
+        }, {
+          denom: 'ystTIA30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/E826B3323727FFA2E9A960AF168582E9AD20404B021C0A6EDC9AFB3976FB559D',
+      name: 'ystTia (30Sep2024)',
+      display: 'ystTIA30Sep2024',
+      symbol: 'ystTIA-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:stutia:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for stTIA with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/5EBFD08C04D545428D6D6722908211C90135CCC20E93195BD78D70B6F9DA2660',
+          exponent: 0,
+          aliases: ['y:stutia:31Dec2024']
+        }, {
+          denom: 'ystTIA31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/5EBFD08C04D545428D6D6722908211C90135CCC20E93195BD78D70B6F9DA2660',
+      name: 'ystTia (31Dec2024)',
+      display: 'ystTIA31Dec2024',
+      symbol: 'ystTIA-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:stutia:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for stTIA with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/A329F81812E746539897210B25B917A249F7DDB05D9EEC67741BE621CA8DACAD',
+          exponent: 0,
+          aliases: ['y:stutia:31Dec2025']
+        }, {
+          denom: 'ystTIA31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/A329F81812E746539897210B25B917A249F7DDB05D9EEC67741BE621CA8DACAD',
+      name: 'ystTia (31Dec2025)',
+      display: 'ystTIA31Dec2025',
+      symbol: 'ystTIA-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:stutia:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for stDYDX with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/8400E77857AD6BD9910D57409970BC61A6E6B3BDBBA284AF931F14304012253E',
+          exponent: 0,
+          aliases: ['y:stadydx:30Sep2024']
+        }, {
+          denom: 'ystDYDX30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/8400E77857AD6BD9910D57409970BC61A6E6B3BDBBA284AF931F14304012253E',
+      name: 'ystDydx (30Sep2024)',
+      display: 'ystDYDX30Sep2024',
+      symbol: 'ystDYDX-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:stadydx:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for stDYDX with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/C31E802B564C5DCF8DC819118022868AB214CD21F1FCD08ECCD78BEB99B466A0',
+          exponent: 0,
+          aliases: ['y:stadydx:31Dec2024']
+        }, {
+          denom: 'ystDYDX31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/C31E802B564C5DCF8DC819118022868AB214CD21F1FCD08ECCD78BEB99B466A0',
+      name: 'ystDydx (31Dec2024)',
+      display: 'ystDYDX31Dec2024',
+      symbol: 'ystDYDX-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:stadydx:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for stDYDX with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/0ADE8BDF371245DC02CD423DEA1D50C7B36818218592E11EBE18D36D0F73BEBB',
+          exponent: 0,
+          aliases: ['y:stadydx:31Dec2025']
+        }, {
+          denom: 'ystDYDX31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/0ADE8BDF371245DC02CD423DEA1D50C7B36818218592E11EBE18D36D0F73BEBB',
+      name: 'ystDydx (31Dec2025)',
+      display: 'ystDYDX31Dec2025',
+      symbol: 'ystDYDX-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:stadydx:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for USDC / USDC.axl pool',
+      denom_units: [{
+          denom: 'ibc/FCC82F1F936A6D147738113E2D895968C9FEE804AA50DACFED16475EBB8CF36A',
+          exponent: 0,
+          aliases: ['lp:6:uusdc.axl-uusdc']
+        }, {
+          denom: 'lp:6:usdc.axl-usdc',
+          exponent: 6
+        }],
+      base: 'ibc/FCC82F1F936A6D147738113E2D895968C9FEE804AA50DACFED16475EBB8CF36A',
+      name: 'USDC / USDC.axl LP',
+      display: 'lp:6:usdc.axl-usdc',
+      symbol: 'USDC-USDC.axl-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:6:uusdc.axl-uusdc',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for ATOM Yield pool',
+      denom_units: [{
+          denom: 'ibc/47BE05F9949162E2CD5E116BABBB20340859D83F2350434CC68C928820DC86F7',
+          exponent: 0,
+          aliases: ['lp:0:uatom']
+        }, {
+          denom: 'lp:0:atom',
+          exponent: 6
+        }],
+      base: 'ibc/47BE05F9949162E2CD5E116BABBB20340859D83F2350434CC68C928820DC86F7',
+      name: 'ATOM Yield LP',
+      display: 'lp:0:atom',
+      symbol: 'ATOM-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:0:uatom',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for ATOM Boost pool',
+      denom_units: [{
+          denom: 'ibc/2519F9B056D0B3866BBBC6FDC21A8CA3615E67B21B87AAFE739C23D1E24F20F9',
+          exponent: 0,
+          aliases: ['lp:2:uatomypt-uatom']
+        }, {
+          denom: 'lp:2:atomypt-atom',
+          exponent: 6
+        }],
+      base: 'ibc/2519F9B056D0B3866BBBC6FDC21A8CA3615E67B21B87AAFE739C23D1E24F20F9',
+      name: 'ATOM Boost LP',
+      display: 'lp:2:atomypt-atom',
+      symbol: 'ATOM-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:2:uatomypt-uatom',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for ATOM / USDC pool',
+      denom_units: [{
+          denom: 'ibc/CFEE8590A2AE7CD37A2AEAD71132758956E95E9F306059E3145E244BF2E84537',
+          exponent: 0,
+          aliases: ['lp:3:uatom-uusdc']
+        }, {
+          denom: 'lp:3:atom-usdc',
+          exponent: 6
+        }],
+      base: 'ibc/CFEE8590A2AE7CD37A2AEAD71132758956E95E9F306059E3145E244BF2E84537',
+      name: 'ATOM / USDC LP',
+      display: 'lp:3:atom-usdc',
+      symbol: 'ATOM-USDC-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:3:uatom-uusdc',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for INJ Yield pool',
+      denom_units: [{
+          denom: 'ibc/33807304CF00FB4481E14AF77B3B656759F9E8B17C478CB55A8C9F5CF7783FEB',
+          exponent: 0,
+          aliases: ['lp:1:inj']
+        }, {
+          denom: 'lp:1:INJ',
+          exponent: 6
+        }],
+      base: 'ibc/33807304CF00FB4481E14AF77B3B656759F9E8B17C478CB55A8C9F5CF7783FEB',
+      name: 'INJ Yield LP',
+      display: 'lp:1:INJ',
+      symbol: 'INJ-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:1:inj',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for INJ Boost pool',
+      denom_units: [{
+          denom: 'ibc/27D758827282C5C096FDC53B899A6C7713974DC0F6F7A0C2FBC00967F91E6F8B',
+          exponent: 0,
+          aliases: ['lp:4:injypt-inj']
+        }, {
+          denom: 'lp:4:INJypt-INJ',
+          exponent: 6
+        }],
+      base: 'ibc/27D758827282C5C096FDC53B899A6C7713974DC0F6F7A0C2FBC00967F91E6F8B',
+      name: 'INJ Boost LP',
+      display: 'lp:4:INJypt-INJ',
+      symbol: 'INJ-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:4:injypt-inj',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for INJ / USDC pool',
+      denom_units: [{
+          denom: 'ibc/C2CC6309A535AD8A45E921D88EB98B7707C3228598AB1785E3EB7231967F283D',
+          exponent: 0,
+          aliases: ['lp:5:inj-uusdc']
+        }, {
+          denom: 'lp:5:INJ-usdc',
+          exponent: 18
+        }],
+      base: 'ibc/C2CC6309A535AD8A45E921D88EB98B7707C3228598AB1785E3EB7231967F283D',
+      name: 'INJ / USDC LP',
+      display: 'lp:5:INJ-usdc',
+      symbol: 'INJ-USDC-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:5:inj-uusdc',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for OSMO Yield pool',
+      denom_units: [{
+          denom: 'ibc/C4095EE7A436CDCD76F0F9F782B67F6D62A93310A7FB9642D395802374DC67D6',
+          exponent: 0,
+          aliases: ['lp:8:uosmo']
+        }, {
+          denom: 'lp:8:osmo',
+          exponent: 6
+        }],
+      base: 'ibc/C4095EE7A436CDCD76F0F9F782B67F6D62A93310A7FB9642D395802374DC67D6',
+      name: 'OSMO Yield LP',
+      display: 'lp:8:osmo',
+      symbol: 'OSMO-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:8:uosmo',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for OSMO Boost pool',
+      denom_units: [{
+          denom: 'ibc/316146775EEA89F34D029F63EB8C8CAC5F33696CD537E23F86BDDEE93433D91A',
+          exponent: 0,
+          aliases: ['lp:10:uosmoypt-uosmo']
+        }, {
+          denom: 'lp:10:osmoypt-osmo',
+          exponent: 6
+        }],
+      base: 'ibc/316146775EEA89F34D029F63EB8C8CAC5F33696CD537E23F86BDDEE93433D91A',
+      name: 'OSMO Boost LP',
+      display: 'lp:10:osmoypt-osmo',
+      symbol: 'OSMO-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:10:uosmoypt-uosmo',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for OSMO / USDC pool',
+      denom_units: [{
+          denom: 'ibc/EB478A301AA49FBF979839FA5F1DAF5C5DAA7FF9D330EB83920DD3E280B3DED8',
+          exponent: 0,
+          aliases: ['lp:11:uosmo-uusdc']
+        }, {
+          denom: 'lp:11:osmo-usdc',
+          exponent: 6
+        }],
+      base: 'ibc/EB478A301AA49FBF979839FA5F1DAF5C5DAA7FF9D330EB83920DD3E280B3DED8',
+      name: 'OSMO / USDC LP',
+      display: 'lp:11:osmo-usdc',
+      symbol: 'OSMO-USDC-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:11:uosmo-uusdc',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for LUNA Yield pool',
+      denom_units: [{
+          denom: 'ibc/F83A39604DBA8B3886D672C572FE020A0ECF9A711BC35C7EF8F129C8B15C3107',
+          exponent: 0,
+          aliases: ['lp:9:uluna']
+        }, {
+          denom: 'lp:9:luna',
+          exponent: 6
+        }],
+      base: 'ibc/F83A39604DBA8B3886D672C572FE020A0ECF9A711BC35C7EF8F129C8B15C3107',
+      name: 'LUNA Yield LP',
+      display: 'lp:9:luna',
+      symbol: 'LUNA-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:9:uluna',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for LUNA Boost pool',
+      denom_units: [{
+          denom: 'ibc/5A0436619E11E57DFE0791A79E43EDDB9084D564709BE4B8D3655D9967EAB52D',
+          exponent: 0,
+          aliases: ['lp:12:ulunaypt-uluna']
+        }, {
+          denom: 'lp:12:lunaypt-luna',
+          exponent: 6
+        }],
+      base: 'ibc/5A0436619E11E57DFE0791A79E43EDDB9084D564709BE4B8D3655D9967EAB52D',
+      name: 'LUNA Boost LP',
+      display: 'lp:12:lunaypt-luna',
+      symbol: 'LUNA-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:12:ulunaypt-uluna',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for LUNA / USDC pool',
+      denom_units: [{
+          denom: 'ibc/F7B51F1370D141AAE886E86BFFEAE64BF132BA18BB905B2B3C1840C7DF989ACF',
+          exponent: 0,
+          aliases: ['lp:13:uluna-uusdc']
+        }, {
+          denom: 'lp:13:luna-usdc',
+          exponent: 6
+        }],
+      base: 'ibc/F7B51F1370D141AAE886E86BFFEAE64BF132BA18BB905B2B3C1840C7DF989ACF',
+      name: 'LUNA / USDC LP',
+      display: 'lp:13:luna-usdc',
+      symbol: 'LUNA-USDC-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:13:uluna-uusdc',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for AUUU Yield pool',
+      denom_units: [{
+          denom: 'ibc/0D2B0139B7B937177ADE0A0CF3AB204763FD7F45B34B08285654427ABA51C4D1',
+          exponent: 0,
+          aliases: ['lp:14:uauuu']
+        }, {
+          denom: 'lp:14:auuu',
+          exponent: 6
+        }],
+      base: 'ibc/0D2B0139B7B937177ADE0A0CF3AB204763FD7F45B34B08285654427ABA51C4D1',
+      name: 'AUUU Yield LP',
+      display: 'lp:14:auuu',
+      symbol: 'AUUU-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:14:uauuu',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for AUUU Boost pool',
+      denom_units: [{
+          denom: 'ibc/91340D27D271DD498072CEF92E8160204FD4FF74417BB90C020792063806CB2D',
+          exponent: 0,
+          aliases: ['lp:17:uauuuypt-uauuu']
+        }, {
+          denom: 'lp:17:auuuypt-auuu',
+          exponent: 6
+        }],
+      base: 'ibc/91340D27D271DD498072CEF92E8160204FD4FF74417BB90C020792063806CB2D',
+      name: 'AUUU Boost LP',
+      display: 'lp:17:auuuypt-auuu',
+      symbol: 'AUUU-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:17:uauuuypt-uauuu',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for AUUU / USDC pool',
+      denom_units: [{
+          denom: 'ibc/4476B2810337345E26557F12186479960D47B33B5AC74E9867EB4553E65A045E',
+          exponent: 0,
+          aliases: ['lp:7:uauuu-uusdc']
+        }, {
+          denom: 'lp:7:auuu-usdc',
+          exponent: 6
+        }],
+      base: 'ibc/4476B2810337345E26557F12186479960D47B33B5AC74E9867EB4553E65A045E',
+      name: 'AUUU / USDC LP',
+      display: 'lp:7:auuu-usdc',
+      symbol: 'AUUU-USDC-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:7:uauuu-uusdc',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for stDYDX Yield pool',
+      denom_units: [{
+          denom: 'ibc/A5E7901DFB03C4341C0798FD632C16689987014AE1BEBDD14436599A61895C3E',
+          exponent: 0,
+          aliases: ['lp:15:stadydx']
+        }, {
+          denom: 'lp:15:stdydx',
+          exponent: 18
+        }],
+      base: 'ibc/A5E7901DFB03C4341C0798FD632C16689987014AE1BEBDD14436599A61895C3E',
+      name: 'stDYDX Yield LP',
+      display: 'lp:15:stdydx',
+      symbol: 'stDYDX-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:15:stadydx',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for stDYDX Boost pool',
+      denom_units: [{
+          denom: 'ibc/2D179C66414C7C5A842FE73D19871CE8205F04B0B6973066859B67DC9509959E',
+          exponent: 0,
+          aliases: ['lp:18:stadydxypt-adydx']
+        }, {
+          denom: 'lp:18:stdydxypt-dydx',
+          exponent: 18
+        }],
+      base: 'ibc/2D179C66414C7C5A842FE73D19871CE8205F04B0B6973066859B67DC9509959E',
+      name: 'stDYDX Boost LP',
+      display: 'lp:18:stdydxypt-dydx',
+      symbol: 'stDYDX-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:18:stadydxypt-adydx',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for DYDX / USDC pool',
+      denom_units: [{
+          denom: 'ibc/2D3757EEC11284BAB7B00E105540237CDD1DE69D633FBBA68118DE31658C9366',
+          exponent: 0,
+          aliases: ['lp:19:adydx-uusdc']
+        }, {
+          denom: 'lp:19:dydx-usdc',
+          exponent: 18
+        }],
+      base: 'ibc/2D3757EEC11284BAB7B00E105540237CDD1DE69D633FBBA68118DE31658C9366',
+      name: 'DYDX / USDC LP',
+      display: 'lp:19:dydx-usdc',
+      symbol: 'DYDX-USDC-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:19:adydx-uusdc',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for stTIA Yield pool',
+      denom_units: [{
+          denom: 'ibc/424A6AD4B8DB6CE842FC02B0A3510B57D40F27F291FB2F1501D94444AADA8739',
+          exponent: 0,
+          aliases: ['lp:16:stutia']
+        }, {
+          denom: 'lp:16:sttia',
+          exponent: 6
+        }],
+      base: 'ibc/424A6AD4B8DB6CE842FC02B0A3510B57D40F27F291FB2F1501D94444AADA8739',
+      name: 'stTIA Yield LP',
+      display: 'lp:16:sttia',
+      symbol: 'stTIA-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:16:stutia',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for stTIA Boost pool',
+      denom_units: [{
+          denom: 'ibc/4D510423D9EC56204AE3CC9B64DE9A61DB0EEA7B76C8F54F5F253340111FDDD9',
+          exponent: 0,
+          aliases: ['lp:20:stutiaypt-utia']
+        }, {
+          denom: 'lp:20:sttiaypt-tia',
+          exponent: 6
+        }],
+      base: 'ibc/4D510423D9EC56204AE3CC9B64DE9A61DB0EEA7B76C8F54F5F253340111FDDD9',
+      name: 'stTIA Boost LP',
+      display: 'lp:20:sttiaypt-tia',
+      symbol: 'stTIA-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:20:stutiaypt-utia',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for TIA / USDC pool',
+      denom_units: [{
+          denom: 'ibc/4D5C872E29C3F3B88E4BEAE9ED2FA753F5F3B7F7FAD2FEBC9D21B4EA5F93C57A',
+          exponent: 0,
+          aliases: ['lp:21:utia-uusdc']
+        }, {
+          denom: 'lp:21:tia-usdc',
+          exponent: 6
+        }],
+      base: 'ibc/4D5C872E29C3F3B88E4BEAE9ED2FA753F5F3B7F7FAD2FEBC9D21B4EA5F93C57A',
+      name: 'TIA / USDC LP',
+      display: 'lp:21:tia-usdc',
+      symbol: 'TIA-USDC-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:21:utia-uusdc',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
       description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
       denom_units: [{
           denom: 'ibc/0954E1C28EB7AF5B72D24F3BC2B47BBB2FDF91BDDFD57B74B99E133AED40972A',
@@ -3093,6 +5269,2182 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-1',
             base_denom: 'upryzm',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for ATOM with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/368C7971AACA45D4E15D6C6299E22EE2FD2CA772C8CE1635B6498E62DFAA8E08',
+          exponent: 0,
+          aliases: ['p:uatom:30Sep2024']
+        }, {
+          denom: 'pATOM30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/368C7971AACA45D4E15D6C6299E22EE2FD2CA772C8CE1635B6498E62DFAA8E08',
+      name: 'pAtom (30Sep2024)',
+      display: 'pATOM30Sep2024',
+      symbol: 'pATOM-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uatom:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for ATOM with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/57C2F2AD1A2FE89E7CF82D3234CAC94029ABADC04949269C5994C641C161CDDC',
+          exponent: 0,
+          aliases: ['p:uatom:31Dec2024']
+        }, {
+          denom: 'pATOM31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/57C2F2AD1A2FE89E7CF82D3234CAC94029ABADC04949269C5994C641C161CDDC',
+      name: 'pAtom (31Dec2024)',
+      display: 'pATOM31Dec2024',
+      symbol: 'pATOM-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uatom:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for ATOM with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/DFC8484D05ABEED6336C48468E9B03FFF808F9BD2F01985DBFADD98CA4099F33',
+          exponent: 0,
+          aliases: ['p:uatom:31Dec2025']
+        }, {
+          denom: 'pATOM31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/DFC8484D05ABEED6336C48468E9B03FFF808F9BD2F01985DBFADD98CA4099F33',
+      name: 'pAtom (31Dec2025)',
+      display: 'pATOM31Dec2025',
+      symbol: 'pATOM-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uatom:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for OSMO with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/705F080D0191A6937EEAFD050D8FD03BE819790240D4F447F445716F22F887C6',
+          exponent: 0,
+          aliases: ['p:uosmo:30Sep2024']
+        }, {
+          denom: 'pOSMO30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/705F080D0191A6937EEAFD050D8FD03BE819790240D4F447F445716F22F887C6',
+      name: 'pOsmo (30Sep2024)',
+      display: 'pOSMO30Sep2024',
+      symbol: 'pOSMO-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uosmo:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for OSMO with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/102FF3A6E5585EC3A89B7C1611ADB27C9DD33049EC587A91488BDAF084F92854',
+          exponent: 0,
+          aliases: ['p:uosmo:31Dec2024']
+        }, {
+          denom: 'pOSMO31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/102FF3A6E5585EC3A89B7C1611ADB27C9DD33049EC587A91488BDAF084F92854',
+      name: 'pOsmo (31Dec2024)',
+      display: 'pOSMO31Dec2024',
+      symbol: 'pOSMO-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uosmo:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for OSMO with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/DC05A4336A8321FA0F30C6FA0FD0078362358BF8A6CF181D816FE4962848CCA3',
+          exponent: 0,
+          aliases: ['p:uosmo:31Dec2025']
+        }, {
+          denom: 'pOSMO31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/DC05A4336A8321FA0F30C6FA0FD0078362358BF8A6CF181D816FE4962848CCA3',
+      name: 'pOsmo (31Dec2025)',
+      display: 'pOSMO31Dec2025',
+      symbol: 'pOSMO-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uosmo:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for INJ with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/D0F3CC8B6BAB6B597F02BB7F3EDEB3581AC4EA4302CAE673727E4BBBE076EB72',
+          exponent: 0,
+          aliases: ['p:inj:30Sep2024']
+        }, {
+          denom: 'pINJ30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/D0F3CC8B6BAB6B597F02BB7F3EDEB3581AC4EA4302CAE673727E4BBBE076EB72',
+      name: 'pInj (30Sep2024)',
+      display: 'pINJ30Sep2024',
+      symbol: 'pINJ-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:inj:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for INJ with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/338F1E8716BC3A62E6AF0C1C9D89CD165BA845EB07FEF6089E985D097CA650DA',
+          exponent: 0,
+          aliases: ['p:inj:31Dec2024']
+        }, {
+          denom: 'pINJ31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/338F1E8716BC3A62E6AF0C1C9D89CD165BA845EB07FEF6089E985D097CA650DA',
+      name: 'pInj (31Dec2024)',
+      display: 'pINJ31Dec2024',
+      symbol: 'pINJ-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:inj:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for INJ with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/ECB1978C49F5A56455C98BF3ED5898B352F09237F1591689E4BE9131A0D7C503',
+          exponent: 0,
+          aliases: ['p:inj:31Dec2025']
+        }, {
+          denom: 'pINJ31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/ECB1978C49F5A56455C98BF3ED5898B352F09237F1591689E4BE9131A0D7C503',
+      name: 'pInj (31Dec2025)',
+      display: 'pINJ31Dec2025',
+      symbol: 'pINJ-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:inj:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for LUNA with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/DFCDD25BA6D1AF26487B57FE7C3CEDE136D778A313B3BD5F8908C6FDC9A2D6F9',
+          exponent: 0,
+          aliases: ['p:uluna:30Sep2024']
+        }, {
+          denom: 'pLUNA30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/DFCDD25BA6D1AF26487B57FE7C3CEDE136D778A313B3BD5F8908C6FDC9A2D6F9',
+      name: 'pLuna (30Sep2024)',
+      display: 'pLUNA30Sep2024',
+      symbol: 'pLUNA-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uluna:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for LUNA with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/8D76730A902BEA1C1ED330F3BF367EF633F861BEBA66D68EF09D474C007F3737',
+          exponent: 0,
+          aliases: ['p:uluna:31Dec2024']
+        }, {
+          denom: 'pLUNA31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/8D76730A902BEA1C1ED330F3BF367EF633F861BEBA66D68EF09D474C007F3737',
+      name: 'pLuna (31Dec2024)',
+      display: 'pLUNA31Dec2024',
+      symbol: 'pLUNA-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uluna:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for LUNA with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/0AD7F861767F69C332039D9AC97138A8FB8C58EE743C7827EC78A71F5B99C072',
+          exponent: 0,
+          aliases: ['p:uluna:31Dec2025']
+        }, {
+          denom: 'pLUNA31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/0AD7F861767F69C332039D9AC97138A8FB8C58EE743C7827EC78A71F5B99C072',
+      name: 'pLuna (31Dec2025)',
+      display: 'pLUNA31Dec2025',
+      symbol: 'pLUNA-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uluna:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for AUUU with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/49ADCAC494A9E9FE1EB1FE6FE5E8F32AA54F38A50DDDA3292DB4DCC0623893D7',
+          exponent: 0,
+          aliases: ['p:uauuu:30Sep2024']
+        }, {
+          denom: 'pAUUU30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/49ADCAC494A9E9FE1EB1FE6FE5E8F32AA54F38A50DDDA3292DB4DCC0623893D7',
+      name: 'pAuuu (30Sep2024)',
+      display: 'pAUUU30Sep2024',
+      symbol: 'pAUUU-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uauuu:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for AUUU with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/7AA47960D29638950C9A96CD87D19883D325876A8AFE0B5367B26B1ABD290D04',
+          exponent: 0,
+          aliases: ['p:uauuu:31Dec2024']
+        }, {
+          denom: 'pAUUU31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/7AA47960D29638950C9A96CD87D19883D325876A8AFE0B5367B26B1ABD290D04',
+      name: 'pAuuu (31Dec2024)',
+      display: 'pAUUU31Dec2024',
+      symbol: 'pAUUU-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uauuu:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for AUUU with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/BD80CB79FCE0BDD1B23E0275558628CC34D40849583E5B5C3C4059BF25E67B44',
+          exponent: 0,
+          aliases: ['p:uauuu:31Dec2025']
+        }, {
+          denom: 'pAUUU31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/BD80CB79FCE0BDD1B23E0275558628CC34D40849583E5B5C3C4059BF25E67B44',
+      name: 'pAuuu (31Dec2025)',
+      display: 'pAUUU31Dec2025',
+      symbol: 'pAUUU-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:uauuu:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for stTIA with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/7A18E05E78C867C18A593066E830BE95B789F643934FB58EAF77A00D0451591B',
+          exponent: 0,
+          aliases: ['p:stutia:30Sep2024']
+        }, {
+          denom: 'pstTIA30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/7A18E05E78C867C18A593066E830BE95B789F643934FB58EAF77A00D0451591B',
+      name: 'pstTia (30Sep2024)',
+      display: 'pstTIA30Sep2024',
+      symbol: 'pstTIA-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:stutia:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for stTIA with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/4D68207899DB3A8AC13322871EEC3F35DE9EEF1EB4AD1E269B563C043425287C',
+          exponent: 0,
+          aliases: ['p:stutia:31Dec2024']
+        }, {
+          denom: 'pstTIA31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/4D68207899DB3A8AC13322871EEC3F35DE9EEF1EB4AD1E269B563C043425287C',
+      name: 'pstTia (31Dec2024)',
+      display: 'pstTIA31Dec2024',
+      symbol: 'pstTIA-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:stutia:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for stTIA with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/76BAC47E42CF4021CAA3E2341F65958B7FFC0719CB42C1630C4D61C229D68A24',
+          exponent: 0,
+          aliases: ['p:stutia:31Dec2025']
+        }, {
+          denom: 'pstTIA31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/76BAC47E42CF4021CAA3E2341F65958B7FFC0719CB42C1630C4D61C229D68A24',
+      name: 'pstTia (31Dec2025)',
+      display: 'pstTIA31Dec2025',
+      symbol: 'pstTIA-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:stutia:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for stDYDX with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/F9D2FBA8C2795DC27C4578A190DFB0608A18427F0B322BC90A339F5EA7F66D77',
+          exponent: 0,
+          aliases: ['p:stadydx:30Sep2024']
+        }, {
+          denom: 'pstDYDX30Sep2024',
+          exponent: 18
+        }],
+      base: 'ibc/F9D2FBA8C2795DC27C4578A190DFB0608A18427F0B322BC90A339F5EA7F66D77',
+      name: 'pstDydx (30Sep2024)',
+      display: 'pstDYDX30Sep2024',
+      symbol: 'pstDYDX-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:stadydx:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for stDYDX with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/730220B27C6C740A9A4535DC99D57E4ADE81E48107C428C1541F3AAE75C7F769',
+          exponent: 0,
+          aliases: ['p:stadydx:31Dec2024']
+        }, {
+          denom: 'pstDYDX31Dec2024',
+          exponent: 18
+        }],
+      base: 'ibc/730220B27C6C740A9A4535DC99D57E4ADE81E48107C428C1541F3AAE75C7F769',
+      name: 'pstDydx (31Dec2024)',
+      display: 'pstDYDX31Dec2024',
+      symbol: 'pstDYDX-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:stadydx:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for stDYDX with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/1062574A328559A77CBF08D5C9C1A8C9F3F7583AC5769CCC81A7C239D6D1E7E6',
+          exponent: 0,
+          aliases: ['p:stadydx:31Dec2025']
+        }, {
+          denom: 'pstDYDX31Dec2025',
+          exponent: 18
+        }],
+      base: 'ibc/1062574A328559A77CBF08D5C9C1A8C9F3F7583AC5769CCC81A7C239D6D1E7E6',
+      name: 'pstDydx (31Dec2025)',
+      display: 'pstDYDX31Dec2025',
+      symbol: 'pstDYDX-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'p:stadydx:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for ATOM with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/7A994E4C7A02029E5FDA02F927787250F2BBCCCBC7B13A41009D2C548F3B234E',
+          exponent: 0,
+          aliases: ['y:uatom:30Sep2024']
+        }, {
+          denom: 'yATOM30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/7A994E4C7A02029E5FDA02F927787250F2BBCCCBC7B13A41009D2C548F3B234E',
+      name: 'yAtom (30Sep2024)',
+      display: 'yATOM30Sep2024',
+      symbol: 'yATOM-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uatom:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for ATOM with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/2504C9CFD5F0CF8220A83DF1437E83EFB1433D7B26C8B887AF5F7B1CB1C8CD47',
+          exponent: 0,
+          aliases: ['y:uatom:31Dec2024']
+        }, {
+          denom: 'yATOM31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/2504C9CFD5F0CF8220A83DF1437E83EFB1433D7B26C8B887AF5F7B1CB1C8CD47',
+      name: 'yAtom (31Dec2024)',
+      display: 'yATOM31Dec2024',
+      symbol: 'yATOM-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uatom:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for ATOM with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/9E2194238758130F29211AAFB963FE69CA40DB065DAF8B72BB049F61B56F4BBE',
+          exponent: 0,
+          aliases: ['y:uatom:31Dec2025']
+        }, {
+          denom: 'yATOM31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/9E2194238758130F29211AAFB963FE69CA40DB065DAF8B72BB049F61B56F4BBE',
+      name: 'yAtom (31Dec2025)',
+      display: 'yATOM31Dec2025',
+      symbol: 'yATOM-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uatom:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for OSMO with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/C1C6E4CA01E5ADEF91E90E08B4B021FD63791C5D2AD576C495557A5FC950C1D4',
+          exponent: 0,
+          aliases: ['y:uosmo:30Sep2024']
+        }, {
+          denom: 'yOSMO30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/C1C6E4CA01E5ADEF91E90E08B4B021FD63791C5D2AD576C495557A5FC950C1D4',
+      name: 'yOsmo (30Sep2024)',
+      display: 'yOSMO30Sep2024',
+      symbol: 'yOSMO-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uosmo:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for OSMO with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/6D2CCF76FC0DEA11AD471E28B9F0EC6EEB3ADEC26FC565B5695351A5635A73B7',
+          exponent: 0,
+          aliases: ['y:uosmo:31Dec2024']
+        }, {
+          denom: 'yOSMO31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/6D2CCF76FC0DEA11AD471E28B9F0EC6EEB3ADEC26FC565B5695351A5635A73B7',
+      name: 'yOsmo (31Dec2024)',
+      display: 'yOSMO31Dec2024',
+      symbol: 'yOSMO-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uosmo:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for OSMO with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/B8C323AF887823F6F98576A8D9C861E7ACAA5BA661E61B3A841CCAC442EF0CE7',
+          exponent: 0,
+          aliases: ['y:uosmo:31Dec2025']
+        }, {
+          denom: 'yOSMO31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/B8C323AF887823F6F98576A8D9C861E7ACAA5BA661E61B3A841CCAC442EF0CE7',
+      name: 'yOsmo (31Dec2025)',
+      display: 'yOSMO31Dec2025',
+      symbol: 'yOSMO-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uosmo:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for INJ with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/E912C340250ABAFDAAC0E76DF6ACFF20A33665794A2C2F03C19DACF51EDA19CF',
+          exponent: 0,
+          aliases: ['y:inj:30Sep2024']
+        }, {
+          denom: 'yINJ30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/E912C340250ABAFDAAC0E76DF6ACFF20A33665794A2C2F03C19DACF51EDA19CF',
+      name: 'yInj (30Sep2024)',
+      display: 'yINJ30Sep2024',
+      symbol: 'yINJ-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:inj:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for INJ with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/2DFF81D4E81995579791F19D722697570CC1331ADF2F08FBEA8A76D51FCEC6E8',
+          exponent: 0,
+          aliases: ['y:inj:31Dec2024']
+        }, {
+          denom: 'yINJ31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/2DFF81D4E81995579791F19D722697570CC1331ADF2F08FBEA8A76D51FCEC6E8',
+      name: 'yInj (31Dec2024)',
+      display: 'yINJ31Dec2024',
+      symbol: 'yINJ-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:inj:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for INJ with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/39793B014139A056461F0E4444EE3E2F81F7846CF1AEA0EEBBE49C3667DC1F7A',
+          exponent: 0,
+          aliases: ['y:inj:31Dec2025']
+        }, {
+          denom: 'yINJ31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/39793B014139A056461F0E4444EE3E2F81F7846CF1AEA0EEBBE49C3667DC1F7A',
+      name: 'yInj (31Dec2025)',
+      display: 'yINJ31Dec2025',
+      symbol: 'yINJ-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:inj:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for LUNA with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/812CF63AC61F8C618801672103AB5A5651CE83FA2C5187ABD71D4181B83F21F0',
+          exponent: 0,
+          aliases: ['y:uluna:30Sep2024']
+        }, {
+          denom: 'yLUNA30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/812CF63AC61F8C618801672103AB5A5651CE83FA2C5187ABD71D4181B83F21F0',
+      name: 'yLuna (30Sep2024)',
+      display: 'yLUNA30Sep2024',
+      symbol: 'yLUNA-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uluna:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for LUNA with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/8DC9F05FE9A3A1FD8244715ADA0EC9820FFA6CAA9255BC6E9A6A8FC41C2FC97E',
+          exponent: 0,
+          aliases: ['y:uluna:31Dec2024']
+        }, {
+          denom: 'yLUNA31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/8DC9F05FE9A3A1FD8244715ADA0EC9820FFA6CAA9255BC6E9A6A8FC41C2FC97E',
+      name: 'yLuna (31Dec2024)',
+      display: 'yLUNA31Dec2024',
+      symbol: 'yLUNA-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uluna:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for LUNA with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/DBE8CB115CC6244C79DB9AC9C37364CE817E5D6B6DB4A609C3C6AE5B71786E3B',
+          exponent: 0,
+          aliases: ['y:uluna:31Dec2025']
+        }, {
+          denom: 'yLUNA31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/DBE8CB115CC6244C79DB9AC9C37364CE817E5D6B6DB4A609C3C6AE5B71786E3B',
+      name: 'yLuna (31Dec2025)',
+      display: 'yLUNA31Dec2025',
+      symbol: 'yLUNA-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uluna:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for AUUU with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/A0ADC985CD3BD5F76028433E6A1A694CAFC6859670992995FDCDF32B5AEB2340',
+          exponent: 0,
+          aliases: ['y:uauuu:30Sep2024']
+        }, {
+          denom: 'yAUUU30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/A0ADC985CD3BD5F76028433E6A1A694CAFC6859670992995FDCDF32B5AEB2340',
+      name: 'yAuuu (30Sep2024)',
+      display: 'yAUUU30Sep2024',
+      symbol: 'yAUUU-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uauuu:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for AUUU with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/1DD3F7C436B23B7105E1C92434F481162F8CDE2D67DC4F7F57431B4DA933296A',
+          exponent: 0,
+          aliases: ['y:uauuu:31Dec2024']
+        }, {
+          denom: 'yAUUU31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/1DD3F7C436B23B7105E1C92434F481162F8CDE2D67DC4F7F57431B4DA933296A',
+      name: 'yAuuu (31Dec2024)',
+      display: 'yAUUU31Dec2024',
+      symbol: 'yAUUU-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uauuu:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for AUUU with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/0B0FDB379E84CCA18A6468E75737F4F3DEDD099CC298201DF089E2B2947410A0',
+          exponent: 0,
+          aliases: ['y:uauuu:31Dec2025']
+        }, {
+          denom: 'yAUUU31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/0B0FDB379E84CCA18A6468E75737F4F3DEDD099CC298201DF089E2B2947410A0',
+      name: 'yAuuu (31Dec2025)',
+      display: 'yAUUU31Dec2025',
+      symbol: 'yAUUU-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:uauuu:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for stTIA with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/E826B3323727FFA2E9A960AF168582E9AD20404B021C0A6EDC9AFB3976FB559D',
+          exponent: 0,
+          aliases: ['y:stutia:30Sep2024']
+        }, {
+          denom: 'ystTIA30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/E826B3323727FFA2E9A960AF168582E9AD20404B021C0A6EDC9AFB3976FB559D',
+      name: 'ystTia (30Sep2024)',
+      display: 'ystTIA30Sep2024',
+      symbol: 'ystTIA-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:stutia:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for stTIA with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/5EBFD08C04D545428D6D6722908211C90135CCC20E93195BD78D70B6F9DA2660',
+          exponent: 0,
+          aliases: ['y:stutia:31Dec2024']
+        }, {
+          denom: 'ystTIA31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/5EBFD08C04D545428D6D6722908211C90135CCC20E93195BD78D70B6F9DA2660',
+      name: 'ystTia (31Dec2024)',
+      display: 'ystTIA31Dec2024',
+      symbol: 'ystTIA-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:stutia:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for stTIA with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/A329F81812E746539897210B25B917A249F7DDB05D9EEC67741BE621CA8DACAD',
+          exponent: 0,
+          aliases: ['y:stutia:31Dec2025']
+        }, {
+          denom: 'ystTIA31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/A329F81812E746539897210B25B917A249F7DDB05D9EEC67741BE621CA8DACAD',
+      name: 'ystTia (31Dec2025)',
+      display: 'ystTIA31Dec2025',
+      symbol: 'ystTIA-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:stutia:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for stDYDX with maturity of 30Sep2024',
+      denom_units: [{
+          denom: 'ibc/8400E77857AD6BD9910D57409970BC61A6E6B3BDBBA284AF931F14304012253E',
+          exponent: 0,
+          aliases: ['y:stadydx:30Sep2024']
+        }, {
+          denom: 'ystDYDX30Sep2024',
+          exponent: 6
+        }],
+      base: 'ibc/8400E77857AD6BD9910D57409970BC61A6E6B3BDBBA284AF931F14304012253E',
+      name: 'ystDydx (30Sep2024)',
+      display: 'ystDYDX30Sep2024',
+      symbol: 'ystDYDX-30Sep2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:stadydx:30Sep2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for stDYDX with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/C31E802B564C5DCF8DC819118022868AB214CD21F1FCD08ECCD78BEB99B466A0',
+          exponent: 0,
+          aliases: ['y:stadydx:31Dec2024']
+        }, {
+          denom: 'ystDYDX31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/C31E802B564C5DCF8DC819118022868AB214CD21F1FCD08ECCD78BEB99B466A0',
+      name: 'ystDydx (31Dec2024)',
+      display: 'ystDYDX31Dec2024',
+      symbol: 'ystDYDX-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:stadydx:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for stDYDX with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/0ADE8BDF371245DC02CD423DEA1D50C7B36818218592E11EBE18D36D0F73BEBB',
+          exponent: 0,
+          aliases: ['y:stadydx:31Dec2025']
+        }, {
+          denom: 'ystDYDX31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/0ADE8BDF371245DC02CD423DEA1D50C7B36818218592E11EBE18D36D0F73BEBB',
+      name: 'ystDydx (31Dec2025)',
+      display: 'ystDYDX31Dec2025',
+      symbol: 'ystDYDX-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'y:stadydx:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for USDC / USDC.axl pool',
+      denom_units: [{
+          denom: 'ibc/FCC82F1F936A6D147738113E2D895968C9FEE804AA50DACFED16475EBB8CF36A',
+          exponent: 0,
+          aliases: ['lp:6:uusdc.axl-uusdc']
+        }, {
+          denom: 'lp:6:usdc.axl-usdc',
+          exponent: 6
+        }],
+      base: 'ibc/FCC82F1F936A6D147738113E2D895968C9FEE804AA50DACFED16475EBB8CF36A',
+      name: 'USDC / USDC.axl LP',
+      display: 'lp:6:usdc.axl-usdc',
+      symbol: 'USDC-USDC.axl-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:6:uusdc.axl-uusdc',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for ATOM Yield pool',
+      denom_units: [{
+          denom: 'ibc/47BE05F9949162E2CD5E116BABBB20340859D83F2350434CC68C928820DC86F7',
+          exponent: 0,
+          aliases: ['lp:0:uatom']
+        }, {
+          denom: 'lp:0:atom',
+          exponent: 6
+        }],
+      base: 'ibc/47BE05F9949162E2CD5E116BABBB20340859D83F2350434CC68C928820DC86F7',
+      name: 'ATOM Yield LP',
+      display: 'lp:0:atom',
+      symbol: 'ATOM-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:0:uatom',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for ATOM Boost pool',
+      denom_units: [{
+          denom: 'ibc/2519F9B056D0B3866BBBC6FDC21A8CA3615E67B21B87AAFE739C23D1E24F20F9',
+          exponent: 0,
+          aliases: ['lp:2:uatomypt-uatom']
+        }, {
+          denom: 'lp:2:atomypt-atom',
+          exponent: 6
+        }],
+      base: 'ibc/2519F9B056D0B3866BBBC6FDC21A8CA3615E67B21B87AAFE739C23D1E24F20F9',
+      name: 'ATOM Boost LP',
+      display: 'lp:2:atomypt-atom',
+      symbol: 'ATOM-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:2:uatomypt-uatom',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for ATOM / USDC pool',
+      denom_units: [{
+          denom: 'ibc/CFEE8590A2AE7CD37A2AEAD71132758956E95E9F306059E3145E244BF2E84537',
+          exponent: 0,
+          aliases: ['lp:3:uatom-uusdc']
+        }, {
+          denom: 'lp:3:atom-usdc',
+          exponent: 6
+        }],
+      base: 'ibc/CFEE8590A2AE7CD37A2AEAD71132758956E95E9F306059E3145E244BF2E84537',
+      name: 'ATOM / USDC LP',
+      display: 'lp:3:atom-usdc',
+      symbol: 'ATOM-USDC-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:3:uatom-uusdc',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for INJ Yield pool',
+      denom_units: [{
+          denom: 'ibc/33807304CF00FB4481E14AF77B3B656759F9E8B17C478CB55A8C9F5CF7783FEB',
+          exponent: 0,
+          aliases: ['lp:1:inj']
+        }, {
+          denom: 'lp:1:INJ',
+          exponent: 6
+        }],
+      base: 'ibc/33807304CF00FB4481E14AF77B3B656759F9E8B17C478CB55A8C9F5CF7783FEB',
+      name: 'INJ Yield LP',
+      display: 'lp:1:INJ',
+      symbol: 'INJ-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:1:inj',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for INJ Boost pool',
+      denom_units: [{
+          denom: 'ibc/27D758827282C5C096FDC53B899A6C7713974DC0F6F7A0C2FBC00967F91E6F8B',
+          exponent: 0,
+          aliases: ['lp:4:injypt-inj']
+        }, {
+          denom: 'lp:4:INJypt-INJ',
+          exponent: 6
+        }],
+      base: 'ibc/27D758827282C5C096FDC53B899A6C7713974DC0F6F7A0C2FBC00967F91E6F8B',
+      name: 'INJ Boost LP',
+      display: 'lp:4:INJypt-INJ',
+      symbol: 'INJ-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:4:injypt-inj',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for INJ / USDC pool',
+      denom_units: [{
+          denom: 'ibc/C2CC6309A535AD8A45E921D88EB98B7707C3228598AB1785E3EB7231967F283D',
+          exponent: 0,
+          aliases: ['lp:5:inj-uusdc']
+        }, {
+          denom: 'lp:5:INJ-usdc',
+          exponent: 18
+        }],
+      base: 'ibc/C2CC6309A535AD8A45E921D88EB98B7707C3228598AB1785E3EB7231967F283D',
+      name: 'INJ / USDC LP',
+      display: 'lp:5:INJ-usdc',
+      symbol: 'INJ-USDC-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:5:inj-uusdc',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for OSMO Yield pool',
+      denom_units: [{
+          denom: 'ibc/C4095EE7A436CDCD76F0F9F782B67F6D62A93310A7FB9642D395802374DC67D6',
+          exponent: 0,
+          aliases: ['lp:8:uosmo']
+        }, {
+          denom: 'lp:8:osmo',
+          exponent: 6
+        }],
+      base: 'ibc/C4095EE7A436CDCD76F0F9F782B67F6D62A93310A7FB9642D395802374DC67D6',
+      name: 'OSMO Yield LP',
+      display: 'lp:8:osmo',
+      symbol: 'OSMO-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:8:uosmo',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for OSMO Boost pool',
+      denom_units: [{
+          denom: 'ibc/316146775EEA89F34D029F63EB8C8CAC5F33696CD537E23F86BDDEE93433D91A',
+          exponent: 0,
+          aliases: ['lp:10:uosmoypt-uosmo']
+        }, {
+          denom: 'lp:10:osmoypt-osmo',
+          exponent: 6
+        }],
+      base: 'ibc/316146775EEA89F34D029F63EB8C8CAC5F33696CD537E23F86BDDEE93433D91A',
+      name: 'OSMO Boost LP',
+      display: 'lp:10:osmoypt-osmo',
+      symbol: 'OSMO-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:10:uosmoypt-uosmo',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for OSMO / USDC pool',
+      denom_units: [{
+          denom: 'ibc/EB478A301AA49FBF979839FA5F1DAF5C5DAA7FF9D330EB83920DD3E280B3DED8',
+          exponent: 0,
+          aliases: ['lp:11:uosmo-uusdc']
+        }, {
+          denom: 'lp:11:osmo-usdc',
+          exponent: 6
+        }],
+      base: 'ibc/EB478A301AA49FBF979839FA5F1DAF5C5DAA7FF9D330EB83920DD3E280B3DED8',
+      name: 'OSMO / USDC LP',
+      display: 'lp:11:osmo-usdc',
+      symbol: 'OSMO-USDC-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:11:uosmo-uusdc',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for LUNA Yield pool',
+      denom_units: [{
+          denom: 'ibc/F83A39604DBA8B3886D672C572FE020A0ECF9A711BC35C7EF8F129C8B15C3107',
+          exponent: 0,
+          aliases: ['lp:9:uluna']
+        }, {
+          denom: 'lp:9:luna',
+          exponent: 6
+        }],
+      base: 'ibc/F83A39604DBA8B3886D672C572FE020A0ECF9A711BC35C7EF8F129C8B15C3107',
+      name: 'LUNA Yield LP',
+      display: 'lp:9:luna',
+      symbol: 'LUNA-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:9:uluna',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for LUNA Boost pool',
+      denom_units: [{
+          denom: 'ibc/5A0436619E11E57DFE0791A79E43EDDB9084D564709BE4B8D3655D9967EAB52D',
+          exponent: 0,
+          aliases: ['lp:12:ulunaypt-uluna']
+        }, {
+          denom: 'lp:12:lunaypt-luna',
+          exponent: 6
+        }],
+      base: 'ibc/5A0436619E11E57DFE0791A79E43EDDB9084D564709BE4B8D3655D9967EAB52D',
+      name: 'LUNA Boost LP',
+      display: 'lp:12:lunaypt-luna',
+      symbol: 'LUNA-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:12:ulunaypt-uluna',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for LUNA / USDC pool',
+      denom_units: [{
+          denom: 'ibc/F7B51F1370D141AAE886E86BFFEAE64BF132BA18BB905B2B3C1840C7DF989ACF',
+          exponent: 0,
+          aliases: ['lp:13:uluna-uusdc']
+        }, {
+          denom: 'lp:13:luna-usdc',
+          exponent: 6
+        }],
+      base: 'ibc/F7B51F1370D141AAE886E86BFFEAE64BF132BA18BB905B2B3C1840C7DF989ACF',
+      name: 'LUNA / USDC LP',
+      display: 'lp:13:luna-usdc',
+      symbol: 'LUNA-USDC-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:13:uluna-uusdc',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for AUUU Yield pool',
+      denom_units: [{
+          denom: 'ibc/0D2B0139B7B937177ADE0A0CF3AB204763FD7F45B34B08285654427ABA51C4D1',
+          exponent: 0,
+          aliases: ['lp:14:uauuu']
+        }, {
+          denom: 'lp:14:auuu',
+          exponent: 6
+        }],
+      base: 'ibc/0D2B0139B7B937177ADE0A0CF3AB204763FD7F45B34B08285654427ABA51C4D1',
+      name: 'AUUU Yield LP',
+      display: 'lp:14:auuu',
+      symbol: 'AUUU-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:14:uauuu',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for AUUU Boost pool',
+      denom_units: [{
+          denom: 'ibc/91340D27D271DD498072CEF92E8160204FD4FF74417BB90C020792063806CB2D',
+          exponent: 0,
+          aliases: ['lp:17:uauuuypt-uauuu']
+        }, {
+          denom: 'lp:17:auuuypt-auuu',
+          exponent: 6
+        }],
+      base: 'ibc/91340D27D271DD498072CEF92E8160204FD4FF74417BB90C020792063806CB2D',
+      name: 'AUUU Boost LP',
+      display: 'lp:17:auuuypt-auuu',
+      symbol: 'AUUU-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:17:uauuuypt-uauuu',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for AUUU / USDC pool',
+      denom_units: [{
+          denom: 'ibc/4476B2810337345E26557F12186479960D47B33B5AC74E9867EB4553E65A045E',
+          exponent: 0,
+          aliases: ['lp:7:uauuu-uusdc']
+        }, {
+          denom: 'lp:7:auuu-usdc',
+          exponent: 6
+        }],
+      base: 'ibc/4476B2810337345E26557F12186479960D47B33B5AC74E9867EB4553E65A045E',
+      name: 'AUUU / USDC LP',
+      display: 'lp:7:auuu-usdc',
+      symbol: 'AUUU-USDC-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:7:uauuu-uusdc',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for stDYDX Yield pool',
+      denom_units: [{
+          denom: 'ibc/A5E7901DFB03C4341C0798FD632C16689987014AE1BEBDD14436599A61895C3E',
+          exponent: 0,
+          aliases: ['lp:15:stadydx']
+        }, {
+          denom: 'lp:15:stdydx',
+          exponent: 18
+        }],
+      base: 'ibc/A5E7901DFB03C4341C0798FD632C16689987014AE1BEBDD14436599A61895C3E',
+      name: 'stDYDX Yield LP',
+      display: 'lp:15:stdydx',
+      symbol: 'stDYDX-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:15:stadydx',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for stDYDX Boost pool',
+      denom_units: [{
+          denom: 'ibc/2D179C66414C7C5A842FE73D19871CE8205F04B0B6973066859B67DC9509959E',
+          exponent: 0,
+          aliases: ['lp:18:stadydxypt-adydx']
+        }, {
+          denom: 'lp:18:stdydxypt-dydx',
+          exponent: 18
+        }],
+      base: 'ibc/2D179C66414C7C5A842FE73D19871CE8205F04B0B6973066859B67DC9509959E',
+      name: 'stDYDX Boost LP',
+      display: 'lp:18:stdydxypt-dydx',
+      symbol: 'stDYDX-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:18:stadydxypt-adydx',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for DYDX / USDC pool',
+      denom_units: [{
+          denom: 'ibc/2D3757EEC11284BAB7B00E105540237CDD1DE69D633FBBA68118DE31658C9366',
+          exponent: 0,
+          aliases: ['lp:19:adydx-uusdc']
+        }, {
+          denom: 'lp:19:dydx-usdc',
+          exponent: 18
+        }],
+      base: 'ibc/2D3757EEC11284BAB7B00E105540237CDD1DE69D633FBBA68118DE31658C9366',
+      name: 'DYDX / USDC LP',
+      display: 'lp:19:dydx-usdc',
+      symbol: 'DYDX-USDC-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:19:adydx-uusdc',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for stTIA Yield pool',
+      denom_units: [{
+          denom: 'ibc/424A6AD4B8DB6CE842FC02B0A3510B57D40F27F291FB2F1501D94444AADA8739',
+          exponent: 0,
+          aliases: ['lp:16:stutia']
+        }, {
+          denom: 'lp:16:sttia',
+          exponent: 6
+        }],
+      base: 'ibc/424A6AD4B8DB6CE842FC02B0A3510B57D40F27F291FB2F1501D94444AADA8739',
+      name: 'stTIA Yield LP',
+      display: 'lp:16:sttia',
+      symbol: 'stTIA-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:16:stutia',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for stTIA Boost pool',
+      denom_units: [{
+          denom: 'ibc/4D510423D9EC56204AE3CC9B64DE9A61DB0EEA7B76C8F54F5F253340111FDDD9',
+          exponent: 0,
+          aliases: ['lp:20:stutiaypt-utia']
+        }, {
+          denom: 'lp:20:sttiaypt-tia',
+          exponent: 6
+        }],
+      base: 'ibc/4D510423D9EC56204AE3CC9B64DE9A61DB0EEA7B76C8F54F5F253340111FDDD9',
+      name: 'stTIA Boost LP',
+      display: 'lp:20:sttiaypt-tia',
+      symbol: 'stTIA-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:20:stutiaypt-utia',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for TIA / USDC pool',
+      denom_units: [{
+          denom: 'ibc/4D5C872E29C3F3B88E4BEAE9ED2FA753F5F3B7F7FAD2FEBC9D21B4EA5F93C57A',
+          exponent: 0,
+          aliases: ['lp:21:utia-uusdc']
+        }, {
+          denom: 'lp:21:tia-usdc',
+          exponent: 6
+        }],
+      base: 'ibc/4D5C872E29C3F3B88E4BEAE9ED2FA753F5F3B7F7FAD2FEBC9D21B4EA5F93C57A',
+      name: 'TIA / USDC LP',
+      display: 'lp:21:tia-usdc',
+      symbol: 'TIA-USDC-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'lp:21:utia-uusdc',
             chain_name: 'pryzm'
           },
           chain: {

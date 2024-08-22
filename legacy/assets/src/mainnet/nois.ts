@@ -362,38 +362,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'DRUGS meme coin',
-      denom_units: [{
-          denom: 'ibc/FEC6E689CBFFF9F300855AA69431364A6C54FA5FAB6EF18DFB0C0C978A394ED7',
-          exponent: 0,
-          aliases: ['inj19vy83ne9tzta2yqynj8yg7dq9ghca6yqn9hyej']
-        }, {
-          denom: 'DRUGS',
-          exponent: 6
-        }],
-      base: 'ibc/FEC6E689CBFFF9F300855AA69431364A6C54FA5FAB6EF18DFB0C0C978A394ED7',
-      name: 'DRUGS',
-      display: 'DRUGS',
-      symbol: 'DRUGS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/drugs.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/drugs.png'
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-138',
-            base_denom: 'inj19vy83ne9tzta2yqynj8yg7dq9ghca6yqn9hyej',
-            chain_name: 'injective'
-          },
-          chain: {
-            channel_id: 'channel-17'
-          }
-        }]
-    },
-    {
       description: 'The native token of JUNO Chain',
       denom_units: [{
           denom: 'ibc/EFF323CC632EC4F747C61BCE238A758EFDB7699C3226565F7C20DA06509D59A5',
@@ -936,38 +904,6 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-138',
             base_denom: 'inj1fzquxxxam59z6fzewy2hvvreeh3m04x83zg4vv',
-            chain_name: 'injective'
-          },
-          chain: {
-            channel_id: 'channel-17'
-          }
-        }]
-    },
-    {
-      description: 'DRUGS meme coin',
-      denom_units: [{
-          denom: 'ibc/FEC6E689CBFFF9F300855AA69431364A6C54FA5FAB6EF18DFB0C0C978A394ED7',
-          exponent: 0,
-          aliases: ['inj19vy83ne9tzta2yqynj8yg7dq9ghca6yqn9hyej']
-        }, {
-          denom: 'DRUGS',
-          exponent: 6
-        }],
-      base: 'ibc/FEC6E689CBFFF9F300855AA69431364A6C54FA5FAB6EF18DFB0C0C978A394ED7',
-      name: 'DRUGS',
-      display: 'DRUGS',
-      symbol: 'DRUGS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/drugs.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/drugs.png'
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-138',
-            base_denom: 'inj19vy83ne9tzta2yqynj8yg7dq9ghca6yqn9hyej',
             chain_name: 'injective'
           },
           chain: {

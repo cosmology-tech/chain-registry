@@ -154,6 +154,10 @@ const info: Chain = {
       {
         address: 'http://37.60.240.43:46657',
         provider: 'NakoTurk'
+      },
+      {
+        address: 'https://chain4energy_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -260,6 +264,10 @@ const info: Chain = {
       {
         address: 'https://lcd-m-c4e.apeironnodes.com',
         provider: 'Apeiron Nodes'
+      },
+      {
+        address: 'https://chain4energy_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -440,6 +448,12 @@ const info: Chain = {
       kind: 'Cryptech',
       url: 'https://explorers.cryptech.com.ua/chain4energy',
       tx_page: 'https://explorers.cryptech.com.ua/chain4energy/tx/${txHash}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/chain4energy',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/chain4energy/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/chain4energy/account/${accountAddress}'
     }
   ],
   images: [{
