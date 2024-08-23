@@ -688,6 +688,122 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The permissioned staking asset for Noble Chain',
+      denom_units: [{
+          denom: 'ibc/7F1B1BD1EE1519A458D9E9C6600DB34D5A4184C039BCD444766744C4CB0A32AB',
+          exponent: 0,
+          aliases: ['ustake']
+        }, {
+          denom: 'stake',
+          exponent: 6
+        }],
+      base: 'ibc/7F1B1BD1EE1519A458D9E9C6600DB34D5A4184C039BCD444766744C4CB0A32AB',
+      name: 'Stake',
+      display: 'stake',
+      symbol: 'STAKE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg',
+          theme: {
+            primary_color_hex: '#a8bbfb'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-94',
+            base_denom: 'ustake',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-14'
+          }
+        }]
+    },
+    {
+      description: 'Frienzies are an IBC token redeemable exclusively for a physical asset issued by the Noble entity.',
+      denom_units: [{
+          denom: 'ibc/9DDA5B60391FE6D99AE1C85C70491B111308039CD110C01EF0527803ECBE9F14',
+          exponent: 0,
+          aliases: ['ufrienzies']
+        }, {
+          denom: 'frienzies',
+          exponent: 6
+        }],
+      base: 'ibc/9DDA5B60391FE6D99AE1C85C70491B111308039CD110C01EF0527803ECBE9F14',
+      display: 'frienzies',
+      name: 'Frienzies',
+      symbol: 'FRNZ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.svg',
+          theme: {
+            primary_color_hex: '#04041c'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-94',
+            base_denom: 'ufrienzies',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-14'
+          }
+        }]
+    },
+    {
+      description: 'Ondo US Dollar Yield',
+      denom_units: [{
+          denom: 'ibc/EF6499430790C8848C9684B237A8687CDA350F77D1005B8034BFBB68D5D69958',
+          exponent: 0,
+          aliases: ['ausdy']
+        }, {
+          denom: 'usdy',
+          exponent: 18
+        }],
+      base: 'ibc/EF6499430790C8848C9684B237A8687CDA350F77D1005B8034BFBB68D5D69958',
+      display: 'usdy',
+      name: 'Ondo US Dollar Yield',
+      symbol: 'USDY',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.svg',
+          theme: {
+            primary_color_hex: '#142c5c'
+          }
+        }],
+      coingecko_id: 'ondo-us-dollar-yield',
+      socials: {
+        website: 'https://ondo.finance/usdy',
+        twitter: 'https://x.com/OndoFinance'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-94',
+            base_denom: 'ausdy',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-14'
+          }
+        }]
+    },
+    {
       description: 'The native token of Nolus chain',
       denom_units: [{
           denom: 'ibc/C6824D6F41FC8F906D9656AC77B41FCF7CF136DD74A47E11385B021F6D578FE9',
@@ -1210,6 +1326,122 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-5'
+          }
+        }]
+    },
+    {
+      description: 'The permissioned staking asset for Noble Chain',
+      denom_units: [{
+          denom: 'ibc/7F1B1BD1EE1519A458D9E9C6600DB34D5A4184C039BCD444766744C4CB0A32AB',
+          exponent: 0,
+          aliases: ['ustake']
+        }, {
+          denom: 'stake',
+          exponent: 6
+        }],
+      base: 'ibc/7F1B1BD1EE1519A458D9E9C6600DB34D5A4184C039BCD444766744C4CB0A32AB',
+      name: 'Stake',
+      display: 'stake',
+      symbol: 'STAKE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg',
+          theme: {
+            primary_color_hex: '#a8bbfb'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-94',
+            base_denom: 'ustake',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-14'
+          }
+        }]
+    },
+    {
+      description: 'Frienzies are an IBC token redeemable exclusively for a physical asset issued by the Noble entity.',
+      denom_units: [{
+          denom: 'ibc/9DDA5B60391FE6D99AE1C85C70491B111308039CD110C01EF0527803ECBE9F14',
+          exponent: 0,
+          aliases: ['ufrienzies']
+        }, {
+          denom: 'frienzies',
+          exponent: 6
+        }],
+      base: 'ibc/9DDA5B60391FE6D99AE1C85C70491B111308039CD110C01EF0527803ECBE9F14',
+      display: 'frienzies',
+      name: 'Frienzies',
+      symbol: 'FRNZ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.svg',
+          theme: {
+            primary_color_hex: '#04041c'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-94',
+            base_denom: 'ufrienzies',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-14'
+          }
+        }]
+    },
+    {
+      description: 'Ondo US Dollar Yield',
+      denom_units: [{
+          denom: 'ibc/EF6499430790C8848C9684B237A8687CDA350F77D1005B8034BFBB68D5D69958',
+          exponent: 0,
+          aliases: ['ausdy']
+        }, {
+          denom: 'usdy',
+          exponent: 18
+        }],
+      base: 'ibc/EF6499430790C8848C9684B237A8687CDA350F77D1005B8034BFBB68D5D69958',
+      display: 'usdy',
+      name: 'Ondo US Dollar Yield',
+      symbol: 'USDY',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.svg',
+          theme: {
+            primary_color_hex: '#142c5c'
+          }
+        }],
+      coingecko_id: 'ondo-us-dollar-yield',
+      socials: {
+        website: 'https://ondo.finance/usdy',
+        twitter: 'https://x.com/OndoFinance'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-94',
+            base_denom: 'ausdy',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-14'
           }
         }]
     },

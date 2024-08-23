@@ -2047,7 +2047,7 @@ const assets: AssetList = {
     {
       description: 'The native token of Penumbra.',
       denom_units: [{
-          denom: 'ibc/C28ADA266F67243CFB025BD1981D4386398DA44F64A9AD876BF000EE68446F3A',
+          denom: 'ibc/2DC4028D9196E4FC82B6EA1633FF38F4161FD081AF6AE30249C2020FCFBCD4F8',
           exponent: 0,
           aliases: ['upenumbra']
         }, {
@@ -2055,7 +2055,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'unknown',
-      base: 'ibc/C28ADA266F67243CFB025BD1981D4386398DA44F64A9AD876BF000EE68446F3A',
+      base: 'ibc/2DC4028D9196E4FC82B6EA1633FF38F4161FD081AF6AE30249C2020FCFBCD4F8',
       display: 'penumbra',
       symbol: 'UM',
       name: 'Penumbra',
@@ -2074,12 +2074,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-5',
+            channel_id: 'channel-6',
             base_denom: 'upenumbra',
             chain_name: 'penumbra'
           },
           chain: {
-            channel_id: 'channel-4769'
+            channel_id: 'channel-4886'
           }
         }]
     },
@@ -7512,7 +7512,7 @@ const assets: AssetList = {
     {
       description: 'The native token of Penumbra.',
       denom_units: [{
-          denom: 'ibc/C28ADA266F67243CFB025BD1981D4386398DA44F64A9AD876BF000EE68446F3A',
+          denom: 'ibc/2DC4028D9196E4FC82B6EA1633FF38F4161FD081AF6AE30249C2020FCFBCD4F8',
           exponent: 0,
           aliases: ['upenumbra']
         }, {
@@ -7520,7 +7520,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'unknown',
-      base: 'ibc/C28ADA266F67243CFB025BD1981D4386398DA44F64A9AD876BF000EE68446F3A',
+      base: 'ibc/2DC4028D9196E4FC82B6EA1633FF38F4161FD081AF6AE30249C2020FCFBCD4F8',
       display: 'penumbra',
       symbol: 'UM',
       name: 'Penumbra',
@@ -7539,12 +7539,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-5',
+            channel_id: 'channel-6',
             base_denom: 'upenumbra',
             chain_name: 'penumbra'
           },
           chain: {
-            channel_id: 'channel-4769'
+            channel_id: 'channel-4886'
           }
         }]
     },

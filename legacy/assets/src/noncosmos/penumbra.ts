@@ -5,14 +5,14 @@ const assets: AssetList = {
     {
       description: 'Neutron is a smart contract blockchain within the Cosmos ecosystem, leveraging the Cosmos Hub\'s security to provide cross-chain DeFi applications.',
       denom_units: [{
-          denom: 'ibc/81480F5459963F0E404057DBE46E39D34F3B7684F72F445398DB9C5E48D3E4D7',
+          denom: 'ibc/0BF33797C0B4923ED612EDB6A62AAC6904B10AD77004D8C45A044B9927F1E4F3',
           exponent: 0,
           aliases: ['untrn']
         }, {
           denom: 'ntrn',
           exponent: 6
         }],
-      base: 'ibc/81480F5459963F0E404057DBE46E39D34F3B7684F72F445398DB9C5E48D3E4D7',
+      base: 'ibc/0BF33797C0B4923ED612EDB6A62AAC6904B10AD77004D8C45A044B9927F1E4F3',
       name: 'Neutron',
       display: 'ntrn',
       symbol: 'NTRN',
@@ -37,26 +37,26 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4769',
+            channel_id: 'channel-4886',
             base_denom: 'untrn',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-6'
           }
         }]
     },
     {
       description: 'BITCOSMOS',
       denom_units: [{
-          denom: 'ibc/25521C2DBF413BDA4B973BD7257E5E724808271FAD815A9A30A37BF73BFA6207',
+          denom: 'ibc/F11F0FE1C785B59229DFC069E58E1A938E4178D433418A1163DD77EAD328AAF7',
           exponent: 0,
           aliases: ['neutron1fjzg7fmv770hsvahqm0nwnu6grs3rjnd2wa6fvm9unv6vedkzekqpw44qj']
         }, {
           denom: 'bitcosmos',
           exponent: 6
         }],
-      base: 'ibc/25521C2DBF413BDA4B973BD7257E5E724808271FAD815A9A30A37BF73BFA6207',
+      base: 'ibc/F11F0FE1C785B59229DFC069E58E1A938E4178D433418A1163DD77EAD328AAF7',
       name: 'Bitcosmos',
       display: 'bitcosmos',
       symbol: 'BTC',
@@ -72,26 +72,26 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4769',
+            channel_id: 'channel-4886',
             base_denom: 'neutron1fjzg7fmv770hsvahqm0nwnu6grs3rjnd2wa6fvm9unv6vedkzekqpw44qj',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-6'
           }
         }]
     },
     {
       description: 'What the Fuck',
       denom_units: [{
-          denom: 'ibc/1B375F64BC62FA4F15C04B1FF28C2A6504A157AE7541DED5AF6C3EFC0A137D4A',
+          denom: 'ibc/C128491414F8E64E80319FD742494A1B90049A337CEE2EFE7F5337BF95C72B75',
           exponent: 0,
           aliases: ['neutron12h09p8hq5y4xpsmcuxxzsn9juef4f6jvekp8yefc6xnlwm6uumnsdk29wf']
         }, {
           denom: 'wtf',
           exponent: 6
         }],
-      base: 'ibc/1B375F64BC62FA4F15C04B1FF28C2A6504A157AE7541DED5AF6C3EFC0A137D4A',
+      base: 'ibc/C128491414F8E64E80319FD742494A1B90049A337CEE2EFE7F5337BF95C72B75',
       name: 'wtf',
       display: 'wtf',
       symbol: 'WTF',
@@ -107,26 +107,26 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4769',
+            channel_id: 'channel-4886',
             base_denom: 'neutron12h09p8hq5y4xpsmcuxxzsn9juef4f6jvekp8yefc6xnlwm6uumnsdk29wf',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-6'
           }
         }]
     },
     {
       description: 'Astro BOY',
       denom_units: [{
-          denom: 'ibc/027BA247B1906FD5B80B7EBF3F98ABAFCD5246A1B802EC2432F7D76447FA925D',
+          denom: 'ibc/3A3BA260AC8EFC758AFF09DC8A7F3411CAEB30C9CB5D9B480B98AA4B2B76F973',
           exponent: 0,
           aliases: ['neutron1uqvse8fdrd9tam47f2jhy9m6al6xxtqpc83f9pdnz5gdle4swc0spfnctv']
         }, {
           denom: 'boy',
           exponent: 6
         }],
-      base: 'ibc/027BA247B1906FD5B80B7EBF3F98ABAFCD5246A1B802EC2432F7D76447FA925D',
+      base: 'ibc/3A3BA260AC8EFC758AFF09DC8A7F3411CAEB30C9CB5D9B480B98AA4B2B76F973',
       name: 'boy',
       display: 'boy',
       symbol: 'BOY',
@@ -142,12 +142,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4769',
+            channel_id: 'channel-4886',
             base_denom: 'neutron1uqvse8fdrd9tam47f2jhy9m6al6xxtqpc83f9pdnz5gdle4swc0spfnctv',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-6'
           }
         }]
     },
@@ -242,14 +242,14 @@ const assets: AssetList = {
     {
       description: 'Neutron is a smart contract blockchain within the Cosmos ecosystem, leveraging the Cosmos Hub\'s security to provide cross-chain DeFi applications.',
       denom_units: [{
-          denom: 'ibc/81480F5459963F0E404057DBE46E39D34F3B7684F72F445398DB9C5E48D3E4D7',
+          denom: 'ibc/0BF33797C0B4923ED612EDB6A62AAC6904B10AD77004D8C45A044B9927F1E4F3',
           exponent: 0,
           aliases: ['untrn']
         }, {
           denom: 'ntrn',
           exponent: 6
         }],
-      base: 'ibc/81480F5459963F0E404057DBE46E39D34F3B7684F72F445398DB9C5E48D3E4D7',
+      base: 'ibc/0BF33797C0B4923ED612EDB6A62AAC6904B10AD77004D8C45A044B9927F1E4F3',
       name: 'Neutron',
       display: 'ntrn',
       symbol: 'NTRN',
@@ -274,26 +274,26 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4769',
+            channel_id: 'channel-4886',
             base_denom: 'untrn',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-6'
           }
         }]
     },
     {
       description: 'BITCOSMOS',
       denom_units: [{
-          denom: 'ibc/25521C2DBF413BDA4B973BD7257E5E724808271FAD815A9A30A37BF73BFA6207',
+          denom: 'ibc/F11F0FE1C785B59229DFC069E58E1A938E4178D433418A1163DD77EAD328AAF7',
           exponent: 0,
           aliases: ['neutron1fjzg7fmv770hsvahqm0nwnu6grs3rjnd2wa6fvm9unv6vedkzekqpw44qj']
         }, {
           denom: 'bitcosmos',
           exponent: 6
         }],
-      base: 'ibc/25521C2DBF413BDA4B973BD7257E5E724808271FAD815A9A30A37BF73BFA6207',
+      base: 'ibc/F11F0FE1C785B59229DFC069E58E1A938E4178D433418A1163DD77EAD328AAF7',
       name: 'Bitcosmos',
       display: 'bitcosmos',
       symbol: 'BTC',
@@ -309,26 +309,26 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4769',
+            channel_id: 'channel-4886',
             base_denom: 'neutron1fjzg7fmv770hsvahqm0nwnu6grs3rjnd2wa6fvm9unv6vedkzekqpw44qj',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-6'
           }
         }]
     },
     {
       description: 'What the Fuck',
       denom_units: [{
-          denom: 'ibc/1B375F64BC62FA4F15C04B1FF28C2A6504A157AE7541DED5AF6C3EFC0A137D4A',
+          denom: 'ibc/C128491414F8E64E80319FD742494A1B90049A337CEE2EFE7F5337BF95C72B75',
           exponent: 0,
           aliases: ['neutron12h09p8hq5y4xpsmcuxxzsn9juef4f6jvekp8yefc6xnlwm6uumnsdk29wf']
         }, {
           denom: 'wtf',
           exponent: 6
         }],
-      base: 'ibc/1B375F64BC62FA4F15C04B1FF28C2A6504A157AE7541DED5AF6C3EFC0A137D4A',
+      base: 'ibc/C128491414F8E64E80319FD742494A1B90049A337CEE2EFE7F5337BF95C72B75',
       name: 'wtf',
       display: 'wtf',
       symbol: 'WTF',
@@ -344,26 +344,26 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4769',
+            channel_id: 'channel-4886',
             base_denom: 'neutron12h09p8hq5y4xpsmcuxxzsn9juef4f6jvekp8yefc6xnlwm6uumnsdk29wf',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-6'
           }
         }]
     },
     {
       description: 'Astro BOY',
       denom_units: [{
-          denom: 'ibc/027BA247B1906FD5B80B7EBF3F98ABAFCD5246A1B802EC2432F7D76447FA925D',
+          denom: 'ibc/3A3BA260AC8EFC758AFF09DC8A7F3411CAEB30C9CB5D9B480B98AA4B2B76F973',
           exponent: 0,
           aliases: ['neutron1uqvse8fdrd9tam47f2jhy9m6al6xxtqpc83f9pdnz5gdle4swc0spfnctv']
         }, {
           denom: 'boy',
           exponent: 6
         }],
-      base: 'ibc/027BA247B1906FD5B80B7EBF3F98ABAFCD5246A1B802EC2432F7D76447FA925D',
+      base: 'ibc/3A3BA260AC8EFC758AFF09DC8A7F3411CAEB30C9CB5D9B480B98AA4B2B76F973',
       name: 'boy',
       display: 'boy',
       symbol: 'BOY',
@@ -379,12 +379,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4769',
+            channel_id: 'channel-4886',
             base_denom: 'neutron1uqvse8fdrd9tam47f2jhy9m6al6xxtqpc83f9pdnz5gdle4swc0spfnctv',
             chain_name: 'neutron'
           },
           chain: {
-            channel_id: 'channel-5'
+            channel_id: 'channel-6'
           }
         }]
     },
