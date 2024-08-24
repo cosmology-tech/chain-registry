@@ -57,6 +57,10 @@ const info: Chain = {
       {
         address: 'https://titan-rpc-hongkong.titanlab.io:443',
         provider: 'Titanlab.io'
+      },
+      {
+        address: 'https://titan-rpc.ibs.team',
+        provider: 'ibs.team'
       }
     ],
     rest: [
@@ -75,6 +79,10 @@ const info: Chain = {
       {
         address: 'https://titan-lcd-hongkong.titanlab.io:443',
         provider: 'Titanlab.io'
+      },
+      {
+        address: 'https://titan-api.ibs.team',
+        provider: 'ibs.team'
       }
     ],
     grpc: [

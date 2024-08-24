@@ -59,6 +59,10 @@ const info: Chain = {
       {
         address: 'https://firmachain.rpc.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://firmachain_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -85,6 +89,10 @@ const info: Chain = {
       {
         address: 'https://firmachain.api.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://firmachain_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -140,6 +148,12 @@ const info: Chain = {
       url: 'https://explorer.nodeshub.online/firmachain/',
       tx_page: 'https://explorer.nodeshub.online/firmachain/tx/${txHash}',
       account_page: 'https://explorer.nodeshub.online/firmachain/accounts/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/firmachain',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/firmachain/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/firmachain/account/${accountAddress}'
     }
   ],
   images: [{
