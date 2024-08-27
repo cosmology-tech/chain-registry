@@ -33,27 +33,48 @@ const info: Chain = {
     cosmwasm_version: 'v0.45.0'
   },
   apis: {
-    rpc: [{
+    rpc: [
+      {
         address: 'https://sentry.tm.rpc.routerprotocol.com/',
         provider: 'Router'
-      }, {
+      },
+      {
         address: 'https://router-rpc.genznodes.dev/',
         provider: 'genznodes'
-      }],
-    rest: [{
+      },
+      {
+        address: 'https://router.rpc.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️'
+      }
+    ],
+    rest: [
+      {
         address: 'https://sentry.lcd.routerprotocol.com/',
         provider: 'Router'
-      }, {
+      },
+      {
         address: 'https://router-api.genznodes.dev/',
         provider: 'genznodes'
-      }],
-    grpc: [{
+      },
+      {
+        address: 'https://router.api.nodeshub.online',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️'
+      }
+    ],
+    grpc: [
+      {
         address: 'sentry.grpc.routerprotocol.com:9090',
         provider: 'Router'
-      }, {
+      },
+      {
         address: 'router-grpc.genznodes.dev:3090',
         provider: 'genznodes'
-      }],
+      },
+      {
+        address: 'router.grpc.nodeshub.online',
+        provider: 'Nodes Hub'
+      }
+    ],
     "evm-http-jsonrpc": [{
         address: 'https://sentry.evm.rpc.routerprotocol.com',
         provider: 'Router'
@@ -77,6 +98,12 @@ const info: Chain = {
       kind: 'Router Explorer',
       url: 'https://router.explorers.guru/',
       tx_page: 'https://router.explorers.guru/transaction/${txHash}'
+    },
+    {
+      kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️',
+      url: 'https://explorer.nodeshub.online/router/',
+      tx_page: 'https://explorer.nodeshub.online/router/tx/${txHash}',
+      account_page: 'https://explorer.nodeshub.online/router/accounts/${accountAddress}'
     }
   ],
   images: [{

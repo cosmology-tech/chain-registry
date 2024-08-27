@@ -54,6 +54,7 @@ export * as lavatestnet from './lavatestnet';
 export * as lavatestnet1 from './lavatestnet1';
 export * as likecointestnet from './likecointestnet';
 export * as lumenxtestnet from './lumenxtestnet';
+export * as manifesttestnet from './manifesttestnet';
 export * as mantrachaintestnet from './mantrachaintestnet';
 export * as marstestnet from './marstestnet';
 export * as metanovaversetestnet from './metanovaversetestnet';

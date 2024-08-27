@@ -816,6 +816,7 @@ const info: AssetList = {
     },
     {
       description: 'Cosmo is the best currency in the universe.',
+      extended_description: 'We aim to build a decentralized community by leveraging cutting-edge technologies.',
       denom_units: [{
           denom: 'factory/inj1je6n5sr4qtx2lhpldfxndntmgls9hf38ncmcez/COSMO',
           exponent: 0

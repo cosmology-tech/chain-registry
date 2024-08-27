@@ -13335,7 +13335,7 @@ const asset_list: AssetList = {
       name: 'Router Chain',
       display: 'ROUTE',
       symbol: 'ROUTE',
-      coingecko_id: 'route',
+      coingecko_id: 'router-protocol-2',
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.png'
@@ -18377,7 +18377,7 @@ const asset_list: AssetList = {
       name: 'Router Chain',
       display: 'ROUTE',
       symbol: 'ROUTE',
-      coingecko_id: 'route',
+      coingecko_id: 'router-protocol-2',
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.svg',
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.png'

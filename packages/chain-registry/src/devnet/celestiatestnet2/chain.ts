@@ -35,9 +35,9 @@ const info: Chain = {
       }]
   },
   explorers: [{
-      kind: 'Ping.Pub',
-      url: 'https://explorer.celestia-arabica-11.com/arabica-11',
-      tx_page: 'https://explorer.celestia-arabica-11.com/arabica-11/tx/${txHash}'
+      kind: 'Celenium',
+      url: 'https://arabica.celenium.io/',
+      tx_page: 'https://arabica.celenium.io/tx/${txHash}'
     }]
 };
 export default info;

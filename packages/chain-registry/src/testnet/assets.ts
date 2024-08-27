@@ -56,6 +56,7 @@ import * as _lavatestnet from './lavatestnet';
 import * as _lavatestnet1 from './lavatestnet1';
 import * as _likecointestnet from './likecointestnet';
 import * as _lumenxtestnet from './lumenxtestnet';
+import * as _manifesttestnet from './manifesttestnet';
 import * as _mantrachaintestnet from './mantrachaintestnet';
 import * as _marstestnet from './marstestnet';
 import * as _metanovaversetestnet from './metanovaversetestnet';
@@ -169,6 +170,7 @@ const assets: AssetList[] = [
   _lavatestnet1.assets,
   _likecointestnet.assets,
   _lumenxtestnet.assets,
+  _manifesttestnet.assets,
   _mantrachaintestnet.assets,
   _marstestnet.assets,
   _metanovaversetestnet.assets,
