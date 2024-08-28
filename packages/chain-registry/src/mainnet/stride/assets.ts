@@ -561,6 +561,7 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stislm.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stislm.svg'
       },
+      coingecko_id: 'stride-staked-islm',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stislm.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stislm.svg',

@@ -94,6 +94,7 @@ import * as _lava from './lava';
 import * as _likecoin from './likecoin';
 import * as _logos from './logos';
 import * as _loop from './loop';
+import * as _lorenzo from './lorenzo';
 import * as _loyal from './loyal';
 import * as _lumenx from './lumenx';
 import * as _lumnetwork from './lumnetwork';
@@ -280,6 +281,7 @@ const assets: AssetList[] = [
   _likecoin.assets,
   _logos.assets,
   _loop.assets,
+  _lorenzo.assets,
   _loyal.assets,
   _lumenx.assets,
   _lumnetwork.assets,

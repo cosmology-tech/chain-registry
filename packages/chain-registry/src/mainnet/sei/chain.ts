@@ -40,6 +40,10 @@ const info: Chain = {
   apis: {
     rpc: [
       {
+        address: 'https://rpc.sei-apis.com',
+        provider: 'Rhino Stake'
+      },
+      {
         address: 'https://sei-rpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
@@ -69,6 +73,10 @@ const info: Chain = {
       }
     ],
     rest: [
+      {
+        address: 'https://rest.sei-apis.com',
+        provider: 'Rhino Stake'
+      },
       {
         address: 'https://sei-api.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
@@ -100,6 +108,10 @@ const info: Chain = {
     ],
     grpc: [
       {
+        address: 'https://grpc.sei-apis.com:443',
+        provider: 'Rhino Stake'
+      },
+      {
         address: 'https://sei-grpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
@@ -127,7 +139,7 @@ const info: Chain = {
     "evm-http-jsonrpc": [
       {
         address: 'https://evm-rpc.sei-apis.com',
-        provider: 'Rhino'
+        provider: 'Rhino Stake'
       },
       {
         address: 'https://seievm-rpc.polkachu.com',
@@ -141,10 +153,10 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'ping.pub',
-      url: 'https://ping.pub/sei',
-      tx_page: 'https://ping.pub/sei/tx/${txHash}',
-      account_page: 'https://ping.pub/sei/account/${accountAddress}'
+      kind: 'blockscout',
+      url: 'https://seitrace.com',
+      tx_page: 'https://seitrace.com/tx/${txHash}?chain=pacific-1',
+      account_page: 'https://seitrace.com/address/${accountAddress}?chain=pacific-1'
     },
     {
       kind: 'mintscan',
@@ -159,7 +171,7 @@ const info: Chain = {
       account_page: 'https://ezstaking.app/sei/account/${accountAddress}'
     },
     {
-      kind: 'seiscan',
+      kind: 'celatone',
       url: 'https://www.seiscan.app/pacific-1',
       tx_page: 'https://www.seiscan.app/pacific-1/txs/${txHash}',
       account_page: 'https://www.seiscan.app/pacific-1/accounts/${accountAddress}'

@@ -93,6 +93,7 @@ export * as lava from './lava';
 export * as likecoin from './likecoin';
 export * as logos from './logos';
 export * as loop from './loop';
+export * as lorenzo from './lorenzo';
 export * as loyal from './loyal';
 export * as lumenx from './lumenx';
 export * as lumnetwork from './lumnetwork';
