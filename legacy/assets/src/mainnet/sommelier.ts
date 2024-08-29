@@ -45,6 +45,48 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Canto is a Layer-1 blockchain built to deliver on the promise of DeFi',
+      denom_units: [{
+          denom: 'ibc/650B808C0B186704290A19FC122A2D9A26D75B270ED9A0F6A1BE03E2D1747DBF',
+          exponent: 0,
+          aliases: ['acanto']
+        }, {
+          denom: 'canto',
+          exponent: 18
+        }],
+      base: 'ibc/650B808C0B186704290A19FC122A2D9A26D75B270ED9A0F6A1BE03E2D1747DBF',
+      name: 'Canto',
+      display: 'canto',
+      symbol: 'CANTO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg'
+      },
+      coingecko_id: 'canto',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg',
+          theme: {
+            primary_color_hex: '#1c1f1f'
+          }
+        }],
+      socials: {
+        website: 'https://canto.io/',
+        twitter: 'https://twitter.com/CantoPublic'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom: 'acanto',
+            chain_name: 'canto'
+          },
+          chain: {
+            channel_id: 'channel-2'
+          }
+        }]
+    },
+    {
       description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/DE63D8AC34B752FB7D4CAA7594145EDE1C9FC256AC6D4043D0F12310EB8FC255',
@@ -485,6 +527,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-5'
+          }
+        }]
+    },
+    {
+      description: 'Canto is a Layer-1 blockchain built to deliver on the promise of DeFi',
+      denom_units: [{
+          denom: 'ibc/650B808C0B186704290A19FC122A2D9A26D75B270ED9A0F6A1BE03E2D1747DBF',
+          exponent: 0,
+          aliases: ['acanto']
+        }, {
+          denom: 'canto',
+          exponent: 18
+        }],
+      base: 'ibc/650B808C0B186704290A19FC122A2D9A26D75B270ED9A0F6A1BE03E2D1747DBF',
+      name: 'Canto',
+      display: 'canto',
+      symbol: 'CANTO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg'
+      },
+      coingecko_id: 'canto',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg',
+          theme: {
+            primary_color_hex: '#1c1f1f'
+          }
+        }],
+      socials: {
+        website: 'https://canto.io/',
+        twitter: 'https://twitter.com/CantoPublic'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom: 'acanto',
+            chain_name: 'canto'
+          },
+          chain: {
+            channel_id: 'channel-2'
           }
         }]
     },

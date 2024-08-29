@@ -4072,6 +4072,47 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Native staking token of Lorenzo: LRZ (alrz)',
+      denom_units: [{
+          denom: 'ibc/ADFA3242D14E90EA479701A6CA341701FF5B88A3E969620AACABB3A0C50CA5CC',
+          exponent: 0,
+          aliases: ['alrz']
+        }, {
+          denom: 'LRZ',
+          exponent: 18
+        }],
+      base: 'ibc/ADFA3242D14E90EA479701A6CA341701FF5B88A3E969620AACABB3A0C50CA5CC',
+      name: 'LRZ',
+      display: 'LRZ',
+      symbol: 'LRZ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lorenzo/images/lorenzo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lorenzo/images/lorenzo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lorenzo/images/lorenzo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lorenzo/images/lorenzo.svg',
+          theme: {
+            primary_color_hex: '#133348'
+          }
+        }],
+      socials: {
+        website: 'https://www.lorenzo-protocol.xyz/',
+        twitter: 'https://x.com/LorenzoProtocol'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'alrz',
+            chain_name: 'lorenzo'
+          },
+          chain: {
+            channel_id: 'channel-79840'
+          }
+        }]
+    },
+    {
       description: 'The native token of LumenX Network',
       denom_units: [{
           denom: 'ibc/FFA652599C77E853F017193E36B5AB2D4D9AFC4B54721A74904F80C9236BF3B7',
@@ -9283,6 +9324,47 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-53'
+          }
+        }]
+    },
+    {
+      description: 'Native staking token of Lorenzo: LRZ (alrz)',
+      denom_units: [{
+          denom: 'ibc/ADFA3242D14E90EA479701A6CA341701FF5B88A3E969620AACABB3A0C50CA5CC',
+          exponent: 0,
+          aliases: ['alrz']
+        }, {
+          denom: 'LRZ',
+          exponent: 18
+        }],
+      base: 'ibc/ADFA3242D14E90EA479701A6CA341701FF5B88A3E969620AACABB3A0C50CA5CC',
+      name: 'LRZ',
+      display: 'LRZ',
+      symbol: 'LRZ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lorenzo/images/lorenzo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lorenzo/images/lorenzo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lorenzo/images/lorenzo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lorenzo/images/lorenzo.svg',
+          theme: {
+            primary_color_hex: '#133348'
+          }
+        }],
+      socials: {
+        website: 'https://www.lorenzo-protocol.xyz/',
+        twitter: 'https://x.com/LorenzoProtocol'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'alrz',
+            chain_name: 'lorenzo'
+          },
+          chain: {
+            channel_id: 'channel-79840'
           }
         }]
     },

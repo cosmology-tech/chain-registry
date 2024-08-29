@@ -180,6 +180,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Symphony',
+      denom_units: [{
+          denom: 'ibc/93E2565D8B203CDF0E7ACBCED47FA406BE7179EAB65F95F28F449D428AB2DAEA',
+          exponent: 0,
+          aliases: ['note']
+        }, {
+          denom: 'mld',
+          exponent: 6,
+          aliases: ['melody']
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/93E2565D8B203CDF0E7ACBCED47FA406BE7179EAB65F95F28F449D428AB2DAEA',
+      name: 'Melody',
+      display: 'mld',
+      symbol: 'MLD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/symphonytestnet/images/coin_icon.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/symphonytestnet/images/coin_icon.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom: 'note',
+            chain_name: 'symphonytestnet'
+          },
+          chain: {
+            channel_id: 'channel-495'
+          }
+        }]
+    },
+    {
       description: 'The native token of Axelar',
       denom_units: [{
           denom: 'ibc/A1F5AED38B17FC8C2009DD6BD70E463C7D3641B35D1676680CF9329D85C28018',
@@ -285,6 +319,40 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-225'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Symphony',
+      denom_units: [{
+          denom: 'ibc/93E2565D8B203CDF0E7ACBCED47FA406BE7179EAB65F95F28F449D428AB2DAEA',
+          exponent: 0,
+          aliases: ['note']
+        }, {
+          denom: 'mld',
+          exponent: 6,
+          aliases: ['melody']
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/93E2565D8B203CDF0E7ACBCED47FA406BE7179EAB65F95F28F449D428AB2DAEA',
+      name: 'Melody',
+      display: 'mld',
+      symbol: 'MLD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/symphonytestnet/images/coin_icon.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/symphonytestnet/images/coin_icon.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10',
+            base_denom: 'note',
+            chain_name: 'symphonytestnet'
+          },
+          chain: {
+            channel_id: 'channel-495'
           }
         }]
     }

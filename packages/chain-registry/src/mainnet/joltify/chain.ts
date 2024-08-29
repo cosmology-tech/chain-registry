@@ -42,10 +42,16 @@ const info: Chain = {
     rpc: [{
         address: 'https://rpc.joltify.io',
         provider: 'joltify'
+      }, {
+        address: 'https://joltify_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }],
     rest: [{
         address: 'https://lcd.joltify.io/',
         provider: 'joltify'
+      }, {
+        address: 'https://joltify_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }],
     grpc: [{
         address: 'grpc.joltify.io:443',
@@ -54,6 +60,9 @@ const info: Chain = {
     "evm-http-jsonrpc": [{
         address: 'https://evm.joltify.io/',
         provider: 'joltify'
+      }, {
+        address: 'https://joltify_mainnet_evm.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }]
   },
   explorers: [{
@@ -61,6 +70,11 @@ const info: Chain = {
       url: 'https://explorer.joltify.io/joltify',
       tx_page: 'https://explorer.joltify.io/joltify/transactions/${txHash}',
       account_page: 'https://explorer.joltify.io/joltify/accounts/${accountAddress}'
+    }, {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/joltify',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/joltify/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/joltify/account/${accountAddress}'
     }],
   keywords: ['rwa', 'lending']
 };

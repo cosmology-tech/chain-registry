@@ -74,6 +74,7 @@ import * as _kyve from './kyve';
 import * as _lambda from './lambda';
 import * as _lava from './lava';
 import * as _likecoin from './likecoin';
+import * as _lorenzo from './lorenzo';
 import * as _lumenx from './lumenx';
 import * as _lumnetwork from './lumnetwork';
 import * as _mande from './mande';
@@ -218,6 +219,7 @@ const ibc: IBCInfo[] = [
   ..._lambda.ibc,
   ..._lava.ibc,
   ..._likecoin.ibc,
+  ..._lorenzo.ibc,
   ..._lumenx.ibc,
   ..._lumnetwork.ibc,
   ..._mande.ibc,

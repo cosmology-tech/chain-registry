@@ -209,6 +209,56 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Somm Token (SOMM) is the native staking token of the Sommelier Chain',
+      denom_units: [
+        {
+          denom: 'ibc/E341F178AB30AC89CF18B9559D90EF830419B5A4B50945EF800FD68DE840A91E',
+          exponent: 0,
+          aliases: ['usomm']
+        },
+        {
+          denom: 'msomm',
+          exponent: 3,
+          aliases: ['millisomm']
+        },
+        {
+          denom: 'somm',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/E341F178AB30AC89CF18B9559D90EF830419B5A4B50945EF800FD68DE840A91E',
+      name: 'Sommelier',
+      display: 'somm',
+      symbol: 'SOMM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg'
+      },
+      coingecko_id: 'sommelier',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg',
+          theme: {
+            primary_color_hex: '#f36353'
+          }
+        }],
+      socials: {
+        website: 'https://www.sommelier.finance/',
+        twitter: 'https://twitter.com/sommfinance'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'usomm',
+            chain_name: 'sommelier'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }]
+    },
+    {
       description: 'The native governance token of Carbon',
       denom_units: [{
           denom: 'ibc/0D739D7202D248F85EBEC38D4C5649B86AED820A512451E7C680672A0528E88B',
@@ -411,6 +461,56 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-5'
+          }
+        }]
+    },
+    {
+      description: 'Somm Token (SOMM) is the native staking token of the Sommelier Chain',
+      denom_units: [
+        {
+          denom: 'ibc/E341F178AB30AC89CF18B9559D90EF830419B5A4B50945EF800FD68DE840A91E',
+          exponent: 0,
+          aliases: ['usomm']
+        },
+        {
+          denom: 'msomm',
+          exponent: 3,
+          aliases: ['millisomm']
+        },
+        {
+          denom: 'somm',
+          exponent: 6
+        }
+      ],
+      base: 'ibc/E341F178AB30AC89CF18B9559D90EF830419B5A4B50945EF800FD68DE840A91E',
+      name: 'Sommelier',
+      display: 'somm',
+      symbol: 'SOMM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg'
+      },
+      coingecko_id: 'sommelier',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg',
+          theme: {
+            primary_color_hex: '#f36353'
+          }
+        }],
+      socials: {
+        website: 'https://www.sommelier.finance/',
+        twitter: 'https://twitter.com/sommfinance'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'usomm',
+            chain_name: 'sommelier'
+          },
+          chain: {
+            channel_id: 'channel-10'
           }
         }]
     }
