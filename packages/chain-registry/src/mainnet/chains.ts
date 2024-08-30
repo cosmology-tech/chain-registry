@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/types';
 
 import * as _ethereum from './ethereum';
 import * as _solana from './solana';
+import * as _ton from './ton';
 import * as _tron from './tron';
 import * as _8ball from './8ball';
 import * as _acrechain from './acrechain';
@@ -191,6 +192,7 @@ import * as _zetachain from './zetachain';
 const chains: Chain[] = [
   _ethereum.chain,
   _solana.chain,
+  _ton.chain,
   _tron.chain,
   _8ball.chain,
   _acrechain.chain,

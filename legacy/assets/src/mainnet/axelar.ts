@@ -2063,6 +2063,47 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Ether is the native fee token of the Ethereum network.',
+      denom_units: [
+        {
+          denom: 'ibc/318830EA97596F7F3C1D2CA30242164FB3015B76A6BB53187259EAA17578B855',
+          exponent: 0,
+          aliases: ['wei']
+        },
+        {
+          denom: 'gwei',
+          exponent: 9
+        },
+        {
+          denom: 'eth',
+          exponent: 18,
+          aliases: ['ether']
+        }
+      ],
+      base: 'ibc/318830EA97596F7F3C1D2CA30242164FB3015B76A6BB53187259EAA17578B855',
+      name: 'Ether',
+      display: 'eth',
+      symbol: 'ETH',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg'
+      },
+      coingecko_id: 'ethereum',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'wei',
+            chain_name: 'nibiru'
+          },
+          chain: {
+            channel_id: 'channel-139'
+          }
+        }]
+    },
+    {
       description: 'Staking and governance token for ODIN Protocol',
       denom_units: [{
           denom: 'ibc/8D58BF228C8B8930F5D8D45ED617FFC34CA2AA397288495444FD822201A315DF',
@@ -3103,6 +3144,108 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Pryzm\'s refracted principal token for dATOM with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/C67E4607E1F96490F8BCC40579B15899BD9AFB652BF2E9C46F492522DDF691C0',
+          exponent: 0,
+          aliases: ['p:udatom:31Dec2024']
+        }, {
+          denom: 'pdATOM31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/C67E4607E1F96490F8BCC40579B15899BD9AFB652BF2E9C46F492522DDF691C0',
+      name: 'pdAtom (31Dec2024)',
+      display: 'pdATOM31Dec2024',
+      symbol: 'pdATOM-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'p:udatom:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for dATOM with maturity of 30Jun2025',
+      denom_units: [{
+          denom: 'ibc/1C9E192A974B5E5CEF78CC63145BCEA1453646B0FCAEDCB4EC2822299046943C',
+          exponent: 0,
+          aliases: ['p:udatom:30Jun2025']
+        }, {
+          denom: 'pdATOM30Jun2025',
+          exponent: 6
+        }],
+      base: 'ibc/1C9E192A974B5E5CEF78CC63145BCEA1453646B0FCAEDCB4EC2822299046943C',
+      name: 'pdAtom (30Jun2025)',
+      display: 'pdATOM30Jun2025',
+      symbol: 'pdATOM-30Jun2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'p:udatom:30Jun2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for dATOM with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/BE5FA1ECF44D3C74163A0D03A4A529FC73A35CFBC48FE705D7C89528935E41E4',
+          exponent: 0,
+          aliases: ['p:udatom:31Dec2025']
+        }, {
+          denom: 'pdATOM31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/BE5FA1ECF44D3C74163A0D03A4A529FC73A35CFBC48FE705D7C89528935E41E4',
+      name: 'pdAtom (31Dec2025)',
+      display: 'pdATOM31Dec2025',
+      symbol: 'pdATOM-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'p:udatom:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
+          }
+        }]
+    },
+    {
       description: 'Pryzm\'s refracted yield token for ATOM with maturity of 30Sep2024',
       denom_units: [{
           denom: 'ibc/2EE1910232CC1873B69E049B4BE3A1CA227B79F45F0BDFC858B85E83EDB087A4',
@@ -3809,6 +3952,108 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-13',
             base_denom: 'y:stadydx:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for dATOM with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/CAB4387ACCE198B7EE77CA7624A32DF8412BE75AF053DB215A6AB7BF64BADBFD',
+          exponent: 0,
+          aliases: ['y:udatom:31Dec2024']
+        }, {
+          denom: 'ydATOM31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/CAB4387ACCE198B7EE77CA7624A32DF8412BE75AF053DB215A6AB7BF64BADBFD',
+      name: 'ydAtom (31Dec2024)',
+      display: 'ydATOM31Dec2024',
+      symbol: 'ydATOM-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'y:udatom:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for dATOM with maturity of 30Jun2025',
+      denom_units: [{
+          denom: 'ibc/01C41E95F8B5DF0B3E3AFACF8D229C3957A437FDC38CBE7CB3ACED7029E3D7CC',
+          exponent: 0,
+          aliases: ['y:udatom:30Jun2025']
+        }, {
+          denom: 'ydATOM30Jun2025',
+          exponent: 6
+        }],
+      base: 'ibc/01C41E95F8B5DF0B3E3AFACF8D229C3957A437FDC38CBE7CB3ACED7029E3D7CC',
+      name: 'ydAtom (30Jun2025)',
+      display: 'ydATOM30Jun2025',
+      symbol: 'ydATOM-30Jun2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'y:udatom:30Jun2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for dATOM with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/6CBE18DBC458EAE2A1911EB9FF54D0E3C3BDF9113F1BCBBB95108F8951153CFB',
+          exponent: 0,
+          aliases: ['y:udatom:31Dec2025']
+        }, {
+          denom: 'ydATOM31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/6CBE18DBC458EAE2A1911EB9FF54D0E3C3BDF9113F1BCBBB95108F8951153CFB',
+      name: 'ydAtom (31Dec2025)',
+      display: 'ydATOM31Dec2025',
+      symbol: 'ydATOM-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'y:udatom:31Dec2025',
             chain_name: 'pryzm'
           },
           chain: {
@@ -4557,6 +4802,74 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-13',
             base_denom: 'lp:21:utia-uusdc',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for dATOM Yield pool',
+      denom_units: [{
+          denom: 'ibc/1AB51B4CD388D678153A0C3022CC2690C317756F1D17386DB0E5524EA91FA9E8',
+          exponent: 0,
+          aliases: ['lp:22:udatom']
+        }, {
+          denom: 'lp:22:datom',
+          exponent: 6
+        }],
+      base: 'ibc/1AB51B4CD388D678153A0C3022CC2690C317756F1D17386DB0E5524EA91FA9E8',
+      name: 'dATOM Yield LP',
+      display: 'lp:22:datom',
+      symbol: 'dATOM-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'lp:22:udatom',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for dATOM Boost pool',
+      denom_units: [{
+          denom: 'ibc/C10CDCEB069B22EA324241050141E75E340BC54D5EC5685C34C31AA53D8A0D32',
+          exponent: 0,
+          aliases: ['lp:23:udatomypt-uatom']
+        }, {
+          denom: 'lp:23:datomypt-atom',
+          exponent: 6
+        }],
+      base: 'ibc/C10CDCEB069B22EA324241050141E75E340BC54D5EC5685C34C31AA53D8A0D32',
+      name: 'dATOM Boost LP',
+      display: 'lp:23:datomypt-atom',
+      symbol: 'dATOM-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'lp:23:udatomypt-uatom',
             chain_name: 'pryzm'
           },
           chain: {
@@ -6514,6 +6827,47 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Ether is the native fee token of the Ethereum network.',
+      denom_units: [
+        {
+          denom: 'ibc/318830EA97596F7F3C1D2CA30242164FB3015B76A6BB53187259EAA17578B855',
+          exponent: 0,
+          aliases: ['wei']
+        },
+        {
+          denom: 'gwei',
+          exponent: 9
+        },
+        {
+          denom: 'eth',
+          exponent: 18,
+          aliases: ['ether']
+        }
+      ],
+      base: 'ibc/318830EA97596F7F3C1D2CA30242164FB3015B76A6BB53187259EAA17578B855',
+      name: 'Ether',
+      display: 'eth',
+      symbol: 'ETH',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg'
+      },
+      coingecko_id: 'ethereum',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'wei',
+            chain_name: 'nibiru'
+          },
+          chain: {
+            channel_id: 'channel-139'
+          }
+        }]
+    },
+    {
       description: 'Staking and governance token for ODIN Protocol',
       denom_units: [{
           denom: 'ibc/8D58BF228C8B8930F5D8D45ED617FFC34CA2AA397288495444FD822201A315DF',
@@ -7554,6 +7908,108 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Pryzm\'s refracted principal token for dATOM with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/C67E4607E1F96490F8BCC40579B15899BD9AFB652BF2E9C46F492522DDF691C0',
+          exponent: 0,
+          aliases: ['p:udatom:31Dec2024']
+        }, {
+          denom: 'pdATOM31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/C67E4607E1F96490F8BCC40579B15899BD9AFB652BF2E9C46F492522DDF691C0',
+      name: 'pdAtom (31Dec2024)',
+      display: 'pdATOM31Dec2024',
+      symbol: 'pdATOM-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'p:udatom:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for dATOM with maturity of 30Jun2025',
+      denom_units: [{
+          denom: 'ibc/1C9E192A974B5E5CEF78CC63145BCEA1453646B0FCAEDCB4EC2822299046943C',
+          exponent: 0,
+          aliases: ['p:udatom:30Jun2025']
+        }, {
+          denom: 'pdATOM30Jun2025',
+          exponent: 6
+        }],
+      base: 'ibc/1C9E192A974B5E5CEF78CC63145BCEA1453646B0FCAEDCB4EC2822299046943C',
+      name: 'pdAtom (30Jun2025)',
+      display: 'pdATOM30Jun2025',
+      symbol: 'pdATOM-30Jun2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'p:udatom:30Jun2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for dATOM with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/BE5FA1ECF44D3C74163A0D03A4A529FC73A35CFBC48FE705D7C89528935E41E4',
+          exponent: 0,
+          aliases: ['p:udatom:31Dec2025']
+        }, {
+          denom: 'pdATOM31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/BE5FA1ECF44D3C74163A0D03A4A529FC73A35CFBC48FE705D7C89528935E41E4',
+      name: 'pdAtom (31Dec2025)',
+      display: 'pdATOM31Dec2025',
+      symbol: 'pdATOM-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'p:udatom:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
+          }
+        }]
+    },
+    {
       description: 'Pryzm\'s refracted yield token for ATOM with maturity of 30Sep2024',
       denom_units: [{
           denom: 'ibc/2EE1910232CC1873B69E049B4BE3A1CA227B79F45F0BDFC858B85E83EDB087A4',
@@ -8260,6 +8716,108 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-13',
             base_denom: 'y:stadydx:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for dATOM with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/CAB4387ACCE198B7EE77CA7624A32DF8412BE75AF053DB215A6AB7BF64BADBFD',
+          exponent: 0,
+          aliases: ['y:udatom:31Dec2024']
+        }, {
+          denom: 'ydATOM31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/CAB4387ACCE198B7EE77CA7624A32DF8412BE75AF053DB215A6AB7BF64BADBFD',
+      name: 'ydAtom (31Dec2024)',
+      display: 'ydATOM31Dec2024',
+      symbol: 'ydATOM-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'y:udatom:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for dATOM with maturity of 30Jun2025',
+      denom_units: [{
+          denom: 'ibc/01C41E95F8B5DF0B3E3AFACF8D229C3957A437FDC38CBE7CB3ACED7029E3D7CC',
+          exponent: 0,
+          aliases: ['y:udatom:30Jun2025']
+        }, {
+          denom: 'ydATOM30Jun2025',
+          exponent: 6
+        }],
+      base: 'ibc/01C41E95F8B5DF0B3E3AFACF8D229C3957A437FDC38CBE7CB3ACED7029E3D7CC',
+      name: 'ydAtom (30Jun2025)',
+      display: 'ydATOM30Jun2025',
+      symbol: 'ydATOM-30Jun2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'y:udatom:30Jun2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for dATOM with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/6CBE18DBC458EAE2A1911EB9FF54D0E3C3BDF9113F1BCBBB95108F8951153CFB',
+          exponent: 0,
+          aliases: ['y:udatom:31Dec2025']
+        }, {
+          denom: 'ydATOM31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/6CBE18DBC458EAE2A1911EB9FF54D0E3C3BDF9113F1BCBBB95108F8951153CFB',
+      name: 'ydAtom (31Dec2025)',
+      display: 'ydATOM31Dec2025',
+      symbol: 'ydATOM-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'y:udatom:31Dec2025',
             chain_name: 'pryzm'
           },
           chain: {
@@ -9008,6 +9566,74 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-13',
             base_denom: 'lp:21:utia-uusdc',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for dATOM Yield pool',
+      denom_units: [{
+          denom: 'ibc/1AB51B4CD388D678153A0C3022CC2690C317756F1D17386DB0E5524EA91FA9E8',
+          exponent: 0,
+          aliases: ['lp:22:udatom']
+        }, {
+          denom: 'lp:22:datom',
+          exponent: 6
+        }],
+      base: 'ibc/1AB51B4CD388D678153A0C3022CC2690C317756F1D17386DB0E5524EA91FA9E8',
+      name: 'dATOM Yield LP',
+      display: 'lp:22:datom',
+      symbol: 'dATOM-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'lp:22:udatom',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-155'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for dATOM Boost pool',
+      denom_units: [{
+          denom: 'ibc/C10CDCEB069B22EA324241050141E75E340BC54D5EC5685C34C31AA53D8A0D32',
+          exponent: 0,
+          aliases: ['lp:23:udatomypt-uatom']
+        }, {
+          denom: 'lp:23:datomypt-atom',
+          exponent: 6
+        }],
+      base: 'ibc/C10CDCEB069B22EA324241050141E75E340BC54D5EC5685C34C31AA53D8A0D32',
+      name: 'dATOM Boost LP',
+      display: 'lp:23:datomypt-atom',
+      symbol: 'dATOM-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-13',
+            base_denom: 'lp:23:udatomypt-uatom',
             chain_name: 'pryzm'
           },
           chain: {

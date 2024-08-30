@@ -28,8 +28,8 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.16-ics-lsm',
-    cosmwasm_version: 'informalsystems/wasmd v0.45.0-lsm'
+    cosmos_sdk_version: 'v0.50.9-lsm',
+    cosmwasm_version: 'v0.51.0'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',

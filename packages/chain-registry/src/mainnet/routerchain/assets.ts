@@ -27,7 +27,11 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#cb0766'
           }
-        }]
+        }],
+      socials: {
+        website: 'https://www.routerprotocol.com/',
+        twitter: 'https://x.com/routerprotocol'
+      }
     }]
 };
 export default info;

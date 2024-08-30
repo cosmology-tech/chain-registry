@@ -2,6 +2,7 @@ import { AssetList } from '@chain-registry/types';
 
 import * as _ethereum from './ethereum';
 import * as _solana from './solana';
+import * as _ton from './ton';
 import * as _tron from './tron';
 import * as _8ball from './8ball';
 import * as _acrechain from './acrechain';
@@ -189,6 +190,7 @@ import * as _zetachain from './zetachain';
 const assets: AssetList[] = [
   _ethereum.assets,
   _solana.assets,
+  _ton.assets,
   _tron.assets,
   _8ball.assets,
   _acrechain.assets,
