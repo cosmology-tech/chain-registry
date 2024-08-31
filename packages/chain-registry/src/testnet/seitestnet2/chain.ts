@@ -25,20 +25,47 @@ const info: Chain = {
     rpc: [{
         address: 'https://sei-testnet-2-rpc.brocha.in',
         provider: 'Brochain'
+      }, {
+        address: 'https://rpc-testnet-sei.stingray.plus',
+        provider: 'StingRay'
       }],
     rest: [{
         address: 'https://sei-testnet-2-rest.brocha.in',
         provider: 'Brochain'
+      }, {
+        address: 'https://api-testnet-sei.stingray.plus',
+        provider: 'StingRay'
+      }],
+    grpc: [{
+        address: 'https://grpc-testnet-sei.stingray.plus',
+        provider: 'StingRay'
+      }],
+    "evm-http-jsonrpc": [{
+        address: 'https://evm-rpc-testnet-sei.stingray.plus',
+        provider: 'StingRay'
       }]
   },
-  explorers: [{
+  explorers: [
+    {
+      kind: 'blockscout',
+      url: 'https://seitrace.com/?chain=atlantic-2',
+      tx_page: 'https://seitrace.com/tx/${txHash}?chain=atlantic-2'
+    },
+    {
+      kind: 'celatone',
+      url: 'https://www.seiscan.app/atlantic-2',
+      tx_page: 'https://www.seiscan.app/atlantic-2/txs/${txHash}'
+    },
+    {
       kind: 'explorers.guru',
       url: 'https://testnet.sei.explorers.guru',
       tx_page: 'https://testnet.sei.explorers.guru/transaction/${txHash}'
-    }, {
+    },
+    {
       kind: 'Brochain',
       url: 'https://testnet-explorer.brocha.in/sei%20atlantic%202',
       tx_page: 'https://testnet-explorer.brocha.in/sei%20atlantic%202/tx/${txHash}'
-    }]
+    }
+  ]
 };
 export default info;

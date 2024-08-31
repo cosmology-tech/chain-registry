@@ -48,15 +48,15 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'https://sei-rpc.polkachu.com/',
+        address: 'https://sei-rpc.polkachu.com',
         provider: 'polkachu.com'
       },
       {
-        address: 'https://sei-rpc.brocha.in/',
+        address: 'https://sei-rpc.brocha.in',
         provider: 'Brochain'
       },
       {
-        address: 'https://rpc-sei.stingray.plus/',
+        address: 'https://rpc-sei.stingray.plus',
         provider: 'StingRay'
       },
       {
@@ -82,15 +82,15 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'https://sei-api.polkachu.com/',
+        address: 'https://sei-api.polkachu.com',
         provider: 'polkachu.com'
       },
       {
-        address: 'https://sei-rest.brocha.in/',
+        address: 'https://sei-rest.brocha.in',
         provider: 'Brochain'
       },
       {
-        address: 'https://api-sei.stingray.plus/',
+        address: 'https://api-sei.stingray.plus',
         provider: 'StingRay'
       },
       {
@@ -116,7 +116,7 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'https://sei-grpc.polkachu.com:11990/',
+        address: 'https://sei-grpc.polkachu.com:11990',
         provider: 'polkachu.com'
       },
       {

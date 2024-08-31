@@ -56,7 +56,7 @@ const info: Chain = {
         provider: 'w3coins'
       },
       {
-        address: 'https://lava-rpc.finteh.org:443',
+        address: 'https://lava-rpc.finteh.org:26657',
         provider: 'finteh'
       },
       {
@@ -105,6 +105,10 @@ const info: Chain = {
       }
     ],
     rest: [
+      {
+        address: 'https://lava-api.finteh.org:443',
+        provider: 'finteh'
+      },
       {
         address: 'https://lava.rest.lava.build',
         provider: 'Lava Over Lava'
@@ -194,6 +198,12 @@ const info: Chain = {
     ]
   },
   explorers: [
+    {
+      kind: 'finteh',
+      url: 'https://explorer.finteh.org/lava',
+      tx_page: 'https://explorer.finteh.org/lava/tx/${txHash}',
+      account_page: 'https://explorer.finteh.org/lava/account/${accountAddress}'
+    },
     {
       kind: 'guru',
       url: 'https://lava.explorers.guru/',
