@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.64.78](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/juno@1.64.77...@chain-registry/juno@1.64.78) (2024-09-02)
+
+**Note:** Version bump only for package @chain-registry/juno
+
+
+
+
+
 ## [1.64.77](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/juno@1.64.76...@chain-registry/juno@1.64.77) (2024-09-01)
 
 **Note:** Version bump only for package @chain-registry/juno
