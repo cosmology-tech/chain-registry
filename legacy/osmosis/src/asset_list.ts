@@ -4532,14 +4532,21 @@ const asset_list: AssetList = {
         website: 'https://nibiru.fi',
         twitter: 'https://twitter.com/nibiruchain'
       },
-      denom_units: [{
+      denom_units: [
+        {
           denom: 'ibc/4017C65CEA338196ECCEC3FE3FE8258F23D1DE88F1D95750CC912C7A1C1016FF',
           exponent: 0,
           aliases: ['unibi']
-        }, {
+        },
+        {
           denom: 'nibi',
           exponent: 6
-        }],
+        },
+        {
+          denom: 'attonibi',
+          exponent: 18
+        }
+      ],
       base: 'ibc/4017C65CEA338196ECCEC3FE3FE8258F23D1DE88F1D95750CC912C7A1C1016FF',
       name: 'Nibiru',
       display: 'nibi',
@@ -4630,47 +4637,6 @@ const asset_list: AssetList = {
           counterparty: {
             channel_id: 'channel-0',
             base_denom: 'tf/nibi1xpp7yn0tce62ffattws3gpd6v0tah0mlevef3ej3r4pnfvsehcgqk3jvxq/NPP',
-            chain_name: 'nibiru'
-          },
-          chain: {
-            channel_id: 'channel-21113'
-          }
-        }]
-    },
-    {
-      description: 'Ether is the native fee token of the Ethereum network.',
-      denom_units: [
-        {
-          denom: 'ibc/252D21AE9987A0ADF60D8CA371EA13C5F9B4781B2DE045FCF0251F38919CD568',
-          exponent: 0,
-          aliases: ['wei']
-        },
-        {
-          denom: 'gwei',
-          exponent: 9
-        },
-        {
-          denom: 'eth',
-          exponent: 18,
-          aliases: ['ether']
-        }
-      ],
-      base: 'ibc/252D21AE9987A0ADF60D8CA371EA13C5F9B4781B2DE045FCF0251F38919CD568',
-      name: 'Ether',
-      display: 'eth',
-      symbol: 'ETH',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg'
-      },
-      coingecko_id: 'ethereum',
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg'
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'wei',
             chain_name: 'nibiru'
           },
           chain: {
@@ -9829,14 +9795,21 @@ const asset_list: AssetList = {
         website: 'https://nibiru.fi',
         twitter: 'https://twitter.com/nibiruchain'
       },
-      denom_units: [{
+      denom_units: [
+        {
           denom: 'ibc/4017C65CEA338196ECCEC3FE3FE8258F23D1DE88F1D95750CC912C7A1C1016FF',
           exponent: 0,
           aliases: ['unibi']
-        }, {
+        },
+        {
           denom: 'nibi',
           exponent: 6
-        }],
+        },
+        {
+          denom: 'attonibi',
+          exponent: 18
+        }
+      ],
       base: 'ibc/4017C65CEA338196ECCEC3FE3FE8258F23D1DE88F1D95750CC912C7A1C1016FF',
       name: 'Nibiru',
       display: 'nibi',
@@ -9927,47 +9900,6 @@ const asset_list: AssetList = {
           counterparty: {
             channel_id: 'channel-0',
             base_denom: 'tf/nibi1xpp7yn0tce62ffattws3gpd6v0tah0mlevef3ej3r4pnfvsehcgqk3jvxq/NPP',
-            chain_name: 'nibiru'
-          },
-          chain: {
-            channel_id: 'channel-21113'
-          }
-        }]
-    },
-    {
-      description: 'Ether is the native fee token of the Ethereum network.',
-      denom_units: [
-        {
-          denom: 'ibc/252D21AE9987A0ADF60D8CA371EA13C5F9B4781B2DE045FCF0251F38919CD568',
-          exponent: 0,
-          aliases: ['wei']
-        },
-        {
-          denom: 'gwei',
-          exponent: 9
-        },
-        {
-          denom: 'eth',
-          exponent: 18,
-          aliases: ['ether']
-        }
-      ],
-      base: 'ibc/252D21AE9987A0ADF60D8CA371EA13C5F9B4781B2DE045FCF0251F38919CD568',
-      name: 'Ether',
-      display: 'eth',
-      symbol: 'ETH',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg'
-      },
-      coingecko_id: 'ethereum',
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg'
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'wei',
             chain_name: 'nibiru'
           },
           chain: {
@@ -10732,7 +10664,9 @@ const asset_list: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg',
           theme: {
-            primary_color_hex: '#242424'
+            circle: true,
+            primary_color_hex: '#E59636',
+            background_color_hex: '#000000'
           }
         }],
       socials: {
@@ -16050,7 +15984,9 @@ const asset_list: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg',
           theme: {
-            primary_color_hex: '#242424'
+            circle: true,
+            primary_color_hex: '#E59636',
+            background_color_hex: '#000000'
           }
         }],
       socials: {

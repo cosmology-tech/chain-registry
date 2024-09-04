@@ -93,6 +93,10 @@ const info: Chain = {
       {
         address: 'https://bitsong-rpc.bluestake.net:443',
         provider: 'BlueStake 🚀'
+      },
+      {
+        address: 'https://bitsong.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
       }
     ],
     rest: [
@@ -177,6 +181,10 @@ const info: Chain = {
       {
         address: 'bitsong-grpc.noders.services:20090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'bitsong.grpc.m.stavr.tech:9988',
+        provider: '🔥STAVR🔥'
       }
     ]
   },

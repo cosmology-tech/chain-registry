@@ -11,7 +11,8 @@ const info: Chain = {
   bech32_prefix: 'router',
   node_home: '$HOME/.routerd',
   daemon_name: 'routerd',
-  key_algos: ['secp256k1'],
+  key_algos: ['ethsecp256k1'],
+  extra_codecs: ['ethermint'],
   slip44: 60,
   fees: {
     fee_tokens: [{

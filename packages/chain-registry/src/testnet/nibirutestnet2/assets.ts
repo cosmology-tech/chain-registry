@@ -9,13 +9,20 @@ const info: AssetList = {
         website: 'https://nibiru.fi',
         twitter: 'https://twitter.com/nibiruchain'
       },
-      denom_units: [{
+      denom_units: [
+        {
           denom: 'unibi',
           exponent: 0
-        }, {
+        },
+        {
           denom: 'nibi',
           exponent: 6
-        }],
+        },
+        {
+          denom: 'attonibi',
+          exponent: 18
+        }
+      ],
       base: 'unibi',
       name: 'Nibiru',
       display: 'nibi',

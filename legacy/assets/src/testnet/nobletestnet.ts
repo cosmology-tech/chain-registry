@@ -315,6 +315,38 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native staking and governance token of the Atlantic testnet version of Sei.',
+      denom_units: [{
+          denom: 'ibc/C27A06C741FEAFE57DE859ECFAA568928862219C0301F44A98D9B1A1770B1933',
+          exponent: 0,
+          aliases: ['usei']
+        }, {
+          denom: 'sei',
+          exponent: 6
+        }],
+      base: 'ibc/C27A06C741FEAFE57DE859ECFAA568928862219C0301F44A98D9B1A1770B1933',
+      name: 'Sei',
+      display: 'sei',
+      symbol: 'SEI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/seitestnet2/images/sei.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/seitestnet2/images/sei.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-75',
+            base_denom: 'usei',
+            chain_name: 'seitestnet2'
+          },
+          chain: {
+            channel_id: 'channel-23'
+          }
+        }]
+    },
+    {
       description: 'The native token of the Titan network.',
       denom_units: [
         {
@@ -537,6 +569,38 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-4'
+          }
+        }]
+    },
+    {
+      description: 'The native staking and governance token of the Atlantic testnet version of Sei.',
+      denom_units: [{
+          denom: 'ibc/C27A06C741FEAFE57DE859ECFAA568928862219C0301F44A98D9B1A1770B1933',
+          exponent: 0,
+          aliases: ['usei']
+        }, {
+          denom: 'sei',
+          exponent: 6
+        }],
+      base: 'ibc/C27A06C741FEAFE57DE859ECFAA568928862219C0301F44A98D9B1A1770B1933',
+      name: 'Sei',
+      display: 'sei',
+      symbol: 'SEI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/seitestnet2/images/sei.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/seitestnet2/images/sei.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-75',
+            base_denom: 'usei',
+            chain_name: 'seitestnet2'
+          },
+          chain: {
+            channel_id: 'channel-23'
           }
         }]
     },

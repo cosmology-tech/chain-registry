@@ -31,7 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.46.15',
+    cosmos_sdk_version: '0.47.13',
     cosmwasm_enabled: false
   },
   images: [{
@@ -43,7 +43,7 @@ const info: Chain = {
     }],
   apis: {
     rpc: [{
-        address: 'https://rpc1.unification.io:443',
+        address: 'https://rpc.unification.io:443',
         provider: 'Unification'
       }, {
         address: 'https://rpc.unification.chainmasters.ninja/',
@@ -66,10 +66,10 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'bigdipper',
-      url: 'https://explorer.unification.io/',
-      tx_page: 'https://explorer.unification.io/transactions/${txHash}',
-      account_page: 'https://explorer.unification.io/accounts/${accountAddress}'
+      kind: 'ping.pub',
+      url: 'https://explorer.unification.io/u',
+      tx_page: 'https://explorer.unification.io/u/tx/${txHash}',
+      account_page: 'https://explorer.unification.io/u/account/${accountAddress}'
     },
     {
       kind: 'ping.pub',

@@ -77,7 +77,7 @@ const info: Chain = {
         provider: 'Trinity Stake'
       },
       {
-        address: 'https://rpc.sentinelgrowthdao.com',
+        address: 'https://rpc.sentineldao.com',
         provider: 'Sentinel Growth DAO'
       },
       {
@@ -147,7 +147,7 @@ const info: Chain = {
         provider: 'Trinity Stake'
       },
       {
-        address: 'https://api.sentinelgrowthdao.com',
+        address: 'https://api.sentineldao.com',
         provider: 'Sentinel Growth DAO'
       },
       {

@@ -59,10 +59,6 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://migaloo-rpc.cosmosrescue.com',
-        provider: 'cosmosrescue'
-      },
-      {
         address: 'https://migaloo-rpc.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       }
@@ -89,10 +85,6 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://migaloo-api.cosmosrescue.com',
-        provider: 'cosmosrescue'
-      },
-      {
         address: 'https://migaloo-api.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
       }
@@ -117,10 +109,6 @@ const info: Chain = {
       {
         address: 'https://grpc.whitewhale.nodestake.top',
         provider: 'NodeStake'
-      },
-      {
-        address: 'migaloo-grpc.cosmosrescue.com:9090',
-        provider: 'cosmosrescue'
       }
     ]
   },

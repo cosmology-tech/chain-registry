@@ -4120,7 +4120,9 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg',
           theme: {
-            primary_color_hex: '#242424'
+            circle: true,
+            primary_color_hex: '#E59636',
+            background_color_hex: '#000000'
           }
         }],
       socials: {
@@ -5282,7 +5284,9 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg',
           theme: {
-            primary_color_hex: '#242424'
+            circle: true,
+            primary_color_hex: '#E59636',
+            background_color_hex: '#000000'
           }
         }],
       socials: {
