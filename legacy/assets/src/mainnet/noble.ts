@@ -170,6 +170,44 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'BeeZee native blockchain',
+      denom_units: [{
+          denom: 'ibc/013AE50CCCE7DC02463EE602010A0F25C8405F39D7CB3BB4E944DCF2213C18AF',
+          exponent: 0,
+          aliases: ['ubze']
+        }, {
+          denom: 'bze',
+          exponent: 6
+        }],
+      base: 'ibc/013AE50CCCE7DC02463EE602010A0F25C8405F39D7CB3BB4E944DCF2213C18AF',
+      name: 'BeeZee',
+      display: 'bze',
+      symbol: 'BZE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg'
+      },
+      coingecko_id: 'bzedge',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg',
+          theme: {
+            primary_color_hex: '#079fd7'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'ubze',
+            chain_name: 'beezee'
+          },
+          chain: {
+            channel_id: 'channel-95'
+          }
+        }]
+    },
+    {
       description: 'The native token of Coreum',
       denom_units: [{
           denom: 'ibc/1B229CD41D9F3787A48B822DE2E963E8F7BEADEF28AE45941940E2406A6D596F',
@@ -1850,6 +1888,44 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'BeeZee native blockchain',
+      denom_units: [{
+          denom: 'ibc/013AE50CCCE7DC02463EE602010A0F25C8405F39D7CB3BB4E944DCF2213C18AF',
+          exponent: 0,
+          aliases: ['ubze']
+        }, {
+          denom: 'bze',
+          exponent: 6
+        }],
+      base: 'ibc/013AE50CCCE7DC02463EE602010A0F25C8405F39D7CB3BB4E944DCF2213C18AF',
+      name: 'BeeZee',
+      display: 'bze',
+      symbol: 'BZE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg'
+      },
+      coingecko_id: 'bzedge',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg',
+          theme: {
+            primary_color_hex: '#079fd7'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'ubze',
+            chain_name: 'beezee'
+          },
+          chain: {
+            channel_id: 'channel-95'
+          }
+        }]
+    },
+    {
       description: 'The native token of Coreum',
       denom_units: [{
           denom: 'ibc/1B229CD41D9F3787A48B822DE2E963E8F7BEADEF28AE45941940E2406A6D596F',
@@ -9829,7 +9905,10 @@ const assets: AssetList = {
             base_denom: 'inj'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg',
+          theme: {
+            primary_color_hex: '#04a2fc'
+          }
         }]
     },
     {
@@ -9977,12 +10056,20 @@ const assets: AssetList = {
       display: 'usdc',
       symbol: 'USDC',
       images: [{
+          image_sync: {
+            chain_name: 'noble',
+            base_denom: 'uusdc'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png'
+          theme: {
+            circle: true,
+            primary_color_hex: '#2775CA'
+          }
         }],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       }
     },
     {
@@ -10121,7 +10208,12 @@ const assets: AssetList = {
             base_denom: 'sun'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tron/images/trx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tron/images/trx.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tron/images/trx.svg',
+          theme: {
+            circle: true,
+            primary_color_hex: '#FF060A',
+            background_color_hex: '#FF060A'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tron/images/trx.png',
@@ -10239,11 +10331,14 @@ const assets: AssetList = {
             base_denom: 'wei'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png',
+          theme: {
+            primary_color_hex: '#303030'
+          }
         }],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg',
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg'
       },
       traces: [{
           type: 'ibc-cw20',
@@ -10280,10 +10375,17 @@ const assets: AssetList = {
             chain_name: 'bitcoin',
             base_denom: 'sat'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.svg',
+          theme: {
+            primary_color_hex: '#f4941c',
+            background_color_hex: '#f4941c',
+            circle: true
+          }
         }],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.svg'
       },
       traces: [{
           type: 'ibc-cw20',
@@ -10376,7 +10478,10 @@ const assets: AssetList = {
             base_denom: 'inj'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg',
+          theme: {
+            primary_color_hex: '#04a2fc'
+          }
         }]
     },
     {
@@ -10524,12 +10629,20 @@ const assets: AssetList = {
       display: 'usdc',
       symbol: 'USDC',
       images: [{
+          image_sync: {
+            chain_name: 'noble',
+            base_denom: 'uusdc'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png'
+          theme: {
+            circle: true,
+            primary_color_hex: '#2775CA'
+          }
         }],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       }
     },
     {
@@ -10668,7 +10781,12 @@ const assets: AssetList = {
             base_denom: 'sun'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tron/images/trx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tron/images/trx.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tron/images/trx.svg',
+          theme: {
+            circle: true,
+            primary_color_hex: '#FF060A',
+            background_color_hex: '#FF060A'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tron/images/trx.png',
@@ -10786,11 +10904,14 @@ const assets: AssetList = {
             base_denom: 'wei'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png',
+          theme: {
+            primary_color_hex: '#303030'
+          }
         }],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg',
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.svg'
       },
       traces: [{
           type: 'ibc-cw20',
@@ -10827,10 +10948,17 @@ const assets: AssetList = {
             chain_name: 'bitcoin',
             base_denom: 'sat'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.svg',
+          theme: {
+            primary_color_hex: '#f4941c',
+            background_color_hex: '#f4941c',
+            circle: true
+          }
         }],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.svg'
       },
       traces: [{
           type: 'ibc-cw20',

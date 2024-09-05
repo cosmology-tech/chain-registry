@@ -64,8 +64,8 @@ const info: Chain = {
     cosmwasm_version: 'neutron-org/wasmd v0.51.0'
   },
   logo_URIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-black-logo.png',
-    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-black-logo.svg'
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-raw.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-raw.svg'
   },
   description: 'The most secure CosmWasm platform in Cosmos, Neutron lets smart-contracts leverage bleeding-edge Interchain technology with minimal overhead.',
   apis: {
@@ -204,7 +204,8 @@ const info: Chain = {
       account_page: 'https://mainnet.whispernode.com/neutron/account/${accountAddress}'
     }
   ],
-  images: [{
+  images: [
+    {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-raw.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-raw.svg',
       theme: {
@@ -212,7 +213,8 @@ const info: Chain = {
         background_color_hex: '#00000000',
         circle: false
       }
-    }, {
+    },
+    {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg',
       theme: {
@@ -220,6 +222,11 @@ const info: Chain = {
         background_color_hex: '#000000',
         circle: true
       }
-    }]
+    },
+    {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-black-logo.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-black-logo.svg'
+    }
+  ]
 };
 export default info;

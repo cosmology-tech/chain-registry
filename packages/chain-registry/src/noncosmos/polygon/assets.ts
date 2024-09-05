@@ -102,8 +102,10 @@ const info: AssetList = {
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
           theme: {
-            circle: true
-          }
+            circle: true,
+            primary_color_hex: '#2775CA'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png'
         }]
     },
     {
@@ -138,8 +140,10 @@ const info: AssetList = {
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
           theme: {
-            circle: true
-          }
+            circle: true,
+            primary_color_hex: '#2775CA'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png'
         }]
     },
     {

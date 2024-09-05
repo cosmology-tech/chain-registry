@@ -118,6 +118,7 @@ const info: AssetList = {
           provider: 'Circle'
         }],
       logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       images: [{
@@ -125,7 +126,12 @@ const info: AssetList = {
             chain_name: 'avalanche',
             base_denom: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+          theme: {
+            circle: true,
+            primary_color_hex: '#2775CA'
+          }
         }]
     }
   ]

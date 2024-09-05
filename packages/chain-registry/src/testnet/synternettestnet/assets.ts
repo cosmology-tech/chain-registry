@@ -25,7 +25,10 @@ const info: AssetList = {
             base_denom: 'usynt'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.svg',
+          theme: {
+            primary_color_hex: '#272d45'
+          }
         }]
     }]
 };

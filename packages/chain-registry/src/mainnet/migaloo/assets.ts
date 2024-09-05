@@ -127,6 +127,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
       },
       images: [{
+          image_sync: {
+            chain_name: 'terra2',
+            base_denom: 'cw20:terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png',
           theme: {
             primary_color_hex: '#070707'
@@ -691,7 +695,10 @@ const info: AssetList = {
             chain_name: 'injective',
             base_denom: 'factory/inj1a6xdezq7a94qwamec6n6cnup02nvewvjtz6h6e/SYN'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/syn.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/syn.png',
+          theme: {
+            primary_color_hex: '#04a2fc'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/syn.png'

@@ -109,6 +109,9 @@ const info: AssetList = {
           image_sync: {
             chain_name: 'meme',
             base_denom: 'umeme'
+          },
+          theme: {
+            primary_color_hex: '#b7dcd8'
           }
         }]
     }

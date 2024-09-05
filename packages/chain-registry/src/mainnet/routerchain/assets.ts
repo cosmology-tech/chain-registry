@@ -18,8 +18,8 @@ const info: AssetList = {
       symbol: 'ROUTE',
       coingecko_id: 'router-protocol-2',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.svg',
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.svg'
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.svg',

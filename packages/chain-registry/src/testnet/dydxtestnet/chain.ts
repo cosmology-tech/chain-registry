@@ -103,7 +103,10 @@ const info: Chain = {
         chain_name: 'dydx'
       },
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg',
+      theme: {
+        primary_color_hex: '#21212f'
+      }
     }]
 };
 export default info;

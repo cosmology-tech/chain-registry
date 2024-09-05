@@ -33,6 +33,9 @@ const info: AssetList = {
           image_sync: {
             chain_name: 'kyve',
             base_denom: 'ukyve'
+          },
+          theme: {
+            primary_color_hex: '#335350'
           }
         }]
     }]

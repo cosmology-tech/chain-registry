@@ -29,6 +29,9 @@ const info: AssetList = {
           image_sync: {
             chain_name: 'jackal',
             base_denom: 'ujkl'
+          },
+          theme: {
+            primary_color_hex: '#dbdbcb'
           }
         }]
     }]

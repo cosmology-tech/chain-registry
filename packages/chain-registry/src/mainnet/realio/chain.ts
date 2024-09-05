@@ -80,6 +80,10 @@ const info: Chain = {
       {
         address: 'https://rpc-realio.blockval.io',
         provider: 'Blockval'
+      },
+      {
+        address: 'https://realio_rio_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -126,6 +130,10 @@ const info: Chain = {
       {
         address: 'https://api-realio.blockval.io',
         provider: 'Blockval'
+      },
+      {
+        address: 'https://realio_rio_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -194,6 +202,10 @@ const info: Chain = {
       {
         address: 'https://realio-jsonrpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://realio_rio_mainnet_evm.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ]
   },
@@ -233,6 +245,12 @@ const info: Chain = {
       url: 'https://explorer.declab.pro/realio',
       tx_page: 'https://explorer.declab.pro/realio/tx/${txHash}',
       account_page: 'https://explorer.declab.pro/realio/account/{$accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/realio',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/realio/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/realio/account/${accountAddress}'
     }
   ],
   images: [{

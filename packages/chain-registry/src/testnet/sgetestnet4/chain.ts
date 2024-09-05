@@ -66,7 +66,10 @@ const info: Chain = {
         chain_name: 'sge'
       },
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg',
+      theme: {
+        primary_color_hex: '#b99952'
+      }
     }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',

@@ -339,6 +339,7 @@ const testnet_assets: AssetList = {
         }
       ],
       logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       images: [{
@@ -346,7 +347,12 @@ const testnet_assets: AssetList = {
             chain_name: 'nobletestnet',
             base_denom: 'uusdc'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+          theme: {
+            circle: true,
+            primary_color_hex: '#2775CA'
+          }
         }]
     },
     {
@@ -433,6 +439,9 @@ const testnet_assets: AssetList = {
           image_sync: {
             chain_name: 'kyve',
             base_denom: 'ukyve'
+          },
+          theme: {
+            primary_color_hex: '#335350'
           }
         }]
     },
@@ -677,7 +686,10 @@ const testnet_assets: AssetList = {
             base_denom: 'uixo'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.svg',
+          theme: {
+            primary_color_hex: '#2c4484'
+          }
         }]
     },
     {

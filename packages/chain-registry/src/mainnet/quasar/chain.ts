@@ -9,7 +9,7 @@ const info: Chain = {
   chain_type: 'cosmos',
   chain_id: 'quasar-1',
   bech32_prefix: 'quasar',
-  daemon_name: 'quasarnoded',
+  daemon_name: 'quasard',
   node_home: '$HOME/.quasarnode',
   key_algos: ['secp256k1'],
   slip44: 118,
@@ -51,9 +51,9 @@ const info: Chain = {
     ]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.12',
+    cosmos_sdk_version: 'v0.50.9',
     cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.45.0'
+    cosmwasm_version: 'v0.53.0'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png'

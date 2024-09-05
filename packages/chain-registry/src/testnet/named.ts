@@ -25,6 +25,7 @@ export * as cosstestnet from './cosstestnet';
 export * as cudostestnet from './cudostestnet';
 export * as deardogetestnet from './deardogetestnet';
 export * as desmostestnet from './desmostestnet';
+export * as dhealthtestnet from './dhealthtestnet';
 export * as doravotatestnet from './doravotatestnet';
 export * as doravotatestnet2 from './doravotatestnet2';
 export * as dydxtestnet from './dydxtestnet';

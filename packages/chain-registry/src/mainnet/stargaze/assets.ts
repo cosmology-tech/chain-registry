@@ -430,6 +430,26 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/XTRUMP.png'
       }
+    },
+    {
+      description: 'WOLFSHIT',
+      denom_units: [{
+          denom: 'factory/stars167y92c2fe690l0lrqyk9tahpqvu97au0cmpayh3j9455r2f6f06s78emw4/wolfshit',
+          exponent: 0
+        }, {
+          denom: 'WOLFSHIT',
+          exponent: 6
+        }],
+      base: 'factory/stars167y92c2fe690l0lrqyk9tahpqvu97au0cmpayh3j9455r2f6f06s78emw4/wolfshit',
+      name: 'WOLFSHIT',
+      display: 'WOLFSHIT',
+      symbol: 'WOLFSHIT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/wolfshit.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/wolfshit.png'
+        }]
     }
   ]
 };

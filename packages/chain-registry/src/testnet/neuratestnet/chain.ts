@@ -47,7 +47,10 @@ const info: Chain = {
       image_sync: {
         chain_name: 'neura'
       },
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neura/images/neura.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neura/images/neura.png',
+      theme: {
+        primary_color_hex: '#4e5afc'
+      }
     }]
 };
 export default info;

@@ -64,6 +64,9 @@ const info: AssetList = {
           image_sync: {
             chain_name: 'planq',
             base_denom: 'aplanq'
+          },
+          theme: {
+            primary_color_hex: '#d4f3fb'
           }
         }]
     }]
