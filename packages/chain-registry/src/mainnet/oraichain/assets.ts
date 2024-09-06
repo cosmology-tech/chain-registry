@@ -20,6 +20,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-token.png'
       },
       coingecko_id: 'oraichain-token',
+      socials: {
+        website: 'https://orai.io/',
+        twitter: 'https://x.com/oraichain'
+      },
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-token.png',
@@ -535,6 +539,7 @@ const info: AssetList = {
     },
     {
       description: 'The TON native token of Oraichain',
+      extended_description: 'Toincoin has been bridged from The Open Network to Oraichain.',
       denom_units: [{
           denom: 'factory/orai1wuvhex9xqs3r539mvc6mtm7n20fcj3qr2m0y9khx6n5vtlngfzes3k0rq9/ton',
           exponent: 0,

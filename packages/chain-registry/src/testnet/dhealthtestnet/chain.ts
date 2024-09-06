@@ -40,7 +40,10 @@ const info: Chain = {
         address: 'https://lcd-testnet.dhealth.dev',
         provider: 'dHealth'
       }],
-    grpc: []
+    grpc: [{
+        address: 'rpc-testnet.dhealth.dev:9090',
+        provider: 'dHealth'
+      }]
   },
   explorers: []
 };

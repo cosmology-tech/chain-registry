@@ -349,6 +349,10 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-token.png'
       },
       coingecko_id: 'oraichain-token',
+      socials: {
+        website: 'https://orai.io/',
+        twitter: 'https://x.com/oraichain'
+      },
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-token.png',
@@ -2010,6 +2014,10 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-token.png'
       },
       coingecko_id: 'oraichain-token',
+      socials: {
+        website: 'https://orai.io/',
+        twitter: 'https://x.com/oraichain'
+      },
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-token.png',

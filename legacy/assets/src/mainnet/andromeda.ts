@@ -408,6 +408,94 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Osmosis',
+      denom_units: [{
+          denom: 'ibc/B4314D0E670CB43C88A5DCA09F76E5E812BD831CC2FEC6E434C9E5A9D1F57953',
+          exponent: 0,
+          aliases: ['uosmo']
+        }, {
+          denom: 'osmo',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/B4314D0E670CB43C88A5DCA09F76E5E812BD831CC2FEC6E434C9E5A9D1F57953',
+      name: 'Osmosis',
+      display: 'osmo',
+      symbol: 'OSMO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
+          theme: {
+            primary_color_hex: '#760dbb'
+          }
+        }],
+      coingecko_id: 'osmosis',
+      keywords: ['dex', 'staking'],
+      socials: {
+        website: 'https://osmosis.zone',
+        twitter: 'https://twitter.com/osmosiszone'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-81924',
+            base_denom: 'uosmo',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-17'
+          }
+        }]
+    },
+    {
+      description: 'ION is the second native token of Osmosis.',
+      denom_units: [{
+          denom: 'ibc/FF03988A22CDAB8C0AFD760DE5A612767165B2B6B73BDB6F4CCD1D0359D7CEAD',
+          exponent: 0,
+          aliases: ['uion']
+        }, {
+          denom: 'ion',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/FF03988A22CDAB8C0AFD760DE5A612767165B2B6B73BDB6F4CCD1D0359D7CEAD',
+      name: 'Ion DAO',
+      display: 'ion',
+      symbol: 'ION',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg',
+          theme: {
+            primary_color_hex: '#4453c7'
+          }
+        }],
+      coingecko_id: 'ion',
+      keywords: ['memecoin', 'defi'],
+      socials: {
+        website: 'https://ion.wtf',
+        twitter: 'https://twitter.com/_IONDAO'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-81924',
+            base_denom: 'uion',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-17'
+          }
+        }]
+    },
+    {
       description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
       denom_units: [{
           denom: 'ibc/BCEFD8175B8C47D712FB639034128CB43776364B79E3251F073CB3A2A32582A0',
@@ -893,6 +981,94 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-14'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Osmosis',
+      denom_units: [{
+          denom: 'ibc/B4314D0E670CB43C88A5DCA09F76E5E812BD831CC2FEC6E434C9E5A9D1F57953',
+          exponent: 0,
+          aliases: ['uosmo']
+        }, {
+          denom: 'osmo',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/B4314D0E670CB43C88A5DCA09F76E5E812BD831CC2FEC6E434C9E5A9D1F57953',
+      name: 'Osmosis',
+      display: 'osmo',
+      symbol: 'OSMO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
+          theme: {
+            primary_color_hex: '#760dbb'
+          }
+        }],
+      coingecko_id: 'osmosis',
+      keywords: ['dex', 'staking'],
+      socials: {
+        website: 'https://osmosis.zone',
+        twitter: 'https://twitter.com/osmosiszone'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-81924',
+            base_denom: 'uosmo',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-17'
+          }
+        }]
+    },
+    {
+      description: 'ION is the second native token of Osmosis.',
+      denom_units: [{
+          denom: 'ibc/FF03988A22CDAB8C0AFD760DE5A612767165B2B6B73BDB6F4CCD1D0359D7CEAD',
+          exponent: 0,
+          aliases: ['uion']
+        }, {
+          denom: 'ion',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/FF03988A22CDAB8C0AFD760DE5A612767165B2B6B73BDB6F4CCD1D0359D7CEAD',
+      name: 'Ion DAO',
+      display: 'ion',
+      symbol: 'ION',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg',
+          theme: {
+            primary_color_hex: '#4453c7'
+          }
+        }],
+      coingecko_id: 'ion',
+      keywords: ['memecoin', 'defi'],
+      socials: {
+        website: 'https://ion.wtf',
+        twitter: 'https://twitter.com/_IONDAO'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-81924',
+            base_denom: 'uion',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-17'
           }
         }]
     },
