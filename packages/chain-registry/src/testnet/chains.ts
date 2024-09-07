@@ -51,6 +51,7 @@ import * as _jackaltestnet from './jackaltestnet';
 import * as _jackaltestnet2 from './jackaltestnet2';
 import * as _junotestnet from './junotestnet';
 import * as _kichaintestnet from './kichaintestnet';
+import * as _kimatestnet from './kimatestnet';
 import * as _kujiratestnet from './kujiratestnet';
 import * as _kyvetestnet from './kyvetestnet';
 import * as _lavatestnet from './lavatestnet';
@@ -167,6 +168,7 @@ const chains: Chain[] = [
   _jackaltestnet2.chain,
   _junotestnet.chain,
   _kichaintestnet.chain,
+  _kimatestnet.chain,
   _kujiratestnet.chain,
   _kyvetestnet.chain,
   _lavatestnet.chain,
