@@ -22528,6 +22528,10 @@ const asset_list: AssetList = {
             primary_color_hex: '#050505'
           }
         }],
+      socials: {
+        website: 'https://www.nride.com',
+        twitter: 'https://twitter.com/nRide12'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -25423,6 +25427,10 @@ const asset_list: AssetList = {
             primary_color_hex: '#050505'
           }
         }],
+      socials: {
+        website: 'https://www.nride.com',
+        twitter: 'https://twitter.com/nRide12'
+      },
       traces: [{
           type: 'ibc-cw20',
           counterparty: {

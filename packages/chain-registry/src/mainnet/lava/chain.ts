@@ -72,6 +72,10 @@ const info: Chain = {
         provider: 'AVIAONE 🟢'
       },
       {
+        address: 'https://rpc-lava.r93axnodes.cloud:443',
+        provider: 'r93AX Nodes'
+      },
+      {
         address: 'https://lava-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
@@ -124,6 +128,10 @@ const info: Chain = {
       {
         address: 'https://api.lava-mainnet-1.lava.aviaone.com',
         provider: 'AVIAONE 🟢'
+      },
+      {
+        address: 'https://api-lava.r93axnodes.cloud:443',
+        provider: 'r93AX Nodes'
       },
       {
         address: 'https://lava-rest.publicnode.com',
@@ -190,6 +198,10 @@ const info: Chain = {
       {
         address: 'lava.grpc.stakevillage.net:443',
         provider: 'Stake Village'
+      },
+      {
+        address: 'grpc-lava.r93axnodes.cloud:443',
+        provider: 'r93AX Nodes'
       },
       {
         address: 'grpc.lava-mainnet-1.lava.aviaone.com:9104/',

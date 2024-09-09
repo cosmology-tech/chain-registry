@@ -842,7 +842,11 @@ const assets: AssetList = {
           theme: {
             primary_color_hex: '#050505'
           }
-        }]
+        }],
+      socials: {
+        website: 'https://www.nride.com',
+        twitter: 'https://twitter.com/nRide12'
+      }
     },
     {
       description: 'Signal Art and Gaming on Juno',

@@ -509,6 +509,185 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The staking token of Bostrom',
+      denom_units: [{
+          denom: 'ibc/03D28CFE7A878F122AB9727064E916B12FB88AFEC7CFF0DCBD1F9028399EB06F',
+          exponent: 0,
+          aliases: ['boot']
+        }],
+      base: 'ibc/03D28CFE7A878F122AB9727064E916B12FB88AFEC7CFF0DCBD1F9028399EB06F',
+      name: 'Bostrom',
+      display: 'boot',
+      symbol: 'BOOT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.svg'
+      },
+      coingecko_id: 'bostrom',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.svg',
+          theme: {
+            primary_color_hex: '#4cea4e'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'boot',
+            chain_name: 'bostrom'
+          },
+          chain: {
+            channel_id: 'channel-341'
+          }
+        }]
+    },
+    {
+      description: 'The liquid staking token of Bostrom',
+      denom_units: [{
+          denom: 'ibc/E1E3344174D2A40CD8D35BB227348D4CD7DF15B19E9F71FAF8810D2039B838B7',
+          exponent: 0,
+          aliases: ['hydrogen']
+        }],
+      base: 'ibc/E1E3344174D2A40CD8D35BB227348D4CD7DF15B19E9F71FAF8810D2039B838B7',
+      name: 'Bostrom Hydrogen',
+      display: 'hydrogen',
+      symbol: 'HYDROGEN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.svg',
+          theme: {
+            primary_color_hex: '#ffffff'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'hydrogen',
+            chain_name: 'bostrom'
+          },
+          chain: {
+            channel_id: 'channel-341'
+          }
+        }]
+    },
+    {
+      description: 'The resource token of Bostrom',
+      denom_units: [{
+          denom: 'ibc/6A196466D372F80D2FA582D6B6400CAAE08202B4F5839501BEA5C8B88F9C59A0',
+          exponent: 0,
+          aliases: ['milliampere']
+        }, {
+          denom: 'ampere',
+          exponent: 3,
+          aliases: ['ampere']
+        }],
+      base: 'ibc/6A196466D372F80D2FA582D6B6400CAAE08202B4F5839501BEA5C8B88F9C59A0',
+      name: 'Bostrom Ampere',
+      display: 'ampere',
+      symbol: 'A',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/ampere.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/ampere.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/ampere.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/ampere.svg',
+          theme: {
+            primary_color_hex: '#f4ecce'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'milliampere',
+            chain_name: 'bostrom'
+          },
+          chain: {
+            channel_id: 'channel-341'
+          }
+        }]
+    },
+    {
+      description: 'The resource token of Bostrom',
+      denom_units: [{
+          denom: 'ibc/7129E2BFCA2543AE222CEEE5C8C9F688537DFC563DB69ED1E39EB3F73CB7C644',
+          exponent: 0,
+          aliases: ['millivolt']
+        }, {
+          denom: 'volt',
+          exponent: 3,
+          aliases: ['volt']
+        }],
+      base: 'ibc/7129E2BFCA2543AE222CEEE5C8C9F688537DFC563DB69ED1E39EB3F73CB7C644',
+      name: 'Bostrom Volt',
+      display: 'volt',
+      symbol: 'V',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/volt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/volt.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/volt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/volt.svg',
+          theme: {
+            primary_color_hex: '#fba809'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'millivolt',
+            chain_name: 'bostrom'
+          },
+          chain: {
+            channel_id: 'channel-341'
+          }
+        }]
+    },
+    {
+      description: 'The staking token of Cyber',
+      denom_units: [{
+          denom: 'ibc/BF18EF7F331466EE322B497811B8D21F9744E1E77158DE07117D38A3791E8BD5',
+          exponent: 0,
+          aliases: ['tocyb']
+        }],
+      base: 'ibc/BF18EF7F331466EE322B497811B8D21F9744E1E77158DE07117D38A3791E8BD5',
+      name: 'Bostrom Tocyb',
+      display: 'tocyb',
+      symbol: 'TOCYB',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.svg',
+          theme: {
+            primary_color_hex: '#1e8fa9'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'tocyb',
+            chain_name: 'bostrom'
+          },
+          chain: {
+            channel_id: 'channel-341'
+          }
+        }]
+    },
+    {
       description: 'The native governance token of Carbon',
       denom_units: [{
           denom: 'ibc/5D266BB6FA1D26B678DFE4D8255BBB6CBD23847FA6464CDC0CC15C2441D847C4',
@@ -1220,6 +1399,185 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-229'
+          }
+        }]
+    },
+    {
+      description: 'The staking token of Bostrom',
+      denom_units: [{
+          denom: 'ibc/03D28CFE7A878F122AB9727064E916B12FB88AFEC7CFF0DCBD1F9028399EB06F',
+          exponent: 0,
+          aliases: ['boot']
+        }],
+      base: 'ibc/03D28CFE7A878F122AB9727064E916B12FB88AFEC7CFF0DCBD1F9028399EB06F',
+      name: 'Bostrom',
+      display: 'boot',
+      symbol: 'BOOT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.svg'
+      },
+      coingecko_id: 'bostrom',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.svg',
+          theme: {
+            primary_color_hex: '#4cea4e'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'boot',
+            chain_name: 'bostrom'
+          },
+          chain: {
+            channel_id: 'channel-341'
+          }
+        }]
+    },
+    {
+      description: 'The liquid staking token of Bostrom',
+      denom_units: [{
+          denom: 'ibc/E1E3344174D2A40CD8D35BB227348D4CD7DF15B19E9F71FAF8810D2039B838B7',
+          exponent: 0,
+          aliases: ['hydrogen']
+        }],
+      base: 'ibc/E1E3344174D2A40CD8D35BB227348D4CD7DF15B19E9F71FAF8810D2039B838B7',
+      name: 'Bostrom Hydrogen',
+      display: 'hydrogen',
+      symbol: 'HYDROGEN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.svg',
+          theme: {
+            primary_color_hex: '#ffffff'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'hydrogen',
+            chain_name: 'bostrom'
+          },
+          chain: {
+            channel_id: 'channel-341'
+          }
+        }]
+    },
+    {
+      description: 'The resource token of Bostrom',
+      denom_units: [{
+          denom: 'ibc/6A196466D372F80D2FA582D6B6400CAAE08202B4F5839501BEA5C8B88F9C59A0',
+          exponent: 0,
+          aliases: ['milliampere']
+        }, {
+          denom: 'ampere',
+          exponent: 3,
+          aliases: ['ampere']
+        }],
+      base: 'ibc/6A196466D372F80D2FA582D6B6400CAAE08202B4F5839501BEA5C8B88F9C59A0',
+      name: 'Bostrom Ampere',
+      display: 'ampere',
+      symbol: 'A',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/ampere.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/ampere.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/ampere.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/ampere.svg',
+          theme: {
+            primary_color_hex: '#f4ecce'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'milliampere',
+            chain_name: 'bostrom'
+          },
+          chain: {
+            channel_id: 'channel-341'
+          }
+        }]
+    },
+    {
+      description: 'The resource token of Bostrom',
+      denom_units: [{
+          denom: 'ibc/7129E2BFCA2543AE222CEEE5C8C9F688537DFC563DB69ED1E39EB3F73CB7C644',
+          exponent: 0,
+          aliases: ['millivolt']
+        }, {
+          denom: 'volt',
+          exponent: 3,
+          aliases: ['volt']
+        }],
+      base: 'ibc/7129E2BFCA2543AE222CEEE5C8C9F688537DFC563DB69ED1E39EB3F73CB7C644',
+      name: 'Bostrom Volt',
+      display: 'volt',
+      symbol: 'V',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/volt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/volt.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/volt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/volt.svg',
+          theme: {
+            primary_color_hex: '#fba809'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'millivolt',
+            chain_name: 'bostrom'
+          },
+          chain: {
+            channel_id: 'channel-341'
+          }
+        }]
+    },
+    {
+      description: 'The staking token of Cyber',
+      denom_units: [{
+          denom: 'ibc/BF18EF7F331466EE322B497811B8D21F9744E1E77158DE07117D38A3791E8BD5',
+          exponent: 0,
+          aliases: ['tocyb']
+        }],
+      base: 'ibc/BF18EF7F331466EE322B497811B8D21F9744E1E77158DE07117D38A3791E8BD5',
+      name: 'Bostrom Tocyb',
+      display: 'tocyb',
+      symbol: 'TOCYB',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.svg',
+          theme: {
+            primary_color_hex: '#1e8fa9'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'tocyb',
+            chain_name: 'bostrom'
+          },
+          chain: {
+            channel_id: 'channel-341'
           }
         }]
     },

@@ -51,7 +51,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://public-rpc-testnet2.lavanet.xyz:443/rpc/',
+        address: 'https://lav1.tendermintrpc.lava.build:443',
         provider: 'Lava'
       },
       {
@@ -69,7 +69,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://public-rpc-testnet2.lavanet.xyz:443/rest/',
+        address: 'https://lav1.lava.build/',
         provider: 'Lava'
       },
       {
