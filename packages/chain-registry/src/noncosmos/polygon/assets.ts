@@ -10,15 +10,15 @@ const info: AssetList = {
           denom: 'wei',
           exponent: 0
         }, {
-          denom: 'matic',
+          denom: 'pol',
           exponent: 18,
-          aliases: ['polygon']
+          aliases: ['polygon', 'matic']
         }],
       type_asset: 'evm-base',
       base: 'wei',
-      name: 'Matic',
-      display: 'matic',
-      symbol: 'MATIC',
+      name: 'Polygon',
+      display: 'pol',
+      symbol: 'POL',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.svg'

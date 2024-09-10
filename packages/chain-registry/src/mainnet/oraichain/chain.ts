@@ -178,7 +178,9 @@ const info: Chain = {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.svg',
       theme: {
-        primary_color_hex: '#040404'
+        circle: false,
+        dark_mode: false,
+        primary_color_hex: '#000000'
       }
     }]
 };

@@ -32,7 +32,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'lavanet/cosmos-sdk v0.47.10-lava-cosmos',
+    cosmos_sdk_version: 'lavanet/cosmos-sdk v0.47.13-lava-cosmos',
     cosmwasm_enabled: false
   },
   images: [{

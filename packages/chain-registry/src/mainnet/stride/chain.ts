@@ -128,7 +128,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'Stride-Labs/cosmos-sdk v0.47.10-stride-distribution-fix-0'
+    cosmos_sdk_version: 'v0.47.10-stride-distribution-fix-0-mempool-verbose-error-1'
   },
   description: 'Stride is a blockchain that provides liquidity for staked tokens. Using Stride, you can earn both taking and DeFi yields across the Cosmos IBC ecosystem.',
   apis: {

@@ -73,14 +73,14 @@ const assets: AssetList = {
     {
       description: 'The native token of JUNO Chain',
       denom_units: [{
-          denom: 'ibc/276E04FA6EC9F9C2860607513D2B48C6E9267CD62FF071D8220D04A93092740D',
+          denom: 'ibc/6AB61A083754E04354B370C022080FA50A223FE25D92896DB8DF66BC5C540014',
           exponent: 0,
           aliases: ['ujunox']
         }, {
           denom: 'junox',
           exponent: 6
         }],
-      base: 'ibc/276E04FA6EC9F9C2860607513D2B48C6E9267CD62FF071D8220D04A93092740D',
+      base: 'ibc/6AB61A083754E04354B370C022080FA50A223FE25D92896DB8DF66BC5C540014',
       name: 'Juno Testnet',
       display: 'junox',
       symbol: 'JUNOX',
@@ -96,12 +96,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-942',
+            channel_id: 'channel-943',
             base_denom: 'ujunox',
             chain_name: 'junotestnet'
           },
           chain: {
-            channel_id: 'channel-9'
+            channel_id: 'channel-11'
           }
         }]
     },
@@ -283,14 +283,14 @@ const assets: AssetList = {
     {
       description: 'The native token of JUNO Chain',
       denom_units: [{
-          denom: 'ibc/276E04FA6EC9F9C2860607513D2B48C6E9267CD62FF071D8220D04A93092740D',
+          denom: 'ibc/6AB61A083754E04354B370C022080FA50A223FE25D92896DB8DF66BC5C540014',
           exponent: 0,
           aliases: ['ujunox']
         }, {
           denom: 'junox',
           exponent: 6
         }],
-      base: 'ibc/276E04FA6EC9F9C2860607513D2B48C6E9267CD62FF071D8220D04A93092740D',
+      base: 'ibc/6AB61A083754E04354B370C022080FA50A223FE25D92896DB8DF66BC5C540014',
       name: 'Juno Testnet',
       display: 'junox',
       symbol: 'JUNOX',
@@ -306,12 +306,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-942',
+            channel_id: 'channel-943',
             base_denom: 'ujunox',
             chain_name: 'junotestnet'
           },
           chain: {
-            channel_id: 'channel-9'
+            channel_id: 'channel-11'
           }
         }]
     },

@@ -36,7 +36,7 @@ const chain: Chain = {
   codebase: {
     cosmos_sdk_version: 'v0.47.12',
     cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.45.0'
+    cosmwasm_version: 'v0.46.0'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',

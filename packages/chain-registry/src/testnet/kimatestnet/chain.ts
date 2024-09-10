@@ -15,7 +15,10 @@ const info: Chain = {
   fees: {
     fee_tokens: [{
         denom: 'uKIMA',
-        fixed_min_gas_price: 0.025
+        fixed_min_gas_price: 0,
+        low_gas_price: 0.0025,
+        average_gas_price: 0.025,
+        high_gas_price: 0.04
       }]
   },
   codebase: {

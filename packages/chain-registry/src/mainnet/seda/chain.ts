@@ -88,6 +88,10 @@ const info: Chain = {
       {
         address: 'https://seda_mainnet_rpc.chain.whenmoonwhenlambo.money:443',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://rpc-seda-mainnet.keepitstaked.com:443',
+        provider: 'KeepItStaked.com'
       }
     ],
     rest: [
@@ -142,6 +146,10 @@ const info: Chain = {
       {
         address: 'https://seda_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://api-seda-mainnet.keepitstaked.com:443',
+        provider: 'KeepItStaked.com'
       }
     ],
     grpc: [
