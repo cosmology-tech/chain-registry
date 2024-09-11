@@ -106,6 +106,7 @@ export * as terra2testnet from './terra2testnet';
 export * as titantestnet from './titantestnet';
 export * as tucanatestnet from './tucanatestnet';
 export * as ulastestnet from './ulastestnet';
+export * as unificationtestnet from './unificationtestnet';
 export * as uniontestnet from './uniontestnet';
 export * as upticktestnet from './upticktestnet';
 export * as vincechaintestnet from './vincechaintestnet';

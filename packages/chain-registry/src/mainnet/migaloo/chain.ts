@@ -43,10 +43,6 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://migaloo-rpc.lavenderfive.com',
-        provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
         address: 'https://rpc-migaloo.cosmos-spaces.cloud',
         provider: 'Cosmos Spaces'
       },
@@ -69,10 +65,6 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://migaloo-api.lavenderfive.com',
-        provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
         address: 'https://api-migaloo.cosmos-spaces.cloud',
         provider: 'Cosmos Spaces'
       },
@@ -93,10 +85,6 @@ const info: Chain = {
       {
         address: 'migaloo-grpc.polkachu.com:20790',
         provider: 'Polkachu'
-      },
-      {
-        address: 'migaloo-grpc.lavenderfive.com:443',
-        provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'whitewhale-mainnet-grpc.autostake.com:443',

@@ -57,7 +57,7 @@ const info: AssetList = {
       display: 'ksm',
       symbol: 'KSM',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'picasso',
             base_denom: '4',
@@ -66,7 +66,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-2',
             path: 'transfer/channel-2/4'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -95,7 +96,7 @@ const info: AssetList = {
       display: 'dot',
       symbol: 'DOT',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'picasso',
             base_denom: '79228162514264337593543950342',
@@ -104,7 +105,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-2',
             path: 'transfer/channel-2/transfer/channel-15/79228162514264337593543950342'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -138,7 +140,7 @@ const info: AssetList = {
       display: 'usdt',
       symbol: 'USDT',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'picasso',
             base_denom: '130',
@@ -147,7 +149,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-2',
             path: 'transfer/channel-2/130'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -172,7 +175,7 @@ const info: AssetList = {
       display: 'tnkr',
       symbol: 'TNKR',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'picasso',
             base_denom: '2125',
@@ -181,7 +184,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-2',
             path: 'transfer/channel-2/2125'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -211,7 +215,7 @@ const info: AssetList = {
       display: 'eth',
       symbol: 'ETH',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: 'wei',
@@ -220,7 +224,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/wei'
-          }
+          },
+          provider: 'Picasso'
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth-white.png',
@@ -259,7 +264,7 @@ const info: AssetList = {
       display: 'dai',
       symbol: 'DAI',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0x6b175474e89094c44da98b954eedeac495271d0f',
@@ -268,7 +273,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0x6b175474e89094c44da98b954eedeac495271d0f'
-          }
+          },
+          provider: 'Picasso'
         }],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
@@ -302,7 +308,7 @@ const info: AssetList = {
       display: 'fxs',
       symbol: 'FXS',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0',
@@ -311,7 +317,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0'
-          }
+          },
+          provider: 'Picasso'
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/fxs.png',
@@ -350,7 +357,7 @@ const info: AssetList = {
       display: 'frax',
       symbol: 'FRAX',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0x853d955acef822db058eb8505911ed77f175b99e',
@@ -359,7 +366,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0x853d955acef822db058eb8505911ed77f175b99e'
-          }
+          },
+          provider: 'Picasso'
         }],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
@@ -393,7 +401,7 @@ const info: AssetList = {
       display: 'frxeth',
       symbol: 'frxETH',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0x5e8422345238f34275888049021821e8e08caa1f',
@@ -402,7 +410,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0x5e8422345238f34275888049021821e8e08caa1f'
-          }
+          },
+          provider: 'Picasso'
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frxeth.png',
@@ -441,7 +450,7 @@ const info: AssetList = {
       display: 'sfrxeth',
       symbol: 'sfrxETH',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0xac3e018457b222d93114458476f3e3416abbe38f',
@@ -450,7 +459,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0xac3e018457b222d93114458476f3e3416abbe38f'
-          }
+          },
+          provider: 'Picasso'
         }],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sfrxeth.svg'
@@ -484,7 +494,7 @@ const info: AssetList = {
       display: 'sfrax',
       symbol: 'sFRAX',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0xa663b02cf0a4b149d2ad41910cb81e23e1c41c32',
@@ -493,7 +503,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0xa663b02cf0a4b149d2ad41910cb81e23e1c41c32'
-          }
+          },
+          provider: 'Picasso'
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sfrax.png',
@@ -532,7 +543,7 @@ const info: AssetList = {
       display: 'usdt',
       symbol: 'USDT',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0xdac17f958d2ee523a2206206994597c13d831ec7',
@@ -541,7 +552,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0xdac17f958d2ee523a2206206994597c13d831ec7'
-          }
+          },
+          provider: 'Picasso'
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
@@ -581,7 +593,7 @@ const info: AssetList = {
       display: 'crv',
       symbol: 'CRV',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0xd533a949740bb3306d119cc777fa900ba034cd52',
@@ -590,7 +602,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0xd533a949740bb3306d119cc777fa900ba034cd52'
-          }
+          },
+          provider: 'Picasso'
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/crv.png'
@@ -622,7 +635,7 @@ const info: AssetList = {
       display: 'wbtc',
       symbol: 'wBTC',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0x2260fac5e5542a773aa44fbcfedf7c193bc2c599',
@@ -631,7 +644,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599'
-          }
+          },
+          provider: 'Picasso'
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png',
@@ -665,7 +679,7 @@ const info: AssetList = {
       display: 'steth',
       symbol: 'stETH',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0xae7ab96520de3a18e5e111b5eaab095312d7fe84',
@@ -674,7 +688,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84'
-          }
+          },
+          provider: 'Picasso'
         }],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg'
@@ -703,7 +718,7 @@ const info: AssetList = {
       display: 'reth',
       symbol: 'rETH',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0xae78736cd615f374d3085123a210448e74fc6393',
@@ -712,7 +727,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0xae78736cd615f374d3085123a210448e74fc6393'
-          }
+          },
+          provider: 'Picasso'
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/reth.png'
@@ -744,7 +760,7 @@ const info: AssetList = {
       display: 'crvusd',
       symbol: 'crvUSD',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0xf939e0a03fb07f59a73314e73794be0e57ac1b4e',
@@ -753,7 +769,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e'
-          }
+          },
+          provider: 'Picasso'
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/crvusd.png'
@@ -785,7 +802,7 @@ const info: AssetList = {
       display: 'pxeth',
       symbol: 'pxETH',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0x04c154b66cb340f3ae24111cc767e0184ed00cc6',
@@ -794,7 +811,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0x04c154b66cb340f3ae24111cc767e0184ed00cc6'
-          }
+          },
+          provider: 'Picasso'
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pxeth.png'
@@ -826,7 +844,7 @@ const info: AssetList = {
       display: 'eeth',
       symbol: 'eETH',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0x35fa164735182de50811e8e2e824cfb9b6118ac2',
@@ -835,7 +853,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0x35fa164735182de50811e8e2e824cfb9b6118ac2'
-          }
+          },
+          provider: 'Picasso'
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eeth.png'
@@ -867,7 +886,7 @@ const info: AssetList = {
       display: 'ena',
       symbol: 'ENA',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0x57e114b691db790c35207b2e685d4a43181e6061',
@@ -876,7 +895,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0x57e114b691db790c35207b2e685d4a43181e6061'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -905,7 +925,7 @@ const info: AssetList = {
       display: 'usde',
       symbol: 'USDe',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0x4c9edd5852cd905f086c759e8383e09bff1e68b3',
@@ -914,7 +934,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0x4c9edd5852cd905f086c759e8383e09bff1e68b3'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -943,7 +964,7 @@ const info: AssetList = {
       display: 'ezeth',
       symbol: 'ezETH',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0xbf5495efe5db9ce00f80364c8b423567e58d2110',
@@ -952,7 +973,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0xbf5495efe5db9ce00f80364c8b423567e58d2110'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -981,7 +1003,7 @@ const info: AssetList = {
       display: 'pepe',
       symbol: 'PEPE',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0x6982508145454Ce325dDbE47a25d4ec3d2311933',
@@ -990,7 +1012,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0x6982508145454ce325ddbe47a25d4ec3d2311933'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -1027,7 +1050,7 @@ const info: AssetList = {
           },
           provider: 'Solana'
         }, {
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'solana',
             base_denom: 'So11111111111111111111111111111111111111112',
@@ -1036,7 +1059,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-71',
             path: 'transfer/channel-71/So11111111111111111111111111111111111111112'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -1066,7 +1090,7 @@ const info: AssetList = {
       display: 'msol',
       symbol: 'mSOL',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'solana',
             base_denom: 'mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So',
@@ -1075,7 +1099,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-71',
             path: 'transfer/channel-71/mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -1103,7 +1128,7 @@ const info: AssetList = {
       display: 'jitosol',
       symbol: 'jitoSOL',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'solana',
             base_denom: 'J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn',
@@ -1112,7 +1137,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-71',
             path: 'transfer/channel-71/J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -1140,7 +1166,7 @@ const info: AssetList = {
       display: 'bsol',
       symbol: 'bSOL',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'solana',
             base_denom: 'bSo13r4TkiE4KumL71LsHTPpL2euBYLFx6h9HP3piy1',
@@ -1149,7 +1175,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-71',
             path: 'transfer/channel-71/bSo13r4TkiE4KumL71LsHTPpL2euBYLFx6h9HP3piy1'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -1177,7 +1204,7 @@ const info: AssetList = {
       display: 'lst',
       symbol: 'LST',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'solana',
             base_denom: 'LSTxxxnJzKDFSLr4dUkPcmCf5VyryEqzPLz5j4bpxFp',
@@ -1186,7 +1213,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-71',
             path: 'transfer/channel-71/LSTxxxnJzKDFSLr4dUkPcmCf5VyryEqzPLz5j4bpxFp'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -1214,7 +1242,7 @@ const info: AssetList = {
       display: 'edgesol',
       symbol: 'edgeSOL',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'solana',
             base_denom: 'edge86g9cVz87xcpKpy3J77vbp4wYd9idEV562CCntt',
@@ -1223,7 +1251,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-71',
             path: 'transfer/channel-71/edge86g9cVz87xcpKpy3J77vbp4wYd9idEV562CCntt'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -1251,7 +1280,7 @@ const info: AssetList = {
       display: 'hsol',
       symbol: 'hSOL',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'solana',
             base_denom: 'he1iusmfkpAdwvxLNGV8Y1iSbj4rUy6yMhEA3fotn9A',
@@ -1260,7 +1289,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-71',
             path: 'transfer/channel-71/he1iusmfkpAdwvxLNGV8Y1iSbj4rUy6yMhEA3fotn9A'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -1288,7 +1318,7 @@ const info: AssetList = {
       display: 'jupsol',
       symbol: 'jupSOL',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'solana',
             base_denom: 'jupSoLaHXQiZZTSfEWMTRRgpnyFm8f6sZdosWBjx93v',
@@ -1297,7 +1327,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-71',
             path: 'transfer/channel-71/jupSoLaHXQiZZTSfEWMTRRgpnyFm8f6sZdosWBjx93v'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -1325,7 +1356,7 @@ const info: AssetList = {
       display: 'wif',
       symbol: 'WIF',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'solana',
             base_denom: 'EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm',
@@ -1334,7 +1365,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-71',
             path: 'transfer/channel-71/EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -1362,7 +1394,7 @@ const info: AssetList = {
       display: 'usdt',
       symbol: 'USDT',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'solana',
             base_denom: 'Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB',
@@ -1371,7 +1403,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-71',
             path: 'transfer/channel-71/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -1403,7 +1436,7 @@ const info: AssetList = {
       display: 'whine',
       symbol: 'WHINE',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'solana',
             base_denom: 'ATeTQcUkWGs7AZ15mCiFUWCW9EUL7KpDZEHCN1Y8pump',
@@ -1412,7 +1445,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-71',
             path: 'transfer/channel-71/ATeTQcUkWGs7AZ15mCiFUWCW9EUL7KpDZEHCN1Y8pump'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {
@@ -1443,7 +1477,7 @@ const info: AssetList = {
       display: 'unicorn',
       symbol: 'UWU',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'solana',
             base_denom: 'UwU8RVXB69Y6Dcju6cN2Qef6fykkq6UUNpB15rZku6Z',
@@ -1452,7 +1486,8 @@ const info: AssetList = {
           chain: {
             channel_id: 'channel-71',
             path: 'transfer/channel-71/UwU8RVXB69Y6Dcju6cN2Qef6fykkq6UUNpB15rZku6Z'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           image_sync: {

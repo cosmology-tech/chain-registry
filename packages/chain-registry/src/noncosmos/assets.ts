@@ -6,6 +6,7 @@ import * as _penumbra from './penumbra';
 import * as _0l from './0l';
 import * as _aptos from './aptos';
 import * as _arbitrum from './arbitrum';
+import * as _avail from './avail';
 import * as _avalanche from './avalanche';
 import * as _base from './base';
 import * as _binancesmartchain from './binancesmartchain';
@@ -50,6 +51,7 @@ const assets: AssetList[] = [
   _0l.assets,
   _aptos.assets,
   _arbitrum.assets,
+  _avail.assets,
   _avalanche.assets,
   _base.assets,
   _binancesmartchain.assets,

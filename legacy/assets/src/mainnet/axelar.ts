@@ -2070,6 +2070,48 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Nolus chain',
+      denom_units: [{
+          denom: 'ibc/37731EEEAE2D4A18C296FA1B3808719ACCBFFF7BF7F6A1D6EEA1044472B689E3',
+          exponent: 0,
+          aliases: ['unls']
+        }, {
+          denom: 'nls',
+          exponent: 6
+        }],
+      base: 'ibc/37731EEEAE2D4A18C296FA1B3808719ACCBFFF7BF7F6A1D6EEA1044472B689E3',
+      name: 'Nolus',
+      display: 'nls',
+      symbol: 'NLS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg'
+      },
+      coingecko_id: 'nolus',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg',
+          theme: {
+            primary_color_hex: '#fc542c'
+          }
+        }],
+      socials: {
+        website: 'https://nolus.io/',
+        twitter: 'https://twitter.com/NolusProtocol'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10177',
+            base_denom: 'unls',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-143'
+          }
+        }]
+    },
+    {
       description: 'Staking and governance token for ODIN Protocol',
       denom_units: [{
           denom: 'ibc/8D58BF228C8B8930F5D8D45ED617FFC34CA2AA397288495444FD822201A315DF',
@@ -6796,6 +6838,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-139'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Nolus chain',
+      denom_units: [{
+          denom: 'ibc/37731EEEAE2D4A18C296FA1B3808719ACCBFFF7BF7F6A1D6EEA1044472B689E3',
+          exponent: 0,
+          aliases: ['unls']
+        }, {
+          denom: 'nls',
+          exponent: 6
+        }],
+      base: 'ibc/37731EEEAE2D4A18C296FA1B3808719ACCBFFF7BF7F6A1D6EEA1044472B689E3',
+      name: 'Nolus',
+      display: 'nls',
+      symbol: 'NLS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg'
+      },
+      coingecko_id: 'nolus',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg',
+          theme: {
+            primary_color_hex: '#fc542c'
+          }
+        }],
+      socials: {
+        website: 'https://nolus.io/',
+        twitter: 'https://twitter.com/NolusProtocol'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-10177',
+            base_denom: 'unls',
+            chain_name: 'nolus'
+          },
+          chain: {
+            channel_id: 'channel-143'
           }
         }]
     },

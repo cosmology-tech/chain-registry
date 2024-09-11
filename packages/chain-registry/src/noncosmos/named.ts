@@ -4,6 +4,7 @@ export * as penumbra from './penumbra';
 export * as _0l from './0l';
 export * as aptos from './aptos';
 export * as arbitrum from './arbitrum';
+export * as avail from './avail';
 export * as avalanche from './avalanche';
 export * as base from './base';
 export * as binancesmartchain from './binancesmartchain';
