@@ -253,6 +253,48 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Canto is a Layer-1 blockchain built to deliver on the promise of DeFi',
+      denom_units: [{
+          denom: 'ibc/64BBBEB97DA04B6CF7A29A5454E43E101B29F506C117E800E128E0B32BA3FE3D',
+          exponent: 0,
+          aliases: ['acanto']
+        }, {
+          denom: 'canto',
+          exponent: 18
+        }],
+      base: 'ibc/64BBBEB97DA04B6CF7A29A5454E43E101B29F506C117E800E128E0B32BA3FE3D',
+      name: 'Canto',
+      display: 'canto',
+      symbol: 'CANTO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg'
+      },
+      coingecko_id: 'canto',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg',
+          theme: {
+            primary_color_hex: '#1c1f1f'
+          }
+        }],
+      socials: {
+        website: 'https://canto.io/',
+        twitter: 'https://twitter.com/CantoPublic'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'acanto',
+            chain_name: 'canto'
+          },
+          chain: {
+            channel_id: 'channel-88'
+          }
+        }]
+    },
+    {
       description: 'Native token for the cheqd network',
       denom_units: [{
           denom: 'ibc/5012B1C96F286E8A6604A87037CE51241C6F1CA195B71D1E261FCACB69FB6BC2',
@@ -824,6 +866,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-145'
+          }
+        }]
+    },
+    {
+      description: 'Canto is a Layer-1 blockchain built to deliver on the promise of DeFi',
+      denom_units: [{
+          denom: 'ibc/64BBBEB97DA04B6CF7A29A5454E43E101B29F506C117E800E128E0B32BA3FE3D',
+          exponent: 0,
+          aliases: ['acanto']
+        }, {
+          denom: 'canto',
+          exponent: 18
+        }],
+      base: 'ibc/64BBBEB97DA04B6CF7A29A5454E43E101B29F506C117E800E128E0B32BA3FE3D',
+      name: 'Canto',
+      display: 'canto',
+      symbol: 'CANTO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg'
+      },
+      coingecko_id: 'canto',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg',
+          theme: {
+            primary_color_hex: '#1c1f1f'
+          }
+        }],
+      socials: {
+        website: 'https://canto.io/',
+        twitter: 'https://twitter.com/CantoPublic'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'acanto',
+            chain_name: 'canto'
+          },
+          chain: {
+            channel_id: 'channel-88'
           }
         }]
     },

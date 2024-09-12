@@ -177,6 +177,10 @@ const info: Chain = {
       {
         address: 'https://cosmos-rpc.stakeandrelax.net',
         provider: 'Stake&Relax 🦥'
+      },
+      {
+        address: 'https://cosmos-hub.drpc.org',
+        provider: 'dRPC'
       }
     ],
     rest: [

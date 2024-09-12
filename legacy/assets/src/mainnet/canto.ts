@@ -121,6 +121,48 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Gravity Bridge',
+      denom_units: [{
+          denom: 'ibc/FC9D92EC12BC974E8B6179D411351524CD5C2EBC3CE29D5BA856414FEFA47093',
+          exponent: 0,
+          aliases: ['ugraviton']
+        }, {
+          denom: 'graviton',
+          exponent: 6
+        }],
+      base: 'ibc/FC9D92EC12BC974E8B6179D411351524CD5C2EBC3CE29D5BA856414FEFA47093',
+      name: 'Graviton',
+      display: 'graviton',
+      symbol: 'GRAV',
+      coingecko_id: 'graviton',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg',
+          theme: {
+            primary_color_hex: '#042ca4'
+          }
+        }],
+      socials: {
+        website: 'https://www.gravitybridge.net/',
+        twitter: 'https://twitter.com/gravity_bridge'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-88',
+            base_denom: 'ugraviton',
+            chain_name: 'gravitybridge'
+          },
+          chain: {
+            channel_id: 'channel-0'
+          }
+        }]
+    },
+    {
       description: 'The native token of Osmosis',
       denom_units: [{
           denom: 'ibc/D24B4564BCD51D3D02D9987D92571EAC5915676A9BD6D9B0C1D0254CB8A5EA34',
@@ -373,6 +415,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-6'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Gravity Bridge',
+      denom_units: [{
+          denom: 'ibc/FC9D92EC12BC974E8B6179D411351524CD5C2EBC3CE29D5BA856414FEFA47093',
+          exponent: 0,
+          aliases: ['ugraviton']
+        }, {
+          denom: 'graviton',
+          exponent: 6
+        }],
+      base: 'ibc/FC9D92EC12BC974E8B6179D411351524CD5C2EBC3CE29D5BA856414FEFA47093',
+      name: 'Graviton',
+      display: 'graviton',
+      symbol: 'GRAV',
+      coingecko_id: 'graviton',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg',
+          theme: {
+            primary_color_hex: '#042ca4'
+          }
+        }],
+      socials: {
+        website: 'https://www.gravitybridge.net/',
+        twitter: 'https://twitter.com/gravity_bridge'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-88',
+            base_denom: 'ugraviton',
+            chain_name: 'gravitybridge'
+          },
+          chain: {
+            channel_id: 'channel-0'
           }
         }]
     },

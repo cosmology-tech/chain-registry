@@ -125,6 +125,10 @@ const info: Chain = {
       {
         address: 'https://axelar-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://axelar.drpc.org',
+        provider: 'dRPC'
       }
     ],
     rest: [

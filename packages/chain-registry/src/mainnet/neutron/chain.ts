@@ -105,6 +105,10 @@ const info: Chain = {
       {
         address: 'https://rpc.neutron.quokkastake.io',
         provider: '🐹 Quokka Stake'
+      },
+      {
+        address: 'https://neutron.drpc.org',
+        provider: 'dRPC'
       }
     ],
     rest: [
