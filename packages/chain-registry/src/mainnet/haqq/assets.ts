@@ -20,6 +20,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.svg'
       },
+      socials: {
+        website: 'https://islamiccoin.net',
+        twitter: 'https://x.com/1slamic_coin'
+      },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.svg',
@@ -29,6 +33,7 @@ const info: AssetList = {
         }]
     }, {
       description: 'Deenar gold-backed stablecoin',
+      extended_description: 'Deenar Gold (DEEN) is a 1:1 gold-backed halal stablecoin with the ability to physically deliver gold. 1 DEEN = 1 gram of gold.',
       denom_units: [{
           denom: 'erc20/0x4FEBDDe47Ab9a76200e57eFcC80b212a07b3e6cE',
           exponent: 0
@@ -53,6 +58,11 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.svg'
+      },
+      coingecko_id: 'deenar-gold',
+      socials: {
+        website: 'https://deenar.com',
+        twitter: 'https://x.com/DeenarGold'
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.png',

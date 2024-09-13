@@ -444,6 +444,10 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.svg'
       },
+      socials: {
+        website: 'https://islamiccoin.net',
+        twitter: 'https://x.com/1slamic_coin'
+      },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.svg',
@@ -493,6 +497,11 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.svg'
+      },
+      coingecko_id: 'deenar-gold',
+      socials: {
+        website: 'https://deenar.com',
+        twitter: 'https://x.com/DeenarGold'
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.png',
@@ -1217,6 +1226,10 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.svg'
       },
+      socials: {
+        website: 'https://islamiccoin.net',
+        twitter: 'https://x.com/1slamic_coin'
+      },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.svg',
@@ -1266,6 +1279,11 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.svg'
+      },
+      coingecko_id: 'deenar-gold',
+      socials: {
+        website: 'https://deenar.com',
+        twitter: 'https://x.com/DeenarGold'
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.png',
