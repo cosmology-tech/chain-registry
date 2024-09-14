@@ -28,7 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'celestiaorg/cosmos-sdk v1.23.0-sdk-v0.46.16'
+    cosmos_sdk_version: 'celestiaorg/cosmos-sdk v1.24.1-sdk-v0.46.16'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',

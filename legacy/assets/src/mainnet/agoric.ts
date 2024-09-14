@@ -415,6 +415,205 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Kava is a decentralized finance (DeFi) platform that provides a range of financial services, including lending, borrowing, and stablecoins, leveraging the Cosmos and Ethereum ecosystems.',
+      denom_units: [{
+          denom: 'ibc/75ECE93EE15EB4B5AA9D49E8481194BF331E9089651A58356F9307344F801FB6',
+          exponent: 0,
+          aliases: ['ukava']
+        }, {
+          denom: 'kava',
+          exponent: 6
+        }],
+      base: 'ibc/75ECE93EE15EB4B5AA9D49E8481194BF331E9089651A58356F9307344F801FB6',
+      name: 'Kava',
+      display: 'kava',
+      symbol: 'KAVA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg'
+      },
+      coingecko_id: 'kava',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg',
+          theme: {
+            primary_color_hex: '#e64942'
+          }
+        }],
+      socials: {
+        website: 'https://www.kava.io/',
+        twitter: 'https://twitter.com/KAVA_CHAIN'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-133',
+            base_denom: 'ukava',
+            chain_name: 'kava'
+          },
+          chain: {
+            channel_id: 'channel-63'
+          }
+        }]
+    },
+    {
+      description: 'Governance token of Kava Lend Protocol',
+      denom_units: [{
+          denom: 'ibc/35DD779EA37203421A78882D7BFC02751B414AB9631F63B95FC0F1583C1B90B4',
+          exponent: 0,
+          aliases: ['hard']
+        }, {
+          denom: 'HARD',
+          exponent: 6
+        }],
+      base: 'ibc/35DD779EA37203421A78882D7BFC02751B414AB9631F63B95FC0F1583C1B90B4',
+      name: 'Kava Hard',
+      display: 'HARD',
+      symbol: 'HARD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.svg'
+      },
+      coingecko_id: 'kava-lend',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.svg',
+          theme: {
+            primary_color_hex: '#7b34ac'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-133',
+            base_denom: 'hard',
+            chain_name: 'kava'
+          },
+          chain: {
+            channel_id: 'channel-63'
+          }
+        }]
+    },
+    {
+      description: 'Governance token of Kava Swap Protocol',
+      denom_units: [{
+          denom: 'ibc/4E8A3EB42BE34325E109F332473156A36BE87FB00CA74174BE9D8DA88E00ED90',
+          exponent: 0,
+          aliases: ['swp']
+        }, {
+          denom: 'SWP',
+          exponent: 6
+        }],
+      base: 'ibc/4E8A3EB42BE34325E109F332473156A36BE87FB00CA74174BE9D8DA88E00ED90',
+      name: 'Kava Swap',
+      display: 'SWP',
+      symbol: 'SWP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.svg'
+      },
+      coingecko_id: 'kava-swap',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.svg',
+          theme: {
+            primary_color_hex: '#544cfc'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-133',
+            base_denom: 'swp',
+            chain_name: 'kava'
+          },
+          chain: {
+            channel_id: 'channel-63'
+          }
+        }]
+    },
+    {
+      description: 'The native stablecoin of Kava',
+      denom_units: [{
+          denom: 'ibc/88970698183DEFB89B059E9F89BE130EE4713FB9142C60615A3EE23430DDD6F9',
+          exponent: 0,
+          aliases: ['usdx']
+        }, {
+          denom: 'USDX',
+          exponent: 6
+        }],
+      base: 'ibc/88970698183DEFB89B059E9F89BE130EE4713FB9142C60615A3EE23430DDD6F9',
+      name: 'Kava USDX',
+      display: 'USDX',
+      symbol: 'USDX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.svg'
+      },
+      coingecko_id: 'usdx',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.svg',
+          theme: {
+            primary_color_hex: '#04d4a3'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-133',
+            base_denom: 'usdx',
+            chain_name: 'kava'
+          },
+          chain: {
+            channel_id: 'channel-63'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/079DAF1995A28BCD3B4E3D38948BB0FBC1CDE47939820CBAB7C02AFB88FF31A3',
+          exponent: 0,
+          aliases: ['erc20/tether/usdt']
+        }, {
+          denom: 'usdt',
+          exponent: 6
+        }],
+      base: 'ibc/079DAF1995A28BCD3B4E3D38948BB0FBC1CDE47939820CBAB7C02AFB88FF31A3',
+      name: 'Tether USD',
+      display: 'usdt',
+      symbol: 'USDT',
+      coingecko_id: 'tether',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-133',
+            base_denom: 'erc20/tether/usdt',
+            chain_name: 'kava'
+          },
+          chain: {
+            channel_id: 'channel-63'
+          }
+        }],
+      images: [{
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xdac17f958d2ee523a2206206994597c13d831ec7'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          theme: {
+            circle: true,
+            primary_color_hex: '#009393',
+            background_color_hex: '#009393'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+      }
+    },
+    {
       description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/6AA5123E11E0AB0D7ACCF898848435C06A1D1C138D4732FB90F9414205B6F0FA',
@@ -1279,6 +1478,205 @@ const assets: AssetList = {
             channel_id: 'channel-4'
           }
         }]
+    },
+    {
+      description: 'Kava is a decentralized finance (DeFi) platform that provides a range of financial services, including lending, borrowing, and stablecoins, leveraging the Cosmos and Ethereum ecosystems.',
+      denom_units: [{
+          denom: 'ibc/75ECE93EE15EB4B5AA9D49E8481194BF331E9089651A58356F9307344F801FB6',
+          exponent: 0,
+          aliases: ['ukava']
+        }, {
+          denom: 'kava',
+          exponent: 6
+        }],
+      base: 'ibc/75ECE93EE15EB4B5AA9D49E8481194BF331E9089651A58356F9307344F801FB6',
+      name: 'Kava',
+      display: 'kava',
+      symbol: 'KAVA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg'
+      },
+      coingecko_id: 'kava',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg',
+          theme: {
+            primary_color_hex: '#e64942'
+          }
+        }],
+      socials: {
+        website: 'https://www.kava.io/',
+        twitter: 'https://twitter.com/KAVA_CHAIN'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-133',
+            base_denom: 'ukava',
+            chain_name: 'kava'
+          },
+          chain: {
+            channel_id: 'channel-63'
+          }
+        }]
+    },
+    {
+      description: 'Governance token of Kava Lend Protocol',
+      denom_units: [{
+          denom: 'ibc/35DD779EA37203421A78882D7BFC02751B414AB9631F63B95FC0F1583C1B90B4',
+          exponent: 0,
+          aliases: ['hard']
+        }, {
+          denom: 'HARD',
+          exponent: 6
+        }],
+      base: 'ibc/35DD779EA37203421A78882D7BFC02751B414AB9631F63B95FC0F1583C1B90B4',
+      name: 'Kava Hard',
+      display: 'HARD',
+      symbol: 'HARD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.svg'
+      },
+      coingecko_id: 'kava-lend',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.svg',
+          theme: {
+            primary_color_hex: '#7b34ac'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-133',
+            base_denom: 'hard',
+            chain_name: 'kava'
+          },
+          chain: {
+            channel_id: 'channel-63'
+          }
+        }]
+    },
+    {
+      description: 'Governance token of Kava Swap Protocol',
+      denom_units: [{
+          denom: 'ibc/4E8A3EB42BE34325E109F332473156A36BE87FB00CA74174BE9D8DA88E00ED90',
+          exponent: 0,
+          aliases: ['swp']
+        }, {
+          denom: 'SWP',
+          exponent: 6
+        }],
+      base: 'ibc/4E8A3EB42BE34325E109F332473156A36BE87FB00CA74174BE9D8DA88E00ED90',
+      name: 'Kava Swap',
+      display: 'SWP',
+      symbol: 'SWP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.svg'
+      },
+      coingecko_id: 'kava-swap',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.svg',
+          theme: {
+            primary_color_hex: '#544cfc'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-133',
+            base_denom: 'swp',
+            chain_name: 'kava'
+          },
+          chain: {
+            channel_id: 'channel-63'
+          }
+        }]
+    },
+    {
+      description: 'The native stablecoin of Kava',
+      denom_units: [{
+          denom: 'ibc/88970698183DEFB89B059E9F89BE130EE4713FB9142C60615A3EE23430DDD6F9',
+          exponent: 0,
+          aliases: ['usdx']
+        }, {
+          denom: 'USDX',
+          exponent: 6
+        }],
+      base: 'ibc/88970698183DEFB89B059E9F89BE130EE4713FB9142C60615A3EE23430DDD6F9',
+      name: 'Kava USDX',
+      display: 'USDX',
+      symbol: 'USDX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.svg'
+      },
+      coingecko_id: 'usdx',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.svg',
+          theme: {
+            primary_color_hex: '#04d4a3'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-133',
+            base_denom: 'usdx',
+            chain_name: 'kava'
+          },
+          chain: {
+            channel_id: 'channel-63'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/079DAF1995A28BCD3B4E3D38948BB0FBC1CDE47939820CBAB7C02AFB88FF31A3',
+          exponent: 0,
+          aliases: ['erc20/tether/usdt']
+        }, {
+          denom: 'usdt',
+          exponent: 6
+        }],
+      base: 'ibc/079DAF1995A28BCD3B4E3D38948BB0FBC1CDE47939820CBAB7C02AFB88FF31A3',
+      name: 'Tether USD',
+      display: 'usdt',
+      symbol: 'USDT',
+      coingecko_id: 'tether',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-133',
+            base_denom: 'erc20/tether/usdt',
+            chain_name: 'kava'
+          },
+          chain: {
+            channel_id: 'channel-63'
+          }
+        }],
+      images: [{
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xdac17f958d2ee523a2206206994597c13d831ec7'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          theme: {
+            circle: true,
+            primary_color_hex: '#009393',
+            background_color_hex: '#009393'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+      }
     },
     {
       description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',

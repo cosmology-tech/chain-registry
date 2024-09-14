@@ -14,6 +14,7 @@ export * as dogecoin from './dogecoin';
 export * as fantom from './fantom';
 export * as filecoin from './filecoin';
 export * as forex from './forex';
+export * as internetcomputer from './internetcomputer';
 export * as kusama from './kusama';
 export * as moonbeam from './moonbeam';
 export * as neo from './neo';
