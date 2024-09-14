@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'auratestnet',
   status: 'live',
@@ -63,5 +63,5 @@ const info: Chain = {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.svg'
     }]
-};
+} as const satisfies Chain;
 export default info;

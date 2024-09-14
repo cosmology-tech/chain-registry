@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'permtestnet',
   status: 'live',
@@ -49,5 +49,5 @@ const info: Chain = {
       url: 'https://explorer.testnet.perm.ooo/',
       tx_page: 'https://explorer.testnet.perm.ooo/transactions/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

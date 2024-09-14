@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'manifesttestnet',
   status: 'live',
@@ -54,5 +54,5 @@ const info: Chain = {
       url: 'https://manifest-explorer.vercel.app/',
       tx_page: 'https://manifest-explorer.vercel.app/manifest/tx'
     }]
-};
+} as const satisfies Chain;
 export default info;

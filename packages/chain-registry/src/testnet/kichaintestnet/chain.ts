@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'kichaintestnet',
   status: 'live',
@@ -36,5 +36,5 @@ const info: Chain = {
       url: 'https://kichain-t-4.blockchain.ki/',
       tx_page: 'https://kichain-t-4.blockchain.ki/transactions/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

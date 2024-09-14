@@ -1,5 +1,5 @@
 import { AssetList } from '@chain-registry/types';
-const info: AssetList = {
+const info = {
   $schema: '../assetlist.schema.json',
   chain_name: 'terpnettestnet2',
   assets: [{
@@ -41,5 +41,5 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terpnetwork/images/thiol.png'
         }]
     }]
-};
+} as const satisfies AssetList;
 export default info;

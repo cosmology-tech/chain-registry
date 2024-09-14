@@ -1,5 +1,5 @@
 import { AssetList } from '@chain-registry/types';
-const info: AssetList = {
+const info = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'arkeonetworktestnet',
   assets: [{
@@ -21,5 +21,5 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/arkeonetworktestnet/images/arkeo.png'
         }]
     }]
-};
+} as const satisfies AssetList;
 export default info;

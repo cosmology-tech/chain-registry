@@ -1,5 +1,5 @@
 import { AssetList } from '@chain-registry/types';
-const info: AssetList = {
+const info = {
   $schema: '../assetlist.schema.json',
   chain_name: 'titan',
   assets: [{
@@ -42,5 +42,5 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/titan/images/tkx.png'
       }
     }]
-};
+} as const satisfies AssetList;
 export default info;

@@ -1,5 +1,5 @@
 import { AssetList } from '@chain-registry/types';
-const info: AssetList = {
+const info = {
   $schema: '../assetlist.schema.json',
   chain_name: 'vidulum',
   assets: [{
@@ -43,5 +43,5 @@ const info: AssetList = {
           provider: 'Vidulum'
         }]
     }]
-};
+} as const satisfies AssetList;
 export default info;

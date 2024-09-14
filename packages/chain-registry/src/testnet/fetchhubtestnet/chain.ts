@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'fetchhubtestnet',
   status: 'live',
@@ -51,5 +51,5 @@ const info: Chain = {
       tx_page: 'https://fetchstation.azoyalabs.com/testnet/explorer/transactions/${txHash}',
       account_page: 'https://fetchstation.azoyalabs.com/testnet/explorer/address/${accountAddress}'
     }]
-};
+} as const satisfies Chain;
 export default info;

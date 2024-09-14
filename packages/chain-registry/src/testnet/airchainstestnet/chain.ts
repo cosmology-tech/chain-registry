@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'airchainstestnet',
   status: 'live',
@@ -264,5 +264,5 @@ const info: Chain = {
       account_page: 'https://explorer.validatorvn.com/Airchains-Testnet/account/${accountAddress}'
     }
   ]
-};
+} as const satisfies Chain;
 export default info;

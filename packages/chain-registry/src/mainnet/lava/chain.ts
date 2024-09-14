@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'lava',
   status: 'live',
@@ -257,5 +257,5 @@ const info: Chain = {
     'indexing',
     'incentivized public rpc'
   ]
-};
+} as const satisfies Chain;
 export default info;

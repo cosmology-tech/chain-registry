@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'stridetestnet',
   status: 'live',
@@ -42,5 +42,5 @@ const info: Chain = {
       url: 'https://testnet.ping.pub/stride',
       tx_page: 'https://testnet.ping.pub/stride/tx/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'cosmosicsprovidertestnet',
   chain_type: 'cosmos',
@@ -94,5 +94,5 @@ const info: Chain = {
       url: 'https://explorer.rs-testnet.polypore.xyz/provider',
       tx_page: 'https://explorer.rs-testnet.polypore.xyz/provider/tx/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

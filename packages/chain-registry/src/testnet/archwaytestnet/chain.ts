@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'archwaytestnet',
   chain_type: 'cosmos',
@@ -55,5 +55,5 @@ const info: Chain = {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/archwaytestnet/images/ArchwayBrandmark.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/archwaytestnet/images/ArchwayBrandmark.svg'
     }]
-};
+} as const satisfies Chain;
 export default info;

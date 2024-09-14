@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'carbon',
   status: 'live',
@@ -374,5 +374,5 @@ const info: Chain = {
         primary_color_hex: '#a5edf2'
       }
     }]
-};
+} as const satisfies Chain;
 export default info;

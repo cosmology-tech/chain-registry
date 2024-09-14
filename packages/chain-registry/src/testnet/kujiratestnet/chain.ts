@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'kujiratestnet',
   chain_type: 'cosmos',
@@ -36,5 +36,5 @@ const info: Chain = {
       url: 'https://kujira.explorers.guru',
       tx_page: 'https://kujira.explorers.guru/transaction/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

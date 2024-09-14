@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'celestiatestnet2',
   chain_type: 'cosmos',
@@ -39,5 +39,5 @@ const info: Chain = {
       url: 'https://arabica.celenium.io/',
       tx_page: 'https://arabica.celenium.io/tx/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

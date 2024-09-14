@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'empowertestnet',
   chain_type: 'cosmos',
@@ -145,5 +145,5 @@ const info: Chain = {
       tx_page: 'https://explorer.stavr.tech/empower/tx/${txHash}'
     }
   ]
-};
+} as const satisfies Chain;
 export default info;

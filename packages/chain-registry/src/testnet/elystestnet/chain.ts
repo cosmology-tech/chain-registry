@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'elystestnet',
   status: 'live',
@@ -132,5 +132,5 @@ const info: Chain = {
       account_page: 'https://testnet.itrocket.net/elys/account/${accountAddress}'
     }
   ]
-};
+} as const satisfies Chain;
 export default info;

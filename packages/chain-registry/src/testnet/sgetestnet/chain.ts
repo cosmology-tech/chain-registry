@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'sgetestnet',
   chain_type: 'cosmos',
@@ -88,5 +88,5 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'
   }
-};
+} as const satisfies Chain;
 export default info;

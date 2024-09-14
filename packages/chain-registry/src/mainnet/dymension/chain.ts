@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'dymension',
   status: 'live',
@@ -487,5 +487,5 @@ const info: Chain = {
       account_page: 'https://explorer.mainnet.dteam.tech/dymension/account/${accountAddress}'
     }
   ]
-};
+} as const satisfies Chain;
 export default info;

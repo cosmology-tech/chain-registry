@@ -1,5 +1,5 @@
 import { AssetList } from '@chain-registry/types';
-const info: AssetList = {
+const info = {
   $schema: '../assetlist.schema.json',
   chain_name: 'celestia',
   assets: [{
@@ -33,5 +33,5 @@ const info: AssetList = {
         twitter: 'https://twitter.com/CelestiaOrg'
       }
     }]
-};
+} as const satisfies AssetList;
 export default info;

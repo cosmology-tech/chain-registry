@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'jackaltestnet',
   chain_type: 'cosmos',
@@ -55,5 +55,5 @@ const info: Chain = {
       url: 'https://ping.pub/jackal',
       tx_page: 'https://ping.pub/jackal/tx/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

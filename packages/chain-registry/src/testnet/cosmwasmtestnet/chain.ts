@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'cosmwasmtestnet',
   status: 'live',
@@ -45,5 +45,5 @@ const info: Chain = {
       url: 'https://block-explorer.malaga-420.cosmwasm.com/',
       tx_page: 'https://block-explorer.malaga-420.cosmwasm.com/transactions/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

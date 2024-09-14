@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'doravotatestnet2',
   chain_type: 'cosmos',
@@ -45,5 +45,5 @@ const info: Chain = {
       url: 'https://vota-vk-explorer.dorafactory.org',
       tx_page: 'https://vota-vk-explorer.dorafactory.org/doravotaincentive/tx/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

@@ -1,5 +1,3 @@
-import { Chain } from '@chain-registry/types';
-
 import * as _ethereum from './ethereum';
 import * as _solana from './solana';
 import * as _ton from './ton';
@@ -189,7 +187,7 @@ import * as _vidulum from './vidulum';
 import * as _xpla from './xpla';
 import * as _zetachain from './zetachain';
 
-const chains: Chain[] = [
+const chains = [
   _ethereum.chain,
   _solana.chain,
   _ton.chain,

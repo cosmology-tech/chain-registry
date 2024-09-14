@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'lumenxtestnet',
   status: 'live',
@@ -51,5 +51,5 @@ const info: Chain = {
       url: 'https://testnet.explorer.chaintools.tech/lumenx',
       tx_page: 'https://testnet.explorer.chaintools.tech/lumenx/tx/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'doravota',
   chain_type: 'cosmos',
@@ -75,5 +75,5 @@ const info: Chain = {
       url: 'https://exp.utsa.tech/dora/staking',
       tx_page: 'https://exp.utsa.tech/dora/tx/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

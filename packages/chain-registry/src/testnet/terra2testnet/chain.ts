@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'terra2testnet',
   status: 'live',
@@ -54,5 +54,5 @@ const info: Chain = {
       url: 'http://finder.terra.money/testnet/',
       tx_page: 'https://finder.terra.money/testnet/tx/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'bitcannadevnet2',
   status: 'live',
@@ -39,5 +39,5 @@ const info: Chain = {
       url: 'https://explorer-devnet-6.bitcanna.io',
       tx_page: 'https://explorer-devnet-6.bitcanna.io/tx/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

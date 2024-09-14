@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'persistencetestnet2',
   chain_type: 'cosmos',
@@ -118,5 +118,5 @@ const info: Chain = {
       account_page: 'https://testnet-explorer.baryon.dev/test-core-2/account/${accountAddress}'
     }
   ]
-};
+} as const satisfies Chain;
 export default info;

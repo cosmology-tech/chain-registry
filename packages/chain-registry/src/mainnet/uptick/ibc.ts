@@ -1,5 +1,5 @@
 import { IBCInfo } from '@chain-registry/types';
-const info: IBCInfo[] = [{
+const info = [{
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'cosmoshub',
@@ -47,5 +47,5 @@ const info: IBCInfo[] = [{
         ordering: 'unordered',
         version: 'ics20-1'
       }]
-  }];
+  }] as const satisfies IBCInfo[];
 export default info;

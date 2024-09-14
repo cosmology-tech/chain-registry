@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'babylontestnet1',
   status: 'killed',
@@ -51,5 +51,5 @@ const info: Chain = {
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/babylontestnet/images/logo.svg'
     }],
   slip44: 118
-};
+} as const satisfies Chain;
 export default info;

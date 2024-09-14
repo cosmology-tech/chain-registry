@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'joltify',
   status: 'live',
@@ -77,5 +77,5 @@ const info: Chain = {
       account_page: 'https://explorer.whenmoonwhenlambo.money/joltify/account/${accountAddress}'
     }],
   keywords: ['rwa', 'lending']
-};
+} as const satisfies Chain;
 export default info;

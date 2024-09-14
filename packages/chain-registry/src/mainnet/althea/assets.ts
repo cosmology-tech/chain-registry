@@ -1,5 +1,5 @@
 import { AssetList } from '@chain-registry/types';
-const info: AssetList = {
+const info = {
   chain_name: 'althea',
   $schema: '../assetlist.schema.json',
   assets: [{
@@ -24,5 +24,5 @@ const info: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/althea/images/althea.svg'
         }]
     }]
-};
+} as const satisfies AssetList;
 export default info;

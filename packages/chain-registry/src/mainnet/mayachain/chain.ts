@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'mayachain',
   status: 'live',
@@ -30,5 +30,5 @@ const info: Chain = {
       url: 'https://www.explorer.mayachain.info',
       tx_page: 'https://www.explorer.mayachain.info/#/txs/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

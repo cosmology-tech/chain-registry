@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'coreum',
   status: 'live',
@@ -214,5 +214,5 @@ const info: Chain = {
     'nft',
     'XRPL'
   ]
-};
+} as const satisfies Chain;
 export default info;

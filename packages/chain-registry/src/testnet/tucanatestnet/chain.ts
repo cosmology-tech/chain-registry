@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'tucanatestnet',
   status: 'live',
@@ -46,5 +46,5 @@ const info: Chain = {
       url: 'https://explorer.birdee-2.tucana.zone/',
       tx_page: 'https://explorer.birdee-2.tucana.zone/tx/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

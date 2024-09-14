@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'zetachaintestnet',
   status: 'live',
@@ -54,5 +54,5 @@ const info: Chain = {
       url: 'https://zetachain-athens-3.blockscout.com/',
       tx_page: 'https://zetachain-athens-3.blockscout.com/tx/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

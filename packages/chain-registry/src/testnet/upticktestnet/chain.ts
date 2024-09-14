@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'upticktestnet',
   status: 'live',
@@ -48,5 +48,5 @@ const info: Chain = {
       url: 'https://uptick.explorers.guru/',
       tx_page: 'https://uptick.explorers.guru/transaction/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

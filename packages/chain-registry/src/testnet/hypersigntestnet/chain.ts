@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'hypersigntestnet',
   status: 'live',
@@ -36,5 +36,5 @@ const info: Chain = {
       url: 'https://explorer.hypersign.id/hypersign-prajna-testnet',
       tx_page: 'https://explorer.hypersign.id/hypersign-prajna-testnet/tx/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

@@ -1,5 +1,5 @@
 import { AssetList } from '@chain-registry/types';
-const info: AssetList = {
+const info = {
   $schema: '../assetlist.schema.json',
   chain_name: 'noistestnet',
   assets: [{
@@ -30,5 +30,5 @@ const info: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.svg'
         }]
     }]
-};
+} as const satisfies AssetList;
 export default info;

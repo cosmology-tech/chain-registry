@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'chronicnetwork',
   status: 'killed',
@@ -47,5 +47,5 @@ const info: Chain = {
       account_page: 'https://atomscan.com/chronicnetwork/accounts/${accountAddress}'
     }
   ]
-};
+} as const satisfies Chain;
 export default info;

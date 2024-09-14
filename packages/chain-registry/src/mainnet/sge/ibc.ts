@@ -1,5 +1,5 @@
 import { IBCInfo } from '@chain-registry/types';
-const info: IBCInfo[] = [{
+const info = [{
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'osmosis',
@@ -27,5 +27,5 @@ const info: IBCInfo[] = [{
           preferred: true
         }
       }]
-  }];
+  }] as const satisfies IBCInfo[];
 export default info;

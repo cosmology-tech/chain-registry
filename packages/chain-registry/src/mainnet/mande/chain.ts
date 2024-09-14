@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'mande',
   status: 'live',
@@ -61,5 +61,5 @@ const info: Chain = {
       tx_page: 'https://dym.fyi/r/mande/tx/${txHash}',
       account_page: 'https://dym.fyi/r/mande/address/${accountAddress}'
     }]
-};
+} as const satisfies Chain;
 export default info;

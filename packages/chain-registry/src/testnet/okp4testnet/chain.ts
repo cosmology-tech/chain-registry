@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'okp4testnet',
   chain_type: 'cosmos',
@@ -101,5 +101,5 @@ const info: Chain = {
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/okp4testnet/images/okp4.png'
     }]
-};
+} as const satisfies Chain;
 export default info;

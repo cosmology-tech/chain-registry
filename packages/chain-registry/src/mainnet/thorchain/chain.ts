@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'thorchain',
   status: 'live',
@@ -28,5 +28,5 @@ const info: Chain = {
       url: 'https://viewblock.io/thorchain',
       tx_page: 'https://viewblock.io/thorchain/tx/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'impacthubdevnet',
   status: 'live',
@@ -47,5 +47,5 @@ const info: Chain = {
       tx_page: 'https://blockscan.devnet.ixo.earth/ixo/transactions/${txHash}',
       account_page: 'https://blockscan.devnet.ixo.earth/ixo/accounts/${accountAddress}'
     }]
-};
+} as const satisfies Chain;
 export default info;

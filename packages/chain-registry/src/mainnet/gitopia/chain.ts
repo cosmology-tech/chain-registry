@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'gitopia',
   status: 'live',
@@ -519,5 +519,5 @@ const info: Chain = {
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gitopia/images/gitopia.png'
   }
-};
+} as const satisfies Chain;
 export default info;

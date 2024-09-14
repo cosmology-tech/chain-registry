@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'axelar',
   chain_type: 'cosmos',
@@ -315,5 +315,5 @@ const info: Chain = {
         circle: false
       }
     }]
-};
+} as const satisfies Chain;
 export default info;

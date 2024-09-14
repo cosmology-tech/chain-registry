@@ -1,5 +1,3 @@
-import { AssetList } from '@chain-registry/types';
-
 import * as _picasso from './picasso';
 import * as _composablepolkadot from './composablepolkadot';
 import * as _penumbra from './penumbra';
@@ -45,7 +43,7 @@ import * as _polkadottestnet from './polkadottestnet';
 import * as _polygontestnet from './polygontestnet';
 import * as _ojotestnet from './ojotestnet';
 
-const assets: AssetList[] = [
+const assets = [
   _picasso.assets,
   _composablepolkadot.assets,
   _penumbra.assets,

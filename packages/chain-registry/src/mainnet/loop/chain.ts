@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'loop',
   status: 'live',
@@ -58,5 +58,5 @@ const info: Chain = {
       tx_page: 'https://ping.pfc.zone/loop/tx/${txHash}'
     }],
   keywords: ['fans']
-};
+} as const satisfies Chain;
 export default info;

@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'celestiatestnet3',
   chain_type: 'cosmos',
@@ -125,5 +125,5 @@ const info: Chain = {
       account_page: 'https://explorer.testnet.dteam.tech/celestia/account/${accountAddress}'
     }
   ]
-};
+} as const satisfies Chain;
 export default info;

@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'gateway',
   status: 'live',
@@ -73,5 +73,5 @@ const info: Chain = {
       account_page: 'https://bigdipper.live/wormhole/accounts/${accountAddress}'
     }],
   keywords: ['bridge']
-};
+} as const satisfies Chain;
 export default info;

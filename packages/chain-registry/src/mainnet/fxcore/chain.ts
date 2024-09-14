@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'fxcore',
   chain_type: 'cosmos',
@@ -90,5 +90,5 @@ const info: Chain = {
       account_page: 'https://explorer.nodeshub.online/fxcore/accounts/${accountAddress}'
     }
   ]
-};
+} as const satisfies Chain;
 export default info;

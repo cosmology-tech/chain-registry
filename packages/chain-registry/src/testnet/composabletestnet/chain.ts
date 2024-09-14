@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'composabletestnet',
   status: 'live',
@@ -78,5 +78,5 @@ const info: Chain = {
       tx_page: 'https://explorer.sr20de.xyz/Composible-3/tx/${txHash}'
     }
   ]
-};
+} as const satisfies Chain;
 export default info;

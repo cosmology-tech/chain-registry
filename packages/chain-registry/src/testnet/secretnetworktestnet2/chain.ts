@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'secretnetworktestnet2',
   status: 'killed',
@@ -60,5 +60,5 @@ const info: Chain = {
       url: 'https://testnet.ping.pub/secret',
       tx_page: 'https://testnet.ping.pub/secret/tx/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

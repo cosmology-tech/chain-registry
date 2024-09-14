@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'soarchaintestnet',
   chain_type: 'cosmos',
@@ -105,5 +105,5 @@ const info: Chain = {
       url: 'https://explorer.kjnodes.com/soarchain-testnet',
       tx_page: 'https://explorer.kjnodes.com/soarchain-testnet/tx/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

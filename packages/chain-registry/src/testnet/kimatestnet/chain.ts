@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'kimatestnet',
   status: 'live',
@@ -39,5 +39,5 @@ const info: Chain = {
       url: 'https://explorer-testnet.kima.finance/',
       tx_page: 'https://explorer-testnet.kima.finance/transactions/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

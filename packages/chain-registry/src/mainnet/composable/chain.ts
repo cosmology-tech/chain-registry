@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'composable',
   chain_type: 'cosmos',
@@ -242,5 +242,5 @@ const info: Chain = {
   images: [{
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
     }]
-};
+} as const satisfies Chain;
 export default info;

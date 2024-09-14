@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'kyvetestnet',
   chain_type: 'cosmos',
@@ -65,5 +65,5 @@ const info: Chain = {
       tx_page: 'https://mintscan.io/kyve-testnet/txs/${txHash}',
       account_page: 'https://mintscan.io/kyve-testnet/account/${accountAddress}'
     }]
-};
+} as const satisfies Chain;
 export default info;

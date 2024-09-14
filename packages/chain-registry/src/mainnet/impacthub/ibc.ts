@@ -1,5 +1,5 @@
 import { IBCInfo } from '@chain-registry/types';
-const info: IBCInfo[] = [
+const info = [
   {
     $schema: '../ibc_data.schema.json',
     chain_1: {
@@ -144,5 +144,5 @@ const info: IBCInfo[] = [
         }
       }]
   }
-];
+] as const satisfies IBCInfo[];
 export default info;

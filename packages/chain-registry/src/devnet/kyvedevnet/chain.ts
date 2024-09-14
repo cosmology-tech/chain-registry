@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'kyvedevnet',
   chain_type: 'cosmos',
@@ -36,5 +36,5 @@ const info: Chain = {
       url: 'https://kyve.explorers.guru/',
       tx_page: 'https://kyve.explorers.guru/transaction/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

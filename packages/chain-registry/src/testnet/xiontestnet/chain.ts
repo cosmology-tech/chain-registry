@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'xiontestnet',
   chain_id: 'xion-testnet-1',
@@ -64,5 +64,5 @@ const info: Chain = {
     'burnt',
     'testnet'
   ]
-};
+} as const satisfies Chain;
 export default info;

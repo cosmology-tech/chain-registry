@@ -1,5 +1,3 @@
-import { AssetList } from '@chain-registry/types';
-
 import * as _bitcannadevnet2 from './bitcannadevnet2';
 import * as _celestiatestnet2 from './celestiatestnet2';
 import * as _impacthubdevnet from './impacthubdevnet';
@@ -11,7 +9,7 @@ import * as _nibirudevnet3 from './nibirudevnet3';
 import * as _nibirudevnet4 from './nibirudevnet4';
 import * as _seidevnet3 from './seidevnet3';
 
-const assets: AssetList[] = [
+const assets = [
   _bitcannadevnet2.assets,
   _celestiatestnet2.assets,
   _impacthubdevnet.assets,

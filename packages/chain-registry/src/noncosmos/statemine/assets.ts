@@ -1,5 +1,5 @@
 import { AssetList } from '@chain-registry/types';
-const info: AssetList = {
+const info = {
   $schema: '../assetlist.schema.json',
   chain_name: 'statemine',
   assets: [{
@@ -17,5 +17,5 @@ const info: AssetList = {
       symbol: 'USDT',
       coingecko_id: 'tether'
     }]
-};
+} as const satisfies AssetList;
 export default info;

@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'wavehashtestnet',
   status: 'live',
@@ -49,5 +49,5 @@ const info: Chain = {
       url: 'https://atomscan.com/directory/testnet/wavehashtestnet',
       tx_page: 'https://atomscan.com/directory/testnet/wavehashtestnet/transactions/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

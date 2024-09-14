@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../../chain.schema.json',
   chain_name: 'dhealthtestnet',
   chain_type: 'cosmos',
@@ -46,5 +46,5 @@ const info: Chain = {
       }]
   },
   explorers: []
-};
+} as const satisfies Chain;
 export default info;

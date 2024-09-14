@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'nobletestnet',
   chain_type: 'cosmos',
@@ -63,5 +63,5 @@ const info: Chain = {
       url: 'https://explore.strange.love/grand-1',
       tx_page: 'https://explore.strange.love/grand-1/tx/${txHash}'
     }]
-};
+} as const satisfies Chain;
 export default info;

@@ -1,5 +1,5 @@
 import { AssetList } from '@chain-registry/types';
-const info: AssetList = {
+const info = {
   $schema: '../assetlist.schema.json',
   chain_name: 'berachain',
   assets: [{
@@ -24,5 +24,5 @@ const info: AssetList = {
         }],
       coingecko_id: 'berachain-bera'
     }]
-};
+} as const satisfies AssetList;
 export default info;

@@ -1,5 +1,5 @@
 import { Chain } from '@chain-registry/types';
-const info: Chain = {
+const info = {
   $schema: '../chain.schema.json',
   chain_name: 'pundix',
   chain_type: 'cosmos',
@@ -81,5 +81,5 @@ const info: Chain = {
       tx_page: 'https://explorer.nodeshub.online/pundix/tx/${txHash}',
       account_page: 'https://explorer.nodeshub.online/pundix/accounts/${accountAddress}'
     }]
-};
+} as const satisfies Chain;
 export default info;
