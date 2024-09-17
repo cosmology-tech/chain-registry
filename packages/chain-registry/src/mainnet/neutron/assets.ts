@@ -146,7 +146,7 @@ const info: AssetList = {
           },
           chain: {
             channel_id: 'channel-35',
-            path: 'transfer/channel-35'
+            path: 'transfer/channel-35/utia'
           }
         }],
       images: [{

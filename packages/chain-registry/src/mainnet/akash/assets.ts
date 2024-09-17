@@ -51,11 +51,11 @@ const info: AssetList = {
           counterparty: {
             chain_name: 'kava',
             base_denom: 'erc20/tether/usdt',
-            channel_id: 'channel-130'
+            channel_id: 'channel-5'
           },
           chain: {
-            channel_id: 'channel-2',
-            path: 'transfer/channel-2/erc20/tether/usdt'
+            channel_id: 'channel-37',
+            path: 'transfer/channel-37/erc20/tether/usdt'
           }
         }],
       images: [{

@@ -9345,18 +9345,21 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The INJ token for the Oraichain.',
+      description: 'The Wrapped INJ token for the Oraichain.',
+      type_asset: 'sdk.coin',
+      address: 'orai19rtmkk6sn4tppvjmp5d5zj6gfsdykrl5rw2euu5gwur3luheuuusesqn49',
       denom_units: [{
-          denom: 'ibc/49D820DFDE9F885D7081725A58202ABA2F465CAEE4AFBC683DFB79A8E013E83E',
+          denom: 'ibc/00454780C89CD74EF846AA50C7ED3C7258075F3D7B1E3C527BE8FA19A6E8F32C',
           exponent: 0,
           aliases: ['cw20:orai19rtmkk6sn4tppvjmp5d5zj6gfsdykrl5rw2euu5gwur3luheuuusesqn49']
         }, {
           denom: 'inj',
           exponent: 6
         }],
-      type_asset: 'ics20',
-      address: 'orai19rtmkk6sn4tppvjmp5d5zj6gfsdykrl5rw2euu5gwur3luheuuusesqn49',
-      base: 'ibc/6AFCCC63766012639DEEF2E34631A309DA162409161390D2E53B98EADD4927AE',
+      base: 'ibc/00454780C89CD74EF846AA50C7ED3C7258075F3D7B1E3C527BE8FA19A6E8F32C',
+      name: 'Injective',
+      display: 'inj',
+      symbol: 'INJ',
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -9370,17 +9373,10 @@ const assets: AssetList = {
             channel_id: 'channel-222'
           }
         }],
-      name: 'Injective',
-      display: 'inj',
-      symbol: 'INJ',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
-      },
       images: [{
           image_sync: {
-            chain_name: 'injective',
-            base_denom: 'inj'
+            chain_name: 'oraichain',
+            base_denom: 'ibc/49D820DFDE9F885D7081725A58202ABA2F465CAEE4AFBC683DFB79A8E013E83E'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg',
@@ -12734,18 +12730,21 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The INJ token for the Oraichain.',
+      description: 'The Wrapped INJ token for the Oraichain.',
+      type_asset: 'sdk.coin',
+      address: 'orai19rtmkk6sn4tppvjmp5d5zj6gfsdykrl5rw2euu5gwur3luheuuusesqn49',
       denom_units: [{
-          denom: 'ibc/49D820DFDE9F885D7081725A58202ABA2F465CAEE4AFBC683DFB79A8E013E83E',
+          denom: 'ibc/00454780C89CD74EF846AA50C7ED3C7258075F3D7B1E3C527BE8FA19A6E8F32C',
           exponent: 0,
           aliases: ['cw20:orai19rtmkk6sn4tppvjmp5d5zj6gfsdykrl5rw2euu5gwur3luheuuusesqn49']
         }, {
           denom: 'inj',
           exponent: 6
         }],
-      type_asset: 'ics20',
-      address: 'orai19rtmkk6sn4tppvjmp5d5zj6gfsdykrl5rw2euu5gwur3luheuuusesqn49',
-      base: 'ibc/6AFCCC63766012639DEEF2E34631A309DA162409161390D2E53B98EADD4927AE',
+      base: 'ibc/00454780C89CD74EF846AA50C7ED3C7258075F3D7B1E3C527BE8FA19A6E8F32C',
+      name: 'Injective',
+      display: 'inj',
+      symbol: 'INJ',
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -12759,17 +12758,10 @@ const assets: AssetList = {
             channel_id: 'channel-222'
           }
         }],
-      name: 'Injective',
-      display: 'inj',
-      symbol: 'INJ',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
-      },
       images: [{
           image_sync: {
-            chain_name: 'injective',
-            base_denom: 'inj'
+            chain_name: 'oraichain',
+            base_denom: 'ibc/49D820DFDE9F885D7081725A58202ABA2F465CAEE4AFBC683DFB79A8E013E83E'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg',

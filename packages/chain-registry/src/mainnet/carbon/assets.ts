@@ -419,7 +419,7 @@ const info: AssetList = {
           },
           chain: {
             channel_id: 'channel-0',
-            path: 'transfer/channel-6994/utia'
+            path: 'transfer/channel-0/transfer/channel-6994/utia'
           }
         }],
       images: [{
@@ -454,18 +454,21 @@ const info: AssetList = {
       display: 'milkTIA',
       symbol: 'milkTIA',
       traces: [{
-          type: 'liquid-stake',
+          type: 'ibc',
           counterparty: {
             chain_name: 'osmosis',
-            base_denom: 'factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA'
+            base_denom: 'factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA',
+            channel_id: 'channel-188'
           },
-          provider: 'MilkyWay'
+          chain: {
+            channel_id: 'channel-0',
+            path: 'transfer/channel-0/factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA'
+          }
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/milktia.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/milktia.svg'
       },
-      coingecko_id: 'milkyway-staked-tia',
       images: [{
           image_sync: {
             chain_name: 'osmosis',

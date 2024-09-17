@@ -127,14 +127,14 @@ const info: AssetList = {
     {
       description: 'The first memecoin on osmosis.',
       denom_units: [{
-          denom: 'ibc/AB7C92666DE8C7A977666B8080CABF0127B652B9D40F7251E6914DE942D9942B',
+          denom: 'ibc/B023C57727A38A9CF87238F9008477C3761AD4774D528BFA458DD707D90B553A',
           exponent: 0
         }, {
           denom: 'WOSMO',
           exponent: 6
         }],
       type_asset: 'ics20',
-      base: 'ibc/AB7C92666DE8C7A977666B8080CABF0127B652B9D40F7251E6914DE942D9942B',
+      base: 'ibc/B023C57727A38A9CF87238F9008477C3761AD4774D528BFA458DD707D90B553A',
       name: 'Wosmo',
       display: 'WOSMO',
       symbol: 'WOSMO',
@@ -215,7 +215,7 @@ const info: AssetList = {
     {
       description: 'Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.',
       denom_units: [{
-          denom: 'ibc/1FF96B82FDE4B0E38FA0A8EC24A83E1EAC2615F338468A47473BAD3B45E066D2',
+          denom: 'ibc/063F4461F7317CFF10F50AB044E44932D22AAD84FA7107082744946E6DB7B7A8',
           exponent: 0,
           aliases: ['uastro']
         }, {
@@ -223,7 +223,7 @@ const info: AssetList = {
           exponent: 6
         }],
       type_asset: 'ics20',
-      base: 'ibc/1FF96B82FDE4B0E38FA0A8EC24A83E1EAC2615F338468A47473BAD3B45E066D2',
+      base: 'ibc/063F4461F7317CFF10F50AB044E44932D22AAD84FA7107082744946E6DB7B7A8',
       name: 'Astroport token',
       display: 'astro',
       symbol: 'ASTRO',

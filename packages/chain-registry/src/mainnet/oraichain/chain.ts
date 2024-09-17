@@ -76,6 +76,10 @@ const info: Chain = {
       {
         address: 'https://oraichain-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://orai-rpc.imdev.app',
+        provider: 'imORAI'
       }
     ],
     rest: [
@@ -172,6 +176,12 @@ const info: Chain = {
       url: 'https://explorer.stavr.tech/Orai-Mainnet',
       tx_page: 'https://explorer.stavr.tech/Orai-Mainnet/transactions/${txHash}',
       account_page: 'https://explorer.stavr.tech/Orai-Mainnet/accounts/${accountAddress}'
+    },
+    {
+      kind: 'imORAI ORAIchain Explorer',
+      url: 'https://explorer.imdev.app/oraichain',
+      tx_page: 'https://explorer.imdev.app/oraichain/tx/${txHash}',
+      account_page: 'https://explorer.imdev.app/oraichain/account/${accountAddress}'
     }
   ],
   images: [{

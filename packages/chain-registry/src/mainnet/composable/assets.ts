@@ -951,7 +951,7 @@ const info: AssetList = {
     {
       description: 'A Liquid Restaking Token (LRT) and Strategy Manager for EigenLayer.',
       denom_units: [{
-          denom: 'ibc/0247E0E2C174135AADF4EA172D97FF5C15A64689A403E83603EAE4F0616DD365',
+          denom: 'ibc/E317539F148285AAC77E7614101CBE94E20EDF169B233A5E0C867112972F9041',
           exponent: 0,
           aliases: ['ezeth-wei']
         }, {
@@ -959,7 +959,7 @@ const info: AssetList = {
           exponent: 18
         }],
       type_asset: 'ics20',
-      base: 'ibc/0247E0E2C174135AADF4EA172D97FF5C15A64689A403E83603EAE4F0616DD365',
+      base: 'ibc/E317539F148285AAC77E7614101CBE94E20EDF169B233A5E0C867112972F9041',
       name: 'Renzo Restaked ETH',
       display: 'ezeth',
       symbol: 'ezETH',

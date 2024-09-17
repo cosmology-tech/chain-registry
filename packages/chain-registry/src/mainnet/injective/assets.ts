@@ -87,7 +87,7 @@ const info: AssetList = {
           denom: 'usdt',
           exponent: 6
         }],
-      type_asset: 'ics20',
+      type_asset: 'sdk.coin',
       base: 'peggy0xdAC17F958D2ee523a2206206994597C13D831ec7',
       name: 'Tether USDT',
       display: 'usdt',

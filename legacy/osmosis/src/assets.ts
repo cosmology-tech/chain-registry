@@ -16653,7 +16653,7 @@ const assets: AssetList = {
           provider: 'Renzo'
         },
         {
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chain_name: 'ethereum',
             base_denom: '0xbf5495efe5db9ce00f80364c8b423567e58d2110',
@@ -16662,13 +16662,14 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-52',
             path: 'transfer/channel-52/0xbf5495efe5db9ce00f80364c8b423567e58d2110'
-          }
+          },
+          provider: 'Picasso'
         },
         {
           type: 'ibc',
           counterparty: {
             chain_name: 'composable',
-            base_denom: 'ibc/0247E0E2C174135AADF4EA172D97FF5C15A64689A403E83603EAE4F0616DD365',
+            base_denom: 'ibc/E317539F148285AAC77E7614101CBE94E20EDF169B233A5E0C867112972F9041',
             channel_id: 'channel-3'
           },
           chain: {
@@ -16685,7 +16686,7 @@ const assets: AssetList = {
         }, {
           image_sync: {
             chain_name: 'composable',
-            base_denom: 'ibc/0247E0E2C174135AADF4EA172D97FF5C15A64689A403E83603EAE4F0616DD365'
+            base_denom: 'ibc/E317539F148285AAC77E7614101CBE94E20EDF169B233A5E0C867112972F9041'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ezeth.png',
           theme: {
@@ -19745,7 +19746,7 @@ const assets: AssetList = {
     {
       description: 'The Revenue & Governance token of Unstake.fi',
       denom_units: [{
-          denom: 'ibc/690EB0A0CA0DA2DC1E9CF62FB23C935AE5C7E9F57919CF89690521D5D70948A7',
+          denom: 'ibc/F74225B0AFD2F675AF56E9BE3F235486BCDE5C5E09AA88A97AFD2E052ABFE04C',
           exponent: 0,
           aliases: ['factory/kujira1aaudpfr9y23lt9d45hrmskphpdfaq9ajxd3ukh/unstk']
         }, {
@@ -19753,7 +19754,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'ics20',
-      base: 'ibc/690EB0A0CA0DA2DC1E9CF62FB23C935AE5C7E9F57919CF89690521D5D70948A7',
+      base: 'ibc/F74225B0AFD2F675AF56E9BE3F235486BCDE5C5E09AA88A97AFD2E052ABFE04C',
       name: 'Unstake Fi',
       display: 'nstk',
       symbol: 'NSTK',
