@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chain_name: 'xrpl',
   assets: [{
       description: 'Native token of Ripple XRP Ledger',

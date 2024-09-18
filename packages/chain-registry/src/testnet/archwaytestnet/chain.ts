@@ -1,6 +1,6 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chain_name: 'archwaytestnet',
   chain_type: 'cosmos',
   chain_id: 'constantine-3',

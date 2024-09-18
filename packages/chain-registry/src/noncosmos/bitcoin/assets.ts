@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chain_name: 'bitcoin',
   assets: [{
       description: 'Bitcoin, the first and most well-known cryptocurrency, allows decentralized peer-to-peer transactions on a secure blockchain network, serving as "digital gold."',

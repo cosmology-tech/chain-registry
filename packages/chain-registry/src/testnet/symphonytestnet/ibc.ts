@@ -29,7 +29,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'archwaytestnet',
       client_id: '07-tendermint-139',
@@ -57,7 +57,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'cosmoshubtestnet',
       client_id: '07-tendermint-3730',
@@ -85,7 +85,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'junotestnet',
       client_id: '07-tendermint-789',
@@ -113,7 +113,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'osmosistestnet',
       client_id: '07-tendermint-3946',
@@ -143,7 +143,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'stargazetestnet',
       client_id: '07-tendermint-952',

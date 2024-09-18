@@ -1,7 +1,7 @@
 import { IBCInfo } from '@chain-registry/types';
 const info: IBCInfo[] = [
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'archwaytestnet',
       client_id: '07-tendermint-70',
@@ -29,7 +29,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'axelartestnet',
       client_id: '07-tendermint-594',
@@ -87,7 +87,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'axelartestnet',
       client_id: '07-tendermint-1009',
@@ -116,7 +116,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'axelartestnet',
       client_id: '07-tendermint-685',
@@ -146,7 +146,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'axelartestnet',
       client_id: '07-tendermint-213',
@@ -205,7 +205,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'axelartestnet',
       client_id: '07-tendermint-767',

@@ -7,7 +7,7 @@ const info: Chain = {
   network_type: 'mainnet',
   pretty_name: 'BlueChip',
   chain_type: 'cosmos',
-  chain_id: 'bluechip-1',
+  chain_id: 'bluechip-2',
   bech32_prefix: 'bcp',
   daemon_name: 'bluechipd',
   node_home: '$HOME/.bluechip',
@@ -29,7 +29,7 @@ const info: Chain = {
   },
   description: 'Stake to the BlueChip chain, interact with the creator pools, and subscribe through the creator subscription contracts.',
   codebase: {
-    cosmos_sdk_version: '0.46.7',
+    cosmos_sdk_version: '0.47.11',
     cosmwasm_enabled: true
   },
   images: [{

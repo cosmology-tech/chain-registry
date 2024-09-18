@@ -1,7 +1,7 @@
 import { IBCInfo } from '@chain-registry/types';
 const info: IBCInfo[] = [
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'akashtestnet',
       client_id: '07-tendermint-6',
@@ -31,7 +31,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'archwaytestnet',
       client_id: '07-tendermint-121',
@@ -91,7 +91,7 @@ const info: IBCInfo[] = [
     ]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'axelartestnet',
       client_id: '07-tendermint-685',
@@ -121,7 +121,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'celestiatestnet3',
       client_id: '07-tendermint-118',
@@ -150,7 +150,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'chain4energytestnet',
       client_id: '07-tendermint-18',
@@ -180,7 +180,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'composabletestnet',
       client_id: '07-tendermint-23',
@@ -209,7 +209,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'coreumtestnet',
       client_id: '07-tendermint-104',
@@ -238,7 +238,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'cosmoshubtestnet',
       client_id: '07-tendermint-2528',
@@ -268,7 +268,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'doravotatestnet',
       client_id: '07-tendermint-2',
@@ -298,7 +298,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'empowertestnet',
       client_id: '07-tendermint-1',
@@ -327,7 +327,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'entrypointtestnet',
       client_id: '07-tendermint-0',
@@ -357,7 +357,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'impacthubtestnet',
       client_id: '07-tendermint-53',
@@ -387,7 +387,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'injectivetestnet',
       client_id: '07-tendermint-189',
@@ -417,7 +417,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'junotestnet',
       client_id: '07-tendermint-743',
@@ -447,7 +447,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'kimatestnet',
       client_id: '07-tendermint-1',
@@ -477,7 +477,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'kyvetestnet',
       client_id: '07-tendermint-2',
@@ -536,7 +536,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'likecointestnet',
       client_id: '07-tendermint-5',
@@ -566,7 +566,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'mantrachaintestnet',
       client_id: '07-tendermint-5',
@@ -595,7 +595,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'marstestnet',
       client_id: '07-tendermint-33',
@@ -625,7 +625,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'neutrontestnet',
       client_id: '07-tendermint-133',
@@ -655,7 +655,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'nobletestnet',
       client_id: '07-tendermint-42',
@@ -743,7 +743,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'osmosistestnet',
       client_id: '07-tendermint-19',
@@ -773,7 +773,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'osmosistestnet',
       client_id: '07-tendermint-1448',
@@ -803,7 +803,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'osmosistestnet',
       client_id: '07-tendermint-965',
@@ -833,7 +833,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'osmosistestnet',
       client_id: '07-tendermint-1274',
@@ -863,7 +863,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'osmosistestnet',
       client_id: '07-tendermint-3714',
@@ -893,7 +893,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'osmosistestnet',
       client_id: '07-tendermint-3946',

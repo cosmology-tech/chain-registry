@@ -1,7 +1,7 @@
 import { IBCInfo } from '@chain-registry/types';
 const info: IBCInfo[] = [
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'junotestnet',
       client_id: '07-tendermint-170',
@@ -45,7 +45,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'junotestnet',
       client_id: '07-tendermint-743',
@@ -75,7 +75,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'junotestnet',
       client_id: '07-tendermint-135',
@@ -105,7 +105,7 @@ const info: IBCInfo[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'junotestnet',
       client_id: '07-tendermint-789',

@@ -1,6 +1,6 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chain_name: 'chain4energytestnet',
   status: 'live',
   network_type: 'testnet',

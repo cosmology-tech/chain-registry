@@ -1,6 +1,6 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chain_name: 'axelartestnet',
   chain_type: 'cosmos',
   chain_id: 'axelar-testnet-lisbon-3',

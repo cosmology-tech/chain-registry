@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chain_name: 'polkadot',
   assets: [{
       description: 'Polkadot is a multi-chain blockchain platform that enables interoperability between different blockchains, allowing them to share information and security.',

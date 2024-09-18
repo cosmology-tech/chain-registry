@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chain_name: 'nyxtestnet',
   assets: [{
       description: 'NYX Token (NYX) is the Nym Network\'s native staking and governance token.',

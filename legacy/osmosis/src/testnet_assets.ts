@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/types';
 const testnet_assets: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chain_name: 'osmosistestnet',
   assets: [
     {

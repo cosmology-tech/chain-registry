@@ -1,6 +1,6 @@
 import { IBCInfo } from '@chain-registry/types';
 const info: IBCInfo[] = [{
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'kimatestnet',
       client_id: '07-tendermint-1',
