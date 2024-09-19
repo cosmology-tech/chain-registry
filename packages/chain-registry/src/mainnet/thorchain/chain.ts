@@ -7,13 +7,14 @@ const info: Chain = {
   website: 'https://thorchain.org/',
   pretty_name: 'THORChain',
   chain_type: 'cosmos',
-  chain_id: 'thorchain-mainnet-v1',
+  chain_id: 'thorchain-1',
   bech32_prefix: 'thor',
   daemon_name: 'thord',
   node_home: '$HOME/.thornode',
   slip44: 931,
   codebase: {
-
+    cosmos_sdk_version: 'v0.45.16',
+    cosmwasm_enabled: false
   },
   apis: {
     rpc: [],

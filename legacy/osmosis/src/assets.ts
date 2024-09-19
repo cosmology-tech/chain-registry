@@ -18321,8 +18321,20 @@ const assets: AssetList = {
           }
         },
         {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/allSOL_circle.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/allSOL_circle.png',
+          theme: {
+            circle: false,
+            background_color_hex: '#00000000'
+          }
+        },
+        {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/allSOL.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/allSOL.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/allSOL.png',
+          theme: {
+            circle: false,
+            background_color_hex: '#00000000'
+          }
         }
       ]
     },
