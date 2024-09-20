@@ -13,6 +13,7 @@ const info: AssetList = {
           denom: 'stake',
           exponent: 6
         }],
+      type_asset: 'sdk.coin',
       base: 'ustake',
       name: 'Stake',
       display: 'stake',
@@ -39,6 +40,7 @@ const info: AssetList = {
           denom: 'frienzies',
           exponent: 6
         }],
+      type_asset: 'sdk.coin',
       base: 'ufrienzies',
       display: 'frienzies',
       name: 'Frienzies',
@@ -108,6 +110,7 @@ const info: AssetList = {
           denom: 'usdc',
           exponent: 6
         }],
+      type_asset: 'sdk.coin',
       base: 'uusdc',
       display: 'usdc',
       name: 'USDC',
@@ -169,6 +172,42 @@ const info: AssetList = {
         website: 'https://ondo.finance/usdy',
         twitter: 'https://x.com/OndoFinance'
       }
+    },
+    {
+      description: 'EURe is a Euro-backed stablecoin issued by Monerium on Noble.',
+      denom_units: [{
+          denom: 'ueure',
+          exponent: 0
+        }, {
+          denom: 'eure',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ueure',
+      name: 'Monerium EUR emoney',
+      display: 'eure',
+      symbol: 'EURe',
+      traces: [{
+          type: 'additional-mintage',
+          counterparty: {
+            chain_name: 'ethereum',
+            base_denom: '0x3231Cb76718CDeF2155FC47b5286d82e6eDA273f'
+          },
+          provider: 'Monerium'
+        }],
+      images: [{
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0x3231Cb76718CDeF2155FC47b5286d82e6eDA273f'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eure.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eure.svg',
+          theme: {
+            circle: true,
+            primary_color_hex: '#0095D7',
+            background_color_hex: '#FFFFFF'
+          }
+        }]
     }
   ]
 };

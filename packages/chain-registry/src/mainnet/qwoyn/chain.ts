@@ -55,7 +55,7 @@ const info: Chain = {
         provider: 'Staketab archive'
       },
       {
-        address: 'https://qwoyn-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/qwoyn',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -85,7 +85,7 @@ const info: Chain = {
         provider: 'AM Solutions'
       },
       {
-        address: 'https://qwoyn-grpc.lavenderfive.com:443',
+        address: 'qwoyn.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -115,7 +115,7 @@ const info: Chain = {
         provider: 'Staketab archive'
       },
       {
-        address: 'https://qwoyn-api.lavenderfive.com',
+        address: 'https://rest.lavenderfive.com:443/qwoyn',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

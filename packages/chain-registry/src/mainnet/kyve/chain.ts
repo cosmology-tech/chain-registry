@@ -46,7 +46,7 @@ const info: Chain = {
         provider: 'ecostake'
       },
       {
-        address: 'https://kyve-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/kyve',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -96,7 +96,7 @@ const info: Chain = {
         provider: 'kyve'
       },
       {
-        address: 'https://kyve-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/kyve',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -150,7 +150,7 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://kyve-grpc.lavenderfive.com:443',
+        address: 'kyve.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

@@ -61,7 +61,7 @@ const info: Chain = {
         provider: 'BccNodes'
       },
       {
-        address: 'https://nois-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/nois',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -127,7 +127,7 @@ const info: Chain = {
         provider: 'BccNodes'
       },
       {
-        address: 'https://nois-grpc.lavenderfive.com:443',
+        address: 'nois.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -193,7 +193,7 @@ const info: Chain = {
         provider: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀'
       },
       {
-        address: 'https://nois-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/nois',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

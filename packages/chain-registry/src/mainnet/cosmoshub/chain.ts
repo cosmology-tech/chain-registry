@@ -51,7 +51,7 @@ const info: Chain = {
         provider: 'WhisperNode 🤐'
       },
       {
-        address: 'https://cosmoshub-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/cosmoshub',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -193,7 +193,7 @@ const info: Chain = {
         provider: 'Golden Ratio Staking'
       },
       {
-        address: 'https://cosmoshub-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/cosmoshub',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -299,7 +299,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'cosmoshub-grpc.lavenderfive.com:443',
+        address: 'cosmoshub.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

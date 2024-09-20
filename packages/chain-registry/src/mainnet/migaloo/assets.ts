@@ -423,17 +423,14 @@ const info: AssetList = {
           }
         }],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rakoff.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/juris.png'
       },
       images: [{
           image_sync: {
             chain_name: 'terra',
             base_denom: 'cw20:terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rakoff.png',
-          theme: {
-            primary_color_hex: '#191717'
-          }
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/juris.png'
         }]
     },
     {

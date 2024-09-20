@@ -12,6 +12,16 @@ const info: AssetList = {
       display: 'USD',
       name: 'United States Dollar',
       symbol: 'USD'
+    }, {
+      type_asset: 'unknown',
+      denom_units: [{
+          denom: 'EUR',
+          exponent: 0
+        }],
+      base: 'EUR',
+      display: 'EUR',
+      name: 'Euro',
+      symbol: 'EUR'
     }]
 };
 export default info;

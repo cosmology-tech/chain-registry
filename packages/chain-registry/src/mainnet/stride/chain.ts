@@ -142,7 +142,7 @@ const info: Chain = {
         provider: 'Oni Validator ⛩️'
       },
       {
-        address: 'https://stride-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/stride',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -212,7 +212,7 @@ const info: Chain = {
         provider: 'Cosmos Spaces'
       },
       {
-        address: 'https://stride-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/stride',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -278,7 +278,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'stride-grpc.lavenderfive.com:443',
+        address: 'stride.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

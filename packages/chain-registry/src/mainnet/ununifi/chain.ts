@@ -50,11 +50,11 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://ununifi-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/ununifi',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'https://ununifi-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/ununifi',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -76,7 +76,7 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://ununifi-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/ununifi',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -106,7 +106,7 @@ const info: Chain = {
         provider: 'Nodeist'
       },
       {
-        address: 'https://ununifi-grpc.lavenderfive.com:443',
+        address: 'ununifi.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

@@ -27,7 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.16-ics-lsm'
+    cosmos_sdk_version: 'v0.50.9-lsm'
   },
   apis: {
     rpc: [
@@ -88,7 +88,7 @@ const info: Chain = {
   explorers: [{
       kind: 'Mintscan',
       url: 'https://mintscan.io/ics-testnet-provider',
-      tx_page: 'https://mintscan.io/ics-testnet-provider/txs/${txHash}'
+      tx_page: 'https://mintscan.io/ics-testnet-provider/tx/${txHash}'
     }, {
       kind: 'Ping.pub',
       url: 'https://explorer.rs-testnet.polypore.xyz/provider',

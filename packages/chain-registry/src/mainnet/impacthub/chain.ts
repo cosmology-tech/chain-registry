@@ -53,7 +53,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'https://impacthub-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/impacthub',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -87,7 +87,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'https://impacthub-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/impacthub',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -113,7 +113,7 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'impacthub-grpc.lavenderfive.com:443',
+        address: 'impacthub.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       }
     ]

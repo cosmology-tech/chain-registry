@@ -49,7 +49,7 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://sommelier-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/sommelier',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -79,7 +79,7 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://sommelier-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/sommelier',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -101,7 +101,7 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'sommelier-grpc.lavenderfive.com:443',
+        address: 'sommelier.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

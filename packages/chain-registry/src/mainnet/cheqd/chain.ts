@@ -36,7 +36,7 @@ const info: Chain = {
         provider: 'cheqd'
       },
       {
-        address: 'https://cheqd-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/cheqd',
         provider: 'Lavender.Five Nodes'
       },
       {
@@ -82,7 +82,7 @@ const info: Chain = {
         provider: 'cheqd'
       },
       {
-        address: 'https://cheqd-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/cheqd',
         provider: 'Lavender.Five Nodes'
       },
       {
@@ -132,7 +132,7 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'cheqd-grpc.lavenderfive.com:443',
+        address: 'cheqd.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

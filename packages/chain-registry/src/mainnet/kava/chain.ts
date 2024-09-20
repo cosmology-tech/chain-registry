@@ -63,6 +63,10 @@ const info: Chain = {
       {
         address: 'https://kava-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://kava.drpc.org',
+        provider: 'dRPC'
       }
     ],
     rest: [

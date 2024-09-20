@@ -36,7 +36,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://sge-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/sge',
         provider: 'Lavenderfive'
       },
       {
@@ -94,7 +94,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://sge-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/sge',
         provider: 'Lavenderfive'
       },
       {
@@ -152,7 +152,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'sge-grpc.lavenderfive.com:443',
+        address: 'sge.lavenderfive.com:443',
         provider: 'Lavenderfive'
       },
       {

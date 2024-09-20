@@ -49,7 +49,7 @@ const info: Chain = {
         provider: 'ChainTools'
       },
       {
-        address: 'https://firmachain-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/firmachain',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -79,7 +79,7 @@ const info: Chain = {
         provider: 'ChainTools'
       },
       {
-        address: 'https://firmachain-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/firmachain',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -97,7 +97,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'firmachain-grpc.lavenderfive.com:443',
+        address: 'firmachain.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

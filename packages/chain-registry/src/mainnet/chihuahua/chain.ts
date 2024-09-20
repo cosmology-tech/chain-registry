@@ -59,7 +59,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'https://chihuahua-rpc.lavenderfive.com',
+        address: 'https://rpc.lavenderfive.com:443/chihuahua',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -117,7 +117,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://chihuahua-api.lavenderfive.com',
+        address: 'https://rest.lavenderfive.com:443/chihuahua',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -159,7 +159,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'chihuahua-grpc.lavenderfive.com:443',
+        address: 'chihuahua.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

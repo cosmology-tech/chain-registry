@@ -41,7 +41,7 @@ const info: Chain = {
         provider: 'Odin Protocol'
       },
       {
-        address: 'https://odin-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/odin',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -55,7 +55,7 @@ const info: Chain = {
         provider: 'Odin Protocol'
       },
       {
-        address: 'https://odin-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/odin',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -64,7 +64,7 @@ const info: Chain = {
       }
     ],
     grpc: [{
-        address: 'odin-grpc.lavenderfive.com:443',
+        address: 'odin.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       }, {
         address: 'odin-mainnet-grpc.autostake.com:443',

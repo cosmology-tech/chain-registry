@@ -47,7 +47,7 @@ const info: Chain = {
         provider: 'polkachu'
       },
       {
-        address: 'https://gitopia-rpc.lavenderfive.com',
+        address: 'https://rpc.lavenderfive.com:443/gitopia',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -169,7 +169,7 @@ const info: Chain = {
         provider: 'polkachu'
       },
       {
-        address: 'https://gitopia-api.lavenderfive.com',
+        address: 'https://rest.lavenderfive.com:443/gitopia',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -307,7 +307,7 @@ const info: Chain = {
         provider: 'Staketab'
       },
       {
-        address: 'https://gitopia-grpc.lavenderfive.com:443',
+        address: 'gitopia.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

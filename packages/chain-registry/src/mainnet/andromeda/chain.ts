@@ -53,7 +53,7 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://andromeda-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/andromeda',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -107,7 +107,7 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://andromeda-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/andromeda',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -145,7 +145,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'andromeda-grpc.lavenderfive.com:443',
+        address: 'andromeda.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

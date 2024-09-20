@@ -54,7 +54,7 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://celestia-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/celestia',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -172,7 +172,7 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://celestia-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/celestia',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -262,7 +262,7 @@ const info: Chain = {
         provider: 'AutoStake | Delegate for StakeDrops'
       },
       {
-        address: 'https://celestia-grpc.lavenderfive.com:443',
+        address: 'celestia.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

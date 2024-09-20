@@ -159,7 +159,7 @@ const info: Chain = {
         provider: 'ecostake'
       },
       {
-        address: 'https://kujira-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/kujira',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -229,7 +229,7 @@ const info: Chain = {
         provider: 'setten.io'
       },
       {
-        address: 'https://kujira-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/kujira',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -303,7 +303,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'kujira-grpc.lavenderfive.com:443',
+        address: 'kujira.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

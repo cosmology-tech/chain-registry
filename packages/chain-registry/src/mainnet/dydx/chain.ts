@@ -56,7 +56,7 @@ const info: Chain = {
         provider: 'Bware Labs'
       },
       {
-        address: 'https://dydx-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/dydx',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -118,7 +118,7 @@ const info: Chain = {
         provider: 'Kingnodes 👑'
       },
       {
-        address: 'https://dydx-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/dydx',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -188,7 +188,7 @@ const info: Chain = {
         provider: 'Kingnodes 👑'
       },
       {
-        address: 'https://dydx-grpc.lavenderfive.com',
+        address: 'dydx.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

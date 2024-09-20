@@ -54,7 +54,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'https://omniflixhub-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/omniflixhub',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -112,7 +112,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'https://omniflixhub-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/omniflixhub',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -178,7 +178,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'omniflixhub-grpc.lavenderfive.com:443',
+        address: 'omniflixhub.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

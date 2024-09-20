@@ -115,7 +115,7 @@ const info: Chain = {
         provider: 'PRYZM'
       },
       {
-        address: 'https://pryzm-rpc.lavenderfive.com',
+        address: 'https://rpc.lavenderfive.com:443/pryzm',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -129,7 +129,7 @@ const info: Chain = {
         provider: 'PRYZM'
       },
       {
-        address: 'https://pryzm-api.lavenderfive.com',
+        address: 'https://rest.lavenderfive.com:443/pryzm',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -143,7 +143,7 @@ const info: Chain = {
         provider: 'PRYZM'
       },
       {
-        address: 'https://pryzm-grpc.lavenderfive.com',
+        address: 'pryzm.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

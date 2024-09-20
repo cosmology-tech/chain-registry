@@ -30,7 +30,7 @@ const info: Chain = {
     rpc: [],
     rest: [],
     grpc: [{
-        address: 'idep-grpc.lavenderfive.com:443',
+        address: 'idep.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       }]
   },

@@ -59,7 +59,7 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://nibiru-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/nibiru',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -121,7 +121,7 @@ const info: Chain = {
         provider: 'silent'
       },
       {
-        address: 'https://nibiru-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/nibiru',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -183,7 +183,7 @@ const info: Chain = {
         provider: 'silent'
       },
       {
-        address: 'https://nibiru-grpc.lavenderfive.com:443',
+        address: 'nibiru.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

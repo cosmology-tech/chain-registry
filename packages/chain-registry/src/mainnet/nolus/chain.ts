@@ -51,7 +51,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://nolus-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/nolus',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -97,7 +97,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://nolus-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/nolus',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -143,7 +143,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://nolus-grpc.lavenderfive.com:443',
+        address: 'nolus.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

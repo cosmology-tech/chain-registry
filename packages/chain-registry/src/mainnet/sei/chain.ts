@@ -44,7 +44,7 @@ const info: Chain = {
         provider: 'Rhino Stake'
       },
       {
-        address: 'https://sei-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/sei',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -78,7 +78,7 @@ const info: Chain = {
         provider: 'Rhino Stake'
       },
       {
-        address: 'https://sei-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/sei',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -112,7 +112,7 @@ const info: Chain = {
         provider: 'Rhino Stake'
       },
       {
-        address: 'https://sei-grpc.lavenderfive.com:443',
+        address: 'sei.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -146,7 +146,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://sei-jsonrpc.lavenderfive.com',
+        address: 'https://jsonrpc.lavenderfive.com:443/sei',
         provider: 'Lavender.Five Nodes'
       }
     ]

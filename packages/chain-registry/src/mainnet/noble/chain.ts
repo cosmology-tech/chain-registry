@@ -42,21 +42,21 @@ const info: Chain = {
         address: 'https://noble-rpc.polkachu.com',
         provider: 'polkachu'
       }, {
-        address: 'https://noble-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/noble',
         provider: 'Lavender.Five Nodes 🐝'
       }],
     rest: [{
         address: 'https://noble-api.polkachu.com',
         provider: 'polkachu'
       }, {
-        address: 'https://noble-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/noble',
         provider: 'Lavender.Five Nodes 🐝'
       }],
     grpc: [{
         address: 'noble-grpc.polkachu.com:21590',
         provider: 'polkachu'
       }, {
-        address: 'https://noble-grpc.lavenderfive.com:443',
+        address: 'noble.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       }]
   },

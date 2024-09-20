@@ -75,7 +75,7 @@ const info: Chain = {
         provider: 'P2P'
       },
       {
-        address: 'https://neutron-rpc.lavenderfive.com',
+        address: 'https://rpc.lavenderfive.com:443/neutron',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -117,7 +117,7 @@ const info: Chain = {
         provider: 'P2P'
       },
       {
-        address: 'https://neutron-api.lavenderfive.com',
+        address: 'https://rest.lavenderfive.com:443/neutron',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -159,7 +159,7 @@ const info: Chain = {
         provider: 'P2P'
       },
       {
-        address: 'neutron-grpc.lavenderfive.com:443',
+        address: 'neutron.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

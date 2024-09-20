@@ -91,7 +91,7 @@ const info: Chain = {
         provider: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀'
       },
       {
-        address: 'https://archway-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/archway',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -133,10 +133,6 @@ const info: Chain = {
       {
         address: 'https://rpc.archway.stakeup.tech',
         provider: 'StakeUp'
-      },
-      {
-        address: 'https://archway.api.trivium.network:26657',
-        provider: 'TriviumX | Architech'
       },
       {
         address: 'https://archway-rpc.stakeandrelax.net',
@@ -197,7 +193,7 @@ const info: Chain = {
         provider: 'WhisperNode 🤐'
       },
       {
-        address: 'https://archway-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/archway',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -235,10 +231,6 @@ const info: Chain = {
       {
         address: 'https://api.archway.stakeup.tech',
         provider: 'StakeUp'
-      },
-      {
-        address: 'https://archway.api.trivium.network:1317',
-        provider: 'TriviumX | Architech'
       },
       {
         address: 'https://archway-mainnet-archive.allthatnode.com:1317',
@@ -287,7 +279,7 @@ const info: Chain = {
         provider: 'AM Solutions'
       },
       {
-        address: 'archway-grpc.lavenderfive.com:443',
+        address: 'archway.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -333,10 +325,6 @@ const info: Chain = {
       {
         address: 'grpc-archway-mainnet.testnet-pride.com:9096',
         provider: 'TestnetPride'
-      },
-      {
-        address: 'archway.api.trivium.network:9090',
-        provider: 'TriviumX | Architech'
       },
       {
         address: 'archway-grpc.tienthuattoan.ventures:9290',

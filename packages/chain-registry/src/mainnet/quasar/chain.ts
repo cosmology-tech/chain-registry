@@ -62,7 +62,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://quasar-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/quasar',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -116,7 +116,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://quasar-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/quasar',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -170,7 +170,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'https://quasar-grpc.lavenderfive.com:443',
+        address: 'quasar.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

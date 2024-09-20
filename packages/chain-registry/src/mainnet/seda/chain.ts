@@ -54,7 +54,7 @@ const info: Chain = {
         provider: 'Synergy Nodes'
       },
       {
-        address: 'https://seda-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/seda',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -112,7 +112,7 @@ const info: Chain = {
         provider: 'Synergy Nodes'
       },
       {
-        address: 'https://seda-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/seda',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -166,7 +166,7 @@ const info: Chain = {
         provider: 'kjnodes'
       },
       {
-        address: 'https://seda-grpc.lavenderfive.com',
+        address: 'seda.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

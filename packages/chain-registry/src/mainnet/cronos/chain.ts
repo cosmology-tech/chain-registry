@@ -27,13 +27,20 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
   },
   apis: {
-    rpc: [{
+    rpc: [
+      {
         address: 'https://rpc.cronos.org/',
         provider: 'cronos.org'
-      }, {
+      },
+      {
         address: 'https://cronos-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      }],
+      },
+      {
+        address: 'https://cronos.drpc.org',
+        provider: 'dRPC'
+      }
+    ],
     rest: [{
         address: 'https://rest.cronos.org/',
         provider: 'cronos.org'

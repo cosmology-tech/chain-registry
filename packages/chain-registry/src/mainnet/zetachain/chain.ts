@@ -40,7 +40,7 @@ const info: Chain = {
         provider: 'All That Node'
       },
       {
-        address: 'https://zetachain-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/zetachain',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -54,6 +54,10 @@ const info: Chain = {
       {
         address: 'https://zetachain.rpc.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://zeta-chain.drpc.org',
+        provider: 'dRPC'
       }
     ],
     rest: [
@@ -66,7 +70,7 @@ const info: Chain = {
         provider: 'All That Node'
       },
       {
-        address: 'https://zetachain-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/zetachain',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -84,7 +88,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'https://zetachain-grpc.lavenderfive.com:443',
+        address: 'zetachain.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

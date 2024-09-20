@@ -157,16 +157,16 @@ const info: AssetList = {
           }
         }],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.svg'
       },
       images: [{
           image_sync: {
             chain_name: 'archway',
             base_denom: 'aarch'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.svg',
           theme: {
             primary_color_hex: '#fc4c04'
           }

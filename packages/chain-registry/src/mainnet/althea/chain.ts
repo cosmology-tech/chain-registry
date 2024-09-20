@@ -51,7 +51,7 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://althea-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/althea',
         provider: 'Lavender.Five Nodes 🐝'
       }
     ],
@@ -65,12 +65,12 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://althea-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/althea',
         provider: 'Lavender.Five Nodes 🐝'
       }
     ],
     grpc: [{
-        address: 'https://althea-grpc.lavenderfive.com:443',
+        address: 'althea.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       }]
   }

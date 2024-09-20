@@ -43,7 +43,7 @@ const info: Chain = {
         provider: 'ecostake'
       },
       {
-        address: 'https://evmos-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/evmos',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -137,6 +137,10 @@ const info: Chain = {
       {
         address: 'https://rpc.evmos.citizenweb3.com:443',
         provider: 'Citizen Web3'
+      },
+      {
+        address: 'https://evmos.drpc.org',
+        provider: 'dRPC'
       }
     ],
     rest: [
@@ -145,7 +149,7 @@ const info: Chain = {
         provider: 'Blockdaemon'
       },
       {
-        address: 'https://evmos-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/evmos',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -239,7 +243,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'evmos-grpc.lavenderfive.com:443',
+        address: 'evmos.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

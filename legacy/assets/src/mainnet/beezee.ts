@@ -24,13 +24,13 @@ const assets: AssetList = {
       display: 'arch',
       symbol: 'ARCH',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.svg'
       },
       coingecko_id: 'archway',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.svg',
           theme: {
             primary_color_hex: '#fc4c04'
           }
@@ -73,13 +73,13 @@ const assets: AssetList = {
       display: 'arch',
       symbol: 'ARCH',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.svg'
       },
       coingecko_id: 'archway',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.svg',
           theme: {
             primary_color_hex: '#fc4c04'
           }
@@ -110,6 +110,7 @@ const assets: AssetList = {
           denom: 'stake',
           exponent: 6
         }],
+      type_asset: 'sdk.coin',
       base: 'ibc/0CC1485F7DF4F335F6F416C46EDB77B09557EC7E5B7215BED40EB741D45FD6C8',
       name: 'Stake',
       display: 'stake',
@@ -147,6 +148,7 @@ const assets: AssetList = {
           denom: 'frienzies',
           exponent: 6
         }],
+      type_asset: 'sdk.coin',
       base: 'ibc/7B5D410F054FA84CAA574EF31B0C2A4896650DF5194E7CC47E029A9F8C81219B',
       display: 'frienzies',
       name: 'Frienzies',
@@ -314,6 +316,7 @@ const assets: AssetList = {
           denom: 'stake',
           exponent: 6
         }],
+      type_asset: 'sdk.coin',
       base: 'ibc/0CC1485F7DF4F335F6F416C46EDB77B09557EC7E5B7215BED40EB741D45FD6C8',
       name: 'Stake',
       display: 'stake',
@@ -351,6 +354,7 @@ const assets: AssetList = {
           denom: 'frienzies',
           exponent: 6
         }],
+      type_asset: 'sdk.coin',
       base: 'ibc/7B5D410F054FA84CAA574EF31B0C2A4896650DF5194E7CC47E029A9F8C81219B',
       display: 'frienzies',
       name: 'Frienzies',

@@ -45,7 +45,7 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://lumnetwork-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/lumnetwork',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -67,7 +67,7 @@ const info: Chain = {
         provider: 'Lum Foundation'
       },
       {
-        address: 'https://lumnetwork-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/lumnetwork',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -89,7 +89,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'lumnetwork-grpc.lavenderfive.com:443',
+        address: 'lumnetwork.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

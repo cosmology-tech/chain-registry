@@ -54,7 +54,7 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
-        address: 'https://haqq-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/haqq',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -68,6 +68,10 @@ const info: Chain = {
       {
         address: 'https://haqq-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://haqq.drpc.org',
+        provider: 'dRPC'
       }
     ],
     rest: [
@@ -88,7 +92,7 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
-        address: 'https://haqq-api.lavenderfive.com',
+        address: 'https://rest.lavenderfive.com:443/haqq',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -130,7 +134,7 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
-        address: 'https://haqq-grpc.lavenderfive.com',
+        address: 'haqq.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -168,7 +172,7 @@ const info: Chain = {
         provider: 'Allnodes.com ⚡️ Nodes & Staking'
       },
       {
-        address: 'https://haqq-jsonrpc.lavenderfive.com',
+        address: 'https://jsonrpc.lavenderfive.com:443/haqq',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

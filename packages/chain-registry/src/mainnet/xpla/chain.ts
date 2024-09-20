@@ -46,7 +46,7 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://xpla-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/xpla',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -68,7 +68,7 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://xpla-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/xpla',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

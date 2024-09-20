@@ -2027,6 +2027,7 @@ const assets: AssetList = {
           denom: 'stake',
           exponent: 6
         }],
+      type_asset: 'sdk.coin',
       base: 'ibc/BA29D1E62407103ECD8F5032999462C977E221D33B6E2706182A639BCF7C8909',
       name: 'Stake',
       display: 'stake',
@@ -2064,6 +2065,7 @@ const assets: AssetList = {
           denom: 'frienzies',
           exponent: 6
         }],
+      type_asset: 'sdk.coin',
       base: 'ibc/E7ACCD2A1F427753394331E2D7A5E49203FBB022D42FFCA02B8194B4E5893D55',
       display: 'frienzies',
       name: 'Frienzies',
@@ -3004,6 +3006,7 @@ const assets: AssetList = {
           denom: 'stake',
           exponent: 6
         }],
+      type_asset: 'sdk.coin',
       base: 'ibc/BA29D1E62407103ECD8F5032999462C977E221D33B6E2706182A639BCF7C8909',
       name: 'Stake',
       display: 'stake',
@@ -3041,6 +3044,7 @@ const assets: AssetList = {
           denom: 'frienzies',
           exponent: 6
         }],
+      type_asset: 'sdk.coin',
       base: 'ibc/E7ACCD2A1F427753394331E2D7A5E49203FBB022D42FFCA02B8194B4E5893D55',
       display: 'frienzies',
       name: 'Frienzies',

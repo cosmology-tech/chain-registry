@@ -52,7 +52,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://cudos-rpc.lavenderfive.com',
+        address: 'https://rpc.lavenderfive.com:443/cudos',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -78,7 +78,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://cudos-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/cudos',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -96,7 +96,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'cudos-grpc.lavenderfive.com:443',
+        address: 'cudos.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

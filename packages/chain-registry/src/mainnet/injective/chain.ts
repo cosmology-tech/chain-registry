@@ -50,7 +50,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://injective-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/injective',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -112,7 +112,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://injective-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/injective',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -170,7 +170,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'injective-grpc.lavenderfive.com:443',
+        address: 'injective.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

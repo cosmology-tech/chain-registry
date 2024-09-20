@@ -64,7 +64,7 @@ const info: Chain = {
         provider: 'Bro_n_Bro'
       },
       {
-        address: 'https://saga-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/saga',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -98,7 +98,7 @@ const info: Chain = {
         provider: 'Bro_n_Bro'
       },
       {
-        address: 'https://saga-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/saga',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -128,7 +128,7 @@ const info: Chain = {
         provider: 'Bro_n_Bro'
       },
       {
-        address: 'https://saga-grpc.lavenderfive.com:443',
+        address: 'saga.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

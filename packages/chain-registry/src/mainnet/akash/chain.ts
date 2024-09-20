@@ -45,7 +45,7 @@ const info: Chain = {
         provider: 'ecostake'
       },
       {
-        address: 'https://akash-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/akash',
         provider: 'Lavender.Five Nodes'
       },
       {
@@ -115,7 +115,7 @@ const info: Chain = {
         provider: 'ecostake'
       },
       {
-        address: 'https://akash-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/akash',
         provider: 'Lavender.Five Nodes'
       },
       {
@@ -181,7 +181,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'akash-grpc.lavenderfive.com:443',
+        address: 'akash.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

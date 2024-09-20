@@ -311,7 +311,7 @@ const info: Chain = {
         provider: 'switcheo-labs'
       },
       {
-        address: 'https://carbon-rpc.lavenderfive.com',
+        address: 'https://rpc.lavenderfive.com:443/carbon',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -329,7 +329,7 @@ const info: Chain = {
         provider: 'switcheo-labs'
       },
       {
-        address: 'https://carbon-api.lavenderfive.com',
+        address: 'https://rest.lavenderfive.com:443/carbon',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -342,7 +342,7 @@ const info: Chain = {
       }
     ],
     grpc: [{
-        address: 'https://carbon-grpc.lavenderfive.com:443',
+        address: 'carbon.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       }, {
         address: 'carbon-mainnet-grpc.autostake.com:443',

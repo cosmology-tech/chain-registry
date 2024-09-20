@@ -49,7 +49,7 @@ const info: Chain = {
         provider: 'Cogwheel ⚙️'
       },
       {
-        address: 'https://picasso-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/picasso',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -103,7 +103,7 @@ const info: Chain = {
         provider: 'Cogwheel ⚙️'
       },
       {
-        address: 'https://picasso-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/picasso',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -161,7 +161,7 @@ const info: Chain = {
         provider: 'Cogwheel ⚙️'
       },
       {
-        address: 'https://picasso-grpc.lavenderfive.com:443',
+        address: 'picasso.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

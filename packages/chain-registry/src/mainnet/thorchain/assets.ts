@@ -19,7 +19,11 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/thorchain/images/rune.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/thorchain/images/rune.svg'
       },
-      coingecko_id: 'thorchain'
+      coingecko_id: 'thorchain',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/thorchain/images/rune.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/thorchain/images/rune.svg'
+        }]
     }]
 };
 export default info;

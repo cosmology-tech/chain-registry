@@ -4811,7 +4811,8 @@ const info: AssetList = {
           }
         }],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-token.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-token.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-token.svg'
       },
       images: [
         {
@@ -4822,9 +4823,10 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-token.png',
           theme: {
             circle: true,
-            dark_mode: true,
-            primary_color_hex: '#040404'
-          }
+            primary_color_hex: '#000000',
+            background_color_hex: '#FFFFFF'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-token.svg'
         },
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai-white.png',
@@ -9761,16 +9763,16 @@ const info: AssetList = {
           }
         }],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.svg'
       },
       images: [{
           image_sync: {
             chain_name: 'archway',
             base_denom: 'aarch'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.svg',
           theme: {
             primary_color_hex: '#fc4c04'
           }
@@ -17697,17 +17699,14 @@ const info: AssetList = {
           }
         }],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rakoff.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/juris.png'
       },
       images: [{
           image_sync: {
             chain_name: 'terra',
             base_denom: 'cw20:terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rakoff.png',
-          theme: {
-            primary_color_hex: '#191717'
-          }
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/juris.png'
         }]
     },
     {
@@ -18497,8 +18496,8 @@ const info: AssetList = {
           provider: 'Router'
         }],
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdt.rt.svg',
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdt.rt.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdt.rt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdt.rt.svg'
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdt.rt.svg',

@@ -55,7 +55,7 @@ const info: Chain = {
         provider: 'ChainTools'
       },
       {
-        address: 'https://comdex-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/comdex',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -117,7 +117,7 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://comdex-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/comdex',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -183,7 +183,7 @@ const info: Chain = {
         provider: 'Cosmos Spaces'
       },
       {
-        address: 'comdex-grpc.lavenderfive.com:443',
+        address: 'comdex.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

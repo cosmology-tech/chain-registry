@@ -45,7 +45,7 @@ const info: Chain = {
         provider: 'Jackal Labs'
       },
       {
-        address: 'https://jackal-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/jackal',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -123,7 +123,7 @@ const info: Chain = {
         provider: 'Jackal Labs'
       },
       {
-        address: 'https://jackal-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/jackal',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -205,7 +205,7 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       },
       {
-        address: 'jackal-grpc.lavenderfive.com:443',
+        address: 'jackal.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

@@ -57,7 +57,7 @@ const info: Chain = {
         provider: 'ChainTools'
       },
       {
-        address: 'https://kichain-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/kichain',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -103,7 +103,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://kichain-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/kichain',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -133,7 +133,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'kichain-grpc.lavenderfive.com:443',
+        address: 'kichain.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

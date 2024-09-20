@@ -37,7 +37,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://terra2-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/terra2',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -125,7 +125,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'terra2-grpc.lavenderfive.com:443',
+        address: 'terra2.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

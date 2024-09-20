@@ -60,7 +60,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://dymension-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/dymension',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -162,6 +162,10 @@ const info: Chain = {
       {
         address: 'https://rpc.archive.dymension.mainnet.dteam.tech:443',
         provider: 'DTEAM'
+      },
+      {
+        address: 'https://dymension.drpc.org',
+        provider: 'dRPC'
       }
     ],
     rest: [
@@ -182,7 +186,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://dymension-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/dymension',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -304,7 +308,7 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       },
       {
-        address: 'https://dymension-grpc.lavenderfive.com:443',
+        address: 'dymension.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

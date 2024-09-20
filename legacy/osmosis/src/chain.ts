@@ -75,7 +75,7 @@ const chain: Chain = {
         provider: 'WhisperNode 🤐'
       },
       {
-        address: 'https://osmosis-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/osmosis',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -169,6 +169,10 @@ const chain: Chain = {
       {
         address: 'https://osmosis-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://osmosis.drpc.org',
+        provider: 'dRPC'
       }
     ],
     rest: [
@@ -189,7 +193,7 @@ const chain: Chain = {
         provider: 'chainapsis'
       },
       {
-        address: 'https://osmosis-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/osmosis',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -275,7 +279,7 @@ const chain: Chain = {
     ],
     grpc: [
       {
-        address: 'osmosis-grpc.lavenderfive.com:443',
+        address: 'osmosis.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

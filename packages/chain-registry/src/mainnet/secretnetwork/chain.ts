@@ -47,7 +47,7 @@ const info: Chain = {
         provider: 'ANKR'
       },
       {
-        address: 'https://secretnetwork-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/secretnetwork',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -73,7 +73,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://secretnetwork-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/secretnetwork',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -102,7 +102,7 @@ const info: Chain = {
       }
     ],
     grpc: [{
-        address: 'secretnetwork-grpc.lavenderfive.com:443',
+        address: 'secretnetwork.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       }, {
         address: 'secretnetwork-mainnet-grpc.autostake.com:9090',

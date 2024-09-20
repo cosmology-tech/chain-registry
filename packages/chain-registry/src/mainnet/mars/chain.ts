@@ -41,7 +41,7 @@ const info: Chain = {
         provider: 'Delphi Labs'
       },
       {
-        address: 'https://mars-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/mars',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -79,7 +79,7 @@ const info: Chain = {
         provider: 'Delphi Labs'
       },
       {
-        address: 'https://mars-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/mars',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -117,7 +117,7 @@ const info: Chain = {
         provider: 'Delphi Labs'
       },
       {
-        address: 'mars-grpc.lavenderfive.com:443',
+        address: 'mars.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

@@ -66,7 +66,7 @@ const info: Chain = {
         provider: 'TienThuatToan'
       },
       {
-        address: 'https://aura-rpc.lavenderfive.com',
+        address: 'https://rpc.lavenderfive.com:443/aura',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -136,7 +136,7 @@ const info: Chain = {
         provider: 'TienThuatToan'
       },
       {
-        address: 'https://aura-api.lavenderfive.com',
+        address: 'https://rest.lavenderfive.com:443/aura',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -210,7 +210,7 @@ const info: Chain = {
         provider: 'TienThuatToan'
       },
       {
-        address: 'aura-grpc.lavenderfive.com:443',
+        address: 'aura.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

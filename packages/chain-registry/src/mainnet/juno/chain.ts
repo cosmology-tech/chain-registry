@@ -66,7 +66,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://juno-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/juno',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -172,7 +172,7 @@ const info: Chain = {
         provider: 'ecostake'
       },
       {
-        address: 'https://juno-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/juno',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -274,7 +274,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'juno-grpc.lavenderfive.com:443',
+        address: 'juno.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

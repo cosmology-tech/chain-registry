@@ -47,7 +47,7 @@ const info: Chain = {
         provider: 'ecostake'
       },
       {
-        address: 'https://passage-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/passage',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -121,7 +121,7 @@ const info: Chain = {
         provider: 'ecostake'
       },
       {
-        address: 'https://passage-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/passage',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -187,7 +187,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'passage-grpc.lavenderfive.com:443',
+        address: 'passage.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
