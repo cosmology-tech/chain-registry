@@ -63,10 +63,6 @@ const info: Chain = {
         provider: 'Cosmos Spaces'
       },
       {
-        address: 'https://rpc-comdex.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://comdex-mainnet-rpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
       },
@@ -127,10 +123,6 @@ const info: Chain = {
       {
         address: 'https://comdex-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
-      },
-      {
-        address: 'https://lcd-comdex.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://comdex-api.w3coins.io',

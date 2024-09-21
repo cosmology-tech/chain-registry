@@ -70,10 +70,6 @@ const info: Chain = {
         provider: 'polkachu'
       },
       {
-        address: 'https://rpc-quasar.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://quasar-rpc.enigma-validator.com',
         provider: 'Enigma'
       },
@@ -122,10 +118,6 @@ const info: Chain = {
       {
         address: 'https://quasar-api.polkachu.com',
         provider: 'polkachu'
-      },
-      {
-        address: 'https://lcd-quasar.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://api-quasar.cosmos-spaces.cloud',

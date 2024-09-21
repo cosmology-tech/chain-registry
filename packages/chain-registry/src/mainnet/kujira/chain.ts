@@ -143,10 +143,6 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc-kujira.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://rpc.kaiyo.kujira.setten.io',
         provider: 'setten.io'
       },
@@ -220,10 +216,6 @@ const info: Chain = {
       }
     ],
     rest: [
-      {
-        address: 'https://lcd-kujira.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
       {
         address: 'https://lcd.kaiyo.kujira.setten.io',
         provider: 'setten.io'
@@ -329,10 +321,6 @@ const info: Chain = {
       {
         address: 'kujira-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      },
-      {
-        address: 'grpc-kujira.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       }
     ]
   },

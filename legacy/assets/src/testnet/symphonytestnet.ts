@@ -5,14 +5,14 @@ const assets: AssetList = {
     {
       description: 'The native staking and governance token of the Theta testnet version of the Cosmos Hub.',
       denom_units: [{
-          denom: 'ibc/25418646C017D377ADF3202FF1E43590D0DAE3346E594E8D78176A139A928F88',
+          denom: 'ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477',
           exponent: 0,
           aliases: ['uatom']
         }, {
           denom: 'atom',
           exponent: 6
         }],
-      base: 'ibc/25418646C017D377ADF3202FF1E43590D0DAE3346E594E8D78176A139A928F88',
+      base: 'ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477',
       name: 'Cosmos',
       display: 'atom',
       symbol: 'ATOM',
@@ -27,26 +27,26 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4300',
+            channel_id: 'channel-4320',
             base_denom: 'uatom',
             chain_name: 'cosmoshubtestnet'
           },
           chain: {
-            channel_id: 'channel-7'
+            channel_id: 'channel-12'
           }
         }]
     },
     {
       description: 'The native staking and governance token of the Theta testnet version of the Cosmos Hub.',
       denom_units: [{
-          denom: 'ibc/25418646C017D377ADF3202FF1E43590D0DAE3346E594E8D78176A139A928F88',
+          denom: 'ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477',
           exponent: 0,
           aliases: ['uatom']
         }, {
           denom: 'atom',
           exponent: 6
         }],
-      base: 'ibc/25418646C017D377ADF3202FF1E43590D0DAE3346E594E8D78176A139A928F88',
+      base: 'ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477',
       name: 'Cosmos',
       display: 'atom',
       symbol: 'ATOM',
@@ -215,14 +215,14 @@ const assets: AssetList = {
     {
       description: 'The native staking and governance token of the Theta testnet version of the Cosmos Hub.',
       denom_units: [{
-          denom: 'ibc/25418646C017D377ADF3202FF1E43590D0DAE3346E594E8D78176A139A928F88',
+          denom: 'ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477',
           exponent: 0,
           aliases: ['uatom']
         }, {
           denom: 'atom',
           exponent: 6
         }],
-      base: 'ibc/25418646C017D377ADF3202FF1E43590D0DAE3346E594E8D78176A139A928F88',
+      base: 'ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477',
       name: 'Cosmos',
       display: 'atom',
       symbol: 'ATOM',
@@ -237,26 +237,26 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4300',
+            channel_id: 'channel-4320',
             base_denom: 'uatom',
             chain_name: 'cosmoshubtestnet'
           },
           chain: {
-            channel_id: 'channel-7'
+            channel_id: 'channel-12'
           }
         }]
     },
     {
       description: 'The native staking and governance token of the Theta testnet version of the Cosmos Hub.',
       denom_units: [{
-          denom: 'ibc/25418646C017D377ADF3202FF1E43590D0DAE3346E594E8D78176A139A928F88',
+          denom: 'ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477',
           exponent: 0,
           aliases: ['uatom']
         }, {
           denom: 'atom',
           exponent: 6
         }],
-      base: 'ibc/25418646C017D377ADF3202FF1E43590D0DAE3346E594E8D78176A139A928F88',
+      base: 'ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477',
       name: 'Cosmos',
       display: 'atom',
       symbol: 'ATOM',

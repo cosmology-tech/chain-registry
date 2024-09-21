@@ -75,10 +75,6 @@ const info: Chain = {
         provider: 'genznodes'
       },
       {
-        address: 'https://rpc-gitopia.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://gitopia.rpc.liveraven.net',
         provider: 'LiveRaveN'
       },
@@ -199,10 +195,6 @@ const info: Chain = {
       {
         address: 'https://gitopia-api.genznodes.dev',
         provider: 'genznodes'
-      },
-      {
-        address: 'https://lcd-gitopia.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://gitopia.api.liveraven.net',

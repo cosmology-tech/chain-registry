@@ -49,10 +49,6 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://rpc-empower.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://rpc-empowerchain.mzonder.com:443',
         provider: 'MZONDER'
       },
@@ -113,10 +109,6 @@ const info: Chain = {
       {
         address: 'https://empower-api.w3coins.io',
         provider: 'w3coins'
-      },
-      {
-        address: 'https://lcd-empower.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://api-empower.vinjan.xyz:443',

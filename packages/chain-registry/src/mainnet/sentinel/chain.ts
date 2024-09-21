@@ -45,10 +45,6 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'https://rpc-sentinel.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://rpc.sentinel.chaintools.tech/',
         provider: 'ChainTools'
       },
@@ -121,10 +117,6 @@ const info: Chain = {
       {
         address: 'https://api-sentinel-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
-      },
-      {
-        address: 'https://lcd-sentinel.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://api.sentinel.quokkastake.io',

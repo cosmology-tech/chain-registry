@@ -37,28 +37,17 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       },
       {
-        address: 'https://rpc-stratos.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://stratos-rpc.noders.services:443',
         provider: '[NODERS]TEAM'
       }
     ],
-    rest: [
-      {
+    rest: [{
         address: 'https://rest.thestratos.org',
         provider: 'thestratos.org'
-      },
-      {
-        address: 'https://lcd-stratos.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
+      }, {
         address: 'https://stratos-api.noders.services:443',
         provider: '[NODERS]TEAM'
-      }
-    ],
+      }],
     grpc: [
       {
         address: 'https://grpc.thestratos.org',
@@ -116,12 +105,6 @@ const info: Chain = {
       url: 'https://explorer.tcnetwork.io/stratos',
       tx_page: 'https://explorer.tcnetwork.io/stratos/transaction/${txHash}',
       account_page: 'https://explorer.tcnetwork.io/stratos/account/${accountAddress}'
-    },
-    {
-      kind: 'WhisperNode 🤐',
-      url: 'https://mainnet.whispernode.com/stratos',
-      tx_page: 'https://mainnet.whispernode.com/stratos/tx/${txHash}',
-      account_page: 'https://mainnet.whispernode.com/stratos/account/${accountAddress}'
     }
   ],
   images: [{

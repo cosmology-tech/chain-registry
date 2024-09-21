@@ -56,10 +56,6 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'https://rpc-assetmantle.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://rpc.mantle.paranorm.pro:443',
         provider: 'paranorm'
       },
@@ -92,10 +88,6 @@ const info: Chain = {
       {
         address: 'https://assetmantle-api.polkachu.com',
         provider: 'Polkachu'
-      },
-      {
-        address: 'https://lcd-assetmantle.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://api.mantle.paranorm.pro:443',

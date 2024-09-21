@@ -75,10 +75,6 @@ const info: Chain = {
         provider: 'D-stake'
       },
       {
-        address: 'https://rpc-passage.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://passage-mainnet-rpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
       },
@@ -151,10 +147,6 @@ const info: Chain = {
       {
         address: 'https://passage-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
-      },
-      {
-        address: 'https://lcd-passage.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://passage-rest.stakerhouse.com',

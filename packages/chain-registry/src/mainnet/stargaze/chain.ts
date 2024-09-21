@@ -79,10 +79,6 @@ const info: Chain = {
         provider: 'silent'
       },
       {
-        address: 'https://rpc-stargaze.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://stargaze-mainnet-rpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
       },
@@ -163,10 +159,6 @@ const info: Chain = {
       {
         address: 'https://stargaze-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
-      },
-      {
-        address: 'https://lcd-stargaze.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://stargaze-api.ramuchi.tech',

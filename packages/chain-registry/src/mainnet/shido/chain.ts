@@ -59,6 +59,10 @@ const info: Chain = {
       {
         address: 'https://rpc-maverick.mavnode.io',
         provider: 'MavNode'
+      },
+      {
+        address: 'https://rpc.kenseishido.com',
+        provider: 'KENSEI'
       }
     ],
     rest: [
@@ -81,6 +85,10 @@ const info: Chain = {
       {
         address: 'https://api-maverick.mavnode.io',
         provider: 'MavNode'
+      },
+      {
+        address: 'https://api.kenseishido.com',
+        provider: 'KENSEI'
       }
     ],
     grpc: [
@@ -99,6 +107,10 @@ const info: Chain = {
       {
         address: 'https://grpc-maverick.mavnode.io',
         provider: 'MavNode'
+      },
+      {
+        address: 'https://grpc.kenseishido.com',
+        provider: 'KENSEI'
       }
     ],
     "evm-http-jsonrpc": [
@@ -121,6 +133,10 @@ const info: Chain = {
       {
         address: 'https://evm-maverick.mavnode.io',
         provider: 'MavNode'
+      },
+      {
+        address: 'https://evm.kenseishido.com',
+        provider: 'KENSEI'
       }
     ]
   },

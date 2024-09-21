@@ -79,10 +79,6 @@ const info: Chain = {
         provider: 'AM Solutions'
       },
       {
-        address: 'https://rpc-archway.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://archway-rpc.w3coins.io',
         provider: 'w3coins'
       },
@@ -187,10 +183,6 @@ const info: Chain = {
       {
         address: 'https://rest-archway.theamsolutions.info',
         provider: 'AM Solutions'
-      },
-      {
-        address: 'https://lcd-archway.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://rest.lavenderfive.com:443/archway',

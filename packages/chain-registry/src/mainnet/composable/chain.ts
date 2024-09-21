@@ -57,10 +57,6 @@ const info: Chain = {
         provider: 'genznodes'
       },
       {
-        address: 'https://rpc-picasso.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://picasso-rpc.stake-town.com',
         provider: 'StakeTown'
       },
@@ -109,10 +105,6 @@ const info: Chain = {
       {
         address: 'https://composable-api.genznodes.dev',
         provider: 'genznodes'
-      },
-      {
-        address: 'https://api-picasso.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://picasso-api.stake-town.com',
@@ -203,10 +195,6 @@ const info: Chain = {
       {
         address: 'composable.grpc.m.stavr.tech:9907',
         provider: '🔥STAVR🔥'
-      },
-      {
-        address: 'grpc-picasso.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       }
     ]
   },

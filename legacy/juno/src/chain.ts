@@ -46,10 +46,6 @@ const chain: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc-juno.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://rpc-juno.itastakers.com',
         provider: 'itastakers'
       },
@@ -238,10 +234,6 @@ const chain: Chain = {
       {
         address: 'https://juno-api.stake-town.com',
         provider: 'StakeTown'
-      },
-      {
-        address: 'https://lcd-juno.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://juno-api.stakeandrelax.net',
