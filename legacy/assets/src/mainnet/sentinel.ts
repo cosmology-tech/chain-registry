@@ -233,7 +233,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-0',
+            channel_id: 'channel-4',
             base_denom: 'umedas',
             chain_name: 'medasdigital'
           },
@@ -727,7 +727,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-0',
+            channel_id: 'channel-4',
             base_denom: 'umedas',
             chain_name: 'medasdigital'
           },

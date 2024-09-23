@@ -57,6 +57,10 @@ const info: Chain = {
       {
         address: 'https://migaloo-rpc.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
+      },
+      {
+        address: 'https://migaloo-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     rest: [
@@ -79,6 +83,10 @@ const info: Chain = {
       {
         address: 'https://migaloo-api.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
+      },
+      {
+        address: 'https://migaloo-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     grpc: [
@@ -97,8 +105,16 @@ const info: Chain = {
       {
         address: 'https://grpc.whitewhale.nodestake.top',
         provider: 'NodeStake'
+      },
+      {
+        address: 'migaloo-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
-    ]
+    ],
+    "grpc-web": [{
+        address: 'https://migaloo-grpc-web.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
+      }]
   },
   explorers: [
     {

@@ -93,14 +93,14 @@ const assets: AssetList = {
     {
       description: 'Sentinel is a decentralized VPN (dVPN) network that provides private and secure internet access by leveraging blockchain technology.',
       denom_units: [{
-          denom: 'ibc/4C49BE4C3CE3E5FF53784FFF47CAF34D78925B23F3C60416A7A2A0D0A1D7135B',
+          denom: 'ibc/B7489F796F582168A256F44B1B2AB93DD2E868487DA91F28FD2BA967E97F5712',
           exponent: 0,
           aliases: ['udvpn']
         }, {
           denom: 'dvpn',
           exponent: 6
         }],
-      base: 'ibc/4C49BE4C3CE3E5FF53784FFF47CAF34D78925B23F3C60416A7A2A0D0A1D7135B',
+      base: 'ibc/B7489F796F582168A256F44B1B2AB93DD2E868487DA91F28FD2BA967E97F5712',
       name: 'Sentinel',
       display: 'dvpn',
       symbol: 'DVPN',
@@ -128,7 +128,7 @@ const assets: AssetList = {
             chain_name: 'sentinel'
           },
           chain: {
-            channel_id: 'channel-0'
+            channel_id: 'channel-4'
           }
         }]
     },
@@ -223,14 +223,14 @@ const assets: AssetList = {
     {
       description: 'Sentinel is a decentralized VPN (dVPN) network that provides private and secure internet access by leveraging blockchain technology.',
       denom_units: [{
-          denom: 'ibc/4C49BE4C3CE3E5FF53784FFF47CAF34D78925B23F3C60416A7A2A0D0A1D7135B',
+          denom: 'ibc/B7489F796F582168A256F44B1B2AB93DD2E868487DA91F28FD2BA967E97F5712',
           exponent: 0,
           aliases: ['udvpn']
         }, {
           denom: 'dvpn',
           exponent: 6
         }],
-      base: 'ibc/4C49BE4C3CE3E5FF53784FFF47CAF34D78925B23F3C60416A7A2A0D0A1D7135B',
+      base: 'ibc/B7489F796F582168A256F44B1B2AB93DD2E868487DA91F28FD2BA967E97F5712',
       name: 'Sentinel',
       display: 'dvpn',
       symbol: 'DVPN',
@@ -258,7 +258,7 @@ const assets: AssetList = {
             chain_name: 'sentinel'
           },
           chain: {
-            channel_id: 'channel-0'
+            channel_id: 'channel-4'
           }
         }]
     }

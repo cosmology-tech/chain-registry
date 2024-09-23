@@ -42,7 +42,7 @@ const info: IBCInfo[] = [{
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-0',
+          channel_id: 'channel-4',
           port_id: 'transfer'
         },
         chain_2: {

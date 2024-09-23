@@ -5,14 +5,14 @@ const assets: AssetList = {
     {
       description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
       denom_units: [{
-          denom: 'ibc/0E1517E2771CA7C03F2ED3F9BAECCAEADF0BFD79B89679E834933BC0F179AD98',
+          denom: 'ibc/C0E66D1C81D8AAF0E6896E05190FDFBC222367148F86AC3EA679C28327A763CD',
           exponent: 0,
           aliases: ['uaxl']
         }, {
           denom: 'axl',
           exponent: 6
         }],
-      base: 'ibc/0E1517E2771CA7C03F2ED3F9BAECCAEADF0BFD79B89679E834933BC0F179AD98',
+      base: 'ibc/C0E66D1C81D8AAF0E6896E05190FDFBC222367148F86AC3EA679C28327A763CD',
       name: 'Axelar',
       display: 'axl',
       symbol: 'AXL',
@@ -40,7 +40,7 @@ const assets: AssetList = {
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-2'
           }
         }]
     },
@@ -177,14 +177,14 @@ const assets: AssetList = {
     {
       description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
       denom_units: [{
-          denom: 'ibc/0E1517E2771CA7C03F2ED3F9BAECCAEADF0BFD79B89679E834933BC0F179AD98',
+          denom: 'ibc/C0E66D1C81D8AAF0E6896E05190FDFBC222367148F86AC3EA679C28327A763CD',
           exponent: 0,
           aliases: ['uaxl']
         }, {
           denom: 'axl',
           exponent: 6
         }],
-      base: 'ibc/0E1517E2771CA7C03F2ED3F9BAECCAEADF0BFD79B89679E834933BC0F179AD98',
+      base: 'ibc/C0E66D1C81D8AAF0E6896E05190FDFBC222367148F86AC3EA679C28327A763CD',
       name: 'Axelar',
       display: 'axl',
       symbol: 'AXL',
@@ -212,7 +212,7 @@ const assets: AssetList = {
             chain_name: 'axelar'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-2'
           }
         }]
     },

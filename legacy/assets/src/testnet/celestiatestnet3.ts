@@ -37,40 +37,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Neutron chain',
-      denom_units: [{
-          denom: 'ibc/4E41ED8F3DCAEA15F4D6ADC6EDD7C04A676160735C9710B904B7BF53525B56D6',
-          exponent: 0,
-          aliases: ['untrn']
-        }, {
-          denom: 'ntrn',
-          exponent: 6
-        }],
-      base: 'ibc/4E41ED8F3DCAEA15F4D6ADC6EDD7C04A676160735C9710B904B7BF53525B56D6',
-      name: 'Neutron Testnet',
-      display: 'ntrn',
-      symbol: 'NTRN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.svg'
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-160',
-            base_denom: 'untrn',
-            chain_name: 'neutrontestnet'
-          },
-          chain: {
-            channel_id: 'channel-0'
-          }
-        }]
-    },
-    {
       description: 'The native token of Osmosis',
       denom_units: [{
           denom: 'ibc/57358392CD709883E95F5E572EA7BB3D7F8EF6621745F736988BE00D7EA8B611',
@@ -172,40 +138,6 @@ const assets: AssetList = {
             channel_id: 'channel-3152',
             base_denom: 'uatom',
             chain_name: 'cosmoshubtestnet'
-          },
-          chain: {
-            channel_id: 'channel-0'
-          }
-        }]
-    },
-    {
-      description: 'The native token of Neutron chain',
-      denom_units: [{
-          denom: 'ibc/4E41ED8F3DCAEA15F4D6ADC6EDD7C04A676160735C9710B904B7BF53525B56D6',
-          exponent: 0,
-          aliases: ['untrn']
-        }, {
-          denom: 'ntrn',
-          exponent: 6
-        }],
-      base: 'ibc/4E41ED8F3DCAEA15F4D6ADC6EDD7C04A676160735C9710B904B7BF53525B56D6',
-      name: 'Neutron Testnet',
-      display: 'ntrn',
-      symbol: 'NTRN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.svg'
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-160',
-            base_denom: 'untrn',
-            chain_name: 'neutrontestnet'
           },
           chain: {
             channel_id: 'channel-0'
