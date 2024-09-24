@@ -1,6 +1,7 @@
 import { Chain } from '@chain-registry/types';
 
 import * as _ethereum from './ethereum';
+import * as _rootstock from './rootstock';
 import * as _solana from './solana';
 import * as _ton from './ton';
 import * as _tron from './tron';
@@ -21,6 +22,7 @@ import * as _aura1 from './aura1';
 import * as _axelar from './axelar';
 import * as _bandchain from './bandchain';
 import * as _beezee from './beezee';
+import * as _bitbadges from './bitbadges';
 import * as _bitcanna from './bitcanna';
 import * as _bitsong from './bitsong';
 import * as _blockx from './blockx';
@@ -191,6 +193,7 @@ import * as _zetachain from './zetachain';
 
 const chains: Chain[] = [
   _ethereum.chain,
+  _rootstock.chain,
   _solana.chain,
   _ton.chain,
   _tron.chain,
@@ -211,6 +214,7 @@ const chains: Chain[] = [
   _axelar.chain,
   _bandchain.chain,
   _beezee.chain,
+  _bitbadges.chain,
   _bitcanna.chain,
   _bitsong.chain,
   _blockx.chain,

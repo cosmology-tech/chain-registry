@@ -1,4 +1,5 @@
 export * as ethereum from './ethereum';
+export * as rootstock from './rootstock';
 export * as solana from './solana';
 export * as ton from './ton';
 export * as tron from './tron';
@@ -19,6 +20,7 @@ export * as aura1 from './aura1';
 export * as axelar from './axelar';
 export * as bandchain from './bandchain';
 export * as beezee from './beezee';
+export * as bitbadges from './bitbadges';
 export * as bitcanna from './bitcanna';
 export * as bitsong from './bitsong';
 export * as blockx from './blockx';

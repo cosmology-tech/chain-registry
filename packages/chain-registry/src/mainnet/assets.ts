@@ -1,6 +1,7 @@
 import { AssetList } from '@chain-registry/types';
 
 import * as _ethereum from './ethereum';
+import * as _rootstock from './rootstock';
 import * as _solana from './solana';
 import * as _ton from './ton';
 import * as _tron from './tron';
@@ -20,6 +21,7 @@ import * as _aura1 from './aura1';
 import * as _axelar from './axelar';
 import * as _bandchain from './bandchain';
 import * as _beezee from './beezee';
+import * as _bitbadges from './bitbadges';
 import * as _bitcanna from './bitcanna';
 import * as _bitsong from './bitsong';
 import * as _blockx from './blockx';
@@ -190,6 +192,7 @@ import * as _zetachain from './zetachain';
 
 const assets: AssetList[] = [
   _ethereum.assets,
+  _rootstock.assets,
   _solana.assets,
   _ton.assets,
   _tron.assets,
@@ -209,6 +212,7 @@ const assets: AssetList[] = [
   _axelar.assets,
   _bandchain.assets,
   _beezee.assets,
+  _bitbadges.assets,
   _bitcanna.assets,
   _bitsong.assets,
   _blockx.assets,
