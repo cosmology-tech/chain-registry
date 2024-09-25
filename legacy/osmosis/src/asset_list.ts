@@ -13932,43 +13932,6 @@ const asset_list: AssetList = {
         }]
     },
     {
-      description: 'Scorum Power used for internal mechanics and staking',
-      denom_units: [{
-          denom: 'ibc/261BCDCE26F35F787EEB32C09966E52B2F57DB4A207A9A26E601B92F35BBAA12',
-          exponent: 0,
-          aliases: ['nsp']
-        }, {
-          denom: 'sp',
-          exponent: 9
-        }],
-      base: 'ibc/261BCDCE26F35F787EEB32C09966E52B2F57DB4A207A9A26E601B92F35BBAA12',
-      name: 'Scorum Power',
-      display: 'sp',
-      symbol: 'SP',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.svg',
-          theme: {
-            primary_color_hex: '#9421e3'
-          }
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'nsp',
-            chain_name: 'scorum'
-          },
-          chain: {
-            channel_id: 'channel-20100'
-          }
-        }]
-    },
-    {
       description: 'Virtual(non-transferable) coin used to pay gas',
       denom_units: [{
           denom: 'ibc/D59DB4C0B161B04CFD4B83E583AB557752EC7C56D4A170FF75A6D1CF1946F603',
@@ -19244,43 +19207,6 @@ const asset_list: AssetList = {
           counterparty: {
             channel_id: 'channel-1',
             base_denom: 'nscr',
-            chain_name: 'scorum'
-          },
-          chain: {
-            channel_id: 'channel-20100'
-          }
-        }]
-    },
-    {
-      description: 'Scorum Power used for internal mechanics and staking',
-      denom_units: [{
-          denom: 'ibc/261BCDCE26F35F787EEB32C09966E52B2F57DB4A207A9A26E601B92F35BBAA12',
-          exponent: 0,
-          aliases: ['nsp']
-        }, {
-          denom: 'sp',
-          exponent: 9
-        }],
-      base: 'ibc/261BCDCE26F35F787EEB32C09966E52B2F57DB4A207A9A26E601B92F35BBAA12',
-      name: 'Scorum Power',
-      display: 'sp',
-      symbol: 'SP',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.svg',
-          theme: {
-            primary_color_hex: '#9421e3'
-          }
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'nsp',
             chain_name: 'scorum'
           },
           chain: {

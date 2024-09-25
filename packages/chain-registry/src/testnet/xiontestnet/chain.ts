@@ -31,27 +31,48 @@ const info: Chain = {
 
   },
   apis: {
-    rpc: [{
+    rpc: [
+      {
         address: 'https://testnet-burnt-rpc.lavenderfive.com',
         provider: 'Lavender.Five Nodes 🐝'
-      }, {
+      },
+      {
         address: 'https://xion-testnet-rpc.polkachu.com',
         provider: 'polkachu'
-      }],
-    rest: [{
+      },
+      {
+        address: 'https://burnt-testnet-rpc.itrocket.net',
+        provider: 'ITRocket'
+      }
+    ],
+    rest: [
+      {
         address: 'https://testnet-burnt-api.lavenderfive.com',
         provider: 'Lavender.Five Nodes 🐝'
-      }, {
+      },
+      {
         address: 'https://xion-testnet-api.polkachu.com',
         provider: 'polkachu'
-      }],
-    grpc: [{
+      },
+      {
+        address: 'https://burnt-testnet-api.itrocket.net',
+        provider: 'ITRocket'
+      }
+    ],
+    grpc: [
+      {
         address: 'https://testnet-burnt-grpc.lavenderfive.com',
         provider: 'Lavender.Five Nodes 🐝'
-      }, {
+      },
+      {
         address: 'xion-testnet-grpc.polkachu.com:22390',
         provider: 'polkachu'
-      }]
+      },
+      {
+        address: 'burnt-testnet-grpc.itrocket.net:443',
+        provider: 'ITRocket'
+      }
+    ]
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt.png'
@@ -63,6 +84,12 @@ const info: Chain = {
     'xion',
     'burnt',
     'testnet'
-  ]
+  ],
+  explorers: [{
+      kind: 'ITRocket',
+      url: 'https://testnet.itrocket.net/burnt',
+      tx_page: 'https://testnet.itrocket.net/burnt/tx/${txHash}',
+      account_page: 'https://testnet.itrocket.net/burnt/account/${accountAddress}'
+    }]
 };
 export default info;

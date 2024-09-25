@@ -24,7 +24,7 @@ const info: Chain = {
   },
   staking: {
     staking_tokens: [{
-        denom: 'nsp'
+        denom: 'nscr'
       }]
   },
   codebase: {

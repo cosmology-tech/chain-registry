@@ -36,7 +36,8 @@ const info: AssetList = {
       extended_description: 'Chain-key Bitcoin (ckBTC) is an ICRC-2-compliant token that is backed 1:1 by BTC held 100% on the mainnet. ckBTC does not rely on a centralized bridge to facilitate the conversion between BTC and ckBTC, which makes it substantially more secure when compared to other traditional \'wrapped\' tokens.',
       denom_units: [{
           denom: 'uckBTC',
-          exponent: 0
+          exponent: 0,
+          aliases: ['sat']
         }, {
           denom: 'ckBTC',
           exponent: 8
@@ -46,6 +47,14 @@ const info: AssetList = {
       name: 'Chain-key Bitcoin',
       display: 'ckBTC',
       symbol: 'ckBTC',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chain_name: 'bitcoin',
+            base_denom: 'sat'
+          },
+          provider: 'Omnity Network'
+        }],
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/internetcomputer/images/ckbtc.svg',
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/internetcomputer/images/ckbtc.png',

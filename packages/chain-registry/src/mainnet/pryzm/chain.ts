@@ -104,9 +104,9 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.11',
+    cosmos_sdk_version: 'v0.47.13',
     cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.45.0'
+    cosmwasm_version: 'v0.46.0'
   },
   apis: {
     rpc: [

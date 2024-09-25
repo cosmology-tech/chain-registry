@@ -2,8 +2,7 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'scorum',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Scorum',
       extended_description: 'Scorum is a dynamic Layer-1 blockchain powered by Cosmos, designed to redefine the gaming and entertainment industries. Currently, it supports Aviatrix, a compelling crash game that not only leverages blockchain technology for secure and transparent gaming outcomes but also utilizes it for the integration of Non-Fungible Tokens (NFTs). Central to Scorum’s ecosystem is the SCR token, which supports both Aviatrix and future applications set to expand the platform’s offerings. The adoption of the Inter-Blockchain Communication protocol significantly enhances Scorum’s interoperability and scalability, paving the way for its ongoing expansion and the development of innovative, blockchain-powered entertainment solutions.',
       denom_units: [{
@@ -33,33 +32,7 @@ const info: AssetList = {
         website: 'https://scorum.network',
         twitter: 'https://twitter.com/scorum_en'
       }
-    },
-    {
-      description: 'Scorum Power used for internal mechanics and staking',
-      denom_units: [{
-          denom: 'nsp',
-          exponent: 0
-        }, {
-          denom: 'sp',
-          exponent: 9
-        }],
-      base: 'nsp',
-      name: 'Scorum Power',
-      display: 'sp',
-      symbol: 'SP',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/sp.svg',
-          theme: {
-            primary_color_hex: '#9421e3'
-          }
-        }]
-    },
-    {
+    }, {
       description: 'Virtual(non-transferable) coin used to pay gas',
       denom_units: [{
           denom: 'gas',
@@ -80,7 +53,6 @@ const info: AssetList = {
             primary_color_hex: '#555555'
           }
         }]
-    }
-  ]
+    }]
 };
 export default info;
