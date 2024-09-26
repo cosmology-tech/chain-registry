@@ -1064,6 +1064,30 @@ const info: AssetList = {
         website: 'https://www.drop.money/',
         twitter: 'https://x.com/Dropdotmoney'
       }
+    },
+    {
+      description: 'SinGarden token',
+      denom_units: [{
+          denom: 'factory/neutron133xakkrfksq39wxy575unve2nyehg5npx75nph/sin',
+          exponent: 0,
+          aliases: ['uSIN']
+        }, {
+          denom: 'SIN',
+          exponent: 6
+        }],
+      base: 'factory/neutron133xakkrfksq39wxy575unve2nyehg5npx75nph/sin',
+      name: 'SIN',
+      display: 'SIN',
+      symbol: 'SIN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/sin.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/sin.png',
+          theme: {
+            primary_color_hex: '#ebf0f4'
+          }
+        }]
     }
   ]
 };

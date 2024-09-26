@@ -32,6 +32,10 @@ const info: Chain = {
   apis: {
     rpc: [
       {
+        address: 'https://cosmoshubt.tendermintrpc.lava.build:443',
+        provider: 'Lava'
+      },
+      {
         address: 'https://rpc.sentry-01.theta-testnet.polypore.xyz',
         provider: 'Hypha'
       },
@@ -58,6 +62,10 @@ const info: Chain = {
     ],
     rest: [
       {
+        address: 'https://cosmoshubt.lava.build',
+        provider: 'Lava'
+      },
+      {
         address: 'https://rest.sentry-01.theta-testnet.polypore.xyz',
         provider: 'Hypha'
       },
@@ -83,6 +91,10 @@ const info: Chain = {
       }
     ],
     grpc: [
+      {
+        address: 'cosmoshubt.grpc.lava.build',
+        provider: 'Lava'
+      },
       {
         address: 'https://grpc.sentry-01.theta-testnet.polypore.xyz',
         provider: 'Hypha'

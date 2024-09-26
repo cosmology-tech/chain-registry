@@ -56,6 +56,10 @@ const info: Chain = {
         address: 'https://rest.unification.chainmasters.ninja/',
         provider: 'Chainmasters'
       }],
+    wss: [{
+        address: 'wss://wss.unification.io',
+        provider: 'Unification'
+      }],
     grpc: [{
         address: 'grpc.unification.io:443',
         provider: 'Unification'

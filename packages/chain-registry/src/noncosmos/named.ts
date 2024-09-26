@@ -36,6 +36,7 @@ export * as namada from './namada';
 export * as prysm from './prysm';
 export * as avalanchetestnet from './avalanchetestnet';
 export * as binancesmartchaintestnet from './binancesmartchaintestnet';
+export * as bitcointestnet from './bitcointestnet';
 export * as ethereumtestnet from './ethereumtestnet';
 export * as fantomtestnet from './fantomtestnet';
 export * as moonbeamtestnet from './moonbeamtestnet';

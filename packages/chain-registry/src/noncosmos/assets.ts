@@ -38,6 +38,7 @@ import * as _namada from './namada';
 import * as _prysm from './prysm';
 import * as _avalanchetestnet from './avalanchetestnet';
 import * as _binancesmartchaintestnet from './binancesmartchaintestnet';
+import * as _bitcointestnet from './bitcointestnet';
 import * as _ethereumtestnet from './ethereumtestnet';
 import * as _fantomtestnet from './fantomtestnet';
 import * as _moonbeamtestnet from './moonbeamtestnet';
@@ -84,6 +85,7 @@ const assets: AssetList[] = [
   _prysm.assets,
   _avalanchetestnet.assets,
   _binancesmartchaintestnet.assets,
+  _bitcointestnet.assets,
   _ethereumtestnet.assets,
   _fantomtestnet.assets,
   _moonbeamtestnet.assets,

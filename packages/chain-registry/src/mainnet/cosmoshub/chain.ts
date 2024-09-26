@@ -39,6 +39,10 @@ const info: Chain = {
   apis: {
     rpc: [
       {
+        address: 'https://cosmoshub.tendermintrpc.lava.build:443',
+        provider: 'Lava'
+      },
+      {
         address: 'https://cosmos-rpc.quickapi.com:443',
         provider: 'Chainlayer'
       },
@@ -185,6 +189,10 @@ const info: Chain = {
     ],
     rest: [
       {
+        address: 'https://cosmoshub.lava.build:443',
+        provider: 'Lava'
+      },
+      {
         address: 'https://cosmos-lcd.quickapi.com:443',
         provider: 'Chainlayer'
       },
@@ -298,6 +306,10 @@ const info: Chain = {
       }
     ],
     grpc: [
+      {
+        address: 'cosmoshub.grpc.lava.build',
+        provider: 'Lava'
+      },
       {
         address: 'cosmoshub.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'

@@ -50,6 +50,10 @@ const info: Chain = {
         address: 'https://rest-testnet.unification.io',
         provider: 'Unification'
       }],
+    wss: [{
+        address: 'wss://wss-testnet.unification.io',
+        provider: 'Unification'
+      }],
     grpc: [{
         address: 'grpc-testnet.unification.io:443',
         provider: 'Unification'
