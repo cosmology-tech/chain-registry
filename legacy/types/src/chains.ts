@@ -1,6 +1,7 @@
 export interface Chain {
   $schema?: string;
   chain_name: string;
+  chain_type: 'cosmos' | 'eip155' | 'bip122' | 'polkadot' | 'solana' | 'algorand' | 'arweave' | 'ergo' | 'fil' | 'hedera' | 'monero' | 'reef' | 'stacks' | 'starknet' | 'stellar' | 'tezos' | 'vechain' | 'waves' | 'xrpl' | 'unknown';
   pre_fork_chain_name?: string;
   status: string;
   description?: string;
