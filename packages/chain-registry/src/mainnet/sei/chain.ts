@@ -28,9 +28,9 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'sei-cosmos v0.3.31',
+    cosmos_sdk_version: 'sei-cosmos v0.3.35',
     cosmwasm_enabled: true,
-    cosmwasm_version: 'sei-wasmd v0.2.3'
+    cosmwasm_version: 'sei-wasmd v0.2.4'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.png',

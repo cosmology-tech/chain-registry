@@ -52,6 +52,10 @@ const info: Chain = {
       {
         address: 'https://selfchain-mainnet.rpc.stakevillage.net:443',
         provider: 'Stake Village'
+      },
+      {
+        address: 'https://selfchain-mainnet-rpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
     rest: [
@@ -78,6 +82,10 @@ const info: Chain = {
       {
         address: 'https://selfchain-mainnet.api.stakevillage.net',
         provider: 'Stake Village'
+      },
+      {
+        address: 'https://selfchain-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
     grpc: [
@@ -92,6 +100,10 @@ const info: Chain = {
       {
         address: 'selfchain-mainnet.grpc.stakevillage.net:443',
         provider: 'Stake Village'
+      },
+      {
+        address: 'selfchain-mainnet-grpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ]
   },
