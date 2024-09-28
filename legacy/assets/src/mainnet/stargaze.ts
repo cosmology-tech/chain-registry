@@ -739,6 +739,57 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Lava Network is a modular data network designed to provide fast, reliable, and scalable access to blockchain data for developers and users.',
+      denom_units: [{
+          denom: 'ibc/CB6659DA57AED78D6399A5FAEA62A8D648A63BD4AD78F2F74C49872D6A1F0898',
+          exponent: 0,
+          aliases: ['ulava']
+        }, {
+          denom: 'lava',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/CB6659DA57AED78D6399A5FAEA62A8D648A63BD4AD78F2F74C49872D6A1F0898',
+      name: 'Lava',
+      coingecko_id: 'lava-network',
+      display: 'lava',
+      symbol: 'LAVA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lava/images/lava.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lava/images/lava.png',
+          theme: {
+            primary_color_hex: '#6f043e'
+          }
+        }],
+      keywords: [
+        'modular',
+        'data',
+        'data access',
+        'rpc',
+        'staking',
+        'dual staking',
+        'indexing',
+        'incentivized public rpc'
+      ],
+      socials: {
+        website: 'https://lavanet.xyz',
+        twitter: 'https://twitter.com/lavanetxyz'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-7',
+            base_denom: 'ulava',
+            chain_name: 'lava'
+          },
+          chain: {
+            channel_id: 'channel-391'
+          }
+        }]
+    },
+    {
       description: 'Migaloo is a cosmwasm-powered, permissionless blockchain designed to build decentralized applications with a focus on interchain liquidity solutions.',
       denom_units: [{
           denom: 'ibc/D7977B210F7506F8C3CEA70E255E9F12068E8B111CDF13261CEE310496D98133',
@@ -2034,6 +2085,57 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-49'
+          }
+        }]
+    },
+    {
+      description: 'Lava Network is a modular data network designed to provide fast, reliable, and scalable access to blockchain data for developers and users.',
+      denom_units: [{
+          denom: 'ibc/CB6659DA57AED78D6399A5FAEA62A8D648A63BD4AD78F2F74C49872D6A1F0898',
+          exponent: 0,
+          aliases: ['ulava']
+        }, {
+          denom: 'lava',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/CB6659DA57AED78D6399A5FAEA62A8D648A63BD4AD78F2F74C49872D6A1F0898',
+      name: 'Lava',
+      coingecko_id: 'lava-network',
+      display: 'lava',
+      symbol: 'LAVA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lava/images/lava.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lava/images/lava.png',
+          theme: {
+            primary_color_hex: '#6f043e'
+          }
+        }],
+      keywords: [
+        'modular',
+        'data',
+        'data access',
+        'rpc',
+        'staking',
+        'dual staking',
+        'indexing',
+        'incentivized public rpc'
+      ],
+      socials: {
+        website: 'https://lavanet.xyz',
+        twitter: 'https://twitter.com/lavanetxyz'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-7',
+            base_denom: 'ulava',
+            chain_name: 'lava'
+          },
+          chain: {
+            channel_id: 'channel-391'
           }
         }]
     },

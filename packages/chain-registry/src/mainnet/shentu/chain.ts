@@ -4,7 +4,7 @@ const info: Chain = {
   chain_name: 'shentu',
   status: 'live',
   network_type: 'mainnet',
-  website: 'https://www.shentu.technology/',
+  website: 'https://www.shentu.org/',
   pretty_name: 'Shentu',
   chain_type: 'cosmos',
   chain_id: 'shentu-2.2',
@@ -36,7 +36,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://shenturpc.noopsbycertik.com/',
+        address: 'https://rpc.shentu.org:443',
         provider: 'Shentu'
       },
       {
@@ -74,7 +74,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://rest.noopsbycertik.com/',
+        address: 'https://rest.shentu.org/',
         provider: 'Shentu'
       },
       {
@@ -115,6 +115,10 @@ const info: Chain = {
       }
     ],
     grpc: [
+      {
+        address: 'grpc.shentu.org:443',
+        provider: 'Shentu'
+      },
       {
         address: 'shentu-grpc.polkachu.com:14090',
         provider: 'Polkachu'
@@ -166,8 +170,8 @@ const info: Chain = {
     },
     {
       kind: 'Shentu Explorer',
-      url: 'https://explorer.shentu.technology/?net=shentu-2.2',
-      tx_page: 'https://explorer.shentu.technology/transactions/${txHash}?net=shentu-2.2'
+      url: 'https://explorer.shentu.org/?chain=shentu-2.2',
+      tx_page: 'https://explorer.shentu.org/transactions/${txHash}?chain=shentu-2.2'
     },
     {
       kind: 'ping.pub',

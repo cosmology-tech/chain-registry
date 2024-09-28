@@ -90,6 +90,7 @@ export * as seitestnet2 from './seitestnet2';
 export * as selfchaindevnet from './selfchaindevnet';
 export * as sgetestnet from './sgetestnet';
 export * as sgetestnet4 from './sgetestnet4';
+export * as shentutestnet from './shentutestnet';
 export * as sixtestnet from './sixtestnet';
 export * as soarchaintestnet from './soarchaintestnet';
 export * as sourcetestnet from './sourcetestnet';
