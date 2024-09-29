@@ -107,6 +107,10 @@ const info: Chain = {
       {
         address: 'https://rpc-sentinel.chainvibes.com:443',
         provider: 'chainvibes'
+      },
+      {
+        address: 'https://sentinel-rpc.ibs.team:443',
+        provider: 'Inter Blockchain Services'
       }
     ],
     rest: [
@@ -173,6 +177,10 @@ const info: Chain = {
       {
         address: 'https://api-sentinel.chainvibes.com:443',
         provider: 'chainvibes'
+      },
+      {
+        address: 'https://sentinel-api.ibs.team:443',
+        provider: 'Inter Blockchain Services'
       }
     ],
     grpc: [

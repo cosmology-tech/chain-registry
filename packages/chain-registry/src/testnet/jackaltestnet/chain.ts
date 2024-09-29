@@ -52,8 +52,8 @@ const info: Chain = {
       account_page: 'https://explorer.stavr.tech/Jackal-Testnet/account/${accountAddress}'
     }, {
       kind: 'ping.pub',
-      url: 'https://ping.pub/jackal',
-      tx_page: 'https://ping.pub/jackal/tx/${txHash}'
+      url: 'https://testnet.ping.pub/jackal',
+      tx_page: 'https://testnet.ping.pub/jackal/tx/${txHash}'
     }]
 };
 export default info;

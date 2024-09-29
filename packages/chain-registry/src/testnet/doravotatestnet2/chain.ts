@@ -5,7 +5,7 @@ const info: Chain = {
   chain_type: 'cosmos',
   chain_id: 'vota-vk',
   pretty_name: 'Dora Vota Incentive Testnet',
-  status: 'live',
+  status: 'killed',
   network_type: 'testnet',
   bech32_prefix: 'dora',
   daemon_name: 'dorad',

@@ -12,6 +12,25 @@ const info: Chain = {
   node_home: '$HOME/.blockxd',
   daemon_name: 'blockxd',
   key_algos: ['ethsecp256k1'],
+  apis: {
+    rpc: [{
+        address: 'https://rpc-blockx.nodeist.net',
+        provider: 'Nodeist'
+      }],
+    rest: [{
+        address: 'https://api-blockx.nodeist.net',
+        provider: 'Nodeist'
+      }]
+  },
+  explorers: [{
+      kind: 'ping.pub',
+      url: 'https://ping.pub/blockx',
+      tx_page: 'https://ping.pub/blockx/tx/${txHash}'
+    }, {
+      kind: 'Nodeist Explorer',
+      url: 'https://explorer.ist/blockx/',
+      tx_page: 'https://explorer.ist/blockx/tx/${txHash}'
+    }],
   staking: {
     staking_tokens: [{
         denom: 'abcx'

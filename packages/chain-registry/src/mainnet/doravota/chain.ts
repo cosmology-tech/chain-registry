@@ -42,6 +42,10 @@ const info: Chain = {
       {
         address: 'https://dora-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://doravota-mainnet-rpc.itrocket.net:443',
+        provider: 'ITRocket'
       }
     ],
     rest: [
@@ -56,24 +60,48 @@ const info: Chain = {
       {
         address: 'https://dora-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://doravota-mainnet-api.itrocket.net',
+        provider: 'ITRocket'
       }
     ],
-    grpc: [{
+    grpc: [
+      {
         address: 'vota-grpc.dorafactory.org:443',
         provider: 'dorafactory'
-      }, {
+      },
+      {
         address: 'dora-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      }]
+      },
+      {
+        address: 'doravota-mainnet-grpc.itrocket.net:443',
+        provider: 'ITRocket'
+      }
+    ]
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'Dora Vota Ping Pub',
       url: 'https://vota-explorer.dorafactory.org',
       tx_page: 'https://vota-explorer.dorafactory.org/doravota/tx/${txHash}'
-    }, {
+    },
+    {
       kind: 'lesnik | UTSA Ping Pub',
       url: 'https://exp.utsa.tech/dora/staking',
       tx_page: 'https://exp.utsa.tech/dora/tx/${txHash}'
-    }]
+    },
+    {
+      kind: 'ITRocket Ping Pub',
+      url: 'https://mainnet.itrocket.net/doravota/staking',
+      tx_page: 'https://mainnet.itrocket.net/doravota/tx/${txHash}'
+    },
+    {
+      kind: 'Explorers',
+      url: 'https://dora.explorers.guru',
+      tx_page: 'https://dora.explorers.guru/transaction/${txHash}'
+    }
+  ]
 };
 export default info;

@@ -15372,7 +15372,12 @@ const assets: AssetList = {
           theme: {
             primary_color_hex: '#e7754f'
           }
-        }]
+        }],
+      keywords: ['memecoin'],
+      socials: {
+        website: 'https://bernesechain.github.io',
+        twitter: 'https://twitter.com/bernesechain'
+      }
     },
     {
       description: 'The native token of Ethereum, bridged via IBC.',
