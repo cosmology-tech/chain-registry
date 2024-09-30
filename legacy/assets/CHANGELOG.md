@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.64.107 (2024-09-30)
+
+**Note:** Version bump only for package @chain-registry/assets
+
+
+
+
+
 ## [1.64.106](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/assets@1.64.105...@chain-registry/assets@1.64.106) (2024-09-30)
 
 **Note:** Version bump only for package @chain-registry/assets
