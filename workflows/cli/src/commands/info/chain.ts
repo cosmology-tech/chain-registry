@@ -26,7 +26,6 @@ export function displayChain(chain: Chain): void {
     console.log(chalk.bold(`Codebase:`));
     console.log(`  Git Repo: ${chain.codebase.git_repo}`);
     console.log(`  Recommended Version: ${chain.codebase.recommended_version}`);
-    console.log(`  Go Version: ${chain.codebase.go_version}`);
   }
 
   if (chain.fees) {
