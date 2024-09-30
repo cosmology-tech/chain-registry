@@ -36,7 +36,7 @@ jobs:
           yarn symlink
 
       - name: Test @chain-registry/keplr 🔍
-        run: cd packages/keplr && yarn test
+        run: cd legacy/keplr && yarn test
       
       - name: Legacy Test @chain-registry/cosmostation 🔍
         run: cd legacy/cosmostation && yarn test
