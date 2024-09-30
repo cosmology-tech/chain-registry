@@ -1,4 +1,4 @@
-import { Asset,AssetList, IBCChannelInfo, IBCInfo } from '@chain-registry/types';
+import { Asset, AssetList, ChannelInfo, IBCInfo } from '@chain-registry/types';
 import { sha256 } from 'sha.js';
 
 import { getNativeAssets } from './utils';
@@ -89,7 +89,7 @@ export const getIbcAssetPath = (
   counterparty: string,
   assets: AssetList[],
   base: string
-): IBCChannelInfo[] => {
+): ChannelInfo[] => {
   const ibcInfo = getIbcInfo(ibc, chain, counterparty);
   if (!ibcInfo) {
     return [];
@@ -102,7 +102,7 @@ export const getIbcAssetPath = (
   if (!channel) {
     return [];
   }
-  let channelInfo: IBCChannelInfo;
+  let channelInfo: ChannelInfo;
   if (ibcInfo.chain_1.chain_name === chain) {
     channelInfo = channel.chain_1;
   } else {

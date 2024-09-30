@@ -1,9 +1,9 @@
-import { Asset, AssetDenomUnit, AssetList, Chain } from '@chain-registry/types';
+import { Asset, AssetList, Chain, DenomUnit } from '@chain-registry/types';
 
 import { customFind } from './utils';
 
-export type Denom = AssetDenomUnit['denom'];
-export type Exponent = AssetDenomUnit['exponent'];
+export type Denom = DenomUnit['denom'];
+export type Exponent = DenomUnit['exponent'];
 
 const getAssetByKeyValue = (
   assets: AssetList[],
