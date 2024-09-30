@@ -174,7 +174,7 @@ A Client for `chain-registry` that allows you to dynamically fetch data.
 
 Types for `chain-registry`.
 
-#### [@chain-registry/keplr](packages/keplr)
+#### [@chain-registry/keplr](legacy/keplr)
 
 Keplr integration for the chain-registry returning keplr's `ChainInfo` type from `@chain-registry/types` `Chain` type.
 
