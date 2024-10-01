@@ -4253,7 +4253,7 @@ const assets: AssetList = {
           }
         }],
       socials: {
-        webiste: 'https://realio.network/',
+        website: 'https://realio.network/',
         twitter: 'https://x.com/realio_network'
       },
       traces: [{
@@ -5419,7 +5419,7 @@ const assets: AssetList = {
           }
         }],
       socials: {
-        webiste: 'https://realio.network/',
+        website: 'https://realio.network/',
         twitter: 'https://x.com/realio_network'
       },
       traces: [{
