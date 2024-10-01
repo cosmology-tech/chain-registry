@@ -1535,7 +1535,7 @@ const info: AssetList = {
           }
         }],
       socials: {
-        webiste: 'https://monerium.com/',
+        website: 'https://monerium.com/',
         twitter: 'https://x.com/monerium'
       }
     }
