@@ -1,9 +1,9 @@
-import { AssetList } from './assets';
-import { Chain } from './chains';
-import { IBCInfo } from './ibc';
+import { AssetList } from './assetlist.schema';
+import { Chain } from './chain.schema';
+import { IBCData } from './ibc_data.schema';
 
 export interface ChainRegistry {
   assetLists: AssetList[];
   chains: Chain[];
-  ibcData: IBCInfo[];
+  ibcData: IBCData[];
 }
