@@ -90,6 +90,7 @@ import * as _joltify from './joltify';
 import * as _juno from './juno';
 import * as _kava from './kava';
 import * as _kichain from './kichain';
+import * as _kimanetwork from './kimanetwork';
 import * as _konstellation from './konstellation';
 import * as _kujira from './kujira';
 import * as _kyve from './kyve';
@@ -282,6 +283,7 @@ const chains: Chain[] = [
   _juno.chain,
   _kava.chain,
   _kichain.chain,
+  _kimanetwork.chain,
   _konstellation.chain,
   _kujira.chain,
   _kyve.chain,

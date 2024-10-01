@@ -88,6 +88,7 @@ export * as joltify from './joltify';
 export * as juno from './juno';
 export * as kava from './kava';
 export * as kichain from './kichain';
+export * as kimanetwork from './kimanetwork';
 export * as konstellation from './konstellation';
 export * as kujira from './kujira';
 export * as kyve from './kyve';

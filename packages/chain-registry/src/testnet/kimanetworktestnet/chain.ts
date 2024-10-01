@@ -1,10 +1,11 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'kimatestnet',
+  chain_name: 'kimanetworktestnet',
   status: 'live',
+  website: 'https://www.kima.network/',
   network_type: 'testnet',
-  pretty_name: 'Kima',
+  pretty_name: 'Kima Network Testnet',
   chain_type: 'cosmos',
   chain_id: 'kima_testnet',
   bech32_prefix: 'kima',
@@ -27,15 +28,15 @@ const info: Chain = {
   apis: {
     rpc: [{
         address: 'https://rpc-testnet.kima.finance/',
-        provider: 'kima'
+        provider: 'Kima Network'
       }],
     rest: [{
         address: 'https://api-testnet.kima.finance',
-        provider: 'kima'
+        provider: 'Kima Network'
       }]
   },
   explorers: [{
-      kind: 'kima',
+      kind: 'Kima Network',
       url: 'https://explorer-testnet.kima.finance/',
       tx_page: 'https://explorer-testnet.kima.finance/transactions/${txHash}'
     }]

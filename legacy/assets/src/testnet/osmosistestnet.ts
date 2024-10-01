@@ -422,40 +422,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Kima Chain',
-      denom_units: [{
-          denom: 'ibc/F3BE982F8F56E599A71939F174345C470D7C1F9D443F1822EF3DEA53783D2551',
-          exponent: 0,
-          aliases: ['uKIMA']
-        }, {
-          denom: 'KIMA',
-          exponent: 6
-        }],
-      base: 'ibc/F3BE982F8F56E599A71939F174345C470D7C1F9D443F1822EF3DEA53783D2551',
-      name: 'KIMA',
-      display: 'KIMA',
-      symbol: 'KIMA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/kimatestnet/images/kima.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/kimatestnet/images/kima.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/kimatestnet/images/kima.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/kimatestnet/images/kima.svg'
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'uKIMA',
-            chain_name: 'kimatestnet'
-          },
-          chain: {
-            channel_id: 'channel-8867'
-          }
-        }]
-    },
-    {
       description: 'The native token of Lava',
       denom_units: [{
           denom: 'ibc/6E2853D2B0D521D6CD05CFD8597251AD5CC8E3B4141701311679944753A4A03F',
@@ -1126,40 +1092,6 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-5498'
-          }
-        }]
-    },
-    {
-      description: 'The native token of Kima Chain',
-      denom_units: [{
-          denom: 'ibc/F3BE982F8F56E599A71939F174345C470D7C1F9D443F1822EF3DEA53783D2551',
-          exponent: 0,
-          aliases: ['uKIMA']
-        }, {
-          denom: 'KIMA',
-          exponent: 6
-        }],
-      base: 'ibc/F3BE982F8F56E599A71939F174345C470D7C1F9D443F1822EF3DEA53783D2551',
-      name: 'KIMA',
-      display: 'KIMA',
-      symbol: 'KIMA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/kimatestnet/images/kima.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/kimatestnet/images/kima.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/kimatestnet/images/kima.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/kimatestnet/images/kima.svg'
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'uKIMA',
-            chain_name: 'kimatestnet'
-          },
-          chain: {
-            channel_id: 'channel-8867'
           }
         }]
     },

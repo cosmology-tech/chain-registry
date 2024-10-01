@@ -3868,6 +3868,48 @@ const asset_list: AssetList = {
         }]
     },
     {
+      description: 'Kima is an asset-agnostic interoperability infrastructure that connects blockchain networks and legacy financial systems, enabling secure, scalable cross-chain transactions and seamless communication across ecosystems.',
+      denom_units: [{
+          denom: 'ibc/A6712952E566B8A9F29D0A533F043C3CE3CF9870B01A2180E390133119C14A71',
+          exponent: 0,
+          aliases: ['uKIMA']
+        }, {
+          denom: 'KIMA',
+          exponent: 6
+        }],
+      base: 'ibc/A6712952E566B8A9F29D0A533F043C3CE3CF9870B01A2180E390133119C14A71',
+      name: 'KIMA',
+      display: 'KIMA',
+      symbol: 'KIMA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kimanetwork/images/kima.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kimanetwork/images/kima.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kimanetwork/images/kima.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kimanetwork/images/kima.svg'
+        }],
+      socials: {
+        github: 'https://github.com/kima-finance',
+        linkedin: 'https://www.linkedin.com/company/kimanetwork/',
+        medium: 'https://medium.com/@kima_finance',
+        telegram: 'https://t.me/kimanetwork',
+        twitter: 'https://x.com/KimaNetwork',
+        website: 'https://www.kima.network/'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'uKIMA',
+            chain_name: 'kimanetwork'
+          },
+          chain: {
+            channel_id: 'channel-83350'
+          }
+        }]
+    },
+    {
       description: 'The native token of Konstellation Network',
       denom_units: [{
           denom: 'ibc/346786EA82F41FE55FAD14BF69AD8BA9B36985406E43F3CB23E6C45A285A9593',
@@ -9180,6 +9222,48 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-77'
+          }
+        }]
+    },
+    {
+      description: 'Kima is an asset-agnostic interoperability infrastructure that connects blockchain networks and legacy financial systems, enabling secure, scalable cross-chain transactions and seamless communication across ecosystems.',
+      denom_units: [{
+          denom: 'ibc/A6712952E566B8A9F29D0A533F043C3CE3CF9870B01A2180E390133119C14A71',
+          exponent: 0,
+          aliases: ['uKIMA']
+        }, {
+          denom: 'KIMA',
+          exponent: 6
+        }],
+      base: 'ibc/A6712952E566B8A9F29D0A533F043C3CE3CF9870B01A2180E390133119C14A71',
+      name: 'KIMA',
+      display: 'KIMA',
+      symbol: 'KIMA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kimanetwork/images/kima.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kimanetwork/images/kima.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kimanetwork/images/kima.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kimanetwork/images/kima.svg'
+        }],
+      socials: {
+        github: 'https://github.com/kima-finance',
+        linkedin: 'https://www.linkedin.com/company/kimanetwork/',
+        medium: 'https://medium.com/@kima_finance',
+        telegram: 'https://t.me/kimanetwork',
+        twitter: 'https://x.com/KimaNetwork',
+        website: 'https://www.kima.network/'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'uKIMA',
+            chain_name: 'kimanetwork'
+          },
+          chain: {
+            channel_id: 'channel-83350'
           }
         }]
     },

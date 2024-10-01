@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/types';
 const assets: AssetList = {
-  chain_name: 'kimatestnet',
+  chain_name: 'kimanetworktestnet',
   assets: [
     {
       description: 'The native token of Osmosis',

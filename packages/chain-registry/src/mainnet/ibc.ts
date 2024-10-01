@@ -68,6 +68,7 @@ import * as _joltify from './joltify';
 import * as _juno from './juno';
 import * as _kava from './kava';
 import * as _kichain from './kichain';
+import * as _kimanetwork from './kimanetwork';
 import * as _konstellation from './konstellation';
 import * as _kujira from './kujira';
 import * as _kyve from './kyve';
@@ -213,6 +214,7 @@ const ibc: IBCInfo[] = [
   ..._juno.ibc,
   ..._kava.ibc,
   ..._kichain.ibc,
+  ..._kimanetwork.ibc,
   ..._konstellation.ibc,
   ..._kujira.ibc,
   ..._kyve.ibc,
