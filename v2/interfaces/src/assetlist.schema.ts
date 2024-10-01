@@ -56,7 +56,8 @@ export interface IbcTransition {
   };
   chain: {
     channel_id: string;
-    path: string;
+    // temp remove require (talk to Jeremy)
+    path?: string;
   };
 }
 export interface IbcCw20Transition {
@@ -70,7 +71,8 @@ export interface IbcCw20Transition {
   chain: {
     port: string;
     channel_id: string;
-    path: string;
+    // temp remove require (talk to Jeremy)
+    path?: string;
   };
 }
 export interface IbcBridgeTransition {
@@ -84,7 +86,8 @@ export interface IbcBridgeTransition {
   chain: {
     port?: string;
     channel_id: string;
-    path: string;
+    // temp remove require (talk to Jeremy)
+    path?: string;
   };
   provider: string;
 }
