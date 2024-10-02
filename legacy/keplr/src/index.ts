@@ -73,31 +73,40 @@ export const chainRegistryChainToKeplr = (
 
   const features = [];
 
-  // if NOT specified, we assume stargate, sorry not sorry
-  // Determine SDK version, prioritizing chain.codebase.sdk.version if available
-  const sdkVer = chain.codebase?.sdk?.version
-    ? extractVersion(chain.codebase.sdk.version)
-    : chain.codebase?.cosmos_sdk_version
-      ? extractVersion(chain.codebase.cosmos_sdk_version)
-      : '0.40';
+  // check if it's a Cosmos SDK chain (either new or old format)
+  const isCosmosSDKChain = chain.codebase?.sdk?.type === 'cosmos' || !!chain.codebase?.cosmos_sdk_version;
 
-  // stargate
-  if (semver.satisfies(sdkVer, '>=0.40')) features.push('stargate');
-  // no-legacy-stdTx
-  if (semver.satisfies(sdkVer, '>=0.43')) features.push('no-legacy-stdTx');
-  // until further notice, assume 'ibc-transfer'
-  features.push('ibc-transfer');
+  if (isCosmosSDKChain) {
+    // determine SDK version
+    let sdkVer;
+    if (chain.codebase?.sdk?.type === 'cosmos' && chain.codebase.sdk.version) {
+      sdkVer = extractVersion(chain.codebase.sdk.version);
+    } else if (chain.codebase?.cosmos_sdk_version) {
+      sdkVer = extractVersion(chain.codebase.cosmos_sdk_version);
+    } else {
+      // if NOT specified, we assume stargate, sorry not sorry
+      sdkVer = '0.40.0'; 
+    }
 
-  // ibc-go
-  if (semver.satisfies(sdkVer, '>=0.45')) features.push('ibc-go');
+    // stargate
+    if (semver.satisfies(sdkVer, '>=0.40')) features.push('stargate');
+    // no-legacy-stdTx
+    if (semver.satisfies(sdkVer, '>=0.43')) features.push('no-legacy-stdTx');
+    // until further notice, assume 'ibc-transfer'
+    features.push('ibc-transfer');
 
-  const cosmwasmEnabled = chain.codebase?.cosmwasm?.enabled ?? chain.codebase?.cosmwasm_enabled ?? false;
-  if (cosmwasmEnabled) {
-    features.push('cosmwasm');
-    const wasmVer = chain.codebase?.cosmwasm?.version
-      ? extractVersion(chain.codebase.cosmwasm.version)
-      : extractVersion(chain.codebase?.cosmwasm_version ?? '0.24');
-    if (semver.satisfies(wasmVer, '>=0.24')) features.push('wasmd_0.24+');
+    // ibc-go
+    if (semver.satisfies(sdkVer, '>=0.45')) features.push('ibc-go');
+
+    // CosmWasm feature detection
+    const cosmwasmEnabled = chain.codebase?.cosmwasm?.enabled ?? chain.codebase?.cosmwasm_enabled ?? false;
+    if (cosmwasmEnabled) {
+      features.push('cosmwasm');
+      const wasmVer = extractVersion(
+        chain.codebase?.cosmwasm?.version ?? chain.codebase?.cosmwasm_version ?? '0.24.0'
+      );
+      if (semver.satisfies(wasmVer, '>=0.24.0')) features.push('wasmd_0.24+');
+    }
   }
 
   const chainAssets =
