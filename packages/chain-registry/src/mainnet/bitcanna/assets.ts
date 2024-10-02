@@ -30,7 +30,8 @@ const info: AssetList = {
       socials: {
         website: 'http://www.bitcanna.io/',
         twitter: 'https://twitter.com/BitCannaGlobal'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

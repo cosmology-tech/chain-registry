@@ -31,7 +31,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

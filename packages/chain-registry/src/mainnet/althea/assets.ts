@@ -22,7 +22,8 @@ const info: AssetList = {
           }
         }, {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/althea/images/althea.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

@@ -21,7 +21,8 @@ const info: AssetList = {
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/celestiatestnet2/images/celestia.svg',
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/celestiatestnet2/images/celestia.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

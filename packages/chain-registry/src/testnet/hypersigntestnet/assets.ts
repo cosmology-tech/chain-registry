@@ -21,7 +21,8 @@ const info: AssetList = {
       coingecko_id: 'hypersign-identity-token',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/hypersigntestnet/images/hypersign.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

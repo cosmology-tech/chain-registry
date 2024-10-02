@@ -40,6 +40,7 @@ const assets: AssetList = {
         website: 'https://www.coreum.com/',
         twitter: 'https://twitter.com/CoreumOfficial'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -77,6 +78,7 @@ const assets: AssetList = {
             primary_color_hex: '#fba214'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -127,6 +129,7 @@ const assets: AssetList = {
         website: 'https://www.coreum.com/',
         twitter: 'https://twitter.com/CoreumOfficial'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -164,6 +167,7 @@ const assets: AssetList = {
             primary_color_hex: '#fba214'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -206,6 +210,7 @@ const assets: AssetList = {
         website: 'https://evmos.org/',
         twitter: 'https://twitter.com/EvmosOrg'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -247,6 +252,7 @@ const assets: AssetList = {
         website: 'https://www.neokingdom.org/',
         twitter: 'https://twitter.com/NEOKingdomDAO'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -367,6 +373,7 @@ const assets: AssetList = {
         website: 'https://www.kava.io/',
         twitter: 'https://twitter.com/KAVA_CHAIN'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -405,6 +412,7 @@ const assets: AssetList = {
             primary_color_hex: '#7b34ac'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -443,6 +451,7 @@ const assets: AssetList = {
             primary_color_hex: '#544cfc'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -481,6 +490,7 @@ const assets: AssetList = {
             primary_color_hex: '#04d4a3'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -534,7 +544,8 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
@@ -566,6 +577,7 @@ const assets: AssetList = {
         website: 'https://kujira.network/',
         twitter: 'https://twitter.com/TeamKujira'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -610,6 +622,7 @@ const assets: AssetList = {
         website: 'https://neutron.org/',
         twitter: 'https://twitter.com/Neutron_org'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -645,6 +658,7 @@ const assets: AssetList = {
             primary_color_hex: '#1b0847'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -680,6 +694,7 @@ const assets: AssetList = {
             primary_color_hex: '#dcd5ab'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -715,6 +730,7 @@ const assets: AssetList = {
             primary_color_hex: '#333333'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -833,6 +849,7 @@ const assets: AssetList = {
         website: 'https://ondo.finance/usdy',
         twitter: 'https://x.com/OndoFinance'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -965,6 +982,7 @@ const assets: AssetList = {
         website: 'https://persistence.one/',
         twitter: 'https://twitter.com/PersistenceOne'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1002,6 +1020,7 @@ const assets: AssetList = {
             primary_color_hex: '#c6ddf5'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1036,6 +1055,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1070,6 +1090,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1104,6 +1125,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1138,6 +1160,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1172,6 +1195,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1206,6 +1230,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1240,6 +1265,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1274,6 +1300,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1308,6 +1335,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1342,6 +1370,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1376,6 +1405,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1410,6 +1440,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1444,6 +1475,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1478,6 +1510,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1512,6 +1545,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1546,6 +1580,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1580,6 +1615,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1614,6 +1650,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1648,6 +1685,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1682,6 +1720,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1716,6 +1755,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1750,6 +1790,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1784,6 +1825,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1818,6 +1860,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1852,6 +1895,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1886,6 +1930,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1920,6 +1965,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1954,6 +2000,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1988,6 +2035,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2022,6 +2070,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2056,6 +2105,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2090,6 +2140,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2124,6 +2175,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2158,6 +2210,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2192,6 +2245,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2226,6 +2280,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2260,6 +2315,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2294,6 +2350,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2328,6 +2385,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2362,6 +2420,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2396,6 +2455,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2430,6 +2490,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2464,6 +2525,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2498,6 +2560,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2532,6 +2595,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2566,6 +2630,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2600,6 +2665,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2634,6 +2700,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2668,6 +2735,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2702,6 +2770,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2736,6 +2805,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2770,6 +2840,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2804,6 +2875,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2838,6 +2910,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2872,6 +2945,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2906,6 +2980,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2940,6 +3015,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2974,6 +3050,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3008,6 +3085,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3042,6 +3120,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3076,6 +3155,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3110,6 +3190,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3144,6 +3225,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3178,6 +3260,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3212,6 +3295,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3246,6 +3330,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3280,6 +3365,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3314,6 +3400,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3348,6 +3435,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3382,6 +3470,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3416,6 +3505,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3450,6 +3540,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3492,6 +3583,7 @@ const assets: AssetList = {
         website: 'https://stride.zone/',
         twitter: 'https://twitter.com/stride_zone'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3534,6 +3626,7 @@ const assets: AssetList = {
         website: 'https://www.terra.money/',
         twitter: 'https://twitter.com/terra_money'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3572,6 +3665,7 @@ const assets: AssetList = {
             primary_color_hex: '#22f2e9'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3614,6 +3708,7 @@ const assets: AssetList = {
         website: 'https://evmos.org/',
         twitter: 'https://twitter.com/EvmosOrg'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3655,6 +3750,7 @@ const assets: AssetList = {
         website: 'https://www.neokingdom.org/',
         twitter: 'https://twitter.com/NEOKingdomDAO'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3775,6 +3871,7 @@ const assets: AssetList = {
         website: 'https://www.kava.io/',
         twitter: 'https://twitter.com/KAVA_CHAIN'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3813,6 +3910,7 @@ const assets: AssetList = {
             primary_color_hex: '#7b34ac'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3851,6 +3949,7 @@ const assets: AssetList = {
             primary_color_hex: '#544cfc'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3889,6 +3988,7 @@ const assets: AssetList = {
             primary_color_hex: '#04d4a3'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3942,7 +4042,8 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
@@ -3974,6 +4075,7 @@ const assets: AssetList = {
         website: 'https://kujira.network/',
         twitter: 'https://twitter.com/TeamKujira'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4018,6 +4120,7 @@ const assets: AssetList = {
         website: 'https://neutron.org/',
         twitter: 'https://twitter.com/Neutron_org'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4053,6 +4156,7 @@ const assets: AssetList = {
             primary_color_hex: '#1b0847'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4088,6 +4192,7 @@ const assets: AssetList = {
             primary_color_hex: '#dcd5ab'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4123,6 +4228,7 @@ const assets: AssetList = {
             primary_color_hex: '#333333'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4241,6 +4347,7 @@ const assets: AssetList = {
         website: 'https://ondo.finance/usdy',
         twitter: 'https://x.com/OndoFinance'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4373,6 +4480,7 @@ const assets: AssetList = {
         website: 'https://persistence.one/',
         twitter: 'https://twitter.com/PersistenceOne'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4410,6 +4518,7 @@ const assets: AssetList = {
             primary_color_hex: '#c6ddf5'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4444,6 +4553,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4478,6 +4588,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4512,6 +4623,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4546,6 +4658,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4580,6 +4693,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4614,6 +4728,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4648,6 +4763,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4682,6 +4798,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4716,6 +4833,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4750,6 +4868,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4784,6 +4903,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4818,6 +4938,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4852,6 +4973,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4886,6 +5008,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4920,6 +5043,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4954,6 +5078,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -4988,6 +5113,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5022,6 +5148,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5056,6 +5183,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5090,6 +5218,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5124,6 +5253,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5158,6 +5288,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5192,6 +5323,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5226,6 +5358,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5260,6 +5393,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5294,6 +5428,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5328,6 +5463,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5362,6 +5498,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5396,6 +5533,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5430,6 +5568,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5464,6 +5603,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5498,6 +5638,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5532,6 +5673,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5566,6 +5708,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5600,6 +5743,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5634,6 +5778,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5668,6 +5813,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5702,6 +5848,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5736,6 +5883,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5770,6 +5918,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5804,6 +5953,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5838,6 +5988,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5872,6 +6023,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5906,6 +6058,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5940,6 +6093,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -5974,6 +6128,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6008,6 +6163,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6042,6 +6198,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6076,6 +6233,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6110,6 +6268,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6144,6 +6303,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6178,6 +6338,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6212,6 +6373,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6246,6 +6408,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6280,6 +6443,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6314,6 +6478,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6348,6 +6513,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6382,6 +6548,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6416,6 +6583,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6450,6 +6618,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6484,6 +6653,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6518,6 +6688,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6552,6 +6723,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6586,6 +6758,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6620,6 +6793,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6654,6 +6828,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6688,6 +6863,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6722,6 +6898,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6756,6 +6933,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6790,6 +6968,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6824,6 +7003,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6858,6 +7038,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6900,6 +7081,7 @@ const assets: AssetList = {
         website: 'https://stride.zone/',
         twitter: 'https://twitter.com/stride_zone'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6942,6 +7124,7 @@ const assets: AssetList = {
         website: 'https://www.terra.money/',
         twitter: 'https://twitter.com/terra_money'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -6980,6 +7163,7 @@ const assets: AssetList = {
             primary_color_hex: '#22f2e9'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {

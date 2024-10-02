@@ -99,7 +99,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#f3bb0c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'bNEO token on Carbon',
@@ -137,7 +138,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#040404'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'BUSD (BEP-20) token on Carbon',
@@ -177,7 +179,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#f3bb0c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Carbon Wrapped GLP on Carbon',
@@ -215,7 +218,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#070707'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Grouped USD on Carbon',
@@ -241,7 +245,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#043d4d'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'ETH (Arbitrum) token on Carbon',
@@ -274,7 +279,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'ETH (ERC20) token on Carbon',
@@ -307,7 +313,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'STARS token on Carbon',
@@ -909,7 +916,8 @@ const info: AssetList = {
             circle: true,
             primary_color_hex: '#2775CA'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'USD Coin (BEP-20) token on Carbon',
@@ -946,7 +954,8 @@ const info: AssetList = {
             base_denom: '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'ZIL token on Carbon',
@@ -984,7 +993,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#2cccc4'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

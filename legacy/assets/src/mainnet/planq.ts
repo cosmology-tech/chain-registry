@@ -39,6 +39,7 @@ const assets: AssetList = {
         website: 'https://archway.io/',
         twitter: 'https://twitter.com/archwayHQ'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -81,6 +82,7 @@ const assets: AssetList = {
         website: 'https://cosmos.network',
         twitter: 'https://twitter.com/cosmoshub'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -123,6 +125,7 @@ const assets: AssetList = {
         website: 'https://www.gravitybridge.net/',
         twitter: 'https://twitter.com/gravity_bridge'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -165,6 +168,7 @@ const assets: AssetList = {
         website: 'https://kujira.network/',
         twitter: 'https://twitter.com/TeamKujira'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -283,6 +287,7 @@ const assets: AssetList = {
         website: 'https://ondo.finance/usdy',
         twitter: 'https://x.com/OndoFinance'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -420,6 +425,7 @@ const assets: AssetList = {
         website: 'https://archway.io/',
         twitter: 'https://twitter.com/archwayHQ'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -462,6 +468,7 @@ const assets: AssetList = {
         website: 'https://cosmos.network',
         twitter: 'https://twitter.com/cosmoshub'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -504,6 +511,7 @@ const assets: AssetList = {
         website: 'https://www.gravitybridge.net/',
         twitter: 'https://twitter.com/gravity_bridge'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -546,6 +554,7 @@ const assets: AssetList = {
         website: 'https://kujira.network/',
         twitter: 'https://twitter.com/TeamKujira'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -664,6 +673,7 @@ const assets: AssetList = {
         website: 'https://ondo.finance/usdy',
         twitter: 'https://x.com/OndoFinance'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -794,6 +804,7 @@ const assets: AssetList = {
         website: 'https://www.sei.io/',
         twitter: 'https://twitter.com/SeiNetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -816,6 +827,8 @@ const assets: AssetList = {
           denom: 'oozaru',
           exponent: 6
         }],
+      type_asset: 'cw20',
+      address: 'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda',
       base: 'ibc/5B70EF0375A035557E41842A33EF7DCC3A1DCCA7253AC716DDE69CBD44D2924D',
       name: 'Oozaru',
       display: 'oozaru',
@@ -871,6 +884,7 @@ const assets: AssetList = {
         website: 'https://www.sourceprotocol.io/',
         twitter: 'https://twitter.com/sourceprotocol_'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -913,6 +927,7 @@ const assets: AssetList = {
         website: 'https://www.sei.io/',
         twitter: 'https://twitter.com/SeiNetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -935,6 +950,8 @@ const assets: AssetList = {
           denom: 'oozaru',
           exponent: 6
         }],
+      type_asset: 'cw20',
+      address: 'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda',
       base: 'ibc/5B70EF0375A035557E41842A33EF7DCC3A1DCCA7253AC716DDE69CBD44D2924D',
       name: 'Oozaru',
       display: 'oozaru',
@@ -990,6 +1007,7 @@ const assets: AssetList = {
         website: 'https://www.sourceprotocol.io/',
         twitter: 'https://twitter.com/sourceprotocol_'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {

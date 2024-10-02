@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'https://evmos.org/',
         twitter: 'https://twitter.com/EvmosOrg'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Tether USDt on Evmos',
@@ -105,7 +106,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.neokingdom.org/',
         twitter: 'https://twitter.com/NEOKingdomDAO'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The legacy token of Teledisko DAO.',

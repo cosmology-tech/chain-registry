@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.gravitybridge.net/',
         twitter: 'https://twitter.com/gravity_bridge'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.',
@@ -75,7 +76,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#050505'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Gravity Bridge WETH',
@@ -114,7 +116,8 @@ const info: AssetList = {
             base_denom: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Gravity Bridge USDC',
@@ -160,7 +163,8 @@ const info: AssetList = {
             circle: true,
             primary_color_hex: '#2775CA'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Gravity Bridge USDT',
@@ -206,7 +210,8 @@ const info: AssetList = {
             primary_color_hex: '#009393',
             background_color_hex: '#009393'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Gravity Bridge WBTC',
@@ -250,7 +255,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#f39444'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Gravity Bridge DAI',
@@ -289,7 +295,8 @@ const info: AssetList = {
             base_denom: '0x6b175474e89094c44da98b954eedeac495271d0f'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Gravity Bridge sDAI',
@@ -326,7 +333,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#7ec231'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Gravity Bridge OCC',
@@ -361,7 +369,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#313648'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The PAGE token is used for actions in the PageDAO NFT literary ecosystem and for DAO governance.',
@@ -398,7 +407,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#ebb324'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Gravity Bridge Paxos Gold',
@@ -435,7 +445,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#ebe60e'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

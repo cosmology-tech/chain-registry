@@ -26,7 +26,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#3c2832'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }, {
       description: 'The bonded token of Crescent',
       denom_units: [{
@@ -51,7 +52,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#df969f'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

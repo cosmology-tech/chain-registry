@@ -29,7 +29,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/entrypointtestnet/images/entry.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/entrypointtestnet/images/entry.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }, {
       description: 'The native staking and governance token of the Theta testnet version of the Cosmos Hub, via Osmosis.',
       denom_units: [{
@@ -39,6 +40,7 @@ const info: AssetList = {
           denom: 'atom',
           exponent: 6
         }],
+      type_asset: 'ics20',
       base: 'ibc/8A138BC76D0FB2665F8937EC2BF01B9F6A714F6127221A0E155106A45E09BCC5',
       name: 'Cosmos',
       display: 'atom',

@@ -14,6 +14,7 @@ const info: AssetList = {
           exponent: 18,
           aliases: ['glmr']
         }],
+      type_asset: 'substrate',
       base: 'Wei',
       name: 'Glimmer',
       display: 'GLMR',

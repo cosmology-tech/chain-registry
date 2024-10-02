@@ -22,7 +22,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/zetachaintestnet/images/zetachaintestnet.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/zetachaintestnet/images/zetachaintestnet.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

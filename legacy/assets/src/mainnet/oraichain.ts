@@ -32,6 +32,7 @@ const assets: AssetList = {
         website: 'https://arable.finance/',
         twitter: 'https://twitter.com/ArableProtocol'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -74,6 +75,7 @@ const assets: AssetList = {
         website: 'https://arable.finance/',
         twitter: 'https://twitter.com/ArableProtocol'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -111,6 +113,7 @@ const assets: AssetList = {
             primary_color_hex: '#ecc53b'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -153,6 +156,7 @@ const assets: AssetList = {
         website: 'https://cosmos.network',
         twitter: 'https://twitter.com/cosmoshub'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -195,6 +199,7 @@ const assets: AssetList = {
         website: 'https://injective.com/',
         twitter: 'https://twitter.com/Injective_'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -230,6 +235,7 @@ const assets: AssetList = {
             primary_color_hex: '#31292a'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -265,6 +271,7 @@ const assets: AssetList = {
             primary_color_hex: '#18120f'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -297,6 +304,7 @@ const assets: AssetList = {
             primary_color_hex: '#293a6f'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -329,6 +337,7 @@ const assets: AssetList = {
             primary_color_hex: '#272f4b'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -361,6 +370,7 @@ const assets: AssetList = {
             primary_color_hex: '#2a303f'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -393,6 +403,7 @@ const assets: AssetList = {
             primary_color_hex: '#54ac94'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -425,6 +436,7 @@ const assets: AssetList = {
             primary_color_hex: '#7931f9'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -467,6 +479,7 @@ const assets: AssetList = {
         website: 'https://arable.finance/',
         twitter: 'https://twitter.com/ArableProtocol'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -509,6 +522,7 @@ const assets: AssetList = {
         website: 'https://arable.finance/',
         twitter: 'https://twitter.com/ArableProtocol'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -546,6 +560,7 @@ const assets: AssetList = {
             primary_color_hex: '#ecc53b'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -588,6 +603,7 @@ const assets: AssetList = {
         website: 'https://cosmos.network',
         twitter: 'https://twitter.com/cosmoshub'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -630,6 +646,7 @@ const assets: AssetList = {
         website: 'https://injective.com/',
         twitter: 'https://twitter.com/Injective_'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -665,6 +682,7 @@ const assets: AssetList = {
             primary_color_hex: '#31292a'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -700,6 +718,7 @@ const assets: AssetList = {
             primary_color_hex: '#18120f'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -732,6 +751,7 @@ const assets: AssetList = {
             primary_color_hex: '#293a6f'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -764,6 +784,7 @@ const assets: AssetList = {
             primary_color_hex: '#272f4b'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -796,6 +817,7 @@ const assets: AssetList = {
             primary_color_hex: '#2a303f'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -828,6 +850,7 @@ const assets: AssetList = {
             primary_color_hex: '#54ac94'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -860,6 +883,7 @@ const assets: AssetList = {
             primary_color_hex: '#7931f9'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -990,6 +1014,7 @@ const assets: AssetList = {
         website: 'https://scrt.network/',
         twitter: 'https://twitter.com/SecretNetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1120,6 +1145,7 @@ const assets: AssetList = {
         website: 'https://scrt.network/',
         twitter: 'https://twitter.com/SecretNetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1388,6 +1414,8 @@ const assets: AssetList = {
           exponent: 6
         }],
       base: 'ibc/A7D071160D4028A370F3F2354956CCD52FFEEF8FF627C8F375840757E11DF039',
+      type_asset: 'snip20',
+      address: 'secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
       name: 'Alter',
       display: 'alter',
       symbol: 'ALTER',
@@ -1763,6 +1791,8 @@ const assets: AssetList = {
           exponent: 6
         }],
       base: 'ibc/A7D071160D4028A370F3F2354956CCD52FFEEF8FF627C8F375840757E11DF039',
+      type_asset: 'snip20',
+      address: 'secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
       name: 'Alter',
       display: 'alter',
       symbol: 'ALTER',

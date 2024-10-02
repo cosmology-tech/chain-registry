@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'https://akash.network/',
         twitter: 'https://twitter.com/akashnet_'
-      }
+      },
+      type_asset: 'sdk.coin'
     }, {
       description: 'Tether USDt on Akash',
       denom_units: [{

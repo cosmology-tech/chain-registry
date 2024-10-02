@@ -32,7 +32,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#1c1c28'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

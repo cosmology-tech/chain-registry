@@ -32,6 +32,7 @@ const assets: AssetList = {
         website: 'https://arable.finance/',
         twitter: 'https://twitter.com/ArableProtocol'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -74,6 +75,7 @@ const assets: AssetList = {
         website: 'https://arable.finance/',
         twitter: 'https://twitter.com/ArableProtocol'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -111,6 +113,7 @@ const assets: AssetList = {
             primary_color_hex: '#ecc53b'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -153,6 +156,7 @@ const assets: AssetList = {
         website: 'https://agoric.com/',
         twitter: 'https://twitter.com/agoric'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -191,6 +195,7 @@ const assets: AssetList = {
             primary_color_hex: '#d485e2'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -240,6 +245,7 @@ const assets: AssetList = {
         website: 'https://archway.io/',
         twitter: 'https://twitter.com/archwayHQ'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -282,6 +288,7 @@ const assets: AssetList = {
         website: 'https://canto.io/',
         twitter: 'https://twitter.com/CantoPublic'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -320,6 +327,7 @@ const assets: AssetList = {
             primary_color_hex: '#fc5f04'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -370,6 +378,7 @@ const assets: AssetList = {
         website: 'https://www.coreum.com/',
         twitter: 'https://twitter.com/CoreumOfficial'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -408,6 +417,7 @@ const assets: AssetList = {
             primary_color_hex: '#3c2832'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -446,6 +456,7 @@ const assets: AssetList = {
             primary_color_hex: '#df969f'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -488,6 +499,7 @@ const assets: AssetList = {
         website: 'https://evmos.org/',
         twitter: 'https://twitter.com/EvmosOrg'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -529,6 +541,7 @@ const assets: AssetList = {
         website: 'https://www.neokingdom.org/',
         twitter: 'https://twitter.com/NEOKingdomDAO'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -649,6 +662,7 @@ const assets: AssetList = {
         website: 'https://arable.finance/',
         twitter: 'https://twitter.com/ArableProtocol'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -691,6 +705,7 @@ const assets: AssetList = {
         website: 'https://arable.finance/',
         twitter: 'https://twitter.com/ArableProtocol'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -728,6 +743,7 @@ const assets: AssetList = {
             primary_color_hex: '#ecc53b'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -770,6 +786,7 @@ const assets: AssetList = {
         website: 'https://agoric.com/',
         twitter: 'https://twitter.com/agoric'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -808,6 +825,7 @@ const assets: AssetList = {
             primary_color_hex: '#d485e2'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -857,6 +875,7 @@ const assets: AssetList = {
         website: 'https://archway.io/',
         twitter: 'https://twitter.com/archwayHQ'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -899,6 +918,7 @@ const assets: AssetList = {
         website: 'https://canto.io/',
         twitter: 'https://twitter.com/CantoPublic'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -937,6 +957,7 @@ const assets: AssetList = {
             primary_color_hex: '#fc5f04'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -987,6 +1008,7 @@ const assets: AssetList = {
         website: 'https://www.coreum.com/',
         twitter: 'https://twitter.com/CoreumOfficial'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1025,6 +1047,7 @@ const assets: AssetList = {
             primary_color_hex: '#3c2832'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1063,6 +1086,7 @@ const assets: AssetList = {
             primary_color_hex: '#df969f'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1105,6 +1129,7 @@ const assets: AssetList = {
         website: 'https://evmos.org/',
         twitter: 'https://twitter.com/EvmosOrg'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1146,6 +1171,7 @@ const assets: AssetList = {
         website: 'https://www.neokingdom.org/',
         twitter: 'https://twitter.com/NEOKingdomDAO'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1266,6 +1292,7 @@ const assets: AssetList = {
             primary_color_hex: '#04cd80'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1353,6 +1380,7 @@ const assets: AssetList = {
         website: 'https://kujira.network/',
         twitter: 'https://twitter.com/TeamKujira'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1388,6 +1416,7 @@ const assets: AssetList = {
             primary_color_hex: '#f45135'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1436,6 +1465,7 @@ const assets: AssetList = {
             primary_color_hex: '#141424'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1568,6 +1598,7 @@ const assets: AssetList = {
         website: 'https://persistence.one/',
         twitter: 'https://twitter.com/PersistenceOne'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1610,6 +1641,7 @@ const assets: AssetList = {
         website: 'https://planq.network',
         twitter: 'https://twitter.com/planqfoundation'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1659,7 +1691,8 @@ const assets: AssetList = {
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
@@ -1691,6 +1724,7 @@ const assets: AssetList = {
         website: 'https://scrt.network/',
         twitter: 'https://twitter.com/SecretNetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1733,6 +1767,7 @@ const assets: AssetList = {
         twitter: 'https://twitter.com/UnificationUND'
       },
       coingecko_id: 'unification',
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1775,6 +1810,7 @@ const assets: AssetList = {
             primary_color_hex: '#04cd80'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1862,6 +1898,7 @@ const assets: AssetList = {
         website: 'https://kujira.network/',
         twitter: 'https://twitter.com/TeamKujira'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1897,6 +1934,7 @@ const assets: AssetList = {
             primary_color_hex: '#f45135'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1945,6 +1983,7 @@ const assets: AssetList = {
             primary_color_hex: '#141424'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2077,6 +2116,7 @@ const assets: AssetList = {
         website: 'https://persistence.one/',
         twitter: 'https://twitter.com/PersistenceOne'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2119,6 +2159,7 @@ const assets: AssetList = {
         website: 'https://planq.network',
         twitter: 'https://twitter.com/planqfoundation'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2168,7 +2209,8 @@ const assets: AssetList = {
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
@@ -2200,6 +2242,7 @@ const assets: AssetList = {
         website: 'https://scrt.network/',
         twitter: 'https://twitter.com/SecretNetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2242,6 +2285,7 @@ const assets: AssetList = {
         twitter: 'https://twitter.com/UnificationUND'
       },
       coingecko_id: 'unification',
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2510,6 +2554,8 @@ const assets: AssetList = {
           exponent: 6
         }],
       base: 'ibc/73369B05BF274404AF372096183192324607DE5098FE739AE75D4D8272E9821E',
+      type_asset: 'snip20',
+      address: 'secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
       name: 'Alter',
       display: 'alter',
       symbol: 'ALTER',
@@ -2885,6 +2931,8 @@ const assets: AssetList = {
           exponent: 6
         }],
       base: 'ibc/73369B05BF274404AF372096183192324607DE5098FE739AE75D4D8272E9821E',
+      type_asset: 'snip20',
+      address: 'secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
       name: 'Alter',
       display: 'alter',
       symbol: 'ALTER',

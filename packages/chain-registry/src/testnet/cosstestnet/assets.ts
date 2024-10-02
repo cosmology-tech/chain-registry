@@ -16,7 +16,8 @@ const info: AssetList = {
       base: 'ucgas',
       name: 'cgas',
       display: 'cgas',
-      symbol: 'cgas'
+      symbol: 'cgas',
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

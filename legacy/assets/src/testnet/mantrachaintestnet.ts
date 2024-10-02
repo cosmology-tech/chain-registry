@@ -25,6 +25,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -60,6 +61,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -86,6 +88,7 @@ const assets: AssetList = {
       name: 'Stake',
       display: 'stake',
       symbol: 'STAKE',
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -112,6 +115,7 @@ const assets: AssetList = {
       display: 'love',
       name: 'Love',
       symbol: 'LOVE',
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -146,6 +150,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -246,6 +251,7 @@ const assets: AssetList = {
       name: 'Stake',
       display: 'stake',
       symbol: 'STAKE',
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -272,6 +278,7 @@ const assets: AssetList = {
       display: 'love',
       name: 'Love',
       symbol: 'LOVE',
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -306,6 +313,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {

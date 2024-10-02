@@ -28,7 +28,8 @@ const info: AssetList = {
       socials: {
         website: 'https://selfchain.xyz',
         twitter: 'https://x.com/selfchainxyz'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

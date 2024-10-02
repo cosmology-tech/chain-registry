@@ -20,7 +20,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cosmwasmtestnet/images/cosmwasm.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }, {
       description: 'Staking Token',
       denom_units: [{
@@ -39,7 +40,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cosmwasmtestnet/images/cosmwasm.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

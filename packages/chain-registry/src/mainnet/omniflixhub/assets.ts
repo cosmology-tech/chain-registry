@@ -32,7 +32,8 @@ const info: AssetList = {
       socials: {
         website: 'https://omniflix.network/',
         twitter: 'https://twitter.com/OmniFlixNetwork'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{

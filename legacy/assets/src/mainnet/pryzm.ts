@@ -32,6 +32,7 @@ const assets: AssetList = {
         website: 'https://axelar.network/',
         twitter: 'https://twitter.com/axelarnetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -74,6 +75,7 @@ const assets: AssetList = {
         website: 'https://celestia.org/',
         twitter: 'https://twitter.com/CelestiaOrg'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -116,6 +118,7 @@ const assets: AssetList = {
         website: 'https://cosmos.network',
         twitter: 'https://twitter.com/cosmoshub'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -163,6 +166,7 @@ const assets: AssetList = {
         website: 'https://dydx.trade/',
         twitter: 'https://twitter.com/dYdX'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -205,6 +209,7 @@ const assets: AssetList = {
         website: 'https://injective.com/',
         twitter: 'https://twitter.com/Injective_'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -240,6 +245,7 @@ const assets: AssetList = {
             primary_color_hex: '#31292a'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -275,6 +281,7 @@ const assets: AssetList = {
             primary_color_hex: '#18120f'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -307,6 +314,7 @@ const assets: AssetList = {
             primary_color_hex: '#293a6f'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -339,6 +347,7 @@ const assets: AssetList = {
             primary_color_hex: '#272f4b'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -371,6 +380,7 @@ const assets: AssetList = {
             primary_color_hex: '#2a303f'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -403,6 +413,7 @@ const assets: AssetList = {
             primary_color_hex: '#54ac94'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -435,6 +446,7 @@ const assets: AssetList = {
             primary_color_hex: '#7931f9'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -479,6 +491,7 @@ const assets: AssetList = {
         website: 'https://neutron.org/',
         twitter: 'https://twitter.com/Neutron_org'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -514,6 +527,7 @@ const assets: AssetList = {
             primary_color_hex: '#1b0847'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -549,6 +563,7 @@ const assets: AssetList = {
             primary_color_hex: '#dcd5ab'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -584,6 +599,7 @@ const assets: AssetList = {
             primary_color_hex: '#333333'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -702,6 +718,7 @@ const assets: AssetList = {
         website: 'https://ondo.finance/usdy',
         twitter: 'https://x.com/OndoFinance'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -832,6 +849,7 @@ const assets: AssetList = {
         website: 'https://axelar.network/',
         twitter: 'https://twitter.com/axelarnetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -874,6 +892,7 @@ const assets: AssetList = {
         website: 'https://celestia.org/',
         twitter: 'https://twitter.com/CelestiaOrg'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -916,6 +935,7 @@ const assets: AssetList = {
         website: 'https://cosmos.network',
         twitter: 'https://twitter.com/cosmoshub'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -963,6 +983,7 @@ const assets: AssetList = {
         website: 'https://dydx.trade/',
         twitter: 'https://twitter.com/dYdX'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1005,6 +1026,7 @@ const assets: AssetList = {
         website: 'https://injective.com/',
         twitter: 'https://twitter.com/Injective_'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1040,6 +1062,7 @@ const assets: AssetList = {
             primary_color_hex: '#31292a'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1075,6 +1098,7 @@ const assets: AssetList = {
             primary_color_hex: '#18120f'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1107,6 +1131,7 @@ const assets: AssetList = {
             primary_color_hex: '#293a6f'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1139,6 +1164,7 @@ const assets: AssetList = {
             primary_color_hex: '#272f4b'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1171,6 +1197,7 @@ const assets: AssetList = {
             primary_color_hex: '#2a303f'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1203,6 +1230,7 @@ const assets: AssetList = {
             primary_color_hex: '#54ac94'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1235,6 +1263,7 @@ const assets: AssetList = {
             primary_color_hex: '#7931f9'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1279,6 +1308,7 @@ const assets: AssetList = {
         website: 'https://neutron.org/',
         twitter: 'https://twitter.com/Neutron_org'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1314,6 +1344,7 @@ const assets: AssetList = {
             primary_color_hex: '#1b0847'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1349,6 +1380,7 @@ const assets: AssetList = {
             primary_color_hex: '#dcd5ab'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1384,6 +1416,7 @@ const assets: AssetList = {
             primary_color_hex: '#333333'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1502,6 +1535,7 @@ const assets: AssetList = {
         website: 'https://ondo.finance/usdy',
         twitter: 'https://x.com/OndoFinance'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1632,6 +1666,7 @@ const assets: AssetList = {
         website: 'https://stride.zone/',
         twitter: 'https://twitter.com/stride_zone'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1674,6 +1709,7 @@ const assets: AssetList = {
         website: 'https://www.terra.money/',
         twitter: 'https://twitter.com/terra_money'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1716,6 +1752,7 @@ const assets: AssetList = {
         website: 'https://stride.zone/',
         twitter: 'https://twitter.com/stride_zone'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1758,6 +1795,7 @@ const assets: AssetList = {
         website: 'https://www.terra.money/',
         twitter: 'https://twitter.com/terra_money'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {

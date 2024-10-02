@@ -32,6 +32,7 @@ const assets: AssetList = {
         website: 'https://agoric.com/',
         twitter: 'https://twitter.com/agoric'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -70,6 +71,7 @@ const assets: AssetList = {
             primary_color_hex: '#d485e2'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -112,6 +114,7 @@ const assets: AssetList = {
         website: 'https://akash.network/',
         twitter: 'https://twitter.com/akashnet_'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -161,6 +164,7 @@ const assets: AssetList = {
         website: 'https://archway.io/',
         twitter: 'https://twitter.com/archwayHQ'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -203,6 +207,7 @@ const assets: AssetList = {
         website: 'https://axelar.network/',
         twitter: 'https://twitter.com/axelarnetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -245,6 +250,7 @@ const assets: AssetList = {
         website: 'https://cosmos.network',
         twitter: 'https://twitter.com/cosmoshub'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -287,6 +293,7 @@ const assets: AssetList = {
         website: 'https://kujira.network/',
         twitter: 'https://twitter.com/TeamKujira'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -405,6 +412,7 @@ const assets: AssetList = {
         website: 'https://ondo.finance/usdy',
         twitter: 'https://x.com/OndoFinance'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -447,6 +455,7 @@ const assets: AssetList = {
         website: 'https://agoric.com/',
         twitter: 'https://twitter.com/agoric'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -485,6 +494,7 @@ const assets: AssetList = {
             primary_color_hex: '#d485e2'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -527,6 +537,7 @@ const assets: AssetList = {
         website: 'https://akash.network/',
         twitter: 'https://twitter.com/akashnet_'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -576,6 +587,7 @@ const assets: AssetList = {
         website: 'https://archway.io/',
         twitter: 'https://twitter.com/archwayHQ'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -618,6 +630,7 @@ const assets: AssetList = {
         website: 'https://axelar.network/',
         twitter: 'https://twitter.com/axelarnetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -660,6 +673,7 @@ const assets: AssetList = {
         website: 'https://cosmos.network',
         twitter: 'https://twitter.com/cosmoshub'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -702,6 +716,7 @@ const assets: AssetList = {
         website: 'https://kujira.network/',
         twitter: 'https://twitter.com/TeamKujira'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -820,6 +835,7 @@ const assets: AssetList = {
         website: 'https://ondo.finance/usdy',
         twitter: 'https://x.com/OndoFinance'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {

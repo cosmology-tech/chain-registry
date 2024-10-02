@@ -39,7 +39,8 @@ const info: AssetList = {
         telegram: 'https://t.me/kimanetwork',
         twitter: 'https://x.com/KimaNetwork',
         website: 'https://www.kima.network/'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

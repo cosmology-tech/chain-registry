@@ -24,7 +24,8 @@ const info: AssetList = {
       socials: {
         website: 'https://movementlabs.xyz/',
         twitter: 'https://x.com/movementlabsxyz'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

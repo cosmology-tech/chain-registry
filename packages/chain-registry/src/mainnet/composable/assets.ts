@@ -39,7 +39,8 @@ const info: AssetList = {
       socials: {
         website: 'https://picasso.network/',
         twitter: 'https://twitter.com/picasso_network'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The native staking and governance token of Kusama Relay Chain.',

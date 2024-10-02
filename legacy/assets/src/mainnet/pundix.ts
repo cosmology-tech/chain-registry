@@ -32,6 +32,7 @@ const assets: AssetList = {
         website: 'https://functionx.io',
         twitter: 'https://x.com/functionx_io'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -162,6 +163,7 @@ const assets: AssetList = {
         website: 'https://functionx.io',
         twitter: 'https://x.com/functionx_io'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {

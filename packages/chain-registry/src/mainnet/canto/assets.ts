@@ -30,7 +30,8 @@ const info: AssetList = {
       socials: {
         website: 'https://canto.io/',
         twitter: 'https://twitter.com/CantoPublic'
-      }
+      },
+      type_asset: 'sdk.coin'
     }, {
       description: 'Tether USDt on Canto',
       denom_units: [{

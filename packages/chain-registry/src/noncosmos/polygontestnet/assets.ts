@@ -13,6 +13,7 @@ const info: AssetList = {
           exponent: 18,
           aliases: ['polygon']
         }],
+      type_asset: 'evm-base',
       base: 'wei',
       name: 'Matic',
       display: 'matic',

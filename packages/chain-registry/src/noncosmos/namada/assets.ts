@@ -25,7 +25,8 @@ const info: AssetList = {
       socials: {
         website: 'https://namada.net/',
         twitter: 'https://twitter.com/namada'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

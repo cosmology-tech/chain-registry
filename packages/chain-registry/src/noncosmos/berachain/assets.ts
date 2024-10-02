@@ -22,7 +22,8 @@ const info: AssetList = {
             primary_color_hex: '#7c340c'
           }
         }],
-      coingecko_id: 'berachain-bera'
+      coingecko_id: 'berachain-bera',
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

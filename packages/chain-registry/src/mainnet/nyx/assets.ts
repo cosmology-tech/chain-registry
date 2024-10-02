@@ -23,7 +23,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#f45135'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }, {
       description: 'NYM Token (NYM) is the Nym Network\'s native utility token, used as the primary means to incentivize mixnet node operators.',
       denom_units: [{
@@ -58,7 +59,8 @@ const info: AssetList = {
             circle: true,
             primary_color_hex: '#141424'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

@@ -32,6 +32,7 @@ const assets: AssetList = {
         website: 'https://www.kava.io/',
         twitter: 'https://twitter.com/KAVA_CHAIN'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -70,6 +71,7 @@ const assets: AssetList = {
             primary_color_hex: '#7b34ac'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -108,6 +110,7 @@ const assets: AssetList = {
             primary_color_hex: '#544cfc'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -146,6 +149,7 @@ const assets: AssetList = {
             primary_color_hex: '#04d4a3'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -199,7 +203,8 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The permissioned staking asset for Noble Chain',
@@ -307,6 +312,7 @@ const assets: AssetList = {
         website: 'https://ondo.finance/usdy',
         twitter: 'https://x.com/OndoFinance'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -349,6 +355,7 @@ const assets: AssetList = {
         website: 'https://www.kava.io/',
         twitter: 'https://twitter.com/KAVA_CHAIN'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -387,6 +394,7 @@ const assets: AssetList = {
             primary_color_hex: '#7b34ac'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -425,6 +433,7 @@ const assets: AssetList = {
             primary_color_hex: '#544cfc'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -463,6 +472,7 @@ const assets: AssetList = {
             primary_color_hex: '#04d4a3'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -516,7 +526,8 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The permissioned staking asset for Noble Chain',
@@ -624,6 +635,7 @@ const assets: AssetList = {
         website: 'https://ondo.finance/usdy',
         twitter: 'https://x.com/OndoFinance'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -668,6 +680,7 @@ const assets: AssetList = {
             primary_color_hex: '#1c1c28'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -800,6 +813,7 @@ const assets: AssetList = {
             primary_color_hex: '#1c1c28'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {

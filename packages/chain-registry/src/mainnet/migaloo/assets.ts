@@ -28,7 +28,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#1c1c1c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'ampWHALE',
@@ -48,7 +49,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ampwhale.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'BackBone Labs Liquid Staked WHALE',
@@ -72,7 +74,8 @@ const info: AssetList = {
             primary_color_hex: '#d8d8d8'
           }
         }],
-      coingecko_id: 'backbone-labs-staked-whale'
+      coingecko_id: 'backbone-labs-staked-whale',
+      type_asset: 'sdk.coin'
     },
     {
       description: 'FABLE',
@@ -92,7 +95,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/fable.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'boneLUNA are autocompounding LUNA tokens',
@@ -160,7 +164,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#2b2434'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'ASH',
@@ -180,7 +185,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ash.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Tether USDt on Migaloo',
@@ -269,7 +275,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#d9966e'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'OPHIR is a Cosmos Treasury DAO established on Migaloo.',
@@ -292,7 +299,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#040404'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'SHARK is the apex price prediction market within Cosmos.',
@@ -315,7 +323,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#062d54'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'lsdSHARK is the liquid staking derivative of SHARK.',
@@ -346,7 +355,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#0d739c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The native staking token of Terra.',
@@ -357,6 +367,7 @@ const info: AssetList = {
           denom: 'luna',
           exponent: 6
         }],
+      type_asset: 'ics20',
       base: 'ibc/4627AD2524E3E0523047E35BB76CC90E37D9D57ACF14F0FCBCEB2480705F3CB8',
       name: 'Luna',
       display: 'luna',
@@ -454,7 +465,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#1d0918'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Restake DAO Token',
@@ -479,7 +491,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#3ccc64'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Frogztrik NFT Token',
@@ -544,7 +557,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#f5bf09'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -659,7 +673,8 @@ const info: AssetList = {
             base_denom: 'factory/migaloo1r9x8fz4alekzr78k42rpmr9unpa7egsldpqeynmwl2nfvzexue9sn8l5rg/gash',
             contract: 'migaloo1r9x8fz4alekzr78k42rpmr9unpa7egsldpqeynmwl2nfvzexue9sn8l5rg'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{

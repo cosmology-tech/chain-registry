@@ -32,6 +32,7 @@ const assets: AssetList = {
         website: 'https://axelar.network/',
         twitter: 'https://twitter.com/axelarnetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -74,6 +75,7 @@ const assets: AssetList = {
         website: 'https://cosmos.network',
         twitter: 'https://twitter.com/cosmoshub'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -111,6 +113,7 @@ const assets: AssetList = {
             primary_color_hex: '#fba214'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -153,6 +156,7 @@ const assets: AssetList = {
         website: 'https://www.kava.io/',
         twitter: 'https://twitter.com/KAVA_CHAIN'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -191,6 +195,7 @@ const assets: AssetList = {
             primary_color_hex: '#7b34ac'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -229,6 +234,7 @@ const assets: AssetList = {
             primary_color_hex: '#544cfc'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -267,6 +273,7 @@ const assets: AssetList = {
             primary_color_hex: '#04d4a3'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -320,7 +327,8 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Migaloo is a cosmwasm-powered, permissionless blockchain designed to build decentralized applications with a focus on interchain liquidity solutions.',
@@ -348,6 +356,7 @@ const assets: AssetList = {
             primary_color_hex: '#1c1c1c'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -392,6 +401,7 @@ const assets: AssetList = {
         website: 'https://neutron.org/',
         twitter: 'https://twitter.com/Neutron_org'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -427,6 +437,7 @@ const assets: AssetList = {
             primary_color_hex: '#1b0847'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -462,6 +473,7 @@ const assets: AssetList = {
             primary_color_hex: '#dcd5ab'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -497,6 +509,7 @@ const assets: AssetList = {
             primary_color_hex: '#333333'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -615,6 +628,7 @@ const assets: AssetList = {
         website: 'https://ondo.finance/usdy',
         twitter: 'https://x.com/OndoFinance'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -658,6 +672,7 @@ const assets: AssetList = {
             primary_color_hex: '#0c0c14'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -788,6 +803,7 @@ const assets: AssetList = {
         website: 'https://planq.network',
         twitter: 'https://twitter.com/planqfoundation'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -837,7 +853,8 @@ const assets: AssetList = {
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
@@ -869,6 +886,7 @@ const assets: AssetList = {
         website: 'https://axelar.network/',
         twitter: 'https://twitter.com/axelarnetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -911,6 +929,7 @@ const assets: AssetList = {
         website: 'https://cosmos.network',
         twitter: 'https://twitter.com/cosmoshub'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -948,6 +967,7 @@ const assets: AssetList = {
             primary_color_hex: '#fba214'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -990,6 +1010,7 @@ const assets: AssetList = {
         website: 'https://www.kava.io/',
         twitter: 'https://twitter.com/KAVA_CHAIN'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1028,6 +1049,7 @@ const assets: AssetList = {
             primary_color_hex: '#7b34ac'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1066,6 +1088,7 @@ const assets: AssetList = {
             primary_color_hex: '#544cfc'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1104,6 +1127,7 @@ const assets: AssetList = {
             primary_color_hex: '#04d4a3'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1157,7 +1181,8 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Migaloo is a cosmwasm-powered, permissionless blockchain designed to build decentralized applications with a focus on interchain liquidity solutions.',
@@ -1185,6 +1210,7 @@ const assets: AssetList = {
             primary_color_hex: '#1c1c1c'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1229,6 +1255,7 @@ const assets: AssetList = {
         website: 'https://neutron.org/',
         twitter: 'https://twitter.com/Neutron_org'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1264,6 +1291,7 @@ const assets: AssetList = {
             primary_color_hex: '#1b0847'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1299,6 +1327,7 @@ const assets: AssetList = {
             primary_color_hex: '#dcd5ab'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1334,6 +1363,7 @@ const assets: AssetList = {
             primary_color_hex: '#333333'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1452,6 +1482,7 @@ const assets: AssetList = {
         website: 'https://ondo.finance/usdy',
         twitter: 'https://x.com/OndoFinance'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1495,6 +1526,7 @@ const assets: AssetList = {
             primary_color_hex: '#0c0c14'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1625,6 +1657,7 @@ const assets: AssetList = {
         website: 'https://planq.network',
         twitter: 'https://twitter.com/planqfoundation'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1674,7 +1707,8 @@ const assets: AssetList = {
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
@@ -1706,6 +1740,7 @@ const assets: AssetList = {
         website: 'https://stride.zone/',
         twitter: 'https://twitter.com/stride_zone'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1748,6 +1783,7 @@ const assets: AssetList = {
         website: 'https://stride.zone/',
         twitter: 'https://twitter.com/stride_zone'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {

@@ -16,6 +16,7 @@ const info: AssetList = {
           denom: 'TNKR',
           exponent: 12
         }],
+      type_asset: 'substrate',
       base: 'Planck',
       name: 'Tinkernet',
       display: 'TNKR',

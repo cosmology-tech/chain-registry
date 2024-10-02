@@ -30,7 +30,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.bandprotocol.com/',
         twitter: 'https://twitter.com/BandProtocol'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

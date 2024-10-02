@@ -30,7 +30,8 @@ const info: AssetList = {
       socials: {
         website: 'https://cnho.io/',
         twitter: 'https://twitter.com/cnho_io'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

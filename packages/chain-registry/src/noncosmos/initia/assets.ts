@@ -26,7 +26,8 @@ const info: AssetList = {
       socials: {
         website: 'https://initia.xyz/',
         twitter: 'https://twitter.com/initiaFDN'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

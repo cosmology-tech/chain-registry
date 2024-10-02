@@ -28,7 +28,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#343434'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Puppy',
@@ -83,7 +84,8 @@ const info: AssetList = {
       socials: {
         website: 'https://baddog.lol/',
         twitter: 'https://x.com/chihuahuawifhat'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Woof',
@@ -106,7 +108,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#d9905f'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Tacos',
@@ -129,7 +132,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#f3bb5b'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Weed',
@@ -152,7 +156,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#43b333'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Bulldog',
@@ -175,7 +180,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#040404'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'CaneCorso',
@@ -198,7 +204,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#d9d2d2'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'BackBone Labs Liquid Staked HUAHUA',

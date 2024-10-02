@@ -21,7 +21,8 @@ const info: AssetList = {
       coingecko_id: 'ulas',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/ulastestnet/images/logo.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

@@ -29,7 +29,8 @@ const info: AssetList = {
       socials: {
         website: 'http://cifer.ai/',
         twitter: 'https://twitter.com/cifer_ai'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

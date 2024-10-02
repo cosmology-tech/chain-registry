@@ -32,6 +32,7 @@ const assets: AssetList = {
         website: 'https://junonetwork.io/',
         twitter: 'https://twitter.com/JunoNetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -162,6 +163,7 @@ const assets: AssetList = {
         website: 'https://junonetwork.io/',
         twitter: 'https://twitter.com/JunoNetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {

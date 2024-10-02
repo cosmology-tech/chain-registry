@@ -21,7 +21,8 @@ const info: AssetList = {
       keywords: ['cascadia', 'neocybernetic'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cascadiatestnet/images/cascadia.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

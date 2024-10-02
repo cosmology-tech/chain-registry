@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.sentinel.co/',
         twitter: 'https://x.com/SentinelDVPN'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

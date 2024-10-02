@@ -38,7 +38,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#14c0ce'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'uoprek',
@@ -49,7 +50,8 @@ const info: AssetList = {
       base: 'tf/nibi149m52kn7nvsg5nftvv4fh85scsavpdfxp5nr7zasz97dum89dp5qkyhy0t/uoprek',
       name: 'uoprek',
       display: 'tf/nibi149m52kn7nvsg5nftvv4fh85scsavpdfxp5nr7zasz97dum89dp5qkyhy0t/uoprek',
-      symbol: 'UOPREK'
+      symbol: 'UOPREK',
+      type_asset: 'sdk.coin'
     },
     {
       description: 'utestate',
@@ -60,7 +62,8 @@ const info: AssetList = {
       base: 'tf/nibi1lp28kx3gz0prsztl024z730ufkg3alahaq3e7a6gae22nk0dqdvsyrrgqw/utestate',
       name: 'utestate',
       display: 'tf/nibi1lp28kx3gz0prsztl024z730ufkg3alahaq3e7a6gae22nk0dqdvsyrrgqw/utestate',
-      symbol: 'UTESTATE'
+      symbol: 'UTESTATE',
+      type_asset: 'sdk.coin'
     },
     {
       description: 'npp',
@@ -71,7 +74,8 @@ const info: AssetList = {
       base: 'tf/nibi1xpp7yn0tce62ffattws3gpd6v0tah0mlevef3ej3r4pnfvsehcgqk3jvxq/NPP',
       name: 'npp',
       display: 'tf/nibi1xpp7yn0tce62ffattws3gpd6v0tah0mlevef3ej3r4pnfvsehcgqk3jvxq/NPP',
-      symbol: 'NPP'
+      symbol: 'NPP',
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Ether is the native fee token of the Ethereum network.',
@@ -100,7 +104,8 @@ const info: AssetList = {
       coingecko_id: 'ethereum',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

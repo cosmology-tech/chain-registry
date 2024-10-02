@@ -34,7 +34,8 @@ const info: AssetList = {
       socials: {
         website: 'https://persistence.one/',
         twitter: 'https://twitter.com/PersistenceOne'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'PSTAKE Liquid-Staked ATOM',
@@ -70,7 +71,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#c4444c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'pSTAKE Finance is a Bitcoin Yield and Liquid Staking protocol, backed by Binance Labs.',
@@ -341,7 +343,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#c3343d'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'PSTAKE Liquid-Staked DYDX',
@@ -376,7 +379,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#c4474e'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'PSTAKE Liquid-Staked STARS',
@@ -411,7 +415,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#070e0e'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -533,7 +538,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#f2cc2f'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -610,7 +616,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#c3343b'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Wrapped Bitcoin on Persistence',

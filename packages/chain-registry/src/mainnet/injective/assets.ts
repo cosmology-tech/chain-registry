@@ -32,7 +32,8 @@ const info: AssetList = {
       socials: {
         website: 'https://injective.com/',
         twitter: 'https://twitter.com/Injective_'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Tether USDt on Injective',
@@ -139,7 +140,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#5480cc'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: '$AUTISM exists to celebrate autism as a superior biological tech stack for a changing world',
@@ -163,7 +165,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#040404'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'BackBone Labs Liquid Staked Injective',
@@ -186,7 +189,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#04a2fc'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The first meme coin on Injective. It’s a dog, but he has nunchucks',
@@ -217,7 +221,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.dogwifnunchucks.com/',
         twitter: 'https://x.com/dogwifnunchucks'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The $WGMI Token - We Gonna Make It. Are you ready?',
@@ -240,7 +245,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#040404'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The first memecoin on osmosis.',
@@ -321,7 +327,8 @@ const info: AssetList = {
       socials: {
         website: 'https://gelotto.io/',
         twitter: 'https://twitter.com/Gelotto2'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Hava Coin is the lifeblood of the Cosmos & Injective networks, rewarding builders and welcoming supporters.',
@@ -349,7 +356,8 @@ const info: AssetList = {
       socials: {
         website: 'https://havacoin.xyz/',
         twitter: 'https://twitter.com/Hava_Coin'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'A clan of 11y bad kids crafting chaos on the Cosmos eco. One bad memecoin to rule them all  $BADKID. Airdropped to Badkids NFT holders and $STARS stakers. It\'s so bad, your wallet\'s throwing a tantrum for it.',
@@ -412,7 +420,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#31292a'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'JUDO is a very futuristic meme token.',
@@ -435,7 +444,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#18120f'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'BEAST-ERC20 on injective',
@@ -474,7 +484,8 @@ const info: AssetList = {
       socials: {
         website: 'https://gelotto.io/',
         twitter: 'https://twitter.com/Gelotto2'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.',
@@ -537,7 +548,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#293a6f'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'A receipt token for lent ATOM issued by the Neptune Protocol.',
@@ -557,7 +569,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#272f4b'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'A receipt token for lent WETH issued by the Neptune Protocol.',
@@ -577,7 +590,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#2a303f'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'A receipt token for lent USDT issued by the Neptune Protocol.',
@@ -597,7 +611,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#54ac94'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'A receipt token for lent TIA issued by the Neptune Protocol.',
@@ -617,7 +632,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#7931f9'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Ninja Blaze Token',
@@ -682,7 +698,8 @@ const info: AssetList = {
       socials: {
         website: 'https://talis.art/',
         twitter: 'https://twitter.com/ProtocolTalis'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Talis revenue sharing token',
@@ -706,7 +723,8 @@ const info: AssetList = {
       socials: {
         website: 'https://talis.art/',
         twitter: 'https://twitter.com/ProtocolTalis'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.',
@@ -793,7 +811,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#04a2fc'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'SYN burn Derivative; minted when SYN is burned via The Furnace',
@@ -813,7 +832,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/syn.ash.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Cosmo is the best currency in the universe.',
@@ -841,7 +861,8 @@ const info: AssetList = {
       socials: {
         website: 'https://github.com/raphaellafar/Cosmo',
         twitter: 'https://x.com/CosmoClub84'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The Representative factory token for Trump Kemistry',
@@ -931,7 +952,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/drugs.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

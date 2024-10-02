@@ -27,7 +27,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#040404'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Governance token of Jinx Wallet and Fury Lend Protocol',
@@ -52,7 +53,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#040404'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Governance token of Fury Swap Protocol',
@@ -77,7 +79,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#090909'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

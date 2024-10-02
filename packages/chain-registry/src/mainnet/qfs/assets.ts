@@ -26,7 +26,8 @@ const info: AssetList = {
         }],
       socials: {
         website: 'https://qfsone.com/'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

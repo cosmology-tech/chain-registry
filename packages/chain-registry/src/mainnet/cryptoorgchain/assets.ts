@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'https://cronos.org/',
         twitter: 'https://twitter.com/cronos_chain'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Synthetic XLM pegged 1:1 by Crypto.com',
@@ -69,7 +70,8 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/stellar/images/xlm.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/stellar/images/xlm.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The native token of Stellar network, transferred via Solo Machine.',
@@ -81,6 +83,7 @@ const info: AssetList = {
           denom: 'lumen',
           exponent: 7
         }],
+      type_asset: 'ics20',
       base: 'ibc/34A1D4BF5FFCDB912F64FE71D54426D56970F873F1279983B69C713B3A62D10D',
       name: 'Lumen (Solo Machine)',
       display: 'lumen',

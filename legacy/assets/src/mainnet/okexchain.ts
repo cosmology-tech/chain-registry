@@ -32,6 +32,7 @@ const assets: AssetList = {
         website: 'https://www.assetmantle.one/',
         twitter: 'https://twitter.com/AssetMantle'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -70,6 +71,7 @@ const assets: AssetList = {
             primary_color_hex: '#343434'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -108,6 +110,7 @@ const assets: AssetList = {
             primary_color_hex: '#3c2832'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -146,6 +149,7 @@ const assets: AssetList = {
             primary_color_hex: '#df969f'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -188,6 +192,7 @@ const assets: AssetList = {
         website: 'https://junonetwork.io/',
         twitter: 'https://twitter.com/JunoNetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -230,6 +235,7 @@ const assets: AssetList = {
         website: 'https://www.assetmantle.one/',
         twitter: 'https://twitter.com/AssetMantle'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -268,6 +274,7 @@ const assets: AssetList = {
             primary_color_hex: '#343434'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -306,6 +313,7 @@ const assets: AssetList = {
             primary_color_hex: '#3c2832'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -344,6 +352,7 @@ const assets: AssetList = {
             primary_color_hex: '#df969f'
           }
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -386,6 +395,7 @@ const assets: AssetList = {
         website: 'https://junonetwork.io/',
         twitter: 'https://twitter.com/JunoNetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {

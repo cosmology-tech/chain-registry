@@ -26,7 +26,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#1c2444'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }, {
       description: 'The MOBX coin rewards the use of eco-friendly micromobility transportation.',
       denom_units: [{
@@ -50,7 +51,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#04ae9b'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

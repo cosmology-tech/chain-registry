@@ -37,7 +37,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.marsprotocol.io/',
         twitter: 'https://twitter.com/mars_protocol'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

@@ -26,7 +26,8 @@ const info: AssetList = {
         }],
       socials: {
         website: 'https://mtgbp.com/'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

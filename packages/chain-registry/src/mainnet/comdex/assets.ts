@@ -27,7 +27,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#fc4454'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Governance Token of Harbor protocol on Comdex network',
@@ -53,7 +54,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#645ca4'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Stable Token of Harbor protocol on Comdex network',
@@ -79,7 +81,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#040404'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

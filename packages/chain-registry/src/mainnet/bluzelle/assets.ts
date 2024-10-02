@@ -33,7 +33,8 @@ const info: AssetList = {
       socials: {
         website: 'http://bluzelle.com/',
         twitter: 'https://twitter.com/BluzelleHQ'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The ELT token of Bluzelle\'s Gamma 4 Gaming Ecosystem',
@@ -57,7 +58,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#0c3ab5'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The game token of Bluzelle\'s Gamma 4 Gaming Ecosystem',
@@ -81,7 +83,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#ee8828'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

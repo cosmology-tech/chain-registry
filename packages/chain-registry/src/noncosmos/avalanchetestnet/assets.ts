@@ -12,6 +12,7 @@ const info: AssetList = {
           denom: 'avax',
           exponent: 18
         }],
+      type_asset: 'evm-base',
       base: 'wei',
       name: 'Avalanche',
       display: 'avax',

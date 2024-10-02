@@ -22,7 +22,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sgetestnet/images/sge.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

@@ -171,7 +171,8 @@ const info: AssetList = {
       socials: {
         website: 'https://ondo.finance/usdy',
         twitter: 'https://x.com/OndoFinance'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'EURe is a Euro-backed stablecoin issued by Monerium on Noble.',

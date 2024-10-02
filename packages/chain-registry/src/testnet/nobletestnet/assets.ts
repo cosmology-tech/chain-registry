@@ -16,7 +16,8 @@ const info: AssetList = {
       base: 'ustake',
       name: 'Stake',
       display: 'stake',
-      symbol: 'STAKE'
+      symbol: 'STAKE',
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Love is a test tokenfactory asset controlled by the Strangelove Team',
@@ -31,7 +32,8 @@ const info: AssetList = {
       base: 'ulove',
       display: 'love',
       name: 'Love',
-      symbol: 'LOVE'
+      symbol: 'LOVE',
+      type_asset: 'sdk.coin'
     },
     {
       description: 'USD Coin',
@@ -70,7 +72,8 @@ const info: AssetList = {
             circle: true,
             primary_color_hex: '#2775CA'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Ondo US Dollar Yield',
@@ -93,7 +96,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

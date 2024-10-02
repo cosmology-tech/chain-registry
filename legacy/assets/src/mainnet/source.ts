@@ -32,6 +32,7 @@ const assets: AssetList = {
         website: 'https://axelar.network/',
         twitter: 'https://twitter.com/axelarnetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -74,6 +75,7 @@ const assets: AssetList = {
         website: 'https://www.kyve.network/',
         twitter: 'https://twitter.com/KYVENetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -204,6 +206,7 @@ const assets: AssetList = {
         website: 'https://planq.network',
         twitter: 'https://twitter.com/planqfoundation'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -253,7 +256,8 @@ const assets: AssetList = {
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
@@ -285,6 +289,7 @@ const assets: AssetList = {
         website: 'https://axelar.network/',
         twitter: 'https://twitter.com/axelarnetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -327,6 +332,7 @@ const assets: AssetList = {
         website: 'https://www.kyve.network/',
         twitter: 'https://twitter.com/KYVENetwork'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -457,6 +463,7 @@ const assets: AssetList = {
         website: 'https://planq.network',
         twitter: 'https://twitter.com/planqfoundation'
       },
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -506,7 +513,8 @@ const assets: AssetList = {
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
-      }
+      },
+      type_asset: 'sdk.coin'
     }
   ]
 };

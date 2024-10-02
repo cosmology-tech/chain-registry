@@ -23,7 +23,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#a2cd9a'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }, {
       description: 'Thiol Gas Token (Thiols) is the Terp Network\'s native utility token, used as the primary means to govern, secure the blockchain & incentivize participants.',
       denom_units: [{
@@ -45,7 +46,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#060607'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

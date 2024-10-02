@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'https://cvn.io',
         twitter: 'https://twitter.com/conscious_chain'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

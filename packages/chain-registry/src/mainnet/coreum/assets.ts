@@ -38,7 +38,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.coreum.com/',
         twitter: 'https://twitter.com/CoreumOfficial'
-      }
+      },
+      type_asset: 'sdk.coin'
     }, {
       description: 'XRP bridged from XRPL',
       denom_units: [{
@@ -75,7 +76,8 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

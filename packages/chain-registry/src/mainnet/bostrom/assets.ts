@@ -25,7 +25,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#4cea4e'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The liquid staking token of Bostrom',
@@ -48,7 +49,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#ffffff'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The resource token of Bostrom',
@@ -75,7 +77,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#f4ecce'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The resource token of Bostrom',
@@ -102,7 +105,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#fba809'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The staking token of Cyber',
@@ -125,7 +129,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#1e8fa9'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

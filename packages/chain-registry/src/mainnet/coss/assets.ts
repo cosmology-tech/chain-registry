@@ -26,7 +26,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#7c7c7c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The inscription token of the COSS.',
@@ -52,7 +53,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#876317'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The inscription token of the CIAS.',
@@ -78,7 +80,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#4f3280'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

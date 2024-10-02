@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'https://functionx.io',
         twitter: 'https://x.com/functionx_io'
-      }
+      },
+      type_asset: 'sdk.coin'
     }, {
       description: 'The cross chain token of the Function X',
       extended_description: 'PUNDIX token is the native token that functions within the Pundi X ecosystem, including PundiX Chain and XPOS. PUNDIX has several core use cases, including:\n- Payment for goods and services from merchants through XPOS\n- Gas Fee on PundiX Chain\n- Listing tokens in the XPOS\n- Merchant payments for loyalty programs and ads',
@@ -69,7 +70,8 @@ const info: AssetList = {
       socials: {
         website: 'https://pundix.com',
         twitter: 'https://x.com/PundiXLabs'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

@@ -26,7 +26,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#1c04fc'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }, {
       description: 'ELEVENPARIS loyalty token on KiChain',
       type_asset: 'cw20',

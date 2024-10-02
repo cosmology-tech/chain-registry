@@ -23,7 +23,8 @@ const info: AssetList = {
       coingecko_id: 'quicksilver',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

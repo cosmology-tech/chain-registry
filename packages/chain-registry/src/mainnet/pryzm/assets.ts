@@ -26,7 +26,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#c6ddf5'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The meme token of PRYZM',
@@ -52,7 +53,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#eb536c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The native staking and governance token of the Cosmos Hub',
@@ -559,7 +561,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/cAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/cAtom.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s native liquid staking token for INJ',
@@ -589,7 +592,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/cInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/cInj.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s native liquid staking token for OSMO',
@@ -619,7 +623,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/cOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/cOsmo.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s native liquid staking token for LUNA',
@@ -649,7 +654,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/cLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/cLuna.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s native liquid staking token for AUUU',
@@ -679,7 +685,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/cAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/cAuuu.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for ATOM with maturity of 30Sep2024',
@@ -701,7 +708,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for ATOM with maturity of 31Dec2024',
@@ -723,7 +731,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for ATOM with maturity of 31Dec2025',
@@ -745,7 +754,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for OSMO with maturity of 30Sep2024',
@@ -767,7 +777,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for OSMO with maturity of 31Dec2024',
@@ -789,7 +800,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for OSMO with maturity of 31Dec2025',
@@ -811,7 +823,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for INJ with maturity of 30Sep2024',
@@ -833,7 +846,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for INJ with maturity of 31Dec2024',
@@ -855,7 +869,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for INJ with maturity of 31Dec2025',
@@ -877,7 +892,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for LUNA with maturity of 30Sep2024',
@@ -899,7 +915,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for LUNA with maturity of 31Dec2024',
@@ -921,7 +938,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for LUNA with maturity of 31Dec2025',
@@ -943,7 +961,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for AUUU with maturity of 30Sep2024',
@@ -965,7 +984,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for AUUU with maturity of 31Dec2024',
@@ -987,7 +1007,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for AUUU with maturity of 31Dec2025',
@@ -1009,7 +1030,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for stTIA with maturity of 30Sep2024',
@@ -1031,7 +1053,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for stTIA with maturity of 31Dec2024',
@@ -1053,7 +1076,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for stTIA with maturity of 31Dec2025',
@@ -1075,7 +1099,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for stDYDX with maturity of 30Sep2024',
@@ -1097,7 +1122,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for stDYDX with maturity of 31Dec2024',
@@ -1119,7 +1145,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for stDYDX with maturity of 31Dec2025',
@@ -1141,7 +1168,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for dATOM with maturity of 31Dec2024',
@@ -1163,7 +1191,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for dATOM with maturity of 30Jun2025',
@@ -1185,7 +1214,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted principal token for dATOM with maturity of 31Dec2025',
@@ -1207,7 +1237,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for ATOM with maturity of 30Sep2024',
@@ -1229,7 +1260,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for ATOM with maturity of 31Dec2024',
@@ -1251,7 +1283,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for ATOM with maturity of 31Dec2025',
@@ -1273,7 +1306,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for OSMO with maturity of 30Sep2024',
@@ -1295,7 +1329,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for OSMO with maturity of 31Dec2024',
@@ -1317,7 +1352,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for OSMO with maturity of 31Dec2025',
@@ -1339,7 +1375,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for INJ with maturity of 30Sep2024',
@@ -1361,7 +1398,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for INJ with maturity of 31Dec2024',
@@ -1383,7 +1421,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for INJ with maturity of 31Dec2025',
@@ -1405,7 +1444,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for LUNA with maturity of 30Sep2024',
@@ -1427,7 +1467,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for LUNA with maturity of 31Dec2024',
@@ -1449,7 +1490,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for LUNA with maturity of 31Dec2025',
@@ -1471,7 +1513,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for AUUU with maturity of 30Sep2024',
@@ -1493,7 +1536,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for AUUU with maturity of 31Dec2024',
@@ -1515,7 +1559,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for AUUU with maturity of 31Dec2025',
@@ -1537,7 +1582,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for stTIA with maturity of 30Sep2024',
@@ -1559,7 +1605,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for stTIA with maturity of 31Dec2024',
@@ -1581,7 +1628,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for stTIA with maturity of 31Dec2025',
@@ -1603,7 +1651,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for stDYDX with maturity of 30Sep2024',
@@ -1625,7 +1674,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for stDYDX with maturity of 31Dec2024',
@@ -1647,7 +1697,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for stDYDX with maturity of 31Dec2025',
@@ -1669,7 +1720,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for dATOM with maturity of 31Dec2024',
@@ -1691,7 +1743,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for dATOM with maturity of 30Jun2025',
@@ -1713,7 +1766,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s refracted yield token for dATOM with maturity of 31Dec2025',
@@ -1735,7 +1789,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for USDC / USDC.axl pool',
@@ -1757,7 +1812,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for ATOM Yield pool',
@@ -1779,7 +1835,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for ATOM Boost pool',
@@ -1801,7 +1858,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for ATOM / USDC pool',
@@ -1823,7 +1881,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for INJ Yield pool',
@@ -1845,7 +1904,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for INJ Boost pool',
@@ -1867,7 +1927,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for INJ / USDC pool',
@@ -1889,7 +1950,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for OSMO Yield pool',
@@ -1911,7 +1973,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for OSMO Boost pool',
@@ -1933,7 +1996,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for OSMO / USDC pool',
@@ -1955,7 +2019,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for LUNA Yield pool',
@@ -1977,7 +2042,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for LUNA Boost pool',
@@ -1999,7 +2065,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for LUNA / USDC pool',
@@ -2021,7 +2088,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for AUUU Yield pool',
@@ -2043,7 +2111,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for AUUU Boost pool',
@@ -2065,7 +2134,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for AUUU / USDC pool',
@@ -2087,7 +2157,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for stDYDX Yield pool',
@@ -2109,7 +2180,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for stDYDX Boost pool',
@@ -2131,7 +2203,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for DYDX / USDC pool',
@@ -2153,7 +2226,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for stTIA Yield pool',
@@ -2175,7 +2249,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for stTIA Boost pool',
@@ -2197,7 +2272,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for TIA / USDC pool',
@@ -2219,7 +2295,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for dATOM Yield pool',
@@ -2241,7 +2318,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Pryzm\'s LP token for dATOM Boost pool',
@@ -2263,7 +2341,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

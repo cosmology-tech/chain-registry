@@ -39,7 +39,8 @@ const info: AssetList = {
       socials: {
         website: 'https://archway.io/',
         twitter: 'https://twitter.com/archwayHQ'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'ERIS liquid staked ARCH',

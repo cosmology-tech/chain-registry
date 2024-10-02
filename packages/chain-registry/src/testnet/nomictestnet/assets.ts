@@ -37,7 +37,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#6404fc'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }, {
       description: 'Bitcoin. On Cosmos.',
       denom_units: [{
@@ -73,7 +74,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#8436e6'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

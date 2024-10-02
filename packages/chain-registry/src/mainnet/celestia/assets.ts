@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'https://celestia.org/',
         twitter: 'https://twitter.com/CelestiaOrg'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

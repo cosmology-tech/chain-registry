@@ -24,7 +24,8 @@ const info: AssetList = {
       socials: {
         website: 'https://coinhall.org/',
         twitter: 'https://twitter.com/coinhall_org'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

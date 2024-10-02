@@ -16,7 +16,8 @@ const info: AssetList = {
       base: 'ustate',
       name: 'Stateset',
       display: 'state',
-      symbol: 'STATE'
+      symbol: 'STATE',
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

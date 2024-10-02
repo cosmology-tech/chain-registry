@@ -28,7 +28,8 @@ const info: AssetList = {
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'GEO token for ODIN Protocol',
@@ -57,7 +58,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#c3ebf3'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'O9W token for ODIN Protocol',
@@ -86,7 +88,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#040404'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

@@ -20,7 +20,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/doravotatestnet/images/doravota.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

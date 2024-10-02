@@ -32,7 +32,8 @@ const info: AssetList = {
       socials: {
         website: 'https://cosmos.network',
         twitter: 'https://twitter.com/cosmoshub'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Tether USDt on the Cosmos Hub',

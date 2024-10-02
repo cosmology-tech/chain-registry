@@ -20,7 +20,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyxtestnet/images/nyx.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }, {
       description: 'NYM Token (NYM) is the Nym Network\'s native utility token, used as the primary means to incentivize mixnet node operators.',
       denom_units: [{
@@ -52,7 +53,8 @@ const info: AssetList = {
             dark_mode: true,
             circle: true
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

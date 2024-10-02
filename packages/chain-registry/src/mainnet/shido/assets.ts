@@ -30,7 +30,8 @@ const info: AssetList = {
       socials: {
         website: 'https://shido.io/',
         twitter: 'https://twitter.com/ShidoGlobal'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

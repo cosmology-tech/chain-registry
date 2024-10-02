@@ -712,7 +712,8 @@ const testnet_assets: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/osmosistestnet/images/willyz.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/osmosistestnet/images/willyz.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The yield token for ATOM denominated vaults on Amulet Protocol',

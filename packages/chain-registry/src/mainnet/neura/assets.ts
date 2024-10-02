@@ -34,7 +34,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.ankr.com',
         twitter: 'https://x.com/ankr'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

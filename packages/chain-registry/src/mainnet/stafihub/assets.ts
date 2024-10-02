@@ -22,7 +22,8 @@ const info: AssetList = {
       coingecko_id: 'stafi',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/fis.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'A liquid staking representation of staked ATOMs',
@@ -50,7 +51,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/ratom.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'A liquid staking representation of staked IRISs',
@@ -78,7 +80,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/riris.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'A liquid staking representation of staked HUAHUAs',
@@ -106,7 +109,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/rhuahua.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'A liquid staking representation of staked SWTHs',
@@ -134,7 +138,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/rswth.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

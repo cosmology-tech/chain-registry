@@ -21,7 +21,8 @@ const info: AssetList = {
       coingecko_id: 'stargaze',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

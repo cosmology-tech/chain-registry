@@ -24,7 +24,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#1eb975'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }, {
       description: 'The CGAS coin is the transactional token within the Chronic Chain network, aimed to serve the entire cannabis community through its payment network, supply chain and trust network.',
       denom_units: [{
@@ -47,7 +48,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#ecb368'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

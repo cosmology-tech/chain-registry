@@ -24,7 +24,8 @@ const info: AssetList = {
       socials: {
         website: 'https://bitbadges.io/',
         twitter: 'https://twitter.com/bitbadges_io'
-      }
+      },
+      type_asset: 'sdk.coin'
     }, {
       description: 'The native staking denom for the BitBadges blockchain.',
       denom_units: [{
@@ -47,7 +48,8 @@ const info: AssetList = {
       socials: {
         website: 'https://bitbadges.io/',
         twitter: 'https://twitter.com/bitbadges_io'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

@@ -32,7 +32,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.sei.io/',
         twitter: 'https://twitter.com/SeiNetwork'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'OIN Token ($OIN) is a groundbreaking digital asset developed on the $SEI Blockchain. It transcends being merely a cryptocurrency; $OIN stands as a robust store of value, symbolizing the future of decentralized finance and its potential to reshape the crypto landscape.',
@@ -56,7 +57,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#6cdbac'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'ERIS liquid staked SEI',
@@ -76,7 +78,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/ampsei.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Popeye the Seilor',
@@ -99,7 +102,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#04040a'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'A wise dog and a marshal arts master',
@@ -122,7 +126,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#d4d0c7'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The first memecoin on osmosis.',
@@ -173,6 +178,8 @@ const info: AssetList = {
           denom: 'oozaru',
           exponent: 6
         }],
+      type_asset: 'cw20',
+      address: 'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda',
       base: 'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda',
       name: 'Oozaru',
       display: 'oozaru',

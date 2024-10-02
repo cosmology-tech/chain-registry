@@ -46,6 +46,10 @@ const info: Chain = {
       {
         address: 'https://router.rpc.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️'
+      },
+      {
+        address: 'https://router-mainnet-rpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
     rest: [
@@ -60,6 +64,10 @@ const info: Chain = {
       {
         address: 'https://router.api.nodeshub.online',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️'
+      },
+      {
+        address: 'https://router-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
     grpc: [
@@ -74,6 +82,10 @@ const info: Chain = {
       {
         address: 'router.grpc.nodeshub.online',
         provider: 'Nodes Hub'
+      },
+      {
+        address: 'router-mainnet-grpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
     "evm-http-jsonrpc": [{

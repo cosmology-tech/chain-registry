@@ -32,7 +32,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.kava.io/',
         twitter: 'https://twitter.com/KAVA_CHAIN'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Governance token of Kava Lend Protocol',
@@ -58,7 +59,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#7b34ac'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Governance token of Kava Swap Protocol',
@@ -84,7 +86,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#544cfc'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The native stablecoin of Kava',
@@ -110,7 +113,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#04d4a3'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -149,7 +153,8 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     }
   ]
 };

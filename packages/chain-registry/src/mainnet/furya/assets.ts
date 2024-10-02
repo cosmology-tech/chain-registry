@@ -30,7 +30,8 @@ const info: AssetList = {
       keywords: ['gaming', 'staking'],
       socials: {
         twitter: 'https://twitter.com/furyachain'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

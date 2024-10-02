@@ -35,7 +35,8 @@ const info: AssetList = {
       socials: {
         website: 'https://gitopia.com/',
         twitter: 'https://twitter.com/gitopiaDAO'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

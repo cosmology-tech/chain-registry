@@ -25,6 +25,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -60,6 +61,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.svg'
         }],
+      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {

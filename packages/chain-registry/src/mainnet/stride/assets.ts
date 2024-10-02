@@ -32,7 +32,8 @@ const info: AssetList = {
       socials: {
         website: 'https://stride.zone/',
         twitter: 'https://twitter.com/stride_zone'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -65,7 +66,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e40474'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -98,7 +100,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e40474'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -131,7 +134,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e40474'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -164,7 +168,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e40474'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -197,7 +202,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e40474'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -229,7 +235,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e40474'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -262,7 +269,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e40474'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Stride\'s liquid staked DYDX',
@@ -295,7 +303,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e40474'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Stride\'s liquid staked TIA',
@@ -328,7 +337,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e40474'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Stride\'s liquid staked DYM',
@@ -361,7 +371,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e40474'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -394,7 +405,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#fbd9e9'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -426,7 +438,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e40474'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -459,7 +472,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e40474'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Stride\'s liquid staked SAGA',
@@ -492,7 +506,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e40474'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The native token of Celestia',
@@ -568,7 +583,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e40474'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -600,7 +616,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e40474'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

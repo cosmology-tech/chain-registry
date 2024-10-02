@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'https://humans.ai/',
         twitter: 'https://twitter.com/humansdotai'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

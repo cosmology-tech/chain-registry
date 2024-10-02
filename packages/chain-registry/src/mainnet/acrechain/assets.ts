@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'https://arable.finance/',
         twitter: 'https://twitter.com/ArableProtocol'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Overcollateralized stable coin for Arable derivatives v1',
@@ -61,7 +62,8 @@ const info: AssetList = {
       socials: {
         website: 'https://arable.finance/',
         twitter: 'https://twitter.com/ArableProtocol'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Ciento Exchange Token',
@@ -86,7 +88,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#ecc53b'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

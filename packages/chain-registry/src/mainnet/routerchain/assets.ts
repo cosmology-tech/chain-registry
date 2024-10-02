@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.routerprotocol.com/',
         twitter: 'https://x.com/routerprotocol'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

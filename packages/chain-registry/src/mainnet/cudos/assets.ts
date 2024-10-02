@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'http://www.cudos.org',
         twitter: 'https://twitter.com/CUDOS_'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

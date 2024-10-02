@@ -37,7 +37,8 @@ const info: AssetList = {
       socials: {
         website: 'https://aioz.network/',
         twitter: 'https://twitter.com/AIOZNetwork'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

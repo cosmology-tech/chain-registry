@@ -26,7 +26,8 @@ const info: AssetList = {
       socials: {
         website: 'https://palomachain.com/',
         twitter: 'https://twitter.com/paloma_chain'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

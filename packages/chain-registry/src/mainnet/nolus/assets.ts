@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'https://nolus.io/',
         twitter: 'https://twitter.com/NolusProtocol'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'axlUSDC transferred from the Osmosis mainnet that is supported on the Nolus chain',

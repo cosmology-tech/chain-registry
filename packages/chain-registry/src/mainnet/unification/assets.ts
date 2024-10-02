@@ -31,7 +31,8 @@ const info: AssetList = {
         website: 'https://unification.com',
         twitter: 'https://twitter.com/UnificationUND'
       },
-      coingecko_id: 'unification'
+      coingecko_id: 'unification',
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

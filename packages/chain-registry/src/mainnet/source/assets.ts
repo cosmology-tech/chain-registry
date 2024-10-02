@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.sourceprotocol.io/',
         twitter: 'https://twitter.com/sourceprotocol_'
-      }
+      },
+      type_asset: 'sdk.coin'
     }, {
       description: 'Source Protocol\'s SRCX Token Bridged from BNB Through Planq',
       denom_units: [{

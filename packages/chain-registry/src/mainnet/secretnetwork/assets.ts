@@ -32,7 +32,8 @@ const info: AssetList = {
       socials: {
         website: 'https://scrt.network/',
         twitter: 'https://twitter.com/SecretNetwork'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The native token cw20 for SIENNA on Secret Network',
@@ -205,6 +206,8 @@ const info: AssetList = {
           exponent: 6
         }],
       base: 'cw20:secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
+      type_asset: 'snip20',
+      address: 'secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
       name: 'Alter',
       display: 'alter',
       symbol: 'ALTER',

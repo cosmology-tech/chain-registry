@@ -41,7 +41,8 @@ const info: AssetList = {
             base_denom: 'factory/bze13gzq40che93tgfm9kzmkpjamah5nj0j73pyhqk/uvdl'
           },
           provider: 'Vidulum'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

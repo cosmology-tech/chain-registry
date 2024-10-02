@@ -30,7 +30,8 @@ const info: AssetList = {
       socials: {
         website: 'https://rizon.world/',
         twitter: 'https://twitter.com/hdac_rizon'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

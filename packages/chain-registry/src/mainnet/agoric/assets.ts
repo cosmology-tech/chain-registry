@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'https://agoric.com/',
         twitter: 'https://twitter.com/agoric'
-      }
+      },
+      type_asset: 'sdk.coin'
     }, {
       description: 'IST is the stable token used by the Agoric chain for execution fees and commerce.',
       denom_units: [{
@@ -56,7 +57,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#d485e2'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

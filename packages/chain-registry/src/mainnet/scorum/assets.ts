@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'https://scorum.network',
         twitter: 'https://twitter.com/scorum_en'
-      }
+      },
+      type_asset: 'sdk.coin'
     }, {
       description: 'Virtual(non-transferable) coin used to pay gas',
       denom_units: [{
@@ -52,7 +53,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#555555'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

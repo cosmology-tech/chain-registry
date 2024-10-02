@@ -30,7 +30,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#04cd80'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }, {
       description: 'Deenar gold-backed stablecoin',
       extended_description: 'Deenar Gold (DEEN) is a 1:1 gold-backed halal stablecoin with the ability to physically deliver gold. 1 DEEN = 1 gram of gold.',

@@ -32,7 +32,8 @@ const info: AssetList = {
       coingecko_id: 'elys',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/elystestnet/images/elys.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Eden token definition',
@@ -62,7 +63,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/elystestnet/images/eden.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'USDC from Noble',

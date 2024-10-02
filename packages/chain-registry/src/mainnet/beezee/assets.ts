@@ -27,7 +27,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#079fd7'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Vidulum App Token',
@@ -53,7 +54,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#3454bc'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'OSMO from Osmosis',
@@ -120,7 +122,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#FEFEFE'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The native token of Archway network',

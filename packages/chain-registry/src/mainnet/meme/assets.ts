@@ -26,7 +26,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#b7dcd8'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }, {
       description: 'The native EVM, governance and staking token of the Planq Network',
       extended_description: 'Planq is the very first cryptocurrency project to keep mobile platform usability at heart, taking a step away from dependency on desktop services. By focusing on easy accessibility and close integration of other blockchains via easy to use bridges, Planq will push Web 3 adoption in the mobile space to the next level.',

@@ -23,7 +23,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{

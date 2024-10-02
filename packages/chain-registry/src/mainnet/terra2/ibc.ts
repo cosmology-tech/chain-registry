@@ -842,8 +842,8 @@ const info: IBCInfo[] = [
         ordering: 'ordered',
         version: 'ics27-1',
         tags: {
-          status: 'live',
-          preferred: true
+          status: 'killed',
+          preferred: false
         }
       },
       {
@@ -869,6 +869,22 @@ const info: IBCInfo[] = [
         },
         chain_2: {
           channel_id: 'channel-480',
+          port_id: 'icahost'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain_1: {
+          channel_id: 'channel-25',
+          port_id: 'icacontroller-delegation-uluna'
+        },
+        chain_2: {
+          channel_id: 'channel-526',
           port_id: 'icahost'
         },
         ordering: 'ordered',

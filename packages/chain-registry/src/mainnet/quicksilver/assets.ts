@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'https://quicksilver.zone/',
         twitter: 'https://twitter.com/quicksilverzone'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Quicksilver Liquid Staked STARS',
@@ -66,7 +67,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#fc944c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Quicksilver Liquid Staked ATOM',
@@ -101,7 +103,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#fc944c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Quicksilver Liquid Staked REGEN',
@@ -136,7 +139,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#fc944c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Quicksilver Liquid Staked OSMO',
@@ -171,7 +175,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#fc944c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Quicksilver Liquid Staked SOMM',
@@ -206,7 +211,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#fc944c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Quicksilver Liquid Staked JUNO',
@@ -241,7 +247,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#fc944c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Quicksilver Liquid Staked DYDX',
@@ -276,7 +283,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#fc944c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Quicksilver Liquid Staked SAGA',
@@ -311,7 +319,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#f9924b'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Quicksilver Liquid Staked BLD',
@@ -346,7 +355,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#fc944c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Noble USDC via dYdX Protocol',

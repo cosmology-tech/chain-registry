@@ -23,7 +23,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/thorchain/images/rune.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/thorchain/images/rune.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

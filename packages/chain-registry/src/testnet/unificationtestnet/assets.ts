@@ -37,7 +37,8 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

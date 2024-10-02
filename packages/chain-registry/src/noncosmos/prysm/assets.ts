@@ -25,7 +25,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.prysm.network/',
         twitter: 'https://twitter.com/PrysmNetwork'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

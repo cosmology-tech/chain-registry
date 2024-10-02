@@ -24,7 +24,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The native token of NEXX GEN AI',
@@ -44,7 +45,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/nexx.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       type_asset: 'sdk.coin',

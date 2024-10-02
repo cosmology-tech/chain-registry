@@ -27,7 +27,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#caf2ea'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'e-Money EUR stablecoin. Audited and backed by fiat EUR deposits and government bonds.',
@@ -53,7 +54,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#f4c808'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'e-Money CHF stablecoin. Audited and backed by fiat CHF deposits and government bonds.',
@@ -78,7 +80,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#db2b1c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'e-Money NOK stablecoin. Audited and backed by fiat NOK deposits and government bonds.',
@@ -103,7 +106,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#cb142d'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'e-Money DKK stablecoin. Audited and backed by fiat DKK deposits and government bonds.',
@@ -128,7 +132,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#ac0c34'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'e-Money SEK stablecoin. Audited and backed by fiat SEK deposits and government bonds.',
@@ -153,7 +158,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#045493'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

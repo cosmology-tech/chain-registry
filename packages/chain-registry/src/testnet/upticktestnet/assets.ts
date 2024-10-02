@@ -20,7 +20,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/upticktestnet/images/uptick.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

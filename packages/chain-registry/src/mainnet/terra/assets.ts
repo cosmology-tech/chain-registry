@@ -38,7 +38,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#fcdb5b'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The USD stablecoin of Terra Classic.',
@@ -74,7 +75,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#5493f2'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The KRW stablecoin of Terra Classic.',
@@ -109,7 +111,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#4b83e0'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The governance token of the White Whale protocol on Terra.',
@@ -4433,7 +4436,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#5981d7'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The CAD stablecoin of Terra Classic.',
@@ -4468,7 +4472,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#de725b'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The CHF stablecoin of Terra Classic.',
@@ -4503,7 +4508,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#c95c41'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The CNY stablecoin of Terra Classic.',
@@ -4538,7 +4544,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#d3684c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The DKK stablecoin of Terra Classic.',
@@ -4573,7 +4580,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#db300a'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The EUR stablecoin of Terra Classic.',
@@ -4608,7 +4616,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#1535b2'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The GBP stablecoin of Terra Classic.',
@@ -4643,7 +4652,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#d49b9c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The HKD stablecoin of Terra Classic.',
@@ -4678,7 +4688,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#dc300a'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The IDR stablecoin of Terra Classic.',
@@ -4713,7 +4724,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#5893ed'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The INR stablecoin of Terra Classic.',
@@ -4748,7 +4760,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#4b87e6'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The JPY stablecoin of Terra Classic.',
@@ -4783,7 +4796,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#cfcfcf'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The MNT stablecoin of Terra Classic.',
@@ -4818,7 +4832,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#4085f0'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The MYR stablecoin of Terra Classic.',
@@ -4853,7 +4868,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#5893ed'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The NOK stablecoin of Terra Classic.',
@@ -4888,7 +4904,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#5493f3'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The PHP stablecoin of Terra Classic.',
@@ -4923,7 +4940,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e88057'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The SDR stablecoin of Terra Classic.',
@@ -4958,7 +4976,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#2fa4f1'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The SEK stablecoin of Terra Classic.',
@@ -4993,7 +5012,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#2e71e1'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The SGD stablecoin of Terra Classic.',
@@ -5028,7 +5048,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#4886e7'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The THB stablecoin of Terra Classic.',
@@ -5063,7 +5084,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#5493f3'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The TWD stablecoin of Terra Classic.',
@@ -5098,7 +5120,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#5493f3'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{

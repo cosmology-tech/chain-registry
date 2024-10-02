@@ -30,7 +30,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.assetmantle.one/',
         twitter: 'https://twitter.com/AssetMantle'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

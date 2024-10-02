@@ -20,7 +20,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/kujiratestnet/images/kuji.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }, {
       description: 'The testnet token of Fuzion',
       denom_units: [{
@@ -39,7 +40,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/kujiratestnet/images/fuzn.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

@@ -27,7 +27,8 @@ const info: AssetList = {
       socials: {
         website: 'https://pylons.tech',
         twitter: 'https://twitter.com/pylonstech'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

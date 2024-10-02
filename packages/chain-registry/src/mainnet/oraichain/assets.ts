@@ -53,7 +53,8 @@ const info: AssetList = {
             primary_color_hex: '#000000'
           }
         }
-      ]
+      ],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The ATOM native token of Oraichain.',
@@ -64,6 +65,7 @@ const info: AssetList = {
           denom: 'atom',
           exponent: 6
         }],
+      type_asset: 'ics20',
       base: 'ibc/A2E2EEC9057A4A1C2C0A6A4C78B0239118DF5F278830F50B4A6BDD7A66506B78',
       name: 'ATOM',
       display: 'atom',
@@ -105,6 +107,7 @@ const info: AssetList = {
           denom: 'osmo',
           exponent: 6
         }],
+      type_asset: 'ics20',
       base: 'ibc/9C4DCD21B48231D0BC2AC3D1B74A864746B37E4292694C93C617324250D002FC',
       name: 'OSMO',
       display: 'osmo',
@@ -181,7 +184,7 @@ const info: AssetList = {
     },
     {
       description: 'The Wrapped INJ token for the Oraichain.',
-      type_asset: 'sdk.coin',
+      type_asset: 'cw20',
       address: 'orai19rtmkk6sn4tppvjmp5d5zj6gfsdykrl5rw2euu5gwur3luheuuusesqn49',
       denom_units: [{
           denom: 'cw20:orai19rtmkk6sn4tppvjmp5d5zj6gfsdykrl5rw2euu5gwur3luheuuusesqn49',
@@ -611,7 +614,8 @@ const info: AssetList = {
             primary_color_hex: '#0088CC',
             background_color_hex: '#0088CC'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

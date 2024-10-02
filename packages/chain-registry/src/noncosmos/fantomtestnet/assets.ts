@@ -11,6 +11,7 @@ const info: AssetList = {
           denom: 'ftm',
           exponent: 18
         }],
+      type_asset: 'evm-base',
       base: 'wei',
       name: 'Fantom',
       display: 'ftm',

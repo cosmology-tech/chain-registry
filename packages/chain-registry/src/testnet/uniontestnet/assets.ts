@@ -21,7 +21,8 @@ const info: AssetList = {
       keywords: ['staking'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/uniontestnet/images/union.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

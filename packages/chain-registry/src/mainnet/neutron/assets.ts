@@ -34,7 +34,8 @@ const info: AssetList = {
       socials: {
         website: 'https://neutron.org/',
         twitter: 'https://twitter.com/Neutron_org'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'IBC uatom through cosmoshub-4 transfer/channel-1',
@@ -186,7 +187,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#47391d'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'wstETH on Neutron',
@@ -218,7 +220,8 @@ const info: AssetList = {
         }],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wsteth.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'NBTC on Neutron',
@@ -329,7 +332,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#16233d'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.',
@@ -360,7 +364,8 @@ const info: AssetList = {
       socials: {
         website: 'https://astroport.fi/',
         twitter: 'https://twitter.com/astroport_fi'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.',
@@ -393,7 +398,8 @@ const info: AssetList = {
       socials: {
         website: 'https://astroport.fi/',
         twitter: 'https://twitter.com/astroport_fi'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'ASTRO.cw20 on Neutron',
@@ -457,7 +463,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#fab442'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'clownmaxxed store of value',
@@ -481,7 +488,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#242033'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Jimmy Neutron Finance',
@@ -505,7 +513,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#7d3c20'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Baddest coin on Cosmos',
@@ -529,7 +538,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#211a0d'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'BITCOSMOS',
@@ -553,7 +563,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#1b0847'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'What the Fuck',
@@ -577,7 +588,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#dcd5ab'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'NLS on Neutron',
@@ -644,7 +656,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#516b80'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The deflationary utility token of the Apollo DAO project',
@@ -669,7 +682,8 @@ const info: AssetList = {
       socials: {
         website: 'https://apollo.farm/',
         twitter: 'https://twitter.com/ApolloDAO'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'NEWTROLL',
@@ -690,7 +704,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/newtroll.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Retro Game',
@@ -711,7 +726,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/retro.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'THE FIRST NATIVE GODDARD MEMECOIN ON NEUTRON',
@@ -732,7 +748,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/goddard.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The first memecoin on osmosis.',
@@ -796,7 +813,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#333333'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'A clan of 11y bad kids crafting chaos on the Cosmos eco. One bad memecoin to rule them all  $BADKID. Airdropped to Badkids NFT holders and $STARS stakers. It\'s so bad, your wallet\'s throwing a tantrum for it.',
@@ -860,7 +878,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#8c9098'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: '$ATOM to $1,000 LFG!!',
@@ -884,7 +903,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#040404'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       type_asset: 'ics20',
@@ -953,7 +973,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#ebf0f4'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -973,7 +994,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#556867'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       name: 'Ninja Blaze Token',
@@ -997,7 +1019,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#9890f9'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Mars Protocol is a cross-collateralized Money Market Protocol on Neutron and Osmosis.',
@@ -1029,7 +1052,8 @@ const info: AssetList = {
       socials: {
         website: 'https://marsprotocol.io/',
         twitter: 'https://x.com/mars_protocol'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Drop staked ATOM',
@@ -1063,7 +1087,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.drop.money/',
         twitter: 'https://x.com/Dropdotmoney'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'SinGarden token',
@@ -1087,7 +1112,33 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#ebf0f4'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
+    },
+    {
+      description: 'CryptoGopniks token',
+      denom_units: [{
+          denom: 'factory/neutron133xakkrfksq39wxy575unve2nyehg5npx75nph/GOP',
+          exponent: 0,
+          aliases: ['uGOP']
+        }, {
+          denom: 'GOP',
+          exponent: 6
+        }],
+      base: 'factory/neutron133xakkrfksq39wxy575unve2nyehg5npx75nph/GOP',
+      name: 'GOP',
+      display: 'GOP',
+      symbol: 'GOP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/gop.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/gop.png',
+          theme: {
+            primary_color_hex: '#000000'
+          }
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

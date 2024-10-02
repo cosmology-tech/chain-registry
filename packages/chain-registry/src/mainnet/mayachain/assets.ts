@@ -22,7 +22,8 @@ const info: AssetList = {
       keywords: ['dex'],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mayachain/images/cacao.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     }, {
       description: 'The native revenue sharing token of Maya Protocol',
       denom_units: [{
@@ -41,7 +42,8 @@ const info: AssetList = {
         }],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mayachain/images/maya.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

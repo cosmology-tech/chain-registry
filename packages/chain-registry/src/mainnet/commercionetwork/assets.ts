@@ -27,7 +27,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#41a68c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }, {
       description: 'The cash credit token of Commercio.network',
       denom_units: [{
@@ -53,7 +54,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#fbb804'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

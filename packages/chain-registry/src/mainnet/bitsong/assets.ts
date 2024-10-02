@@ -55,7 +55,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e8e5e7'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Nicola Fasano a BitSong Music FanToken',
@@ -78,7 +79,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#c3a59e'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Delta 9 a BitSong Music FanToken',
@@ -101,7 +103,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#0d0d0d'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'FONTI a BitSong Music FanToken',
@@ -124,7 +127,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#1c2536'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'BlackJack a BitSong Music FanToken',
@@ -147,7 +151,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#f5f5f5'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Rawanne a BitSong Music FanToken',
@@ -170,7 +175,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#1a1521'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Enmoda a BitSong Music FanToken',
@@ -193,7 +199,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#161616'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: '404Deep Records a BitSong Music FanToken',
@@ -216,7 +223,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#cfb1b3'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'N43 a BitSong Music FanToken',
@@ -239,7 +247,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#0a0a0a'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Puro Lobo a BitSong Music FanToken',
@@ -262,7 +271,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#b8b6b6'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Vibranium a BitSong Music FanToken',
@@ -285,7 +295,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#0f0c27'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Karina a BitSong Music FanToken',
@@ -308,7 +319,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#21283c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Luca Testa a BitSong Music FanToken',
@@ -331,7 +343,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#151515'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Carolina Marquez a BitSong Music FanToken',
@@ -354,7 +367,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#847760'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       deprecated: true,
@@ -369,7 +383,8 @@ const info: AssetList = {
       base: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00',
       name: '[Redacted] Fantoken (ft3...A00)',
       display: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00/6',
-      symbol: 'LDON'
+      symbol: 'LDON',
+      type_asset: 'sdk.coin'
     }
   ]
 };

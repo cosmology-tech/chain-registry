@@ -32,7 +32,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.stargaze.zone/',
         twitter: 'https://twitter.com/StargazeZone'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The native token of ohhNFT.',
@@ -57,7 +58,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#c9720c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The native meme token of stargaze.',
@@ -82,7 +84,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#b3a584'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'ohhNFT LP token.',
@@ -107,7 +110,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#70372a'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Social token for the ohhVAULT.',
@@ -132,7 +136,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#dcc0c2'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The native coin of Sneaky Productions.',
@@ -157,7 +162,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#fbcaca'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'LAB - Everything is an Experiment',
@@ -329,7 +335,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/pleb.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'KINGSHIT',
@@ -349,7 +356,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/kingshit.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'BOTZ',
@@ -369,7 +377,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/botz.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'COCKS',
@@ -389,7 +398,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/cocks.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The Representative factory token for Trump Kemistry',
@@ -449,7 +459,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/wolfshit.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Native token of the Underworld.',
@@ -469,7 +480,52 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/vault.png'
-        }]
+        }],
+      type_asset: 'sdk.coin'
+    },
+    {
+      description: 'Bonded GopLend STARS',
+      extended_description: 'bglSTARS (Bonded GopLend STARS) is issued in exchange for STARS for the deposit period. These tokens are liquid and generate income in the amount of the set APR on the platform',
+      denom_units: [{
+          denom: 'factory/stars1ur79p98rmpn456esgzjernaxy7v25mlwqsv8uhymzxahfw77427syk2h9j/bglSTARS',
+          exponent: 0
+        }, {
+          denom: 'bglSTARS',
+          exponent: 6
+        }],
+      base: 'factory/stars1ur79p98rmpn456esgzjernaxy7v25mlwqsv8uhymzxahfw77427syk2h9j/bglSTARS',
+      name: 'bglSTARS',
+      display: 'bglSTARS',
+      symbol: 'bglSTARS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/bglSTARS.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/bglSTARS.png'
+        }],
+      type_asset: 'sdk.coin'
+    },
+    {
+      description: 'Bonded GopLend USDC',
+      extended_description: 'bglUSDC (Bonded GopLend USDC) is issued in exchange for USDC for the deposit period. These tokens are liquid and generate income in the amount of the set APR on the platform',
+      denom_units: [{
+          denom: 'factory/stars1ur79p98rmpn456esgzjernaxy7v25mlwqsv8uhymzxahfw77427syk2h9j/bglUSDC',
+          exponent: 0
+        }, {
+          denom: 'bglUSDC',
+          exponent: 6
+        }],
+      base: 'factory/stars1ur79p98rmpn456esgzjernaxy7v25mlwqsv8uhymzxahfw77427syk2h9j/bglUSDC',
+      name: 'bglUSDC',
+      display: 'bglUSDC',
+      symbol: 'bglUSDC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/bglUSDC.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/bglUSDC.png'
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

@@ -32,7 +32,8 @@ const info: AssetList = {
             background_color_hex: '#00e33a',
             circle: false
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

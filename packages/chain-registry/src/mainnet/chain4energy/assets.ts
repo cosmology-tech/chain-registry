@@ -29,7 +29,8 @@ const info: AssetList = {
       socials: {
         website: 'https://c4e.io/',
         twitter: 'https://twitter.com/Chain4Energy'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

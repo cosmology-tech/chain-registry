@@ -31,7 +31,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.terra.money/',
         twitter: 'https://twitter.com/terra_money'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.',
@@ -613,7 +614,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampwhalet.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'ERIS Alliance Staked boneWHALE on Terra',
@@ -633,7 +635,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bonewhalet.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'ERIS Liquid Enterprise Staked ROAR',
@@ -656,7 +659,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#5b83c3'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Nico Dao Money',
@@ -1122,7 +1126,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#9363b3'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Tether USDt on Terra',
@@ -1183,7 +1188,8 @@ const info: AssetList = {
       symbol: 'ATOM-LUNA-LP',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ura.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'LUNA-USDC liquidity pool token on URA',
@@ -1200,7 +1206,8 @@ const info: AssetList = {
       symbol: 'LUNA-USDC-LP',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ura.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'LUNA-USDT liquidity pool token on URA',
@@ -1217,7 +1224,8 @@ const info: AssetList = {
       symbol: 'LUNA-USDT-LP',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ura.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'ashLUNA',
@@ -1240,7 +1248,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#66bcf2'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.',

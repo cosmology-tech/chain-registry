@@ -29,7 +29,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.joltify.io/',
         twitter: 'https://twitter.com/joltify_finance'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The native staking and governance token of the Cosmos Hub.',

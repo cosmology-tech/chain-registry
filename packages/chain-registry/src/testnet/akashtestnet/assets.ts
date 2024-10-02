@@ -22,7 +22,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

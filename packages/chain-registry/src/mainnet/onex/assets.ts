@@ -23,7 +23,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

@@ -32,7 +32,8 @@ const info: AssetList = {
       socials: {
         website: 'https://planq.network',
         twitter: 'https://twitter.com/planqfoundation'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'The token of Source Protocol bridged from BSC.',
@@ -71,7 +72,8 @@ const info: AssetList = {
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'MEME Token (MEME) is the native staking token of the MEME Chain',

@@ -25,7 +25,8 @@ const info: AssetList = {
         website: 'https://unicorn.meme/',
         twitter: 'https://x.com/unicornandmemes'
       },
-      keywords: ['meme']
+      keywords: ['meme'],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

@@ -33,7 +33,8 @@ const info: AssetList = {
         }],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     }, {
       description: 'Tether USDt on Cronos',
       denom_units: [{

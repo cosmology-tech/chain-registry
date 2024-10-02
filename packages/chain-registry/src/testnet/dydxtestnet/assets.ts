@@ -42,7 +42,8 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

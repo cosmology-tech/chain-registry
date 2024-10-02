@@ -12,6 +12,7 @@ const info: AssetList = {
           denom: 'bnb',
           exponent: 18
         }],
+      type_asset: 'evm-base',
       base: 'wei',
       name: 'Binance Coin',
       display: 'bnb',

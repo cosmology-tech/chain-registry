@@ -27,7 +27,8 @@ const info: AssetList = {
       socials: {
         website: 'https://sunriselayer.io/',
         twitter: 'https://twitter.com/SunriseLayer'
-      }
+      },
+      type_asset: 'sdk.coin'
     }, {
       description: 'The native token of the Sunrise network for fees.',
       denom_units: [{
@@ -53,7 +54,8 @@ const info: AssetList = {
       socials: {
         website: 'https://sunriselayer.io/',
         twitter: 'https://twitter.com/SunriseLayer'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

@@ -33,7 +33,8 @@ const info: AssetList = {
       socials: {
         website: 'https://realio.network/',
         twitter: 'https://x.com/realio_network'
-      }
+      },
+      type_asset: 'sdk.coin'
     }, {
       description: 'A hybrid equity token that represent ownership of the Realio Ecosystem and provides utility functions on the Network.',
       denom_units: [{
@@ -55,7 +56,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e0e0e0'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

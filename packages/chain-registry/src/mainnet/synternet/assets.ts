@@ -30,7 +30,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.synternet.com/',
         twitter: 'https://twitter.com/synternet_com'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

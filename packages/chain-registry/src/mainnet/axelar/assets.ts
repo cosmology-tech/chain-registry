@@ -32,7 +32,8 @@ const info: AssetList = {
       socials: {
         website: 'https://axelar.network/',
         twitter: 'https://twitter.com/axelarnetwork'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Circle\'s stablecoin on Axelar',
@@ -66,7 +67,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#2474cc'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Frax\'s fractional-algorithmic stablecoin on Axelar',
@@ -98,7 +100,8 @@ const info: AssetList = {
             base_denom: '0x853d955acef822db058eb8505911ed77f175b99e'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Dai stablecoin on Axelar',
@@ -131,7 +134,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#f4ac34'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Tether\'s USD stablecoin on Axelar',
@@ -165,7 +169,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#54ac94'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Wrapped Ether on Axelar',
@@ -196,7 +201,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#3a3444'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Wrapped Bitcoin on Axelar',
@@ -228,7 +234,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#41394d'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Aave on Axelar',
@@ -260,7 +267,8 @@ const info: AssetList = {
             base_denom: '0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'ApeCoin on Axelar',
@@ -292,7 +300,8 @@ const info: AssetList = {
             base_denom: '0x4d224452801aced8b2f0aebe155379bb5d594381'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Axie Infinity Shard on Axelar',
@@ -324,7 +333,8 @@ const info: AssetList = {
             base_denom: '0xbb0e17ef65f82ab018d8edd776e8dd940327b28b'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Chainlink on Axelar',
@@ -361,7 +371,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#2c5cdc'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Maker on Axelar',
@@ -393,7 +404,8 @@ const info: AssetList = {
             base_denom: '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Rai Reflex Index on Axelar',
@@ -425,7 +437,8 @@ const info: AssetList = {
             base_denom: '0x03ab458634910aad20ef5f1c8ee96f1d6ac54919'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/rai.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Shiba Inu on Axelar',
@@ -461,7 +474,8 @@ const info: AssetList = {
             primary_color_hex: '#FFA409',
             background_color_hex: '#00000000'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Lido Staked Ether on Axelar',
@@ -493,7 +507,8 @@ const info: AssetList = {
             base_denom: '0xae7ab96520de3a18e5e111b5eaab095312d7fe84'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Uniswap on Axelar',
@@ -525,7 +540,8 @@ const info: AssetList = {
             base_denom: '0x1f9840a85d5af5bf1d1762f925bdaddc4201f984'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Chain on Axelar',
@@ -557,7 +573,8 @@ const info: AssetList = {
             base_denom: '0xa2cd3d43c775978a96bdbf12d733d5a1ed94fb18'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Wrapped Polkadot on Axelar',
@@ -594,7 +611,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e4047c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Wrapped Moonbeam on Axelar',
@@ -631,7 +649,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#e4147c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Wrapped Matic on Axelar',
@@ -668,7 +687,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#2b93fb'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Wrapped BNB on Axelar',
@@ -705,7 +725,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#f3bb0c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Binance USD on Axelar.',
@@ -742,7 +763,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#f3bb0c'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Wrapped AVAX on Axelar.',
@@ -774,7 +796,8 @@ const info: AssetList = {
             base_denom: '0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/wavax.svg'
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Wrapped FTM on Axelar.',
@@ -811,7 +834,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#1c6cfc'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Circle\'s stablecoin from Polygon on Axelar',
@@ -844,7 +868,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#2474cc'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Circle\'s stablecoin from Avalanche on Axelar',
@@ -877,7 +902,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#2474cc'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Wrapped FIL on Axelar',
@@ -914,7 +940,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#0694fc'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       description: 'Arbitrum on Axelar',
@@ -951,7 +978,8 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#253545'
           }
-        }]
+        }],
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -988,7 +1016,8 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -1023,7 +1052,8 @@ const info: AssetList = {
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/cbeth.png'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -1058,7 +1088,8 @@ const info: AssetList = {
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/reth.png'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -1090,7 +1121,8 @@ const info: AssetList = {
         }],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sfrxeth.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -1122,7 +1154,8 @@ const info: AssetList = {
         }],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wsteth.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -1159,7 +1192,8 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/yieldeth.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/yieldeth.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       denom_units: [{
@@ -1191,7 +1225,8 @@ const info: AssetList = {
         }],
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ox.svg'
-      }
+      },
+      type_asset: 'sdk.coin'
     },
     {
       type_asset: 'sdk.coin',

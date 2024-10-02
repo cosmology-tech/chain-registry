@@ -30,7 +30,8 @@ const info: AssetList = {
       socials: {
         website: 'https://qwoyn.studio',
         twitter: 'https://twitter.com/Qwoyn_Studios'
-      }
+      },
+      type_asset: 'sdk.coin'
     }]
 };
 export default info;

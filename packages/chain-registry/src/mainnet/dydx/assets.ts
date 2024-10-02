@@ -36,7 +36,8 @@ const info: AssetList = {
       socials: {
         website: 'https://dydx.trade/',
         twitter: 'https://twitter.com/dYdX'
-      }
+      },
+      type_asset: 'sdk.coin'
     }, {
       description: 'Noble USDC on dYdX Protocol.',
       denom_units: [{
