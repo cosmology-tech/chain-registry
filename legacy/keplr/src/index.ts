@@ -72,10 +72,14 @@ export const chainRegistryChainToKeplr = (
   if (!options.getExplorer) options.getExplorer = getExplr;
 
   const features = [];
+
   // if NOT specified, we assume stargate, sorry not sorry
-  const sdkVer = chain.codebase?.cosmos_sdk_version
-    ? extractVersion(chain.codebase?.cosmos_sdk_version)
-    : '0.40';
+  // Determine SDK version, prioritizing chain.codebase.sdk.version if available
+  const sdkVer = chain.codebase?.sdk?.version
+    ? extractVersion(chain.codebase.sdk.version)
+    : chain.codebase?.cosmos_sdk_version
+      ? extractVersion(chain.codebase.cosmos_sdk_version)
+      : '0.40';
 
   // stargate
   if (semver.satisfies(sdkVer, '>=0.40')) features.push('stargate');
@@ -87,9 +91,12 @@ export const chainRegistryChainToKeplr = (
   // ibc-go
   if (semver.satisfies(sdkVer, '>=0.45')) features.push('ibc-go');
 
-  if (chain.codebase?.cosmwasm_enabled) {
+  const cosmwasmEnabled = chain.codebase?.cosmwasm?.enabled ?? chain.codebase?.cosmwasm_enabled ?? false;
+  if (cosmwasmEnabled) {
     features.push('cosmwasm');
-    const wasmVer = extractVersion(chain.codebase.cosmwasm_version ?? '0.24');
+    const wasmVer = chain.codebase?.cosmwasm?.version
+      ? extractVersion(chain.codebase.cosmwasm.version)
+      : extractVersion(chain.codebase?.cosmwasm_version ?? '0.24');
     if (semver.satisfies(wasmVer, '>=0.24')) features.push('wasmd_0.24+');
   }
 
