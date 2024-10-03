@@ -15062,6 +15062,52 @@ const asset_list: AssetList = {
         }]
     },
     {
+      description: 'STOS coin is the token for the Stratos (STOS) cosmos based blockchain',
+      denom_units: [
+        {
+          denom: 'ibc/ABD49F44559CB3E557CC458459CB6A67CEBD66E23C7674A0B2B445230BDA1F6C',
+          exponent: 0,
+          aliases: ['wei']
+        },
+        {
+          denom: 'gwei',
+          exponent: 9
+        },
+        {
+          denom: 'stos',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/ABD49F44559CB3E557CC458459CB6A67CEBD66E23C7674A0B2B445230BDA1F6C',
+      name: 'Stratos',
+      display: 'stos',
+      symbol: 'STOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.svg'
+      },
+      coingecko_id: 'stratos',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.svg',
+          theme: {
+            primary_color_hex: '#04847c'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'wei',
+            chain_name: 'stratos'
+          },
+          chain: {
+            channel_id: 'channel-81016'
+          }
+        }]
+    },
+    {
       description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
       denom_units: [{
           denom: 'ibc/A8CA5EE328FA10C9519DF6057DA1F69682D28F7D0F5CCC7ECB72E3DCA2D157A4',
@@ -20480,6 +20526,52 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-15'
+          }
+        }]
+    },
+    {
+      description: 'STOS coin is the token for the Stratos (STOS) cosmos based blockchain',
+      denom_units: [
+        {
+          denom: 'ibc/ABD49F44559CB3E557CC458459CB6A67CEBD66E23C7674A0B2B445230BDA1F6C',
+          exponent: 0,
+          aliases: ['wei']
+        },
+        {
+          denom: 'gwei',
+          exponent: 9
+        },
+        {
+          denom: 'stos',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/ABD49F44559CB3E557CC458459CB6A67CEBD66E23C7674A0B2B445230BDA1F6C',
+      name: 'Stratos',
+      display: 'stos',
+      symbol: 'STOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.svg'
+      },
+      coingecko_id: 'stratos',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.svg',
+          theme: {
+            primary_color_hex: '#04847c'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'wei',
+            chain_name: 'stratos'
+          },
+          chain: {
+            channel_id: 'channel-81016'
           }
         }]
     },

@@ -35,6 +35,9 @@ const info: Chain = {
     rpc: [{
         address: 'https://26657.genesisl1.org',
         provider: 'GenesisL1'
+      }, {
+        address: 'https://genesisl1-rpc.zenode.app',
+        provider: 'anodeofzen'
       }],
     rest: [{
         address: 'https://api.genesisl1.org',

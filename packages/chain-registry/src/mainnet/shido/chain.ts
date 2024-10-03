@@ -49,8 +49,8 @@ const info: Chain = {
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       },
       {
-        address: 'https://s2.shido-rpc.applejuice.256x25.tech:443',
-        provider: 'Apple juice 🧃'
+        address: 'https://rest.shido.256x25.tech:443',
+        provider: '256x25'
       },
       {
         address: 'https://rpc.shido.indonode.net:443',
@@ -75,8 +75,8 @@ const info: Chain = {
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       },
       {
-        address: 'https://s2.shido-api.applejuice.256x25.tech:443',
-        provider: 'Apple juice 🧃'
+        address: 'https://rpc.shido.256x25.tech:443',
+        provider: '256x25'
       },
       {
         address: 'https://api.shido.indonode.net',
@@ -101,10 +101,6 @@ const info: Chain = {
         provider: 'shido.io'
       },
       {
-        address: 'https://s2.shido-grpc.applejuice.256x25.tech',
-        provider: 'Apple juice 🧃'
-      },
-      {
         address: 'https://grpc-maverick.mavnode.io',
         provider: 'MavNode'
       },
@@ -125,10 +121,6 @@ const info: Chain = {
       {
         address: 'https://shidochain_mainnet_evm.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
-      },
-      {
-        address: 'https://s2.shido-evm.applejuice.256x25.tech:443',
-        provider: 'Apple juice 🧃'
       },
       {
         address: 'https://evm-maverick.mavnode.io',
@@ -154,7 +146,7 @@ const info: Chain = {
       account_page: 'https://explorer.whenmoonwhenlambo.money/shido/account/${accountAddress}'
     },
     {
-      kind: 'Apple juice 🧃',
+      kind: '256x25',
       url: 'https://explorer.256x25.tech/shido',
       tx_page: 'https://explorer.256x25.tech/shido/tx/${txHash}',
       account_page: 'https://explorer.256x25.tech//shido/account/${accountAddress}'

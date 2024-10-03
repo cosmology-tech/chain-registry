@@ -134,6 +134,7 @@ import * as _source from './source';
 import * as _stafihub from './stafihub';
 import * as _stargaze from './stargaze';
 import * as _starname from './starname';
+import * as _stratos from './stratos';
 import * as _stride from './stride';
 import * as _teritori from './teritori';
 import * as _terra from './terra';
@@ -281,6 +282,7 @@ const ibc: IBCInfo[] = [
   ..._stafihub.ibc,
   ..._stargaze.ibc,
   ..._starname.ibc,
+  ..._stratos.ibc,
   ..._stride.ibc,
   ..._teritori.ibc,
   ..._terra.ibc,
