@@ -16,6 +16,7 @@ export * as filecoin from './filecoin';
 export * as forex from './forex';
 export * as internetcomputer from './internetcomputer';
 export * as kusama from './kusama';
+export * as mantle from './mantle';
 export * as moonbeam from './moonbeam';
 export * as neo from './neo';
 export * as optimism from './optimism';

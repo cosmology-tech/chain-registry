@@ -4751,6 +4751,76 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Pryzm\'s refracted principal token for TIA with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/B2A0ACCA11A406CEB601DF47D285D40ECA9DD72E5F45CEF20ECE2CA3080EC47B',
+          exponent: 0,
+          aliases: ['p:utia:31Dec2024']
+        }, {
+          denom: 'pTIA31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/B2A0ACCA11A406CEB601DF47D285D40ECA9DD72E5F45CEF20ECE2CA3080EC47B',
+      name: 'pTia (31Dec2024)',
+      display: 'pTIA31Dec2024',
+      symbol: 'pTIA-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'p:utia:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-79'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for TIA with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/7A0FFD99CD9B0377E36BC9A87CCF19940E65C5768AB4633C1E8EE028ED096EC6',
+          exponent: 0,
+          aliases: ['p:utia:31Dec2025']
+        }, {
+          denom: 'pTIA31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/7A0FFD99CD9B0377E36BC9A87CCF19940E65C5768AB4633C1E8EE028ED096EC6',
+      name: 'pTia (31Dec2025)',
+      display: 'pTIA31Dec2025',
+      symbol: 'pTIA-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'p:utia:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-79'
+          }
+        }]
+    },
+    {
       description: 'Pryzm\'s refracted yield token for ATOM with maturity of 30Sep2024',
       denom_units: [{
           denom: 'ibc/08CD8BAF3A72B68DAF42E0F004A38A4EE4B0908050EDEB45D90AA4FD0F04B04B',
@@ -5591,6 +5661,76 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Pryzm\'s refracted yield token for TIA with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/06D62E412F873778710E03E0B71158BC6C6AADF5ACB0DB1E7D4516D1AED76176',
+          exponent: 0,
+          aliases: ['y:utia:31Dec2024']
+        }, {
+          denom: 'yTIA31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/06D62E412F873778710E03E0B71158BC6C6AADF5ACB0DB1E7D4516D1AED76176',
+      name: 'yTia (31Dec2024)',
+      display: 'yTIA31Dec2024',
+      symbol: 'yTIA-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'y:utia:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-79'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for TIA with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/AAADF477BF350B0375777D22B2AF8FC3FA3C18F582F83757EED6AB1D84FB3CD2',
+          exponent: 0,
+          aliases: ['y:utia:31Dec2025']
+        }, {
+          denom: 'yTIA31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/AAADF477BF350B0375777D22B2AF8FC3FA3C18F582F83757EED6AB1D84FB3CD2',
+      name: 'yTia (31Dec2025)',
+      display: 'yTIA31Dec2025',
+      symbol: 'yTIA-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'y:utia:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-79'
+          }
+        }]
+    },
+    {
       description: 'Pryzm\'s LP token for USDC / USDC.axl pool',
       denom_units: [{
           denom: 'ibc/93C8A4663A19FA8896268E9C69901B7078FC190479C3227B387F463191111924',
@@ -6318,6 +6458,76 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-5',
             base_denom: 'lp:20:stutiaypt-utia',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-79'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for TIA Yield pool',
+      denom_units: [{
+          denom: 'ibc/91BB9F97B7A69221154F030DF090FE41E9BD1885C8C02D86F0C2D5640C21A1F3',
+          exponent: 0,
+          aliases: ['lp:24:utia']
+        }, {
+          denom: 'lp:24:tia',
+          exponent: 6
+        }],
+      base: 'ibc/91BB9F97B7A69221154F030DF090FE41E9BD1885C8C02D86F0C2D5640C21A1F3',
+      name: 'TIA Yield LP',
+      display: 'lp:24:tia',
+      symbol: 'TIA-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'lp:24:utia',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-79'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for TIA Boost pool',
+      denom_units: [{
+          denom: 'ibc/5E9F6B4A630A3FFC4EEA332F6DDB59F63ABEF34C7D57704F5A500E5E8A414A51',
+          exponent: 0,
+          aliases: ['lp:25:utiaypt-utia']
+        }, {
+          denom: 'lp:25:tiaypt-tia',
+          exponent: 6
+        }],
+      base: 'ibc/5E9F6B4A630A3FFC4EEA332F6DDB59F63ABEF34C7D57704F5A500E5E8A414A51',
+      name: 'TIA Boost LP',
+      display: 'lp:25:tiaypt-tia',
+      symbol: 'TIA-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'lp:25:utiaypt-utia',
             chain_name: 'pryzm'
           },
           chain: {
@@ -8107,6 +8317,76 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Pryzm\'s refracted principal token for TIA with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/B2A0ACCA11A406CEB601DF47D285D40ECA9DD72E5F45CEF20ECE2CA3080EC47B',
+          exponent: 0,
+          aliases: ['p:utia:31Dec2024']
+        }, {
+          denom: 'pTIA31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/B2A0ACCA11A406CEB601DF47D285D40ECA9DD72E5F45CEF20ECE2CA3080EC47B',
+      name: 'pTia (31Dec2024)',
+      display: 'pTIA31Dec2024',
+      symbol: 'pTIA-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'p:utia:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-79'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for TIA with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/7A0FFD99CD9B0377E36BC9A87CCF19940E65C5768AB4633C1E8EE028ED096EC6',
+          exponent: 0,
+          aliases: ['p:utia:31Dec2025']
+        }, {
+          denom: 'pTIA31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/7A0FFD99CD9B0377E36BC9A87CCF19940E65C5768AB4633C1E8EE028ED096EC6',
+      name: 'pTia (31Dec2025)',
+      display: 'pTIA31Dec2025',
+      symbol: 'pTIA-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'p:utia:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-79'
+          }
+        }]
+    },
+    {
       description: 'Pryzm\'s refracted yield token for ATOM with maturity of 30Sep2024',
       denom_units: [{
           denom: 'ibc/08CD8BAF3A72B68DAF42E0F004A38A4EE4B0908050EDEB45D90AA4FD0F04B04B',
@@ -8947,6 +9227,76 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Pryzm\'s refracted yield token for TIA with maturity of 31Dec2024',
+      denom_units: [{
+          denom: 'ibc/06D62E412F873778710E03E0B71158BC6C6AADF5ACB0DB1E7D4516D1AED76176',
+          exponent: 0,
+          aliases: ['y:utia:31Dec2024']
+        }, {
+          denom: 'yTIA31Dec2024',
+          exponent: 6
+        }],
+      base: 'ibc/06D62E412F873778710E03E0B71158BC6C6AADF5ACB0DB1E7D4516D1AED76176',
+      name: 'yTia (31Dec2024)',
+      display: 'yTIA31Dec2024',
+      symbol: 'yTIA-31Dec2024',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'y:utia:31Dec2024',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-79'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for TIA with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/AAADF477BF350B0375777D22B2AF8FC3FA3C18F582F83757EED6AB1D84FB3CD2',
+          exponent: 0,
+          aliases: ['y:utia:31Dec2025']
+        }, {
+          denom: 'yTIA31Dec2025',
+          exponent: 6
+        }],
+      base: 'ibc/AAADF477BF350B0375777D22B2AF8FC3FA3C18F582F83757EED6AB1D84FB3CD2',
+      name: 'yTia (31Dec2025)',
+      display: 'yTIA31Dec2025',
+      symbol: 'yTIA-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'y:utia:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-79'
+          }
+        }]
+    },
+    {
       description: 'Pryzm\'s LP token for USDC / USDC.axl pool',
       denom_units: [{
           denom: 'ibc/93C8A4663A19FA8896268E9C69901B7078FC190479C3227B387F463191111924',
@@ -9674,6 +10024,76 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-5',
             base_denom: 'lp:20:stutiaypt-utia',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-79'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for TIA Yield pool',
+      denom_units: [{
+          denom: 'ibc/91BB9F97B7A69221154F030DF090FE41E9BD1885C8C02D86F0C2D5640C21A1F3',
+          exponent: 0,
+          aliases: ['lp:24:utia']
+        }, {
+          denom: 'lp:24:tia',
+          exponent: 6
+        }],
+      base: 'ibc/91BB9F97B7A69221154F030DF090FE41E9BD1885C8C02D86F0C2D5640C21A1F3',
+      name: 'TIA Yield LP',
+      display: 'lp:24:tia',
+      symbol: 'TIA-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'lp:24:utia',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-79'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for TIA Boost pool',
+      denom_units: [{
+          denom: 'ibc/5E9F6B4A630A3FFC4EEA332F6DDB59F63ABEF34C7D57704F5A500E5E8A414A51',
+          exponent: 0,
+          aliases: ['lp:25:utiaypt-utia']
+        }, {
+          denom: 'lp:25:tiaypt-tia',
+          exponent: 6
+        }],
+      base: 'ibc/5E9F6B4A630A3FFC4EEA332F6DDB59F63ABEF34C7D57704F5A500E5E8A414A51',
+      name: 'TIA Boost LP',
+      display: 'lp:25:tiaypt-tia',
+      symbol: 'TIA-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'lp:25:utiaypt-utia',
             chain_name: 'pryzm'
           },
           chain: {

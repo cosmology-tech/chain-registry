@@ -18,6 +18,7 @@ import * as _filecoin from './filecoin';
 import * as _forex from './forex';
 import * as _internetcomputer from './internetcomputer';
 import * as _kusama from './kusama';
+import * as _mantle from './mantle';
 import * as _moonbeam from './moonbeam';
 import * as _neo from './neo';
 import * as _optimism from './optimism';
@@ -65,6 +66,7 @@ const assets: AssetList[] = [
   _forex.assets,
   _internetcomputer.assets,
   _kusama.assets,
+  _mantle.assets,
   _moonbeam.assets,
   _neo.assets,
   _optimism.assets,
