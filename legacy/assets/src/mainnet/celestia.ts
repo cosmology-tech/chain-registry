@@ -1275,7 +1275,7 @@ const assets: AssetList = {
           aliases: ['p:inj:30Sep2024']
         }, {
           denom: 'pINJ30Sep2024',
-          exponent: 6
+          exponent: 18
         }],
       base: 'ibc/4D3DB8661FA3D251E932E33191221E39B2B5A5120E670E584E7F195AB30997FF',
       name: 'pInj (30Sep2024)',
@@ -1310,7 +1310,7 @@ const assets: AssetList = {
           aliases: ['p:inj:31Dec2024']
         }, {
           denom: 'pINJ31Dec2024',
-          exponent: 6
+          exponent: 18
         }],
       base: 'ibc/15CAEB68FC205028D200AA6E90B83D0761068B4337527D87300B811A27BDD72C',
       name: 'pInj (31Dec2024)',
@@ -1345,7 +1345,7 @@ const assets: AssetList = {
           aliases: ['p:inj:31Dec2025']
         }, {
           denom: 'pINJ31Dec2025',
-          exponent: 6
+          exponent: 18
         }],
       base: 'ibc/F0C722193F2B6E510C1D979020432BB492945955EAEB79692E293A0FD95620BE',
       name: 'pInj (31Dec2025)',
@@ -2185,7 +2185,7 @@ const assets: AssetList = {
           aliases: ['y:inj:30Sep2024']
         }, {
           denom: 'yINJ30Sep2024',
-          exponent: 6
+          exponent: 18
         }],
       base: 'ibc/1166C6F818D0412B75DF0592F9D69E88E0D7997DD76F91BE7E57551E5D1853E1',
       name: 'yInj (30Sep2024)',
@@ -2220,7 +2220,7 @@ const assets: AssetList = {
           aliases: ['y:inj:31Dec2024']
         }, {
           denom: 'yINJ31Dec2024',
-          exponent: 6
+          exponent: 18
         }],
       base: 'ibc/BC1822AC4EE09A61F3B5578826A1858A438489D5196061C8F90E8380CE36B234',
       name: 'yInj (31Dec2024)',
@@ -2255,7 +2255,7 @@ const assets: AssetList = {
           aliases: ['y:inj:31Dec2025']
         }, {
           denom: 'yINJ31Dec2025',
-          exponent: 6
+          exponent: 18
         }],
       base: 'ibc/080615A5C928190092E238BBA4471064386CC90C08296E10DEB6B0D427AF5FB3',
       name: 'yInj (31Dec2025)',
@@ -3025,7 +3025,7 @@ const assets: AssetList = {
           aliases: ['lp:1:inj']
         }, {
           denom: 'lp:1:INJ',
-          exponent: 6
+          exponent: 18
         }],
       base: 'ibc/33C4F17E1D85CAA00190B02192920E595F2EB0F6656950BC4370756318484953',
       name: 'INJ Yield LP',
@@ -3060,7 +3060,7 @@ const assets: AssetList = {
           aliases: ['lp:4:injypt-inj']
         }, {
           denom: 'lp:4:INJypt-INJ',
-          exponent: 6
+          exponent: 18
         }],
       base: 'ibc/6D81D16F792719BC578D34D2010150B698C90BC1910CE31E903BE0F7B2AF5348',
       name: 'INJ Boost LP',
@@ -5185,7 +5185,7 @@ const assets: AssetList = {
           aliases: ['p:inj:30Sep2024']
         }, {
           denom: 'pINJ30Sep2024',
-          exponent: 6
+          exponent: 18
         }],
       base: 'ibc/4D3DB8661FA3D251E932E33191221E39B2B5A5120E670E584E7F195AB30997FF',
       name: 'pInj (30Sep2024)',
@@ -5220,7 +5220,7 @@ const assets: AssetList = {
           aliases: ['p:inj:31Dec2024']
         }, {
           denom: 'pINJ31Dec2024',
-          exponent: 6
+          exponent: 18
         }],
       base: 'ibc/15CAEB68FC205028D200AA6E90B83D0761068B4337527D87300B811A27BDD72C',
       name: 'pInj (31Dec2024)',
@@ -5255,7 +5255,7 @@ const assets: AssetList = {
           aliases: ['p:inj:31Dec2025']
         }, {
           denom: 'pINJ31Dec2025',
-          exponent: 6
+          exponent: 18
         }],
       base: 'ibc/F0C722193F2B6E510C1D979020432BB492945955EAEB79692E293A0FD95620BE',
       name: 'pInj (31Dec2025)',
@@ -6095,7 +6095,7 @@ const assets: AssetList = {
           aliases: ['y:inj:30Sep2024']
         }, {
           denom: 'yINJ30Sep2024',
-          exponent: 6
+          exponent: 18
         }],
       base: 'ibc/1166C6F818D0412B75DF0592F9D69E88E0D7997DD76F91BE7E57551E5D1853E1',
       name: 'yInj (30Sep2024)',
@@ -6130,7 +6130,7 @@ const assets: AssetList = {
           aliases: ['y:inj:31Dec2024']
         }, {
           denom: 'yINJ31Dec2024',
-          exponent: 6
+          exponent: 18
         }],
       base: 'ibc/BC1822AC4EE09A61F3B5578826A1858A438489D5196061C8F90E8380CE36B234',
       name: 'yInj (31Dec2024)',
@@ -6165,7 +6165,7 @@ const assets: AssetList = {
           aliases: ['y:inj:31Dec2025']
         }, {
           denom: 'yINJ31Dec2025',
-          exponent: 6
+          exponent: 18
         }],
       base: 'ibc/080615A5C928190092E238BBA4471064386CC90C08296E10DEB6B0D427AF5FB3',
       name: 'yInj (31Dec2025)',
@@ -6935,7 +6935,7 @@ const assets: AssetList = {
           aliases: ['lp:1:inj']
         }, {
           denom: 'lp:1:INJ',
-          exponent: 6
+          exponent: 18
         }],
       base: 'ibc/33C4F17E1D85CAA00190B02192920E595F2EB0F6656950BC4370756318484953',
       name: 'INJ Yield LP',
@@ -6970,7 +6970,7 @@ const assets: AssetList = {
           aliases: ['lp:4:injypt-inj']
         }, {
           denom: 'lp:4:INJypt-INJ',
-          exponent: 6
+          exponent: 18
         }],
       base: 'ibc/6D81D16F792719BC578D34D2010150B698C90BC1910CE31E903BE0F7B2AF5348',
       name: 'INJ Boost LP',

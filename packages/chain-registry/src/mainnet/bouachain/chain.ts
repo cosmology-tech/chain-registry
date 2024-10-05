@@ -1,0 +1,69 @@
+import { Chain } from '@chain-registry/types';
+const info: Chain = {
+  $schema: '../chain.schema.json',
+  chain_name: 'bouachain',
+  chain_type: 'cosmos',
+  status: 'live',
+  website: 'https://bouachain.com',
+  network_type: 'mainnet',
+  pretty_name: 'Bouachain',
+  chain_id: 'bouachain',
+  bech32_prefix: 'boua',
+  daemon_name: 'bouachain',
+  node_home: '$HOME/.bouachain',
+  key_algos: ['secp256k1'],
+  slip44: 118,
+  fees: {
+    fee_tokens: [{
+        denom: 'ubouacoin',
+        fixed_min_gas_price: 0,
+        low_gas_price: 0.0006,
+        average_gas_price: 0.012,
+        high_gas_price: 0.04
+      }]
+  },
+  staking: {
+    staking_tokens: [{
+        denom: 'ubouacoin'
+      }],
+    lock_duration: {
+      time: '1814400s'
+    }
+  },
+  codebase: {
+
+  },
+  logo_URIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bouachain/images/bouachain.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bouachain/images/bouachain.svg'
+  },
+  apis: {
+    rpc: [{
+        address: 'https://rpc.bouachain.com',
+        provider: 'BouaValidator'
+      }],
+    rest: [{
+        address: 'https://lcd.bouachain.com',
+        provider: 'BouaValidator'
+      }],
+    grpc: [{
+        address: 'https://grpc.bouachain.com',
+        provider: 'BouaValidator'
+      }]
+  },
+  explorers: [{
+      kind: 'bouachain',
+      url: 'https://bouascan.com',
+      tx_page: 'https://bouascan.com/bouachain/tx/${txHash}',
+      account_page: 'https://bouascan.com/bouachain/${accountAddress}'
+    }],
+  images: [{
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bouachain/images/bouachain.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bouachain/images/bouachain.svg',
+      theme: {
+        primary_color_hex: '#000000'
+      }
+    }],
+  keywords: ['bouachain', 'spawn']
+};
+export default info;

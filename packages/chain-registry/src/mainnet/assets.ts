@@ -28,6 +28,7 @@ import * as _blockx from './blockx';
 import * as _bluechip from './bluechip';
 import * as _bluzelle from './bluzelle';
 import * as _bostrom from './bostrom';
+import * as _bouachain from './bouachain';
 import * as _canto from './canto';
 import * as _carbon from './carbon';
 import * as _celestia from './celestia';
@@ -220,6 +221,7 @@ const assets: AssetList[] = [
   _bluechip.assets,
   _bluzelle.assets,
   _bostrom.assets,
+  _bouachain.assets,
   _canto.assets,
   _carbon.assets,
   _celestia.assets,

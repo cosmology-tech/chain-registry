@@ -571,7 +571,7 @@ const info: AssetList = {
           exponent: 0
         }, {
           denom: 'cINJ',
-          exponent: 6
+          exponent: 18
         }],
       base: 'c:inj',
       name: 'cInj',
@@ -864,7 +864,7 @@ const info: AssetList = {
           exponent: 0
         }, {
           denom: 'pINJ30Sep2024',
-          exponent: 6
+          exponent: 18
         }],
       base: 'p:inj:30Sep2024',
       name: 'pInj (30Sep2024)',
@@ -887,7 +887,7 @@ const info: AssetList = {
           exponent: 0
         }, {
           denom: 'pINJ31Dec2024',
-          exponent: 6
+          exponent: 18
         }],
       base: 'p:inj:31Dec2024',
       name: 'pInj (31Dec2024)',
@@ -910,7 +910,7 @@ const info: AssetList = {
           exponent: 0
         }, {
           denom: 'pINJ31Dec2025',
-          exponent: 6
+          exponent: 18
         }],
       base: 'p:inj:31Dec2025',
       name: 'pInj (31Dec2025)',
@@ -1462,7 +1462,7 @@ const info: AssetList = {
           exponent: 0
         }, {
           denom: 'yINJ30Sep2024',
-          exponent: 6
+          exponent: 18
         }],
       base: 'y:inj:30Sep2024',
       name: 'yInj (30Sep2024)',
@@ -1485,7 +1485,7 @@ const info: AssetList = {
           exponent: 0
         }, {
           denom: 'yINJ31Dec2024',
-          exponent: 6
+          exponent: 18
         }],
       base: 'y:inj:31Dec2024',
       name: 'yInj (31Dec2024)',
@@ -1508,7 +1508,7 @@ const info: AssetList = {
           exponent: 0
         }, {
           denom: 'yINJ31Dec2025',
-          exponent: 6
+          exponent: 18
         }],
       base: 'y:inj:31Dec2025',
       name: 'yInj (31Dec2025)',
@@ -2014,7 +2014,7 @@ const info: AssetList = {
           exponent: 0
         }, {
           denom: 'lp:1:INJ',
-          exponent: 6
+          exponent: 18
         }],
       base: 'lp:1:inj',
       name: 'INJ Yield LP',
@@ -2037,7 +2037,7 @@ const info: AssetList = {
           exponent: 0
         }, {
           denom: 'lp:4:INJypt-INJ',
-          exponent: 6
+          exponent: 18
         }],
       base: 'lp:4:injypt-inj',
       name: 'INJ Boost LP',

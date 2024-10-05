@@ -27,6 +27,7 @@ export * as blockx from './blockx';
 export * as bluechip from './bluechip';
 export * as bluzelle from './bluzelle';
 export * as bostrom from './bostrom';
+export * as bouachain from './bouachain';
 export * as canto from './canto';
 export * as carbon from './carbon';
 export * as celestia from './celestia';
