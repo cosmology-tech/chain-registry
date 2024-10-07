@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/assets",
-  "version": "1.65.9",
+  "version": "1.65.10",
   "description": "Chain Registry Asset Lists",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@chain-registry/utils": "^1.47.8",
-    "chain-registry": "^1.64.9"
+    "chain-registry": "^1.64.10"
   },
   "dependencies": {
     "@chain-registry/types": "^0.46.8"
