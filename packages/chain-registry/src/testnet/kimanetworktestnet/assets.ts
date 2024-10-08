@@ -34,7 +34,6 @@ const info: AssetList = {
         }],
       socials: {
         github: 'https://github.com/kima-finance',
-        linkedin: 'https://www.linkedin.com/company/kimanetwork/',
         medium: 'https://medium.com/@kima_finance',
         telegram: 'https://t.me/kimanetwork',
         twitter: 'https://x.com/KimaNetwork',
