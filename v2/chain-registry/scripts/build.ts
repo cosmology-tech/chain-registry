@@ -8,7 +8,7 @@ import { jsStringify } from 'strfy-js';
 
 const NON_COSMOS_NETWORK_TYPE = 'noncosmos';
 const registryDirInRepoPath = 'repos/chain-registry';
-const registryDir = path.resolve( `${__dirname}/../../../`, registryDirInRepoPath );
+const registryDir = path.resolve( path.join(`${__dirname}/../../../`, registryDirInRepoPath));
 const chainRegTypesModule = '@chain-registry/v2-types';
 
 // function camelCaseTransform(key: string): string {

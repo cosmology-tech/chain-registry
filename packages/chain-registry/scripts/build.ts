@@ -7,7 +7,7 @@ import * as path from 'path';
 import { jsStringify } from 'strfy-js';
 
 const NON_COSMOS_NETWORK_TYPE = 'noncosmos';
-const registryDir = path.resolve( `${__dirname}/../../../`, registryDirInRepoPath );
+const registryDir = path.resolve( path.join(`${__dirname}/../../../`, registryDirInRepoPath));
 const registryDirInRepoPath = 'repos/chain-registry';
 
 const getValidVarName = (varName) => {
