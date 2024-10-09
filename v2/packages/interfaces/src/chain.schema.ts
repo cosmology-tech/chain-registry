@@ -86,7 +86,6 @@ export interface Chain {
   pre_fork_chain_name?: string;
   pretty_name?: string;
   website?: string;
-  update_link?: string;
   status?: "live" | "upcoming" | "killed";
   network_type?: "mainnet" | "testnet" | "devnet";
   bech32_prefix?: string;
@@ -126,8 +125,6 @@ export interface Chain {
     cosmwasm_enabled?: boolean;
     cosmwasm_path?: string;
     cosmwasm?: Cosmwasm;
-    ibc_go_version?: string;
-    ics_enabled?: ("ics20-1" | "ics27-1" | "mauth")[];
     ibc?: Ibc;
     genesis?: {
       name?: string;
@@ -151,8 +148,6 @@ export interface Chain {
       cosmwasm_enabled?: boolean;
       cosmwasm_path?: string;
       cosmwasm?: Cosmwasm;
-      ibc_go_version?: string;
-      ics_enabled?: ("ics20-1" | "ics27-1" | "mauth")[];
       ibc?: Ibc;
       binaries?: Binaries;
     }[];

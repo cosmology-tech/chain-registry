@@ -127,8 +127,6 @@ export interface Chain {
     cosmwasm_enabled?: boolean;
     cosmwasm_path?: string;
     cosmwasm?: Cosmwasm;
-    ibc_go_version?: string;
-    ics_enabled?: ('ics20-1' | 'ics27-1' | 'mauth')[];
     ibc?: Ibc;
     genesis?: {
       name?: string;
@@ -152,8 +150,6 @@ export interface Chain {
       cosmwasm_enabled?: boolean;
       cosmwasm_path?: string;
       cosmwasm?: Cosmwasm;
-      ibc_go_version?: string;
-      ics_enabled?: ('ics20-1' | 'ics27-1' | 'mauth')[];
       ibc?: Ibc;
       binaries?: Binaries;
     }[];

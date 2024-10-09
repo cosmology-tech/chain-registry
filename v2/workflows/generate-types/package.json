@@ -17,9 +17,9 @@
     "url": "https://github.com/cosmology-tech/chain-registry/issues"
   },
   "scripts": {
-    "generate:interfaces": "chain-registry codegen --outputDir ../../v2/interfaces/src/ --no-camelCase --registryDir ../../packages/chain-registry/chain-registry",
-    "generate:types": "chain-registry codegen --outputDir ../../v2/types/src/ --camelCase --registryDir ../../packages/chain-registry/chain-registry",
-    "generate:legacy": "chain-registry codegen --outputDir ../../legacy/types/src/ --no-camelCase --registryDir ../../packages/chain-registry/chain-registry"
+    "generate:interfaces": "chain-registry codegen --outputDir ../../../v2/packages/interfaces/src/ --no-camelCase --registryDir ../../../repos/chain-registry",
+    "generate:types": "chain-registry codegen --outputDir ../../../v2/packages/types/src/ --camelCase --registryDir ../../../repos/chain-registry",
+    "generate:legacy": "chain-registry codegen --outputDir ../../../v1/packages/types/src/ --no-camelCase --registryDir ../../../repos/chain-registry"
   },
   "devDependencies": {
     "@chain-registry/cli": "^1.50.14"
