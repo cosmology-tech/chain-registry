@@ -162,35 +162,35 @@ import { assets } from 'chain-registry/noncosmos';
 
 ## Packages
 
-#### [chain-registry](packages/chain-registry)
+#### [chain-registry](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/chain-registry)
 
 An npm module for the Official `chain-registry` for the Cosmos ⚛️
 
-#### [@chain-registry/client](legacy/client)
+#### [@chain-registry/client](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/client)
 
 A Client for `chain-registry` that allows you to dynamically fetch data.
 
-#### [@chain-registry/types](legacy/types)
+#### [@chain-registry/types](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/types)
 
 Types for `chain-registry`.
 
-#### [@chain-registry/keplr](legacy/keplr)
+#### [@chain-registry/keplr](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/keplr)
 
 Keplr integration for the chain-registry returning keplr's `ChainInfo` type from `@chain-registry/types` `Chain` type.
 
-#### [@chain-registry/assets](legacy/assets)
+#### [@chain-registry/assets](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/assets)
 
 Asset lists for the Cosmos ⚛️
 
-#### [@chain-registry/osmosis](legacy/osmosis)
+#### [@chain-registry/osmosis](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/osmosis)
 
 Chain Registry info for Osmosis, including asset lists.
 
-#### [@chain-registry/juno](legacy/juno)
+#### [@chain-registry/juno](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/juno)
 
 Chain Registry info for Juno, including asset lists.
 
-#### [@chain-registry/utils](legacy/utils)
+#### [@chain-registry/utils](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/utils)
 
 Utility functions for `chain-registry`.
 
