@@ -28,33 +28,39 @@ jobs:
 
       - name: Install Dependencies 🧶
         run: |
+          cd v1
           yarn install
           yarn symlink
 
       - name: Build Project 🏗️
         run: |
+          cd v1
           yarn build
           yarn symlink
 
       - name: Code Generation 🛠
         run: |
+          cd v1
+
           # Code generation and build for various packages
           pushd packages/chain-registry
           yarn codegen
           yarn build
           popd
 
-          pushd legacy/assets
+          pushd packages/assets
           yarn codegen
           popd
 
-          pushd legacy/osmosis
+          pushd packages/osmosis
           yarn codegen
           popd
 
-          pushd legacy/juno
+          pushd packages/juno
           yarn codegen
           popd
+
+          cd ..
 
           # Stage all changes and commit if there are any changes
           git config user.name "${{ github.actor }}"

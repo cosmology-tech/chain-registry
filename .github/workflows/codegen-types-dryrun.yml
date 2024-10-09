@@ -16,24 +16,27 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          cache: 'yarn'
 
       - name: Update Git Submodules 🔄
         run: |
-          make udpate-cosmos
+          make update-cosmos  # Fixed typo here
 
       - name: Install Dependencies 🧶
         run: |
+          cd v2
           yarn install
           yarn symlink
 
       - name: Build Project 🏗️
         run: |
+          cd v2
           yarn build
           yarn symlink
 
       - name: Types Generation 🛠
         run: |         
+          cd v2
+
           # Generate types and interfaces
           pushd workflows/generate-types
           yarn generate:types
@@ -41,20 +44,22 @@ jobs:
           popd
 
           # Build types
-          pushd v2/types
+          pushd packages/types
           yarn build
           popd
 
           # Build interfaces
-          pushd v2/interfaces
+          pushd packages/interfaces
           yarn build
           popd
 
           # Generate and build code for chain registry
-          pushd v2/chain-registry
+          pushd packages/chain-registry
           yarn codegen
           yarn build
           popd
+
+          cd ..
 
           # check changes
           git add .
@@ -63,6 +68,7 @@ jobs:
           else
             echo "GIT_RESULT=No changes to commit." >> $GITHUB_ENV
           fi
+
       - name: Git Result
         run: |
           echo $GIT_RESULT

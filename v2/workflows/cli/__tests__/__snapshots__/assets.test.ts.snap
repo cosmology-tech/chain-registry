@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
+{
+  "_": [],
+  "asset": "uion",
+  "chain": "osmosis",
+  "command": "asset-list",
+  "registryDir": "../../../repos/chain-registry-fixtures",
+  "tty": true,
+}
+`;
+
+exports[`Inquirerer prompts user and correctly processes delayed input 2`] = `[]`;
+
+exports[`Inquirerer prompts user and correctly processes delayed input 3`] = `[]`;
