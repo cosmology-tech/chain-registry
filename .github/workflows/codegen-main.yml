@@ -48,15 +48,15 @@ jobs:
           yarn build
           popd
 
-          pushd legacy/assets
+          pushd packages/assets
           yarn codegen
           popd
 
-          pushd legacy/osmosis
+          pushd packages/osmosis
           yarn codegen
           popd
 
-          pushd legacy/juno
+          pushd packages/juno
           yarn codegen
           popd
 
