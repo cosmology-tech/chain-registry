@@ -41,7 +41,7 @@ const options: RegistryBuilderOptions = {
           return 'cw20';
 
         default: 
-          if (chain?.slip44 === 118 || chain?.codebase?.cosmos_sdk_version) {
+          if (chain?.slip44 === 118 || (chain?.codebase?.sdk?.version || chain?.codebase?.cosmos_sdk_version)) {
             return 'sdk.Coin';
           }
           return 'unknown';
