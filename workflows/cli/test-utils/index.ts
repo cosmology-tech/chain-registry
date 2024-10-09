@@ -1,5 +1,7 @@
 export * from './mocks';
 
+import { join } from 'path';
+
 export const getRegistryFixtureDir = () => {
-  return '/../../repos/chain-registry-fixtures';
+  return join('../../', 'repos/chain-registry-fixtures');
 };
