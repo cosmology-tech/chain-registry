@@ -13,6 +13,9 @@ export interface Explorer {
   url?: string;
   txPage?: string;
   accountPage?: string;
+  validatorPage?: string;
+  proposalPage?: string;
+  blockPage?: string;
 }
 export interface FeeToken {
   denom: string;
@@ -28,6 +31,49 @@ export interface FeeToken {
 export interface StakingToken {
   denom: string;
 }
+export type Repo = string;
+export type Version = string;
+export type Tag = string;
+export interface Sdk {
+  type: "cosmos" | "penumbra" | "other";
+  version?: Version;
+  repo?: Repo;
+  tag?: Tag;
+}
+export interface Ibc {
+  type: "go" | "rust" | "other";
+  version?: Version;
+  repo?: Repo;
+  tag?: Tag;
+  icsEnabled?: ("ics20-1" | "ics27-1" | "mauth")[];
+}
+export interface Cosmwasm {
+  version?: Version;
+  repo?: Repo;
+  tag?: Tag;
+  enabled?: boolean;
+  path?: string;
+}
+export interface Consensus {
+  type: "tendermint" | "cometbft" | "sei-tendermint";
+  version?: Version;
+  repo?: Repo;
+  tag?: Tag;
+}
+export interface Language {
+  type: "go" | "rust" | "solidity" | "other";
+  version?: Version;
+  repo?: Repo;
+  tag?: Tag;
+}
+export interface Binaries {
+  "linux/amd64"?: string;
+  "linux/arm64"?: string;
+  "darwin/amd64"?: string;
+  "darwin/arm64"?: string;
+  "windows/amd64"?: string;
+  "windows/arm64"?: string;
+}
 export interface Pointer {
   chainName: string;
   baseDenom?: string;
@@ -35,14 +81,14 @@ export interface Pointer {
 export interface Chain {
   schema?: string;
   chainName: string;
-  chainId: string;
+  chainType: "cosmos" | "eip155" | "bip122" | "polkadot" | "solana" | "algorand" | "arweave" | "ergo" | "fil" | "hedera" | "monero" | "reef" | "stacks" | "starknet" | "stellar" | "tezos" | "vechain" | "waves" | "xrpl" | "unknown";
+  chainId?: string;
   preForkChainName?: string;
   prettyName?: string;
   website?: string;
-  updateLink?: string;
   status?: "live" | "upcoming" | "killed";
   networkType?: "mainnet" | "testnet" | "devnet";
-  bech32Prefix: string;
+  bech32Prefix?: string;
   bech32Config?: {
     bech32PrefixAccAddr?: string;
     bech32PrefixAccPub?: string;
@@ -69,26 +115,17 @@ export interface Chain {
   codebase?: {
     gitRepo?: string;
     recommendedVersion?: string;
-    goVersion?: string;
     compatibleVersions?: string[];
-    binaries?: {
-      "linux/amd64"?: string;
-      "linux/arm64"?: string;
-      "darwin/amd64"?: string;
-      "darwin/arm64"?: string;
-      "windows/amd64"?: string;
-      "windows/arm64"?: string;
-    };
+    language?: Language;
+    binaries?: Binaries;
     cosmosSdkVersion?: string;
-    consensus?: {
-      type: "tendermint" | "cometbft" | "sei-tendermint";
-      version?: string;
-    };
+    sdk?: Sdk;
+    consensus?: Consensus;
     cosmwasmVersion?: string;
     cosmwasmEnabled?: boolean;
     cosmwasmPath?: string;
-    ibcGoVersion?: string;
-    icsEnabled?: ("ics20-1" | "ics27-1" | "mauth")[];
+    cosmwasm?: Cosmwasm;
+    ibc?: Ibc;
     genesis?: {
       name?: string;
       genesisUrl: string;
@@ -102,26 +139,17 @@ export interface Chain {
       previousVersionName?: string;
       nextVersionName?: string;
       recommendedVersion?: string;
-      goVersion?: string;
       compatibleVersions?: string[];
+      language?: Language;
       cosmosSdkVersion?: string;
-      consensus?: {
-        type: "tendermint" | "cometbft" | "sei-tendermint";
-        version?: string;
-      };
+      sdk?: Sdk;
+      consensus?: Consensus;
       cosmwasmVersion?: string;
       cosmwasmEnabled?: boolean;
       cosmwasmPath?: string;
-      ibcGoVersion?: string;
-      icsEnabled?: ("ics20-1" | "ics27-1" | "mauth")[];
-      binaries?: {
-        "linux/amd64"?: string;
-        "linux/arm64"?: string;
-        "darwin/amd64"?: string;
-        "darwin/arm64"?: string;
-        "windows/amd64"?: string;
-        "windows/arm64"?: string;
-      };
+      cosmwasm?: Cosmwasm;
+      ibc?: Ibc;
+      binaries?: Binaries;
     }[];
   };
   images?: {
@@ -130,11 +158,11 @@ export interface Chain {
     svg?: string;
     theme?: {
       primaryColorHex?: string;
+      backgroundColorHex?: string;
       circle?: boolean;
       darkMode?: boolean;
+      monochrome?: boolean;
     };
-    layout?: "logo" | "logomark" | "logotype";
-    textPosition?: "top" | "bottom" | "left" | "right" | "integrated";
   }[];
   logoURIs?: {
     png?: string;

@@ -7,7 +7,7 @@ import * as path from 'path';
 import { jsStringify } from 'strfy-js';
 
 const NON_COSMOS_NETWORK_TYPE = 'noncosmos';
-const registryDir = path.resolve(`${__dirname}/../../../packages/chain-registry/chain-registry`);
+const registryDir = path.resolve(`${__dirname}/../../../repos/chain-registry`);
 const registryDirInRepoPath = 'chain-registry/chain-registry';
 const chainRegTypesModule = '@chain-registry/v2-types';
 

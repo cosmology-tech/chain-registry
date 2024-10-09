@@ -42,11 +42,13 @@ export const commands = async (argv: Partial<ParsedArgs>, prompter: Inquirerer, 
     throw new Error('bad registry path!');
   }
 
+  
   const registry: Registry = new Registry(registryDir);
   const generator = new SchemaTypeGenerator({
     outputDir,
     registry,
     schemaTSOptions: {
+      // TODO add supported schemas...
       strictTypeSafety,
       camelCase,
       camelCaseFn: toCamelCase

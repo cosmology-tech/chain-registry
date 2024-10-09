@@ -6,16 +6,17 @@
   "type": "object",
   "required": [
     "chainName",
-    "chainId",
-    "bech32Prefix"
+    "chainType"
   ],
   "properties": {
     "$schema": {
       "type": "string",
+      "minLength": 1,
       "pattern": "^(\\.\\./)+chain\\.schema\\.json$"
     },
     "website": {
       "type": "string",
+      "minLength": 1,
       "format": "uri"
     },
     "slip44": {
@@ -57,6 +58,7 @@
             },
             "time": {
               "type": "string",
+              "minLength": 1,
               "description": "The approximate time for which the staked tokens are locked."
             }
           },
@@ -69,30 +71,28 @@
     "codebase": {
       "type": "object",
       "properties": {
+        "language": {
+          "$ref": "#/$defs/language"
+        },
+        "sdk": {
+          "$ref": "#/$defs/sdk"
+        },
+        "cosmwasm": {
+          "$ref": "#/$defs/cosmwasm"
+        },
+        "ibc": {
+          "$ref": "#/$defs/ibc"
+        },
         "cosmosSdkVersion": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "cosmwasmVersion": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "cosmwasmEnabled": {
           "type": "boolean"
-        },
-        "ibcGoVersion": {
-          "type": "string"
-        },
-        "icsEnabled": {
-          "type": "array",
-          "description": "List of IBC apps (usually corresponding to a ICS standard) which have been enabled on the network.",
-          "items": {
-            "type": "string",
-            "description": "IBC app or ICS standard.",
-            "enum": [
-              "ics20-1",
-              "ics27-1",
-              "mauth"
-            ]
-          }
         }
       },
       "additionalProperties": false
@@ -104,11 +104,13 @@
         "properties": {
           "png": {
             "type": "string",
+            "minLength": 1,
             "format": "uri-reference",
             "pattern": "^https://raw\\.githubusercontent\\.com/cosmos/chain-registry/master/(|testnets/|_non-cosmos/)[a-z0-9]+/images/.+\\.png$"
           },
           "svg": {
             "type": "string",
+            "minLength": 1,
             "format": "uri-reference",
             "pattern": "^https://raw\\.githubusercontent\\.com/cosmos/chain-registry/master/(|testnets/|_non-cosmos/)[a-z0-9]+/images/.+\\.svg$"
           },
@@ -118,9 +120,18 @@
               "circle": {
                 "type": "boolean"
               },
+              "monochrome": {
+                "type": "boolean"
+              },
               "primaryColorHex": {
                 "type": "string",
-                "pattern": "^#[0-9a-fA-F]{6}$"
+                "minLength": 1,
+                "pattern": "^#([0-9a-fA-F]{6}|[0-9a-fA-F]{8})$"
+              },
+              "backgroundColorHex": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(#([0-9a-fA-F]{6}|[0-9a-fA-F]{8})|none)$"
               },
               "darkMode": {
                 "type": "boolean"
@@ -129,28 +140,8 @@
             "minProperties": 1,
             "additionalProperties": false
           },
-          "layout": {
-            "type": "string",
-            "enum": [
-              "logo",
-              "logomark",
-              "logotype"
-            ],
-            "description": "logomark == icon only; logotype == text only; logo == icon + text."
-          },
           "imageSync": {
             "$ref": "#/$defs/pointer"
-          },
-          "textPosition": {
-            "type": "string",
-            "enum": [
-              "top",
-              "bottom",
-              "left",
-              "right",
-              "integrated"
-            ],
-            "description": "Indicates in which position the text is placed, in case the layout is 'icon' type, it's required only in this case."
           }
         },
         "anyOf": [
@@ -170,6 +161,7 @@
     },
     "description": {
       "type": "string",
+      "minLength": 1,
       "maxLength": 3000
     },
     "apis": {
@@ -224,22 +216,54 @@
       "type": "array",
       "maxContains": 20,
       "items": {
-        "type": "string"
+        "type": "string",
+        "minLength": 1
       }
     },
     "chainName": {
       "type": "string",
+      "minLength": 1,
       "pattern": "[a-z0-9]+"
     },
+    "chainType": {
+      "type": "string",
+      "minLength": 1,
+      "enum": [
+        "cosmos",
+        "eip155",
+        "bip122",
+        "polkadot",
+        "solana",
+        "algorand",
+        "arweave",
+        "ergo",
+        "fil",
+        "hedera",
+        "monero",
+        "reef",
+        "stacks",
+        "starknet",
+        "stellar",
+        "tezos",
+        "vechain",
+        "waves",
+        "xrpl",
+        "unknown"
+      ],
+      "description": "The 'type' of chain as the corresponding CAIP-2 Namespace value. E.G., 'cosmos' or 'eip155'. Namespaces cna be found here: https://github.com/ChainAgnostic/namespaces/tree/main."
+    },
     "chainId": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "preForkChainName": {
       "type": "string",
+      "minLength": 1,
       "pattern": "[a-z0-9]+"
     },
     "prettyName": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "networkType": {
       "enum": [
@@ -250,10 +274,12 @@
     },
     "bech32Prefix": {
       "type": "string",
+      "minLength": 1,
       "description": "The default prefix for the human-readable part of addresses that identifies the coin type. Must be registered with SLIP-0173. E.g., 'cosmos'"
     },
     "nodeHome": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "keyAlgos": {
       "type": "array",
@@ -273,6 +299,7 @@
       "type": "array",
       "items": {
         "type": "string",
+        "minLength": 1,
         "enum": [
           "ethermint",
           "injective"
@@ -291,13 +318,16 @@
       ],
       "properties": {
         "id": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "address": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "provider": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         }
       },
       "additionalProperties": false
@@ -309,7 +339,8 @@
       ],
       "properties": {
         "address": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         }
       },
       "additionalProperties": false
@@ -318,19 +349,241 @@
       "type": "object",
       "properties": {
         "kind": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "url": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "txPage": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "accountPage": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
+        },
+        "validatorPage": {
+          "type": "string",
+          "minLength": 1
+        },
+        "proposalPage": {
+          "type": "string",
+          "minLength": 1
+        },
+        "blockPage": {
+          "type": "string",
+          "minLength": 1
         }
       },
       "additionalProperties": false
+    },
+    "repo": {
+      "type": "string",
+      "format": "uri",
+      "minLength": 1,
+      "description": "URL of the code repository."
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^v?\\d+(\\.\\d+){0,2}$",
+      "description": "Simple version string (e.g., 'v1.0.0')."
+    },
+    "tag": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^v?\\d+(\\.\\d+){0,2}(-[\\w\\.\\-]+)?$",
+      "description": "Detailed version identifier (e.g., 'v1.0.0-a1s2f43g')."
+    },
+    "sdk": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "enum": [
+            "cosmos",
+            "penumbra",
+            "other"
+          ]
+        },
+        "version": {
+          "$ref": "#/$defs/version"
+        },
+        "repo": {
+          "$ref": "#/$defs/repo"
+        },
+        "tag": {
+          "$ref": "#/$defs/tag"
+        }
+      }
+    },
+    "ibc": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "enum": [
+            "go",
+            "rust",
+            "other"
+          ]
+        },
+        "version": {
+          "$ref": "#/$defs/version"
+        },
+        "repo": {
+          "$ref": "#/$defs/repo"
+        },
+        "tag": {
+          "$ref": "#/$defs/tag"
+        },
+        "icsEnabled": {
+          "type": "array",
+          "description": "List of IBC apps (usually corresponding to a ICS standard) which have been enabled on the network.",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "description": "IBC app or ICS standard.",
+            "enum": [
+              "ics20-1",
+              "ics27-1",
+              "mauth"
+            ]
+          }
+        }
+      }
+    },
+    "cosmwasm": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "$ref": "#/$defs/version"
+        },
+        "repo": {
+          "$ref": "#/$defs/repo"
+        },
+        "tag": {
+          "$ref": "#/$defs/tag"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Relative path to the cosmwasm directory. ex. $HOME/.juno/data/wasm",
+          "pattern": "^\\$HOME.*$"
+        }
+      }
+    },
+    "consensus": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "enum": [
+            "tendermint",
+            "cometbft",
+            "sei-tendermint"
+          ]
+        },
+        "version": {
+          "$ref": "#/$defs/version"
+        },
+        "repo": {
+          "$ref": "#/$defs/repo"
+        },
+        "tag": {
+          "$ref": "#/$defs/tag"
+        }
+      },
+      "additionalProperties": false
+    },
+    "language": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "enum": [
+            "go",
+            "rust",
+            "solidity",
+            "other"
+          ]
+        },
+        "version": {
+          "$ref": "#/$defs/version"
+        },
+        "repo": {
+          "$ref": "#/$defs/repo"
+        },
+        "tag": {
+          "$ref": "#/$defs/tag"
+        }
+      }
+    },
+    "binaries": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "linux/amd64": {
+          "type": "string",
+          "minLength": 1,
+          "format": "uri"
+        },
+        "linux/arm64": {
+          "type": "string",
+          "minLength": 1,
+          "format": "uri"
+        },
+        "darwin/amd64": {
+          "type": "string",
+          "minLength": 1,
+          "format": "uri"
+        },
+        "darwin/arm64": {
+          "type": "string",
+          "minLength": 1,
+          "format": "uri"
+        },
+        "windows/amd64": {
+          "type": "string",
+          "minLength": 1,
+          "format": "uri"
+        },
+        "windows/arm64": {
+          "type": "string",
+          "minLength": 1,
+          "format": "uri"
+        }
+      }
     },
     "pointer": {
       "type": "object",
@@ -341,10 +594,12 @@
       "properties": {
         "chainName": {
           "type": "string",
+          "minLength": 1,
           "description": "The chain name or platform from which the object resides. E.g., 'cosmoshub', 'ethereum', 'forex', or 'nasdaq'"
         },
         "baseDenom": {
           "type": "string",
+          "minLength": 1,
           "description": "The base denom of the asset from which the object originates. E.g., when describing ATOM from Cosmos Hub, specify 'uatom', NOT 'atom' nor 'ATOM'; base units are unique per platform."
         }
       },
@@ -357,7 +612,8 @@
       ],
       "properties": {
         "denom": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "fixedMinGasPrice": {
           "type": "number"
@@ -394,10 +650,44 @@
       ],
       "properties": {
         "denom": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         }
       },
       "additionalProperties": false
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "chain_type": {
+            "const": "cosmos"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "bech32_prefix"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "chain_type": {
+            "enum": [
+              "cosmos",
+              "eip155"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "chain_id"
+        ]
+      }
+    }
+  ]
 }

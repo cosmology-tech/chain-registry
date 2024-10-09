@@ -8,7 +8,7 @@ exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
     "apis": {
       "grpc": [
         {
-          "address": "osmosis-grpc.lavenderfive.com:443",
+          "address": "osmosis.lavenderfive.com:443",
           "provider": "Lavender.Five Nodes 🐝",
         },
         {
@@ -82,6 +82,10 @@ exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
           "provider": "Osmosis Foundation",
         },
         {
+          "address": "https://rest.osmosis.goldenratiostaking.net",
+          "provider": "Golden Ratio Staking",
+        },
+        {
           "address": "https://osmosis-lcd.quickapi.com:443",
           "provider": "Chainlayer",
         },
@@ -90,7 +94,7 @@ exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
           "provider": "chainapsis",
         },
         {
-          "address": "https://osmosis-api.lavenderfive.com:443",
+          "address": "https://rest.lavenderfive.com:443/osmosis",
           "provider": "Lavender.Five Nodes 🐝",
         },
         {
@@ -196,7 +200,7 @@ exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
           "provider": "WhisperNode 🤐",
         },
         {
-          "address": "https://osmosis-rpc.lavenderfive.com:443",
+          "address": "https://rpc.lavenderfive.com:443/osmosis",
           "provider": "Lavender.Five Nodes 🐝",
         },
         {
@@ -284,28 +288,44 @@ exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
           "provider": "Kewr Node",
         },
         {
+          "address": "https://rpc.osmosis.goldenratiostaking.net",
+          "provider": "Golden Ratio Staking",
+        },
+        {
           "address": "https://osmosis-rpc.noders.services",
           "provider": "[NODERS]TEAM",
+        },
+        {
+          "address": "https://osmosis.drpc.org",
+          "provider": "dRPC",
         },
       ],
     },
     "bech32_prefix": "osmo",
     "chain_id": "osmosis-1",
     "chain_name": "osmosis",
+    "chain_type": "cosmos",
     "codebase": {
       "binaries": {
-        "linux/amd64": "https://github.com/osmosis-labs/osmosis/releases/download/v24.0.1/osmosisd-24.0.1-linux-amd64",
-        "linux/arm64": "https://github.com/osmosis-labs/osmosis/releases/download/v24.0.1/osmosisd-24.0.1-linux-arm64",
+        "linux/amd64": "https://github.com/osmosis-labs/osmosis/releases/download/v25.0.0/osmosisd-25.0.0-linux-amd64",
+        "linux/arm64": "https://github.com/osmosis-labs/osmosis/releases/download/v25.0.0/osmosisd-25.0.0-linux-arm64",
       },
       "compatible_versions": [
-        "v24.0.1",
-        "v24.0.0",
+        "v25.0.0",
       ],
       "consensus": {
+        "repo": "https://github.com/osmosis-labs/cometbft",
+        "tag": "v25-osmo-2",
         "type": "cometbft",
-        "version": "osmosis-labs/cometbft v0.37.4-v24-osmo-2",
+        "version": "v0.37.4",
       },
-      "cosmos_sdk_version": "osmosis-labs/cosmos-sdk v0.47.5-v24-osmo-5",
+      "cosmos_sdk_version": "osmosis-labs/cosmos-sdk v0.47.5-v25-osmo-1",
+      "cosmwasm": {
+        "enabled": true,
+        "repo": "https://github.com/osmosis-labs/wasmd",
+        "tag": "v0.45.0-osmo",
+        "version": "v0.45.0",
+      },
       "cosmwasm_enabled": true,
       "cosmwasm_version": "osmosis-labs/wasmd v0.45.0-osmo",
       "genesis": {
@@ -313,12 +333,24 @@ exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
         "name": "v3",
       },
       "git_repo": "https://github.com/osmosis-labs/osmosis",
-      "go_version": "1.21",
-      "ibc_go_version": "v7.4.0",
-      "ics_enabled": [
-        "ics20-1",
-      ],
-      "recommended_version": "v24.0.1",
+      "ibc": {
+        "ics_enabled": [
+          "ics20-1",
+        ],
+        "type": "go",
+        "version": "v7.4.0",
+      },
+      "language": {
+        "type": "go",
+        "version": "1.21.4",
+      },
+      "recommended_version": "v25.0.0",
+      "sdk": {
+        "repo": "https://github.com/osmosis-labs/cosmos-sdk",
+        "tag": "v0.47.5-v25-osmo-1",
+        "type": "cosmos",
+        "version": "v0.47.5",
+      },
     },
     "daemon_name": "osmosisd",
     "description": "Osmosis (OSMO) is the premier DEX and cross-chain DeFi hub within the Cosmos ecosystem, a network of over 50 sovereign, interoperable blockchains seamlessly connected through the Inter-Blockchain Communication Protocol (IBC). Pioneering in its approach, Osmosis offers a dynamic trading and liquidity provision experience, integrating non-IBC assets from other ecosystems, including Ethereum, Solana, Avalanche, and Polkadot. Initially adopting Balancer-style pools, Osmosis now also features a concentrated liquidity model that is orders of magnitude more capital efficient, meaning that significantly less liquidity is required to handle the same amount of trading volume with minimal slippage.
@@ -382,6 +414,12 @@ Osmosis is bringing the full centralized exchange experience to the decentralize
         "tx_page": "https://chainsco.pe/osmosis/tx/\${txHash}",
         "url": "https://chainsco.pe/osmosis",
       },
+      {
+        "account_page": "https://mainnet.whispernode.com/osmosis/account/\${accountAddress}",
+        "kind": "WhisperNode 🤐",
+        "tx_page": "https://mainnet.whispernode.com/osmosis/tx/\${txHash}",
+        "url": "https://mainnet.whispernode.com/osmosis",
+      },
     ],
     "fees": {
       "fee_tokens": [
@@ -396,16 +434,15 @@ Osmosis is bringing the full centralized exchange experience to the decentralize
     },
     "images": [
       {
-        "layout": "logo",
-        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png",
-        "text_position": "right",
-        "theme": {
-          "primary_color_hex": "#231D4B",
+        "image_sync": {
+          "base_denom": "uosmo",
+          "chain_name": "osmosis",
         },
-      },
-      {
-        "layout": "logomark",
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
         "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg",
+        "theme": {
+          "primary_color_hex": "#760dbb",
+        },
       },
     ],
     "key_algos": [
@@ -415,7 +452,8 @@ Osmosis is bringing the full centralized exchange experience to the decentralize
       "dex",
     ],
     "logo_URIs": {
-      "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png",
+      "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+      "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg",
     },
     "network_type": "mainnet",
     "node_home": "$HOME/.osmosisd",
@@ -523,6 +561,11 @@ Osmosis is bringing the full centralized exchange experience to the decentralize
           "id": "2cb8dd6195c65458e3c18505bb70ce2ff624f85c",
           "provider": "Validatus",
         },
+        {
+          "address": "seeds.bluestake.net:24856",
+          "id": "b85358e035343a3b15e77e1102857dcdaf70053b",
+          "provider": "BlueStake 🚀",
+        },
       ],
     },
     "pretty_name": "Osmosis",
@@ -538,11 +581,10 @@ Osmosis is bringing the full centralized exchange experience to the decentralize
       ],
     },
     "status": "live",
-    "update_link": "https://raw.githubusercontent.com/osmosis-labs/osmosis/main/chain.schema.json",
     "website": "https://osmosis.zone/",
   },
   "command": "chain",
-  "registryDir": "../../packages/chain-registry/chain-registry-fixtures",
+  "registryDir": "../../repos/chain-registry-fixtures",
   "tty": true,
 }
 `;
