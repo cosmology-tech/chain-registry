@@ -5,7 +5,6 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   website: 'https://lavanet.xyz/',
-  update_link: 'https://raw.githubusercontent.com/lavanet/lava/main/chain.schema.json',
   pretty_name: 'Lava',
   chain_type: 'cosmos',
   chain_id: 'lava-mainnet-1',
