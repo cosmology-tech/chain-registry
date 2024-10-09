@@ -1,10 +1,10 @@
 import { CLI } from 'inquirerer';
 
 import { commands } from '../src/commands/info';
-import { setupTests, TestEnvironment } from '../test-utils';
+import { getRegistryFixtureDir, setupTests, TestEnvironment } from '../test-utils';
 
 const beforeEachSetup = setupTests();
-const registryDir = '../../repos/chain-registry-fixtures';
+const registryDir = getRegistryFixtureDir();
 
 describe('Inquirerer', () => {
   let environment: TestEnvironment;

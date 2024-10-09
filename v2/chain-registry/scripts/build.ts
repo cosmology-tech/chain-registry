@@ -7,8 +7,8 @@ import * as path from 'path';
 import { jsStringify } from 'strfy-js';
 
 const NON_COSMOS_NETWORK_TYPE = 'noncosmos';
-const registryDir = path.resolve(`${__dirname}/../../../repos/chain-registry`);
-const registryDirInRepoPath = 'chain-registry/chain-registry';
+const registryDirInRepoPath = 'repos/chain-registry';
+const registryDir = path.resolve( `${__dirname}/../../../`, registryDirInRepoPath );
 const chainRegTypesModule = '@chain-registry/v2-types';
 
 // function camelCaseTransform(key: string): string {
@@ -18,12 +18,12 @@ const chainRegTypesModule = '@chain-registry/v2-types';
 // MARKED AS NOT DRY
 function toCamelCase(key: string) {
   return key
-      // First, remove all leading non-alphabet characters except $
-      .replace(/^[^a-zA-Z$]+/, '')
-      // Convert what follows a separator into upper case
-      .replace(/[-_\s]+(.)?/g, (_, c) => c ? c.toUpperCase() : '')
-      // Ensure the first character of the result is always lowercase
-      .replace(/^./, (c) => c.toLowerCase());
+  // First, remove all leading non-alphabet characters except $
+    .replace(/^[^a-zA-Z$]+/, '')
+  // Convert what follows a separator into upper case
+    .replace(/[-_\s]+(.)?/g, (_, c) => c ? c.toUpperCase() : '')
+  // Ensure the first character of the result is always lowercase
+    .replace(/^./, (c) => c.toLowerCase());
 }
 
 
@@ -69,16 +69,16 @@ ${
 `
     : ''
 }${
-      chainObj.chain
-        ? `export const chain = _chain;
+  chainObj.chain
+    ? `export const chain = _chain;
 `
-        : ''
-    }${
-      chainObj.ibcData
-        ? `export const ibcData = _ibcData;
+    : ''
+}${
+  chainObj.ibcData
+    ? `export const ibcData = _ibcData;
 `
-        : ''
-    }`
+    : ''
+}`
   );
 };
 
@@ -107,10 +107,10 @@ const writeNetworkAssets = (filePath, networkObj) => {
 ${importStat}
 
 const assetList: AssetList[] = [\n${validChain
-      .map((chain_name) => {
-        return `  _${chain_name}.assetList`;
-      })
-      .join(',\n')}
+    .map((chain_name) => {
+      return `  _${chain_name}.assetList`;
+    })
+    .join(',\n')}
 ];
 
 export default assetList;
@@ -146,10 +146,10 @@ const writeNetworkChains = (filePath, networkObj) => {
 ${importStat}
 
 const chains: Chain[] = [\n${validChain
-      .map((chain_name) => {
-        return `  _${chain_name}.chain`;
-      })
-      .join(',\n')}
+    .map((chain_name) => {
+      return `  _${chain_name}.chain`;
+    })
+    .join(',\n')}
 ];
 
 export default chains;
@@ -185,10 +185,10 @@ const writeNetworkIbc = (filePath, networkObj) => {
 ${importStat}
 
 const ibcData: IBCData[] = [\n${validChain
-      .map((chain_name) => {
-        return `  ..._${chain_name}.ibcData`;
-      })
-      .join(',\n')}
+    .map((chain_name) => {
+      return `  ..._${chain_name}.ibcData`;
+    })
+    .join(',\n')}
 ];
 
 export default ibcData;
@@ -201,17 +201,17 @@ export default ibcData;
 function createExports(isAssets: boolean, isChains: boolean, isIbc: boolean): string {
   // Helper function to collect the export items based on conditions
   function collectExports(items: { key: string, condition: boolean }[]): string {
-      return items
-          .filter(item => item.condition)
-          .map(item => item.key)
-          .join(', ');
+    return items
+      .filter(item => item.condition)
+      .map(item => item.key)
+      .join(', ');
   }
 
   // Define the items for export based on the input flags
   const exportItems = [
-      { key: 'assetLists', condition: isAssets },
-      { key: 'chains', condition: isChains },
-      { key: 'ibcData', condition: isIbc }
+    { key: 'assetLists', condition: isAssets },
+    { key: 'chains', condition: isChains },
+    { key: 'ibcData', condition: isIbc }
   ];
 
   // Collect the export strings
@@ -224,14 +224,14 @@ export default {
 };
 `;
 
-const namedExports = `
+  const namedExports = `
 export {
   ${exportList}
 };
 `;
 
-// Concatenate and return the full export string
-return `${defaultExport}${namedExports}`;
+  // Concatenate and return the full export string
+  return `${defaultExport}${namedExports}`;
 }
 
 const writeNetworkAll = (filePath, isAssets, isChains, isIbc) => {
@@ -283,10 +283,10 @@ const writeRootAssets = (filePath, obj) => {
 ${importStat}
 
 const assetLists: AssetList[] = [\n${validNetwork
-      .map((network_type) => {
-        return `  ..._${network_type}.assetLists`;
-      })
-      .join(',\n')}
+    .map((network_type) => {
+      return `  ..._${network_type}.assetLists`;
+    })
+    .join(',\n')}
 ];
 
 export default assetLists;
@@ -322,10 +322,10 @@ const writeRootChains = (filePath, obj) => {
 ${importStat}
 
 const chains: Chain[] = [\n${validNetwork
-      .map((network_type) => {
-        return `  ..._${network_type}.chains`;
-      })
-      .join(',\n')}
+    .map((network_type) => {
+      return `  ..._${network_type}.chains`;
+    })
+    .join(',\n')}
 ];
 
 export default chains;
@@ -361,10 +361,10 @@ const writeRootIbc = (filePath, obj) => {
 ${importStat}
 
 const ibcData: IBCData[] = [\n${validNetwork
-      .map((network_type) => {
-        return `  ..._${network_type}.ibcData`;
-      })
-      .join(',\n')}
+    .map((network_type) => {
+      return `  ..._${network_type}.ibcData`;
+    })
+    .join(',\n')}
 ];
 
 export default ibcData;
@@ -422,13 +422,13 @@ const paths = glob(`${registryDir}/**/*.json`)
   .filter((a) => path.basename(a) !== 'package.json')
   .filter((a) => path.basename(a) !== 'package-lock.json')
   .filter((a) => {
-  const splitedDirs = a.split(registryDirInRepoPath);
-  const filePath = splitedDirs.pop();
-  const dir = path.basename(path.dirname(filePath));
-  return (
-    !NON_INFO_DIRS.includes(dir) && path.basename(filePath) !== 'chain.json'
-  );
-});
+    const splitedDirs = a.split(registryDirInRepoPath);
+    const filePath = splitedDirs.pop();
+    const dir = path.basename(path.dirname(filePath));
+    return (
+      !NON_INFO_DIRS.includes(dir) && path.basename(filePath) !== 'chain.json'
+    );
+  });
 
 const chainNetworkMap = {};
 
