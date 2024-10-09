@@ -542,7 +542,7 @@ Osmosis is bringing the full centralized exchange experience to the decentralize
     "website": "https://osmosis.zone/",
   },
   "command": "chain",
-  "registryDir": "../../packages/chain-registry/chain-registry-fixtures",
+  "registryDir": "../../repos/chain-registry-fixtures",
   "tty": true,
 }
 `;

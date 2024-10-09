@@ -4,7 +4,7 @@ import { commands } from '../src/commands/info';
 import { setupTests, TestEnvironment } from '../test-utils';
 
 const beforeEachSetup = setupTests();
-const registryDir = '../../packages/chain-registry/chain-registry-fixtures';
+const registryDir = '../../repos/chain-registry-fixtures';
 
 describe('Inquirerer', () => {
   let environment: TestEnvironment;
