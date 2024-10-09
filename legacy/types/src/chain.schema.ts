@@ -82,7 +82,8 @@ export interface Chain {
   $schema?: string;
   chain_name: string;
   chain_type: 'cosmos' | 'eip155' | 'bip122' | 'polkadot' | 'solana' | 'algorand' | 'arweave' | 'ergo' | 'fil' | 'hedera' | 'monero' | 'reef' | 'stacks' | 'starknet' | 'stellar' | 'tezos' | 'vechain' | 'waves' | 'xrpl' | 'unknown';
-  chain_id?: string;
+  // TODO update JSON Schema
+  chain_id: string;
   pre_fork_chain_name?: string;
   pretty_name?: string;
   website?: string;
