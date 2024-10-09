@@ -1,7 +1,7 @@
 import { AssetList, IBCInfo } from '@chain-registry/types';
 
-import _assets from '../../../__fixtures__/assets.json';
-import _ibc from '../../../__fixtures__/ibc.json';
+import _assets from '../../../../__fixtures__/assets.json';
+import _ibc from '../../../../__fixtures__/ibc.json';
 import { getIbcDenomByBase } from '../src';
 
 const ibc: IBCInfo[] = _ibc as IBCInfo[];
