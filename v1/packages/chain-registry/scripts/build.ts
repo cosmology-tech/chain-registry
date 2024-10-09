@@ -7,38 +7,23 @@ import * as path from 'path';
 import { jsStringify } from 'strfy-js';
 
 const NON_COSMOS_NETWORK_TYPE = 'noncosmos';
+const registryDir = path.resolve( path.join(`${__dirname}/../../../../`, registryDirInRepoPath));
 const registryDirInRepoPath = 'repos/chain-registry';
-const registryDir = path.resolve( path.join(`${__dirname}/../../../`, registryDirInRepoPath));
-const chainRegTypesModule = '@chain-registry/v2-types';
 
-// function camelCaseTransform(key: string): string {
-//   return key.replace(/[-_\s]+(.)?/g, (_, c) => c ? c.toUpperCase() : '');
-// }
+const getValidVarName = (varName) => {
+  if (!/^[a-zA-Z_$]/.test(varName)) {
+    return `_${varName}`;
+  }
 
-// MARKED AS NOT DRY
-function toCamelCase(key: string) {
-  return key
-  // First, remove all leading non-alphabet characters except $
-    .replace(/^[^a-zA-Z$]+/, '')
-  // Convert what follows a separator into upper case
-    .replace(/[-_\s]+(.)?/g, (_, c) => c ? c.toUpperCase() : '')
-  // Ensure the first character of the result is always lowercase
-    .replace(/^./, (c) => c.toLowerCase());
-}
-
+  return varName;
+};
 
 const write = (filePath, json, TypeName, isArray = false) => {
-  const strfy = jsStringify(json, {
-    quotes: 'single',
-    space: 2,
-    inlineArrayLimit: 2,
-    camelCase: true,
-    camelCaseFn: toCamelCase
-  });
+  const strfy = jsStringify(json, {quotes: 'single', space: 2, inlineArrayLimit: 2});
   const exportType = isArray ? TypeName + '[]' : TypeName;
   fs.writeFileSync(
     filePath,
-    `import { ${TypeName} } from '${chainRegTypesModule}';
+    `import { ${TypeName} } from '@chain-registry/types';
 const info: ${exportType} = ${strfy};
 export default info;`
   );
@@ -48,8 +33,8 @@ const writeChainIndex = (filePath, chainObj) => {
   fs.writeFileSync(
     filePath,
     `${
-      chainObj.assetList
-        ? `import _assetList from './asset-list';
+      chainObj.assets
+        ? `import _assets from './assets';
 `
         : ''
     }${
@@ -58,27 +43,27 @@ const writeChainIndex = (filePath, chainObj) => {
 `
         : ''
     }${
-      chainObj.ibcData
-        ? `import _ibcData from './ibc-data';
+      chainObj.ibc
+        ? `import _ibc from './ibc';
 `
         : ''
     }
 ${
-  chainObj.assetList
-    ? `export const assetList = _assetList;
+  chainObj.assets
+    ? `export const assets = _assets;
 `
     : ''
 }${
-  chainObj.chain
-    ? `export const chain = _chain;
+      chainObj.chain
+        ? `export const chain = _chain;
 `
-    : ''
-}${
-  chainObj.ibcData
-    ? `export const ibcData = _ibcData;
+        : ''
+    }${
+      chainObj.ibc
+        ? `export const ibc = _ibc;
 `
-    : ''
-}`
+        : ''
+    }`
   );
 };
 
@@ -86,7 +71,7 @@ const writeNetworkAssets = (filePath, networkObj) => {
   const validChain = [];
   const importStat = Object.keys(networkObj)
     .map((chain_name) => {
-      if (!networkObj[chain_name].assetList) {
+      if (!networkObj[chain_name].assets) {
         return null;
       }
 
@@ -102,18 +87,18 @@ const writeNetworkAssets = (filePath, networkObj) => {
 
   fs.writeFileSync(
     filePath,
-    `import { AssetList } from '${chainRegTypesModule}';
+    `import { AssetList } from '@chain-registry/types';
 
 ${importStat}
 
-const assetList: AssetList[] = [\n${validChain
-    .map((chain_name) => {
-      return `  _${chain_name}.assetList`;
-    })
-    .join(',\n')}
+const assets: AssetList[] = [\n${validChain
+      .map((chain_name) => {
+        return `  _${chain_name}.assets`;
+      })
+      .join(',\n')}
 ];
 
-export default assetList;
+export default assets;
 `
   );
 
@@ -141,15 +126,15 @@ const writeNetworkChains = (filePath, networkObj) => {
 
   fs.writeFileSync(
     filePath,
-    `import { Chain } from '${chainRegTypesModule}';
+    `import { Chain } from '@chain-registry/types';
 
 ${importStat}
 
 const chains: Chain[] = [\n${validChain
-    .map((chain_name) => {
-      return `  _${chain_name}.chain`;
-    })
-    .join(',\n')}
+      .map((chain_name) => {
+        return `  _${chain_name}.chain`;
+      })
+      .join(',\n')}
 ];
 
 export default chains;
@@ -164,7 +149,7 @@ const writeNetworkIbc = (filePath, networkObj) => {
 
   const importStat = Object.keys(networkObj)
     .map((chain_name) => {
-      if (!networkObj[chain_name].ibcData) {
+      if (!networkObj[chain_name].ibc) {
         return null;
       }
 
@@ -180,44 +165,58 @@ const writeNetworkIbc = (filePath, networkObj) => {
 
   fs.writeFileSync(
     filePath,
-    `import { IBCData } from '${chainRegTypesModule}';
+    `import { IBCInfo } from '@chain-registry/types';
 
 ${importStat}
 
-const ibcData: IBCData[] = [\n${validChain
-    .map((chain_name) => {
-      return `  ..._${chain_name}.ibcData`;
-    })
-    .join(',\n')}
+const ibc: IBCInfo[] = [\n${validChain
+      .map((chain_name) => {
+        return `  ..._${chain_name}.ibc`;
+      })
+      .join(',\n')}
 ];
 
-export default ibcData;
+export default ibc;
 `
   );
 
   return true;
 };
 
+const writeNamedIndex = (filePath, networkObj) => {
+  fs.writeFileSync(
+    filePath,
+    `${Object.keys(networkObj)
+      .map((chain_name) => {
+        return `export * as ${getValidVarName(
+          chain_name
+        )} from './${chain_name}';`;
+      })
+      .filter(Boolean)
+      .join('\n')}`
+  );
+};
+
 function createExports(isAssets: boolean, isChains: boolean, isIbc: boolean): string {
   // Helper function to collect the export items based on conditions
   function collectExports(items: { key: string, condition: boolean }[]): string {
-    return items
-      .filter(item => item.condition)
-      .map(item => item.key)
-      .join(', ');
+      return items
+          .filter(item => item.condition)
+          .map(item => item.key)
+          .join(', ');
   }
 
   // Define the items for export based on the input flags
   const exportItems = [
-    { key: 'assetLists', condition: isAssets },
-    { key: 'chains', condition: isChains },
-    { key: 'ibcData', condition: isIbc }
+      { key: 'assets', condition: isAssets },
+      { key: 'chains', condition: isChains },
+      { key: 'ibc', condition: isIbc }
   ];
 
   // Collect the export strings
   const exportList = collectExports(exportItems);
 
-  // Create the default exports blocks
+  // Create the default and named exports blocks
   const defaultExport = `
 export default {
   ${exportList}
@@ -239,7 +238,7 @@ const writeNetworkAll = (filePath, isAssets, isChains, isIbc) => {
     filePath,
     `${
       isAssets
-        ? `import assetLists from './asset-lists';
+        ? `import assets from './assets';
 `
         : ''
     }${
@@ -249,7 +248,7 @@ const writeNetworkAll = (filePath, isAssets, isChains, isIbc) => {
         : ''
     }${
       isIbc
-        ? `import ibcData from './ibc-data';
+        ? `import ibc from './ibc';
 `
         : ''
     }
@@ -278,18 +277,18 @@ const writeRootAssets = (filePath, obj) => {
 
   fs.writeFileSync(
     filePath,
-    `import { AssetList } from '${chainRegTypesModule}';
+    `import { AssetList } from '@chain-registry/types';
 
 ${importStat}
 
-const assetLists: AssetList[] = [\n${validNetwork
-    .map((network_type) => {
-      return `  ..._${network_type}.assetLists`;
-    })
-    .join(',\n')}
+const assets: AssetList[] = [\n${validNetwork
+      .map((network_type) => {
+        return `  ..._${network_type}.assets`;
+      })
+      .join(',\n')}
 ];
 
-export default assetLists;
+export default assets;
 `
   );
 
@@ -317,15 +316,15 @@ const writeRootChains = (filePath, obj) => {
 
   fs.writeFileSync(
     filePath,
-    `import { Chain } from '${chainRegTypesModule}';
+    `import { Chain } from '@chain-registry/types';
 
 ${importStat}
 
 const chains: Chain[] = [\n${validNetwork
-    .map((network_type) => {
-      return `  ..._${network_type}.chains`;
-    })
-    .join(',\n')}
+      .map((network_type) => {
+        return `  ..._${network_type}.chains`;
+      })
+      .join(',\n')}
 ];
 
 export default chains;
@@ -356,18 +355,18 @@ const writeRootIbc = (filePath, obj) => {
 
   fs.writeFileSync(
     filePath,
-    `import { IBCData } from '${chainRegTypesModule}';
+    `import { IBCInfo } from '@chain-registry/types';
 
 ${importStat}
 
-const ibcData: IBCData[] = [\n${validNetwork
-    .map((network_type) => {
-      return `  ..._${network_type}.ibcData`;
-    })
-    .join(',\n')}
+const ibc: IBCInfo[] = [\n${validNetwork
+      .map((network_type) => {
+        return `  ..._${network_type}.ibc`;
+      })
+      .join(',\n')}
 ];
 
-export default ibcData;
+export default ibc;
 `
   );
 
@@ -377,18 +376,38 @@ export default ibcData;
 const writeRootIndex = (filePath) => {
   fs.writeFileSync(
     filePath,
-    `import assetLists from './asset-lists';
+    `import assets from './assets';
 import chains from './chains';
-import ibcData from './ibc-data';
+import ibc from './ibc';
 
 export default {
-  assetLists,
+  assets,
   chains,
-  ibcData
+  ibc
 };
 
-export { assetLists, chains, ibcData };`
+export { assets, chains, ibc };`
   );
+};
+
+const writeRootNamedFile = (filePath, obj) => {
+  let imports = Object.keys(obj)
+    .map((network_type) => {
+      return `export * from './${network_type}/named';`;
+    })
+    .filter(Boolean)
+    .join('\n');
+
+  imports = `${imports}
+import all from './index';
+
+export default all;
+
+const { assets, chains, ibc } = all;
+
+export { assets, chains, ibc };`;
+
+  fs.writeFileSync(filePath, `${imports}`);
 };
 
 const initChainBlock = (obj, network_type, chain_name) => {
@@ -422,13 +441,13 @@ const paths = glob(`${registryDir}/**/*.json`)
   .filter((a) => path.basename(a) !== 'package.json')
   .filter((a) => path.basename(a) !== 'package-lock.json')
   .filter((a) => {
-    const splitedDirs = a.split(registryDirInRepoPath);
-    const filePath = splitedDirs.pop();
-    const dir = path.basename(path.dirname(filePath));
-    return (
-      !NON_INFO_DIRS.includes(dir) && path.basename(filePath) !== 'chain.json'
-    );
-  });
+  const splitedDirs = a.split(registryDirInRepoPath);
+  const filePath = splitedDirs.pop();
+  const dir = path.basename(path.dirname(filePath));
+  return (
+    !NON_INFO_DIRS.includes(dir) && path.basename(filePath) !== 'chain.json'
+  );
+});
 
 const chainNetworkMap = {};
 
@@ -444,19 +463,19 @@ chainPaths.forEach((file) => {
 
   if (data.$schema.endsWith('chain.schema.json')) {
     if (!data.slip44) data.slip44 = 118;
-    // if (data.codebase) {
-    //   const newCodebase = {};
-    //   if ('cosmos_sdk_version' in data.codebase) {
-    //     newCodebase.cosmos_sdk_version = data.codebase.cosmos_sdk_version;
-    //   }
-    //   if ('cosmwasm_enabled' in data.codebase) {
-    //     newCodebase.cosmwasm_enabled = data.codebase.cosmwasm_enabled;
-    //   }
-    //   if ('cosmwasm_version' in data.codebase) {
-    //     newCodebase.cosmwasm_version = data.codebase.cosmwasm_version;
-    //   }
-    //   data.codebase = newCodebase;
-    // }
+    if (data.codebase) {
+      const newCodebase = {};
+      if ('cosmos_sdk_version' in data.codebase) {
+        newCodebase.cosmos_sdk_version = data.codebase.cosmos_sdk_version;
+      }
+      if ('cosmwasm_enabled' in data.codebase) {
+        newCodebase.cosmwasm_enabled = data.codebase.cosmwasm_enabled;
+      }
+      if ('cosmwasm_version' in data.codebase) {
+        newCodebase.cosmwasm_version = data.codebase.cosmwasm_version;
+      }
+      data.codebase = newCodebase;
+    }
     delete data.peers;
 
     if (!data.chain_name) {
@@ -485,9 +504,9 @@ paths.forEach((file) => {
 
     if (!network_type) {
       initChainBlock(result, NON_COSMOS_NETWORK_TYPE, data.chain_name);
-      result[NON_COSMOS_NETWORK_TYPE][data.chain_name].assetList = data;
+      result[NON_COSMOS_NETWORK_TYPE][data.chain_name].assets = data;
     } else {
-      result[network_type][data.chain_name].assetList = data;
+      result[network_type][data.chain_name].assets = data;
     }
   }
 
@@ -496,22 +515,22 @@ paths.forEach((file) => {
 
     if (!network_type1) {
       initChainBlock(result, NON_COSMOS_NETWORK_TYPE, data.chain_1.chain_name);
-      initIBC(result[NON_COSMOS_NETWORK_TYPE][data.chain_1.chain_name], 'ibcData');
-      result[NON_COSMOS_NETWORK_TYPE][data.chain_1.chain_name].ibcData.push(data);
+      initIBC(result[NON_COSMOS_NETWORK_TYPE][data.chain_1.chain_name], 'ibc');
+      result[NON_COSMOS_NETWORK_TYPE][data.chain_1.chain_name].ibc.push(data);
     } else {
-      initIBC(result[network_type1][data.chain_1.chain_name], 'ibcData');
-      result[network_type1][data.chain_1.chain_name].ibcData.push(data);
+      initIBC(result[network_type1][data.chain_1.chain_name], 'ibc');
+      result[network_type1][data.chain_1.chain_name].ibc.push(data);
     }
 
     const network_type2 = chainNetworkMap[data.chain_2.chain_name];
 
     if (!network_type2) {
       initChainBlock(result, NON_COSMOS_NETWORK_TYPE, data.chain_2.chain_name);
-      initIBC(result[NON_COSMOS_NETWORK_TYPE][data.chain_2.chain_name], 'ibcData');
-      result[NON_COSMOS_NETWORK_TYPE][data.chain_2.chain_name].ibcData.push(data);
+      initIBC(result[NON_COSMOS_NETWORK_TYPE][data.chain_2.chain_name], 'ibc');
+      result[NON_COSMOS_NETWORK_TYPE][data.chain_2.chain_name].ibc.push(data);
     } else {
-      initIBC(result[network_type2][data.chain_2.chain_name], 'ibcData');
-      result[network_type2][data.chain_2.chain_name].ibcData.push(data);
+      initIBC(result[network_type2][data.chain_2.chain_name], 'ibc');
+      result[network_type2][data.chain_2.chain_name].ibc.push(data);
     }
   }
 });
@@ -533,28 +552,31 @@ Object.keys(result).forEach((network_type) => {
       write(chainFilePath, chainObj.chain, 'Chain', false);
     }
 
-    if (chainObj.assetList) {
-      const assetListsFilePath = path.join(chainFolderPath, 'asset-list.ts');
-      write(assetListsFilePath, chainObj.assetList, 'AssetList', false);
+    if (chainObj.assets) {
+      const assetsFilePath = path.join(chainFolderPath, 'assets.ts');
+      write(assetsFilePath, chainObj.assets, 'AssetList', false);
     }
 
-    if (chainObj.ibcData) {
-      const ibcFilePath = path.join(chainFolderPath, 'ibc-data.ts');
-      write(ibcFilePath, chainObj.ibcData, 'IBCData', true);
+    if (chainObj.ibc) {
+      const ibcFilePath = path.join(chainFolderPath, 'ibc.ts');
+      write(ibcFilePath, chainObj.ibc, 'IBCInfo', true);
     }
 
     const indexFilePath = path.join(chainFolderPath, 'index.ts');
     writeChainIndex(indexFilePath, chainObj);
   });
 
-  const assetListsFilePath = path.join(networkFolder, 'asset-lists.ts');
-  const isAssets = writeNetworkAssets(assetListsFilePath, result[network_type]);
+  const assetsFilePath = path.join(networkFolder, 'assets.ts');
+  const isAssets = writeNetworkAssets(assetsFilePath, result[network_type]);
 
   const chainsFilePath = path.join(networkFolder, 'chains.ts');
   const isChains = writeNetworkChains(chainsFilePath, result[network_type]);
 
-  const ibcFilePath = path.join(networkFolder, 'ibc-data.ts');
+  const ibcFilePath = path.join(networkFolder, 'ibc.ts');
   const isIbc = writeNetworkIbc(ibcFilePath, result[network_type]);
+
+  const indexFilePath = path.join(networkFolder, 'named.ts');
+  writeNamedIndex(indexFilePath, result[network_type]);
 
   const allFilePath = path.join(networkFolder, 'index.ts');
   result[network_type]['all_files'] = {
@@ -565,14 +587,17 @@ Object.keys(result).forEach((network_type) => {
   writeNetworkAll(allFilePath, isAssets, isChains, isIbc);
 });
 
-const assetsRootFilePath = path.join(SRC_ROOT, 'asset-lists.ts');
+const assetsRootFilePath = path.join(SRC_ROOT, 'assets.ts');
 writeRootAssets(assetsRootFilePath, result);
 
 const chainsRootFilePath = path.join(SRC_ROOT, 'chains.ts');
 writeRootChains(chainsRootFilePath, result);
 
-const ibcRootFilePath = path.join(SRC_ROOT, 'ibc-data.ts');
+const ibcRootFilePath = path.join(SRC_ROOT, 'ibc.ts');
 writeRootIbc(ibcRootFilePath, result);
 
 const indexFilePath = path.join(SRC_ROOT, 'index.ts');
 writeRootIndex(indexFilePath);
+
+const namedFilePath = path.join(SRC_ROOT, 'named.ts');
+writeRootNamedFile(namedFilePath, result);

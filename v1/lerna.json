@@ -6,10 +6,7 @@
     "--no-lockfile"
   ],
   "packages": [
-    "legacy/*",
-    "packages/*",
-    "workflows/*",
-    "v2/*"
+    "packages/*"
   ],
   "version": "independent",
   "registry": "https://registry.npmjs.org",
