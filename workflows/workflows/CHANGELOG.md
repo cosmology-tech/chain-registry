@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.50.14 (2024-10-09)
+
+**Note:** Version bump only for package @chain-registry/workflows
+
+
+
+
+
 ## 1.50.13 (2024-10-09)
 
 **Note:** Version bump only for package @chain-registry/workflows
