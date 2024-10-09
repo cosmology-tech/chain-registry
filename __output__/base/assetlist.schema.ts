@@ -3,13 +3,13 @@ export interface Asset {
   description?: string;
   extended_description?: string;
   denom_units: DenomUnit[];
-  type_asset?: "sdk.coin" | "cw20" | "erc20" | "ics20" | "snip20" | "snip25" | "bitcoin-like" | "evm-base" | "svm-base" | "substrate";
+  type_asset: "sdk.coin" | "cw20" | "erc20" | "ics20" | "snip20" | "snip25" | "bitcoin-like" | "evm-base" | "svm-base" | "substrate" | "unknown";
   address?: string;
   base: string;
   name: string;
   display: string;
   symbol: string;
-  traces?: (IbcTransition | IbcCw20Transition | NonIbcTransition)[];
+  traces?: (IbcTransition | IbcCw20Transition | IbcBridgeTransition | NonIbcTransition)[];
   ibc?: {
     source_channel: string;
     dst_channel: string;
@@ -25,8 +25,10 @@ export interface Asset {
     svg?: string;
     theme?: {
       primary_color_hex?: string;
+      background_color_hex?: string;
       circle?: boolean;
       dark_mode?: boolean;
+      monochrome?: boolean;
     };
   }[];
   coingecko_id?: string;
@@ -34,6 +36,11 @@ export interface Asset {
   socials?: {
     website?: string;
     twitter?: string;
+    telegram?: string;
+    discord?: string;
+    github?: string;
+    medium?: string;
+    reddit?: string;
   };
 }
 export interface DenomUnit {
@@ -71,8 +78,23 @@ export interface IbcCw20Transition {
     path: string;
   };
 }
+export interface IbcBridgeTransition {
+  type: "ibc-bridge";
+  counterparty: {
+    chain_name: string;
+    base_denom: string;
+    port?: string;
+    channel_id: string;
+  };
+  chain: {
+    port?: string;
+    channel_id: string;
+    path: string;
+  };
+  provider: string;
+}
 export interface NonIbcTransition {
-  type: "bridge" | "liquid-stake" | "synthetic" | "wrapped" | "additional-mintage" | "test-mintage";
+  type: "bridge" | "liquid-stake" | "synthetic" | "wrapped" | "additional-mintage" | "test-mintage" | "legacy-mintage";
   counterparty: {
     chain_name: string;
     base_denom: string;

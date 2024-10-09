@@ -163,6 +163,7 @@
       "properties": {
         "channelId": {
           "type": "string",
+          "pattern": "^(channel-\\d+|\\*)$",
           "description": "The channel ID on the corresponding chain's connection representing a channel on the other chain."
         },
         "portId": {

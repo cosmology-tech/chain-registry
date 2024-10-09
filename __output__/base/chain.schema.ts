@@ -13,6 +13,9 @@ export interface Explorer {
   url?: string;
   tx_page?: string;
   account_page?: string;
+  validator_page?: string;
+  proposal_page?: string;
+  block_page?: string;
 }
 export interface FeeToken {
   denom: string;
@@ -28,6 +31,49 @@ export interface FeeToken {
 export interface StakingToken {
   denom: string;
 }
+export type Repo = string;
+export type Version = string;
+export type Tag = string;
+export interface Sdk {
+  type: "cosmos" | "penumbra" | "other";
+  version?: Version;
+  repo?: Repo;
+  tag?: Tag;
+}
+export interface Ibc {
+  type: "go" | "rust" | "other";
+  version?: Version;
+  repo?: Repo;
+  tag?: Tag;
+  ics_enabled?: ("ics20-1" | "ics27-1" | "mauth")[];
+}
+export interface Cosmwasm {
+  version?: Version;
+  repo?: Repo;
+  tag?: Tag;
+  enabled?: boolean;
+  path?: string;
+}
+export interface Consensus {
+  type: "tendermint" | "cometbft" | "sei-tendermint";
+  version?: Version;
+  repo?: Repo;
+  tag?: Tag;
+}
+export interface Language {
+  type: "go" | "rust" | "solidity" | "other";
+  version?: Version;
+  repo?: Repo;
+  tag?: Tag;
+}
+export interface Binaries {
+  "linux/amd64"?: string;
+  "linux/arm64"?: string;
+  "darwin/amd64"?: string;
+  "darwin/arm64"?: string;
+  "windows/amd64"?: string;
+  "windows/arm64"?: string;
+}
 export interface Pointer {
   chain_name: string;
   base_denom?: string;
@@ -35,14 +81,14 @@ export interface Pointer {
 export interface Chain {
   $schema?: string;
   chain_name: string;
-  chain_id: string;
+  chain_type: "cosmos" | "eip155" | "bip122" | "polkadot" | "solana" | "algorand" | "arweave" | "ergo" | "fil" | "hedera" | "monero" | "reef" | "stacks" | "starknet" | "stellar" | "tezos" | "vechain" | "waves" | "xrpl" | "unknown";
+  chain_id?: string;
   pre_fork_chain_name?: string;
   pretty_name?: string;
   website?: string;
-  update_link?: string;
   status?: "live" | "upcoming" | "killed";
   network_type?: "mainnet" | "testnet" | "devnet";
-  bech32_prefix: string;
+  bech32_prefix?: string;
   bech32_config?: {
     bech32PrefixAccAddr?: string;
     bech32PrefixAccPub?: string;
@@ -69,26 +115,17 @@ export interface Chain {
   codebase?: {
     git_repo?: string;
     recommended_version?: string;
-    go_version?: string;
     compatible_versions?: string[];
-    binaries?: {
-      "linux/amd64"?: string;
-      "linux/arm64"?: string;
-      "darwin/amd64"?: string;
-      "darwin/arm64"?: string;
-      "windows/amd64"?: string;
-      "windows/arm64"?: string;
-    };
+    language?: Language;
+    binaries?: Binaries;
     cosmos_sdk_version?: string;
-    consensus?: {
-      type: "tendermint" | "cometbft" | "sei-tendermint";
-      version?: string;
-    };
+    sdk?: Sdk;
+    consensus?: Consensus;
     cosmwasm_version?: string;
     cosmwasm_enabled?: boolean;
     cosmwasm_path?: string;
-    ibc_go_version?: string;
-    ics_enabled?: ("ics20-1" | "ics27-1" | "mauth")[];
+    cosmwasm?: Cosmwasm;
+    ibc?: Ibc;
     genesis?: {
       name?: string;
       genesis_url: string;
@@ -102,26 +139,17 @@ export interface Chain {
       previous_version_name?: string;
       next_version_name?: string;
       recommended_version?: string;
-      go_version?: string;
       compatible_versions?: string[];
+      language?: Language;
       cosmos_sdk_version?: string;
-      consensus?: {
-        type: "tendermint" | "cometbft" | "sei-tendermint";
-        version?: string;
-      };
+      sdk?: Sdk;
+      consensus?: Consensus;
       cosmwasm_version?: string;
       cosmwasm_enabled?: boolean;
       cosmwasm_path?: string;
-      ibc_go_version?: string;
-      ics_enabled?: ("ics20-1" | "ics27-1" | "mauth")[];
-      binaries?: {
-        "linux/amd64"?: string;
-        "linux/arm64"?: string;
-        "darwin/amd64"?: string;
-        "darwin/arm64"?: string;
-        "windows/amd64"?: string;
-        "windows/arm64"?: string;
-      };
+      cosmwasm?: Cosmwasm;
+      ibc?: Ibc;
+      binaries?: Binaries;
     }[];
   };
   images?: {
@@ -130,11 +158,11 @@ export interface Chain {
     svg?: string;
     theme?: {
       primary_color_hex?: string;
+      background_color_hex?: string;
       circle?: boolean;
       dark_mode?: boolean;
+      monochrome?: boolean;
     };
-    layout?: "logo" | "logomark" | "logotype";
-    text_position?: "top" | "bottom" | "left" | "right" | "integrated";
   }[];
   logo_URIs?: {
     png?: string;
