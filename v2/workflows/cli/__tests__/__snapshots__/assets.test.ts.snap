@@ -6,7 +6,7 @@ exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
   "asset": "uion",
   "chain": "osmosis",
   "command": "asset-list",
-  "registryDir": "../../repos/chain-registry-fixtures",
+  "registryDir": "../../../repos/chain-registry-fixtures",
   "tty": true,
 }
 `;

@@ -4,7 +4,7 @@ exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
 {
   "_": [],
   "command": "validate",
-  "registryDir": "../../repos/chain-registry-fixtures",
+  "registryDir": "../../../repos/chain-registry-fixtures",
   "tty": true,
 }
 `;
