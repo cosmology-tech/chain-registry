@@ -5,6 +5,7 @@ on:
 
 jobs:
   publish-npm:
+    name: Publish Minor Versions
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository 🛎️
@@ -18,12 +19,25 @@ jobs:
           node-version: '20.x'
           registry-url: https://registry.npmjs.org/
 
-      - name: Publish Minor Version
+      - name: Configure Git
         run: |
-          yarn
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
-          lerna publish minor --force-publish=chain-registry --no-verify-access --yes
+
+      - name: Publish v1 Minor Version
+        run: |
+          cd v1
+          yarn
+          yarn lerna publish minor --force-publish=chain-registry --no-verify-access --yes
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
+          GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
+
+      - name: Publish v2 Minor Version
+        run: |
+          cd v2
+          yarn
+          yarn lerna publish minor --force-publish=chain-registry --no-verify-access --yes
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
           GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
