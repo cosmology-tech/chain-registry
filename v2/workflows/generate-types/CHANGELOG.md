@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.49.15](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/generate-types@0.49.14...@chain-registry/generate-types@0.49.15) (2024-10-10)
+
+**Note:** Version bump only for package @chain-registry/generate-types
+
+
+
+
+
 ## 0.49.14 (2024-10-09)
 
 **Note:** Version bump only for package @chain-registry/generate-types
