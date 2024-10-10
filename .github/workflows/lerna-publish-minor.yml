@@ -28,7 +28,7 @@ jobs:
         run: |
           cd v1
           yarn
-          yarn lerna publish minor --force-publish=chain-registry --no-verify-access --yes
+          lerna publish minor --force-publish=chain-registry --no-verify-access --yes
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
           GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
@@ -37,7 +37,7 @@ jobs:
         run: |
           cd v2
           yarn
-          yarn lerna publish minor --force-publish=chain-registry --no-verify-access --yes
+          lerna publish minor --force-publish=chain-registry --no-verify-access --yes
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
           GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
