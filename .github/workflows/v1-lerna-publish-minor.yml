@@ -1,6 +1,11 @@
-name: Lerna Publish Minor
+name: Lerna Publish Minor V1
 
 on:
+  workflow_run:
+    workflows: ["Codegen Main V1"]
+    types:
+      - completed
+
   workflow_dispatch:
 
 jobs:
@@ -29,15 +34,6 @@ jobs:
           cd v1
           yarn
           lerna publish minor --force-publish=chain-registry --no-verify-access --yes
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
-          GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
-
-      - name: Publish v2 Minor Version
-        run: |
-          cd v2
-          yarn
-          lerna publish --force-publish=@chain-registry/v2 --no-verify-access --yes
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
           GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}

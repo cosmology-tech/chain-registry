@@ -1,4 +1,4 @@
-name: Codegen Main Dry Run
+name: Codegen Main V1 Dry Run
 
 on:
   workflow_dispatch:
@@ -22,23 +22,18 @@ jobs:
         run: |
           make update-cosmos
 
-      - name: Install Dependencies 🧶
+      - name: V1 Operations 🛠
         run: |
-          cd v1
+          pushd v1
           yarn install
           yarn symlink
-
-      - name: Build Project 🏗️
-        run: |
-          cd v1
           yarn build
           yarn symlink
-
-      - name: Code Generation 🛠
-        run: |
-          cd v1
           yarn codegen
-          cd ..
+          popd
+
+      - name: Check for Changes
+        run: |
           git add .
           if ! git diff --staged --quiet; then
             echo "GIT_RESULT=Changes detected." >> $GITHUB_ENV

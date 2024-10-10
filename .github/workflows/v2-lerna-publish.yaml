@@ -1,8 +1,8 @@
-name: Lerna Publish
+name: Lerna Publish V2
 
 on:
   workflow_run:
-    workflows: ["Codegen Main"]
+    workflows: ["Codegen Main V2"]
     types:
       - completed
 
@@ -10,7 +10,7 @@ on:
 
 jobs:
   publish-npm:
-    name: Publish Versions
+    name: Publish V2 Version
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository 🛎️
@@ -29,20 +29,12 @@ jobs:
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
 
-      - name: Publish v1 Version
+      - name: Publish V2 Version 🚀
         run: |
-          cd v1
+          pushd v2
           yarn
-          lerna publish --force-publish=chain-registry --no-verify-access --yes
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
-          GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
-
-      - name: Publish v2 Version
-        run: |
-          cd v2
-          yarn
-          lerna publish --force-publish=@chain-registry/v2 --no-verify-access --yes
+          yarn lerna publish --force-publish=@chain-registry/v2 --no-verify-access --yes
+          popd
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
           GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}

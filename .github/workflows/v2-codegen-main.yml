@@ -1,4 +1,4 @@
-name: Codegen Main
+name: Codegen Main V2
 
 on:
   schedule:
@@ -26,21 +26,13 @@ jobs:
         run: |
           make update-cosmos
 
-      - name: Install Dependencies 🧶
+      - name: V2 Operations 🛠
         run: |
-          cd v1
+          pushd v2
           yarn install
           yarn symlink
-
-      - name: Build Project 🏗️
-        run: |
-          cd v1
           yarn build
           yarn symlink
-
-      - name: Code Generation 🛠
-        run: |
-          cd v1
 
           # Code generation and build for various packages
           pushd packages/chain-registry
@@ -48,21 +40,22 @@ jobs:
           yarn build
           popd
 
-          pushd packages/assets
-          yarn codegen
+          # pushd packages/assets
+          # yarn codegen
+          # popd
+
+          # pushd packages/osmosis
+          # yarn codegen
+          # popd
+
+          # pushd packages/juno
+          # yarn codegen
+          # popd
+
           popd
 
-          pushd packages/osmosis
-          yarn codegen
-          popd
-
-          pushd packages/juno
-          yarn codegen
-          popd
-
-          cd ..
-
-          # Stage all changes and commit if there are any changes
+      - name: Commit Changes
+        run: |
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
           git add .

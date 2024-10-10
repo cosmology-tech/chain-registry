@@ -1,0 +1,39 @@
+name: Lerna Publish Minor V2
+
+on:
+  workflow_run:
+    workflows: ["Codegen Main V2"]
+    types:
+      - completed
+
+  workflow_dispatch:
+
+jobs:
+  publish-npm:
+    name: Publish Minor Versions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository 🛎️
+        uses: actions/checkout@v4
+        with:
+          submodules: "true"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: https://registry.npmjs.org/
+
+      - name: Configure Git
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor}}@users.noreply.github.com"
+
+      - name: Publish V2 Minor Version
+        run: |
+          cd v2
+          yarn
+          lerna publish minor --force-publish=@chain-registry/v2 --no-verify-access --yes
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
+          GH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}

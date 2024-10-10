@@ -19,23 +19,15 @@ jobs:
 
       - name: Update Git Submodules 🔄
         run: |
-          make update-cosmos  # Fixed typo here
+          make update-cosmos
 
-      - name: Install Dependencies 🧶
+      - name: V2 Operations 🛠
         run: |
-          cd v2
+          pushd v2
           yarn install
           yarn symlink
-
-      - name: Build Project 🏗️
-        run: |
-          cd v2
           yarn build
           yarn symlink
-
-      - name: Types Generation 🛠
-        run: |         
-          cd v2
 
           # Generate types and interfaces
           pushd workflows/generate-types
@@ -59,9 +51,10 @@ jobs:
           yarn build
           popd
 
-          cd ..
+          popd
 
-          # check changes
+      - name: Check for Changes
+        run: |
           git add .
           if ! git diff --staged --quiet; then
             echo "GIT_RESULT=Changes to commit and/or publish." >> $GITHUB_ENV
