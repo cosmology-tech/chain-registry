@@ -1,8 +1,8 @@
-.PHONY: def update-chain-registry update-fixtures
+.PHONY: def update-registry update-fixtures
 
-def: update-chain-registry update-fixtures
+def: update-registry update-fixtures
 
-update-chain-registry:
+update-registry:
 	@echo "Updating cosmos/chain-registry submodule"
 	git config submodule.repos/chain-registry.url https://github.com/cosmos/chain-registry.git
 	git submodule sync repos/chain-registry

@@ -240,10 +240,10 @@ lerna publish
 
 Use the following Makefile commands to update the data in the submodules. These commands will ensure that your submodules are synchronized with their respective remote repositories.
 
-- **update-cosmos**: Updates the submodule to the latest commits of the `cosmos/chain-registry` repository. This should be used to pull the most current production data into your local environment.
+- **update-registry**: Updates the submodule to the latest commits of the `cosmos/chain-registry` repository. This should be used to pull the most current production data into your local environment.
 
 ```
-make update-cosmos
+make update-registry
 ```
 
 - **update-fixtures**: Updates the submodule to the latest commits of the `cosmology-tech/chain-registry-fixtures` repository. Use this for testing purposes to ensure that your tests are running against stable, controlled data sets.

@@ -24,7 +24,7 @@ jobs:
 
       - name: Update Git Submodules 🔄
         run: |
-          make update-cosmos
+          make update-registry
 
       - name: V2 Operations 🛠
         run: |
