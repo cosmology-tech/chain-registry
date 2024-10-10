@@ -16,7 +16,7 @@
   </a>
   <br />
   <a href="https://github.com/cosmology-tech/chain-registry/blob/main/LICENSE"><img height="20" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
-  <a href="https://www.npmjs.com/package/chain-registry"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=v1/packages%2Fchain-registry%2Fpackage.json"></a>
+  <a href="https://www.npmjs.com/package/chain-registry"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=v2%2Fpackages%2Fchain-registry%2Fpackage.json"></a>
 </p>
 
 The npm package for the Official Cosmos [chain registry](https://github.com/cosmos/chain-registry)
@@ -30,11 +30,11 @@ A unified store of chains info, assets, asset lists, and IBC channels for the Co
 
 ## Features 
 
-- 🌐 **Dynamic Loading via [ChainRegistryClient](https://github.com/cosmology-tech/chain-registry/tree/main/packages/client)** - Utilize the client for dynamic data fetching.
+- 🌐 **Dynamic Loading via [ChainRegistryClient](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/client)** - Utilize the client for dynamic data fetching.
 - 📦 **Tree-Shaking Support** - Optimize your bundles and [include only what you need](#tree-shaking-imports-from-chain-registry).
 - 🔌 **Module Compatibility** - Supports both CommonJS and ES Module formats, ensuring compatibility with various JavaScript environments and tools.
-- 🛠 **Utilities for Working with Assets and Chains** - [Comprehensive tools](https://github.com/cosmology-tech/chain-registry/tree/main/packages/client) to manage assets and chains efficiently.
-- 🌎 **Pre-generated Asset Lists with IBC Denominations for All Chains** - Access ready-to-use [asset lists](ttps://github.com/cosmology-tech/chain-registry/tree/main/packages/assets) across all chains.
+- 🛠 **Utilities for Working with Assets and Chains** - [Comprehensive tools](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/client) to manage assets and chains efficiently.
+- 🌎 **Pre-generated Asset Lists with IBC Denominations for All Chains** - Access ready-to-use [asset lists](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/assets) across all chains.
 - 🔄 **Conversions for Keplr, Cosmostation** - Easily convert data for use with Keplr and Cosmostation wallets.
 
 ## Usage

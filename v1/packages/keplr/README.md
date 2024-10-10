@@ -9,7 +9,7 @@
     <img height="20" src="https://github.com/cosmology-tech/chain-registry/actions/workflows/run-tests.yml/badge.svg" />
   </a>
    <a href="https://github.com/cosmology-tech/chain-registry/blob/main/LICENSE"><img height="20" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
-   <a href="https://www.npmjs.com/package/@chain-registry/keplr"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=packages%2Fkeplr%2Fpackage.json"></a>
+   <a href="https://www.npmjs.com/package/@chain-registry/keplr"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=v1%2Fpackages%2Fkeplr%2Fpackage.json"></a>
 </p>
 
 Keplr integration for the chain-registry returning keplr's `ChainInfo` type from `@chain-registry/types` `Chain` type.

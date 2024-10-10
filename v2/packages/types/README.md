@@ -10,7 +10,7 @@
   </a>
    <a href="https://github.com/cosmology-tech/chain-registry/blob/main/LICENSE"><img height="20" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
    <a href="https://www.npmjs.com/package/@chain-registry/v2-types"><img height="20" src="https://img.shields.io/npm/dt/@chain-registry/v2-types"></a>
-   <a href="https://www.npmjs.com/package/@chain-registry/v2-types"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=packages%2Ftypes%2Fpackage.json"></a>
+   <a href="https://www.npmjs.com/package/@chain-registry/v2-types"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=v2%2Fpackages%2Ftypes%2Fpackage.json"></a>
 </p>
 
 The `@chain-registry/v2-types` module provides TypeScript types derived from the [`cosmos/chain-registry`](https://github.com/cosmos/chain-registry), formatted with camelCase properties for better integration in JavaScript and TypeScript projects. This module is designed to offer developers easy-to-use types for building applications that interact with blockchain data.

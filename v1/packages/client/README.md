@@ -9,7 +9,7 @@
     <img height="20" src="https://github.com/cosmology-tech/chain-registry/actions/workflows/run-tests.yml/badge.svg" />
   </a>
    <a href="https://github.com/cosmology-tech/chain-registry/blob/main/LICENSE"><img height="20" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
-   <a href="https://www.npmjs.com/package/@chain-registry/client"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=legacy%2Fclient%2Fpackage.json"></a>
+   <a href="https://www.npmjs.com/package/@chain-registry/client"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=v1%2Fpackages%2Fclient%2Fpackage.json"></a>
 </p>
 
 The `@chain-registry/client` package provides a client for dynamically fetching and managing chain and asset data from the Cosmos chain registry. This tool is essential for developers who need to access up-to-date blockchain information, including asset lists and IBC data.
