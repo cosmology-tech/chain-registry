@@ -1,0 +1,46 @@
+name: Codegen Main V2 Dry Run
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository 🛎️
+        uses: actions/checkout@v4
+        with:
+          submodules: "true"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: https://registry.npmjs.org/
+
+      - name: Update Git Submodules 🔄
+        run: |
+          make update-registry
+
+      - name: V2 Operations 🛠
+        run: |
+          pushd v2
+          yarn install
+          yarn symlink
+          yarn build
+          yarn symlink
+          yarn codegen
+          popd
+
+      - name: Check for Changes
+        run: |
+          git add .
+          if ! git diff --staged --quiet; then
+            echo "GIT_RESULT=Changes detected." >> $GITHUB_ENV
+          else
+            echo "GIT_RESULT=No changes to commit." >> $GITHUB_ENV
+          fi
+
+      - name: Git Changes Result
+        run: |
+          echo $GIT_RESULT
