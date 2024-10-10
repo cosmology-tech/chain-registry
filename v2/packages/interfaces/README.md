@@ -10,7 +10,7 @@
   </a>
    <a href="https://github.com/cosmology-tech/chain-registry/blob/main/LICENSE"><img height="20" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
    <a href="https://www.npmjs.com/package/@chain-registry/interfaces"><img height="20" src="https://img.shields.io/npm/dt/@chain-registry/interfaces"></a>
-   <a href="https://www.npmjs.com/package/@chain-registry/interfaces"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=packages%2Ftypes%2Fpackage.json"></a>
+   <a href="https://www.npmjs.com/package/@chain-registry/interfaces"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=v2%2Fpackages%2Finterfaces%2Fpackage.json"></a>
 </p>
 
 The `@chain-registry/interfaces` module provides TypeScript interfaces that represent the structured data types as defined in the original JSON schema from the [`cosmos/chain-registry`](https://github.com/cosmos/chain-registry) repository. These interfaces are generated to facilitate type-safe development when interacting with chain registry data within TypeScript projects.

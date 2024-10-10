@@ -10,7 +10,7 @@
   </a>
    <a href="https://github.com/cosmology-tech/chain-registry/blob/main/LICENSE"><img height="20" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
    <a href="https://www.npmjs.com/package/@chain-registry/types"><img height="20" src="https://img.shields.io/npm/dt/@chain-registry/types"></a>
-   <a href="https://www.npmjs.com/package/@chain-registry/types"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=legacy%2Ftypes%2Fpackage.json"></a>
+   <a href="https://www.npmjs.com/package/@chain-registry/types"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=v1%2Fpackages%2Ftypes%2Fpackage.json"></a>
 </p>
 
 types for the chain-registry 

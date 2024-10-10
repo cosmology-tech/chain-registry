@@ -9,7 +9,7 @@
     <img height="20" src="https://github.com/cosmology-tech/chain-registry/actions/workflows/run-tests.yml/badge.svg" />
   </a>
    <a href="https://github.com/cosmology-tech/chain-registry/blob/main/LICENSE"><img height="20" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
-   <a href="https://www.npmjs.com/package/@chain-registry/cli"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=workflows%2Fcli%2Fpackage.json"></a>
+   <a href="https://www.npmjs.com/package/@chain-registry/cli"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=v2%2Fworkflows%2Fcli%2Fpackage.json"></a>
 </p>
 
 The `@chain-registry/cli` is a powerful command-line interface designed to interact with the Chain Registry, allowing users to fetch information, validate data, and generate TypeScript interfaces directly from JSON schemas.
